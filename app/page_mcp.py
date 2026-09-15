@@ -1,14 +1,8 @@
-"""页面级独立 MCP 客户端 — 🎨画面风格预览 / 👥人物素材库图片生成专用。
+"""页面级独立 MCP 客户端 — 片头库 AI 视频生成专用。
 
 与 pipeline/mcp_client.py 的全局会话完全隔离：页面后台线程持有自己的
 token 列表、轮换指针和 session id，绝不动运行中 pipeline 的全局状态，
-两者可并行。支持页面专属 token：
-
-    解析链（resolve_page_tokens）:
-        本页专属 tokens (configs/page_mcp_tokens.json)
-        → 当前激活模式 mcp_tokens (configs/mode_{mode}.json)
-        → 本地 TJGenerators token (~/.codely-cli/mcp-oauth-tokens.json)
-        → 均为空则报错
+两者可并行。token 由调用方传入（intro_videos 用 config_manager.resolve_mcp_tokens）。
 """
 import json
 import re
@@ -27,99 +21,6 @@ if str(PIPELINE_DIR) not in sys.path:
 # 复用 pipeline/mcp_client.py 的纯函数与常量（不含全局会话状态）
 from mcp_client import MCP_URL, parse_task_id, download_file, _is_credit_error  # noqa: E402
 
-PAGE_TOKENS_PATH = WEB_ROOT / "configs" / "page_mcp_tokens.json"
-PAGES = ("styles", "characters")
-
-SOURCE_LABELS = {
-    "page": "本页专属",
-    "mode": "模式配置",
-    "local": "本地检测",
-    "none": "未配置",
-}
-
-
-# ---------------------------------------------------------------------------
-# 存储：configs/page_mcp_tokens.json
-# ---------------------------------------------------------------------------
-
-def _read_token_file() -> dict[str, Any]:
-    if not PAGE_TOKENS_PATH.exists():
-        return {}
-    try:
-        data = json.loads(PAGE_TOKENS_PATH.read_text(encoding="utf-8"))
-        return data if isinstance(data, dict) else {}
-    except (json.JSONDecodeError, OSError):
-        return {}
-
-
-def load_page_tokens() -> dict[str, list[str]]:
-    """读取全部页面专属 tokens: {"styles": [...], "characters": [...]}"""
-    raw = _read_token_file()
-    out: dict[str, list[str]] = {}
-    for page in PAGES:
-        val = raw.get(page, [])
-        if isinstance(val, str):  # 兼容多行文本格式
-            val = val.splitlines()
-        out[page] = [t.strip() for t in val if isinstance(t, str) and t.strip()]
-    return out
-
-
-def save_page_tokens(page: str, tokens_text: str) -> list[str]:
-    """保存某页专属 tokens（多行文本，每行一个）。返回解析后的列表。"""
-    if page not in PAGES:
-        raise ValueError(f"未知页面: {page}")
-    tokens = [t.strip() for t in (tokens_text or "").splitlines() if t.strip()]
-    raw = _read_token_file()
-    raw[page] = tokens
-    PAGE_TOKENS_PATH.parent.mkdir(parents=True, exist_ok=True)
-    PAGE_TOKENS_PATH.write_text(
-        json.dumps(raw, ensure_ascii=False, indent=2), encoding="utf-8")
-    return tokens
-
-
-# ---------------------------------------------------------------------------
-# 解析链：本页专属 → 激活模式 mcp_tokens → 本地 token
-# ---------------------------------------------------------------------------
-
-def resolve_page_tokens(page: str) -> dict[str, Any]:
-    """解析页面生效的 token 集。
-
-    Returns:
-        {"tokens": [...], "source": "page"|"mode"|"local"|"none",
-         "mode": 当前激活模式名}
-    """
-    from .config_manager import detect_local_mcp_token, get_active_mode
-    mode = get_active_mode()
-
-    page_tokens = load_page_tokens().get(page, [])
-    if page_tokens:
-        return {"tokens": page_tokens, "source": "page", "mode": mode}
-
-    from .config_manager import load_config
-    mode_tokens = [t.strip() for t in
-                   (load_config().get("mcp_tokens") or "").splitlines() if t.strip()]
-    if mode_tokens:
-        return {"tokens": mode_tokens, "source": "mode", "mode": mode}
-
-    local = detect_local_mcp_token()
-    if local:
-        return {"tokens": [local], "source": "local", "mode": mode}
-
-    return {"tokens": [], "source": "none", "mode": mode}
-
-
-def mask_token(tok: str) -> str:
-    """掩码显示：TJGe…ab3f（绝不回传完整 token）。"""
-    if not tok:
-        return ""
-    if len(tok) <= 10:
-        return tok[:2] + "…"
-    return f"{tok[:4]}…{tok[-4:]}"
-
-
-# ---------------------------------------------------------------------------
-# 独立会话客户端
-# ---------------------------------------------------------------------------
 
 class PageMcpSession:
     """独立于 pipeline 全局会话的 MCP 客户端。
@@ -132,8 +33,8 @@ class PageMcpSession:
         cleaned = [t.strip() for t in (tokens or []) if t.strip()]
         if not cleaned:
             raise RuntimeError(
-                "未配置 MCP Token（本页专属 / 模式配置 / 本地检测均为空），"
-                "请在「MCP Token 设置」面板或配置页填写。")
+                "未配置 MCP Token（模式配置 / default.json / 本地检测均为空），"
+                "请在配置页填写。")
         self.tokens = cleaned
         self._idx = 0
         self.token = self.tokens[0]
@@ -156,7 +57,7 @@ class PageMcpSession:
         self._handshake()
 
     def _call(self, method: str, params: dict | None = None) -> dict:
-        payload: dict[str, Any] = {"jsonrpc": "2.0", "method": method, "id": self._next_id()}
+        payload: dict = {"jsonrpc": "2.0", "method": method, "id": self._next_id()}
         if params is not None:
             payload["params"] = params
         data = json.dumps(payload).encode("utf-8")
@@ -183,7 +84,7 @@ class PageMcpSession:
             raise
 
     def _notify(self, method: str, params: dict | None = None):
-        payload: dict[str, Any] = {"jsonrpc": "2.0", "method": method}
+        payload: dict = {"jsonrpc": "2.0", "method": method}
         if params is not None:
             payload["params"] = params
         data = json.dumps(payload).encode("utf-8")

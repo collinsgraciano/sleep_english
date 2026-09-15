@@ -20,19 +20,6 @@ from .. import topics_ai
 router = APIRouter()
 
 
-@router.get("/api/topics")
-async def api_get_topics():
-    config = load_config()
-    topics_file = config.get("topics_file", "")
-    if not topics_file or not Path(topics_file).exists():
-        return {"topics": {}}
-    try:
-        data = json.loads(Path(topics_file).read_text(encoding="utf-8"))
-    except (json.JSONDecodeError, OSError):
-        return {"topics": {}}
-    return {"topics": data}
-
-
 @router.post("/api/topics/add")
 async def api_add_topic(request: Request):
     data = await request.json()
@@ -192,22 +179,6 @@ async def api_random_topic(request: Request):
     return {"ok": True, "topic": chosen}
 
 
-@router.get("/api/topics/used")
-async def api_used_topics():
-    config = load_config()
-    used_file = config.get("used_topics_file", "")
-    if not used_file:
-        output_dir = config.get("output_dir", "./output")
-        used_file = str(Path(output_dir) / "used_topics.json")
-    if not Path(used_file).exists():
-        return {"used": []}
-    try:
-        data = json.loads(Path(used_file).read_text(encoding="utf-8"))
-        return {"used": data}
-    except (json.JSONDecodeError, OSError):
-        return {"used": []}
-
-
 @router.post("/api/topics/used/reset")
 async def api_reset_used():
     config = load_config()
@@ -337,24 +308,3 @@ async def api_topics_ai_apply(request: Request):
     result = await asyncio.to_thread(topics_ai.apply_suggestions, topics_file, actions)
     return {"ok": True, **result}
 
-
-@router.post("/api/topics/update")
-async def api_topics_update(request: Request):
-    """Rename a single topic in place (category + exact topic string match)."""
-    data = await request.json()
-    category = data.get("category", "")
-    topic = data.get("topic", "")
-    new_topic = str(data.get("new_topic", "")).strip()
-    if not category or not topic or not new_topic:
-        return JSONResponse({"error": "缺少参数"}, status_code=400)
-    config = load_config()
-    topics_file = config.get("topics_file", "")
-    if not topics_file or not Path(topics_file).exists():
-        return JSONResponse({"error": "topics.json 不存在"}, status_code=400)
-    result = await asyncio.to_thread(
-        topics_ai.apply_suggestions, topics_file,
-        [{"action": "rename", "category": category, "topic": topic, "new_topic": new_topic}])
-    if result["applied"] > 0:
-        return {"ok": True, "topics": result["topics"]}
-    reason = result["skipped"][0] if result["skipped"] else "未知错误"
-    return JSONResponse({"error": f"重命名失败: {reason}"}, status_code=400)

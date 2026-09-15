@@ -32,35 +32,6 @@
         </div>
     </section>
 
-    <!-- 区域 B: 角色素材库音色绑定 -->
-    <section class="mb-8">
-        <h3 class="text-sm font-semibold text-slate-300 mb-3 flex items-center gap-2">
-            <span>🔗</span> 角色素材库音色绑定
-        </h3>
-        <div id="binding-grid" class="vc-grid vc-grid-wide grid">
-            {% if not library_chars %}
-            <p class="text-xs text-slate-500 col-span-full">素材库为空。请先在控制台收藏角色。</p>
-            {% endif %}
-            {% for char in library_chars %}
-            <div class="bcard bg-slate-800 border border-slate-700">
-                {% if char.image_url %}
-                <img src="{{ char.image_url }}" class="bcard-img max-w-full object-cover bg-slate-800" onerror="this.style.opacity='0.3'">
-                {% else %}
-                <div class="bcard-img bg-slate-700 flex items-center justify-center" style="font-size: max(14px, calc(28px * var(--vc)));">👤</div>
-                {% endif %}
-                <div class="bcard-name font-medium text-slate-300 text-center truncate w-full" title="{{ char.description }}">{{ char.name }}</div>
-                <div class="bcard-meta text-slate-500">{{ char.gender or '?' }} · {{ char.structure or '?' }}</div>
-                <select class="bcard-select kokoro-voice-bind w-full bg-slate-900 border border-slate-600 rounded text-white"
-                    data-lib-id="{{ char.id }}">
-                    <option value="">音色→</option>
-                </select>
-                <button class="bcard-btn lib-preview-btn w-full bg-slate-700 hover:bg-indigo-600 text-white transition"
-                    data-lib-id="{{ char.id }}">▶ 试听音色</button>
-            </div>
-            {% endfor %}
-        </div>
-    </section>
-
     <!-- 区域 C: 默认音色配置 -->
     <section class="mb-8">
         <h3 class="text-sm font-semibold text-slate-300 mb-3 flex items-center gap-2">
@@ -209,37 +180,9 @@ function populateDropdowns() {
         `<option value="${v.name}">${v.name} · ${v.desc || ''}${v.cached ? '' : ' (未缓存)'}</option>`
     ).join('');
 
-    document.querySelectorAll('.kokoro-voice-bind').forEach(sel => {
-        const libId = sel.dataset.libId;
-        sel.innerHTML = '<option value="">音色→</option>' + options;
-        {% for char in library_chars %}
-        if (libId === '{{ char.id }}' && '{{ char.kokoro_voice }}') {
-            sel.value = '{{ char.kokoro_voice }}';
-        }
-        {% endfor %}
-        sel.onchange = function() {
-            fetch('/api/character_library/' + libId + '/kokoro_voice', {
-                method: 'PUT',
-                headers: {'Content-Type': 'application/json'},
-                body: JSON.stringify({kokoro_voice: this.value})
-            }).then(r => r.json()).then(d => {
-                if (d.ok) { /* saved */ }
-            });
-        };
-    });
-
     ['default-male', 'default-female', 'default-host-male', 'default-host-female',
      'default-male2', 'default-female2', 'default-male3', 'default-female3'].forEach(id => {
         document.getElementById(id).innerHTML = options;
-    });
-
-    document.querySelectorAll('.lib-preview-btn').forEach(btn => {
-        btn.onclick = function() {
-            const sel = document.querySelector('.kokoro-voice-bind[data-lib-id="' + btn.dataset.libId + '"]');
-            const speaker = sel ? sel.value : '';
-            if (!speaker) { alert('该角色尚未绑定音色，请先在下拉框选择'); return; }
-            previewVoice(speaker, false, btn);
-        };
     });
 }
 

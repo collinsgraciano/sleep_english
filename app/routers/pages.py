@@ -237,11 +237,7 @@ async def runs_page(request: Request):
         thumbnail = _resolve_main_thumbnail(d)
         thumb_count = sum(1 for f in d.glob("thumbnail*.jpg")
                           if _THUMB_NAME_RE.fullmatch(f.name))
-        no_sub = videos_dir / "final_no_sub.mp4"
-        meta_path = d / "subtitles" / "meta.json"
         has_4k = any(d.glob("*_4K.mp4"))
-        recomposable = (no_sub.exists() and no_sub.stat().st_size >= 1_000_000
-                        and meta_path.exists() and script_path.exists())
         copy_paths = _resolve_video_copy_paths(d)
         run_info = {
             "name": d.name,
@@ -258,7 +254,6 @@ async def runs_page(request: Request):
             # 「一键复制 4K / 4K BGM 路径」所需成片绝对路径（缺失为空串 → 按钮禁用）
             "copy_4k": copy_paths["4k"],
             "copy_4k_bgm": copy_paths["4k_bgm"],
-            "recomposable": recomposable,
             "structure": "",
         }
         # Find video files — final videos are in work_dir root, not videos/
@@ -331,7 +326,6 @@ async def runs_page(request: Request):
         "runs": runs,
         "trash_runs": trash_runs,
         "mode_labels": MODE_LABELS,
-        "subtitle_style_options": {"": "跟随参数配置（默认）"},
         "active_page": "runs",
     })
 
@@ -349,11 +343,8 @@ async def scripts_page(request: Request):
 async def voices_page(request: Request):
     """QwenTTS voice management page."""
     config = load_config()
-    # Fetch library characters
-    library_chars = []  # sleep-only：人物素材库已移除，音色页不提供库内绑定
     return templates.TemplateResponse(request, "voices.html", {
         "config": config,
-        "library_chars": library_chars,
         "active_page": "voices",
     })
 
@@ -362,10 +353,8 @@ async def voices_page(request: Request):
 async def kokoro_voices_page(request: Request):
     """Kokoro voice management page."""
     config = load_config()
-    library_chars = []  # sleep-only：人物素材库已移除，音色页不提供库内绑定
     return templates.TemplateResponse(request, "kokoro_voices.html", {
         "config": config,
-        "library_chars": library_chars,
         "active_page": "kokoro_voices",
     })
 
@@ -375,10 +364,8 @@ async def kokoro_voices_page(request: Request):
 async def moss_voices_page(request: Request):
     """MOSS-TTS-Nano voice management page."""
     config = load_config()
-    library_chars = []  # sleep-only：人物素材库已移除，音色页不提供库内绑定
     return templates.TemplateResponse(request, "moss_voices.html", {
         "config": config,
-        "library_chars": library_chars,
         "active_page": "moss_voices",
     })
 

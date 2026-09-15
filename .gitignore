@@ -13,13 +13,9 @@ configs/page_mcp_tokens.json
 # Runtime mode/default configs contain real API keys & MCP tokens — never commit
 configs/default.json
 configs/mode_*.json
-configs/ori.json
-configs/quest.json
-configs/test.json
 
 # Generated audio previews / voice assets
 configs/voice_previews/
-configs/character_library/
 configs/custom_voices/
 configs/moss_previews/
 configs/moss_voices/
@@ -34,12 +30,6 @@ configs/ai_test_config.json
 
 # Quick-config panel field selection per mode (console user preference)
 configs/quick_config.json
-
-# Channel factory runtime state (drafts / favorites / references / generated assets)
-configs/channel_drafts.json
-configs/channel_favorites.json
-configs/channel_references.json
-configs/channel_assets/
 
 # Intro video library (sleep mode 10s intros, generated assets)
 configs/intro_videos/

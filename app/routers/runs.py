@@ -512,24 +512,6 @@ async def api_mark_uploaded(name: str, mode: str = "", state: str = ""):
     return {"ok": True, "uploaded": True}
 
 
-@router.post("/api/runs/{name}/recompose")
-async def api_recompose(name: str, request: Request, mode: str = ""):
-    """重选字幕样式重渲视频（复用 final_no_sub 底片，仅本地渲染）。"""
-    data = await request.json()
-    service = get_service()
-    style_id = str(data.get("subtitle_style", "")).strip()
-    try:
-        font_size = max(20, min(int(data.get("font_size", 60) or 60), 200))
-    except (TypeError, ValueError):
-        font_size = 60
-    ok, msg = service.recompose(
-        name, subtitle_style=style_id, font_size=font_size,
-        show_zh=bool(data.get("show_zh", True)),
-        regen_4k=bool(data.get("regen_4k", False)), mode=mode)
-    if not ok:
-        return JSONResponse({"ok": False, "error": msg}, status_code=409)
-    return {"ok": True, "message": msg, "status": service.status}
-
 
 @router.post("/api/runs/{name}/generate_4k")
 async def api_generate_4k(name: str, mode: str = ""):

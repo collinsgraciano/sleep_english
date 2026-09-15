@@ -13,7 +13,7 @@ from ..config_manager import (
     load_config, load_mode_config, save_mode_config, load_all_mode_configs,
     get_active_mode, set_active_mode,
     get_default_config,
-    list_presets, save_preset, load_preset, delete_preset,
+    save_preset, load_preset, delete_preset,
     list_sleep_color_presets, save_sleep_color_preset, delete_sleep_color_preset,
 )
 
@@ -97,11 +97,6 @@ async def api_load_preset(name: str):
 async def api_delete_preset(name: str):
     delete_preset(name)
     return {"ok": True}
-
-
-@router.get("/api/config/presets")
-async def api_list_presets():
-    return {"presets": list_presets()}
 
 
 # --- 控制台「常用配置」面板字段清单（每模式独立） ---

@@ -877,9 +877,9 @@ class PipelineService:
     def generate_4k(self, run_name: str, mode: str = "") -> tuple[bool, str]:
         """为已完成运行生成（或重新生成）4K 版本（复用 Step 6 超分逻辑，本地渲染零积分）。
 
-        源视频 = 运行目录根部烧好字幕的成片；upscale_engine 跟随当前配置
-        （ffmpeg lanczos / AI 超分，权重缺失自动回退 ffmpeg）。照 recompose
-        模式在后台线程执行；期间与主 pipeline / 模式测试互斥。
+        源视频 = 运行目录根部成片；upscale_engine 跟随当前配置
+        （ffmpeg lanczos / AI 超分，权重缺失自动回退 ffmpeg）。后台线程执行；
+        期间与主 pipeline / 模式测试互斥。
         返回 (ok, message)。
         """
         if self.is_running:
@@ -1179,132 +1179,6 @@ class PipelineService:
                     self.status = "done"
                 self.finished_at = time.time()
             run_mutex.release("bgm_mix")
-
-    def recompose(self, run_name: str, subtitle_style: str = "", font_size: int = 60,
-                  show_zh: bool = True, regen_4k: bool = False,
-                  mode: str = "") -> tuple[bool, str]:
-        """对已完成运行重选字幕样式重渲视频（仅字幕烧录 + 音量归一，本地渲染）。
-
-        复用 videos/final_no_sub.mp4 + subtitles/meta.json + script.json，
-        不消耗 MCP / LLM / TTS 积分。返回 (ok, message)。
-        """
-        if self.is_running:
-            return False, "Pipeline 正在运行中，请等待完成后再重渲"
-
-        output_dir = Path(load_config().get("output_dir", "./output"))
-        run_dir = find_run_dir(output_dir, run_name, mode)
-        if not run_dir:
-            return False, f"运行不存在: {run_name}"
-        no_sub = run_dir / "videos" / "final_no_sub.mp4"
-        meta_path = run_dir / "subtitles" / "meta.json"
-        script_path = run_dir / "script.json"
-        if not no_sub.exists() or no_sub.stat().st_size < 1_000_000:
-            return False, "缺少 videos/final_no_sub.mp4（旧运行或已清理，无法仅重渲字幕）"
-        if not meta_path.exists():
-            return False, "缺少 subtitles/meta.json（时间轴数据缺失）"
-        if not script_path.exists():
-            return False, "缺少 script.json"
-
-        self._stop_flag.clear()
-        self._step_mode = False
-        self._paused_after_step = ""
-        with self._lock:
-            self.log_lines = []
-            self.status = "running"
-            self.current_step = ""
-            self.current_step_label = "字幕样式重渲（仅本地渲染）"
-            self.started_at = time.time()
-            self.finished_at = 0
-            self.error = ""
-            self.work_dir = str(run_dir)
-            self.final_path = ""
-
-        self._thread = threading.Thread(
-            target=self._recompose_run,
-            args=(run_dir, subtitle_style, int(font_size), bool(show_zh), bool(regen_4k)),
-            daemon=True)
-        self._thread.start()
-        return True, "重渲已启动"
-
-    def _recompose_run(self, run_dir: Path, subtitle_style_id: str,
-                       font_size: int, show_zh: bool, regen_4k: bool):
-        """后台线程：从 final_no_sub 重烧字幕 → loudnorm → 处理 4K。"""
-        import subprocess as _sp
-        from media_utils import burn_subtitles, apply_final_loudnorm
-
-        old_stdout = sys.stdout
-        buf = _LineBuffer(self._on_log_line)
-        sys.stdout = buf
-        try:
-            print("=" * 60)
-            print(f"Recompose: 字幕样式重渲 — {run_dir.name}")
-            style = None
-            if subtitle_style_id:
-                print("  [Recompose] 字幕样式功能已移除（sleep 无烧录字幕）——回退 legacy 字号参数")
-            if style is None:
-                print(f"  [Recompose] 跟随参数配置（legacy 字号 {font_size}）")
-
-            script = json.loads((run_dir / "script.json").read_text(encoding="utf-8"))
-            meta = json.loads((run_dir / "subtitles" / "meta.json").read_text(encoding="utf-8"))
-            timeline = meta["timeline"]
-            pad = float(meta.get("pad", 0.4))
-            no_sub = str(run_dir / "videos" / "final_no_sub.mp4")
-            out_fps = self._probe_fps(no_sub)
-            print(f"  [Recompose] timeline {len(timeline)} 段, pad={pad}, fps={out_fps}")
-
-            def progress_cb(pct, msg):
-                print(f"  [{pct}%] {msg}")
-
-            final_path = burn_subtitles(
-                no_sub, timeline, script, str(run_dir), str(run_dir / "subtitles"),
-                pad, progress_cb,
-                show_zh=show_zh, en_font_size=font_size,
-                zh_font_size=int(font_size * 0.85),
-                out_fps=out_fps, style=style)
-            self.final_path = final_path
-
-            print("  [Recompose] 音量归一化 (loudnorm)...")
-            apply_final_loudnorm(final_path, str(run_dir / "videos"))
-
-            # 旧 4K 的字幕已过期：删除；按需用新片重新生成
-            old_4k = sorted(run_dir.glob("*_4K.mp4"))
-            for p in old_4k:
-                p.unlink(missing_ok=True)
-                print(f"  [Recompose] 已删除过期 4K: {p.name}")
-            if regen_4k:
-                four_k = run_dir / f"{Path(final_path).stem}_4K.mp4"
-                print("  [Recompose] 重新生成 4K (本地 ffmpeg scale)...")
-                r = _sp.run(
-                    ["ffmpeg", "-i", final_path,
-                     "-vf", "scale=3840:2160:flags=lanczos",
-                     "-c:v", "libx264", "-crf", "18", "-preset", "medium", "-threads", "0",
-                     "-c:a", "copy", str(four_k), "-y"],
-                    capture_output=True, timeout=3600)
-                if r.returncode == 0 and four_k.exists():
-                    print(f"  [Recompose] 4K 完成: {four_k.name}")
-                else:
-                    print("  [Recompose] 4K 生成失败（720p 版本仍可用）")
-                    four_k.unlink(missing_ok=True)
-
-            with self._lock:
-                self.status = "done"
-                self.finished_at = time.time()
-            size_mb = Path(final_path).stat().st_size / (1024 * 1024)
-            print("=" * 60)
-            print(f"Recompose DONE! {final_path} ({size_mb:.1f}MB)")
-        except Exception as e:
-            self._fail(f"Recompose {type(e).__name__}: {e}")
-            import traceback
-            for line in traceback.format_exc().split("\n"):
-                self._on_log_line(line)
-        finally:
-            sys.stdout = old_stdout
-            buf.flush()
-            with self._lock:
-                if self.status == "running":
-                    self.status = "done"
-                self.finished_at = time.time()
-
 
     def _set_stopped(self):
         with self._lock:
