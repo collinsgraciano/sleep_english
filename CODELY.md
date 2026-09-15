@@ -39,9 +39,8 @@ sleep_english/
 - 删除模式：original*/quest*/story 全部相关模块与页面（characters/story_family/channel_factory/styles/subtitle_styles 路由与模板）
 - config_manager：MODES=["sleep"]、PARAM_SPEC 仅 sleep 生效参数（mcp_tokens/image_provider/visual_style 改为可见）、删 build_cli_args/_SLEEP_UNUSED_KEYS/normalize_animation、structure_family 恒等
 - pipeline_service：删角色复用/gender 交换/host_bg 绑定/sprite 自动入库/story env 段
-- dashboard.html：删 char-reuse/char-library/story-family HTML 块与 host_bg JS（角色 JS 函数体保留为死代码，入口已移除）
-- scripts.html：生成/筛选结构仅 sleep（后端 script_library 本就支持）
-- 音色页 library_chars 传 []（人物素材库已移除）
+- 2026-09-15 死代码清理（5 commit）：dashboard 死 JS 簇整块删除（曾致「开始生成」按钮 TypeError）；重渲字幕功能链整链删除（sleep 必死）；media_utils 1546→530 行；llm_client 1494→828 行（listening/story 链断码，llm_review/image_gen/script_style 模块本就不存在）；孤儿路由与孤儿 partial 删除；script_library 收敛仅 sleep（VOICE_DEFAULT_MODES/DEFAULT_MODES 均为 sleep）
+- 音色页素材库绑定块与 library_chars 传参已彻底移除
 
 ## Pipeline Steps
 
@@ -49,11 +48,11 @@ sleep_english/
 |------|------|
 | Step 0 | LLM 脚本生成（sleep 分批 50 组/批，.sleep_cache 缓存可关） |
 | Step 1 | 跳过（缩略图/背景图按需 initialize MCP） |
-| Step 2 | 本地 TTS（文件级续传）+ 片头库绑定 + 可选 AI 背景图 |
+| Step 2 | 本地 TTS（文件级续传 _usable：exists+非零字节；时长写 .durations.json sidecar）+ 片头库绑定 + 可选 AI 背景图 |
 | Step 3 | 跳过 |
-| Step 4 | build_sleep_timeline + SRT sidecar |
+| Step 4 | build_sleep_timeline + SRT sidecar（meta.json 记 sleep_pairs，resume 校验一致性） |
 | Step 4.5 | assign_sleep_episode 集数递增 + AI 缩略图（兜底 Pillow）+ save_youtube_metadata |
-| Step 5 | compose_sleep（组级块 + concat_segments 三段式；xfade 可选） |
+| Step 5 | compose_sleep（组级块 + concat_segments 三段式；combo 段= a_m+0.15s+b_f 块内内联拼接，无 combo 中间 mp3；卡片底图模板+字体缓存；xfade 可选） |
 | Step 5.5 | 可选 BGM（bgm_mix） |
 | Step 6 | 可选 4K（已 4K 源硬链接产出 _4K 文件） |
 
@@ -69,6 +68,10 @@ sleep_english/
 ## 关键事实
 
 - 集数徽章 output/sleep/.thumb_episode.json 按主题计数（未迁移旧计数，首集从 1 起）
-- 音色配置无 modes.sleep 节 → 回退 legacy 默认（与原项目行为一致）
+- 音色默认按模式分套：VOICE_DEFAULT_MODES=("sleep",)，配置无 modes.sleep 节 → 回退 legacy 平铺键（与原项目行为一致）
+- Kokoro 单句失败自动重试 ×2；qwen/moss 失败回退 kokoro
+- 卡片渲染有模板缓存（改主题字段即自动失效）；音频时长 sidecar .durations.json（mtime+size 校验）
+- 本仓库无 git remote（push 不可用，commit 即可）
 - 双项目并行时集数/主题防重各自独立，可能重合（已知权衡）
+- configs/mode_sleep.json 的 topics_file 与 sleep_bg_image_path 仍指向旧项目路径（待用户确认后切回本项目内）
 - 用户反馈记忆（跨会话通用规则）见用户级 CODELY.md；本项目后续沉淀追加到「Codely Structured Memories」Project 节
