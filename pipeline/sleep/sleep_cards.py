@@ -130,6 +130,29 @@ def _tracked_bbox_w(draw: ImageDraw.ImageDraw, text: str, font,
     return w
 
 
+# ---------------------------------------------------------------------------
+# 渲染缓存：背景渐变/叶片/背景图/白卡边框与字号字体在主题不变时逐卡重复，
+# 整幅缓存 + copy 后绘制（叶片坐标为固定常量，缓存前后输出逐字节一致）。
+# 缓存键含全部影响画面的主题字段；容量上限防配置预览页反复调色时累积。
+# ---------------------------------------------------------------------------
+_CARD_BASE_CACHE: dict[tuple, Image.Image] = {}
+_CARD_BASE_CACHE_MAX = 4
+_FONT_CACHE: dict[tuple[str, int], ImageFont.FreeTypeFont] = {}
+_FONT_CACHE_MAX = 256
+
+
+def _cached_font(path: str, size: int) -> ImageFont.FreeTypeFont:
+    """(路径, 字号) → 字体对象缓存（_fit_font 逐档试号时免重复加载字体文件）。"""
+    key = (path, int(size))
+    f = _FONT_CACHE.get(key)
+    if f is None:
+        if len(_FONT_CACHE) >= _FONT_CACHE_MAX:
+            _FONT_CACHE.pop(next(iter(_FONT_CACHE)))
+        f = ImageFont.truetype(path, int(size))
+        _FONT_CACHE[key] = f
+    return f
+
+
 def _draw_tracked(draw: ImageDraw.ImageDraw, xy: tuple, text: str, font,
                   fill, spacing: float) -> None:
     """带字距绘制：逐字符推进 x；spacing<=0 走整串 draw.text 保持像素一致。"""
@@ -147,11 +170,11 @@ def _fit_font(draw: ImageDraw.ImageDraw, text: str, font_path: str,
               spacing: float = 0.0) -> ImageFont.FreeTypeFont:
     size = start_size
     while size > min_size:
-        font = ImageFont.truetype(font_path, size)
+        font = _cached_font(font_path, size)
         if _tracked_bbox_w(draw, text, font, spacing) <= max_w:
             return font
         size -= 4
-    return ImageFont.truetype(font_path, min_size)
+    return _cached_font(font_path, min_size)
 
 
 def _wrap_words(draw: ImageDraw.ImageDraw, text: str, font, max_w: int,
@@ -188,8 +211,8 @@ def _draw_text_block(img: Image.Image, draw: ImageDraw.ImageDraw, en: str,
                         int(30 * s), max_w, spacing=sp)
     en_lines = _wrap_words(draw, en, en_font, max_w, spacing=sp)
     line_h = en_font.size + int(theme.get("line_spacing", 14) * s)
-    ph_font = ImageFont.truetype(FONT_PH, int(34 * s * fs))
-    zh_font = ImageFont.truetype(FONT_ZH, int(42 * s * fs))
+    ph_font = _cached_font(FONT_PH, int(34 * s * fs))
+    zh_font = _cached_font(FONT_ZH, int(42 * s * fs))
     ph_h = (ph_font.size + int(10 * s)) if phonetic else 0
     zh_h = (zh_font.size + int(12 * s)) if zh else 0
     y = cy - (len(en_lines) * line_h + ph_h + zh_h) / 2
@@ -307,27 +330,49 @@ def _draw_background(w: int, h: int, theme: dict, s: float = 1.0) -> Image.Image
     return base
 
 
+def _card_base_key(theme: dict, w: int, h: int, s: float) -> tuple:
+    """模板缓存键：覆盖影响背景/白卡画面的全部主题字段与尺寸。"""
+    return (w, h, round(s, 4),
+            theme.get("bg_top"), theme.get("bg_bottom"),
+            theme.get("card"), theme.get("card_border"),
+            bool(theme.get("bg_image")), theme.get("bg_layer", "bottom"),
+            str(theme.get("bg_image_path", "") or ""),
+            theme.get("bg_opacity", 20),
+            bool(theme.get("show_leaves", True)),
+            theme.get("leaf_a"), theme.get("leaf_b"))
+
+
 def _draw_card_base(theme: dict, w: int, h: int,
                     s: float = 1.0) -> tuple[Image.Image, ImageDraw.ImageDraw, dict]:
-    img = _draw_background(w, h, theme, s).convert("RGBA")
-    draw = ImageDraw.Draw(img)
-    card = {"x0": int(w * 0.028), "y0": int(h * 0.042),
-            "x1": int(w * 0.972), "y1": int(h * 0.972)}
-    draw.rounded_rectangle([card["x0"], card["y0"], card["x1"], card["y1"]],
-                           radius=int(36 * s), fill=_hex_rgb(theme["card"], (255, 255, 255)),
-                           outline=_hex_rgb(theme["card_border"], (143, 176, 201)),
-                           width=max(1, int(2 * s)))
-    if theme.get("bg_image") and theme.get("bg_layer") == "top":
-        # 第二级：白卡绘制后整幅叠加背景图，后续文字元素仍在其上
-        _overlay_bg_image(img, theme)
-    return img, draw, card
+    key = _card_base_key(theme, w, h, s)
+    tmpl = _CARD_BASE_CACHE.get(key)
+    if tmpl is None:
+        img = _draw_background(w, h, theme, s).convert("RGBA")
+        draw = ImageDraw.Draw(img)
+        card = {"x0": int(w * 0.028), "y0": int(h * 0.042),
+                "x1": int(w * 0.972), "y1": int(h * 0.972)}
+        draw.rounded_rectangle([card["x0"], card["y0"], card["x1"], card["y1"]],
+                               radius=int(36 * s), fill=_hex_rgb(theme["card"], (255, 255, 255)),
+                               outline=_hex_rgb(theme["card_border"], (143, 176, 201)),
+                               width=max(1, int(2 * s)))
+        if theme.get("bg_image") and theme.get("bg_layer") == "top":
+            # 第二级：白卡绘制后整幅叠加背景图，后续文字元素仍在其上
+            _overlay_bg_image(img, theme)
+        if len(_CARD_BASE_CACHE) >= _CARD_BASE_CACHE_MAX:
+            _CARD_BASE_CACHE.pop(next(iter(_CARD_BASE_CACHE)))
+        _CARD_BASE_CACHE[key] = img
+        img = img.copy()  # 模板入库后保持素净，返回副本供本卡绘制
+    else:
+        img = tmpl.copy()
+    return img, ImageDraw.Draw(img), {"x0": int(w * 0.028), "y0": int(h * 0.042),
+                                      "x1": int(w * 0.972), "y1": int(h * 0.972)}
 
 
 def _draw_channel(draw: ImageDraw.ImageDraw, card: dict, theme: dict,
                   channel_name: str, s: float = 1.0) -> None:
     if not channel_name:
         return
-    font = ImageFont.truetype(_handwrite_path(theme), int(36 * s))
+    font = _cached_font(_handwrite_path(theme), int(36 * s))
     draw.text((card["x0"] + int(40 * s), card["y0"] + int(26 * s)), channel_name,
               font=font, fill=_hex_rgb(theme["channel_text"], (90, 107, 82)))
 
@@ -340,7 +385,7 @@ def _draw_badge(draw: ImageDraw.ImageDraw, card: dict, theme: dict,
     bx0, by0 = card["x1"] - bw, card["y0"]
     draw.rounded_rectangle([bx0, by0, bx0 + bw, by0 + bh], radius=int(14 * s),
                            fill=_hex_rgb(theme["badge_bg"], (242, 184, 198)))
-    font = ImageFont.truetype(FONT_EN, int(40 * s))
+    font = _cached_font(FONT_EN, int(40 * s))
     box = draw.textbbox((0, 0), badge_text, font=font)
     draw.text((bx0 + (bw - (box[2] - box[0])) / 2,
                by0 + (bh - (box[3] - box[1])) / 2 - box[1]),
@@ -351,7 +396,7 @@ def _draw_badge(draw: ImageDraw.ImageDraw, card: dict, theme: dict,
 def _draw_number(img: Image.Image, num_text: str, theme: dict, x: int, y: int,
                  s: float = 1.0) -> None:
     """左下发光序号：模糊光晕层 + 锐利文字层。"""
-    font = ImageFont.truetype(FONT_EN, int(46 * s))
+    font = _cached_font(FONT_EN, int(46 * s))
     color = _hex_rgb(theme["num"], (255, 111, 165))
     glow = Image.new("RGBA", img.size, (0, 0, 0, 0))
     gd = ImageDraw.Draw(glow)
@@ -400,7 +445,7 @@ def render_intro_card(theme: dict, out_path: str,
                h / 2 - (box[3] - box[1]) / 2 - int(40 * s)),
               channel_name, font=hw_font,
               fill=_hex_rgb(theme["channel_text"], (90, 107, 82)))
-    sub_font = ImageFont.truetype(FONT_ZH, int(34 * s))
+    sub_font = _cached_font(FONT_ZH, int(34 * s))
     sub = "閉上眼睛 · 輕鬆聽"
     box = draw.textbbox((0, 0), sub, font=sub_font)
     draw.text(((w - (box[2] - box[0])) / 2, h / 2 + int(60 * s)), sub,
@@ -454,7 +499,7 @@ def render_sleep_thumbnail(script: dict, theme: dict, out_path: str,
                      _hex_rgb(theme["en_b"], (224, 90, 18)), theme, en_start=56, s=s)
     strip = str(script.get("thumbnail_subtitle", "") or "").strip()
     if strip:
-        st_font = ImageFont.truetype(FONT_ZH, int(44 * s))
+        st_font = _cached_font(FONT_ZH, int(44 * s))
         box = draw.textbbox((0, 0), strip, font=st_font)
         pad_x = int(26 * s)
         sw = box[2] - box[0] + pad_x * 2
