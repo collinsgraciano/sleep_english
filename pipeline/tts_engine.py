@@ -790,7 +790,7 @@ def build_voice_map(script: dict, structure: str | None = None) -> dict:
                                  else defaults["default_host_female"])
         else:
             print(f"  [TTS] WARNING: host_gender not set, defaulting to {defaults['default_host_female']} (female). "
-                  "Check CHARACTER_OVERRIDES or script.json host_gender.")
+                  "Check script.json host_gender.")
             voice_map["host"] = defaults["default_host_female"]
     return voice_map
 

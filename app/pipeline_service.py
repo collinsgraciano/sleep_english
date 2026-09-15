@@ -25,7 +25,6 @@ if str(PIPELINE_DIR) not in sys.path:
     sys.path.insert(0, str(PIPELINE_DIR))
 
 # Import pipeline modules (all lazy-heavy, import is cheap)
-from mcp_client import reinitialize as mcp_reinit
 from topic_manager import pick_random_topic
 from media_utils import safe_filename as _safe_dirname
 from checkpoint import (
@@ -670,17 +669,8 @@ class PipelineService:
                 script = json.loads(_script_path.read_text(encoding="utf-8"))
                 self._on_log_line("  [Step Mode] Reloaded script.json (edits applied).")
 
-            # Step 1: MCP init（sleep 主流程零 MCP：不在 Step1 强制初始化——
-            # 空 token 时 mcp_reinit() 会直接抛 "No MCP token" 崩掉与 MCP 无关的
-            # sleep 运行；缩略图 AI 生成在 Step 4.5 按需初始化）
-            if getattr(args, "structure", "") != "sleep":
-                raw_tokens = args.mcp_tokens or ""
-                tokens = [t.strip() for t in raw_tokens.split(",") if t.strip()] if raw_tokens else []
-                if tokens:
-                    mcp_reinit(tokens=tokens)
-                else:
-                    mcp_reinit()
-
+            # Step 1: MCP init —— sleep 恒跳过（主流程零 MCP；缩略图 AI 生成在
+            # Step 4.5 按需初始化，空 token 不在此崩与 MCP 无关的运行）
             if self._stop_flag.is_set():
                 self._set_stopped()
                 return
@@ -798,7 +788,6 @@ class PipelineService:
         finally:
             sys.stdout = old_stdout
             buf.flush()
-            os.environ.pop("CHARACTER_OVERRIDES", None)
             with self._lock:
                 if self.status == "running":
                     # 正常完成路径在上面已显式置 done；走到这里仍 running
@@ -898,7 +887,7 @@ class PipelineService:
         except (json.JSONDecodeError, OSError) as e:
             return False, f"script.json 读取失败: {e}"
 
-        # 成片定位：优先按脚本标题还原文件名（与 burn_subtitles 命名一致），
+        # 成片定位：优先按脚本标题还原文件名，
         # 否则取根部排除中间产物/旧 4K 后最新的 mp4
         safe_vid_name = _safe_dirname(
             script.get("youtube_title", script.get("title", run_name)), run_name)

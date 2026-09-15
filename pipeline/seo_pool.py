@@ -1,15 +1,14 @@
-"""SEO 词池：把高频搜索短语并入 YouTube tags + 为 LLM prompt 提供关键词提示。
+"""SEO 词池：把高频搜索短语并入 YouTube tags。
 
 数据文件 pipeline/seo_keywords.json：
     {"core": ["english speaking practice", ...],          # 每支影片都并入
      "by_topic": [{"match": ["work", "職場", ...],        # match 子串命中主题文本时并入
                    "tags": ["workplace english conversation", ...]}, ...]}
 
-两个入口：
+入口：
     merge_tags(tags, match_text)  — thumbnail_gen.save_youtube_metadata 并入 tags 字段
-    keyword_hint(match_text)      — llm_client / quest 生成 prompt 注入的搜索短语提示
 
-词池文件缺失/损坏 → 空池，merge_tags 原样返回、keyword_hint 返回空串（零行为变化）。
+词池文件缺失/损坏 → 空池，merge_tags 原样返回（零行为变化）。
 YouTube tags 字段硬限 500 字符（上传时按逗号拼接计长），merge_tags 按 tag 粒度丢弃
 超长项，不截半个词。
 """
@@ -71,21 +70,3 @@ def merge_tags(tags: list[str], match_text: str = "") -> list[str]:
         result.append(t)
         total += extra
     return result
-
-
-def keyword_hint(match_text: str = "") -> str:
-    """供生成 prompt 注入的搜索短语串（主题命中 8 个 + core 4 个，≤12 个）。
-
-    空池返回空串 —— prompt 保持与无词池时逐字节一致。
-    """
-    pool = load_pool()
-    if not pool["core"] and not pool["by_topic"]:
-        return ""
-    picked: list[str] = []
-    seen: set[str] = set()
-    for t in _match_tags(match_text, pool)[:8] + pool["core"][:4]:
-        key = t.lower()
-        if key not in seen:
-            seen.add(key)
-            picked.append(t)
-    return ", ".join(picked)

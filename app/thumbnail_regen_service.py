@@ -68,13 +68,10 @@ class ThumbnailRegenService:
 
         structure = script.get("structure", "")
         if structure not in MODES:
-            structure = run_dir.parent.name if run_dir.parent.name in MODES else "original"
+            structure = run_dir.parent.name if run_dir.parent.name in MODES else "sleep"
 
-        # 角色参考图本地路径（子进程内再决定转 CDN URL 还是 base64）
-        if structure in ("quest", "original_cutout"):
-            ref_img = run_dir / "images" / "pose_char_a_0.png"
-        else:
-            ref_img = run_dir / "images" / "char_scene.png"
+        # 参考图本地路径（sleep 无角色参考图，恒为空；sensenova 分支子进程内转 base64）
+        ref_img = run_dir / "images" / "char_scene.png"
 
         # 输出文件名：无主图时补 thumbnail.jpg，否则 thumbnail_N.jpg 递增（旧图全保留）
         if not (run_dir / "thumbnail.jpg").exists():

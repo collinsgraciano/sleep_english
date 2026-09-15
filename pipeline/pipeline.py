@@ -62,8 +62,7 @@ def _get_style_prompt(args) -> str:
 # Script validation + generation
 # ---------------------------------------------------------------------------
 
-def _validate_script(script: dict, num_lines: int,
-                     quest: bool = False, story: bool = False) -> tuple[bool, str]:
+def _validate_script(script: dict, num_lines: int) -> tuple[bool, str]:
     """Validate a generated sleep script. Returns (is_valid, error_message)."""
     dialogue = script.get("dialogue", [])
     if len(dialogue) < num_lines:
@@ -244,7 +243,6 @@ def _step0_script(args, checkpoint: dict, topic: str, parent_dir: Path,
         if qt_src is not None:
             # 快速测试：脚本复用源运行，运行目录沿用其标题（冲突加 _qt 后缀）
             script = json.loads((qt_src / "script.json").read_text(encoding="utf-8"))
-            script["structure"] = args.structure
             yt_title = script.get("youtube_title", script.get("title", topic))
             safe_title = _safe_dirname(yt_title, topic)
             work_dir = parent_dir / safe_title
@@ -386,7 +384,7 @@ def _step2_images_tts(args, checkpoint: dict, script: dict, work_dir: Path, dirs
             import sensenova_image
             if sensenova_image.get_image_provider() != "sensenova":
                 # Step 1 对 sleep 跳过了 MCP 初始化 —— 按需初始化（照缩略图先例）
-                raw_tokens = args.mcp_tokens or args.mcp_token or ""
+                raw_tokens = args.mcp_tokens or ""
                 _toks = [t.strip() for t in raw_tokens.split(",") if t.strip()]
                 if _toks:
                     try:
@@ -527,7 +525,7 @@ def _step45_thumbnail(args, checkpoint: dict, script: dict, work_dir: Path,
         # 不崩掉与 MCP 无关的 sleep 运行）
         import sensenova_image
         if sensenova_image.get_image_provider() != "sensenova":
-            raw_tokens = args.mcp_tokens or args.mcp_token or ""
+            raw_tokens = args.mcp_tokens or ""
             _toks = [t.strip() for t in raw_tokens.split(",") if t.strip()]
             if _toks:
                 print("  [Thumbnail] sleep 缩略图 AI 生成 —— 初始化 MCP 会话...")
@@ -819,7 +817,6 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument("--sleep-4k-native", action="store_true", help="卡片原生 3840x2160 渲染（成片即 4K；默认关=720p 合成后 Step6 放大）")
     # --- LLM ---
     parser.add_argument("--mcp-tokens", default=None, help="TJGenerators MCP OAuth tokens（仅 AI 缩略图/背景图消费，逗号分隔多 token 轮换）")
-    parser.add_argument("--mcp-token", default=None, help="(Deprecated) Single MCP token. Use --mcp-tokens instead.")
     parser.add_argument("--image-provider", default="mcp", choices=["mcp", "sensenova"],
                         help="Image generation provider for bg image/thumbnail: 'mcp' (default) or 'sensenova' (U1.5 Lite)")
     parser.add_argument("--api-key", default=None, help="SenseNova API key (or set SENSENOVA_API_KEY env var)")

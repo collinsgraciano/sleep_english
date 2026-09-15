@@ -64,7 +64,7 @@ def pair_steps(audio_dir: Path, i: int) -> dict:
     """第 i 组（1-based）各步骤音频路径表。"""
     base = f"pair_{i:04d}"
     return {step: str(audio_dir / f"{base}_{step}.mp3")
-            for step in ("a_m", "a_f", "b_m", "b_f", "a_slow", "b_slow", "combo")}
+            for step in ("a_m", "b_m", "b_f", "a_slow", "b_slow", "combo")}
 
 
 def load_sleep_audio_results(audio_dir: Path, num_pairs: int) -> dict | None:
@@ -195,7 +195,7 @@ def prepare_sleep_audio(script: dict, audio_dir: Path, num_pairs: int,
         if all(os.path.exists(paths[s]) for s in ("a_m", "a_slow", "b_m", "b_slow", "combo")):
             pair_paths[str(i).zfill(4)] = paths
             pair_durs[str(i).zfill(4)] = {
-                s: get_duration(paths[s]) for s in paths if s != "a_f" and s != "b_f"}
+                s: get_duration(paths[s]) for s in paths if s != "b_f"}
             continue
         if not os.path.exists(paths["a_m"]):
             _synth(text_a, male_voice, paths["a_m"], rate=male_rate_str)

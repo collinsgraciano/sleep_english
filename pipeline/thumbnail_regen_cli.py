@@ -30,7 +30,7 @@ if _PARENT not in sys.path:
 def main() -> int:
     params = json.loads(sys.stdin.readline() or "{}")
     run_dir = Path(params["run_dir"])
-    structure = params.get("structure", "original")
+    structure = params.get("structure", "sleep")
     out_name = params["out_name"]
     ref_img = params.get("ref_img", "")
     provider = params.get("provider", "mcp")
@@ -56,12 +56,6 @@ def main() -> int:
         tokens = [t.strip() for t in params.get("mcp_tokens", []) if t.strip()]
         mcp_initialize(tokens=tokens or None)
         char_scene_url = ""
-        if ref_img:
-            from image_gen import reupload_for_cdn
-            try:
-                char_scene_url = reupload_for_cdn(ref_img, Path(ref_img).name) or ""
-            except Exception as e:
-                print(f"[ThumbnailRegen] 参考图上传失败，退回无参考图生成: {e}")
     else:
         # sensenova edit_image 内部 _to_image_url 把本地路径转 base64
         char_scene_url = ref_img
@@ -79,13 +73,8 @@ def main() -> int:
         sleep_channel = str(sleep_cfg.get("sleep_channel_name", "")
                             or "English with me")
 
-    # 场景图：仅 Pillow 兜底分支需要；AI 分支纯 prompt 生成不受影响
-    if structure == "quest":
-        scene_img = run_dir / "images" / "scene_0.png"
-        if not scene_img.exists():
-            scene_img = run_dir / "images" / "scene.png"
-    else:
-        scene_img = run_dir / "images" / "scene.png"
+    # 场景图：仅 Pillow 兜底分支需要；sleep AI 分支纯 prompt 生成不受影响
+    scene_img = run_dir / "images" / "scene.png"
 
     out_path = generate_thumbnail(
         script=script,

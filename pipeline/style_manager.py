@@ -15,7 +15,7 @@ _WEB_ROOT = Path(__file__).parent.parent
 CUSTOM_STYLES_PATH = _WEB_ROOT / "configs" / "styles_custom.json"
 PREVIEW_DIR = _WEB_ROOT / "configs" / "style_previews"
 
-# 现有硬编码默认风格（image_gen.py / pipeline.py 原文，保证 100% 等价）
+# 现有硬编码默认风格（pipeline.py 原文，保证 100% 等价）
 DEFAULT_STYLE_PROMPT = (
     "3D cartoon style, Pixar-like, warm soft lighting, "
     "cel-shaded with thin clean black outline, "

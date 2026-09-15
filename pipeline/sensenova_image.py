@@ -1,7 +1,7 @@
 """SenseNova U1.5 Lite 生图客户端（同步接口，无轮询）。
 
 依赖 SENSENOVA_API_KEY 环境变量（配置键 sensenova_api_key，可与 LLM provider 分开填写）。
-IMAGE_PROVIDER=sensenova 时 image_gen / thumbnail_gen 的生图走本模块，
+IMAGE_PROVIDER=sensenova 时 thumbnail_gen / sleep bg_image 的生图走本模块，
 视频生成（Seedance2）仍走 MCP。
 
 接口约束（官方文档）：
