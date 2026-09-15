@@ -73,5 +73,4 @@ sleep_english/
 - 卡片渲染有模板缓存（改主题字段即自动失效）；音频时长 sidecar .durations.json（mtime+size 校验）
 - 本仓库无 git remote（push 不可用，commit 即可）
 - 双项目并行时集数/主题防重各自独立，可能重合（已知权衡）
-- configs/mode_sleep.json 的 topics_file 与 sleep_bg_image_path 仍指向旧项目路径（待用户确认后切回本项目内）
 - 用户反馈记忆（跨会话通用规则）见用户级 CODELY.md；本项目后续沉淀追加到「Codely Structured Memories」Project 节
