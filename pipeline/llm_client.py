@@ -1,0 +1,1493 @@
+"""Standalone LLM client for listening video script generation.
+
+Uses SenseNova DeepSeek V4 Flash (OpenAI-compatible API).
+No external project imports.
+"""
+import contextlib
+import json
+import re
+import os
+import sys
+import threading
+import urllib.parse
+import urllib.request
+import urllib.error
+from pathlib import Path
+
+from style_manager import get_active_style_prompt, get_active_thumbnail_hint
+from script_style import build_style_boost_section, build_device_block, pick_plot_devices
+
+# 线程局部 LLM 环境覆盖：Web 批量生成等后台线程自带 provider 配置，
+# 与运行中 pipeline 线程读的 os.environ 互不污染（并发运行互不干扰）。
+_LLM_ENV_TLS = threading.local()
+
+
+def set_llm_env_override(cfg: dict | None) -> None:
+    """设置当前线程的 LLM 环境覆盖（传 None 清除）。
+
+    键名与 env var 同名（LLM_PROVIDER / OPENAI_API_KEY / ...）；
+    未覆盖的键回退 os.environ。仅影响调用线程内的 LLM 调用。
+    """
+    _LLM_ENV_TLS.cfg = cfg
+
+
+def _env_get(name: str, default: str = "") -> str:
+    """os.environ.get 的线程局部覆盖版：当前线程的 override 优先。"""
+    cfg = getattr(_LLM_ENV_TLS, "cfg", None)
+    if cfg is not None and name in cfg:
+        return cfg[name]
+    return os.environ.get(name, default)
+
+
+def _env_int_clamped(name: str, default: int, lo: int, hi: int) -> int:
+    """线程局部 override 优先读取整型 env 配置，clamp 到 [lo, hi]。"""
+    raw = (_env_get(name, "") or "").strip()
+    try:
+        val = int(raw) if raw else default
+    except ValueError:
+        val = default
+    return max(lo, min(hi, val))
+
+
+def resolve_max_line_words(env_name: str = "LISTENING_MAX_LINE_WORDS",
+                           default: int = 10) -> int:
+    """对话/旁白每句最大词数（字幕最多两行约束）：env（线程局部优先）→ clamp [4,20]。"""
+    return _env_int_clamped(env_name, default, 4, 20)
+
+
+def _env_flag(name: str) -> bool:
+    """布尔 env 解析（"1"/"true"/"yes"/"on"，大小写不敏感，线程局部优先）。"""
+    return _env_get(name, "").strip().lower() in ("1", "true", "yes", "on")
+
+
+# Rate limiting: enforce minimum interval between LLM API calls to avoid HTTP 429.
+# glm-5.2 is especially aggressive about "request rate increased too quickly".
+_LAST_CALL_TIME = 0.0  # 最近一次调用的开始时刻（预约槽位）
+_RATE_LOCK = threading.Lock()
+
+
+def _get_min_call_interval() -> float:
+    """Read LLM_MIN_INTERVAL per-call (thread-local override first)."""
+    return float(_env_get("LLM_MIN_INTERVAL", "5.0"))
+
+
+def _enforce_rate_limit(min_interval: float | None = None):
+    """预约式限速：相邻两次 LLM 调用的开始时刻间隔 ≥ min_interval。
+
+    min_interval 缺省读 LLM_MIN_INTERVAL（线程局部 override 优先）；
+    显式传入时用调用方的值（topics_ai / script_library 网关按各自配置），
+    但共享同一 _LAST_CALL_TIME，使 Web 批量任务与 pipeline 并发时限速互认，
+    避免两路同时打同一 provider 触发 429。
+    """
+    import time as _time
+    global _LAST_CALL_TIME
+    with _RATE_LOCK:
+        interval = _get_min_call_interval() if min_interval is None else float(min_interval)
+        now = _time.time()
+        start_at = max(now, _LAST_CALL_TIME + interval)
+        _LAST_CALL_TIME = start_at  # 预约本次调用的开始槽位
+    if start_at > now:
+        _time.sleep(start_at - now)
+
+
+def _dump_raw_debug(raw: str, model: str, kind: str) -> str | None:
+    """Write a full raw LLM response to LLM_DEBUG_DIR for offline inspection.
+
+    Returns the file path on success, or None when LLM_DEBUG_DIR is unset or
+    the write fails — debug dumping must never break the pipeline.
+    """
+    debug_dir = os.environ.get("LLM_DEBUG_DIR", "").strip()
+    if not debug_dir:
+        return None
+    try:
+        from datetime import datetime as _dt
+        d = Path(debug_dir)
+        d.mkdir(parents=True, exist_ok=True)
+        safe_model = re.sub(r"[^\w.-]", "_", model) or "model"
+        path = d / f"{kind}_{safe_model}_{_dt.now().strftime('%Y%m%d_%H%M%S_%f')}.json"
+        path.write_text(raw, encoding="utf-8")
+        return str(path)
+    except OSError:
+        return None
+
+
+def _diagnose_response(result: dict) -> str:
+    """Build a compact human-readable diagnosis of an LLM response dict.
+
+    Surfaces the fields that explain empty/failed completions (finish_reason,
+    message keys, reasoning_content length, usage counts, provider error).
+    """
+    parts: list[str] = []
+    try:
+        choices = result.get("choices") or []
+        if choices:
+            finish = choices[0].get("finish_reason")
+            if finish:
+                parts.append(f"finish_reason={finish!r}")
+            msg = choices[0].get("message") or {}
+            keys = list(msg.keys())
+            if keys:
+                parts.append(f"message keys={keys}")
+            rc = msg.get("reasoning_content") or msg.get("reasoning")
+            if rc:
+                parts.append(f"reasoning_content={len(str(rc))} chars")
+    except (AttributeError, IndexError, TypeError):
+        pass
+    usage = result.get("usage")
+    if isinstance(usage, dict):
+        u = {k: usage[k] for k in
+             ("prompt_tokens", "completion_tokens", "reasoning_tokens", "total_tokens")
+             if k in usage}
+        if u:
+            parts.append(f"usage={u}")
+    if result.get("error"):
+        parts.append(f"error={result['error']}")
+    return "; ".join(parts) if parts else "no diagnostic fields found"
+
+
+# HTTP 层可重试状态码与退避表（_chat 与 gemini_chat 共用）
+_RETRY_CODES = [429, 502, 503, 504, 524]
+_RETRY_BACKOFFS = [15, 30, 60, 90, 120]
+
+# ---------------------------------------------------------------------------
+# LLM 代理支持（全部 Provider 通用）：llm_proxy_enabled + llm_proxy_url。
+# 支持 http(s):// 与 socks5://、socks5h://（socks 系列 DNS 一律经代理解析，
+# 防本地 DNS 污染）。仅作用于 LLM API 调用窗口；MCP 生图/视频、SenseNova 生图、
+# TTS、模型下载等其他流量不受影响。
+# ---------------------------------------------------------------------------
+
+_SOCKS_SCHEMES = ("socks5h", "socks5", "socks4")
+_PROXY_ENV_KEYS = ("HTTPS_PROXY", "https_proxy", "HTTP_PROXY", "http_proxy")
+
+
+def _proxy_scheme(proxy_url: str) -> str:
+    return urllib.parse.urlparse(proxy_url).scheme.lower()
+
+
+def _llm_proxy_url() -> str:
+    """env 版代理读取（线程局部 override 优先），仅 llm_proxy_enabled 时非空。"""
+    if not _env_flag("LLM_PROXY_ENABLED"):
+        return ""
+    return _env_get("LLM_PROXY_URL", "").strip()
+
+
+def proxy_url_from_config(config: dict) -> str:
+    """config dict 版代理读取，供 Web 直连调用方（topics_ai 等）使用。"""
+    if not config.get("llm_proxy_enabled"):
+        return ""
+    return str(config.get("llm_proxy_url") or "").strip()
+
+
+@contextlib.contextmanager
+def _socks_socket_window(proxy_url: str):
+    """urllib + SOCKS 代理窗口：PySocks 临时接管 socket.socket，结束即恢复。
+
+    urllib 没有 per-opener 的 socks 钩子，PySocks 官方用法即临时替换
+    socket.socket；rdns=True 让 DNS 经代理解析（防本地 DNS 污染）。
+    """
+    import socket as _socket
+    import socks
+    u = urllib.parse.urlparse(proxy_url)
+    ptype = {"socks5": socks.SOCKS5, "socks5h": socks.SOCKS5,
+             "socks4": socks.SOCKS4}.get(_proxy_scheme(proxy_url), socks.SOCKS5)
+    socks.set_default_proxy(ptype, u.hostname, u.port or 1080, rdns=True,
+                            username=u.username, password=u.password)
+    saved = _socket.socket
+    _socket.socket = socks.socksocket
+    try:
+        yield
+    finally:
+        _socket.socket = saved
+
+
+@contextlib.contextmanager
+def _requests_proxy_env(proxy_url: str):
+    """httpx/requests（google-genai SDK）代理窗口：临时设 HTTP(S)_PROXY。
+
+    SDK 在 genai.Client 构造时一次性创建 httpx.Client 并冻结代理（读 env），
+    故窗口必须覆盖 Client 构造与全部请求；socks5:// 归一为 socks5h://，
+    与 urllib 侧 rdns=True 的远端 DNS 行为保持一致。
+    """
+    if not proxy_url:
+        yield
+        return
+    if _proxy_scheme(proxy_url) == "socks5":
+        proxy_url = "socks5h://" + proxy_url.split("://", 1)[1]
+    saved = {k: os.environ.get(k) for k in _PROXY_ENV_KEYS}
+    for k in _PROXY_ENV_KEYS:
+        os.environ[k] = proxy_url
+    try:
+        yield
+    finally:
+        for k, v in saved.items():
+            if v is None:
+                os.environ.pop(k, None)
+            else:
+                os.environ[k] = v
+
+
+def llm_urlopen(req, timeout: int, proxy_url: str = ""):
+    """urllib.urlopen 的 LLM 代理感知版。
+
+    无代理→urlopen；socks→PySocks 窗口内 urlopen；http(s)→显式 ProxyHandler
+    opener（urllib 全局 opener 会缓存首次 getproxies() 的结果，env 窗口对
+    长驻 Web 进程不可靠，必须逐请求显式建 opener）。
+    """
+    if not proxy_url:
+        return urllib.request.urlopen(req, timeout=timeout)
+    if _proxy_scheme(proxy_url) in _SOCKS_SCHEMES:
+        with _socks_socket_window(proxy_url):
+            return urllib.request.urlopen(req, timeout=timeout)
+    opener = urllib.request.build_opener(
+        urllib.request.ProxyHandler({"http": proxy_url, "https": proxy_url}))
+    return opener.open(req, timeout=timeout)
+
+
+# ---------------------------------------------------------------------------
+# Gemini（google-genai SDK，Interactions API）：llm_provider="gemini"
+# 参考 https://ai.google.dev/gemini-api/docs/interactions-overview
+# input 支持 string（单轮）或 array(Step)（无状态多轮，user_input/model_output）；
+# system_instruction 独立参数；generation_config 含 max_output_tokens /
+# thinking_level(minimal|low|medium|high) / temperature；interaction.output_text
+# 为 SDK 拼接的最后一轮模型文本。
+# ---------------------------------------------------------------------------
+
+_GEMINI_DEFAULT_MODEL = "models/gemini-3.8-flash"
+_GEMINI_THINKING_LEVELS = ("minimal", "low", "medium", "high")
+
+# 限流自动降级链（从新到旧；仅含免费档实际有配额的文本输出模型——Pro 系 0 配额、
+# TTS/图像/Agent 类不在列）。配置的模型是起点，受限时向更旧方向逐个降级。
+_GEMINI_FALLBACK_CHAIN = [
+    "models/gemini-3.8-flash",
+    "models/gemini-3.7-flash",
+    "models/gemini-3.6-flash",
+    "models/gemini-3.5-flash",
+    "models/gemini-3.5-flash-lite",
+    "models/gemini-3.1-flash-lite",
+    "models/gemini-3-flash",
+    "models/gemini-2.5-flash",
+    "models/gemini-2.5-flash-lite",
+]
+# 触发降级的状态码：429 限流(RPM/TPM/RPD)、503 过载、400 参数不被该模型支持、
+# 403/404 该模型无权限或不存在。401 鉴权不降级（全局问题立即报错）；
+# 5xx 网关/网络错误不降级（对同模型退避重试）。
+_GEMINI_FALLBACK_CODES = (400, 403, 404, 429, 503)
+# 整条链全部 429 时（RPM 窗口恢复需要时间），等待后整链重试的轮数与间隔
+_GEMINI_CHAIN_RETRIES = 1
+_GEMINI_CHAIN_RETRY_WAIT = 30
+
+# Gemini 专用退避（比共享 _RETRY_BACKOFFS 短）：代理抖动/网关错误不干等
+# 15s+；仅 gemini_chat 使用，sensenova/openai 的 urllib 路径退避不变。
+_GEMINI_RETRY_BACKOFFS = [5, 10, 20, 40]
+
+# 降级记忆：降级后成功的模型在 24h 内作为后续调用的链起点（不再从头试
+# 配置模型），超时自动释放回配置模型。仅进程内存，重启即失效。
+_GEMINI_FALLBACK_TTL = 24 * 3600
+_GEMINI_LAST_FALLBACK: dict[str, float] = {}  # {bare_model: 记录时刻}
+_GEMINI_FALLBACK_LOCK = threading.Lock()
+
+# Client 连接复用：httpx 连接池按 Client 实例隔离，每次新建要重付代理
+# 握手 + TLS 建连；按 (api_key, proxy_url) 缓存复用，代理在构造时冻结。
+_GEMINI_CLIENTS: dict[str, object] = {}
+_GEMINI_CLIENTS_LOCK = threading.Lock()
+
+
+def _gemini_remember_fallback(model: str) -> None:
+    """记录降级成功的模型（单槽，仅保留最近一次）。"""
+    import time as _time
+    bare = (model or "").split("/")[-1]
+    if not bare:
+        return
+    with _GEMINI_FALLBACK_LOCK:
+        _GEMINI_LAST_FALLBACK.clear()
+        _GEMINI_LAST_FALLBACK[bare] = _time.time()
+
+
+def _gemini_recent_fallback() -> str:
+    """24h 内降级成功的模型 bare 名；过期清除并返回空串。"""
+    import time as _time
+    with _GEMINI_FALLBACK_LOCK:
+        for bare, ts in list(_GEMINI_LAST_FALLBACK.items()):
+            if _time.time() - ts > _GEMINI_FALLBACK_TTL:
+                _GEMINI_LAST_FALLBACK.pop(bare, None)
+                return ""
+        return next(iter(_GEMINI_LAST_FALLBACK), "")
+
+
+def _get_gemini_client(api_key: str, proxy_url: str):
+    """按 (api_key, proxy_url) 缓存复用 genai.Client（构造需覆盖代理 env 窗口）。"""
+    from google import genai as _genai
+    cache_key = f"{api_key}|{proxy_url}"
+    with _GEMINI_CLIENTS_LOCK:
+        cached = _GEMINI_CLIENTS.get(cache_key)
+    if cached is not None:
+        return cached
+    proxy_cm = (_requests_proxy_env(proxy_url) if proxy_url
+                else contextlib.nullcontext())
+    with proxy_cm:
+        client = _genai.Client(api_key=api_key)
+    with _GEMINI_CLIENTS_LOCK:
+        return _GEMINI_CLIENTS.setdefault(cache_key, client)
+
+
+def _gemini_fallback_chain(model: str) -> list[str]:
+    """配置模型起点 + 从新到旧的降级候选链。
+
+    配置模型在链内 → 从它的下一个更旧模型接续；不在链内（如 Pro 或未来新模型）
+    → 先试配置模型，再走整条链兜底。比较时忽略 "models/" 前缀。
+    """
+    bare = model.split("/")[-1] if model else ""
+    chain = [model] if model else []
+    start = 0
+    for i, m in enumerate(_GEMINI_FALLBACK_CHAIN):
+        if m.split("/")[-1] == bare:
+            start = i + 1
+            break
+    chain.extend(_GEMINI_FALLBACK_CHAIN[start:])
+    return chain
+
+
+def _gemini_input_and_system(messages: list[dict]) -> tuple:
+    """chat messages → (input, system_instruction)。
+
+    单轮：input 用字符串（官方示例形式）；多轮：input 用 array(Step)
+    无状态全历史（assistant → model_output step，其余 → user_input step）。
+    """
+    system_parts = [str(m.get("content") or "") for m in messages
+                    if m.get("role") == "system"]
+    system_instruction = "\n\n".join(p for p in system_parts if p.strip())
+    turns = [m for m in messages if m.get("role") != "system"]
+    if len(turns) <= 1:
+        text = str(turns[0].get("content") or "") if turns else ""
+        return text, system_instruction
+    steps = []
+    for m in turns:
+        step_type = "model_output" if m.get("role") == "assistant" else "user_input"
+        steps.append({
+            "type": step_type,
+            "content": [{"type": "text", "text": str(m.get("content") or "")}],
+        })
+    return steps, system_instruction
+
+
+def gemini_chat(api_key: str, model: str, messages: list[dict], *,
+                temperature: float = 0.8, timeout: int = 600,
+                max_tokens: int = 8192, reasoning_effort: str = "low",
+                proxy_url: str = "") -> str:
+    """同步调 Gemini Interactions API，返回输出文本（公开函数，Web 直连功能复用）。
+
+    代理窗口覆盖 genai.Client 构造与全部请求（httpx 代理在构造时冻结）。
+    模型从新到旧自动降级：配置模型受限（429/503/400/403/404）时切换到下一个
+    更旧模型；401 鉴权立即报错；网络/网关错误对同模型退避重试；整链全部 429
+    时等待后整链重试一轮（RPM 窗口恢复）。空输出一次性加倍 max_tokens 重试
+    （thinking 模型可能耗尽输出预算），二次空输出降级下一个模型。
+    Client 按 (api_key, 代理) 缓存复用连接；降级成功的模型 24h 内直接作为
+    后续调用的链起点（不再从头试配置模型）。
+    """
+    import time as _time
+
+    if not api_key:
+        raise RuntimeError("GEMINI_API_KEY not set")
+    try:
+        from google import genai as _genai
+    except ImportError as e:
+        raise RuntimeError(
+            "未安装 google-genai SDK，请先执行：pip install google-genai") from e
+
+    thinking = reasoning_effort if reasoning_effort in _GEMINI_THINKING_LEVELS else "low"
+    input_value, system_instruction = _gemini_input_and_system(messages)
+    proxy_cm = (_requests_proxy_env(proxy_url) if proxy_url
+                else contextlib.nullcontext())
+    chain = _gemini_fallback_chain(model)
+    recent = _gemini_recent_fallback()
+    if recent:
+        for _idx, _m in enumerate(chain):
+            if _m.split("/")[-1] == recent:
+                if _idx > 0:
+                    chain = chain[_idx:]
+                    print(f"  [Gemini] 使用 24h 内降级记忆 {_m} 作为起点"
+                          "（跳过已限流的更早候选）")
+                break
+    _empty_retried = False
+    with proxy_cm:
+        client = _get_gemini_client(api_key, proxy_url)
+        for chain_round in range(_GEMINI_CHAIN_RETRIES + 1):
+            failures: list[str] = []
+            all_rate_limited = True
+            for model_idx, current_model in enumerate(chain):
+                attempt = 0
+                while True:
+                    _enforce_rate_limit()  # 共享限速槽位（与 sensenova/openai 互认）
+                    try:
+                        kwargs = {
+                            "model": current_model,
+                            "input": input_value,
+                            "generation_config": {
+                                "max_output_tokens": max_tokens,
+                                "thinking_level": thinking,
+                                "temperature": temperature,
+                            },
+                            "store": False,
+                            "timeout": timeout,  # create() 的 per-call 超时，单位秒
+                        }
+                        if system_instruction:
+                            kwargs["system_instruction"] = system_instruction
+                        interaction = client.interactions.create(**kwargs)
+                    except Exception as e:  # noqa: BLE001 — SDK/网络异常统一归类
+                        code = getattr(e, "code", None)
+                        if code is None:
+                            # google-genai ≥2.23 interactions 兼容错误类
+                            # （RateLimitError 等）只带 status_code 不带 code，
+                            # 旧版 ClientError 仍带 code，两种都兼容
+                            code = getattr(e, "status_code", None)
+                        if code in _GEMINI_FALLBACK_CODES:
+                            # 该模型受限/不可用 → 降级到下一个更旧模型
+                            failures.append(f"{current_model}: HTTP {code}")
+                            if code != 429:
+                                all_rate_limited = False
+                            nxt = chain[model_idx + 1] \
+                                if model_idx + 1 < len(chain) else None
+                            print(f"  [Gemini] {current_model} 受限（HTTP {code}）"
+                                  + (f"，降级到 {nxt}" if nxt else "，已无更旧候选"))
+                            break
+                        if code is not None and code not in _RETRY_CODES:
+                            raise RuntimeError(f"Gemini API HTTP {code}: {e}") from e
+                        if attempt < len(_GEMINI_RETRY_BACKOFFS):
+                            wait = _GEMINI_RETRY_BACKOFFS[attempt]
+                            attempt += 1
+                            reason = (f"HTTP {code}" if code is not None else
+                                      f"网络错误 ({type(e).__name__}: {str(e)[:120]})")
+                            print(f"  [Gemini] {current_model} {reason}，{wait}s 后重试 "
+                                  f"({attempt}/{len(_GEMINI_RETRY_BACKOFFS)})...")
+                            _time.sleep(wait)
+                            continue
+                        raise RuntimeError(
+                            f"Gemini API 调用失败（重试后仍失败）: "
+                            f"{type(e).__name__}: {e}") from e
+                    text = (getattr(interaction, "output_text", None) or "").strip()
+                    if text:
+                        if model_idx > 0:
+                            print(f"  [Gemini] 已降级使用 {current_model} 成功")
+                            _gemini_remember_fallback(current_model)
+                        return text
+                    if not _empty_retried and max_tokens < 16384:
+                        new_max = min(max_tokens * 2, 16384)
+                        print(f"  [Gemini] {current_model} 空输出（thinking 可能耗尽"
+                              f"输出预算），以 max_tokens={new_max} 重试...")
+                        _empty_retried = True
+                        max_tokens = new_max
+                        continue
+                    # 二次空输出：按模型级失败处理，降级下一个模型
+                    failures.append(f"{current_model}: 空输出")
+                    all_rate_limited = False
+                    print(f"  [Gemini] {current_model} 空输出，降级下一个模型...")
+                    break
+            if not failures:
+                break  # 防御性保护：循环内必然 return / append / raise
+            if all_rate_limited and chain_round < _GEMINI_CHAIN_RETRIES:
+                print(f"  [Gemini] 整链 {len(chain)} 个模型全部限流（429），"
+                      f"{_GEMINI_CHAIN_RETRY_WAIT}s 后整链重试一轮...")
+                _time.sleep(_GEMINI_CHAIN_RETRY_WAIT)
+                continue
+            raise RuntimeError(
+                "Gemini 全部候选模型不可用（从新到旧已尝试 "
+                + str(len(chain)) + " 个）: " + "; ".join(failures))
+
+
+def _chat(messages: list[dict], temperature: float = 0.8, timeout: int = 180,
+          max_tokens: int = 8192, reasoning_effort: str = "low") -> str:
+    """Call LLM chat completion (SenseNova / OpenAI-compatible / Gemini), return content string.
+
+    Dispatches based on LLM_PROVIDER env var:
+    - "sensenova" (default): SenseNova DeepSeek V4 Flash / glm-5.2
+    - "openai": any OpenAI-compatible endpoint (x666.me, etc.)
+    - "gemini": Google Gemini via google-genai SDK (Interactions API)
+
+    Retries on HTTP 429 (rate limit) with exponential backoff.
+    Enforces a minimum interval between calls to avoid triggering rate limits.
+    """
+    import time as _time
+
+    provider = _env_get("LLM_PROVIDER", "sensenova")
+
+    if provider == "gemini":
+        return gemini_chat(
+            _env_get("GEMINI_API_KEY", ""),
+            _env_get("GEMINI_MODEL", _GEMINI_DEFAULT_MODEL),
+            messages,
+            temperature=temperature,
+            timeout=max(timeout, 600),  # SDK per-call 超时（秒），不短于默认 600s
+            max_tokens=max_tokens,
+            reasoning_effort=reasoning_effort,
+            proxy_url=_llm_proxy_url())
+
+    # 全 Provider 共用的 LLM 代理（llm_proxy_enabled + llm_proxy_url）
+    proxy_url = _llm_proxy_url()
+
+    if provider == "openai":
+        model = _env_get("OPENAI_MODEL", "grok-4.6")
+        api_key = _env_get("OPENAI_API_KEY", "")
+        base_url = _env_get("OPENAI_BASE_URL", "https://x666.me/v1")
+    else:
+        model = _env_get("SENSENOVA_MODEL", "deepseek-v4-flash")
+        api_key = _env_get("SENSENOVA_API_KEY", "")
+        base_url = _env_get("SENSENOVA_BASE", "https://token.sensenova.cn/v1")
+
+    # Retry on 429 (rate limit), 502/503/504 (gateway), 524 (Cloudflare timeout)
+    # One-shot rescue for finish_reason=length empty content (reasoning burn)
+    _length_retried = False
+
+    for _retry_attempt in range(len(_RETRY_BACKOFFS) + 1):
+        _enforce_rate_limit()
+        body = {
+            "model": model,
+            "messages": messages,
+            "temperature": temperature,
+            "max_tokens": max_tokens,
+        }
+        # reasoning_effort is SenseNova-specific; OpenAI-compatible APIs don't support it
+        if provider != "openai":
+            body["reasoning_effort"] = reasoning_effort
+        data = json.dumps(body).encode("utf-8")
+        req = urllib.request.Request(
+            f"{base_url}/chat/completions",
+            data=data,
+            method="POST",
+        )
+        req.add_header("Authorization", f"Bearer {api_key}")
+        req.add_header("Content-Type", "application/json")
+        # Cloudflare-protected endpoints (e.g. x666.me) block default Python User-Agent with 403
+        req.add_header("User-Agent", "CodelyLLM/1.0")
+        try:
+            with llm_urlopen(req, timeout, proxy_url) as resp:
+                raw = resp.read().decode("utf-8")
+                if not raw.strip():
+                    raise RuntimeError("LLM returned empty response body (HTTP 200, 0 bytes)")
+                try:
+                    result = json.loads(raw)
+                except json.JSONDecodeError:
+                    dbg = _dump_raw_debug(raw, model, "non_json")
+                    print(f"  [LLM] Non-JSON response (model={model}). "
+                          f"Full raw response ({len(raw)} chars)"
+                          f"{' saved to ' + dbg if dbg else ''}:")
+                    print(raw)
+                    print("  [LLM] End raw response")
+                    raise RuntimeError(
+                        f"LLM returned non-JSON response (model={model}). "
+                        f"Full raw ({len(raw)} chars)"
+                        f"{' saved to ' + dbg if dbg else ''} shown above: {raw}"
+                    ) from None
+                if "choices" not in result or not result["choices"]:
+                    diag = _diagnose_response(result)
+                    dbg = _dump_raw_debug(raw, model, "no_choices")
+                    print(f"  [LLM] Response has no 'choices' (model={model}). {diag}")
+                    print(f"  [LLM] Full raw response ({len(raw)} chars)"
+                          f"{' saved to ' + dbg if dbg else ''}:")
+                    print(raw)
+                    print("  [LLM] End raw response")
+                    raise RuntimeError(
+                        f"LLM response has no 'choices' field (model={model}). {diag}. "
+                        f"Full raw ({len(raw)} chars)"
+                        f"{' saved to ' + dbg if dbg else ''} shown above: {raw}"
+                    )
+                content = result["choices"][0]["message"]["content"]
+                if not content or not content.strip():
+                    # Reasoning models can burn the whole token budget on
+                    # reasoning (finish_reason=length, content empty). Retry
+                    # once with a doubled budget before surfacing the error.
+                    choice0 = result["choices"][0]
+                    finish = choice0.get("finish_reason") or ""
+                    has_reasoning = bool(
+                        (choice0.get("message") or {}).get("reasoning_content"))
+                    if (finish == "length" and has_reasoning
+                            and not _length_retried and max_tokens < 16384):
+                        new_max = min(max_tokens * 2, 16384)
+                        print(f"  [LLM] Empty content with finish_reason=length "
+                              f"(reasoning consumed the token budget); "
+                              f"retrying with max_tokens={new_max} (was {max_tokens})...")
+                        max_tokens = new_max
+                        _length_retried = True
+                        continue
+                    diag = _diagnose_response(result)
+                    dbg = _dump_raw_debug(raw, model, "empty_content")
+                    print(f"  [LLM] Empty content (HTTP 200, model={model}). {diag}")
+                    print(f"  [LLM] Full raw response ({len(raw)} chars)"
+                          f"{' saved to ' + dbg if dbg else ''}:")
+                    print(raw)
+                    print("  [LLM] End raw response")
+                    raise RuntimeError(
+                        f"LLM returned empty content (HTTP 200, model={model}). {diag}. "
+                        f"Full raw ({len(raw)} chars)"
+                        f"{' saved to ' + dbg if dbg else ''} shown above: {raw}"
+                    )
+                # 限速槽位已在 _enforce_rate_limit 中预约（start-to-start 间隔），
+                # 无需在响应后再次记录时间。
+                return content
+        except urllib.error.HTTPError as e:
+            err = e.read().decode("utf-8", errors="replace")
+            if e.code in _RETRY_CODES and _retry_attempt < len(_RETRY_BACKOFFS):
+                wait = _RETRY_BACKOFFS[_retry_attempt]
+                reason = ("rate limited" if e.code == 429
+                          else "gateway error" if e.code in (502, 503, 504)
+                          else "gateway timeout")
+                print(f"  [LLM] HTTP {e.code} ({reason}), "
+                      f"waiting {wait}s before retry "
+                      f"({_retry_attempt+1}/{len(_RETRY_BACKOFFS)})... "
+                      f"Model: {model}")
+                _time.sleep(wait)
+                continue
+            raise RuntimeError(f"LLM HTTP {e.code}: {err}") from e
+        except OSError as e:
+            # 网络层瞬断（连接超时/拒绝/DNS/读超时/服务器断连）— HTTPError 的
+            # 父类也是 OSError，故放在其后；与 429 同样走 backoff 重试，
+            # 避免一次网络抖动报废整个 quest 会话（20+ 次调用）。
+            if _retry_attempt < len(_RETRY_BACKOFFS):
+                wait = _RETRY_BACKOFFS[_retry_attempt]
+                print(f"  [LLM] Network error ({type(e).__name__}: {e}), "
+                      f"waiting {wait}s before retry "
+                      f"({_retry_attempt+1}/{len(_RETRY_BACKOFFS)})... "
+                      f"Model: {model}")
+                _time.sleep(wait)
+                continue
+            raise RuntimeError(
+                f"LLM network error after retries: {type(e).__name__}: {e}") from e
+
+
+def _repair_truncated_json(text: str) -> str:
+    """Attempt to repair truncated JSON by closing open strings, arrays, and objects."""
+    # Count unmatched braces/brackets
+    in_string = False
+    escape = False
+    stack = []
+    i = 0
+    while i < len(text):
+        c = text[i]
+        if escape:
+            escape = False
+            i += 1
+            continue
+        if c == '\\' and in_string:
+            escape = True
+            i += 1
+            continue
+        if c == '"' and not escape:
+            in_string = not in_string
+        elif not in_string:
+            if c == '{':
+                stack.append('}')
+            elif c == '[':
+                stack.append(']')
+            elif c in ('}', ']'):
+                if stack and stack[-1] == c:
+                    stack.pop()
+        i += 1
+    # If we're in an unterminated string, close it (a trailing lone backslash
+    # must be doubled first, otherwise the appended quote stays escaped)
+    if in_string:
+        if escape:
+            text += "\\"
+        text += '"'
+    stripped = text.rstrip()
+    if stack and stack[-1] == '}':
+        # Cut inside an object: dangling colon → empty value; dangling key
+        # (a full quoted string right after { or ,) → append ": \"\"" so the
+        # object stays parseable instead of "Expecting ',' delimiter"
+        if stripped.endswith(':'):
+            text = stripped + ' ""'
+        elif re.search(r'[{,]\s*"(?:[^"\\]|\\.)*"\s*$', stripped):
+            text = stripped + ': ""'
+        else:
+            text = re.sub(r',\s*$', '', stripped)
+    else:
+        text = re.sub(r',\s*$', '', stripped)
+    # Close all open structures
+    while stack:
+        text += stack.pop()
+    return text
+
+
+def _extract_json(text: str) -> dict:
+    """Extract JSON from LLM response (handles markdown fences + truncated JSON)."""
+    text = re.sub(r"^```(?:json)?\s*", "", text.strip())
+    text = re.sub(r"\s*```$", "", text.strip())
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        # Try repairing truncated JSON
+        repaired = _repair_truncated_json(text)
+        return json.loads(repaired)
+
+
+def _get_character_overrides() -> dict:
+    """Read character overrides (env var set by pipeline_service before step0)."""
+    raw = _env_get("CHARACTER_OVERRIDES", "")
+    if not raw:
+        return {}
+    try:
+        return json.loads(raw)
+    except (json.JSONDecodeError, TypeError):
+        return {}
+
+
+def _build_character_override_prompt(quest: bool = False) -> str:
+    """Build prompt section for pre-defined characters."""
+    overrides = _get_character_overrides()
+    if not overrides:
+        return ""
+
+    _LABELS = {
+        "char_a": "Speaker 1 (char_a)",
+        "char_b": "Speaker 2 (char_b)",
+        "char_c": "Staff character (char_c)",
+        "host": "TV Host (host)",
+    }
+    lines = ["PRE-DEFINED CHARACTERS (MANDATORY — these are FIXED, do NOT change):"]
+    for key, info in overrides.items():
+        if key == "narration":
+            # narration 仅供 TTS 音色覆盖（由 _reuse_characters 写入 script.json），
+            # 与 LLM 无关，注入反而诱导模型输出多余字段
+            continue
+        desc = info.get("description", "")
+        gender = info.get("gender", "")
+        role = info.get("role", "")
+        label = _LABELS.get(key, key)
+        parts = []
+        if desc:
+            parts.append(desc)
+        meta = []
+        if gender:
+            meta.append(f"gender: {gender}")
+        if role:
+            meta.append(f"role: {role}")
+        if not desc and gender:
+            # voice 模式：外观不预定，LLM 按主题新创作（仅性别/音色固定）
+            meta.append("appearance: NOT predefined — create a fresh one")
+        if meta:
+            parts.append(f"({', '.join(meta)})")
+        lines.append(f"- {label}: {' '.join(parts)}")
+
+    lines.append("")
+    lines.append("You MUST follow these rules for pre-defined characters:")
+    lines.append("1. If a description is given for a character, use the EXACT description text as the char_{key}_description value. If the description is marked \"appearance: NOT predefined\", CREATE a brand-new appearance description for this character that fits the topic naturally — only the gender is fixed.")
+    lines.append("2. Set char_{key}_gender to the specified gender. If gender is not given, infer it from the description.")
+    lines.append("3. Set char_{key}_role to the specified role. If role is not given, generate one that fits the description.")
+    lines.append("4. Write ALL dialogue for this character to match their role — the story scenario MUST fit these characters' roles (e.g. if role is 'dentist', the conversation should be about a dental visit).")
+    lines.append("5. If a description is given, use the EXACT same description text in ALL visual prompt entries for this character. If you created a new description, use YOUR new description consistently in ALL entries.")
+    lines.append("6. If host is pre-defined, host_description and host_gender MUST match the provided values.")
+    return "\n".join(lines) + "\n\n"
+
+
+def _per_line_prompt_reqs(pf: str, style_prompt: str) -> str:
+    """按结构生成行级视觉 prompt 字段要求文本（cutout 无 → 只要求三件套）。"""
+    if pf == "original":
+        return f"""
+  - "video_prompt": a detailed prompt for AI video generation. MUST include: (1) the character's EXACT physical description (same every time for same speaker), (2) their role (e.g. "a waitress", "a customer"), (3) the scene location, (4) the action matching the dialogue text, AND the dialogue text itself so the character appears to be speaking those words naturally (e.g. "The character says: 'Hi, I'd like a latte, please.' while gesturing toward the menu"). CRITICAL: the video MUST closely reference the uploaded reference image — the character's appearance, clothing, and the scene must match the reference image exactly. Style phrase (copy verbatim): "{style_prompt}"."""
+    if pf == "original_static":
+        return f"""
+  - "image_prompt": a detailed prompt describing what this character looks like AND what they are doing. MUST include: (1) the character's EXACT physical description (same every time for same speaker), (2) their role (e.g. "a waitress", "a customer"), (3) the scene location, (4) the action matching the dialogue text. Style phrase (copy verbatim): "{style_prompt}"."""
+    return ""
+
+
+def _desc_consistency_hint(pf: str, speaker_num: int) -> str:
+    """char 描述字段的一致性提示（无 prompt 字段的结构不追加）。"""
+    if pf == "original":
+        return (f" This MUST be used identically in ALL of speaker "
+                f"{speaker_num}'s video_prompt entries.")
+    if pf == "original_static":
+        return (f" This MUST be used identically in ALL of speaker "
+                f"{speaker_num}'s image_prompt entries.")
+    return ""
+
+
+def _seo_hint_line(topic: str) -> str:
+    """SEO 词池提示行：按主题命中的高流量搜索短语，供 tags/标题/简介自然融入。
+
+    词池缺失或无命中 → 空串，prompt 与无词池时逐字节一致。
+    """
+    try:
+        from seo_pool import keyword_hint
+        hint = keyword_hint(topic)
+    except Exception:
+        return ""
+    if not hint:
+        return ""
+    return (f" High-traffic YouTube search phrases to weave in naturally "
+            f"where relevant: {hint}.")
+
+
+def _narration_field_desc(structure: str, mw: int) -> tuple[str, str]:
+    """story_hook / outro 字段说明（主持人族为加长版，其余结构保持原句）。
+
+    original_cutout 族（含 sprite 变体，生成时 structure 均归一为
+    original_cutout）主持人出镜开场/结尾：hook 需承接下文（场景铺垫 +
+    预告听什么 + 过渡进对话），outro 需总结上文（引用对白原句复盘 +
+    跟读建议 + CTA）。篇幅对齐 quest 规格，每句仍 ≤ mw 词保证字幕两行内。
+    其余结构返回旧文案（prompt 逐字节不变）。
+    """
+    if structure != "original_cutout":
+        story_hook = (f"a compelling 1-sentence intro that sets the scene "
+                      f"(AT MOST {mw} words)")
+        outro = ('a warm closing that thanks viewers and includes a clear '
+                 'call-to-action — ask them to LIKE the video, SUBSCRIBE to '
+                 'the channel, and COMMENT which scenario they want next '
+                 '(e.g. "That\'s all for today! If this helped, please hit '
+                 'like and subscribe. Tell me in the comments which scenario '
+                 f'you want next!"). Each sentence at most {mw} words')
+        return story_hook, outro
+    story_hook = (
+        "the host's opening narration right after the welcome greeting "
+        "(60-100 words total). It must: (1) set the scene vividly — who the "
+        "two characters are, where they are, and what is about to happen; "
+        "(2) preview what viewers will learn — mention 2-3 things to listen "
+        "for in the upcoming dialogue (real phrases, questions or situations "
+        "that actually appear in it); (3) end with ONE short hand-off line "
+        "leading into the conversation (e.g. \"Let's watch.\"). Do NOT "
+        "repeat the subscribe call-to-action (welcome_en already did it). "
+        "Do NOT greet the viewers again — no \"Welcome back\", \"Hi "
+        "everyone\", \"Hello\", \"Hey friends\" or any other greeting "
+        "(welcome_en already greeted them); start directly with the "
+        "scene/story. "
+        "Write in SHORT sentences — every sentence at most "
+        f"{mw} words."
+    )
+    outro = (
+        "the host's closing narration AFTER the practice section (80-110 "
+        "words total). Structure: (1) a short warm reaction to the story "
+        "that just ended; (2) recap 2-3 KEY English phrases that actually "
+        "appear in the dialogue — quote them VERBATIM in quotes and briefly "
+        "say when to use them; (3) encourage viewers to replay the video "
+        "and shadow-repeat each sentence; (4) ask viewers to COMMENT which "
+        "scenario they want next; (5) end with LIKE, SUBSCRIBE and goodbye. "
+        "Write in SHORT sentences — every sentence at most "
+        f"{mw} words."
+    )
+    return story_hook, outro
+
+
+_GREETING_RE = re.compile(
+    r'\b(welcome\s+back|hi\s+(?:friends|everyone|everybody|guys|there)|'
+    r'hello\s+(?:everyone|everybody|friends|again|guys|there)|'
+    r'hey\s+(?:friends|everyone|everybody|guys|there))\b',
+    re.IGNORECASE)
+
+
+def _dedupe_hook_greeting(script: dict) -> None:
+    """cutout 族兜底：hook 首句与 welcome_en 重复问候语时删掉该句。
+
+    welcome_en 已向观众打招呼，LLM 偶尔把 "Welcome back, everyone!" 又写进
+    story_hook 开头，成片会连播两遍问候。仅当两边都命中问候语才删除 hook
+    首句，让 hook 直接从场景句开始。就地修改 script["story_hook"]。
+    """
+    hook = (script.get("story_hook") or "").strip()
+    welcome = (script.get("welcome_en") or "").strip()
+    if not hook or not welcome:
+        return
+    if not (_GREETING_RE.search(welcome) and _GREETING_RE.search(hook)):
+        return
+    # 句末标点（可带闭引号）后的空白处断句，切出第一句
+    marked = re.sub(r'([.!?]["\'\u201d\u2019\u300d\u300f]?)(?=\s)',
+                    lambda m: m.group(1) + "\n", hook)
+    sentences = [s.strip() for s in marked.split("\n") if s.strip()]
+    if len(sentences) < 2 or not _GREETING_RE.search(sentences[0]):
+        return
+    script["story_hook"] = " ".join(sentences[1:])
+    print(f"  [LLM] story_hook 首句与 welcome_en 重复问候，已自动去除: "
+          f"{sentences[0]}")
+
+
+def _build_listening_prompt(topic: str, cefr: str, used_dialogues: list[str] = None,
+                            num_lines: int = 18,
+                            structure: str = "original",
+                            style_boost: bool = False,
+                            outline: dict | None = None,
+                            devices: list[str] | None = None) -> str:
+    """Build prompt for listening-practice lesson (num_lines + IPA + 繁中).
+
+    structure 决定行级视觉 prompt 字段（其余模式不需要的字段不再要求生成）：
+    original → video_prompt；original_static → image_prompt；original_cutout → 无。
+    style_boost（A）：注入 STYLE & STORY UPGRADE 块（few-shot/情节装置/禁套路/
+    张力要求）并把压制戏剧性的句子替换掉；默认 False 时 prompt 与原版逐字一致。
+    outline（B）：大纲先行生成的故事大纲，嵌入 MANDATORY 段。
+    """
+    pf = structure if structure in ("original", "original_static",
+                                    "original_cutout") else "original"
+    prompt_fields = {"original": ("video_prompt",),
+                     "original_static": ("image_prompt",),
+                     "original_cutout": ()}[pf]
+    # 每句最大词数（字幕两行约束）：LISTENING_MAX_LINE_WORDS → clamp [4,20]
+    mw = resolve_max_line_words()
+    # 主持人族 hook/outro 字段说明（加长版）；其余结构与旧文案逐字一致
+    story_hook_desc, outro_desc = _narration_field_desc(structure, mw)
+    # A（风格强化）：默认关闭 — story_line 保持原句，prompt 与旧版逐字一致
+    story_line = ("- The dialogue must tell a COMPLETE story with a clear "
+                  "beginning, problem/development, and resolution — but keep "
+                  "it grounded in reality, not exaggerated or melodramatic.")
+    style_boost_block = ""
+    outline_block = ""
+    if style_boost:
+        style_boost_block = build_style_boost_section(
+            topic, cefr, mw, devices=devices)
+        # 张力/意外节拍要求已由 STYLE & STORY UPGRADE 段承接，去掉压制性表述
+        story_line = ("- The dialogue must tell a COMPLETE story with a clear "
+                      "beginning, problem/development, and resolution.")
+    if outline:
+        outline_block = f"""
+STORY OUTLINE (MANDATORY — write the dialogue to follow this arc EXACTLY):
+- Premise: {outline.get('premise', '')}
+- Goal: {outline.get('goal', '')}
+- Obstacle: {outline.get('obstacle', '')}
+- Twist: {outline.get('twist', '')}
+- Resolution: {outline.get('resolution', '')}
+- Tone: {outline.get('tone', '')}
+- Scene: {outline.get('scene', '')}
+- char_a: {outline.get('char_a_role', '')} ({outline.get('char_a_gender', '')})
+- char_b: {outline.get('char_b_role', '')} ({outline.get('char_b_gender', '')})
+"""
+    cefr_guide = (
+        f"- A1: basic everyday words, present tense, short sentences (5-8 words)\n"
+        f"- A2: common daily phrases, present/past tense, sentences 5-{min(12, mw)} words\n"
+        f"- B1: moderate vocabulary, mixed tenses, sentences 8-{mw} words, some idioms\n"
+        f"- B2: advanced vocabulary, natural idioms and phrasal verbs, sentences up to {mw} words"
+    )
+    used_hint = ""
+    if used_dialogues:
+        used_hint = f"""
+IMPORTANT — AVOID DUPLICATES: The following dialogue scenarios have already been generated.
+Do NOT create dialogue that is too similar to these. Use a DIFFERENT situation, different speakers, different story:
+{chr(10).join(f"  - {d}" for d in used_dialogues[:20])}
+"""
+    style_prompt = get_active_style_prompt()
+    thumb_hint = get_active_thumbnail_hint()
+    # cutout 无行级视觉字段，但 host_bg_prompt/scene_images 同样需要 style 约束
+    style_targets = ' and '.join(prompt_fields) if prompt_fields else (
+        "host_bg_prompt and scene_images" if pf == "original_cutout" else "")
+    style_section = ""
+    if style_targets:
+        style_section = f"""
+VISUAL STYLE (CRITICAL): The video's art style is: "{style_prompt}".
+- EVERY {style_targets} entry MUST include this EXACT style descriptor phrase (copy it verbatim).
+- Do NOT use any other art style, do NOT mix styles, do NOT add contradicting style words (e.g. photorealistic, sketch).
+"""
+    cutout_meta_section = ""
+    cutout_schema_fields = ""
+    if pf == "original_cutout":
+        cutout_meta_section = f"""
+- "host_bg_prompt": a detailed English prompt for the TV-studio background used by the host in the opening/ending segments. It MUST visually relate to today's topic (e.g. the large studio screen shows imagery of the "{topic}" scene). No people. Include the style phrase verbatim.
+- "scene_images": an array of EXACTLY 8 objects {{"prompt": string, "label": string}}. All 8 are DIFFERENT angles and details of the SAME "{topic}" location (e.g. exterior, counter, menu board, equipment, seating area, product close-up, decoration). Each prompt: a specific scene description with details, 16:9, no people, and MUST include the style phrase verbatim. "label" is a short English label (e.g. "Exterior", "Counter")."""
+        cutout_schema_fields = (
+            '\n  "host_bg_prompt": string,\n'
+            '  "scene_images": [{"prompt": string, "label": string}],'
+        )
+    return f"""You are an expert ESL teacher creating ENGLISH LISTENING PRACTICE content for overseas Chinese learners.
+
+CORE MISSION: 帮助海外华人用最地道最日常的英语，搞定真实生活中的每一个场景.
+{used_hint}
+Topic: {topic}
+CEFR Level: {cefr}
+CEFR Vocabulary Guide:
+{cefr_guide}
+Output: a JSON object ONLY (no markdown, no explanation).
+
+{_build_character_override_prompt(quest=False)}{style_boost_block}{outline_block}CONTENT REQUIREMENTS — This is for a LISTENING PRACTICE video targeting overseas Chinese:
+- The dialogue must be about REAL-LIFE situations that overseas Chinese people actually face in English-speaking countries — practical, relatable, and immediately useful.
+- Topics should be things people encounter in daily life: ordering food, asking for directions, making small talk, dealing with a problem at a store, calling customer service, visiting a doctor, renting an apartment, banking, school registration, etc.
+- The conversation must feel 100% NATURAL and REALISTIC — like something you'd overhear in real life, NOT a textbook. Use filler words (like "um", "well", "so"), natural pauses, back-channeling ("oh really?", "that makes sense"), and conversational flow.
+- Characters should speak the way REAL Americans do in everyday life: contractions (don't, I'll, can't), casual phrasal verbs (pick up, figure out, run out of), common idioms and slang appropriate for the CEFR level, and natural sentence fragments.
+{story_line}
+- Include realistic communication patterns: clarifying questions, polite hedging ("I was wondering if...", "Would it be possible to..."), thanking, apologizing, expressing mild frustration or satisfaction naturally.
+- Every line should teach something useful — a phrase, expression, or communication strategy that the viewer can immediately apply in their own life.
+{used_hint}
+TECHNICAL REQUIREMENTS:
+- Exactly 2 speakers with natural American English
+- Each speaker MUST have a clearly defined ROLE in the story (e.g. "customer" vs "waiter", "passenger" vs "check-in agent"). The role must be appropriate for the topic.
+- Exactly {num_lines} dialogue lines (each AT MOST {mw} words — HARD LIMIT, so on-screen subtitles never exceed 2 lines)
+- The dialogue must flow as a continuous, coherent story (not disconnected Q&A)
+- Every dialogue line MUST include:
+  - "text": the English sentence
+  - "phonetic": IPA phonetic transcription in /slashes/ (use proper IPA symbols)
+  - "zh": Traditional Chinese (繁體中文) translation{_per_line_prompt_reqs(pf, style_prompt)}
+- "char_a_description": a detailed physical description of speaker 1 (gender, hair color, hairstyle, clothing).{_desc_consistency_hint(pf, 1)}
+- "char_b_description": a detailed physical description of speaker 2 (gender, hair color, hairstyle, clothing).{_desc_consistency_hint(pf, 2)}
+- "char_a_gender": "male" or "female" — the gender of speaker 1
+- "char_b_gender": "male" or "female" — the gender of speaker 2
+- "char_a_role": the role of speaker 1 in the story (e.g. "waitress", "customer")
+- "char_b_role": the role of speaker 2 in the story (e.g. "customer", "waitress")
+- "youtube_title": a high-CTR YouTube title for overseas Chinese learners. ALL Chinese text in Traditional Chinese (繁體中文). Start with 【】bracket tag, use ｜ as separator, include 3-8 emoji and catchy power phrases (e.g. "不用背多聽就會用", "聽完就能說"). Optionally open with the Traditional Chinese translation of title_quote in「」quotes as a hook (e.g. 「三號加油機，麻煩了！」). End with ｜{{English topic}}. Length 55-95 chars (YouTube hard limit is 100 chars — NEVER exceed 95). Example: "【沉浸式英文動畫】出國怕開口？✈️ 超實用機場英文，聽完就能說！｜Airport English"
+- "youtube_title_en": a high-CTR YouTube title in PURE ENGLISH (no Chinese). STRONGLY PREFER the "quote hook" pattern: open with title_quote in quotes, then the scene context. Example: '"Pump Number 3, Please" — Paying Inside at an American Gas Station'. Second-best pattern: a curiosity question, e.g. "Can You Order Coffee in English? ☕ Real Conversation at a Coffee Shop". Include the topic, keep it under 100 chars, and make viewers want to click.
+- "youtube_description": a full YouTube video description (max 3000 chars). First line must be a hook with the main keyword. Do NOT write chapter timestamps — they are injected automatically after rendering. End with a call-to-action asking viewers to LIKE the video, SUBSCRIBE to the channel, and leave a COMMENT (e.g. which scenario they want to learn next), then finish with the 3 hashtags (#EnglishListening #ESL #LearnEnglish). ALL Chinese text in Traditional Chinese (繁體中文).
+- "youtube_description_en": a full YouTube video description in PURE ENGLISH (no Chinese). Max 3000 chars. First line = hook with main keyword. Do NOT write chapter timestamps — they are injected automatically after rendering. End with a call-to-action asking viewers to LIKE the video, SUBSCRIBE to the channel, and leave a COMMENT (e.g. which scenario they want to learn next), then finish with the hashtags.
+- "youtube_tags": an array of 15-20 SEO tags (mix of short and long-tail keywords, include both English and Traditional Chinese tags).{_seo_hint_line(topic)}
+- "youtube_title_ref": a SECOND YouTube title option in the reference channel's "沉浸式英文動畫" style. Exact format: 【🎬沉浸式英文動畫】+ emoji + 主題+"英文" ｜ 內容點1・內容點2・內容點3 ｜ 吸引句 ｜ 🌱{cefr} 初級英文 ｜ 💡不用背，多聽就會用 ｜ 🎧聽力口說練習 ｜ 後段逐句跟讀 — segments joined by ｜. The 3 content points name specifically what viewers learn from THIS dialogue, joined by "・" (e.g. "形容味道與口感・問口味・和陌生人聊美食"). ALL Traditional Chinese. Length 55-95 chars (NEVER exceed 95). Example: "【🎬沉浸式英文動畫】✈️聽懂美食英文｜🍢形容味道與口感・問口味・和陌生人聊美食｜🍽️出國盡情嚐美食｜🌱A1–A2 初級英文｜💡不用背，多聽就會用｜🎧聽力口說練習｜後段逐句跟讀"
+- "youtube_description_ref": a SECOND YouTube description option in the same reference style (max 3000 chars). ALL Traditional Chinese (繁體中文). Structure: start with "📌 影片簡介：" + a relatable hook question (2-3 short lines); then a paragraph "這一集帶大家走進…" (narrate the scene/location); then "你會聽到：" with 2-4 emoji bullet sections, each = a Traditional Chinese heading + 1-2 lines explaining what you'll learn, quoting REAL English phrases from THIS dialogue; then a paragraph about the 逐句聽力＋跟讀練習 🎧 in the second half; then "🌱 適合 {cefr} 初級英文學習者" paragraph (不用背，跟著情境反覆聽就會自然); then a short warm CTA paragraph asking viewers to 點讚、訂閱頻道，並留言告訴我們下一集想學的場景 (natural, warm, fits the reference channel's tone); end with a short warm closing line. Do NOT write timestamps or 時間軸 (auto-injected). Do NOT include playlist/video links or hashtags (auto-appended).
+- "scene": the English name of the scene/location (e.g. "pharmacy", "coffee shop", "hotel lobby"). Used for thumbnail and prompts.
+- "thumbnail_expression": the facial expression of the main character on the thumbnail (e.g. "surprised and excited", "confused and thinking", "cheerful and smiling", "friendly and confident")
+- "thumbnail_action": a short description of what the main character is doing on the thumbnail (e.g. "pointing to a menu", "holding a shopping bag", "waving hello", "gesturing toward the counter")
+- "thumbnail_subtitle": a short Traditional Chinese subtitle shown below the title on the thumbnail (e.g. "18句聽力練習", "每天50句", "實用日常英語")
+- "thumbnail_icons": an array of 4-5 objects with "en" and "zh" string keys, describing scene-related keywords shown as circular icons at the bottom of the thumbnail. Each has an English label and a Traditional Chinese label. Example for pharmacy: [{{"en": "Prescription", "zh": "處方"}}, {{"en": "Refill", "zh": "補充"}}, {{"en": "Cough Syrup", "zh": "止咳糖漿"}}, {{"en": "Side Effects", "zh": "副作用"}}]
+- "title": English title (e.g. "AT THE AIRPORT")
+- "title_quote": the single most catchy, memorable dialogue line from THIS dialogue, copied VERBATIM (under 10 words). It will be used as the YouTube title hook. Pick a line that instantly shows what the video teaches (e.g. "Pump number three, please.", "Do you have this in a medium?").
+- "cefr": the CEFR level of this lesson, exactly "{cefr}" (used for thumbnail level badge)
+- "title_zh": Traditional Chinese short title (max 6 characters, e.g. "在機場")
+- "scene_zh": Traditional Chinese scene description (e.g. "餐廳 · 點餐")
+- "story_hook": {story_hook_desc}
+- "intro_zh": Traditional Chinese translation of the intro
+- "welcome_en": a warm YouTube-host greeting opening the video (2-3 sentences), welcoming viewers, hinting at today's topic, AND ending with a light call-to-action (e.g. "Hi friends! Welcome back! Today we're checking out at a pharmacy. If you're new here, subscribing really helps!"). Keep each sentence at most {mw} words.
+- "welcome_zh": Traditional Chinese translation of the welcome greeting
+- "outro": {outro_desc}
+- "outro_zh": Traditional Chinese translation of the outro
+- "practice_intro_en": English instruction before the 跟讀 section (at most {mw} words)
+- "practice_intro_zh": Traditional Chinese translation of the practice intro
+- ALL Chinese text MUST be in Traditional Chinese (繁體中文)
+{cutout_meta_section}
+
+{style_section}CONSISTENCY RULES (CRITICAL):
+- Gender: char_a_gender/char_b_gender MUST match the description text. If female, description MUST say "a young woman" and ALL her prompts MUST say so. NEVER mix genders.{_consistency_prompt_rules(pf)}
+- Speaker field: MUST use "char_a" or "char_b" (not actual names).
+
+JSON schema:
+{{
+  "title": string,
+  "title_quote": string,
+  "cefr": string,
+  "title_zh": string,
+  "scene_zh": string,
+  "lesson_type": "listening",
+  "story_hook": string,
+  "intro_zh": string,
+  "welcome_en": string,
+  "welcome_zh": string,
+  "outro": string,
+  "outro_zh": string,
+  "practice_intro_en": string,
+  "practice_intro_zh": string,
+  "char_a_description": string,
+  "char_b_description": string,
+  "char_a_gender": string,
+  "char_b_gender": string,
+  "char_a_role": string,
+  "char_b_role": string,
+  "youtube_title": string,
+  "youtube_title_en": string,
+  "youtube_description": string,
+  "youtube_description_en": string,
+  "youtube_tags": [string],
+  "youtube_title_ref": string,
+  "youtube_description_ref": string,
+  "scene": string,{cutout_schema_fields}
+  "thumbnail_expression": string,
+  "thumbnail_action": string,
+  "thumbnail_subtitle": string,
+  "thumbnail_icons": [{{"en": string, "zh": string}}],
+  "dialogue": [{{"speaker": string, "text": string, "phonetic": string, "zh": string{_schema_prompt_fields(pf)}}}]
+}}
+
+Topic: {topic}"""
+
+
+def _consistency_prompt_rules(pf: str) -> str:
+    """CONSISTENCY RULES 中与视觉 prompt 相关的规则行（无 prompt 字段的结构省略）。"""
+    if pf == "original":
+        return ("\n- Appearance: each speaker's description (hair, clothing, etc.) "
+                "MUST be IDENTICAL across ALL their video_prompt entries."
+                "\n- Scene: video_prompt MUST match the dialogue context (if at a "
+                "restaurant, say \"restaurant\", NOT \"airport\"). Scene MUST be "
+                "consistent throughout ALL lines.")
+    if pf == "original_static":
+        return ("\n- Appearance: each speaker's description (hair, clothing, etc.) "
+                "MUST be IDENTICAL across ALL their image_prompt entries."
+                "\n- Scene: image_prompt MUST match the dialogue context (if at a "
+                "restaurant, say \"restaurant\", NOT \"airport\"). Scene MUST be "
+                "consistent throughout ALL lines.")
+    return ""
+
+
+def _schema_prompt_fields(pf: str) -> str:
+    """JSON schema 中行级 prompt 字段片段（cutout 为空串）。"""
+    if pf == "original":
+        return ', "video_prompt": string'
+    if pf == "original_static":
+        return ', "image_prompt": string'
+    return ""
+
+
+def _load_used_listening_summaries(lessons_dir: str = None,
+                                   lesson_type: str = "listening") -> list[str]:
+    """Load summaries of previously generated listening lessons for anti-duplicate.
+
+    Scans a lessons/ directory for JSON files with lesson_type="listening".
+    If lessons_dir is None or doesn't exist,
+    returns empty list.
+    """
+    if not lessons_dir:
+        return []
+    lessons_path = Path(lessons_dir)
+    if not lessons_path.exists():
+        return []
+    summaries = []
+    for f in lessons_path.glob("*.json"):
+        try:
+            data = json.loads(f.read_text(encoding="utf-8"))
+            script = data.get("script", data)
+            if script.get("lesson_type") != lesson_type:
+                continue
+            title = script.get("title", "")
+            story = script.get("story_hook", "")
+            first_line = script.get("dialogue", [{}])[0].get("text", "")
+            summaries.append(f"{title}: {story} (starts: {first_line[:60]})")
+        except (json.JSONDecodeError, KeyError, IndexError):
+            continue
+    return summaries
+
+
+def _build_outline_prompt(topic: str, cefr: str, devices: list[str],
+                          num_lines: int) -> str:
+    """大纲先行（B）：故事大纲 prompt（目标→障碍→转折→收尾）。"""
+    mw = resolve_max_line_words()
+    device_block = build_device_block(devices)
+    override_block = _build_character_override_prompt(quest=False)
+    override_hint = ""
+    if override_block:
+        override_hint = ("Pre-defined characters (use EXACTLY these roles/genders "
+                         "in the outline):\n" + override_block)
+    return f"""You are a story architect designing a short real-life story for an English listening practice dialogue for overseas Chinese learners.
+
+Topic: {topic}
+CEFR Level: {cefr}
+Dialogue length: exactly {num_lines} lines, exactly 2 speakers.
+Each line will be AT MOST {mw} words — design a story that fits short conversational lines.
+{device_block}
+{override_hint}Design rules:
+- Grounded everyday reality (a real-life scene in an English-speaking country), small but real stakes.
+- The story must have ONE clear arc: goal → obstacle → twist → resolution, with ONE unexpected moment (surprise / humor / small problem).
+- The story must be a scene TWO people can plausibly share (customer and staff, two friends, neighbors...).
+- Nothing that requires more than 2 speakers or a location change.
+
+Output a JSON object ONLY (no markdown):
+{{
+  "premise": "one-sentence premise",
+  "scene": "English scene name (e.g. 'pharmacy')",
+  "char_a_role": "role of speaker 1 (e.g. 'customer')",
+  "char_a_gender": "male or female",
+  "char_b_role": "role of speaker 2",
+  "char_b_gender": "male or female",
+  "goal": "what someone concretely wants in this scene",
+  "obstacle": "what gets in the way",
+  "twist": "the unexpected moment / surprise / humor beat",
+  "resolution": "how it ends and how a character reacts",
+  "tone": "overall tone (e.g. 'light and funny', 'warm', 'mildly chaotic but friendly')"
+}}
+
+Topic: {topic}"""
+
+
+def generate_story_outline(topic: str, cefr: str, devices: list[str],
+                           num_lines: int = 18) -> dict | None:
+    """大纲先行（B）：生成故事大纲；失败返回 None（回退单次生成，不中断）。"""
+    prompt = _build_outline_prompt(topic, cefr, devices, num_lines)
+    for attempt in range(2):
+        try:
+            content = _chat(
+                [{"role": "system",
+                  "content": "You are a story architect for ESL listening videos. Output valid JSON only."},
+                 {"role": "user", "content": prompt}],
+                temperature=0.9, max_tokens=2048, reasoning_effort="low")
+            outline = _extract_json(content)
+            if isinstance(outline, dict) and outline.get("premise"):
+                return outline
+            print("  [LLM] Outline missing 'premise', retrying...")
+        except (RuntimeError, json.JSONDecodeError) as e:
+            print(f"  [LLM] Outline attempt {attempt + 1}/2 failed: {e}")
+    print("  [LLM] Outline generation failed — falling back to single-pass generation")
+    return None
+
+
+def _generate_listening_raw(topic: str, cefr: str, used_summaries: list[str],
+                            num_lines: int, structure: str, style_boost: bool,
+                            devices: list[str], outline: dict | None,
+                            temp_start: float = 0.8) -> dict:
+    """单次生成 + 字段兜底（不含 QA 循环），供 generate_listening_script 调用。"""
+    prompt = _build_listening_prompt(topic, cefr, used_dialogues=used_summaries,
+                                     num_lines=num_lines, structure=structure,
+                                     style_boost=style_boost, outline=outline,
+                                     devices=devices)
+
+    # Retry up to 3 times on JSON parse errors (LLM may truncate or produce invalid JSON)
+    last_error = None
+    for attempt in range(3):
+        try:
+            content = _chat(
+                [
+                    {"role": "system", "content": "You are an expert ESL teacher creating English listening practice content for overseas Chinese learners. Output valid JSON only — no markdown, no explanations."},
+                    {"role": "user", "content": prompt},
+                ],
+                temperature=round(temp_start if attempt == 0 else temp_start - 0.1, 2),
+                max_tokens=8192,
+            )
+            script = _extract_json(content)
+            break
+        except (json.JSONDecodeError, RuntimeError) as e:
+            last_error = e
+            err_str = str(e)
+            # Log raw content on JSON parse errors for debugging
+            if isinstance(e, json.JSONDecodeError):
+                print(f"  [LLM retry {attempt+1}/3] JSONDecodeError: {err_str[:200]}")
+                print(f"  [LLM] Raw content (first 300 chars): {content[:300] if 'content' in dir() else 'N/A'}")
+            else:
+                print(f"  [LLM retry {attempt+1}/3] {type(e).__name__}: {err_str[:200]}")
+            if attempt < 2:
+                import time
+                time.sleep(5)
+    else:
+        raise RuntimeError(f"LLM script generation failed after 3 retries: {last_error}")
+
+    # Ensure lesson_type marker
+    script["lesson_type"] = "listening"
+
+    # Ensure all required fields exist
+    script.setdefault("story_hook", "")
+    script.setdefault("intro_zh", "")
+    script.setdefault("welcome_en", "")
+    script.setdefault("welcome_zh", "")
+    script.setdefault("outro", "That's all for today. Keep practicing!")
+    script.setdefault("outro_zh", "")
+    script.setdefault("title", "")
+    script.setdefault("title_quote", "")
+    script["cefr"] = script.get("cefr") or cefr  # used by thumbnail level badge
+    script.setdefault("title_zh", script.get("intro_zh", ""))
+    script.setdefault("practice_intro_en", "Now let's practice. Listen and repeat each sentence.")
+    script.setdefault("practice_intro_zh", "現在來練習。請跟著朗讀每一句。")
+    script.setdefault("char_a_description", "")
+    script.setdefault("char_b_description", "")
+    script.setdefault("char_a_gender", "male")
+    script.setdefault("char_b_gender", "female")
+    script.setdefault("char_a_role", "")
+    script.setdefault("char_b_role", "")
+    script.setdefault("youtube_title", "")
+    script.setdefault("youtube_title_en", "")
+    script.setdefault("youtube_description", "")
+    script.setdefault("youtube_description_en", "")
+    script.setdefault("youtube_tags", [])
+    script.setdefault("youtube_title_ref", "")
+    script.setdefault("youtube_description_ref", "")
+    script.setdefault("scene", "")
+    script.setdefault("thumbnail_expression", "surprised and excited")
+    script.setdefault("thumbnail_action", "looking toward the camera and gesturing naturally")
+    script.setdefault("thumbnail_subtitle", "18句聽力練習")
+    script.setdefault("thumbnail_icons", [])
+    # cutout 视觉增强字段：LLM 未生成时兜底（与 pipeline.py 硬编码默认一致，老脚本零影响）
+    script.setdefault("host_bg_prompt",
+                      "a bright modern TV studio set with a large screen behind, warm lighting")
+    script.setdefault("scene_images", [])
+
+    # Ensure dialogue has all required fields（行级 prompt 字段按结构裁剪）
+    for line in script.get("dialogue", []):
+        line.setdefault("phonetic", "")
+        line.setdefault("zh", "")
+        if structure == "original":
+            line.setdefault("video_prompt", "")
+        elif structure == "original_static":
+            line.setdefault("image_prompt", "")
+
+    # cutout 族兜底：hook 首句与 welcome_en 重复问候时删句（LLM 偶尔不听话）
+    if structure == "original_cutout":
+        _dedupe_hook_greeting(script)
+
+    return script
+
+
+def generate_listening_script(topic: str, cefr: str = "A2",
+                              lessons_dir: str = None,
+                              num_lines: int = 18,
+                              structure: str = "original") -> dict:
+    """Generate a listening-practice lesson script via LLM (SenseNova / OpenAI-compatible).
+
+    脚本质量增强开关（全部经 env 读取，默认全关 = 原单次生成流程逐字节不变）：
+    - SCRIPT_STYLE_BOOST=1  → A：生成 prompt 注入风格强化块（few-shot 示例、
+      随机情节装置、禁用套路开场白、张力要求）
+    - SCRIPT_OUTLINE_FIRST=1 → B：先生成故事大纲再写台词（两阶段）
+    - SCRIPT_CANDIDATES=N    → D：生成 N 个候选，程序化门禁打分选优，
+      仅 winner 进完整 QA 循环
+
+    Args:
+        topic: e.g. "At the Pharmacy"
+        cefr: CEFR level (A1, A2, B1, B2, C1, C2)
+        lessons_dir: optional path to lessons/ directory for anti-duplicate check
+        num_lines: number of dialogue lines to generate (default 18)
+        structure: original / original_static / original_cutout — 决定行级
+            视觉 prompt 字段的裁剪（original→video_prompt, static→image_prompt,
+            cutout→无）；未知值回退 original。
+
+    Returns:
+        Script dict with dialogue[], char descriptions, title, etc.
+    """
+    if structure not in ("original", "original_static", "original_cutout"):
+        structure = "original"
+    used_summaries = _load_used_listening_summaries(lessons_dir)
+    style_boost = _env_flag("SCRIPT_STYLE_BOOST")
+    outline_first = _env_flag("SCRIPT_OUTLINE_FIRST")
+    candidates = _env_int_clamped("SCRIPT_CANDIDATES", 1, 1, 3)
+    devices = pick_plot_devices(2) if style_boost else []
+    if style_boost:
+        print(f"  [LLM] Style boost ON, plot devices: {devices}")
+    outline = None
+    if outline_first:
+        outline = generate_story_outline(topic, cefr, devices, num_lines)
+        if outline:
+            print(f"  [LLM] Outline ready: {str(outline.get('premise', ''))[:100]}")
+
+    if candidates > 1:
+        # D（多候选择优）：候选只跑程序化门禁打分，winner 才进完整 QA 循环
+        from quality_gate_listening import run_listening_quality_gate
+        best, best_key = None, None
+        for ci in range(candidates):
+            try:
+                cand = _generate_listening_raw(
+                    topic, cefr, used_summaries, num_lines, structure,
+                    style_boost, devices, outline, temp_start=0.8 + 0.05 * ci)
+            except (RuntimeError, json.JSONDecodeError) as e:
+                print(f"  [LLM] Candidate {ci + 1}/{candidates} failed: {e}")
+                continue
+            report = run_listening_quality_gate(cand, num_lines,
+                                                structure=structure)
+            key = (report["n_errors"], report["n_warnings"])
+            print(f"  [LLM] Candidate {ci + 1}/{candidates}: "
+                  f"errors={report['n_errors']} warnings={report['n_warnings']}")
+            if best_key is None or key < best_key:
+                best, best_key = cand, key
+        if best is None:
+            raise RuntimeError("LLM script generation failed: all candidates failed")
+        script = best
+    else:
+        script = _generate_listening_raw(topic, cefr, used_summaries, num_lines,
+                                         structure, style_boost, devices, outline)
+
+    # QA: programmatic gate + LLM critique/repair loop (mirrors quest Phase D+E)
+    from llm_review import run_listening_qa
+    run_listening_qa(script, num_lines, structure=structure)
+
+    return script
+
+
+def generate_random_voice_designs(count: int = 10,
+                                  avoid_names: list[str] | None = None,
+                                  language: str = "english",
+                                  gender: str = "any") -> list[dict]:
+    """Generate diverse random VoiceDesign voice specs via LLM.
+
+    用于 Web 端「自定义音色 → LLM 随机生成」：LLM 批量产出音色设计候选，
+    用户试听后挑选喜欢的保存为设计音色。
+    gender: "female"/"male" 只生成该性别，"any" 混合。
+
+    Returns:
+        list[dict]: 每项 {name, gender, language("en"/"zh"), description, instruct}
+    """
+    avoid = ", ".join(sorted(n for n in (avoid_names or []) if n)) or "(none)"
+    want_gender = gender if gender in ("female", "male") else ""
+
+    lang_req = {
+        "english": 'All voices speak ENGLISH. Set every "language" field to "en".',
+        "chinese": 'All voices speak CHINESE (Mandarin). Set every "language" field to "zh".',
+        "mixed": 'Mix languages: roughly half English ("en") and half Chinese ("zh"). '
+                 'Set each "language" field individually.',
+    }.get(language, 'All voices speak ENGLISH. Set every "language" field to "en".')
+
+    gender_req = {
+        "female": 'All voices MUST be FEMALE. Set every "gender" field to "female".',
+        "male": 'All voices MUST be MALE. Set every "gender" field to "male".',
+    }.get(want_gender, 'Mix genders: roughly half female ("female") and half male ("male"). '
+                        'Set each "gender" field individually.')
+
+    prompt = f"""You are a creative voice director designing voices for Qwen3-TTS VoiceDesign.
+Generate {count} DIVERSE, DISTINCT voice designs for language learning videos.
+
+{lang_req}
+{gender_req}
+
+Each voice design MUST include these fields:
+- "name": a short English given name (3-10 letters, capitalized, e.g. "Luna", "Jasper"). Unique within the list.
+- "gender": "female" or "male"
+- "language": "en" or "zh" (as required above)
+- "description": a short Chinese summary of the voice character, ≤14 chars (e.g. "温柔知性美式女声")
+- "instruct": an English description for the VoiceDesign model (2-4 sentences). Must cover:
+  (1) timbre: age feel, pitch (high/mid/low), texture (bright/warm/husky/crisp/deep/soft)
+  (2) accent (e.g. General American, British RP)
+  (3) style: pace, energy, intonation, personality
+  (4) learner-friendly delivery: clear articulation, natural pauses
+
+Example instructs (follow this style):
+- "Speak in a warm, friendly young American female voice with a mid-range pitch and a relaxed, moderate pace. Sound conversational and expressive, like a native speaker talking with a student."
+- "Speak in a mature, confident American female voice with clear articulation, suitable for narration. Keep a steady, engaging pace with gentle emphasis on key phrases."
+
+DIVERSITY requirements — cover a wide spectrum:
+- Mix age feels (youthful / young adult / middle-aged / senior)
+- Mix pitches: high, mid, low
+- Mix energies: calm, warm, lively, energetic, playful, gentle, husky, crisp, confident
+- Vary use cases: conversation partner, narrator, cheerful host, storyteller
+- For English voices, mostly General American; optionally 1-2 British RP
+
+CONSTRAINTS:
+- Every voice must be CLEAR and easy for ESL learners to understand — no mumbling, no extreme speed, no heavy regional accents
+- Names MUST NOT duplicate any of these existing voice names: {avoid}
+- Do not duplicate names within the list
+
+Output JSON ONLY (no markdown fences):
+{{"voices": [{{"name": "...", "gender": "...", "language": "...", "description": "...", "instruct": "..."}}, ...]}}"""
+
+    content = _chat(
+        [{"role": "user", "content": prompt}],
+        temperature=1.0,
+        max_tokens=8192,
+        reasoning_effort="low",
+    )
+    data = _extract_json(content)
+    raw = data.get("voices", []) if isinstance(data, dict) else (
+        data if isinstance(data, list) else [])
+
+    # Normalize + validate: drop empty entries and name collisions
+    seen = set(avoid_names or [])
+    result: list[dict] = []
+    for v in raw:
+        if not isinstance(v, dict):
+            continue
+        name = str(v.get("name", "")).strip()
+        v_gender = str(v.get("gender", "")).strip().lower()
+        lang = str(v.get("language", "")).strip().lower()
+        instruct = str(v.get("instruct", "")).strip()
+        desc = str(v.get("description", "")).strip()
+        if not name or not instruct or name in seen:
+            continue
+        # 指定性别时丢弃不符项（instruct 描述的音色性别与标签一致，改标签会造成错配）
+        if want_gender and v_gender != want_gender:
+            continue
+        if v_gender not in ("female", "male"):
+            v_gender = "female"
+        if lang not in ("en", "zh"):
+            lang = "en"
+        seen.add(name)
+        result.append({
+            "name": name,
+            "gender": v_gender,
+            "language": lang,
+            "description": desc or f"随机设计音色 ({'女声' if v_gender == 'female' else '男声'})",
+            "instruct": instruct,
+        })
+        if len(result) >= count:
+            break
+    if not result:
+        raise RuntimeError("LLM 未返回有效的音色设计")
+    return result
+
+
+if __name__ == "__main__":
+    import argparse
+    parser = argparse.ArgumentParser(description="Generate listening script")
+    parser.add_argument("--topic", required=True, help="Topic")
+    parser.add_argument("--cefr", default="A2", choices=["A1", "A2", "B1", "B2", "C1", "C2"], help="CEFR level (default A2)")
+    parser.add_argument("--output", default="script.json", help="Output JSON path")
+    args = parser.parse_args()
+
+    script = generate_listening_script(args.topic, args.cefr)
+    Path(args.output).write_text(json.dumps(script, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"Script saved: {args.output}")
+    print(f"Title: {script.get('title', '')}")
+    print(f"Dialogue lines: {len(script.get('dialogue', []))}")

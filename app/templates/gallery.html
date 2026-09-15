@@ -1,0 +1,377 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="p-6 max-w-7xl mx-auto">
+    <!-- Header -->
+    <div class="flex items-center justify-between mb-6">
+        <div>
+            <h2 class="text-2xl font-bold text-white">{{ script.title or run_name }}</h2>
+            <p class="text-sm text-slate-400 mt-1">{{ run_name }}</p>
+        </div>
+        <div class="flex gap-2">
+            <a href="/runs" class="px-4 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg text-sm text-slate-300">← 返回列表</a>
+            {% if script %}
+            <a href="/api/runs/{{ run_name }}/script/edit" target="_blank"
+                class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-lg text-sm text-white">查看脚本</a>
+            {% endif %}
+            <button id="upload-btn" onclick="toggleUploaded()"
+                class="px-4 py-2 rounded-lg text-sm text-white {% if uploaded %}bg-emerald-600 hover:bg-emerald-500{% else %}bg-amber-600/80 hover:bg-amber-500{% endif %}">
+                {% if uploaded %}已上传 ✓{% else %}标记已上传{% endif %}
+            </button>
+            <button onclick="openFolder()"
+                class="px-4 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg text-sm text-slate-300">📂 打开目录</button>
+            <button id="thumb-path-btn" onclick="copyThumbPath(this)" {% if not thumb_path %}disabled title="该运行没有缩略图"{% endif %}
+                class="px-4 py-2 rounded-lg text-sm {% if thumb_path %}bg-slate-700 hover:bg-slate-600 text-slate-300{% else %}bg-slate-800 text-slate-500 cursor-not-allowed{% endif %}">📋 缩略图路径</button>
+            <button onclick="copyVideoPath(this, '4k')" {% if not path_4k %}disabled title="尚未生成 4K 版本"{% endif %}
+                class="px-4 py-2 rounded-lg text-sm {% if path_4k %}bg-slate-700 hover:bg-slate-600 text-slate-300{% else %}bg-slate-800 text-slate-500 cursor-not-allowed{% endif %}">📋 4K</button>
+            <button onclick="copyVideoPath(this, '4k_bgm')" {% if not path_4k_bgm %}disabled title="尚未生成 4K BGM 版本"{% endif %}
+                class="px-4 py-2 rounded-lg text-sm {% if path_4k_bgm %}bg-slate-700 hover:bg-slate-600 text-slate-300{% else %}bg-slate-800 text-slate-500 cursor-not-allowed{% endif %}">📋 4K BGM</button>
+        </div>
+    </div>
+
+    <!-- Tabs -->
+    <div class="flex gap-1 mb-6 border-b border-slate-700">
+        <button onclick="switchTab('images')" id="tab-images" class="tab-btn active">📷 图片 ({{ images | length }})</button>
+        <button onclick="switchTab('clips')" id="tab-clips" class="tab-btn">🎬 视频片段 ({{ clips | length }})</button>
+        <button onclick="switchTab('audio')" id="tab-audio" class="tab-btn">🎵 音频 ({{ audio | length }})</button>
+        <button onclick="switchTab('videos')" id="tab-videos" class="tab-btn">📹 最终视频 ({{ videos | length }})</button>
+        <button onclick="switchTab('youtube')" id="tab-youtube" class="tab-btn">📺 YouTube</button>
+        <button onclick="switchTab('script')" id="tab-script" class="tab-btn">📄 脚本</button>
+    </div>
+
+    <!-- Images tab -->
+    <div id="content-images" class="tab-content">
+        {% if images %}
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {% for img in images %}
+            <div class="bg-slate-800 rounded-lg border border-slate-700 overflow-hidden group cursor-pointer"
+                 onclick="openImage('{{ img }}')">
+                <div class="aspect-video bg-slate-900">
+                    <img src="/api/runs/{{ run_name }}/images/{{ img }}" alt="{{ img }}"
+                         class="w-full h-full object-contain" loading="lazy">
+                </div>
+                <div class="px-2 py-1.5">
+                    <p class="text-xs text-slate-400 truncate">{{ img }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <p class="text-slate-500 text-center py-12">没有图片</p>
+        {% endif %}
+    </div>
+
+    <!-- Clips tab -->
+    <div id="content-clips" class="tab-content hidden">
+        {% if clips %}
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {% for clip in clips %}
+            <div class="bg-slate-800 rounded-lg border border-slate-700 overflow-hidden">
+                <video controls class="w-full" preload="metadata">
+                    <source src="/api/runs/{{ run_name }}/video/{{ clip }}" type="video/mp4">
+                </video>
+                <div class="px-3 py-2">
+                    <p class="text-xs text-slate-400">{{ clip }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <p class="text-slate-500 text-center py-12">没有视频片段</p>
+        {% endif %}
+    </div>
+
+    <!-- Audio tab -->
+    <div id="content-audio" class="tab-content hidden">
+        {% if audio %}
+        <div class="space-y-2">
+            {% for a in audio %}
+            <div class="bg-slate-800 rounded-lg border border-slate-700 p-3 flex items-center gap-4">
+                <audio controls preload="metadata" class="flex-1">
+                    <source src="/api/runs/{{ run_name }}/audio/{{ a }}" type="audio/mpeg">
+                </audio>
+                <span class="text-xs text-slate-400 w-48 truncate">{{ a }}</span>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <p class="text-slate-500 text-center py-12">没有音频</p>
+        {% endif %}
+    </div>
+
+    <!-- Videos tab -->
+    <div id="content-videos" class="tab-content hidden">
+        {% if videos %}
+        <div class="space-y-4">
+            {% for v in videos %}
+            <div class="bg-slate-800 rounded-lg border border-slate-700 overflow-hidden">
+                <video controls class="w-full" preload="metadata">
+                    <source src="/api/runs/{{ run_name }}/video/{{ v }}" type="video/mp4">
+                </video>
+                <div class="px-3 py-2 flex items-center justify-between">
+                    <p class="text-xs text-slate-400">{{ v }}</p>
+                    <a href="/api/runs/{{ run_name }}/video/{{ v }}" download
+                       class="text-xs text-indigo-400 hover:text-indigo-300">下载</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <p class="text-slate-500 text-center py-12">没有最终视频</p>
+        {% endif %}
+    </div>
+
+    <!-- YouTube tab -->
+    <div id="content-youtube" class="tab-content hidden">
+        {% if yt_desc or yt_title or yt_tags %}
+        <div class="flex items-center justify-between mb-4">
+            <p class="text-xs">
+                {% if has_yt_meta %}
+                <span class="text-emerald-400">✓ 最终版 youtube_metadata.json（含真实章节时间戳 + 标签）</span>
+                {% else %}
+                <span class="text-amber-400">⚠ 未找到 youtube_metadata.json，显示原始脚本字段（时间戳为占位，建议先跑完 Step 4.5）</span>
+                {% endif %}
+            </p>
+            <button onclick="refreshYtMeta(this)" class="copy-btn flex-shrink-0">🔄 重新生成元数据</button>
+        </div>
+        <div class="space-y-4">
+            <div class="bg-slate-800 rounded-lg border border-slate-700">
+                <div class="px-4 py-2.5 flex items-center justify-between border-b border-slate-700">
+                    <span class="text-sm font-medium text-slate-200">📝 标题（繁中）</span>
+                    <button onclick="copyText(this, 'yt-copy-title')" class="copy-btn">📋 复制</button>
+                </div>
+                <pre id="yt-copy-title" class="px-4 py-3 text-sm text-slate-300 whitespace-pre-wrap font-sans">{{ yt_title }}</pre>
+            </div>
+            <div class="bg-slate-800 rounded-lg border border-slate-700">
+                <div class="px-4 py-2.5 flex items-center justify-between border-b border-slate-700">
+                    <span class="text-sm font-medium text-slate-200">📝 标题（英文）</span>
+                    <button onclick="copyText(this, 'yt-copy-title-en')" class="copy-btn">📋 复制</button>
+                </div>
+                <pre id="yt-copy-title-en" class="px-4 py-3 text-sm text-slate-300 whitespace-pre-wrap font-sans">{{ yt_title_en }}</pre>
+            </div>
+            <div class="bg-slate-800 rounded-lg border border-slate-700">
+                <div class="px-4 py-2.5 flex items-center justify-between border-b border-slate-700">
+                    <span class="text-sm font-medium text-slate-200">📄 描述（繁中）</span>
+                    <button onclick="copyText(this, 'yt-copy-desc')" class="copy-btn">📋 复制</button>
+                </div>
+                <pre id="yt-copy-desc" class="px-4 py-3 text-xs text-slate-300 whitespace-pre-wrap font-sans max-h-96 overflow-y-auto">{{ yt_desc }}</pre>
+            </div>
+            <div class="bg-slate-800 rounded-lg border border-slate-700">
+                <div class="px-4 py-2.5 flex items-center justify-between border-b border-slate-700">
+                    <span class="text-sm font-medium text-slate-200">📄 描述（英文）</span>
+                    <button onclick="copyText(this, 'yt-copy-desc-en')" class="copy-btn">📋 复制</button>
+                </div>
+                <pre id="yt-copy-desc-en" class="px-4 py-3 text-xs text-slate-300 whitespace-pre-wrap font-sans max-h-96 overflow-y-auto">{{ yt_desc_en }}</pre>
+            </div>
+            <div class="bg-slate-800 rounded-lg border border-slate-700">
+                <div class="px-4 py-2.5 flex items-center justify-between border-b border-slate-700">
+                    <span class="text-sm font-medium text-slate-200">🏷️ 标签 Tags（逗号分隔）</span>
+                    <button onclick="copyText(this, 'yt-copy-tags')" class="copy-btn">📋 复制</button>
+                </div>
+                <pre id="yt-copy-tags" class="px-4 py-3 text-xs text-slate-300 whitespace-pre-wrap font-sans">{{ yt_tags | join(', ') }}</pre>
+            </div>
+            {% for opt in yt_options %}
+            <div class="bg-slate-800/60 rounded-lg border border-indigo-800/60">
+                <div class="px-4 py-2.5 border-b border-indigo-800/60">
+                    <span class="text-sm font-medium text-indigo-300">🎬 样式选项：{{ opt.label }}</span>
+                </div>
+                <div class="p-4 space-y-3">
+                    <div>
+                        <div class="flex items-center justify-between mb-1.5">
+                            <span class="text-xs text-slate-400">📝 标题</span>
+                            <button onclick="copyText(this, 'yt-opt-{{ loop.index }}-title')" class="copy-btn">📋 复制</button>
+                        </div>
+                        <pre id="yt-opt-{{ loop.index }}-title" class="text-sm text-slate-200 whitespace-pre-wrap font-sans">{{ opt.title }}</pre>
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between mb-1.5">
+                            <span class="text-xs text-slate-400">📄 描述</span>
+                            <button onclick="copyText(this, 'yt-opt-{{ loop.index }}-desc')" class="copy-btn">📋 复制</button>
+                        </div>
+                        <pre id="yt-opt-{{ loop.index }}-desc" class="text-xs text-slate-300 whitespace-pre-wrap font-sans max-h-96 overflow-y-auto">{{ opt.description }}</pre>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <p class="text-slate-500 text-center py-12">没有 YouTube 元数据（需完成脚本生成，建议跑完 Step 4.5 生成最终版）</p>
+        {% endif %}
+    </div>
+
+    <!-- Script tab -->
+    <div id="content-script" class="tab-content hidden">
+        {% if script %}
+        <div class="bg-slate-950 rounded-lg p-4 overflow-x-auto">
+            <pre class="text-xs text-slate-300 font-mono whitespace-pre-wrap">{{ script | tojson(indent=2) }}</pre>
+        </div>
+        {% else %}
+        <p class="text-slate-500 text-center py-12">没有脚本</p>
+        {% endif %}
+    </div>
+
+    <!-- Image viewer modal -->
+    <div id="image-modal" class="hidden fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-8"
+         onclick="closeImageModal(event)">
+        <div class="max-w-5xl max-h-[90vh]" onclick="event.stopPropagation()">
+            <div class="flex justify-between items-center mb-2">
+                <span id="image-modal-title" class="text-sm text-slate-300"></span>
+                <button onclick="closeImageModal()" class="text-slate-400 hover:text-white text-xl">✕</button>
+            </div>
+            <img id="image-modal-img" src="" alt="" class="max-w-full max-h-[80vh] rounded-lg">
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+function switchTab(tab) {
+    document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+    document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+    document.getElementById('content-' + tab).classList.remove('hidden');
+    document.getElementById('tab-' + tab).classList.add('active');
+}
+
+// 运行可能位于模式子文件夹（output/{mode}/{name}/），API 调用带上 ?mode= 消歧
+const _runMode = new URLSearchParams(location.search).get('mode') || '';
+const _runName = {{ run_name | tojson }};
+const _thumbPath = {{ thumb_path | tojson }};
+// 「一键复制 4K / 4K BGM 成片路径」（服务端解析的绝对路径，缺失为空串 → 按钮禁用）
+const _videoPaths = {'4k': {{ path_4k | tojson }}, '4k_bgm': {{ path_4k_bgm | tojson }}};
+const _VIDEO_BTN_LABELS = {'4k': '📋 4K', '4k_bgm': '📋 4K BGM'};
+
+// 标记/取消「已上传」（切换 uploaded.flag，与运行历史页一致）
+function toggleUploaded() {
+    fetch(`/api/runs/${_runName}/mark_uploaded${_runMode ? `?mode=${_runMode}` : ''}`, {method: 'POST'})
+        .then(r => r.json())
+        .then(data => {
+            if (!data.ok) { alert('操作失败: ' + (data.error || '未知错误')); return; }
+            const btn = document.getElementById('upload-btn');
+            if (!btn) return;
+            if (data.uploaded) {
+                btn.textContent = '已上传 ✓';
+                btn.className = 'px-4 py-2 rounded-lg text-sm text-white bg-emerald-600 hover:bg-emerald-500';
+            } else {
+                btn.textContent = '标记已上传';
+                btn.className = 'px-4 py-2 rounded-lg text-sm text-white bg-amber-600/80 hover:bg-amber-500';
+            }
+        });
+}
+
+function openFolder() {
+    fetch(`/api/runs/${_runName}/open_folder${_runMode ? `?mode=${_runMode}` : ''}`, {method: 'POST'})
+        .then(r => r.json())
+        .then(data => {
+            if (!data.ok) alert('打开目录失败: ' + (data.error || '未知错误'));
+        });
+}
+
+function copyThumbPath(btn) {
+    if (!_thumbPath) { alert('该运行没有缩略图'); return; }
+    const done = () => {
+        btn.textContent = '✓ 已复制';
+        setTimeout(() => { btn.textContent = '📋 缩略图路径'; }, 1500);
+    };
+    if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(_thumbPath).then(done).catch(() => fallbackCopy(_thumbPath, done));
+    } else {
+        fallbackCopy(_thumbPath, done);
+    }
+}
+
+// 复制 4K / 4K BGM 成片绝对路径（与缩略图路径复制同款交互）
+function copyVideoPath(btn, kind) {
+    const p = _videoPaths[kind] || '';
+    if (!p) { alert(kind === '4k' ? '尚未生成 4K 版本' : '尚未生成 4K BGM 版本'); return; }
+    const done = () => {
+        btn.textContent = '✓ 已复制';
+        setTimeout(() => { btn.textContent = _VIDEO_BTN_LABELS[kind]; }, 1500);
+    };
+    if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(p).then(done).catch(() => fallbackCopy(p, done));
+    } else {
+        fallbackCopy(p, done);
+    }
+}
+
+// 进入画廊默认优先显示 📺 YouTube 标签页
+switchTab('youtube');
+
+function openImage(name) {
+    document.getElementById('image-modal-img').src = `/api/runs/{{ run_name }}/images/${name}`;
+    document.getElementById('image-modal-title').textContent = name;
+    document.getElementById('image-modal').classList.remove('hidden');
+}
+
+function closeImageModal(e) {
+    if (e && e.target !== document.getElementById('image-modal')) return;
+    document.getElementById('image-modal').classList.add('hidden');
+}
+
+function copyText(btn, sourceId) {
+    const text = document.getElementById(sourceId).innerText;
+    const done = () => {
+        btn.textContent = '✓ 已复制';
+        setTimeout(() => { btn.textContent = '📋 复制'; }, 1500);
+    };
+    if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(done).catch(() => fallbackCopy(text, done));
+    } else {
+        fallbackCopy(text, done);
+    }
+}
+
+function fallbackCopy(text, done) {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand('copy'); done(); } catch (e) { alert('复制失败，请手动选择文本复制'); }
+    document.body.removeChild(ta);
+}
+
+async function refreshYtMeta(btn) {
+    const original = btn.textContent;
+    btn.disabled = true;
+    btn.textContent = '⏳ 生成中…';
+    try {
+        const r = await fetch(`/api/runs/{{ run_name }}/yt_meta_refresh${_runMode ? `?mode=${_runMode}` : ''}`, { method: 'POST' });
+        const data = await r.json();
+        if (!r.ok || !data.ok) {
+            alert('刷新失败: ' + (data.error || r.statusText));
+            btn.textContent = original;
+            btn.disabled = false;
+            return;
+        }
+        location.reload();
+    } catch (e) {
+        alert('请求异常: ' + e);
+        btn.textContent = original;
+        btn.disabled = false;
+    }
+}
+</script>
+<style>
+.tab-btn {
+    padding: 8px 16px;
+    font-size: 13px;
+    color: #94a3b8;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+}
+.tab-btn:hover { color: #e2e8f0; }
+.tab-btn.active { color: #fff; border-bottom-color: #6366f1; }
+.copy-btn {
+    padding: 4px 12px;
+    font-size: 12px;
+    color: #c7d2fe;
+    background: #4338ca;
+    border-radius: 6px;
+    transition: all 0.2s;
+    flex-shrink: 0;
+}
+.copy-btn:hover { background: #4f46e5; color: #fff; }
+</style>
+{% endblock %}

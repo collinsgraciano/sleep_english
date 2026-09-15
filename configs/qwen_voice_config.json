@@ -1,0 +1,186 @@
+{
+  "default_male": "Ryan",
+  "default_female": "Vivian",
+  "default_host_female": "Serena",
+  "custom_voices": [
+    {
+      "name": "host11",
+      "description": "自定义克隆音色 (male)",
+      "gender": "male",
+      "language": "english",
+      "ref_audio": "H:\\2026_main_project\\colab_listening_b_web\\configs\\custom_voices\\host11.wav",
+      "ref_text": "Welcome to English listening channel.",
+      "created": 1787447029.1379085
+    },
+    {
+      "name": "Ella",
+      "description": "温暖友好美式女声 (英文)",
+      "gender": "female",
+      "language": "en",
+      "ref_audio": "H:\\2026_main_project\\colab_listening_b_web\\configs\\custom_voices\\Ella_freeze.wav",
+      "ref_text": "Good morning! It's really nice to see you again. I've been thinking about our conversation from last week, and I wanted to share some new ideas with you. Would you like to grab a coffee this afternoon? I always enjoy our little chats, and there's so much more to catch up on.",
+      "instruct": "Speak in a warm, friendly young American female voice with a mid-range pitch and a relaxed, moderate pace. Sound conversational and expressive, like a native speaker talking with a student. Articulate words clearly without over-pronouncing them, with natural pauses between sentences.",
+      "frozen_from": "designed",
+      "created": 1787737613.2250905
+    },
+    {
+      "name": "Maya",
+      "description": "明亮活力美式女声 (英文)",
+      "gender": "female",
+      "language": "en",
+      "ref_audio": "H:\\2026_main_project\\colab_listening_b_web\\configs\\custom_voices\\Maya_freeze.wav",
+      "ref_text": "Good morning! It's really nice to see you again. I've been thinking about our conversation from last week, and I wanted to share some new ideas with you. Would you like to grab a coffee this afternoon? I always enjoy our little chats, and there's so much more to catch up on.",
+      "instruct": "Speak in a bright, energetic young American female voice, lively and expressive with natural intonation, at a moderate pace that English learners can comfortably follow.",
+      "frozen_from": "designed",
+      "created": 1787737651.900576
+    },
+    {
+      "name": "Chloe",
+      "description": "轻柔温和女声 (英文)",
+      "gender": "female",
+      "language": "en",
+      "ref_audio": "H:\\2026_main_project\\colab_listening_b_web\\configs\\custom_voices\\Chloe_freeze.wav",
+      "ref_text": "Good morning! It's really nice to see you again. I've been thinking about our conversation from last week, and I wanted to share some new ideas with you. Would you like to grab a coffee this afternoon? I always enjoy our little chats, and there's so much more to catch up on.",
+      "instruct": "Speak in a soft, gentle, calm female voice with a slightly lower pitch. Sound patient and approachable with a smooth delivery at a relaxed, learner-friendly pace.",
+      "frozen_from": "designed",
+      "created": 1787737814.9468215
+    },
+    {
+      "name": "Hazel",
+      "description": "成熟清晰女声 (英文/旁白)",
+      "gender": "female",
+      "language": "en",
+      "ref_audio": "H:\\2026_main_project\\colab_listening_b_web\\configs\\custom_voices\\Hazel_freeze.wav",
+      "ref_text": "Good morning! It's really nice to see you again. I've been thinking about our conversation from last week, and I wanted to share some new ideas with you. Would you like to grab a coffee this afternoon? I always enjoy our little chats, and there's so much more to catch up on.",
+      "instruct": "Speak in a mature, confident American female voice with clear articulation, suitable for narration. Keep a steady, engaging pace with gentle emphasis on key phrases.",
+      "frozen_from": "designed",
+      "created": 1787737854.3643405
+    },
+    {
+      "name": "Elena",
+      "description": "温柔知性美式女声",
+      "gender": "female",
+      "language": "en",
+      "ref_audio": "H:\\2026_main_project\\colab_listening_b_web\\configs\\custom_voices\\Elena_freeze.wav",
+      "ref_text": "Good morning! It's really nice to see you again. I've been thinking about our conversation from last week, and I wanted to share some new ideas with you. Would you like to grab a coffee this afternoon? I always enjoy our little chats, and there's so much more to catch up on.",
+      "instruct": "Speak in a warm, gentle young adult American female voice with a mid-to-high pitch and soft texture. Deliver at a measured, calm pace with exceptionally clear articulation. Keep the intonation patient and comforting, making complex language concepts easy to follow for learners.",
+      "frozen_from": "designed",
+      "created": 1787737919.888133
+    },
+    {
+      "name": "Nora",
+      "description": "干练专业美式女声",
+      "gender": "female",
+      "language": "en",
+      "ref_audio": "H:\\2026_main_project\\colab_listening_b_web\\configs\\custom_voices\\Nora_freeze.wav",
+      "ref_text": "Good morning! It's really nice to see you again. I've been thinking about our conversation from last week, and I wanted to share some new ideas with you. Would you like to grab a coffee this afternoon? I always enjoy our little chats, and there's so much more to catch up on.",
+      "instruct": "Speak in a confident, polished middle-aged female voice with a crisp General American accent. Maintain a professional yet accessible energy at a steady, rhythmic pace. Stress key vocabulary naturally while keeping speech clean and easy to follow.",
+      "frozen_from": "designed",
+      "created": 1787737954.7700233
+    },
+    {
+      "name": "Grace",
+      "description": "舒缓亲切美式女声",
+      "gender": "female",
+      "language": "en",
+      "ref_audio": "H:\\2026_main_project\\colab_listening_b_web\\configs\\custom_voices\\Grace_freeze.wav",
+      "ref_text": "Good morning! It's really nice to see you again. I've been thinking about our conversation from last week, and I wanted to share some new ideas with you. Would you like to grab a coffee this afternoon? I always enjoy our little chats, and there's so much more to catch up on.",
+      "instruct": "Speak in a soothing, supportive young adult female voice with a low-to-mid pitch and soft, airy texture. Keep the delivery calm and encouraging with a slightly slower pace. Place slight emphasis on sentence stress to help ESL students grasp rhythm effortlessly.",
+      "frozen_from": "designed",
+      "created": 1787737990.2316823
+    },
+    {
+      "name": "Oliver",
+      "description": "沉稳清晰英音男声",
+      "gender": "male",
+      "language": "en",
+      "ref_audio": "H:\\2026_main_project\\colab_listening_b_web\\configs\\custom_voices\\Oliver_freeze.wav",
+      "ref_text": "Good morning! It's really nice to see you again. I've been thinking about our conversation from last week, and I wanted to share some new ideas with you. Would you like to grab a coffee this afternoon? I always enjoy our little chats, and there's so much more to catch up on.",
+      "instruct": "Speak in a mature, crisp middle-aged male voice with a classic British RP accent. Pitch is balanced in the mid-range with an authoritative yet encouraging tone. Maintain a steady, deliberate pace with subtle pauses after key target vocabulary to aid listening comprehension.",
+      "frozen_from": "designed",
+      "created": 1787738033.6238892
+    },
+    {
+      "name": "Julian",
+      "description": "低沉磁性美式男声",
+      "gender": "male",
+      "language": "en",
+      "ref_audio": "H:\\2026_main_project\\colab_listening_b_web\\configs\\custom_voices\\Julian_freeze.wav",
+      "ref_text": "Good morning! It's really nice to see you again. I've been thinking about our conversation from last week, and I wanted to share some new ideas with you. Would you like to grab a coffee this afternoon? I always enjoy our little chats, and there's so much more to catch up on.",
+      "instruct": "Speak in a deep, warm male voice with a smooth, resonant timbre and a General American accent. Deliver content with a calm, confident style at a relaxed pace. Ensure pristine articulation and deliberate timing so learners can hear subtle phonetic details effortlessly.",
+      "frozen_from": "designed",
+      "created": 1787738079.5444734
+    },
+    {
+      "name": "Ethan",
+      "description": "阳光平易美音青年",
+      "gender": "male",
+      "language": "en",
+      "ref_audio": "H:\\2026_main_project\\colab_listening_b_web\\configs\\custom_voices\\Ethan_freeze.wav",
+      "ref_text": "Good morning! It's really nice to see you again. I've been thinking about our conversation from last week, and I wanted to share some new ideas with you. Would you like to grab a coffee this afternoon? I always enjoy our little chats, and there's so much more to catch up on.",
+      "instruct": "Speak in a friendly, conversational American male voice with a balanced mid-range pitch and a relaxed texture. Sound like an approachable study buddy chatting casually over coffee. Keep your pace steady and your speech completely unhurried and clear.",
+      "frozen_from": "designed",
+      "created": 1787738111.2056088
+    }
+  ],
+  "designed_voices": [],
+  "candidate_voices": [
+    {
+      "name": "Audrey",
+      "gender": "female",
+      "language": "en",
+      "description": "优雅亲切英音女声",
+      "instruct": "Speak in a warm, refined young adult British RP female voice with a clear, mid-range pitch. Sound friendly, patient, and conversational, perfect for explaining daily scenarios to language learners. Maintain a steady pace with crisp articulation and natural pauses between key phrases."
+    },
+    {
+      "name": "Caleb",
+      "gender": "male",
+      "language": "en",
+      "description": "活力热情美音男声",
+      "instruct": "Speak in a lively, upbeat young adult American male voice with a bright, mid-high pitch and energetic tone. Deliver words with clear pronunciation and expressiveness, like an enthusiastic podcast host guiding a student. Keep the tempo dynamic yet easy to follow."
+    },
+    {
+      "name": "Beatrice",
+      "gender": "female",
+      "language": "en",
+      "description": "慈祥温和美音老妇",
+      "instruct": "Speak in a gentle, warm senior American female voice with a soft, lower-mid pitch and a cozy texture. Use a slow, reassuring pace that gives English learners time to absorb every sentence. Prioritize smooth, precise articulation with a comforting bedtime storyteller vibe."
+    },
+    {
+      "name": "Marcus",
+      "gender": "male",
+      "language": "en",
+      "description": "沉稳专业美音旁白",
+      "instruct": "Speak in a deep, authoritative middle-aged American male voice with a rich timbre and calm demeanor. Maintain a measured, deliberate pace suitable for formal vocabulary lessons and educational narration. Ensure crystal-clear enunciation with subtle emphasis on key terms."
+    },
+    {
+      "name": "Graham",
+      "gender": "male",
+      "language": "en",
+      "description": "绅士知性英音男声",
+      "instruct": "Speak in a mature, polished British RP male voice with a smooth, lower-mid pitch and crisp tone. Sound educated, confident, and patient, ideal for advanced grammar breakdowns. Deliver sentences with natural rhythm, excellent clarity, and distinct pauses."
+    },
+    {
+      "name": "Sophia",
+      "gender": "female",
+      "language": "en",
+      "description": "温柔耐心美音教师",
+      "instruct": "Speak in a calm, highly empathetic young adult American female voice with a soft, mid-range pitch. Maintain a relaxed pace with gentle inflection, making complex sentences feel approachable. Focus on clean enunciation and learner-friendly breathing pauses."
+    },
+    {
+      "name": "Hannah",
+      "gender": "female",
+      "language": "en",
+      "description": "干练自信美音导播",
+      "instruct": "Speak in a confident, clear middle-aged American female voice with a resonant, crisp mid-range pitch. Project a professional news-anchor energy that remains engaging and approachable for international listeners. Use precise articulation with well-spaced, rhythmic phrasing."
+    },
+    {
+      "name": "Silas",
+      "gender": "male",
+      "language": "en",
+      "description": "磁性低沉美音男声",
+      "instruct": "Speak in a warm, slightly husky senior American male voice with a deep pitch and reflective tone. Sound like a friendly grandfather sharing memorable life lessons. Deliver speech at an easygoing, deliberate pace with pronounced clarity on every word."
+    }
+  ],
+  "builtin_voice_dismissed": []
+}

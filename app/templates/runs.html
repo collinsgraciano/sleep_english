@@ -1,0 +1,1288 @@
+{% extends "base.html" %}
+{% macro run_card(run) %}
+{% set gallery_url = '/runs/' ~ run.name ~ '/gallery' %}{% if run.structure %}{% set gallery_url = gallery_url ~ '?mode=' ~ run.structure %}{% endif %}
+<div class="relative bg-slate-800 rounded-xl border border-slate-700 overflow-hidden hover:border-indigo-600 transition run-card"
+     data-run="{{ run.name }}" data-uploaded="{% if run.uploaded %}1{% else %}0{% endif %}" data-structure="{{ run.structure }}" data-has4k="{% if run.has_4k %}1{% else %}0{% endif %}"
+     data-path4k="{{ run.copy_4k }}" data-path4kbgm="{{ run.copy_4k_bgm }}">
+    <!-- 多选框（批量操作用；叠在缩略图左上角，点击不会触发下层的画廊链接） -->
+    <label class="absolute top-2 left-2 z-20 flex items-center justify-center w-7 h-7 bg-slate-900/70 hover:bg-slate-900/90 border border-slate-600 rounded-lg cursor-pointer"
+        title="勾选后可批量操作">
+        <input type="checkbox" class="run-select accent-indigo-500 w-4 h-4" onchange="onSelectChange()">
+    </label>
+    <!-- Thumbnail（点击直接进画廊，不播放视频） -->
+    {% if run.has_thumbnail %}
+    <a href="{{ gallery_url }}" class="block aspect-video bg-slate-900 relative group" title="打开画廊">
+        <img src="{{ run.thumbnail_url }}" alt="{{ run.title }}" class="w-full h-full object-cover">
+        <span class="absolute inset-0 hidden group-hover:flex items-center justify-center bg-black/40 text-white text-sm font-medium">打开画廊 →</span>
+        {% if run.thumbnail_count and run.thumbnail_count > 1 %}
+        <button onclick="openThumbsModal(event, '{{ run.name }}', '{{ run.structure }}')"
+            class="absolute bottom-2 right-2 z-10 px-2 py-1 bg-black/60 hover:bg-black/80 rounded-lg text-xs text-white"
+            title="浏览全部缩略图">🖼 {{ run.thumbnail_count }} 张</button>
+        {% endif %}
+    </a>
+    {% else %}
+    <div class="aspect-video bg-slate-900 flex items-center justify-center">
+        <span class="text-slate-600 text-4xl">🎬</span>
+    </div>
+    {% endif %}
+
+    <!-- Info -->
+    <div class="p-4">
+        <h3 class="text-sm font-semibold text-white truncate" title="{{ run.title }}">{{ run.title }}</h3>
+        {% if run.title_en %}
+        <p class="text-xs text-slate-500 truncate">{{ run.title_en }}</p>
+        {% endif %}
+        <div class="flex items-center gap-2 mt-2">
+            {% if run.structure_label %}<span class="text-xs px-2 py-0.5 bg-sky-600/30 text-sky-300 rounded" title="{{ run.structure }}">{{ run.structure_label }}</span>{% endif %}
+            {% if run.cefr %}<span class="text-xs px-2 py-0.5 bg-indigo-600/30 text-indigo-300 rounded">{{ run.cefr }}</span>{% endif %}
+            <span id="upload-badge-{{ run.name }}" class="text-xs px-2 py-0.5 bg-emerald-600/30 text-emerald-300 rounded{% if not run.uploaded %} hidden{% endif %}">已上传</span>
+            {% if run.videos %}
+            {% for v in run.videos %}
+            <span class="text-xs text-slate-400">{{ v.size_mb }}MB</span>
+            {% endfor %}
+            {% endif %}
+            <span class="text-xs text-slate-500 ml-auto">{{ run.created | datestr }}</span>
+        </div>
+
+        <!-- Actions -->
+        <div class="flex flex-wrap gap-2 mt-3">
+            {% if run.videos %}
+            <button onclick="showVideo('{{ run.name }}', '{{ run.videos[0].name }}', '{{ run.structure }}')"
+                class="flex-1 px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 rounded-lg text-xs text-white">播放</button>
+            {% endif %}
+            <a href="{{ gallery_url }}"
+                class="px-3 py-1.5 bg-emerald-600 hover:bg-emerald-500 rounded-lg text-xs text-white text-center">画廊</a>
+            <button id="thumb-btn-{{ run.name }}" onclick="regenThumbnail('{{ run.name }}', '{{ run.structure }}')"
+                class="px-3 py-1.5 bg-sky-700 hover:bg-sky-600 rounded-lg text-xs text-white">＋缩略图</button>
+            <button id="upload-btn-{{ run.name }}" onclick="toggleUploaded(this)"
+                class="px-3 py-1.5 rounded-lg text-xs text-white {% if run.uploaded %}bg-emerald-600 hover:bg-emerald-500{% else %}bg-amber-600/80 hover:bg-amber-500{% endif %}">
+                {% if run.uploaded %}已上传 ✓{% else %}标记已上传{% endif %}
+            </button>
+            {% if run.recomposable %}
+            <button onclick="openRecompose('{{ run.name }}', {{ 'true' if run.has_4k else 'false' }})"
+                class="px-3 py-1.5 bg-purple-600 hover:bg-purple-500 rounded-lg text-xs text-white">重渲字幕</button>
+            {% endif %}
+            {% if run.videos %}
+            <button id="fourk-btn-{{ run.name }}" onclick="generate4k('{{ run.name }}', '{{ run.structure }}')"
+                class="px-3 py-1.5 bg-teal-600 hover:bg-teal-500 rounded-lg text-xs text-white">生成4K</button>
+            <button id="bgm-btn-{{ run.name }}" onclick="generateBgm('{{ run.name }}', '{{ run.structure }}')"
+                class="px-3 py-1.5 bg-rose-600 hover:bg-rose-500 rounded-lg text-xs text-white">🎵 混BGM</button>
+            {% if run.has_4k %}
+            <button id="bgm4k-btn-{{ run.name }}" onclick="generateBgm('{{ run.name }}', '{{ run.structure }}', '4k')"
+                class="px-3 py-1.5 bg-rose-700 hover:bg-rose-600 rounded-lg text-xs text-white">🎵 混BGM 4K</button>
+            {% endif %}
+            <button onclick="copyRunPath(this, '4k')" {% if not run.copy_4k %}disabled title="尚未生成 4K 版本"{% endif %}
+                class="px-3 py-1.5 rounded-lg text-xs {% if run.copy_4k %}bg-slate-700 hover:bg-slate-600 text-slate-300{% else %}bg-slate-800 text-slate-500 cursor-not-allowed{% endif %}">📋 4K</button>
+            <button onclick="copyRunPath(this, '4k_bgm')" {% if not run.copy_4k_bgm %}disabled title="尚未生成 4K BGM 版本"{% endif %}
+                class="px-3 py-1.5 rounded-lg text-xs {% if run.copy_4k_bgm %}bg-slate-700 hover:bg-slate-600 text-slate-300{% else %}bg-slate-800 text-slate-500 cursor-not-allowed{% endif %}">📋 4K BGM</button>
+            {% endif %}
+            <button onclick="openFolder('{{ run.name }}')"
+                class="px-3 py-1.5 bg-slate-700 hover:bg-slate-600 rounded-lg text-xs text-slate-300">打开目录</button>
+            {% if run.has_script %}
+            <button onclick="viewScript('{{ run.name }}')"
+                class="px-3 py-1.5 bg-slate-700 hover:bg-slate-600 rounded-lg text-xs text-slate-300">脚本</button>
+            {% endif %}
+            <button onclick="deleteRun('{{ run.name }}', '{{ run.structure }}')"
+                class="px-3 py-1.5 bg-slate-700 hover:bg-red-600 rounded-lg text-xs text-slate-300 hover:text-white">删除</button>
+        </div>
+    </div>
+</div>
+{% endmacro %}
+{% block content %}
+<div class="p-6 max-w-7xl mx-auto">
+    <div class="flex items-center justify-between mb-6">
+        <div>
+            <h2 class="text-2xl font-bold text-white">运行历史</h2>
+            <p class="text-sm text-slate-400 mt-1">{{ runs | length }} 个视频</p>
+        </div>
+    </div>
+
+    {% if not runs %}
+    <div class="bg-slate-800 rounded-xl p-12 border border-slate-700 text-center">
+        <p class="text-slate-400 text-lg">还没有生成过视频</p>
+        <a href="/" class="inline-block mt-4 px-6 py-2.5 bg-indigo-600 hover:bg-indigo-500 rounded-lg text-white text-sm font-medium">
+            去生成第一个
+        </a>
+    </div>
+    {% else %}
+    <!-- 筛选条：上传状态 × 模式（两组筛选同时选择、叠加生效） -->
+    <div class="flex flex-wrap items-center gap-x-8 gap-y-3 mb-5">
+        <div class="flex items-center gap-2 flex-wrap">
+            <span class="text-xs text-slate-500 mr-1">上传状态</span>
+            <button data-upload-chip="all" onclick="setUploadFilter('all')"
+                class="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-700 text-slate-300">全部 <span data-upload-count="all"></span></button>
+            <button data-upload-chip="pending" onclick="setUploadFilter('pending')"
+                class="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-700 text-slate-300">未上传 <span data-upload-count="0"></span></button>
+            <button data-upload-chip="uploaded" onclick="setUploadFilter('uploaded')"
+                class="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-700 text-slate-300">已上传 <span data-upload-count="1"></span></button>
+        </div>
+        <div class="flex items-center gap-2 flex-wrap">
+            <span class="text-xs text-slate-500 mr-1">模式</span>
+            <button data-mode-chip="all" onclick="setModeFilter('all')"
+                class="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-700 text-slate-300">全部</button>
+            {% for mid, mlabel in mode_labels.items() %}
+            <button data-mode-chip="{{ mid }}" onclick="setModeFilter('{{ mid }}')"
+                class="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-700 text-slate-300">{{ mlabel }} <span data-mode-count="{{ mid }}"></span></button>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- 批量操作：勾选卡片后批量执行（全选只作用于当前筛选可见的运行） -->
+    <div class="flex flex-wrap items-center gap-x-4 gap-y-2 mb-5">
+        <label class="flex items-center gap-2 text-xs text-slate-300 cursor-pointer select-none">
+            <input id="select-all" type="checkbox" onchange="toggleSelectAll(this.checked)"
+                class="accent-indigo-500 w-4 h-4"> 全选
+        </label>
+        <span id="sel-count" class="text-xs text-slate-400">已选 0 个</span>
+        <span id="batch-status" class="hidden text-xs text-amber-300 font-medium"></span>
+        <div class="flex flex-wrap items-center gap-2 ml-auto">
+            <button onclick="batchAction('upload')"
+                class="batch-btn px-3 py-1.5 bg-emerald-700 hover:bg-emerald-600 rounded-lg text-xs text-white">✓ 标记已上传</button>
+            <button onclick="batchAction('4k')"
+                class="batch-btn px-3 py-1.5 bg-teal-600 hover:bg-teal-500 rounded-lg text-xs text-white">🖥 生成4K</button>
+            <button onclick="batchAction('bgm')"
+                class="batch-btn px-3 py-1.5 bg-rose-600 hover:bg-rose-500 rounded-lg text-xs text-white">🎵 混BGM</button>
+            <button onclick="batchAction('bgm4k')"
+                class="batch-btn px-3 py-1.5 bg-rose-700 hover:bg-rose-600 rounded-lg text-xs text-white">🎵 混BGM 4K</button>
+            <button id="batch-stop-btn" onclick="stopLocalBatch()"
+                class="hidden px-3 py-1.5 bg-red-600 hover:bg-red-500 rounded-lg text-xs text-white">⏹ 停止批量</button>
+            <button onclick="deleteSelected()"
+                class="batch-btn px-3 py-1.5 bg-slate-700 hover:bg-red-600 rounded-lg text-xs text-slate-300 hover:text-white">🗑 删除选中</button>
+        </div>
+    </div>
+
+    <!-- 运行卡片网格（受上面两组筛选共同过滤） -->
+    <div id="grid-runs" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {% for run in runs %}{{ run_card(run) }}{% endfor %}
+    </div>
+    <p id="runs-empty" class="hidden bg-slate-800 rounded-xl p-8 border border-slate-700 text-center text-slate-400">
+        没有符合当前筛选条件的视频
+    </p>
+    {% endif %}
+
+    <!-- 回收站：误删保护，再次删除才真正删除 -->
+    <details class="mt-10"{% if trash_runs %} open{% endif %}>
+        <summary class="cursor-pointer select-none flex items-center gap-3 list-none">
+            <span class="text-lg font-semibold text-white">🗑️ 回收站</span>
+            <span class="text-sm text-slate-400">{{ trash_runs | length }} 个已删除</span>
+        </summary>
+        {% if trash_runs %}
+        <div class="mt-4 flex justify-end">
+            <button onclick="emptyTrash(event)"
+                class="px-3 py-1.5 bg-red-600/80 hover:bg-red-500 rounded-lg text-xs text-white">清空回收站</button>
+        </div>
+        <div class="mt-3 space-y-3">
+            {% for t in trash_runs %}
+            <div class="bg-slate-800/60 border border-slate-700 rounded-xl p-4 flex items-center gap-4 flex-wrap">
+                <div class="min-w-0 flex-1">
+                    <p class="text-sm font-semibold text-white truncate" title="{{ t.title }}">
+                        {% if t.structure_label %}<span class="text-xs px-1.5 py-0.5 mr-1.5 bg-sky-600/30 text-sky-300 rounded align-middle">{{ t.structure_label }}</span>{% endif %}{{ t.title }}
+                    </p>
+                    <p class="text-xs text-slate-500 mt-0.5 truncate">原名 {{ t.original_name }} · 删除于 {{ t.deleted_at | datestr }}</p>
+                </div>
+                <div class="flex gap-2 shrink-0 ml-auto">
+                    <button onclick="restoreRun('{{ t.name }}')"
+                        class="px-3 py-1.5 bg-emerald-600 hover:bg-emerald-500 rounded-lg text-xs text-white">恢复</button>
+                    <button onclick="purgeRun('{{ t.name }}')"
+                        class="px-3 py-1.5 bg-red-600 hover:bg-red-500 rounded-lg text-xs text-white">彻底删除</button>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="mt-4 bg-slate-800/40 border border-dashed border-slate-700 rounded-xl p-6 text-center">
+            <p class="text-slate-500 text-sm">回收站为空，删除的视频会先移到这里</p>
+        </div>
+        {% endif %}
+    </details>
+
+    <!-- Video player modal -->
+    <div id="video-modal" class="hidden fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-8" onclick="closeVideoModal(event)">
+        <div class="bg-slate-800 rounded-xl p-4 max-w-4xl w-full" onclick="event.stopPropagation()">
+            <div class="flex justify-between items-center mb-3">
+                <h3 id="video-modal-title" class="text-sm font-semibold text-white"></h3>
+                <button onclick="closeVideoModal()" class="text-slate-400 hover:text-white">✕</button>
+            </div>
+            <video id="video-player" controls class="w-full rounded-lg bg-black" style="max-height: 70vh"></video>
+        </div>
+    </div>
+
+    <!-- Script viewer modal -->
+    <div id="script-modal" class="hidden fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-8" onclick="closeScriptModal(event)">
+        <div class="bg-slate-800 rounded-xl p-4 max-w-3xl w-full max-h-[80vh] flex flex-col" onclick="event.stopPropagation()">
+            <div class="flex justify-between items-center mb-3">
+                <h3 class="text-sm font-semibold text-white">脚本预览</h3>
+                <button onclick="closeScriptModal()" class="text-slate-400 hover:text-white">✕</button>
+            </div>
+            <pre id="script-content" class="overflow-y-auto text-xs text-slate-300 font-mono bg-slate-950 p-4 rounded-lg flex-1"></pre>
+        </div>
+    </div>
+
+    <!-- Thumbnails browser modal（浏览全部缩略图 + 设为主图） -->
+    <div id="thumbs-modal" class="hidden fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-8" onclick="closeThumbsModal(event)">
+        <div class="bg-slate-800 rounded-xl p-4 max-w-5xl w-full max-h-[85vh] flex flex-col" onclick="event.stopPropagation()">
+            <div class="flex justify-between items-center mb-3">
+                <h3 class="text-sm font-semibold text-white">缩略图 — <span id="thumbs-run-name" class="text-indigo-300"></span></h3>
+                <div class="flex items-center gap-2">
+                    <button onclick="regenThumbnail(_thumbsRun, _thumbsMode)"
+                        class="px-3 py-1.5 bg-sky-700 hover:bg-sky-600 rounded-lg text-xs text-white">＋ 再生成一张</button>
+                    <button onclick="closeThumbsModal()" class="text-slate-400 hover:text-white">✕</button>
+                </div>
+            </div>
+            <div id="thumbs-grid" class="overflow-y-auto grid grid-cols-1 md:grid-cols-2 gap-4 flex-1 pr-1"></div>
+        </div>
+    </div>
+
+    <!-- Recompose modal（重选字幕样式重渲） -->
+    <div id="recompose-modal" class="hidden fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-8" onclick="closeRecompose(event)">
+        <div class="bg-slate-800 rounded-xl p-5 max-w-2xl w-full max-h-[85vh] flex flex-col" onclick="event.stopPropagation()">
+            <div class="flex justify-between items-center mb-3">
+                <h3 class="text-sm font-semibold text-white">重渲字幕 — <span id="recompose-run-name" class="text-indigo-300"></span></h3>
+                <button onclick="closeRecompose()" class="text-slate-400 hover:text-white">✕</button>
+            </div>
+            <p class="text-xs text-slate-400 mb-3">复用已有底片（final_no_sub）仅重跑字幕烧录 + 音量归一，本地渲染不消耗积分；完成后<span class="text-amber-300">覆盖原视频文件</span>。</p>
+
+            <div id="recompose-form" class="space-y-3 overflow-y-auto pr-1">
+                <div>
+                    <label class="block text-xs text-slate-400 mb-1">字幕样式</label>
+                    <select id="recompose-style" onchange="onStyleChange()" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white">
+                        <option value="">跟随参数配置（legacy 字号）</option>
+                        {% for sid, label in subtitle_style_options.items() %}
+                        <option value="{{ sid }}">{{ label }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div id="recompose-font-row">
+                    <label class="block text-xs text-slate-400 mb-1">Legacy 字号（仅「跟随参数配置」时生效）</label>
+                    <input id="recompose-font" type="number" value="60" min="20" max="200"
+                        class="w-32 bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white">
+                </div>
+                <div class="flex items-center gap-4">
+                    <label class="flex items-center gap-2 text-xs text-slate-300 cursor-pointer">
+                        <input id="recompose-zh" type="checkbox" checked class="accent-indigo-500"> 显示中文字幕
+                    </label>
+                    <label id="recompose-4k-row" class="hidden flex items-center gap-2 text-xs text-slate-300 cursor-pointer">
+                        <input id="recompose-4k" type="checkbox" class="accent-indigo-500"> 重新生成 4K 版本（旧 4K 已过期将被删除）
+                    </label>
+                </div>
+                <div>
+                    <label class="block text-xs text-slate-400 mb-1">样式预览</label>
+                    <img id="recompose-preview" src="/api/subtitle-styles/preview/current?mode=original&thumb=true"
+                        alt="样式预览" class="rounded-lg border border-slate-700 max-h-44">
+                </div>
+                <div class="flex gap-2 pt-1">
+                    <button id="recompose-start" onclick="startRecompose()"
+                        class="px-4 py-2 bg-purple-600 hover:bg-purple-500 rounded-lg text-sm text-white font-medium">开始重渲</button>
+                    <button onclick="closeRecompose()"
+                        class="px-4 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg text-sm text-slate-300">取消</button>
+                </div>
+            </div>
+
+            <div id="recompose-progress" class="hidden flex-1 flex flex-col min-h-0">
+                <div id="recompose-status-line" class="text-xs text-indigo-300 mb-2">正在重渲...</div>
+                <pre id="recompose-log" class="flex-1 overflow-y-auto text-xs text-slate-300 font-mono bg-slate-950 p-3 rounded-lg min-h-48"></pre>
+                <div class="flex gap-2 mt-3">
+                    <button id="recompose-refresh" onclick="location.reload()" class="hidden px-4 py-2 bg-emerald-600 hover:bg-emerald-500 rounded-lg text-sm text-white">刷新页面查看新视频</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 后台任务悬浮面板：4K/BGM/缩略图等本地渲染任务实时日志与状态 -->
+<div id="task-widget" class="hidden fixed bottom-4 right-4 z-50 w-96 max-w-[90vw] bg-slate-900 border border-slate-700 rounded-xl shadow-2xl overflow-hidden">
+    <div class="flex items-center justify-between px-3 py-2 bg-slate-800/80 border-b border-slate-700 gap-2">
+        <span class="flex items-center gap-2 text-xs font-semibold text-white min-w-0">
+            <span id="task-widget-dot" class="w-2 h-2 rounded-full bg-indigo-400 animate-pulse shrink-0"></span>
+            <span id="task-widget-title" class="truncate">后台任务</span>
+        </span>
+        <span class="flex items-center gap-2 shrink-0">
+            <span id="task-widget-elapsed" class="text-xs text-slate-400"></span>
+            <button onclick="taskWidgetHide()" title="收起" class="text-slate-400 hover:text-white text-sm leading-none px-1">✕</button>
+        </span>
+    </div>
+    <pre id="task-widget-log" class="px-3 py-2 text-[11px] leading-4 font-mono text-slate-300 max-h-56 overflow-y-auto whitespace-pre-wrap break-all"> </pre>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+function showVideo(runName, videoName, mode) {
+    if (!videoName) return;
+    const url = `/api/runs/${runName}/video/${videoName}${mode ? `?mode=${mode}` : ''}`;
+    document.getElementById('video-player').src = url;
+    document.getElementById('video-modal-title').textContent = videoName;
+    document.getElementById('video-modal').classList.remove('hidden');
+}
+
+function closeVideoModal(e) {
+    if (e && e.target !== document.getElementById('video-modal')) return;
+    const player = document.getElementById('video-player');
+    player.pause();
+    player.src = '';
+    document.getElementById('video-modal').classList.add('hidden');
+}
+
+function viewScript(runName) {
+    fetch(`/api/runs/${runName}/script`)
+        .then(r => r.json())
+        .then(data => {
+            document.getElementById('script-content').textContent = JSON.stringify(data, null, 2);
+            document.getElementById('script-modal').classList.remove('hidden');
+        });
+}
+
+function closeScriptModal(e) {
+    if (e && e.target !== document.getElementById('script-modal')) return;
+    document.getElementById('script-modal').classList.add('hidden');
+}
+
+// ---------------------------------------------------------------------------
+// 筛选：上传状态 × 模式（两组筛选可同时选择、叠加生效）
+// ---------------------------------------------------------------------------
+const _CHIP_OFF = 'px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-700 text-slate-300';
+let uploadFilter = 'all';   // all / pending / uploaded
+let modeFilter = 'all';     // all / original / original_static / original_cutout / quest
+
+function paintUploadChips() {
+    ['all', 'pending', 'uploaded'].forEach(key => {
+        const btn = document.querySelector(`[data-upload-chip="${key}"]`);
+        if (!btn) return;
+        if (key !== uploadFilter) { btn.className = _CHIP_OFF; return; }
+        const color = key === 'pending' ? 'bg-amber-600/80'
+            : key === 'uploaded' ? 'bg-emerald-600/80' : 'bg-indigo-600';
+        btn.className = `px-3 py-1.5 rounded-lg text-xs font-medium ${color} text-white`;
+    });
+}
+
+function paintModeChips() {
+    document.querySelectorAll('[data-mode-chip]').forEach(btn => {
+        btn.className = btn.dataset.modeChip === modeFilter
+            ? 'px-3 py-1.5 rounded-lg text-xs font-medium bg-indigo-600 text-white'
+            : _CHIP_OFF;
+    });
+}
+
+function setUploadFilter(v) { uploadFilter = v; paintUploadChips(); applyFilters(); _saveFilters(); }
+function setModeFilter(v) { modeFilter = v; paintModeChips(); applyFilters(); _saveFilters(); }
+
+function applyFilters() {
+    let visible = 0;
+    document.querySelectorAll('#grid-runs .run-card').forEach(card => {
+        const okU = uploadFilter === 'all'
+            || card.dataset.uploaded === (uploadFilter === 'uploaded' ? '1' : '0');
+        const okM = modeFilter === 'all' || card.dataset.structure === modeFilter;
+        const show = okU && okM;
+        card.classList.toggle('hidden', !show);
+        if (show) {
+            visible++;
+        } else {
+            // 被筛掉的卡片取消勾选：「已选」始终等于「可见且勾选」，避免误删看不到的运行
+            const cb = card.querySelector('.run-select');
+            if (cb) cb.checked = false;
+        }
+    });
+    document.getElementById('runs-empty').classList.toggle('hidden', visible > 0);
+    onSelectChange();
+}
+
+function refreshChipCounts() {
+    const cards = Array.from(document.querySelectorAll('#grid-runs .run-card'));
+    document.querySelectorAll('[data-upload-count]').forEach(el => {
+        el.textContent = el.dataset.uploadCount === 'all'
+            ? cards.length
+            : cards.filter(c => c.dataset.uploaded === el.dataset.uploadCount).length;
+    });
+    document.querySelectorAll('[data-mode-count]').forEach(el => {
+        el.textContent = cards.filter(c => c.dataset.structure === el.dataset.modeCount).length;
+    });
+}
+
+// ---------------------------------------------------------------------------
+// 筛选状态记忆：localStorage 保存上次使用的筛选条件，下次进入页面自动恢复
+// ---------------------------------------------------------------------------
+const _FILTER_KEY = 'runs_page_filters';
+
+function _saveFilters() {
+    try {
+        localStorage.setItem(_FILTER_KEY, JSON.stringify({upload: uploadFilter, mode: modeFilter}));
+    } catch (e) { /* localStorage 不可用时静默跳过 */ }
+}
+
+function _loadSavedFilters() {
+    try {
+        const saved = JSON.parse(localStorage.getItem(_FILTER_KEY) || '{}');
+        if (['all', 'pending', 'uploaded'].includes(saved.upload)) uploadFilter = saved.upload;
+        // 只恢复当前页面存在对应筛选按钮的模式，避免残留失效值
+        if (saved.mode && document.querySelector(`[data-mode-chip="${CSS.escape(saved.mode)}"]`)) {
+            modeFilter = saved.mode;
+        }
+    } catch (e) { /* 数据损坏时使用默认值 */ }
+}
+
+// ---------------------------------------------------------------------------
+// 多选批量操作：卡片勾选 → 全选/计数 → 删除 / 生成4K / 混BGM / 混BGM 4K /
+// 标记已上传（全选与执行都只作用于当前筛选可见的运行）
+// ---------------------------------------------------------------------------
+let _batchBusy = false;
+
+function _visibleCards() {
+    return Array.from(document.querySelectorAll('#grid-runs .run-card'))
+        .filter(c => !c.classList.contains('hidden'));
+}
+
+function selectedItems() {
+    return _visibleCards()
+        .filter(c => { const cb = c.querySelector('.run-select'); return cb && cb.checked; })
+        .map(c => ({name: c.dataset.run, mode: c.dataset.structure || '', has4k: c.dataset.has4k === '1'}));
+}
+
+function onSelectChange() {
+    const vis = _visibleCards();
+    const checked = vis.filter(c => {
+        const cb = c.querySelector('.run-select');
+        return cb && cb.checked;
+    }).length;
+    const countEl = document.getElementById('sel-count');
+    if (countEl) countEl.textContent = `已选 ${checked} 个`;
+    const sa = document.getElementById('select-all');
+    if (sa) {
+        sa.checked = vis.length > 0 && checked === vis.length;
+        sa.indeterminate = checked > 0 && checked < vis.length;
+    }
+    _refreshBatchButtons();
+}
+
+function _refreshBatchButtons() {
+    const count = _visibleCards().filter(c => {
+        const cb = c.querySelector('.run-select');
+        return cb && cb.checked;
+    }).length;
+    document.querySelectorAll('.batch-btn').forEach(b => {
+        const dis = _batchBusy || count === 0;
+        b.disabled = dis;
+        b.classList.toggle('opacity-50', dis);
+        b.classList.toggle('cursor-not-allowed', dis);
+    });
+}
+
+function toggleSelectAll(checked) {
+    _visibleCards().forEach(card => {
+        const cb = card.querySelector('.run-select');
+        if (cb) cb.checked = checked;
+    });
+    onSelectChange();
+}
+
+function deleteSelected() {
+    const items = selectedItems();
+    if (!items.length) { alert('请先勾选要删除的运行'); return; }
+    if (!confirm(`将选中的 ${items.length} 个运行移入回收站？（可在页面下方回收站中恢复）`)) return;
+    _batchBusy = true;
+    _refreshBatchButtons();
+    fetch('/api/runs/batch_delete', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({runs: items}),
+    })
+    .then(r => r.json())
+    .then(data => {
+        if (!data.ok) {
+            alert('批量删除失败: ' + (data.error || '未知错误'));
+            _batchBusy = false;
+            _refreshBatchButtons();
+            return;
+        }
+        const failed = (data.results || []).filter(x => !x.ok);
+        if (failed.length) {
+            alert(`${data.deleted} 个已移入回收站，${failed.length} 个失败：\n`
+                + failed.map(f => `${f.name} (${f.error})`).join('\n'));
+        }
+        location.reload();
+    })
+    .catch(() => {
+        _batchBusy = false;
+        _refreshBatchButtons();
+        alert('批量删除请求失败');
+    });
+}
+
+// ---------------------------------------------------------------------------
+// 批量 4K / BGM（含 4K 混音）：后端驻留队列（/api/local_batch/*）——排队调度在
+// 服务器线程执行，页面后台/刷新/关闭都不影响批量（浏览器会节流后台标签页定时器，
+// 前端逐项排队在后台会停摆）；前端只提交清单+轮询进度。标记已上传为瞬时操作仍
+// 前端直发；完成后汇总结果并刷新。
+// ---------------------------------------------------------------------------
+const _BATCH_LABELS = {upload: '标记已上传', '4k': '生成4K', bgm: '混BGM', bgm4k: '混BGM 4K'};
+const _BATCH_CONFIRMS = {
+    upload: n => `将选中的 ${n} 个运行全部标记为已上传？`,
+    '4k': n => `为选中的 ${n} 个运行批量生成 4K？\n本地渲染不消耗积分，已有 4K 将被覆盖；逐个排队执行，总耗时可能较长。`,
+    bgm: n => `为选中的 ${n} 个运行批量混入版权 BGM？\n按当前 BGM 配置逐个混音（输出 _bgm.mp4 新文件，原片保留）；逐个排队执行，总耗时可能较长。`,
+    bgm4k: n => `为选中的 ${n} 个运行批量对 4K 版本混入版权 BGM？\n按当前 BGM 配置逐个混音（输出 _4K_bgm.mp4 新文件）；4K 需整片重编码、耗时较长，逐个排队执行。`,
+};
+
+let _localBatchTimer = null;
+let _localBatchLastCurrent = '';
+let _localBatchFinishGuard = false;
+
+function _refreshBatchStopBtn(show) {
+    const b = document.getElementById('batch-stop-btn');
+    if (b) b.classList.toggle('hidden', !show);
+}
+
+function _batchBarText(d) {
+    const el = document.getElementById('batch-status');
+    if (!el) return;
+    const stopping = d.state === 'stopping' ? '（停止中，当前任务完成后停止）' : '';
+    el.textContent = `批量${_BATCH_LABELS[d.kind] || d.kind}中 ${d.done || 0}/${d.total || 0}`
+        + (d.current ? `：${d.current}` : '') + stopping;
+}
+
+function _startBatchWatch(d) {
+    _batchBusy = true;
+    _localBatchFinishGuard = false;
+    _localBatchLastCurrent = d.current || '';
+    _refreshBatchButtons();
+    const el = document.getElementById('batch-status');
+    if (el) el.classList.remove('hidden');
+    _batchBarText(d);
+    _refreshBatchStopBtn(true);
+    if (_localBatchTimer) { clearTimeout(_localBatchTimer); _localBatchTimer = null; }
+    if (_localBatchLastCurrent && _taskWidget.source !== 'pipeline') taskWidgetStart('pipeline');
+    pollLocalBatch();
+}
+
+function pollLocalBatch() {
+    fetch('/api/local_batch/status').then(r => r.json()).then(d => {
+        if (!d.running) {
+            _localBatchTimer = null;
+            if (_localBatchFinishGuard || !(d.total > 0)) return;
+            _localBatchFinishGuard = true;
+            _batchBusy = false;
+            _refreshBatchButtons();
+            _refreshBatchStopBtn(false);
+            const el = document.getElementById('batch-status');
+            if (el) { el.classList.add('hidden'); el.textContent = ''; }
+            const results = d.results || [];
+            const okN = results.filter(x => x.status === 'done').length;
+            const fails = results.filter(x => x.status === 'error');
+            const skipped = results.filter(x => x.status === 'skipped').length;
+            let msg = `批量${_BATCH_LABELS[d.kind] || d.kind}${d.state === 'stopped' ? '已停止' : '完成'}：成功 ${okN} 个`;
+            if (skipped) msg += `，跳过 ${skipped} 个`;
+            if (fails.length) msg += `，失败 ${fails.length} 个：\n${fails.map(x => `${x.name}：${x.error || '失败'}`).join('\n')}`;
+            alert(msg);
+            location.reload();
+            return;
+        }
+        _batchBarText(d);
+        if (d.current && d.current !== _localBatchLastCurrent) {
+            _localBatchLastCurrent = d.current;
+            taskWidgetStart('pipeline');  // 新任务开始：重置面板（seq 纪律防 stale done）
+        }
+        _localBatchTimer = setTimeout(pollLocalBatch, 2000);
+    }).catch(() => {
+        if (!_localBatchFinishGuard) _localBatchTimer = setTimeout(pollLocalBatch, 3000);
+    });
+}
+
+function stopLocalBatch() {
+    if (!confirm('停止批量队列？当前任务完成后将不再处理剩余项。')) return;
+    fetch('/api/local_batch/stop', {method: 'POST'})
+        .then(r => r.json())
+        .then(data => { if (!data.ok) alert('停止失败: ' + (data.error || '未知错误')); })
+        .catch(() => alert('停止请求失败'));
+}
+
+async function batchAction(kind) {
+    if (_batchBusy) { alert('已有批量任务进行中，请等待完成'); return; }
+    if (_fourKBusy || _bgmBusy) { alert('有单个 4K/BGM 任务进行中，请等待完成后再批量执行'); return; }
+    let items = selectedItems();
+    if (!items.length) { alert('请先勾选要处理的运行'); return; }
+    if (kind === 'bgm4k') {
+        // 混BGM 4K 只对已有 4K 版本的运行执行；没有 4K 的跳过并提示
+        //（后端对缺 4K 的运行会直接报错，这里前置过滤避免无意义的失败项）
+        const with4k = items.filter(it => it.has4k);
+        const skipped = items.length - with4k.length;
+        if (!with4k.length) { alert('选中的运行都没有 4K 版本，请先批量「生成4K」'); return; }
+        if (skipped > 0
+            && !confirm(`选中的运行中 ${skipped} 个没有 4K 版本，将跳过；只对剩余 ${with4k.length} 个执行混BGM 4K。继续？`)) return;
+        items = with4k;
+    }
+    if (!confirm(_BATCH_CONFIRMS[kind](items.length))) return;
+
+    if (kind === 'upload') {
+        // 瞬时操作：前端直发（无等待循环，浏览器后台节流不影响）
+        _batchBusy = true;
+        _refreshBatchButtons();
+        const okNames = [];
+        const failList = [];
+        for (const it of items) {
+            const qs = it.mode ? `?mode=${encodeURIComponent(it.mode)}` : '';
+            try {
+                const r = await fetch(`/api/runs/${encodeURIComponent(it.name)}/mark_uploaded${qs ? `${qs}&` : '?'}state=uploaded`, {method: 'POST'});
+                const data = await r.json();
+                if (data.ok) okNames.push(it.name);
+                else failList.push(`${it.name}：${data.error || '失败'}`);
+            } catch (e) { failList.push(`${it.name}：请求失败`); }
+        }
+        _batchBusy = false;
+        _refreshBatchButtons();
+        let msg = `批量标记已上传完成：成功 ${okNames.length} 个`;
+        if (failList.length) msg += `，失败 ${failList.length} 个：\n${failList.join('\n')}`;
+        alert(msg);
+        location.reload();
+        return;
+    }
+
+    // 生成4K / 混BGM / 混BGM 4K → 后端驻留队列
+    let data;
+    try {
+        const r = await fetch('/api/local_batch/start', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({kind, items: items.map(it => ({name: it.name, mode: it.mode}))}),
+        });
+        data = await r.json();
+    } catch (e) { alert('批量启动请求失败'); return; }
+    if (!data.ok) { alert('批量启动失败: ' + (data.error || '未知错误')); return; }
+    _startBatchWatch({kind, total: items.length, done: 0, current: ''});
+}
+
+// 标记/取消「已上传」：从被点按钮所在卡片就近取 name/mode——同名运行跨模式重名时
+// 标记的永远是用户点击的那一个，视觉更新也不会落到另一张同名卡上；
+// 带 mode 消歧 + URL 编码，失败明确提示（不再静默返回）
+function toggleUploaded(btn) {
+    const card = btn.closest('.run-card');
+    if (!card) return;
+    const runName = card.dataset.run;
+    const mode = card.dataset.structure || '';
+    const qs = mode ? `?mode=${encodeURIComponent(mode)}` : '';
+    fetch(`/api/runs/${encodeURIComponent(runName)}/mark_uploaded${qs}`, {method: 'POST'})
+        .then(r => r.json())
+        .then(data => {
+            if (!data.ok) { alert('标记失败: ' + (data.error || '未知错误')); return; }
+            const badge = card.querySelector('span[id^="upload-badge-"]');
+            if (data.uploaded) {
+                btn.textContent = '已上传 ✓';
+                btn.className = 'px-3 py-1.5 rounded-lg text-xs text-white bg-emerald-600 hover:bg-emerald-500';
+                if (badge) badge.classList.remove('hidden');
+            } else {
+                btn.textContent = '标记已上传';
+                btn.className = 'px-3 py-1.5 rounded-lg text-xs text-white bg-amber-600/80 hover:bg-amber-500';
+                if (badge) badge.classList.add('hidden');
+            }
+            card.dataset.uploaded = data.uploaded ? '1' : '0';
+            refreshChipCounts();
+            applyFilters();
+        })
+        .catch(() => alert('标记请求失败，请确认服务是否正常'));
+}
+
+function openFolder(runName) {
+    fetch(`/api/runs/${runName}/open_folder`, {method: 'POST'})
+        .then(r => r.json())
+        .then(data => {
+            if (!data.ok) alert('打开目录失败: ' + (data.error || '未知错误'));
+        });
+}
+
+// 打开运行目录并高亮选中文件（file 为运行目录内的文件名）
+function openRunFile(runName, mode, fileName) {
+    const q = [];
+    if (mode) q.push(`mode=${encodeURIComponent(mode)}`);
+    if (fileName) q.push(`file=${encodeURIComponent(fileName)}`);
+    const qs = q.length ? `?${q.join('&')}` : '';
+    fetch(`/api/runs/${runName}/open_folder${qs}`, {method: 'POST'})
+        .then(r => r.json())
+        .then(data => {
+            if (!data.ok) alert('打开目录失败: ' + (data.error || '未知错误'));
+        });
+}
+
+// ---------------------------------------------------------------------------
+// 一键复制 4K / 4K BGM 成片绝对路径（服务端解析注入卡片 data-path4k/path4kbgm，
+// 便于粘贴进上传对话框等场景；缺失版本按钮已禁用，直接点击兜底提示）
+// ---------------------------------------------------------------------------
+const _COPY_LABELS = {'4k': '📋 4K', '4k_bgm': '📋 4K BGM'};
+
+function _copyTextFallback(text, done) {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand('copy'); done(); } catch (e) { alert('复制失败，请手动复制'); }
+    document.body.removeChild(ta);
+}
+
+function copyRunPath(btn, kind) {
+    const card = btn.closest('.run-card');
+    const p = card ? (kind === '4k' ? card.dataset.path4k : card.dataset.path4kbgm) : '';
+    if (!p) { alert(kind === '4k' ? '尚未生成 4K 版本' : '尚未生成 4K BGM 版本'); return; }
+    const done = () => {
+        btn.textContent = '✓ 已复制';
+        setTimeout(() => { btn.textContent = _COPY_LABELS[kind]; }, 1500);
+    };
+    if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(p).then(done).catch(() => _copyTextFallback(p, done));
+    } else {
+        _copyTextFallback(p, done);
+    }
+}
+
+function deleteRun(runName, mode) {
+    if (!confirm(`将 "${runName}" 移入回收站？（可在页面下方回收站中恢复）`)) return;
+    fetch(`/api/runs/${runName}${mode ? `?mode=${mode}` : ''}`, {method: 'DELETE'})
+        .then(r => r.json())
+        .then(data => { if (data.ok) location.reload(); else alert('删除失败: ' + (data.error || '未知错误')); });
+}
+
+// ---------------------------------------------------------------------------
+// 回收站：恢复 / 彻底删除 / 清空
+// ---------------------------------------------------------------------------
+function restoreRun(trashName) {
+    fetch(`/api/trash/${trashName}/restore`, {method: 'POST'})
+        .then(r => r.json())
+        .then(data => { if (data.ok) location.reload(); else alert('恢复失败: ' + (data.error || '未知错误')); });
+}
+
+function purgeRun(trashName) {
+    if (!confirm(`彻底删除 "${trashName}"？此操作不可恢复！`)) return;
+    fetch(`/api/trash/${trashName}`, {method: 'DELETE'})
+        .then(r => r.json())
+        .then(data => { if (data.ok) location.reload(); else alert('删除失败: ' + (data.error || '未知错误')); });
+}
+
+function emptyTrash(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    if (!confirm('清空回收站？其中所有视频将被彻底删除且无法恢复！')) return;
+    fetch('/api/trash/empty', {method: 'POST'})
+        .then(r => r.json())
+        .then(data => { if (data.ok) location.reload(); else alert('操作失败: ' + (data.error || '未知错误')); });
+}
+
+// ---------------------------------------------------------------------------
+// 重渲字幕（重选字幕样式重新生成视频）
+// ---------------------------------------------------------------------------
+let _recomposeRun = '';
+let _recomposeTimer = null;
+let _recomposeLogIdx = 0;
+
+function openRecompose(runName, has4k) {
+    _recomposeRun = runName;
+    _recomposeLogIdx = 0;
+    document.getElementById('recompose-run-name').textContent = runName;
+    document.getElementById('recompose-form').classList.remove('hidden');
+    document.getElementById('recompose-progress').classList.add('hidden');
+    document.getElementById('recompose-log').textContent = '';
+    document.getElementById('recompose-refresh').classList.add('hidden');
+    const startBtn = document.getElementById('recompose-start');
+    startBtn.disabled = false;
+    startBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+    document.getElementById('recompose-4k-row').classList.toggle('hidden', !has4k);
+    document.getElementById('recompose-4k').checked = false;
+    onStyleChange();
+    document.getElementById('recompose-modal').classList.remove('hidden');
+}
+
+function closeRecompose(e) {
+    if (e && e.target !== document.getElementById('recompose-modal')) return;
+    if (_recomposeTimer) { clearTimeout(_recomposeTimer); _recomposeTimer = null; }
+    document.getElementById('recompose-modal').classList.add('hidden');
+}
+
+function onStyleChange() {
+    const sid = document.getElementById('recompose-style').value;
+    // 选具体样式时 legacy 字号由样式自身控制，输入框置灰
+    const fontInput = document.getElementById('recompose-font');
+    fontInput.disabled = !!sid;
+    fontInput.parentElement.classList.toggle('opacity-50', !!sid);
+    const base = '/api/subtitle-styles/preview/';
+    const q = '?mode=original&thumb=true';
+    document.getElementById('recompose-preview').src =
+        sid ? base + encodeURIComponent(sid) + q : base + 'current' + q;
+}
+
+function startRecompose() {
+    const body = {
+        subtitle_style: document.getElementById('recompose-style').value,
+        font_size: parseInt(document.getElementById('recompose-font').value, 10) || 60,
+        show_zh: document.getElementById('recompose-zh').checked,
+        regen_4k: document.getElementById('recompose-4k').checked,
+    };
+    const startBtn = document.getElementById('recompose-start');
+    startBtn.disabled = true;
+    startBtn.classList.add('opacity-50', 'cursor-not-allowed');
+    fetch(`/api/runs/${_recomposeRun}/recompose`, {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(body),
+    })
+    .then(r => r.json())
+    .then(data => {
+        if (!data.ok) {
+            alert('启动失败: ' + (data.error || '未知错误'));
+            startBtn.disabled = false;
+            startBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+            return;
+        }
+        document.getElementById('recompose-form').classList.add('hidden');
+        document.getElementById('recompose-progress').classList.remove('hidden');
+        _recomposeLogIdx = 0;
+        pollRecompose();
+    })
+    .catch(() => {
+        startBtn.disabled = false;
+        startBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+    });
+}
+
+function pollRecompose() {
+    fetch(`/api/run/logs/since/${_recomposeLogIdx}`)
+        .then(r => r.json())
+        .then(logData => {
+            _recomposeLogIdx = logData.total;
+            const logEl = document.getElementById('recompose-log');
+            if (logData.logs && logData.logs.length) {
+                logEl.textContent += logData.logs.join('\n') + '\n';
+                logEl.scrollTop = logEl.scrollHeight;
+            }
+            const st = logData.status || {};
+            const statusEl = document.getElementById('recompose-status-line');
+            if (st.status === 'running') {
+                statusEl.textContent = `正在重渲...（${st.current_step_label || ''} 已 ${st.elapsed}s）`;
+                _recomposeTimer = setTimeout(pollRecompose, 1000);
+            } else if (st.status === 'error') {
+                statusEl.textContent = '❌ 重渲失败: ' + (st.error || '');
+                statusEl.className = 'text-xs text-red-400 mb-2';
+                document.getElementById('recompose-refresh').classList.remove('hidden');
+            } else {
+                statusEl.textContent = '✅ 重渲完成！';
+                statusEl.className = 'text-xs text-emerald-400 mb-2';
+                document.getElementById('recompose-refresh').classList.remove('hidden');
+            }
+        })
+        .catch(() => { _recomposeTimer = setTimeout(pollRecompose, 2000); });
+}
+
+// ---------------------------------------------------------------------------
+// 缩略图：再生成一张（thumbnail_N.jpg 递增，旧图全保留）/ 浏览全部 / 设为主图
+// ---------------------------------------------------------------------------
+let _thumbRegenBusy = false;
+let _thumbRegenRun = '';
+let _thumbRegenMode = '';
+let _thumbsLogIdx = 0;
+let _thumbsTimer = null;
+let _thumbsRun = '';
+let _thumbsMode = '';
+
+function regenThumbnail(runName, mode) {
+    if (_thumbRegenBusy) { alert('已有缩略图生成任务进行中，请等待完成'); return; }
+    if (!confirm('为该运行再生成一张缩略图？\n按当前生图 Provider 计费（MCP 积分 / SenseNova），约 1 分钟；旧缩略图全部保留。')) return;
+    _thumbRegenBusy = true;
+    _thumbRegenRun = runName;
+    _thumbRegenMode = mode || '';
+    _thumbsLogIdx = 0;
+    const btn = document.getElementById(`thumb-btn-${runName}`);
+    if (btn) { btn.disabled = true; btn.classList.add('opacity-50', 'cursor-not-allowed'); btn.textContent = '生成中...'; }
+    const q = _thumbRegenMode ? `?mode=${_thumbRegenMode}` : '';
+    fetch(`/api/runs/${runName}/thumbnail_regenerate${q}`, {method: 'POST'})
+        .then(r => r.json())
+        .then(data => {
+            if (!data.ok) {
+                alert('启动失败: ' + (data.error || '未知错误'));
+                _resetThumbBtn(runName);
+                return;
+            }
+            taskWidgetStart('thumb');
+            pollThumbRegen();
+        })
+        .catch(() => { _resetThumbBtn(runName); });
+}
+
+function _resetThumbBtn(runName) {
+    _thumbRegenBusy = false;
+    if (_thumbsTimer) { clearTimeout(_thumbsTimer); _thumbsTimer = null; }
+    const btn = document.getElementById(`thumb-btn-${runName}`);
+    if (btn) { btn.disabled = false; btn.classList.remove('opacity-50', 'cursor-not-allowed'); btn.textContent = '＋缩略图'; }
+}
+
+function pollThumbRegen() {
+    // 独立子进程任务端点（与主 pipeline 日志流分离，可并行运行）
+    fetch(`/api/thumbnail_regen/status?since=${_thumbsLogIdx}`)
+        .then(r => r.json())
+        .then(logData => {
+            _thumbsLogIdx = logData.total || 0;
+            const st = logData.status || {};
+            if (st.status === 'running') {
+                _thumbsTimer = setTimeout(pollThumbRegen, 1500);
+                return;
+            }
+            const runName = _thumbRegenRun;
+            if (st.status === 'error') {
+                _resetThumbBtn(runName);
+                alert('❌ 缩略图生成失败: ' + (st.error || '未知错误'));
+                return;
+            }
+            // done 或 idle（服务重启后无任务记录）都视为结束
+            _thumbRegenBusy = false;
+            if (_thumbsTimer) { clearTimeout(_thumbsTimer); _thumbsTimer = null; }
+            location.reload();
+        })
+        .catch(() => { _thumbsTimer = setTimeout(pollThumbRegen, 2500); });
+}
+
+function openThumbsModal(e, runName, mode) {
+    if (e) { e.preventDefault(); e.stopPropagation(); }
+    _thumbsRun = runName;
+    _thumbsMode = mode || '';
+    document.getElementById('thumbs-run-name').textContent = runName;
+    document.getElementById('thumbs-modal').classList.remove('hidden');
+    loadThumbs();
+}
+
+function loadThumbs() {
+    const q = _thumbsMode ? `?mode=${_thumbsMode}` : '';
+    fetch(`/api/runs/${_thumbsRun}/thumbnails${q}`)
+        .then(r => r.json())
+        .then(data => {
+            const grid = document.getElementById('thumbs-grid');
+            grid.innerHTML = '';
+            (data.thumbnails || []).forEach(t => {
+                const card = document.createElement('div');
+                card.className = 'bg-slate-900 rounded-lg border border-slate-700 overflow-hidden';
+                card.innerHTML = `
+                    <img src="${t.url}" alt="${t.name}" class="w-full aspect-video object-cover cursor-pointer" onclick="window.open('${t.url}')" title="点击查看大图">
+                    <div class="p-2">
+                        <div class="text-xs text-slate-400 truncate mb-1.5" title="${t.name}">${t.name}</div>
+                        <div class="flex items-center gap-1.5">
+                            ${t.is_main
+                                ? '<span class="text-xs px-2 py-1 bg-emerald-600/30 text-emerald-300 rounded">当前主图</span>'
+                                : `<button onclick="setMainThumb('${t.name}')" class="px-2 py-1 bg-amber-600/80 hover:bg-amber-500 rounded text-xs text-white">设为主图</button>`}
+                            <button onclick="deleteThumb('${t.name}')" title="删除该缩略图"
+                                class="px-2 py-1 bg-red-600/70 hover:bg-red-500 rounded text-xs text-white">删除</button>
+                        </div>
+                    </div>`;
+                grid.appendChild(card);
+            });
+            _syncThumbBadge((data.thumbnails || []).length);
+        });
+}
+
+function _syncThumbBadge(count) {
+    // 同步运行卡片上的「🖼 N 张」角标（删除后无需整页刷新）
+    const card = document.querySelector(`.run-card[data-run="${CSS.escape(_thumbsRun)}"]`);
+    if (!card) return;
+    const badge = card.querySelector('button[title="浏览全部缩略图"]');
+    if (count > 1) {
+        if (badge) badge.innerHTML = `🖼 ${count} 张`;
+    } else if (badge) {
+        badge.remove();
+    }
+    // 删到 0 张 → 卡片封面换 🎬 占位
+    if (count === 0) {
+        const a = card.querySelector('a.block.aspect-video');
+        if (a) {
+            const div = document.createElement('div');
+            div.className = 'aspect-video bg-slate-900 flex items-center justify-center';
+            div.innerHTML = '<span class="text-slate-600 text-4xl">🎬</span>';
+            a.replaceWith(div);
+        }
+    }
+}
+
+function deleteThumb(filename) {
+    if (!confirm(`确定删除 ${filename}？\n删除后不可恢复（如需要可用「＋缩略图」重新生成）。`)) return;
+    const q = _thumbsMode ? `?mode=${_thumbsMode}` : '';
+    fetch(`/api/runs/${_thumbsRun}/thumbnail_delete${q}`, {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({filename: filename}),
+    })
+    .then(r => r.json())
+    .then(data => {
+        if (!data.ok) { alert('删除失败: ' + (data.error || '未知错误')); return; }
+        // 主图被删 → 后端已清 thumb_main.txt，_resolve_main_thumbnail 自动回落；
+        // 刷新弹窗列表 + 卡片封面（loadThumbs 会重新拉 /api/runs/.../thumbnail）
+        loadThumbs();
+        // 刷新卡片封面图（加时间戳绕缓存）
+        const card = document.querySelector(`.run-card[data-run="${CSS.escape(_thumbsRun)}"]`);
+        if (card) {
+            const img = card.querySelector('img[src*="/thumbnail"]');
+            if (img) {
+                const sep = img.src.includes('?') ? '&' : '?';
+                img.src = img.src.split(sep)[0] + sep + '_t=' + Date.now();
+            }
+        }
+    });
+}
+
+function setMainThumb(filename) {
+    const q = _thumbsMode ? `?mode=${_thumbsMode}` : '';
+    fetch(`/api/runs/${_thumbsRun}/thumbnail_set_main${q}`, {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({filename: filename}),
+    })
+    .then(r => r.json())
+    .then(data => {
+        if (!data.ok) { alert('设置失败: ' + (data.error || '未知错误')); return; }
+        loadThumbs();
+    });
+}
+
+function closeThumbsModal(e) {
+    if (e && e.target !== document.getElementById('thumbs-modal')) return;
+    document.getElementById('thumbs-modal').classList.add('hidden');
+}
+
+// ---------------------------------------------------------------------------
+// 生成 4K（复用 Step 6 超分逻辑，本地渲染零积分；成功后原子替换旧 4K）
+// ---------------------------------------------------------------------------
+let _fourKBusy = false;
+let _fourKRun = '';
+let _fourKTimer = null;
+let _fourKLogIdx = 0;
+
+function generate4k(runName, mode) {
+    if (_batchBusy) { alert('批量任务进行中，请等待完成'); return; }
+    if (_fourKBusy) { alert('已有 4K 生成任务进行中，请等待完成'); return; }
+    if (!confirm('为该运行生成 4K 版本？\n本地渲染不消耗积分，已有 4K 将被覆盖；耗时几分钟到几十分钟。')) return;
+    _fourKBusy = true;
+    _fourKRun = runName;
+    _fourKLogIdx = 0;
+    const btn = document.getElementById(`fourk-btn-${runName}`);
+    if (btn) { btn.disabled = true; btn.classList.add('opacity-50', 'cursor-not-allowed'); btn.textContent = '生成中...'; }
+    const q = mode ? `?mode=${mode}` : '';
+    fetch(`/api/runs/${runName}/generate_4k${q}`, {method: 'POST'})
+        .then(r => r.json())
+        .then(data => {
+            if (!data.ok) {
+                alert('启动失败: ' + (data.error || '未知错误'));
+                _reset4kBtn(runName);
+                return;
+            }
+            taskWidgetStart('pipeline');
+            poll4kGen();
+        })
+        .catch(() => { _reset4kBtn(runName); });
+}
+
+function _reset4kBtn(runName) {
+    _fourKBusy = false;
+    if (_fourKTimer) { clearTimeout(_fourKTimer); _fourKTimer = null; }
+    const btn = document.getElementById(`fourk-btn-${runName}`);
+    if (btn) { btn.disabled = false; btn.classList.remove('opacity-50', 'cursor-not-allowed'); btn.textContent = '生成4K'; }
+}
+
+function poll4kGen() {
+    fetch(`/api/run/logs/since/${_fourKLogIdx}`)
+        .then(r => r.json())
+        .then(logData => {
+            _fourKLogIdx = logData.total || 0;
+            const st = logData.status || {};
+            if (st.status === 'running') {
+                _fourKTimer = setTimeout(poll4kGen, 2000);
+                return;
+            }
+            const runName = _fourKRun;
+            if (st.status === 'error') {
+                _reset4kBtn(runName);
+                alert('❌ 4K 生成失败: ' + (st.error || '未知错误'));
+                return;
+            }
+            _fourKBusy = false;
+            if (_fourKTimer) { clearTimeout(_fourKTimer); _fourKTimer = null; }
+            location.reload();
+        })
+        .catch(() => { _fourKTimer = setTimeout(poll4kGen, 3000); });
+}
+
+// ---------------------------------------------------------------------------
+// BGM 版权音乐混合（输出 {标题}_bgm.mp4 新文件，原片保留；参数读当前模式配置）
+// ---------------------------------------------------------------------------
+let _bgmBusy = false;
+let _bgmRun = '';
+let _bgmMode = '';
+let _bgmTarget = 'final';
+let _bgmTimer = null;
+let _bgmLogIdx = 0;
+
+function _bgmBtnId(runName) {
+    return `${_bgmTarget === '4k' ? 'bgm4k' : 'bgm'}-btn-${runName}`;
+}
+
+function generateBgm(runName, mode, target = 'final') {
+    if (_batchBusy) { alert('批量任务进行中，请等待完成'); return; }
+    if (_bgmBusy) { alert('已有 BGM 混音任务进行中，请等待完成'); return; }
+    const outSuffix = target === '4k' ? '「_4K_bgm.mp4」（对 4K 版本混音）' : '「_bgm.mp4」';
+    const slowHint = target === '4k' ? '，4K 需整片重编码、耗时较长' : '';
+    if (!confirm(`为该运行混入版权 BGM？\n按当前配置的 BGM 参数混音，输出${outSuffix}新文件（原片保留，同名版本将被覆盖）；\n本地渲染不消耗积分，耗时取决于视频时长${slowHint}。`)) return;
+    _bgmBusy = true;
+    _bgmRun = runName;
+    _bgmMode = mode || '';
+    _bgmTarget = target;
+    _bgmLogIdx = 0;
+    const btn = document.getElementById(_bgmBtnId(runName));
+    if (btn) { btn.disabled = true; btn.classList.add('opacity-50', 'cursor-not-allowed'); btn.textContent = '混音中...'; }
+    const q = mode ? `?mode=${mode}` : '';
+    const url = target === '4k' ? `/api/runs/${runName}/bgm_mix_4k${q}` : `/api/runs/${runName}/bgm_mix${q}`;
+    fetch(url, {method: 'POST'})
+        .then(r => r.json())
+        .then(data => {
+            if (!data.ok) {
+                alert('启动失败: ' + (data.error || '未知错误'));
+                _resetBgmBtn(runName);
+                return;
+            }
+            taskWidgetStart('pipeline');
+            pollBgmGen();
+        })
+        .catch(() => { _resetBgmBtn(runName); });
+}
+
+function _resetBgmBtn(runName) {
+    _bgmBusy = false;
+    if (_bgmTimer) { clearTimeout(_bgmTimer); _bgmTimer = null; }
+    const btn = document.getElementById(_bgmBtnId(runName));
+    if (btn) { btn.disabled = false; btn.classList.remove('opacity-50', 'cursor-not-allowed'); btn.textContent = _bgmTarget === '4k' ? '🎵 混BGM 4K' : '🎵 混BGM'; }
+}
+
+function pollBgmGen() {
+    fetch(`/api/run/logs/since/${_bgmLogIdx}`)
+        .then(r => r.json())
+        .then(logData => {
+            _bgmLogIdx = logData.total || 0;
+            const st = logData.status || {};
+            if (st.status === 'running') {
+                if (_bgmBusy) _bgmTimer = setTimeout(pollBgmGen, 2000);
+                return;
+            }
+            // 一次性守卫：_bgmBusy 已被复位说明完成状态已被另一条轮询链处理过，
+            // 直接退出，防止重复执行 openRunFile 弹出两个资源管理器窗口
+            if (!_bgmBusy) return;
+            const runName = _bgmRun;
+            if (st.status === 'error') {
+                _resetBgmBtn(runName);
+                alert('❌ BGM 混音失败: ' + (st.error || '未知错误'));
+                return;
+            }
+            // 完成：不刷新页面（保留日志面板），直接在资源管理器中
+            // 打开运行目录并高亮选中新产出的 _bgm 文件
+            _bgmBusy = false;
+            if (_bgmTimer) { clearTimeout(_bgmTimer); _bgmTimer = null; }
+            _resetBgmBtn(runName);
+            const fp = st.final_path || '';
+            const fn = fp ? fp.split(/[\\/]/).pop() : '';
+            if (fn && fn.endsWith('.mp4')) openRunFile(runName, _bgmMode, fn);
+        })
+        .catch(() => { if (_bgmBusy) _bgmTimer = setTimeout(pollBgmGen, 3000); });
+}
+
+// ---------------------------------------------------------------------------
+// 后台任务悬浮面板：实时显示本地渲染任务（4K/BGM/缩略图/主 pipeline）的日志与
+// 运行状态；按钮启动成功后调用 taskWidgetStart(source)，页面加载时自动探测
+// 已在运行的任务（含从控制台页启动的主 pipeline）。
+// ---------------------------------------------------------------------------
+const _taskWidget = { source: '', timer: null, idx: 0, hideTimer: null, seq: 0 };
+
+function _taskWidgetFetch(source, since) {
+    return source === 'thumb'
+        ? fetch(`/api/thumbnail_regen/status?since=${since}`).then(r => r.json())
+        : fetch(`/api/run/logs/since/${since}`).then(r => r.json());
+}
+
+function _clearWidgetTimers() {
+    if (_taskWidget.timer) { clearTimeout(_taskWidget.timer); _taskWidget.timer = null; }
+    if (_taskWidget.hideTimer) { clearTimeout(_taskWidget.hideTimer); _taskWidget.hideTimer = null; }
+}
+
+function taskWidgetStart(source) {
+    _taskWidget.seq++;  // 作废 in-flight 旧轮询响应，防止重复轮询链
+    _clearWidgetTimers();
+    _taskWidget.source = source;
+    _taskWidget.idx = 0;
+    document.getElementById('task-widget-log').textContent = '';
+    const dot = document.getElementById('task-widget-dot');
+    dot.className = 'w-2 h-2 rounded-full bg-indigo-400 animate-pulse shrink-0';
+    document.getElementById('task-widget-elapsed').textContent = '';
+    document.getElementById('task-widget-title').textContent = '后台任务';
+    document.getElementById('task-widget').classList.remove('hidden');
+    pollTaskWidget();
+}
+
+function taskWidgetHide() {
+    _taskWidget.seq++;
+    _clearWidgetTimers();
+    _taskWidget.source = '';
+    document.getElementById('task-widget').classList.add('hidden');
+}
+
+function pollTaskWidget() {
+    const src = _taskWidget.source;
+    const seq = _taskWidget.seq;
+    if (!src) return;
+    _taskWidgetFetch(src, _taskWidget.idx)
+        .then(data => {
+            if (_taskWidget.source !== src || _taskWidget.seq !== seq) return;  // 源已被切换/关闭/重启
+            const st = data.status || {};
+            if (data.logs && data.logs.length) {
+                const logEl = document.getElementById('task-widget-log');
+                logEl.textContent += data.logs.join('\n') + '\n';
+                logEl.scrollTop = logEl.scrollHeight;
+            }
+            _taskWidget.idx = data.total || 0;
+            const dot = document.getElementById('task-widget-dot');
+            const titleEl = document.getElementById('task-widget-title');
+            const elapsedEl = document.getElementById('task-widget-elapsed');
+            if (st.status === 'running') {
+                if (_taskWidget.hideTimer) { clearTimeout(_taskWidget.hideTimer); _taskWidget.hideTimer = null; }  // 取消挂起的自动收起（stale done 修正）
+                dot.className = 'w-2 h-2 rounded-full bg-indigo-400 animate-pulse shrink-0';
+                titleEl.textContent = st.current_step_label
+                    || (st.out_name ? '缩略图生成: ' + st.out_name : '后台任务');
+                elapsedEl.textContent = (typeof st.elapsed === 'number') ? st.elapsed + 's' : '';
+                _taskWidget.timer = setTimeout(pollTaskWidget, 2000);
+                return;
+            }
+            if (st.status === 'error') {
+                dot.className = 'w-2 h-2 rounded-full bg-red-500 shrink-0';
+                titleEl.textContent = '任务失败: ' + (st.error || '未知错误');
+                elapsedEl.textContent = '';
+            } else if (st.status === 'done') {
+                dot.className = 'w-2 h-2 rounded-full bg-emerald-400 shrink-0';
+                titleEl.textContent = (src === 'thumb' ? '缩略图已生成' : '任务完成');
+                elapsedEl.textContent = '';
+            } else {
+                // idle：任务记录不存在（服务重启等），静默收起
+                taskWidgetHide();
+                return;
+            }
+            if (!_taskWidget.hideTimer) _taskWidget.hideTimer = setTimeout(taskWidgetHide, 6000);
+            _taskWidget.timer = setTimeout(pollTaskWidget, 2000);  // 继续轮询：stale done 下一拍可见 running 并取消收起
+        })
+        .catch(() => { if (_taskWidget.source === src && _taskWidget.seq === seq) _taskWidget.timer = setTimeout(pollTaskWidget, 3000); });
+}
+
+// 页面加载探测：已有任务在跑则自动展开面板
+(function () {
+    fetch('/api/local_batch/status').then(r => r.json()).then(d => {
+        if (d.running) _startBatchWatch(d);  // 恢复进行中的后端批量（刷新/重开页面继续显示进度）
+    }).catch(() => {});
+    fetch('/api/run/logs/since/0').then(r => r.json()).then(d => {
+        if ((d.status || {}).status === 'running') taskWidgetStart('pipeline');
+    }).catch(() => {});
+    fetch('/api/thumbnail_regen/status?since=0').then(r => r.json()).then(d => {
+        if ((d.status || {}).status === 'running' && _taskWidget.source !== 'pipeline') taskWidgetStart('thumb');
+    }).catch(() => {});
+})();
+
+// 初始渲染筛选状态（先恢复上次使用的筛选条件）
+_loadSavedFilters();
+paintUploadChips();
+paintModeChips();
+refreshChipCounts();
+applyFilters();
+</script>
+{% endblock %}

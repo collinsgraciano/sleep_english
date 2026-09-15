@@ -1,0 +1,1545 @@
+"""Shared media utilities — FFmpeg helpers, font constants, and common
+video composition building blocks used by all structure variants.
+
+Consolidates previously duplicated code from:
+  - pipeline._get_audio_duration
+  - video_compose._get_duration / _probe_resolution / _has_audio
+  - tts_engine.TTSEngine.get_duration
+  - video_compose + quest: concat, subtitle burn, loudnorm
+  - pipeline._safe_dirname + video_compose inline _re.sub
+"""
+import os
+import re
+import sys
+import subprocess
+import shutil
+from pathlib import Path
+
+if sys.platform == "win32":
+    try:
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace", line_buffering=True)
+    except Exception:
+        pass  # stdout may be redirected/captured (web/pytest) — reconfigure unavailable
+
+# ---------------------------------------------------------------------------
+# Font paths (auto-detect Windows vs Linux/Colab)
+# ---------------------------------------------------------------------------
+import platform
+
+_IS_WINDOWS = platform.system() == "Windows"
+
+if _IS_WINDOWS:
+    FONT_EN = r"C:\Windows\Fonts\msyhbd.ttc"
+    FONT_ZH = r"C:\Windows\Fonts\msyh.ttc"
+    FONT_PH = r"C:\Windows\Fonts\cambria.ttc"
+else:
+    FONT_EN = "/usr/share/fonts/truetype/noto/NotoSansCJK-Bold.ttc"
+    FONT_ZH = "/usr/share/fonts/truetype/noto/NotoSansCJK-Regular.ttc"
+    # DejaVu has complete IPA glyph coverage — Noto CJK renders many IPA
+    # characters (ɪ ə ʃ ʒ ɡ...) as tofu boxes
+    FONT_PH = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
+    if not os.path.exists(FONT_EN):
+        FONT_EN = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
+    if not os.path.exists(FONT_ZH):
+        FONT_ZH = "/usr/share/fonts/truetype/noto/NotoSansCJK-Regular.ttc"
+    if not os.path.exists(FONT_PH):
+        FONT_PH = FONT_EN
+
+# ---------------------------------------------------------------------------
+# 字幕样式字体注册表（字幕样式设计器可选字体；渲染时缺失自动回退）
+# key: (显示名, 字体文件路径)。仅英文字体只建议用于 EN 行（ZH 行仍用中文字体）。
+# ---------------------------------------------------------------------------
+SUBTITLE_FONT_CHOICES: dict[str, tuple[str, str]] = {
+    "msyhbd": ("微软雅黑 Bold", r"C:\Windows\Fonts\msyhbd.ttc"),
+    "msyh": ("微软雅黑", r"C:\Windows\Fonts\msyh.ttc"),
+    "msyhl": ("微软雅黑 Light", r"C:\Windows\Fonts\msyhl.ttc"),
+    "simhei": ("黑体", r"C:\Windows\Fonts\simhei.ttf"),
+    "dengb": ("等线 Bold", r"C:\Windows\Fonts\dengb.ttf"),
+    "deng": ("等线", r"C:\Windows\Fonts\deng.ttf"),
+    "simkai": ("楷体", r"C:\Windows\Fonts\simkai.ttf"),
+    "simsun": ("宋体", r"C:\Windows\Fonts\simsun.ttc"),
+    "ariblk": ("Arial Black（仅英文）", r"C:\Windows\Fonts\ariblk.ttf"),
+    "segoeuib": ("Segoe UI Bold（仅英文）", r"C:\Windows\Fonts\segoeuib.ttf"),
+    "impact": ("Impact（仅英文）", r"C:\Windows\Fonts\impact.ttf"),
+    "nunito": ("Nunito Bold（圆润卡通·仅英文）", str(
+        Path(__file__).resolve().parent / "fonts" / "Nunito-Bold.ttf")),
+}
+
+
+def _resolve_subtitle_font(key: str, fallback: str) -> str:
+    """样式字体 key → 字体文件路径；key 未知或文件不存在时回退 fallback。"""
+    entry = SUBTITLE_FONT_CHOICES.get(key)
+    if entry and os.path.exists(entry[1]):
+        return entry[1]
+    return fallback
+
+
+# 字幕样式 legacy 默认值（= burn_subtitles 历史硬编码行为，样式缺 key 时兜底）
+SUBTITLE_STYLE_LEGACY_DEFAULTS: dict = {
+    "en_size": 60,
+    "zh_size": 50,
+    "en_color": "#FFFFFF",
+    "zh_color": "#FFD700",
+    "stroke_color": "#000000",
+    "en_stroke": 5,
+    "zh_stroke": 4,
+    "bottom_margin": 36,
+    "line_gap": 6,
+    "en_zh_gap": 15,
+    "font_en": "msyhbd",
+    "font_zh": "msyh",
+    "box": False,
+    "box_color": "#000000",
+    "box_opacity": 55,
+    "show_zh": True,
+}
+
+
+def render_subtitle_text_overlay(en_text: str, zh_text: str, w: int, h: int,
+                                 style: dict | None = None) -> "Image.Image":
+    """渲染单条双语字幕（EN 白字在上 + ZH 金字在下）到透明 RGBA overlay。
+
+    burn_subtitles（成片烧录）与字幕样式设计器的实时预览共用本函数，
+    保证所见即所得。style 缺失的 key 用 SUBTITLE_STYLE_LEGACY_DEFAULTS 兜底，
+    style=None 时与历史渲染行为逐像素一致（默认字号 60/50）。
+
+    style 可用 key: en_size/zh_size/en_color/zh_color/stroke_color/
+    en_stroke/zh_stroke/bottom_margin/line_gap/en_zh_gap/font_en/font_zh/
+    box/box_color/box_opacity（box=True 时在文字块后画圆角背景条，
+    默认黑色 #000000；box_opacity=100 为实心）/show_zh（False 时隐藏
+    中文行 → 纯英文字幕）。
+    """
+    from PIL import Image, ImageDraw, ImageFont
+
+    st = dict(SUBTITLE_STYLE_LEGACY_DEFAULTS)
+    if style:
+        for k in st:
+            if k in style and style[k] is not None:
+                st[k] = style[k]
+    if not st.get("show_zh", True):
+        zh_text = ""
+
+    def _hex_rgb(value, default):
+        try:
+            v = str(value).lstrip("#")
+            if len(v) == 6:
+                return tuple(int(v[i:i + 2], 16) for i in (0, 2, 4))
+        except (ValueError, TypeError):
+            pass
+        return default
+
+    en_rgb = _hex_rgb(st["en_color"], (255, 255, 255))
+    zh_rgb = _hex_rgb(st["zh_color"], (255, 215, 0))
+    stroke_rgb = _hex_rgb(st["stroke_color"], (0, 0, 0))
+
+    overlay = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(overlay)
+
+    BOTTOM_MARGIN = int(st["bottom_margin"])
+    EN_SIZE = int(st["en_size"])
+    ZH_SIZE = int(st["zh_size"])
+    MAX_SUB_W = w - 80
+    LINE_GAP = int(st["line_gap"])
+    EN_ZH_GAP = int(st["en_zh_gap"])
+
+    def _wrap_fixed(text, font, max_w, is_cjk=False):
+        """按固定字号换行：中文逐字、英文逐词。返回 [(行文本, 行宽, 行高)]。"""
+        lines = []
+        if is_cjk:
+            cur = ""
+            for ch in text:
+                test = cur + ch
+                bbox = draw.textbbox((0, 0), test, font=font)
+                if bbox[2] - bbox[0] <= max_w or not cur:
+                    cur = test
+                else:
+                    lines.append(cur)
+                    cur = ch
+            if cur:
+                lines.append(cur)
+        else:
+            words = text.split()
+            cur = ""
+            for word in words:
+                test = (cur + " " + word).strip()
+                bbox = draw.textbbox((0, 0), test, font=font)
+                if bbox[2] - bbox[0] <= max_w or not cur:
+                    cur = test
+                else:
+                    lines.append(cur)
+                    cur = word
+            if cur:
+                lines.append(cur)
+        result = []
+        for ln in lines:
+            bbox = draw.textbbox((0, 0), ln, font=font)
+            result.append((ln, bbox[2] - bbox[0], bbox[3] - bbox[1]))
+        return result
+
+    en_font = zh_font = None
+    en_lines = []
+    if en_text:
+        en_font = ImageFont.truetype(
+            _resolve_subtitle_font(st["font_en"], FONT_EN), EN_SIZE)
+        en_lines = _wrap_fixed(en_text, en_font, MAX_SUB_W, is_cjk=False)
+
+    zh_lines = []
+    if zh_text:
+        zh_font = ImageFont.truetype(
+            _resolve_subtitle_font(st["font_zh"], FONT_ZH), ZH_SIZE)
+        zh_lines = _wrap_fixed(zh_text, zh_font, MAX_SUB_W, is_cjk=True)
+
+    en_total_h = (sum(lh for _, _, lh in en_lines)
+                  + LINE_GAP * max(0, len(en_lines) - 1)) if en_lines else 0
+    zh_total_h = (sum(lh for _, _, lh in zh_lines)
+                  + LINE_GAP * max(0, len(zh_lines) - 1)) if zh_lines else 0
+
+    # Stack bottom-up: ZH lowest, EN above it
+    if en_lines and zh_lines:
+        zh_block_y = h - BOTTOM_MARGIN - zh_total_h
+        en_block_y = zh_block_y - EN_ZH_GAP - en_total_h
+    elif en_lines:
+        en_block_y = h - BOTTOM_MARGIN - en_total_h
+        zh_block_y = 0
+    else:
+        en_block_y = 0
+        zh_block_y = h - BOTTOM_MARGIN - zh_total_h
+
+    # 背景条（可选）：包住整个字幕文字块（颜色/透明度可配，默认黑色半透明=历史行为）
+    if st.get("box") and (en_lines or zh_lines):
+        box_opacity = max(0, min(100, int(st.get("box_opacity", 55))))
+        if box_opacity > 0:
+            box_rgb = _hex_rgb(st.get("box_color", "#000000"), (0, 0, 0))
+            pad_h, pad_v = 28, 14
+            text_w = max(
+                [lw for _, lw, _ in en_lines] + [lw for _, lw, _ in zh_lines])
+            x0 = max(0, (w - text_w) // 2 - pad_h)
+            x1 = min(w, (w + text_w) // 2 + pad_h)
+            # 只按实际有文字的块取上缘（单侧缺失时另一侧 block_y 是 0 占位，
+            # 误取会把条从画布顶画到底——纯英文/纯中文 + 背景条必现）
+            block_ys = [y for y, lines in ((en_block_y, en_lines),
+                                           (zh_block_y, zh_lines)) if lines]
+            y0 = max(0, min(block_ys) - pad_v)
+            y1 = min(h, h - BOTTOM_MARGIN + pad_v)
+            draw.rounded_rectangle(
+                [x0, y0, x1, y1], radius=12,
+                fill=(*box_rgb, int(255 * box_opacity / 100)))
+
+    # Render EN lines
+    cur_y = en_block_y
+    for ln_text, ln_w, ln_h in en_lines:
+        draw.text(((w - ln_w) // 2, cur_y), ln_text, font=en_font,
+                  fill=(*en_rgb, 255), stroke_width=int(st["en_stroke"]),
+                  stroke_fill=(*stroke_rgb, 255))
+        cur_y += ln_h + LINE_GAP
+
+    # Render ZH lines
+    cur_y = zh_block_y
+    for ln_text, ln_w, ln_h in zh_lines:
+        draw.text(((w - ln_w) // 2, cur_y), ln_text, font=zh_font,
+                  fill=(*zh_rgb, 255), stroke_width=int(st["zh_stroke"]),
+                  stroke_fill=(*stroke_rgb, 255))
+        cur_y += ln_h + LINE_GAP
+
+    return overlay
+
+
+# ---------------------------------------------------------------------------
+# Target canvas — every segment is normalized to this size for concat safety
+# ---------------------------------------------------------------------------
+TARGET_W, TARGET_H = 1280, 720
+VF_NORM = (
+    f"scale={TARGET_W}:{TARGET_H}:force_original_aspect_ratio=decrease,"
+    f"pad={TARGET_W}:{TARGET_H}:(ow-iw)/2:(oh-ih)/2"
+)
+
+
+def _split_overlong_entries(entries: list[dict], en_font, max_w: int,
+                            max_lines: int = 2) -> list[dict]:
+    """渲染端兜底：把 EN 超过 max_lines 行的字幕条按词边界拆成多条。
+
+    与 render_subtitle_text_overlay._wrap_fixed 的英文贪心包裹算法完全一致
+    （getlength 测宽、cur+" "+word 累积），保证"数出来几行"与"渲染几行"一致。
+    - EN ≤ max_lines 行：原样保留
+    - EN 超行：切成 N 个 chunk（每个 ≤max_lines 行，前后均衡），ZH 按字符数
+      比例切成同数量份，时长按 chunk 字符占比分配（最后一份吃余数）。
+    覆盖对话与旁白（脚本库旧脚本/QA 未修净残留），成片字幕一律 ≤2 行。
+    """
+    def _wrap_count(text: str) -> int:
+        words = text.split()
+        lines, cur = 0, ""
+        for word in words:
+            test = (cur + " " + word).strip()
+            if en_font.getlength(test) <= max_w or not cur:
+                cur = test
+            else:
+                lines += 1
+                cur = word
+        if cur:
+            lines += 1
+        return lines
+
+    def _word_chunks(text: str, n: int) -> list[str]:
+        """把 text 的词均衡分成 n 组（非空，尽量前后均衡）。"""
+        words = text.split()
+        if n <= 1 or not words:
+            return [text.strip()]
+        base, extra = divmod(len(words), n)
+        chunks, idx = [], 0
+        for i in range(n):
+            take = base + (1 if i < extra else 0)
+            chunks.append(" ".join(words[idx:idx + take]).strip())
+            idx += take
+        return [c for c in chunks if c] or [text.strip()]
+
+    out: list[dict] = []
+    for e in entries:
+        en = str(e.get("en", "") or "")
+        zh = str(e.get("zh", "") or "")
+        if not en or _wrap_count(en) <= max_lines:
+            out.append(e)
+            continue
+        # 目标 chunk 数 = ceil(行数/每 chunk 上限)，至少 2 份，上限 6 防御
+        n = min(6, max(2, -(-_wrap_count(en) // max_lines)))
+        chunks = _word_chunks(en, n)
+        # 兜底校验：逐 chunk 仍超行则继续加份，直到满足或达到上限
+        for _ in range(3):
+            if all(_wrap_count(c) <= max_lines for c in chunks) or n >= 6:
+                break
+            n += 1
+            chunks = _word_chunks(en, n)
+        # ZH 按字符比例切分（中文无词边界）：均衡分配字符数
+        if zh:
+            zh_chunks = []
+            base_z, extra_z = divmod(len(zh), len(chunks))
+            zi = 0
+            for i in range(len(chunks)):
+                take = base_z + (1 if i < extra_z else 0)
+                zh_chunks.append(zh[zi:zi + take])
+                zi += take
+        else:
+            zh_chunks = [""] * len(chunks)
+        total = sum(len(c) for c in chunks) or 1
+        dur = e["end"] - e["start"]
+        cur = e["start"]
+        for i, c in enumerate(chunks):
+            if i < len(chunks) - 1:
+                d = dur * len(c) / total
+            else:
+                d = e["end"] - cur
+            out.append({"start": cur, "end": cur + d, "en": c,
+                        "zh": zh_chunks[i] if i < len(zh_chunks) else ""})
+            cur += d
+    return out
+
+
+# ---------------------------------------------------------------------------
+# ffprobe helpers
+# ---------------------------------------------------------------------------
+
+def get_duration(path: str) -> float:
+    """Get media duration in seconds via ffprobe.
+
+    Consolidates pipeline._get_audio_duration, video_compose._get_duration,
+    and tts_engine.TTSEngine.get_duration.
+    """
+    if not path or not os.path.exists(path):
+        return 0.0
+    try:
+        return float(subprocess.check_output(
+            ["ffprobe", "-v", "quiet", "-show_entries", "format=duration",
+             "-of", "csv=p=0", str(path)],
+            text=True, encoding="utf-8", errors="replace",
+        ).strip())
+    except Exception:
+        return 0.0
+
+
+def probe_resolution(video_path: str) -> tuple[int, int]:
+    """Get video stream resolution via ffprobe (fallback TARGET_W x TARGET_H).
+
+    Overlays are rendered at this size so they match the video canvas exactly.
+    """
+    try:
+        out = subprocess.check_output(
+            ["ffprobe", "-v", "quiet", "-select_streams", "v:0",
+             "-show_entries", "stream=width,height", "-of", "csv=p=0",
+             str(video_path)], text=True, encoding="utf-8", errors="replace").strip()
+        # csv writer prints "width,height" (comma-separated)
+        parts = out.replace("x", ",").split(",")
+        w, h = int(parts[0]), int(parts[1])
+        if w > 0 and h > 0:
+            return w, h
+    except Exception:
+        pass
+    return TARGET_W, TARGET_H
+
+
+def has_audio(video_path: str) -> bool:
+    """Check if a video file has an audio stream."""
+    try:
+        r = subprocess.run(
+            ["ffprobe", "-v", "quiet", "-select_streams", "a",
+             "-show_entries", "stream=codec_type", "-of", "csv=p=0",
+             str(video_path)],
+            capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=10,
+        )
+        return "audio" in r.stdout.strip()
+    except Exception:
+        return False
+
+
+def detect_speech_pauses(media_path: str, noise_db: float = -40,
+                         min_d: float = 0.20,
+                         timeout: int = 600) -> list[tuple[float, float]]:
+    """Detect silence intervals via ffmpeg silencedetect.
+
+    Returns a list of (silence_start, silence_end) tuples in seconds.
+    Trailing silence without an end point (runs to EOF) is dropped.
+    Used to align per-sentence subtitle timing with actual TTS pauses.
+    Returns [] on any failure (caller falls back to proportional timing).
+    """
+    try:
+        r = subprocess.run(
+            ["ffmpeg", "-i", str(media_path), "-map", "0:a:0",
+             "-af", f"silencedetect=noise={noise_db}dB:d={min_d}",
+             "-f", "null", "-"],
+            capture_output=True, text=True, encoding="utf-8", errors="replace",
+            timeout=timeout)
+    except Exception:
+        return []
+    pauses: list[tuple[float, float]] = []
+    open_start: float | None = None
+    for line in r.stderr.splitlines():
+        m = re.search(r"silence_start: ([\d.]+)", line)
+        if m:
+            open_start = float(m.group(1))
+            continue
+        m = re.search(r"silence_end: ([\d.]+)", line)
+        if m and open_start is not None:
+            pauses.append((open_start, float(m.group(1))))
+            open_start = None
+    return pauses
+
+
+def _align_entries_to_pauses(entries: list[dict], pauses: list[float],
+                             tolerance: float = 1.5) -> None:
+    """Snap interior subtitle boundaries to measured speech-pause onsets.
+
+    Boundaries are entries[i].end == entries[i+1].start. pauses must be a
+    monotonically increasing list of candidate onsets (silence_end values).
+    DP picks a strictly increasing onset subset closest to the proportional
+    estimates; an onset beyond `tolerance` is forbidden, and boundaries with
+    no usable onset keep their proportional estimate.
+    """
+    n = len(entries)
+    if n < 2 or not pauses:
+        return
+    bounds = [entries[i]["end"] for i in range(n - 1)]
+    m = len(pauses)
+    # 未分配边界的中等奖惩：保证容差内的对齐优于不分配
+    unassigned_cost = tolerance * 0.75
+    NEG = -1
+
+    # dp[i][j] = (cost, prev_j)：前 i+1 个边界处理完、第 i 个边界用 onset j
+    # （j == NEG 表示该边界保持比例估计）
+    dp: list[dict[int, tuple[float, int | None]]] = [dict() for _ in range(n - 1)]
+    for i in range(n - 1):
+        for j in range(NEG, m):
+            if j == NEG:
+                cost_here = unassigned_cost
+            else:
+                cost_here = abs(bounds[i] - pauses[j])
+                if cost_here > tolerance:
+                    continue
+            if i == 0:
+                dp[i][j] = (cost_here, None)
+            else:
+                best: tuple[float, int | None] | None = None
+                for pj, (pcost, _) in dp[i - 1].items():
+                    if pj >= j:
+                        continue  # onset 序必须严格递增
+                    total = pcost + cost_here
+                    if best is None or total < best[0]:
+                        best = (total, pj)
+                if best is not None:
+                    dp[i][j] = best
+    if not dp[n - 2]:
+        return
+
+    # 回溯得到每个边界的 onset 选择
+    final_j = min(dp[n - 2], key=lambda j: dp[n - 2][j][0])
+    chosen: list[int] = [final_j]
+    for i in range(n - 2, 0, -1):
+        prev = dp[i][chosen[0]][1]
+        if prev is None:
+            break  # i == 0 到顶了
+        chosen.insert(0, prev)
+
+    for i, j in enumerate(chosen):
+        if j == NEG:
+            continue
+        onset = pauses[j]
+        # 安全夹紧：不越过相邻条目的首尾
+        onset = max(onset, entries[i]["start"] + 0.05)
+        onset = min(onset, entries[i + 1]["end"] - 0.05)
+        if entries[i]["start"] < onset < entries[i + 1]["end"]:
+            entries[i]["end"] = onset
+            entries[i + 1]["start"] = onset
+
+
+# ---------------------------------------------------------------------------
+# Filename helpers
+# ---------------------------------------------------------------------------
+
+def safe_filename(yt_title: str, fallback: str = "final_video") -> str:
+    """Sanitize a YouTube title into a filesystem-safe name.
+
+    Consolidates pipeline._safe_dirname and video_compose inline _re.sub.
+    """
+    name = re.sub(r'[\U0001F000-\U0001FFFF]', '', yt_title)  # remove emoji
+    name = re.sub(r"[\\/:*?\"'<>|]", '', name).strip()  # ' breaks FFmpeg concat demuxer
+    name = re.sub(r'\s+', '_', name)[:80]
+    if not name:
+        name = re.sub(r'[^\w\s-]', '', fallback).strip().replace(' ', '_')
+    return name or "final_video"
+
+
+# ---------------------------------------------------------------------------
+# FFmpeg command runners
+# ---------------------------------------------------------------------------
+
+def run_ffmpeg_with_fallback(cmd: list[str], fallback_cmd: list[str],
+                             out_path: str, label: str = "segment",
+                             timeout: int = 300) -> bool:
+    """Run an FFmpeg command; on failure, try fallback_cmd.
+
+    Returns True if out_path was produced (> 1KB), False otherwise.
+    Both commands must produce the same out_path.
+    """
+    try:
+        r = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=timeout)
+    except subprocess.TimeoutExpired:
+        print(f"  FFmpeg TIMEOUT ({timeout}s) on {label}, trying fallback...")
+        r = None
+
+    if r is not None and r.returncode == 0 and os.path.exists(out_path) and os.path.getsize(out_path) > 1000:
+        return True
+
+    if r is not None:
+        stderr_tail = r.stderr[-300:] if r.stderr else ""
+        print(f"  FFmpeg error {label}: {stderr_tail}")
+
+    # Try fallback
+    try:
+        r2 = subprocess.run(fallback_cmd, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=timeout)
+    except subprocess.TimeoutExpired:
+        print(f"  Fallback also timed out for {label}")
+        return False
+
+    if r2.returncode == 0 and os.path.exists(out_path) and os.path.getsize(out_path) > 1000:
+        return True
+
+    stderr_tail = r2.stderr[-300:] if r2.stderr else ""
+    print(f"  Fallback also failed for {label}: {stderr_tail}")
+    return False
+
+
+def make_silent_fallback_cmd(scene_img: str, duration: float,
+                             out_path: str) -> list[str]:
+    """Build a fallback FFmpeg command: silent static-image segment.
+
+    Used by run_ffmpeg_with_fallback when the primary command fails.
+    Produces a segment matching the standard format (libx264/yuv420p/24fps/
+    aac/44100Hz/stereo) so it can be concat-demuxed.
+    """
+    return [
+        "ffmpeg", "-y", "-loop", "1", "-i", scene_img,
+        "-f", "lavfi", "-i", "anullsrc=stereo:44100",
+        "-t", f"{duration:.3f}", "-vf", f"{VF_NORM},fps=24",
+        "-map", "0:v:0", "-map", "1:a:0",
+        "-c:v", "libx264", "-pix_fmt", "yuv420p",
+        "-c:a", "aac", "-b:a", "128k", "-ar", "44100", "-ac", "2",
+        out_path,
+    ]
+
+
+# ---------------------------------------------------------------------------
+# Segment concat
+# ---------------------------------------------------------------------------
+
+def _probe_audio_duration(path: str) -> float | None:
+    """探测音频流容器时长（秒）。容器时长含 edit list 裁剪，代表真实内容时长。"""
+    r = subprocess.run(
+        ["ffprobe", "-v", "error", "-select_streams", "a:0",
+         "-show_entries", "stream=duration", "-of", "csv=p=0", str(path)],
+        capture_output=True, text=True)
+    try:
+        return float(r.stdout.strip().splitlines()[0])
+    except (ValueError, IndexError):
+        return None
+
+
+def _probe_video_duration(path: str) -> float | None:
+    """探测视频流容器时长（秒），供 xfade 偏移计算。失败返回 None。"""
+    r = subprocess.run(
+        ["ffprobe", "-v", "error", "-select_streams", "v:0",
+         "-show_entries", "stream=duration", "-of", "csv=p=0", str(path)],
+        capture_output=True, text=True)
+    try:
+        return float(r.stdout.strip().splitlines()[0])
+    except (ValueError, IndexError):
+        return None
+
+
+def _segment_grid_duration(path: str) -> float | None:
+    """段网格时长 = max(视频流时长, 音频流时长)——concat demuxer 的推进依据。
+
+    demuxer 按每文件各流时长的最大值推进下一段起点（实测视频流帧量化向上
+    时切点=max 流时长）。音频 PCM 必须按同一网格裁尾/补齐，否则：视频流
+    （ceil 到帧边界）> 音频流（mp3 解码短于容器时长 − AAC priming），每段
+    音频网格比视频网格短数十 ms，数百段累积秒级（sleep 静态卡片块 1000 块
+    实测音频比视频短 55s，语音大幅先于卡片出现）。
+    """
+    durs = [d for d in (_probe_video_duration(path), _probe_audio_duration(path))
+            if d is not None and d > 0]
+    if durs:
+        return max(durs)
+    return get_duration(path)
+
+
+# 对话段交叉溶解时长（8 帧 @25fps）。original_sprite 恒开；其余模式经
+# dialogue_xfade 配置开启（PARAM_SPEC video 组）。
+DIALOGUE_XFADE_SEC = 0.32
+
+
+def _xfade_graph(n: int, durations: list[float], xfade: float) -> tuple[str, str]:
+    """构建 xfade 链的 filter_complex 图。返回 (图文本, 末段视频流标签)。"""
+    parts = []
+    for k in range(n - 1):
+        parts.append(
+            f"[{k}:v]tpad=stop_mode=clone:stop_duration={xfade:.3f}[v{k}]")
+    prev = "v0"
+    offset = 0.0
+    for k in range(1, n):
+        offset += durations[k - 1]
+        in_b = f"v{k}" if k < n - 1 else f"{k}:v"  # 最后一段无 tpad
+        label = f"x{k}"
+        parts.append(
+            f"[{prev}][{in_b}]xfade=transition=fade:duration={xfade:.3f}:"
+            f"offset={offset:.3f}[{label}]")
+        prev = label
+    parts.append("".join(f"[{k}:a]" for k in range(n))
+                 + f"concat=n={n}:v=0:a=1[ba]")
+    return ";".join(parts), prev
+
+
+# Windows CreateProcess 命令行上限 32767 字符，超限报 WinError 206（文件名或
+# 扩展名太长）。长对话 run（百行级脚本）的 N 个 -i 路径 + 内联 filter 图很
+# 容易超限，filter 图改走脚本文件后仅剩输入路径，仍留足余量。
+_XFADE_CMD_BUDGET = 24000
+
+
+def _run_xfade_merge(seg_paths: list[str], out_path: str,
+                     xfade: float, fps: int) -> bool:
+    """单次 ffmpeg 调用完成 xfade 合并，成功返回 True。
+
+    filter 图写入脚本文件经 -filter_complex_script 传入（不占命令行）。
+    """
+    n = len(seg_paths)
+    durations = []
+    for p in seg_paths:
+        d = _probe_video_duration(p)
+        if not d or d <= 0:
+            return False
+        durations.append(d)
+    graph, vlabel = _xfade_graph(n, durations, xfade)
+    script_path = out_path + ".filter.txt"
+    cmd = ["ffmpeg", "-y"]
+    for p in seg_paths:
+        cmd += ["-i", p]
+    cmd += [
+        "-filter_complex_script", script_path,
+        "-map", f"[{vlabel}]", "-map", "[ba]",
+        "-c:v", "libx264", "-crf", "18", "-pix_fmt", "yuv420p", "-r", str(fps),
+        "-c:a", "aac", "-b:a", "192k", "-ar", "44100", "-ac", "2",
+        "-t", f"{sum(durations):.3f}",
+        out_path,
+    ]
+    ok = False
+    try:
+        with open(script_path, "w", encoding="utf-8", newline="\n") as f:
+            f.write(graph)
+        try:
+            r = subprocess.run(cmd, capture_output=True, timeout=1800)
+        except subprocess.TimeoutExpired:
+            print("  [Xfade] dialogue merge timed out — keeping hard cuts")
+            return False
+        if r.returncode == 0 and os.path.exists(out_path) \
+                and os.path.getsize(out_path) > 1000:
+            ok = True
+        else:
+            print(f"  [Xfade] dialogue merge failed — keeping hard cuts "
+                  f"({r.stderr.decode(errors='replace')[-300:] if r.stderr else ''})")
+            try:
+                os.remove(out_path)
+            except OSError:
+                pass
+    finally:
+        try:
+            os.remove(script_path)
+        except OSError:
+            pass
+    return ok
+
+
+def _merge_dialogue_xfade(seg_paths: list[str], out_path: str,
+                          xfade: float = DIALOGUE_XFADE_SEC,
+                          fps: int = 25) -> str | None:
+    """把连续对话段合并为带交叉溶解（crossfade）的单块视频。
+
+    相邻对话段（定格动画/静态帧/AI 片段）硬切边界观感生硬，处理方式：
+    - 除最后一段外，每段视频尾帧 tpad=stop_mode=clone 冻结延展 xfade 秒；
+    - xfade 链 offset_k = 前面各段实测视频流时长之和 → 块总长 = Σ段时长，
+      段 k 的画面内容与音轨都从同一时刻开始（只是开头 xfade 秒与上一段
+      尾帧叠化），时间轴/字幕同步零影响；
+    - 音频用 concat 滤镜拼接各段音轨，一次编码（fps 与输入段一致）。
+
+    命令行长度超预算（长对话 run，Windows 上限 32767 报 WinError 206）时
+    二分递归：先各合并半段为中间块再合并两块——块内/块间相邻对与单链完全
+    相同，块时长 = Σ成员段时长，产物与单链等价（中间段仅多一次 crf18 重编码）。
+
+    任一探测/执行失败返回 None（fail-open，调用方回退原硬切行为）。
+    """
+
+    def _group(paths: list[str], dst: str) -> str | None:
+        m = len(paths)
+        if m < 2:
+            return paths[0]
+        est = sum(len(p) + 20 for p in paths) + 500
+        # 段数太少时不再二分（递归归底，超预算极端场景交给 fail-open）
+        if m < 4 or est <= _XFADE_CMD_BUDGET:
+            return dst if _run_xfade_merge(paths, dst, xfade=xfade, fps=fps) \
+                else None
+        parent = Path(dst).parent
+        stem = Path(dst).stem
+        half_a = _group(paths[:m // 2], str(parent / f"{stem}_a.mp4"))
+        if not half_a:
+            return None
+        half_b = _group(paths[m // 2:], str(parent / f"{stem}_b.mp4"))
+        if not half_b:
+            return None
+        return _group([half_a, half_b], dst)
+
+    n = len(seg_paths)
+    if n < 2:
+        return None
+    durations = []
+    for p in seg_paths:
+        d = _probe_video_duration(p)
+        if not d or d <= 0:
+            return None
+        durations.append(d)
+    # 段太短叠化没意义且 xfade 边界条件不稳，整体回退硬切
+    if min(durations) < xfade * 2:
+        return None
+
+    try:
+        return _group(list(seg_paths), out_path)
+    finally:
+        # 清理递归产生的中间块（out_path 本身不带 "_" 不会误删）
+        stem = Path(out_path).stem
+        for f in Path(out_path).parent.glob(f"{stem}_*.mp4"):
+            try:
+                f.unlink()
+            except OSError:
+                pass
+
+
+def merge_dialogue_runs_xfade(segments: list[str | None],
+                              seg_tidx: list[int], timeline: list[dict],
+                              tmp_dir: str | Path,
+                              xfade: float = DIALOGUE_XFADE_SEC,
+                              fps: int = 25) -> int:
+    """扫描对话段 run 并就地把相邻段合并为交叉溶解块。返回合并的 run 数。
+
+    两种 segments 布局通用：
+    - 下标对齐（cutout/quest）：segments[i] 对应 timeline[i]（含 None 占位），
+      seg_tidx = list(range(len(timeline)))；
+    - 线性（listening/image）：失败段被跳过不进列表，seg_tidx[pos] 记录该段
+      的 timeline 下标。
+
+    run 判定：相邻两段 timeline 下标之间的条目全部是 dialogue（兼容 original
+    模式分组跳行——被组吞掉的行是 dialogue 但不进 segments）。run 内任一段
+    缺失/文件无效则整个 run 跳过（fail-open）。合并后块替换 run 首位置，
+    其余位置弹出。
+    """
+    runs: list[list[int]] = []
+    cur: list[int] = []
+    prev_tidx: int | None = None
+    for pos, tidx in enumerate(seg_tidx):
+        # None 段（下标对齐布局的失败占位）断开 run：避免单个失败段
+        # 让整条对话 run 弃并（其余分段仍可各自叠化）
+        is_dial = (pos < len(segments) and segments[pos] is not None
+                   and timeline[tidx].get("type") == "dialogue")
+        if is_dial and cur and prev_tidx is not None and tidx > prev_tidx \
+                and all(timeline[k].get("type") == "dialogue"
+                        for k in range(prev_tidx + 1, tidx)):
+            cur.append(pos)
+        elif is_dial:
+            if len(cur) >= 2:
+                runs.append(cur)
+            cur = [pos]
+        else:
+            if len(cur) >= 2:
+                runs.append(cur)
+            cur = []
+        prev_tidx = tidx
+    if len(cur) >= 2:
+        runs.append(cur)
+
+    merged = 0
+    for run in reversed(runs):  # 从后往前处理，位置不失效
+        paths = [segments[p] for p in run]
+        if not all(p and os.path.exists(p) for p in paths):
+            continue
+        block_path = str(Path(tmp_dir) / f"dialogue_block_{run[0]:03d}.mp4")
+        if _merge_dialogue_xfade(paths, block_path, xfade=xfade, fps=fps):
+            segments[run[0]] = block_path
+            for p in reversed(run[1:]):
+                segments.pop(p)
+            merged += 1
+    return merged
+
+
+# sleep 块交叉溶解：单次 ffmpeg 最多 128 输入（对话叠化实测稳定规模），
+# 超出按 128 一组宽分块先合并为中间块再合并（块间边界同样叠化，语义与
+# 单链等价），402 块（400 组 + 片头片尾）= 2 遍整片编码。
+_XFADE_MAX_INPUTS = 128
+_XFADE_MERGE_TIMEOUT = 7200
+
+
+def _blocks_xfade_graph(n: int, video_durs: list[float],
+                        grid_durs: list[float], xfade: float) -> tuple[str, str]:
+    """构建块 xfade 链的纯视频 filter 图。返回 (图文本, 末视频流标签)。
+
+    与 _xfade_graph 的差异：偏移与 tpad 冻结量按网格时长（max 视频流/音频
+    流，与 concat demuxer 推进一致）计算——卡片块视频流帧量化向上时若用
+    视频流时长，输出总长会短于音频网格总和、累积漂移（e14708a 同源问题）。
+    每块 tpad = 网格差（补齐音>视的块）+（非本链末块再加 xfade 供叠化）；
+    末块补齐到网格保证分块中间产物时长 = Σ成员网格（下一层偏移正确）。
+    """
+    parts = []
+    labels = []
+    for k in range(n):
+        stop = grid_durs[k] - video_durs[k] + (xfade if k < n - 1 else 0.0)
+        if stop > 0.0005:
+            parts.append(
+                f"[{k}:v]tpad=stop_mode=clone:stop_duration={stop:.3f}[v{k}]")
+            labels.append(f"v{k}")
+        else:
+            labels.append(f"{k}:v")
+    prev = labels[0]
+    offset = 0.0
+    for k in range(1, n):
+        offset += grid_durs[k - 1]
+        label = f"x{k}"
+        parts.append(
+            f"[{prev}][{labels[k]}]xfade=transition=fade:duration={xfade:.3f}:"
+            f"offset={offset:.3f}[{label}]")
+        prev = label
+    return ";".join(parts), prev
+
+
+def _run_xfade_merge_video(seg_paths: list[str], out_path: str,
+                           xfade: float, fps: int, timeout: int) -> bool:
+    """单次 ffmpeg 调用完成纯视频 xfade 合并（音频由调用方网格拼接）。
+
+    图写脚本文件经 -filter_complex_script 传入（不占命令行）；输出 -an，
+    编码参数与 _run_xfade_merge 一致。失败/超时删产物返回 False。
+    """
+    n = len(seg_paths)
+    video_durs, grid_durs = [], []
+    for p in seg_paths:
+        vd = _probe_video_duration(p)
+        if not vd or vd <= 0:
+            return False
+        gd = _segment_grid_duration(p)
+        video_durs.append(vd)
+        grid_durs.append(max(gd, vd) if gd and gd > 0 else vd)
+    if min(grid_durs) < xfade * 2:
+        return False
+    graph, vlabel = _blocks_xfade_graph(n, video_durs, grid_durs, xfade)
+    script_path = out_path + ".filter.txt"
+    cmd = ["ffmpeg", "-y"]
+    for p in seg_paths:
+        cmd += ["-i", p]
+    cmd += [
+        "-filter_complex_script", script_path,
+        "-map", f"[{vlabel}]", "-an",
+        "-c:v", "libx264", "-crf", "18", "-pix_fmt", "yuv420p", "-r", str(fps),
+        "-t", f"{sum(grid_durs):.3f}",
+        out_path,
+    ]
+    ok = False
+    try:
+        with open(script_path, "w", encoding="utf-8", newline="\n") as f:
+            f.write(graph)
+        try:
+            r = subprocess.run(cmd, capture_output=True, timeout=timeout)
+        except subprocess.TimeoutExpired:
+            print("  [Xfade] 块交叉溶解合并超时 — 保持硬切")
+            return False
+        if r.returncode == 0 and os.path.exists(out_path) \
+                and os.path.getsize(out_path) > 1000:
+            ok = True
+        else:
+            print(f"  [Xfade] 块交叉溶解合并失败 — 保持硬切 "
+                  f"({r.stderr.decode(errors='replace')[-300:] if r.stderr else ''})")
+            try:
+                os.remove(out_path)
+            except OSError:
+                pass
+    finally:
+        try:
+            os.remove(script_path)
+        except OSError:
+            pass
+    return ok
+
+
+def merge_blocks_xfade(block_paths: list[str], out_path: str,
+                       xfade: float, fps: int = 25,
+                       max_inputs: int = _XFADE_MAX_INPUTS,
+                       timeout: int = _XFADE_MERGE_TIMEOUT) -> str | None:
+    """把相邻块合并为带交叉溶解（crossfade）的单条纯视频流。
+
+    sleep 组间/片头片尾边界硬切观感生硬；处理方式与对话叠化（
+    _merge_dialogue_xfade）同源：
+    - 除最后一块外每块视频尾帧 tpad=stop_mode=clone 冻结延展（补齐
+      video→网格差值 + xfade 秒）；
+    - xfade 链 offset_k = 前面各块网格时长之和 → 输出总长 = Σ网格时长，
+      与 concat_segments 音频 PCM 网格拼接严格同格，各块内容起点不变；
+    - 仅画面过渡：输出 -an 纯视频，音频由调用方按原网格拼接（块内语音
+      完全不受影响）。
+
+    块数超 max_inputs 时宽分块合并。任一步失败返回 None（fail-open，
+    调用方回退硬切 concat）。
+    """
+    paths = [p for p in block_paths if p and os.path.exists(p)]
+    if len(paths) < 2 or xfade <= 0 or len(paths) != len(block_paths):
+        return None
+    parent = Path(out_path).parent
+    parent.mkdir(parents=True, exist_ok=True)
+    stem = Path(out_path).stem
+    cur = list(paths)
+    try:
+        level = 0
+        while len(cur) > max_inputs:
+            nxt = []
+            for ci in range(0, len(cur), max_inputs):
+                chunk = cur[ci:ci + max_inputs]
+                if len(chunk) < 2:
+                    nxt.append(chunk[0])
+                    continue
+                mid = str(parent / f"{stem}_m{level}_{ci // max_inputs:03d}.mp4")
+                print(f"  [Xfade] 分组合并 {ci // max_inputs + 1} "
+                      f"（{len(chunk)} 块，第 {level + 1} 轮）...")
+                if not _run_xfade_merge_video(chunk, mid, xfade, fps, timeout):
+                    return None
+                nxt.append(mid)
+            cur = nxt
+            level += 1
+        if len(cur) < 2:
+            return None
+        if not _run_xfade_merge_video(cur, out_path, xfade, fps, timeout):
+            return None
+        return out_path
+    finally:
+        # 清理分块中间产物（out_path 本身不带 _m 不误删）
+        for f in parent.glob(f"{stem}_m*.mp4"):
+            try:
+                f.unlink()
+            except OSError:
+                pass
+
+
+def concat_segments(segment_paths: list[str], output_path: str,
+                    tmp_dir: str | Path = None,
+                    video_source: str | None = None) -> str:
+    """Concatenate segment files (video stream copy + audio filter re-encode).
+
+    All segments must have uniform format (libx264/yuv420p/25fps/aac/44100Hz/stereo).
+    video_source：外部预合成纯视频流（如 merge_blocks_xfade 产物）。提供且
+    存在时跳过视频 concat 通道、直接以其为 mux 视频源（不删除该文件）；
+    音频仍按段网格拼接，与视频总长严格同格。
+
+    为什么不能直接 concat demuxer + -c copy：段的 AAC 轨道含 encoder priming
+    （约 46ms），MP4 edit list 把展示时长裁剪到内容时长，但 demuxer copy 拼接
+    推进下一段时按轨道原始时长计算 → 每段边界音频多推进约 40ms，几百段后累积
+    2 秒以上，字幕（按 timeline 计划时间烧录）相对音频越来越提前。
+    因此音频走逐段解码路径（起点 priming 由 edit list 生效裁掉），再按段网格
+    时长（max 视频流/音频流，与 demuxer 推进一致）字节级裁尾/补静音后拼接
+    PCM 一次编码；视频流无此问题，仍 demuxer 纯 copy 零重编码。注意仅解码
+    重编码不够：edit list 不裁尾部，解码会保留编码器补齐到 AAC 帧边界的
+    静音样本，且 atrim 等 filter 裁剪是整帧粒度裁不掉，必须在 PCM 字节层
+    裁剪/补齐。
+
+    Returns the output path on success, raises RuntimeError on failure.
+    """
+    tmp_dir = Path(tmp_dir).resolve() if tmp_dir else Path(output_path).resolve().parent / "tmp"
+    tmp_dir.mkdir(parents=True, exist_ok=True)
+    concat_list = tmp_dir / "concat.txt"
+    with open(concat_list, "w", encoding="utf-8") as f:
+        for s in segment_paths:
+            p = str(Path(s).resolve()).replace("'", "'\\''")
+            f.write(f"file '{p}'\n")
+
+    def _run(args: list, what: str) -> None:
+        r = subprocess.run(["ffmpeg", "-y"] + args, capture_output=True)
+        if r.returncode != 0:
+            raise RuntimeError(
+                f"Concat {what} failed: {r.stderr.decode(errors='replace')[-2000:]}")
+
+    v_only = tmp_dir / "concat_video_only.mp4"
+    a_only = tmp_dir / "concat_audio_only.m4a"
+    own_video = not (video_source and os.path.exists(video_source))
+    if own_video:
+        _run(["-f", "concat", "-safe", "0", "-i", str(concat_list),
+              "-c:v", "copy", "-an", v_only], "video pass")
+    else:
+        # 外部预合成的纯视频流（如 sleep 块 xfade 合并）：跳过 concat
+        # 视频通道，音频仍按原段网格拼接（与视频总长严格同格）
+        v_only = Path(video_source)
+
+    # 音频：逐段解码 → 按容器时长裁掉 AAC 帧尾补齐 → 拼 PCM → 一次编码
+    _SR, _CH, _SW = 44100, 2, 2  # s16le stereo 每样本帧 4 字节
+    pcm_path = tmp_dir / "concat_audio.pcm"
+    audio_ok = True
+    try:
+        with open(pcm_path, "wb") as out_f:
+            for s in segment_paths:
+                r = subprocess.run(
+                    ["ffmpeg", "-v", "error", "-i", str(Path(s).resolve()),
+                     "-map", "0:a:0", "-ar", str(_SR), "-ac", str(_CH),
+                     "-f", "s16le", "-"],
+                    capture_output=True)
+                if r.returncode != 0:
+                    audio_ok = False
+                    break
+                data = r.stdout
+                seg_dur = _segment_grid_duration(str(s))
+                if seg_dur is not None and seg_dur > 0:
+                    want = int(round(seg_dur * _SR)) * _CH * _SW
+                    if want < len(data):
+                        data = data[:want]
+                    elif want > len(data):
+                        # 解码短于网格时长（常态：mp3 解码差 + 帧量化）：
+                        # 补静音保持音频网格与视频网格严格同格推进
+                        data += b"\x00" * (want - len(data))
+                out_f.write(data)
+        if audio_ok:
+            _run(["-f", "s16le", "-ar", str(_SR), "-ac", str(_CH),
+                  "-i", str(pcm_path),
+                  "-c:a", "aac", "-b:a", "192k", "-ar", "44100", "-ac", "2",
+                  a_only], "audio pass")
+    except Exception:
+        audio_ok = False
+    finally:
+        try:
+            os.remove(pcm_path)
+        except OSError:
+            pass
+    if not audio_ok:
+        # 兜底：整轨解码重编码（保留每段 ~11ms 补齐误差，但保证产出）
+        _run(["-f", "concat", "-safe", "0", "-i", str(concat_list),
+              "-vn", "-af", "asetpts=N/SR/TB",
+              "-c:a", "aac", "-b:a", "192k", "-ar", "44100", "-ac", "2",
+              a_only], "audio fallback pass")
+
+    _run(["-i", v_only, "-i", a_only,
+          "-c", "copy", "-map", "0:v:0", "-map", "1:a:0",
+          output_path], "mux pass")
+    for t in ((v_only,) if own_video else ()) + (a_only,):
+        try:
+            os.remove(t)
+        except OSError:
+            pass
+
+    return output_path
+
+
+# ---------------------------------------------------------------------------
+# Subtitle rendering + overlay burn
+# ---------------------------------------------------------------------------
+
+_SENT_SPLIT_MARK = "\x00"
+
+
+def _split_narration_subtitles(en: str, zh: str, audio_d: float, t_start: float,
+                               pauses: list[float] | None = None) -> list[dict]:
+    """Split long narration into per-sentence subtitle entries.
+
+    引号兼容分句：句末标点可带闭引号再断句（EN 如 ...that?"、ZH 如 「…？」）。
+    outro 文案按 prompt 要求逐字引用对白金句，旧正则 (?<=[.!?])\\s+ 在
+    "句号+闭引号+空格" 处不匹配，导致多句挤成一条巨型字幕；ZH 旧正则还会把
+    「…？」从闭引号前劈开，产生孤悬 」 开头的碎条。无引号文本的分句结果与
+    旧逻辑一致。
+
+    First splits by sentence-ending punctuation, then further splits
+    very long sentences by commas/semicolons so text doesn't cram.
+    Interior boundaries are snapped to measured speech onsets (pauses)
+    when available — precise sync with actual TTS timing.
+    Returns list of subtitle entry dicts.
+    """
+    EN_MAX_CHARS = 80
+    EN_MAX_WORDS = 12
+    ZH_MAX_CHARS = 30
+    _CLOSE = "\"'\u201d\u2019\u300d\u300f"  # 中英常用闭引号/闭括号
+
+    def _mark_sentence_ends(text: str, is_en: bool) -> list[str]:
+        # 在句末单元（标点+可选闭引号）之后的空白处插分隔标记再切分
+        if is_en:
+            marked = re.sub(r'([.!?][' + _CLOSE + r']?)(?=\s)',
+                            lambda m: m.group(1) + _SENT_SPLIT_MARK, text)
+        else:
+            # 闭引号并入前句单元，避免从 ？ 与 」 之间劈开
+            marked = re.sub(r'([。！？][' + _CLOSE + r']?)',
+                            lambda m: m.group(1) + _SENT_SPLIT_MARK, text)
+        return [p.strip() for p in marked.split(_SENT_SPLIT_MARK) if p.strip()]
+
+    def _further_split_en(text: str) -> list[str]:
+        """Split EN by [.!?] first (quote-aware), then by [,;] if still too long."""
+        parts = _mark_sentence_ends(text.strip(), True)
+        result = []
+        for p in parts:
+            if len(p) > EN_MAX_CHARS or len(p.split()) > EN_MAX_WORDS:
+                sub_parts = re.split(r'(?<=[,;])\s+', p)
+                result.extend(s.strip() for s in sub_parts if s.strip())
+            else:
+                result.append(p)
+        return result if result else [text.strip()]
+
+    def _further_split_zh(text: str) -> list[str]:
+        """Split ZH by [。！？] first (quote-aware), then by [，；] if still too long."""
+        parts = _mark_sentence_ends(text.strip(), False)
+        result = []
+        for p in parts:
+            if len(p) > ZH_MAX_CHARS:
+                sub_parts = re.split(r'(?<=[，；])\s*', p)
+                result.extend(s.strip() for s in sub_parts if s.strip())
+            else:
+                result.append(p)
+        return result if result else [text.strip()]
+
+    en_parts = _further_split_en(en) if en else []
+    zh_parts = _further_split_zh(zh) if zh else []
+    n = max(len(en_parts), len(zh_parts), 1)
+    total_chars = sum(len(s) for s in en_parts) or 1
+    entries = []
+    cursor = t_start
+    for i in range(n):
+        sent_en = en_parts[i] if i < len(en_parts) else ""
+        sent_zh = zh_parts[i] if i < len(zh_parts) else ""
+        sent_frac = (len(sent_en) if sent_en else len(sent_zh) or 1) / total_chars
+        sent_dur = audio_d * sent_frac if i < n - 1 else audio_d - (cursor - t_start)
+        entries.append({
+            "start": cursor,
+            "end": cursor + sent_dur,
+            "en": sent_en,
+            "zh": sent_zh,
+        })
+        cursor += sent_dur
+    if pauses and len(entries) >= 2:
+        _align_entries_to_pauses(entries, pauses)
+    return entries
+
+
+def burn_subtitles(no_sub_path: str, timeline: list[dict], script: dict,
+                   work_dir: str, srt_dir: str, pad: float = 0.4,
+                   progress_cb=None, show_zh: bool = True,
+                   subtitle_seg_types: tuple[str, ...] = ("dialogue", "welcome", "hook_intro", "outro"),
+                   en_font_size: int = 60, zh_font_size: int = 50,
+                   pause_hints: list[tuple[float, float]] | None = None,
+                   out_fps: int = 24,
+                   style: dict | None = None) -> str:
+    """Render dialogue subtitles via Pillow and burn them onto the video.
+
+    Extracts subtitle entries from timeline segments whose type is in
+    subtitle_seg_types, renders transparent PNG overlays sized to match the
+    actual video canvas, and applies them via FFmpeg filter_complex overlay
+    with timed enable.
+
+    Args:
+        pause_hints: silence intervals (silence_start, silence_end) detected
+            from the video's audio. When None, they are detected automatically
+            via silencedetect; interior sentence boundaries are then snapped
+            to the measured speech onsets (precise sync). Pass [] to disable.
+        out_fps: output fps for the re-encode pass. Should match the
+            concatenated video's fps (25 for quest, 24 for original).
+        style: 字幕样式 dict（字幕样式设计器产出）。None 或缺 key 时回退
+            en_font_size/zh_font_size 及历史默认样式，与旧行为一致。
+
+    Returns the final video path with subtitles burned in.
+    """
+    def _cb(pct, msg):
+        if progress_cb:
+            progress_cb(pct, msg)
+
+    work = Path(work_dir)
+    tmp_dir = work / "tmp_segments"
+
+    final_path = str(work / f"{safe_filename(script.get('youtube_title', script.get('title', 'final_video')))}.mp4")
+
+    # Extract subtitle entries from timeline
+    # 引号兼容分句实现为模块级 _split_narration_subtitles（可独立单测），
+    # 此处保留嵌套名作薄包装，调用点零改动。
+    def _split_subtitles(en: str, zh: str, audio_d: float, t_start: float,
+                         pauses: list[float] | None = None):
+        return _split_narration_subtitles(en, zh, audio_d, t_start,
+                                          pauses=pauses)
+
+    # 静音对齐：自动检测或使用调用方提供的停顿提示
+    all_pauses: list[tuple[float, float]] = []
+    if pause_hints is None:
+        _cb(90, "Detecting speech pauses for subtitle alignment...")
+        all_pauses = detect_speech_pauses(no_sub_path)
+    else:
+        all_pauses = pause_hints
+
+    subtitle_entries = []
+    t_cursor = 0.0
+    for seg in timeline:
+        dur = seg["duration"]
+        seg_type = seg.get("type", "")
+        if seg_type in subtitle_seg_types:
+            en = seg.get("subtitle_en", "")
+            zh = seg.get("subtitle_zh", "")
+            audio_d = seg.get("audio_dur", dur - pad)
+            if en or zh:
+                # 段内候选语音起点：仅取真正的句间停顿——
+                # ss > 段首+0.15 排除与上一段尾 pad 合并的段首 lead-in 静音
+                # （其终点=首句自身语音起点，吸附它会让字幕比音频提前一句）；
+                # se < 段尾-0.15 排除段尾静音（避开首尾 fade）
+                seg_pauses = [
+                    se for (ss, se) in all_pauses
+                    if ss > t_cursor + 0.15 and se < t_cursor + audio_d - 0.15
+                ]
+                subtitle_entries.extend(
+                    _split_subtitles(en, zh, audio_d, t_cursor,
+                                     pauses=seg_pauses)
+                )
+        t_cursor += dur
+
+    # Drop entries that have no visible text (happens when show_zh=False
+    # and the entry's EN side is empty because ZH had more sentences)
+    subtitle_entries = [
+        e for e in subtitle_entries
+        if e["en"] or (e["zh"] if show_zh else "")
+    ]
+
+    if not subtitle_entries:
+        shutil.copy2(no_sub_path, final_path)
+        return final_path
+
+    w, h = probe_resolution(no_sub_path)
+    sub_overlay_dir = tmp_dir / "subtitles"
+    sub_overlay_dir.mkdir(parents=True, exist_ok=True)
+
+    # 合并样式：legacy 默认（字号来自 en_font_size/zh_font_size 参数）→ 样式 key 覆盖。
+    # style=None 时与历史行为逐像素一致（白EN/金ZH、描边5/4、底边距36、行距6、间隔15）。
+    effective_style = dict(SUBTITLE_STYLE_LEGACY_DEFAULTS)
+    effective_style["en_size"] = en_font_size
+    effective_style["zh_size"] = zh_font_size
+    if style:
+        for k in effective_style:
+            if k in style and style[k] is not None:
+                effective_style[k] = style[k]
+
+    # 渲染端兜底：EN 超过 2 行的字幕条按词边界拆条（旧脚本/脚本库/QA 残留
+    # 超长句），按实际字号测量，任何来源的脚本成片字幕一律 ≤2 行
+    from PIL import ImageFont
+    try:
+        _fallback_font = ImageFont.truetype(
+            _resolve_subtitle_font(effective_style["font_en"], FONT_EN),
+            int(effective_style["en_size"]))
+    except OSError:
+        _fallback_font = None
+    if _fallback_font is not None:
+        subtitle_entries = _split_overlong_entries(
+            subtitle_entries, _fallback_font, w - 80, max_lines=2)
+
+    for i, entry in enumerate(subtitle_entries):
+        overlay_path = str(sub_overlay_dir / f"sub_{i:03d}.png")
+        en_text = entry["en"]
+        zh_text = entry["zh"] if show_zh else ""
+        overlay = render_subtitle_text_overlay(en_text, zh_text, w, h,
+                                               effective_style)
+        overlay.save(overlay_path, "PNG")
+        entry["overlay_path"] = overlay_path
+
+    # Burn subtitles in batches to avoid Windows command-line length limit
+    # (WinError 206, ~32767 chars for CreateProcess). Each batch applies a
+    # subset of overlay PNGs in a separate FFmpeg pass; the video output
+    # chains from one pass to the next.  Audio is copied through untouched.
+    BATCH_SIZE = 40
+    total_batches = (len(subtitle_entries) + BATCH_SIZE - 1) // BATCH_SIZE
+    current_input = no_sub_path
+    temp_files: list[str] = []
+
+    for batch_idx in range(total_batches):
+        batch_start = batch_idx * BATCH_SIZE
+        batch_end = min(batch_start + BATCH_SIZE, len(subtitle_entries))
+        batch = subtitle_entries[batch_start:batch_end]
+        is_last = (batch_idx == total_batches - 1)
+
+        if is_last:
+            out_path = final_path
+        else:
+            out_path = str(tmp_dir / f"sub_batch_{batch_idx:03d}.mp4")
+            temp_files.append(out_path)
+
+        # Build filter chain for this batch only (labels restart from 0)
+        filter_parts = []
+        prev_label = "0:v"
+        for j, entry in enumerate(batch):
+            start = entry["start"]
+            end = entry["end"]
+            filter_parts.append(
+                f"[{prev_label}][{j+1}:v]overlay=0:0:enable='between(t,{start:.3f},{end:.3f})'[v{j}]"
+            )
+            prev_label = f"v{j}"
+
+        filter_complex = ";".join(filter_parts)
+        final_label = prev_label
+
+        input_args = ["-i", current_input]
+        for entry in batch:
+            input_args.extend(["-i", entry["overlay_path"]])
+
+        cmd = ["ffmpeg", "-y"] + input_args + [
+            "-filter_complex", filter_complex,
+            "-map", f"[{final_label}]",
+            "-map", "0:a:0",
+            "-c:v", "libx264", "-crf", "18", "-pix_fmt", "yuv420p", "-r", str(out_fps),
+            "-c:a", "copy",
+            out_path,
+        ]
+
+        if progress_cb:
+            pct = 90 + int((batch_idx / max(total_batches, 1)) * 5)
+            progress_cb(pct, f"Burning subtitles batch {batch_idx + 1}/{total_batches}")
+
+        try:
+            subprocess.run(cmd, check=True, capture_output=True,
+                            cwd=str(srt_dir), timeout=1800)
+        except subprocess.TimeoutExpired:
+            raise RuntimeError("Subtitle overlay burn timed out after 1800s")
+        except subprocess.CalledProcessError as e:
+            raise RuntimeError(
+                f"Subtitle overlay burn failed (batch {batch_idx + 1}/{total_batches}): "
+                f"{e.stderr.decode(errors='replace')[-500:] if e.stderr else e}")
+
+        current_input = out_path
+
+    # Clean up intermediate temp files
+    for tf in temp_files:
+        try:
+            os.remove(tf)
+        except OSError:
+            pass
+
+    return final_path
+
+
+# ---------------------------------------------------------------------------
+# Final loudnorm pass
+# ---------------------------------------------------------------------------
+
+def apply_final_loudnorm(video_path: str, vid_dir: str,
+                        progress_cb=None) -> str:
+    """Apply final loudnorm normalization to the composed video.
+
+    Tries loudnorm first; if it fails, falls back to volume boost.
+    Returns the path to the normalized video (may be the same as input).
+    """
+    def _cb(pct, msg):
+        if progress_cb:
+            progress_cb(pct, msg)
+
+    norm_path = str(Path(vid_dir) / "final_video_norm.mp4")
+    norm_result = subprocess.run(
+        ["ffmpeg", "-y", "-i", video_path,
+         "-c:v", "copy",  # video passthrough — fast, no re-encode
+         "-c:a", "aac", "-b:a", "128k",
+         "-af", "loudnorm=I=-14:TP=-1.5:LRA=11",
+         norm_path],
+        capture_output=True, timeout=600,
+    )
+    if (norm_result.returncode == 0 and os.path.exists(norm_path)
+            and os.path.getsize(norm_path) > 1000):
+        os.replace(norm_path, video_path)
+        return video_path
+
+    # Fallback: simple volume boost
+    if os.path.exists(norm_path):
+        try:
+            os.remove(norm_path)
+        except OSError:
+            pass
+
+    vol_path = str(Path(vid_dir) / "final_video_vol.mp4")
+    try:
+        subprocess.run(
+            ["ffmpeg", "-y", "-i", video_path,
+             "-c:v", "copy",
+             "-c:a", "aac", "-b:a", "128k",
+             "-af", "volume=6dB",
+             vol_path],
+            capture_output=True, timeout=600,
+        )
+        if os.path.exists(vol_path) and os.path.getsize(vol_path) > 1000:
+            os.replace(vol_path, video_path)
+    except Exception:
+        pass  # Keep original if both fail
+
+    return video_path
+
+
+# ---------------------------------------------------------------------------
+# Sync QA report
+# ---------------------------------------------------------------------------
+
+def write_sync_report(video_path: str, timeline: list[dict], work_dir: str,
+                      pad: float = 0.4) -> dict:
+    """QA: compare planned speech boundaries with detected audio pauses.
+
+    For every voiced segment, its tail pad should appear as a detected
+    silence starting near planned (seg_start + audio_dur). Deviations reveal
+    drift between the planned timeline and the actual audio.
+    Writes work_dir/sync_report.json and returns the summary dict.
+    Non-fatal: detection failure yields status='no_pauses_detected'.
+    """
+    import json as _json
+
+    pauses = detect_speech_pauses(video_path)
+    actual_dur = get_duration(video_path)
+    planned_total = sum(s["duration"] for s in timeline)
+    report: dict = {
+        "video": str(video_path),
+        "status": "ok",
+        "planned_total_s": round(planned_total, 3),
+        "actual_duration_s": round(actual_dur, 3),
+        "duration_drift_ms": round((actual_dur - planned_total) * 1000, 1),
+        "silences_detected": len(pauses),
+    }
+
+    devs: list[float] = []
+    unmatched: list[dict] = []
+    voiced = 0
+    t = 0.0
+    for i, seg in enumerate(timeline):
+        d = seg["duration"]
+        ad = seg.get("audio_dur", 0)
+        if ad and ad > 0.3:
+            voiced += 1
+            expect = t + ad  # 段尾 pad 静音的理论起点
+            # TTS 音频末尾常自带 0.2-0.5s 句尾留白 → 实际静音起点普遍早于
+            # 理论点；左界放宽到 -1.0s 容纳留白，右界 0.6s 容许轻微滞后
+            cands = [ss for (ss, _) in pauses
+                     if expect - 1.0 <= ss <= expect + 0.6]
+            if cands:
+                devs.append(min(cands) - expect)
+            else:
+                unmatched.append({"index": i, "type": seg.get("type", ""),
+                                  "planned_silence_at": round(expect, 3)})
+        t += d
+
+    if devs:
+        report.update({
+            "voiced_segments": voiced,
+            "boundaries_matched": len(devs),
+            "mean_boundary_dev_ms": round(
+                sum(abs(x) for x in devs) / len(devs) * 1000, 1),
+            "max_boundary_dev_ms": round(
+                max(abs(x) for x in devs) * 1000, 1),
+            "unmatched_boundaries": unmatched[:20],
+        })
+    elif pauses:
+        report["status"] = "no_boundary_match"
+        report["unmatched_boundaries"] = unmatched[:20]
+    else:
+        report["status"] = "no_pauses_detected"
+
+    try:
+        out = Path(work_dir) / "sync_report.json"
+        out.write_text(_json.dumps(report, ensure_ascii=False, indent=2),
+                       encoding="utf-8")
+    except OSError:
+        pass
+    return report
+
+
+# ---------------------------------------------------------------------------
+# SRT building (shared by all timeline variants)
+# ---------------------------------------------------------------------------
+
+def _format_srt_time(seconds: float) -> str:
+    """Convert seconds to SRT timestamp: HH:MM:SS,mmm"""
+    hours = int(seconds // 3600)
+    minutes = int((seconds % 3600) // 60)
+    secs = int(seconds % 60)
+    millis = int((seconds % 1) * 1000)
+    return f"{hours:02d}:{minutes:02d}:{secs:02d},{millis:03d}"
+
+
+def build_srt(timeline: list[dict], skip_types: set[str] | None = None,
+              gap: float = 0.0) -> str:
+    """Build SRT from a timeline list. Timestamps match video exactly.
+
+    Segments whose type is in skip_types produce no SRT entry (text is on
+    static images, not subtitles). Segments with empty subtitle_en are also
+    skipped.
+
+    Consolidates timeline.build_srt_from_timeline,
+    quest.build_srt_from_timeline_quest.
+    """
+    if skip_types is None:
+        skip_types = {"listen_en", "listen_zh", "practice",
+                      "practice_intro", "vocab", "quiz",
+                      "dialogue_slow"}
+
+    srt_lines = []
+    idx = 1
+    current_time = 0.0
+
+    for seg in timeline:
+        dur = seg["duration"]
+        start = current_time
+        end = start + dur
+
+        text_en = seg.get("subtitle_en", "")
+        text_zh = seg.get("subtitle_zh", "")
+        seg_type = seg.get("type", "")
+
+        if seg_type in skip_types:
+            current_time = end + gap
+            continue
+
+        if not text_en:
+            current_time = end + gap
+            continue
+
+        audio_dur = seg.get("audio_dur", dur)
+        srt_end = start + audio_dur
+
+        srt_lines.append(str(idx))
+        srt_lines.append(f"{_format_srt_time(start)} --> {_format_srt_time(srt_end)}")
+        srt_lines.append(text_en)
+        if text_zh:
+            srt_lines.append(text_zh)
+        srt_lines.append("")
+        idx += 1
+        current_time = end + gap
+
+    return "\n".join(srt_lines)

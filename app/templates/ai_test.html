@@ -1,0 +1,713 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="flex h-screen">
+    <!-- Settings Sidebar -->
+    <aside class="w-72 bg-slate-800 border-r border-slate-700 flex flex-col overflow-y-auto shrink-0">
+        <div class="p-4 border-b border-slate-700">
+            <h2 class="text-lg font-bold text-white flex items-center gap-2">
+                <span>🧪</span> AI 对话测试
+            </h2>
+            <p class="text-xs text-slate-400 mt-1">大模型对话 Playground</p>
+        </div>
+
+        <div class="p-4 space-y-4 flex-1">
+            <!-- Provider -->
+            <div>
+                <div class="flex items-center justify-between mb-1">
+                    <label class="text-xs text-slate-400">LLM Provider</label>
+                    <button onclick="openProviderModal()" class="text-[10px] text-indigo-400 hover:text-indigo-300 transition">⚙️ 管理自定义</button>
+                </div>
+                <select id="st-provider" class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white">
+                    {% for value, label in provider_options.items() %}
+                    <option value="{{ value }}">{{ label }}</option>
+                    {% endfor %}
+                </select>
+                <div id="st-provider-warn" class="hidden mt-2 text-[11px] leading-snug text-amber-300 bg-amber-900/30 border border-amber-700/60 rounded-lg px-2.5 py-2"></div>
+            </div>
+
+            <!-- Model -->
+            <div>
+                <label class="text-xs text-slate-400 block mb-1">模型</label>
+                <div class="flex gap-2">
+                    <select id="st-model" class="flex-1 bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white"></select>
+                </div>
+                <input type="text" id="st-model-custom" placeholder="或手动输入模型名" class="w-full mt-2 bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white hidden">
+            </div>
+
+            <!-- Temperature -->
+            <div>
+                <label class="text-xs text-slate-400 block mb-1">Temperature: <span id="st-temp-val" class="text-indigo-400">0.8</span></label>
+                <input type="range" id="st-temperature" min="0" max="2" step="0.1" value="0.8" class="w-full accent-indigo-500">
+            </div>
+
+            <!-- Max Tokens -->
+            <div>
+                <label class="text-xs text-slate-400 block mb-1">Max Tokens</label>
+                <input type="number" id="st-max-tokens" value="8192" min="1" max="32768"
+                    class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white">
+            </div>
+
+            <!-- Reasoning Effort (SenseNova / Gemini) -->
+            <div id="st-reasoning-wrap">
+                <label class="text-xs text-slate-400 block mb-1" id="st-reasoning-label">Reasoning Effort</label>
+                <select id="st-reasoning" class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+            </div>
+
+            <!-- API Key Override -->
+            <div>
+                <label class="text-xs text-slate-400 block mb-1">API Key <span class="text-slate-500">(留空用配置)</span></label>
+                <input type="password" id="st-api-key" placeholder="覆盖配置中的 Key"
+                    class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white">
+            </div>
+
+            <!-- System Prompt -->
+            <div>
+                <label class="text-xs text-slate-400 block mb-1">System Prompt</label>
+                <textarea id="st-system-prompt" rows="5" placeholder="You are a helpful assistant..."
+                    class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white resize-none"></textarea>
+            </div>
+
+            <!-- Quick Prompts -->
+            <div>
+                <label class="text-xs text-slate-400 block mb-2">快捷提示词</label>
+                <div class="space-y-1.5">
+                    <button onclick="quickPrompt('翻译', 'You are a professional translator. Translate the following text to English. Provide only the translation, no explanation.')" class="w-full text-left px-3 py-1.5 bg-slate-700 hover:bg-slate-600 rounded text-xs text-slate-300 transition">🌐 翻译助手</button>
+                    <button onclick="quickPrompt('语法检查', 'You are an English grammar expert. Check the following text for grammar errors. List each error with correction. Respond in Traditional Chinese (繁體中文).')" class="w-full text-left px-3 py-1.5 bg-slate-700 hover:bg-slate-600 rounded text-xs text-slate-300 transition">✏️ 语法检查</button>
+                    <button onclick="quickPrompt('ESL 教师', 'You are an ESL teacher for overseas Chinese learners. Explain the following English phrase or sentence. Provide: meaning, usage examples, and Traditional Chinese translation.')" class="w-full text-left px-3 py-1.5 bg-slate-700 hover:bg-slate-600 rounded text-xs text-slate-300 transition">📚 ESL 讲解</button>
+                    <button onclick="quickPrompt('JSON 生成', 'Output valid JSON only. No markdown, no explanation. Follow the schema described in the user message.')" class="w-full text-left px-3 py-1.5 bg-slate-700 hover:bg-slate-600 rounded text-xs text-slate-300 transition">🔧 JSON 生成</button>
+                    <button onclick="quickPrompt('', '')" class="w-full text-left px-3 py-1.5 bg-slate-700 hover:bg-red-700 rounded text-xs text-red-300 transition">🗑️ 清空 System Prompt</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Token Stats -->
+        <div class="p-4 border-t border-slate-700 text-xs text-slate-500 space-y-1">
+            <div>总请求: <span id="stat-requests" class="text-slate-300">0</span></div>
+            <div>总 Tokens: <span id="stat-tokens" class="text-slate-300">0</span></div>
+            <div>总耗时: <span id="stat-time" class="text-slate-300">0s</span></div>
+        </div>
+    </aside>
+
+    <!-- Provider Management Modal -->
+    <div id="provider-modal" class="fixed inset-0 bg-black/60 z-50 hidden items-center justify-center" onclick="closeProviderModal(event)">
+        <div class="bg-slate-800 border border-slate-600 rounded-xl w-[640px] max-h-[80vh] flex flex-col" onclick="event.stopPropagation()">
+            <div class="flex items-center justify-between px-5 py-4 border-b border-slate-700">
+                <h3 class="text-lg font-bold text-white">⚙️ 自定义 LLM Provider</h3>
+                <button onclick="closeProviderModal()" class="text-slate-400 hover:text-white text-xl">✕</button>
+            </div>
+            <div class="overflow-y-auto p-5 space-y-4 flex-1">
+                <!-- New/Edit Form -->
+                <div class="bg-slate-900 rounded-lg p-4 border border-slate-700 space-y-3">
+                    <div class="text-sm font-medium text-slate-300" id="provider-form-title">新建 Provider</div>
+                    <input type="hidden" id="pf-id">
+                    <div class="grid grid-cols-2 gap-3">
+                        <input type="text" id="pf-name" placeholder="名称 (如 MyAPI)" class="bg-slate-800 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white">
+                        <input type="text" id="pf-base-url" placeholder="Base URL (https://...)" class="bg-slate-800 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white">
+                    </div>
+                    <input type="password" id="pf-api-key" placeholder="API Key (sk-...)" class="w-full bg-slate-800 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white">
+                    <textarea id="pf-models" rows="2" placeholder="模型列表，逗号分隔 (如 gpt-4, gpt-3.5-turbo, claude-3)" class="w-full bg-slate-800 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white resize-none"></textarea>
+                    <div class="flex gap-2">
+                        <button onclick="saveProvider()" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-lg text-sm text-white">保存</button>
+                        <button onclick="resetProviderForm()" class="px-4 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg text-sm text-slate-300">清空表单</button>
+                    </div>
+                </div>
+                <!-- Provider List -->
+                <div id="provider-list" class="space-y-2"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chat Area -->
+    <div class="flex-1 flex flex-col min-w-0">
+        <!-- Toolbar -->
+        <div class="px-6 py-3 border-b border-slate-700 bg-slate-800 flex items-center justify-between shrink-0">
+            <div class="flex items-center gap-3">
+                <span id="chat-model-badge" class="px-3 py-1 bg-indigo-900/50 text-indigo-300 rounded-full text-xs font-medium">deepseek-v4-flash</span>
+                <span id="chat-status" class="text-xs text-slate-500">就绪</span>
+            </div>
+            <div class="flex gap-2">
+                <button onclick="toggleCustomModel()" id="btn-custom-model" class="px-3 py-1.5 bg-slate-700 hover:bg-slate-600 rounded text-xs text-slate-300 transition">自定义模型</button>
+                <button onclick="clearChat()" class="px-3 py-1.5 bg-slate-700 hover:bg-red-700 rounded text-xs text-slate-300 transition">🗑️ 清空对话</button>
+            </div>
+        </div>
+
+        <!-- Messages -->
+        <div id="chat-messages" class="flex-1 overflow-y-auto px-6 py-4 space-y-4">
+            <div class="text-center text-slate-500 text-sm py-12">
+                <div class="text-4xl mb-3">🧪</div>
+                <p>开始与大模型对话</p>
+                <p class="text-xs mt-1">选择左侧参数，在下方输入消息</p>
+            </div>
+        </div>
+
+        <!-- Input -->
+        <div class="px-6 py-4 border-t border-slate-700 bg-slate-800 shrink-0">
+            <div class="flex gap-3 items-end">
+                <textarea id="chat-input" rows="2" placeholder="输入消息... (Enter 发送, Shift+Enter 换行)"
+                    class="flex-1 bg-slate-900 border border-slate-600 rounded-lg px-4 py-3 text-sm text-white resize-none focus:outline-none focus:border-indigo-500"
+                    onkeydown="handleKeydown(event)"></textarea>
+                <button onclick="sendMessage()" id="btn-send"
+                    class="px-6 py-3 bg-indigo-600 hover:bg-indigo-500 rounded-lg text-sm text-white font-medium transition shrink-0">
+                    发送
+                </button>
+                <button onclick="stopGeneration()" id="btn-stop"
+                    class="px-6 py-3 bg-red-600 hover:bg-red-500 rounded-lg text-sm text-white font-medium transition shrink-0 hidden">
+                    停止
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+let conversation = [];       // [{role, content, model?, elapsed?, usage?}]
+let isGenerating = false;
+let abortController = null;
+let stats = { requests: 0, tokens: 0, time: 0 };
+let CUSTOM_PROVIDERS = [];   // [{id, name, base_url, api_key_masked, has_api_key, models[]}]
+
+// Provider / 模型清单由服务端注入（PARAM_SPEC 唯一来源，勿在前端硬编码）
+const PROVIDER_OPTIONS = {{ provider_options | tojson }};
+const SENSENOVA_MODELS = {{ sensenova_models | tojson }};
+const OPENAI_MODELS = {{ openai_models | tojson }};
+const GEMINI_MODELS = {{ gemini_models | tojson }};
+
+function escapeHtml(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g,
+        c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
+}
+
+// --- Init ---
+window.addEventListener('load', () => {
+    loadConfig();
+    document.getElementById('st-provider').addEventListener('change', onProviderChange);
+    document.getElementById('st-temperature').addEventListener('input', e => {
+        document.getElementById('st-temp-val').textContent = parseFloat(e.target.value).toFixed(1);
+    });
+});
+
+// --- Load config from backend ---
+function loadConfig() {
+    fetch('/api/ai_test/config')
+        .then(r => r.json())
+        .then(cfg => {
+            CUSTOM_PROVIDERS = cfg.custom_providers || [];
+            document.getElementById('st-system-prompt').value = cfg.system_prompt || '';
+            // 先重建下拉（含自定义 Provider），再回显保存的 Provider —— 否则 custom:* 选项尚不存在，选择会丢失
+            rebuildProviderDropdown();
+            const selP = document.getElementById('st-provider');
+            const configured = cfg.llm_provider || 'sensenova';
+            const known = [...selP.options].some(o => o.value === configured);
+            selP.value = known ? configured : 'sensenova';
+            onProviderChange();
+            // 回显保存的模型：sensenova / gemini 允许追加缺失项；其余 Provider 仅在列表中存在时回显，避免污染
+            const sel = document.getElementById('st-model');
+            const savedModel = selP.value === 'sensenova' ? cfg.sensenova_model
+                : selP.value === 'gemini' ? cfg.gemini_model : cfg.openai_model;
+            if (savedModel) {
+                if ([...sel.options].some(o => o.value === savedModel)) {
+                    sel.value = savedModel;
+                } else if (selP.value === 'sensenova' || selP.value === 'gemini') {
+                    addModelOption(savedModel);
+                    sel.value = savedModel;
+                }
+            }
+            // 配置里的 Provider 本页选不到时明确告警，绝不静默回退成另一家
+            const warn = document.getElementById('st-provider-warn');
+            if (!known) {
+                warn.textContent = `⚠️ 当前模式配置的 LLM Provider 是「${configured}」，本页不支持，已回退为 SenseNova —— 测试结果不代表管线行为`;
+                warn.classList.remove('hidden');
+            } else {
+                warn.classList.add('hidden');
+            }
+            updateModelBadge();
+        })
+        .catch(err => {
+            const warn = document.getElementById('st-provider-warn');
+            warn.textContent = `⚠️ 读取配置失败：${err.message}`;
+            warn.classList.remove('hidden');
+        });
+}
+
+// --- Rebuild provider dropdown with custom providers ---
+function rebuildProviderDropdown() {
+    const sel = document.getElementById('st-provider');
+    const current = sel.value;
+    let html = '';
+    Object.entries(PROVIDER_OPTIONS).forEach(([value, label]) => {
+        if (value.startsWith('custom:')) return;   // 自定义 Provider 在下方单独分组
+        html += `<option value="${value}">${escapeHtml(label)}</option>`;
+    });
+    if (CUSTOM_PROVIDERS.length > 0) {
+        html += '<option disabled>── 自定义 ──</option>';
+        CUSTOM_PROVIDERS.forEach(p => {
+            html += `<option value="custom:${p.id}">${escapeHtml(p.name)}</option>`;
+        });
+    }
+    sel.innerHTML = html;
+    // Restore selection if still valid
+    if ([...sel.options].some(o => o.value === current)) {
+        sel.value = current;
+    }
+}
+
+// --- Provider change ---
+function onProviderChange() {
+    const provider = document.getElementById('st-provider').value;
+    const sel = document.getElementById('st-model');
+    let models;
+
+    if (provider === 'sensenova') {
+        models = SENSENOVA_MODELS;
+    } else if (provider === 'gemini') {
+        models = GEMINI_MODELS;
+    } else if (provider.startsWith('custom:')) {
+        const pid = provider.split(':')[1];
+        const cp = CUSTOM_PROVIDERS.find(p => p.id === pid);
+        models = cp ? (cp.models || []) : [];
+    } else {
+        models = OPENAI_MODELS;
+    }
+    sel.innerHTML = models.map(m => `<option value="${m}">${m}</option>`).join('');
+
+    // 推理档位：SenseNova=reasoning_effort，Gemini=thinking_level（多一个 minimal）
+    const withThinking = provider === 'sensenova' || provider === 'gemini';
+    document.getElementById('st-reasoning-wrap').style.display = withThinking ? '' : 'none';
+    document.getElementById('st-reasoning-label').textContent =
+        provider === 'gemini' ? 'Thinking Level' : 'Reasoning Effort';
+    const selR = document.getElementById('st-reasoning');
+    const prevLevel = selR.value;
+    const levels = provider === 'gemini'
+        ? ['minimal', 'low', 'medium', 'high'] : ['low', 'medium', 'high'];
+    selR.innerHTML = levels.map(v => `<option value="${v}">${v[0].toUpperCase() + v.slice(1)}</option>`).join('');
+    selR.value = levels.includes(prevLevel) ? prevLevel : 'low';
+    updateModelBadge();
+}
+
+// --- Custom model ---
+function toggleCustomModel() {
+    const input = document.getElementById('st-model-custom');
+    input.classList.toggle('hidden');
+    if (!input.classList.contains('hidden')) {
+        input.focus();
+    }
+}
+
+function getSelectedModel() {
+    const custom = document.getElementById('st-model-custom');
+    if (!custom.classList.contains('hidden') && custom.value.trim()) {
+        return custom.value.trim();
+    }
+    return document.getElementById('st-model').value;
+}
+
+function addModelOption(name) {
+    const sel = document.getElementById('st-model');
+    if (![...sel.options].some(o => o.value === name)) {
+        const opt = document.createElement('option');
+        opt.value = name;
+        opt.textContent = name;
+        sel.appendChild(opt);
+    }
+}
+
+function updateModelBadge() {
+    document.getElementById('chat-model-badge').textContent = getSelectedModel();
+}
+
+// --- Quick prompts ---
+function quickPrompt(label, text) {
+    document.getElementById('st-system-prompt').value = text;
+}
+
+// --- Provider Modal ---
+function openProviderModal() {
+    const modal = document.getElementById('provider-modal');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    renderProviderList();
+    fetchProviders();
+}
+
+function closeProviderModal(e) {
+    if (e && e.target !== e.currentTarget) return;
+    const modal = document.getElementById('provider-modal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+    resetProviderForm();
+}
+
+async function fetchProviders() {
+    const resp = await fetch('/api/ai_test/providers');
+    const data = await resp.json();
+    CUSTOM_PROVIDERS = data.providers || [];
+    renderProviderList();
+    rebuildProviderDropdown();
+}
+
+function renderProviderList() {
+    const list = document.getElementById('provider-list');
+    if (!CUSTOM_PROVIDERS.length) {
+        list.innerHTML = '<p class="text-xs text-slate-500 text-center py-4">暂无自定义 Provider</p>';
+        return;
+    }
+    list.innerHTML = CUSTOM_PROVIDERS.map(p => `
+        <div class="bg-slate-800 border border-slate-700 rounded-lg p-3 flex items-center justify-between">
+            <div class="flex-1 min-w-0">
+                <div class="text-sm font-medium text-white">${escapeHtml(p.name)}</div>
+                <div class="text-xs text-slate-400 truncate">${escapeHtml(p.base_url)}</div>
+                <div class="text-[10px] text-slate-500 mt-0.5">${(p.models || []).length} 个模型 · Key: ${p.has_api_key ? '✓ ' + escapeHtml(p.api_key_masked) : '✗'}</div>
+            </div>
+            <div class="flex gap-1.5 ml-2 shrink-0">
+                <button onclick="editProvider('${escapeHtml(p.id)}')" class="px-2.5 py-1 bg-slate-700 hover:bg-indigo-600 rounded text-xs text-white transition">编辑</button>
+                <button onclick="deleteProvider('${escapeHtml(p.id)}')" class="px-2.5 py-1 bg-slate-700 hover:bg-red-600 rounded text-xs text-red-300 transition">删除</button>
+            </div>
+        </div>`).join('');
+}
+
+function editProvider(id) {
+    const p = CUSTOM_PROVIDERS.find(x => x.id === id);
+    if (!p) return;
+    document.getElementById('provider-form-title').textContent = `编辑: ${p.name}`;
+    document.getElementById('pf-id').value = p.id;
+    document.getElementById('pf-name').value = p.name;
+    document.getElementById('pf-base-url').value = p.base_url;
+    // 明文 Key 不再下发：留空即保留原值
+    const keyInput = document.getElementById('pf-api-key');
+    keyInput.value = '';
+    keyInput.placeholder = p.has_api_key
+        ? `留空保留当前 Key（${p.api_key_masked}）` : 'API Key (sk-...)';
+    document.getElementById('pf-models').value = (p.models || []).join(', ');
+}
+
+function resetProviderForm() {
+    document.getElementById('provider-form-title').textContent = '新建 Provider';
+    document.getElementById('pf-id').value = '';
+    document.getElementById('pf-name').value = '';
+    document.getElementById('pf-base-url').value = '';
+    const keyInput = document.getElementById('pf-api-key');
+    keyInput.value = '';
+    keyInput.placeholder = 'API Key (sk-...)';
+    document.getElementById('pf-models').value = '';
+}
+
+async function saveProvider() {
+    const id = document.getElementById('pf-id').value;
+    const name = document.getElementById('pf-name').value.trim();
+    const baseUrl = document.getElementById('pf-base-url').value.trim();
+    const apiKey = document.getElementById('pf-api-key').value.trim();
+    const modelsRaw = document.getElementById('pf-models').value.trim();
+    if (!name || !baseUrl) { alert('名称和 Base URL 不能为空'); return; }
+
+    const body = { name, base_url: baseUrl, models: modelsRaw };
+    if (apiKey) body.api_key = apiKey;   // 留空 = 保留原 Key
+    let resp;
+    if (id) {
+        resp = await fetch(`/api/ai_test/providers/${id}`, {
+            method: 'PUT', headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(body),
+        });
+    } else {
+        resp = await fetch('/api/ai_test/providers', {
+            method: 'POST', headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(body),
+        });
+    }
+    const out = await resp.json().catch(() => ({}));
+    if (!resp.ok || out.ok === false) {
+        alert(`保存失败：${out.error || ('HTTP ' + resp.status)}`);
+        return;
+    }
+    resetProviderForm();
+    await fetchProviders();
+}
+
+async function deleteProvider(id) {
+    const p = CUSTOM_PROVIDERS.find(x => x.id === id);
+    if (!p) return;
+    if (!confirm(`删除 Provider "${p.name}"?`)) return;
+    const resp = await fetch(`/api/ai_test/providers/${id}`, { method: 'DELETE' });
+    if (!resp.ok) {
+        const out = await resp.json().catch(() => ({}));
+        alert(`删除失败：${out.error || ('HTTP ' + resp.status)}`);
+        return;
+    }
+    // If current provider was deleted, switch to default
+    const sel = document.getElementById('st-provider');
+    if (sel.value === `custom:${id}`) {
+        sel.value = 'sensenova';
+        onProviderChange();
+    }
+    await fetchProviders();
+}
+
+// --- Send message ---
+function handleKeydown(e) {
+    if (e.key === 'Enter' && !e.shiftKey) {
+        e.preventDefault();
+        sendMessage();
+    }
+}
+
+async function sendMessage() {
+    const input = document.getElementById('chat-input');
+    const text = input.value.trim();
+    if (!text || isGenerating) return;
+
+    input.value = '';
+    isGenerating = true;
+    setGeneratingUI(true);
+
+    // Add user message
+    conversation.push({ role: 'user', content: text });
+    renderMessage('user', text);
+
+    // Create assistant placeholder
+    const assistantEl = renderMessage('assistant', '');
+    const contentEl = assistantEl.querySelector('.msg-content');
+
+    const params = collectParams();
+    updateModelBadge();
+
+    const startTime = Date.now();
+    let fullResponse = '';
+    let usage = null;
+    abortController = new AbortController();
+
+    try {
+        const resp = await fetch('/api/ai_test/chat', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            signal: abortController.signal,
+            body: JSON.stringify({
+                messages: conversation.filter(m => m.role === 'user' || m.role === 'assistant')
+                    .map(m => ({ role: m.role, content: m.content })),
+                system_prompt: params.system_prompt,
+                provider: params.provider,
+                model: params.model,
+                temperature: params.temperature,
+                max_tokens: params.max_tokens,
+                reasoning_effort: params.reasoning_effort,
+                api_key: params.api_key,
+            }),
+        });
+
+        if (!resp.ok) {
+            const err = await resp.json().catch(() => ({ error: 'Request failed' }));
+            throw new Error(err.error || `HTTP ${resp.status}`);
+        }
+
+        const reader = resp.body.getReader();
+        const decoder = new TextDecoder();
+        let buffer = '';
+
+        while (true) {
+            const { done, value } = await reader.read();
+            if (done) break;
+            buffer += decoder.decode(value, { stream: true });
+
+            const lines = buffer.split('\n');
+            buffer = lines.pop();
+
+            for (const line of lines) {
+                if (!line.startsWith('data: ')) continue;
+                const data = line.slice(6).trim();
+                if (!data) continue;
+                let evt;
+                try {
+                    evt = JSON.parse(data);
+                } catch (e) {
+                    console.error('Parse error:', e);
+                    continue;
+                }
+                // error 事件必须在 JSON 解析的 try 之外处理，否则会被静默吞掉
+                if (evt.type === 'error') {
+                    throw new Error(evt.error || '上游返回错误');
+                }
+                if (evt.type === 'token') {
+                    fullResponse += evt.content;
+                    contentEl.innerHTML = marked.parse(fullResponse);
+                    scrollToBottom();
+                } else if (evt.type === 'done') {
+                    usage = evt.usage || null;
+                    const elapsed = Date.now() - startTime;
+                    addMessageMeta(assistantEl, params.model, elapsed, usage);
+                    stats.requests++;
+                    stats.time += elapsed;
+                    if (usage && usage.total_tokens) {
+                        stats.tokens += usage.total_tokens;
+                    }
+                    updateStats();
+                }
+            }
+        }
+
+        if (!fullResponse.trim()) {
+            // 上游返回空内容：常见于推理吃满 token 预算或网关静默失败
+            contentEl.innerHTML = '<span class="text-amber-400">⚠️ 模型未返回文本（可能推理占满了 Max Tokens，或该模型/网关返回为空）。可提高 Max Tokens 或换模型重试。</span>';
+        }
+        conversation.push({ role: 'assistant', content: fullResponse, model: params.model });
+
+    } catch (err) {
+        if (err.name === 'AbortError') {
+            // 用户点了「停止」：保留已生成的部分并标记
+            contentEl.innerHTML = fullResponse.trim()
+                ? marked.parse(fullResponse) + '<div class="text-xs text-slate-400 mt-2">⏹ 已停止生成</div>'
+                : '<span class="text-slate-400">⏹ 已停止生成</span>';
+            conversation.push({ role: 'assistant', content: fullResponse, model: params.model });
+        } else {
+            contentEl.innerHTML = `<span class="text-red-400">❌ ${escapeHtml(err.message)}</span>`;
+            // Remove the user message from conversation if it was the last one
+            if (conversation.length > 0 && conversation[conversation.length - 1].role === 'user') {
+                conversation.pop();
+            }
+        }
+    } finally {
+        abortController = null;
+        isGenerating = false;
+        setGeneratingUI(false);
+        document.getElementById('chat-input').focus();
+    }
+}
+
+function stopGeneration() {
+    if (abortController) {
+        abortController.abort();
+        abortController = null;
+    }
+    isGenerating = false;
+    setGeneratingUI(false);
+    document.getElementById('chat-input').focus();
+}
+
+// --- Collect params ---
+function collectParams() {
+    return {
+        provider: document.getElementById('st-provider').value,
+        model: getSelectedModel(),
+        temperature: parseFloat(document.getElementById('st-temperature').value),
+        max_tokens: parseInt(document.getElementById('st-max-tokens').value) || 8192,
+        reasoning_effort: document.getElementById('st-reasoning').value,
+        system_prompt: document.getElementById('st-system-prompt').value.trim(),
+        api_key: document.getElementById('st-api-key').value.trim(),
+    };
+}
+
+// --- UI helpers ---
+function renderMessage(role, content) {
+    const container = document.getElementById('chat-messages');
+    // Remove placeholder
+    const placeholder = container.querySelector('.text-center');
+    if (placeholder) placeholder.remove();
+
+    const wrapper = document.createElement('div');
+    wrapper.className = role === 'user'
+        ? 'flex justify-end'
+        : 'flex justify-start';
+
+    const bubble = document.createElement('div');
+    bubble.className = role === 'user'
+        ? 'max-w-[75%] bg-indigo-600 text-white rounded-2xl rounded-br-md px-4 py-3 text-sm'
+        : 'max-w-[75%] bg-slate-700 text-slate-100 rounded-2xl rounded-bl-md px-4 py-3 text-sm';
+
+    if (role === 'user') {
+        bubble.textContent = content;
+    } else {
+        const contentDiv = document.createElement('div');
+        contentDiv.className = 'msg-content';
+        contentDiv.innerHTML = content ? marked.parse(content) : '<span class="text-slate-400 animate-pulse">思考中...</span>';
+        bubble.appendChild(contentDiv);
+
+        const metaDiv = document.createElement('div');
+        metaDiv.className = 'msg-meta mt-2 pt-2 border-t border-slate-600 text-xs text-slate-400 flex items-center gap-3';
+        metaDiv.style.display = 'none';
+        bubble.appendChild(metaDiv);
+    }
+
+    wrapper.appendChild(bubble);
+    container.appendChild(wrapper);
+    scrollToBottom();
+    return wrapper.querySelector('div'); // return the bubble div
+}
+
+function addMessageMeta(el, model, elapsedMs, usage) {
+    const meta = el.querySelector('.msg-meta');
+    if (!meta) return;
+    meta.style.display = 'flex';
+    const secs = (elapsedMs / 1000).toFixed(1);
+    let html = `<span>🤖 ${escapeHtml(model)}</span><span>⏱️ ${secs}s</span>`;
+    if (usage) {
+        html += `<span>📊 ${usage.total_tokens || '?'} tokens`;
+        const parts = [];
+        if (usage.prompt_tokens) parts.push(`in:${usage.prompt_tokens}`);
+        if (usage.completion_tokens) parts.push(`out:${usage.completion_tokens}`);
+        if (parts.length) html += ` (${parts.join(' / ')})`;
+        html += '</span>';
+    }
+    // Add copy button
+    html += `<button onclick="copyMessage(this)" class="ml-auto text-slate-500 hover:text-slate-300 transition">📋 复制</button>`;
+    meta.innerHTML = html;
+    meta.dataset.raw = el.querySelector('.msg-content').textContent;
+}
+
+function copyMessage(btn) {
+    const raw = btn.closest('.msg-meta').dataset.raw;
+    navigator.clipboard.writeText(raw).then(() => {
+        btn.textContent = '✓ 已复制';
+        setTimeout(() => { btn.textContent = '📋 复制'; }, 2000);
+    });
+}
+
+function clearChat() {
+    if (conversation.length > 0 && !confirm('清空所有对话？')) return;
+    conversation = [];
+    const container = document.getElementById('chat-messages');
+    container.innerHTML = `
+        <div class="text-center text-slate-500 text-sm py-12">
+            <div class="text-4xl mb-3">🧪</div>
+            <p>开始与大模型对话</p>
+            <p class="text-xs mt-1">选择左侧参数，在下方输入消息</p>
+        </div>`;
+}
+
+function setGeneratingUI(generating) {
+    document.getElementById('btn-send').classList.toggle('hidden', generating);
+    document.getElementById('btn-stop').classList.toggle('hidden', !generating);
+    document.getElementById('chat-input').disabled = generating;
+    document.getElementById('chat-status').textContent = generating ? '生成中...' : '就绪';
+}
+
+function scrollToBottom() {
+    const container = document.getElementById('chat-messages');
+    container.scrollTop = container.scrollHeight;
+}
+
+function updateStats() {
+    document.getElementById('stat-requests').textContent = stats.requests;
+    document.getElementById('stat-tokens').textContent = stats.tokens;
+    document.getElementById('stat-time').textContent = (stats.time / 1000).toFixed(1) + 's';
+}
+
+// Save system prompt to config when it changes
+let saveTimer = null;
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('st-system-prompt').addEventListener('input', () => {
+        clearTimeout(saveTimer);
+        saveTimer = setTimeout(() => {
+            fetch('/api/ai_test/config', {
+                method: 'PUT',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ system_prompt: document.getElementById('st-system-prompt').value }),
+            });
+        }, 1000);
+    });
+});
+</script>
+{% endblock %}

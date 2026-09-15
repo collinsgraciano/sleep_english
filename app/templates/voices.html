@@ -1,0 +1,982 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="voices-page p-6 max-w-6xl mx-auto">
+    <div class="flex items-center justify-between mb-6">
+        <div>
+            <h2 class="text-2xl font-bold text-white">🎤 QwenTTS 音色管理</h2>
+            <p class="text-sm text-slate-400 mt-1">
+                当前 TTS 引擎:
+                {% if config.tts_engine == 'qwen' %}
+                    <span class="text-green-400 font-medium">Qwen3-TTS ✓</span>
+                {% else %}
+                    <span class="text-amber-400">{{ config.tts_engine }}</span>
+                    <a href="/config" class="text-indigo-400 hover:underline ml-2">→ 去切换</a>
+                {% endif %}
+            </p>
+        </div>
+        <!-- 卡片缩放控制（localStorage 记忆） -->
+        <div class="flex items-center gap-2 bg-slate-800 border border-slate-700 rounded-lg px-3 py-2">
+            <span class="text-xs text-slate-400 whitespace-nowrap">卡片大小</span>
+            <input type="range" id="card-scale" min="40" max="150" step="5" value="50"
+                class="w-28 accent-indigo-500 cursor-pointer" title="拖动调整所有卡片大小（双击恢复 50%）">
+            <span id="card-scale-label" class="text-xs text-slate-300 w-9 text-right">50%</span>
+        </div>
+    </div>
+
+    <!-- 区域 A: 预设音色 (默认折叠) -->
+    <section class="mb-8">
+        <h3 id="preset-header" onclick="togglePresetSection()"
+            class="text-sm font-semibold text-slate-300 mb-3 flex items-center gap-2 cursor-pointer select-none hover:text-white transition">
+            <span>📋</span> 预设音色 (9 个)
+            <span id="preset-arrow" class="text-slate-500 text-xs">▸</span>
+        </h3>
+        <div id="preset-grid" class="vc-grid grid hidden">
+            <!-- Cards rendered by JS -->
+        </div>
+    </section>
+
+    <!-- 区域 A3: 自定义音色 (Voice Clone) -->
+    <section class="mb-8">
+        <h3 class="text-sm font-semibold text-slate-300 mb-3 flex items-center gap-2">
+            <span>🎭</span> 自定义音色 (Voice Clone)
+            <span class="text-[10px] text-slate-500 font-normal">❄️ 标记 = 从设计音色自动冻结而来（音色已锁定，跨次生成不漂移）；设计音色保存或服务启动时均自动冻结为克隆音色</span>
+        </h3>
+
+        <!-- Upload form -->
+        <div class="bg-slate-800 rounded-xl p-4 mb-3 border border-slate-700">
+            <div class="grid grid-cols-2 gap-3 mb-3">
+                <input type="text" id="cv-name" placeholder="音色名称 (如 MyVoice1)"
+                    class="bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white">
+                <select id="cv-gender" class="bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white">
+                    <option value="male">男声</option>
+                    <option value="female">女声</option>
+                </select>
+            </div>
+            <div class="grid grid-cols-2 gap-3 mb-3">
+                <select id="cv-language" class="bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white">
+                    <option value="english">English</option>
+                    <option value="chinese">中文</option>
+                </select>
+                <input type="file" id="cv-audio" accept="audio/*" placeholder="参考音频"
+                    class="bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white">
+            </div>
+            <textarea id="cv-reftext" placeholder="参考音频对应的文字内容 (必填)"
+                class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white mb-3 h-20 resize-none"></textarea>
+            <button onclick="createCustomVoice()" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-lg text-sm text-white">
+                创建克隆音色
+            </button>
+        </div>
+
+        <!-- 设计音色创建表单（原「设计音色」区，默认折叠；保存后自动冻结为克隆音色） -->
+        <details class="bg-slate-800/60 rounded-xl border border-slate-700 mb-3">
+            <summary class="cursor-pointer select-none px-4 py-3 text-sm text-slate-300 hover:text-white transition">
+                ✨ 用文字描述设计新音色（保存后自动 ❄️ 冻结为克隆音色）
+            </summary>
+            <div class="px-4 pb-4">
+                <div class="grid grid-cols-3 gap-3 mb-3">
+                    <input type="text" id="dv-name" placeholder="音色名称 (如 Luna)"
+                        class="bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white">
+                    <select id="dv-gender" class="bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white">
+                        <option value="female">女声</option>
+                        <option value="male">男声</option>
+                    </select>
+                    <select id="dv-language" class="bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white">
+                        <option value="english">English</option>
+                        <option value="chinese">中文</option>
+                    </select>
+                </div>
+                <textarea id="dv-instruct" placeholder="音色描述 instruct (必填)，如: Speak in a warm, friendly young American female voice with a mid-range pitch and a relaxed pace."
+                    class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white mb-3 h-20 resize-none"></textarea>
+                <button onclick="createDesignedVoice()" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-lg text-sm text-white">
+                    创建设计音色
+                </button>
+            </div>
+        </details>
+
+        <!-- LLM 随机生成候选音色 -->
+        <div class="bg-slate-800/60 rounded-xl p-4 mb-3 border border-slate-700">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                <div class="text-xs text-slate-400">
+                    🎲 LLM 随机生成音色 — 批量生成设计音色候选（可指定性别），试听后挑选喜欢的保存
+                    <span class="text-slate-500">（保存后自动 ❄️ 冻结为克隆音色；重新生成会替换当前候选）</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <select id="cand-count" class="bg-slate-900 border border-slate-600 rounded-lg px-2 py-1.5 text-xs text-white">
+                        <option value="5">5 个</option>
+                        <option value="10" selected>10 个</option>
+                        <option value="15">15 个</option>
+                        <option value="20">20 个</option>
+                    </select>
+                    <select id="cand-gender" class="bg-slate-900 border border-slate-600 rounded-lg px-2 py-1.5 text-xs text-white">
+                        <option value="any" selected>任意性别</option>
+                        <option value="female">女声</option>
+                        <option value="male">男声</option>
+                    </select>
+                    <select id="cand-lang" class="bg-slate-900 border border-slate-600 rounded-lg px-2 py-1.5 text-xs text-white">
+                        <option value="english" selected>英文</option>
+                        <option value="chinese">中文</option>
+                        <option value="mixed">混合</option>
+                    </select>
+                    <button id="cand-gen-btn" onclick="generateCandidates()"
+                        class="px-4 py-1.5 bg-indigo-600 hover:bg-indigo-500 rounded-lg text-xs text-white transition">
+                        🎲 LLM 随机生成
+                    </button>
+                </div>
+            </div>
+
+            <!-- 候选管理操作行（有候选时显示） -->
+            <div id="cand-actions" class="flex flex-wrap items-center gap-2 mb-3" style="display:none">
+                <button id="cand-preview-all-btn" onclick="generateAllPreviews()"
+                    class="px-3 py-1.5 bg-emerald-700 hover:bg-emerald-600 rounded-lg text-xs text-white transition disabled:opacity-40 disabled:cursor-not-allowed">
+                    🎧 一键生成试听
+                </button>
+                <button id="cand-select-all-btn" onclick="toggleSelectAll()"
+                    class="px-3 py-1.5 bg-slate-700 hover:bg-slate-600 rounded-lg text-xs text-white transition">
+                    ☑ 全选
+                </button>
+                <button id="cand-delete-selected-btn" onclick="deleteSelectedCandidates()" disabled
+                    class="px-3 py-1.5 bg-red-700 hover:bg-red-600 rounded-lg text-xs text-white transition disabled:opacity-40 disabled:cursor-not-allowed">
+                    🗑 删除选中 (0)
+                </button>
+                <span id="cand-preview-status" class="text-xs text-slate-400"></span>
+            </div>
+
+            <div id="candidate-grid" class="vc-grid grid">
+                <!-- Candidate cards rendered by JS -->
+            </div>
+        </div>
+
+        <!-- Custom voice list -->
+        <div id="custom-grid" class="vc-grid grid">
+            <!-- Cards rendered by JS -->
+        </div>
+    </section>
+
+    <!-- 区域 B: 角色素材库音色绑定 -->
+    <section class="mb-8">
+        <h3 class="text-sm font-semibold text-slate-300 mb-3 flex items-center gap-2">
+            <span>🔗</span> 角色素材库音色绑定
+        </h3>
+        <div id="binding-grid" class="vc-grid vc-grid-wide grid">
+            {% if not library_chars %}
+            <p class="text-xs text-slate-500 col-span-full">素材库为空。请先在控制台收藏角色。</p>
+            {% endif %}
+            {% for char in library_chars %}
+            <div class="bcard bg-slate-800 border border-slate-700">
+                {% if char.image_url %}
+                <img src="{{ char.image_url }}" class="bcard-img max-w-full object-cover bg-slate-800" onerror="this.style.opacity='0.3'">
+                {% else %}
+                <div class="bcard-img bg-slate-700 flex items-center justify-center" style="font-size: max(14px, calc(28px * var(--vc)));">👤</div>
+                {% endif %}
+                <div class="bcard-name font-medium text-slate-300 text-center truncate w-full" title="{{ char.description }}">{{ char.name }}</div>
+                <div class="bcard-meta text-slate-500">{{ char.gender or '?' }} · {{ char.structure or '?' }}</div>
+                <select class="bcard-select voice-bind w-full bg-slate-900 border border-slate-600 rounded text-white"
+                    data-lib-id="{{ char.id }}">
+                    <option value="">音色→</option>
+                </select>
+                <button class="bcard-btn lib-preview-btn w-full bg-slate-700 hover:bg-indigo-600 text-white transition"
+                    data-lib-id="{{ char.id }}">▶ 试听音色</button>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <!-- 区域 C: 默认音色配置 -->
+    <section class="mb-8">
+        <h3 class="text-sm font-semibold text-slate-300 mb-3 flex items-center gap-2">
+            <span>⚙️</span> 默认音色配置
+        </h3>
+        <div class="bg-slate-800 rounded-xl p-5 border border-slate-700">
+            <p class="text-xs text-slate-400 mb-3">非库角色按性别自动分配以下默认音色（按视频模式分别保存；未绑定的同性别角色依次用第一/第二/第三默认；主持人按其性别取对应主持人默认音色）：</p>
+            <div id="defaults-mode-tabs" class="flex flex-wrap gap-2 mb-4"></div>
+            <div class="grid grid-cols-3 gap-4">
+                <div>
+                    <label class="text-xs text-slate-400 block mb-1">默认男声（第一）</label>
+                    <select id="default-male" class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white"></select>
+                </div>
+                <div>
+                    <label class="text-xs text-slate-400 block mb-1">默认女声（第一）</label>
+                    <select id="default-female" class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white"></select>
+                </div>
+                <div>
+                    <label class="text-xs text-slate-400 block mb-1">主持人默认音色（男）</label>
+                    <select id="default-host-male" class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white"></select>
+                </div>
+            </div>
+            <div class="grid grid-cols-3 gap-4 mt-4">
+                <div>
+                    <label class="text-xs text-slate-400 block mb-1">第二默认男声（同性别冲突时）</label>
+                    <select id="default-male2" class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white"></select>
+                </div>
+                <div>
+                    <label class="text-xs text-slate-400 block mb-1">第二默认女声（同性别冲突时）</label>
+                    <select id="default-female2" class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white"></select>
+                </div>
+                <div>
+                    <label class="text-xs text-slate-400 block mb-1">主持人默认音色（女）</label>
+                    <select id="default-host-female" class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white"></select>
+                </div>
+            </div>
+            <div class="grid grid-cols-3 gap-4 mt-4">
+                <div>
+                    <label class="text-xs text-slate-400 block mb-1">中文默认男声（第一）</label>
+                    <select id="default-male-zh" class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white"></select>
+                </div>
+                <div>
+                    <label class="text-xs text-slate-400 block mb-1">中文默认女声（第一）</label>
+                    <select id="default-female-zh" class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white"></select>
+                </div>
+            </div>
+            <div class="grid grid-cols-3 gap-4 mt-4">
+                <div>
+                    <label class="text-xs text-slate-400 block mb-1">中文第二默认男声（同性别冲突时）</label>
+                    <select id="default-male-zh2" class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white"></select>
+                </div>
+                <div>
+                    <label class="text-xs text-slate-400 block mb-1">中文第二默认女声（同性别冲突时）</label>
+                    <select id="default-female-zh2" class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white"></select>
+                </div>
+            </div>
+            <div id="third-default-row" class="grid grid-cols-3 gap-4 mt-4 hidden">
+                <div>
+                    <label class="text-xs text-slate-400 block mb-1">第三默认男声（quest 三个同性别角色）</label>
+                    <select id="default-male3" class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white"></select>
+                </div>
+                <div>
+                    <label class="text-xs text-slate-400 block mb-1">第三默认女声（quest 三个同性别角色）</label>
+                    <select id="default-female3" class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white"></select>
+                </div>
+            </div>
+            <button onclick="saveDefaults()" class="mt-4 px-4 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-lg text-sm text-white">保存默认配置</button>
+        </div>
+    </section>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+let ALL_VOICES = [];
+let PRESET_VOICES = [];
+
+// --- Toggle preset section (collapsed by default) ---
+function togglePresetSection() {
+    const grid = document.getElementById('preset-grid');
+    const arrow = document.getElementById('preset-arrow');
+    grid.classList.toggle('hidden');
+    arrow.textContent = grid.classList.contains('hidden') ? '▸' : '▾';
+}
+
+// --- 卡片缩放（滑块 + localStorage 记忆） ---
+const CARD_SCALE_KEY = 'voices_card_scale_v1';
+
+function applyCardScale(pct) {
+    const v = Math.min(150, Math.max(40, Number(pct) || 50)) / 100;
+    document.querySelector('.voices-page').style.setProperty('--vc', String(v));
+    const slider = document.getElementById('card-scale');
+    slider.value = Math.round(v * 100);
+    document.getElementById('card-scale-label').textContent = Math.round(v * 100) + '%';
+    localStorage.setItem(CARD_SCALE_KEY, String(Math.round(v * 100)));
+}
+
+function initCardScale() {
+    const slider = document.getElementById('card-scale');
+    applyCardScale(localStorage.getItem(CARD_SCALE_KEY) || 50);
+    slider.addEventListener('input', () => applyCardScale(slider.value));
+    slider.addEventListener('dblclick', () => applyCardScale(50));
+}
+
+// --- Load voices ---
+function loadVoices() {
+    fetch('/api/qwen_voices/speakers')
+        .then(r => r.json())
+        .then(data => {
+            ALL_VOICES = data.speakers || [];
+            PRESET_VOICES = data.presets || [];
+            renderPresets();
+            renderCustomVoices();
+            populateDropdowns();
+            loadDefaults();
+        });
+}
+
+// --- Render preset voice cards ---
+function renderPresets() {
+    const grid = document.getElementById('preset-grid');
+    grid.innerHTML = '';
+    PRESET_VOICES.forEach(v => {
+        const card = document.createElement('div');
+        card.className = 'vcard bg-slate-800 border border-slate-700';
+
+        const icon = document.createElement('div');
+        icon.className = 'vcard-icon ' +
+            (v.gender === 'female' ? 'bg-pink-900/50' : 'bg-blue-900/50');
+        icon.textContent = v.gender === 'female' ? '♀' : '♂';
+
+        const name = document.createElement('div');
+        name.className = 'vcard-name font-medium text-white';
+        name.textContent = v.name;
+
+        const desc = document.createElement('div');
+        desc.className = 'vcard-desc text-slate-400';
+        desc.textContent = v.desc;
+
+        const lang = document.createElement('div');
+        const langMap = {zh: '中文', en: '英文', ja: '日语', ko: '韩语'};
+        lang.className = 'vcard-meta px-2 py-0.5 rounded-full ' +
+            (v.lang === 'en' ? 'bg-green-900/50 text-green-300' : 'bg-amber-900/50 text-amber-300');
+        lang.textContent = langMap[v.lang] || v.lang;
+
+        const btnRow = document.createElement('div');
+        btnRow.className = 'flex gap-1';
+
+        const btn = document.createElement('button');
+        btn.className = 'vbtn bg-slate-700 hover:bg-indigo-600 text-white transition';
+        btn.textContent = '▶ 试听';
+        btn.onclick = () => previewVoice(v.name, voiceLanguage(v));
+
+        const regenBtn = document.createElement('button');
+        regenBtn.className = 'vbtn bg-slate-700 hover:bg-amber-600 text-amber-300 transition';
+        regenBtn.textContent = '🔄';
+        regenBtn.title = '重新生成试听';
+        regenBtn.onclick = () => previewVoice(v.name, voiceLanguage(v), true);
+
+        btnRow.appendChild(btn);
+        btnRow.appendChild(regenBtn);
+
+        card.appendChild(icon);
+        card.appendChild(name);
+        card.appendChild(desc);
+        card.appendChild(lang);
+        card.appendChild(btnRow);
+        grid.appendChild(card);
+    });
+}
+
+// --- Render custom voices ---
+function renderCustomVoices() {
+    const grid = document.getElementById('custom-grid');
+    const customVoices = ALL_VOICES.filter(v => v.custom);
+    grid.innerHTML = '';
+    if (!customVoices.length) {
+        grid.innerHTML = '<p class="text-xs text-slate-500 col-span-full">暂无自定义音色。上传参考音频创建克隆音色，或用上方「文字描述设计新音色」自动冻结生成。</p>';
+        return;
+    }
+    customVoices.forEach(v => {
+        const card = document.createElement('div');
+        card.className = 'vcard bg-slate-800 border border-slate-700';
+
+        const icon = document.createElement('div');
+        icon.className = 'vcard-icon ' +
+            (v.frozen ? 'bg-sky-900/50' : 'bg-purple-900/50');
+        icon.textContent = v.frozen ? '❄️' : '🎭';
+        icon.title = v.frozen ? '冻结自设计音色 — 音色已锁定，跨次生成不漂移' : '';
+
+        const name = document.createElement('div');
+        name.className = 'vcard-name font-medium text-white';
+        name.textContent = v.name;
+
+        const desc = document.createElement('div');
+        desc.className = 'vcard-desc text-slate-400';
+        desc.textContent = (v.frozen ? '❄️ ' : '') + (v.desc || (v.frozen ? '冻结设计音色' : '自定义克隆音色'));
+        if (v.frozen) desc.title = 'instruct: ' + (v.instruct || '');
+
+        const meta = document.createElement('div');
+        meta.className = 'vcard-meta text-slate-500';
+        meta.textContent = `${v.gender || '?'} · ${v.lang || '?'}${v.frozen ? ' · 已冻结' : ''}`;
+
+        const btnRow = document.createElement('div');
+        btnRow.className = 'flex gap-1';
+
+        const previewBtn = document.createElement('button');
+        previewBtn.className = 'vbtn bg-slate-700 hover:bg-indigo-600 text-white transition';
+        previewBtn.textContent = '▶ 试听';
+        previewBtn.onclick = () => previewVoice(v.name, voiceLanguage(v));
+
+        const regenBtn = document.createElement('button');
+        regenBtn.className = 'vbtn bg-slate-700 hover:bg-amber-600 text-amber-300 transition';
+        regenBtn.textContent = '🔄';
+        regenBtn.title = '重新生成试听';
+        regenBtn.onclick = () => previewVoice(v.name, voiceLanguage(v), true);
+
+        const delBtn = document.createElement('button');
+        delBtn.className = 'vbtn bg-slate-700 hover:bg-red-600 text-red-300 transition';
+        delBtn.textContent = '✕';
+        delBtn.onclick = () => deleteCustomVoice(v.name);
+
+        btnRow.appendChild(previewBtn);
+        btnRow.appendChild(regenBtn);
+        btnRow.appendChild(delBtn);
+
+        card.appendChild(icon);
+        card.appendChild(name);
+        card.appendChild(desc);
+        card.appendChild(meta);
+        card.appendChild(btnRow);
+        grid.appendChild(card);
+    });
+}
+
+// --- Populate dropdowns (binding + defaults) ---
+function populateDropdowns() {
+    const options = ALL_VOICES.map(v =>
+        `<option value="${v.name}">${v.name}${v.designed ? ' (设计)' : (v.custom ? ' (克隆)' : '')} · ${v.desc || ''}</option>`
+    ).join('');
+
+    // Binding dropdowns
+    document.querySelectorAll('.voice-bind').forEach(sel => {
+        const libId = sel.dataset.libId;
+        sel.innerHTML = '<option value="">音色→</option>' + options;
+        // Load current binding from library char meta
+        {% for char in library_chars %}
+        if (libId === '{{ char.id }}' && '{{ char.qwen_speaker }}') {
+            sel.value = '{{ char.qwen_speaker }}';
+        }
+        {% endfor %}
+        sel.onchange = function() {
+            fetch('/api/character_library/' + libId + '/voice', {
+                method: 'PUT',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({qwen_speaker: this.value})
+            }).then(r => r.json()).then(d => {
+                if (d.ok) { /* saved */ }
+            });
+        };
+    });
+
+    // Default dropdowns
+    ['default-male', 'default-female', 'default-host-male', 'default-host-female',
+     'default-male2', 'default-female2',
+     'default-male-zh', 'default-female-zh', 'default-male-zh2', 'default-female-zh2',
+     'default-male3', 'default-female3'].forEach(id => {
+        const sel = document.getElementById(id);
+        sel.innerHTML = options;
+    });
+
+    // 素材库绑定试听按钮：试听当前下拉选择的音色
+    document.querySelectorAll('.lib-preview-btn').forEach(btn => {
+        btn.onclick = function() {
+            const sel = document.querySelector('.voice-bind[data-lib-id="' + btn.dataset.libId + '"]');
+            const speaker = sel ? sel.value : '';
+            if (!speaker) { alert('该角色尚未绑定音色，请先在下拉框选择'); return; }
+            const v = ALL_VOICES.find(x => x.name === speaker);
+            previewVoice(speaker, v ? voiceLanguage(v) : 'english', false, btn);
+        };
+    });
+}
+
+// --- 默认音色按模式分套 ---
+const DEFAULT_MODES = ['original', 'original_static', 'original_cutout', 'quest'];
+const DEFAULT_MODE_LABELS = {
+    original: '原版（AI 视频）', original_static: '原版（静态图）',
+    original_cutout: '原版（抠图）', quest: 'Quest（任务听力）'
+};
+const DEFAULTS_MODE_KEY = 'qwen_defaults_mode_v1';
+const DEFAULT_SELECT_IDS = ['default-male', 'default-female', 'default-host-male',
+                            'default-host-female', 'default-male2', 'default-female2',
+                            'default-male-zh', 'default-female-zh',
+                            'default-male-zh2', 'default-female-zh2',
+                            'default-male3', 'default-female3'];
+let defaultsMode = localStorage.getItem(DEFAULTS_MODE_KEY) || 'original';
+if (!DEFAULT_MODES.includes(defaultsMode)) defaultsMode = 'original';
+let lastDefaultsConfig = null;
+
+function renderDefaultsModeTabs() {
+    const tabs = document.getElementById('defaults-mode-tabs');
+    tabs.innerHTML = '';
+    DEFAULT_MODES.forEach(m => {
+        const btn = document.createElement('button');
+        btn.textContent = DEFAULT_MODE_LABELS[m];
+        btn.className = m === defaultsMode
+            ? 'px-3 py-1.5 rounded-lg text-xs bg-indigo-600 text-white'
+            : 'px-3 py-1.5 rounded-lg text-xs bg-slate-900 border border-slate-600 text-slate-300 hover:border-indigo-500';
+        btn.onclick = () => {
+            defaultsMode = m;
+            localStorage.setItem(DEFAULTS_MODE_KEY, m);
+            renderDefaultsModeTabs();
+            fillDefaults();
+        };
+        tabs.appendChild(btn);
+    });
+    document.getElementById('third-default-row').classList.toggle('hidden', defaultsMode !== 'quest');
+}
+
+function fillDefaults() {
+    if (!lastDefaultsConfig) return;
+    const sec = (lastDefaultsConfig.modes && lastDefaultsConfig.modes[defaultsMode]) || {};
+    DEFAULT_SELECT_IDS.forEach(id => {
+        const key = id.replace(/-/g, '_');
+        if (sec[key]) document.getElementById(id).value = sec[key];
+    });
+}
+
+// --- Load default config ---
+function loadDefaults() {
+    fetch('/api/qwen_voices/defaults')
+        .then(r => r.json())
+        .then(config => {
+            lastDefaultsConfig = config;
+            renderDefaultsModeTabs();
+            fillDefaults();
+        });
+}
+
+// --- Save defaults ---
+function saveDefaults() {
+    const data = {mode: defaultsMode};
+    DEFAULT_SELECT_IDS.forEach(id => {
+        data[id.replace(/-/g, '_')] = document.getElementById(id).value;
+    });
+    fetch('/api/qwen_voices/defaults', {
+        method: 'PUT',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(data)
+    }).then(r => r.json()).then(d => {
+        if (d.ok) alert(`默认音色配置已保存（${defaultsMode}）`);
+    });
+}
+
+// --- Preview voice (cached first; regenerate only when asked) ---
+function previewVoice(speaker, language, regenerate = false, btnEl = null) {
+    const text = language === 'chinese' ?
+        '你好，这是音色试听测试。' :
+        'Hello, this is a voice preview test.';
+    const btn = btnEl || (window.event ? window.event.target : null);
+    const origText = btn ? btn.textContent : '';
+    if (btn) { btn.disabled = true; btn.textContent = regenerate ? '⏳ 重新生成中...' : '⏳ 加载中...'; }
+
+    // Try cached preview first (instant) unless regenerating
+    const cacheFetch = regenerate
+        ? Promise.reject(new Error('regenerate'))
+        : fetch(`/api/qwen_voices/preview/${encodeURIComponent(speaker)}?language=${language}`, {cache: 'no-store'})
+            .then(r => { if (!r.ok) throw new Error('no cache'); return r.blob(); });
+
+    cacheFetch
+        .catch(() => fetch('/api/qwen_voices/preview', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({speaker, language, text, regenerate})
+        }).then(r => {
+            if (!r.ok) return r.json().then(d => { throw new Error(d.error || 'Failed'); });
+            return r.blob();
+        }))
+        .then(blob => {
+            const url = URL.createObjectURL(blob);
+            const audio = new Audio(url);
+            audio.play();
+            if (btn) { btn.disabled = false; btn.textContent = origText; }
+        })
+        .catch(err => {
+            alert('试听失败: ' + err.message);
+            if (btn) { btn.disabled = false; btn.textContent = origText; }
+        });
+}
+
+// --- Map voice lang field ('zh'/'en'/'chinese'/'english') to preview language ---
+function voiceLanguage(v) {
+    return (v.lang === 'zh' || v.lang === 'chinese') ? 'chinese' : 'english';
+}
+
+// --- Create designed voice (VoiceDesign，保存后自动冻结为克隆音色) ---
+function createDesignedVoice() {
+    const name = document.getElementById('dv-name').value.trim();
+    const gender = document.getElementById('dv-gender').value;
+    const language = document.getElementById('dv-language').value;
+    const instruct = document.getElementById('dv-instruct').value.trim();
+    if (!name || !instruct) { alert('请填写名称和音色描述'); return; }
+
+    fetch('/api/qwen_voices/designed', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({name, gender, language, instruct})
+    })
+        .then(r => r.json())
+        .then(data => {
+            if (data.ok) {
+                alert('设计音色已创建: ' + name + '\n\n正在自动❄️冻结为克隆音色（后台生成样本并锁定音色，约 30-60 秒），完成后出现在下方自定义音色列表');
+                document.getElementById('dv-name').value = '';
+                document.getElementById('dv-instruct').value = '';
+                loadVoices();
+                if (data.freezing) {
+                    pollFreezeStatus([name], jobs => {
+                        loadVoices();
+                        const j = jobs[name];
+                        if (j && j.status === 'error') {
+                            alert('❄️ 冻结失败（音色仍以设计模式可用）: ' + j.error);
+                        }
+                    });
+                }
+            } else {
+                alert('创建失败: ' + (data.error || ''));
+            }
+        });
+}
+
+// --- Create custom voice ---
+function createCustomVoice() {
+    const name = document.getElementById('cv-name').value.trim();
+    const gender = document.getElementById('cv-gender').value;
+    const language = document.getElementById('cv-language').value;
+    const refText = document.getElementById('cv-reftext').value.trim();
+    const audioInput = document.getElementById('cv-audio');
+    if (!name || !refText) { alert('请填写名称和参考文字'); return; }
+    if (!audioInput.files[0]) { alert('请上传参考音频'); return; }
+
+    const formData = new FormData();
+    formData.append('name', name);
+    formData.append('gender', gender);
+    formData.append('language', language);
+    formData.append('ref_text', refText);
+    formData.append('ref_audio', audioInput.files[0]);
+
+    fetch('/api/qwen_voices/custom', {method: 'POST', body: formData})
+        .then(r => r.json())
+        .then(data => {
+            if (data.ok) {
+                alert('克隆音色已创建: ' + name);
+                document.getElementById('cv-name').value = '';
+                document.getElementById('cv-reftext').value = '';
+                document.getElementById('cv-audio').value = '';
+                loadVoices();
+            } else {
+                alert('创建失败: ' + (data.error || ''));
+            }
+        });
+}
+
+// --- Delete custom voice ---
+function deleteCustomVoice(name) {
+    if (!confirm('删除自定义音色 "' + name + '"?')) return;
+    fetch('/api/qwen_voices/custom/' + encodeURIComponent(name), {method: 'DELETE'})
+        .then(r => r.json())
+        .then(data => { if (data.ok) loadVoices(); });
+}
+
+// --- LLM random voice candidates ---
+let CANDIDATES = [];
+const SELECTED = new Set();   // 选中的候选（批量删除用）
+let previewPollTimer = null;
+let lastDoneCount = -1;
+
+function loadCandidates() {
+    fetch('/api/qwen_voices/candidates')
+        .then(r => r.json())
+        .then(data => {
+            CANDIDATES = data.candidates || [];
+            renderCandidates();
+            // 页面加载时若批量试听任务进行中，恢复进度轮询
+            fetch('/api/qwen_voices/candidates/previews/status')
+                .then(r => r.json())
+                .then(job => {
+                    if (job.running) {
+                        document.getElementById('cand-preview-all-btn').disabled = true;
+                        startPreviewPolling();
+                    }
+                });
+        });
+}
+
+function renderCandidates() {
+    const grid = document.getElementById('candidate-grid');
+    const actionsRow = document.getElementById('cand-actions');
+    grid.innerHTML = '';
+    if (!CANDIDATES.length) {
+        actionsRow.style.display = 'none';
+        SELECTED.clear();
+        updateActionButtons();
+        grid.innerHTML = '<p class="text-xs text-slate-500 col-span-full">暂无候选音色。点击「LLM 随机生成」创建一批，试听后保存喜欢的。</p>';
+        return;
+    }
+    // 清理已不存在的选中项（候选被保存/删除后）
+    const names = new Set(CANDIDATES.map(v => v.name));
+    [...SELECTED].forEach(n => { if (!names.has(n)) SELECTED.delete(n); });
+    actionsRow.style.display = 'flex';
+
+    const candCardCls = selected => 'vcard vcard-cand bg-slate-800 border transition ' +
+        (selected ? 'border-indigo-500 bg-slate-700/60' : 'border-slate-600');
+
+    CANDIDATES.forEach(v => {
+        const selected = SELECTED.has(v.name);
+        const card = document.createElement('div');
+        card.className = candCardCls(selected);
+
+        // 左上角选择框（勾选后可批量删除）
+        const check = document.createElement('input');
+        check.type = 'checkbox';
+        check.className = 'vcard-check accent-indigo-500 cursor-pointer';
+        check.checked = selected;
+        check.title = '勾选不喜欢的，一键批量删除';
+        check.onchange = (e) => {
+            e.stopPropagation();
+            toggleSelect(v.name, e.target.checked);
+            card.className = candCardCls(e.target.checked);
+        };
+
+        // 右上角已缓存徽章
+        if (v.preview_cached) {
+            const cached = document.createElement('div');
+            cached.className = 'vcard-badge text-emerald-400';
+            cached.textContent = '✓ 已缓存';
+            card.appendChild(cached);
+        }
+
+        const icon = document.createElement('div');
+        icon.className = 'vcard-icon ' +
+            (v.gender === 'female' ? 'bg-fuchsia-900/50' : 'bg-indigo-900/50');
+        icon.textContent = v.gender === 'female' ? '♀' : '♂';
+
+        const name = document.createElement('div');
+        name.className = 'vcard-name font-medium text-white';
+        name.textContent = v.name;
+
+        const desc = document.createElement('div');
+        desc.className = 'vcard-desc text-slate-400';
+        desc.textContent = v.description || '随机设计音色';
+
+        const instruct = document.createElement('div');
+        instruct.className = 'vcard-instruct text-slate-500 text-left w-full overflow-hidden';
+        instruct.style.maxHeight = '3em';
+        instruct.title = v.instruct;
+        instruct.textContent = v.instruct;
+
+        const langNames = {en: '英文', zh: '中文'};
+        const meta = document.createElement('div');
+        meta.className = 'vcard-meta px-2 py-0.5 rounded-full ' +
+            ((v.language === 'en') ? 'bg-green-900/50 text-green-300' : 'bg-amber-900/50 text-amber-300');
+        meta.textContent = langNames[v.language] || v.language;
+
+        const btnRow = document.createElement('div');
+        btnRow.className = 'flex gap-1';
+
+        const previewBtn = document.createElement('button');
+        previewBtn.className = 'vbtn bg-slate-700 hover:bg-indigo-600 text-white transition';
+        previewBtn.textContent = '▶ 试听';
+        previewBtn.onclick = () => previewVoice(v.name, voiceLanguage({lang: v.language}));
+
+        const saveBtn = document.createElement('button');
+        saveBtn.className = 'vbtn bg-emerald-700 hover:bg-emerald-600 text-white transition';
+        saveBtn.textContent = '💾 保存';
+        saveBtn.title = '保存后自动冻结为克隆音色';
+        saveBtn.onclick = () => saveCandidate(v.name);
+
+        const delBtn = document.createElement('button');
+        delBtn.className = 'vbtn bg-slate-700 hover:bg-red-600 text-red-300 transition';
+        delBtn.textContent = '✕';
+        delBtn.title = '丢弃该候选';
+        delBtn.onclick = () => discardCandidate(v.name);
+
+        btnRow.appendChild(previewBtn);
+        btnRow.appendChild(saveBtn);
+        btnRow.appendChild(delBtn);
+
+        card.appendChild(check);
+        card.appendChild(icon);
+        card.appendChild(name);
+        card.appendChild(desc);
+        card.appendChild(instruct);
+        card.appendChild(meta);
+        card.appendChild(btnRow);
+        grid.appendChild(card);
+    });
+    updateActionButtons();
+}
+
+// --- 候选选择 + 批量删除 ---
+function toggleSelect(name, checked) {
+    if (checked) SELECTED.add(name); else SELECTED.delete(name);
+    updateActionButtons();
+}
+
+function toggleSelectAll() {
+    if (CANDIDATES.length && SELECTED.size >= CANDIDATES.length) {
+        SELECTED.clear();
+    } else {
+        CANDIDATES.forEach(v => SELECTED.add(v.name));
+    }
+    renderCandidates();
+}
+
+function updateActionButtons() {
+    const delBtn = document.getElementById('cand-delete-selected-btn');
+    delBtn.textContent = `🗑 删除选中 (${SELECTED.size})`;
+    delBtn.disabled = SELECTED.size === 0;
+    document.getElementById('cand-select-all-btn').textContent =
+        (CANDIDATES.length && SELECTED.size >= CANDIDATES.length) ? '☐ 全不选' : '☑ 全选';
+}
+
+function deleteSelectedCandidates() {
+    if (!SELECTED.size) return;
+    const names = [...SELECTED];
+    if (!confirm(`删除选中的 ${names.length} 个候选音色?`)) return;
+    fetch('/api/qwen_voices/candidates/delete_batch', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({names})
+    })
+        .then(r => r.json())
+        .then(data => {
+            if (data.ok) {
+                loadCandidates();
+            } else {
+                alert('删除失败: ' + (data.error || '未知错误'));
+            }
+        });
+}
+
+// --- 一键生成所有试听音频 ---
+function generateAllPreviews() {
+    const btn = document.getElementById('cand-preview-all-btn');
+    btn.disabled = true;
+    btn.textContent = '⏳ 启动中...';
+    fetch('/api/qwen_voices/candidates/previews/generate', {method: 'POST'})
+        .then(r => r.json())
+        .then(data => {
+            if (!data.ok) {
+                alert('启动失败: ' + (data.error || '未知错误'));
+                resetPreviewBtn();
+                return;
+            }
+            if (data.total === data.cached) {
+                CANDIDATES.forEach(v => v.preview_cached = true);
+                renderCandidates();
+                document.getElementById('cand-preview-status').textContent = '✅ 全部已有缓存';
+                resetPreviewBtn();
+                return;
+            }
+            startPreviewPolling();
+        })
+        .catch(err => { alert('启动失败: ' + err.message); resetPreviewBtn(); });
+}
+
+function startPreviewPolling() {
+    const btn = document.getElementById('cand-preview-all-btn');
+    const statusEl = document.getElementById('cand-preview-status');
+    if (previewPollTimer) clearInterval(previewPollTimer);
+    lastDoneCount = -1;
+    previewPollTimer = setInterval(() => {
+        fetch('/api/qwen_voices/candidates/previews/status')
+            .then(r => r.json())
+            .then(job => {
+                btn.textContent = `⏳ 生成中 ${job.completed}/${job.total}...`;
+                const doneList = job.done_names || [];
+                if (doneList.length !== lastDoneCount) {
+                    lastDoneCount = doneList.length;
+                    const doneSet = new Set(doneList);
+                    CANDIDATES.forEach(v => { if (doneSet.has(v.name)) v.preview_cached = true; });
+                    renderCandidates();
+                }
+                if (!job.running) {
+                    clearInterval(previewPollTimer);
+                    previewPollTimer = null;
+                    const failed = (job.failed || []).length;
+                    statusEl.textContent = `✅ 完成 ${job.completed}/${job.total}` +
+                        (failed ? `（${failed} 个失败）` : '');
+                    resetPreviewBtn();
+                }
+            });
+    }, 2000);
+}
+
+function resetPreviewBtn() {
+    const btn = document.getElementById('cand-preview-all-btn');
+    btn.disabled = false;
+    btn.textContent = '🎧 一键生成试听';
+}
+
+function generateCandidates() {
+    const btn = document.getElementById('cand-gen-btn');
+    const count = document.getElementById('cand-count').value;
+    const gender = document.getElementById('cand-gender').value;
+    const language = document.getElementById('cand-lang').value;
+    const orig = btn.textContent;
+    btn.disabled = true;
+    btn.textContent = '⏳ LLM 生成中...（可能需要 1-2 分钟）';
+
+    fetch('/api/qwen_voices/candidates/generate', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({count: parseInt(count, 10), language, gender})
+    })
+        .then(r => r.json())
+        .then(data => {
+            if (data.ok) {
+                CANDIDATES = data.candidates || [];
+                SELECTED.clear();
+                document.getElementById('cand-preview-status').textContent = '';
+                renderCandidates();
+            } else {
+                alert('生成失败: ' + (data.error || '未知错误'));
+            }
+        })
+        .catch(err => alert('生成失败: ' + err.message))
+        .finally(() => {
+            btn.disabled = false;
+            btn.textContent = orig;
+        });
+}
+
+// --- 保存即冻结：轮询冻结进度，完成后刷新 ---
+let freezePollTimer = null;
+
+function pollFreezeStatus(names, onFinish) {
+    if (freezePollTimer) clearInterval(freezePollTimer);
+    const statusEl = document.getElementById('cand-preview-status');
+    freezePollTimer = setInterval(() => {
+        fetch('/api/qwen_voices/freeze/status')
+            .then(r => r.json())
+            .then(data => {
+                const jobs = data.jobs || {};
+                const active = names.filter(n => {
+                    const st = jobs[n] && jobs[n].status;
+                    return st === 'pending' || st === 'running';
+                });
+                if (statusEl) {
+                    statusEl.textContent = active.length
+                        ? `❄️ 冻结中 ${names.length - active.length}/${names.length}...（生成样本并注册为克隆音色，约 30-60 秒）`
+                        : '';
+                }
+                if (!active.length) {
+                    clearInterval(freezePollTimer);
+                    freezePollTimer = null;
+                    onFinish(jobs);
+                }
+            }).catch(() => {});
+    }, 2000);
+}
+
+function saveCandidate(name) {
+    fetch('/api/qwen_voices/candidates/' + encodeURIComponent(name) + '/save', {method: 'POST'})
+        .then(r => r.json())
+        .then(data => {
+            if (data.ok) {
+                loadCandidates();   // 刷新候选列表
+                loadVoices();       // 刷新设计音色区 + 下拉框
+                if (data.freezing) {
+                    pollFreezeStatus([name], jobs => {
+                        loadVoices();
+                        const j = jobs[name];
+                        if (j && j.status === 'error') {
+                            alert('❄️ 冻结失败（音色仍以设计模式可用）: ' + j.error);
+                        }
+                    });
+                }
+            } else {
+                alert('保存失败: ' + (data.error || '未知错误'));
+            }
+        });
+}
+
+function discardCandidate(name) {
+    if (!confirm('丢弃候选音色 "' + name + '"?')) return;
+    fetch('/api/qwen_voices/candidates/' + encodeURIComponent(name), {method: 'DELETE'})
+        .then(r => r.json())
+        .then(data => { if (data.ok) loadCandidates(); });
+}
+
+// --- Init ---
+window.addEventListener('load', () => {
+    initCardScale();
+    loadVoices();
+    loadCandidates();
+});
+</script>
+{% endblock %}

@@ -1,0 +1,622 @@
+"""YouTube thumbnail generator — generates thumbnail with text baked into the AI prompt.
+
+Instead of generating a background then overlaying text via Pillow, this module
+puts the title text, level badge, and Chinese subtitle directly into the generate_image
+prompt so the AI renders everything in one step.
+
+Fallback: if AI image gen fails, falls back to Pillow text overlay on scene image.
+"""
+import os
+import re
+import sys
+import json
+import subprocess
+from pathlib import Path
+
+_PARENT = str(Path(__file__).parent.resolve())
+if _PARENT not in sys.path:
+    sys.path.insert(0, _PARENT)
+
+from media_utils import FONT_EN, FONT_ZH
+import sensenova_image
+
+# YouTube thumbnail specs
+THUMB_W = 1280
+THUMB_H = 720
+
+
+def _build_thumbnail_prompt(script: dict, structure: str) -> str:
+    """Build a prompt that generates a YouTube thumbnail in the reference style.
+
+    Reference style elements:
+    - Top-left orange banner: "A1-A2 LEVEL"
+    - Top-right green icon: "中英對照"
+    - Top center: "沉浸式聽力動畫" (listening) or "沉浸式英文動畫" (original)
+    - Main scene: characters in the active visual style + background + props
+    - Large text below characters: Traditional Chinese title (e.g. "在藥房買藥英文")
+    - Smaller text below: English title (e.g. "AT THE PHARMACY") + subtitle
+    - Bottom row of circular icons with bilingual text (scene keywords)
+
+    Key design: the LARGE title is in Traditional Chinese (the audience's native
+    language) for maximum CTR, with the English title as a smaller subtitle below.
+    """
+    from style_manager import get_active_style_prompt, get_active_thumbnail_hint
+    style_prompt = get_active_style_prompt()
+    thumb_hint = get_active_thumbnail_hint()
+    title_en = script.get("title", "ENGLISH LISTENING")
+    title_zh = script.get("title_zh", script.get("intro_zh", ""))
+    # Build a descriptive Chinese title: topic + "英文" suffix (e.g. "在藥房買藥英文")
+    if title_zh and not title_zh.endswith("英文"):
+        title_zh_large = f"{title_zh}英文"
+    else:
+        title_zh_large = title_zh or "日常英語"
+
+    cefr = script.get("cefr", "A2")
+    char_a_desc = script.get("char_a_description", "friendly young person")
+    char_b_desc = script.get("char_b_description", "friendly young person")
+    scene_zh = script.get("scene_zh", script.get("title", "everyday life"))
+    scene_en = script.get("scene", script.get("title", "everyday life"))
+
+    expression = script.get("thumbnail_expression", "surprised and excited")
+    action = script.get("thumbnail_action", "looking toward the camera and gesturing naturally")
+    subtitle = script.get("thumbnail_subtitle", "18句聽力練習")
+
+    icons = script.get("thumbnail_icons", [
+        {"en": "Dialogue", "zh": "會話"},
+        {"en": "Listening", "zh": "聽力"},
+        {"en": "Shadowing", "zh": "跟讀"},
+        {"en": "Practice", "zh": "練習"},
+    ])
+    icon_lines = "  ".join(f"{i['zh']} {i['en']}" for i in icons[:5])
+
+    if structure == "story":
+        top_center = "英文聽力故事"
+    elif structure == "quest":
+        top_center = "慢速英文聽力"
+    else:
+        top_center = "沉浸式英文動畫"
+
+    return f"""A highly complex {thumb_hint} YouTube thumbnail for {scene_en} English listening practice, complete with an orange banner at the top left reading "{cefr} LEVEL" and a green icon at the top right with the text "中英對照". At the top center, the text "{top_center}" is integrated.
+
+The main scene features a detailed view of {scene_en} with {char_a_desc} and {char_b_desc}, both with a {expression} expression, {action}. The background shows a detailed {scene_en} setting with relevant props and environment.
+
+The LARGE bold text below the characters reads "{title_zh_large}" in bright yellow font with thick black outline — this is the main title and must be the most prominent text on the thumbnail. Below this large Chinese title, smaller text reads "{title_en}" in white. Below that, even smaller text reads "{subtitle}".
+
+At the very bottom, a precise row of circular icons is rendered with legible text associated: {icon_lines}.
+
+Clean legible text, bright studio lighting, vibrant colors, highly detailed, professional composition, {style_prompt}, soft shadows, cinematic lighting.
+
+CRITICAL: The largest and most prominent text on the thumbnail must be the Traditional Chinese title "{title_zh_large}". The English title "{title_en}" must be noticeably smaller, serving as a subtitle below the Chinese title. The Chinese audience sees the Chinese title first — it must grab attention."""
+
+
+def assign_sleep_episode(script: dict, sleep_dir: str) -> int:
+    """缩略图集数：按主题系列自动递增（首次生成时 bump 计数文件）。
+
+    - script 已有 thumb_episode（重生成/复跑）→ 直接返回，不 bump；
+    - 计数存 {sleep_dir}/.thumb_episode.json（点前缀文件不进运行列表），
+      键 = topic（缺省 title）；参考缩略图的红色圆底 01/02 徽章。
+    """
+    try:
+        existing = int(script.get("thumb_episode", 0) or 0)
+    except (TypeError, ValueError):
+        existing = 0
+    if existing > 0:
+        return existing
+    topic = str(script.get("topic", "") or script.get("title", "") or "default").strip()
+    path = Path(sleep_dir) / ".thumb_episode.json"
+    data: dict = {}
+    if path.exists():
+        try:
+            loaded = json.loads(path.read_text(encoding="utf-8"))
+            if isinstance(loaded, dict):
+                data = loaded
+        except (json.JSONDecodeError, OSError):
+            data = {}
+    try:
+        ep = int(data.get(topic, 0) or 0) + 1
+    except (TypeError, ValueError):
+        ep = 1
+    data[topic] = ep
+    try:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
+    except OSError as e:
+        print(f"  [Thumbnail] WARNING: 集数计数写入失败: {e}")
+    script["thumb_episode"] = ep
+    return ep
+
+
+def _build_sleep_thumbnail_prompt(script: dict) -> str:
+    """sleep 参考同款缩略图 prompt：3D 皮克斯角色 + 超大繁中标题 + 徽章/集数。
+
+    文案来自脚本 thumb_* 字段（LLM 每期生成，旧脚本 setdefault 兜底），
+    全部引号内嵌并要求逐字渲染（AI 整图文字，同 thumbnail_gen 现有模式）。
+    """
+    dialogue = script.get("dialogue", []) or []
+    n_lines = len(dialogue)
+    num_text = f"{n_lines}句" if n_lines else "300句"
+    title_zh = str(script.get("title_zh", "") or "").strip()
+    topic_text = f"{title_zh}英文" if title_zh else "生活英文"
+    badge = str(script.get("thumb_badge", "") or "").strip() or "不用背！"
+    main = str(script.get("thumb_main", "") or "").strip() or (title_zh or "睡覺聽")
+    hook = (str(script.get("thumb_hook", "") or "").strip()
+            or str(script.get("thumbnail_subtitle", "") or "").strip()
+            or "零基礎自然開口說")
+    episode = ""
+    try:
+        ep = int(script.get("thumb_episode", 0) or 0)
+        if ep > 0:
+            episode = f"{ep:02d}"
+    except (TypeError, ValueError):
+        episode = ""
+    scene_en = str(script.get("scene", "") or script.get("title", "")
+                   or "daily life").strip()
+
+    episode_line = (f'\n  - A small red circle badge with the white bold number "{episode}"'
+                    if episode else "")
+    return f"""A vibrant professional YouTube thumbnail (16:9) for a "listen while you sleep" English learning video, in a cute cozy 3D Pixar animation movie style.
+
+LAYOUT:
+- Right half: an adorable 3D Pixar-style young woman with brown hair wearing big cream-white headphones, relaxed and cheerful with a warm smile, in a cozy {scene_en} scene, soft dreamy lighting, gentle bokeh background.
+- Left half text stack (ALL text must be Traditional Chinese rendered EXACTLY as written, no extra text, no typos):
+  - Top-left: a red brush-stroke banner with bold white text "{badge}"
+  - Below it: HUGE bold 3D yellow text "{main}" with a thick dark-blue outline — the most prominent element on the thumbnail
+  - Below it: bold black text "{num_text}{topic_text}" on a bright yellow rounded banner{episode_line}
+- Bottom-left: a rounded ribbon banner with bold white text "{hook}"
+- A small white headphone icon accent near the ribbon.
+
+Style: high contrast, bright saturated colors, soft glow, clean composition, professional YouTube CTR design, no watermark, no subtitles, no other text."""
+
+
+def _generate_sleep_thumbnail(script: dict, output_path: str,
+                              mcp_call_tool=None, mcp_parse_task_id=None,
+                              mcp_poll_task=None, mcp_download_file=None,
+                              theme: dict | None = None,
+                              channel_name: str = "") -> str:
+    """sleep 缩略图：参考同款 AI 生成（文字内嵌 prompt），失败兜底 Pillow 卡片。
+
+    Provider 优先级与通用路径一致：sensenova（配置选择）→ MCP → Pillow 兜底；
+    sensenova 失败不回退 MCP（避免用户省积分选择时被意外消耗，同通用路径）。
+    """
+    prompt = _build_sleep_thumbnail_prompt(script)
+
+    if sensenova_image.get_image_provider() == "sensenova":
+        print("  [Thumbnail] Generating sleep thumbnail via SenseNova U1.5 Lite...")
+        try:
+            url = sensenova_image.text_to_image(
+                prompt, size=sensenova_image.SIZE_MAP["landscape_16_9"],
+                output_format="jpeg")
+            if url and sensenova_image.download_image(url, output_path):
+                if os.path.getsize(output_path) // 1024 > 10:
+                    print(f"  [Thumbnail] Saved (U1.5): {output_path}")
+                    return output_path
+                print(f"  [Thumbnail] U1.5 image too small, falling back")
+            else:
+                print("  [Thumbnail] U1.5 generation returned no URL, falling back")
+        except Exception as e:
+            print(f"  [Thumbnail] U1.5 generation failed: {e}, falling back")
+    elif mcp_call_tool and mcp_parse_task_id and mcp_poll_task and mcp_download_file:
+        print("  [Thumbnail] Generating sleep thumbnail via MCP (baked-in text)...")
+        try:
+            gen_args = {
+                "prompt": prompt,
+                # frontier 高质量通道（~50 积分/张），须 confirm_cost=true 才真正建任务
+                "provider": "frontier",
+                "quality": "high",
+                "image_size": '{"width": 1280, "height": 720}',
+                "output_format": "jpeg",
+                "confirm_cost": True,
+            }
+            result = mcp_call_tool("generate_image", gen_args)
+            task_id = mcp_parse_task_id(result)
+            if task_id:
+                data = mcp_poll_task(task_id, interval=10, max_wait=300)
+                url = data.get("url", "")
+                if url and mcp_download_file(url, output_path):
+                    if os.path.getsize(output_path) // 1024 > 10:
+                        print(f"  [Thumbnail] Saved (AI baked-in): {output_path}")
+                        return output_path
+                    print("  [Thumbnail] AI image too small, falling back")
+                else:
+                    print("  [Thumbnail] AI generation returned no URL, falling back")
+            else:
+                # 不再静默：打印原始响应文本便于定位（高成本确认提示/参数错误等）
+                raw = ""
+                for item in result.get("result", {}).get("content", []):
+                    if item.get("type") == "text":
+                        raw = str(item.get("text", ""))[:300].replace("\n", " ")
+                        break
+                print(f"  [Thumbnail] MCP 未返回任务 ID（响应: {raw}），falling back")
+        except Exception as e:
+            print(f"  [Thumbnail] AI generation failed: {e}, falling back")
+    else:
+        print("  [Thumbnail] 无可用生图通道，使用 Pillow 兜底")
+
+    # Pillow 兜底：现有 sleep 卡片缩略图
+    print("  [Thumbnail] Using sleep Pillow fallback...")
+    from sleep.sleep_cards import build_theme, render_sleep_thumbnail
+    render_sleep_thumbnail(script, theme if theme is not None else build_theme({}),
+                           output_path, badge_text="EN",
+                           channel_name=channel_name or "English with me")
+    return output_path
+
+
+def generate_thumbnail(script: dict, scene_img: str, output_path: str,
+                        mcp_call_tool=None, mcp_parse_task_id=None,
+                        mcp_poll_task=None, mcp_download_file=None,
+                        structure: str = "original",
+                        char_scene_url: str = None,
+                        sleep_theme: dict | None = None,
+                        sleep_channel: str = "") -> str:
+    """Generate a YouTube thumbnail with text baked into the AI prompt (one step).
+
+    If char_scene_url is provided, uses it as a reference image so the thumbnail
+    characters match the video's character designs.
+
+    Falls back to Pillow text overlay on scene image if AI generation fails.
+    """
+    if structure == "sleep":
+        return _generate_sleep_thumbnail(
+            script, output_path,
+            mcp_call_tool=mcp_call_tool,
+            mcp_parse_task_id=mcp_parse_task_id,
+            mcp_poll_task=mcp_poll_task,
+            mcp_download_file=mcp_download_file,
+            theme=sleep_theme, channel_name=sleep_channel)
+
+    prompt = _build_thumbnail_prompt(script, structure)
+
+    # If we have a char_scene reference, add instruction to match it
+    if char_scene_url:
+        prompt += "\n\nIMPORTANT: The characters' appearance, clothing, and hair MUST closely match the uploaded reference image. Use the reference image as the character design guide."
+
+    # SenseNova U1.5 Lite 路径（image_provider=sensenova）：
+    # 有 char_scene 参考图走 edits，否则纯文生图；失败直接落 Pillow fallback
+    # （不再落 MCP 生成，避免用户选择 sensenova 省积分时被意外消耗）
+    if sensenova_image.get_image_provider() == "sensenova":
+        print("  [Thumbnail] Generating thumbnail via SenseNova U1.5 Lite...")
+        try:
+            if char_scene_url:
+                url = sensenova_image.edit_image(
+                    char_scene_url, prompt,
+                    size=sensenova_image.SIZE_MAP["landscape_16_9"],
+                    output_format="jpeg")
+            else:
+                url = sensenova_image.text_to_image(
+                    prompt, size=sensenova_image.SIZE_MAP["landscape_16_9"],
+                    output_format="jpeg")
+            if url and sensenova_image.download_image(url, output_path):
+                size_kb = os.path.getsize(output_path) // 1024
+                if size_kb > 10:
+                    print(f"  [Thumbnail] Saved (U1.5): {output_path} ({size_kb}KB)")
+                    return output_path
+                print(f"  [Thumbnail] U1.5 image too small ({size_kb}KB), falling back")
+            else:
+                print("  [Thumbnail] U1.5 generation returned no URL, falling back to Pillow")
+        except Exception as e:
+            print(f"  [Thumbnail] U1.5 generation failed: {e}, falling back to Pillow")
+        print("  [Thumbnail] Using Pillow fallback (text overlay on scene image)...")
+        return _pillow_fallback(script, scene_img, output_path, structure)
+
+    # Try AI generation with text baked in
+    if mcp_call_tool and mcp_parse_task_id and mcp_poll_task and mcp_download_file:
+        print("  [Thumbnail] Generating thumbnail with baked-in text via MCP...")
+        try:
+            gen_args = {
+                "prompt": prompt,
+                # frontier 高质量通道（~50 积分/张），须 confirm_cost=true 才真正建任务
+                "provider": "frontier",
+                "quality": "high",
+                "image_size": '{"width": 1280, "height": 720}',
+                "output_format": "jpeg",
+                "confirm_cost": True,
+            }
+            if char_scene_url:
+                gen_args["image_urls"] = char_scene_url
+                print(f"  [Thumbnail] Using char_scene reference: {char_scene_url[:60]}...")
+            result = mcp_call_tool("generate_image", gen_args)
+            task_id = mcp_parse_task_id(result)
+            if task_id:
+                data = mcp_poll_task(task_id, interval=10, max_wait=300)
+                url = data.get("url", "")
+                if url and mcp_download_file(url, output_path):
+                    size_kb = os.path.getsize(output_path) // 1024
+                    if size_kb > 10:
+                        print(f"  [Thumbnail] Saved (AI baked-in): {output_path} ({size_kb}KB)")
+                        return output_path
+                    else:
+                        print(f"  [Thumbnail] AI image too small ({size_kb}KB), falling back")
+                else:
+                    print("  [Thumbnail] AI generation returned no URL, falling back to Pillow")
+            else:
+                # 不再静默：打印原始响应文本便于定位（高成本确认提示/参数错误等）
+                raw = ""
+                for item in result.get("result", {}).get("content", []):
+                    if item.get("type") == "text":
+                        raw = str(item.get("text", ""))[:300].replace("\n", " ")
+                        break
+                print(f"  [Thumbnail] MCP 未返回任务 ID（响应: {raw}），falling back to Pillow")
+        except Exception as e:
+            print(f"  [Thumbnail] AI generation failed: {e}, falling back to Pillow")
+
+    # Fallback: Pillow text overlay on scene image
+    print("  [Thumbnail] Using Pillow fallback (text overlay on scene image)...")
+    return _pillow_fallback(script, scene_img, output_path, structure)
+
+
+def _pillow_fallback(script: dict, scene_img: str, output_path: str,
+                      structure: str) -> str:
+    """Pillow fallback: overlay text on scene image."""
+    from PIL import Image, ImageDraw, ImageFont
+
+    if not os.path.exists(scene_img):
+        print(f"  [Thumbnail] ERROR: No scene image at {scene_img}")
+        return None
+
+    bg = Image.open(scene_img).convert("RGBA").resize((THUMB_W, THUMB_H))
+
+    # Dark gradient on right side
+    overlay = Image.new("RGBA", (THUMB_W, THUMB_H), (0, 0, 0, 0))
+    ov_draw = ImageDraw.Draw(overlay)
+    for x in range(THUMB_W // 2, THUMB_W):
+        alpha = int((x - THUMB_W // 2) / (THUMB_W // 2) * 160)
+        ov_draw.line([(x, 0), (x, THUMB_H)], fill=(0, 0, 0, alpha))
+    ov_draw.rectangle([0, THUMB_H - 80, THUMB_W, THUMB_H], fill=(0, 0, 0, 200))
+    bg = Image.alpha_composite(bg, overlay)
+    draw = ImageDraw.Draw(bg)
+
+    title_en = script.get("title", "").upper() or "ENGLISH LISTENING"
+    title_zh = script.get("title_zh", script.get("intro_zh", ""))
+    # Large Chinese title: topic + "英文"
+    if title_zh and not title_zh.endswith("英文"):
+        title_zh_large = f"{title_zh}英文"
+    else:
+        title_zh_large = title_zh or "日常英語"
+    cefr = script.get("cefr", "A2")
+    subtitle = script.get("thumbnail_subtitle", "18句聽力練習")
+
+    STROKE = 8
+    MARGIN = 40
+
+    # English title (smaller, white, below Chinese title)
+    en_size = 56
+    en_font = ImageFont.truetype(FONT_EN, en_size)
+    while en_size > 24:
+        bbox = draw.textbbox((0, 0), title_en, font=en_font)
+        if (bbox[2] - bbox[0]) + STROKE * 2 <= THUMB_W // 2 - MARGIN:
+            break
+        en_size -= 2
+        en_font = ImageFont.truetype(FONT_EN, en_size)
+    bbox = draw.textbbox((0, 0), title_en, font=en_font)
+    en_w, en_h = bbox[2] - bbox[0], bbox[3] - bbox[1]
+    en_y = int(THUMB_H * 0.22)
+    draw.text((THUMB_W // 2 + (THUMB_W // 2 - en_w) // 2, en_y), title_en,
+              font=en_font, fill=(255, 255, 255, 255),
+              stroke_width=3, stroke_fill=(0, 0, 0, 255))
+
+    # Large Chinese title (biggest text on thumbnail, yellow + black stroke)
+    zh_stroke = 6
+    zh_size = 80
+    zh_font = ImageFont.truetype(FONT_ZH, zh_size)
+    while zh_size > 30:
+        bbox = draw.textbbox((0, 0), title_zh_large, font=zh_font)
+        if (bbox[2] - bbox[0]) + zh_stroke * 2 <= THUMB_W // 2 - MARGIN:
+            break
+        zh_size -= 2
+        zh_font = ImageFont.truetype(FONT_ZH, zh_size)
+    bbox = draw.textbbox((0, 0), title_zh_large, font=zh_font)
+    zh_w, zh_h = bbox[2] - bbox[0], bbox[3] - bbox[1]
+    zh_y = en_y + en_h + 10
+    draw.text((THUMB_W // 2 + (THUMB_W // 2 - zh_w) // 2, zh_y), title_zh_large,
+              font=zh_font, fill=(255, 220, 0, 255),
+              stroke_width=zh_stroke, stroke_fill=(0, 0, 0, 255))
+
+    # Subtitle (smallest, gold)
+    if subtitle:
+        sub_size = 36
+        sub_font = ImageFont.truetype(FONT_ZH, sub_size)
+        while sub_size > 18:
+            bbox = draw.textbbox((0, 0), subtitle, font=sub_font)
+            if (bbox[2] - bbox[0]) + 3 * 2 <= THUMB_W // 2 - MARGIN:
+                break
+            sub_size -= 2
+            sub_font = ImageFont.truetype(FONT_ZH, sub_size)
+        bbox = draw.textbbox((0, 0), subtitle, font=sub_font)
+        sub_w = bbox[2] - bbox[0]
+        draw.text((THUMB_W // 2 + (THUMB_W // 2 - sub_w) // 2, zh_y + zh_h + 10),
+                  subtitle, font=sub_font, fill=(255, 200, 80, 255),
+                  stroke_width=2, stroke_fill=(0, 0, 0, 255))
+
+    # CEFR badge
+    badge_r = 50
+    cx, cy = THUMB_W - badge_r - 30, badge_r + 30
+    draw.ellipse([cx - badge_r, cy - badge_r, cx + badge_r, cy + badge_r],
+                 fill=(220, 50, 50, 255), outline=(255, 255, 255, 255), width=3)
+    bfont = ImageFont.truetype(FONT_EN, 42)
+    bb = draw.textbbox((0, 0), cefr, font=bfont)
+    draw.text((cx - (bb[2] - bb[0]) // 2, cy - (bb[3] - bb[1]) // 2 - 2),
+              cefr, font=bfont, fill=(255, 255, 255, 255))
+
+    # Bottom bar
+    if structure == "story":
+        label = "English Listening Story"
+    elif structure == "quest":
+        label = "Slow Listening + Answer Task"
+    else:
+        label = "Listen + Repeat + Shadowing"
+    lfont = ImageFont.truetype(FONT_EN, 28)
+    lb = draw.textbbox((0, 0), label, font=lfont)
+    draw.text(((THUMB_W - (lb[2] - lb[0])) // 2, THUMB_H - 55),
+              label, font=lfont, fill=(255, 255, 255, 255))
+
+    bg.convert("RGB").save(output_path, "JPEG", quality=90)
+    print(f"  [Thumbnail] Saved (Pillow fallback): {output_path}")
+    return output_path
+
+
+# "⏱️ Chapters:" marker line + consecutive chapter timestamp lines (00:00 / 00:xx style)
+_CHAPTERS_SECTION = re.compile(
+    r"⏱️?\s*Chapters:[^\n]*\n"
+    r"(?:[ \t]*[-•*]?[ \t]*(?:[\dx]{1,2}:)?[\dx]{1,2}:[\dx]{2}[^\n]*\n?)+"
+)
+
+
+def _inject_chapters(desc: str, chapters: list[str]) -> str:
+    """Inject real chapter timestamps into a description.
+
+    The LLM often leaves placeholder timestamps (00:xx) in its own Chapters
+    section — replace that section with the real ones computed from the
+    timeline. Append a new section only if none exists.
+    """
+    if not chapters:
+        return desc
+    block = "⏱️ Chapters:\n" + "\n".join(chapters)
+    if _CHAPTERS_SECTION.search(desc):
+        return _CHAPTERS_SECTION.sub(block + "\n", desc, count=1)
+    if not desc.strip():
+        return block + "\n"
+    return desc.rstrip() + "\n\n" + block + "\n"
+
+
+def save_youtube_metadata(script: dict, timeline: list[dict],
+                           output_path: str, structure: str = "original") -> str:
+    """Save YouTube metadata (title, description, tags) as JSON.
+
+    Also post-processes the description to insert real timestamps from the timeline.
+    """
+    # Collect ordered chapter candidates (seconds, label) from the timeline.
+    # YouTube chapter rules: the first chapter MUST start at 00:00 and every
+    # chapter must span >= 10 seconds — candidates starting less than 10s
+    # after the previously kept one are dropped (e.g. quest's short hook_intro).
+    # story 章节：按对话 phase 首次出现切章（时间轴纯对话，seg.type 无区分度）
+    STORY_CHAPTER_LABELS = {
+        "plot": {"opening": "Opening", "setup": "Daily Life",
+                 "conflict": "Trouble", "twist": "Twist",
+                 "resolution": "Resolution", "finale": "Your Question"},
+        "chat": {"opening": "Opening", "activity": "Main Activity",
+                 "finale": "Your Question"},
+        "solo": {"opening": "Introduction", "body": "Main Content",
+                 "finale": "Your Question"},
+    }
+    if structure == "quest":
+        seg_labels = {
+            "welcome": "Welcome",
+            "hook_intro": "Intro · Listening Task",
+            "dialogue": "Slow Dialogue",
+            "outro": "Outro · Answer & CTA",
+        }
+    elif structure == "story":
+        seg_labels = {}
+    elif structure == "sleep":
+        # sleep 时间轴段类型 intro/pair/gap/outro：按类型取首现做三章
+        seg_labels = {
+            "intro": "Intro",
+            "pair": "Phrase Drills",
+            "outro": "Outro",
+        }
+    else:
+        seg_labels = {
+            "welcome": "Welcome & Hook",
+            "dialogue": "Immersive Dialogue",
+            "practice_intro": "Shadowing Practice",
+            "outro": "Outro",
+        }
+
+    marks: list[tuple[float, str]] = []
+    seen_types: set[str] = set()
+    t_cursor = 0.0
+    story_phase_labels = STORY_CHAPTER_LABELS.get(
+        str(script.get("story_kind", "plot")), STORY_CHAPTER_LABELS["plot"])
+    for seg in timeline:
+        seg_type = seg.get("type", "")
+        if structure == "story":
+            # phase 首次出现即章节（opening 位于 00:00，天然满足首章规则）
+            ph = seg.get("phase", "")
+            if ph in story_phase_labels and ph not in seen_types:
+                seen_types.add(ph)
+                marks.append((t_cursor, story_phase_labels[ph]))
+        elif seg_type in seg_labels and seg_type not in seen_types:
+            seen_types.add(seg_type)
+            marks.append((t_cursor, seg_labels[seg_type]))
+        t_cursor += seg.get("duration", 0)
+
+    def _fmt_ts(seconds):
+        m = int(seconds // 60)
+        s = int(seconds % 60)
+        return f"{m:02d}:{s:02d}"
+
+    chapters = []
+    kept_t = 0.0
+    for i, (t, label) in enumerate(marks):
+        if i == 0:
+            kept_t = 0.0  # 首章节必须 00:00，否则 YouTube 禁用全部章节
+        elif t - kept_t < 10.0:
+            continue
+        else:
+            kept_t = t
+        chapters.append(f"{_fmt_ts(kept_t)} {label}")
+
+    description = script.get("youtube_description", "")
+    description = _inject_chapters(description, chapters)
+
+    description_en = script.get("youtube_description_en", "")
+    description_en = _inject_chapters(description_en, chapters)
+
+    tags = script.get("youtube_tags", [])
+    # Append tags as #hashtag string at the end of description
+    hashtags = " ".join(f"#{t.replace(' ', '')}" for t in tags) if tags else ""
+    if hashtags:
+        description = description.rstrip() + "\n" + hashtags
+        if description_en:
+            description_en = description_en.rstrip() + "\n" + hashtags
+
+    # SEO 词池：并入高频搜索短语（脚本 LLM tags 优先 → 主题命中 → core），
+    # 只丰富 metadata 的 tags 字段；上面的 hashtag 追加保持仅用脚本原 tags
+    try:
+        from seo_pool import merge_tags
+        tags = merge_tags(
+            tags,
+            f"{script.get('title', '')} {script.get('scene', '')} "
+            f"{script.get('youtube_title', '')} {script.get('topic', '')}")
+    except Exception as e:
+        print(f"  [YouTube] WARNING: SEO 词池合并失败: {e}")
+
+    title = script.get("youtube_title", script.get("title", ""))
+    title_en = script.get("youtube_title_en", "")
+    # YouTube 标题硬上限 100 字符，超长会被截断 —— 最后防线
+    if len(title) > 100:
+        print(f"  [YouTube] WARNING: title {len(title)} chars > 100, truncated")
+        title = title[:100]
+    if len(title_en) > 100:
+        print(f"  [YouTube] WARNING: title_en {len(title_en)} chars > 100, truncated")
+        title_en = title_en[:100]
+
+    metadata = {
+        "title": title,
+        "title_en": title_en,
+        "description": description,
+        "description_en": description_en,
+        "tags": tags,
+        "chapters": chapters,
+    }
+
+    # 多样式选项（title_options）：yt_meta_styles/ 下每个注册样式生成一套备选
+    # 标题+简介（如"参考频道同款"），与默认选项并存供上传时多选一。
+    try:
+        from yt_meta_styles import collect_options
+        options = collect_options(script, chapters=chapters, marks=marks, structure=structure)
+    except Exception as e:
+        print(f"  [YouTube] WARNING: 样式选项收集失败: {e}")
+        options = []
+    for opt in options:
+        if len(opt["title"]) > 100:
+            print(f"  [YouTube] WARNING: {opt['style_id']} title {len(opt['title'])} chars > 100, truncated")
+            opt["title"] = opt["title"][:100]
+        if hashtags:
+            opt["description"] = opt["description"].rstrip() + "\n" + hashtags
+    if options:
+        metadata["title_options"] = options
+
+    Path(output_path).write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"  [YouTube] Metadata saved: {output_path}")
+    return output_path
