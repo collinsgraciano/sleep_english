@@ -9,6 +9,7 @@ Qwen/MOSS 引擎内部 atempo）、combo（A男+B女 0.15s 间隔拼接）；
 """
 import os
 import subprocess
+import time
 from pathlib import Path
 
 from media_utils import get_duration
@@ -60,6 +61,14 @@ def _combo_file(src_a: str, src_b: str, dst: str, gap: float = 0.15) -> float:
     return get_duration(dst)
 
 
+def _usable(path: str) -> bool:
+    """文件级续传判定：存在且非零字节（损坏/空文件交给重生成，而非拖到块合成才炸）。"""
+    try:
+        return os.path.getsize(path) > 0
+    except OSError:
+        return False
+
+
 def pair_steps(audio_dir: Path, i: int) -> dict:
     """第 i 组（1-based）各步骤音频路径表。"""
     base = f"pair_{i:04d}"
@@ -76,13 +85,13 @@ def load_sleep_audio_results(audio_dir: Path, num_pairs: int) -> dict | None:
     audio_dir = Path(audio_dir)
     intro = audio_dir / "intro_sleep.mp3"
     outro = audio_dir / "outro_sleep.mp3"
-    if not (intro.exists() and outro.exists()):
+    if not (_usable(str(intro)) and _usable(str(outro))):
         return None
     pair_paths, pair_durs = {}, {}
     for i in range(1, num_pairs + 1):
         paths = pair_steps(audio_dir, i)
         need = ("a_m", "a_slow", "b_m", "b_slow", "combo")
-        if not all(os.path.exists(paths[s]) for s in need):
+        if not all(_usable(paths[s]) for s in need):
             return None
         pair_paths[str(i).zfill(4)] = {s: paths[s] for s in need}
         pair_durs[str(i).zfill(4)] = {s: get_duration(paths[s]) for s in need}
@@ -158,23 +167,32 @@ def prepare_sleep_audio(script: dict, audio_dir: Path, num_pairs: int,
         return _fb["eng"], _fb["map"]
 
     def _synth(text: str, voice: str, path: str, rate: str = "+0%") -> float:
-        try:
-            return tts.synth_english(text, voice, path, rate=rate)
-        except Exception as e:
-            if tts_engine == "kokoro":
-                raise
-            print(f"  [Sleep][Fallback] {Path(path).name} {type(e).__name__}: {e}")
-            eng, kmap = _kokoro()
-            fb_voice = kmap.get("char_a") if voice == male_voice else kmap.get("char_b")
-            return eng.synth_english(text, fb_voice or "af_sarah", path, rate=rate)
+        attempts = 3 if tts_engine == "kokoro" else 1
+        for attempt in range(attempts):
+            try:
+                return tts.synth_english(text, voice, path, rate=rate)
+            except Exception as e:
+                if tts_engine == "kokoro" and attempt < attempts - 1:
+                    # Kokoro 无兜底引擎：单句偶发失败自动重试（本地推理零成本）
+                    print(f"  [Sleep][Retry {attempt + 1}/{attempts - 1}] "
+                          f"{Path(path).name} {type(e).__name__}: {e}")
+                    time.sleep(1)
+                    continue
+                if tts_engine == "kokoro":
+                    raise
+                print(f"  [Sleep][Fallback] {Path(path).name} {type(e).__name__}: {e}")
+                eng, kmap = _kokoro()
+                fb_voice = kmap.get("char_a") if voice == male_voice else kmap.get("char_b")
+                return eng.synth_english(text, fb_voice or "af_sarah", path, rate=rate)
+        raise RuntimeError(f"unreachable: {path}")
 
     narration_voice = male_voice
     intro = audio_dir / "intro_sleep.mp3"
     outro = audio_dir / "outro_sleep.mp3"
-    if not intro.exists():
+    if not _usable(str(intro)):
         _synth(channel_name or "English with me", narration_voice, str(intro),
                rate=male_rate_str)
-    if not outro.exists():
+    if not _usable(str(outro)):
         _synth(outro_text or "Thanks for listening. See you next time!",
                narration_voice, str(outro), rate=male_rate_str)
 
@@ -192,22 +210,22 @@ def prepare_sleep_audio(script: dict, audio_dir: Path, num_pairs: int,
         text_a = rows_a[i - 1].get("text", "")
         text_b = rows_b[i - 1].get("text", "")
         # 5 个消费步骤齐全 → 整组跳过（b_f 为 combo 消费品，缺则按需补）
-        if all(os.path.exists(paths[s]) for s in ("a_m", "a_slow", "b_m", "b_slow", "combo")):
+        if all(_usable(paths[s]) for s in ("a_m", "a_slow", "b_m", "b_slow", "combo")):
             pair_paths[str(i).zfill(4)] = paths
             pair_durs[str(i).zfill(4)] = {
                 s: get_duration(paths[s]) for s in paths if s != "b_f"}
             continue
-        if not os.path.exists(paths["a_m"]):
+        if not _usable(paths["a_m"]):
             _synth(text_a, male_voice, paths["a_m"], rate=male_rate_str)
-        if not os.path.exists(paths["b_m"]):
+        if not _usable(paths["b_m"]):
             _synth(text_b, male_voice, paths["b_m"], rate=male_rate_str)
-        if not os.path.exists(paths["b_f"]):
+        if not _usable(paths["b_f"]):
             _synth(text_b, female_voice, paths["b_f"])
-        if not os.path.exists(paths["a_slow"]):
+        if not _usable(paths["a_slow"]):
             _synth(text_a, female_voice, paths["a_slow"], rate=slow_rate_str)
-        if not os.path.exists(paths["b_slow"]):
+        if not _usable(paths["b_slow"]):
             _synth(text_b, female_voice, paths["b_slow"], rate=slow_rate_str)
-        if not os.path.exists(paths["combo"]):
+        if not _usable(paths["combo"]):
             _combo_file(paths["a_m"], paths["b_f"], paths["combo"])
         pair_paths[str(i).zfill(4)] = paths
         pair_durs[str(i).zfill(4)] = {

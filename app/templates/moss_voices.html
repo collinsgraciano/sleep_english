@@ -311,19 +311,16 @@ function populateDropdowns() {
 }
 
 // --- 默认音色按模式分套 ---
-const DEFAULT_MODES = ['original', 'original_static', 'original_cutout', 'quest'];
-const DEFAULT_MODE_LABELS = {
-    original: '原版（AI 视频）', original_static: '原版（静态图）',
-    original_cutout: '原版（抠图）', quest: 'Quest（任务听力）'
-};
+const DEFAULT_MODES = ['sleep'];
+const DEFAULT_MODE_LABELS = {sleep: 'Sleep（睡觉听）'};
 const DEFAULTS_MODE_KEY = 'moss_defaults_mode_v1';
 const DEFAULT_SELECT_IDS = ['default-male', 'default-female', 'default-host-male',
                             'default-host-female', 'default-male2', 'default-female2',
                             'default-male-zh', 'default-female-zh',
                             'default-male-zh2', 'default-female-zh2',
                             'default-male3', 'default-female3'];
-let defaultsMode = localStorage.getItem(DEFAULTS_MODE_KEY) || 'original';
-if (!DEFAULT_MODES.includes(defaultsMode)) defaultsMode = 'original';
+let defaultsMode = localStorage.getItem(DEFAULTS_MODE_KEY) || 'sleep';
+if (!DEFAULT_MODES.includes(defaultsMode)) defaultsMode = 'sleep';
 let lastDefaultsConfig = null;
 
 function renderDefaultsModeTabs() {

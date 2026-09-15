@@ -661,8 +661,8 @@ def get_all_kokoro_voices() -> list[dict]:
 # 默认音色按模式分套 + 同性别错开（共用 helper，qwen/moss 引擎 import 复用）
 # ---------------------------------------------------------------------------
 
-# config["modes"] 的合法键（四种视频结构）
-VOICE_DEFAULT_MODES = ("original", "original_static", "original_cutout", "quest")
+# config["modes"] 的合法键（本项目仅 sleep 结构）
+VOICE_DEFAULT_MODES = ("sleep",)
 
 KOKORO_VOICE_DEFAULTS = {
     "default_male": "am_adam",

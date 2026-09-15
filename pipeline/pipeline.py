@@ -461,10 +461,15 @@ def _step4_timeline(args, checkpoint: dict, script: dict, work_dir: Path,
     meta_path = sub_dir / "meta.json"
 
     if _step_done(checkpoint, "step4_timeline") and srt_path.exists() and meta_path.exists():
-        print("  [Resume] Loading existing timeline + SRT...")
         meta = json.loads(meta_path.read_text(encoding="utf-8"))
-        return (meta["timeline"], meta.get("narration", {}),
-                meta.get("normal_paths", []), meta.get("zh_paths", []))
+        if meta.get("sleep_pairs") != int(getattr(args, "sleep_pairs", 200)):
+            # 改组数后 resume：旧时间轴与当前音频/配置不再对齐 → 重建而非静默沿用
+            print(f"  [Resume] sleep_pairs 变化（meta {meta.get('sleep_pairs')} → "
+                  f"{getattr(args, 'sleep_pairs', 200)}）— 重建时间轴")
+        else:
+            print("  [Resume] Loading existing timeline + SRT...")
+            return (meta["timeline"], meta.get("narration", {}),
+                    meta.get("normal_paths", []), meta.get("zh_paths", []))
 
     from sleep.timeline_sleep import build_sleep_srt, build_sleep_timeline
     timeline = build_sleep_timeline(
@@ -485,6 +490,7 @@ def _step4_timeline(args, checkpoint: dict, script: dict, work_dir: Path,
         "timeline": timeline,
         "script": script,
         "pad": getattr(args, "pad", 0.4),
+        "sleep_pairs": int(getattr(args, "sleep_pairs", 200)),
         "narration": tts_results.get("narration", {}),
         "normal_paths": tts_results.get("normal_paths", []),
         "zh_paths": tts_results.get("zh_paths", []),
