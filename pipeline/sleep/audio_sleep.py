@@ -1,18 +1,27 @@
 """sleep 模式音频准备：整组音频直接按目标速率经引擎 rate 机制合成。
 
-每组生成：a_m/b_m（男声，male_rate 速率）、b_f（女声常速，combo 消费）、
+每组生成：a_m/b_m（男声，male_rate 速率）、b_f（女声常速，供 AB 连贯内联）、
 a_slow/b_slow（女声慢速——Kokoro 用原生 speed 参数变速不变调，
-Qwen/MOSS 引擎内部 atempo）、combo（A男+B女 0.15s 间隔拼接）；
-另有 intro（频道名播报）/ outro（结束语），均男声（male_rate 速率）。
+Qwen/MOSS 引擎内部 atempo）；AB 连贯（combo）不再预编码中间 mp3 ——
+时长按 a_m + COMBO_GAP + b_f 计算，块合成 filter_complex 内直接拼接
+（少 200 个子进程与一次有损重编码）。另有 intro（频道名播报）/ outro
+（结束语），均男声（male_rate 速率）。
 跨引擎（kokoro/qwen/moss）复用 tts_pipeline 同款引擎装配 + kokoro 单句回退。
-音频文件保持引擎原生格式，块合成时统一 aresample/立体声（video_compose_sleep）。
+音频时长写 .durations.json sidecar（mtime+size 校验），resume 免逐文件
+ffprobe 子进程；音频文件保持引擎原生格式，块合成时统一 aresample/立体声。
 """
+import json
 import os
-import subprocess
 import time
 from pathlib import Path
 
 from media_utils import get_duration
+
+# AB 连贯段内 A→B 的气口秒数（原 _combo_file 的拼接间隔，语义不变）
+COMBO_GAP = 0.15
+
+# 时长 sidecar：{文件名: [mtime_ns, size, 时长秒]}
+_DUR_SIDECAR = ".durations.json"
 
 
 def _rate_str(mult: float) -> str:
@@ -42,23 +51,47 @@ def _check_sleep_cache(audio_dir: Path, sig: str) -> None:
                 removed += 1
         if removed:
             print(f"  [Sleep] TTS 参数变化（{current} → {sig}），清除 {removed} 个旧音频缓存")
+    sidecar = audio_dir / _DUR_SIDECAR
+    if sidecar.exists():
+        sidecar.unlink()  # 旧时长条目对应已删除文件，一并清理
     meta_path.write_text(sig, encoding="utf-8")
 
 
-def _combo_file(src_a: str, src_b: str, dst: str, gap: float = 0.15) -> float:
-    """A男 + 微间隔 + B女 常速拼接（统一 44100 立体声）。返回时长。"""
-    fg = (f"[0:a]aresample=44100,aformat=channel_layouts=stereo[0a];"
-          f"[1:a]aresample=44100,aformat=channel_layouts=stereo[1a];"
-          f"anullsrc=r=44100:cl=stereo:d={gap:.3f}[sil];"
-          f"[0a][sil][1a]concat=n=3:v=0:a=1[out]")
-    cmd = ["ffmpeg", "-y", "-i", src_a, "-i", src_b,
-           "-filter_complex", fg, "-map", "[out]",
-           "-c:a", "libmp3lame", "-b:a", "128k", dst]
-    r = subprocess.run(cmd, capture_output=True, text=True,
-                       encoding="utf-8", errors="replace", timeout=120)
-    if r.returncode != 0 or not os.path.exists(dst):
-        raise RuntimeError(f"combo concat failed: {r.stderr[-200:]}")
-    return get_duration(dst)
+# ---------------------------------------------------------------------------
+# 时长 sidecar：resume 路径免逐文件 ffprobe（200 组 ≈ 1000+ 次子进程）
+# ---------------------------------------------------------------------------
+
+def _load_dur_sidecar(audio_dir: Path) -> dict:
+    p = audio_dir / _DUR_SIDECAR
+    try:
+        data = json.loads(p.read_text(encoding="utf-8"))
+        return data if isinstance(data, dict) else {}
+    except (OSError, json.JSONDecodeError):
+        return {}
+
+
+def _save_dur_sidecar(audio_dir: Path, durs: dict) -> None:
+    try:
+        (audio_dir / _DUR_SIDECAR).write_text(
+            json.dumps(durs, ensure_ascii=False), encoding="utf-8")
+    except OSError:
+        pass  # sidecar 是加速缓存，写失败不影响正确性
+
+
+def _dur(path: str, durs: dict) -> float:
+    """时长解析：sidecar 命中（mtime+size 校验一致）→ 直接用；否则 ffprobe 并写回。"""
+    key = os.path.basename(path)
+    try:
+        st = os.stat(path)
+    except OSError:
+        return get_duration(path)
+    ent = durs.get(key)
+    if isinstance(ent, list) and len(ent) == 3 \
+            and ent[0] == st.st_mtime_ns and ent[1] == st.st_size:
+        return float(ent[2])
+    d = get_duration(path)
+    durs[key] = [st.st_mtime_ns, st.st_size, d]
+    return d
 
 
 def _usable(path: str) -> bool:
@@ -70,34 +103,43 @@ def _usable(path: str) -> bool:
 
 
 def pair_steps(audio_dir: Path, i: int) -> dict:
-    """第 i 组（1-based）各步骤音频路径表。"""
+    """第 i 组（1-based）各步骤音频路径表（5 个真实文件；combo 为计算时长段）。"""
     base = f"pair_{i:04d}"
     return {step: str(audio_dir / f"{base}_{step}.mp3")
-            for step in ("a_m", "b_m", "b_f", "a_slow", "b_slow", "combo")}
+            for step in ("a_m", "b_m", "b_f", "a_slow", "b_slow")}
 
 
 def load_sleep_audio_results(audio_dir: Path, num_pairs: int) -> dict | None:
     """从已存在文件重建 sleep 音频结果（resume / 完整性校验）。
 
-    全部组 5 步骤（a_m/a_slow/b_m/b_slow/combo）+ intro/outro 齐全才返回，
-    否则 None（交给正常生成流程按文件续传）。
+    全部组 5 文件（a_m/a_slow/b_m/b_slow/b_f）+ intro/outro 齐全才返回，
+    否则 None（交给正常生成流程按文件续传）。combo 时长 = a_m+COMBO_GAP+b_f
+    （块合成内联拼接，无 combo 中间文件）。
     """
     audio_dir = Path(audio_dir)
     intro = audio_dir / "intro_sleep.mp3"
     outro = audio_dir / "outro_sleep.mp3"
     if not (_usable(str(intro)) and _usable(str(outro))):
         return None
+    durs = _load_dur_sidecar(audio_dir)
     pair_paths, pair_durs = {}, {}
     for i in range(1, num_pairs + 1):
         paths = pair_steps(audio_dir, i)
-        need = ("a_m", "a_slow", "b_m", "b_slow", "combo")
+        need = ("a_m", "a_slow", "b_m", "b_slow", "b_f")
         if not all(_usable(paths[s]) for s in need):
             return None
-        pair_paths[str(i).zfill(4)] = {s: paths[s] for s in need}
-        pair_durs[str(i).zfill(4)] = {s: get_duration(paths[s]) for s in need}
+        d = {s: _dur(paths[s], durs) for s in need}
+        key = str(i).zfill(4)
+        pair_paths[key] = dict(paths)
+        pair_durs[key] = {"a_m": d["a_m"], "a_slow": d["a_slow"],
+                          "b_m": d["b_m"], "b_slow": d["b_slow"],
+                          "combo": d["a_m"] + COMBO_GAP + d["b_f"]}
+    intro_dur = _dur(str(intro), durs)
+    outro_dur = _dur(str(outro), durs)
+    _save_dur_sidecar(audio_dir, durs)
     return {
-        "intro": str(intro), "intro_dur": get_duration(str(intro)),
-        "outro": str(outro), "outro_dur": get_duration(str(outro)),
+        "intro": str(intro), "intro_dur": intro_dur,
+        "outro": str(outro), "outro_dur": outro_dur,
         "pair_paths": pair_paths, "pair_durs": pair_durs,
     }
 
@@ -202,6 +244,7 @@ def prepare_sleep_audio(script: dict, audio_dir: Path, num_pairs: int,
     total = min(num_pairs, len(rows_a), len(rows_b))
 
     pair_paths, pair_durs = {}, {}
+    durs = _load_dur_sidecar(audio_dir)
     for i in range(1, total + 1):
         if stop_check and stop_check():
             print("  [Sleep] Stop requested, aborting audio prep.", flush=True)
@@ -209,11 +252,14 @@ def prepare_sleep_audio(script: dict, audio_dir: Path, num_pairs: int,
         paths = pair_steps(audio_dir, i)
         text_a = rows_a[i - 1].get("text", "")
         text_b = rows_b[i - 1].get("text", "")
-        # 5 个消费步骤齐全 → 整组跳过（b_f 为 combo 消费品，缺则按需补）
-        if all(_usable(paths[s]) for s in ("a_m", "a_slow", "b_m", "b_slow", "combo")):
-            pair_paths[str(i).zfill(4)] = paths
-            pair_durs[str(i).zfill(4)] = {
-                s: get_duration(paths[s]) for s in paths if s != "b_f"}
+        # 5 个文件齐全 → 整组跳过（时长走 sidecar，免 ffprobe）
+        if all(_usable(paths[s]) for s in paths):
+            key = str(i).zfill(4)
+            pair_paths[key] = dict(paths)
+            d = {s: _dur(paths[s], durs) for s in paths}
+            pair_durs[key] = {"a_m": d["a_m"], "a_slow": d["a_slow"],
+                               "b_m": d["b_m"], "b_slow": d["b_slow"],
+                               "combo": d["a_m"] + COMBO_GAP + d["b_f"]}
             continue
         if not _usable(paths["a_m"]):
             _synth(text_a, male_voice, paths["a_m"], rate=male_rate_str)
@@ -225,16 +271,18 @@ def prepare_sleep_audio(script: dict, audio_dir: Path, num_pairs: int,
             _synth(text_a, female_voice, paths["a_slow"], rate=slow_rate_str)
         if not _usable(paths["b_slow"]):
             _synth(text_b, female_voice, paths["b_slow"], rate=slow_rate_str)
-        if not _usable(paths["combo"]):
-            _combo_file(paths["a_m"], paths["b_f"], paths["combo"])
-        pair_paths[str(i).zfill(4)] = paths
-        pair_durs[str(i).zfill(4)] = {
-            s: get_duration(paths[s]) for s in ("a_m", "a_slow", "b_m", "b_slow", "combo")}
+        key = str(i).zfill(4)
+        pair_paths[key] = dict(paths)
+        d = {s: _dur(paths[s], durs) for s in paths}
+        pair_durs[key] = {"a_m": d["a_m"], "a_slow": d["a_slow"],
+                           "b_m": d["b_m"], "b_slow": d["b_slow"],
+                           "combo": d["a_m"] + COMBO_GAP + d["b_f"]}
         if i % 10 == 0 or i == total:
             print(f"  [Sleep] Audio pairs {i}/{total} done")
 
+    _save_dur_sidecar(audio_dir, durs)
     return {
-        "intro": str(intro), "intro_dur": get_duration(str(intro)),
-        "outro": str(outro), "outro_dur": get_duration(str(outro)),
+        "intro": str(intro), "intro_dur": _dur(str(intro), durs),
+        "outro": str(outro), "outro_dur": _dur(str(outro), durs),
         "pair_paths": pair_paths, "pair_durs": pair_durs,
     }

@@ -18,6 +18,7 @@ from pathlib import Path
 from media_utils import (TARGET_H, TARGET_W, apply_final_loudnorm,
                          concat_segments, get_duration, merge_blocks_xfade,
                          safe_filename)
+from sleep.audio_sleep import COMBO_GAP
 from sleep.sleep_cards import (render_intro_card, render_outro_card,
                                render_pair_card)
 
@@ -45,37 +46,58 @@ def _build_audio_chain(block_segs: list[dict], audio_paths: dict,
     无音频段（gap）生成等长静音（anullsrc 须以 -f lavfi 输入，否则被当作
     文件名导致整块失败）。lead>0 时组首段（a_m）朗读前先补 lead 秒静音
     （卡片提前量：画面先出现、稍后出声；该段 timeline duration 已含 lead）。
+
+    combo（AB 连贯）段内联拼接：a_m + COMBO_GAP 静音 + b_f 直接进 concat 链
+    —— 不再有预编码 combo 中间 mp3（省一次有损重编码 + 每组一个子进程），
+    段时长即 a_m+COMBO_GAP+b_f（audio_sleep 计算写入 timeline）。
     """
     inputs: list[str] = []
     chains: list[str] = []
     concat_refs: list[str] = []
     # 输入 0 = 卡片图（-loop 1，无音频流），音频输入索引从 1 起
-    n_in = 1
+    state = {"n": 1}
+
+    def _push_silence(sec: float) -> None:
+        inputs.extend(["-f", "lavfi", "-i",
+                       f"anullsrc=r=44100:cl=stereo:d={sec:.3f}"])
+        concat_refs.append(f"[{state['n']}:a]")
+        state["n"] += 1
+
+    def _push_file(path: str) -> None:
+        inputs.extend(["-i", path])
+        n = state["n"]
+        chains.append(f"[{n}:a]aresample=44100,aformat=channel_layouts=stereo[a{n}]")
+        concat_refs.append(f"[a{n}]")
+        state["n"] += 1
+
     for seg in block_segs:
-        path = ""
         seg_type = seg.get("type", "")
         if seg_type == "pair":
             key = str(seg.get("pair", 0)).zfill(4)
-            path = (audio_paths.get("pair_paths", {}).get(key, {})
-                    .get(seg.get("step", ""), ""))
-        elif seg_type == "intro":
-            path = audio_paths.get("intro", "")
-        elif seg_type == "outro":
-            path = audio_paths.get("outro", "")
-        if path and os.path.exists(path):
-            if seg_type == "pair" and seg.get("step") == "a_m" and lead > 0:
-                inputs += ["-f", "lavfi", "-i",
-                           f"anullsrc=r=44100:cl=stereo:d={lead:.3f}"]
-                concat_refs.append(f"[{n_in}:a]")
-                n_in += 1
-            inputs += ["-i", path]
-            chains.append(f"[{n_in}:a]aresample=44100,aformat=channel_layouts=stereo[a{n_in}]")
-            concat_refs.append(f"[a{n_in}]")
+            step = seg.get("step", "")
+            pmap = audio_paths.get("pair_paths", {}).get(key, {})
+            if step == "combo":
+                entries = [(pmap.get("a_m", ""), 0.0),
+                           (pmap.get("b_f", ""), COMBO_GAP)]
+            else:
+                entries = [(pmap.get(step, ""), 0.0)]
+            if step == "a_m" and lead > 0:
+                _push_silence(lead)
+            if all(p and os.path.exists(p) for p, _ in entries):
+                for path, pre_sil in entries:
+                    if pre_sil > 0:
+                        _push_silence(pre_sil)
+                    _push_file(path)
+            else:
+                _push_silence(max(0.0, float(seg.get("duration", 0))))
+        elif seg_type in ("intro", "outro"):
+            path = audio_paths.get(seg_type, "")
+            if path and os.path.exists(path):
+                _push_file(path)
+            else:
+                _push_silence(max(0.0, float(seg.get("duration", 0))))
         else:
-            inputs += ["-f", "lavfi", "-i",
-                       f"anullsrc=r=44100:cl=stereo:d={max(0.0, float(seg.get('duration', 0))):.3f}"]
-            concat_refs.append(f"[{n_in}:a]")
-        n_in += 1
+            _push_silence(max(0.0, float(seg.get("duration", 0))))
     fg = ";".join(chains) + ";" + "".join(concat_refs) + f"concat=n={len(concat_refs)}:v=0:a=1[aout]"
     return fg, inputs
 
