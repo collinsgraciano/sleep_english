@@ -133,9 +133,15 @@ function fillForm(config) {
     if (typeof onSequenceConfigRefresh === 'function') onSequenceConfigRefresh();
 }
 
+// 全量参数页（参数配置）走 save_all 整文件覆盖；部分参数页（画面/编排专项页）
+// 传 config_save_all=false → 走 /api/config/save 合并保存，防止收集到的
+// 部分字段集覆盖掉未在页面上渲染的参数
+const CONFIG_SAVE_ALL = {{ ((config_save_all is not defined) or config_save_all) | tojson }};
+
 function saveConfig() {
     const config = collectConfig();
-    fetch('/api/config/save_all', {
+    const url = CONFIG_SAVE_ALL ? '/api/config/save_all' : '/api/config/save';
+    fetch(url, {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({...config, _mode: MODE})

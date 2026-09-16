@@ -384,6 +384,32 @@ def effective_param_spec(mode: str) -> dict[str, dict]:
     return {k: dict(v) for k, v in PARAM_SPEC.items()
             if not v.get("modes") or mode in v["modes"]}
 
+
+# --- sleep 专项页拆分（侧边栏「😴 Sleep 睡前短句」画面页 与 「📋 内容编排」页）---
+# 完整清单仍在「参数配置」页渲染；两个专项页按此集合各取所需。
+# 画面页：影响成片卡片渲染/合成画面的全部参数。
+SLEEP_VISUAL_KEYS = frozenset({
+    "sleep_show_leaves", "sleep_handwrite_font",
+    "sleep_color_bg_top", "sleep_color_bg_bottom", "sleep_color_card",
+    "sleep_color_card_border", "sleep_color_en_a", "sleep_color_en_b",
+    "sleep_color_phonetic", "sleep_color_zh", "sleep_color_num",
+    "sleep_color_badge_bg", "sleep_color_badge_text", "sleep_color_channel",
+    "sleep_color_leaf",
+    "sleep_bg_image", "sleep_bg_image_path", "sleep_bg_opacity",
+    "sleep_bg_layer",
+    "sleep_font_scale", "sleep_line_spacing", "sleep_letter_spacing",
+    "sleep_4k_native", "sleep_xfade", "sleep_xfade_sec",
+})
+# 内容编排页：组内步骤序列（可视化编辑器）+ 组数/语速/停顿/片头/提前量/播报文案。
+SLEEP_ORCHESTRATION_KEYS = frozenset({
+    "sleep_sequence",
+    "sleep_pairs", "sleep_slow_rate", "sleep_male_rate",
+    "sleep_gap_short", "sleep_gap_long", "sleep_pair_gap",
+    "sleep_batch_pairs", "sleep_use_cache",
+    "sleep_intro", "sleep_card_lead",
+    "sleep_channel_name", "sleep_outro_text",
+})
+
 # Group display metadata
 GROUP_META = {
     "content": {"label": "内容设置", "icon": "📝", "order": 1},

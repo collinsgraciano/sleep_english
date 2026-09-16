@@ -5,23 +5,11 @@
     <div class="flex items-center justify-between mb-4">
         <div>
             <h2 class="text-2xl font-bold text-white">😴 Sleep 睡前短句</h2>
-            <p class="text-sm text-slate-400 mt-1">预览固定顶部 · 内容编排 + 全部配置在下方 · 保存到 configs/mode_{{ mode }}.json（与「参数配置」页同一份，双入口互通）</p>
+            <p class="text-sm text-slate-400 mt-1">画面样式：左实时预览（成片卡片真实渲染）· 右参数即改即看；内容/节奏类设置见「📋 内容编排」页</p>
         </div>
-        <div class="flex items-center gap-3">
-            <select id="preset-select" class="bg-slate-800 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white"
-                onchange="loadPreset(this.value)">
-                <option value="">载入预设...</option>
-                {% for p in presets %}
-                <option value="{{ p }}">{{ p }}</option>
-                {% endfor %}
-            </select>
-            <button onclick="saveAsPreset()" class="px-4 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg text-sm text-slate-300">
-                💾 存为预设
-            </button>
-            <button onclick="saveConfig()" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-lg text-sm text-white font-medium">
-                ✓ 保存
-            </button>
-        </div>
+        <button onclick="saveConfig()" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-lg text-sm text-white font-medium">
+            ✓ 保存
+        </button>
     </div>
 
     <!-- Save indicator -->
@@ -29,83 +17,18 @@
         ✓ 配置已保存
     </div>
 
-    <!-- Sticky preview panel：固定顶部，档位按钮 + 拖拽底缘调高 -->
-    <div class="sticky top-0 z-30 -mx-6 px-6 pt-2 pb-2 bg-slate-900 border-b border-slate-700 mb-4">
-        <div class="flex items-center justify-between mb-2 flex-wrap gap-2">
-            <span class="text-xs text-slate-400">🖼️ 实时预览 <span class="text-slate-600">— 修改任意参数后自动刷新（成片卡片实际渲染效果）；背景图为按主题 AI 生成时预览不含图片，填「背景图固定路径」后可预览混合效果</span></span>
-            <div class="flex items-center gap-2 shrink-0">
-                <button type="button" data-h="320" onclick="setPreviewHeight(320)"
-                    class="preview-size-btn px-2.5 py-1 rounded-lg text-xs bg-slate-700 text-slate-300 hover:bg-slate-600">小</button>
-                <button type="button" data-h="480" onclick="setPreviewHeight(480)"
-                    class="preview-size-btn px-2.5 py-1 rounded-lg text-xs bg-slate-700 text-slate-300 hover:bg-slate-600">中</button>
-                <button type="button" data-h="640" onclick="setPreviewHeight(640)"
-                    class="preview-size-btn px-2.5 py-1 rounded-lg text-xs bg-slate-700 text-slate-300 hover:bg-slate-600">大</button>
-                <button type="button" onclick="refreshSleepPreview()" class="text-xs text-indigo-400 hover:text-indigo-300">↻ 手动刷新</button>
-            </div>
-        </div>
-        <div id="sleep-preview-scroll" class="overflow-y-auto rounded-xl border border-slate-700 bg-slate-900" style="height: 480px">
-            <div class="flex flex-wrap items-center gap-2 p-2 border-b border-slate-700/60">
-                <button type="button" onclick="randomSleepPalette()"
-                    class="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 rounded-lg text-xs text-white font-medium">🎲 随机配色</button>
-                <button type="button" onclick="saveSleepColorCombo()"
-                    class="px-3 py-1.5 bg-slate-700 hover:bg-slate-600 rounded-lg text-xs text-slate-200">💾 保存配色</button>
-                <select id="sleep-color-combo-select" onchange="applySleepColorComboFromSelect(this)"
-                    class="bg-slate-900 border border-slate-600 rounded-lg px-2 py-1.5 text-xs text-white max-w-[180px]">
-                    <option value="">载入配色...</option>
-                </select>
-                <button type="button" onclick="deleteSleepColorCombo()"
-                    class="px-3 py-1.5 bg-slate-700 hover:bg-slate-600 rounded-lg text-xs text-slate-200" title="删除当前选中的配色组合">🗑</button>
-            </div>
-            <div class="relative">
-                <img id="sleep-preview-img" alt="Sleep 卡片预览" class="w-full max-w-[900px] mx-auto block hidden">
-                <div id="sleep-preview-loading" class="py-16 flex items-center justify-center text-sm text-slate-500">⏳ 渲染预览中...</div>
-            </div>
-        </div>
-        <div id="sleep-preview-resize" title="拖拽调整预览高度"
-            class="mx-auto mt-1.5 h-2 w-24 rounded-full bg-slate-700 hover:bg-indigo-500 cursor-row-resize transition-colors"></div>
-    </div>
-
-    <!-- Config sections -->
+    <!-- Config sections：仅画面参数，sleep 组内嵌预览（与参数配置页同款布局） -->
     <form id="config-form" class="space-y-4">
         <input type="hidden" data-field="structure" value="{{ mode }}">
-
-        <!-- 📋 内容编排：组内步骤序列编辑器 -->
-        <div class="bg-slate-800 rounded-xl border border-slate-700 overflow-hidden">
-            <button type="button" onclick="toggleSection(this)"
-                class="w-full px-5 py-3.5 flex items-center justify-between hover:bg-slate-750 transition rounded-t-xl">
-                <span class="flex items-center gap-2 text-sm font-semibold text-white">
-                    <span class="text-lg">📋</span> 内容编排（组内步骤序列）
-                </span>
-                <span class="text-slate-400 toggle-icon transition-transform">▼</span>
-            </button>
-            <div class="section-content px-5 pb-5">
-                <p class="text-xs text-slate-500 mb-3">每组（A 句 + B 句）按下方序列循环朗读：可增删步骤、调整顺序、重复任意步骤；「停顿」留空 = 沿用 😴 Sleep 组的全局停顿参数（常速后 / 慢速后 / 切组）。改动即时自动保存。</p>
-                <div id="seq-rows" class="space-y-2"></div>
-                <div class="flex flex-wrap items-center gap-2 mt-3">
-                    <select id="seq-add-select" class="bg-slate-900 border border-slate-600 rounded-lg px-2 py-1.5 text-xs text-white">
-                        {% for step, label in sleep_step_labels.items() %}
-                        <option value="{{ step }}">{{ label }}</option>
-                        {% endfor %}
-                    </select>
-                    <button type="button" onclick="seqAddRow()"
-                        class="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 rounded-lg text-xs text-white font-medium">＋ 添加步骤</button>
-                    <button type="button" onclick="seqResetDefault()"
-                        class="px-3 py-1.5 bg-slate-700 hover:bg-slate-600 rounded-lg text-xs text-slate-200">↺ 恢复默认序列</button>
-                    <span id="seq-summary" class="text-xs text-slate-500 ml-auto"></span>
-                </div>
-                <textarea data-field="sleep_sequence" rows="3" class="hidden">{{ config.sleep_sequence }}</textarea>
-                <p class="text-xs text-slate-500 mt-3">当前生效：<span id="seq-effective" class="text-indigo-300 font-medium"></span></p>
-            </div>
-        </div>
-
-{% with sleep_inline_preview = false %}{% include "_config_groups.html" %}{% endwith %}
+        {# 预览渲染会消费、但归属「内容编排」页编辑的文案字段（隐藏域参与预览与合并保存） #}
+        {% for key, val in sleep_hidden_fields %}
+        <input type="hidden" data-field="{{ key }}" value="{{ val }}">
+        {% endfor %}
+{% include "_config_groups.html" %}
     </form>
 
     <!-- Bottom save bar -->
     <div class="sticky bottom-4 mt-6 flex justify-end gap-3">
-        <button onclick="resetConfig()" class="px-4 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg text-sm text-slate-300">
-            ↺ 恢复默认
-        </button>
         <button onclick="saveConfig()" class="px-6 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-lg text-sm text-white font-medium">
             ✓ 保存配置
         </button>
@@ -115,209 +38,4 @@
 
 {% block scripts %}
 {% include "_config_scripts.html" %}
-<script>
-// =========================================================================
-// 📋 内容编排：组内步骤序列编辑器（数据存 sleep_sequence 配置键，JSON 数组）
-// =========================================================================
-const SEQ_STEP_LABELS = {{ sleep_step_labels | tojson }};
-const SEQ_GAP_PARAMS = {{ sleep_gap_params | tojson }};  // {short, long, pair}
-// 默认结构（与 pipeline/sleep/timeline_sleep.py PAIR_STEPS 一致，gap 全 null=沿用全局参数）
-const SEQ_DEFAULT = [
-    {step: 'a_m',    gap: null},
-    {step: 'a_slow', gap: null},
-    {step: 'b_m',    gap: null},
-    {step: 'b_slow', gap: null},
-    {step: 'combo',  gap: null},
-];
-// 服务端解析的已存序列（null = 默认/留空/损坏）
-let seqRows = {{ sleep_sequence_effective | tojson }}
-    || JSON.parse(JSON.stringify(SEQ_DEFAULT));
-
-function seqGapDefault(step) {
-    if (step === 'combo') return SEQ_GAP_PARAMS.pair;
-    if (step === 'a_slow' || step === 'b_slow') return SEQ_GAP_PARAMS.long;
-    return SEQ_GAP_PARAMS.short;
-}
-
-function seqStepText(step) {
-    return SEQ_STEP_LABELS[step] || step;
-}
-
-function seqRender() {
-    const box = document.getElementById('seq-rows');
-    if (!box) return;
-    box.innerHTML = '';
-    seqRows.forEach((row, i) => {
-        const line = document.createElement('div');
-        line.className = 'flex items-center gap-2 bg-slate-900/60 border border-slate-700 rounded-lg px-2.5 py-2';
-
-        const idx = document.createElement('span');
-        idx.className = 'text-xs text-slate-500 font-mono w-6 text-center shrink-0';
-        idx.textContent = i + 1;
-        line.appendChild(idx);
-
-        const sel = document.createElement('select');
-        sel.className = 'flex-1 min-w-0 bg-slate-900 border border-slate-600 rounded-lg px-2 py-1.5 text-sm text-white';
-        Object.keys(SEQ_STEP_LABELS).forEach(k => {
-            const opt = document.createElement('option');
-            opt.value = k;
-            opt.textContent = SEQ_STEP_LABELS[k];
-            if (k === row.step) opt.selected = true;
-            sel.appendChild(opt);
-        });
-        sel.addEventListener('change', () => { row.step = sel.value; seqSync(); });
-        line.appendChild(sel);
-
-        const gap = document.createElement('input');
-        gap.type = 'number'; gap.step = 'any'; gap.min = '0'; gap.max = '30';
-        gap.value = (row.gap === null || row.gap === undefined) ? '' : row.gap;
-        gap.placeholder = '默认 ' + seqGapDefault(row.step) + 's';
-        gap.title = '该步朗读后的停顿秒数（留空=沿用全局停顿参数）';
-        gap.className = 'w-28 shrink-0 bg-slate-900 border border-slate-600 rounded-lg px-2 py-1.5 text-sm text-white';
-        gap.addEventListener('input', () => {
-            row.gap = gap.value.trim() === '' ? null : parseFloat(gap.value);
-            if (row.gap !== null && !Number.isFinite(row.gap)) row.gap = null;
-            seqSync();
-        });
-        line.appendChild(gap);
-
-        const btn = (label, title, fn, extraCls, disabled) => {
-            const b = document.createElement('button');
-            b.type = 'button';
-            b.textContent = label;
-            b.title = title;
-            b.className = 'w-7 h-7 shrink-0 rounded-lg text-xs ' + extraCls;
-            b.disabled = !!disabled;
-            if (!disabled) b.addEventListener('click', fn);
-            return b;
-        };
-        const off = 'bg-slate-800 text-slate-600 cursor-not-allowed';
-        const on = 'bg-slate-700 text-slate-300 hover:bg-slate-600';
-        line.appendChild(btn('↑', '上移', () => {
-            [seqRows[i - 1], seqRows[i]] = [seqRows[i], seqRows[i - 1]];
-            seqRender(); seqSync();
-        }, i === 0 ? off : on, i === 0));
-        line.appendChild(btn('↓', '下移', () => {
-            [seqRows[i + 1], seqRows[i]] = [seqRows[i], seqRows[i + 1]];
-            seqRender(); seqSync();
-        }, i === seqRows.length - 1 ? off : on, i === seqRows.length - 1));
-        line.appendChild(btn('✕', '删除该步骤', () => {
-            seqRows.splice(i, 1);
-            seqRender(); seqSync();
-        }, 'bg-red-900/60 text-red-300 hover:bg-red-800', seqRows.length <= 1));
-
-        box.appendChild(line);
-    });
-    seqRenderSummary();
-}
-
-// gap 显示值（序列行 + 生效链共用）：null → 「默认Xs」
-function seqGapText(row) {
-    return (row.gap === null || row.gap === undefined || row.gap === '')
-        ? '默认' + seqGapDefault(row.step) + 's' : row.gap + 's';
-}
-
-function seqRenderSummary() {
-    const eff = document.getElementById('seq-effective');
-    const sum = document.getElementById('seq-summary');
-    if (eff) {
-        eff.textContent = seqRows
-            .map(r => `${seqStepText(r.step)} → 停${seqGapText(r)}`)
-            .join('　') + ' ｜（每组循环）';
-    }
-    if (sum) sum.textContent = seqRows.length + ' 个步骤 · 每组循环一次';
-}
-
-function seqIsDefault() {
-    return seqRows.length === SEQ_DEFAULT.length && seqRows.every((r, i) =>
-        r.step === SEQ_DEFAULT[i].step
-        && (r.gap === null || r.gap === undefined || r.gap === '') === (SEQ_DEFAULT[i].gap === null));
-}
-
-// 序列 → 隐藏 textarea（sleep_sequence 配置键）→ change 触发 1s 防抖自动保存。
-// 等价默认结构时写空串（与「留空=默认结构」语义一致，配置文件保持干净）。
-function seqSync() {
-    const ta = document.querySelector('textarea[data-field="sleep_sequence"]');
-    if (!ta) return;
-    if (seqIsDefault()) {
-        ta.value = '';
-    } else {
-        const data = seqRows.map(r => ({step: r.step, gap: r.gap === undefined ? null : r.gap}));
-        ta.value = JSON.stringify(data);
-    }
-    ta.dispatchEvent(new Event('change', {bubbles: true}));
-    seqRenderSummary();
-}
-
-function seqAddRow() {
-    const sel = document.getElementById('seq-add-select');
-    seqRows.push({step: sel.value, gap: null});
-    seqRender(); seqSync();
-}
-
-function seqResetDefault() {
-    if (!confirm('恢复为默认序列（A男常速 → A女慢速 → B男常速 → B女慢速 → AB连贯，停顿全部沿用全局参数）?')) return;
-    seqRows = JSON.parse(JSON.stringify(SEQ_DEFAULT));
-    seqRender(); seqSync();
-}
-
-// 预设/恢复默认整体 fillForm 后，隐藏 textarea 值可能被覆盖 → 同步编辑器行
-function onSequenceConfigRefresh() {
-    const ta = document.querySelector('textarea[data-field="sleep_sequence"]');
-    if (!ta) return;
-    let parsed = null;
-    try {
-        const v = (ta.value || '').trim();
-        parsed = v ? JSON.parse(v) : null;
-    } catch (e) { parsed = null; }
-    if (Array.isArray(parsed) && parsed.length) {
-        seqRows = parsed.map(x => ({
-            step: SEQ_STEP_LABELS[x && x.step] ? x.step : 'a_m',
-            gap: (x && x.gap !== null && x.gap !== undefined) ? Number(x.gap) : null,
-        }));
-    } else {
-        seqRows = JSON.parse(JSON.stringify(SEQ_DEFAULT));
-    }
-    seqRender();
-}
-
-// =========================================================================
-// 🖼️ 预览面板：档位按钮 + 拖拽底缘调高（localStorage 记忆）
-// =========================================================================
-const PREVIEW_HEIGHT_KEY = 'sleepPreviewH';
-
-function setPreviewHeight(px) {
-    const el = document.getElementById('sleep-preview-scroll');
-    if (!el) return;
-    const h = Math.max(160, Math.min(window.innerHeight - 160, Math.round(px)));
-    el.style.height = h + 'px';
-    try { localStorage.setItem(PREVIEW_HEIGHT_KEY, String(h)); } catch (e) {}
-    document.querySelectorAll('.preview-size-btn').forEach(b =>
-        b.className = 'preview-size-btn px-2.5 py-1 rounded-lg text-xs '
-            + (Number(b.dataset.h) === h
-                ? 'bg-indigo-600 text-white' : 'bg-slate-700 text-slate-300 hover:bg-slate-600'));
-}
-
-(function initPreviewDrag() {
-    const handle = document.getElementById('sleep-preview-resize');
-    const scroll = document.getElementById('sleep-preview-scroll');
-    if (!handle || !scroll) return;
-    let dragging = false, startY = 0, startH = 0;
-    handle.addEventListener('mousedown', (e) => {
-        dragging = true; startY = e.clientY; startH = scroll.offsetHeight;
-        e.preventDefault();
-    });
-    window.addEventListener('mousemove', (e) => {
-        if (!dragging) return;
-        setPreviewHeight(startH + (e.clientY - startY));
-    });
-    window.addEventListener('mouseup', () => { dragging = false; });
-})();
-
-window.addEventListener('load', function() {
-    const saved = parseInt(localStorage.getItem(PREVIEW_HEIGHT_KEY) || '', 10);
-    setPreviewHeight(Number.isFinite(saved) && saved ? saved : 480);
-    seqRender();
-});
-</script>
 {% endblock %}

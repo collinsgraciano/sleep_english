@@ -12,6 +12,7 @@ from ..config_manager import (
     effective_param_spec, find_run_dir, get_active_mode, get_provider_options,
     iter_run_dirs, list_presets, load_all_mode_configs, load_config,
     load_llm_providers, load_mode_config, set_active_mode,
+    SLEEP_VISUAL_KEYS, SLEEP_ORCHESTRATION_KEYS,
 )
 from ..paths import TRASH_META_FILENAME
 from ..pipeline_service import get_service
@@ -22,7 +23,7 @@ from .runs import _THUMB_NAME_RE, _resolve_main_thumbnail, _resolve_video_copy_p
 
 router = APIRouter()
 
-# 组内步骤序列编辑器（/sleep 页）的步骤中文标签
+# 组内步骤序列编辑器（/arrangement 页）的步骤中文标签
 SLEEP_STEP_LABELS = {
     "a_m": "A句 · 男声常速",
     "a_slow": "A句 · 女声慢速",
@@ -31,6 +32,10 @@ SLEEP_STEP_LABELS = {
     "b_f": "B句 · 女声常速",
     "combo": "AB 连贯",
 }
+
+# 预览渲染会消费、但归属「内容编排」页编辑的文案字段 —— 画面页以隐藏域
+# 参与预览提交与合并保存，避免预览/保存回落默认文案
+SLEEP_PREVIEW_HIDDEN_FIELDS = ("sleep_channel_name", "sleep_outro_text")
 
 
 # ===========================================================================
@@ -90,18 +95,47 @@ def _config_page_context(mode: str) -> dict:
     }
 
 
+def _sleep_page_grouped(mode: str, keys: frozenset) -> tuple[dict, list]:
+    """专项页上下文：全量配置上下文中仅保留 sleep 组内属于 keys 的参数。
+
+    返回 (ctx, grouped)；非 sleep 组不带入专项页（完整清单见「参数配置」页）。
+    """
+    ctx = _config_page_context(mode)
+    grouped = []
+    for g, params in ctx["grouped"]:
+        if g == "sleep":
+            kept = [(k, s, v) for k, s, v in params if k in keys]
+            if kept:
+                grouped.append((g, kept))
+    return ctx, grouped
+
+
 @router.get("/sleep", response_class=HTMLResponse)
 async def sleep_config_page(request: Request, mode: str = ""):
-    """😴 Sleep 睡前短句工作台：实时预览固定顶部（档位+拖拽调高）+
-    组内步骤序列编排编辑器 + 全部配置（与「参数配置」页同一份 mode_sleep.json）。"""
-    ctx = _config_page_context(mode)
+    """😴 Sleep 睡前短句：画面样式专项页（原配置页 sleep 组同款布局 ——
+    左侧 sticky 实时预览 + 右侧参数网格），只放影响画面的设置。"""
+    ctx, grouped = _sleep_page_grouped(mode, SLEEP_VISUAL_KEYS)
     config = ctx["config"]
-    # 序列编辑器卡片已承载 sleep_sequence（可视化编辑）——分组里不再重复渲染原始 JSON 框
-    ctx["grouped"] = [
-        (g, [(k, s, v) for k, s, v in params if k != "sleep_sequence"])
-        if g == "sleep" else (g, params)
-        for g, params in ctx["grouped"]
-    ]
+    ctx.update({
+        "active_page": "sleep",
+        "grouped": grouped,
+        "sleep_inline_preview": True,
+        # 部分参数页 → 合并保存（/api/config/save），防止覆盖未渲染参数
+        "config_save_all": False,
+        "sleep_hidden_fields": [
+            (k, str(config.get(k, "") or "")) for k in SLEEP_PREVIEW_HIDDEN_FIELDS],
+    })
+    return templates.TemplateResponse(request, "sleep_config.html", ctx)
+
+
+@router.get("/arrangement", response_class=HTMLResponse)
+async def arrangement_page(request: Request, mode: str = ""):
+    """📋 内容编排：组内步骤序列可视化编辑器 + 节奏/结构/播报文案参数。"""
+    ctx, grouped = _sleep_page_grouped(mode, SLEEP_ORCHESTRATION_KEYS)
+    config = ctx["config"]
+    # sleep_sequence 由上方可视化编辑器承载，分组网格不重复渲染原始 JSON 框
+    grouped = [(g, [(k, s, v) for k, s, v in ps if k != "sleep_sequence"])
+               for g, ps in grouped]
     # 服务端解析当前序列（损坏/留空 → None，前端回落默认结构展示）
     try:
         from sleep.timeline_sleep import parse_sleep_sequence
@@ -109,7 +143,12 @@ async def sleep_config_page(request: Request, mode: str = ""):
     except Exception:
         sequence = None
     ctx.update({
-        "active_page": "sleep",
+        "active_page": "arrangement",
+        "grouped": grouped,
+        # 组卡标签用「编排参数」，避免与页面标题「内容编排」重复且与画面页混淆
+        "group_meta": {**GROUP_META, "sleep": {"label": "编排参数", "icon": "📋", "order": 9}},
+        "sleep_inline_preview": False,
+        "config_save_all": False,
         "sleep_sequence_effective": sequence,
         "sleep_step_labels": SLEEP_STEP_LABELS,
         "sleep_gap_params": {
@@ -118,7 +157,7 @@ async def sleep_config_page(request: Request, mode: str = ""):
             "pair": config.get("sleep_pair_gap", 3.0),
         },
     })
-    return templates.TemplateResponse(request, "sleep_config.html", ctx)
+    return templates.TemplateResponse(request, "arrangement.html", ctx)
 
 
 @router.get("/config", response_class=HTMLResponse)
