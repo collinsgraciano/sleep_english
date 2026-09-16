@@ -83,27 +83,44 @@
 
     <!-- Main content -->
     <main class="flex-1 overflow-x-clip">
-        <!-- 全局频道上下文条：选中频道后所有页面读写该频道的独立配置快照 -->
+        <!-- 频道上下文条：上下文 = URL ?channel= 参数（每个标签页独立，
+             多开互不干扰）；切换 = 当前路径增删 channel 参数跳转 -->
         <div id="ctx-bar" class="hidden sticky top-0 z-40 bg-slate-800/95 backdrop-blur border-b border-slate-700 px-6 py-2 flex items-center gap-3">
             <span class="text-xs text-slate-400 shrink-0">🎞️ 当前上下文</span>
             <select id="ctx-channel" onchange="switchCtxChannel(this.value)"
                 class="bg-slate-900 border border-slate-600 rounded-lg px-2 py-1 text-xs text-white min-w-[220px]">
                 <option value="">🏠 默认全局配置</option>
             </select>
-            <span id="ctx-hint" class="text-[11px] text-slate-500 truncate">选中频道后，控制台/参数配置/主题管理等页面均读写该频道独立配置</span>
+            <span id="ctx-hint" class="text-[11px] text-slate-500 truncate">选中频道后，本标签页内控制台/参数配置/主题管理等页面均读写该频道独立配置</span>
         </div>
         {% block content %}{% endblock %}
     </main>
 </div>
 
 <script>
-// 频道上下文条：有频道才显示；切换即写 active_channel 并整页刷新
+// 频道上下文（URL 事实源）：读取 ?channel=、渲染上下文条、改写侧边栏
+// 链接使其携带 channel —— 每个标签页独立频道，可多开并行操作
 (function () {
+    const params = new URLSearchParams(location.search);
+    const cur = params.get('channel') || '';
     const bar = document.getElementById('ctx-bar');
-    if (!bar) return;
+
+    function withChannel(url) {
+        const u = new URL(url, location.origin);
+        if (cur) u.searchParams.set('channel', cur);
+        else u.searchParams.delete('channel');
+        return u.pathname + (u.search ? u.search : '') + u.hash;
+    }
+
+    // 侧边栏导航链接保持频道上下文
+    document.querySelectorAll('aside a.nav-link').forEach(a => {
+        a.href = withChannel(a.href);
+    });
+
     fetch('/api/channels/context').then(r => r.json()).then(d => {
         const channels = d.channels || [];
-        if (!channels.length) return;
+        if (!bar) return;
+        if (!channels.length && !cur) return;
         const sel = document.getElementById('ctx-channel');
         channels.forEach(c => {
             const o = document.createElement('option');
@@ -111,21 +128,21 @@
             o.textContent = '🎞️ ' + c.name_en + (c.status !== 'active' ? '（paused）' : '');
             sel.appendChild(o);
         });
-        sel.value = d.active_channel || '';
+        sel.value = cur;
         bar.classList.remove('hidden');
-        if (d.active_channel) {
-            const cur = channels.find(c => c.id === d.active_channel);
-            const hint = document.getElementById('ctx-hint');
-            hint.textContent = '⚠ 正在编辑频道「' + (cur ? cur.name_en : d.active_channel) + '」的独立配置 —— 保存写回频道，不影响全局';
+        const hint = document.getElementById('ctx-hint');
+        if (cur) {
+            const cc = channels.find(c => c.id === cur);
+            hint.textContent = '⚠ 本标签页正在编辑频道「' + (cc ? cc.name_en : cur) + '」的独立配置 —— 保存写回频道，不影响全局；其它标签页可操作别的频道';
             hint.className = 'text-[11px] text-amber-300 truncate';
         }
     }).catch(() => {});
 })();
 function switchCtxChannel(cid) {
-    fetch('/api/channels/active', {
-        method: 'POST', headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({channel_id: cid}),
-    }).then(() => location.reload());
+    const u = new URL(location.href);
+    if (cid) u.searchParams.set('channel', cid);
+    else u.searchParams.delete('channel');
+    location.href = u.pathname + (u.search ? u.search : '') + u.hash;
 }
 </script>
 <script src="/static/js/app.js"></script>

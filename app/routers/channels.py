@@ -26,7 +26,7 @@ from ..channel_profiles import (
     resolve_topics_files, save_channel, save_channel_config,
     set_channel_status, sync_channel_config,
 )
-from ..config_manager import get_active_channel, set_active_channel
+from ..paths import CHANNEL_ASSETS_DIR
 from ..paths import CHANNEL_ASSETS_DIR
 from ..sse import sse_line as _sse, SSE_HEADERS as _SSE_HEADERS
 from .. import topics_ai
@@ -169,31 +169,18 @@ async def api_channels_delete(request: Request):
 
 
 # ===========================================================================
-# 全局频道开关 + 配置同步
+# 频道清单（上下文条数据源）+ 配置同步
 # ===========================================================================
 
 @router.get("/api/channels/context")
 async def api_channels_context():
-    """当前频道上下文 + 频道清单（base.html 上下文条数据源）。"""
+    """频道清单（base.html 上下文条数据源）。
+
+    频道上下文由 URL `?channel=` 携带（多标签页并行，无服务端全局状态）。"""
     channels = [{"id": c["id"], "name_en": c["name_en"], "name_zh": c["name_zh"],
                  "status": c["status"], "logo": c.get("logo", "")}
                 for c in list_channels()]
-    return {"ok": True, "active_channel": get_active_channel(), "channels": channels}
-
-
-@router.post("/api/channels/active")
-async def api_channels_active(request: Request):
-    """切换全局频道上下文：{channel_id: ""} 切回默认全局配置。"""
-    try:
-        data = await request.json()
-    except Exception:
-        data = {}
-    cid = str((data if isinstance(data, dict) else {}).get("channel_id", "") or "").strip()
-    try:
-        set_active_channel(cid)
-    except ValueError as e:
-        return JSONResponse({"ok": False, "error": str(e)}, status_code=404)
-    return {"ok": True, "active_channel": cid}
+    return {"ok": True, "channels": channels}
 
 
 @router.post("/api/channels/{cid}/config/sync")

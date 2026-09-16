@@ -669,73 +669,20 @@ def load_all_mode_configs() -> dict[str, dict[str, Any]]:
     return {mode: load_mode_config(mode) for mode in MODES}
 
 
-# --- 频道上下文开关（全局频道矩阵：选中后所有页面读写该频道配置快照）---
-
-ACTIVE_CHANNEL_PATH = CONFIGS_DIR / "active_channel.json"
-
-
-def get_active_channel() -> str:
-    """当前频道上下文（空串 = 默认全局配置）。频道已删除时自动回落全局。"""
-    if not ACTIVE_CHANNEL_PATH.exists():
-        return ""
-    try:
-        cid = str(json.loads(
-            ACTIVE_CHANNEL_PATH.read_text(encoding="utf-8")).get("channel_id", "") or "")
-    except (json.JSONDecodeError, OSError):
-        return ""
-    if cid:
-        from .channel_profiles import get_channel
-        if get_channel(cid) is None:
-            return ""
-    return cid
-
-
-def set_active_channel(channel_id: str) -> str:
-    """设置当前频道上下文（空串切回全局）。频道不存在时抛错。"""
-    if channel_id:
-        from .channel_profiles import get_channel
-        if get_channel(channel_id) is None:
-            raise ValueError(f"频道不存在: {channel_id}")
-    CONFIGS_DIR.mkdir(parents=True, exist_ok=True)
-    ACTIVE_CHANNEL_PATH.write_text(
-        json.dumps({"channel_id": channel_id}, ensure_ascii=False, indent=2),
-        encoding="utf-8")
-    return channel_id
-
-
-def load_all_context_configs() -> dict[str, dict[str, Any]]:
-    """load_all_mode_configs 的上下文感知版：active_channel 时 sleep 槽位
-    替换为该频道完整配置快照（控制台预载 /api/config/all 与 dashboard 用，
-    前端快捷面板/启动链路零改动即按频道工作）。"""
-    cfgs = load_all_mode_configs()
-    cid = get_active_channel()
-    if cid:
-        from .channel_profiles import load_channel_config
-        cfgs[get_active_mode()] = load_channel_config(cid)
-    return cfgs
-
-
 def get_default_config() -> dict[str, Any]:
     return {k: v["default"] for k, v in PARAM_SPEC.items()}
 
 
 def load_config() -> dict[str, Any]:
-    """当前上下文配置：active_channel 非空 → 该频道完整配置快照；
-    否则 → 当前激活模式的全局配置。（全部页面的读写入口，唯一路由点）"""
-    cid = get_active_channel()
-    if cid:
-        from .channel_profiles import load_channel_config
-        return load_channel_config(cid)
+    """当前激活模式的全局配置（mode_sleep.json）。
+
+    频道维度走显式参数：页面 `?channel=` / API body/query channel →
+    channel_profiles.load_channel_config(cid)（URL 为唯一事实源，
+    多标签页可各自操作不同频道，无服务端隐式状态）。"""
     return load_mode_config(get_active_mode())
 
 
 def save_config(config: dict[str, Any]) -> None:
-    """保存当前上下文配置（active_channel 非空时写频道快照文件）。"""
-    cid = get_active_channel()
-    if cid:
-        from .channel_profiles import save_channel_config
-        save_channel_config(cid, config)
-        return
     save_mode_config(get_active_mode(), config)
 
 

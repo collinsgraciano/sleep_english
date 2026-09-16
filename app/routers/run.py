@@ -6,9 +6,7 @@ from fastapi import APIRouter, Request
 from fastapi.responses import JSONResponse, StreamingResponse
 
 from ..batch_queue_service import get_batch_queue
-from ..config_manager import (
-    PARAM_SPEC, get_active_channel, load_config,
-)
+from ..config_manager import PARAM_SPEC, load_config
 from ..pipeline_service import get_service
 
 router = APIRouter()
@@ -25,11 +23,12 @@ async def api_run_start(request: Request):
     service = get_service()
     data = await request.json() if request.headers.get("content-type", "").startswith("application/json") else {}
     config = data.get("config")
-    # 频道上下文：显式 channel_id 优先，缺省回落全局频道开关
-    channel_id = str(data.get("channel_id", "") or "").strip() or get_active_channel()
+    # 频道上下文：仅显式 channel_id（页面 ?channel= 由前端带入；
+    # 多标签页可各自操作不同频道，无服务端隐式状态）
+    channel_id = str(data.get("channel_id", "") or "").strip()
     if channel_id:
         # 频道运行：base = 频道完整配置快照；前端 config 快照按键覆盖
-        # （上下文条使前端快照本身即频道配置，快捷面板改动全部保留）
+        # （页面即频道上下文渲染，快捷面板改动全部保留）
         from ..channel_profiles import load_channel_config
         resolved = load_channel_config(channel_id)
         if isinstance(config, dict):

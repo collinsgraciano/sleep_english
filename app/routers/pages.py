@@ -42,15 +42,19 @@ SLEEP_PREVIEW_HIDDEN_FIELDS = ("sleep_channel_name", "sleep_outro_text")
 # Page routes
 # ===========================================================================
 
-def _config_page_context(mode: str) -> dict:
+def _config_page_context(mode: str, channel: str = "") -> dict:
     """参数配置页 / Sleep 睡前短句页 共用的渲染上下文组装。
 
-    load_config() 上下文感知：active_channel 非空时返回该频道完整配置快照，
-    参数页保存同样写回频道文件（config 路由唯一入口）。"""
+    channel 非空 → 该频道完整配置快照（多标签页并行：URL ?channel= 为
+    事实源）；空 → 全局 mode_sleep.json。"""
     if mode and mode in MODES:
         set_active_mode(mode)
     mode = get_active_mode()
-    config = load_config()
+    if channel:
+        from ..channel_profiles import load_channel_config
+        config = load_channel_config(channel)
+    else:
+        config = load_mode_config(mode)
     presets = list_presets()
     # Inject dynamic LLM provider options into PARAM_SPEC
     PARAM_SPEC["llm_provider"]["options"] = get_provider_options()
@@ -98,12 +102,12 @@ def _config_page_context(mode: str) -> dict:
     }
 
 
-def _sleep_page_grouped(mode: str, keys: frozenset) -> tuple[dict, list]:
+def _sleep_page_grouped(mode: str, keys: frozenset, channel: str = "") -> tuple[dict, list]:
     """专项页上下文：全量配置上下文中仅保留 sleep 组内属于 keys 的参数。
 
     返回 (ctx, grouped)；非 sleep 组不带入专项页（完整清单见「参数配置」页）。
     """
-    ctx = _config_page_context(mode)
+    ctx = _config_page_context(mode, channel)
     grouped = []
     for g, params in ctx["grouped"]:
         if g == "sleep":
@@ -114,13 +118,14 @@ def _sleep_page_grouped(mode: str, keys: frozenset) -> tuple[dict, list]:
 
 
 @router.get("/sleep", response_class=HTMLResponse)
-async def sleep_config_page(request: Request, mode: str = ""):
+async def sleep_config_page(request: Request, mode: str = "", channel: str = ""):
     """😴 Sleep 睡前短句：画面样式专项页（原配置页 sleep 组同款布局 ——
     左侧 sticky 实时预览 + 右侧参数网格），只放影响画面的设置。"""
-    ctx, grouped = _sleep_page_grouped(mode, SLEEP_VISUAL_KEYS)
+    ctx, grouped = _sleep_page_grouped(mode, SLEEP_VISUAL_KEYS, channel)
     config = ctx["config"]
     ctx.update({
         "active_page": "sleep",
+        "page_channel": channel,
         "grouped": grouped,
         "sleep_inline_preview": True,
         # 部分参数页 → 合并保存（/api/config/save），防止覆盖未渲染参数
@@ -132,9 +137,9 @@ async def sleep_config_page(request: Request, mode: str = ""):
 
 
 @router.get("/arrangement", response_class=HTMLResponse)
-async def arrangement_page(request: Request, mode: str = ""):
+async def arrangement_page(request: Request, mode: str = "", channel: str = ""):
     """📋 内容编排：组内步骤序列可视化编辑器 + 节奏/结构/播报文案参数。"""
-    ctx, grouped = _sleep_page_grouped(mode, SLEEP_ORCHESTRATION_KEYS)
+    ctx, grouped = _sleep_page_grouped(mode, SLEEP_ORCHESTRATION_KEYS, channel)
     config = ctx["config"]
     # sleep_sequence 由上方可视化编辑器承载，分组网格不重复渲染原始 JSON 框
     grouped = [(g, [(k, s, v) for k, s, v in ps if k != "sleep_sequence"])
@@ -147,6 +152,7 @@ async def arrangement_page(request: Request, mode: str = ""):
         sequence = None
     ctx.update({
         "active_page": "arrangement",
+        "page_channel": channel,
         "grouped": grouped,
         # 组卡标签用「编排参数」，避免与页面标题「内容编排」重复且与画面页混淆
         "group_meta": {**GROUP_META, "sleep": {"label": "编排参数", "icon": "📋", "order": 9}},
@@ -164,22 +170,29 @@ async def arrangement_page(request: Request, mode: str = ""):
 
 
 @router.get("/config", response_class=HTMLResponse)
-async def config_page(request: Request, mode: str = ""):
-    # ?mode= 切换 Tab：同步激活模式并渲染该模式配置
-    ctx = _config_page_context(mode)
+async def config_page(request: Request, mode: str = "", channel: str = ""):
+    # ?mode= 切换 Tab：同步激活模式并渲染该模式配置；?channel= 频道上下文
+    ctx = _config_page_context(mode, channel)
     return templates.TemplateResponse(request, "config.html", {
         **ctx,
         "active_page": "config",
+        "page_channel": channel,
     })
 
 
 @router.get("/", response_class=HTMLResponse)
-async def dashboard(request: Request):
+async def dashboard(request: Request, channel: str = ""):
     service = get_service()
-    config = load_config()
-    # 上下文感知预载：active_channel 非空时 sleep 槽位 = 频道完整配置快照
-    # （快捷面板初值/启动合并全部按频道工作，前端 JS 零改动）
-    mode_configs = load_all_context_configs()
+    # ?channel= 频道上下文（URL 事实源，多标签页并行）：快捷面板初值/
+    # 启动合并按该频道配置快照工作
+    if channel:
+        from ..channel_profiles import load_channel_config
+        config = load_channel_config(channel)
+    else:
+        config = load_config()
+    mode_configs = load_all_mode_configs()
+    if channel:
+        mode_configs[get_active_mode()] = config
     # 快捷启动「画面风格」下拉选项（内置+自定义；各模式当前值不在选项中时兜底显示）
     style_options = style_lib.get_style_options()
     for mcfg in mode_configs.values():
@@ -208,6 +221,7 @@ async def dashboard(request: Request):
         "config": config,
         "runner": service,
         "active_page": "dashboard",
+        "page_channel": channel,
         "mode_configs": mode_configs,
         "active_mode": get_active_mode(),
         "mode_labels": MODE_LABELS,
@@ -219,64 +233,13 @@ async def dashboard(request: Request):
     })
 
 
-@router.get("/config", response_class=HTMLResponse)
-async def config_page(request: Request, mode: str = ""):
-    # ?mode= 切换 Tab：同步激活模式并渲染该模式配置
-    if mode and mode in MODES:
-        set_active_mode(mode)
-    mode = get_active_mode()
-    config = load_mode_config(mode)
-    presets = list_presets()
-    # Inject dynamic LLM provider options into PARAM_SPEC
-    PARAM_SPEC["llm_provider"]["options"] = get_provider_options()
-    # Inject visual style options (built-in + custom styles)
-    style_opts = style_lib.get_style_options()
-    cur_style = config.get("visual_style", "pixar3d")
-    if cur_style and cur_style not in style_opts:
-        # 自定义风格已删除：诚实显示，让用户重新选择
-        style_opts = {cur_style: f"{cur_style}（已失效，请重新选择）", **style_opts}
-    PARAM_SPEC["visual_style"]["options"] = style_opts
-    # 按模式过滤：只渲染该模式实际消费的参数（PARAM_SPEC "modes" 标注）
-    mode_spec = effective_param_spec(mode)
-    # Group params by group
-    grouped = {}
-    for key, spec in mode_spec.items():
-        if key == "structure":
-            continue  # 结构由 Tab 决定，不渲染下拉
-        g = spec["group"]
-        if g not in grouped:
-            grouped[g] = []
-        grouped[g].append((key, spec, config.get(key, spec["default"])))
-    # Sort groups by order
-    sorted_groups = sorted(grouped.items(), key=lambda x: GROUP_META.get(x[0], {}).get("order", 99))
-    # sleep 组色盘「留空=内置默认」显示色（来自 pipeline/sleep/sleep_cards）
-    try:
-        from sleep.sleep_cards import color_defaults
-        sleep_color_defaults = color_defaults()
-    except Exception:
-        sleep_color_defaults = {}
-    return templates.TemplateResponse(request, "config.html", {
-        "config": config,
-        "params": PARAM_SPEC,
-        "grouped": sorted_groups,
-        "group_meta": GROUP_META,
-        "presets": presets,
-        "active_page": "config",
-        "mode": mode,
-        "mode_labels": MODE_LABELS,
-        "sleep_color_defaults": sleep_color_defaults,
-        # 自定义 Provider 模型列表（不含 api_key 等敏感字段；去重保持顺序）
-        "custom_providers": [
-            {"id": p.get("id", ""), "name": p.get("name", ""),
-             "models": list(dict.fromkeys(p.get("models") or []))}
-            for p in load_llm_providers()
-        ],
-    })
-
-
 @router.get("/topics", response_class=HTMLResponse)
-async def topics_page(request: Request):
-    config = load_config()
+async def topics_page(request: Request, channel: str = ""):
+    if channel:
+        from ..channel_profiles import load_channel_config
+        config = load_channel_config(channel)
+    else:
+        config = load_config()
     topics_file = config.get("topics_file", "")
     topics_data = {}
     if topics_file and Path(topics_file).exists():
@@ -300,6 +263,7 @@ async def topics_page(request: Request):
         "topics_data": topics_data,
         "used_topics": used_topics,
         "topics_file": topics_file,
+        "page_channel": channel,
         "active_page": "topics",
     })
 
