@@ -11,25 +11,26 @@
 ```
 sleep_english/
 ├── app/                          # Web 层（路由按领域拆分在 routers/）
-│   ├── main.py                   # 装配层（pages/config/run/batch_queue/topics/scripts/runs/mcp_tokens/intro_videos/health/voices×3/ai_test）
+│   ├── main.py                   # 装配层（pages/config/run/batch_queue/topics/scripts/runs/mcp_tokens/intro_videos/health/voices×3/ai_test/channels）
 │   ├── config_manager.py         # MODES=["sleep"]；PARAM_SPEC 已裁剪至 sleep 生效集；resolve_mcp_tokens/sleep 配色
-│   ├── pipeline_service.py       # 后台线程跑 pipeline（_set_env/_build_args/_run_inner；sleep 无角色复用链路）
+│   ├── channel_profiles.py       # 频道矩阵核心：频道实体 CRUD + resolve_run_config 配置合成 + 工坊收藏转正/品牌色→sleep 色板映射
+│   ├── pipeline_service.py       # 后台线程跑 pipeline（_set_env/_build_args/_run_inner；sleep 无角色复用链路；透传 channel_id/音色覆盖/channel_profile）
 │   ├── intro_library.py          # 片头库索引与绑定解析（sleep_intro_video）
 │   ├── script_library.py         # 批量脚本（支持 sleep：DEFAULT_LINES sleep=400）
-│   ├── batch_queue_service.py    # 控制台批量队列
+│   ├── batch_queue_service.py    # 控制台批量队列（队列项含 channel_id/channel_name；_build_config 走 resolve_run_config）
 │   ├── local_batch_service.py    # 运行历史批量 4K/BGM
 │   ├── thumbnail_regen_service.py# 缩略图独立子进程重生成
-│   └── routers/                  # 14 个路由文件
+│   └── routers/                  # 15 个路由文件（channels.py = 频道矩阵 API：CRUD/收藏转正/频道主题库/fill_queue）
 ├── pipeline/
-│   ├── pipeline.py               # sleep-only 精简编排器（_stepN 签名与 pipeline_service 兼容）
+│   ├── pipeline.py               # sleep-only 精简编排器（_stepN 签名与 pipeline_service 兼容；script.json 落 channel_id；quick_test 同频道过滤）
 │   ├── sleep/                    # audio/llm_client/cards/timeline/video_compose/bg_image/intro_video
 │   ├── llm_client.py             # LLM 基础设施（_chat/_extract_json；sensenova/openai/gemini + 代理）
 │   ├── tts_engine.py / qwen_tts_engine.py / moss_tts_engine.py
 │   ├── media_utils.py / checkpoint.py / topic_manager.py / mcp_client.py / sensenova_image.py
-│   ├── thumbnail_gen.py          # sleep 缩略图 + save_youtube_metadata（章节 Intro/Phrase Drills/Outro）
+│   ├── thumbnail_gen.py          # sleep 缩略图 + save_youtube_metadata（章节 Intro/Phrase Drills/Outro；assign_sleep_episode 键含频道前缀）
 │   ├── bgm_mix.py / sr_upscale.py / seo_pool.py / yt_meta_styles/ / style_manager.py / script_style.py
 │   └── fonts/  topics.json
-├── configs/                      # mode_sleep.json（含密钥，gitignored）
+├── configs/                      # mode_sleep.json（含密钥，gitignored）；channels/{cid}.json 频道实体（gitignored 运行时数据）
 ├── bgm_music_60s/                # BGM 音乐库（gitignored）
 └── run.bat                       # 端口 8766
 ```
@@ -67,11 +68,12 @@ sleep_english/
 
 ## 关键事实
 
+- **频道矩阵（2026-09-16）**：频道实体 `configs/channels/{cid}.json`（品牌字段 + overrides 白名单差异项）。核心链路：`channel_profiles.resolve_run_config(mode, cid)` = mode_sleep.json 深合并 overrides 非空键；**频道名强制品牌化**（不回落全局）、**topics/used 强制按频道隔离**、`channel_id` 落 config+script.json+checkpoint。不选频道 = 全局配置原样（现状零变化）。工坊收藏「转为频道」直接复用收藏 id（素材目录天然对齐），brand_colors 三色→11 个 sleep_color_* 映射（文本色保底加深、背景保底提亮）。队列项带 channel_id，`/api/channels/fill_queue` 按 active 频道主题库抽 N 期入队。quick_test 源按 script.json.channel_id 同频道过滤（防跨频道串素材）；LLM 缓存键含频道 ctx 哈希；`.thumb_episode.json` 键 = `cid|topic`（无 cid 维持旧键兼容存量）。频道音色覆盖走 args.sleep_voice_male/female（qwen/moss 引擎同样按引擎音色 id 生效）。YouTube 上传本期不做（youtube_metadata.json 已按频道产出，下期接每频道 OAuth）
 - 集数徽章 output/sleep/.thumb_episode.json 按主题计数（未迁移旧计数，首集从 1 起）
 - 音色默认按模式分套：VOICE_DEFAULT_MODES=("sleep",)，配置无 modes.sleep 节 → 回退 legacy 平铺键（与原项目行为一致）
 - Kokoro 单句失败自动重试 ×2；qwen/moss 失败回退 kokoro
 - 卡片渲染有模板缓存（改主题字段即自动失效）；音频时长 sidecar .durations.json（mtime+size 校验）
 - GitHub remote：https://github.com/collinsgraciano/sleep_english（私有，2026-09-16 创建）；每次 code change 后立即 commit + push
-- channel_factory 已按用户要求补迁挂载（2026-09-15，router+page 路由+侧边栏+paths 常量，eb0c9c5 的「残留留本地」决定作废）；configs/channel_drafts·favorites·references·assets 为运行时数据保持本地不入库（10 收藏/1 参考随迁可用）
+- channel_factory 已按用户要求补迁挂载（2026-09-15，router+page 路由+侧边栏+paths 常量，eb0c9c5 的「残留留本地」决定作废）；configs/channel_drafts·favorites·references·assets·channels 为运行时数据保持本地不入库
 - 双项目并行时集数/主题防重各自独立，可能重合（已知权衡）
 - 用户反馈记忆（跨会话通用规则）见用户级 CODELY.md；本项目后续沉淀追加到「Codely Structured Memories」Project 节
