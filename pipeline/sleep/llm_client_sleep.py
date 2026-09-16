@@ -32,9 +32,39 @@ def _pairs_to_rows(pairs: list[dict]) -> list[dict]:
     return rows
 
 
-def _cache_key(topic: str, cefr: str, num_pairs: int) -> str:
+def _cache_key(topic: str, cefr: str, num_pairs: int, channel_ctx=None) -> str:
     raw = f"sleep|{topic}|{cefr}|{num_pairs}"
+    if channel_ctx:
+        # 频道上下文参与键：同主题不同频道不复用脚本缓存（标题/简介归属各自频道）
+        ctx_sig = json.dumps(channel_ctx, ensure_ascii=False, sort_keys=True)
+        raw += "|" + hashlib.md5(ctx_sig.encode("utf-8")).hexdigest()[:8]
     return hashlib.md5(raw.encode("utf-8")).hexdigest()[:12]
+
+
+def _channel_brand_block(channel_ctx) -> str:
+    """频道品牌上下文 prompt 段（无频道返回空串，维持现状 prompt）。"""
+    if not channel_ctx:
+        return ""
+    name = str(channel_ctx.get("name_en", "") or "").strip()
+    if not name:
+        return ""
+    tags = ", ".join(str(t) for t in (channel_ctx.get("tags") or [])[:12])
+    lines = [
+        f"\nCHANNEL BRAND CONTEXT — this video is published on the channel \"{name}\""
+        + (f" ({channel_ctx.get('name_zh')})" if channel_ctx.get("name_zh") else "") + ":",
+    ]
+    if channel_ctx.get("niche"):
+        lines.append(f"- Channel niche: {channel_ctx['niche']}")
+    if channel_ctx.get("audience"):
+        lines.append(f"- Target audience: {channel_ctx['audience']}")
+    if channel_ctx.get("brand_style"):
+        lines.append(f"- Brand style/tone: {channel_ctx['brand_style']}")
+    if tags:
+        lines.append(f"- Channel SEO tags: {tags}")
+    lines.append(
+        "- Keep the sleep-listening phrase-drill format unchanged; tilt pair "
+        "angles, titles and descriptions toward THIS channel's positioning.")
+    return "\n".join(lines) + "\n"
 
 
 def _validate_pairs(pairs: list[dict], expected: int, max_words: int) -> tuple[bool, str, int]:
@@ -58,7 +88,8 @@ def _validate_pairs(pairs: list[dict], expected: int, max_words: int) -> tuple[b
 
 
 def _batch_prompt(topic: str, cefr: str, count: int, start_idx: int,
-                  total_pairs: int, max_words: int, with_meta: bool) -> str:
+                  total_pairs: int, max_words: int, with_meta: bool,
+                  channel_ctx=None) -> str:
     cefr_guide = {
         "A1": "very basic everyday words, present tense only",
         "A2": "common daily phrases, present/past tense",
@@ -100,7 +131,7 @@ def _batch_prompt(topic: str, cefr: str, count: int, start_idx: int,
 
 Topic: {topic}
 CEFR Level: {cefr} ({cefr_guide})
-
+{_channel_brand_block(channel_ctx)}
 This is batch {start_idx // count + 1}: generate pairs {start_idx + 1} to {start_idx + count} (of {total_pairs} total).
 
 Each pair = a short A sentence (opening/trigger) + a short B sentence (natural reply/continuation) about the topic. These are NOT a connected story — each pair stands alone (different mini-situations welcome: doing the task, asking about it, small talk about it).
@@ -154,9 +185,9 @@ def _meta_from_batch(batch: dict, topic: str, cefr: str, num_pairs: int) -> None
 
 
 def _generate_batch(topic, cefr, count, start_idx, total_pairs, max_words,
-                    with_meta, temperature):
+                    with_meta, temperature, channel_ctx=None):
     prompt = _batch_prompt(topic, cefr, count, start_idx, total_pairs,
-                           max_words, with_meta)
+                           max_words, with_meta, channel_ctx=channel_ctx)
     last_err = None
     for attempt in range(3):
         try:
@@ -185,12 +216,15 @@ def _generate_batch(topic, cefr, count, start_idx, total_pairs, max_words,
 def generate_sleep_script(topic: str, cefr: str = "A2", num_pairs: int = 200,
                           batch_pairs: int = 50, lessons_dir: str = None,
                           cache_dir: str = None,
-                          use_cache: bool = True) -> dict:
+                          use_cache: bool = True,
+                          channel_ctx: dict | None = None) -> dict:
     """分批生成 sleep 脚本，返回 listening 兼容 script dict。
 
     批间落盘 cache_dir（默认 lessons_dir 或系统临时目录）——中断后重跑同
     topic/cefr/num_pairs 自动复用已成功批次；use_cache=False 跳过读取，
     每批现场重新生成（落盘写入保留，便于之后重新开启复用）。
+    channel_ctx（频道品牌上下文，pipeline_service._channel_ctx 构建）：
+    注入 prompt 让选题角度/标题/简介贴合频道定位；参与缓存键防跨频道串稿。
     """
     num_pairs = max(10, min(400, int(num_pairs)))
     batch_pairs = max(10, min(80, int(batch_pairs)))
@@ -199,7 +233,7 @@ def generate_sleep_script(topic: str, cefr: str = "A2", num_pairs: int = 200,
     cdir = Path(cache_dir) if cache_dir else (
         Path(lessons_dir) if lessons_dir else Path.home() / ".sleep_cache")
     cdir.mkdir(parents=True, exist_ok=True)
-    ck = _cache_key(topic, cefr, num_pairs)
+    ck = _cache_key(topic, cefr, num_pairs, channel_ctx)
 
     all_pairs: list[dict] = []
     meta: dict = {}
@@ -216,7 +250,8 @@ def generate_sleep_script(topic: str, cefr: str = "A2", num_pairs: int = 200,
                 print("  [Sleep] Batch cache disabled — regenerating fresh content")
             batch, pairs = _generate_batch(topic, cefr, count, start, num_pairs,
                                            max_words, with_meta=(start == 0),
-                                           temperature=0.85)
+                                           temperature=0.85,
+                                           channel_ctx=channel_ctx)
             batch_file.write_text(json.dumps({"batch": batch, "pairs": pairs},
                                              ensure_ascii=False, indent=1),
                                   encoding="utf-8")

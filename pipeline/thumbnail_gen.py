@@ -89,12 +89,15 @@ Clean legible text, bright studio lighting, vibrant colors, highly detailed, pro
 CRITICAL: The largest and most prominent text on the thumbnail must be the Traditional Chinese title "{title_zh_large}". The English title "{title_en}" must be noticeably smaller, serving as a subtitle below the Chinese title. The Chinese audience sees the Chinese title first — it must grab attention."""
 
 
-def assign_sleep_episode(script: dict, sleep_dir: str) -> int:
+def assign_sleep_episode(script: dict, sleep_dir: str,
+                         channel_id: str = "") -> int:
     """缩略图集数：按主题系列自动递增（首次生成时 bump 计数文件）。
 
     - script 已有 thumb_episode（重生成/复跑）→ 直接返回，不 bump；
     - 计数存 {sleep_dir}/.thumb_episode.json（点前缀文件不进运行列表），
-      键 = topic（缺省 title）；参考缩略图的红色圆底 01/02 徽章。
+      键 = topic（缺省 title）；频道矩阵下键加 channel_id 前缀
+      （f"{cid}|{topic}"），各频道同主题系列各自独立递增；
+    - 参考缩略图的红色圆底 01/02 徽章。
     """
     try:
         existing = int(script.get("thumb_episode", 0) or 0)
@@ -103,6 +106,7 @@ def assign_sleep_episode(script: dict, sleep_dir: str) -> int:
     if existing > 0:
         return existing
     topic = str(script.get("topic", "") or script.get("title", "") or "default").strip()
+    key = f"{channel_id}|{topic}" if str(channel_id or "").strip() else topic
     path = Path(sleep_dir) / ".thumb_episode.json"
     data: dict = {}
     if path.exists():
@@ -113,10 +117,10 @@ def assign_sleep_episode(script: dict, sleep_dir: str) -> int:
         except (json.JSONDecodeError, OSError):
             data = {}
     try:
-        ep = int(data.get(topic, 0) or 0) + 1
+        ep = int(data.get(key, 0) or 0) + 1
     except (TypeError, ValueError):
         ep = 1
-    data[topic] = ep
+    data[key] = ep
     try:
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")

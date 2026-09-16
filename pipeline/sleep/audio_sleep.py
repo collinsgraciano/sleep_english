@@ -208,12 +208,15 @@ def prepare_sleep_audio(script: dict, audio_dir: Path, num_pairs: int,
                         tts_engine: str = "kokoro", slow_rate: float = 0.8,
                         male_rate: float = 1.0,
                         channel_name: str = "", outro_text: str = "",
+                        voice_male: str = "", voice_female: str = "",
                         stop_check=None,
                         needed_steps: set[str] | None = None) -> dict:
     """生成全部 sleep 音频（文件级续传）。返回 results dict（见 load_*）。
 
     slow_rate/male_rate 为速率倍率（0.8=八成速），经各引擎 synth_english
     的 rate 参数实现（Kokoro 原生 speed 变速不变调；Qwen/MOSS 引擎内部处理）。
+    voice_male/voice_female 为频道级音色覆盖（空=按性别默认映射），
+    qwen/moss 引擎同样按引擎音色 id 生效。
     needed_steps（needed_audio_steps 结果）：仅合成序列编排消费的步骤文件，
     None=默认结构全集。
     """
@@ -230,6 +233,11 @@ def prepare_sleep_audio(script: dict, audio_dir: Path, num_pairs: int,
     tts, voice_map = build_engine_and_voice_map(tts_engine, script)
     male_voice = voice_map.get("char_a", "am_adam")
     female_voice = voice_map.get("char_b", "af_sarah")
+    # 频道级音色覆盖（空=维持按性别映射；qwen/moss 引擎同样生效）
+    if str(voice_male or "").strip():
+        male_voice = str(voice_male).strip()
+    if str(voice_female or "").strip():
+        female_voice = str(voice_female).strip()
 
     _fb = {"eng": None, "map": None}
 

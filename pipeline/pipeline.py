@@ -83,7 +83,7 @@ def _validate_script(script: dict, num_lines: int) -> tuple[bool, str]:
 def _generate_script_with_retry(topic, cefr, lessons_dir, num_lines,
                                 sleep_pairs=0, sleep_batch=50,
                                 sleep_cache_dir=None, sleep_use_cache=True,
-                                max_attempts=5) -> dict:
+                                max_attempts=5, channel_ctx=None) -> dict:
     """Generate and validate sleep script, retrying on failure."""
     for attempt in range(max_attempts):
         try:
@@ -94,7 +94,8 @@ def _generate_script_with_retry(topic, cefr, lessons_dir, num_lines,
                                            batch_pairs=int(sleep_batch),
                                            lessons_dir=lessons_dir,
                                            cache_dir=sleep_cache_dir,
-                                           use_cache=bool(sleep_use_cache))
+                                           use_cache=bool(sleep_use_cache),
+                                           channel_ctx=channel_ctx)
             valid, msg = _validate_script(script, num_lines)
             if valid:
                 print(f"  [Script] Valid: {len(script['dialogue'])} lines")
@@ -144,10 +145,20 @@ def _resolve_run_dir(parent_dir: Path, checkpoint: dict) -> Path:
 
 def _find_quick_test_source(args, exclude_dir=None):
     """快速测试素材来源：sleep 模式最近一次含 script.json 的运行。
-    排除回收站/隐藏目录/当前运行。找不到返回 None。"""
+    排除回收站/隐藏目录/当前运行。找不到返回 None。
+    频道维度过滤：只复用同频道（script.json.channel_id 一致，含同为空）
+    的运行，防止 A 频道的品牌素材/文案串进 B 频道。"""
+
+    def _script_channel(sp: Path) -> str:
+        try:
+            return str(json.loads(sp.read_text(encoding="utf-8"))
+                       .get("channel_id", "") or "")
+        except (json.JSONDecodeError, OSError):
+            return ""
 
     def _collect(base: Path, want_structure):
         runs = []
+        want_channel = str(getattr(args, "channel_id", "") or "")
         if not base.is_dir():
             return runs
         for d in base.iterdir():
@@ -157,6 +168,8 @@ def _find_quick_test_source(args, exclude_dir=None):
                 continue
             sp = d / "script.json"
             if not sp.exists():
+                continue
+            if _script_channel(sp) != want_channel:
                 continue
             if want_structure is not None:
                 try:
@@ -254,9 +267,11 @@ def _step0_script(args, checkpoint: dict, topic: str, parent_dir: Path,
             for d in dirs.values():
                 d.mkdir(parents=True, exist_ok=True)
             script["structure"] = args.structure
+            script["channel_id"] = str(getattr(args, "channel_id", "") or "")
             script_path.write_text(json.dumps(script, ensure_ascii=False, indent=2), encoding="utf-8")
             _save_checkpoint(work_dir, "step0_script", topic=topic, cefr=args.cefr,
-                             structure=args.structure)
+                             structure=args.structure,
+                             channel_id=str(getattr(args, "channel_id", "") or ""))
             print(f"  [QuickTest] 脚本复用自上次运行: {qt_src.name}")
         else:
             if getattr(args, "quick_test", False):
@@ -266,7 +281,8 @@ def _step0_script(args, checkpoint: dict, topic: str, parent_dir: Path,
                 sleep_pairs=int(getattr(args, "sleep_pairs", 200)),
                 sleep_batch=int(getattr(args, "sleep_batch_pairs", 50)),
                 sleep_cache_dir=str(parent_dir / ".sleep_cache"),
-                sleep_use_cache=bool(getattr(args, "sleep_use_cache", True)))
+                sleep_use_cache=bool(getattr(args, "sleep_use_cache", True)),
+                channel_ctx=getattr(args, "channel_profile", None))
             yt_title = script.get("youtube_title", script.get("title", topic))
             safe_title = _safe_dirname(yt_title, topic)
             work_dir = parent_dir / safe_title
@@ -277,16 +293,20 @@ def _step0_script(args, checkpoint: dict, topic: str, parent_dir: Path,
                 d.mkdir(parents=True, exist_ok=True)
             qa_report = script.pop("_qa", None)
             script["structure"] = args.structure
+            script["channel_id"] = str(getattr(args, "channel_id", "") or "")
             script_path.write_text(json.dumps(script, ensure_ascii=False, indent=2), encoding="utf-8")
             if qa_report:
                 qa_path = work_dir / "qa_report.json"
                 qa_path.write_text(json.dumps(qa_report, indent=2), encoding="utf-8")
                 print(f"  QA report saved: {qa_path}")
             _save_checkpoint(work_dir, "step0_script", topic=topic, cefr=args.cefr,
-                             structure=args.structure)
+                             structure=args.structure,
+                             channel_id=str(getattr(args, "channel_id", "") or ""))
             mark_topic_used(used_topics_file, topic)
     print(f"  Script saved: {script_path}")
     print(f"  Title: {script.get('title', '')}")
+    if str(getattr(args, "channel_id", "") or ""):
+        print(f"  Channel: {getattr(args, 'channel_id')}")
     print(f"  Dialogue lines: {len(script.get('dialogue', []))}")
     return script, work_dir, dirs
 
@@ -348,6 +368,8 @@ def _step2_images_tts(args, checkpoint: dict, script: dict, work_dir: Path, dirs
                 male_rate=float(getattr(args, "sleep_male_rate", 1.0) or 1.0),
                 channel_name=str(getattr(args, "sleep_channel_name", "") or ""),
                 outro_text=str(getattr(args, "sleep_outro_text", "") or ""),
+                voice_male=str(getattr(args, "sleep_voice_male", "") or ""),
+                voice_female=str(getattr(args, "sleep_voice_female", "") or ""),
                 stop_check=stop_check,
                 needed_steps=_needed))
         except RuntimeError as e:
@@ -547,7 +569,8 @@ def _step45_thumbnail(args, checkpoint: dict, script: dict, work_dir: Path,
         # 集数按主题系列自动递增（重生成读 script.thumb_episode 不再递增）
         from thumbnail_gen import assign_sleep_episode
         from sleep.sleep_cards import build_theme
-        assign_sleep_episode(script, str(work_dir.parent))
+        assign_sleep_episode(script, str(work_dir.parent),
+                             channel_id=str(getattr(args, "channel_id", "") or ""))
         (work_dir / "script.json").write_text(
             json.dumps(script, ensure_ascii=False, indent=2), encoding="utf-8")
         # Step 1 对 sleep 跳过了 MCP 初始化 —— AI 缩略图需要会话，按需初始化；

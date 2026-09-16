@@ -6,7 +6,7 @@ from fastapi import APIRouter, Request
 from fastapi.responses import JSONResponse, StreamingResponse
 
 from ..batch_queue_service import get_batch_queue
-from ..config_manager import load_config
+from ..config_manager import get_active_mode, load_config
 from ..pipeline_service import get_service
 
 router = APIRouter()
@@ -22,7 +22,17 @@ async def api_run_start(request: Request):
             status_code=409)
     service = get_service()
     data = await request.json() if request.headers.get("content-type", "").startswith("application/json") else {}
-    config = data.get("config") or load_config()
+    config = data.get("config")
+    channel_id = str(data.get("channel_id", "") or "").strip()
+    if config is None:
+        if channel_id:
+            # 频道运行：全局配置深合并频道 overrides（含频道名/色板/音色/主题域）
+            from ..channel_profiles import resolve_run_config
+            config = resolve_run_config(get_active_mode(), channel_id)
+        else:
+            config = load_config()
+    if channel_id:
+        config["channel_id"] = channel_id
     resume = data.get("resume", False)
     step_mode = data.get("step_mode", False)
     ok = service.start(config, resume=resume, step_mode=step_mode)

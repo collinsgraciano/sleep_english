@@ -122,6 +122,31 @@ def _resolve_sleep_intro_video(config: dict) -> str:
     return path
 
 
+def _channel_ctx(channel_id: str) -> dict | None:
+    """channel_id → LLM 品牌上下文（脚本标题/简介/选题贴合频道定位）。
+
+    无频道 / 频道缺失时返回 None（CLI 与全局运行维持现状）。
+    """
+    if not channel_id:
+        return None
+    try:
+        from .channel_profiles import get_channel
+        ch = get_channel(channel_id)
+    except Exception:  # noqa: BLE001 — 频道上下文缺失不阻塞运行
+        return None
+    if not ch:
+        return None
+    return {
+        "channel_id": ch.get("id", ""),
+        "name_en": ch.get("name_en", ""),
+        "name_zh": ch.get("name_zh", ""),
+        "niche": ch.get("niche", ""),
+        "audience": ch.get("audience", ""),
+        "tags": ch.get("tags") or [],
+        "brand_style": ch.get("brand_style", ""),
+    }
+
+
 class PipelineService:
     """Manages pipeline execution in a background thread with direct imports."""
 
@@ -421,6 +446,10 @@ class PipelineService:
             sleep_use_cache=bool(config.get("sleep_use_cache", True)),
             sleep_channel_name=str(config.get("sleep_channel_name", "") or ""),
             sleep_outro_text=str(config.get("sleep_outro_text", "") or ""),
+            channel_id=str(config.get("channel_id", "") or ""),
+            channel_profile=_channel_ctx(str(config.get("channel_id", "") or "")),
+            sleep_voice_male=str(config.get("sleep_voice_male", "") or ""),
+            sleep_voice_female=str(config.get("sleep_voice_female", "") or ""),
             sleep_show_leaves=bool(config.get("sleep_show_leaves", True)),
             sleep_handwrite_font=str(config.get("sleep_handwrite_font", "") or ""),
             sleep_color_bg_top=str(config.get("sleep_color_bg_top", "") or ""),
@@ -544,6 +573,7 @@ class PipelineService:
             d.mkdir(parents=True, exist_ok=True)
         script_path = work_dir / "script.json"
         script["structure"] = args.structure
+        script["channel_id"] = str(getattr(args, "channel_id", "") or "")
         script_path.write_text(
             json.dumps(script, ensure_ascii=False, indent=2), encoding="utf-8")
         _save_checkpoint(work_dir, "step0_script", topic=topic, cefr=args.cefr,

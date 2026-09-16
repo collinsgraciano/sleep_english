@@ -245,6 +245,8 @@ def resolve_run_config(mode: str, channel_id: str = "") -> dict[str, Any]:
     topics_file, used_file = resolve_topics_files(channel)
     config["topics_file"] = topics_file
     config["used_topics_file"] = used_file
+    # 运行级标记：_build_args/_step0 落 script.json、quick_test 过滤都依赖它
+    config["channel_id"] = channel["id"]
     return config
 
 
