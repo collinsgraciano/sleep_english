@@ -282,9 +282,9 @@ async function saveEdit() {
 }
 
 // ---------- 配置上下文 / 同步 ----------
-async function gotoConfig(cid) {
-    await fetch('/api/channels/active', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({channel_id: cid})});
-    location.href = '/config';
+function gotoConfig(cid) {
+    // 新标签打开参数配置页（?channel= 频道上下文）——支持多频道同时操作
+    window.open('/config?channel=' + encodeURIComponent(cid), '_blank');
 }
 
 function openSync(cid) {

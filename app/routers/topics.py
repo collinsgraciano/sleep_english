@@ -20,10 +20,20 @@ from .. import topics_ai
 router = APIRouter()
 
 
+def _ctx_config(channel: str) -> dict:
+    """API 上下文：channel 非空 → 该频道完整配置快照（主题域按频道隔离）；
+    空 → 全局配置。多标签页并行操作不同频道（URL ?channel= 事实源）。"""
+    channel = str(channel or "").strip()
+    if channel:
+        from ..channel_profiles import load_channel_config
+        return load_channel_config(channel)
+    return load_config()
+
+
 @router.post("/api/topics/add")
 async def api_add_topic(request: Request):
     data = await request.json()
-    config = load_config()
+    config = _ctx_config(data.get("channel", ""))
     topics_file = config.get("topics_file", "")
     if not topics_file:
         return JSONResponse({"ok": False, "error": "未配置主题库文件"}, status_code=400)
@@ -55,8 +65,8 @@ async def api_add_topic(request: Request):
 
 
 @router.delete("/api/topics/{category}/{index}")
-async def api_delete_topic(category: str, index: int):
-    config = load_config()
+async def api_delete_topic(category: str, index: int, channel: str = ""):
+    config = _ctx_config(channel)
     topics_file = config.get("topics_file", "")
     if not topics_file or not Path(topics_file).exists():
         return JSONResponse({"ok": False, "error": "主题库不存在"}, status_code=404)
@@ -76,7 +86,7 @@ async def api_delete_topic(category: str, index: int):
 @router.post("/api/topics/add_category")
 async def api_add_category(request: Request):
     data = await request.json()
-    config = load_config()
+    config = _ctx_config(data.get("channel", ""))
     topics_file = config.get("topics_file", "")
     if not topics_file:
         return JSONResponse({"ok": False, "error": "未配置主题库文件"}, status_code=400)
@@ -104,7 +114,7 @@ async def api_add_categories(request: Request):
         return JSONResponse({"ok": False, "error": "categories 不能为空"}, status_code=400)
     if len(cats) > 20:
         return JSONResponse({"ok": False, "error": "一次最多创建 20 个分类"}, status_code=400)
-    config = load_config()
+    config = _ctx_config(data.get("channel", ""))
     topics_file = config.get("topics_file", "")
     if not topics_file:
         return JSONResponse({"ok": False, "error": "未配置主题库文件"}, status_code=400)
@@ -135,12 +145,12 @@ async def api_add_categories(request: Request):
 
 
 @router.get("/api/topics/random")
-async def api_random_topic(request: Request):
+async def api_random_topic(request: Request, channel: str = ""):
     """Pick a random topic from topics.json (excluding used).
 
     ?mark=true will mark the topic as used (atomic write).
     """
-    config = load_config()
+    config = _ctx_config(channel)
     topics_file = config.get("topics_file", "")
     if not topics_file or not Path(topics_file).exists():
         return JSONResponse({"ok": False, "error": "主题库不存在"}, status_code=404)
@@ -180,8 +190,8 @@ async def api_random_topic(request: Request):
 
 
 @router.post("/api/topics/used/reset")
-async def api_reset_used():
-    config = load_config()
+async def api_reset_used(channel: str = ""):
+    config = _ctx_config(channel)
     used_file = config.get("used_topics_file", "")
     if not used_file:
         output_dir = config.get("output_dir", "./output")
@@ -203,7 +213,7 @@ async def api_topics_ai_generate(request: Request):
         count = 10
     hint = str(data.get("hint", "")).strip()[:500]
 
-    config = load_config()
+    config = _ctx_config(data.get("channel", ""))
     topics_data = _load_topics_data(config)
     used = _load_used_topic_names(config)
 
@@ -238,7 +248,7 @@ async def api_topics_ai_suggest_categories(request: Request):
         count = max(1, min(int(data.get("count", 5) or 5), 10))
     except (TypeError, ValueError):
         count = 5
-    config = load_config()
+    config = _ctx_config(data.get("channel", ""))
     topics_data = _load_topics_data(config)
     if not topics_data:
         return JSONResponse({"error": "topics.json 不存在或为空"}, status_code=400)
@@ -252,9 +262,9 @@ async def api_topics_ai_suggest_categories(request: Request):
 
 
 @router.post("/api/topics/ai/review")
-async def api_topics_ai_review():
+async def api_topics_ai_review(channel: str = ""):
     """SSE: full-library audit — local duplicate check + AI batched review."""
-    config = load_config()
+    config = _ctx_config(channel)
     topics_data = _load_topics_data(config)
     if not topics_data:
         return JSONResponse({"error": "topics.json 不存在或为空"}, status_code=400)
@@ -301,7 +311,7 @@ async def api_topics_ai_apply(request: Request):
     actions = data.get("actions", [])
     if not isinstance(actions, list) or not actions:
         return JSONResponse({"error": "actions 不能为空"}, status_code=400)
-    config = load_config()
+    config = _ctx_config(data.get("channel", ""))
     topics_file = config.get("topics_file", "")
     if not topics_file or not Path(topics_file).exists():
         return JSONResponse({"error": "topics.json 不存在"}, status_code=400)

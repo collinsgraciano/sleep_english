@@ -10,8 +10,8 @@ from fastapi.responses import JSONResponse, Response
 from ..config_manager import (
     MODES, MODE_LABELS,
     DEFAULT_QUICK_FIELDS, load_quick_fields, save_quick_fields,
-    load_config, load_all_context_configs, save_config,
-    get_active_channel, get_active_mode, set_active_mode,
+    load_config, load_mode_config, save_mode_config,
+    get_active_mode, set_active_mode,
     get_default_config,
     save_preset, load_preset, delete_preset,
     list_sleep_color_presets, save_sleep_color_preset, delete_sleep_color_preset,
@@ -20,46 +20,70 @@ from ..config_manager import (
 router = APIRouter()
 
 
+def _ctx(channel: str) -> tuple[str, dict]:
+    """API 上下文解析：channel 非空 → 该频道完整配置快照；空 → 全局。
+
+    返回 (channel_id, config)；写操作配合 _save_ctx 落回正确文件。"""
+    channel = str(channel or "").strip()
+    if channel:
+        from ..channel_profiles import load_channel_config
+        return channel, load_channel_config(channel)
+    return "", load_config()
+
+
+def _save_ctx(channel: str, config: dict) -> None:
+    channel = str(channel or "").strip()
+    if channel:
+        from ..channel_profiles import save_channel_config
+        save_channel_config(channel, config)
+    else:
+        save_config(config)
+
+
 @router.post("/api/config/save")
 async def api_save_config(request: Request):
     data = await request.json()
+    channel = str(data.pop("channel", "") or "").strip()
     mode = data.pop("_mode", "") or get_active_mode()
     if mode not in MODES:
         return JSONResponse({"ok": False, "error": f"未知模式: {mode}"}, status_code=400)
-    # 上下文感知：active_channel 非空时读写该频道完整配置快照
-    config = load_config()
+    channel, config = _ctx(channel)
     config.update(data)
     config["structure"] = mode
-    save_config(config)
-    return {"ok": True, "mode": mode, "channel": get_active_channel()}
+    _save_ctx(channel, config)
+    return {"ok": True, "mode": mode, "channel": channel}
 
 
 @router.post("/api/config/save_all")
 async def api_save_all_config(request: Request):
     data = await request.json()
+    channel = str(data.pop("channel", "") or "").strip()
     mode = data.pop("_mode", "") or get_active_mode()
     if mode not in MODES:
         return JSONResponse({"ok": False, "error": f"未知模式: {mode}"}, status_code=400)
     data["structure"] = mode
-    save_config(data)
-    return {"ok": True, "mode": mode, "channel": get_active_channel()}
+    _save_ctx(channel, data)
+    return {"ok": True, "mode": mode, "channel": channel}
 
 
 @router.get("/api/config")
-async def api_get_config(mode: str = ""):
-    return load_config()
+async def api_get_config(mode: str = "", channel: str = ""):
+    _, config = _ctx(channel)
+    return config
 
 
 @router.get("/api/config/all")
-async def api_get_all_configs():
-    """一次性返回当前上下文的模式配置 + 当前激活模式/频道（控制台预载用）。
+async def api_get_all_configs(channel: str = ""):
+    """一次性返回上下文（?channel= 或全局）配置 + 当前激活模式（控制台预载）。
 
-    active_channel 非空时 modes 内为该频道完整配置快照（前端快捷面板/
-    启动链路零改动即按频道工作）。"""
+    channel 非空时 modes 内为该频道完整配置快照（快捷面板/启动按频道工作）。"""
+    channel, config = _ctx(channel)
+    modes = load_all_mode_configs()
+    modes[get_active_mode()] = config
     return {
         "active_mode": get_active_mode(),
-        "active_channel": get_active_channel(),
-        "modes": load_all_context_configs(),
+        "active_channel": channel,
+        "modes": modes,
         "mode_labels": MODE_LABELS,
     }
 
@@ -164,9 +188,10 @@ def _render_sleep_preview_png(cfg: dict) -> bytes:
 
 
 @router.get("/api/config/sleep_preview")
-async def api_sleep_preview_get():
-    """用当前上下文（频道/全局）已保存的 sleep 配置渲染预览（页面首图）。"""
-    png = await asyncio.to_thread(_render_sleep_preview_png, load_config())
+async def api_sleep_preview_get(channel: str = ""):
+    """用当前上下文（?channel= 频道快照 / 全局）已保存配置渲染预览。"""
+    _, config = _ctx(channel)
+    png = await asyncio.to_thread(_render_sleep_preview_png, config)
     return Response(content=png, media_type="image/png")
 
 

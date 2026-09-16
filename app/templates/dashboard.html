@@ -591,7 +591,8 @@ function switchMode(m) {
     }).catch(() => {});
 }
 
-// --- 快捷项即时保存（带模式，刷新不丢） ---
+// --- 快捷项即时保存（带模式/频道上下文，刷新不丢） ---
+const PAGE_CHANNEL = new URLSearchParams(location.search).get('channel') || '';
 let _quickSaveTimer = null;
 function onQuickInput(field, value, emptyFallback) {
     if (value === '' && emptyFallback !== undefined) value = emptyFallback;
@@ -602,7 +603,7 @@ function onQuickInput(field, value, emptyFallback) {
         fetch('/api/config/save', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({_mode: mode, [field]: value})
+            body: JSON.stringify({_mode: mode, channel: PAGE_CHANNEL, [field]: value})
         }).catch(() => {});
     }, 600);
 }
@@ -737,7 +738,7 @@ function pickRandomTopic() {
 function startPipeline(resume) {
     // 启动前先拉取服务端最新配置刷新快照：配置页刚保存的参数
     // （如生图 Provider）不能被页面加载时的旧快照覆盖，否则会以过期配置启动
-    fetch('/api/config/all')
+    fetch('/api/config/all?channel=' + encodeURIComponent(PAGE_CHANNEL))
         .then(r => r.json())
         .then(data => {
             if (data && data.modes) Object.assign(MODE_CONFIGS, data.modes);
@@ -762,8 +763,9 @@ function _doStartPipeline(resume) {
     fetch('/api/run/start', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
-        // channel_id 缺省由服务端回落全局频道开关（顶部上下文条）
-        body: JSON.stringify({config, resume, step_mode: stepMode})
+        // channel_id = 本标签页频道上下文（URL ?channel=，空=全局）
+        body: JSON.stringify({config, resume, step_mode: stepMode,
+                              channel_id: PAGE_CHANNEL})
     })
     .then(r => r.json())
     .then(data => {

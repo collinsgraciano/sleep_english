@@ -135,8 +135,10 @@ function fillForm(config) {
 
 // 全量参数页（参数配置）走 save_all 整文件覆盖；部分参数页（画面/编排专项页）
 // 传 config_save_all=false → 走 /api/config/save 合并保存，防止收集到的
-// 部分字段集覆盖掉未在页面上渲染的参数
+// 部分字段集覆盖掉未在页面上渲染的参数。
+// channel = 本标签页频道上下文（URL ?channel=，空=全局）
 const CONFIG_SAVE_ALL = {{ ((config_save_all is not defined) or config_save_all) | tojson }};
+const PAGE_CHANNEL = new URLSearchParams(location.search).get('channel') || '';
 
 function saveConfig() {
     const config = collectConfig();
@@ -144,7 +146,7 @@ function saveConfig() {
     fetch(url, {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({...config, _mode: MODE})
+        body: JSON.stringify({...config, _mode: MODE, channel: PAGE_CHANNEL})
     })
     .then(r => r.json())
     .then(data => {

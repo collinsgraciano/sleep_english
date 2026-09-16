@@ -167,6 +167,10 @@
 
 {% block scripts %}
 <script>
+// 频道上下文（URL ?channel=，空=全局）：主题库读写按本标签页频道隔离
+const PAGE_CHANNEL = new URLSearchParams(location.search).get('channel') || '';
+const withCh = obj => Object.assign({channel: PAGE_CHANNEL}, obj || {});
+
 // ================= Original manual management =================
 function showAddTopic() {
     hideAllPanels();
@@ -195,7 +199,7 @@ async function aiSuggestCategories() {
     try {
         const r = await fetch('/api/topics/ai/suggest_categories', {
             method: 'POST', headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({count: 5})
+            body: JSON.stringify(withCh({count: 5}))
         }).then(r => r.json());
         if (r.error) {
             box.innerHTML = '<p class="text-xs text-red-400 w-full">❌ ' + esc(r.error) + '</p>';
@@ -250,7 +254,7 @@ async function aiAddSelectedCategories() {
     try {
         const r = await fetch('/api/topics/add_categories', {
             method: 'POST', headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({categories: selected})
+            body: JSON.stringify(withCh({categories: selected}))
         }).then(r => r.json());
         if (!r.ok) { alert(r.error || '创建失败'); return; }
         if ((r.created || []).length) { location.reload(); return; }
@@ -269,7 +273,7 @@ function addTopic() {
     if (!topic) return;
     fetch('/api/topics/add', {
         method: 'POST', headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({category, topic})
+        body: JSON.stringify(withCh({category, topic}))
     }).then(r => r.json()).then(data => { if (data.ok) location.reload(); });
 }
 
@@ -278,12 +282,12 @@ function addCategory() {
     if (!category) return;
     fetch('/api/topics/add_category', {
         method: 'POST', headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({category})
+        body: JSON.stringify(withCh({category}))
     }).then(r => r.json()).then(data => { if (data.ok) location.reload(); });
 }
 
 function deleteTopic(category, index) {
-    fetch('/api/topics/' + encodeURIComponent(category) + '/' + index, {method: 'DELETE'})
+    fetch('/api/topics/' + encodeURIComponent(category) + '/' + index + '?channel=' + encodeURIComponent(PAGE_CHANNEL), {method: 'DELETE'})
         .then(r => r.json()).then(data => { if (data.ok) location.reload(); });
 }
 
@@ -319,7 +323,7 @@ function filterTopics(q) {
 
 function resetUsedTopics() {
     if (!confirm('重置所有已用主题标记?')) return;
-    fetch('/api/topics/used/reset', {method: 'POST'})
+    fetch('/api/topics/used/reset?channel=' + encodeURIComponent(PAGE_CHANNEL), {method: 'POST'})
         .then(r => r.json()).then(data => { if (data.ok) location.reload(); });
 }
 
@@ -394,7 +398,7 @@ async function aiGenerate() {
     status.classList.remove('hidden');
     status.className = 'mt-3 text-sm text-indigo-300';
     document.getElementById('ai-gen-result').classList.add('hidden');
-    await consumeSSE('/api/topics/ai/generate', {mode, category, count, hint}, {
+    await consumeSSE('/api/topics/ai/generate', withCh({mode, category, count, hint}), {
         progress: m => { status.textContent = m; },
         result: data => renderGenResult(mode, category, data),
         error: e => { status.className = 'mt-3 text-sm text-red-400'; status.textContent = '❌ ' + e; }
@@ -445,14 +449,14 @@ async function aiGenApply() {
         if (!category) { alert('请填写新分类名称'); return; }
         const r = await fetch('/api/topics/add_category', {
             method: 'POST', headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({category})
+            body: JSON.stringify(withCh({category}))
         }).then(r => r.json());
         if (!r.ok) { alert('创建分类失败'); return; }
     }
     for (const t of checked) {
         await fetch('/api/topics/add', {
             method: 'POST', headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({category, topic: t})
+            body: JSON.stringify(withCh({category, topic: t}))
         }).then(r => r.json());
     }
     location.reload();
@@ -482,7 +486,7 @@ async function aiReview() {
     status.classList.remove('hidden');
     status.className = 'text-sm text-amber-300 mb-3';
     document.getElementById('ai-review-report').classList.add('hidden');
-    await consumeSSE('/api/topics/ai/review', {}, {
+    await consumeSSE('/api/topics/ai/review', withCh({}), {
         progress: m => { status.textContent = m; },
         result: data => { aiReviewData = data; renderReviewReport(data); },
         error: e => { status.className = 'text-sm text-red-400 mb-3'; status.textContent = '❌ ' + e; }
@@ -584,7 +588,7 @@ function renderReviewReport(data) {
 async function postApply(actions) {
     return fetch('/api/topics/ai/apply', {
         method: 'POST', headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({actions})
+        body: JSON.stringify(withCh({actions}))
     }).then(r => r.json());
 }
 
