@@ -108,20 +108,6 @@
         </div>
 
 
-        <!-- Channel selector（频道矩阵：选择后本次运行叠加频道品牌/音色/主题域） -->
-        <div class="mb-4">
-            <div class="flex items-center justify-between mb-1">
-                <label class="block text-xs text-slate-400">频道 (可选)
-                    <span class="text-slate-600">— 选择后使用该频道的品牌配色 / 音色 / 片头 / 独立主题域</span>
-                </label>
-                <a href="/channels" class="text-xs text-indigo-400 hover:text-indigo-300">🎞️ 频道矩阵 →</a>
-            </div>
-            <select id="quick-channel" onchange="onChannelChange()"
-                class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white">
-                <option value="">— 默认（全局配置）—</option>
-            </select>
-        </div>
-
         <!-- Script library source -->
         <div class="mb-4">
             <div class="flex items-center justify-between mb-1">
@@ -632,41 +618,8 @@ function genderSymbol(g) {
     return '';
 }
 
-// ---------- 频道矩阵（频道下拉 + 启动带 channel_id）----------
-let _channelOptions = [];
-
-function loadChannelOptions() {
-    return fetch('/api/channels/list')
-        .then(r => r.json())
-        .then(data => {
-            _channelOptions = (data.channels || []).filter(c => c.status === 'active');
-            const sel = document.getElementById('quick-channel');
-            if (!sel) return;
-            const cur = sel.value;
-            sel.innerHTML = '<option value="">— 默认（全局配置）—</option>' +
-                _channelOptions.map(c => {
-                    const cn = (c.overrides || {}).sleep_channel_name || c.name_en;
-                    return `<option value="${c.id}">${c.name_en}${cn !== c.name_en ? '（' + cn + '）' : ''}</option>`;
-                }).join('');
-            if (cur && _channelOptions.some(c => c.id === cur)) sel.value = cur;
-        })
-        .catch(() => {});
-}
-
-function onChannelChange() {
-    // 切频道时把 CEFR 快捷值同步为该频道的覆盖值，避免快捷面板的全局值
-    // 在启动时反向覆盖频道设定（topic 由用户手填，保持不动）
-    const cid = document.getElementById('quick-channel')?.value || '';
-    const c = _channelOptions.find(x => x.id === cid);
-    const cefrSel = document.getElementById('quick-cefr');
-    if (!cefrSel) return;
-    if (!cid) {
-        const g = (MODE_CONFIGS[ACTIVE_MODE] || {}).cefr;
-        if (g) cefrSel.value = g;
-        return;
-    }
-    if (c && (c.overrides || {}).cefr) cefrSel.value = c.overrides.cefr;
-}
+// 频道维度由顶部「上下文条」（base.html）统一提供：切换后服务端渲染即
+// 为该频道配置快照，快捷面板/启动链路无需前端处理 channel 维度。
 
 function loadScriptLibrary() {
     return fetch('/api/scripts?status=unused&structure=' + ACTIVE_MODE)
@@ -723,7 +676,6 @@ window.addEventListener('load', function() {
     applyQuickFields();
     try { toggleQuickConfig(localStorage.getItem('quickConfigExpanded') === '1'); } catch (e) {}
     loadScriptLibrary();
-    loadChannelOptions();
     // 批量队列：立即拉取一次并常驻轮询（队列运行中自动接上日志流）
     bqFetchStatus();
     setInterval(bqFetchStatus, 2000);
@@ -810,8 +762,8 @@ function _doStartPipeline(resume) {
     fetch('/api/run/start', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({config, resume, step_mode: stepMode,
-                              channel_id: document.getElementById('quick-channel')?.value || ''})
+        // channel_id 缺省由服务端回落全局频道开关（顶部上下文条）
+        body: JSON.stringify({config, resume, step_mode: stepMode})
     })
     .then(r => r.json())
     .then(data => {

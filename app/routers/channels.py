@@ -1,9 +1,13 @@
-"""频道矩阵 API — 频道实体 CRUD / 工坊收藏转正 / 主题库 / 矩阵填充队列.
+"""频道矩阵 API — 频道实体 CRUD / 上下文开关 / 配置同步 / 主题库 / 矩阵填充队列.
 
 数据流：
-- 频道实体 configs/channels/{cid}.json（app/channel_profiles.py 存储层）
+- 频道实体 configs/channels/{cid}.json（app/channel_profiles.py 存储层），
+  内嵌 config 节 = 该频道**完整独立的配置快照**（整套 PARAM_SPEC）
+- 全局频道开关：/context + /active（active_channel.json，config_manager
+  load_config/save_config 据此路由 —— 所有页面自动读写当前频道配置）
+- /config/sync：从全局按参数组回填（身份键守卫，频道名/主题域不被覆盖）
 - /fill_queue：对每个 active 频道从其主题库随机抽 N 个未用主题入批量队列
-  （队列项带 channel_id，_build_config 开始时叠加频道 overrides）
+  （队列项带 channel_id，_build_config 开始时装载频道完整配置快照）
 - 主题库 AI 生成复用 topics_ai.generate_topics，hint 自动注入频道定位
 """
 import asyncio
@@ -16,21 +20,19 @@ from fastapi.responses import FileResponse, JSONResponse, StreamingResponse
 
 from ..batch_queue_service import get_batch_queue
 from ..channel_profiles import (
-    OVERRIDABLE_KEYS, brand_colors_to_sleep_overrides,
-    create_channel_from_favorite, default_topics_file,
-    default_used_topics_file, delete_channel, generate_channel_id, get_channel,
-    list_channels, normalize_channel, resolve_topics_files, save_channel,
-    set_channel_status,
+    IDENTITY_SYNC_GUARD, SYNC_SCOPES, _seed_channel_config,
+    create_channel_from_favorite, delete_channel, generate_channel_id,
+    get_channel, list_channels, load_channel_config, normalize_channel,
+    resolve_topics_files, save_channel, save_channel_config,
+    set_channel_status, sync_channel_config,
 )
-from ..config_manager import load_config
+from ..config_manager import get_active_channel, set_active_channel
 from ..paths import CHANNEL_ASSETS_DIR
 from ..sse import sse_line as _sse, SSE_HEADERS as _SSE_HEADERS
 from .. import topics_ai
 from .channel_factory import _ID_RE as _FAV_ID_RE, _load_favorites
 
 router = APIRouter()
-
-_INT_OVERRIDE_KEYS = {"sleep_pairs", "sleep_font_scale", "sleep_bg_opacity"}
 
 
 # ===========================================================================
@@ -74,7 +76,9 @@ def _channel_stats(channel_ids: set[str]) -> dict[str, dict]:
 
 @router.post("/api/channels/create")
 async def api_channels_create(request: Request):
-    """手动新建频道：{name_en, name_zh?, niche?, audience?, brand_colors?}。"""
+    """手动新建频道：{name_en, name_zh?, niche?, audience?, brand_colors?}。
+
+    新建即拥有完整配置快照（全局深拷贝 + 品牌色映射 + 身份键），此后独立演化。"""
     try:
         data = await request.json()
     except Exception:
@@ -88,10 +92,8 @@ async def api_channels_create(request: Request):
         return JSONResponse({"ok": False, "error": "缺少 name_en，无法创建"}, status_code=400)
     if get_channel(profile["id"]) is not None:
         return JSONResponse({"ok": False, "error": "频道 id 已存在"}, status_code=409)
-    # 新建预置：频道名 + 独立主题域（与收藏转正同款默认）
-    profile["overrides"].setdefault("sleep_channel_name", profile["name_en"])
-    profile["overrides"].setdefault("topics_file", default_topics_file(profile["id"]))
-    profile["overrides"].setdefault("used_topics_file", default_used_topics_file(profile["id"]))
+    profile["config"] = _seed_channel_config(
+        profile["id"], profile["name_en"], profile["brand_colors"])
     saved = save_channel(profile)
     return {"ok": True, "channel": saved}
 
@@ -115,7 +117,10 @@ async def api_channels_from_favorite(request: Request):
 
 @router.post("/api/channels/update")
 async def api_channels_update(request: Request):
-    """更新频道（整档覆盖保存）：品牌字段 + overrides（白名单过滤）。"""
+    """更新频道品牌字段（name/niche/brand_colors 等）。
+
+    配置不在本端点修改：切上下文后在「参数配置页」编辑频道快照，
+    或用 /config/sync 从全局按组回填。"""
     try:
         data = await request.json()
     except Exception:
@@ -125,15 +130,11 @@ async def api_channels_update(request: Request):
     existing = get_channel(cid)
     if existing is None:
         return JSONResponse({"ok": False, "error": "频道不存在"}, status_code=404)
-    merged = {**existing, **{k: v for k, v in data.items() if k != "overrides"}}
-    overrides = dict(existing.get("overrides") or {})
-    raw_overrides = data.get("overrides")
-    if isinstance(raw_overrides, dict):
-        # 整档语义：以提交值为准（空串=清除该覆盖项，回落全局）
-        overrides = {k: v for k, v in raw_overrides.items() if k in OVERRIDABLE_KEYS}
-    merged["overrides"] = overrides
+    merged = {**existing, **{k: v for k, v in data.items()
+                             if k not in ("overrides", "config")}}
     merged["id"] = existing["id"]  # id 不可变（输出归属/素材目录依赖）
     merged["created"] = existing["created"]
+    merged["config"] = existing.get("config") or {}  # 配置快照不随品牌编辑变动
     saved = normalize_channel(merged)
     if saved is None:
         return JSONResponse({"ok": False, "error": "缺少 name_en"}, status_code=400)
@@ -167,18 +168,80 @@ async def api_channels_delete(request: Request):
     return {"ok": True}
 
 
-@router.post("/api/channels/brand_colors_map")
-async def api_channels_brand_colors_map(request: Request):
-    """brand_colors → sleep_color_* 映射预览（编辑页「由品牌色生成配色」）。"""
+# ===========================================================================
+# 全局频道开关 + 配置同步
+# ===========================================================================
+
+@router.get("/api/channels/context")
+async def api_channels_context():
+    """当前频道上下文 + 频道清单（base.html 上下文条数据源）。"""
+    channels = [{"id": c["id"], "name_en": c["name_en"], "name_zh": c["name_zh"],
+                 "status": c["status"], "logo": c.get("logo", "")}
+                for c in list_channels()]
+    return {"ok": True, "active_channel": get_active_channel(), "channels": channels}
+
+
+@router.post("/api/channels/active")
+async def api_channels_active(request: Request):
+    """切换全局频道上下文：{channel_id: ""} 切回默认全局配置。"""
     try:
         data = await request.json()
     except Exception:
         data = {}
-    colors = (data if isinstance(data, dict) else {}).get("brand_colors") or []
-    if not isinstance(colors, list) or len(colors) != 3:
-        return JSONResponse({"ok": False, "error": "需要 3 个品牌色"}, status_code=400)
-    return {"ok": True, "colors": brand_colors_to_sleep_overrides(
-        [str(c) for c in colors])}
+    cid = str((data if isinstance(data, dict) else {}).get("channel_id", "") or "").strip()
+    try:
+        set_active_channel(cid)
+    except ValueError as e:
+        return JSONResponse({"ok": False, "error": str(e)}, status_code=404)
+    return {"ok": True, "active_channel": cid}
+
+
+@router.post("/api/channels/{cid}/config/sync")
+async def api_channel_config_sync(cid: str, request: Request):
+    """从全局按参数组回填频道配置快照（身份键守卫）。
+
+    body: {scope: all|credentials|content|visual|bgm}。"""
+    if get_channel(cid) is None:
+        return JSONResponse({"ok": False, "error": "频道不存在"}, status_code=404)
+    try:
+        data = await request.json()
+    except Exception:
+        data = {}
+    scope = str((data if isinstance(data, dict) else {}).get("scope", "all") or "all")
+    if scope not in SYNC_SCOPES:
+        return JSONResponse({"ok": False,
+                             "error": f"无效范围: {scope}（可选 {', '.join(SYNC_SCOPES)}）"},
+                            status_code=400)
+    saved = sync_channel_config(cid, scope)
+    return {"ok": True, "scope": scope, "config": saved}
+
+
+@router.get("/api/channels/{cid}/config")
+async def api_channel_config_get(cid: str):
+    """读取频道完整配置快照（defaults 补全后；旧格式频道触发自迁移）。"""
+    if get_channel(cid) is None:
+        return JSONResponse({"ok": False, "error": "频道不存在"}, status_code=404)
+    return {"ok": True, "config": load_channel_config(cid)}
+
+
+@router.post("/api/channels/{cid}/config")
+async def api_channel_config_set(cid: str, request: Request):
+    """整档写回频道配置快照（身份键守卫：频道名/主题域/归属强制保留现值）。"""
+    if get_channel(cid) is None:
+        return JSONResponse({"ok": False, "error": "频道不存在"}, status_code=404)
+    try:
+        data = await request.json()
+    except Exception:
+        data = {}
+    config = (data if isinstance(data, dict) else {}).get("config")
+    if not isinstance(config, dict):
+        return JSONResponse({"ok": False, "error": "config 必须是对象"}, status_code=400)
+    current = load_channel_config(cid)
+    for key in IDENTITY_SYNC_GUARD:
+        if key in current:
+            config[key] = current[key]
+    saved = save_channel_config(cid, config)
+    return {"ok": True, "config": saved}
 
 
 @router.get("/api/channels/{cid}/asset/{kind}")
@@ -357,9 +420,9 @@ async def api_channels_fill_queue(request: Request):
             continue
         random.shuffle(pool)
         picked = pool[:episodes]
+        snap_cefr = str(load_channel_config(c["id"]).get("cefr", "") or "")
         items = [{"type": "topic", "mode": "sleep", "topic": t,
-                  "channel_id": c["id"],
-                  "cefr": str(c.get("overrides", {}).get("cefr", "") or "")}
+                  "channel_id": c["id"], "cefr": snap_cefr}
                  for t in picked]
         added, item_rejected = queue.add_items(items)
         enqueued.extend(added)
@@ -371,9 +434,8 @@ async def api_channels_fill_queue(request: Request):
 
 @router.get("/api/channels/meta")
 async def api_channels_meta():
-    """频道矩阵页辅助元数据：可覆盖键清单 + 全部工坊收藏（供导入下拉）。"""
+    """频道矩阵页辅助元数据：全部工坊收藏（供导入下拉）。"""
     return {"ok": True,
-            "overridable_keys": list(OVERRIDABLE_KEYS),
             "favorites": [{"id": p.get("id", ""), "name_en": p.get("name_en", ""),
                            "name_zh": p.get("name_zh", ""), "niche": p.get("niche", ""),
                            "logo": p.get("logo", "")}

@@ -333,11 +333,6 @@ def sync_channel_config(channel_id: str, scope: str = "all") -> dict[str, Any]:
     return save_channel_config(channel_id, channel_cfg)
 
 
-def resolve_run_config(mode: str, channel_id: str = "") -> dict[str, Any]:
-    """兼容别名：频道完整配置快照（Phase B 更新调用点后移除）。"""
-    return load_channel_config(channel_id)
-
-
 # ===========================================================================
 # 工坊收藏 → 频道转正（brand_colors → sleep 色板映射）
 # ===========================================================================

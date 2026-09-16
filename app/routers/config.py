@@ -10,8 +10,8 @@ from fastapi.responses import JSONResponse, Response
 from ..config_manager import (
     MODES, MODE_LABELS,
     DEFAULT_QUICK_FIELDS, load_quick_fields, save_quick_fields,
-    load_config, load_mode_config, save_mode_config, load_all_mode_configs,
-    get_active_mode, set_active_mode,
+    load_config, load_all_context_configs, save_config,
+    get_active_channel, get_active_mode, set_active_mode,
     get_default_config,
     save_preset, load_preset, delete_preset,
     list_sleep_color_presets, save_sleep_color_preset, delete_sleep_color_preset,
@@ -26,11 +26,12 @@ async def api_save_config(request: Request):
     mode = data.pop("_mode", "") or get_active_mode()
     if mode not in MODES:
         return JSONResponse({"ok": False, "error": f"未知模式: {mode}"}, status_code=400)
-    config = load_mode_config(mode)
+    # 上下文感知：active_channel 非空时读写该频道完整配置快照
+    config = load_config()
     config.update(data)
     config["structure"] = mode
-    save_mode_config(mode, config)
-    return {"ok": True, "mode": mode}
+    save_config(config)
+    return {"ok": True, "mode": mode, "channel": get_active_channel()}
 
 
 @router.post("/api/config/save_all")
@@ -40,21 +41,25 @@ async def api_save_all_config(request: Request):
     if mode not in MODES:
         return JSONResponse({"ok": False, "error": f"未知模式: {mode}"}, status_code=400)
     data["structure"] = mode
-    save_mode_config(mode, data)
-    return {"ok": True, "mode": mode}
+    save_config(data)
+    return {"ok": True, "mode": mode, "channel": get_active_channel()}
 
 
 @router.get("/api/config")
 async def api_get_config(mode: str = ""):
-    return load_mode_config(mode) if mode in MODES else load_config()
+    return load_config()
 
 
 @router.get("/api/config/all")
 async def api_get_all_configs():
-    """一次性返回 3 个模式的完整配置 + 当前激活模式（控制台预载用）。"""
+    """一次性返回当前上下文的模式配置 + 当前激活模式/频道（控制台预载用）。
+
+    active_channel 非空时 modes 内为该频道完整配置快照（前端快捷面板/
+    启动链路零改动即按频道工作）。"""
     return {
         "active_mode": get_active_mode(),
-        "modes": load_all_mode_configs(),
+        "active_channel": get_active_channel(),
+        "modes": load_all_context_configs(),
         "mode_labels": MODE_LABELS,
     }
 
@@ -160,8 +165,8 @@ def _render_sleep_preview_png(cfg: dict) -> bytes:
 
 @router.get("/api/config/sleep_preview")
 async def api_sleep_preview_get():
-    """用已保存的 sleep 模式配置渲染预览（页面首图）。"""
-    png = await asyncio.to_thread(_render_sleep_preview_png, load_mode_config("sleep"))
+    """用当前上下文（频道/全局）已保存的 sleep 配置渲染预览（页面首图）。"""
+    png = await asyncio.to_thread(_render_sleep_preview_png, load_config())
     return Response(content=png, media_type="image/png")
 
 

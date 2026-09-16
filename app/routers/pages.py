@@ -10,8 +10,8 @@ from ..config_manager import (
     RECYCLE_DIRNAME, LEGACY_RECYCLE_DIRNAME,
     DEFAULT_QUICK_FIELDS, EXCLUDED_QUICK_KEYS, load_all_quick_fields,
     effective_param_spec, find_run_dir, get_active_mode, get_provider_options,
-    iter_run_dirs, list_presets, load_all_mode_configs, load_config,
-    load_llm_providers, load_mode_config, set_active_mode,
+    iter_run_dirs, list_presets, load_all_mode_configs, load_all_context_configs,
+    load_config, load_llm_providers, load_mode_config, set_active_mode,
     SLEEP_VISUAL_KEYS, SLEEP_ORCHESTRATION_KEYS,
 )
 from ..paths import TRASH_META_FILENAME
@@ -43,11 +43,14 @@ SLEEP_PREVIEW_HIDDEN_FIELDS = ("sleep_channel_name", "sleep_outro_text")
 # ===========================================================================
 
 def _config_page_context(mode: str) -> dict:
-    """参数配置页 / Sleep 睡前短句页 共用的渲染上下文组装。"""
+    """参数配置页 / Sleep 睡前短句页 共用的渲染上下文组装。
+
+    load_config() 上下文感知：active_channel 非空时返回该频道完整配置快照，
+    参数页保存同样写回频道文件（config 路由唯一入口）。"""
     if mode and mode in MODES:
         set_active_mode(mode)
     mode = get_active_mode()
-    config = load_mode_config(mode)
+    config = load_config()
     presets = list_presets()
     # Inject dynamic LLM provider options into PARAM_SPEC
     PARAM_SPEC["llm_provider"]["options"] = get_provider_options()
@@ -174,7 +177,9 @@ async def config_page(request: Request, mode: str = ""):
 async def dashboard(request: Request):
     service = get_service()
     config = load_config()
-    mode_configs = load_all_mode_configs()
+    # 上下文感知预载：active_channel 非空时 sleep 槽位 = 频道完整配置快照
+    # （快捷面板初值/启动合并全部按频道工作，前端 JS 零改动）
+    mode_configs = load_all_context_configs()
     # 快捷启动「画面风格」下拉选项（内置+自定义；各模式当前值不在选项中时兜底显示）
     style_options = style_lib.get_style_options()
     for mcfg in mode_configs.values():

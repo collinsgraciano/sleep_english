@@ -6,7 +6,9 @@ from fastapi import APIRouter, Request
 from fastapi.responses import JSONResponse, StreamingResponse
 
 from ..batch_queue_service import get_batch_queue
-from ..config_manager import get_active_mode, load_config
+from ..config_manager import (
+    PARAM_SPEC, get_active_channel, load_config,
+)
 from ..pipeline_service import get_service
 
 router = APIRouter()
@@ -23,16 +25,17 @@ async def api_run_start(request: Request):
     service = get_service()
     data = await request.json() if request.headers.get("content-type", "").startswith("application/json") else {}
     config = data.get("config")
-    channel_id = str(data.get("channel_id", "") or "").strip()
+    # 频道上下文：显式 channel_id 优先，缺省回落全局频道开关
+    channel_id = str(data.get("channel_id", "") or "").strip() or get_active_channel()
     if channel_id:
-        # 频道运行：全局配置深合并频道 overrides（频道名/色板/音色/主题域）；
-        # 前端 config 快照只保留内容覆盖项（topic/cefr/script_id），其余以频道为准
-        from ..channel_profiles import resolve_run_config
-        resolved = resolve_run_config(get_active_mode(), channel_id)
+        # 频道运行：base = 频道完整配置快照；前端 config 快照按键覆盖
+        # （上下文条使前端快照本身即频道配置，快捷面板改动全部保留）
+        from ..channel_profiles import load_channel_config
+        resolved = load_channel_config(channel_id)
         if isinstance(config, dict):
-            for k in ("topic", "cefr", "script_id"):
-                if config.get(k):
-                    resolved[k] = config[k]
+            for k, v in config.items():
+                if k in PARAM_SPEC or k in ("topic", "cefr", "script_id"):
+                    resolved[k] = v
         config = resolved
         config["channel_id"] = channel_id
     elif config is None:

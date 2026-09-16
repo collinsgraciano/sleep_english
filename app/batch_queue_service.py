@@ -354,8 +354,8 @@ class BatchQueueService:
     def _build_config(self, item: dict) -> dict | None:
         """任务开始时构建运行配置；脚本项二次校验失败返回 None（原因写 item.error）。
 
-        频道项：resolve_run_config = 全局配置深合并频道 overrides
-        （频道名/色板/音色/片头/主题域），再叠加内容覆盖项（topic/cefr/script_id）。
+        频道项：装载该频道**完整配置快照**（load_channel_config，含品牌/凭据/
+        TTS/BGM 全量参数），再叠加内容覆盖项（topic/cefr/script_id）。
         """
         from . import script_library
 
@@ -365,8 +365,8 @@ class BatchQueueService:
             return None
         channel_id = str(item.get("channel_id", "") or "").strip()
         if channel_id:
-            from .channel_profiles import resolve_run_config
-            config = resolve_run_config(mode, channel_id)
+            from .channel_profiles import load_channel_config
+            config = load_channel_config(channel_id)
         else:
             config = load_mode_config(mode)
         config["structure"] = mode
