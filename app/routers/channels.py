@@ -3,8 +3,8 @@
 数据流：
 - 频道实体 configs/channels/{cid}.json（app/channel_profiles.py 存储层），
   内嵌 config 节 = 该频道**完整独立的配置快照**（整套 PARAM_SPEC）
-- 全局频道开关：/context + /active（active_channel.json，config_manager
-  load_config/save_config 据此路由 —— 所有页面自动读写当前频道配置）
+- 频道上下文 = URL `?channel=`（多标签页并行，各 tab 独立，无服务端全局
+  开关）；/context 返回频道清单供 base.html 上下文条
 - /config/sync：从全局按参数组回填（身份键守卫，频道名/主题域不被覆盖）
 - /fill_queue：对每个 active 频道从其主题库随机抽 N 个未用主题入批量队列
   （队列项带 channel_id，_build_config 开始时装载频道完整配置快照）
