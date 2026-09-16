@@ -4,7 +4,7 @@
     <div class="flex items-center justify-between mb-5 flex-wrap gap-3">
         <div>
             <h2 class="text-xl font-bold text-white">🎞️ 频道矩阵</h2>
-            <p class="text-xs text-slate-400 mt-1">每个频道独立的品牌配色 / 音色 / 片头 / 主题域；控制台与批量队列按频道隔离配置与集数。</p>
+            <p class="text-xs text-slate-400 mt-1">每个频道一份**完整独立的配置快照**（凭据/TTS/BGM/画面/内容全量）+ 独立主题域；顶部「当前上下文」切到某频道后，控制台与参数配置页均读写该频道配置。</p>
         </div>
         <div class="flex items-center gap-2 flex-wrap">
             <span id="ch-summary" class="text-xs text-slate-500"></span>
@@ -22,7 +22,7 @@
         <span class="text-xs text-slate-500">对全部 active 频道，从各自主题库随机抽</span>
         <input id="fill-episodes" type="number" min="1" max="50" value="1"
             class="w-16 bg-slate-900 border border-slate-600 rounded-lg px-2 py-1.5 text-sm text-white text-center">
-        <span class="text-xs text-slate-500">期未用主题加入批量队列</span>
+        <span class="text-xs text-slate-500">期未用主题加入批量队列（按频道快照配置生产）</span>
         <button onclick="fillQueue()" id="btn-fill"
             class="px-4 py-1.5 bg-emerald-600 hover:bg-emerald-500 rounded-lg text-xs text-white font-medium">入队</button>
         <span id="fill-result" class="text-xs text-slate-400"></span>
@@ -35,14 +35,14 @@
     </div>
 </div>
 
-<!-- 编辑弹窗 -->
+<!-- 编辑弹窗（品牌字段；全量参数在「参数配置页」频道上下文中编辑） -->
 <div id="edit-modal" class="hidden fixed inset-0 z-50 bg-black/70 items-center justify-center p-4 overflow-y-auto">
-    <div class="bg-slate-800 border border-slate-700 rounded-xl w-full max-w-3xl my-8">
+    <div class="bg-slate-800 border border-slate-700 rounded-xl w-full max-w-xl my-8">
         <div class="flex items-center justify-between px-5 py-3.5 border-b border-slate-700">
-            <h4 class="text-sm font-semibold text-white">✏️ 编辑频道 <span id="edit-name" class="text-slate-400 font-normal"></span></h4>
+            <h4 class="text-sm font-semibold text-white">✏️ 频道品牌 <span id="edit-name" class="text-slate-400 font-normal"></span></h4>
             <button onclick="closeModal('edit-modal')" class="text-slate-400 hover:text-white text-lg leading-none">✕</button>
         </div>
-        <div class="px-5 py-4 space-y-4 max-h-[70vh] overflow-y-auto">
+        <div class="px-5 py-4 space-y-3">
             <div class="grid grid-cols-2 gap-3">
                 <div>
                     <label class="block text-xs text-slate-400 mb-1">频道名 EN *</label>
@@ -75,76 +75,36 @@
                     <input id="f-c2" type="color" class="w-full h-9 bg-slate-900 border border-slate-600 rounded-lg cursor-pointer">
                 </div>
             </div>
-            <div class="border-t border-slate-700 pt-3">
-                <div class="flex items-center justify-between mb-2">
-                    <span class="text-xs font-semibold text-slate-300">差异覆盖（留空 = 沿用「参数配置」全局值）</span>
-                    <button onclick="applyBrandColors()" class="text-[11px] px-2 py-1 bg-slate-700 hover:bg-slate-600 rounded text-slate-300">🎨 由品牌色生成配色</button>
-                </div>
-                <div class="grid grid-cols-2 gap-3">
-                    <div>
-                        <label class="block text-xs text-slate-400 mb-1">卡片/播报频道名</label>
-                        <input id="o-sleep_channel_name" class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white">
-                    </div>
-                    <div>
-                        <label class="block text-xs text-slate-400 mb-1">片尾结束语</label>
-                        <input id="o-sleep_outro_text" class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white">
-                    </div>
-                    <div>
-                        <label class="block text-xs text-slate-400 mb-1">CEFR</label>
-                        <select id="o-cefr" class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white">
-                            <option value="">（全局）</option>
-                            {% for lv in ["A1","A2","B1","B2","C1","C2"] %}<option value="{{ lv }}">{{ lv }}</option>{% endfor %}
-                        </select>
-                    </div>
-                    <div>
-                        <label class="block text-xs text-slate-400 mb-1">对话组数</label>
-                        <input id="o-sleep_pairs" type="number" min="10" max="400" placeholder="（全局）"
-                            class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white">
-                    </div>
-                    <div>
-                        <label class="block text-xs text-slate-400 mb-1">男声音色（kokoro，如 am_adam）</label>
-                        <input id="o-sleep_voice_male" list="voice-list" placeholder="（全局映射）"
-                            class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white">
-                    </div>
-                    <div>
-                        <label class="block text-xs text-slate-400 mb-1">女声音色（kokoro，如 af_sarah）</label>
-                        <input id="o-sleep_voice_female" list="voice-list" placeholder="（全局映射）"
-                            class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white">
-                    </div>
-                    <div>
-                        <label class="block text-xs text-slate-400 mb-1">手写体字体路径</label>
-                        <input id="o-sleep_handwrite_font" placeholder="（全局）"
-                            class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white">
-                    </div>
-                    <div>
-                        <label class="block text-xs text-slate-400 mb-1">句子字号缩放 %</label>
-                        <input id="o-sleep_font_scale" type="number" min="60" max="160" placeholder="（全局）"
-                            class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white">
-                    </div>
-                    <div>
-                        <label class="block text-xs text-slate-400 mb-1">片头</label>
-                        <select id="o-sleep_intro_video" class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white">
-                            <option value="">（全局绑定）</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label class="block text-xs text-slate-400 mb-1">跳过缩略图（省积分）</label>
-                        <select id="o-no_thumbnail" class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white">
-                            <option value="">（全局）</option>
-                            <option value="false">生成缩略图</option>
-                            <option value="true">跳过</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="mt-3">
-                    <span class="text-xs text-slate-400">卡片配色（留空=沿用全局）</span>
-                    <div id="color-grid" class="grid grid-cols-4 md:grid-cols-7 gap-2 mt-1"></div>
-                </div>
-            </div>
+            <p class="text-[11px] text-slate-500">品牌色在创建/导入时自动映射为卡片配色；之后请在「参数配置页」（切到该频道上下文）微调全部参数。</p>
         </div>
         <div class="flex items-center justify-end gap-2 px-5 py-3.5 border-t border-slate-700">
             <button onclick="closeModal('edit-modal')" class="px-4 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg text-sm text-slate-300">取消</button>
             <button onclick="saveEdit()" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-lg text-sm text-white font-medium">✓ 保存</button>
+        </div>
+    </div>
+</div>
+
+<!-- 同步弹窗 -->
+<div id="sync-modal" class="hidden fixed inset-0 z-50 bg-black/70 items-center justify-center p-4">
+    <div class="bg-slate-800 border border-slate-700 rounded-xl w-full max-w-md">
+        <div class="flex items-center justify-between px-5 py-3.5 border-b border-slate-700">
+            <h4 class="text-sm font-semibold text-white">⇩ 从全局同步配置 <span id="sync-name" class="text-slate-400 font-normal"></span></h4>
+            <button onclick="closeModal('sync-modal')" class="text-slate-400 hover:text-white text-lg leading-none">✕</button>
+        </div>
+        <div class="px-5 py-4 space-y-3">
+            <p class="text-xs text-slate-400">把全局「参数配置」当前值按所选范围回填到该频道快照。频道名/片尾语/主题库等身份键永不被覆盖。</p>
+            <select id="sync-scope" class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white">
+                <option value="all">全部参数</option>
+                <option value="credentials">凭据（LLM Provider/Key · MCP Token/生图）</option>
+                <option value="content">内容（CEFR/主题来源等）</option>
+                <option value="visual">画面（Sleep 配色/字体/合成）</option>
+                <option value="bgm">BGM（混音参数）</option>
+            </select>
+            <p id="sync-status" class="text-xs text-indigo-300"></p>
+        </div>
+        <div class="flex items-center justify-end gap-2 px-5 py-3.5 border-t border-slate-700">
+            <button onclick="closeModal('sync-modal')" class="px-4 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg text-sm text-slate-300">取消</button>
+            <button onclick="doSync()" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-lg text-sm text-white font-medium">⇩ 立即同步</button>
         </div>
     </div>
 </div>
@@ -169,7 +129,7 @@
                 <button onclick="addCategory()" class="px-3 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg text-xs text-slate-200">+ 分类</button>
             </div>
             <p id="t-status" class="text-xs text-indigo-300"></p>
-            <p class="text-[11px] text-slate-500">每行一个主题；保存后频道生成视频时从「未用」主题中抽取。</p>
+            <p class="text-[11px] text-slate-500">每行一个主题；「# 分类名」行开启新分类。保存后频道生成视频时从「未用」主题中抽取。</p>
             <textarea id="t-editor" rows="16" spellcheck="false"
                 class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white font-mono"></textarea>
         </div>
@@ -179,30 +139,16 @@
         </div>
     </div>
 </div>
-
-<datalist id="voice-list">
-    <option value="am_adam"><option value="am_michael"><option value="am_fable">
-    <option value="am_sky"><option value="af_sarah"><option value="af_bella">
-    <option value="af_nicole"><option value="af_heart">
-</datalist>
 {% endblock %}
 
 {% block scripts %}
 <script>
-const COLOR_FIELDS = [
-    ['sleep_color_bg_top', '背景顶'], ['sleep_color_bg_bottom', '背景底'],
-    ['sleep_color_card', '卡片底'], ['sleep_color_card_border', '卡片描边'],
-    ['sleep_color_en_a', 'A句'], ['sleep_color_en_b', 'B句'],
-    ['sleep_color_phonetic', '音标'], ['sleep_color_zh', '中文'],
-    ['sleep_color_num', '序号'], ['sleep_color_badge_bg', '角标底'],
-    ['sleep_color_badge_text', '角标字'], ['sleep_color_channel', '频道名'],
-    ['sleep_color_leaf', '叶片'],
-];
 let CHANNELS = [];
 let FAVS = [];
 let EDIT_ID = null;
 let TOPICS_CID = null;
 let TOPICS_DATA = {};
+let SYNC_CID = null;
 
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
@@ -231,14 +177,17 @@ function renderChannels() {
         CHANNELS.length ? `${CHANNELS.length} 个频道（active ${CHANNELS.filter(c => c.status === 'active').length}）` : '';
     grid.innerHTML = CHANNELS.map(c => {
         const colors = c.brand_colors || [];
-        const ov = c.overrides || {};
-        const chName = ov.sleep_channel_name || c.name_en;
+        const cfg = c.config || {};
+        const chName = cfg.sleep_channel_name || c.name_en;
+        const hasSnap = !!Object.keys(cfg).length;
         const bits = [
-            ov.cefr ? `CEFR ${ov.cefr}` : '',
-            ov.sleep_pairs ? `${ov.sleep_pairs} 组` : '',
-            ov.sleep_voice_male ? `♂ ${esc(ov.sleep_voice_male)}` : '',
-            ov.sleep_voice_female ? `♀ ${esc(ov.sleep_voice_female)}` : '',
-            ov.no_thumbnail === 'true' || ov.no_thumbnail === true ? '缩略图关' : '',
+            cfg.cefr ? `CEFR ${esc(cfg.cefr)}` : '',
+            cfg.sleep_pairs ? `${cfg.sleep_pairs} 组` : '',
+            cfg.llm_provider ? `LLM ${esc(cfg.llm_provider)}` : '',
+            cfg.tts_engine ? `TTS ${esc(cfg.tts_engine)}` : '',
+            cfg.sleep_voice_male ? `♂ ${esc(cfg.sleep_voice_male)}` : '',
+            cfg.sleep_voice_female ? `♀ ${esc(cfg.sleep_voice_female)}` : '',
+            cfg.no_thumbnail === true || cfg.no_thumbnail === 'true' ? '缩略图关' : '',
         ].filter(Boolean).join(' · ');
         return `
         <div class="bg-slate-800 border ${c.status === 'active' ? 'border-slate-700' : 'border-slate-700/40 opacity-70'} rounded-xl p-4 space-y-2">
@@ -255,11 +204,14 @@ function renderChannels() {
             <div class="flex items-center gap-1.5 text-[10px] text-slate-400">
                 ${colors.map(hex => `<span class="w-4 h-4 rounded border border-slate-600" style="background:${esc(hex)}" title="${esc(hex)}"></span>`).join('')}
                 <span class="ml-1 truncate">📺 ${esc(chName)}</span>
+                ${hasSnap ? '' : '<span class="ml-auto text-[10px] text-amber-400">旧格式（读取时自动升级）</span>'}
             </div>
             ${bits ? `<div class="text-[10px] text-slate-500">${bits}</div>` : ''}
             <div class="text-[10px] text-slate-500">已产 <span class="text-slate-300 font-medium">${c.runs_count || 0}</span> 期${c.last_run_at ? ' · 最近 ' + new Date(c.last_run_at * 1000).toLocaleString('zh-CN', {month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit'}) : ''}</div>
             <div class="flex flex-wrap gap-1 pt-1">
-                <button onclick="openEdit('${esc(c.id)}')" class="px-2 py-1 bg-indigo-600 hover:bg-indigo-500 rounded text-[11px] text-white">✏️ 编辑</button>
+                <button onclick="gotoConfig('${esc(c.id)}')" class="px-2 py-1 bg-indigo-600 hover:bg-indigo-500 rounded text-[11px] text-white" title="切换上下文到该频道并打开参数配置页">⚙ 配置</button>
+                <button onclick="openSync('${esc(c.id)}')" class="px-2 py-1 bg-slate-700 hover:bg-slate-600 rounded text-[11px] text-slate-200" title="从全局按组回填配置">⇩ 同步</button>
+                <button onclick="openEdit('${esc(c.id)}')" class="px-2 py-1 bg-slate-700 hover:bg-slate-600 rounded text-[11px] text-slate-200">✏️ 品牌</button>
                 <button onclick="openTopics('${esc(c.id)}')" class="px-2 py-1 bg-slate-700 hover:bg-slate-600 rounded text-[11px] text-slate-200">📚 主题库</button>
                 <button onclick="enqueueOne('${esc(c.id)}')" class="px-2 py-1 bg-emerald-700 hover:bg-emerald-600 rounded text-[11px] text-white">＋ 生成 1 期</button>
                 <button onclick="toggleStatus('${esc(c.id)}')" class="px-2 py-1 bg-slate-700 hover:bg-slate-600 rounded text-[11px] text-slate-300">${c.status === 'active' ? '⏸ 暂停' : '▶ 启用'}</button>
@@ -287,7 +239,6 @@ function openCreate() {
     document.getElementById('f-c0').value = '#4F46E5';
     document.getElementById('f-c1').value = '#F59E0B';
     document.getElementById('f-c2').value = '#F8FAFC';
-    setOverrideForm({});
     showModal('edit-modal');
 }
 
@@ -304,100 +255,7 @@ async function openEdit(cid) {
     document.getElementById('f-c0').value = cols[0];
     document.getElementById('f-c1').value = cols[1];
     document.getElementById('f-c2').value = cols[2];
-    setOverrideForm(c.overrides || {});
-    await loadIntroOptions();
     showModal('edit-modal');
-}
-
-// ---------- overrides 表单 ----------
-const OVERRIDE_TEXT_FIELDS = [
-    'sleep_channel_name', 'sleep_outro_text', 'sleep_handwrite_font',
-    'sleep_voice_male', 'sleep_voice_female',
-];
-const OVERRIDE_NUM_FIELDS = ['sleep_pairs', 'sleep_font_scale'];
-const OVERRIDE_SELECT_FIELDS = ['cefr', 'no_thumbnail'];
-
-function setOverrideForm(ov) {
-    for (const k of OVERRIDE_TEXT_FIELDS) {
-        document.getElementById('o-' + k).value = ov[k] ?? '';
-    }
-    for (const k of OVERRIDE_NUM_FIELDS) {
-        document.getElementById('o-' + k).value = ov[k] ?? '';
-    }
-    for (const k of OVERRIDE_SELECT_FIELDS) {
-        document.getElementById('o-' + k).value = String(ov[k] ?? '');
-    }
-    for (const [k] of COLOR_FIELDS) {
-        document.getElementById('o-' + k).value = ov[k] || '';
-    }
-}
-
-function collectOverrides() {
-    const ov = {};
-    for (const k of OVERRIDE_TEXT_FIELDS) {
-        const v = document.getElementById('o-' + k).value.trim();
-        if (v) ov[k] = v;
-    }
-    for (const k of OVERRIDE_NUM_FIELDS) {
-        const v = document.getElementById('o-' + k).value.trim();
-        if (v !== '') ov[k] = parseInt(v, 10);
-    }
-    for (const k of OVERRIDE_SELECT_FIELDS) {
-        const v = document.getElementById('o-' + k).value;
-        if (k === 'no_thumbnail') {
-            if (v !== '') ov[k] = v === 'true';
-        } else if (v) ov[k] = v;
-    }
-    for (const [k] of COLOR_FIELDS) {
-        const v = document.getElementById('o-' + k).value.trim();
-        if (v) ov[k] = v;
-    }
-    return ov;
-}
-
-function buildColorGrid() {
-    const grid = document.getElementById('color-grid');
-    grid.innerHTML = COLOR_FIELDS.map(([k, label]) => `
-        <div class="text-center">
-            <input type="color" id="o-${k}" class="w-full h-8 bg-slate-900 border border-slate-600 rounded cursor-pointer">
-            <div class="text-[9px] text-slate-500 mt-0.5">${label}</div>
-        </div>`).join('');
-}
-
-async function applyBrandColors() {
-    const body = {
-        brand_colors: [
-            document.getElementById('f-c0').value,
-            document.getElementById('f-c1').value,
-            document.getElementById('f-c2').value,
-        ],
-    };
-    // 服务端映射保证文本色可读/背景柔和（与收藏转正同款算法）
-    const r = await fetch('/api/channels/brand_colors_map', {
-        method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(body),
-    }).then(r => r.json());
-    if (!r.ok) return;
-    for (const [k, v] of Object.entries(r.colors || {})) {
-        const el = document.getElementById('o-' + k);
-        if (el) el.value = v;
-    }
-}
-
-async function loadIntroOptions() {
-    const sel = document.getElementById('o-sleep_intro_video');
-    sel.innerHTML = '<option value="">（全局绑定）</option>';
-    try {
-        const list = await fetch('/api/intro_videos').then(r => r.json());
-        for (const it of (list.items || list.videos || [])) {
-            const id = it.id || it.intro_id || '';
-            if (!id) continue;
-            const name = it.name || it.title || id;
-            const opt = document.createElement('option');
-            opt.value = id;
-            opt.textContent = '🌙 ' + name;
-            sel.appendChild(opt);
-        }
-    } catch (e) { /* 片头库不可用时保留纯文本回退 */ }
 }
 
 async function saveEdit() {
@@ -414,12 +272,40 @@ async function saveEdit() {
             document.getElementById('f-c1').value,
             document.getElementById('f-c2').value,
         ],
-        overrides: collectOverrides(),
     };
-    const url = EDIT_ID ? '/api/channels/update' : '/api/channels/create';
-    const r = await fetch(url, {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(payload)}).then(r => r.json());
+    const r = await fetch(EDIT_ID ? '/api/channels/update' : '/api/channels/create', {
+        method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(payload),
+    }).then(r => r.json());
     if (!r.ok) return alert(r.error || '保存失败');
     closeModal('edit-modal');
+    await refresh();
+}
+
+// ---------- 配置上下文 / 同步 ----------
+async function gotoConfig(cid) {
+    await fetch('/api/channels/active', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({channel_id: cid})});
+    location.href = '/config';
+}
+
+function openSync(cid) {
+    const c = CHANNELS.find(x => x.id === cid);
+    SYNC_CID = cid;
+    document.getElementById('sync-name').textContent = c ? c.name_en : cid;
+    document.getElementById('sync-status').textContent = '';
+    showModal('sync-modal');
+}
+
+async function doSync() {
+    const scope = document.getElementById('sync-scope').value;
+    const st = document.getElementById('sync-status');
+    st.className = 'text-xs text-indigo-300';
+    st.textContent = '同步中...';
+    const r = await fetch(`/api/channels/${SYNC_CID}/config/sync`, {
+        method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({scope}),
+    }).then(r => r.json());
+    if (!r.ok) { st.className = 'text-xs text-red-400'; st.textContent = r.error || '同步失败'; return; }
+    st.className = 'text-xs text-emerald-400';
+    st.textContent = '已同步（身份键未动）';
     await refresh();
 }
 
@@ -586,7 +472,6 @@ function closeModal(id) {
     m.classList.remove('flex');
 }
 
-buildColorGrid();
 refresh();
 </script>
 {% endblock %}
