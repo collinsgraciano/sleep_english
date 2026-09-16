@@ -71,6 +71,7 @@ sleep_english/
 - 音色默认按模式分套：VOICE_DEFAULT_MODES=("sleep",)，配置无 modes.sleep 节 → 回退 legacy 平铺键（与原项目行为一致）
 - Kokoro 单句失败自动重试 ×2；qwen/moss 失败回退 kokoro
 - 卡片渲染有模板缓存（改主题字段即自动失效）；音频时长 sidecar .durations.json（mtime+size 校验）
-- 本仓库无 git remote（push 不可用，commit 即可）
+- GitHub remote：https://github.com/collinsgraciano/sleep_english（私有，2026-09-16 创建）；每次 code change 后立即 commit + push
+- channel_factory 残留文件（routers/templates + configs/channel_drafts·favorites·references·assets，未挂载死代码）用户决定留本地不上传（保持 untracked）
 - 双项目并行时集数/主题防重各自独立，可能重合（已知权衡）
 - 用户反馈记忆（跨会话通用规则）见用户级 CODELY.md；本项目后续沉淀追加到「Codely Structured Memories」Project 节
