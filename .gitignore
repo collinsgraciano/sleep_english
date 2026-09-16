@@ -38,6 +38,9 @@ configs/intro_library.json
 # Sleep color combo presets (config page random palette saves)
 configs/sleep_color_presets/
 
+# Channel matrix runtime state (channel entities + per-channel topic pools)
+configs/channels/
+
 # Pipeline run outputs
 output/
 
