@@ -328,9 +328,13 @@ def _step2_images_tts(args, checkpoint: dict, script: dict, work_dir: Path, dirs
         else:
             print("  [QuickTest] 未找到源运行 —— sleep 音频正常生成（本地零积分）")
 
-    # --- Sleep TTS（文件级续传）---
-    from sleep.audio_sleep import load_sleep_audio_results, prepare_sleep_audio
-    loaded = load_sleep_audio_results(audio_dir, int(getattr(args, "sleep_pairs", 200)))
+    # --- Sleep TTS（文件级续传；序列编排只消费/合成需要的步骤文件）---
+    from sleep.audio_sleep import load_sleep_audio_results, needed_audio_steps, prepare_sleep_audio
+    from sleep.timeline_sleep import parse_sleep_sequence
+    _sequence = parse_sleep_sequence(str(getattr(args, "sleep_sequence", "") or ""))
+    _needed = needed_audio_steps(_sequence)
+    loaded = load_sleep_audio_results(audio_dir, int(getattr(args, "sleep_pairs", 200)),
+                                      needed_steps=_needed)
     if loaded is not None:
         tts_results, image_urls = loaded, {}
         print("  [Resume] sleep 音频已完整，跳过 TTS。")
@@ -344,7 +348,8 @@ def _step2_images_tts(args, checkpoint: dict, script: dict, work_dir: Path, dirs
                 male_rate=float(getattr(args, "sleep_male_rate", 1.0) or 1.0),
                 channel_name=str(getattr(args, "sleep_channel_name", "") or ""),
                 outro_text=str(getattr(args, "sleep_outro_text", "") or ""),
-                stop_check=stop_check))
+                stop_check=stop_check,
+                needed_steps=_needed))
         except RuntimeError as e:
             if str(e) == "stopped":
                 tts_results["fatal_error"] = "stopped"
@@ -471,14 +476,32 @@ def _step4_timeline(args, checkpoint: dict, script: dict, work_dir: Path,
             return (meta["timeline"], meta.get("narration", {}),
                     meta.get("normal_paths", []), meta.get("zh_paths", []))
 
-    from sleep.timeline_sleep import build_sleep_srt, build_sleep_timeline
+    from sleep.timeline_sleep import (build_sleep_srt, build_sleep_timeline,
+                                      parse_sleep_sequence, sequence_signature)
+    sequence = parse_sleep_sequence(str(getattr(args, "sleep_sequence", "") or ""))
+    seq_sig = sequence_signature(sequence)
+
+    if _step_done(checkpoint, "step4_timeline") and srt_path.exists() and meta_path.exists():
+        meta = json.loads(meta_path.read_text(encoding="utf-8"))
+        if meta.get("sleep_pairs") != int(getattr(args, "sleep_pairs", 200)):
+            # 改组数后 resume：旧时间轴与当前音频/配置不再对齐 → 重建而非静默沿用
+            print(f"  [Resume] sleep_pairs 变化（meta {meta.get('sleep_pairs')} → "
+                  f"{getattr(args, 'sleep_pairs', 200)}）— 重建时间轴")
+        elif meta.get("sleep_sequence_sig", "") != seq_sig:
+            print("  [Resume] sleep_sequence 变化 — 重建时间轴")
+        else:
+            print("  [Resume] Loading existing timeline + SRT...")
+            return (meta["timeline"], meta.get("narration", {}),
+                    meta.get("normal_paths", []), meta.get("zh_paths", []))
+
     timeline = build_sleep_timeline(
         script, tts_results, int(getattr(args, "sleep_pairs", 200)),
         gap_short=float(getattr(args, "sleep_gap_short", 1.0)),
         gap_long=float(getattr(args, "sleep_gap_long", 2.0)),
         pair_gap=float(getattr(args, "sleep_pair_gap", 3.0)),
         include_intro=bool(getattr(args, "sleep_intro", True)),
-        card_lead=float(getattr(args, "sleep_card_lead", 0.3) or 0.0))
+        card_lead=float(getattr(args, "sleep_card_lead", 0.3) or 0.0),
+        sequence=sequence)
     # 字幕不上屏（文字预渲染进卡片）；SRT 仅作 sidecar 闭源字幕文件
     srt = build_sleep_srt(timeline)
 
@@ -491,6 +514,7 @@ def _step4_timeline(args, checkpoint: dict, script: dict, work_dir: Path,
         "script": script,
         "pad": getattr(args, "pad", 0.4),
         "sleep_pairs": int(getattr(args, "sleep_pairs", 200)),
+        "sleep_sequence_sig": seq_sig,
         "narration": tts_results.get("narration", {}),
         "normal_paths": tts_results.get("normal_paths", []),
         "zh_paths": tts_results.get("zh_paths", []),
@@ -785,6 +809,7 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument("--sleep-gap-short", type=float, default=1.0, help="常速朗读后停顿秒数（默认 1.0）")
     parser.add_argument("--sleep-gap-long", type=float, default=2.0, help="慢速跟读后停顿秒数（默认 2.0）")
     parser.add_argument("--sleep-pair-gap", type=float, default=3.0, help="AB 连贯后切组停顿秒数（默认 3.0）")
+    parser.add_argument("--sleep-sequence", default="", help="组内步骤序列 JSON（留空=默认结构 a_m→a_slow→b_m→b_slow→combo；建议用 Web「😴 Sleep 睡前短句」页的可视化编辑器修改）")
     parser.add_argument("--sleep-channel-name", default="English with me", help="卡片/片头频道名（同步作 TTS 播报）")
     parser.add_argument("--sleep-intro-video", default="", help="片头视频 mp4 路径（片头库生成后绑定；空=默认静态卡片+频道名播报）")
     parser.add_argument("--sleep-intro", action=argparse.BooleanOptionalAction, default=True,

@@ -44,8 +44,9 @@ def _build_audio_chain(block_segs: list[dict], audio_paths: dict,
     返回 (filter_complex 字符串, ffmpeg 输入参数列表)。段音频按段类型查：
     pair → pair_paths[(pair, step)]；intro/outro → audio_paths["intro"/"outro"]；
     无音频段（gap）生成等长静音（anullsrc 须以 -f lavfi 输入，否则被当作
-    文件名导致整块失败）。lead>0 时组首段（a_m）朗读前先补 lead 秒静音
-    （卡片提前量：画面先出现、稍后出声；该段 timeline duration 已含 lead）。
+    文件名导致整块失败）。lead>0 时每组第一个步骤（序列编排后的首步）
+    朗读前先补 lead 秒静音（卡片提前量：画面先出现、稍后出声；该段
+    timeline duration 已含 lead）。
 
     combo（AB 连贯）段内联拼接：a_m + COMBO_GAP 静音 + b_f 直接进 concat 链
     —— 不再有预编码 combo 中间 mp3（省一次有损重编码 + 每组一个子进程），
@@ -56,6 +57,7 @@ def _build_audio_chain(block_segs: list[dict], audio_paths: dict,
     concat_refs: list[str] = []
     # 输入 0 = 卡片图（-loop 1，无音频流），音频输入索引从 1 起
     state = {"n": 1}
+    first_pair = True  # 每块 = 一组（或 intro/outro），首 pair 段承担卡片提前量
 
     def _push_silence(sec: float) -> None:
         inputs.extend(["-f", "lavfi", "-i",
@@ -81,8 +83,9 @@ def _build_audio_chain(block_segs: list[dict], audio_paths: dict,
                            (pmap.get("b_f", ""), COMBO_GAP)]
             else:
                 entries = [(pmap.get(step, ""), 0.0)]
-            if step == "a_m" and lead > 0:
+            if first_pair and lead > 0:
                 _push_silence(lead)
+            first_pair = False
             if all(p and os.path.exists(p) for p, _ in entries):
                 for path, pre_sil in entries:
                     if pre_sil > 0:

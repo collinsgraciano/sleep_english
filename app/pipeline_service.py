@@ -442,6 +442,7 @@ class PipelineService:
             sleep_4k_native=bool(config.get("sleep_4k_native", False)),
             sleep_intro=bool(config.get("sleep_intro", True)),
             sleep_card_lead=sleep_card_lead,
+            sleep_sequence=str(config.get("sleep_sequence", "") or ""),
             sleep_xfade=bool(config.get("sleep_xfade", False)),
             sleep_xfade_sec=sleep_xfade_sec,
             sleep_font_scale=_cfg_int(config, "sleep_font_scale", 100, 60, 160),

@@ -1,30 +1,86 @@
-"""sleep 模式时间轴：intro → N×[5 朗读段 + 4 静音段] → outro，gap 恒 0.0。
+"""sleep 模式时间轴：intro → N×[序列朗读段 + 序列静音段] → outro，gap 恒 0.0。
 
 段 dict 与 listening 时间轴同构（type/duration/subtitle_en/subtitle_zh +
 sleep 专属键 pair/step），供 save_youtube_metadata 章节与 compose 块构建消费。
 pair 段 duration = 音频实际时长（pad=0，气口全部由显式 gap 段承担），
 保证时间轴累计时长 == 合成视频时长。
+
+组内步骤序列（sleep_sequence 配置）：可自由增删/调序/重复 SEQUENCE_STEPS 中
+的步骤，每步可带专属停顿（gap）；留空/解析失败回落默认步序（PAIR_STEPS +
+三档全局停顿参数，与历史行为一致）。
 """
+import json
+
 from media_utils import build_srt
 
-# 每组内的步骤顺序与配对静音时长键（与 audio_sleep 文件后缀一致）
+# 每组内的默认步骤顺序（与 audio_sleep 文件后缀一致）
 PAIR_STEPS = ("a_m", "a_slow", "b_m", "b_slow", "combo")
+# 序列编排可选步骤（b_f=B句女声常速，默认结构不用，供 sleep_sequence 独立成步）
+SEQUENCE_STEPS = ("a_m", "a_slow", "b_m", "b_slow", "b_f", "combo")
 SLEEP_SEG_TYPES = ("intro", "pair", "gap", "outro")
+
+# 序列步骤 gap 留空（null）时沿用全局停顿参数的映射
+# （a_m/b_m/b_f=常速→gap_short；a_slow/b_slow=慢速→gap_long；combo→pair_gap）
+_STEP_DEFAULT_GAP = {"a_m": "short", "b_m": "short", "b_f": "short",
+                     "a_slow": "long", "b_slow": "long", "combo": "pair"}
+
+
+def parse_sleep_sequence(raw) -> list[dict] | None:
+    """解析 sleep_sequence 配置（JSON 数组 [{step, gap}]）。
+
+    返回规范化步骤列表（gap=None 表示沿用全局停顿参数映射）；
+    留空 / JSON 损坏 / 无有效步骤时返回 None（=默认结构）。
+    """
+    if raw is None or not str(raw).strip():
+        return None
+    try:
+        data = json.loads(str(raw))
+    except (json.JSONDecodeError, TypeError, ValueError):
+        return None
+    if not isinstance(data, list):
+        return None
+    steps: list[dict] = []
+    for item in data:
+        if not isinstance(item, dict):
+            continue
+        step = str(item.get("step", "")).strip()
+        if step not in SEQUENCE_STEPS:
+            continue
+        gap = item.get("gap")
+        if gap is None:
+            gap_val = None
+        else:
+            try:
+                gap_val = round(min(30.0, max(0.0, float(gap))), 3)
+            except (TypeError, ValueError):
+                gap_val = None
+        steps.append({"step": step, "gap": gap_val})
+    return steps or None
+
+
+def sequence_signature(sequence: list[dict] | None) -> str:
+    """序列规范化签名（meta.json 重建守卫用；默认结构恒为空串）。"""
+    if not sequence:
+        return ""
+    return json.dumps(sequence, ensure_ascii=False, separators=(",", ":"))
 
 
 def build_sleep_timeline(script: dict, audio: dict, num_pairs: int,
                          gap_short: float = 1.0, gap_long: float = 2.0,
                          pair_gap: float = 3.0, include_intro: bool = True,
-                         card_lead: float = 0.0) -> list[dict]:
+                         card_lead: float = 0.0,
+                         sequence: list[dict] | None = None) -> list[dict]:
     """由 prepare_sleep_audio 结果构建线性时间轴。
 
-    每组段序（gap 与参考视频一致）：
-    a_m → g_short → a_slow → g_long → b_m → g_short → b_slow → g_long
-    → combo → pair_gap。
+    sequence=None：默认步序 a_m → g_short → a_slow → g_long → b_m → g_short
+    → b_slow → g_long → combo → pair_gap（与历史行为一致）。
 
-    include_intro=False 时不生成 intro 段（片头开关）；
-    card_lead>0 时每组首段 a_m 的 duration = 卡片提前量 + 音频时长
-    （画面先于朗读出现，compose 在该段音频链前插等长静音）。
+    传入 parse_sleep_sequence 结果：按序列编排，每步后停顿取该步 gap
+    （None 回落 _STEP_DEFAULT_GAP 映射的全局参数）；card_lead 加到每组
+    第一个步骤的 duration（画面先于朗读出现，compose 在该段音频链前插
+    等长静音）。
+
+    include_intro=False 时不生成 intro 段（片头开关）。
     """
     timeline: list[dict] = []
     if include_intro:
@@ -36,6 +92,15 @@ def build_sleep_timeline(script: dict, audio: dict, num_pairs: int,
     dialogue = script.get("dialogue", [])
     rows_a, rows_b = dialogue[0::2], dialogue[1::2]
     total = min(num_pairs, len(pair_durs), len(rows_a), len(rows_b))
+
+    def _gap_after(step: str, gap_val) -> float:
+        if gap_val is not None:
+            return float(gap_val)
+        key = _STEP_DEFAULT_GAP.get(step, "short")
+        return float({"short": gap_short, "long": gap_long, "pair": pair_gap}[key])
+
+    steps = sequence if sequence else [{"step": s, "gap": None} for s in PAIR_STEPS]
+
     for i in range(1, total + 1):
         key = str(i).zfill(4)
         durs = pair_durs[key]
@@ -45,10 +110,12 @@ def build_sleep_timeline(script: dict, audio: dict, num_pairs: int,
         zh_b = rows_b[i - 1].get("zh", "")
         step_texts = {"a_m": (text_a, zh_a), "a_slow": (text_a, zh_a),
                       "b_m": (text_b, zh_b), "b_slow": (text_b, zh_b),
+                      "b_f": (text_b, zh_b),
                       "combo": (f"{text_a} {text_b}", f"{zh_a} {zh_b}")}
-        for si, step in enumerate(PAIR_STEPS):
+        for si, entry in enumerate(steps):
+            step = entry["step"]
             dur = float(durs[step])
-            if step == "a_m" and card_lead > 0:
+            if si == 0 and card_lead > 0:
                 dur += float(card_lead)
             timeline.append({
                 "type": "pair", "step": step, "pair": i,
@@ -56,10 +123,8 @@ def build_sleep_timeline(script: dict, audio: dict, num_pairs: int,
                 "subtitle_en": step_texts[step][0],
                 "subtitle_zh": step_texts[step][1],
             })
-            is_last = (si == len(PAIR_STEPS) - 1)
-            gap = pair_gap if is_last else (gap_long if step in ("a_slow", "b_slow") else gap_short)
             timeline.append({"type": "gap", "step": "", "pair": i,
-                             "duration": round(float(gap), 3),
+                             "duration": round(_gap_after(step, entry.get("gap")), 3),
                              "subtitle_en": "", "subtitle_zh": ""})
 
     outro_dur = float(audio.get("outro_dur", 0.0))

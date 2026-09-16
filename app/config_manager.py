@@ -165,6 +165,10 @@ PARAM_SPEC = {
                                    "top": "第二级（盖过白卡/边框/叶片，文字仍在最上层）"},
                        "label": "背景图层级",
                        "help": "需开启「背景图片」；第二级建议不透明度 40-100 才有整幅背景效果，A/B 句、频道名、角标、序号始终绘制在背景图之上"},
+    "sleep_sequence": {"default": "", "type": "textarea", "group": "sleep",
+                       "modes": ["sleep"],
+                       "label": "组内步骤序列 (JSON)",
+                       "help": "朗读步骤编排 JSON（[{step, gap}]，step ∈ a_m/a_slow/b_m/b_slow/b_f/combo，gap=该步后停顿秒数或 null=沿用全局停顿参数）；留空=默认结构 a_m→a_slow→b_m→b_slow→combo；建议用「😴 Sleep 睡前短句」页的可视化编辑器修改"},
 
     # --- LLM ---
     "llm_provider": {"default": "sensenova", "type": "select", "group": "llm",

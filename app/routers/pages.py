@@ -22,10 +22,114 @@ from .runs import _THUMB_NAME_RE, _resolve_main_thumbnail, _resolve_video_copy_p
 
 router = APIRouter()
 
+# 组内步骤序列编辑器（/sleep 页）的步骤中文标签
+SLEEP_STEP_LABELS = {
+    "a_m": "A句 · 男声常速",
+    "a_slow": "A句 · 女声慢速",
+    "b_m": "B句 · 男声常速",
+    "b_slow": "B句 · 女声慢速",
+    "b_f": "B句 · 女声常速",
+    "combo": "AB 连贯",
+}
+
 
 # ===========================================================================
 # Page routes
 # ===========================================================================
+
+def _config_page_context(mode: str) -> dict:
+    """参数配置页 / Sleep 睡前短句页 共用的渲染上下文组装。"""
+    if mode and mode in MODES:
+        set_active_mode(mode)
+    mode = get_active_mode()
+    config = load_mode_config(mode)
+    presets = list_presets()
+    # Inject dynamic LLM provider options into PARAM_SPEC
+    PARAM_SPEC["llm_provider"]["options"] = get_provider_options()
+    # Inject visual style options (built-in + custom styles)
+    style_opts = style_lib.get_style_options()
+    cur_style = config.get("visual_style", "pixar3d")
+    if cur_style and cur_style not in style_opts:
+        # 自定义风格已删除：诚实显示，让用户重新选择
+        style_opts = {cur_style: f"{cur_style}（已失效，请重新选择）", **style_opts}
+    PARAM_SPEC["visual_style"]["options"] = style_opts
+    # 按模式过滤：只渲染该模式实际消费的参数（PARAM_SPEC "modes" 标注）
+    mode_spec = effective_param_spec(mode)
+    # Group params by group
+    grouped = {}
+    for key, spec in mode_spec.items():
+        if key == "structure":
+            continue  # 结构由 Tab 决定，不渲染下拉
+        g = spec["group"]
+        if g not in grouped:
+            grouped[g] = []
+        grouped[g].append((key, spec, config.get(key, spec["default"])))
+    # Sort groups by order
+    sorted_groups = sorted(grouped.items(), key=lambda x: GROUP_META.get(x[0], {}).get("order", 99))
+    # sleep 组色盘「留空=内置默认」显示色（来自 pipeline/sleep/sleep_cards）
+    try:
+        from sleep.sleep_cards import color_defaults
+        sleep_color_defaults = color_defaults()
+    except Exception:
+        sleep_color_defaults = {}
+    return {
+        "config": config,
+        "params": PARAM_SPEC,
+        "grouped": sorted_groups,
+        "group_meta": GROUP_META,
+        "presets": presets,
+        "mode": mode,
+        "mode_labels": MODE_LABELS,
+        "sleep_color_defaults": sleep_color_defaults,
+        # 自定义 Provider 模型列表（不含 api_key 等敏感字段；去重保持顺序）
+        "custom_providers": [
+            {"id": p.get("id", ""), "name": p.get("name", ""),
+             "models": list(dict.fromkeys(p.get("models") or []))}
+            for p in load_llm_providers()
+        ],
+    }
+
+
+@router.get("/sleep", response_class=HTMLResponse)
+async def sleep_config_page(request: Request, mode: str = ""):
+    """😴 Sleep 睡前短句工作台：实时预览固定顶部（档位+拖拽调高）+
+    组内步骤序列编排编辑器 + 全部配置（与「参数配置」页同一份 mode_sleep.json）。"""
+    ctx = _config_page_context(mode)
+    config = ctx["config"]
+    # 序列编辑器卡片已承载 sleep_sequence（可视化编辑）——分组里不再重复渲染原始 JSON 框
+    ctx["grouped"] = [
+        (g, [(k, s, v) for k, s, v in params if k != "sleep_sequence"])
+        if g == "sleep" else (g, params)
+        for g, params in ctx["grouped"]
+    ]
+    # 服务端解析当前序列（损坏/留空 → None，前端回落默认结构展示）
+    try:
+        from sleep.timeline_sleep import parse_sleep_sequence
+        sequence = parse_sleep_sequence(str(config.get("sleep_sequence", "") or ""))
+    except Exception:
+        sequence = None
+    ctx.update({
+        "active_page": "sleep",
+        "sleep_sequence_effective": sequence,
+        "sleep_step_labels": SLEEP_STEP_LABELS,
+        "sleep_gap_params": {
+            "short": config.get("sleep_gap_short", 1.0),
+            "long": config.get("sleep_gap_long", 2.0),
+            "pair": config.get("sleep_pair_gap", 3.0),
+        },
+    })
+    return templates.TemplateResponse(request, "sleep_config.html", ctx)
+
+
+@router.get("/config", response_class=HTMLResponse)
+async def config_page(request: Request, mode: str = ""):
+    # ?mode= 切换 Tab：同步激活模式并渲染该模式配置
+    ctx = _config_page_context(mode)
+    return templates.TemplateResponse(request, "config.html", {
+        **ctx,
+        "active_page": "config",
+    })
+
 
 @router.get("/", response_class=HTMLResponse)
 async def dashboard(request: Request):
