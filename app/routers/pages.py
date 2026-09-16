@@ -388,6 +388,16 @@ async def ai_test_page(request: Request):
 
 
 # ===========================================================================
+@router.get("/channel_factory", response_class=HTMLResponse)
+async def channel_factory_page(request: Request):
+    """频道工坊：LLM 批量生成频道信息 + 收藏 + Logo/Banner 生成。"""
+    config = load_config()
+    return templates.TemplateResponse(request, "channel_factory.html", {
+        "config": config,
+        "active_page": "channel_factory",
+    })
+
+
 @router.get("/intro_videos", response_class=HTMLResponse)
 async def intro_videos_page(request: Request):
     """片头库：sleep 模式 10 秒片头生成（本地动画 / AI 视频）+ 入库管理。"""

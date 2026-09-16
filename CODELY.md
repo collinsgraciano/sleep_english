@@ -36,7 +36,7 @@ sleep_english/
 
 ### 与原项目的裁剪差异
 
-- 删除模式：original*/quest*/story 全部相关模块与页面（characters/story_family/channel_factory/styles/subtitle_styles 路由与模板）
+- 删除模式：original*/quest*/story 全部相关模块与页面（characters/story_family/styles/subtitle_styles 路由与模板；channel_factory 见下）
 - config_manager：MODES=["sleep"]、PARAM_SPEC 仅 sleep 生效参数（mcp_tokens/image_provider/visual_style 改为可见）、删 build_cli_args/_SLEEP_UNUSED_KEYS/normalize_animation、structure_family 恒等
 - pipeline_service：删角色复用/gender 交换/host_bg 绑定/sprite 自动入库/story env 段
 - 2026-09-15 死代码清理（5 commit）：dashboard 死 JS 簇整块删除（曾致「开始生成」按钮 TypeError）；重渲字幕功能链整链删除（sleep 必死）；media_utils 1546→530 行；llm_client 1494→828 行（listening/story 链断码，llm_review/image_gen/script_style 模块本就不存在）；孤儿路由与孤儿 partial 删除；script_library 收敛仅 sleep（VOICE_DEFAULT_MODES/DEFAULT_MODES 均为 sleep）
@@ -72,6 +72,6 @@ sleep_english/
 - Kokoro 单句失败自动重试 ×2；qwen/moss 失败回退 kokoro
 - 卡片渲染有模板缓存（改主题字段即自动失效）；音频时长 sidecar .durations.json（mtime+size 校验）
 - GitHub remote：https://github.com/collinsgraciano/sleep_english（私有，2026-09-16 创建）；每次 code change 后立即 commit + push
-- channel_factory 残留文件（routers/templates + configs/channel_drafts·favorites·references·assets，未挂载死代码）用户决定留本地不上传（保持 untracked）
+- channel_factory 已按用户要求补迁挂载（2026-09-15，router+page 路由+侧边栏+paths 常量，eb0c9c5 的「残留留本地」决定作废）；configs/channel_drafts·favorites·references·assets 为运行时数据保持本地不入库（10 收藏/1 参考随迁可用）
 - 双项目并行时集数/主题防重各自独立，可能重合（已知权衡）
 - 用户反馈记忆（跨会话通用规则）见用户级 CODELY.md；本项目后续沉淀追加到「Codely Structured Memories」Project 节

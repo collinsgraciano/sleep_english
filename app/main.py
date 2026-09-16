@@ -18,6 +18,7 @@ from .paths import STATIC_DIR, WEB_ROOT
 from .routers import (
     ai_test as ai_test_routes,
     batch_queue as batch_queue_routes,
+    channel_factory as channel_factory_routes,
     config as config_routes,
     health as health_routes,
     intro_videos as intro_videos_routes,
@@ -57,6 +58,8 @@ app.include_router(topics_routes.router)
 app.include_router(scripts_routes.router)
 app.include_router(runs_routes.router)
 app.include_router(mcp_tokens_routes.router)
+# 频道工坊（LLM 频道信息生成 + 收藏 + Logo/Banner 素材）
+app.include_router(channel_factory_routes.router)
 # 片头库（sleep 模式 10 秒片头生成入库 + 绑定）
 app.include_router(intro_videos_routes.router)
 app.include_router(health_routes.router)
