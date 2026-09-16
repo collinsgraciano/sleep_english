@@ -458,7 +458,7 @@ class PipelineService:
             subtitle_font_size=int(config.get("subtitle_font_size", 60)),
             subtitle_style=str(config.get("subtitle_style", "") or ""),
             no_zh_subtitle=bool(config.get("no_zh_subtitle", False)),
-            no_4k=bool(config.get("no_4k", False)),
+            no_4k=False,  # 4K 恒定生成；跳过 4K 仅保留命令行 --no-4k 供快速测试
             no_thumbnail=bool(config.get("no_thumbnail", False)),
             quick_test=bool(config.get("quick_test", False)),
             output_dir=config.get("output_dir", "./output"),
@@ -482,8 +482,6 @@ class PipelineService:
             moss_tts_rep_penalty=config.get("moss_tts_rep_penalty", 1.2),
             moss_tts_text_temperature=config.get("moss_tts_text_temperature", 1.0),
             moss_tts_greedy=bool(config.get("moss_tts_greedy", False)),
-            upscale_timeout=int(config.get("upscale_timeout", 3600)),
-            upscale_engine=str(config.get("upscale_engine", "ffmpeg")),
             sleep_intro_video=_resolve_sleep_intro_video(config),
             bgm_mix=bool(config.get("bgm_mix", False)),
             bgm_music_dir=str(config.get("bgm_music_dir", "")
@@ -866,8 +864,8 @@ class PipelineService:
     def generate_4k(self, run_name: str, mode: str = "") -> tuple[bool, str]:
         """为已完成运行生成（或重新生成）4K 版本（复用 Step 6 超分逻辑，本地渲染零积分）。
 
-        源视频 = 运行目录根部成片；upscale_engine 跟随当前配置
-        （ffmpeg lanczos / AI 超分，权重缺失自动回退 ffmpeg）。后台线程执行；
+        源视频 = 运行目录根部成片；固定 ffmpeg lanczos 引擎（4K 恒定生成，
+        超分配置组已移除）。后台线程执行；
         期间与主 pipeline / 模式测试互斥。
         返回 (ok, message)。
         """
@@ -901,11 +899,8 @@ class PipelineService:
             final_path = max(candidates, key=lambda v: v.stat().st_mtime)
             safe_vid_name = final_path.stem
 
-        try:
-            upscale_timeout = max(60, int(config.get("upscale_timeout", 3600) or 3600))
-        except (TypeError, ValueError):
-            upscale_timeout = 3600
-        upscale_engine = str(config.get("upscale_engine", "ffmpeg") or "ffmpeg")
+        # 超分配置组已移除：4K 恒定生成，固定 ffmpeg lanczos 引擎与默认超时
+        upscale_engine, upscale_timeout = "ffmpeg", 3600
 
         if not run_mutex.try_acquire("4k_gen"):
             return False, (f"资源被占用：{run_mutex.current_owner()}"

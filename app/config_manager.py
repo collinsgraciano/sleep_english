@@ -284,19 +284,6 @@ PARAM_SPEC = {
     "used_topics_file": {"default": "", "type": "text", "group": "content",
                          "label": "已用主题文件", "help": "留空=<output>/used_topics.json"},
 
-    # --- Video ---
-    "no_4k": {"default": False, "type": "checkbox", "group": "video",
-              "label": "跳过4K"},
-    "upscale_engine": {"default": "ffmpeg", "type": "select", "group": "video",
-                       "label": "4K 超分引擎",
-                       "options": {"ffmpeg": "FFmpeg Lanczos (原方法)",
-                                   "ai": "AI 超分 (animevideov3)"},
-                       "help": "AI 超分 = realesr-animevideov3 本地 GPU 推理（权重 "
-                               "H:\\models\\upscaling\\，锐度比插值高约 12-28%）；推理约 "
-                               "110ms/帧，12 分钟全片预计比原方法多 30-60 分钟；"
-                               "权重缺失或无 CUDA 自动回退原方法"},
-    "upscale_timeout": {"default": 3600, "type": "number", "group": "video",
-                       "label": "4K超时(秒)"},
     # --- BGM 版权音乐混合（Step 5.5，移植自 yt_aduio_book_one_to_all_v2/pipeline/bgm.py）---
     "bgm_mix": {"default": False, "type": "checkbox", "group": "bgm",
                 "label": "运行时自动混入版权 BGM",
@@ -399,7 +386,6 @@ GROUP_META = {
     "llm": {"label": "LLM 设置", "icon": "🤖", "order": 2},
     "tts": {"label": "TTS 语音", "icon": "🎙️", "order": 3},
     "mcp": {"label": "MCP / 图片", "icon": "🎨", "order": 4},
-    "video": {"label": "视频合成", "icon": "🎬", "order": 5},
     "bgm": {"label": "BGM 音乐（通用）", "icon": "🎵", "order": 6},
     "bgm_amix": {"label": "BGM · amix 模式", "icon": "🎵", "order": 7},
     "bgm_sidechain": {"label": "BGM · sidechain 模式", "icon": "🎵", "order": 8},
@@ -413,7 +399,7 @@ GROUP_META = {
 QUICK_CONFIG_PATH = CONFIGS_DIR / "quick_config.json"
 DEFAULT_QUICK_FIELDS = [
     "tts_engine", "sleep_pairs", "sleep_channel_name",
-    "sleep_bg_image", "sleep_xfade", "no_4k", "bgm_mix", "quick_test",
+    "sleep_bg_image", "sleep_xfade", "bgm_mix", "quick_test",
 ]
 # 面板上方快捷区已固定显示的键（structure 由模式标签决定），不允许重复挑选
 EXCLUDED_QUICK_KEYS = {"structure", "topic", "cefr", "animation"}
