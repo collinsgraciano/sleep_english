@@ -22,6 +22,7 @@ from pathlib import Path
 from typing import Any
 
 from .config_manager import MODES, load_mode_config
+from .channel_profiles import get_channel
 
 WEB_ROOT = Path(__file__).parent.parent.resolve()
 QUEUE_PATH = WEB_ROOT / "configs" / "batch_queue.json"
@@ -29,7 +30,7 @@ QUEUE_PATH = WEB_ROOT / "configs" / "batch_queue.json"
 ITEM_STATUSES = ("pending", "running", "done", "error", "stopped", "interrupted")
 FINISHED_STATUSES = ("done", "error", "stopped", "interrupted")
 
-MAX_QUEUE_ITEMS = 100
+MAX_QUEUE_ITEMS = 500
 MAX_TOPIC_LEN = 200
 MUTEX_WAIT_SECONDS = 5  # run_mutex 被占时的重试间隔
 
@@ -101,14 +102,14 @@ class BatchQueueService:
     # ------------------------------------------------------------------
 
     def _pending_keys(self) -> set[tuple[str, str]]:
-        """队列中尚未跑完的 (type, 内容键) 集合，用于去重。"""
+        """队列中尚未跑完的 (type, 内容键) 集合，用于去重（键含频道维度）。"""
         keys = set()
         for it in self._items:
             if it.get("status") in ("pending", "running"):
                 if it.get("type") == "script":
                     keys.add(("script", str(it.get("script_id", ""))))
                 else:
-                    keys.add(("topic", f"{it.get('mode')}|{it.get('topic', '')}"))
+                    keys.add(("topic", f"{it.get('mode')}|{it.get('channel_id', '')}|{it.get('topic', '')}"))
         return keys
 
     def _reject_script(self, script_id: str) -> str:
@@ -149,6 +150,15 @@ class BatchQueueService:
                 continue
             itype = str(raw.get("type", "")).strip()
             cefr = str(raw.get("cefr", "") or "").strip()
+            # 频道维度（可选）：频道矩阵按频道隔离配置/主题/集数
+            channel_id = str(raw.get("channel_id", "") or "").strip()
+            channel_name = ""
+            if channel_id:
+                ch = get_channel(channel_id)
+                if ch is None:
+                    rejected.append({"index": i, "reason": f"频道不存在: {channel_id}"})
+                    continue
+                channel_name = str(ch.get("name_en", "") or "")
             if len(self._items) + len(added) >= MAX_QUEUE_ITEMS:
                 rejected.append({"index": i, "reason": f"队列已满（上限 {MAX_QUEUE_ITEMS} 项）"})
                 continue
@@ -170,6 +180,8 @@ class BatchQueueService:
                     "id": _new_item_id(),
                     "type": "script",
                     "mode": mode,
+                    "channel_id": channel_id,
+                    "channel_name": channel_name,
                     "script_id": script_id,
                     "topic": doc.get("topic") or script.get("title") or "",
                     "cefr": cefr or doc.get("cefr", ""),
@@ -189,7 +201,7 @@ class BatchQueueService:
                     rejected.append({"index": i, "reason": "主题为空"})
                     continue
                 topic = topic[:MAX_TOPIC_LEN]
-                key = ("topic", f"{mode}|{topic}")
+                key = ("topic", f"{mode}|{channel_id}|{topic}")
                 if key in pending_keys or key in added_keys:
                     rejected.append({"index": i, "reason": f"主题已在队列中: {topic}"})
                     continue
@@ -197,6 +209,8 @@ class BatchQueueService:
                     "id": _new_item_id(),
                     "type": "topic",
                     "mode": mode,
+                    "channel_id": channel_id,
+                    "channel_name": channel_name,
                     "script_id": "",
                     "topic": topic,
                     "cefr": cefr,
@@ -338,15 +352,25 @@ class BatchQueueService:
     # ------------------------------------------------------------------
 
     def _build_config(self, item: dict) -> dict | None:
-        """任务开始时构建运行配置；脚本项二次校验失败返回 None（原因写 item.error）。"""
+        """任务开始时构建运行配置；脚本项二次校验失败返回 None（原因写 item.error）。
+
+        频道项：resolve_run_config = 全局配置深合并频道 overrides
+        （频道名/色板/音色/片头/主题域），再叠加内容覆盖项（topic/cefr/script_id）。
+        """
         from . import script_library
 
         mode = item.get("mode", "")
         if mode not in MODES:
             item["error"] = f"无效模式: {mode}"
             return None
-        config = load_mode_config(mode)
+        channel_id = str(item.get("channel_id", "") or "").strip()
+        if channel_id:
+            from .channel_profiles import resolve_run_config
+            config = resolve_run_config(mode, channel_id)
+        else:
+            config = load_mode_config(mode)
         config["structure"] = mode
+        config["channel_id"] = channel_id
         if item.get("cefr"):
             config["cefr"] = item["cefr"]
         if item.get("type") == "script":

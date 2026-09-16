@@ -24,15 +24,19 @@ async def api_run_start(request: Request):
     data = await request.json() if request.headers.get("content-type", "").startswith("application/json") else {}
     config = data.get("config")
     channel_id = str(data.get("channel_id", "") or "").strip()
-    if config is None:
-        if channel_id:
-            # 频道运行：全局配置深合并频道 overrides（含频道名/色板/音色/主题域）
-            from ..channel_profiles import resolve_run_config
-            config = resolve_run_config(get_active_mode(), channel_id)
-        else:
-            config = load_config()
     if channel_id:
+        # 频道运行：全局配置深合并频道 overrides（频道名/色板/音色/主题域）；
+        # 前端 config 快照只保留内容覆盖项（topic/cefr/script_id），其余以频道为准
+        from ..channel_profiles import resolve_run_config
+        resolved = resolve_run_config(get_active_mode(), channel_id)
+        if isinstance(config, dict):
+            for k in ("topic", "cefr", "script_id"):
+                if config.get(k):
+                    resolved[k] = config[k]
+        config = resolved
         config["channel_id"] = channel_id
+    elif config is None:
+        config = load_config()
     resume = data.get("resume", False)
     step_mode = data.get("step_mode", False)
     ok = service.start(config, resume=resume, step_mode=step_mode)

@@ -541,6 +541,16 @@ async def channel_factory_page(request: Request):
     })
 
 
+@router.get("/channels", response_class=HTMLResponse)
+async def channels_page(request: Request):
+    """频道矩阵：频道实体管理（品牌/视听 overrides）+ 独立主题库 + 矩阵填充。"""
+    config = load_config()
+    return templates.TemplateResponse(request, "channels.html", {
+        "config": config,
+        "active_page": "channels",
+    })
+
+
 @router.get("/intro_videos", response_class=HTMLResponse)
 async def intro_videos_page(request: Request):
     """片头库：sleep 模式 10 秒片头生成（本地动画 / AI 视频）+ 入库管理。"""

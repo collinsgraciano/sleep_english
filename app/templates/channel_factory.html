@@ -247,6 +247,8 @@ function renderFavs() {
                     class="px-2 py-1 ${_assetBusy ? 'bg-slate-700 text-slate-500 cursor-not-allowed' : 'bg-indigo-600 hover:bg-indigo-500 text-white'} rounded text-[11px] transition">🎨 生成图</button>
                 <button onclick="openAssetsFolder('${p.id}')"
                     class="px-2 py-1 bg-slate-700 hover:bg-slate-600 rounded text-[11px] text-slate-300 transition">📂</button>
+                <button onclick="promoteToChannel('${p.id}')"
+                    class="px-2 py-1 bg-emerald-700 hover:bg-emerald-600 rounded text-[11px] text-white transition" title="创建为频道实体（配置合成/独立主题域，见频道矩阵页）">🎞️ 转为频道</button>
                 <button onclick="toggleUsed('${p.id}')"
                     class="px-2 py-1 rounded text-[11px] transition ${p.used ? 'bg-emerald-600 text-white' : 'bg-slate-700 hover:bg-slate-600 text-slate-300'}">${p.used ? '✅ 已使用' : '⚪ 未使用'}</button>
                 <button onclick="deleteFav('${p.id}')"
@@ -437,6 +439,16 @@ async function openAssetsFolder(pid) {
     if (openAssetsFolder._t) return;
     openAssetsFolder._t = setTimeout(() => { openAssetsFolder._t = null; }, 3000);
     await fetch(`/api/channel_factory/favorites/${encodeURIComponent(pid)}/open_folder`, { method: 'POST' });
+}
+async function promoteToChannel(pid) {
+    const r = await fetch('/api/channels/from_favorite', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ favorite_id: pid }),
+    }).then(r => r.json());
+    if (!r.ok) { alert(r.error || '转正失败'); return; }
+    if (confirm(`已创建频道实体「${r.channel.name_en}」（品牌色已映射为卡片配色，并预置独立主题域）。\n前往「🎞️ 频道矩阵」页查看？`)) {
+        location.href = '/channels';
+    }
 }
 
 // ---------- references ----------
