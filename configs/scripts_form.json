@@ -1,4 +1,4 @@
 {
-  "provider": "custom:custom_1787469082018",
-  "model": "gemini-3.6-flash"
+  "provider": "gemini",
+  "model": "models/gemini-3.8-flash"
 }
