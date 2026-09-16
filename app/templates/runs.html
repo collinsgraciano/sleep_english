@@ -3,6 +3,7 @@
 {% set gallery_url = '/runs/' ~ run.name ~ '/gallery' %}{% if run.structure %}{% set gallery_url = gallery_url ~ '?mode=' ~ run.structure %}{% endif %}
 <div class="relative bg-slate-800 rounded-xl border border-slate-700 overflow-hidden hover:border-indigo-600 transition run-card"
      data-run="{{ run.name }}" data-uploaded="{% if run.uploaded %}1{% else %}0{% endif %}" data-structure="{{ run.structure }}" data-has4k="{% if run.has_4k %}1{% else %}0{% endif %}"
+     data-channel="{{ run.channel_id | default('') }}"
      data-path4k="{{ run.copy_4k }}" data-path4kbgm="{{ run.copy_4k_bgm }}">
     <!-- 多选框（批量操作用；叠在缩略图左上角，点击不会触发下层的画廊链接） -->
     <label class="absolute top-2 left-2 z-20 flex items-center justify-center w-7 h-7 bg-slate-900/70 hover:bg-slate-900/90 border border-slate-600 rounded-lg cursor-pointer"
@@ -35,6 +36,7 @@
         <div class="flex items-center gap-2 mt-2">
             {% if run.structure_label %}<span class="text-xs px-2 py-0.5 bg-sky-600/30 text-sky-300 rounded" title="{{ run.structure }}">{{ run.structure_label }}</span>{% endif %}
             {% if run.cefr %}<span class="text-xs px-2 py-0.5 bg-indigo-600/30 text-indigo-300 rounded">{{ run.cefr }}</span>{% endif %}
+            {% if run.channel_id and run.channel_id in channel_labels %}<span class="text-xs px-2 py-0.5 bg-emerald-600/20 text-emerald-300 rounded" title="{{ run.channel_id }}">🎞 {{ channel_labels[run.channel_id] }}</span>{% endif %}
             <span id="upload-badge-{{ run.name }}" class="text-xs px-2 py-0.5 bg-emerald-600/30 text-emerald-300 rounded{% if not run.uploaded %} hidden{% endif %}">已上传</span>
             {% if run.videos %}
             {% for v in run.videos %}
@@ -121,6 +123,17 @@
                 class="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-700 text-slate-300">{{ mlabel }} <span data-mode-count="{{ mid }}"></span></button>
             {% endfor %}
         </div>
+        {% if channel_labels %}
+        <div class="flex items-center gap-2 flex-wrap">
+            <span class="text-xs text-slate-500 mr-1">频道</span>
+            <button data-channel-chip="all" onclick="setChannelFilter('all')"
+                class="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-700 text-slate-300">全部</button>
+            {% for cid, cname in channel_labels.items() %}
+            <button data-channel-chip="{{ cid }}" onclick="setChannelFilter('{{ cid }}')"
+                class="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-700 text-slate-300">{{ cname }} <span data-channel-count="{{ cid }}"></span></button>
+            {% endfor %}
+        </div>
+        {% endif %}
     </div>
 
     <!-- 批量操作：勾选卡片后批量执行（全选只作用于当前筛选可见的运行） -->
@@ -285,6 +298,7 @@ function closeScriptModal(e) {
 const _CHIP_OFF = 'px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-700 text-slate-300';
 let uploadFilter = 'all';   // all / pending / uploaded
 let modeFilter = 'all';     // all / original / original_static / original_cutout / quest
+let channelFilter = 'all';  // all / 频道实体 id（频道矩阵维度）
 
 function paintUploadChips() {
     ['all', 'pending', 'uploaded'].forEach(key => {
@@ -307,6 +321,14 @@ function paintModeChips() {
 
 function setUploadFilter(v) { uploadFilter = v; paintUploadChips(); applyFilters(); _saveFilters(); }
 function setModeFilter(v) { modeFilter = v; paintModeChips(); applyFilters(); _saveFilters(); }
+function paintChannelChips() {
+    document.querySelectorAll('[data-channel-chip]').forEach(btn => {
+        btn.className = btn.dataset.channelChip === channelFilter
+            ? 'px-3 py-1.5 rounded-lg text-xs font-medium bg-indigo-600 text-white'
+            : _CHIP_OFF;
+    });
+}
+function setChannelFilter(v) { channelFilter = v; paintChannelChips(); applyFilters(); _saveFilters(); }
 
 function applyFilters() {
     let visible = 0;
@@ -314,7 +336,8 @@ function applyFilters() {
         const okU = uploadFilter === 'all'
             || card.dataset.uploaded === (uploadFilter === 'uploaded' ? '1' : '0');
         const okM = modeFilter === 'all' || card.dataset.structure === modeFilter;
-        const show = okU && okM;
+        const okC = channelFilter === 'all' || card.dataset.channel === channelFilter;
+        const show = okU && okM && okC;
         card.classList.toggle('hidden', !show);
         if (show) {
             visible++;
@@ -338,6 +361,9 @@ function refreshChipCounts() {
     document.querySelectorAll('[data-mode-count]').forEach(el => {
         el.textContent = cards.filter(c => c.dataset.structure === el.dataset.modeCount).length;
     });
+    document.querySelectorAll('[data-channel-count]').forEach(el => {
+        el.textContent = cards.filter(c => c.dataset.channel === el.dataset.channelCount).length;
+    });
 }
 
 // ---------------------------------------------------------------------------
@@ -347,7 +373,8 @@ const _FILTER_KEY = 'runs_page_filters';
 
 function _saveFilters() {
     try {
-        localStorage.setItem(_FILTER_KEY, JSON.stringify({upload: uploadFilter, mode: modeFilter}));
+        localStorage.setItem(_FILTER_KEY, JSON.stringify(
+            {upload: uploadFilter, mode: modeFilter, channel: channelFilter}));
     } catch (e) { /* localStorage 不可用时静默跳过 */ }
 }
 
@@ -358,6 +385,10 @@ function _loadSavedFilters() {
         // 只恢复当前页面存在对应筛选按钮的模式，避免残留失效值
         if (saved.mode && document.querySelector(`[data-mode-chip="${CSS.escape(saved.mode)}"]`)) {
             modeFilter = saved.mode;
+        }
+        if (saved.channel
+                && document.querySelector(`[data-channel-chip="${CSS.escape(saved.channel)}"]`)) {
+            channelFilter = saved.channel;
         }
     } catch (e) { /* 数据损坏时使用默认值 */ }
 }
@@ -1120,6 +1151,7 @@ function pollTaskWidget() {
 _loadSavedFilters();
 paintUploadChips();
 paintModeChips();
+paintChannelChips();
 refreshChipCounts();
 applyFilters();
 </script>

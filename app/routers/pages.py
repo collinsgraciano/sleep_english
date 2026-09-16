@@ -419,10 +419,12 @@ async def runs_page(request: Request):
                 run_info["title_en"] = script.get("youtube_title_en", "")
                 run_info["cefr"] = script.get("cefr", "")
                 run_info["structure"] = script.get("structure", "")
+                run_info["channel_id"] = str(script.get("channel_id", "") or "")
             except (json.JSONDecodeError, OSError):
                 run_info["title"] = d.name
         else:
             run_info["title"] = d.name
+        run_info.setdefault("channel_id", "")
         # 卡片模式徽标：脚本缺 structure 时回退所在模式文件夹名
         if run_info["structure"] not in MODES:
             run_info["structure"] = d.parent.name if d.parent.name in MODES else ""
@@ -465,10 +467,15 @@ async def runs_page(request: Request):
             item["structure_label"] = MODE_SHORT_LABELS.get(structure, structure)
             trash_runs.append(item)
 
+    # 频道筛选条（频道矩阵）：id → 展示名（已删除频道不出现在筛选条）
+    from ..channel_profiles import list_channels
+    channel_labels = {c["id"]: (c.get("name_en") or c["id"])
+                      for c in list_channels()}
     return templates.TemplateResponse(request, "runs.html", {
         "runs": runs,
         "trash_runs": trash_runs,
         "mode_labels": MODE_LABELS,
+        "channel_labels": channel_labels,
         "active_page": "runs",
     })
 
