@@ -1,13 +1,17 @@
-"""频道实体（Channel Profile）—— 频道矩阵的存储、配置合成与工坊收藏转正。
+"""频道实体（Channel Profile）—— 频道矩阵的存储、配置快照与工坊收藏转正。
 
 数据模型（configs/channels/{channel_id}.json，一频道一文件）：
   品牌字段（name_en/name_zh/handle/slogan/description_*/niche/audience/tags/
   brand_colors/brand_style/logo/banner）沿用频道工坊 favorites 的 profile 结构；
-  status: active | paused；overrides: 仅显式差异项（空值键不覆盖全局配置）。
+  status: active | paused；
+  config: **完整配置快照**（整套 PARAM_SPEC，2026-09-16 起）——创建/转正时
+  从全局 mode_sleep.json 深拷贝种子，此后完全独立演化；overrides 为旧格式
+  差异项（仅作读取迁移源，不再新增）。
 
-配置合成：resolve_run_config(mode, cid) = load_mode_config(mode) + overrides 非空叠加，
-返回完整 config dict（不落盘）。channel_id 为空或频道不存在时原样返回 ——
-「不选频道」行为与现状完全一致（新增层，不改写原链路）。
+配置快照：load_channel_config(cid) 返回频道私有完整配置（defaults 补全 +
+structure/channel_id 盖章）；旧格式频道（无 config 节）读取时按
+「全局 + overrides」迁移并惰性写回。save_channel_config 整档写回。
+sync_channel_config(cid, scope) 从全局按参数组回填（身份键永不同步）。
 """
 import json
 import os
@@ -21,7 +25,8 @@ from .paths import CHANNELS_DIR, CHANNEL_FAVORITES_PATH, WEB_ROOT
 # 合法频道 id（与频道工坊 profile id 同前缀，手动/转正共用）
 _CHANNEL_ID_RE = re.compile(r"^ch_[A-Za-z0-9_]+$")
 
-# overrides 允许覆盖的配置键白名单（照 sleep 组参数子集；不在名单的键一律忽略）
+# overrides 允许覆盖的配置键白名单 —— 仅作旧格式（无 config 节）频道的
+# 读取迁移源；2026-09-16 起频道持有完整配置快照，不再新增 overrides
 OVERRIDABLE_KEYS: tuple[str, ...] = (
     # 频道身份（卡片/播报）
     "sleep_channel_name", "sleep_outro_text",
@@ -121,6 +126,7 @@ def normalize_channel(raw: dict) -> dict | None:
             colors.append(c if c.startswith("#") else f"#{c}")
     while len(colors) < 3:
         colors.append(["#4F46E5", "#F59E0B", "#F8FAFC"][len(colors)])
+    config = raw.get("config")
     return {
         "id": cid,
         "name_en": name_en,
@@ -141,6 +147,8 @@ def normalize_channel(raw: dict) -> dict | None:
         "created": float(raw.get("created", 0) or time.time()),
         "source_favorite_id": str(raw.get("source_favorite_id", "") or "").strip(),
         "overrides": _filter_overrides(raw.get("overrides")),
+        # 完整配置快照（2026-09-16 起；旧格式频道无此节 → 读取时自迁移）
+        "config": config if isinstance(config, dict) and config else {},
     }
 
 
@@ -205,49 +213,129 @@ def default_used_topics_file(channel_id: str) -> str:
 
 
 def resolve_topics_files(channel: dict) -> tuple[str, str]:
-    """频道主题域 (topics_file, used_topics_file)：overrides 显式设置优先，
-    否则用频道专属默认路径（保证频道间主题互不干扰）。"""
+    """频道主题域 (topics_file, used_topics_file)：config 快照显式值优先，
+    其次旧格式 overrides，否则频道专属默认路径（频道间互不干扰）。"""
     cid = channel["id"]
+    cfg = channel.get("config") or {}
     ov = channel.get("overrides") or {}
-    topics_file = str(ov.get("topics_file", "") or "").strip() or default_topics_file(cid)
-    used_file = str(ov.get("used_topics_file", "") or "").strip() or default_used_topics_file(cid)
+    topics_file = (str(cfg.get("topics_file", "") or "").strip()
+                   or str(ov.get("topics_file", "") or "").strip()
+                   or default_topics_file(cid))
+    used_file = (str(cfg.get("used_topics_file", "") or "").strip()
+                 or str(ov.get("used_topics_file", "") or "").strip()
+                 or default_used_topics_file(cid))
     return topics_file, used_file
 
 
 # ===========================================================================
-# 配置合成（核心枢纽）
+# 配置快照（核心枢纽）：每频道一份完整独立配置
 # ===========================================================================
 
-def resolve_run_config(mode: str, channel_id: str = "") -> dict[str, Any]:
-    """mode_sleep.json 深合并频道 overrides → 本次运行完整配置。
+# 同步守卫：频道身份键从全局同步时永不被覆盖
+IDENTITY_SYNC_GUARD: frozenset[str] = frozenset({
+    "sleep_channel_name", "sleep_outro_text",
+    "topics_file", "used_topics_file",
+    "channel_id", "structure",
+})
 
-    - channel_id 为空 / 频道不存在 / status=paused → 原样返回全局配置
-      （paused 频道不可被新运行意外使用，由调用方决定是否提示）
-    - overrides 仅覆盖白名单内非空键；sleep_channel_name 强制品牌化
-      （未显式设置时用 name_en —— 频道名是卡片/播报的声学标签，
-      绝不回落全局，防止 A 频道的名字跑进 B 频道的成片）；
-      topics_file/used_topics_file 强制按频道隔离（显式 override 优先，
-      否则频道专属默认路径），避免各频道互烧公共主题池
+# 同步范围 → 参数组（None = 全部组）
+SYNC_SCOPES: dict[str, tuple[str, ...] | None] = {
+    "all": None,
+    "credentials": ("llm", "mcp"),
+    "content": ("content",),
+    "visual": ("sleep",),
+    "bgm": ("bgm", "bgm_amix", "bgm_sidechain"),
+}
+
+
+def _seed_channel_config(channel_id: str, name_en: str,
+                         brand_colors: list[str]) -> dict[str, Any]:
+    """频道配置快照种子：当前全局配置深拷贝 + 品牌色映射 + 身份键。
+
+    创建/转正时调用一次；此后频道配置完全独立演化（快照语义）。
     """
     from .config_manager import load_mode_config
-    config = load_mode_config(mode)
+    cfg = dict(load_mode_config("sleep"))
+    cfg.update(brand_colors_to_sleep_overrides(brand_colors))
+    cfg["sleep_channel_name"] = name_en
+    cfg["topics_file"] = default_topics_file(channel_id)
+    cfg["used_topics_file"] = default_used_topics_file(channel_id)
+    cfg["channel_id"] = channel_id
+    cfg["structure"] = "sleep"
+    return cfg
+
+
+def load_channel_config(channel_id: str) -> dict[str, Any]:
+    """频道私有完整配置（defaults 补全 + structure/channel_id 盖章）。
+
+    旧格式频道（无 config 节）按「全局 + overrides」迁移，并惰性写回
+    config 节 —— 存量频道首次读取即完成升级，无需手动迁移。
+    频道不存在时回落全局（调用方语义与 load_config 一致）。
+    """
+    from .config_manager import get_default_config, load_mode_config
     channel = get_channel(channel_id) if channel_id else None
     if channel is None:
-        return config
-    overrides = channel.get("overrides") or {}
-    for key in OVERRIDABLE_KEYS:
-        if key in overrides:
-            config[key] = overrides[key]
-    # 频道名强制品牌化（声学标签属于该频道）
-    config["sleep_channel_name"] = (
-        str(overrides.get("sleep_channel_name", "") or "").strip() or channel["name_en"])
-    # 主题域强制按频道隔离
-    topics_file, used_file = resolve_topics_files(channel)
-    config["topics_file"] = topics_file
-    config["used_topics_file"] = used_file
-    # 运行级标记：_build_args/_step0 落 script.json、quick_test 过滤都依赖它
-    config["channel_id"] = channel["id"]
-    return config
+        return load_mode_config("sleep")
+    snapshot = channel.get("config") or {}
+    if snapshot:
+        merged = {**get_default_config(), **snapshot}
+    else:
+        # --- 旧格式迁移：全局 + overrides 非空叠加（原 resolve_run_config 语义）---
+        merged = load_mode_config("sleep")
+        overrides = channel.get("overrides") or {}
+        for key in OVERRIDABLE_KEYS:
+            if key in overrides:
+                merged[key] = overrides[key]
+        merged["sleep_channel_name"] = (
+            str(overrides.get("sleep_channel_name", "") or "").strip()
+            or channel["name_en"])
+        topics_file, used_file = resolve_topics_files(channel)
+        merged["topics_file"] = topics_file
+        merged["used_topics_file"] = used_file
+        save_channel_config(channel_id, merged)  # 惰性写回，完成升级
+    merged["structure"] = "sleep"
+    merged["channel_id"] = channel_id
+    return merged
+
+
+def save_channel_config(channel_id: str, config: dict[str, Any]) -> dict[str, Any]:
+    """整档写回频道配置快照（defaults 补全缺失键 + 身份盖章 + 原子写）。"""
+    from .config_manager import get_default_config
+    channel = get_channel(channel_id)
+    if channel is None:
+        raise ValueError(f"频道不存在: {channel_id}")
+    merged = {**get_default_config(), **(config or {})}
+    merged["structure"] = "sleep"
+    merged["channel_id"] = channel_id
+    channel["config"] = merged
+    _atomic_write(_channel_path(channel_id), channel)
+    return merged
+
+
+def sync_channel_config(channel_id: str, scope: str = "all") -> dict[str, Any]:
+    """从全局 mode_sleep.json 按参数组回填频道快照。
+
+    身份键（IDENTITY_SYNC_GUARD）永不同步 —— 频道名/主题域/归属
+    属于频道自身，不会被全局改动抹掉。
+    """
+    from .config_manager import PARAM_SPEC, load_mode_config
+    groups = SYNC_SCOPES.get(scope)
+    if scope not in SYNC_SCOPES:
+        raise ValueError(f"未知同步范围: {scope}")
+    global_cfg = load_mode_config("sleep")
+    channel_cfg = load_channel_config(channel_id)
+    for key, spec in PARAM_SPEC.items():
+        if groups is not None and spec.get("group") not in groups:
+            continue
+        if key in IDENTITY_SYNC_GUARD:
+            continue
+        channel_cfg[key] = global_cfg.get(key, spec.get("default"))
+    return save_channel_config(channel_id, channel_cfg)
+
+
+def resolve_run_config(mode: str, channel_id: str = "") -> dict[str, Any]:
+    """兼容别名：频道完整配置快照（Phase B 更新调用点后移除）。"""
+    return load_channel_config(channel_id)
 
 
 # ===========================================================================
@@ -339,11 +427,11 @@ def brand_colors_to_sleep_overrides(colors: list[str]) -> dict[str, str]:
 def create_channel_from_favorite(favorite_id: str) -> dict:
     """频道工坊收藏一键转正为频道实体。
 
-    - 品牌字段整体继承；brand_colors 映射为 sleep 色板 overrides
+    - 品牌字段整体继承；brand_colors 映射写入配置快照 sleep_color_*
     - 频道 id 直接复用收藏 id（素材目录 configs/channel_assets/{id}/ 与
       logo/banner 字段名天然对齐，零迁移）；重复转正幂等（按
-      source_favorite_id 找回已有实体，保留用户编辑过的 overrides）
-    - overrides 预置：频道名（name_en）、独立主题域路径（topics/used）
+      source_favorite_id 找回已有实体，保留用户编辑过的 config/状态）
+    - 新转正：完整配置快照种子（全局深拷贝 + 品牌色 + 身份键）
     """
     favorites = _load_json(CHANNEL_FAVORITES_PATH, {}).get("profiles", [])
     fav = next((p for p in favorites if isinstance(p, dict)
@@ -361,15 +449,13 @@ def create_channel_from_favorite(favorite_id: str) -> dict:
         raise ValueError("收藏缺少 name_en，无法转正为频道")
     profile["source_favorite_id"] = favorite_id
     if existing:
-        # 重复转正：品牌字段刷新自收藏，但 overrides/状态以已有实体为准
-        # （收藏源不带 overrides，直接沿用会把用户编辑抹掉）
+        # 重复转正：品牌字段刷新自收藏，但 config/overrides/状态以已有实体为准
+        # （收藏源不带 config，直接沿用会把用户编辑抹掉）
+        profile["config"] = existing.get("config") or {}
         profile["overrides"] = existing.get("overrides") or {}
         profile["status"] = existing.get("status", "active")
     else:
-        # 新建：品牌色自动映射 + 频道名/独立主题域预置
-        overrides = brand_colors_to_sleep_overrides(profile["brand_colors"])
-        overrides.setdefault("sleep_channel_name", profile["name_en"])
-        overrides.setdefault("topics_file", default_topics_file(base_id))
-        overrides.setdefault("used_topics_file", default_used_topics_file(base_id))
-        profile["overrides"] = _filter_overrides(overrides)
+        # 新建：完整配置快照种子（全局 + 品牌色映射 + 身份键）
+        profile["config"] = _seed_channel_config(
+            base_id, profile["name_en"], profile["brand_colors"])
     return save_channel(profile)
