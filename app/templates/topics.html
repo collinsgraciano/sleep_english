@@ -7,6 +7,9 @@
             <p class="text-sm text-slate-400 mt-1">主题库: {{ topics_file }}</p>
         </div>
         <div class="flex gap-3">
+            {% if page_channel %}
+            <button onclick="importGlobal()" class="px-4 py-2 bg-emerald-600 hover:bg-emerald-500 rounded-lg text-sm text-white">⬇ 从全局导入</button>
+            {% endif %}
             <button onclick="showAddTopic()" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-lg text-sm text-white">+ 添加主题</button>
             <button onclick="showAddCategory()" class="px-4 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg text-sm text-slate-300">+ 新分类</button>
             <button onclick="showAiGen()" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-lg text-sm text-white">✨ AI 生成</button>
@@ -325,6 +328,22 @@ function resetUsedTopics() {
     if (!confirm('重置所有已用主题标记?')) return;
     fetch('/api/topics/used/reset?channel=' + encodeURIComponent(PAGE_CHANNEL), {method: 'POST'})
         .then(r => r.json()).then(data => { if (data.ok) location.reload(); });
+}
+
+// 从全局主题库合并导入当前频道主题库（已存在的自动跳过）
+async function importGlobal() {
+    if (!confirm('把全局主题库合并导入当前频道主题库？\n已存在的主题会自动跳过（按分类合并、跨分类去重）。')) return;
+    try {
+        const r = await fetch('/api/topics/import_global', {
+            method: 'POST', headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(withCh({}))
+        }).then(r => r.json());
+        if (!r.ok) { alert(r.error || '导入失败'); return; }
+        alert(`导入完成：新增 ${r.imported} 个，跳过已存在 ${r.skipped} 个（库共 ${r.total} 个）`);
+        location.reload();
+    } catch (e) {
+        alert('请求失败，请重试');
+    }
 }
 
 // ================= Shared helpers =================

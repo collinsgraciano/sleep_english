@@ -201,6 +201,61 @@ async def api_reset_used(channel: str = ""):
     return {"ok": True}
 
 
+@router.post("/api/topics/import_global")
+async def api_topics_import_global(request: Request):
+    """把全局主题库合并导入当前频道主题库。
+
+    按分类合并 + 跨分类归一化去重（与「添加主题」语义一致），
+    频道库已存在的主题跳过；全局上下文（源=目标）拒绝。
+    返回 {imported, skipped, total, topics}（topics=合并后全库）。
+    """
+    data = await request.json()
+    channel = str((data if isinstance(data, dict) else {}).get("channel", "") or "").strip()
+    if not channel:
+        return JSONResponse({"ok": False, "error": "全局上下文无需导入（请在频道上下文中使用）"}, status_code=400)
+
+    config = _ctx_config(channel)
+    target_file = str(config.get("topics_file", "") or "").strip()
+    source_file = str(load_config().get("topics_file", "") or "").strip()
+    if not target_file or not source_file:
+        return JSONResponse({"ok": False, "error": "未配置主题库文件"}, status_code=400)
+    sp, tp = Path(source_file), Path(target_file)
+    if sp.resolve() == tp.resolve():
+        return JSONResponse({"ok": False, "error": "目标主题库与全局主题库相同，无需导入"}, status_code=400)
+    if not sp.exists():
+        return JSONResponse({"ok": False, "error": f"全局主题库不存在: {source_file}"}, status_code=404)
+    try:
+        source_data = json.loads(sp.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return JSONResponse({"ok": False, "error": "全局主题库文件损坏"}, status_code=500)
+    if not isinstance(source_data, dict) or not source_data:
+        return JSONResponse({"ok": False, "error": "全局主题库为空"}, status_code=400)
+
+    topics_data = _load_topics_data(config)
+    existing_norm = {topics_ai._norm(t) for ts in topics_data.values()
+                     if isinstance(ts, list) for t in ts}
+    imported = skipped = 0
+    for cat, topics in source_data.items():
+        if not isinstance(topics, list):
+            continue
+        bucket = topics_data.setdefault(str(cat), [])
+        bucket_norm = {topics_ai._norm(t) for t in bucket}
+        for t in topics:
+            n = topics_ai._norm(t)
+            if n in existing_norm or n in bucket_norm:
+                skipped += 1
+                continue
+            bucket.append(t)
+            bucket_norm.add(n)
+            existing_norm.add(n)
+            imported += 1
+    if imported:
+        _save_topics_data(target_file, topics_data)
+    total = sum(len(v) for v in topics_data.values() if isinstance(v, list))
+    return {"ok": True, "imported": imported, "skipped": skipped,
+            "total": total, "topics": topics_data}
+
+
 @router.post("/api/topics/ai/generate")
 async def api_topics_ai_generate(request: Request):
     """SSE: AI-generate new topics for a category (or suggest a new category)."""

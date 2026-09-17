@@ -26,6 +26,7 @@ from ..channel_profiles import (
     resolve_topics_files, save_channel, save_channel_config,
     set_channel_status, sync_channel_config,
 )
+from ..config_manager import load_config
 from ..paths import CHANNEL_ASSETS_DIR
 from ..paths import CHANNEL_ASSETS_DIR
 from ..sse import sse_line as _sse, SSE_HEADERS as _SSE_HEADERS

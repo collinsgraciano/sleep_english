@@ -126,6 +126,8 @@
                     class="flex-1 min-w-[160px] bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white">
                 <button onclick="aiGenTopics()" id="btn-tgen"
                     class="px-3 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-lg text-xs text-white">🤖 AI 生成</button>
+                <button onclick="importGlobalTopics()" id="btn-timport"
+                    class="px-3 py-2 bg-emerald-600 hover:bg-emerald-500 rounded-lg text-xs text-white">⬇ 从全局导入</button>
                 <button onclick="addCategory()" class="px-3 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg text-xs text-slate-200">+ 分类</button>
             </div>
             <p id="t-status" class="text-xs text-indigo-300"></p>
@@ -358,6 +360,34 @@ async function saveTopics() {
     st.textContent = '已保存';
     const info = await fetch(`/api/channels/${TOPICS_CID}/topics`).then(r => r.json());
     renderTopicsEditor(info.total || 0, info.unused || 0);
+}
+
+// 从全局主题库合并导入该频道主题库（已存在的自动跳过；服务端已落盘）
+async function importGlobalTopics() {
+    if (!confirm('把全局主题库合并导入该频道主题库？\n已存在的主题会自动跳过（按分类合并、跨分类去重）。')) return;
+    const btn = document.getElementById('btn-timport');
+    const st = document.getElementById('t-status');
+    btn.disabled = true;
+    st.className = 'text-xs text-indigo-300';
+    st.textContent = '导入中...';
+    try {
+        const r = await fetch('/api/topics/import_global', {
+            method: 'POST', headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({channel: TOPICS_CID}),
+        }).then(r => r.json());
+        if (!r.ok) { st.className = 'text-xs text-red-400'; st.textContent = r.error || '导入失败'; return; }
+        TOPICS_DATA = r.topics || TOPICS_DATA;
+        renderTopicsEditor();
+        const info = await fetch(`/api/channels/${TOPICS_CID}/topics`).then(r => r.json());
+        renderTopicsEditor(info.total || 0, info.unused || 0);
+        st.className = 'text-xs text-emerald-400';
+        st.textContent = `导入完成：新增 ${r.imported} 个，跳过已存在 ${r.skipped} 个（库共 ${r.total} 个）`;
+    } catch (e) {
+        st.className = 'text-xs text-red-400';
+        st.textContent = String(e);
+    } finally {
+        btn.disabled = false;
+    }
 }
 
 function addCategory() {

@@ -248,20 +248,47 @@ SYNC_SCOPES: dict[str, tuple[str, ...] | None] = {
 }
 
 
+def _seed_channel_topics(global_topics_file: str, channel_topics_file: str) -> bool:
+    """新频道主题库种子：全局库整体拷贝到频道专属路径（仅当目标不存在）。
+
+    任何 I/O/JSON 异常静默降级（返回 False），不阻塞频道创建；
+    路径为空/相同（异常配置）自动跳过，防止把全局库写成自身。
+    """
+    try:
+        if not global_topics_file or not channel_topics_file:
+            return False
+        gp, tp = Path(global_topics_file), Path(channel_topics_file)
+        if tp.exists() or not gp.exists():
+            return False
+        if gp.resolve() == tp.resolve():
+            return False
+        data = json.loads(gp.read_text(encoding="utf-8"))
+        if not isinstance(data, dict) or not data:
+            return False
+        from .topics_io import save_topics_data
+        save_topics_data(channel_topics_file, data)
+        return True
+    except (json.JSONDecodeError, OSError, ValueError):
+        return False
+
+
 def _seed_channel_config(channel_id: str, name_en: str,
                          brand_colors: list[str]) -> dict[str, Any]:
     """频道配置快照种子：当前全局配置深拷贝 + 品牌色映射 + 身份键。
 
     创建/转正时调用一次；此后频道配置完全独立演化（快照语义）。
+    同时把全局主题库种子到频道专属 topics.json（此后独立演化）。
     """
     from .config_manager import load_mode_config
     cfg = dict(load_mode_config("sleep"))
     cfg.update(brand_colors_to_sleep_overrides(brand_colors))
     cfg["sleep_channel_name"] = name_en
+    global_topics_file = str(cfg.get("topics_file", "") or "").strip()
     cfg["topics_file"] = default_topics_file(channel_id)
     cfg["used_topics_file"] = default_used_topics_file(channel_id)
     cfg["channel_id"] = channel_id
     cfg["structure"] = "sleep"
+    _seed_channel_topics(global_topics_file, cfg["topics_file"])
     return cfg
 
 
