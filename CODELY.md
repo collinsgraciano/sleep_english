@@ -15,7 +15,7 @@ sleep_english/
 │   ├── config_manager.py         # MODES=["sleep"]；PARAM_SPEC 已裁剪至 sleep 生效集；resolve_mcp_tokens/sleep 配色
 │   ├── channel_profiles.py       # 频道矩阵核心：频道实体 CRUD + resolve_run_config 配置合成 + 工坊收藏转正/品牌色→sleep 色板映射
 │   ├── pipeline_service.py       # 后台线程跑 pipeline（_set_env/_build_args/_run_inner；sleep 无角色复用链路；透传 channel_id/音色覆盖/channel_profile）
-│   ├── intro_library.py          # 片头库索引与绑定解析（sleep_intro_video）
+│   ├── intro_library.py          # 片头库索引与绑定解析（2026-09-17 起按频道分库互不影响：channel 空=全局库 configs/intro_library.json，非空=configs/channels/{cid}/intro_library.json+intro_videos/；intro_library.py 提供 videos_dir/intro_file/load_library/save_library/resolve_video_path 全带 channel_id，解析频道库优先→全局库回退）
 │   ├── script_library.py         # 批量脚本（支持 sleep：DEFAULT_LINES sleep=400）
 │   ├── batch_queue_service.py    # 控制台批量队列（队列项含 channel_id/channel_name；_build_config 走 resolve_run_config）
 │   ├── local_batch_service.py    # 运行历史批量 4K/BGM
@@ -69,6 +69,7 @@ sleep_english/
 ## 关键事实
 
 - **频道矩阵·独立完整配置（2026-09-16 二期；三期多开）**：频道实体 `configs/channels/{cid}.json` 内嵌 **config 节 = 整套 PARAM_SPEC 私有快照**（创建/转正时从全局深拷贝种子 + brand_colors→sleep 色板映射 + 身份键），此后完全独立演化；每频道可用不同 LLM Provider/Key（防关联）。**频道上下文 = URL `?channel=` 参数（三期：URL 唯一事实源，多标签页并行操作不同频道，无服务端全局状态）**：dashboard/config/sleep/arrangement/topics 五页面接受 `?channel=` 按频道快照渲染；写 API（/api/config/save·save_all·all·sleep_preview、/api/topics/* 全端点、/api/run/start）显式收 channel 参数（config.py `_ctx/_save_ctx`、topics.py `_ctx_config` helper）；base.html 顶部上下文条为 URL 导航器（切换=增删 channel 参数跳转）并自动改写侧边栏链接保持上下文；矩阵页「⚙ 配置」新标签打开 /config?channel=cid。`sync_channel_config(cid, scope)` 从全局按组回填（all/credentials/content/visual/bgm），**身份键守卫** IDENTITY_SYNC_GUARD（sleep_channel_name/sleep_outro_text/topics_file/used_topics_file/channel_id/structure 永不被同步覆盖）。旧格式频道（仅 overrides 无 config 节）读取时自迁移并惰性写回。队列频道项 `_build_config` 装载频道完整快照再叠 topic/cefr/script_id。一期机制的延续：brand_colors 三色→11 色 sleep_color_* 映射、quick_test 同频道过滤、LLM 缓存键含频道 ctx 哈希、`.thumb_episode.json` 键=cid|topic、频道音色 args.sleep_voice_male/female。quick_config 面板字段清单仍按模式共享（值本身按频道）。并发生成仍受 run_mutex 串行（多频道铺量走矩阵填充+队列）；同频道双标签编辑后写覆盖。YouTube 上传本期不做（youtube_metadata.json 已按频道产出，下期接每频道 OAuth）
+- **片头库按频道分库（2026-09-17）**：intro_videos 页面与全部 /api/intro_videos/* 端点接受频道上下文（?channel=/body/Form，URL 唯一事实源，同 config/topics 惯例）——频道读写自己的独立片头库（configs/channels/{cid}/intro_library.json + intro_videos/{id}/intro.mp4），绑定写频道配置快照 sleep_intro_video；生成/上传的产物、主题色、TTS、BGM 目录、MCP tokens、LLM Provider/Key/模型均按频道快照。全局上下文（无 channel）行为不变（全局库 + mode_sleep.json）。运行解析（pipeline_service._resolve_sleep_intro_video）：config.channel_id 非空时频道库优先、全局库回退 —— 存量频道快照可能继承指向全局片头的历史绑定，回退保证不失效；频道页 use 仅允许绑频道库内 id（隔离），列表返回 used_missing 时前端提示「历史全局绑定」。前端 localStorage 设置/频道名历史键按频道后缀隔离（intro_last_settings__{cid}）；生成/提示词单槽 409 守卫保持全局（TTS/MCP 资源互斥）。不迁移存量全局片头到频道库。
 - 集数徽章 output/sleep/.thumb_episode.json 按主题计数（未迁移旧计数，首集从 1 起）
 - 音色默认按模式分套：VOICE_DEFAULT_MODES=("sleep",)，配置无 modes.sleep 节 → 回退 legacy 平铺键（与原项目行为一致）
 - Kokoro 单句失败自动重试 ×2；qwen/moss 失败回退 kokoro
