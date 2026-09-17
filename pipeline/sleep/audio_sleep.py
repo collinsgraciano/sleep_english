@@ -4,7 +4,8 @@
 a_slow/b_slow（女声慢速——Kokoro 用原生 speed 参数变速不变调，
 Qwen/MOSS 引擎内部 atempo）；AB 连贯（combo）不再预编码中间 mp3 ——
 时长按 a_m + COMBO_GAP + b_f 计算，块合成 filter_complex 内直接拼接
-（少 200 个子进程与一次有损重编码）。另有 intro（频道名播报）/ outro
+（少 200 个子进程与一次有损重编码）。另有 intro（频道名播报，announce=False
+时改为静音占位，见 INTRO_SILENT_SECONDS/.intro_mode）/ outro
 （结束语），均男声（male_rate 速率）。
 跨引擎（kokoro/qwen/moss）复用 tts_pipeline 同款引擎装配 + kokoro 单句回退。
 音频时长写 .durations.json sidecar（mtime+size 校验），resume 免逐文件
@@ -12,6 +13,7 @@ ffprobe 子进程；音频文件保持引擎原生格式，块合成时统一 ar
 """
 import json
 import os
+import subprocess
 import time
 from pathlib import Path
 
@@ -27,6 +29,12 @@ DEFAULT_NEEDED_STEPS = frozenset(PAIR_FILES) | {"combo"}
 
 # 时长 sidecar：{文件名: [mtime_ns, size, 时长秒]}
 _DUR_SIDECAR = ".durations.json"
+
+# 片头播报关闭（announce=False）时 intro_sleep.mp3 为该时长的静音占位，
+# 保持 intro 文件恒存在（load_* 校验 / timeline intro 段时长来源不变）
+INTRO_SILENT_SECONDS = 3.0
+# intro 音轨模式标记：announce=TTS 播报 / silent=静音占位；与请求不符时重做
+_INTRO_MODE_SIDECAR = ".intro_mode"
 
 
 def needed_audio_steps(sequence: list[dict] | None) -> set[str] | None:
@@ -133,6 +141,24 @@ def _usable(path: str) -> bool:
         return False
 
 
+def _intro_mode(audio_dir: Path) -> str:
+    """当前 intro_sleep.mp3 的模式标记（announce/silent；无标记=空串）。"""
+    p = audio_dir / _INTRO_MODE_SIDECAR
+    try:
+        return p.read_text(encoding="utf-8").strip()
+    except OSError:
+        return ""
+
+
+def _synth_silent(path: str, seconds: float) -> None:
+    """生成 seconds 秒静音 mp3（anullsrc，44100Hz 立体声与其它段一致）。"""
+    cmd = ["ffmpeg", "-y", "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo",
+           "-t", f"{seconds:.3f}", "-c:a", "libmp3lame", "-q:a", "4", path]
+    r = subprocess.run(cmd, capture_output=True, text=True)
+    if r.returncode != 0:
+        raise RuntimeError(f"ffmpeg silent intro failed: {(r.stderr or '')[-300:]}")
+
+
 def pair_steps(audio_dir: Path, i: int) -> dict:
     """第 i 组（1-based）各步骤音频路径表（5 个真实文件；combo 为计算时长段）。"""
     base = f"pair_{i:04d}"
@@ -141,17 +167,22 @@ def pair_steps(audio_dir: Path, i: int) -> dict:
 
 
 def load_sleep_audio_results(audio_dir: Path, num_pairs: int,
-                             needed_steps: set[str] | None = None) -> dict | None:
+                             needed_steps: set[str] | None = None,
+                             announce: bool = True) -> dict | None:
     """从已存在文件重建 sleep 音频结果（resume / 完整性校验）。
 
     needed_steps 内全部文件 + intro/outro 齐全才返回，否则 None（交给
     正常生成流程按文件续传）。needed_steps=None 时按全集校验（默认结构）。
     combo 时长 = a_m+COMBO_GAP+b_f（块合成内联拼接，无 combo 中间文件）。
+    announce：请求的片头播报模式；intro_sleep.mp3 的 .intro_mode 标记与之
+    不符时返回 None（resume 场景下切换开关也能按需重做 intro 单句）。
     """
     audio_dir = Path(audio_dir)
     needed = needed_steps or set(DEFAULT_NEEDED_STEPS)
     intro = audio_dir / "intro_sleep.mp3"
     outro = audio_dir / "outro_sleep.mp3"
+    if _intro_mode(audio_dir) != ("announce" if announce else "silent"):
+        return None
     if not (_usable(str(intro)) and _usable(str(outro))):
         return None
     durs = _load_dur_sidecar(audio_dir)
@@ -210,7 +241,8 @@ def prepare_sleep_audio(script: dict, audio_dir: Path, num_pairs: int,
                         channel_name: str = "", outro_text: str = "",
                         voice_male: str = "", voice_female: str = "",
                         stop_check=None,
-                        needed_steps: set[str] | None = None) -> dict:
+                        needed_steps: set[str] | None = None,
+                        announce: bool = True) -> dict:
     """生成全部 sleep 音频（文件级续传）。返回 results dict（见 load_*）。
 
     slow_rate/male_rate 为速率倍率（0.8=八成速），经各引擎 synth_english
@@ -219,6 +251,8 @@ def prepare_sleep_audio(script: dict, audio_dir: Path, num_pairs: int,
     qwen/moss 引擎同样按引擎音色 id 生效。
     needed_steps（needed_audio_steps 结果）：仅合成序列编排消费的步骤文件，
     None=默认结构全集。
+    announce：片头是否 TTS 播报频道名；False=intro 合成静音占位
+    （INTRO_SILENT_SECONDS，.intro_mode 标记切换时按需重做，pair 缓存不受影响）。
     """
     audio_dir = Path(audio_dir)
     audio_dir.mkdir(parents=True, exist_ok=True)
@@ -272,9 +306,16 @@ def prepare_sleep_audio(script: dict, audio_dir: Path, num_pairs: int,
     narration_voice = male_voice
     intro = audio_dir / "intro_sleep.mp3"
     outro = audio_dir / "outro_sleep.mp3"
-    if not _usable(str(intro)):
-        _synth(channel_name or "English with me", narration_voice, str(intro),
-               rate=male_rate_str)
+    # intro 播报模式标记与请求不符（或文件缺失）时重做——单句 TTS / 静音生成，
+    # 均秒级完成；pair 缓存不受影响
+    if not _usable(str(intro)) or _intro_mode(audio_dir) != ("announce" if announce else "silent"):
+        if not announce:
+            _synth_silent(str(intro), INTRO_SILENT_SECONDS)
+        else:
+            _synth(channel_name or "English with me", narration_voice, str(intro),
+                   rate=male_rate_str)
+        (audio_dir / _INTRO_MODE_SIDECAR).write_text(
+            "announce" if announce else "silent", encoding="utf-8")
     if not _usable(str(outro)):
         _synth(outro_text or "Thanks for listening. See you next time!",
                narration_voice, str(outro), rate=male_rate_str)

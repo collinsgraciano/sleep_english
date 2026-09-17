@@ -354,7 +354,8 @@ def _step2_images_tts(args, checkpoint: dict, script: dict, work_dir: Path, dirs
     _sequence = parse_sleep_sequence(str(getattr(args, "sleep_sequence", "") or ""))
     _needed = needed_audio_steps(_sequence)
     loaded = load_sleep_audio_results(audio_dir, int(getattr(args, "sleep_pairs", 200)),
-                                      needed_steps=_needed)
+                                      needed_steps=_needed,
+                                      announce=bool(getattr(args, "sleep_intro_announce", True)))
     if loaded is not None:
         tts_results, image_urls = loaded, {}
         print("  [Resume] sleep 音频已完整，跳过 TTS。")
@@ -371,7 +372,8 @@ def _step2_images_tts(args, checkpoint: dict, script: dict, work_dir: Path, dirs
                 voice_male=str(getattr(args, "sleep_voice_male", "") or ""),
                 voice_female=str(getattr(args, "sleep_voice_female", "") or ""),
                 stop_check=stop_check,
-                needed_steps=_needed))
+                needed_steps=_needed,
+                announce=bool(getattr(args, "sleep_intro_announce", True))))
         except RuntimeError as e:
             if str(e) == "stopped":
                 tts_results["fatal_error"] = "stopped"
@@ -384,6 +386,8 @@ def _step2_images_tts(args, checkpoint: dict, script: dict, work_dir: Path, dirs
     intro_src = str(getattr(args, "sleep_intro_video", "") or "").strip()
     if intro_src and not getattr(args, "sleep_intro", True):
         print("  [Sleep] 片头已关闭（sleep_intro=False）—— 跳过片头视频绑定")
+    elif intro_src and not getattr(args, "sleep_intro_use_library", True):
+        print("  [Sleep] 片头库绑定已关闭（sleep_intro_use_library=False）—— 使用默认片头")
     elif intro_src and not tts_results.get("fatal_error"):
         if os.path.exists(intro_src):
             import shutil
@@ -857,6 +861,10 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument("--sleep-outro-video", default="", help="片尾视频 mp4 路径（片尾库生成后绑定；空=默认静态卡片+结束语播报）")
     parser.add_argument("--sleep-intro", action=argparse.BooleanOptionalAction, default=True,
                         help="是否生成片头（关闭=无 intro 段直接从第一组开始；intro TTS 仍生成以保持缓存完整性）")
+    parser.add_argument("--sleep-intro-use-library", action=argparse.BooleanOptionalAction, default=True,
+                        help="是否使用片头库绑定的片头视频（False=忽略绑定，恒用默认频道名卡片片头）")
+    parser.add_argument("--sleep-intro-announce", action=argparse.BooleanOptionalAction, default=True,
+                        help="默认卡片片头是否 TTS 播报频道名（False=静音卡片 3 秒，不合成播报；对片头库视频无影响）")
     parser.add_argument("--sleep-card-lead", type=float, default=0.3,
                         help="卡片提前量秒数（每组画面先出现 N 秒再开始朗读，0=关闭，默认 0.3，clamp 0-2）")
     parser.add_argument("--sleep-intro-volume-db", type=float, default=0.0,

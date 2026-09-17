@@ -133,6 +133,8 @@ def _resolve_sleep_intro_video(config: dict) -> str:
     path = resolve_video_path(sel, str(config.get("channel_id", "") or "").strip())
     if not path:
         print(f"  [SleepIntro] 片头绑定无效（库中不存在）: {sel} —— 回退默认片头")
+    else:
+        print(f"  [SleepIntro] 片头绑定生效: {sel} → {path}")
     return path
 
 
@@ -501,6 +503,8 @@ class PipelineService:
             sleep_bg_opacity=_cfg_int(config, "sleep_bg_opacity", 20, 0, 100),
             sleep_4k_native=bool(config.get("sleep_4k_native", False)),
             sleep_intro=bool(config.get("sleep_intro", True)),
+            sleep_intro_use_library=bool(config.get("sleep_intro_use_library", True)),
+            sleep_intro_announce=bool(config.get("sleep_intro_announce", True)),
             sleep_card_lead=sleep_card_lead,
             sleep_sequence=str(config.get("sleep_sequence", "") or ""),
             sleep_xfade=bool(config.get("sleep_xfade", False)),
