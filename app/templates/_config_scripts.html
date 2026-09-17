@@ -18,6 +18,68 @@ function toggleSection(btn) {
     }
 }
 
+// --- 字体下拉（type "font"）：自定义路径逃生口 ---
+// select 值不在选项中时 upsert 一个「自定义: 值」选项（预设载入/存量配置兜底）
+function _ensureSelectOption(sel, v) {
+    v = (v || '').trim();
+    if (!v) return;
+    if (Array.from(sel.options).some(o => o.value === v)) return;
+    const opt = document.createElement('option');
+    opt.value = v;
+    opt.textContent = '✏ 自定义: ' + v;
+    opt.setAttribute('data-custom-opt', '');
+    const sentinel = Array.from(sel.options).find(o => o.value === '__custom__');
+    sel.insertBefore(opt, sentinel || null);
+    sel.value = v;
+}
+
+// 选「✏ 自定义路径…」→ 显示并预填路径输入框；选列表字体 → 收起并清理旧自定义项
+document.addEventListener('change', function(e) {
+    const el = e.target;
+    if (!el || el.tagName !== 'SELECT' || !el.hasAttribute('data-field')) return;
+    if (!Array.from(el.options).some(o => o.value === '__custom__')) return;
+    const ci = document.querySelector('[data-font-custom="' + el.getAttribute('data-field') + '"]');
+    if (!ci) return;
+    if (el.value === '__custom__') {
+        const cur = el.querySelector('option[data-custom-opt]');
+        ci.value = cur ? cur.value : '';
+        ci.classList.remove('hidden');
+        ci.focus();
+    } else {
+        ci.classList.add('hidden');
+        const stale = el.querySelector('option[data-custom-opt]');
+        if (stale && stale.value !== el.value) stale.remove();
+    }
+});
+
+// 路径输入 → upsert 自定义选项并选中（保存/预览均读 select 值，无需派发 change）
+document.addEventListener('input', function(e) {
+    const el = e.target;
+    if (!el || !el.hasAttribute('data-font-custom')) return;
+    const key = el.getAttribute('data-font-custom');
+    const sel = document.querySelector('[data-field="' + key + '"]');
+    if (!sel) return;
+    const path = (el.value || '').trim();
+    let opt = sel.querySelector('option[data-custom-opt]');
+    if (!path) {
+        if (opt) opt.remove();
+        sel.value = '';
+    } else {
+        if (!opt) {
+            opt = document.createElement('option');
+            opt.setAttribute('data-custom-opt', '');
+            const sentinel = Array.from(sel.options).find(o => o.value === '__custom__');
+            sel.insertBefore(opt, sentinel || null);
+        }
+        opt.value = path;
+        opt.textContent = '✏ 自定义: ' + path;
+        sel.value = path;
+    }
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(saveConfig, 1000);  // 输入框无 data-field，手动走防抖保存
+    scheduleSleepPreview();
+});
+
 function toggleLLMFields(provider) {
     const showOpenAI = provider !== 'sensenova' && provider !== 'gemini';
     document.querySelectorAll('.config-field').forEach(f => {
@@ -99,6 +161,10 @@ function collectConfig() {
             config[key] = el.checked;
         } else if (el.type === 'number') {
             config[key] = el.value === '' ? '' : parseFloat(el.value);
+        } else if (el.tagName === 'SELECT' && el.value === '__custom__') {
+            // 字体下拉哨兵值：取自定义路径输入框（空=回自动），不落哨兵本身
+            const ci = document.querySelector('[data-font-custom="' + key + '"]');
+            config[key] = ci ? (ci.value || '').trim() : '';
         } else {
             config[key] = el.value;
         }
@@ -120,6 +186,7 @@ function fillForm(config) {
                 el.checked = config[key];
             } else {
                 el.value = config[key];
+                if (el.tagName === 'SELECT') _ensureSelectOption(el, String(config[key] ?? ''));
             }
         }
     });
@@ -411,7 +478,12 @@ function _collectSleepFields() {
     document.querySelectorAll('[data-field]').forEach(el => {
         const key = el.getAttribute('data-field');
         if (key && key.startsWith('sleep_')) {
-            payload[key] = (el.type === 'checkbox') ? el.checked : el.value;
+            if (el.tagName === 'SELECT' && el.value === '__custom__') {
+                const ci = document.querySelector('[data-font-custom="' + key + '"]');
+                payload[key] = ci ? (ci.value || '').trim() : '';
+            } else {
+                payload[key] = (el.type === 'checkbox') ? el.checked : el.value;
+            }
         }
     });
     return payload;

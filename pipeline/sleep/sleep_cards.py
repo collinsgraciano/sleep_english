@@ -5,6 +5,9 @@
 右上圆角「EN」徽标 → A 句块（深棕 EN / 橄榄绿 IPA / 深灰繁中）→
 B 句块（橙 EN / IPA / 繁中）→ 左下粉色发光序号。
 IPA 用 cambria（msyh 渲染 IPA 会变豆腐块），EN 句子用 Nunito Bold（回退 msyhbd）。
+频道名按文字内容智能选字体（font_scanner 字形覆盖检测）：英文走手写体链，
+中文/emoji 自动切到含对应字形的字体 —— Pillow 不做浏览器式逐字回退，
+单字体硬画会把无字形字符渲染成豆腐块 □。
 
 分辨率自适应：所有渲染函数按 scale = w / 1280 缩放全部绝对像素常量
 （字号/边距/圆角/叶片/光晕），原生 4K（3840x2160，scale=3）时文字像素级
@@ -15,14 +18,19 @@ from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
+from font_scanner import covered_count, font_covers
 from media_utils import FONT_EN, FONT_ZH, FONT_PH, TARGET_W, TARGET_H
 
 _FONTS_DIR = Path(__file__).resolve().parent.parent / "fonts"
 _NUNITO = str(_FONTS_DIR / "Nunito-Bold.ttf")
 _FONT_EN_CARD = _NUNITO if os.path.exists(_NUNITO) else FONT_EN
+# 频道名候选链：手写体 → 符号/emoji → 中文可用字体（FONT_EN=msyhbd /
+# NotoCJK-Bold）。每字符取链上第一个含其字形的字体，全链皆无才落豆腐。
 _FONT_HANDWRITE_CANDIDATES = [
     r"C:\Windows\Fonts\Inkfree.ttf",
     r"C:\Windows\Fonts\segoepr.ttf",
+    r"C:\Windows\Fonts\seguisym.ttf",
+    r"C:\Windows\Fonts\seguiemj.ttf",
 ]
 
 # 默认主题（与 configs sleep_color_* 配置键一一对应；hex 取自参考截图采样）
@@ -81,6 +89,11 @@ def build_theme(cfg: dict) -> dict:
             theme[tk] = v
     theme["show_leaves"] = bool(cfg.get("sleep_show_leaves", True))
     theme["handwrite_font"] = str(cfg.get("sleep_handwrite_font", "") or "").strip()
+    # 频道名字体粗细（描边假粗 0-4，任意字体生效；0=原样逐像素不变）
+    try:
+        theme["handwrite_weight"] = min(4, max(0, int(float(cfg.get("sleep_handwrite_weight", 0) or 0))))
+    except (TypeError, ValueError):
+        theme["handwrite_weight"] = 0
     # 背景图（低透明度衬底）：开关 + 固定路径 + 不透明度（渲染时路径无效自动忽略）
     theme["bg_image"] = bool(cfg.get("sleep_bg_image", False))
     theme["bg_image_path"] = str(cfg.get("sleep_bg_image_path", "") or "").strip()
@@ -110,14 +123,53 @@ def build_theme(cfg: dict) -> dict:
     return theme
 
 
-def _handwrite_path(theme: dict) -> str:
+def _channel_font_chain(theme: dict) -> list[str]:
+    """频道名字体候选链：自定义 → 手写体 → 符号/emoji → 中文可用字体。
+
+    fontTools 缺失时 font_covers 恒 True（链退化为首候选=旧行为）；
+    文件缺失/损坏恒 False（链上自动跳过，不会把坏路径交给 Pillow）。
+    """
     custom = str(theme.get("handwrite_font", "") or "").strip()
+    chain: list[str] = []
     if custom and os.path.exists(custom):
-        return custom
-    for p in _FONT_HANDWRITE_CANDIDATES:
-        if os.path.exists(p):
+        chain.append(custom)
+    chain.extend(_FONT_HANDWRITE_CANDIDATES)
+    chain.extend([FONT_EN, FONT_ZH])
+    seen: set[str] = set()
+    return [p for p in chain if not (p in seen or seen.add(p))]
+
+
+def _channel_font_runs(theme: dict, text: str) -> list[list]:
+    """频道名按字形覆盖切分：[[片段, 字体路径], ...]（保持原文字顺序）。
+
+    每字符取链上第一个含其字形的字体；全链皆无的字符归主字体
+    （首候选，极生僻字符理论仍豆腐，系统内已无字体可救）。
+    """
+    chain = _channel_font_chain(theme)
+    primary = chain[0]
+    runs: list[list] = []
+    for ch in text:
+        path = next((p for p in chain if font_covers(p, ch)), primary)
+        if runs and runs[-1][1] == path:
+            runs[-1][0] += ch
+        else:
+            runs.append([ch, path])
+    return runs
+
+
+def _handwrite_path(theme: dict, text: str = "") -> str:
+    """频道名字体链的「单字体最优解」：全覆盖者优先按序，否则取覆盖最多者。
+
+    intro_video 片头文字层（单字体 sprite）沿用；卡片渲染走
+    _channel_font_runs 逐段混排。text 为空=链首（等价旧行为）。
+    """
+    chain = _channel_font_chain(theme)
+    if not text or not text.strip():
+        return chain[0]
+    for p in chain:
+        if font_covers(p, text):
             return p
-    return FONT_EN
+    return max(chain, key=lambda p: covered_count(p, text))
 
 
 def _tracked_bbox_w(draw: ImageDraw.ImageDraw, text: str, font,
@@ -368,13 +420,31 @@ def _draw_card_base(theme: dict, w: int, h: int,
                                       "x1": int(w * 0.972), "y1": int(h * 0.972)}
 
 
+def _stroke_px(weight: int, size_px: int, s: float) -> int:
+    """粗细档位 → 描边像素：weight×scale，并按字号的 1/18 封顶。
+
+    描边假粗在小字号场景过度会糊死汉字计数器（36px 中文 3px 已不可读），
+    故小字号高档位自动收敛到可读上限；大字号（片头卡 100px）保留全档位。
+    """
+    if weight <= 0:
+        return 0
+    return min(int(weight * s), max(1, int(size_px) // 18))
+
+
 def _draw_channel(draw: ImageDraw.ImageDraw, card: dict, theme: dict,
                   channel_name: str, s: float = 1.0) -> None:
+    """左上频道名：按文字内容智能选字体 + 可选描边假粗（weight 0-4）。"""
     if not channel_name:
         return
-    font = _cached_font(_handwrite_path(theme), int(36 * s))
-    draw.text((card["x0"] + int(40 * s), card["y0"] + int(26 * s)), channel_name,
-              font=font, fill=_hex_rgb(theme["channel_text"], (90, 107, 82)))
+    base_size = int(36 * s)
+    stroke = _stroke_px(int(theme.get("handwrite_weight", 0)), base_size, s)
+    fill = _hex_rgb(theme["channel_text"], (90, 107, 82))
+    x, y = card["x0"] + int(40 * s), card["y0"] + int(26 * s)
+    for part, path in _channel_font_runs(theme, channel_name):
+        font = _cached_font(path, base_size)
+        draw.text((x, y), part, font=font, fill=fill,
+                  stroke_width=stroke, stroke_fill=fill)
+        x += draw.textlength(part, font=font)
 
 
 def _draw_badge(draw: ImageDraw.ImageDraw, card: dict, theme: dict,
@@ -438,13 +508,37 @@ def render_intro_card(theme: dict, out_path: str,
     s = w / float(TARGET_W)
     img, draw, card = _draw_card_base(theme, w, h, s)
     _draw_badge(draw, card, theme, badge_text, s)
-    hw_font = _fit_font(draw, channel_name, _handwrite_path(theme),
-                        int(100 * s), int(40 * s), w - int(320 * s))
-    box = draw.textbbox((0, 0), channel_name, font=hw_font)
-    draw.text(((w - (box[2] - box[0])) / 2,
-               h / 2 - (box[3] - box[1]) / 2 - int(40 * s)),
-              channel_name, font=hw_font,
-              fill=_hex_rgb(theme["channel_text"], (90, 107, 82)))
+    if channel_name:
+        fill = _hex_rgb(theme["channel_text"], (90, 107, 82))
+        weight = int(theme.get("handwrite_weight", 0))
+        runs = _channel_font_runs(theme, channel_name)
+        # 描边按初始字号估（封顶随字号；缩号后重算一次用于绘制）
+        stroke = _stroke_px(weight, int(100 * s), s)
+        max_w = w - int(320 * s) - 2 * stroke  # 描边两侧外扩，宽度预算等量收缩
+        size, min_size = int(100 * s), int(40 * s)
+        fonts = [(t, _cached_font(p, size)) for t, p in runs]
+        while size > min_size and sum(draw.textlength(t, font=f)
+                                      for t, f in fonts) > max_w:
+            size -= 4
+            fonts = [(t, _cached_font(p, size)) for t, p in runs]
+        stroke = _stroke_px(weight, fonts[0][1].size, s)
+        if len(fonts) == 1 and not stroke:
+            # 单字体无描边：保持历史 bbox 居中（默认英文频道名逐像素一致）
+            part, f = fonts[0]
+            box = draw.textbbox((0, 0), part, font=f)
+            draw.text(((w - (box[2] - box[0])) / 2,
+                       h / 2 - (box[3] - box[1]) / 2 - int(40 * s)),
+                      part, font=f, fill=fill)
+        else:
+            # 多字体（中英/emoji 混排）或带描边：按 advance 总宽居中逐段绘制
+            total = sum(draw.textlength(t, font=f) for t, f in fonts)
+            x = (w - total) / 2
+            box = draw.textbbox((0, 0), fonts[0][0], font=fonts[0][1])
+            y = h / 2 - (box[3] - box[1]) / 2 - int(40 * s)
+            for part, f in fonts:
+                draw.text((x, y), part, font=f, fill=fill,
+                          stroke_width=stroke, stroke_fill=fill)
+                x += draw.textlength(part, font=f)
     sub_font = _cached_font(FONT_ZH, int(34 * s))
     sub = "閉上眼睛 · 輕鬆聽"
     box = draw.textbbox((0, 0), sub, font=sub_font)

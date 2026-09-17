@@ -31,6 +31,9 @@ configs/ai_test_config.json
 # Quick-config panel field selection per mode (console user preference)
 configs/quick_config.json
 
+# Font scan disk cache for config-page dropdown (machine-specific paths)
+configs/font_scan_cache.json
+
 # Intro video library (sleep mode 10s intros, generated assets)
 configs/intro_videos/
 configs/intro_library.json

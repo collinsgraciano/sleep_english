@@ -454,6 +454,7 @@ class PipelineService:
             sleep_voice_female=str(config.get("sleep_voice_female", "") or ""),
             sleep_show_leaves=bool(config.get("sleep_show_leaves", True)),
             sleep_handwrite_font=str(config.get("sleep_handwrite_font", "") or ""),
+            sleep_handwrite_weight=_cfg_int(config, "sleep_handwrite_weight", 0, 0, 4),
             sleep_color_bg_top=str(config.get("sleep_color_bg_top", "") or ""),
             sleep_color_bg_bottom=str(config.get("sleep_color_bg_bottom", "") or ""),
             sleep_color_card=str(config.get("sleep_color_card", "") or ""),

@@ -89,6 +89,58 @@
                     </select>
                     {% if spec.help %}<p class="text-xs text-slate-500 mt-1">{{ spec.help }}</p>{% endif %}
 
+                    {% elif spec.type == 'font' %}
+                    {# 字体下拉：自动（智能回退）+ 分组列表 + 自定义路径逃生口（JS 见 _config_scripts.html） #}
+                    {% set ns = namespace(inlist=false) %}
+                    {% if sleep_fonts %}
+                        {% for grp in ['recommended', 'project', 'cjk', 'other'] %}
+                            {% for f in sleep_fonts[grp] %}{% if f.path == value %}{% set ns.inlist = true %}{% endif %}{% endfor %}
+                        {% endfor %}
+                    {% endif %}
+                    <label class="block text-xs text-slate-400 mb-1">{{ spec.label }}</label>
+                    <select data-field="{{ key }}"
+                        class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white focus:border-indigo-500 focus:outline-none">
+                        <option value="" {% if not value %}selected{% endif %}>🤖 自动（按频道名文字智能回退，推荐）</option>
+                        {% if value and not ns.inlist %}
+                        <option value="{{ value }}" selected data-custom-opt>✏ 自定义: {{ value }}</option>
+                        {% endif %}
+                        {% if sleep_fonts %}
+                        {% if sleep_fonts.recommended %}
+                        <optgroup label="✍️ 推荐手写体">
+                            {% for f in sleep_fonts.recommended %}
+                            <option value="{{ f.path }}" {% if value == f.path %}selected{% endif %}>{{ f.name }}{% if f.cjk %}〔中〕{% endif %}</option>
+                            {% endfor %}
+                        </optgroup>
+                        {% endif %}
+                        {% if sleep_fonts.project %}
+                        <optgroup label="📦 内置字体">
+                            {% for f in sleep_fonts.project %}
+                            <option value="{{ f.path }}" {% if value == f.path %}selected{% endif %}>{{ f.name }}{% if f.cjk %}〔中〕{% endif %}</option>
+                            {% endfor %}
+                        </optgroup>
+                        {% endif %}
+                        {% if sleep_fonts.cjk %}
+                        <optgroup label="🈶 含中文字形">
+                            {% for f in sleep_fonts.cjk %}
+                            <option value="{{ f.path }}" {% if value == f.path %}selected{% endif %}>{{ f.name }}</option>
+                            {% endfor %}
+                        </optgroup>
+                        {% endif %}
+                        {% if sleep_fonts.other %}
+                        <optgroup label="🖥️ 系统字体（不含中文）">
+                            {% for f in sleep_fonts.other %}
+                            <option value="{{ f.path }}" {% if value == f.path %}selected{% endif %}>{{ f.name }}</option>
+                            {% endfor %}
+                        </optgroup>
+                        {% endif %}
+                        {% endif %}
+                        <option value="__custom__">✏ 自定义路径…</option>
+                    </select>
+                    <input type="text" data-font-custom="{{ key }}" value="{% if value and not ns.inlist %}{{ value }}{% endif %}"
+                        placeholder="字体文件完整路径（.ttf / .ttc / .otf）"
+                        class="hidden w-full mt-2 bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-xs text-white font-mono focus:border-indigo-500 focus:outline-none">
+                    {% if spec.help %}<p class="text-xs text-slate-500 mt-1">{{ spec.help }}</p>{% endif %}
+
                     {% elif spec.type == 'textarea' %}
                     <label class="block text-xs text-slate-400 mb-1">{{ spec.label }}</label>
                     <textarea data-field="{{ key }}" rows="4"

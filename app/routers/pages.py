@@ -84,6 +84,16 @@ def _config_page_context(mode: str, channel: str = "") -> dict:
         sleep_color_defaults = color_defaults()
     except Exception:
         sleep_color_defaults = {}
+    # 字体列表参数（type "font"）懒扫描注入：推荐手写/内置/含中文/系统分组
+    # （font_scanner 进程+磁盘两级缓存，重复进页秒回）；无 font 字段页面不触发
+    if any(s.get("type") == "font" for s in mode_spec.values()):
+        try:
+            from font_scanner import scan_fonts
+            sleep_fonts = scan_fonts()
+        except Exception:
+            sleep_fonts = {"recommended": [], "project": [], "cjk": [], "other": []}
+    else:
+        sleep_fonts = None
     return {
         "config": config,
         "params": PARAM_SPEC,
@@ -93,6 +103,7 @@ def _config_page_context(mode: str, channel: str = "") -> dict:
         "mode": mode,
         "mode_labels": MODE_LABELS,
         "sleep_color_defaults": sleep_color_defaults,
+        "sleep_fonts": sleep_fonts,
         # 自定义 Provider 模型列表（不含 api_key 等敏感字段；去重保持顺序）
         "custom_providers": [
             {"id": p.get("id", ""), "name": p.get("name", ""),
