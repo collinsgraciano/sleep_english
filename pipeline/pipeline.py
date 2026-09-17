@@ -397,6 +397,22 @@ def _step2_images_tts(args, checkpoint: dict, script: dict, work_dir: Path, dirs
         else:
             print(f"  [Sleep] WARNING: 片头视频不存在: {intro_src} —— 回退默认片头")
 
+    # 片尾库绑定：outro 视频拷入运行目录，timeline outro 段时长随视频
+    # （outro TTS 照旧生成，音频完整性校验不变；绑定后 compose 不再消费它）
+    outro_src = str(getattr(args, "sleep_outro_video", "") or "").strip()
+    if outro_src and not tts_results.get("fatal_error"):
+        if os.path.exists(outro_src):
+            import shutil
+            outro_dst = work_dir / "outro_video.mp4"
+            if not outro_dst.exists():
+                shutil.copy2(outro_src, outro_dst)
+            tts_results["outro_video"] = str(outro_dst)
+            tts_results["outro_dur"] = _get_audio_duration(str(outro_dst))
+            print(f"  [Sleep] Outro video bound: {outro_dst.name} "
+                  f"({tts_results['outro_dur']:.1f}s)")
+        else:
+            print(f"  [Sleep] WARNING: 片尾视频不存在: {outro_src} —— 回退默认片尾")
+
     # 背景图（增强功能，失败不中断运行）：固定路径优先，留空按主题 AI 生成；
     # 产物 images/sleep_bg.png，Step 5 build_theme 注入后卡片低透明度混入
     if getattr(args, "sleep_bg_image", False) and not quick_test \
@@ -651,6 +667,7 @@ def _step5_compose(args, checkpoint: dict, script: dict, work_dir: Path, dirs: d
         outro_text=str(getattr(args, "sleep_outro_text", "") or ""),
         num_pairs=int(getattr(args, "sleep_pairs", 200)),
         intro_video=str(tts_results.get("intro_video", "") or ""),
+        outro_video=str(tts_results.get("outro_video", "") or ""),
         intro_volume_db=float(getattr(args, "sleep_intro_volume_db", 0.0) or 0.0),
         outro_volume_db=float(getattr(args, "sleep_outro_volume_db", 0.0) or 0.0),
         native_4k=bool(getattr(args, "sleep_4k_native", False)),
@@ -837,6 +854,7 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument("--sleep-sequence", default="", help="组内步骤序列 JSON（留空=默认结构 a_m→a_slow→b_m→b_slow→combo；建议用 Web「😴 Sleep 睡前短句」页的可视化编辑器修改）")
     parser.add_argument("--sleep-channel-name", default="English with me", help="卡片/片头频道名（同步作 TTS 播报）")
     parser.add_argument("--sleep-intro-video", default="", help="片头视频 mp4 路径（片头库生成后绑定；空=默认静态卡片+频道名播报）")
+    parser.add_argument("--sleep-outro-video", default="", help="片尾视频 mp4 路径（片尾库生成后绑定；空=默认静态卡片+结束语播报）")
     parser.add_argument("--sleep-intro", action=argparse.BooleanOptionalAction, default=True,
                         help="是否生成片头（关闭=无 intro 段直接从第一组开始；intro TTS 仍生成以保持缓存完整性）")
     parser.add_argument("--sleep-card-lead", type=float, default=0.3,

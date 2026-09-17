@@ -183,8 +183,9 @@ def compose_sleep(work_dir: str, timeline: list[dict], script: dict,
                   audio_results: dict, cards_dir: str, theme: dict,
                   channel_name: str = "English with me", badge_text: str = "EN",
                   outro_text: str = "", num_pairs: int = 0,
-                  intro_video: str = "", intro_volume_db: float = 0.0,
-                  outro_volume_db: float = 0.0, native_4k: bool = False,
+                  intro_video: str = "", outro_video: str = "",
+                  intro_volume_db: float = 0.0, outro_volume_db: float = 0.0,
+                  native_4k: bool = False,
                   card_lead: float = 0.0, xfade_sec: float = 0.0,
                   progress_cb=None, stop_check=None) -> str:
     """合成 sleep 成片。返回最终 mp4 路径（videos/{safe}.mp4）。
@@ -241,10 +242,12 @@ def compose_sleep(work_dir: str, timeline: list[dict], script: dict,
         head = block_segs[0]
         t = head.get("type", "")
         out_path = str(tmp_dir / "blocks" / f"block_{bi:04d}.mp4")
-        # 绑定片头视频：intro 块整段转码该片（音画随片头自带 BGM/播报）
+        # 绑定片头/片尾视频：intro/outro 块整段转码该片（音画随视频自带 BGM/播报）
         is_intro_video = (t == "intro" and intro_video
                           and os.path.exists(intro_video))
-        if not is_intro_video:
+        is_outro_video = (t == "outro" and outro_video
+                          and os.path.exists(outro_video))
+        if not (is_intro_video or is_outro_video):
             if t == "intro":
                 card = cards["intro"]
             elif t == "outro":
@@ -256,6 +259,9 @@ def compose_sleep(work_dir: str, timeline: list[dict], script: dict,
                 if is_intro_video:
                     _build_video_block(intro_video, block_segs, out_path, vf,
                                        volume_db=intro_volume_db)
+                elif is_outro_video:
+                    _build_video_block(outro_video, block_segs, out_path, vf,
+                                       volume_db=outro_volume_db)
                 else:
                     _build_block(card, block_segs, audio_results, out_path, vf,
                                  lead=card_lead)
@@ -266,6 +272,9 @@ def compose_sleep(work_dir: str, timeline: list[dict], script: dict,
                 if is_intro_video:
                     _build_video_block(intro_video, block_segs, out_path, vf,
                                        volume_db=intro_volume_db)
+                elif is_outro_video:
+                    _build_video_block(outro_video, block_segs, out_path, vf,
+                                       volume_db=outro_volume_db)
                 else:
                     _build_block(card, block_segs, audio_results, out_path, vf,
                                  lead=card_lead)

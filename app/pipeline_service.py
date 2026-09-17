@@ -136,6 +136,22 @@ def _resolve_sleep_intro_video(config: dict) -> str:
     return path
 
 
+def _resolve_sleep_outro_video(config: dict) -> str:
+    """sleep_outro_video 配置（片尾库 outro_id 或 mp4 绝对路径）→ 文件路径。
+
+    频道运行（config.channel_id 非空）按频道库优先、全局库回退解析。
+    绑定无效（两库均不存在等）回退空串 = 默认片尾（静态卡片 + 结束语播报）。
+    """
+    sel = str(config.get("sleep_outro_video", "") or "").strip()
+    if not sel:
+        return ""
+    from .outro_library import resolve_video_path
+    path = resolve_video_path(sel, str(config.get("channel_id", "") or "").strip())
+    if not path:
+        print(f"  [SleepOutro] 片尾绑定无效（库中不存在）: {sel} —— 回退默认片尾")
+    return path
+
+
 def _channel_ctx(channel_id: str) -> dict | None:
     """channel_id → LLM 品牌上下文（脚本标题/简介/选题贴合频道定位）。
 
@@ -530,6 +546,7 @@ class PipelineService:
             moss_tts_text_temperature=config.get("moss_tts_text_temperature", 1.0),
             moss_tts_greedy=bool(config.get("moss_tts_greedy", False)),
             sleep_intro_video=_resolve_sleep_intro_video(config),
+            sleep_outro_video=_resolve_sleep_outro_video(config),
             bgm_mix=bool(config.get("bgm_mix", False)),
             bgm_music_dir=str(config.get("bgm_music_dir", "")
                               or Path(__file__).parent.parent / "bgm_music"),
