@@ -65,6 +65,10 @@
                 {% if active_page == 'channels' %}bg-indigo-600 text-white{% else %}text-slate-300 hover:bg-slate-700{% endif %}">
                 <span class="text-lg">🎞️</span> 频道矩阵
             </a>
+            <a href="/workspace" class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm
+                {% if active_page == 'workspace' %}bg-indigo-600 text-white{% else %}text-slate-300 hover:bg-slate-700{% endif %}">
+                <span class="text-lg">🪟</span> 多频道工作台
+            </a>
             <a href="/intro_videos" class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm
                 {% if active_page == 'intro_videos' %}bg-indigo-600 text-white{% else %}text-slate-300 hover:bg-slate-700{% endif %}">
                 <span class="text-lg">🌙</span> 片头库
@@ -116,6 +120,12 @@
     document.querySelectorAll('aside a.nav-link').forEach(a => {
         a.href = withChannel(a.href);
     });
+
+    // 多频道工作台的 iframe 里点侧边栏「多频道工作台」→ 顶层跳转，避免工作台嵌套
+    if (window.self !== window.top) {
+        const wsLink = document.querySelector('aside a[href^="/workspace"]');
+        if (wsLink) wsLink.target = '_top';
+    }
 
     fetch('/api/channels/context').then(r => r.json()).then(d => {
         const channels = d.channels || [];

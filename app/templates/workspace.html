@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多频道工作台</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/static/css/style.css?v=2">
+    <style>
+        /* 页签条细滚动条 */
+        #tab-strip::-webkit-scrollbar { height: 4px; }
+        #tab-strip::-webkit-scrollbar-thumb { background: #475569; border-radius: 2px; }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-200 h-screen flex flex-col overflow-hidden">
+    <!-- 顶栏：返回完整应用 + 页签条 + 添加页签 -->
+    <header class="h-12 shrink-0 bg-slate-800 border-b border-slate-700 flex items-center gap-2 px-3">
+        <a href="/" class="text-xs text-slate-400 hover:text-white shrink-0 px-2 py-1.5 rounded-lg hover:bg-slate-700">← 返回完整应用</a>
+        <div id="tab-strip" class="flex-1 flex items-center gap-1.5 overflow-x-auto py-1"></div>
+        <div class="relative shrink-0">
+            <button onclick="toggleAddMenu(event)"
+                class="text-xs bg-indigo-600 hover:bg-indigo-500 text-white px-3 py-1.5 rounded-lg">＋ 添加页签</button>
+            <div id="add-menu" class="hidden absolute right-0 top-full mt-1 w-64 max-h-80 overflow-y-auto bg-slate-800 border border-slate-600 rounded-lg shadow-xl z-50 py-1"></div>
+        </div>
+    </header>
+
+    <!-- iframe 容器：一个页签 = 一个频道 = 一个常驻 iframe（?channel= 事实源），
+         display 切换显隐 → 文档不销毁，表单/滚动/HTMX 状态全保留 -->
+    <main id="pane-area" class="flex-1 relative bg-slate-950">
+        <div id="empty-state" class="absolute inset-0 flex flex-col items-center justify-center gap-3 text-slate-500">
+            <span class="text-5xl">🪟</span>
+            <p class="text-sm">还没有打开任何频道页签</p>
+            <button onclick="toggleAddMenu(event)" class="text-xs bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-lg">＋ 添加频道页签</button>
+            <p class="text-[11px] text-slate-600">每个页签一个独立频道（互不干扰），切换后页面状态保留；页签内可用侧边栏自由切换各页面</p>
+        </div>
+    </main>
+
+<script>
+// 多频道工作台：页签 = 频道上下文的常驻 iframe。iframe load 时回读
+// contentWindow.location（同源）同步页签的频道/页面 —— 用户在 iframe 内
+// 用上下文条换频道或点侧边栏换页，页签条自动跟随。
+(function () {
+    const LS_KEY = 'se_ws_tabs';
+    // 页面键 ↔ 路径 / 徽标（'' = 控制台 dashboard；与五个频道感知页一一对应）
+    const PAGE_ROUTES = { '': '/', 'sleep': '/sleep', 'arrangement': '/arrangement',
+                          'config': '/config', 'topics': '/topics' };
+    const PAGE_LABELS = { '': '控制台', 'sleep': '画面', 'arrangement': '编排',
+                          'config': '配置', 'topics': '主题' };
+    const PATH_TO_PAGE = {};
+    Object.entries(PAGE_ROUTES).forEach(([k, p]) => { PATH_TO_PAGE[p] = k; });
+
+    let channels = [];   // /api/channels/context 清单（标题数据源）
+    let tabs = [];       // [{id, cid, page, loading}]
+    let activeId = null;
+    let nextId = 1;
+    const iframes = new Map();  // tabId → iframe
+
+    const strip = document.getElementById('tab-strip');
+    const area = document.getElementById('pane-area');
+    const emptyState = document.getElementById('empty-state');
+    const addMenu = document.getElementById('add-menu');
+
+    function channelName(cid) {
+        if (!cid) return '🏠 全局默认';
+        const c = channels.find(x => x.id === cid);
+        if (c) return '🎞️ ' + c.name_en + (c.status !== 'active' ? '（paused）' : '');
+        return '🎞️ ' + cid + '（已删除）';
+    }
+
+    function esc(s) { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+
+    function buildUrl(cid, page) {
+        const path = PAGE_ROUTES[page] || '/';
+        return cid ? path + '?channel=' + encodeURIComponent(cid) : path;
+    }
+
+    function save() {
+        localStorage.setItem(LS_KEY, JSON.stringify({ tabs: tabs, activeId: activeId, nextId: nextId }));
+    }
+
+    function load() {
+        try {
+            const d = JSON.parse(localStorage.getItem(LS_KEY) || 'null');
+            if (d && Array.isArray(d.tabs)) {
+                tabs = d.tabs.filter(t => t && typeof t.id === 'number');
+                activeId = (typeof d.activeId === 'number') ? d.activeId : null;
+                nextId = d.nextId || (tabs.reduce((m, t) => Math.max(m, t.id), 0) + 1);
+            }
+        } catch (e) { tabs = []; activeId = null; nextId = 1; }
+    }
+
+    function makeIframe(tab) {
+        const f = document.createElement('iframe');
+        f.src = buildUrl(tab.cid, tab.page);
+        f.className = 'absolute inset-0 w-full h-full border-0 bg-slate-900';
+        f.style.display = 'none';
+        f.addEventListener('load', () => {
+            tab.loading = false;
+            try {
+                const loc = f.contentWindow.location;
+                const params = new URLSearchParams(loc.search);
+                tab.cid = params.get('channel') || '';
+                if (loc.pathname in PATH_TO_PAGE) tab.page = PATH_TO_PAGE[loc.pathname];
+            } catch (e) { /* 异常时保持页签原状 */ }
+            renderTabs(); save();
+        });
+        area.appendChild(f);
+        return f;
+    }
+
+    function renderTabs() {
+        strip.innerHTML = '';
+        emptyState.style.display = tabs.length ? 'none' : 'flex';
+        tabs.forEach(t => {
+            const active = t.id === activeId;
+            const el = document.createElement('div');
+            el.className = 'group flex items-center gap-1.5 shrink-0 max-w-[240px] px-2.5 py-1.5 rounded-lg text-xs cursor-pointer border ' +
+                (active ? 'bg-indigo-600 border-indigo-500 text-white'
+                        : 'bg-slate-900 border-slate-700 text-slate-300 hover:border-slate-500');
+            el.title = channelName(t.cid) + ' · ' + (PAGE_LABELS[t.page] || '');
+            el.onclick = () => activate(t.id);
+            el.innerHTML =
+                (t.loading ? '<span class="animate-spin inline-block w-3 h-3 border-2 border-current border-t-transparent rounded-full shrink-0"></span>' : '') +
+                '<span class="truncate">' + esc(channelName(t.cid)) + '</span>' +
+                '<span class="text-[10px] px-1 py-0.5 rounded shrink-0 ' + (active ? 'bg-indigo-500 text-white' : 'bg-slate-700 text-slate-300') + '">' +
+                    esc(PAGE_LABELS[t.page] || '') + '</span>' +
+                '<button class="ml-0.5 w-4 h-4 leading-none rounded shrink-0 hover:bg-red-500/80 text-slate-400 hover:text-white" ' +
+                    'title="关闭页签" onclick="event.stopPropagation(); wsClose(' + t.id + ')">×</button>';
+            strip.appendChild(el);
+            if (!iframes.has(t.id)) iframes.set(t.id, makeIframe(t));
+        });
+        // 清掉已关闭页签的 iframe
+        Array.from(iframes.keys()).forEach(id => {
+            if (!tabs.some(t => t.id === id)) { iframes.get(id).remove(); iframes.delete(id); }
+        });
+    }
+
+    function activate(id) {
+        activeId = id;
+        iframes.forEach((f, tid) => { f.style.display = (tid === id) ? '' : 'none'; });
+        renderTabs(); save();
+    }
+
+    function openTab(cid) {
+        cid = cid || '';
+        const exist = tabs.find(t => t.cid === cid);
+        if (exist) { activate(exist.id); return; }
+        const tab = { id: nextId++, cid: cid, page: '', loading: true };
+        tabs.push(tab);
+        renderTabs(); activate(tab.id); save();
+    }
+
+    function closeTab(id) {
+        const i = tabs.findIndex(t => t.id === id);
+        if (i < 0) return;
+        tabs.splice(i, 1);
+        if (activeId === id) {
+            const next = tabs[Math.min(i, tabs.length - 1)];
+            activeId = next ? next.id : null;
+        }
+        renderTabs();
+        iframes.forEach((f, tid) => { f.style.display = (tid === activeId) ? '' : 'none'; });
+        save();
+    }
+    window.wsClose = closeTab;
+    window.wsOpen = function (cid) { openTab(cid); addMenu.classList.add('hidden'); };
+
+    function toggleAddMenu(ev) {
+        ev.stopPropagation();
+        addMenu.classList.toggle('hidden');
+    }
+    window.toggleAddMenu = toggleAddMenu;
+
+    function buildAddMenu() {
+        addMenu.innerHTML = '';
+        const home = document.createElement('button');
+        home.className = 'w-full text-left px-3 py-2 text-xs text-slate-200 hover:bg-slate-700';
+        home.textContent = '🏠 全局默认配置';
+        home.onclick = () => wsOpen('');
+        addMenu.appendChild(home);
+        channels.forEach(c => {
+            const b = document.createElement('button');
+            b.className = 'w-full text-left px-3 py-2 text-xs text-slate-200 hover:bg-slate-700 truncate';
+            b.textContent = '🎞️ ' + c.name_en + (c.status !== 'active' ? '（paused）' : '');
+            b.title = (c.name_zh ? c.name_zh + ' · ' : '') + c.id;
+            b.onclick = () => wsOpen(c.id);
+            addMenu.appendChild(b);
+        });
+        if (!channels.length) {
+            const p = document.createElement('p');
+            p.className = 'px-3 py-2 text-[11px] text-slate-500';
+            p.textContent = '暂无频道实体（频道矩阵页可创建）';
+            addMenu.appendChild(p);
+        }
+    }
+
+    document.addEventListener('click', (e) => {
+        if (!addMenu.classList.contains('hidden') && !addMenu.contains(e.target)) addMenu.classList.add('hidden');
+    });
+
+    // 初始化：恢复持久化页签（刷新后 iframe 需重建）→ 拉频道清单补标题 →
+    // URL ?channel= 预选/补开对应频道页签
+    load();
+    tabs.forEach(t => { t.loading = true; });
+    renderTabs();
+    if (tabs.length) activate(tabs.some(t => t.id === activeId) ? activeId : tabs[tabs.length - 1].id);
+
+    const refreshChannels = () => { renderTabs(); buildAddMenu(); };
+    fetch('/api/channels/context').then(r => r.json()).then(d => {
+        channels = d.channels || [];
+        refreshChannels();
+    }).catch(() => { refreshChannels(); });
+
+    const urlCid = new URLSearchParams(location.search).get('channel') || '';
+    if (urlCid) openTab(urlCid);
+})();
+</script>
+</body>
+</html>

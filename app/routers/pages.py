@@ -527,6 +527,16 @@ async def channels_page(request: Request):
     })
 
 
+@router.get("/workspace", response_class=HTMLResponse)
+async def workspace_page(request: Request):
+    """🪟 多频道工作台：同窗口多频道页签并行操作。每页签一个常驻 iframe，
+    src 携带 ?channel=（URL 仍是唯一事实源，各页面/后端零改动）；切换仅
+    显隐 iframe，各频道页面状态保留；?channel= 预选/补开对应频道页签。"""
+    return templates.TemplateResponse(request, "workspace.html", {
+        "active_page": "workspace",
+    })
+
+
 @router.get("/intro_videos", response_class=HTMLResponse)
 async def intro_videos_page(request: Request, channel: str = ""):
     """片头库：sleep 模式片头生成（本地动画 / AI 视频）+ 入库管理。
