@@ -110,13 +110,15 @@ def _cfg_line_words(config: dict) -> int:
 def _resolve_sleep_intro_video(config: dict) -> str:
     """sleep_intro_video 配置（片头库 intro_id 或 mp4 绝对路径）→ 文件路径。
 
-    绑定无效（库中已删除等）回退空串 = 默认片头（静态卡片 + 频道名播报）。
+    频道运行（config.channel_id 非空）按频道库优先、全局库回退解析
+    （存量频道可能绑定着全局片头 id）。
+    绑定无效（两库均不存在等）回退空串 = 默认片头（静态卡片 + 频道名播报）。
     """
     sel = str(config.get("sleep_intro_video", "") or "").strip()
     if not sel:
         return ""
     from .intro_library import resolve_video_path
-    path = resolve_video_path(sel)
+    path = resolve_video_path(sel, str(config.get("channel_id", "") or "").strip())
     if not path:
         print(f"  [SleepIntro] 片头绑定无效（库中不存在）: {sel} —— 回退默认片头")
     return path

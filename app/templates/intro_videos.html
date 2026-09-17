@@ -6,7 +6,12 @@
     <div class="bg-slate-800 border border-slate-700 rounded-xl p-5">
         <div class="flex items-center gap-3 mb-1">
             <h2 class="text-lg font-bold text-white flex items-center gap-2"><span>🌙</span> 片头库</h2>
+            {% if page_channel %}
+            <span class="px-2 py-0.5 bg-indigo-600 rounded text-[10px] text-white shrink-0">🎞️ 频道独立库</span>
+            <span class="text-xs text-slate-500">本页读写频道「{{ page_channel }}」的独立片头库 —— 生成 / 上传 / 绑定 / 删除均不影响其它频道与全局库</span>
+            {% else %}
             <span class="text-xs text-slate-500">片头生成（4-15 秒可设）/ 上传自定义视频 → 入库保存 → 绑定给 Sleep 模式反复使用</span>
+            {% endif %}
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-3 mt-4">
             <div>
@@ -114,6 +119,9 @@
         <h3 class="text-base font-bold text-white flex items-center gap-2 mb-3">🎞️ 已保存片头
             <span id="lib-count" class="text-xs font-normal text-slate-500"></span>
         </h3>
+        <div id="lib-bind-warning" class="hidden mb-3 px-4 py-2 rounded-lg bg-amber-900/40 border border-amber-600/50 text-amber-300 text-xs">
+            ⚠ 当前绑定的片头属于全局库（历史绑定），不在本频道库中 —— 运行仍会使用它；在频道库内生成 / 上传后可重新绑定
+        </div>
         <div id="lib-grid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4"></div>
         <div id="lib-empty" class="text-center text-slate-500 text-sm py-10">
             <div class="text-4xl mb-3">🌙</div>
@@ -125,6 +133,14 @@
 
 {% block scripts %}
 <script>
+// 频道上下文（URL ?channel= 为唯一事实源）：本页所有库操作读写该频道的
+// 独立片头库；空 = 全局库（历史行为）。status/prompts_status 为全局单槽不带频道。
+const CHAN = new URLSearchParams(location.search).get('channel') || '';
+function api(url) {
+    if (!CHAN) return url;
+    return url + (url.includes('?') ? '&' : '?') + 'channel=' + encodeURIComponent(CHAN);
+}
+
 let INTROS = [];
 let _genBusy = false;
 let _genTimer = null;
@@ -163,8 +179,9 @@ function _copyFallback(text, done) {
     document.body.removeChild(ta);
 }
 
-// ---------- 频道名历史（localStorage 记住填过的名字，最新在前，最多 20 条） ----------
-const CHAN_HIST_KEY = 'intro_channel_history';
+// ---------- 频道名历史（localStorage 记住填过的名字，最新在前，最多 20 条；
+// 键按频道隔离：不同频道的名字历史互不污染） ----------
+const CHAN_HIST_KEY = 'intro_channel_history' + (CHAN ? '__' + CHAN : '');
 function loadChannelHistory() {
     try { return JSON.parse(localStorage.getItem(CHAN_HIST_KEY) || '[]'); } catch (e) { return []; }
 }
@@ -181,8 +198,9 @@ function rememberChannel(name) {
     renderChannelHistory();
 }
 
-// ---------- 记住上次使用的设置（localStorage，生成时与更改时都存，进页自动还原） ----------
-const SETTINGS_KEY = 'intro_last_settings';
+// ---------- 记住上次使用的设置（localStorage，生成时与更改时都存，进页自动还原；
+// 键按频道隔离：多频道多标签页并行互不覆盖） ----------
+const SETTINGS_KEY = 'intro_last_settings' + (CHAN ? '__' + CHAN : '');
 const SETTINGS_FIELDS = [
     { id: 'iv-channel', type: 'value' },
     { id: 'iv-route', type: 'value' },
@@ -227,12 +245,13 @@ function toggleRoute() {
 
 // ---------- data ----------
 async function loadAll() {
-    const d = await fetch('/api/intro_videos').then(r => r.json());
+    const d = await fetch(api('/api/intro_videos')).then(r => r.json());
     INTROS = d.intros || [];
     renderGrid(d.used);
+    document.getElementById('lib-bind-warning').classList.toggle('hidden', !d.used_missing);
 }
 async function loadBgm() {
-    const d = await fetch('/api/intro_videos/bgm_list').then(r => r.json());
+    const d = await fetch(api('/api/intro_videos/bgm_list')).then(r => r.json());
     const sel = document.getElementById('iv-bgm');
     sel.innerHTML = '<option value="none">🚫 不使用 BGM（成片时统一混入）</option>'
         + '<option value="">🎲 随机一首</option>'
@@ -289,6 +308,7 @@ async function startGenerate() {
     const btn = document.getElementById('btn-generate');
     btn.disabled = true;
     const body = {
+        channel: CHAN,
         route: document.getElementById('iv-route').value,
         channel_name: document.getElementById('iv-channel').value.trim(),
         subtitle: document.getElementById('iv-subtitle').value.trim(),
@@ -301,7 +321,7 @@ async function startGenerate() {
     rememberChannel(body.channel_name);
     saveIntroSettings();
     try {
-        const resp = await fetch('/api/intro_videos/generate', {
+        const resp = await fetch(api('/api/intro_videos/generate'), {
             method: 'POST', headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(body),
         });
@@ -352,9 +372,9 @@ async function genPrompts() {
     const channelName = document.getElementById('iv-channel').value.trim();
     rememberChannel(channelName);
     try {
-        const resp = await fetch('/api/intro_videos/gen_prompts', {
+        const resp = await fetch(api('/api/intro_videos/gen_prompts'), {
             method: 'POST', headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ channel_name: channelName }),
+            body: JSON.stringify({ channel: CHAN, channel_name: channelName }),
         });
         const data = await resp.json();
         if (!resp.ok || !data.ok) throw new Error(data.error || `HTTP ${resp.status}`);
@@ -441,7 +461,8 @@ async function uploadIntro() {
         const fd = new FormData();
         fd.append('video', f);
         fd.append('name', document.getElementById('up-name').value.trim());
-        const resp = await fetch('/api/intro_videos/upload', { method: 'POST', body: fd });
+        fd.append('channel', CHAN);
+        const resp = await fetch(api('/api/intro_videos/upload'), { method: 'POST', body: fd });
         const data = await resp.json();
         if (!resp.ok || !data.ok) throw new Error(data.error || `HTTP ${resp.status}`);
         await loadAll();
@@ -461,9 +482,9 @@ async function uploadIntro() {
 // ---------- actions ----------
 async function useIntro(id) {
     try {
-        const resp = await fetch('/api/intro_videos/use', {
+        const resp = await fetch(api('/api/intro_videos/use'), {
             method: 'POST', headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ id }),
+            body: JSON.stringify({ channel: CHAN, id }),
         });
         const data = await resp.json();
         if (!resp.ok || !data.ok) throw new Error(data.error || `HTTP ${resp.status}`);
@@ -474,7 +495,7 @@ async function useIntro(id) {
 }
 async function deleteIntro(id) {
     if (!confirm('删除该片头？（若正在使用会同时解除绑定，回退默认片头）')) return;
-    const resp = await fetch(`/api/intro_videos/${encodeURIComponent(id)}`, { method: 'DELETE' });
+    const resp = await fetch(api(`/api/intro_videos/${encodeURIComponent(id)}`), { method: 'DELETE' });
     if (!resp.ok) { alert('删除失败'); return; }
     loadAll();
 }

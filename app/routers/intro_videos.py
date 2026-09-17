@@ -1,6 +1,11 @@
 """🎬 片头库 API — sleep 模式片头生成（本地动画 / MCP AI 视频，时长可设 4-15s）
 + 自定义片头上传 + 库管理 + LLM 随机片头提示词生成。
 
+- 频道上下文（2026-09-17 起）：全部端点收 channel 参数（?channel= / body /
+  FormData，URL 为唯一事实源）—— 频道读写自己的独立片头库
+  （configs/channels/{cid}/intro_library.json + intro_videos/{id}/），
+  绑定写频道配置快照 sleep_intro_video；全局上下文行为不变（全局库 +
+  mode_sleep.json）。运行解析：pipeline_service 按频道库优先、全局库回退。
 - 本地路线：pipeline/sleep/intro_video.build_local_intro —— Pillow 逐帧渲染
   sleep 主题动画（渐变背景 + 叶片漂动 + 频道名淡入），零积分；
 - AI 路线：PageMcpSession generate_video（text_to_video / 时长可设 / 16:9 /
@@ -13,8 +18,8 @@
   原声与原时长，无音轨补静音）→ source=upload 入库；
 - 音频统一：BGM（bgm_music 库选一/随机）淡入淡出 + 可选频道名 TTS 播报
   （sleep 模式 tts_engine 合成，TTS_SYNTH_LOCK 内执行）；
-- 产物 configs/intro_videos/{id}/intro.mp4，索引 configs/intro_library.json；
-- POST /use 写入 sleep 模式配置 sleep_intro_video（pipeline_service 注入 CLI），
+- 产物 {上下文库}/intro_videos/{id}/intro.mp4，索引 {上下文库}/intro_library.json；
+- POST /use 写入上下文配置 sleep_intro_video（pipeline_service 注入 CLI），
   空 = 回退默认片头（静态卡片 + 频道名播报）。
 """
 import json
@@ -28,10 +33,10 @@ from pathlib import Path
 from fastapi import APIRouter, File, Form, Request, UploadFile
 from fastapi.responses import FileResponse, JSONResponse
 
-from ..config_manager import (load_config, load_mode_config, resolve_provider,
-                              save_mode_config)
-from ..intro_library import (INTRO_ID_RE, INTRO_VIDEOS_DIR, load_library,
-                             resolve_video_path, save_library)
+from ..config_manager import (load_mode_config, resolve_provider,
+                              resolve_mcp_tokens, save_mode_config)
+from ..intro_library import (INTRO_ID_RE, intro_file, load_library,
+                             resolve_video_path, save_library, videos_dir)
 from ..page_mcp import PageMcpSession
 from ..paths import WEB_ROOT
 from ..tts_state import TTS_SYNTH_LOCK
@@ -54,22 +59,41 @@ def _log(msg: str) -> None:
     print(f"  [IntroLibrary] {msg}")
 
 
-def _sleep_cfg() -> dict:
+def _sleep_cfg(channel: str = "") -> dict:
+    """上下文配置：channel 非空 → 频道完整快照（品牌色/凭据/TTS/BGM 独立）。
+
+    空 → 全局 mode_sleep.json（历史行为）。"""
+    cid = str(channel or "").strip()
+    if cid:
+        from ..channel_profiles import load_channel_config
+        return load_channel_config(cid)
     return load_mode_config("sleep")
+
+
+def _check_channel(channel: str):
+    """频道参数校验：非空但频道实体不存在时返回 404 响应，否则 None 放行。"""
+    cid = str(channel or "").strip()
+    if cid:
+        from ..channel_profiles import get_channel
+        if get_channel(cid) is None:
+            return JSONResponse({"ok": False, "error": f"频道不存在: {cid}"},
+                                status_code=404)
+    return None
 
 
 # ---------------------------------------------------------------------------
 # 片头生成
 # ---------------------------------------------------------------------------
 
-def _synth_announce(channel_name: str) -> str:
-    """频道名 TTS 播报（sleep 引擎，char_a 男声旁白）。返回 mp3 路径。"""
+def _synth_announce(channel_name: str, cfg: dict, cid: str = "") -> str:
+    """频道名 TTS 播报（sleep 引擎，char_a 男声旁白）。返回 mp3 路径。
+
+    cfg/ cid = 上下文配置与频道 id（临时文件落对应库目录）。"""
     from sleep.audio_sleep import build_engine_and_voice_map
-    cfg = _sleep_cfg()
     engine_name = str(cfg.get("tts_engine", "kokoro") or "kokoro")
     fake = {"structure": "sleep", "char_a_gender": "male",
             "char_b_gender": "female"}
-    out = str(INTRO_VIDEOS_DIR / ".announce_tmp.mp3")
+    out = str(videos_dir(cid) / ".announce_tmp.mp3")
     Path(out).parent.mkdir(parents=True, exist_ok=True)
     with TTS_SYNTH_LOCK:
         tts, vmap = build_engine_and_voice_map(engine_name, fake)
@@ -80,9 +104,8 @@ def _synth_announce(channel_name: str) -> str:
     return out
 
 
-def _resolve_bgm(bgm_choice: str) -> str:
+def _resolve_bgm(bgm_choice: str, cfg: dict) -> str:
     from sleep.intro_video import resolve_bgm
-    cfg = _sleep_cfg()
     bgm_dir = str(cfg.get("bgm_music_dir", "") or "").strip() or str(WEB_ROOT / "bgm_music")
     return resolve_bgm(bgm_dir, bgm_choice)
 
@@ -110,13 +133,14 @@ def _build_ai_prompt(scene_prompt: str, channel: str) -> str:
             "no other text, no captions, no watermarks.")
 
 
-def _generate_ai_video(scene_prompt: str, dest: Path,
-                       duration: float = 10.0, channel: str = "") -> None:
-    """MCP generate_video 原始场景视频（频道名由 AI 画进画面，无音频，播报本地混）。"""
-    # token 解析链：sleep 模式配置 → legacy default.json → 本机 CLI 检测
-    # （sleep 模式文件 mcp_tokens 可能为空）
-    from ..config_manager import resolve_mcp_tokens
-    tokens = [t.strip() for t in resolve_mcp_tokens("sleep").splitlines()
+def _generate_ai_video(scene_prompt: str, dest: Path, duration: float = 10.0,
+                       channel: str = "", cfg: dict | None = None) -> None:
+    """MCP generate_video 原始场景视频（频道名由 AI 画进画面，无音频，播报本地混）。
+
+    MCP token：频道上下文快照 mcp_tokens 优先，空回退全局解析链
+    （模式配置 → legacy default.json → 本机 CLI 检测）。"""
+    raw_tokens = str((cfg or {}).get("mcp_tokens", "") or "").strip()
+    tokens = [t.strip() for t in (raw_tokens or resolve_mcp_tokens("sleep")).splitlines()
               if t.strip()]
     if not tokens:
         raise RuntimeError("未配置 MCP Token（模式配置 / default.json / 本地检测均为空）"
@@ -148,38 +172,41 @@ def _generate_ai_video(scene_prompt: str, dest: Path,
 
 
 def _generate_worker(params: dict) -> None:
+    cid = str(params.get("channel", "") or "").strip()
     intro_id = f"intro_{int(time.time() * 1000)}"
     _gen_status.update({"status": "running", "error": "", "intro_id": intro_id,
                         "logs": []})
-    out_dir = INTRO_VIDEOS_DIR / intro_id
+    out_dir = videos_dir(cid) / intro_id
     final_path = out_dir / "intro.mp4"
     try:
         route = params["route"]
-        channel = params["channel_name"]
+        channel_name = params["channel_name"]
         subtitle = params["subtitle"]
         dur = _parse_duration(params.get("duration"))
+        cfg = _sleep_cfg(cid)
         out_dir.mkdir(parents=True, exist_ok=True)
-        _log(f"生成片头（{'AI 视频' if route == 'ai' else '本地动画'}，{dur:g}s）: {channel}")
+        _log(f"生成片头（{'AI 视频' if route == 'ai' else '本地动画'}，{dur:g}s）: {channel_name}"
+             + (f"（频道 {cid} 独立库）" if cid else ""))
         # "none" = 用户显式不使用 BGM（成片时由 bgm_mix 统一混入，避免片头双重 BGM）；
         # resolve_bgm 对未知名本就返回 ""，这里显式短路让日志语义准确
         if str(params["bgm"]) == "none":
             bgm_path = ""
             _log("BGM: 不使用（成片生成时由 bgm_mix 统一混入）")
         else:
-            bgm_path = _resolve_bgm(params["bgm"])
+            bgm_path = _resolve_bgm(params["bgm"], cfg)
             _log(f"BGM: {Path(bgm_path).name}" if bgm_path else "BGM: 无可用音乐（静音）")
         announce_path = ""
         if params["announce"]:
             _log("合成频道名播报 TTS ...")
-            announce_path = _synth_announce(channel)
+            announce_path = _synth_announce(channel_name, cfg, cid)
 
         from sleep.sleep_cards import build_theme
-        theme = build_theme(_sleep_cfg())
+        theme = build_theme(cfg)
         if route == "ai":
             raw_path = out_dir / "raw.mp4"
-            _generate_ai_video(params["scene_prompt"], raw_path, dur, channel)
+            _generate_ai_video(params["scene_prompt"], raw_path, dur, channel_name, cfg)
             from sleep.intro_video import finalize_ai_intro
-            finalize_ai_intro(str(raw_path), channel, subtitle, str(final_path),
+            finalize_ai_intro(str(raw_path), channel_name, subtitle, str(final_path),
                               theme, bgm_path=bgm_path,
                               bgm_volume_db=params["bgm_volume_db"],
                               announce_path=announce_path,
@@ -192,7 +219,7 @@ def _generate_worker(params: dict) -> None:
                 pass
         else:
             from sleep.intro_video import build_local_intro
-            build_local_intro(channel, subtitle, str(final_path), theme,
+            build_local_intro(channel_name, subtitle, str(final_path), theme,
                               bgm_path=bgm_path,
                               bgm_volume_db=params["bgm_volume_db"],
                               announce_path=announce_path,
@@ -200,15 +227,15 @@ def _generate_worker(params: dict) -> None:
                               progress_cb=lambda p, m: _log(f"[{p}%] {m}"))
 
         from media_utils import get_duration
-        entry = {"id": intro_id, "name": channel, "source": route,
+        entry = {"id": intro_id, "name": channel_name, "source": route,
                  "duration": round(get_duration(str(final_path)), 2),
                  "created": time.time(), "subtitle": subtitle,
                  "bgm": Path(bgm_path).name if bgm_path else "",
                  "announce": bool(announce_path)}
-        lib = load_library()
+        lib = load_library(cid)
         lib.insert(0, entry)
-        save_library(lib)
-        _log(f"片头已入库: {intro_id}")
+        save_library(lib, cid)
+        _log(f"片头已入库: {intro_id}" + (f"（频道 {cid} 独立库）" if cid else ""))
         _gen_status.update({"status": "done", "intro_id": intro_id})
     except Exception as e:  # noqa: BLE001 — 错误原样落状态供前端展示
         print(f"  [IntroLibrary] ERROR: {e}")
@@ -219,7 +246,9 @@ def _generate_worker(params: dict) -> None:
 
 @router.post("/api/intro_videos/generate")
 async def api_generate(request: Request):
-    """启动片头生成（单槽 409 守卫；静态路径须在 {intro_id} 动态路由之前注册）。"""
+    """启动片头生成（单槽 409 守卫；静态路径须在 {intro_id} 动态路由之前注册）。
+
+    body.channel = 频道 id：产物入频道独立库，主题色/TTS/BGM 按频道快照。"""
     if _gen_status.get("status") == "running":
         return JSONResponse({"ok": False, "error": "已有片头生成任务进行中，请稍候"},
                             status_code=409)
@@ -227,10 +256,14 @@ async def api_generate(request: Request):
         data = await request.json()
     except Exception:
         data = {}
+    cid = str(data.get("channel", "") or "").strip()
+    bad = _check_channel(cid)
+    if bad is not None:
+        return bad
     route = str(data.get("route", "local") or "local")
     if route not in ("local", "ai"):
         route = "local"
-    cfg = _sleep_cfg()
+    cfg = _sleep_cfg(cid)
     channel = str(data.get("channel_name", "") or "").strip()[:60] \
         or str(cfg.get("sleep_channel_name", "") or "").strip() \
         or "English with me"
@@ -245,7 +278,8 @@ async def api_generate(request: Request):
     duration = _parse_duration(data.get("duration"))
 
     threading.Thread(target=_generate_worker,
-                     args=({"route": route, "channel_name": channel,
+                     args=({"route": route, "channel": cid,
+                            "channel_name": channel,
                             "subtitle": subtitle, "bgm": bgm,
                             "bgm_volume_db": bgm_volume_db,
                             "announce": announce,
@@ -261,9 +295,9 @@ async def api_status():
 
 
 @router.get("/api/intro_videos/bgm_list")
-async def api_bgm_list():
+async def api_bgm_list(channel: str = ""):
     from sleep.intro_video import list_bgm_files
-    cfg = _sleep_cfg()
+    cfg = _sleep_cfg(channel)
     bgm_dir = str(cfg.get("bgm_music_dir", "") or "").strip() or str(WEB_ROOT / "bgm_music")
     return {"files": list_bgm_files(bgm_dir), "dir": bgm_dir}
 
@@ -350,23 +384,23 @@ _PROMPTS_MAX_ATTEMPTS = 3
 _PROMPTS_RETRY_WAIT = 2
 
 
-def _prompts_worker(channel: str) -> None:
+def _prompts_worker(channel_name: str, cid: str = "") -> None:
     _prompt_status.update({"status": "generating", "prompts": [], "error": ""})
     try:
         import time as _time
         from llm_client import _extract_json, proxy_url_from_config  # pipeline/ 已在 sys.path
-        cfg = load_config()
+        cfg = _sleep_cfg(cid)  # 频道上下文 → 频道 LLM Provider/Key/模型
         p_type, base_url, api_key, model = resolve_provider(cfg)
         if not api_key:
             raise RuntimeError(f"未配置 {p_type} 的 API Key，请在参数配置页填写")
         if not model:
             raise RuntimeError("未指定模型（该 Provider 未配置模型列表）")
-        prompt_text = _build_prompts_prompt(channel)
+        prompt_text = _build_prompts_prompt(channel_name)
         proxy_url = proxy_url_from_config(cfg)
         prompts: list[dict] = []
         last_err: Exception | None = None
         for attempt in range(1, _PROMPTS_MAX_ATTEMPTS + 1):
-            _log(f"LLM 生成片头提示词：{model} ({p_type})，频道「{channel}」"
+            _log(f"LLM 生成片头提示词：{model} ({p_type})，频道「{channel_name}」"
                  + (f"（第 {attempt}/{_PROMPTS_MAX_ATTEMPTS} 次）" if attempt > 1 else ""))
             try:
                 content = _llm_chat(base_url, api_key, model, p_type,
@@ -400,7 +434,9 @@ def _prompts_worker(channel: str) -> None:
 
 @router.post("/api/intro_videos/gen_prompts")
 async def api_gen_prompts(request: Request):
-    """LLM 生成 10 个随机片头提示词（单槽 409 守卫；静态路径须在 {intro_id} 动态路由之前）。"""
+    """LLM 生成 10 个随机片头提示词（单槽 409 守卫；静态路径须在 {intro_id} 动态路由之前）。
+
+    body.channel = 频道 id：LLM Provider/Key/模型按频道快照解析。"""
     if _prompt_status.get("status") == "generating":
         return JSONResponse({"ok": False, "error": "提示词生成进行中，请稍候"},
                             status_code=409)
@@ -408,11 +444,16 @@ async def api_gen_prompts(request: Request):
         data = await request.json()
     except Exception:
         data = {}
-    cfg = _sleep_cfg()
+    cid = str(data.get("channel", "") or "").strip()
+    bad = _check_channel(cid)
+    if bad is not None:
+        return bad
+    cfg = _sleep_cfg(cid)
     channel = str(data.get("channel_name", "") or "").strip()[:60] \
         or str(cfg.get("sleep_channel_name", "") or "").strip() \
         or "English with me"
-    threading.Thread(target=_prompts_worker, args=(channel,), daemon=True).start()
+    threading.Thread(target=_prompts_worker, args=(channel, cid),
+                     daemon=True).start()
     return {"ok": True, "message": "提示词生成中（约 10-60 秒）..."}
 
 
@@ -426,36 +467,56 @@ async def api_prompts_status():
 # ---------------------------------------------------------------------------
 
 @router.get("/api/intro_videos")
-async def api_list():
-    used = str(_sleep_cfg().get("sleep_intro_video", "") or "").strip()
+async def api_list(channel: str = ""):
+    """列上下文库（?channel= 频道独立库 / 空 = 全局库）+ 当前绑定。
+
+    used_missing：频道上下文的绑定项不在频道库（历史全局绑定）→ 前端提示。
+    """
+    cid = str(channel or "").strip()
+    used = str(_sleep_cfg(cid).get("sleep_intro_video", "") or "").strip()
     intros = []
-    for e in load_library():
+    for e in load_library(cid):
         iid = str(e.get("id", ""))
-        f = INTRO_VIDEOS_DIR / iid / "intro.mp4" if INTRO_ID_RE.match(iid) else None
+        f = intro_file(iid, cid) if INTRO_ID_RE.match(iid) else None
         exists = bool(f and f.exists())
+        q = f"channel={cid}&" if cid else ""
         intros.append({**e, "exists": exists, "used": used == iid,
-                       "video_url": f"/api/intro_videos/{iid}/video?v="
+                       "video_url": f"/api/intro_videos/{iid}/video?{q}"
                                     + (str(int(f.stat().st_mtime_ns)) if exists else "0")})
-    return {"intros": intros, "used": used}
+    used_missing = bool(cid and used
+                        and not any(e.get("id") == used for e in intros))
+    return {"intros": intros, "used": used, "used_missing": used_missing}
 
 
 @router.post("/api/intro_videos/use")
 async def api_use(request: Request):
-    """绑定/解绑 sleep 模式片头（body {id: ""} = 回退默认片头）。"""
+    """绑定/解绑上下文片头（body {id: ""} = 回退默认片头）。
+
+    body.channel = 频道 id：绑定写频道配置快照（空 = 写全局 sleep 配置）。
+    频道上下文仅允许绑定频道库内条目（保持各频道库互不影响）。
+    """
     try:
         data = await request.json()
     except Exception:
         data = {}
+    cid = str(data.get("channel", "") or "").strip()
+    bad = _check_channel(cid)
+    if bad is not None:
+        return bad
     iid = str(data.get("id", "") or "").strip()
     if iid:
         if not INTRO_ID_RE.match(iid):
             return JSONResponse({"ok": False, "error": "无效的片头 id"}, status_code=400)
-        if not (INTRO_VIDEOS_DIR / iid / "intro.mp4").exists():
+        if not intro_file(iid, cid).exists():
             return JSONResponse({"ok": False, "error": "片头文件不存在"}, status_code=404)
-    cfg = _sleep_cfg()
+    cfg = _sleep_cfg(cid)
     cfg["sleep_intro_video"] = iid
-    save_mode_config("sleep", cfg)
-    return {"ok": True, "used": iid}
+    if cid:
+        from ..channel_profiles import save_channel_config
+        save_channel_config(cid, cfg)
+    else:
+        save_mode_config("sleep", cfg)
+    return {"ok": True, "used": iid, "channel": cid}
 
 
 _UPLOAD_MAX_BYTES = 200 * 1024 * 1024
@@ -463,11 +524,17 @@ _UPLOAD_EXTS = (".mp4", ".mov", ".webm", ".mkv", ".m4v", ".avi")
 
 
 @router.post("/api/intro_videos/upload")
-async def api_upload(video: UploadFile = File(...), name: str = Form("")):
+async def api_upload(video: UploadFile = File(...), name: str = Form(""),
+                     channel: str = Form("")):
     """上传自定义片头 → 规格标准化入库（source=upload，保留原声与原时长）。
 
+    Form.channel = 频道 id：入频道独立库（空 = 全局库）。
     纯本地 ffmpeg 处理，与生成槽/MCP 互斥无关，同步返回。
     """
+    cid = str(channel or "").strip()
+    bad = _check_channel(cid)
+    if bad is not None:
+        return bad
     filename = (video.filename or "").lower()
     if not filename.endswith(_UPLOAD_EXTS):
         return JSONResponse({"ok": False,
@@ -482,7 +549,7 @@ async def api_upload(video: UploadFile = File(...), name: str = Form("")):
     display = str(name or "").strip()[:60] \
         or Path(filename).stem.strip()[:60] or "自定义片头"
     intro_id = f"intro_{int(time.time() * 1000)}"
-    out_dir = INTRO_VIDEOS_DIR / intro_id
+    out_dir = videos_dir(cid) / intro_id
     out_dir.mkdir(parents=True, exist_ok=True)
     raw_path = out_dir / f"_raw{Path(filename).suffix or '.mp4'}"
     final_path = out_dir / "intro.mp4"
@@ -503,44 +570,54 @@ async def api_upload(video: UploadFile = File(...), name: str = Form("")):
             pass
     entry = {"id": intro_id, "name": display, "source": "upload",
              "duration": round(dur, 2), "created": time.time()}
-    lib = load_library()
+    lib = load_library(cid)
     lib.insert(0, entry)
-    save_library(lib)
-    print(f"  [IntroLibrary] 片头上传入库: {intro_id} ({display}, {dur:.1f}s)")
-    return {"ok": True, "id": intro_id, "duration": round(dur, 2)}
+    save_library(lib, cid)
+    print(f"  [IntroLibrary] 片头上传入库: {intro_id} ({display}, {dur:.1f}s)"
+          + (f"（频道 {cid} 独立库）" if cid else ""))
+    return {"ok": True, "id": intro_id, "duration": round(dur, 2), "channel": cid}
 
 
 @router.delete("/api/intro_videos/{intro_id}")
-async def api_delete(intro_id: str):
+async def api_delete(intro_id: str, channel: str = ""):
+    """删除上下文库中的片头（?channel= 频道库 / 空 = 全局库），互不波及对方。"""
     if not INTRO_ID_RE.match(intro_id):
         return JSONResponse({"ok": False, "error": "无效的片头 id"}, status_code=400)
-    lib = load_library()
+    cid = str(channel or "").strip()
+    bad = _check_channel(cid)
+    if bad is not None:
+        return bad
+    lib = load_library(cid)
     remaining = [e for e in lib if e.get("id") != intro_id]
     if len(remaining) == len(lib):
         return JSONResponse({"ok": False, "error": "未找到该片头"}, status_code=404)
-    save_library(remaining)
-    shutil.rmtree(INTRO_VIDEOS_DIR / intro_id, ignore_errors=True)
-    cfg = _sleep_cfg()
+    save_library(remaining, cid)
+    shutil.rmtree(intro_file(intro_id, cid).parent, ignore_errors=True)
+    cfg = _sleep_cfg(cid)
     if str(cfg.get("sleep_intro_video", "") or "") == intro_id:
         cfg["sleep_intro_video"] = ""
-        save_mode_config("sleep", cfg)
+        if cid:
+            from ..channel_profiles import save_channel_config
+            save_channel_config(cid, cfg)
+        else:
+            save_mode_config("sleep", cfg)
     return {"ok": True}
 
 
 @router.get("/api/intro_videos/{intro_id}/video")
-async def api_video(intro_id: str):
+async def api_video(intro_id: str, channel: str = ""):
     if not INTRO_ID_RE.match(intro_id):
         return JSONResponse({"ok": False, "error": "无效的片头 id"}, status_code=400)
-    f = INTRO_VIDEOS_DIR / intro_id / "intro.mp4"
+    f = intro_file(intro_id, str(channel or "").strip())
     if not f.exists():
         return JSONResponse({"ok": False, "error": "Not found"}, status_code=404)
     return FileResponse(str(f), media_type="video/mp4",
                         headers={"Cache-Control": "no-cache"})
 
 
-def resolve_bound_intro(intro_sel: str) -> str:
-    """供 pipeline_service：sleep_intro_video 配置值 → mp4 路径（无效回退空）。"""
-    p = resolve_video_path(intro_sel)
+def resolve_bound_intro(intro_sel: str, channel_id: str = "") -> str:
+    """sleep_intro_video 配置值 → mp4 路径（无效回退空）。频道库优先、全局库回退。"""
+    p = resolve_video_path(intro_sel, channel_id)
     if not p:
         print(f"  [IntroLibrary] 片头绑定无效（库中不存在）: {intro_sel} —— 回退默认片头")
     return p

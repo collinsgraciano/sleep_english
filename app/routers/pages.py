@@ -528,11 +528,19 @@ async def channels_page(request: Request):
 
 
 @router.get("/intro_videos", response_class=HTMLResponse)
-async def intro_videos_page(request: Request):
-    """片头库：sleep 模式 10 秒片头生成（本地动画 / AI 视频）+ 入库管理。"""
-    config = load_config()
+async def intro_videos_page(request: Request, channel: str = ""):
+    """片头库：sleep 模式片头生成（本地动画 / AI 视频）+ 入库管理。
+
+    ?channel= 频道上下文：页面读写该频道的独立片头库与配置快照。"""
+    channel = str(channel or "").strip()
+    if channel:
+        from ..channel_profiles import load_channel_config
+        config = load_channel_config(channel)
+    else:
+        config = load_config()
     return templates.TemplateResponse(request, "intro_videos.html", {
         "config": config,
+        "page_channel": channel,
         "active_page": "intro_videos",
     })
 
