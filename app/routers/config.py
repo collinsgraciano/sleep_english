@@ -16,6 +16,7 @@ from ..config_manager import (
     save_preset, load_preset, delete_preset,
     list_sleep_color_presets, save_sleep_color_preset, delete_sleep_color_preset,
 )
+from ..paths import CHANNEL_ASSETS_DIR, PIPELINE_DIR
 
 router = APIRouter()
 
@@ -149,6 +150,10 @@ async def api_save_quick_fields(request: Request):
 
 # --- Sleep 卡片实时预览（配置页 😴 Sleep 组边改边看，真实 Pillow 渲染）---
 
+# 背景图开关开启但无可用固定路径（留空/失效）时，预览改用内置示例图演示
+# 混合/层级效果；成片路径留空时仍按本期主题 AI 生成，不受影响。
+SAMPLE_BG_PATH = PIPELINE_DIR / "sleep" / "assets" / "preview_bg_sample.jpg"
+
 _SLEEP_SAMPLE_A = {"text": "The house is quiet now",
                    "phonetic": "/ðə haʊs ɪz ˈkwaɪət naʊ/",
                    "zh": "房子現在安靜下來了"}
@@ -157,25 +162,108 @@ _SLEEP_SAMPLE_B = {"text": "Time to close your eyes",
                    "zh": "該閉上眼睛了"}
 
 
-def _render_sleep_preview_png(cfg: dict) -> bytes:
-    """intro/pair/outro 三卡纵向合成 → PNG bytes（同步渲染，跑线程池）。"""
+def _resolve_preview_logo(cfg: dict, channel: str) -> str:
+    """预览 Logo 路径解析（探测顺序与成片 pipeline.py 一致）。
+
+    总开关关 = 不叠；显式路径优先（文件缺失成片也只跳过，这里原样返回由
+    盖章端静默处理）；显式留空且带频道上下文 → 自动探测
+    configs/channel_assets/{频道id}/logo.png。找不到返回空。"""
+    if not cfg.get("sleep_logo", True):
+        return ""
+    explicit = str(cfg.get("sleep_logo_path", "") or "").strip()
+    if explicit:
+        return explicit
+    channel = str(channel or "").strip()
+    # 仅接受纯目录名，防路径穿越（与频道 id 形态一致）
+    if channel and Path(channel).name == channel:
+        cand = CHANNEL_ASSETS_DIR / channel / "logo.png"
+        if cand.exists():
+            return str(cand)
+    return ""
+
+
+def _stamp_logo_on_card(img, logo_path: str, position: str, size: int,
+                        opacity: int) -> None:
+    """按成片 overlay 数学把 Logo 盖到预览卡上（原位修改 RGBA 图）。
+
+    复刻 video_compose_sleep._logo_overlay：宽=s（k=图高/720）、边距
+    m=0.35*s、四角定位、alpha=opacity/100 夹取 0.1~1.0（乘进原 alpha
+    通道，保留 PNG 形状透明，等价 FFmpeg colorchannelmixer）。"""
+    from PIL import Image
+
+    try:
+        logo = Image.open(logo_path).convert("RGBA")
+    except Exception:
+        return
+    k = img.height / 720.0
+    s = max(8, round(size * k))
+    m = max(4, round(size * 0.35 * k))
+    w = s
+    h = max(1, round(logo.height * s / max(1, logo.width)))
+    if w >= img.width or h >= img.height:
+        return
+    logo = logo.resize((w, h))
+    alpha = min(1.0, max(0.1, float(opacity or 90) / 100.0))
+    r, g, b, a = logo.split()
+    a = a.point(lambda v: int(v * alpha))
+    logo = Image.merge("RGBA", (r, g, b, a))
+    if position == "top_left":
+        xy = (m, m)
+    elif position == "bottom_left":
+        xy = (m, img.height - h - m)
+    elif position == "bottom_right":
+        xy = (img.width - w - m, img.height - h - m)
+    else:  # top_right（默认）
+        xy = (img.width - w - m, m)
+    img.alpha_composite(logo, xy)
+
+
+def _render_sleep_preview_png(cfg: dict, channel: str = "") -> bytes:
+    """intro/pair/outro 三卡纵向合成 → PNG bytes（同步渲染，跑线程池）。
+
+    channel 仅用于 Logo 自动探测（成片同一探测顺序）；Logo 盖章是预览
+    专用注入（build_theme 不携带 logo 键），成片卡片渲染路径零影响。"""
     from PIL import Image
 
     from sleep.sleep_cards import (build_theme, render_intro_card,
-                                   render_outro_card, render_pair_card)
+                                   render_pair_card, render_outro_card)
 
     cfg = cfg or {}
     theme = build_theme(cfg)
-    channel = str(cfg.get("sleep_channel_name", "") or "")
+    # 背景图开启但无可用固定路径（留空/文件失效）→ 示例图占位，
+    # 让不透明度/层级混合效果在预览可见（此前静默回退渐变底易误判）
+    bg_path = str(theme.get("bg_image_path", "") or "").strip()
+    if theme.get("bg_image") and not (bg_path and Path(bg_path).exists()):
+        if SAMPLE_BG_PATH.exists():
+            theme["bg_image_path"] = str(SAMPLE_BG_PATH)
+    logo_path = _resolve_preview_logo(cfg, channel)
+    channel_name = str(cfg.get("sleep_channel_name", "") or "")
     with tempfile.TemporaryDirectory() as td:
         base = Path(td)
-        intro = render_intro_card(theme, str(base / "intro.png"), channel_name=channel)
+        intro = render_intro_card(theme, str(base / "intro.png"), channel_name=channel_name)
         pair = render_pair_card(_SLEEP_SAMPLE_A, _SLEEP_SAMPLE_B, 1, theme,
-                                str(base / "pair.png"), channel_name=channel)
+                                str(base / "pair.png"), channel_name=channel_name)
         outro = render_outro_card(theme, str(base / "outro.png"),
                                   str(cfg.get("sleep_outro_text", "") or ""),
-                                  channel_name=channel)
-        imgs = [Image.open(p) for p in (intro, pair, outro)]
+                                  channel_name=channel_name)
+        imgs = []
+        for p in (intro, pair, outro):
+            im = Image.open(p)
+            if logo_path:
+                try:
+                    _size = int(float(cfg.get("sleep_logo_size", 96) or 96))
+                except (TypeError, ValueError):
+                    _size = 96
+                try:
+                    _opacity = int(float(cfg.get("sleep_logo_opacity", 90) or 90))
+                except (TypeError, ValueError):
+                    _opacity = 90
+                im = im.convert("RGBA")
+                _stamp_logo_on_card(im, logo_path,
+                                    str(cfg.get("sleep_logo_position", "") or "top_right"),
+                                    _size, _opacity)
+                im = im.convert("RGB")
+            imgs.append(im)
         canvas = Image.new("RGB", (max(im.width for im in imgs),
                                    sum(im.height for im in imgs)), (255, 255, 255))
         y = 0
@@ -191,17 +279,19 @@ def _render_sleep_preview_png(cfg: dict) -> bytes:
 async def api_sleep_preview_get(channel: str = ""):
     """用当前上下文（?channel= 频道快照 / 全局）已保存配置渲染预览。"""
     _, config = _ctx(channel)
-    png = await asyncio.to_thread(_render_sleep_preview_png, config)
+    png = await asyncio.to_thread(_render_sleep_preview_png, config, channel)
     return Response(content=png, media_type="image/png")
 
 
 @router.post("/api/config/sleep_preview")
 async def api_sleep_preview_post(request: Request):
-    """配置页实时预览：body = 表单收集的 sleep_* 键值（未保存草稿值亦可）。"""
+    """配置页实时预览：body = 表单收集的 sleep_* 键值（未保存草稿值亦可）；
+    ?channel= 频道上下文，决定 Logo 留空时的自动探测来源。"""
     data = await request.json()
+    channel = str(request.query_params.get("channel", "") or "").strip()
     cfg = {k: v for k, v in data.items()
            if isinstance(k, str) and k.startswith("sleep_")}
-    png = await asyncio.to_thread(_render_sleep_preview_png, cfg)
+    png = await asyncio.to_thread(_render_sleep_preview_png, cfg, channel)
     return Response(content=png, media_type="image/png")
 
 

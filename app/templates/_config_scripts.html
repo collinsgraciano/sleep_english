@@ -496,7 +496,7 @@ function refreshSleepPreview() {
     if (_sleepPreviewBusy) { _sleepPreviewDirty = true; return; }
     _sleepPreviewBusy = true;
     if (loading) loading.style.display = '';
-    fetch('/api/config/sleep_preview', {
+    fetch('/api/config/sleep_preview?channel=' + encodeURIComponent(PAGE_CHANNEL), {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(_collectSleepFields())
