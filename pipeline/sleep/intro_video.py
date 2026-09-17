@@ -26,7 +26,8 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 from media_utils import (FONT_ZH, TARGET_H, TARGET_W, VF_NORM, get_duration,
                          has_audio)
-from sleep.sleep_cards import _draw_badge, _fit_font, _handwrite_path, _hex_rgb
+from sleep.sleep_cards import (_draw_badge, _fit_font, _handwrite_path,
+                               _hex_rgb, _theme_font)
 
 INTRO_DURATION = 10.0
 INTRO_FPS = 25
@@ -213,7 +214,8 @@ def _render_intro_frames(frames_dir: Path, channel_name: str, subtitle: str,
     title = _text_sprite(channel, hw_path, 96,
                          _hex_rgb(theme["channel_text"], (90, 107, 82)),
                          max_w=w - 420, glow_radius=8)
-    sub = _text_sprite(subtitle or "閉上眼睛 · 輕鬆聽", FONT_ZH, 40,
+    sub_text = subtitle or "閉上眼睛 · 輕鬆聽"
+    sub = _text_sprite(sub_text, _theme_font(theme, "font_zh", [FONT_ZH], sub_text), 40,
                        _hex_rgb(theme["zh_text"], (58, 58, 58)),
                        max_w=w - 480, glow_radius=4)
 
@@ -294,7 +296,8 @@ def _render_overlay_text(channel_name: str, subtitle: str, theme: dict) -> str:
     channel = (channel_name or "English with me").strip() or "English with me"
     title = _text_sprite(channel, _handwrite_path(theme), 104, (255, 255, 255, 255),
                          max_w=w - 360, glow_radius=14, glow_color=(0, 0, 0, 170))
-    sub = _text_sprite(subtitle or "閉上眼睛 · 輕鬆聽", FONT_ZH, 42,
+    sub_text = subtitle or "閉上眼睛 · 輕鬆聽"
+    sub = _text_sprite(sub_text, _theme_font(theme, "font_zh", [FONT_ZH], sub_text), 42,
                        (255, 255, 255, 235), max_w=w - 420,
                        glow_radius=8, glow_color=(0, 0, 0, 150))
     img.paste(title, (int(w / 2 - title.width / 2), int(h * 0.34 - title.height / 2)),

@@ -32,6 +32,7 @@ _FONT_HANDWRITE_CANDIDATES = [
     r"C:\Windows\Fonts\seguisym.ttf",
     r"C:\Windows\Fonts\seguiemj.ttf",
 ]
+_FONT_HANDWRITE_FALLBACKS = [*_FONT_HANDWRITE_CANDIDATES, FONT_EN, FONT_ZH]
 
 # 默认主题（与 configs sleep_color_* 配置键一一对应；hex 取自参考截图采样）
 DEFAULT_THEME = {
@@ -89,6 +90,10 @@ def build_theme(cfg: dict) -> dict:
             theme[tk] = v
     theme["show_leaves"] = bool(cfg.get("sleep_show_leaves", True))
     theme["handwrite_font"] = str(cfg.get("sleep_handwrite_font", "") or "").strip()
+    # 句子区字体（留空=内置默认；所选字体缺文字字形时渲染侧自动回退内置链）
+    theme["font_en"] = str(cfg.get("sleep_font_en", "") or "").strip()
+    theme["font_ph"] = str(cfg.get("sleep_font_ph", "") or "").strip()
+    theme["font_zh"] = str(cfg.get("sleep_font_zh", "") or "").strip()
     # 频道名字体粗细（描边假粗 0-4，任意字体生效；0=原样逐像素不变）
     try:
         theme["handwrite_weight"] = min(4, max(0, int(float(cfg.get("sleep_handwrite_weight", 0) or 0))))
@@ -133,8 +138,7 @@ def _channel_font_chain(theme: dict) -> list[str]:
     chain: list[str] = []
     if custom and os.path.exists(custom):
         chain.append(custom)
-    chain.extend(_FONT_HANDWRITE_CANDIDATES)
-    chain.extend([FONT_EN, FONT_ZH])
+    chain.extend(_FONT_HANDWRITE_FALLBACKS)
     seen: set[str] = set()
     return [p for p in chain if not (p in seen or seen.add(p))]
 
@@ -157,19 +161,35 @@ def _channel_font_runs(theme: dict, text: str) -> list[list]:
     return runs
 
 
-def _handwrite_path(theme: dict, text: str = "") -> str:
-    """频道名字体链的「单字体最优解」：全覆盖者优先按序，否则取覆盖最多者。
+def _pick_font(custom: str, fallbacks: list[str], text: str = "") -> str:
+    """字体链的「单字体最优解」：自定义优先，全覆盖者优先按序，否则覆盖最多。
 
-    intro_video 片头文字层（单字体 sprite）沿用；卡片渲染走
-    _channel_font_runs 逐段混排。text 为空=链首（等价旧行为）。
+    text 为空=链首（等价旧行为）。句子区三字体（EN/IPA/中文）与频道名
+    单字体场景共用；频道名逐段混排走 _channel_font_runs。
     """
-    chain = _channel_font_chain(theme)
+    chain: list[str] = []
+    if custom and os.path.exists(custom):
+        chain.append(custom)
+    for p in fallbacks:
+        if p not in chain:
+            chain.append(p)
     if not text or not text.strip():
         return chain[0]
     for p in chain:
         if font_covers(p, text):
             return p
     return max(chain, key=lambda p: covered_count(p, text))
+
+
+def _handwrite_path(theme: dict, text: str = "") -> str:
+    """频道名字体链单字体最优解（intro_video 片头文字层沿用）。"""
+    return _pick_font(str(theme.get("handwrite_font", "") or ""),
+                      _FONT_HANDWRITE_FALLBACKS, text)
+
+
+def _theme_font(theme: dict, key: str, fallbacks: list[str], text: str) -> str:
+    """主题字体键（font_en/font_ph/font_zh）→ 覆盖回退后的单字体路径。"""
+    return _pick_font(str(theme.get(key, "") or ""), fallbacks, text)
 
 
 def _tracked_bbox_w(draw: ImageDraw.ImageDraw, text: str, font,
@@ -249,22 +269,26 @@ def _wrap_words(draw: ImageDraw.ImageDraw, text: str, font, max_w: int,
 def _draw_text_block(img: Image.Image, draw: ImageDraw.ImageDraw, en: str,
                      phonetic: str, zh: str, cy: int, en_color, theme: dict,
                      en_start: int = 72, s: float = 1.0) -> None:
-    """居中一块：EN 大字 → IPA（cambria）→ 繁中。s = 分辨率缩放系数。
+    """居中一块：EN 大字 → IPA → 繁中。s = 分辨率缩放系数。
 
     排版来自 theme：font_scale（字号缩放，1.0=原大）、line_spacing（英文
     行距 px@720p，默认 14）、letter_spacing（字距 px@720p，默认 0，>0 时
-    逐字符绘制，作用于英文/音标/中文）。默认值与历史渲染逐像素一致。
+    逐字符绘制，作用于英文/音标/中文）；font_en/font_ph/font_zh 为用户所选
+    字体（缺文字字形自动回退内置链）。默认值与历史渲染逐像素一致。
     """
     w = img.width
     fs = float(theme.get("font_scale", 1.0) or 1.0)
     sp = float(theme.get("letter_spacing", 0) or 0) * s
     max_w = w - int(240 * s)
-    en_font = _fit_font(draw, en, _FONT_EN_CARD, int(en_start * s * fs),
-                        int(30 * s), max_w, spacing=sp)
+    en_font = _fit_font(draw, en, _theme_font(theme, "font_en",
+                                              [_FONT_EN_CARD, FONT_EN], en),
+                        int(en_start * s * fs), int(30 * s), max_w, spacing=sp)
     en_lines = _wrap_words(draw, en, en_font, max_w, spacing=sp)
     line_h = en_font.size + int(theme.get("line_spacing", 14) * s)
-    ph_font = _cached_font(FONT_PH, int(34 * s * fs))
-    zh_font = _cached_font(FONT_ZH, int(42 * s * fs))
+    ph_font = _cached_font(_theme_font(theme, "font_ph", [FONT_PH], phonetic),
+                           int(34 * s * fs)) if phonetic else None
+    zh_font = _cached_font(_theme_font(theme, "font_zh", [FONT_ZH], zh),
+                           int(42 * s * fs)) if zh else None
     ph_h = (ph_font.size + int(10 * s)) if phonetic else 0
     zh_h = (zh_font.size + int(12 * s)) if zh else 0
     y = cy - (len(en_lines) * line_h + ph_h + zh_h) / 2
@@ -539,7 +563,8 @@ def render_intro_card(theme: dict, out_path: str,
                 draw.text((x, y), part, font=f, fill=fill,
                           stroke_width=stroke, stroke_fill=fill)
                 x += draw.textlength(part, font=f)
-    sub_font = _cached_font(FONT_ZH, int(34 * s))
+    sub_font = _cached_font(_theme_font(theme, "font_zh", [FONT_ZH],
+                                        "閉上眼睛 · 輕鬆聽"), int(34 * s))
     sub = "閉上眼睛 · 輕鬆聽"
     box = draw.textbbox((0, 0), sub, font=sub_font)
     draw.text(((w - (box[2] - box[0])) / 2, h / 2 + int(60 * s)), sub,
@@ -560,7 +585,9 @@ def render_outro_card(theme: dict, out_path: str, outro_text: str,
     _draw_badge(draw, card, theme, badge_text, s)
     text = (outro_text or "Thanks for listening. See you next time!").strip()
     max_w = w - int(300 * s)
-    en_font = _fit_font(draw, text, _FONT_EN_CARD, int(64 * s), int(30 * s), max_w)
+    en_font = _fit_font(draw, text, _theme_font(theme, "font_en",
+                                                [_FONT_EN_CARD, FONT_EN], text),
+                        int(64 * s), int(30 * s), max_w)
     lines = _wrap_words(draw, text, en_font, max_w)
     y = h / 2 - len(lines) * (en_font.size + int(14 * s)) / 2
     for ln in lines:
@@ -593,7 +620,8 @@ def render_sleep_thumbnail(script: dict, theme: dict, out_path: str,
                      _hex_rgb(theme["en_b"], (224, 90, 18)), theme, en_start=56, s=s)
     strip = str(script.get("thumbnail_subtitle", "") or "").strip()
     if strip:
-        st_font = _cached_font(FONT_ZH, int(44 * s))
+        st_font = _cached_font(_theme_font(theme, "font_zh", [FONT_ZH], strip),
+                               int(44 * s))
         box = draw.textbbox((0, 0), strip, font=st_font)
         pad_x = int(26 * s)
         sw = box[2] - box[0] + pad_x * 2
