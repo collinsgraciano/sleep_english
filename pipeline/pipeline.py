@@ -658,6 +658,19 @@ def _step5_compose(args, checkpoint: dict, script: dict, work_dir: Path, dirs: d
         _auto_bg = str(work_dir / "images" / "sleep_bg.png")
         if os.path.exists(_auto_bg):
             _theme["bg_image_path"] = _auto_bg
+    # 频道 Logo：总开关关闭=完全不叠加；开启时显式路径优先，
+    # 空则自动探测频道工坊素材（configs/channel_assets/{channel_id}/logo.png；
+    # pipeline 自包含不 import app）
+    _logo_path = ""
+    if getattr(args, "sleep_logo", False):
+        _logo_path = str(getattr(args, "sleep_logo_path", "") or "")
+        if not _logo_path:
+            _cid = str(getattr(args, "channel_id", "") or "")
+            if _cid:
+                _cand = (Path(__file__).resolve().parent.parent / "configs"
+                         / "channel_assets" / _cid / "logo.png")
+                if _cand.exists():
+                    _logo_path = str(_cand)
     final_path = compose_sleep(
         work_dir=str(work_dir),
         timeline=timeline,
@@ -678,6 +691,11 @@ def _step5_compose(args, checkpoint: dict, script: dict, work_dir: Path, dirs: d
         card_lead=float(getattr(args, "sleep_card_lead", 0.3) or 0.0),
         xfade_sec=(float(getattr(args, "sleep_xfade_sec", 0.5) or 0.5)
                    if getattr(args, "sleep_xfade", False) else 0.0),
+        logo_path=_logo_path,
+        logo_position=str(getattr(args, "sleep_logo_position", "top_right")
+                          or "top_right"),
+        logo_size=int(getattr(args, "sleep_logo_size", 96) or 96),
+        logo_opacity=int(getattr(args, "sleep_logo_opacity", 90) or 90),
         progress_cb=progress_cb,
         stop_check=stop_check,
     )
@@ -902,6 +920,16 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument("--sleep-bg-image-path", default="", help="背景图固定本地路径（填了共用；空=按本期主题 AI 生成）")
     parser.add_argument("--sleep-bg-opacity", type=int, default=20, help="背景图不透明度百分比（0-100，默认 20）")
     parser.add_argument("--sleep-4k-native", action="store_true", help="卡片原生 3840x2160 渲染（成片即 4K；默认关=720p 合成后 Step6 放大）")
+    # --- 频道 Logo 水印 ---
+    parser.add_argument("--sleep-logo", action=argparse.BooleanOptionalAction, default=True,
+                        help="频道 Logo 全片水印（片头/卡片/片尾统一叠加；默认开，无素材自动跳过）")
+    parser.add_argument("--sleep-logo-path", default="",
+                        help="Logo 图片路径（空=自动用 configs/channel_assets/{channel_id}/logo.png 频道工坊素材）")
+    parser.add_argument("--sleep-logo-position", default="top_right",
+                        choices=["top_left", "top_right", "bottom_left", "bottom_right"],
+                        help="Logo 位置（默认 top_right）")
+    parser.add_argument("--sleep-logo-size", type=int, default=96, help="Logo 尺寸 px@720p（默认 96）")
+    parser.add_argument("--sleep-logo-opacity", type=int, default=90, help="Logo 不透明度 %%（10-100，默认 90）")
     # --- LLM ---
     parser.add_argument("--mcp-tokens", default=None, help="TJGenerators MCP OAuth tokens（仅 AI 缩略图/背景图消费，逗号分隔多 token 轮换）")
     parser.add_argument("--image-provider", default="mcp", choices=["mcp", "sensenova"],

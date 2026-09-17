@@ -141,6 +141,7 @@
         </div>
     </div>
 </div>
+<input type="file" id="logo-file-input" accept="image/png,image/jpeg,image/webp" class="hidden">
 {% endblock %}
 
 {% block scripts %}
@@ -194,8 +195,11 @@ function renderChannels() {
         return `
         <div class="bg-slate-800 border ${c.status === 'active' ? 'border-slate-700' : 'border-slate-700/40 opacity-70'} rounded-xl p-4 space-y-2">
             <div class="flex items-start gap-3">
-                <img src="/api/channels/${esc(c.id)}/asset/logo" onerror="this.outerHTML='<div class=\\'w-12 h-12 rounded-full bg-slate-700 flex items-center justify-center text-slate-500 text-lg shrink-0\\'>📺</div>'"
-                    class="w-12 h-12 rounded-full object-cover border-2 border-slate-600 shrink-0">
+                <span class="relative shrink-0 cursor-pointer" onclick="uploadLogo('${esc(c.id)}')" title="点击上传/更换 Logo（生成时叠加全片水印；素材与频道工坊共用）">
+                    <img id="logo-${esc(c.id)}" src="/api/channels/${esc(c.id)}/asset/logo" onerror="this.style.display='none';document.getElementById('logo-ph-${esc(c.id)}').style.display='flex'"
+                        class="w-12 h-12 rounded-full object-cover border-2 border-slate-600">
+                    <span id="logo-ph-${esc(c.id)}" style="display:none" class="w-12 h-12 rounded-full bg-slate-700 items-center justify-center text-slate-500 text-lg">📺</span>
+                </span>
                 <div class="flex-1 min-w-0">
                     <div class="text-sm font-bold text-white truncate">${esc(c.name_en)}</div>
                     <div class="text-xs text-amber-300 truncate">${esc(c.name_zh)}</div>
@@ -500,6 +504,21 @@ function closeModal(id) {
     const m = document.getElementById(id);
     m.classList.add('hidden');
     m.classList.remove('flex');
+}
+
+// ---------- Logo 上传/更换（素材与频道工坊共用同路径） ----------
+function uploadLogo(cid) {
+    const inp = document.getElementById('logo-file-input');
+    inp.value = '';
+    inp.onchange = async () => {
+        if (!inp.files[0]) return;
+        const fd = new FormData();
+        fd.append('file', inp.files[0]);
+        const r = await fetch(`/api/channels/${cid}/asset/logo`, {method: 'POST', body: fd}).then(r => r.json()).catch(() => ({}));
+        if (!r.ok) return alert(r.error || '上传失败');
+        await refresh();
+    };
+    inp.click();
 }
 
 refresh();

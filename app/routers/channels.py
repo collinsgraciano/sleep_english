@@ -11,11 +11,14 @@
 - 主题库 AI 生成复用 topics_ai.generate_topics，hint 自动注入频道定位
 """
 import asyncio
+import io
 import json
+import os
 import random
+import time
 from pathlib import Path
 
-from fastapi import APIRouter, Request
+from fastapi import APIRouter, File, Request, UploadFile
 from fastapi.responses import FileResponse, JSONResponse, StreamingResponse
 
 from ..batch_queue_service import get_batch_queue
@@ -246,6 +249,42 @@ async def api_channel_asset(cid: str, kind: str):
                             status_code=404)
     return FileResponse(path, media_type="image/png",
                         headers={"Cache-Control": "no-cache"})
+
+
+@router.post("/api/channels/{cid}/asset/logo")
+async def upload_channel_logo(cid: str, file: UploadFile = File(...)):
+    """上传/更换频道 Logo（写入工坊素材同路径，两源统一；合成端直接叠加）。
+
+    统一转存 PNG RGBA 并居中裁方形（最长边≤1024），与工坊生成的
+    1024x1024 logo.png 规格对齐；tmp→os.replace 原子写防半文件。"""
+    if get_channel(cid) is None:
+        return JSONResponse({"ok": False, "error": "频道不存在"}, status_code=404)
+    ctype = (file.content_type or "").lower()
+    if ctype not in ("image/png", "image/jpeg", "image/webp"):
+        return JSONResponse({"ok": False, "error": "仅支持 PNG/JPG/WebP 图片"}, status_code=400)
+    raw = await file.read()
+    if not raw or len(raw) > 8 * 1024 * 1024:
+        return JSONResponse({"ok": False, "error": "图片为空或超过 8MB"}, status_code=400)
+    from PIL import Image
+    try:
+        img = Image.open(io.BytesIO(raw))
+        img.load()
+    except Exception:
+        return JSONResponse({"ok": False, "error": "图片解析失败"}, status_code=400)
+    if img.width != img.height:  # 居中裁方形（合成端按方形等比缩放）
+        side = min(img.size)
+        left = (img.width - side) // 2
+        top = (img.height - side) // 2
+        img = img.crop((left, top, left + side, top + side))
+    if img.width > 1024:
+        img = img.resize((1024, 1024), Image.LANCZOS)
+    dest_dir = CHANNEL_ASSETS_DIR / cid
+    dest_dir.mkdir(parents=True, exist_ok=True)
+    dest = dest_dir / "logo.png"
+    tmp = dest_dir / ".logo.tmp.png"
+    img.convert("RGBA").save(tmp, "PNG")
+    os.replace(tmp, dest)
+    return {"ok": True, "logo_at": time.time()}
 
 
 # ===========================================================================

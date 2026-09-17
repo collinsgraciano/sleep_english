@@ -37,8 +37,37 @@ def _run_ffmpeg(cmd: list[str]) -> subprocess.CompletedProcess:
                           timeout=BLOCK_TIMEOUT)
 
 
+def _logo_overlay(logo_path: str, position: str, size: int, opacity: int,
+                  out_h: int) -> tuple[list[str], str]:
+    """构造频道 Logo 叠加的 ffmpeg 输入段与 filter_complex 视频段。
+
+    logo 作为额外输入（单帧 PNG，overlay 默认 eof_action=repeat 持续显示，
+    调用方音频输入索引需顺延 1）；尺寸/边距按 px@720p 定义、随输出分辨率
+    等比缩放；透明度经 colorchannelmixer 均匀调 alpha。
+    返回 (输入参数段, 视频滤镜段：[bg]+[lg]→overlay→[vout])。
+    """
+    k = out_h / TARGET_H
+    s = max(8, round(size * k))
+    m = max(4, round(size * 0.35 * k))
+    if position == "top_left":
+        xy = (f"{m}", f"{m}")
+    elif position == "bottom_left":
+        xy = (f"{m}", f"main_h-overlay_h-{m}")
+    elif position == "bottom_right":
+        xy = (f"main_w-overlay_w-{m}", f"main_h-overlay_h-{m}")
+    else:  # top_right（默认）
+        xy = (f"main_w-overlay_w-{m}", f"{m}")
+    alpha = min(1.0, max(0.1, float(opacity or 90) / 100.0))
+    inputs = ["-i", str(logo_path)]
+    chain = (f"[1:v]scale={s}:-1,format=rgba,"
+             f"colorchannelmixer=aa={alpha:.2f}[lg];"
+             f"[bg][lg]overlay={xy[0]}:{xy[1]}[vout]")
+    return inputs, chain
+
+
 def _build_audio_chain(block_segs: list[dict], audio_paths: dict,
-                       lead: float = 0.0) -> tuple[str, list[str]]:
+                       lead: float = 0.0,
+                       audio_start: int = 1) -> tuple[str, list[str]]:
     """块内音频 filter_complex：朗读文件 + 静音气口统一 44100 立体声 concat。
 
     返回 (filter_complex 字符串, ffmpeg 输入参数列表)。段音频按段类型查：
@@ -55,8 +84,8 @@ def _build_audio_chain(block_segs: list[dict], audio_paths: dict,
     inputs: list[str] = []
     chains: list[str] = []
     concat_refs: list[str] = []
-    # 输入 0 = 卡片图（-loop 1，无音频流），音频输入索引从 1 起
-    state = {"n": 1}
+    # 卡片图占用输入 0（无音频流）；logo 存在时占输入 1，音频从 audio_start 起
+    state = {"n": audio_start}
     first_pair = True  # 每块 = 一组（或 intro/outro），首 pair 段承担卡片提前量
 
     def _push_silence(sec: float) -> None:
@@ -106,36 +135,65 @@ def _build_audio_chain(block_segs: list[dict], audio_paths: dict,
 
 
 def _build_video_block(intro_video: str, block_segs: list[dict], out_path: str,
-                       vf: str, volume_db: float = 0.0) -> None:
+                       vf: str, volume_db: float = 0.0,
+                       logo: tuple[list[str], str] | None = None) -> None:
     """绑定片头/片尾视频时的 intro/outro 块：整段转码统一规格（音画随视频自带）。
 
-    volume_db≠0 时对视频自带音轨做音量偏移（默认 0=原样；该命令无
-    filter_complex，-af 可与 -vf 共存）。"""
+    volume_db≠0 时对视频自带音轨做音量偏移。logo=(输入段, 视频滤镜段) 时
+    滤镜全部并入 filter_complex（-af 不能与 -filter_complex 共存，
+    volume 一并写入 graph），不再走 -vf。"""
     block_dur = round(sum(float(seg.get("duration", 0.0)) for seg in block_segs), 3)
-    cmd = ["ffmpeg", "-y", "-i", intro_video,
-           "-vf", vf]
-    if volume_db:
-        cmd += ["-af", f"volume={volume_db:.2f}dB"]
-    cmd += ["-t", f"{block_dur:.3f}",
-            "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", "25",
-            "-c:a", "aac", "-b:a", "128k", "-ar", "44100", "-ac", "2",
-            out_path]
+    lg_inputs, lg_chain = logo or ([], "")
+    if lg_inputs:
+        parts = [f"[0:v]{vf}[bg]", lg_chain]
+        audio_map = "0:a:0"
+        if volume_db:
+            parts.append(f"[0:a]volume={volume_db:.2f}dB[aout]")
+            audio_map = "[aout]"
+        cmd = ["ffmpeg", "-y", "-i", intro_video, *lg_inputs,
+               "-filter_complex", ";".join(parts),
+               "-map", "[vout]", "-map", audio_map,
+               "-t", f"{block_dur:.3f}",
+               "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", "25",
+               "-c:a", "aac", "-b:a", "128k", "-ar", "44100", "-ac", "2",
+               out_path]
+    else:
+        cmd = ["ffmpeg", "-y", "-i", intro_video,
+               "-vf", vf]
+        if volume_db:
+            cmd += ["-af", f"volume={volume_db:.2f}dB"]
+        cmd += ["-t", f"{block_dur:.3f}",
+                "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", "25",
+                "-c:a", "aac", "-b:a", "128k", "-ar", "44100", "-ac", "2",
+                out_path]
     r = _run_ffmpeg(cmd)
     if r.returncode != 0 or not os.path.exists(out_path) or os.path.getsize(out_path) < 1000:
         raise RuntimeError(f"FFmpeg intro video block failed: {(r.stderr or '')[-300:]}")
 
 
 def _build_block(card_path: str, block_segs: list[dict], audio_paths: dict,
-                 out_path: str, vf: str, lead: float = 0.0) -> None:
-    """构建一个块 mp4（静态卡 + 音频链）。"""
+                 out_path: str, vf: str, lead: float = 0.0,
+                 logo: tuple[list[str], str] | None = None) -> None:
+    """构建一个块 mp4（静态卡 + 音频链）。
+
+    logo=(输入段, 视频滤镜段) 时视频流并入 filter_complex：
+    [0:v]→vf→[bg] 叠 logo→[vout]，不再走 -vf；音频输入索引顺延 1。"""
     block_dur = round(sum(float(seg.get("duration", 0.0)) for seg in block_segs), 3)
-    fg, inputs = _build_audio_chain(block_segs, audio_paths, lead=lead)
+    lg_inputs, lg_chain = logo or ([], "")
+    fg, inputs = _build_audio_chain(block_segs, audio_paths, lead=lead,
+                                    audio_start=2 if lg_inputs else 1)
     cmd = ["ffmpeg", "-y", "-loop", "1", "-i", card_path]
+    cmd += lg_inputs  # logo 输入占用索引 1（无音频流）
     cmd += inputs  # 已含 "-i <file>" 与 "-f lavfi -i anullsrc=..." 完整参数片段
-    cmd += ["-filter_complex", fg,
-            "-map", "0:v:0", "-map", "[aout]",
+    if lg_inputs:
+        # 视频流并入 graph：vf 先产出 [bg]（不再走 -vf），再叠 logo
+        cmd += ["-filter_complex", f"[0:v]{vf}[bg];" + lg_chain + ";" + fg,
+                "-map", "[vout]"]
+    else:
+        cmd += ["-filter_complex", fg,
+                "-map", "0:v:0", "-vf", vf]
+    cmd += ["-map", "[aout]",
             "-t", f"{block_dur:.3f}",
-            "-vf", vf,
             "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", "25",
             "-c:a", "aac", "-b:a", "128k", "-ar", "44100", "-ac", "2",
             out_path]
@@ -187,6 +245,8 @@ def compose_sleep(work_dir: str, timeline: list[dict], script: dict,
                   intro_volume_db: float = 0.0, outro_volume_db: float = 0.0,
                   native_4k: bool = False,
                   card_lead: float = 0.0, xfade_sec: float = 0.0,
+                  logo_path: str = "", logo_position: str = "top_right",
+                  logo_size: int = 96, logo_opacity: int = 90,
                   progress_cb=None, stop_check=None) -> str:
     """合成 sleep 成片。返回最终 mp4 路径（videos/{safe}.mp4）。
 
@@ -197,6 +257,16 @@ def compose_sleep(work_dir: str, timeline: list[dict], script: dict,
     """
     out_w, out_h = (3840, 2160) if native_4k else (TARGET_W, TARGET_H)
     vf = _output_vf(out_w, out_h)
+    # 频道 Logo 水印（全片叠加；文件缺失只跳过不报错）
+    logo: tuple[list[str], str] | None = None
+    if logo_path:
+        if os.path.exists(logo_path):
+            logo = _logo_overlay(logo_path, logo_position, logo_size,
+                                 logo_opacity, out_h)
+            print(f"  [Sleep] Logo overlay: {Path(logo_path).name} "
+                  f"@{logo_position} size={logo_size} opacity={logo_opacity}%")
+        else:
+            print(f"  [Sleep] Logo file not found, skip overlay: {logo_path}")
     work = Path(work_dir)
     vid_dir = work / "videos"
     vid_dir.mkdir(parents=True, exist_ok=True)
@@ -258,26 +328,26 @@ def compose_sleep(work_dir: str, timeline: list[dict], script: dict,
             try:
                 if is_intro_video:
                     _build_video_block(intro_video, block_segs, out_path, vf,
-                                       volume_db=intro_volume_db)
+                                       volume_db=intro_volume_db, logo=logo)
                 elif is_outro_video:
                     _build_video_block(outro_video, block_segs, out_path, vf,
-                                       volume_db=outro_volume_db)
+                                       volume_db=outro_volume_db, logo=logo)
                 else:
                     _build_block(card, block_segs, audio_results, out_path, vf,
-                                 lead=card_lead)
+                                 lead=card_lead, logo=logo)
             except RuntimeError as e:
                 if str(e) == "stopped":
                     raise
                 print(f"  [Sleep] Block {bi} failed ({e}), retry once...")
                 if is_intro_video:
                     _build_video_block(intro_video, block_segs, out_path, vf,
-                                       volume_db=intro_volume_db)
+                                       volume_db=intro_volume_db, logo=logo)
                 elif is_outro_video:
                     _build_video_block(outro_video, block_segs, out_path, vf,
-                                       volume_db=outro_volume_db)
+                                       volume_db=outro_volume_db, logo=logo)
                 else:
                     _build_block(card, block_segs, audio_results, out_path, vf,
-                                 lead=card_lead)
+                                 lead=card_lead, logo=logo)
         block_paths.append(out_path)
         if bi % 10 == 0 or bi == total - 1:
             _cb(int(2 + bi / total * 78),
