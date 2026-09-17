@@ -27,6 +27,9 @@ CHANNELS_DIR = CONFIGS_DIR / "channels"
 # 片头库（sleep 模式 10 秒片头：本地动画 / MCP AI 视频，Web 生成入库）
 INTRO_VIDEOS_DIR = CONFIGS_DIR / "intro_videos"
 INTRO_LIBRARY_PATH = CONFIGS_DIR / "intro_library.json"
+# 片尾库（sleep 模式片尾：与片头库同机制，绑定键 sleep_outro_video）
+OUTRO_VIDEOS_DIR = CONFIGS_DIR / "outro_videos"
+OUTRO_LIBRARY_PATH = CONFIGS_DIR / "outro_library.json"
 
 
 def ensure_pipeline_on_path() -> None:

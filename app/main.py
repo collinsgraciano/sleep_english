@@ -24,6 +24,7 @@ from .routers import (
     health as health_routes,
     intro_videos as intro_videos_routes,
     mcp_tokens as mcp_tokens_routes,
+    outro_videos as outro_videos_routes,
     pages as pages_routes,
     run as run_routes,
     runs as runs_routes,
@@ -65,6 +66,8 @@ app.include_router(channel_factory_routes.router)
 app.include_router(channels_routes.router)
 # 片头库（sleep 模式 10 秒片头生成入库 + 绑定）
 app.include_router(intro_videos_routes.router)
+# 片尾库（sleep 模式片尾生成入库 + 绑定，与片头库同机制）
+app.include_router(outro_videos_routes.router)
 app.include_router(health_routes.router)
 app.include_router(voices_qwen_routes.router)
 app.include_router(voices_kokoro_routes.router)

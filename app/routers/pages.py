@@ -568,4 +568,24 @@ async def intro_videos_page(request: Request, channel: str = ""):
     })
 
 
+@router.get("/outro_videos", response_class=HTMLResponse)
+async def outro_videos_page(request: Request, channel: str = ""):
+    """片尾库：sleep 模式片尾生成（本地动画 / AI 视频）+ 入库管理。
+
+    ?channel= 频道上下文：页面读写该频道的独立片尾库与配置快照。
+    场景主题复用片头库 PROMPT_THEMES（氛围场景对片尾同样适用）。"""
+    channel = str(channel or "").strip()
+    if channel:
+        from ..channel_profiles import load_channel_config
+        config = load_channel_config(channel)
+    else:
+        config = load_config()
+    return templates.TemplateResponse(request, "outro_videos.html", {
+        "config": config,
+        "page_channel": channel,
+        "prompt_themes": PROMPT_THEMES,
+        "active_page": "outro_videos",
+    })
+
+
 # ===========================================================================

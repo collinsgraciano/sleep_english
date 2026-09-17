@@ -1,0 +1,583 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="p-6 max-w-[1600px] mx-auto space-y-6">
+
+    <!-- Header + Generate form -->
+    <div class="bg-slate-800 border border-slate-700 rounded-xl p-5">
+        <div class="flex items-center gap-3 mb-1">
+            <h2 class="text-lg font-bold text-white flex items-center gap-2"><span>🎬</span> 片尾库</h2>
+            {% if page_channel %}
+            <span class="px-2 py-0.5 bg-indigo-600 rounded text-[10px] text-white shrink-0">🎞️ 频道独立库</span>
+            <span class="text-xs text-slate-500">本页读写频道「{{ page_channel }}」的独立片尾库 —— 生成 / 上传 / 绑定 / 删除均不影响其它频道与全局库</span>
+            {% else %}
+            <span class="text-xs text-slate-500">片尾生成（4-15 秒可设）/ 上传自定义视频 → 入库保存 → 绑定给 Sleep 模式反复使用</span>
+            {% endif %}
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-3 mt-4">
+            <div>
+                <label class="text-xs text-slate-400 block mb-1">频道名（片尾主文字，自动记住填过的名字）</label>
+                <input type="text" id="ov-channel" list="channel-history" value="{{ config.get('sleep_channel_name', '') or 'English with me' }}"
+                    class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white">
+                <datalist id="channel-history"></datalist>
+            </div>
+            <div>
+                <label class="text-xs text-slate-400 block mb-1">生成路线</label>
+                <select id="ov-route" onchange="toggleRoute()" class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white">
+                    <option value="local">本地动画（零积分，~1-2 分钟）</option>
+                    <option value="ai">AI 视频（MCP 耗积分，~3-10 分钟）</option>
+                </select>
+            </div>
+            <div>
+                <label class="text-xs text-slate-400 block mb-1">片尾文案（副题显示 + 开启播报时朗读；留空 = 配置的片尾结束语）</label>
+                <input type="text" id="ov-outro-text" value="{{ config.get('sleep_outro_text', '') or 'Thanks for listening. See you next time!' }}"
+                    class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white">
+            </div>
+            <div>
+                <label class="text-xs text-slate-400 block mb-1">BGM 配乐（留空片尾无声，成片时由 bgm_mix 统一混入）</label>
+                <select id="ov-bgm" class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white">
+                    <option value="none">🚫 不使用 BGM（成片时统一混入）</option>
+                    <option value="">🎲 随机一首</option>
+                </select>
+            </div>
+            <div id="ov-scene-wrap" class="md:col-span-2 xl:col-span-4 hidden">
+                <label class="text-xs text-slate-400 block mb-1">AI 画面描述（留空 = 默认静谧收尾夜景；频道名由 AI 画进画面，出现瞬间自动播报片尾文案）</label>
+                <textarea id="ov-scene" rows="2"
+                    placeholder="A serene dreamy night scene: soft clouds under a starry sky, moonlight gently fading, fireflies settling down, slow calm camera drift, 3D Pixar animation style"
+                    class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white placeholder:text-slate-500 resize-none"></textarea>
+            </div>
+            <div class="flex items-end gap-3">
+                <div>
+                    <label class="text-xs text-slate-400 block mb-1" title="片尾视频时长（秒，4-15）">时长（秒）</label>
+                    <input type="number" id="ov-duration" value="10" min="4" max="15" step="1"
+                        class="w-20 bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white">
+                </div>
+                <div>
+                    <label class="text-xs text-slate-400 block mb-1" title="BGM 音量（dB，越小越轻）">BGM 音量 dB</label>
+                    <input type="number" id="ov-volume" value="-16" min="-40" max="0" step="1"
+                        class="w-24 bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white">
+                </div>
+                <label class="flex items-center gap-2 text-sm text-slate-300 pb-2 cursor-pointer" title="混入片尾文案男声播报（默认开启，可取消）">
+                    <input type="checkbox" id="ov-announce" checked class="w-4 h-4 accent-indigo-500"> 🗣️ 播报结束语
+                </label>
+                <button onclick="startGenerate()" id="btn-generate"
+                    class="ml-auto px-5 py-2 bg-indigo-600 hover:bg-indigo-500 disabled:opacity-50 disabled:cursor-not-allowed rounded-lg text-sm text-white font-medium transition">
+                    🎬 生成片尾
+                </button>
+            </div>
+        </div>
+        <div class="mt-3 flex items-center gap-2">
+            <span id="gen-status" class="text-xs text-slate-400"></span>
+            <span class="text-[11px] text-slate-500 ml-auto">配色沿用「参数配置 → Sleep」主题色；绑定后每次运行自动用作片尾（替换静态片尾卡）。</span>
+        </div>
+    </div>
+
+    <!-- ✨ AI 画面提示词（LLM 生成） -->
+    <div class="bg-slate-800 border border-slate-700 rounded-xl p-5">
+        <div class="flex items-center gap-3 flex-wrap">
+            <h3 class="text-sm font-bold text-white flex items-center gap-2">✨ AI 画面提示词
+                <span class="text-xs font-normal text-slate-500 hidden sm:inline">只填频道名即可，LLM 生成 10 个片尾创意（场景主题可选）：频道名画进画面 + 简中说明（英文短名拼写更稳）</span>
+            </h3>
+            <button onclick="genPrompts()" id="btn-prompts"
+                class="ml-auto px-4 py-1.5 bg-purple-600 hover:bg-purple-500 disabled:opacity-50 disabled:cursor-not-allowed rounded-lg text-xs text-white font-medium transition">✨ 生成 10 个提示词</button>
+            <span id="prompts-status" class="text-xs text-slate-400"></span>
+        </div>
+        <div id="theme-tags" class="flex flex-wrap gap-1.5 mt-3">
+            <button type="button" data-theme="" onclick="pickTheme('')"
+                class="px-2.5 py-1 rounded-full text-xs border bg-slate-900/60 border-slate-600 text-slate-300 hover:border-purple-500 transition cursor-pointer">🎲 全部主题</button>
+            {% for t in prompt_themes %}
+            <button type="button" data-theme="{{ t.id }}" onclick="pickTheme('{{ t.id }}')"
+                class="px-2.5 py-1 rounded-full text-xs border bg-slate-900/60 border-slate-600 text-slate-300 hover:border-purple-500 transition cursor-pointer">{{ t.label }}</button>
+            {% endfor %}
+        </div>
+        <div id="prompts-grid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3 mt-3 hidden"></div>
+        <div id="prompts-hint" class="text-xs text-slate-500 mt-2 hidden">点主题标签 → 单独生成该主题的一批；「🎲 全部主题」= 10 条覆盖全部主题各 1 条。点选任意卡片 → 自动填入上方「AI 画面描述」并切到 AI 视频路线（生成前仍可手动微调文字）；点「📋 复制」→ 复制提示词原文，可粘贴到外部 AI 工具</div>
+    </div>
+
+    <!-- ⬆️ 上传自定义片尾 -->
+    <div class="bg-slate-800 border border-slate-700 rounded-xl p-5">
+        <div class="flex items-center gap-3 flex-wrap">
+            <h3 class="text-sm font-bold text-white flex items-center gap-2">⬆️ 上传自定义片尾
+                <span class="text-xs font-normal text-slate-500 hidden sm:inline">支持 mp4/mov/webm/mkv/m4v/avi（≤200MB），自动标准化 1280x720/25fps 并保留原声与原时长</span>
+            </h3>
+        </div>
+        <div class="flex items-end gap-3 mt-3 flex-wrap">
+            <div>
+                <label class="text-xs text-slate-400 block mb-1">片尾名称（留空用文件名）</label>
+                <input type="text" id="up-name" placeholder="例如：晚安星空版"
+                    class="w-56 bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white placeholder:text-slate-500">
+            </div>
+            <div>
+                <label class="text-xs text-slate-400 block mb-1">视频文件</label>
+                <input type="file" id="up-file" accept=".mp4,.mov,.webm,.mkv,.m4v,.avi,video/mp4,video/quicktime,video/webm"
+                    class="text-sm text-slate-300 file:mr-3 file:px-3 file:py-1.5 file:rounded-lg file:border-0 file:bg-slate-700 file:text-slate-200 file:cursor-pointer hover:file:bg-slate-600">
+            </div>
+            <button onclick="uploadOutro()" id="btn-upload"
+                class="px-5 py-2 bg-sky-600 hover:bg-sky-500 disabled:opacity-50 disabled:cursor-not-allowed rounded-lg text-sm text-white font-medium transition">⬆️ 上传入库</button>
+        </div>
+    </div>
+
+    <!-- Task logs -->
+    <div id="task-panel" class="hidden bg-slate-800 border border-slate-700 rounded-xl p-4">
+        <div class="text-sm font-medium text-white mb-2">⏳ 生成进度 <span id="task-status" class="text-xs text-slate-400 ml-2"></span></div>
+        <pre id="task-logs" class="text-[11px] leading-5 text-slate-400 bg-slate-900 rounded-lg p-3 max-h-48 overflow-y-auto whitespace-pre-wrap"></pre>
+    </div>
+
+    <!-- Library -->
+    <section>
+        <h3 class="text-base font-bold text-white flex items-center gap-2 mb-3">🎞️ 已保存片尾
+            <span id="lib-count" class="text-xs font-normal text-slate-500"></span>
+        </h3>
+        <div id="lib-bind-warning" class="hidden mb-3 px-4 py-2 rounded-lg bg-amber-900/40 border border-amber-600/50 text-amber-300 text-xs">
+            ⚠ 当前绑定的片尾属于全局库（历史绑定），不在本频道库中 —— 运行仍会使用它；在频道库内生成 / 上传后可重新绑定
+        </div>
+        <div id="lib-grid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4"></div>
+        <div id="lib-empty" class="text-center text-slate-500 text-sm py-10">
+            <div class="text-4xl mb-3">🎬</div>
+            <p>还没有片尾 —— 填写频道名与片尾文案，点击「生成片尾」，生成后点「用于 Sleep」绑定</p>
+        </div>
+    </section>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+// 频道上下文（URL ?channel= 为唯一事实源）：本页所有库操作读写该频道的
+// 独立片尾库；空 = 全局库（历史行为）。status/prompts_status 为全局单槽不带频道。
+const CHAN = new URLSearchParams(location.search).get('channel') || '';
+function api(url) {
+    if (!CHAN) return url;
+    return url + (url.includes('?') ? '&' : '?') + 'channel=' + encodeURIComponent(CHAN);
+}
+
+let OUTROS = [];
+let _genBusy = false;
+let _genTimer = null;
+let PROMPTS = [];
+let _promptsBusy = false;
+let _promptsTimer = null;
+let _selPrompt = -1;
+let _selTheme = '';
+// 主题标签记忆（localStorage 按频道隔离，空 = 全部主题）
+const THEME_KEY = 'outro_prompt_theme' + (CHAN ? '__' + CHAN : '');
+let _upBusy = false;
+
+function esc(s) {
+    return String(s ?? '').replace(/[&<>"']/g, c => ({
+        '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+    }[c]));
+}
+function copyText(text, btn) {
+    const done = () => {
+        if (!btn) return;
+        const old = btn.textContent;
+        btn.textContent = '✅ 已复制';
+        setTimeout(() => { btn.textContent = old; }, 1500);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(done).catch(() => _copyFallback(text, done));
+    } else {
+        _copyFallback(text, done);
+    }
+}
+function _copyFallback(text, done) {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand('copy'); done(); } catch (e) { alert('复制失败，请手动选择文本复制'); }
+    document.body.removeChild(ta);
+}
+
+// ---------- 频道名历史（localStorage 记住填过的名字，最新在前，最多 20 条；
+// 键按频道隔离：不同频道的名字历史互不污染） ----------
+const CHAN_HIST_KEY = 'outro_channel_history' + (CHAN ? '__' + CHAN : '');
+function loadChannelHistory() {
+    try { return JSON.parse(localStorage.getItem(CHAN_HIST_KEY) || '[]'); } catch (e) { return []; }
+}
+function renderChannelHistory() {
+    document.getElementById('channel-history').innerHTML =
+        loadChannelHistory().map(n => `<option value="${esc(n)}"></option>`).join('');
+}
+function rememberChannel(name) {
+    name = (name || '').trim();
+    if (!name) return;
+    const hist = loadChannelHistory().filter(x => x !== name);
+    hist.unshift(name);
+    try { localStorage.setItem(CHAN_HIST_KEY, JSON.stringify(hist.slice(0, 20))); } catch (e) {}
+    renderChannelHistory();
+}
+
+// ---------- 记住上次使用的设置（localStorage，生成时与更改时都存，进页自动还原；
+// 键按频道隔离：多频道多标签页并行互不覆盖） ----------
+const SETTINGS_KEY = 'outro_last_settings' + (CHAN ? '__' + CHAN : '');
+const SETTINGS_FIELDS = [
+    { id: 'ov-channel', type: 'value' },
+    { id: 'ov-route', type: 'value' },
+    { id: 'ov-outro-text', type: 'value' },
+    { id: 'ov-bgm', type: 'value' },
+    { id: 'ov-duration', type: 'value' },
+    { id: 'ov-volume', type: 'value' },
+    { id: 'ov-announce', type: 'checked' },
+    { id: 'ov-scene', type: 'value' },
+];
+function saveOutroSettings() {
+    const data = {};
+    for (const f of SETTINGS_FIELDS) {
+        const el = document.getElementById(f.id);
+        if (!el) continue;
+        data[f.id] = f.type === 'checked' ? el.checked : el.value;
+    }
+    try { localStorage.setItem(SETTINGS_KEY, JSON.stringify(data)); } catch (e) {}
+}
+function restoreOutroSettings() {
+    let data;
+    try { data = JSON.parse(localStorage.getItem(SETTINGS_KEY) || 'null'); } catch (e) { return; }
+    if (!data || typeof data !== 'object') return;
+    for (const f of SETTINGS_FIELDS) {
+        if (!(f.id in data)) continue;
+        const el = document.getElementById(f.id);
+        if (!el) continue;
+        if (f.type === 'checked') {
+            el.checked = !!data[f.id];
+        } else {
+            const v = String(data[f.id] ?? '');
+            if (el.tagName === 'SELECT' && ![...el.options].some(o => o.value === v)) continue;
+            el.value = v;
+        }
+    }
+    toggleRoute();
+}
+function toggleRoute() {
+    const isAI = document.getElementById('ov-route').value === 'ai';
+    document.getElementById('ov-scene-wrap').classList.toggle('hidden', !isAI);
+}
+
+// ---------- data ----------
+async function loadAll() {
+    const d = await fetch(api('/api/outro_videos')).then(r => r.json());
+    OUTROS = d.outros || [];
+    renderGrid(d.used);
+    document.getElementById('lib-bind-warning').classList.toggle('hidden', !d.used_missing);
+}
+async function loadBgm() {
+    const d = await fetch(api('/api/outro_videos/bgm_list')).then(r => r.json());
+    const sel = document.getElementById('ov-bgm');
+    sel.innerHTML = '<option value="none">🚫 不使用 BGM（成片时统一混入）</option>'
+        + '<option value="">🎲 随机一首</option>'
+        + (d.files || []).map(f =>
+            `<option value="${esc(f)}">${esc(f)}</option>`).join('');
+}
+
+// ---------- render ----------
+function renderGrid(usedId) {
+    const grid = document.getElementById('lib-grid');
+    const empty = document.getElementById('lib-empty');
+    document.getElementById('lib-count').textContent = OUTROS.length ? `${OUTROS.length} 个` : '';
+    empty.classList.toggle('hidden', !!OUTROS.length);
+    grid.innerHTML = OUTROS.map(p => {
+        const video = p.exists
+            ? `<video controls preload="metadata" src="${esc(p.video_url)}"
+                   class="w-full aspect-video bg-black rounded-lg border border-slate-600"></video>`
+            : `<div class="w-full aspect-video rounded-lg border-2 border-dashed border-slate-600 flex items-center justify-center text-xs text-slate-500">文件缺失</div>`;
+        const srcBadge = p.source === 'ai'
+            ? '<span class="px-1.5 py-0.5 bg-purple-900/60 text-purple-300 rounded text-[10px]">AI 视频</span>'
+            : (p.source === 'upload'
+                ? '<span class="px-1.5 py-0.5 bg-sky-900/60 text-sky-300 rounded text-[10px]">上传</span>'
+                : '<span class="px-1.5 py-0.5 bg-emerald-900/60 text-emerald-300 rounded text-[10px]">本地动画</span>');
+        const tags = [
+            srcBadge,
+            p.duration ? `<span class="px-1.5 py-0.5 bg-slate-700 rounded text-[10px] text-slate-300">${esc(p.duration)}s</span>` : '',
+            p.bgm ? `<span class="px-1.5 py-0.5 bg-slate-700 rounded text-[10px] text-slate-300" title="BGM">🎵 ${esc(p.bgm)}</span>` : '',
+            p.announce ? '<span class="px-1.5 py-0.5 bg-slate-700 rounded text-[10px] text-slate-300">🗣️ 播报</span>' : '',
+        ].join('');
+        const useBtn = p.used
+            ? `<button disabled class="flex-1 px-3 py-1.5 bg-emerald-600 rounded text-xs text-white cursor-default">✅ 当前使用</button>`
+            : `<button onclick="useOutro('${p.id}')" ${!p.exists ? 'disabled' : ''}
+                    class="flex-1 px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 disabled:opacity-40 rounded text-xs text-white transition">🎬 用于 Sleep</button>`;
+        return `
+        <div class="bg-slate-800 border ${p.used ? 'border-emerald-600/70' : 'border-slate-700'} rounded-xl p-3 space-y-2">
+            ${video}
+            <div class="flex items-start justify-between gap-2">
+                <div class="text-sm font-bold text-white truncate" title="${esc(p.name)}">${esc(p.name)}</div>
+                <div class="flex gap-1 shrink-0">${tags}</div>
+            </div>
+            <div class="flex gap-2 items-center">
+                ${useBtn}
+                <button onclick="deleteOutro('${p.id}')"
+                    class="px-3 py-1.5 bg-slate-700 hover:bg-red-700 rounded text-xs text-red-300 transition">🗑️</button>
+                <span class="text-[10px] text-slate-500 ml-auto">${new Date((p.created || 0) * 1000).toLocaleString('zh-CN')}</span>
+            </div>
+        </div>`;
+    }).join('');
+}
+
+// ---------- generate ----------
+async function startGenerate() {
+    if (_genBusy) return;
+    const btn = document.getElementById('btn-generate');
+    btn.disabled = true;
+    const body = {
+        channel: CHAN,
+        route: document.getElementById('ov-route').value,
+        channel_name: document.getElementById('ov-channel').value.trim(),
+        outro_text: document.getElementById('ov-outro-text').value.trim(),
+        bgm: document.getElementById('ov-bgm').value,
+        bgm_volume_db: parseFloat(document.getElementById('ov-volume').value) || -16,
+        announce: document.getElementById('ov-announce').checked,
+        scene_prompt: document.getElementById('ov-scene').value.trim(),
+        duration: parseFloat(document.getElementById('ov-duration').value) || 10,
+    };
+    rememberChannel(body.channel_name);
+    saveOutroSettings();
+    try {
+        const resp = await fetch(api('/api/outro_videos/generate'), {
+            method: 'POST', headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(body),
+        });
+        const data = await resp.json();
+        if (!resp.ok || !data.ok) throw new Error(data.error || `HTTP ${resp.status}`);
+        _genBusy = true;
+        document.getElementById('task-panel').classList.remove('hidden');
+        pollGen(Date.now());
+    } catch (e) {
+        alert('启动生成失败: ' + e.message);
+        btn.disabled = false;
+    }
+}
+function pollGen(startedAt) {
+    clearTimeout(_genTimer);
+    fetch('/api/outro_videos/status').then(r => r.json()).then(st => {
+        document.getElementById('task-logs').textContent = (st.logs || []).join('\n');
+        const logs = document.getElementById('task-logs');
+        logs.scrollTop = logs.scrollHeight;
+        const stEl = document.getElementById('task-status');
+        const el = document.getElementById('gen-status');
+        if (st.status === 'running') {
+            stEl.textContent = `⏳ ${Math.round((Date.now() - startedAt) / 1000)}s`;
+            el.textContent = '⏳ 片尾生成中...';
+            _genTimer = setTimeout(pollGen, 2000, startedAt);
+        } else {
+            _genBusy = false;
+            document.getElementById('btn-generate').disabled = false;
+            document.getElementById('task-panel').classList.add('hidden');
+            if (st.status === 'done') {
+                el.textContent = '✅ 片尾已生成入库';
+            } else if (st.status === 'error') {
+                el.textContent = '';
+                alert('片尾生成失败: ' + (st.error || '见日志'));
+            } else {
+                el.textContent = '';
+            }
+            loadAll();
+        }
+    }).catch(() => { _genTimer = setTimeout(pollGen, 3000, startedAt); });
+}
+
+// ---------- 主题标签（点选即生成该主题一批；空 = 全部主题按序各 1 条） ----------
+function themeLabel(id) {
+    if (!id) return '';
+    const btn = document.querySelector(`#theme-tags [data-theme="${id}"]`);
+    return btn ? btn.textContent.trim() : '';
+}
+function renderThemeChips() {
+    document.querySelectorAll('#theme-tags [data-theme]').forEach(btn => {
+        const on = btn.dataset.theme === _selTheme;
+        btn.className = 'px-2.5 py-1 rounded-full text-xs border transition cursor-pointer '
+            + (on ? 'bg-indigo-600 border-indigo-400 text-white'
+                  : 'bg-slate-900/60 border-slate-600 text-slate-300 hover:border-purple-500');
+    });
+}
+function updatePromptsBtn() {
+    const btn = document.getElementById('btn-prompts');
+    const base = PROMPTS.length ? '🔄 换一批' : '✨ 生成 10 个提示词';
+    const label = _selTheme ? themeLabel(_selTheme) : '';
+    btn.textContent = label ? `${base}（${label}）` : base;
+}
+function pickTheme(id) {
+    if (_promptsBusy) return;
+    _selTheme = id;
+    try { localStorage.setItem(THEME_KEY, _selTheme); } catch (e) {}
+    renderThemeChips();
+    updatePromptsBtn();
+    genPrompts();
+}
+function initTheme() {
+    let saved = '';
+    try { saved = localStorage.getItem(THEME_KEY) || ''; } catch (e) {}
+    _selTheme = themeLabel(saved) ? saved : '';
+    renderThemeChips();
+    updatePromptsBtn();
+}
+
+// ---------- prompts (LLM) ----------
+async function genPrompts() {
+    if (_promptsBusy) return;
+    const btn = document.getElementById('btn-prompts');
+    btn.disabled = true;
+    const channelName = document.getElementById('ov-channel').value.trim();
+    rememberChannel(channelName);
+    try {
+        const resp = await fetch(api('/api/outro_videos/gen_prompts'), {
+            method: 'POST', headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ channel: CHAN, channel_name: channelName, theme: _selTheme }),
+        });
+        const data = await resp.json();
+        if (!resp.ok || !data.ok) throw new Error(data.error || `HTTP ${resp.status}`);
+        _promptsBusy = true;
+        document.getElementById('prompts-status').textContent = '⏳ 生成中...';
+        pollPrompts(Date.now());
+    } catch (e) {
+        alert('启动提示词生成失败: ' + e.message);
+        btn.disabled = false;
+    }
+}
+
+function pollPrompts(startedAt) {
+    clearTimeout(_promptsTimer);
+    fetch('/api/outro_videos/prompts_status').then(r => r.json()).then(st => {
+        const el = document.getElementById('prompts-status');
+        if (st.status === 'generating') {
+            el.textContent = `⏳ 生成中 ${Math.round((Date.now() - startedAt) / 1000)}s...`;
+            _promptsTimer = setTimeout(pollPrompts, 1500, startedAt);
+        } else {
+            _promptsBusy = false;
+            document.getElementById('btn-prompts').disabled = false;
+            if (st.status === 'done' && (st.prompts || []).length) {
+                PROMPTS = st.prompts;
+                _selPrompt = -1;
+                renderPrompts();
+                el.textContent = `✅ 已生成 ${PROMPTS.length} 个，点卡片选用`;
+            } else {
+                el.textContent = '';
+                alert('提示词生成失败: ' + (st.error || '未知错误'));
+            }
+        }
+    }).catch(() => { _promptsTimer = setTimeout(pollPrompts, 3000, startedAt); });
+}
+
+function renderPrompts() {
+    const grid = document.getElementById('prompts-grid');
+    const hint = document.getElementById('prompts-hint');
+    if (!PROMPTS.length) {
+        grid.classList.add('hidden');
+        hint.classList.add('hidden');
+        updatePromptsBtn();
+        return;
+    }
+    updatePromptsBtn();
+    grid.classList.remove('hidden');
+    hint.classList.remove('hidden');
+    grid.innerHTML = PROMPTS.map((p, i) => `
+        <div onclick="selectPrompt(${i})"
+            class="cursor-pointer rounded-lg border p-3 space-y-2 transition ${_selPrompt === i ? 'border-indigo-500 bg-indigo-900/20' : 'border-slate-600 bg-slate-900/60 hover:border-purple-500'}">
+            <div class="flex items-start justify-between gap-2">
+                <div class="min-w-0">
+                    ${p.theme ? `<span class="inline-block px-1.5 py-0.5 mb-1 bg-indigo-900/60 text-indigo-300 rounded text-[10px]">${esc(themeLabel(p.theme) || p.theme)}</span>` : ''}
+                    <div class="text-xs text-slate-200 leading-5">${esc(p.desc_zh || '（无中文说明）')}</div>
+                </div>
+                <div class="flex items-start gap-1 shrink-0">
+                    <button onclick="event.stopPropagation(); copyText(PROMPTS[${i}].prompt_en, this)"
+                        title="复制英文提示词（可粘贴到外部 AI 工具）"
+                        class="px-1.5 py-0.5 bg-slate-700 hover:bg-teal-700 rounded text-[10px] text-slate-300 transition">📋 复制</button>
+                    ${_selPrompt === i ? '<span class="px-1.5 py-0.5 bg-indigo-600 rounded text-[10px] text-white">✓ 已选</span>' : ''}
+                </div>
+            </div>
+            <div class="text-[11px] leading-4 text-slate-400 max-h-24 overflow-y-auto font-mono bg-slate-950/60 rounded p-2">${esc(p.prompt_en)}</div>
+        </div>`).join('');
+}
+
+function selectPrompt(i) {
+    _selPrompt = i;
+    document.getElementById('ov-scene').value = PROMPTS[i].prompt_en;
+    document.getElementById('ov-route').value = 'ai';
+    toggleRoute();
+    renderPrompts();
+}
+
+// ---------- upload ----------
+async function uploadOutro() {
+    if (_upBusy) return;
+    const fileInput = document.getElementById('up-file');
+    const f = fileInput.files && fileInput.files[0];
+    if (!f) { alert('请先选择视频文件'); return; }
+    const btn = document.getElementById('btn-upload');
+    btn.disabled = true;
+    _upBusy = true;
+    btn.textContent = '⏳ 上传标准化中...';
+    try {
+        const fd = new FormData();
+        fd.append('video', f);
+        fd.append('name', document.getElementById('up-name').value.trim());
+        fd.append('channel', CHAN);
+        const resp = await fetch(api('/api/outro_videos/upload'), { method: 'POST', body: fd });
+        const data = await resp.json();
+        if (!resp.ok || !data.ok) throw new Error(data.error || `HTTP ${resp.status}`);
+        await loadAll();
+        fileInput.value = '';
+        document.getElementById('up-name').value = '';
+        btn.textContent = '✅ 已入库';
+        setTimeout(() => { btn.textContent = '⬆️ 上传入库'; }, 2500);
+    } catch (e) {
+        alert('上传失败: ' + e.message);
+        btn.textContent = '⬆️ 上传入库';
+    } finally {
+        _upBusy = false;
+        btn.disabled = false;
+    }
+}
+
+// ---------- actions ----------
+async function useOutro(id) {
+    try {
+        const resp = await fetch(api('/api/outro_videos/use'), {
+            method: 'POST', headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ channel: CHAN, id }),
+        });
+        const data = await resp.json();
+        if (!resp.ok || !data.ok) throw new Error(data.error || `HTTP ${resp.status}`);
+        loadAll();
+    } catch (e) {
+        alert('绑定失败: ' + e.message);
+    }
+}
+async function deleteOutro(id) {
+    if (!confirm('删除该片尾？（若正在使用会同时解除绑定，回退默认片尾）')) return;
+    const resp = await fetch(api(`/api/outro_videos/${encodeURIComponent(id)}`), { method: 'DELETE' });
+    if (!resp.ok) { alert('删除失败'); return; }
+    loadAll();
+}
+
+// ---------- init ----------
+window.addEventListener('load', async () => {
+    toggleRoute();
+    renderChannelHistory();
+    initTheme();
+    await Promise.all([loadAll(), loadBgm()]);
+    restoreOutroSettings();
+    SETTINGS_FIELDS.forEach(f => {
+        const el = document.getElementById(f.id);
+        if (el) el.addEventListener('change', saveOutroSettings);
+    });
+    const st = await fetch('/api/outro_videos/status').then(r => r.json());
+    if (st.status === 'running') {
+        _genBusy = true;
+        document.getElementById('btn-generate').disabled = true;
+        document.getElementById('task-panel').classList.remove('hidden');
+        pollGen(Date.now());
+    }
+    const ps = await fetch('/api/outro_videos/prompts_status').then(r => r.json());
+    if (ps.status === 'done' && (ps.prompts || []).length) {
+        PROMPTS = ps.prompts;
+        renderPrompts();
+        document.getElementById('prompts-status').textContent =
+            `✅ 已生成 ${PROMPTS.length} 个，点卡片选用`;
+    } else if (ps.status === 'generating') {
+        _promptsBusy = true;
+        document.getElementById('btn-prompts').disabled = true;
+        pollPrompts(Date.now());
+    }
+});
+</script>
+{% endblock %}
