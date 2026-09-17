@@ -854,25 +854,11 @@ function connectSSE() {
                 if (data.status === 'done') {
                     // 批量队列驱动时由队列面板统一汇报，不逐条弹确认窗
                     if (!bqIsActive()) {
-                        let msg = '✅ 视频生成完成!';
-                        if (data.final_path) msg += '\n视频: ' + data.final_path;
-                        if (data.work_dir) msg += '\n\n查看图片画廊和脚本?';
-                        setTimeout(() => {
-                            if (confirm(msg)) {
-                                // work_dir 形如 output/{mode}/{run_name}/（旧布局无 mode 段）
-                                const parts = data.work_dir ? data.work_dir.split(/[\\/]/).filter(Boolean) : [];
-                                const runName = parts[parts.length - 1] || '';
-                                const parentSeg = parts.length >= 2 ? parts[parts.length - 2] : '';
-                                const isMode = parentSeg === 'sleep';
-                                const modeQ = isMode ? `?mode=${parentSeg}` : '';
-                                if (runName) location.href = `/runs/${runName}/gallery${modeQ}`;
-                                else location.href = '/runs';
-                            }
-                        }, 500);
+                        showRunDoneNotice(data);
                     }
                 }
                 if (data.status === 'error' && data.error && !bqIsActive()) {
-                    alert('❌ 错误: ' + data.error);
+                    showRunDoneNotice(null, data.error);
                 }
                 if (data.type === 'done') {
                     evtSource.close();
@@ -893,6 +879,75 @@ function connectSSE() {
         evtSource.close();
         evtSource = null;
     };
+}
+
+// 生成完成/失败的非阻塞网页提示卡（替代 confirm/alert 弹窗）：不挡操作、手动关闭；
+// 「查看画廊」跳转时携带当前 ?channel= 上下文，避免跳转后回落全局
+function showRunDoneNotice(data, errMsg) {
+    closeRunDoneNotice();
+    const ok = !errMsg;
+    const el = document.createElement('div');
+    el.id = 'run-done-notice';
+    el.className = 'fixed top-16 right-6 z-50 max-w-md bg-slate-800 border rounded-xl shadow-2xl p-4 '
+        + (ok ? 'border-emerald-600/60' : 'border-red-600/60');
+
+    const row = document.createElement('div');
+    row.className = 'flex items-start gap-3';
+    const body = document.createElement('div');
+    body.className = 'flex-1 min-w-0';
+    const title = document.createElement('p');
+    title.className = 'text-sm font-medium text-white break-all';
+    title.textContent = ok ? '✅ 视频生成完成!' : '❌ 错误: ' + errMsg;
+    body.appendChild(title);
+    if (ok && data && data.final_path) {
+        const path = document.createElement('p');
+        path.className = 'text-xs text-slate-400 mt-1 break-all';
+        path.textContent = '视频: ' + data.final_path;
+        body.appendChild(path);
+    }
+    row.appendChild(body);
+    const closeBtn = document.createElement('button');
+    closeBtn.className = 'text-slate-400 hover:text-white shrink-0 leading-none';
+    closeBtn.textContent = '✕';
+    closeBtn.onclick = closeRunDoneNotice;
+    row.appendChild(closeBtn);
+    el.appendChild(row);
+
+    if (ok && data && data.work_dir) {
+        const bar = document.createElement('div');
+        bar.className = 'mt-3';
+        const go = document.createElement('button');
+        go.className = 'px-4 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-lg text-white text-sm font-medium';
+        go.textContent = '🖼️ 查看画廊';
+        go.onclick = gotoRunGallery;
+        bar.appendChild(go);
+        el.appendChild(bar);
+    }
+    el.dataset.workDir = (data && data.work_dir) || '';
+    document.body.appendChild(el);
+}
+
+function closeRunDoneNotice() {
+    const el = document.getElementById('run-done-notice');
+    if (el) el.remove();
+}
+
+function gotoRunGallery() {
+    const el = document.getElementById('run-done-notice');
+    const workDir = el ? el.dataset.workDir : '';
+    closeRunDoneNotice();
+    // work_dir 形如 output/{mode}/{run_name}/（旧布局无 mode 段）
+    const parts = workDir ? workDir.split(/[\\/]/).filter(Boolean) : [];
+    const runName = parts[parts.length - 1] || '';
+    const parentSeg = parts.length >= 2 ? parts[parts.length - 2] : '';
+    const q = new URLSearchParams();
+    if (parentSeg === 'sleep') q.set('mode', parentSeg);
+    // 频道上下文 = URL ?channel= 事实源，跳转时原样携带，否则上下文条回落全局
+    const cid = new URLSearchParams(location.search).get('channel');
+    if (cid) q.set('channel', cid);
+    const query = q.toString();
+    if (runName) location.href = `/runs/${runName}/gallery${query ? '?' + query : ''}`;
+    else location.href = '/runs' + (query ? '?' + query : '');
 }
 
 function updateProgress(data) {
