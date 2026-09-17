@@ -651,6 +651,8 @@ def _step5_compose(args, checkpoint: dict, script: dict, work_dir: Path, dirs: d
         outro_text=str(getattr(args, "sleep_outro_text", "") or ""),
         num_pairs=int(getattr(args, "sleep_pairs", 200)),
         intro_video=str(tts_results.get("intro_video", "") or ""),
+        intro_volume_db=float(getattr(args, "sleep_intro_volume_db", 0.0) or 0.0),
+        outro_volume_db=float(getattr(args, "sleep_outro_volume_db", 0.0) or 0.0),
         native_4k=bool(getattr(args, "sleep_4k_native", False)),
         card_lead=float(getattr(args, "sleep_card_lead", 0.3) or 0.0),
         xfade_sec=(float(getattr(args, "sleep_xfade_sec", 0.5) or 0.5)
@@ -839,6 +841,10 @@ def _parse_args() -> argparse.Namespace:
                         help="是否生成片头（关闭=无 intro 段直接从第一组开始；intro TTS 仍生成以保持缓存完整性）")
     parser.add_argument("--sleep-card-lead", type=float, default=0.3,
                         help="卡片提前量秒数（每组画面先出现 N 秒再开始朗读，0=关闭，默认 0.3，clamp 0-2）")
+    parser.add_argument("--sleep-intro-volume-db", type=float, default=0.0,
+                        help="片头库视频音轨音量偏移 dB（-30~15，默认 0=原样；仅绑定片头视频时生效）")
+    parser.add_argument("--sleep-outro-volume-db", type=float, default=0.0,
+                        help="片尾库视频音轨音量偏移 dB（-30~15，默认 0=原样；仅绑定片尾视频时生效）")
     parser.add_argument("--sleep-xfade", action="store_true",
                         help="相邻块边界画面交叉溶解过渡；仅画面、音频不动（默认关=硬切）")
     parser.add_argument("--sleep-xfade-sec", type=float, default=0.5,

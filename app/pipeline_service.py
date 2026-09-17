@@ -92,6 +92,18 @@ def _cfg_int(config: dict, key: str, default: int, lo: int = 0, hi: int = 10) ->
         return default
 
 
+def _cfg_float(config: dict, key: str, default: float,
+               lo: float = -30.0, hi: float = 15.0) -> float:
+    """配置值安全转 float（空串/非法值回退默认），并 clamp 到 [lo, hi]。
+
+    默认边界 -30~15 供音量偏移 dB 类参数沿用；其他 float 参数须显式传边界。
+    """
+    try:
+        return max(lo, min(hi, float(config.get(key, default))))
+    except (TypeError, ValueError):
+        return default
+
+
 def _cfg_line_words(config: dict) -> int:
     """max_line_words 配置解析：空/0/缺省 → 默认 10，非 0 值 clamp [4, 20]。
 
@@ -481,6 +493,8 @@ class PipelineService:
             sleep_line_spacing=_cfg_int(config, "sleep_line_spacing", 14, 0, 48),
             sleep_letter_spacing=_cfg_int(config, "sleep_letter_spacing", 0, 0, 24),
             sleep_bg_layer=str(config.get("sleep_bg_layer", "") or "bottom"),
+            sleep_intro_volume_db=_cfg_float(config, "sleep_intro_volume_db", 0),
+            sleep_outro_volume_db=_cfg_float(config, "sleep_outro_volume_db", 0),
             ch3_en_repeats=_cfg_int(config, "ch3_en_repeats", 3),
             ch3_zh_repeats=_cfg_int(config, "ch3_zh_repeats", 1),
             ch3_zh_always=bool(config.get("ch3_zh_always", True)),

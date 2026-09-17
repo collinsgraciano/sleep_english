@@ -106,15 +106,20 @@ def _build_audio_chain(block_segs: list[dict], audio_paths: dict,
 
 
 def _build_video_block(intro_video: str, block_segs: list[dict], out_path: str,
-                       vf: str) -> None:
-    """绑定片头视频时的 intro 块：整段转码统一规格（音画随片头自带）。"""
+                       vf: str, volume_db: float = 0.0) -> None:
+    """绑定片头/片尾视频时的 intro/outro 块：整段转码统一规格（音画随视频自带）。
+
+    volume_db≠0 时对视频自带音轨做音量偏移（默认 0=原样；该命令无
+    filter_complex，-af 可与 -vf 共存）。"""
     block_dur = round(sum(float(seg.get("duration", 0.0)) for seg in block_segs), 3)
     cmd = ["ffmpeg", "-y", "-i", intro_video,
-           "-vf", vf,
-           "-t", f"{block_dur:.3f}",
-           "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", "25",
-           "-c:a", "aac", "-b:a", "128k", "-ar", "44100", "-ac", "2",
-           out_path]
+           "-vf", vf]
+    if volume_db:
+        cmd += ["-af", f"volume={volume_db:.2f}dB"]
+    cmd += ["-t", f"{block_dur:.3f}",
+            "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", "25",
+            "-c:a", "aac", "-b:a", "128k", "-ar", "44100", "-ac", "2",
+            out_path]
     r = _run_ffmpeg(cmd)
     if r.returncode != 0 or not os.path.exists(out_path) or os.path.getsize(out_path) < 1000:
         raise RuntimeError(f"FFmpeg intro video block failed: {(r.stderr or '')[-300:]}")
@@ -178,7 +183,8 @@ def compose_sleep(work_dir: str, timeline: list[dict], script: dict,
                   audio_results: dict, cards_dir: str, theme: dict,
                   channel_name: str = "English with me", badge_text: str = "EN",
                   outro_text: str = "", num_pairs: int = 0,
-                  intro_video: str = "", native_4k: bool = False,
+                  intro_video: str = "", intro_volume_db: float = 0.0,
+                  outro_volume_db: float = 0.0, native_4k: bool = False,
                   card_lead: float = 0.0, xfade_sec: float = 0.0,
                   progress_cb=None, stop_check=None) -> str:
     """合成 sleep 成片。返回最终 mp4 路径（videos/{safe}.mp4）。
@@ -248,7 +254,8 @@ def compose_sleep(work_dir: str, timeline: list[dict], script: dict,
         if not (os.path.exists(out_path) and os.path.getsize(out_path) > 1000):
             try:
                 if is_intro_video:
-                    _build_video_block(intro_video, block_segs, out_path, vf)
+                    _build_video_block(intro_video, block_segs, out_path, vf,
+                                       volume_db=intro_volume_db)
                 else:
                     _build_block(card, block_segs, audio_results, out_path, vf,
                                  lead=card_lead)
@@ -257,7 +264,8 @@ def compose_sleep(work_dir: str, timeline: list[dict], script: dict,
                     raise
                 print(f"  [Sleep] Block {bi} failed ({e}), retry once...")
                 if is_intro_video:
-                    _build_video_block(intro_video, block_segs, out_path, vf)
+                    _build_video_block(intro_video, block_segs, out_path, vf,
+                                       volume_db=intro_volume_db)
                 else:
                     _build_block(card, block_segs, audio_results, out_path, vf,
                                  lead=card_lead)
