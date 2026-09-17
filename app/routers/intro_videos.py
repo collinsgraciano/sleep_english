@@ -11,9 +11,10 @@
 - AI 路线：PageMcpSession generate_video（text_to_video / 时长可设 / 16:9 /
   720p / 无音频）→ 下载 → finalize_ai_intro 标准化（频道名由 AI 画进画面，
   本地不再叠加文字防重复）；
-- 提示词：POST /gen_prompts 仅凭频道名让 LLM 一次生成 10 个随机片头场景
+- 提示词：POST /gen_prompts 仅凭频道名让 LLM 一次生成 10 个片头场景
   提示词（prompt_en 含频道名入画 title moment + desc_zh 简体中文说明），
-  前端点选填入 AI 画面描述；
+  支持场景主题可选（PROMPT_THEMES：空 = 按序覆盖全部主题各 1 条，
+  指定主题 id = 10 条同主题不同子场景），前端点选填入 AI 画面描述；
 - 上传：POST /upload 自带视频 → standardize_upload_intro 规格统一（保留
   原声与原时长，无音轨补静音）→ source=upload 入库；
 - 音频统一：BGM（bgm_music 库选一/随机）淡入淡出 + 可选频道名 TTS 播报
@@ -311,21 +312,67 @@ _PROMPT_SYSTEM = (
     "Output valid JSON only — no markdown, no explanations."
 )
 
+# 场景主题库（sleep 片头专属氛围场景预设）：「全部主题」= 10 条按给定顺序覆盖
+# 每主题恰好 1 条；点选单主题 = 10 条同主题不同子场景/机位。label 供前端
+# 标签与卡片徽章展示，en_hint 注入 LLM 提示词约束场景方向。
+PROMPT_THEMES: list[dict[str, str]] = [
+    {"id": "starry_sky", "label": "🌌 星空云海",
+     "en_hint": "starry night sky with soft clouds drifting under the Milky Way"},
+    {"id": "rainy_window", "label": "🌧️ 雨夜窗边",
+     "en_hint": "cozy warm bedroom by a rainy window at night, raindrops on the glass"},
+    {"id": "moonlit_forest", "label": "🌲 月光森林",
+     "en_hint": "moonlit forest at night, silver moonlight through tall trees"},
+    {"id": "night_ocean", "label": "🌊 夜海波浪",
+     "en_hint": "calm night ocean, gentle moonlit waves, starlight reflections on water"},
+    {"id": "lantern_clouds", "label": "🏮 灯笼云船",
+     "en_hint": "floating glowing lanterns drifting over a dreamy sea of clouds"},
+    {"id": "snow_cabin", "label": "🏔️ 雪山小屋",
+     "en_hint": "snowy mountain cabin at dusk, warm golden window glow, gently falling snow"},
+    {"id": "moonlight_sail", "label": "⛵ 月下帆船",
+     "en_hint": "a small sailboat gliding on a moonlit calm sea"},
+    {"id": "firefly_garden", "label": "✨ 萤火虫花园",
+     "en_hint": "midnight garden full of drifting fireflies and blooming night flowers"},
+    {"id": "moon_windowsill", "label": "🌕 月光窗台",
+     "en_hint": "a cozy windowsill bathed in warm full-moon light, potted plants and a cup of tea"},
+    {"id": "cloud_drift", "label": "☁️ 云端漂浮",
+     "en_hint": "slowly floating above a sea of soft night clouds"},
+]
+_PROMPT_THEME_IDS = {t["id"] for t in PROMPT_THEMES}
 
-def _build_prompts_prompt(channel: str) -> str:
+
+def _build_prompts_prompt(channel: str, theme: str = "") -> str:
     name = (channel or "").strip() or "English with me"
+    theme_lines = "\n".join(
+        f'- "{t["id"]}": {t["label"]} — {t["en_hint"]}' for t in PROMPT_THEMES)
+    if theme:
+        theme_rule = (
+            f'ALL 10 concepts belong to the SINGLE theme "{theme}" — explore 10 clearly '
+            "different sub-scenes / camera angles / moments within that theme "
+            "(use its en_hint as the direction, but vary freely inside it)."
+        )
+    else:
+        theme_rule = (
+            "The 10 concepts must cover ALL 10 themes below exactly once each, "
+            "IN THE GIVEN ORDER (concept 1 = theme 1, concept 2 = theme 2, ...)."
+        )
     return f"""Create 10 clearly different ambient intro video scene concepts for a sleep-relaxation English learning YouTube channel named "{name}". Audience: overseas Chinese ESL learners winding down before sleep.
 
 Each concept is an AI text-to-video prompt. Mood: calm, dreamy and peaceful — perfect for falling asleep. Every concept MUST feature ONE title moment: the channel name "{name}" appears in the scene, spelled EXACTLY "{name}", and once it appears it stays in the CENTER of the frame continuously until the end.
 
+Scene themes (each concept belongs to exactly one):
+{theme_lines}
+
+{theme_rule}
+
 For each concept output:
+- "theme": the theme id of this concept, copied EXACTLY from the list above
 - "prompt_en": one rich English paragraph (70-120 words) describing ONE continuous very slow shot: the scene, lighting, color mood, art style (vary across concepts: soft 3D Pixar animation, dreamy pastel illustration, cinematic realism, watercolor, etc.), and a very slow gentle camera drift. Include the title moment: the channel name "{name}" appears within the first two seconds and then remains continuously visible in the CENTER of the frame for the ENTIRE rest of the video — once it is visible it must NEVER disappear or leave the center (no fading out, no drifting around or out of frame, no vanishing and re-appearing) — describe how it materializes and its lettering style (e.g. elegant glowing handwritten script traced by fireflies, soft 3D golden letters drifting out of the clouds, starlight gathering into letters). The channel name "{name}" is the ONLY text in the scene, spelled EXACTLY letter-for-letter — never any other words, letters, captions, subtitles or watermarks.
 - "desc_zh": 1-2 句简体中文，概括这段画面长什么样（含频道名如何出现，让用户不看英文也能想象出视频的大致样子）。
 
-The 10 concepts must span clearly different scenes/moods (for example: starry night sky with drifting clouds, cozy bedroom by a rainy window, moonlit forest, calm ocean waves at night, floating lanterns or dreamy clouds, snowy mountain cabin at dusk, sailboat gliding under moonlight, midnight garden full of fireflies) — never two similar ones.
+Art styles must still vary across the 10 concepts even when the theme repeats.
 
 Output valid JSON only:
-{{"intros": [{{"prompt_en": "...", "desc_zh": "..."}}, {{"prompt_en": "...", "desc_zh": "..."}}, {{"prompt_en": "...", "desc_zh": "..."}}, {{"prompt_en": "...", "desc_zh": "..."}}, {{"prompt_en": "...", "desc_zh": "..."}}, {{"prompt_en": "...", "desc_zh": "..."}}, {{"prompt_en": "...", "desc_zh": "..."}}, {{"prompt_en": "...", "desc_zh": "..."}}, {{"prompt_en": "...", "desc_zh": "..."}}, {{"prompt_en": "...", "desc_zh": "..."}}]}}"""
+{{"intros": [{{"theme": "theme_id", "prompt_en": "...", "desc_zh": "..."}}, {{"theme": "theme_id", "prompt_en": "...", "desc_zh": "..."}}, {{"theme": "theme_id", "prompt_en": "...", "desc_zh": "..."}}, {{"theme": "theme_id", "prompt_en": "...", "desc_zh": "..."}}, {{"theme": "theme_id", "prompt_en": "...", "desc_zh": "..."}}, {{"theme": "theme_id", "prompt_en": "...", "desc_zh": "..."}}, {{"theme": "theme_id", "prompt_en": "...", "desc_zh": "..."}}, {{"theme": "theme_id", "prompt_en": "...", "desc_zh": "..."}}, {{"theme": "theme_id", "prompt_en": "...", "desc_zh": "..."}}, {{"theme": "theme_id", "prompt_en": "...", "desc_zh": "..."}}]}}"""
 
 
 def _llm_chat(base_url: str, api_key: str, model: str, p_type: str,
@@ -366,7 +413,9 @@ def _llm_chat(base_url: str, api_key: str, model: str, p_type: str,
 
 
 def _normalize_prompts(raw_list) -> list[dict]:
-    """LLM 返回列表 → [{"prompt_en", "desc_zh"}]（无 prompt_en 的条目丢弃）。"""
+    """LLM 返回列表 → [{"prompt_en", "desc_zh", "theme"}]（无 prompt_en 的条目丢弃）。
+
+    theme 仅保留已知主题 id（LLM 偶发输出标签/漏字段 → 置空，前端隐藏徽章）。"""
     out: list[dict] = []
     for raw in raw_list or []:
         if not isinstance(raw, dict):
@@ -374,7 +423,11 @@ def _normalize_prompts(raw_list) -> list[dict]:
         en = str(raw.get("prompt_en", "") or "").strip()
         zh = str(raw.get("desc_zh", "") or "").strip()
         if en:
-            out.append({"prompt_en": en[:900], "desc_zh": zh[:160]})
+            theme = str(raw.get("theme", "") or "").strip()
+            if theme not in _PROMPT_THEME_IDS:
+                theme = ""
+            out.append({"prompt_en": en[:900], "desc_zh": zh[:160],
+                        "theme": theme[:40]})
     return out
 
 
@@ -384,7 +437,7 @@ _PROMPTS_MAX_ATTEMPTS = 3
 _PROMPTS_RETRY_WAIT = 2
 
 
-def _prompts_worker(channel_name: str, cid: str = "") -> None:
+def _prompts_worker(channel_name: str, cid: str = "", theme: str = "") -> None:
     _prompt_status.update({"status": "generating", "prompts": [], "error": ""})
     try:
         import time as _time
@@ -395,12 +448,14 @@ def _prompts_worker(channel_name: str, cid: str = "") -> None:
             raise RuntimeError(f"未配置 {p_type} 的 API Key，请在参数配置页填写")
         if not model:
             raise RuntimeError("未指定模型（该 Provider 未配置模型列表）")
-        prompt_text = _build_prompts_prompt(channel_name)
+        prompt_text = _build_prompts_prompt(channel_name, theme)
         proxy_url = proxy_url_from_config(cfg)
         prompts: list[dict] = []
         last_err: Exception | None = None
+        theme_label = next((t["label"] for t in PROMPT_THEMES if t["id"] == theme), "")
         for attempt in range(1, _PROMPTS_MAX_ATTEMPTS + 1):
             _log(f"LLM 生成片头提示词：{model} ({p_type})，频道「{channel_name}」"
+                 + (f"，主题「{theme_label}」" if theme_label else "（全部主题）")
                  + (f"（第 {attempt}/{_PROMPTS_MAX_ATTEMPTS} 次）" if attempt > 1 else ""))
             try:
                 content = _llm_chat(base_url, api_key, model, p_type,
@@ -452,7 +507,10 @@ async def api_gen_prompts(request: Request):
     channel = str(data.get("channel_name", "") or "").strip()[:60] \
         or str(cfg.get("sleep_channel_name", "") or "").strip() \
         or "English with me"
-    threading.Thread(target=_prompts_worker, args=(channel, cid),
+    theme = str(data.get("theme", "") or "").strip()
+    if theme and theme not in _PROMPT_THEME_IDS:
+        theme = ""
+    threading.Thread(target=_prompts_worker, args=(channel, cid, theme),
                      daemon=True).start()
     return {"ok": True, "message": "提示词生成中（约 10-60 秒）..."}
 

@@ -19,6 +19,7 @@ from ..pipeline_service import get_service
 from ..templating import templates
 import style_manager as style_lib
 from .ai_test import _load_ai_test_config
+from .intro_videos import PROMPT_THEMES
 from .runs import _THUMB_NAME_RE, _resolve_main_thumbnail, _resolve_video_copy_paths
 
 router = APIRouter()
@@ -562,6 +563,7 @@ async def intro_videos_page(request: Request, channel: str = ""):
     return templates.TemplateResponse(request, "intro_videos.html", {
         "config": config,
         "page_channel": channel,
+        "prompt_themes": PROMPT_THEMES,
         "active_page": "intro_videos",
     })
 
