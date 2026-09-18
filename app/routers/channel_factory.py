@@ -770,6 +770,13 @@ def _generate_assets_worker(profile_id: str, kinds: list[str]) -> None:
             except Exception as e:  # noqa: BLE001 — 单个素材失败不拖垮另一个
                 log(f"{kind} 生成异常: {e}")
                 ok = False
+            if ok and kind == "logo":
+                # 生成成功立即抠透明底（AI 生成图为纯色浅底，上画面前去底色）
+                try:
+                    from logo_cutout import ensure_logo_cutout
+                    ensure_logo_cutout(dest, force=True)
+                except Exception as e:  # noqa: BLE001 — 抠图失败不影响生成成功状态
+                    log(f"logo 抠图跳过: {e}")
             log(f"{kind}: {'OK' if ok else 'FAIL'}")
             return kind, {"ok": ok, "file": f"{kind}.png" if ok else ""}
 

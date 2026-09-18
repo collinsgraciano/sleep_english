@@ -236,8 +236,11 @@ async def api_channel_config_set(cid: str, request: Request):
 
 
 @router.get("/api/channels/{cid}/asset/{kind}")
-async def api_channel_asset(cid: str, kind: str):
-    """频道 Logo/Banner（转正后 id 沿用工坊收藏 id，素材目录天然对齐）。"""
+async def api_channel_asset(cid: str, kind: str, variant: str = "auto"):
+    """频道 Logo/Banner（转正后 id 沿用工坊收藏 id，素材目录天然对齐）。
+
+    kind=logo 时 variant 控制返回版本：auto（默认，有抠图返回抠图否则
+    原图）/ raw（原始带底图）/ cutout（透明底抠图，未生成则 404）。"""
     if kind not in ("logo", "banner"):
         return JSONResponse({"ok": False, "error": "无效素材类型"}, status_code=400)
     channel = get_channel(cid)
@@ -247,8 +250,33 @@ async def api_channel_asset(cid: str, kind: str):
     if not path.exists():
         return JSONResponse({"ok": False, "error": "素材尚未生成（在频道工坊生成后自动关联）"},
                             status_code=404)
+    cutout_path = _logo_cutout_path(cid)
+    if kind == "logo" and variant in ("cutout", "auto") and cutout_path.exists():
+        if variant == "cutout" or cutout_path.stat().st_mtime >= path.stat().st_mtime:
+            return FileResponse(cutout_path, media_type="image/png",
+                                headers={"Cache-Control": "no-cache"})
+        if variant == "cutout":
+            return JSONResponse({"ok": False, "error": "抠图缓存已过期，请重新抠图"},
+                                status_code=404)
     return FileResponse(path, media_type="image/png",
                         headers={"Cache-Control": "no-cache"})
+
+
+def _logo_cutout_path(cid: str) -> Path:
+    """频道 Logo 抠图缓存路径（文件可能不存在，调用方自判）。"""
+    from logo_cutout import cutout_path_for
+    return cutout_path_for(CHANNEL_ASSETS_DIR / cid / "logo.png")
+
+
+def _run_logo_cutout(cid: str, force: bool = True) -> bool:
+    """对频道 Logo 执行抠图，返回是否产出透明底缓存。"""
+    dest = CHANNEL_ASSETS_DIR / cid / "logo.png"
+    if not dest.exists():
+        return False
+    from logo_cutout import ensure_logo_cutout
+    cut_path = _logo_cutout_path(cid)
+    ensure_logo_cutout(dest, force=force)
+    return cut_path.exists()
 
 
 @router.post("/api/channels/{cid}/asset/logo")
@@ -256,7 +284,8 @@ async def upload_channel_logo(cid: str, file: UploadFile = File(...)):
     """上传/更换频道 Logo（写入工坊素材同路径，两源统一；合成端直接叠加）。
 
     统一转存 PNG RGBA 并居中裁方形（最长边≤1024），与工坊生成的
-    1024x1024 logo.png 规格对齐；tmp→os.replace 原子写防半文件。"""
+    1024x1024 logo.png 规格对齐；tmp→os.replace 原子写防半文件。
+    保存成功后立即抠透明底（纯色底 logo 上画面不再带底色块）。"""
     if get_channel(cid) is None:
         return JSONResponse({"ok": False, "error": "频道不存在"}, status_code=404)
     ctype = (file.content_type or "").lower()
@@ -284,7 +313,26 @@ async def upload_channel_logo(cid: str, file: UploadFile = File(...)):
     tmp = dest_dir / ".logo.tmp.png"
     img.convert("RGBA").save(tmp, "PNG")
     os.replace(tmp, dest)
-    return {"ok": True, "logo_at": time.time()}
+    cutout = False
+    try:
+        cutout = _run_logo_cutout(cid, force=True)
+    except Exception:  # noqa: BLE001 — 抠图失败不影响上传成功
+        pass
+    return {"ok": True, "logo_at": time.time(), "cutout": cutout}
+
+
+@router.post("/api/channels/{cid}/asset/logo/recut")
+async def recut_channel_logo(cid: str):
+    """手动重新抠图（源 Logo 更新/算法升级后前端「🔄 重新抠图」按钮）。"""
+    if get_channel(cid) is None:
+        return JSONResponse({"ok": False, "error": "频道不存在"}, status_code=404)
+    if not (CHANNEL_ASSETS_DIR / cid / "logo.png").exists():
+        return JSONResponse({"ok": False, "error": "Logo 素材尚未上传/生成"}, status_code=404)
+    try:
+        cutout = _run_logo_cutout(cid, force=True)
+    except Exception as e:  # noqa: BLE001 — 错误信息原样回显
+        return JSONResponse({"ok": False, "error": f"抠图失败: {e}"}, status_code=500)
+    return {"ok": True, "cutout": cutout}
 
 
 # ===========================================================================

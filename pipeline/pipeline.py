@@ -44,6 +44,7 @@ sys.path.insert(0, str(SCRIPTS_DIR))
 from mcp_client import initialize, call_tool, parse_task_id, poll_task, download_file
 from topic_manager import pick_random_topic, mark_topic_used
 from media_utils import get_duration as _get_audio_duration, safe_filename as _safe_dirname
+from logo_cutout import ensure_logo_cutout as _ensure_logo_cutout
 from checkpoint import save_checkpoint as _save_checkpoint, load_checkpoint as _load_checkpoint, step_done as _step_done
 from style_manager import resolve_style_prompt as _resolve_style_prompt
 
@@ -671,6 +672,9 @@ def _step5_compose(args, checkpoint: dict, script: dict, work_dir: Path, dirs: d
                          / "channel_assets" / _cid / "logo.png")
                 if _cand.exists():
                     _logo_path = str(_cand)
+        # 上画面前先抠图（纯色底→透明底；不适合抠/失败时原样返回，行为同现状）
+        if _logo_path:
+            _logo_path = _ensure_logo_cutout(_logo_path)
     final_path = compose_sleep(
         work_dir=str(work_dir),
         timeline=timeline,

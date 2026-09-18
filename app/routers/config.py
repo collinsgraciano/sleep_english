@@ -167,19 +167,28 @@ def _resolve_preview_logo(cfg: dict, channel: str) -> str:
 
     总开关关 = 不叠；显式路径优先（文件缺失成片也只跳过，这里原样返回由
     盖章端静默处理）；显式留空且带频道上下文 → 自动探测
-    configs/channel_assets/{频道id}/logo.png。找不到返回空。"""
-    if not cfg.get("sleep_logo", True):
-        return ""
-    explicit = str(cfg.get("sleep_logo_path", "") or "").strip()
-    if explicit:
-        return explicit
-    channel = str(channel or "").strip()
-    # 仅接受纯目录名，防路径穿越（与频道 id 形态一致）
-    if channel and Path(channel).name == channel:
-        cand = CHANNEL_ASSETS_DIR / channel / "logo.png"
-        if cand.exists():
-            return str(cand)
-    return ""
+    configs/channel_assets/{频道id}/logo.png。找不到返回空。
+    命中后过 logo_cutout 抠透明底再返回（与成片 ensure_logo_cutout 同源
+    缓存，预览所见即成片所得）。"""
+    path = ""
+    if cfg.get("sleep_logo", True):
+        explicit = str(cfg.get("sleep_logo_path", "") or "").strip()
+        if explicit:
+            path = explicit
+        else:
+            channel = str(channel or "").strip()
+            # 仅接受纯目录名，防路径穿越（与频道 id 形态一致）
+            if channel and Path(channel).name == channel:
+                cand = CHANNEL_ASSETS_DIR / channel / "logo.png"
+                if cand.exists():
+                    path = str(cand)
+    if path:
+        try:
+            from logo_cutout import ensure_logo_cutout
+            path = ensure_logo_cutout(path)
+        except Exception:
+            pass  # 抠图模块不可用时退回原图叠加（行为同旧行为）
+    return path
 
 
 def _stamp_logo_on_card(img, logo_path: str, position: str, size: int,

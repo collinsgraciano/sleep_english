@@ -141,6 +141,39 @@
         </div>
     </div>
 </div>
+<!-- Logo 抠图对比弹窗 -->
+<div id="logo-modal" class="hidden fixed inset-0 z-50 bg-black/70 items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-slate-800 border border-slate-700 rounded-xl w-full max-w-lg">
+        <div class="flex items-center justify-between px-5 py-3.5 border-b border-slate-700">
+            <h4 class="text-sm font-semibold text-white">🖼 频道 Logo <span id="logo-cid" class="text-slate-400 font-normal"></span></h4>
+            <button onclick="closeModal('logo-modal')" class="text-slate-400 hover:text-white text-lg leading-none">✕</button>
+        </div>
+        <div class="px-5 py-4 space-y-3">
+            <p class="text-[11px] text-slate-500">上画面（成片/预览）前自动抠图去底色：左=原始图，右=抠图后（棋盘格=透明，成片实际使用）。非纯色底或已透明时不抠图、保持原图叠加。</p>
+            <div class="grid grid-cols-2 gap-3">
+                <div class="text-center space-y-1.5">
+                    <div class="rounded-lg border border-slate-700 h-36 flex items-center justify-center overflow-hidden"
+                        style="background: repeating-conic-gradient(#334155 0% 25%, #1e293b 0% 50%) 0 0/16px 16px">
+                        <img id="logo-raw" class="max-h-32 max-w-full object-contain">
+                    </div>
+                    <div class="text-[11px] text-slate-400">原始图</div>
+                </div>
+                <div class="text-center space-y-1.5">
+                    <div class="rounded-lg border border-slate-700 h-36 flex items-center justify-center overflow-hidden"
+                        style="background: repeating-conic-gradient(#334155 0% 25%, #1e293b 0% 50%) 0 0/16px 16px">
+                        <img id="logo-cut" class="max-h-32 max-w-full object-contain">
+                    </div>
+                    <div class="text-[11px] text-slate-400">抠图后（上画面用）</div>
+                </div>
+            </div>
+            <p id="logo-status" class="text-xs text-indigo-300"></p>
+        </div>
+        <div class="flex items-center justify-end gap-2 px-5 py-3.5 border-t border-slate-700">
+            <button onclick="recutLogo()" id="btn-recut" class="px-4 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg text-sm text-slate-200">🔄 重新抠图</button>
+            <button onclick="uploadLogo()" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-lg text-sm text-white font-medium">📤 上传/更换</button>
+        </div>
+    </div>
+</div>
 <input type="file" id="logo-file-input" accept="image/png,image/jpeg,image/webp" class="hidden">
 {% endblock %}
 
@@ -195,8 +228,8 @@ function renderChannels() {
         return `
         <div class="bg-slate-800 border ${c.status === 'active' ? 'border-slate-700' : 'border-slate-700/40 opacity-70'} rounded-xl p-4 space-y-2">
             <div class="flex items-start gap-3">
-                <span class="relative shrink-0 cursor-pointer" onclick="uploadLogo('${esc(c.id)}')" title="点击上传/更换 Logo（生成时叠加全片水印；素材与频道工坊共用）">
-                    <img id="logo-${esc(c.id)}" src="/api/channels/${esc(c.id)}/asset/logo" onerror="this.style.display='none';document.getElementById('logo-ph-${esc(c.id)}').style.display='flex'"
+                <span class="relative shrink-0 cursor-pointer" onclick="showLogoCompare('${esc(c.id)}')" title="点击查看抠图对比 / 上传更换（上画面成片前自动抠透明底；素材与频道工坊共用）">
+                    <img id="logo-${esc(c.id)}" src="/api/channels/${esc(c.id)}/asset/logo?variant=auto" onerror="this.style.display='none';document.getElementById('logo-ph-${esc(c.id)}').style.display='flex'"
                         class="w-12 h-12 rounded-full object-cover border-2 border-slate-600">
                     <span id="logo-ph-${esc(c.id)}" style="display:none" class="w-12 h-12 rounded-full bg-slate-700 items-center justify-center text-slate-500 text-lg">📺</span>
                 </span>
@@ -506,8 +539,40 @@ function closeModal(id) {
     m.classList.remove('flex');
 }
 
-// ---------- Logo 上传/更换（素材与频道工坊共用同路径） ----------
+// ---------- Logo 抠图对比 / 上传/更换（素材与频道工坊共用同路径） ----------
+function showLogoCompare(cid) {
+    document.getElementById('logo-cid').textContent = cid;
+    document.getElementById('logo-raw').src = `/api/channels/${cid}/asset/logo?variant=raw&t=${Date.now()}`;
+    loadCutLogo(cid);
+    document.getElementById('logo-status').textContent = '';
+    showModal('logo-modal');
+}
+
+function loadCutLogo(cid) {
+    const cut = document.getElementById('logo-cut');
+    cut.onerror = () => { document.getElementById('logo-status').textContent = '未能自动抠图（非纯色底或已透明，成片保持原图叠加）'; };
+    cut.src = `/api/channels/${cid}/asset/logo?variant=cutout&t=${Date.now()}`;
+}
+
+async function recutLogo() {
+    const cid = document.getElementById('logo-cid').textContent;
+    const btn = document.getElementById('btn-recut');
+    const out = document.getElementById('logo-status');
+    btn.disabled = true;
+    out.textContent = '抠图中...';
+    try {
+        const r = await fetch(`/api/channels/${cid}/asset/logo/recut`, {method: 'POST'}).then(r => r.json());
+        if (!r.ok) { out.textContent = r.error || '抠图失败'; return; }
+        out.textContent = r.cutout ? '抠图完成 ✓（上画面使用透明底版本）' : '未能自动抠图（非纯色底或已透明，成片保持原图叠加）';
+        if (r.cutout) loadCutLogo(cid);
+        await refresh();
+    } finally {
+        btn.disabled = false;
+    }
+}
+
 function uploadLogo(cid) {
+    cid = cid || document.getElementById('logo-cid').textContent;
     const inp = document.getElementById('logo-file-input');
     inp.value = '';
     inp.onchange = async () => {
@@ -516,6 +581,8 @@ function uploadLogo(cid) {
         fd.append('file', inp.files[0]);
         const r = await fetch(`/api/channels/${cid}/asset/logo`, {method: 'POST', body: fd}).then(r => r.json()).catch(() => ({}));
         if (!r.ok) return alert(r.error || '上传失败');
+        document.getElementById('logo-status').textContent = r.cutout ? '已上传并抠图 ✓' : '已上传（未能自动抠图，成片保持原图叠加）';
+        loadCutLogo(cid);
         await refresh();
     };
     inp.click();
