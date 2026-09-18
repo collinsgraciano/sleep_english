@@ -11,10 +11,12 @@
 - AI 路线：PageMcpSession generate_video（text_to_video / 时长可设 / 16:9 /
   720p / 无音频）→ 下载 → finalize_ai_intro 标准化（频道名由 AI 画进画面，
   本地不再叠加文字防重复）；
-- 提示词：POST /gen_prompts 仅凭频道名让 LLM 一次生成 10 个片头场景
+- 提示词：POST /gen_prompts 仅凭频道名让 LLM 一次生成 count 个（默认 5，
+  上限 20）片头场景
   提示词（prompt_en 含频道名入画 title moment + desc_zh 简体中文说明），
-  支持场景主题可选（PROMPT_THEMES：空 = 按序覆盖全部主题各 1 条，
-  指定主题 id = 10 条同主题不同子场景），前端点选填入 AI 画面描述；
+  支持场景主题可选（PROMPT_THEMES：空 = 数量不足时各取不同主题 1 条、
+  数量≥主题数时按序全覆盖，指定主题 id = count 条同主题不同子场景），
+  前端点选填入 AI 画面描述；
 - 上传：POST /upload 自带视频 → standardize_upload_intro 规格统一（保留
   原声与原时长，无音轨补静音）→ source=upload 入库；
 - 音频统一：BGM（bgm_music 库选一/随机）淡入淡出 + 可选频道名 TTS 播报
@@ -312,9 +314,10 @@ _PROMPT_SYSTEM = (
     "Output valid JSON only — no markdown, no explanations."
 )
 
-# 场景主题库（sleep 片头专属氛围场景预设）：「全部主题」= 10 条按给定顺序覆盖
-# 每主题恰好 1 条；点选单主题 = 10 条同主题不同子场景/机位。label 供前端
-# 标签与卡片徽章展示，en_hint 注入 LLM 提示词约束场景方向。
+# 场景主题库（sleep 片头专属氛围场景预设）：「全部主题」= 按数量取不同主题
+# 各 1 条（数量 ≥ 主题数时按给定顺序全覆盖）；点选单主题 = count 条同主题
+# 不同子场景/机位。label 供前端标签与卡片徽章展示，en_hint 注入 LLM 提示词
+# 约束场景方向。
 PROMPT_THEMES: list[dict[str, str]] = [
     {"id": "starry_sky", "label": "🌌 星空云海",
      "en_hint": "starry night sky with soft clouds drifting under the Milky Way"},
@@ -340,22 +343,36 @@ PROMPT_THEMES: list[dict[str, str]] = [
 _PROMPT_THEME_IDS = {t["id"] for t in PROMPT_THEMES}
 
 
-def _build_prompts_prompt(channel: str, theme: str = "") -> str:
+def _build_prompts_prompt(channel: str, theme: str = "", count: int = 5) -> str:
     name = (channel or "").strip() or "English with me"
     theme_lines = "\n".join(
         f'- "{t["id"]}": {t["label"]} — {t["en_hint"]}' for t in PROMPT_THEMES)
+    n_themes = len(PROMPT_THEMES)
     if theme:
         theme_rule = (
-            f'ALL 10 concepts belong to the SINGLE theme "{theme}" — explore 10 clearly '
+            f'ALL {count} concepts belong to the SINGLE theme "{theme}" — explore {count} clearly '
             "different sub-scenes / camera angles / moments within that theme "
             "(use its en_hint as the direction, but vary freely inside it)."
         )
-    else:
+    elif count == n_themes:
         theme_rule = (
-            "The 10 concepts must cover ALL 10 themes below exactly once each, "
+            f"The {count} concepts must cover ALL {n_themes} themes below exactly once each, "
             "IN THE GIVEN ORDER (concept 1 = theme 1, concept 2 = theme 2, ...)."
         )
-    return f"""Create 10 clearly different ambient intro video scene concepts for a sleep-relaxation English learning YouTube channel named "{name}". Audience: overseas Chinese ESL learners winding down before sleep.
+    elif count > n_themes:
+        theme_rule = (
+            f"The {count} concepts must cover ALL {n_themes} themes below at least once each, "
+            f"IN THE GIVEN ORDER (concept 1 = theme 1, ..., concept {n_themes} = theme "
+            f"{n_themes}, then cycle back to theme 1 for the remaining concepts)."
+        )
+    else:
+        theme_rule = (
+            f"Pick {count} DIFFERENT themes from the list below (no theme repeats) — "
+            f"exactly one concept per theme, {count} concepts in total."
+        )
+    entries = ", ".join(
+        '{"theme": "theme_id", "prompt_en": "...", "desc_zh": "..."}' for _ in range(count))
+    return f"""Create {count} clearly different ambient intro video scene concepts for a sleep-relaxation English learning YouTube channel named "{name}". Audience: overseas Chinese ESL learners winding down before sleep.
 
 Each concept is an AI text-to-video prompt. Mood: calm, dreamy and peaceful — perfect for falling asleep. Every concept MUST feature ONE title moment: the channel name "{name}" appears in the scene, spelled EXACTLY "{name}", and once it appears it stays in the CENTER of the frame continuously until the end.
 
@@ -369,10 +386,10 @@ For each concept output:
 - "prompt_en": one rich English paragraph (70-120 words) describing ONE continuous very slow shot: the scene, lighting, color mood, art style (vary across concepts: soft 3D Pixar animation, dreamy pastel illustration, cinematic realism, watercolor, etc.), and a very slow gentle camera drift. Include the title moment: the channel name "{name}" appears within the first two seconds and then remains continuously visible in the CENTER of the frame for the ENTIRE rest of the video — once it is visible it must NEVER disappear or leave the center (no fading out, no drifting around or out of frame, no vanishing and re-appearing) — describe how it materializes and its lettering style (e.g. elegant glowing handwritten script traced by fireflies, soft 3D golden letters drifting out of the clouds, starlight gathering into letters). The channel name "{name}" is the ONLY text in the scene, spelled EXACTLY letter-for-letter — never any other words, letters, captions, subtitles or watermarks.
 - "desc_zh": 1-2 句简体中文，概括这段画面长什么样（含频道名如何出现，让用户不看英文也能想象出视频的大致样子）。
 
-Art styles must still vary across the 10 concepts even when the theme repeats.
+Art styles must still vary across the {count} concepts even when the theme repeats.
 
 Output valid JSON only:
-{{"intros": [{{"theme": "theme_id", "prompt_en": "...", "desc_zh": "..."}}, {{"theme": "theme_id", "prompt_en": "...", "desc_zh": "..."}}, {{"theme": "theme_id", "prompt_en": "...", "desc_zh": "..."}}, {{"theme": "theme_id", "prompt_en": "...", "desc_zh": "..."}}, {{"theme": "theme_id", "prompt_en": "...", "desc_zh": "..."}}, {{"theme": "theme_id", "prompt_en": "...", "desc_zh": "..."}}, {{"theme": "theme_id", "prompt_en": "...", "desc_zh": "..."}}, {{"theme": "theme_id", "prompt_en": "...", "desc_zh": "..."}}, {{"theme": "theme_id", "prompt_en": "...", "desc_zh": "..."}}, {{"theme": "theme_id", "prompt_en": "...", "desc_zh": "..."}}]}}"""
+{{"intros": [{entries}]}}"""
 
 
 def _llm_chat(base_url: str, api_key: str, model: str, p_type: str,
@@ -435,9 +452,12 @@ def _normalize_prompts(raw_list) -> list[dict]:
 # 截断修复救不回的畸形输出），解析失败或无有效条目时整体重新生成。
 _PROMPTS_MAX_ATTEMPTS = 3
 _PROMPTS_RETRY_WAIT = 2
+# 单次生成的条数上限：prompt_en 每条约 150-200 token，20 条仍稳在 max_tokens=8192 内
+_PROMPTS_MAX_COUNT = 20
 
 
-def _prompts_worker(channel_name: str, cid: str = "", theme: str = "") -> None:
+def _prompts_worker(channel_name: str, cid: str = "", theme: str = "",
+                    count: int = 5) -> None:
     _prompt_status.update({"status": "generating", "prompts": [], "error": ""})
     try:
         import time as _time
@@ -448,7 +468,7 @@ def _prompts_worker(channel_name: str, cid: str = "", theme: str = "") -> None:
             raise RuntimeError(f"未配置 {p_type} 的 API Key，请在参数配置页填写")
         if not model:
             raise RuntimeError("未指定模型（该 Provider 未配置模型列表）")
-        prompt_text = _build_prompts_prompt(channel_name, theme)
+        prompt_text = _build_prompts_prompt(channel_name, theme, count)
         proxy_url = proxy_url_from_config(cfg)
         prompts: list[dict] = []
         last_err: Exception | None = None
@@ -489,7 +509,8 @@ def _prompts_worker(channel_name: str, cid: str = "", theme: str = "") -> None:
 
 @router.post("/api/intro_videos/gen_prompts")
 async def api_gen_prompts(request: Request):
-    """LLM 生成 10 个随机片头提示词（单槽 409 守卫；静态路径须在 {intro_id} 动态路由之前）。
+    """LLM 生成 count 个（body.count 可调，默认 5，clamp [1, 20]）随机片头提示词
+    （单槽 409 守卫；静态路径须在 {intro_id} 动态路由之前）。
 
     body.channel = 频道 id：LLM Provider/Key/模型按频道快照解析。"""
     if _prompt_status.get("status") == "generating":
@@ -510,7 +531,12 @@ async def api_gen_prompts(request: Request):
     theme = str(data.get("theme", "") or "").strip()
     if theme and theme not in _PROMPT_THEME_IDS:
         theme = ""
-    threading.Thread(target=_prompts_worker, args=(channel, cid, theme),
+    try:
+        count = int(data.get("count", 5))
+    except (TypeError, ValueError):
+        count = 5
+    count = max(1, min(_PROMPTS_MAX_COUNT, count))
+    threading.Thread(target=_prompts_worker, args=(channel, cid, theme, count),
                      daemon=True).start()
     return {"ok": True, "message": "提示词生成中（约 10-60 秒）..."}
 
