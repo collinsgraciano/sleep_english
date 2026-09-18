@@ -683,7 +683,10 @@ window.addEventListener('load', function() {
     // ?script_id= 预选（脚本页「到控制台」带入）：自动切模式并选中该脚本
     const preselectId = new URLSearchParams(location.search).get('script_id');
     if (preselectId) {
-        history.replaceState(null, '', location.pathname);
+        // 只移除 script_id 参数：保留 ?channel= 等其余上下文（URL 是事实源）
+        const cleanUrl = new URL(location.href);
+        cleanUrl.searchParams.delete('script_id');
+        history.replaceState(null, '', cleanUrl.pathname + (cleanUrl.search ? cleanUrl.search : ''));
         fetch('/api/scripts/' + encodeURIComponent(preselectId))
             .then(r => r.json())
             .then(m => {
@@ -723,7 +726,7 @@ function pickRandomTopic() {
         alert('已选择脚本库脚本 — 请先将「脚本库」切回「不使用」再随机选主题');
         return;
     }
-    fetch('/api/topics/random')
+    fetch('/api/topics/random?channel=' + encodeURIComponent(PAGE_CHANNEL))
         .then(r => r.json())
         .then(data => {
             if (data.ok) {
@@ -1347,7 +1350,7 @@ function loadSrtView(runName) {
                 <div class="space-y-2">
                     <div class="flex items-center gap-3">
                         <p class="text-xs text-slate-400">📝 SRT 字幕已生成</p>
-                        <a href="/runs/${escapeHtml(runName)}/gallery" class="text-xs text-indigo-400 hover:text-indigo-300">→ 查看完整画廊</a>
+                        <a href="/runs/${escapeHtml(runName)}/gallery${PAGE_CHANNEL ? '?channel=' + encodeURIComponent(PAGE_CHANNEL) : ''}" class="text-xs text-indigo-400 hover:text-indigo-300">→ 查看完整画廊</a>
                     </div>
                     <pre class="bg-slate-900/50 rounded-lg p-3 text-xs text-slate-300 max-h-[480px] overflow-y-auto whitespace-pre-wrap">${escapeHtml(srt)}</pre>
                 </div>`;
@@ -1369,7 +1372,7 @@ function loadThumbnailView(runName) {
                 <img src="/api/runs/${escapeHtml(runName)}/thumbnail"
                     class="rounded-lg max-h-48 object-cover border border-slate-600"
                     onerror="this.style.display='none'" alt="thumbnail">
-                <a href="/runs/${escapeHtml(runName)}/gallery" class="text-xs text-indigo-400 hover:text-indigo-300 self-end">→ 查看完整画廊</a>
+                <a href="/runs/${escapeHtml(runName)}/gallery${PAGE_CHANNEL ? '?channel=' + encodeURIComponent(PAGE_CHANNEL) : ''}" class="text-xs text-indigo-400 hover:text-indigo-300 self-end">→ 查看完整画廊</a>
             </div>
         </div>`;
 }
@@ -1516,7 +1519,7 @@ function renderBqQueue() {
                 <td class="px-3 py-2 text-xs text-slate-500">${i + 1}</td>
                 <td class="px-3 py-2"><span class="px-2 py-0.5 rounded text-[11px] font-medium ${bCls}">${bTxt}</span></td>
                 <td class="px-3 py-2 text-xs text-slate-400">${typeTxt}</td>
-                <td class="px-3 py-2 text-xs text-slate-200">${escapeHtml(it.label || '')}${extra}</td>
+                <td class="px-3 py-2 text-xs text-slate-200">${escapeHtml(it.label || '')}${it.channel_name ? ` <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-600/20 text-emerald-300 align-middle" title="${escapeHtml(it.channel_id)}">🎞 ${escapeHtml(it.channel_name)}</span>` : ''}${extra}</td>
                 <td class="px-3 py-2 text-xs text-slate-400">${escapeHtml(modeLabel)}</td>
                 <td class="px-3 py-2">${removeBtn}</td>
             </tr>`;
@@ -1568,7 +1571,7 @@ function bqAddTopicsFromInput() {
     const ta = document.getElementById('bq-topics-input');
     const topics = [...new Set(ta.value.split('\n').map(s => s.trim()).filter(Boolean))];
     if (!topics.length) { alert('请先输入主题（每行一个）'); return; }
-    bqPost('add', {items: topics.map(t => ({type: 'topic', mode: ACTIVE_MODE, topic: t}))})
+    bqPost('add', {items: topics.map(t => ({type: 'topic', mode: ACTIVE_MODE, topic: t, channel_id: PAGE_CHANNEL}))})
         .then(({data}) => {
             const added = (data.added || []).length;
             const rej = data.rejected || [];
@@ -1589,7 +1592,7 @@ function bqAddRandomTopics() {
     let exhausted = false;
     let chain = Promise.resolve();
     for (let i = 0; i < n; i++) {
-        chain = chain.then(() => fetch('/api/topics/random')
+        chain = chain.then(() => fetch('/api/topics/random?channel=' + encodeURIComponent(PAGE_CHANNEL))
             .then(r => r.json())
             .then(d => {
                 if (!d.ok) { exhausted = true; return; }  // 主题库已无可用主题
@@ -1602,7 +1605,7 @@ function bqAddRandomTopics() {
             alert(exhausted ? '没有抽到新主题（主题库可用主题已用完或都已在队列中）' : '没有抽到新主题（可用主题不足）');
             return;
         }
-        return bqPost('add', {items: picked.map(t => ({type: 'topic', mode: ACTIVE_MODE, topic: t}))})
+        return bqPost('add', {items: picked.map(t => ({type: 'topic', mode: ACTIVE_MODE, topic: t, channel_id: PAGE_CHANNEL}))})
             .then(({data}) => {
                 const added = (data.added || []).length;
                 const rej = (data.rejected || []).length;
@@ -1680,7 +1683,7 @@ function bqToggleCheckAll(checked) {
 function bqAddCheckedScripts() {
     const ids = bqCheckedScripts();
     if (!ids.length) { alert('请先勾选脚本'); return; }
-    bqPost('add', {items: ids.map(id => ({type: 'script', script_id: id}))})
+    bqPost('add', {items: ids.map(id => ({type: 'script', script_id: id, channel_id: PAGE_CHANNEL}))})
         .then(({data}) => {
             const added = (data.added || []).length;
             const rej = data.rejected || [];

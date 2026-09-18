@@ -569,7 +569,10 @@ async function resetUsed(id) {
 
 // 跳转控制台并自动带上所选脚本（控制台会切到脚本所属模式并预选）
 function gotoConsole(id) {
-    location.href = '/?script_id=' + encodeURIComponent(id);
+    // 频道上下文 = 本页 URL ?channel=（侧边栏带入），跳转时原样携带避免回落全局
+    const ch = new URLSearchParams(location.search).get('channel') || '';
+    location.href = '/?script_id=' + encodeURIComponent(id)
+        + (ch ? '&channel=' + encodeURIComponent(ch) : '');
 }
 
 // =========================================================================

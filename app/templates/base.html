@@ -120,10 +120,16 @@
         return u.pathname + (u.search ? u.search : '') + u.hash;
     }
 
-    // 侧边栏导航链接保持频道上下文
-    document.querySelectorAll('aside a.nav-link').forEach(a => {
-        a.href = withChannel(a.href);
-    });
+    // 侧边栏 + 页面内所有内部链接保持频道上下文（URL ?channel= 事实源）：
+    // 排除 API/静态资源/外链/协议相对/锚点；无上下文时不改写（零行为变化）
+    if (cur) {
+        document.querySelectorAll('a[href]').forEach(a => {
+            const href = a.getAttribute('href') || '';
+            if (!href.startsWith('/') || href.startsWith('//')) return;
+            if (href.startsWith('/api/') || href.startsWith('/static/')) return;
+            a.href = withChannel(href);
+        });
+    }
 
     // 多频道工作台的 iframe 里点侧边栏「多频道工作台」→ 顶层跳转，避免工作台嵌套
     if (window.self !== window.top) {
