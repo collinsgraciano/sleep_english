@@ -12,7 +12,7 @@ from ..config_manager import (
     effective_param_spec, find_run_dir, get_active_mode, get_provider_options,
     iter_run_dirs, list_presets, load_all_mode_configs, load_config,
     load_config, load_llm_providers, load_mode_config, set_active_mode,
-    SLEEP_ORCHESTRATION_KEYS,
+    SLEEP_ORCHESTRATION_KEYS, SLEEP_GROUPS,
 )
 from ..paths import TRASH_META_FILENAME
 from ..pipeline_service import get_service
@@ -111,14 +111,15 @@ def _config_page_context(mode: str, channel: str = "") -> dict:
 
 
 def _sleep_page_grouped(mode: str, keys: frozenset, channel: str = "") -> tuple[dict, list]:
-    """内容编排页上下文：全量配置上下文中仅保留 sleep 组内属于 keys 的参数。
+    """内容编排页上下文：全量配置上下文中仅保留 sleep 分组内属于 keys 的参数。
 
-    返回 (ctx, grouped)；非 sleep 组不带入编排页（完整清单见「参数配置」页）。
+    返回 (ctx, grouped)；非 sleep 分组（sleep_content/sleep_intro 等六分类
+    之外的组）不带入编排页（完整清单见「参数配置」页）。
     """
     ctx = _config_page_context(mode, channel)
     grouped = []
     for g, params in ctx["grouped"]:
-        if g == "sleep":
+        if g in SLEEP_GROUPS:
             kept = [(k, s, v) for k, s, v in params if k in keys]
             if kept:
                 grouped.append((g, kept))
@@ -143,8 +144,8 @@ async def arrangement_page(request: Request, mode: str = "", channel: str = ""):
         "active_page": "arrangement",
         "page_channel": channel,
         "grouped": grouped,
-        # 组卡标签用「编排参数」，避免与页面标题「内容编排」重复
-        "group_meta": {**GROUP_META, "sleep": {"label": "编排参数", "icon": "📋", "order": 9}},
+        # 组卡标签沿用 GROUP_META（Sleep · 朗读内容/片头片尾，不与页面标题重复）
+        "group_meta": GROUP_META,
         "sleep_inline_preview": False,
         "config_save_all": False,
         "sleep_sequence_effective": sequence,

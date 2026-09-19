@@ -38,7 +38,8 @@ def _run_ffmpeg(cmd: list[str]) -> subprocess.CompletedProcess:
 
 
 def _logo_overlay(logo_path: str, position: str, size: int, opacity: int,
-                  out_h: int) -> tuple[list[str], str]:
+                  out_h: int, pos_x: float = 92.0, pos_y: float = 6.0
+                  ) -> tuple[list[str], str]:
     """构造频道 Logo 叠加的 ffmpeg 输入段与 filter_complex 视频段。
 
     logo 作为额外输入（单帧 PNG，overlay 默认 eof_action=repeat 持续显示，
@@ -55,6 +56,11 @@ def _logo_overlay(logo_path: str, position: str, size: int, opacity: int,
         xy = (f"{m}", f"main_h-overlay_h-{m}")
     elif position == "bottom_right":
         xy = (f"main_w-overlay_w-{m}", f"main_h-overlay_h-{m}")
+    elif position == "custom":
+        # 任意位置：Logo 左上角在可移动空间（main-overlay）中的百分比坐标
+        fx = min(100.0, max(0.0, float(pos_x))) / 100.0
+        fy = min(100.0, max(0.0, float(pos_y))) / 100.0
+        xy = (f"(main_w-overlay_w)*{fx:.4f}", f"(main_h-overlay_h)*{fy:.4f}")
     else:  # top_right（默认）
         xy = (f"main_w-overlay_w-{m}", f"{m}")
     alpha = min(1.0, max(0.1, float(opacity or 90) / 100.0))
@@ -66,7 +72,8 @@ def _logo_overlay(logo_path: str, position: str, size: int, opacity: int,
 
 
 def _build_audio_chain(block_segs: list[dict], audio_paths: dict,
-                       lead: float = 0.0,
+                       lead: float = 0.0, intro_db: float = 0.0,
+                       outro_db: float = 0.0,
                        audio_start: int = 1) -> tuple[str, list[str]]:
     """块内音频 filter_complex：朗读文件 + 静音气口统一 44100 立体声 concat。
 
@@ -94,10 +101,11 @@ def _build_audio_chain(block_segs: list[dict], audio_paths: dict,
         concat_refs.append(f"[{state['n']}:a]")
         state["n"] += 1
 
-    def _push_file(path: str) -> None:
+    def _push_file(path: str, db: float = 0.0) -> None:
         inputs.extend(["-i", path])
         n = state["n"]
-        chains.append(f"[{n}:a]aresample=44100,aformat=channel_layouts=stereo[a{n}]")
+        vol = f"volume={db:.2f}dB," if db else ""
+        chains.append(f"[{n}:a]{vol}aresample=44100,aformat=channel_layouts=stereo[a{n}]")
         concat_refs.append(f"[a{n}]")
         state["n"] += 1
 
@@ -123,9 +131,12 @@ def _build_audio_chain(block_segs: list[dict], audio_paths: dict,
             else:
                 _push_silence(max(0.0, float(seg.get("duration", 0))))
         elif seg_type in ("intro", "outro"):
+            # 片头/片尾音量偏移（dB）：绑定视频与默认 TTS 播报统一生效；
+            # 0dB 不注入 volume 滤镜（默认输出与历史逐比特一致）
+            db = intro_db if seg_type == "intro" else outro_db
             path = audio_paths.get(seg_type, "")
             if path and os.path.exists(path):
-                _push_file(path)
+                _push_file(path, db=db)
             else:
                 _push_silence(max(0.0, float(seg.get("duration", 0))))
         else:
@@ -173,6 +184,7 @@ def _build_video_block(intro_video: str, block_segs: list[dict], out_path: str,
 
 def _build_block(card_path: str, block_segs: list[dict], audio_paths: dict,
                  out_path: str, vf: str, lead: float = 0.0,
+                 intro_db: float = 0.0, outro_db: float = 0.0,
                  logo: tuple[list[str], str] | None = None) -> None:
     """构建一个块 mp4（静态卡 + 音频链）。
 
@@ -181,6 +193,7 @@ def _build_block(card_path: str, block_segs: list[dict], audio_paths: dict,
     block_dur = round(sum(float(seg.get("duration", 0.0)) for seg in block_segs), 3)
     lg_inputs, lg_chain = logo or ([], "")
     fg, inputs = _build_audio_chain(block_segs, audio_paths, lead=lead,
+                                    intro_db=intro_db, outro_db=outro_db,
                                     audio_start=2 if lg_inputs else 1)
     cmd = ["ffmpeg", "-y", "-loop", "1", "-i", card_path]
     cmd += lg_inputs  # logo 输入占用索引 1（无音频流）
@@ -247,6 +260,7 @@ def compose_sleep(work_dir: str, timeline: list[dict], script: dict,
                   card_lead: float = 0.0, xfade_sec: float = 0.0,
                   logo_path: str = "", logo_position: str = "top_right",
                   logo_size: int = 96, logo_opacity: int = 90,
+                  logo_pos_x: float = 92.0, logo_pos_y: float = 6.0,
                   progress_cb=None, stop_check=None) -> str:
     """合成 sleep 成片。返回最终 mp4 路径（videos/{safe}.mp4）。
 
@@ -262,7 +276,8 @@ def compose_sleep(work_dir: str, timeline: list[dict], script: dict,
     if logo_path:
         if os.path.exists(logo_path):
             logo = _logo_overlay(logo_path, logo_position, logo_size,
-                                 logo_opacity, out_h)
+                                 logo_opacity, out_h,
+                                 pos_x=logo_pos_x, pos_y=logo_pos_y)
             print(f"  [Sleep] Logo overlay: {Path(logo_path).name} "
                   f"@{logo_position} size={logo_size} opacity={logo_opacity}%")
         else:
@@ -334,7 +349,8 @@ def compose_sleep(work_dir: str, timeline: list[dict], script: dict,
                                        volume_db=outro_volume_db, logo=logo)
                 else:
                     _build_block(card, block_segs, audio_results, out_path, vf,
-                                 lead=card_lead, logo=logo)
+                                 lead=card_lead, intro_db=intro_volume_db,
+                                 outro_db=outro_volume_db, logo=logo)
             except RuntimeError as e:
                 if str(e) == "stopped":
                     raise
@@ -347,7 +363,8 @@ def compose_sleep(work_dir: str, timeline: list[dict], script: dict,
                                        volume_db=outro_volume_db, logo=logo)
                 else:
                     _build_block(card, block_segs, audio_results, out_path, vf,
-                                 lead=card_lead, logo=logo)
+                                 lead=card_lead, intro_db=intro_volume_db,
+                                 outro_db=outro_volume_db, logo=logo)
         block_paths.append(out_path)
         if bi % 10 == 0 or bi == total - 1:
             _cb(int(2 + bi / total * 78),

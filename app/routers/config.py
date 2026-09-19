@@ -192,7 +192,8 @@ def _resolve_preview_logo(cfg: dict, channel: str) -> str:
 
 
 def _stamp_logo_on_card(img, logo_path: str, position: str, size: int,
-                        opacity: int) -> None:
+                        opacity: int, pos_x: float = 92.0,
+                        pos_y: float = 6.0) -> None:
     """按成片 overlay 数学把 Logo 盖到预览卡上（原位修改 RGBA 图）。
 
     复刻 video_compose_sleep._logo_overlay：宽=s（k=图高/720）、边距
@@ -222,6 +223,12 @@ def _stamp_logo_on_card(img, logo_path: str, position: str, size: int,
         xy = (m, img.height - h - m)
     elif position == "bottom_right":
         xy = (img.width - w - m, img.height - h - m)
+    elif position == "custom":
+        # 任意位置：Logo 左上角在可移动空间（画幅-Logo）内的百分比（与成片
+        # FFmpeg overlay 表达式同源：int 截断 ≈ ffmpeg 整数化）
+        fx = min(100.0, max(0.0, float(pos_x))) / 100.0
+        fy = min(100.0, max(0.0, float(pos_y))) / 100.0
+        xy = (int((img.width - w) * fx), int((img.height - h) * fy))
     else:  # top_right（默认）
         xy = (img.width - w - m, m)
     img.alpha_composite(logo, xy)
@@ -267,10 +274,18 @@ def _render_sleep_preview_png(cfg: dict, channel: str = "") -> bytes:
                     _opacity = int(float(cfg.get("sleep_logo_opacity", 90) or 90))
                 except (TypeError, ValueError):
                     _opacity = 90
+                try:
+                    _pos_x = float(cfg.get("sleep_logo_pos_x", 92.0) or 92.0)
+                except (TypeError, ValueError):
+                    _pos_x = 92.0
+                try:
+                    _pos_y = float(cfg.get("sleep_logo_pos_y", 6.0) or 6.0)
+                except (TypeError, ValueError):
+                    _pos_y = 6.0
                 im = im.convert("RGBA")
                 _stamp_logo_on_card(im, logo_path,
                                     str(cfg.get("sleep_logo_position", "") or "top_right"),
-                                    _size, _opacity)
+                                    _size, _opacity, pos_x=_pos_x, pos_y=_pos_y)
                 im = im.convert("RGB")
             imgs.append(im)
         canvas = Image.new("RGB", (max(im.width for im in imgs),

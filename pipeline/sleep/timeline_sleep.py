@@ -68,6 +68,7 @@ def sequence_signature(sequence: list[dict] | None) -> str:
 def build_sleep_timeline(script: dict, audio: dict, num_pairs: int,
                          gap_short: float = 1.0, gap_long: float = 2.0,
                          pair_gap: float = 3.0, include_intro: bool = True,
+                         include_outro: bool = True,
                          card_lead: float = 0.0,
                          sequence: list[dict] | None = None) -> list[dict]:
     """由 prepare_sleep_audio 结果构建线性时间轴。
@@ -80,7 +81,9 @@ def build_sleep_timeline(script: dict, audio: dict, num_pairs: int,
     第一个步骤的 duration（画面先于朗读出现，compose 在该段音频链前插
     等长静音）。
 
-    include_intro=False 时不生成 intro 段（片头开关）。
+    include_intro=False 时不生成 intro 段（片头开关）；include_outro=False
+    时不生成 outro 段（片尾开关，intro/outro 绑定守卫与时间轴重建见
+    pipeline._step2/_step4）。
     """
     timeline: list[dict] = []
     if include_intro:
@@ -127,9 +130,10 @@ def build_sleep_timeline(script: dict, audio: dict, num_pairs: int,
                              "duration": round(_gap_after(step, entry.get("gap")), 3),
                              "subtitle_en": "", "subtitle_zh": ""})
 
-    outro_dur = float(audio.get("outro_dur", 0.0))
-    timeline.append({"type": "outro", "duration": round(outro_dur, 3),
-                     "subtitle_en": "", "subtitle_zh": "", "pair": 0, "step": ""})
+    if include_outro:
+        outro_dur = float(audio.get("outro_dur", 0.0))
+        timeline.append({"type": "outro", "duration": round(outro_dur, 3),
+                         "subtitle_en": "", "subtitle_zh": "", "pair": 0, "step": ""})
     return timeline
 
 

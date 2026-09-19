@@ -94,6 +94,14 @@ def build_theme(cfg: dict) -> dict:
     theme["font_en"] = str(cfg.get("sleep_font_en", "") or "").strip()
     theme["font_ph"] = str(cfg.get("sleep_font_ph", "") or "").strip()
     theme["font_zh"] = str(cfg.get("sleep_font_zh", "") or "").strip()
+    # 句子区三字体描边假粗 0-4（与频道名 sleep_handwrite_weight 同机制；
+    # 0=原样与历史渲染逐像素一致；配置缺键/非法值回落 0）
+    for _key in ("font_en", "font_ph", "font_zh"):
+        try:
+            theme[_key + "_weight"] = min(4, max(0, int(float(
+                cfg.get("sleep_" + _key + "_weight", 0) or 0))))
+        except (TypeError, ValueError):
+            theme[_key + "_weight"] = 0
     # 频道名字体粗细（描边假粗 0-4，任意字体生效；0=原样逐像素不变）
     try:
         theme["handwrite_weight"] = min(4, max(0, int(float(cfg.get("sleep_handwrite_weight", 0) or 0))))
@@ -193,9 +201,14 @@ def _theme_font(theme: dict, key: str, fallbacks: list[str], text: str) -> str:
 
 
 def _tracked_bbox_w(draw: ImageDraw.ImageDraw, text: str, font,
-                    spacing: float) -> float:
-    """带字距的文本显示宽度（textbbox 宽 + 字符间隔；spacing<=0 与原一致）。"""
-    box = draw.textbbox((0, 0), text, font=font)
+                    spacing: float, stroke: int = 0) -> float:
+    """带字距/描边的文本显示宽度（stroke>0 时 textbbox 含描边外扩）。
+
+    stroke=0 与历史调用逐像素一致。"""
+    if stroke:
+        box = draw.textbbox((0, 0), text, font=font, stroke_width=stroke)
+    else:
+        box = draw.textbbox((0, 0), text, font=font)
     w = box[2] - box[0]
     if spacing and len(text) > 1:
         w += spacing * (len(text) - 1)
@@ -226,38 +239,49 @@ def _cached_font(path: str, size: int) -> ImageFont.FreeTypeFont:
 
 
 def _draw_tracked(draw: ImageDraw.ImageDraw, xy: tuple, text: str, font,
-                  fill, spacing: float) -> None:
-    """带字距绘制：逐字符推进 x；spacing<=0 走整串 draw.text 保持像素一致。"""
+                  fill, spacing: float, stroke: int = 0) -> None:
+    """带字距绘制：逐字符推进 x；spacing<=0 走整串 draw.text 保持像素一致。
+
+    stroke>0 时描边假粗（stroke_fill=fill 同色描边，机制与频道名一致）；
+    stroke=0 不传描边参数，输出与历史逐字节一致。"""
     x, y = xy
     if not spacing or len(text) <= 1:
-        draw.text((x, y), text, font=font, fill=fill)
+        if stroke:
+            draw.text((x, y), text, font=font, fill=fill,
+                      stroke_width=stroke, stroke_fill=fill)
+        else:
+            draw.text((x, y), text, font=font, fill=fill)
         return
     for ch in text:
-        draw.text((x, y), ch, font=font, fill=fill)
+        if stroke:
+            draw.text((x, y), ch, font=font, fill=fill,
+                      stroke_width=stroke, stroke_fill=fill)
+        else:
+            draw.text((x, y), ch, font=font, fill=fill)
         x += draw.textlength(ch, font=font) + spacing
 
 
 def _fit_font(draw: ImageDraw.ImageDraw, text: str, font_path: str,
               start_size: int, min_size: int, max_w: int,
-              spacing: float = 0.0) -> ImageFont.FreeTypeFont:
+              spacing: float = 0.0, stroke: int = 0) -> ImageFont.FreeTypeFont:
     size = start_size
     while size > min_size:
         font = _cached_font(font_path, size)
-        if _tracked_bbox_w(draw, text, font, spacing) <= max_w:
+        if _tracked_bbox_w(draw, text, font, spacing, stroke) <= max_w:
             return font
         size -= 4
     return _cached_font(font_path, min_size)
 
 
 def _wrap_words(draw: ImageDraw.ImageDraw, text: str, font, max_w: int,
-                spacing: float = 0.0) -> list[str]:
+                spacing: float = 0.0, stroke: int = 0) -> list[str]:
     words = text.split()
     if not words:
-        return [""]
+        [""]
     lines, cur = [], words[0]
     for wd in words[1:]:
         trial = f"{cur} {wd}"
-        if _tracked_bbox_w(draw, trial, font, spacing) <= max_w:
+        if _tracked_bbox_w(draw, trial, font, spacing, stroke) <= max_w:
             cur = trial
         else:
             lines.append(cur)
@@ -280,31 +304,46 @@ def _draw_text_block(img: Image.Image, draw: ImageDraw.ImageDraw, en: str,
     fs = float(theme.get("font_scale", 1.0) or 1.0)
     sp = float(theme.get("letter_spacing", 0) or 0) * s
     max_w = w - int(240 * s)
+    # 三字体描边假粗（0-4）：按初始字号估宽（封顶随字号），缩号后按实际
+    # 字号重算绘制描边；档位 0 不注入描边（与历史渲染逐像素一致）
+    en_stroke_est = _stroke_px(int(theme.get("font_en_weight", 0)),
+                               int(en_start * s * fs), s)
     en_font = _fit_font(draw, en, _theme_font(theme, "font_en",
                                               [_FONT_EN_CARD, FONT_EN], en),
-                        int(en_start * s * fs), int(30 * s), max_w, spacing=sp)
-    en_lines = _wrap_words(draw, en, en_font, max_w, spacing=sp)
+                        int(en_start * s * fs), int(30 * s), max_w,
+                        spacing=sp, stroke=en_stroke_est)
+    en_lines = _wrap_words(draw, en, en_font, max_w, spacing=sp,
+                           stroke=en_stroke_est)
     line_h = en_font.size + int(theme.get("line_spacing", 14) * s)
     ph_font = _cached_font(_theme_font(theme, "font_ph", [FONT_PH], phonetic),
                            int(34 * s * fs)) if phonetic else None
     zh_font = _cached_font(_theme_font(theme, "font_zh", [FONT_ZH], zh),
                            int(42 * s * fs)) if zh else None
+    # 实际绘制描边（按各自最终字号封顶；0=无描边）
+    en_stroke = _stroke_px(int(theme.get("font_en_weight", 0)), en_font.size, s)
+    ph_stroke = (_stroke_px(int(theme.get("font_ph_weight", 0)),
+                            ph_font.size, s) if phonetic else 0)
+    zh_stroke = (_stroke_px(int(theme.get("font_zh_weight", 0)),
+                            zh_font.size, s) if zh else 0)
     ph_h = (ph_font.size + int(10 * s)) if phonetic else 0
     zh_h = (zh_font.size + int(12 * s)) if zh else 0
     y = cy - (len(en_lines) * line_h + ph_h + zh_h) / 2
     for ln in en_lines:
-        tw = _tracked_bbox_w(draw, ln, en_font, sp)
-        _draw_tracked(draw, ((w - tw) / 2, y), ln, en_font, en_color, sp)
+        tw = _tracked_bbox_w(draw, ln, en_font, sp, stroke=en_stroke)
+        _draw_tracked(draw, ((w - tw) / 2, y), ln, en_font, en_color, sp,
+                      stroke=en_stroke)
         y += line_h
     if phonetic:
-        tw = _tracked_bbox_w(draw, phonetic, ph_font, sp)
+        tw = _tracked_bbox_w(draw, phonetic, ph_font, sp, stroke=ph_stroke)
         _draw_tracked(draw, ((w - tw) / 2, y), phonetic, ph_font,
-                      _hex_rgb(theme["phonetic"], (125, 140, 30)), sp)
+                      _hex_rgb(theme["phonetic"], (125, 140, 30)), sp,
+                      stroke=ph_stroke)
         y += ph_h
     if zh:
-        tw = _tracked_bbox_w(draw, zh, zh_font, sp)
+        tw = _tracked_bbox_w(draw, zh, zh_font, sp, stroke=zh_stroke)
         _draw_tracked(draw, ((w - tw) / 2, y), zh, zh_font,
-                      _hex_rgb(theme["zh_text"], (58, 58, 58)), sp)
+                      _hex_rgb(theme["zh_text"], (58, 58, 58)), sp,
+                      stroke=zh_stroke)
 
 
 def _draw_leaf(base: Image.Image, cx: int, cy: int, lw: int, lh: int,
@@ -566,9 +605,12 @@ def render_intro_card(theme: dict, out_path: str,
     sub_font = _cached_font(_theme_font(theme, "font_zh", [FONT_ZH],
                                         "閉上眼睛 · 輕鬆聽"), int(34 * s))
     sub = "閉上眼睛 · 輕鬆聽"
-    box = draw.textbbox((0, 0), sub, font=sub_font)
-    draw.text(((w - (box[2] - box[0])) / 2, h / 2 + int(60 * s)), sub,
-              font=sub_font, fill=_hex_rgb(theme["zh_text"], (58, 58, 58)))
+    zh_stroke = _stroke_px(int(theme.get("font_zh_weight", 0)),
+                           sub_font.size, s)
+    sub_w = _tracked_bbox_w(draw, sub, sub_font, 0.0, stroke=zh_stroke)
+    _draw_tracked(draw, ((w - sub_w) / 2, h / 2 + int(60 * s)), sub,
+                  sub_font, _hex_rgb(theme["zh_text"], (58, 58, 58)), 0.0,
+                  stroke=zh_stroke)
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
     img.convert("RGB").save(out_path, "PNG")
     return out_path
@@ -585,15 +627,20 @@ def render_outro_card(theme: dict, out_path: str, outro_text: str,
     _draw_badge(draw, card, theme, badge_text, s)
     text = (outro_text or "Thanks for listening. See you next time!").strip()
     max_w = w - int(300 * s)
+    en_stroke_est = _stroke_px(int(theme.get("font_en_weight", 0)),
+                               int(64 * s), s)
     en_font = _fit_font(draw, text, _theme_font(theme, "font_en",
                                                 [_FONT_EN_CARD, FONT_EN], text),
-                        int(64 * s), int(30 * s), max_w)
-    lines = _wrap_words(draw, text, en_font, max_w)
+                        int(64 * s), int(30 * s), max_w,
+                        stroke=en_stroke_est)
+    en_stroke = _stroke_px(int(theme.get("font_en_weight", 0)), en_font.size, s)
+    lines = _wrap_words(draw, text, en_font, max_w, stroke=en_stroke)
     y = h / 2 - len(lines) * (en_font.size + int(14 * s)) / 2
     for ln in lines:
-        box = draw.textbbox((0, 0), ln, font=en_font)
-        draw.text(((w - (box[2] - box[0])) / 2, y), ln, font=en_font,
-                  fill=_hex_rgb(theme["en_a"], (66, 32, 6)))
+        tw = _tracked_bbox_w(draw, ln, en_font, 0.0, stroke=en_stroke)
+        _draw_tracked(draw, ((w - tw) / 2, y), ln, en_font,
+                      _hex_rgb(theme["en_a"], (66, 32, 6)), 0.0,
+                      stroke=en_stroke)
         y += en_font.size + int(14 * s)
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
     img.convert("RGB").save(out_path, "PNG")
@@ -623,14 +670,18 @@ def render_sleep_thumbnail(script: dict, theme: dict, out_path: str,
         st_font = _cached_font(_theme_font(theme, "font_zh", [FONT_ZH], strip),
                                int(44 * s))
         box = draw.textbbox((0, 0), strip, font=st_font)
+        strip_stroke = _stroke_px(int(theme.get("font_zh_weight", 0)),
+                                  st_font.size, s)
         pad_x = int(26 * s)
         sw = box[2] - box[0] + pad_x * 2
         sx = (w - sw) / 2
         draw.rounded_rectangle([sx, int(14 * s), sx + sw, int(76 * s)],
                                radius=int(14 * s),
                                fill=(*_hex_rgb(theme["num"], (255, 111, 165)), 235))
-        draw.text((sx + pad_x, int(14 * s) + (int(62 * s) - (box[3] - box[1])) / 2 - box[1]),
-                  strip, font=st_font, fill=(255, 255, 255))
+        _draw_tracked(draw, (sx + pad_x,
+                             int(14 * s) + (int(62 * s) - (box[3] - box[1])) / 2 - box[1]),
+                      strip, st_font, (255, 255, 255), 0.0,
+                      stroke=strip_stroke)
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
     img.convert("RGB").save(out_path, "PNG")
     return out_path

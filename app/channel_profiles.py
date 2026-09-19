@@ -21,6 +21,7 @@ from pathlib import Path
 from typing import Any
 
 from .paths import CHANNELS_DIR, CHANNEL_FAVORITES_PATH, WEB_ROOT
+from .config_manager import SLEEP_GROUPS
 
 # 合法频道 id（与频道工坊 profile id 同前缀，手动/转正共用）
 _CHANNEL_ID_RE = re.compile(r"^ch_[A-Za-z0-9_]+$")
@@ -243,7 +244,8 @@ SYNC_SCOPES: dict[str, tuple[str, ...] | None] = {
     "all": None,
     "credentials": ("llm", "mcp"),
     "content": ("content",),
-    "visual": ("sleep",),
+    # Sleep 六分类分组全集（config_manager.SLEEP_GROUPS）
+    "visual": tuple(sorted(SLEEP_GROUPS)),
     "bgm": ("bgm", "bgm_amix", "bgm_sidechain"),
 }
 

@@ -35,6 +35,11 @@ _DUR_SIDECAR = ".durations.json"
 INTRO_SILENT_SECONDS = 3.0
 # intro 音轨模式标记：announce=TTS 播报 / silent=静音占位；与请求不符时重做
 _INTRO_MODE_SIDECAR = ".intro_mode"
+# 片尾播报关闭（outro_announce=False）时 outro_sleep.mp3 为该时长的静音占位，
+# 保持 outro 文件恒存在（load_* 校验 / timeline outro 段时长来源不变）
+OUTRO_SILENT_SECONDS = 3.0
+# outro 音轨模式标记：announce=TTS 播报 / silent=静音占位；与请求不符时重做
+_OUTRO_MODE_SIDECAR = ".outro_mode"
 
 
 def needed_audio_steps(sequence: list[dict] | None) -> set[str] | None:
@@ -150,6 +155,15 @@ def _intro_mode(audio_dir: Path) -> str:
         return ""
 
 
+
+
+def _outro_mode(audio_dir: Path) -> str:
+    """当前 outro_sleep.mp3 的模式标记（announce/silent；无标记=空串）。"""
+    p = audio_dir / _OUTRO_MODE_SIDECAR
+    try:
+        return p.read_text(encoding="utf-8").strip()
+    except OSError:
+        return ""
 def _synth_silent(path: str, seconds: float) -> None:
     """生成 seconds 秒静音 mp3（anullsrc，44100Hz 立体声与其它段一致）。"""
     cmd = ["ffmpeg", "-y", "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo",
@@ -168,7 +182,8 @@ def pair_steps(audio_dir: Path, i: int) -> dict:
 
 def load_sleep_audio_results(audio_dir: Path, num_pairs: int,
                              needed_steps: set[str] | None = None,
-                             announce: bool = True) -> dict | None:
+                             announce: bool = True,
+                             outro_announce: bool = True) -> dict | None:
     """从已存在文件重建 sleep 音频结果（resume / 完整性校验）。
 
     needed_steps 内全部文件 + intro/outro 齐全才返回，否则 None（交给
@@ -182,6 +197,8 @@ def load_sleep_audio_results(audio_dir: Path, num_pairs: int,
     intro = audio_dir / "intro_sleep.mp3"
     outro = audio_dir / "outro_sleep.mp3"
     if _intro_mode(audio_dir) != ("announce" if announce else "silent"):
+        return None
+    if _outro_mode(audio_dir) != ("announce" if outro_announce else "silent"):
         return None
     if not (_usable(str(intro)) and _usable(str(outro))):
         return None
@@ -242,7 +259,8 @@ def prepare_sleep_audio(script: dict, audio_dir: Path, num_pairs: int,
                         voice_male: str = "", voice_female: str = "",
                         stop_check=None,
                         needed_steps: set[str] | None = None,
-                        announce: bool = True) -> dict:
+                        announce: bool = True,
+                        outro_announce: bool = True) -> dict:
     """生成全部 sleep 音频（文件级续传）。返回 results dict（见 load_*）。
 
     slow_rate/male_rate 为速率倍率（0.8=八成速），经各引擎 synth_english
@@ -316,9 +334,16 @@ def prepare_sleep_audio(script: dict, audio_dir: Path, num_pairs: int,
                    rate=male_rate_str)
         (audio_dir / _INTRO_MODE_SIDECAR).write_text(
             "announce" if announce else "silent", encoding="utf-8")
-    if not _usable(str(outro)):
-        _synth(outro_text or "Thanks for listening. See you next time!",
-               narration_voice, str(outro), rate=male_rate_str)
+    # outro 播报模式标记与请求不符（或文件缺失）时重做——单句 TTS / 静音
+    # 生成均秒级完成；pair 缓存不受影响（机制与 intro 播报标记相同）
+    if not _usable(str(outro)) or _outro_mode(audio_dir) != ("announce" if outro_announce else "silent"):
+        if not outro_announce:
+            _synth_silent(str(outro), OUTRO_SILENT_SECONDS)
+        else:
+            _synth(outro_text or "Thanks for listening. See you next time!",
+                   narration_voice, str(outro), rate=male_rate_str)
+        (audio_dir / _OUTRO_MODE_SIDECAR).write_text(
+            "announce" if outro_announce else "silent", encoding="utf-8")
 
     dialogue = script.get("dialogue", [])
     rows_a = dialogue[0::2]

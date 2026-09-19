@@ -356,7 +356,8 @@ def _step2_images_tts(args, checkpoint: dict, script: dict, work_dir: Path, dirs
     _needed = needed_audio_steps(_sequence)
     loaded = load_sleep_audio_results(audio_dir, int(getattr(args, "sleep_pairs", 200)),
                                       needed_steps=_needed,
-                                      announce=bool(getattr(args, "sleep_intro_announce", True)))
+                                      announce=bool(getattr(args, "sleep_intro_announce", True)),
+                                      outro_announce=bool(getattr(args, "sleep_outro_announce", True)))
     if loaded is not None:
         tts_results, image_urls = loaded, {}
         print("  [Resume] sleep 音频已完整，跳过 TTS。")
@@ -374,7 +375,8 @@ def _step2_images_tts(args, checkpoint: dict, script: dict, work_dir: Path, dirs
                 voice_female=str(getattr(args, "sleep_voice_female", "") or ""),
                 stop_check=stop_check,
                 needed_steps=_needed,
-                announce=bool(getattr(args, "sleep_intro_announce", True))))
+                announce=bool(getattr(args, "sleep_intro_announce", True)),
+                outro_announce=bool(getattr(args, "sleep_outro_announce", True))))
         except RuntimeError as e:
             if str(e) == "stopped":
                 tts_results["fatal_error"] = "stopped"
@@ -405,7 +407,11 @@ def _step2_images_tts(args, checkpoint: dict, script: dict, work_dir: Path, dirs
     # 片尾库绑定：outro 视频拷入运行目录，timeline outro 段时长随视频
     # （outro TTS 照旧生成，音频完整性校验不变；绑定后 compose 不再消费它）
     outro_src = str(getattr(args, "sleep_outro_video", "") or "").strip()
-    if outro_src and not tts_results.get("fatal_error"):
+    if outro_src and not getattr(args, "sleep_outro", True):
+        print("  [Sleep] 片尾已关闭（sleep_outro=False）—— 跳过片尾视频绑定")
+    elif outro_src and not getattr(args, "sleep_outro_use_library", True):
+        print("  [Sleep] 片尾库绑定已关闭（sleep_outro_use_library=False）—— 使用默认片尾")
+    elif outro_src and not tts_results.get("fatal_error"):
         if os.path.exists(outro_src):
             import shutil
             outro_dst = work_dir / "outro_video.mp4"
@@ -507,6 +513,9 @@ def _step4_timeline(args, checkpoint: dict, script: dict, work_dir: Path,
     sub_dir = dirs["subtitles"]
     srt_path = sub_dir / "output.srt"
     meta_path = sub_dir / "meta.json"
+    # 片头/片尾开关（段结构）当前值 —— resume 时与 meta.json 记录比对决定重建
+    want_bounds = (bool(getattr(args, "sleep_intro", True)),
+                   bool(getattr(args, "sleep_outro", True)))
 
     if _step_done(checkpoint, "step4_timeline") and srt_path.exists() and meta_path.exists():
         meta = json.loads(meta_path.read_text(encoding="utf-8"))
@@ -514,6 +523,10 @@ def _step4_timeline(args, checkpoint: dict, script: dict, work_dir: Path,
             # 改组数后 resume：旧时间轴与当前音频/配置不再对齐 → 重建而非静默沿用
             print(f"  [Resume] sleep_pairs 变化（meta {meta.get('sleep_pairs')} → "
                   f"{getattr(args, 'sleep_pairs', 200)}）— 重建时间轴")
+        elif (meta.get("sleep_intro", True), meta.get("sleep_outro", True)) != want_bounds:
+            print(f"  [Resume] sleep_intro/sleep_outro 开关变化（meta "
+                  f"{meta.get('sleep_intro', True)}/{meta.get('sleep_outro', True)} → "
+                  f"{want_bounds[0]}/{want_bounds[1]}）— 重建时间轴")
         else:
             print("  [Resume] Loading existing timeline + SRT...")
             return (meta["timeline"], meta.get("narration", {}),
@@ -532,6 +545,10 @@ def _step4_timeline(args, checkpoint: dict, script: dict, work_dir: Path,
                   f"{getattr(args, 'sleep_pairs', 200)}）— 重建时间轴")
         elif meta.get("sleep_sequence_sig", "") != seq_sig:
             print("  [Resume] sleep_sequence 变化 — 重建时间轴")
+        elif (meta.get("sleep_intro", True), meta.get("sleep_outro", True)) != want_bounds:
+            print(f"  [Resume] sleep_intro/sleep_outro 开关变化（meta "
+                  f"{meta.get('sleep_intro', True)}/{meta.get('sleep_outro', True)} → "
+                  f"{want_bounds[0]}/{want_bounds[1]}）— 重建时间轴")
         else:
             print("  [Resume] Loading existing timeline + SRT...")
             return (meta["timeline"], meta.get("narration", {}),
@@ -543,6 +560,7 @@ def _step4_timeline(args, checkpoint: dict, script: dict, work_dir: Path,
         gap_long=float(getattr(args, "sleep_gap_long", 2.0)),
         pair_gap=float(getattr(args, "sleep_pair_gap", 3.0)),
         include_intro=bool(getattr(args, "sleep_intro", True)),
+        include_outro=bool(getattr(args, "sleep_outro", True)),
         card_lead=float(getattr(args, "sleep_card_lead", 0.3) or 0.0),
         sequence=sequence)
     # 字幕不上屏（文字预渲染进卡片）；SRT 仅作 sidecar 闭源字幕文件
@@ -558,6 +576,8 @@ def _step4_timeline(args, checkpoint: dict, script: dict, work_dir: Path,
         "pad": getattr(args, "pad", 0.4),
         "sleep_pairs": int(getattr(args, "sleep_pairs", 200)),
         "sleep_sequence_sig": seq_sig,
+        "sleep_intro": want_bounds[0],
+        "sleep_outro": want_bounds[1],
         "narration": tts_results.get("narration", {}),
         "normal_paths": tts_results.get("normal_paths", []),
         "zh_paths": tts_results.get("zh_paths", []),
@@ -700,6 +720,8 @@ def _step5_compose(args, checkpoint: dict, script: dict, work_dir: Path, dirs: d
                           or "top_right"),
         logo_size=int(getattr(args, "sleep_logo_size", 96) or 96),
         logo_opacity=int(getattr(args, "sleep_logo_opacity", 90) or 90),
+        logo_pos_x=float(getattr(args, "sleep_logo_pos_x", 92.0) or 92.0),
+        logo_pos_y=float(getattr(args, "sleep_logo_pos_y", 6.0) or 6.0),
         progress_cb=progress_cb,
         stop_check=stop_check,
     )
@@ -881,6 +903,12 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument("--sleep-channel-name", default="English with me", help="卡片/片头频道名（同步作 TTS 播报）")
     parser.add_argument("--sleep-intro-video", default="", help="片头视频 mp4 路径（片头库生成后绑定；空=默认静态卡片+频道名播报）")
     parser.add_argument("--sleep-outro-video", default="", help="片尾视频 mp4 路径（片尾库生成后绑定；空=默认静态卡片+结束语播报）")
+    parser.add_argument("--sleep-outro", action=argparse.BooleanOptionalAction, default=True,
+                        help="是否生成片尾（关闭=无 outro 段直接结束，片尾库绑定同时失效；outro TTS 仍生成以保持缓存完整性）")
+    parser.add_argument("--sleep-outro-use-library", action=argparse.BooleanOptionalAction, default=True,
+                        help="是否使用片尾库绑定的片尾视频（False=忽略绑定，恒用默认结束语卡片片尾）")
+    parser.add_argument("--sleep-outro-announce", action=argparse.BooleanOptionalAction, default=True,
+                        help="默认卡片片尾是否 TTS 播报结束语（False=静音卡片 3 秒，不合成播报；对片尾库视频无影响）")
     parser.add_argument("--sleep-intro", action=argparse.BooleanOptionalAction, default=True,
                         help="是否生成片头（关闭=无 intro 段直接从第一组开始；intro TTS 仍生成以保持缓存完整性）")
     parser.add_argument("--sleep-intro-use-library", action=argparse.BooleanOptionalAction, default=True,
@@ -910,6 +938,9 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument("--sleep-font-en", default="", help="句子英文字体文件路径（空=内置 Nunito Bold；缺字形自动回退）")
     parser.add_argument("--sleep-font-ph", default="", help="IPA 音标字体文件路径（空=Cambria；缺 IPA 字形自动回退）")
     parser.add_argument("--sleep-font-zh", default="", help="中文字体文件路径（空=微软雅黑；缺中文字形自动回退）")
+    parser.add_argument("--sleep-font-en-weight", type=int, default=0, help="英文字体描边粗细 0-4（默认 0=原样）")
+    parser.add_argument("--sleep-font-ph-weight", type=int, default=0, help="音标字体描边粗细 0-4（默认 0=原样）")
+    parser.add_argument("--sleep-font-zh-weight", type=int, default=0, help="中文字体描边粗细 0-4（默认 0=原样）")
     parser.add_argument("--sleep-color-bg-top", default="", help="背景渐变顶部 hex（空=内置默认）")
     parser.add_argument("--sleep-color-bg-bottom", default="", help="背景渐变底部 hex")
     parser.add_argument("--sleep-color-card", default="", help="卡片底色 hex")
@@ -933,10 +964,15 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument("--sleep-logo-path", default="",
                         help="Logo 图片路径（空=自动用 configs/channel_assets/{channel_id}/logo.png 频道工坊素材）")
     parser.add_argument("--sleep-logo-position", default="top_right",
-                        choices=["top_left", "top_right", "bottom_left", "bottom_right"],
-                        help="Logo 位置（默认 top_right）")
-    parser.add_argument("--sleep-logo-size", type=int, default=96, help="Logo 尺寸 px@720p（默认 96）")
+                        choices=["top_left", "top_right", "bottom_left",
+                                 "bottom_right", "custom"],
+                        help="Logo 位置（默认 top_right；custom=按 pos-x/pos-y 百分比任意定位）")
+    parser.add_argument("--sleep-logo-size", type=int, default=96, help="Logo 尺寸 px@720p（默认 96；4K 等比放大）")
     parser.add_argument("--sleep-logo-opacity", type=int, default=90, help="Logo 不透明度 %%（10-100，默认 90）")
+    parser.add_argument("--sleep-logo-pos-x", type=float, default=92.0,
+                        help="Logo 自定义横向位置 %%（0=贴左缘，100=贴右缘；仅 --sleep-logo-position custom 生效）")
+    parser.add_argument("--sleep-logo-pos-y", type=float, default=6.0,
+                        help="Logo 自定义纵向位置 %%（0=贴上缘，100=贴下缘；仅 --sleep-logo-position custom 生效）")
     # --- LLM ---
     parser.add_argument("--mcp-tokens", default=None, help="TJGenerators MCP OAuth tokens（仅 AI 缩略图/背景图消费，逗号分隔多 token 轮换）")
     parser.add_argument("--image-provider", default="mcp", choices=["mcp", "sensenova"],
