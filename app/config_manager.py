@@ -227,7 +227,7 @@ PARAM_SPEC = {
     "sleep_sequence": {"default": "", "type": "textarea", "group": "sleep",
                        "modes": ["sleep"],
                        "label": "组内步骤序列 (JSON)",
-                       "help": "朗读步骤编排 JSON（[{step, gap}]，step ∈ a_m/a_slow/b_m/b_slow/b_f/combo，gap=该步后停顿秒数或 null=沿用全局停顿参数）；留空=默认结构 a_m→a_slow→b_m→b_slow→combo；建议用「😴 Sleep 睡前短句」页的可视化编辑器修改"},
+                       "help": "朗读步骤编排 JSON（[{step, gap}]，step ∈ a_m/a_slow/b_m/b_slow/b_f/combo，gap=该步后停顿秒数或 null=沿用全局停顿参数）；留空=默认结构 a_m→a_slow→b_m→b_slow→combo；建议用「📋 内容编排」页的可视化编辑器修改"},
 
     # --- LLM ---
     "llm_provider": {"default": "sensenova", "type": "select", "group": "llm",
@@ -444,24 +444,7 @@ def effective_param_spec(mode: str) -> dict[str, dict]:
             if not v.get("modes") or mode in v["modes"]}
 
 
-# --- sleep 专项页拆分（侧边栏「😴 Sleep 睡前短句」画面页 与 「📋 内容编排」页）---
-# 完整清单仍在「参数配置」页渲染；两个专项页按此集合各取所需。
-# 画面页：影响成片卡片渲染/合成画面的全部参数。
-SLEEP_VISUAL_KEYS = frozenset({
-    "sleep_show_leaves", "sleep_handwrite_font", "sleep_handwrite_weight",
-    "sleep_font_en", "sleep_font_ph", "sleep_font_zh",
-    "sleep_color_bg_top", "sleep_color_bg_bottom", "sleep_color_card",
-    "sleep_color_card_border", "sleep_color_en_a", "sleep_color_en_b",
-    "sleep_color_phonetic", "sleep_color_zh", "sleep_color_num",
-    "sleep_color_badge_bg", "sleep_color_badge_text", "sleep_color_channel",
-    "sleep_color_leaf",
-    "sleep_bg_image", "sleep_bg_image_path", "sleep_bg_opacity",
-    "sleep_bg_layer",
-    "sleep_font_scale", "sleep_line_spacing", "sleep_letter_spacing",
-    "sleep_4k_native", "sleep_xfade", "sleep_xfade_sec",
-    "sleep_logo", "sleep_logo_path", "sleep_logo_position",
-    "sleep_logo_size", "sleep_logo_opacity",
-})
+# --- 「📋 内容编排」页参数子集（完整清单仍在「参数配置」页渲染）---
 # 内容编排页：组内步骤序列（可视化编辑器）+ 组数/语速/停顿/片头/提前量/播报文案。
 SLEEP_ORCHESTRATION_KEYS = frozenset({
     "sleep_sequence",
@@ -483,7 +466,8 @@ GROUP_META = {
     "bgm": {"label": "BGM 音乐（通用）", "icon": "🎵", "order": 6},
     "bgm_amix": {"label": "BGM · amix 模式", "icon": "🎵", "order": 7},
     "bgm_sidechain": {"label": "BGM · sidechain 模式", "icon": "🎵", "order": 8},
-    "sleep": {"label": "Sleep 睡前短句", "icon": "😴", "order": 9},
+    # 默认置顶；配置页分组支持拖拽排序（浏览器本地记忆），此 order 仅作初始顺序
+    "sleep": {"label": "Sleep 睡前短句", "icon": "😴", "order": 0},
 }
 
 

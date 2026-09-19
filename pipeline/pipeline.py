@@ -877,7 +877,7 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument("--sleep-gap-short", type=float, default=1.0, help="常速朗读后停顿秒数（默认 1.0）")
     parser.add_argument("--sleep-gap-long", type=float, default=2.0, help="慢速跟读后停顿秒数（默认 2.0）")
     parser.add_argument("--sleep-pair-gap", type=float, default=3.0, help="AB 连贯后切组停顿秒数（默认 3.0）")
-    parser.add_argument("--sleep-sequence", default="", help="组内步骤序列 JSON（留空=默认结构 a_m→a_slow→b_m→b_slow→combo；建议用 Web「😴 Sleep 睡前短句」页的可视化编辑器修改）")
+    parser.add_argument("--sleep-sequence", default="", help="组内步骤序列 JSON（留空=默认结构 a_m→a_slow→b_m→b_slow→combo；建议用 Web「📋 内容编排」页的可视化编辑器修改）")
     parser.add_argument("--sleep-channel-name", default="English with me", help="卡片/片头频道名（同步作 TTS 播报）")
     parser.add_argument("--sleep-intro-video", default="", help="片头视频 mp4 路径（片头库生成后绑定；空=默认静态卡片+频道名播报）")
     parser.add_argument("--sleep-outro-video", default="", help="片尾视频 mp4 路径（片尾库生成后绑定；空=默认静态卡片+结束语播报）")

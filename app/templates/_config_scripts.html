@@ -1,4 +1,4 @@
-{# 共享 partial：配置表单 JS（config.html 与 sleep_config.html 共用）。
+{# 共享 partial：配置表单 JS（config.html 与 arrangement.html 共用）。
    依赖服务端注入：mode / custom_providers / params / sleep_color_defaults。 #}
 <script>
 const MODE = {{ mode | tojson }};  // 当前编辑的模式 Tab（structure 恒等于它）
@@ -17,6 +17,75 @@ function toggleSection(btn) {
         icon.style.transform = 'rotate(-90deg)';
     }
 }
+
+// --- 配置分组拖拽排序（仅参数配置页渲染把手；顺序存浏览器本地，按模式隔离）---
+const GROUP_ORDER_KEY = 'se_config_group_order__' + MODE;
+
+function _groupReorderOn() {
+    return !!document.querySelector('[data-group-handle]');
+}
+
+function _groupCards() {
+    return Array.from(document.querySelectorAll('[id^="group-card-"]'));
+}
+
+function _persistGroupOrder() {
+    try {
+        localStorage.setItem(GROUP_ORDER_KEY, JSON.stringify(
+            _groupCards().map(c => c.id.replace('group-card-', ''))));
+    } catch (e) { /* 存储不可用（隐私模式等）时仅本次会话内生效 */ }
+}
+
+// 载入时按存储顺序重排（appendChild 只移动组卡，form 顶部隐藏域不受影响）；
+// 存储未包含的新分组按服务端默认顺序追加在尾部
+function applySavedGroupOrder() {
+    if (!_groupReorderOn()) return;
+    let saved = null;
+    try { saved = JSON.parse(localStorage.getItem(GROUP_ORDER_KEY) || 'null'); } catch (e) {}
+    if (!Array.isArray(saved) || !saved.length) return;
+    const cards = _groupCards();
+    if (!cards.length) return;
+    const parent = cards[0].parentNode;
+    const byKey = {};
+    cards.forEach(c => { byKey[c.id.replace('group-card-', '')] = c; });
+    saved.forEach(k => {
+        if (byKey[k]) { parent.appendChild(byKey[k]); delete byKey[k]; }
+    });
+    Object.values(byKey).forEach(c => parent.appendChild(c));
+}
+
+let _dragGroupCard = null;
+
+document.addEventListener('dragstart', function(e) {
+    const handle = e.target.closest ? e.target.closest('[data-group-handle]') : null;
+    if (!handle) return;
+    _dragGroupCard = handle.closest('[id^="group-card-"]');
+    if (!_dragGroupCard) return;
+    e.dataTransfer.effectAllowed = 'move';
+    try { e.dataTransfer.setData('text/plain', _dragGroupCard.id); } catch (err) {}
+    requestAnimationFrame(() => { if (_dragGroupCard) _dragGroupCard.classList.add('opacity-40'); });
+});
+
+document.addEventListener('dragover', function(e) {
+    if (!_dragGroupCard) return;
+    const over = e.target.closest ? e.target.closest('[id^="group-card-"]') : null;
+    if (!over || over === _dragGroupCard) return;
+    e.preventDefault();  // 允许在组卡上放置
+    const rect = over.getBoundingClientRect();
+    over.parentNode.insertBefore(_dragGroupCard,
+        e.clientY < rect.top + rect.height / 2 ? over : over.nextSibling);
+});
+
+document.addEventListener('drop', function(e) {
+    if (_dragGroupCard) e.preventDefault();  // 防浏览器默认打开拖拽文本
+});
+
+document.addEventListener('dragend', function() {
+    if (!_dragGroupCard) return;
+    _dragGroupCard.classList.remove('opacity-40');
+    _dragGroupCard = null;
+    _persistGroupOrder();
+});
 
 // --- 字体下拉（type "font"）：自定义路径逃生口 ---
 // select 值不在选项中时 upsert 一个「自定义: 值」选项（预设载入/存量配置兜底）
@@ -200,7 +269,7 @@ function fillForm(config) {
     if (typeof onSequenceConfigRefresh === 'function') onSequenceConfigRefresh();
 }
 
-// 全量参数页（参数配置）走 save_all 整文件覆盖；部分参数页（画面/编排专项页）
+// 全量参数页（参数配置）走 save_all 整文件覆盖；部分参数页（内容编排页）
 // 传 config_save_all=false → 走 /api/config/save 合并保存，防止收集到的
 // 部分字段集覆盖掉未在页面上渲染的参数。
 // channel = 本标签页频道上下文（URL ?channel=，空=全局）
@@ -536,6 +605,7 @@ document.addEventListener('input', function(e) {
 // Initialize conditional displays on load
 window.addEventListener('load', function() {
     const config = {{ config | tojson }};
+    applySavedGroupOrder();
     forceStructureMode();
     toggleLLMFields(config.llm_provider || 'sensenova');
     toggleTTSFields(config.tts_engine || 'kokoro');

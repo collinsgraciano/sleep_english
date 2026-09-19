@@ -12,7 +12,7 @@ from ..config_manager import (
     effective_param_spec, find_run_dir, get_active_mode, get_provider_options,
     iter_run_dirs, list_presets, load_all_mode_configs, load_config,
     load_config, load_llm_providers, load_mode_config, set_active_mode,
-    SLEEP_VISUAL_KEYS, SLEEP_ORCHESTRATION_KEYS,
+    SLEEP_ORCHESTRATION_KEYS,
 )
 from ..paths import TRASH_META_FILENAME
 from ..pipeline_service import get_service
@@ -34,17 +34,13 @@ SLEEP_STEP_LABELS = {
     "combo": "AB 连贯",
 }
 
-# 预览渲染会消费、但归属「内容编排」页编辑的文案字段 —— 画面页以隐藏域
-# 参与预览提交与合并保存，避免预览/保存回落默认文案
-SLEEP_PREVIEW_HIDDEN_FIELDS = ("sleep_channel_name", "sleep_outro_text")
-
 
 # ===========================================================================
 # Page routes
 # ===========================================================================
 
 def _config_page_context(mode: str, channel: str = "") -> dict:
-    """参数配置页 / Sleep 睡前短句页 共用的渲染上下文组装。
+    """参数配置页 / 内容编排页 共用的渲染上下文组装。
 
     channel 非空 → 该频道完整配置快照（多标签页并行：URL ?channel= 为
     事实源）；空 → 全局 mode_sleep.json。"""
@@ -115,9 +111,9 @@ def _config_page_context(mode: str, channel: str = "") -> dict:
 
 
 def _sleep_page_grouped(mode: str, keys: frozenset, channel: str = "") -> tuple[dict, list]:
-    """专项页上下文：全量配置上下文中仅保留 sleep 组内属于 keys 的参数。
+    """内容编排页上下文：全量配置上下文中仅保留 sleep 组内属于 keys 的参数。
 
-    返回 (ctx, grouped)；非 sleep 组不带入专项页（完整清单见「参数配置」页）。
+    返回 (ctx, grouped)；非 sleep 组不带入编排页（完整清单见「参数配置」页）。
     """
     ctx = _config_page_context(mode, channel)
     grouped = []
@@ -127,25 +123,6 @@ def _sleep_page_grouped(mode: str, keys: frozenset, channel: str = "") -> tuple[
             if kept:
                 grouped.append((g, kept))
     return ctx, grouped
-
-
-@router.get("/sleep", response_class=HTMLResponse)
-async def sleep_config_page(request: Request, mode: str = "", channel: str = ""):
-    """😴 Sleep 睡前短句：画面样式专项页（原配置页 sleep 组同款布局 ——
-    左侧 sticky 实时预览 + 右侧参数网格），只放影响画面的设置。"""
-    ctx, grouped = _sleep_page_grouped(mode, SLEEP_VISUAL_KEYS, channel)
-    config = ctx["config"]
-    ctx.update({
-        "active_page": "sleep",
-        "page_channel": channel,
-        "grouped": grouped,
-        "sleep_inline_preview": True,
-        # 部分参数页 → 合并保存（/api/config/save），防止覆盖未渲染参数
-        "config_save_all": False,
-        "sleep_hidden_fields": [
-            (k, str(config.get(k, "") or "")) for k in SLEEP_PREVIEW_HIDDEN_FIELDS],
-    })
-    return templates.TemplateResponse(request, "sleep_config.html", ctx)
 
 
 @router.get("/arrangement", response_class=HTMLResponse)
@@ -166,7 +143,7 @@ async def arrangement_page(request: Request, mode: str = "", channel: str = ""):
         "active_page": "arrangement",
         "page_channel": channel,
         "grouped": grouped,
-        # 组卡标签用「编排参数」，避免与页面标题「内容编排」重复且与画面页混淆
+        # 组卡标签用「编排参数」，避免与页面标题「内容编排」重复
         "group_meta": {**GROUP_META, "sleep": {"label": "编排参数", "icon": "📋", "order": 9}},
         "sleep_inline_preview": False,
         "config_save_all": False,

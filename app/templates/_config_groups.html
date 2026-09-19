@@ -1,12 +1,19 @@
-{# 共享 partial：配置分组表单循环（config.html 与 sleep_config.html 共用）。
-   sleep_inline_preview=true 时在 sleep 组渲染内嵌实时预览块（旧参数配置页）；
-   未定义时缺省 true。 #}
+{# 共享 partial：配置分组表单循环（config.html 与 arrangement.html 共用）。
+   sleep_inline_preview=true 时在 sleep 组渲染内嵌实时预览块；
+   未定义时缺省 true。group_reorder=true（仅参数配置页）时在组标题渲染
+   拖拽把手，拖拽排序逻辑见 _config_scripts.html。 #}
 {% if sleep_inline_preview is not defined %}{% set sleep_inline_preview = true %}{% endif %}
 {% for group_key, params in grouped %}
         <div id="group-card-{{ group_key }}" class="bg-slate-800 rounded-xl border border-slate-700 {% if group_key != 'sleep' %}overflow-hidden{% endif %}">
             <button type="button" onclick="toggleSection(this)"
                 class="w-full px-5 py-3.5 flex items-center justify-between hover:bg-slate-750 transition {% if group_key == 'sleep' %}rounded-t-xl{% endif %}">
                 <span class="flex items-center gap-2 text-sm font-semibold text-white">
+                    {% if group_reorder %}
+                    <span draggable="true" data-group-handle="{{ group_key }}"
+                        onclick="event.stopPropagation()" onmousedown="event.stopPropagation()"
+                        title="拖动调整分组顺序"
+                        class="cursor-grab active:cursor-grabbing text-slate-600 hover:text-slate-300 leading-none pr-1 select-none">⠿</span>
+                    {% endif %}
                     <span class="text-lg">{{ group_meta[group_key].icon }}</span>
                     {{ group_meta[group_key].label }}
                 </span>

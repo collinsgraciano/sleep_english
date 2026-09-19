@@ -41,10 +41,10 @@
 // 用上下文条换频道或点侧边栏换页，页签条自动跟随。
 (function () {
     const LS_KEY = 'se_ws_tabs';
-    // 页面键 ↔ 路径 / 徽标（'' = 控制台 dashboard；与五个频道感知页一一对应）
-    const PAGE_ROUTES = { '': '/', 'sleep': '/sleep', 'arrangement': '/arrangement',
+    // 页面键 ↔ 路径 / 徽标（'' = 控制台 dashboard；与四个频道感知页一一对应）
+    const PAGE_ROUTES = { '': '/', 'arrangement': '/arrangement',
                           'config': '/config', 'topics': '/topics' };
-    const PAGE_LABELS = { '': '控制台', 'sleep': '画面', 'arrangement': '编排',
+    const PAGE_LABELS = { '': '控制台', 'arrangement': '编排',
                           'config': '配置', 'topics': '主题' };
     const PATH_TO_PAGE = {};
     Object.entries(PAGE_ROUTES).forEach(([k, p]) => { PATH_TO_PAGE[p] = k; });

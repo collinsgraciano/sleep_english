@@ -5,7 +5,7 @@
     <div class="flex items-center justify-between mb-4">
         <div>
             <h2 class="text-2xl font-bold text-white">参数配置</h2>
-            <p class="text-sm text-slate-400 mt-1">当前编辑：<span class="text-indigo-400 font-medium">{{ mode_labels[mode] }}</span> · 保存到 configs/mode_{{ mode }}.json（各模式独立）</p>
+            <p class="text-sm text-slate-400 mt-1">当前编辑：<span class="text-indigo-400 font-medium">{{ mode_labels[mode] }}</span> · 保存到 configs/mode_{{ mode }}.json（各模式独立）· 拖动分组标题栏 <span class="text-slate-300">⠿</span> 可调整分组顺序（本浏览器记忆）</p>
         </div>
         <div class="flex items-center gap-3">
             <!-- Preset selector -->
@@ -45,7 +45,7 @@
     <form id="config-form" class="space-y-4">
         <!-- 结构由当前 Tab 决定，隐藏域保证保存值正确 -->
         <input type="hidden" data-field="structure" value="{{ mode }}">
-{% include "_config_groups.html" %}
+{% with group_reorder = true %}{% include "_config_groups.html" %}{% endwith %}
     </form>
 
     <!-- Bottom save bar -->
