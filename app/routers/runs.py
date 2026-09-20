@@ -1,4 +1,5 @@
 """Runs API — 运行列表/素材文件/回收站/重渲/元数据刷新（Runs + Script editor + Gallery 三区合并）."""
+import asyncio
 import json
 import os
 import re
@@ -12,7 +13,7 @@ from fastapi.responses import FileResponse, JSONResponse, PlainTextResponse
 
 from ..config_manager import (
     LEGACY_RECYCLE_DIRNAME, MODES, RECYCLE_DIRNAME,
-    find_run_dir, iter_run_dirs, load_config,
+    find_run_dir, iter_run_dirs, load_config, load_mode_config, resolve_provider,
 )
 from ..paths import TRASH_META_FILENAME
 from ..pipeline_service import get_service
@@ -164,12 +165,169 @@ async def api_get_thumbnail_file(name: str, filename: str, mode: str = ""):
                         headers={"Cache-Control": "no-cache"})
 
 
+def _thumb_llm_override(cfg: dict) -> dict:
+    """构建缩略图文案候选生成的线程局部 LLM 配置（不改 os.environ）。
+
+    键名与 env var 同名，供 pipeline/llm_client.set_llm_env_override 使用——
+    与运行中 pipeline 线程读的 os.environ 互不污染（同 voices_qwen 惯例）。
+    """
+    p_type, base_url, api_key, model = resolve_provider(cfg)
+    if not api_key:
+        raise RuntimeError(
+            "未配置 LLM API Key — 请先在「参数配置」页填写当前模式/频道的大模型配置")
+    ov: dict[str, str] = {
+        "LLM_PROVIDER": p_type,
+        "LLM_RETRIES": str(cfg.get("llm_retries", 10)),
+    }
+    if p_type == "sensenova":
+        ov["SENSENOVA_API_KEY"] = api_key
+        ov["SENSENOVA_MODEL"] = model or "deepseek-v4-flash"
+    elif p_type == "gemini":
+        ov["GEMINI_API_KEY"] = api_key
+        ov["GEMINI_MODEL"] = model or "models/gemini-3.8-flash"
+    else:
+        ov["OPENAI_BASE_URL"] = base_url
+        ov["OPENAI_API_KEY"] = api_key
+        ov["OPENAI_MODEL"] = model or "grok-4.6"
+    # LLM 代理（全部 Provider 生效；线程局部 override 隔离）
+    if cfg.get("llm_proxy_enabled"):
+        ov["LLM_PROXY_ENABLED"] = "1"
+        ov["LLM_PROXY_URL"] = str(cfg.get("llm_proxy_url") or "").strip()
+    if cfg.get("llm_min_interval"):
+        ov["LLM_MIN_INTERVAL"] = str(cfg["llm_min_interval"])
+    return ov
+
+
+@router.get("/api/runs/{name}/thumbnail_text")
+async def api_get_thumbnail_text(name: str, mode: str = ""):
+    """轻量读取运行的缩略图文案（thumb_badge/main/hook）+ 上下文（弹窗预填用）。"""
+    config = load_config()
+    output_dir = Path(config.get("output_dir", "./output"))
+    run_dir = find_run_dir(output_dir, name, mode)
+    script_path = run_dir / "script.json" if run_dir else None
+    if not script_path or not script_path.exists():
+        return JSONResponse({"error": "Not found"}, status_code=404)
+    try:
+        script = json.loads(script_path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError) as e:
+        return JSONResponse({"error": f"script.json 读取失败: {e}"}, status_code=500)
+    return {
+        "ok": True,
+        "text": {
+            "thumb_badge": str(script.get("thumb_badge", "") or ""),
+            "thumb_main": str(script.get("thumb_main", "") or ""),
+            "thumb_hook": str(script.get("thumb_hook", "") or ""),
+        },
+        "meta": {
+            "title_zh": str(script.get("title_zh", "") or ""),
+            "topic": str(script.get("topic", "") or ""),
+            "scene": str(script.get("scene", "") or ""),
+            "cefr": str(script.get("cefr", "") or ""),
+            "n_pairs": len(script.get("dialogue", []) or []) // 2,
+            "channel_id": str(script.get("channel_id", "") or ""),
+        },
+    }
+
+
+@router.post("/api/runs/{name}/thumbnail_text_candidates")
+async def api_thumb_text_candidates(name: str, mode: str = ""):
+    """LLM 生成 N 组缩略图文案候选（badge/main/hook，不落盘，供前端挑选）。
+
+    LLM 配置按运行归属解析：频道运行用频道快照（防关联），否则运行所在
+    模式配置；线程局部 override 执行，与运行中 pipeline 互不污染。
+    """
+    config = load_config()
+    output_dir = Path(config.get("output_dir", "./output"))
+    run_dir = find_run_dir(output_dir, name, mode)
+    script_path = run_dir / "script.json" if run_dir else None
+    if not script_path or not script_path.exists():
+        return JSONResponse({"error": "Not found"}, status_code=404)
+    try:
+        script = json.loads(script_path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError) as e:
+        return JSONResponse({"error": f"script.json 读取失败: {e}"}, status_code=500)
+
+    channel_id = str(script.get("channel_id", "") or "").strip()
+    channel = None
+    if channel_id:
+        from ..channel_profiles import get_channel, load_channel_config
+        cfg = load_channel_config(channel_id)
+        ch = get_channel(channel_id) or {}
+        channel = {"name_en": ch.get("name_en", ""), "niche": ch.get("niche", ""),
+                   "audience": ch.get("audience", "")}
+    else:
+        cfg = load_mode_config(mode or "sleep")
+
+    ctx = {
+        "topic": str(script.get("topic", "") or ""),
+        "title_zh": str(script.get("title_zh", "") or ""),
+        "scene": str(script.get("scene", "") or ""),
+        "cefr": str(script.get("cefr", "") or ""),
+        "n_pairs": len(script.get("dialogue", []) or []) // 2,
+        "current": {
+            "badge": str(script.get("thumb_badge", "") or ""),
+            "main": str(script.get("thumb_main", "") or ""),
+            "hook": str(script.get("thumb_hook", "") or ""),
+        },
+        "channel": channel,
+    }
+    try:
+        override = _thumb_llm_override(cfg)
+    except RuntimeError as e:
+        return JSONResponse({"ok": False, "error": str(e)}, status_code=400)
+
+    def _run() -> list[dict]:
+        from llm_client import set_llm_env_override
+        from sleep.llm_client_sleep import generate_thumb_text_candidates
+        set_llm_env_override(override)
+        try:
+            return generate_thumb_text_candidates(ctx, count=5)
+        finally:
+            set_llm_env_override(None)
+
+    try:
+        candidates = await asyncio.to_thread(_run)
+    except Exception as e:  # noqa: BLE001 — 前端展示错误信息
+        return JSONResponse({"ok": False, "error": f"{type(e).__name__}: {e}"},
+                            status_code=500)
+    return {"ok": True, "candidates": candidates}
+
+
 @router.post("/api/runs/{name}/thumbnail_regenerate")
-async def api_regen_thumbnail(name: str, mode: str = ""):
+async def api_regen_thumbnail(name: str, request: Request, mode: str = ""):
     """为已有运行再生成一张缩略图（thumbnail_N.jpg 递增，旧图全保留；走 AI 生图）。
 
+    可选 JSON body {thumb_badge?, thumb_main?, thumb_hook?}：非空值写回
+    script.json 后再生成本张（自定义/挑选的文案持久化为该运行事实源，
+    后续重生成与主流程复跑自动沿用）；空 body = 按现有文案生成。
     独立子进程执行，不与主 pipeline / 模式测试互斥，可并行运行。
     """
+    try:
+        data = await request.json()
+    except Exception:  # noqa: BLE001 — 空 body / 非 JSON 一律按原行为
+        data = {}
+    overrides: dict[str, str] = {}
+    if isinstance(data, dict):
+        for key in ("thumb_badge", "thumb_main", "thumb_hook"):
+            val = str(data.get(key, "") or "").strip()
+            if val:
+                overrides[key] = val
+    if overrides:
+        config = load_config()
+        output_dir = Path(config.get("output_dir", "./output"))
+        run_dir = find_run_dir(output_dir, name, mode)
+        script_path = run_dir / "script.json" if run_dir else None
+        if not script_path or not script_path.exists():
+            return JSONResponse({"ok": False, "error": "Not found"}, status_code=404)
+        try:
+            script = json.loads(script_path.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError) as e:
+            return JSONResponse({"ok": False, "error": f"script.json 读取失败: {e}"},
+                                status_code=500)
+        script.update(overrides)
+        script_path.write_text(
+            json.dumps(script, ensure_ascii=False, indent=2), encoding="utf-8")
+
     service = get_thumb_regen_service()
     ok, msg = service.start(name, mode=mode)
     if not ok:

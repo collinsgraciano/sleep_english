@@ -54,7 +54,7 @@
             {% endif %}
             <a href="{{ gallery_url }}"
                 class="px-3 py-1.5 bg-emerald-600 hover:bg-emerald-500 rounded-lg text-xs text-white text-center">画廊</a>
-            <button id="thumb-btn-{{ run.name }}" onclick="regenThumbnail('{{ run.name }}', '{{ run.structure }}')"
+            <button id="thumb-btn-{{ run.name }}" onclick="openThumbTextModal(event, '{{ run.name }}', '{{ run.structure }}')"
                 class="px-3 py-1.5 bg-sky-700 hover:bg-sky-600 rounded-lg text-xs text-white">＋缩略图</button>
             <button id="upload-btn-{{ run.name }}" onclick="toggleUploaded(this)"
                 class="px-3 py-1.5 rounded-lg text-xs text-white {% if run.uploaded %}bg-emerald-600 hover:bg-emerald-500{% else %}bg-amber-600/80 hover:bg-amber-500{% endif %}">
@@ -233,12 +233,50 @@
             <div class="flex justify-between items-center mb-3">
                 <h3 class="text-sm font-semibold text-white">缩略图 — <span id="thumbs-run-name" class="text-indigo-300"></span></h3>
                 <div class="flex items-center gap-2">
-                    <button onclick="regenThumbnail(_thumbsRun, _thumbsMode)"
+                    <button onclick="openThumbTextModal(event, _thumbsRun, _thumbsMode)"
                         class="px-3 py-1.5 bg-sky-700 hover:bg-sky-600 rounded-lg text-xs text-white">＋ 再生成一张</button>
                     <button onclick="closeThumbsModal()" class="text-slate-400 hover:text-white">✕</button>
                 </div>
             </div>
             <div id="thumbs-grid" class="overflow-y-auto grid grid-cols-1 md:grid-cols-2 gap-4 flex-1 pr-1"></div>
+        </div>
+    </div>
+
+    <!-- Thumbnail text modal（缩略图文案：自定义 / LLM 候选挑选 → 生成） -->
+    <div id="thumb-text-modal" class="hidden fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-8" onclick="closeThumbTextModal(event)">
+        <div class="bg-slate-800 rounded-xl p-5 max-w-2xl w-full max-h-[85vh] flex flex-col" onclick="event.stopPropagation()">
+            <div class="flex justify-between items-center mb-2">
+                <h3 class="text-sm font-semibold text-white">缩略图生成 — <span id="tt-run-name" class="text-indigo-300"></span></h3>
+                <button onclick="closeThumbTextModal()" class="text-slate-400 hover:text-white">✕</button>
+            </div>
+            <p class="text-xs text-slate-400 mb-3">文案会直接烧进 AI 生成的画面。可直接修改下面三个文案，或点「AI 生成候选」让大模型出几组供挑选；生成约 1 分钟，按当前生图 Provider 计费（MCP 积分 / SenseNova），旧缩略图全部保留。</p>
+            <div class="space-y-2">
+                <div class="flex items-center gap-2">
+                    <label class="w-24 text-xs text-slate-300 shrink-0" title="左上角红色标语，建议 ≤6 字">角标语</label>
+                    <input id="tt-badge" maxlength="8" placeholder="如：不用背！"
+                        class="flex-1 bg-slate-900 border border-slate-600 rounded-lg px-3 py-1.5 text-sm text-white focus:border-indigo-500 outline-none">
+                </div>
+                <div class="flex items-center gap-2">
+                    <label class="w-24 text-xs text-slate-300 shrink-0" title="超大主标题，建议 2-5 字">主标题</label>
+                    <input id="tt-main" maxlength="8" placeholder="如：睡覺聽"
+                        class="flex-1 bg-slate-900 border border-slate-600 rounded-lg px-3 py-1.5 text-sm text-white focus:border-indigo-500 outline-none">
+                </div>
+                <div class="flex items-center gap-2">
+                    <label class="w-24 text-xs text-slate-300 shrink-0" title="底部横幅文案，建议 ≤14 字">底部横幅</label>
+                    <input id="tt-hook" maxlength="16" placeholder="如：零基礎自然開口說"
+                        class="flex-1 bg-slate-900 border border-slate-600 rounded-lg px-3 py-1.5 text-sm text-white focus:border-indigo-500 outline-none">
+                </div>
+            </div>
+            <div class="flex items-center gap-2 mt-3">
+                <button id="tt-cand-btn" onclick="genThumbCandidates()"
+                    class="px-3 py-1.5 bg-violet-600 hover:bg-violet-500 rounded-lg text-xs text-white">🎲 AI 生成候选文案</button>
+                <span id="tt-cand-status" class="text-xs text-slate-400"></span>
+            </div>
+            <div id="tt-candidates" class="mt-3 space-y-2 overflow-y-auto flex-1 pr-1"></div>
+            <div class="flex justify-end gap-2 mt-4 pt-3 border-t border-slate-700">
+                <button onclick="closeThumbTextModal()" class="px-3 py-1.5 bg-slate-700 hover:bg-slate-600 rounded-lg text-xs text-slate-300">取消</button>
+                <button id="tt-gen-btn" onclick="startThumbRegenFromModal()" class="px-4 py-1.5 bg-sky-600 hover:bg-sky-500 rounded-lg text-xs text-white">生成缩略图</button>
+            </div>
         </div>
     </div>
 
@@ -747,28 +785,144 @@ let _thumbsTimer = null;
 let _thumbsRun = '';
 let _thumbsMode = '';
 
-function regenThumbnail(runName, mode) {
+function _escHtml(s) {
+    return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+}
+
+// ---------------------------------------------------------------------------
+// 缩略图文案弹窗：自定义三段文案（badge/main/hook）或 LLM 生成候选挑选，
+// 确认后带 body 请求 thumbnail_regenerate（后端写回 script.json 再出图）
+// ---------------------------------------------------------------------------
+let _ttRun = '';
+let _ttMode = '';
+let _ttCands = [];
+let _ttCandBusy = false;
+
+function openThumbTextModal(e, runName, mode) {
+    if (e) { e.preventDefault(); e.stopPropagation(); }
     if (_thumbRegenBusy) { alert('已有缩略图生成任务进行中，请等待完成'); return; }
-    if (!confirm('为该运行再生成一张缩略图？\n按当前生图 Provider 计费（MCP 积分 / SenseNova），约 1 分钟；旧缩略图全部保留。')) return;
+    _ttRun = runName;
+    _ttMode = mode || '';
+    _ttCands = [];
+    document.getElementById('tt-run-name').textContent = runName;
+    document.getElementById('tt-candidates').innerHTML = '';
+    document.getElementById('tt-cand-status').textContent = '';
+    ['tt-badge', 'tt-main', 'tt-hook'].forEach(id => { document.getElementById(id).value = ''; });
+    document.getElementById('thumb-text-modal').classList.remove('hidden');
+    const q = _ttMode ? `?mode=${_ttMode}` : '';
+    fetch(`/api/runs/${runName}/thumbnail_text${q}`)
+        .then(r => r.json())
+        .then(d => {
+            if (d.error) { alert('读取当前文案失败: ' + d.error); return; }
+            const t = d.text || {};
+            document.getElementById('tt-badge').value = t.thumb_badge || '';
+            document.getElementById('tt-main').value = t.thumb_main || '';
+            document.getElementById('tt-hook').value = t.thumb_hook || '';
+        })
+        .catch(() => alert('读取当前文案失败，请确认服务是否正常'));
+}
+
+function closeThumbTextModal(e) {
+    if (e && e.target !== document.getElementById('thumb-text-modal')) return;
+    if (_ttCandBusy) { alert('候选文案生成中，请稍候再关闭'); return; }
+    document.getElementById('thumb-text-modal').classList.add('hidden');
+}
+
+function genThumbCandidates() {
+    if (_ttCandBusy) return;
+    _ttCandBusy = true;
+    const btn = document.getElementById('tt-cand-btn');
+    btn.disabled = true;
+    btn.classList.add('opacity-50', 'cursor-not-allowed');
+    const status = document.getElementById('tt-cand-status');
+    status.textContent = '生成中（约 10-30 秒）...';
+    document.getElementById('tt-candidates').innerHTML = '';
+    const q = _ttMode ? `?mode=${_ttMode}` : '';
+    fetch(`/api/runs/${_ttRun}/thumbnail_text_candidates${q}`, {method: 'POST'})
+        .then(r => r.json())
+        .then(d => {
+            if (!d.ok) {
+                status.textContent = '';
+                alert('候选生成失败: ' + (d.error || '未知错误'));
+                return;
+            }
+            _ttCands = d.candidates || [];
+            status.textContent = _ttCands.length
+                ? `已生成 ${_ttCands.length} 组候选，点击整卡选用（填入上方输入框，可再手改）`
+                : '';
+            const wrap = document.getElementById('tt-candidates');
+            wrap.innerHTML = '';
+            _ttCands.forEach((c, i) => {
+                const card = document.createElement('div');
+                card.id = `tt-cand-${i}`;
+                card.className = 'p-2.5 bg-slate-900 border border-slate-700 rounded-lg cursor-pointer hover:border-indigo-500 transition';
+                card.onclick = () => ttApply(i);
+                card.innerHTML = `
+                    <div class="flex items-center gap-2 text-xs min-w-0">
+                        <span class="px-2 py-0.5 bg-red-600/70 text-white rounded shrink-0">${_escHtml(c.badge)}</span>
+                        <span class="px-2 py-0.5 bg-yellow-500/90 text-slate-900 font-bold rounded shrink-0">${_escHtml(c.main)}</span>
+                        <span class="text-slate-300 truncate">${_escHtml(c.hook)}</span>
+                        <span class="ml-auto text-indigo-300 shrink-0">选用 →</span>
+                    </div>`;
+                wrap.appendChild(card);
+            });
+        })
+        .catch(() => { status.textContent = ''; alert('候选生成请求失败，请确认服务是否正常'); })
+        .finally(() => {
+            _ttCandBusy = false;
+            btn.disabled = false;
+            btn.classList.remove('opacity-50', 'cursor-not-allowed');
+        });
+}
+
+function ttApply(i) {
+    const c = _ttCands[i];
+    if (!c) return;
+    document.getElementById('tt-badge').value = c.badge || '';
+    document.getElementById('tt-main').value = c.main || '';
+    document.getElementById('tt-hook').value = c.hook || '';
+    _ttCands.forEach((_, j) => {
+        const el = document.getElementById(`tt-cand-${j}`);
+        if (!el) return;
+        el.className = (j === i)
+            ? 'p-2.5 bg-slate-900 border-2 border-indigo-500 rounded-lg cursor-pointer'
+            : 'p-2.5 bg-slate-900 border border-slate-700 rounded-lg cursor-pointer hover:border-indigo-500 transition';
+    });
+}
+
+function startThumbRegenFromModal() {
+    if (_thumbRegenBusy) { alert('已有缩略图生成任务进行中，请等待完成'); return; }
+    const body = {
+        thumb_badge: document.getElementById('tt-badge').value.trim(),
+        thumb_main: document.getElementById('tt-main').value.trim(),
+        thumb_hook: document.getElementById('tt-hook').value.trim(),
+    };
+    if (!confirm('用当前文案为该运行生成一张缩略图？\n按当前生图 Provider 计费（MCP 积分 / SenseNova），约 1 分钟；旧缩略图全部保留。\n自定义文案将写回 script.json（后续生成沿用）。')) return;
     _thumbRegenBusy = true;
-    _thumbRegenRun = runName;
-    _thumbRegenMode = mode || '';
+    _thumbRegenRun = _ttRun;
+    _thumbRegenMode = _ttMode;
     _thumbsLogIdx = 0;
-    const btn = document.getElementById(`thumb-btn-${runName}`);
+    document.getElementById('thumb-text-modal').classList.add('hidden');
+    const btn = document.getElementById(`thumb-btn-${_ttRun}`);
     if (btn) { btn.disabled = true; btn.classList.add('opacity-50', 'cursor-not-allowed'); btn.textContent = '生成中...'; }
     const q = _thumbRegenMode ? `?mode=${_thumbRegenMode}` : '';
-    fetch(`/api/runs/${runName}/thumbnail_regenerate${q}`, {method: 'POST'})
+    fetch(`/api/runs/${_ttRun}/thumbnail_regenerate${q}`, {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(body),
+    })
         .then(r => r.json())
         .then(data => {
             if (!data.ok) {
                 alert('启动失败: ' + (data.error || '未知错误'));
-                _resetThumbBtn(runName);
+                _resetThumbBtn(_ttRun);
                 return;
             }
             taskWidgetStart('thumb');
             pollThumbRegen();
         })
-        .catch(() => { _resetThumbBtn(runName); });
+        .catch(() => { _resetThumbBtn(_ttRun); });
 }
 
 function _resetThumbBtn(runName) {

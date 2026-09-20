@@ -289,3 +289,98 @@ def generate_sleep_script(topic: str, cefr: str = "A2", num_pairs: int = 200,
     script.setdefault("thumbnail_icons", [])
     script["dialogue"] = _pairs_to_rows(all_pairs)
     return script
+
+
+def generate_thumb_text_candidates(ctx: dict, count: int = 5) -> list[dict]:
+    """LLM 产出 N 组缩略图文案候选（badge/main/hook），供 Web 端挑选后重生成。
+
+    ctx 键：topic / title_zh / scene / cefr / n_pairs /
+    current{badge, main, hook} / channel{name_en, niche, audience}|None。
+    返回 [{badge, main, hook}, ...]（繁體中文，长度软校验 + 去重）。
+    频道上下文存在时文案向该频道定位倾斜（同脚本生成品牌段语义）。
+    """
+    topic = str(ctx.get("topic", "") or "").strip()
+    title_zh = str(ctx.get("title_zh", "") or "").strip()
+    scene = str(ctx.get("scene", "") or "").strip()
+    cefr = str(ctx.get("cefr", "") or "").strip()
+    n_pairs = int(ctx.get("n_pairs", 0) or 0)
+    current = ctx.get("current") or {}
+    cur_badge = str(current.get("badge", "") or "").strip()
+    cur_main = str(current.get("main", "") or "").strip()
+    cur_hook = str(current.get("hook", "") or "").strip()
+
+    channel_line = ""
+    ch = ctx.get("channel") or {}
+    if str(ch.get("name_en", "") or "").strip():
+        parts = [f'published on channel "{ch["name_en"]}"']
+        if ch.get("niche"):
+            parts.append(f"channel niche: {ch['niche']}")
+        if ch.get("audience"):
+            parts.append(f"target audience: {ch['audience']}")
+        channel_line = ("\nCHANNEL CONTEXT: " + "; ".join(parts)
+                        + " — tilt the copy toward this positioning.")
+
+    prompt = f"""You are a YouTube CTR copywriter for a "listen while you sleep" English learning channel (overseas Chinese audience, zero-basics friendly).
+
+Video context:
+- Topic: {topic or "(unknown)"}
+- Chinese title: {title_zh or "(unknown)"}
+- Scene: {scene or "(everyday life)"}
+- CEFR: {cefr or "A2"}
+- Size: {n_pairs or "several hundred"} short phrase pairs ({n_pairs * 2 if n_pairs else "several hundred"} sentences total)
+- Current thumbnail copy (reference only — generate BETTER / DIFFERENT ones): badge="{cur_badge}", main="{cur_main}", hook="{cur_hook}"{channel_line}
+
+Generate {count} thumbnail copy CANDIDATE SETS. Each set has 3 Traditional Chinese (繁體中文) fields:
+- "badge": top-left red banner slogan, AT MOST 6 characters, high-CTR hook (e.g. "不用背！" / "聽著聽著就會說")
+- "main": the HUGE main title, 2-5 characters, a punchy series/brand word matching this topic (e.g. "睡覺聽" / "聽就會")
+- "hook": bottom ribbon line, AT MOST 14 characters, benefit/promise statement (e.g. "零基礎自然開口說" / "聽久自然開口說")
+
+Requirements:
+- ALL text MUST be Traditional Chinese (繁體中文), no Simplified characters
+- Each set takes a DIFFERENT angle: pain point / curiosity / benefit promise / identity / call-to-action
+- Short and punchy, no filler words — must read instantly as big thumbnail text
+- Do NOT simply repeat the current copy
+
+Output JSON ONLY (no markdown, no explanation):
+{{"candidates": [{{"badge": "...", "main": "...", "hook": "..."}}, ...]}}"""
+
+    last_err: Exception | None = None
+    for attempt in range(2):
+        try:
+            content = _chat(
+                [{"role": "system",
+                  "content": "You are a YouTube thumbnail copywriter for an English-learning channel. Output valid JSON only — no markdown, no explanations."},
+                 {"role": "user", "content": prompt}],
+                temperature=0.95,
+                max_tokens=2048,
+                reasoning_effort="low")
+            data = _extract_json(content)
+            raw = data.get("candidates", []) if isinstance(data, dict) else (
+                data if isinstance(data, list) else [])
+            seen: set[tuple[str, str, str]] = set()
+            result: list[dict] = []
+            for c in raw:
+                if not isinstance(c, dict):
+                    continue
+                badge = str(c.get("badge", "") or "").strip()
+                main = str(c.get("main", "") or "").strip()
+                hook = str(c.get("hook", "") or "").strip()
+                # 软长度上限（prompt 建议值略放宽），空字段/超长直接丢弃
+                if not (badge and main and hook):
+                    continue
+                if len(badge) > 8 or len(main) > 6 or len(hook) > 16:
+                    continue
+                key = (badge, main, hook)
+                if key in seen:
+                    continue
+                seen.add(key)
+                result.append({"badge": badge, "main": main, "hook": hook})
+                if len(result) >= count:
+                    break
+            if result:
+                return result
+            last_err = RuntimeError("LLM 候选全部无效（空字段或超长）")
+        except Exception as e:  # noqa: BLE001 — 记录后重试
+            last_err = e
+            print(f"  [ThumbText][retry {attempt + 1}/2] {type(e).__name__}: {str(e)[:200]}")
+    raise RuntimeError(f"缩略图文案候选生成失败: {last_err}")
