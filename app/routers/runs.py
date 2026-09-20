@@ -218,6 +218,15 @@ async def api_get_thumbnail_text(name: str, mode: str = ""):
             "thumb_main": str(script.get("thumb_main", "") or ""),
             "thumb_hook": str(script.get("thumb_hook", "") or ""),
         },
+        "spec": {
+            "template": str(script.get("thumb_template", "") or ""),
+            "headline1": str(script.get("thumb_headline1", "") or ""),
+            "headline2": str(script.get("thumb_headline2", "") or ""),
+            "pills": [str(p) for p in (script.get("thumb_pills") or [])
+                      if str(p).strip()],
+            "character": str(script.get("thumb_character", "") or ""),
+            "mirror": bool(script.get("thumb_mirror")),
+        },
         "meta": {
             "title_zh": str(script.get("title_zh", "") or ""),
             "topic": str(script.get("topic", "") or ""),
@@ -297,21 +306,40 @@ async def api_thumb_text_candidates(name: str, mode: str = ""):
 async def api_regen_thumbnail(name: str, request: Request, mode: str = ""):
     """为已有运行再生成一张缩略图（thumbnail_N.jpg 递增，旧图全保留；走 AI 生图）。
 
-    可选 JSON body {thumb_badge?, thumb_main?, thumb_hook?}：非空值写回
-    script.json 后再生成本张（自定义/挑选的文案持久化为该运行事实源，
-    后续重生成与主流程复跑自动沿用）；空 body = 按现有文案生成。
-    独立子进程执行，不与主 pipeline / 模式测试互斥，可并行运行。
+    可选 JSON body 两条轨道：
+    - {template: "number"|"question"|"contrast", thumb_badge?, thumb_headline1?,
+      thumb_headline2?, pills?, thumb_character?, mirror?} → v2 模板键整组写回
+      script.json 后再生成本张；
+    - {thumb_badge?, thumb_main?, thumb_hook?} → 经典模板三字段写回，并清空
+      thumb_template（支持从 v2 切回经典）。
+    文案持久化为该运行事实源（后续重生成与主流程复跑自动沿用）；
+    空 body = 按现有文案生成。独立子进程执行，不与主 pipeline / 模式测试互斥。
     """
     try:
         data = await request.json()
     except Exception:  # noqa: BLE001 — 空 body / 非 JSON 一律按原行为
         data = {}
-    overrides: dict[str, str] = {}
+    overrides: dict = {}
     if isinstance(data, dict):
-        for key in ("thumb_badge", "thumb_main", "thumb_hook"):
-            val = str(data.get(key, "") or "").strip()
-            if val:
-                overrides[key] = val
+        template = str(data.get("template", "") or "").strip()
+        if template in ("number", "question", "contrast"):
+            overrides["thumb_template"] = template
+            for key in ("thumb_badge", "thumb_headline1", "thumb_headline2",
+                        "thumb_character"):
+                val = str(data.get(key, "") or "").strip()
+                if val:
+                    overrides[key] = val
+            pills = [str(p).strip() for p in (data.get("pills") or [])
+                     if str(p).strip()][:2]
+            if pills:
+                overrides["thumb_pills"] = pills
+            overrides["thumb_mirror"] = bool(data.get("mirror"))
+        else:
+            legacy = {key: str(data.get(key, "") or "").strip()
+                      for key in ("thumb_badge", "thumb_main", "thumb_hook")}
+            if any(legacy.values()):
+                overrides["thumb_template"] = ""
+                overrides.update({k: v for k, v in legacy.items() if v})
     if overrides:
         config = load_config()
         output_dir = Path(config.get("output_dir", "./output"))

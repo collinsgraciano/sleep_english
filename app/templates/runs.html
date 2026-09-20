@@ -249,8 +249,20 @@
                 <h3 class="text-sm font-semibold text-white">缩略图生成 — <span id="tt-run-name" class="text-indigo-300"></span></h3>
                 <button onclick="closeThumbTextModal()" class="text-slate-400 hover:text-white">✕</button>
             </div>
-            <p class="text-xs text-slate-400 mb-3">文案会直接烧进 AI 生成的画面。可直接修改下面三个文案，或点「AI 生成候选」让大模型出几组供挑选；生成约 1 分钟，按当前生图 Provider 计费（MCP 积分 / SenseNova），旧缩略图全部保留。</p>
-            <div class="space-y-2">
+            <p class="text-xs text-slate-400 mb-2">文案会直接烧进 AI 生成的画面。可直接修改文案，或点「AI 生成候选」让大模型按模板出几组供挑选；生成约 1 分钟，按当前生图 Provider 计费（MCP 积分 / SenseNova），旧缩略图全部保留。</p>
+            <div class="flex flex-wrap items-center gap-1.5 mb-2">
+                <span class="text-xs text-slate-400 mr-1">模板</span>
+                <button id="tt-chip-legacy" onclick="ttSetTemplate('')"
+                    class="px-2.5 py-1 rounded-lg text-xs bg-sky-600 text-white">经典</button>
+                <button id="tt-chip-number" onclick="ttSetTemplate('number')"
+                    class="px-2.5 py-1 rounded-lg text-xs bg-slate-700 text-slate-300 hover:bg-slate-600">🔢 数字锚点</button>
+                <button id="tt-chip-question" onclick="ttSetTemplate('question')"
+                    class="px-2.5 py-1 rounded-lg text-xs bg-slate-700 text-slate-300 hover:bg-slate-600">❓ 痛点问句</button>
+                <button id="tt-chip-contrast" onclick="ttSetTemplate('contrast')"
+                    class="px-2.5 py-1 rounded-lg text-xs bg-slate-700 text-slate-300 hover:bg-slate-600">⚖️ ✕✓对比</button>
+            </div>
+            <p id="tt-template-hint" class="text-xs text-slate-500 mb-2">经典：右侧固定戴耳机女孩，超大品牌词主标题。</p>
+            <div id="tt-legacy-editor" class="space-y-2">
                 <div class="flex items-center gap-2">
                     <label class="w-24 text-xs text-slate-300 shrink-0" title="左上角红色标语，建议 ≤6 字">角标语</label>
                     <input id="tt-badge" maxlength="8" placeholder="如：不用背！"
@@ -266,6 +278,42 @@
                     <input id="tt-hook" maxlength="16" placeholder="如：零基礎自然開口說"
                         class="flex-1 bg-slate-900 border border-slate-600 rounded-lg px-3 py-1.5 text-sm text-white focus:border-indigo-500 outline-none">
                 </div>
+            </div>
+            <div id="tt-v2-editor" class="hidden space-y-2">
+                <div class="flex items-center gap-2">
+                    <label class="w-24 text-xs text-slate-300 shrink-0" title="顶部红色横幅钩子，建议 ≤6 字">角标语</label>
+                    <input id="tt2-badge" maxlength="8" placeholder="如：不用背！"
+                        class="flex-1 bg-slate-900 border border-slate-600 rounded-lg px-3 py-1.5 text-sm text-white focus:border-indigo-500 outline-none">
+                </div>
+                <div class="flex items-center gap-2">
+                    <label id="tt2-h1-label" class="w-24 text-xs text-slate-300 shrink-0">大字①</label>
+                    <input id="tt2-headline1" maxlength="10" placeholder=""
+                        class="flex-1 bg-slate-900 border border-slate-600 rounded-lg px-3 py-1.5 text-sm text-white focus:border-indigo-500 outline-none">
+                </div>
+                <div class="flex items-center gap-2">
+                    <label id="tt2-h2-label" class="w-24 text-xs text-slate-300 shrink-0">大字②</label>
+                    <input id="tt2-headline2" maxlength="10" placeholder=""
+                        class="flex-1 bg-slate-900 border border-slate-600 rounded-lg px-3 py-1.5 text-sm text-white focus:border-indigo-500 outline-none">
+                </div>
+                <div class="flex items-center gap-2">
+                    <label class="w-24 text-xs text-slate-300 shrink-0" title="底部彩色横条（信任/行动句），各 ≤10 字">底部横条①</label>
+                    <input id="tt2-pill1" maxlength="14" placeholder="如：美國人天天都在說"
+                        class="flex-1 bg-slate-900 border border-slate-600 rounded-lg px-3 py-1.5 text-sm text-white focus:border-indigo-500 outline-none">
+                </div>
+                <div class="flex items-center gap-2">
+                    <label class="w-24 text-xs text-slate-300 shrink-0">底部横条②</label>
+                    <input id="tt2-pill2" maxlength="14" placeholder="如：每天聽，自然開口說"
+                        class="flex-1 bg-slate-900 border border-slate-600 rounded-lg px-3 py-1.5 text-sm text-white focus:border-indigo-500 outline-none">
+                </div>
+                <div class="flex items-center gap-2">
+                    <label class="w-24 text-xs text-slate-300 shrink-0" title="英文一句话：角色 + 主题匹配的动作/情绪/道具">角色场景(英)</label>
+                    <input id="tt2-character" maxlength="220" placeholder="a 3D Pixar-style young woman chopping vegetables in a cozy kitchen, cheerful"
+                        class="flex-1 bg-slate-900 border border-slate-600 rounded-lg px-3 py-1.5 text-xs text-white focus:border-indigo-500 outline-none">
+                </div>
+                <label class="flex items-center gap-2 text-xs text-slate-300 cursor-pointer" title="角色放左侧、文案放右侧，避免信息流构图单调">
+                    <input id="tt2-mirror" type="checkbox" class="accent-indigo-500 w-4 h-4"> 镜像构图（角色放左侧）
+                </label>
+                <p class="text-xs text-slate-500">英文气泡自动取自脚本真实对话短句，无需填写。</p>
             </div>
             <div class="flex items-center gap-2 mt-3">
                 <button id="tt-cand-btn" onclick="genThumbCandidates()"
@@ -798,6 +846,52 @@ let _ttRun = '';
 let _ttMode = '';
 let _ttCands = [];
 let _ttCandBusy = false;
+let _ttTemplate = '';
+let _ttMeta = {};
+
+const _TT_TEMPLATES = ['', 'number', 'question', 'contrast'];
+const _TT_LABELS = {number: '🔢 数字锚点', question: '❓ 痛点问句', contrast: '⚖️ ✕✓对比'};
+const _TT_TAG_COLORS = {number: 'bg-sky-600/70', question: 'bg-amber-600/70', contrast: 'bg-violet-600/70'};
+const _TT_HINTS = {
+    '': '经典：右侧固定戴耳机女孩，超大品牌词主标题。',
+    number: '数字锚点：超大「N句」句数为第一焦点（N 自动取脚本组数，① 留空自动填充），主题词次之。',
+    question: '痛点问句：两行问句做第一焦点（①黄色上半句 + ②白色下半句），角色表情配合痛点。',
+    contrast: '✕✓对比：同角色左困惑(✕)→右自信(✓)分屏，底部大字标题（① 留空自动取「N句」）。',
+};
+
+function _ttChipId(t) { return 'tt-chip-' + (t || 'legacy'); }
+
+function ttSetTemplate(t) {
+    if (!_TT_TEMPLATES.includes(t)) t = '';
+    _ttTemplate = t;
+    _TT_TEMPLATES.forEach(k => {
+        const chip = document.getElementById(_ttChipId(k));
+        if (!chip) return;
+        chip.className = (k === t)
+            ? 'px-2.5 py-1 rounded-lg text-xs bg-sky-600 text-white'
+            : 'px-2.5 py-1 rounded-lg text-xs bg-slate-700 text-slate-300 hover:bg-slate-600';
+    });
+    const legacy = document.getElementById('tt-legacy-editor');
+    const v2 = document.getElementById('tt-v2-editor');
+    if (!t) {
+        legacy.classList.remove('hidden');
+        v2.classList.add('hidden');
+    } else {
+        legacy.classList.add('hidden');
+        v2.classList.remove('hidden');
+        // 切到 v2 且大字为空 → 用脚本上下文预填（N句 / 主题词）
+        const h1 = document.getElementById('tt2-headline1');
+        const h2 = document.getElementById('tt2-headline2');
+        if (!h1.value && !h2.value) {
+            const n = _ttMeta.n_pairs || 0;
+            if (t !== 'question' && n) h1.value = n + '句';
+            if (_ttMeta.title_zh) h2.value = _ttMeta.title_zh;
+        }
+        document.getElementById('tt2-h1-label').textContent = t === 'question' ? '问句①(黄)' : '大字①(黄)';
+        document.getElementById('tt2-h2-label').textContent = t === 'question' ? '问句②(白)' : '大字②(白)';
+    }
+    document.getElementById('tt-template-hint').textContent = _TT_HINTS[t];
+}
 
 function openThumbTextModal(e, runName, mode) {
     if (e) { e.preventDefault(); e.stopPropagation(); }
@@ -805,10 +899,17 @@ function openThumbTextModal(e, runName, mode) {
     _ttRun = runName;
     _ttMode = mode || '';
     _ttCands = [];
+    _ttMeta = {};
     document.getElementById('tt-run-name').textContent = runName;
     document.getElementById('tt-candidates').innerHTML = '';
     document.getElementById('tt-cand-status').textContent = '';
-    ['tt-badge', 'tt-main', 'tt-hook'].forEach(id => { document.getElementById(id).value = ''; });
+    ['tt-badge', 'tt-main', 'tt-hook',
+     'tt2-badge', 'tt2-headline1', 'tt2-headline2',
+     'tt2-pill1', 'tt2-pill2', 'tt2-character'].forEach(id => {
+        document.getElementById(id).value = '';
+    });
+    document.getElementById('tt2-mirror').checked = false;
+    ttSetTemplate('');
     document.getElementById('thumb-text-modal').classList.remove('hidden');
     const q = _ttMode ? `?mode=${_ttMode}` : '';
     fetch(`/api/runs/${runName}/thumbnail_text${q}`)
@@ -819,6 +920,20 @@ function openThumbTextModal(e, runName, mode) {
             document.getElementById('tt-badge').value = t.thumb_badge || '';
             document.getElementById('tt-main').value = t.thumb_main || '';
             document.getElementById('tt-hook').value = t.thumb_hook || '';
+            _ttMeta = d.meta || {};
+            // 该运行已保存过 v2 模板 → 激活对应轨道并预填
+            const spec = d.spec || {};
+            if (spec.template && _TT_TEMPLATES.includes(spec.template)) {
+                document.getElementById('tt2-badge').value = t.thumb_badge || '';
+                document.getElementById('tt2-headline1').value = spec.headline1 || '';
+                document.getElementById('tt2-headline2').value = spec.headline2 || '';
+                const pills = spec.pills || [];
+                document.getElementById('tt2-pill1').value = pills[0] || '';
+                document.getElementById('tt2-pill2').value = pills[1] || '';
+                document.getElementById('tt2-character').value = spec.character || '';
+                document.getElementById('tt2-mirror').checked = !!spec.mirror;
+                ttSetTemplate(spec.template);
+            }
         })
         .catch(() => alert('读取当前文案失败，请确认服务是否正常'));
 }
@@ -849,20 +964,24 @@ function genThumbCandidates() {
             }
             _ttCands = d.candidates || [];
             status.textContent = _ttCands.length
-                ? `已生成 ${_ttCands.length} 组候选，点击整卡选用（填入上方输入框，可再手改）`
+                ? `已生成 ${_ttCands.length} 组候选，点击整卡选用（自带模板类型，可再手改）`
                 : '';
             const wrap = document.getElementById('tt-candidates');
             wrap.innerHTML = '';
             _ttCands.forEach((c, i) => {
+                const tag = _TT_LABELS[c.template] || (c.template || '?');
+                const tagColor = _TT_TAG_COLORS[c.template] || 'bg-slate-600';
+                const mirrorFlag = c.mirror ? ' 🔄' : '';
                 const card = document.createElement('div');
                 card.id = `tt-cand-${i}`;
                 card.className = 'p-2.5 bg-slate-900 border border-slate-700 rounded-lg cursor-pointer hover:border-indigo-500 transition';
                 card.onclick = () => ttApply(i);
                 card.innerHTML = `
                     <div class="flex items-center gap-2 text-xs min-w-0">
+                        <span class="px-2 py-0.5 ${tagColor} text-white rounded shrink-0">${tag}${mirrorFlag}</span>
                         <span class="px-2 py-0.5 bg-red-600/70 text-white rounded shrink-0">${_escHtml(c.badge)}</span>
-                        <span class="px-2 py-0.5 bg-yellow-500/90 text-slate-900 font-bold rounded shrink-0">${_escHtml(c.main)}</span>
-                        <span class="text-slate-300 truncate">${_escHtml(c.hook)}</span>
+                        <span class="px-2 py-0.5 bg-yellow-500/90 text-slate-900 font-bold rounded shrink-0">${_escHtml(c.headline1)}${c.headline2 ? ' ' + _escHtml(c.headline2) : ''}</span>
+                        <span class="text-slate-400 truncate">${_escHtml((c.pills || []).join(' · '))}</span>
                         <span class="ml-auto text-indigo-300 shrink-0">选用 →</span>
                     </div>`;
                 wrap.appendChild(card);
@@ -879,9 +998,15 @@ function genThumbCandidates() {
 function ttApply(i) {
     const c = _ttCands[i];
     if (!c) return;
-    document.getElementById('tt-badge').value = c.badge || '';
-    document.getElementById('tt-main').value = c.main || '';
-    document.getElementById('tt-hook').value = c.hook || '';
+    ttSetTemplate(c.template || '');
+    document.getElementById('tt2-badge').value = c.badge || '';
+    document.getElementById('tt2-headline1').value = c.headline1 || '';
+    document.getElementById('tt2-headline2').value = c.headline2 || '';
+    const pills = c.pills || [];
+    document.getElementById('tt2-pill1').value = pills[0] || '';
+    document.getElementById('tt2-pill2').value = pills[1] || '';
+    document.getElementById('tt2-character').value = c.character || '';
+    document.getElementById('tt2-mirror').checked = !!c.mirror;
     _ttCands.forEach((_, j) => {
         const el = document.getElementById(`tt-cand-${j}`);
         if (!el) return;
@@ -893,11 +1018,27 @@ function ttApply(i) {
 
 function startThumbRegenFromModal() {
     if (_thumbRegenBusy) { alert('已有缩略图生成任务进行中，请等待完成'); return; }
-    const body = {
-        thumb_badge: document.getElementById('tt-badge').value.trim(),
-        thumb_main: document.getElementById('tt-main').value.trim(),
-        thumb_hook: document.getElementById('tt-hook').value.trim(),
-    };
+    let body;
+    if (_ttTemplate) {
+        // v2 模板轨道：模板 + headline/pills/角色/镜像 整组提交
+        body = {
+            template: _ttTemplate,
+            thumb_badge: document.getElementById('tt2-badge').value.trim(),
+            thumb_headline1: document.getElementById('tt2-headline1').value.trim(),
+            thumb_headline2: document.getElementById('tt2-headline2').value.trim(),
+            pills: [document.getElementById('tt2-pill1').value.trim(),
+                    document.getElementById('tt2-pill2').value.trim()].filter(Boolean),
+            thumb_character: document.getElementById('tt2-character').value.trim(),
+            mirror: document.getElementById('tt2-mirror').checked,
+        };
+    } else {
+        // 经典轨道
+        body = {
+            thumb_badge: document.getElementById('tt-badge').value.trim(),
+            thumb_main: document.getElementById('tt-main').value.trim(),
+            thumb_hook: document.getElementById('tt-hook').value.trim(),
+        };
+    }
     if (!confirm('用当前文案为该运行生成一张缩略图？\n按当前生图 Provider 计费（MCP 积分 / SenseNova），约 1 分钟；旧缩略图全部保留。\n自定义文案将写回 script.json（后续生成沿用）。')) return;
     _thumbRegenBusy = true;
     _thumbRegenRun = _ttRun;

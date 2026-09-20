@@ -292,18 +292,24 @@ def generate_sleep_script(topic: str, cefr: str = "A2", num_pairs: int = 200,
 
 
 def generate_thumb_text_candidates(ctx: dict, count: int = 5) -> list[dict]:
-    """LLM 产出 N 组缩略图文案候选（badge/main/hook），供 Web 端挑选后重生成。
+    """LLM 产出 N 组缩略图候选（v2：模板 + 文案 + 角色场景 + 镜像），供挑选后重生成。
 
     ctx 键：topic / title_zh / scene / cefr / n_pairs /
     current{badge, main, hook} / channel{name_en, niche, audience}|None。
-    返回 [{badge, main, hook}, ...]（繁體中文，长度软校验 + 去重）。
-    频道上下文存在时文案向该频道定位倾斜（同脚本生成品牌段语义）。
+
+    每组候选字段：
+    - template: "number"（数字锚点）/ "question"（痛点问句）/ "contrast"（✕✓对比）
+    - badge / headline1 / headline2 / pills(1-2条) / character(英文角色场景) / mirror(bool)
+    number/contrast 的 headline1 由服务端强制为「{n}句」（LLM 报错句数不可信）；
+    英文气泡不在 LLM 范围（渲染时从脚本 dialogue 确定性派生，见 thumbnail_gen）。
+    参考竞品模板族配额：number×2 + question×2 + contrast×1。
     """
     topic = str(ctx.get("topic", "") or "").strip()
     title_zh = str(ctx.get("title_zh", "") or "").strip()
     scene = str(ctx.get("scene", "") or "").strip()
     cefr = str(ctx.get("cefr", "") or "").strip()
     n_pairs = int(ctx.get("n_pairs", 0) or 0)
+    num_text = f"{n_pairs}句" if n_pairs else "300句"
     current = ctx.get("current") or {}
     cur_badge = str(current.get("badge", "") or "").strip()
     cur_main = str(current.get("main", "") or "").strip()
@@ -330,19 +336,27 @@ Video context:
 - Size: {n_pairs or "several hundred"} short phrase pairs ({n_pairs * 2 if n_pairs else "several hundred"} sentences total)
 - Current thumbnail copy (reference only — generate BETTER / DIFFERENT ones): badge="{cur_badge}", main="{cur_main}", hook="{cur_hook}"{channel_line}
 
-Generate {count} thumbnail copy CANDIDATE SETS. Each set has 3 Traditional Chinese (繁體中文) fields:
-- "badge": top-left red banner slogan, AT MOST 6 characters, high-CTR hook (e.g. "不用背！" / "聽著聽著就會說")
-- "main": the HUGE main title, 2-5 characters, a punchy series/brand word matching this topic (e.g. "睡覺聽" / "聽就會")
-- "hook": bottom ribbon line, AT MOST 14 characters, benefit/promise statement (e.g. "零基礎自然開口說" / "聽久自然開口說")
+Generate {count} thumbnail CANDIDATES for a 3D Pixar-style thumbnail: a topic-matched 3D character on one side, a text stack on the other side. Cover THREE template types — exactly 2 "number", 2 "question", 1 "contrast":
+- "number": the GIANT headline is the phrase count — "headline1" MUST be exactly "{num_text}"; "headline2" = topic words (2-6 characters, e.g. "居家英文")
+- "question": the GIANT headline is a pain-point question about THIS topic, split into two lines (each AT MOST 8 characters, e.g. "醫生問你這句？" / "你聽得懂嗎？")
+- "contrast": same headline rule as "number", but the scene will show the character confused(✕) vs happy(✓)
+
+Each candidate JSON object:
+- "template": "number" or "question" or "contrast"
+- "badge": top red banner hook, Traditional Chinese, AT MOST 6 characters (e.g. "不用背！" / "躺平聽" / "聽就會")
+- "headline1": giant line 1 (see rules above; for "number"/"contrast" MUST be exactly "{num_text}")
+- "headline2": giant line 2 (see rules above)
+- "pills": array of exactly 2 bottom banner lines, Traditional Chinese, each AT MOST 10 characters, high-CTR trust/action statements (e.g. "美國人天天都在說" / "每天聽，自然開口說" / "零基礎也能開口")
+- "character": ONE English sentence describing the topic-matched 3D character: base look "a 3D Pixar-style young woman", plus topic-matched activity, emotion and 1-2 key props (e.g. "a 3D Pixar-style young woman chopping vegetables in a cozy kitchen, cheerful"). For "contrast" describe the topic scene/props only — the ✕/✓ poses are added automatically.
+- "mirror": false for most candidates; exactly ONE candidate may set it true (character on the left side for feed variety)
 
 Requirements:
-- ALL text MUST be Traditional Chinese (繁體中文), no Simplified characters
-- Each set takes a DIFFERENT angle: pain point / curiosity / benefit promise / identity / call-to-action
-- Short and punchy, no filler words — must read instantly as big thumbnail text
+- ALL Chinese text MUST be Traditional Chinese (繁體中文), no Simplified characters
+- Each candidate takes a DIFFERENT angle: pain point / curiosity / benefit promise / identity / call-to-action
 - Do NOT simply repeat the current copy
 
 Output JSON ONLY (no markdown, no explanation):
-{{"candidates": [{{"badge": "...", "main": "...", "hook": "..."}}, ...]}}"""
+{{"candidates": [{{"template": "...", "badge": "...", "headline1": "...", "headline2": "...", "pills": ["...", "..."], "character": "...", "mirror": false}}, ...]}}"""
 
     last_err: Exception | None = None
     for attempt in range(2):
@@ -362,25 +376,48 @@ Output JSON ONLY (no markdown, no explanation):
             for c in raw:
                 if not isinstance(c, dict):
                     continue
+                tmpl = str(c.get("template", "") or "").strip()
+                if tmpl not in ("number", "question", "contrast"):
+                    continue
                 badge = str(c.get("badge", "") or "").strip()
-                main = str(c.get("main", "") or "").strip()
-                hook = str(c.get("hook", "") or "").strip()
-                # 软长度上限（prompt 建议值略放宽），空字段/超长直接丢弃
-                if not (badge and main and hook):
+                h1 = str(c.get("headline1", "") or "").strip()
+                h2 = str(c.get("headline2", "") or "").strip()
+                character = str(c.get("character", "") or "").strip()
+                pills = [str(p).strip() for p in (c.get("pills") or [])
+                         if str(p).strip()][:2]
+                if not badge or len(badge) > 8:
                     continue
-                if len(badge) > 8 or len(main) > 6 or len(hook) > 16:
+                if tmpl == "question":
+                    if not h1 or not h2 or len(h1) > 10 or len(h2) > 10:
+                        continue
+                else:
+                    # 句数锚点由服务端强制派生（LLM 数字不可信）
+                    h1 = num_text
+                    if not h2 or len(h2) > 8:
+                        continue
+                if not character or len(character) > 220:
                     continue
-                key = (badge, main, hook)
+                if not pills or any(len(p) > 14 for p in pills):
+                    continue
+                key = (tmpl, h1, h2)
                 if key in seen:
                     continue
                 seen.add(key)
-                result.append({"badge": badge, "main": main, "hook": hook})
+                result.append({
+                    "template": tmpl,
+                    "badge": badge,
+                    "headline1": h1,
+                    "headline2": h2,
+                    "pills": pills,
+                    "character": character,
+                    "mirror": bool(c.get("mirror")),
+                })
                 if len(result) >= count:
                     break
             if result:
                 return result
-            last_err = RuntimeError("LLM 候选全部无效（空字段或超长）")
+            last_err = RuntimeError("LLM 候选全部无效（字段缺失或超长）")
         except Exception as e:  # noqa: BLE001 — 记录后重试
             last_err = e
             print(f"  [ThumbText][retry {attempt + 1}/2] {type(e).__name__}: {str(e)[:200]}")
-    raise RuntimeError(f"缩略图文案候选生成失败: {last_err}")
+    raise RuntimeError(f"缩略图候选生成失败: {last_err}")

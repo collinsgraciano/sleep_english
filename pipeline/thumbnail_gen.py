@@ -172,6 +172,121 @@ LAYOUT:
 Style: high contrast, bright saturated colors, soft glow, clean composition, professional YouTube CTR design, no watermark, no subtitles, no other text."""
 
 
+def _derive_bubbles(script: dict, limit: int = 2) -> list[str]:
+    """从脚本对话抽真实英文短句做缩略图气泡（2-6 词、无数字，跨行去重）。"""
+    out: list[str] = []
+    seen: set[str] = set()
+    for row in script.get("dialogue", []) or []:
+        if not isinstance(row, dict):
+            continue
+        text = str(row.get("text", "") or "").strip()
+        if not text:
+            continue
+        words = text.split()
+        if not (2 <= len(words) <= 6) or any(ch.isdigit() for ch in text):
+            continue
+        key = text.lower().rstrip(".,!?")
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append(text)
+        if len(out) >= limit:
+            break
+    return out
+
+
+def _build_sleep_thumbnail_prompt_v2(script: dict, template: str) -> str:
+    """竞品模板族 v2 prompt：数字锚点 / 痛点问句 / ✕✓对比 + 角色场景匹配。
+
+    文案/角色/镜像来自 script thumb_* v2 键（弹窗挑选或手改后写回），
+    句数 headline 与英文气泡从脚本确定性派生（不依赖 LLM）。
+    """
+    dialogue = script.get("dialogue", []) or []
+    n_pairs = len(dialogue) // 2
+    num_text = f"{n_pairs}句" if n_pairs else "300句"
+    title_zh = str(script.get("title_zh", "") or "").strip()
+    scene_en = str(script.get("scene", "") or script.get("title", "")
+                   or "daily life").strip()
+
+    badge = str(script.get("thumb_badge", "") or "").strip() or "不用背！"
+    h1 = str(script.get("thumb_headline1", "") or "").strip() or num_text
+    h2 = str(script.get("thumb_headline2", "") or "").strip() or (title_zh or "生活英文")
+    pills = [str(p).strip() for p in (script.get("thumb_pills") or [])
+             if str(p).strip()]
+    for default_pill in ("美國人天天都在說", "每天聽，自然開口說"):
+        if len(pills) >= 2:
+            break
+        if default_pill not in pills:
+            pills.append(default_pill)
+    pills = pills[:2]
+    character = (str(script.get("thumb_character", "") or "").strip()
+                 or ("an adorable 3D Pixar-style young woman with brown hair "
+                     "wearing big cream-white headphones, relaxed and cheerful "
+                     "with a warm smile"))
+    mirror = bool(script.get("thumb_mirror"))
+    bubbles = _derive_bubbles(script)
+
+    episode = ""
+    try:
+        ep = int(script.get("thumb_episode", 0) or 0)
+        if ep > 0:
+            episode = f"{ep:02d}"
+    except (TypeError, ValueError):
+        episode = ""
+    episode_line = (f'\n  - A small red circle badge with the white bold number "{episode}"'
+                    if episode else "")
+
+    pill_lines = ""
+    pill_colors = [("bright blue", "white"), ("bright yellow", "black")]
+    for i, p in enumerate(pills):
+        color, txt_color = pill_colors[i % 2]
+        pill_lines += (f'\n  - A {color} rounded banner with bold {txt_color} '
+                       f'text "{p}"')
+
+    bubble_lines = ""
+    if bubbles:
+        quoted = " / ".join(f'"{b}"' for b in bubbles)
+        bubble_lines = ("\n- Near the character: 1-2 small white speech bubbles "
+                        f"containing the English phrases {quoted} in a casual "
+                        "handwritten style.")
+
+    char_side = "Left half" if mirror else "Right half"
+    text_side = "Right half" if mirror else "Left half"
+    scene_line = (f"in a {scene_en} scene matched to the topic, soft dreamy "
+                  "lighting, gentle bokeh background")
+
+    if template == "contrast":
+        layout = f"""LAYOUT:
+- A split before/after comparison of THE SAME character ({character}):
+  - Left half: the character looking confused and stuck, with a big red "✕" symbol above the head, {scene_line}
+  - Right half: the same character, now happy and confidently speaking English, with a big green "✓" symbol above the head
+- Between the two halves: a bold yellow arrow pointing from left to right.
+- Top-center: a red brush-stroke banner with bold white text "{badge}" and a small flame icon.
+- Bottom-center text stack (ALL text must be Traditional Chinese rendered EXACTLY as written, no extra text, no typos):
+  - GIANT bold 3D yellow text "{h1}" with a thick dark-blue outline — the most prominent element on the thumbnail
+  - Below it: bold white text "{h2}" with a thick black outline{pill_lines}{episode_line}{bubble_lines}
+- A small white headphone icon accent near the bottom."""
+    else:
+        question_note = (" The character's expression should match the pain-point "
+                         "question (slightly confused or thoughtful)."
+                         if template == "question" else "")
+        layout = f"""LAYOUT:
+- {char_side}: {character}, {scene_line}.{question_note}
+- {text_side} text stack (ALL text must be Traditional Chinese rendered EXACTLY as written, no extra text, no typos):
+  - Top: a red brush-stroke banner with bold white text "{badge}" and a small flame icon
+  - Below it: GIANT bold 3D yellow text "{h1}" with a thick dark-blue outline — the most prominent element on the thumbnail
+  - Below it: bold white text "{h2}" with a thick black outline{pill_lines}{episode_line}{bubble_lines}
+- A small white headphone icon accent near the bottom banner."""
+
+    return f"""A vibrant professional YouTube thumbnail (16:9) for a "listen while you sleep" English learning video, in a cute cozy 3D Pixar animation movie style.
+
+{layout}
+
+Style: high contrast, bright saturated colors, soft glow, clean composition, professional YouTube CTR design, no watermark, no subtitles, no other text.
+
+CRITICAL: The most prominent text on the thumbnail must be the Traditional Chinese headline "{h1}" — bright yellow with a thick dark outline. All Chinese text must be exactly as written (Traditional Chinese)."""
+
+
 def _generate_sleep_thumbnail(script: dict, output_path: str,
                               mcp_call_tool=None, mcp_parse_task_id=None,
                               mcp_poll_task=None, mcp_download_file=None,
@@ -182,7 +297,12 @@ def _generate_sleep_thumbnail(script: dict, output_path: str,
     Provider 优先级与通用路径一致：sensenova（配置选择）→ MCP → Pillow 兜底；
     sensenova 失败不回退 MCP（避免用户省积分选择时被意外消耗，同通用路径）。
     """
-    prompt = _build_sleep_thumbnail_prompt(script)
+    # v2 模板分派：script.thumb_template 由弹窗挑选后写回（缺省 = 经典模板）
+    template = str(script.get("thumb_template", "") or "").strip()
+    if template in ("number", "question", "contrast"):
+        prompt = _build_sleep_thumbnail_prompt_v2(script, template)
+    else:
+        prompt = _build_sleep_thumbnail_prompt(script)
 
     if sensenova_image.get_image_provider() == "sensenova":
         print("  [Thumbnail] Generating sleep thumbnail via SenseNova U1.5 Lite...")
