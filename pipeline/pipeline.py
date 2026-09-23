@@ -228,6 +228,9 @@ def _step0_script(args, checkpoint: dict, topic: str, parent_dir: Path,
     elif _llm_provider == "gemini":
         _llm_model = os.environ.get("GEMINI_MODEL", "models/gemini-3.8-flash")
         print(f"Step 0: Generating script via LLM (Gemini {_llm_model})...")
+    elif _llm_provider == "wbk":
+        _llm_model = os.environ.get("WBK_MODEL", "cn:auto")
+        print(f"Step 0: Generating script via LLM (WBK: {_llm_model})...")
     else:
         _llm_model = os.environ.get("SENSENOVA_MODEL", "deepseek-v4-flash")
         print(f"Step 0: Generating script via LLM (SenseNova {_llm_model})...")
@@ -979,13 +982,16 @@ def _parse_args() -> argparse.Namespace:
                         help="Image generation provider for bg image/thumbnail: 'mcp' (default) or 'sensenova' (U1.5 Lite)")
     parser.add_argument("--api-key", default=None, help="SenseNova API key (or set SENSENOVA_API_KEY env var)")
     parser.add_argument("--model", default=None, help="SenseNova model name (default deepseek-v4-flash)")
-    parser.add_argument("--llm-provider", default="sensenova", choices=["sensenova", "openai", "gemini"],
-                        help="LLM provider: 'sensenova' (default), 'openai' (OpenAI-compatible endpoint) or 'gemini' (google-genai SDK)")
+    parser.add_argument("--llm-provider", default="sensenova", choices=["sensenova", "openai", "gemini", "wbk"],
+                        help="LLM provider: 'sensenova' (default), 'openai' (OpenAI-compatible endpoint), 'gemini' (google-genai SDK) or 'wbk' (WorkBuddy aggregator)")
     parser.add_argument("--openai-base-url", default=None, help="OpenAI-compatible API base URL (default: https://x666.me/v1)")
     parser.add_argument("--openai-api-key", default=None, help="OpenAI-compatible API key (or set OPENAI_API_KEY env var)")
     parser.add_argument("--openai-model", default=None, help="OpenAI-compatible model name (default: grok-4.6)")
     parser.add_argument("--gemini-api-key", default=None, help="Gemini API key (or set GEMINI_API_KEY env var)")
     parser.add_argument("--gemini-model", default=None, help="Gemini model name (default: models/gemini-3.8-flash)")
+    parser.add_argument("--wbk-api-key", default=None, help="WBK (WorkBuddy) API key (or set WBK_API_KEY env var)")
+    parser.add_argument("--wbk-model", default=None, help="WBK model id, e.g. cn:auto / cn:hy3 / cn:glm-5.3-flash (default: cn:auto)")
+    parser.add_argument("--wbk-thinking", default=None, help="WBK thinking effort: default/low/medium/high/xhigh/max（按模型规格表自动裁剪）")
     parser.add_argument("--llm-proxy-url", default=None, help="HTTP(S)/SOCKS5 proxy URL for ALL LLM API calls (e.g. socks5://127.0.0.1:10308). Only affects LLM traffic.")
     parser.add_argument("--llm-retries", type=int, default=10, help="Max retries per LLM round (default 10)")
     parser.add_argument("--visual-style", default="pixar3d", help="Visual art style id from style_manager.py（sleep 仅影响背景图 prompt）")
@@ -1125,6 +1131,19 @@ def main():
         os.environ.setdefault("GEMINI_MODEL", "models/gemini-3.8-flash")
         if not os.environ.get("GEMINI_API_KEY"):
             print("ERROR: GEMINI_API_KEY not set. Pass --gemini-api-key or set env var.")
+            sys.exit(1)
+    elif args.llm_provider == "wbk":
+        os.environ["LLM_PROVIDER"] = "wbk"
+        if args.wbk_api_key:
+            os.environ["WBK_API_KEY"] = args.wbk_api_key
+        if args.wbk_model:
+            os.environ["WBK_MODEL"] = args.wbk_model
+        if args.wbk_thinking:
+            os.environ["WBK_THINKING"] = args.wbk_thinking
+        os.environ.setdefault("WBK_MODEL", "cn:auto")
+        os.environ.setdefault("WBK_THINKING", "default")
+        if not os.environ.get("WBK_API_KEY"):
+            print("ERROR: WBK_API_KEY not set. Pass --wbk-api-key or set env var.")
             sys.exit(1)
     else:
         os.environ["LLM_PROVIDER"] = "sensenova"

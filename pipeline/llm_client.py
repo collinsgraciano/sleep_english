@@ -532,6 +532,96 @@ def gemini_chat(api_key: str, model: str, messages: list[dict], *,
                 + str(len(chain)) + " 个）: " + "; ".join(failures))
 
 
+# ---------------------------------------------------------------------------
+# WBK（WorkBuddy OpenAI 兼容聚合端点）：llm_provider="wbk"
+# 思考强度按模型规格表限制（WBK_THINKING="default"=端点默认，不传参）；
+# max_tokens 直接拉到该模型 max_output_tokens（服务端实测宽容，不报 400）。
+# 模型 ID 发送端点 /v1/models 返回的原值（cn: 前缀），裸名/前缀名实测均接受。
+# ---------------------------------------------------------------------------
+
+WBK_BASE_URL = "http://45.13.214.22:7864/v1"
+
+# 规格表：端点实测（GET /v1/models）。条目 = (显示名, 最大输出 tokens,
+# 支持的思考档位, 端点默认档位)。思考档位 None = 该模型不开放档位选择
+# （端点内部按模型默认；发 reasoning_effort 也接受但被忽略/宽容处理）。
+WBK_MODEL_SPECS: dict[str, dict] = {
+    "auto":                {"label": "Auto（自动选择）", "max_out": 32000,
+                            "efforts": None, "default_effort": "high"},
+    "fast-model":          {"label": "快速", "max_out": 48000,
+                            "efforts": None, "default_effort": "medium"},
+    "balanced-model":      {"label": "均衡", "max_out": 48000,
+                            "efforts": None, "default_effort": "medium"},
+    "deep-model":          {"label": "深度", "max_out": 48000,
+                            "efforts": None, "default_effort": "medium"},
+    "hy4-preview-f":       {"label": "Hy4 preview (fast)", "max_out": 64000,
+                            "efforts": ["high"], "default_effort": "high"},
+    "hy4-preview":         {"label": "Hy4 preview", "max_out": 64000,
+                            "efforts": ["high"], "default_effort": "high"},
+    "hy3":                 {"label": "Hy3（腾讯混元）", "max_out": 64000,
+                            "efforts": ["low", "high"], "default_effort": "high"},
+    "hy3-x":               {"label": "Hy3-x（腾讯混元）", "max_out": 64000,
+                            "efforts": ["low", "high"], "default_effort": "high"},
+    "deepseek-v4.1-flash": {"label": "DeepSeek V4.1 Flash", "max_out": 128000,
+                            "efforts": ["low", "high", "max"], "default_effort": "high"},
+    "glm-5.3":             {"label": "GLM-5.3（智谱）", "max_out": 64000,
+                            "efforts": ["low", "high", "max"], "default_effort": "high"},
+    "glm-5.3-flash":       {"label": "GLM-5.3 Flash（智谱）", "max_out": 131072,
+                            "efforts": ["low", "high", "max"], "default_effort": "high"},
+    "glm-5.2":             {"label": "GLM-5.2（智谱）", "max_out": 64000,
+                            "efforts": ["high", "xhigh"], "default_effort": "high"},
+    "glm-5.1":             {"label": "GLM-5.1（智谱）", "max_out": 48000,
+                            "efforts": ["medium"], "default_effort": "medium"},
+    "glm-5v-turbo":        {"label": "GLM-5v-Turbo（智谱）", "max_out": 64000,
+                            "efforts": ["medium"], "default_effort": "medium"},
+    "minimax-m3":          {"label": "MiniMax-M3", "max_out": 64000,
+                            "efforts": ["medium"], "default_effort": "medium"},
+    "kimi-k3-1":           {"label": "Kimi-K3", "max_out": 32000,
+                            "efforts": ["low", "high", "xhigh"], "default_effort": "high"},
+    "kimi-k2.8-preview":   {"label": "Kimi-K2.8 Preview", "max_out": 64000,
+                            "efforts": ["low", "high", "max"], "default_effort": "high"},
+    "kimi-k2.7":           {"label": "Kimi-K2.7-Code", "max_out": 32000,
+                            "efforts": ["medium"], "default_effort": "medium"},
+    "kimi-k2.6":           {"label": "Kimi-K2.6", "max_out": 32000,
+                            "efforts": ["medium"], "default_effort": "medium"},
+    "deepseek-v4-pro":     {"label": "DeepSeek V4 Pro", "max_out": 128000,
+                            "efforts": ["high", "xhigh"], "default_effort": "high"},
+}
+
+# wbk 模型下拉选项（ PARAM_SPEC openai_model 同款 {id: 显示名} 形式）
+WBK_MODEL_OPTIONS = {
+    f"cn:{mid}": spec["label"] for mid, spec in WBK_MODEL_SPECS.items()
+}
+
+
+def _wbk_bare_model(model: str) -> str:
+    """cn:xxx → xxx（规格表按裸名建键；未知模型原样返回）。"""
+    bare = (model or "").split(":", 1)[-1].strip()
+    return bare or (model or "").strip()
+
+
+def wbk_thinking_for(model: str, requested: str) -> str:
+    """请求档位 → 该模型实际发送档位（"" = 不发送 reasoning_effort）。
+
+    规则：requested="default"/空/未知模型 → ""（端点默认）；
+    档位在模型 efforts 列表内 → 原样发送；不在列表内 → ""（回端点默认，
+    避免给只支持 [medium] 的模型强发 high 导致推理档位漂移）。
+    """
+    spec = WBK_MODEL_SPECS.get(_wbk_bare_model(model))
+    req = (requested or "").strip().lower()
+    if spec is None or req in ("default", ""):
+        return ""
+    efforts = spec["efforts"]
+    if not efforts or req not in efforts:
+        return ""
+    return req
+
+
+def wbk_max_tokens_for(model: str) -> int:
+    """模型最大输出 tokens（未知模型回退 8192 兜底）。"""
+    spec = WBK_MODEL_SPECS.get(_wbk_bare_model(model))
+    return spec["max_out"] if spec else 8192
+
+
 def _chat(messages: list[dict], temperature: float = 0.8, timeout: int = 180,
           max_tokens: int = 8192, reasoning_effort: str = "low") -> str:
     """Call LLM chat completion (SenseNova / OpenAI-compatible / Gemini), return content string.
@@ -540,16 +630,119 @@ def _chat(messages: list[dict], temperature: float = 0.8, timeout: int = 180,
     - "sensenova" (default): SenseNova DeepSeek V4 Flash / glm-5.2
     - "openai": any OpenAI-compatible endpoint (x666.me, etc.)
     - "gemini": Google Gemini via google-genai SDK (Interactions API)
+    - "wbk": WorkBuddy aggregator endpoint (thinking per-model, max_tokens maxed)
 
     max_tokens is always raised to 16384 (reasoning models burn small budgets).
     Retries on HTTP 429 (rate limit) with exponential backoff.
     Enforces a minimum interval between calls to avoid triggering rate limits.
     """
+    provider = _env_get("LLM_PROVIDER", "sensenova")
+
+    # WBK 分支：max_tokens 直接拉到该模型上限（调用方传小值不生效），
+    # 思考强度按模型规格表裁剪；其余退避/限速/停止探测与通用路径一致。
+    if provider == "wbk":
+        model = _env_get("WBK_MODEL", "cn:auto")
+        api_key = _env_get("WBK_API_KEY", "")
+        requested = _env_get("WBK_THINKING", "default")
+        thinking = wbk_thinking_for(model, requested)
+        max_tokens = max(max_tokens, wbk_max_tokens_for(model))
+        for _retry_attempt in range(len(_RETRY_BACKOFFS) + 1):
+            _check_stop()
+            _enforce_rate_limit()
+            body = {
+                "model": model,
+                "messages": messages,
+                "temperature": temperature,
+                "max_tokens": max_tokens,
+            }
+            if thinking:
+                body["reasoning_effort"] = thinking
+            data = json.dumps(body).encode("utf-8")
+            req = urllib.request.Request(
+                f"{WBK_BASE_URL}/chat/completions",
+                data=data,
+                method="POST",
+            )
+            req.add_header("Authorization", f"Bearer {api_key}")
+            req.add_header("Content-Type", "application/json")
+            req.add_header("User-Agent", "CodelyLLM/1.0")
+            try:
+                with llm_urlopen(req, timeout, proxy_url="") as resp:
+                    raw = resp.read().decode("utf-8")
+                    if not raw.strip():
+                        raise RuntimeError(
+                            "LLM returned empty response body (HTTP 200, 0 bytes)")
+                    try:
+                        result = json.loads(raw)
+                    except json.JSONDecodeError:
+                        dbg = _dump_raw_debug(raw, model, "non_json")
+                        print(f"  [LLM] Non-JSON response (model={model}). "
+                              f"Full raw response ({len(raw)} chars)"
+                              f"{' saved to ' + dbg if dbg else ''}:")
+                        print(raw)
+                        print("  [LLM] End raw response")
+                        raise RuntimeError(
+                            f"LLM returned non-JSON response (model={model}). "
+                            f"Full raw ({len(raw)} chars)"
+                            f"{' saved to ' + dbg if dbg else ''} shown above: {raw}"
+                        ) from None
+                    if "choices" not in result or not result["choices"]:
+                        diag = _diagnose_response(result)
+                        dbg = _dump_raw_debug(raw, model, "no_choices")
+                        print(f"  [LLM] Response has no 'choices' (model={model}). {diag}")
+                        print(f"  [LLM] Full raw response ({len(raw)} chars)"
+                              f"{' saved to ' + dbg if dbg else ''}:")
+                        print(raw)
+                        print("  [LLM] End raw response")
+                        raise RuntimeError(
+                            f"LLM response has no 'choices' field (model={model}). "
+                            f"{diag}. Full raw ({len(raw)} chars)"
+                            f"{' saved to ' + dbg if dbg else ''} shown above: {raw}"
+                        )
+                    content = result["choices"][0]["message"]["content"]
+                    if not content or not content.strip():
+                        diag = _diagnose_response(result)
+                        dbg = _dump_raw_debug(raw, model, "empty_content")
+                        print(f"  [LLM] Empty content (HTTP 200, model={model}). {diag}")
+                        print(f"  [LLM] Full raw response ({len(raw)} chars)"
+                              f"{' saved to ' + dbg if dbg else ''}:")
+                        print(raw)
+                        print("  [LLM] End raw response")
+                        raise RuntimeError(
+                            f"LLM returned empty content (HTTP 200, model={model}). {diag}. "
+                            f"Full raw ({len(raw)} chars)"
+                            f"{' saved to ' + dbg if dbg else ''} shown above: {raw}"
+                        )
+                    return content
+            except urllib.error.HTTPError as e:
+                err = e.read().decode("utf-8", errors="replace")
+                if e.code in _RETRY_CODES and _retry_attempt < len(_RETRY_BACKOFFS):
+                    wait = _RETRY_BACKOFFS[_retry_attempt]
+                    reason = ("rate limited" if e.code == 429
+                              else "gateway error" if e.code in (502, 503, 504)
+                              else "gateway timeout")
+                    print(f"  [LLM] HTTP {e.code} ({reason}), "
+                          f"waiting {wait}s before retry "
+                          f"({_retry_attempt+1}/{len(_RETRY_BACKOFFS)})... "
+                          f"Model: {model}")
+                    _sleep_interruptible(wait)
+                    continue
+                raise RuntimeError(f"LLM HTTP {e.code}: {err}") from e
+            except OSError as e:
+                if _retry_attempt < len(_RETRY_BACKOFFS):
+                    wait = _RETRY_BACKOFFS[_retry_attempt]
+                    print(f"  [LLM] Network error ({type(e).__name__}: {e}), "
+                          f"waiting {wait}s before retry "
+                          f"({_retry_attempt+1}/{len(_RETRY_BACKOFFS)})... "
+                          f"Model: {model}")
+                    _sleep_interruptible(wait)
+                    continue
+                raise RuntimeError(
+                    f"LLM network error after retries: {type(e).__name__}: {e}") from e
+
     # max_tokens 直接拉满（用户需求：不再从 2048/8192 起步逐级翻倍爬升）
     if max_tokens < 16384:
         max_tokens = 16384
-
-    provider = _env_get("LLM_PROVIDER", "sensenova")
 
     if provider == "gemini":
         return gemini_chat(

@@ -82,3 +82,15 @@ sleep_english/
 - channel_factory 已按用户要求补迁挂载（2026-09-15，router+page 路由+侧边栏+paths 常量，eb0c9c5 的「残留留本地」决定作废）；configs/channel_drafts·favorites·references·assets·channels 为运行时数据保持本地不入库
 - 双项目并行时集数/主题防重各自独立，可能重合（已知权衡）
 - 用户反馈记忆（跨会话通用规则）见用户级 CODELY.md；本项目后续沉淀追加到「Codely Structured Memories」Project 节
+
+## Codely Structured Memories
+
+### User
+
+### Feedback
+- [2026-09-23 18:29:41] [2026-09-23] git diff 显示某文件整文件变更（几百上千行）但实际只改了几十行时，先怀疑行尾翻转：用 `git diff --stat --ignore-cr-at-eol <file>` 对比确认。Why: 两个仓库（sleep_english / colab_listening_b_web）core.autocrlf=true 且 LF blob 进库，但 sleep_english/pipeline/llm_client.py 曾是历史遗留的唯一 CRLF blob——任何编辑后 git add 都触发整文件 diff（真实改动仅 115 行却显示 874/825）。How to apply: 确认是 EOL 后让 git 默认 clean filter 顺带归一化提交（一次整文件 diff 换此后永久干净），不要用 -c core.autocrlf=false 绕过以免把 CRLF blob 继续传下去；sleep_english llm_client.py 已于 2026-09-23 归一化。
+### Project
+- [2026-09-23 18:29:41] [2026-09-23] sleep_english 与 colab_listening_b_web 的 pipeline/llm_client.py + app/pipeline_service.py 是同构副本（2026-09-15 分离时复制）——LLM 基础设施改动（_chat 重试/退避/停止 hook/限速/gemini_chat/max_tokens）必须两个项目同步应用，只改一份会漂移。Why: 用户跑双项目（日志常来自 colab），2026-09-23 已同步落地「停止运行」即时生效（LLMStoppedError 继承 BaseException 穿透全部 except Exception 重试层 + 线程局部 stop hook + _sleep_interruptible 0.5s 粒度）与 max_tokens 恒拉满 16384（删除翻倍爬升，保留 400 拒绝回退 8192）。How to apply: 后续改 llm_client/pipeline_service 时问一句是否需双项目同步。
+
+### Reference
+

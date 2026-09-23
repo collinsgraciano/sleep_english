@@ -37,7 +37,7 @@ if str(_PIPELINE_DIR) not in sys.path:
 
 from llm_client import (  # noqa: E402
     _enforce_rate_limit, _extract_json, resolve_max_line_words,
-    set_llm_env_override)
+    set_llm_env_override, wbk_thinking_for)
 
 DEFAULT_LINES = {"sleep": 400}
 
@@ -390,6 +390,10 @@ def _build_llm_override(provider_id: str, model: str) -> dict:
     elif p_type == "gemini":
         ov["GEMINI_API_KEY"] = api_key
         ov["GEMINI_MODEL"] = resolved_model or "models/gemini-3.8-flash"
+    elif p_type == "wbk":
+        ov["WBK_API_KEY"] = api_key
+        ov["WBK_MODEL"] = resolved_model or "cn:auto"
+        ov["WBK_THINKING"] = str(cfg.get("wbk_thinking") or "default")
     else:
         ov["OPENAI_BASE_URL"] = base_url
         ov["OPENAI_API_KEY"] = api_key
@@ -661,7 +665,12 @@ def _chat_json_provider(provider_id: str, model: str, structure: str,
             "temperature": temperature,
             "max_tokens": max_tokens,
         }
-        if p_type != "openai":
+        # WBK 按模型规格表决定思考档位（default=不发送）；其余 sensenova 类发 low
+        if p_type == "wbk":
+            _effort = wbk_thinking_for(resolved_model, cfg.get("wbk_thinking", "default"))
+            if _effort:
+                body["reasoning_effort"] = _effort
+        elif p_type != "openai":
             body["reasoning_effort"] = "low"
         req = urllib.request.Request(
             f"{base_url}/chat/completions",
