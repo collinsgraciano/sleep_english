@@ -50,6 +50,9 @@ _PHONETIC_FIXES = {
     "Wi-Fi": "WiFi",
     "wi-fi": "WiFi",
     "Wi-fi": "WiFi",
+    # OOV in misaki lexicon: crashes when no espeak fallback is installed
+    "hometown": "home town",
+    "Hometown": "Home town",
 }
 
 
@@ -58,6 +61,30 @@ def _apply_phonetic_fixes(text: str) -> str:
     for bad, good in _PHONETIC_FIXES.items():
         text = text.replace(bad, good)
     return text
+
+
+def _ensure_espeak_fallback(pipeline) -> None:
+    """Attach an espeak fallback for OOV words if misaki has none.
+
+    KPipeline('a') constructs EspeakFallback at init; when espeak-ng is not
+    installed it only logs a warning and leaves g2p.fallback=None. Any word
+    outside misaki's lexicon (e.g. 'hometown') then returns phonemes=None and
+    crashes the phoneme join with NoneType+str. espeakng-loader ships a
+    bundled espeak-ng binary, so we can wire the fallback without a system
+    install; failures here keep the old behavior (no fallback).
+    """
+    try:
+        if pipeline.g2p.fallback is not None:
+            return
+        import espeakng_loader
+        from phonemizer.backend.espeak.wrapper import EspeakWrapper
+        from misaki.espeak import EspeakFallback
+        EspeakWrapper.set_library(espeakng_loader.get_library_path())
+        EspeakWrapper.set_data_path(espeakng_loader.get_data_path())
+        pipeline.g2p.fallback = EspeakFallback(british=False)
+        print("[Kokoro] espeak fallback attached (espeakng-loader)")
+    except Exception as e:
+        print(f"[Kokoro] espeak fallback unavailable: {e}")
 
 
 def _rate_to_speed(rate: str) -> float:
@@ -268,6 +295,7 @@ class TTSEngine:
                 cls._kokoro_pipeline = KPipeline(lang_code='a')
             except Exception as e:
                 raise RuntimeError(f"Kokoro English model failed to load: {e}") from e
+            _ensure_espeak_fallback(cls._kokoro_pipeline)
         return cls._kokoro_pipeline
 
     @classmethod
