@@ -622,6 +622,10 @@ def wbk_max_tokens_for(model: str) -> int:
     return spec["max_out"] if spec else 8192
 
 
+class _WbkStreamError(Exception):
+    """WBK 流式响应中途失败（流内 error 块 / 空内容 / 无 finish_reason 截断）。"""
+
+
 def _chat(messages: list[dict], temperature: float = 0.8, timeout: int = 180,
           max_tokens: int = 8192, reasoning_effort: str = "low") -> str:
     """Call LLM chat completion (SenseNova / OpenAI-compatible / Gemini), return content string.
@@ -630,7 +634,8 @@ def _chat(messages: list[dict], temperature: float = 0.8, timeout: int = 180,
     - "sensenova" (default): SenseNova DeepSeek V4 Flash / glm-5.2
     - "openai": any OpenAI-compatible endpoint (x666.me, etc.)
     - "gemini": Google Gemini via google-genai SDK (Interactions API)
-    - "wbk": WorkBuddy aggregator endpoint (thinking per-model, max_tokens maxed)
+    - "wbk": WorkBuddy aggregator endpoint (SSE streaming; thinking per-model,
+      max_tokens maxed)
 
     max_tokens is always raised to 16384 (reasoning models burn small budgets).
     Retries on HTTP 429 (rate limit) with exponential backoff.
@@ -640,6 +645,9 @@ def _chat(messages: list[dict], temperature: float = 0.8, timeout: int = 180,
 
     # WBK 分支：max_tokens 直接拉到该模型上限（调用方传小值不生效），
     # 思考强度按模型规格表裁剪；其余退避/限速/停止探测与通用路径一致。
+    # 必须流式：中转对非流式请求有 ~120s 上游硬超时，脚本生成的长输出必然
+    # 超时返回 502（2026-09-23 实测 10 连败全部 120.0x s）；流式首字几秒内
+    # 回传即可保持连接存活，之后边生成边收（ai_test.py 同款已验证可行）。
     if provider == "wbk":
         model = _env_get("WBK_MODEL", "cn:auto")
         api_key = _env_get("WBK_API_KEY", "")
@@ -654,6 +662,7 @@ def _chat(messages: list[dict], temperature: float = 0.8, timeout: int = 180,
                 "messages": messages,
                 "temperature": temperature,
                 "max_tokens": max_tokens,
+                "stream": True,
             }
             if thinking:
                 body["reasoning_effort"] = thinking
@@ -667,53 +676,54 @@ def _chat(messages: list[dict], temperature: float = 0.8, timeout: int = 180,
             req.add_header("Content-Type", "application/json")
             req.add_header("User-Agent", "CodelyLLM/1.0")
             try:
+                content = ""
+                usage_info: dict | None = None
+                finished = False
                 with llm_urlopen(req, timeout, proxy_url="") as resp:
-                    raw = resp.read().decode("utf-8")
-                    if not raw.strip():
-                        raise RuntimeError(
-                            "LLM returned empty response body (HTTP 200, 0 bytes)")
-                    try:
-                        result = json.loads(raw)
-                    except json.JSONDecodeError:
-                        dbg = _dump_raw_debug(raw, model, "non_json")
-                        print(f"  [LLM] Non-JSON response (model={model}). "
-                              f"Full raw response ({len(raw)} chars)"
-                              f"{' saved to ' + dbg if dbg else ''}:")
-                        print(raw)
-                        print("  [LLM] End raw response")
-                        raise RuntimeError(
-                            f"LLM returned non-JSON response (model={model}). "
-                            f"Full raw ({len(raw)} chars)"
-                            f"{' saved to ' + dbg if dbg else ''} shown above: {raw}"
-                        ) from None
-                    if "choices" not in result or not result["choices"]:
-                        diag = _diagnose_response(result)
-                        dbg = _dump_raw_debug(raw, model, "no_choices")
-                        print(f"  [LLM] Response has no 'choices' (model={model}). {diag}")
-                        print(f"  [LLM] Full raw response ({len(raw)} chars)"
-                              f"{' saved to ' + dbg if dbg else ''}:")
-                        print(raw)
-                        print("  [LLM] End raw response")
-                        raise RuntimeError(
-                            f"LLM response has no 'choices' field (model={model}). "
-                            f"{diag}. Full raw ({len(raw)} chars)"
-                            f"{' saved to ' + dbg if dbg else ''} shown above: {raw}"
-                        )
-                    content = result["choices"][0]["message"]["content"]
-                    if not content or not content.strip():
-                        diag = _diagnose_response(result)
-                        dbg = _dump_raw_debug(raw, model, "empty_content")
-                        print(f"  [LLM] Empty content (HTTP 200, model={model}). {diag}")
-                        print(f"  [LLM] Full raw response ({len(raw)} chars)"
-                              f"{' saved to ' + dbg if dbg else ''}:")
-                        print(raw)
-                        print("  [LLM] End raw response")
-                        raise RuntimeError(
-                            f"LLM returned empty content (HTTP 200, model={model}). {diag}. "
-                            f"Full raw ({len(raw)} chars)"
-                            f"{' saved to ' + dbg if dbg else ''} shown above: {raw}"
-                        )
-                    return content
+                    for raw_line in resp:
+                        line = raw_line.decode("utf-8", errors="replace").strip()
+                        if not line or not line.startswith("data: "):
+                            continue
+                        payload = line[6:].strip()
+                        if payload == "[DONE]":
+                            finished = True
+                            break
+                        try:
+                            chunk = json.loads(payload)
+                        except json.JSONDecodeError:
+                            continue
+                        if chunk.get("error"):
+                            raise _WbkStreamError(
+                                f"stream error block: {chunk['error']}")
+                        choices = chunk.get("choices") or []
+                        if not choices:
+                            # 尾部 usage 块（stream_options include_usage）
+                            if chunk.get("usage"):
+                                usage_info = chunk["usage"]
+                            continue
+                        content += choices[0].get("delta", {}).get("content", "") or ""
+                if not finished:
+                    dbg = _dump_raw_debug(content, model, "wbk_stream_truncated")
+                    print(f"  [LLM] WBK stream ended without [DONE] "
+                          f"(model={model}, {len(content)} chars so far)"
+                          f"{' saved to ' + dbg if dbg else ''}")
+                    raise _WbkStreamError(
+                        "stream ended without [DONE] (upstream truncation)")
+                if not content.strip():
+                    raise _WbkStreamError(
+                        f"empty content from stream "
+                        f"(usage={usage_info})")
+                return content
+            except _WbkStreamError as e:
+                if _retry_attempt < len(_RETRY_BACKOFFS):
+                    wait = _RETRY_BACKOFFS[_retry_attempt]
+                    print(f"  [LLM] WBK stream failure ({e}), "
+                          f"waiting {wait}s before retry "
+                          f"({_retry_attempt+1}/{len(_RETRY_BACKOFFS)})... "
+                          f"Model: {model}")
+                    _sleep_interruptible(wait)
+                    continue
+                raise RuntimeError(f"LLM stream failure after retries: {e}") from e
             except urllib.error.HTTPError as e:
                 err = e.read().decode("utf-8", errors="replace")
                 if e.code in _RETRY_CODES and _retry_attempt < len(_RETRY_BACKOFFS):
