@@ -32,33 +32,24 @@ def main() -> int:
     run_dir = Path(params["run_dir"])
     structure = params.get("structure", "sleep")
     out_name = params["out_name"]
-    ref_img = params.get("ref_img", "")
-    provider = params.get("provider", "mcp")
     style_id = params.get("style_id", "pixar3d")
     style_prompt = params.get("style_prompt", "")
 
     print("=" * 60)
     print(f"ThumbnailRegen: {run_dir.name} -> {out_name}")
 
-    # 先读脚本（路径错误快速失败，不白初始化 MCP / 上传参考图）
+    # 先读脚本（路径错误快速失败，不白初始化 MCP）
     script = json.loads((run_dir / "script.json").read_text(encoding="utf-8"))
 
     # env 注入（与 Web 端 _set_env 的最小子集一致）
-    os.environ["IMAGE_PROVIDER"] = provider
-    if params.get("sensenova_api_key"):
-        os.environ["SENSENOVA_API_KEY"] = params["sensenova_api_key"]
     os.environ["VISUAL_STYLE_ID"] = style_id
     if style_prompt:
         os.environ["VISUAL_STYLE_PROMPT"] = style_prompt
 
-    if provider == "mcp":
-        from mcp_client import initialize as mcp_initialize
-        tokens = [t.strip() for t in params.get("mcp_tokens", []) if t.strip()]
-        mcp_initialize(tokens=tokens or None)
-        char_scene_url = ""
-    else:
-        # sensenova edit_image 内部 _to_image_url 把本地路径转 base64
-        char_scene_url = ref_img
+    from mcp_client import initialize as mcp_initialize
+    tokens = [t.strip() for t in params.get("mcp_tokens", []) if t.strip()]
+    mcp_initialize(tokens=tokens or None)
+    char_scene_url = ""
 
     from pipeline import call_tool, parse_task_id, poll_task, download_file
     from thumbnail_gen import generate_thumbnail

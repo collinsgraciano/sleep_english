@@ -179,10 +179,7 @@ def _thumb_llm_override(cfg: dict) -> dict:
         "LLM_PROVIDER": p_type,
         "LLM_RETRIES": str(cfg.get("llm_retries", 10)),
     }
-    if p_type == "sensenova":
-        ov["SENSENOVA_API_KEY"] = api_key
-        ov["SENSENOVA_MODEL"] = model or "deepseek-v4-flash"
-    elif p_type == "gemini":
+    if p_type == "gemini":
         ov["GEMINI_API_KEY"] = api_key
         ov["GEMINI_MODEL"] = model or "models/gemini-3.8-flash"
     elif p_type == "wbk":
@@ -192,7 +189,7 @@ def _thumb_llm_override(cfg: dict) -> dict:
     else:
         ov["OPENAI_BASE_URL"] = base_url
         ov["OPENAI_API_KEY"] = api_key
-        ov["OPENAI_MODEL"] = model or "grok-4.6"
+        ov["OPENAI_MODEL"] = model
     # LLM 代理（全部 Provider 生效；线程局部 override 隔离）
     if cfg.get("llm_proxy_enabled"):
         ov["LLM_PROXY_ENABLED"] = "1"

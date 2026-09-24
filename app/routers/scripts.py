@@ -50,8 +50,6 @@ async def api_scripts_form_options():
     config = load_config()
     return {
         "providers": get_provider_options(),
-        "sensenova_models": PARAM_SPEC["sensenova_model"]["options"],
-        "openai_models": PARAM_SPEC["openai_model"]["options"],
         "gemini_models": PARAM_SPEC["gemini_model"]["options"],
         "wbk_models": PARAM_SPEC["wbk_model"]["options"],
         "custom_providers": load_llm_providers(),
@@ -62,9 +60,7 @@ async def api_scripts_form_options():
         "default_lines": script_library.DEFAULT_LINES,
         "last": _load_scripts_form(),  # 上次使用的 provider/model（优先于 current 回显）
         "current": {
-            "provider": config.get("llm_provider", "sensenova"),
-            "sensenova_model": config.get("sensenova_model", ""),
-            "openai_model": config.get("openai_model", ""),
+            "provider": config.get("llm_provider", "wbk"),
             "gemini_model": config.get("gemini_model", ""),
             "wbk_model": config.get("wbk_model", ""),
             "cefr": config.get("cefr", "A2"),

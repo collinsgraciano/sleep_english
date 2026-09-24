@@ -273,25 +273,10 @@ PARAM_SPEC = {
                        "help": "朗读步骤编排 JSON（[{step, gap}]，step ∈ a_m/a_slow/b_m/b_slow/b_f/combo，gap=该步后停顿秒数或 null=沿用全局停顿参数）；留空=默认结构 a_m→a_slow→b_m→b_slow→combo；建议用「📋 内容编排」页的可视化编辑器修改"},
 
     # --- LLM ---
-    "llm_provider": {"default": "sensenova", "type": "select", "group": "llm",
+    "llm_provider": {"default": "wbk", "type": "select", "group": "llm",
                      "label": "LLM Provider", "options": {
-                         "sensenova": "SenseNova",
                          "wbk": "WBK (WorkBuddy)",
-                         "gemini": "Gemini",
-                         "openai": "OpenAI Compatible"}},
-    "sensenova_api_key": {"default": "", "type": "password", "group": "llm",
-                          "label": "SenseNova API Key",
-                          "help": "LLM 与生图 Provider=sensenova 共用此 Key；LLM 走自定义通道时也可单独填写"},
-    "sensenova_model": {"default": "deepseek-v4-flash", "type": "select", "group": "llm",
-                        "label": "SenseNova Model", "options": ["deepseek-v4-flash", "glm-5.2"]},
-    "openai_base_url": {"default": "https://x666.me/v1", "type": "text", "group": "llm",
-                        "label": "OpenAI Base URL"},
-    "openai_api_key": {"default": "", "type": "password", "group": "llm",
-                      "label": "OpenAI API Key"},
-    "openai_model": {"default": "grok-4.6", "type": "select", "group": "llm",
-                    "label": "OpenAI Model", "options": [
-                        "grok-4.6", "grok-4.5", "gemini-3.1-pro-preview",
-                        "gemini-3.7-flash", "claude-sonnet-5", "gemini-2.5-pro-1m"]},
+                         "gemini": "Gemini"}},
     "gemini_api_key": {"default": "", "type": "password", "group": "llm",
                       "label": "Gemini API Key",
                       "help": "llm_provider=gemini 时使用（google-genai SDK 直连 Google API）"},
@@ -343,10 +328,16 @@ PARAM_SPEC = {
                          "label": "LLM 最小间隔(秒)"},
     "llm_proxy_enabled": {"default": False, "type": "checkbox", "group": "llm",
                           "label": "LLM API 走代理",
-                          "help": "开启后当前 LLM Provider 的全部 API 调用走代理（Gemini/SenseNova/OpenAI 均生效）；MCP 生图/视频、TTS 等不受影响"},
+                          "help": "开启后当前 LLM Provider 的全部 API 调用走代理（Gemini/WBK/自定义均生效）；MCP 生图/视频、TTS 等不受影响"},
     "llm_proxy_url": {"default": "http://127.0.0.1:7890", "type": "text", "group": "llm",
                      "label": "LLM 代理地址",
                      "help": "支持 http:// 与 socks5://、socks5h://（socks 系列 DNS 经代理解析）；例 http://127.0.0.1:7890 或 socks5://127.0.0.1:10308"},
+    "llm_single_shot_script": {"default": False, "type": "checkbox", "group": "llm",
+                               "label": "一次请求生成完整脚本",
+                               "help": "开启后跳过分批：单次 LLM 请求直接生成全部对话组+标题/YouTube 元数据"
+                                       "（适合大输出上限模型，如 WBK deepseek-v4.1-flash / glm-5.3-flash）；"
+                                       "模型输出不足时按剩余区间自动补齐（至多 2 次）；"
+                                       "关闭=按「Sleep · 朗读内容」的 LLM 分批组数生成"},
 
     # --- 脚本质量增强（四开关独立，默认全关 = 原生成流程不变） ---
 
@@ -408,8 +399,8 @@ PARAM_SPEC = {
     "mcp_tokens": {"default": "", "type": "textarea", "group": "mcp",
                    "label": "MCP Tokens", "help": "每行一个 token, 多 token 自动轮换"},
     "image_provider": {"default": "mcp", "type": "select", "group": "mcp",
-                       "label": "生图 Provider", "options": ["mcp", "sensenova"],
-                       "help": "mcp=TJGenerators(积分)；sensenova=SenseNova U1.5 Lite(API 计费, 复用 SenseNova API Key)"},
+                       "label": "生图 Provider", "options": ["mcp"],
+                       "help": "mcp=TJGenerators(积分)"},
     "no_thumbnail": {"default": False, "type": "checkbox", "group": "mcp",
                      "label": "跳过缩略图",
                      "help": "勾选后 Step 4.5 只生成 YouTube 元数据，不生成缩略图图片（不消耗生图 API）"},
@@ -762,9 +753,9 @@ def load_mode_config(mode: str) -> dict[str, Any]:
     merged.update(saved)
     # API Key 兜底：模式文件若 seed 于 default.json 尚无 key 的时期，
     # 空字符串会永久遮蔽后续填入 default.json 的 key —— 空 key 回落 legacy 值
-    # （仅 allowlist 两个 key 字段；topic/used_topics_file 等空串是合法业务值不做回落）
+    # （仅 allowlist 一个 key 字段；topic/used_topics_file 等空串是合法业务值不做回落）
     legacy = _read_legacy_default() or {}
-    for _k in ("sensenova_api_key", "openai_api_key"):
+    for _k in ("gemini_api_key",):
         if not merged.get(_k) and legacy.get(_k):
             merged[_k] = legacy[_k]
     merged["structure"] = mode  # 结构由模式文件决定，恒等于文件名
@@ -930,10 +921,8 @@ def save_llm_providers(providers: list[dict]) -> None:
 def get_provider_options() -> dict[str, str]:
     """Return all LLM provider options (static + custom) as {value: label}."""
     options = {
-        "sensenova": "SenseNova",
         "wbk": "WBK (WorkBuddy)",
         "gemini": "Gemini（google-genai）",
-        "openai": "OpenAI Compatible (内置)",
     }
     custom = load_llm_providers()
     for p in custom:
@@ -945,17 +934,10 @@ def resolve_provider(config: dict[str, Any]) -> tuple[str, str, str, str]:
     """Resolve LLM provider config → (provider_type, base_url, api_key, model).
 
     For custom:* providers, reads from llm_providers.json.
-    Returns provider_type as 'sensenova' / 'wbk' or 'openai' (custom always → openai).
+    Returns provider_type as 'wbk' / 'gemini' or 'openai' (custom always → openai).
     """
-    provider = config.get("llm_provider", "sensenova")
-    if provider == "sensenova":
-        return (
-            "sensenova",
-            "https://token.sensenova.cn/v1",
-            config.get("sensenova_api_key", ""),
-            config.get("sensenova_model", "deepseek-v4-flash"),
-        )
-    elif provider == "wbk":
+    provider = config.get("llm_provider", "wbk")
+    if provider == "wbk":
         return (
             "wbk",
             "",
@@ -975,22 +957,18 @@ def resolve_provider(config: dict[str, Any]) -> tuple[str, str, str, str]:
         cp = next((p for p in customs if p["id"] == custom_id), None)
         if cp:
             models = cp.get("models") or []
-            model = config.get("openai_model") or ""
-            if model not in models:
-                # 配置里的 openai_model 不属于该 Provider（如内置 OpenAI 的模型）→ 用第一个
-                model = models[0] if models else ""
             return (
                 "openai",
                 cp.get("base_url", ""),
                 cp.get("api_key", ""),
-                model,
+                models[0] if models else "",
             )
-    # Default: openai
+    # 兜底：未知 Provider 回 wbk（内置通道均有稳定默认端点/模型）
     return (
-        "openai",
-        config.get("openai_base_url", "https://x666.me/v1"),
-        config.get("openai_api_key", ""),
-        config.get("openai_model", "grok-4.6"),
+        "wbk",
+        "",
+        config.get("wbk_api_key", ""),
+        config.get("wbk_model", "cn:auto"),
     )
 
 

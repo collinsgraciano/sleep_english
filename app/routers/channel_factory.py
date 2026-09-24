@@ -6,8 +6,7 @@
    前端 2s 轮询 generate_status（单槽 409 并发守卫，同 characters AI 生成模式）。
 2. 用户挑选 → POST /favorite 把候选从 drafts 移入 configs/channel_favorites.json。
 3. 收藏后的下一步：POST /generate_assets 为该频道生成 Logo（1024x1024 圆形头像构图）
-   与 Banner（YouTube 横幅，文字收在中央安全区），生图通道跟随当前配置 image_provider：
-   - sensenova: pipeline/sensenova_image.text_to_image（worker 内注入 SENSENOVA_API_KEY）
+   与 Banner（YouTube 横幅，文字收在中央安全区），生图通道走 MCP：
    - mcp: app/page_mcp.PageMcpSession 独立会话（默认 seedream 通道，无需 confirm_cost）
    产物存 configs/channel_assets/{profile_id}/，经 /favorites/{pid}/asset/{kind} 预览
    （no-cache + 前端 ?v=mtime_ns 破缓存，同缩略图缓存策略）。
@@ -672,19 +671,6 @@ def _build_banner_prompt(p: dict) -> str:
         c0=c[0], c1=c[1], c2=c[2])
 
 
-def _gen_asset_sensenova(prompt: str, dest: Path, size: str, log) -> bool:
-    """SenseNova U1.5 Lite 文生图（worker 内已注入 SENSENOVA_API_KEY）。"""
-    import sensenova_image  # pipeline/ 已在 sys.path
-    url = sensenova_image.text_to_image(prompt, size=size, output_format="png")
-    if not url:
-        log("SenseNova 未返回图片 URL")
-        return False
-    if not sensenova_image.download_image(url, str(dest)):
-        log("SenseNova 图片下载落盘失败")
-        return False
-    return True
-
-
 def _gen_asset_mcp(prompt: str, dest: Path, width: int, height: int,
                    session: PageMcpSession, log) -> bool:
     """MCP generate_image（默认 seedream 通道，无需 confirm_cost）。"""
@@ -734,25 +720,17 @@ def _generate_assets_worker(profile_id: str, kinds: list[str]) -> None:
         out_dir.mkdir(parents=True, exist_ok=True)
 
         config = load_config()
-        provider = str(config.get("image_provider", "mcp"))
-        log(f"生图通道: {provider}")
+        log("生图通道: mcp")
 
         tokens: list[str] = []
-        if provider == "mcp":
-            tokens = [t.strip() for t in str(config.get("mcp_tokens", "") or "").splitlines()
-                      if t.strip()]
-            if not tokens:
-                local = detect_local_mcp_token()
-                if local:
-                    tokens = [local]
-            if not tokens:
-                raise RuntimeError("未配置 MCP Token（模式配置 / 本地检测均为空）")
-        else:
-            key = str(config.get("sensenova_api_key", "") or "").strip()
-            if not key:
-                raise RuntimeError("image_provider=sensenova 但未配置 SenseNova API Key")
-            # 与 pipeline_service._set_env 同源同值；运行中的 pipeline 每次启动会重设，无污染
-            os.environ["SENSENOVA_API_KEY"] = key
+        tokens = [t.strip() for t in str(config.get("mcp_tokens", "") or "").splitlines()
+                  if t.strip()]
+        if not tokens:
+            local = detect_local_mcp_token()
+            if local:
+                tokens = [local]
+        if not tokens:
+            raise RuntimeError("未配置 MCP Token（模式配置 / 本地检测均为空）")
 
         sizes = {"logo": ("1024x1024", 1024, 1024),
                  "banner": ("2720x1536", 2048, 1152)}
@@ -766,13 +744,9 @@ def _generate_assets_worker(profile_id: str, kinds: list[str]) -> None:
                       else _build_banner_prompt(profile))
             log(f"开始生成 {kind} ...")
             try:
-                if provider == "mcp":
-                    _, w, h = sizes[kind]
-                    session = PageMcpSession(tokens).initialize()
-                    ok = _gen_asset_mcp(prompt, dest, w, h, session, log)
-                else:
-                    sn_size, _, _ = sizes[kind]
-                    ok = _gen_asset_sensenova(prompt, dest, sn_size, log)
+                _, w, h = sizes[kind]
+                session = PageMcpSession(tokens).initialize()
+                ok = _gen_asset_mcp(prompt, dest, w, h, session, log)
             except Exception as e:  # noqa: BLE001 — 单个素材失败不拖垮另一个
                 log(f"{kind} 生成异常: {e}")
                 ok = False

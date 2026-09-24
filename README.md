@@ -42,7 +42,7 @@ python pipeline.py --resume                                # 断点续传
 
 | 步骤 | 说明 |
 |------|------|
-| Step 0 | LLM 脚本生成（分批落盘缓存，SenseNova / OpenAI 兼容 / Gemini） |
+| Step 0 | LLM 脚本生成（分批落盘缓存，WBK / Gemini / 自定义 OpenAI 兼容） |
 | Step 1 | 跳过（sleep 主流程零 MCP） |
 | Step 2 | 本地 TTS（Kokoro / Qwen3-TTS / MOSS-TTS）+ 可选 AI 背景图 + 片头绑定 |
 | Step 3 | 跳过（无视频片段） |

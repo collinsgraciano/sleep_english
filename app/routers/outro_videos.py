@@ -372,7 +372,7 @@ def _llm_chat(base_url: str, api_key: str, model: str, p_type: str,
     """同步调 LLM 生成提示词，返回 content。独立函数便于测试 monkeypatch。
 
     与 intro_videos._llm_chat 同模式：gemini 走 SDK，其余 OpenAI 兼容
-    /chat/completions（sensenova 等附 reasoning_effort=low；wbk 按模型规格表）。
+    /chat/completions（wbk 按模型规格表）。
     """
     from llm_client import gemini_chat, llm_urlopen, wbk_thinking_for  # pipeline/ 已在 sys.path
     messages = [{"role": "system", "content": _PROMPT_SYSTEM},

@@ -1,6 +1,7 @@
 """LLM 基础设施 — sleep 脚本生成与 Web 层（脚本库/主题 AI/音色设计）共用。
 
-Provider: SenseNova (OpenAI 兼容) / OpenAI 兼容端点 / Gemini，代理与限速在 _chat 内实现。
+Provider: WBK（SSE 流式）/ Gemini / OpenAI 兼容端点（custom:* 自定义
+Provider 的后端通道），代理与限速在 _chat 内实现。
 No external project imports.
 """
 import contextlib
@@ -195,7 +196,7 @@ _RETRY_BACKOFFS = [15, 30, 60, 90, 120]
 # ---------------------------------------------------------------------------
 # LLM 代理支持（全部 Provider 通用）：llm_proxy_enabled + llm_proxy_url。
 # 支持 http(s):// 与 socks5://、socks5h://（socks 系列 DNS 一律经代理解析，
-# 防本地 DNS 污染）。仅作用于 LLM API 调用窗口；MCP 生图/视频、SenseNova 生图、
+# 防本地 DNS 污染）。仅作用于 LLM API 调用窗口；MCP 生图/视频、
 # TTS、模型下载等其他流量不受影响。
 # ---------------------------------------------------------------------------
 
@@ -320,7 +321,7 @@ _GEMINI_CHAIN_RETRIES = 1
 _GEMINI_CHAIN_RETRY_WAIT = 30
 
 # Gemini 专用退避（比共享 _RETRY_BACKOFFS 短）：代理抖动/网关错误不干等
-# 15s+；仅 gemini_chat 使用，sensenova/openai 的 urllib 路径退避不变。
+# 15s+；仅 gemini_chat 使用，wbk/openai 的 urllib 路径退避不变。
 _GEMINI_RETRY_BACKOFFS = [5, 10, 20, 40]
 
 # 降级记忆：降级后成功的模型在 24h 内作为后续调用的链起点（不再从头试
@@ -462,7 +463,7 @@ def gemini_chat(api_key: str, model: str, messages: list[dict], *,
                 attempt = 0
                 while True:
                     _check_stop()  # 用户停止即时生效（穿透 BaseException）
-                    _enforce_rate_limit()  # 共享限速槽位（与 sensenova/openai 互认）
+                    _enforce_rate_limit()  # 共享限速槽位（与 wbk/openai 互认）
                     try:
                         kwargs = {
                             "model": current_model,
@@ -628,20 +629,19 @@ class _WbkStreamError(Exception):
 
 def _chat(messages: list[dict], temperature: float = 0.8, timeout: int = 180,
           max_tokens: int = 8192, reasoning_effort: str = "low") -> str:
-    """Call LLM chat completion (SenseNova / OpenAI-compatible / Gemini), return content string.
+    """Call LLM chat completion (WBK / Gemini / OpenAI-compatible), return content string.
 
     Dispatches based on LLM_PROVIDER env var:
-    - "sensenova" (default): SenseNova DeepSeek V4 Flash / glm-5.2
-    - "openai": any OpenAI-compatible endpoint (x666.me, etc.)
+    - "wbk" (default): WorkBuddy aggregator endpoint (SSE streaming; thinking
+      per-model, max_tokens maxed)
     - "gemini": Google Gemini via google-genai SDK (Interactions API)
-    - "wbk": WorkBuddy aggregator endpoint (SSE streaming; thinking per-model,
-      max_tokens maxed)
+    - "openai": any OpenAI-compatible endpoint (custom:* providers backend)
 
     max_tokens is always raised to 16384 (reasoning models burn small budgets).
     Retries on HTTP 429 (rate limit) with exponential backoff.
     Enforces a minimum interval between calls to avoid triggering rate limits.
     """
-    provider = _env_get("LLM_PROVIDER", "sensenova")
+    provider = _env_get("LLM_PROVIDER", "wbk")
 
     # WBK 分支：max_tokens 直接拉到该模型上限（调用方传小值不生效），
     # 思考强度按模型规格表裁剪；其余退避/限速/停止探测与通用路径一致。
@@ -768,14 +768,10 @@ def _chat(messages: list[dict], temperature: float = 0.8, timeout: int = 180,
     # 全 Provider 共用的 LLM 代理（llm_proxy_enabled + llm_proxy_url）
     proxy_url = _llm_proxy_url()
 
-    if provider == "openai":
-        model = _env_get("OPENAI_MODEL", "grok-4.6")
-        api_key = _env_get("OPENAI_API_KEY", "")
-        base_url = _env_get("OPENAI_BASE_URL", "https://x666.me/v1")
-    else:
-        model = _env_get("SENSENOVA_MODEL", "deepseek-v4-flash")
-        api_key = _env_get("SENSENOVA_API_KEY", "")
-        base_url = _env_get("SENSENOVA_BASE", "https://token.sensenova.cn/v1")
+    # openai = custom:* 自定义 Provider 的后端通道（resolve_provider 已解析）
+    model = _env_get("OPENAI_MODEL", "")
+    api_key = _env_get("OPENAI_API_KEY", "")
+    base_url = _env_get("OPENAI_BASE_URL", "")
 
     # Retry on 429 (rate limit), 502/503/504 (gateway), 524 (Cloudflare timeout)
     # _mt_fallback_done: 个别 Provider 拒绝 16384 上限（HTTP 400 报文提到
@@ -791,9 +787,6 @@ def _chat(messages: list[dict], temperature: float = 0.8, timeout: int = 180,
             "temperature": temperature,
             "max_tokens": max_tokens,
         }
-        # reasoning_effort is SenseNova-specific; OpenAI-compatible APIs don't support it
-        if provider != "openai":
-            body["reasoning_effort"] = reasoning_effort
         data = json.dumps(body).encode("utf-8")
         req = urllib.request.Request(
             f"{base_url}/chat/completions",

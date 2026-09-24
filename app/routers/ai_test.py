@@ -68,12 +68,9 @@ async def api_ai_test_config_get():
     config = load_config()
     ai_cfg = _load_ai_test_config()
     return {
-        "llm_provider": config.get("llm_provider", "sensenova"),
-        "sensenova_model": config.get("sensenova_model", "deepseek-v4-flash"),
-        "openai_model": config.get("openai_model", "grok-4.6"),
+        "llm_provider": config.get("llm_provider", "wbk"),
         "gemini_model": config.get("gemini_model", "models/gemini-3.8-flash"),
         "wbk_model": config.get("wbk_model", "cn:auto"),
-        "openai_base_url": config.get("openai_base_url", ""),
         "system_prompt": ai_cfg.get("system_prompt", ""),
         "custom_providers": _public_providers(),
     }
@@ -164,7 +161,7 @@ async def api_providers_delete(provider_id: str):
 async def api_ai_test_chat(request: Request):
     """Chat completion endpoint（与管线同一套 Provider 解析）。
 
-    SenseNova / OpenAI 兼容 / 自定义：SSE token 级流式。
+    WBK / OpenAI 兼容（自定义）/ 自定义：SSE token 级流式。
     Gemini：走 google-genai SDK（无流式接口 + 自带 429 模型降级链），
     整段一次性作为单个 token 事件下发。
     """
@@ -178,7 +175,7 @@ async def api_ai_test_chat(request: Request):
     messages = [m for m in data.get("messages", [])
                 if isinstance(m, dict) and m.get("role")]
     system_prompt = data.get("system_prompt", "")
-    provider = data.get("provider", "sensenova")
+    provider = data.get("provider", "wbk")
     model = data.get("model", "")
     try:
         temperature = float(data.get("temperature", 0.8))
@@ -202,7 +199,7 @@ async def api_ai_test_chat(request: Request):
     if model:
         resolved_model = model
     model = resolved_model
-    # p_type is "sensenova" / "wbk" / "openai" (custom → openai) / "gemini"
+    # p_type is "wbk" / "openai" (custom → openai) / "gemini"
     provider = p_type
     if provider == "wbk":
         # resolve_provider 对 wbk 不回 base_url（端点常量在 llm_client）

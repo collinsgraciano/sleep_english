@@ -70,9 +70,6 @@ class ThumbnailRegenService:
         if structure not in MODES:
             structure = run_dir.parent.name if run_dir.parent.name in MODES else "sleep"
 
-        # 参考图本地路径（sleep 无角色参考图，恒为空；sensenova 分支子进程内转 base64）
-        ref_img = run_dir / "images" / "char_scene.png"
-
         # 输出文件名：无主图时补 thumbnail.jpg，否则 thumbnail_N.jpg 递增（旧图全保留）
         if not (run_dir / "thumbnail.jpg").exists():
             out_name = "thumbnail.jpg"
@@ -82,8 +79,8 @@ class ThumbnailRegenService:
                 n += 1
             out_name = f"thumbnail_{n}.jpg"
 
-        # 生图 Provider / SenseNova key / 画面风格（style_manager 在 pipeline/ 下）
-        # 配置取运行所在模式（各模式文件 image_provider/token 独立）；
+        # 画面风格（style_manager 在 pipeline/ 下）
+        # 配置取运行所在模式（各模式文件 token 独立）；
         # token 空时经 resolve_mcp_tokens 回落 legacy default.json / 本机 CLI 检测
         # （如 sleep 模式文件未存 token，此前直接空 token 启动子进程报
         # "No MCP token"）
@@ -99,9 +96,6 @@ class ThumbnailRegenService:
             "run_dir": str(run_dir),
             "structure": structure,
             "out_name": out_name,
-            "ref_img": str(ref_img) if ref_img.exists() else "",
-            "provider": str(cfg.get("image_provider", "mcp")),
-            "sensenova_api_key": str(cfg.get("sensenova_api_key", "") or "").strip(),
             "style_id": style_id,
             "style_prompt": resolve_style_prompt(style_id),
             "mcp_tokens": mcp_tokens,

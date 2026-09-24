@@ -49,7 +49,7 @@ def _chat_json(messages: list[dict], temperature: float = 0.7,
     p_type, base_url, api_key, model = resolve_provider(config)
     if not api_key:
         raise RuntimeError(
-            "未配置 LLM API Key — 请先在「参数配置」页面填写 SenseNova 或 OpenAI 兼容提供商的 API Key")
+            "未配置 LLM API Key — 请先在「参数配置」页面填写当前 Provider 的 API Key")
     min_interval = float(config.get("llm_min_interval") or 3)
     proxy_url = proxy_url_from_config(config)
 

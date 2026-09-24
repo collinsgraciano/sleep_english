@@ -354,15 +354,17 @@ def _resolve_batch_provider(provider_id: str, model: str, structure: str):
     Returns ((p_type, base_url, api_key, model), mode_cfg).
     """
     cfg = dict(load_mode_config(structure))
-    cfg["llm_provider"] = provider_id or cfg.get("llm_provider", "sensenova")
+    cfg["llm_provider"] = provider_id or cfg.get("llm_provider", "wbk")
     if model:
         p_type0, _, _, _ = resolve_provider(cfg)
-        if p_type0 == "sensenova":
-            cfg["sensenova_model"] = model
-        elif p_type0 == "gemini":
+        if p_type0 == "gemini":
             cfg["gemini_model"] = model
+        elif p_type0 == "wbk":
+            cfg["wbk_model"] = model
         else:
-            cfg["openai_model"] = model
+            # custom:* 走 openai 通道，模型用 Provider 自己的列表
+            cfg.pop("gemini_model", None)
+            cfg.pop("wbk_model", None)
     return resolve_provider(cfg), cfg
 
 
@@ -384,10 +386,7 @@ def _build_llm_override(provider_id: str, model: str) -> dict:
         "LLM_PROVIDER": p_type,
         "LLM_RETRIES": str(cfg.get("llm_retries", 10)),
     }
-    if p_type == "sensenova":
-        ov["SENSENOVA_API_KEY"] = api_key
-        ov["SENSENOVA_MODEL"] = resolved_model or "deepseek-v4-flash"
-    elif p_type == "gemini":
+    if p_type == "gemini":
         ov["GEMINI_API_KEY"] = api_key
         ov["GEMINI_MODEL"] = resolved_model or "models/gemini-3.8-flash"
     elif p_type == "wbk":
@@ -397,7 +396,7 @@ def _build_llm_override(provider_id: str, model: str) -> dict:
     else:
         ov["OPENAI_BASE_URL"] = base_url
         ov["OPENAI_API_KEY"] = api_key
-        ov["OPENAI_MODEL"] = resolved_model or "grok-4.6"
+        ov["OPENAI_MODEL"] = resolved_model
     # LLM 代理（全部 Provider 生效；线程局部 override 隔离，不影响运行中 pipeline）
     if cfg.get("llm_proxy_enabled"):
         ov["LLM_PROXY_ENABLED"] = "1"
@@ -427,6 +426,14 @@ def _sleep_use_cache() -> bool:
         return True
 
 
+def _llm_single_shot() -> bool:
+    """sleep 模式单次出稿开关：读 sleep 模式配置，默认关（走分批生成）。"""
+    try:
+        return bool(load_mode_config("sleep").get("llm_single_shot_script", False))
+    except (AttributeError, TypeError, ValueError):
+        return False
+
+
 def _generate_one(topic: str, cefr: str, structure: str, num_lines: int,
                   lessons_dir: str | None, max_attempts: int = 3):
     """Generate + validate a single sleep script with retries. Returns (script, attempts)."""
@@ -441,7 +448,8 @@ def _generate_one(topic: str, cefr: str, structure: str, num_lines: int,
             script = generate_sleep_script(
                 topic, cefr, num_pairs=max(10, num_lines // 2),
                 batch_pairs=_sleep_batch_pairs(), lessons_dir=lessons_dir,
-                use_cache=_sleep_use_cache())
+                use_cache=_sleep_use_cache(),
+                single_shot=_llm_single_shot())
             valid, msg = _validate_script(script, num_lines)
             if valid:
                 return script, attempt + 1
@@ -665,7 +673,8 @@ def _chat_json_provider(provider_id: str, model: str, structure: str,
             "temperature": temperature,
             "max_tokens": max_tokens,
         }
-        # WBK 按模型规格表决定思考档位（default=不发送）；其余 sensenova 类发 low
+        # WBK 按模型规格表决定思考档位（default=不发送）；gemini 走 SDK；
+        # openai 兼容通道不支持 reasoning_effort
         if p_type == "wbk":
             _effort = wbk_thinking_for(resolved_model, cfg.get("wbk_thinking", "default"))
             if _effort:

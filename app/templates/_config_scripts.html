@@ -3,7 +3,7 @@
 <script>
 const MODE = {{ mode | tojson }};  // 当前编辑的模式 Tab（structure 恒等于它）
 const CUSTOM_PROVIDERS = {{ custom_providers | tojson }};  // [{id, name, models[]}]
-const OPENAI_MODEL_OPTIONS = {{ params.openai_model.options | tojson }};
+const WBK_MODEL_OPTIONS = {{ params.wbk_model.options | tojson }};
 const SLEEP_COLOR_DEFAULTS = {{ sleep_color_defaults | tojson }};  // sleep_color_* 留空时的内置默认色
 
 function toggleSection(btn) {
@@ -150,31 +150,28 @@ document.addEventListener('input', function(e) {
 });
 
 function toggleLLMFields(provider) {
-    const showOpenAI = provider !== 'sensenova' && provider !== 'gemini';
+    const isCustom = provider && provider.startsWith('custom:');
     document.querySelectorAll('.config-field').forEach(f => {
         const field = f.querySelector('[data-field]');
         if (!field) return;
         const key = field.getAttribute('data-field');
-        if (key.startsWith('sensenova_')) {
-            f.style.display = provider === 'sensenova' ? '' : 'none';
-        }
         if (key.startsWith('gemini_')) {
             f.style.display = provider === 'gemini' ? '' : 'none';
         }
-        if (key.startsWith('openai_')) {
-            f.style.display = showOpenAI ? '' : 'none';
+        if (key === 'wbk_thinking') {
+            f.style.display = (provider === 'wbk' && !isCustom) ? '' : 'none';
         }
     });
     updateModelOptions(provider);
 }
 
-// 自定义 Provider 时，模型下拉切换为该 Provider 自己的模型列表
+// 自定义 Provider 时，模型下拉切换为该 Provider 自己的模型列表（wbk_model 字段复用）
 function updateModelOptions(provider) {
-    const modelSel = document.querySelector('[data-field="openai_model"]');
+    const modelSel = document.querySelector('[data-field="wbk_model"]');
     if (!modelSel) return;
     const saved = modelSel.value;
-    let models = OPENAI_MODEL_OPTIONS;
-    let label = 'OpenAI Model';
+    let models = WBK_MODEL_OPTIONS;
+    let label = 'WBK Model';
     if (provider && provider.startsWith('custom:')) {
         const pid = provider.split(':')[1];
         const cp = CUSTOM_PROVIDERS.find(p => p.id === pid);
@@ -186,14 +183,17 @@ function updateModelOptions(provider) {
     modelSel.innerHTML = '';
     models.forEach(m => {
         const opt = document.createElement('option');
-        opt.value = m;
-        opt.textContent = m;
+        const val = (typeof m === 'object') ? m.value : m;
+        const txt = (typeof m === 'object') ? (m.label || m.value) : m;
+        opt.value = val;
+        opt.textContent = txt;
         modelSel.appendChild(opt);
     });
-    if (models.includes(saved)) {
+    if (models.some(m => (typeof m === 'object' ? m.value : m) === saved)) {
         modelSel.value = saved;
     } else if (models.length) {
-        modelSel.value = models[0];
+        const first = models[0];
+        modelSel.value = (typeof first === 'object') ? first.value : first;
     }
     const labelEl = modelSel.closest('.config-field')?.querySelector('label');
     if (labelEl) labelEl.textContent = label;
@@ -261,7 +261,7 @@ function fillForm(config) {
     });
     forceStructureMode();
     // Trigger conditional displays
-    toggleLLMFields(config.llm_provider || 'sensenova');
+    toggleLLMFields(config.llm_provider || 'wbk');
     toggleTTSFields(config.tts_engine || 'kokoro');
     toggleBGMGroups(config.bgm_ducking_mode || 'sidechain');
     initSleepColorInputs();
@@ -607,7 +607,7 @@ window.addEventListener('load', function() {
     const config = {{ config | tojson }};
     applySavedGroupOrder();
     forceStructureMode();
-    toggleLLMFields(config.llm_provider || 'sensenova');
+    toggleLLMFields(config.llm_provider || 'wbk');
     toggleTTSFields(config.tts_engine || 'kokoro');
     toggleBGMGroups(config.bgm_ducking_mode || 'sidechain');
     initSleepColorInputs();

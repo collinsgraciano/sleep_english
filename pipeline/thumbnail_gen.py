@@ -18,7 +18,6 @@ if _PARENT not in sys.path:
     sys.path.insert(0, _PARENT)
 
 from media_utils import FONT_EN, FONT_ZH
-import sensenova_image
 
 # YouTube thumbnail specs
 THUMB_W = 1280
@@ -294,8 +293,7 @@ def _generate_sleep_thumbnail(script: dict, output_path: str,
                               channel_name: str = "") -> str:
     """sleep 缩略图：参考同款 AI 生成（文字内嵌 prompt），失败兜底 Pillow 卡片。
 
-    Provider 优先级与通用路径一致：sensenova（配置选择）→ MCP → Pillow 兜底；
-    sensenova 失败不回退 MCP（避免用户省积分选择时被意外消耗，同通用路径）。
+    Provider 优先级：MCP → Pillow 兜底。
     """
     # v2 模板分派：script.thumb_template 由弹窗挑选后写回（缺省 = 经典模板）
     template = str(script.get("thumb_template", "") or "").strip()
@@ -304,22 +302,7 @@ def _generate_sleep_thumbnail(script: dict, output_path: str,
     else:
         prompt = _build_sleep_thumbnail_prompt(script)
 
-    if sensenova_image.get_image_provider() == "sensenova":
-        print("  [Thumbnail] Generating sleep thumbnail via SenseNova U1.5 Lite...")
-        try:
-            url = sensenova_image.text_to_image(
-                prompt, size=sensenova_image.SIZE_MAP["landscape_16_9"],
-                output_format="jpeg")
-            if url and sensenova_image.download_image(url, output_path):
-                if os.path.getsize(output_path) // 1024 > 10:
-                    print(f"  [Thumbnail] Saved (U1.5): {output_path}")
-                    return output_path
-                print(f"  [Thumbnail] U1.5 image too small, falling back")
-            else:
-                print("  [Thumbnail] U1.5 generation returned no URL, falling back")
-        except Exception as e:
-            print(f"  [Thumbnail] U1.5 generation failed: {e}, falling back")
-    elif mcp_call_tool and mcp_parse_task_id and mcp_poll_task and mcp_download_file:
+    if mcp_call_tool and mcp_parse_task_id and mcp_poll_task and mcp_download_file:
         print("  [Thumbnail] Generating sleep thumbnail via MCP (baked-in text)...")
         try:
             gen_args = {
@@ -393,34 +376,6 @@ def generate_thumbnail(script: dict, scene_img: str, output_path: str,
     # If we have a char_scene reference, add instruction to match it
     if char_scene_url:
         prompt += "\n\nIMPORTANT: The characters' appearance, clothing, and hair MUST closely match the uploaded reference image. Use the reference image as the character design guide."
-
-    # SenseNova U1.5 Lite 路径（image_provider=sensenova）：
-    # 有 char_scene 参考图走 edits，否则纯文生图；失败直接落 Pillow fallback
-    # （不再落 MCP 生成，避免用户选择 sensenova 省积分时被意外消耗）
-    if sensenova_image.get_image_provider() == "sensenova":
-        print("  [Thumbnail] Generating thumbnail via SenseNova U1.5 Lite...")
-        try:
-            if char_scene_url:
-                url = sensenova_image.edit_image(
-                    char_scene_url, prompt,
-                    size=sensenova_image.SIZE_MAP["landscape_16_9"],
-                    output_format="jpeg")
-            else:
-                url = sensenova_image.text_to_image(
-                    prompt, size=sensenova_image.SIZE_MAP["landscape_16_9"],
-                    output_format="jpeg")
-            if url and sensenova_image.download_image(url, output_path):
-                size_kb = os.path.getsize(output_path) // 1024
-                if size_kb > 10:
-                    print(f"  [Thumbnail] Saved (U1.5): {output_path} ({size_kb}KB)")
-                    return output_path
-                print(f"  [Thumbnail] U1.5 image too small ({size_kb}KB), falling back")
-            else:
-                print("  [Thumbnail] U1.5 generation returned no URL, falling back to Pillow")
-        except Exception as e:
-            print(f"  [Thumbnail] U1.5 generation failed: {e}, falling back to Pillow")
-        print("  [Thumbnail] Using Pillow fallback (text overlay on scene image)...")
-        return _pillow_fallback(script, scene_img, output_path, structure)
 
     # Try AI generation with text baked in
     if mcp_call_tool and mcp_parse_task_id and mcp_poll_task and mcp_download_file:

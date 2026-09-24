@@ -84,7 +84,8 @@ def _validate_script(script: dict, num_lines: int) -> tuple[bool, str]:
 def _generate_script_with_retry(topic, cefr, lessons_dir, num_lines,
                                 sleep_pairs=0, sleep_batch=50,
                                 sleep_cache_dir=None, sleep_use_cache=True,
-                                max_attempts=5, channel_ctx=None) -> dict:
+                                max_attempts=5, channel_ctx=None,
+                                sleep_single_shot=False) -> dict:
     """Generate and validate sleep script, retrying on failure."""
     for attempt in range(max_attempts):
         try:
@@ -96,7 +97,8 @@ def _generate_script_with_retry(topic, cefr, lessons_dir, num_lines,
                                            lessons_dir=lessons_dir,
                                            cache_dir=sleep_cache_dir,
                                            use_cache=bool(sleep_use_cache),
-                                           channel_ctx=channel_ctx)
+                                           channel_ctx=channel_ctx,
+                                           single_shot=bool(sleep_single_shot))
             valid, msg = _validate_script(script, num_lines)
             if valid:
                 print(f"  [Script] Valid: {len(script['dialogue'])} lines")
@@ -221,9 +223,9 @@ def _step0_script(args, checkpoint: dict, topic: str, parent_dir: Path,
                   used_topics_file: str) -> tuple[dict, Path, dict]:
     """Step 0: generate (or resume) the script and create the run directory."""
     print("=" * 60)
-    _llm_provider = os.environ.get("LLM_PROVIDER", "sensenova")
+    _llm_provider = os.environ.get("LLM_PROVIDER", "wbk")
     if _llm_provider == "openai":
-        _llm_model = os.environ.get("OPENAI_MODEL", "grok-4.6")
+        _llm_model = os.environ.get("OPENAI_MODEL", "")
         print(f"Step 0: Generating script via LLM (OpenAI-compatible: {_llm_model})...")
     elif _llm_provider == "gemini":
         _llm_model = os.environ.get("GEMINI_MODEL", "models/gemini-3.8-flash")
@@ -232,8 +234,8 @@ def _step0_script(args, checkpoint: dict, topic: str, parent_dir: Path,
         _llm_model = os.environ.get("WBK_MODEL", "cn:auto")
         print(f"Step 0: Generating script via LLM (WBK: {_llm_model})...")
     else:
-        _llm_model = os.environ.get("SENSENOVA_MODEL", "deepseek-v4-flash")
-        print(f"Step 0: Generating script via LLM (SenseNova {_llm_model})...")
+        _llm_model = _llm_provider
+        print(f"Step 0: Generating script via LLM ({_llm_provider})...")
 
     work_dir = _resolve_run_dir(parent_dir, checkpoint)
 
@@ -286,7 +288,8 @@ def _step0_script(args, checkpoint: dict, topic: str, parent_dir: Path,
                 sleep_batch=int(getattr(args, "sleep_batch_pairs", 50)),
                 sleep_cache_dir=str(parent_dir / ".sleep_cache"),
                 sleep_use_cache=bool(getattr(args, "sleep_use_cache", True)),
-                channel_ctx=getattr(args, "channel_profile", None))
+                channel_ctx=getattr(args, "channel_profile", None),
+                sleep_single_shot=bool(getattr(args, "llm_single_shot_script", False)))
             yt_title = script.get("youtube_title", script.get("title", topic))
             safe_title = _safe_dirname(yt_title, topic)
             work_dir = parent_dir / safe_title
@@ -438,8 +441,9 @@ def _step2_images_tts(args, checkpoint: dict, script: dict, work_dir: Path, dirs
             if _fixed_bg:
                 print(f"  [SleepBG] WARNING: 固定背景图不存在: {_fixed_bg}"
                       " —— 回退按主题 AI 生成")
-            import sensenova_image
-            if sensenova_image.get_image_provider() != "sensenova":
+            from mcp_client import initialize
+            if not (mcp_call_tool and mcp_parse_task_id and mcp_poll_task
+                    and mcp_download_file):
                 # Step 1 对 sleep 跳过了 MCP 初始化 —— 按需初始化（照缩略图先例）
                 raw_tokens = args.mcp_tokens or ""
                 _toks = [t.strip() for t in raw_tokens.split(",") if t.strip()]
@@ -450,7 +454,7 @@ def _step2_images_tts(args, checkpoint: dict, script: dict, work_dir: Path, dirs
                         print(f"  [SleepBG] MCP 初始化失败: {e} —— 回退纯渐变")
                 else:
                     print("  [SleepBG] 未配置 MCP Token —— 跳过 AI 背景图"
-                          "（配置页填 mcp_tokens 或切 sensenova 后可用）")
+                          "（配置页填 mcp_tokens 后可用）")
             from sleep.bg_image import ensure_sleep_bg_image
             ensure_sleep_bg_image(
                 str(img_dir), scene, style_prompt,
@@ -620,19 +624,18 @@ def _step45_thumbnail(args, checkpoint: dict, script: dict, work_dir: Path,
         # Step 1 对 sleep 跳过了 MCP 初始化 —— AI 缩略图需要会话，按需初始化；
         # 无 token / 初始化失败只告警（generate_thumbnail 内部回退 Pillow 卡片，
         # 不崩掉与 MCP 无关的 sleep 运行）
-        import sensenova_image
-        if sensenova_image.get_image_provider() != "sensenova":
-            raw_tokens = args.mcp_tokens or ""
-            _toks = [t.strip() for t in raw_tokens.split(",") if t.strip()]
-            if _toks:
-                print("  [Thumbnail] sleep 缩略图 AI 生成 —— 初始化 MCP 会话...")
-                try:
-                    initialize(tokens=_toks)
-                except Exception as e:
-                    print(f"  [Thumbnail] MCP 初始化失败: {e} —— 回退 Pillow 卡片")
-            else:
-                print("  [Thumbnail] 未配置 MCP Token —— sleep 缩略图回退 Pillow 卡片"
-                      "（配置页填 mcp_tokens 或切 sensenova 后可用 AI 生成）")
+        from mcp_client import initialize
+        raw_tokens = args.mcp_tokens or ""
+        _toks = [t.strip() for t in raw_tokens.split(",") if t.strip()]
+        if _toks:
+            print("  [Thumbnail] sleep 缩略图 AI 生成 —— 初始化 MCP 会话...")
+            try:
+                initialize(tokens=_toks)
+            except Exception as e:
+                print(f"  [Thumbnail] MCP 初始化失败: {e} —— 回退 Pillow 卡片")
+        else:
+            print("  [Thumbnail] 未配置 MCP Token —— sleep 缩略图回退 Pillow 卡片"
+                  "（配置页填 mcp_tokens 后可用 AI 生成）")
         generate_thumbnail(
             script=script,
             scene_img="",
@@ -935,6 +938,7 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument("--sleep-outro-text", default="Thanks for listening. See you next time!", help="片尾结束语（TTS+卡片）")
     parser.add_argument("--sleep-batch-pairs", type=int, default=50, help="LLM 分批生成每批组数（默认 50）")
     parser.add_argument("--sleep-use-cache", action=argparse.BooleanOptionalAction, default=True, help="复用已落盘批次缓存（默认开；关闭=每次现场重新生成）")
+    parser.add_argument("--llm-single-shot-script", action=argparse.BooleanOptionalAction, default=False, help="单次 LLM 请求生成全部对话组+元数据（默认关=按 --sleep-batch-pairs 分批；输出不足自动补齐至多 2 次）")
     parser.add_argument("--sleep-show-leaves", action=argparse.BooleanOptionalAction, default=True, help="卡片叶片装饰（默认开）")
     parser.add_argument("--sleep-handwrite-font", default="", help="手写体字体文件路径（缺省按文字内容智能回退：英文手写体→中文/emoji 自动切含字形字体）")
     parser.add_argument("--sleep-handwrite-weight", type=int, default=0, help="频道名字体描边粗细 0-4（默认 0=原样；小字号高档位自动封顶）")
@@ -978,15 +982,11 @@ def _parse_args() -> argparse.Namespace:
                         help="Logo 自定义纵向位置 %%（0=贴上缘，100=贴下缘；仅 --sleep-logo-position custom 生效）")
     # --- LLM ---
     parser.add_argument("--mcp-tokens", default=None, help="TJGenerators MCP OAuth tokens（仅 AI 缩略图/背景图消费，逗号分隔多 token 轮换）")
-    parser.add_argument("--image-provider", default="mcp", choices=["mcp", "sensenova"],
-                        help="Image generation provider for bg image/thumbnail: 'mcp' (default) or 'sensenova' (U1.5 Lite)")
-    parser.add_argument("--api-key", default=None, help="SenseNova API key (or set SENSENOVA_API_KEY env var)")
-    parser.add_argument("--model", default=None, help="SenseNova model name (default deepseek-v4-flash)")
-    parser.add_argument("--llm-provider", default="sensenova", choices=["sensenova", "openai", "gemini", "wbk"],
-                        help="LLM provider: 'sensenova' (default), 'openai' (OpenAI-compatible endpoint), 'gemini' (google-genai SDK) or 'wbk' (WorkBuddy aggregator)")
-    parser.add_argument("--openai-base-url", default=None, help="OpenAI-compatible API base URL (default: https://x666.me/v1)")
+    parser.add_argument("--llm-provider", default="wbk", choices=["openai", "gemini", "wbk"],
+                        help="LLM provider: 'wbk' (default, WorkBuddy aggregator), 'openai' (OpenAI-compatible endpoint, custom providers backend) or 'gemini' (google-genai SDK)")
+    parser.add_argument("--openai-base-url", default=None, help="OpenAI-compatible API base URL (custom providers)")
     parser.add_argument("--openai-api-key", default=None, help="OpenAI-compatible API key (or set OPENAI_API_KEY env var)")
-    parser.add_argument("--openai-model", default=None, help="OpenAI-compatible model name (default: grok-4.6)")
+    parser.add_argument("--openai-model", default=None, help="OpenAI-compatible model name (custom providers)")
     parser.add_argument("--gemini-api-key", default=None, help="Gemini API key (or set GEMINI_API_KEY env var)")
     parser.add_argument("--gemini-model", default=None, help="Gemini model name (default: models/gemini-3.8-flash)")
     parser.add_argument("--wbk-api-key", default=None, help="WBK (WorkBuddy) API key (or set WBK_API_KEY env var)")
@@ -1103,10 +1103,6 @@ def main():
     if args.moss_tts_greedy:
         os.environ["MOSS_TTS_GREEDY"] = "1"
 
-    # SenseNova key：LLM(sensenova) 与 生图 provider=sensenova 共用；提前注入
-    if args.api_key:
-        os.environ["SENSENOVA_API_KEY"] = args.api_key
-
     if args.llm_provider == "openai":
         os.environ["LLM_PROVIDER"] = "openai"
         if args.openai_base_url:
@@ -1115,10 +1111,6 @@ def main():
             os.environ["OPENAI_API_KEY"] = args.openai_api_key
         if args.openai_model:
             os.environ["OPENAI_MODEL"] = args.openai_model
-        elif args.model:
-            os.environ["OPENAI_MODEL"] = args.model
-        os.environ.setdefault("OPENAI_BASE_URL", "https://x666.me/v1")
-        os.environ.setdefault("OPENAI_MODEL", "grok-4.6")
         if not os.environ.get("OPENAI_API_KEY"):
             print("ERROR: OPENAI_API_KEY not set. Pass --openai-api-key or set env var.")
             sys.exit(1)
@@ -1146,24 +1138,14 @@ def main():
             print("ERROR: WBK_API_KEY not set. Pass --wbk-api-key or set env var.")
             sys.exit(1)
     else:
-        os.environ["LLM_PROVIDER"] = "sensenova"
-        if args.model:
-            os.environ["SENSENOVA_MODEL"] = args.model
-        if not os.environ.get("SENSENOVA_API_KEY"):
-            print("ERROR: SENSENOVA_API_KEY not set. Pass --api-key or set env var.")
-            sys.exit(1)
+        print(f"ERROR: unknown LLM provider: {args.llm_provider}")
+        sys.exit(1)
 
     # LLM 代理（全部 Provider 生效；--llm-proxy-url 传入即启用；仅 LLM 流量，
     # 不影响 MCP/生图/TTS——代理窗口在 llm_client 内按调用实现）
     if args.llm_proxy_url:
         os.environ["LLM_PROXY_ENABLED"] = "1"
         os.environ["LLM_PROXY_URL"] = args.llm_proxy_url
-
-    # 生图 Provider：mcp（默认）或 sensenova（U1.5 Lite，读 IMAGE_PROVIDER env）
-    os.environ["IMAGE_PROVIDER"] = args.image_provider
-    if args.image_provider == "sensenova" and not os.environ.get("SENSENOVA_API_KEY"):
-        print("ERROR: image_provider=sensenova requires SENSENOVA_API_KEY.")
-        sys.exit(1)
 
     parent_dir = Path(args.output).resolve()
     parent_dir.mkdir(parents=True, exist_ok=True)

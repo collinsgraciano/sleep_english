@@ -249,7 +249,7 @@
                 <h3 class="text-sm font-semibold text-white">缩略图生成 — <span id="tt-run-name" class="text-indigo-300"></span></h3>
                 <button onclick="closeThumbTextModal()" class="text-slate-400 hover:text-white">✕</button>
             </div>
-            <p class="text-xs text-slate-400 mb-2">文案会直接烧进 AI 生成的画面。可直接修改文案，或点「AI 生成候选」让大模型按模板出几组供挑选；生成约 1 分钟，按当前生图 Provider 计费（MCP 积分 / SenseNova），旧缩略图全部保留。</p>
+            <p class="text-xs text-slate-400 mb-2">文案会直接烧进 AI 生成的画面。可直接修改文案，或点「AI 生成候选」让大模型按模板出几组供挑选；生成约 1 分钟，按当前生图 Provider（MCP）计费，旧缩略图全部保留。</p>
             <div class="flex flex-wrap items-center gap-1.5 mb-2">
                 <span class="text-xs text-slate-400 mr-1">模板</span>
                 <button id="tt-chip-legacy" onclick="ttSetTemplate('')"
@@ -1039,7 +1039,7 @@ function startThumbRegenFromModal() {
             thumb_hook: document.getElementById('tt-hook').value.trim(),
         };
     }
-    if (!confirm('用当前文案为该运行生成一张缩略图？\n按当前生图 Provider 计费（MCP 积分 / SenseNova），约 1 分钟；旧缩略图全部保留。\n自定义文案将写回 script.json（后续生成沿用）。')) return;
+    if (!confirm('用当前文案为该运行生成一张缩略图？\n按当前生图 Provider（MCP）计费，约 1 分钟；旧缩略图全部保留。\n自定义文案将写回 script.json（后续生成沿用）。')) return;
     _thumbRegenBusy = true;
     _thumbRegenRun = _ttRun;
     _thumbRegenMode = _ttMode;

@@ -309,22 +309,13 @@ class PipelineService:
         os.environ["VISUAL_STYLE_ID"] = style_id
         os.environ["VISUAL_STYLE_PROMPT"] = _rsp(style_id)
 
-        # 生图 Provider：mcp（默认，TJGenerators 积分）或 sensenova（U1.5 Lite API 计费）
+        # 生图 Provider：mcp（TJGenerators 积分）
         os.environ["IMAGE_PROVIDER"] = str(config.get("image_provider", "mcp"))
 
-        # SenseNova key：除 LLM 外，生图 Provider=sensenova 也依赖（LLM 可走自定义 OpenAI 通道，二者解耦）
-        if str(config.get("sensenova_api_key") or "").strip():
-            os.environ["SENSENOVA_API_KEY"] = str(config["sensenova_api_key"]).strip()
-
-        provider = config.get("llm_provider", "sensenova")
+        provider = config.get("llm_provider", "wbk")
         p_type, p_base_url, p_api_key, p_model = resolve_provider(config)
         os.environ["LLM_PROVIDER"] = p_type
-        if p_type == "sensenova":
-            if p_api_key:
-                os.environ["SENSENOVA_API_KEY"] = p_api_key
-            if p_model:
-                os.environ["SENSENOVA_MODEL"] = p_model
-        elif p_type == "wbk":
+        if p_type == "wbk":
             if p_api_key:
                 os.environ["WBK_API_KEY"] = p_api_key
             os.environ["WBK_MODEL"] = str(p_model or "cn:auto")
@@ -435,7 +426,7 @@ class PipelineService:
                 sleep_xfade_sec = 0.5
 
         # mcp_tokens：模式配置为空时回落 legacy default.json / 本机 CLI 检测
-        # （如 sleep 模式文件 seed 时未带 token；同 sensenova/openai key 空值回落先例）
+        # （如 sleep 模式文件 seed 时未带 token）
         from .config_manager import resolve_mcp_tokens
         tokens_raw = resolve_mcp_tokens(mode_name)
         mcp_tokens = ",".join(
@@ -451,11 +442,9 @@ class PipelineService:
             mode_name=mode_name,
             animation=animation,
             visual_style=str(config.get("visual_style", "pixar3d")),
-            llm_provider=config.get("llm_provider", "sensenova"),
-            sensenova_api_key=p_api_key if p_type == "sensenova" else "",
-            sensenova_model=p_model if p_type == "sensenova" else "deepseek-v4-flash",
-            model=p_model if p_type == "sensenova" else "",
-            api_key=p_api_key if p_type == "sensenova" else "",
+            llm_provider=config.get("llm_provider", "wbk"),
+            model=p_model if p_type == "openai" else "",
+            api_key=p_api_key if p_type == "openai" else "",
             openai_base_url=p_base_url if p_type == "openai" else "",
             openai_api_key=p_api_key if p_type == "openai" else "",
             openai_model=p_model if p_type == "openai" else "grok-4.6",
@@ -485,6 +474,7 @@ class PipelineService:
             sleep_pair_gap=float(config.get("sleep_pair_gap", 3.0) or 3.0),
             sleep_batch_pairs=_cfg_int(config, "sleep_batch_pairs", 50, 10, 80),
             sleep_use_cache=bool(config.get("sleep_use_cache", True)),
+            llm_single_shot_script=bool(config.get("llm_single_shot_script", False)),
             sleep_channel_name=str(config.get("sleep_channel_name", "") or ""),
             sleep_outro_text=str(config.get("sleep_outro_text", "") or ""),
             channel_id=str(config.get("channel_id", "") or ""),
