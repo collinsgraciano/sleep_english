@@ -89,7 +89,7 @@ def _validate_pairs(pairs: list[dict], expected: int, max_words: int) -> tuple[b
 
 def _batch_prompt(topic: str, cefr: str, count: int, start_idx: int,
                   total_pairs: int, max_words: int, with_meta: bool,
-                  channel_ctx=None) -> str:
+                  channel_ctx=None, single_shot: bool = False) -> str:
     cefr_guide = {
         "A1": "very basic everyday words, present tense only",
         "A2": "common daily phrases, present/past tense",
@@ -127,12 +127,22 @@ def _batch_prompt(topic: str, cefr: str, count: int, start_idx: int,
 - "thumb_badge": YouTube thumbnail badge slogan, Traditional Chinese, AT MOST 6 characters, high-CTR hook (e.g. "不用背！" / "聽著聽著就會說").
 - "thumb_main": YouTube thumbnail MAIN title, Traditional Chinese, 2-5 characters, the series brand word matching this topic (e.g. "睡覺聽" / "聽就會").
 - "thumb_hook": YouTube thumbnail bottom banner line, Traditional Chinese, AT MOST 14 characters (e.g. "零基礎自然開口說" / "聽久自然開口說").'''
+    if single_shot:
+        batch_line = (
+            f"Output ALL {total_pairs} pairs in ONE single response — never "
+            f"stop early, never summarize, never omit. If you run out of "
+            f"ideas, invent NEW distinct mini-situations; the count MUST be "
+            f"exactly {total_pairs}.")
+    else:
+        batch_line = (f"This is batch {start_idx // count + 1}: generate "
+                      f"pairs {start_idx + 1} to {start_idx + count} "
+                      f"(of {total_pairs} total).")
     return f"""You are an expert ESL teacher creating a "listen while you sleep" English phrase-drill video for overseas Chinese learners (zero-basics friendly, background/ASMR style).
 
 Topic: {topic}
 CEFR Level: {cefr} ({cefr_guide})
 {_channel_brand_block(channel_ctx)}
-This is batch {start_idx // count + 1}: generate pairs {start_idx + 1} to {start_idx + count} (of {total_pairs} total).
+{batch_line}
 
 Each pair = a short A sentence (opening/trigger) + a short B sentence (natural reply/continuation) about the topic. These are NOT a connected story — each pair stands alone (different mini-situations welcome: doing the task, asking about it, small talk about it).
 
@@ -185,9 +195,12 @@ def _meta_from_batch(batch: dict, topic: str, cefr: str, num_pairs: int) -> None
 
 
 def _generate_batch(topic, cefr, count, start_idx, total_pairs, max_words,
-                    with_meta, temperature, channel_ctx=None):
+                    with_meta, temperature, channel_ctx=None,
+                    single_shot=False, max_tokens=16384, timeout=180,
+                    allow_short=False):
     prompt = _batch_prompt(topic, cefr, count, start_idx, total_pairs,
-                           max_words, with_meta, channel_ctx=channel_ctx)
+                           max_words, with_meta, channel_ctx=channel_ctx,
+                           single_shot=single_shot)
     last_err = None
     for attempt in range(3):
         try:
@@ -196,14 +209,29 @@ def _generate_batch(topic, cefr, count, start_idx, total_pairs, max_words,
                   "content": "You are an expert ESL teacher creating sleep-listening English phrase drills. Output valid JSON only — no markdown, no explanations."},
                  {"role": "user", "content": prompt}],
                 temperature=round(max(0.3, temperature - 0.1 * attempt), 2),
-                max_tokens=16384)
+                max_tokens=max_tokens, timeout=timeout)
             batch = _extract_json(content)
             pairs = batch.get("pairs")
             if not isinstance(pairs, list):
                 raise ValueError("JSON has no 'pairs' array")
-            ok, msg, soft = _validate_pairs(pairs, count, max_words)
-            if not ok:
-                raise ValueError(f"batch invalid: {msg}")
+            if not allow_short and len(pairs) != count:
+                # 允许短输出的单次出稿通道除外：数量校验交由调用方补齐循环
+                raise ValueError(f"expected {count} pairs, got {len(pairs)}")
+            if not allow_short and not pairs:
+                raise ValueError("empty pairs array")
+            for i, p in enumerate(pairs):
+                for side in ("a", "b"):
+                    obj = p.get(side)
+                    if not isinstance(obj, dict):
+                        raise ValueError(f"pair {i+1} '{side}' missing")
+                    if not ((obj.get("text") or "").strip()
+                            and (obj.get("phonetic") or "").strip()
+                            and (obj.get("zh") or "").strip()):
+                        raise ValueError(
+                            f"pair {i+1} '{side}' has empty text/phonetic/zh")
+            soft = sum(1 for p in pairs for side in ("a", "b")
+                       if len(((p.get(side) or {}).get("text") or "").split())
+                       > max_words)
             if soft:
                 print(f"  [Sleep] WARNING: {soft} sentence(s) exceed {max_words} words — accepted (cards auto-shrink text).")
             return batch, pairs
@@ -213,11 +241,57 @@ def _generate_batch(topic, cefr, count, start_idx, total_pairs, max_words,
     raise RuntimeError(f"Sleep batch generation failed after 3 retries: {last_err}")
 
 
+def _generate_single_shot(topic, cefr, num_pairs, max_words, cdir, ck,
+                          use_cache, channel_ctx):
+    """single_shot 通道：单次 LLM 请求生成全部组数 + 元数据。
+
+    - 缓存 sleep_{ck}_single.json（与分批文件命名不冲突），命中即完整出稿；
+    - 模型输出不足（截断/漏组）时按剩余区间追加补齐，至多 2 轮；
+    - 合并后重写单个缓存文件（use_cache=False 也落盘，同分批路径惯例），
+      最终组数恒等于 num_pairs，否则抛错交由外层整体重试。
+    """
+    batch_file = cdir / f"sleep_{ck}_single.json"
+    if use_cache and batch_file.exists():
+        print(f"  [Sleep] Single-shot cache hit: {batch_file.name}")
+        data = json.loads(batch_file.read_text(encoding="utf-8"))
+        batch, pairs = data.get("batch", {}), data.get("pairs", [])
+    else:
+        if not use_cache:
+            print("  [Sleep] Batch cache disabled — regenerating fresh content")
+        batch, pairs = _generate_batch(
+            topic, cefr, num_pairs, 0, num_pairs, max_words, with_meta=True,
+            temperature=0.85, channel_ctx=channel_ctx, single_shot=True,
+            max_tokens=65536, timeout=600, allow_short=True)
+    top_ups = 0
+    while len(pairs) < num_pairs and top_ups < 2:
+        top_ups += 1
+        start = len(pairs)
+        print(f"  [Sleep] Single-shot short output: {start}/{num_pairs} "
+              f"pairs — topping up ({top_ups}/2)")
+        _, more = _generate_batch(
+            topic, cefr, num_pairs - start, start, num_pairs, max_words,
+            with_meta=False, temperature=0.85, channel_ctx=channel_ctx,
+            max_tokens=65536, timeout=600, allow_short=True)
+        pairs.extend(more)
+    if len(pairs) != num_pairs:
+        raise RuntimeError(
+            f"Single-shot generation incomplete: {len(pairs)}/{num_pairs} "
+            f"pairs after top-ups")
+    if not (use_cache and batch_file.exists()):
+        batch_file.write_text(json.dumps({"batch": batch, "pairs": pairs},
+                                         ensure_ascii=False, indent=1),
+                              encoding="utf-8")
+    meta = _meta_from_batch(dict(batch), topic, cefr, num_pairs)
+    print(f"  [Sleep] Single-shot complete: {len(pairs)}/{num_pairs} pairs")
+    return meta, pairs
+
+
 def generate_sleep_script(topic: str, cefr: str = "A2", num_pairs: int = 200,
                           batch_pairs: int = 50, lessons_dir: str = None,
                           cache_dir: str = None,
                           use_cache: bool = True,
-                          channel_ctx: dict | None = None) -> dict:
+                          channel_ctx: dict | None = None,
+                          single_shot: bool = False) -> dict:
     """分批生成 sleep 脚本，返回 listening 兼容 script dict。
 
     批间落盘 cache_dir（默认 lessons_dir 或系统临时目录）——中断后重跑同
@@ -225,6 +299,8 @@ def generate_sleep_script(topic: str, cefr: str = "A2", num_pairs: int = 200,
     每批现场重新生成（落盘写入保留，便于之后重新开启复用）。
     channel_ctx（频道品牌上下文，pipeline_service._channel_ctx 构建）：
     注入 prompt 让选题角度/标题/简介贴合频道定位；参与缓存键防跨频道串稿。
+    single_shot=True 跳过分批：单次请求直接生成全部组数+元数据（适合大
+    输出上限模型；输出不足自动补齐 ≤2 轮），缓存走 sleep_{ck}_single.json。
     """
     num_pairs = max(10, min(400, int(num_pairs)))
     batch_pairs = max(10, min(80, int(batch_pairs)))
@@ -237,29 +313,34 @@ def generate_sleep_script(topic: str, cefr: str = "A2", num_pairs: int = 200,
 
     all_pairs: list[dict] = []
     meta: dict = {}
-    start = 0
-    while start < num_pairs:
-        count = min(batch_pairs, num_pairs - start)
-        batch_file = cdir / f"sleep_{ck}_{start:04d}.json"
-        if use_cache and batch_file.exists():
-            print(f"  [Sleep] Batch cache hit: {batch_file.name}")
-            data = json.loads(batch_file.read_text(encoding="utf-8"))
-            batch, pairs = data.get("batch", {}), data.get("pairs", [])
-        else:
-            if not use_cache and start == 0:
-                print("  [Sleep] Batch cache disabled — regenerating fresh content")
-            batch, pairs = _generate_batch(topic, cefr, count, start, num_pairs,
-                                           max_words, with_meta=(start == 0),
-                                           temperature=0.85,
-                                           channel_ctx=channel_ctx)
-            batch_file.write_text(json.dumps({"batch": batch, "pairs": pairs},
-                                             ensure_ascii=False, indent=1),
-                                  encoding="utf-8")
-        if start == 0:
-            meta = _meta_from_batch(dict(batch), topic, cefr, num_pairs)
-        all_pairs.extend(pairs)
-        start += count
-        print(f"  [Sleep] Pairs {start}/{num_pairs} done")
+    if single_shot:
+        meta, all_pairs = _generate_single_shot(
+            topic, cefr, num_pairs, max_words, cdir, ck, use_cache,
+            channel_ctx)
+    else:
+        start = 0
+        while start < num_pairs:
+            count = min(batch_pairs, num_pairs - start)
+            batch_file = cdir / f"sleep_{ck}_{start:04d}.json"
+            if use_cache and batch_file.exists():
+                print(f"  [Sleep] Batch cache hit: {batch_file.name}")
+                data = json.loads(batch_file.read_text(encoding="utf-8"))
+                batch, pairs = data.get("batch", {}), data.get("pairs", [])
+            else:
+                if not use_cache and start == 0:
+                    print("  [Sleep] Batch cache disabled — regenerating fresh content")
+                batch, pairs = _generate_batch(topic, cefr, count, start, num_pairs,
+                                               max_words, with_meta=(start == 0),
+                                               temperature=0.85,
+                                               channel_ctx=channel_ctx)
+                batch_file.write_text(json.dumps({"batch": batch, "pairs": pairs},
+                                                 ensure_ascii=False, indent=1),
+                                      encoding="utf-8")
+            if start == 0:
+                meta = _meta_from_batch(dict(batch), topic, cefr, num_pairs)
+            all_pairs.extend(pairs)
+            start += count
+            print(f"  [Sleep] Pairs {start}/{num_pairs} done")
 
     script = dict(meta)
     script["lesson_type"] = "listening"
