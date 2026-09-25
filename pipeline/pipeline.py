@@ -442,19 +442,18 @@ def _step2_images_tts(args, checkpoint: dict, script: dict, work_dir: Path, dirs
                 print(f"  [SleepBG] WARNING: 固定背景图不存在: {_fixed_bg}"
                       " —— 回退按主题 AI 生成")
             from mcp_client import initialize
-            if not (mcp_call_tool and mcp_parse_task_id and mcp_poll_task
-                    and mcp_download_file):
-                # Step 1 对 sleep 跳过了 MCP 初始化 —— 按需初始化（照缩略图先例）
-                raw_tokens = args.mcp_tokens or ""
-                _toks = [t.strip() for t in raw_tokens.split(",") if t.strip()]
-                if _toks:
-                    try:
-                        initialize(tokens=_toks)
-                    except Exception as e:
-                        print(f"  [SleepBG] MCP 初始化失败: {e} —— 回退纯渐变")
-                else:
-                    print("  [SleepBG] 未配置 MCP Token —— 跳过 AI 背景图"
-                          "（配置页填 mcp_tokens 后可用）")
+            # Step 1 对 sleep 跳过了 MCP 初始化 —— 按需初始化（照缩略图先例）；
+            # 生成函数已模块级导入恒可用，只需确认 Token 已配置
+            raw_tokens = args.mcp_tokens or ""
+            _toks = [t.strip() for t in raw_tokens.split(",") if t.strip()]
+            if _toks:
+                try:
+                    initialize(tokens=_toks)
+                except Exception as e:
+                    print(f"  [SleepBG] MCP 初始化失败: {e} —— 回退纯渐变")
+            else:
+                print("  [SleepBG] 未配置 MCP Token —— 跳过 AI 背景图"
+                      "（配置页填 mcp_tokens 后可用）")
             from sleep.bg_image import ensure_sleep_bg_image
             ensure_sleep_bg_image(
                 str(img_dir), scene, style_prompt,
