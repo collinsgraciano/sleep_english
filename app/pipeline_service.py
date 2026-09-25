@@ -540,7 +540,7 @@ class PipelineService:
             subtitle_font_size=int(config.get("subtitle_font_size", 60)),
             subtitle_style=str(config.get("subtitle_style", "") or ""),
             no_zh_subtitle=bool(config.get("no_zh_subtitle", False)),
-            no_4k=False,  # 4K 恒定生成；跳过 4K 仅保留命令行 --no-4k 供快速测试
+            no_4k=bool(config.get("no_4k", False)),  # Web 开关：跳过 Step6 4K 产出（等价 CLI --no-4k）
             no_thumbnail=bool(config.get("no_thumbnail", False)),
             quick_test=bool(config.get("quick_test", False)),
             output_dir=config.get("output_dir", "./output"),
