@@ -146,6 +146,24 @@
             <p id="ai-script-info" class="text-xs text-emerald-300 mt-1 hidden"></p>
         </div>
 
+        <!-- ai_scripts_hot 预生成脚本 source（热门 101-200） -->
+        <div class="mb-4">
+            <div class="flex items-center justify-between mb-1">
+                <label class="block text-xs text-slate-400">预生成脚本 (ai_scripts_hot · 热门)
+                    <span class="text-slate-600">— 选择 ai_scripts_hot/ 目录里预生成好的热门脚本，跳过 Step 0 LLM 生成</span>
+                </label>
+            </div>
+            <div class="flex gap-2">
+                <select id="ai-script-hot-select" onchange="onAiScriptHotChange()"
+                    class="flex-1 bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white">
+                    <option value="">— 不使用（AI 新生成）—</option>
+                </select>
+                <button type="button" onclick="loadAiScriptsHot()" title="刷新热门预生成脚本"
+                    class="px-3 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg text-sm text-slate-300">🔄</button>
+            </div>
+            <p id="ai-script-hot-info" class="text-xs text-emerald-300 mt-1 hidden"></p>
+        </div>
+
         <!-- Action buttons -->
         <div class="flex flex-wrap gap-3 items-center">
             <button id="btn-start" onclick="startPipeline(false)"
@@ -602,9 +620,11 @@ function switchMode(m) {
     // 脚本库按模式过滤，切换后重新加载并清空选择
     _selectedScript = null;
     loadScriptLibrary();
-    // 预生成脚本（ai_scripts）仅 sleep 模式存在，一并重置
+    // 预生成脚本（ai_scripts / ai_scripts_hot）仅 sleep 模式存在，一并重置
     _selectedAiScript = null;
+    _selectedAiScriptHot = null;
     loadAiScripts();
+    loadAiScriptsHot();
     // 同步服务端激活模式（主题管理/运行历史等页面跟随）
     fetch('/api/config/active', {
         method: 'POST',
@@ -639,6 +659,25 @@ function genderSymbol(g) {
     if (g === 'female') return '♀';
     if (g === 'male') return '♂';
     return '';
+}
+
+// 脚本库 / ai_scripts / ai_scripts_hot 三者互斥：选中其一，清空其余两个
+function clearScriptSources(keep) {
+    if (keep !== 'lib') {
+        _selectedScript = null;
+        document.getElementById('script-lib-select').value = '';
+        document.getElementById('script-lib-info').classList.add('hidden');
+    }
+    if (keep !== 'ai') {
+        _selectedAiScript = null;
+        document.getElementById('ai-script-select').value = '';
+        document.getElementById('ai-script-info').classList.add('hidden');
+    }
+    if (keep !== 'hot') {
+        _selectedAiScriptHot = null;
+        document.getElementById('ai-script-hot-select').value = '';
+        document.getElementById('ai-script-hot-info').classList.add('hidden');
+    }
 }
 
 // 频道维度由顶部「上下文条」（base.html）统一提供：切换后服务端渲染即
@@ -676,10 +715,8 @@ function onScriptLibChange() {
     const cefrSel = document.getElementById('quick-cefr');
     _selectedScript = _scriptLibScripts.find(s => s.id === sel.value) || null;
     if (_selectedScript) {
-        // 与预生成脚本互斥
-        _selectedAiScript = null;
-        document.getElementById('ai-script-select').value = '';
-        document.getElementById('ai-script-info').classList.add('hidden');
+        // 与预生成脚本（ai_scripts / ai_scripts_hot）互斥
+        clearScriptSources('lib');
         topicInput.value = _selectedScript.topic;
         topicInput.readOnly = true;
         if (_selectedScript.cefr) cefrSel.value = _selectedScript.cefr;
@@ -698,28 +735,48 @@ function onScriptLibChange() {
     }
 }
 
-// --- ai_scripts 预生成脚本（直接使用，不入库） ---
+// --- ai_scripts / ai_scripts_hot 预生成脚本（直接使用，不入库） ---
 let _aiScripts = [];
 let _selectedAiScript = null;
+let _aiScriptsHot = [];
+let _selectedAiScriptHot = null;
+
+// 把某个来源的预生成脚本填进下拉，返回当前选中项（未选中返回 null）
+function fillAiSelect(selId, list, selected) {
+    const sel = document.getElementById(selId);
+    const prev = selected ? selected.folder : sel.value;
+    sel.innerHTML = '<option value="">— 不使用（AI 新生成）—</option>';
+    list.forEach(p => {
+        const opt = document.createElement('option');
+        opt.value = p.folder;
+        opt.textContent = `${p.en}（${p.zh}）· ${p.lines}行 · ${p.category}` +
+            (p.in_library ? ' · 已入库' : '');
+        sel.appendChild(opt);
+    });
+    if (prev && list.some(p => p.folder === prev)) {
+        sel.value = prev;
+        return list.find(p => p.folder === prev) || null;
+    }
+    return null;
+}
 
 function loadAiScripts() {
-    return fetch('/api/scripts/ai_presets')
+    return fetch('/api/scripts/ai_presets?source=main')
         .then(r => r.json())
         .then(data => {
             _aiScripts = data.presets || [];
-            const sel = document.getElementById('ai-script-select');
-            const prev = _selectedAiScript ? _selectedAiScript.folder : sel.value;
-            sel.innerHTML = '<option value="">— 不使用（AI 新生成）—</option>';
-            _aiScripts.forEach(p => {
-                const opt = document.createElement('option');
-                opt.value = p.folder;
-                opt.textContent = `${p.en}（${p.zh}）· ${p.lines}行 · ${p.category}` +
-                    (p.in_library ? ' · 已入库' : '');
-                sel.appendChild(opt);
-            });
-            if (prev && _aiScripts.some(p => p.folder === prev)) sel.value = prev;
-            else _selectedAiScript = null;
+            _selectedAiScript = fillAiSelect('ai-script-select', _aiScripts, _selectedAiScript);
             onAiScriptChange();
+        });
+}
+
+function loadAiScriptsHot() {
+    return fetch('/api/scripts/ai_presets?source=hot')
+        .then(r => r.json())
+        .then(data => {
+            _aiScriptsHot = data.presets || [];
+            _selectedAiScriptHot = fillAiSelect('ai-script-hot-select', _aiScriptsHot, _selectedAiScriptHot);
+            onAiScriptHotChange();
         });
 }
 
@@ -730,14 +787,35 @@ function onAiScriptChange() {
     const cefrSel = document.getElementById('quick-cefr');
     _selectedAiScript = _aiScripts.find(p => p.folder === sel.value) || null;
     if (_selectedAiScript) {
-        // 与脚本库互斥
-        _selectedScript = null;
-        document.getElementById('script-lib-select').value = '';
-        document.getElementById('script-lib-info').classList.add('hidden');
+        // 与脚本库、ai_scripts_hot 互斥
+        clearScriptSources('ai');
         topicInput.value = _selectedAiScript.en;
         topicInput.readOnly = true;
         cefrSel.disabled = true;
         info.textContent = `将使用预生成脚本「${_selectedAiScript.en}」· ${_selectedAiScript.lines} 行 · ${_selectedAiScript.category}`;
+        info.classList.remove('hidden');
+    } else {
+        topicInput.readOnly = false;
+        cefrSel.disabled = false;
+        topicInput.value = MODE_CONFIGS[ACTIVE_MODE].topic || '';
+        cefrSel.value = MODE_CONFIGS[ACTIVE_MODE].cefr || 'A2';
+        info.classList.add('hidden');
+    }
+}
+
+function onAiScriptHotChange() {
+    const sel = document.getElementById('ai-script-hot-select');
+    const info = document.getElementById('ai-script-hot-info');
+    const topicInput = document.getElementById('quick-topic');
+    const cefrSel = document.getElementById('quick-cefr');
+    _selectedAiScriptHot = _aiScriptsHot.find(p => p.folder === sel.value) || null;
+    if (_selectedAiScriptHot) {
+        // 与脚本库、ai_scripts 互斥
+        clearScriptSources('hot');
+        topicInput.value = _selectedAiScriptHot.en;
+        topicInput.readOnly = true;
+        cefrSel.disabled = true;
+        info.textContent = `将使用热门预生成脚本「${_selectedAiScriptHot.en}」· ${_selectedAiScriptHot.lines} 行 · ${_selectedAiScriptHot.category}`;
         info.classList.remove('hidden');
     } else {
         topicInput.readOnly = false;
@@ -754,6 +832,7 @@ window.addEventListener('load', function() {
     try { toggleQuickConfig(localStorage.getItem('quickConfigExpanded') === '1'); } catch (e) {}
     loadScriptLibrary();
     loadAiScripts();
+    loadAiScriptsHot();
     // 批量队列：立即拉取一次并常驻轮询（队列运行中自动接上日志流）
     bqFetchStatus();
     setInterval(bqFetchStatus, 2000);
@@ -838,7 +917,8 @@ function _doStartPipeline(resume) {
         cefr: document.getElementById('quick-cefr').value,
         structure: ACTIVE_MODE,
         script_id: _selectedScript ? _selectedScript.id : '',
-        ai_script: _selectedAiScript ? _selectedAiScript.folder : '',
+        ai_script: _selectedAiScript ? _selectedAiScript.folder :
+            (_selectedAiScriptHot ? _selectedAiScriptHot.folder : ''),
     };
     // Merge with the active mode's full config
     const config = {...MODE_CONFIGS[ACTIVE_MODE], ...overrides};

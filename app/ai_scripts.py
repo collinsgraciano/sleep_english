@@ -1,6 +1,6 @@
-"""ai_scripts/ 预生成脚本库 — 读取预先生成好的 sleep 脚本并导入脚本库。
+"""预生成脚本库（ai_scripts/ 与 ai_scripts_hot/）— 读取预生成好的 sleep 脚本并导入脚本库。
 
-ai_scripts/ 目录结构：
+每个目录结构：
   manifest.json          主题清单（index/en/zh/category/folder/lines）
   NNN_Topic/script.json  完整 sleep 脚本（Step 0 已完成的产物）
 
@@ -16,53 +16,66 @@ from pathlib import Path
 from .paths import WEB_ROOT
 
 AI_SCRIPTS_DIR = WEB_ROOT / "ai_scripts"
+# 多预生成目录（文件夹编号全局唯一）：ai_scripts=001-100, ai_scripts_hot=101-200
+AI_SCRIPTS_DIRS = [AI_SCRIPTS_DIR, WEB_ROOT / "ai_scripts_hot"]
 MANIFEST_PATH = AI_SCRIPTS_DIR / "manifest.json"
 
 
-def _load_manifest() -> dict:
-    if MANIFEST_PATH.exists():
+def _load_manifest(path: Path) -> dict:
+    if path.exists():
         try:
-            data = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
+            data = json.loads(path.read_text(encoding="utf-8"))
             return data if isinstance(data, dict) else {}
         except (json.JSONDecodeError, OSError):
             return {}
     return {}
 
 
-def list_ai_scripts() -> list[dict]:
-    """列出 ai_scripts 里所有可用的预生成脚本（含 folder/en/zh/category/lines）。
+def list_ai_scripts(source: str = "all") -> list[dict]:
+    """列出预生成目录里可用的脚本（含 folder/en/zh/category/lines）。
 
-    以 manifest.json 为索引，仅返回 script.json 实际存在的主题。
+    以各目录 manifest.json 为索引，仅返回 script.json 实际存在的主题。
+
+    source: "all"（默认，两个目录全部）/ "main"（ai_scripts/ 001-100）
+            / "hot"（ai_scripts_hot/ 101-200）。
     """
-    manifest = _load_manifest()
-    themes = manifest.get("themes") or []
+    if source == "main":
+        bases = [AI_SCRIPTS_DIR]
+    elif source == "hot":
+        bases = [WEB_ROOT / "ai_scripts_hot"]
+    else:
+        bases = AI_SCRIPTS_DIRS
     out: list[dict] = []
-    for t in themes:
-        if not isinstance(t, dict):
-            continue
-        folder = str(t.get("folder", "")).strip()
-        if not folder or not (AI_SCRIPTS_DIR / folder / "script.json").exists():
-            continue
-        out.append({
-            "folder": folder,
-            "en": t.get("en", ""),
-            "zh": t.get("zh", ""),
-            "category": t.get("category", ""),
-            "lines": int(t.get("lines", 0) or 0),
-        })
+    for base in bases:
+        manifest = _load_manifest(base / "manifest.json")
+        themes = manifest.get("themes") or []
+        for t in themes:
+            if not isinstance(t, dict):
+                continue
+            folder = str(t.get("folder", "")).strip()
+            if not folder or not (base / folder / "script.json").exists():
+                continue
+            out.append({
+                "folder": folder,
+                "en": t.get("en", ""),
+                "zh": t.get("zh", ""),
+                "category": t.get("category", ""),
+                "lines": int(t.get("lines", 0) or 0),
+            })
     return out
 
 
 def load_ai_script(folder: str) -> dict | None:
-    """读取某个预生成脚本的完整 script.json（folder 为目录名）。"""
+    """读取某个预生成脚本的完整 script.json（folder 为目录名，跨目录查找）。"""
     folder = Path(folder).name  # 防目录穿越
-    p = AI_SCRIPTS_DIR / folder / "script.json"
-    if not p.exists():
-        return None
-    try:
-        return json.loads(p.read_text(encoding="utf-8"))
-    except (json.JSONDecodeError, OSError):
-        return None
+    for base in AI_SCRIPTS_DIRS:
+        p = base / folder / "script.json"
+        if p.exists():
+            try:
+                return json.loads(p.read_text(encoding="utf-8"))
+            except (json.JSONDecodeError, OSError):
+                return None
+    return None
 
 
 def import_ai_scripts_to_library(folders: list[str] | None = None) -> dict:

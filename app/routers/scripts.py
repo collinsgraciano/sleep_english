@@ -89,10 +89,13 @@ async def api_scripts_batch_status():
 
 
 @router.get("/api/scripts/ai_presets")
-async def api_scripts_ai_presets():
-    """列出 ai_scripts/ 目录里预生成好的脚本（主题/中文/分类/行数）。"""
+async def api_scripts_ai_presets(source: str = "all"):
+    """列出预生成目录里预生成好的脚本（主题/中文/分类/行数）。
+
+    source: all（默认，全部目录）/ main（ai_scripts/）/ hot（ai_scripts_hot/）。
+    """
     from .. import ai_scripts
-    presets = ai_scripts.list_ai_scripts()
+    presets = ai_scripts.list_ai_scripts(source if source in ("main", "hot") else "all")
     # 已导入脚本库的主题（按主题名去重，供前端提示「已入库」）
     lib_topics = set(script_library.library_topics_by_mode().get("sleep", []))
     for p in presets:
