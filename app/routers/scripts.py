@@ -88,6 +88,29 @@ async def api_scripts_batch_status():
     return script_library.batch_status()
 
 
+@router.get("/api/scripts/ai_presets")
+async def api_scripts_ai_presets():
+    """列出 ai_scripts/ 目录里预生成好的脚本（主题/中文/分类/行数）。"""
+    from .. import ai_scripts
+    presets = ai_scripts.list_ai_scripts()
+    # 已导入脚本库的主题（按主题名去重，供前端提示「已入库」）
+    lib_topics = set(script_library.library_topics_by_mode().get("sleep", []))
+    for p in presets:
+        p["in_library"] = bool((p.get("en") or p.get("folder")) in lib_topics)
+    return {"presets": presets}
+
+
+@router.post("/api/scripts/ai_presets/import")
+async def api_scripts_ai_presets_import(request: Request):
+    """一键把 ai_scripts 预生成脚本导入脚本库（按主题去重）。"""
+    from .. import ai_scripts
+    data = await request.json() if request.headers.get(
+        "content-type", "").startswith("application/json") else {}
+    folders = data.get("folders") or []
+    result = ai_scripts.import_ai_scripts_to_library(folders or None)
+    return {"ok": True, **result}
+
+
 @router.get("/api/scripts/{sid}")
 async def api_script_get(sid: str):
     doc = script_library.get_script_doc(sid)

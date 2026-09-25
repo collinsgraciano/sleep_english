@@ -110,6 +110,8 @@
         <div class="flex gap-2">
             <button type="button" id="btn-review-all" onclick="reviewAll()"
                 class="px-4 py-2 bg-amber-600 hover:bg-amber-500 rounded-lg text-sm text-white font-medium">🔍 批量审查未审查（全库）</button>
+            <button type="button" id="btn-import-ai" onclick="importAiScripts()"
+                class="px-4 py-2 bg-emerald-600 hover:bg-emerald-500 rounded-lg text-sm text-white font-medium">📥 导入 ai_scripts 预生成脚本</button>
             <button type="button" onclick="loadScripts()"
                 class="px-4 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg text-sm text-slate-300">🔄 刷新</button>
         </div>
@@ -489,6 +491,38 @@ function loadScripts() {
             SCRIPTS = data.scripts || [];
             renderList();
         });
+}
+
+async function importAiScripts() {
+    const btn = document.getElementById('btn-import-ai');
+    const oldText = btn.textContent;
+    btn.disabled = true;
+    btn.textContent = '⏳ 导入中...';
+    try {
+        const resp = await fetch('/api/scripts/ai_presets/import', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({folders: []})
+        });
+        const data = await resp.json();
+        if (data.ok) {
+            const parts = [`新增 ${data.imported} 个`];
+            if (data.skipped) parts.push(`跳过已存在 ${data.skipped} 个`);
+            if (data.errors && data.errors.length) parts.push(`失败 ${data.errors.length} 个`);
+            alert('导入完成：' + parts.join('，'));
+            if (data.errors && data.errors.length) {
+                console.warn('导入失败项:', data.errors);
+            }
+            loadScripts();
+        } else {
+            alert('导入失败');
+        }
+    } catch (e) {
+        alert('导入失败: ' + (e.message || e));
+    } finally {
+        btn.disabled = false;
+        btn.textContent = oldText;
+    }
 }
 
 function scoreBadge(meta) {

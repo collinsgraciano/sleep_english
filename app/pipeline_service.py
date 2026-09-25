@@ -647,6 +647,56 @@ class PipelineService:
         self._on_log_line(f"  Script saved: {script_path}")
         return script, work_dir, dirs
 
+    def _seed_from_ai_scripts(self, folder: str, args, topic: str,
+                              parent_dir: Path, used_topics_file: str):
+        """Step 0 alternative: seed the run dir from an ai_scripts preset (no LLM).
+
+        Reads ai_scripts/{folder}/script.json, writes it into a fresh run dir +
+        checkpoint. 与脚本库不同：预生成脚本不入库、无 used 标记（可直接复用）。
+        Returns (script, work_dir, dirs); (None, None, None) after _fail().
+        """
+        from . import ai_scripts
+        from . import script_library
+
+        script = ai_scripts.load_ai_script(folder)
+        if not script:
+            self._fail(f"预生成脚本不存在: {folder}")
+            return None, None, None
+        if not script.get("dialogue"):
+            self._fail(f"预生成脚本无对话内容: {folder}")
+            return None, None, None
+
+        topic = script.get("topic") or script.get("title") or topic
+        args.topic = topic
+        if script.get("cefr"):
+            args.cefr = script["cefr"]
+
+        self._on_log_line("\n" + "=" * 60)
+        self._on_log_line("Step 0: 使用 ai_scripts 预生成脚本（跳过 LLM 生成）...")
+        yt_title = script.get("youtube_title", script.get("title", topic))
+        safe_title = _safe_dirname(yt_title, topic)
+        work_dir = parent_dir / getattr(args, "mode_name", args.structure) / safe_title
+        work_dir.mkdir(parents=True, exist_ok=True)
+        dirs = {k: work_dir / k for k in ("images", "clips", "audio", "subtitles", "videos")}
+        for d in dirs.values():
+            d.mkdir(parents=True, exist_ok=True)
+        script_path = work_dir / "script.json"
+        script["structure"] = args.structure
+        script["channel_id"] = str(getattr(args, "channel_id", "") or "")
+        script_path.write_text(
+            json.dumps(script, ensure_ascii=False, indent=2), encoding="utf-8")
+        _save_checkpoint(work_dir, "step0_script", topic=topic, cefr=args.cefr,
+                         structure=args.structure, animation=args.animation,
+                         visual_style=str(self.config.get("visual_style", "")),
+                         host_character=str(self.config.get("host_character", "") or ""))
+        # 各模式独立记录已用主题（与全新生成一致；预生成脚本可跨运行复用）
+        script_library.mark_topic_used_mode(
+            args.structure, topic, run_name=safe_title)
+        self._on_log_line(f"  [AiScripts] {topic} "
+                          f"({len(script.get('dialogue', []))} 行)")
+        self._on_log_line(f"  Script saved: {script_path}")
+        return script, work_dir, dirs
+
     def _on_log_line(self, line: str):
         """Called for each stdout line from pipeline."""
         with self._lock:
@@ -722,9 +772,15 @@ class PipelineService:
                     return
             args.topic = topic
 
-            # Step 0: Script generation — 脚本库脚本直接落盘（跳过 LLM 生成）
+            # Step 0: Script generation — 脚本库脚本 / ai_scripts 预生成脚本直接落盘（跳过 LLM 生成）
             script_id = str(config.get("script_id") or "").strip()
-            if script_id and not resume:
+            ai_script = str(config.get("ai_script") or "").strip()
+            if ai_script and not resume:
+                script, work_dir, dirs = self._seed_from_ai_scripts(
+                    ai_script, args, topic, parent_dir, used_topics_file)
+                if script is None:
+                    return
+            elif script_id and not resume:
                 script, work_dir, dirs = self._seed_from_script_library(
                     script_id, args, topic, parent_dir, used_topics_file)
                 if script is None:

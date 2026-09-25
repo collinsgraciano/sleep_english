@@ -33,7 +33,7 @@ async def api_run_start(request: Request):
         resolved = load_channel_config(channel_id)
         if isinstance(config, dict):
             for k, v in config.items():
-                if k in PARAM_SPEC or k in ("topic", "cefr", "script_id"):
+                if k in PARAM_SPEC or k in ("topic", "cefr", "script_id", "ai_script"):
                     resolved[k] = v
         config = resolved
         config["channel_id"] = channel_id
