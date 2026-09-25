@@ -362,9 +362,10 @@ def _resolve_batch_provider(provider_id: str, model: str, structure: str):
         elif p_type0 == "wbk":
             cfg["wbk_model"] = model
         else:
-            # custom:* 走 openai 通道，模型用 Provider 自己的列表
+            # custom:* 走 openai 通道；所选模型按字段复用约定存 wbk_model，
+            # resolve_provider 校验其在 Provider 模型清单内后生效
             cfg.pop("gemini_model", None)
-            cfg.pop("wbk_model", None)
+            cfg["wbk_model"] = model
     return resolve_provider(cfg), cfg
 
 

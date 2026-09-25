@@ -223,7 +223,9 @@ function onProviderChange(skipSave) {
     if (provider === 'gemini') {
         models = FORM.gemini_models || [];
     } else if (provider === 'wbk') {
-        models = FORM.wbk_models || [];
+        // wbk_models 服务端为 {value: label} 字典 → 取 value 数组（本页下拉显示裸模型 ID）
+        const wm = FORM.wbk_models || {};
+        models = Array.isArray(wm) ? wm : Object.keys(wm);
     } else if (provider.startsWith('custom:')) {
         const cp = (FORM.custom_providers || []).find(p => 'custom:' + p.id === provider);
         models = cp ? cp.models : [];

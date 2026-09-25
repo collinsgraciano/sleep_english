@@ -3,7 +3,12 @@
 <script>
 const MODE = {{ mode | tojson }};  // 当前编辑的模式 Tab（structure 恒等于它）
 const CUSTOM_PROVIDERS = {{ custom_providers | tojson }};  // [{id, name, models[]}]
-const WBK_MODEL_OPTIONS = {{ params.wbk_model.options | tojson }};
+// wbk_model.options 服务端为 {value: label} 字典 → 统一为 [{value,label}]
+//（自定义 Provider 的 models 是字符串数组，updateModelOptions 两种形状都兼容）
+const _WBK_OPTIONS_RAW = {{ params.wbk_model.options | tojson }};
+const WBK_MODEL_OPTIONS = Array.isArray(_WBK_OPTIONS_RAW)
+    ? _WBK_OPTIONS_RAW.map(m => (typeof m === 'object' ? m : {value: m, label: m}))
+    : Object.entries(_WBK_OPTIONS_RAW).map(([value, label]) => ({value, label: label || value}));
 const SLEEP_COLOR_DEFAULTS = {{ sleep_color_defaults | tojson }};  // sleep_color_* 留空时的内置默认色
 
 function toggleSection(btn) {

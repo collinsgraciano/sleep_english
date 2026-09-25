@@ -264,15 +264,16 @@ function onProviderChange() {
     let models;
 
     if (provider === 'gemini') {
-        models = GEMINI_MODELS;
+        models = GEMINI_MODELS.map(m => ({value: m, label: m}));
     } else if (provider === 'wbk') {
-        models = WBK_MODELS;
+        // WBK_MODELS 服务端为 {value: label} 字典 → [{value,label}]
+        models = Object.entries(WBK_MODELS).map(([value, label]) => ({value, label: label || value}));
     } else if (provider.startsWith('custom:')) {
         const pid = provider.split(':')[1];
         const cp = CUSTOM_PROVIDERS.find(p => p.id === pid);
-        models = cp ? (cp.models || []) : [];
+        models = (cp ? (cp.models || []) : []).map(m => ({value: m, label: m}));
     }
-    sel.innerHTML = models.map(m => `<option value="${m}">${m}</option>`).join('');
+    sel.innerHTML = models.map(m => `<option value="${m.value}">${escapeHtml(m.label)}</option>`).join('');
 
     // 推理档位：Gemini=thinking_level（多一个 minimal），
     // WBK 按模型规格表裁剪（default=端点默认）

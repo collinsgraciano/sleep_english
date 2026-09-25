@@ -957,11 +957,16 @@ def resolve_provider(config: dict[str, Any]) -> tuple[str, str, str, str]:
         cp = next((p for p in customs if p["id"] == custom_id), None)
         if cp:
             models = cp.get("models") or []
+            # 配置页模型下拉复用 wbk_model 字段存自定义 Provider 的所选模型
+            # （_config_scripts.updateModelOptions），尊重用户选择；
+            # 所选不在该 Provider 模型清单（如仍是内置 wbk 模型 ID）时回退首项
+            chosen = str(config.get("wbk_model", "") or "").strip()
+            model = chosen if (chosen and chosen in models) else (models[0] if models else "")
             return (
                 "openai",
                 cp.get("base_url", ""),
                 cp.get("api_key", ""),
-                models[0] if models else "",
+                model,
             )
     # 兜底：未知 Provider 回 wbk（内置通道均有稳定默认端点/模型）
     return (
