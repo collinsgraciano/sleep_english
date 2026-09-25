@@ -290,10 +290,11 @@ def _generate_sleep_thumbnail(script: dict, output_path: str,
                               mcp_call_tool=None, mcp_parse_task_id=None,
                               mcp_poll_task=None, mcp_download_file=None,
                               theme: dict | None = None,
-                              channel_name: str = "") -> str:
+                              channel_name: str = "",
+                              image_gen_fn=None) -> str:
     """sleep 缩略图：参考同款 AI 生成（文字内嵌 prompt），失败兜底 Pillow 卡片。
 
-    Provider 优先级：MCP → Pillow 兜底。
+    Provider 优先级：HTTP 生图通道（image_gen_fn）→ MCP → Pillow 兜底。
     """
     # v2 模板分派：script.thumb_template 由弹窗挑选后写回（缺省 = 经典模板）
     template = str(script.get("thumb_template", "") or "").strip()
@@ -302,7 +303,19 @@ def _generate_sleep_thumbnail(script: dict, output_path: str,
     else:
         prompt = _build_sleep_thumbnail_prompt(script)
 
-    if mcp_call_tool and mcp_parse_task_id and mcp_poll_task and mcp_download_file:
+    if image_gen_fn is not None:
+        print("  [Thumbnail] Generating sleep thumbnail via HTTP 生图通道 (baked-in text)...")
+        try:
+            if image_gen_fn(prompt, output_path):
+                if os.path.getsize(output_path) // 1024 > 10:
+                    print(f"  [Thumbnail] Saved (AI baked-in): {output_path}")
+                    return output_path
+                print("  [Thumbnail] AI image too small, falling back")
+            else:
+                print("  [Thumbnail] HTTP 生图通道返回失败, falling back")
+        except Exception as e:
+            print(f"  [Thumbnail] AI generation failed: {e}, falling back")
+    elif mcp_call_tool and mcp_parse_task_id and mcp_poll_task and mcp_download_file:
         print("  [Thumbnail] Generating sleep thumbnail via MCP (baked-in text)...")
         try:
             gen_args = {
@@ -354,7 +367,8 @@ def generate_thumbnail(script: dict, scene_img: str, output_path: str,
                         structure: str = "original",
                         char_scene_url: str = None,
                         sleep_theme: dict | None = None,
-                        sleep_channel: str = "") -> str:
+                        sleep_channel: str = "",
+                        image_gen_fn=None) -> str:
     """Generate a YouTube thumbnail with text baked into the AI prompt (one step).
 
     If char_scene_url is provided, uses it as a reference image so the thumbnail
@@ -369,7 +383,8 @@ def generate_thumbnail(script: dict, scene_img: str, output_path: str,
             mcp_parse_task_id=mcp_parse_task_id,
             mcp_poll_task=mcp_poll_task,
             mcp_download_file=mcp_download_file,
-            theme=sleep_theme, channel_name=sleep_channel)
+            theme=sleep_theme, channel_name=sleep_channel,
+            image_gen_fn=image_gen_fn)
 
     prompt = _build_thumbnail_prompt(script, structure)
 

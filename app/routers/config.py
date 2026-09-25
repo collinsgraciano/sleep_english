@@ -20,6 +20,10 @@ from ..paths import CHANNEL_ASSETS_DIR, PIPELINE_DIR
 
 router = APIRouter()
 
+# 库绑定键（片头/片尾库页面管理，非参数页表单字段）：save_all 整文件覆盖
+# 时若不清保留，绑定会被静默清空（「🌙 用于 Sleep」绑定丢失、生成回退默认片头）
+LIBRARY_BINDING_KEYS = ("sleep_intro_video", "sleep_outro_video")
+
 
 def _ctx(channel: str) -> tuple[str, dict]:
     """API 上下文解析：channel 非空 → 该频道完整配置快照；空 → 全局。
@@ -63,6 +67,12 @@ async def api_save_all_config(request: Request):
     if mode not in MODES:
         return JSONResponse({"ok": False, "error": f"未知模式: {mode}"}, status_code=400)
     data["structure"] = mode
+    # 保留库绑定键（sleep_intro_video / sleep_outro_video）：由片头/片尾库
+    # 页面管理、不在参数页表单字段里，整文件覆盖会静默清空绑定
+    _, existing = _ctx(channel)
+    for k in LIBRARY_BINDING_KEYS:
+        if k not in data and k in existing:
+            data[k] = existing[k]
     _save_ctx(channel, data)
     return {"ok": True, "mode": mode, "channel": channel}
 

@@ -309,8 +309,16 @@ class PipelineService:
         os.environ["VISUAL_STYLE_ID"] = style_id
         os.environ["VISUAL_STYLE_PROMPT"] = _rsp(style_id)
 
-        # 生图 Provider：mcp（TJGenerators 积分）
+        # 生图 Provider：mcp（TJGenerators 积分）/ aixoras（OpenAI 兼容 HTTP）
         os.environ["IMAGE_PROVIDER"] = str(config.get("image_provider", "mcp"))
+        os.environ["IMAGE_AIXORAS_API_KEY"] = str(config.get("image_aixoras_api_key", "") or "")
+        os.environ["IMAGE_AIXORAS_BASE_URL"] = str(config.get("image_aixoras_base_url", "") or "")
+        os.environ["IMAGE_AIXORAS_MODEL"] = str(config.get("image_aixoras_model", "") or "")
+        os.environ["IMAGE_AIXORAS_SIZE"] = str(config.get("image_aixoras_size", "") or "")
+        os.environ["IMAGE_SENSENOVA_API_KEY"] = str(config.get("image_sensenova_api_key", "") or "")
+        os.environ["IMAGE_SENSENOVA_BASE_URL"] = str(config.get("image_sensenova_base_url", "") or "")
+        os.environ["IMAGE_SENSENOVA_MODEL"] = str(config.get("image_sensenova_model", "") or "")
+        os.environ["IMAGE_SENSENOVA_SIZE"] = str(config.get("image_sensenova_size", "") or "")
 
         provider = config.get("llm_provider", "wbk")
         p_type, p_base_url, p_api_key, p_model = resolve_provider(config)
@@ -458,6 +466,15 @@ class PipelineService:
             llm_retries=int(config.get("llm_retries", 10)),
             mcp_tokens=mcp_tokens or None,
             mcp_token=None,
+            image_provider=str(config.get("image_provider", "mcp") or "mcp"),
+            image_aixoras_api_key=str(config.get("image_aixoras_api_key", "") or ""),
+            image_aixoras_base_url=str(config.get("image_aixoras_base_url", "") or ""),
+            image_aixoras_model=str(config.get("image_aixoras_model", "") or ""),
+            image_aixoras_size=str(config.get("image_aixoras_size", "") or ""),
+            image_sensenova_api_key=str(config.get("image_sensenova_api_key", "") or ""),
+            image_sensenova_base_url=str(config.get("image_sensenova_base_url", "") or ""),
+            image_sensenova_model=str(config.get("image_sensenova_model", "") or ""),
+            image_sensenova_size=str(config.get("image_sensenova_size", "") or ""),
             clip_duration=int(config.get("clip_duration", 15)),
             image_concurrency=int(config.get("image_concurrency", 4)),
             clip_concurrency=int(config.get("clip_concurrency", 4)),

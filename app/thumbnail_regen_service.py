@@ -92,6 +92,16 @@ class ThumbnailRegenService:
             str(config.get("mcp_tokens", "") or "").strip()
         mcp_tokens = [t.strip() for t in tokens_raw.split("\n") if t.strip()]
 
+        # 生图 Provider：按运行所属频道（script.channel_id）解析配置快照，无频道
+        # 回全局 —— 与主 pipeline _build_args 的 image_provider 解析一致（否则
+        # 频道切 aixoras 后重生成缩略图仍硬走 MCP）
+        run_channel = str(script.get("channel_id", "") or "").strip()
+        if run_channel:
+            from .channel_profiles import load_channel_config
+            img_cfg = load_channel_config(run_channel)
+        else:
+            img_cfg = cfg
+
         payload = {
             "run_dir": str(run_dir),
             "structure": structure,
@@ -99,10 +109,20 @@ class ThumbnailRegenService:
             "style_id": style_id,
             "style_prompt": resolve_style_prompt(style_id),
             "mcp_tokens": mcp_tokens,
+            "image_provider": str(img_cfg.get("image_provider", "mcp") or "mcp"),
+            "image_aixoras_api_key": str(img_cfg.get("image_aixoras_api_key", "") or ""),
+            "image_aixoras_base_url": str(img_cfg.get("image_aixoras_base_url", "") or ""),
+            "image_aixoras_model": str(img_cfg.get("image_aixoras_model", "") or ""),
+            "image_aixoras_size": str(img_cfg.get("image_aixoras_size", "") or ""),
+            "image_sensenova_api_key": str(img_cfg.get("image_sensenova_api_key", "") or ""),
+            "image_sensenova_base_url": str(img_cfg.get("image_sensenova_base_url", "") or ""),
+            "image_sensenova_model": str(img_cfg.get("image_sensenova_model", "") or ""),
+            "image_sensenova_size": str(img_cfg.get("image_sensenova_size", "") or ""),
         }
         if structure == "sleep":
-            # sleep 缩略图 Pillow 兜底卡需要 sleep 主题配色/频道名（AI 分支不用）
-            payload["sleep_cfg"] = {k: v for k, v in load_mode_config("sleep").items()
+            # sleep 缩略图 Pillow 兜底卡需要 sleep 主题配色/频道名（AI 分支不用）；
+            # 用运行所属频道（或全局）快照，保证兜底卡配色与成片一致
+            payload["sleep_cfg"] = {k: v for k, v in img_cfg.items()
                                     if k.startswith("sleep_")}
 
         try:

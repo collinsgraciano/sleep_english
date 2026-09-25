@@ -46,13 +46,50 @@ def main() -> int:
     if style_prompt:
         os.environ["VISUAL_STYLE_PROMPT"] = style_prompt
 
-    from mcp_client import initialize as mcp_initialize
-    tokens = [t.strip() for t in params.get("mcp_tokens", []) if t.strip()]
-    mcp_initialize(tokens=tokens or None)
-    char_scene_url = ""
-
-    from pipeline import call_tool, parse_task_id, poll_task, download_file
     from thumbnail_gen import generate_thumbnail
+
+    # 生图 Provider 分派（与主 pipeline _step45_thumbnail 一致）：
+    # aixoras / sensenova（HTTP）→ image_gen_fn；mcp → 初始化 MCP 会话 + 回调。
+    image_provider = str(params.get("image_provider", "mcp") or "mcp")
+    image_gen_fn = None
+    mcp_call_tool = mcp_parse_task_id = mcp_poll_task = mcp_download_file = None
+    if image_provider != "mcp":
+        from image_http import generate_image_http
+        if image_provider == "sensenova":
+            api_key = str(params.get("image_sensenova_api_key", "") or "").strip()
+            base_url = str(params.get("image_sensenova_base_url", "")
+                           or "https://token.sensenova.cn/v1")
+            model = str(params.get("image_sensenova_model", "")
+                        or "sensenova-u1.5-fast")
+            size = str(params.get("image_sensenova_size", "") or "2720x1536")
+            quality = ""
+        else:  # aixoras
+            api_key = str(params.get("image_aixoras_api_key", "") or "").strip()
+            base_url = str(params.get("image_aixoras_base_url", "")
+                           or "https://api.aixoras.com/v1")
+            model = str(params.get("image_aixoras_model", "") or "gpt-image-2")
+            size = str(params.get("image_aixoras_size", "") or "1536x1024")
+            quality = "standard"
+        if api_key:
+            def image_gen_fn(prompt: str, dest: str) -> bool:
+                output_format = ("jpeg" if str(dest).lower().endswith((".jpg", ".jpeg"))
+                                 else "png")
+                return generate_image_http(
+                    prompt, dest, api_key=api_key, base_url=base_url,
+                    model=model, size=size, quality=quality,
+                    output_format=output_format)
+        else:
+            print(f"ThumbnailRegen: HTTP 生图通道（{image_provider}）未配置 Key —— 回退 Pillow 兜底")
+    else:
+        from mcp_client import initialize as mcp_initialize
+        tokens = [t.strip() for t in params.get("mcp_tokens", []) if t.strip()]
+        mcp_initialize(tokens=tokens or None)
+        from pipeline import call_tool, parse_task_id, poll_task, download_file
+        mcp_call_tool = call_tool
+        mcp_parse_task_id = parse_task_id
+        mcp_poll_task = poll_task
+        mcp_download_file = download_file
+    char_scene_url = ""
 
     # sleep 缩略图：AI 分支纯 prompt 生成；Pillow 兜底卡需要 sleep 主题配色
     sleep_theme = None
@@ -71,14 +108,15 @@ def main() -> int:
         script=script,
         scene_img=str(scene_img),
         output_path=str(run_dir / out_name),
-        mcp_call_tool=call_tool,
-        mcp_parse_task_id=parse_task_id,
-        mcp_poll_task=poll_task,
-        mcp_download_file=download_file,
+        mcp_call_tool=mcp_call_tool,
+        mcp_parse_task_id=mcp_parse_task_id,
+        mcp_poll_task=mcp_poll_task,
+        mcp_download_file=mcp_download_file,
         structure=structure,
         char_scene_url=char_scene_url,
         sleep_theme=sleep_theme,
         sleep_channel=sleep_channel,
+        image_gen_fn=image_gen_fn,
     )
     if out_path and Path(out_path).exists():
         print("=" * 60)

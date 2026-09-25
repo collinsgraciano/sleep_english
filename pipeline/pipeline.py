@@ -60,6 +60,73 @@ def _get_style_prompt(args) -> str:
 
 
 # ---------------------------------------------------------------------------
+# 生图 Provider 分派（mcp / aixoras）
+# ---------------------------------------------------------------------------
+
+def _image_provider(args) -> str:
+    """生图 Provider：env 优先（pipeline_service 注入），CLI 用 args。"""
+    return (os.environ.get("IMAGE_PROVIDER")
+            or getattr(args, "image_provider", None)
+            or "mcp")
+
+
+def _build_http_image_gen(args):
+    """image_provider != mcp 时返回 (prompt, dest) -> bool 的 HTTP 生图回调；
+    未配置 key 时返回 None（调用方回退 MCP / Pillow 兜底）。
+
+    支持 aixoras / sensenova：按 provider 读各自配置键；output_format 按 dest
+    后缀推断（.jpg/.jpeg→jpeg，其余→png），SenseNova 据此出 jpeg/png。
+    """
+    from image_http import generate_image_http
+    provider = _image_provider(args)
+    if provider == "sensenova":
+        api_key = (getattr(args, "image_sensenova_api_key", "")
+                   or os.environ.get("IMAGE_SENSENOVA_API_KEY", ""))
+        base_url = (getattr(args, "image_sensenova_base_url", "")
+                    or os.environ.get("IMAGE_SENSENOVA_BASE_URL", "")
+                    or "https://token.sensenova.cn/v1")
+        model = (getattr(args, "image_sensenova_model", "")
+                 or os.environ.get("IMAGE_SENSENOVA_MODEL", "")
+                 or "sensenova-u1.5-fast")
+        size = (getattr(args, "image_sensenova_size", "")
+                or os.environ.get("IMAGE_SENSENOVA_SIZE", "")
+                or "2720x1536")
+        quality = ""  # SenseNova 无 quality 参数
+    else:  # aixoras（或其它 OpenAI 兼容）
+        api_key = (getattr(args, "image_aixoras_api_key", "")
+                   or os.environ.get("IMAGE_AIXORAS_API_KEY", ""))
+        base_url = (getattr(args, "image_aixoras_base_url", "")
+                    or os.environ.get("IMAGE_AIXORAS_BASE_URL", "")
+                    or "https://api.aixoras.com/v1")
+        model = (getattr(args, "image_aixoras_model", "")
+                 or os.environ.get("IMAGE_AIXORAS_MODEL", "")
+                 or "gpt-image-2")
+        size = (getattr(args, "image_aixoras_size", "")
+                or os.environ.get("IMAGE_AIXORAS_SIZE", "")
+                or "1536x1024")
+        quality = "standard"
+    if not api_key:
+        return None
+    proxy_url = (os.environ.get("LLM_PROXY_URL", "")
+                 if os.environ.get("LLM_PROXY_ENABLED") else "")
+
+    def gen(prompt: str, dest: str) -> bool:
+        output_format = ("jpeg" if str(dest).lower().endswith((".jpg", ".jpeg"))
+                         else "png")
+        return generate_image_http(
+            prompt, dest,
+            api_key=api_key,
+            base_url=base_url,
+            model=model,
+            size=size,
+            quality=quality,
+            output_format=output_format,
+            proxy_url=proxy_url,
+        )
+    return gen
+
+
+# ---------------------------------------------------------------------------
 # Script validation + generation
 # ---------------------------------------------------------------------------
 
@@ -441,24 +508,34 @@ def _step2_images_tts(args, checkpoint: dict, script: dict, work_dir: Path, dirs
             if _fixed_bg:
                 print(f"  [SleepBG] WARNING: 固定背景图不存在: {_fixed_bg}"
                       " —— 回退按主题 AI 生成")
-            from mcp_client import initialize
-            # Step 1 对 sleep 跳过了 MCP 初始化 —— 按需初始化（照缩略图先例）；
-            # 生成函数已模块级导入恒可用，只需确认 Token 已配置
-            raw_tokens = args.mcp_tokens or ""
-            _toks = [t.strip() for t in raw_tokens.split(",") if t.strip()]
-            if _toks:
-                try:
-                    initialize(tokens=_toks)
-                except Exception as e:
-                    print(f"  [SleepBG] MCP 初始化失败: {e} —— 回退纯渐变")
-            else:
-                print("  [SleepBG] 未配置 MCP Token —— 跳过 AI 背景图"
-                      "（配置页填 mcp_tokens 后可用）")
             from sleep.bg_image import ensure_sleep_bg_image
-            ensure_sleep_bg_image(
-                str(img_dir), scene, style_prompt,
-                mcp_call_tool=call_tool, mcp_parse_task_id=parse_task_id,
-                mcp_poll_task=poll_task, mcp_download_file=download_file)
+            _provider = _image_provider(args)
+            if _provider != "mcp":
+                _gen = _build_http_image_gen(args)
+                if _gen is None:
+                    print(f"  [SleepBG] HTTP 生图通道（{_provider}）未配置 Key —— 跳过 AI 背景图")
+                else:
+                    print(f"  [SleepBG] 使用 HTTP 生图通道（{_provider}）生成背景图 ...")
+                    ensure_sleep_bg_image(str(img_dir), scene, style_prompt,
+                                          image_gen_fn=_gen)
+            else:
+                from mcp_client import initialize
+                # Step 1 对 sleep 跳过了 MCP 初始化 —— 按需初始化（照缩略图先例）；
+                # 生成函数已模块级导入恒可用，只需确认 Token 已配置
+                raw_tokens = args.mcp_tokens or ""
+                _toks = [t.strip() for t in raw_tokens.split(",") if t.strip()]
+                if _toks:
+                    try:
+                        initialize(tokens=_toks)
+                    except Exception as e:
+                        print(f"  [SleepBG] MCP 初始化失败: {e} —— 回退纯渐变")
+                else:
+                    print("  [SleepBG] 未配置 MCP Token —— 跳过 AI 背景图"
+                          "（配置页填 mcp_tokens 后可用）")
+                ensure_sleep_bg_image(
+                    str(img_dir), scene, style_prompt,
+                    mcp_call_tool=call_tool, mcp_parse_task_id=parse_task_id,
+                    mcp_poll_task=poll_task, mcp_download_file=download_file)
 
     print("  [Sleep] Skipping clip generation (no video clips)")
 
@@ -622,19 +699,27 @@ def _step45_thumbnail(args, checkpoint: dict, script: dict, work_dir: Path,
             json.dumps(script, ensure_ascii=False, indent=2), encoding="utf-8")
         # Step 1 对 sleep 跳过了 MCP 初始化 —— AI 缩略图需要会话，按需初始化；
         # 无 token / 初始化失败只告警（generate_thumbnail 内部回退 Pillow 卡片，
-        # 不崩掉与 MCP 无关的 sleep 运行）
-        from mcp_client import initialize
-        raw_tokens = args.mcp_tokens or ""
-        _toks = [t.strip() for t in raw_tokens.split(",") if t.strip()]
-        if _toks:
-            print("  [Thumbnail] sleep 缩略图 AI 生成 —— 初始化 MCP 会话...")
-            try:
-                initialize(tokens=_toks)
-            except Exception as e:
-                print(f"  [Thumbnail] MCP 初始化失败: {e} —— 回退 Pillow 卡片")
+        # 不崩掉与 MCP 无关的 sleep 运行）。HTTP 生图通道（image_provider != mcp）
+        # 不走 MCP，直接经 image_gen_fn 生成。
+        _provider = _image_provider(args)
+        _img_gen = None
+        if _provider != "mcp":
+            _img_gen = _build_http_image_gen(args)
+            if _img_gen is None:
+                print(f"  [Thumbnail] HTTP 生图通道（{_provider}）未配置 Key —— 回退 Pillow 卡片")
         else:
-            print("  [Thumbnail] 未配置 MCP Token —— sleep 缩略图回退 Pillow 卡片"
-                  "（配置页填 mcp_tokens 后可用 AI 生成）")
+            from mcp_client import initialize
+            raw_tokens = args.mcp_tokens or ""
+            _toks = [t.strip() for t in raw_tokens.split(",") if t.strip()]
+            if _toks:
+                print("  [Thumbnail] sleep 缩略图 AI 生成 —— 初始化 MCP 会话...")
+                try:
+                    initialize(tokens=_toks)
+                except Exception as e:
+                    print(f"  [Thumbnail] MCP 初始化失败: {e} —— 回退 Pillow 卡片")
+            else:
+                print("  [Thumbnail] 未配置 MCP Token —— sleep 缩略图回退 Pillow 卡片"
+                      "（配置页填 mcp_tokens 后可用 AI 生成）")
         generate_thumbnail(
             script=script,
             scene_img="",
@@ -647,6 +732,7 @@ def _step45_thumbnail(args, checkpoint: dict, script: dict, work_dir: Path,
             sleep_theme=build_theme(vars(args)),
             sleep_channel=str(getattr(args, "sleep_channel_name", "")
                               or "English with me"),
+            image_gen_fn=_img_gen,
         )
         print(f"  [Thumbnail] sleep thumbnail saved: {thumb_path}")
     save_youtube_metadata(
@@ -981,6 +1067,16 @@ def _parse_args() -> argparse.Namespace:
                         help="Logo 自定义纵向位置 %%（0=贴上缘，100=贴下缘；仅 --sleep-logo-position custom 生效）")
     # --- LLM ---
     parser.add_argument("--mcp-tokens", default=None, help="TJGenerators MCP OAuth tokens（仅 AI 缩略图/背景图消费，逗号分隔多 token 轮换）")
+    parser.add_argument("--image-provider", default=None, choices=["mcp", "aixoras", "sensenova"],
+                        help="生图 Provider：mcp（默认，TJGenerators 积分）/ aixoras / sensenova（日日新 U1.5，OpenAI 兼容 /v1/images/generations）")
+    parser.add_argument("--image-aixoras-api-key", default=None, help="AIxoras API Key（--image-provider=aixoras 时使用）")
+    parser.add_argument("--image-aixoras-base-url", default=None, help="AIxoras base URL（默认 https://api.aixoras.com/v1）")
+    parser.add_argument("--image-aixoras-model", default=None, help="AIxoras 模型名（默认 gpt-image-2）")
+    parser.add_argument("--image-aixoras-size", default=None, help="AIxoras size（默认 1536x1024；gpt-image-2 系列仅 1024x1024/1536x1024/1024x1536）")
+    parser.add_argument("--image-sensenova-api-key", default=None, help="SenseNova API Key（--image-provider=sensenova 时使用）")
+    parser.add_argument("--image-sensenova-base-url", default=None, help="SenseNova base URL（默认 https://token.sensenova.cn/v1）")
+    parser.add_argument("--image-sensenova-model", default=None, help="SenseNova 模型名（默认 sensenova-u1.5-fast）")
+    parser.add_argument("--image-sensenova-size", default=None, help="SenseNova size（默认 2720x1536 16:9 2K）")
     parser.add_argument("--llm-provider", default="wbk", choices=["openai", "gemini", "wbk"],
                         help="LLM provider: 'wbk' (default, WorkBuddy aggregator), 'openai' (OpenAI-compatible endpoint, custom providers backend) or 'gemini' (google-genai SDK)")
     parser.add_argument("--openai-base-url", default=None, help="OpenAI-compatible API base URL (custom providers)")
@@ -1145,6 +1241,26 @@ def main():
     if args.llm_proxy_url:
         os.environ["LLM_PROXY_ENABLED"] = "1"
         os.environ["LLM_PROXY_URL"] = args.llm_proxy_url
+
+    # 生图 Provider（env 供 _image_provider / _build_http_image_gen 读取）
+    if args.image_provider:
+        os.environ["IMAGE_PROVIDER"] = args.image_provider
+    if args.image_aixoras_api_key:
+        os.environ["IMAGE_AIXORAS_API_KEY"] = args.image_aixoras_api_key
+    if args.image_aixoras_base_url:
+        os.environ["IMAGE_AIXORAS_BASE_URL"] = args.image_aixoras_base_url
+    if args.image_aixoras_model:
+        os.environ["IMAGE_AIXORAS_MODEL"] = args.image_aixoras_model
+    if args.image_aixoras_size:
+        os.environ["IMAGE_AIXORAS_SIZE"] = args.image_aixoras_size
+    if args.image_sensenova_api_key:
+        os.environ["IMAGE_SENSENOVA_API_KEY"] = args.image_sensenova_api_key
+    if args.image_sensenova_base_url:
+        os.environ["IMAGE_SENSENOVA_BASE_URL"] = args.image_sensenova_base_url
+    if args.image_sensenova_model:
+        os.environ["IMAGE_SENSENOVA_MODEL"] = args.image_sensenova_model
+    if args.image_sensenova_size:
+        os.environ["IMAGE_SENSENOVA_SIZE"] = args.image_sensenova_size
 
     parent_dir = Path(args.output).resolve()
     parent_dir.mkdir(parents=True, exist_ok=True)

@@ -26,11 +26,13 @@ def build_bg_prompt(topic: str, style_prompt: str = "") -> str:
 
 def ensure_sleep_bg_image(img_dir: str, topic: str, style_prompt: str = "",
                           mcp_call_tool=None, mcp_parse_task_id=None,
-                          mcp_poll_task=None, mcp_download_file=None) -> str:
+                          mcp_poll_task=None, mcp_download_file=None,
+                          image_gen_fn=None) -> str:
     """确保 sleep 背景图存在。返回图片绝对路径；失败/关闭回退返回 ""。
 
-    调用方（pipeline._step2_images_tts sleep 分支）在 sleep_bg_image 开启且
-    未配置固定路径时调用；固定路径分支在调用方处理（无需生成）。
+    AI 生成走 MCP 通道（由调用方传入 call_tool 等函数；Step 2 对
+    sleep 按需初始化 MCP，照缩略图先例）；image_gen_fn 为 HTTP 生图通道
+    （image_provider != mcp）时由调用方传入，优先级高于 MCP。
     """
     dest = str(Path(img_dir) / "sleep_bg.png")
     if os.path.exists(dest) and os.path.getsize(dest) > 10_000:
@@ -39,24 +41,29 @@ def ensure_sleep_bg_image(img_dir: str, topic: str, style_prompt: str = "",
 
     prompt = build_bg_prompt(topic, style_prompt)
     try:
-        if not all((mcp_call_tool, mcp_parse_task_id, mcp_poll_task,
-                    mcp_download_file)):
+        if image_gen_fn is not None:
+            print("  [SleepBG] HTTP 生图通道生成中（1536x1024）...")
+            if not image_gen_fn(prompt, dest):
+                raise RuntimeError("HTTP 生图通道返回失败")
+        elif not all((mcp_call_tool, mcp_parse_task_id, mcp_poll_task,
+                      mcp_download_file)):
             print("  [SleepBG] MCP 通道未初始化 —— 跳过背景图生成（卡片回退纯渐变）")
             return ""
-        print("  [SleepBG] MCP 生成背景图中（landscape_16_9）...")
-        result = mcp_call_tool("generate_image", {
-            "prompt": prompt,
-            "provider": "seedream",
-            "image_size": "landscape_16_9",
-            "output_format": "png",
-        })
-        task_id = mcp_parse_task_id(result)
-        if not task_id:
-            raise RuntimeError("MCP 未返回任务 ID")
-        data = mcp_poll_task(task_id, interval=10, max_wait=600)
-        url = data.get("url", "")
-        if not url or not mcp_download_file(url, dest):
-            raise RuntimeError(f"生成失败（status={data.get('status')}）")
+        else:
+            print("  [SleepBG] MCP 生成背景图中（landscape_16_9）...")
+            result = mcp_call_tool("generate_image", {
+                "prompt": prompt,
+                "provider": "seedream",
+                "image_size": "landscape_16_9",
+                "output_format": "png",
+            })
+            task_id = mcp_parse_task_id(result)
+            if not task_id:
+                raise RuntimeError("MCP 未返回任务 ID")
+            data = mcp_poll_task(task_id, interval=10, max_wait=600)
+            url = data.get("url", "")
+            if not url or not mcp_download_file(url, dest):
+                raise RuntimeError(f"生成失败（status={data.get('status')}）")
     except Exception as e:  # noqa: BLE001 — 增强功能失败不中断 sleep 运行
         print(f"  [SleepBG] WARNING: 背景图生成失败（忽略，卡片回退纯渐变）: {e}")
         return ""
