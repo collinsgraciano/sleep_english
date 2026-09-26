@@ -1009,9 +1009,9 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument("--sleep-card-lead", type=float, default=0.3,
                         help="卡片提前量秒数（每组画面先出现 N 秒再开始朗读，0=关闭，默认 0.3，clamp 0-2）")
     parser.add_argument("--sleep-intro-volume-db", type=float, default=0.0,
-                        help="片头库视频音轨音量偏移 dB（-30~15，默认 0=原样；仅绑定片头视频时生效）")
+                        help="片头库视频音轨音量偏移 dB（-100~15，默认 0=原样；仅绑定片头视频时生效）")
     parser.add_argument("--sleep-outro-volume-db", type=float, default=0.0,
-                        help="片尾库视频音轨音量偏移 dB（-30~15，默认 0=原样；仅绑定片尾视频时生效）")
+                        help="片尾库视频音轨音量偏移 dB（-100~15，默认 0=原样；仅绑定片尾视频时生效）")
     parser.add_argument("--sleep-xfade", action="store_true",
                         help="相邻块边界画面交叉溶解过渡；仅画面、音频不动（默认关=硬切）")
     parser.add_argument("--sleep-xfade-sec", type=float, default=0.5,

@@ -433,7 +433,7 @@ def apply_final_loudnorm(video_path: str, vid_dir: str,
     norm_result = subprocess.run(
         ["ffmpeg", "-y", "-i", video_path,
          "-c:v", "copy",  # video passthrough — fast, no re-encode
-         "-c:a", "aac", "-b:a", "128k",
+         "-c:a", "aac", "-b:a", "128k", "-ar", "44100",
          "-af", "loudnorm=I=-14:TP=-1.5:LRA=11",
          norm_path],
         capture_output=True, timeout=600,
