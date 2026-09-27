@@ -41,8 +41,8 @@ async def api_list_runs():
         else:
             run_info["title"] = d.name
         run_info["videos"] = []
-        for v in d.glob("*.mp4"):
-            if v.name.startswith("final_no_sub") or v.name.startswith("final_video_norm"):
+        for v in sorted(d.glob("*.mp4")):
+            if v.name.startswith(("final_no_sub", "final_video_norm", "intro_video", "outro_video")):
                 continue
             run_info["videos"].append({
                 "name": v.name,
@@ -884,11 +884,11 @@ async def api_gallery(name: str, mode: str = ""):
     audio_dir = run_dir / "audio"
     audio = sorted([f.name for f in audio_dir.glob("*.mp3")]) if audio_dir.exists() else []
 
-    # Final videos in work_dir root (excluding intermediate files)
+    # Final videos in work_dir root (excluding intermediates + intro/outro 素材副本)
     final_videos = []
     if run_dir.exists():
         for v in sorted(run_dir.glob("*.mp4")):
-            if v.name.startswith("final_no_sub") or v.name.startswith("final_video_norm"):
+            if v.name.startswith(("final_no_sub", "final_video_norm", "intro_video", "outro_video")):
                 continue
             final_videos.append(v.name)
 
