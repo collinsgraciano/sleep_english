@@ -1,0 +1,2458 @@
+{
+  "title": "Everyday Phrases — Renting a Car",
+  "title_zh": "租車",
+  "scene_zh": "租車 · 情境對話",
+  "title_quote": "I would like to rent a car.",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】🚗 實用租車必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — Renting a Car",
+  "youtube_description": "睡著學英文！這部影片收錄實用租車情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫），不用背，睡前聽就會。重複播放，讓英文自然進入你的大腦。👍 想學更多生活場景，請留言告訴我！別忘了訂閱+按讚。 #英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical Renting a Car phrase pairs (each pair: male normal speed → female slow speed → combined dialogue). No memorization needed—just listen before bed and absorb naturally. If you want more real-life scenarios, leave a comment! Subscribe and like!",
+  "youtube_tags": [
+    "英文聽力",
+    "睡前英文",
+    "租車英文",
+    "English listening",
+    "Sleep learning",
+    "A2 English",
+    "常用英文短語",
+    "零基礎英文",
+    "慢速英文",
+    "英文口語",
+    "Learn English",
+    "English for daily life",
+    "ESL",
+    "English conversation",
+    "聽英語",
+    "英文學習"
+  ],
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "Renting a Car",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "Renting a Car",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Travel",
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "I would like to rent a car.",
+      "phonetic": "/aɪ wʊd laɪk tɪ rɛnt ə kɑr./",
+      "zh": "我想租輛車。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For how many days?",
+      "phonetic": "/fər haʊ ˈmɛni deɪz?/",
+      "zh": "租幾天？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Just for the weekend.",
+      "phonetic": "/ʤɪst fər ðə ˈwiˌkɪnd./",
+      "zh": "就這個週末。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A compact is fine.",
+      "phonetic": "/ə ˈkɑmpækt ɪz faɪn./",
+      "zh": "小型車就可以。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have automatic?",
+      "phonetic": "/du ju hæv ˌɔtəˈmætɪk?/",
+      "zh": "有自排車嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, most are automatic.",
+      "phonetic": "/jɛs, moʊst ər ˌɔtəˈmætɪk./",
+      "zh": "有，大多是自排。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the daily rate?",
+      "phonetic": "/wət ɪz ðə ˈdeɪli reɪt?/",
+      "zh": "日租多少？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Forty dollars a day.",
+      "phonetic": "/ˈfɔrti ˈdɔlərz ə deɪ./",
+      "zh": "一天四十美元。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is insurance included?",
+      "phonetic": "/ɪz ˌɪnˈʃʊrəns ˌɪnˈkludɪd?/",
+      "zh": "含保險嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Basic cover is included.",
+      "phonetic": "/ˈbeɪsɪk ˈkəvər ɪz ˌɪnˈkludɪd./",
+      "zh": "含基本險。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I need a GPS.",
+      "phonetic": "/aɪ nid ə ˈgipiˈɛs./",
+      "zh": "我需要導航。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can add one.",
+      "phonetic": "/wi kən æd wən./",
+      "zh": "可以加。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where do I pick it up?",
+      "phonetic": "/wɛr du aɪ pɪk ɪt əp?/",
+      "zh": "在哪取車？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "At the airport lot.",
+      "phonetic": "/æt ðə ˈɛrˌpɔrt lɔt./",
+      "zh": "在機場停車場。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I return it elsewhere?",
+      "phonetic": "/kən aɪ rɪˈtərn ɪt ˈɛlsˌwɛr?/",
+      "zh": "能異地還車嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, for a fee.",
+      "phonetic": "/jɛs, fər ə fi./",
+      "zh": "可以，要加費。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Show me the damage, please.",
+      "phonetic": "/ʃoʊ mi ðə ˈdæmɪʤ, pliz./",
+      "zh": "請指出已有的刮痕。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Note it on the form.",
+      "phonetic": "/noʊt ɪt ɔn ðə fɔrm./",
+      "zh": "在單子上註記。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tank is full.",
+      "phonetic": "/ðə tæŋk ɪz fʊl./",
+      "zh": "油箱是滿的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Return it full, too.",
+      "phonetic": "/rɪˈtərn ɪt fʊl, tu./",
+      "zh": "還車時也要滿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What if I am late?",
+      "phonetic": "/wət ɪf aɪ æm leɪt?/",
+      "zh": "遲還怎麼辦？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "An extra day's charge.",
+      "phonetic": "/ən ˈɛkstrə deɪz ʧɑrʤ./",
+      "zh": "加收一天費用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is there a mileage limit?",
+      "phonetic": "/ɪz ðɛr ə ˈmaɪlɪʤ ˈlɪmət?/",
+      "zh": "有里程限制嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Unlimited miles.",
+      "phonetic": "/ənˈlɪmɪtɪd maɪəlz./",
+      "zh": "不限里程。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will pay with this card.",
+      "phonetic": "/aɪ wɪl peɪ wɪθ ðɪs kɑrd./",
+      "zh": "我用這張卡付。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Insert it here.",
+      "phonetic": "/ˌɪnˈsərt ɪt hir./",
+      "zh": "插這裏。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where are the keys?",
+      "phonetic": "/wɛr ər ðə kiz?/",
+      "zh": "鑰匙呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In the envelope.",
+      "phonetic": "/ɪn ðə ˈɛnvəˌloʊp./",
+      "zh": "在信封裏。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How does the lights work?",
+      "phonetic": "/haʊ dɪz ðə laɪts wərk?/",
+      "zh": "燈怎麼開？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "This dial on the left.",
+      "phonetic": "/ðɪs daɪəl ɔn ðə lɛft./",
+      "zh": "左邊這個鈕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The seat is too far.",
+      "phonetic": "/ðə sit ɪz tu fɑr./",
+      "zh": "座椅太遠。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pull the lever.",
+      "phonetic": "/pʊl ðə ˈlɛvər./",
+      "zh": "拉這個杆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does it have Bluetooth?",
+      "phonetic": "/dɪz ɪt hæv ˈbluˌtuθ?/",
+      "zh": "有藍牙嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pair your phone.",
+      "phonetic": "/pɛr jʊr foʊn./",
+      "zh": "連手機。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is the spare tire?",
+      "phonetic": "/wɛr ɪz ðə spɛr taɪər?/",
+      "zh": "備胎在哪？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In the trunk.",
+      "phonetic": "/ɪn ðə trəŋk./",
+      "zh": "在後備廂。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I add a driver?",
+      "phonetic": "/kən aɪ æd ə ˈdraɪvər?/",
+      "zh": "能加司機嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We need their license.",
+      "phonetic": "/wi nid ðɛr ˈlaɪsəns./",
+      "zh": "需要駕照。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The windshield is cracked.",
+      "phonetic": "/ðə ˈwɪndˌʃild ɪz krækt./",
+      "zh": "擋風玻璃有裂。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Already noted, sir.",
+      "phonetic": "/ɔˈrɛdi ˈnoʊtɪd, sər./",
+      "zh": "已註記了，先生。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which fuel does it take?",
+      "phonetic": "/wɪʧ fjuəl dɪz ɪt teɪk?/",
+      "zh": "加什麼油？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Regular unleaded.",
+      "phonetic": "/ˈrɛgjələr ənˈlɛdəd./",
+      "zh": "普通無鉛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is roadside help free?",
+      "phonetic": "/ɪz ˈroʊdˌsaɪd hɛlp fri?/",
+      "zh": "道路救援免費嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Twenty-four seven.",
+      "phonetic": "/tˈwɛntiˌfɔr ˈsɛvən./",
+      "zh": "全天無休。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will keep it three days.",
+      "phonetic": "/aɪ wɪl kip ɪt θri deɪz./",
+      "zh": "我租三天。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Total is one twenty.",
+      "phonetic": "/ˈtoʊtəl ɪz wən tˈwɛnti./",
+      "zh": "總共一百二。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I extend online?",
+      "phonetic": "/kən aɪ ɪkˈstɛnd ˈɔnˌlaɪn?/",
+      "zh": "能線上續租嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, through the app.",
+      "phonetic": "/jɛs, θru ðə æp./",
+      "zh": "可以，用 App。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The brake feels soft.",
+      "phonetic": "/ðə breɪk filz sɔft./",
+      "zh": "剎車軟軟的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Please have it checked.",
+      "phonetic": "/pliz hæv ɪt ʧɛkt./",
+      "zh": "請檢查。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is the reverse gear?",
+      "phonetic": "/wɛr ɪz ðə rɪˈvərs gɪr?/",
+      "zh": "倒車檔在哪？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Push the lever down.",
+      "phonetic": "/pʊʃ ðə ˈlɛvər daʊn./",
+      "zh": "把杆往下壓。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is child seat available?",
+      "phonetic": "/ɪz ʧaɪld sit əˈveɪləbəl?/",
+      "zh": "有兒童座椅嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can fit one.",
+      "phonetic": "/wi kən fɪt wən./",
+      "zh": "可以裝一個。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The car is clean.",
+      "phonetic": "/ðə kɑr ɪz klin./",
+      "zh": "車很乾淨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We valet it daily.",
+      "phonetic": "/wi væˈleɪ ɪt ˈdeɪli./",
+      "zh": "每天整理。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am ready to go.",
+      "phonetic": "/aɪ æm ˈrɛdi tɪ goʊ./",
+      "zh": "我準備出發了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Safe driving, sir.",
+      "phonetic": "/seɪf ˈdraɪvɪŋ, sər./",
+      "zh": "先生，一路小心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How do I lock it?",
+      "phonetic": "/haʊ du aɪ lɑk ɪt?/",
+      "zh": "怎麼鎖車？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Press the fob twice.",
+      "phonetic": "/prɛs ðə fɔb twaɪs./",
+      "zh": "遙控按兩下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The mirror won't adjust.",
+      "phonetic": "/ðə ˈmɪrər woʊnt əˈʤəst./",
+      "zh": "後視鏡調不動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try the side button.",
+      "phonetic": "/traɪ ðə saɪd ˈbətən./",
+      "zh": "按側面鈕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I get a receipt?",
+      "phonetic": "/kən aɪ gɪt ə rɪˈsit?/",
+      "zh": "能開發票嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Emailed to you.",
+      "phonetic": "/iˈmeɪld tɪ ju./",
+      "zh": "寄到您郵箱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Drop-off is at noon.",
+      "phonetic": "/ˈdrɑˌpɔf ɪz æt nun./",
+      "zh": "中午前還車。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We will be here.",
+      "phonetic": "/wi wɪl bi hir./",
+      "zh": "我們會在這。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the rental.",
+      "phonetic": "/θæŋks fər ðə ˈrɛntəl./",
+      "zh": "謝謝租車。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Come back soon.",
+      "phonetic": "/kəm bæk sun./",
+      "zh": "歡迎再來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the rental.",
+      "phonetic": "/θæŋks fər ðə ˈrɛntəl./",
+      "zh": "謝謝租車。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Come back soon.",
+      "phonetic": "/kəm bæk sun./",
+      "zh": "歡迎再來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Drop-off is at noon.",
+      "phonetic": "/ˈdrɑˌpɔf ɪz æt nun./",
+      "zh": "中午前還車。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We will be here.",
+      "phonetic": "/wi wɪl bi hir./",
+      "zh": "我們會在這。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I get a receipt?",
+      "phonetic": "/kən aɪ gɪt ə rɪˈsit?/",
+      "zh": "能開發票嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Emailed to you.",
+      "phonetic": "/iˈmeɪld tɪ ju./",
+      "zh": "寄到您郵箱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The mirror won't adjust.",
+      "phonetic": "/ðə ˈmɪrər woʊnt əˈʤəst./",
+      "zh": "後視鏡調不動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try the side button.",
+      "phonetic": "/traɪ ðə saɪd ˈbətən./",
+      "zh": "按側面鈕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How do I lock it?",
+      "phonetic": "/haʊ du aɪ lɑk ɪt?/",
+      "zh": "怎麼鎖車？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Press the fob twice.",
+      "phonetic": "/prɛs ðə fɔb twaɪs./",
+      "zh": "遙控按兩下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am ready to go.",
+      "phonetic": "/aɪ æm ˈrɛdi tɪ goʊ./",
+      "zh": "我準備出發了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Safe driving, sir.",
+      "phonetic": "/seɪf ˈdraɪvɪŋ, sər./",
+      "zh": "先生，一路小心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The car is clean.",
+      "phonetic": "/ðə kɑr ɪz klin./",
+      "zh": "車很乾淨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We valet it daily.",
+      "phonetic": "/wi væˈleɪ ɪt ˈdeɪli./",
+      "zh": "每天整理。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is child seat available?",
+      "phonetic": "/ɪz ʧaɪld sit əˈveɪləbəl?/",
+      "zh": "有兒童座椅嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can fit one.",
+      "phonetic": "/wi kən fɪt wən./",
+      "zh": "可以裝一個。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is the reverse gear?",
+      "phonetic": "/wɛr ɪz ðə rɪˈvərs gɪr?/",
+      "zh": "倒車檔在哪？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Push the lever down.",
+      "phonetic": "/pʊʃ ðə ˈlɛvər daʊn./",
+      "zh": "把杆往下壓。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The brake feels soft.",
+      "phonetic": "/ðə breɪk filz sɔft./",
+      "zh": "剎車軟軟的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Please have it checked.",
+      "phonetic": "/pliz hæv ɪt ʧɛkt./",
+      "zh": "請檢查。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I extend online?",
+      "phonetic": "/kən aɪ ɪkˈstɛnd ˈɔnˌlaɪn?/",
+      "zh": "能線上續租嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, through the app.",
+      "phonetic": "/jɛs, θru ðə æp./",
+      "zh": "可以，用 App。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will keep it three days.",
+      "phonetic": "/aɪ wɪl kip ɪt θri deɪz./",
+      "zh": "我租三天。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Total is one twenty.",
+      "phonetic": "/ˈtoʊtəl ɪz wən tˈwɛnti./",
+      "zh": "總共一百二。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is roadside help free?",
+      "phonetic": "/ɪz ˈroʊdˌsaɪd hɛlp fri?/",
+      "zh": "道路救援免費嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Twenty-four seven.",
+      "phonetic": "/tˈwɛntiˌfɔr ˈsɛvən./",
+      "zh": "全天無休。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which fuel does it take?",
+      "phonetic": "/wɪʧ fjuəl dɪz ɪt teɪk?/",
+      "zh": "加什麼油？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Regular unleaded.",
+      "phonetic": "/ˈrɛgjələr ənˈlɛdəd./",
+      "zh": "普通無鉛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The windshield is cracked.",
+      "phonetic": "/ðə ˈwɪndˌʃild ɪz krækt./",
+      "zh": "擋風玻璃有裂。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Already noted, sir.",
+      "phonetic": "/ɔˈrɛdi ˈnoʊtɪd, sər./",
+      "zh": "已註記了，先生。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I add a driver?",
+      "phonetic": "/kən aɪ æd ə ˈdraɪvər?/",
+      "zh": "能加司機嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We need their license.",
+      "phonetic": "/wi nid ðɛr ˈlaɪsəns./",
+      "zh": "需要駕照。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is the spare tire?",
+      "phonetic": "/wɛr ɪz ðə spɛr taɪər?/",
+      "zh": "備胎在哪？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In the trunk.",
+      "phonetic": "/ɪn ðə trəŋk./",
+      "zh": "在後備廂。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does it have Bluetooth?",
+      "phonetic": "/dɪz ɪt hæv ˈbluˌtuθ?/",
+      "zh": "有藍牙嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pair your phone.",
+      "phonetic": "/pɛr jʊr foʊn./",
+      "zh": "連手機。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The seat is too far.",
+      "phonetic": "/ðə sit ɪz tu fɑr./",
+      "zh": "座椅太遠。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pull the lever.",
+      "phonetic": "/pʊl ðə ˈlɛvər./",
+      "zh": "拉這個杆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How does the lights work?",
+      "phonetic": "/haʊ dɪz ðə laɪts wərk?/",
+      "zh": "燈怎麼開？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "This dial on the left.",
+      "phonetic": "/ðɪs daɪəl ɔn ðə lɛft./",
+      "zh": "左邊這個鈕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where are the keys?",
+      "phonetic": "/wɛr ər ðə kiz?/",
+      "zh": "鑰匙呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In the envelope.",
+      "phonetic": "/ɪn ðə ˈɛnvəˌloʊp./",
+      "zh": "在信封裏。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will pay with this card.",
+      "phonetic": "/aɪ wɪl peɪ wɪθ ðɪs kɑrd./",
+      "zh": "我用這張卡付。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Insert it here.",
+      "phonetic": "/ˌɪnˈsərt ɪt hir./",
+      "zh": "插這裏。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is there a mileage limit?",
+      "phonetic": "/ɪz ðɛr ə ˈmaɪlɪʤ ˈlɪmət?/",
+      "zh": "有里程限制嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Unlimited miles.",
+      "phonetic": "/ənˈlɪmɪtɪd maɪəlz./",
+      "zh": "不限里程。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What if I am late?",
+      "phonetic": "/wət ɪf aɪ æm leɪt?/",
+      "zh": "遲還怎麼辦？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "An extra day's charge.",
+      "phonetic": "/ən ˈɛkstrə deɪz ʧɑrʤ./",
+      "zh": "加收一天費用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tank is full.",
+      "phonetic": "/ðə tæŋk ɪz fʊl./",
+      "zh": "油箱是滿的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Return it full, too.",
+      "phonetic": "/rɪˈtərn ɪt fʊl, tu./",
+      "zh": "還車時也要滿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Show me the damage, please.",
+      "phonetic": "/ʃoʊ mi ðə ˈdæmɪʤ, pliz./",
+      "zh": "請指出已有的刮痕。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Note it on the form.",
+      "phonetic": "/noʊt ɪt ɔn ðə fɔrm./",
+      "zh": "在單子上註記。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I return it elsewhere?",
+      "phonetic": "/kən aɪ rɪˈtərn ɪt ˈɛlsˌwɛr?/",
+      "zh": "能異地還車嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, for a fee.",
+      "phonetic": "/jɛs, fər ə fi./",
+      "zh": "可以，要加費。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where do I pick it up?",
+      "phonetic": "/wɛr du aɪ pɪk ɪt əp?/",
+      "zh": "在哪取車？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "At the airport lot.",
+      "phonetic": "/æt ðə ˈɛrˌpɔrt lɔt./",
+      "zh": "在機場停車場。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I need a GPS.",
+      "phonetic": "/aɪ nid ə ˈgipiˈɛs./",
+      "zh": "我需要導航。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can add one.",
+      "phonetic": "/wi kən æd wən./",
+      "zh": "可以加。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is insurance included?",
+      "phonetic": "/ɪz ˌɪnˈʃʊrəns ˌɪnˈkludɪd?/",
+      "zh": "含保險嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Basic cover is included.",
+      "phonetic": "/ˈbeɪsɪk ˈkəvər ɪz ˌɪnˈkludɪd./",
+      "zh": "含基本險。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the daily rate?",
+      "phonetic": "/wət ɪz ðə ˈdeɪli reɪt?/",
+      "zh": "日租多少？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Forty dollars a day.",
+      "phonetic": "/ˈfɔrti ˈdɔlərz ə deɪ./",
+      "zh": "一天四十美元。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have automatic?",
+      "phonetic": "/du ju hæv ˌɔtəˈmætɪk?/",
+      "zh": "有自排車嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, most are automatic.",
+      "phonetic": "/jɛs, moʊst ər ˌɔtəˈmætɪk./",
+      "zh": "有，大多是自排。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Just for the weekend.",
+      "phonetic": "/ʤɪst fər ðə ˈwiˌkɪnd./",
+      "zh": "就這個週末。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A compact is fine.",
+      "phonetic": "/ə ˈkɑmpækt ɪz faɪn./",
+      "zh": "小型車就可以。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I would like to rent a car.",
+      "phonetic": "/aɪ wʊd laɪk tɪ rɛnt ə kɑr./",
+      "zh": "我想租輛車。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For how many days?",
+      "phonetic": "/fər haʊ ˈmɛni deɪz?/",
+      "zh": "租幾天？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I would like to rent a car.",
+      "phonetic": "/aɪ wʊd laɪk tɪ rɛnt ə kɑr./",
+      "zh": "我想租輛車。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For how many days?",
+      "phonetic": "/fər haʊ ˈmɛni deɪz?/",
+      "zh": "租幾天？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Just for the weekend.",
+      "phonetic": "/ʤɪst fər ðə ˈwiˌkɪnd./",
+      "zh": "就這個週末。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A compact is fine.",
+      "phonetic": "/ə ˈkɑmpækt ɪz faɪn./",
+      "zh": "小型車就可以。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have automatic?",
+      "phonetic": "/du ju hæv ˌɔtəˈmætɪk?/",
+      "zh": "有自排車嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, most are automatic.",
+      "phonetic": "/jɛs, moʊst ər ˌɔtəˈmætɪk./",
+      "zh": "有，大多是自排。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the daily rate?",
+      "phonetic": "/wət ɪz ðə ˈdeɪli reɪt?/",
+      "zh": "日租多少？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Forty dollars a day.",
+      "phonetic": "/ˈfɔrti ˈdɔlərz ə deɪ./",
+      "zh": "一天四十美元。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is insurance included?",
+      "phonetic": "/ɪz ˌɪnˈʃʊrəns ˌɪnˈkludɪd?/",
+      "zh": "含保險嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Basic cover is included.",
+      "phonetic": "/ˈbeɪsɪk ˈkəvər ɪz ˌɪnˈkludɪd./",
+      "zh": "含基本險。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I need a GPS.",
+      "phonetic": "/aɪ nid ə ˈgipiˈɛs./",
+      "zh": "我需要導航。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can add one.",
+      "phonetic": "/wi kən æd wən./",
+      "zh": "可以加。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where do I pick it up?",
+      "phonetic": "/wɛr du aɪ pɪk ɪt əp?/",
+      "zh": "在哪取車？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "At the airport lot.",
+      "phonetic": "/æt ðə ˈɛrˌpɔrt lɔt./",
+      "zh": "在機場停車場。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I return it elsewhere?",
+      "phonetic": "/kən aɪ rɪˈtərn ɪt ˈɛlsˌwɛr?/",
+      "zh": "能異地還車嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, for a fee.",
+      "phonetic": "/jɛs, fər ə fi./",
+      "zh": "可以，要加費。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Show me the damage, please.",
+      "phonetic": "/ʃoʊ mi ðə ˈdæmɪʤ, pliz./",
+      "zh": "請指出已有的刮痕。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Note it on the form.",
+      "phonetic": "/noʊt ɪt ɔn ðə fɔrm./",
+      "zh": "在單子上註記。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tank is full.",
+      "phonetic": "/ðə tæŋk ɪz fʊl./",
+      "zh": "油箱是滿的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Return it full, too.",
+      "phonetic": "/rɪˈtərn ɪt fʊl, tu./",
+      "zh": "還車時也要滿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What if I am late?",
+      "phonetic": "/wət ɪf aɪ æm leɪt?/",
+      "zh": "遲還怎麼辦？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "An extra day's charge.",
+      "phonetic": "/ən ˈɛkstrə deɪz ʧɑrʤ./",
+      "zh": "加收一天費用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is there a mileage limit?",
+      "phonetic": "/ɪz ðɛr ə ˈmaɪlɪʤ ˈlɪmət?/",
+      "zh": "有里程限制嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Unlimited miles.",
+      "phonetic": "/ənˈlɪmɪtɪd maɪəlz./",
+      "zh": "不限里程。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will pay with this card.",
+      "phonetic": "/aɪ wɪl peɪ wɪθ ðɪs kɑrd./",
+      "zh": "我用這張卡付。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Insert it here.",
+      "phonetic": "/ˌɪnˈsərt ɪt hir./",
+      "zh": "插這裏。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where are the keys?",
+      "phonetic": "/wɛr ər ðə kiz?/",
+      "zh": "鑰匙呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In the envelope.",
+      "phonetic": "/ɪn ðə ˈɛnvəˌloʊp./",
+      "zh": "在信封裏。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How does the lights work?",
+      "phonetic": "/haʊ dɪz ðə laɪts wərk?/",
+      "zh": "燈怎麼開？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "This dial on the left.",
+      "phonetic": "/ðɪs daɪəl ɔn ðə lɛft./",
+      "zh": "左邊這個鈕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The seat is too far.",
+      "phonetic": "/ðə sit ɪz tu fɑr./",
+      "zh": "座椅太遠。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pull the lever.",
+      "phonetic": "/pʊl ðə ˈlɛvər./",
+      "zh": "拉這個杆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does it have Bluetooth?",
+      "phonetic": "/dɪz ɪt hæv ˈbluˌtuθ?/",
+      "zh": "有藍牙嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pair your phone.",
+      "phonetic": "/pɛr jʊr foʊn./",
+      "zh": "連手機。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is the spare tire?",
+      "phonetic": "/wɛr ɪz ðə spɛr taɪər?/",
+      "zh": "備胎在哪？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In the trunk.",
+      "phonetic": "/ɪn ðə trəŋk./",
+      "zh": "在後備廂。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I add a driver?",
+      "phonetic": "/kən aɪ æd ə ˈdraɪvər?/",
+      "zh": "能加司機嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We need their license.",
+      "phonetic": "/wi nid ðɛr ˈlaɪsəns./",
+      "zh": "需要駕照。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The windshield is cracked.",
+      "phonetic": "/ðə ˈwɪndˌʃild ɪz krækt./",
+      "zh": "擋風玻璃有裂。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Already noted, sir.",
+      "phonetic": "/ɔˈrɛdi ˈnoʊtɪd, sər./",
+      "zh": "已註記了，先生。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which fuel does it take?",
+      "phonetic": "/wɪʧ fjuəl dɪz ɪt teɪk?/",
+      "zh": "加什麼油？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Regular unleaded.",
+      "phonetic": "/ˈrɛgjələr ənˈlɛdəd./",
+      "zh": "普通無鉛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is roadside help free?",
+      "phonetic": "/ɪz ˈroʊdˌsaɪd hɛlp fri?/",
+      "zh": "道路救援免費嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Twenty-four seven.",
+      "phonetic": "/tˈwɛntiˌfɔr ˈsɛvən./",
+      "zh": "全天無休。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will keep it three days.",
+      "phonetic": "/aɪ wɪl kip ɪt θri deɪz./",
+      "zh": "我租三天。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Total is one twenty.",
+      "phonetic": "/ˈtoʊtəl ɪz wən tˈwɛnti./",
+      "zh": "總共一百二。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I extend online?",
+      "phonetic": "/kən aɪ ɪkˈstɛnd ˈɔnˌlaɪn?/",
+      "zh": "能線上續租嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, through the app.",
+      "phonetic": "/jɛs, θru ðə æp./",
+      "zh": "可以，用 App。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The brake feels soft.",
+      "phonetic": "/ðə breɪk filz sɔft./",
+      "zh": "剎車軟軟的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Please have it checked.",
+      "phonetic": "/pliz hæv ɪt ʧɛkt./",
+      "zh": "請檢查。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is the reverse gear?",
+      "phonetic": "/wɛr ɪz ðə rɪˈvərs gɪr?/",
+      "zh": "倒車檔在哪？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Push the lever down.",
+      "phonetic": "/pʊʃ ðə ˈlɛvər daʊn./",
+      "zh": "把杆往下壓。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is child seat available?",
+      "phonetic": "/ɪz ʧaɪld sit əˈveɪləbəl?/",
+      "zh": "有兒童座椅嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can fit one.",
+      "phonetic": "/wi kən fɪt wən./",
+      "zh": "可以裝一個。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The car is clean.",
+      "phonetic": "/ðə kɑr ɪz klin./",
+      "zh": "車很乾淨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We valet it daily.",
+      "phonetic": "/wi væˈleɪ ɪt ˈdeɪli./",
+      "zh": "每天整理。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am ready to go.",
+      "phonetic": "/aɪ æm ˈrɛdi tɪ goʊ./",
+      "zh": "我準備出發了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Safe driving, sir.",
+      "phonetic": "/seɪf ˈdraɪvɪŋ, sər./",
+      "zh": "先生，一路小心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How do I lock it?",
+      "phonetic": "/haʊ du aɪ lɑk ɪt?/",
+      "zh": "怎麼鎖車？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Press the fob twice.",
+      "phonetic": "/prɛs ðə fɔb twaɪs./",
+      "zh": "遙控按兩下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The mirror won't adjust.",
+      "phonetic": "/ðə ˈmɪrər woʊnt əˈʤəst./",
+      "zh": "後視鏡調不動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try the side button.",
+      "phonetic": "/traɪ ðə saɪd ˈbətən./",
+      "zh": "按側面鈕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I get a receipt?",
+      "phonetic": "/kən aɪ gɪt ə rɪˈsit?/",
+      "zh": "能開發票嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Emailed to you.",
+      "phonetic": "/iˈmeɪld tɪ ju./",
+      "zh": "寄到您郵箱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Drop-off is at noon.",
+      "phonetic": "/ˈdrɑˌpɔf ɪz æt nun./",
+      "zh": "中午前還車。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We will be here.",
+      "phonetic": "/wi wɪl bi hir./",
+      "zh": "我們會在這。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the rental.",
+      "phonetic": "/θæŋks fər ðə ˈrɛntəl./",
+      "zh": "謝謝租車。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Come back soon.",
+      "phonetic": "/kəm bæk sun./",
+      "zh": "歡迎再來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the rental.",
+      "phonetic": "/θæŋks fər ðə ˈrɛntəl./",
+      "zh": "謝謝租車。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Come back soon.",
+      "phonetic": "/kəm bæk sun./",
+      "zh": "歡迎再來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Drop-off is at noon.",
+      "phonetic": "/ˈdrɑˌpɔf ɪz æt nun./",
+      "zh": "中午前還車。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We will be here.",
+      "phonetic": "/wi wɪl bi hir./",
+      "zh": "我們會在這。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I get a receipt?",
+      "phonetic": "/kən aɪ gɪt ə rɪˈsit?/",
+      "zh": "能開發票嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Emailed to you.",
+      "phonetic": "/iˈmeɪld tɪ ju./",
+      "zh": "寄到您郵箱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The mirror won't adjust.",
+      "phonetic": "/ðə ˈmɪrər woʊnt əˈʤəst./",
+      "zh": "後視鏡調不動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try the side button.",
+      "phonetic": "/traɪ ðə saɪd ˈbətən./",
+      "zh": "按側面鈕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How do I lock it?",
+      "phonetic": "/haʊ du aɪ lɑk ɪt?/",
+      "zh": "怎麼鎖車？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Press the fob twice.",
+      "phonetic": "/prɛs ðə fɔb twaɪs./",
+      "zh": "遙控按兩下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am ready to go.",
+      "phonetic": "/aɪ æm ˈrɛdi tɪ goʊ./",
+      "zh": "我準備出發了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Safe driving, sir.",
+      "phonetic": "/seɪf ˈdraɪvɪŋ, sər./",
+      "zh": "先生，一路小心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The car is clean.",
+      "phonetic": "/ðə kɑr ɪz klin./",
+      "zh": "車很乾淨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We valet it daily.",
+      "phonetic": "/wi væˈleɪ ɪt ˈdeɪli./",
+      "zh": "每天整理。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is child seat available?",
+      "phonetic": "/ɪz ʧaɪld sit əˈveɪləbəl?/",
+      "zh": "有兒童座椅嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can fit one.",
+      "phonetic": "/wi kən fɪt wən./",
+      "zh": "可以裝一個。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is the reverse gear?",
+      "phonetic": "/wɛr ɪz ðə rɪˈvərs gɪr?/",
+      "zh": "倒車檔在哪？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Push the lever down.",
+      "phonetic": "/pʊʃ ðə ˈlɛvər daʊn./",
+      "zh": "把杆往下壓。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The brake feels soft.",
+      "phonetic": "/ðə breɪk filz sɔft./",
+      "zh": "剎車軟軟的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Please have it checked.",
+      "phonetic": "/pliz hæv ɪt ʧɛkt./",
+      "zh": "請檢查。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I extend online?",
+      "phonetic": "/kən aɪ ɪkˈstɛnd ˈɔnˌlaɪn?/",
+      "zh": "能線上續租嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, through the app.",
+      "phonetic": "/jɛs, θru ðə æp./",
+      "zh": "可以，用 App。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will keep it three days.",
+      "phonetic": "/aɪ wɪl kip ɪt θri deɪz./",
+      "zh": "我租三天。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Total is one twenty.",
+      "phonetic": "/ˈtoʊtəl ɪz wən tˈwɛnti./",
+      "zh": "總共一百二。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is roadside help free?",
+      "phonetic": "/ɪz ˈroʊdˌsaɪd hɛlp fri?/",
+      "zh": "道路救援免費嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Twenty-four seven.",
+      "phonetic": "/tˈwɛntiˌfɔr ˈsɛvən./",
+      "zh": "全天無休。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which fuel does it take?",
+      "phonetic": "/wɪʧ fjuəl dɪz ɪt teɪk?/",
+      "zh": "加什麼油？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Regular unleaded.",
+      "phonetic": "/ˈrɛgjələr ənˈlɛdəd./",
+      "zh": "普通無鉛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The windshield is cracked.",
+      "phonetic": "/ðə ˈwɪndˌʃild ɪz krækt./",
+      "zh": "擋風玻璃有裂。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Already noted, sir.",
+      "phonetic": "/ɔˈrɛdi ˈnoʊtɪd, sər./",
+      "zh": "已註記了，先生。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I add a driver?",
+      "phonetic": "/kən aɪ æd ə ˈdraɪvər?/",
+      "zh": "能加司機嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We need their license.",
+      "phonetic": "/wi nid ðɛr ˈlaɪsəns./",
+      "zh": "需要駕照。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is the spare tire?",
+      "phonetic": "/wɛr ɪz ðə spɛr taɪər?/",
+      "zh": "備胎在哪？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In the trunk.",
+      "phonetic": "/ɪn ðə trəŋk./",
+      "zh": "在後備廂。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does it have Bluetooth?",
+      "phonetic": "/dɪz ɪt hæv ˈbluˌtuθ?/",
+      "zh": "有藍牙嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pair your phone.",
+      "phonetic": "/pɛr jʊr foʊn./",
+      "zh": "連手機。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The seat is too far.",
+      "phonetic": "/ðə sit ɪz tu fɑr./",
+      "zh": "座椅太遠。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pull the lever.",
+      "phonetic": "/pʊl ðə ˈlɛvər./",
+      "zh": "拉這個杆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How does the lights work?",
+      "phonetic": "/haʊ dɪz ðə laɪts wərk?/",
+      "zh": "燈怎麼開？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "This dial on the left.",
+      "phonetic": "/ðɪs daɪəl ɔn ðə lɛft./",
+      "zh": "左邊這個鈕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where are the keys?",
+      "phonetic": "/wɛr ər ðə kiz?/",
+      "zh": "鑰匙呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In the envelope.",
+      "phonetic": "/ɪn ðə ˈɛnvəˌloʊp./",
+      "zh": "在信封裏。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will pay with this card.",
+      "phonetic": "/aɪ wɪl peɪ wɪθ ðɪs kɑrd./",
+      "zh": "我用這張卡付。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Insert it here.",
+      "phonetic": "/ˌɪnˈsərt ɪt hir./",
+      "zh": "插這裏。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is there a mileage limit?",
+      "phonetic": "/ɪz ðɛr ə ˈmaɪlɪʤ ˈlɪmət?/",
+      "zh": "有里程限制嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Unlimited miles.",
+      "phonetic": "/ənˈlɪmɪtɪd maɪəlz./",
+      "zh": "不限里程。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What if I am late?",
+      "phonetic": "/wət ɪf aɪ æm leɪt?/",
+      "zh": "遲還怎麼辦？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "An extra day's charge.",
+      "phonetic": "/ən ˈɛkstrə deɪz ʧɑrʤ./",
+      "zh": "加收一天費用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tank is full.",
+      "phonetic": "/ðə tæŋk ɪz fʊl./",
+      "zh": "油箱是滿的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Return it full, too.",
+      "phonetic": "/rɪˈtərn ɪt fʊl, tu./",
+      "zh": "還車時也要滿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Show me the damage, please.",
+      "phonetic": "/ʃoʊ mi ðə ˈdæmɪʤ, pliz./",
+      "zh": "請指出已有的刮痕。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Note it on the form.",
+      "phonetic": "/noʊt ɪt ɔn ðə fɔrm./",
+      "zh": "在單子上註記。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I return it elsewhere?",
+      "phonetic": "/kən aɪ rɪˈtərn ɪt ˈɛlsˌwɛr?/",
+      "zh": "能異地還車嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, for a fee.",
+      "phonetic": "/jɛs, fər ə fi./",
+      "zh": "可以，要加費。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where do I pick it up?",
+      "phonetic": "/wɛr du aɪ pɪk ɪt əp?/",
+      "zh": "在哪取車？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "At the airport lot.",
+      "phonetic": "/æt ðə ˈɛrˌpɔrt lɔt./",
+      "zh": "在機場停車場。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I need a GPS.",
+      "phonetic": "/aɪ nid ə ˈgipiˈɛs./",
+      "zh": "我需要導航。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can add one.",
+      "phonetic": "/wi kən æd wən./",
+      "zh": "可以加。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is insurance included?",
+      "phonetic": "/ɪz ˌɪnˈʃʊrəns ˌɪnˈkludɪd?/",
+      "zh": "含保險嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Basic cover is included.",
+      "phonetic": "/ˈbeɪsɪk ˈkəvər ɪz ˌɪnˈkludɪd./",
+      "zh": "含基本險。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the daily rate?",
+      "phonetic": "/wət ɪz ðə ˈdeɪli reɪt?/",
+      "zh": "日租多少？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Forty dollars a day.",
+      "phonetic": "/ˈfɔrti ˈdɔlərz ə deɪ./",
+      "zh": "一天四十美元。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have automatic?",
+      "phonetic": "/du ju hæv ˌɔtəˈmætɪk?/",
+      "zh": "有自排車嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, most are automatic.",
+      "phonetic": "/jɛs, moʊst ər ˌɔtəˈmætɪk./",
+      "zh": "有，大多是自排。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Just for the weekend.",
+      "phonetic": "/ʤɪst fər ðə ˈwiˌkɪnd./",
+      "zh": "就這個週末。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A compact is fine.",
+      "phonetic": "/ə ˈkɑmpækt ɪz faɪn./",
+      "zh": "小型車就可以。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I would like to rent a car.",
+      "phonetic": "/aɪ wʊd laɪk tɪ rɛnt ə kɑr./",
+      "zh": "我想租輛車。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For how many days?",
+      "phonetic": "/fər haʊ ˈmɛni deɪz?/",
+      "zh": "租幾天？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I would like to rent a car.",
+      "phonetic": "/aɪ wʊd laɪk tɪ rɛnt ə kɑr./",
+      "zh": "我想租輛車。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For how many days?",
+      "phonetic": "/fər haʊ ˈmɛni deɪz?/",
+      "zh": "租幾天？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Just for the weekend.",
+      "phonetic": "/ʤɪst fər ðə ˈwiˌkɪnd./",
+      "zh": "就這個週末。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A compact is fine.",
+      "phonetic": "/ə ˈkɑmpækt ɪz faɪn./",
+      "zh": "小型車就可以。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have automatic?",
+      "phonetic": "/du ju hæv ˌɔtəˈmætɪk?/",
+      "zh": "有自排車嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, most are automatic.",
+      "phonetic": "/jɛs, moʊst ər ˌɔtəˈmætɪk./",
+      "zh": "有，大多是自排。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the daily rate?",
+      "phonetic": "/wət ɪz ðə ˈdeɪli reɪt?/",
+      "zh": "日租多少？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Forty dollars a day.",
+      "phonetic": "/ˈfɔrti ˈdɔlərz ə deɪ./",
+      "zh": "一天四十美元。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is insurance included?",
+      "phonetic": "/ɪz ˌɪnˈʃʊrəns ˌɪnˈkludɪd?/",
+      "zh": "含保險嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Basic cover is included.",
+      "phonetic": "/ˈbeɪsɪk ˈkəvər ɪz ˌɪnˈkludɪd./",
+      "zh": "含基本險。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I need a GPS.",
+      "phonetic": "/aɪ nid ə ˈgipiˈɛs./",
+      "zh": "我需要導航。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can add one.",
+      "phonetic": "/wi kən æd wən./",
+      "zh": "可以加。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where do I pick it up?",
+      "phonetic": "/wɛr du aɪ pɪk ɪt əp?/",
+      "zh": "在哪取車？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "At the airport lot.",
+      "phonetic": "/æt ðə ˈɛrˌpɔrt lɔt./",
+      "zh": "在機場停車場。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I return it elsewhere?",
+      "phonetic": "/kən aɪ rɪˈtərn ɪt ˈɛlsˌwɛr?/",
+      "zh": "能異地還車嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, for a fee.",
+      "phonetic": "/jɛs, fər ə fi./",
+      "zh": "可以，要加費。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Show me the damage, please.",
+      "phonetic": "/ʃoʊ mi ðə ˈdæmɪʤ, pliz./",
+      "zh": "請指出已有的刮痕。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Note it on the form.",
+      "phonetic": "/noʊt ɪt ɔn ðə fɔrm./",
+      "zh": "在單子上註記。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tank is full.",
+      "phonetic": "/ðə tæŋk ɪz fʊl./",
+      "zh": "油箱是滿的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Return it full, too.",
+      "phonetic": "/rɪˈtərn ɪt fʊl, tu./",
+      "zh": "還車時也要滿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What if I am late?",
+      "phonetic": "/wət ɪf aɪ æm leɪt?/",
+      "zh": "遲還怎麼辦？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "An extra day's charge.",
+      "phonetic": "/ən ˈɛkstrə deɪz ʧɑrʤ./",
+      "zh": "加收一天費用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is there a mileage limit?",
+      "phonetic": "/ɪz ðɛr ə ˈmaɪlɪʤ ˈlɪmət?/",
+      "zh": "有里程限制嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Unlimited miles.",
+      "phonetic": "/ənˈlɪmɪtɪd maɪəlz./",
+      "zh": "不限里程。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will pay with this card.",
+      "phonetic": "/aɪ wɪl peɪ wɪθ ðɪs kɑrd./",
+      "zh": "我用這張卡付。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Insert it here.",
+      "phonetic": "/ˌɪnˈsərt ɪt hir./",
+      "zh": "插這裏。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where are the keys?",
+      "phonetic": "/wɛr ər ðə kiz?/",
+      "zh": "鑰匙呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In the envelope.",
+      "phonetic": "/ɪn ðə ˈɛnvəˌloʊp./",
+      "zh": "在信封裏。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How does the lights work?",
+      "phonetic": "/haʊ dɪz ðə laɪts wərk?/",
+      "zh": "燈怎麼開？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "This dial on the left.",
+      "phonetic": "/ðɪs daɪəl ɔn ðə lɛft./",
+      "zh": "左邊這個鈕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The seat is too far.",
+      "phonetic": "/ðə sit ɪz tu fɑr./",
+      "zh": "座椅太遠。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pull the lever.",
+      "phonetic": "/pʊl ðə ˈlɛvər./",
+      "zh": "拉這個杆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does it have Bluetooth?",
+      "phonetic": "/dɪz ɪt hæv ˈbluˌtuθ?/",
+      "zh": "有藍牙嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pair your phone.",
+      "phonetic": "/pɛr jʊr foʊn./",
+      "zh": "連手機。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is the spare tire?",
+      "phonetic": "/wɛr ɪz ðə spɛr taɪər?/",
+      "zh": "備胎在哪？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In the trunk.",
+      "phonetic": "/ɪn ðə trəŋk./",
+      "zh": "在後備廂。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I add a driver?",
+      "phonetic": "/kən aɪ æd ə ˈdraɪvər?/",
+      "zh": "能加司機嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We need their license.",
+      "phonetic": "/wi nid ðɛr ˈlaɪsəns./",
+      "zh": "需要駕照。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The windshield is cracked.",
+      "phonetic": "/ðə ˈwɪndˌʃild ɪz krækt./",
+      "zh": "擋風玻璃有裂。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Already noted, sir.",
+      "phonetic": "/ɔˈrɛdi ˈnoʊtɪd, sər./",
+      "zh": "已註記了，先生。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which fuel does it take?",
+      "phonetic": "/wɪʧ fjuəl dɪz ɪt teɪk?/",
+      "zh": "加什麼油？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Regular unleaded.",
+      "phonetic": "/ˈrɛgjələr ənˈlɛdəd./",
+      "zh": "普通無鉛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is roadside help free?",
+      "phonetic": "/ɪz ˈroʊdˌsaɪd hɛlp fri?/",
+      "zh": "道路救援免費嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Twenty-four seven.",
+      "phonetic": "/tˈwɛntiˌfɔr ˈsɛvən./",
+      "zh": "全天無休。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will keep it three days.",
+      "phonetic": "/aɪ wɪl kip ɪt θri deɪz./",
+      "zh": "我租三天。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Total is one twenty.",
+      "phonetic": "/ˈtoʊtəl ɪz wən tˈwɛnti./",
+      "zh": "總共一百二。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I extend online?",
+      "phonetic": "/kən aɪ ɪkˈstɛnd ˈɔnˌlaɪn?/",
+      "zh": "能線上續租嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, through the app.",
+      "phonetic": "/jɛs, θru ðə æp./",
+      "zh": "可以，用 App。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The brake feels soft.",
+      "phonetic": "/ðə breɪk filz sɔft./",
+      "zh": "剎車軟軟的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Please have it checked.",
+      "phonetic": "/pliz hæv ɪt ʧɛkt./",
+      "zh": "請檢查。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is the reverse gear?",
+      "phonetic": "/wɛr ɪz ðə rɪˈvərs gɪr?/",
+      "zh": "倒車檔在哪？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Push the lever down.",
+      "phonetic": "/pʊʃ ðə ˈlɛvər daʊn./",
+      "zh": "把杆往下壓。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is child seat available?",
+      "phonetic": "/ɪz ʧaɪld sit əˈveɪləbəl?/",
+      "zh": "有兒童座椅嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can fit one.",
+      "phonetic": "/wi kən fɪt wən./",
+      "zh": "可以裝一個。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The car is clean.",
+      "phonetic": "/ðə kɑr ɪz klin./",
+      "zh": "車很乾淨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We valet it daily.",
+      "phonetic": "/wi væˈleɪ ɪt ˈdeɪli./",
+      "zh": "每天整理。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am ready to go.",
+      "phonetic": "/aɪ æm ˈrɛdi tɪ goʊ./",
+      "zh": "我準備出發了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Safe driving, sir.",
+      "phonetic": "/seɪf ˈdraɪvɪŋ, sər./",
+      "zh": "先生，一路小心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How do I lock it?",
+      "phonetic": "/haʊ du aɪ lɑk ɪt?/",
+      "zh": "怎麼鎖車？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Press the fob twice.",
+      "phonetic": "/prɛs ðə fɔb twaɪs./",
+      "zh": "遙控按兩下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The mirror won't adjust.",
+      "phonetic": "/ðə ˈmɪrər woʊnt əˈʤəst./",
+      "zh": "後視鏡調不動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try the side button.",
+      "phonetic": "/traɪ ðə saɪd ˈbətən./",
+      "zh": "按側面鈕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I get a receipt?",
+      "phonetic": "/kən aɪ gɪt ə rɪˈsit?/",
+      "zh": "能開發票嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Emailed to you.",
+      "phonetic": "/iˈmeɪld tɪ ju./",
+      "zh": "寄到您郵箱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Drop-off is at noon.",
+      "phonetic": "/ˈdrɑˌpɔf ɪz æt nun./",
+      "zh": "中午前還車。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We will be here.",
+      "phonetic": "/wi wɪl bi hir./",
+      "zh": "我們會在這。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the rental.",
+      "phonetic": "/θæŋks fər ðə ˈrɛntəl./",
+      "zh": "謝謝租車。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Come back soon.",
+      "phonetic": "/kəm bæk sun./",
+      "zh": "歡迎再來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the rental.",
+      "phonetic": "/θæŋks fər ðə ˈrɛntəl./",
+      "zh": "謝謝租車。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Come back soon.",
+      "phonetic": "/kəm bæk sun./",
+      "zh": "歡迎再來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Drop-off is at noon.",
+      "phonetic": "/ˈdrɑˌpɔf ɪz æt nun./",
+      "zh": "中午前還車。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We will be here.",
+      "phonetic": "/wi wɪl bi hir./",
+      "zh": "我們會在這。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I get a receipt?",
+      "phonetic": "/kən aɪ gɪt ə rɪˈsit?/",
+      "zh": "能開發票嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Emailed to you.",
+      "phonetic": "/iˈmeɪld tɪ ju./",
+      "zh": "寄到您郵箱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The mirror won't adjust.",
+      "phonetic": "/ðə ˈmɪrər woʊnt əˈʤəst./",
+      "zh": "後視鏡調不動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try the side button.",
+      "phonetic": "/traɪ ðə saɪd ˈbətən./",
+      "zh": "按側面鈕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How do I lock it?",
+      "phonetic": "/haʊ du aɪ lɑk ɪt?/",
+      "zh": "怎麼鎖車？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Press the fob twice.",
+      "phonetic": "/prɛs ðə fɔb twaɪs./",
+      "zh": "遙控按兩下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am ready to go.",
+      "phonetic": "/aɪ æm ˈrɛdi tɪ goʊ./",
+      "zh": "我準備出發了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Safe driving, sir.",
+      "phonetic": "/seɪf ˈdraɪvɪŋ, sər./",
+      "zh": "先生，一路小心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The car is clean.",
+      "phonetic": "/ðə kɑr ɪz klin./",
+      "zh": "車很乾淨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We valet it daily.",
+      "phonetic": "/wi væˈleɪ ɪt ˈdeɪli./",
+      "zh": "每天整理。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is child seat available?",
+      "phonetic": "/ɪz ʧaɪld sit əˈveɪləbəl?/",
+      "zh": "有兒童座椅嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can fit one.",
+      "phonetic": "/wi kən fɪt wən./",
+      "zh": "可以裝一個。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is the reverse gear?",
+      "phonetic": "/wɛr ɪz ðə rɪˈvərs gɪr?/",
+      "zh": "倒車檔在哪？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Push the lever down.",
+      "phonetic": "/pʊʃ ðə ˈlɛvər daʊn./",
+      "zh": "把杆往下壓。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The brake feels soft.",
+      "phonetic": "/ðə breɪk filz sɔft./",
+      "zh": "剎車軟軟的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Please have it checked.",
+      "phonetic": "/pliz hæv ɪt ʧɛkt./",
+      "zh": "請檢查。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I extend online?",
+      "phonetic": "/kən aɪ ɪkˈstɛnd ˈɔnˌlaɪn?/",
+      "zh": "能線上續租嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, through the app.",
+      "phonetic": "/jɛs, θru ðə æp./",
+      "zh": "可以，用 App。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will keep it three days.",
+      "phonetic": "/aɪ wɪl kip ɪt θri deɪz./",
+      "zh": "我租三天。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Total is one twenty.",
+      "phonetic": "/ˈtoʊtəl ɪz wən tˈwɛnti./",
+      "zh": "總共一百二。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is roadside help free?",
+      "phonetic": "/ɪz ˈroʊdˌsaɪd hɛlp fri?/",
+      "zh": "道路救援免費嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Twenty-four seven.",
+      "phonetic": "/tˈwɛntiˌfɔr ˈsɛvən./",
+      "zh": "全天無休。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which fuel does it take?",
+      "phonetic": "/wɪʧ fjuəl dɪz ɪt teɪk?/",
+      "zh": "加什麼油？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Regular unleaded.",
+      "phonetic": "/ˈrɛgjələr ənˈlɛdəd./",
+      "zh": "普通無鉛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The windshield is cracked.",
+      "phonetic": "/ðə ˈwɪndˌʃild ɪz krækt./",
+      "zh": "擋風玻璃有裂。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Already noted, sir.",
+      "phonetic": "/ɔˈrɛdi ˈnoʊtɪd, sər./",
+      "zh": "已註記了，先生。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I add a driver?",
+      "phonetic": "/kən aɪ æd ə ˈdraɪvər?/",
+      "zh": "能加司機嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We need their license.",
+      "phonetic": "/wi nid ðɛr ˈlaɪsəns./",
+      "zh": "需要駕照。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is the spare tire?",
+      "phonetic": "/wɛr ɪz ðə spɛr taɪər?/",
+      "zh": "備胎在哪？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In the trunk.",
+      "phonetic": "/ɪn ðə trəŋk./",
+      "zh": "在後備廂。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does it have Bluetooth?",
+      "phonetic": "/dɪz ɪt hæv ˈbluˌtuθ?/",
+      "zh": "有藍牙嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pair your phone.",
+      "phonetic": "/pɛr jʊr foʊn./",
+      "zh": "連手機。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The seat is too far.",
+      "phonetic": "/ðə sit ɪz tu fɑr./",
+      "zh": "座椅太遠。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pull the lever.",
+      "phonetic": "/pʊl ðə ˈlɛvər./",
+      "zh": "拉這個杆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How does the lights work?",
+      "phonetic": "/haʊ dɪz ðə laɪts wərk?/",
+      "zh": "燈怎麼開？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "This dial on the left.",
+      "phonetic": "/ðɪs daɪəl ɔn ðə lɛft./",
+      "zh": "左邊這個鈕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where are the keys?",
+      "phonetic": "/wɛr ər ðə kiz?/",
+      "zh": "鑰匙呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In the envelope.",
+      "phonetic": "/ɪn ðə ˈɛnvəˌloʊp./",
+      "zh": "在信封裏。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will pay with this card.",
+      "phonetic": "/aɪ wɪl peɪ wɪθ ðɪs kɑrd./",
+      "zh": "我用這張卡付。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Insert it here.",
+      "phonetic": "/ˌɪnˈsərt ɪt hir./",
+      "zh": "插這裏。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is there a mileage limit?",
+      "phonetic": "/ɪz ðɛr ə ˈmaɪlɪʤ ˈlɪmət?/",
+      "zh": "有里程限制嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Unlimited miles.",
+      "phonetic": "/ənˈlɪmɪtɪd maɪəlz./",
+      "zh": "不限里程。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What if I am late?",
+      "phonetic": "/wət ɪf aɪ æm leɪt?/",
+      "zh": "遲還怎麼辦？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "An extra day's charge.",
+      "phonetic": "/ən ˈɛkstrə deɪz ʧɑrʤ./",
+      "zh": "加收一天費用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tank is full.",
+      "phonetic": "/ðə tæŋk ɪz fʊl./",
+      "zh": "油箱是滿的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Return it full, too.",
+      "phonetic": "/rɪˈtərn ɪt fʊl, tu./",
+      "zh": "還車時也要滿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Show me the damage, please.",
+      "phonetic": "/ʃoʊ mi ðə ˈdæmɪʤ, pliz./",
+      "zh": "請指出已有的刮痕。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Note it on the form.",
+      "phonetic": "/noʊt ɪt ɔn ðə fɔrm./",
+      "zh": "在單子上註記。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I return it elsewhere?",
+      "phonetic": "/kən aɪ rɪˈtərn ɪt ˈɛlsˌwɛr?/",
+      "zh": "能異地還車嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, for a fee.",
+      "phonetic": "/jɛs, fər ə fi./",
+      "zh": "可以，要加費。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where do I pick it up?",
+      "phonetic": "/wɛr du aɪ pɪk ɪt əp?/",
+      "zh": "在哪取車？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "At the airport lot.",
+      "phonetic": "/æt ðə ˈɛrˌpɔrt lɔt./",
+      "zh": "在機場停車場。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I need a GPS.",
+      "phonetic": "/aɪ nid ə ˈgipiˈɛs./",
+      "zh": "我需要導航。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can add one.",
+      "phonetic": "/wi kən æd wən./",
+      "zh": "可以加。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is insurance included?",
+      "phonetic": "/ɪz ˌɪnˈʃʊrəns ˌɪnˈkludɪd?/",
+      "zh": "含保險嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Basic cover is included.",
+      "phonetic": "/ˈbeɪsɪk ˈkəvər ɪz ˌɪnˈkludɪd./",
+      "zh": "含基本險。"
+    }
+  ]
+}

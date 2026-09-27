@@ -1,0 +1,2458 @@
+{
+  "title": "Everyday Phrases — Making Small Talk",
+  "title_zh": "閒聊",
+  "scene_zh": "閒聊 · 情境對話",
+  "title_quote": "Lovely weather today.",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】💬 實用閒聊必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — Making Small Talk",
+  "youtube_description": "睡著學英文！這部影片收錄實用閒聊情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫），不用背，睡前聽就會。重複播放，讓英文自然進入你的大腦。👍 想學更多生活場景，請留言告訴我！別忘了訂閱+按讚。 #英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical Making Small Talk phrase pairs (each pair: male normal speed → female slow speed → combined dialogue). No memorization needed—just listen before bed and absorb naturally. If you want more real-life scenarios, leave a comment! Subscribe and like!",
+  "youtube_tags": [
+    "英文聽力",
+    "睡前英文",
+    "閒聊英文",
+    "English listening",
+    "Sleep learning",
+    "A2 English",
+    "常用英文短語",
+    "零基礎英文",
+    "慢速英文",
+    "英文口語",
+    "Learn English",
+    "English for daily life",
+    "ESL",
+    "English conversation",
+    "聽英語",
+    "英文學習"
+  ],
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "Making Small Talk",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "Making Small Talk",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Social",
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "Lovely weather today.",
+      "phonetic": "/ˈləvli ˈwɛðər təˈdeɪ./",
+      "zh": "今天天氣真好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Perfect for a walk.",
+      "phonetic": "/ˈpərˌfɪkt fər ə wɔk./",
+      "zh": "適合散步。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Busy week for you?",
+      "phonetic": "/ˈbɪzi wik fər ju?/",
+      "zh": "你這周忙嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nonstop, sadly.",
+      "phonetic": "/ˌnɑnˈstɑp, ˈsædli./",
+      "zh": "停不下來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How is the family?",
+      "phonetic": "/haʊ ɪz ðə ˈfæməli?/",
+      "zh": "家人好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All well, thanks.",
+      "phonetic": "/ɔl wɛl, θæŋks./",
+      "zh": "都好，謝謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Catch the game?",
+      "phonetic": "/kæʧ ðə geɪm?/",
+      "zh": "看比賽了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Missed it, slept.",
+      "phonetic": "/mɪst ɪt, slɛpt./",
+      "zh": "睡著錯過。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This coffee is good.",
+      "phonetic": "/ðɪs ˈkɔfi ɪz gʊd./",
+      "zh": "這咖啡不錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try the roast.",
+      "phonetic": "/traɪ ðə roʊst./",
+      "zh": "嘗深焙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Any plans tonight?",
+      "phonetic": "/ˈɛni plænz təˈnaɪt?/",
+      "zh": "今晚有計畫？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quiet at home.",
+      "phonetic": "/kwaɪət æt hoʊm./",
+      "zh": "在家靜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The traffic was mad.",
+      "phonetic": "/ðə ˈtræfɪk wɑz mæd./",
+      "zh": "交通亂。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Took an hour.",
+      "phonetic": "/tʊk ən aʊər./",
+      "zh": "花一小時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "New shoes, nice.",
+      "phonetic": "/nu ʃuz, nis./",
+      "zh": "新鞋，好看。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A small treat.",
+      "phonetic": "/ə smɔl trit./",
+      "zh": "小犒賞。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Heard the news?",
+      "phonetic": "/hərd ðə nuz?/",
+      "zh": "聽到新聞？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Not yet, what?",
+      "phonetic": "/nɑt jɛt, wət?/",
+      "zh": "還沒，啥？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The garden is blooming.",
+      "phonetic": "/ðə ˈgɑrdən ɪz ˈblumɪŋ./",
+      "zh": "花園開花了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spring at last.",
+      "phonetic": "/spərɪŋ æt læst./",
+      "zh": "終於春天。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your dog is cute.",
+      "phonetic": "/jʊr dɔg ɪz kjut./",
+      "zh": "你的狗可愛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thank you, he is.",
+      "phonetic": "/θæŋk ju, hi ɪz./",
+      "zh": "謝謝，他是。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The line was long.",
+      "phonetic": "/ðə laɪn wɑz lɔŋ./",
+      "zh": "隊伍很長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Waited twenty.",
+      "phonetic": "/ˈweɪtɪd tˈwɛnti./",
+      "zh": "等二十分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Weekend looks free.",
+      "phonetic": "/ˈwiˌkɪnd lʊks fri./",
+      "zh": "週末好像有空。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lucky you, then.",
+      "phonetic": "/ˈləki ju, ðɛn./",
+      "zh": "你真幸運。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The show was great.",
+      "phonetic": "/ðə ʃoʊ wɑz greɪt./",
+      "zh": "節目很棒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Binged it all.",
+      "phonetic": "/bɪnʤd ɪt ɔl./",
+      "zh": "追完。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Cold snap coming.",
+      "phonetic": "/koʊld snæp ˈkəmɪŋ./",
+      "zh": "寒流要來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Get the coats.",
+      "phonetic": "/gɪt ðə koʊts./",
+      "zh": "拿外套。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How is work?",
+      "phonetic": "/haʊ ɪz wərk?/",
+      "zh": "工作如何？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Steady, no complaints.",
+      "phonetic": "/ˈstɛdi, noʊ kəmˈpleɪnts./",
+      "zh": "穩定，沒怨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bakery smells good.",
+      "phonetic": "/ðə ˈbeɪkəri smɛlz gʊd./",
+      "zh": "麪包店好香。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fresh, indeed.",
+      "phonetic": "/frɛʃ, ˌɪnˈdid./",
+      "zh": "很新鮮。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Met a friend today.",
+      "phonetic": "/mɛt ə frɛnd təˈdeɪ./",
+      "zh": "今天遇朋友。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Small world, yes.",
+      "phonetic": "/smɔl wərld, jɛs./",
+      "zh": "世界小。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The baby is growing.",
+      "phonetic": "/ðə ˈbeɪbi ɪz groʊɪŋ./",
+      "zh": "寶寶長大了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Too fast, really.",
+      "phonetic": "/tu fæst, ˈrɪli./",
+      "zh": "太快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your accent is nice.",
+      "phonetic": "/jʊr ˈækˌsɛnt ɪz nis./",
+      "zh": "你口音好聽。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thanks, still learning.",
+      "phonetic": "/θæŋks, stɪl ˈlərnɪŋ./",
+      "zh": "謝謝，還在學。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bus was late.",
+      "phonetic": "/ðə bəs wɑz leɪt./",
+      "zh": "公車誤點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "As usual, ugh.",
+      "phonetic": "/ɛz ˈjuʒəwəl, əg./",
+      "zh": "老樣子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Love your scarf.",
+      "phonetic": "/ləv jʊr skɑrf./",
+      "zh": "喜歡你的圍巾。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A gift, thanks.",
+      "phonetic": "/ə gɪft, θæŋks./",
+      "zh": "禮物，謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The park is crowded.",
+      "phonetic": "/ðə pɑrk ɪz ˈkraʊdɪd./",
+      "zh": "公園人擠。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sunny pulls all.",
+      "phonetic": "/ˈsəni pʊlz ɔl./",
+      "zh": "晴天都來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Any good books?",
+      "phonetic": "/ˈɛni gʊd bʊks?/",
+      "zh": "有好書？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The one I lent.",
+      "phonetic": "/ðə wən aɪ lɛnt./",
+      "zh": "我借的那本。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rain cleared air.",
+      "phonetic": "/ðə reɪn klɪrd ɛr./",
+      "zh": "雨淨空氣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Breathable now.",
+      "phonetic": "/breathable* naʊ./",
+      "zh": "好呼吸。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The meeting dragged.",
+      "phonetic": "/ðə ˈmitɪŋ drægd./",
+      "zh": "會議拖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Felt like hours.",
+      "phonetic": "/fɛlt laɪk aʊərz./",
+      "zh": "像幾小時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "New phone, huh?",
+      "phonetic": "/nu foʊn, hə?/",
+      "zh": "新手機？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Upgraded at last.",
+      "phonetic": "/ˈəpˌgreɪdɪd æt læst./",
+      "zh": "終於升級。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat sat still.",
+      "phonetic": "/ðə kæt sæt stɪl./",
+      "zh": "貓不動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Plotting, maybe.",
+      "phonetic": "/ˈplɑtɪŋ, ˈmeɪbi./",
+      "zh": "在算計。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Holiday soon?",
+      "phonetic": "/ˈhɑlɪˌdeɪ sun?/",
+      "zh": "快放假？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Counting days.",
+      "phonetic": "/ˈkaʊntɪŋ deɪz./",
+      "zh": "數日子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The soup hit spot.",
+      "phonetic": "/ðə sup hɪt spɑt./",
+      "zh": "湯正中下懷。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Homemade, yes.",
+      "phonetic": "/ˈhoʊˈmeɪd, jɛs./",
+      "zh": "自制。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wind is strong.",
+      "phonetic": "/ðə wɪnd ɪz strɔŋ./",
+      "zh": "風很大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold the hat.",
+      "phonetic": "/hoʊld ðə hæt./",
+      "zh": "壓帽子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Nice chatting, bye.",
+      "phonetic": "/nis ˈʧætɪŋ, baɪ./",
+      "zh": "聊得開心，拜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same time soon.",
+      "phonetic": "/seɪm taɪm sun./",
+      "zh": "很快再聊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "See you around.",
+      "phonetic": "/si ju əraʊnd./",
+      "zh": "回頭見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep in touch.",
+      "phonetic": "/kip ɪn təʧ./",
+      "zh": "保持聯繫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "See you around.",
+      "phonetic": "/si ju əraʊnd./",
+      "zh": "回頭見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep in touch.",
+      "phonetic": "/kip ɪn təʧ./",
+      "zh": "保持聯繫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Nice chatting, bye.",
+      "phonetic": "/nis ˈʧætɪŋ, baɪ./",
+      "zh": "聊得開心，拜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same time soon.",
+      "phonetic": "/seɪm taɪm sun./",
+      "zh": "很快再聊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wind is strong.",
+      "phonetic": "/ðə wɪnd ɪz strɔŋ./",
+      "zh": "風很大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold the hat.",
+      "phonetic": "/hoʊld ðə hæt./",
+      "zh": "壓帽子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The soup hit spot.",
+      "phonetic": "/ðə sup hɪt spɑt./",
+      "zh": "湯正中下懷。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Homemade, yes.",
+      "phonetic": "/ˈhoʊˈmeɪd, jɛs./",
+      "zh": "自制。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Holiday soon?",
+      "phonetic": "/ˈhɑlɪˌdeɪ sun?/",
+      "zh": "快放假？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Counting days.",
+      "phonetic": "/ˈkaʊntɪŋ deɪz./",
+      "zh": "數日子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat sat still.",
+      "phonetic": "/ðə kæt sæt stɪl./",
+      "zh": "貓不動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Plotting, maybe.",
+      "phonetic": "/ˈplɑtɪŋ, ˈmeɪbi./",
+      "zh": "在算計。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "New phone, huh?",
+      "phonetic": "/nu foʊn, hə?/",
+      "zh": "新手機？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Upgraded at last.",
+      "phonetic": "/ˈəpˌgreɪdɪd æt læst./",
+      "zh": "終於升級。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The meeting dragged.",
+      "phonetic": "/ðə ˈmitɪŋ drægd./",
+      "zh": "會議拖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Felt like hours.",
+      "phonetic": "/fɛlt laɪk aʊərz./",
+      "zh": "像幾小時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rain cleared air.",
+      "phonetic": "/ðə reɪn klɪrd ɛr./",
+      "zh": "雨淨空氣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Breathable now.",
+      "phonetic": "/breathable* naʊ./",
+      "zh": "好呼吸。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Any good books?",
+      "phonetic": "/ˈɛni gʊd bʊks?/",
+      "zh": "有好書？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The one I lent.",
+      "phonetic": "/ðə wən aɪ lɛnt./",
+      "zh": "我借的那本。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The park is crowded.",
+      "phonetic": "/ðə pɑrk ɪz ˈkraʊdɪd./",
+      "zh": "公園人擠。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sunny pulls all.",
+      "phonetic": "/ˈsəni pʊlz ɔl./",
+      "zh": "晴天都來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Love your scarf.",
+      "phonetic": "/ləv jʊr skɑrf./",
+      "zh": "喜歡你的圍巾。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A gift, thanks.",
+      "phonetic": "/ə gɪft, θæŋks./",
+      "zh": "禮物，謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bus was late.",
+      "phonetic": "/ðə bəs wɑz leɪt./",
+      "zh": "公車誤點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "As usual, ugh.",
+      "phonetic": "/ɛz ˈjuʒəwəl, əg./",
+      "zh": "老樣子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your accent is nice.",
+      "phonetic": "/jʊr ˈækˌsɛnt ɪz nis./",
+      "zh": "你口音好聽。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thanks, still learning.",
+      "phonetic": "/θæŋks, stɪl ˈlərnɪŋ./",
+      "zh": "謝謝，還在學。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The baby is growing.",
+      "phonetic": "/ðə ˈbeɪbi ɪz groʊɪŋ./",
+      "zh": "寶寶長大了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Too fast, really.",
+      "phonetic": "/tu fæst, ˈrɪli./",
+      "zh": "太快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Met a friend today.",
+      "phonetic": "/mɛt ə frɛnd təˈdeɪ./",
+      "zh": "今天遇朋友。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Small world, yes.",
+      "phonetic": "/smɔl wərld, jɛs./",
+      "zh": "世界小。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bakery smells good.",
+      "phonetic": "/ðə ˈbeɪkəri smɛlz gʊd./",
+      "zh": "麪包店好香。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fresh, indeed.",
+      "phonetic": "/frɛʃ, ˌɪnˈdid./",
+      "zh": "很新鮮。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How is work?",
+      "phonetic": "/haʊ ɪz wərk?/",
+      "zh": "工作如何？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Steady, no complaints.",
+      "phonetic": "/ˈstɛdi, noʊ kəmˈpleɪnts./",
+      "zh": "穩定，沒怨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Cold snap coming.",
+      "phonetic": "/koʊld snæp ˈkəmɪŋ./",
+      "zh": "寒流要來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Get the coats.",
+      "phonetic": "/gɪt ðə koʊts./",
+      "zh": "拿外套。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The show was great.",
+      "phonetic": "/ðə ʃoʊ wɑz greɪt./",
+      "zh": "節目很棒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Binged it all.",
+      "phonetic": "/bɪnʤd ɪt ɔl./",
+      "zh": "追完。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Weekend looks free.",
+      "phonetic": "/ˈwiˌkɪnd lʊks fri./",
+      "zh": "週末好像有空。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lucky you, then.",
+      "phonetic": "/ˈləki ju, ðɛn./",
+      "zh": "你真幸運。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The line was long.",
+      "phonetic": "/ðə laɪn wɑz lɔŋ./",
+      "zh": "隊伍很長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Waited twenty.",
+      "phonetic": "/ˈweɪtɪd tˈwɛnti./",
+      "zh": "等二十分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your dog is cute.",
+      "phonetic": "/jʊr dɔg ɪz kjut./",
+      "zh": "你的狗可愛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thank you, he is.",
+      "phonetic": "/θæŋk ju, hi ɪz./",
+      "zh": "謝謝，他是。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The garden is blooming.",
+      "phonetic": "/ðə ˈgɑrdən ɪz ˈblumɪŋ./",
+      "zh": "花園開花了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spring at last.",
+      "phonetic": "/spərɪŋ æt læst./",
+      "zh": "終於春天。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Heard the news?",
+      "phonetic": "/hərd ðə nuz?/",
+      "zh": "聽到新聞？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Not yet, what?",
+      "phonetic": "/nɑt jɛt, wət?/",
+      "zh": "還沒，啥？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "New shoes, nice.",
+      "phonetic": "/nu ʃuz, nis./",
+      "zh": "新鞋，好看。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A small treat.",
+      "phonetic": "/ə smɔl trit./",
+      "zh": "小犒賞。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The traffic was mad.",
+      "phonetic": "/ðə ˈtræfɪk wɑz mæd./",
+      "zh": "交通亂。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Took an hour.",
+      "phonetic": "/tʊk ən aʊər./",
+      "zh": "花一小時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Any plans tonight?",
+      "phonetic": "/ˈɛni plænz təˈnaɪt?/",
+      "zh": "今晚有計畫？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quiet at home.",
+      "phonetic": "/kwaɪət æt hoʊm./",
+      "zh": "在家靜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This coffee is good.",
+      "phonetic": "/ðɪs ˈkɔfi ɪz gʊd./",
+      "zh": "這咖啡不錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try the roast.",
+      "phonetic": "/traɪ ðə roʊst./",
+      "zh": "嘗深焙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Catch the game?",
+      "phonetic": "/kæʧ ðə geɪm?/",
+      "zh": "看比賽了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Missed it, slept.",
+      "phonetic": "/mɪst ɪt, slɛpt./",
+      "zh": "睡著錯過。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How is the family?",
+      "phonetic": "/haʊ ɪz ðə ˈfæməli?/",
+      "zh": "家人好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All well, thanks.",
+      "phonetic": "/ɔl wɛl, θæŋks./",
+      "zh": "都好，謝謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Busy week for you?",
+      "phonetic": "/ˈbɪzi wik fər ju?/",
+      "zh": "你這周忙嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nonstop, sadly.",
+      "phonetic": "/ˌnɑnˈstɑp, ˈsædli./",
+      "zh": "停不下來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Lovely weather today.",
+      "phonetic": "/ˈləvli ˈwɛðər təˈdeɪ./",
+      "zh": "今天天氣真好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Perfect for a walk.",
+      "phonetic": "/ˈpərˌfɪkt fər ə wɔk./",
+      "zh": "適合散步。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Lovely weather today.",
+      "phonetic": "/ˈləvli ˈwɛðər təˈdeɪ./",
+      "zh": "今天天氣真好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Perfect for a walk.",
+      "phonetic": "/ˈpərˌfɪkt fər ə wɔk./",
+      "zh": "適合散步。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Busy week for you?",
+      "phonetic": "/ˈbɪzi wik fər ju?/",
+      "zh": "你這周忙嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nonstop, sadly.",
+      "phonetic": "/ˌnɑnˈstɑp, ˈsædli./",
+      "zh": "停不下來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How is the family?",
+      "phonetic": "/haʊ ɪz ðə ˈfæməli?/",
+      "zh": "家人好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All well, thanks.",
+      "phonetic": "/ɔl wɛl, θæŋks./",
+      "zh": "都好，謝謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Catch the game?",
+      "phonetic": "/kæʧ ðə geɪm?/",
+      "zh": "看比賽了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Missed it, slept.",
+      "phonetic": "/mɪst ɪt, slɛpt./",
+      "zh": "睡著錯過。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This coffee is good.",
+      "phonetic": "/ðɪs ˈkɔfi ɪz gʊd./",
+      "zh": "這咖啡不錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try the roast.",
+      "phonetic": "/traɪ ðə roʊst./",
+      "zh": "嘗深焙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Any plans tonight?",
+      "phonetic": "/ˈɛni plænz təˈnaɪt?/",
+      "zh": "今晚有計畫？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quiet at home.",
+      "phonetic": "/kwaɪət æt hoʊm./",
+      "zh": "在家靜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The traffic was mad.",
+      "phonetic": "/ðə ˈtræfɪk wɑz mæd./",
+      "zh": "交通亂。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Took an hour.",
+      "phonetic": "/tʊk ən aʊər./",
+      "zh": "花一小時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "New shoes, nice.",
+      "phonetic": "/nu ʃuz, nis./",
+      "zh": "新鞋，好看。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A small treat.",
+      "phonetic": "/ə smɔl trit./",
+      "zh": "小犒賞。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Heard the news?",
+      "phonetic": "/hərd ðə nuz?/",
+      "zh": "聽到新聞？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Not yet, what?",
+      "phonetic": "/nɑt jɛt, wət?/",
+      "zh": "還沒，啥？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The garden is blooming.",
+      "phonetic": "/ðə ˈgɑrdən ɪz ˈblumɪŋ./",
+      "zh": "花園開花了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spring at last.",
+      "phonetic": "/spərɪŋ æt læst./",
+      "zh": "終於春天。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your dog is cute.",
+      "phonetic": "/jʊr dɔg ɪz kjut./",
+      "zh": "你的狗可愛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thank you, he is.",
+      "phonetic": "/θæŋk ju, hi ɪz./",
+      "zh": "謝謝，他是。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The line was long.",
+      "phonetic": "/ðə laɪn wɑz lɔŋ./",
+      "zh": "隊伍很長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Waited twenty.",
+      "phonetic": "/ˈweɪtɪd tˈwɛnti./",
+      "zh": "等二十分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Weekend looks free.",
+      "phonetic": "/ˈwiˌkɪnd lʊks fri./",
+      "zh": "週末好像有空。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lucky you, then.",
+      "phonetic": "/ˈləki ju, ðɛn./",
+      "zh": "你真幸運。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The show was great.",
+      "phonetic": "/ðə ʃoʊ wɑz greɪt./",
+      "zh": "節目很棒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Binged it all.",
+      "phonetic": "/bɪnʤd ɪt ɔl./",
+      "zh": "追完。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Cold snap coming.",
+      "phonetic": "/koʊld snæp ˈkəmɪŋ./",
+      "zh": "寒流要來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Get the coats.",
+      "phonetic": "/gɪt ðə koʊts./",
+      "zh": "拿外套。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How is work?",
+      "phonetic": "/haʊ ɪz wərk?/",
+      "zh": "工作如何？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Steady, no complaints.",
+      "phonetic": "/ˈstɛdi, noʊ kəmˈpleɪnts./",
+      "zh": "穩定，沒怨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bakery smells good.",
+      "phonetic": "/ðə ˈbeɪkəri smɛlz gʊd./",
+      "zh": "麪包店好香。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fresh, indeed.",
+      "phonetic": "/frɛʃ, ˌɪnˈdid./",
+      "zh": "很新鮮。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Met a friend today.",
+      "phonetic": "/mɛt ə frɛnd təˈdeɪ./",
+      "zh": "今天遇朋友。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Small world, yes.",
+      "phonetic": "/smɔl wərld, jɛs./",
+      "zh": "世界小。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The baby is growing.",
+      "phonetic": "/ðə ˈbeɪbi ɪz groʊɪŋ./",
+      "zh": "寶寶長大了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Too fast, really.",
+      "phonetic": "/tu fæst, ˈrɪli./",
+      "zh": "太快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your accent is nice.",
+      "phonetic": "/jʊr ˈækˌsɛnt ɪz nis./",
+      "zh": "你口音好聽。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thanks, still learning.",
+      "phonetic": "/θæŋks, stɪl ˈlərnɪŋ./",
+      "zh": "謝謝，還在學。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bus was late.",
+      "phonetic": "/ðə bəs wɑz leɪt./",
+      "zh": "公車誤點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "As usual, ugh.",
+      "phonetic": "/ɛz ˈjuʒəwəl, əg./",
+      "zh": "老樣子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Love your scarf.",
+      "phonetic": "/ləv jʊr skɑrf./",
+      "zh": "喜歡你的圍巾。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A gift, thanks.",
+      "phonetic": "/ə gɪft, θæŋks./",
+      "zh": "禮物，謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The park is crowded.",
+      "phonetic": "/ðə pɑrk ɪz ˈkraʊdɪd./",
+      "zh": "公園人擠。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sunny pulls all.",
+      "phonetic": "/ˈsəni pʊlz ɔl./",
+      "zh": "晴天都來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Any good books?",
+      "phonetic": "/ˈɛni gʊd bʊks?/",
+      "zh": "有好書？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The one I lent.",
+      "phonetic": "/ðə wən aɪ lɛnt./",
+      "zh": "我借的那本。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rain cleared air.",
+      "phonetic": "/ðə reɪn klɪrd ɛr./",
+      "zh": "雨淨空氣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Breathable now.",
+      "phonetic": "/breathable* naʊ./",
+      "zh": "好呼吸。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The meeting dragged.",
+      "phonetic": "/ðə ˈmitɪŋ drægd./",
+      "zh": "會議拖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Felt like hours.",
+      "phonetic": "/fɛlt laɪk aʊərz./",
+      "zh": "像幾小時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "New phone, huh?",
+      "phonetic": "/nu foʊn, hə?/",
+      "zh": "新手機？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Upgraded at last.",
+      "phonetic": "/ˈəpˌgreɪdɪd æt læst./",
+      "zh": "終於升級。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat sat still.",
+      "phonetic": "/ðə kæt sæt stɪl./",
+      "zh": "貓不動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Plotting, maybe.",
+      "phonetic": "/ˈplɑtɪŋ, ˈmeɪbi./",
+      "zh": "在算計。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Holiday soon?",
+      "phonetic": "/ˈhɑlɪˌdeɪ sun?/",
+      "zh": "快放假？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Counting days.",
+      "phonetic": "/ˈkaʊntɪŋ deɪz./",
+      "zh": "數日子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The soup hit spot.",
+      "phonetic": "/ðə sup hɪt spɑt./",
+      "zh": "湯正中下懷。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Homemade, yes.",
+      "phonetic": "/ˈhoʊˈmeɪd, jɛs./",
+      "zh": "自制。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wind is strong.",
+      "phonetic": "/ðə wɪnd ɪz strɔŋ./",
+      "zh": "風很大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold the hat.",
+      "phonetic": "/hoʊld ðə hæt./",
+      "zh": "壓帽子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Nice chatting, bye.",
+      "phonetic": "/nis ˈʧætɪŋ, baɪ./",
+      "zh": "聊得開心，拜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same time soon.",
+      "phonetic": "/seɪm taɪm sun./",
+      "zh": "很快再聊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "See you around.",
+      "phonetic": "/si ju əraʊnd./",
+      "zh": "回頭見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep in touch.",
+      "phonetic": "/kip ɪn təʧ./",
+      "zh": "保持聯繫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "See you around.",
+      "phonetic": "/si ju əraʊnd./",
+      "zh": "回頭見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep in touch.",
+      "phonetic": "/kip ɪn təʧ./",
+      "zh": "保持聯繫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Nice chatting, bye.",
+      "phonetic": "/nis ˈʧætɪŋ, baɪ./",
+      "zh": "聊得開心，拜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same time soon.",
+      "phonetic": "/seɪm taɪm sun./",
+      "zh": "很快再聊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wind is strong.",
+      "phonetic": "/ðə wɪnd ɪz strɔŋ./",
+      "zh": "風很大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold the hat.",
+      "phonetic": "/hoʊld ðə hæt./",
+      "zh": "壓帽子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The soup hit spot.",
+      "phonetic": "/ðə sup hɪt spɑt./",
+      "zh": "湯正中下懷。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Homemade, yes.",
+      "phonetic": "/ˈhoʊˈmeɪd, jɛs./",
+      "zh": "自制。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Holiday soon?",
+      "phonetic": "/ˈhɑlɪˌdeɪ sun?/",
+      "zh": "快放假？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Counting days.",
+      "phonetic": "/ˈkaʊntɪŋ deɪz./",
+      "zh": "數日子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat sat still.",
+      "phonetic": "/ðə kæt sæt stɪl./",
+      "zh": "貓不動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Plotting, maybe.",
+      "phonetic": "/ˈplɑtɪŋ, ˈmeɪbi./",
+      "zh": "在算計。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "New phone, huh?",
+      "phonetic": "/nu foʊn, hə?/",
+      "zh": "新手機？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Upgraded at last.",
+      "phonetic": "/ˈəpˌgreɪdɪd æt læst./",
+      "zh": "終於升級。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The meeting dragged.",
+      "phonetic": "/ðə ˈmitɪŋ drægd./",
+      "zh": "會議拖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Felt like hours.",
+      "phonetic": "/fɛlt laɪk aʊərz./",
+      "zh": "像幾小時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rain cleared air.",
+      "phonetic": "/ðə reɪn klɪrd ɛr./",
+      "zh": "雨淨空氣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Breathable now.",
+      "phonetic": "/breathable* naʊ./",
+      "zh": "好呼吸。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Any good books?",
+      "phonetic": "/ˈɛni gʊd bʊks?/",
+      "zh": "有好書？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The one I lent.",
+      "phonetic": "/ðə wən aɪ lɛnt./",
+      "zh": "我借的那本。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The park is crowded.",
+      "phonetic": "/ðə pɑrk ɪz ˈkraʊdɪd./",
+      "zh": "公園人擠。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sunny pulls all.",
+      "phonetic": "/ˈsəni pʊlz ɔl./",
+      "zh": "晴天都來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Love your scarf.",
+      "phonetic": "/ləv jʊr skɑrf./",
+      "zh": "喜歡你的圍巾。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A gift, thanks.",
+      "phonetic": "/ə gɪft, θæŋks./",
+      "zh": "禮物，謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bus was late.",
+      "phonetic": "/ðə bəs wɑz leɪt./",
+      "zh": "公車誤點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "As usual, ugh.",
+      "phonetic": "/ɛz ˈjuʒəwəl, əg./",
+      "zh": "老樣子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your accent is nice.",
+      "phonetic": "/jʊr ˈækˌsɛnt ɪz nis./",
+      "zh": "你口音好聽。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thanks, still learning.",
+      "phonetic": "/θæŋks, stɪl ˈlərnɪŋ./",
+      "zh": "謝謝，還在學。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The baby is growing.",
+      "phonetic": "/ðə ˈbeɪbi ɪz groʊɪŋ./",
+      "zh": "寶寶長大了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Too fast, really.",
+      "phonetic": "/tu fæst, ˈrɪli./",
+      "zh": "太快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Met a friend today.",
+      "phonetic": "/mɛt ə frɛnd təˈdeɪ./",
+      "zh": "今天遇朋友。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Small world, yes.",
+      "phonetic": "/smɔl wərld, jɛs./",
+      "zh": "世界小。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bakery smells good.",
+      "phonetic": "/ðə ˈbeɪkəri smɛlz gʊd./",
+      "zh": "麪包店好香。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fresh, indeed.",
+      "phonetic": "/frɛʃ, ˌɪnˈdid./",
+      "zh": "很新鮮。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How is work?",
+      "phonetic": "/haʊ ɪz wərk?/",
+      "zh": "工作如何？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Steady, no complaints.",
+      "phonetic": "/ˈstɛdi, noʊ kəmˈpleɪnts./",
+      "zh": "穩定，沒怨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Cold snap coming.",
+      "phonetic": "/koʊld snæp ˈkəmɪŋ./",
+      "zh": "寒流要來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Get the coats.",
+      "phonetic": "/gɪt ðə koʊts./",
+      "zh": "拿外套。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The show was great.",
+      "phonetic": "/ðə ʃoʊ wɑz greɪt./",
+      "zh": "節目很棒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Binged it all.",
+      "phonetic": "/bɪnʤd ɪt ɔl./",
+      "zh": "追完。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Weekend looks free.",
+      "phonetic": "/ˈwiˌkɪnd lʊks fri./",
+      "zh": "週末好像有空。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lucky you, then.",
+      "phonetic": "/ˈləki ju, ðɛn./",
+      "zh": "你真幸運。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The line was long.",
+      "phonetic": "/ðə laɪn wɑz lɔŋ./",
+      "zh": "隊伍很長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Waited twenty.",
+      "phonetic": "/ˈweɪtɪd tˈwɛnti./",
+      "zh": "等二十分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your dog is cute.",
+      "phonetic": "/jʊr dɔg ɪz kjut./",
+      "zh": "你的狗可愛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thank you, he is.",
+      "phonetic": "/θæŋk ju, hi ɪz./",
+      "zh": "謝謝，他是。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The garden is blooming.",
+      "phonetic": "/ðə ˈgɑrdən ɪz ˈblumɪŋ./",
+      "zh": "花園開花了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spring at last.",
+      "phonetic": "/spərɪŋ æt læst./",
+      "zh": "終於春天。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Heard the news?",
+      "phonetic": "/hərd ðə nuz?/",
+      "zh": "聽到新聞？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Not yet, what?",
+      "phonetic": "/nɑt jɛt, wət?/",
+      "zh": "還沒，啥？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "New shoes, nice.",
+      "phonetic": "/nu ʃuz, nis./",
+      "zh": "新鞋，好看。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A small treat.",
+      "phonetic": "/ə smɔl trit./",
+      "zh": "小犒賞。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The traffic was mad.",
+      "phonetic": "/ðə ˈtræfɪk wɑz mæd./",
+      "zh": "交通亂。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Took an hour.",
+      "phonetic": "/tʊk ən aʊər./",
+      "zh": "花一小時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Any plans tonight?",
+      "phonetic": "/ˈɛni plænz təˈnaɪt?/",
+      "zh": "今晚有計畫？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quiet at home.",
+      "phonetic": "/kwaɪət æt hoʊm./",
+      "zh": "在家靜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This coffee is good.",
+      "phonetic": "/ðɪs ˈkɔfi ɪz gʊd./",
+      "zh": "這咖啡不錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try the roast.",
+      "phonetic": "/traɪ ðə roʊst./",
+      "zh": "嘗深焙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Catch the game?",
+      "phonetic": "/kæʧ ðə geɪm?/",
+      "zh": "看比賽了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Missed it, slept.",
+      "phonetic": "/mɪst ɪt, slɛpt./",
+      "zh": "睡著錯過。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How is the family?",
+      "phonetic": "/haʊ ɪz ðə ˈfæməli?/",
+      "zh": "家人好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All well, thanks.",
+      "phonetic": "/ɔl wɛl, θæŋks./",
+      "zh": "都好，謝謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Busy week for you?",
+      "phonetic": "/ˈbɪzi wik fər ju?/",
+      "zh": "你這周忙嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nonstop, sadly.",
+      "phonetic": "/ˌnɑnˈstɑp, ˈsædli./",
+      "zh": "停不下來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Lovely weather today.",
+      "phonetic": "/ˈləvli ˈwɛðər təˈdeɪ./",
+      "zh": "今天天氣真好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Perfect for a walk.",
+      "phonetic": "/ˈpərˌfɪkt fər ə wɔk./",
+      "zh": "適合散步。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Lovely weather today.",
+      "phonetic": "/ˈləvli ˈwɛðər təˈdeɪ./",
+      "zh": "今天天氣真好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Perfect for a walk.",
+      "phonetic": "/ˈpərˌfɪkt fər ə wɔk./",
+      "zh": "適合散步。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Busy week for you?",
+      "phonetic": "/ˈbɪzi wik fər ju?/",
+      "zh": "你這周忙嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nonstop, sadly.",
+      "phonetic": "/ˌnɑnˈstɑp, ˈsædli./",
+      "zh": "停不下來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How is the family?",
+      "phonetic": "/haʊ ɪz ðə ˈfæməli?/",
+      "zh": "家人好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All well, thanks.",
+      "phonetic": "/ɔl wɛl, θæŋks./",
+      "zh": "都好，謝謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Catch the game?",
+      "phonetic": "/kæʧ ðə geɪm?/",
+      "zh": "看比賽了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Missed it, slept.",
+      "phonetic": "/mɪst ɪt, slɛpt./",
+      "zh": "睡著錯過。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This coffee is good.",
+      "phonetic": "/ðɪs ˈkɔfi ɪz gʊd./",
+      "zh": "這咖啡不錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try the roast.",
+      "phonetic": "/traɪ ðə roʊst./",
+      "zh": "嘗深焙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Any plans tonight?",
+      "phonetic": "/ˈɛni plænz təˈnaɪt?/",
+      "zh": "今晚有計畫？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quiet at home.",
+      "phonetic": "/kwaɪət æt hoʊm./",
+      "zh": "在家靜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The traffic was mad.",
+      "phonetic": "/ðə ˈtræfɪk wɑz mæd./",
+      "zh": "交通亂。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Took an hour.",
+      "phonetic": "/tʊk ən aʊər./",
+      "zh": "花一小時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "New shoes, nice.",
+      "phonetic": "/nu ʃuz, nis./",
+      "zh": "新鞋，好看。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A small treat.",
+      "phonetic": "/ə smɔl trit./",
+      "zh": "小犒賞。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Heard the news?",
+      "phonetic": "/hərd ðə nuz?/",
+      "zh": "聽到新聞？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Not yet, what?",
+      "phonetic": "/nɑt jɛt, wət?/",
+      "zh": "還沒，啥？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The garden is blooming.",
+      "phonetic": "/ðə ˈgɑrdən ɪz ˈblumɪŋ./",
+      "zh": "花園開花了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spring at last.",
+      "phonetic": "/spərɪŋ æt læst./",
+      "zh": "終於春天。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your dog is cute.",
+      "phonetic": "/jʊr dɔg ɪz kjut./",
+      "zh": "你的狗可愛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thank you, he is.",
+      "phonetic": "/θæŋk ju, hi ɪz./",
+      "zh": "謝謝，他是。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The line was long.",
+      "phonetic": "/ðə laɪn wɑz lɔŋ./",
+      "zh": "隊伍很長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Waited twenty.",
+      "phonetic": "/ˈweɪtɪd tˈwɛnti./",
+      "zh": "等二十分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Weekend looks free.",
+      "phonetic": "/ˈwiˌkɪnd lʊks fri./",
+      "zh": "週末好像有空。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lucky you, then.",
+      "phonetic": "/ˈləki ju, ðɛn./",
+      "zh": "你真幸運。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The show was great.",
+      "phonetic": "/ðə ʃoʊ wɑz greɪt./",
+      "zh": "節目很棒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Binged it all.",
+      "phonetic": "/bɪnʤd ɪt ɔl./",
+      "zh": "追完。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Cold snap coming.",
+      "phonetic": "/koʊld snæp ˈkəmɪŋ./",
+      "zh": "寒流要來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Get the coats.",
+      "phonetic": "/gɪt ðə koʊts./",
+      "zh": "拿外套。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How is work?",
+      "phonetic": "/haʊ ɪz wərk?/",
+      "zh": "工作如何？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Steady, no complaints.",
+      "phonetic": "/ˈstɛdi, noʊ kəmˈpleɪnts./",
+      "zh": "穩定，沒怨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bakery smells good.",
+      "phonetic": "/ðə ˈbeɪkəri smɛlz gʊd./",
+      "zh": "麪包店好香。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fresh, indeed.",
+      "phonetic": "/frɛʃ, ˌɪnˈdid./",
+      "zh": "很新鮮。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Met a friend today.",
+      "phonetic": "/mɛt ə frɛnd təˈdeɪ./",
+      "zh": "今天遇朋友。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Small world, yes.",
+      "phonetic": "/smɔl wərld, jɛs./",
+      "zh": "世界小。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The baby is growing.",
+      "phonetic": "/ðə ˈbeɪbi ɪz groʊɪŋ./",
+      "zh": "寶寶長大了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Too fast, really.",
+      "phonetic": "/tu fæst, ˈrɪli./",
+      "zh": "太快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your accent is nice.",
+      "phonetic": "/jʊr ˈækˌsɛnt ɪz nis./",
+      "zh": "你口音好聽。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thanks, still learning.",
+      "phonetic": "/θæŋks, stɪl ˈlərnɪŋ./",
+      "zh": "謝謝，還在學。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bus was late.",
+      "phonetic": "/ðə bəs wɑz leɪt./",
+      "zh": "公車誤點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "As usual, ugh.",
+      "phonetic": "/ɛz ˈjuʒəwəl, əg./",
+      "zh": "老樣子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Love your scarf.",
+      "phonetic": "/ləv jʊr skɑrf./",
+      "zh": "喜歡你的圍巾。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A gift, thanks.",
+      "phonetic": "/ə gɪft, θæŋks./",
+      "zh": "禮物，謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The park is crowded.",
+      "phonetic": "/ðə pɑrk ɪz ˈkraʊdɪd./",
+      "zh": "公園人擠。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sunny pulls all.",
+      "phonetic": "/ˈsəni pʊlz ɔl./",
+      "zh": "晴天都來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Any good books?",
+      "phonetic": "/ˈɛni gʊd bʊks?/",
+      "zh": "有好書？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The one I lent.",
+      "phonetic": "/ðə wən aɪ lɛnt./",
+      "zh": "我借的那本。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rain cleared air.",
+      "phonetic": "/ðə reɪn klɪrd ɛr./",
+      "zh": "雨淨空氣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Breathable now.",
+      "phonetic": "/breathable* naʊ./",
+      "zh": "好呼吸。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The meeting dragged.",
+      "phonetic": "/ðə ˈmitɪŋ drægd./",
+      "zh": "會議拖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Felt like hours.",
+      "phonetic": "/fɛlt laɪk aʊərz./",
+      "zh": "像幾小時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "New phone, huh?",
+      "phonetic": "/nu foʊn, hə?/",
+      "zh": "新手機？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Upgraded at last.",
+      "phonetic": "/ˈəpˌgreɪdɪd æt læst./",
+      "zh": "終於升級。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat sat still.",
+      "phonetic": "/ðə kæt sæt stɪl./",
+      "zh": "貓不動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Plotting, maybe.",
+      "phonetic": "/ˈplɑtɪŋ, ˈmeɪbi./",
+      "zh": "在算計。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Holiday soon?",
+      "phonetic": "/ˈhɑlɪˌdeɪ sun?/",
+      "zh": "快放假？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Counting days.",
+      "phonetic": "/ˈkaʊntɪŋ deɪz./",
+      "zh": "數日子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The soup hit spot.",
+      "phonetic": "/ðə sup hɪt spɑt./",
+      "zh": "湯正中下懷。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Homemade, yes.",
+      "phonetic": "/ˈhoʊˈmeɪd, jɛs./",
+      "zh": "自制。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wind is strong.",
+      "phonetic": "/ðə wɪnd ɪz strɔŋ./",
+      "zh": "風很大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold the hat.",
+      "phonetic": "/hoʊld ðə hæt./",
+      "zh": "壓帽子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Nice chatting, bye.",
+      "phonetic": "/nis ˈʧætɪŋ, baɪ./",
+      "zh": "聊得開心，拜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same time soon.",
+      "phonetic": "/seɪm taɪm sun./",
+      "zh": "很快再聊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "See you around.",
+      "phonetic": "/si ju əraʊnd./",
+      "zh": "回頭見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep in touch.",
+      "phonetic": "/kip ɪn təʧ./",
+      "zh": "保持聯繫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "See you around.",
+      "phonetic": "/si ju əraʊnd./",
+      "zh": "回頭見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep in touch.",
+      "phonetic": "/kip ɪn təʧ./",
+      "zh": "保持聯繫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Nice chatting, bye.",
+      "phonetic": "/nis ˈʧætɪŋ, baɪ./",
+      "zh": "聊得開心，拜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same time soon.",
+      "phonetic": "/seɪm taɪm sun./",
+      "zh": "很快再聊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wind is strong.",
+      "phonetic": "/ðə wɪnd ɪz strɔŋ./",
+      "zh": "風很大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold the hat.",
+      "phonetic": "/hoʊld ðə hæt./",
+      "zh": "壓帽子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The soup hit spot.",
+      "phonetic": "/ðə sup hɪt spɑt./",
+      "zh": "湯正中下懷。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Homemade, yes.",
+      "phonetic": "/ˈhoʊˈmeɪd, jɛs./",
+      "zh": "自制。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Holiday soon?",
+      "phonetic": "/ˈhɑlɪˌdeɪ sun?/",
+      "zh": "快放假？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Counting days.",
+      "phonetic": "/ˈkaʊntɪŋ deɪz./",
+      "zh": "數日子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat sat still.",
+      "phonetic": "/ðə kæt sæt stɪl./",
+      "zh": "貓不動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Plotting, maybe.",
+      "phonetic": "/ˈplɑtɪŋ, ˈmeɪbi./",
+      "zh": "在算計。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "New phone, huh?",
+      "phonetic": "/nu foʊn, hə?/",
+      "zh": "新手機？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Upgraded at last.",
+      "phonetic": "/ˈəpˌgreɪdɪd æt læst./",
+      "zh": "終於升級。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The meeting dragged.",
+      "phonetic": "/ðə ˈmitɪŋ drægd./",
+      "zh": "會議拖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Felt like hours.",
+      "phonetic": "/fɛlt laɪk aʊərz./",
+      "zh": "像幾小時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rain cleared air.",
+      "phonetic": "/ðə reɪn klɪrd ɛr./",
+      "zh": "雨淨空氣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Breathable now.",
+      "phonetic": "/breathable* naʊ./",
+      "zh": "好呼吸。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Any good books?",
+      "phonetic": "/ˈɛni gʊd bʊks?/",
+      "zh": "有好書？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The one I lent.",
+      "phonetic": "/ðə wən aɪ lɛnt./",
+      "zh": "我借的那本。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The park is crowded.",
+      "phonetic": "/ðə pɑrk ɪz ˈkraʊdɪd./",
+      "zh": "公園人擠。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sunny pulls all.",
+      "phonetic": "/ˈsəni pʊlz ɔl./",
+      "zh": "晴天都來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Love your scarf.",
+      "phonetic": "/ləv jʊr skɑrf./",
+      "zh": "喜歡你的圍巾。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A gift, thanks.",
+      "phonetic": "/ə gɪft, θæŋks./",
+      "zh": "禮物，謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bus was late.",
+      "phonetic": "/ðə bəs wɑz leɪt./",
+      "zh": "公車誤點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "As usual, ugh.",
+      "phonetic": "/ɛz ˈjuʒəwəl, əg./",
+      "zh": "老樣子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your accent is nice.",
+      "phonetic": "/jʊr ˈækˌsɛnt ɪz nis./",
+      "zh": "你口音好聽。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thanks, still learning.",
+      "phonetic": "/θæŋks, stɪl ˈlərnɪŋ./",
+      "zh": "謝謝，還在學。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The baby is growing.",
+      "phonetic": "/ðə ˈbeɪbi ɪz groʊɪŋ./",
+      "zh": "寶寶長大了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Too fast, really.",
+      "phonetic": "/tu fæst, ˈrɪli./",
+      "zh": "太快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Met a friend today.",
+      "phonetic": "/mɛt ə frɛnd təˈdeɪ./",
+      "zh": "今天遇朋友。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Small world, yes.",
+      "phonetic": "/smɔl wərld, jɛs./",
+      "zh": "世界小。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bakery smells good.",
+      "phonetic": "/ðə ˈbeɪkəri smɛlz gʊd./",
+      "zh": "麪包店好香。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fresh, indeed.",
+      "phonetic": "/frɛʃ, ˌɪnˈdid./",
+      "zh": "很新鮮。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How is work?",
+      "phonetic": "/haʊ ɪz wərk?/",
+      "zh": "工作如何？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Steady, no complaints.",
+      "phonetic": "/ˈstɛdi, noʊ kəmˈpleɪnts./",
+      "zh": "穩定，沒怨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Cold snap coming.",
+      "phonetic": "/koʊld snæp ˈkəmɪŋ./",
+      "zh": "寒流要來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Get the coats.",
+      "phonetic": "/gɪt ðə koʊts./",
+      "zh": "拿外套。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The show was great.",
+      "phonetic": "/ðə ʃoʊ wɑz greɪt./",
+      "zh": "節目很棒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Binged it all.",
+      "phonetic": "/bɪnʤd ɪt ɔl./",
+      "zh": "追完。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Weekend looks free.",
+      "phonetic": "/ˈwiˌkɪnd lʊks fri./",
+      "zh": "週末好像有空。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lucky you, then.",
+      "phonetic": "/ˈləki ju, ðɛn./",
+      "zh": "你真幸運。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The line was long.",
+      "phonetic": "/ðə laɪn wɑz lɔŋ./",
+      "zh": "隊伍很長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Waited twenty.",
+      "phonetic": "/ˈweɪtɪd tˈwɛnti./",
+      "zh": "等二十分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your dog is cute.",
+      "phonetic": "/jʊr dɔg ɪz kjut./",
+      "zh": "你的狗可愛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thank you, he is.",
+      "phonetic": "/θæŋk ju, hi ɪz./",
+      "zh": "謝謝，他是。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The garden is blooming.",
+      "phonetic": "/ðə ˈgɑrdən ɪz ˈblumɪŋ./",
+      "zh": "花園開花了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spring at last.",
+      "phonetic": "/spərɪŋ æt læst./",
+      "zh": "終於春天。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Heard the news?",
+      "phonetic": "/hərd ðə nuz?/",
+      "zh": "聽到新聞？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Not yet, what?",
+      "phonetic": "/nɑt jɛt, wət?/",
+      "zh": "還沒，啥？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "New shoes, nice.",
+      "phonetic": "/nu ʃuz, nis./",
+      "zh": "新鞋，好看。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A small treat.",
+      "phonetic": "/ə smɔl trit./",
+      "zh": "小犒賞。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The traffic was mad.",
+      "phonetic": "/ðə ˈtræfɪk wɑz mæd./",
+      "zh": "交通亂。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Took an hour.",
+      "phonetic": "/tʊk ən aʊər./",
+      "zh": "花一小時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Any plans tonight?",
+      "phonetic": "/ˈɛni plænz təˈnaɪt?/",
+      "zh": "今晚有計畫？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quiet at home.",
+      "phonetic": "/kwaɪət æt hoʊm./",
+      "zh": "在家靜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This coffee is good.",
+      "phonetic": "/ðɪs ˈkɔfi ɪz gʊd./",
+      "zh": "這咖啡不錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try the roast.",
+      "phonetic": "/traɪ ðə roʊst./",
+      "zh": "嘗深焙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Catch the game?",
+      "phonetic": "/kæʧ ðə geɪm?/",
+      "zh": "看比賽了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Missed it, slept.",
+      "phonetic": "/mɪst ɪt, slɛpt./",
+      "zh": "睡著錯過。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How is the family?",
+      "phonetic": "/haʊ ɪz ðə ˈfæməli?/",
+      "zh": "家人好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All well, thanks.",
+      "phonetic": "/ɔl wɛl, θæŋks./",
+      "zh": "都好，謝謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Busy week for you?",
+      "phonetic": "/ˈbɪzi wik fər ju?/",
+      "zh": "你這周忙嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nonstop, sadly.",
+      "phonetic": "/ˌnɑnˈstɑp, ˈsædli./",
+      "zh": "停不下來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Lovely weather today.",
+      "phonetic": "/ˈləvli ˈwɛðər təˈdeɪ./",
+      "zh": "今天天氣真好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Perfect for a walk.",
+      "phonetic": "/ˈpərˌfɪkt fər ə wɔk./",
+      "zh": "適合散步。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Lovely weather today.",
+      "phonetic": "/ˈləvli ˈwɛðər təˈdeɪ./",
+      "zh": "今天天氣真好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Perfect for a walk.",
+      "phonetic": "/ˈpərˌfɪkt fər ə wɔk./",
+      "zh": "適合散步。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Busy week for you?",
+      "phonetic": "/ˈbɪzi wik fər ju?/",
+      "zh": "你這周忙嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nonstop, sadly.",
+      "phonetic": "/ˌnɑnˈstɑp, ˈsædli./",
+      "zh": "停不下來。"
+    }
+  ]
+}

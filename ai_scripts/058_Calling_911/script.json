@@ -1,0 +1,2458 @@
+{
+  "title": "Everyday Phrases — Calling 911",
+  "title_zh": "打911",
+  "scene_zh": "打911 · 情境對話",
+  "title_quote": "Call nine-one-one!",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】🚨 實用打911必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — Calling 911",
+  "youtube_description": "睡著學英文！這部影片收錄實用打911情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫），不用背，睡前聽就會。重複播放，讓英文自然進入你的大腦。👍 想學更多生活場景，請留言告訴我！別忘了訂閱+按讚。 #英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical Calling 911 phrase pairs (each pair: male normal speed → female slow speed → combined dialogue). No memorization needed—just listen before bed and absorb naturally. If you want more real-life scenarios, leave a comment! Subscribe and like!",
+  "youtube_tags": [
+    "英文聽力",
+    "睡前英文",
+    "打911英文",
+    "English listening",
+    "Sleep learning",
+    "A2 English",
+    "常用英文短語",
+    "零基礎英文",
+    "慢速英文",
+    "英文口語",
+    "Learn English",
+    "English for daily life",
+    "ESL",
+    "English conversation",
+    "聽英語",
+    "英文學習"
+  ],
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "Calling 911",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "Calling 911",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Emergency",
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "Call nine-one-one!",
+      "phonetic": "/kɔl nine-one-one*!/",
+      "zh": "打九一一！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What is the emergency?",
+      "phonetic": "/wət ɪz ðə ˈimərʤənsi?/",
+      "zh": "什麼緊急？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Someone fell down.",
+      "phonetic": "/ˈsəmˌwən fɛl daʊn./",
+      "zh": "有人跌倒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Is he breathing?",
+      "phonetic": "/ɪz hi ˈbriðɪŋ?/",
+      "zh": "有呼吸嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kitchen is on fire.",
+      "phonetic": "/ðə ˈkɪʧən ɪz ɔn faɪər./",
+      "zh": "廚房着火。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Get out now!",
+      "phonetic": "/gɪt aʊt naʊ!/",
+      "zh": "快出去！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The address is this.",
+      "phonetic": "/ðə ˈæˌdrɛs ɪz ðɪs./",
+      "zh": "地址在這。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Say it clear.",
+      "phonetic": "/seɪ ɪt klɪr./",
+      "zh": "說清楚。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She can't wake up.",
+      "phonetic": "/ʃi kænt weɪk əp./",
+      "zh": "她叫不醒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Start CPR, now.",
+      "phonetic": "/stɑrt cpr*, naʊ./",
+      "zh": "做心肺復甦。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The car crashed.",
+      "phonetic": "/ðə kɑr kræʃt./",
+      "zh": "車禍。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Any bleeding?",
+      "phonetic": "/ˈɛni ˈblidɪŋ?/",
+      "zh": "流血嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Stay on the line.",
+      "phonetic": "/steɪ ɔn ðə laɪn./",
+      "zh": "別掛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Help is coming.",
+      "phonetic": "/hɛlp ɪz ˈkəmɪŋ./",
+      "zh": "救援來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The door is locked.",
+      "phonetic": "/ðə dɔr ɪz lɑkt./",
+      "zh": "門鎖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Open it, quick.",
+      "phonetic": "/ˈoʊpən ɪt, kwɪk./",
+      "zh": "快開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He is choking.",
+      "phonetic": "/hi ɪz ˈʧoʊkɪŋ./",
+      "zh": "他噎到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Back blows, now.",
+      "phonetic": "/bæk bloʊz, naʊ./",
+      "zh": "拍背。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The baby is hot.",
+      "phonetic": "/ðə ˈbeɪbi ɪz hɑt./",
+      "zh": "寶寶發燒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ambulance, yes.",
+      "phonetic": "/ˈæmbjələns, jɛs./",
+      "zh": "叫救護車。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The smoke is thick.",
+      "phonetic": "/ðə smoʊk ɪz θɪk./",
+      "zh": "煙濃。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Low crawl, out.",
+      "phonetic": "/loʊ krɔl, aʊt./",
+      "zh": "低爬出。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The operator asked.",
+      "phonetic": "/ðə ˈɑpərˌeɪtər æst./",
+      "zh": "調度問。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Speak slow, clear.",
+      "phonetic": "/spik sloʊ, klɪr./",
+      "zh": "慢說清。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The gas smells.",
+      "phonetic": "/ðə gæs smɛlz./",
+      "zh": "聞到瓦斯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No switch, out.",
+      "phonetic": "/noʊ swɪʧ, aʊt./",
+      "zh": "別開關，出。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The leg is bent.",
+      "phonetic": "/ðə lɛg ɪz bɛnt./",
+      "zh": "腿彎。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Don't move him.",
+      "phonetic": "/doʊnt muv ɪm./",
+      "zh": "別動他。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The water rose.",
+      "phonetic": "/ðə ˈwɔtər roʊz./",
+      "zh": "水漲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Go to high.",
+      "phonetic": "/goʊ tɪ haɪ./",
+      "zh": "上高處。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The chest hurts.",
+      "phonetic": "/ðə ʧɛst hərts./",
+      "zh": "胸痛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Call now, fast.",
+      "phonetic": "/kɔl naʊ, fæst./",
+      "zh": "快打。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The line is busy.",
+      "phonetic": "/ðə laɪn ɪz ˈbɪzi./",
+      "zh": "佔線。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Redial, please.",
+      "phonetic": "/riˈdaɪəl, pliz./",
+      "zh": "重撥。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The siren is near.",
+      "phonetic": "/ðə ˈsaɪrən ɪz nɪr./",
+      "zh": "警笛近。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They arrived.",
+      "phonetic": "/ðeɪ əraɪvd./",
+      "zh": "到了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The first aid kit.",
+      "phonetic": "/ðə fərst eɪd kɪt./",
+      "zh": "急救箱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Grab it, quick.",
+      "phonetic": "/græb ɪt, kwɪk./",
+      "zh": "快拿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wound won't stop.",
+      "phonetic": "/ðə wund woʊnt stɑp./",
+      "zh": "傷口不止。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Press hard, yes.",
+      "phonetic": "/prɛs hɑrd, jɛs./",
+      "zh": "用力壓。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The phone is charged.",
+      "phonetic": "/ðə foʊn ɪz ʧɑrʤd./",
+      "zh": "手機有電。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, keep on.",
+      "phonetic": "/gʊd, kip ɔn./",
+      "zh": "好，保持。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lights are on.",
+      "phonetic": "/ðə laɪts ər ɔn./",
+      "zh": "燈開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mark the house.",
+      "phonetic": "/mɑrk ðə haʊs./",
+      "zh": "標示屋。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pet is inside.",
+      "phonetic": "/ðə pɛt ɪz ˌɪnˈsaɪd./",
+      "zh": "寵物在裏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tell the crew.",
+      "phonetic": "/tɛl ðə kru./",
+      "zh": "告知隊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The calm voice helps.",
+      "phonetic": "/ðə kɑm vɔɪs hɛlps./",
+      "zh": "冷靜聲有用。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Breathe, you too.",
+      "phonetic": "/brið, ju tu./",
+      "zh": "你也呼吸。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The address repeated.",
+      "phonetic": "/ðə ˈæˌdrɛs rɪˈpitɪd./",
+      "zh": "地址重複。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They have it.",
+      "phonetic": "/ðeɪ hæv ɪt./",
+      "zh": "他們記。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The ambulance pulls.",
+      "phonetic": "/ðə ˈæmbjələns pʊlz./",
+      "zh": "救護車到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Open the gate.",
+      "phonetic": "/ˈoʊpən ðə geɪt./",
+      "zh": "開柵。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The paramedic in.",
+      "phonetic": "/ðə ˌpɛrəˈmɛdɪk ɪn./",
+      "zh": "救護人員進。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Step aside, please.",
+      "phonetic": "/stɛp əˈsaɪd, pliz./",
+      "zh": "讓開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The person is safe.",
+      "phonetic": "/ðə ˈpərsən ɪz seɪf./",
+      "zh": "人安全。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thanks to you.",
+      "phonetic": "/θæŋks tɪ ju./",
+      "zh": "多虧你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The call is done.",
+      "phonetic": "/ðə kɔl ɪz dən./",
+      "zh": "電話完。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They took over.",
+      "phonetic": "/ðeɪ tʊk ˈoʊvər./",
+      "zh": "他們接手。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The breath returned.",
+      "phonetic": "/ðə brɛθ rɪˈtərnd./",
+      "zh": "恢復呼吸。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Relief, big.",
+      "phonetic": "/rɪˈlif, bɪg./",
+      "zh": "大松。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The scene is clear.",
+      "phonetic": "/ðə sin ɪz klɪr./",
+      "zh": "現場清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All handled, yes.",
+      "phonetic": "/ɔl ˈhændəld, jɛs./",
+      "zh": "都處理。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for calling.",
+      "phonetic": "/θæŋks fər ˈkɔlɪŋ./",
+      "zh": "謝謝打電話。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You saved a life.",
+      "phonetic": "/ju seɪvd ə laɪf./",
+      "zh": "你救了命。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for calling.",
+      "phonetic": "/θæŋks fər ˈkɔlɪŋ./",
+      "zh": "謝謝打電話。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You saved a life.",
+      "phonetic": "/ju seɪvd ə laɪf./",
+      "zh": "你救了命。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The scene is clear.",
+      "phonetic": "/ðə sin ɪz klɪr./",
+      "zh": "現場清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All handled, yes.",
+      "phonetic": "/ɔl ˈhændəld, jɛs./",
+      "zh": "都處理。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The breath returned.",
+      "phonetic": "/ðə brɛθ rɪˈtərnd./",
+      "zh": "恢復呼吸。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Relief, big.",
+      "phonetic": "/rɪˈlif, bɪg./",
+      "zh": "大松。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The call is done.",
+      "phonetic": "/ðə kɔl ɪz dən./",
+      "zh": "電話完。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They took over.",
+      "phonetic": "/ðeɪ tʊk ˈoʊvər./",
+      "zh": "他們接手。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The person is safe.",
+      "phonetic": "/ðə ˈpərsən ɪz seɪf./",
+      "zh": "人安全。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thanks to you.",
+      "phonetic": "/θæŋks tɪ ju./",
+      "zh": "多虧你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The paramedic in.",
+      "phonetic": "/ðə ˌpɛrəˈmɛdɪk ɪn./",
+      "zh": "救護人員進。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Step aside, please.",
+      "phonetic": "/stɛp əˈsaɪd, pliz./",
+      "zh": "讓開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The ambulance pulls.",
+      "phonetic": "/ðə ˈæmbjələns pʊlz./",
+      "zh": "救護車到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Open the gate.",
+      "phonetic": "/ˈoʊpən ðə geɪt./",
+      "zh": "開柵。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The address repeated.",
+      "phonetic": "/ðə ˈæˌdrɛs rɪˈpitɪd./",
+      "zh": "地址重複。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They have it.",
+      "phonetic": "/ðeɪ hæv ɪt./",
+      "zh": "他們記。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The calm voice helps.",
+      "phonetic": "/ðə kɑm vɔɪs hɛlps./",
+      "zh": "冷靜聲有用。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Breathe, you too.",
+      "phonetic": "/brið, ju tu./",
+      "zh": "你也呼吸。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pet is inside.",
+      "phonetic": "/ðə pɛt ɪz ˌɪnˈsaɪd./",
+      "zh": "寵物在裏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tell the crew.",
+      "phonetic": "/tɛl ðə kru./",
+      "zh": "告知隊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lights are on.",
+      "phonetic": "/ðə laɪts ər ɔn./",
+      "zh": "燈開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mark the house.",
+      "phonetic": "/mɑrk ðə haʊs./",
+      "zh": "標示屋。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The phone is charged.",
+      "phonetic": "/ðə foʊn ɪz ʧɑrʤd./",
+      "zh": "手機有電。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, keep on.",
+      "phonetic": "/gʊd, kip ɔn./",
+      "zh": "好，保持。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wound won't stop.",
+      "phonetic": "/ðə wund woʊnt stɑp./",
+      "zh": "傷口不止。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Press hard, yes.",
+      "phonetic": "/prɛs hɑrd, jɛs./",
+      "zh": "用力壓。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The first aid kit.",
+      "phonetic": "/ðə fərst eɪd kɪt./",
+      "zh": "急救箱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Grab it, quick.",
+      "phonetic": "/græb ɪt, kwɪk./",
+      "zh": "快拿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The siren is near.",
+      "phonetic": "/ðə ˈsaɪrən ɪz nɪr./",
+      "zh": "警笛近。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They arrived.",
+      "phonetic": "/ðeɪ əraɪvd./",
+      "zh": "到了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The line is busy.",
+      "phonetic": "/ðə laɪn ɪz ˈbɪzi./",
+      "zh": "佔線。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Redial, please.",
+      "phonetic": "/riˈdaɪəl, pliz./",
+      "zh": "重撥。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The chest hurts.",
+      "phonetic": "/ðə ʧɛst hərts./",
+      "zh": "胸痛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Call now, fast.",
+      "phonetic": "/kɔl naʊ, fæst./",
+      "zh": "快打。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The water rose.",
+      "phonetic": "/ðə ˈwɔtər roʊz./",
+      "zh": "水漲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Go to high.",
+      "phonetic": "/goʊ tɪ haɪ./",
+      "zh": "上高處。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The leg is bent.",
+      "phonetic": "/ðə lɛg ɪz bɛnt./",
+      "zh": "腿彎。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Don't move him.",
+      "phonetic": "/doʊnt muv ɪm./",
+      "zh": "別動他。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The gas smells.",
+      "phonetic": "/ðə gæs smɛlz./",
+      "zh": "聞到瓦斯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No switch, out.",
+      "phonetic": "/noʊ swɪʧ, aʊt./",
+      "zh": "別開關，出。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The operator asked.",
+      "phonetic": "/ðə ˈɑpərˌeɪtər æst./",
+      "zh": "調度問。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Speak slow, clear.",
+      "phonetic": "/spik sloʊ, klɪr./",
+      "zh": "慢說清。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The smoke is thick.",
+      "phonetic": "/ðə smoʊk ɪz θɪk./",
+      "zh": "煙濃。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Low crawl, out.",
+      "phonetic": "/loʊ krɔl, aʊt./",
+      "zh": "低爬出。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The baby is hot.",
+      "phonetic": "/ðə ˈbeɪbi ɪz hɑt./",
+      "zh": "寶寶發燒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ambulance, yes.",
+      "phonetic": "/ˈæmbjələns, jɛs./",
+      "zh": "叫救護車。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He is choking.",
+      "phonetic": "/hi ɪz ˈʧoʊkɪŋ./",
+      "zh": "他噎到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Back blows, now.",
+      "phonetic": "/bæk bloʊz, naʊ./",
+      "zh": "拍背。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The door is locked.",
+      "phonetic": "/ðə dɔr ɪz lɑkt./",
+      "zh": "門鎖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Open it, quick.",
+      "phonetic": "/ˈoʊpən ɪt, kwɪk./",
+      "zh": "快開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Stay on the line.",
+      "phonetic": "/steɪ ɔn ðə laɪn./",
+      "zh": "別掛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Help is coming.",
+      "phonetic": "/hɛlp ɪz ˈkəmɪŋ./",
+      "zh": "救援來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The car crashed.",
+      "phonetic": "/ðə kɑr kræʃt./",
+      "zh": "車禍。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Any bleeding?",
+      "phonetic": "/ˈɛni ˈblidɪŋ?/",
+      "zh": "流血嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She can't wake up.",
+      "phonetic": "/ʃi kænt weɪk əp./",
+      "zh": "她叫不醒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Start CPR, now.",
+      "phonetic": "/stɑrt cpr*, naʊ./",
+      "zh": "做心肺復甦。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The address is this.",
+      "phonetic": "/ðə ˈæˌdrɛs ɪz ðɪs./",
+      "zh": "地址在這。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Say it clear.",
+      "phonetic": "/seɪ ɪt klɪr./",
+      "zh": "說清楚。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kitchen is on fire.",
+      "phonetic": "/ðə ˈkɪʧən ɪz ɔn faɪər./",
+      "zh": "廚房着火。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Get out now!",
+      "phonetic": "/gɪt aʊt naʊ!/",
+      "zh": "快出去！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Someone fell down.",
+      "phonetic": "/ˈsəmˌwən fɛl daʊn./",
+      "zh": "有人跌倒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Is he breathing?",
+      "phonetic": "/ɪz hi ˈbriðɪŋ?/",
+      "zh": "有呼吸嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Call nine-one-one!",
+      "phonetic": "/kɔl nine-one-one*!/",
+      "zh": "打九一一！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What is the emergency?",
+      "phonetic": "/wət ɪz ðə ˈimərʤənsi?/",
+      "zh": "什麼緊急？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Call nine-one-one!",
+      "phonetic": "/kɔl nine-one-one*!/",
+      "zh": "打九一一！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What is the emergency?",
+      "phonetic": "/wət ɪz ðə ˈimərʤənsi?/",
+      "zh": "什麼緊急？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Someone fell down.",
+      "phonetic": "/ˈsəmˌwən fɛl daʊn./",
+      "zh": "有人跌倒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Is he breathing?",
+      "phonetic": "/ɪz hi ˈbriðɪŋ?/",
+      "zh": "有呼吸嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kitchen is on fire.",
+      "phonetic": "/ðə ˈkɪʧən ɪz ɔn faɪər./",
+      "zh": "廚房着火。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Get out now!",
+      "phonetic": "/gɪt aʊt naʊ!/",
+      "zh": "快出去！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The address is this.",
+      "phonetic": "/ðə ˈæˌdrɛs ɪz ðɪs./",
+      "zh": "地址在這。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Say it clear.",
+      "phonetic": "/seɪ ɪt klɪr./",
+      "zh": "說清楚。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She can't wake up.",
+      "phonetic": "/ʃi kænt weɪk əp./",
+      "zh": "她叫不醒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Start CPR, now.",
+      "phonetic": "/stɑrt cpr*, naʊ./",
+      "zh": "做心肺復甦。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The car crashed.",
+      "phonetic": "/ðə kɑr kræʃt./",
+      "zh": "車禍。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Any bleeding?",
+      "phonetic": "/ˈɛni ˈblidɪŋ?/",
+      "zh": "流血嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Stay on the line.",
+      "phonetic": "/steɪ ɔn ðə laɪn./",
+      "zh": "別掛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Help is coming.",
+      "phonetic": "/hɛlp ɪz ˈkəmɪŋ./",
+      "zh": "救援來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The door is locked.",
+      "phonetic": "/ðə dɔr ɪz lɑkt./",
+      "zh": "門鎖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Open it, quick.",
+      "phonetic": "/ˈoʊpən ɪt, kwɪk./",
+      "zh": "快開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He is choking.",
+      "phonetic": "/hi ɪz ˈʧoʊkɪŋ./",
+      "zh": "他噎到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Back blows, now.",
+      "phonetic": "/bæk bloʊz, naʊ./",
+      "zh": "拍背。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The baby is hot.",
+      "phonetic": "/ðə ˈbeɪbi ɪz hɑt./",
+      "zh": "寶寶發燒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ambulance, yes.",
+      "phonetic": "/ˈæmbjələns, jɛs./",
+      "zh": "叫救護車。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The smoke is thick.",
+      "phonetic": "/ðə smoʊk ɪz θɪk./",
+      "zh": "煙濃。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Low crawl, out.",
+      "phonetic": "/loʊ krɔl, aʊt./",
+      "zh": "低爬出。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The operator asked.",
+      "phonetic": "/ðə ˈɑpərˌeɪtər æst./",
+      "zh": "調度問。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Speak slow, clear.",
+      "phonetic": "/spik sloʊ, klɪr./",
+      "zh": "慢說清。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The gas smells.",
+      "phonetic": "/ðə gæs smɛlz./",
+      "zh": "聞到瓦斯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No switch, out.",
+      "phonetic": "/noʊ swɪʧ, aʊt./",
+      "zh": "別開關，出。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The leg is bent.",
+      "phonetic": "/ðə lɛg ɪz bɛnt./",
+      "zh": "腿彎。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Don't move him.",
+      "phonetic": "/doʊnt muv ɪm./",
+      "zh": "別動他。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The water rose.",
+      "phonetic": "/ðə ˈwɔtər roʊz./",
+      "zh": "水漲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Go to high.",
+      "phonetic": "/goʊ tɪ haɪ./",
+      "zh": "上高處。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The chest hurts.",
+      "phonetic": "/ðə ʧɛst hərts./",
+      "zh": "胸痛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Call now, fast.",
+      "phonetic": "/kɔl naʊ, fæst./",
+      "zh": "快打。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The line is busy.",
+      "phonetic": "/ðə laɪn ɪz ˈbɪzi./",
+      "zh": "佔線。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Redial, please.",
+      "phonetic": "/riˈdaɪəl, pliz./",
+      "zh": "重撥。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The siren is near.",
+      "phonetic": "/ðə ˈsaɪrən ɪz nɪr./",
+      "zh": "警笛近。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They arrived.",
+      "phonetic": "/ðeɪ əraɪvd./",
+      "zh": "到了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The first aid kit.",
+      "phonetic": "/ðə fərst eɪd kɪt./",
+      "zh": "急救箱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Grab it, quick.",
+      "phonetic": "/græb ɪt, kwɪk./",
+      "zh": "快拿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wound won't stop.",
+      "phonetic": "/ðə wund woʊnt stɑp./",
+      "zh": "傷口不止。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Press hard, yes.",
+      "phonetic": "/prɛs hɑrd, jɛs./",
+      "zh": "用力壓。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The phone is charged.",
+      "phonetic": "/ðə foʊn ɪz ʧɑrʤd./",
+      "zh": "手機有電。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, keep on.",
+      "phonetic": "/gʊd, kip ɔn./",
+      "zh": "好，保持。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lights are on.",
+      "phonetic": "/ðə laɪts ər ɔn./",
+      "zh": "燈開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mark the house.",
+      "phonetic": "/mɑrk ðə haʊs./",
+      "zh": "標示屋。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pet is inside.",
+      "phonetic": "/ðə pɛt ɪz ˌɪnˈsaɪd./",
+      "zh": "寵物在裏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tell the crew.",
+      "phonetic": "/tɛl ðə kru./",
+      "zh": "告知隊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The calm voice helps.",
+      "phonetic": "/ðə kɑm vɔɪs hɛlps./",
+      "zh": "冷靜聲有用。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Breathe, you too.",
+      "phonetic": "/brið, ju tu./",
+      "zh": "你也呼吸。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The address repeated.",
+      "phonetic": "/ðə ˈæˌdrɛs rɪˈpitɪd./",
+      "zh": "地址重複。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They have it.",
+      "phonetic": "/ðeɪ hæv ɪt./",
+      "zh": "他們記。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The ambulance pulls.",
+      "phonetic": "/ðə ˈæmbjələns pʊlz./",
+      "zh": "救護車到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Open the gate.",
+      "phonetic": "/ˈoʊpən ðə geɪt./",
+      "zh": "開柵。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The paramedic in.",
+      "phonetic": "/ðə ˌpɛrəˈmɛdɪk ɪn./",
+      "zh": "救護人員進。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Step aside, please.",
+      "phonetic": "/stɛp əˈsaɪd, pliz./",
+      "zh": "讓開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The person is safe.",
+      "phonetic": "/ðə ˈpərsən ɪz seɪf./",
+      "zh": "人安全。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thanks to you.",
+      "phonetic": "/θæŋks tɪ ju./",
+      "zh": "多虧你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The call is done.",
+      "phonetic": "/ðə kɔl ɪz dən./",
+      "zh": "電話完。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They took over.",
+      "phonetic": "/ðeɪ tʊk ˈoʊvər./",
+      "zh": "他們接手。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The breath returned.",
+      "phonetic": "/ðə brɛθ rɪˈtərnd./",
+      "zh": "恢復呼吸。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Relief, big.",
+      "phonetic": "/rɪˈlif, bɪg./",
+      "zh": "大松。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The scene is clear.",
+      "phonetic": "/ðə sin ɪz klɪr./",
+      "zh": "現場清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All handled, yes.",
+      "phonetic": "/ɔl ˈhændəld, jɛs./",
+      "zh": "都處理。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for calling.",
+      "phonetic": "/θæŋks fər ˈkɔlɪŋ./",
+      "zh": "謝謝打電話。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You saved a life.",
+      "phonetic": "/ju seɪvd ə laɪf./",
+      "zh": "你救了命。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for calling.",
+      "phonetic": "/θæŋks fər ˈkɔlɪŋ./",
+      "zh": "謝謝打電話。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You saved a life.",
+      "phonetic": "/ju seɪvd ə laɪf./",
+      "zh": "你救了命。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The scene is clear.",
+      "phonetic": "/ðə sin ɪz klɪr./",
+      "zh": "現場清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All handled, yes.",
+      "phonetic": "/ɔl ˈhændəld, jɛs./",
+      "zh": "都處理。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The breath returned.",
+      "phonetic": "/ðə brɛθ rɪˈtərnd./",
+      "zh": "恢復呼吸。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Relief, big.",
+      "phonetic": "/rɪˈlif, bɪg./",
+      "zh": "大松。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The call is done.",
+      "phonetic": "/ðə kɔl ɪz dən./",
+      "zh": "電話完。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They took over.",
+      "phonetic": "/ðeɪ tʊk ˈoʊvər./",
+      "zh": "他們接手。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The person is safe.",
+      "phonetic": "/ðə ˈpərsən ɪz seɪf./",
+      "zh": "人安全。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thanks to you.",
+      "phonetic": "/θæŋks tɪ ju./",
+      "zh": "多虧你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The paramedic in.",
+      "phonetic": "/ðə ˌpɛrəˈmɛdɪk ɪn./",
+      "zh": "救護人員進。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Step aside, please.",
+      "phonetic": "/stɛp əˈsaɪd, pliz./",
+      "zh": "讓開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The ambulance pulls.",
+      "phonetic": "/ðə ˈæmbjələns pʊlz./",
+      "zh": "救護車到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Open the gate.",
+      "phonetic": "/ˈoʊpən ðə geɪt./",
+      "zh": "開柵。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The address repeated.",
+      "phonetic": "/ðə ˈæˌdrɛs rɪˈpitɪd./",
+      "zh": "地址重複。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They have it.",
+      "phonetic": "/ðeɪ hæv ɪt./",
+      "zh": "他們記。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The calm voice helps.",
+      "phonetic": "/ðə kɑm vɔɪs hɛlps./",
+      "zh": "冷靜聲有用。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Breathe, you too.",
+      "phonetic": "/brið, ju tu./",
+      "zh": "你也呼吸。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pet is inside.",
+      "phonetic": "/ðə pɛt ɪz ˌɪnˈsaɪd./",
+      "zh": "寵物在裏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tell the crew.",
+      "phonetic": "/tɛl ðə kru./",
+      "zh": "告知隊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lights are on.",
+      "phonetic": "/ðə laɪts ər ɔn./",
+      "zh": "燈開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mark the house.",
+      "phonetic": "/mɑrk ðə haʊs./",
+      "zh": "標示屋。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The phone is charged.",
+      "phonetic": "/ðə foʊn ɪz ʧɑrʤd./",
+      "zh": "手機有電。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, keep on.",
+      "phonetic": "/gʊd, kip ɔn./",
+      "zh": "好，保持。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wound won't stop.",
+      "phonetic": "/ðə wund woʊnt stɑp./",
+      "zh": "傷口不止。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Press hard, yes.",
+      "phonetic": "/prɛs hɑrd, jɛs./",
+      "zh": "用力壓。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The first aid kit.",
+      "phonetic": "/ðə fərst eɪd kɪt./",
+      "zh": "急救箱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Grab it, quick.",
+      "phonetic": "/græb ɪt, kwɪk./",
+      "zh": "快拿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The siren is near.",
+      "phonetic": "/ðə ˈsaɪrən ɪz nɪr./",
+      "zh": "警笛近。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They arrived.",
+      "phonetic": "/ðeɪ əraɪvd./",
+      "zh": "到了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The line is busy.",
+      "phonetic": "/ðə laɪn ɪz ˈbɪzi./",
+      "zh": "佔線。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Redial, please.",
+      "phonetic": "/riˈdaɪəl, pliz./",
+      "zh": "重撥。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The chest hurts.",
+      "phonetic": "/ðə ʧɛst hərts./",
+      "zh": "胸痛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Call now, fast.",
+      "phonetic": "/kɔl naʊ, fæst./",
+      "zh": "快打。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The water rose.",
+      "phonetic": "/ðə ˈwɔtər roʊz./",
+      "zh": "水漲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Go to high.",
+      "phonetic": "/goʊ tɪ haɪ./",
+      "zh": "上高處。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The leg is bent.",
+      "phonetic": "/ðə lɛg ɪz bɛnt./",
+      "zh": "腿彎。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Don't move him.",
+      "phonetic": "/doʊnt muv ɪm./",
+      "zh": "別動他。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The gas smells.",
+      "phonetic": "/ðə gæs smɛlz./",
+      "zh": "聞到瓦斯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No switch, out.",
+      "phonetic": "/noʊ swɪʧ, aʊt./",
+      "zh": "別開關，出。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The operator asked.",
+      "phonetic": "/ðə ˈɑpərˌeɪtər æst./",
+      "zh": "調度問。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Speak slow, clear.",
+      "phonetic": "/spik sloʊ, klɪr./",
+      "zh": "慢說清。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The smoke is thick.",
+      "phonetic": "/ðə smoʊk ɪz θɪk./",
+      "zh": "煙濃。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Low crawl, out.",
+      "phonetic": "/loʊ krɔl, aʊt./",
+      "zh": "低爬出。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The baby is hot.",
+      "phonetic": "/ðə ˈbeɪbi ɪz hɑt./",
+      "zh": "寶寶發燒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ambulance, yes.",
+      "phonetic": "/ˈæmbjələns, jɛs./",
+      "zh": "叫救護車。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He is choking.",
+      "phonetic": "/hi ɪz ˈʧoʊkɪŋ./",
+      "zh": "他噎到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Back blows, now.",
+      "phonetic": "/bæk bloʊz, naʊ./",
+      "zh": "拍背。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The door is locked.",
+      "phonetic": "/ðə dɔr ɪz lɑkt./",
+      "zh": "門鎖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Open it, quick.",
+      "phonetic": "/ˈoʊpən ɪt, kwɪk./",
+      "zh": "快開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Stay on the line.",
+      "phonetic": "/steɪ ɔn ðə laɪn./",
+      "zh": "別掛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Help is coming.",
+      "phonetic": "/hɛlp ɪz ˈkəmɪŋ./",
+      "zh": "救援來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The car crashed.",
+      "phonetic": "/ðə kɑr kræʃt./",
+      "zh": "車禍。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Any bleeding?",
+      "phonetic": "/ˈɛni ˈblidɪŋ?/",
+      "zh": "流血嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She can't wake up.",
+      "phonetic": "/ʃi kænt weɪk əp./",
+      "zh": "她叫不醒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Start CPR, now.",
+      "phonetic": "/stɑrt cpr*, naʊ./",
+      "zh": "做心肺復甦。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The address is this.",
+      "phonetic": "/ðə ˈæˌdrɛs ɪz ðɪs./",
+      "zh": "地址在這。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Say it clear.",
+      "phonetic": "/seɪ ɪt klɪr./",
+      "zh": "說清楚。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kitchen is on fire.",
+      "phonetic": "/ðə ˈkɪʧən ɪz ɔn faɪər./",
+      "zh": "廚房着火。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Get out now!",
+      "phonetic": "/gɪt aʊt naʊ!/",
+      "zh": "快出去！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Someone fell down.",
+      "phonetic": "/ˈsəmˌwən fɛl daʊn./",
+      "zh": "有人跌倒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Is he breathing?",
+      "phonetic": "/ɪz hi ˈbriðɪŋ?/",
+      "zh": "有呼吸嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Call nine-one-one!",
+      "phonetic": "/kɔl nine-one-one*!/",
+      "zh": "打九一一！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What is the emergency?",
+      "phonetic": "/wət ɪz ðə ˈimərʤənsi?/",
+      "zh": "什麼緊急？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Call nine-one-one!",
+      "phonetic": "/kɔl nine-one-one*!/",
+      "zh": "打九一一！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What is the emergency?",
+      "phonetic": "/wət ɪz ðə ˈimərʤənsi?/",
+      "zh": "什麼緊急？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Someone fell down.",
+      "phonetic": "/ˈsəmˌwən fɛl daʊn./",
+      "zh": "有人跌倒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Is he breathing?",
+      "phonetic": "/ɪz hi ˈbriðɪŋ?/",
+      "zh": "有呼吸嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kitchen is on fire.",
+      "phonetic": "/ðə ˈkɪʧən ɪz ɔn faɪər./",
+      "zh": "廚房着火。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Get out now!",
+      "phonetic": "/gɪt aʊt naʊ!/",
+      "zh": "快出去！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The address is this.",
+      "phonetic": "/ðə ˈæˌdrɛs ɪz ðɪs./",
+      "zh": "地址在這。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Say it clear.",
+      "phonetic": "/seɪ ɪt klɪr./",
+      "zh": "說清楚。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She can't wake up.",
+      "phonetic": "/ʃi kænt weɪk əp./",
+      "zh": "她叫不醒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Start CPR, now.",
+      "phonetic": "/stɑrt cpr*, naʊ./",
+      "zh": "做心肺復甦。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The car crashed.",
+      "phonetic": "/ðə kɑr kræʃt./",
+      "zh": "車禍。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Any bleeding?",
+      "phonetic": "/ˈɛni ˈblidɪŋ?/",
+      "zh": "流血嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Stay on the line.",
+      "phonetic": "/steɪ ɔn ðə laɪn./",
+      "zh": "別掛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Help is coming.",
+      "phonetic": "/hɛlp ɪz ˈkəmɪŋ./",
+      "zh": "救援來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The door is locked.",
+      "phonetic": "/ðə dɔr ɪz lɑkt./",
+      "zh": "門鎖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Open it, quick.",
+      "phonetic": "/ˈoʊpən ɪt, kwɪk./",
+      "zh": "快開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He is choking.",
+      "phonetic": "/hi ɪz ˈʧoʊkɪŋ./",
+      "zh": "他噎到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Back blows, now.",
+      "phonetic": "/bæk bloʊz, naʊ./",
+      "zh": "拍背。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The baby is hot.",
+      "phonetic": "/ðə ˈbeɪbi ɪz hɑt./",
+      "zh": "寶寶發燒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ambulance, yes.",
+      "phonetic": "/ˈæmbjələns, jɛs./",
+      "zh": "叫救護車。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The smoke is thick.",
+      "phonetic": "/ðə smoʊk ɪz θɪk./",
+      "zh": "煙濃。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Low crawl, out.",
+      "phonetic": "/loʊ krɔl, aʊt./",
+      "zh": "低爬出。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The operator asked.",
+      "phonetic": "/ðə ˈɑpərˌeɪtər æst./",
+      "zh": "調度問。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Speak slow, clear.",
+      "phonetic": "/spik sloʊ, klɪr./",
+      "zh": "慢說清。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The gas smells.",
+      "phonetic": "/ðə gæs smɛlz./",
+      "zh": "聞到瓦斯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No switch, out.",
+      "phonetic": "/noʊ swɪʧ, aʊt./",
+      "zh": "別開關，出。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The leg is bent.",
+      "phonetic": "/ðə lɛg ɪz bɛnt./",
+      "zh": "腿彎。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Don't move him.",
+      "phonetic": "/doʊnt muv ɪm./",
+      "zh": "別動他。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The water rose.",
+      "phonetic": "/ðə ˈwɔtər roʊz./",
+      "zh": "水漲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Go to high.",
+      "phonetic": "/goʊ tɪ haɪ./",
+      "zh": "上高處。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The chest hurts.",
+      "phonetic": "/ðə ʧɛst hərts./",
+      "zh": "胸痛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Call now, fast.",
+      "phonetic": "/kɔl naʊ, fæst./",
+      "zh": "快打。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The line is busy.",
+      "phonetic": "/ðə laɪn ɪz ˈbɪzi./",
+      "zh": "佔線。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Redial, please.",
+      "phonetic": "/riˈdaɪəl, pliz./",
+      "zh": "重撥。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The siren is near.",
+      "phonetic": "/ðə ˈsaɪrən ɪz nɪr./",
+      "zh": "警笛近。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They arrived.",
+      "phonetic": "/ðeɪ əraɪvd./",
+      "zh": "到了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The first aid kit.",
+      "phonetic": "/ðə fərst eɪd kɪt./",
+      "zh": "急救箱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Grab it, quick.",
+      "phonetic": "/græb ɪt, kwɪk./",
+      "zh": "快拿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wound won't stop.",
+      "phonetic": "/ðə wund woʊnt stɑp./",
+      "zh": "傷口不止。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Press hard, yes.",
+      "phonetic": "/prɛs hɑrd, jɛs./",
+      "zh": "用力壓。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The phone is charged.",
+      "phonetic": "/ðə foʊn ɪz ʧɑrʤd./",
+      "zh": "手機有電。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, keep on.",
+      "phonetic": "/gʊd, kip ɔn./",
+      "zh": "好，保持。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lights are on.",
+      "phonetic": "/ðə laɪts ər ɔn./",
+      "zh": "燈開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mark the house.",
+      "phonetic": "/mɑrk ðə haʊs./",
+      "zh": "標示屋。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pet is inside.",
+      "phonetic": "/ðə pɛt ɪz ˌɪnˈsaɪd./",
+      "zh": "寵物在裏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tell the crew.",
+      "phonetic": "/tɛl ðə kru./",
+      "zh": "告知隊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The calm voice helps.",
+      "phonetic": "/ðə kɑm vɔɪs hɛlps./",
+      "zh": "冷靜聲有用。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Breathe, you too.",
+      "phonetic": "/brið, ju tu./",
+      "zh": "你也呼吸。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The address repeated.",
+      "phonetic": "/ðə ˈæˌdrɛs rɪˈpitɪd./",
+      "zh": "地址重複。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They have it.",
+      "phonetic": "/ðeɪ hæv ɪt./",
+      "zh": "他們記。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The ambulance pulls.",
+      "phonetic": "/ðə ˈæmbjələns pʊlz./",
+      "zh": "救護車到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Open the gate.",
+      "phonetic": "/ˈoʊpən ðə geɪt./",
+      "zh": "開柵。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The paramedic in.",
+      "phonetic": "/ðə ˌpɛrəˈmɛdɪk ɪn./",
+      "zh": "救護人員進。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Step aside, please.",
+      "phonetic": "/stɛp əˈsaɪd, pliz./",
+      "zh": "讓開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The person is safe.",
+      "phonetic": "/ðə ˈpərsən ɪz seɪf./",
+      "zh": "人安全。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thanks to you.",
+      "phonetic": "/θæŋks tɪ ju./",
+      "zh": "多虧你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The call is done.",
+      "phonetic": "/ðə kɔl ɪz dən./",
+      "zh": "電話完。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They took over.",
+      "phonetic": "/ðeɪ tʊk ˈoʊvər./",
+      "zh": "他們接手。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The breath returned.",
+      "phonetic": "/ðə brɛθ rɪˈtərnd./",
+      "zh": "恢復呼吸。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Relief, big.",
+      "phonetic": "/rɪˈlif, bɪg./",
+      "zh": "大松。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The scene is clear.",
+      "phonetic": "/ðə sin ɪz klɪr./",
+      "zh": "現場清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All handled, yes.",
+      "phonetic": "/ɔl ˈhændəld, jɛs./",
+      "zh": "都處理。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for calling.",
+      "phonetic": "/θæŋks fər ˈkɔlɪŋ./",
+      "zh": "謝謝打電話。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You saved a life.",
+      "phonetic": "/ju seɪvd ə laɪf./",
+      "zh": "你救了命。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for calling.",
+      "phonetic": "/θæŋks fər ˈkɔlɪŋ./",
+      "zh": "謝謝打電話。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You saved a life.",
+      "phonetic": "/ju seɪvd ə laɪf./",
+      "zh": "你救了命。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The scene is clear.",
+      "phonetic": "/ðə sin ɪz klɪr./",
+      "zh": "現場清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All handled, yes.",
+      "phonetic": "/ɔl ˈhændəld, jɛs./",
+      "zh": "都處理。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The breath returned.",
+      "phonetic": "/ðə brɛθ rɪˈtərnd./",
+      "zh": "恢復呼吸。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Relief, big.",
+      "phonetic": "/rɪˈlif, bɪg./",
+      "zh": "大松。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The call is done.",
+      "phonetic": "/ðə kɔl ɪz dən./",
+      "zh": "電話完。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They took over.",
+      "phonetic": "/ðeɪ tʊk ˈoʊvər./",
+      "zh": "他們接手。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The person is safe.",
+      "phonetic": "/ðə ˈpərsən ɪz seɪf./",
+      "zh": "人安全。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thanks to you.",
+      "phonetic": "/θæŋks tɪ ju./",
+      "zh": "多虧你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The paramedic in.",
+      "phonetic": "/ðə ˌpɛrəˈmɛdɪk ɪn./",
+      "zh": "救護人員進。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Step aside, please.",
+      "phonetic": "/stɛp əˈsaɪd, pliz./",
+      "zh": "讓開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The ambulance pulls.",
+      "phonetic": "/ðə ˈæmbjələns pʊlz./",
+      "zh": "救護車到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Open the gate.",
+      "phonetic": "/ˈoʊpən ðə geɪt./",
+      "zh": "開柵。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The address repeated.",
+      "phonetic": "/ðə ˈæˌdrɛs rɪˈpitɪd./",
+      "zh": "地址重複。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They have it.",
+      "phonetic": "/ðeɪ hæv ɪt./",
+      "zh": "他們記。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The calm voice helps.",
+      "phonetic": "/ðə kɑm vɔɪs hɛlps./",
+      "zh": "冷靜聲有用。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Breathe, you too.",
+      "phonetic": "/brið, ju tu./",
+      "zh": "你也呼吸。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pet is inside.",
+      "phonetic": "/ðə pɛt ɪz ˌɪnˈsaɪd./",
+      "zh": "寵物在裏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tell the crew.",
+      "phonetic": "/tɛl ðə kru./",
+      "zh": "告知隊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lights are on.",
+      "phonetic": "/ðə laɪts ər ɔn./",
+      "zh": "燈開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mark the house.",
+      "phonetic": "/mɑrk ðə haʊs./",
+      "zh": "標示屋。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The phone is charged.",
+      "phonetic": "/ðə foʊn ɪz ʧɑrʤd./",
+      "zh": "手機有電。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, keep on.",
+      "phonetic": "/gʊd, kip ɔn./",
+      "zh": "好，保持。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wound won't stop.",
+      "phonetic": "/ðə wund woʊnt stɑp./",
+      "zh": "傷口不止。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Press hard, yes.",
+      "phonetic": "/prɛs hɑrd, jɛs./",
+      "zh": "用力壓。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The first aid kit.",
+      "phonetic": "/ðə fərst eɪd kɪt./",
+      "zh": "急救箱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Grab it, quick.",
+      "phonetic": "/græb ɪt, kwɪk./",
+      "zh": "快拿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The siren is near.",
+      "phonetic": "/ðə ˈsaɪrən ɪz nɪr./",
+      "zh": "警笛近。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They arrived.",
+      "phonetic": "/ðeɪ əraɪvd./",
+      "zh": "到了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The line is busy.",
+      "phonetic": "/ðə laɪn ɪz ˈbɪzi./",
+      "zh": "佔線。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Redial, please.",
+      "phonetic": "/riˈdaɪəl, pliz./",
+      "zh": "重撥。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The chest hurts.",
+      "phonetic": "/ðə ʧɛst hərts./",
+      "zh": "胸痛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Call now, fast.",
+      "phonetic": "/kɔl naʊ, fæst./",
+      "zh": "快打。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The water rose.",
+      "phonetic": "/ðə ˈwɔtər roʊz./",
+      "zh": "水漲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Go to high.",
+      "phonetic": "/goʊ tɪ haɪ./",
+      "zh": "上高處。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The leg is bent.",
+      "phonetic": "/ðə lɛg ɪz bɛnt./",
+      "zh": "腿彎。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Don't move him.",
+      "phonetic": "/doʊnt muv ɪm./",
+      "zh": "別動他。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The gas smells.",
+      "phonetic": "/ðə gæs smɛlz./",
+      "zh": "聞到瓦斯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No switch, out.",
+      "phonetic": "/noʊ swɪʧ, aʊt./",
+      "zh": "別開關，出。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The operator asked.",
+      "phonetic": "/ðə ˈɑpərˌeɪtər æst./",
+      "zh": "調度問。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Speak slow, clear.",
+      "phonetic": "/spik sloʊ, klɪr./",
+      "zh": "慢說清。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The smoke is thick.",
+      "phonetic": "/ðə smoʊk ɪz θɪk./",
+      "zh": "煙濃。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Low crawl, out.",
+      "phonetic": "/loʊ krɔl, aʊt./",
+      "zh": "低爬出。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The baby is hot.",
+      "phonetic": "/ðə ˈbeɪbi ɪz hɑt./",
+      "zh": "寶寶發燒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ambulance, yes.",
+      "phonetic": "/ˈæmbjələns, jɛs./",
+      "zh": "叫救護車。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He is choking.",
+      "phonetic": "/hi ɪz ˈʧoʊkɪŋ./",
+      "zh": "他噎到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Back blows, now.",
+      "phonetic": "/bæk bloʊz, naʊ./",
+      "zh": "拍背。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The door is locked.",
+      "phonetic": "/ðə dɔr ɪz lɑkt./",
+      "zh": "門鎖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Open it, quick.",
+      "phonetic": "/ˈoʊpən ɪt, kwɪk./",
+      "zh": "快開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Stay on the line.",
+      "phonetic": "/steɪ ɔn ðə laɪn./",
+      "zh": "別掛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Help is coming.",
+      "phonetic": "/hɛlp ɪz ˈkəmɪŋ./",
+      "zh": "救援來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The car crashed.",
+      "phonetic": "/ðə kɑr kræʃt./",
+      "zh": "車禍。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Any bleeding?",
+      "phonetic": "/ˈɛni ˈblidɪŋ?/",
+      "zh": "流血嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She can't wake up.",
+      "phonetic": "/ʃi kænt weɪk əp./",
+      "zh": "她叫不醒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Start CPR, now.",
+      "phonetic": "/stɑrt cpr*, naʊ./",
+      "zh": "做心肺復甦。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The address is this.",
+      "phonetic": "/ðə ˈæˌdrɛs ɪz ðɪs./",
+      "zh": "地址在這。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Say it clear.",
+      "phonetic": "/seɪ ɪt klɪr./",
+      "zh": "說清楚。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kitchen is on fire.",
+      "phonetic": "/ðə ˈkɪʧən ɪz ɔn faɪər./",
+      "zh": "廚房着火。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Get out now!",
+      "phonetic": "/gɪt aʊt naʊ!/",
+      "zh": "快出去！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Someone fell down.",
+      "phonetic": "/ˈsəmˌwən fɛl daʊn./",
+      "zh": "有人跌倒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Is he breathing?",
+      "phonetic": "/ɪz hi ˈbriðɪŋ?/",
+      "zh": "有呼吸嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Call nine-one-one!",
+      "phonetic": "/kɔl nine-one-one*!/",
+      "zh": "打九一一！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What is the emergency?",
+      "phonetic": "/wət ɪz ðə ˈimərʤənsi?/",
+      "zh": "什麼緊急？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Call nine-one-one!",
+      "phonetic": "/kɔl nine-one-one*!/",
+      "zh": "打九一一！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What is the emergency?",
+      "phonetic": "/wət ɪz ðə ˈimərʤənsi?/",
+      "zh": "什麼緊急？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Someone fell down.",
+      "phonetic": "/ˈsəmˌwən fɛl daʊn./",
+      "zh": "有人跌倒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Is he breathing?",
+      "phonetic": "/ɪz hi ˈbriðɪŋ?/",
+      "zh": "有呼吸嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kitchen is on fire.",
+      "phonetic": "/ðə ˈkɪʧən ɪz ɔn faɪər./",
+      "zh": "廚房着火。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Get out now!",
+      "phonetic": "/gɪt aʊt naʊ!/",
+      "zh": "快出去！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The address is this.",
+      "phonetic": "/ðə ˈæˌdrɛs ɪz ðɪs./",
+      "zh": "地址在這。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Say it clear.",
+      "phonetic": "/seɪ ɪt klɪr./",
+      "zh": "說清楚。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She can't wake up.",
+      "phonetic": "/ʃi kænt weɪk əp./",
+      "zh": "她叫不醒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Start CPR, now.",
+      "phonetic": "/stɑrt cpr*, naʊ./",
+      "zh": "做心肺復甦。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The car crashed.",
+      "phonetic": "/ðə kɑr kræʃt./",
+      "zh": "車禍。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Any bleeding?",
+      "phonetic": "/ˈɛni ˈblidɪŋ?/",
+      "zh": "流血嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Stay on the line.",
+      "phonetic": "/steɪ ɔn ðə laɪn./",
+      "zh": "別掛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Help is coming.",
+      "phonetic": "/hɛlp ɪz ˈkəmɪŋ./",
+      "zh": "救援來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The door is locked.",
+      "phonetic": "/ðə dɔr ɪz lɑkt./",
+      "zh": "門鎖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Open it, quick.",
+      "phonetic": "/ˈoʊpən ɪt, kwɪk./",
+      "zh": "快開。"
+    }
+  ]
+}

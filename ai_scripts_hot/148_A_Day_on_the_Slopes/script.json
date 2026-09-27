@@ -1,0 +1,2458 @@
+{
+  "title": "Everyday Phrases — A Day on the Slopes",
+  "title_zh": "滑雪的一天",
+  "scene_zh": "滑雪的一天 · 情境對話",
+  "title_quote": "We finally made it to the mountain!",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】⛷️ 實用滑雪必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — A Day on the Slopes",
+  "youtube_description": "睡著學英文！這部影片收錄實用滑雪的一天情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫），從買票、租雪服雪鞋雪板、挑頭盔護目鏡，到搭纜車上初級道、學比薩式剎車、摔倒再爬起來，再到中級道連轉、和朋友比速度、玩雪圈、木屋喝熱可可，最後日落收板、還裝備、泡熱水澡、全身痠痛相約明天再戰，不用背，睡前聽就會。重複播放，讓英文自然進入你的大腦。👍 想學更多生活場景，請留言告訴我！別忘了訂閱+按讚。 #英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical A Day on the Slopes phrase pairs (each pair: male normal speed → female slow speed → combined dialogue), covering lift tickets, renting skis, boots, jackets, helmets and goggles, riding the chairlift, learning the snowplow, falling and getting up, linking turns on the intermediate run, racing a friend, snow tubing, hot chocolate in the wood hut, then the sunset last run, returning gear, a hot bath, sore muscles and plans for tomorrow. No memorization needed—just listen before bed and absorb naturally. If you want more real-life scenarios, leave a comment! Subscribe and like!",
+  "youtube_tags": [
+    "英文聽力",
+    "睡前英文",
+    "滑雪英文",
+    "雪場英文",
+    "戶外旅行英文",
+    "English listening",
+    "Sleep learning",
+    "A2 English",
+    "常用英文短語",
+    "零基礎英文",
+    "慢速英文",
+    "英文口語",
+    "Learn English",
+    "English for travel",
+    "ESL",
+    "English conversation"
+  ],
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "A Day on the Slopes",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "A Day on the Slopes",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Outdoors",
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "We finally made it to the mountain!",
+      "phonetic": "/wi ˈfaɪnəli meɪd ɪt tu ðə ˈmaʊntən/",
+      "zh": "我們終於到山上啦！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Look at all that snow up there.",
+      "phonetic": "/lʊk æt ɔl ðæt snoʊ ʌp ðɛr/",
+      "zh": "你看上頭積了那麼多雪。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The air is so cold and clean.",
+      "phonetic": "/ði ɛr ɪz soʊ koʊld ænd klin/",
+      "zh": "這裡的空氣又冷又乾淨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Breathe it in — it wakes you up.",
+      "phonetic": "/brið ɪt ɪn ɪt weɪks ju ʌp/",
+      "zh": "深吸一口，特別提神。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where do we get our ski passes?",
+      "phonetic": "/wɛr du wi ɡɛt ˈaʊər skaɪ ˈpæsɪz/",
+      "zh": "我們在哪兒買滑雪票？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The ticket window is on the left.",
+      "phonetic": "/ðə ˈtɪkɪt ˈwɪndoʊ ɪz ɑn ðə lɛft/",
+      "zh": "售票窗口就在左邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do we need a pass for the lift?",
+      "phonetic": "/du wi nid ə pæs fər ðə lɪft/",
+      "zh": "坐纜車也要票嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, one pass covers every lift.",
+      "phonetic": "/jɛs wʌn pæs ˈkʌvərz ˈɛvri lɪft/",
+      "zh": "要，一張票所有纜車通用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How much is a full-day pass?",
+      "phonetic": "/haʊ mʌtʃ ɪz ə fʊl deɪ pæs/",
+      "zh": "全天票多少錢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sixty dollars for one single day.",
+      "phonetic": "/ˈsɪksti ˈdɑlərz fər wʌn ˈsɪŋɡəl deɪ/",
+      "zh": "單天六十美元。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I buy two days instead?",
+      "phonetic": "/ʃʊd aɪ baɪ tu deɪz ɪnˈstɛd/",
+      "zh": "我乾脆買兩天的好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two days works out cheaper per day.",
+      "phonetic": "/tu deɪz wɜrks aʊt ˈtʃipər pər deɪ/",
+      "zh": "按天算，兩天更划算。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Okay, I'll take the two-day one.",
+      "phonetic": "/oʊˈkeɪ aɪl teɪk ðə tu deɪ wʌn/",
+      "zh": "好，我要兩天的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Smart — now we can come back.",
+      "phonetic": "/smɑrt naʊ wi kən kʌm bæk/",
+      "zh": "聰明，這樣我們還能再來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Could I pay on my phone here?",
+      "phonetic": "/kʊd aɪ peɪ ɑn maɪ foʊn hɪr/",
+      "zh": "這裡可以用手機付款嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, just tap the little machine.",
+      "phonetic": "/ʃʊr dʒʌst tæp ðə ˈlɪtəl məˈʃin/",
+      "zh": "可以，碰一下那台機器就行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Got it. The screen says approved.",
+      "phonetic": "/ɡɑt ɪt ðə skrin sɛz əˈpruvd/",
+      "zh": "好了，螢幕顯示付款成功。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep the receipt in your pocket.",
+      "phonetic": "/kip ðə rɪˈsit ɪn jɔr ˈpɑkɪt/",
+      "zh": "小票放進口袋留好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now we need gear, right?",
+      "phonetic": "/naʊ wi nid ɡɪr raɪt/",
+      "zh": "接下來要裝備，對吧？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The rental shop is next door.",
+      "phonetic": "/ðə ˈrɛntəl ʃɑp ɪz nɛkst dɔr/",
+      "zh": "租器材的店就在隔壁。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do I have to book gear online?",
+      "phonetic": "/du aɪ hæv tu bʊk ɡɪr ˌɑnˈlaɪn/",
+      "zh": "裝備必須網上預訂嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You can rent it here today.",
+      "phonetic": "/ju kən rɛnt ɪt hɪr təˈdeɪ/",
+      "zh": "今天直接在這兒租也行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I don't own any ski clothes.",
+      "phonetic": "/aɪ doʊnt oʊn ˈɛni skaɪ kloʊz/",
+      "zh": "我一件滑雪服都沒有。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They rent warm jackets too.",
+      "phonetic": "/ðeɪ rɛnt wɔrm ˈdʒækɪts tu/",
+      "zh": "這裡也出租保暖外套。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This red jacket looks warm enough.",
+      "phonetic": "/ðɪs rɛd ˈdʒækɪt lʊks wɔrm ɪˈnʌf/",
+      "zh": "這件紅外套看著挺暖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try it on — sizing runs small.",
+      "phonetic": "/traɪ ɪt ɑn ˈsaɪzɪŋ rʌnz smɔl/",
+      "zh": "試穿一下，這裡的碼偏小。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The zipper is stuck a little.",
+      "phonetic": "/ðə ˈzɪpər ɪz stʌk ə ˈlɪtəl/",
+      "zh": "拉鏈有點卡住了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pull the fabric while you zip.",
+      "phonetic": "/pʊl ðə ˈfæbrɪk waɪl ju zɪp/",
+      "zh": "拉拉鏈時把布往外帶一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Much better. It fits great now.",
+      "phonetic": "/mʌtʃ ˈbɛtər ɪt fɪts ɡreɪt naʊ/",
+      "zh": "好多了，現在很合身。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It also keeps the wind out.",
+      "phonetic": "/ɪt ˈɔlsoʊ kips ðə wɪnd aʊt/",
+      "zh": "而且還能擋住風。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do I really need snow pants?",
+      "phonetic": "/du aɪ ˈrɪəli nid snoʊ pænts/",
+      "zh": "我真的要穿雪褲嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, jeans get wet in minutes.",
+      "phonetic": "/jɛs dʒinz ɡɛt wɛt ɪn ˈmɪnɪts/",
+      "zh": "要，牛仔褲幾分鐘就濕透。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "These black ones feel pretty stiff.",
+      "phonetic": "/ðiz blæk wʌnz fil ˈprɪti stɪf/",
+      "zh": "這條黑色的有點硬。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They soften once you start moving.",
+      "phonetic": "/ðeɪ ˈsɔfən wʌns ju stɑrt ˈmuːvɪŋ/",
+      "zh": "一動起來就軟了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What about thick warm socks inside?",
+      "phonetic": "/wʌt əˈbaʊt θɪk wɔrm sɑks ɪnˈsaɪd/",
+      "zh": "裡面穿厚暖襪怎麼樣？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No — one thin pair fits better.",
+      "phonetic": "/noʊ wʌn θɪn pɛr fɪts ˈbɛtər/",
+      "zh": "不用，一雙薄的更合腳。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Why is that, exactly?",
+      "phonetic": "/waɪ ɪz ðæt ɪɡˈzæktli/",
+      "zh": "這到底是為什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tight socks make cold toes.",
+      "phonetic": "/taɪt sɑks meɪk koʊld toʊz/",
+      "zh": "襪子太緊，腳趾反而發冷。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That's a tip I'll remember.",
+      "phonetic": "/ðæts ə tɪp aɪl rɪˈmɛmbər/",
+      "zh": "這招我記下了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Most beginners get that one wrong.",
+      "phonetic": "/moʊst bɪˈɡɪnərz ɡɛt ðæt wʌn rɔŋ/",
+      "zh": "大多數新手都搞錯過。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which helmet should I pick?",
+      "phonetic": "/wɪtʃ ˈhɛlmət ʃʊd aɪ pɪk/",
+      "zh": "我該挑哪個頭盔？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Choose one that sits snug, not loose.",
+      "phonetic": "/tʃuːz wʌn ðæt sɪts snʌɡ nɑt luːs/",
+      "zh": "選戴著貼合不晃的那種。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does this one feel too tight?",
+      "phonetic": "/dʌz ðɪs wʌn fil tu taɪt/",
+      "zh": "這個會不會太緊？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It should stay put when you shake.",
+      "phonetic": "/ɪt ʃʊd steɪ pʊt wɛn ju ʃeɪk/",
+      "zh": "搖頭時它不動才對。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Great, I'll wear this helmet.",
+      "phonetic": "/ɡreɪt aɪl wɛr ðɪs ˈhɛlmət/",
+      "zh": "好，我就戴這個頭盔。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Never ski without one, okay?",
+      "phonetic": "/ˈnɛvər skaɪ wɪˈðaʊt wʌn oʊˈkeɪ/",
+      "zh": "滑雪千萬不能不戴頭盔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are goggles really necessary?",
+      "phonetic": "/ɑr ˈɡɑɡəlz ˈrɪəli ˈnɛsəˌsɛri/",
+      "zh": "護目鏡真的必須要嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sun off the snow hurts your eyes.",
+      "phonetic": "/sʌn ɔf ðə snoʊ hɜrts jɔr aɪz/",
+      "zh": "雪面反光很傷眼睛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I like these clear lenses better.",
+      "phonetic": "/aɪ laɪk ðiz klɪr ˈlɛnsɪz ˈbɛtər/",
+      "zh": "我更喜歡這片透明鏡片。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They're good in cloudy light.",
+      "phonetic": "/ðɛr ɡʊd ɪn ˈklaʊdi laɪt/",
+      "zh": "陰天光線暗時最好用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My glasses fog up inside them.",
+      "phonetic": "/maɪ ˈɡlæsɪz fɔɡ ʌp ɪnˈsaɪd ðɛm/",
+      "zh": "我戴眼鏡在裡面會起霧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "This model fits over glasses.",
+      "phonetic": "/ðɪs ˈmɑdəl fɪts ˈoʊvər ˈɡlæsɪz/",
+      "zh": "這款能直接罩在眼鏡外。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Perfect — that solves my problem.",
+      "phonetic": "/ˈpɜrfɪkt ðæt sɑlvz maɪ ˈprɑbləm/",
+      "zh": "完美，我的問題解決了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wipe them with the soft cloth.",
+      "phonetic": "/waɪp ðɛm wɪð ðə sɔft klɔθ/",
+      "zh": "要用那塊軟布擦鏡片。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I clean the lens with my fingers?",
+      "phonetic": "/kæn aɪ klin ðə lɛnz wɪð maɪ ˈfɪŋɡərz/",
+      "zh": "我能用手指擦鏡片嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, fingers leave oily marks.",
+      "phonetic": "/noʊ ˈfɪŋɡərz liv ˈɔɪli mɑrks/",
+      "zh": "不行，手指會留下油印。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now for the boots, I guess.",
+      "phonetic": "/naʊ fər ðə buːts aɪ ɡɛs/",
+      "zh": "接下來該試雪鞋了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "This is the hardest part.",
+      "phonetic": "/ðɪs ɪz ðə ˈhɑrdəst pɑrt/",
+      "zh": "這一步最讓人頭疼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This pair is way too big.",
+      "phonetic": "/ðɪs pɛr ɪz weɪ tu bɪɡ/",
+      "zh": "這雙也太大點了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Your heel must not lift up.",
+      "phonetic": "/jɔr hil mʌst nɑt lɪft ʌp/",
+      "zh": "腳後跟不能往上抬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How do I check that in here?",
+      "phonetic": "/haʊ du aɪ tʃɛk ðæt ɪn hɪr/",
+      "zh": "在這兒我該怎麼檢查？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stand on your toes and push forward.",
+      "phonetic": "/stænd ɑn jɔr toʊz ænd pʊʃ ˈfɔrwərd/",
+      "zh": "踮起腳往前頂一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This blue pair feels just right.",
+      "phonetic": "/ðɪs blu pɛr filz dʒʌst raɪt/",
+      "zh": "這雙藍色的剛剛好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Snug now means perfect later.",
+      "phonetic": "/snʌɡ naʊ minz ˈpɜrfɪkt ˈleɪtər/",
+      "zh": "現在貼合，之後才舒服。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The buckles are hard to close.",
+      "phonetic": "/ðə ˈbʌkəlz ɑr hɑrd tu kloʊz/",
+      "zh": "這些卡扣好難扣上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Clip the bottom ones first.",
+      "phonetic": "/klɪp ðə ˈbɑtəm wʌnz fɜrst/",
+      "zh": "先扣最下面那兩個。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should my toes touch the front?",
+      "phonetic": "/ʃʊd maɪ toʊz tʌtʃ ðə frʌnt/",
+      "zh": "腳趾要碰到鞋頭嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only when you stand up straight.",
+      "phonetic": "/ˈoʊnli wɛn ju stænd ʌp streɪt/",
+      "zh": "站直的時候才會碰到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Walking in these feels so funny.",
+      "phonetic": "/ˈwɔkɪŋ ɪn ðiz filz soʊ ˈfʌni/",
+      "zh": "穿著這鞋走路好好笑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Walk flat, like a little penguin.",
+      "phonetic": "/wɔk flæt laɪk ə ˈlɪtəl ˈpɛŋɡwɪn/",
+      "zh": "整隻腳踩地，像小企鵝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do I need poles right now?",
+      "phonetic": "/du aɪ nid poʊlz raɪt naʊ/",
+      "zh": "我現在就要雪杖嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Skip them for your first day.",
+      "phonetic": "/skɪp ðɛm fər jɔr fɜrst deɪ/",
+      "zh": "第一天先不用拿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Why not? Everyone else has them.",
+      "phonetic": "/waɪ nɑt ˈɛvriˌwʌn ɛls hæz ðɛm/",
+      "zh": "為什麼？別人都拿著呀。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They mess up balance at first.",
+      "phonetic": "/ðeɪ mɛs ʌp ˈbæləns æt fɜrst/",
+      "zh": "剛開始反而幹擾平衡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Maybe I can borrow yours later.",
+      "phonetic": "/ˈmeɪbi aɪ kən ˈbɑroʊ jʊrz ˈleɪtər/",
+      "zh": "也許晚點借你的用一下。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fine, but keep your wrists strapped.",
+      "phonetic": "/faɪn bət kip jɔr rɪsts stræpt/",
+      "zh": "行，但腕帶要套好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What size skis should I take?",
+      "phonetic": "/wʌt saɪz skaɪz ʃʊd aɪ teɪk/",
+      "zh": "雪板我該選多長？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stand one up beside your arm.",
+      "phonetic": "/stænd wʌn ʌp bɪˈsaɪd jɔr ɑrm/",
+      "zh": "把一塊豎在手臂旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "These reach my chin exactly.",
+      "phonetic": "/ðiz ritʃ maɪ tʃɪn ɪɡˈzæktli/",
+      "zh": "這塊正好到我下巴。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That height is right for you.",
+      "phonetic": "/ðæt haɪt ɪz raɪt fər ju/",
+      "zh": "這個高度對你正合適。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are these all-mountain skis?",
+      "phonetic": "/ɑr ðiz ɔl ˈmaʊntən skaɪz/",
+      "zh": "這是全地域雪板嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, great on packed snow.",
+      "phonetic": "/jɛs ɡreɪt ɑn pækt snoʊ/",
+      "zh": "對，壓實的雪道最好滑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How do my boots attach here?",
+      "phonetic": "/haʊ du maɪ buːts əˈtætʃ hɪr/",
+      "zh": "雪鞋怎麼裝到板上？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Toe in first, then press your heel.",
+      "phonetic": "/toʊ ɪn fɜrst ðɛn prɛs jɔr hil/",
+      "zh": "前端先卡進去，再壓腳跟。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That click sounded really loud.",
+      "phonetic": "/ðæt klɪk ˈsaʊndɪd ˈrɪəli laʊd/",
+      "zh": "那聲卡嗒聽著好響。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The click means it's locked in.",
+      "phonetic": "/ðə klɪk minz ɪts lɑkt ɪn/",
+      "zh": "聽到卡嗒就是鎖好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How do I get my foot out?",
+      "phonetic": "/haʊ du aɪ ɡɛt maɪ fʊt aʊt/",
+      "zh": "腳要怎麼取出來？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lever your heel up with a pole.",
+      "phonetic": "/ˈlɛvər jɔr hil ʌp wɪð ə poʊl/",
+      "zh": "用雪杖把腳跟往上撬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the binding set too tight?",
+      "phonetic": "/ɪz ðə ˈbaɪndɪŋ sɛt tu taɪt/",
+      "zh": "固定器會不會太緊？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The staff set it for your weight.",
+      "phonetic": "/ðə stæf sɛt ɪt fər jɔr weɪt/",
+      "zh": "店員按你體重調好的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do I have to sign anything?",
+      "phonetic": "/du aɪ hæv tu saɪn ˈɛniˌθɪŋ/",
+      "zh": "我需要簽什麼單子嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just this short rental form.",
+      "phonetic": "/dʒʌst ðɪs ʃɔrt ˈrɛntəl fɔrm/",
+      "zh": "簽這張簡短的租借單。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is there a deposit on the gear?",
+      "phonetic": "/ɪz ðɛr ə dɪˈpɑzɪt ɑn ðə ɡɪr/",
+      "zh": "租裝備要押金嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Twenty, refundable when you return it.",
+      "phonetic": "/ˈtwɛnti rɪˈfʌndəbəl wɛn ju rɪˈtɜrn ɪt/",
+      "zh": "押金二十，歸還時會退。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What if I break something?",
+      "phonetic": "/wʌt ɪf aɪ breɪk ˈsʌmθɪŋ/",
+      "zh": "萬一我弄壞了東西呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tell them right away, don't hide it.",
+      "phonetic": "/tɛl ðɛm raɪt əˈweɪ doʊnt haɪd ɪt/",
+      "zh": "要第一時間說，別瞞著。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we leave stuff in a locker?",
+      "phonetic": "/kæn wi liv stʌf ɪn ə ˈlɑkər/",
+      "zh": "東西能放在儲物櫃裡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, you need one quarter.",
+      "phonetic": "/jɛs ju nid wʌn ˈkwɔrtər/",
+      "zh": "可以，要一枚硬幣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Okay, gear done. What's next?",
+      "phonetic": "/oʊˈkeɪ ɡɪr dʌn wʌts nɛkst/",
+      "zh": "好，裝備齊了，下一步？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let's find the lift to the hill.",
+      "phonetic": "/lɛts faɪnd ðə lɪft tu ðə hɪl/",
+      "zh": "我們去找上小坡的纜車。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lift line is really long.",
+      "phonetic": "/ðə lɪft laɪn ɪz ˈrɪəli lɔŋ/",
+      "zh": "纜車隊伍排得好長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We'll move fast, so don't worry.",
+      "phonetic": "/wil muv fæst soʊ doʊnt ˈwɜri/",
+      "zh": "很快就輪到，別擔心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do we scan our pass again here?",
+      "phonetic": "/du wi skæn ˈaʊər pæs əˈɡɛn hɪr/",
+      "zh": "這兒還要再刷一次票嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, tap it at the small gate.",
+      "phonetic": "/jɛs tæp ɪt æt ðə smɔl ɡeɪt/",
+      "zh": "要，在小閘口碰一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where do I clip my skis?",
+      "phonetic": "/wɛr du aɪ klɪp maɪ skaɪz/",
+      "zh": "我的雪板該卡在哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the little metal footrest.",
+      "phonetic": "/ɑn ðə ˈlɪtəl ˈmɛtəl ˈfʊtˌrɛst/",
+      "zh": "掛在那個金屬小腳踏上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bar came down on my coat.",
+      "phonetic": "/ðə bɑr keɪm daʊn ɑn maɪ koʊt/",
+      "zh": "壓桿放下來壓到我衣服。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lift it once, then let it rest.",
+      "phonetic": "/lɪft ɪt wʌns ðɛn lɛt ɪt rɛst/",
+      "zh": "抬一下，再讓它輕輕落下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This chair feels so high off the ground.",
+      "phonetic": "/ðɪs tʃɛr filz soʊ haɪ ɔf ðə ɡraʊnd/",
+      "zh": "這把椅子離地好高。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lean back and enjoy the view.",
+      "phonetic": "/lin bæk ən ɛnˈdʒɔɪ ðə vju/",
+      "zh": "往後靠，好好看風景。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Look, the whole town is below us.",
+      "phonetic": "/lʊk ðə hoʊl taʊn ɪz bɪˈloʊ ʌs/",
+      "zh": "看，整個小鎮都在我們腳下。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pretty scary and pretty amazing.",
+      "phonetic": "/ˈprɪti ˈskɛri æn ˈprɪti əˈmeɪzɪŋ/",
+      "zh": "又嚇人又特別壯觀。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I keep my skis on?",
+      "phonetic": "/ʃʊd aɪ kip maɪ skaɪz ɑn/",
+      "zh": "我的板子要一直穿著嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, take them off at the top.",
+      "phonetic": "/jɛs teɪk ðɛm ɔf æt ðə tɑp/",
+      "zh": "對，到山頂再脫板。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is it okay to swing my legs?",
+      "phonetic": "/ɪz ɪt oʊˈkeɪ tu swɪŋ maɪ lɛɡz/",
+      "zh": "我晃晃腿可以嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep them still, close to the bar.",
+      "phonetic": "/kip ðɛm stɪl kloʊs tu ðə bɑr/",
+      "zh": "別亂動，靠在壓桿邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My scarf is hanging way down.",
+      "phonetic": "/maɪ skɑrf ɪz ˈhæŋɪŋ weɪ daʊn/",
+      "zh": "我的圍巾垂到下面去了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tuck it in before it catches.",
+      "phonetic": "/tʌk ɪt ɪn bɪˈfɔr ɪt ˈkætʃɪz/",
+      "zh": "塞進衣服裡，免得勾住。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We're at the top already.",
+      "phonetic": "/wɪr æt ðə tɑp ɔlˈrɛdi/",
+      "zh": "我們一下子就上山頂了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hop off once the chair slows.",
+      "phonetic": "/hɑp ɔf wʌns ðə tʃɛr sloʊz/",
+      "zh": "椅子一慢就跳下去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which trail is the easy one?",
+      "phonetic": "/wɪtʃ treɪl ɪz ði ˈizi wʌn/",
+      "zh": "哪條道是最簡單的？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The green circle on the right.",
+      "phonetic": "/ðə ɡrin ˈsɜrkəl ɑn ðə raɪt/",
+      "zh": "右邊那個綠色圓圈。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This slope looks flat enough.",
+      "phonetic": "/ðɪs sloʊp lʊks flæt ɪˈnʌf/",
+      "zh": "這個坡看著夠平緩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Perfect for your first glide.",
+      "phonetic": "/ˈpɜrfɪkt fər jɔr fɜrst ɡlaɪd/",
+      "zh": "正適合第一次滑行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My boards won't slide at all.",
+      "phonetic": "/maɪ bɔrdz woʊnt slaɪd æt ɔl/",
+      "zh": "我的板子一點都滑不動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Point your tips down the hill.",
+      "phonetic": "/pɔɪnt jɔr tɪps daʊn ðə hɪl/",
+      "zh": "把板頭朝向山下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Okay, now I'm moving fast!",
+      "phonetic": "/oʊˈkeɪ naʊ aɪm ˈmuːvɪŋ fæst/",
+      "zh": "好，我現在滑得好快！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Bend your knees and stay low.",
+      "phonetic": "/bɛnd jɔr niːz ænd steɪ loʊ/",
+      "zh": "屈膝，身體壓低。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Am I leaning the wrong way?",
+      "phonetic": "/æm aɪ ˈlinɪŋ ðə rɔŋ weɪ/",
+      "zh": "我身子是不是歪了？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Press your shins on the tongues.",
+      "phonetic": "/prɛs jɔr ʃɪnz ɑn ðə tʌŋz/",
+      "zh": "小腿要頂著鞋舌。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where should my hands be?",
+      "phonetic": "/wɛr ʃʊd maɪ hændz bi/",
+      "zh": "我的手該放在哪兒？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Out front, like holding a tray.",
+      "phonetic": "/aʊt frʌnt laɪk ˈhoʊldɪŋ ə treɪ/",
+      "zh": "放在前面，像端著盤子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This pizza shape is harder than it looks.",
+      "phonetic": "/ðɪs ˈpiːtsə ʃeɪp ɪz ˈhɑrdər ðæn ɪt lʊks/",
+      "zh": "這個比薩姿勢比看著難。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Push the tails out, not the tips.",
+      "phonetic": "/pʊʃ ðə teɪlz aʊt nɑt ðə tɪps/",
+      "zh": "把板尾往外推，不是板頭。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So a V in front, right?",
+      "phonetic": "/soʊ ə vi ɪn frʌnt raɪt/",
+      "zh": "就是前面成一個V，對吧？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Exactly, and keep the tips apart.",
+      "phonetic": "/ɪɡˈzæktli ænd kip ðə tɪps əˈpɑrt/",
+      "zh": "對，板頭還要分開一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I stopped! I really stopped.",
+      "phonetic": "/aɪ stɑpt aɪ ˈrɪəli stɑpt/",
+      "zh": "我停住了！真的停下了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's your brake. Nice work.",
+      "phonetic": "/ðæts jɔr breɪk naɪs wɜrk/",
+      "zh": "這就是你的剎車，做得好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now I want to go faster.",
+      "phonetic": "/naʊ aɪ wɑnt tu ɡoʊ ˈfæstər/",
+      "zh": "現在我想滑得再快些。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Make the pizza smaller, slowly.",
+      "phonetic": "/meɪk ðə ˈpiːtsə ˈsmɔlər ˈsloʊli/",
+      "zh": "那就慢慢把比薩口縮小。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My legs are shaking already.",
+      "phonetic": "/maɪ lɛɡz ɑr ˈʃeɪkɪŋ ɔlˈrɛdi/",
+      "zh": "我的腿已經開始發抖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's normal. Rest one minute.",
+      "phonetic": "/ðæts ˈnɔrməl rɛst wʌn ˈmɪnɪt/",
+      "zh": "很正常，先歇一分鐘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I fell twice, maybe three times.",
+      "phonetic": "/aɪ fɛl twaɪs ˈmeɪbi θri taɪmz/",
+      "zh": "我摔了兩次，也許三次。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Everyone falls. It's part of it.",
+      "phonetic": "/ˈɛvriˌwʌn fɔlz ɪts pɑrt ʌv ɪt/",
+      "zh": "人人都會摔，這是必經之路。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How do I stand up again?",
+      "phonetic": "/haʊ du aɪ stænd ʌp əˈɡɛn/",
+      "zh": "我要怎麼再站起來？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Put your boards sideways first.",
+      "phonetic": "/pʊt jɔr bɔrdz ˈsaɪdˌweɪz fɜrst/",
+      "zh": "先把雪板橫過來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do I push with my hands?",
+      "phonetic": "/du aɪ pʊʃ wɪð maɪ hændz/",
+      "zh": "我要用手撐一下嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, plant them behind your hips.",
+      "phonetic": "/jɛs plænt ðɛm bɪˈhaɪnd jɔr hɪps/",
+      "zh": "對，撐在屁股後面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I landed right on my tailbone.",
+      "phonetic": "/aɪ ˈlændɪd raɪt ɑn maɪ ˈteɪlˌboʊn/",
+      "zh": "我一下坐到尾椎上了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ouch. Sit still and brush off snow.",
+      "phonetic": "/aʊtʃ sɪt stɪl æn brəʃ ɑf snoʊ/",
+      "zh": "哎喲，先坐著把雪拍掉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is it safer to fall sideways?",
+      "phonetic": "/ɪz ɪt ˈseɪfər tu fɔl ˈsaɪdˌweɪz/",
+      "zh": "往側面摔是不是更安全？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, never drop straight backward.",
+      "phonetic": "/jɛs ˈnɛvər drɑp streɪt ˈbækərd/",
+      "zh": "對，千萬別直直往後倒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I roll when I fall?",
+      "phonetic": "/ʃʊd aɪ roʊl wɛn aɪ fɔl/",
+      "zh": "摔倒時要不要滾一圈？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rolling helps kill your speed.",
+      "phonetic": "/ˈroʊlɪŋ hɛlps kɪl jɔr spiːd/",
+      "zh": "滾一下能把速度卸掉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My goggles filled with snow.",
+      "phonetic": "/maɪ ˈɡɑɡəlz fɪld wɪθ snoʊ/",
+      "zh": "我護目鏡裡灌滿了雪。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lift them off and shake it out.",
+      "phonetic": "/lɪft ðɛm ɔf ænd ʃeɪk ɪt aʊt/",
+      "zh": "抬起來把雪抖出去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Someone zoomed past me so close.",
+      "phonetic": "/ˈsʌmˌwʌn zuːmd pæst mi soʊ kloʊs/",
+      "zh": "有人貼著我衝了過去。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Always look down before starting.",
+      "phonetic": "/ˈɔlˌweɪz lʊk daʊn bɪˈfɔr ˈstɑrtɪŋ/",
+      "zh": "出發前一定要看下面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Who has the right of way?",
+      "phonetic": "/hu hæz ðə raɪt ʌv weɪ/",
+      "zh": "誰有優先通行的權利？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The skier below you, always.",
+      "phonetic": "/ðə ˈskier bɪˈloʊ ju ˈɔlˌweɪz/",
+      "zh": "永遠是你下方的滑雪者。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I stopped right in the middle.",
+      "phonetic": "/aɪ stɑpt raɪt ɪn ðə ˈmɪdəl/",
+      "zh": "我剛滑到一半就停住了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Move off the trail to rest.",
+      "phonetic": "/muv ɑf ðə treɪl tu rɛst/",
+      "zh": "休息要挪到雪道外面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I ask an instructor for help?",
+      "phonetic": "/kæn aɪ æsk ən ɪnˈstrʌktʃər fər hɛlp/",
+      "zh": "我能找個教練教教嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They wait by the lift sign.",
+      "phonetic": "/ðeɪ weɪt baɪ ðə lɪft saɪn/",
+      "zh": "他們就在纜車牌那兒等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are group lessons cheaper?",
+      "phonetic": "/ɑr ɡruːp ˈlɛsənz ˈtʃipər/",
+      "zh": "團體課會便宜些嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, and they're more fun too.",
+      "phonetic": "/jɛs ænd ðɛr mɔr fʌn tu/",
+      "zh": "對，而且還更有意思。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How many people in one group?",
+      "phonetic": "/haʊ ˈmɛni ˈpipəl ɪn wʌn ɡruːp/",
+      "zh": "一組有幾個人？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Four students with one coach.",
+      "phonetic": "/fɔr ˈstudənts wɪð wʌn koʊtʃ/",
+      "zh": "四個學員配一個教練。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Adult beginners start at nine?",
+      "phonetic": "/əˈdʌlt bɪˈɡɪnərz stɑrt æt naɪn/",
+      "zh": "成人初級班九點開始？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Right, meet by the blue flag.",
+      "phonetic": "/raɪt mit baɪ ðə blu flæɡ/",
+      "zh": "對，在藍旗子那兒集合。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My coach says relax my shoulders.",
+      "phonetic": "/maɪ koʊtʃ sɛz rɪˈlæks maɪ ˈʃoʊldərz/",
+      "zh": "教練讓我放鬆肩膀。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stiffness makes you skid more.",
+      "phonetic": "/ˈstɪfnəs meɪks ju skɪd mɔr/",
+      "zh": "身體僵硬更容易打滑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Look, I'm gliding in a straight line.",
+      "phonetic": "/lʊk aɪm ˈɡlaɪdɪŋ ɪn ə streɪt laɪn/",
+      "zh": "看，我在直直地往前滑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Beautiful! Hold that balance.",
+      "phonetic": "/ˈbjʊtəfəl hoʊld ðæt ˈbæləns/",
+      "zh": "漂亮！穩住這個平衡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How do I begin a turn?",
+      "phonetic": "/haʊ du aɪ bɪˈɡɪn ə tərn/",
+      "zh": "我要怎麼開始轉彎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Shift your weight onto one ski.",
+      "phonetic": "/ʃɪft jɔr weɪt ˈɑntu wʌn skaɪ/",
+      "zh": "把重心挪到一塊板上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Left side or right side first?",
+      "phonetic": "/lɛft saɪd ɔr raɪt saɪd fɜrst/",
+      "zh": "先轉左邊還是右邊？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try the side that feels stronger.",
+      "phonetic": "/traɪ ðə saɪd ðæt filz ˈstrɔŋɡər/",
+      "zh": "先試你覺得有力的那邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I turned! Did you see that?",
+      "phonetic": "/aɪ tərnd dɪd ju si ðæt/",
+      "zh": "我轉彎了！你看到了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I saw it. That one was clean.",
+      "phonetic": "/aɪ sɔ ɪt ðæt wʌn wʌz klin/",
+      "zh": "看到了，那一下很利索。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My skis crossed under me.",
+      "phonetic": "/maɪ skaɪz krɔst ˈʌndər mi/",
+      "zh": "我兩塊板在腳下打架了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep them hip-width apart.",
+      "phonetic": "/kip ðɛm hɪp wɪdt əˈpɑrt/",
+      "zh": "保持兩塊板和胯同寬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Skiing is harder than I thought.",
+      "phonetic": "/ˈskiɪŋ ɪz ˈhɑrdər ðæn aɪ θɔt/",
+      "zh": "滑雪比我以為的難多了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Give it one more honest try.",
+      "phonetic": "/ɡɪv ɪt wʌn mɔr ˈɑnɪst traɪ/",
+      "zh": "再認認真真試一次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One more run, then something hot.",
+      "phonetic": "/wʌn mɔr rʌn ðɛn ˈsʌmθɪŋ hɑt/",
+      "zh": "再滑一趟，然後喝點熱的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "There's a wooden hut below.",
+      "phonetic": "/ðɛrz ə ˈwʊdən hʌt bɪˈloʊ/",
+      "zh": "下面有間小木屋。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we walk there instead?",
+      "phonetic": "/kæn wi wɔk ðɛr ɪnˈstɛd/",
+      "zh": "我們能走過去嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Better keep skiing — it's quicker.",
+      "phonetic": "/ˈbɛtər kip ˈskiɪŋ ɪts ˈkwɪkər/",
+      "zh": "還是直接滑過去，快得多。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lift let me off too fast.",
+      "phonetic": "/ðə lɪft lɛt mi ɑf tu fæst/",
+      "zh": "纜車把我放下來太快了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ski away — don't stop there.",
+      "phonetic": "/skaɪ əˈweɪ doʊnt stɑp ðɛr/",
+      "zh": "要一直滑走，別停在那。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Was I blocking the others?",
+      "phonetic": "/wʌz aɪ ˈblɑkɪŋ ði ˈʌðərz/",
+      "zh": "我是不是擋住別人了？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just glide to the flat side.",
+      "phonetic": "/dʒʌst ɡlaɪd tu ðə flæt saɪd/",
+      "zh": "滑到旁邊的平地就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This green run finally feels easy.",
+      "phonetic": "/ðɪs ɡrin rʌn ˈfaɪnəli filz ˈizi/",
+      "zh": "這條綠道我終於滑順了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Go on, show me your best turn.",
+      "phonetic": "/ɡoʊ ɑn ʃoʊ mi jɔr bɛst tərn/",
+      "zh": "來吧，給我看你最棒的轉彎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Snow spray got into my mouth.",
+      "phonetic": "/snoʊ spreɪ ɡɑt ˈɪntu maɪ maʊθ/",
+      "zh": "雪沫子濺進我嘴裡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It tastes like cold clean water.",
+      "phonetic": "/ɪt teɪsts laɪk koʊld klin ˈwɔtər/",
+      "zh": "嚐起來像冰涼的清水。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I can link three turns now.",
+      "phonetic": "/aɪ kən lɪŋk θri tərnz naʊ/",
+      "zh": "我現在能連轉三個彎了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's real progress this morning.",
+      "phonetic": "/ðæts ril ˈprɑɡrɛs ðɪs ˈmɔrnɪŋ/",
+      "zh": "這是今天上午真切的進步。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Ready to try the bigger hill?",
+      "phonetic": "/ˈrɛdi tu traɪ ðə ˈbɪɡər hɪl/",
+      "zh": "準備好去試大坡了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, my legs feel strong again.",
+      "phonetic": "/jɛs maɪ lɛɡz fil strɔŋ əˈɡɛn/",
+      "zh": "好了，我腿又有力氣了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is this the intermediate slope?",
+      "phonetic": "/ɪz ðɪs ði ˌɪntərˈmidʒət sloʊp/",
+      "zh": "這就是中級道嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, follow the blue square sign.",
+      "phonetic": "/jɛs ˈfɑloʊ ðə blu skwɛr saɪn/",
+      "zh": "對，跟著藍色方塊標誌走。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It looks much steeper from here.",
+      "phonetic": "/ɪt lʊks mʌtʃ ˈstipər frʌm hɪr/",
+      "zh": "從這裡看陡得多。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Take the gentle left side first.",
+      "phonetic": "/teɪk ðə ˈdʒɛntəl lɛft saɪd fɜrst/",
+      "zh": "先滑左邊那條緩線。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How do I keep my speed down?",
+      "phonetic": "/haʊ du aɪ kip maɪ spiːd daʊn/",
+      "zh": "我怎麼把速度壓下來？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Turn wide before you drop too far.",
+      "phonetic": "/tɜrn waɪd bɪˈfɔr ju drɑp tu fɑr/",
+      "zh": "在衝下去之前先轉大彎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So I draw big S shapes?",
+      "phonetic": "/soʊ aɪ drɔ bɪɡ ɛs ʃeɪps/",
+      "zh": "所以我滑出大大的S形？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Exactly — never go straight down.",
+      "phonetic": "/ɪɡˈzæktli ˈnɛvər ɡoʊ streɪt daʊn/",
+      "zh": "沒錯，別直直往下衝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My turns feel rushed.",
+      "phonetic": "/maɪ tərnz fil rʌʃt/",
+      "zh": "我轉彎太心急了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wait for the slope. Count one, two.",
+      "phonetic": "/weɪt fər ðə sloʊp kaʊnt wʌn tu/",
+      "zh": "別急，順著雪道，在心裡數一二。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That rhythm helped a lot.",
+      "phonetic": "/ðæt ˈrɪðəm hɛlpt ə lɑt/",
+      "zh": "那個節奏幫了大忙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Now your skis sound the same.",
+      "phonetic": "/naʊ jɔr skaɪz saʊnd ðə seɪm/",
+      "zh": "現在兩塊板聲音一致了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I hear a soft scraping noise.",
+      "phonetic": "/aɪ hɪr ə sɔft ˈskreɪpɪŋ nɔɪz/",
+      "zh": "我聽到輕輕的颳雪聲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's your edges doing work.",
+      "phonetic": "/ðæts jɔr ˈɛdʒɪz ˈduɪŋ wɜrk/",
+      "zh": "那是板刃在起作用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I use my poles now?",
+      "phonetic": "/ʃʊd aɪ juːz maɪ poʊlz naʊ/",
+      "zh": "我現在該用雪杖了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tap the snow as you begin turning.",
+      "phonetic": "/tæp ðə snoʊ æz ju bɪˈɡɪn ˈtɜrnɪŋ/",
+      "zh": "起步轉彎時輕輕點一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Tapping feels strange on the ice.",
+      "phonetic": "/ˈtæpɪŋ filz streɪndʒ ɑn ðə aɪs/",
+      "zh": "在冰面上點杖感覺怪怪的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ice happens. Slide across it flat.",
+      "phonetic": "/aɪs ˈhæpənz slaɪd əˈkrɔs ɪt flæt/",
+      "zh": "冰段難免，放平滑過去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where do these tracks lead?",
+      "phonetic": "/wɛr du ðiz træks lid/",
+      "zh": "這條雪道通向哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Down to the lodge and parking lot.",
+      "phonetic": "/daʊn tu ðə lɑdʒ ænd ˈpɑrkɪŋ lɑt/",
+      "zh": "一路通到大廳和停車場。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Someone cut across my line.",
+      "phonetic": "/ˈsʌmˌwʌn kʌt əˈkrɔs maɪ laɪn/",
+      "zh": "有人橫穿了我滑的線。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Call out \"on your left\" next time.",
+      "phonetic": "/kɔl aʊt ɑn jɔr lɛft nɛkst taɪm/",
+      "zh": "下次喊一聲「左邊過」。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do people really say that here?",
+      "phonetic": "/du ˈpipəl ˈrɪəli seɪ ðæt hɪr/",
+      "zh": "這裡真有人這麼喊嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it warns them you're coming.",
+      "phonetic": "/jɛs ɪt wɔrnz ðɛm jʊr ˈkʌmɪŋ/",
+      "zh": "對，那是提醒有人來了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Look at all those bumps ahead.",
+      "phonetic": "/lʊk æt ɔl ðoʊz bʌmps əˈhɛd/",
+      "zh": "看前面一堆雪包。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Those are moguls. We can skip them.",
+      "phonetic": "/ðoʊz ɑr ˈmoʊɡəlz wi kən skɪp ðɛm/",
+      "zh": "那是蘑菇道，我們可以繞開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I want to try just one line.",
+      "phonetic": "/aɪ wɑnt tu traɪ dʒʌst wʌn laɪn/",
+      "zh": "我想試一條線看看。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stay loose and absorb with knees.",
+      "phonetic": "/steɪ luːs æn əbˈsɔrb wɪθ niːz/",
+      "zh": "全身放鬆，用膝蓋當彈簧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I bounced right off the trail.",
+      "phonetic": "/aɪ baʊnst raɪt ɑf ðə treɪl/",
+      "zh": "我直接被彈出了雪道。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Better than a hard fall, though.",
+      "phonetic": "/ˈbɛtər ðæn ə hɑrd fɔl ðoʊ/",
+      "zh": "不過總比重重摔一下好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your turn looked smooth out there.",
+      "phonetic": "/jɔr tərn lʊkt smuð aʊt ðɛr/",
+      "zh": "你剛才那一趟滑得很順。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Practice, nothing more than that.",
+      "phonetic": "/ˈpræktɪs ˈnʌθɪŋ mɔr ðæn ðæt/",
+      "zh": "就是練出來的，沒別的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Race you to the bottom?",
+      "phonetic": "/reɪs ju tu ðə ˈbɑtəm/",
+      "zh": "比一下誰先到坡底？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only if we stay in control.",
+      "phonetic": "/ˈoʊnli ɪf wi steɪ ɪn kənˈtroʊl/",
+      "zh": "前提是都得穩住速度。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Loser buys breakfast tomorrow.",
+      "phonetic": "/ˈluːzər baɪz ˈbrɛkfəst təˈmɑroʊ/",
+      "zh": "輸的人明天請吃早餐。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then I'm trying my absolute hardest.",
+      "phonetic": "/ðɛn aɪm ˈtraɪɪŋ maɪ ˈæbsəˌluːt ˈhɑrdəst/",
+      "zh": "那我可要使出全力了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Deal. No dangerous tricks.",
+      "phonetic": "/dil noʊ ˈdeɪndʒərəs trɪks/",
+      "zh": "成交，不許玩危險動作。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On your mark... go!",
+      "phonetic": "/ɑn jɔr mɑrk ɡoʊ/",
+      "zh": "各就位……走！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You passed me on the last turn!",
+      "phonetic": "/ju pæst mi ɑn ðə læst tərn/",
+      "zh": "最後一個彎你超過我了！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rematch later. Catch your breath.",
+      "phonetic": "/ˈriˌmætʃ ˈleɪtər kætʃ jɔr brɛθ/",
+      "zh": "待會兒再比，先喘口氣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My heart is pounding so hard.",
+      "phonetic": "/maɪ hɑrt ɪz ˈpaʊndɪŋ soʊ hɑrd/",
+      "zh": "我心口跳得特別用力。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's the fun part, right?",
+      "phonetic": "/ðæts ðə fʌn pɑrt raɪt/",
+      "zh": "這就是好玩的地方，對吧？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's ski it once more, slower.",
+      "phonetic": "/lɛts skaɪ ɪt wʌns mɔr ˈsloʊər/",
+      "zh": "我們再滑一趟，慢一點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good plan. Smooth beats fast.",
+      "phonetic": "/ɡʊd plæn smuð bits fæst/",
+      "zh": "好主意，順暢比快重要。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we try the tubing park?",
+      "phonetic": "/kæn wi traɪ ðə ˈtuːbɪŋ pɑrk/",
+      "zh": "我們能去玩雪圈滑道嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, tickets are at that booth.",
+      "phonetic": "/jɛs ˈtɪkɪts ɑr æt ðæt buθ/",
+      "zh": "可以，票就在那個票亭賣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is a tube the same as a sled?",
+      "phonetic": "/ɪz ə tuːb ðə seɪm æz ə slɛd/",
+      "zh": "雪圈和雪橇是一回事嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It's round foam, softer and faster.",
+      "phonetic": "/ɪts raʊnd foʊm ˈsɔftər ænd ˈfæstər/",
+      "zh": "是圓圓的泡棉圈，更軟也更快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How long do we get on the hill?",
+      "phonetic": "/haʊ lɔŋ du wi ɡɛt ɑn ðə hɪl/",
+      "zh": "我們能在坡上玩多久？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One hour from the first ride.",
+      "phonetic": "/wʌn ˈaʊər frʌm ðə fɜrst raɪd/",
+      "zh": "從第一次算起一小時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A rope pulls us up the hill.",
+      "phonetic": "/ə roʊp pʊlz ʌs ʌp ðə hɪl/",
+      "zh": "有根繩子把我們拉上去。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold the handle with both hands.",
+      "phonetic": "/hoʊld ðə ˈhændəl wɪð boʊθ hændz/",
+      "zh": "兩隻手都要抓住把手。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It yanked me almost off.",
+      "phonetic": "/ɪt jæŋkt mi ˈɔlˌmoʊst ɑf/",
+      "zh": "它差點把我拽掉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let the tube do the work.",
+      "phonetic": "/lɛt ðə tuːb du ðə wɜrk/",
+      "zh": "別硬拽，讓雪圈帶著你滑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now I'm flying down the lane!",
+      "phonetic": "/naʊ aɪm ˈflaɪɪŋ daʊn ðə leɪn/",
+      "zh": "我現在順著雪道飛下去！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep your feet up off the snow.",
+      "phonetic": "/kip jɔr fit ʌp ɑf ðə snoʊ/",
+      "zh": "把腳抬離雪面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I spun around twice up there.",
+      "phonetic": "/aɪ spʌn əˈraʊnd twaɪs ʌp ðɛr/",
+      "zh": "我在上面轉了兩圈。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You looked like a top spinning.",
+      "phonetic": "/ju lʊkt laɪk ə tɑp ˈspɪnɪŋ/",
+      "zh": "你像顆陀螺在轉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you see that kid go past?",
+      "phonetic": "/dɪd ju si ðæt kɪd ɡoʊ pæst/",
+      "zh": "你看到剛才那小孩衝過去了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Kids fear nothing on a tube.",
+      "phonetic": "/kɪdz fɪr ˈnʌθɪŋ ɑn ə tuːb/",
+      "zh": "小孩玩雪圈天不怕地不怕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Just one more ride. Then we stop.",
+      "phonetic": "/dʒʌst wʌn mɔr raɪd ðɛn wi stɑp/",
+      "zh": "再滑一次就不玩了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hurry — the line is growing.",
+      "phonetic": "/ˈhɜri ðə laɪn ɪz ˈɡroʊɪŋ/",
+      "zh": "快點，隊伍越來越長。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My gloves are soaked through.",
+      "phonetic": "/maɪ ɡlʌvz ɑr soʊkt θru/",
+      "zh": "我的手套整個濕透了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The hut has a drying rack.",
+      "phonetic": "/ðə hʌt hæz ə ˈdraɪɪŋ ræk/",
+      "zh": "木屋裡有個烘物架。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It smells like wood smoke inside.",
+      "phonetic": "/ɪt smɛlz laɪk wʊd smoʊk ɪnˈsaɪd/",
+      "zh": "屋裡一股柴火味。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Best smell on the whole mountain.",
+      "phonetic": "/bɛst smɛl ɑn ðə hoʊl ˈmaʊntən/",
+      "zh": "整座山上最好聞的味道。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I sit by the fireplace?",
+      "phonetic": "/kæn aɪ sɪt baɪ ðə ˈfɛərˌpleɪs/",
+      "zh": "我能坐在壁爐邊嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That bench is free right now.",
+      "phonetic": "/ðæt bɛntʃ ɪz fri raɪt naʊ/",
+      "zh": "那條長凳現在空著。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Two hot chocolates, please.",
+      "phonetic": "/tu hɑt ˈtʃɑklɪts pliz/",
+      "zh": "請給我兩杯熱可可。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "With whipped cream on top?",
+      "phonetic": "/wɪð wɪpt krim ɑn tɑp/",
+      "zh": "上面要加奶油嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, and plenty of cream.",
+      "phonetic": "/jɛs ænd ˈplɛnti ʌv krim/",
+      "zh": "要，奶油多放點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That will be nine dollars.",
+      "phonetic": "/ðæt wɪl bi naɪn ˈdɑlərz/",
+      "zh": "一共九美元。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cup warms my cold hands.",
+      "phonetic": "/ðə kʌp wɔrmz maɪ koʊld hændz/",
+      "zh": "杯子暖著我冰涼的手。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Careful, the milk is hot.",
+      "phonetic": "/ˈkɛrfəl ðə mɪlk ɪz hɑt/",
+      "zh": "慢點，牛奶很燙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do they serve hot soup here?",
+      "phonetic": "/du ðeɪ sɜrv hɑt sup hɪr/",
+      "zh": "他們這裡有賣熱湯嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The chili is famous here.",
+      "phonetic": "/ðə ˈtʃɪli ɪz ˈfeɪməs hɪr/",
+      "zh": "這裡的辣肉湯很有名。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I want to try the chili.",
+      "phonetic": "/aɪ wɑnt tu traɪ ðə ˈtʃɪli/",
+      "zh": "我想嚐嚐那個辣肉湯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Order at the far counter.",
+      "phonetic": "/ˈɔrdər æt ðə fɑr ˈkaʊntər/",
+      "zh": "到裡面那個櫃台點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Everything on the menu costs more.",
+      "phonetic": "/ˈɛvriˌθɪŋ ɑn ðə ˈmɛnju kɔsts mɔr/",
+      "zh": "菜單上的東西都不便宜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mountain prices, sadly. Eat slow.",
+      "phonetic": "/ˈmaʊntən ˈpraɪsɪz ˈsædli it sloʊ/",
+      "zh": "山上的價格就這樣，慢慢吃。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My phone shows twenty percent left.",
+      "phonetic": "/maɪ foʊn ʃoʊz ˈtwɛnti pərˈsɛnt lɛft/",
+      "zh": "我手機只剩百分之二十電。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "There's a charger by the door.",
+      "phonetic": "/ðɛrz ə ˈtʃɑrdʒər baɪ ðə dɔr/",
+      "zh": "門口就有充電器。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Cold kills batteries so fast.",
+      "phonetic": "/koʊld kɪlz ˈbætəriz soʊ fæst/",
+      "zh": "低溫把電池耗得飛快。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mine died until I warmed it up.",
+      "phonetic": "/maɪn daɪd ʌnˈtɪl aɪ wɔrmd ɪt ʌp/",
+      "zh": "我的也關了機，回暖後才復活。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Look outside — dark clouds came.",
+      "phonetic": "/lʊk ˈaʊtˌsaɪd dɑrk klaʊdz keɪm/",
+      "zh": "看外面，烏雲壓過來了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Snow is starting, one flake at a time.",
+      "phonetic": "/snoʊ ɪz ˈstɑrtɪŋ wʌn fleɪk æt ə taɪm/",
+      "zh": "開始下雪了，一片一片的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will the lifts stay open?",
+      "phonetic": "/wɪl ðə lɪfts steɪ ˈoʊpən/",
+      "zh": "纜車還會繼續開嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Unless the wind gets worse.",
+      "phonetic": "/ʌnˈlɛs ðə wɪnd ɡɛts wɜrs/",
+      "zh": "只要風不變大就會開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I can barely see the flags.",
+      "phonetic": "/aɪ kən ˈbɛrli si ðə flæɡz/",
+      "zh": "我幾乎看不清道旗了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stay on the wide marked trail.",
+      "phonetic": "/steɪ ɑn ðə waɪd mɑrkt treɪl/",
+      "zh": "留在有標誌的寬雪道上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I try your yellow lenses?",
+      "phonetic": "/kæn aɪ traɪ jɔr ˈjɛloʊ ˈlɛnsɪz/",
+      "zh": "我能試試你的黃色鏡片嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "See? Now the bumps stand out.",
+      "phonetic": "/si naʊ ðə bʌmps stænd aʊt/",
+      "zh": "看，現在雪包都清楚了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Someone left a pole on the trail.",
+      "phonetic": "/ˈsʌmˌwʌn lɛft ə poʊl ɑn ðə treɪl/",
+      "zh": "有根雪杖被丟在雪道上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pick it up and hand it to staff.",
+      "phonetic": "/pɪk ɪt ʌp ænd hænd ɪt tu stæf/",
+      "zh": "撿起來交給工作人員。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How much longer can we stay out?",
+      "phonetic": "/haʊ mʌtʃ ˈlɔŋɡər kən wi steɪ aʊt/",
+      "zh": "我們還能在外面滑多久？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The lifts shut at four sharp.",
+      "phonetic": "/ðə lɪfts ʃʌt æt fɔr ʃɑrp/",
+      "zh": "纜車四點整準時關。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then let's take one last run.",
+      "phonetic": "/ðɛn lɛts teɪk wʌn læst rʌn/",
+      "zh": "那我們就滑最後一趟。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only if we ride the gondola up.",
+      "phonetic": "/ˈoʊnli ɪf wi raɪd ðə ˈɡɑndələ ʌp/",
+      "zh": "好，但上山要坐吊廂車。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Why the gondola instead of chairs?",
+      "phonetic": "/waɪ ðə ˈɡɑndələ ɪnˈstɛd ʌv tʃɛrz/",
+      "zh": "為什麼不坐吊椅，改坐吊廂？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It's warm inside, glass and windproof.",
+      "phonetic": "/ɪts wɔrm ɪnˈsaɪd ɡlæs ænd ˈwɪndˌpruːf/",
+      "zh": "裡面有玻璃，擋風又暖和。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sun is dropping behind the ridge.",
+      "phonetic": "/ðə sʌn ɪz ˈdrɑpɪŋ bɪˈhaɪnd ðə rɪdʒ/",
+      "zh": "太陽落到山脊後面了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The snow turned pink and gold.",
+      "phonetic": "/ðə snoʊ tɜrnd pɪŋk ænd ɡoʊld/",
+      "zh": "雪被照成粉金色。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Everything looks quieter now.",
+      "phonetic": "/ˈɛvriˌθɪŋ lʊks ˈkwaɪətər naʊ/",
+      "zh": "現在四周安靜多了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Most people already went down.",
+      "phonetic": "/moʊst ˈpipəl ɔlˈrɛdi wɛnt daʊn/",
+      "zh": "大部分人早就下山了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we do this one more time?",
+      "phonetic": "/kæn wi du ðɪs wʌn mɔr taɪm/",
+      "zh": "這條道我們能再滑一次嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, but start now, not later.",
+      "phonetic": "/jɛs bət stɑrt naʊ nɑt ˈleɪtər/",
+      "zh": "好，但要馬上出發。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The light is going so fast.",
+      "phonetic": "/ðə laɪt ɪz ˈɡoʊɪŋ soʊ fæst/",
+      "zh": "光線暗得特別快。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep your goggles clear of frost.",
+      "phonetic": "/kip jɔr ˈɡɑɡəlz klɪr ʌv frɔst/",
+      "zh": "別讓護目鏡結霜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The snow feels icy in the shade.",
+      "phonetic": "/ðə snoʊ filz ˈaɪsi ɪn ðə ʃeɪd/",
+      "zh": "陰影裡的雪結冰變硬了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Shorten your turns a little.",
+      "phonetic": "/ˈʃɔrtən jɔr tərnz ə ˈlɪtəl/",
+      "zh": "把彎收短一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I can see my breath now.",
+      "phonetic": "/aɪ kən si maɪ brɛθ naʊ/",
+      "zh": "我現在能呼出白氣了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cover your neck with the buff.",
+      "phonetic": "/ˈkʌvər jɔr nɛk wɪð ðə bʌf/",
+      "zh": "用圍巾把脖子遮好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What was that loud whistle?",
+      "phonetic": "/wʌt wʌz ðæt laʊd ˈwɪsəl/",
+      "zh": "那聲大哨子是幹什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They're closing the upper lifts.",
+      "phonetic": "/ðɛr ˈkloʊzɪŋ ði ˈʌpər lɪfts/",
+      "zh": "他們在關上面的纜車。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did we make it down in time?",
+      "phonetic": "/dɪd wi meɪk ɪt daʊn ɪn taɪm/",
+      "zh": "我們及時滑下來了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just barely. Look behind you.",
+      "phonetic": "/dʒʌst ˈbɛrli lʊk bɪˈhaɪnd ju/",
+      "zh": "剛剛好，你回頭看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The chairs are moving away empty.",
+      "phonetic": "/ðə tʃɛrz ɑr ˈmuːvɪŋ əˈweɪ ˈɛmpti/",
+      "zh": "空椅纜車已經開走了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's the signal to pack up.",
+      "phonetic": "/ðæts ðə ˈsɪɡnəl tu pæk ʌp/",
+      "zh": "那就是收工信號。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My legs feel like jelly here.",
+      "phonetic": "/maɪ lɛɡz fil laɪk ˈdʒɛli hɪr/",
+      "zh": "我的腿現在像果凍一樣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Walk slow to the flat area.",
+      "phonetic": "/wɔk sloʊ tu ðə flæt ˈɛriə/",
+      "zh": "慢慢走到平地上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How do I unclip these boots?",
+      "phonetic": "/haʊ du aɪ ʌnˈklɪp ðiz buːts/",
+      "zh": "雪鞋怎麼從板上取下？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lever up at the back, firmly.",
+      "phonetic": "/ˈlɛvər ʌp æt ðə bæk ˈfɜrmli/",
+      "zh": "往後上方使勁扳開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One came off. The other stuck.",
+      "phonetic": "/wʌn keɪm ɑf ði ˈʌðər stʌk/",
+      "zh": "一塊下來了，另一塊卡住。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Twist your knee gently to the side.",
+      "phonetic": "/twɪst jɔr niː ˈdʒɛntli tu ðə saɪd/",
+      "zh": "膝蓋輕輕往旁邊轉一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "There we go, both free.",
+      "phonetic": "/ðɛr wi ɡoʊ boʊθ fri/",
+      "zh": "好了，兩隻腳都自由了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Carry your skis on one shoulder.",
+      "phonetic": "/ˈkæri jɔr skaɪz ɑn wʌn ˈʃoʊldər/",
+      "zh": "雪板扛在一邊的肩上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is the return counter?",
+      "phonetic": "/wɛr ɪz ðə rɪˈtɜrn ˈkaʊntər/",
+      "zh": "還裝備的櫃台在哪兒？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Follow the arrows on the wall.",
+      "phonetic": "/ˈfɑloʊ ði ˈæroʊz ɑn ðə wɔl/",
+      "zh": "跟著牆上的箭頭走。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The line is short, thank goodness.",
+      "phonetic": "/ðə laɪn ɪz ʃɔrt θæŋk ˈɡʊdnəs/",
+      "zh": "隊伍很短，謝天謝地。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Better have your receipt out now.",
+      "phonetic": "/ˈbɛtər hæv jɔr rɪˈsit aʊt naʊ/",
+      "zh": "最好現在就把小票拿出來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do they check the skis for damage?",
+      "phonetic": "/du ðeɪ tʃɛk ðə skaɪz fər ˈdæmɪdʒ/",
+      "zh": "他們會檢查板子有沒有壞嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quick look, then they stamp it.",
+      "phonetic": "/kwɪk lʊk ðɛn ðeɪ stæmp ɪt/",
+      "zh": "掃一眼就蓋個章。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Any scratches on the base?",
+      "phonetic": "/ˈɛni ˈskrætʃɪz ɑn ðə beɪs/",
+      "zh": "板底有劃痕嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just one scratch from a rock.",
+      "phonetic": "/dʒʌst wʌn skrætʃ frʌm ə rɑk/",
+      "zh": "只有一道被石頭刮出的痕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will they charge me for that?",
+      "phonetic": "/wɪl ðeɪ tʃɑrdʒ mi fər ðæt/",
+      "zh": "這個會收費嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, that's just normal wear.",
+      "phonetic": "/noʊ ðæts dʒʌst ˈnɔrməl wɛr/",
+      "zh": "不會，那只是正常磨損。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I got my deposit back today.",
+      "phonetic": "/aɪ ɡɑt maɪ dɪˈpɑzɪt bæk təˈdeɪ/",
+      "zh": "今天的押金退回來了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Twenty dollars, exactly as promised.",
+      "phonetic": "/ˈtwɛnti ˈdɑlərz ɪɡˈzæktli æz ˈprɑmɪst/",
+      "zh": "二十塊，說退就退。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I left my gloves in the locker.",
+      "phonetic": "/aɪ lɛft maɪ ɡlʌvz ɪn ðə ˈlɑkər/",
+      "zh": "我手套忘在儲物櫃了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I grabbed them; here you go.",
+      "phonetic": "/aɪ ɡræbd ðɛm hɪr ju ɡoʊ/",
+      "zh": "我順手拿了，給你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You're a real lifesaver.",
+      "phonetic": "/jʊr ə ril ˈlaɪfˌseɪvər/",
+      "zh": "你真是幫了大忙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You'd do the same for me.",
+      "phonetic": "/jud du ðə seɪm fər mi/",
+      "zh": "換了你也會這樣做的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My helmet left a red mark.",
+      "phonetic": "/maɪ ˈhɛlmət lɛft ə rɛd mɑrk/",
+      "zh": "頭盔在我額上壓出一道紅印。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It fades in about ten minutes.",
+      "phonetic": "/ɪt feɪdz ɪn əˈbaʊt tɛn ˈmɪnɪts/",
+      "zh": "十來分鐘就消了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "There's a bruise on my arm.",
+      "phonetic": "/ðɛrz ə bruːz ɑn maɪ ɑrm/",
+      "zh": "我胳膊上出現一塊淤青。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ice it when we get back.",
+      "phonetic": "/aɪs ɪt wɛn wi ɡɛt bæk/",
+      "zh": "回去以後記得冰敷。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we get dry clothes somewhere?",
+      "phonetic": "/kæn wi ɡɛt draɪ kloʊz ˈsʌmwɛr/",
+      "zh": "哪兒能換身乾爽衣服？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The changing room is past the café.",
+      "phonetic": "/ðə ˈtʃeɪndʒɪŋ rum ɪz pæst ðə kæˈfeɪ/",
+      "zh": "更衣室在咖啡區後面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It's warm in here at last.",
+      "phonetic": "/ɪts wɔrm ɪn hɪr æt læst/",
+      "zh": "這裡終於暖和了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Your hair is still dripping snow.",
+      "phonetic": "/jɔr hɛr ɪz stɪl ˈdrɪpɪŋ snoʊ/",
+      "zh": "你頭髮上還滴著雪水。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Socks feel like heaven after boots.",
+      "phonetic": "/sɑks fil laɪk ˈhɛvən ˈæftər buːts/",
+      "zh": "脫了雪鞋穿襪子像上了天堂。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I never appreciate shoes enough.",
+      "phonetic": "/aɪ ˈnɛvər əˈpriʃiˌeɪt ʃuːz ɪˈnʌf/",
+      "zh": "我從來沒那麼感謝鞋子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Every muscle aches right now.",
+      "phonetic": "/ˈɛvri ˈmʌsəl eɪks raɪt naʊ/",
+      "zh": "現在全身肌肉都在疼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A hot bath fixes most of it.",
+      "phonetic": "/ə hɑt bæθ ˈfɪksɪz moʊst ʌv ɪt/",
+      "zh": "泡個熱水澡能解決大半。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Our room has a deep tub.",
+      "phonetic": "/ˈaʊr rum hæz ə dip tʌb/",
+      "zh": "我們房間有個很深的浴缸。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Add the bath salts from my bag.",
+      "phonetic": "/æd ðə bæθ sɔlts frʌm maɪ bæɡ/",
+      "zh": "把我包裡的浴鹽倒進去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The water is almost too hot.",
+      "phonetic": "/ðə ˈwɔtər ɪz ˈɔlˌmoʊst tu hɑt/",
+      "zh": "水燙得幾乎下不去。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Turn it down just a little.",
+      "phonetic": "/tɜrn ɪt daʊn dʒʌst ə ˈlɪtəl/",
+      "zh": "稍微兌一點涼水。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Oh, this is the best part.",
+      "phonetic": "/oʊ ðɪs ɪz ðə bɛst pɑrt/",
+      "zh": "哇，這才是最美妙的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "See how the knots come loose?",
+      "phonetic": "/si haʊ ðə nɑts kʌm luːs/",
+      "zh": "看，僵硬的肩頸鬆開了吧？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My thighs still twitch a bit.",
+      "phonetic": "/maɪ taɪz stɪl twɪtʃ ə bɪt/",
+      "zh": "我大腿還在微微抽動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stretch them before you sleep.",
+      "phonetic": "/strɛtʃ ðɛm bɪˈfɔr ju slip/",
+      "zh": "睡覺前拉伸一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Show me that calf stretch again.",
+      "phonetic": "/ʃoʊ mi ðæt kæf strɛtʃ əˈɡɛn/",
+      "zh": "再教我一次小腿拉伸。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Press your foot on the wall.",
+      "phonetic": "/prɛs jɔr fʊt ɑn ðə wɔl/",
+      "zh": "腳掌抵住牆面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That one really releases it.",
+      "phonetic": "/ðæt wʌn ˈrɪəli rɪˈlisɪz ɪt/",
+      "zh": "這個動作真的能鬆開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold twenty seconds, then switch.",
+      "phonetic": "/hoʊld ˈtwɛnti ˈsɛkəndz ðɛn swɪtʃ/",
+      "zh": "停二十秒，再換一邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you want dinner downstairs?",
+      "phonetic": "/du ju wɑnt ˈdɪnər ˌdaʊnˈstɛrz/",
+      "zh": "你想去樓下吃晚飯嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only if there's a fire nearby.",
+      "phonetic": "/ˈoʊnli ɪf ðɛrz ə ˈfaɪər ˈnɪrˌbaɪ/",
+      "zh": "除非爐火旁邊有位置。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A table by the stove, please.",
+      "phonetic": "/ə ˈteɪbəl baɪ ðə stoʊv pliz/",
+      "zh": "請給我們爐邊那張桌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It's free if you wait five minutes.",
+      "phonetic": "/ɪts fri ɪf ju weɪt faɪv ˈmɪnɪts/",
+      "zh": "等五分鐘就空出來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I could eat the whole menu.",
+      "phonetic": "/aɪ kʊd it ðə hoʊl ˈmɛnju/",
+      "zh": "我餓得能吃完整張菜單。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Start with the warm bread, then.",
+      "phonetic": "/stɑrt wɪð ðə wɔrm brɛd ðɛn/",
+      "zh": "那先來點熱麵包墊墊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This noodle soup smells perfect.",
+      "phonetic": "/ðɪs ˈnudəl sup smɛlz ˈpɜrfɪkt/",
+      "zh": "這碗麵湯香得無可挑剔。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Skiing gives you an honest hunger.",
+      "phonetic": "/ˈskiɪŋ ɡɪvz ju ən ˈɑnɪst ˈhʌŋɡər/",
+      "zh": "滑完雪的餓才是最真實的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Could you hand me the salt?",
+      "phonetic": "/kʊd ju hænd mi ðə sɔlt/",
+      "zh": "能幫我把鹽遞過來嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here, and take the pepper too.",
+      "phonetic": "/hɪr ænd teɪk ðə ˈpɛpər tu/",
+      "zh": "給，胡椒也一起拿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How do your knees feel tonight?",
+      "phonetic": "/haʊ du jɔr niːz fil təˈnaɪt/",
+      "zh": "今晚你膝蓋感覺怎麼樣？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stiff, but nothing serious.",
+      "phonetic": "/stɪf bət ˈnʌθɪŋ ˈsɪriəs/",
+      "zh": "有點僵，不過不嚴重。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Mine hurt on every single stair.",
+      "phonetic": "/maɪn hɜrt ɑn ˈɛvri ˈsɪŋɡəl stɛr/",
+      "zh": "我下每一級樓梯都疼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tomorrow you'll walk like a robot.",
+      "phonetic": "/təˈmɑroʊ jul wɔk laɪk ə ˈroʊˌbɑt/",
+      "zh": "明天你會像機器人一樣走路。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A robot with a big smile.",
+      "phonetic": "/ə ˈroʊˌbɑt wɪð ə bɪɡ smaɪl/",
+      "zh": "一個笑得合不攏嘴的機器人。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You loved every minute of it.",
+      "phonetic": "/ju lʌvd ˈɛvri ˈmɪnɪt ʌv ɪt/",
+      "zh": "你其實每一分鐘都很享受。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What was your favorite moment?",
+      "phonetic": "/wʌt wʌz jɔr ˈfeɪvərɪt ˈmoʊmənt/",
+      "zh": "你最喜歡哪個瞬間？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The last run in the pink light.",
+      "phonetic": "/ðə læst rʌn ɪn ðə pɪŋk laɪt/",
+      "zh": "夕陽粉光裡那最後一趟。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Same one. Magic at that hour.",
+      "phonetic": "/seɪm wʌn ˈmædʒɪk æt ðæt ˈaʊər/",
+      "zh": "我也是，那個時段像魔法。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We should wake up early again.",
+      "phonetic": "/wi ʃʊd weɪk ʌp ˈɜrli əˈɡɛn/",
+      "zh": "我們該再早點起床。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Shall we go back tomorrow?",
+      "phonetic": "/ʃæl wi ɡoʊ bæk təˈmɑroʊ/",
+      "zh": "我們明天還去滑嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes — your pass still works.",
+      "phonetic": "/jɛs jɔr pæs stɪl wɜrks/",
+      "zh": "好，你的票還在有效期。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Set an alarm for seven, then.",
+      "phonetic": "/sɛt ən əˈlɑrm fər ˈsɛvən ðɛn/",
+      "zh": "那就定七點的鬧鐘。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Six thirty if we want good parking.",
+      "phonetic": "/sɪks ˈθɜrti ɪf wi wɑnt ɡʊd ˈpɑrkɪŋ/",
+      "zh": "想有位子就六點半。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Six thirty it is. I'm brave.",
+      "phonetic": "/sɪks ˈθɜrti ɪt ɪz aɪm breɪv/",
+      "zh": "好，就六點半，我真勇敢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pack your bag by the door tonight.",
+      "phonetic": "/pæk jɔr bæɡ baɪ ðə dɔr təˈnaɪt/",
+      "zh": "今晚先把包放門口。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do we need wax or new gloves?",
+      "phonetic": "/du wi nid wæks ɔr nu ɡlʌvz/",
+      "zh": "我們需要打蠟或新手套嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The shop opens before the lifts.",
+      "phonetic": "/ðə ʃɑp ˈoʊpənz bɪˈfɔr ðə lɪfts/",
+      "zh": "那家店比纜車早開門。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I'm so sleepy I can barely talk.",
+      "phonetic": "/aɪm soʊ ˈslɪpi aɪ kən ˈbɛrli tɔk/",
+      "zh": "我困得話都快說不出了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A good tired, the best kind.",
+      "phonetic": "/ə ɡʊd ˈtaɪərd ðə bɛst kaɪnd/",
+      "zh": "這是幸福的疲憊，最棒的那種。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Turn off the lamp, would you?",
+      "phonetic": "/tɜrn ɔf ðə læmp wʊd ju/",
+      "zh": "幫我把燈關掉好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Done. Sleep well, champion.",
+      "phonetic": "/dʌn slip wɛl ˈtʃæmpiən/",
+      "zh": "關好了，睡個好覺，冠軍。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "See you on the slopes tomorrow.",
+      "phonetic": "/si ju ɑn ðə sloʊps təˈmɑroʊ/",
+      "zh": "明天雪道上見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'll bring the hot chocolate next time.",
+      "phonetic": "/aɪl brɪŋ ðə hɑt ˈtʃɑklət nɛkst taɪm/",
+      "zh": "下次換我帶熱可可。"
+    }
+  ]
+}

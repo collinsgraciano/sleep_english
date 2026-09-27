@@ -1,0 +1,2458 @@
+{
+  "title": "Everyday Phrases — Brewing Tea at Home",
+  "title_zh": "在家泡茶",
+  "scene_zh": "在家泡茶 · 情境對話",
+  "title_quote": "It feels cold this evening.",
+  "cefr": "A1",
+  "youtube_title": "【睡前英文聽力】🍵 實用在家泡茶必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A1 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — Brewing Tea at Home",
+  "youtube_description": "睡著學英文！這部影片收錄實用在家泡茶情境對話（從燒水選茶、溫杯投茶、悶泡出湯到續杯收拾，每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫），不用背，睡前聽就會。重複播放，讓英文自然進入你的大腦。👍 想學更多生活場景，請留言告訴我！別忘了訂閱+按讚。 #英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical Brewing Tea at Home phrase pairs, from boiling water and choosing leaves to steeping, tasting and refills (each pair: male normal speed → female slow speed → combined dialogue). No memorization needed—just listen before bed and absorb naturally. If you want more real-life scenarios, leave a comment! Subscribe and like!",
+  "youtube_tags": [
+    "英文聽力",
+    "睡前英文",
+    "泡茶英文",
+    "茶文化英文",
+    "Brewing tea English",
+    "English listening",
+    "Sleep learning",
+    "A1 English",
+    "常用英文短語",
+    "零基礎英文",
+    "慢速英文",
+    "英文口語",
+    "Learn English",
+    "English for daily life",
+    "ESL",
+    "English conversation"
+  ],
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "Brewing Tea at Home",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "Brewing Tea at Home",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Food & Drink",
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "It feels cold this evening.",
+      "phonetic": "/ɪt filz kod ðɪs ˈivnɪŋ./",
+      "zh": "今晚感覺有點冷。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let's make some hot tea.",
+      "phonetic": "/lɛts meɪk sʌm hɑt ti./",
+      "zh": "我們來泡點熱茶吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good idea, what teas do we have?",
+      "phonetic": "/ɡʊd aɪˈdiə wʌt tiz du wi hæv?/",
+      "zh": "好主意，我們有哪些茶？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "More kinds than you think.",
+      "phonetic": "/mɔr kaɪndz ðæn ju θɪŋk./",
+      "zh": "比你想像的還多呢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I'll get the kettle and water.",
+      "phonetic": "/aɪl ɡɛt ðə ˈkɛtl ənd ˈwɔtər./",
+      "zh": "我去拿水壺燒水。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fill it with fresh cold water.",
+      "phonetic": "/fɪl ɪt wɪð frɛʃ kod ˈwɔtər./",
+      "zh": "水壺裡接滿新鮮的冷水。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Why does cold water work better?",
+      "phonetic": "/waɪ dʊz kod ˈwɔtər wɜrk ˈbɛtər?/",
+      "zh": "為什麼用冷水比較好？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It tastes cleaner, trust me.",
+      "phonetic": "/ɪt teɪsts ˈklinər trʌst mi./",
+      "zh": "味道比較乾淨，相信我。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Oh, the kettle looks a bit dirty.",
+      "phonetic": "/oʊ ðə ˈkɛtl lʊks ə bɪt ˈdɜrdi./",
+      "zh": "哦，水壺看起來有點髒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wipe it with a damp cloth.",
+      "phonetic": "/waɪp ɪt wɪð ə dæmp klɔθ./",
+      "zh": "用濕布擦一擦吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the outside clean enough now?",
+      "phonetic": "/ɪz ði ˈaʊtsaɪd klin ɪˈnʌf naʊ?/",
+      "zh": "外面擦夠乾淨了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, now it really shines.",
+      "phonetic": "/jɛs naʊ ɪt ˈrɪli ʃaɪnz./",
+      "zh": "嗯，現在亮晶晶的了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where do we keep the tea?",
+      "phonetic": "/wɛr du wi kip ðə ti./",
+      "zh": "我們把茶放在哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In the blue box on the shelf.",
+      "phonetic": "/ɪn ðə blu bɑks ɑn ðə ʃɛlf./",
+      "zh": "在架子那個藍色盒子裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you mean the shelf by the window?",
+      "phonetic": "/du ju min ðə ʃɛlf baɪ ðə ˈwɪndo?/",
+      "zh": "你是說窗邊那層架子嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's the one, the top row.",
+      "phonetic": "/ðæz ði wʌn ðə tɑp roʊ./",
+      "zh": "對，就是最上面那一排。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This box is heavier than I thought.",
+      "phonetic": "/ðɪs bɑks ɪz ˈhɛviər ðæn aɪ θɔt./",
+      "zh": "這盒子比我想的重多了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Grandma always kept extra tea.",
+      "phonetic": "/ˈgrænmɑ ˈɔlweɪz kɛpt ˈɛkstrə ti./",
+      "zh": "奶奶總會多備一些茶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Look, five little tins inside.",
+      "phonetic": "/lʊk faɪv ˈlɪtəl tɪnz ɪnˈsaɪd./",
+      "zh": "看，裡面有五個小茶罐。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Take them out and smell each one.",
+      "phonetic": "/teɪk ðɛm aʊt ənd smɛl itʃ wʌn./",
+      "zh": "拿出來，罐罐都聞一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This tin smells like soft flowers.",
+      "phonetic": "/ðɪs tɪn smɛls laɪk sɑft ˈflaʊərz./",
+      "zh": "這罐有淡淡的花香。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's chamomile, for sleeping well.",
+      "phonetic": "/ðæz kəˈmil fər ˈslipɪŋ wɛl./",
+      "zh": "那是洋甘菊，助眠用的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do we have any black tea?",
+      "phonetic": "/du wi hæv ˈɛni blæk ti./",
+      "zh": "我們有紅茶嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the round red tin.",
+      "phonetic": "/jɛs ðə raʊnd rɛd tɪn./",
+      "zh": "有啊，那個圓圓的紅罐子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This green one smells fresh and light.",
+      "phonetic": "/ðɪs grin wʌn smɛls frɛʃ ənd laɪt./",
+      "zh": "綠色這罐聞起來清新淡雅。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's our favorite spring tea.",
+      "phonetic": "/ðæz ˈaʊər ˈfeɪvərɪt prɪŋ ti./",
+      "zh": "那是我們最愛的春茶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What does this tall thin tin hold?",
+      "phonetic": "/wʌt dʌz ðɪs tɔl θɪn tɪn hoʊld?/",
+      "zh": "這細長罐子裝的是什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Oolong leaves, rolled up tight.",
+      "phonetic": "/ˈulɔŋ livz roʊld ʌp taɪt./",
+      "zh": "烏龍茶葉，捲得緊緊的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I didn't know you owned oolong.",
+      "phonetic": "/aɪ ˈdɪdənt noʊ ju ˈownd ˈulɔŋ./",
+      "zh": "我不知道你還有烏龍茶。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My aunt gave it to me last year.",
+      "phonetic": "/maɪ ænt geɪv ɪt tə mi læst jɪr./",
+      "zh": "阿姨去年送我的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which tea should we drink now?",
+      "phonetic": "/wɪtʃ ti ʃʊd wi drɪŋk naʊ?/",
+      "zh": "我們現在喝哪種好呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Green tea is light and easy.",
+      "phonetic": "/grin ti ɪz laɪt ənd ˈizi./",
+      "zh": "綠茶清淡，很好入口。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "But black tea feels warmer.",
+      "phonetic": "/bʌt blæk ti filz ˈwɔmər./",
+      "zh": "可紅茶讓人覺得更暖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Why not try green first?",
+      "phonetic": "/waɪ nɑt traɪ grin fɜrst?/",
+      "zh": "何不先從綠茶試起？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you like loose leaf tea?",
+      "phonetic": "/du ju laɪk lus lif ti./",
+      "zh": "你喜歡散裝茶葉嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tea bags are quicker for me.",
+      "phonetic": "/ti bægz ɑr ˈkwɪkər fər mi./",
+      "zh": "我泡茶包比較快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Loose leaves taste much stronger.",
+      "phonetic": "/lus livz teɪst mʌtʃ ˈstrɔŋgər./",
+      "zh": "散茶的味道濃多了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fine, use the green jar today.",
+      "phonetic": "/faɪn juz ðə grin dʒɑr təˈdeɪ./",
+      "zh": "好吧，今天就用綠罐的茶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is the little measuring spoon?",
+      "phonetic": "/wɛr ɪz ðə ˈlɪtəl ˈmɛʒjʊrɪŋ spun?/",
+      "zh": "小茶匙在哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Check the drawer beside the stove.",
+      "phonetic": "/tʃɛk ðə drɔər bəˈsaɪd ðə stoʊv./",
+      "zh": "看看爐子旁邊的抽屜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This drawer is really crowded.",
+      "phonetic": "/ðɪs drɔər ɪz ˈrɪli ˈkraʊdɪd./",
+      "zh": "這抽屜擠得不得了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The spoon hides behind the sugar.",
+      "phonetic": "/ðə spun haɪdz bɪˈhaɪnd ðə ˈʃʊgər./",
+      "zh": "勺子在糖罐後面躲著呢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Got it, here's the tiny spoon.",
+      "phonetic": "/gɑt ɪt hɪrz ðə ˈtaɪni spun./",
+      "zh": "找到了，好小的勺子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Perfect, now we can start brewing.",
+      "phonetic": "/ˈpɜrfɪkt naʊ wi kæn stɑrt ˈbruing./",
+      "zh": "太好了，可以開始泡茶了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Black tea needs fully boiling water.",
+      "phonetic": "/blæk ti nidz ˈfʊli ˈbɔɪlɪŋ ˈwɔtər./",
+      "zh": "紅茶要用滾水沖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So the kettle must whistle first.",
+      "phonetic": "/soʊ ðə ˈkɛtl mʌst ˈwɪsəl fɜrst./",
+      "zh": "所以要等水壺先鳴笛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Green tea likes cooler water.",
+      "phonetic": "/grin ti laɪks ˈkulər ˈwɔtər./",
+      "zh": "綠茶喜歡溫一點的水。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wait two minutes after it boils.",
+      "phonetic": "/weɪt tu ˈmɪnɪts ˈæftər ɪt bɔɪlz./",
+      "zh": "水滾後再等兩分鐘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Why does cooler water matter?",
+      "phonetic": "/waɪ dʌz ˈkulər ˈwɔtər ˈmætər?/",
+      "zh": "為什麼水溫這麼要緊？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Too hot makes green tea bitter.",
+      "phonetic": "/tu hɑt meɪks grin ti ˈbɪtər./",
+      "zh": "太燙會讓綠茶發苦。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I really don't like bitter tea.",
+      "phonetic": "/aɪ ˈrɪli dont laɪk ˈbɪtər ti./",
+      "zh": "我真的不愛苦茶。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then let the water rest a little.",
+      "phonetic": "/ðɛn lɛt ðə ˈwɔtər rɛst ə ˈlɪtəl./",
+      "zh": "那就讓水多靜置一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How many spoons for the pot?",
+      "phonetic": "/haʊ ˈmɛni spunz fər ðə pɑt?/",
+      "zh": "一壺要放幾勺茶？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One spoon for every cup.",
+      "phonetic": "/wʌn spun fər ˈɛvri kʌp./",
+      "zh": "每杯算一勺。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So four spoons for four cups?",
+      "phonetic": "/soʊ fɔr spunz fər fɔr kʌps?/",
+      "zh": "那四杯就是四勺嘍？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, plus one for the pot.",
+      "phonetic": "/jɛs plʌs wʌn fər ðə pɑt./",
+      "zh": "對，再多加一勺給壺。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is that a real brewing rule?",
+      "phonetic": "/ɪz ðæt ə ril ˈbruing rul?/",
+      "zh": "這也算是泡茶規矩？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Grandma always added one extra spoon.",
+      "phonetic": "/ˈgrænmɑ ˈɔlweɪz ˈædəd wʌn ˈɛkstrə spun./",
+      "zh": "奶奶每次都多添一勺。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I take the big glass pot?",
+      "phonetic": "/ʃʊd aɪ teɪk ðə bɪɡ glæs pɑt?/",
+      "zh": "我用大玻璃壺好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, then you can watch the leaves.",
+      "phonetic": "/jɛs ðɛn ju kæn wɑtʃ ðə livz./",
+      "zh": "好啊，還能看著茶葉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Watching the leaves dance is fun.",
+      "phonetic": "/ˈwɑtʃɪŋ ðə livz dæns ɪz fʌn./",
+      "zh": "看茶葉跳舞很有意思。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It also shows the changing color.",
+      "phonetic": "/ɪt ˈɔlsoʊ ʃoʊz ðə ˈtʃeɪndʒɪŋ ˈkʌlər./",
+      "zh": "也看得出顏色在變化。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This pot smells like yesterday's tea.",
+      "phonetic": "/ðɪs pɑt smɛls laɪk ˈjɛstərˌdeɪz ti./",
+      "zh": "這壺有昨天的茶味。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rinse it with warm water only.",
+      "phonetic": "/rɪns ɪt wɪð wɔrm ˈwɔtər ˈonli./",
+      "zh": "只用溫水沖一沖就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "No soap for the teapot, right?",
+      "phonetic": "/noʊ soʊp fər ðə ˈtiˌpɑt raɪt?/",
+      "zh": "茶壺不用洗潔精，對吧？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Right, soap ruins the tea taste.",
+      "phonetic": "/raɪt soʊp ˈruɪnz ðə ti teɪst./",
+      "zh": "對，會破壞茶的味道。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where's the lid that fits this pot?",
+      "phonetic": "/wɛrz ðə lɪd ðæt fɪts ðɪs pɑt?/",
+      "zh": "這壺的蓋子在哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Check the cupboard next to the fridge.",
+      "phonetic": "/tʃɛk ðə ˈkʌbərd nɛkst tə ðə frɪdʒ./",
+      "zh": "去看看冰箱旁邊的櫥櫃。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Here it is, behind the plates.",
+      "phonetic": "/hɪr ɪt ɪz bɪˈhaɪnd ðə pleɪts./",
+      "zh": "找到了，在盤子後面。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great, set it on top of the pot.",
+      "phonetic": "/greɪt sɛt ɪt ɑn tɑp ʌv ðə pɑt./",
+      "zh": "太好了，蓋到壺上吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which cups should we set out?",
+      "phonetic": "/wɪtʃ kʌps ʃʊd wi sɛt aʊt?/",
+      "zh": "我們該擺哪些杯子？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The wide ones keep tea cooler.",
+      "phonetic": "/ðə waɪd wʌnz kip ti ˈkulər./",
+      "zh": "寬口的讓茶涼得快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I want my favorite blue mug.",
+      "phonetic": "/aɪ wɔnt maɪ ˈfeɪvərɪt blu mʌɡ./",
+      "zh": "我要用我最愛的藍馬克杯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It holds heat much longer.",
+      "phonetic": "/ɪt hoʊldz hit mʌtʃ ˈlɔŋgər./",
+      "zh": "那個保溫比較久。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are all the cups clean and dry?",
+      "phonetic": "/ɑr ɔl ðə kʌps klin ənd draɪ?/",
+      "zh": "杯子都洗淨擦乾了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, I dried them after lunch.",
+      "phonetic": "/jɛs aɪ draɪd ðɛm ˈæftər lʌntʃ./",
+      "zh": "嗯，午飯後我就擦乾了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's warm the cups with hot water.",
+      "phonetic": "/lɛts wɔrm ðə kʌps wɪð hɑt ˈwɔtər./",
+      "zh": "先用熱水泡溫杯子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's how grandma started every pot.",
+      "phonetic": "/ðæz haʊ ˈgrænmɑ ˈstɑrtɪd ˈɛvri pɑt./",
+      "zh": "奶奶泡每壺都先這麼做。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Pour a little hot water in each.",
+      "phonetic": "/pɔr ə ˈlɪtəl hɑt ˈwɔtər ɪn itʃ./",
+      "zh": "每杯倒一點熱水。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Swirl it around, then dump it out.",
+      "phonetic": "/swɜrl ɪt əˈraʊnd ðɛn dʌmp ɪt aʊt./",
+      "zh": "晃一圈，再把水倒掉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cups feel toasty now.",
+      "phonetic": "/ðə kʌps fil ˈtɔsti naʊ./",
+      "zh": "杯子現在暖呼呼的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Your tea will stay hot longer.",
+      "phonetic": "/jʊr ti wɪl steɪ hɑt ˈlɔŋgər./",
+      "zh": "茶就不容易涼了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Set the pot on the wooden tray.",
+      "phonetic": "/sɛt ðə pɑt ɑn ðə ˈwʊdən treɪ./",
+      "zh": "把茶壺放到木托盤上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Should I add the honey jar too?",
+      "phonetic": "/ʃʊd aɪ æd ðə ˈhʌni dʒɑr tu?/",
+      "zh": "蜂蜜罐也要一起擺嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, some sugar cubes and spoons.",
+      "phonetic": "/jɛs sʌm ˈʃʊgər kjubz ənd spunz./",
+      "zh": "好啊，再放方糖和茶匙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And a clean cloth for spills.",
+      "phonetic": "/ənd ə klin klɔθ fər spɪlz./",
+      "zh": "還有擦灑用的乾淨布。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You thought of absolutely everything.",
+      "phonetic": "/ju θɔt ʌv ˈæbsəlutli ˈɛvriθɪŋ./",
+      "zh": "你想得太週到了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tea time needs a calm setup.",
+      "phonetic": "/ti taɪm nidz ə kɑm ˈsɛtˌʌp./",
+      "zh": "喝茶就得從容地準備。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the kettle starting to steam?",
+      "phonetic": "/ɪz ðə ˈkɛtl ˈstɑrtɪŋ tə stim?/",
+      "zh": "水壺開始冒蒸氣了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Listen, it's rumbling softly now.",
+      "phonetic": "/ˈlɪsən ɪts ˈrʌmblɪŋ ˈsɔftli naʊ./",
+      "zh": "你聽，水已經小聲翻滾了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Almost boiling, I can hear it.",
+      "phonetic": "/ˈɔlmoʊst ˈbɔɪlɪŋ aɪ kæn hir ɪt./",
+      "zh": "快燒開了，我都聽見了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Get the jar of leaves ready.",
+      "phonetic": "/ɡɛt ðə dʒɑr ʌv livz ˈrɛdi./",
+      "zh": "把茶葉罐先準備好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Look, the lid just clicked, it's boiling.",
+      "phonetic": "/lʊk ðə lɪd dʒʌst klɪkt ɪts ˈbɔɪlɪŋ./",
+      "zh": "你看，蓋子喀噠一聲，水開了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Now let it cool two minutes.",
+      "phonetic": "/naʊ lɛt ɪt kul tu ˈmɪnɪts./",
+      "zh": "現在先讓它涼兩分鐘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's measure the leaves while we wait.",
+      "phonetic": "/lɛts ˈmɛʒər ðə livz hwaɪl wi weɪt./",
+      "zh": "等水的時候先量茶葉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One, two, three, four level spoonfuls.",
+      "phonetic": "/wʌn tu θri fɔr ˈlɛvəl ˈspunfʊlz./",
+      "zh": "一、二、三、四，平平四勺。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should the dry leaves look whole?",
+      "phonetic": "/ʃʊd ðə draɪ livz lʊk hol?/",
+      "zh": "乾茶葉要完整才好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, big leaves open slowly and nicely.",
+      "phonetic": "/jɛs bɪɡ livz ˈoʊpən ˈsloʊli ənd ˈnaɪsli./",
+      "zh": "嗯，大葉子會漂亮地慢慢舒展。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Everything is ready on the table.",
+      "phonetic": "/ˈɛvriθɪŋ ɪz ˈrɛdi ɑn ðə ˈteɪbəl./",
+      "zh": "桌上一切都備齊了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The water rested long enough now.",
+      "phonetic": "/ðə ˈwɔtər ˈrɛstəd lɔŋ ɪˈnʌf naʊ./",
+      "zh": "水也涼到恰到好處了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Put the leaves in the warm pot.",
+      "phonetic": "/pʊt ðə livz ɪn ðə wɔrm pɑt./",
+      "zh": "把茶葉放進溫過的壺。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They're giving off a scent already.",
+      "phonetic": "/ðɛr ˈgɪvɪŋ ɔf ə sɛnt ɔlˈrɛdi./",
+      "zh": "它們已經飄出香味了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Dry heat wakes the tea up first.",
+      "phonetic": "/draɪ hit weɪks ðə ti ʌp fɜrst./",
+      "zh": "乾熱先把茶葉喚醒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I smell grass and a little honey.",
+      "phonetic": "/aɪ smɛl græs ənd ə ˈlɪtəl ˈhʌni./",
+      "zh": "我聞到青草和一點蜜香。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now it's time for the hot water.",
+      "phonetic": "/naʊ ɪts taɪm fər ðə hɑt ˈwɔtər./",
+      "zh": "現在輪到熱水出場了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pour it gently down the side.",
+      "phonetic": "/pɔr ɪt ˈdʒɛntli daʊn ðə saɪd./",
+      "zh": "沿著壺壁輕輕倒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Like this, slow and steady?",
+      "phonetic": "/laɪk ðɪs sloʊ ənd ˈstɛdi?/",
+      "zh": "像這樣，又慢又穩？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, don't splash the young leaves.",
+      "phonetic": "/jɛs doʊnt splæʃ ðə jʌŋ livz./",
+      "zh": "對，別潑到嫩葉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Oh no, the water went cloudy at first.",
+      "phonetic": "/oʊ noʊ ðə ˈwɔtər wɛnt ˈklaʊdi æt fɜrst./",
+      "zh": "哦不，水剛開始有點渾濁。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "See, it's clearing up now.",
+      "phonetic": "/si ɪts ˈklɪrɪŋ ʌp naʊ./",
+      "zh": "你看，現在變清澈了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now the leaves are spinning in circles.",
+      "phonetic": "/naʊ ðə livz ɑr ˈspɪnɪŋ ɪn ˈsɜrkəlz./",
+      "zh": "現在茶葉在水裡打轉呢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's the sign of good tea.",
+      "phonetic": "/ðæz ðə saɪn ʌv ɡʊd ti./",
+      "zh": "這就是好茶的跡象。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I fill the pot to the brim?",
+      "phonetic": "/ʃʊd aɪ fil ðə pɑt tə ðə brɪm?/",
+      "zh": "要裝到滿嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, leave a small space at top.",
+      "phonetic": "/noʊ liv ə smɔl speɪs æt tɑp./",
+      "zh": "不，上面留一點空隙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How full is full enough?",
+      "phonetic": "/haʊ fʊl ɪz fʊl ɪˈnʌf?/",
+      "zh": "倒到多滿才夠？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Almost full, then stop right there.",
+      "phonetic": "/ˈɔlmoʊst fʊl ðɛn stɑp raɪt ðɛr./",
+      "zh": "快滿的時候就停。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wow, the steam smells like a meadow.",
+      "phonetic": "/waʊ ðə stim smɛls laɪk ə ˈmɛdoʊ./",
+      "zh": "哇，蒸氣聞起來像草地。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Green tea always smells like spring.",
+      "phonetic": "/grin ti ˈɔlweɪz smɛls laɪk prɪŋ./",
+      "zh": "綠茶總有春天的味道。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Cover the pot to trap the heat.",
+      "phonetic": "/ˈkʌvər ðə pɑt tə træp ðə hit./",
+      "zh": "蓋上壺蓋把熱氣悶住。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Like this, with the lid resting lightly?",
+      "phonetic": "/laɪk ðɪs wɪð ðə lɪd ˈrɛstɪŋ ˈlaɪtli?/",
+      "zh": "這樣輕輕蓋著嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, never press the lid down.",
+      "phonetic": "/jɛs ˈnɛvər prɛs ðə lɪd daʊn./",
+      "zh": "對，別把蓋子壓緊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The tea steeps best when it's cozy.",
+      "phonetic": "/ðə ti stips bɛst wɛn ɪts ˈkoʊzi./",
+      "zh": "茶在舒服悶著時泡得最好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Set the timer for three minutes.",
+      "phonetic": "/sɛt ðə ˈtaɪmər fər θri ˈmɪnɪts./",
+      "zh": "計時三分鐘。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Is three really the perfect number?",
+      "phonetic": "/ɪz θri ˈrɪli ðə ˈpɜrfɪkt ˈnʌmbər?/",
+      "zh": "三分真的剛剛好嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Too short gives you pale weak tea.",
+      "phonetic": "/tu ʃɔrt gɪvz ju peɪl wik ti./",
+      "zh": "時間太短茶會淡而無味。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And too long turns it bitter.",
+      "phonetic": "/ənd tu lɔŋ tɜrnz ɪt ˈbɪtər./",
+      "zh": "太久又會變苦。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So timing is everything with tea.",
+      "phonetic": "/soʊ ˈtaɪmɪŋ ɪz ˈɛvriθɪŋ wɪð ti./",
+      "zh": "所以泡茶的關鍵就是時間。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Grandma never used a timer at all.",
+      "phonetic": "/ˈgrænmɑ ˈnɛvər jʊzd ə ˈtaɪmər æt ɔl./",
+      "zh": "奶奶從前根本不用計時器。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then how did she know the time?",
+      "phonetic": "/ðɛn haʊ dɪd ʃi noʊ ðə taɪm?/",
+      "zh": "那她怎麼知道泡好了？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She counted slowly to one hundred.",
+      "phonetic": "/ʃi ˈkaʊntɪd ˈsloʊli tə wʌn ˈhʌndrəd./",
+      "zh": "她會慢慢數到一百。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we count together this time?",
+      "phonetic": "/kæn wi kaʊnt təˈgɛðər ðɪs taɪm?/",
+      "zh": "這次我們一起數好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, start at one hundred twenty.",
+      "phonetic": "/ʃʊr stɑrt æt wʌn ˈhʌndrəd ˈtwɛnti./",
+      "zh": "好啊，從一百二十開始數。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Don't peek while the tea is steeping.",
+      "phonetic": "/doʊnt pik hwaɪl ðə ti ɪz ˈstipɪŋ./",
+      "zh": "悶茶的時候別偷看。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Why not? I only want a glance.",
+      "phonetic": "/waɪ nɑt aɪ ˈonli wɔnt ə glæns./",
+      "zh": "為什麼？我就看一眼嘛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Every peek lets the heat escape.",
+      "phonetic": "/ˈɛvri pik lɛts ðə hit ɪˈskeɪp./",
+      "zh": "每看一下熱氣就跑掉了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Okay, I'll keep the lid shut tight.",
+      "phonetic": "/oʊˈkeɪ aɪl kip ðə lɪd ʃʌt taɪt./",
+      "zh": "好吧，我把蓋子蓋好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should the kettle boil more water?",
+      "phonetic": "/ʃʊd ðə ˈkɛtl bɔɪl mɔr ˈwɔtər?/",
+      "zh": "壺裡要再多燒點水嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, in case we want a second pot.",
+      "phonetic": "/jɛs ɪn keɪs wi wɔnt ə ˈsɛkənd pɑt./",
+      "zh": "好，說不定待會兒還要泡第二壺。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Come, let's wait right here by the window.",
+      "phonetic": "/kʌm lɛts weɪt raɪt hɪr baɪ ðə ˈwɪndo./",
+      "zh": "來，我們就在窗邊這裡等。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The light shows the tea's true color.",
+      "phonetic": "/ðə laɪt ʃoʊz ðə tiz tru ˈkʌlər./",
+      "zh": "在光線下才看得準湯色。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Look, most leaves are sinking down.",
+      "phonetic": "/lʊk moʊst livz ɑr ˈsɪŋkɪŋ daʊn./",
+      "zh": "看，大部分茶葉沉下去了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A few still float on top.",
+      "phonetic": "/ə fju stɪl floʊt ɑn tɑp./",
+      "zh": "還有幾片浮在最上面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do floating leaves mean bad tea?",
+      "phonetic": "/du ˈfloʊtɪŋ livz min bæd ti?/",
+      "zh": "浮著的葉子代表茶不好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, they sink once they're soaked.",
+      "phonetic": "/noʊ ðeɪ sɪŋk wʌns ðɛr soʊkt./",
+      "zh": "不會，泡透了就會沉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "See how the water is turning yellow-green.",
+      "phonetic": "/si haʊ ðə ˈwɔtər ɪz ˈtɜrnɪŋ ˈjɛloʊ grin./",
+      "zh": "你看水色慢慢變成黃綠了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It glows like liquid sunlight.",
+      "phonetic": "/ɪt gloʊz laɪk ˈlɪkwɪd ˈsʌnlaɪt./",
+      "zh": "像一壺液體的陽光。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How long does oolong tea need?",
+      "phonetic": "/haʊ lɔŋ dʊz ˈulɔŋ ti nid?/",
+      "zh": "烏龍茶要泡多久？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Five minutes, in much hotter water.",
+      "phonetic": "/faɪv ˈmɪnɪts ɪn mʌtʃ ˈhɑtər ˈwɔtər./",
+      "zh": "五分鐘，水要更熱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's save oolong for a rainy day.",
+      "phonetic": "/lɛts seɪv ˈulɔŋ fər ə ˈreɪni deɪ./",
+      "zh": "烏龍留到下雨天再泡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Perfect plan for a lazy Sunday.",
+      "phonetic": "/ˈpɜrfɪkt plæn fər ə ˈleɪzi ˈsʌndeɪ./",
+      "zh": "正適合懶洋洋的星期日。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "There, the timer just gave one beep.",
+      "phonetic": "/ðɛr ðə ˈtaɪmər dʒʌst geɪv wʌn bip./",
+      "zh": "你瞧，計時器嗶了一聲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Time to open the sleepy pot.",
+      "phonetic": "/taɪm tə ˈoʊpən ðə ˈslipi pɑt./",
+      "zh": "該打開壺蓋了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Open the lid away from your face.",
+      "phonetic": "/ˈoʊpən ðə lɪd əˈweɪ frʌm jʊr feɪs./",
+      "zh": "蓋子要朝反方向掀開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Whoa, the steam jumped at me!",
+      "phonetic": "/woʊ ðə stim dʒʌmpt æt mi!/",
+      "zh": "哇，蒸氣直衝我臉！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sorry, always lift it up slowly.",
+      "phonetic": "/sɑri ˈɔlweɪz lɪft ɪt ʌp ˈsloʊli./",
+      "zh": "抱歉，要慢慢掀起蓋子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The color looks exactly ready.",
+      "phonetic": "/ðə ˈkʌlər lʊks ɪɡˈzæktli ˈrɛdi./",
+      "zh": "這顏色看來剛好泡好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Taste one drop from the spoon.",
+      "phonetic": "/teɪst wʌn drɑp frʌm ðə spun./",
+      "zh": "用勺子嚐一滴。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Not too strong, not too weak.",
+      "phonetic": "/nɑt tu strɔŋ nɑt tu wik./",
+      "zh": "不濃也不淡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Three minutes, just like magic.",
+      "phonetic": "/θri ˈmɪnɪts dʒʌst laɪk ˈmædʒɪk./",
+      "zh": "三分鐘，像魔法一樣準。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Grandma would bless that beautiful color.",
+      "phonetic": "/ˈgrænmɑ wʊd blɛs ðæt ˈbjʊtəfəl ˈkʌlər./",
+      "zh": "奶奶看了那湯色會欣慰。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Pour the tea through the strainer.",
+      "phonetic": "/pɔr ðə ti θru ðə ˈstrenər./",
+      "zh": "用濾網把茶濾進杯子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'll rest it on the cup's mouth.",
+      "phonetic": "/aɪl rɛst ɪt ɑn ðə kʌps maʊθ./",
+      "zh": "我把它架在杯口上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Pour in a thin, steady stream.",
+      "phonetic": "/pɔr ɪn ə θɪn ˈstɛdi strim./",
+      "zh": "倒成細細穩穩的水柱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My stream wobbles but it holds.",
+      "phonetic": "/maɪ strim ˈwɑbəlz bʌt ɪt hoʊldz./",
+      "zh": "我的手有點抖但沒灑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Don't shake out the last drops.",
+      "phonetic": "/doʊnt ʃeɪk aʊt ðə læst drɑps./",
+      "zh": "最後幾滴別猛倒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Why not? They look extra strong.",
+      "phonetic": "/waɪ nɑt ðeɪ lʊk ˈɛkstrə strɔŋ./",
+      "zh": "為什麼？那幾滴看起來最濃。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Trust me, the last drops are bitter.",
+      "phonetic": "/trʌst mi ðə læst drɑps ɑr ˈbɪtər./",
+      "zh": "相信我，最後幾滴全是苦味。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good thing you told me that.",
+      "phonetic": "/ɡʊd θɪŋ ju toʊld mi ðæt./",
+      "zh": "還好你提醒我。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did any leaves fall into the cup?",
+      "phonetic": "/dɪd ˈɛni livz fɔl ˈɪntə ðə kʌp?/",
+      "zh": "有茶葉掉進杯子嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just two tiny ones, I fished them out.",
+      "phonetic": "/dʒʌst tu ˈtaɪni wʌnz aɪ fɪʃt ðɛm aʊt./",
+      "zh": "只有兩小片，我撈出來了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should we leave some tea in the pot?",
+      "phonetic": "/ʃʊd wi liv sʌm ti ɪn ðə pɑt?/",
+      "zh": "壺裡要留些茶嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, the leaves keep steeping inside.",
+      "phonetic": "/noʊ ðə livz kip ˈstipɪŋ ɪnˈsaɪd./",
+      "zh": "不，葉子還在壺裡繼續悶著。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Empty the pot in even rounds.",
+      "phonetic": "/ˈɛmpti ðə pɑt ɪn ˈivən raʊndz./",
+      "zh": "一輪一輪均勻地倒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So every cup tastes exactly the same?",
+      "phonetic": "/soʊ ˈɛvri kʌp teɪsts ɪɡˈzæktli ðə seɪm?/",
+      "zh": "這樣每杯味道才一樣？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Right, tea must be shared fairly.",
+      "phonetic": "/raɪt ti mʌst bi ʃɛrd ˈfɛrli./",
+      "zh": "對，分茶一定要公平。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's grandma's golden rule, isn't it?",
+      "phonetic": "/ðæz ˈgrænmɑz ˈgoʊldən rul ˈɪzənt ɪt?/",
+      "zh": "這就是奶奶的金規矩吧？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Each cup is steaming gently now.",
+      "phonetic": "/itʃ kʌp ɪz ˈstimɪŋ ˈdʒɛntli naʊ./",
+      "zh": "每杯茶都輕輕冒著熱氣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It smells so peaceful in here.",
+      "phonetic": "/ɪt smɛls soʊ ˈpisfəl ɪn hɪr./",
+      "zh": "這個廚房聞起來好安寧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One cup waits for dad.",
+      "phonetic": "/wʌn kʌp weɪts fər dæd./",
+      "zh": "留一杯給爸爸。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Should we keep his tea warm?",
+      "phonetic": "/ʃʊd wi kip hiz ti wɔrm?/",
+      "zh": "要幫他保溫嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He always drinks it stone cold.",
+      "phonetic": "/hi ˈɔlweɪz drɪŋks ɪt stoʊn kold./",
+      "zh": "他每次都等茶涼透才喝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then leave his cup out to cool.",
+      "phonetic": "/ðɛn liv hɪz kʌp aʊt tə kul./",
+      "zh": "那就讓他的杯子擱著涼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Loose tea can be messy sometimes.",
+      "phonetic": "/lus ti kæn bi ˈmɛsi ˈsʌmˌtaɪmz./",
+      "zh": "泡散茶有時弄得亂七八糟。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rinse the strainer in the sink now.",
+      "phonetic": "/rɪns ðə ˈstrenər ɪn ðə sɪŋk naʊ./",
+      "zh": "現在去水槽邊沖濾網。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I brew a simple tea bag?",
+      "phonetic": "/kæn aɪ bru ə ˈsɪmpəl ti bæɡ?/",
+      "zh": "我能泡個茶包嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Of course, bags work fine too.",
+      "phonetic": "/ʌv kɔrs bægz wɜrk faɪn tu./",
+      "zh": "當然，茶包也很好用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Drop the bag in the cup.",
+      "phonetic": "/drɑp ðə bæɡ ɪn ðə kʌp./",
+      "zh": "把茶包放進杯子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then pour the water right over it.",
+      "phonetic": "/ðɛn pɔr ðə ˈwɔtər raɪt ˈovər ɪt./",
+      "zh": "再把水直接淋上去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I squeeze the wet bag?",
+      "phonetic": "/ʃʊd aɪ skwiz ðə wɛt bæɡ?/",
+      "zh": "要把濕茶包擠一下嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Never squeeze it, that adds bitterness.",
+      "phonetic": "/ˈnɛvər skwiz ɪt ðæt ˈædz ˈbɪtərnɪs./",
+      "zh": "千萬別擠，會更苦。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Two minutes, then lift the bag out.",
+      "phonetic": "/tu ˈmɪnɪts ðɛn lɪft ðə bæɡ aʊt./",
+      "zh": "兩分鐘後就把茶包夾出。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Take it out by its little string.",
+      "phonetic": "/teɪk ɪt aʊt baɪ ɪts ˈlɪtəl strɪŋ./",
+      "zh": "拎著茶包的細線取出。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My tag dangles right over the side.",
+      "phonetic": "/maɪ tæɡ ˈdæŋgəlz raɪt ˈovər ðə saɪd./",
+      "zh": "我的吊牌垂在杯邊晃呢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tuck it behind the handle neatly.",
+      "phonetic": "/tʌk ɪt bɪˈhaɪnd ðə ˈhændəl ˈnitli./",
+      "zh": "整齊地塞到杯耳後面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This black mug looks very dark.",
+      "phonetic": "/ðɪs blæk mʌɡ lʊks ˈvɛri dɑrk./",
+      "zh": "這杯紅茶顏色好深。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Strong enough to wake the whole house.",
+      "phonetic": "/strɔŋ ɪˈnʌf tə weɪk ðə hol haʊs./",
+      "zh": "濃到能叫醒整棟房子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Maybe no black tea at night.",
+      "phonetic": "/ˈmeɪbi noʊ blæk ti æt naɪt./",
+      "zh": "也許晚上不該喝紅茶。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Chamomile is the bedtime choice.",
+      "phonetic": "/kəˈmil ɪz ðə ˈbɛdˌtaɪm tʃɔɪs./",
+      "zh": "睡前該選洋甘菊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Save these leaves for a second brew.",
+      "phonetic": "/seɪv ðiz livz fər ə ˈsɛkənd bru./",
+      "zh": "這些茶葉留著泡第二回。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They still smell full of flavor.",
+      "phonetic": "/ðeɪ stɪl smɛl fʊl ʌv ˈfleɪvər./",
+      "zh": "葉底還香得很呢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How do you take your tea?",
+      "phonetic": "/haʊ du ju teɪk jʊr ti?/",
+      "zh": "你的茶要加點什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Plain, just the way it is.",
+      "phonetic": "/pleɪn dʒʌst ðə weɪ ɪt ɪz./",
+      "zh": "原味就好，什麼都不加。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I'll stir in a spoon of honey.",
+      "phonetic": "/aɪl stɜr ɪn ə spun ʌv ˈhʌni./",
+      "zh": "我要加一勺蜂蜜攪勻。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Honey suits green tea nicely.",
+      "phonetic": "/ˈhʌni suɪts grin ti ˈnaɪsli./",
+      "zh": "蜂蜜跟綠茶很對味。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This honey lid is stuck tight.",
+      "phonetic": "/ðɪs ˈhʌni lɪd ɪz stʌk taɪt./",
+      "zh": "蜂蜜罐的蓋子黏住了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Run warm water over the edge.",
+      "phonetic": "/rʌn wɔrm ˈwɔtər ˈovər ði ɛdʒ./",
+      "zh": "用溫水沖一下邊緣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That trick worked in one second.",
+      "phonetic": "/ðæt trɪk wɜrkt ɪn wʌn ˈsɛkənd./",
+      "zh": "這招一秒就見效。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Honey always behaves like that.",
+      "phonetic": "/ˈhʌni ˈɔlweɪz bɪˈheɪvz laɪk ðæt./",
+      "zh": "蜂蜜就是這個脾氣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Drizzle the honey in a spiral.",
+      "phonetic": "/ˈdrɪzəl ðə ˈhʌni ɪn ə ˈspaɪrəl./",
+      "zh": "把蜂蜜繞著圈淋下去。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It looks like drawing on tea.",
+      "phonetic": "/ɪt lʊks laɪk ˈdrɔɪŋ ɑn ti./",
+      "zh": "像在茶麵上畫花。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Stir it very slowly now.",
+      "phonetic": "/stɜr ɪt ˈvɛri ˈsloʊli naʊ./",
+      "zh": "現在慢慢攪一下就好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The honey sinks, then melts away.",
+      "phonetic": "/ðə ˈhʌni sɪŋks ðɛn mɛlts əˈweɪ./",
+      "zh": "蜂蜜先沉底，再化開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Would you like some milk?",
+      "phonetic": "/wʊd ju laɪk sʌm mɪlk?/",
+      "zh": "你要不要加點牛奶？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Milk goes better with black tea.",
+      "phonetic": "/mɪlk goʊz ˈbɛtər wɪð blæk ti./",
+      "zh": "牛奶配紅茶更合。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I warm the milk first?",
+      "phonetic": "/ʃʊd aɪ wɔrm ðə mɪlk fɜrst?/",
+      "zh": "牛奶要先加熱嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A splash of cold milk is fine.",
+      "phonetic": "/ə splæʃ ʌv kod mɪlk ɪz faɪn./",
+      "zh": "淋一點冷牛奶就夠了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I'll add one to my black tea.",
+      "phonetic": "/aɪl æd wʌn tə maɪ blæk ti./",
+      "zh": "我這杯紅茶加一點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pour it close to the rim.",
+      "phonetic": "/pɔr ɪt kloʊs tə ðə rɪm./",
+      "zh": "沿著杯緣倒進去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It's curling into white clouds right now.",
+      "phonetic": "/ɪts ˈkɜrlɪŋ ˈɪntu waɪt klaʊdz raɪt naʊ./",
+      "zh": "它在茶裡捲成一朵朵白雲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just like the tea houses do.",
+      "phonetic": "/dʒʌst laɪk ðə ti haʊzɪz du./",
+      "zh": "跟茶館裡的畫面一模一樣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now it looks like café tea.",
+      "phonetic": "/naʊ ɪt lʊks laɪk kæˈfeɪ ti./",
+      "zh": "看起來像咖啡廳的茶。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "But ours tastes better, for sure.",
+      "phonetic": "/bʌt aʊəz teɪsts ˈbɛtər fər ʃʊr./",
+      "zh": "不過我們的肯定更好喝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How about sugar in your tea?",
+      "phonetic": "/haʊ əˈbaʊt ˈʃʊgər ɪn jʊr ti?/",
+      "zh": "你的茶要加點糖嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One cube only, thank you kindly.",
+      "phonetic": "/wʌn kjub ˈonli θæŋk ju ˈkaɪndli./",
+      "zh": "一塊就好，謝謝你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That cube is dissolving so fast.",
+      "phonetic": "/ðæt kjub ɪz dɪˈzɑlvɪŋ soʊ fæst./",
+      "zh": "你那方糖一下就化了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One stir and it's completely done.",
+      "phonetic": "/wʌn stɜr ənd ɪts kəmˈplitli dʌn./",
+      "zh": "攪一下就好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Oops, did you drop your spoon?",
+      "phonetic": "/ʊps dɪd ju drɑp jʊr spun?/",
+      "zh": "哎喲，你的勺子掉了？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it's swimming under the tea.",
+      "phonetic": "/jɛs ɪts ˈswɪmɪŋ ˈʌndər ðə ti./",
+      "zh": "對，它在茶底游水呢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Fish it out with the other spoon.",
+      "phonetic": "/fɪʃ ɪt aʊt wɪð ði ˈʌðər spun./",
+      "zh": "用另一支勺把它撈出來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rescued, pardon the little mess.",
+      "phonetic": "/rɪˈskjuːd ˈpɑrdən ðə ˈlɪtəl mɛs./",
+      "zh": "撈起來了，不好意思灑了一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hey, there's lemon in your cup!",
+      "phonetic": "/heɪ ðɛrz ˈlɛmən ɪn jʊr kʌp!/",
+      "zh": "咦，你杯子裡怎麼有檸檬！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I sneaked a slice, like a tiny sun.",
+      "phonetic": "/aɪ snikt ə slaɪs laɪk ə ˈtaɪni sʌn./",
+      "zh": "我偷偷加了一片，像顆小太陽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's taste the very first cup.",
+      "phonetic": "/lɛts teɪst ðə ˈvɛri fɜrst kʌp./",
+      "zh": "來嚐嚐第一杯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Careful, it's still very hot.",
+      "phonetic": "/ˈkɛrfəl ɪts stɪl ˈvɛri hɑt./",
+      "zh": "小心，還燙得很。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I took one small sip, oops.",
+      "phonetic": "/aɪ tʊk wʌn smɔl sɪp ʊps./",
+      "zh": "我小小喝了一口，哎呀。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Did it burn your tongue a bit?",
+      "phonetic": "/dɪd ɪt bɜrn jʊr tʌŋ ə bɪt?/",
+      "zh": "舌頭燙到了吧？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Just a tiny pinch of heat.",
+      "phonetic": "/dʒʌst ə ˈtaɪni pɪntʃ ʌv hit./",
+      "zh": "只有一點點燙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Blow on the cup before sipping.",
+      "phonetic": "/bloʊ ɑn ðə kʌp bɪˈfɔr ˈsɪpɪŋ./",
+      "zh": "喝之前先對杯子吹吹。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The steam dances when I blow.",
+      "phonetic": "/ðə stim ˈdænsɪz wɛn aɪ bloʊ./",
+      "zh": "我一吹蒸氣就跳舞。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Now this sip feels just right.",
+      "phonetic": "/naʊ ðɪs sɪp filz dʒʌst raɪt./",
+      "zh": "這口溫度剛剛好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The warm tea slides down slowly.",
+      "phonetic": "/ðə wɔrm ti slaɪdz daʊn ˈsloʊli./",
+      "zh": "溫熱的茶湯慢慢滑下喉嚨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It hugs me from the inside.",
+      "phonetic": "/ɪt hʌgz mi frʌm ði ɪnˈsaɪd./",
+      "zh": "像從裡面輕輕抱了我一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the tea taste sweet to you?",
+      "phonetic": "/dʊz ðə ti teɪst swit tə ju?/",
+      "zh": "你覺得茶是甜的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the honey works so softly.",
+      "phonetic": "/jɛs ðə ˈhʌni wɜrks soʊ ˈsɔftli./",
+      "zh": "嗯，蜂蜜甜得好溫柔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I taste flowers, maybe grass too.",
+      "phonetic": "/aɪ teɪst ˈflaʊərz ˈmeɪbi græs tu./",
+      "zh": "我喝到花香，還有草香。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's the spring inside the leaves.",
+      "phonetic": "/ðæz ðə prɪŋ ɪnˈsaɪd ðə livz./",
+      "zh": "那就是葉子裡的春天。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Some teas leave a cool feeling.",
+      "phonetic": "/sʌm tiz liv ə kul ˈfilɪŋ./",
+      "zh": "有些茶喝完整個人涼涼的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Green tea does, right in the throat.",
+      "phonetic": "/grin ti dʌz raɪt ɪn ðə θroʊt./",
+      "zh": "綠茶就是，喉嚨特別明顯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is my cup a little too bitter?",
+      "phonetic": "/ɪz maɪ kʌp ə ˈlɪtəl tu ˈbɪtər?/",
+      "zh": "我這杯是不是有點苦？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Add two drops of hot water.",
+      "phonetic": "/æd tu drɑps ʌv hɑt ˈwɔtər./",
+      "zh": "滴兩滴熱水進去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Much better, the sharpness is gone.",
+      "phonetic": "/mʌtʃ ˈbɛtər ðə ˈʃɑrpnɪs ɪz gɔn./",
+      "zh": "好多啦，尖銳的苦味不見了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "See? Almost every pot is fixable.",
+      "phonetic": "/si ˈɔlmoʊst ˈɛvri pɑt ɪz ˈfɪksəbəl./",
+      "zh": "看見沒？大部分的茶都能救。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What if I brew it too strong?",
+      "phonetic": "/wʌt ɪf aɪ bru ɪt tu strɔŋ?/",
+      "zh": "要是泡太濃怎麼辦？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "More hot water, that's the cure.",
+      "phonetic": "/mɔr hɑt ˈwɔtər ðæz ðə kjʊr./",
+      "zh": "多加熱水就是解方。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So we can rescue any tea.",
+      "phonetic": "/soʊ wi kæn ˈrɛskju ˈɛni ti./",
+      "zh": "所以什麼茶都救得回來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Even grandma nodded at that rule.",
+      "phonetic": "/ˈivən ˈgrænmɑ ˈnɑdəd æt ðæt rul./",
+      "zh": "連奶奶都同意這條規矩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wrap your hands round the warm cup.",
+      "phonetic": "/ræp jʊr hændz raʊnd ðə wɔrm kʌp./",
+      "zh": "兩手圍住溫熱的杯子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It feels like a pocket heater.",
+      "phonetic": "/ɪt filz laɪk ə ˈpɑkɪt ˈhitər./",
+      "zh": "像個暖暖的隨身小爐子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hold it while you look outside.",
+      "phonetic": "/hoʊld ɪt hwaɪl ju lʊk ˈaʊtsaɪd./",
+      "zh": "捧著杯子看看窗外。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rain began tapping the window.",
+      "phonetic": "/reɪn bɪˈgæn ˈtæpɪŋ ðə ˈwɪndo./",
+      "zh": "雨開始輕敲窗戶了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Perfect weather for a tea day.",
+      "phonetic": "/ˈpɜrfɪkt ˈwɛðər fər ə ti deɪ./",
+      "zh": "這天氣根本是喝茶日。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The kettle can stay busy tonight.",
+      "phonetic": "/ðə ˈkɛtl kæn steɪ ˈbɪzi təˈnaɪt./",
+      "zh": "今晚水壺有的忙了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Shall we move to the soft sofa?",
+      "phonetic": "/ʃɑl wi muv tə ðə sɔft ˈsoʊfə?/",
+      "zh": "我們端去沙發那兒好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, carry the cups on the tray.",
+      "phonetic": "/jɛs ˈkæri ðə kʌps ɑn ðə treɪ./",
+      "zh": "好啊，用托盤端過去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Careful, the tray is a bit slippery.",
+      "phonetic": "/ˈkɛrfəl ðə treɪ ɪz ə bɪt ˈslɪpəri./",
+      "zh": "小心，托盤有點滑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'll walk slow like a penguin.",
+      "phonetic": "/aɪl wɔk sloʊ laɪk ə ˈpɛŋgwɪn./",
+      "zh": "我學企鵝慢慢走。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you spill any tea on the way?",
+      "phonetic": "/dɪd ju spɪl ˈɛni ti ɑn ðə weɪ?/",
+      "zh": "路上灑到茶了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only three drops, onto the cloth.",
+      "phonetic": "/ˈonli θri drɑps ˈɑntu ðə klɔθ./",
+      "zh": "只有三滴，都落在布上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Tea marks wipe off so easily.",
+      "phonetic": "/ti mɑrks waɪp ɔf soʊ ˈizəli./",
+      "zh": "茶漬很好擦。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'll dry the wooden tray right now.",
+      "phonetic": "/aɪl draɪ ðə ˈwʊdən treɪ raɪt naʊ./",
+      "zh": "我這就把木盤擦乾。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This sofa corner is your favorite.",
+      "phonetic": "/ðɪs ˈsoʊfə ˈkɔrnər ɪz jʊr ˈfeɪvərɪt./",
+      "zh": "沙發這個角落是你最愛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You remembered, that's very sweet.",
+      "phonetic": "/ju rɪˈmɛmbərd ðæts ˈvɛri swit./",
+      "zh": "你還記得，真貼心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's watch the steam rise up.",
+      "phonetic": "/lɛts wɑtʃ ðə stim raɪz ʌp./",
+      "zh": "看著熱氣往上升好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It curls and vanishes, every time.",
+      "phonetic": "/ɪt kɜrlz ənd ˈvænɪʃɪz ˈɛvri taɪm./",
+      "zh": "它捲一捲就消失了，每次都這樣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does home tea taste better than shops?",
+      "phonetic": "/dʊz hoʊm ti teɪst ˈbɛtər ðæn ʃɑps?/",
+      "zh": "家裡的茶比外面的好喝嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Much better, and nobody rushes us.",
+      "phonetic": "/mʌtʃ ˈbɛtər ənd ˈnoʊbədi ˈrʌʃɪz ʌs./",
+      "zh": "好多了，也沒有人在趕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A café charges so much more.",
+      "phonetic": "/ə kæˈfeɪ ˈtʃɑrdʒɪz soʊ mʌtʃ mɔr./",
+      "zh": "咖啡廳一杯要貴好多。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ours is fresher, made with care.",
+      "phonetic": "/aʊərz ɪz ˈfrɛʃər meɪd wɪð kɛr./",
+      "zh": "我們的新鮮又用心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Quiet rules apply at tea time.",
+      "phonetic": "/ˈkwaɪət rulz əˈplaɪ æt ti taɪm./",
+      "zh": "喝茶時間有安靜公約。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only small sips and softer talk.",
+      "phonetic": "/ˈonli smɔl sɪps ənd ˈsɔfər tɔk./",
+      "zh": "只有小口茶和輕聲話。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "No phones for this one hour?",
+      "phonetic": "/noʊ foʊnz fər ðɪs wʌn ˈaʊər?/",
+      "zh": "這一個小時不看手機？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I left mine in the other room.",
+      "phonetic": "/aɪ lɛft maɪn ɪn ði ˈʌðər rum./",
+      "zh": "我的放在別的房間了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Nothing beats this quiet hour.",
+      "phonetic": "/ˈnʌθɪŋ bits ðɪs ˈkwaɪət ˈaʊər./",
+      "zh": "沒有比這一刻更享受的了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same here, everything feels slower.",
+      "phonetic": "/seɪm hɪr ˈɛvriθɪŋ filz ˈsloʊər./",
+      "zh": "我也是，整個人都慢下來了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are your taste buds awake now?",
+      "phonetic": "/ɑr jʊr teɪst bʌdz əˈweɪk naʊ?/",
+      "zh": "你的味蕾清醒了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fully awake, thank you very much.",
+      "phonetic": "/ˈfʊli əˈweɪk θæŋk ju ˈvɛri mʌtʃ./",
+      "zh": "完全醒了，太謝謝了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "More honey for the next round?",
+      "phonetic": "/mɔr ˈhʌni fər ðə nɛkst raʊnd?/",
+      "zh": "下一輪要多加蜂蜜嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let's finish this cup first, slowly.",
+      "phonetic": "/lɛts ˈfɪnɪʃ ðɪs kʌp fɜrst ˈsloʊli./",
+      "zh": "先專心把這杯喝完吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Always sip from the same side.",
+      "phonetic": "/ˈɔlweɪz sɪp frʌm ðə seɪm saɪd./",
+      "zh": "喝要固定從同一側。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Why does the side matter so much?",
+      "phonetic": "/waɪ dʊz ðə saɪd ˈmætər soʊ mʌtʃ?/",
+      "zh": "為什麼固定一側？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Grandma said it keeps your luck.",
+      "phonetic": "/ˈgrænmɑ sɛd ɪt kips jʊr lʌk./",
+      "zh": "奶奶說這樣福氣不漏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then I'll guard my cup's good side.",
+      "phonetic": "/ðɛn aɪl gɑrd maɪ kʌps ɡʊd saɪd./",
+      "zh": "那我可得守好我杯子的好面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your blue mug really suits you.",
+      "phonetic": "/jʊr blu mʌɡ ˈrɪli suɪts ju./",
+      "zh": "那個藍杯子真適合你。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It matches my sleepy, happy eyes.",
+      "phonetic": "/ɪt ˈmætʃɪz maɪ ˈslipi ˈhæpi aɪz./",
+      "zh": "跟我昏昏欲睡的眼睛剛剛好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The whole kitchen smells like tea.",
+      "phonetic": "/ðə hol ˈkɪtʃɪn smɛls laɪk ti./",
+      "zh": "整個廚房都是茶香。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It's soaked right into my sweater.",
+      "phonetic": "/ɪts soʊkt raɪt ˈɪntu maɪ ˈswɛtər./",
+      "zh": "連我的毛衣都泡入味了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your cup looks nearly empty now.",
+      "phonetic": "/jʊr kʌp lʊks ˈnɪrli ˈɛmpti naʊ./",
+      "zh": "你杯子快見底了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I drank it all without noticing.",
+      "phonetic": "/aɪ dræŋk ɪt ɔl wɪˈðaʊt ˈnoʊtɪsɪŋ./",
+      "zh": "我一不留神就喝光了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Shall we start the second pot?",
+      "phonetic": "/ʃɑl wi stɑrt ðə ˈsɛkənd pɑt?/",
+      "zh": "開第二壺好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The leaves are resting just a minute.",
+      "phonetic": "/ðə livz ɑr ˈrɛstɪŋ dʒʌst ə ˈmɪnɪt./",
+      "zh": "讓茶葉先休息一小會兒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The same leaves can brew again.",
+      "phonetic": "/ðə seɪm livz kæn bru əˈgɛn./",
+      "zh": "同一壺葉子還能再泡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Really? I thought one round was it.",
+      "phonetic": "/ˈrɪli aɪ θɔt wʌn raʊnd wʌz ɪt./",
+      "zh": "真的嗎？我以為泡一次就完了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Green tea gives you three rounds.",
+      "phonetic": "/grin ti gɪvz ju θri raʊndz./",
+      "zh": "綠茶可以沖泡三回。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Each round tastes a little lighter.",
+      "phonetic": "/itʃ raʊnd teɪsts ə ˈlɪtəl ˈlaɪtər./",
+      "zh": "每一泡都會再淡一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Round two likes hotter water.",
+      "phonetic": "/raʊnd tu laɪks ˈhɑtər ˈwɔtər./",
+      "zh": "第二泡要用更熱的水。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Did the sleepy leaves wake up?",
+      "phonetic": "/dɪd ðə ˈslipi livz weɪk ʌp?/",
+      "zh": "慵懶的葉子醒過來了嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Pour, and steep just two minutes.",
+      "phonetic": "/pɔr ənd stip dʒʌst tu ˈmɪnɪts./",
+      "zh": "注水後再悶兩分鐘。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "This cup feels softer, more honeyed.",
+      "phonetic": "/ðɪs kʌp filz ˈsɔftər mɔr ˈhʌnɪd./",
+      "zh": "這杯更圓潤，還帶蜜感。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That sweetness comes from waiting.",
+      "phonetic": "/ðæt ˈswitnəs kʌmz frʌm ˈweɪtɪŋ./",
+      "zh": "那份甘甜是等出來的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So slow really is better here.",
+      "phonetic": "/soʊ sloʊ ˈrɪli ɪz ˈbɛtər hɪr./",
+      "zh": "原來慢才是真的有道理。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Fill your cup one more time.",
+      "phonetic": "/fɪl jʊr kʌp wʌn mɔr taɪm./",
+      "zh": "再幫你續一次杯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just halfway, let's keep the rest.",
+      "phonetic": "/dʒʌst ˈhæfˌweɪ lɛts kip ðə rɛst./",
+      "zh": "倒一半就好，留著慢慢喝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do we use all the tea tonight?",
+      "phonetic": "/du wi juz ɔl ðə ti təˈnaɪt?/",
+      "zh": "今晚要把茶全部用完嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, save some leaves for tomorrow.",
+      "phonetic": "/noʊ seɪv sʌm livz fər təˈmɑroʊ./",
+      "zh": "不，留些葉子明天泡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where do wet tea leaves go?",
+      "phonetic": "/wɛr du wɛt ti livz goʊ?/",
+      "zh": "濕茶葉最後去哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Grandma buried them in her garden.",
+      "phonetic": "/ˈgrænmɑ ˈbɛrid ðɛm ɪn hɜr ˈgɑrdən./",
+      "zh": "奶奶把它們埋進花園。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do tea leaves really help the soil?",
+      "phonetic": "/du ti livz ˈrɪli hɛlp ðə sɔɪl?/",
+      "zh": "茶葉真的能養土嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Every used leaf fed her flowers.",
+      "phonetic": "/ˈɛvri juzd lif fɛd hər ˈflaʊərz./",
+      "zh": "她泡過的每片葉子都拿去餵了花。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The third steep is the palest.",
+      "phonetic": "/ðə θɜrd stip ɪz ðə ˈpeɪləst./",
+      "zh": "第三泡顏色最淺。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It tastes like warm flower water.",
+      "phonetic": "/ɪt teɪsts laɪk wɔrm ˈflaʊər ˈwɔtər./",
+      "zh": "喝起來像溫溫的花水。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Maybe that light one is best.",
+      "phonetic": "/ˈmeɪbi ðæt laɪt wʌn ɪz bɛst./",
+      "zh": "說不定最淡的反最好喝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So gentle, so clean, so calm.",
+      "phonetic": "/soʊ ˈdʒɛntəl soʊ klin soʊ kɑm./",
+      "zh": "那麼溫柔、乾淨、安穩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This wool cover is a tea cozy.",
+      "phonetic": "/ðɪs wʊl ˈkʌvər ɪz ə ti ˈkoʊzi./",
+      "zh": "這毛套是茶壺保溫罩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It looks exactly like a hat.",
+      "phonetic": "/ɪt lʊks ɪɡˈzæktli laɪk ə hæt./",
+      "zh": "它看起來根本就是一頂帽子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It really is a knitted pot hat.",
+      "phonetic": "/ɪt ˈrɪli ɪz ə ˈnɪtɪd pɑt hæt./",
+      "zh": "它真的是織給壺戴的帽。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then let the pot wear it warmly.",
+      "phonetic": "/ðɛn lɛt ðə pɑt wɛr ɪt ˈwɔrmli./",
+      "zh": "那就請壺好好戴著吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pot sits snug inside the cozy.",
+      "phonetic": "/ðə pɑt sɪts snʌg ɪnˈsaɪd ðə ˈkoʊzi./",
+      "zh": "茶壺暖暖地窩在罩裡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A little steam escapes from the spout.",
+      "phonetic": "/ə ˈlɪtəl stim ɪˈskeɪps frʌm ðə spaʊt./",
+      "zh": "壺嘴還溜出一絲絲白氣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Shall we top up the kettle?",
+      "phonetic": "/ʃɑl wi tɑp ʌp ðə ˈkɛtl?/",
+      "zh": "水壺要再續燒嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One more round, then bedtime.",
+      "phonetic": "/wʌn mɔr raʊnd ðɛn ˈbɛdˌtaɪm./",
+      "zh": "再一輪，然後就睡覺。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kettle hums and starts boiling.",
+      "phonetic": "/ðə ˈkɛtl hʌmz ənd stɑrts ˈbɔɪlɪŋ./",
+      "zh": "水壺嗡一聲又燒開了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'll carry it, you just sit.",
+      "phonetic": "/aɪl ˈkæri ɪt ju dʒʌst sɪt./",
+      "zh": "我來端壺，你坐著就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You're a wonderful tea helper.",
+      "phonetic": "/jʊr ə ˈwʌndərfəl ti ˈhɛlpər./",
+      "zh": "你是超棒的泡茶小助手。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I want to learn every single step.",
+      "phonetic": "/aɪ wɔnt tə lɜrn ˈɛvri ˈsɪŋgəl stɛp./",
+      "zh": "每一步我都想學會。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tray has cookie crumbs now.",
+      "phonetic": "/ðə treɪ hæz ˈkʊki krʌmz naʊ./",
+      "zh": "托盤上現在有餅乾屑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "From the cookies beside our cups.",
+      "phonetic": "/frʌm ðə ˈkʊkiz bəˈsaɪd ˈaʊər kʌps./",
+      "zh": "是杯子旁那碟餅乾掉的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Cookies really do belong with tea.",
+      "phonetic": "/ˈkʊkiz ˈrɪli du bɪˈlɔŋ wɪð ti./",
+      "zh": "餅乾本來就該配茶。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Even grandma kept a jar of them.",
+      "phonetic": "/ˈivən ˈgrænmɑ kɛpt ə dʒɑr ʌv ðɛm./",
+      "zh": "奶奶也總存一罐餅乾。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you finish your whole cup?",
+      "phonetic": "/dɪd ju ˈfɪnɪʃ jʊr hoʊl kʌp?/",
+      "zh": "你整杯都喝完啦？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Down to the very last drop.",
+      "phonetic": "/daʊn tə ðə ˈvɛri læst drɑp./",
+      "zh": "一滴不剩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Leave the damp grounds for plants.",
+      "phonetic": "/liv ðə dæmp graʊndz fər plænts./",
+      "zh": "濕茶渣留給植物當養分。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, I hate wasting anything.",
+      "phonetic": "/ɡʊd aɪ heɪt ˈweɪstɪŋ ˈɛniθɪŋ./",
+      "zh": "好，我最怕浪費東西。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Rinse the pot with warm water.",
+      "phonetic": "/rɪns ðə pɑt wɪð wɔrm ˈwɔtər./",
+      "zh": "用溫水洗一洗茶壺。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No soap, I remember the rule.",
+      "phonetic": "/noʊ soʊp aɪ rɪˈmɛmbər ðə rul./",
+      "zh": "不用洗潔精，我記得規矩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pot keeps a tea memory.",
+      "phonetic": "/ðə pɑt kips ə ti ˈmɛməri./",
+      "zh": "壺會記住茶的味道。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So each brew tastes a bit deeper.",
+      "phonetic": "/soʊ itʃ bru teɪsts ə bɪt ˈdipər./",
+      "zh": "所以越泡越有層次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Cups go into the dishwasher.",
+      "phonetic": "/kʌps goʊ ˈɪntə ðə ˈdɪʃˌwɑʃər./",
+      "zh": "杯子放進洗碗機。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "But not your favorite blue mug.",
+      "phonetic": "/bʌt nɑt jʊr ˈfeɪvərɪt blu mʌɡ./",
+      "zh": "但你那只藍杯子不行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Painted mugs need gentle hand washing.",
+      "phonetic": "/ˈpeɪntɪd mʌgz nid ˈdʒɛntəl hænd ˈwɑʃɪŋ./",
+      "zh": "有彩繪的馬克杯要手洗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It dries here on the towel line.",
+      "phonetic": "/ɪt draɪz hɪr ɑn ðə ˈtaʊəl laɪn./",
+      "zh": "它就晾在這條毛巾繩上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Close the tin lids very tight.",
+      "phonetic": "/kloʊz ðə tɪn lɪdz ˈvɛri taɪt./",
+      "zh": "把茶罐蓋子蓋緊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Air makes the leaves go stale.",
+      "phonetic": "/ɛr meɪks ðə livz goʊ steɪl./",
+      "zh": "空氣會讓茶葉走味。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The green jar waits in the cupboard.",
+      "phonetic": "/ðə grin dʒɑr weɪts ɪn ðə ˈkʌbərd./",
+      "zh": "綠茶罐放回櫃子裡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Dark and cool keep the flavor fresh.",
+      "phonetic": "/dɑrk ənd kul kip ðə ˈfleɪvər frɛʃ./",
+      "zh": "陰涼處能鎖住鮮香。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where does the honey jar go?",
+      "phonetic": "/wɛr dʌz ðə ˈhʌni dʒɑr goʊ?/",
+      "zh": "蜂蜜罐該放回哪？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Back on the middle shelf, done.",
+      "phonetic": "/bæk ɑn ðə ˈmɪdəl ʃɛlf dʌn./",
+      "zh": "中間那層，放好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for brewing tea with me.",
+      "phonetic": "/θæŋks fər ˈbruing ti wɪð mi./",
+      "zh": "謝謝你陪我泡這壺茶。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It was my calmest hour today.",
+      "phonetic": "/ɪt wʌz maɪ ˈkɑlmɪst ˈaʊər təˈdeɪ./",
+      "zh": "這是今天我最放鬆的一小時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Same tea time tomorrow evening?",
+      "phonetic": "/seɪm ti taɪm təˈmɑroʊ ˈivnɪŋ?/",
+      "zh": "明天傍晚同一時間？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, I'll set the kettle out early.",
+      "phonetic": "/jɛs aɪl sɛt ðə ˈkɛtl aʊt ˈɜrli./",
+      "zh": "好，我早點把壺擺出來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which tea is next on our list?",
+      "phonetic": "/wɪtʃ ti ɪz nɛkst ɑn ˈaʊər lɪst?/",
+      "zh": "清單上下一個喝哪種？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The oolong my aunt gave us.",
+      "phonetic": "/ðə ˈulɔŋ maɪ ænt geɪv ʌs./",
+      "zh": "就阿姨送的烏龍。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We should write the steps down.",
+      "phonetic": "/wi ʃʊd raɪt ðə stɛps daʊn./",
+      "zh": "我們該把步驟寫下來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So others can learn our little ritual.",
+      "phonetic": "/soʊ ˈʌðərz kæn lɜrn ˈaʊər ˈlɪtəl ˈrɪtʃuəl./",
+      "zh": "讓別人也能學會我們這個小儀式。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Boil, cool, warm the cups first.",
+      "phonetic": "/bɔɪl kul wɔrm ðə kʌps fɜrst./",
+      "zh": "燒水、放溫、先溫杯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Measure, pour, wait, then share.",
+      "phonetic": "/ˈmɛʒər pɔr weɪt ðɛn ʃɛr./",
+      "zh": "量茶、注水、等待、分享。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That list reads like a small poem.",
+      "phonetic": "/ðæt lɪst ridz laɪk ə smɔl ˈpoʊəm./",
+      "zh": "這步驟讀起來像首小詩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tape it beside the blue tea box.",
+      "phonetic": "/teɪp ɪt bəˈsaɪd ðə blu ti bɑks./",
+      "zh": "貼在那個藍茶盒旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Grandma would smile at all this.",
+      "phonetic": "/ˈgrænmɑ wʊd smaɪl æt ɔl ðɪs./",
+      "zh": "奶奶看到這一切會微笑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She'd taste our pot and quietly nod.",
+      "phonetic": "/ʃʊd teɪst ˈaʊər pɑt ənd ˈkwaɪətli nɑd./",
+      "zh": "嚐一口我們的茶，默默點頭。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do your hands feel warmer now?",
+      "phonetic": "/du jʊr hændz fil ˈwɔmər naʊ?/",
+      "zh": "你的手現在暖起來了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The tea finished its quiet job.",
+      "phonetic": "/ðə ti ˈfɪnɪʃt ɪts ˈkwaɪət dʒɑb./",
+      "zh": "茶已經悄悄完成任務了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Green tea might keep us awake.",
+      "phonetic": "/grin ti maɪt kip ʌs əˈweɪk./",
+      "zh": "綠茶也許會讓我們睡不著。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So chamomile owns tonight's last cup.",
+      "phonetic": "/soʊ kəˈmil oʊnz təˈnaɪts læst kʌp./",
+      "zh": "那今晚最後一杯交給洋甘菊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A sleepy tea for a sleepy house.",
+      "phonetic": "/ə ˈslipi ti fər ə ˈslipi haʊs./",
+      "zh": "一壺睏茶，配一屋子的睏意。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My eyes agree with that plan.",
+      "phonetic": "/maɪ aɪz əˈgri wɪð ðæt plæn./",
+      "zh": "我的雙眼完全同意。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The window glass is all fogged.",
+      "phonetic": "/ðə ˈwɪndo glæs ɪz ɔl fɔgd./",
+      "zh": "窗玻璃全蒙上一層霧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "From our tea steam and soft talk.",
+      "phonetic": "/frʌm ˈaʊər ti stim ənd sɔft tɔk./",
+      "zh": "都是我們的茶氣和細語。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Cold rain, warm tea, cozy home.",
+      "phonetic": "/kold reɪn wɔrm ti ˈkoʊzi hoʊm./",
+      "zh": "冷雨、熱茶、溫暖的家。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nothing on earth beats that trio.",
+      "phonetic": "/ˈnʌθɪŋ ɑn ɜrt bits ðæt triˈoʊ./",
+      "zh": "人間沒有比這更好的三件套。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I could drink tea all season.",
+      "phonetic": "/aɪ kʊd drɪŋk ti ɔl ˈsizən./",
+      "zh": "整個季節我都能這樣喝茶。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Every gray morning, every blue night.",
+      "phonetic": "/ˈɛvri greɪ ˈmɔrnɪŋ ˈɛvri blu naɪt./",
+      "zh": "每個灰濛的清晨，每個靜藍的夜晚。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Tea time feels like a mini holiday.",
+      "phonetic": "/ti taɪm filz laɪk ə ˈmɪni ˈhɑləˌdeɪ./",
+      "zh": "喝茶時光像個小假期。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And the kettle is our plane ticket.",
+      "phonetic": "/ənd ðə ˈkɛtl ɪz ˈaʊər pleɪn ˈtɪkɪt./",
+      "zh": "水壺就是我們的機票。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Cupboards closed, counters nice and dry.",
+      "phonetic": "/ˈkʌbərdz kloʊzd ˈkaʊntərz naɪs ənd draɪ./",
+      "zh": "櫃子關好，台面擦乾。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The kitchen looks peaceful again.",
+      "phonetic": "/ðə ˈkɪtʃɪn lʊks ˈpisfəl əˈgɛn./",
+      "zh": "廚房又回復安靜整潔了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You did most of the lovely work.",
+      "phonetic": "/ju dɪd moʊst ʌv ðə ˈlʌvli wɜrk./",
+      "zh": "最美好的那些都是你做的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You poured, remember? Team effort.",
+      "phonetic": "/ju pɔrd rɪˈmɛmbər tim ˈɛfərt./",
+      "zh": "倒茶的是你呀，我們合作的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's leave the tray till morning.",
+      "phonetic": "/lɛts liv ðə treɪ tɪl ˈmɔrnɪŋ./",
+      "zh": "托盤留到早上再收吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, we clean it while it's fresh.",
+      "phonetic": "/noʊ wi klin ɪt hwaɪl ɪts frɛʃ./",
+      "zh": "不，趁現在還乾淨先收。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One last shared sip to end it?",
+      "phonetic": "/wʌn læst ʃɛrd sɪp tə ɛnd ɪt?/",
+      "zh": "最後共飲一口收尾？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cheers to our little tea party.",
+      "phonetic": "/tʃɪrz tə ˈaʊər ˈlɪtəl ti ˈpɑrti./",
+      "zh": "為我們的小茶會乾杯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Cheers, we brewed it just right.",
+      "phonetic": "/tʃɪrz wi bru ɪt dʒʌst raɪt./",
+      "zh": "乾杯，這壺泡得剛剛好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same leaves, same calm, same us.",
+      "phonetic": "/seɪm livz seɪm kɑm seɪm ʌs./",
+      "zh": "一樣的茶葉，一樣的從容，一樣是我們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Time to say good night now.",
+      "phonetic": "/taɪm tə seɪ ɡʊd naɪt naʊ./",
+      "zh": "該說晚安的時候到了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good night, and steep something gentle.",
+      "phonetic": "/ɡʊd naɪt ənd stip ˈsʌmθɪŋ ˈdʒɛntəl./",
+      "zh": "晚安，去泡壺溫柔的吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Dream of green hills tonight.",
+      "phonetic": "/drim ʌv grin hɪlz təˈnaɪt./",
+      "zh": "今晚夢見青翠的茶山。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only if you dream of warm pots.",
+      "phonetic": "/ˈonli ɪf ju drim ʌv wɔrm pɑts./",
+      "zh": "那前提是你得夢見暖壺。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kettle stands empty and quiet.",
+      "phonetic": "/ðə ˈkɛtl stændz ˈɛmpti ənd ˈkwaɪət./",
+      "zh": "水壺空了，也安靜了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It waits to boil for us again.",
+      "phonetic": "/ɪt weɪts tə bɔɪl fər ʌs əˈgɛn./",
+      "zh": "它在等下一次為我們沸騰。"
+    }
+  ]
+}

@@ -1,0 +1,2458 @@
+{
+  "title": "Everyday Phrases — Joining a Meeting",
+  "title_zh": "開會",
+  "scene_zh": "開會 · 情境對話",
+  "title_quote": "The meeting starts at ten.",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】💼 實用開會必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — Joining a Meeting",
+  "youtube_description": "睡著學英文！這部影片收錄實用開會情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫），不用背，睡前聽就會。重複播放，讓英文自然進入你的大腦。👍 想學更多生活場景，請留言告訴我！別忘了訂閱+按讚。 #英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical Joining a Meeting phrase pairs (each pair: male normal speed → female slow speed → combined dialogue). No memorization needed—just listen before bed and absorb naturally. If you want more real-life scenarios, leave a comment! Subscribe and like!",
+  "youtube_tags": [
+    "英文聽力",
+    "睡前英文",
+    "開會英文",
+    "English listening",
+    "Sleep learning",
+    "A2 English",
+    "常用英文短語",
+    "零基礎英文",
+    "慢速英文",
+    "英文口語",
+    "Learn English",
+    "English for daily life",
+    "ESL",
+    "English conversation",
+    "聽英語",
+    "英文學習"
+  ],
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "Joining a Meeting",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "Joining a Meeting",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Work",
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "The meeting starts at ten.",
+      "phonetic": "/ðə ˈmitɪŋ stɑrts æt tɛn./",
+      "zh": "會議十點開始。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will dial in.",
+      "phonetic": "/aɪ wɪl daɪəl ɪn./",
+      "zh": "我撥入。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you hear me?",
+      "phonetic": "/kən ju hir mi?/",
+      "zh": "聽得到我嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Loud and clear.",
+      "phonetic": "/laʊd ənd klɪr./",
+      "zh": "清楚。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My camera is off.",
+      "phonetic": "/maɪ ˈkæmərə ɪz ɔf./",
+      "zh": "我關鏡頭。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fine, audio only.",
+      "phonetic": "/faɪn, ˈɑdiˌoʊ ˈoʊnli./",
+      "zh": "好，只用聲音。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Share your screen, please.",
+      "phonetic": "/ʃɛr jʊr skrin, pliz./",
+      "zh": "請分享畫面。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sharing now.",
+      "phonetic": "/ˈʃɛrɪŋ naʊ./",
+      "zh": "正在分享。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is the agenda?",
+      "phonetic": "/wɛr ɪz ðə əˈʤɛndə?/",
+      "zh": "議程在哪？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In the invite.",
+      "phonetic": "/ɪn ðə ˌɪnˈvaɪt./",
+      "zh": "在邀請裏。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's wait for Tom.",
+      "phonetic": "/lɛts weɪt fər tɑm./",
+      "zh": "等 Tom。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "He is running late.",
+      "phonetic": "/hi ɪz ˈrənɪŋ leɪt./",
+      "zh": "他晚到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Mute when not speaking.",
+      "phonetic": "/mjut wɪn nɑt ˈspikɪŋ./",
+      "zh": "不說話時靜音。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good house rule.",
+      "phonetic": "/gʊd haʊs rul./",
+      "zh": "好規矩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The link is in chat.",
+      "phonetic": "/ðə lɪŋk ɪz ɪn ʧæt./",
+      "zh": "連結在聊天室。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Joining now.",
+      "phonetic": "/ˈʤɔɪnɪŋ naʊ./",
+      "zh": "正在加入。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we record this?",
+      "phonetic": "/kən wi ˈrɛkərd ðɪs?/",
+      "zh": "能錄嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Approved by all.",
+      "phonetic": "/əˈpruvd baɪ ɔl./",
+      "zh": "大家同意。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will take notes.",
+      "phonetic": "/aɪ wɪl teɪk noʊts./",
+      "zh": "我做筆記。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thanks, send after.",
+      "phonetic": "/θæŋks, sɛnd ˈæftər./",
+      "zh": "謝，會後傳。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The audio lags.",
+      "phonetic": "/ðə ˈɑdiˌoʊ lægz./",
+      "zh": "聲音有延遲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Refresh the page.",
+      "phonetic": "/rɪˈfrɛʃ ðə peɪʤ./",
+      "zh": "刷新頁面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's table this.",
+      "phonetic": "/lɛts ˈteɪbəl ðɪs./",
+      "zh": "這個擱置。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "To next time.",
+      "phonetic": "/tɪ nɛkst taɪm./",
+      "zh": "下次再議。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Any objections?",
+      "phonetic": "/ˈɛni əˈbʤɛkʃənz?/",
+      "zh": "有反對嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "None, proceed.",
+      "phonetic": "/nən, pərˈsid./",
+      "zh": "沒有，進行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you repeat that?",
+      "phonetic": "/kən ju rɪˈpit ðət?/",
+      "zh": "能再說一次嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The Q2 goal.",
+      "phonetic": "/ðə q2* goʊl./",
+      "zh": "第二季目標。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We are over time.",
+      "phonetic": "/wi ər ˈoʊvər taɪm./",
+      "zh": "超時了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Five more minutes.",
+      "phonetic": "/faɪv mɔr ˈmɪnəts./",
+      "zh": "再五分鐘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Who is presenting?",
+      "phonetic": "/hu ɪz prɪˈzɛntɪŋ?/",
+      "zh": "誰報告？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Maria, next slide.",
+      "phonetic": "/mərˈiə, nɛkst slaɪd./",
+      "zh": "Maria，下一張。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The Wi-Fi dropped.",
+      "phonetic": "/ðə ˈwaɪˌfaɪ drɑpt./",
+      "zh": "無線斷了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Reconnecting.",
+      "phonetic": "/rikəˈnɛktɪŋ./",
+      "zh": "重連中。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's circle back.",
+      "phonetic": "/lɛts ˈsərkəl bæk./",
+      "zh": "我們回頭談。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the open item.",
+      "phonetic": "/ɔn ðə ˈoʊpən ˈaɪtəm./",
+      "zh": "未決事項。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Approve the plan?",
+      "phonetic": "/əˈpruv ðə plæn?/",
+      "zh": "通過計畫？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All in favor, yes.",
+      "phonetic": "/ɔl ɪn ˈfeɪvər, jɛs./",
+      "zh": "贊成，通過。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The room is booked.",
+      "phonetic": "/ðə rum ɪz bʊkt./",
+      "zh": "會議室訂了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In person, then.",
+      "phonetic": "/ɪn ˈpərsən, ðɛn./",
+      "zh": "那就現場。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Raise your hand, Sam.",
+      "phonetic": "/reɪz jʊr hænd, sæm./",
+      "zh": "Sam，舉手。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I have a question.",
+      "phonetic": "/aɪ hæv ə kˈwɛʃən./",
+      "zh": "我有問題。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The slide is blank.",
+      "phonetic": "/ðə slaɪd ɪz blæŋk./",
+      "zh": "投影片空白。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Press play, please.",
+      "phonetic": "/prɛs pleɪ, pliz./",
+      "zh": "按播放。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We lost the call.",
+      "phonetic": "/wi lɔst ðə kɔl./",
+      "zh": "通話斷了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Redial the line.",
+      "phonetic": "/riˈdaɪəl ðə laɪn./",
+      "zh": "重撥。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's set action items.",
+      "phonetic": "/lɛts sɛt ˈækʃən ˈaɪtəmz./",
+      "zh": "列行動項。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will track them.",
+      "phonetic": "/aɪ wɪl træk ðɛm./",
+      "zh": "我來追蹤。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The decision is made.",
+      "phonetic": "/ðə dɪˈsɪʒən ɪz meɪd./",
+      "zh": "決定了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Communicate it out.",
+      "phonetic": "/kəmˈjunəˌkeɪt ɪt aʊt./",
+      "zh": "傳達出去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we end early?",
+      "phonetic": "/kən wi ɛnd ˈərli?/",
+      "zh": "能提早結束嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "If no more points.",
+      "phonetic": "/ɪf noʊ mɔr pɔɪnts./",
+      "zh": "沒議題就行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thank you, everyone.",
+      "phonetic": "/θæŋk ju, ˈɛvriˌwən./",
+      "zh": "謝謝大家。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great session.",
+      "phonetic": "/greɪt ˈsɛʃən./",
+      "zh": "很好的會。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The minute is noted.",
+      "phonetic": "/ðə ˈmɪnət ɪz ˈnoʊtɪd./",
+      "zh": "紀錄註記了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Circulate after.",
+      "phonetic": "/ˈsərkjəˌleɪt ˈæftər./",
+      "zh": "會後傳閱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Next meeting Thursday.",
+      "phonetic": "/nɛkst ˈmitɪŋ ˈθərzˌdeɪ./",
+      "zh": "下週四再開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same link, okay.",
+      "phonetic": "/seɪm lɪŋk, ˌoʊˈkeɪ./",
+      "zh": "同連結。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will follow up.",
+      "phonetic": "/aɪ wɪl ˈfɑloʊ əp./",
+      "zh": "我會跟進度。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "By end of week.",
+      "phonetic": "/baɪ ɛnd əv wik./",
+      "zh": "本週內。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The chat is busy.",
+      "phonetic": "/ðə ʧæt ɪz ˈbɪzi./",
+      "zh": "聊天室很熱鬧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Read after call.",
+      "phonetic": "/rɛd ˈæftər kɔl./",
+      "zh": "會後看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Mute your mic, please.",
+      "phonetic": "/mjut jʊr mɪk, pliz./",
+      "zh": "請靜音。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sorry, done.",
+      "phonetic": "/ˈsɑri, dən./",
+      "zh": "抱歉，好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We are all here.",
+      "phonetic": "/wi ər ɔl hir./",
+      "zh": "都到齊了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let's begin.",
+      "phonetic": "/lɛts bɪˈgɪn./",
+      "zh": "開始吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "See you next time.",
+      "phonetic": "/si ju nɛkst taɪm./",
+      "zh": "下次見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Take care, all.",
+      "phonetic": "/teɪk kɛr, ɔl./",
+      "zh": "保重。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "See you next time.",
+      "phonetic": "/si ju nɛkst taɪm./",
+      "zh": "下次見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Take care, all.",
+      "phonetic": "/teɪk kɛr, ɔl./",
+      "zh": "保重。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We are all here.",
+      "phonetic": "/wi ər ɔl hir./",
+      "zh": "都到齊了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let's begin.",
+      "phonetic": "/lɛts bɪˈgɪn./",
+      "zh": "開始吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Mute your mic, please.",
+      "phonetic": "/mjut jʊr mɪk, pliz./",
+      "zh": "請靜音。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sorry, done.",
+      "phonetic": "/ˈsɑri, dən./",
+      "zh": "抱歉，好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The chat is busy.",
+      "phonetic": "/ðə ʧæt ɪz ˈbɪzi./",
+      "zh": "聊天室很熱鬧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Read after call.",
+      "phonetic": "/rɛd ˈæftər kɔl./",
+      "zh": "會後看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will follow up.",
+      "phonetic": "/aɪ wɪl ˈfɑloʊ əp./",
+      "zh": "我會跟進度。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "By end of week.",
+      "phonetic": "/baɪ ɛnd əv wik./",
+      "zh": "本週內。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Next meeting Thursday.",
+      "phonetic": "/nɛkst ˈmitɪŋ ˈθərzˌdeɪ./",
+      "zh": "下週四再開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same link, okay.",
+      "phonetic": "/seɪm lɪŋk, ˌoʊˈkeɪ./",
+      "zh": "同連結。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The minute is noted.",
+      "phonetic": "/ðə ˈmɪnət ɪz ˈnoʊtɪd./",
+      "zh": "紀錄註記了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Circulate after.",
+      "phonetic": "/ˈsərkjəˌleɪt ˈæftər./",
+      "zh": "會後傳閱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thank you, everyone.",
+      "phonetic": "/θæŋk ju, ˈɛvriˌwən./",
+      "zh": "謝謝大家。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great session.",
+      "phonetic": "/greɪt ˈsɛʃən./",
+      "zh": "很好的會。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we end early?",
+      "phonetic": "/kən wi ɛnd ˈərli?/",
+      "zh": "能提早結束嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "If no more points.",
+      "phonetic": "/ɪf noʊ mɔr pɔɪnts./",
+      "zh": "沒議題就行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The decision is made.",
+      "phonetic": "/ðə dɪˈsɪʒən ɪz meɪd./",
+      "zh": "決定了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Communicate it out.",
+      "phonetic": "/kəmˈjunəˌkeɪt ɪt aʊt./",
+      "zh": "傳達出去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's set action items.",
+      "phonetic": "/lɛts sɛt ˈækʃən ˈaɪtəmz./",
+      "zh": "列行動項。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will track them.",
+      "phonetic": "/aɪ wɪl træk ðɛm./",
+      "zh": "我來追蹤。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We lost the call.",
+      "phonetic": "/wi lɔst ðə kɔl./",
+      "zh": "通話斷了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Redial the line.",
+      "phonetic": "/riˈdaɪəl ðə laɪn./",
+      "zh": "重撥。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The slide is blank.",
+      "phonetic": "/ðə slaɪd ɪz blæŋk./",
+      "zh": "投影片空白。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Press play, please.",
+      "phonetic": "/prɛs pleɪ, pliz./",
+      "zh": "按播放。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Raise your hand, Sam.",
+      "phonetic": "/reɪz jʊr hænd, sæm./",
+      "zh": "Sam，舉手。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I have a question.",
+      "phonetic": "/aɪ hæv ə kˈwɛʃən./",
+      "zh": "我有問題。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The room is booked.",
+      "phonetic": "/ðə rum ɪz bʊkt./",
+      "zh": "會議室訂了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In person, then.",
+      "phonetic": "/ɪn ˈpərsən, ðɛn./",
+      "zh": "那就現場。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Approve the plan?",
+      "phonetic": "/əˈpruv ðə plæn?/",
+      "zh": "通過計畫？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All in favor, yes.",
+      "phonetic": "/ɔl ɪn ˈfeɪvər, jɛs./",
+      "zh": "贊成，通過。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's circle back.",
+      "phonetic": "/lɛts ˈsərkəl bæk./",
+      "zh": "我們回頭談。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the open item.",
+      "phonetic": "/ɔn ðə ˈoʊpən ˈaɪtəm./",
+      "zh": "未決事項。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The Wi-Fi dropped.",
+      "phonetic": "/ðə ˈwaɪˌfaɪ drɑpt./",
+      "zh": "無線斷了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Reconnecting.",
+      "phonetic": "/rikəˈnɛktɪŋ./",
+      "zh": "重連中。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Who is presenting?",
+      "phonetic": "/hu ɪz prɪˈzɛntɪŋ?/",
+      "zh": "誰報告？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Maria, next slide.",
+      "phonetic": "/mərˈiə, nɛkst slaɪd./",
+      "zh": "Maria，下一張。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We are over time.",
+      "phonetic": "/wi ər ˈoʊvər taɪm./",
+      "zh": "超時了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Five more minutes.",
+      "phonetic": "/faɪv mɔr ˈmɪnəts./",
+      "zh": "再五分鐘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you repeat that?",
+      "phonetic": "/kən ju rɪˈpit ðət?/",
+      "zh": "能再說一次嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The Q2 goal.",
+      "phonetic": "/ðə q2* goʊl./",
+      "zh": "第二季目標。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Any objections?",
+      "phonetic": "/ˈɛni əˈbʤɛkʃənz?/",
+      "zh": "有反對嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "None, proceed.",
+      "phonetic": "/nən, pərˈsid./",
+      "zh": "沒有，進行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's table this.",
+      "phonetic": "/lɛts ˈteɪbəl ðɪs./",
+      "zh": "這個擱置。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "To next time.",
+      "phonetic": "/tɪ nɛkst taɪm./",
+      "zh": "下次再議。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The audio lags.",
+      "phonetic": "/ðə ˈɑdiˌoʊ lægz./",
+      "zh": "聲音有延遲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Refresh the page.",
+      "phonetic": "/rɪˈfrɛʃ ðə peɪʤ./",
+      "zh": "刷新頁面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will take notes.",
+      "phonetic": "/aɪ wɪl teɪk noʊts./",
+      "zh": "我做筆記。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thanks, send after.",
+      "phonetic": "/θæŋks, sɛnd ˈæftər./",
+      "zh": "謝，會後傳。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we record this?",
+      "phonetic": "/kən wi ˈrɛkərd ðɪs?/",
+      "zh": "能錄嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Approved by all.",
+      "phonetic": "/əˈpruvd baɪ ɔl./",
+      "zh": "大家同意。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The link is in chat.",
+      "phonetic": "/ðə lɪŋk ɪz ɪn ʧæt./",
+      "zh": "連結在聊天室。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Joining now.",
+      "phonetic": "/ˈʤɔɪnɪŋ naʊ./",
+      "zh": "正在加入。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Mute when not speaking.",
+      "phonetic": "/mjut wɪn nɑt ˈspikɪŋ./",
+      "zh": "不說話時靜音。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good house rule.",
+      "phonetic": "/gʊd haʊs rul./",
+      "zh": "好規矩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's wait for Tom.",
+      "phonetic": "/lɛts weɪt fər tɑm./",
+      "zh": "等 Tom。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "He is running late.",
+      "phonetic": "/hi ɪz ˈrənɪŋ leɪt./",
+      "zh": "他晚到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is the agenda?",
+      "phonetic": "/wɛr ɪz ðə əˈʤɛndə?/",
+      "zh": "議程在哪？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In the invite.",
+      "phonetic": "/ɪn ðə ˌɪnˈvaɪt./",
+      "zh": "在邀請裏。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Share your screen, please.",
+      "phonetic": "/ʃɛr jʊr skrin, pliz./",
+      "zh": "請分享畫面。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sharing now.",
+      "phonetic": "/ˈʃɛrɪŋ naʊ./",
+      "zh": "正在分享。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My camera is off.",
+      "phonetic": "/maɪ ˈkæmərə ɪz ɔf./",
+      "zh": "我關鏡頭。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fine, audio only.",
+      "phonetic": "/faɪn, ˈɑdiˌoʊ ˈoʊnli./",
+      "zh": "好，只用聲音。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you hear me?",
+      "phonetic": "/kən ju hir mi?/",
+      "zh": "聽得到我嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Loud and clear.",
+      "phonetic": "/laʊd ənd klɪr./",
+      "zh": "清楚。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The meeting starts at ten.",
+      "phonetic": "/ðə ˈmitɪŋ stɑrts æt tɛn./",
+      "zh": "會議十點開始。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will dial in.",
+      "phonetic": "/aɪ wɪl daɪəl ɪn./",
+      "zh": "我撥入。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The meeting starts at ten.",
+      "phonetic": "/ðə ˈmitɪŋ stɑrts æt tɛn./",
+      "zh": "會議十點開始。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will dial in.",
+      "phonetic": "/aɪ wɪl daɪəl ɪn./",
+      "zh": "我撥入。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you hear me?",
+      "phonetic": "/kən ju hir mi?/",
+      "zh": "聽得到我嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Loud and clear.",
+      "phonetic": "/laʊd ənd klɪr./",
+      "zh": "清楚。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My camera is off.",
+      "phonetic": "/maɪ ˈkæmərə ɪz ɔf./",
+      "zh": "我關鏡頭。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fine, audio only.",
+      "phonetic": "/faɪn, ˈɑdiˌoʊ ˈoʊnli./",
+      "zh": "好，只用聲音。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Share your screen, please.",
+      "phonetic": "/ʃɛr jʊr skrin, pliz./",
+      "zh": "請分享畫面。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sharing now.",
+      "phonetic": "/ˈʃɛrɪŋ naʊ./",
+      "zh": "正在分享。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is the agenda?",
+      "phonetic": "/wɛr ɪz ðə əˈʤɛndə?/",
+      "zh": "議程在哪？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In the invite.",
+      "phonetic": "/ɪn ðə ˌɪnˈvaɪt./",
+      "zh": "在邀請裏。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's wait for Tom.",
+      "phonetic": "/lɛts weɪt fər tɑm./",
+      "zh": "等 Tom。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "He is running late.",
+      "phonetic": "/hi ɪz ˈrənɪŋ leɪt./",
+      "zh": "他晚到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Mute when not speaking.",
+      "phonetic": "/mjut wɪn nɑt ˈspikɪŋ./",
+      "zh": "不說話時靜音。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good house rule.",
+      "phonetic": "/gʊd haʊs rul./",
+      "zh": "好規矩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The link is in chat.",
+      "phonetic": "/ðə lɪŋk ɪz ɪn ʧæt./",
+      "zh": "連結在聊天室。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Joining now.",
+      "phonetic": "/ˈʤɔɪnɪŋ naʊ./",
+      "zh": "正在加入。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we record this?",
+      "phonetic": "/kən wi ˈrɛkərd ðɪs?/",
+      "zh": "能錄嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Approved by all.",
+      "phonetic": "/əˈpruvd baɪ ɔl./",
+      "zh": "大家同意。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will take notes.",
+      "phonetic": "/aɪ wɪl teɪk noʊts./",
+      "zh": "我做筆記。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thanks, send after.",
+      "phonetic": "/θæŋks, sɛnd ˈæftər./",
+      "zh": "謝，會後傳。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The audio lags.",
+      "phonetic": "/ðə ˈɑdiˌoʊ lægz./",
+      "zh": "聲音有延遲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Refresh the page.",
+      "phonetic": "/rɪˈfrɛʃ ðə peɪʤ./",
+      "zh": "刷新頁面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's table this.",
+      "phonetic": "/lɛts ˈteɪbəl ðɪs./",
+      "zh": "這個擱置。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "To next time.",
+      "phonetic": "/tɪ nɛkst taɪm./",
+      "zh": "下次再議。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Any objections?",
+      "phonetic": "/ˈɛni əˈbʤɛkʃənz?/",
+      "zh": "有反對嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "None, proceed.",
+      "phonetic": "/nən, pərˈsid./",
+      "zh": "沒有，進行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you repeat that?",
+      "phonetic": "/kən ju rɪˈpit ðət?/",
+      "zh": "能再說一次嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The Q2 goal.",
+      "phonetic": "/ðə q2* goʊl./",
+      "zh": "第二季目標。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We are over time.",
+      "phonetic": "/wi ər ˈoʊvər taɪm./",
+      "zh": "超時了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Five more minutes.",
+      "phonetic": "/faɪv mɔr ˈmɪnəts./",
+      "zh": "再五分鐘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Who is presenting?",
+      "phonetic": "/hu ɪz prɪˈzɛntɪŋ?/",
+      "zh": "誰報告？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Maria, next slide.",
+      "phonetic": "/mərˈiə, nɛkst slaɪd./",
+      "zh": "Maria，下一張。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The Wi-Fi dropped.",
+      "phonetic": "/ðə ˈwaɪˌfaɪ drɑpt./",
+      "zh": "無線斷了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Reconnecting.",
+      "phonetic": "/rikəˈnɛktɪŋ./",
+      "zh": "重連中。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's circle back.",
+      "phonetic": "/lɛts ˈsərkəl bæk./",
+      "zh": "我們回頭談。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the open item.",
+      "phonetic": "/ɔn ðə ˈoʊpən ˈaɪtəm./",
+      "zh": "未決事項。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Approve the plan?",
+      "phonetic": "/əˈpruv ðə plæn?/",
+      "zh": "通過計畫？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All in favor, yes.",
+      "phonetic": "/ɔl ɪn ˈfeɪvər, jɛs./",
+      "zh": "贊成，通過。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The room is booked.",
+      "phonetic": "/ðə rum ɪz bʊkt./",
+      "zh": "會議室訂了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In person, then.",
+      "phonetic": "/ɪn ˈpərsən, ðɛn./",
+      "zh": "那就現場。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Raise your hand, Sam.",
+      "phonetic": "/reɪz jʊr hænd, sæm./",
+      "zh": "Sam，舉手。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I have a question.",
+      "phonetic": "/aɪ hæv ə kˈwɛʃən./",
+      "zh": "我有問題。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The slide is blank.",
+      "phonetic": "/ðə slaɪd ɪz blæŋk./",
+      "zh": "投影片空白。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Press play, please.",
+      "phonetic": "/prɛs pleɪ, pliz./",
+      "zh": "按播放。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We lost the call.",
+      "phonetic": "/wi lɔst ðə kɔl./",
+      "zh": "通話斷了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Redial the line.",
+      "phonetic": "/riˈdaɪəl ðə laɪn./",
+      "zh": "重撥。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's set action items.",
+      "phonetic": "/lɛts sɛt ˈækʃən ˈaɪtəmz./",
+      "zh": "列行動項。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will track them.",
+      "phonetic": "/aɪ wɪl træk ðɛm./",
+      "zh": "我來追蹤。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The decision is made.",
+      "phonetic": "/ðə dɪˈsɪʒən ɪz meɪd./",
+      "zh": "決定了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Communicate it out.",
+      "phonetic": "/kəmˈjunəˌkeɪt ɪt aʊt./",
+      "zh": "傳達出去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we end early?",
+      "phonetic": "/kən wi ɛnd ˈərli?/",
+      "zh": "能提早結束嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "If no more points.",
+      "phonetic": "/ɪf noʊ mɔr pɔɪnts./",
+      "zh": "沒議題就行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thank you, everyone.",
+      "phonetic": "/θæŋk ju, ˈɛvriˌwən./",
+      "zh": "謝謝大家。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great session.",
+      "phonetic": "/greɪt ˈsɛʃən./",
+      "zh": "很好的會。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The minute is noted.",
+      "phonetic": "/ðə ˈmɪnət ɪz ˈnoʊtɪd./",
+      "zh": "紀錄註記了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Circulate after.",
+      "phonetic": "/ˈsərkjəˌleɪt ˈæftər./",
+      "zh": "會後傳閱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Next meeting Thursday.",
+      "phonetic": "/nɛkst ˈmitɪŋ ˈθərzˌdeɪ./",
+      "zh": "下週四再開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same link, okay.",
+      "phonetic": "/seɪm lɪŋk, ˌoʊˈkeɪ./",
+      "zh": "同連結。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will follow up.",
+      "phonetic": "/aɪ wɪl ˈfɑloʊ əp./",
+      "zh": "我會跟進度。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "By end of week.",
+      "phonetic": "/baɪ ɛnd əv wik./",
+      "zh": "本週內。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The chat is busy.",
+      "phonetic": "/ðə ʧæt ɪz ˈbɪzi./",
+      "zh": "聊天室很熱鬧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Read after call.",
+      "phonetic": "/rɛd ˈæftər kɔl./",
+      "zh": "會後看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Mute your mic, please.",
+      "phonetic": "/mjut jʊr mɪk, pliz./",
+      "zh": "請靜音。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sorry, done.",
+      "phonetic": "/ˈsɑri, dən./",
+      "zh": "抱歉，好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We are all here.",
+      "phonetic": "/wi ər ɔl hir./",
+      "zh": "都到齊了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let's begin.",
+      "phonetic": "/lɛts bɪˈgɪn./",
+      "zh": "開始吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "See you next time.",
+      "phonetic": "/si ju nɛkst taɪm./",
+      "zh": "下次見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Take care, all.",
+      "phonetic": "/teɪk kɛr, ɔl./",
+      "zh": "保重。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "See you next time.",
+      "phonetic": "/si ju nɛkst taɪm./",
+      "zh": "下次見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Take care, all.",
+      "phonetic": "/teɪk kɛr, ɔl./",
+      "zh": "保重。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We are all here.",
+      "phonetic": "/wi ər ɔl hir./",
+      "zh": "都到齊了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let's begin.",
+      "phonetic": "/lɛts bɪˈgɪn./",
+      "zh": "開始吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Mute your mic, please.",
+      "phonetic": "/mjut jʊr mɪk, pliz./",
+      "zh": "請靜音。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sorry, done.",
+      "phonetic": "/ˈsɑri, dən./",
+      "zh": "抱歉，好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The chat is busy.",
+      "phonetic": "/ðə ʧæt ɪz ˈbɪzi./",
+      "zh": "聊天室很熱鬧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Read after call.",
+      "phonetic": "/rɛd ˈæftər kɔl./",
+      "zh": "會後看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will follow up.",
+      "phonetic": "/aɪ wɪl ˈfɑloʊ əp./",
+      "zh": "我會跟進度。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "By end of week.",
+      "phonetic": "/baɪ ɛnd əv wik./",
+      "zh": "本週內。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Next meeting Thursday.",
+      "phonetic": "/nɛkst ˈmitɪŋ ˈθərzˌdeɪ./",
+      "zh": "下週四再開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same link, okay.",
+      "phonetic": "/seɪm lɪŋk, ˌoʊˈkeɪ./",
+      "zh": "同連結。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The minute is noted.",
+      "phonetic": "/ðə ˈmɪnət ɪz ˈnoʊtɪd./",
+      "zh": "紀錄註記了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Circulate after.",
+      "phonetic": "/ˈsərkjəˌleɪt ˈæftər./",
+      "zh": "會後傳閱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thank you, everyone.",
+      "phonetic": "/θæŋk ju, ˈɛvriˌwən./",
+      "zh": "謝謝大家。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great session.",
+      "phonetic": "/greɪt ˈsɛʃən./",
+      "zh": "很好的會。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we end early?",
+      "phonetic": "/kən wi ɛnd ˈərli?/",
+      "zh": "能提早結束嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "If no more points.",
+      "phonetic": "/ɪf noʊ mɔr pɔɪnts./",
+      "zh": "沒議題就行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The decision is made.",
+      "phonetic": "/ðə dɪˈsɪʒən ɪz meɪd./",
+      "zh": "決定了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Communicate it out.",
+      "phonetic": "/kəmˈjunəˌkeɪt ɪt aʊt./",
+      "zh": "傳達出去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's set action items.",
+      "phonetic": "/lɛts sɛt ˈækʃən ˈaɪtəmz./",
+      "zh": "列行動項。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will track them.",
+      "phonetic": "/aɪ wɪl træk ðɛm./",
+      "zh": "我來追蹤。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We lost the call.",
+      "phonetic": "/wi lɔst ðə kɔl./",
+      "zh": "通話斷了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Redial the line.",
+      "phonetic": "/riˈdaɪəl ðə laɪn./",
+      "zh": "重撥。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The slide is blank.",
+      "phonetic": "/ðə slaɪd ɪz blæŋk./",
+      "zh": "投影片空白。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Press play, please.",
+      "phonetic": "/prɛs pleɪ, pliz./",
+      "zh": "按播放。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Raise your hand, Sam.",
+      "phonetic": "/reɪz jʊr hænd, sæm./",
+      "zh": "Sam，舉手。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I have a question.",
+      "phonetic": "/aɪ hæv ə kˈwɛʃən./",
+      "zh": "我有問題。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The room is booked.",
+      "phonetic": "/ðə rum ɪz bʊkt./",
+      "zh": "會議室訂了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In person, then.",
+      "phonetic": "/ɪn ˈpərsən, ðɛn./",
+      "zh": "那就現場。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Approve the plan?",
+      "phonetic": "/əˈpruv ðə plæn?/",
+      "zh": "通過計畫？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All in favor, yes.",
+      "phonetic": "/ɔl ɪn ˈfeɪvər, jɛs./",
+      "zh": "贊成，通過。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's circle back.",
+      "phonetic": "/lɛts ˈsərkəl bæk./",
+      "zh": "我們回頭談。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the open item.",
+      "phonetic": "/ɔn ðə ˈoʊpən ˈaɪtəm./",
+      "zh": "未決事項。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The Wi-Fi dropped.",
+      "phonetic": "/ðə ˈwaɪˌfaɪ drɑpt./",
+      "zh": "無線斷了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Reconnecting.",
+      "phonetic": "/rikəˈnɛktɪŋ./",
+      "zh": "重連中。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Who is presenting?",
+      "phonetic": "/hu ɪz prɪˈzɛntɪŋ?/",
+      "zh": "誰報告？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Maria, next slide.",
+      "phonetic": "/mərˈiə, nɛkst slaɪd./",
+      "zh": "Maria，下一張。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We are over time.",
+      "phonetic": "/wi ər ˈoʊvər taɪm./",
+      "zh": "超時了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Five more minutes.",
+      "phonetic": "/faɪv mɔr ˈmɪnəts./",
+      "zh": "再五分鐘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you repeat that?",
+      "phonetic": "/kən ju rɪˈpit ðət?/",
+      "zh": "能再說一次嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The Q2 goal.",
+      "phonetic": "/ðə q2* goʊl./",
+      "zh": "第二季目標。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Any objections?",
+      "phonetic": "/ˈɛni əˈbʤɛkʃənz?/",
+      "zh": "有反對嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "None, proceed.",
+      "phonetic": "/nən, pərˈsid./",
+      "zh": "沒有，進行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's table this.",
+      "phonetic": "/lɛts ˈteɪbəl ðɪs./",
+      "zh": "這個擱置。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "To next time.",
+      "phonetic": "/tɪ nɛkst taɪm./",
+      "zh": "下次再議。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The audio lags.",
+      "phonetic": "/ðə ˈɑdiˌoʊ lægz./",
+      "zh": "聲音有延遲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Refresh the page.",
+      "phonetic": "/rɪˈfrɛʃ ðə peɪʤ./",
+      "zh": "刷新頁面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will take notes.",
+      "phonetic": "/aɪ wɪl teɪk noʊts./",
+      "zh": "我做筆記。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thanks, send after.",
+      "phonetic": "/θæŋks, sɛnd ˈæftər./",
+      "zh": "謝，會後傳。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we record this?",
+      "phonetic": "/kən wi ˈrɛkərd ðɪs?/",
+      "zh": "能錄嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Approved by all.",
+      "phonetic": "/əˈpruvd baɪ ɔl./",
+      "zh": "大家同意。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The link is in chat.",
+      "phonetic": "/ðə lɪŋk ɪz ɪn ʧæt./",
+      "zh": "連結在聊天室。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Joining now.",
+      "phonetic": "/ˈʤɔɪnɪŋ naʊ./",
+      "zh": "正在加入。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Mute when not speaking.",
+      "phonetic": "/mjut wɪn nɑt ˈspikɪŋ./",
+      "zh": "不說話時靜音。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good house rule.",
+      "phonetic": "/gʊd haʊs rul./",
+      "zh": "好規矩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's wait for Tom.",
+      "phonetic": "/lɛts weɪt fər tɑm./",
+      "zh": "等 Tom。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "He is running late.",
+      "phonetic": "/hi ɪz ˈrənɪŋ leɪt./",
+      "zh": "他晚到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is the agenda?",
+      "phonetic": "/wɛr ɪz ðə əˈʤɛndə?/",
+      "zh": "議程在哪？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In the invite.",
+      "phonetic": "/ɪn ðə ˌɪnˈvaɪt./",
+      "zh": "在邀請裏。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Share your screen, please.",
+      "phonetic": "/ʃɛr jʊr skrin, pliz./",
+      "zh": "請分享畫面。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sharing now.",
+      "phonetic": "/ˈʃɛrɪŋ naʊ./",
+      "zh": "正在分享。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My camera is off.",
+      "phonetic": "/maɪ ˈkæmərə ɪz ɔf./",
+      "zh": "我關鏡頭。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fine, audio only.",
+      "phonetic": "/faɪn, ˈɑdiˌoʊ ˈoʊnli./",
+      "zh": "好，只用聲音。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you hear me?",
+      "phonetic": "/kən ju hir mi?/",
+      "zh": "聽得到我嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Loud and clear.",
+      "phonetic": "/laʊd ənd klɪr./",
+      "zh": "清楚。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The meeting starts at ten.",
+      "phonetic": "/ðə ˈmitɪŋ stɑrts æt tɛn./",
+      "zh": "會議十點開始。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will dial in.",
+      "phonetic": "/aɪ wɪl daɪəl ɪn./",
+      "zh": "我撥入。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The meeting starts at ten.",
+      "phonetic": "/ðə ˈmitɪŋ stɑrts æt tɛn./",
+      "zh": "會議十點開始。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will dial in.",
+      "phonetic": "/aɪ wɪl daɪəl ɪn./",
+      "zh": "我撥入。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you hear me?",
+      "phonetic": "/kən ju hir mi?/",
+      "zh": "聽得到我嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Loud and clear.",
+      "phonetic": "/laʊd ənd klɪr./",
+      "zh": "清楚。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My camera is off.",
+      "phonetic": "/maɪ ˈkæmərə ɪz ɔf./",
+      "zh": "我關鏡頭。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fine, audio only.",
+      "phonetic": "/faɪn, ˈɑdiˌoʊ ˈoʊnli./",
+      "zh": "好，只用聲音。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Share your screen, please.",
+      "phonetic": "/ʃɛr jʊr skrin, pliz./",
+      "zh": "請分享畫面。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sharing now.",
+      "phonetic": "/ˈʃɛrɪŋ naʊ./",
+      "zh": "正在分享。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is the agenda?",
+      "phonetic": "/wɛr ɪz ðə əˈʤɛndə?/",
+      "zh": "議程在哪？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In the invite.",
+      "phonetic": "/ɪn ðə ˌɪnˈvaɪt./",
+      "zh": "在邀請裏。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's wait for Tom.",
+      "phonetic": "/lɛts weɪt fər tɑm./",
+      "zh": "等 Tom。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "He is running late.",
+      "phonetic": "/hi ɪz ˈrənɪŋ leɪt./",
+      "zh": "他晚到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Mute when not speaking.",
+      "phonetic": "/mjut wɪn nɑt ˈspikɪŋ./",
+      "zh": "不說話時靜音。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good house rule.",
+      "phonetic": "/gʊd haʊs rul./",
+      "zh": "好規矩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The link is in chat.",
+      "phonetic": "/ðə lɪŋk ɪz ɪn ʧæt./",
+      "zh": "連結在聊天室。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Joining now.",
+      "phonetic": "/ˈʤɔɪnɪŋ naʊ./",
+      "zh": "正在加入。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we record this?",
+      "phonetic": "/kən wi ˈrɛkərd ðɪs?/",
+      "zh": "能錄嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Approved by all.",
+      "phonetic": "/əˈpruvd baɪ ɔl./",
+      "zh": "大家同意。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will take notes.",
+      "phonetic": "/aɪ wɪl teɪk noʊts./",
+      "zh": "我做筆記。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thanks, send after.",
+      "phonetic": "/θæŋks, sɛnd ˈæftər./",
+      "zh": "謝，會後傳。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The audio lags.",
+      "phonetic": "/ðə ˈɑdiˌoʊ lægz./",
+      "zh": "聲音有延遲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Refresh the page.",
+      "phonetic": "/rɪˈfrɛʃ ðə peɪʤ./",
+      "zh": "刷新頁面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's table this.",
+      "phonetic": "/lɛts ˈteɪbəl ðɪs./",
+      "zh": "這個擱置。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "To next time.",
+      "phonetic": "/tɪ nɛkst taɪm./",
+      "zh": "下次再議。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Any objections?",
+      "phonetic": "/ˈɛni əˈbʤɛkʃənz?/",
+      "zh": "有反對嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "None, proceed.",
+      "phonetic": "/nən, pərˈsid./",
+      "zh": "沒有，進行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you repeat that?",
+      "phonetic": "/kən ju rɪˈpit ðət?/",
+      "zh": "能再說一次嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The Q2 goal.",
+      "phonetic": "/ðə q2* goʊl./",
+      "zh": "第二季目標。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We are over time.",
+      "phonetic": "/wi ər ˈoʊvər taɪm./",
+      "zh": "超時了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Five more minutes.",
+      "phonetic": "/faɪv mɔr ˈmɪnəts./",
+      "zh": "再五分鐘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Who is presenting?",
+      "phonetic": "/hu ɪz prɪˈzɛntɪŋ?/",
+      "zh": "誰報告？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Maria, next slide.",
+      "phonetic": "/mərˈiə, nɛkst slaɪd./",
+      "zh": "Maria，下一張。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The Wi-Fi dropped.",
+      "phonetic": "/ðə ˈwaɪˌfaɪ drɑpt./",
+      "zh": "無線斷了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Reconnecting.",
+      "phonetic": "/rikəˈnɛktɪŋ./",
+      "zh": "重連中。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's circle back.",
+      "phonetic": "/lɛts ˈsərkəl bæk./",
+      "zh": "我們回頭談。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the open item.",
+      "phonetic": "/ɔn ðə ˈoʊpən ˈaɪtəm./",
+      "zh": "未決事項。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Approve the plan?",
+      "phonetic": "/əˈpruv ðə plæn?/",
+      "zh": "通過計畫？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All in favor, yes.",
+      "phonetic": "/ɔl ɪn ˈfeɪvər, jɛs./",
+      "zh": "贊成，通過。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The room is booked.",
+      "phonetic": "/ðə rum ɪz bʊkt./",
+      "zh": "會議室訂了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In person, then.",
+      "phonetic": "/ɪn ˈpərsən, ðɛn./",
+      "zh": "那就現場。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Raise your hand, Sam.",
+      "phonetic": "/reɪz jʊr hænd, sæm./",
+      "zh": "Sam，舉手。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I have a question.",
+      "phonetic": "/aɪ hæv ə kˈwɛʃən./",
+      "zh": "我有問題。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The slide is blank.",
+      "phonetic": "/ðə slaɪd ɪz blæŋk./",
+      "zh": "投影片空白。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Press play, please.",
+      "phonetic": "/prɛs pleɪ, pliz./",
+      "zh": "按播放。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We lost the call.",
+      "phonetic": "/wi lɔst ðə kɔl./",
+      "zh": "通話斷了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Redial the line.",
+      "phonetic": "/riˈdaɪəl ðə laɪn./",
+      "zh": "重撥。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's set action items.",
+      "phonetic": "/lɛts sɛt ˈækʃən ˈaɪtəmz./",
+      "zh": "列行動項。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will track them.",
+      "phonetic": "/aɪ wɪl træk ðɛm./",
+      "zh": "我來追蹤。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The decision is made.",
+      "phonetic": "/ðə dɪˈsɪʒən ɪz meɪd./",
+      "zh": "決定了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Communicate it out.",
+      "phonetic": "/kəmˈjunəˌkeɪt ɪt aʊt./",
+      "zh": "傳達出去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we end early?",
+      "phonetic": "/kən wi ɛnd ˈərli?/",
+      "zh": "能提早結束嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "If no more points.",
+      "phonetic": "/ɪf noʊ mɔr pɔɪnts./",
+      "zh": "沒議題就行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thank you, everyone.",
+      "phonetic": "/θæŋk ju, ˈɛvriˌwən./",
+      "zh": "謝謝大家。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great session.",
+      "phonetic": "/greɪt ˈsɛʃən./",
+      "zh": "很好的會。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The minute is noted.",
+      "phonetic": "/ðə ˈmɪnət ɪz ˈnoʊtɪd./",
+      "zh": "紀錄註記了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Circulate after.",
+      "phonetic": "/ˈsərkjəˌleɪt ˈæftər./",
+      "zh": "會後傳閱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Next meeting Thursday.",
+      "phonetic": "/nɛkst ˈmitɪŋ ˈθərzˌdeɪ./",
+      "zh": "下週四再開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same link, okay.",
+      "phonetic": "/seɪm lɪŋk, ˌoʊˈkeɪ./",
+      "zh": "同連結。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will follow up.",
+      "phonetic": "/aɪ wɪl ˈfɑloʊ əp./",
+      "zh": "我會跟進度。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "By end of week.",
+      "phonetic": "/baɪ ɛnd əv wik./",
+      "zh": "本週內。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The chat is busy.",
+      "phonetic": "/ðə ʧæt ɪz ˈbɪzi./",
+      "zh": "聊天室很熱鬧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Read after call.",
+      "phonetic": "/rɛd ˈæftər kɔl./",
+      "zh": "會後看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Mute your mic, please.",
+      "phonetic": "/mjut jʊr mɪk, pliz./",
+      "zh": "請靜音。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sorry, done.",
+      "phonetic": "/ˈsɑri, dən./",
+      "zh": "抱歉，好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We are all here.",
+      "phonetic": "/wi ər ɔl hir./",
+      "zh": "都到齊了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let's begin.",
+      "phonetic": "/lɛts bɪˈgɪn./",
+      "zh": "開始吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "See you next time.",
+      "phonetic": "/si ju nɛkst taɪm./",
+      "zh": "下次見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Take care, all.",
+      "phonetic": "/teɪk kɛr, ɔl./",
+      "zh": "保重。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "See you next time.",
+      "phonetic": "/si ju nɛkst taɪm./",
+      "zh": "下次見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Take care, all.",
+      "phonetic": "/teɪk kɛr, ɔl./",
+      "zh": "保重。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We are all here.",
+      "phonetic": "/wi ər ɔl hir./",
+      "zh": "都到齊了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let's begin.",
+      "phonetic": "/lɛts bɪˈgɪn./",
+      "zh": "開始吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Mute your mic, please.",
+      "phonetic": "/mjut jʊr mɪk, pliz./",
+      "zh": "請靜音。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sorry, done.",
+      "phonetic": "/ˈsɑri, dən./",
+      "zh": "抱歉，好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The chat is busy.",
+      "phonetic": "/ðə ʧæt ɪz ˈbɪzi./",
+      "zh": "聊天室很熱鬧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Read after call.",
+      "phonetic": "/rɛd ˈæftər kɔl./",
+      "zh": "會後看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will follow up.",
+      "phonetic": "/aɪ wɪl ˈfɑloʊ əp./",
+      "zh": "我會跟進度。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "By end of week.",
+      "phonetic": "/baɪ ɛnd əv wik./",
+      "zh": "本週內。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Next meeting Thursday.",
+      "phonetic": "/nɛkst ˈmitɪŋ ˈθərzˌdeɪ./",
+      "zh": "下週四再開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same link, okay.",
+      "phonetic": "/seɪm lɪŋk, ˌoʊˈkeɪ./",
+      "zh": "同連結。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The minute is noted.",
+      "phonetic": "/ðə ˈmɪnət ɪz ˈnoʊtɪd./",
+      "zh": "紀錄註記了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Circulate after.",
+      "phonetic": "/ˈsərkjəˌleɪt ˈæftər./",
+      "zh": "會後傳閱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thank you, everyone.",
+      "phonetic": "/θæŋk ju, ˈɛvriˌwən./",
+      "zh": "謝謝大家。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great session.",
+      "phonetic": "/greɪt ˈsɛʃən./",
+      "zh": "很好的會。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we end early?",
+      "phonetic": "/kən wi ɛnd ˈərli?/",
+      "zh": "能提早結束嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "If no more points.",
+      "phonetic": "/ɪf noʊ mɔr pɔɪnts./",
+      "zh": "沒議題就行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The decision is made.",
+      "phonetic": "/ðə dɪˈsɪʒən ɪz meɪd./",
+      "zh": "決定了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Communicate it out.",
+      "phonetic": "/kəmˈjunəˌkeɪt ɪt aʊt./",
+      "zh": "傳達出去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's set action items.",
+      "phonetic": "/lɛts sɛt ˈækʃən ˈaɪtəmz./",
+      "zh": "列行動項。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will track them.",
+      "phonetic": "/aɪ wɪl træk ðɛm./",
+      "zh": "我來追蹤。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We lost the call.",
+      "phonetic": "/wi lɔst ðə kɔl./",
+      "zh": "通話斷了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Redial the line.",
+      "phonetic": "/riˈdaɪəl ðə laɪn./",
+      "zh": "重撥。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The slide is blank.",
+      "phonetic": "/ðə slaɪd ɪz blæŋk./",
+      "zh": "投影片空白。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Press play, please.",
+      "phonetic": "/prɛs pleɪ, pliz./",
+      "zh": "按播放。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Raise your hand, Sam.",
+      "phonetic": "/reɪz jʊr hænd, sæm./",
+      "zh": "Sam，舉手。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I have a question.",
+      "phonetic": "/aɪ hæv ə kˈwɛʃən./",
+      "zh": "我有問題。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The room is booked.",
+      "phonetic": "/ðə rum ɪz bʊkt./",
+      "zh": "會議室訂了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In person, then.",
+      "phonetic": "/ɪn ˈpərsən, ðɛn./",
+      "zh": "那就現場。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Approve the plan?",
+      "phonetic": "/əˈpruv ðə plæn?/",
+      "zh": "通過計畫？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All in favor, yes.",
+      "phonetic": "/ɔl ɪn ˈfeɪvər, jɛs./",
+      "zh": "贊成，通過。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's circle back.",
+      "phonetic": "/lɛts ˈsərkəl bæk./",
+      "zh": "我們回頭談。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the open item.",
+      "phonetic": "/ɔn ðə ˈoʊpən ˈaɪtəm./",
+      "zh": "未決事項。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The Wi-Fi dropped.",
+      "phonetic": "/ðə ˈwaɪˌfaɪ drɑpt./",
+      "zh": "無線斷了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Reconnecting.",
+      "phonetic": "/rikəˈnɛktɪŋ./",
+      "zh": "重連中。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Who is presenting?",
+      "phonetic": "/hu ɪz prɪˈzɛntɪŋ?/",
+      "zh": "誰報告？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Maria, next slide.",
+      "phonetic": "/mərˈiə, nɛkst slaɪd./",
+      "zh": "Maria，下一張。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We are over time.",
+      "phonetic": "/wi ər ˈoʊvər taɪm./",
+      "zh": "超時了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Five more minutes.",
+      "phonetic": "/faɪv mɔr ˈmɪnəts./",
+      "zh": "再五分鐘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you repeat that?",
+      "phonetic": "/kən ju rɪˈpit ðət?/",
+      "zh": "能再說一次嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The Q2 goal.",
+      "phonetic": "/ðə q2* goʊl./",
+      "zh": "第二季目標。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Any objections?",
+      "phonetic": "/ˈɛni əˈbʤɛkʃənz?/",
+      "zh": "有反對嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "None, proceed.",
+      "phonetic": "/nən, pərˈsid./",
+      "zh": "沒有，進行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's table this.",
+      "phonetic": "/lɛts ˈteɪbəl ðɪs./",
+      "zh": "這個擱置。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "To next time.",
+      "phonetic": "/tɪ nɛkst taɪm./",
+      "zh": "下次再議。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The audio lags.",
+      "phonetic": "/ðə ˈɑdiˌoʊ lægz./",
+      "zh": "聲音有延遲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Refresh the page.",
+      "phonetic": "/rɪˈfrɛʃ ðə peɪʤ./",
+      "zh": "刷新頁面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will take notes.",
+      "phonetic": "/aɪ wɪl teɪk noʊts./",
+      "zh": "我做筆記。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thanks, send after.",
+      "phonetic": "/θæŋks, sɛnd ˈæftər./",
+      "zh": "謝，會後傳。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we record this?",
+      "phonetic": "/kən wi ˈrɛkərd ðɪs?/",
+      "zh": "能錄嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Approved by all.",
+      "phonetic": "/əˈpruvd baɪ ɔl./",
+      "zh": "大家同意。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The link is in chat.",
+      "phonetic": "/ðə lɪŋk ɪz ɪn ʧæt./",
+      "zh": "連結在聊天室。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Joining now.",
+      "phonetic": "/ˈʤɔɪnɪŋ naʊ./",
+      "zh": "正在加入。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Mute when not speaking.",
+      "phonetic": "/mjut wɪn nɑt ˈspikɪŋ./",
+      "zh": "不說話時靜音。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good house rule.",
+      "phonetic": "/gʊd haʊs rul./",
+      "zh": "好規矩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's wait for Tom.",
+      "phonetic": "/lɛts weɪt fər tɑm./",
+      "zh": "等 Tom。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "He is running late.",
+      "phonetic": "/hi ɪz ˈrənɪŋ leɪt./",
+      "zh": "他晚到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is the agenda?",
+      "phonetic": "/wɛr ɪz ðə əˈʤɛndə?/",
+      "zh": "議程在哪？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In the invite.",
+      "phonetic": "/ɪn ðə ˌɪnˈvaɪt./",
+      "zh": "在邀請裏。"
+    }
+  ]
+}

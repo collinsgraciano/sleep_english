@@ -1,0 +1,2458 @@
+{
+  "title": "Everyday Phrases — At the Juice Bar",
+  "title_zh": "果汁店",
+  "scene_zh": "果汁店 · 情境對話",
+  "title_quote": "Morning, Sam! I'm back.",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】🥤 實用果汁店必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — At the Juice Bar",
+  "youtube_description": "睡著學英文！這部影片收錄實用果汁店情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫），不用背，睡前聽就會。重複播放，讓英文自然進入你的大腦。👍 想學更多生活場景，請留言告訴我！別忘了訂閱+按讚。 #英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical At the Juice Bar phrase pairs (each pair: male normal speed → female slow speed → combined dialogue). No memorization needed—just listen before bed and absorb naturally. If you want more real-life scenarios, leave a comment! Subscribe and like!",
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "At the Juice Bar",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "At the Juice Bar",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Food & Drink",
+  "youtube_tags": [
+    "英文聽力",
+    "睡前英文",
+    "果汁店英文",
+    "At the Juice Bar English",
+    "English listening",
+    "Sleep learning",
+    "A2 English",
+    "常用英文短語",
+    "零基礎英文",
+    "慢速英文",
+    "英文口語",
+    "Learn English",
+    "English for daily life",
+    "ESL",
+    "English conversation",
+    "飲食英文"
+  ],
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "Morning, Sam! I'm back.",
+      "phonetic": "/ˈmɔrnɪŋ, sæm! aɪm bæk./",
+      "zh": "早安，山姆！我又來啦。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Morning! Right on time.",
+      "phonetic": "/ˈmɔrnɪŋ! raɪt ɑn taɪm./",
+      "zh": "早安！你剛好準時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The smell today is amazing.",
+      "phonetic": "/ðə smɛl təˈdeɪ ɪz əˈmeɪzɪŋ./",
+      "zh": "今天的香味太棒了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We cut fresh pineapple early.",
+      "phonetic": "/wi kʌt frɛʃ ˈpaɪnˌæpəl ˈɜrli./",
+      "zh": "我們一早現切了鳳梨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your place feels like home now.",
+      "phonetic": "/jʊr pleɪs filz laɪk hoʊm naʊ./",
+      "zh": "你這裡現在讓我覺得像家一樣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You're basically family here.",
+      "phonetic": "/jʊr ˈbæsɪkli ˈfæməli hɪr./",
+      "zh": "你早就跟家人一樣了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So what's new on the menu?",
+      "phonetic": "/soʊ wʌts nu ɑn ðə ˈmɛnju?/",
+      "zh": "菜單上有什麼新品嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Four new drinks, look here.",
+      "phonetic": "/fɔr nu drɪŋks, lʊk hɪr./",
+      "zh": "四種新飲品，看這邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What's this green one called?",
+      "phonetic": "/wʌts ðɪs ɡrin wʌn kɔld?/",
+      "zh": "這個綠色的叫什麼名字？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We call it Green Start.",
+      "phonetic": "/wi kɔl ɪt ɡrin stɑrt./",
+      "zh": "我們叫它綠能起點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is Green Start a juice?",
+      "phonetic": "/ɪz ɡrin stɑrt ə dʒus?/",
+      "zh": "綠能起點是果汁嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, it's a fruit smoothie.",
+      "phonetic": "/noʊ, ɪts ə frut ˈsmuði./",
+      "zh": "不，它是水果冰沙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What's the difference, exactly?",
+      "phonetic": "/wʌts ðə ˈdɪfərəns, ɪɡˈzæktli?/",
+      "zh": "確切來說有什麼差別？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Juice is thin, smoothies are thick.",
+      "phonetic": "/dʒus ɪz θɪn, ˈsmuðiz ɑr θɪk./",
+      "zh": "果汁較稀，冰沙較濃。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That means more fiber, right?",
+      "phonetic": "/ðæt minz mɔr ˈfaɪbɚ, raɪt?/",
+      "zh": "那代表更多膳食纖維，對吧？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, nothing gets thrown away.",
+      "phonetic": "/jɛs, ˈnʌθɪŋ ɡɛts θroʊn əˈweɪ./",
+      "zh": "對，什麼都不浪費。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Why are smoothies so thick?",
+      "phonetic": "/waɪ ɑr ˈsmuðiz soʊ θɪk?/",
+      "zh": "冰沙為什麼這麼濃稠？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We blend the whole fruit.",
+      "phonetic": "/wi blɛnd ðə hoʊl frut./",
+      "zh": "因為我們整顆一起打。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which drink fills me up fastest?",
+      "phonetic": "/wɪtʃ drɪŋk fɪlz mi ʌp ˈfæstəst?/",
+      "zh": "哪種飲品最有飽足感？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Banana Blend is very hearty.",
+      "phonetic": "/bəˈnænə blɛnd ɪz ˈvɛri ˈhɑrti./",
+      "zh": "香蕉冰沙最管飽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you squeeze every orange here?",
+      "phonetic": "/du ju skwiz ˈɛvri ˈɔrɪndʒ hɪr?/",
+      "zh": "你們每顆柳橙都現榨嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Every cup, fresh each morning.",
+      "phonetic": "/ˈɛvri kʌp, frɛʃ itʃ ˈmɔrnɪŋ./",
+      "zh": "每一杯都是每天早晨現榨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Nothing ever comes from bottles?",
+      "phonetic": "/ˈnʌθɪŋ ˈɛvɚ kʌmz frʌm ˈbɑtəlz?/",
+      "zh": "都沒有用瓶裝的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Never, that's our only rule.",
+      "phonetic": "/ˈnɛvɚ, ðæts ˈaʊər ˈoʊnli rul./",
+      "zh": "從不，這是我們唯一的規矩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I feel sleepy, need some energy.",
+      "phonetic": "/aɪ fil ˈslipi, nid səm ˈɛnɚdʒi./",
+      "zh": "我有點睏，需要補充能量。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try our Mango Boost then.",
+      "phonetic": "/traɪ ˈaʊər ˈmæŋɡoʊ bust ðɛn./",
+      "zh": "那試試我們的芒果能量飲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What makes Mango Boost so strong?",
+      "phonetic": "/wʌt meɪks ˈmæŋɡoʊ bust soʊ strɔŋ?/",
+      "zh": "它憑什麼這麼有勁？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mango, banana, and real oats.",
+      "phonetic": "/ˈmæŋɡoʊ, bəˈnænə, ænd riəl ots./",
+      "zh": "芒果、香蕉和真正的燕麥。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Oats? In a smoothie? Interesting.",
+      "phonetic": "/ots? ɪn ə ˈsmuði? ˈɪntrəstɪŋ./",
+      "zh": "燕麥？放在冰沙裡？有趣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It makes it creamy, trust me.",
+      "phonetic": "/ɪt meɪks ɪt ˈkrimi, trʌst mi./",
+      "zh": "會讓口感更綿密，相信我。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does any energy drink have coffee?",
+      "phonetic": "/dʌz ˈɛni ˈɛnɚdʒi drɪŋk hæv ˈkɔfi?/",
+      "zh": "提神飲品裡有含咖啡的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only the Coffee Citrus one.",
+      "phonetic": "/ˈoʊnli ðə ˈkɔfi ˈsɪtrəs wʌn./",
+      "zh": "只有咖啡柑橘那杯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Coffee upsets my empty stomach.",
+      "phonetic": "/ˈkɔfi ʌpˈsɛts maɪ ˈɛmpti ˈstʌmək./",
+      "zh": "空腹喝咖啡會讓我不舒服。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then skip it, fruit is better.",
+      "phonetic": "/ðɛn skɪp ɪt, frut ɪz ˈbɛtɚ./",
+      "zh": "那就別點，水果比較好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I'm tired lately, what wakes me?",
+      "phonetic": "/aɪm ˈtaɪərd ˈleɪtli, wʌt weɪks mi?/",
+      "zh": "我最近好累，喝什麼會清醒？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Citrus Kick, with fresh ginger.",
+      "phonetic": "/ˈsɪtrəs kɪk, wɪð frɛʃ ˈdʒɪndʒɚ./",
+      "zh": "柑橘能量飲，加生薑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Ginger? Will that taste too hot?",
+      "phonetic": "/ˈdʒɪndʒɚ? wɪl ðæt teɪst tu hɑt?/",
+      "zh": "生薑？那樣不會太辣嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just a small warm tingle.",
+      "phonetic": "/dʒʌst ə smɔl wɔrm ˈtɪŋɡəl./",
+      "zh": "只有一點溫溫的辣感。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I like that warm feeling, okay.",
+      "phonetic": "/aɪ laɪk ðæt wɔrm ˈfilɪŋ, oʊˈkeɪ./",
+      "zh": "我喜歡那種溫熱感，好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You'll love it, I promise.",
+      "phonetic": "/jul lʌv ɪt, aɪ ˈprɑmɪs./",
+      "zh": "你會愛上它的，我保證。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "But is that one very sweet?",
+      "phonetic": "/bʌt ɪz ðæt wʌn ˈvɛri swit?/",
+      "zh": "但那杯會不會很甜？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It's medium, not too sweet.",
+      "phonetic": "/ɪts ˈmidiəm, nɑt tu swit./",
+      "zh": "中等甜度，不太甜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I have to watch my sugar.",
+      "phonetic": "/aɪ hæv tu wɑtʃ maɪ ˈʃʊɡɚ./",
+      "zh": "我得注意攝取糖分。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Go low sugar, we can help.",
+      "phonetic": "/ɡoʊ loʊ ˈʃʊɡɚ, wi kæn hɛlp./",
+      "zh": "選低糖的，我們能幫你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which drinks are lowest in sugar?",
+      "phonetic": "/wɪtʃ drɪŋks ɑr ˈloʊwəst ɪn ˈʃʊɡɚ?/",
+      "zh": "哪些飲品含糖最低？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Green Start and Melon Cooler.",
+      "phonetic": "/ɡrin stɑrt ænd ˈmɛlən ˈkulɚ./",
+      "zh": "綠能起點和蜜瓜沁涼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Why is watermelon on the list?",
+      "phonetic": "/waɪ ɪz ˈwɔtɚˌmɛlən ɑn ðə lɪst?/",
+      "zh": "為什麼西瓜也在名單上？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Melon has more water than sugar.",
+      "phonetic": "/ˈmɛlən hæz mɔr ˈwɔtɚ ðæn ˈʃʊɡɚ./",
+      "zh": "蜜瓜的水分比糖分多。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "But won't it taste plain?",
+      "phonetic": "/bʌt woʊnt ɪt teɪst pleɪn?/",
+      "zh": "但那不會嘗起來很淡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We add lime, it's bright.",
+      "phonetic": "/wi æd laɪm, ɪts braɪt./",
+      "zh": "我們加了青檸，很清爽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the berry blend have added sugar?",
+      "phonetic": "/dʌz ðə ˈbɛri blɛnd hæv ˈædəd ˈʃʊɡɚ?/",
+      "zh": "莓果冰沙有額外加糖嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No sugar, just ripe berries.",
+      "phonetic": "/noʊ ˈʃʊɡɚ, dʒʌst raɪp ˈbɛriz./",
+      "zh": "沒加糖，只用熟透的莓果。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Ripe berries are sweet enough.",
+      "phonetic": "/raɪp ˈbɛriz ɑr swit ɪˈnʌf./",
+      "zh": "熟透的莓果就已經夠甜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Exactly, nature does the work.",
+      "phonetic": "/ɪɡˈzæktli, ˈneɪtʃɚ dʌz ðə wɜrk./",
+      "zh": "就是這樣，大自然都幫你弄好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How many calories are in it?",
+      "phonetic": "/haʊ ˈmɛni ˈkæləriz ɑr ɪn ɪt?/",
+      "zh": "一杯大約有多少熱量？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "About one eighty per cup.",
+      "phonetic": "/əˈbaʊt wʌn ˈeɪti pɚ kʌp./",
+      "zh": "一杯大約一百八十卡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That's lighter than my yogurt.",
+      "phonetic": "/ðæts ˈlaɪtɚ ðæn maɪ ˈjoʊɡɚt./",
+      "zh": "那比我的酸奶還清淡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it's our lightest blend.",
+      "phonetic": "/jɛs, ɪts ˈaʊər ˈlaɪtəst blɛnd./",
+      "zh": "對，這是我們最輕盈的冰沙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My doctor says cut back on sugar.",
+      "phonetic": "/maɪ ˈdɑktɚ sɛz kʌt bæk ɑn ˈʃʊɡɚ./",
+      "zh": "醫生叫我少吃糖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So greens and melon for you.",
+      "phonetic": "/soʊ ɡrinz ænd ˈmɛlən fɚ ju./",
+      "zh": "那你就選綠葉和蜜瓜吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wait, I can't eat strawberries.",
+      "phonetic": "/weɪt, aɪ kænt it ˈstrɔˌbɛriz./",
+      "zh": "等等，我不能吃草莓。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Oh, are you allergic to them?",
+      "phonetic": "/oʊ, ɑr ju əˈlɜrdʒɪk tu ðɛm?/",
+      "zh": "噢，你對草莓過敏嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, my skin gets itchy.",
+      "phonetic": "/jɛs, maɪ skɪn ɡɛts ˈɪtʃi./",
+      "zh": "對，我的皮膚會發癢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thanks for telling me early.",
+      "phonetic": "/θæŋks fɚ ˈtɛlɪŋ mi ˈɜrli./",
+      "zh": "謝謝你早點告訴我。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the berry blend contain strawberry?",
+      "phonetic": "/dʌz ðə ˈbɛri blɛnd kənˈteɪn ˈstrɔˌbɛri?/",
+      "zh": "莓果冰沙裡有草莓嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it's mostly strawberry.",
+      "phonetic": "/jɛs, ɪts ˈmoʊstli ˈstrɔˌbɛri./",
+      "zh": "有，裡面大半是草莓。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then I'll avoid that one.",
+      "phonetic": "/ðɛn aɪl əˈvɔɪd ðæt wʌn./",
+      "zh": "那我避開那杯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Blueberry Mix skips strawberries.",
+      "phonetic": "/ˈbluˌbɛri mɪks skɪps ˈstrɔˌbɛriz./",
+      "zh": "藍莓冰沙完全不放草莓。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Am I safe with blueberries?",
+      "phonetic": "/æm aɪ seɪf wɪð ˈbluˌbɛriz?/",
+      "zh": "那我喝藍莓安全嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, they're a different fruit.",
+      "phonetic": "/jɛs, ðɛr ə ˈdɪfərənt frut./",
+      "zh": "安全，它們跟草莓不是一種。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One more thing, no peanuts.",
+      "phonetic": "/wʌn mɔr θɪŋ, noʊ ˈpitˌnʌts./",
+      "zh": "還有一件事，不要花生。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nut allergy? We check labels.",
+      "phonetic": "/nʌt əˈlɜrdʒi? wi tʃɛk ˈleɪbəlz./",
+      "zh": "堅果過敏嗎？我們會看標示。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Tree nuts bother me too.",
+      "phonetic": "/tri nʌts ˈbɑðɚ mi tu./",
+      "zh": "樹堅果也會讓我不舒服。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We keep all nuts out here.",
+      "phonetic": "/wi kip ɔl nʌts aʊt hɪr./",
+      "zh": "我們店裡完全不進堅果。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Great, that's a relief.",
+      "phonetic": "/ɡreɪt, ðæts ə rɪˈlif./",
+      "zh": "太好了，那我就放心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Safety first at our bar.",
+      "phonetic": "/ˈseɪfti fɜrst æt ˈaʊər bɑr./",
+      "zh": "我們店裡安全永遠第一。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I skip dairy completely?",
+      "phonetic": "/kæn aɪ skɪp ˈdɛri kəmˈplitli?/",
+      "zh": "我可以完全不碰奶製品嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, milk, oat, or soy?",
+      "phonetic": "/ʃʊr, mɪlk, oʊt, ɔr sɔɪ?/",
+      "zh": "可以，牛奶、燕麥奶還是豆漿？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Oat milk suits my stomach.",
+      "phonetic": "/oʊt mɪlk suts maɪ ˈstʌmək./",
+      "zh": "燕麥奶最合我的腸胃。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good choice, it's very creamy.",
+      "phonetic": "/ɡʊd tʃɔɪs, ɪts ˈvɛri ˈkrimi./",
+      "zh": "選得好，它口感很綿密。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is everything washed with clean water?",
+      "phonetic": "/ɪz ˈɛvriθɪŋ wɑʃt wɪð klin ˈwɔtɚ?/",
+      "zh": "水果都是用乾淨的水洗的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Every fruit, right before blending.",
+      "phonetic": "/ˈɛvri frut, raɪt bɪˈfɔr ˈblɛndɪŋ./",
+      "zh": "每顆都是打之前才洗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you clean the blender daily?",
+      "phonetic": "/du ju klin ðə ˈblɛndɚ ˈdeɪli?/",
+      "zh": "果汁機你們每天清洗嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We wash it between orders.",
+      "phonetic": "/wi wɑʃ ɪt bɪˈtwin ˈɔrdɚz./",
+      "zh": "我們每做一杯就洗一次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Perfect, I trust your place.",
+      "phonetic": "/ˈpɜrfɪkt, aɪ trʌst jʊr pleɪs./",
+      "zh": "很棒，我在你這裡喝得很安心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That trust matters most to us.",
+      "phonetic": "/ðæt trʌst ˈmætɚz moʊst tu ʌs./",
+      "zh": "這份信任對我們最重要。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Okay, I'll try Green Start.",
+      "phonetic": "/oʊˈkeɪ, aɪl traɪ ɡrin stɑrt./",
+      "zh": "好，我今天試綠能起點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great pick, you'll feel fresh.",
+      "phonetic": "/ɡreɪt pɪk, jul fil frɛʃ./",
+      "zh": "選得好，你會神清氣爽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "And one Citrus Kick as well.",
+      "phonetic": "/ænd wʌn ˈsɪtrəs kɪk æz wɛl./",
+      "zh": "再來一杯柑橘能量飲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For your wife, right?",
+      "phonetic": "/fɚ jʊr waɪf, raɪt?/",
+      "zh": "給你太太帶的，對吧？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How did you guess that?",
+      "phonetic": "/haʊ dɪd ju ɡɛs ðæt?/",
+      "zh": "你怎麼猜到的？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She loves that orange drink.",
+      "phonetic": "/ʃi lʌvz ðæt ˈɔrɪndʒ drɪŋk./",
+      "zh": "她最愛那杯橙色的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That's one for me, one to go.",
+      "phonetic": "/ðæts wʌn fɚ mi, wʌn tu ɡoʊ./",
+      "zh": "一杯我喝，一杯外帶。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'll note that on the cup.",
+      "phonetic": "/aɪl noʊt ðæt ɑn ðə kʌp./",
+      "zh": "我在杯子上標一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You remember everything about us.",
+      "phonetic": "/ju rɪˈmɛmbɚ ˈɛvriθɪŋ əˈbaʊt ʌs./",
+      "zh": "你記得我們所有的喜好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Regulars are the best part.",
+      "phonetic": "/ˈrɛɡjəlɚz ɑr ðə bɛst pɑrt./",
+      "zh": "熟客就是這家店最美好的部分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's fix the details first.",
+      "phonetic": "/lɛts fɪks ðə dɪˈteɪlz fɜrst./",
+      "zh": "我們先確認一下細節。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, sweetness and ice?",
+      "phonetic": "/ʃʊr, ˈswitnəs ænd aɪs?/",
+      "zh": "好啊，甜度和冰塊對吧？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, and maybe change the base.",
+      "phonetic": "/jɛs, ænd ˈmeɪbi tʃeɪndʒ ðə beɪs./",
+      "zh": "對，可能還要換基底。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Take your time, I'll listen.",
+      "phonetic": "/teɪk jʊr taɪm, aɪl ˈlɪsən./",
+      "zh": "你慢慢說，我聽著。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How sweet is the normal one?",
+      "phonetic": "/haʊ swit ɪz ðə ˈnɔrməl wʌn?/",
+      "zh": "先問問，一般甜度有多甜？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Medium, like half a banana.",
+      "phonetic": "/ˈmidiəm, laɪk hæf ə bəˈnænə./",
+      "zh": "中等，大約半根香蕉的甜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Make mine half sweet, please.",
+      "phonetic": "/meɪk maɪn hæf swit, pliz./",
+      "zh": "我的請做半糖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Half sweet, no problem.",
+      "phonetic": "/hæf swit, noʊ ˈprɑbləm./",
+      "zh": "半糖，沒問題。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you skip the sugar entirely?",
+      "phonetic": "/kæn ju skɪp ðə ˈʃʊɡɚ ɛnˈtɪrli?/",
+      "zh": "能完全不加糖嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fruit only, got it.",
+      "phonetic": "/frut ˈoʊnli, ɡɑt ɪt./",
+      "zh": "只靠水果甜，了解。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Honey counts as sugar, right?",
+      "phonetic": "/ˈhʌni kaʊnts æz ˈʃʊɡɚ, raɪt?/",
+      "zh": "蜂蜜也算是糖，對吧？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, so we'll leave it out.",
+      "phonetic": "/jɛs, soʊ wil liv ɪt aʊt./",
+      "zh": "對，那我們也不加。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now about ice, very little.",
+      "phonetic": "/naʊ əˈbaʊt aɪs, ˈvɛri ˈlɪtəl./",
+      "zh": "再來是冰塊，少少一點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Light ice, more fruit flavor.",
+      "phonetic": "/laɪt aɪs, mɔr frut ˈfleɪvɚ./",
+      "zh": "少冰，果味更濃。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My wife likes lots of ice.",
+      "phonetic": "/maɪ waɪf laɪks lɑts əv aɪs./",
+      "zh": "我太太喜歡多冰。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Extra ice on hers then.",
+      "phonetic": "/ˈɛkstrə aɪs ɑn hɜrz ðɛn./",
+      "zh": "她那杯就另外加冰。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "More fruit in mine, less apple.",
+      "phonetic": "/mɔr frut ɪn maɪn, lɛs ˈæpəl./",
+      "zh": "我的多放水果，少放蘋果。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Double fruit, light apple.",
+      "phonetic": "/ˈdʌbəl frut, laɪt ˈæpəl./",
+      "zh": "水果加倍，蘋果少量。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is extra fruit free here?",
+      "phonetic": "/ɪz ˈɛkstrə frut fri hɪr?/",
+      "zh": "多加水果要錢嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One extra piece is free.",
+      "phonetic": "/wʌn ˈɛkstrə pis ɪz fri./",
+      "zh": "多一份水果不收錢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Too much apple tastes sour.",
+      "phonetic": "/tu mʌtʃ ˈæpəl teɪsts ˈsaʊɚ./",
+      "zh": "蘋果太多會發酸。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Got it, a small slice only.",
+      "phonetic": "/ɡɑt ɪt, ə smɔl slaɪs ˈoʊnli./",
+      "zh": "了解，只放一小片。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "And double the spinach, please.",
+      "phonetic": "/ænd ˈdʌbəl ðə ˈspɪnətʃ, pliz./",
+      "zh": "菠菜也請加倍。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Extra greens, nice and easy.",
+      "phonetic": "/ˈɛkstrə ɡrinz, naɪs ænd ˈizi./",
+      "zh": "多加綠葉，小事一樁。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Extra oranges in her cup.",
+      "phonetic": "/ˈɛkstrə ˈɔrɪndʒəz ɪn hɜr kʌp./",
+      "zh": "她那杯多放柳橙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, one strong orange cup.",
+      "phonetic": "/ʃʊr, wʌn strɔŋ ˈɔrɪndʒ kʌp./",
+      "zh": "好，一杯濃橙汁。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "And a little more ginger.",
+      "phonetic": "/ænd ə ˈlɪtəl mɔr ˈdʒɪndʒɚ./",
+      "zh": "生薑也多一點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spicy for her, understood.",
+      "phonetic": "/ˈspaɪsi fɚ hɜr, ˌʌndɚˈstʊd./",
+      "zh": "她要嗆一點，了解。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Change the base on mine.",
+      "phonetic": "/tʃeɪndʒ ðə beɪs ɑn maɪn./",
+      "zh": "我那杯的基底換一下。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Oat milk, or something else?",
+      "phonetic": "/oʊt mɪlk, ɔr ˈsʌmθɪŋ ɛls?/",
+      "zh": "燕麥奶，還是換別的？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Actually, soy milk today.",
+      "phonetic": "/ˈæktʃuəli, sɔɪ mɪlk təˈdeɪ./",
+      "zh": "對了，今天換豆漿。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Soy it is, nice switch.",
+      "phonetic": "/sɔɪ ɪt ɪz, naɪs swɪtʃ./",
+      "zh": "那就豆漿，換得好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Keep hers without any milk.",
+      "phonetic": "/kip hɜrz wɪˈðaʊt ˈɛni mɪlk./",
+      "zh": "她那杯完全不加奶。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It's juice, no milk needed.",
+      "phonetic": "/ɪts dʒus, noʊ mɪlk ˈnidɪd./",
+      "zh": "那是果汁，本來就不用奶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I add coconut water to juice?",
+      "phonetic": "/kæn aɪ æd ˈkoʊkəˌnʌt ˈwɔtɚ tu dʒus?/",
+      "zh": "果汁可以兌椰子水嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it adds light sweetness.",
+      "phonetic": "/jɛs, ɪt ædz laɪt ˈswitnəs./",
+      "zh": "可以，會帶點清甜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Coconut counts as a nut?",
+      "phonetic": "/ˈkoʊkəˌnʌt kaʊnts æz ə nʌt?/",
+      "zh": "椰子算堅果嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Doctors call it a fruit.",
+      "phonetic": "/ˈdɑktɚz kɔl ɪt ə frut./",
+      "zh": "醫生說它其實是水果。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then coconut water in hers.",
+      "phonetic": "/ðɛn ˈkoʊkəˌnʌt ˈwɔtɚ ɪn hɜrz./",
+      "zh": "那她杯中加椰子水。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good call, very refreshing.",
+      "phonetic": "/ɡʊd kɔl, ˈvɛri rɪˈfrɛʃɪŋ./",
+      "zh": "選得好，非常清爽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I want extra protein today.",
+      "phonetic": "/aɪ wɑnt ˈɛkstrə ˈproʊtin təˈdeɪ./",
+      "zh": "我今天想多補蛋白質。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Want a vanilla protein scoop?",
+      "phonetic": "/wɑnt ə vəˈnilə ˈproʊtin skup?/",
+      "zh": "要加一匙香草蛋白粉嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does protein change the taste?",
+      "phonetic": "/dʌz ˈproʊtin tʃeɪndʒ ðə teɪst?/",
+      "zh": "蛋白粉會影響味道嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Barely, it stays creamy.",
+      "phonetic": "/ˈbɛrli, ɪt steɪz ˈkrimi./",
+      "zh": "幾乎不會，還是綿密。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Okay, add one scoop, thanks.",
+      "phonetic": "/oʊˈkeɪ, æd wʌn skup, θæŋks./",
+      "zh": "好，加一匙，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One protein, noted down.",
+      "phonetic": "/wʌn ˈproʊtin, ˈnoʊtɪd daʊn./",
+      "zh": "一匙蛋白粉，記下了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How much is the protein extra?",
+      "phonetic": "/haʊ mʌtʃ ɪz ðə ˈproʊtin ˈɛkstrə?/",
+      "zh": "加蛋白粉要多錢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It's one dollar fifty.",
+      "phonetic": "/ɪts wʌn ˈdɑlɚ ˈfɪfti./",
+      "zh": "要加收一塊五。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What about collagen powder?",
+      "phonetic": "/wʌt əˈbaʊt ˈkɑlədʒən ˈpaʊdɚ?/",
+      "zh": "那膠原蛋白粉呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great for skin and joints.",
+      "phonetic": "/ɡreɪt fɚ skɪn ænd dʒɔɪnts./",
+      "zh": "對皮膚和關節都好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Put collagen in her cup.",
+      "phonetic": "/pʊt ˈkɑlədʒən ɪn hɜr kʌp./",
+      "zh": "她杯中加膠原蛋白。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She'll love you for it.",
+      "phonetic": "/ʃil lʌv ju fɚ ɪt./",
+      "zh": "她肯定會更愛你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is collagen tasteless in juice?",
+      "phonetic": "/ɪz ˈkɑlədʒən ˈteɪstləs ɪn dʒus?/",
+      "zh": "膠原蛋白加進果汁沒味道嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Completely tasteless, trust me.",
+      "phonetic": "/kəmˈplitli ˈteɪstləs, trʌst mi./",
+      "zh": "完全沒味道，相信我。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "No other supplements for me.",
+      "phonetic": "/noʊ ˈʌðɚ ˈsʌpləmənts fɚ mi./",
+      "zh": "我不加別的營養粉了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep it simple, I agree.",
+      "phonetic": "/kip ɪt ˈsɪmpəl, aɪ əˈɡri./",
+      "zh": "簡單就好，我同意。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will you add water to juice?",
+      "phonetic": "/wɪl ju æd ˈwɔtɚ tu dʒus?/",
+      "zh": "果汁裡會兌水嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Never, pure juice only.",
+      "phonetic": "/ˈnɛvɚ, pjʊr dʒus ˈoʊnli./",
+      "zh": "從不，純粹的果汁。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That's why yours tastes best.",
+      "phonetic": "/ðæts waɪ jʊrz teɪsts bɛst./",
+      "zh": "難怪你們的最好喝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You're too kind, really.",
+      "phonetic": "/jʊr tu kaɪnd, ˈrɪli./",
+      "zh": "你太客氣了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you write the notes down?",
+      "phonetic": "/kæn ju raɪt ðə noʊts daʊn?/",
+      "zh": "這些要求都記下來了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Almost done, what's your name?",
+      "phonetic": "/ˈɔlmoʊst dʌn, wʌts jʊr neɪm?/",
+      "zh": "快寫完了，你叫什麼名字？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Tom, T-O-M, that's easy.",
+      "phonetic": "/tɑm, ti oʊ ɛm, ðæts ˈizi./",
+      "zh": "湯姆，T-O-M，很簡單。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spelling helps, thank you.",
+      "phonetic": "/ˈspɛlɪŋ hɛlps, θæŋk ju./",
+      "zh": "拼出來就沒問題，謝謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I add my phone number?",
+      "phonetic": "/kæn aɪ æd maɪ foʊn ˈnʌmbɚ?/",
+      "zh": "我能留個電話號碼嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, we text when ready.",
+      "phonetic": "/ʃʊr, wi tɛkst wɛn ˈrɛdi./",
+      "zh": "好啊，做好了會傳訊息。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It's five five five, double eight.",
+      "phonetic": "/ɪts faɪv faɪv faɪv, ˈdʌbəl eɪt./",
+      "zh": "是五五五，兩個八。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let me read it back.",
+      "phonetic": "/lɛt mi rid ɪt bæk./",
+      "zh": "讓我複述一遍。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you get the number right?",
+      "phonetic": "/dɪd ju ɡɛt ðə ˈnʌmbɚ raɪt?/",
+      "zh": "號碼抄對了對嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Five five five, double eight.",
+      "phonetic": "/faɪv faɪv faɪv, ˈdʌbəl eɪt./",
+      "zh": "五五五，兩個八。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, that's exactly it.",
+      "phonetic": "/jɛs, ðæts ɪɡˈzæktli ɪt./",
+      "zh": "沒錯，就是這支。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Saved, we'll text you.",
+      "phonetic": "/seɪvd, wil tɛkst ju./",
+      "zh": "存好了，我們會發簡訊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you keep my info safe?",
+      "phonetic": "/du ju kip maɪ ˈɪnfoʊ seɪf?/",
+      "zh": "你們會保護我的資料嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only for pickup, nothing else.",
+      "phonetic": "/ˈoʊnli fɚ ˈpɪkˌʌp, ˈnʌθɪŋ ɛls./",
+      "zh": "只用來取餐，不為別的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Okay, that's fair enough.",
+      "phonetic": "/oʊˈkeɪ, ðæts fɛr ɪˈnʌf./",
+      "zh": "好，這樣很合理。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Anything else for the order?",
+      "phonetic": "/ˈɛniθɪŋ ɛls fɚ ðə ˈɔrdɚ?/",
+      "zh": "訂單還有別的要求嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "No, that's the whole list.",
+      "phonetic": "/noʊ, ðæts ðə hoʊl lɪst./",
+      "zh": "沒了，清單就到這。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Half sweet, light ice, soy base.",
+      "phonetic": "/hæf swit, laɪt aɪs, sɔɪ beɪs./",
+      "zh": "半糖、少冰、豆漿底。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Nailed it, you're quick.",
+      "phonetic": "/neɪld ɪt, jʊr kwɪk./",
+      "zh": "完全正確，你真快。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I do this all day.",
+      "phonetic": "/aɪ du ðɪs ɔl deɪ./",
+      "zh": "我整天都在做這個。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did I mention the oat milk?",
+      "phonetic": "/dɪd aɪ ˈmɛnʃən ðə oʊt mɪlk?/",
+      "zh": "我之前有提到燕麥奶嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You switched it to soy.",
+      "phonetic": "/ju swɪtʃt ɪt tu sɔɪ./",
+      "zh": "你後來改成豆漿了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good memory, my friend.",
+      "phonetic": "/ɡʊd ˈmɛməri, maɪ frɛnd./",
+      "zh": "記性真好，朋友。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You're a fun order.",
+      "phonetic": "/jʊr ə fʌn ˈɔrdɚ./",
+      "zh": "你這訂單做起來真有趣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you blend with the peel?",
+      "phonetic": "/du ju blɛnd wɪð ðə pil?/",
+      "zh": "你們連皮一起打嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, we always peel first.",
+      "phonetic": "/noʊ, wi ˈɔlwez pil fɜrst./",
+      "zh": "不，一定先削皮。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I get extra pulp?",
+      "phonetic": "/kæn aɪ ɡɛt ˈɛkstrə pʌlp?/",
+      "zh": "可以多留果肉嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pulpy juice, classic choice.",
+      "phonetic": "/ˈpʌlpi dʒus, ˈklæsɪk tʃɔɪs./",
+      "zh": "果肉多的果汁，經典選擇。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hers should have no pulp.",
+      "phonetic": "/hɜrz ʃʊd hæv noʊ pʌlp./",
+      "zh": "她那杯不要果肉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, we'll strain it twice.",
+      "phonetic": "/ʃʊr, wil streɪn ɪt twaɪs./",
+      "zh": "好，我們濾兩遍。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One lemon slice on the side.",
+      "phonetic": "/wʌn ˈlɛmən slaɪs ɑn ðə saɪd./",
+      "zh": "檸檬片另外放一片。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For squeezing later, right?",
+      "phonetic": "/fɚ ˈskwɪzɪŋ ˈleɪtɚ, raɪt?/",
+      "zh": "給她之後擠汁用，對吧？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "No big ginger pieces, please.",
+      "phonetic": "/noʊ bɪɡ ˈdʒɪndʒɚ ˈpisəz, pliz./",
+      "zh": "薑不要留大塊的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We strain them out totally.",
+      "phonetic": "/wi streɪn ðɛm aʊt ˈtoʊtəli./",
+      "zh": "薑會全部濾掉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Keep the banana fully blended.",
+      "phonetic": "/kip ðə bəˈnænə ˈfʊli ˈblɛndɪd./",
+      "zh": "香蕉請打得完全細膩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Smooth like a milkshake.",
+      "phonetic": "/smuð laɪk ə ˈmɪlkˌʃeɪk./",
+      "zh": "會像奶昔一樣滑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Make hers cold, but not frozen.",
+      "phonetic": "/meɪk hɜrz koʊld, bʌt nɑt ˈfroʊzən./",
+      "zh": "她那杯要冰但別打成冰塊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Extra ice, but not blended hard.",
+      "phonetic": "/ˈɛkstrə aɪs, bʌt nɑt ˈblɛndɪd hɑrd./",
+      "zh": "另外加冰，但不往死裡打。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That's exactly what I meant.",
+      "phonetic": "/ðæts ɪɡˈzæktli wʌt aɪ mɛnt./",
+      "zh": "我就是這個意思。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We speak the same language.",
+      "phonetic": "/wi spik ðə seɪm ˈlæŋɡwɪdʒ./",
+      "zh": "我們倆講的是一種語言。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Anything I can't order today?",
+      "phonetic": "/ˈɛniθɪŋ aɪ kænt ˈɔrdɚ təˈdeɪ?/",
+      "zh": "今天我還有什麼不能點？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only the berry, remember why.",
+      "phonetic": "/ˈoʊnli ðə ˈbɛri, rɪˈmɛmbɚ waɪ./",
+      "zh": "只有莓果那杯，記得原因。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Strawberries, yes, I remember.",
+      "phonetic": "/ˈstrɔˌbɛriz, jɛs, aɪ rɪˈmɛmbɚ./",
+      "zh": "草莓，對，我記得。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You're safe with everything else.",
+      "phonetic": "/jʊr seɪf wɪð ˈɛvriθɪŋ ɛls./",
+      "zh": "其他你都放心點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now I'll wait and watch.",
+      "phonetic": "/naʊ aɪl weɪt ænd wɑtʃ./",
+      "zh": "現在我邊等邊看。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Best seat is at the bar.",
+      "phonetic": "/bɛst sit ɪz æt ðə bɑr./",
+      "zh": "最棒的位置就是吧台。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I love watching you work.",
+      "phonetic": "/aɪ lʌv ˈwɑtʃɪŋ ju wɜrk./",
+      "zh": "我愛看你們手腳俐落的樣子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It looks like a dance.",
+      "phonetic": "/ɪt lʊks laɪk ə dæns./",
+      "zh": "看起來像在跳舞嘛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That orange press is powerful.",
+      "phonetic": "/ðæt ˈɔrɪndʒ prɛs ɪz ˈpaʊɚfəl./",
+      "zh": "那台榨橙機好有力。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It does forty in an hour.",
+      "phonetic": "/ɪt dʌz ˈfɔrti ɪn ɑn ˈaʊɚ./",
+      "zh": "一小時能榨四十顆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Forty? I thought it was ten.",
+      "phonetic": "/ˈfɔrti? aɪ θɔt ɪt wʌz tɛn./",
+      "zh": "四十顆？我以為只有十顆。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One cup takes about five.",
+      "phonetic": "/wʌn kʌp teɪks əˈbaʊt faɪv./",
+      "zh": "一杯大約用五顆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "No wonder the flavor is deep.",
+      "phonetic": "/noʊ ˈwʌndɚ ðə ˈfleɪvɚ ɪz dip./",
+      "zh": "難怪味道這麼濃郁。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fresh is worth the work.",
+      "phonetic": "/frɛʃ ɪz wɜrθ ðə wɜrk./",
+      "zh": "要新鮮就得費工。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How long will mine take?",
+      "phonetic": "/haʊ lɔŋ wɪl maɪn teɪk?/",
+      "zh": "我那杯要多久？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Five minutes, maybe six.",
+      "phonetic": "/faɪv ˈmɪnəts, ˈmeɪbi sɪks./",
+      "zh": "五分鐘，也許六分鐘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is that slow for a smoothie?",
+      "phonetic": "/ɪz ðæt sloʊ fɚ ə ˈsmuði?/",
+      "zh": "對冰沙來說算慢嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fresh fruit needs a moment.",
+      "phonetic": "/frɛʃ frut nidz ə ˈmoʊmənt./",
+      "zh": "現切水果得花點時間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "No problem, I'm not rushing.",
+      "phonetic": "/noʊ ˈprɑbləm, aɪm nɑt ˈrʌʃɪŋ./",
+      "zh": "沒關係，我不趕時間。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You always come early anyway.",
+      "phonetic": "/ju ˈɔlwez kʌm ˈɜrli ˈɛniˌweɪ./",
+      "zh": "你反正都來得很早。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you cut everything by hand?",
+      "phonetic": "/du ju kʌt ˈɛvriθɪŋ baɪ hænd?/",
+      "zh": "你們都是手工切水果嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, small pieces blend better.",
+      "phonetic": "/jɛs, smɔl ˈpisəz blɛnd ˈbɛtɚ./",
+      "zh": "對，小塊的比較好打。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That melon looks huge today.",
+      "phonetic": "/ðæt ˈmɛlən lʊks hjudʒ təˈdeɪ./",
+      "zh": "今天的蜜瓜好大顆。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It's our biggest one yet.",
+      "phonetic": "/ɪts ˈaʊər ˈbɪɡɪst wʌn jɛt./",
+      "zh": "是我們見過最大的一顆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I see the ginger root?",
+      "phonetic": "/kæn aɪ si ðə ˈdʒɪndʒɚ rut?/",
+      "zh": "我能看看那塊生薑嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here, smells sharp, right?",
+      "phonetic": "/hɪr, smɛlz ʃɑrp, raɪt?/",
+      "zh": "給你看，味道很嗆吧？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, that's real fresh ginger.",
+      "phonetic": "/jɛs, ðæts riəl frɛʃ ˈdʒɪndʒɚ./",
+      "zh": "對，這才是新鮮生薑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We buy it every Tuesday.",
+      "phonetic": "/wi baɪ ɪt ˈɛvri ˈtuzdeɪ./",
+      "zh": "我們每週二都進貨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where do you get the fruit?",
+      "phonetic": "/wɛr du ju ɡɛt ðə frut?/",
+      "zh": "你們的水果哪裡來的？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A farm an hour from here.",
+      "phonetic": "/ə fɑrm ɑn ˈaʊɚ frʌm hɪr./",
+      "zh": "一家農場，離這兒一小時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That explains how sweet they are.",
+      "phonetic": "/ðæt ɪkˈspleɪnz haʊ swit ðeɪ ɑr./",
+      "zh": "難怪水果這麼甜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Picked ripe, never from cans.",
+      "phonetic": "/pɪkt raɪp, ˈnɛvɚ frʌm kænz./",
+      "zh": "現摘的，絕不用罐裝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you throw fruit away?",
+      "phonetic": "/du ju θroʊ frut əˈweɪ?/",
+      "zh": "你們會把水果丟掉嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only if it isn't perfect.",
+      "phonetic": "/ˈoʊnli ɪf ɪt ˈɪzənt ˈpɜrfɪkt./",
+      "zh": "不夠完美才會扔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Seems like a costly habit.",
+      "phonetic": "/simz laɪk ə ˈkɔstli ˈhæbɪt./",
+      "zh": "這習慣感覺成本很高。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quality beats saving money.",
+      "phonetic": "/ˈkwɑləti bits ˈseɪvɪŋ ˈmʌni./",
+      "zh": "品質比省錢重要。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "True, I taste the difference.",
+      "phonetic": "/tru, aɪ teɪst ðə ˈdɪfərəns./",
+      "zh": "說得對，我喝得出差別。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Your tongue is well trained.",
+      "phonetic": "/jʊr tʌŋ ɪz wɛl treɪnd./",
+      "zh": "你的舌頭訓練有素。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Speaking of money, sizes please.",
+      "phonetic": "/ˈspikɪŋ əv ˈmʌni, ˈsaɪzəz pliz./",
+      "zh": "說到錢，先講講杯型吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Small, medium, or large.",
+      "phonetic": "/smɔl, ˈmidiəm, ɔr lɑrdʒ./",
+      "zh": "小、中、大三種。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How big is your large cup?",
+      "phonetic": "/haʊ bɪɡ ɪz jʊr lɑrdʒ kʌp?/",
+      "zh": "你們的大杯有多大？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Twenty ounces, our biggest.",
+      "phonetic": "/ˈtwɛnti ˈaʊnsəz, ˈaʊər ˈbɪɡɪst./",
+      "zh": "二十盎司，最大杯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "And the medium one?",
+      "phonetic": "/ænd ðə ˈmidiəm wʌn?/",
+      "zh": "那中杯呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sixteen, most people pick it.",
+      "phonetic": "/sɪksˈtin, moʊst ˈpipəl pɪk ɪt./",
+      "zh": "十六盎司，多數人選它。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Small or medium? I can't decide.",
+      "phonetic": "/smɔl ɔr ˈmidiəm? aɪ kænt dɪˈsaɪd./",
+      "zh": "小杯還是中杯？我猶豫了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Medium is our most popular.",
+      "phonetic": "/ˈmidiəm ɪz ˈaʊər moʊst ˈpɑpjəlɚ./",
+      "zh": "中杯是我們最暢銷的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hers can be a large.",
+      "phonetic": "/hɜrz kæn bi ə lɑrdʒ./",
+      "zh": "她那杯可以做大杯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She has a big appetite.",
+      "phonetic": "/ʃi hæz ə bɪɡ ˈæpəˌtaɪt./",
+      "zh": "她的胃口可不小。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What about cup prices, please?",
+      "phonetic": "/wʌt əˈbaʊt kʌp ˈpraɪsəz, pliz?/",
+      "zh": "杯型價格怎麼算？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A large juice is six fifty.",
+      "phonetic": "/ə lɑrdʒ dʒus ɪz sɪks ˈfɪfti./",
+      "zh": "大杯果汁六塊五。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "And the smoothie with protein?",
+      "phonetic": "/ænd ðə ˈsmuði wɪð ˈproʊtin?/",
+      "zh": "那加蛋白粉的冰沙呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Seven fifty for the large.",
+      "phonetic": "/ˈsɛvən ˈfɪfti fɚ ðə lɑrdʒ./",
+      "zh": "大杯七塊五。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is tax included in that?",
+      "phonetic": "/ɪz tæks ɪnˈkludɪd ɪn ðæt?/",
+      "zh": "這個含稅了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, tax adds a bit.",
+      "phonetic": "/noʊ, tæks ædz ə bɪt./",
+      "zh": "沒有，稅會再加一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Seven fifty plus tax, fine.",
+      "phonetic": "/ˈsɛvən ˈfɪfti plʌs tæks, faɪn./",
+      "zh": "七塊五，加稅也還能接受。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You get value, honestly.",
+      "phonetic": "/ju ɡɛt ˈvælju, ˈɑnəstli./",
+      "zh": "說真的，這錢花得值。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have any combo deals?",
+      "phonetic": "/du ju hæv ˈɛni ˈkɑmˌboʊ dilz?/",
+      "zh": "有沒有組合優惠？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Members save on two drinks.",
+      "phonetic": "/ˈmɛmbɚz seɪv ɑn tu drɪŋks./",
+      "zh": "會員點兩杯有折扣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Members? Tell me about that.",
+      "phonetic": "/ˈmɛmbɚz? tɛl mi əˈbaʊt ðæt./",
+      "zh": "會員？快跟我說說。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Points on every single cup.",
+      "phonetic": "/pɔɪnts ɑn ˈɛvri ˈsɪŋɡəl kʌp./",
+      "zh": "每一杯都能累積點數。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I pay with my card?",
+      "phonetic": "/kæn aɪ peɪ wɪð maɪ kɑrd?/",
+      "zh": "我能刷卡付款嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Card or phone, both work.",
+      "phonetic": "/kɑrd ɔr foʊn, boʊθ wɜrk./",
+      "zh": "刷卡或手機支付都行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How do I become a member?",
+      "phonetic": "/haʊ du aɪ bɪˈkʌm ə ˈmɛmbɚ?/",
+      "zh": "我要怎麼辦會員？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It's free, takes one minute.",
+      "phonetic": "/ɪts fri, teɪks wʌn ˈmɪnət./",
+      "zh": "免費，一分鐘就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What do the points do?",
+      "phonetic": "/wʌt du ðə pɔɪnts du?/",
+      "zh": "點數有什麼用？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ten drinks, one is free.",
+      "phonetic": "/tɛn drɪŋks, wʌn ɪz fri./",
+      "zh": "喝滿十杯，送一杯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "For regulars, that's perfect.",
+      "phonetic": "/fɚ ˈrɛɡjəlɚz, ðæts ˈpɜrfɪkt./",
+      "zh": "對熟客來說太合適了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sign up today, then?",
+      "phonetic": "/saɪn ʌp təˈdeɪ, ðɛn?/",
+      "zh": "那今天就辦一個？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, put me down now.",
+      "phonetic": "/jɛs, pʊt mi daʊn naʊ./",
+      "zh": "好，現在幫我報名。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Name and phone, that's all.",
+      "phonetic": "/neɪm ænd foʊn, ðæts ɔl./",
+      "zh": "姓名和電話就好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you sell a prepaid card?",
+      "phonetic": "/du ju sɛl ə ˈpriˌpeɪd kɑrd?/",
+      "zh": "你們有儲值卡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, add any amount you like.",
+      "phonetic": "/jɛs, æd ˈɛni əˈmaʊnt ju laɪk./",
+      "zh": "有，想儲多少都行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What's the best bonus deal?",
+      "phonetic": "/wʌts ðə bɛst ˈboʊnəs dil?/",
+      "zh": "儲值多少最划算？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fifty dollars, get ten free.",
+      "phonetic": "/ˈfɪfti ˈdɑlərz, ɡɛt tɛn fri./",
+      "zh": "存五十，送十塊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do members get anything extra?",
+      "phonetic": "/du ˈmɛmbɚz ɡɛt ˈɛniθɪŋ ˈɛkstrə?/",
+      "zh": "會員還有別的福利嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A free drink on birthdays.",
+      "phonetic": "/ə fri drɪŋk ɑn ˈbɜrθˌdeɪz./",
+      "zh": "生日送一杯飲品。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How does the balance work?",
+      "phonetic": "/haʊ dʌz ðə ˈbæləns wɜrk?/",
+      "zh": "餘額怎麼使用？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just pay with the card.",
+      "phonetic": "/dʒʌst peɪ wɪð ðə kɑrd./",
+      "zh": "直接用會員卡扣款。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So make mine a large.",
+      "phonetic": "/soʊ meɪk maɪn ə lɑrdʒ./",
+      "zh": "那我的也改大杯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Large suits your big thirst.",
+      "phonetic": "/lɑrdʒ suts jʊr bɪɡ θɜrst./",
+      "zh": "大杯才合你的大胃口。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I pay by phone, please?",
+      "phonetic": "/kæn aɪ peɪ baɪ foʊn, pliz?/",
+      "zh": "請讓我用手機付款。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fourteen fifty with tax, tap here.",
+      "phonetic": "/ˌfɔrˈtin ˈfɪfti wɪð tæks, tæp hɪr./",
+      "zh": "十四塊五含稅，這裡感應。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Tap paid, that was fast.",
+      "phonetic": "/tæp peɪd, ðæt wʌz fæst./",
+      "zh": "感應付款成功，好快。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Technology is our best friend.",
+      "phonetic": "/tɛkˈnɑlədʒi ɪz ˈaʊər bɛst frɛnd./",
+      "zh": "科技是我們最好的朋友。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do I get a paper receipt?",
+      "phonetic": "/du aɪ ɡɛt ə ˈpeɪpɚ rɪˈsit?/",
+      "zh": "我會拿到紙本收據嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Email works too, which one?",
+      "phonetic": "/ˈiməɪl wɜrks tu, wɪtʃ wʌn?/",
+      "zh": "寄信箱也可以，要哪種？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Email me, save some paper.",
+      "phonetic": "/ˈiməɪl mi, seɪv səm ˈpeɪpɚ./",
+      "zh": "寄電子郵件吧，省點紙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sent, check in a minute.",
+      "phonetic": "/sɛnt, tʃɛk ɪn ə ˈmɪnət./",
+      "zh": "寄出了，一分鐘後看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You had my number already?",
+      "phonetic": "/ju hæd maɪ ˈnʌmbɚ ɔlˈrɛdi./",
+      "zh": "你們居然已經有我的號碼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One tap, everything loaded.",
+      "phonetic": "/wʌn tæp, ˈɛvriθɪŋ ˈloʊdɪd./",
+      "zh": "點一下，資料全出來了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That's easier than cash.",
+      "phonetic": "/ðæts ˈizɪər ðæn kæʃ./",
+      "zh": "這比付現金方便多了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cash welcome too, always.",
+      "phonetic": "/kæʃ ˈwɛlkəm tu, ˈɔlwez./",
+      "zh": "現金我們也照收。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That blender noise is satisfying.",
+      "phonetic": "/ðæt ˈblɛndɚ nɔɪz ɪz ˈsætɪsˌfaɪɪŋ./",
+      "zh": "果汁機的聲音聽了很療癒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Twenty seconds, then it rests.",
+      "phonetic": "/ˈtwɛnti ˈsɛkəndz, ðɛn ɪt rɛsts./",
+      "zh": "打二十秒就停下來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did the green just turn bright?",
+      "phonetic": "/dɪd ðə ɡrin dʒʌst tɜrn braɪt?/",
+      "zh": "綠色那杯剛變亮了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spinach gives that fresh color.",
+      "phonetic": "/ˈspɪnətʃ ɡɪvz ðæt frɛʃ ˈkʌlɚ./",
+      "zh": "菠菜帶來那種鮮綠色。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It looks like liquid spring.",
+      "phonetic": "/ɪt lʊks laɪk ˈlɪkwɪd sprɪŋ./",
+      "zh": "看起來像春天的液體。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You should try poetry sometime.",
+      "phonetic": "/ju ʃʊd traɪ ˈpoʊətri ˈsʌmˌtaɪm./",
+      "zh": "你哪天該去寫詩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is that smell really celery?",
+      "phonetic": "/ɪz ðæt smɛl ˈrɪli ˈsɛləri?/",
+      "zh": "那個味道真的是芹菜嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just one leaf, for depth.",
+      "phonetic": "/dʒʌst wʌn lif, fɚ dɛpθ./",
+      "zh": "只放一片葉，增加層次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "No celery smell in mine, right?",
+      "phonetic": "/noʊ ˈsɛləri smɛl ɪn maɪn, raɪt?/",
+      "zh": "我那杯不會有芹菜味吧？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Barely there, apple wins.",
+      "phonetic": "/ˈbɛrli ðɛr, ˈæpəl wɪnz./",
+      "zh": "淡到沒有，蘋果味贏了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Apple wins? Now that's music.",
+      "phonetic": "/ˈæpəl wɪnz? naʊ ðæts ˈmjuzɪk./",
+      "zh": "蘋果贏了？這話太動聽。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Your cup is almost ready now.",
+      "phonetic": "/jʊr kʌp ɪz ˈɔlmoʊst ˈrɛdi naʊ./",
+      "zh": "你的杯子快好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Was that my phone buzzing?",
+      "phonetic": "/wʌz ðæt maɪ foʊn ˈbʌzɪŋ?/",
+      "zh": "是我手機剛震了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That was me, drinks are ready.",
+      "phonetic": "/ðæt wʌz mi, drɪŋks ɑr ˈrɛdi./",
+      "zh": "是我發的，飲品好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Fast! I barely sat down.",
+      "phonetic": "/fæst! aɪ ˈbɛrli sæt daʊn./",
+      "zh": "好快！我才剛坐下。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Five minutes, like I said.",
+      "phonetic": "/faɪv ˈmɪnəts, laɪk aɪ sɛd./",
+      "zh": "五分鐘，我說過吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I see the green one?",
+      "phonetic": "/kæn aɪ si ðə ɡrin wʌn?/",
+      "zh": "讓我看看那杯綠色的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here, a large Green Start.",
+      "phonetic": "/hɪr, ə lɑrdʒ ɡrin stɑrt./",
+      "zh": "給，大杯綠能起點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The color is gorgeous.",
+      "phonetic": "/ðə ˈkʌlɚ ɪz ˈɡɔrdʒəs./",
+      "zh": "這顏色真漂亮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spinach does that for us.",
+      "phonetic": "/ˈspɪnətʃ dʌz ðæt fɚ ʌs./",
+      "zh": "菠菜就是這麼加分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I taste it right now?",
+      "phonetic": "/kæn aɪ teɪst ɪt raɪt naʊ?/",
+      "zh": "我可以現在試喝嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Of course, no straw needed.",
+      "phonetic": "/əv kɔrs, noʊ strɔ ˈnidɪd./",
+      "zh": "當然，不用吸管直接喝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wow, that's smooth actually.",
+      "phonetic": "/waʊ, ðæts smuð ˈæktʃuəli./",
+      "zh": "哇，居然很滑口。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Told you, banana helps.",
+      "phonetic": "/toʊld ju, bəˈnænə hɛlps./",
+      "zh": "我說了吧，香蕉有幫忙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is there ginger in this?",
+      "phonetic": "/ɪz ðɛr ˈdʒɪndʒɚ ɪn ðɪs?/",
+      "zh": "這杯裡有薑嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, that's hers over there.",
+      "phonetic": "/noʊ, ðæts hɜrz ˈoʊvɚ ðɛr./",
+      "zh": "沒有，薑在她那杯裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good, this is just fresh greens.",
+      "phonetic": "/ɡʊd, ðɪs ɪz dʒʌst frɛʃ ɡrinz./",
+      "zh": "好，這杯純粹是蔬果鮮甜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Half sweet, exactly how you asked.",
+      "phonetic": "/hæf swit, ɪɡˈzæktli haʊ ju æskt./",
+      "zh": "半糖，完全照你說的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How's the one for my wife?",
+      "phonetic": "/haʊz ðə wʌn fɚ maɪ waɪf?/",
+      "zh": "我太太那杯怎麼樣？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Labeled, ready to seal.",
+      "phonetic": "/ˈleɪbəld, ˈrɛdi tu sil./",
+      "zh": "標好記號，正要封口。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is my cup filled to the top?",
+      "phonetic": "/ɪz maɪ kʌp fɪld tu ðə tɑp?/",
+      "zh": "我的杯子裝滿了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "To the line, never above.",
+      "phonetic": "/tu ðə laɪn, ˈnɛvɚ əˈbʌv./",
+      "zh": "到刻度線，絕不過量。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do I get a free straw?",
+      "phonetic": "/du aɪ ɡɛt ə fri strɔ?/",
+      "zh": "吸管是免費送的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two straws, one for each.",
+      "phonetic": "/tu strɔz, wʌn fɚ itʃ./",
+      "zh": "兩根吸管，一人一根。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you seal it for takeout?",
+      "phonetic": "/kæn ju sil ɪt fɚ ˈteɪkˌaʊt./",
+      "zh": "可以封口讓我外帶嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sealing machine, one moment.",
+      "phonetic": "/ˈsilɪŋ məˈʃin, wʌn ˈmoʊmənt./",
+      "zh": "上封口機，一下下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That sealing machine is cool.",
+      "phonetic": "/ðæt ˈsilɪŋ məˈʃin ɪz kul./",
+      "zh": "那台封口機好酷。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No spills, even on bikes.",
+      "phonetic": "/noʊ spɪlz, ˈivɪn ɑn baɪks./",
+      "zh": "騎車也不會灑出來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I ride home, so perfect.",
+      "phonetic": "/aɪ raɪd hoʊm, soʊ ˈpɜrfɪkt./",
+      "zh": "我騎車回家，太剛好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold it here, not the lid.",
+      "phonetic": "/hoʊld ɪt hɪr, nɑt ðə lɪd./",
+      "zh": "拿杯身，別捏杯蓋。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Any napkins I could grab?",
+      "phonetic": "/ˈɛni ˈnæpkɪnz aɪ kʊd ɡræb?/",
+      "zh": "我可以拿幾張餐巾紙嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Take three, they're by the door.",
+      "phonetic": "/teɪk θri, ðɛr baɪ ðə dɔr./",
+      "zh": "拿三張吧，在門口旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I get a bag for both?",
+      "phonetic": "/kæn aɪ ɡɛt ə bæɡ fɚ boʊθ?/",
+      "zh": "能給我一個提袋裝兩杯嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here's a paper one, sturdy.",
+      "phonetic": "/hɪrz ə ˈpeɪpɚ wʌn, ˈstɜrdi./",
+      "zh": "這個紙袋很結實。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do I need to tip you?",
+      "phonetic": "/du aɪ nid tu tɪp ju?/",
+      "zh": "我需要給小費嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The jar is there, optional.",
+      "phonetic": "/ðə dʒɑr ɪz ðɛr, ˈɑpʃənəl./",
+      "zh": "那邊有罐子，隨意。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I'll drop something in.",
+      "phonetic": "/aɪl drɑp ˈsʌmθɪŋ ɪn./",
+      "zh": "我會丟一點心意進去。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The team says thanks.",
+      "phonetic": "/ðə tim sɛz θæŋks./",
+      "zh": "大家先謝謝你囉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I still change my order?",
+      "phonetic": "/kæn aɪ stɪl tʃeɪndʒ maɪ ˈɔrdɚ./",
+      "zh": "現在還能改單嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, hers isn't sealed yet.",
+      "phonetic": "/jɛs, hɜrz ˈɪzənt sild jɛt./",
+      "zh": "還來得及，她那杯還沒封口。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Actually, honey on the side.",
+      "phonetic": "/ˈæktʃuəli, ˈhʌni ɑn ðə saɪd./",
+      "zh": "對了，她那杯附一點蜂蜜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Done, and that's free of charge.",
+      "phonetic": "/dʌn, ænd ðæts fri əv tʃɑrdʒ./",
+      "zh": "加好了，免費。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do I owe you anything more?",
+      "phonetic": "/du aɪ oʊ ju ˈɛniθɪŋ mɔr?/",
+      "zh": "我還欠你錢嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nope, the phone paid all.",
+      "phonetic": "/noʊp, ðə foʊn peɪd ɔl./",
+      "zh": "不欠，手機全付完囉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good, I hate owing people.",
+      "phonetic": "/ɡʊd, aɪ heɪt ˈoʊɪŋ ˈpipəl./",
+      "zh": "好，我最怕欠人。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You owe me a review.",
+      "phonetic": "/ju oʊ mi ə rɪˈvju./",
+      "zh": "你欠我一篇心得。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I'll text her, she's nearby.",
+      "phonetic": "/aɪl tɛkst hɜr, ʃiz ˈnɪrˌbaɪ./",
+      "zh": "我傳訊息給她，她就在附近。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two minutes and you're set.",
+      "phonetic": "/tu ˈmɪnəts ænd jʊr sɛt./",
+      "zh": "兩分鐘你就搞定啦。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My drink is separating a bit.",
+      "phonetic": "/maɪ drɪŋk ɪz ˌsɛpəˈreɪtɪŋ ə bɪt./",
+      "zh": "我的飲品有點分層了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Shake it, that's normal.",
+      "phonetic": "/ʃeɪk ɪt, ðæts ˈnɔrməl./",
+      "zh": "搖一下就好，很平常。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Fresh juice always does this, right?",
+      "phonetic": "/frɛʃ dʒus ˈɔlwez dʌz ðɪs, raɪt./",
+      "zh": "新鮮果汁都會這樣，對吧？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only the honest kind does.",
+      "phonetic": "/ˈoʊnli ðə ˈɑnɪst kaɪnd dʌz./",
+      "zh": "只有純天然的才會。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The taste today is perfect.",
+      "phonetic": "/ðə teɪst təˈdeɪ ɪz ˈpɜrfɪkt./",
+      "zh": "今天的味道完美。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The spinach crop was great.",
+      "phonetic": "/ðə ˈspɪnətʃ krɑp wʌz ɡreɪt./",
+      "zh": "這批菠菜長得特別好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Tell that to the farm, too.",
+      "phonetic": "/tɛl ðæt tu ðə fɑrm, tu./",
+      "zh": "這句話也替我誇誇農場。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Her cup has extra orange today.",
+      "phonetic": "/hɜr kʌp hæz ˈɛkstrə ˈɔrɪndʒ təˈdeɪ./",
+      "zh": "她那杯今天多加了柳橙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She asked for that, right?",
+      "phonetic": "/ʃi æskt fɚ ðæt, raɪt?/",
+      "zh": "那是她要的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, it's a small treat.",
+      "phonetic": "/noʊ, ɪts ə smɔl trit./",
+      "zh": "沒要錢，是我們的心意。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That's so sweet of you.",
+      "phonetic": "/ðæts soʊ swit əv ju./",
+      "zh": "你們真貼心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We see her twice a week.",
+      "phonetic": "/wi si hɜr twaɪs ə wik./",
+      "zh": "她一週固定來兩次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is tomorrow the same deal?",
+      "phonetic": "/ɪz təˈmɑroʊ ðə seɪm dil?/",
+      "zh": "明天還有同樣的優惠嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tomorrow's our half-off day.",
+      "phonetic": "/təˈmɑroʊz ˈaʊər hæf ɔf deɪ./",
+      "zh": "明天是我們的半價日。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Half off? What time do you open?",
+      "phonetic": "/hæf ɔf? wʌt taɪm du ju ˈoʊpən?/",
+      "zh": "半價？幾點開門？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Seven sharp, like always.",
+      "phonetic": "/ˈsɛvən ʃɑrp, laɪk ˈɔlwez./",
+      "zh": "七點整，一向如此。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I'll be here before seven.",
+      "phonetic": "/aɪl bi hɪr bɪˈfɔr ˈsɛvən./",
+      "zh": "我會七點前到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'll save the quiet stool.",
+      "phonetic": "/aɪl seɪv ðə ˈkwaɪət stul./",
+      "zh": "我幫你留那個安靜的位子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I order ahead by text?",
+      "phonetic": "/kæn aɪ ˈɔrdɚ əˈhɛd baɪ tɛkst?/",
+      "zh": "我能先傳簡訊下單嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Text ahead, I'll blend it fresh.",
+      "phonetic": "/tɛkst əˈhɛd, aɪl blɛnd ɪt frɛʃ./",
+      "zh": "你先傳訊息，我現打現做。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I bring my cousin tomorrow?",
+      "phonetic": "/ʃʊd aɪ brɪŋ maɪ ˈkʌzən təˈmɑroʊ?/",
+      "zh": "明天帶我表妹來好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "New friends get a free sample.",
+      "phonetic": "/nu frɛndz ɡɛt ə fri ˈsæmpəl./",
+      "zh": "新朋友都能試喝免費杯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She hates sweet drinks, though.",
+      "phonetic": "/ʃi heɪts swit drɪŋks, ðoʊ./",
+      "zh": "不過她不愛甜飲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Melon Cooler, zero added sugar.",
+      "phonetic": "/ˈmɛlən ˈkulɚ, ˈzɪroʊ ˈædəd ˈʃʊɡɚ./",
+      "zh": "蜜瓜沁涼，零添加糖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She'll thank you for that tip.",
+      "phonetic": "/ʃil θæŋk ju fɚ ðæt tɪp./",
+      "zh": "她會謝謝你這個建議。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Bring her, I'll make her a fan.",
+      "phonetic": "/brɪŋ hɜr, aɪl meɪk hɜr ə fæn./",
+      "zh": "帶她來，我讓她變粉絲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I recommend you on my page?",
+      "phonetic": "/kæn aɪ ˌrɛkəˈmɛnd ju ɑn maɪ peɪdʒ?/",
+      "zh": "我能在粉絲團上推薦你們嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Please do, it helps us grow.",
+      "phonetic": "/pliz du, ɪt hɛlps ʌs ɡroʊ./",
+      "zh": "拜託寫一篇，對我們有幫助。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My whole group comes Saturdays.",
+      "phonetic": "/maɪ hoʊl ɡrup kʌmz ˈsætɚˌdeɪz./",
+      "zh": "我們社團每週六都來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Group orders get big cups free.",
+      "phonetic": "/ɡrup ˈɔrdɚz ɡɛt bɪɡ kʌps fri./",
+      "zh": "團單會送大杯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Free large? Now we're talking.",
+      "phonetic": "/fri lɑrdʒ? naʊ wɪr ˈtɔkɪŋ./",
+      "zh": "大杯免費？這才有戲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Bring ten, I'll blend for all.",
+      "phonetic": "/brɪŋ tɛn, aɪl blɛnd fɚ ɔl./",
+      "zh": "帶十個人來，我全包了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I'll message the group tonight.",
+      "phonetic": "/aɪl ˈmɛsɪdʒ ðə ɡrup təˈnaɪt./",
+      "zh": "今晚我就通知社團。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tell them the juice bar sends love.",
+      "phonetic": "/tɛl ðɛm ðə dʒus bɑr sɛndz lʌv./",
+      "zh": "跟他們說果汁店問好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "They'll ask where I learned this.",
+      "phonetic": "/ðeɪl æsk wɛr aɪ lɜrnd ðɪs./",
+      "zh": "他們會問我在哪學的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Say it came from taste tests.",
+      "phonetic": "/seɪ ɪt keɪm frʌm teɪst tɛsts./",
+      "zh": "就說是試喝試出來的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What do you call the fruit of the week?",
+      "phonetic": "/wʌt du ju kɔl ðə frut əv ðə wik?/",
+      "zh": "這週的水果主打叫什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Guava Storm, try it Saturday.",
+      "phonetic": "/ˈɡwɑvə stɔrm, traɪ ɪt ˈsætɚˌdeɪ./",
+      "zh": "番石榴旋風，週六來試。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Guava? That sounds exotic.",
+      "phonetic": "/ˈɡwɑvə? ðæt saʊndz ɪɡˈzɑtɪk./",
+      "zh": "番石榴？聽起來很異國。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sweet, pink, and totally low sugar.",
+      "phonetic": "/swit, pɪŋk, ænd ˈtoʊtəli loʊ ˈʃʊɡɚ./",
+      "zh": "甜甜粉紅，糖分還很低。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My wife would love that pink.",
+      "phonetic": "/maɪ waɪf wʊd lʌv ðæt pɪŋk./",
+      "zh": "我太太會愛那個粉紅色。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then surprise her on Saturday.",
+      "phonetic": "/ðɛn sɚˈpraɪz hɜr ɑn ˈsætɚˌdeɪ./",
+      "zh": "那週六給她個驚喜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Same time tomorrow, my friend.",
+      "phonetic": "/seɪm taɪm təˈmɑroʊ, maɪ frɛnd./",
+      "zh": "明天同一時間見，朋友。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Your green soy latte awaits.",
+      "phonetic": "/jʊr ɡrin sɔɪ ˈlɑteɪ əˈweɪts./",
+      "zh": "你的豆漿綠拿鐵在等你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Latte? It's a smoothie, Sam.",
+      "phonetic": "/ˈlɑteɪ? ɪts ə ˈsmuði, sæm./",
+      "zh": "拿鐵？那是冰沙啦，山姆。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "See, you'll correct me tomorrow.",
+      "phonetic": "/si, jul kəˈrɛkt mi təˈmɑroʊ./",
+      "zh": "看吧，明天再來糾正我。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the chat today.",
+      "phonetic": "/θæŋks fɚ ðə tʃæt təˈdeɪ./",
+      "zh": "謝謝今天陪你聊天。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The shop is dull without you.",
+      "phonetic": "/ðə ʃɑp ɪz dʌl wɪˈðaʊt ju./",
+      "zh": "沒有你，店內無聊多了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Keep the blender ready.",
+      "phonetic": "/kip ðə ˈblɛndɚ ˈrɛdi./",
+      "zh": "把果汁機準備好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Always warm for my regulars.",
+      "phonetic": "/ˈɔlwez wɔrm fɚ maɪ ˈrɛɡjəlɚz./",
+      "zh": "隨時都為熟客準備著。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I'll wave at you through the window.",
+      "phonetic": "/aɪl weɪv æt ju θru ðə ˈwɪnˌdoʊ./",
+      "zh": "我會從窗戶跟你揮手。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Have a great afternoon, Tom.",
+      "phonetic": "/hæv ə ɡreɪt ˌæftɚˈnun, tɑm./",
+      "zh": "祝你下午愉快，湯姆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Bye for now, best juice crew.",
+      "phonetic": "/baɪ fɚ naʊ, bɛst dʒus kru./",
+      "zh": "先走了，最棒的果汁團隊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Bye, see you tomorrow morning.",
+      "phonetic": "/baɪ, si ju təˈmɑroʊ ˈmɔrnɪŋ./",
+      "zh": "再見，明早再見。"
+    }
+  ]
+}

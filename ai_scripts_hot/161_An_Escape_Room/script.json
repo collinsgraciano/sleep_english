@@ -1,0 +1,2458 @@
+{
+  "title": "Everyday Phrases — An Escape Room",
+  "title_zh": "密室逃脫",
+  "scene_zh": "密室逃脫 · 情境對話",
+  "title_quote": "Let's book an escape room tonight.",
+  "cefr": "B1",
+  "youtube_title": "【睡前英文聽力】🔐 實用密室逃脫必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱B1 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — An Escape Room",
+  "youtube_description": "睡著學英文！這部影片收錄實用密室逃脫情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫），從線上訂場次、挑主題、問人數時段價格和新手難度、遲到與置物櫃規定，到開場規則講解、不能暴力硬拆、拿對講機求助、分頭翻箱找線索、讀題面，再到解數字鎖、拼圖、紫外線筆、湊四位密碼、看倒數、用掉一次提示、卡住換思路，最後通關合影、看成績排名與用時、復盤哪步最過癮、推薦給朋友、再訂更難的主題，不用背，睡前聽就會。重複播放，讓英文自然進入你的大腦。👍 想學更多生活場景，請留言告訴我！別忘了訂閱+按讚。 #英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical An Escape Room phrase pairs (each pair: male normal speed → female slow speed → combined dialogue), covering booking a session online, choosing a theme, asking about group size, times, price and beginner difficulty, late arrival and locker rules, then the opening rules talk, never forcing anything, using the walkie-talkie for help, splitting up to search and reading the clues, solving number locks, jigsaws and a UV pen, building a four-digit code, watching the countdown, spending one hint and switching approach when stuck, and finally escaping, the team photo, the leaderboard time, reviewing the best step, recommending it to friends and booking a harder theme. No memorization needed—just listen before bed and absorb naturally. If you want more real-life scenarios, leave a comment! Subscribe and like!",
+  "youtube_tags": [
+    "英文聽力",
+    "睡前英文",
+    "密室逃脫英文",
+    "密室逃脫",
+    "解謎遊戲英文",
+    "休閒娛樂英文",
+    "English listening",
+    "Sleep learning",
+    "B1 English",
+    "常用英文短語",
+    "慢速英文",
+    "英文口語",
+    "Learn English",
+    "English for leisure",
+    "ESL",
+    "English conversation"
+  ],
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "An Escape Room",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "An Escape Room",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Leisure",
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "Let's book an escape room tonight.",
+      "phonetic": "/lɛts bʊk ən ɪˈskeɪp ruːm təˈnaɪt./",
+      "zh": "我們今晚訂一間密室逃脫吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good idea, I love puzzles.",
+      "phonetic": "/ɡʊd aɪˈdiə, aɪ lʌv ˈpʌzəlz./",
+      "zh": "好主意，我很愛解謎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which theme do you want?",
+      "phonetic": "/wɪtʃ θim du ju wɑnt?/",
+      "zh": "你想要哪個主題？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The pirate ship looks fun.",
+      "phonetic": "/ðə ˈpaɪrət ʃɪp lʊks fʌn./",
+      "zh": "海盜船那間看起來很好玩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hmm, the haunted house tempts me.",
+      "phonetic": "/həm, ðə ˈhɔntɪd haʊs tɛmpts mi./",
+      "zh": "嗯，鬼屋那間很吸引我。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That one is too scary for us.",
+      "phonetic": "/ðæt wʌn ɪz tu ˈskɛri fər ʌs./",
+      "zh": "那間對我們來說太嚇人了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "There's also a mystery detective room.",
+      "phonetic": "/ðɛrz ˈɔlsoʊ ə ˈmɪstəri dɪˈtɛktɪv ruːm./",
+      "zh": "還有一間偵探懸疑房。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ooh, solving a crime sounds cool.",
+      "phonetic": "/u, ˈsɑlvɪŋ ə kraɪm saʊndz kuːl./",
+      "zh": "哇，破案件聽起來很酷。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's pick the detective theme then.",
+      "phonetic": "/lɛts pɪk ðə dɪˈtɛktɪv θim ðɛn./",
+      "zh": "那我們就選偵探主題。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great choice for our first time.",
+      "phonetic": "/ɡreɪt tʃɔɪs fər ˈaʊər fɜrst taɪm./",
+      "zh": "第一次玩選這個很棒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How many people can join a team?",
+      "phonetic": "/haʊ ˈmɛni ˈpipəl kæn dʒɔɪn ə tim?/",
+      "zh": "一隊可以幾個人？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Up to six players per room.",
+      "phonetic": "/ʌp tu sɪks ˈpleɪərz pər ruːm./",
+      "zh": "每間最多六名玩家。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we book for just four?",
+      "phonetic": "/kæn wi bʊk fər dʒʌst fɔr?/",
+      "zh": "我們四人訂可以的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, four is a perfect number.",
+      "phonetic": "/jɛs, fɔr ɪz ə ˈpɜrfɪkt ˈnʌmbər./",
+      "zh": "可以，四人剛剛好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should we invite Sam and Lily?",
+      "phonetic": "/ʃʊd wi ɪnˈvaɪt sæm ænd ˈlɪli?/",
+      "zh": "要揪Sam和Lily一起來嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, the more the merrier.",
+      "phonetic": "/ʃʊr, ðə mɔr ðə ˈmɛriər./",
+      "zh": "好啊，人越多越熱鬧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What times are available tonight?",
+      "phonetic": "/wʌt taɪmz ɑr əˈveɪləbl təˈnaɪt?/",
+      "zh": "今晚有哪些時段？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Seven or nine, which is better?",
+      "phonetic": "/ˈsɛvən ɔr naɪn, wɪtʃ ɪz ˈbɛtər?/",
+      "zh": "七點或九點，哪個比較好？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's take the seven o'clock slot.",
+      "phonetic": "/lɛts teɪk ðə ˈsɛvən əˈklɑk slɑt./",
+      "zh": "我們訂七點那一場。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That gives us time for dinner.",
+      "phonetic": "/ðæt ɡɪvz ʌs taɪm fər ˈdɪnər./",
+      "zh": "這樣我們還有時間吃晚餐。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How much does it cost per person?",
+      "phonetic": "/haʊ mʌtʃ dʌz ɪt kɔst pər ˈpɜrsən?/",
+      "zh": "一個人多少錢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Twenty-five dollars for each player.",
+      "phonetic": "/ˈtwɛnti faɪv ˈdɑlərz fər itʃ ˈpleɪər./",
+      "zh": "每位玩家二十五美元。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is that price for the whole team?",
+      "phonetic": "/ɪz ðæt praɪs fər ðə hoʊl tim?/",
+      "zh": "那個價格是整隊算嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, it's charged per person.",
+      "phonetic": "/noʊ, ɪts tʃɑrdʒd pər ˈpɜrsən./",
+      "zh": "不是，是按人頭收費。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So four of us pay one hundred.",
+      "phonetic": "/soʊ fɔr ʌv ʌs peɪ wʌn ˈhʌndrəd./",
+      "zh": "所以我們四人付一百。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Exactly, that's a fair deal.",
+      "phonetic": "/ɪɡˈzæktli, ðæts ə fɛr dil./",
+      "zh": "沒錯，這樣挺划算。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Any discount if we're all students?",
+      "phonetic": "/ˈɛni ˈdɪskaʊnt ɪf wɪr ɔl ˈstudənts?/",
+      "zh": "如果我們全是學生有折扣嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, five dollars off each.",
+      "phonetic": "/ʃʊr, faɪv ˈdɑlərz ɔf itʃ./",
+      "zh": "當然，一人折五美元。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we pay by card right now?",
+      "phonetic": "/kæn wi peɪ baɪ kɑrd raɪt naʊ?/",
+      "zh": "我們現在可以刷卡付嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pay online now, or at the desk.",
+      "phonetic": "/peɪ ɑnˈlaɪn naʊ, ɔr æt ðə dɛsk./",
+      "zh": "線上付或到現場付都可以。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is this room hard for beginners?",
+      "phonetic": "/ɪz ðɪs ruːm hɑrd fər bɪˈɡɪnərz?/",
+      "zh": "這間對新手難嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It's rated medium, so it's okay.",
+      "phonetic": "/ɪts ˈreɪtɪd ˈmidiəm, soʊ ɪts oʊˈkeɪ./",
+      "zh": "難度評為中等，還好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "None of us have done one.",
+      "phonetic": "/nʌn ʌv ʌs hæv dʌn wʌn./",
+      "zh": "我們都沒玩過密室。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then start with an easier theme.",
+      "phonetic": "/ðɛn stɑrt wɪð ən ˈiːziər θim./",
+      "zh": "那就從簡單一點的主題開始。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which room is the easiest?",
+      "phonetic": "/wɪtʃ ruːm ɪz ði ˈiːziəst?/",
+      "zh": "哪一間最容易？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The garden mystery is the mildest.",
+      "phonetic": "/ðə ˈɡɑrdən ˈmɪstəri ɪz ðə ˈmaɪldɪst./",
+      "zh": "花園之謎最輕鬆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "But the detective room tempts me.",
+      "phonetic": "/bət ðə dɪˈtɛktɪv ruːm tɛmpts mi./",
+      "zh": "可是偵探房很吸引我。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then we'll just have to try.",
+      "phonetic": "/ðɛn wil dʒʌst hæv tu traɪ./",
+      "zh": "那我們就試試看吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How much time do we have in there?",
+      "phonetic": "/haʊ mʌtʃ taɪm du wi hæv ɪn ðɛr?/",
+      "zh": "我們在裡面有多少時間？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sixty minutes on the clock.",
+      "phonetic": "/ˈsɪksti ˈmɪnɪts ɑn ðə klɑk./",
+      "zh": "計時器上是六十分鐘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do most teams actually win?",
+      "phonetic": "/du moʊst timz ˈæktʃuəli wɪn?/",
+      "zh": "大多數隊伍真的能過關嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "About half make it out in time.",
+      "phonetic": "/əˈbaʊt hæf meɪk ɪt aʊt ɪn taɪm./",
+      "zh": "大約一半能及時逃出。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Half sounds a little discouraging.",
+      "phonetic": "/hæf saʊndz ə ˈlɪtəl dɪsˈkɜrɪdʒɪŋ./",
+      "zh": "一半的機率，聽起來有點令人灰心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Don't worry, we'll do fine.",
+      "phonetic": "/doʊnt ˈwɜri, wil du faɪn./",
+      "zh": "別擔心，我們會沒事的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What happens when time runs out?",
+      "phonetic": "/wʌt ˈhæpənz wɛn taɪm rʌnz aʊt?/",
+      "zh": "時間用完會怎麼樣？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Staff open the door and walk you out.",
+      "phonetic": "/stæf ˈoʊpən ðə dɔr ænd wɔk ju aʊt./",
+      "zh": "工作人員會開門帶你們出去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do we need to arrive early?",
+      "phonetic": "/du wi nid tu əˈraɪv ˈɜrli?/",
+      "zh": "我們需要早點到嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Please come fifteen minutes early.",
+      "phonetic": "/pliz kʌm fɪfˈtin ˈmɪnɪts ˈɜrli./",
+      "zh": "請提前十五分鐘到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Why do we need to be early?",
+      "phonetic": "/waɪ du wi nid tu bi ˈɜrli?/",
+      "zh": "為什麼要提早到？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "There's a quick rules talk first.",
+      "phonetic": "/ðɛrz ə kwɪk rulz tɔk fɜrst./",
+      "zh": "開場會先簡單講規則。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What if we show up late?",
+      "phonetic": "/wʌt ɪf wi ʃoʊ ʌp leɪt?/",
+      "zh": "要是我們遲到呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Late teams can lose game time.",
+      "phonetic": "/leɪt timz kæn luz ɡeɪm taɪm./",
+      "zh": "遲到的隊伍會損失遊戲時間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's plan to leave early then.",
+      "phonetic": "/lɛts plæn tu liv ˈɜrli ðɛn./",
+      "zh": "那我們計畫提早出門。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, traffic is awful around seven.",
+      "phonetic": "/jɛs, ˈtræfɪk ɪz ˈɔfəl əˈraʊnd ˈsɛvən./",
+      "zh": "對，七點左右堵得厲害。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I text the group the details?",
+      "phonetic": "/ʃʊd aɪ tɛkst ðə ɡrup ðə ˈdiˌteɪlz?/",
+      "zh": "我要傳細節給大家嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, send them the address too.",
+      "phonetic": "/jɛs, sɛnd ðɛm ði əˈdrɛs tu./",
+      "zh": "要，也把地址傳過去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Any age limit for this game?",
+      "phonetic": "/ˈɛni eɪdʒ ˈlɪmɪt fər ðɪs ɡeɪm?/",
+      "zh": "這遊戲有年齡限制嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Kids under ten need an adult.",
+      "phonetic": "/kɪdz ˈʌndər tɛn nid ən əˈdʌlt./",
+      "zh": "十歲以下需要家長陪同。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I confirm my booking online?",
+      "phonetic": "/ʃʊd aɪ kənˈfɜrm maɪ ˈbʊkɪŋ ɑnˈlaɪn?/",
+      "zh": "我要在線上確認訂位嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Check your email for a code.",
+      "phonetic": "/tʃɛk jɔr ˈimeɪl fər ə koʊd./",
+      "zh": "查看你的郵件，裡面有入場代碼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Still, seven works despite traffic.",
+      "phonetic": "/stɪl, ˈsɛvən wɜrks dɪˈspɛt ˈtræfɪk./",
+      "zh": "儘管塞車，七點還是合適。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Agreed, we'll simply leave early.",
+      "phonetic": "/əˈɡrid, wil ˈsɪmpli liv ˈɜrli./",
+      "zh": "同意，我們提早出發就行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we cancel if plans change?",
+      "phonetic": "/kæn wi ˈkænsəl ɪf plænz tʃeɪndʒ?/",
+      "zh": "如果計劃有變，我們能取消嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It's free to cancel up to twenty-four hours.",
+      "phonetic": "/ɪts fri tu ˈkænsəl ʌp tu ˈtwɛnti fɔr ˈaʊərz./",
+      "zh": "提前二十四小時可免費取消。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We might bring snacks, is that fine?",
+      "phonetic": "/wi maɪt brɪŋ snæks, ɪz ðæt faɪn?/",
+      "zh": "我們可能帶點心，可以嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No food inside, but the lobby's okay.",
+      "phonetic": "/noʊ fuːd ɪnˈsaɪd, bət ðə ˈlɑbiz oʊˈkeɪ./",
+      "zh": "場內不能吃，大廳可以。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is there parking near the building?",
+      "phonetic": "/ɪz ðɛr ˈpɑrkɪŋ nɪr ðə ˈbɪldɪŋ?/",
+      "zh": "大樓附近有位子停車嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, a small lot behind it.",
+      "phonetic": "/jɛs, ə smɔl lɑt bɪˈhaɪnd ɪt./",
+      "zh": "有，後面有一個小停車場。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I print anything for this?",
+      "phonetic": "/ʃʊd aɪ prɪnt ˈɛniθɪŋ fər ðɪs?/",
+      "zh": "我需要列印什麼資料嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, show it on your phone.",
+      "phonetic": "/noʊ, ʃoʊ ɪt ɑn jɔr foʊn./",
+      "zh": "不用，用手機顯示就行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where can we leave our bags?",
+      "phonetic": "/wɛr kæn wi liv ˈaʊər bæɡz?/",
+      "zh": "我們的包包可以放哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "There are free lockers by the entrance.",
+      "phonetic": "/ðɛr ɑr fri ˈlɑkərz baɪ ði ˈɛntrəns./",
+      "zh": "入口旁有免費置物櫃。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should we store our phones too?",
+      "phonetic": "/ʃʊd wi stɔr ˈaʊər foʊnz tu?/",
+      "zh": "我們的手機也要收起來嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Please, no phones inside the room.",
+      "phonetic": "/pliz, noʊ foʊnz ɪnˈsaɪd ðə ruːm./",
+      "zh": "請收好，房內不能帶手機。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I keep my watch on?",
+      "phonetic": "/kæn aɪ kip maɪ wɑtʃ ɑn?/",
+      "zh": "我可以戴手錶嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Watches are fine, jewelry maybe not.",
+      "phonetic": "/ˈwɑtʃəz ɑr faɪn, ˈdʒuːlri ˈmeɪbi nɑt./",
+      "zh": "手錶沒問題，首飾可能不行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do we have to sign anything?",
+      "phonetic": "/du wi hæv tu saɪn ˈɛniθɪŋ?/",
+      "zh": "我們要簽什麼嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just a short waiver at the desk.",
+      "phonetic": "/dʒʌst ə ʃɔrt ˈweɪvər æt ðə dɛsk./",
+      "zh": "只需在櫃台簽個同意書。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the room hot or cold?",
+      "phonetic": "/ɪz ðə ruːm hɑt ɔr koʊld?/",
+      "zh": "房間是熱還是冷？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It's air-conditioned, bring a layer.",
+      "phonetic": "/ɪts ˈɛrkənˌdɪʃənd, brɪŋ ə ˈleɪər./",
+      "zh": "有空調，帶件外套。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should we wear fancy clothes?",
+      "phonetic": "/ʃʊd wi wɛr ˈfænsi kloʊðz?/",
+      "zh": "我們要穿講究一點嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, comfy clothes work best.",
+      "phonetic": "/noʊ, ˈkʌmfi kloʊðz wɜrk bɛst./",
+      "zh": "不用，舒服的衣服最好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we take our water in?",
+      "phonetic": "/kæn wi teɪk ˈaʊər ˈwɔtər ɪn?/",
+      "zh": "水可以帶進去嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sealed bottles only, no open cups.",
+      "phonetic": "/sild ˈbɑtəlz ˈoʊnli, noʊ ˈoʊpən kʌps./",
+      "zh": "只能帶封口的瓶子，不能開口杯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we touch the props inside?",
+      "phonetic": "/kæn wi tʌtʃ ðə prɑps ɪnˈsaɪd?/",
+      "zh": "裡面的道具可以隨便摸嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Everything's meant to be handled.",
+      "phonetic": "/ˈɛvriθɪŋz mɛnt tu bi ˈhændəld./",
+      "zh": "所有東西都是可以動的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the escape room in English?",
+      "phonetic": "/ɪz ði ɪˈskeɪp ruːm ɪn ˈɪŋɡlɪʃ?/",
+      "zh": "密室是英文的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, all clues are in English.",
+      "phonetic": "/jɛs, ɔl kluz ɑr ɪn ˈɪŋɡlɪʃ./",
+      "zh": "是的，所有線索都是英文。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My English is only so-so.",
+      "phonetic": "/maɪ ˈɪŋɡlɪʃ ɪz ˈoʊnli ˈsoʊˈsoʊ./",
+      "zh": "我英文普普通通。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The clues use very easy words.",
+      "phonetic": "/ðə kluz juz ˈvɛri ˈiːzi wɜrdz./",
+      "zh": "線索用的字都很簡單。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will someone guide us if we're lost?",
+      "phonetic": "/wɪl ˈsʌmwʌn ɡaɪd ʌs ɪf wɪr lɔst?/",
+      "zh": "如果我們卡住會有人帶嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A host watches through the camera.",
+      "phonetic": "/ə hoʊst ˈwɑtʃəz θru ðə ˈkæmərə./",
+      "zh": "主持人會從攝影機看你們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What if we get totally stuck?",
+      "phonetic": "/wʌt ɪf wi ɡɛt ˈtoʊtli stʌk?/",
+      "zh": "如果我們完全卡住了怎麼辦？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You get three hints, that's plenty.",
+      "phonetic": "/ju ɡɛt θri hɪnts, ðæts ˈplɛnti./",
+      "zh": "你們有三次提示，很夠用了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I already feel a little nervous.",
+      "phonetic": "/aɪ ɔːlˈrɛdi fil ə ˈlɪtəl ˈnɜrvəs./",
+      "zh": "我已經有點緊張了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Me too, but mostly excited.",
+      "phonetic": "/mi tu, bət ˈmoʊstli ɪkˈsaɪtɪd./",
+      "zh": "我也是，但更多是興奮。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Okay, our booking is confirmed.",
+      "phonetic": "/oʊˈkeɪ, ˈaʊər ˈbʊkɪŋ ɪz kənˈfɜrmd./",
+      "zh": "好，我們的訂位確認了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Perfect, see you there at seven.",
+      "phonetic": "/ˈpɜrfɪkt, si ju ðɛr æt ˈsɛvən./",
+      "zh": "太好了，七點見。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am counting down the minutes.",
+      "phonetic": "/aɪ æm ˈkaʊntɪŋ daʊn ðə ˈmɪnɪts./",
+      "zh": "我已經在倒數時間了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "This is going to be so fun.",
+      "phonetic": "/ðɪs ɪz ˈɡoʊɪŋ tu bi soʊ fʌn./",
+      "zh": "這一定會非常好玩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Welcome, here's how your game works.",
+      "phonetic": "/ˈwɛlkəm, hɪrz haʊ jɔr ɡeɪm wɜrks./",
+      "zh": "歡迎，遊戲是這樣進行的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great, we're ready to listen.",
+      "phonetic": "/ɡreɪt, wɪr ˈrɛdi tu ˈlɪsən./",
+      "zh": "好，我們準備聆聽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your goal is to escape the room.",
+      "phonetic": "/jɔr ɡoʊl ɪz tu ɪˈskeɪp ðə ruːm./",
+      "zh": "你們的目標是逃出房間。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And we have one hour, right?",
+      "phonetic": "/ænd wi hæv wʌn ˈaʊər, raɪt?/",
+      "zh": "我們有一小時，對吧？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Correct, the clock starts now.",
+      "phonetic": "/kəˈrɛkt, ðə klɑk stɑrts naʊ./",
+      "zh": "沒錯，計時現在開始。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Understood, let's beat that timer.",
+      "phonetic": "/ˌʌndərˈstʊd, lɛts bit ðæt ˈtaɪmər./",
+      "zh": "了解，我們來打敗時限。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please never force anything open.",
+      "phonetic": "/pliz ˈnɛvər fɔrs ˈɛniθɪŋ ˈoʊpən./",
+      "zh": "請千萬不要硬撬開東西。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So no pulling or kicking hard?",
+      "phonetic": "/soʊ noʊ ˈpʊlɪŋ ɔr ˈkɪkɪŋ hɑrd?/",
+      "zh": "所以不能用力拉或踢？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Exactly, nothing needs real strength.",
+      "phonetic": "/ɪɡˈzæktli, ˈnʌθɪŋ nidz ril strɛŋθ./",
+      "zh": "對，什麼都不需要力氣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, we'll be gentle with props.",
+      "phonetic": "/ɡʊd, wil bi ˈdʒɛntəl wɪð prɑps./",
+      "zh": "好，我們會輕拿道具。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Don't use tools on the locks.",
+      "phonetic": "/doʊnt juz tulz ɑn ðə lɑks./",
+      "zh": "不要在鎖上動工具。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No screwdrivers or keys from home?",
+      "phonetic": "/noʊ ˈskrudrˌaɪvərz ɔr kiz frʌm hoʊm?/",
+      "zh": "不能自備螺絲起子或鑰匙？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Right, every lock opens by clues.",
+      "phonetic": "/raɪt, ˈɛvri lɑk ˈoʊpənz baɪ kluz./",
+      "zh": "對，每把鎖都靠線索打開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That keeps every team on track.",
+      "phonetic": "/ðæt kips ˈɛvri tim ɑn træk./",
+      "zh": "這樣每支隊伍起點都一樣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please don't tear paper or books.",
+      "phonetic": "/pliz doʊnt tɛr ˈpeɪpər ɔr bʊks./",
+      "zh": "請別撕紙或書。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We promise, no tearing anything.",
+      "phonetic": "/wi ˈprɑmɪs, noʊ ˈtɪrɪŋ ˈɛniθɪŋ./",
+      "zh": "我們保證不撕任何東西。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Here's a walkie-talkie for help.",
+      "phonetic": "/hɪrz ə ˈwɔkiˌtɔki fər hɛlp./",
+      "zh": "這是對講機，方便求助。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Do we press it to talk?",
+      "phonetic": "/du wi prɛs ɪt tu tɔk?/",
+      "zh": "要按住才能說話嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hold the button and speak clearly.",
+      "phonetic": "/hoʊld ðə ˈbʌtən ænd spik ˈklɪrli./",
+      "zh": "按住按鈕，清楚講。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Got it, we'll call if stuck.",
+      "phonetic": "/ɡɑt ɪt, wil kɔl ɪf stʌk./",
+      "zh": "懂了，卡住就呼叫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We also watch you on camera.",
+      "phonetic": "/wi ˈɔlsoʊ wɑtʃ ju ɑn ˈkæmərə./",
+      "zh": "我們也會用攝影機看你們。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then you can help us anytime?",
+      "phonetic": "/ðɛn ju kæn hɛlp ʌs ˈɛniˌtaɪm?/",
+      "zh": "那你們隨時都能幫我們？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, message us through the speaker.",
+      "phonetic": "/jɛs, ˈmɛsɪdʒ ʌs θru ðə ˈspikər./",
+      "zh": "是的，透過喇叭跟我們說話。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Perfect, that feels less stressful.",
+      "phonetic": "/ˈpɜrfɪkt, ðæt filz lɛs ˈstrɛsfəl./",
+      "zh": "太好了，這樣壓力小一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hints cost thirty seconds each.",
+      "phonetic": "/hɪnts kɔst ˈθɜrti ˈsɛkəndz itʃ./",
+      "zh": "每次提示扣三十秒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A small price to keep moving.",
+      "phonetic": "/ə smɔl praɪs tu kip ˈmuvɪŋ./",
+      "zh": "想繼續前進，代價很小。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Remember, no phones in here.",
+      "phonetic": "/rɪˈmɛmbər, noʊ foʊnz ɪn hir./",
+      "zh": "記得，這裡不能用手機。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We stored them all in lockers.",
+      "phonetic": "/wi stɔrd ðɛm ɔl ɪn ˈlɑkərz./",
+      "zh": "我們全都放在寄物櫃了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The emergency exit is behind you.",
+      "phonetic": "/ði ɪˈmɜrdʒənsi ˈɛɡzɪt ɪz bɪˈhaɪnd ju./",
+      "zh": "緊急出口在你們身後。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good to know where it is.",
+      "phonetic": "/ɡʊd tu noʊ wɛr ɪt ɪz./",
+      "zh": "知道位置真好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "If you feel uneasy, just leave.",
+      "phonetic": "/ɪf ju fil ʌnˈizi, dʒʌst liv./",
+      "zh": "如果覺得不舒服，就可以離開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No problem, we're calm so far.",
+      "phonetic": "/noʊ ˈprɑbləm, wɪr kɑm soʊ fɑr./",
+      "zh": "沒問題，我們目前很冷靜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Alright, the room is all yours.",
+      "phonetic": "/əˈraɪt, ðə ruːm ɪz ɔl jɔrz./",
+      "zh": "好了，房間交給你們了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let's split up and search.",
+      "phonetic": "/lɛts splɪt ʌp ænd sɜrtʃ./",
+      "zh": "我們分頭找找看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You take the desk, I'll do shelves.",
+      "phonetic": "/ju teɪk ðə dɛsk, aɪl du ʃɛlvz./",
+      "zh": "你查書桌，我搜架子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sounds good, meet back in five.",
+      "phonetic": "/saʊndz ɡʊd, mit bæk ɪn faɪv./",
+      "zh": "好，五分鐘後集合。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Look under mats and behind frames.",
+      "phonetic": "/lʊk ˈʌndər mæts ænd bɪˈhaɪnd freɪmz./",
+      "zh": "看看墊子下面和相框後面。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Okay, digging into the desk now.",
+      "phonetic": "/oʊˈkeɪ, ˈdɪɡɪŋ ˈɪntu ðə dɛsk naʊ./",
+      "zh": "好，我現在就翻書桌。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I found a locked wooden box.",
+      "phonetic": "/aɪ faʊnd ə lɑkt ˈwʊdən bɑks./",
+      "zh": "我找到一個上鎖的木盒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Does it have a keyhole?",
+      "phonetic": "/dʌz ɪt hæv ə ˈkihoʊl?/",
+      "zh": "它有鎖孔嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "No, it wants a number code.",
+      "phonetic": "/noʊ, ɪt wɑnts ə ˈnʌmbər koʊd./",
+      "zh": "沒有，它要數字密碼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So a number clue is nearby.",
+      "phonetic": "/soʊ ə ˈnʌmbər klus ɪz ˈnɪrˌbaɪ./",
+      "zh": "所以數字線索就在附近。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Check these old books for marks.",
+      "phonetic": "/tʃɛk ðiz oʊld bʊks fər mɑrks./",
+      "zh": "翻翻這些舊書看有無記號。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "This page has one date in red!",
+      "phonetic": "/ðɪs peɪdʒ hæz wʌn deɪt ɪn rɛd./",
+      "zh": "這一頁有個日期是紅色的！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That's probably an important clue.",
+      "phonetic": "/ðæts ˈprɑbəbli ən ɪmˈpɔrtənt klus./",
+      "zh": "那可能是重要線索。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Jot it down on the pad.",
+      "phonetic": "/dʒɑt ɪt daʊn ɑn ðə pæd./",
+      "zh": "我這就把它記在便條上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Write down clues as you find them.",
+      "phonetic": "/raɪt daʊn kluz æz ju faɪnd ðɛm./",
+      "zh": "找到線索就馬上寫下來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good tip, memory gets messy.",
+      "phonetic": "/ɡʊd tɪp, ˈmɛməri gɛts ˈmɛsi./",
+      "zh": "好建議，記憶會亂。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I found a map with dates.",
+      "phonetic": "/aɪ faʊnd ə mæp wɪð deɪts./",
+      "zh": "我找到一張有日期的地圖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Do the dates mean numbers?",
+      "phonetic": "/du ðə deɪts min ˈnʌmbərz?/",
+      "zh": "日期代表數字嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Maybe they match a calendar lock.",
+      "phonetic": "/ˈmeɪbi ðeɪ mætʃ ə ˈkæləndər lɑk./",
+      "zh": "也許對應日曆鎖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So where is that calendar lock?",
+      "phonetic": "/soʊ wɛr ɪz ðæt ˈkæləndər lɑk?/",
+      "zh": "那日曆鎖到底在哪裡？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A riddle card says, solve me first.",
+      "phonetic": "/ə ˈrɪdəl kɑrd sɛz, sɑlv mi fɜrst./",
+      "zh": "有張謎題卡寫著：先解開我。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Answer the riddle, then it opens.",
+      "phonetic": "/ˈænsər ðə ˈrɪdəl, ðɛn ɪt ˈoʊpənz./",
+      "zh": "答對謎題它才會打開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "These riddles are strangely worded.",
+      "phonetic": "/ðiz ˈrɪdəlz ɑr ˈstreɪndʒli ˈwɜrdəd./",
+      "zh": "這些謎語用詞好奇怪。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Read them slowly, maybe twice.",
+      "phonetic": "/rid ðɛm ˈsloʊli, ˈmeɪbi twaɪs./",
+      "zh": "慢慢讀，也許讀兩遍。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I have keys, no doors. Hmm.",
+      "phonetic": "/aɪ hæv kiz, noʊ dɔrz, hʌm./",
+      "zh": "我有鍵卻沒有門，嗯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A piano! It has keys.",
+      "phonetic": "/ə piˈænoʊ! ɪt hæz kiz./",
+      "zh": "是鋼琴！它有琴鍵。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Nice, let's check the piano now.",
+      "phonetic": "/naɪs, lɛts tʃɛk ðə piˈænoʊ naʊ./",
+      "zh": "漂亮，我們去檢查鋼琴。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Look, a note taped under the keys!",
+      "phonetic": "/lʊk, ə noʊt teɪpt ˈʌndər ðə kiːz!/",
+      "zh": "看，琴鍵下面貼著一張紙條！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Read it out, what does it say?",
+      "phonetic": "/rid ɪt aʊt, wʌt dʌz ɪt seɪ?/",
+      "zh": "唸出來，上面寫什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I see letters written small.",
+      "phonetic": "/aɪ si ˈlɛtərz ˈrɪtən smɔl./",
+      "zh": "我看到寫得很小的字母。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you read the tiny letters?",
+      "phonetic": "/kæn ju rid ðə ˈtaɪni ˈlɛtərz?/",
+      "zh": "那些小字你看得清嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It says the answer is north.",
+      "phonetic": "/ɪt sɛz ði ˈænsər ɪz nɔrθ./",
+      "zh": "它說答案是北方。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "North must mean that wall.",
+      "phonetic": "/nɔrθ mʌst min ðæt wɔl./",
+      "zh": "北一定是指那面牆。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let's examine the wall carefully.",
+      "phonetic": "/lɛts ɪɡˈzæmən ðə wɔl ˈkɛrfəli./",
+      "zh": "我們仔細檢查那面牆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Look, a calendar lock on the wall!",
+      "phonetic": "/lʊk, ə ˈkæləndər lɑk ɑn ðə wɔl!/",
+      "zh": "看，牆上有個日曆鎖！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Our clue lists several possible dates.",
+      "phonetic": "/ˈaʊər klus lɪsts ˈsɛvərəl ˈpɑsəbl deɪts./",
+      "zh": "但我們的線索列了好幾個可能日期。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Try the circled month and day.",
+      "phonetic": "/traɪ ðə ˈsɜrkəld mʌnθ ænd deɪ./",
+      "zh": "試試圈起來的月和日。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It clicked! A panel swung open.",
+      "phonetic": "/ɪt klɪkt! ə ˈpænəl swʌŋ ˈoʊpən./",
+      "zh": "喀嚓一聲，有個面板轉開了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Inside is a small brass key.",
+      "phonetic": "/ɪnˈsaɪd ɪz ə smɔl bræz ki./",
+      "zh": "裡面是一把小黃銅鑰匙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What does this small key open?",
+      "phonetic": "/wʌt dʌz ðɪs smɔl ki ˈoʊpən?/",
+      "zh": "這把小鑰匙能開什麼？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Try the drawer by the window.",
+      "phonetic": "/traɪ ðə drɔər baɪ ðə ˈwɪndoʊ./",
+      "zh": "試試窗邊那個抽屜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It fits! There's more inside.",
+      "phonetic": "/ɪt fɪts! ðɛrz mɔr ɪnˈsaɪd./",
+      "zh": "開鎖了！裡面還有東西。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Check that old shoe on the floor!",
+      "phonetic": "/tʃɛk ðæt oʊld ʃu ɑn ðə flɔr!/",
+      "zh": "看看地板上那隻舊鞋子！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, a note with colored dots!",
+      "phonetic": "/jɛs, ə noʊt wɪð ˈkʌldərd dɑts./",
+      "zh": "真的有，一張畫著彩色圓點的紙條！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We split tasks, that's working.",
+      "phonetic": "/wi splɪt tæsks, ðæts ˈwɜrkɪŋ./",
+      "zh": "我們分工，效果不錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Teamwork really saves us time.",
+      "phonetic": "/ˈtimwɜrk ˈrɪəli seɪvz ʌs taɪm./",
+      "zh": "團隊合作真的省時間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Keep talking about what you see.",
+      "phonetic": "/kip ˈtɔkɪŋ əˈbaʊt wʌt ju si./",
+      "zh": "繼續說你看到什麼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sharing details speeds us up.",
+      "phonetic": "/ˈʃɛərɪŋ ˈdiˌteɪlz spidz ʌs ʌp./",
+      "zh": "分享細節會讓我們更快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This photo has a circled year.",
+      "phonetic": "/ðɪs ˈfoʊtoʊ hæz ə ˈsɜrkəld jɪr./",
+      "zh": "這照片上圈了一個年份。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Noted, right beside the map dates.",
+      "phonetic": "/ˈnoʊtɪd, raɪt bɪˈsaɪd ðə mæp deɪts./",
+      "zh": "記下了，寫在地圖日期旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This note smells like old paper.",
+      "phonetic": "/ðɪs noʊt smɛlz laɪk oʊld ˈpeɪpər./",
+      "zh": "紙條聞起來像舊紙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Careful, don't crumble it.",
+      "phonetic": "/ˈkɛrfəl, doʊnt ˈkrʌmbəl ɪt./",
+      "zh": "小心，彆把它碎掉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I can't open this puzzle box.",
+      "phonetic": "/aɪ kænt ˈoʊpən ðɪs ˈpʌzəl bɑks./",
+      "zh": "我打不開這個謎盒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Did you check for a latch?",
+      "phonetic": "/dɪd ju tʃɛk fər ə lætʃ?/",
+      "zh": "你有沒有找開關？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "There's a slide on the bottom.",
+      "phonetic": "/ðɛrz ə slaɪd ɑn ðə ˈbɑtəm./",
+      "zh": "底部有個滑動的地方。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ah, it opens that easily!",
+      "phonetic": "/ɑ, ɪt ˈoʊpənz ðæt ˈiːzəli!/",
+      "zh": "啊，原來這麼容易就開了！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Don't overthink every single thing.",
+      "phonetic": "/doʊnt ˈoʊvərˌθɪŋk ˈɛvri ˈsɪŋɡəl θɪŋ./",
+      "zh": "彆把每件事都想複雜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Right, some clues are simple.",
+      "phonetic": "/raɪt, sʌm kluz ɑr ˈsɪmpəl./",
+      "zh": "對，有些線索很單純。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The clock shows twenty gone.",
+      "phonetic": "/ðə klɑk ʃoʊz ˈtwɛnti ɡɔn./",
+      "zh": "計時器顯示已過二十分鐘。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So fast, we need to hurry.",
+      "phonetic": "/soʊ fæst, wi nid tu ˈhɜri./",
+      "zh": "好快，我們得抓緊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's meet at the middle table.",
+      "phonetic": "/lɛts mit æt ðə ˈmɪdəl ˈteɪbəl./",
+      "zh": "我們到中間那張桌子碰頭。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Bring every clue you found.",
+      "phonetic": "/brɪŋ ˈɛvri klus ju faʊnd./",
+      "zh": "把你找到的線索都拿來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This magnet letter looks random.",
+      "phonetic": "/ðɪs ˈmæɡnət ˈlɛtər lʊks ˈrændəm./",
+      "zh": "這個字母磁鐵看起來很隨機。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Maybe it spells a hidden word.",
+      "phonetic": "/ˈmeɪbi ɪt spɛlz ə ˈhɪdən wɜrd./",
+      "zh": "也許它能拼出一個暗語。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good idea, line them up now.",
+      "phonetic": "/ɡʊd aɪˈdiə, laɪn ðɛm ʌp naʊ./",
+      "zh": "好點子，現在把它們排一排。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It reads look under the mirror.",
+      "phonetic": "/ɪt ridz lʊk ˈʌndər ðə ˈmɪrər./",
+      "zh": "拼出來是「看鏡子下面」。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's lift the mirror and look.",
+      "phonetic": "/lɛts lɪft ðə ˈmɪrər ænd lʊk./",
+      "zh": "我們把鏡子抬起來看看。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A small box sits underneath!",
+      "phonetic": "/ə smɔl bɑks sɪts ˌʌndərˈniθ!/",
+      "zh": "下面放著一個小盒子！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's focus on the number locks.",
+      "phonetic": "/lɛts ˈfoʊkəs ɑn ðə ˈnʌmbər lɑks./",
+      "zh": "我們專心破解數字鎖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Which numbers should we even try?",
+      "phonetic": "/wɪtʃ ˈnʌmbərz ʃʊd wi ˈivɪn traɪ?/",
+      "zh": "我們到底該試哪些數字？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The circled dates, remember the map.",
+      "phonetic": "/ðə ˈsɜrkəld deɪts, rɪˈmɛmbər ðə mæp./",
+      "zh": "是那些圈起來的日期，還記得那張地圖嗎。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, 1821 and some smaller ones.",
+      "phonetic": "/jɛs, eɪˈtin ˈtwɛnti wʌn ænd sʌm ˈsmɔlər wʌnz./",
+      "zh": "對，一八二一，還有幾個較小的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Our wooden box wants four digits.",
+      "phonetic": "/ˈaʊər ˈwʊdən bɑks wɑnts fɔr ˈdɪdʒɪts./",
+      "zh": "我們的木盒要剛好四位數字。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So we must choose which ones.",
+      "phonetic": "/soʊ wi mʌst tʃuz wɪtʃ wʌnz./",
+      "zh": "所以得挑出是哪四個。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Try the year from the photo.",
+      "phonetic": "/traɪ ðə jɪr frʌm ðə ˈfoʊtoʊ./",
+      "zh": "試試照片上的那一年。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's four digits, worth a shot.",
+      "phonetic": "/ðæts fɔr ˈdɪdʒɪts, wɜrθ ə ʃɑt./",
+      "zh": "那是四位數，值得一試。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I'll dial one eight two one now.",
+      "phonetic": "/aɪl ˈdaɪəl wʌn eɪt tu wʌn naʊ./",
+      "zh": "我現在撥一八二一。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Any beeping? Did it open?",
+      "phonetic": "/ˈɛni ˈbipɪŋ? dɪd ɪt ˈoʊpən?/",
+      "zh": "有聲音嗎？開了嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "No, the light stayed red.",
+      "phonetic": "/noʊ, ðə laɪt steɪd rɛd./",
+      "zh": "沒有，燈還是紅色。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wrong code, let's rethink it.",
+      "phonetic": "/rɔŋ koʊd, lɛts riˈθɪŋk ɪt./",
+      "zh": "密碼錯了，我們重新想。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Don't repeat a code that failed.",
+      "phonetic": "/doʊnt rɪˈpit ə koʊd ðæt feɪld./",
+      "zh": "彆再試已經失敗的密碼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "True, that wastes our clock.",
+      "phonetic": "/tru, ðæt weɪsts ˈaʊər klɑk./",
+      "zh": "沒錯，那會浪費我們的時間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Look, this box holds a black light!",
+      "phonetic": "/lʊk, ðɪs bɑks hoʊldz ə blæk laɪt./",
+      "zh": "看，這個盒子裡有盞紫光燈！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And an invisible ink pen, too!",
+      "phonetic": "/ænd ən ɪnˈvɪzəbl ɪŋk pɛn, tu./",
+      "zh": "還有一支無色墨水筆！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Shine the light on the wall.",
+      "phonetic": "/ʃaɪn ðə laɪt ɑn ðə wɔl./",
+      "zh": "把燈照在牆上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "There are glowing marks hidden here.",
+      "phonetic": "/ðɛr ɑr ˈɡloʊɪŋ mɑrks ˈhɪdən hir./",
+      "zh": "這裡藏著會發光的記號。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I see three big numbers.",
+      "phonetic": "/aɪ si θri bɪɡ ˈnʌmbərz./",
+      "zh": "我看到三個大數字。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And one tiny number by the edge.",
+      "phonetic": "/ænd wʌn ˈtaɪni ˈnʌmbər baɪ ði ɛdʒ./",
+      "zh": "邊緣還有一個很小的數字。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That one's easy to miss.",
+      "phonetic": "/ðætz ˈiːzi tu mɪs./",
+      "zh": "那個很容易錯過。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good catch, note them all.",
+      "phonetic": "/ɡʊd kætʃ, noʊt ðɛm ɔl./",
+      "zh": "發現得好，全部記下來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "For a code, the order matters.",
+      "phonetic": "/fər ə koʊd, ði ˈɔrdər ˈmætərz./",
+      "zh": "解密碼時，順序很重要。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Left to right, or sorted?",
+      "phonetic": "/lɛft tu raɪt, ɔr ˈsɔrtəd?/",
+      "zh": "從左到右，還是由小到大？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The clue says smallest first.",
+      "phonetic": "/ðə klus sɛz ˈsmɔləst fɜrst./",
+      "zh": "線索說最小的排前面。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So put them from small to big.",
+      "phonetic": "/soʊ pʊt ðɛm frʌm smɔl tu bɪɡ./",
+      "zh": "所以從最小排到最大。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That gives us zero, one, three, seven.",
+      "phonetic": "/ðæt ɡɪvz ʌs ˈzɪroʊ, wʌn, θri, ˈsɛvən./",
+      "zh": "得到的就是零一三七。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's the code for the wooden box!",
+      "phonetic": "/ðæts ðə koʊd fər ðə ˈwʊdən bɑks./",
+      "zh": "這正是木盒要的密碼！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The failed year was just a trap.",
+      "phonetic": "/ðə feɪld jɪr wʌz dʒʌst ə træp./",
+      "zh": "那個沒開的年份只是個陷阱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So dial zero, one, three, seven.",
+      "phonetic": "/soʊ ˈdaɪəl ˈzɪroʊ, wʌn, θri, ˈsɛvən./",
+      "zh": "所以現在轉零、一、三、七。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes! The wooden box popped open.",
+      "phonetic": "/jɛs! ðə ˈwʊdən bɑks pɑpt ˈoʊpən./",
+      "zh": "開了！木盒彈開了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nice, that was the hard part.",
+      "phonetic": "/naɪs, ðæt wʌz ðə hɑrd pɑrt./",
+      "zh": "太好了，那才是最難的部分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Inside sits one small folded card.",
+      "phonetic": "/ɪnˈsaɪd sɪts wʌn smɔl ˈfoʊldəd kɑrd./",
+      "zh": "裡面躺著一張小摺卡片。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Six letters, all mixed up.",
+      "phonetic": "/sɪks ˈlɛtərz, ɔl mɪkst ʌp./",
+      "zh": "六個字母，全都打亂了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Across the wall hangs a letter lock.",
+      "phonetic": "/əˈkrɔs ðə wɔl hæŋz ə ˈlɛtər lɑk./",
+      "zh": "對面牆上掛著一個字母鎖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Six dials, it wants one word.",
+      "phonetic": "/sɪks ˈdaɪəlz, ɪt wɑnts wʌn wɜrd./",
+      "zh": "六個轉盤，它要一個單詞。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Maybe the card spells that word.",
+      "phonetic": "/ˈmeɪbi ðə kɑrd spɛlz ðæt wɜrd./",
+      "zh": "也許卡片拼的就是那個單詞。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It reads like nonsense to me.",
+      "phonetic": "/ɪt ridz laɪk ˈnɑnsɛns tu mi./",
+      "zh": "但對我來說像亂碼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's try a few orders first.",
+      "phonetic": "/lɛts traɪ ə fju ˈɔrdərz fɜrst./",
+      "zh": "我們先試著換幾個順序。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, the lock stays firmly shut.",
+      "phonetic": "/noʊ, ðə lɑk steɪz ˈfɜrmli ʃʌt./",
+      "zh": "沒用，鎖還是牢牢關著。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Those dials need one whole word.",
+      "phonetic": "/ðoʊz ˈdaɪəlz nid wʌn hoʊl wɜrd./",
+      "zh": "那些轉盤需要一個完整的單詞。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A word lock, that's the final puzzle.",
+      "phonetic": "/ə wɜrd lɑk, ðæts ðə ˈfaɪnəl ˈpʌzəl./",
+      "zh": "是單詞鎖，最後一關了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "But the card gives no full word.",
+      "phonetic": "/bət ðə kɑrd ɡivz noʊ fʊl wɜrd./",
+      "zh": "可是卡片上不是一個完整的字。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The answer must hide in the room.",
+      "phonetic": "/ði ˈænsər mʌst haɪd ɪn ðə rum./",
+      "zh": "答案一定藏在房間裡的某處。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We tried many words, none fit.",
+      "phonetic": "/wi traɪd ˈmɛni wɜrdz, nʌn fɪt./",
+      "zh": "我們試了很多單詞，都沒開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Even the note letters failed us.",
+      "phonetic": "/ˈivɪn ðə noʊt ˈlɛtərz feɪld ʌs./",
+      "zh": "連紙條上的字母也沒用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Time check, fifteen minutes left.",
+      "phonetic": "/taɪm tʃɛk, fɪfˈtin ˈmɪnɪts lɛft./",
+      "zh": "看一下時間，只剩十五分鐘。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's tight, maybe use a hint?",
+      "phonetic": "/ðæts taɪt, ˈmeɪbi juz ə hɪnt?/",
+      "zh": "很緊，也許該用一次提示了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, let's press the walkie-talkie.",
+      "phonetic": "/jɛs, lɛts prɛs ðə ˈwɔkiˌtɔki./",
+      "zh": "好，我們按對講機。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good call, don't waste any time.",
+      "phonetic": "/ɡʊd kɔl, doʊnt weɪst ˈɛni taɪm./",
+      "zh": "決定得好，彆再浪費時間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This is the host, what's wrong?",
+      "phonetic": "/ðɪs ɪz ðə hoʊst, wʌts rɔŋ?/",
+      "zh": "我是主持人，怎麼了？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We need a word for our lock.",
+      "phonetic": "/wi nid ə wɜrd fər ˈaʊər lɑk./",
+      "zh": "我們的鎖需要一個單詞。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Look for the word on the shelf.",
+      "phonetic": "/lʊk fər ðə wɜrd ɑn ðə ʃɛlf./",
+      "zh": "在架子上找那個字。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A book title! Which one exactly?",
+      "phonetic": "/ə bʊk ˈtaɪtəl! wɪtʃ wʌn ɪɡˈzæktli?/",
+      "zh": "是書名！確切是哪一本？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The blue one with a bird.",
+      "phonetic": "/ðə blu wʌn wɪð ə bɜrd./",
+      "zh": "那本藍色有鳥的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Found it! Secret is the word.",
+      "phonetic": "/faʊnd ɪt! ˈsikrət ɪz ðə wɜrd./",
+      "zh": "找到了！答案就是Secret。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks, that hint helped a lot.",
+      "phonetic": "/θæŋks, ðæt hɪnt hɛlpt ə lɑt./",
+      "zh": "謝謝，那個提示很有用。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You're welcome, keep going.",
+      "phonetic": "/jʊr ˈwɛlkəm, kip ˈɡoʊɪŋ./",
+      "zh": "不客氣，繼續加油。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Secret is six letters, that fits!",
+      "phonetic": "/ˈsikrət ɪz sɪks ˈlɛtərz, ðæt fɪts!/",
+      "zh": "Secret是六個字母，剛剛好！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And the lock shows six empty dials.",
+      "phonetic": "/ænd ðə lɑk ʃoʊz sɪks ˈɛmti ˈdaɪəlz./",
+      "zh": "而且鎖上有六個空轉盤。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's set the dials, letter by letter.",
+      "phonetic": "/lɛts sɛt ðə ˈdaɪəlz, ˈlɛtər baɪ ˈlɛtər./",
+      "zh": "我們一個字母一個字母地轉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Careful, one dial slipped back again.",
+      "phonetic": "/ˈkɛrfəl, wʌn ˈdaɪəl slɪpt bæk əˈɡɛn./",
+      "zh": "小心，有個轉盤又滑回去了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Ugh, it reset, start once more.",
+      "phonetic": "/ʌɡ, ɪt riˈsɛt, stɑrt wʌns mɔr./",
+      "zh": "唉，全部重置了，重來一次。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "First three letters: S E C.",
+      "phonetic": "/fɜrst θri ˈlɛtərz, ɛs i si./",
+      "zh": "先轉前三格：S、E、C。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now the rest, R E T.",
+      "phonetic": "/naʊ ðə rɛst, ɑr i ti./",
+      "zh": "最後三格：R、E、T。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "There, every dial is finally set.",
+      "phonetic": "/ðɛr, ˈɛvri ˈdaɪəl ɪz ˈfaɪnəli sɛt./",
+      "zh": "好了，每個轉盤都定位了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Trying it now, hold your breath.",
+      "phonetic": "/ˈtraɪɪŋ ɪt naʊ, hoʊld jɔr brɛθ./",
+      "zh": "現在轉，屏住呼吸。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It clicked open, we did it!",
+      "phonetic": "/ɪt klɪkt ˈoʊpən, wi dɪd ɪt!/",
+      "zh": "喀一聲開了，我們成功了！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Look, there's a key inside!",
+      "phonetic": "/lʊk, ðɛrz ə ki ɪnˈsaɪd!/",
+      "zh": "看，裡面有把鑰匙！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That was the hardest one yet.",
+      "phonetic": "/ðæt wʌz ðə ˈhɑrdəst wʌn jɛt./",
+      "zh": "那真的是最難的一關。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "But the clock is still running.",
+      "phonetic": "/bət ðə klɑk ɪz stɪl ˈrʌnɪŋ./",
+      "zh": "但計時器還在倒數。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We spent one hint, two are left.",
+      "phonetic": "/wi spɛnt wʌn hɪnt, tu ɑr lɛft./",
+      "zh": "我們用了一次提示，還剩兩次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then let's save them and keep moving.",
+      "phonetic": "/ðɛn lɛts seɪv ðɛm ænd kip ˈmuvɪŋ./",
+      "zh": "那就留著，繼續前進。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Now let's crack that color note.",
+      "phonetic": "/naʊ lɛts kræk ðæt ˈkʌlər noʊt./",
+      "zh": "現在來破解那張顏色紙條。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I'm stuck, this clue makes no sense.",
+      "phonetic": "/aɪm stʌk, ðɪs klus meɪks noʊ sɛns./",
+      "zh": "我卡住了，這條線索完全看不懂。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then let's change our approach.",
+      "phonetic": "/ðɛn lɛts tʃeɪndʒ ˈaʊər əˈproʊtʃ./",
+      "zh": "那我們換個思路。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Stop staring, spread the clues out.",
+      "phonetic": "/stɑp ˈstɛrɪŋ, sprɛd ðə kluz aʊt./",
+      "zh": "彆只盯著看，把線索攤開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Okay, spreading them out helps.",
+      "phonetic": "/oʊˈkeɪ, ˈsprɛdɪŋ ðɛm aʊt hɛlps./",
+      "zh": "好吧，攤開來真的有幫助。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This number is also on the clock.",
+      "phonetic": "/ðɪs ˈnʌmbər ɪz ˈɔlsoʊ ɑn ðə klɑk./",
+      "zh": "這個數字時鐘上也有。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So it's a hint, not a code?",
+      "phonetic": "/soʊ ɪts ə hɪnt, nɑt ə koʊd?/",
+      "zh": "所以它是提示，不是密碼？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Exactly, ignore clues that repeat.",
+      "phonetic": "/ɪɡˈzæktli, ɪɡˈnɔr kluz ðæt rɪˈpit./",
+      "zh": "對，重複的線索要忽略。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good rule, that's less stressful.",
+      "phonetic": "/ɡʊd rul, ðæts lɛs ˈstrɛsfəl./",
+      "zh": "這規矩讓人壓力小多了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The countdown says eight minutes now.",
+      "phonetic": "/ði ˈkaʊntˌdaʊn sɛz eɪt ˈmɪnɪts naʊ./",
+      "zh": "倒數顯示現在剩八分鐘。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One lock left, but which door?",
+      "phonetic": "/wʌn lɑk lɛft, bət wɪtʃ dɔr?/",
+      "zh": "只剩一把鎖，可是在哪扇門？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's split again, you take this.",
+      "phonetic": "/lɛts splɪt əˈɡɛn, ju teɪk ðɪs./",
+      "zh": "我們再分工，你負責這個。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Deal, I'll handle the color puzzle.",
+      "phonetic": "/dil, aɪl ˈhændəl ðə ˈkʌlər ˈpʌzəl./",
+      "zh": "成交，我處理顏色謎題。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Colors hide numbers in this game.",
+      "phonetic": "/ˈkʌlərz haɪd ˈnʌmbərz ɪn ðɪs ɡeɪm./",
+      "zh": "這個遊戲裡顏色藏著數字。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Red means one, blue means two?",
+      "phonetic": "/rɛd minz wʌn, blu minz tu?/",
+      "zh": "紅是一，藍是二？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The note listed every color code.",
+      "phonetic": "/ðə noʊt ˈlɪstɪd ˈɛvri ˈkʌlər koʊd./",
+      "zh": "紙條上列了每個顏色代碼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So we turn colors into numbers.",
+      "phonetic": "/soʊ wi tɜrn ˈkʌlərz ˈɪntu ˈnʌmbərz./",
+      "zh": "所以我們把顏色換成數字。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The colors add up to one number.",
+      "phonetic": "/ðə ˈkʌlərz æd ʌp tu wʌn ˈnʌmbər./",
+      "zh": "顏色全部加起來是一個數字。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It's the number on door two!",
+      "phonetic": "/ɪts ðə ˈnʌmbər ɑn dɔr tu./",
+      "zh": "就是二號門上的數字！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Follow the glowing trail on the floor.",
+      "phonetic": "/ˈfɑloʊ ðə ˈɡloʊɪŋ treɪl ɑn ðə flɔr./",
+      "zh": "跟著地板上發光的痕跡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It ends right at the door lock.",
+      "phonetic": "/ɪt ɛndz raɪt æt ðə dɔr lɑk./",
+      "zh": "它正好停在那扇門的鎖前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The door lock wants a real key.",
+      "phonetic": "/ðə dɔr lɑk wɑnts ə ril ki./",
+      "zh": "門鎖要的是一把真正的鑰匙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The box gave us one, remember?",
+      "phonetic": "/ðə bɑks ɡeɪv ʌs wʌn, rɪˈmɛmbər?/",
+      "zh": "那個盒子給了我們一把，記得嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you keep that key safe?",
+      "phonetic": "/dɪd ju kip ðæt ki seɪf?/",
+      "zh": "那把鑰匙你有收好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, safe in my pocket, see?",
+      "phonetic": "/jɛs, seɪf ɪn maɪ ˈpɑkɪt, si?/",
+      "zh": "在的，安好在口袋裡，看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now, let's beat this final lock!",
+      "phonetic": "/naʊ, lɛts bit ðɪs ˈfaɪnəl lɑk!/",
+      "zh": "來，攻克最後一把鎖！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We're so close, don't rush.",
+      "phonetic": "/wɪr soʊ kloʊs, doʊnt rʌʃ./",
+      "zh": "我們很接近了，彆急。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The keyhole is under the handle.",
+      "phonetic": "/ðə ˈkiˌhoʊl ɪz ˈʌndər ðə ˈhændəl./",
+      "zh": "鎖孔就在門把下方。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here goes, into the lock.",
+      "phonetic": "/hɪr ɡoʊz, ˈɪntu ðə lɑk./",
+      "zh": "來了，插進鎖裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now turn it slowly, feel it.",
+      "phonetic": "/naʊ tɜrn ɪt ˈsloʊli, fil ɪt./",
+      "zh": "現在慢慢轉，感覺它。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It turned, I heard a click!",
+      "phonetic": "/ɪt tɜrnd, aɪ hɜrd ə klɪk!/",
+      "zh": "轉動了，我聽到喀噠！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The deadbolt is sliding back!",
+      "phonetic": "/ðə ˈdɛdˌboʊlt ɪz ˈslaɪdɪŋ bæk!/",
+      "zh": "門閂正在往回退！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The door is finally unlocked!",
+      "phonetic": "/ðə dɔr ɪz ˈfaɪnəli ʌnˈlɑkt./",
+      "zh": "門終於解鎖了！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Push the door with both hands.",
+      "phonetic": "/pʊʃ ðə dɔr wɪð boʊθ hændz./",
+      "zh": "用雙手推那扇門。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It's heavy, but it's moving!",
+      "phonetic": "/ɪts ˈhɛvi, bət ɪts ˈmuvɪŋ!/",
+      "zh": "很重，但它在動了！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We escaped, we actually made it.",
+      "phonetic": "/wi ɪsˈkeɪpt, wi ˈæktʃuəli meɪd ɪt./",
+      "zh": "我們逃出來了，真的成功了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I can't believe we won.",
+      "phonetic": "/aɪ kænt bɪˈliv wi wʌn./",
+      "zh": "我不敢相信我們贏了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Our clock stopped at two minutes.",
+      "phonetic": "/ˈaʊər klɑk stɑpt æt tu ˈmɪnɪts./",
+      "zh": "時鐘停在剩兩分鐘。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That was so close and thrilling.",
+      "phonetic": "/ðæt wʌz soʊ kloʊs ænd ˈθrɪlɪŋ./",
+      "zh": "太接近了，也好刺激。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The host is smiling at us.",
+      "phonetic": "/ðə hoʊst ɪz ˈsmaɪlɪŋ æt ʌs./",
+      "zh": "主持人在對我們微笑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We made it with minutes to spare!",
+      "phonetic": "/wi meɪd ɪt wɪð ˈmɪnɪts tu spɛr!/",
+      "zh": "我們做到了，還有幾分鐘餘裕！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's take our win photo here.",
+      "phonetic": "/lɛts teɪk ˈaʊər wɪn ˈfoʊtoʊ hir./",
+      "zh": "我們就在這裡拍張勝利照。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, gather everyone and smile.",
+      "phonetic": "/ʃʊr, ˈɡæðər ˈɛvriwʌn ænd smaɪl./",
+      "zh": "好啊，大家集合微笑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hold the door like you just left.",
+      "phonetic": "/hoʊld ðə dɔr laɪk ju dʒʌst lɛft./",
+      "zh": "扶著門，就像剛走出來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Perfect shot, that looks great.",
+      "phonetic": "/ˈpɜrfɪkt ʃɑt, ðæt lʊks ɡreɪt./",
+      "zh": "這張很棒，看起來太好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can she send us the photo?",
+      "phonetic": "/kæn ʃi sɛnd ʌs ðə ˈfoʊtoʊ?/",
+      "zh": "她能把照片傳給我們嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, she'll email it tonight.",
+      "phonetic": "/jɛs, ʃil ˈimeɪl ɪt təˈnaɪt./",
+      "zh": "可以，她今晚會用郵件發。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What was our total escape time?",
+      "phonetic": "/wʌt wʌz ˈaʊər ˈtoʊtəl ɪˈskeɪp taɪm?/",
+      "zh": "我們總共逃了多少時間？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fifty-eight minutes, two to spare!",
+      "phonetic": "/ˈfɪfti eɪt ˈmɪnɪts, tu tu spɛr!/",
+      "zh": "五十八分鐘，還剩兩分鐘！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is that a good time here?",
+      "phonetic": "/ɪz ðæt ə ɡʊd taɪm hir?/",
+      "zh": "在這裡算好成績嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Top ten in this room already!",
+      "phonetic": "/tɑp tɛn ɪn ðɪs ruːm ɔlˈrɛdi!/",
+      "zh": "已經進這間房的前十名了！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wow, we beat most teams.",
+      "phonetic": "/waʊ, wi bit moʊst timz./",
+      "zh": "哇，我們贏過大多數隊伍。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Look, the leaderboard has our names!",
+      "phonetic": "/lʊk, ðə ˈlɛdərbɑrd hæz ˈaʊər neɪmz!/",
+      "zh": "看，排行榜上有我們的名字！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "And our win photo is up too!",
+      "phonetic": "/ænd ˈaʊər wɪn ˈfoʊtoʊ ɪz ʌp tu!/",
+      "zh": "我們的勝利照也上牆了！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's honestly the best part.",
+      "phonetic": "/ðæts ˈɑnəstli ðə bɛst pɑrt./",
+      "zh": "這真的是最棒的部分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The record here is forty flat.",
+      "phonetic": "/ðə ˈrɛkərd hir ɪz ˈfɔrti flæt./",
+      "zh": "這裡的紀錄正好四十分。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So we did well for beginners.",
+      "phonetic": "/soʊ wi dɪd wɛl fər bɪˈɡɪnərz./",
+      "zh": "所以我們新手來說很好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My heart won't slow down at all.",
+      "phonetic": "/maɪ hɑrt woʊnt sloʊ daʊn æt ɔl./",
+      "zh": "我的心到現在還慢不下來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mine too, that was intense.",
+      "phonetic": "/maɪn tu, ðæt wʌz ɪnˈtɛns./",
+      "zh": "我也是，那真的太激烈。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which puzzle felt best to you?",
+      "phonetic": "/wɪtʃ ˈpʌzəl fɛlt bɛst tu ju?/",
+      "zh": "哪個謎題你覺得最爽？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The UV light one, hands down.",
+      "phonetic": "/ðə ˌjuˈvi laɪt wʌn, hændz daʊn./",
+      "zh": "毫無疑問是紫外燈那個。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Glowing numbers were so cool.",
+      "phonetic": "/ˈɡloʊɪŋ ˈnʌmbərz wɜr soʊ kuːl./",
+      "zh": "會發光的數字太酷了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "But the hidden word lock stumped us.",
+      "phonetic": "/bət ðə ˈhɪdən wɜrd lɑk stʌmpt ʌs./",
+      "zh": "但那個暗語鎖把我們難住了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The hint saved us there.",
+      "phonetic": "/ðə hɪnt seɪvd ʌs ðɛr./",
+      "zh": "那次提示救了我們。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yeah, asking helped, no shame.",
+      "phonetic": "/jɛ, ˈæskɪŋ hɛlpt, noʊ ʃeɪm./",
+      "zh": "是啊，求助有用，不丟臉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I liked splitting up to search.",
+      "phonetic": "/aɪ laɪkt ˈsplɪtɪŋ ʌp tu sɜrtʃ./",
+      "zh": "我喜歡分頭搜找。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It doubled our speed for sure.",
+      "phonetic": "/ɪt ˈdʌbəld ˈaʊər spid fər ʃʊr./",
+      "zh": "那一定讓速度翻倍。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The first note tied the story together.",
+      "phonetic": "/ðə fɜrst noʊt taɪd ðə ˈstɔri təˈɡɛðər./",
+      "zh": "那張最初的紙條串起了故事。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It led us straight to the box.",
+      "phonetic": "/ɪt lɛd ʌs streɪt tu ðə bɑks./",
+      "zh": "它直接把我們帶到盒子前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Getting stuck felt awful at first.",
+      "phonetic": "/ˈɡɛtɪŋ stʌk fɛlt ˈɔfəl æt fɜrst./",
+      "zh": "卡住的時候一開始真難受。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "But stepping back always unlocked it.",
+      "phonetic": "/bət ˈstɛpɪŋ bæk ˈɔlweɪz ʌnˈlɑkt ɪt./",
+      "zh": "但退一步想總能解開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you enjoy the detective story?",
+      "phonetic": "/dɪd ju ɛnˈdʒɔɪ ðə dɪˈtɛktɪv ˈstɔri?/",
+      "zh": "你喜歡那個偵探故事嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the plot kept us guessing.",
+      "phonetic": "/jɛs, ðə plɑt kɛpt ʌs ˈɡɛsɪŋ./",
+      "zh": "喜歡，劇情一直讓我們猜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Honestly I want to do it again.",
+      "phonetic": "/ˈɑnəstli aɪ wɑnt tu du ɪt əˈɡɛn./",
+      "zh": "我老實說想再玩一次。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Me too, right after this one.",
+      "phonetic": "/mi tu, raɪt ˈæftər ðɪs wʌn./",
+      "zh": "我也是，玩完這局馬上再來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Was it worth the price?",
+      "phonetic": "/wʌz ɪt wɜrθ ðə praɪs?/",
+      "zh": "這價位值得嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Absolutely, best money I spent.",
+      "phonetic": "/ˌæbsəˈlutli, bɛst ˈmʌni aɪ spɛnt./",
+      "zh": "超值得，我花得最值的一次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should we recommend it to friends?",
+      "phonetic": "/ʃʊd wi ˌrɛkəˈmɛnd ɪt tu frɛndz?/",
+      "zh": "我們該推薦給朋友嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, tell Sam to join next.",
+      "phonetic": "/ʃʊr, tɛl sæm tu dʒɔɪn nɛkst./",
+      "zh": "好啊，叫Sam下次一起來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It's great fun for a group.",
+      "phonetic": "/ɪts ɡreɪt fʌn fər ə ɡrup./",
+      "zh": "一群人玩超開心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Better than just watching a movie.",
+      "phonetic": "/ˈbɛtər ðən dʒʌst ˈwɑtʃɪŋ ə ˈmuvi./",
+      "zh": "比只是看電影好多了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We should post about it online.",
+      "phonetic": "/wi ʃʊd poʊst əˈbaʊt ɪt ɑnˈlaɪn./",
+      "zh": "我們該在網上分享一下。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Leave a good review for them.",
+      "phonetic": "/liv ə ɡʊd rɪˈvju fər ðɛm./",
+      "zh": "幫他們留個好評。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The staff were really friendly.",
+      "phonetic": "/ðə stæf wɜr ˈrɪəli ˈfrɛndli./",
+      "zh": "工作人員真的很親切。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And the game ran very smoothly.",
+      "phonetic": "/ænd ðə ɡeɪm ræn ˈvɛri ˈsmuːðli./",
+      "zh": "而且整場進行得很順。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The room was clean and neat.",
+      "phonetic": "/ðə ruːm wʌz klin ænd nit./",
+      "zh": "房間乾淨又整齊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Every prop looked well made.",
+      "phonetic": "/ˈɛvri prɑ lʊkt wɛl meɪd./",
+      "zh": "每件道具看起來都做得很好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It was hard but fair.",
+      "phonetic": "/ɪt wʌz hɑrd bət fɛr./",
+      "zh": "它很難，但很公平。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No puzzle felt unfair to us.",
+      "phonetic": "/noʊ ˈpʌzəl fɛlt ʌnˈfɛr tu ʌs./",
+      "zh": "沒有任何謎題讓我們覺得不公平。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now, which theme calls you next?",
+      "phonetic": "/naʊ, wɪtʃ θim kɔlz ju nɛkst?/",
+      "zh": "那麼，哪個主題讓你心動？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The prison break looks the hardest.",
+      "phonetic": "/ðə ˈprɪzən breɪk lʊks ðə ˈhɑrdəst./",
+      "zh": "監獄風暴看起來最難。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That one is rated expert, right?",
+      "phonetic": "/ðæt wʌn ɪz ˈreɪtəd ˈɛkspɜrt, raɪt?/",
+      "zh": "那間評為專業級，對吧？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, only ten percent escape it.",
+      "phonetic": "/jɛs, ˈoʊnli tɛn pərˈsɛnt ɪˈskeɪp ɪt./",
+      "zh": "對，只有百分之十的人逃得出來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Low odds, but let's try anyway.",
+      "phonetic": "/loʊ ɑdz, bət lɛts traɪ ˈɛniˌweɪ./",
+      "zh": "機率很低，但我們還是要試。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Bring two more players for it.",
+      "phonetic": "/brɪŋ tu mɔr ˈpleɪərz fər ɪt./",
+      "zh": "為它再找兩位玩家。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Full teams crack hard rooms faster.",
+      "phonetic": "/fʊl timz kræk hɑrd ruːmz ˈfæstər./",
+      "zh": "滿隊能更快破解難關。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good thinking, let's fill the room.",
+      "phonetic": "/ɡʊd ˈθɪŋkɪŋ, lɛts fɪl ðə ruːm./",
+      "zh": "想得對，我們把房間坐滿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's book it for next Saturday.",
+      "phonetic": "/lɛts bʊk ɪt fər nɛkst ˈsætərˌdeɪ./",
+      "zh": "我們訂下週六的場。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'll reserve it on the app now.",
+      "phonetic": "/aɪl rɪˈzɜrv ɪt ɑn ði æp naʊ./",
+      "zh": "我現在就在app上訂。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What about a different company?",
+      "phonetic": "/wʌt əˈbaʊt ə ˈdɪfərənt ˈkʌmpəni?/",
+      "zh": "換一家公司怎麼樣？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, this company does great rooms.",
+      "phonetic": "/noʊ, ðɪs ˈkʌmpəni dʌz ɡreɪt ruːmz./",
+      "zh": "不用，這家的房間很棒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "They have a spooky one too.",
+      "phonetic": "/ðeɪ hæv ə ˈspuːki wʌn tu./",
+      "zh": "他們也有一間鬼屋主題。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Save that one for Halloween.",
+      "phonetic": "/seɪv ðæt wʌn fər ˌhæloʊˈin./",
+      "zh": "那間留給萬聖節玩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I'll invite my coworker Kate.",
+      "phonetic": "/aɪl ɪnˈvaɪt maɪ ˈkoʊwɜrkər keɪt./",
+      "zh": "我會揪我同事Kate。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She loves puzzles, count her in.",
+      "phonetic": "/ʃi lʌvz ˈpʌzəlz, kaʊnt hɜr ɪn./",
+      "zh": "她愛解謎，算她一份。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do experts repeat rooms they did?",
+      "phonetic": "/du ɪkˈspɜrts rɪˈpit ruːmz ðeɪ dɪd?/",
+      "zh": "高手會重玩玩過的房間嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rarely, the clues stay the same.",
+      "phonetic": "/ˈrɛrli, ðə kluz steɪ ðə seɪm./",
+      "zh": "很少，因為線索都一樣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then we need brand new themes.",
+      "phonetic": "/ðɛn wi nid brænd nu θimz./",
+      "zh": "那我們要全新的主題。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Right, freshness keeps it fun.",
+      "phonetic": "/raɪt, ˈfrɛʃnəs kips ɪt fʌn./",
+      "zh": "對，新鮮感才好玩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I feel smarter than one hour ago.",
+      "phonetic": "/aɪ fil ˈsmɑrtər ðæn wʌn ˈaʊər əˈɡoʊ./",
+      "zh": "我覺得比一小時前更聰明。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same, my brain is tired but happy.",
+      "phonetic": "/seɪm, maɪ breɪn ɪz ˈtaɪərd bət ˈhæpi./",
+      "zh": "我也是，腦袋累但很快樂。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's get food to celebrate.",
+      "phonetic": "/lɛts ɡɛt fuːd tu ˈsɛləˌbreɪt./",
+      "zh": "我們去吃點東西慶祝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pizza sounds perfect right now.",
+      "phonetic": "/ˈpitsə saʊndz ˈpɜrfɪkt raɪt naʊ./",
+      "zh": "現在聽起來披薩最完美。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My legs ache from crouching.",
+      "phonetic": "/maɪ lɛɡz eɪk frʌm ˈkraʊtʃɪŋ./",
+      "zh": "我的腿蹲到痠了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mine too, I dug through every drawer.",
+      "phonetic": "/maɪn tu, aɪ dʌɡ θru ˈɛvri drɔər./",
+      "zh": "我也是，我把每個抽屜都翻遍了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That adrenaline is such a rush.",
+      "phonetic": "/ðæt əˈdrɛnəlɪn ɪz sʌtʃ ə rʌʃ./",
+      "zh": "那種腎上腺素讓人大呼過癮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I get why people play this.",
+      "phonetic": "/aɪ ɡɛt waɪ ˈpipəl pleɪ ðɪs./",
+      "zh": "我懂為什麼大家愛玩了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Beginners should start with medium.",
+      "phonetic": "/bɪˈɡɪnərz ʃʊd stɑrt wɪð ˈmidiəm./",
+      "zh": "新手該從中等難度開始。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We did that, and we loved it.",
+      "phonetic": "/wi dɪd ðæt, ænd wi ləvd ɪt./",
+      "zh": "我們正是這樣，而且超喜歡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Next time, fewer wasted hints.",
+      "phonetic": "/nɛkst taɪm, ˈfjuər ˈweɪstəd hɪnts./",
+      "zh": "下次要少浪費提示。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And better communication throughout.",
+      "phonetic": "/ænd ˈbɛtər kəˌmjunəˈkeɪʃən θruˈʔaʊt./",
+      "zh": "還有全程都要好好溝通。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So, a perfect night out, right?",
+      "phonetic": "/soʊ, ə ˈpɜrfɪkt naɪt aʊt, raɪt?/",
+      "zh": "所以今晚外出超完美，對吧？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The best leisure idea in a while.",
+      "phonetic": "/ðə bɛst ˈlɪʒər aɪˈdiə ɪn ə waɪl./",
+      "zh": "是近期最棒的休閒點子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for booking the escape room.",
+      "phonetic": "/θæŋks fər ˈbʊkɪŋ ði ɪˈskeɪp ruːm./",
+      "zh": "謝謝你訂了密室。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thanks for coming along too.",
+      "phonetic": "/θæŋks fər ˈkʌmɪŋ əˈlɔŋ tu./",
+      "zh": "也謝謝你一起來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Same time next Saturday?",
+      "phonetic": "/seɪm taɪm nɛkst ˈsætərˌdeɪ?/",
+      "zh": "下週六同一時間？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Definitely, I'll clear my schedule.",
+      "phonetic": "/ˈdɛfənətli, aɪl klɪr maɪ ˈskɛdʒuəl./",
+      "zh": "一定，我把行程空出來。"
+    }
+  ]
+}

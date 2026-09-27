@@ -1,0 +1,2458 @@
+{
+  "title": "Everyday Phrases — Sending an Email",
+  "title_zh": "發郵件",
+  "scene_zh": "發郵件 · 情境對話",
+  "title_quote": "I need to email the boss.",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】📧 實用發郵件必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — Sending an Email",
+  "youtube_description": "睡著學英文！這部影片收錄實用發郵件情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫），不用背，睡前聽就會。重複播放，讓英文自然進入你的大腦。👍 想學更多生活場景，請留言告訴我！別忘了訂閱+按讚。 #英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical Sending an Email phrase pairs (each pair: male normal speed → female slow speed → combined dialogue). No memorization needed—just listen before bed and absorb naturally. If you want more real-life scenarios, leave a comment! Subscribe and like!",
+  "youtube_tags": [
+    "英文聽力",
+    "睡前英文",
+    "發郵件英文",
+    "English listening",
+    "Sleep learning",
+    "A2 English",
+    "常用英文短語",
+    "零基礎英文",
+    "慢速英文",
+    "英文口語",
+    "Learn English",
+    "English for daily life",
+    "ESL",
+    "English conversation",
+    "聽英語",
+    "英文學習"
+  ],
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "Sending an Email",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "Sending an Email",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Work",
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "I need to email the boss.",
+      "phonetic": "/aɪ nid tɪ iˈmeɪl ðə bɔs./",
+      "zh": "我要寄信給老闆。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep it brief.",
+      "phonetic": "/kip ɪt brif./",
+      "zh": "簡短點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What should the subject be?",
+      "phonetic": "/wət ʃʊd ðə ˈsəbʤɪkt bi?/",
+      "zh": "主旨寫什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Meeting moved to two.",
+      "phonetic": "/ˈmitɪŋ muvd tɪ tu./",
+      "zh": "會議改兩點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Attach the report, please.",
+      "phonetic": "/əˈtæʧ ðə rɪˈpɔrt, pliz./",
+      "zh": "請附上報告。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Done, it is linked.",
+      "phonetic": "/dən, ɪt ɪz lɪŋkt./",
+      "zh": "好了，已附。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you hit send?",
+      "phonetic": "/dɪd ju hɪt sɛnd?/",
+      "zh": "你寄出了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just now, confirmed.",
+      "phonetic": "/ʤɪst naʊ, kənˈfərmd./",
+      "zh": "剛寄，確認了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The file is too big.",
+      "phonetic": "/ðə faɪl ɪz tu bɪg./",
+      "zh": "檔案太大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Use the cloud link.",
+      "phonetic": "/juz ðə klaʊd lɪŋk./",
+      "zh": "用雲端連結。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "CC the whole team.",
+      "phonetic": "/ˈsiˈsi ðə hoʊl tim./",
+      "zh": "副本給全組。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Added them all.",
+      "phonetic": "/ˈædɪd ðɛm ɔl./",
+      "zh": "都加了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Reply to all, careful.",
+      "phonetic": "/rɪˈplaɪ tɪ ɔl, ˈkɛrfəl./",
+      "zh": "小心回覆全部。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only who needs it.",
+      "phonetic": "/ˈoʊnli hu nidz ɪt./",
+      "zh": "只給需要的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Proofread before send.",
+      "phonetic": "/ˈpruˌfrid ˌbiˈfɔr sɛnd./",
+      "zh": "寄前校對。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spotted a typo.",
+      "phonetic": "/ˈspɑtɪd ə ˈtaɪpoʊ./",
+      "zh": "抓到一個錯字。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The address bounced.",
+      "phonetic": "/ðə ˈæˌdrɛs baʊnst./",
+      "zh": "地址被退信。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Check the spelling.",
+      "phonetic": "/ʧɛk ðə ˈspɛlɪŋ./",
+      "zh": "看拼字。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I got an auto-reply.",
+      "phonetic": "/aɪ gɑt ən auto-reply*./",
+      "zh": "我收到自動回覆。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They are on leave.",
+      "phonetic": "/ðeɪ ər ɔn liv./",
+      "zh": "他們在休假。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Set a follow-up flag.",
+      "phonetic": "/sɛt ə ˈfɑloʊˌəp flæg./",
+      "zh": "設提醒旗標。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For next Monday.",
+      "phonetic": "/fər nɛkst ˈmənˌdeɪ./",
+      "zh": "下週一。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The inbox is full.",
+      "phonetic": "/ðə inbox* ɪz fʊl./",
+      "zh": "收件夾滿了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Archive the old.",
+      "phonetic": "/ˈɑrˌkaɪv ðə oʊld./",
+      "zh": "把舊的歸檔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Forward this to Sam.",
+      "phonetic": "/ˈfɔrwərd ðɪs tɪ sæm./",
+      "zh": "轉給 Sam。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "With a note.",
+      "phonetic": "/wɪθ ə noʊt./",
+      "zh": "加個注。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Use a clear subject.",
+      "phonetic": "/juz ə klɪr ˈsəbʤɪkt./",
+      "zh": "用清楚的主旨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So it is not missed.",
+      "phonetic": "/soʊ ɪt ɪz nɑt mɪst./",
+      "zh": "免得漏看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The link is broken.",
+      "phonetic": "/ðə lɪŋk ɪz ˈbroʊkən./",
+      "zh": "連結壞了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will resend.",
+      "phonetic": "/aɪ wɪl resend*./",
+      "zh": "我重寄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sign off politely.",
+      "phonetic": "/saɪn ɔf pəˈlaɪtli./",
+      "zh": "禮貌結尾。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Best regards, then.",
+      "phonetic": "/bɛst rɪˈgɑrdz, ðɛn./",
+      "zh": "那就祝好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Mark it urgent?",
+      "phonetic": "/mɑrk ɪt ˈərʤənt?/",
+      "zh": "標急件嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only if needed.",
+      "phonetic": "/ˈoʊnli ɪf ˈnidɪd./",
+      "zh": "需要才標。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The draft is saved.",
+      "phonetic": "/ðə dræft ɪz seɪvd./",
+      "zh": "草稿存好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Finish after lunch.",
+      "phonetic": "/ˈfɪnɪʃ ˈæftər lənʧ./",
+      "zh": "午餐後寫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "They read on mobile.",
+      "phonetic": "/ðeɪ rɛd ɔn ˈmoʊbəl./",
+      "zh": "他們用手機看。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep it short.",
+      "phonetic": "/kip ɪt ʃɔrt./",
+      "zh": "寫短點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you get my mail?",
+      "phonetic": "/dɪd ju gɪt maɪ meɪl?/",
+      "zh": "收到我的信嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Not yet, resend.",
+      "phonetic": "/nɑt jɛt, resend*./",
+      "zh": "還沒，重寄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The server is down.",
+      "phonetic": "/ðə ˈsərvər ɪz daʊn./",
+      "zh": "伺服器掛了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try in an hour.",
+      "phonetic": "/traɪ ɪn ən aʊər./",
+      "zh": "一小時再試。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Add a greeting line.",
+      "phonetic": "/æd ə ˈgritɪŋ laɪn./",
+      "zh": "加問候句。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hi team, first.",
+      "phonetic": "/haɪ tim, fərst./",
+      "zh": "先寫大家好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tone is too cold.",
+      "phonetic": "/ðə toʊn ɪz tu koʊld./",
+      "zh": "語氣太冷。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Add a thanks.",
+      "phonetic": "/æd ə θæŋks./",
+      "zh": "加個謝謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Confirm receipt, please.",
+      "phonetic": "/kənˈfərm rɪˈsit, pliz./",
+      "zh": "請確認收到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Will do, thanks.",
+      "phonetic": "/wɪl du, θæŋks./",
+      "zh": "會，謝謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The attachment opened.",
+      "phonetic": "/ðə əˈtæʧmənt ˈoʊpənd./",
+      "zh": "附件打開了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All pages there.",
+      "phonetic": "/ɔl ˈpeɪʤɪz ðɛr./",
+      "zh": "頁數齊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Unsubscribe this list.",
+      "phonetic": "/ənsəbˈskraɪb ðɪs lɪst./",
+      "zh": "取消訂閱這個。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Too many mails.",
+      "phonetic": "/tu ˈmɛni meɪlz./",
+      "zh": "信太多了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Encrypt the email?",
+      "phonetic": "/ɪnˈkrɪpt ðə iˈmeɪl?/",
+      "zh": "要加密嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It has data.",
+      "phonetic": "/ɪt həz ˈdætə./",
+      "zh": "有資料。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The thread is long.",
+      "phonetic": "/ðə θrɛd ɪz lɔŋ./",
+      "zh": "對話串很長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Summarize the end.",
+      "phonetic": "/ˈsəmərˌaɪz ðə ɛnd./",
+      "zh": "結尾摘要。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I replied by mistake.",
+      "phonetic": "/aɪ rɪˈplaɪd baɪ mɪˈsteɪk./",
+      "zh": "我誤回了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Send a correction.",
+      "phonetic": "/sɛnd ə kərˈɛkʃən./",
+      "zh": "補寄更正。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Schedule it for nine.",
+      "phonetic": "/ˈskɛʤʊl ɪt fər naɪn./",
+      "zh": "排程九點寄。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sent while away.",
+      "phonetic": "/sɛnt waɪl əˈweɪ./",
+      "zh": "不在也寄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The client responded.",
+      "phonetic": "/ðə klaɪənt rɪˈspɑndɪd./",
+      "zh": "客戶回覆了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Read it now.",
+      "phonetic": "/rɛd ɪt naʊ./",
+      "zh": "現在看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Clean the spam, please.",
+      "phonetic": "/klin ðə spæm, pliz./",
+      "zh": "清垃圾信。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Filtered daily.",
+      "phonetic": "/ˈfɪltərd ˈdeɪli./",
+      "zh": "每天過濾。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Mail is the record.",
+      "phonetic": "/meɪl ɪz ðə ˈrɛkərd./",
+      "zh": "信件是紀錄。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep it tidy.",
+      "phonetic": "/kip ɪt ˈtaɪdi./",
+      "zh": "保持整齊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sent, all good.",
+      "phonetic": "/sɛnt, ɔl gʊd./",
+      "zh": "寄了，都好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Well done.",
+      "phonetic": "/wɛl dən./",
+      "zh": "做得好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sent, all good.",
+      "phonetic": "/sɛnt, ɔl gʊd./",
+      "zh": "寄了，都好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Well done.",
+      "phonetic": "/wɛl dən./",
+      "zh": "做得好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Mail is the record.",
+      "phonetic": "/meɪl ɪz ðə ˈrɛkərd./",
+      "zh": "信件是紀錄。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep it tidy.",
+      "phonetic": "/kip ɪt ˈtaɪdi./",
+      "zh": "保持整齊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Clean the spam, please.",
+      "phonetic": "/klin ðə spæm, pliz./",
+      "zh": "清垃圾信。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Filtered daily.",
+      "phonetic": "/ˈfɪltərd ˈdeɪli./",
+      "zh": "每天過濾。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The client responded.",
+      "phonetic": "/ðə klaɪənt rɪˈspɑndɪd./",
+      "zh": "客戶回覆了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Read it now.",
+      "phonetic": "/rɛd ɪt naʊ./",
+      "zh": "現在看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Schedule it for nine.",
+      "phonetic": "/ˈskɛʤʊl ɪt fər naɪn./",
+      "zh": "排程九點寄。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sent while away.",
+      "phonetic": "/sɛnt waɪl əˈweɪ./",
+      "zh": "不在也寄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I replied by mistake.",
+      "phonetic": "/aɪ rɪˈplaɪd baɪ mɪˈsteɪk./",
+      "zh": "我誤回了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Send a correction.",
+      "phonetic": "/sɛnd ə kərˈɛkʃən./",
+      "zh": "補寄更正。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The thread is long.",
+      "phonetic": "/ðə θrɛd ɪz lɔŋ./",
+      "zh": "對話串很長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Summarize the end.",
+      "phonetic": "/ˈsəmərˌaɪz ðə ɛnd./",
+      "zh": "結尾摘要。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Encrypt the email?",
+      "phonetic": "/ɪnˈkrɪpt ðə iˈmeɪl?/",
+      "zh": "要加密嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It has data.",
+      "phonetic": "/ɪt həz ˈdætə./",
+      "zh": "有資料。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Unsubscribe this list.",
+      "phonetic": "/ənsəbˈskraɪb ðɪs lɪst./",
+      "zh": "取消訂閱這個。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Too many mails.",
+      "phonetic": "/tu ˈmɛni meɪlz./",
+      "zh": "信太多了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The attachment opened.",
+      "phonetic": "/ðə əˈtæʧmənt ˈoʊpənd./",
+      "zh": "附件打開了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All pages there.",
+      "phonetic": "/ɔl ˈpeɪʤɪz ðɛr./",
+      "zh": "頁數齊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Confirm receipt, please.",
+      "phonetic": "/kənˈfərm rɪˈsit, pliz./",
+      "zh": "請確認收到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Will do, thanks.",
+      "phonetic": "/wɪl du, θæŋks./",
+      "zh": "會，謝謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tone is too cold.",
+      "phonetic": "/ðə toʊn ɪz tu koʊld./",
+      "zh": "語氣太冷。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Add a thanks.",
+      "phonetic": "/æd ə θæŋks./",
+      "zh": "加個謝謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Add a greeting line.",
+      "phonetic": "/æd ə ˈgritɪŋ laɪn./",
+      "zh": "加問候句。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hi team, first.",
+      "phonetic": "/haɪ tim, fərst./",
+      "zh": "先寫大家好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The server is down.",
+      "phonetic": "/ðə ˈsərvər ɪz daʊn./",
+      "zh": "伺服器掛了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try in an hour.",
+      "phonetic": "/traɪ ɪn ən aʊər./",
+      "zh": "一小時再試。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you get my mail?",
+      "phonetic": "/dɪd ju gɪt maɪ meɪl?/",
+      "zh": "收到我的信嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Not yet, resend.",
+      "phonetic": "/nɑt jɛt, resend*./",
+      "zh": "還沒，重寄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "They read on mobile.",
+      "phonetic": "/ðeɪ rɛd ɔn ˈmoʊbəl./",
+      "zh": "他們用手機看。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep it short.",
+      "phonetic": "/kip ɪt ʃɔrt./",
+      "zh": "寫短點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The draft is saved.",
+      "phonetic": "/ðə dræft ɪz seɪvd./",
+      "zh": "草稿存好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Finish after lunch.",
+      "phonetic": "/ˈfɪnɪʃ ˈæftər lənʧ./",
+      "zh": "午餐後寫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Mark it urgent?",
+      "phonetic": "/mɑrk ɪt ˈərʤənt?/",
+      "zh": "標急件嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only if needed.",
+      "phonetic": "/ˈoʊnli ɪf ˈnidɪd./",
+      "zh": "需要才標。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sign off politely.",
+      "phonetic": "/saɪn ɔf pəˈlaɪtli./",
+      "zh": "禮貌結尾。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Best regards, then.",
+      "phonetic": "/bɛst rɪˈgɑrdz, ðɛn./",
+      "zh": "那就祝好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The link is broken.",
+      "phonetic": "/ðə lɪŋk ɪz ˈbroʊkən./",
+      "zh": "連結壞了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will resend.",
+      "phonetic": "/aɪ wɪl resend*./",
+      "zh": "我重寄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Use a clear subject.",
+      "phonetic": "/juz ə klɪr ˈsəbʤɪkt./",
+      "zh": "用清楚的主旨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So it is not missed.",
+      "phonetic": "/soʊ ɪt ɪz nɑt mɪst./",
+      "zh": "免得漏看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Forward this to Sam.",
+      "phonetic": "/ˈfɔrwərd ðɪs tɪ sæm./",
+      "zh": "轉給 Sam。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "With a note.",
+      "phonetic": "/wɪθ ə noʊt./",
+      "zh": "加個注。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The inbox is full.",
+      "phonetic": "/ðə inbox* ɪz fʊl./",
+      "zh": "收件夾滿了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Archive the old.",
+      "phonetic": "/ˈɑrˌkaɪv ðə oʊld./",
+      "zh": "把舊的歸檔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Set a follow-up flag.",
+      "phonetic": "/sɛt ə ˈfɑloʊˌəp flæg./",
+      "zh": "設提醒旗標。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For next Monday.",
+      "phonetic": "/fər nɛkst ˈmənˌdeɪ./",
+      "zh": "下週一。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I got an auto-reply.",
+      "phonetic": "/aɪ gɑt ən auto-reply*./",
+      "zh": "我收到自動回覆。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They are on leave.",
+      "phonetic": "/ðeɪ ər ɔn liv./",
+      "zh": "他們在休假。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The address bounced.",
+      "phonetic": "/ðə ˈæˌdrɛs baʊnst./",
+      "zh": "地址被退信。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Check the spelling.",
+      "phonetic": "/ʧɛk ðə ˈspɛlɪŋ./",
+      "zh": "看拼字。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Proofread before send.",
+      "phonetic": "/ˈpruˌfrid ˌbiˈfɔr sɛnd./",
+      "zh": "寄前校對。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spotted a typo.",
+      "phonetic": "/ˈspɑtɪd ə ˈtaɪpoʊ./",
+      "zh": "抓到一個錯字。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Reply to all, careful.",
+      "phonetic": "/rɪˈplaɪ tɪ ɔl, ˈkɛrfəl./",
+      "zh": "小心回覆全部。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only who needs it.",
+      "phonetic": "/ˈoʊnli hu nidz ɪt./",
+      "zh": "只給需要的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "CC the whole team.",
+      "phonetic": "/ˈsiˈsi ðə hoʊl tim./",
+      "zh": "副本給全組。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Added them all.",
+      "phonetic": "/ˈædɪd ðɛm ɔl./",
+      "zh": "都加了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The file is too big.",
+      "phonetic": "/ðə faɪl ɪz tu bɪg./",
+      "zh": "檔案太大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Use the cloud link.",
+      "phonetic": "/juz ðə klaʊd lɪŋk./",
+      "zh": "用雲端連結。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you hit send?",
+      "phonetic": "/dɪd ju hɪt sɛnd?/",
+      "zh": "你寄出了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just now, confirmed.",
+      "phonetic": "/ʤɪst naʊ, kənˈfərmd./",
+      "zh": "剛寄，確認了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Attach the report, please.",
+      "phonetic": "/əˈtæʧ ðə rɪˈpɔrt, pliz./",
+      "zh": "請附上報告。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Done, it is linked.",
+      "phonetic": "/dən, ɪt ɪz lɪŋkt./",
+      "zh": "好了，已附。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What should the subject be?",
+      "phonetic": "/wət ʃʊd ðə ˈsəbʤɪkt bi?/",
+      "zh": "主旨寫什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Meeting moved to two.",
+      "phonetic": "/ˈmitɪŋ muvd tɪ tu./",
+      "zh": "會議改兩點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I need to email the boss.",
+      "phonetic": "/aɪ nid tɪ iˈmeɪl ðə bɔs./",
+      "zh": "我要寄信給老闆。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep it brief.",
+      "phonetic": "/kip ɪt brif./",
+      "zh": "簡短點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I need to email the boss.",
+      "phonetic": "/aɪ nid tɪ iˈmeɪl ðə bɔs./",
+      "zh": "我要寄信給老闆。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep it brief.",
+      "phonetic": "/kip ɪt brif./",
+      "zh": "簡短點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What should the subject be?",
+      "phonetic": "/wət ʃʊd ðə ˈsəbʤɪkt bi?/",
+      "zh": "主旨寫什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Meeting moved to two.",
+      "phonetic": "/ˈmitɪŋ muvd tɪ tu./",
+      "zh": "會議改兩點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Attach the report, please.",
+      "phonetic": "/əˈtæʧ ðə rɪˈpɔrt, pliz./",
+      "zh": "請附上報告。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Done, it is linked.",
+      "phonetic": "/dən, ɪt ɪz lɪŋkt./",
+      "zh": "好了，已附。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you hit send?",
+      "phonetic": "/dɪd ju hɪt sɛnd?/",
+      "zh": "你寄出了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just now, confirmed.",
+      "phonetic": "/ʤɪst naʊ, kənˈfərmd./",
+      "zh": "剛寄，確認了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The file is too big.",
+      "phonetic": "/ðə faɪl ɪz tu bɪg./",
+      "zh": "檔案太大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Use the cloud link.",
+      "phonetic": "/juz ðə klaʊd lɪŋk./",
+      "zh": "用雲端連結。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "CC the whole team.",
+      "phonetic": "/ˈsiˈsi ðə hoʊl tim./",
+      "zh": "副本給全組。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Added them all.",
+      "phonetic": "/ˈædɪd ðɛm ɔl./",
+      "zh": "都加了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Reply to all, careful.",
+      "phonetic": "/rɪˈplaɪ tɪ ɔl, ˈkɛrfəl./",
+      "zh": "小心回覆全部。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only who needs it.",
+      "phonetic": "/ˈoʊnli hu nidz ɪt./",
+      "zh": "只給需要的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Proofread before send.",
+      "phonetic": "/ˈpruˌfrid ˌbiˈfɔr sɛnd./",
+      "zh": "寄前校對。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spotted a typo.",
+      "phonetic": "/ˈspɑtɪd ə ˈtaɪpoʊ./",
+      "zh": "抓到一個錯字。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The address bounced.",
+      "phonetic": "/ðə ˈæˌdrɛs baʊnst./",
+      "zh": "地址被退信。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Check the spelling.",
+      "phonetic": "/ʧɛk ðə ˈspɛlɪŋ./",
+      "zh": "看拼字。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I got an auto-reply.",
+      "phonetic": "/aɪ gɑt ən auto-reply*./",
+      "zh": "我收到自動回覆。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They are on leave.",
+      "phonetic": "/ðeɪ ər ɔn liv./",
+      "zh": "他們在休假。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Set a follow-up flag.",
+      "phonetic": "/sɛt ə ˈfɑloʊˌəp flæg./",
+      "zh": "設提醒旗標。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For next Monday.",
+      "phonetic": "/fər nɛkst ˈmənˌdeɪ./",
+      "zh": "下週一。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The inbox is full.",
+      "phonetic": "/ðə inbox* ɪz fʊl./",
+      "zh": "收件夾滿了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Archive the old.",
+      "phonetic": "/ˈɑrˌkaɪv ðə oʊld./",
+      "zh": "把舊的歸檔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Forward this to Sam.",
+      "phonetic": "/ˈfɔrwərd ðɪs tɪ sæm./",
+      "zh": "轉給 Sam。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "With a note.",
+      "phonetic": "/wɪθ ə noʊt./",
+      "zh": "加個注。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Use a clear subject.",
+      "phonetic": "/juz ə klɪr ˈsəbʤɪkt./",
+      "zh": "用清楚的主旨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So it is not missed.",
+      "phonetic": "/soʊ ɪt ɪz nɑt mɪst./",
+      "zh": "免得漏看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The link is broken.",
+      "phonetic": "/ðə lɪŋk ɪz ˈbroʊkən./",
+      "zh": "連結壞了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will resend.",
+      "phonetic": "/aɪ wɪl resend*./",
+      "zh": "我重寄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sign off politely.",
+      "phonetic": "/saɪn ɔf pəˈlaɪtli./",
+      "zh": "禮貌結尾。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Best regards, then.",
+      "phonetic": "/bɛst rɪˈgɑrdz, ðɛn./",
+      "zh": "那就祝好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Mark it urgent?",
+      "phonetic": "/mɑrk ɪt ˈərʤənt?/",
+      "zh": "標急件嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only if needed.",
+      "phonetic": "/ˈoʊnli ɪf ˈnidɪd./",
+      "zh": "需要才標。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The draft is saved.",
+      "phonetic": "/ðə dræft ɪz seɪvd./",
+      "zh": "草稿存好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Finish after lunch.",
+      "phonetic": "/ˈfɪnɪʃ ˈæftər lənʧ./",
+      "zh": "午餐後寫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "They read on mobile.",
+      "phonetic": "/ðeɪ rɛd ɔn ˈmoʊbəl./",
+      "zh": "他們用手機看。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep it short.",
+      "phonetic": "/kip ɪt ʃɔrt./",
+      "zh": "寫短點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you get my mail?",
+      "phonetic": "/dɪd ju gɪt maɪ meɪl?/",
+      "zh": "收到我的信嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Not yet, resend.",
+      "phonetic": "/nɑt jɛt, resend*./",
+      "zh": "還沒，重寄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The server is down.",
+      "phonetic": "/ðə ˈsərvər ɪz daʊn./",
+      "zh": "伺服器掛了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try in an hour.",
+      "phonetic": "/traɪ ɪn ən aʊər./",
+      "zh": "一小時再試。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Add a greeting line.",
+      "phonetic": "/æd ə ˈgritɪŋ laɪn./",
+      "zh": "加問候句。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hi team, first.",
+      "phonetic": "/haɪ tim, fərst./",
+      "zh": "先寫大家好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tone is too cold.",
+      "phonetic": "/ðə toʊn ɪz tu koʊld./",
+      "zh": "語氣太冷。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Add a thanks.",
+      "phonetic": "/æd ə θæŋks./",
+      "zh": "加個謝謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Confirm receipt, please.",
+      "phonetic": "/kənˈfərm rɪˈsit, pliz./",
+      "zh": "請確認收到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Will do, thanks.",
+      "phonetic": "/wɪl du, θæŋks./",
+      "zh": "會，謝謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The attachment opened.",
+      "phonetic": "/ðə əˈtæʧmənt ˈoʊpənd./",
+      "zh": "附件打開了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All pages there.",
+      "phonetic": "/ɔl ˈpeɪʤɪz ðɛr./",
+      "zh": "頁數齊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Unsubscribe this list.",
+      "phonetic": "/ənsəbˈskraɪb ðɪs lɪst./",
+      "zh": "取消訂閱這個。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Too many mails.",
+      "phonetic": "/tu ˈmɛni meɪlz./",
+      "zh": "信太多了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Encrypt the email?",
+      "phonetic": "/ɪnˈkrɪpt ðə iˈmeɪl?/",
+      "zh": "要加密嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It has data.",
+      "phonetic": "/ɪt həz ˈdætə./",
+      "zh": "有資料。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The thread is long.",
+      "phonetic": "/ðə θrɛd ɪz lɔŋ./",
+      "zh": "對話串很長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Summarize the end.",
+      "phonetic": "/ˈsəmərˌaɪz ðə ɛnd./",
+      "zh": "結尾摘要。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I replied by mistake.",
+      "phonetic": "/aɪ rɪˈplaɪd baɪ mɪˈsteɪk./",
+      "zh": "我誤回了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Send a correction.",
+      "phonetic": "/sɛnd ə kərˈɛkʃən./",
+      "zh": "補寄更正。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Schedule it for nine.",
+      "phonetic": "/ˈskɛʤʊl ɪt fər naɪn./",
+      "zh": "排程九點寄。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sent while away.",
+      "phonetic": "/sɛnt waɪl əˈweɪ./",
+      "zh": "不在也寄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The client responded.",
+      "phonetic": "/ðə klaɪənt rɪˈspɑndɪd./",
+      "zh": "客戶回覆了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Read it now.",
+      "phonetic": "/rɛd ɪt naʊ./",
+      "zh": "現在看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Clean the spam, please.",
+      "phonetic": "/klin ðə spæm, pliz./",
+      "zh": "清垃圾信。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Filtered daily.",
+      "phonetic": "/ˈfɪltərd ˈdeɪli./",
+      "zh": "每天過濾。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Mail is the record.",
+      "phonetic": "/meɪl ɪz ðə ˈrɛkərd./",
+      "zh": "信件是紀錄。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep it tidy.",
+      "phonetic": "/kip ɪt ˈtaɪdi./",
+      "zh": "保持整齊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sent, all good.",
+      "phonetic": "/sɛnt, ɔl gʊd./",
+      "zh": "寄了，都好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Well done.",
+      "phonetic": "/wɛl dən./",
+      "zh": "做得好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sent, all good.",
+      "phonetic": "/sɛnt, ɔl gʊd./",
+      "zh": "寄了，都好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Well done.",
+      "phonetic": "/wɛl dən./",
+      "zh": "做得好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Mail is the record.",
+      "phonetic": "/meɪl ɪz ðə ˈrɛkərd./",
+      "zh": "信件是紀錄。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep it tidy.",
+      "phonetic": "/kip ɪt ˈtaɪdi./",
+      "zh": "保持整齊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Clean the spam, please.",
+      "phonetic": "/klin ðə spæm, pliz./",
+      "zh": "清垃圾信。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Filtered daily.",
+      "phonetic": "/ˈfɪltərd ˈdeɪli./",
+      "zh": "每天過濾。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The client responded.",
+      "phonetic": "/ðə klaɪənt rɪˈspɑndɪd./",
+      "zh": "客戶回覆了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Read it now.",
+      "phonetic": "/rɛd ɪt naʊ./",
+      "zh": "現在看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Schedule it for nine.",
+      "phonetic": "/ˈskɛʤʊl ɪt fər naɪn./",
+      "zh": "排程九點寄。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sent while away.",
+      "phonetic": "/sɛnt waɪl əˈweɪ./",
+      "zh": "不在也寄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I replied by mistake.",
+      "phonetic": "/aɪ rɪˈplaɪd baɪ mɪˈsteɪk./",
+      "zh": "我誤回了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Send a correction.",
+      "phonetic": "/sɛnd ə kərˈɛkʃən./",
+      "zh": "補寄更正。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The thread is long.",
+      "phonetic": "/ðə θrɛd ɪz lɔŋ./",
+      "zh": "對話串很長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Summarize the end.",
+      "phonetic": "/ˈsəmərˌaɪz ðə ɛnd./",
+      "zh": "結尾摘要。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Encrypt the email?",
+      "phonetic": "/ɪnˈkrɪpt ðə iˈmeɪl?/",
+      "zh": "要加密嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It has data.",
+      "phonetic": "/ɪt həz ˈdætə./",
+      "zh": "有資料。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Unsubscribe this list.",
+      "phonetic": "/ənsəbˈskraɪb ðɪs lɪst./",
+      "zh": "取消訂閱這個。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Too many mails.",
+      "phonetic": "/tu ˈmɛni meɪlz./",
+      "zh": "信太多了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The attachment opened.",
+      "phonetic": "/ðə əˈtæʧmənt ˈoʊpənd./",
+      "zh": "附件打開了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All pages there.",
+      "phonetic": "/ɔl ˈpeɪʤɪz ðɛr./",
+      "zh": "頁數齊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Confirm receipt, please.",
+      "phonetic": "/kənˈfərm rɪˈsit, pliz./",
+      "zh": "請確認收到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Will do, thanks.",
+      "phonetic": "/wɪl du, θæŋks./",
+      "zh": "會，謝謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tone is too cold.",
+      "phonetic": "/ðə toʊn ɪz tu koʊld./",
+      "zh": "語氣太冷。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Add a thanks.",
+      "phonetic": "/æd ə θæŋks./",
+      "zh": "加個謝謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Add a greeting line.",
+      "phonetic": "/æd ə ˈgritɪŋ laɪn./",
+      "zh": "加問候句。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hi team, first.",
+      "phonetic": "/haɪ tim, fərst./",
+      "zh": "先寫大家好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The server is down.",
+      "phonetic": "/ðə ˈsərvər ɪz daʊn./",
+      "zh": "伺服器掛了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try in an hour.",
+      "phonetic": "/traɪ ɪn ən aʊər./",
+      "zh": "一小時再試。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you get my mail?",
+      "phonetic": "/dɪd ju gɪt maɪ meɪl?/",
+      "zh": "收到我的信嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Not yet, resend.",
+      "phonetic": "/nɑt jɛt, resend*./",
+      "zh": "還沒，重寄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "They read on mobile.",
+      "phonetic": "/ðeɪ rɛd ɔn ˈmoʊbəl./",
+      "zh": "他們用手機看。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep it short.",
+      "phonetic": "/kip ɪt ʃɔrt./",
+      "zh": "寫短點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The draft is saved.",
+      "phonetic": "/ðə dræft ɪz seɪvd./",
+      "zh": "草稿存好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Finish after lunch.",
+      "phonetic": "/ˈfɪnɪʃ ˈæftər lənʧ./",
+      "zh": "午餐後寫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Mark it urgent?",
+      "phonetic": "/mɑrk ɪt ˈərʤənt?/",
+      "zh": "標急件嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only if needed.",
+      "phonetic": "/ˈoʊnli ɪf ˈnidɪd./",
+      "zh": "需要才標。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sign off politely.",
+      "phonetic": "/saɪn ɔf pəˈlaɪtli./",
+      "zh": "禮貌結尾。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Best regards, then.",
+      "phonetic": "/bɛst rɪˈgɑrdz, ðɛn./",
+      "zh": "那就祝好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The link is broken.",
+      "phonetic": "/ðə lɪŋk ɪz ˈbroʊkən./",
+      "zh": "連結壞了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will resend.",
+      "phonetic": "/aɪ wɪl resend*./",
+      "zh": "我重寄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Use a clear subject.",
+      "phonetic": "/juz ə klɪr ˈsəbʤɪkt./",
+      "zh": "用清楚的主旨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So it is not missed.",
+      "phonetic": "/soʊ ɪt ɪz nɑt mɪst./",
+      "zh": "免得漏看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Forward this to Sam.",
+      "phonetic": "/ˈfɔrwərd ðɪs tɪ sæm./",
+      "zh": "轉給 Sam。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "With a note.",
+      "phonetic": "/wɪθ ə noʊt./",
+      "zh": "加個注。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The inbox is full.",
+      "phonetic": "/ðə inbox* ɪz fʊl./",
+      "zh": "收件夾滿了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Archive the old.",
+      "phonetic": "/ˈɑrˌkaɪv ðə oʊld./",
+      "zh": "把舊的歸檔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Set a follow-up flag.",
+      "phonetic": "/sɛt ə ˈfɑloʊˌəp flæg./",
+      "zh": "設提醒旗標。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For next Monday.",
+      "phonetic": "/fər nɛkst ˈmənˌdeɪ./",
+      "zh": "下週一。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I got an auto-reply.",
+      "phonetic": "/aɪ gɑt ən auto-reply*./",
+      "zh": "我收到自動回覆。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They are on leave.",
+      "phonetic": "/ðeɪ ər ɔn liv./",
+      "zh": "他們在休假。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The address bounced.",
+      "phonetic": "/ðə ˈæˌdrɛs baʊnst./",
+      "zh": "地址被退信。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Check the spelling.",
+      "phonetic": "/ʧɛk ðə ˈspɛlɪŋ./",
+      "zh": "看拼字。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Proofread before send.",
+      "phonetic": "/ˈpruˌfrid ˌbiˈfɔr sɛnd./",
+      "zh": "寄前校對。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spotted a typo.",
+      "phonetic": "/ˈspɑtɪd ə ˈtaɪpoʊ./",
+      "zh": "抓到一個錯字。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Reply to all, careful.",
+      "phonetic": "/rɪˈplaɪ tɪ ɔl, ˈkɛrfəl./",
+      "zh": "小心回覆全部。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only who needs it.",
+      "phonetic": "/ˈoʊnli hu nidz ɪt./",
+      "zh": "只給需要的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "CC the whole team.",
+      "phonetic": "/ˈsiˈsi ðə hoʊl tim./",
+      "zh": "副本給全組。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Added them all.",
+      "phonetic": "/ˈædɪd ðɛm ɔl./",
+      "zh": "都加了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The file is too big.",
+      "phonetic": "/ðə faɪl ɪz tu bɪg./",
+      "zh": "檔案太大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Use the cloud link.",
+      "phonetic": "/juz ðə klaʊd lɪŋk./",
+      "zh": "用雲端連結。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you hit send?",
+      "phonetic": "/dɪd ju hɪt sɛnd?/",
+      "zh": "你寄出了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just now, confirmed.",
+      "phonetic": "/ʤɪst naʊ, kənˈfərmd./",
+      "zh": "剛寄，確認了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Attach the report, please.",
+      "phonetic": "/əˈtæʧ ðə rɪˈpɔrt, pliz./",
+      "zh": "請附上報告。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Done, it is linked.",
+      "phonetic": "/dən, ɪt ɪz lɪŋkt./",
+      "zh": "好了，已附。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What should the subject be?",
+      "phonetic": "/wət ʃʊd ðə ˈsəbʤɪkt bi?/",
+      "zh": "主旨寫什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Meeting moved to two.",
+      "phonetic": "/ˈmitɪŋ muvd tɪ tu./",
+      "zh": "會議改兩點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I need to email the boss.",
+      "phonetic": "/aɪ nid tɪ iˈmeɪl ðə bɔs./",
+      "zh": "我要寄信給老闆。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep it brief.",
+      "phonetic": "/kip ɪt brif./",
+      "zh": "簡短點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I need to email the boss.",
+      "phonetic": "/aɪ nid tɪ iˈmeɪl ðə bɔs./",
+      "zh": "我要寄信給老闆。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep it brief.",
+      "phonetic": "/kip ɪt brif./",
+      "zh": "簡短點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What should the subject be?",
+      "phonetic": "/wət ʃʊd ðə ˈsəbʤɪkt bi?/",
+      "zh": "主旨寫什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Meeting moved to two.",
+      "phonetic": "/ˈmitɪŋ muvd tɪ tu./",
+      "zh": "會議改兩點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Attach the report, please.",
+      "phonetic": "/əˈtæʧ ðə rɪˈpɔrt, pliz./",
+      "zh": "請附上報告。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Done, it is linked.",
+      "phonetic": "/dən, ɪt ɪz lɪŋkt./",
+      "zh": "好了，已附。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you hit send?",
+      "phonetic": "/dɪd ju hɪt sɛnd?/",
+      "zh": "你寄出了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just now, confirmed.",
+      "phonetic": "/ʤɪst naʊ, kənˈfərmd./",
+      "zh": "剛寄，確認了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The file is too big.",
+      "phonetic": "/ðə faɪl ɪz tu bɪg./",
+      "zh": "檔案太大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Use the cloud link.",
+      "phonetic": "/juz ðə klaʊd lɪŋk./",
+      "zh": "用雲端連結。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "CC the whole team.",
+      "phonetic": "/ˈsiˈsi ðə hoʊl tim./",
+      "zh": "副本給全組。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Added them all.",
+      "phonetic": "/ˈædɪd ðɛm ɔl./",
+      "zh": "都加了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Reply to all, careful.",
+      "phonetic": "/rɪˈplaɪ tɪ ɔl, ˈkɛrfəl./",
+      "zh": "小心回覆全部。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only who needs it.",
+      "phonetic": "/ˈoʊnli hu nidz ɪt./",
+      "zh": "只給需要的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Proofread before send.",
+      "phonetic": "/ˈpruˌfrid ˌbiˈfɔr sɛnd./",
+      "zh": "寄前校對。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spotted a typo.",
+      "phonetic": "/ˈspɑtɪd ə ˈtaɪpoʊ./",
+      "zh": "抓到一個錯字。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The address bounced.",
+      "phonetic": "/ðə ˈæˌdrɛs baʊnst./",
+      "zh": "地址被退信。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Check the spelling.",
+      "phonetic": "/ʧɛk ðə ˈspɛlɪŋ./",
+      "zh": "看拼字。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I got an auto-reply.",
+      "phonetic": "/aɪ gɑt ən auto-reply*./",
+      "zh": "我收到自動回覆。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They are on leave.",
+      "phonetic": "/ðeɪ ər ɔn liv./",
+      "zh": "他們在休假。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Set a follow-up flag.",
+      "phonetic": "/sɛt ə ˈfɑloʊˌəp flæg./",
+      "zh": "設提醒旗標。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For next Monday.",
+      "phonetic": "/fər nɛkst ˈmənˌdeɪ./",
+      "zh": "下週一。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The inbox is full.",
+      "phonetic": "/ðə inbox* ɪz fʊl./",
+      "zh": "收件夾滿了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Archive the old.",
+      "phonetic": "/ˈɑrˌkaɪv ðə oʊld./",
+      "zh": "把舊的歸檔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Forward this to Sam.",
+      "phonetic": "/ˈfɔrwərd ðɪs tɪ sæm./",
+      "zh": "轉給 Sam。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "With a note.",
+      "phonetic": "/wɪθ ə noʊt./",
+      "zh": "加個注。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Use a clear subject.",
+      "phonetic": "/juz ə klɪr ˈsəbʤɪkt./",
+      "zh": "用清楚的主旨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So it is not missed.",
+      "phonetic": "/soʊ ɪt ɪz nɑt mɪst./",
+      "zh": "免得漏看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The link is broken.",
+      "phonetic": "/ðə lɪŋk ɪz ˈbroʊkən./",
+      "zh": "連結壞了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will resend.",
+      "phonetic": "/aɪ wɪl resend*./",
+      "zh": "我重寄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sign off politely.",
+      "phonetic": "/saɪn ɔf pəˈlaɪtli./",
+      "zh": "禮貌結尾。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Best regards, then.",
+      "phonetic": "/bɛst rɪˈgɑrdz, ðɛn./",
+      "zh": "那就祝好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Mark it urgent?",
+      "phonetic": "/mɑrk ɪt ˈərʤənt?/",
+      "zh": "標急件嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only if needed.",
+      "phonetic": "/ˈoʊnli ɪf ˈnidɪd./",
+      "zh": "需要才標。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The draft is saved.",
+      "phonetic": "/ðə dræft ɪz seɪvd./",
+      "zh": "草稿存好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Finish after lunch.",
+      "phonetic": "/ˈfɪnɪʃ ˈæftər lənʧ./",
+      "zh": "午餐後寫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "They read on mobile.",
+      "phonetic": "/ðeɪ rɛd ɔn ˈmoʊbəl./",
+      "zh": "他們用手機看。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep it short.",
+      "phonetic": "/kip ɪt ʃɔrt./",
+      "zh": "寫短點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you get my mail?",
+      "phonetic": "/dɪd ju gɪt maɪ meɪl?/",
+      "zh": "收到我的信嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Not yet, resend.",
+      "phonetic": "/nɑt jɛt, resend*./",
+      "zh": "還沒，重寄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The server is down.",
+      "phonetic": "/ðə ˈsərvər ɪz daʊn./",
+      "zh": "伺服器掛了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try in an hour.",
+      "phonetic": "/traɪ ɪn ən aʊər./",
+      "zh": "一小時再試。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Add a greeting line.",
+      "phonetic": "/æd ə ˈgritɪŋ laɪn./",
+      "zh": "加問候句。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hi team, first.",
+      "phonetic": "/haɪ tim, fərst./",
+      "zh": "先寫大家好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tone is too cold.",
+      "phonetic": "/ðə toʊn ɪz tu koʊld./",
+      "zh": "語氣太冷。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Add a thanks.",
+      "phonetic": "/æd ə θæŋks./",
+      "zh": "加個謝謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Confirm receipt, please.",
+      "phonetic": "/kənˈfərm rɪˈsit, pliz./",
+      "zh": "請確認收到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Will do, thanks.",
+      "phonetic": "/wɪl du, θæŋks./",
+      "zh": "會，謝謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The attachment opened.",
+      "phonetic": "/ðə əˈtæʧmənt ˈoʊpənd./",
+      "zh": "附件打開了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All pages there.",
+      "phonetic": "/ɔl ˈpeɪʤɪz ðɛr./",
+      "zh": "頁數齊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Unsubscribe this list.",
+      "phonetic": "/ənsəbˈskraɪb ðɪs lɪst./",
+      "zh": "取消訂閱這個。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Too many mails.",
+      "phonetic": "/tu ˈmɛni meɪlz./",
+      "zh": "信太多了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Encrypt the email?",
+      "phonetic": "/ɪnˈkrɪpt ðə iˈmeɪl?/",
+      "zh": "要加密嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It has data.",
+      "phonetic": "/ɪt həz ˈdætə./",
+      "zh": "有資料。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The thread is long.",
+      "phonetic": "/ðə θrɛd ɪz lɔŋ./",
+      "zh": "對話串很長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Summarize the end.",
+      "phonetic": "/ˈsəmərˌaɪz ðə ɛnd./",
+      "zh": "結尾摘要。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I replied by mistake.",
+      "phonetic": "/aɪ rɪˈplaɪd baɪ mɪˈsteɪk./",
+      "zh": "我誤回了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Send a correction.",
+      "phonetic": "/sɛnd ə kərˈɛkʃən./",
+      "zh": "補寄更正。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Schedule it for nine.",
+      "phonetic": "/ˈskɛʤʊl ɪt fər naɪn./",
+      "zh": "排程九點寄。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sent while away.",
+      "phonetic": "/sɛnt waɪl əˈweɪ./",
+      "zh": "不在也寄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The client responded.",
+      "phonetic": "/ðə klaɪənt rɪˈspɑndɪd./",
+      "zh": "客戶回覆了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Read it now.",
+      "phonetic": "/rɛd ɪt naʊ./",
+      "zh": "現在看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Clean the spam, please.",
+      "phonetic": "/klin ðə spæm, pliz./",
+      "zh": "清垃圾信。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Filtered daily.",
+      "phonetic": "/ˈfɪltərd ˈdeɪli./",
+      "zh": "每天過濾。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Mail is the record.",
+      "phonetic": "/meɪl ɪz ðə ˈrɛkərd./",
+      "zh": "信件是紀錄。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep it tidy.",
+      "phonetic": "/kip ɪt ˈtaɪdi./",
+      "zh": "保持整齊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sent, all good.",
+      "phonetic": "/sɛnt, ɔl gʊd./",
+      "zh": "寄了，都好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Well done.",
+      "phonetic": "/wɛl dən./",
+      "zh": "做得好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sent, all good.",
+      "phonetic": "/sɛnt, ɔl gʊd./",
+      "zh": "寄了，都好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Well done.",
+      "phonetic": "/wɛl dən./",
+      "zh": "做得好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Mail is the record.",
+      "phonetic": "/meɪl ɪz ðə ˈrɛkərd./",
+      "zh": "信件是紀錄。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep it tidy.",
+      "phonetic": "/kip ɪt ˈtaɪdi./",
+      "zh": "保持整齊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Clean the spam, please.",
+      "phonetic": "/klin ðə spæm, pliz./",
+      "zh": "清垃圾信。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Filtered daily.",
+      "phonetic": "/ˈfɪltərd ˈdeɪli./",
+      "zh": "每天過濾。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The client responded.",
+      "phonetic": "/ðə klaɪənt rɪˈspɑndɪd./",
+      "zh": "客戶回覆了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Read it now.",
+      "phonetic": "/rɛd ɪt naʊ./",
+      "zh": "現在看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Schedule it for nine.",
+      "phonetic": "/ˈskɛʤʊl ɪt fər naɪn./",
+      "zh": "排程九點寄。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sent while away.",
+      "phonetic": "/sɛnt waɪl əˈweɪ./",
+      "zh": "不在也寄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I replied by mistake.",
+      "phonetic": "/aɪ rɪˈplaɪd baɪ mɪˈsteɪk./",
+      "zh": "我誤回了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Send a correction.",
+      "phonetic": "/sɛnd ə kərˈɛkʃən./",
+      "zh": "補寄更正。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The thread is long.",
+      "phonetic": "/ðə θrɛd ɪz lɔŋ./",
+      "zh": "對話串很長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Summarize the end.",
+      "phonetic": "/ˈsəmərˌaɪz ðə ɛnd./",
+      "zh": "結尾摘要。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Encrypt the email?",
+      "phonetic": "/ɪnˈkrɪpt ðə iˈmeɪl?/",
+      "zh": "要加密嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It has data.",
+      "phonetic": "/ɪt həz ˈdætə./",
+      "zh": "有資料。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Unsubscribe this list.",
+      "phonetic": "/ənsəbˈskraɪb ðɪs lɪst./",
+      "zh": "取消訂閱這個。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Too many mails.",
+      "phonetic": "/tu ˈmɛni meɪlz./",
+      "zh": "信太多了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The attachment opened.",
+      "phonetic": "/ðə əˈtæʧmənt ˈoʊpənd./",
+      "zh": "附件打開了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All pages there.",
+      "phonetic": "/ɔl ˈpeɪʤɪz ðɛr./",
+      "zh": "頁數齊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Confirm receipt, please.",
+      "phonetic": "/kənˈfərm rɪˈsit, pliz./",
+      "zh": "請確認收到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Will do, thanks.",
+      "phonetic": "/wɪl du, θæŋks./",
+      "zh": "會，謝謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tone is too cold.",
+      "phonetic": "/ðə toʊn ɪz tu koʊld./",
+      "zh": "語氣太冷。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Add a thanks.",
+      "phonetic": "/æd ə θæŋks./",
+      "zh": "加個謝謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Add a greeting line.",
+      "phonetic": "/æd ə ˈgritɪŋ laɪn./",
+      "zh": "加問候句。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hi team, first.",
+      "phonetic": "/haɪ tim, fərst./",
+      "zh": "先寫大家好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The server is down.",
+      "phonetic": "/ðə ˈsərvər ɪz daʊn./",
+      "zh": "伺服器掛了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try in an hour.",
+      "phonetic": "/traɪ ɪn ən aʊər./",
+      "zh": "一小時再試。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you get my mail?",
+      "phonetic": "/dɪd ju gɪt maɪ meɪl?/",
+      "zh": "收到我的信嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Not yet, resend.",
+      "phonetic": "/nɑt jɛt, resend*./",
+      "zh": "還沒，重寄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "They read on mobile.",
+      "phonetic": "/ðeɪ rɛd ɔn ˈmoʊbəl./",
+      "zh": "他們用手機看。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep it short.",
+      "phonetic": "/kip ɪt ʃɔrt./",
+      "zh": "寫短點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The draft is saved.",
+      "phonetic": "/ðə dræft ɪz seɪvd./",
+      "zh": "草稿存好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Finish after lunch.",
+      "phonetic": "/ˈfɪnɪʃ ˈæftər lənʧ./",
+      "zh": "午餐後寫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Mark it urgent?",
+      "phonetic": "/mɑrk ɪt ˈərʤənt?/",
+      "zh": "標急件嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only if needed.",
+      "phonetic": "/ˈoʊnli ɪf ˈnidɪd./",
+      "zh": "需要才標。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sign off politely.",
+      "phonetic": "/saɪn ɔf pəˈlaɪtli./",
+      "zh": "禮貌結尾。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Best regards, then.",
+      "phonetic": "/bɛst rɪˈgɑrdz, ðɛn./",
+      "zh": "那就祝好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The link is broken.",
+      "phonetic": "/ðə lɪŋk ɪz ˈbroʊkən./",
+      "zh": "連結壞了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will resend.",
+      "phonetic": "/aɪ wɪl resend*./",
+      "zh": "我重寄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Use a clear subject.",
+      "phonetic": "/juz ə klɪr ˈsəbʤɪkt./",
+      "zh": "用清楚的主旨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So it is not missed.",
+      "phonetic": "/soʊ ɪt ɪz nɑt mɪst./",
+      "zh": "免得漏看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Forward this to Sam.",
+      "phonetic": "/ˈfɔrwərd ðɪs tɪ sæm./",
+      "zh": "轉給 Sam。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "With a note.",
+      "phonetic": "/wɪθ ə noʊt./",
+      "zh": "加個注。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The inbox is full.",
+      "phonetic": "/ðə inbox* ɪz fʊl./",
+      "zh": "收件夾滿了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Archive the old.",
+      "phonetic": "/ˈɑrˌkaɪv ðə oʊld./",
+      "zh": "把舊的歸檔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Set a follow-up flag.",
+      "phonetic": "/sɛt ə ˈfɑloʊˌəp flæg./",
+      "zh": "設提醒旗標。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For next Monday.",
+      "phonetic": "/fər nɛkst ˈmənˌdeɪ./",
+      "zh": "下週一。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I got an auto-reply.",
+      "phonetic": "/aɪ gɑt ən auto-reply*./",
+      "zh": "我收到自動回覆。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They are on leave.",
+      "phonetic": "/ðeɪ ər ɔn liv./",
+      "zh": "他們在休假。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The address bounced.",
+      "phonetic": "/ðə ˈæˌdrɛs baʊnst./",
+      "zh": "地址被退信。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Check the spelling.",
+      "phonetic": "/ʧɛk ðə ˈspɛlɪŋ./",
+      "zh": "看拼字。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Proofread before send.",
+      "phonetic": "/ˈpruˌfrid ˌbiˈfɔr sɛnd./",
+      "zh": "寄前校對。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spotted a typo.",
+      "phonetic": "/ˈspɑtɪd ə ˈtaɪpoʊ./",
+      "zh": "抓到一個錯字。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Reply to all, careful.",
+      "phonetic": "/rɪˈplaɪ tɪ ɔl, ˈkɛrfəl./",
+      "zh": "小心回覆全部。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only who needs it.",
+      "phonetic": "/ˈoʊnli hu nidz ɪt./",
+      "zh": "只給需要的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "CC the whole team.",
+      "phonetic": "/ˈsiˈsi ðə hoʊl tim./",
+      "zh": "副本給全組。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Added them all.",
+      "phonetic": "/ˈædɪd ðɛm ɔl./",
+      "zh": "都加了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The file is too big.",
+      "phonetic": "/ðə faɪl ɪz tu bɪg./",
+      "zh": "檔案太大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Use the cloud link.",
+      "phonetic": "/juz ðə klaʊd lɪŋk./",
+      "zh": "用雲端連結。"
+    }
+  ]
+}

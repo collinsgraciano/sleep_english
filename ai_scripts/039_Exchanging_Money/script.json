@@ -1,0 +1,2458 @@
+{
+  "title": "Everyday Phrases — Exchanging Money",
+  "title_zh": "換錢",
+  "scene_zh": "換錢 · 情境對話",
+  "title_quote": "I need to exchange cash.",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】💱 實用換錢必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — Exchanging Money",
+  "youtube_description": "睡著學英文！這部影片收錄實用換錢情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫），不用背，睡前聽就會。重複播放，讓英文自然進入你的大腦。👍 想學更多生活場景，請留言告訴我！別忘了訂閱+按讚。 #英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical Exchanging Money phrase pairs (each pair: male normal speed → female slow speed → combined dialogue). No memorization needed—just listen before bed and absorb naturally. If you want more real-life scenarios, leave a comment! Subscribe and like!",
+  "youtube_tags": [
+    "英文聽力",
+    "睡前英文",
+    "換錢英文",
+    "English listening",
+    "Sleep learning",
+    "A2 English",
+    "常用英文短語",
+    "零基礎英文",
+    "慢速英文",
+    "英文口語",
+    "Learn English",
+    "English for daily life",
+    "ESL",
+    "English conversation",
+    "聽英語",
+    "英文學習"
+  ],
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "Exchanging Money",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "Exchanging Money",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Bank & Post",
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "I need to exchange cash.",
+      "phonetic": "/aɪ nid tɪ ɪksˈʧeɪnʤ kæʃ./",
+      "zh": "我要換現金。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Which currency, sir?",
+      "phonetic": "/wɪʧ ˈkərənsi, sər?/",
+      "zh": "哪種貨幣，先生？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Dollars to euros.",
+      "phonetic": "/ˈdɔlərz tɪ ˈjuˌroʊz./",
+      "zh": "美元換歐元。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The rate is good.",
+      "phonetic": "/ðə reɪt ɪz gʊd./",
+      "zh": "匯率不錯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The fee is small.",
+      "phonetic": "/ðə fi ɪz smɔl./",
+      "zh": "手續費少。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One percent, yes.",
+      "phonetic": "/wən pərˈsɛnt, jɛs./",
+      "zh": "百分之一。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Count it, please.",
+      "phonetic": "/kaʊnt ɪt, pliz./",
+      "zh": "請點數。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two hundred euro.",
+      "phonetic": "/tu ˈhənərd ˈjʊrə./",
+      "zh": "兩百歐元。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The note is torn.",
+      "phonetic": "/ðə noʊt ɪz tɔrn./",
+      "zh": "鈔票破了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can't take.",
+      "phonetic": "/wi kænt teɪk./",
+      "zh": "不能收。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rate just dropped.",
+      "phonetic": "/ðə reɪt ʤɪst drɑpt./",
+      "zh": "匯率剛降。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Exchange now, then.",
+      "phonetic": "/ɪksˈʧeɪnʤ naʊ, ðɛn./",
+      "zh": "現在換。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bank is closed.",
+      "phonetic": "/ðə bæŋk ɪz kloʊzd./",
+      "zh": "銀行關了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try the booth.",
+      "phonetic": "/traɪ ðə buθ./",
+      "zh": "試兌換亭。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The booth is quick.",
+      "phonetic": "/ðə buθ ɪz kwɪk./",
+      "zh": "亭子快。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "ID, please.",
+      "phonetic": "/ˈaɪˈdi, pliz./",
+      "zh": "請證件。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sum is large.",
+      "phonetic": "/ðə səm ɪz lɑrʤ./",
+      "zh": "金額大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Form required.",
+      "phonetic": "/fɔrm rikˈwaɪərd./",
+      "zh": "要填表。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The change is right.",
+      "phonetic": "/ðə ʧeɪnʤ ɪz raɪt./",
+      "zh": "找零對。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Count again, sure.",
+      "phonetic": "/kaʊnt əˈgɛn, ʃʊr./",
+      "zh": "再數，好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The coin jar helps.",
+      "phonetic": "/ðə kɔɪn ʤɑr hɛlps./",
+      "zh": "零錢罐有用。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the bus.",
+      "phonetic": "/fər ðə bəs./",
+      "zh": "搭車用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The travel card?",
+      "phonetic": "/ðə ˈtrævəl kɑrd?/",
+      "zh": "旅行卡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Load it here.",
+      "phonetic": "/loʊd ɪt hir./",
+      "zh": "這加值。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The ATM is low.",
+      "phonetic": "/ðə ˈeɪˌtiˈɛm ɪz loʊ./",
+      "zh": "提款機沒錢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Next machine, then.",
+      "phonetic": "/nɛkst məˈʃin, ðɛn./",
+      "zh": "換一臺。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The receipt shows rate.",
+      "phonetic": "/ðə rɪˈsit ʃoʊz reɪt./",
+      "zh": "收據顯示匯率。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep for record.",
+      "phonetic": "/kip fər ˈrɛkərd./",
+      "zh": "留紀錄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The clerk counted twice.",
+      "phonetic": "/ðə klərk ˈkaʊntɪd twaɪs./",
+      "zh": "行員數兩次。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "To be sure.",
+      "phonetic": "/tɪ bi ʃʊr./",
+      "zh": "確認。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The yen is needed.",
+      "phonetic": "/ðə jɛn ɪz ˈnidɪd./",
+      "zh": "需要日圓。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the trip.",
+      "phonetic": "/fər ðə trɪp./",
+      "zh": "旅行用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wad is thick.",
+      "phonetic": "/ðə wɑd ɪz θɪk./",
+      "zh": "一疊很厚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Band it, please.",
+      "phonetic": "/bænd ɪt, pliz./",
+      "zh": "捆好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The fake was caught.",
+      "phonetic": "/ðə feɪk wɑz kɔt./",
+      "zh": "收到假鈔。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Machine beeped.",
+      "phonetic": "/məˈʃin bipt./",
+      "zh": "機器響。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The margin is slim.",
+      "phonetic": "/ðə ˈmɑrʤən ɪz slɪm./",
+      "zh": "價差小。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Best on street.",
+      "phonetic": "/bɛst ɔn strit./",
+      "zh": "街上最好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The order is big.",
+      "phonetic": "/ðə ˈɔrdər ɪz bɪg./",
+      "zh": "金額大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Book the rate.",
+      "phonetic": "/bʊk ðə reɪt./",
+      "zh": "鎖匯率。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wallet is full.",
+      "phonetic": "/ðə ˈwɔlət ɪz fʊl./",
+      "zh": "錢包滿。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Separate the cash.",
+      "phonetic": "/ˈsɛpərˌeɪt ðə kæʃ./",
+      "zh": "現金分開放。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tip in local.",
+      "phonetic": "/ðə tɪp ɪn ˈloʊkəl./",
+      "zh": "小費用當地。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Small bills, yes.",
+      "phonetic": "/smɔl bɪlz, jɛs./",
+      "zh": "小鈔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The exchange is done.",
+      "phonetic": "/ðə ɪksˈʧeɪnʤ ɪz dən./",
+      "zh": "換好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spend wise.",
+      "phonetic": "/spɛnd waɪz./",
+      "zh": "聰明花。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The counter is busy.",
+      "phonetic": "/ðə ˈkaʊntər ɪz ˈbɪzi./",
+      "zh": "櫃檯忙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wait a turn.",
+      "phonetic": "/weɪt ə tərn./",
+      "zh": "等一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rate board flipped.",
+      "phonetic": "/ðə reɪt bɔrd flɪpt./",
+      "zh": "匯率板翻。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Check the live.",
+      "phonetic": "/ʧɛk ðə lɪv./",
+      "zh": "看即時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cash is clean.",
+      "phonetic": "/ðə kæʃ ɪz klin./",
+      "zh": "鈔票乾淨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "New print, yes.",
+      "phonetic": "/nu prɪnt, jɛs./",
+      "zh": "新鈔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sum is exact.",
+      "phonetic": "/ðə səm ɪz ɪgˈzækt./",
+      "zh": "金額剛好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No rounding, good.",
+      "phonetic": "/noʊ ˈraʊndɪŋ, gʊd./",
+      "zh": "不四捨五入。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The currency is odd.",
+      "phonetic": "/ðə ˈkərənsi ɪz ɑd./",
+      "zh": "貨幣少見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Order ahead.",
+      "phonetic": "/ˈɔrdər əˈhɛd./",
+      "zh": "先預約。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The slip is proof.",
+      "phonetic": "/ðə slɪp ɪz pruf./",
+      "zh": "單據是證明。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For customs, yes.",
+      "phonetic": "/fər ˈkəstəmz, jɛs./",
+      "zh": "通關用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The coin is foreign.",
+      "phonetic": "/ðə kɔɪn ɪz ˈfɔrən./",
+      "zh": "是外國硬幣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Souvenir, maybe.",
+      "phonetic": "/ˌsuvəˈnɪr, ˈmeɪbi./",
+      "zh": "當紀念。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rate is fair.",
+      "phonetic": "/ðə reɪt ɪz fɛr./",
+      "zh": "匯率公道。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Shop around, though.",
+      "phonetic": "/ʃɑp əraʊnd, ðoʊ./",
+      "zh": "不過多比。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The exchange took long.",
+      "phonetic": "/ðə ɪksˈʧeɪnʤ tʊk lɔŋ./",
+      "zh": "換錢久。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Worth the wait.",
+      "phonetic": "/wərθ ðə weɪt./",
+      "zh": "值得等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the rate.",
+      "phonetic": "/θæŋks fər ðə reɪt./",
+      "zh": "謝謝匯率。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Safe travels, sir.",
+      "phonetic": "/seɪf ˈtrævəlz, sər./",
+      "zh": "一路平安。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the rate.",
+      "phonetic": "/θæŋks fər ðə reɪt./",
+      "zh": "謝謝匯率。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Safe travels, sir.",
+      "phonetic": "/seɪf ˈtrævəlz, sər./",
+      "zh": "一路平安。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The exchange took long.",
+      "phonetic": "/ðə ɪksˈʧeɪnʤ tʊk lɔŋ./",
+      "zh": "換錢久。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Worth the wait.",
+      "phonetic": "/wərθ ðə weɪt./",
+      "zh": "值得等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rate is fair.",
+      "phonetic": "/ðə reɪt ɪz fɛr./",
+      "zh": "匯率公道。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Shop around, though.",
+      "phonetic": "/ʃɑp əraʊnd, ðoʊ./",
+      "zh": "不過多比。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The coin is foreign.",
+      "phonetic": "/ðə kɔɪn ɪz ˈfɔrən./",
+      "zh": "是外國硬幣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Souvenir, maybe.",
+      "phonetic": "/ˌsuvəˈnɪr, ˈmeɪbi./",
+      "zh": "當紀念。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The slip is proof.",
+      "phonetic": "/ðə slɪp ɪz pruf./",
+      "zh": "單據是證明。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For customs, yes.",
+      "phonetic": "/fər ˈkəstəmz, jɛs./",
+      "zh": "通關用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The currency is odd.",
+      "phonetic": "/ðə ˈkərənsi ɪz ɑd./",
+      "zh": "貨幣少見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Order ahead.",
+      "phonetic": "/ˈɔrdər əˈhɛd./",
+      "zh": "先預約。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sum is exact.",
+      "phonetic": "/ðə səm ɪz ɪgˈzækt./",
+      "zh": "金額剛好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No rounding, good.",
+      "phonetic": "/noʊ ˈraʊndɪŋ, gʊd./",
+      "zh": "不四捨五入。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cash is clean.",
+      "phonetic": "/ðə kæʃ ɪz klin./",
+      "zh": "鈔票乾淨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "New print, yes.",
+      "phonetic": "/nu prɪnt, jɛs./",
+      "zh": "新鈔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rate board flipped.",
+      "phonetic": "/ðə reɪt bɔrd flɪpt./",
+      "zh": "匯率板翻。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Check the live.",
+      "phonetic": "/ʧɛk ðə lɪv./",
+      "zh": "看即時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The counter is busy.",
+      "phonetic": "/ðə ˈkaʊntər ɪz ˈbɪzi./",
+      "zh": "櫃檯忙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wait a turn.",
+      "phonetic": "/weɪt ə tərn./",
+      "zh": "等一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The exchange is done.",
+      "phonetic": "/ðə ɪksˈʧeɪnʤ ɪz dən./",
+      "zh": "換好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spend wise.",
+      "phonetic": "/spɛnd waɪz./",
+      "zh": "聰明花。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tip in local.",
+      "phonetic": "/ðə tɪp ɪn ˈloʊkəl./",
+      "zh": "小費用當地。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Small bills, yes.",
+      "phonetic": "/smɔl bɪlz, jɛs./",
+      "zh": "小鈔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wallet is full.",
+      "phonetic": "/ðə ˈwɔlət ɪz fʊl./",
+      "zh": "錢包滿。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Separate the cash.",
+      "phonetic": "/ˈsɛpərˌeɪt ðə kæʃ./",
+      "zh": "現金分開放。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The order is big.",
+      "phonetic": "/ðə ˈɔrdər ɪz bɪg./",
+      "zh": "金額大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Book the rate.",
+      "phonetic": "/bʊk ðə reɪt./",
+      "zh": "鎖匯率。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The margin is slim.",
+      "phonetic": "/ðə ˈmɑrʤən ɪz slɪm./",
+      "zh": "價差小。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Best on street.",
+      "phonetic": "/bɛst ɔn strit./",
+      "zh": "街上最好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The fake was caught.",
+      "phonetic": "/ðə feɪk wɑz kɔt./",
+      "zh": "收到假鈔。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Machine beeped.",
+      "phonetic": "/məˈʃin bipt./",
+      "zh": "機器響。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wad is thick.",
+      "phonetic": "/ðə wɑd ɪz θɪk./",
+      "zh": "一疊很厚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Band it, please.",
+      "phonetic": "/bænd ɪt, pliz./",
+      "zh": "捆好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The yen is needed.",
+      "phonetic": "/ðə jɛn ɪz ˈnidɪd./",
+      "zh": "需要日圓。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the trip.",
+      "phonetic": "/fər ðə trɪp./",
+      "zh": "旅行用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The clerk counted twice.",
+      "phonetic": "/ðə klərk ˈkaʊntɪd twaɪs./",
+      "zh": "行員數兩次。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "To be sure.",
+      "phonetic": "/tɪ bi ʃʊr./",
+      "zh": "確認。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The receipt shows rate.",
+      "phonetic": "/ðə rɪˈsit ʃoʊz reɪt./",
+      "zh": "收據顯示匯率。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep for record.",
+      "phonetic": "/kip fər ˈrɛkərd./",
+      "zh": "留紀錄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The ATM is low.",
+      "phonetic": "/ðə ˈeɪˌtiˈɛm ɪz loʊ./",
+      "zh": "提款機沒錢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Next machine, then.",
+      "phonetic": "/nɛkst məˈʃin, ðɛn./",
+      "zh": "換一臺。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The travel card?",
+      "phonetic": "/ðə ˈtrævəl kɑrd?/",
+      "zh": "旅行卡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Load it here.",
+      "phonetic": "/loʊd ɪt hir./",
+      "zh": "這加值。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The coin jar helps.",
+      "phonetic": "/ðə kɔɪn ʤɑr hɛlps./",
+      "zh": "零錢罐有用。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the bus.",
+      "phonetic": "/fər ðə bəs./",
+      "zh": "搭車用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The change is right.",
+      "phonetic": "/ðə ʧeɪnʤ ɪz raɪt./",
+      "zh": "找零對。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Count again, sure.",
+      "phonetic": "/kaʊnt əˈgɛn, ʃʊr./",
+      "zh": "再數，好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sum is large.",
+      "phonetic": "/ðə səm ɪz lɑrʤ./",
+      "zh": "金額大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Form required.",
+      "phonetic": "/fɔrm rikˈwaɪərd./",
+      "zh": "要填表。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The booth is quick.",
+      "phonetic": "/ðə buθ ɪz kwɪk./",
+      "zh": "亭子快。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "ID, please.",
+      "phonetic": "/ˈaɪˈdi, pliz./",
+      "zh": "請證件。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bank is closed.",
+      "phonetic": "/ðə bæŋk ɪz kloʊzd./",
+      "zh": "銀行關了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try the booth.",
+      "phonetic": "/traɪ ðə buθ./",
+      "zh": "試兌換亭。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rate just dropped.",
+      "phonetic": "/ðə reɪt ʤɪst drɑpt./",
+      "zh": "匯率剛降。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Exchange now, then.",
+      "phonetic": "/ɪksˈʧeɪnʤ naʊ, ðɛn./",
+      "zh": "現在換。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The note is torn.",
+      "phonetic": "/ðə noʊt ɪz tɔrn./",
+      "zh": "鈔票破了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can't take.",
+      "phonetic": "/wi kænt teɪk./",
+      "zh": "不能收。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Count it, please.",
+      "phonetic": "/kaʊnt ɪt, pliz./",
+      "zh": "請點數。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two hundred euro.",
+      "phonetic": "/tu ˈhənərd ˈjʊrə./",
+      "zh": "兩百歐元。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The fee is small.",
+      "phonetic": "/ðə fi ɪz smɔl./",
+      "zh": "手續費少。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One percent, yes.",
+      "phonetic": "/wən pərˈsɛnt, jɛs./",
+      "zh": "百分之一。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Dollars to euros.",
+      "phonetic": "/ˈdɔlərz tɪ ˈjuˌroʊz./",
+      "zh": "美元換歐元。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The rate is good.",
+      "phonetic": "/ðə reɪt ɪz gʊd./",
+      "zh": "匯率不錯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I need to exchange cash.",
+      "phonetic": "/aɪ nid tɪ ɪksˈʧeɪnʤ kæʃ./",
+      "zh": "我要換現金。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Which currency, sir?",
+      "phonetic": "/wɪʧ ˈkərənsi, sər?/",
+      "zh": "哪種貨幣，先生？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I need to exchange cash.",
+      "phonetic": "/aɪ nid tɪ ɪksˈʧeɪnʤ kæʃ./",
+      "zh": "我要換現金。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Which currency, sir?",
+      "phonetic": "/wɪʧ ˈkərənsi, sər?/",
+      "zh": "哪種貨幣，先生？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Dollars to euros.",
+      "phonetic": "/ˈdɔlərz tɪ ˈjuˌroʊz./",
+      "zh": "美元換歐元。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The rate is good.",
+      "phonetic": "/ðə reɪt ɪz gʊd./",
+      "zh": "匯率不錯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The fee is small.",
+      "phonetic": "/ðə fi ɪz smɔl./",
+      "zh": "手續費少。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One percent, yes.",
+      "phonetic": "/wən pərˈsɛnt, jɛs./",
+      "zh": "百分之一。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Count it, please.",
+      "phonetic": "/kaʊnt ɪt, pliz./",
+      "zh": "請點數。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two hundred euro.",
+      "phonetic": "/tu ˈhənərd ˈjʊrə./",
+      "zh": "兩百歐元。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The note is torn.",
+      "phonetic": "/ðə noʊt ɪz tɔrn./",
+      "zh": "鈔票破了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can't take.",
+      "phonetic": "/wi kænt teɪk./",
+      "zh": "不能收。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rate just dropped.",
+      "phonetic": "/ðə reɪt ʤɪst drɑpt./",
+      "zh": "匯率剛降。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Exchange now, then.",
+      "phonetic": "/ɪksˈʧeɪnʤ naʊ, ðɛn./",
+      "zh": "現在換。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bank is closed.",
+      "phonetic": "/ðə bæŋk ɪz kloʊzd./",
+      "zh": "銀行關了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try the booth.",
+      "phonetic": "/traɪ ðə buθ./",
+      "zh": "試兌換亭。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The booth is quick.",
+      "phonetic": "/ðə buθ ɪz kwɪk./",
+      "zh": "亭子快。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "ID, please.",
+      "phonetic": "/ˈaɪˈdi, pliz./",
+      "zh": "請證件。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sum is large.",
+      "phonetic": "/ðə səm ɪz lɑrʤ./",
+      "zh": "金額大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Form required.",
+      "phonetic": "/fɔrm rikˈwaɪərd./",
+      "zh": "要填表。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The change is right.",
+      "phonetic": "/ðə ʧeɪnʤ ɪz raɪt./",
+      "zh": "找零對。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Count again, sure.",
+      "phonetic": "/kaʊnt əˈgɛn, ʃʊr./",
+      "zh": "再數，好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The coin jar helps.",
+      "phonetic": "/ðə kɔɪn ʤɑr hɛlps./",
+      "zh": "零錢罐有用。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the bus.",
+      "phonetic": "/fər ðə bəs./",
+      "zh": "搭車用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The travel card?",
+      "phonetic": "/ðə ˈtrævəl kɑrd?/",
+      "zh": "旅行卡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Load it here.",
+      "phonetic": "/loʊd ɪt hir./",
+      "zh": "這加值。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The ATM is low.",
+      "phonetic": "/ðə ˈeɪˌtiˈɛm ɪz loʊ./",
+      "zh": "提款機沒錢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Next machine, then.",
+      "phonetic": "/nɛkst məˈʃin, ðɛn./",
+      "zh": "換一臺。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The receipt shows rate.",
+      "phonetic": "/ðə rɪˈsit ʃoʊz reɪt./",
+      "zh": "收據顯示匯率。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep for record.",
+      "phonetic": "/kip fər ˈrɛkərd./",
+      "zh": "留紀錄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The clerk counted twice.",
+      "phonetic": "/ðə klərk ˈkaʊntɪd twaɪs./",
+      "zh": "行員數兩次。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "To be sure.",
+      "phonetic": "/tɪ bi ʃʊr./",
+      "zh": "確認。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The yen is needed.",
+      "phonetic": "/ðə jɛn ɪz ˈnidɪd./",
+      "zh": "需要日圓。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the trip.",
+      "phonetic": "/fər ðə trɪp./",
+      "zh": "旅行用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wad is thick.",
+      "phonetic": "/ðə wɑd ɪz θɪk./",
+      "zh": "一疊很厚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Band it, please.",
+      "phonetic": "/bænd ɪt, pliz./",
+      "zh": "捆好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The fake was caught.",
+      "phonetic": "/ðə feɪk wɑz kɔt./",
+      "zh": "收到假鈔。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Machine beeped.",
+      "phonetic": "/məˈʃin bipt./",
+      "zh": "機器響。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The margin is slim.",
+      "phonetic": "/ðə ˈmɑrʤən ɪz slɪm./",
+      "zh": "價差小。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Best on street.",
+      "phonetic": "/bɛst ɔn strit./",
+      "zh": "街上最好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The order is big.",
+      "phonetic": "/ðə ˈɔrdər ɪz bɪg./",
+      "zh": "金額大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Book the rate.",
+      "phonetic": "/bʊk ðə reɪt./",
+      "zh": "鎖匯率。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wallet is full.",
+      "phonetic": "/ðə ˈwɔlət ɪz fʊl./",
+      "zh": "錢包滿。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Separate the cash.",
+      "phonetic": "/ˈsɛpərˌeɪt ðə kæʃ./",
+      "zh": "現金分開放。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tip in local.",
+      "phonetic": "/ðə tɪp ɪn ˈloʊkəl./",
+      "zh": "小費用當地。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Small bills, yes.",
+      "phonetic": "/smɔl bɪlz, jɛs./",
+      "zh": "小鈔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The exchange is done.",
+      "phonetic": "/ðə ɪksˈʧeɪnʤ ɪz dən./",
+      "zh": "換好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spend wise.",
+      "phonetic": "/spɛnd waɪz./",
+      "zh": "聰明花。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The counter is busy.",
+      "phonetic": "/ðə ˈkaʊntər ɪz ˈbɪzi./",
+      "zh": "櫃檯忙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wait a turn.",
+      "phonetic": "/weɪt ə tərn./",
+      "zh": "等一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rate board flipped.",
+      "phonetic": "/ðə reɪt bɔrd flɪpt./",
+      "zh": "匯率板翻。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Check the live.",
+      "phonetic": "/ʧɛk ðə lɪv./",
+      "zh": "看即時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cash is clean.",
+      "phonetic": "/ðə kæʃ ɪz klin./",
+      "zh": "鈔票乾淨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "New print, yes.",
+      "phonetic": "/nu prɪnt, jɛs./",
+      "zh": "新鈔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sum is exact.",
+      "phonetic": "/ðə səm ɪz ɪgˈzækt./",
+      "zh": "金額剛好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No rounding, good.",
+      "phonetic": "/noʊ ˈraʊndɪŋ, gʊd./",
+      "zh": "不四捨五入。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The currency is odd.",
+      "phonetic": "/ðə ˈkərənsi ɪz ɑd./",
+      "zh": "貨幣少見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Order ahead.",
+      "phonetic": "/ˈɔrdər əˈhɛd./",
+      "zh": "先預約。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The slip is proof.",
+      "phonetic": "/ðə slɪp ɪz pruf./",
+      "zh": "單據是證明。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For customs, yes.",
+      "phonetic": "/fər ˈkəstəmz, jɛs./",
+      "zh": "通關用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The coin is foreign.",
+      "phonetic": "/ðə kɔɪn ɪz ˈfɔrən./",
+      "zh": "是外國硬幣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Souvenir, maybe.",
+      "phonetic": "/ˌsuvəˈnɪr, ˈmeɪbi./",
+      "zh": "當紀念。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rate is fair.",
+      "phonetic": "/ðə reɪt ɪz fɛr./",
+      "zh": "匯率公道。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Shop around, though.",
+      "phonetic": "/ʃɑp əraʊnd, ðoʊ./",
+      "zh": "不過多比。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The exchange took long.",
+      "phonetic": "/ðə ɪksˈʧeɪnʤ tʊk lɔŋ./",
+      "zh": "換錢久。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Worth the wait.",
+      "phonetic": "/wərθ ðə weɪt./",
+      "zh": "值得等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the rate.",
+      "phonetic": "/θæŋks fər ðə reɪt./",
+      "zh": "謝謝匯率。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Safe travels, sir.",
+      "phonetic": "/seɪf ˈtrævəlz, sər./",
+      "zh": "一路平安。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the rate.",
+      "phonetic": "/θæŋks fər ðə reɪt./",
+      "zh": "謝謝匯率。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Safe travels, sir.",
+      "phonetic": "/seɪf ˈtrævəlz, sər./",
+      "zh": "一路平安。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The exchange took long.",
+      "phonetic": "/ðə ɪksˈʧeɪnʤ tʊk lɔŋ./",
+      "zh": "換錢久。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Worth the wait.",
+      "phonetic": "/wərθ ðə weɪt./",
+      "zh": "值得等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rate is fair.",
+      "phonetic": "/ðə reɪt ɪz fɛr./",
+      "zh": "匯率公道。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Shop around, though.",
+      "phonetic": "/ʃɑp əraʊnd, ðoʊ./",
+      "zh": "不過多比。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The coin is foreign.",
+      "phonetic": "/ðə kɔɪn ɪz ˈfɔrən./",
+      "zh": "是外國硬幣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Souvenir, maybe.",
+      "phonetic": "/ˌsuvəˈnɪr, ˈmeɪbi./",
+      "zh": "當紀念。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The slip is proof.",
+      "phonetic": "/ðə slɪp ɪz pruf./",
+      "zh": "單據是證明。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For customs, yes.",
+      "phonetic": "/fər ˈkəstəmz, jɛs./",
+      "zh": "通關用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The currency is odd.",
+      "phonetic": "/ðə ˈkərənsi ɪz ɑd./",
+      "zh": "貨幣少見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Order ahead.",
+      "phonetic": "/ˈɔrdər əˈhɛd./",
+      "zh": "先預約。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sum is exact.",
+      "phonetic": "/ðə səm ɪz ɪgˈzækt./",
+      "zh": "金額剛好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No rounding, good.",
+      "phonetic": "/noʊ ˈraʊndɪŋ, gʊd./",
+      "zh": "不四捨五入。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cash is clean.",
+      "phonetic": "/ðə kæʃ ɪz klin./",
+      "zh": "鈔票乾淨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "New print, yes.",
+      "phonetic": "/nu prɪnt, jɛs./",
+      "zh": "新鈔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rate board flipped.",
+      "phonetic": "/ðə reɪt bɔrd flɪpt./",
+      "zh": "匯率板翻。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Check the live.",
+      "phonetic": "/ʧɛk ðə lɪv./",
+      "zh": "看即時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The counter is busy.",
+      "phonetic": "/ðə ˈkaʊntər ɪz ˈbɪzi./",
+      "zh": "櫃檯忙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wait a turn.",
+      "phonetic": "/weɪt ə tərn./",
+      "zh": "等一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The exchange is done.",
+      "phonetic": "/ðə ɪksˈʧeɪnʤ ɪz dən./",
+      "zh": "換好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spend wise.",
+      "phonetic": "/spɛnd waɪz./",
+      "zh": "聰明花。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tip in local.",
+      "phonetic": "/ðə tɪp ɪn ˈloʊkəl./",
+      "zh": "小費用當地。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Small bills, yes.",
+      "phonetic": "/smɔl bɪlz, jɛs./",
+      "zh": "小鈔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wallet is full.",
+      "phonetic": "/ðə ˈwɔlət ɪz fʊl./",
+      "zh": "錢包滿。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Separate the cash.",
+      "phonetic": "/ˈsɛpərˌeɪt ðə kæʃ./",
+      "zh": "現金分開放。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The order is big.",
+      "phonetic": "/ðə ˈɔrdər ɪz bɪg./",
+      "zh": "金額大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Book the rate.",
+      "phonetic": "/bʊk ðə reɪt./",
+      "zh": "鎖匯率。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The margin is slim.",
+      "phonetic": "/ðə ˈmɑrʤən ɪz slɪm./",
+      "zh": "價差小。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Best on street.",
+      "phonetic": "/bɛst ɔn strit./",
+      "zh": "街上最好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The fake was caught.",
+      "phonetic": "/ðə feɪk wɑz kɔt./",
+      "zh": "收到假鈔。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Machine beeped.",
+      "phonetic": "/məˈʃin bipt./",
+      "zh": "機器響。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wad is thick.",
+      "phonetic": "/ðə wɑd ɪz θɪk./",
+      "zh": "一疊很厚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Band it, please.",
+      "phonetic": "/bænd ɪt, pliz./",
+      "zh": "捆好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The yen is needed.",
+      "phonetic": "/ðə jɛn ɪz ˈnidɪd./",
+      "zh": "需要日圓。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the trip.",
+      "phonetic": "/fər ðə trɪp./",
+      "zh": "旅行用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The clerk counted twice.",
+      "phonetic": "/ðə klərk ˈkaʊntɪd twaɪs./",
+      "zh": "行員數兩次。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "To be sure.",
+      "phonetic": "/tɪ bi ʃʊr./",
+      "zh": "確認。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The receipt shows rate.",
+      "phonetic": "/ðə rɪˈsit ʃoʊz reɪt./",
+      "zh": "收據顯示匯率。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep for record.",
+      "phonetic": "/kip fər ˈrɛkərd./",
+      "zh": "留紀錄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The ATM is low.",
+      "phonetic": "/ðə ˈeɪˌtiˈɛm ɪz loʊ./",
+      "zh": "提款機沒錢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Next machine, then.",
+      "phonetic": "/nɛkst məˈʃin, ðɛn./",
+      "zh": "換一臺。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The travel card?",
+      "phonetic": "/ðə ˈtrævəl kɑrd?/",
+      "zh": "旅行卡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Load it here.",
+      "phonetic": "/loʊd ɪt hir./",
+      "zh": "這加值。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The coin jar helps.",
+      "phonetic": "/ðə kɔɪn ʤɑr hɛlps./",
+      "zh": "零錢罐有用。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the bus.",
+      "phonetic": "/fər ðə bəs./",
+      "zh": "搭車用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The change is right.",
+      "phonetic": "/ðə ʧeɪnʤ ɪz raɪt./",
+      "zh": "找零對。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Count again, sure.",
+      "phonetic": "/kaʊnt əˈgɛn, ʃʊr./",
+      "zh": "再數，好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sum is large.",
+      "phonetic": "/ðə səm ɪz lɑrʤ./",
+      "zh": "金額大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Form required.",
+      "phonetic": "/fɔrm rikˈwaɪərd./",
+      "zh": "要填表。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The booth is quick.",
+      "phonetic": "/ðə buθ ɪz kwɪk./",
+      "zh": "亭子快。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "ID, please.",
+      "phonetic": "/ˈaɪˈdi, pliz./",
+      "zh": "請證件。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bank is closed.",
+      "phonetic": "/ðə bæŋk ɪz kloʊzd./",
+      "zh": "銀行關了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try the booth.",
+      "phonetic": "/traɪ ðə buθ./",
+      "zh": "試兌換亭。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rate just dropped.",
+      "phonetic": "/ðə reɪt ʤɪst drɑpt./",
+      "zh": "匯率剛降。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Exchange now, then.",
+      "phonetic": "/ɪksˈʧeɪnʤ naʊ, ðɛn./",
+      "zh": "現在換。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The note is torn.",
+      "phonetic": "/ðə noʊt ɪz tɔrn./",
+      "zh": "鈔票破了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can't take.",
+      "phonetic": "/wi kænt teɪk./",
+      "zh": "不能收。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Count it, please.",
+      "phonetic": "/kaʊnt ɪt, pliz./",
+      "zh": "請點數。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two hundred euro.",
+      "phonetic": "/tu ˈhənərd ˈjʊrə./",
+      "zh": "兩百歐元。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The fee is small.",
+      "phonetic": "/ðə fi ɪz smɔl./",
+      "zh": "手續費少。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One percent, yes.",
+      "phonetic": "/wən pərˈsɛnt, jɛs./",
+      "zh": "百分之一。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Dollars to euros.",
+      "phonetic": "/ˈdɔlərz tɪ ˈjuˌroʊz./",
+      "zh": "美元換歐元。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The rate is good.",
+      "phonetic": "/ðə reɪt ɪz gʊd./",
+      "zh": "匯率不錯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I need to exchange cash.",
+      "phonetic": "/aɪ nid tɪ ɪksˈʧeɪnʤ kæʃ./",
+      "zh": "我要換現金。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Which currency, sir?",
+      "phonetic": "/wɪʧ ˈkərənsi, sər?/",
+      "zh": "哪種貨幣，先生？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I need to exchange cash.",
+      "phonetic": "/aɪ nid tɪ ɪksˈʧeɪnʤ kæʃ./",
+      "zh": "我要換現金。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Which currency, sir?",
+      "phonetic": "/wɪʧ ˈkərənsi, sər?/",
+      "zh": "哪種貨幣，先生？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Dollars to euros.",
+      "phonetic": "/ˈdɔlərz tɪ ˈjuˌroʊz./",
+      "zh": "美元換歐元。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The rate is good.",
+      "phonetic": "/ðə reɪt ɪz gʊd./",
+      "zh": "匯率不錯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The fee is small.",
+      "phonetic": "/ðə fi ɪz smɔl./",
+      "zh": "手續費少。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One percent, yes.",
+      "phonetic": "/wən pərˈsɛnt, jɛs./",
+      "zh": "百分之一。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Count it, please.",
+      "phonetic": "/kaʊnt ɪt, pliz./",
+      "zh": "請點數。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two hundred euro.",
+      "phonetic": "/tu ˈhənərd ˈjʊrə./",
+      "zh": "兩百歐元。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The note is torn.",
+      "phonetic": "/ðə noʊt ɪz tɔrn./",
+      "zh": "鈔票破了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can't take.",
+      "phonetic": "/wi kænt teɪk./",
+      "zh": "不能收。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rate just dropped.",
+      "phonetic": "/ðə reɪt ʤɪst drɑpt./",
+      "zh": "匯率剛降。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Exchange now, then.",
+      "phonetic": "/ɪksˈʧeɪnʤ naʊ, ðɛn./",
+      "zh": "現在換。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bank is closed.",
+      "phonetic": "/ðə bæŋk ɪz kloʊzd./",
+      "zh": "銀行關了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try the booth.",
+      "phonetic": "/traɪ ðə buθ./",
+      "zh": "試兌換亭。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The booth is quick.",
+      "phonetic": "/ðə buθ ɪz kwɪk./",
+      "zh": "亭子快。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "ID, please.",
+      "phonetic": "/ˈaɪˈdi, pliz./",
+      "zh": "請證件。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sum is large.",
+      "phonetic": "/ðə səm ɪz lɑrʤ./",
+      "zh": "金額大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Form required.",
+      "phonetic": "/fɔrm rikˈwaɪərd./",
+      "zh": "要填表。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The change is right.",
+      "phonetic": "/ðə ʧeɪnʤ ɪz raɪt./",
+      "zh": "找零對。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Count again, sure.",
+      "phonetic": "/kaʊnt əˈgɛn, ʃʊr./",
+      "zh": "再數，好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The coin jar helps.",
+      "phonetic": "/ðə kɔɪn ʤɑr hɛlps./",
+      "zh": "零錢罐有用。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the bus.",
+      "phonetic": "/fər ðə bəs./",
+      "zh": "搭車用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The travel card?",
+      "phonetic": "/ðə ˈtrævəl kɑrd?/",
+      "zh": "旅行卡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Load it here.",
+      "phonetic": "/loʊd ɪt hir./",
+      "zh": "這加值。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The ATM is low.",
+      "phonetic": "/ðə ˈeɪˌtiˈɛm ɪz loʊ./",
+      "zh": "提款機沒錢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Next machine, then.",
+      "phonetic": "/nɛkst məˈʃin, ðɛn./",
+      "zh": "換一臺。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The receipt shows rate.",
+      "phonetic": "/ðə rɪˈsit ʃoʊz reɪt./",
+      "zh": "收據顯示匯率。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep for record.",
+      "phonetic": "/kip fər ˈrɛkərd./",
+      "zh": "留紀錄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The clerk counted twice.",
+      "phonetic": "/ðə klərk ˈkaʊntɪd twaɪs./",
+      "zh": "行員數兩次。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "To be sure.",
+      "phonetic": "/tɪ bi ʃʊr./",
+      "zh": "確認。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The yen is needed.",
+      "phonetic": "/ðə jɛn ɪz ˈnidɪd./",
+      "zh": "需要日圓。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the trip.",
+      "phonetic": "/fər ðə trɪp./",
+      "zh": "旅行用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wad is thick.",
+      "phonetic": "/ðə wɑd ɪz θɪk./",
+      "zh": "一疊很厚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Band it, please.",
+      "phonetic": "/bænd ɪt, pliz./",
+      "zh": "捆好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The fake was caught.",
+      "phonetic": "/ðə feɪk wɑz kɔt./",
+      "zh": "收到假鈔。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Machine beeped.",
+      "phonetic": "/məˈʃin bipt./",
+      "zh": "機器響。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The margin is slim.",
+      "phonetic": "/ðə ˈmɑrʤən ɪz slɪm./",
+      "zh": "價差小。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Best on street.",
+      "phonetic": "/bɛst ɔn strit./",
+      "zh": "街上最好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The order is big.",
+      "phonetic": "/ðə ˈɔrdər ɪz bɪg./",
+      "zh": "金額大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Book the rate.",
+      "phonetic": "/bʊk ðə reɪt./",
+      "zh": "鎖匯率。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wallet is full.",
+      "phonetic": "/ðə ˈwɔlət ɪz fʊl./",
+      "zh": "錢包滿。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Separate the cash.",
+      "phonetic": "/ˈsɛpərˌeɪt ðə kæʃ./",
+      "zh": "現金分開放。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tip in local.",
+      "phonetic": "/ðə tɪp ɪn ˈloʊkəl./",
+      "zh": "小費用當地。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Small bills, yes.",
+      "phonetic": "/smɔl bɪlz, jɛs./",
+      "zh": "小鈔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The exchange is done.",
+      "phonetic": "/ðə ɪksˈʧeɪnʤ ɪz dən./",
+      "zh": "換好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spend wise.",
+      "phonetic": "/spɛnd waɪz./",
+      "zh": "聰明花。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The counter is busy.",
+      "phonetic": "/ðə ˈkaʊntər ɪz ˈbɪzi./",
+      "zh": "櫃檯忙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wait a turn.",
+      "phonetic": "/weɪt ə tərn./",
+      "zh": "等一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rate board flipped.",
+      "phonetic": "/ðə reɪt bɔrd flɪpt./",
+      "zh": "匯率板翻。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Check the live.",
+      "phonetic": "/ʧɛk ðə lɪv./",
+      "zh": "看即時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cash is clean.",
+      "phonetic": "/ðə kæʃ ɪz klin./",
+      "zh": "鈔票乾淨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "New print, yes.",
+      "phonetic": "/nu prɪnt, jɛs./",
+      "zh": "新鈔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sum is exact.",
+      "phonetic": "/ðə səm ɪz ɪgˈzækt./",
+      "zh": "金額剛好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No rounding, good.",
+      "phonetic": "/noʊ ˈraʊndɪŋ, gʊd./",
+      "zh": "不四捨五入。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The currency is odd.",
+      "phonetic": "/ðə ˈkərənsi ɪz ɑd./",
+      "zh": "貨幣少見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Order ahead.",
+      "phonetic": "/ˈɔrdər əˈhɛd./",
+      "zh": "先預約。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The slip is proof.",
+      "phonetic": "/ðə slɪp ɪz pruf./",
+      "zh": "單據是證明。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For customs, yes.",
+      "phonetic": "/fər ˈkəstəmz, jɛs./",
+      "zh": "通關用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The coin is foreign.",
+      "phonetic": "/ðə kɔɪn ɪz ˈfɔrən./",
+      "zh": "是外國硬幣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Souvenir, maybe.",
+      "phonetic": "/ˌsuvəˈnɪr, ˈmeɪbi./",
+      "zh": "當紀念。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rate is fair.",
+      "phonetic": "/ðə reɪt ɪz fɛr./",
+      "zh": "匯率公道。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Shop around, though.",
+      "phonetic": "/ʃɑp əraʊnd, ðoʊ./",
+      "zh": "不過多比。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The exchange took long.",
+      "phonetic": "/ðə ɪksˈʧeɪnʤ tʊk lɔŋ./",
+      "zh": "換錢久。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Worth the wait.",
+      "phonetic": "/wərθ ðə weɪt./",
+      "zh": "值得等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the rate.",
+      "phonetic": "/θæŋks fər ðə reɪt./",
+      "zh": "謝謝匯率。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Safe travels, sir.",
+      "phonetic": "/seɪf ˈtrævəlz, sər./",
+      "zh": "一路平安。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the rate.",
+      "phonetic": "/θæŋks fər ðə reɪt./",
+      "zh": "謝謝匯率。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Safe travels, sir.",
+      "phonetic": "/seɪf ˈtrævəlz, sər./",
+      "zh": "一路平安。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The exchange took long.",
+      "phonetic": "/ðə ɪksˈʧeɪnʤ tʊk lɔŋ./",
+      "zh": "換錢久。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Worth the wait.",
+      "phonetic": "/wərθ ðə weɪt./",
+      "zh": "值得等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rate is fair.",
+      "phonetic": "/ðə reɪt ɪz fɛr./",
+      "zh": "匯率公道。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Shop around, though.",
+      "phonetic": "/ʃɑp əraʊnd, ðoʊ./",
+      "zh": "不過多比。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The coin is foreign.",
+      "phonetic": "/ðə kɔɪn ɪz ˈfɔrən./",
+      "zh": "是外國硬幣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Souvenir, maybe.",
+      "phonetic": "/ˌsuvəˈnɪr, ˈmeɪbi./",
+      "zh": "當紀念。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The slip is proof.",
+      "phonetic": "/ðə slɪp ɪz pruf./",
+      "zh": "單據是證明。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For customs, yes.",
+      "phonetic": "/fər ˈkəstəmz, jɛs./",
+      "zh": "通關用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The currency is odd.",
+      "phonetic": "/ðə ˈkərənsi ɪz ɑd./",
+      "zh": "貨幣少見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Order ahead.",
+      "phonetic": "/ˈɔrdər əˈhɛd./",
+      "zh": "先預約。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sum is exact.",
+      "phonetic": "/ðə səm ɪz ɪgˈzækt./",
+      "zh": "金額剛好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No rounding, good.",
+      "phonetic": "/noʊ ˈraʊndɪŋ, gʊd./",
+      "zh": "不四捨五入。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cash is clean.",
+      "phonetic": "/ðə kæʃ ɪz klin./",
+      "zh": "鈔票乾淨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "New print, yes.",
+      "phonetic": "/nu prɪnt, jɛs./",
+      "zh": "新鈔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rate board flipped.",
+      "phonetic": "/ðə reɪt bɔrd flɪpt./",
+      "zh": "匯率板翻。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Check the live.",
+      "phonetic": "/ʧɛk ðə lɪv./",
+      "zh": "看即時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The counter is busy.",
+      "phonetic": "/ðə ˈkaʊntər ɪz ˈbɪzi./",
+      "zh": "櫃檯忙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wait a turn.",
+      "phonetic": "/weɪt ə tərn./",
+      "zh": "等一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The exchange is done.",
+      "phonetic": "/ðə ɪksˈʧeɪnʤ ɪz dən./",
+      "zh": "換好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spend wise.",
+      "phonetic": "/spɛnd waɪz./",
+      "zh": "聰明花。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tip in local.",
+      "phonetic": "/ðə tɪp ɪn ˈloʊkəl./",
+      "zh": "小費用當地。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Small bills, yes.",
+      "phonetic": "/smɔl bɪlz, jɛs./",
+      "zh": "小鈔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wallet is full.",
+      "phonetic": "/ðə ˈwɔlət ɪz fʊl./",
+      "zh": "錢包滿。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Separate the cash.",
+      "phonetic": "/ˈsɛpərˌeɪt ðə kæʃ./",
+      "zh": "現金分開放。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The order is big.",
+      "phonetic": "/ðə ˈɔrdər ɪz bɪg./",
+      "zh": "金額大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Book the rate.",
+      "phonetic": "/bʊk ðə reɪt./",
+      "zh": "鎖匯率。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The margin is slim.",
+      "phonetic": "/ðə ˈmɑrʤən ɪz slɪm./",
+      "zh": "價差小。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Best on street.",
+      "phonetic": "/bɛst ɔn strit./",
+      "zh": "街上最好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The fake was caught.",
+      "phonetic": "/ðə feɪk wɑz kɔt./",
+      "zh": "收到假鈔。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Machine beeped.",
+      "phonetic": "/məˈʃin bipt./",
+      "zh": "機器響。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wad is thick.",
+      "phonetic": "/ðə wɑd ɪz θɪk./",
+      "zh": "一疊很厚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Band it, please.",
+      "phonetic": "/bænd ɪt, pliz./",
+      "zh": "捆好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The yen is needed.",
+      "phonetic": "/ðə jɛn ɪz ˈnidɪd./",
+      "zh": "需要日圓。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the trip.",
+      "phonetic": "/fər ðə trɪp./",
+      "zh": "旅行用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The clerk counted twice.",
+      "phonetic": "/ðə klərk ˈkaʊntɪd twaɪs./",
+      "zh": "行員數兩次。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "To be sure.",
+      "phonetic": "/tɪ bi ʃʊr./",
+      "zh": "確認。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The receipt shows rate.",
+      "phonetic": "/ðə rɪˈsit ʃoʊz reɪt./",
+      "zh": "收據顯示匯率。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep for record.",
+      "phonetic": "/kip fər ˈrɛkərd./",
+      "zh": "留紀錄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The ATM is low.",
+      "phonetic": "/ðə ˈeɪˌtiˈɛm ɪz loʊ./",
+      "zh": "提款機沒錢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Next machine, then.",
+      "phonetic": "/nɛkst məˈʃin, ðɛn./",
+      "zh": "換一臺。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The travel card?",
+      "phonetic": "/ðə ˈtrævəl kɑrd?/",
+      "zh": "旅行卡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Load it here.",
+      "phonetic": "/loʊd ɪt hir./",
+      "zh": "這加值。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The coin jar helps.",
+      "phonetic": "/ðə kɔɪn ʤɑr hɛlps./",
+      "zh": "零錢罐有用。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the bus.",
+      "phonetic": "/fər ðə bəs./",
+      "zh": "搭車用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The change is right.",
+      "phonetic": "/ðə ʧeɪnʤ ɪz raɪt./",
+      "zh": "找零對。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Count again, sure.",
+      "phonetic": "/kaʊnt əˈgɛn, ʃʊr./",
+      "zh": "再數，好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sum is large.",
+      "phonetic": "/ðə səm ɪz lɑrʤ./",
+      "zh": "金額大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Form required.",
+      "phonetic": "/fɔrm rikˈwaɪərd./",
+      "zh": "要填表。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The booth is quick.",
+      "phonetic": "/ðə buθ ɪz kwɪk./",
+      "zh": "亭子快。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "ID, please.",
+      "phonetic": "/ˈaɪˈdi, pliz./",
+      "zh": "請證件。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bank is closed.",
+      "phonetic": "/ðə bæŋk ɪz kloʊzd./",
+      "zh": "銀行關了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try the booth.",
+      "phonetic": "/traɪ ðə buθ./",
+      "zh": "試兌換亭。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rate just dropped.",
+      "phonetic": "/ðə reɪt ʤɪst drɑpt./",
+      "zh": "匯率剛降。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Exchange now, then.",
+      "phonetic": "/ɪksˈʧeɪnʤ naʊ, ðɛn./",
+      "zh": "現在換。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The note is torn.",
+      "phonetic": "/ðə noʊt ɪz tɔrn./",
+      "zh": "鈔票破了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can't take.",
+      "phonetic": "/wi kænt teɪk./",
+      "zh": "不能收。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Count it, please.",
+      "phonetic": "/kaʊnt ɪt, pliz./",
+      "zh": "請點數。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two hundred euro.",
+      "phonetic": "/tu ˈhənərd ˈjʊrə./",
+      "zh": "兩百歐元。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The fee is small.",
+      "phonetic": "/ðə fi ɪz smɔl./",
+      "zh": "手續費少。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One percent, yes.",
+      "phonetic": "/wən pərˈsɛnt, jɛs./",
+      "zh": "百分之一。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Dollars to euros.",
+      "phonetic": "/ˈdɔlərz tɪ ˈjuˌroʊz./",
+      "zh": "美元換歐元。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The rate is good.",
+      "phonetic": "/ðə reɪt ɪz gʊd./",
+      "zh": "匯率不錯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I need to exchange cash.",
+      "phonetic": "/aɪ nid tɪ ɪksˈʧeɪnʤ kæʃ./",
+      "zh": "我要換現金。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Which currency, sir?",
+      "phonetic": "/wɪʧ ˈkərənsi, sər?/",
+      "zh": "哪種貨幣，先生？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I need to exchange cash.",
+      "phonetic": "/aɪ nid tɪ ɪksˈʧeɪnʤ kæʃ./",
+      "zh": "我要換現金。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Which currency, sir?",
+      "phonetic": "/wɪʧ ˈkərənsi, sər?/",
+      "zh": "哪種貨幣，先生？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Dollars to euros.",
+      "phonetic": "/ˈdɔlərz tɪ ˈjuˌroʊz./",
+      "zh": "美元換歐元。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The rate is good.",
+      "phonetic": "/ðə reɪt ɪz gʊd./",
+      "zh": "匯率不錯。"
+    }
+  ]
+}

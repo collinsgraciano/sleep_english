@@ -1,0 +1,2458 @@
+{
+  "title": "Everyday Phrases — Filling Up Gas",
+  "title_zh": "加油站加油",
+  "scene_zh": "加油站加油 · 情境對話",
+  "title_quote": "The gas light just came on.",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】⛽ 實用加油站加油必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — Filling Up Gas",
+  "youtube_description": "睡著學英文！這部影片收錄實用在加油站加油情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫），不用背，睡前聽就會。重複播放，讓英文自然進入你的大腦。👍 想學更多生活場景，請留言告訴我！別忘了訂閱+按讚。 #英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical Filling Up Gas phrase pairs (each pair: male normal speed → female slow speed → combined dialogue). No memorization needed—just listen before bed and absorb naturally. If you want more real-life scenarios, leave a comment! Subscribe and like!",
+  "youtube_tags": [
+    "英文聽力",
+    "睡前英文",
+    "加油站英文",
+    "加油常用英語",
+    "Driving English",
+    "English listening",
+    "Sleep learning",
+    "A2 English",
+    "常用英文短語",
+    "零基礎英文",
+    "慢速英文",
+    "英文口語",
+    "Learn English",
+    "gas station English",
+    "ESL",
+    "English conversation"
+  ],
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "Filling Up Gas",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "Filling Up Gas",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Driving",
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "The gas light just came on.",
+      "phonetic": "/ðə ɡæs laɪt dʒʌst keɪm ɑn./",
+      "zh": "油量警示燈剛剛亮了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That means the tank is almost empty.",
+      "phonetic": "/ðæt minz ðə tæŋk ɪz ˈɔlmoʊst ˈɛmti./",
+      "zh": "那就表示油箱快見底了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is there a gas station nearby?",
+      "phonetic": "/ɪz ðɛr ə ɡæs ˈsteɪʃən ˌnɪrˈbaɪ?/",
+      "zh": "附近有加油站嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, there is one right around the corner.",
+      "phonetic": "/jɛs, ðɛr ɪz wʌn raɪt əˈraʊnd ðə ˈkɔrnər./",
+      "zh": "有，就在拐角那兒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's stop here before dinner.",
+      "phonetic": "/lɛts stɑp hɪr bɪˈfɔr ˈdɪnər./",
+      "zh": "我們晚飯前先在這兒停一下。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good idea, we need a full tank.",
+      "phonetic": "/ɡʊd aɪˈdiə, wi nid ə fʊl tæŋk./",
+      "zh": "好主意，我們需要把油加滿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do I need my card for gas?",
+      "phonetic": "/du aɪ nid maɪ kɑrd fər ɡæs?/",
+      "zh": "加油一定要用卡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, or you can pay with cash.",
+      "phonetic": "/jɛs, ɔr ju kæn peɪ wɪð kæʃ./",
+      "zh": "對，也可以付現金。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Look, the price sign says three thirty.",
+      "phonetic": "/lʊk, ðə praɪs saɪn sɛz θri ˈθɜrdi./",
+      "zh": "看，價格牌上寫著三塊三。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is cheaper than the last station.",
+      "phonetic": "/ðæt ɪz ˈtʃipər ðən ðə læst ˈsteɪʃən./",
+      "zh": "比上次那家加油站便宜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which pump should we use?",
+      "phonetic": "/wɪtʃ pʌmp ʃʊd wi juz?/",
+      "zh": "我們該用哪台加油機？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pump twelve is free over there.",
+      "phonetic": "/pʌmp twɛlv ɪz fri ˈoʊvər ðɛr./",
+      "zh": "那邊十二號機空著呢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is pump twelve working today?",
+      "phonetic": "/ɪz pʌmp twɛlv ˈwɜrkɪŋ təˈdeɪ?/",
+      "zh": "十二號機今天能用嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I think so, the screen is on.",
+      "phonetic": "/aɪ θɪŋk soʊ, ðə skrin ɪz ɑn./",
+      "zh": "應該可以，螢幕亮著呢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which side is the gas door on?",
+      "phonetic": "/wɪtʃ saɪd ɪz ðə ɡæs dɔr ɑn?/",
+      "zh": "加油口在哪一側？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Check the arrow next to your fuel gauge.",
+      "phonetic": "/tʃɛk ði ˈæroʊ ˈnɛkst tə jʊr ˈfjuəl ɡeɪdʒ./",
+      "zh": "看油表旁邊的箭頭指哪邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How do I open this little door?",
+      "phonetic": "/haʊ du aɪ ˈoʊpən ðɪs ˈlɪtəl dɔr?/",
+      "zh": "這個小門要怎麼打開？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pull the lever by the driver seat.",
+      "phonetic": "/pʊl ðə ˈlivər baɪ ðə ˈdraɪvər sit./",
+      "zh": "拉一下駕駛座旁邊的拉桿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This door feels stuck a little.",
+      "phonetic": "/ðɪs dɔr filz stʌk ə ˈlɪtəl./",
+      "zh": "這門有點卡住了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Push it gently and it will pop.",
+      "phonetic": "/pʊʃ ɪt ˈdʒɛntli ænd ɪt wɪl pɑp./",
+      "zh": "輕輕推一下就彈開了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where should I keep the gas cap?",
+      "phonetic": "/wɛr ʃʊd aɪ kip ðə ɡæs kæp?/",
+      "zh": "油箱蓋該放哪兒？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It hangs right there on the door.",
+      "phonetic": "/ɪt hæŋz raɪt ðɛr ɑn ðə dɔr./",
+      "zh": "它就掛在小門內側。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do I turn the cap to the left?",
+      "phonetic": "/du aɪ tɜrn ðə kæp tə ðə lɛft?/",
+      "zh": "油箱蓋要往左擰嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, left to loosen, right to close.",
+      "phonetic": "/jɛs, lɛft tə ˈlusən, raɪt tə kloʊz./",
+      "zh": "對，左擰鬆、右擰緊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I shut off the engine first?",
+      "phonetic": "/ʃʊd aɪ ʃʌt ˈɔf ði ˈɛndʒən fɜrst?/",
+      "zh": "要先熄火嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, that is a safety rule here.",
+      "phonetic": "/jɛs, ðæt ɪz ə ˈseɪfti rul hɪr./",
+      "zh": "要，這裡是安全規定。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is it okay to leave the car running?",
+      "phonetic": "/ɪz ɪt oʊˈkeɪ tə liv ðə kɑr ˈrʌnɪŋ?/",
+      "zh": "發動機不關可以嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, please turn it off now.",
+      "phonetic": "/noʊ, pliz tɜrn ɪt ˈɔf naʊ./",
+      "zh": "不行，請現在熄火。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What gas does this car need?",
+      "phonetic": "/wʌt ɡæs dʌz ðɪs kɑr nid?/",
+      "zh": "這輛車要加什麼油？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Regular is fine, it saves money.",
+      "phonetic": "/ˈrɛɡjələr ɪz faɪn, ɪt seɪvz ˈmʌni./",
+      "zh": "普通油就夠了，還省錢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is regular the cheapest one here?",
+      "phonetic": "/ɪz ˈrɛɡjələr ðə ˈtʃipɪst wʌn hɪr?/",
+      "zh": "普通油是這裡最便宜的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it is the eighty seven grade.",
+      "phonetic": "/jɛs, ɪt ɪz ði ˈeɪti ˈsɛvən ɡreɪd./",
+      "zh": "對，就是八十七號。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the plus grade for?",
+      "phonetic": "/wʌt ɪz ðə plʌs ɡreɪd fər?/",
+      "zh": "中階油是做什麼用的？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sporty cars often want mid gas.",
+      "phonetic": "/ˈspɔrti kɑrz ˈɔfən wɑnt mɪd ɡæs./",
+      "zh": "有些跑車會要用中階油。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do I ever need premium fuel?",
+      "phonetic": "/du aɪ ˈɛvər nid ˈprimiəm ˈfjuəl?/",
+      "zh": "我用得著高級油嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Not for this car, save your money.",
+      "phonetic": "/nɑt fər ðɪs kɑr, seɪv jʊr ˈmʌni./",
+      "zh": "這車用不上，省點錢吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The screen shows four fuel choices.",
+      "phonetic": "/ðə skrin ʃoʊz fɔr ˈfjuəl ˈtʃɔɪsəz./",
+      "zh": "螢幕上有四種油可選。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Press regular, then press start there.",
+      "phonetic": "/prɛs ˈrɛɡjələr, ðɛn prɛs stɑrt ðɛr./",
+      "zh": "先按普通油，再按開始。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I set the dollar amount?",
+      "phonetic": "/kæn aɪ sɛt ðə ˈdɑlər əˈmaʊnt?/",
+      "zh": "我能設定加油金額嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, by dollars or by gallons.",
+      "phonetic": "/jɛs, baɪ ˈdɑlərz ɔr baɪ ˈɡælənz./",
+      "zh": "可以，按金額或按加侖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's just fill the whole tank.",
+      "phonetic": "/lɛts dʒʌst fɪl ðə hoʊl tæŋk./",
+      "zh": "我們乾脆加滿一箱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then pick the full tank option.",
+      "phonetic": "/ðɛn pɪk ðə fʊl tæŋk ˈɑpʃən./",
+      "zh": "那就選加滿那一檔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How much is a full tank here?",
+      "phonetic": "/haʊ mʌtʃ ɪz ə fʊl tæŋk hɪr?/",
+      "zh": "這裡加滿要多少錢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Maybe forty dollars, the tank is big.",
+      "phonetic": "/ˈmeɪbi ˈfɔrti ˈdɑlərz, ðə tæŋk ɪz bɪɡ./",
+      "zh": "大概四十塊，油箱挺大的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hold on, is this pump diesel or gas?",
+      "phonetic": "/hoʊld ɑn, ɪz ðɪs pʌmp ˈdizəl ɔr ɡæs?/",
+      "zh": "等一下，這台是柴油還是汽油？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Diesel only, the nozzle is black.",
+      "phonetic": "/ˈdizəl ˈoʊnli, ðə ˈnoʊzəl ɪz blæk./",
+      "zh": "只有柴油，油槍是黑色的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I almost put diesel in my car!",
+      "phonetic": "/aɪ ˈɔlmoʊst pʊt ˈdizəl ɪn maɪ kɑr!/",
+      "zh": "我差點把柴油加進汽油車！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lucky you looked, diesel guns are bigger.",
+      "phonetic": "/ˈlʌki ju lʊkt, ˈdizəl ɡʌnz ɑr ˈbɪɡər./",
+      "zh": "幸好你看了，柴油槍口更大。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So who fills up at the diesel pump?",
+      "phonetic": "/soʊ hu fɪlz ʌp æt ðə ˈdizəl pʌmp?/",
+      "zh": "那誰會在柴油那台機加油呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Big trucks and vans, they wait out back.",
+      "phonetic": "/bɪɡ trʌks ænd vænz, ðeɪ weɪt aʊt bæk./",
+      "zh": "大卡車和廂型車，都在後面等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Okay, I found the right pump now.",
+      "phonetic": "/oʊˈkeɪ, aɪ faʊnd ðə raɪt pʌmp naʊ./",
+      "zh": "好，我找到對的那台了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great, lift the nozzle out slowly.",
+      "phonetic": "/ɡreɪt, lɪft ðə ˈnoʊzəl aʊt ˈsloʊli./",
+      "zh": "很好，慢慢把油槍提出來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This nozzle feels really heavy.",
+      "phonetic": "/ðɪs ˈnoʊzəl filz ˈrɪəli ˈhɛvi./",
+      "zh": "這把油槍真的好沉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold it with both hands if needed.",
+      "phonetic": "/hoʊld ɪt wɪð boʊθ hændz ɪf ˈnidəd./",
+      "zh": "需要就兩隻手一起拿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where exactly does the nozzle go?",
+      "phonetic": "/wɛr ɪɡˈzæktli dʌz ðə ˈnoʊzəl ɡoʊ?/",
+      "zh": "油槍到底要插到哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Push it deep into the tank hole.",
+      "phonetic": "/pʊʃ ɪt dip ˈɪntə ðə tæŋk hoʊl./",
+      "zh": "插進油箱口裡面去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I start pumping before I pay?",
+      "phonetic": "/kæn aɪ stɑrt ˈpʌmpɪŋ bɪˈfɔr aɪ peɪ?/",
+      "zh": "可以先加油再付款嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, tap your card at the pump.",
+      "phonetic": "/jɛs, tæp jʊr kɑrd æt ðə pʌmp./",
+      "zh": "可以，在機器上拍一下卡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My card did not work at first.",
+      "phonetic": "/maɪ kɑrd dɪd nɑt wɜrk æt fɜrst./",
+      "zh": "我的卡一開始沒刷上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try the little keypad once more.",
+      "phonetic": "/traɪ ðə ˈlɪtəl ˈkiˌpæd wʌns mɔr./",
+      "zh": "再試一次小鍵盤。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It asks me for my zip code.",
+      "phonetic": "/ɪt æsks mi fər maɪ zɪp koʊd./",
+      "zh": "它問我郵遞區號。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Enter the five digits of your zip code.",
+      "phonetic": "/ˈɛntər ðə faɪv ˈdɪdʒɪts ʌv jʊr zɪp koʊd./",
+      "zh": "輸入你郵遞區號的五位數字。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now it says press enter here.",
+      "phonetic": "/naʊ ɪt sɛz prɛs ˈɛntər hɪr./",
+      "zh": "現在它提示我在這裡按確認。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Press it, and the pump gets ready.",
+      "phonetic": "/prɛs ɪt, ænd ðə pʌmp ɡɛts ˈrɛdi./",
+      "zh": "按下去，加油機就待命了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the power on for this pump?",
+      "phonetic": "/ɪz ðə ˈpaʊər ɑn fər ðɪs pʌmp?/",
+      "zh": "這台加油機通電了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, squeeze the handle to begin.",
+      "phonetic": "/jɛs, skwiz ðə ˈhændəl tə bɪˈɡɪn./",
+      "zh": "通了，握緊把手就開始出油。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "There is no lock on this handle.",
+      "phonetic": "/ðɛr ɪz noʊ lɑk ɑn ðɪs ˈhændəl./",
+      "zh": "這個把手上沒有卡扣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then hold it the whole time.",
+      "phonetic": "/ðɛn hoʊld ɪt ðə hoʊl taɪm./",
+      "zh": "那就從頭到尾握緊吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The gas is going in so fast.",
+      "phonetic": "/ðə ɡæs ɪz ˈɡoʊɪŋ ɪn soʊ fæst./",
+      "zh": "油進得特別快。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A wide new hose does that.",
+      "phonetic": "/ə waɪd nju hoʊz dʌz ðæt./",
+      "zh": "新管子粗，流速就大。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You always fill up on Fridays, right?",
+      "phonetic": "/ju ˈɔlweɪz fɪl ʌp ɑn ˈfraɪdeɪz, raɪt?/",
+      "zh": "你總是在週五把油加滿，對吧？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, my tank never drops below half.",
+      "phonetic": "/jɛs, maɪ tæŋk ˈnɛvər drɑps bɪˈloʊ hæf./",
+      "zh": "對，我油箱從不低於一半。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I wait until the light comes on.",
+      "phonetic": "/aɪ weɪt ʌnˈtɪl ðə laɪt kʌmz ɑn./",
+      "zh": "我總等警示燈亮才加油。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try not to run it that low.",
+      "phonetic": "/traɪ nɑt tə rʌn ɪt ðæt loʊ./",
+      "zh": "別把油跑到那麼空。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does blended fuel hurt my engine?",
+      "phonetic": "/dʌz ˈblɛndəd ˈfjuəl hɜrt maɪ ˈɛndʒən?/",
+      "zh": "混合油會傷發動機嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, most cars handle it just fine.",
+      "phonetic": "/noʊ, moʊst kɑrz ˈhændəl ɪt dʒʌst faɪn./",
+      "zh": "不會，大多數車都沒問題。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Why is this grade called eight nine?",
+      "phonetic": "/waɪ ɪz ðɪs ɡreɪd kɔld eɪt naɪn?/",
+      "zh": "為什麼這檔油叫八九號？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The number shows its octane rating.",
+      "phonetic": "/ðə ˈnʌmbər ʃoʊz ɪts ˈɑkˌteɪn ˈreɪtɪŋ./",
+      "zh": "那個數字是辛烷值等級。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I get the car washed too?",
+      "phonetic": "/ʃʊd aɪ ɡɛt ðə kɑr wɑʃt tu?/",
+      "zh": "順便洗個車怎麼樣？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The wash machine takes only coins.",
+      "phonetic": "/ðə wɑʃ məˈʃin teɪks ˈoʊnli kɔɪnz./",
+      "zh": "洗車機只收硬幣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Any water bottles for sale here?",
+      "phonetic": "/ˈɛni ˈwɔtər ˈbɑtəlz fər seɪl hɪr?/",
+      "zh": "這兒賣瓶裝水嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, inside the store near the door.",
+      "phonetic": "/jɛs, ˈɪnsaɪd ðə stɔr nɪr ðə dɔr./",
+      "zh": "有，就在店裡門邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Look, that coffee machine in the back.",
+      "phonetic": "/lʊk, ðæt ˈkɔfi məˈʃin ɪn ðə bæk./",
+      "zh": "你看，店裡面那台咖啡機。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The machine runs all day long.",
+      "phonetic": "/ðə məˈʃin rʌnz ɔl deɪ lɔŋ./",
+      "zh": "那台機器整天都有。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "By the way, where is the trash bin?",
+      "phonetic": "/baɪ ðə weɪ, wɛr ɪz ðə træʃ bɪn?/",
+      "zh": "請問垃圾桶在哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It stands by the store entrance.",
+      "phonetic": "/ɪt stændz baɪ ðə stɔr ˈɛntrəns./",
+      "zh": "就在商店門口旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is it safe to use my phone here?",
+      "phonetic": "/ɪz ɪt seɪf tə juz maɪ foʊn hɪr?/",
+      "zh": "在這兒用手機安全嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Better keep it inside while you pump.",
+      "phonetic": "/ˈbɛtər kip ɪt ˈɪnsaɪd waɪl ju pʌmp./",
+      "zh": "加油時最好先收起來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My kid keeps asking how long it takes.",
+      "phonetic": "/maɪ kɪd kips ˈæskɪŋ haʊ lɔŋ ɪt teɪks./",
+      "zh": "我家孩子一直問要多久。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tell him about five minutes at most.",
+      "phonetic": "/tɛl hɪm əˈbaʊt faɪv ˈmɪnəts æt moʊst./",
+      "zh": "告訴他最多五分鐘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "See that car waiting for our pump?",
+      "phonetic": "/si ðæt kɑr ˈweɪtɪŋ fər ˈaʊər pʌmp?/",
+      "zh": "你看，有車在等我們這台機子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We are almost done, wave them over.",
+      "phonetic": "/wi ɑr ˈɔlmoʊst dʌn, weɪv ðɛm ˈoʊvər./",
+      "zh": "快加完了，揮手請他們過來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Who parks way over in that back row?",
+      "phonetic": "/hu pɑrks weɪ ˈoʊvər ɪn ðæt bæk roʊ?/",
+      "zh": "停在後面那一排的是哪些車呀？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mostly the trucks, the diesel lane is there.",
+      "phonetic": "/ˈmoʊstli ðə trʌks, ðə ˈdizəl leɪn ɪz ðɛr./",
+      "zh": "多數是卡車，柴油車道在那邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This station looks cleaner than most.",
+      "phonetic": "/ðɪs ˈsteɪʃən lʊks ˈklinər ðən moʊst./",
+      "zh": "這座站比別家乾淨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The owner takes real pride in it.",
+      "phonetic": "/ði ˈoʊnər teɪks riəl praɪd ɪn ɪt./",
+      "zh": "老闆經營得很用心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Am I supposed to stay right here?",
+      "phonetic": "/æm aɪ səˈpoʊzd tə steɪ raɪt hɪr?/",
+      "zh": "我必須一直留在這兒嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, never walk away during pumping.",
+      "phonetic": "/jɛs, ˈnɛvər wɔk əˈweɪ ˈdʊrɪŋ ˈpʌmpɪŋ./",
+      "zh": "對，加油時別走開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Okay, I am right here holding it.",
+      "phonetic": "/oʊˈkeɪ, aɪ æm raɪt hɪr ˈhoʊldɪŋ ɪt./",
+      "zh": "好的，我就在這裡握著油槍。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, keep it deep and steady.",
+      "phonetic": "/ɡʊd, kip ɪt dip ænd ˈstɛdi./",
+      "zh": "很好，插深、拿穩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Squeeze the handle and gas flows out.",
+      "phonetic": "/skwiz ðə ˈhændəl ænd ɡæs floʊz aʊt./",
+      "zh": "握緊把手，油就流出來了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Watch the numbers climb on the screen.",
+      "phonetic": "/wɑtʃ ðə ˈnʌmbərz klaɪm ɑn ðə skrin./",
+      "zh": "看著螢幕上的數字往上漲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "See, the gallons are rising right now.",
+      "phonetic": "/si, ðə ˈɡælənz ɑr ˈraɪzɪŋ raɪt naʊ./",
+      "zh": "你看，加侖數正在往上漲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So is the cost, little by little.",
+      "phonetic": "/soʊ ɪz ðə kɔst, ˈlɪtəl baɪ ˈlɪtəl./",
+      "zh": "價錢也在一點點增加。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are we still under forty dollars?",
+      "phonetic": "/ɑr wi stɪl ˈʌndər ˈfɔrti ˈdɑlərz?/",
+      "zh": "油錢還不到四十塊吧？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it is still climbing slowly.",
+      "phonetic": "/jɛs, ɪt ɪz stɪl ˈklaɪmɪŋ ˈsloʊli./",
+      "zh": "對，數字還在慢慢往上爬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Look, we are past ten gallons.",
+      "phonetic": "/lʊk, wi ɑr pæst tɛn ˈɡælənz./",
+      "zh": "你看，已經超過十加侖了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Soon that soft click will come.",
+      "phonetic": "/sun ðæt sɑft klɪk wɪl kʌm./",
+      "zh": "很快那聲輕咔噠就會來了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This pump is slower than the last.",
+      "phonetic": "/ðɪs pʌmp ɪz ˈsloʊər ðən ðə læst./",
+      "zh": "這台比上次那台慢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Old pumps take their time, sadly.",
+      "phonetic": "/oʊld pʌmps teɪk ðɛr taɪm, ˈsædli./",
+      "zh": "老舊的加油機就是磨蹭。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do not pull the nozzle out yet.",
+      "phonetic": "/du nɑt pʊl ðə ˈnoʊzəl aʊt jɛt./",
+      "zh": "先別把油槍拔出來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I know, it stays inside while filling.",
+      "phonetic": "/aɪ noʊ, ɪt steɪz ˈɪnsaɪd waɪl ˈfɪlɪŋ./",
+      "zh": "我知道，加的時候不能離開口。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wait, did the pump just click off?",
+      "phonetic": "/weɪt, dɪd ðə pʌmp dʒʌst klɪk ˈɔf?/",
+      "zh": "等等，加油機剛咔噠跳槍了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, that click means the tank is full.",
+      "phonetic": "/jɛs, ðæt klɪk minz ðə tæŋk ɪz fʊl./",
+      "zh": "對，那一響就是加滿了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Still, I wanted a little more gas.",
+      "phonetic": "/stɪl, aɪ ˈwɑntɪd ə ˈlɪtəl mɔr ɡæs./",
+      "zh": "可我還是想再多加一點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then keep topping till it clicks again.",
+      "phonetic": "/ðɛn kip ˈtɑpɪŋ tɪl ɪt klɪks əˈɡɛn./",
+      "zh": "那就再補，直到又跳槍為止。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I squeeze once after the click?",
+      "phonetic": "/kæn aɪ skwiz wʌns ˈæftər ðə klɪk?/",
+      "zh": "跳槍之後還能再握一下嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You topped it, that is plenty.",
+      "phonetic": "/ju tɑpt ɪt, ðæt ɪz ˈplɛnti./",
+      "zh": "你已經補好了，這樣就夠。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Why keep pumping after it stops?",
+      "phonetic": "/waɪ kip ˈpʌmpɪŋ ˈæftər ɪt stɑps?/",
+      "zh": "為什麼跳槍了還硬要加？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Gentle squeezes can spill fresh gas.",
+      "phonetic": "/ˈdʒɛntəl ˈskwɪzəz kæn spɪl frɛʃ ɡæs./",
+      "zh": "多壓那幾下會溢出新油。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Air gets pushed out as the tank fills.",
+      "phonetic": "/ɛr ɡɛts pʊʃt aʊt æz ðə tæŋk fɪlz./",
+      "zh": "油箱邊進油邊把空氣排出去。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hear that hissing? It is totally normal.",
+      "phonetic": "/hɪr ðæt ˈhəsɪŋ? ɪt ɪz ˈtoʊtəli ˈnɔrməl./",
+      "zh": "聽見那嘶嘶聲了嗎？完全正常。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Why does the nozzle stop by itself?",
+      "phonetic": "/waɪ dʌz ðə ˈnoʊzəl stɑp baɪ ɪtˈsɛlf?/",
+      "zh": "油槍為什麼會自己停下來？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A tiny sensor feels the fuel rise.",
+      "phonetic": "/ə ˈtaɪni ˈsɛnsər filz ðə ˈfjuəl raɪz./",
+      "zh": "小感應器感覺到油麵上升。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Oh no, some drops fell on the car.",
+      "phonetic": "/oʊ noʊ, sʌm drɑps fɛl ɑn ðə kɑr./",
+      "zh": "糟糕，油滴了幾滴在車上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wipe them now with a paper towel.",
+      "phonetic": "/waɪp ðɛm naʊ wɪð ə ˈpeɪpər ˈtaʊəl./",
+      "zh": "趕緊用餐巾紙擦掉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where do they keep paper towels?",
+      "phonetic": "/wɛr du ðeɪ kip ˈpeɪpər ˈtaʊəlz?/",
+      "zh": "餐巾紙放在哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the shelf beside the air machine.",
+      "phonetic": "/ɑn ðə ʃɛlf bɪˈsaɪd ði ɛr məˈʃin./",
+      "zh": "在打氣機旁邊的架子上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That second click surprised me a bit.",
+      "phonetic": "/ðæt ˈsɛkənd klɪk sərˈpraɪzd mi ə bɪt./",
+      "zh": "第二聲咔噠嚇了我一下。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The handle always jumps when it quits.",
+      "phonetic": "/ði ˈhændəl ˈɔlweɪz dʒʌmps wɛn ɪt kwɪts./",
+      "zh": "停的時候把手總會彈開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is it truly full now or not?",
+      "phonetic": "/ɪz ɪt ˈtruli fʊl naʊ ɔr nɑt?/",
+      "zh": "現在到底加滿了沒有？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The numbers stopped, so you are done.",
+      "phonetic": "/ðə ˈnʌmbərz stɑpt, soʊ ju ɑr dʌn./",
+      "zh": "數字不動了，就是加好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I used forty two dollars and change.",
+      "phonetic": "/aɪ juzd ˈfɔrti tu ˈdɑlərz ænd tʃeɪndʒ./",
+      "zh": "加了四十二塊出頭。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nice, that should last two weeks.",
+      "phonetic": "/naɪs, ðæt ʃʊd læst tu wikz./",
+      "zh": "不錯，夠跑兩個星期了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I split gas between two cards?",
+      "phonetic": "/kæn aɪ splɪt ɡæs bɪˈtwin tu kɑrdz?/",
+      "zh": "油錢能拆給兩張卡付嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, stop the pump and start again.",
+      "phonetic": "/jɛs, stɑp ðə pʌmp ænd stɑrt əˈɡɛn./",
+      "zh": "可以，先停機器再重新來一筆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please hold the handle for one second.",
+      "phonetic": "/pliz hoʊld ðə ˈhændəl fər wʌn ˈsɛkənd./",
+      "zh": "請幫我握一下把手。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, I am keeping it open now.",
+      "phonetic": "/ʃʊr, aɪ æm ˈkipɪŋ ɪt ˈoʊpən naʊ./",
+      "zh": "沒問題，我幫你壓著。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks, my hand was getting so tired.",
+      "phonetic": "/θæŋks, maɪ hænd wʌz ˈɡɛtɪŋ soʊ ˈtaɪərd./",
+      "zh": "謝謝，我的手都酸了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rest a bit, then take it back.",
+      "phonetic": "/rɛst ə bɪt, ðɛn teɪk ɪt bæk./",
+      "zh": "先歇一會兒，再換你拿著。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The nozzle is dripping a little now.",
+      "phonetic": "/ðə ˈnoʊzəl ɪz ˈdrɪpɪŋ ə ˈlɪtəl naʊ./",
+      "zh": "油槍現在在滴油。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let it drip back inside the hole.",
+      "phonetic": "/lɛt ɪt drɪp bæk ɪnˈsaɪd ðə hoʊl./",
+      "zh": "讓它滴回加油口裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I count ten before pulling out?",
+      "phonetic": "/ʃʊd aɪ kaʊnt tɛn bɪˈfɔr ˈpʊlɪŋ aʊt?/",
+      "zh": "拔出來之前要不要數十下？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, that catches the last slow drops.",
+      "phonetic": "/jɛs, ðæt ˈkætʃəz ðə læst sloʊ drɑps./",
+      "zh": "要，等最後幾滴滴乾淨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Okay, I am lifting the nozzle out.",
+      "phonetic": "/oʊˈkeɪ, aɪ æm ˈlɪftɪŋ ðə ˈnoʊzəl aʊt./",
+      "zh": "好，我把油槍提出來了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Check the handle sits flat and safe.",
+      "phonetic": "/tʃɛk ðə ˈhændəl sɪts flæt ænd seɪf./",
+      "zh": "看看把手有沒有平放好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now I hang the nozzle back up.",
+      "phonetic": "/naʊ aɪ hæŋ ðə ˈnoʊzəl bæk ʌp./",
+      "zh": "現在我把油槍掛回去。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Now I can hang the nozzle back up.",
+      "phonetic": "/naʊ aɪ kæn hæŋ ðə ˈnoʊzəl bæk ʌp./",
+      "zh": "好，現在我可以把油槍掛回去了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are all the nozzles the same shape?",
+      "phonetic": "/ɑr ɔl ðə ˈnoʊzəlz ðə seɪm ʃeɪp?/",
+      "zh": "所有的油槍形狀都一樣嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, diesel uses the big black one.",
+      "phonetic": "/noʊ, ˈdizəl ˈjuzəz ðə bɪɡ blæk wʌn./",
+      "zh": "不一樣，柴油槍是黑色大的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am screwing the cap back on.",
+      "phonetic": "/aɪ æm ˈskruɪŋ ðə kæp bæk ɑn./",
+      "zh": "我正在把油箱蓋擰回去。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Turn it right until it clicks twice.",
+      "phonetic": "/tɜrn ɪt raɪt ʌnˈtɪl ɪt klɪks twaɪs./",
+      "zh": "往右擰到響兩聲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I heard two clicks, is that good?",
+      "phonetic": "/aɪ hɜrd tu klɪks, ɪz ðæt ɡʊd?/",
+      "zh": "我聽到兩聲咔噠，夠嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, that means it is tight now.",
+      "phonetic": "/jɛs, ðæt minz ɪt ɪz taɪt naʊ./",
+      "zh": "夠了，那就表示擰緊了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What if I lose the gas cap?",
+      "phonetic": "/wʌt ɪf aɪ luz ðə ɡæs kæp?/",
+      "zh": "要是把油箱蓋弄丟了怎麼辦？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The counter sells cheap caps like these.",
+      "phonetic": "/ðə ˈkaʊntər sɛlz tʃip kæps laɪk ðiz./",
+      "zh": "櫃台有賣這種便宜的蓋子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can a loose cap trip a warning?",
+      "phonetic": "/kæn ə lus kæp trɪp ə ˈwɔrnɪŋ?/",
+      "zh": "蓋子沒擰緊會報故障嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the check engine light may glow.",
+      "phonetic": "/jɛs, ðə tʃɛk ˈɛndʒən laɪt meɪ ɡloʊ./",
+      "zh": "會，引擎檢查燈可能亮起。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the little door shut and done?",
+      "phonetic": "/ɪz ðə ˈlɪtəl dɔr ʃʌt ænd dʌn?/",
+      "zh": "小門關好了就沒事了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, an open door flaps in wind.",
+      "phonetic": "/jɛs, æn ˈoʊpən dɔr flæps ɪn wɪnd./",
+      "zh": "對，敞著會被風吹得啪啪響。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I wiped my fingers on my shirt.",
+      "phonetic": "/aɪ waɪpt maɪ ˈfɪŋɡərz ɑn maɪ ʃɜrt./",
+      "zh": "我剛在衣服上擦了手指。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hope it was not an oily spot.",
+      "phonetic": "/hoʊp ɪt wʌz nɑt ɑn ˈɔɪli spɑt./",
+      "zh": "希望沒擦上一片油漬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How much gas did that put in?",
+      "phonetic": "/haʊ mʌtʃ ɡæs dɪd ðæt pʊt ɪn?/",
+      "zh": "那樣一共加進去多少油？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Near thirteen gallons, the screen just told us.",
+      "phonetic": "/nɪr θɜrˈtin ˈɡælənz, ðə skrin dʒʌst toʊd ʌs./",
+      "zh": "快十三加侖，螢幕上剛剛顯示。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My tank holds about sixteen gallons.",
+      "phonetic": "/maɪ tæŋk hoʊldz əˈbaʊt ˈsɪksˈtin ˈɡælənz./",
+      "zh": "我的油箱大約裝十六加侖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So you filled almost to the top.",
+      "phonetic": "/soʊ ju fɪld ˈɔlmoʊst tə ðə tɑp./",
+      "zh": "那你幾乎加到頂了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now the screen shows my total.",
+      "phonetic": "/naʊ ðə skrin ʃoʊz maɪ ˈtoʊtəl./",
+      "zh": "現在螢幕顯示我的總金額。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Remember it before the numbers clear.",
+      "phonetic": "/rɪˈmɛmbər ɪt bɪˈfɔr ðə ˈnʌmbərz klɪr./",
+      "zh": "數字清空前先記下來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you want more of anything?",
+      "phonetic": "/du ju wɑnt mɔr ʌv ˈɛniˌθɪŋ?/",
+      "zh": "你還想要別的東西嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, we are ready for the road.",
+      "phonetic": "/noʊ, wi ɑr ˈrɛdi fər ðə roʊd./",
+      "zh": "不用，我們可以上路了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This sign says no smoking nearby.",
+      "phonetic": "/ðɪs saɪn sɛz noʊ ˈsmoʊkɪŋ ˌnɪrˈbaɪ./",
+      "zh": "這個牌子寫著附近禁止吸菸。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "People still ignore it all the time.",
+      "phonetic": "/ˈpipəl stɪl ˌɪɡˈnɔr ɪt ɔl ðə taɪm./",
+      "zh": "可還是有人完全不理。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A man smoked right by pump four.",
+      "phonetic": "/ə mæn smod raɪt baɪ pʌmp fɔr./",
+      "zh": "有個人就在四號機旁邊抽菸。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The clerk quickly asked him to stop.",
+      "phonetic": "/ðə klɜrk ˈkwɪkli æskt hɪm tə stɑp./",
+      "zh": "店員馬上過去請他熄掉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do we need a funnel for this?",
+      "phonetic": "/du wi nid ə ˈfʌnəl fər ðɪs?/",
+      "zh": "這個要用漏斗嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, the nozzle fits your tank well.",
+      "phonetic": "/noʊ, ðə ˈnoʊzəl fɪts jʊr tæŋk wɛl./",
+      "zh": "不用，油槍剛好插得進去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My gas door still will not close.",
+      "phonetic": "/maɪ ɡæs dɔr stɪl wɪl nɑt kloʊz./",
+      "zh": "我的加油門還是關不上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It sticks when weather turns cold.",
+      "phonetic": "/ɪt stɪks wɛn ˈwɛðər tɜrnz koʊld./",
+      "zh": "天氣一冷它就卡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It is freezing, my fingers hurt.",
+      "phonetic": "/ɪt ɪz ˈfrizɪŋ, maɪ ˈfɪŋɡərz hɜrt./",
+      "zh": "天好冷，我手指都凍疼了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pumping gas is tough in the chill.",
+      "phonetic": "/ˈpʌmpɪŋ ɡæs ɪz tʌf ɪn ðə tʃɪl./",
+      "zh": "大冷天加油真是苦差事。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Man, the warm store sounds so much better.",
+      "phonetic": "/mæn, ðə wɔrm stɔr saʊndz soʊ mʌtʃ ˈbɛtər./",
+      "zh": "天啊，暖和的商店聽起來好多了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Finish up and go pay in there.",
+      "phonetic": "/ˈfɪnɪʃ ʌp ænd ɡoʊ peɪ ɪn ðɛr./",
+      "zh": "收拾好就進去付錢吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did that pump print a receipt?",
+      "phonetic": "/dɪd ðæt pʌmp prɪnt ə rɪˈsit?/",
+      "zh": "那台機子會印收據嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, the store prints it out inside.",
+      "phonetic": "/noʊ, ðə stɔr prɪnts ɪt aʊt ɪnˈsaɪd./",
+      "zh": "不會，收據要進店裡才印得出來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Well, the screen says thank you now.",
+      "phonetic": "/wɛl, ðə skrin sɛz ˈθæŋk ju naʊ./",
+      "zh": "螢幕現在顯示謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That means your sale is complete.",
+      "phonetic": "/ðæt minz jʊr seɪl ɪz kəmˈplit./",
+      "zh": "那就表示這單結束了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "There, the numbers stopped at forty two.",
+      "phonetic": "/ðɛr, ðə ˈnʌmbərz stɑpt æt ˈfɔrti tu./",
+      "zh": "你看，數字停在四十二。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Forty two fifty, close to my guess.",
+      "phonetic": "/ˈfɔrti tu ˈfɪfti, kloʊs tə maɪ ɡɛs./",
+      "zh": "四十二塊五，跟我猜的差不多。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I always feel poor at the pump.",
+      "phonetic": "/aɪ ˈɔlweɪz fil pʊr æt ðə pʌmp./",
+      "zh": "每次加油我都覺得錢包在哭。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same here, gas is never cheap.",
+      "phonetic": "/seɪm hɪr, ɡæs ɪz ˈnɛvər tʃip./",
+      "zh": "我也是，油價從來沒便宜過。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let us keep the tank half full.",
+      "phonetic": "/lɛt ʌs kip ðə tæŋk hæf fʊl./",
+      "zh": "我們以後保持半箱油吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That protects the pump from burning out.",
+      "phonetic": "/ðæt prəˈtɛkts ðə pʌmp frʌm ˈbɜrnɪŋ aʊt./",
+      "zh": "那樣能保護油泵不燒壞。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good job, the cap is on tight.",
+      "phonetic": "/ɡʊd dʒɑb, ðə kæp ɪz ɑn taɪt./",
+      "zh": "幹得好，蓋子擰得很緊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Door closed too, let us walk inside.",
+      "phonetic": "/dɔr kloʊzd tu, lɛt ʌs wɔk ˈɪnsaɪd./",
+      "zh": "小門也關了，我們進店裡去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did that pump give short gallons?",
+      "phonetic": "/dɪd ðæt pʌmp ɡɪv ʃɔrt ˈɡælənz?/",
+      "zh": "那台機子有沒有少給油？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, they test the pumps each year.",
+      "phonetic": "/noʊ, ðeɪ tɛst ðə pʌmps itʃ jɪr./",
+      "zh": "沒有，機器每年都會受檢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I trust the numbers on this screen.",
+      "phonetic": "/aɪ trʌst ðə ˈnʌmbərz ɑn ðɪs skrin./",
+      "zh": "我信這塊屏上的數字。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They must keep pumps honest by law.",
+      "phonetic": "/ðeɪ məst kip pʌmps ˈɑnəst baɪ lɔ./",
+      "zh": "法律要求他們不能短斤少兩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Ready to walk to the store door?",
+      "phonetic": "/ˈrɛdi tə wɔk tə ðə stɔr dɔr?/",
+      "zh": "準備好走向店裡了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, grab the keys and let us go.",
+      "phonetic": "/jɛs, ɡræb ðə kiz ænd lɛt ʌs ɡoʊ./",
+      "zh": "好了，拿上車鑰匙走吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good, the store door is still open.",
+      "phonetic": "/ɡʊd, ðə stɔr dɔr ɪz stɪl ˈoʊpən./",
+      "zh": "太好了，商店門還開著。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the door chime still works too.",
+      "phonetic": "/jɛs, ðə dɔr tʃaɪm stɪl wɜrks tu./",
+      "zh": "對，門鈴也還在響。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do I pay for gas in here?",
+      "phonetic": "/du aɪ peɪ fər ɡæs ɪn hɪr?/",
+      "zh": "油費是在裡面付嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, tell the clerk your pump number.",
+      "phonetic": "/jɛs, tɛl ðə klɜrk jʊr pʌmp ˈnʌmbər./",
+      "zh": "對，告訴店員你是幾號機。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Pump twelve, that is forty two fifty.",
+      "phonetic": "/pʌmp twɛlv, ðæt ɪz ˈfɔrti tu ˈfɪfti./",
+      "zh": "十二號機，一共四十二塊五。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cash or card, the register is ready.",
+      "phonetic": "/kæʃ ɔr kɑrd, ðə ˈrɛdʒəstər ɪz ˈrɛdi./",
+      "zh": "現金還是卡？收銀機準備好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will pay with my debit card.",
+      "phonetic": "/aɪ wɪl peɪ wɪð maɪ ˈdɛbət kɑrd./",
+      "zh": "我用簽帳金融卡付。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Insert it and type your four digit code.",
+      "phonetic": "/ɪnˈsɜrt ɪt ænd taɪp jʊr fɔr ˈdɪdʒət koʊd./",
+      "zh": "插卡，再輸入四位密碼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Listen, the card reader beeped twice.",
+      "phonetic": "/ˈlɪsən, ðə kɑrd ˈridər bipt twaɪs./",
+      "zh": "聽，讀卡器剛剛滴了兩聲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That means the payment went through.",
+      "phonetic": "/ðæt minz ðə ˈpeɪmənt wɛnt θru./",
+      "zh": "那就代表付款成功了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Oops, I typed my old pin.",
+      "phonetic": "/ʊps, aɪ taɪpt maɪ oʊld pɪn./",
+      "zh": "糟糕，我輸的是舊的密碼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try once more, you have two guesses.",
+      "phonetic": "/traɪ wʌns mɔr, ju hæv tu ˈɡɛsəz./",
+      "zh": "再試一次，你還有兩次機會。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My card keeps getting declined here.",
+      "phonetic": "/maɪ kɑrd kips ˈɡɛtɪŋ dɪˈklaɪnd hɪr./",
+      "zh": "我的卡在這裡老是刷不過。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You should call your bank today.",
+      "phonetic": "/ju ʃʊd kɔl jʊr bæŋk təˈdeɪ./",
+      "zh": "你今天該打電話問銀行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I split the bill in half?",
+      "phonetic": "/kæn aɪ splɪt ðə bɪl ɪn hæf?/",
+      "zh": "這筆錢可以分兩半付嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, half card and half cash.",
+      "phonetic": "/ʃʊr, hæf kɑrd ænd hæf kæʃ./",
+      "zh": "當然，一半刷卡一半現金。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you take phone payments here?",
+      "phonetic": "/du ju teɪk foʊn ˈpeɪmənts hɪr?/",
+      "zh": "這裡可以用手機付款嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, tap your phone on the reader.",
+      "phonetic": "/jɛs, tæp jʊr foʊn ɑn ðə ˈridər./",
+      "zh": "可以，手機往感應區一貼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you print receipts here?",
+      "phonetic": "/du ju prɪnt rɪˈsɪts hɪr?/",
+      "zh": "你們這裡會印收據嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here you go, it printed already.",
+      "phonetic": "/hɪr ju ɡoʊ, ɪt ˈprɪntəd ɔlˈrɛdi./",
+      "zh": "給您，已經印好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I paid at the pump, is that fine?",
+      "phonetic": "/aɪ peɪd æt ðə pʌmp, ɪz ðæt faɪn?/",
+      "zh": "我在機器那邊付過了，可以嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, keep the small printed slip.",
+      "phonetic": "/jɛs, kip ðə smɔl ˈprɪntəd slɪp./",
+      "zh": "可以，留好那張小收據。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Oh no, the machine ate my card.",
+      "phonetic": "/oʊ noʊ, ðə məˈʃin et maɪ kɑrd./",
+      "zh": "糟糕，機器把我的卡吞了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wait here, a clerk will bring it.",
+      "phonetic": "/weɪt hɪr, ə klɜrk wɪl brɪŋ ɪt./",
+      "zh": "稍等，店員會幫您取回來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thank you for saving my credit card.",
+      "phonetic": "/θæŋk ju fər ˈseɪvɪŋ maɪ ˈkrɛdɪt kɑrd./",
+      "zh": "謝謝你們幫我把卡拿回來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No problem, watch the reader next time.",
+      "phonetic": "/noʊ ˈprɑbləm, wɑtʃ ðə ˈridər nɛkst taɪm./",
+      "zh": "不客氣，下次留意讀卡機。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you offer a rewards program?",
+      "phonetic": "/du ju ˈɔfər ə rɪˈwɔrdz ˈproʊɡræm?/",
+      "zh": "你們有會員回饋計畫嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, ten cents off every gallon.",
+      "phonetic": "/jɛs, tɛn sɛnts ɔf ˈɛvri ˈɡælən./",
+      "zh": "有，每加侖折十美分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is it free to join the club?",
+      "phonetic": "/ɪz ɪt fri tə dʒɔɪn ðə klʌb?/",
+      "zh": "加入會員要錢嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Free, just fill this short form out.",
+      "phonetic": "/fri, dʒʌst fɪl ðɪs ʃɔrt fɔrm aʊt./",
+      "zh": "免費，填一下這張短表就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It asks for my name and phone.",
+      "phonetic": "/ɪt æsks fər maɪ neɪm ænd foʊn./",
+      "zh": "表上要我的名字和電話。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They text you gas deals on Fridays.",
+      "phonetic": "/ðeɪ tɛkst ju ɡæs dilz ɑn ˈfraɪdeɪz./",
+      "zh": "週五他們會傳折扣給你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do I scan my card at the pump?",
+      "phonetic": "/du aɪ skæn maɪ kɑrd æt ðə pʌmp?/",
+      "zh": "我的會員卡要在機器上掃嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, press rewards first, then swipe it.",
+      "phonetic": "/jɛs, prɛs rɪˈwɔrdz fɜrst, ðɛn swaɪp ɪt./",
+      "zh": "對，先按會員積分鍵，再刷卡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I saved about a dollar today.",
+      "phonetic": "/aɪ seɪvd əˈbaʊt ə ˈdɑlər təˈdeɪ./",
+      "zh": "我今天省了大約一塊錢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That adds up over a whole year.",
+      "phonetic": "/ðæt ˈædz ʌp ˈoʊvər ə hoʊl jɪr./",
+      "zh": "一整年下來就很多了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the club have a coffee deal?",
+      "phonetic": "/dʌz ðə klʌb hæv ə ˈkɔfi dil?/",
+      "zh": "會員有咖啡優惠嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, free refill with any gas buy.",
+      "phonetic": "/jɛs, fri ˈrifɪl wɪð ˈɛni ɡæs baɪ./",
+      "zh": "有，加油就能免費續杯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One large coffee, black, please.",
+      "phonetic": "/wʌn lɑrdʒ ˈkɔfi, blæk, pliz./",
+      "zh": "請給我一杯大杯黑咖啡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is one dollar with your card.",
+      "phonetic": "/ðæt ɪz wʌn ˈdɑlər wɪð jʊr kɑrd./",
+      "zh": "用會員卡只要一塊錢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I get a lid for this cup?",
+      "phonetic": "/kæn aɪ ɡɛt ə lɪd fər ðɪs kʌp?/",
+      "zh": "這杯可以給我個蓋子嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lids sit right by the syrup machine.",
+      "phonetic": "/lɪdz sɪt raɪt baɪ ðə ˈsɪrəp məˈʃin./",
+      "zh": "杯蓋就擱在糖漿機旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the coffee fresh right now?",
+      "phonetic": "/ɪz ðə ˈkɔfi frɛʃ raɪt naʊ?/",
+      "zh": "現在的咖啡是新煮的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They brewed a pot an hour ago.",
+      "phonetic": "/ðeɪ brud ə pɑt ən aʊər əˈɡoʊ./",
+      "zh": "一小時前剛煮好一壺。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Want a snack from the aisle?",
+      "phonetic": "/wɑnt ə snæk frʌm ðə aɪl?/",
+      "zh": "你想從貨架拿點零食嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Get the chips, the cheap two dollar bags.",
+      "phonetic": "/ɡɛt ðə tʃɪps, ðə tʃip tu ˈdɑlər bæɡz./",
+      "zh": "買洋芋片吧，兩塊一包的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hey, the cooler has cold water inside.",
+      "phonetic": "/heɪ, ðə ˈkulər hæz koʊld ˈwɔtər ɪnˈsaɪd./",
+      "zh": "嘿，冷藏櫃裡有冰水。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Grab two bottles, the road is long.",
+      "phonetic": "/ɡræb tu ˈbɑtəlz, ðə roʊd ɪz lɔŋ./",
+      "zh": "拿兩瓶，長途要喝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is the restroom in this store?",
+      "phonetic": "/wɛr ɪz ðə ˈrʊmˌtum ɪn ðɪs stɔr?/",
+      "zh": "這家店的洗手間在哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Back left, the key hangs at the counter.",
+      "phonetic": "/bæk lɛft, ðə ki hæz æt ðə ˈkaʊntər./",
+      "zh": "左後方，鑰匙掛在櫃台。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Why does the restroom need a key?",
+      "phonetic": "/waɪ dʌz ðə ˈrʊmˌtum nid ə ki?/",
+      "zh": "為什麼洗手間要拿鑰匙？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So the door stays locked for safety.",
+      "phonetic": "/soʊ ðə dɔr steɪz lɑkt fər ˈseɪfti./",
+      "zh": "為了安全，門平時鎖著。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Gee, this key ring is huge.",
+      "phonetic": "/dʒi, ðɪs ki rɪŋ ɪz hjudʒ./",
+      "zh": "咦，這鑰匙圈也太大了吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, big keys are hard to lose.",
+      "phonetic": "/jɛs, bɪɡ kiz ɑr hɑrd tə luz./",
+      "zh": "對，鑰匙大就不怕弄丟。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will be one quick minute.",
+      "phonetic": "/aɪ wɪl bi wʌn kwɪk ˈmɪnət./",
+      "zh": "我很快就回來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Take time, I will wait with the car.",
+      "phonetic": "/teɪk taɪm, aɪ wɪl weɪt wɪð ðə kɑr./",
+      "zh": "慢慢來，我在車邊等你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which pump was it, twelve or eight?",
+      "phonetic": "/wɪtʃ pʌmp wʌz ɪt, twɛlv ɔr eɪt?/",
+      "zh": "到底是幾號機來著，十二還是八？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pump twelve, it is on the receipt.",
+      "phonetic": "/pʌmp twɛlv, ɪt ɪz ɑn ðə rɪˈsit./",
+      "zh": "十二號機，收據小票上寫著呢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So, the clerk says seven fifty total.",
+      "phonetic": "/soʊ, ðə klɜrk sɛz ˈsɛvən ˈfɪfti ˈtoʊtəl./",
+      "zh": "店員說我們總共七塊五。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Seven fifty? How did we hit that?",
+      "phonetic": "/ˈsɛvən ˈfɪfti? haʊ dɪd wi hɪt ðæt?/",
+      "zh": "七塊五？怎麼算到這個數的？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Coffee, two chip bags, water.",
+      "phonetic": "/ˈkɔfi, tu tʃɪp bæɡz, ˈwɔtər./",
+      "zh": "咖啡、兩包洋芋片，還有水。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Oh right, small things get expensive.",
+      "phonetic": "/oʊ raɪt, smɔl θɪŋz ɡɛt ɪkˈspɛnsɪv./",
+      "zh": "哦對，小東西也不便宜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I return this wrong magazine?",
+      "phonetic": "/kæn aɪ rɪˈtɜrn ðɪs rɔŋ ˌmæɡəˈzin?/",
+      "zh": "這本雜誌拿錯了能退嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only with the receipt, within ten minutes.",
+      "phonetic": "/ˈoʊnli wɪð ðə rɪˈsit, wɪˈðɪn tɛn ˈmɪnəts./",
+      "zh": "要憑收據，十分鐘內才行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you sell air fresheners here?",
+      "phonetic": "/du ju sɛl ɛr ˈfrɛʃənərz hɪr?/",
+      "zh": "你們賣車載芳香劑嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, by the register, one ninety nine.",
+      "phonetic": "/jɛs, baɪ ðə ˈrɛdʒəstər, wʌn ˈnaɪnti naɪn./",
+      "zh": "有，收銀台旁，一塊九九。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "These pine trees smell too fake.",
+      "phonetic": "/ðiz paɪn triz smɛl tu feɪk./",
+      "zh": "這些松樹造型味道好假。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pick the vanilla one, it is nicer.",
+      "phonetic": "/pɪk ðə vəˈnɪlə wʌn, ɪt ɪz ˈnaɪsər./",
+      "zh": "挑香草味的，那個比較好聞。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This store has clean tables outside.",
+      "phonetic": "/ðɪs stɔr hæz klin ˈteɪbəlz ˌaʊtˈsaɪd./",
+      "zh": "店外面有乾淨的桌子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "People sit there and wait for rides.",
+      "phonetic": "/ˈpipəl sɪt ðɛr ænd weɪt fər raɪdz./",
+      "zh": "大家坐那兒等人來接。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A delivery truck is at the back door.",
+      "phonetic": "/ə dɪˈlɪvəri trʌk ɪz æt ðə bæk dɔr./",
+      "zh": "有送貨車停在後門。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They restock the cooler every night.",
+      "phonetic": "/ðeɪ ˈriːstɑk ðə ˈkulər ˈɛvri naɪt./",
+      "zh": "他們每晚都會補貨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Truly, the clerk here is always friendly.",
+      "phonetic": "/ˈtruli, ðə klɜrk hɪr ɪz ˈɔlweɪz ˈfrɛndli./",
+      "zh": "說真的，這裡的店員總是很親切。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, this station feels like family.",
+      "phonetic": "/jɛs, ðɪs ˈsteɪʃən filz laɪk ˈfæməli./",
+      "zh": "對，這家站像家人一樣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I use the bathroom before we go?",
+      "phonetic": "/kæn aɪ juz ðə ˈbæθˌrum bɪˈfɔr wi ɡoʊ?/",
+      "zh": "走之前我可以用洗手間嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Of course, the key is right here.",
+      "phonetic": "/ʌv kɔrs, ðə ki ɪz raɪt hɪr./",
+      "zh": "當然，鑰匙就在這兒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you take coins for candy?",
+      "phonetic": "/du ju teɪk kɔɪnz fər ˈkændi?/",
+      "zh": "買糖果可以付硬幣嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the coin jar by the door works.",
+      "phonetic": "/jɛs, ðə kɔɪn dʒɑr baɪ ðə dɔr wɜrks./",
+      "zh": "可以，丟進門邊的零錢罐。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My daughter wants a gummy bear bag.",
+      "phonetic": "/maɪ ˈdɔtər wɑnts ə ˈɡʌmi bɛr bæɡ./",
+      "zh": "我女兒想買一袋小熊軟糖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Get the small one, not the giant.",
+      "phonetic": "/ɡɛt ðə smɔl wʌn, nɑt ðə ˈdʒaɪənt./",
+      "zh": "拿小包的，別拿超大包。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is this sandwich still good to eat?",
+      "phonetic": "/ɪz ðɪs ˈsænwɪtʃ stɪl ɡʊd tə it?/",
+      "zh": "這三明治還能吃嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Check the date on the wrapper flap.",
+      "phonetic": "/tʃɛk ðə deɪt ɑn ðə ˈræpər flæp./",
+      "zh": "看看包裝蓋上的日期。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It says best before tomorrow noon.",
+      "phonetic": "/ɪt sɛz bɛst bɪˈfɔr təˈmɑroʊ nun./",
+      "zh": "上面寫著明天中午前食用。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then it is fine for our lunch.",
+      "phonetic": "/ðɛn ɪt ɪz faɪn fər ˈaʊər lʌntʃ./",
+      "zh": "那我們午餐吃沒問題。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Aha, the microwave in the corner works.",
+      "phonetic": "/əˈhɑ, ðə ˈmaɪkroʊˌweɪv ɪn ðə ˈkɔrnər wɜrks./",
+      "zh": "太好了，角落的微波爐是能用的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Heat it two minutes, turn it once.",
+      "phonetic": "/hit ɪt tu ˈmɪnəts, tɜrn ɪt wʌns./",
+      "zh": "加熱兩分鐘，中間翻個面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "They sell stamps at this counter, right?",
+      "phonetic": "/ðeɪ sɛl stæmps æt ðɪs ˈkaʊntər, raɪt?/",
+      "zh": "這個櫃台有賣郵票，對吧？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, try the post office downtown.",
+      "phonetic": "/noʊ, traɪ ðə poʊst ˈɔfəs ˈdaʊntɑn./",
+      "zh": "沒有，去市區的郵局看看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I buy a phone charger here?",
+      "phonetic": "/kæn aɪ baɪ ə foʊn ˈtʃɑrdʒər hɪr?/",
+      "zh": "我可以在這裡買手機充電器嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, cheap ones hang near the door.",
+      "phonetic": "/jɛs, tʃip wʌnz hæŋ nɪr ðə dɔr./",
+      "zh": "可以，門邊掛著便宜的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This one charges too slow for me.",
+      "phonetic": "/ðɪs wʌn ˈtʃɑrdʒɪz tu sloʊ fər mi./",
+      "zh": "這個充電太慢了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Buy the fast one, it is worth it.",
+      "phonetic": "/baɪ ðə fæst wʌn, ɪt ɪz wɜrθ ɪt./",
+      "zh": "買快充那款，值得。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Well, paper bags cost extra money here.",
+      "phonetic": "/wɛl, ˈpeɪpər bæɡz kɔst ˈɛkstrə ˈmʌni hɪr./",
+      "zh": "唉，紙袋要另外收錢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ten cents, or carry it in your hands.",
+      "phonetic": "/tɛn sɛnts, ɔr ˈkæri ɪt ɪn jʊr hændz./",
+      "zh": "一毛錢，或你直接用手拿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I buy a gift card too?",
+      "phonetic": "/kæn aɪ baɪ ə ɡɪft kɑrd tu?/",
+      "zh": "我也可以順便買張禮品卡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, from ten to a hundred dollars.",
+      "phonetic": "/jɛs, frʌm tɛn tə ə ˈhʌndrəd ˈdɑlərz./",
+      "zh": "有，十塊到一百塊都行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do I need to sign this slip?",
+      "phonetic": "/du aɪ nid tə saɪn ðɪs slɪp?/",
+      "zh": "我需要在這張小票上簽名嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, press done and you are set.",
+      "phonetic": "/noʊ, prɛs dʌn ænd ju ɑr sɛt./",
+      "zh": "不用，按完成就好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Paid in full, we can move on.",
+      "phonetic": "/peɪd ɪn fʊl, wi kæn muv ɑn./",
+      "zh": "全部付好了，我們可以走了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Have a safe drive, come back soon.",
+      "phonetic": "/hæv ə seɪf draɪv, kʌm bæk sun./",
+      "zh": "開車小心，歡迎再來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is my tire light on the dash?",
+      "phonetic": "/ɪz maɪ ˈtaɪər laɪt ɑn ðə dæʃ?/",
+      "zh": "儀表板上輪胎燈亮了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, that means low tire pressure.",
+      "phonetic": "/jɛs, ðæt minz loʊ ˈtaɪər ˈprɛʃər./",
+      "zh": "對，那是胎壓不足的警告。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is the free air machine?",
+      "phonetic": "/wɛr ɪz ði fri ɛr məˈʃin?/",
+      "zh": "免費打氣機在哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Past pump ten, near the tall pole.",
+      "phonetic": "/pæst pʌmp tɛn, nɪr ðə tɔl poʊl./",
+      "zh": "過了十號機，靠近高杆那兒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How do I use this air hose?",
+      "phonetic": "/haʊ du aɪ juz ðɪs ɛr hoʊz?/",
+      "zh": "這條氣管要怎麼用？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Press the air tip on the valve stem.",
+      "phonetic": "/prɛs ði ɛr tɪp ɑn ðə vælv stɛm./",
+      "zh": "把氣槍頭按緊在氣門嘴上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It hisses when the air comes out.",
+      "phonetic": "/ɪt ˈhɪsɪz wɛn ði ɛr kʌmz aʊt./",
+      "zh": "出氣的時候會有嘶嘶聲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is normal, hold the hose straight.",
+      "phonetic": "/ðæt ɪz ˈnɔrməl, hoʊld ðə hoʊz streɪt./",
+      "zh": "很正常，把管子扶直就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What number should my tires show?",
+      "phonetic": "/wʌt ˈnʌmbər ʃʊd maɪ ˈtaɪərz ʃoʊ?/",
+      "zh": "胎壓該打到多少？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thirty two psi, see the door sticker.",
+      "phonetic": "/ˈθɜrdi tu ˌpiːɛsˈaɪ, si ðə dɔr ˈstɪkər./",
+      "zh": "三十二 PSI，看車門貼紙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Mine does not match your card total.",
+      "phonetic": "/maɪn dʌz nɑt mætʃ jʊr kɑrd ˈtoʊtəl./",
+      "zh": "我的數跟你卡上的總額對不上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Your owner book lists the right number.",
+      "phonetic": "/jʊr ˈoʊnər bʊk lɪsts ðə raɪt ˈnʌmbər./",
+      "zh": "車主手冊裡寫了正確數值。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One tire looks flatter than the others.",
+      "phonetic": "/wʌn ˈtaɪər lʊks ˈflætər ðən ði ˈʌðərz./",
+      "zh": "有一條輪胎看起來特別扁。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fill that one first and check again.",
+      "phonetic": "/fɪl ðæt wʌn fɜrst ænd tʃɛk əˈɡɛn./",
+      "zh": "先幫那條打滿再複查一次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hmm, the gauge here reads way off.",
+      "phonetic": "/hʌm, ðə ɡeɪdʒ hɪr ridz weɪ ˈɔf./",
+      "zh": "嗯，這裡的胎壓表讀數不太對。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Use the pen gauge in your glove box.",
+      "phonetic": "/juz ðə pɛn ɡeɪdʒ ɪn jʊr ɡlʌv bɑks./",
+      "zh": "用手套箱裡那支筆式量壓表。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Oops, I put too much air in now.",
+      "phonetic": "/ʊps, aɪ pʊt tu mʌtʃ ɛr ɪn naʊ./",
+      "zh": "糟糕，我打太多氣了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Press the center pin to let some out.",
+      "phonetic": "/prɛs ðə ˈsɛntər pɪn tə lɛt sʌm aʊt./",
+      "zh": "按一下中間的小針就能放氣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks, the tire feels firm again.",
+      "phonetic": "/θæŋks, ðə ˈtaɪər filz fɜrm əˈɡɛn./",
+      "zh": "謝謝，輪胎又變飽滿了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Check the spare tire once a month.",
+      "phonetic": "/tʃɛk ðə spɛr ˈtaɪər wʌns ə mʌnθ./",
+      "zh": "備胎也要一個月檢查一次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does this station sell tire shine?",
+      "phonetic": "/dʌz ðɪs ˈsteɪʃən sɛl ˈtaɪər ʃaɪn?/",
+      "zh": "這家站賣輪胎亮油嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the black bottle on shelf three.",
+      "phonetic": "/jɛs, ðə blæk ˈbɑtəl ɑn ʃɛlf θri./",
+      "zh": "有，第三排那瓶黑色的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I check my oil right here?",
+      "phonetic": "/kæn aɪ tʃɛk maɪ ɔɪl raɪt hɪr?/",
+      "zh": "我能在這兒檢查機油嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, pull the yellow ring under the hood.",
+      "phonetic": "/jɛs, pʊl ðə ˈjɛloʊ rɪŋ ˈʌndər ðə hʊd./",
+      "zh": "可以，拉引擎蓋下那個黃環。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Geez, the oil level looks a bit low.",
+      "phonetic": "/ɡiz, ðə ɔɪl ˈlɛvəl lʊks ə bɪt loʊ./",
+      "zh": "哎呀，機油量看起來有點低。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Buy a quart of oil at the counter.",
+      "phonetic": "/baɪ ə kwɔrt ʌv ɔɪl æt ðə ˈkaʊntər./",
+      "zh": "去櫃台買一誇脫機油。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do they have the right oil here?",
+      "phonetic": "/du ðeɪ hæv ðə raɪt ɔɪl hɪr?/",
+      "zh": "這裡有對號的機油嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, read the label before you pour.",
+      "phonetic": "/jɛs, rid ðə ˈleɪbəl bɪˈfɔr ju pɔr./",
+      "zh": "有，倒之前先看一下標籤。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the washer fluid on that rack?",
+      "phonetic": "/ɪz ðə ˈwɑʃər ˈfluɪd ɑn ðæt ræk?/",
+      "zh": "玻璃水在那個架子上嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Blue jug, the summer kind is on sale.",
+      "phonetic": "/blu dʒʌɡ, ðə ˈsʌmər kaɪnd ɪz ɑn seɪl./",
+      "zh": "藍壺的，夏季款正在特價。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My winter spray freezes on the glass.",
+      "phonetic": "/maɪ ˈwɪntər spreɪ ˈfrizəz ɑn ðə ɡlæs./",
+      "zh": "我用的噴液在玻璃上結冰。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Buy the minus twenty bottle instead.",
+      "phonetic": "/baɪ ðə ˈmaɪnəs ˈtwɛnti ˈbɑtəl ɪnˈstɛd./",
+      "zh": "那就買耐零下二十度那瓶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where does the washer fluid go?",
+      "phonetic": "/wɛr dʌz ðə ˈwɑʃər ˈfluɪd ɡoʊ?/",
+      "zh": "玻璃水應該倒進哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The cap with the windshield picture.",
+      "phonetic": "/ðə kæp wɪð ðə ˈwɪndʃiˌænd ˈpɪktʃər./",
+      "zh": "印著擋風玻璃圖樣的蓋子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I poured it in the wrong hole!",
+      "phonetic": "/aɪ pɔrd ɪt ɪn ðə rɔŋ hoʊl!/",
+      "zh": "我倒進錯的口了！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Which hole? The oil or the coolant?",
+      "phonetic": "/wɪtʃ hoʊl? ði ɔɪl ɔr ði ˈkulənt?/",
+      "zh": "哪個口？機油還是冷卻液？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Bad news, the coolant tank is pink.",
+      "phonetic": "/bæd nuz, ðə ˈkulənt tæŋk ɪz pɪŋk./",
+      "zh": "不好了，冷卻液壺變成粉紅色了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Do not drive, call the tow truck line.",
+      "phonetic": "/du nɑt draɪv, kɔl ðə taʊ trʌk laɪn./",
+      "zh": "別開車，打拖車電話來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now my friend's car will not start.",
+      "phonetic": "/naʊ maɪ frɛndz kɑr wɪl nɑt stɑrt./",
+      "zh": "現在我朋友的車也發不動了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, the cables are in my back seat.",
+      "phonetic": "/ʃʊr, ðə ˈkeɪbəlz ɑr ɪn maɪ bæk sit./",
+      "zh": "沒問題，過橋線在我的後座。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Its battery is dead, the engine clicks.",
+      "phonetic": "/ɪts ˈbætəri ɪz dɛd, ði ˈɛndʒən klɪks./",
+      "zh": "它的電池沒電了，引擎喀喀響。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let us connect the clamps step by step.",
+      "phonetic": "/lɛt ʌs kəˈnɛkt ðə kæmps stɛp baɪ stɛp./",
+      "zh": "我們一步一步夾上線夾。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Its lights are dim too, what could it be?",
+      "phonetic": "/ɪts laɪts ɑr dɪm tu, wɑt kʊd ɪt bi?/",
+      "zh": "車燈也好暗，會是什麼問題？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Could be, get the alternator checked there.",
+      "phonetic": "/kʊd bi, ɡɛt ði ɔlˈtɜrnəˌteɪtər tʃɛkt ðɛr./",
+      "zh": "有可能，去檢查發電機。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That man got diesel in his car!",
+      "phonetic": "/ðæt mæn ɡɑt ˈdizəl ɪn hɪz kɑr!/",
+      "zh": "那個人的車被加到柴油了！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Poor guy, he must not start the engine.",
+      "phonetic": "/pʊr ɡaɪ, hi məst nɑt stɑrt ði ˈɛndʒən./",
+      "zh": "可憐，他千萬別發動引擎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He just handed the clerk his keys.",
+      "phonetic": "/hi dʒʌst ˈhændəd ðə klɜrk hɪz kiz./",
+      "zh": "他直接把鑰匙交給了店員。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wrong fuel can wreck the whole engine.",
+      "phonetic": "/rɔŋ ˈfjuəl kæn rɛk ðə hoʊl ˈɛndʒən./",
+      "zh": "加錯油會整個毀掉引擎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will his insurance cover a mistake?",
+      "phonetic": "/wɪl hɪz ɪnˈʃʊrəns ˈkʌvər ə mɪsˈteɪk?/",
+      "zh": "他的保險會賠這種疏失嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The station pays, the receipt is proof.",
+      "phonetic": "/ðə ˈsteɪʃən peɪz, ðə rɪˈsit ɪz pruf./",
+      "zh": "加油站會賠，收據就是憑證。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "They must drain the tank at the shop.",
+      "phonetic": "/ðeɪ məst dreɪn ðə tæŋk æt ðə ʃɑp./",
+      "zh": "修車廠得先把油箱抽乾。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That takes an hour and costs real money.",
+      "phonetic": "/ðæt teɪks ən ˈaʊər ænd kɔsts riəl ˈmʌni./",
+      "zh": "那要一小時，也很花錢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Their manager said sorry and paid it all.",
+      "phonetic": "/ðɛr ˈmænɪdʒər sɛd ˈsɑri ænd peɪd ɪt ɔl./",
+      "zh": "他們經理道了歉，費用全包。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They covered the drain and the whole tow.",
+      "phonetic": "/ðeɪ ˈkʌvərd ðə dreɪn ænd ðə hoʊl taʊ./",
+      "zh": "抽油和拖車的錢都是他們付。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How long did the poor man wait?",
+      "phonetic": "/haʊ lɔŋ dɪd ðə pʊr mæn weɪt?/",
+      "zh": "那個人等了多久？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It took all morning, eight to eleven.",
+      "phonetic": "/ɪt tʊk ɔl ˈmɔrnɪŋ, eɪt tə ɪˈlɛvən./",
+      "zh": "花了整個上午，八點到十一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did the station drive him to the shop?",
+      "phonetic": "/dɪd ðə ˈsteɪʃən draɪv hɪm tə ðə ʃɑp?/",
+      "zh": "加油站有載他去修車廠嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, one clerk took him for free.",
+      "phonetic": "/jɛs, wʌn klɜrk tʊk hɪm fər fri./",
+      "zh": "有，一位店員免費送他去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hey, the pump took my cash and froze.",
+      "phonetic": "/heɪ, ðə pʌmp tʊk maɪ kæʃ ænd froʊz./",
+      "zh": "嘿，加油機收了錢卻卡住了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That happens, we will refund you right now.",
+      "phonetic": "/ðæt ˈhæpənz, wi wɪl rɪˈfʌnd ju raɪt naʊ./",
+      "zh": "這狀況常有，我們立刻退費。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please check the camera for pump nine.",
+      "phonetic": "/pliz tʃɛk ðə ˈkæmərə fər pʌmp naɪn./",
+      "zh": "請調九號機的監控看看。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, our video shows your card did fail.",
+      "phonetic": "/jɛs, ˈaʊər ˈvɪdioʊ ʃoʊz jʊr kɑrd dɪd feɪl./",
+      "zh": "影片顯示您的刷卡確實失敗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My screen froze at the pay step.",
+      "phonetic": "/maɪ skrin froʊz æt ðə peɪ stɛp./",
+      "zh": "我的螢幕付錢那步卡住了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Press the orange button to call help.",
+      "phonetic": "/prɛs ði ˈɔrɪndʒ ˈbɑtən tə kɔl hɛlp./",
+      "zh": "按橘色按鈕就能叫人來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A voice came through the little speaker.",
+      "phonetic": "/ə vɔɪs keɪm θru ðə ˈlɪtəl ˈspikər./",
+      "zh": "小喇叭裡傳出一個聲音。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Say your pump and tell them the trouble.",
+      "phonetic": "/seɪ jʊr pʌmp ænd tɛl ðɛm ðə ˈtrʌbəl./",
+      "zh": "說出機號，再講發生了什麼事。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Only two minutes later, help arrived.",
+      "phonetic": "/ˈoʊnli tu ˈmɪnɪts ˈleɪtər, hɛlp əˈraɪvd./",
+      "zh": "才兩分鐘，服務人員就到了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is faster than most stations are.",
+      "phonetic": "/ðæt ɪz ˈfæstər ðən moʊst ˈsteɪʃənz ɑr./",
+      "zh": "比多數加油站快多了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He reset the pump with a key card.",
+      "phonetic": "/hi riˈsɛt ðə pʌmp wɪð ə ki kɑrd./",
+      "zh": "他用管理卡把機器重設。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Now try your card again, slowly.",
+      "phonetic": "/naʊ traɪ jʊr kɑrd əˈɡɛn, ˈsloʊli./",
+      "zh": "現在請慢慢再刷一次卡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This time the screen lit up green.",
+      "phonetic": "/ðɪs taɪm ðə skrin lɪt ʌp ɡrin./",
+      "zh": "這次螢幕亮成綠色了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great, your gas is on the way.",
+      "phonetic": "/ɡreɪt, jʊr ɡæs ɪz ɑn ðə weɪ./",
+      "zh": "太好了，油馬上就來了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I spilled some gas on the ground.",
+      "phonetic": "/aɪ spɪld sʌm ɡæs ɑn ðə ɡraʊnd./",
+      "zh": "我把一些油灑在地上了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tell the clerk, they keep sawdust here.",
+      "phonetic": "/tɛl ðə klɜrk, ðeɪ kip ˈsɔˌdʌst hɪr./",
+      "zh": "跟店員說，這裡有木屑可清。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does a spill hurt the pavement?",
+      "phonetic": "/dʌz ə spɪl hɜrt ðə ˈpeɪvmənt?/",
+      "zh": "灑在地上的油會傷路面嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They clean it fast for safety rules.",
+      "phonetic": "/ðeɪ klin ɪt fæst fər ˈseɪfti rulz./",
+      "zh": "依安全規定要立刻清掉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Look, the trash bin at pump one is full.",
+      "phonetic": "/lʊk, ðə træʃ bɪn æt pʌmp wʌn ɪz fʊl./",
+      "zh": "你看，一號機旁的垃圾桶滿出來了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will mention it to the kind clerk.",
+      "phonetic": "/aɪ wɪl ˈmɛnʃən ɪt tə ðə kaɪnd klɜrk./",
+      "zh": "我會跟那位好心的店員說。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "There is broken glass near the air pump.",
+      "phonetic": "/ðɛr ɪz ˈbroʊkən ɡlæs nɪr ði ɛr pʌmp./",
+      "zh": "打氣機附近有碎玻璃。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Please stay away, we will sweep it up.",
+      "phonetic": "/pliz steɪ əˈweɪ, wi wɪl swip ɪt ʌp./",
+      "zh": "請遠離，我們馬上掃乾淨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My price was higher than the sign said.",
+      "phonetic": "/maɪ praɪs wʌz ˈhaɪər ðən ðə saɪn sɛd./",
+      "zh": "收我的價錢比牌子上的高。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Show them your photo of the sign.",
+      "phonetic": "/ʃoʊ ðɛm jʊr ˈfoʊtoʊ ʌv ðə saɪn./",
+      "zh": "把您拍的價牌照片給他們看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "In the end, the manager fixed my price.",
+      "phonetic": "/ɪn ði ɛnd, ðə ˈmænɪdʒər fɪkst maɪ praɪs./",
+      "zh": "最後經理把我的單價調降了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Signs must match, that is the law.",
+      "phonetic": "/saɪnz məst mætʃ, ðæt ɪz ðə lɔ./",
+      "zh": "價牌必須一致，這是法令。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I complain online about this?",
+      "phonetic": "/kæn aɪ kəmˈpleɪn ˌɑnˈlaɪn əˈbaʊt ðɪs?/",
+      "zh": "我可以在線上投訴這件事嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, there is a survey on your receipt.",
+      "phonetic": "/jɛs, ðɛr ɪz ə ˈsɜrveɪ ɑn jʊr rɪˈsit./",
+      "zh": "可以，收據上就有問卷網址。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I only want a fair answer today.",
+      "phonetic": "/aɪ ˈoʊnli wɑnt ə fɛr ˈænsər təˈdeɪ./",
+      "zh": "我今天只想要個公平的答覆。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You have it, we will mail you a coupon.",
+      "phonetic": "/ju hæv ɪt, wi wɪl meɪl ju ə ˈkupɑn./",
+      "zh": "您會得到，我們寄折價券給您。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Also, the wiper blades need changing soon.",
+      "phonetic": "/ˈɔlsoʊ, ðə ˈwaɪpər bleɪdz nid ˈtʃeɪndʒɪŋ sun./",
+      "zh": "還有，雨刷很快就要換了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They hang by the register in packs.",
+      "phonetic": "/ðeɪ hæŋ baɪ ðə ˈrɛdʒəstər ɪn pæks./",
+      "zh": "收銀旁就掛著成對的雨刷。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can the clerk install them for me?",
+      "phonetic": "/kæn ðə klɜrk ɪnˈstɔl ðɛm fər mi?/",
+      "zh": "店員可以幫我裝上去嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it takes two minutes with no fee.",
+      "phonetic": "/jɛs, ɪt teɪks tu ˈmɪnəts wɪð noʊ fi./",
+      "zh": "可以，兩分鐘裝好還不收費。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "New wipers make the glass so clear.",
+      "phonetic": "/nu ˈwaɪpərz meɪk ðə ɡlæs soʊ klɪr./",
+      "zh": "新雨刷把玻璃颳得好乾淨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Night driving feels safe again now.",
+      "phonetic": "/naɪt ˈdraɪvɪŋ filz seɪf əˈɡɛn naʊ./",
+      "zh": "晚上開車又安心了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you sell coolant in yellow jugs?",
+      "phonetic": "/du ju sɛl ˈkulənt ɪn ˈjɛloʊ dʒʌɡz?/",
+      "zh": "你們賣黃色壺裝的冷卻液嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, shelf four, next to the washer fluid.",
+      "phonetic": "/jɛs, ʃɛlf fɔr, nɛkst tə ðə ˈwɑʃər ˈfluɪd./",
+      "zh": "有，第四排，玻璃水旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Everything is checked, tires and fluid too.",
+      "phonetic": "/ˈɛvriˌθɪŋ ɪz tʃɛkt, ˈtaɪərz ænd ˈfluɪd tu./",
+      "zh": "輪胎和油水都檢查過了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then we are ready for the long road.",
+      "phonetic": "/ðɛn wi ɑr ˈrɛdi fər ðə lɔŋ roʊd./",
+      "zh": "那我們準備好出遠門了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for all your help today.",
+      "phonetic": "/θæŋks fər ɔl jʊr hɛlp təˈdeɪ./",
+      "zh": "謝謝你今天所有的幫忙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Drive safe, and enjoy the open road.",
+      "phonetic": "/draɪv seɪf, ænd ɛnˈdʒɔɪ ði ˈoʊpən roʊd./",
+      "zh": "開車小心，享受這段旅程。"
+    }
+  ]
+}

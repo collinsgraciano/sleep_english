@@ -1,0 +1,2458 @@
+{
+  "title": "Everyday Phrases — At the Pharmacy",
+  "title_zh": "去藥局買藥",
+  "scene_zh": "去藥局買藥 · 情境對話",
+  "title_quote": "Hi, I need help with a cold.",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】💊 實用的去藥局買藥必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — At the Pharmacy",
+  "youtube_description": "睡著學英文！這部影片收錄實用的去藥局買藥情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫），從描述感冒發燒症狀、詢問劑量與副作用、選購維他命與體溫計到回家按時服藥，400句一次聽好。不用背，睡前聽就會。重複播放，讓英文自然進入你的大腦。👍 想學更多生活場景，請留言告訴我！別忘了訂閱+按讚。 #英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical At the Pharmacy phrase pairs (each pair: male normal speed → female slow speed → combined dialogue), covering the full journey: describing cold and fever symptoms, asking about doses and side effects, picking vitamins and a thermometer, and taking medicine on schedule at home. No memorization needed—just listen before bed and absorb naturally. If you want more real-life scenarios, leave a comment! Subscribe and like!",
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "At the Pharmacy",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "At the Pharmacy",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Health",
+  "youtube_tags": [
+    "英文聽力",
+    "睡前英文",
+    "去藥局買藥英文",
+    "At the Pharmacy English",
+    "看病英文",
+    "買藥英文",
+    "English listening",
+    "Sleep learning",
+    "A2 English",
+    "常用英文短語",
+    "零基礎英文",
+    "慢速英文",
+    "英文口語",
+    "Learn English",
+    "English conversation",
+    "ESL"
+  ],
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "Hi, I need help with a cold.",
+      "phonetic": "/haɪ, aɪ nid hɛlp wɪð ə koʊld./",
+      "zh": "嗨，我想買點感冒藥。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, what are your symptoms?",
+      "phonetic": "/ʃʊr, wɑt ɑr jɔr ˈsɪmptəmz?/",
+      "zh": "好啊，你有什麼症狀？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I have a sore throat today.",
+      "phonetic": "/aɪ hæv ə sɔr θroʊt təˈdeɪ./",
+      "zh": "我今天喉嚨很痛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Does it hurt when you swallow?",
+      "phonetic": "/dʌz ɪt hɜrt wɛn ju ˈswɑloʊ?/",
+      "zh": "你吞東西的時候會痛嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, and I cough a lot.",
+      "phonetic": "/jɛs, ænd aɪ kɔf ə lɑt./",
+      "zh": "對，而且我不停地咳。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "How long have you had this?",
+      "phonetic": "/haʊ lɔŋ hæv ju hæd ðɪs?/",
+      "zh": "你這樣已經多久了？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "About three days, maybe four.",
+      "phonetic": "/əˈbaʊt θri deɪz, ˈmeɪbi fɔr./",
+      "zh": "大約三天，說不定四天。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Do you have a fever too?",
+      "phonetic": "/du ju hæv ə ˈfivər tu?/",
+      "zh": "你也有發燒嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My forehead feels really hot.",
+      "phonetic": "/maɪ ˈfɔrˌhɛd filz ˈrɪli hɑt./",
+      "zh": "我額頭摸起來好燙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Did you take your temperature?",
+      "phonetic": "/dɪd ju teɪk jɔr ˈtɛmprətʃər?/",
+      "zh": "你有量過體溫嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I got thirty-eight point five.",
+      "phonetic": "/aɪ ɡɑt ˈθɜrti eɪt pɔɪnt faɪv./",
+      "zh": "我量到三十八度五。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is a mild fever.",
+      "phonetic": "/ðæt ɪz ə maɪld ˈfivər./",
+      "zh": "那是輕微的發燒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I feel tired all day.",
+      "phonetic": "/aɪ fil ˈtaɪərd ɔl deɪ./",
+      "zh": "我整天都覺得累。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Do you have a headache?",
+      "phonetic": "/du ju hæv ə ˈhɛdəˌeɪk?/",
+      "zh": "你會頭痛嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Just a little behind my eyes.",
+      "phonetic": "/dʒʌst ə ˈlɪtəl bɪˈhaɪnd maɪ aɪz./",
+      "zh": "只有眼睛後面有點痛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Is your nose stuffy at night?",
+      "phonetic": "/ɪz jɔr noʊz ˈstʌfi ət naɪt?/",
+      "zh": "你晚上鼻子會塞嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, I breathe through my mouth.",
+      "phonetic": "/jɛs, aɪ brið θru maɪ maʊθ./",
+      "zh": "會，我都用嘴巴呼吸。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Are you coughing anything up?",
+      "phonetic": "/ɑr ju ˈkɔfɪŋ ˈɛniˌθɪŋ ʌp?/",
+      "zh": "你咳嗽會咳出東西嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sometimes yellow phlegm comes up.",
+      "phonetic": "/ˈsʌmˌtaɪmz ˈjɛloʊ flɛm kʌmz ʌp./",
+      "zh": "有時候會咳出黃痰。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That can mean an infection.",
+      "phonetic": "/ðæt kæn min ən ɪnˈfɛkʃən./",
+      "zh": "那可能代表有感染。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do I need antibiotics?",
+      "phonetic": "/du aɪ nid ˌæntaɪˈoʊtɪks?/",
+      "zh": "我需要吃抗生素嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Those need a doctor's prescription.",
+      "phonetic": "/ðoʊz nid ə ˈdɑktərz ˌpriskrɪpˈʃən./",
+      "zh": "那些藥需要醫生處方。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I still have an old prescription.",
+      "phonetic": "/aɪ stɪl hæv ən oʊld ˌpriskrɪpˈʃən./",
+      "zh": "我手上還有一張舊處方。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "When did the doctor write it?",
+      "phonetic": "/wɛn dɪd ðə ˈdɑktər raɪt ɪt?/",
+      "zh": "醫生什麼時候開的？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It is from two years ago.",
+      "phonetic": "/ɪt ɪz frʌm tu jɪrz əˈɡoʊ./",
+      "zh": "那是兩年前開的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sorry, that paper has expired.",
+      "phonetic": "/ˈsɑri, ðæt ˈpeɪpər hæz ɪkˈspaɪərd./",
+      "zh": "抱歉，那張已經過期了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you call my doctor?",
+      "phonetic": "/kæn ju kɔl maɪ ˈdɑktər?/",
+      "zh": "你能打電話給我醫生嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, we can try calling now.",
+      "phonetic": "/ʃʊr, wi kæn traɪ ˈkɔlɪŋ naʊ./",
+      "zh": "好啊，我們現在就試著打給他。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So I need a new one.",
+      "phonetic": "/soʊ aɪ nid ə nu wʌn./",
+      "zh": "所以我得先開一張新的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, for the strong medicine.",
+      "phonetic": "/jɛs, fər ðə strɔŋ ˈmɛdsən./",
+      "zh": "對，那種強度高的藥需要。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What can I buy without one?",
+      "phonetic": "/wɑt kæn aɪ baɪ wɪˈðaʊt wʌn?/",
+      "zh": "沒有處方能買什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Many safe options help a lot.",
+      "phonetic": "/ˈmɛni seɪf ˈɑpʃənz hɛlp ə lɑt./",
+      "zh": "很多安全的成藥也很有用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are these over the counter?",
+      "phonetic": "/ɑr ðiz ˈoʊvər ðə ˈkaʊntər?/",
+      "zh": "這些是架上直接賣的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, everything on this shelf.",
+      "phonetic": "/jɛs, ˈɛvriˌθɪŋ ɑn ðɪs ʃɛlf./",
+      "zh": "是的，這層架子上的都是。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My body aches when I walk.",
+      "phonetic": "/maɪ ˈbɑdi eɪks wɛn aɪ wɔk./",
+      "zh": "我一走路全身就痠痛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That sounds like the flu.",
+      "phonetic": "/ðæt saʊndz laɪk ðə flu./",
+      "zh": "聽起來像是流感。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I also have shaking chills.",
+      "phonetic": "/aɪ ˈɔlsoʊ hæv ˈʃeɪkɪŋ tʃɪlz./",
+      "zh": "我也冷得一直發抖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep warm and rest well.",
+      "phonetic": "/kip wɔrm ænd rɛst wɛl./",
+      "zh": "記得保暖，好好休息。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I see a doctor today?",
+      "phonetic": "/ʃʊd aɪ si ə ˈdɑktər təˈdeɪ?/",
+      "zh": "我今天該去看醫生嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only if the fever climbs.",
+      "phonetic": "/ˈoʊnli ɪf ðə ˈfivər klaɪmz./",
+      "zh": "高燒一直升才需要去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "When is a fever too high?",
+      "phonetic": "/wɛn ɪz ə ˈfivər tu haɪ?/",
+      "zh": "發燒到多少才算太高？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Call the doctor past thirty-nine.",
+      "phonetic": "/kɔl ðə ˈdɑktər pæst ˈθɜrti naɪn./",
+      "zh": "超過三十九度就聯絡醫生。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you sell something for fever?",
+      "phonetic": "/du ju sɛl ˈsʌmθɪŋ fər ˈfivər?/",
+      "zh": "你們有賣退燒的藥嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, paracetamol or ibuprofen.",
+      "phonetic": "/jɛs, pəˈræsɪtəˌmɑl ɔr ˌɪbjʊˈproʊfən./",
+      "zh": "有，對乙醯氨基酚或布洛芬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Before that, I have some allergies.",
+      "phonetic": "/bɪˈfɔr ðæt, aɪ hæv sʌm əˈlɜrdʒiz./",
+      "zh": "先說，我有一些過敏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, what are you allergic to?",
+      "phonetic": "/ɡʊd, wɑt ɑr ju əˈlɜrdʒɪk tu?/",
+      "zh": "很好，你對什麼過敏？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Penicillin gives me a rash.",
+      "phonetic": "/ˌpɛnəˈsɪlɪn ɡɪvz mi ə ræʃ./",
+      "zh": "盤尼西林會讓我起疹子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Okay, anything else bothers you?",
+      "phonetic": "/oʊˈkeɪ ˈɛniˌθɪŋ ɛls ˈbɑdərz ju?/",
+      "zh": "記下了，還有別的不舒服嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Aspirin makes my face swell.",
+      "phonetic": "/ˈæsprən meɪks maɪ feɪs swɛl./",
+      "zh": "阿斯匹林會讓我臉腫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Any trouble breathing with it?",
+      "phonetic": "/ˈɛni ˈtrʌbəl ˈbriðɪŋ wɪð ɪt?/",
+      "zh": "吃了會呼吸不順嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "No, just an itchy neck.",
+      "phonetic": "/noʊ, dʒʌst ən ˈɪtʃi nɛk./",
+      "zh": "不會，只是脖子發癢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So, paracetamol it is then.",
+      "phonetic": "/soʊ, pəˈræsɪtəˌmɑl ɪt ɪz ðɛn./",
+      "zh": "那就選對乙醯氨基酚。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I take pills for blood pressure.",
+      "phonetic": "/aɪ teɪk pɪlz fər blʌd ˈprɛʃər./",
+      "zh": "我平時在吃血壓藥。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Do you take them every morning?",
+      "phonetic": "/du ju teɪk ðɛm ˈɛvri ˈmɔrnɪŋ?/",
+      "zh": "你每天早上都吃嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, one small white pill.",
+      "phonetic": "/jɛs, wʌn smɔl waɪt pɪl./",
+      "zh": "對，一顆白色小藥錠。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Show me that box if you can.",
+      "phonetic": "/ʃoʊ mi ðæt bɑks ɪf ju kæn./",
+      "zh": "方便的話，把那盒藥拿給我看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I forgot the exact name.",
+      "phonetic": "/aɪ fərˈɡɑt ði ɪɡˈzækt neɪm./",
+      "zh": "我忘記藥的確切名字了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Bring it tomorrow, no rush.",
+      "phonetic": "/brɪŋ ɪt təˈmɑroʊ, noʊ rʌʃ./",
+      "zh": "明天帶來就好，不用急。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can cold medicine mix with it?",
+      "phonetic": "/kæn koʊld ˈmɛdsən mɪks wɪð ɪt?/",
+      "zh": "感冒藥可以和它一起吃嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We will pick a safe one.",
+      "phonetic": "/wi wɪl pɪk ə seɪf wʌn./",
+      "zh": "我們會幫你挑安全的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My throat is worst in the morning.",
+      "phonetic": "/maɪ θroʊt ɪz wɜrst ɪn ðə ˈmɔrnɪŋ./",
+      "zh": "我早上喉嚨最痛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Warm salt water can help.",
+      "phonetic": "/wɔrm sɔlt ˈwɔtər kæn hɛlp./",
+      "zh": "溫鹽水可能有幫助。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Really? How do I do that?",
+      "phonetic": "/ˈrɪli? haʊ du aɪ du ðæt?/",
+      "zh": "真的嗎？要怎麼做？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stir half a spoon of salt.",
+      "phonetic": "/stɜr hæf ə spuːn ʌv sɔlt./",
+      "zh": "把半匙鹽攪進溫水裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Gargle it, then spit it out?",
+      "phonetic": "/ˈɡɑrɡəl ɪt, ðɛn spɪt ɪt aʊt?/",
+      "zh": "先漱口然後吐掉嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Exactly, try it twice daily.",
+      "phonetic": "/ɪɡˈzæktli, traɪ ɪt twaɪs ˈdeɪli./",
+      "zh": "沒錯，一天試著做兩次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now my voice is gone too.",
+      "phonetic": "/naʊ maɪ vɔɪs ɪz ɡɔn tu./",
+      "zh": "現在我連聲音都啞了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Speak softly for a few days.",
+      "phonetic": "/spik ˈsɔftli fər ə fju deɪz./",
+      "zh": "這幾天請小聲說話。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is a humidifier helpful?",
+      "phonetic": "/ɪz ə hjuˈmɪdəˌfaɪər ˈhɛlpfəl?/",
+      "zh": "用加濕器有幫助嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, moisture soothes the throat.",
+      "phonetic": "/jɛs, ˈmɔɪstʃər suðz ðə θroʊt./",
+      "zh": "有，濕潤的空氣能舒緩喉嚨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is the cold medicine?",
+      "phonetic": "/wɛr ɪz ðə koʊld ˈmɛdsən?/",
+      "zh": "感冒藥在哪一個區域？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Right here, cold and flu.",
+      "phonetic": "/raɪt hɪr, koʊld ænd flu./",
+      "zh": "就在這裡，感冒流感區。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Cough or throat first?",
+      "phonetic": "/kɔf ɔr θroʊt fɜrst?/",
+      "zh": "先買咳嗽藥還是喉嚨的？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Treat both, they come together.",
+      "phonetic": "/trit boʊθ, ðeɪ kʌm təˈɡɛðər./",
+      "zh": "兩個一起顧，常一起出現。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have something for congestion?",
+      "phonetic": "/du ju hæv ˈsʌmθɪŋ fər kənˈdʒɛstʃən?/",
+      "zh": "有通鼻塞的藥嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "These tablets clear a blocked nose.",
+      "phonetic": "/ðiz ˈtæbləts klɪr ə blɑkt noʊz./",
+      "zh": "這些藥錠能疏通鼻塞。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sneezing hurts my poor head.",
+      "phonetic": "/ˈsniːzɪŋ hɜrts maɪ pʊr hɛd./",
+      "zh": "打噴嚏時我頭更痛了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "This one eases that too.",
+      "phonetic": "/ðɪs wʌn ˈizəz ðæt tu./",
+      "zh": "這款也能緩解那些不適。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are these safe with my other pill?",
+      "phonetic": "/ɑr ðiz seɪf wɪð maɪ ˈʌðər pɪl?/",
+      "zh": "這跟我那顆血壓藥搭配安全嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "This kind will not clash.",
+      "phonetic": "/ðɪs kaɪnd wɪl nɑt klæʃ./",
+      "zh": "這種不會跟你的血壓藥相衝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I feel a little dizzy now.",
+      "phonetic": "/aɪ fil ə ˈlɪtəl ˈdɪzi naʊ./",
+      "zh": "我現在覺得有點頭暈。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sit down, drink some water.",
+      "phonetic": "/sɪt daʊn, drɪŋk sʌm ˈwɔtər./",
+      "zh": "先坐下，喝點水。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thank you, that is kind.",
+      "phonetic": "/θæŋk ju, ðæt ɪz kaɪnd./",
+      "zh": "謝謝你，你真好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No hurry, take your time.",
+      "phonetic": "/noʊ ˈhɜri, teɪk jɔr taɪm./",
+      "zh": "不用趕，你慢慢來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My son woke up coughing.",
+      "phonetic": "/maɪ sʌn woʊk ʌp ˈkɔfɪŋ./",
+      "zh": "我兒子昨晚咳醒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Does he have a fever?",
+      "phonetic": "/dʌz hi hæv ə ˈfivər?/",
+      "zh": "他有發燒嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "His neck feels warm to me.",
+      "phonetic": "/hɪz nɛk filz wɔrm tu mi./",
+      "zh": "我摸他的脖子熱熱的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Measure him with a thermometer.",
+      "phonetic": "/ˈmɛʒər hɪm wɪð ə θərˈmɑmɪtər./",
+      "zh": "用體溫計幫他量一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Ours stopped working last week.",
+      "phonetic": "/aʊrz stɑpt ˈwɜrkɪŋ læst wiːk./",
+      "zh": "我們那支上週壞掉了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We sell digital ones here.",
+      "phonetic": "/wi sɛl ˈdɪdʒɪtəl wʌnz hɪr./",
+      "zh": "我們這裡賣電子體溫計。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are those easy for a child?",
+      "phonetic": "/ɑr ðoʊz ˈizi fər ə tʃaɪld?/",
+      "zh": "那種給小孩用方便嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, point it and press.",
+      "phonetic": "/jɛs, pɔɪnt ɪt ænd prɛs./",
+      "zh": "方便，對著一按就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will take one today.",
+      "phonetic": "/aɪ wɪl teɪk wʌn təˈdeɪ./",
+      "zh": "那我今天就買一支。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, batteries are inside.",
+      "phonetic": "/ɡʊd, ˈbætəriz ɑr ɪnˈsaɪd./",
+      "zh": "好，電池已經裝在裡面了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should my son rest at home?",
+      "phonetic": "/ʃʊd maɪ sʌn rɛst ət hoʊm?/",
+      "zh": "我兒子該在家休息嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, keep him home from school.",
+      "phonetic": "/jɛs, kip hɪm hoʊm frʌm skuːl./",
+      "zh": "要，這兩天先別上學。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How long must he stay away?",
+      "phonetic": "/haʊ lɔŋ mʌst hi steɪ əˈweɪ?/",
+      "zh": "他得待在家幾天？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A day after the fever ends.",
+      "phonetic": "/ə deɪ ˈæftər ðə ˈfivər ɛndz./",
+      "zh": "退燒之後再多留一天。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What should I get for him?",
+      "phonetic": "/wɑt ʃʊd aɪ ɡɛt fər hɪm?/",
+      "zh": "該為他買點什麼藥？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I suggest a fever tablet first.",
+      "phonetic": "/aɪ səɡˈdʒɛst ə ˈfivər ˈtæblət fɜrst./",
+      "zh": "我建議先吃退燒藥錠。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is this medicine very strong?",
+      "phonetic": "/ɪz ðɪs ˈmɛdsən ˈvɛri strɔŋ?/",
+      "zh": "這藥的藥效會很強嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is gentle and very common.",
+      "phonetic": "/ɪt ɪz ˈdʒɛntəl ænd ˈvɛri ˈkɑmən./",
+      "zh": "它藥性溫和，很常用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What about me, how often?",
+      "phonetic": "/wɑt əˈbaʊt mi, haʊ ˈɔfən?/",
+      "zh": "那我呢？要多久吃一次？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Every six hours, max four doses.",
+      "phonetic": "/ˈɛvri sɪks aʊərz, mæks fɔr ˈdoʊsɪz./",
+      "zh": "每六小時一次，最多四次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I take two tablets now?",
+      "phonetic": "/kæn aɪ teɪk tu ˈtæbləts naʊ?/",
+      "zh": "我現在可以吃兩顆嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One is enough for tonight.",
+      "phonetic": "/wʌn ɪz ɪˈnʌf fər təˈnaɪt./",
+      "zh": "今晚吃一顆就夠了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I take it before meals?",
+      "phonetic": "/ʃʊd aɪ teɪk ɪt bɪˈfɔr milz?/",
+      "zh": "我該飯前吃嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Take it after eating, please.",
+      "phonetic": "/teɪk ɪt ˈæftər ˈitɪŋ, pliz./",
+      "zh": "請在吃完東西後吃。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Why after eating?",
+      "phonetic": "/waɪ ˈæftər ˈitɪŋ?/",
+      "zh": "為什麼要飯後吃？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is gentler on a full stomach.",
+      "phonetic": "/ɪt ɪz ˈdʒɛntələr ɑn ə fʊl ˈstʌmək./",
+      "zh": "胃裡有食物時，藥性比較溫和。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What if I forget a dose?",
+      "phonetic": "/wʌt ɪf aɪ fərˈɡɛt ə doʊz?/",
+      "zh": "如果我漏吃了一次呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Skip it, never double up.",
+      "phonetic": "/skɪp ɪt, ˈnɛvər ˈdʌbəl ʌp./",
+      "zh": "跳過就好，千萬別吃雙倍。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Never take two at once?",
+      "phonetic": "/ˈnɛvər teɪk tu ət wʌns?/",
+      "zh": "絕對不能一次吃兩顆？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Right, wait until the next time.",
+      "phonetic": "/raɪt, weɪt ʌnˈtɪl ðə nɛkst taɪm./",
+      "zh": "對，等下一次的時間再到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does this syrup help my cough?",
+      "phonetic": "/dʌz ðɪs ˈsɪrəp hɛlp maɪ kɔf?/",
+      "zh": "這罐糖漿對我的咳嗽有幫助嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it calms the coughing.",
+      "phonetic": "/jɛs, ɪt kɑmz ðə ˈkɔfɪŋ./",
+      "zh": "有，它能止咳讓你好過些。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Day syrup or night syrup?",
+      "phonetic": "/deɪ ˈsɪrəp ɔr naɪt ˈsɪrəp?/",
+      "zh": "要日間糖漿還是夜間糖漿？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Night syrup helps you sleep.",
+      "phonetic": "/naɪt ˈsɪrəp hɛlps ju slip./",
+      "zh": "夜間的那種能幫你入睡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is it the honey flavor?",
+      "phonetic": "/ɪz ɪt ðə ˈhʌni ˈfleɪvər?/",
+      "zh": "是蜂蜜口味的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, children usually like it.",
+      "phonetic": "/jɛs, ˈtʃɪldrən ˈjuʒəwəli laɪk ɪt./",
+      "zh": "是的，小孩通常喜歡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Why does the night one make me sleepy?",
+      "phonetic": "/waɪ dʌz ðə naɪt wʌn meɪk mi ˈslipi?/",
+      "zh": "為什麼夜間那款會讓我想睡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That effect helps you rest.",
+      "phonetic": "/ðæt ɪˈfɛkt hɛlps ju rɛst./",
+      "zh": "這股睏意正好幫你入睡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is it safe to feel so sleepy?",
+      "phonetic": "/ɪz ɪt seɪf tu fil soʊ ˈslipi?/",
+      "zh": "整天昏昏欲睡，安全嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Do not drive after taking it.",
+      "phonetic": "/du nɑt draɪv ˈæftər ˈteɪkɪŋ ɪt./",
+      "zh": "吃完後千萬別開車。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How about coffee with it?",
+      "phonetic": "/haʊ əˈbaʊt ˈkɔfi wɪð ɪt?/",
+      "zh": "喝咖啡配這個藥行嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Coffee is fine in the morning.",
+      "phonetic": "/ˈkɔfi ɪz faɪn ɪn ðə ˈmɔrnɪŋ./",
+      "zh": "早上喝咖啡沒關係。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What about tea at night?",
+      "phonetic": "/wʌt əˈbaʊt ti ət naɪt?/",
+      "zh": "那晚上喝茶呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Warm tea actually helps a lot.",
+      "phonetic": "/wɔrm ti ˈæktʃuəli hɛlps ə lɑt./",
+      "zh": "溫熱的茶其實很有幫助。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What about my other medicines?",
+      "phonetic": "/wɑt əˈbaʊt maɪ ˈʌðər ˈmɛdsənz?/",
+      "zh": "我其他的藥還能一起吃嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Show me everything you use.",
+      "phonetic": "/ʃoʊ mi ˈɛvriˌθɪŋ ju juz./",
+      "zh": "把你所有在用的都給我看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Only my blood pressure pill.",
+      "phonetic": "/ˈoʊnli maɪ blʌd ˈprɛʃər pɪl./",
+      "zh": "只有我那顆血壓藥。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You can take both today.",
+      "phonetic": "/ju kæn teɪk boʊθ təˈdeɪ./",
+      "zh": "今天兩種都可以吃。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How many days for the fever?",
+      "phonetic": "/haʊ ˈmɛni deɪz fər ðə ˈfivər?/",
+      "zh": "退燒藥要吃幾天？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Use it until the fever drops.",
+      "phonetic": "/juz ɪt ʌnˈtɪl ðə ˈfivər drɑps./",
+      "zh": "燒退了就可以停用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How long before I feel better?",
+      "phonetic": "/haʊ lɔŋ bɪˈfɔr aɪ fil ˈbɛtər?/",
+      "zh": "多久才會比較舒服？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You should feel better by tomorrow.",
+      "phonetic": "/ju ʃʊd fil ˈbɛtər baɪ təˈmɑroʊ./",
+      "zh": "明天開始你就會好一些。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I also take cough medicine?",
+      "phonetic": "/ʃʊd aɪ ˈɔlsoʊ teɪk kɔf ˈmɛdsən?/",
+      "zh": "咳嗽藥也要一起吃嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, this pink bottle works.",
+      "phonetic": "/jɛs, ðɪs pɪŋk ˈbɑtəl wɜrks./",
+      "zh": "要，這瓶粉紅色的很有效。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the dose for adults?",
+      "phonetic": "/wʌt ɪz ðə doʊz fər əˈdʌlts?/",
+      "zh": "成人一次吃多少？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two spoonfuls every four hours.",
+      "phonetic": "/tu ˈspunfʊlz ˈɛvri fɔr aʊərz./",
+      "zh": "每四小時喝兩匙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is a normal spoon okay?",
+      "phonetic": "/ɪz ə ˈnɔrməl spuːn oʊˈkeɪ?/",
+      "zh": "用一般的湯匙可以嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Use this small cup instead.",
+      "phonetic": "/juz ðɪs smɔl kʌp ɪnˈstɛd./",
+      "zh": "請改用這個小量杯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How full should the cup be?",
+      "phonetic": "/haʊ fʊl ʃʊd ðə kʌp bi?/",
+      "zh": "量杯要倒多滿？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fill it to this line.",
+      "phonetic": "/fɪl ɪt tu ðɪs laɪn./",
+      "zh": "倒到這條刻線就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the children's dose?",
+      "phonetic": "/wʌt ɪz ðə ˈtʃɪldrənz doʊz?/",
+      "zh": "兒童的劑量是多少？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It depends on his weight.",
+      "phonetic": "/ɪt dɪˈpɛndz ɑn hɪz weɪt./",
+      "zh": "那要看他的體重。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He weighs about twenty kilos.",
+      "phonetic": "/hi weɪz əˈbaʊt ˈtwɛnti ˈkiloz./",
+      "zh": "他大約二十公斤。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then five milliliters each time.",
+      "phonetic": "/ðɛn faɪv ˈmɪləˌlitərz itʃ taɪm./",
+      "zh": "那麼每次五毫升。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How do I measure milliliters?",
+      "phonetic": "/haʊ du aɪ ˈmɛʒər ˈmɪləˌlitərz?/",
+      "zh": "我要怎麼量毫升？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "This syringe shows the marks.",
+      "phonetic": "/ðɪs səˈrɪndʒ ʃoʊz ðə mɑrks./",
+      "zh": "這支餵藥針筒上有刻度。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Could I just guess the amount?",
+      "phonetic": "/kʊd aɪ dʒʌst ɡɛs ði əˈmaʊnt?/",
+      "zh": "我可以大概猜分量嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Never guess medicine for kids.",
+      "phonetic": "/ˈnɛvər ɡɛs ˈmɛdsən fər kɪdz./",
+      "zh": "小孩的藥量絕對不能猜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is this syrup for his cough?",
+      "phonetic": "/ɪz ðɪs ˈsɪrəp fər hɪz kɔf?/",
+      "zh": "這罐糖漿是給他止咳的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it helps clear mucus.",
+      "phonetic": "/jɛs, ɪt hɛlps klɪr ˈmjuːkəs./",
+      "zh": "是的，它能化開黏液。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How often for my little boy?",
+      "phonetic": "/haʊ ˈɔfən fər maɪ ˈlɪtəl bɔɪ?/",
+      "zh": "我家小子要多久喝一次？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Every eight hours, not more.",
+      "phonetic": "/ˈɛvri eɪt aʊərz, nɑt mɔr./",
+      "zh": "每八小時一次，不能更多。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can he take fever medicine too?",
+      "phonetic": "/kæn hi teɪk ˈfivər ˈmɛdsən tu?/",
+      "zh": "他也能吃退燒藥嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the children's version.",
+      "phonetic": "/jɛs, ðə ˈtʃɪldrənz ˈvɜrʒən./",
+      "zh": "可以，要兒童配方那一款。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is adult paracetamol too strong?",
+      "phonetic": "/ɪz əˈdʌlt pəˈræsɪtəˌmɑl tu strɔŋ?/",
+      "zh": "成人的退燒藥對小孩太強嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Never give adult pills to him.",
+      "phonetic": "/ˈnɛvər ɡɪv əˈdʌlt pɪlz tu hɪm./",
+      "zh": "千萬不要把成人的藥給他吃。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What if he spits it out?",
+      "phonetic": "/wʌt ɪf hi spɪts ɪt aʊt?/",
+      "zh": "如果他喝了又吐出來呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Do not repeat it, wait.",
+      "phonetic": "/du nɑt rɪˈpit ɪt, weɪt./",
+      "zh": "不要補喂，等下一次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the syrup need the fridge?",
+      "phonetic": "/dʌz ðə ˈsɪrəp nid ðə frɪdʒ?/",
+      "zh": "糖漿需要放冰箱嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, a cool shelf is fine.",
+      "phonetic": "/noʊ, ə kul ʃɛlf ɪz faɪn./",
+      "zh": "不用，放在陰涼的架子上就行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What side effects should I watch?",
+      "phonetic": "/wɑt saɪd ɪˈfɛkts ʃʊd aɪ wɑtʃ?/",
+      "zh": "我該注意什麼副作用？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mainly sleepiness and dry mouth.",
+      "phonetic": "/ˈmeɪnli ˈslipinəs ænd draɪ maʊθ./",
+      "zh": "主要是嗜睡和口乾。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will I feel dizzy too?",
+      "phonetic": "/wɪl aɪ fil ˈdɪzi tu?/",
+      "zh": "我也會頭暈嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stand up slowly, that helps.",
+      "phonetic": "/stænd ʌp ˈsloʊli, ðæt hɛlps./",
+      "zh": "慢慢站起來就能緩解。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the night syrup okay for kids?",
+      "phonetic": "/ɪz ðə naɪt ˈsɪrəp oʊˈkeɪ fər kɪdz?/",
+      "zh": "夜間糖漿小孩也能喝嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, choose the non-drowsy one.",
+      "phonetic": "/noʊ, tʃuz ðə nɑn-ˈdraʊzi wʌn./",
+      "zh": "不行，選不會想睡的那款。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which bottle is non-drowsy?",
+      "phonetic": "/wɪtʃ ˈbɑtəl ɪz nɑn-ˈdraʊzi?/",
+      "zh": "哪一瓶是不嗜睡的？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "This green label, for daytime.",
+      "phonetic": "/ðɪs ɡrin ˈleɪbəl, fər ˈdeɪˌtaɪm./",
+      "zh": "綠色標籤這瓶，白天喝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the non-drowsy stop coughing?",
+      "phonetic": "/dʌz ðə nɑn-ˈdraʊzi stɑp ˈkɔfɪŋ?/",
+      "zh": "不嗜睡的那款能止咳嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It controls the chest cough.",
+      "phonetic": "/ɪt kənˈtroʊlz ðə tʃɛst kɔf./",
+      "zh": "它能控制帶痰的咳嗽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My cough is worse at night.",
+      "phonetic": "/maɪ kɔf ɪz wɜrs ət naɪt./",
+      "zh": "我晚上咳得更凶。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then take the night syrup.",
+      "phonetic": "/ðɛn teɪk ðə naɪt ˈsɪrəp./",
+      "zh": "那就喝夜間糖漿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will I sleep well with the night syrup?",
+      "phonetic": "/wɪl aɪ slip wɛl wɪð ðə naɪt ˈsɪrəp?/",
+      "zh": "喝了夜間糖漿我能睡得好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, you will rest well.",
+      "phonetic": "/jɛs, ju wɪl rɛst wɛl./",
+      "zh": "會，你能好好睡一覺。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Any upset stomach with these?",
+      "phonetic": "/ˈɛni ʌpˈsɛt ˈstʌmək wɪð ðiz?/",
+      "zh": "吃了這些會腸胃不適嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Food helps, always eat first.",
+      "phonetic": "/fud hɛlps, ˈɔlweɪz it fɜrst./",
+      "zh": "先吃點東西就能減少刺激。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I avoid alcohol?",
+      "phonetic": "/ʃʊd aɪ əˈvɔɪd ˈælkəˌhɔl?/",
+      "zh": "我要避開酒嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, alcohol adds sleepiness.",
+      "phonetic": "/jɛs, ˈælkəˌhɔl ædz ˈslipinəs./",
+      "zh": "是的，喝酒會讓你更嗜睡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "For how many days in total?",
+      "phonetic": "/fər haʊ ˈmɛni deɪz ɪn ˈtoʊtəl?/",
+      "zh": "總共要吃幾天？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No more than seven days.",
+      "phonetic": "/noʊ mɔr ðæn ˈsɛvən deɪz./",
+      "zh": "不超過七天。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What if the fever comes back?",
+      "phonetic": "/wʌt ɪf ðə ˈfivər kʌmz bæk?/",
+      "zh": "如果發燒又反覆呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "See the doctor that same day.",
+      "phonetic": "/si ðə ˈdɑktər ðæt seɪm deɪ./",
+      "zh": "當天就要去看醫生。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Could I take an extra dose at midnight?",
+      "phonetic": "/kʊd aɪ teɪk ən ˈɛkstrə doʊz ət ˈmɪdˌnaɪt?/",
+      "zh": "半夜可以多加一次嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, six hours between doses.",
+      "phonetic": "/noʊ, sɪks aʊərz bɪtˈwin doʊsɪz./",
+      "zh": "不行，兩次間隔要六小時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Gee, I work the night shift.",
+      "phonetic": "/ɡi, aɪ wɜrk ðə naɪt ʃɪft./",
+      "zh": "唉，我晚上還要輪班。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Take non-drowsy before work.",
+      "phonetic": "/teɪk nɑn-ˈdraʊzi bɪˈfɔr wɜrk./",
+      "zh": "上班前吃不嗜睡的款式。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do these tablets treat a sore throat?",
+      "phonetic": "/du ðiz ˈtæbləts trit ə sɔr θroʊt?/",
+      "zh": "這些藥錠能醫喉嚨痛嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, add the throat lozenges.",
+      "phonetic": "/noʊ, æd ðə θroʊt loʊˈzɛndʒəz./",
+      "zh": "不能，再搭配喉片。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Could I eat after a lozenge?",
+      "phonetic": "/kʊd aɪ it ˈæftər ə ˈlɑzɛndʒ?/",
+      "zh": "含完喉片可以吃東西嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wait fifteen minutes, then eat.",
+      "phonetic": "/weɪt fɪfˈtin ˈmɪnəts, ðɛn it./",
+      "zh": "等十五分鐘再吃。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is a hot bath tonight okay?",
+      "phonetic": "/ɪz ə hɑt bæθ təˈnaɪt oʊˈkeɪ?/",
+      "zh": "今晚我可以泡熱水澡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, steam loosens your chest.",
+      "phonetic": "/jɛs, stim ˈlusənz jɔr tʃɛst./",
+      "zh": "可以，蒸氣能讓胸口舒服。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This is a lot to remember.",
+      "phonetic": "/ðɪs ɪz ə lɑt tu rɪˈmɛmbər./",
+      "zh": "這些真的要記好多。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Write the times on this card.",
+      "phonetic": "/raɪt ðə taɪmz ɑn ðɪs kɑrd./",
+      "zh": "把吃的時間寫在這張卡片上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Perfect, I will post it up.",
+      "phonetic": "/ˈpɜrfɪkt, aɪ wɪl poʊst ɪt ʌp./",
+      "zh": "太好了，我要貼在牆上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Or post it on the fridge door.",
+      "phonetic": "/ɔr poʊst ɪt ɑn ðə frɪdʒ dɔr./",
+      "zh": "貼在冰箱門上也一樣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you sell face masks here?",
+      "phonetic": "/du ju sɛl feɪs mæskz hɪr?/",
+      "zh": "你們這裡賣口罩嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, boxes of ten inside.",
+      "phonetic": "/jɛs, ˈbɑksɪz əv tɛn ɪnˈsaɪd./",
+      "zh": "有，裡面有十片一盒的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which box protects better?",
+      "phonetic": "/wɪtʃ bɑks prəˈtɛkts ˈbɛtər?/",
+      "zh": "哪一盒的防護比較好？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The blue ones fit well.",
+      "phonetic": "/ðə blu wʌnz fɪt wɛl./",
+      "zh": "藍色那盒戴起來很貼臉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are these good for sick people?",
+      "phonetic": "/ɑr ðiz ɡʊd fər sɪk ˈpipəl?/",
+      "zh": "生病的人戴這種合適嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They stop germs from spreading.",
+      "phonetic": "/ðeɪ stɑp dʒɜrmz frʌm ˈsprɛdɪŋ./",
+      "zh": "它們能阻止細菌散播。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will take two boxes.",
+      "phonetic": "/aɪ wɪl teɪk tu ˈbɑksɪz./",
+      "zh": "我要買兩盒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good idea, especially for your son.",
+      "phonetic": "/ɡʊd aɪˈdiə, ɪˈspɛʃəli fər jɔr sʌn./",
+      "zh": "聰明，特別是為了你兒子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you carry vitamin C here?",
+      "phonetic": "/du ju ˈkæri ˈvaɪtəmɪn si hɪr?/",
+      "zh": "你們這裡有維他命 C 嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, tablets or chewables.",
+      "phonetic": "/jɛs, ˈtæbləts ɔr ˈtʃuəbəlz./",
+      "zh": "有，要藥錠還是咀嚼錠？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My son hates big tablets.",
+      "phonetic": "/maɪ sʌn heɪts bɪɡ ˈtæbləts./",
+      "zh": "我兒子很討厭大顆藥錠。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "These orange ones taste good.",
+      "phonetic": "/ðiz ˈɔrɪndʒ wʌnz teɪst ɡʊd./",
+      "zh": "這橘色的咀嚼錠味道很好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do chewables work as well?",
+      "phonetic": "/du ˈtʃuəbəlz wɜrk æz wɛl?/",
+      "zh": "咀嚼錠的效果一樣好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same dose, one every morning.",
+      "phonetic": "/seɪm doʊz, wʌn ˈɛvri ˈmɔrnɪŋ./",
+      "zh": "效果一樣，每天早上吃一顆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is vitamin D also useful?",
+      "phonetic": "/ɪz ˈvaɪtəmɪn di ˈɔlsoʊ ˈjusfəl?/",
+      "zh": "維他命 D 也有用嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is good for winter days.",
+      "phonetic": "/ɪt ɪz ɡʊd fər ˈwɪntər deɪz./",
+      "zh": "在寒冷的冬天對身體有幫助。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Lately, I rarely go outside.",
+      "phonetic": "/ˈleɪtli, aɪ ˈrɛrli ɡoʊ ˌaʊtˈsaɪd./",
+      "zh": "我最近很少出門。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then vitamin D suits you.",
+      "phonetic": "/ðɛn ˈvaɪtəmɪn di suts ju./",
+      "zh": "那維他命 D 很適合你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you sell vapor rub?",
+      "phonetic": "/du ju sɛl ˈveɪpər rʌb?/",
+      "zh": "你們有薄荷通鼻膏嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, right next to the syrups.",
+      "phonetic": "/jɛs, raɪt nɛkst tu ðə ˈsɪrəps./",
+      "zh": "有，就在糖漿那排旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where do you put it on?",
+      "phonetic": "/wɛr du ju pʊt ɪt ɑn?/",
+      "zh": "要塗在身體哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Chest and neck, before sleep.",
+      "phonetic": "/tʃɛst ænd nɛk, bɪˈfɔr slip./",
+      "zh": "睡覺前塗胸口和脖子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does it help the cough too?",
+      "phonetic": "/dʌz ɪt hɛlp ðə kɔf tu?/",
+      "zh": "對咳嗽也有幫助嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The steam opens your nose.",
+      "phonetic": "/ðə stim ˈoʊpənz jɔr noʊz./",
+      "zh": "它的蒸氣能讓鼻子通暢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is this balm safe for kids?",
+      "phonetic": "/ɪz ði bɑm seɪf fər kɪdz?/",
+      "zh": "這款藥膏小孩能用嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, from two years up.",
+      "phonetic": "/jɛs, frʌm tu jɪrz ʌp./",
+      "zh": "可以，兩歲以上適用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then get me one small jar.",
+      "phonetic": "/ðɛn ɡɛt mi wʌn smɔl dʒɑr./",
+      "zh": "那就拿一罐小的給我。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here, this scent is gentle too.",
+      "phonetic": "/hɪr, ðɪs sɛnt ɪz ˈdʒɛntəl tu./",
+      "zh": "給你，這個氣味也不嗆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is the first aid section?",
+      "phonetic": "/wɛr ɪz ðə fɜrst eɪd ˈsɛkʃən?/",
+      "zh": "急救用品區在哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Bandages are right by masks.",
+      "phonetic": "/ˈbændɪdʒɪz ɑr raɪt baɪ mæskz./",
+      "zh": "繃帶創可貼就在口罩旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I need small band-aids.",
+      "phonetic": "/aɪ nid smɔl ˈbændˌeɪdz./",
+      "zh": "我需要小號的創可貼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "These are perfect for kids.",
+      "phonetic": "/ðiz ɑr ˈpɜrfɪkt fər kɪdz./",
+      "zh": "這盒給小孩用剛剛好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have antiseptic cream?",
+      "phonetic": "/du ju hæv ˌæntɪˈsɛptɪk krim?/",
+      "zh": "你們有消毒藥膏嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it keeps germs away.",
+      "phonetic": "/jɛs, ɪt kips dʒɜrmz əˈweɪ./",
+      "zh": "有，它能擋住細菌。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What about an anti-inflammatory ointment?",
+      "phonetic": "/wʌt əˈbaʊt ən ˌæntiɪnˈflæmətɔri ˈɔɪntmənt?/",
+      "zh": "那消炎的藥膏呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "This tube is for sore muscles.",
+      "phonetic": "/ðɪs tjub ɪz fər sɔr ˈmʌsəlz./",
+      "zh": "這條藥膏是給肌肉痠痛的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My shoulder hurts from coughing.",
+      "phonetic": "/maɪ ˈʃoʊldər hɜrts frʌm ˈkɔfɪŋ./",
+      "zh": "我咳到肩膀都在痛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rub a little on at night.",
+      "phonetic": "/rʌb ə ˈlɪtəl ɑn ət naɪt./",
+      "zh": "晚上在該處塗抹一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the cream sting?",
+      "phonetic": "/dʌz ðə krim stɪŋ?/",
+      "zh": "這款藥膏會刺痛嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only for the first minute.",
+      "phonetic": "/ˈoʊnli fər ðə fɜrst ˈmɪnɪt./",
+      "zh": "只有剛擦上的第一會兒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Could I use it on my son?",
+      "phonetic": "/kʊd aɪ juz ɪt ɑn maɪ sʌn?/",
+      "zh": "我可以擦在我兒子身上嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Not under two years old.",
+      "phonetic": "/nɑt ˈʌndər tu jɪrz oʊld./",
+      "zh": "兩歲以下的小孩不能用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He is five, so that is okay?",
+      "phonetic": "/hi ɪz faɪv, soʊ ðæt ɪz oʊˈkeɪ?/",
+      "zh": "他五歲了，所以沒問題？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, a thin layer only.",
+      "phonetic": "/jɛs, ə θɪn ˈleɪər ˈoʊnli./",
+      "zh": "沒問題，只塗薄薄一層。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do I pay by card here?",
+      "phonetic": "/du aɪ peɪ baɪ kɑrd hɪr?/",
+      "zh": "我可以在這裡刷卡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Of course, tap or insert.",
+      "phonetic": "/ʌv kɔrs, tæp ɔr ɪnˈsɜrt./",
+      "zh": "當然，感應或插卡都行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does this store take insurance?",
+      "phonetic": "/dʌz ðɪs stɔr teɪk ɪnˈʃʊrəns?/",
+      "zh": "這間店可以用健保嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, do you have your card?",
+      "phonetic": "/jɛs, du ju hæv jɔr kɑrd?/",
+      "zh": "可以，你有帶保險卡嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good, I brought my insurance card.",
+      "phonetic": "/ɡʊd, aɪ brɔt maɪ ɪnˈʃʊrəns kɑrd./",
+      "zh": "我有帶保險卡來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let me check the coverage.",
+      "phonetic": "/lɛt mi tʃɛk ðə ˈkʌvərɪdʒ./",
+      "zh": "讓我查一下給付範圍。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will they cover these medicines?",
+      "phonetic": "/wɪl ðeɪ ˈkʌvər ðiz ˈmɛdsənz?/",
+      "zh": "保險會付這些藥錢嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only some items are covered.",
+      "phonetic": "/ˈoʊnli sʌm ˈaɪtəmz ɑr ˈkʌvərd./",
+      "zh": "只有部分項目有給付。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the ointment covered too?",
+      "phonetic": "/ɪz ði ˈɔɪntmənt ˈkʌvərd tu?/",
+      "zh": "藥膏也有給付嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, that one is cash.",
+      "phonetic": "/noʊ, ðæt wʌn ɪz kæʃ./",
+      "zh": "沒有，那項要自己付現金。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How much will insurance cover?",
+      "phonetic": "/haʊ mʌtʃ wɪl ɪnˈʃʊrəns ˈkʌvər?/",
+      "zh": "保險大概給付多少？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It already pays sixty percent.",
+      "phonetic": "/ɪt ɔlˈrɛdi peɪz ˈsɪksti pərˈsɛnt./",
+      "zh": "保險已經付六成。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sixty percent, that helps.",
+      "phonetic": "/ˈsɪksti pərˈsɛnt, ðæt hɛlps./",
+      "zh": "六成，那減輕不少。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Do you have our membership card?",
+      "phonetic": "/du ju hæv aʊər ˈmɛmbərʃɪp kɑrd?/",
+      "zh": "你有我們的會員卡嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What does membership give me?",
+      "phonetic": "/wʌt dʌz ˈmɛmbərʃɪp ɡɪv mi?/",
+      "zh": "會員對我有什麼好處？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Five percent off every visit.",
+      "phonetic": "/faɪv pərˈsɛnt ɔf ˈɛvri ˈvɪzɪt./",
+      "zh": "每次消費打九五折。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I sign up today?",
+      "phonetic": "/kæn aɪ saɪn ʌp təˈdeɪ?/",
+      "zh": "我今天可以申請嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, your phone number, please.",
+      "phonetic": "/ʃʊr, jɔr foʊn ˈnʌmbər, pliz./",
+      "zh": "好啊，請給我你的電話。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the membership free?",
+      "phonetic": "/ɪz ðə ˈmɛmbərʃɪp fri?/",
+      "zh": "會員是免費的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it costs nothing.",
+      "phonetic": "/jɛs, ɪt kɔsts ˈnʌθɪŋ./",
+      "zh": "是的，完全不用錢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do members get coupon texts?",
+      "phonetic": "/du ˈmɛmbərz ɡɛt ˈkuˌpɑn tɛksts?/",
+      "zh": "會員會收到折價券訊息嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sometimes, on winter medicines.",
+      "phonetic": "/ˈsʌmˌtaɪmz, ɑn ˈwɪntər ˈmɛdsənz./",
+      "zh": "有時會，是冬天藥品的優惠。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Okay, please sign me up.",
+      "phonetic": "/oʊˈkeɪ, pliz saɪn mi ʌp./",
+      "zh": "好，請幫我申請一個。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Done, here you go.",
+      "phonetic": "/dʌn, hɪr ju ɡoʊ./",
+      "zh": "辦好了，給您。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So how much is it now?",
+      "phonetic": "/soʊ haʊ mʌtʃ ɪz ɪt naʊ?/",
+      "zh": "那現在總共要付多少？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "With both, it is eighteen twenty.",
+      "phonetic": "/wɪð boʊθ, ɪt ɪz eɪˈtin ˈtwɛnti./",
+      "zh": "含保險和會員折扣，是十八塊二。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Oh, could I have a bag?",
+      "phonetic": "/oʊ, kʊd aɪ hæv ə bæɡ?/",
+      "zh": "喔，能給我一個袋子嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here, is one big enough?",
+      "phonetic": "/hɪr, ɪz wʌn bɪɡ ɪˈnʌf?/",
+      "zh": "給，這個夠大了嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you sell water bottles?",
+      "phonetic": "/du ju sɛl ˈwɔtər ˈbɑtəlz?/",
+      "zh": "你們賣瓶裝水嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The cold ones are by the door.",
+      "phonetic": "/ðə koʊld wʌnz ɑr baɪ ðə dɔr./",
+      "zh": "冰的放在門口旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Water helps me take my pills.",
+      "phonetic": "/ˈwɔtər hɛlps mi teɪk maɪ pɪlz./",
+      "zh": "我需要配藥的水。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Or use this paper cup.",
+      "phonetic": "/ɔr juz ðɪs ˈpeɪpər kʌp./",
+      "zh": "或是用這個紙杯就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I take one right now?",
+      "phonetic": "/ʃʊd aɪ teɪk wʌn raɪt naʊ?/",
+      "zh": "我現在就可以先吃一顆嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Eat something first, please.",
+      "phonetic": "/it ˈsʌmθɪŋ fɜrst, pliz./",
+      "zh": "請先吃點東西再服用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Okay, this tablet is so big.",
+      "phonetic": "/oʊˈkeɪ, ðɪs ˈtæblət ɪz soʊ bɪɡ./",
+      "zh": "好吧，這顆藥錠真的好大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Swallow it with cool water.",
+      "phonetic": "/ˈswɑloʊ ɪt wɪð kul ˈwɔtər./",
+      "zh": "用涼一點的水吞下去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have cough drops too?",
+      "phonetic": "/du ju hæv kɔf drɑps tu?/",
+      "zh": "你們也有止咳喉糖嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The honey flavor is popular.",
+      "phonetic": "/ðə ˈhʌni ˈfleɪvər ɪz ˈpɑpjələr./",
+      "zh": "蜂蜜口味的那款很受歡迎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A tissue box, where is it?",
+      "phonetic": "/ə ˈtɪʃu bɑks, wɛr ɪz ɪt?/",
+      "zh": "紙巾盒在哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "End of aisle three.",
+      "phonetic": "/ɛnd ʌv aɪl θri./",
+      "zh": "在第三走道的盡頭。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "These tissues are extra soft.",
+      "phonetic": "/ðiz ˈtɪʃuz ɑr ˈɛkstrə sɔft./",
+      "zh": "這款紙巾特別柔軟。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, good for red noses.",
+      "phonetic": "/jɛs, ɡʊd fər rɛd ˈnoʊzɪz./",
+      "zh": "是的，對擦紅的鼻子很好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you carry saline spray?",
+      "phonetic": "/du ju ˈkæri səˈlin spreɪ?/",
+      "zh": "你們有生理食鹽水噴劑嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it clears out the nose.",
+      "phonetic": "/jɛs, ɪt klɪrz aʊt ðə noʊz./",
+      "zh": "有，它可以沖洗鼻腔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is saline safe for children?",
+      "phonetic": "/ɪz səˈlin seɪf fər ˈtʃɪldrən?/",
+      "zh": "食鹽水噴劑對小孩安全嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, even for babies.",
+      "phonetic": "/jɛs, ˈivən fər ˈbeɪbiz./",
+      "zh": "安全，連嬰兒都能用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will add one then.",
+      "phonetic": "/aɪ wɪl æd wʌn ðɛn./",
+      "zh": "那我也加購一瓶。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nice pick for stuffy nights.",
+      "phonetic": "/naɪs pɪk fər ˈstʌfi naɪts./",
+      "zh": "鼻塞的夜裡選它很剛好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is everything scanned already?",
+      "phonetic": "/ɪz ˈɛvriˌθɪŋ skænd ɔlˈrɛdi?/",
+      "zh": "所有東西都掃好了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the total shows here.",
+      "phonetic": "/jɛs, ðə ˈtoʊtəl ʃoʊz hɪr./",
+      "zh": "是的，總額顯示在這裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A receipt, please.",
+      "phonetic": "/ə rɪˈsit, pliz./",
+      "zh": "請給我一張收據。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here you go, keep it safe.",
+      "phonetic": "/hɪr ju ɡoʊ, kip ɪt seɪf./",
+      "zh": "給你，收好別弄丟。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, I need it for insurance.",
+      "phonetic": "/jɛs, aɪ nid ɪt fər ɪnˈʃʊrəns./",
+      "zh": "我留著要申請保險用。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Smart, the receipt is in your bag.",
+      "phonetic": "/smɑrt, ðə rɪˈsit ɪz ɪn jɔr bæɡ./",
+      "zh": "想得周到，收據已經放在袋子裡了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Two syrups and all the tablets?",
+      "phonetic": "/tu ˈsɪrəps ænd ɔl ðə ˈtæbləts?/",
+      "zh": "兩瓶糖漿和所有藥錠都在嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, everything is inside.",
+      "phonetic": "/jɛs, ˈɛvriˌθɪŋ ɪz ɪnˈsaɪd./",
+      "zh": "是的，全部都在裡面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Back home, we read the labels.",
+      "phonetic": "/bæk hoʊm, wi rid ðə ˈleɪbəlz./",
+      "zh": "回到家，我們核對藥瓶標籤。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Six p.m., right after dinner.",
+      "phonetic": "/sɪks pi ɛm, raɪt ˈæftər ˈdɪnər./",
+      "zh": "下午六點，就在晚餐後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you set an alarm?",
+      "phonetic": "/dɪd ju sɛt ən əˈlɑrm?/",
+      "zh": "你有設鬧鐘嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, nine p.m. too.",
+      "phonetic": "/jɛs, naɪn pi ɛm tu./",
+      "zh": "有，也設了晚上九點的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let us write the times down.",
+      "phonetic": "/lɛt ʌs raɪt ðə taɪmz daʊn./",
+      "zh": "我們把吃藥時間寫下來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will use this fridge card.",
+      "phonetic": "/aɪ wɪl juz ðɪs frɪdʒ kɑrd./",
+      "zh": "我來用這張冰箱貼卡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "After dinner, one fever tablet.",
+      "phonetic": "/ˈæftər ˈdɪnər, wʌn ˈfivər ˈtæblət./",
+      "zh": "晚餐後吃一顆退燒錠。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And the syrup after that.",
+      "phonetic": "/ænd ðə ˈsɪrəp ˈæftər ðæt./",
+      "zh": "接著再喝止咳糖漿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did he take his medicine?",
+      "phonetic": "/dɪd hi teɪk hɪz ˈmɛdsən?/",
+      "zh": "兒子吃過藥了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, all five milliliters.",
+      "phonetic": "/jɛs, ɔl faɪv ˈmɪləˌlitərz./",
+      "zh": "喝了，整整五毫升。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good, now measure his temperature.",
+      "phonetic": "/ɡʊd, naʊ ˈmɛʒər hɪz ˈtɛmprətʃər./",
+      "zh": "好，現在幫他量體溫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It reads thirty-seven point eight.",
+      "phonetic": "/ɪt ridz ˈθɜrti sɛvən pɔɪnt eɪt./",
+      "zh": "顯示三十七點八度。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good, the fever is coming down.",
+      "phonetic": "/ɡʊd, ðə ˈfivər ɪz ˈkʌmɪŋ daʊn./",
+      "zh": "好，燒正在慢慢退。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The medicine is working, great.",
+      "phonetic": "/ðə ˈmɛdsən ɪz ˈwɜrkɪŋ, ɡreɪt./",
+      "zh": "藥起作用了，太好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Write it down with the time.",
+      "phonetic": "/raɪt ɪt daʊn wɪð ðə taɪm./",
+      "zh": "把讀數和時間一起記錄。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is on the chart now.",
+      "phonetic": "/ɪt ɪz ɑn ðə tʃɑrt naʊ./",
+      "zh": "我已經寫在記錄表上了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Check again before going to bed.",
+      "phonetic": "/tʃɛk əˈɡɛn bɪˈfɔr ˈɡoʊɪŋ tu bɛd./",
+      "zh": "睡覺前再量一次。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will wake him gently.",
+      "phonetic": "/aɪ wɪl weɪk hɪm ˈdʒɛntli./",
+      "zh": "我會輕輕地叫他起來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should we keep the window closed?",
+      "phonetic": "/ʃʊd wi kip ðə ˈwɪnˌdoʊ kloʊzd?/",
+      "zh": "窗戶要不要關著？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is chilly outside today.",
+      "phonetic": "/ɪt ɪz ˈtʃɪli ˌaʊtˈsaɪd təˈdeɪ./",
+      "zh": "今天外面天氣挺涼的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He is sweating through his shirt.",
+      "phonetic": "/hi ɪz ˈswɛtɪŋ θru hɪz ʃɜrt./",
+      "zh": "他出汗把衣服都濕透了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Change it, keep him dry.",
+      "phonetic": "/tʃeɪndʒ ɪt, kip hɪm draɪ./",
+      "zh": "幫他換掉，保持身體乾爽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Fever means the body fights.",
+      "phonetic": "/ˈfivər minz ðə ˈbɑdi faɪts./",
+      "zh": "發燒代表身體在對抗病毒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sleep helps the body heal.",
+      "phonetic": "/slip hɛlps ðə ˈbɑdi hil./",
+      "zh": "睡眠能幫身體恢復。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What about some juice for him?",
+      "phonetic": "/wɑt əˈbaʊt sʌm dʒus fər hɪm?/",
+      "zh": "可以給他喝點果汁嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Diluted juice is fine too.",
+      "phonetic": "/dɪˈlutɪd dʒus ɪz faɪn tu./",
+      "zh": "兌水的果汁也可以。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "His cough sounds looser now.",
+      "phonetic": "/hɪz kɔf saʊndz ˈlusər naʊ./",
+      "zh": "他的咳嗽聽起來比較有痰了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The syrup helps him sleep.",
+      "phonetic": "/ðə ˈsɪrəp hɛlps hɪm slip./",
+      "zh": "糖漿讓他睡得安穩些。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Why does the bottle say shake?",
+      "phonetic": "/waɪ dʌz ðə ˈbɑtəl seɪ ʃeɪk?/",
+      "zh": "為什麼瓶身寫著「搖勻」？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Shake it before every dose.",
+      "phonetic": "/ʃeɪk ɪt bɪˈfɔr ˈɛvri doʊz./",
+      "zh": "每次喝之前都要搖一搖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let us keep the syrup on the shelf.",
+      "phonetic": "/lɛt ʌs kip ðə ˈsɪrəp ɑn ðə ʃɛlf./",
+      "zh": "把糖漿收在櫃子上吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Away from sunlight and heat.",
+      "phonetic": "/əˈweɪ frʌm ˈsʌnˌlaɪt ænd hit./",
+      "zh": "要避開陽光和高溫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should medicine stay in the fridge?",
+      "phonetic": "/ʃʊd ˈmɛdsən steɪ ɪn ðə frɪdʒ?/",
+      "zh": "藥需要放冰箱保存嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only if the label says so.",
+      "phonetic": "/ˈoʊnli ɪf ðə ˈleɪbəl sɛz soʊ./",
+      "zh": "只有標籤特別說明才要。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Keep all boxes out of reach.",
+      "phonetic": "/kip ɔl ˈbɑksəz aʊt ʌv ritʃ./",
+      "zh": "所有藥品都要放拿不到的地方。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The high cupboard is best.",
+      "phonetic": "/ðə haɪ ˈkʌbərd ɪz bɛst./",
+      "zh": "放高處的櫥櫃最合適。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Children should not find pills.",
+      "phonetic": "/ˈtʃɪldrən ʃʊd nɑt faɪnd pɪlz./",
+      "zh": "小孩子不應該翻到藥錠。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Always close the child cap.",
+      "phonetic": "/ˈɔlweɪz kloʊz ðə tʃaɪld kæp./",
+      "zh": "兒童安全蓋每次都要轉緊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What do we do with leftovers?",
+      "phonetic": "/wʌt du wi du wɪð ˈlɛfˌtoʊvərz?/",
+      "zh": "吃剩的藥該怎麼處理？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Check the date, then keep the box.",
+      "phonetic": "/tʃɛk ðə deɪt, ðɛn kip ðə bɑks./",
+      "zh": "先確認效期，再決定留不留。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do these tablets expire soon?",
+      "phonetic": "/du ðiz ˈtæbləts ɪkˈspaɪər sun?/",
+      "zh": "這些藥錠快過期了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Look, the date is printed here.",
+      "phonetic": "/lʊk, ðə deɪt ɪz ˈprɪntɪd hɪr./",
+      "zh": "你看，效期印在這裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "When was this bottle opened?",
+      "phonetic": "/wɛn wʌz ðɪs ˈbɑtəl ˈoʊpənd?/",
+      "zh": "這瓶是什麼時候開的？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Write today's date on it.",
+      "phonetic": "/raɪt təˈdeɪz deɪt ɑn ɪt./",
+      "zh": "在瓶身寫上今天的日期。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Opened syrup lasts one month.",
+      "phonetic": "/ˈoʊpənd ˈsɪrəp læsts wʌn mʌnθ./",
+      "zh": "開封的糖漿只能放一個月。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "After that, throw it away.",
+      "phonetic": "/ˈæftər ðæt, θroʊ ɪt əˈweɪ./",
+      "zh": "過了就得直接丟棄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Old medicine can hurt people.",
+      "phonetic": "/oʊld ˈmɛdsən kæn hɜrt ˈpipəl./",
+      "zh": "過期的藥可能會傷人。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pharmacies take them back safely.",
+      "phonetic": "/ˈfɑrməsɪz teɪk ðɛm bæk ˈseɪfli./",
+      "zh": "藥局會安全收回舊藥。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We could bring them to the store.",
+      "phonetic": "/wi kʊd brɪŋ ðɛm tu ðə stɔr./",
+      "zh": "我們可以把它們拿到藥局。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, they collect old medicine.",
+      "phonetic": "/jɛs, ðeɪ kəˈlɛkt oʊld ˈmɛdsən./",
+      "zh": "對，他們會回收過期藥品。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I still have last winter's pills.",
+      "phonetic": "/aɪ stɪl hæv læst ˈwɪntərz pɪlz./",
+      "zh": "我還有去年冬天的藥。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Do not take them yet.",
+      "phonetic": "/du nɑt teɪk ðɛm jɛt./",
+      "zh": "先別吃那些藥。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "They still look fine to me.",
+      "phonetic": "/ðeɪ stɪl lʊk faɪn tu mi./",
+      "zh": "但在我看來它們還好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They may still be unsafe.",
+      "phonetic": "/ðeɪ meɪ stɪl bi ˌʌnˈseɪf./",
+      "zh": "但它們也許已經不安全。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hello, my cough is not better.",
+      "phonetic": "/hɛˈloʊ, maɪ kɔf ɪz nɑt ˈbɛtər./",
+      "zh": "你好，我的咳嗽沒有好轉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "How many days did you take it?",
+      "phonetic": "/haʊ ˈmɛni deɪz dɪd ju teɪk ɪt?/",
+      "zh": "你吃了幾天了？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It has been three full days.",
+      "phonetic": "/ɪt hæz bɪn θri fʊl deɪz./",
+      "zh": "已經整整三天了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Any fever left today?",
+      "phonetic": "/ˈɛni ˈfivər lɛft təˈdeɪ?/",
+      "zh": "今天還發燒嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Last night, the fever came back.",
+      "phonetic": "/læst naɪt, ðə ˈfivər keɪm bæk./",
+      "zh": "昨天晚上又開始燒了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You should see the doctor.",
+      "phonetic": "/ju ʃʊd si ðə ˈdɑktər./",
+      "zh": "你應該去一趟診所。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I stop the syrup?",
+      "phonetic": "/ʃʊd aɪ stɑp ðə ˈsɪrəp?/",
+      "zh": "糖漿要先停用嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, keep taking it today.",
+      "phonetic": "/noʊ, kip ˈteɪkɪŋ ɪt təˈdeɪ./",
+      "zh": "不用，今天照常吃。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do I need a stronger one?",
+      "phonetic": "/du aɪ nid ə ˈstrɔŋgər wʌn?/",
+      "zh": "我需要更強的藥嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The doctor may give one.",
+      "phonetic": "/ðə ˈdɑktər meɪ ɡɪv wʌn./",
+      "zh": "醫生也許會開給你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will my old prescription still work?",
+      "phonetic": "/wɪl maɪ oʊld ˌpriskrɪpˈʃən stɪl wɜrk?/",
+      "zh": "我那張舊處方還可以用嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, that one expired.",
+      "phonetic": "/noʊ, ðæt wʌn ɪkˈspɪrd./",
+      "zh": "不行，那一張已經過期了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is there a doctor near here?",
+      "phonetic": "/ɪz ðɛr ə ˈdɑktər nɪr hɪr?/",
+      "zh": "這附近有醫生嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The clinic is two blocks away.",
+      "phonetic": "/ðə ˈklɪnɪk ɪz tu blɑks əˈweɪ./",
+      "zh": "診所在兩個街口外。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I go right now?",
+      "phonetic": "/ʃʊd aɪ ɡoʊ raɪt naʊ?/",
+      "zh": "我要立刻就過去嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, before the fever rises.",
+      "phonetic": "/jɛs, bɪˈfɔr ðə ˈfivər ˈraɪzɪz./",
+      "zh": "對，趁體溫再升高前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What should I tell the doctor?",
+      "phonetic": "/wʌt ʃʊd aɪ tɛl ðə ˈdɑktər?/",
+      "zh": "我該跟醫生說什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Bring this temperature chart too.",
+      "phonetic": "/brɪŋ ðɪs ˈtɛmprətʃər tʃɑrt tu./",
+      "zh": "把這張體溫表也帶去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It shows every reading clearly.",
+      "phonetic": "/ɪt ʃoʊz ˈɛvri ˈridɪŋ ˈklɪrli./",
+      "zh": "每次量到的都記錄得很清楚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Doctors love written records.",
+      "phonetic": "/ˈdɑktərz lʌv ˈrɪtn ˈrɛkərdz./",
+      "zh": "醫生最愛這種書面記錄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are you open until nine?",
+      "phonetic": "/ɑr ju ˈoʊpən ʌnˈtɪl naɪn?/",
+      "zh": "你們開到九點嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, until nine every day.",
+      "phonetic": "/jɛs, ʌnˈtɪl naɪn ˈɛvri deɪ./",
+      "zh": "是的，每天開到九點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "These masks are the wrong size.",
+      "phonetic": "/ðiz mæskz ɑr ðə rɔŋ saɪz./",
+      "zh": "這幾盒口罩尺寸不對。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Are the boxes still sealed?",
+      "phonetic": "/ɑr ðə ˈbɑksəz stɪl sild?/",
+      "zh": "盒子都還沒有拆封嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, I did not open them.",
+      "phonetic": "/jɛs, aɪ dɪd nɑt ˈoʊpən ðɛm./",
+      "zh": "對，我完全沒打開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then returns are no problem.",
+      "phonetic": "/ðɛn rɪˈtɜrnz ɑr noʊ ˈprɑbləm./",
+      "zh": "那退貨完全沒問題。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Here, I kept the receipt.",
+      "phonetic": "/hɪr, aɪ kɛpt ðə rɪˈsit./",
+      "zh": "給，我一直留著收據。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One moment, I will process it.",
+      "phonetic": "/wʌn ˈmoʊmənt, aɪ wɪl ˈprɑˌsɛs ɪt./",
+      "zh": "稍等，我幫你處理。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I get cash back?",
+      "phonetic": "/kæn aɪ ɡɛt kæʃ bæk?/",
+      "zh": "可以退現金給我嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It returns to your card.",
+      "phonetic": "/ɪt rɪˈtɜrnz tu jɔr kɑrd./",
+      "zh": "款項會退回你的卡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The ointment tube is open, though.",
+      "phonetic": "/ði ˈɔɪntmənt tjub ɪz ˈoʊpən, ðoʊ./",
+      "zh": "不過那條藥膏已經拆了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Opened items cannot be returned.",
+      "phonetic": "/ˈoʊpənd ˈaɪtəmz ˈkænɑt bi rɪˈtərnd./",
+      "zh": "拆封的商品不能退貨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Understood, I will keep it.",
+      "phonetic": "/ˌʌndərˈstʊd, aɪ wɪl kip ɪt./",
+      "zh": "了解，那我就留下。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It works for shoulder pain.",
+      "phonetic": "/ɪt wɜrks fər ˈʃoʊldər peɪn./",
+      "zh": "它對肩膀痛很管用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have smaller masks?",
+      "phonetic": "/du ju hæv ˈsmɔlər mæskz?/",
+      "zh": "你們有更小尺寸的口罩嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "These are the smallest we sell.",
+      "phonetic": "/ðiz ɑr ðə ˈsmɔləst wi sɛl./",
+      "zh": "這已經是我們最小的了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My son outgrew his old ones.",
+      "phonetic": "/maɪ sʌn ˌaʊtˈɡru hɪz oʊld wʌnz./",
+      "zh": "我兒子長大了，舊口罩戴不下。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try these adjustable ear loops.",
+      "phonetic": "/traɪ ðiz əˈdʒʌstəbəl ɪr lups./",
+      "zh": "試試這盒耳掛可調的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "And some more tissues, please.",
+      "phonetic": "/ænd sʌm mɔr ˈtɪʃuz, pliz./",
+      "zh": "順便再買點紙巾。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Aisle three, by the water.",
+      "phonetic": "/aɪl θri, baɪ ðə ˈwɔtər./",
+      "zh": "第三走道，礦泉水旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One last question about the syrup.",
+      "phonetic": "/wʌn læst ˈkwɛstʃən əˈbaʊt ðə ˈsɪrəp./",
+      "zh": "關於糖漿的最後一個問題。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, what do you need?",
+      "phonetic": "/jɛs, wʌt du ju nid?/",
+      "zh": "好，你要問什麼？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can my son still take his?",
+      "phonetic": "/kæn maɪ sʌn stɪl teɪk hɪz?/",
+      "zh": "我兒子還能接著喝他那瓶嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only until the printed date.",
+      "phonetic": "/ˈoʊnli ʌnˈtɪl ðə ˈprɪntɪd deɪt./",
+      "zh": "只能喝到瓶上的期限。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for checking everything.",
+      "phonetic": "/θæŋks fər ˈtʃɛkɪŋ ˈɛvriˌθɪŋ./",
+      "zh": "謝謝你幫我們樣樣確認。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Get well soon, both of you.",
+      "phonetic": "/ɡɛt wɛl sun, boʊθ ʌv ju./",
+      "zh": "祝你們兩人都早日康復。"
+    }
+  ]
+}

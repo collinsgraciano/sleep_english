@@ -1,0 +1,2458 @@
+{
+  "title": "Everyday Phrases — Picking Up Takeout",
+  "title_zh": "取外帶",
+  "scene_zh": "取外帶 · 情境對話",
+  "title_quote": "Let's order takeout tonight.",
+  "cefr": "A1",
+  "youtube_title": "【睡前英文聽力】🥡 實用取外帶必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A1 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — Picking Up Takeout",
+  "youtube_description": "睡著學英文！這部影片收錄實用取外帶情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫），從手機點餐、到店取餐、處理漏餐錯餐，到回家開吃與退款回饋，不用背，睡前聽就會。重複播放，讓英文自然進入你的大腦。👍 想學更多生活場景，請留言告訴我！別忘了訂閱+按讚。 #英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical Picking Up Takeout phrase pairs (each pair: male normal speed → female slow speed → combined dialogue), covering app ordering, counter pickup, fixing missing items, and enjoying dinner at home. No memorization needed—just listen before bed and absorb naturally. If you want more real-life scenarios, leave a comment! Subscribe and like!",
+  "youtube_tags": [
+    "英文聽力",
+    "睡前英文",
+    "取外帶英文",
+    "takeout English",
+    "English listening",
+    "Sleep learning",
+    "A1 English",
+    "常用英文短語",
+    "零基礎英文",
+    "慢速英文",
+    "英文口語",
+    "Learn English",
+    "English for daily life",
+    "ESL",
+    "English conversation",
+    "英文學習"
+  ],
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "Picking Up Takeout",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "Picking Up Takeout",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Food & Drink",
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "Let's order takeout tonight.",
+      "phonetic": "/lɛts ˈɔrdər ˈtekaʊt təˈnaɪt./",
+      "zh": "我們今晚點外帶吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good idea, I am hungry.",
+      "phonetic": "/ɡʊd aɪˈdiə, aɪ æm ˈhʌŋɡri./",
+      "zh": "好主意，我餓了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which app should we open?",
+      "phonetic": "/wɪtʃ æp ʃʊd wi ˈoʊpən?/",
+      "zh": "我們該打開哪個點餐軟體？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Use the one with burgers.",
+      "phonetic": "/juz ðə wʌn wɪð ˈbɜrɡərz./",
+      "zh": "用那個有漢堡的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I see their noodle menu.",
+      "phonetic": "/aɪ si ðɛr ˈnudəl ˈmɛnju./",
+      "zh": "我看到他們的麵食菜單。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The pictures look so tasty.",
+      "phonetic": "/ðə ˈpɪktʃərz lʊk soʊ ˈteɪsti./",
+      "zh": "照片看起來很好吃。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you want rice or noodles?",
+      "phonetic": "/du ju wɔnt raɪs ɔr ˈnudəlz?/",
+      "zh": "你要飯還是麵？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Noodles for me, please.",
+      "phonetic": "/ˈnudəlz fər mi, pliz./",
+      "zh": "我要麵，謝謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This fried chicken looks fresh.",
+      "phonetic": "/ðɪs fraɪd ˈtʃɪkən lʊks frɛʃ./",
+      "zh": "這炸雞看起來很新鮮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Add one box to the cart.",
+      "phonetic": "/æd wʌn bɑks tu ðə kɑrt./",
+      "zh": "加一盒到購物車。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How much is the large size?",
+      "phonetic": "/haʊ mʌtʃ ɪz ðə lɑrdʒ saɪz?/",
+      "zh": "大份的多少錢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is six dollars more.",
+      "phonetic": "/ɪt ɪz sɪks ˈdɑlərz mɔr./",
+      "zh": "要多六塊錢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Okay, just take the large.",
+      "phonetic": "/oʊˈkeɪ, dʒʌst teɪk ðə lɑrdʒ./",
+      "zh": "好吧，直接買大份。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Worth the extra, for sure.",
+      "phonetic": "/wərθ ði ˈɛkstrə, fər ʃʊr./",
+      "zh": "多這一點錢很值得。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do they have spicy sauce?",
+      "phonetic": "/du ðeɪ hæv ˈspaɪsi sɔs?/",
+      "zh": "他們有辣醬嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, I added two packs.",
+      "phonetic": "/jɛs, aɪ ˈædɪd tu pæks./",
+      "zh": "有，我加了兩包。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can they make it less spicy?",
+      "phonetic": "/kæn ðeɪ meɪk ɪt lɛs ˈspaɪsi?/",
+      "zh": "可以請他們做得不那麼辣嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, I wrote it in notes.",
+      "phonetic": "/ʃʊr, aɪ roʊt ɪt ɪn noʊts./",
+      "zh": "可以，我寫在備註裡了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Any notes for the kitchen?",
+      "phonetic": "/ˈɛni noʊts fər ðə ˈkɪtʃɪn?/",
+      "zh": "要跟廚房留備註嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Write no onions, please.",
+      "phonetic": "/raɪt noʊ ˈənjənz, pliz./",
+      "zh": "寫「請不要洋蔥」。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should we get delivery?",
+      "phonetic": "/ʃʊd wi ɡɛt dɪˈlɪvəri?/",
+      "zh": "我們該叫外送嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, pickup is faster today.",
+      "phonetic": "/noʊ, ˈpɪkˌʌp ɪz ˈfæstər təˈdeɪ./",
+      "zh": "不用，今天自取比較快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It is a short drive over.",
+      "phonetic": "/ɪt ɪz ə ʃɔrt draɪv ˈoʊvər./",
+      "zh": "開過去一下就到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Five minutes by car, tops.",
+      "phonetic": "/faɪv ˈmɪnɪts baɪ kɑr, tɑps./",
+      "zh": "開車頂多五分鐘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Pickup at seven, right?",
+      "phonetic": "/ˈpɪkˌʌp æt ˈsɛvən, raɪt?/",
+      "zh": "七點自取，對吧？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The app says twenty minutes.",
+      "phonetic": "/ði æp sɛz ˈtwɛnti ˈmɪnɪts./",
+      "zh": "軟體顯示要二十分鐘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How do we pay now?",
+      "phonetic": "/haʊ du wi peɪ naʊ?/",
+      "zh": "我們現在怎麼付錢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pay by card in the app.",
+      "phonetic": "/peɪ baɪ kɑrd ɪn ði æp./",
+      "zh": "在軟體裡用卡付款。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This card looks expired.",
+      "phonetic": "/ðɪs kɑrd lʊks ɪkˈspaɪrd./",
+      "zh": "這張卡好像過期了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try my card instead.",
+      "phonetic": "/traɪ maɪ kɑrd ɪnˈstɛd./",
+      "zh": "改用我的卡吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Okay, I will use your card.",
+      "phonetic": "/oʊˈkeɪ, aɪ wɪl juz jʊr kɑrd./",
+      "zh": "好，那我就用你的卡付錢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, the card works fine.",
+      "phonetic": "/ɡʊd, ðə kɑrd wɜrks faɪn./",
+      "zh": "很好，這張卡可以用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is there a pickup fee?",
+      "phonetic": "/ɪz ðɛr ə ˈpɪkˌʌp fi?/",
+      "zh": "自取要手續費嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, pickup is free.",
+      "phonetic": "/noʊ, ˈpɪkˌʌp ɪz fri./",
+      "zh": "不用，自取免費。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "There is a small discount.",
+      "phonetic": "/ðɛr ɪz ə smɔl ˈdɪskaʊnt./",
+      "zh": "有一個小折扣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nice, it saves one dollar.",
+      "phonetic": "/naɪs, ɪt seɪvz wʌn ˈdɑlər./",
+      "zh": "不錯，能省一塊錢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What drink should we add?",
+      "phonetic": "/wʌt drɪŋk ʃʊd wi æd?/",
+      "zh": "要加點什麼飲料？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Get two colas, please.",
+      "phonetic": "/ɡɛt tu ˈkoʊləz, pliz./",
+      "zh": "來兩杯可樂吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do they have lemon tea?",
+      "phonetic": "/du ðeɪ hæv ˈlɛmən ti?/",
+      "zh": "他們有檸檬茶嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it is on sale.",
+      "phonetic": "/jɛs, ɪt ɪz ɔn seɪl./",
+      "zh": "有，還在打折。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Two teas, no sugar.",
+      "phonetic": "/tu tiz, noʊ ˈʃʊɡər./",
+      "zh": "兩杯茶，不加糖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I asked for ice on the side.",
+      "phonetic": "/aɪ æskt fər aɪs ɑn ðə saɪd./",
+      "zh": "我備註了冰另外放。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should we try the fries?",
+      "phonetic": "/ʃʊd wi traɪ ðə fraɪz?/",
+      "zh": "要不要點薯條？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, get the large box.",
+      "phonetic": "/jɛs, ɡɛt ðə lɑrdʒ bɑks./",
+      "zh": "要，買大盒的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Fries get cold fast.",
+      "phonetic": "/fraɪz ɡɛt koʊld fæst./",
+      "zh": "薯條很容易涼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We will eat them right away.",
+      "phonetic": "/wi wɪl it ðɛm raɪt əˈweɪ./",
+      "zh": "我們一到就吃。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cart shows five items.",
+      "phonetic": "/ðə kɑrt ʃoʊz faɪv ˈaɪtəmz./",
+      "zh": "購物車裡有五樣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Remove one, it is too much.",
+      "phonetic": "/rɪˈmuv wʌn, ɪt ɪz tu mʌtʃ./",
+      "zh": "刪掉一樣，太多了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which one should we drop?",
+      "phonetic": "/wɪtʃ wʌn ʃʊd wi drɑp?/",
+      "zh": "要刪掉哪一樣？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Delete the two colas.",
+      "phonetic": "/dɪˈlit ðə tu ˈkoʊləz./",
+      "zh": "把那兩杯可樂刪掉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Done, now four items.",
+      "phonetic": "/dʌn, naʊ fɔr ˈaɪtəmz./",
+      "zh": "好了，現在四樣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Perfect, check the total.",
+      "phonetic": "/ˈpɜrfɪkt, tʃɛk ðə ˈtoʊtl./",
+      "zh": "完美，看一下總價。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The total is eighteen dollars.",
+      "phonetic": "/ðə ˈtoʊtl ɪz eɪˈtin ˈdɑlərz./",
+      "zh": "總共十八塊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is fair for two.",
+      "phonetic": "/ðæt ɪz fɛr fər tu./",
+      "zh": "兩個人吃很合理。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you tap place order?",
+      "phonetic": "/dɪd ju tæp pleɪs ˈɔrdər?/",
+      "zh": "你按下去了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it says confirmed.",
+      "phonetic": "/jɛs, ɪt sɛz kənˈfɜrmd./",
+      "zh": "按了，顯示已確認。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "There is our order number.",
+      "phonetic": "/ðɛr ɪz aʊər ˈɔrdər ˈnʌmbər./",
+      "zh": "這是我們的取餐號。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Read it out loud.",
+      "phonetic": "/rid ɪt aʊt laʊd./",
+      "zh": "唸出來給我聽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It is number forty-two.",
+      "phonetic": "/ɪt ɪz ˈnʌmbər ˈfɔrti tu./",
+      "zh": "是四十二號。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Put it in a screenshot.",
+      "phonetic": "/pʊt ɪt ɪn ə ˈskrinˌʃɑt./",
+      "zh": "把取餐號截圖存下來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good thinking, done.",
+      "phonetic": "/ɡʊd ˈθɪŋkɪŋ, dʌn./",
+      "zh": "想得周到，拍好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The receipt is in the app.",
+      "phonetic": "/ðə rɪˈsit ɪz ɪn ði æp./",
+      "zh": "收據在軟體裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I add one note?",
+      "phonetic": "/kæn aɪ æd wʌn noʊt?/",
+      "zh": "我還能加備註嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Type it in the notes box.",
+      "phonetic": "/taɪp ɪt ɪn ðə noʊts bɑks./",
+      "zh": "打在備註欄就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Write cut the chicken in half.",
+      "phonetic": "/raɪt kʌt ðə ˈtʃɪkən ɪn hæf./",
+      "zh": "寫「炸雞對半切」。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Also ask for hot sauce.",
+      "phonetic": "/ˈɔlsoʊ æsk fər hɑt sɔs./",
+      "zh": "再加一句要辣醬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did they accept the note?",
+      "phonetic": "/dɪd ðeɪ əkˈsɛpt ðə noʊt?/",
+      "zh": "店家接受備註了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the kitchen saw it.",
+      "phonetic": "/jɛs, ðə ˈkɪtʃɪn sɔ ɪt./",
+      "zh": "有，廚房看過了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What time can we leave?",
+      "phonetic": "/wʌt taɪm kæn wi liv?/",
+      "zh": "我們幾點出門？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In about fifteen minutes.",
+      "phonetic": "/ɪn əˈbaʊt fɪfˈtin ˈmɪnɪts./",
+      "zh": "大約十五分鐘後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app tracks our order.",
+      "phonetic": "/ði æp træks aʊər ˈɔrdər./",
+      "zh": "軟體會追蹤訂單。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It says they started cooking.",
+      "phonetic": "/ɪt sɛz ðeɪ ˈstɑrtɪd ˈkʊkɪŋ./",
+      "zh": "上面說開始做了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Cooking takes twelve minutes.",
+      "phonetic": "/ˈkʊkɪŋ teɪks twɛlv ˈmɪnɪts./",
+      "zh": "製作要十二分鐘。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We will arrive right on time.",
+      "phonetic": "/wi wɪl əˈraɪv raɪt ɑn taɪm./",
+      "zh": "我們會剛好準時到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Put on your jacket.",
+      "phonetic": "/pʊt ɑn jʊr ˈdʒækɪt./",
+      "zh": "把外套穿上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The wind feels strong today.",
+      "phonetic": "/ðə wɪnd filz strɔŋ təˈdeɪ./",
+      "zh": "今天風很大。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do we need the car keys?",
+      "phonetic": "/du wi nid ðə kɑr kiz?/",
+      "zh": "要帶車鑰匙嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, we will drive.",
+      "phonetic": "/jɛs, wi wɪl draɪv./",
+      "zh": "要，我們開車去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I saved the pickup map.",
+      "phonetic": "/aɪ seɪvd ðə ˈpɪkˌʌp mæp./",
+      "zh": "我存了取餐地圖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The store is on Main Street.",
+      "phonetic": "/ðə stɔr ɪz ɑn meɪn strit./",
+      "zh": "店就在主街上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is parking easy there?",
+      "phonetic": "/ɪz ˈpɑrkɪŋ ˈizi ðɛr?/",
+      "zh": "那邊好停車嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, there is free parking.",
+      "phonetic": "/jɛs, ðɛr ɪz fri ˈpɑrkɪŋ./",
+      "zh": "有，可以免費停。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "They sent an update.",
+      "phonetic": "/ðeɪ sɛnt ən ˈəpˌdeɪt./",
+      "zh": "店家傳來更新了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Maybe our food is ready.",
+      "phonetic": "/ˈmeɪbi aʊər fud ɪz ˈrɛdi./",
+      "zh": "我們的餐可能好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It says almost ready.",
+      "phonetic": "/ɪt sɛz ˈɔlmoʊst ˈrɛdi./",
+      "zh": "上面說快好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let us go now.",
+      "phonetic": "/lɛt ʌs ɡoʊ naʊ./",
+      "zh": "我們出發吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did we order the napkins?",
+      "phonetic": "/dɪd wi ˈɔrdər ðə ˈnæpkɪnz?/",
+      "zh": "我們點紙巾了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I checked, yes we did.",
+      "phonetic": "/aɪ tʃɛkt, jɛs wi dɪd./",
+      "zh": "我查過，有點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do we have the cups too?",
+      "phonetic": "/du wi hæv ðə kʌps tu?/",
+      "zh": "杯子也有了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cups come with the drinks.",
+      "phonetic": "/kʌps kʌm wɪð ðə drɪŋks./",
+      "zh": "杯子附在飲料裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now the order is paid.",
+      "phonetic": "/naʊ ði ˈɔrdər ɪz peɪd./",
+      "zh": "訂單已經付清了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We only need to wait.",
+      "phonetic": "/wi ˈoʊnli nid tu weɪt./",
+      "zh": "我們只要等就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wait at the store, not home.",
+      "phonetic": "/weɪt æt ðə stɔr, nɑt hoʊm./",
+      "zh": "在店裡等，別回家等。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "True, the food stays hot.",
+      "phonetic": "/tru, ðə fud steɪz hɑt./",
+      "zh": "對，餐才會保溫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I love easy takeout nights.",
+      "phonetic": "/aɪ lʌv ˈizi ˈtekaʊt naɪts./",
+      "zh": "我愛輕鬆的外帶之夜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Me too, no cooking today.",
+      "phonetic": "/mi tu, noʊ ˈkʊkɪŋ təˈdeɪ./",
+      "zh": "我也是，今天不用煮。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Everything looks good so far.",
+      "phonetic": "/ˈɛvriθɪŋ lʊks ɡʊd soʊ fɑr./",
+      "zh": "到目前都很順利。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Almost time to leave.",
+      "phonetic": "/ˈɔlmoʊst taɪm tu liv./",
+      "zh": "快該出發了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Grab your bag and phone.",
+      "phonetic": "/ɡræb jʊr bæɡ ənd foʊn./",
+      "zh": "拿上你的包和手機。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I have both, let us go.",
+      "phonetic": "/aɪ hæv boʊθ, lɛt ʌs ɡoʊ./",
+      "zh": "都帶了，走吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hi, I am here for pickup.",
+      "phonetic": "/haɪ, aɪ æm hɪr fər ˈpɪkˌʌp./",
+      "zh": "嗨，我來自取餐點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, what is your name?",
+      "phonetic": "/ʃʊr, wət ɪz jʊr neɪm?/",
+      "zh": "好的，請問您叫什麼？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Lee is the name I used.",
+      "phonetic": "/li ɪz ðə neɪm aɪ juzd./",
+      "zh": "登記的名字是李。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What is the order number?",
+      "phonetic": "/wət ɪz ði ˈɔrdər ˈnʌmbər?/",
+      "zh": "取餐號是多少？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The number is forty-two.",
+      "phonetic": "/ðə ˈnʌmbər ɪz ˈfɔrti tu./",
+      "zh": "編號是四十二。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Got it, one second.",
+      "phonetic": "/ɡɑt ɪt, wʌn ˈsɛkənd./",
+      "zh": "收到，稍等一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I saved the screenshot too.",
+      "phonetic": "/aɪ seɪvd ðə ˈskrinˌʃɑt tu./",
+      "zh": "取餐號我也截圖了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Found it, Lee, here you go.",
+      "phonetic": "/faʊnd ɪt, li, hɪr ju ɡoʊ./",
+      "zh": "找到了，李先生，給您。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is the pickup shelf?",
+      "phonetic": "/wɛr ɪz ðə ˈpɪkˌʌp ʃɛlf?/",
+      "zh": "取餐架在哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is behind the counter.",
+      "phonetic": "/ɪt ɪz bɪˈhaɪnd ðə ˈkaʊntər./",
+      "zh": "在櫃台後面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I see a bag with Lee.",
+      "phonetic": "/aɪ si ə bæɡ wɪð li./",
+      "zh": "我看到寫著李的袋子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Please check the number too.",
+      "phonetic": "/pliz tʃɛk ðə ˈnʌmbər tu./",
+      "zh": "也請核對一下編號。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That is my number.",
+      "phonetic": "/ðæt ɪz maɪ ˈnʌmbər./",
+      "zh": "那就是我的編號。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great, take the white bag.",
+      "phonetic": "/ɡreɪt, teɪk ðə waɪt bæɡ./",
+      "zh": "很好，拿白色那袋。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is my order hot?",
+      "phonetic": "/ɪz maɪ ˈɔrdər hɑt?/",
+      "zh": "我的餐是熱的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The noodles are still steaming.",
+      "phonetic": "/ðə ˈnudəlz ɑr stɪl ˈstimɪŋ./",
+      "zh": "麵還冒著熱氣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are these fries still hot?",
+      "phonetic": "/ɑr ðiz fraɪz stɪl hɑt?/",
+      "zh": "這些薯條還熱嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They came out just now.",
+      "phonetic": "/ðeɪ keɪm aʊt dʒʌst naʊ./",
+      "zh": "剛出鍋沒多久。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I get a fresh cup?",
+      "phonetic": "/kæn aɪ ɡɛt ə frɛʃ kʌp?/",
+      "zh": "能給我一個新杯子嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, hot drinks get lids.",
+      "phonetic": "/ʃʊr, hɑt drɪŋks ɡɛt lɪdz./",
+      "zh": "可以，熱飲會加蓋。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have any sauce?",
+      "phonetic": "/du ju hæv ˈɛni sɔs?/",
+      "zh": "你們有醬料嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the sauces are free.",
+      "phonetic": "/jɛs, ðə ˈsɔsɪz ɑr fri./",
+      "zh": "有，醬料免費。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I have two barbecue?",
+      "phonetic": "/kæn aɪ hæv tu ˈbɑrbɪkju?/",
+      "zh": "可以給我兩包烤肉醬嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here, one ketchup too?",
+      "phonetic": "/hɪr, wʌn ˈkɛtʃəp tu?/",
+      "zh": "給您，也要番茄醬嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, ketchup is perfect.",
+      "phonetic": "/jɛs, ˈkɛtʃəp ɪz ˈpɜrfɪkt./",
+      "zh": "要，番茄醬剛好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Anything else for you?",
+      "phonetic": "/ˈɛniˌθɪŋ ɛls fər ju?/",
+      "zh": "還需要別的嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you give napkins?",
+      "phonetic": "/du ju ɡɪv ˈnæpkɪnz?/",
+      "zh": "你們提供紙巾嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Take some from that box.",
+      "phonetic": "/teɪk sʌm frʌm ðæt bɑks./",
+      "zh": "從那個盒子裡拿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are plastic forks free?",
+      "phonetic": "/ɑr ˈplæstɪk fɔrks fri?/",
+      "zh": "塑膠叉是免費的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, help yourself there.",
+      "phonetic": "/jɛs, hɛlp jʊrˈsɛlf ðɛr./",
+      "zh": "是的，自己拿就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I need a spoon also.",
+      "phonetic": "/aɪ nid ə spun ˈɔlsoʊ./",
+      "zh": "我也需要湯匙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The spoons are on the left.",
+      "phonetic": "/ðə spunz ɑr ɑn ðə lɛft./",
+      "zh": "湯匙在左手邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do the noodles have boxes?",
+      "phonetic": "/du ðə ˈnudəlz hæv ˈbɑksɪz?/",
+      "zh": "麵是裝盒子的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They are in a round container.",
+      "phonetic": "/ðeɪ ɑr ɪn ə raʊnd kənˈteɪnər./",
+      "zh": "裝在圓形餐盒裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Excuse me, any chopsticks?",
+      "phonetic": "/ɪkˈskjuz mi, ˈɛni ˈtʃɑpˌstɪks?/",
+      "zh": "請問有筷子嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, they are by the register.",
+      "phonetic": "/jɛs, ðeɪ ɑr baɪ ðə ˈrɛdʒɪstər./",
+      "zh": "有，在收銀台旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the drink sealed well?",
+      "phonetic": "/ɪz ðə drɪŋk sild wɛl?/",
+      "zh": "飲料封好了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will tape the bag.",
+      "phonetic": "/aɪ wɪl teɪp ðə bæɡ./",
+      "zh": "我會把袋子封起來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please keep the receipt inside.",
+      "phonetic": "/pliz kip ðə rɪˈsit ɪnˈsaɪd./",
+      "zh": "請把收據放進袋子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is already in there.",
+      "phonetic": "/ɪt ɪz ɔlˈrɛdi ɪn ðɛr./",
+      "zh": "已經放在裡面了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sorry, we are in a rush.",
+      "phonetic": "/ˈsɑri, wi ɑr ɪn ə rʌʃ./",
+      "zh": "不好意思，我們趕時間。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No rush, we are almost done.",
+      "phonetic": "/noʊ rʌʃ, wi ɑr ˈɔlmoʊst ˈdʌn./",
+      "zh": "不用急，我們快弄好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please double-check the items.",
+      "phonetic": "/pliz ˈdaʊbəl tʃɛk ði ˈaɪtəmz./",
+      "zh": "麻煩再核對一下餐點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, your order has four.",
+      "phonetic": "/ʃʊr, jʊr ˈɔrdər hæz fɔr./",
+      "zh": "沒問題，您總共點四樣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wait, let me count them first.",
+      "phonetic": "/weɪt, lɛt mi kaʊnt ðɛm fɜrst./",
+      "zh": "等等，我先數一遍。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "See, all four are here.",
+      "phonetic": "/si, ɔl fɔr ɑr hɪr./",
+      "zh": "您看，四樣一樣不缺。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This bag feels heavy.",
+      "phonetic": "/ðɪs bæɡ filz ˈhɛvi./",
+      "zh": "這個袋子好沉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Should I split them in two?",
+      "phonetic": "/ʃʊd aɪ splɪt ðɛm ɪn tu?/",
+      "zh": "要幫您分裝兩袋嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, that helps a lot.",
+      "phonetic": "/jɛs, ðæt hɛlps ə lɑt./",
+      "zh": "好，那樣輕多了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here, take the second bag.",
+      "phonetic": "/hɪr, teɪk ðə ˈsɛkənd bæɡ./",
+      "zh": "給，拿第二袋。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do I need to do anything else?",
+      "phonetic": "/du aɪ nid tu du ˈɛniθɪŋ ɛls?/",
+      "zh": "還要做別的事嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, payment is done.",
+      "phonetic": "/noʊ, ˈpeɪmənt ɪz dʌn./",
+      "zh": "不用，款已付過了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "These fries feel warm.",
+      "phonetic": "/ðiz fraɪz fil wɔrm./",
+      "zh": "薯條摸起來還熱熱的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We pack hot food last.",
+      "phonetic": "/wi pæk hɑt fud læst./",
+      "zh": "熱食我們最後才裝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Nice, careful hands.",
+      "phonetic": "/naɪs, ˈkɛrfəl hænz./",
+      "zh": "真好，很細心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We try to keep it hot.",
+      "phonetic": "/wi traɪ tu kip ɪt hɑt./",
+      "zh": "我們盡量保住溫度。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is this the lemon tea?",
+      "phonetic": "/ɪz ðɪs ðə ˈlɛmən ti?/",
+      "zh": "這是檸檬茶嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, both cups are lemon.",
+      "phonetic": "/jɛs, boʊθ kʌps ɑr ˈlɛmən./",
+      "zh": "是的，兩杯都是檸檬茶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I open one now?",
+      "phonetic": "/kæn aɪ ˈoʊpən wʌn naʊ?/",
+      "zh": "我現在可以先開一杯嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, taste it here.",
+      "phonetic": "/ʃʊr, teɪst ɪt hɪr./",
+      "zh": "可以，就在這兒喝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It tastes light and fresh.",
+      "phonetic": "/ɪt teɪsts laɪt ənd frɛʃ./",
+      "zh": "喝起來清爽又新鮮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Glad you like the tea.",
+      "phonetic": "/ɡlæd ju laɪk ðə ti./",
+      "zh": "你們喜歡茶就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is my receipt copy?",
+      "phonetic": "/wɛr ɪz maɪ rɪˈsit ˈkɑpi?/",
+      "zh": "我的收據副本在哪？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is under the lid.",
+      "phonetic": "/ɪt ɪz ˈʌndər ðə lɪd./",
+      "zh": "在蓋子下面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Found it, thank you.",
+      "phonetic": "/faʊnd ɪt, θæŋk ju./",
+      "zh": "找到了，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Have a nice evening.",
+      "phonetic": "/hæv ə naɪs ˈivnɪŋ./",
+      "zh": "祝您晚上愉快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Bye, thanks for help.",
+      "phonetic": "/baɪ, θæŋks fər hɛlp./",
+      "zh": "再見，謝謝幫忙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Come back soon, bye.",
+      "phonetic": "/kʌm bæk sun, baɪ./",
+      "zh": "歡迎再來，再見。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am back with the bags.",
+      "phonetic": "/aɪ æm bæk wɪð ðə bæɡz./",
+      "zh": "我提著袋子回來了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yay, I smell the chicken.",
+      "phonetic": "/jeɪ, aɪ smɛl ðə ˈtʃɪkən./",
+      "zh": "耶，我聞到炸雞了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Everything was on the shelf.",
+      "phonetic": "/ˈɛvriθɪŋ wʌz ɑn ðə ʃɛlf./",
+      "zh": "東西都在架子上備好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Did they give the sauces?",
+      "phonetic": "/dɪd ðeɪ ɡɪv ðə ˈsɔsɪz?/",
+      "zh": "他們有給醬料嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Two packs, right here.",
+      "phonetic": "/tu pæks, raɪt hɪr./",
+      "zh": "兩包，就在這。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And the napkins?",
+      "phonetic": "/ənd ðə ˈnæpkɪnz?/",
+      "zh": "紙巾呢？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A big stack of them.",
+      "phonetic": "/ə bɪɡ stæk ʌv ðɛm./",
+      "zh": "拿了一大疊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Perfect, you did great.",
+      "phonetic": "/ˈpɜrfɪkt, ju dɪd ɡreɪt./",
+      "zh": "太完美了，做得好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Both teas are still cold.",
+      "phonetic": "/boʊθ tiz ɑr stɪl koʊld./",
+      "zh": "兩杯茶都還冰冰涼涼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, let us go home.",
+      "phonetic": "/ɡʊd, lɛt ʌs ɡoʊ hoʊm./",
+      "zh": "太好了，我們回家。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My hands smell like barbecue.",
+      "phonetic": "/maɪ hændz smɛl laɪk ˈbɑrbɪkju./",
+      "zh": "我手上全是烤肉醬味。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then do not touch my phone.",
+      "phonetic": "/ðɛn du nɑt tʌtʃ maɪ foʊn./",
+      "zh": "那就別碰我的手機。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Honestly, the staff was kind.",
+      "phonetic": "/ˈɑnəstli, ðə stæf wʌz kaɪnd./",
+      "zh": "說真的，店員很親切。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They always check the bags.",
+      "phonetic": "/ðeɪ ˈɔlweɪz tʃɛk ðə bæɡz./",
+      "zh": "他們總會檢查袋子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Pickup took five minutes.",
+      "phonetic": "/ˈpɪkˌʌp tʊk faɪv ˈmɪnɪts./",
+      "zh": "取餐只花了五分鐘。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lucky, we are early.",
+      "phonetic": "/ˈlʌki, wi ɑr ˈɜrli./",
+      "zh": "真幸運，我們回來得早。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wow, the chicken smells good.",
+      "phonetic": "/waʊ, ðə ˈtʃɪkən smɛlz ɡʊd./",
+      "zh": "哇，炸雞聞起來好香。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Inside the bag, still warm.",
+      "phonetic": "/ɪnˈsaɪd ðə bæɡ, stɪl wɔrm./",
+      "zh": "在袋子裡還溫熱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will carry the drinks.",
+      "phonetic": "/aɪ wɪl ˈkæri ðə drɪŋks./",
+      "zh": "飲料我來提。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Okay, I take the food.",
+      "phonetic": "/oʊˈkeɪ, aɪ teɪk ðə fud./",
+      "zh": "好，食物我拿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do we need plates at home?",
+      "phonetic": "/du wi nid pleɪts æt hoʊm?/",
+      "zh": "在家要用盤子嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, let us set the table.",
+      "phonetic": "/jɛs, lɛt ʌs sɛt ðə ˈteɪbəl./",
+      "zh": "要，我們擺桌子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One bag has the forks.",
+      "phonetic": "/wʌn bæɡ hæz ðə fɔrks./",
+      "zh": "有一個袋子裝叉子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spoons and napkins too, I think.",
+      "phonetic": "/spunz ənd ˈnæpkɪnz tu, aɪ θɪŋk./",
+      "zh": "我想還有湯匙和紙巾。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Here is the car.",
+      "phonetic": "/hɪr ɪz ðə kɑr./",
+      "zh": "車就在這兒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Put the bags in the back.",
+      "phonetic": "/pʊt ðə bæɡz ɪn ðə bæk./",
+      "zh": "把袋子放後座。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Seat belts on.",
+      "phonetic": "/sit bɛlts ɑn./",
+      "zh": "安全帶繫好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All set, let us move.",
+      "phonetic": "/ɔl sɛt, lɛt ʌs muv./",
+      "zh": "都好了，出發吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Home in ten minutes.",
+      "phonetic": "/hoʊm ɪn tɛn ˈmɪnɪts./",
+      "zh": "十分鐘就到家了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I cannot wait to eat.",
+      "phonetic": "/aɪ ˈkænɑt weɪt tu it./",
+      "zh": "我等不及要開吃了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you ask for the chopsticks?",
+      "phonetic": "/dɪd ju æsk fər ðə ˈtʃɑpˌstɪks?/",
+      "zh": "你有要到筷子嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, two packs are in here.",
+      "phonetic": "/jɛs, tu pæks ɑr ɪn hɪr./",
+      "zh": "有，兩包就在這袋裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wait, the chicken box is gone.",
+      "phonetic": "/weɪt, ðə ˈtʃɪkən bɑks ɪz ɡɔn./",
+      "zh": "等等，炸雞盒不見了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let me look in the bag.",
+      "phonetic": "/lɛt mi lʊk ɪn ðə bæɡ./",
+      "zh": "讓我看看袋子裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "There are only three items.",
+      "phonetic": "/ðɛr ɑr ˈoʊnli θri ˈaɪtəmz./",
+      "zh": "裡邊只有三樣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You are right, where is it?",
+      "phonetic": "/ju ɑr raɪt, wɛr ɪz ɪt?/",
+      "zh": "你是對的，它在哪？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We need to call the store.",
+      "phonetic": "/wi nid tu kɔl ðə stɔr./",
+      "zh": "我們得打電話給店內。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the number is in the app.",
+      "phonetic": "/jɛs, ðə ˈnʌmbər ɪz ɪn ði æp./",
+      "zh": "好，電話號碼在軟體裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hello, this is order forty-two.",
+      "phonetic": "/hɛˈloʊ, ðɪs ɪz ˈɔrdər ˈfɔrti tu./",
+      "zh": "你好，這是四十二號訂單。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hi, what is the problem?",
+      "phonetic": "/haɪ, wət ɪz ðə ˈprɑbləm?/",
+      "zh": "您好，請問有什麼問題？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Our chicken box is missing.",
+      "phonetic": "/aʊər ˈtʃɪkən bɑks ɪz ˈmɪsɪŋ./",
+      "zh": "我們的炸雞盒少了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let me check the counter now.",
+      "phonetic": "/lɛt mi tʃɛk ðə ˈkaʊntər naʊ./",
+      "zh": "我現在查一下櫃台。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Take your time, we wait.",
+      "phonetic": "/teɪk jʊr taɪm, wi weɪt./",
+      "zh": "您慢慢查，我們等。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the box is still here.",
+      "phonetic": "/jɛs, ðə bɑks ɪz stɪl hɪr./",
+      "zh": "找到了，盒子還在這裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thank you for checking it.",
+      "phonetic": "/θæŋk ju fər ˈtʃɛkɪŋ ɪt./",
+      "zh": "謝謝您幫忙確認。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You can pick it up today.",
+      "phonetic": "/ju kæn pɪk ɪt ʌp təˈdeɪ./",
+      "zh": "你們今天就能來取。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We are close, we will return.",
+      "phonetic": "/wi ɑr kloʊz, wi wɪl rɪˈtɜrn./",
+      "zh": "我們很近，馬上回去。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will set it aside.",
+      "phonetic": "/aɪ wɪl sɛt ɪt əˈsaɪd./",
+      "zh": "我會幫您留起來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Back at the store door.",
+      "phonetic": "/bæk æt ðə stɔr dɔr./",
+      "zh": "又回到店門口了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Welcome back, name please?",
+      "phonetic": "/ˈwɛlkəm bæk, neɪm pliz?/",
+      "zh": "歡迎再回來，請問名字？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Lee, order forty-two.",
+      "phonetic": "/li, ˈɔrdər ˈfɔrti tu./",
+      "zh": "李，四十二號訂單。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here is the chicken box.",
+      "phonetic": "/hɪr ɪz ðə ˈtʃɪkən bɑks./",
+      "zh": "這是您的炸雞盒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sorry, the fries look wrong.",
+      "phonetic": "/ˈsɑri, ðə fraɪz lʊk rɔŋ./",
+      "zh": "抱歉，薯條好像不對。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What seems wrong with them?",
+      "phonetic": "/wət simz rɔŋ wɪð ðɛm?/",
+      "zh": "薯條哪裡不對？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This is the small size.",
+      "phonetic": "/ðɪs ɪz ðə smɔl saɪz./",
+      "zh": "這是小份的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You paid for the large one.",
+      "phonetic": "/ju peɪd fər ðə lɑrdʒ wʌn./",
+      "zh": "您付的是大份。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Exactly, can we swap them?",
+      "phonetic": "/ɪɡˈzæktli, kæn wi swɑp ðɛm?/",
+      "zh": "沒錯，能跟我們換一下嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Of course, one moment.",
+      "phonetic": "/ʌv kɔrs, wʌn ˈmoʊmənt./",
+      "zh": "當然可以，稍等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Fresh large fries, please.",
+      "phonetic": "/frɛʃ lɑrdʒ fraɪz, pliz./",
+      "zh": "麻煩換成新炸的大份。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Coming right up now.",
+      "phonetic": "/ˈkʌmɪŋ raɪt ʌp naʊ./",
+      "zh": "馬上為您拿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One minute, the tea is wrong.",
+      "phonetic": "/wʌn ˈmɪnɪt, ðə ti ɪz rɔŋ./",
+      "zh": "等一下，茶也不對。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What did you order?",
+      "phonetic": "/wʌt dɪd ju ˈɔrdər?/",
+      "zh": "你們點的是什麼？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We ordered two lemon teas.",
+      "phonetic": "/wi ˈɔrdərd tu ˈlɛmən tiz./",
+      "zh": "我們點的是兩杯檸檬茶。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "This cup says sweet tea.",
+      "phonetic": "/ðɪs kʌp sɛz swit ti./",
+      "zh": "這杯寫的是甜茶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I change one drink?",
+      "phonetic": "/kæn aɪ tʃeɪndʒ wʌn drɪŋk?/",
+      "zh": "一杯飲料能換嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, what do you want?",
+      "phonetic": "/ʃʊr, wət du ju wɑnt?/",
+      "zh": "可以，想換成什麼？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Swap the sweet one for lemon.",
+      "phonetic": "/swɑp ðə swit wʌn fər ˈlɛmən./",
+      "zh": "把甜的那杯換成檸檬茶。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No problem, I will fix it.",
+      "phonetic": "/noʊ ˈprɑbləm, aɪ wɪl fɪks ɪt./",
+      "zh": "沒問題，我幫您處理。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Also, the chicken is cold.",
+      "phonetic": "/ˈɔlsoʊ, ðə ˈtʃɪkən ɪz koʊld./",
+      "zh": "還有，炸雞有點涼了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can warm it up.",
+      "phonetic": "/wi kæn wɔrm ɪt ʌp./",
+      "zh": "我們可以幫您回溫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please do, thank you.",
+      "phonetic": "/pliz du, θæŋk ju./",
+      "zh": "那就麻煩了，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two minutes in the oven.",
+      "phonetic": "/tu ˈmɪnɪts ɪn ðə ˈʌvən./",
+      "zh": "進烤箱兩分鐘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we also get napkins?",
+      "phonetic": "/kæn wi ˈɔlsoʊ ɡɛt ˈnæpkɪnz?/",
+      "zh": "還能再拿些紙巾嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, grab a small stack.",
+      "phonetic": "/jɛs, ɡræb ə smɔl stæk./",
+      "zh": "可以，拿一小疊就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "And two chopstick packs.",
+      "phonetic": "/ənd tu ˈtʃɑpˌstɪk pæks./",
+      "zh": "再來兩包筷子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Grab them right beside you.",
+      "phonetic": "/ɡræb ðɛm raɪt bɪˈsaɪd ju./",
+      "zh": "就在您旁邊，自己拿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I get an extra bag?",
+      "phonetic": "/kæn aɪ ɡɛt ən ˈɛkstrə bæɡ?/",
+      "zh": "能再給我一個袋子嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For what? The sauces?",
+      "phonetic": "/fər wɑt? ðə ˈsɔsɪz?/",
+      "zh": "裝什麼？醬料嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, just for the sauces.",
+      "phonetic": "/jɛs, dʒʌst fər ðə ˈsɔsɪz./",
+      "zh": "對，專門用來裝醬料。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good idea, here is a bag.",
+      "phonetic": "/ɡʊd aɪˈdiə, hɪr ɪz ə bæɡ./",
+      "zh": "好主意，這袋給您。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Keep the noodle box separate.",
+      "phonetic": "/kip ðə ˈnudəl bɑks ˈsɛpərət./",
+      "zh": "麵盒也要分開裝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, one bag for noodles.",
+      "phonetic": "/ʃʊr, wʌn bæɡ fər ˈnudəlz./",
+      "zh": "好的，一袋專門裝麵。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "And drinks in a bag.",
+      "phonetic": "/ənd drɪŋks ɪn ə bæɡ./",
+      "zh": "飲料再裝一袋。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Done, nothing touches the fries.",
+      "phonetic": "/dʌn, ˈnʌθɪŋ ˈtʌtʃɪz ðə fraɪz./",
+      "zh": "好了，薯條不會被壓到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This box leaks a little.",
+      "phonetic": "/ðɪs bɑks liks ə ˈlɪtl./",
+      "zh": "這個盒子有點漏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will wrap it twice.",
+      "phonetic": "/aɪ wɪl ræp ɪt twaɪs./",
+      "zh": "我幫您包兩層。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please add a paper towel.",
+      "phonetic": "/pliz æd ə ˈpeɪpər ˈtaʊəl./",
+      "zh": "請再放張紙巾。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here, two are inside.",
+      "phonetic": "/hɪr, tu ɑr ɪnˈsaɪd./",
+      "zh": "給，裡面放了兩張。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you fix the tea too?",
+      "phonetic": "/dɪd ju fɪks ðə ti tu?/",
+      "zh": "茶也幫我換好了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, that cup is lemon now.",
+      "phonetic": "/jɛs, ðæt kʌp ɪz ˈlɛmən naʊ./",
+      "zh": "換好了，那杯是檸檬茶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "And the label says no sugar.",
+      "phonetic": "/ənd ðə ˈleɪbəl sɛz noʊ ˈʃʊɡər./",
+      "zh": "標籤上還寫不加糖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "See, it is right there.",
+      "phonetic": "/si, ɪt ɪz raɪt ðɛr./",
+      "zh": "您看，就在杯子上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Great, anything we owe?",
+      "phonetic": "/ɡreɪt, ˈɛniˌθɪŋ wi oʊ?/",
+      "zh": "太好了，還需要補錢嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, the swap is free.",
+      "phonetic": "/noʊ, ðə swɑp ɪz fri./",
+      "zh": "不用，更換是免費的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You guys are kind.",
+      "phonetic": "/ju ɡaɪz ɑr kaɪnd./",
+      "zh": "你們真友善。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sorry for the mix-up.",
+      "phonetic": "/ˈsɑri fər ðə ˈmɪksˌʌp./",
+      "zh": "抱歉弄錯了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It happens, no worries.",
+      "phonetic": "/ɪt ˈhæpənz, noʊ ˈwɜriz./",
+      "zh": "難免的，別在意。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thanks for being patient.",
+      "phonetic": "/θæŋks fər ˈbiɪŋ ˈpeɪʃənt./",
+      "zh": "謝謝你們耐心等待。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the chicken warm now?",
+      "phonetic": "/ɪz ðə ˈtʃɪkən wɔrm naʊ?/",
+      "zh": "炸雞現在熱了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Feel the box, it is hot.",
+      "phonetic": "/fil ðə bɑks, ɪt ɪz hɑt./",
+      "zh": "摸摸盒子，很燙呢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Perfect, pack it with fries.",
+      "phonetic": "/ˈpɜrfɪkt, pæk ɪt wɪð fraɪz./",
+      "zh": "完美，跟薯條裝一起。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here you go, all warm.",
+      "phonetic": "/hɪr ju ɡoʊ, ɔl wɔrm./",
+      "zh": "給您，全都熱騰騰。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let me check once more.",
+      "phonetic": "/lɛt mi tʃɛk wʌns mɔr./",
+      "zh": "讓我再核對一次。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Chicken, fries, noodles, two teas.",
+      "phonetic": "/ˈtʃɪkən, fraɪz, ˈnudəlz, tu tiz./",
+      "zh": "炸雞、薯條、麵，還有兩杯茶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That is everything on the receipt.",
+      "phonetic": "/ðæt ɪz ˈɛvriθɪŋ ɑn ðə rɪˈsit./",
+      "zh": "收據上的都齊了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The sauces and napkins too.",
+      "phonetic": "/ðə ˈsɔsɪz ənd ˈnæpkɪnz tu./",
+      "zh": "醬料和紙巾也都在。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now we are really done.",
+      "phonetic": "/naʊ wi ɑr ˈrɪli dʌn./",
+      "zh": "這下真的弄好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Enjoy your dinner tonight.",
+      "phonetic": "/ɛnˈdʒɔɪ jʊr ˈdɪnər təˈnaɪt./",
+      "zh": "祝你們今晚用得開心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Back in the car seat.",
+      "phonetic": "/bæk ɪn ðə kɑr sit./",
+      "zh": "回到車座上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let us head home again.",
+      "phonetic": "/lɛt ʌs hɛd hoʊm əˈɡɛn./",
+      "zh": "我們再回家一趟。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The receipt is in my pocket.",
+      "phonetic": "/ðə rɪˈsit ɪz ɪn maɪ ˈpɑkɪt./",
+      "zh": "收據在我口袋裡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep it just in case.",
+      "phonetic": "/kip ɪt dʒʌst ɪn keɪs./",
+      "zh": "留著以防萬一。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "If anything is wrong again?",
+      "phonetic": "/ɪf ˈɛniθɪŋ ɪz rɔŋ əˈɡɛn?/",
+      "zh": "要是又出問題怎麼辦？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Call the store right away.",
+      "phonetic": "/kɔl ðə stɔr raɪt əˈweɪ./",
+      "zh": "立刻打電話給店內。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The staff checked every box.",
+      "phonetic": "/ðə stæf tʃɛkt ˈɛvri bɑks./",
+      "zh": "店員每個盒子都檢查了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They were really helpful.",
+      "phonetic": "/ðeɪ wɜr ˈrɪli ˈhɛlpfəl./",
+      "zh": "他們真的很幫忙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good service makes it easy.",
+      "phonetic": "/ɡʊd ˈsɜrvɪs meɪks ɪt ˈizi./",
+      "zh": "好服務讓一切都簡單。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "True, I feel calm again.",
+      "phonetic": "/tru, aɪ fil kɑm əˈɡɛn./",
+      "zh": "是啊，我不緊張了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Mmm, these fries smell great.",
+      "phonetic": "/məm, ðiz fraɪz smɛl ɡreɪt./",
+      "zh": "嗯，這薯條好香。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Save some for the plate.",
+      "phonetic": "/seɪv sʌm fər ðə pleɪt./",
+      "zh": "留一些裝盤用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Music on for the ride?",
+      "phonetic": "/ˈmjuzɪk ɑn fər ðə raɪd?/",
+      "zh": "車上要放音樂嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, let us just talk.",
+      "phonetic": "/noʊ, lɛt ʌs dʒʌst tɔk./",
+      "zh": "不用，我們聊天就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Both tea lids are tight.",
+      "phonetic": "/boʊθ ti lɪdz ɑr taɪt./",
+      "zh": "兩杯茶的蓋子都蓋緊了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, no spills in the car.",
+      "phonetic": "/ɡʊd, noʊ spɪlz ɪn ðə kɑr./",
+      "zh": "好，車上就不會灑了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bags are all loaded.",
+      "phonetic": "/ðə bæɡz ɑr ɔl ˈloʊdɪd./",
+      "zh": "袋子都放上車了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then drive, I am starving.",
+      "phonetic": "/ðɛn draɪv, aɪ æm ˈstɑrvɪŋ./",
+      "zh": "那快開車，我餓扁了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Home before it gets cold.",
+      "phonetic": "/hoʊm bɪˈfɔr ɪt ɡɛts koʊld./",
+      "zh": "趁涼之前趕回家。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then we eat fast.",
+      "phonetic": "/ðɛn wi it fæst./",
+      "zh": "然後我們快點吃。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This took longer than planned.",
+      "phonetic": "/ðɪs tʊk ˈlɔŋɡər ðæn plænd./",
+      "zh": "這比預計花得久。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "But the food is perfect.",
+      "phonetic": "/bʌt ðə fud ɪz ˈpɜrfɪkt./",
+      "zh": "不過餐點是完美的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Fair point, home at last.",
+      "phonetic": "/fɛr pɔɪnt, hoʊm æt læst./",
+      "zh": "說得對，終於到家了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Time to open the bags.",
+      "phonetic": "/taɪm tu ˈoʊpən ðə bæɡz./",
+      "zh": "該開袋了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Shoes off, bags on the table.",
+      "phonetic": "/ʃuz ɔf, bæɡz ɑn ðə ˈteɪbəl./",
+      "zh": "脫鞋，袋子放桌上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will get the plates.",
+      "phonetic": "/aɪ wɪl ɡɛt ðə pleɪts./",
+      "zh": "我去拿盤子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Two big plates or small?",
+      "phonetic": "/tu bɪɡ pleɪts ɔr smɔl?/",
+      "zh": "用兩個大盤還是小盤？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Big ones, we are hungry.",
+      "phonetic": "/bɪɡ wʌnz, wi ɑr ˈhʌŋɡri./",
+      "zh": "用大的，我們很餓。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The noodles go in a bowl.",
+      "phonetic": "/ðə ˈnudəlz ɡoʊ ɪn ə boʊl./",
+      "zh": "麵要裝進碗裡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will pour the tea.",
+      "phonetic": "/aɪ wɪl pɔr ðə ti./",
+      "zh": "我來倒茶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Look, the chicken is golden.",
+      "phonetic": "/lʊk, ðə ˈtʃɪkən ɪz ˈɡoʊldən./",
+      "zh": "你看，炸雞金黃誘人。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And still hot inside.",
+      "phonetic": "/ənd stɪl hɑt ɪnˈsaɪd./",
+      "zh": "裡邊還熱騰騰的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Pass me the barbecue sauce.",
+      "phonetic": "/pæs mi ðə ˈbɑrbɪkju sɔs./",
+      "zh": "把烤肉醬遞給我。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here, and the ketchup too.",
+      "phonetic": "/hɪr, ənd ðə ˈkɛtʃəp tu./",
+      "zh": "給，番茄醬也一併拿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The fries need more salt.",
+      "phonetic": "/ðə fraɪz nid mɔr sɔlt./",
+      "zh": "薯條要再鹹一點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Salt is in the little pack.",
+      "phonetic": "/sɔlt ɪz ɪn ðə ˈlɪtl pæk./",
+      "zh": "鹽在那個小包裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sit down, let us eat.",
+      "phonetic": "/sɪt daʊn, lɛt ʌs it./",
+      "zh": "坐下來，我們開動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Finally, my stomach growls.",
+      "phonetic": "/ˈfaɪnəli, maɪ ˈstʌmək ɡraʊlz./",
+      "zh": "終於，我肚子都在叫了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This first bite is amazing.",
+      "phonetic": "/ðɪs fɜrst baɪt ɪz əˈmeɪzɪŋ./",
+      "zh": "第一口太驚豔了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Told you this place is good.",
+      "phonetic": "/toʊld ju ðɪs pleɪs ɪz ɡʊd./",
+      "zh": "我說過這家很好吃吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The noodles are perfect.",
+      "phonetic": "/ðə ˈnudəlz ɑr ˈpɜrfɪkt./",
+      "zh": "麵煮得剛剛好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Not too spicy, just right.",
+      "phonetic": "/nɑt tu ˈspaɪsi, dʒʌst raɪt./",
+      "zh": "不太辣，恰到好處。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hand me a napkin, please.",
+      "phonetic": "/hænd mi ə ˈnæpkɪn, pliz./",
+      "zh": "請遞我一張紙巾。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here, the stack is right there.",
+      "phonetic": "/hɪr, ðə stæk ɪz raɪt ðɛr./",
+      "zh": "給，那一疊就在旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Save me some fries.",
+      "phonetic": "/seɪv mi sʌm fraɪz./",
+      "zh": "幫我留一些薯條。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Always, your share is safe.",
+      "phonetic": "/ˈɔlweɪz, jʊr ʃɛr ɪz seɪf./",
+      "zh": "那當然，你那份留好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My tea is still cold.",
+      "phonetic": "/maɪ ti ɪz stɪl koʊld./",
+      "zh": "我的茶還是冰的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great for this warm food.",
+      "phonetic": "/ɡreɪt fər ðɪs wɔrm fud./",
+      "zh": "配這些熱食正合適。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you like the lemon taste?",
+      "phonetic": "/du ju laɪk ðə ˈlɛmən teɪst?/",
+      "zh": "你喜歡檸檬的味道嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It goes well with chicken.",
+      "phonetic": "/ɪt ɡoʊz wɛl wɪð ˈtʃɪkən./",
+      "zh": "跟炸雞非常合。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This box was worth it.",
+      "phonetic": "/ðɪs bɑks wʌz wərθ ɪt./",
+      "zh": "這一盒真值得。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The large size is the best.",
+      "phonetic": "/ðə lɑrdʒ saɪz ɪz ðə bɛst./",
+      "zh": "大份的最劃算。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One fry fell on the floor.",
+      "phonetic": "/wʌn fraɪ fɛl ɑn ðə flɔr./",
+      "zh": "有根薯條掉到地上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Five second rule, eat it.",
+      "phonetic": "/faɪv ˈsɛkənd rul, it ɪt./",
+      "zh": "五秒定律，快吃吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Too messy, I will pass.",
+      "phonetic": "/tu ˈmɛsi, aɪ wɪl pæs./",
+      "zh": "太髒了，我不要了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Smart choice, take a new one.",
+      "phonetic": "/smɑrt tʃɔɪs, teɪk ə nu wʌn./",
+      "zh": "聰明，拿根新的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The chicken is so juicy.",
+      "phonetic": "/ðə ˈtʃɪkən ɪz soʊ ˈdʒusi./",
+      "zh": "這炸雞好多汁。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And crunchy on the outside.",
+      "phonetic": "/ənd ˈkrʌnʃi ɑn ði ˌaʊtˈsaɪd./",
+      "zh": "外皮又那麼酥脆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you order extra sauce?",
+      "phonetic": "/dɪd ju ˈɔrdər ˈɛkstrə sɔs?/",
+      "zh": "你有加點醬料嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, two barbecue, one ketchup.",
+      "phonetic": "/jɛs, tu ˈbɑrbɪkju, wʌn ˈkɛtʃəp./",
+      "zh": "有，兩包烤肉醬、一包番茄醬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I need more hot sauce.",
+      "phonetic": "/aɪ nid mɔr hɑt sɔs./",
+      "zh": "我還想要更多辣醬。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Use the last spicy pack.",
+      "phonetic": "/juz ðə læst ˈspaɪsi pæk./",
+      "zh": "把最後一包辣醬用掉吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Careful, the box is hot.",
+      "phonetic": "/ˈkɛrfəl, ðə bɑks ɪz hɑt./",
+      "zh": "小心，盒子很燙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will use the plate.",
+      "phonetic": "/aɪ wɪl juz ðə pleɪt./",
+      "zh": "我會用盤子裝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Refill my tea, please.",
+      "phonetic": "/rɪˈfɪl maɪ ti, pliz./",
+      "zh": "請幫我再添茶。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only one iced lemon left.",
+      "phonetic": "/ˈoʊnli wʌn aɪst ˈlɛmən lɛft./",
+      "zh": "只剩一杯冰檸檬茶了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Share it with me then.",
+      "phonetic": "/ʃɛr ɪt wɪð mi ðɛn./",
+      "zh": "那就跟我分著喝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Of course, half for each.",
+      "phonetic": "/ʌv kɔrs, hæf fər itʃ./",
+      "zh": "當然，一人一半。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The fries are almost gone.",
+      "phonetic": "/ðə fraɪz ɑr ˈɔlmoʊst ɡɔn./",
+      "zh": "薯條快見底了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, we need a bigger box.",
+      "phonetic": "/jɛs, wi nid ə ˈbɪɡər bɑks./",
+      "zh": "對，下次得買大盒的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bill says twice for tea.",
+      "phonetic": "/ðə bɪl sɛz twaɪs fər ti./",
+      "zh": "帳單上茶收了兩次。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Oh no, they charged twice.",
+      "phonetic": "/oʊ noʊ, ðeɪ tʃɑrdʒd twaɪs./",
+      "zh": "不會吧，重複扣款了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We must call the store.",
+      "phonetic": "/wi məst kɔl ðə stɔr./",
+      "zh": "我們得打電話給店內。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Call now, it is quick.",
+      "phonetic": "/kɔl naʊ, ɪt ɪz kwɪk./",
+      "zh": "現在就打，很快的事。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hi, calling about order forty-two.",
+      "phonetic": "/haɪ, ˈkɔlɪŋ əˈbaʊt ˈɔrdər ˈfɔrti tu./",
+      "zh": "您好，我打電話來問四十二號訂單。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, how can I help?",
+      "phonetic": "/jɛs, haʊ kæn aɪ hɛlp?/",
+      "zh": "您好，有什麼能幫忙？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My receipt shows two charges.",
+      "phonetic": "/maɪ rɪˈsit ʃoʊz tu ˈtʃɑrdʒɪz./",
+      "zh": "我的收據顯示扣了兩次。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sorry, let me check now.",
+      "phonetic": "/ˈsɑri, lɛt mi tʃɛk naʊ./",
+      "zh": "抱歉，我現在查一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hmm, the total is wrong.",
+      "phonetic": "/həm, ðə ˈtoʊtl ɪz rɔŋ./",
+      "zh": "嗯，總額不對。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You paid twice, I see it.",
+      "phonetic": "/ju peɪd twaɪs, aɪ si ɪt./",
+      "zh": "看到了，您付了兩次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you refund the extra?",
+      "phonetic": "/kæn ju rɪˈfʌnd ði ˈɛkstrə?/",
+      "zh": "能退多扣的那筆嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the refund is on its way.",
+      "phonetic": "/jɛs, ðə ˈrifʌnd ɪz ɑn ɪts weɪ./",
+      "zh": "可以，退款已經在處理。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How long will it take?",
+      "phonetic": "/haʊ lɔŋ wɪl ɪt teɪk?/",
+      "zh": "要到帳需要多久？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two to three business days.",
+      "phonetic": "/tu tu θri ˈbɪznɪs deɪz./",
+      "zh": "兩到三個工作天。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Okay, I can wait.",
+      "phonetic": "/oʊˈkeɪ, aɪ kæn weɪt./",
+      "zh": "好，我可以等。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thank you for telling us.",
+      "phonetic": "/θæŋk ju fər ˈtɛlɪŋ ʌs./",
+      "zh": "謝謝您主動告訴我們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Also, the service was great.",
+      "phonetic": "/ˈɔlsoʊ, ðə ˈsɜrvɪs wʌz ɡreɪt./",
+      "zh": "還有，今天的服務很好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will share that with the team.",
+      "phonetic": "/aɪ wɪl ʃɛr ðæt wɪð ðə tim./",
+      "zh": "我會把稱讚轉給團隊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please do, they were kind.",
+      "phonetic": "/pliz du, ðeɪ wɜr kaɪnd./",
+      "zh": "麻煩了，他們真的很親切。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "See you at your next order.",
+      "phonetic": "/si ju æt jʊr nɛkst ˈɔrdər./",
+      "zh": "期待您下次訂餐。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We will be back soon.",
+      "phonetic": "/wi wɪl bi bæk sun./",
+      "zh": "我們很快會再光臨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is done, all fixed.",
+      "phonetic": "/ɪt ɪz dʌn, ɔl fɪkst./",
+      "zh": "電話打完，都搞定了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Look, the app says refund sent.",
+      "phonetic": "/lʊk, ði æp sɛz ˈrifʌnd sɛnt./",
+      "zh": "你看，軟體顯示退款已送出。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Perfect, now back to dinner.",
+      "phonetic": "/ˈpɜrfɪkt, naʊ bæk tu ˈdɪnər./",
+      "zh": "太好了，現在回去吃飯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My iced tea is half gone.",
+      "phonetic": "/maɪ aɪst ti ɪz hæf ɡɔn./",
+      "zh": "我的冰茶喝掉一半了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep some for after.",
+      "phonetic": "/kip sʌm fər ˈæftər./",
+      "zh": "留一些餐後再喝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Next time order two chickens.",
+      "phonetic": "/nɛkst taɪm ˈɔrdər tu ˈtʃɪkənz./",
+      "zh": "下次點兩份炸雞。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it went too fast.",
+      "phonetic": "/jɛs, ɪt wɛnt tu fæst./",
+      "zh": "對，那盒一下就沒了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We should check the bill first.",
+      "phonetic": "/wi ʃʊd tʃɛk ðə bɪl fɜrst./",
+      "zh": "我們該先核對帳單。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Right, twice is not okay.",
+      "phonetic": "/raɪt, twaɪs ɪz nɑt oʊˈkeɪ./",
+      "zh": "沒錯，扣兩次可不行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Also order more napkins.",
+      "phonetic": "/ˈɔlsoʊ ˈɔrdər mɔr ˈnæpkɪnz./",
+      "zh": "下次再多點紙巾。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We used the whole stack.",
+      "phonetic": "/wi juzd ðə hoʊl stæk./",
+      "zh": "我們把一整疊都用完了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Add the noodles again.",
+      "phonetic": "/æd ðə ˈnudəlz əˈɡɛn./",
+      "zh": "下次再把麵加上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They were the best part.",
+      "phonetic": "/ðeɪ wɜr ðə bɛst pɑrt./",
+      "zh": "那碗麵是最棒的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Pickup beats delivery tonight.",
+      "phonetic": "/ˈpɪkˌʌp bits dɪˈlɪvəri təˈnaɪt./",
+      "zh": "今晚自取勝過外送。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fresher food, no waiting driver.",
+      "phonetic": "/ˈfrɛʃər fud, noʊ ˈweɪtɪŋ ˈdraɪvər./",
+      "zh": "餐點更新鮮，還不用等外送員。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Save the app for Friday.",
+      "phonetic": "/seɪv ði æp fər ˈfraɪdeɪ./",
+      "zh": "留到星期五再用軟體點餐。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same menu, same order?",
+      "phonetic": "/seɪm ˈmɛnju, seɪm ˈɔrdər?/",
+      "zh": "同樣菜單，同樣點法？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Maybe try the soup next.",
+      "phonetic": "/ˈmeɪbi traɪ ðə sup nɛkst./",
+      "zh": "也許下次試試湯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good plan, I like soup.",
+      "phonetic": "/ɡʊd plæn, aɪ laɪk sup./",
+      "zh": "好主意，我愛喝湯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for tonight, my love.",
+      "phonetic": "/θæŋks fər təˈnaɪt, maɪ lʌv./",
+      "zh": "謝謝今晚陪伴，親愛的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thank you for the takeout.",
+      "phonetic": "/θæŋk ju fər ðə ˈtekaʊt./",
+      "zh": "也謝謝你張羅外帶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The leftovers go in boxes.",
+      "phonetic": "/ðə ˈlɛftoʊvərz ɡoʊ ɪn ˈbɑksɪz./",
+      "zh": "剩菜要裝進保鮮盒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fridge, and tomorrow lunch.",
+      "phonetic": "/frɪdʒ, ənd təˈmɑroʊ lʌntʃ./",
+      "zh": "放冰箱，明天當午餐。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One fry waits for the cat.",
+      "phonetic": "/wʌn fraɪ weɪts fər ðə kæt./",
+      "zh": "有根薯條是留給貓的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No fried food for cats.",
+      "phonetic": "/noʊ fraɪd fud fər kæts./",
+      "zh": "貓咪不能吃油炸物。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sorry, little kitty.",
+      "phonetic": "/ˈsɑri, ˈlɪtl ˈkɪti./",
+      "zh": "抱歉囉，小貓咪。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Give it to us instead.",
+      "phonetic": "/ɡɪv ɪt tu ʌs ɪnˈstɛd./",
+      "zh": "那還不如我們自己吃。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Last bite belongs to me.",
+      "phonetic": "/læst baɪt bɪˈlɔŋz tu mi./",
+      "zh": "最後一口歸我。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Race you, it is mine.",
+      "phonetic": "/reɪs ju, ɪt ɪz maɪn./",
+      "zh": "來比快，那口是我的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That was a good night.",
+      "phonetic": "/ðæt wʌz ə ɡʊd naɪt./",
+      "zh": "今晚真美好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Takeout, talk, no dishes.",
+      "phonetic": "/ˈtekaʊt, tɔk, noʊ ˈdɪʃɪz./",
+      "zh": "有外帶、有聊天，還不用洗碗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sleep well, my belly is full.",
+      "phonetic": "/slip wɛl, maɪ ˈbɛli ɪz fʊl./",
+      "zh": "晚安，肚子飽飽的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sweet dreams, see you soon.",
+      "phonetic": "/swit drimz, si ju sun./",
+      "zh": "好夢，回頭見。"
+    }
+  ]
+}

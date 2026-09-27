@@ -47,6 +47,15 @@ configs/channels/
 # Pipeline run outputs
 output/
 
+# 预生成脚本库：只入库成品（manifest.json + NNN_Topic/script.json）。
+# _ / . 前缀的都是机器本地产物或生成过程工作文件（.llm_cache LLM 批次缓存、
+# _parts 分片中间件、_review 交叉审查、_audit 体检、_research 调研、
+# _existing_lines.txt 防重行库、_recycle_bin 管理页删除项），代码本身也一律跳过 _ 前缀目录。
+ai_scripts*/.*
+ai_scripts*/_*
+# 主题目录里的断点文件记的是本机 run 路径，且没有任何代码读它
+ai_scripts*/*/checkpoint.json
+
 # Atlas split test outputs (manual verification only)
 test/split_test_output/
 

@@ -1,0 +1,2458 @@
+{
+  "title": "Everyday Phrases — Saying Goodnight",
+  "title_zh": "說晚安",
+  "scene_zh": "說晚安 · 情境對話",
+  "title_quote": "Time to sleep.",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】🌙 實用說晚安必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — Saying Goodnight",
+  "youtube_description": "睡著學英文！這部影片收錄實用說晚安情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫），不用背，睡前聽就會。重複播放，讓英文自然進入你的大腦。👍 想學更多生活場景，請留言告訴我！別忘了訂閱+按讚。 #英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical Saying Goodnight phrase pairs (each pair: male normal speed → female slow speed → combined dialogue). No memorization needed—just listen before bed and absorb naturally. If you want more real-life scenarios, leave a comment! Subscribe and like!",
+  "youtube_tags": [
+    "英文聽力",
+    "睡前英文",
+    "說晚安英文",
+    "English listening",
+    "Sleep learning",
+    "A2 English",
+    "常用英文短語",
+    "零基礎英文",
+    "慢速英文",
+    "英文口語",
+    "Learn English",
+    "English for daily life",
+    "ESL",
+    "English conversation",
+    "聽英語",
+    "英文學習"
+  ],
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "Saying Goodnight",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "Saying Goodnight",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Dating",
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "Time to sleep.",
+      "phonetic": "/taɪm tɪ slip./",
+      "zh": "該睡了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One more hug, please.",
+      "phonetic": "/wən mɔr həg, pliz./",
+      "zh": "再抱一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The day was good.",
+      "phonetic": "/ðə deɪ wɑz gʊd./",
+      "zh": "今天很好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "With you, yes.",
+      "phonetic": "/wɪθ ju, jɛs./",
+      "zh": "有你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lights are low.",
+      "phonetic": "/ðə laɪts ər loʊ./",
+      "zh": "燈暗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Dim them, please.",
+      "phonetic": "/dɪm ðɛm, pliz./",
+      "zh": "調暗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The text, good night.",
+      "phonetic": "/ðə tɛkst, gʊd naɪt./",
+      "zh": "簡訊晚安。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sleep well, love.",
+      "phonetic": "/slip wɛl, ləv./",
+      "zh": "好夢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kiss on brow.",
+      "phonetic": "/ðə kɪs ɔn braʊ./",
+      "zh": "額上吻。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Soft, yes.",
+      "phonetic": "/sɔft, jɛs./",
+      "zh": "輕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The door, half.",
+      "phonetic": "/ðə dɔr, hæf./",
+      "zh": "門半。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In case you call.",
+      "phonetic": "/ɪn keɪs ju kɔl./",
+      "zh": "怕你叫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The blanket is warm.",
+      "phonetic": "/ðə ˈblæŋkɪt ɪz wɔrm./",
+      "zh": "毯暖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Snug, yes.",
+      "phonetic": "/snəg, jɛs./",
+      "zh": "暖呼呼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The phone is off.",
+      "phonetic": "/ðə foʊn ɪz ɔf./",
+      "zh": "手機關。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No beeps, please.",
+      "phonetic": "/noʊ bips, pliz./",
+      "zh": "別響。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat is in.",
+      "phonetic": "/ðə kæt ɪz ɪn./",
+      "zh": "貓進。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Curled, asleep.",
+      "phonetic": "/kərld, əsˈlip./",
+      "zh": "蜷睡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The story, one.",
+      "phonetic": "/ðə ˈstɔri, wən./",
+      "zh": "故事一則。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Short, then sleep.",
+      "phonetic": "/ʃɔrt, ðɛn slip./",
+      "zh": "短，睡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The yawn is big.",
+      "phonetic": "/ðə jɔn ɪz bɪg./",
+      "zh": "大哈欠。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tired, yes.",
+      "phonetic": "/taɪərd, jɛs./",
+      "zh": "累。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The routine is set.",
+      "phonetic": "/ðə ruˈtin ɪz sɛt./",
+      "zh": "例行定。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Brush, then bed.",
+      "phonetic": "/brəʃ, ðɛn bɛd./",
+      "zh": "刷再牀。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wish, sweet.",
+      "phonetic": "/ðə wɪʃ, swit./",
+      "zh": "祝福甜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Dream of us.",
+      "phonetic": "/drim əv ˈjuˈɛs./",
+      "zh": "夢我們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The silence is calm.",
+      "phonetic": "/ðə ˈsaɪləns ɪz kɑm./",
+      "zh": "安靜平靜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just us, yes.",
+      "phonetic": "/ʤɪst ˈjuˈɛs, jɛs./",
+      "zh": "只有我們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The good night, love.",
+      "phonetic": "/ðə gʊd naɪt, ləv./",
+      "zh": "晚安，親愛的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Love you, more.",
+      "phonetic": "/ləv ju, mɔr./",
+      "zh": "更愛你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The moon is bright.",
+      "phonetic": "/ðə mun ɪz braɪt./",
+      "zh": "月亮亮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Through the blind.",
+      "phonetic": "/θru ðə blaɪnd./",
+      "zh": "透百葉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tea is warm.",
+      "phonetic": "/ðə ti ɪz wɔrm./",
+      "zh": "茶溫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Before sleep, yes.",
+      "phonetic": "/ˌbiˈfɔr slip, jɛs./",
+      "zh": "睡前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cuddle, brief.",
+      "phonetic": "/ðə ˈkədəl, brif./",
+      "zh": "短暫抱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Warmth, yes.",
+      "phonetic": "/wɔrmθ, jɛs./",
+      "zh": "溫暖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The plan tomorrow.",
+      "phonetic": "/ðə plæn təˈmɑˌroʊ./",
+      "zh": "明天計畫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same time, maybe.",
+      "phonetic": "/seɪm taɪm, ˈmeɪbi./",
+      "zh": "同時間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The breath slows.",
+      "phonetic": "/ðə brɛθ sloʊz./",
+      "zh": "呼吸緩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Drifting, yes.",
+      "phonetic": "/ˈdrɪftɪŋ, jɛs./",
+      "zh": "飄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The light off.",
+      "phonetic": "/ðə laɪt ɔf./",
+      "zh": "關燈。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Dark, calm.",
+      "phonetic": "/dɑrk, kɑm./",
+      "zh": "暗靜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The whisper, love.",
+      "phonetic": "/ðə ˈwɪspər, ləv./",
+      "zh": "低語愛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hear it, yes.",
+      "phonetic": "/hir ɪt, jɛs./",
+      "zh": "聽到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The day ends.",
+      "phonetic": "/ðə deɪ ɛndz./",
+      "zh": "一天結束。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Well, with you.",
+      "phonetic": "/wɛl, wɪθ ju./",
+      "zh": "好，有你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pillow is soft.",
+      "phonetic": "/ðə ˈpɪloʊ ɪz sɔft./",
+      "zh": "枕頭軟。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rest, please.",
+      "phonetic": "/rɛst, pliz./",
+      "zh": "休息。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The good night sent.",
+      "phonetic": "/ðə gʊd naɪt sɛnt./",
+      "zh": "晚安傳。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Smile, sleep.",
+      "phonetic": "/smaɪl, slip./",
+      "zh": "笑，睡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The peace is ours.",
+      "phonetic": "/ðə pis ɪz ɑrz./",
+      "zh": "平靜是我們的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold it, yes.",
+      "phonetic": "/hoʊld ɪt, jɛs./",
+      "zh": "把握。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kiss, last.",
+      "phonetic": "/ðə kɪs, læst./",
+      "zh": "最後一吻。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sweet dreams, love.",
+      "phonetic": "/swit drimz, ləv./",
+      "zh": "好夢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The door clicks.",
+      "phonetic": "/ðə dɔr klɪks./",
+      "zh": "門輕關。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quiet, yes.",
+      "phonetic": "/kwaɪət, jɛs./",
+      "zh": "輕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The night is still.",
+      "phonetic": "/ðə naɪt ɪz stɪl./",
+      "zh": "夜靜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sleep tight, all.",
+      "phonetic": "/slip taɪt, ɔl./",
+      "zh": "好睡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The love is calm.",
+      "phonetic": "/ðə ləv ɪz kɑm./",
+      "zh": "愛平靜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Safe, yes.",
+      "phonetic": "/seɪf, jɛs./",
+      "zh": "安全。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the night.",
+      "phonetic": "/θæŋks fər ðə naɪt./",
+      "zh": "謝謝今夜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Goodnight, my pal.",
+      "phonetic": "/ˈgʊdˌnaɪt, maɪ pæl./",
+      "zh": "晚安。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the night.",
+      "phonetic": "/θæŋks fər ðə naɪt./",
+      "zh": "謝謝今夜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Goodnight, my pal.",
+      "phonetic": "/ˈgʊdˌnaɪt, maɪ pæl./",
+      "zh": "晚安。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The love is calm.",
+      "phonetic": "/ðə ləv ɪz kɑm./",
+      "zh": "愛平靜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Safe, yes.",
+      "phonetic": "/seɪf, jɛs./",
+      "zh": "安全。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The night is still.",
+      "phonetic": "/ðə naɪt ɪz stɪl./",
+      "zh": "夜靜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sleep tight, all.",
+      "phonetic": "/slip taɪt, ɔl./",
+      "zh": "好睡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The door clicks.",
+      "phonetic": "/ðə dɔr klɪks./",
+      "zh": "門輕關。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quiet, yes.",
+      "phonetic": "/kwaɪət, jɛs./",
+      "zh": "輕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kiss, last.",
+      "phonetic": "/ðə kɪs, læst./",
+      "zh": "最後一吻。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sweet dreams, love.",
+      "phonetic": "/swit drimz, ləv./",
+      "zh": "好夢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The peace is ours.",
+      "phonetic": "/ðə pis ɪz ɑrz./",
+      "zh": "平靜是我們的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold it, yes.",
+      "phonetic": "/hoʊld ɪt, jɛs./",
+      "zh": "把握。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The good night sent.",
+      "phonetic": "/ðə gʊd naɪt sɛnt./",
+      "zh": "晚安傳。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Smile, sleep.",
+      "phonetic": "/smaɪl, slip./",
+      "zh": "笑，睡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pillow is soft.",
+      "phonetic": "/ðə ˈpɪloʊ ɪz sɔft./",
+      "zh": "枕頭軟。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rest, please.",
+      "phonetic": "/rɛst, pliz./",
+      "zh": "休息。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The day ends.",
+      "phonetic": "/ðə deɪ ɛndz./",
+      "zh": "一天結束。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Well, with you.",
+      "phonetic": "/wɛl, wɪθ ju./",
+      "zh": "好，有你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The whisper, love.",
+      "phonetic": "/ðə ˈwɪspər, ləv./",
+      "zh": "低語愛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hear it, yes.",
+      "phonetic": "/hir ɪt, jɛs./",
+      "zh": "聽到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The light off.",
+      "phonetic": "/ðə laɪt ɔf./",
+      "zh": "關燈。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Dark, calm.",
+      "phonetic": "/dɑrk, kɑm./",
+      "zh": "暗靜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The breath slows.",
+      "phonetic": "/ðə brɛθ sloʊz./",
+      "zh": "呼吸緩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Drifting, yes.",
+      "phonetic": "/ˈdrɪftɪŋ, jɛs./",
+      "zh": "飄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The plan tomorrow.",
+      "phonetic": "/ðə plæn təˈmɑˌroʊ./",
+      "zh": "明天計畫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same time, maybe.",
+      "phonetic": "/seɪm taɪm, ˈmeɪbi./",
+      "zh": "同時間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cuddle, brief.",
+      "phonetic": "/ðə ˈkədəl, brif./",
+      "zh": "短暫抱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Warmth, yes.",
+      "phonetic": "/wɔrmθ, jɛs./",
+      "zh": "溫暖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tea is warm.",
+      "phonetic": "/ðə ti ɪz wɔrm./",
+      "zh": "茶溫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Before sleep, yes.",
+      "phonetic": "/ˌbiˈfɔr slip, jɛs./",
+      "zh": "睡前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The moon is bright.",
+      "phonetic": "/ðə mun ɪz braɪt./",
+      "zh": "月亮亮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Through the blind.",
+      "phonetic": "/θru ðə blaɪnd./",
+      "zh": "透百葉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The good night, love.",
+      "phonetic": "/ðə gʊd naɪt, ləv./",
+      "zh": "晚安，親愛的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Love you, more.",
+      "phonetic": "/ləv ju, mɔr./",
+      "zh": "更愛你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The silence is calm.",
+      "phonetic": "/ðə ˈsaɪləns ɪz kɑm./",
+      "zh": "安靜平靜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just us, yes.",
+      "phonetic": "/ʤɪst ˈjuˈɛs, jɛs./",
+      "zh": "只有我們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wish, sweet.",
+      "phonetic": "/ðə wɪʃ, swit./",
+      "zh": "祝福甜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Dream of us.",
+      "phonetic": "/drim əv ˈjuˈɛs./",
+      "zh": "夢我們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The routine is set.",
+      "phonetic": "/ðə ruˈtin ɪz sɛt./",
+      "zh": "例行定。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Brush, then bed.",
+      "phonetic": "/brəʃ, ðɛn bɛd./",
+      "zh": "刷再牀。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The yawn is big.",
+      "phonetic": "/ðə jɔn ɪz bɪg./",
+      "zh": "大哈欠。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tired, yes.",
+      "phonetic": "/taɪərd, jɛs./",
+      "zh": "累。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The story, one.",
+      "phonetic": "/ðə ˈstɔri, wən./",
+      "zh": "故事一則。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Short, then sleep.",
+      "phonetic": "/ʃɔrt, ðɛn slip./",
+      "zh": "短，睡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat is in.",
+      "phonetic": "/ðə kæt ɪz ɪn./",
+      "zh": "貓進。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Curled, asleep.",
+      "phonetic": "/kərld, əsˈlip./",
+      "zh": "蜷睡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The phone is off.",
+      "phonetic": "/ðə foʊn ɪz ɔf./",
+      "zh": "手機關。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No beeps, please.",
+      "phonetic": "/noʊ bips, pliz./",
+      "zh": "別響。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The blanket is warm.",
+      "phonetic": "/ðə ˈblæŋkɪt ɪz wɔrm./",
+      "zh": "毯暖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Snug, yes.",
+      "phonetic": "/snəg, jɛs./",
+      "zh": "暖呼呼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The door, half.",
+      "phonetic": "/ðə dɔr, hæf./",
+      "zh": "門半。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In case you call.",
+      "phonetic": "/ɪn keɪs ju kɔl./",
+      "zh": "怕你叫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kiss on brow.",
+      "phonetic": "/ðə kɪs ɔn braʊ./",
+      "zh": "額上吻。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Soft, yes.",
+      "phonetic": "/sɔft, jɛs./",
+      "zh": "輕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The text, good night.",
+      "phonetic": "/ðə tɛkst, gʊd naɪt./",
+      "zh": "簡訊晚安。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sleep well, love.",
+      "phonetic": "/slip wɛl, ləv./",
+      "zh": "好夢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lights are low.",
+      "phonetic": "/ðə laɪts ər loʊ./",
+      "zh": "燈暗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Dim them, please.",
+      "phonetic": "/dɪm ðɛm, pliz./",
+      "zh": "調暗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The day was good.",
+      "phonetic": "/ðə deɪ wɑz gʊd./",
+      "zh": "今天很好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "With you, yes.",
+      "phonetic": "/wɪθ ju, jɛs./",
+      "zh": "有你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Time to sleep.",
+      "phonetic": "/taɪm tɪ slip./",
+      "zh": "該睡了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One more hug, please.",
+      "phonetic": "/wən mɔr həg, pliz./",
+      "zh": "再抱一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Time to sleep.",
+      "phonetic": "/taɪm tɪ slip./",
+      "zh": "該睡了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One more hug, please.",
+      "phonetic": "/wən mɔr həg, pliz./",
+      "zh": "再抱一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The day was good.",
+      "phonetic": "/ðə deɪ wɑz gʊd./",
+      "zh": "今天很好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "With you, yes.",
+      "phonetic": "/wɪθ ju, jɛs./",
+      "zh": "有你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lights are low.",
+      "phonetic": "/ðə laɪts ər loʊ./",
+      "zh": "燈暗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Dim them, please.",
+      "phonetic": "/dɪm ðɛm, pliz./",
+      "zh": "調暗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The text, good night.",
+      "phonetic": "/ðə tɛkst, gʊd naɪt./",
+      "zh": "簡訊晚安。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sleep well, love.",
+      "phonetic": "/slip wɛl, ləv./",
+      "zh": "好夢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kiss on brow.",
+      "phonetic": "/ðə kɪs ɔn braʊ./",
+      "zh": "額上吻。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Soft, yes.",
+      "phonetic": "/sɔft, jɛs./",
+      "zh": "輕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The door, half.",
+      "phonetic": "/ðə dɔr, hæf./",
+      "zh": "門半。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In case you call.",
+      "phonetic": "/ɪn keɪs ju kɔl./",
+      "zh": "怕你叫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The blanket is warm.",
+      "phonetic": "/ðə ˈblæŋkɪt ɪz wɔrm./",
+      "zh": "毯暖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Snug, yes.",
+      "phonetic": "/snəg, jɛs./",
+      "zh": "暖呼呼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The phone is off.",
+      "phonetic": "/ðə foʊn ɪz ɔf./",
+      "zh": "手機關。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No beeps, please.",
+      "phonetic": "/noʊ bips, pliz./",
+      "zh": "別響。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat is in.",
+      "phonetic": "/ðə kæt ɪz ɪn./",
+      "zh": "貓進。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Curled, asleep.",
+      "phonetic": "/kərld, əsˈlip./",
+      "zh": "蜷睡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The story, one.",
+      "phonetic": "/ðə ˈstɔri, wən./",
+      "zh": "故事一則。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Short, then sleep.",
+      "phonetic": "/ʃɔrt, ðɛn slip./",
+      "zh": "短，睡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The yawn is big.",
+      "phonetic": "/ðə jɔn ɪz bɪg./",
+      "zh": "大哈欠。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tired, yes.",
+      "phonetic": "/taɪərd, jɛs./",
+      "zh": "累。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The routine is set.",
+      "phonetic": "/ðə ruˈtin ɪz sɛt./",
+      "zh": "例行定。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Brush, then bed.",
+      "phonetic": "/brəʃ, ðɛn bɛd./",
+      "zh": "刷再牀。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wish, sweet.",
+      "phonetic": "/ðə wɪʃ, swit./",
+      "zh": "祝福甜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Dream of us.",
+      "phonetic": "/drim əv ˈjuˈɛs./",
+      "zh": "夢我們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The silence is calm.",
+      "phonetic": "/ðə ˈsaɪləns ɪz kɑm./",
+      "zh": "安靜平靜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just us, yes.",
+      "phonetic": "/ʤɪst ˈjuˈɛs, jɛs./",
+      "zh": "只有我們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The good night, love.",
+      "phonetic": "/ðə gʊd naɪt, ləv./",
+      "zh": "晚安，親愛的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Love you, more.",
+      "phonetic": "/ləv ju, mɔr./",
+      "zh": "更愛你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The moon is bright.",
+      "phonetic": "/ðə mun ɪz braɪt./",
+      "zh": "月亮亮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Through the blind.",
+      "phonetic": "/θru ðə blaɪnd./",
+      "zh": "透百葉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tea is warm.",
+      "phonetic": "/ðə ti ɪz wɔrm./",
+      "zh": "茶溫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Before sleep, yes.",
+      "phonetic": "/ˌbiˈfɔr slip, jɛs./",
+      "zh": "睡前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cuddle, brief.",
+      "phonetic": "/ðə ˈkədəl, brif./",
+      "zh": "短暫抱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Warmth, yes.",
+      "phonetic": "/wɔrmθ, jɛs./",
+      "zh": "溫暖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The plan tomorrow.",
+      "phonetic": "/ðə plæn təˈmɑˌroʊ./",
+      "zh": "明天計畫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same time, maybe.",
+      "phonetic": "/seɪm taɪm, ˈmeɪbi./",
+      "zh": "同時間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The breath slows.",
+      "phonetic": "/ðə brɛθ sloʊz./",
+      "zh": "呼吸緩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Drifting, yes.",
+      "phonetic": "/ˈdrɪftɪŋ, jɛs./",
+      "zh": "飄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The light off.",
+      "phonetic": "/ðə laɪt ɔf./",
+      "zh": "關燈。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Dark, calm.",
+      "phonetic": "/dɑrk, kɑm./",
+      "zh": "暗靜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The whisper, love.",
+      "phonetic": "/ðə ˈwɪspər, ləv./",
+      "zh": "低語愛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hear it, yes.",
+      "phonetic": "/hir ɪt, jɛs./",
+      "zh": "聽到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The day ends.",
+      "phonetic": "/ðə deɪ ɛndz./",
+      "zh": "一天結束。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Well, with you.",
+      "phonetic": "/wɛl, wɪθ ju./",
+      "zh": "好，有你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pillow is soft.",
+      "phonetic": "/ðə ˈpɪloʊ ɪz sɔft./",
+      "zh": "枕頭軟。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rest, please.",
+      "phonetic": "/rɛst, pliz./",
+      "zh": "休息。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The good night sent.",
+      "phonetic": "/ðə gʊd naɪt sɛnt./",
+      "zh": "晚安傳。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Smile, sleep.",
+      "phonetic": "/smaɪl, slip./",
+      "zh": "笑，睡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The peace is ours.",
+      "phonetic": "/ðə pis ɪz ɑrz./",
+      "zh": "平靜是我們的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold it, yes.",
+      "phonetic": "/hoʊld ɪt, jɛs./",
+      "zh": "把握。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kiss, last.",
+      "phonetic": "/ðə kɪs, læst./",
+      "zh": "最後一吻。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sweet dreams, love.",
+      "phonetic": "/swit drimz, ləv./",
+      "zh": "好夢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The door clicks.",
+      "phonetic": "/ðə dɔr klɪks./",
+      "zh": "門輕關。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quiet, yes.",
+      "phonetic": "/kwaɪət, jɛs./",
+      "zh": "輕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The night is still.",
+      "phonetic": "/ðə naɪt ɪz stɪl./",
+      "zh": "夜靜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sleep tight, all.",
+      "phonetic": "/slip taɪt, ɔl./",
+      "zh": "好睡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The love is calm.",
+      "phonetic": "/ðə ləv ɪz kɑm./",
+      "zh": "愛平靜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Safe, yes.",
+      "phonetic": "/seɪf, jɛs./",
+      "zh": "安全。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the night.",
+      "phonetic": "/θæŋks fər ðə naɪt./",
+      "zh": "謝謝今夜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Goodnight, my pal.",
+      "phonetic": "/ˈgʊdˌnaɪt, maɪ pæl./",
+      "zh": "晚安。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the night.",
+      "phonetic": "/θæŋks fər ðə naɪt./",
+      "zh": "謝謝今夜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Goodnight, my pal.",
+      "phonetic": "/ˈgʊdˌnaɪt, maɪ pæl./",
+      "zh": "晚安。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The love is calm.",
+      "phonetic": "/ðə ləv ɪz kɑm./",
+      "zh": "愛平靜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Safe, yes.",
+      "phonetic": "/seɪf, jɛs./",
+      "zh": "安全。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The night is still.",
+      "phonetic": "/ðə naɪt ɪz stɪl./",
+      "zh": "夜靜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sleep tight, all.",
+      "phonetic": "/slip taɪt, ɔl./",
+      "zh": "好睡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The door clicks.",
+      "phonetic": "/ðə dɔr klɪks./",
+      "zh": "門輕關。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quiet, yes.",
+      "phonetic": "/kwaɪət, jɛs./",
+      "zh": "輕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kiss, last.",
+      "phonetic": "/ðə kɪs, læst./",
+      "zh": "最後一吻。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sweet dreams, love.",
+      "phonetic": "/swit drimz, ləv./",
+      "zh": "好夢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The peace is ours.",
+      "phonetic": "/ðə pis ɪz ɑrz./",
+      "zh": "平靜是我們的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold it, yes.",
+      "phonetic": "/hoʊld ɪt, jɛs./",
+      "zh": "把握。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The good night sent.",
+      "phonetic": "/ðə gʊd naɪt sɛnt./",
+      "zh": "晚安傳。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Smile, sleep.",
+      "phonetic": "/smaɪl, slip./",
+      "zh": "笑，睡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pillow is soft.",
+      "phonetic": "/ðə ˈpɪloʊ ɪz sɔft./",
+      "zh": "枕頭軟。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rest, please.",
+      "phonetic": "/rɛst, pliz./",
+      "zh": "休息。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The day ends.",
+      "phonetic": "/ðə deɪ ɛndz./",
+      "zh": "一天結束。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Well, with you.",
+      "phonetic": "/wɛl, wɪθ ju./",
+      "zh": "好，有你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The whisper, love.",
+      "phonetic": "/ðə ˈwɪspər, ləv./",
+      "zh": "低語愛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hear it, yes.",
+      "phonetic": "/hir ɪt, jɛs./",
+      "zh": "聽到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The light off.",
+      "phonetic": "/ðə laɪt ɔf./",
+      "zh": "關燈。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Dark, calm.",
+      "phonetic": "/dɑrk, kɑm./",
+      "zh": "暗靜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The breath slows.",
+      "phonetic": "/ðə brɛθ sloʊz./",
+      "zh": "呼吸緩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Drifting, yes.",
+      "phonetic": "/ˈdrɪftɪŋ, jɛs./",
+      "zh": "飄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The plan tomorrow.",
+      "phonetic": "/ðə plæn təˈmɑˌroʊ./",
+      "zh": "明天計畫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same time, maybe.",
+      "phonetic": "/seɪm taɪm, ˈmeɪbi./",
+      "zh": "同時間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cuddle, brief.",
+      "phonetic": "/ðə ˈkədəl, brif./",
+      "zh": "短暫抱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Warmth, yes.",
+      "phonetic": "/wɔrmθ, jɛs./",
+      "zh": "溫暖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tea is warm.",
+      "phonetic": "/ðə ti ɪz wɔrm./",
+      "zh": "茶溫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Before sleep, yes.",
+      "phonetic": "/ˌbiˈfɔr slip, jɛs./",
+      "zh": "睡前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The moon is bright.",
+      "phonetic": "/ðə mun ɪz braɪt./",
+      "zh": "月亮亮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Through the blind.",
+      "phonetic": "/θru ðə blaɪnd./",
+      "zh": "透百葉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The good night, love.",
+      "phonetic": "/ðə gʊd naɪt, ləv./",
+      "zh": "晚安，親愛的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Love you, more.",
+      "phonetic": "/ləv ju, mɔr./",
+      "zh": "更愛你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The silence is calm.",
+      "phonetic": "/ðə ˈsaɪləns ɪz kɑm./",
+      "zh": "安靜平靜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just us, yes.",
+      "phonetic": "/ʤɪst ˈjuˈɛs, jɛs./",
+      "zh": "只有我們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wish, sweet.",
+      "phonetic": "/ðə wɪʃ, swit./",
+      "zh": "祝福甜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Dream of us.",
+      "phonetic": "/drim əv ˈjuˈɛs./",
+      "zh": "夢我們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The routine is set.",
+      "phonetic": "/ðə ruˈtin ɪz sɛt./",
+      "zh": "例行定。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Brush, then bed.",
+      "phonetic": "/brəʃ, ðɛn bɛd./",
+      "zh": "刷再牀。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The yawn is big.",
+      "phonetic": "/ðə jɔn ɪz bɪg./",
+      "zh": "大哈欠。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tired, yes.",
+      "phonetic": "/taɪərd, jɛs./",
+      "zh": "累。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The story, one.",
+      "phonetic": "/ðə ˈstɔri, wən./",
+      "zh": "故事一則。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Short, then sleep.",
+      "phonetic": "/ʃɔrt, ðɛn slip./",
+      "zh": "短，睡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat is in.",
+      "phonetic": "/ðə kæt ɪz ɪn./",
+      "zh": "貓進。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Curled, asleep.",
+      "phonetic": "/kərld, əsˈlip./",
+      "zh": "蜷睡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The phone is off.",
+      "phonetic": "/ðə foʊn ɪz ɔf./",
+      "zh": "手機關。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No beeps, please.",
+      "phonetic": "/noʊ bips, pliz./",
+      "zh": "別響。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The blanket is warm.",
+      "phonetic": "/ðə ˈblæŋkɪt ɪz wɔrm./",
+      "zh": "毯暖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Snug, yes.",
+      "phonetic": "/snəg, jɛs./",
+      "zh": "暖呼呼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The door, half.",
+      "phonetic": "/ðə dɔr, hæf./",
+      "zh": "門半。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In case you call.",
+      "phonetic": "/ɪn keɪs ju kɔl./",
+      "zh": "怕你叫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kiss on brow.",
+      "phonetic": "/ðə kɪs ɔn braʊ./",
+      "zh": "額上吻。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Soft, yes.",
+      "phonetic": "/sɔft, jɛs./",
+      "zh": "輕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The text, good night.",
+      "phonetic": "/ðə tɛkst, gʊd naɪt./",
+      "zh": "簡訊晚安。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sleep well, love.",
+      "phonetic": "/slip wɛl, ləv./",
+      "zh": "好夢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lights are low.",
+      "phonetic": "/ðə laɪts ər loʊ./",
+      "zh": "燈暗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Dim them, please.",
+      "phonetic": "/dɪm ðɛm, pliz./",
+      "zh": "調暗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The day was good.",
+      "phonetic": "/ðə deɪ wɑz gʊd./",
+      "zh": "今天很好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "With you, yes.",
+      "phonetic": "/wɪθ ju, jɛs./",
+      "zh": "有你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Time to sleep.",
+      "phonetic": "/taɪm tɪ slip./",
+      "zh": "該睡了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One more hug, please.",
+      "phonetic": "/wən mɔr həg, pliz./",
+      "zh": "再抱一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Time to sleep.",
+      "phonetic": "/taɪm tɪ slip./",
+      "zh": "該睡了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One more hug, please.",
+      "phonetic": "/wən mɔr həg, pliz./",
+      "zh": "再抱一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The day was good.",
+      "phonetic": "/ðə deɪ wɑz gʊd./",
+      "zh": "今天很好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "With you, yes.",
+      "phonetic": "/wɪθ ju, jɛs./",
+      "zh": "有你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lights are low.",
+      "phonetic": "/ðə laɪts ər loʊ./",
+      "zh": "燈暗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Dim them, please.",
+      "phonetic": "/dɪm ðɛm, pliz./",
+      "zh": "調暗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The text, good night.",
+      "phonetic": "/ðə tɛkst, gʊd naɪt./",
+      "zh": "簡訊晚安。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sleep well, love.",
+      "phonetic": "/slip wɛl, ləv./",
+      "zh": "好夢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kiss on brow.",
+      "phonetic": "/ðə kɪs ɔn braʊ./",
+      "zh": "額上吻。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Soft, yes.",
+      "phonetic": "/sɔft, jɛs./",
+      "zh": "輕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The door, half.",
+      "phonetic": "/ðə dɔr, hæf./",
+      "zh": "門半。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In case you call.",
+      "phonetic": "/ɪn keɪs ju kɔl./",
+      "zh": "怕你叫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The blanket is warm.",
+      "phonetic": "/ðə ˈblæŋkɪt ɪz wɔrm./",
+      "zh": "毯暖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Snug, yes.",
+      "phonetic": "/snəg, jɛs./",
+      "zh": "暖呼呼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The phone is off.",
+      "phonetic": "/ðə foʊn ɪz ɔf./",
+      "zh": "手機關。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No beeps, please.",
+      "phonetic": "/noʊ bips, pliz./",
+      "zh": "別響。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat is in.",
+      "phonetic": "/ðə kæt ɪz ɪn./",
+      "zh": "貓進。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Curled, asleep.",
+      "phonetic": "/kərld, əsˈlip./",
+      "zh": "蜷睡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The story, one.",
+      "phonetic": "/ðə ˈstɔri, wən./",
+      "zh": "故事一則。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Short, then sleep.",
+      "phonetic": "/ʃɔrt, ðɛn slip./",
+      "zh": "短，睡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The yawn is big.",
+      "phonetic": "/ðə jɔn ɪz bɪg./",
+      "zh": "大哈欠。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tired, yes.",
+      "phonetic": "/taɪərd, jɛs./",
+      "zh": "累。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The routine is set.",
+      "phonetic": "/ðə ruˈtin ɪz sɛt./",
+      "zh": "例行定。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Brush, then bed.",
+      "phonetic": "/brəʃ, ðɛn bɛd./",
+      "zh": "刷再牀。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wish, sweet.",
+      "phonetic": "/ðə wɪʃ, swit./",
+      "zh": "祝福甜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Dream of us.",
+      "phonetic": "/drim əv ˈjuˈɛs./",
+      "zh": "夢我們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The silence is calm.",
+      "phonetic": "/ðə ˈsaɪləns ɪz kɑm./",
+      "zh": "安靜平靜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just us, yes.",
+      "phonetic": "/ʤɪst ˈjuˈɛs, jɛs./",
+      "zh": "只有我們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The good night, love.",
+      "phonetic": "/ðə gʊd naɪt, ləv./",
+      "zh": "晚安，親愛的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Love you, more.",
+      "phonetic": "/ləv ju, mɔr./",
+      "zh": "更愛你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The moon is bright.",
+      "phonetic": "/ðə mun ɪz braɪt./",
+      "zh": "月亮亮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Through the blind.",
+      "phonetic": "/θru ðə blaɪnd./",
+      "zh": "透百葉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tea is warm.",
+      "phonetic": "/ðə ti ɪz wɔrm./",
+      "zh": "茶溫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Before sleep, yes.",
+      "phonetic": "/ˌbiˈfɔr slip, jɛs./",
+      "zh": "睡前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cuddle, brief.",
+      "phonetic": "/ðə ˈkədəl, brif./",
+      "zh": "短暫抱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Warmth, yes.",
+      "phonetic": "/wɔrmθ, jɛs./",
+      "zh": "溫暖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The plan tomorrow.",
+      "phonetic": "/ðə plæn təˈmɑˌroʊ./",
+      "zh": "明天計畫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same time, maybe.",
+      "phonetic": "/seɪm taɪm, ˈmeɪbi./",
+      "zh": "同時間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The breath slows.",
+      "phonetic": "/ðə brɛθ sloʊz./",
+      "zh": "呼吸緩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Drifting, yes.",
+      "phonetic": "/ˈdrɪftɪŋ, jɛs./",
+      "zh": "飄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The light off.",
+      "phonetic": "/ðə laɪt ɔf./",
+      "zh": "關燈。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Dark, calm.",
+      "phonetic": "/dɑrk, kɑm./",
+      "zh": "暗靜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The whisper, love.",
+      "phonetic": "/ðə ˈwɪspər, ləv./",
+      "zh": "低語愛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hear it, yes.",
+      "phonetic": "/hir ɪt, jɛs./",
+      "zh": "聽到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The day ends.",
+      "phonetic": "/ðə deɪ ɛndz./",
+      "zh": "一天結束。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Well, with you.",
+      "phonetic": "/wɛl, wɪθ ju./",
+      "zh": "好，有你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pillow is soft.",
+      "phonetic": "/ðə ˈpɪloʊ ɪz sɔft./",
+      "zh": "枕頭軟。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rest, please.",
+      "phonetic": "/rɛst, pliz./",
+      "zh": "休息。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The good night sent.",
+      "phonetic": "/ðə gʊd naɪt sɛnt./",
+      "zh": "晚安傳。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Smile, sleep.",
+      "phonetic": "/smaɪl, slip./",
+      "zh": "笑，睡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The peace is ours.",
+      "phonetic": "/ðə pis ɪz ɑrz./",
+      "zh": "平靜是我們的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold it, yes.",
+      "phonetic": "/hoʊld ɪt, jɛs./",
+      "zh": "把握。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kiss, last.",
+      "phonetic": "/ðə kɪs, læst./",
+      "zh": "最後一吻。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sweet dreams, love.",
+      "phonetic": "/swit drimz, ləv./",
+      "zh": "好夢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The door clicks.",
+      "phonetic": "/ðə dɔr klɪks./",
+      "zh": "門輕關。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quiet, yes.",
+      "phonetic": "/kwaɪət, jɛs./",
+      "zh": "輕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The night is still.",
+      "phonetic": "/ðə naɪt ɪz stɪl./",
+      "zh": "夜靜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sleep tight, all.",
+      "phonetic": "/slip taɪt, ɔl./",
+      "zh": "好睡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The love is calm.",
+      "phonetic": "/ðə ləv ɪz kɑm./",
+      "zh": "愛平靜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Safe, yes.",
+      "phonetic": "/seɪf, jɛs./",
+      "zh": "安全。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the night.",
+      "phonetic": "/θæŋks fər ðə naɪt./",
+      "zh": "謝謝今夜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Goodnight, my pal.",
+      "phonetic": "/ˈgʊdˌnaɪt, maɪ pæl./",
+      "zh": "晚安。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the night.",
+      "phonetic": "/θæŋks fər ðə naɪt./",
+      "zh": "謝謝今夜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Goodnight, my pal.",
+      "phonetic": "/ˈgʊdˌnaɪt, maɪ pæl./",
+      "zh": "晚安。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The love is calm.",
+      "phonetic": "/ðə ləv ɪz kɑm./",
+      "zh": "愛平靜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Safe, yes.",
+      "phonetic": "/seɪf, jɛs./",
+      "zh": "安全。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The night is still.",
+      "phonetic": "/ðə naɪt ɪz stɪl./",
+      "zh": "夜靜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sleep tight, all.",
+      "phonetic": "/slip taɪt, ɔl./",
+      "zh": "好睡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The door clicks.",
+      "phonetic": "/ðə dɔr klɪks./",
+      "zh": "門輕關。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quiet, yes.",
+      "phonetic": "/kwaɪət, jɛs./",
+      "zh": "輕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kiss, last.",
+      "phonetic": "/ðə kɪs, læst./",
+      "zh": "最後一吻。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sweet dreams, love.",
+      "phonetic": "/swit drimz, ləv./",
+      "zh": "好夢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The peace is ours.",
+      "phonetic": "/ðə pis ɪz ɑrz./",
+      "zh": "平靜是我們的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold it, yes.",
+      "phonetic": "/hoʊld ɪt, jɛs./",
+      "zh": "把握。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The good night sent.",
+      "phonetic": "/ðə gʊd naɪt sɛnt./",
+      "zh": "晚安傳。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Smile, sleep.",
+      "phonetic": "/smaɪl, slip./",
+      "zh": "笑，睡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pillow is soft.",
+      "phonetic": "/ðə ˈpɪloʊ ɪz sɔft./",
+      "zh": "枕頭軟。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rest, please.",
+      "phonetic": "/rɛst, pliz./",
+      "zh": "休息。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The day ends.",
+      "phonetic": "/ðə deɪ ɛndz./",
+      "zh": "一天結束。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Well, with you.",
+      "phonetic": "/wɛl, wɪθ ju./",
+      "zh": "好，有你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The whisper, love.",
+      "phonetic": "/ðə ˈwɪspər, ləv./",
+      "zh": "低語愛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hear it, yes.",
+      "phonetic": "/hir ɪt, jɛs./",
+      "zh": "聽到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The light off.",
+      "phonetic": "/ðə laɪt ɔf./",
+      "zh": "關燈。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Dark, calm.",
+      "phonetic": "/dɑrk, kɑm./",
+      "zh": "暗靜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The breath slows.",
+      "phonetic": "/ðə brɛθ sloʊz./",
+      "zh": "呼吸緩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Drifting, yes.",
+      "phonetic": "/ˈdrɪftɪŋ, jɛs./",
+      "zh": "飄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The plan tomorrow.",
+      "phonetic": "/ðə plæn təˈmɑˌroʊ./",
+      "zh": "明天計畫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same time, maybe.",
+      "phonetic": "/seɪm taɪm, ˈmeɪbi./",
+      "zh": "同時間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cuddle, brief.",
+      "phonetic": "/ðə ˈkədəl, brif./",
+      "zh": "短暫抱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Warmth, yes.",
+      "phonetic": "/wɔrmθ, jɛs./",
+      "zh": "溫暖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tea is warm.",
+      "phonetic": "/ðə ti ɪz wɔrm./",
+      "zh": "茶溫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Before sleep, yes.",
+      "phonetic": "/ˌbiˈfɔr slip, jɛs./",
+      "zh": "睡前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The moon is bright.",
+      "phonetic": "/ðə mun ɪz braɪt./",
+      "zh": "月亮亮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Through the blind.",
+      "phonetic": "/θru ðə blaɪnd./",
+      "zh": "透百葉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The good night, love.",
+      "phonetic": "/ðə gʊd naɪt, ləv./",
+      "zh": "晚安，親愛的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Love you, more.",
+      "phonetic": "/ləv ju, mɔr./",
+      "zh": "更愛你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The silence is calm.",
+      "phonetic": "/ðə ˈsaɪləns ɪz kɑm./",
+      "zh": "安靜平靜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just us, yes.",
+      "phonetic": "/ʤɪst ˈjuˈɛs, jɛs./",
+      "zh": "只有我們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wish, sweet.",
+      "phonetic": "/ðə wɪʃ, swit./",
+      "zh": "祝福甜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Dream of us.",
+      "phonetic": "/drim əv ˈjuˈɛs./",
+      "zh": "夢我們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The routine is set.",
+      "phonetic": "/ðə ruˈtin ɪz sɛt./",
+      "zh": "例行定。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Brush, then bed.",
+      "phonetic": "/brəʃ, ðɛn bɛd./",
+      "zh": "刷再牀。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The yawn is big.",
+      "phonetic": "/ðə jɔn ɪz bɪg./",
+      "zh": "大哈欠。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tired, yes.",
+      "phonetic": "/taɪərd, jɛs./",
+      "zh": "累。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The story, one.",
+      "phonetic": "/ðə ˈstɔri, wən./",
+      "zh": "故事一則。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Short, then sleep.",
+      "phonetic": "/ʃɔrt, ðɛn slip./",
+      "zh": "短，睡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat is in.",
+      "phonetic": "/ðə kæt ɪz ɪn./",
+      "zh": "貓進。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Curled, asleep.",
+      "phonetic": "/kərld, əsˈlip./",
+      "zh": "蜷睡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The phone is off.",
+      "phonetic": "/ðə foʊn ɪz ɔf./",
+      "zh": "手機關。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No beeps, please.",
+      "phonetic": "/noʊ bips, pliz./",
+      "zh": "別響。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The blanket is warm.",
+      "phonetic": "/ðə ˈblæŋkɪt ɪz wɔrm./",
+      "zh": "毯暖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Snug, yes.",
+      "phonetic": "/snəg, jɛs./",
+      "zh": "暖呼呼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The door, half.",
+      "phonetic": "/ðə dɔr, hæf./",
+      "zh": "門半。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In case you call.",
+      "phonetic": "/ɪn keɪs ju kɔl./",
+      "zh": "怕你叫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kiss on brow.",
+      "phonetic": "/ðə kɪs ɔn braʊ./",
+      "zh": "額上吻。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Soft, yes.",
+      "phonetic": "/sɔft, jɛs./",
+      "zh": "輕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The text, good night.",
+      "phonetic": "/ðə tɛkst, gʊd naɪt./",
+      "zh": "簡訊晚安。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sleep well, love.",
+      "phonetic": "/slip wɛl, ləv./",
+      "zh": "好夢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lights are low.",
+      "phonetic": "/ðə laɪts ər loʊ./",
+      "zh": "燈暗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Dim them, please.",
+      "phonetic": "/dɪm ðɛm, pliz./",
+      "zh": "調暗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The day was good.",
+      "phonetic": "/ðə deɪ wɑz gʊd./",
+      "zh": "今天很好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "With you, yes.",
+      "phonetic": "/wɪθ ju, jɛs./",
+      "zh": "有你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Time to sleep.",
+      "phonetic": "/taɪm tɪ slip./",
+      "zh": "該睡了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One more hug, please.",
+      "phonetic": "/wən mɔr həg, pliz./",
+      "zh": "再抱一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Time to sleep.",
+      "phonetic": "/taɪm tɪ slip./",
+      "zh": "該睡了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One more hug, please.",
+      "phonetic": "/wən mɔr həg, pliz./",
+      "zh": "再抱一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The day was good.",
+      "phonetic": "/ðə deɪ wɑz gʊd./",
+      "zh": "今天很好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "With you, yes.",
+      "phonetic": "/wɪθ ju, jɛs./",
+      "zh": "有你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lights are low.",
+      "phonetic": "/ðə laɪts ər loʊ./",
+      "zh": "燈暗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Dim them, please.",
+      "phonetic": "/dɪm ðɛm, pliz./",
+      "zh": "調暗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The text, good night.",
+      "phonetic": "/ðə tɛkst, gʊd naɪt./",
+      "zh": "簡訊晚安。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sleep well, love.",
+      "phonetic": "/slip wɛl, ləv./",
+      "zh": "好夢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kiss on brow.",
+      "phonetic": "/ðə kɪs ɔn braʊ./",
+      "zh": "額上吻。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Soft, yes.",
+      "phonetic": "/sɔft, jɛs./",
+      "zh": "輕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The door, half.",
+      "phonetic": "/ðə dɔr, hæf./",
+      "zh": "門半。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In case you call.",
+      "phonetic": "/ɪn keɪs ju kɔl./",
+      "zh": "怕你叫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The blanket is warm.",
+      "phonetic": "/ðə ˈblæŋkɪt ɪz wɔrm./",
+      "zh": "毯暖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Snug, yes.",
+      "phonetic": "/snəg, jɛs./",
+      "zh": "暖呼呼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The phone is off.",
+      "phonetic": "/ðə foʊn ɪz ɔf./",
+      "zh": "手機關。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No beeps, please.",
+      "phonetic": "/noʊ bips, pliz./",
+      "zh": "別響。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat is in.",
+      "phonetic": "/ðə kæt ɪz ɪn./",
+      "zh": "貓進。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Curled, asleep.",
+      "phonetic": "/kərld, əsˈlip./",
+      "zh": "蜷睡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The story, one.",
+      "phonetic": "/ðə ˈstɔri, wən./",
+      "zh": "故事一則。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Short, then sleep.",
+      "phonetic": "/ʃɔrt, ðɛn slip./",
+      "zh": "短，睡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The yawn is big.",
+      "phonetic": "/ðə jɔn ɪz bɪg./",
+      "zh": "大哈欠。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tired, yes.",
+      "phonetic": "/taɪərd, jɛs./",
+      "zh": "累。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The routine is set.",
+      "phonetic": "/ðə ruˈtin ɪz sɛt./",
+      "zh": "例行定。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Brush, then bed.",
+      "phonetic": "/brəʃ, ðɛn bɛd./",
+      "zh": "刷再牀。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wish, sweet.",
+      "phonetic": "/ðə wɪʃ, swit./",
+      "zh": "祝福甜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Dream of us.",
+      "phonetic": "/drim əv ˈjuˈɛs./",
+      "zh": "夢我們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The silence is calm.",
+      "phonetic": "/ðə ˈsaɪləns ɪz kɑm./",
+      "zh": "安靜平靜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just us, yes.",
+      "phonetic": "/ʤɪst ˈjuˈɛs, jɛs./",
+      "zh": "只有我們。"
+    }
+  ]
+}

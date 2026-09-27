@@ -1,0 +1,2458 @@
+{
+  "title": "Everyday Phrases — Checking the Forecast",
+  "title_zh": "看天氣預報",
+  "scene_zh": "看天氣預報 · 情境對話",
+  "title_quote": "What is the forecast?",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】🌤️ 實用看天氣預報必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — Checking the Forecast",
+  "youtube_description": "睡著學英文！這部影片收錄實用看天氣預報情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫），不用背，睡前聽就會。重複播放，讓英文自然進入你的大腦。👍 想學更多生活場景，請留言告訴我！別忘了訂閱+按讚。 #英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical Checking the Forecast phrase pairs (each pair: male normal speed → female slow speed → combined dialogue). No memorization needed—just listen before bed and absorb naturally. If you want more real-life scenarios, leave a comment! Subscribe and like!",
+  "youtube_tags": [
+    "英文聽力",
+    "睡前英文",
+    "看天氣預報英文",
+    "English listening",
+    "Sleep learning",
+    "A2 English",
+    "常用英文短語",
+    "零基礎英文",
+    "慢速英文",
+    "英文口語",
+    "Learn English",
+    "English for daily life",
+    "ESL",
+    "English conversation",
+    "聽英語",
+    "英文學習"
+  ],
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "Checking the Forecast",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "Checking the Forecast",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Weather",
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "What is the forecast?",
+      "phonetic": "/wət ɪz ðə ˈfɔrˌkæst?/",
+      "zh": "天氣預報如何？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sunny, then rain.",
+      "phonetic": "/ˈsəni, ðɛn reɪn./",
+      "zh": "晴，後雨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will it rain today?",
+      "phonetic": "/wɪl ɪt reɪn təˈdeɪ?/",
+      "zh": "今天會下雨嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "After three, likely.",
+      "phonetic": "/ˈæftər θri, ˈlaɪkli./",
+      "zh": "三點後，可能。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app says storm.",
+      "phonetic": "/ðə æp sɪz stɔrm./",
+      "zh": "App 說有暴風。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stay indoors, then.",
+      "phonetic": "/steɪ ˈɪnˌdɔrz, ðɛn./",
+      "zh": "那就室內。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The temperature drops.",
+      "phonetic": "/ðə ˈtɛmpərəʧər drɑps./",
+      "zh": "氣溫降。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ten degrees cold.",
+      "phonetic": "/tɛn dɪˈgriz koʊld./",
+      "zh": "降十度。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the weekend clear?",
+      "phonetic": "/ɪz ðə ˈwiˌkɪnd klɪr?/",
+      "zh": "週末放晴？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Both days sunny.",
+      "phonetic": "/boʊθ deɪz ˈsəni./",
+      "zh": "兩天都晴。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wind is strong.",
+      "phonetic": "/ðə wɪnd ɪz strɔŋ./",
+      "zh": "風很強。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Gusts at coast.",
+      "phonetic": "/gəsts æt koʊst./",
+      "zh": "岸邊陣風。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Snow is coming.",
+      "phonetic": "/snoʊ ɪz ˈkəmɪŋ./",
+      "zh": "要下雪。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "North, first.",
+      "phonetic": "/nɔrθ, fərst./",
+      "zh": "先下北邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The humidity is high.",
+      "phonetic": "/ðə hjuˈmɪdəti ɪz haɪ./",
+      "zh": "溼度高。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sticky, yes.",
+      "phonetic": "/ˈstɪki, jɛs./",
+      "zh": "悶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Check the radar.",
+      "phonetic": "/ʧɛk ðə ˈreɪˌdɑr./",
+      "zh": "看雷達。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cloud is near.",
+      "phonetic": "/klaʊd ɪz nɪr./",
+      "zh": "雲靠近。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The morning is foggy.",
+      "phonetic": "/ðə ˈmɔrnɪŋ ɪz ˈfɑgi./",
+      "zh": "早上起霧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Drive slow, please.",
+      "phonetic": "/draɪv sloʊ, pliz./",
+      "zh": "慢開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The evening is mild.",
+      "phonetic": "/ðə ˈivnɪŋ ɪz maɪld./",
+      "zh": "傍晚溫和。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good for a walk.",
+      "phonetic": "/gʊd fər ə wɔk./",
+      "zh": "適合散步。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The alert is red.",
+      "phonetic": "/ðə əˈlərt ɪz rɛd./",
+      "zh": "警報紅色。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Take shelter, now.",
+      "phonetic": "/teɪk ˈʃɛltər, naʊ./",
+      "zh": "快避難。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sun sets early.",
+      "phonetic": "/ðə sən sɛts ˈərli./",
+      "zh": "日落早。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Winter, that is why.",
+      "phonetic": "/ˈwɪntər, ðət ɪz waɪ./",
+      "zh": "冬天。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The forecast changed.",
+      "phonetic": "/ðə ˈfɔrˌkæst ʧeɪnʤd./",
+      "zh": "預報改了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Updated at noon.",
+      "phonetic": "/ˈəpˌdeɪtɪd æt nun./",
+      "zh": "中午更新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will it freeze?",
+      "phonetic": "/wɪl ɪt friz?/",
+      "zh": "會結冰嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Below zero, yes.",
+      "phonetic": "/bɪˈloʊ ˈziroʊ, jɛs./",
+      "zh": "零度下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The UV is high.",
+      "phonetic": "/ðə uv* ɪz haɪ./",
+      "zh": "紫外線強。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wear the hat.",
+      "phonetic": "/wɛr ðə hæt./",
+      "zh": "戴帽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rain is light.",
+      "phonetic": "/ðə reɪn ɪz laɪt./",
+      "zh": "雨小。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No need for coat.",
+      "phonetic": "/noʊ nid fər koʊt./",
+      "zh": "不用穿外套。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The weekend is wet.",
+      "phonetic": "/ðə ˈwiˌkɪnd ɪz wɛt./",
+      "zh": "週末溼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Move it indoors.",
+      "phonetic": "/muv ɪt ˈɪnˌdɔrz./",
+      "zh": "改室內。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cloud is thick.",
+      "phonetic": "/ðə klaʊd ɪz θɪk./",
+      "zh": "雲厚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No stars tonight.",
+      "phonetic": "/noʊ stɑrz təˈnaɪt./",
+      "zh": "今晚無星。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The barometer falls.",
+      "phonetic": "/ðə bərˈɑmɪtər fɔlz./",
+      "zh": "氣壓下降。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Storm ahead.",
+      "phonetic": "/stɔrm əˈhɛd./",
+      "zh": "暴風在前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The breeze is nice.",
+      "phonetic": "/ðə briz ɪz nis./",
+      "zh": "微風舒服。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Open the window.",
+      "phonetic": "/ˈoʊpən ðə ˈwɪndoʊ./",
+      "zh": "開窗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The hail is rare.",
+      "phonetic": "/ðə heɪl ɪz rɛr./",
+      "zh": "冰雹少見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cover the car.",
+      "phonetic": "/ˈkəvər ðə kɑr./",
+      "zh": "蓋車。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The forecast is wrong.",
+      "phonetic": "/ðə ˈfɔrˌkæst ɪz rɔŋ./",
+      "zh": "預報錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It does happen.",
+      "phonetic": "/ɪt dɪz ˈhæpən./",
+      "zh": "偶爾。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The heat wave ends.",
+      "phonetic": "/ðə hit weɪv ɛndz./",
+      "zh": "熱浪結束。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cool by Friday.",
+      "phonetic": "/kul baɪ ˈfraɪˌdeɪ./",
+      "zh": "週五轉涼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The dew is heavy.",
+      "phonetic": "/ðə du ɪz ˈhɛvi./",
+      "zh": "露重。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Grass is wet.",
+      "phonetic": "/græs ɪz wɛt./",
+      "zh": "草溼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The mountain is clear.",
+      "phonetic": "/ðə ˈmaʊntən ɪz klɪr./",
+      "zh": "山上晴朗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good to hike.",
+      "phonetic": "/gʊd tɪ haɪk./",
+      "zh": "適合爬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The typhoon turned.",
+      "phonetic": "/ðə ˌtaɪˈfun tərnd./",
+      "zh": "颱風轉向。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We are safe, then.",
+      "phonetic": "/wi ər seɪf, ðɛn./",
+      "zh": "那我們安全。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The hourly shows sun.",
+      "phonetic": "/ðə ˈaʊrli ʃoʊz sən./",
+      "zh": "每小時顯示晴。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Enjoy it out.",
+      "phonetic": "/ˌɛnˈʤɔɪ ɪt aʊt./",
+      "zh": "出去享受。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cold front moves.",
+      "phonetic": "/ðə koʊld frənt muvz./",
+      "zh": "冷鋒移動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Coat needed soon.",
+      "phonetic": "/koʊt ˈnidɪd sun./",
+      "zh": "快穿外套。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sky is grey.",
+      "phonetic": "/ðə skaɪ ɪz greɪ./",
+      "zh": "天灰。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rain likely, yes.",
+      "phonetic": "/reɪn ˈlaɪkli, jɛs./",
+      "zh": "可能雨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The report is short.",
+      "phonetic": "/ðə rɪˈpɔrt ɪz ʃɔrt./",
+      "zh": "報導短。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Check again, later.",
+      "phonetic": "/ʧɛk əˈgɛn, ˈleɪtər./",
+      "zh": "稍後再看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The weather looks good.",
+      "phonetic": "/ðə ˈwɛðər lʊks gʊd./",
+      "zh": "天氣不錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Plan the trip.",
+      "phonetic": "/plæn ðə trɪp./",
+      "zh": "規劃行程。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the update.",
+      "phonetic": "/θæŋks fər ðə ˈəpˌdeɪt./",
+      "zh": "謝謝更新。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stay dry, all.",
+      "phonetic": "/steɪ draɪ, ɔl./",
+      "zh": "保持乾爽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the update.",
+      "phonetic": "/θæŋks fər ðə ˈəpˌdeɪt./",
+      "zh": "謝謝更新。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stay dry, all.",
+      "phonetic": "/steɪ draɪ, ɔl./",
+      "zh": "保持乾爽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The weather looks good.",
+      "phonetic": "/ðə ˈwɛðər lʊks gʊd./",
+      "zh": "天氣不錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Plan the trip.",
+      "phonetic": "/plæn ðə trɪp./",
+      "zh": "規劃行程。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The report is short.",
+      "phonetic": "/ðə rɪˈpɔrt ɪz ʃɔrt./",
+      "zh": "報導短。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Check again, later.",
+      "phonetic": "/ʧɛk əˈgɛn, ˈleɪtər./",
+      "zh": "稍後再看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sky is grey.",
+      "phonetic": "/ðə skaɪ ɪz greɪ./",
+      "zh": "天灰。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rain likely, yes.",
+      "phonetic": "/reɪn ˈlaɪkli, jɛs./",
+      "zh": "可能雨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cold front moves.",
+      "phonetic": "/ðə koʊld frənt muvz./",
+      "zh": "冷鋒移動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Coat needed soon.",
+      "phonetic": "/koʊt ˈnidɪd sun./",
+      "zh": "快穿外套。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The hourly shows sun.",
+      "phonetic": "/ðə ˈaʊrli ʃoʊz sən./",
+      "zh": "每小時顯示晴。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Enjoy it out.",
+      "phonetic": "/ˌɛnˈʤɔɪ ɪt aʊt./",
+      "zh": "出去享受。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The typhoon turned.",
+      "phonetic": "/ðə ˌtaɪˈfun tərnd./",
+      "zh": "颱風轉向。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We are safe, then.",
+      "phonetic": "/wi ər seɪf, ðɛn./",
+      "zh": "那我們安全。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The mountain is clear.",
+      "phonetic": "/ðə ˈmaʊntən ɪz klɪr./",
+      "zh": "山上晴朗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good to hike.",
+      "phonetic": "/gʊd tɪ haɪk./",
+      "zh": "適合爬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The dew is heavy.",
+      "phonetic": "/ðə du ɪz ˈhɛvi./",
+      "zh": "露重。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Grass is wet.",
+      "phonetic": "/græs ɪz wɛt./",
+      "zh": "草溼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The heat wave ends.",
+      "phonetic": "/ðə hit weɪv ɛndz./",
+      "zh": "熱浪結束。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cool by Friday.",
+      "phonetic": "/kul baɪ ˈfraɪˌdeɪ./",
+      "zh": "週五轉涼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The forecast is wrong.",
+      "phonetic": "/ðə ˈfɔrˌkæst ɪz rɔŋ./",
+      "zh": "預報錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It does happen.",
+      "phonetic": "/ɪt dɪz ˈhæpən./",
+      "zh": "偶爾。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The hail is rare.",
+      "phonetic": "/ðə heɪl ɪz rɛr./",
+      "zh": "冰雹少見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cover the car.",
+      "phonetic": "/ˈkəvər ðə kɑr./",
+      "zh": "蓋車。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The breeze is nice.",
+      "phonetic": "/ðə briz ɪz nis./",
+      "zh": "微風舒服。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Open the window.",
+      "phonetic": "/ˈoʊpən ðə ˈwɪndoʊ./",
+      "zh": "開窗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The barometer falls.",
+      "phonetic": "/ðə bərˈɑmɪtər fɔlz./",
+      "zh": "氣壓下降。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Storm ahead.",
+      "phonetic": "/stɔrm əˈhɛd./",
+      "zh": "暴風在前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cloud is thick.",
+      "phonetic": "/ðə klaʊd ɪz θɪk./",
+      "zh": "雲厚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No stars tonight.",
+      "phonetic": "/noʊ stɑrz təˈnaɪt./",
+      "zh": "今晚無星。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The weekend is wet.",
+      "phonetic": "/ðə ˈwiˌkɪnd ɪz wɛt./",
+      "zh": "週末溼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Move it indoors.",
+      "phonetic": "/muv ɪt ˈɪnˌdɔrz./",
+      "zh": "改室內。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rain is light.",
+      "phonetic": "/ðə reɪn ɪz laɪt./",
+      "zh": "雨小。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No need for coat.",
+      "phonetic": "/noʊ nid fər koʊt./",
+      "zh": "不用穿外套。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The UV is high.",
+      "phonetic": "/ðə uv* ɪz haɪ./",
+      "zh": "紫外線強。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wear the hat.",
+      "phonetic": "/wɛr ðə hæt./",
+      "zh": "戴帽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will it freeze?",
+      "phonetic": "/wɪl ɪt friz?/",
+      "zh": "會結冰嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Below zero, yes.",
+      "phonetic": "/bɪˈloʊ ˈziroʊ, jɛs./",
+      "zh": "零度下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The forecast changed.",
+      "phonetic": "/ðə ˈfɔrˌkæst ʧeɪnʤd./",
+      "zh": "預報改了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Updated at noon.",
+      "phonetic": "/ˈəpˌdeɪtɪd æt nun./",
+      "zh": "中午更新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sun sets early.",
+      "phonetic": "/ðə sən sɛts ˈərli./",
+      "zh": "日落早。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Winter, that is why.",
+      "phonetic": "/ˈwɪntər, ðət ɪz waɪ./",
+      "zh": "冬天。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The alert is red.",
+      "phonetic": "/ðə əˈlərt ɪz rɛd./",
+      "zh": "警報紅色。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Take shelter, now.",
+      "phonetic": "/teɪk ˈʃɛltər, naʊ./",
+      "zh": "快避難。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The evening is mild.",
+      "phonetic": "/ðə ˈivnɪŋ ɪz maɪld./",
+      "zh": "傍晚溫和。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good for a walk.",
+      "phonetic": "/gʊd fər ə wɔk./",
+      "zh": "適合散步。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The morning is foggy.",
+      "phonetic": "/ðə ˈmɔrnɪŋ ɪz ˈfɑgi./",
+      "zh": "早上起霧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Drive slow, please.",
+      "phonetic": "/draɪv sloʊ, pliz./",
+      "zh": "慢開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Check the radar.",
+      "phonetic": "/ʧɛk ðə ˈreɪˌdɑr./",
+      "zh": "看雷達。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cloud is near.",
+      "phonetic": "/klaʊd ɪz nɪr./",
+      "zh": "雲靠近。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The humidity is high.",
+      "phonetic": "/ðə hjuˈmɪdəti ɪz haɪ./",
+      "zh": "溼度高。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sticky, yes.",
+      "phonetic": "/ˈstɪki, jɛs./",
+      "zh": "悶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Snow is coming.",
+      "phonetic": "/snoʊ ɪz ˈkəmɪŋ./",
+      "zh": "要下雪。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "North, first.",
+      "phonetic": "/nɔrθ, fərst./",
+      "zh": "先下北邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wind is strong.",
+      "phonetic": "/ðə wɪnd ɪz strɔŋ./",
+      "zh": "風很強。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Gusts at coast.",
+      "phonetic": "/gəsts æt koʊst./",
+      "zh": "岸邊陣風。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the weekend clear?",
+      "phonetic": "/ɪz ðə ˈwiˌkɪnd klɪr?/",
+      "zh": "週末放晴？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Both days sunny.",
+      "phonetic": "/boʊθ deɪz ˈsəni./",
+      "zh": "兩天都晴。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The temperature drops.",
+      "phonetic": "/ðə ˈtɛmpərəʧər drɑps./",
+      "zh": "氣溫降。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ten degrees cold.",
+      "phonetic": "/tɛn dɪˈgriz koʊld./",
+      "zh": "降十度。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app says storm.",
+      "phonetic": "/ðə æp sɪz stɔrm./",
+      "zh": "App 說有暴風。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stay indoors, then.",
+      "phonetic": "/steɪ ˈɪnˌdɔrz, ðɛn./",
+      "zh": "那就室內。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will it rain today?",
+      "phonetic": "/wɪl ɪt reɪn təˈdeɪ?/",
+      "zh": "今天會下雨嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "After three, likely.",
+      "phonetic": "/ˈæftər θri, ˈlaɪkli./",
+      "zh": "三點後，可能。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the forecast?",
+      "phonetic": "/wət ɪz ðə ˈfɔrˌkæst?/",
+      "zh": "天氣預報如何？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sunny, then rain.",
+      "phonetic": "/ˈsəni, ðɛn reɪn./",
+      "zh": "晴，後雨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the forecast?",
+      "phonetic": "/wət ɪz ðə ˈfɔrˌkæst?/",
+      "zh": "天氣預報如何？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sunny, then rain.",
+      "phonetic": "/ˈsəni, ðɛn reɪn./",
+      "zh": "晴，後雨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will it rain today?",
+      "phonetic": "/wɪl ɪt reɪn təˈdeɪ?/",
+      "zh": "今天會下雨嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "After three, likely.",
+      "phonetic": "/ˈæftər θri, ˈlaɪkli./",
+      "zh": "三點後，可能。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app says storm.",
+      "phonetic": "/ðə æp sɪz stɔrm./",
+      "zh": "App 說有暴風。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stay indoors, then.",
+      "phonetic": "/steɪ ˈɪnˌdɔrz, ðɛn./",
+      "zh": "那就室內。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The temperature drops.",
+      "phonetic": "/ðə ˈtɛmpərəʧər drɑps./",
+      "zh": "氣溫降。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ten degrees cold.",
+      "phonetic": "/tɛn dɪˈgriz koʊld./",
+      "zh": "降十度。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the weekend clear?",
+      "phonetic": "/ɪz ðə ˈwiˌkɪnd klɪr?/",
+      "zh": "週末放晴？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Both days sunny.",
+      "phonetic": "/boʊθ deɪz ˈsəni./",
+      "zh": "兩天都晴。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wind is strong.",
+      "phonetic": "/ðə wɪnd ɪz strɔŋ./",
+      "zh": "風很強。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Gusts at coast.",
+      "phonetic": "/gəsts æt koʊst./",
+      "zh": "岸邊陣風。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Snow is coming.",
+      "phonetic": "/snoʊ ɪz ˈkəmɪŋ./",
+      "zh": "要下雪。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "North, first.",
+      "phonetic": "/nɔrθ, fərst./",
+      "zh": "先下北邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The humidity is high.",
+      "phonetic": "/ðə hjuˈmɪdəti ɪz haɪ./",
+      "zh": "溼度高。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sticky, yes.",
+      "phonetic": "/ˈstɪki, jɛs./",
+      "zh": "悶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Check the radar.",
+      "phonetic": "/ʧɛk ðə ˈreɪˌdɑr./",
+      "zh": "看雷達。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cloud is near.",
+      "phonetic": "/klaʊd ɪz nɪr./",
+      "zh": "雲靠近。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The morning is foggy.",
+      "phonetic": "/ðə ˈmɔrnɪŋ ɪz ˈfɑgi./",
+      "zh": "早上起霧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Drive slow, please.",
+      "phonetic": "/draɪv sloʊ, pliz./",
+      "zh": "慢開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The evening is mild.",
+      "phonetic": "/ðə ˈivnɪŋ ɪz maɪld./",
+      "zh": "傍晚溫和。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good for a walk.",
+      "phonetic": "/gʊd fər ə wɔk./",
+      "zh": "適合散步。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The alert is red.",
+      "phonetic": "/ðə əˈlərt ɪz rɛd./",
+      "zh": "警報紅色。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Take shelter, now.",
+      "phonetic": "/teɪk ˈʃɛltər, naʊ./",
+      "zh": "快避難。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sun sets early.",
+      "phonetic": "/ðə sən sɛts ˈərli./",
+      "zh": "日落早。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Winter, that is why.",
+      "phonetic": "/ˈwɪntər, ðət ɪz waɪ./",
+      "zh": "冬天。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The forecast changed.",
+      "phonetic": "/ðə ˈfɔrˌkæst ʧeɪnʤd./",
+      "zh": "預報改了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Updated at noon.",
+      "phonetic": "/ˈəpˌdeɪtɪd æt nun./",
+      "zh": "中午更新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will it freeze?",
+      "phonetic": "/wɪl ɪt friz?/",
+      "zh": "會結冰嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Below zero, yes.",
+      "phonetic": "/bɪˈloʊ ˈziroʊ, jɛs./",
+      "zh": "零度下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The UV is high.",
+      "phonetic": "/ðə uv* ɪz haɪ./",
+      "zh": "紫外線強。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wear the hat.",
+      "phonetic": "/wɛr ðə hæt./",
+      "zh": "戴帽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rain is light.",
+      "phonetic": "/ðə reɪn ɪz laɪt./",
+      "zh": "雨小。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No need for coat.",
+      "phonetic": "/noʊ nid fər koʊt./",
+      "zh": "不用穿外套。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The weekend is wet.",
+      "phonetic": "/ðə ˈwiˌkɪnd ɪz wɛt./",
+      "zh": "週末溼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Move it indoors.",
+      "phonetic": "/muv ɪt ˈɪnˌdɔrz./",
+      "zh": "改室內。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cloud is thick.",
+      "phonetic": "/ðə klaʊd ɪz θɪk./",
+      "zh": "雲厚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No stars tonight.",
+      "phonetic": "/noʊ stɑrz təˈnaɪt./",
+      "zh": "今晚無星。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The barometer falls.",
+      "phonetic": "/ðə bərˈɑmɪtər fɔlz./",
+      "zh": "氣壓下降。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Storm ahead.",
+      "phonetic": "/stɔrm əˈhɛd./",
+      "zh": "暴風在前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The breeze is nice.",
+      "phonetic": "/ðə briz ɪz nis./",
+      "zh": "微風舒服。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Open the window.",
+      "phonetic": "/ˈoʊpən ðə ˈwɪndoʊ./",
+      "zh": "開窗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The hail is rare.",
+      "phonetic": "/ðə heɪl ɪz rɛr./",
+      "zh": "冰雹少見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cover the car.",
+      "phonetic": "/ˈkəvər ðə kɑr./",
+      "zh": "蓋車。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The forecast is wrong.",
+      "phonetic": "/ðə ˈfɔrˌkæst ɪz rɔŋ./",
+      "zh": "預報錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It does happen.",
+      "phonetic": "/ɪt dɪz ˈhæpən./",
+      "zh": "偶爾。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The heat wave ends.",
+      "phonetic": "/ðə hit weɪv ɛndz./",
+      "zh": "熱浪結束。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cool by Friday.",
+      "phonetic": "/kul baɪ ˈfraɪˌdeɪ./",
+      "zh": "週五轉涼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The dew is heavy.",
+      "phonetic": "/ðə du ɪz ˈhɛvi./",
+      "zh": "露重。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Grass is wet.",
+      "phonetic": "/græs ɪz wɛt./",
+      "zh": "草溼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The mountain is clear.",
+      "phonetic": "/ðə ˈmaʊntən ɪz klɪr./",
+      "zh": "山上晴朗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good to hike.",
+      "phonetic": "/gʊd tɪ haɪk./",
+      "zh": "適合爬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The typhoon turned.",
+      "phonetic": "/ðə ˌtaɪˈfun tərnd./",
+      "zh": "颱風轉向。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We are safe, then.",
+      "phonetic": "/wi ər seɪf, ðɛn./",
+      "zh": "那我們安全。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The hourly shows sun.",
+      "phonetic": "/ðə ˈaʊrli ʃoʊz sən./",
+      "zh": "每小時顯示晴。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Enjoy it out.",
+      "phonetic": "/ˌɛnˈʤɔɪ ɪt aʊt./",
+      "zh": "出去享受。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cold front moves.",
+      "phonetic": "/ðə koʊld frənt muvz./",
+      "zh": "冷鋒移動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Coat needed soon.",
+      "phonetic": "/koʊt ˈnidɪd sun./",
+      "zh": "快穿外套。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sky is grey.",
+      "phonetic": "/ðə skaɪ ɪz greɪ./",
+      "zh": "天灰。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rain likely, yes.",
+      "phonetic": "/reɪn ˈlaɪkli, jɛs./",
+      "zh": "可能雨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The report is short.",
+      "phonetic": "/ðə rɪˈpɔrt ɪz ʃɔrt./",
+      "zh": "報導短。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Check again, later.",
+      "phonetic": "/ʧɛk əˈgɛn, ˈleɪtər./",
+      "zh": "稍後再看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The weather looks good.",
+      "phonetic": "/ðə ˈwɛðər lʊks gʊd./",
+      "zh": "天氣不錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Plan the trip.",
+      "phonetic": "/plæn ðə trɪp./",
+      "zh": "規劃行程。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the update.",
+      "phonetic": "/θæŋks fər ðə ˈəpˌdeɪt./",
+      "zh": "謝謝更新。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stay dry, all.",
+      "phonetic": "/steɪ draɪ, ɔl./",
+      "zh": "保持乾爽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the update.",
+      "phonetic": "/θæŋks fər ðə ˈəpˌdeɪt./",
+      "zh": "謝謝更新。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stay dry, all.",
+      "phonetic": "/steɪ draɪ, ɔl./",
+      "zh": "保持乾爽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The weather looks good.",
+      "phonetic": "/ðə ˈwɛðər lʊks gʊd./",
+      "zh": "天氣不錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Plan the trip.",
+      "phonetic": "/plæn ðə trɪp./",
+      "zh": "規劃行程。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The report is short.",
+      "phonetic": "/ðə rɪˈpɔrt ɪz ʃɔrt./",
+      "zh": "報導短。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Check again, later.",
+      "phonetic": "/ʧɛk əˈgɛn, ˈleɪtər./",
+      "zh": "稍後再看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sky is grey.",
+      "phonetic": "/ðə skaɪ ɪz greɪ./",
+      "zh": "天灰。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rain likely, yes.",
+      "phonetic": "/reɪn ˈlaɪkli, jɛs./",
+      "zh": "可能雨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cold front moves.",
+      "phonetic": "/ðə koʊld frənt muvz./",
+      "zh": "冷鋒移動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Coat needed soon.",
+      "phonetic": "/koʊt ˈnidɪd sun./",
+      "zh": "快穿外套。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The hourly shows sun.",
+      "phonetic": "/ðə ˈaʊrli ʃoʊz sən./",
+      "zh": "每小時顯示晴。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Enjoy it out.",
+      "phonetic": "/ˌɛnˈʤɔɪ ɪt aʊt./",
+      "zh": "出去享受。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The typhoon turned.",
+      "phonetic": "/ðə ˌtaɪˈfun tərnd./",
+      "zh": "颱風轉向。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We are safe, then.",
+      "phonetic": "/wi ər seɪf, ðɛn./",
+      "zh": "那我們安全。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The mountain is clear.",
+      "phonetic": "/ðə ˈmaʊntən ɪz klɪr./",
+      "zh": "山上晴朗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good to hike.",
+      "phonetic": "/gʊd tɪ haɪk./",
+      "zh": "適合爬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The dew is heavy.",
+      "phonetic": "/ðə du ɪz ˈhɛvi./",
+      "zh": "露重。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Grass is wet.",
+      "phonetic": "/græs ɪz wɛt./",
+      "zh": "草溼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The heat wave ends.",
+      "phonetic": "/ðə hit weɪv ɛndz./",
+      "zh": "熱浪結束。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cool by Friday.",
+      "phonetic": "/kul baɪ ˈfraɪˌdeɪ./",
+      "zh": "週五轉涼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The forecast is wrong.",
+      "phonetic": "/ðə ˈfɔrˌkæst ɪz rɔŋ./",
+      "zh": "預報錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It does happen.",
+      "phonetic": "/ɪt dɪz ˈhæpən./",
+      "zh": "偶爾。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The hail is rare.",
+      "phonetic": "/ðə heɪl ɪz rɛr./",
+      "zh": "冰雹少見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cover the car.",
+      "phonetic": "/ˈkəvər ðə kɑr./",
+      "zh": "蓋車。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The breeze is nice.",
+      "phonetic": "/ðə briz ɪz nis./",
+      "zh": "微風舒服。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Open the window.",
+      "phonetic": "/ˈoʊpən ðə ˈwɪndoʊ./",
+      "zh": "開窗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The barometer falls.",
+      "phonetic": "/ðə bərˈɑmɪtər fɔlz./",
+      "zh": "氣壓下降。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Storm ahead.",
+      "phonetic": "/stɔrm əˈhɛd./",
+      "zh": "暴風在前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cloud is thick.",
+      "phonetic": "/ðə klaʊd ɪz θɪk./",
+      "zh": "雲厚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No stars tonight.",
+      "phonetic": "/noʊ stɑrz təˈnaɪt./",
+      "zh": "今晚無星。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The weekend is wet.",
+      "phonetic": "/ðə ˈwiˌkɪnd ɪz wɛt./",
+      "zh": "週末溼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Move it indoors.",
+      "phonetic": "/muv ɪt ˈɪnˌdɔrz./",
+      "zh": "改室內。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rain is light.",
+      "phonetic": "/ðə reɪn ɪz laɪt./",
+      "zh": "雨小。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No need for coat.",
+      "phonetic": "/noʊ nid fər koʊt./",
+      "zh": "不用穿外套。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The UV is high.",
+      "phonetic": "/ðə uv* ɪz haɪ./",
+      "zh": "紫外線強。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wear the hat.",
+      "phonetic": "/wɛr ðə hæt./",
+      "zh": "戴帽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will it freeze?",
+      "phonetic": "/wɪl ɪt friz?/",
+      "zh": "會結冰嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Below zero, yes.",
+      "phonetic": "/bɪˈloʊ ˈziroʊ, jɛs./",
+      "zh": "零度下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The forecast changed.",
+      "phonetic": "/ðə ˈfɔrˌkæst ʧeɪnʤd./",
+      "zh": "預報改了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Updated at noon.",
+      "phonetic": "/ˈəpˌdeɪtɪd æt nun./",
+      "zh": "中午更新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sun sets early.",
+      "phonetic": "/ðə sən sɛts ˈərli./",
+      "zh": "日落早。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Winter, that is why.",
+      "phonetic": "/ˈwɪntər, ðət ɪz waɪ./",
+      "zh": "冬天。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The alert is red.",
+      "phonetic": "/ðə əˈlərt ɪz rɛd./",
+      "zh": "警報紅色。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Take shelter, now.",
+      "phonetic": "/teɪk ˈʃɛltər, naʊ./",
+      "zh": "快避難。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The evening is mild.",
+      "phonetic": "/ðə ˈivnɪŋ ɪz maɪld./",
+      "zh": "傍晚溫和。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good for a walk.",
+      "phonetic": "/gʊd fər ə wɔk./",
+      "zh": "適合散步。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The morning is foggy.",
+      "phonetic": "/ðə ˈmɔrnɪŋ ɪz ˈfɑgi./",
+      "zh": "早上起霧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Drive slow, please.",
+      "phonetic": "/draɪv sloʊ, pliz./",
+      "zh": "慢開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Check the radar.",
+      "phonetic": "/ʧɛk ðə ˈreɪˌdɑr./",
+      "zh": "看雷達。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cloud is near.",
+      "phonetic": "/klaʊd ɪz nɪr./",
+      "zh": "雲靠近。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The humidity is high.",
+      "phonetic": "/ðə hjuˈmɪdəti ɪz haɪ./",
+      "zh": "溼度高。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sticky, yes.",
+      "phonetic": "/ˈstɪki, jɛs./",
+      "zh": "悶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Snow is coming.",
+      "phonetic": "/snoʊ ɪz ˈkəmɪŋ./",
+      "zh": "要下雪。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "North, first.",
+      "phonetic": "/nɔrθ, fərst./",
+      "zh": "先下北邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wind is strong.",
+      "phonetic": "/ðə wɪnd ɪz strɔŋ./",
+      "zh": "風很強。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Gusts at coast.",
+      "phonetic": "/gəsts æt koʊst./",
+      "zh": "岸邊陣風。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the weekend clear?",
+      "phonetic": "/ɪz ðə ˈwiˌkɪnd klɪr?/",
+      "zh": "週末放晴？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Both days sunny.",
+      "phonetic": "/boʊθ deɪz ˈsəni./",
+      "zh": "兩天都晴。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The temperature drops.",
+      "phonetic": "/ðə ˈtɛmpərəʧər drɑps./",
+      "zh": "氣溫降。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ten degrees cold.",
+      "phonetic": "/tɛn dɪˈgriz koʊld./",
+      "zh": "降十度。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app says storm.",
+      "phonetic": "/ðə æp sɪz stɔrm./",
+      "zh": "App 說有暴風。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stay indoors, then.",
+      "phonetic": "/steɪ ˈɪnˌdɔrz, ðɛn./",
+      "zh": "那就室內。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will it rain today?",
+      "phonetic": "/wɪl ɪt reɪn təˈdeɪ?/",
+      "zh": "今天會下雨嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "After three, likely.",
+      "phonetic": "/ˈæftər θri, ˈlaɪkli./",
+      "zh": "三點後，可能。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the forecast?",
+      "phonetic": "/wət ɪz ðə ˈfɔrˌkæst?/",
+      "zh": "天氣預報如何？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sunny, then rain.",
+      "phonetic": "/ˈsəni, ðɛn reɪn./",
+      "zh": "晴，後雨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the forecast?",
+      "phonetic": "/wət ɪz ðə ˈfɔrˌkæst?/",
+      "zh": "天氣預報如何？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sunny, then rain.",
+      "phonetic": "/ˈsəni, ðɛn reɪn./",
+      "zh": "晴，後雨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will it rain today?",
+      "phonetic": "/wɪl ɪt reɪn təˈdeɪ?/",
+      "zh": "今天會下雨嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "After three, likely.",
+      "phonetic": "/ˈæftər θri, ˈlaɪkli./",
+      "zh": "三點後，可能。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app says storm.",
+      "phonetic": "/ðə æp sɪz stɔrm./",
+      "zh": "App 說有暴風。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stay indoors, then.",
+      "phonetic": "/steɪ ˈɪnˌdɔrz, ðɛn./",
+      "zh": "那就室內。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The temperature drops.",
+      "phonetic": "/ðə ˈtɛmpərəʧər drɑps./",
+      "zh": "氣溫降。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ten degrees cold.",
+      "phonetic": "/tɛn dɪˈgriz koʊld./",
+      "zh": "降十度。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the weekend clear?",
+      "phonetic": "/ɪz ðə ˈwiˌkɪnd klɪr?/",
+      "zh": "週末放晴？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Both days sunny.",
+      "phonetic": "/boʊθ deɪz ˈsəni./",
+      "zh": "兩天都晴。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wind is strong.",
+      "phonetic": "/ðə wɪnd ɪz strɔŋ./",
+      "zh": "風很強。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Gusts at coast.",
+      "phonetic": "/gəsts æt koʊst./",
+      "zh": "岸邊陣風。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Snow is coming.",
+      "phonetic": "/snoʊ ɪz ˈkəmɪŋ./",
+      "zh": "要下雪。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "North, first.",
+      "phonetic": "/nɔrθ, fərst./",
+      "zh": "先下北邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The humidity is high.",
+      "phonetic": "/ðə hjuˈmɪdəti ɪz haɪ./",
+      "zh": "溼度高。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sticky, yes.",
+      "phonetic": "/ˈstɪki, jɛs./",
+      "zh": "悶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Check the radar.",
+      "phonetic": "/ʧɛk ðə ˈreɪˌdɑr./",
+      "zh": "看雷達。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cloud is near.",
+      "phonetic": "/klaʊd ɪz nɪr./",
+      "zh": "雲靠近。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The morning is foggy.",
+      "phonetic": "/ðə ˈmɔrnɪŋ ɪz ˈfɑgi./",
+      "zh": "早上起霧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Drive slow, please.",
+      "phonetic": "/draɪv sloʊ, pliz./",
+      "zh": "慢開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The evening is mild.",
+      "phonetic": "/ðə ˈivnɪŋ ɪz maɪld./",
+      "zh": "傍晚溫和。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good for a walk.",
+      "phonetic": "/gʊd fər ə wɔk./",
+      "zh": "適合散步。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The alert is red.",
+      "phonetic": "/ðə əˈlərt ɪz rɛd./",
+      "zh": "警報紅色。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Take shelter, now.",
+      "phonetic": "/teɪk ˈʃɛltər, naʊ./",
+      "zh": "快避難。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sun sets early.",
+      "phonetic": "/ðə sən sɛts ˈərli./",
+      "zh": "日落早。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Winter, that is why.",
+      "phonetic": "/ˈwɪntər, ðət ɪz waɪ./",
+      "zh": "冬天。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The forecast changed.",
+      "phonetic": "/ðə ˈfɔrˌkæst ʧeɪnʤd./",
+      "zh": "預報改了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Updated at noon.",
+      "phonetic": "/ˈəpˌdeɪtɪd æt nun./",
+      "zh": "中午更新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will it freeze?",
+      "phonetic": "/wɪl ɪt friz?/",
+      "zh": "會結冰嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Below zero, yes.",
+      "phonetic": "/bɪˈloʊ ˈziroʊ, jɛs./",
+      "zh": "零度下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The UV is high.",
+      "phonetic": "/ðə uv* ɪz haɪ./",
+      "zh": "紫外線強。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wear the hat.",
+      "phonetic": "/wɛr ðə hæt./",
+      "zh": "戴帽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rain is light.",
+      "phonetic": "/ðə reɪn ɪz laɪt./",
+      "zh": "雨小。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No need for coat.",
+      "phonetic": "/noʊ nid fər koʊt./",
+      "zh": "不用穿外套。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The weekend is wet.",
+      "phonetic": "/ðə ˈwiˌkɪnd ɪz wɛt./",
+      "zh": "週末溼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Move it indoors.",
+      "phonetic": "/muv ɪt ˈɪnˌdɔrz./",
+      "zh": "改室內。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cloud is thick.",
+      "phonetic": "/ðə klaʊd ɪz θɪk./",
+      "zh": "雲厚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No stars tonight.",
+      "phonetic": "/noʊ stɑrz təˈnaɪt./",
+      "zh": "今晚無星。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The barometer falls.",
+      "phonetic": "/ðə bərˈɑmɪtər fɔlz./",
+      "zh": "氣壓下降。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Storm ahead.",
+      "phonetic": "/stɔrm əˈhɛd./",
+      "zh": "暴風在前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The breeze is nice.",
+      "phonetic": "/ðə briz ɪz nis./",
+      "zh": "微風舒服。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Open the window.",
+      "phonetic": "/ˈoʊpən ðə ˈwɪndoʊ./",
+      "zh": "開窗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The hail is rare.",
+      "phonetic": "/ðə heɪl ɪz rɛr./",
+      "zh": "冰雹少見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cover the car.",
+      "phonetic": "/ˈkəvər ðə kɑr./",
+      "zh": "蓋車。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The forecast is wrong.",
+      "phonetic": "/ðə ˈfɔrˌkæst ɪz rɔŋ./",
+      "zh": "預報錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It does happen.",
+      "phonetic": "/ɪt dɪz ˈhæpən./",
+      "zh": "偶爾。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The heat wave ends.",
+      "phonetic": "/ðə hit weɪv ɛndz./",
+      "zh": "熱浪結束。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cool by Friday.",
+      "phonetic": "/kul baɪ ˈfraɪˌdeɪ./",
+      "zh": "週五轉涼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The dew is heavy.",
+      "phonetic": "/ðə du ɪz ˈhɛvi./",
+      "zh": "露重。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Grass is wet.",
+      "phonetic": "/græs ɪz wɛt./",
+      "zh": "草溼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The mountain is clear.",
+      "phonetic": "/ðə ˈmaʊntən ɪz klɪr./",
+      "zh": "山上晴朗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good to hike.",
+      "phonetic": "/gʊd tɪ haɪk./",
+      "zh": "適合爬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The typhoon turned.",
+      "phonetic": "/ðə ˌtaɪˈfun tərnd./",
+      "zh": "颱風轉向。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We are safe, then.",
+      "phonetic": "/wi ər seɪf, ðɛn./",
+      "zh": "那我們安全。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The hourly shows sun.",
+      "phonetic": "/ðə ˈaʊrli ʃoʊz sən./",
+      "zh": "每小時顯示晴。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Enjoy it out.",
+      "phonetic": "/ˌɛnˈʤɔɪ ɪt aʊt./",
+      "zh": "出去享受。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cold front moves.",
+      "phonetic": "/ðə koʊld frənt muvz./",
+      "zh": "冷鋒移動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Coat needed soon.",
+      "phonetic": "/koʊt ˈnidɪd sun./",
+      "zh": "快穿外套。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sky is grey.",
+      "phonetic": "/ðə skaɪ ɪz greɪ./",
+      "zh": "天灰。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rain likely, yes.",
+      "phonetic": "/reɪn ˈlaɪkli, jɛs./",
+      "zh": "可能雨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The report is short.",
+      "phonetic": "/ðə rɪˈpɔrt ɪz ʃɔrt./",
+      "zh": "報導短。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Check again, later.",
+      "phonetic": "/ʧɛk əˈgɛn, ˈleɪtər./",
+      "zh": "稍後再看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The weather looks good.",
+      "phonetic": "/ðə ˈwɛðər lʊks gʊd./",
+      "zh": "天氣不錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Plan the trip.",
+      "phonetic": "/plæn ðə trɪp./",
+      "zh": "規劃行程。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the update.",
+      "phonetic": "/θæŋks fər ðə ˈəpˌdeɪt./",
+      "zh": "謝謝更新。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stay dry, all.",
+      "phonetic": "/steɪ draɪ, ɔl./",
+      "zh": "保持乾爽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the update.",
+      "phonetic": "/θæŋks fər ðə ˈəpˌdeɪt./",
+      "zh": "謝謝更新。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stay dry, all.",
+      "phonetic": "/steɪ draɪ, ɔl./",
+      "zh": "保持乾爽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The weather looks good.",
+      "phonetic": "/ðə ˈwɛðər lʊks gʊd./",
+      "zh": "天氣不錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Plan the trip.",
+      "phonetic": "/plæn ðə trɪp./",
+      "zh": "規劃行程。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The report is short.",
+      "phonetic": "/ðə rɪˈpɔrt ɪz ʃɔrt./",
+      "zh": "報導短。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Check again, later.",
+      "phonetic": "/ʧɛk əˈgɛn, ˈleɪtər./",
+      "zh": "稍後再看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sky is grey.",
+      "phonetic": "/ðə skaɪ ɪz greɪ./",
+      "zh": "天灰。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rain likely, yes.",
+      "phonetic": "/reɪn ˈlaɪkli, jɛs./",
+      "zh": "可能雨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cold front moves.",
+      "phonetic": "/ðə koʊld frənt muvz./",
+      "zh": "冷鋒移動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Coat needed soon.",
+      "phonetic": "/koʊt ˈnidɪd sun./",
+      "zh": "快穿外套。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The hourly shows sun.",
+      "phonetic": "/ðə ˈaʊrli ʃoʊz sən./",
+      "zh": "每小時顯示晴。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Enjoy it out.",
+      "phonetic": "/ˌɛnˈʤɔɪ ɪt aʊt./",
+      "zh": "出去享受。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The typhoon turned.",
+      "phonetic": "/ðə ˌtaɪˈfun tərnd./",
+      "zh": "颱風轉向。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We are safe, then.",
+      "phonetic": "/wi ər seɪf, ðɛn./",
+      "zh": "那我們安全。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The mountain is clear.",
+      "phonetic": "/ðə ˈmaʊntən ɪz klɪr./",
+      "zh": "山上晴朗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good to hike.",
+      "phonetic": "/gʊd tɪ haɪk./",
+      "zh": "適合爬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The dew is heavy.",
+      "phonetic": "/ðə du ɪz ˈhɛvi./",
+      "zh": "露重。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Grass is wet.",
+      "phonetic": "/græs ɪz wɛt./",
+      "zh": "草溼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The heat wave ends.",
+      "phonetic": "/ðə hit weɪv ɛndz./",
+      "zh": "熱浪結束。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cool by Friday.",
+      "phonetic": "/kul baɪ ˈfraɪˌdeɪ./",
+      "zh": "週五轉涼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The forecast is wrong.",
+      "phonetic": "/ðə ˈfɔrˌkæst ɪz rɔŋ./",
+      "zh": "預報錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It does happen.",
+      "phonetic": "/ɪt dɪz ˈhæpən./",
+      "zh": "偶爾。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The hail is rare.",
+      "phonetic": "/ðə heɪl ɪz rɛr./",
+      "zh": "冰雹少見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cover the car.",
+      "phonetic": "/ˈkəvər ðə kɑr./",
+      "zh": "蓋車。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The breeze is nice.",
+      "phonetic": "/ðə briz ɪz nis./",
+      "zh": "微風舒服。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Open the window.",
+      "phonetic": "/ˈoʊpən ðə ˈwɪndoʊ./",
+      "zh": "開窗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The barometer falls.",
+      "phonetic": "/ðə bərˈɑmɪtər fɔlz./",
+      "zh": "氣壓下降。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Storm ahead.",
+      "phonetic": "/stɔrm əˈhɛd./",
+      "zh": "暴風在前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cloud is thick.",
+      "phonetic": "/ðə klaʊd ɪz θɪk./",
+      "zh": "雲厚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No stars tonight.",
+      "phonetic": "/noʊ stɑrz təˈnaɪt./",
+      "zh": "今晚無星。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The weekend is wet.",
+      "phonetic": "/ðə ˈwiˌkɪnd ɪz wɛt./",
+      "zh": "週末溼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Move it indoors.",
+      "phonetic": "/muv ɪt ˈɪnˌdɔrz./",
+      "zh": "改室內。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rain is light.",
+      "phonetic": "/ðə reɪn ɪz laɪt./",
+      "zh": "雨小。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No need for coat.",
+      "phonetic": "/noʊ nid fər koʊt./",
+      "zh": "不用穿外套。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The UV is high.",
+      "phonetic": "/ðə uv* ɪz haɪ./",
+      "zh": "紫外線強。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wear the hat.",
+      "phonetic": "/wɛr ðə hæt./",
+      "zh": "戴帽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will it freeze?",
+      "phonetic": "/wɪl ɪt friz?/",
+      "zh": "會結冰嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Below zero, yes.",
+      "phonetic": "/bɪˈloʊ ˈziroʊ, jɛs./",
+      "zh": "零度下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The forecast changed.",
+      "phonetic": "/ðə ˈfɔrˌkæst ʧeɪnʤd./",
+      "zh": "預報改了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Updated at noon.",
+      "phonetic": "/ˈəpˌdeɪtɪd æt nun./",
+      "zh": "中午更新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sun sets early.",
+      "phonetic": "/ðə sən sɛts ˈərli./",
+      "zh": "日落早。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Winter, that is why.",
+      "phonetic": "/ˈwɪntər, ðət ɪz waɪ./",
+      "zh": "冬天。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The alert is red.",
+      "phonetic": "/ðə əˈlərt ɪz rɛd./",
+      "zh": "警報紅色。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Take shelter, now.",
+      "phonetic": "/teɪk ˈʃɛltər, naʊ./",
+      "zh": "快避難。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The evening is mild.",
+      "phonetic": "/ðə ˈivnɪŋ ɪz maɪld./",
+      "zh": "傍晚溫和。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good for a walk.",
+      "phonetic": "/gʊd fər ə wɔk./",
+      "zh": "適合散步。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The morning is foggy.",
+      "phonetic": "/ðə ˈmɔrnɪŋ ɪz ˈfɑgi./",
+      "zh": "早上起霧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Drive slow, please.",
+      "phonetic": "/draɪv sloʊ, pliz./",
+      "zh": "慢開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Check the radar.",
+      "phonetic": "/ʧɛk ðə ˈreɪˌdɑr./",
+      "zh": "看雷達。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cloud is near.",
+      "phonetic": "/klaʊd ɪz nɪr./",
+      "zh": "雲靠近。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The humidity is high.",
+      "phonetic": "/ðə hjuˈmɪdəti ɪz haɪ./",
+      "zh": "溼度高。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sticky, yes.",
+      "phonetic": "/ˈstɪki, jɛs./",
+      "zh": "悶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Snow is coming.",
+      "phonetic": "/snoʊ ɪz ˈkəmɪŋ./",
+      "zh": "要下雪。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "North, first.",
+      "phonetic": "/nɔrθ, fərst./",
+      "zh": "先下北邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wind is strong.",
+      "phonetic": "/ðə wɪnd ɪz strɔŋ./",
+      "zh": "風很強。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Gusts at coast.",
+      "phonetic": "/gəsts æt koʊst./",
+      "zh": "岸邊陣風。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the weekend clear?",
+      "phonetic": "/ɪz ðə ˈwiˌkɪnd klɪr?/",
+      "zh": "週末放晴？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Both days sunny.",
+      "phonetic": "/boʊθ deɪz ˈsəni./",
+      "zh": "兩天都晴。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The temperature drops.",
+      "phonetic": "/ðə ˈtɛmpərəʧər drɑps./",
+      "zh": "氣溫降。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ten degrees cold.",
+      "phonetic": "/tɛn dɪˈgriz koʊld./",
+      "zh": "降十度。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app says storm.",
+      "phonetic": "/ðə æp sɪz stɔrm./",
+      "zh": "App 說有暴風。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stay indoors, then.",
+      "phonetic": "/steɪ ˈɪnˌdɔrz, ðɛn./",
+      "zh": "那就室內。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will it rain today?",
+      "phonetic": "/wɪl ɪt reɪn təˈdeɪ?/",
+      "zh": "今天會下雨嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "After three, likely.",
+      "phonetic": "/ˈæftər θri, ˈlaɪkli./",
+      "zh": "三點後，可能。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the forecast?",
+      "phonetic": "/wət ɪz ðə ˈfɔrˌkæst?/",
+      "zh": "天氣預報如何？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sunny, then rain.",
+      "phonetic": "/ˈsəni, ðɛn reɪn./",
+      "zh": "晴，後雨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the forecast?",
+      "phonetic": "/wət ɪz ðə ˈfɔrˌkæst?/",
+      "zh": "天氣預報如何？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sunny, then rain.",
+      "phonetic": "/ˈsəni, ðɛn reɪn./",
+      "zh": "晴，後雨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will it rain today?",
+      "phonetic": "/wɪl ɪt reɪn təˈdeɪ?/",
+      "zh": "今天會下雨嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "After three, likely.",
+      "phonetic": "/ˈæftər θri, ˈlaɪkli./",
+      "zh": "三點後，可能。"
+    }
+  ]
+}

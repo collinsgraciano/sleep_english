@@ -1,0 +1,2458 @@
+{
+  "title": "Everyday Phrases — Paying Rent",
+  "title_zh": "付房租",
+  "scene_zh": "付房租 · 情境對話",
+  "title_quote": "Rent is due.",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】🏠 實用付房租必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — Paying Rent",
+  "youtube_description": "睡著學英文！這部影片收錄實用付房租情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫），不用背，睡前聽就會。重複播放，讓英文自然進入你的大腦。👍 想學更多生活場景，請留言告訴我！別忘了訂閱+按讚。 #英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical Paying Rent phrase pairs (each pair: male normal speed → female slow speed → combined dialogue). No memorization needed—just listen before bed and absorb naturally. If you want more real-life scenarios, leave a comment! Subscribe and like!",
+  "youtube_tags": [
+    "英文聽力",
+    "睡前英文",
+    "付房租英文",
+    "English listening",
+    "Sleep learning",
+    "A2 English",
+    "常用英文短語",
+    "零基礎英文",
+    "慢速英文",
+    "英文口語",
+    "Learn English",
+    "English for daily life",
+    "ESL",
+    "English conversation",
+    "聽英語",
+    "英文學習"
+  ],
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "Paying Rent",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "Paying Rent",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Finance",
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "Rent is due.",
+      "phonetic": "/rɛnt ɪz du./",
+      "zh": "房租到期。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pay by the first.",
+      "phonetic": "/peɪ baɪ ðə fərst./",
+      "zh": "一號前付。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The amount is set.",
+      "phonetic": "/ðə əˈmaʊnt ɪz sɛt./",
+      "zh": "金額定。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same as last.",
+      "phonetic": "/seɪm ɛz læst./",
+      "zh": "同上月。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bank transfer.",
+      "phonetic": "/ðə bæŋk ˈtrænsfər./",
+      "zh": "銀行轉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "To the landlord.",
+      "phonetic": "/tɪ ðə ˈlænˌdlɔrd./",
+      "zh": "給房東。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The receipt, keep.",
+      "phonetic": "/ðə rɪˈsit, kip./",
+      "zh": "收據留。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Proof of pay, yes.",
+      "phonetic": "/pruf əv peɪ, jɛs./",
+      "zh": "付款證明。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app is quick.",
+      "phonetic": "/ðə æp ɪz kwɪk./",
+      "zh": "App 快。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Scan the code.",
+      "phonetic": "/skæn ðə koʊd./",
+      "zh": "掃碼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cash is ok.",
+      "phonetic": "/ðə kæʃ ɪz ˈoʊˈkeɪ./",
+      "zh": "現金可。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Get the slip, please.",
+      "phonetic": "/gɪt ðə slɪp, pliz./",
+      "zh": "拿單據。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The late fee, avoid.",
+      "phonetic": "/ðə leɪt fi, əˈvɔɪd./",
+      "zh": "避免滯納金。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pay early, yes.",
+      "phonetic": "/peɪ ˈərli, jɛs./",
+      "zh": "早付。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lease is signed.",
+      "phonetic": "/ðə lis ɪz saɪnd./",
+      "zh": "租約籤。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Terms clear, yes.",
+      "phonetic": "/tərmz klɪr, jɛs./",
+      "zh": "條款清。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The increase this year.",
+      "phonetic": "/ðə ˌɪnˈkris ðɪs jɪr./",
+      "zh": "今年漲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Notice given, yes.",
+      "phonetic": "/ˈnoʊtɪs ˈgɪvɪn, jɛs./",
+      "zh": "已通知。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The split with roomie.",
+      "phonetic": "/ðə splɪt wɪθ roomie*./",
+      "zh": "和室友分。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Half each, yes.",
+      "phonetic": "/hæf iʧ, jɛs./",
+      "zh": "各半。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The check is written.",
+      "phonetic": "/ðə ʧɛk ɪz ˈrɪtən./",
+      "zh": "支票寫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Date it right.",
+      "phonetic": "/deɪt ɪt raɪt./",
+      "zh": "日期對。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The landlord called.",
+      "phonetic": "/ðə ˈlænˌdlɔrd kɔld./",
+      "zh": "房東打。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Confirm the pay.",
+      "phonetic": "/kənˈfərm ðə peɪ./",
+      "zh": "確認付款。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The funds are low.",
+      "phonetic": "/ðə fəndz ər loʊ./",
+      "zh": "資金少。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Transfer in, quick.",
+      "phonetic": "/ˈtrænsfər ɪn, kwɪk./",
+      "zh": "快轉入。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The portal is down.",
+      "phonetic": "/ðə ˈpɔrtəl ɪz daʊn./",
+      "zh": "平臺掛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try tomorrow, yes.",
+      "phonetic": "/traɪ təˈmɑˌroʊ, jɛs./",
+      "zh": "明天試。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The proof is text.",
+      "phonetic": "/ðə pruf ɪz tɛkst./",
+      "zh": "證明是簡訊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Save the thread.",
+      "phonetic": "/seɪv ðə θrɛd./",
+      "zh": "存對話。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The deposit is separate.",
+      "phonetic": "/ðə dɪˈpɑzət ɪz ˈsɛpərˌeɪt./",
+      "zh": "押金另。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Return at end.",
+      "phonetic": "/rɪˈtərn æt ɛnd./",
+      "zh": "退租還。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The monthly auto.",
+      "phonetic": "/ðə ˈmənθli ˈɔtoʊ./",
+      "zh": "月自動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Set and forget.",
+      "phonetic": "/sɛt ənd fərˈgɛt./",
+      "zh": "設好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The budget allows.",
+      "phonetic": "/ðə ˈbəʤɪt əˈlaʊz./",
+      "zh": "預算夠。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "After the rent, yes.",
+      "phonetic": "/ˈæftər ðə rɛnt, jɛs./",
+      "zh": "付租後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The slip is lost.",
+      "phonetic": "/ðə slɪp ɪz lɔst./",
+      "zh": "單據丟。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Bank shows it.",
+      "phonetic": "/bæŋk ʃoʊz ɪt./",
+      "zh": "銀行有。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rent is high.",
+      "phonetic": "/ðə rɛnt ɪz haɪ./",
+      "zh": "房租高。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Share the space.",
+      "phonetic": "/ʃɛr ðə speɪs./",
+      "zh": "合租。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pay stub, show.",
+      "phonetic": "/ðə peɪ stəb, ʃoʊ./",
+      "zh": "薪單出示。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the record.",
+      "phonetic": "/fər ðə ˈrɛkərd./",
+      "zh": "留記錄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The date slipped.",
+      "phonetic": "/ðə deɪt slɪpt./",
+      "zh": "日期忘。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Set a remind.",
+      "phonetic": "/sɛt ə riˈmaɪnd./",
+      "zh": "設提醒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The transfer cleared.",
+      "phonetic": "/ðə ˈtrænsfər klɪrd./",
+      "zh": "轉帳完成。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Confirmed, yes.",
+      "phonetic": "/kənˈfərmd, jɛs./",
+      "zh": "確認。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The receipt emailed.",
+      "phonetic": "/ðə rɪˈsit iˈmeɪld./",
+      "zh": "收據寄。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Print and file.",
+      "phonetic": "/prɪnt ənd faɪl./",
+      "zh": "印歸檔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rent is paid.",
+      "phonetic": "/ðə rɛnt ɪz peɪd./",
+      "zh": "房租付。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Relief, yes.",
+      "phonetic": "/rɪˈlif, jɛs./",
+      "zh": "松。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The next due, note.",
+      "phonetic": "/ðə nɛkst du, noʊt./",
+      "zh": "下次到期記。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Calendar mark, yes.",
+      "phonetic": "/ˈkæləndər mɑrk, jɛs./",
+      "zh": "日曆標。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The hike is steep.",
+      "phonetic": "/ðə haɪk ɪz stip./",
+      "zh": "漲很多。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Move, maybe.",
+      "phonetic": "/muv, ˈmeɪbi./",
+      "zh": "或許搬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The grace is three.",
+      "phonetic": "/ðə greɪs ɪz θri./",
+      "zh": "寬限三天。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Still pay prompt.",
+      "phonetic": "/stɪl peɪ prɑmpt./",
+      "zh": "仍準時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The statement matched.",
+      "phonetic": "/ðə ˈsteɪtmənt mæʧt./",
+      "zh": "對帳符。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All square, yes.",
+      "phonetic": "/ɔl skwɛr, jɛs./",
+      "zh": "兩清。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The month closed.",
+      "phonetic": "/ðə mənθ kloʊzd./",
+      "zh": "月結。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On to next.",
+      "phonetic": "/ɔn tɪ nɛkst./",
+      "zh": "下月。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The peace of paid.",
+      "phonetic": "/ðə pis əv peɪd./",
+      "zh": "付清安心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rest easy, yes.",
+      "phonetic": "/rɛst ˈizi, jɛs./",
+      "zh": "安心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for paying.",
+      "phonetic": "/θæŋks fər peɪɪŋ./",
+      "zh": "謝謝付租。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Roof secure, pal.",
+      "phonetic": "/rʊf sɪˈkjʊr, pæl./",
+      "zh": "有屋遮。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for paying.",
+      "phonetic": "/θæŋks fər peɪɪŋ./",
+      "zh": "謝謝付租。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Roof secure, pal.",
+      "phonetic": "/rʊf sɪˈkjʊr, pæl./",
+      "zh": "有屋遮。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The peace of paid.",
+      "phonetic": "/ðə pis əv peɪd./",
+      "zh": "付清安心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rest easy, yes.",
+      "phonetic": "/rɛst ˈizi, jɛs./",
+      "zh": "安心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The month closed.",
+      "phonetic": "/ðə mənθ kloʊzd./",
+      "zh": "月結。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On to next.",
+      "phonetic": "/ɔn tɪ nɛkst./",
+      "zh": "下月。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The statement matched.",
+      "phonetic": "/ðə ˈsteɪtmənt mæʧt./",
+      "zh": "對帳符。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All square, yes.",
+      "phonetic": "/ɔl skwɛr, jɛs./",
+      "zh": "兩清。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The grace is three.",
+      "phonetic": "/ðə greɪs ɪz θri./",
+      "zh": "寬限三天。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Still pay prompt.",
+      "phonetic": "/stɪl peɪ prɑmpt./",
+      "zh": "仍準時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The hike is steep.",
+      "phonetic": "/ðə haɪk ɪz stip./",
+      "zh": "漲很多。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Move, maybe.",
+      "phonetic": "/muv, ˈmeɪbi./",
+      "zh": "或許搬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The next due, note.",
+      "phonetic": "/ðə nɛkst du, noʊt./",
+      "zh": "下次到期記。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Calendar mark, yes.",
+      "phonetic": "/ˈkæləndər mɑrk, jɛs./",
+      "zh": "日曆標。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rent is paid.",
+      "phonetic": "/ðə rɛnt ɪz peɪd./",
+      "zh": "房租付。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Relief, yes.",
+      "phonetic": "/rɪˈlif, jɛs./",
+      "zh": "松。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The receipt emailed.",
+      "phonetic": "/ðə rɪˈsit iˈmeɪld./",
+      "zh": "收據寄。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Print and file.",
+      "phonetic": "/prɪnt ənd faɪl./",
+      "zh": "印歸檔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The transfer cleared.",
+      "phonetic": "/ðə ˈtrænsfər klɪrd./",
+      "zh": "轉帳完成。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Confirmed, yes.",
+      "phonetic": "/kənˈfərmd, jɛs./",
+      "zh": "確認。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The date slipped.",
+      "phonetic": "/ðə deɪt slɪpt./",
+      "zh": "日期忘。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Set a remind.",
+      "phonetic": "/sɛt ə riˈmaɪnd./",
+      "zh": "設提醒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pay stub, show.",
+      "phonetic": "/ðə peɪ stəb, ʃoʊ./",
+      "zh": "薪單出示。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the record.",
+      "phonetic": "/fər ðə ˈrɛkərd./",
+      "zh": "留記錄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rent is high.",
+      "phonetic": "/ðə rɛnt ɪz haɪ./",
+      "zh": "房租高。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Share the space.",
+      "phonetic": "/ʃɛr ðə speɪs./",
+      "zh": "合租。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The slip is lost.",
+      "phonetic": "/ðə slɪp ɪz lɔst./",
+      "zh": "單據丟。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Bank shows it.",
+      "phonetic": "/bæŋk ʃoʊz ɪt./",
+      "zh": "銀行有。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The budget allows.",
+      "phonetic": "/ðə ˈbəʤɪt əˈlaʊz./",
+      "zh": "預算夠。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "After the rent, yes.",
+      "phonetic": "/ˈæftər ðə rɛnt, jɛs./",
+      "zh": "付租後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The monthly auto.",
+      "phonetic": "/ðə ˈmənθli ˈɔtoʊ./",
+      "zh": "月自動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Set and forget.",
+      "phonetic": "/sɛt ənd fərˈgɛt./",
+      "zh": "設好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The deposit is separate.",
+      "phonetic": "/ðə dɪˈpɑzət ɪz ˈsɛpərˌeɪt./",
+      "zh": "押金另。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Return at end.",
+      "phonetic": "/rɪˈtərn æt ɛnd./",
+      "zh": "退租還。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The proof is text.",
+      "phonetic": "/ðə pruf ɪz tɛkst./",
+      "zh": "證明是簡訊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Save the thread.",
+      "phonetic": "/seɪv ðə θrɛd./",
+      "zh": "存對話。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The portal is down.",
+      "phonetic": "/ðə ˈpɔrtəl ɪz daʊn./",
+      "zh": "平臺掛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try tomorrow, yes.",
+      "phonetic": "/traɪ təˈmɑˌroʊ, jɛs./",
+      "zh": "明天試。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The funds are low.",
+      "phonetic": "/ðə fəndz ər loʊ./",
+      "zh": "資金少。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Transfer in, quick.",
+      "phonetic": "/ˈtrænsfər ɪn, kwɪk./",
+      "zh": "快轉入。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The landlord called.",
+      "phonetic": "/ðə ˈlænˌdlɔrd kɔld./",
+      "zh": "房東打。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Confirm the pay.",
+      "phonetic": "/kənˈfərm ðə peɪ./",
+      "zh": "確認付款。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The check is written.",
+      "phonetic": "/ðə ʧɛk ɪz ˈrɪtən./",
+      "zh": "支票寫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Date it right.",
+      "phonetic": "/deɪt ɪt raɪt./",
+      "zh": "日期對。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The split with roomie.",
+      "phonetic": "/ðə splɪt wɪθ roomie*./",
+      "zh": "和室友分。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Half each, yes.",
+      "phonetic": "/hæf iʧ, jɛs./",
+      "zh": "各半。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The increase this year.",
+      "phonetic": "/ðə ˌɪnˈkris ðɪs jɪr./",
+      "zh": "今年漲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Notice given, yes.",
+      "phonetic": "/ˈnoʊtɪs ˈgɪvɪn, jɛs./",
+      "zh": "已通知。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lease is signed.",
+      "phonetic": "/ðə lis ɪz saɪnd./",
+      "zh": "租約籤。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Terms clear, yes.",
+      "phonetic": "/tərmz klɪr, jɛs./",
+      "zh": "條款清。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The late fee, avoid.",
+      "phonetic": "/ðə leɪt fi, əˈvɔɪd./",
+      "zh": "避免滯納金。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pay early, yes.",
+      "phonetic": "/peɪ ˈərli, jɛs./",
+      "zh": "早付。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cash is ok.",
+      "phonetic": "/ðə kæʃ ɪz ˈoʊˈkeɪ./",
+      "zh": "現金可。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Get the slip, please.",
+      "phonetic": "/gɪt ðə slɪp, pliz./",
+      "zh": "拿單據。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app is quick.",
+      "phonetic": "/ðə æp ɪz kwɪk./",
+      "zh": "App 快。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Scan the code.",
+      "phonetic": "/skæn ðə koʊd./",
+      "zh": "掃碼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The receipt, keep.",
+      "phonetic": "/ðə rɪˈsit, kip./",
+      "zh": "收據留。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Proof of pay, yes.",
+      "phonetic": "/pruf əv peɪ, jɛs./",
+      "zh": "付款證明。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bank transfer.",
+      "phonetic": "/ðə bæŋk ˈtrænsfər./",
+      "zh": "銀行轉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "To the landlord.",
+      "phonetic": "/tɪ ðə ˈlænˌdlɔrd./",
+      "zh": "給房東。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The amount is set.",
+      "phonetic": "/ðə əˈmaʊnt ɪz sɛt./",
+      "zh": "金額定。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same as last.",
+      "phonetic": "/seɪm ɛz læst./",
+      "zh": "同上月。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Rent is due.",
+      "phonetic": "/rɛnt ɪz du./",
+      "zh": "房租到期。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pay by the first.",
+      "phonetic": "/peɪ baɪ ðə fərst./",
+      "zh": "一號前付。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Rent is due.",
+      "phonetic": "/rɛnt ɪz du./",
+      "zh": "房租到期。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pay by the first.",
+      "phonetic": "/peɪ baɪ ðə fərst./",
+      "zh": "一號前付。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The amount is set.",
+      "phonetic": "/ðə əˈmaʊnt ɪz sɛt./",
+      "zh": "金額定。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same as last.",
+      "phonetic": "/seɪm ɛz læst./",
+      "zh": "同上月。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bank transfer.",
+      "phonetic": "/ðə bæŋk ˈtrænsfər./",
+      "zh": "銀行轉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "To the landlord.",
+      "phonetic": "/tɪ ðə ˈlænˌdlɔrd./",
+      "zh": "給房東。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The receipt, keep.",
+      "phonetic": "/ðə rɪˈsit, kip./",
+      "zh": "收據留。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Proof of pay, yes.",
+      "phonetic": "/pruf əv peɪ, jɛs./",
+      "zh": "付款證明。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app is quick.",
+      "phonetic": "/ðə æp ɪz kwɪk./",
+      "zh": "App 快。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Scan the code.",
+      "phonetic": "/skæn ðə koʊd./",
+      "zh": "掃碼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cash is ok.",
+      "phonetic": "/ðə kæʃ ɪz ˈoʊˈkeɪ./",
+      "zh": "現金可。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Get the slip, please.",
+      "phonetic": "/gɪt ðə slɪp, pliz./",
+      "zh": "拿單據。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The late fee, avoid.",
+      "phonetic": "/ðə leɪt fi, əˈvɔɪd./",
+      "zh": "避免滯納金。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pay early, yes.",
+      "phonetic": "/peɪ ˈərli, jɛs./",
+      "zh": "早付。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lease is signed.",
+      "phonetic": "/ðə lis ɪz saɪnd./",
+      "zh": "租約籤。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Terms clear, yes.",
+      "phonetic": "/tərmz klɪr, jɛs./",
+      "zh": "條款清。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The increase this year.",
+      "phonetic": "/ðə ˌɪnˈkris ðɪs jɪr./",
+      "zh": "今年漲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Notice given, yes.",
+      "phonetic": "/ˈnoʊtɪs ˈgɪvɪn, jɛs./",
+      "zh": "已通知。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The split with roomie.",
+      "phonetic": "/ðə splɪt wɪθ roomie*./",
+      "zh": "和室友分。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Half each, yes.",
+      "phonetic": "/hæf iʧ, jɛs./",
+      "zh": "各半。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The check is written.",
+      "phonetic": "/ðə ʧɛk ɪz ˈrɪtən./",
+      "zh": "支票寫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Date it right.",
+      "phonetic": "/deɪt ɪt raɪt./",
+      "zh": "日期對。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The landlord called.",
+      "phonetic": "/ðə ˈlænˌdlɔrd kɔld./",
+      "zh": "房東打。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Confirm the pay.",
+      "phonetic": "/kənˈfərm ðə peɪ./",
+      "zh": "確認付款。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The funds are low.",
+      "phonetic": "/ðə fəndz ər loʊ./",
+      "zh": "資金少。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Transfer in, quick.",
+      "phonetic": "/ˈtrænsfər ɪn, kwɪk./",
+      "zh": "快轉入。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The portal is down.",
+      "phonetic": "/ðə ˈpɔrtəl ɪz daʊn./",
+      "zh": "平臺掛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try tomorrow, yes.",
+      "phonetic": "/traɪ təˈmɑˌroʊ, jɛs./",
+      "zh": "明天試。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The proof is text.",
+      "phonetic": "/ðə pruf ɪz tɛkst./",
+      "zh": "證明是簡訊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Save the thread.",
+      "phonetic": "/seɪv ðə θrɛd./",
+      "zh": "存對話。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The deposit is separate.",
+      "phonetic": "/ðə dɪˈpɑzət ɪz ˈsɛpərˌeɪt./",
+      "zh": "押金另。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Return at end.",
+      "phonetic": "/rɪˈtərn æt ɛnd./",
+      "zh": "退租還。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The monthly auto.",
+      "phonetic": "/ðə ˈmənθli ˈɔtoʊ./",
+      "zh": "月自動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Set and forget.",
+      "phonetic": "/sɛt ənd fərˈgɛt./",
+      "zh": "設好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The budget allows.",
+      "phonetic": "/ðə ˈbəʤɪt əˈlaʊz./",
+      "zh": "預算夠。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "After the rent, yes.",
+      "phonetic": "/ˈæftər ðə rɛnt, jɛs./",
+      "zh": "付租後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The slip is lost.",
+      "phonetic": "/ðə slɪp ɪz lɔst./",
+      "zh": "單據丟。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Bank shows it.",
+      "phonetic": "/bæŋk ʃoʊz ɪt./",
+      "zh": "銀行有。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rent is high.",
+      "phonetic": "/ðə rɛnt ɪz haɪ./",
+      "zh": "房租高。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Share the space.",
+      "phonetic": "/ʃɛr ðə speɪs./",
+      "zh": "合租。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pay stub, show.",
+      "phonetic": "/ðə peɪ stəb, ʃoʊ./",
+      "zh": "薪單出示。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the record.",
+      "phonetic": "/fər ðə ˈrɛkərd./",
+      "zh": "留記錄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The date slipped.",
+      "phonetic": "/ðə deɪt slɪpt./",
+      "zh": "日期忘。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Set a remind.",
+      "phonetic": "/sɛt ə riˈmaɪnd./",
+      "zh": "設提醒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The transfer cleared.",
+      "phonetic": "/ðə ˈtrænsfər klɪrd./",
+      "zh": "轉帳完成。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Confirmed, yes.",
+      "phonetic": "/kənˈfərmd, jɛs./",
+      "zh": "確認。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The receipt emailed.",
+      "phonetic": "/ðə rɪˈsit iˈmeɪld./",
+      "zh": "收據寄。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Print and file.",
+      "phonetic": "/prɪnt ənd faɪl./",
+      "zh": "印歸檔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rent is paid.",
+      "phonetic": "/ðə rɛnt ɪz peɪd./",
+      "zh": "房租付。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Relief, yes.",
+      "phonetic": "/rɪˈlif, jɛs./",
+      "zh": "松。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The next due, note.",
+      "phonetic": "/ðə nɛkst du, noʊt./",
+      "zh": "下次到期記。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Calendar mark, yes.",
+      "phonetic": "/ˈkæləndər mɑrk, jɛs./",
+      "zh": "日曆標。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The hike is steep.",
+      "phonetic": "/ðə haɪk ɪz stip./",
+      "zh": "漲很多。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Move, maybe.",
+      "phonetic": "/muv, ˈmeɪbi./",
+      "zh": "或許搬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The grace is three.",
+      "phonetic": "/ðə greɪs ɪz θri./",
+      "zh": "寬限三天。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Still pay prompt.",
+      "phonetic": "/stɪl peɪ prɑmpt./",
+      "zh": "仍準時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The statement matched.",
+      "phonetic": "/ðə ˈsteɪtmənt mæʧt./",
+      "zh": "對帳符。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All square, yes.",
+      "phonetic": "/ɔl skwɛr, jɛs./",
+      "zh": "兩清。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The month closed.",
+      "phonetic": "/ðə mənθ kloʊzd./",
+      "zh": "月結。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On to next.",
+      "phonetic": "/ɔn tɪ nɛkst./",
+      "zh": "下月。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The peace of paid.",
+      "phonetic": "/ðə pis əv peɪd./",
+      "zh": "付清安心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rest easy, yes.",
+      "phonetic": "/rɛst ˈizi, jɛs./",
+      "zh": "安心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for paying.",
+      "phonetic": "/θæŋks fər peɪɪŋ./",
+      "zh": "謝謝付租。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Roof secure, pal.",
+      "phonetic": "/rʊf sɪˈkjʊr, pæl./",
+      "zh": "有屋遮。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for paying.",
+      "phonetic": "/θæŋks fər peɪɪŋ./",
+      "zh": "謝謝付租。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Roof secure, pal.",
+      "phonetic": "/rʊf sɪˈkjʊr, pæl./",
+      "zh": "有屋遮。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The peace of paid.",
+      "phonetic": "/ðə pis əv peɪd./",
+      "zh": "付清安心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rest easy, yes.",
+      "phonetic": "/rɛst ˈizi, jɛs./",
+      "zh": "安心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The month closed.",
+      "phonetic": "/ðə mənθ kloʊzd./",
+      "zh": "月結。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On to next.",
+      "phonetic": "/ɔn tɪ nɛkst./",
+      "zh": "下月。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The statement matched.",
+      "phonetic": "/ðə ˈsteɪtmənt mæʧt./",
+      "zh": "對帳符。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All square, yes.",
+      "phonetic": "/ɔl skwɛr, jɛs./",
+      "zh": "兩清。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The grace is three.",
+      "phonetic": "/ðə greɪs ɪz θri./",
+      "zh": "寬限三天。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Still pay prompt.",
+      "phonetic": "/stɪl peɪ prɑmpt./",
+      "zh": "仍準時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The hike is steep.",
+      "phonetic": "/ðə haɪk ɪz stip./",
+      "zh": "漲很多。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Move, maybe.",
+      "phonetic": "/muv, ˈmeɪbi./",
+      "zh": "或許搬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The next due, note.",
+      "phonetic": "/ðə nɛkst du, noʊt./",
+      "zh": "下次到期記。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Calendar mark, yes.",
+      "phonetic": "/ˈkæləndər mɑrk, jɛs./",
+      "zh": "日曆標。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rent is paid.",
+      "phonetic": "/ðə rɛnt ɪz peɪd./",
+      "zh": "房租付。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Relief, yes.",
+      "phonetic": "/rɪˈlif, jɛs./",
+      "zh": "松。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The receipt emailed.",
+      "phonetic": "/ðə rɪˈsit iˈmeɪld./",
+      "zh": "收據寄。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Print and file.",
+      "phonetic": "/prɪnt ənd faɪl./",
+      "zh": "印歸檔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The transfer cleared.",
+      "phonetic": "/ðə ˈtrænsfər klɪrd./",
+      "zh": "轉帳完成。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Confirmed, yes.",
+      "phonetic": "/kənˈfərmd, jɛs./",
+      "zh": "確認。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The date slipped.",
+      "phonetic": "/ðə deɪt slɪpt./",
+      "zh": "日期忘。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Set a remind.",
+      "phonetic": "/sɛt ə riˈmaɪnd./",
+      "zh": "設提醒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pay stub, show.",
+      "phonetic": "/ðə peɪ stəb, ʃoʊ./",
+      "zh": "薪單出示。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the record.",
+      "phonetic": "/fər ðə ˈrɛkərd./",
+      "zh": "留記錄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rent is high.",
+      "phonetic": "/ðə rɛnt ɪz haɪ./",
+      "zh": "房租高。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Share the space.",
+      "phonetic": "/ʃɛr ðə speɪs./",
+      "zh": "合租。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The slip is lost.",
+      "phonetic": "/ðə slɪp ɪz lɔst./",
+      "zh": "單據丟。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Bank shows it.",
+      "phonetic": "/bæŋk ʃoʊz ɪt./",
+      "zh": "銀行有。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The budget allows.",
+      "phonetic": "/ðə ˈbəʤɪt əˈlaʊz./",
+      "zh": "預算夠。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "After the rent, yes.",
+      "phonetic": "/ˈæftər ðə rɛnt, jɛs./",
+      "zh": "付租後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The monthly auto.",
+      "phonetic": "/ðə ˈmənθli ˈɔtoʊ./",
+      "zh": "月自動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Set and forget.",
+      "phonetic": "/sɛt ənd fərˈgɛt./",
+      "zh": "設好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The deposit is separate.",
+      "phonetic": "/ðə dɪˈpɑzət ɪz ˈsɛpərˌeɪt./",
+      "zh": "押金另。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Return at end.",
+      "phonetic": "/rɪˈtərn æt ɛnd./",
+      "zh": "退租還。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The proof is text.",
+      "phonetic": "/ðə pruf ɪz tɛkst./",
+      "zh": "證明是簡訊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Save the thread.",
+      "phonetic": "/seɪv ðə θrɛd./",
+      "zh": "存對話。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The portal is down.",
+      "phonetic": "/ðə ˈpɔrtəl ɪz daʊn./",
+      "zh": "平臺掛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try tomorrow, yes.",
+      "phonetic": "/traɪ təˈmɑˌroʊ, jɛs./",
+      "zh": "明天試。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The funds are low.",
+      "phonetic": "/ðə fəndz ər loʊ./",
+      "zh": "資金少。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Transfer in, quick.",
+      "phonetic": "/ˈtrænsfər ɪn, kwɪk./",
+      "zh": "快轉入。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The landlord called.",
+      "phonetic": "/ðə ˈlænˌdlɔrd kɔld./",
+      "zh": "房東打。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Confirm the pay.",
+      "phonetic": "/kənˈfərm ðə peɪ./",
+      "zh": "確認付款。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The check is written.",
+      "phonetic": "/ðə ʧɛk ɪz ˈrɪtən./",
+      "zh": "支票寫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Date it right.",
+      "phonetic": "/deɪt ɪt raɪt./",
+      "zh": "日期對。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The split with roomie.",
+      "phonetic": "/ðə splɪt wɪθ roomie*./",
+      "zh": "和室友分。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Half each, yes.",
+      "phonetic": "/hæf iʧ, jɛs./",
+      "zh": "各半。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The increase this year.",
+      "phonetic": "/ðə ˌɪnˈkris ðɪs jɪr./",
+      "zh": "今年漲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Notice given, yes.",
+      "phonetic": "/ˈnoʊtɪs ˈgɪvɪn, jɛs./",
+      "zh": "已通知。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lease is signed.",
+      "phonetic": "/ðə lis ɪz saɪnd./",
+      "zh": "租約籤。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Terms clear, yes.",
+      "phonetic": "/tərmz klɪr, jɛs./",
+      "zh": "條款清。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The late fee, avoid.",
+      "phonetic": "/ðə leɪt fi, əˈvɔɪd./",
+      "zh": "避免滯納金。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pay early, yes.",
+      "phonetic": "/peɪ ˈərli, jɛs./",
+      "zh": "早付。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cash is ok.",
+      "phonetic": "/ðə kæʃ ɪz ˈoʊˈkeɪ./",
+      "zh": "現金可。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Get the slip, please.",
+      "phonetic": "/gɪt ðə slɪp, pliz./",
+      "zh": "拿單據。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app is quick.",
+      "phonetic": "/ðə æp ɪz kwɪk./",
+      "zh": "App 快。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Scan the code.",
+      "phonetic": "/skæn ðə koʊd./",
+      "zh": "掃碼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The receipt, keep.",
+      "phonetic": "/ðə rɪˈsit, kip./",
+      "zh": "收據留。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Proof of pay, yes.",
+      "phonetic": "/pruf əv peɪ, jɛs./",
+      "zh": "付款證明。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bank transfer.",
+      "phonetic": "/ðə bæŋk ˈtrænsfər./",
+      "zh": "銀行轉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "To the landlord.",
+      "phonetic": "/tɪ ðə ˈlænˌdlɔrd./",
+      "zh": "給房東。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The amount is set.",
+      "phonetic": "/ðə əˈmaʊnt ɪz sɛt./",
+      "zh": "金額定。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same as last.",
+      "phonetic": "/seɪm ɛz læst./",
+      "zh": "同上月。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Rent is due.",
+      "phonetic": "/rɛnt ɪz du./",
+      "zh": "房租到期。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pay by the first.",
+      "phonetic": "/peɪ baɪ ðə fərst./",
+      "zh": "一號前付。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Rent is due.",
+      "phonetic": "/rɛnt ɪz du./",
+      "zh": "房租到期。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pay by the first.",
+      "phonetic": "/peɪ baɪ ðə fərst./",
+      "zh": "一號前付。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The amount is set.",
+      "phonetic": "/ðə əˈmaʊnt ɪz sɛt./",
+      "zh": "金額定。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same as last.",
+      "phonetic": "/seɪm ɛz læst./",
+      "zh": "同上月。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bank transfer.",
+      "phonetic": "/ðə bæŋk ˈtrænsfər./",
+      "zh": "銀行轉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "To the landlord.",
+      "phonetic": "/tɪ ðə ˈlænˌdlɔrd./",
+      "zh": "給房東。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The receipt, keep.",
+      "phonetic": "/ðə rɪˈsit, kip./",
+      "zh": "收據留。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Proof of pay, yes.",
+      "phonetic": "/pruf əv peɪ, jɛs./",
+      "zh": "付款證明。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app is quick.",
+      "phonetic": "/ðə æp ɪz kwɪk./",
+      "zh": "App 快。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Scan the code.",
+      "phonetic": "/skæn ðə koʊd./",
+      "zh": "掃碼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cash is ok.",
+      "phonetic": "/ðə kæʃ ɪz ˈoʊˈkeɪ./",
+      "zh": "現金可。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Get the slip, please.",
+      "phonetic": "/gɪt ðə slɪp, pliz./",
+      "zh": "拿單據。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The late fee, avoid.",
+      "phonetic": "/ðə leɪt fi, əˈvɔɪd./",
+      "zh": "避免滯納金。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pay early, yes.",
+      "phonetic": "/peɪ ˈərli, jɛs./",
+      "zh": "早付。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lease is signed.",
+      "phonetic": "/ðə lis ɪz saɪnd./",
+      "zh": "租約籤。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Terms clear, yes.",
+      "phonetic": "/tərmz klɪr, jɛs./",
+      "zh": "條款清。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The increase this year.",
+      "phonetic": "/ðə ˌɪnˈkris ðɪs jɪr./",
+      "zh": "今年漲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Notice given, yes.",
+      "phonetic": "/ˈnoʊtɪs ˈgɪvɪn, jɛs./",
+      "zh": "已通知。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The split with roomie.",
+      "phonetic": "/ðə splɪt wɪθ roomie*./",
+      "zh": "和室友分。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Half each, yes.",
+      "phonetic": "/hæf iʧ, jɛs./",
+      "zh": "各半。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The check is written.",
+      "phonetic": "/ðə ʧɛk ɪz ˈrɪtən./",
+      "zh": "支票寫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Date it right.",
+      "phonetic": "/deɪt ɪt raɪt./",
+      "zh": "日期對。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The landlord called.",
+      "phonetic": "/ðə ˈlænˌdlɔrd kɔld./",
+      "zh": "房東打。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Confirm the pay.",
+      "phonetic": "/kənˈfərm ðə peɪ./",
+      "zh": "確認付款。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The funds are low.",
+      "phonetic": "/ðə fəndz ər loʊ./",
+      "zh": "資金少。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Transfer in, quick.",
+      "phonetic": "/ˈtrænsfər ɪn, kwɪk./",
+      "zh": "快轉入。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The portal is down.",
+      "phonetic": "/ðə ˈpɔrtəl ɪz daʊn./",
+      "zh": "平臺掛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try tomorrow, yes.",
+      "phonetic": "/traɪ təˈmɑˌroʊ, jɛs./",
+      "zh": "明天試。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The proof is text.",
+      "phonetic": "/ðə pruf ɪz tɛkst./",
+      "zh": "證明是簡訊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Save the thread.",
+      "phonetic": "/seɪv ðə θrɛd./",
+      "zh": "存對話。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The deposit is separate.",
+      "phonetic": "/ðə dɪˈpɑzət ɪz ˈsɛpərˌeɪt./",
+      "zh": "押金另。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Return at end.",
+      "phonetic": "/rɪˈtərn æt ɛnd./",
+      "zh": "退租還。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The monthly auto.",
+      "phonetic": "/ðə ˈmənθli ˈɔtoʊ./",
+      "zh": "月自動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Set and forget.",
+      "phonetic": "/sɛt ənd fərˈgɛt./",
+      "zh": "設好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The budget allows.",
+      "phonetic": "/ðə ˈbəʤɪt əˈlaʊz./",
+      "zh": "預算夠。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "After the rent, yes.",
+      "phonetic": "/ˈæftər ðə rɛnt, jɛs./",
+      "zh": "付租後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The slip is lost.",
+      "phonetic": "/ðə slɪp ɪz lɔst./",
+      "zh": "單據丟。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Bank shows it.",
+      "phonetic": "/bæŋk ʃoʊz ɪt./",
+      "zh": "銀行有。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rent is high.",
+      "phonetic": "/ðə rɛnt ɪz haɪ./",
+      "zh": "房租高。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Share the space.",
+      "phonetic": "/ʃɛr ðə speɪs./",
+      "zh": "合租。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pay stub, show.",
+      "phonetic": "/ðə peɪ stəb, ʃoʊ./",
+      "zh": "薪單出示。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the record.",
+      "phonetic": "/fər ðə ˈrɛkərd./",
+      "zh": "留記錄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The date slipped.",
+      "phonetic": "/ðə deɪt slɪpt./",
+      "zh": "日期忘。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Set a remind.",
+      "phonetic": "/sɛt ə riˈmaɪnd./",
+      "zh": "設提醒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The transfer cleared.",
+      "phonetic": "/ðə ˈtrænsfər klɪrd./",
+      "zh": "轉帳完成。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Confirmed, yes.",
+      "phonetic": "/kənˈfərmd, jɛs./",
+      "zh": "確認。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The receipt emailed.",
+      "phonetic": "/ðə rɪˈsit iˈmeɪld./",
+      "zh": "收據寄。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Print and file.",
+      "phonetic": "/prɪnt ənd faɪl./",
+      "zh": "印歸檔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rent is paid.",
+      "phonetic": "/ðə rɛnt ɪz peɪd./",
+      "zh": "房租付。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Relief, yes.",
+      "phonetic": "/rɪˈlif, jɛs./",
+      "zh": "松。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The next due, note.",
+      "phonetic": "/ðə nɛkst du, noʊt./",
+      "zh": "下次到期記。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Calendar mark, yes.",
+      "phonetic": "/ˈkæləndər mɑrk, jɛs./",
+      "zh": "日曆標。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The hike is steep.",
+      "phonetic": "/ðə haɪk ɪz stip./",
+      "zh": "漲很多。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Move, maybe.",
+      "phonetic": "/muv, ˈmeɪbi./",
+      "zh": "或許搬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The grace is three.",
+      "phonetic": "/ðə greɪs ɪz θri./",
+      "zh": "寬限三天。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Still pay prompt.",
+      "phonetic": "/stɪl peɪ prɑmpt./",
+      "zh": "仍準時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The statement matched.",
+      "phonetic": "/ðə ˈsteɪtmənt mæʧt./",
+      "zh": "對帳符。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All square, yes.",
+      "phonetic": "/ɔl skwɛr, jɛs./",
+      "zh": "兩清。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The month closed.",
+      "phonetic": "/ðə mənθ kloʊzd./",
+      "zh": "月結。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On to next.",
+      "phonetic": "/ɔn tɪ nɛkst./",
+      "zh": "下月。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The peace of paid.",
+      "phonetic": "/ðə pis əv peɪd./",
+      "zh": "付清安心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rest easy, yes.",
+      "phonetic": "/rɛst ˈizi, jɛs./",
+      "zh": "安心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for paying.",
+      "phonetic": "/θæŋks fər peɪɪŋ./",
+      "zh": "謝謝付租。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Roof secure, pal.",
+      "phonetic": "/rʊf sɪˈkjʊr, pæl./",
+      "zh": "有屋遮。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for paying.",
+      "phonetic": "/θæŋks fər peɪɪŋ./",
+      "zh": "謝謝付租。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Roof secure, pal.",
+      "phonetic": "/rʊf sɪˈkjʊr, pæl./",
+      "zh": "有屋遮。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The peace of paid.",
+      "phonetic": "/ðə pis əv peɪd./",
+      "zh": "付清安心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rest easy, yes.",
+      "phonetic": "/rɛst ˈizi, jɛs./",
+      "zh": "安心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The month closed.",
+      "phonetic": "/ðə mənθ kloʊzd./",
+      "zh": "月結。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On to next.",
+      "phonetic": "/ɔn tɪ nɛkst./",
+      "zh": "下月。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The statement matched.",
+      "phonetic": "/ðə ˈsteɪtmənt mæʧt./",
+      "zh": "對帳符。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All square, yes.",
+      "phonetic": "/ɔl skwɛr, jɛs./",
+      "zh": "兩清。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The grace is three.",
+      "phonetic": "/ðə greɪs ɪz θri./",
+      "zh": "寬限三天。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Still pay prompt.",
+      "phonetic": "/stɪl peɪ prɑmpt./",
+      "zh": "仍準時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The hike is steep.",
+      "phonetic": "/ðə haɪk ɪz stip./",
+      "zh": "漲很多。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Move, maybe.",
+      "phonetic": "/muv, ˈmeɪbi./",
+      "zh": "或許搬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The next due, note.",
+      "phonetic": "/ðə nɛkst du, noʊt./",
+      "zh": "下次到期記。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Calendar mark, yes.",
+      "phonetic": "/ˈkæləndər mɑrk, jɛs./",
+      "zh": "日曆標。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rent is paid.",
+      "phonetic": "/ðə rɛnt ɪz peɪd./",
+      "zh": "房租付。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Relief, yes.",
+      "phonetic": "/rɪˈlif, jɛs./",
+      "zh": "松。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The receipt emailed.",
+      "phonetic": "/ðə rɪˈsit iˈmeɪld./",
+      "zh": "收據寄。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Print and file.",
+      "phonetic": "/prɪnt ənd faɪl./",
+      "zh": "印歸檔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The transfer cleared.",
+      "phonetic": "/ðə ˈtrænsfər klɪrd./",
+      "zh": "轉帳完成。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Confirmed, yes.",
+      "phonetic": "/kənˈfərmd, jɛs./",
+      "zh": "確認。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The date slipped.",
+      "phonetic": "/ðə deɪt slɪpt./",
+      "zh": "日期忘。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Set a remind.",
+      "phonetic": "/sɛt ə riˈmaɪnd./",
+      "zh": "設提醒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pay stub, show.",
+      "phonetic": "/ðə peɪ stəb, ʃoʊ./",
+      "zh": "薪單出示。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the record.",
+      "phonetic": "/fər ðə ˈrɛkərd./",
+      "zh": "留記錄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rent is high.",
+      "phonetic": "/ðə rɛnt ɪz haɪ./",
+      "zh": "房租高。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Share the space.",
+      "phonetic": "/ʃɛr ðə speɪs./",
+      "zh": "合租。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The slip is lost.",
+      "phonetic": "/ðə slɪp ɪz lɔst./",
+      "zh": "單據丟。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Bank shows it.",
+      "phonetic": "/bæŋk ʃoʊz ɪt./",
+      "zh": "銀行有。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The budget allows.",
+      "phonetic": "/ðə ˈbəʤɪt əˈlaʊz./",
+      "zh": "預算夠。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "After the rent, yes.",
+      "phonetic": "/ˈæftər ðə rɛnt, jɛs./",
+      "zh": "付租後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The monthly auto.",
+      "phonetic": "/ðə ˈmənθli ˈɔtoʊ./",
+      "zh": "月自動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Set and forget.",
+      "phonetic": "/sɛt ənd fərˈgɛt./",
+      "zh": "設好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The deposit is separate.",
+      "phonetic": "/ðə dɪˈpɑzət ɪz ˈsɛpərˌeɪt./",
+      "zh": "押金另。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Return at end.",
+      "phonetic": "/rɪˈtərn æt ɛnd./",
+      "zh": "退租還。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The proof is text.",
+      "phonetic": "/ðə pruf ɪz tɛkst./",
+      "zh": "證明是簡訊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Save the thread.",
+      "phonetic": "/seɪv ðə θrɛd./",
+      "zh": "存對話。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The portal is down.",
+      "phonetic": "/ðə ˈpɔrtəl ɪz daʊn./",
+      "zh": "平臺掛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try tomorrow, yes.",
+      "phonetic": "/traɪ təˈmɑˌroʊ, jɛs./",
+      "zh": "明天試。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The funds are low.",
+      "phonetic": "/ðə fəndz ər loʊ./",
+      "zh": "資金少。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Transfer in, quick.",
+      "phonetic": "/ˈtrænsfər ɪn, kwɪk./",
+      "zh": "快轉入。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The landlord called.",
+      "phonetic": "/ðə ˈlænˌdlɔrd kɔld./",
+      "zh": "房東打。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Confirm the pay.",
+      "phonetic": "/kənˈfərm ðə peɪ./",
+      "zh": "確認付款。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The check is written.",
+      "phonetic": "/ðə ʧɛk ɪz ˈrɪtən./",
+      "zh": "支票寫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Date it right.",
+      "phonetic": "/deɪt ɪt raɪt./",
+      "zh": "日期對。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The split with roomie.",
+      "phonetic": "/ðə splɪt wɪθ roomie*./",
+      "zh": "和室友分。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Half each, yes.",
+      "phonetic": "/hæf iʧ, jɛs./",
+      "zh": "各半。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The increase this year.",
+      "phonetic": "/ðə ˌɪnˈkris ðɪs jɪr./",
+      "zh": "今年漲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Notice given, yes.",
+      "phonetic": "/ˈnoʊtɪs ˈgɪvɪn, jɛs./",
+      "zh": "已通知。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lease is signed.",
+      "phonetic": "/ðə lis ɪz saɪnd./",
+      "zh": "租約籤。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Terms clear, yes.",
+      "phonetic": "/tərmz klɪr, jɛs./",
+      "zh": "條款清。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The late fee, avoid.",
+      "phonetic": "/ðə leɪt fi, əˈvɔɪd./",
+      "zh": "避免滯納金。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pay early, yes.",
+      "phonetic": "/peɪ ˈərli, jɛs./",
+      "zh": "早付。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cash is ok.",
+      "phonetic": "/ðə kæʃ ɪz ˈoʊˈkeɪ./",
+      "zh": "現金可。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Get the slip, please.",
+      "phonetic": "/gɪt ðə slɪp, pliz./",
+      "zh": "拿單據。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app is quick.",
+      "phonetic": "/ðə æp ɪz kwɪk./",
+      "zh": "App 快。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Scan the code.",
+      "phonetic": "/skæn ðə koʊd./",
+      "zh": "掃碼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The receipt, keep.",
+      "phonetic": "/ðə rɪˈsit, kip./",
+      "zh": "收據留。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Proof of pay, yes.",
+      "phonetic": "/pruf əv peɪ, jɛs./",
+      "zh": "付款證明。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bank transfer.",
+      "phonetic": "/ðə bæŋk ˈtrænsfər./",
+      "zh": "銀行轉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "To the landlord.",
+      "phonetic": "/tɪ ðə ˈlænˌdlɔrd./",
+      "zh": "給房東。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The amount is set.",
+      "phonetic": "/ðə əˈmaʊnt ɪz sɛt./",
+      "zh": "金額定。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same as last.",
+      "phonetic": "/seɪm ɛz læst./",
+      "zh": "同上月。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Rent is due.",
+      "phonetic": "/rɛnt ɪz du./",
+      "zh": "房租到期。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pay by the first.",
+      "phonetic": "/peɪ baɪ ðə fərst./",
+      "zh": "一號前付。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Rent is due.",
+      "phonetic": "/rɛnt ɪz du./",
+      "zh": "房租到期。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pay by the first.",
+      "phonetic": "/peɪ baɪ ðə fərst./",
+      "zh": "一號前付。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The amount is set.",
+      "phonetic": "/ðə əˈmaʊnt ɪz sɛt./",
+      "zh": "金額定。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same as last.",
+      "phonetic": "/seɪm ɛz læst./",
+      "zh": "同上月。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bank transfer.",
+      "phonetic": "/ðə bæŋk ˈtrænsfər./",
+      "zh": "銀行轉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "To the landlord.",
+      "phonetic": "/tɪ ðə ˈlænˌdlɔrd./",
+      "zh": "給房東。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The receipt, keep.",
+      "phonetic": "/ðə rɪˈsit, kip./",
+      "zh": "收據留。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Proof of pay, yes.",
+      "phonetic": "/pruf əv peɪ, jɛs./",
+      "zh": "付款證明。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app is quick.",
+      "phonetic": "/ðə æp ɪz kwɪk./",
+      "zh": "App 快。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Scan the code.",
+      "phonetic": "/skæn ðə koʊd./",
+      "zh": "掃碼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cash is ok.",
+      "phonetic": "/ðə kæʃ ɪz ˈoʊˈkeɪ./",
+      "zh": "現金可。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Get the slip, please.",
+      "phonetic": "/gɪt ðə slɪp, pliz./",
+      "zh": "拿單據。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The late fee, avoid.",
+      "phonetic": "/ðə leɪt fi, əˈvɔɪd./",
+      "zh": "避免滯納金。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pay early, yes.",
+      "phonetic": "/peɪ ˈərli, jɛs./",
+      "zh": "早付。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lease is signed.",
+      "phonetic": "/ðə lis ɪz saɪnd./",
+      "zh": "租約籤。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Terms clear, yes.",
+      "phonetic": "/tərmz klɪr, jɛs./",
+      "zh": "條款清。"
+    }
+  ]
+}

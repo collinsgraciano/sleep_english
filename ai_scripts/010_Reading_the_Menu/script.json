@@ -1,0 +1,2458 @@
+{
+  "title": "Everyday Phrases — Reading the Menu",
+  "title_zh": "看菜單",
+  "scene_zh": "看菜單 · 情境對話",
+  "title_quote": "What do you recommend?",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】📖 實用看菜單必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — Reading the Menu",
+  "youtube_description": "睡著學英文！這部影片收錄實用看菜單情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫），不用背，睡前聽就會。重複播放，讓英文自然進入你的大腦。👍 想學更多生活場景，請留言告訴我！別忘了訂閱+按讚。 #英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical Reading the Menu phrase pairs (each pair: male normal speed → female slow speed → combined dialogue). No memorization needed—just listen before bed and absorb naturally. If you want more real-life scenarios, leave a comment! Subscribe and like!",
+  "youtube_tags": [
+    "英文聽力",
+    "睡前英文",
+    "看菜單英文",
+    "English listening",
+    "Sleep learning",
+    "A2 English",
+    "常用英文短語",
+    "零基礎英文",
+    "慢速英文",
+    "英文口語",
+    "Learn English",
+    "English for daily life",
+    "ESL",
+    "English conversation",
+    "聽英語",
+    "英文學習"
+  ],
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "Reading the Menu",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "Reading the Menu",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Restaurant",
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "What do you recommend?",
+      "phonetic": "/wət du ju ˌrɛkəˈmɛnd?/",
+      "zh": "你推薦什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The chef's special.",
+      "phonetic": "/ðə ʃɛfs ˈspɛʃəl./",
+      "zh": "主廚招牌。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is this dish spicy?",
+      "phonetic": "/ɪz ðɪs dɪʃ ˈspaɪsi?/",
+      "zh": "這道辣嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mild, not too hot.",
+      "phonetic": "/maɪld, nɑt tu hɑt./",
+      "zh": "微辣，不很辣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is in the soup?",
+      "phonetic": "/wət ɪz ɪn ðə sup?/",
+      "zh": "湯裏有什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Vegetables and chicken.",
+      "phonetic": "/ˈvɛʤtəbəlz ənd ˈʧɪkən./",
+      "zh": "蔬菜和雞肉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have vegetarian options?",
+      "phonetic": "/du ju hæv ˌvɛʤəˈtɛˌriən ˈɔpʃənz?/",
+      "zh": "有素食嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Several, on the side.",
+      "phonetic": "/ˈsɛvərəl, ɔn ðə saɪd./",
+      "zh": "有幾樣，在旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the beef local?",
+      "phonetic": "/ɪz ðə bif ˈloʊkəl?/",
+      "zh": "牛肉是本地的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "From a nearby farm.",
+      "phonetic": "/frəm ə ˈnɪrˈbaɪ fɑrm./",
+      "zh": "附近農場的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I see the wine list?",
+      "phonetic": "/kən aɪ si ðə waɪn lɪst?/",
+      "zh": "能看酒單嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here you are.",
+      "phonetic": "/hir ju ər./",
+      "zh": "給您。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What comes with the meal?",
+      "phonetic": "/wət kəmz wɪθ ðə mil?/",
+      "zh": "附餐有什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Soup and salad.",
+      "phonetic": "/sup ənd ˈsæləd./",
+      "zh": "湯和沙拉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the fish fresh today?",
+      "phonetic": "/ɪz ðə fɪʃ frɛʃ təˈdeɪ?/",
+      "zh": "魚今天新鮮嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Caught this morning.",
+      "phonetic": "/kɔt ðɪs ˈmɔrnɪŋ./",
+      "zh": "今早捕的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How is the pasta cooked?",
+      "phonetic": "/haʊ ɪz ðə ˈpɑstə kʊkt?/",
+      "zh": "面怎麼煮？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Al dente, as asked.",
+      "phonetic": "/æl ˈdɛnˌteɪ, ɛz æst./",
+      "zh": "按要求的硬度。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have gluten-free?",
+      "phonetic": "/du ju hæv gluten-free*?/",
+      "zh": "有無麩質嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We have rice noodles.",
+      "phonetic": "/wi hæv raɪs ˈnudəlz./",
+      "zh": "有米粉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the soup of the day?",
+      "phonetic": "/wət ɪz ðə sup əv ðə deɪ?/",
+      "zh": "今日湯品？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tomato basil.",
+      "phonetic": "/təˈmɑˌtoʊ ˈbæzəl./",
+      "zh": "番茄羅勒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the dessert homemade?",
+      "phonetic": "/ɪz ðə dɪˈzərt ˈhoʊˈmeɪd?/",
+      "zh": "甜點自制嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Baked in-house.",
+      "phonetic": "/beɪkt ˌɪnˈhaʊs./",
+      "zh": "店內烤的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I swap the side?",
+      "phonetic": "/kən aɪ swɑp ðə saɪd?/",
+      "zh": "配菜能換嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, choose one.",
+      "phonetic": "/ʃʊr, ʧuz wən./",
+      "zh": "可以，選一樣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The menu is in English.",
+      "phonetic": "/ðə ˈmɛnju ɪz ɪn ˈɪŋlɪʃ./",
+      "zh": "菜單是英文的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I can translate.",
+      "phonetic": "/aɪ kən trænzˈleɪt./",
+      "zh": "我幫你翻譯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the price range?",
+      "phonetic": "/wət ɪz ðə praɪs reɪnʤ?/",
+      "zh": "價位如何？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ten to thirty each.",
+      "phonetic": "/tɛn tɪ ˈθərˌdi iʧ./",
+      "zh": "每份十到三十。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the portion large?",
+      "phonetic": "/ɪz ðə ˈpɔrʃən lɑrʤ?/",
+      "zh": "份量大嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, shareable.",
+      "phonetic": "/jɛs, shareable*./",
+      "zh": "大，可分食。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have a kids' menu?",
+      "phonetic": "/du ju hæv ə kɪdz' ˈmɛnju?/",
+      "zh": "有兒童菜單嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Smaller plates.",
+      "phonetic": "/sˈmɔlər pleɪts./",
+      "zh": "小份。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What goes with the steak?",
+      "phonetic": "/wət goʊz wɪθ ðə steɪk?/",
+      "zh": "牛排配什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mashed potatoes.",
+      "phonetic": "/mæʃt pəˈteɪtoʊz./",
+      "zh": "馬鈴薯泥。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is this nut-free?",
+      "phonetic": "/ɪz ðɪs nut-free*?/",
+      "zh": "這道無堅果嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No nuts inside.",
+      "phonetic": "/noʊ nəts ˌɪnˈsaɪd./",
+      "zh": "沒加堅果。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I order half?",
+      "phonetic": "/kən aɪ ˈɔrdər hæf?/",
+      "zh": "能點半份嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For some dishes.",
+      "phonetic": "/fər səm ˈdɪʃɪz./",
+      "zh": "部分可以。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The special sounds good.",
+      "phonetic": "/ðə ˈspɛʃəl saʊnz gʊd./",
+      "zh": "招牌聽起來不錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Very popular, yes.",
+      "phonetic": "/ˈvɛri ˈpɑpjələr, jɛs./",
+      "zh": "很受歡迎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What drink do you suggest?",
+      "phonetic": "/wət drɪŋk du ju səˈʤɛst?/",
+      "zh": "推薦什麼飲料？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fresh lemonade.",
+      "phonetic": "/frɛʃ ˈlɛməˈneɪd./",
+      "zh": "鮮檸檬水。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the bread free?",
+      "phonetic": "/ɪz ðə brɛd fri?/",
+      "zh": "麪包免費嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Compliments of us.",
+      "phonetic": "/ˈkɑmpləmɛnts əv ˈjuˈɛs./",
+      "zh": "免費招待。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How spicy is level two?",
+      "phonetic": "/haʊ ˈspaɪsi ɪz ˈlɛvəl tu?/",
+      "zh": "二級多辣？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A gentle heat.",
+      "phonetic": "/ə ˈʤɛnəl hit./",
+      "zh": "溫和的辣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you use MSG?",
+      "phonetic": "/du ju juz msg*?/",
+      "zh": "用味精嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We do not.",
+      "phonetic": "/wi du nɑt./",
+      "zh": "我們不用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the chef's favorite?",
+      "phonetic": "/wət ɪz ðə ʃɛfs ˈfeɪvərɪt?/",
+      "zh": "主廚最愛？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The braised pork.",
+      "phonetic": "/ðə breɪzd pɔrk./",
+      "zh": "紅燒肉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I take a photo?",
+      "phonetic": "/kən aɪ teɪk ə ˈfoʊˌtoʊ?/",
+      "zh": "能拍照嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Of course, go ahead.",
+      "phonetic": "/əv kɔrs, goʊ əˈhɛd./",
+      "zh": "當然，請。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The menu changed?",
+      "phonetic": "/ðə ˈmɛnju ʧeɪnʤd?/",
+      "zh": "菜單改了？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Seasonal update.",
+      "phonetic": "/ˈsizənəl ˈəpˌdeɪt./",
+      "zh": "季節更新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is coffee included?",
+      "phonetic": "/ɪz ˈkɔfi ˌɪnˈkludɪd?/",
+      "zh": "含咖啡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "After the meal.",
+      "phonetic": "/ˈæftər ðə mil./",
+      "zh": "餐後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the lightest dish?",
+      "phonetic": "/wət ɪz ðə ˈlaɪtəst dɪʃ?/",
+      "zh": "最清淡的是？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The garden salad.",
+      "phonetic": "/ðə ˈgɑrdən ˈsæləd./",
+      "zh": "田園沙拉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have soy milk?",
+      "phonetic": "/du ju hæv sɔɪ mɪlk?/",
+      "zh": "有豆漿嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, in the drinks.",
+      "phonetic": "/jɛs, ɪn ðə drɪŋks./",
+      "zh": "飲料有。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will have the set meal.",
+      "phonetic": "/aɪ wɪl hæv ðə sɛt mil./",
+      "zh": "我要套餐。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good value, sir.",
+      "phonetic": "/gʊd ˈvælju, sər./",
+      "zh": "很划算，先生。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The dessert looks rich.",
+      "phonetic": "/ðə dɪˈzərt lʊks rɪʧ./",
+      "zh": "甜點看起來很濃。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just a small one.",
+      "phonetic": "/ʤɪst ə smɔl wən./",
+      "zh": "來小份。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Ready to order?",
+      "phonetic": "/ˈrɛdi tɪ ˈɔrdər?/",
+      "zh": "可以點了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, we decided.",
+      "phonetic": "/jɛs, wi ˌdɪˈsaɪdɪd./",
+      "zh": "對，決定了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Ready to order?",
+      "phonetic": "/ˈrɛdi tɪ ˈɔrdər?/",
+      "zh": "可以點了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, we decided.",
+      "phonetic": "/jɛs, wi ˌdɪˈsaɪdɪd./",
+      "zh": "對，決定了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The dessert looks rich.",
+      "phonetic": "/ðə dɪˈzərt lʊks rɪʧ./",
+      "zh": "甜點看起來很濃。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just a small one.",
+      "phonetic": "/ʤɪst ə smɔl wən./",
+      "zh": "來小份。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will have the set meal.",
+      "phonetic": "/aɪ wɪl hæv ðə sɛt mil./",
+      "zh": "我要套餐。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good value, sir.",
+      "phonetic": "/gʊd ˈvælju, sər./",
+      "zh": "很划算，先生。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have soy milk?",
+      "phonetic": "/du ju hæv sɔɪ mɪlk?/",
+      "zh": "有豆漿嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, in the drinks.",
+      "phonetic": "/jɛs, ɪn ðə drɪŋks./",
+      "zh": "飲料有。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the lightest dish?",
+      "phonetic": "/wət ɪz ðə ˈlaɪtəst dɪʃ?/",
+      "zh": "最清淡的是？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The garden salad.",
+      "phonetic": "/ðə ˈgɑrdən ˈsæləd./",
+      "zh": "田園沙拉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is coffee included?",
+      "phonetic": "/ɪz ˈkɔfi ˌɪnˈkludɪd?/",
+      "zh": "含咖啡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "After the meal.",
+      "phonetic": "/ˈæftər ðə mil./",
+      "zh": "餐後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The menu changed?",
+      "phonetic": "/ðə ˈmɛnju ʧeɪnʤd?/",
+      "zh": "菜單改了？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Seasonal update.",
+      "phonetic": "/ˈsizənəl ˈəpˌdeɪt./",
+      "zh": "季節更新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I take a photo?",
+      "phonetic": "/kən aɪ teɪk ə ˈfoʊˌtoʊ?/",
+      "zh": "能拍照嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Of course, go ahead.",
+      "phonetic": "/əv kɔrs, goʊ əˈhɛd./",
+      "zh": "當然，請。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the chef's favorite?",
+      "phonetic": "/wət ɪz ðə ʃɛfs ˈfeɪvərɪt?/",
+      "zh": "主廚最愛？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The braised pork.",
+      "phonetic": "/ðə breɪzd pɔrk./",
+      "zh": "紅燒肉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you use MSG?",
+      "phonetic": "/du ju juz msg*?/",
+      "zh": "用味精嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We do not.",
+      "phonetic": "/wi du nɑt./",
+      "zh": "我們不用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How spicy is level two?",
+      "phonetic": "/haʊ ˈspaɪsi ɪz ˈlɛvəl tu?/",
+      "zh": "二級多辣？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A gentle heat.",
+      "phonetic": "/ə ˈʤɛnəl hit./",
+      "zh": "溫和的辣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the bread free?",
+      "phonetic": "/ɪz ðə brɛd fri?/",
+      "zh": "麪包免費嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Compliments of us.",
+      "phonetic": "/ˈkɑmpləmɛnts əv ˈjuˈɛs./",
+      "zh": "免費招待。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What drink do you suggest?",
+      "phonetic": "/wət drɪŋk du ju səˈʤɛst?/",
+      "zh": "推薦什麼飲料？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fresh lemonade.",
+      "phonetic": "/frɛʃ ˈlɛməˈneɪd./",
+      "zh": "鮮檸檬水。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The special sounds good.",
+      "phonetic": "/ðə ˈspɛʃəl saʊnz gʊd./",
+      "zh": "招牌聽起來不錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Very popular, yes.",
+      "phonetic": "/ˈvɛri ˈpɑpjələr, jɛs./",
+      "zh": "很受歡迎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I order half?",
+      "phonetic": "/kən aɪ ˈɔrdər hæf?/",
+      "zh": "能點半份嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For some dishes.",
+      "phonetic": "/fər səm ˈdɪʃɪz./",
+      "zh": "部分可以。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is this nut-free?",
+      "phonetic": "/ɪz ðɪs nut-free*?/",
+      "zh": "這道無堅果嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No nuts inside.",
+      "phonetic": "/noʊ nəts ˌɪnˈsaɪd./",
+      "zh": "沒加堅果。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What goes with the steak?",
+      "phonetic": "/wət goʊz wɪθ ðə steɪk?/",
+      "zh": "牛排配什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mashed potatoes.",
+      "phonetic": "/mæʃt pəˈteɪtoʊz./",
+      "zh": "馬鈴薯泥。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have a kids' menu?",
+      "phonetic": "/du ju hæv ə kɪdz' ˈmɛnju?/",
+      "zh": "有兒童菜單嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Smaller plates.",
+      "phonetic": "/sˈmɔlər pleɪts./",
+      "zh": "小份。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the portion large?",
+      "phonetic": "/ɪz ðə ˈpɔrʃən lɑrʤ?/",
+      "zh": "份量大嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, shareable.",
+      "phonetic": "/jɛs, shareable*./",
+      "zh": "大，可分食。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the price range?",
+      "phonetic": "/wət ɪz ðə praɪs reɪnʤ?/",
+      "zh": "價位如何？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ten to thirty each.",
+      "phonetic": "/tɛn tɪ ˈθərˌdi iʧ./",
+      "zh": "每份十到三十。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The menu is in English.",
+      "phonetic": "/ðə ˈmɛnju ɪz ɪn ˈɪŋlɪʃ./",
+      "zh": "菜單是英文的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I can translate.",
+      "phonetic": "/aɪ kən trænzˈleɪt./",
+      "zh": "我幫你翻譯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I swap the side?",
+      "phonetic": "/kən aɪ swɑp ðə saɪd?/",
+      "zh": "配菜能換嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, choose one.",
+      "phonetic": "/ʃʊr, ʧuz wən./",
+      "zh": "可以，選一樣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the dessert homemade?",
+      "phonetic": "/ɪz ðə dɪˈzərt ˈhoʊˈmeɪd?/",
+      "zh": "甜點自制嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Baked in-house.",
+      "phonetic": "/beɪkt ˌɪnˈhaʊs./",
+      "zh": "店內烤的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the soup of the day?",
+      "phonetic": "/wət ɪz ðə sup əv ðə deɪ?/",
+      "zh": "今日湯品？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tomato basil.",
+      "phonetic": "/təˈmɑˌtoʊ ˈbæzəl./",
+      "zh": "番茄羅勒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have gluten-free?",
+      "phonetic": "/du ju hæv gluten-free*?/",
+      "zh": "有無麩質嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We have rice noodles.",
+      "phonetic": "/wi hæv raɪs ˈnudəlz./",
+      "zh": "有米粉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How is the pasta cooked?",
+      "phonetic": "/haʊ ɪz ðə ˈpɑstə kʊkt?/",
+      "zh": "面怎麼煮？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Al dente, as asked.",
+      "phonetic": "/æl ˈdɛnˌteɪ, ɛz æst./",
+      "zh": "按要求的硬度。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the fish fresh today?",
+      "phonetic": "/ɪz ðə fɪʃ frɛʃ təˈdeɪ?/",
+      "zh": "魚今天新鮮嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Caught this morning.",
+      "phonetic": "/kɔt ðɪs ˈmɔrnɪŋ./",
+      "zh": "今早捕的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What comes with the meal?",
+      "phonetic": "/wət kəmz wɪθ ðə mil?/",
+      "zh": "附餐有什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Soup and salad.",
+      "phonetic": "/sup ənd ˈsæləd./",
+      "zh": "湯和沙拉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I see the wine list?",
+      "phonetic": "/kən aɪ si ðə waɪn lɪst?/",
+      "zh": "能看酒單嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here you are.",
+      "phonetic": "/hir ju ər./",
+      "zh": "給您。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the beef local?",
+      "phonetic": "/ɪz ðə bif ˈloʊkəl?/",
+      "zh": "牛肉是本地的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "From a nearby farm.",
+      "phonetic": "/frəm ə ˈnɪrˈbaɪ fɑrm./",
+      "zh": "附近農場的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have vegetarian options?",
+      "phonetic": "/du ju hæv ˌvɛʤəˈtɛˌriən ˈɔpʃənz?/",
+      "zh": "有素食嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Several, on the side.",
+      "phonetic": "/ˈsɛvərəl, ɔn ðə saɪd./",
+      "zh": "有幾樣，在旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is in the soup?",
+      "phonetic": "/wət ɪz ɪn ðə sup?/",
+      "zh": "湯裏有什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Vegetables and chicken.",
+      "phonetic": "/ˈvɛʤtəbəlz ənd ˈʧɪkən./",
+      "zh": "蔬菜和雞肉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is this dish spicy?",
+      "phonetic": "/ɪz ðɪs dɪʃ ˈspaɪsi?/",
+      "zh": "這道辣嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mild, not too hot.",
+      "phonetic": "/maɪld, nɑt tu hɑt./",
+      "zh": "微辣，不很辣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What do you recommend?",
+      "phonetic": "/wət du ju ˌrɛkəˈmɛnd?/",
+      "zh": "你推薦什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The chef's special.",
+      "phonetic": "/ðə ʃɛfs ˈspɛʃəl./",
+      "zh": "主廚招牌。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What do you recommend?",
+      "phonetic": "/wət du ju ˌrɛkəˈmɛnd?/",
+      "zh": "你推薦什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The chef's special.",
+      "phonetic": "/ðə ʃɛfs ˈspɛʃəl./",
+      "zh": "主廚招牌。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is this dish spicy?",
+      "phonetic": "/ɪz ðɪs dɪʃ ˈspaɪsi?/",
+      "zh": "這道辣嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mild, not too hot.",
+      "phonetic": "/maɪld, nɑt tu hɑt./",
+      "zh": "微辣，不很辣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is in the soup?",
+      "phonetic": "/wət ɪz ɪn ðə sup?/",
+      "zh": "湯裏有什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Vegetables and chicken.",
+      "phonetic": "/ˈvɛʤtəbəlz ənd ˈʧɪkən./",
+      "zh": "蔬菜和雞肉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have vegetarian options?",
+      "phonetic": "/du ju hæv ˌvɛʤəˈtɛˌriən ˈɔpʃənz?/",
+      "zh": "有素食嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Several, on the side.",
+      "phonetic": "/ˈsɛvərəl, ɔn ðə saɪd./",
+      "zh": "有幾樣，在旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the beef local?",
+      "phonetic": "/ɪz ðə bif ˈloʊkəl?/",
+      "zh": "牛肉是本地的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "From a nearby farm.",
+      "phonetic": "/frəm ə ˈnɪrˈbaɪ fɑrm./",
+      "zh": "附近農場的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I see the wine list?",
+      "phonetic": "/kən aɪ si ðə waɪn lɪst?/",
+      "zh": "能看酒單嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here you are.",
+      "phonetic": "/hir ju ər./",
+      "zh": "給您。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What comes with the meal?",
+      "phonetic": "/wət kəmz wɪθ ðə mil?/",
+      "zh": "附餐有什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Soup and salad.",
+      "phonetic": "/sup ənd ˈsæləd./",
+      "zh": "湯和沙拉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the fish fresh today?",
+      "phonetic": "/ɪz ðə fɪʃ frɛʃ təˈdeɪ?/",
+      "zh": "魚今天新鮮嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Caught this morning.",
+      "phonetic": "/kɔt ðɪs ˈmɔrnɪŋ./",
+      "zh": "今早捕的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How is the pasta cooked?",
+      "phonetic": "/haʊ ɪz ðə ˈpɑstə kʊkt?/",
+      "zh": "面怎麼煮？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Al dente, as asked.",
+      "phonetic": "/æl ˈdɛnˌteɪ, ɛz æst./",
+      "zh": "按要求的硬度。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have gluten-free?",
+      "phonetic": "/du ju hæv gluten-free*?/",
+      "zh": "有無麩質嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We have rice noodles.",
+      "phonetic": "/wi hæv raɪs ˈnudəlz./",
+      "zh": "有米粉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the soup of the day?",
+      "phonetic": "/wət ɪz ðə sup əv ðə deɪ?/",
+      "zh": "今日湯品？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tomato basil.",
+      "phonetic": "/təˈmɑˌtoʊ ˈbæzəl./",
+      "zh": "番茄羅勒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the dessert homemade?",
+      "phonetic": "/ɪz ðə dɪˈzərt ˈhoʊˈmeɪd?/",
+      "zh": "甜點自制嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Baked in-house.",
+      "phonetic": "/beɪkt ˌɪnˈhaʊs./",
+      "zh": "店內烤的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I swap the side?",
+      "phonetic": "/kən aɪ swɑp ðə saɪd?/",
+      "zh": "配菜能換嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, choose one.",
+      "phonetic": "/ʃʊr, ʧuz wən./",
+      "zh": "可以，選一樣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The menu is in English.",
+      "phonetic": "/ðə ˈmɛnju ɪz ɪn ˈɪŋlɪʃ./",
+      "zh": "菜單是英文的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I can translate.",
+      "phonetic": "/aɪ kən trænzˈleɪt./",
+      "zh": "我幫你翻譯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the price range?",
+      "phonetic": "/wət ɪz ðə praɪs reɪnʤ?/",
+      "zh": "價位如何？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ten to thirty each.",
+      "phonetic": "/tɛn tɪ ˈθərˌdi iʧ./",
+      "zh": "每份十到三十。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the portion large?",
+      "phonetic": "/ɪz ðə ˈpɔrʃən lɑrʤ?/",
+      "zh": "份量大嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, shareable.",
+      "phonetic": "/jɛs, shareable*./",
+      "zh": "大，可分食。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have a kids' menu?",
+      "phonetic": "/du ju hæv ə kɪdz' ˈmɛnju?/",
+      "zh": "有兒童菜單嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Smaller plates.",
+      "phonetic": "/sˈmɔlər pleɪts./",
+      "zh": "小份。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What goes with the steak?",
+      "phonetic": "/wət goʊz wɪθ ðə steɪk?/",
+      "zh": "牛排配什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mashed potatoes.",
+      "phonetic": "/mæʃt pəˈteɪtoʊz./",
+      "zh": "馬鈴薯泥。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is this nut-free?",
+      "phonetic": "/ɪz ðɪs nut-free*?/",
+      "zh": "這道無堅果嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No nuts inside.",
+      "phonetic": "/noʊ nəts ˌɪnˈsaɪd./",
+      "zh": "沒加堅果。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I order half?",
+      "phonetic": "/kən aɪ ˈɔrdər hæf?/",
+      "zh": "能點半份嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For some dishes.",
+      "phonetic": "/fər səm ˈdɪʃɪz./",
+      "zh": "部分可以。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The special sounds good.",
+      "phonetic": "/ðə ˈspɛʃəl saʊnz gʊd./",
+      "zh": "招牌聽起來不錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Very popular, yes.",
+      "phonetic": "/ˈvɛri ˈpɑpjələr, jɛs./",
+      "zh": "很受歡迎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What drink do you suggest?",
+      "phonetic": "/wət drɪŋk du ju səˈʤɛst?/",
+      "zh": "推薦什麼飲料？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fresh lemonade.",
+      "phonetic": "/frɛʃ ˈlɛməˈneɪd./",
+      "zh": "鮮檸檬水。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the bread free?",
+      "phonetic": "/ɪz ðə brɛd fri?/",
+      "zh": "麪包免費嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Compliments of us.",
+      "phonetic": "/ˈkɑmpləmɛnts əv ˈjuˈɛs./",
+      "zh": "免費招待。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How spicy is level two?",
+      "phonetic": "/haʊ ˈspaɪsi ɪz ˈlɛvəl tu?/",
+      "zh": "二級多辣？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A gentle heat.",
+      "phonetic": "/ə ˈʤɛnəl hit./",
+      "zh": "溫和的辣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you use MSG?",
+      "phonetic": "/du ju juz msg*?/",
+      "zh": "用味精嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We do not.",
+      "phonetic": "/wi du nɑt./",
+      "zh": "我們不用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the chef's favorite?",
+      "phonetic": "/wət ɪz ðə ʃɛfs ˈfeɪvərɪt?/",
+      "zh": "主廚最愛？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The braised pork.",
+      "phonetic": "/ðə breɪzd pɔrk./",
+      "zh": "紅燒肉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I take a photo?",
+      "phonetic": "/kən aɪ teɪk ə ˈfoʊˌtoʊ?/",
+      "zh": "能拍照嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Of course, go ahead.",
+      "phonetic": "/əv kɔrs, goʊ əˈhɛd./",
+      "zh": "當然，請。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The menu changed?",
+      "phonetic": "/ðə ˈmɛnju ʧeɪnʤd?/",
+      "zh": "菜單改了？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Seasonal update.",
+      "phonetic": "/ˈsizənəl ˈəpˌdeɪt./",
+      "zh": "季節更新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is coffee included?",
+      "phonetic": "/ɪz ˈkɔfi ˌɪnˈkludɪd?/",
+      "zh": "含咖啡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "After the meal.",
+      "phonetic": "/ˈæftər ðə mil./",
+      "zh": "餐後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the lightest dish?",
+      "phonetic": "/wət ɪz ðə ˈlaɪtəst dɪʃ?/",
+      "zh": "最清淡的是？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The garden salad.",
+      "phonetic": "/ðə ˈgɑrdən ˈsæləd./",
+      "zh": "田園沙拉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have soy milk?",
+      "phonetic": "/du ju hæv sɔɪ mɪlk?/",
+      "zh": "有豆漿嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, in the drinks.",
+      "phonetic": "/jɛs, ɪn ðə drɪŋks./",
+      "zh": "飲料有。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will have the set meal.",
+      "phonetic": "/aɪ wɪl hæv ðə sɛt mil./",
+      "zh": "我要套餐。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good value, sir.",
+      "phonetic": "/gʊd ˈvælju, sər./",
+      "zh": "很划算，先生。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The dessert looks rich.",
+      "phonetic": "/ðə dɪˈzərt lʊks rɪʧ./",
+      "zh": "甜點看起來很濃。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just a small one.",
+      "phonetic": "/ʤɪst ə smɔl wən./",
+      "zh": "來小份。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Ready to order?",
+      "phonetic": "/ˈrɛdi tɪ ˈɔrdər?/",
+      "zh": "可以點了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, we decided.",
+      "phonetic": "/jɛs, wi ˌdɪˈsaɪdɪd./",
+      "zh": "對，決定了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Ready to order?",
+      "phonetic": "/ˈrɛdi tɪ ˈɔrdər?/",
+      "zh": "可以點了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, we decided.",
+      "phonetic": "/jɛs, wi ˌdɪˈsaɪdɪd./",
+      "zh": "對，決定了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The dessert looks rich.",
+      "phonetic": "/ðə dɪˈzərt lʊks rɪʧ./",
+      "zh": "甜點看起來很濃。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just a small one.",
+      "phonetic": "/ʤɪst ə smɔl wən./",
+      "zh": "來小份。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will have the set meal.",
+      "phonetic": "/aɪ wɪl hæv ðə sɛt mil./",
+      "zh": "我要套餐。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good value, sir.",
+      "phonetic": "/gʊd ˈvælju, sər./",
+      "zh": "很划算，先生。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have soy milk?",
+      "phonetic": "/du ju hæv sɔɪ mɪlk?/",
+      "zh": "有豆漿嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, in the drinks.",
+      "phonetic": "/jɛs, ɪn ðə drɪŋks./",
+      "zh": "飲料有。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the lightest dish?",
+      "phonetic": "/wət ɪz ðə ˈlaɪtəst dɪʃ?/",
+      "zh": "最清淡的是？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The garden salad.",
+      "phonetic": "/ðə ˈgɑrdən ˈsæləd./",
+      "zh": "田園沙拉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is coffee included?",
+      "phonetic": "/ɪz ˈkɔfi ˌɪnˈkludɪd?/",
+      "zh": "含咖啡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "After the meal.",
+      "phonetic": "/ˈæftər ðə mil./",
+      "zh": "餐後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The menu changed?",
+      "phonetic": "/ðə ˈmɛnju ʧeɪnʤd?/",
+      "zh": "菜單改了？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Seasonal update.",
+      "phonetic": "/ˈsizənəl ˈəpˌdeɪt./",
+      "zh": "季節更新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I take a photo?",
+      "phonetic": "/kən aɪ teɪk ə ˈfoʊˌtoʊ?/",
+      "zh": "能拍照嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Of course, go ahead.",
+      "phonetic": "/əv kɔrs, goʊ əˈhɛd./",
+      "zh": "當然，請。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the chef's favorite?",
+      "phonetic": "/wət ɪz ðə ʃɛfs ˈfeɪvərɪt?/",
+      "zh": "主廚最愛？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The braised pork.",
+      "phonetic": "/ðə breɪzd pɔrk./",
+      "zh": "紅燒肉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you use MSG?",
+      "phonetic": "/du ju juz msg*?/",
+      "zh": "用味精嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We do not.",
+      "phonetic": "/wi du nɑt./",
+      "zh": "我們不用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How spicy is level two?",
+      "phonetic": "/haʊ ˈspaɪsi ɪz ˈlɛvəl tu?/",
+      "zh": "二級多辣？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A gentle heat.",
+      "phonetic": "/ə ˈʤɛnəl hit./",
+      "zh": "溫和的辣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the bread free?",
+      "phonetic": "/ɪz ðə brɛd fri?/",
+      "zh": "麪包免費嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Compliments of us.",
+      "phonetic": "/ˈkɑmpləmɛnts əv ˈjuˈɛs./",
+      "zh": "免費招待。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What drink do you suggest?",
+      "phonetic": "/wət drɪŋk du ju səˈʤɛst?/",
+      "zh": "推薦什麼飲料？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fresh lemonade.",
+      "phonetic": "/frɛʃ ˈlɛməˈneɪd./",
+      "zh": "鮮檸檬水。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The special sounds good.",
+      "phonetic": "/ðə ˈspɛʃəl saʊnz gʊd./",
+      "zh": "招牌聽起來不錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Very popular, yes.",
+      "phonetic": "/ˈvɛri ˈpɑpjələr, jɛs./",
+      "zh": "很受歡迎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I order half?",
+      "phonetic": "/kən aɪ ˈɔrdər hæf?/",
+      "zh": "能點半份嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For some dishes.",
+      "phonetic": "/fər səm ˈdɪʃɪz./",
+      "zh": "部分可以。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is this nut-free?",
+      "phonetic": "/ɪz ðɪs nut-free*?/",
+      "zh": "這道無堅果嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No nuts inside.",
+      "phonetic": "/noʊ nəts ˌɪnˈsaɪd./",
+      "zh": "沒加堅果。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What goes with the steak?",
+      "phonetic": "/wət goʊz wɪθ ðə steɪk?/",
+      "zh": "牛排配什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mashed potatoes.",
+      "phonetic": "/mæʃt pəˈteɪtoʊz./",
+      "zh": "馬鈴薯泥。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have a kids' menu?",
+      "phonetic": "/du ju hæv ə kɪdz' ˈmɛnju?/",
+      "zh": "有兒童菜單嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Smaller plates.",
+      "phonetic": "/sˈmɔlər pleɪts./",
+      "zh": "小份。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the portion large?",
+      "phonetic": "/ɪz ðə ˈpɔrʃən lɑrʤ?/",
+      "zh": "份量大嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, shareable.",
+      "phonetic": "/jɛs, shareable*./",
+      "zh": "大，可分食。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the price range?",
+      "phonetic": "/wət ɪz ðə praɪs reɪnʤ?/",
+      "zh": "價位如何？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ten to thirty each.",
+      "phonetic": "/tɛn tɪ ˈθərˌdi iʧ./",
+      "zh": "每份十到三十。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The menu is in English.",
+      "phonetic": "/ðə ˈmɛnju ɪz ɪn ˈɪŋlɪʃ./",
+      "zh": "菜單是英文的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I can translate.",
+      "phonetic": "/aɪ kən trænzˈleɪt./",
+      "zh": "我幫你翻譯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I swap the side?",
+      "phonetic": "/kən aɪ swɑp ðə saɪd?/",
+      "zh": "配菜能換嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, choose one.",
+      "phonetic": "/ʃʊr, ʧuz wən./",
+      "zh": "可以，選一樣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the dessert homemade?",
+      "phonetic": "/ɪz ðə dɪˈzərt ˈhoʊˈmeɪd?/",
+      "zh": "甜點自制嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Baked in-house.",
+      "phonetic": "/beɪkt ˌɪnˈhaʊs./",
+      "zh": "店內烤的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the soup of the day?",
+      "phonetic": "/wət ɪz ðə sup əv ðə deɪ?/",
+      "zh": "今日湯品？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tomato basil.",
+      "phonetic": "/təˈmɑˌtoʊ ˈbæzəl./",
+      "zh": "番茄羅勒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have gluten-free?",
+      "phonetic": "/du ju hæv gluten-free*?/",
+      "zh": "有無麩質嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We have rice noodles.",
+      "phonetic": "/wi hæv raɪs ˈnudəlz./",
+      "zh": "有米粉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How is the pasta cooked?",
+      "phonetic": "/haʊ ɪz ðə ˈpɑstə kʊkt?/",
+      "zh": "面怎麼煮？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Al dente, as asked.",
+      "phonetic": "/æl ˈdɛnˌteɪ, ɛz æst./",
+      "zh": "按要求的硬度。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the fish fresh today?",
+      "phonetic": "/ɪz ðə fɪʃ frɛʃ təˈdeɪ?/",
+      "zh": "魚今天新鮮嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Caught this morning.",
+      "phonetic": "/kɔt ðɪs ˈmɔrnɪŋ./",
+      "zh": "今早捕的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What comes with the meal?",
+      "phonetic": "/wət kəmz wɪθ ðə mil?/",
+      "zh": "附餐有什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Soup and salad.",
+      "phonetic": "/sup ənd ˈsæləd./",
+      "zh": "湯和沙拉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I see the wine list?",
+      "phonetic": "/kən aɪ si ðə waɪn lɪst?/",
+      "zh": "能看酒單嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here you are.",
+      "phonetic": "/hir ju ər./",
+      "zh": "給您。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the beef local?",
+      "phonetic": "/ɪz ðə bif ˈloʊkəl?/",
+      "zh": "牛肉是本地的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "From a nearby farm.",
+      "phonetic": "/frəm ə ˈnɪrˈbaɪ fɑrm./",
+      "zh": "附近農場的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have vegetarian options?",
+      "phonetic": "/du ju hæv ˌvɛʤəˈtɛˌriən ˈɔpʃənz?/",
+      "zh": "有素食嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Several, on the side.",
+      "phonetic": "/ˈsɛvərəl, ɔn ðə saɪd./",
+      "zh": "有幾樣，在旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is in the soup?",
+      "phonetic": "/wət ɪz ɪn ðə sup?/",
+      "zh": "湯裏有什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Vegetables and chicken.",
+      "phonetic": "/ˈvɛʤtəbəlz ənd ˈʧɪkən./",
+      "zh": "蔬菜和雞肉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is this dish spicy?",
+      "phonetic": "/ɪz ðɪs dɪʃ ˈspaɪsi?/",
+      "zh": "這道辣嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mild, not too hot.",
+      "phonetic": "/maɪld, nɑt tu hɑt./",
+      "zh": "微辣，不很辣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What do you recommend?",
+      "phonetic": "/wət du ju ˌrɛkəˈmɛnd?/",
+      "zh": "你推薦什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The chef's special.",
+      "phonetic": "/ðə ʃɛfs ˈspɛʃəl./",
+      "zh": "主廚招牌。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What do you recommend?",
+      "phonetic": "/wət du ju ˌrɛkəˈmɛnd?/",
+      "zh": "你推薦什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The chef's special.",
+      "phonetic": "/ðə ʃɛfs ˈspɛʃəl./",
+      "zh": "主廚招牌。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is this dish spicy?",
+      "phonetic": "/ɪz ðɪs dɪʃ ˈspaɪsi?/",
+      "zh": "這道辣嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mild, not too hot.",
+      "phonetic": "/maɪld, nɑt tu hɑt./",
+      "zh": "微辣，不很辣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is in the soup?",
+      "phonetic": "/wət ɪz ɪn ðə sup?/",
+      "zh": "湯裏有什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Vegetables and chicken.",
+      "phonetic": "/ˈvɛʤtəbəlz ənd ˈʧɪkən./",
+      "zh": "蔬菜和雞肉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have vegetarian options?",
+      "phonetic": "/du ju hæv ˌvɛʤəˈtɛˌriən ˈɔpʃənz?/",
+      "zh": "有素食嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Several, on the side.",
+      "phonetic": "/ˈsɛvərəl, ɔn ðə saɪd./",
+      "zh": "有幾樣，在旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the beef local?",
+      "phonetic": "/ɪz ðə bif ˈloʊkəl?/",
+      "zh": "牛肉是本地的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "From a nearby farm.",
+      "phonetic": "/frəm ə ˈnɪrˈbaɪ fɑrm./",
+      "zh": "附近農場的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I see the wine list?",
+      "phonetic": "/kən aɪ si ðə waɪn lɪst?/",
+      "zh": "能看酒單嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here you are.",
+      "phonetic": "/hir ju ər./",
+      "zh": "給您。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What comes with the meal?",
+      "phonetic": "/wət kəmz wɪθ ðə mil?/",
+      "zh": "附餐有什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Soup and salad.",
+      "phonetic": "/sup ənd ˈsæləd./",
+      "zh": "湯和沙拉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the fish fresh today?",
+      "phonetic": "/ɪz ðə fɪʃ frɛʃ təˈdeɪ?/",
+      "zh": "魚今天新鮮嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Caught this morning.",
+      "phonetic": "/kɔt ðɪs ˈmɔrnɪŋ./",
+      "zh": "今早捕的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How is the pasta cooked?",
+      "phonetic": "/haʊ ɪz ðə ˈpɑstə kʊkt?/",
+      "zh": "面怎麼煮？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Al dente, as asked.",
+      "phonetic": "/æl ˈdɛnˌteɪ, ɛz æst./",
+      "zh": "按要求的硬度。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have gluten-free?",
+      "phonetic": "/du ju hæv gluten-free*?/",
+      "zh": "有無麩質嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We have rice noodles.",
+      "phonetic": "/wi hæv raɪs ˈnudəlz./",
+      "zh": "有米粉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the soup of the day?",
+      "phonetic": "/wət ɪz ðə sup əv ðə deɪ?/",
+      "zh": "今日湯品？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tomato basil.",
+      "phonetic": "/təˈmɑˌtoʊ ˈbæzəl./",
+      "zh": "番茄羅勒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the dessert homemade?",
+      "phonetic": "/ɪz ðə dɪˈzərt ˈhoʊˈmeɪd?/",
+      "zh": "甜點自制嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Baked in-house.",
+      "phonetic": "/beɪkt ˌɪnˈhaʊs./",
+      "zh": "店內烤的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I swap the side?",
+      "phonetic": "/kən aɪ swɑp ðə saɪd?/",
+      "zh": "配菜能換嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, choose one.",
+      "phonetic": "/ʃʊr, ʧuz wən./",
+      "zh": "可以，選一樣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The menu is in English.",
+      "phonetic": "/ðə ˈmɛnju ɪz ɪn ˈɪŋlɪʃ./",
+      "zh": "菜單是英文的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I can translate.",
+      "phonetic": "/aɪ kən trænzˈleɪt./",
+      "zh": "我幫你翻譯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the price range?",
+      "phonetic": "/wət ɪz ðə praɪs reɪnʤ?/",
+      "zh": "價位如何？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ten to thirty each.",
+      "phonetic": "/tɛn tɪ ˈθərˌdi iʧ./",
+      "zh": "每份十到三十。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the portion large?",
+      "phonetic": "/ɪz ðə ˈpɔrʃən lɑrʤ?/",
+      "zh": "份量大嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, shareable.",
+      "phonetic": "/jɛs, shareable*./",
+      "zh": "大，可分食。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have a kids' menu?",
+      "phonetic": "/du ju hæv ə kɪdz' ˈmɛnju?/",
+      "zh": "有兒童菜單嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Smaller plates.",
+      "phonetic": "/sˈmɔlər pleɪts./",
+      "zh": "小份。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What goes with the steak?",
+      "phonetic": "/wət goʊz wɪθ ðə steɪk?/",
+      "zh": "牛排配什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mashed potatoes.",
+      "phonetic": "/mæʃt pəˈteɪtoʊz./",
+      "zh": "馬鈴薯泥。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is this nut-free?",
+      "phonetic": "/ɪz ðɪs nut-free*?/",
+      "zh": "這道無堅果嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No nuts inside.",
+      "phonetic": "/noʊ nəts ˌɪnˈsaɪd./",
+      "zh": "沒加堅果。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I order half?",
+      "phonetic": "/kən aɪ ˈɔrdər hæf?/",
+      "zh": "能點半份嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For some dishes.",
+      "phonetic": "/fər səm ˈdɪʃɪz./",
+      "zh": "部分可以。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The special sounds good.",
+      "phonetic": "/ðə ˈspɛʃəl saʊnz gʊd./",
+      "zh": "招牌聽起來不錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Very popular, yes.",
+      "phonetic": "/ˈvɛri ˈpɑpjələr, jɛs./",
+      "zh": "很受歡迎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What drink do you suggest?",
+      "phonetic": "/wət drɪŋk du ju səˈʤɛst?/",
+      "zh": "推薦什麼飲料？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fresh lemonade.",
+      "phonetic": "/frɛʃ ˈlɛməˈneɪd./",
+      "zh": "鮮檸檬水。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the bread free?",
+      "phonetic": "/ɪz ðə brɛd fri?/",
+      "zh": "麪包免費嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Compliments of us.",
+      "phonetic": "/ˈkɑmpləmɛnts əv ˈjuˈɛs./",
+      "zh": "免費招待。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How spicy is level two?",
+      "phonetic": "/haʊ ˈspaɪsi ɪz ˈlɛvəl tu?/",
+      "zh": "二級多辣？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A gentle heat.",
+      "phonetic": "/ə ˈʤɛnəl hit./",
+      "zh": "溫和的辣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you use MSG?",
+      "phonetic": "/du ju juz msg*?/",
+      "zh": "用味精嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We do not.",
+      "phonetic": "/wi du nɑt./",
+      "zh": "我們不用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the chef's favorite?",
+      "phonetic": "/wət ɪz ðə ʃɛfs ˈfeɪvərɪt?/",
+      "zh": "主廚最愛？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The braised pork.",
+      "phonetic": "/ðə breɪzd pɔrk./",
+      "zh": "紅燒肉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I take a photo?",
+      "phonetic": "/kən aɪ teɪk ə ˈfoʊˌtoʊ?/",
+      "zh": "能拍照嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Of course, go ahead.",
+      "phonetic": "/əv kɔrs, goʊ əˈhɛd./",
+      "zh": "當然，請。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The menu changed?",
+      "phonetic": "/ðə ˈmɛnju ʧeɪnʤd?/",
+      "zh": "菜單改了？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Seasonal update.",
+      "phonetic": "/ˈsizənəl ˈəpˌdeɪt./",
+      "zh": "季節更新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is coffee included?",
+      "phonetic": "/ɪz ˈkɔfi ˌɪnˈkludɪd?/",
+      "zh": "含咖啡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "After the meal.",
+      "phonetic": "/ˈæftər ðə mil./",
+      "zh": "餐後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the lightest dish?",
+      "phonetic": "/wət ɪz ðə ˈlaɪtəst dɪʃ?/",
+      "zh": "最清淡的是？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The garden salad.",
+      "phonetic": "/ðə ˈgɑrdən ˈsæləd./",
+      "zh": "田園沙拉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have soy milk?",
+      "phonetic": "/du ju hæv sɔɪ mɪlk?/",
+      "zh": "有豆漿嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, in the drinks.",
+      "phonetic": "/jɛs, ɪn ðə drɪŋks./",
+      "zh": "飲料有。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will have the set meal.",
+      "phonetic": "/aɪ wɪl hæv ðə sɛt mil./",
+      "zh": "我要套餐。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good value, sir.",
+      "phonetic": "/gʊd ˈvælju, sər./",
+      "zh": "很划算，先生。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The dessert looks rich.",
+      "phonetic": "/ðə dɪˈzərt lʊks rɪʧ./",
+      "zh": "甜點看起來很濃。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just a small one.",
+      "phonetic": "/ʤɪst ə smɔl wən./",
+      "zh": "來小份。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Ready to order?",
+      "phonetic": "/ˈrɛdi tɪ ˈɔrdər?/",
+      "zh": "可以點了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, we decided.",
+      "phonetic": "/jɛs, wi ˌdɪˈsaɪdɪd./",
+      "zh": "對，決定了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Ready to order?",
+      "phonetic": "/ˈrɛdi tɪ ˈɔrdər?/",
+      "zh": "可以點了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, we decided.",
+      "phonetic": "/jɛs, wi ˌdɪˈsaɪdɪd./",
+      "zh": "對，決定了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The dessert looks rich.",
+      "phonetic": "/ðə dɪˈzərt lʊks rɪʧ./",
+      "zh": "甜點看起來很濃。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just a small one.",
+      "phonetic": "/ʤɪst ə smɔl wən./",
+      "zh": "來小份。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will have the set meal.",
+      "phonetic": "/aɪ wɪl hæv ðə sɛt mil./",
+      "zh": "我要套餐。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good value, sir.",
+      "phonetic": "/gʊd ˈvælju, sər./",
+      "zh": "很划算，先生。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have soy milk?",
+      "phonetic": "/du ju hæv sɔɪ mɪlk?/",
+      "zh": "有豆漿嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, in the drinks.",
+      "phonetic": "/jɛs, ɪn ðə drɪŋks./",
+      "zh": "飲料有。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the lightest dish?",
+      "phonetic": "/wət ɪz ðə ˈlaɪtəst dɪʃ?/",
+      "zh": "最清淡的是？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The garden salad.",
+      "phonetic": "/ðə ˈgɑrdən ˈsæləd./",
+      "zh": "田園沙拉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is coffee included?",
+      "phonetic": "/ɪz ˈkɔfi ˌɪnˈkludɪd?/",
+      "zh": "含咖啡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "After the meal.",
+      "phonetic": "/ˈæftər ðə mil./",
+      "zh": "餐後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The menu changed?",
+      "phonetic": "/ðə ˈmɛnju ʧeɪnʤd?/",
+      "zh": "菜單改了？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Seasonal update.",
+      "phonetic": "/ˈsizənəl ˈəpˌdeɪt./",
+      "zh": "季節更新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I take a photo?",
+      "phonetic": "/kən aɪ teɪk ə ˈfoʊˌtoʊ?/",
+      "zh": "能拍照嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Of course, go ahead.",
+      "phonetic": "/əv kɔrs, goʊ əˈhɛd./",
+      "zh": "當然，請。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the chef's favorite?",
+      "phonetic": "/wət ɪz ðə ʃɛfs ˈfeɪvərɪt?/",
+      "zh": "主廚最愛？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The braised pork.",
+      "phonetic": "/ðə breɪzd pɔrk./",
+      "zh": "紅燒肉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you use MSG?",
+      "phonetic": "/du ju juz msg*?/",
+      "zh": "用味精嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We do not.",
+      "phonetic": "/wi du nɑt./",
+      "zh": "我們不用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How spicy is level two?",
+      "phonetic": "/haʊ ˈspaɪsi ɪz ˈlɛvəl tu?/",
+      "zh": "二級多辣？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A gentle heat.",
+      "phonetic": "/ə ˈʤɛnəl hit./",
+      "zh": "溫和的辣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the bread free?",
+      "phonetic": "/ɪz ðə brɛd fri?/",
+      "zh": "麪包免費嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Compliments of us.",
+      "phonetic": "/ˈkɑmpləmɛnts əv ˈjuˈɛs./",
+      "zh": "免費招待。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What drink do you suggest?",
+      "phonetic": "/wət drɪŋk du ju səˈʤɛst?/",
+      "zh": "推薦什麼飲料？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fresh lemonade.",
+      "phonetic": "/frɛʃ ˈlɛməˈneɪd./",
+      "zh": "鮮檸檬水。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The special sounds good.",
+      "phonetic": "/ðə ˈspɛʃəl saʊnz gʊd./",
+      "zh": "招牌聽起來不錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Very popular, yes.",
+      "phonetic": "/ˈvɛri ˈpɑpjələr, jɛs./",
+      "zh": "很受歡迎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I order half?",
+      "phonetic": "/kən aɪ ˈɔrdər hæf?/",
+      "zh": "能點半份嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For some dishes.",
+      "phonetic": "/fər səm ˈdɪʃɪz./",
+      "zh": "部分可以。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is this nut-free?",
+      "phonetic": "/ɪz ðɪs nut-free*?/",
+      "zh": "這道無堅果嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No nuts inside.",
+      "phonetic": "/noʊ nəts ˌɪnˈsaɪd./",
+      "zh": "沒加堅果。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What goes with the steak?",
+      "phonetic": "/wət goʊz wɪθ ðə steɪk?/",
+      "zh": "牛排配什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mashed potatoes.",
+      "phonetic": "/mæʃt pəˈteɪtoʊz./",
+      "zh": "馬鈴薯泥。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have a kids' menu?",
+      "phonetic": "/du ju hæv ə kɪdz' ˈmɛnju?/",
+      "zh": "有兒童菜單嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Smaller plates.",
+      "phonetic": "/sˈmɔlər pleɪts./",
+      "zh": "小份。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the portion large?",
+      "phonetic": "/ɪz ðə ˈpɔrʃən lɑrʤ?/",
+      "zh": "份量大嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, shareable.",
+      "phonetic": "/jɛs, shareable*./",
+      "zh": "大，可分食。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the price range?",
+      "phonetic": "/wət ɪz ðə praɪs reɪnʤ?/",
+      "zh": "價位如何？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ten to thirty each.",
+      "phonetic": "/tɛn tɪ ˈθərˌdi iʧ./",
+      "zh": "每份十到三十。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The menu is in English.",
+      "phonetic": "/ðə ˈmɛnju ɪz ɪn ˈɪŋlɪʃ./",
+      "zh": "菜單是英文的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I can translate.",
+      "phonetic": "/aɪ kən trænzˈleɪt./",
+      "zh": "我幫你翻譯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I swap the side?",
+      "phonetic": "/kən aɪ swɑp ðə saɪd?/",
+      "zh": "配菜能換嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, choose one.",
+      "phonetic": "/ʃʊr, ʧuz wən./",
+      "zh": "可以，選一樣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the dessert homemade?",
+      "phonetic": "/ɪz ðə dɪˈzərt ˈhoʊˈmeɪd?/",
+      "zh": "甜點自制嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Baked in-house.",
+      "phonetic": "/beɪkt ˌɪnˈhaʊs./",
+      "zh": "店內烤的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the soup of the day?",
+      "phonetic": "/wət ɪz ðə sup əv ðə deɪ?/",
+      "zh": "今日湯品？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tomato basil.",
+      "phonetic": "/təˈmɑˌtoʊ ˈbæzəl./",
+      "zh": "番茄羅勒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have gluten-free?",
+      "phonetic": "/du ju hæv gluten-free*?/",
+      "zh": "有無麩質嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We have rice noodles.",
+      "phonetic": "/wi hæv raɪs ˈnudəlz./",
+      "zh": "有米粉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How is the pasta cooked?",
+      "phonetic": "/haʊ ɪz ðə ˈpɑstə kʊkt?/",
+      "zh": "面怎麼煮？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Al dente, as asked.",
+      "phonetic": "/æl ˈdɛnˌteɪ, ɛz æst./",
+      "zh": "按要求的硬度。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the fish fresh today?",
+      "phonetic": "/ɪz ðə fɪʃ frɛʃ təˈdeɪ?/",
+      "zh": "魚今天新鮮嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Caught this morning.",
+      "phonetic": "/kɔt ðɪs ˈmɔrnɪŋ./",
+      "zh": "今早捕的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What comes with the meal?",
+      "phonetic": "/wət kəmz wɪθ ðə mil?/",
+      "zh": "附餐有什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Soup and salad.",
+      "phonetic": "/sup ənd ˈsæləd./",
+      "zh": "湯和沙拉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I see the wine list?",
+      "phonetic": "/kən aɪ si ðə waɪn lɪst?/",
+      "zh": "能看酒單嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here you are.",
+      "phonetic": "/hir ju ər./",
+      "zh": "給您。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the beef local?",
+      "phonetic": "/ɪz ðə bif ˈloʊkəl?/",
+      "zh": "牛肉是本地的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "From a nearby farm.",
+      "phonetic": "/frəm ə ˈnɪrˈbaɪ fɑrm./",
+      "zh": "附近農場的。"
+    }
+  ]
+}

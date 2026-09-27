@@ -1,0 +1,2458 @@
+{
+  "title": "Everyday Phrases — An Online Course",
+  "title_zh": "在線課程",
+  "scene_zh": "在線課程 · 情境對話",
+  "title_quote": "I want to learn English online.",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】🎓 實用在線課程必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — An Online Course",
+  "youtube_description": "睡著學英文！這部影片收錄實用在線課程情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫），從選課試聽、付款開帳號，到打卡作業、結課證書，全部用最常聽到的說法。不用背，睡前聽就會。重複播放，讓英文自然進入你的大腦。👍 想學更多生活場景，請留言告訴我！別忘了訂閱+按讚。 #英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical An Online Course phrase pairs (each pair: male normal speed → female slow speed → combined dialogue), covering choosing a course, paying, homework, feedback and your certificate. No memorization needed—just listen before bed and absorb naturally. If you want more real-life scenarios, leave a comment! Subscribe and like!",
+  "youtube_tags": [
+    "英文聽力",
+    "睡前英文",
+    "在線課程英文",
+    "online course English",
+    "English listening",
+    "Sleep learning",
+    "A2 English",
+    "常用英文短語",
+    "零基礎英文",
+    "慢速英文",
+    "英文口語",
+    "Learn English",
+    "English for studying",
+    "ESL",
+    "English conversation",
+    "英文學習"
+  ],
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "An Online Course",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "An Online Course",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Study",
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "I want to learn English online.",
+      "phonetic": "/aɪ wɑnt tə lɜrn ˈɪŋɡlɪʃ ˌɑnˈlaɪn./",
+      "zh": "我想線上學英文。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "This platform has great courses.",
+      "phonetic": "/ðɪs ˈplætfɔrm hæz ɡreɪt ˈkɔrsəz./",
+      "zh": "這個平台有很多好課程。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What should I search for first?",
+      "phonetic": "/wɑt ʃʊd aɪ sɜrtʃ fɚ fɝːst?/",
+      "zh": "我該先搜什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Type listening in the search box.",
+      "phonetic": "/taɪp ˈlɪsənɪŋ ɪn ðə sɜrtʃ bɑks./",
+      "zh": "在搜尋框輸入聽力。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So many courses show up!",
+      "phonetic": "/soʊ ˈmɛni ˈkɔrsəz ʃoʊ ʌp!/",
+      "zh": "冒出好多門課程！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sort them by their ratings.",
+      "phonetic": "/sɔrt ðɛm baɪ ðɛr ˈreɪtɪŋz./",
+      "zh": "照評分排一下看看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This one has four point nine.",
+      "phonetic": "/ðɪs wʌn hæz fɔr pɔɪnt naɪn./",
+      "zh": "這門課有四點九分。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's the highest score here.",
+      "phonetic": "/ðæts ðə ˈhaɪəst skɔr hɪr./",
+      "zh": "這是裡面最高的分數。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Who teaches this course?",
+      "phonetic": "/hu ˈtitʃəz ðɪs kɔrs?/",
+      "zh": "這門課是誰教的？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A teacher named Anna.",
+      "phonetic": "/ə ˈtitʃər neɪmd ˈænə./",
+      "zh": "一位叫安娜的老師。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is she from?",
+      "phonetic": "/wɛr ɪz ʃi frʌm?/",
+      "zh": "她是哪裡人？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She lives in Canada.",
+      "phonetic": "/ʃi lɪvz ɪn ˈkænədə./",
+      "zh": "她住在加拿大。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is her speaking clear?",
+      "phonetic": "/ɪz hɚr ˈspikɪŋ klɪr?/",
+      "zh": "她口語清楚嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Very clear, don't worry.",
+      "phonetic": "/ˈvɛri klɪr, doʊnt ˈwɜri./",
+      "zh": "很清楚，別擔心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How many lessons does it have?",
+      "phonetic": "/haʊ ˈmɛni ˈlɛsənz dʌz ɪt hæv?/",
+      "zh": "這門課總共有幾課？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fifty short video lessons.",
+      "phonetic": "/ˈfɪfti ʃɔrt ˈvɪdioʊ ˈlɛsənz./",
+      "zh": "五十堂短片課。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are the videos long?",
+      "phonetic": "/ɑr ðə ˈvɪdioʊz lɔŋ?/",
+      "zh": "影片很長嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Each one is ten minutes.",
+      "phonetic": "/itʃ wʌn ɪz tɛn ˈmɪnəts./",
+      "zh": "每堂只要十分鐘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Well, ten minutes fits my breaks.",
+      "phonetic": "/wɛl, tɛn ˈmɪnəts fɪts maɪ breɪks./",
+      "zh": "嗯，十分鐘剛好配我的休息。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, ten minutes daily.",
+      "phonetic": "/jɛs, tɛn ˈmɪnəts ˈdeɪli./",
+      "zh": "對，每天十分鐘就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let me open the outline.",
+      "phonetic": "/lɛt mi ˈoʊpən ði ˈaʊtˌlaɪn./",
+      "zh": "我打開課程大綱看看。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It lists every week.",
+      "phonetic": "/ɪt lɪsts ˈɛvri wik./",
+      "zh": "每週的內容都列出來了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Week one is about greetings.",
+      "phonetic": "/wik wʌn ɪz əˈbaʊt ˈɡrɛtɪŋz./",
+      "zh": "第一週學打招呼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's easy for beginners.",
+      "phonetic": "/ðæts ˈizi fɚ bɪˈɡɪnərz./",
+      "zh": "對新手來說很簡單。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Week four is shopping talk.",
+      "phonetic": "/wik fɔr ɪz ˈʃɑpɪŋ tɔk./",
+      "zh": "第四週是購物對話。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You'll love that unit.",
+      "phonetic": "/jul lʌv ðæt ˈjunət./",
+      "zh": "你會喜歡那一單元的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does it teach grammar too?",
+      "phonetic": "/dʌz ɪt ˈtitʃ ˈɡræmər tu?/",
+      "zh": "這門課也教語法嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A little, mostly speaking.",
+      "phonetic": "/ə ˈlɪtəl, ˈmoʊstli ˈspikɪŋ./",
+      "zh": "一點點，主要以口說為主。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Well, speaking is my goal.",
+      "phonetic": "/wɛl, ˈspikɪŋ ɪz maɪ ɡoʊl./",
+      "zh": "嗯，口說正是我的目標。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "This course fits you.",
+      "phonetic": "/ðɪs kɔrs fɪts ju./",
+      "zh": "這門課很適合你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I read the reviews?",
+      "phonetic": "/ʃʊd aɪ rɛd ðə rɪˈvjuz?/",
+      "zh": "我該先看看評論嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, real students write them.",
+      "phonetic": "/jɛs, ril ˈstudənts raɪt ðɛm./",
+      "zh": "要啊，那都是學員寫的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Most people give five stars.",
+      "phonetic": "/moʊst ˈpipəl ɡɪv faɪv stɑrz./",
+      "zh": "大多數人都給五星。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's a good sign.",
+      "phonetic": "/ðæts ə ɡʊd saɪn./",
+      "zh": "這是個好兆頭。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One says the audio is soft.",
+      "phonetic": "/wʌn sɛz ði ˈɔdioʊ ɪz sɔft./",
+      "zh": "有人說聲音太小聲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You can raise the volume.",
+      "phonetic": "/ju kæn reɪz ðə ˈvɑljum./",
+      "zh": "把音量調大就好啊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Another calls it too slow.",
+      "phonetic": "/əˈnʌðɚ kɔlz ɪt tu sloʊ./",
+      "zh": "還有人說進度太慢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "But you can speed it up.",
+      "phonetic": "/bʌt ju kæn spid ɪt ʌp./",
+      "zh": "但可以調倍速呀。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This student finished in two months.",
+      "phonetic": "/ðɪs ˈstudənt ˈfɪnɪʃt ɪn tu mʌnθs./",
+      "zh": "這位學生兩個月就學完了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's possible with practice.",
+      "phonetic": "/ðæts ˈpɑsəbəl wɪð ˈpræktɪs./",
+      "zh": "練習夠多就辦得到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I try before buying?",
+      "phonetic": "/kæn aɪ traɪ bɪˈfɔr ˈbaɪɪŋ?/",
+      "zh": "可以先試聽再買嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, lesson one is free.",
+      "phonetic": "/ʃʊr, ˈlɛsən wʌn ɪz fri./",
+      "zh": "可以，第一課是免費的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where's the free trial button?",
+      "phonetic": "/wɛrz ðə fri ˈtraɪəl ˈbʌtən?/",
+      "zh": "免費試聽的按鈕在哪？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It says start free there.",
+      "phonetic": "/ɪt sɛz stɑrt fri ðɛr./",
+      "zh": "那邊寫著免費開始。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The trial video loads fast.",
+      "phonetic": "/ðə ˈtraɪəl ˈvɪdioʊ loʊdz fæst./",
+      "zh": "試聽影片載入很快。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The picture looks sharp.",
+      "phonetic": "/ðə ˈpɪktʃɚ lʊks ʃɑrp./",
+      "zh": "畫面也很清楚。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Her voice is calm and warm.",
+      "phonetic": "/hɚr vɔɪs ɪz kɑm ənd wɔrm./",
+      "zh": "她的聲音平穩又溫暖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Easy to listen to.",
+      "phonetic": "/ˈizi tə ˈlɪsən tu./",
+      "zh": "聽起來很舒服。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "There are English subtitles too.",
+      "phonetic": "/ðɛr ɑr ˈɪŋɡlɪʃ ˈsʌbˌtaɪtəlz tu./",
+      "zh": "還有英文字幕。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tap to hide them.",
+      "phonetic": "/tæp tə haɪd ðɛm./",
+      "zh": "點一下就能關掉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So I paused to take notes.",
+      "phonetic": "/soʊ aɪ ˈpɔzd tə teɪk noʊts./",
+      "zh": "於是我暫停下來做筆記。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good habit already!",
+      "phonetic": "/ɡʊd ˈhæbɪt ɔlˈrɛdi!/",
+      "zh": "你已經有好習慣了！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The trial ended so fast.",
+      "phonetic": "/ðə ˈtraɪəl ˈɛndɪd soʊ fæst./",
+      "zh": "試聽一下子就結束了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Now it shows the price.",
+      "phonetic": "/naʊ ɪt ʃoʊz ðə praɪs./",
+      "zh": "現在顯示出價格了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The full course is fifty dollars.",
+      "phonetic": "/ðə fʊl kɔrs ɪz ˈfɪfti ˈdɑlərz./",
+      "zh": "完整課程要五十美元。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's one dollar a lesson.",
+      "phonetic": "/ðæts wʌn ˈdɑlər ə ˈlɛsən./",
+      "zh": "算下來一堂才一美元。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I pay monthly?",
+      "phonetic": "/kæn aɪ peɪ ˈmʌnθli?/",
+      "zh": "可以按月繳費嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, ten dollars a month.",
+      "phonetic": "/jɛs, tɛn ˈdɑlərz ə mʌnθ./",
+      "zh": "可以，一個月十美元。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which plan saves money?",
+      "phonetic": "/wɪtʃ plæn seɪvz ˈmʌni?/",
+      "zh": "哪種付款方式省錢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Paying once is cheaper.",
+      "phonetic": "/ˈpeɪɪŋ wʌns ɪz ˈtʃipɚ./",
+      "zh": "一次付清比較便宜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Fifty at once? Hmm.",
+      "phonetic": "/ˈfɪfti ət wʌns? hʌm./",
+      "zh": "一次付出五十？嗯……"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It saves about ten dollars.",
+      "phonetic": "/ɪt seɪvz əˈbaʊt tɛn ˈdɑlərz./",
+      "zh": "但能省下大約十美元。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I stop a monthly plan?",
+      "phonetic": "/kæn aɪ stɑp ə ˈmʌnθli plæn?/",
+      "zh": "月繳方案可以隨時停嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, cancel anytime online.",
+      "phonetic": "/jɛs, ˈkænsəl ˈɛniˌtaɪm ˌɑnˈlaɪn./",
+      "zh": "可以，線上隨時取消。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "All set, I'll pay in full.",
+      "phonetic": "/ɔl sɛt, aɪl peɪ ɪn fʊl./",
+      "zh": "決定了，我一次付清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Smart, if that fits you.",
+      "phonetic": "/smɑrt, ɪf ðæt fɪts ju./",
+      "zh": "想得對，適合你就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wait, is there a coupon?",
+      "phonetic": "/weɪt, ɪz ðɛr ə ˈkupɑn?/",
+      "zh": "等等，有優惠券嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Look for a promo banner.",
+      "phonetic": "/lʊk fɚ ə ˈproʊmoʊ ˈbænɚ./",
+      "zh": "找找看那條優惠橫幅。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Okay, found one, twenty percent off!",
+      "phonetic": "/oʊˈkeɪ, faʊnd wʌn, ˈtwɛnti pɚˈsɛnt ɔf!/",
+      "zh": "有了，找到一張八折券！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Copy the code right now.",
+      "phonetic": "/ˈkɑpi ðə koʊd raɪt naʊ./",
+      "zh": "快把優惠代碼複製起來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now, where do I enter it?",
+      "phonetic": "/naʊ, wɛr du aɪ ˈɛntɚ ɪt?/",
+      "zh": "那要填在哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "There's a box at checkout.",
+      "phonetic": "/ðɛrz ə bɑks æt ˈtʃɛkˌaʊt./",
+      "zh": "結帳頁面有個輸入框。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The price dropped to forty!",
+      "phonetic": "/ðə praɪs ˈdrɑpt tə ˈfɔrti!/",
+      "zh": "價格降到四十美元了！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "See, the coupon worked.",
+      "phonetic": "/si, ðə ˈkupɑn wɜrkt./",
+      "zh": "看吧，優惠券有效。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the sale end today?",
+      "phonetic": "/dʌz ðə seɪl ɛnd təˈdeɪ?/",
+      "zh": "這個優惠今天截止嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It says one hour left.",
+      "phonetic": "/ɪt sɛz wʌn ˈaʊər lɛft./",
+      "zh": "上面說只剩一小時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I buy it tonight?",
+      "phonetic": "/ʃʊd aɪ baɪ ɪt təˈnaɪt?/",
+      "zh": "我今晚就買下去嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, don't miss the deal.",
+      "phonetic": "/jɛs, doʊnt mɪs ðə dil./",
+      "zh": "好，彆錯過這優惠。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do students get extra discounts?",
+      "phonetic": "/du ˈstudənts ɡɛt ˈɛkstrə dɪsˈkaʊnts?/",
+      "zh": "學生有額外折扣嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Show your student card.",
+      "phonetic": "/ʃoʊ jʊr ˈstudənt kɑrd./",
+      "zh": "出示學生證就行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Nope, no student card for me.",
+      "phonetic": "/noʊp, noʊ ˈstudənt kɑrd fɚ mi./",
+      "zh": "唉，我沒有學生證。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then use the coupon.",
+      "phonetic": "/ðɛn juz ðə ˈkupɑn./",
+      "zh": "那就用優惠券吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is it good for my level?",
+      "phonetic": "/ɪz ɪt ɡʊd fɚ maɪ ˈlɛvəl?/",
+      "zh": "這適合我的程度嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Reviews say it's beginner friendly.",
+      "phonetic": "/rɪˈvjuz seɪ ɪts bɪˈɡɪnɚ ˈfrɛndli./",
+      "zh": "評論說對新手很友善。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will I need a textbook?",
+      "phonetic": "/wɪl aɪ nid ə ˈtɛkstˌbʊk?/",
+      "zh": "我需要教科書嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, all notes are free.",
+      "phonetic": "/noʊ, ɔl noʊts ɑr fri./",
+      "zh": "不用，講義全部免費。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are the notes printable?",
+      "phonetic": "/ɑr ðə noʊts ˈprɪntəbəl?/",
+      "zh": "講義可以列印嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, download the PDF.",
+      "phonetic": "/jɛs, ˌdaʊnˈloʊd ðə ˌpiːˈɛfˈdi./",
+      "zh": "可以，下載PDF就行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does Anna answer questions?",
+      "phonetic": "/dʌz ˈænə ˈænsɚ ˈkwɛstʃənz?/",
+      "zh": "安娜會回答問題嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She replies in the group.",
+      "phonetic": "/ʃi rɪˈplaɪz ɪn ðə ɡrup./",
+      "zh": "她會在學習群裡回覆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which group should I join?",
+      "phonetic": "/wɪtʃ ɡrup ʃʊd aɪ dʒɔɪn?/",
+      "zh": "我該加入哪個群組？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The class chat, after paying.",
+      "phonetic": "/ðə klæs tʃæt, ˈæftɚ ˈpeɪɪŋ./",
+      "zh": "付費以後進班的群組。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I learn on my phone?",
+      "phonetic": "/kæn aɪ lɜrn ɑn maɪ foʊn?/",
+      "zh": "用手機也能學習嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The app works great.",
+      "phonetic": "/ðə æp wɜrks ɡreɪt./",
+      "zh": "那個App用起來很順。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Or should I use a laptop?",
+      "phonetic": "/ɔr ʃʊd aɪ juz ə ˈlæpˌtɑp?/",
+      "zh": "還是用筆電比較好？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A larger screen helps you.",
+      "phonetic": "/ə ˈlɑrdʒɚ skrin hɛlps ju./",
+      "zh": "較大的螢幕對你有幫助。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I'll practice on both.",
+      "phonetic": "/aɪl ˈpræktɪs ɑn boʊθ./",
+      "zh": "那我兩個都用。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's a solid plan.",
+      "phonetic": "/ðæts ə ˈsɑləd plæn./",
+      "zh": "這個計畫很實在。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Decided, I'll take the course.",
+      "phonetic": "/dɪˈsaɪdɪd, aɪl teɪk ðə kɔrs./",
+      "zh": "我決定了，要上這門課。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good choice, let's start.",
+      "phonetic": "/ɡʊd tʃɔɪs, lɛts stɑrt./",
+      "zh": "選得好，我們開始吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Click, done. It paid.",
+      "phonetic": "/klɪk, dʌn. ɪt peɪd./",
+      "zh": "點下去，付好錢了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Is it paid already?",
+      "phonetic": "/ɪz ɪt peɪd ɔlˈrɛdi?/",
+      "zh": "已經付好錢了嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, my card worked.",
+      "phonetic": "/jɛs, maɪ kɑrd wɜrkt./",
+      "zh": "成功了，我的卡能用。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nice, you're a student now.",
+      "phonetic": "/naɪs, jʊr ə ˈstudənt naʊ./",
+      "zh": "太好了，你現在是學員了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Next up, making an account.",
+      "phonetic": "/nɛkst ʌp, ˈmeɪkɪŋ ən əˈkaʊnt./",
+      "zh": "接著是開帳號。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Use the same email.",
+      "phonetic": "/juz ðə seɪm ˈimel./",
+      "zh": "用同一個電子郵件就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It asks for a password.",
+      "phonetic": "/ɪt æsks fɚ ə ˈpæswɜrd./",
+      "zh": "它要求設定密碼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Make it long and safe.",
+      "phonetic": "/meɪk ɪt lɔŋ ənd seɪf./",
+      "zh": "設長一點、安全一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hey, I wrote it on paper.",
+      "phonetic": "/heɪ, aɪ roʊt ɪt ɑn ˈpeɪpɚ./",
+      "zh": "嘿，我把它寫在紙上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, don't lose it.",
+      "phonetic": "/ɡʊd, doʊnt luz ɪt./",
+      "zh": "很好，別弄丟了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Okay, the account is ready.",
+      "phonetic": "/oʊˈkeɪ, ðə əˈkaʊnt ɪz ˈrɛdi./",
+      "zh": "可以了，帳號開好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Log in and look around.",
+      "phonetic": "/lɔɡ ɪn ənd lʊk əˈraʊnd./",
+      "zh": "登進去看看吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Here goes. I'm in!",
+      "phonetic": "/hɪr ɡoʊz. aɪm ɪn!/",
+      "zh": "登入看看。進去了！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What do you see first?",
+      "phonetic": "/wɑt du ju si fɜrst?/",
+      "zh": "你第一眼看到什麼？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My course is in the list.",
+      "phonetic": "/maɪ kɔrs ɪz ɪn ðə lɪst./",
+      "zh": "我的課程在列表裡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tap to open lesson one.",
+      "phonetic": "/tæp tə ˈoʊpən ˈlɛsən wʌn./",
+      "zh": "點一下打開第一課。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "There's a start learning button.",
+      "phonetic": "/ðɛrz ə stɑrt ˈlɜrnɪŋ ˈbʌtən./",
+      "zh": "有個開始學習的按鈕。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Press it and begin.",
+      "phonetic": "/prɛs ɪt ənd bɪˈɡɪn./",
+      "zh": "按下去就開始了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you join the class group?",
+      "phonetic": "/dɪd ju dʒɔɪn ðə klæs ɡrup?/",
+      "zh": "你加入班級群組了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, two hundred members.",
+      "phonetic": "/jɛs, tu ˈhʌndrəd ˈmɛmbərz./",
+      "zh": "加了，裡面有兩百人。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The group has some rules.",
+      "phonetic": "/ðə ɡrup hæz sʌm rulz./",
+      "zh": "群組裡有幾條規定。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Read them before posting.",
+      "phonetic": "/rɛd ðɛm bɪˈfɔr ˈpoʊstɪŋ./",
+      "zh": "發文以前先讀一遍。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "No ads allowed there.",
+      "phonetic": "/noʊ ædz əˈlaʊd ðɪr./",
+      "zh": "那裡不能發廣告。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And be kind to everyone.",
+      "phonetic": "/ænd bi kaɪnd tu ˈɛvriˌwʌn./",
+      "zh": "而且要對大家有禮貌。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Who runs the group?",
+      "phonetic": "/hu rʌnz ðə ɡrup?/",
+      "zh": "群組是誰在管理？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Anna and two helpers.",
+      "phonetic": "/ˈænə ənd tu ˈhɛlpɚz./",
+      "zh": "安娜和兩位助理。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "They post daily tips.",
+      "phonetic": "/ðeɪ poʊst ˈdeɪli tɪps./",
+      "zh": "他們每天分享小技巧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Um, one tip really helped me.",
+      "phonetic": "/ʌm, wʌn tɪp ˈrɪli hɛlpt mi./",
+      "zh": "嗯，有一則小技巧幫了我。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Someone asked about homework.",
+      "phonetic": "/ˈsʌmˌwʌn æskt əˈbaʊt ˈhoʊmˌwɜrk./",
+      "zh": "有人問了作業的事。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The teacher replied in minutes.",
+      "phonetic": "/ðə ˈtitʃɚ rɪˈplaɪd ɪn ˈmɪnəts./",
+      "zh": "老師幾分鐘就回覆了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This group feels helpful.",
+      "phonetic": "/ðɪs ɡrup filz ˈhɛlpfəl./",
+      "zh": "這個群組感覺很有用。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Studying with others is fun.",
+      "phonetic": "/ˈstʌdiɪŋ wɪð ˈʌðɚz ɪz fʌn./",
+      "zh": "大家一起學習比較有趣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let me watch lesson one.",
+      "phonetic": "/lɛt mi wɑtʃ ˈlɛsən wʌn./",
+      "zh": "我來看第一課。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Find a quiet corner first.",
+      "phonetic": "/faɪnd ə ˈkwaɪət ˈkɔrnɚ fɜrst./",
+      "zh": "先找一個安靜的角落。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Done, earphones on now.",
+      "phonetic": "/dʌn, ˈɪrˌfoʊnz ɑn naʊ./",
+      "zh": "好了，耳機也戴上了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The sound will be clearer.",
+      "phonetic": "/ðə saʊnd wɪl bi ˈklɪɚ./",
+      "zh": "這樣會聽得更清楚。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The video starts with music.",
+      "phonetic": "/ðə ˈvɪdioʊ stɑrts wɪð ˈmjuzɪk./",
+      "zh": "影片開頭有音樂。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She starts talking soon.",
+      "phonetic": "/ʃi stɑrts ˈtɔkɪŋ sun./",
+      "zh": "她一會兒就開始講了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Anna greets all the students.",
+      "phonetic": "/ˈænə ɡrits ɔl ðə ˈstudənts./",
+      "zh": "安娜跟大家問好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She smiles a lot.",
+      "phonetic": "/ʃi smaɪlz ə lɑt./",
+      "zh": "她一直在微笑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She speaks a bit slowly.",
+      "phonetic": "/ʃi spiks ə bɪt ˈsloʊli./",
+      "zh": "她說得有點慢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Perfect for new learners.",
+      "phonetic": "/ˈpɜrfɪkt fɚ nu ˈlɜrnɚz./",
+      "zh": "對新同學剛剛好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I understood almost everything!",
+      "phonetic": "/aɪ ˌʌndɚˈstʊd ˈɔlˌmoʊst ˈɛvriˌθɪŋ!/",
+      "zh": "我幾乎全都聽懂了！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great, you're on track.",
+      "phonetic": "/ɡreɪt, jʊr ɑn træk./",
+      "zh": "太棒了，你跟得上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "There's a quiz after the video.",
+      "phonetic": "/ðɛrz ə kwɪz ˈæftɚ ðə ˈvɪdioʊ./",
+      "zh": "影片後面有一個小測驗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try it without notes.",
+      "phonetic": "/traɪ ɪt wɪˈðaʊt noʊts./",
+      "zh": "不要看筆記試試看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wow, four out of five right.",
+      "phonetic": "/waʊ, fɔr aʊt əv faɪv raɪt./",
+      "zh": "哇，五題答對四題。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One more is perfect.",
+      "phonetic": "/wʌn mɔr ɪz ˈpɜrfɪkt./",
+      "zh": "再答對一題就滿分了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The quiz can restart.",
+      "phonetic": "/ðə kwɪz kæn ˌriːˈstɑrt./",
+      "zh": "測驗可以重新考。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Take it again tonight.",
+      "phonetic": "/teɪk ɪt əˈɡɛn təˈnaɪt./",
+      "zh": "今晚再考一次吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where are the lesson notes?",
+      "phonetic": "/wɛr ɑr ðə ˈlɛsən noʊts?/",
+      "zh": "課堂講義在哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Under the video player.",
+      "phonetic": "/ˈʌndɚ ðə ˈvɪdioʊ ˈpleɪɚ./",
+      "zh": "在影片播放器下面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I'll download the whole PDF.",
+      "phonetic": "/aɪl ˌdaʊnˈloʊd ðə hoʊl ˌpiːˈɛfˈdi./",
+      "zh": "我要下載整份PDF。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep it in one folder.",
+      "phonetic": "/kip ɪt ɪn wʌn ˈfoʊldɚ./",
+      "zh": "存進同一個資料夾。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The file saved quickly.",
+      "phonetic": "/ðə faɪl seɪvd ˈkwɪkli./",
+      "zh": "檔案一下子就存好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Open it and review.",
+      "phonetic": "/ˈoʊpən ɪt ənd rɪˈvju./",
+      "zh": "打開複習一下吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I watch offline?",
+      "phonetic": "/kæn aɪ wɑtʃ ˌɑfˈlaɪn?/",
+      "zh": "可以離線觀看嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, download the videos.",
+      "phonetic": "/jɛs, ˌdaʊnˈloʊd ðə ˈvɪdioʊz./",
+      "zh": "可以，先把影片下載下來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Great for my subway ride.",
+      "phonetic": "/ɡreɪt fɚ maɪ ˈsʌbˌweɪ raɪd./",
+      "zh": "搭地鐵的時候看剛好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Offline mode is handy.",
+      "phonetic": "/ˌɑfˈlaɪn moʊd ɪz ˈhændi./",
+      "zh": "離線模式很方便。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hmm, lost the last sentence there.",
+      "phonetic": "/hʌm, lɔst ðə læst ˈsɛntəns ðɛr./",
+      "zh": "嗯，最後一句我沒跟上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Replay that small part.",
+      "phonetic": "/ˌriːˈpleɪ ðæt smɔl pɑrt./",
+      "zh": "把那一小段重播一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I skip ahead?",
+      "phonetic": "/kæn aɪ skɪp əˈhɛd?/",
+      "zh": "可以快進嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, drag the bar.",
+      "phonetic": "/jɛs, dræɡ ðə bɑr./",
+      "zh": "可以，拖進度條就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The speed button is here.",
+      "phonetic": "/ðə spid ˈbʌtən ɪs hɪr./",
+      "zh": "速度的按鈕在這裡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try normal speed first.",
+      "phonetic": "/traɪ ˈnɔrməl spid fɜrst./",
+      "zh": "先用原速試試看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Normal feels too slow.",
+      "phonetic": "/ˈnɔrməl filz tu sloʊ./",
+      "zh": "原速我覺得太慢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Use one point two five.",
+      "phonetic": "/juz wʌn pɔɪnt tu faɪv./",
+      "zh": "那就用一點二五倍。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One point five is clearer.",
+      "phonetic": "/wʌn pɔɪnt faɪv ɪz ˈklɪɚ./",
+      "zh": "一點五倍反而聽得更清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You'll get used to it.",
+      "phonetic": "/jul ɡɛt juzd tə ɪt./",
+      "zh": "你一下就會習慣的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So, I replayed the hard words.",
+      "phonetic": "/soʊ, aɪ ˌriːˈpleɪd ðə hɑrd wɜrdz./",
+      "zh": "於是我把難懂的詞重聽了幾遍。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's how you learn.",
+      "phonetic": "/ðæts haʊ ju lɜrn./",
+      "zh": "學習就是這樣累積的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I mark a lesson done?",
+      "phonetic": "/kæn aɪ mɑrk ə ˈlɛsən dʌn?/",
+      "zh": "可以把課程標成完成嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Check the box below.",
+      "phonetic": "/tʃɛk ðə bɑks bɪˈloʊ./",
+      "zh": "點下面的勾選框就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It shows my progress bar.",
+      "phonetic": "/ɪt ʃoʊz maɪ ˈprɑɡrəs bɑr./",
+      "zh": "進度條跟著更新了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One down, forty-nine left.",
+      "phonetic": "/wʌn daʊn, ˈfɔrti naɪn lɛft./",
+      "zh": "完成一課，還剩四十九。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Seeing progress feels good.",
+      "phonetic": "/ˈsinɪŋ ˈprɑɡrəs filz ɡʊd./",
+      "zh": "看到進度很有成就感。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It keeps you moving.",
+      "phonetic": "/ɪt kips ju ˈmuvɪŋ./",
+      "zh": "它會推著你一直前進。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are all the lessons open?",
+      "phonetic": "/ɑr ɔl ðə ˈlɛsənz ˈoʊpən?/",
+      "zh": "所有課程都開放了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, you can watch any.",
+      "phonetic": "/jɛs, ju kæn wɑtʃ ˈɛni./",
+      "zh": "對，你想看哪一課都行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I watch in order?",
+      "phonetic": "/ʃʊd aɪ wɑtʃ ɪn ˈɔrdɚ?/",
+      "zh": "我要按順序來看嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Better follow the list.",
+      "phonetic": "/ˈbɛtɚ ˈfɑloʊ ðə lɪst./",
+      "zh": "照列表的順序比較好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I'll skip week five for now.",
+      "phonetic": "/aɪl skɪp wik faɪv fɚ naʊ./",
+      "zh": "第五週我暫時先跳過。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It's too hard right now.",
+      "phonetic": "/ɪts tu hɑrd raɪt naʊ./",
+      "zh": "那一單元你現在還太難。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I keep the subtitles on?",
+      "phonetic": "/kæn aɪ kip ðə ˈsʌbˌtaɪtəlz ɑn?/",
+      "zh": "字幕可以一直開著嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, switch them anytime.",
+      "phonetic": "/jɛs, swɪtʃ ðɛm ˈɛniˌtaɪm./",
+      "zh": "可以，隨時都能切換。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Chinese or English subtitles?",
+      "phonetic": "/tʃaɪˈniz ɔr ˈɪŋɡlɪʃ ˈsʌbˌtaɪtəlz?/",
+      "zh": "用中文還是英文字幕？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "English helps you more.",
+      "phonetic": "/ˈɪŋɡlɪʃ hɛlps ju mɔr./",
+      "zh": "英文字幕對你幫助較大。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I wrote down a new word.",
+      "phonetic": "/aɪ roʊt daʊn ə nu wɜrd./",
+      "zh": "我記下了一個新詞。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Add it to your list.",
+      "phonetic": "/æd ɪt tə jʊr lɪst./",
+      "zh": "把它加進你的單字表。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app has a word list?",
+      "phonetic": "/ðə æp hæz ə wɜrd lɪst?/",
+      "zh": "App還有單字表？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it saves your notes.",
+      "phonetic": "/jɛs, ɪt seɪvz jʊr noʊts./",
+      "zh": "對，它會幫你存筆記。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did the video just freeze?",
+      "phonetic": "/dɪd ðə ˈvɪdioʊ dʒʌst friz?/",
+      "zh": "影片剛剛卡住了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Refresh the page once.",
+      "phonetic": "/rɪˈfrɛʃ ðə peɪdʒ wʌns./",
+      "zh": "重新整理一次頁面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It plays fine now.",
+      "phonetic": "/ɪt pleɪz faɪn naʊ./",
+      "zh": "現在播放正常了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Maybe the wifi dipped.",
+      "phonetic": "/ˈmeɪbi ðə ˈwaɪˌfaɪ dɪpt./",
+      "zh": "可能是網路閃斷了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I finished the whole first lesson!",
+      "phonetic": "/aɪ ˈfɪnɪʃt ðə hoʊl fɜrst ˈlɛsən!/",
+      "zh": "我完整上完第一課了！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Well done, day one works.",
+      "phonetic": "/wɛl dʌn, deɪ wʌn wɜrks./",
+      "zh": "做得好，第一天很順利。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Same time tomorrow night?",
+      "phonetic": "/seɪm taɪm təˈmɑroʊ naɪt?/",
+      "zh": "明晚同一時間再學？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Deal, I'll be here.",
+      "phonetic": "/dil, aɪl bi hɪr./",
+      "zh": "好，我會在這兒等你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do I need to check in daily?",
+      "phonetic": "/du aɪ nid tə tʃɛk ɪn ˈdeɪli?/",
+      "zh": "我每天都要打卡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, tap the check-in button.",
+      "phonetic": "/jɛs, tæp ðə tʃɛkˌɪn ˈbʌtən./",
+      "zh": "對，按打卡按鈕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I checked in for day two.",
+      "phonetic": "/aɪ tʃɛkt ɪn fɚ deɪ tu./",
+      "zh": "我打了第二天的卡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Every single day counts.",
+      "phonetic": "/ˈɛvri ˈsɪŋɡəl deɪ kaʊnts./",
+      "zh": "每一天都算數。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app counts my days.",
+      "phonetic": "/ðə æp kaʊnts maɪ deɪz./",
+      "zh": "App會幫我數天數。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Seven days earn a badge.",
+      "phonetic": "/ˈsɛvən deɪz ɜrn ə bædʒ./",
+      "zh": "連續七天可以得到徽章。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A badge? How fun is that.",
+      "phonetic": "/ə bædʒ? haʊ fʌn ɪz ðæt./",
+      "zh": "徽章？聽起來好有趣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I want the thirty-day one.",
+      "phonetic": "/aɪ wɑnt ðə ˈθɜrti deɪ wʌn./",
+      "zh": "我想要三十天那個。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What's the first homework?",
+      "phonetic": "/wʌts ðə fɜrst ˈhoʊmˌwɜrk?/",
+      "zh": "第一份作業是什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Record yourself speaking English.",
+      "phonetic": "/rɪˈkɔrd jʊrˈsɛlf ˈspikɪŋ ˈɪŋɡlɪʃ./",
+      "zh": "錄一段自己說英文。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The task is thirty seconds.",
+      "phonetic": "/ðə tæsk ɪz ˈθɜrti ˈsɛkəndz./",
+      "zh": "任務只有三十秒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then record one quick take.",
+      "phonetic": "/ðɛn rɪˈkɔrd wʌn kwɪk teɪk./",
+      "zh": "那就快錄一段。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My microphone works fine.",
+      "phonetic": "/maɪ ˈmaɪkroʊˌfoʊn wɜrks faɪn./",
+      "zh": "我的麥克風正常。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Speak slowly and clearly.",
+      "phonetic": "/spik ˈsloʊli ənd ˈklɪrli./",
+      "zh": "慢慢說、說清楚就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I recorded five takes.",
+      "phonetic": "/aɪ rɪˈkɔrdəd faɪv teɪks./",
+      "zh": "我錄了五遍。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pick the best one.",
+      "phonetic": "/pɪk ðə bɛst wʌn./",
+      "zh": "選最好的一遍上傳。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I'm shy to share my voice.",
+      "phonetic": "/aɪm ʃaɪ tə ʃɛr maɪ vɔɪs./",
+      "zh": "要分享聲音我好害羞。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only the teacher will hear it.",
+      "phonetic": "/ˈoʊnli ðə ˈtitʃɚ wɪl hɪr ɪt./",
+      "zh": "只有老師會聽到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Okay, I uploaded the file.",
+      "phonetic": "/oʊˈkeɪ, aɪ ʌpˈloʊdɪd ðə faɪl./",
+      "zh": "好，我上傳檔案了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Did it say sent?",
+      "phonetic": "/dɪd ɪt sɛz sɛnt?/",
+      "zh": "有顯示已發送嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, it shows received.",
+      "phonetic": "/jɛs, ɪt ʃoʊz rɪˈsivd./",
+      "zh": "有，顯示已收到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Now wait for feedback.",
+      "phonetic": "/naʊ weɪt fɚ ˈfidˌbæk./",
+      "zh": "接下來就等批改。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How fast does Anna reply?",
+      "phonetic": "/haʊ fæst dʌz ˈænə rɪˈplaɪ?/",
+      "zh": "安娜多快會回覆？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Usually within two days.",
+      "phonetic": "/ˈjuʒəwəli wɪˈðɪn tu deɪz./",
+      "zh": "通常兩天以內。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I keep checking my email.",
+      "phonetic": "/aɪ kip ˈtʃɛkɪŋ maɪ ˈimel./",
+      "zh": "我不斷查看信箱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Patience, it is coming.",
+      "phonetic": "/ˈpeɪʃəns, ɪt ɪz ˈkʌmɪŋ./",
+      "zh": "別急，一定會來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My homework got marked!",
+      "phonetic": "/maɪ ˈhoʊmˌwɜrk ɡɑt mɑrkt!/",
+      "zh": "我的作業批改好了！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What score did you get?",
+      "phonetic": "/wɑt skɔr dɪd ju ɡɛt?/",
+      "zh": "你拿到幾分？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Nine out of ten.",
+      "phonetic": "/naɪ aʊt əv tɛn./",
+      "zh": "十題對九題。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's almost perfect!",
+      "phonetic": "/ðæts ˈɔlˌmoʊst ˈpɜrfɪkt!/",
+      "zh": "幾乎滿分了耶！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She fixed my verb tense.",
+      "phonetic": "/ʃi fɪkst maɪ vɜrb tɛns./",
+      "zh": "她修正了我的動詞時態。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Read her notes carefully.",
+      "phonetic": "/rɛd hɚr noʊts ˈkɛrfəli./",
+      "zh": "她的註解要仔細讀。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She wrote kind words too.",
+      "phonetic": "/ʃi roʊt kaɪnd wɜrdz tu./",
+      "zh": "她也寫了鼓勵的話。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good teachers do that.",
+      "phonetic": "/ɡʊd ˈtitʃɚz du ðæt./",
+      "zh": "好老師都會這樣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I send my work again?",
+      "phonetic": "/kæn aɪ sɛnd maɪ wɜrk əˈɡɛn?/",
+      "zh": "我可以重新交一次作業嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, improve it and resubmit.",
+      "phonetic": "/jɛs, ɪmˈpruv ɪt ənd ˌriːsəbˈmɪt./",
+      "zh": "可以，改好再傳一次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I want a better score.",
+      "phonetic": "/aɪ wɑnt ə ˈbɛtɚ skɔr./",
+      "zh": "我想要更好的分數。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try one more time.",
+      "phonetic": "/traɪ wʌn mɔr taɪm./",
+      "zh": "那就再試一次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The new version sounded smoother.",
+      "phonetic": "/ðə nu ˈvɜrʒən ˈsaʊndɪd ˈsmuðɚ./",
+      "zh": "新錄音聽起來順多了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Did the grade change?",
+      "phonetic": "/dɪd ðə ɡreɪd tʃeɪndʒ?/",
+      "zh": "那成績有變嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It's a full ten now.",
+      "phonetic": "/ɪts ə fʊl tɛn naʊ./",
+      "zh": "現在是滿分十分。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wow, you did it!",
+      "phonetic": "/waʊ, ju dɪd ɪt!/",
+      "zh": "哇，你做到了！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "There's a question board too.",
+      "phonetic": "/ðɛrz ə ˈkwɛstʃən bɔrd tu./",
+      "zh": "這裡還有提問區。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Post your doubts there.",
+      "phonetic": "/poʊst jʊr daʊts ðɛr./",
+      "zh": "有疑問就發在那裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Well, I asked about used to.",
+      "phonetic": "/wɛl, aɪ æskt əˈbaʊt juˈzd tə./",
+      "zh": "我問了表示過去常做的句型。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's a good grammar question.",
+      "phonetic": "/ðæts ə ɡʊd ˈɡræmər ˈkwɛstʃən./",
+      "zh": "這是個很好的語法問題。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "No one has answered yet.",
+      "phonetic": "/noʊ wʌn hæz ˈænsərd jɛt./",
+      "zh": "還沒有人回覆。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Give it a day.",
+      "phonetic": "/ɡɪv ɪt ə deɪ./",
+      "zh": "再等一天看看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A student replied first!",
+      "phonetic": "/ə ˈstudənt rɪˈplaɪd fɜrst!/",
+      "zh": "有位同學先回答我了！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Helpers are everywhere.",
+      "phonetic": "/ˈhɛlpɚz ɑr ˈɛvriˌwɛr./",
+      "zh": "哪裡都有熱心人。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Anna answered with examples.",
+      "phonetic": "/ˈænə ˈænsərd wɪð ɪɡˈzæmpəlz./",
+      "zh": "安娜用例子回答。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Save that reply.",
+      "phonetic": "/seɪv ðæt rɪˈplaɪ./",
+      "zh": "把那則回覆存起來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The answer board is useful.",
+      "phonetic": "/ði ˈænsɚ bɔrd ɪz ˈjusfəl./",
+      "zh": "問答區很有用。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Search before asking.",
+      "phonetic": "/sɜrtʃ bɪˈfɔr ˈæskɪŋ./",
+      "zh": "發問前先搜尋一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I found old questions.",
+      "phonetic": "/aɪ faʊnd oʊld ˈkwɛstʃənz./",
+      "zh": "我找到舊的問題。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Someone asked mine already.",
+      "phonetic": "/ˈsʌmˌwʌn æskt maɪn ɔlˈrɛdi./",
+      "zh": "有人問過一樣的了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Week three feels harder.",
+      "phonetic": "/wik θri filz ˈhɑrdɚ./",
+      "zh": "第三週感覺變難了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Which part is tough?",
+      "phonetic": "/wɪtʃ pɑrt ɪz tʌf?/",
+      "zh": "哪一部分比較難？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The fast native clips.",
+      "phonetic": "/ðə fæst ˈneɪtɪv klɪps./",
+      "zh": "母語者的快速短片。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Most students skip those.",
+      "phonetic": "/moʊst ˈstudənts skɪp ðoz./",
+      "zh": "多數同學都跳過那些。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I can't catch every word.",
+      "phonetic": "/aɪ kænt kætʃ ˈɛvri wɜrd./",
+      "zh": "我沒辦法每個字都聽懂。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Don't aim for perfect.",
+      "phonetic": "/doʊnt eɪm fɚ ˈpɜrfɪkt./",
+      "zh": "不要追求句句都懂。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Maybe I should slow down.",
+      "phonetic": "/ˈmeɪbi aɪ ʃʊd sloʊ daʊn./",
+      "zh": "也許我該放慢進度。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Or watch the clip twice.",
+      "phonetic": "/ɔr wɑtʃ ðə klɪp twaɪs./",
+      "zh": "或者把短片看兩遍。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "First time, I just listen.",
+      "phonetic": "/fɜrst taɪm, aɪ dʒʌst ˈlɪsən./",
+      "zh": "第一遍我純粹聽。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Second time, read subtitles.",
+      "phonetic": "/ˈsɛkənd taɪm, rɛd ˈsʌbˌtaɪtəlz./",
+      "zh": "第二遍搭配字幕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That really worked!",
+      "phonetic": "/ðæt ˈrɪli wɜrkt!/",
+      "zh": "這樣真的有效！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "See, repeating is learning.",
+      "phonetic": "/si, rɪˈpitɪŋ ɪz ˈlɜrnɪŋ./",
+      "zh": "看吧，重複就是學習。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I'm behind this week.",
+      "phonetic": "/aɪm bɪˈhaɪnd ðɪs wik./",
+      "zh": "這週我落後了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "How many lessons left?",
+      "phonetic": "/haʊ ˈmɛni ˈlɛsənz lɛft?/",
+      "zh": "還差幾課？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Four lessons to catch up.",
+      "phonetic": "/fɔr ˈlɛsənz tə kætʃ ʌp./",
+      "zh": "要補上四課。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Do two on the weekend.",
+      "phonetic": "/du tu ɑn ðə ˈwikˌɛnd./",
+      "zh": "週末先補兩課。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Saturday morning is free.",
+      "phonetic": "/ˈsætɚˌdeɪ ˈmɔrnɪŋ ɪz fri./",
+      "zh": "我週六早上有空。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Book that study time.",
+      "phonetic": "/bʊk ðæt ˈstʌdi taɪm./",
+      "zh": "把那段時間留給讀書。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I watched it at half speed.",
+      "phonetic": "/aɪ wɑtʃt ɪt æt hæf spid./",
+      "zh": "我用半速看了一遍。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Slow is fine sometimes.",
+      "phonetic": "/sloʊ ɪz faɪn ˈsʌmˌtaɪmz./",
+      "zh": "有時慢一點沒關係。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then I raised the speed.",
+      "phonetic": "/ðɛn aɪ reɪzd ðə spid./",
+      "zh": "然後再把速度調高。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's great training.",
+      "phonetic": "/ðæts ɡreɪt ˈtreɪnɪŋ./",
+      "zh": "那是很好的練習。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does speed change the meaning?",
+      "phonetic": "/dʌz spid tʃeɪndʒ ðə ˈminɪŋ?/",
+      "zh": "變速會影響意思嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, only the pace.",
+      "phonetic": "/noʊ, ˈoʊnli ðə peɪs./",
+      "zh": "不會，只有快慢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My voice sounds strange back.",
+      "phonetic": "/maɪ vɔɪs saʊndz streɪndʒ bæk./",
+      "zh": "回聽自己的聲音好奇怪。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Everyone hates their recording.",
+      "phonetic": "/ˈɛvriˌwʌn heɪts ðɛr rɪˈkɔrdɪŋ./",
+      "zh": "大家都聽不慣自己的錄音。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Classmates can review my work.",
+      "phonetic": "/ˈklæsˌmeɪts kæn rɪˈvju maɪ wɜrk./",
+      "zh": "同學可以互評我的作業。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You can review theirs too.",
+      "phonetic": "/ju kæn rɪˈvju ðɛrz tu./",
+      "zh": "你也可以評他們的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How does peer review work?",
+      "phonetic": "/haʊ dʌz pɪr rɪˈvju wɜrk?/",
+      "zh": "互評是怎麼進行的？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Give one praise, one fix.",
+      "phonetic": "/ɡɪv wʌn preɪz, wʌn fɪks./",
+      "zh": "給一句讚美、一個建議。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I liked Kenji's short talk.",
+      "phonetic": "/aɪ laɪkt ˈkɛndʒiz ʃɔrt tɔk./",
+      "zh": "我很喜歡健二的短演講。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tell him in the comment.",
+      "phonetic": "/tɛl hɪm ɪn ðə ˈkɑmˌɛnt./",
+      "zh": "在留言裡告訴他。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My comment was five words.",
+      "phonetic": "/maɪ ˈkɑmˌɛnt wʌz faɪv wɜrdz./",
+      "zh": "我的留言只有五個字。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Short and kind works.",
+      "phonetic": "/ʃɔrt ənd kaɪnd wɜrks./",
+      "zh": "簡短又有禮就很好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Kenji gave me good advice.",
+      "phonetic": "/ˈkɛndʒi ɡeɪv mi ɡʊd ədˈvaɪs./",
+      "zh": "健二給了我很好的建議。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "He says pause at commas.",
+      "phonetic": "/hi sɛz pɔz æt ˈkɑməz./",
+      "zh": "他說逗號處要停一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Peer feedback feels different.",
+      "phonetic": "/pɪr ˈfidˌbæk filz ˈdɪfərənt./",
+      "zh": "同學的點評感覺不一樣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It's more relaxed.",
+      "phonetic": "/ɪts mɔr rɪˈlækst./",
+      "zh": "比較輕鬆沒壓力。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Reading others' work helps.",
+      "phonetic": "/ˈridɪŋ ˈʌðɚz wɜrk hɛlps./",
+      "zh": "看別人的作業也有收穫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You learn from mistakes.",
+      "phonetic": "/ju lɜrn frʌm mɪˈsteɪks./",
+      "zh": "從錯誤裡也能學到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I missed two check-ins.",
+      "phonetic": "/aɪ mɪst tu tʃɛkˌɪnz./",
+      "zh": "我漏打了兩天卡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's okay, start again.",
+      "phonetic": "/ðæts oʊˈkeɪ, stɑrt əˈɡɛn./",
+      "zh": "沒關係，重新開始。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Back on track tonight.",
+      "phonetic": "/bæk ɑn træk təˈnaɪt./",
+      "zh": "今晚我會回到軌道上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, keep at it.",
+      "phonetic": "/ɡʊd, kip æt ɪt./",
+      "zh": "很好，繼續堅持。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I reached the last unit.",
+      "phonetic": "/aɪ ritʃt ðə læst ˈjunət./",
+      "zh": "我學到最後一個單元了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Already? Time flew.",
+      "phonetic": "/ɔlˈrɛdi? taɪm flu./",
+      "zh": "這麼快？時間過得好快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "There's a final test.",
+      "phonetic": "/ðɛrz ə ˈfaɪnəl tɛst./",
+      "zh": "有一場期末測驗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Is it like the small quizzes?",
+      "phonetic": "/ɪz ɪt laɪk ðə smɔl ˈkwɪzɪz?/",
+      "zh": "跟平時的小測驗一樣嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It's longer, thirty questions.",
+      "phonetic": "/ɪts ˈlɔŋɡɚ, ˈθɜrti ˈkwɛstʃənz./",
+      "zh": "更長，一共有三十題。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then set aside an hour.",
+      "phonetic": "/ðɛn sɛt əˈsaɪd æn ˈaʊər./",
+      "zh": "那要專心留一小時給它。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The test is mostly listening.",
+      "phonetic": "/ðə tɛst ɪz ˈmoʊstli ˈlɪsənɪŋ./",
+      "zh": "測驗主要考聽力。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then your practice paid off.",
+      "phonetic": "/ðɛn jʊr ˈpræktɪs peɪd ɔf./",
+      "zh": "那你的練習就值得了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Finally, I reviewed every note.",
+      "phonetic": "/ˈfaɪnəli, aɪ rɪˈvjud ˈɛvri noʊt./",
+      "zh": "最後我把筆記全部複習了一遍。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, rest early tonight.",
+      "phonetic": "/ɡʊd, rɛst ˈɜrli təˈnaɪt./",
+      "zh": "很好，今晚早點睡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Well, I slept great.",
+      "phonetic": "/wɛl, aɪ slɛpt ɡreɪt./",
+      "zh": "嗯，我睡得特別好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, you feel ready then.",
+      "phonetic": "/ɡʊd, ju fil ˈrɛdi ðɛn./",
+      "zh": "那就好，你準備好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The timer started at eight.",
+      "phonetic": "/ðə ˈtaɪmɚ ˈstɑrtəd æt eɪt./",
+      "zh": "測驗八點開始計時。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Don't rush the first part.",
+      "phonetic": "/doʊnt rʌʃ ðə fɜrst pɑrt./",
+      "zh": "前面一段不要衝太快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The first twenty flew by.",
+      "phonetic": "/ðə fɜrst ˈtwɛnti flu baɪ./",
+      "zh": "前二十題一下子就寫完了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Leave hard ones for later.",
+      "phonetic": "/liv hɑrd wʌnz fɚ ˈleitɚ./",
+      "zh": "難的題目留到後面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Two questions made me guess.",
+      "phonetic": "/tu ˈkwɛstʃənz meɪd mi ɡɛs./",
+      "zh": "有兩題我其實是猜的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mark them and move on.",
+      "phonetic": "/mɑrk ðɛm ənd muv ɑn./",
+      "zh": "先標起來再做別的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I finished with five minutes left.",
+      "phonetic": "/aɪ ˈfɪnɪʃt wɪð faɪv ˈmɪnəts lɛft./",
+      "zh": "我做完了，還剩五分鐘。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Check your guesses now.",
+      "phonetic": "/tʃɛk jʊr ˈɡɛsəz naʊ./",
+      "zh": "現在回頭檢查猜的題。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Time is up!",
+      "phonetic": "/taɪm ɪz ʌp!/",
+      "zh": "時間到！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "How do you feel?",
+      "phonetic": "/haʊ du ju fil?/",
+      "zh": "你感覺怎麼樣？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Honestly, I feel good.",
+      "phonetic": "/ˈɑnəstli, aɪ fil ɡʊd./",
+      "zh": "老實說，我感覺不錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The score shows today.",
+      "phonetic": "/ðə skɔr ʃoʊz təˈdeɪ./",
+      "zh": "今天就會出成績。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Eighty-six percent!",
+      "phonetic": "/ˈeɪti sɪks pɚˈsɛnt!/",
+      "zh": "八十六分！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's a solid pass.",
+      "phonetic": "/ðæts ə ˈsɑləd pæs./",
+      "zh": "那是穩穩的合格。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I still can't believe it.",
+      "phonetic": "/aɪ stɪl kænt bɪˈliv ɪt./",
+      "zh": "我還是有點不敢相信。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You worked every week.",
+      "phonetic": "/ju wɜrkt ˈɛvri wik./",
+      "zh": "因為你每週都認真學了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I got a digital certificate!",
+      "phonetic": "/aɪ ɡɑt ə ˈdɪdʒɪtəl sɚˈtɪfəkət!/",
+      "zh": "我拿到電子證書了！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Does it show your name?",
+      "phonetic": "/dʌz ɪt ʃoʊ jʊr neɪm?/",
+      "zh": "上面有你的名字嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, and the finish date.",
+      "phonetic": "/jɛs, ənd ðə ˈfɪnɪʃ deɪt./",
+      "zh": "有，還有完成日期。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Screenshot it right away.",
+      "phonetic": "/ˈskrinˌʃɑt ɪt raɪt əˈweɪ./",
+      "zh": "趕快截一張圖存起來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I made it my lock screen.",
+      "phonetic": "/aɪ meɪd ɪt maɪ lɑk skrin./",
+      "zh": "我把它設成鎖屏畫面。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Show it to your friends.",
+      "phonetic": "/ʃoʊ ɪt tə jʊr frɛndz./",
+      "zh": "給朋友們看一看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I post it online?",
+      "phonetic": "/kæn aɪ poʊst ɪt ˌɑnˈlaɪn?/",
+      "zh": "我可以把它發到網上嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, tag the course page.",
+      "phonetic": "/ʃʊr, tæɡ ðə kɔrs peɪdʒ./",
+      "zh": "當然，記得標記課程頁。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My mom loved the news.",
+      "phonetic": "/maɪ mɑm lʌvd ðə nuz./",
+      "zh": "我媽媽聽到特別開心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She'll talk about it all day.",
+      "phonetic": "/ʃi l ˈtɔk əˈbaʊt ɪt ɔl deɪ./",
+      "zh": "她會到處說上一整天。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It's just a single page.",
+      "phonetic": "/ɪts dʒʌst ə ˈsɪŋɡəl peɪdʒ./",
+      "zh": "它就短短一頁。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Print one for your wall.",
+      "phonetic": "/prɪnt wʌn fɚ jʊr wɔl./",
+      "zh": "印一張掛在你的牆上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does it expire someday?",
+      "phonetic": "/dʌz ɪt ɪkˈspaɪr ˈsʌmˌdeɪ?/",
+      "zh": "證書有一天會過期嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, it stays valid.",
+      "phonetic": "/noʊ, ɪt steɪz ˈvæləd./",
+      "zh": "不會，它永久有效。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I share the link?",
+      "phonetic": "/kæn aɪ ʃɛr ðə lɪŋk?/",
+      "zh": "我可以分享驗證連結嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it's public.",
+      "phonetic": "/jɛs, ɪts ˈpʌblɪk./",
+      "zh": "可以，那個是公開的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The next course is level two.",
+      "phonetic": "/ðə nɛkst kɔrs ɪz ˈlɛvəl tu./",
+      "zh": "下一門課程是第二級。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Are you ready already?",
+      "phonetic": "/ɑr ju ˈrɛdi ɔlˈrɛdi?/",
+      "zh": "你這麼快又要準備了？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I want to try it.",
+      "phonetic": "/aɪ wɑnt tə traɪ ɪt./",
+      "zh": "我想繼續挑戰看看。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Level two opens next month.",
+      "phonetic": "/ˈlɛvəl tu ˈoʊpəns nɛkst mʌnθ./",
+      "zh": "第二級下個月才開課。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is it much harder?",
+      "phonetic": "/ɪz ɪt mʌtʃ ˈhɑrdɚ?/",
+      "zh": "那個會難很多嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Longer talks, more homework.",
+      "phonetic": "/ˈlɔŋɡɚ tɔks, mɔr ˈhoʊmˌwɜrk./",
+      "zh": "影片更長、作業更多。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Same teacher, right?",
+      "phonetic": "/seɪm ˈtitʃɚ, raɪt?/",
+      "zh": "老師是同一位吧？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Anna teaches that one too.",
+      "phonetic": "/ˈænə ˈtitʃəz ðæt wʌn tu./",
+      "zh": "安娜也教那一門課。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do past students get a deal?",
+      "phonetic": "/du pæst ˈstudənts ɡɛt ə dil?/",
+      "zh": "舊學員報下一級有優惠嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, ten percent off.",
+      "phonetic": "/jɛs, tɛn pɚˈsɛnt ɔf./",
+      "zh": "有，可以再打九折。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I'll sign up early.",
+      "phonetic": "/aɪl saɪn ʌp ˈɜrli./",
+      "zh": "我要儘早報名。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Seats fill up fast.",
+      "phonetic": "/sits fɪl ʌp fæst./",
+      "zh": "名額一下子就滿了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Their page has a guarantee.",
+      "phonetic": "/ðɛr peɪdʒ hæz ə ˌɡærənˈti./",
+      "zh": "他們頁面寫著有保障。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What does it say?",
+      "phonetic": "/wʌt dʌz ɪt seɪ?/",
+      "zh": "上面具體怎麼寫？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Fifteen days, money back.",
+      "phonetic": "/ˌfɪfˈtin deɪz, ˈmʌni bæk./",
+      "zh": "十五天內可以退費。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So you can test it safely.",
+      "phonetic": "/soʊ ju kæn tɛst ɪt ˈseɪfli./",
+      "zh": "那就可以安心試學。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What if I don't like it?",
+      "phonetic": "/wʌt ɪf aɪ doʊnt laɪk ɪt?/",
+      "zh": "如果我讀不下來呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ask for a refund online.",
+      "phonetic": "/æsk fɚ ə ˈrifʌnd ˌɑnˈlaɪn./",
+      "zh": "在線上申請退款就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are refunds fast?",
+      "phonetic": "/ɑr ˈrifʌnds fæst?/",
+      "zh": "退款處理得快嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Money returns in a week.",
+      "phonetic": "/ˈmʌni rɪˈtɜnz ɪn ə wik./",
+      "zh": "一個禮拜錢就會回來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do they ask why?",
+      "phonetic": "/du ðeɪ æsk waɪ?/",
+      "zh": "他們會問原因嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just one short survey.",
+      "phonetic": "/dʒʌst wʌn ʃɔrt sɚˈveɪ./",
+      "zh": "只填一份很短的問卷。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That policy feels honest.",
+      "phonetic": "/ðæt ˈpɑləsi filz ˈɑnəst./",
+      "zh": "這個政策感覺很誠實。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So there's no risk.",
+      "phonetic": "/soʊ ðɛrz noʊ rɪsk./",
+      "zh": "所以報名完全沒風險。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My notes are everywhere.",
+      "phonetic": "/maɪ noʊts ɑr ˈɛvriˌwɛr./",
+      "zh": "我的筆記四處亂放。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Time to tidy up.",
+      "phonetic": "/taɪm tə ˈtaɪdi ʌp./",
+      "zh": "是該好好整理一下了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I'll make one review folder.",
+      "phonetic": "/aɪl meɪk wʌn rɪˈvju ˈfoʊldɚ./",
+      "zh": "我建一個複習資料夾。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sort it by week.",
+      "phonetic": "/sɔrt ɪt baɪ wik./",
+      "zh": "照每週的順序分類。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "New words need a list.",
+      "phonetic": "/nu wɜrdz nid ə lɪst./",
+      "zh": "新學的詞要有清單。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try twenty words a week.",
+      "phonetic": "/traɪ ˈtwɛnti wɜrdz ə wik./",
+      "zh": "一週複習二十個剛好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I'll add an example to each.",
+      "phonetic": "/aɪl æd æn ɪɡˈzæmpəl tə itʃ./",
+      "zh": "每個詞配上一個例句。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sentences beat single words.",
+      "phonetic": "/ˈsɛntənsəz bit ˈsɪŋɡəl wɜrdz./",
+      "zh": "整句比單獨的詞好記。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I review on Sundays?",
+      "phonetic": "/ʃʊd aɪ rɪˈvju ɑn ˈsʌnˌdeɪz?/",
+      "zh": "我該在週日復習嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, one hour weekly.",
+      "phonetic": "/jɛs, wʌn ˈaʊər ˈwikli./",
+      "zh": "對，每週固定一小時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Re-reading helps a little.",
+      "phonetic": "/ri ˈridɪŋ hɛlpz ə ˈlɪtəl./",
+      "zh": "重讀筆記有一點幫助。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Now use the words aloud.",
+      "phonetic": "/naʊ juz ðə wɜrdz əˈlaʊd./",
+      "zh": "還要大聲用這些詞。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I'll practice with friends.",
+      "phonetic": "/aɪl ˈpræktɪs wɪð frɛndz./",
+      "zh": "我要找朋友一起練。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Practice makes it stick.",
+      "phonetic": "/ˈpræktɪs meɪks ɪt stɪk./",
+      "zh": "多用幾次就會記住。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hmm, my plan sounds simple now.",
+      "phonetic": "/hʌm, maɪ plæn saʊndz ˈsɪmpəl naʊ./",
+      "zh": "嗯，我的計畫現在聽起來很簡單。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Watch, repeat, then use.",
+      "phonetic": "/wɑtʃ, rɪˈpit, ðɛn juz./",
+      "zh": "看、跟著念、然後用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Fifteen minutes every evening.",
+      "phonetic": "/ˌfɪfˈtin ˈmɪnəts ˈɛvri ˈivnɪŋ./",
+      "zh": "每天晚上只要十五分鐘。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Small habits win.",
+      "phonetic": "/smɔl ˈhæbɪts wɪn./",
+      "zh": "小習慣最能持續。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I'll keep checking in.",
+      "phonetic": "/aɪl kip ˈtʃɛkɪŋ ɪn./",
+      "zh": "我會每天繼續打卡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Don't break the chain.",
+      "phonetic": "/doʊnt breɪk ðə tʃen./",
+      "zh": "別讓連續紀錄斷掉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Learning online really works.",
+      "phonetic": "/ˈlɜrnɪŋ ˌɑnˈlaɪn ˈrɪli wɜrks./",
+      "zh": "線上學習真的有用。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You proved it yourself.",
+      "phonetic": "/ju pruvd ɪt jʊrˈsɛlf./",
+      "zh": "這是你自己證明的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I'm a different listener now.",
+      "phonetic": "/aɪm ə ˈdɪfərənt ˈlɪsənɚ naʊ./",
+      "zh": "我現在聽力完全不同了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Do podcasts feel easier?",
+      "phonetic": "/du ˈpɑdkæsts fil ˈizɪɚ?/",
+      "zh": "聽播客覺得輕鬆些了嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, I got the main idea.",
+      "phonetic": "/jɛs, aɪ ɡɑt ðə meɪn aɪˈdiə./",
+      "zh": "有，我聽到重點了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's real progress.",
+      "phonetic": "/ðæts ril ˈprɑɡrəs./",
+      "zh": "那就是真正的進步。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for all the tips.",
+      "phonetic": "/θæŋks fɔr ɔl ðə tɪps./",
+      "zh": "謝謝你給的所有建議。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Anytime, see you there.",
+      "phonetic": "/ˈɛniˌtaɪm, si ju ðɛr./",
+      "zh": "不客氣，到時見。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Next month we start again.",
+      "phonetic": "/nɛkst mʌnθ wi stɑrt əˈɡɛn./",
+      "zh": "下個月我們再一起開始。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'll save you a seat.",
+      "phonetic": "/aɪl seɪv ju ə sit./",
+      "zh": "我會幫你留一個位置。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Same time, same place.",
+      "phonetic": "/seɪm taɪm, seɪm pleɪs./",
+      "zh": "一樣的時間、地點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same cozy bedtime English.",
+      "phonetic": "/seɪm ˈkoʊzi ˈbɛdˌtaɪm ˈɪŋɡlɪʃ./",
+      "zh": "一樣舒服的睡前英文。"
+    }
+  ]
+}

@@ -1,0 +1,2458 @@
+{
+  "title": "Everyday Phrases — Watching a Movie",
+  "title_zh": "看電影",
+  "scene_zh": "看電影 · 情境對話",
+  "title_quote": "Let's watch a movie.",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】🎬 實用看電影必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — Watching a Movie",
+  "youtube_description": "睡著學英文！這部影片收錄實用看電影情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫），不用背，睡前聽就會。重複播放，讓英文自然進入你的大腦。👍 想學更多生活場景，請留言告訴我！別忘了訂閱+按讚。 #英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical Watching a Movie phrase pairs (each pair: male normal speed → female slow speed → combined dialogue). No memorization needed—just listen before bed and absorb naturally. If you want more real-life scenarios, leave a comment! Subscribe and like!",
+  "youtube_tags": [
+    "英文聽力",
+    "睡前英文",
+    "看電影英文",
+    "English listening",
+    "Sleep learning",
+    "A2 English",
+    "常用英文短語",
+    "零基礎英文",
+    "慢速英文",
+    "英文口語",
+    "Learn English",
+    "English for daily life",
+    "ESL",
+    "English conversation",
+    "聽英語",
+    "英文學習"
+  ],
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "Watching a Movie",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "Watching a Movie",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Entertainment",
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "Let's watch a movie.",
+      "phonetic": "/lɛts wɔʧ ə ˈmuvi./",
+      "zh": "看電影吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Which one, though?",
+      "phonetic": "/wɪʧ wən, ðoʊ?/",
+      "zh": "哪一部？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The comedy is good.",
+      "phonetic": "/ðə ˈkɑmədi ɪz gʊd./",
+      "zh": "喜劇不錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Light, after work.",
+      "phonetic": "/laɪt, ˈæftər wərk./",
+      "zh": "下班輕鬆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The seats are center.",
+      "phonetic": "/ðə sits ər ˈsɛnər./",
+      "zh": "座位中間。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Best sound, yes.",
+      "phonetic": "/bɛst saʊnd, jɛs./",
+      "zh": "聲音最好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The trailer looked great.",
+      "phonetic": "/ðə ˈtreɪlər lʊkt greɪt./",
+      "zh": "預告很棒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "High hopes, then.",
+      "phonetic": "/haɪ hoʊps, ðɛn./",
+      "zh": "期待。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The line is long.",
+      "phonetic": "/ðə laɪn ɪz lɔŋ./",
+      "zh": "隊伍長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Buy online, next.",
+      "phonetic": "/baɪ ˈɔnˌlaɪn, nɛkst./",
+      "zh": "下次線上買。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The popcorn is ready.",
+      "phonetic": "/ðə ˈpɑpˌkɔrn ɪz ˈrɛdi./",
+      "zh": "爆米花好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Extra butter, please.",
+      "phonetic": "/ˈɛkstrə ˈbətər, pliz./",
+      "zh": "多奶油。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lights dimmed.",
+      "phonetic": "/ðə laɪts dɪmd./",
+      "zh": "燈暗了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It begins, shh.",
+      "phonetic": "/ɪt bɪˈgɪnz, shh*./",
+      "zh": "開始，噓。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The plot is twisty.",
+      "phonetic": "/ðə plɑt ɪz tˈwɪsti./",
+      "zh": "劇情反轉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Did not see it.",
+      "phonetic": "/dɪd nɑt si ɪt./",
+      "zh": "沒想到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The hero won, finally.",
+      "phonetic": "/ðə ˈhɪroʊ wən, ˈfaɪnəli./",
+      "zh": "主角終於贏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Took a while.",
+      "phonetic": "/tʊk ə waɪl./",
+      "zh": "很久。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The ending was sad.",
+      "phonetic": "/ðə ˈɛndɪŋ wɑz sæd./",
+      "zh": "結局傷感。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Grabbed the tissue.",
+      "phonetic": "/græbd ðə ˈtɪʃu./",
+      "zh": "拿紙巾。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kid laughed.",
+      "phonetic": "/ðə kɪd læft./",
+      "zh": "孩子笑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Funny part, yes.",
+      "phonetic": "/ˈfəni pɑrt, jɛs./",
+      "zh": "好笑段。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The phone, silence.",
+      "phonetic": "/ðə foʊn, ˈsaɪləns./",
+      "zh": "手機靜音。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Respect the room.",
+      "phonetic": "/rɪˈspɛkt ðə rum./",
+      "zh": "尊重戲院。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The subtitle helps.",
+      "phonetic": "/ðə ˈsəbˌtaɪtəl hɛlps./",
+      "zh": "字幕有用。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the accent.",
+      "phonetic": "/fər ðə ˈækˌsɛnt./",
+      "zh": "聽口音。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The scene is tense.",
+      "phonetic": "/ðə sin ɪz tɛns./",
+      "zh": "場景緊張。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Held my breath.",
+      "phonetic": "/hɛld maɪ brɛθ./",
+      "zh": "屏息。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The volume is loud.",
+      "phonetic": "/ðə ˈvɑljum ɪz laʊd./",
+      "zh": "聲音大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lower it, please.",
+      "phonetic": "/loʊər ɪt, pliz./",
+      "zh": "調小。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The actor is known.",
+      "phonetic": "/ðə ˈæktər ɪz noʊn./",
+      "zh": "演員有名。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Won the award.",
+      "phonetic": "/wən ðə əˈwɔrd./",
+      "zh": "得過獎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The movie is long.",
+      "phonetic": "/ðə ˈmuvi ɪz lɔŋ./",
+      "zh": "電影長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Intermission, maybe.",
+      "phonetic": "/ˌɪntərˈmɪʃən, ˈmeɪbi./",
+      "zh": "中場？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The couch is comfy.",
+      "phonetic": "/ðə kaʊʧ ɪz ˈkəmfi./",
+      "zh": "沙發舒服。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Home watch, nice.",
+      "phonetic": "/hoʊm wɔʧ, nis./",
+      "zh": "在家看贊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The disc is scratched.",
+      "phonetic": "/ðə dɪsk ɪz skræʧt./",
+      "zh": "光碟刮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Skips a bit.",
+      "phonetic": "/skɪps ə bɪt./",
+      "zh": "跳一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The review was right.",
+      "phonetic": "/ðə ˌrivˈju wɑz raɪt./",
+      "zh": "評價正確。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Five stars, yes.",
+      "phonetic": "/faɪv stɑrz, jɛs./",
+      "zh": "五星。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The villain fell.",
+      "phonetic": "/ðə ˈvɪlən fɛl./",
+      "zh": "反派倒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Justice, at last.",
+      "phonetic": "/ˈʤəstɪs, æt læst./",
+      "zh": "正義。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song is catchy.",
+      "phonetic": "/ðə sɔŋ ɪz ˈkæˌʧi./",
+      "zh": "歌洗腦。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hummed it, yes.",
+      "phonetic": "/hummed* ɪt, jɛs./",
+      "zh": "哼了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The credit rolled.",
+      "phonetic": "/ðə ˈkrɛdɪt roʊld./",
+      "zh": "放名單。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stay for end?",
+      "phonetic": "/steɪ fər ɛnd?/",
+      "zh": "留到尾？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The twist shocked.",
+      "phonetic": "/ðə twɪst ʃɑkt./",
+      "zh": "反轉嚇。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rewatch, needed.",
+      "phonetic": "/rewatch*, ˈnidɪd./",
+      "zh": "需重看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The snack is gone.",
+      "phonetic": "/ðə snæk ɪz gɔn./",
+      "zh": "零食沒了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Refill the bowl.",
+      "phonetic": "/ˈrifɪl ðə boʊl./",
+      "zh": "補碗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The film is subtitled.",
+      "phonetic": "/ðə fɪlm ɪz ˈsəbˌtaɪtəld./",
+      "zh": "電影有字幕。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Read along, yes.",
+      "phonetic": "/rɛd əˈlɔŋ, jɛs./",
+      "zh": "跟看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The genre is sci-fi.",
+      "phonetic": "/ðə ˈʒɑnrə ɪz ˌsaɪˈfaɪ./",
+      "zh": "科幻類。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Loved it, yes.",
+      "phonetic": "/ləvd ɪt, jɛs./",
+      "zh": "愛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The date night pick.",
+      "phonetic": "/ðə deɪt naɪt pɪk./",
+      "zh": "約會選片。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Romance, then.",
+      "phonetic": "/ˈroʊmæns, ðɛn./",
+      "zh": "愛情。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The laugh was loud.",
+      "phonetic": "/ðə læf wɑz laʊd./",
+      "zh": "笑出聲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quiet, please.",
+      "phonetic": "/kwaɪət, pliz./",
+      "zh": "小聲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The movie ended.",
+      "phonetic": "/ðə ˈmuvi ˈɛndɪd./",
+      "zh": "電影結束。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Talk it over.",
+      "phonetic": "/tɔk ɪt ˈoʊvər./",
+      "zh": "聊聊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rating is high.",
+      "phonetic": "/ðə ˈreɪtɪŋ ɪz haɪ./",
+      "zh": "評分高。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Worth the time.",
+      "phonetic": "/wərθ ðə taɪm./",
+      "zh": "值得。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sequel is set.",
+      "phonetic": "/ðə ˈsikwəl ɪz sɛt./",
+      "zh": "續集定了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mark the day.",
+      "phonetic": "/mɑrk ðə deɪ./",
+      "zh": "記日。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the film.",
+      "phonetic": "/θæŋks fər ðə fɪlm./",
+      "zh": "謝謝電影。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great pick, pal.",
+      "phonetic": "/greɪt pɪk, pæl./",
+      "zh": "選得好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the film.",
+      "phonetic": "/θæŋks fər ðə fɪlm./",
+      "zh": "謝謝電影。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great pick, pal.",
+      "phonetic": "/greɪt pɪk, pæl./",
+      "zh": "選得好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sequel is set.",
+      "phonetic": "/ðə ˈsikwəl ɪz sɛt./",
+      "zh": "續集定了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mark the day.",
+      "phonetic": "/mɑrk ðə deɪ./",
+      "zh": "記日。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rating is high.",
+      "phonetic": "/ðə ˈreɪtɪŋ ɪz haɪ./",
+      "zh": "評分高。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Worth the time.",
+      "phonetic": "/wərθ ðə taɪm./",
+      "zh": "值得。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The movie ended.",
+      "phonetic": "/ðə ˈmuvi ˈɛndɪd./",
+      "zh": "電影結束。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Talk it over.",
+      "phonetic": "/tɔk ɪt ˈoʊvər./",
+      "zh": "聊聊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The laugh was loud.",
+      "phonetic": "/ðə læf wɑz laʊd./",
+      "zh": "笑出聲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quiet, please.",
+      "phonetic": "/kwaɪət, pliz./",
+      "zh": "小聲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The date night pick.",
+      "phonetic": "/ðə deɪt naɪt pɪk./",
+      "zh": "約會選片。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Romance, then.",
+      "phonetic": "/ˈroʊmæns, ðɛn./",
+      "zh": "愛情。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The genre is sci-fi.",
+      "phonetic": "/ðə ˈʒɑnrə ɪz ˌsaɪˈfaɪ./",
+      "zh": "科幻類。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Loved it, yes.",
+      "phonetic": "/ləvd ɪt, jɛs./",
+      "zh": "愛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The film is subtitled.",
+      "phonetic": "/ðə fɪlm ɪz ˈsəbˌtaɪtəld./",
+      "zh": "電影有字幕。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Read along, yes.",
+      "phonetic": "/rɛd əˈlɔŋ, jɛs./",
+      "zh": "跟看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The snack is gone.",
+      "phonetic": "/ðə snæk ɪz gɔn./",
+      "zh": "零食沒了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Refill the bowl.",
+      "phonetic": "/ˈrifɪl ðə boʊl./",
+      "zh": "補碗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The twist shocked.",
+      "phonetic": "/ðə twɪst ʃɑkt./",
+      "zh": "反轉嚇。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rewatch, needed.",
+      "phonetic": "/rewatch*, ˈnidɪd./",
+      "zh": "需重看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The credit rolled.",
+      "phonetic": "/ðə ˈkrɛdɪt roʊld./",
+      "zh": "放名單。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stay for end?",
+      "phonetic": "/steɪ fər ɛnd?/",
+      "zh": "留到尾？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song is catchy.",
+      "phonetic": "/ðə sɔŋ ɪz ˈkæˌʧi./",
+      "zh": "歌洗腦。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hummed it, yes.",
+      "phonetic": "/hummed* ɪt, jɛs./",
+      "zh": "哼了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The villain fell.",
+      "phonetic": "/ðə ˈvɪlən fɛl./",
+      "zh": "反派倒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Justice, at last.",
+      "phonetic": "/ˈʤəstɪs, æt læst./",
+      "zh": "正義。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The review was right.",
+      "phonetic": "/ðə ˌrivˈju wɑz raɪt./",
+      "zh": "評價正確。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Five stars, yes.",
+      "phonetic": "/faɪv stɑrz, jɛs./",
+      "zh": "五星。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The disc is scratched.",
+      "phonetic": "/ðə dɪsk ɪz skræʧt./",
+      "zh": "光碟刮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Skips a bit.",
+      "phonetic": "/skɪps ə bɪt./",
+      "zh": "跳一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The couch is comfy.",
+      "phonetic": "/ðə kaʊʧ ɪz ˈkəmfi./",
+      "zh": "沙發舒服。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Home watch, nice.",
+      "phonetic": "/hoʊm wɔʧ, nis./",
+      "zh": "在家看贊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The movie is long.",
+      "phonetic": "/ðə ˈmuvi ɪz lɔŋ./",
+      "zh": "電影長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Intermission, maybe.",
+      "phonetic": "/ˌɪntərˈmɪʃən, ˈmeɪbi./",
+      "zh": "中場？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The actor is known.",
+      "phonetic": "/ðə ˈæktər ɪz noʊn./",
+      "zh": "演員有名。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Won the award.",
+      "phonetic": "/wən ðə əˈwɔrd./",
+      "zh": "得過獎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The volume is loud.",
+      "phonetic": "/ðə ˈvɑljum ɪz laʊd./",
+      "zh": "聲音大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lower it, please.",
+      "phonetic": "/loʊər ɪt, pliz./",
+      "zh": "調小。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The scene is tense.",
+      "phonetic": "/ðə sin ɪz tɛns./",
+      "zh": "場景緊張。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Held my breath.",
+      "phonetic": "/hɛld maɪ brɛθ./",
+      "zh": "屏息。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The subtitle helps.",
+      "phonetic": "/ðə ˈsəbˌtaɪtəl hɛlps./",
+      "zh": "字幕有用。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the accent.",
+      "phonetic": "/fər ðə ˈækˌsɛnt./",
+      "zh": "聽口音。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The phone, silence.",
+      "phonetic": "/ðə foʊn, ˈsaɪləns./",
+      "zh": "手機靜音。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Respect the room.",
+      "phonetic": "/rɪˈspɛkt ðə rum./",
+      "zh": "尊重戲院。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kid laughed.",
+      "phonetic": "/ðə kɪd læft./",
+      "zh": "孩子笑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Funny part, yes.",
+      "phonetic": "/ˈfəni pɑrt, jɛs./",
+      "zh": "好笑段。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The ending was sad.",
+      "phonetic": "/ðə ˈɛndɪŋ wɑz sæd./",
+      "zh": "結局傷感。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Grabbed the tissue.",
+      "phonetic": "/græbd ðə ˈtɪʃu./",
+      "zh": "拿紙巾。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The hero won, finally.",
+      "phonetic": "/ðə ˈhɪroʊ wən, ˈfaɪnəli./",
+      "zh": "主角終於贏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Took a while.",
+      "phonetic": "/tʊk ə waɪl./",
+      "zh": "很久。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The plot is twisty.",
+      "phonetic": "/ðə plɑt ɪz tˈwɪsti./",
+      "zh": "劇情反轉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Did not see it.",
+      "phonetic": "/dɪd nɑt si ɪt./",
+      "zh": "沒想到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lights dimmed.",
+      "phonetic": "/ðə laɪts dɪmd./",
+      "zh": "燈暗了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It begins, shh.",
+      "phonetic": "/ɪt bɪˈgɪnz, shh*./",
+      "zh": "開始，噓。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The popcorn is ready.",
+      "phonetic": "/ðə ˈpɑpˌkɔrn ɪz ˈrɛdi./",
+      "zh": "爆米花好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Extra butter, please.",
+      "phonetic": "/ˈɛkstrə ˈbətər, pliz./",
+      "zh": "多奶油。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The line is long.",
+      "phonetic": "/ðə laɪn ɪz lɔŋ./",
+      "zh": "隊伍長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Buy online, next.",
+      "phonetic": "/baɪ ˈɔnˌlaɪn, nɛkst./",
+      "zh": "下次線上買。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The trailer looked great.",
+      "phonetic": "/ðə ˈtreɪlər lʊkt greɪt./",
+      "zh": "預告很棒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "High hopes, then.",
+      "phonetic": "/haɪ hoʊps, ðɛn./",
+      "zh": "期待。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The seats are center.",
+      "phonetic": "/ðə sits ər ˈsɛnər./",
+      "zh": "座位中間。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Best sound, yes.",
+      "phonetic": "/bɛst saʊnd, jɛs./",
+      "zh": "聲音最好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The comedy is good.",
+      "phonetic": "/ðə ˈkɑmədi ɪz gʊd./",
+      "zh": "喜劇不錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Light, after work.",
+      "phonetic": "/laɪt, ˈæftər wərk./",
+      "zh": "下班輕鬆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's watch a movie.",
+      "phonetic": "/lɛts wɔʧ ə ˈmuvi./",
+      "zh": "看電影吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Which one, though?",
+      "phonetic": "/wɪʧ wən, ðoʊ?/",
+      "zh": "哪一部？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's watch a movie.",
+      "phonetic": "/lɛts wɔʧ ə ˈmuvi./",
+      "zh": "看電影吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Which one, though?",
+      "phonetic": "/wɪʧ wən, ðoʊ?/",
+      "zh": "哪一部？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The comedy is good.",
+      "phonetic": "/ðə ˈkɑmədi ɪz gʊd./",
+      "zh": "喜劇不錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Light, after work.",
+      "phonetic": "/laɪt, ˈæftər wərk./",
+      "zh": "下班輕鬆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The seats are center.",
+      "phonetic": "/ðə sits ər ˈsɛnər./",
+      "zh": "座位中間。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Best sound, yes.",
+      "phonetic": "/bɛst saʊnd, jɛs./",
+      "zh": "聲音最好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The trailer looked great.",
+      "phonetic": "/ðə ˈtreɪlər lʊkt greɪt./",
+      "zh": "預告很棒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "High hopes, then.",
+      "phonetic": "/haɪ hoʊps, ðɛn./",
+      "zh": "期待。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The line is long.",
+      "phonetic": "/ðə laɪn ɪz lɔŋ./",
+      "zh": "隊伍長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Buy online, next.",
+      "phonetic": "/baɪ ˈɔnˌlaɪn, nɛkst./",
+      "zh": "下次線上買。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The popcorn is ready.",
+      "phonetic": "/ðə ˈpɑpˌkɔrn ɪz ˈrɛdi./",
+      "zh": "爆米花好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Extra butter, please.",
+      "phonetic": "/ˈɛkstrə ˈbətər, pliz./",
+      "zh": "多奶油。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lights dimmed.",
+      "phonetic": "/ðə laɪts dɪmd./",
+      "zh": "燈暗了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It begins, shh.",
+      "phonetic": "/ɪt bɪˈgɪnz, shh*./",
+      "zh": "開始，噓。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The plot is twisty.",
+      "phonetic": "/ðə plɑt ɪz tˈwɪsti./",
+      "zh": "劇情反轉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Did not see it.",
+      "phonetic": "/dɪd nɑt si ɪt./",
+      "zh": "沒想到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The hero won, finally.",
+      "phonetic": "/ðə ˈhɪroʊ wən, ˈfaɪnəli./",
+      "zh": "主角終於贏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Took a while.",
+      "phonetic": "/tʊk ə waɪl./",
+      "zh": "很久。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The ending was sad.",
+      "phonetic": "/ðə ˈɛndɪŋ wɑz sæd./",
+      "zh": "結局傷感。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Grabbed the tissue.",
+      "phonetic": "/græbd ðə ˈtɪʃu./",
+      "zh": "拿紙巾。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kid laughed.",
+      "phonetic": "/ðə kɪd læft./",
+      "zh": "孩子笑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Funny part, yes.",
+      "phonetic": "/ˈfəni pɑrt, jɛs./",
+      "zh": "好笑段。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The phone, silence.",
+      "phonetic": "/ðə foʊn, ˈsaɪləns./",
+      "zh": "手機靜音。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Respect the room.",
+      "phonetic": "/rɪˈspɛkt ðə rum./",
+      "zh": "尊重戲院。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The subtitle helps.",
+      "phonetic": "/ðə ˈsəbˌtaɪtəl hɛlps./",
+      "zh": "字幕有用。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the accent.",
+      "phonetic": "/fər ðə ˈækˌsɛnt./",
+      "zh": "聽口音。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The scene is tense.",
+      "phonetic": "/ðə sin ɪz tɛns./",
+      "zh": "場景緊張。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Held my breath.",
+      "phonetic": "/hɛld maɪ brɛθ./",
+      "zh": "屏息。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The volume is loud.",
+      "phonetic": "/ðə ˈvɑljum ɪz laʊd./",
+      "zh": "聲音大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lower it, please.",
+      "phonetic": "/loʊər ɪt, pliz./",
+      "zh": "調小。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The actor is known.",
+      "phonetic": "/ðə ˈæktər ɪz noʊn./",
+      "zh": "演員有名。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Won the award.",
+      "phonetic": "/wən ðə əˈwɔrd./",
+      "zh": "得過獎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The movie is long.",
+      "phonetic": "/ðə ˈmuvi ɪz lɔŋ./",
+      "zh": "電影長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Intermission, maybe.",
+      "phonetic": "/ˌɪntərˈmɪʃən, ˈmeɪbi./",
+      "zh": "中場？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The couch is comfy.",
+      "phonetic": "/ðə kaʊʧ ɪz ˈkəmfi./",
+      "zh": "沙發舒服。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Home watch, nice.",
+      "phonetic": "/hoʊm wɔʧ, nis./",
+      "zh": "在家看贊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The disc is scratched.",
+      "phonetic": "/ðə dɪsk ɪz skræʧt./",
+      "zh": "光碟刮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Skips a bit.",
+      "phonetic": "/skɪps ə bɪt./",
+      "zh": "跳一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The review was right.",
+      "phonetic": "/ðə ˌrivˈju wɑz raɪt./",
+      "zh": "評價正確。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Five stars, yes.",
+      "phonetic": "/faɪv stɑrz, jɛs./",
+      "zh": "五星。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The villain fell.",
+      "phonetic": "/ðə ˈvɪlən fɛl./",
+      "zh": "反派倒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Justice, at last.",
+      "phonetic": "/ˈʤəstɪs, æt læst./",
+      "zh": "正義。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song is catchy.",
+      "phonetic": "/ðə sɔŋ ɪz ˈkæˌʧi./",
+      "zh": "歌洗腦。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hummed it, yes.",
+      "phonetic": "/hummed* ɪt, jɛs./",
+      "zh": "哼了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The credit rolled.",
+      "phonetic": "/ðə ˈkrɛdɪt roʊld./",
+      "zh": "放名單。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stay for end?",
+      "phonetic": "/steɪ fər ɛnd?/",
+      "zh": "留到尾？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The twist shocked.",
+      "phonetic": "/ðə twɪst ʃɑkt./",
+      "zh": "反轉嚇。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rewatch, needed.",
+      "phonetic": "/rewatch*, ˈnidɪd./",
+      "zh": "需重看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The snack is gone.",
+      "phonetic": "/ðə snæk ɪz gɔn./",
+      "zh": "零食沒了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Refill the bowl.",
+      "phonetic": "/ˈrifɪl ðə boʊl./",
+      "zh": "補碗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The film is subtitled.",
+      "phonetic": "/ðə fɪlm ɪz ˈsəbˌtaɪtəld./",
+      "zh": "電影有字幕。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Read along, yes.",
+      "phonetic": "/rɛd əˈlɔŋ, jɛs./",
+      "zh": "跟看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The genre is sci-fi.",
+      "phonetic": "/ðə ˈʒɑnrə ɪz ˌsaɪˈfaɪ./",
+      "zh": "科幻類。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Loved it, yes.",
+      "phonetic": "/ləvd ɪt, jɛs./",
+      "zh": "愛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The date night pick.",
+      "phonetic": "/ðə deɪt naɪt pɪk./",
+      "zh": "約會選片。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Romance, then.",
+      "phonetic": "/ˈroʊmæns, ðɛn./",
+      "zh": "愛情。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The laugh was loud.",
+      "phonetic": "/ðə læf wɑz laʊd./",
+      "zh": "笑出聲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quiet, please.",
+      "phonetic": "/kwaɪət, pliz./",
+      "zh": "小聲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The movie ended.",
+      "phonetic": "/ðə ˈmuvi ˈɛndɪd./",
+      "zh": "電影結束。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Talk it over.",
+      "phonetic": "/tɔk ɪt ˈoʊvər./",
+      "zh": "聊聊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rating is high.",
+      "phonetic": "/ðə ˈreɪtɪŋ ɪz haɪ./",
+      "zh": "評分高。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Worth the time.",
+      "phonetic": "/wərθ ðə taɪm./",
+      "zh": "值得。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sequel is set.",
+      "phonetic": "/ðə ˈsikwəl ɪz sɛt./",
+      "zh": "續集定了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mark the day.",
+      "phonetic": "/mɑrk ðə deɪ./",
+      "zh": "記日。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the film.",
+      "phonetic": "/θæŋks fər ðə fɪlm./",
+      "zh": "謝謝電影。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great pick, pal.",
+      "phonetic": "/greɪt pɪk, pæl./",
+      "zh": "選得好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the film.",
+      "phonetic": "/θæŋks fər ðə fɪlm./",
+      "zh": "謝謝電影。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great pick, pal.",
+      "phonetic": "/greɪt pɪk, pæl./",
+      "zh": "選得好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sequel is set.",
+      "phonetic": "/ðə ˈsikwəl ɪz sɛt./",
+      "zh": "續集定了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mark the day.",
+      "phonetic": "/mɑrk ðə deɪ./",
+      "zh": "記日。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rating is high.",
+      "phonetic": "/ðə ˈreɪtɪŋ ɪz haɪ./",
+      "zh": "評分高。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Worth the time.",
+      "phonetic": "/wərθ ðə taɪm./",
+      "zh": "值得。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The movie ended.",
+      "phonetic": "/ðə ˈmuvi ˈɛndɪd./",
+      "zh": "電影結束。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Talk it over.",
+      "phonetic": "/tɔk ɪt ˈoʊvər./",
+      "zh": "聊聊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The laugh was loud.",
+      "phonetic": "/ðə læf wɑz laʊd./",
+      "zh": "笑出聲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quiet, please.",
+      "phonetic": "/kwaɪət, pliz./",
+      "zh": "小聲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The date night pick.",
+      "phonetic": "/ðə deɪt naɪt pɪk./",
+      "zh": "約會選片。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Romance, then.",
+      "phonetic": "/ˈroʊmæns, ðɛn./",
+      "zh": "愛情。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The genre is sci-fi.",
+      "phonetic": "/ðə ˈʒɑnrə ɪz ˌsaɪˈfaɪ./",
+      "zh": "科幻類。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Loved it, yes.",
+      "phonetic": "/ləvd ɪt, jɛs./",
+      "zh": "愛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The film is subtitled.",
+      "phonetic": "/ðə fɪlm ɪz ˈsəbˌtaɪtəld./",
+      "zh": "電影有字幕。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Read along, yes.",
+      "phonetic": "/rɛd əˈlɔŋ, jɛs./",
+      "zh": "跟看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The snack is gone.",
+      "phonetic": "/ðə snæk ɪz gɔn./",
+      "zh": "零食沒了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Refill the bowl.",
+      "phonetic": "/ˈrifɪl ðə boʊl./",
+      "zh": "補碗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The twist shocked.",
+      "phonetic": "/ðə twɪst ʃɑkt./",
+      "zh": "反轉嚇。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rewatch, needed.",
+      "phonetic": "/rewatch*, ˈnidɪd./",
+      "zh": "需重看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The credit rolled.",
+      "phonetic": "/ðə ˈkrɛdɪt roʊld./",
+      "zh": "放名單。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stay for end?",
+      "phonetic": "/steɪ fər ɛnd?/",
+      "zh": "留到尾？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song is catchy.",
+      "phonetic": "/ðə sɔŋ ɪz ˈkæˌʧi./",
+      "zh": "歌洗腦。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hummed it, yes.",
+      "phonetic": "/hummed* ɪt, jɛs./",
+      "zh": "哼了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The villain fell.",
+      "phonetic": "/ðə ˈvɪlən fɛl./",
+      "zh": "反派倒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Justice, at last.",
+      "phonetic": "/ˈʤəstɪs, æt læst./",
+      "zh": "正義。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The review was right.",
+      "phonetic": "/ðə ˌrivˈju wɑz raɪt./",
+      "zh": "評價正確。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Five stars, yes.",
+      "phonetic": "/faɪv stɑrz, jɛs./",
+      "zh": "五星。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The disc is scratched.",
+      "phonetic": "/ðə dɪsk ɪz skræʧt./",
+      "zh": "光碟刮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Skips a bit.",
+      "phonetic": "/skɪps ə bɪt./",
+      "zh": "跳一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The couch is comfy.",
+      "phonetic": "/ðə kaʊʧ ɪz ˈkəmfi./",
+      "zh": "沙發舒服。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Home watch, nice.",
+      "phonetic": "/hoʊm wɔʧ, nis./",
+      "zh": "在家看贊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The movie is long.",
+      "phonetic": "/ðə ˈmuvi ɪz lɔŋ./",
+      "zh": "電影長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Intermission, maybe.",
+      "phonetic": "/ˌɪntərˈmɪʃən, ˈmeɪbi./",
+      "zh": "中場？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The actor is known.",
+      "phonetic": "/ðə ˈæktər ɪz noʊn./",
+      "zh": "演員有名。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Won the award.",
+      "phonetic": "/wən ðə əˈwɔrd./",
+      "zh": "得過獎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The volume is loud.",
+      "phonetic": "/ðə ˈvɑljum ɪz laʊd./",
+      "zh": "聲音大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lower it, please.",
+      "phonetic": "/loʊər ɪt, pliz./",
+      "zh": "調小。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The scene is tense.",
+      "phonetic": "/ðə sin ɪz tɛns./",
+      "zh": "場景緊張。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Held my breath.",
+      "phonetic": "/hɛld maɪ brɛθ./",
+      "zh": "屏息。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The subtitle helps.",
+      "phonetic": "/ðə ˈsəbˌtaɪtəl hɛlps./",
+      "zh": "字幕有用。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the accent.",
+      "phonetic": "/fər ðə ˈækˌsɛnt./",
+      "zh": "聽口音。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The phone, silence.",
+      "phonetic": "/ðə foʊn, ˈsaɪləns./",
+      "zh": "手機靜音。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Respect the room.",
+      "phonetic": "/rɪˈspɛkt ðə rum./",
+      "zh": "尊重戲院。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kid laughed.",
+      "phonetic": "/ðə kɪd læft./",
+      "zh": "孩子笑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Funny part, yes.",
+      "phonetic": "/ˈfəni pɑrt, jɛs./",
+      "zh": "好笑段。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The ending was sad.",
+      "phonetic": "/ðə ˈɛndɪŋ wɑz sæd./",
+      "zh": "結局傷感。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Grabbed the tissue.",
+      "phonetic": "/græbd ðə ˈtɪʃu./",
+      "zh": "拿紙巾。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The hero won, finally.",
+      "phonetic": "/ðə ˈhɪroʊ wən, ˈfaɪnəli./",
+      "zh": "主角終於贏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Took a while.",
+      "phonetic": "/tʊk ə waɪl./",
+      "zh": "很久。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The plot is twisty.",
+      "phonetic": "/ðə plɑt ɪz tˈwɪsti./",
+      "zh": "劇情反轉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Did not see it.",
+      "phonetic": "/dɪd nɑt si ɪt./",
+      "zh": "沒想到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lights dimmed.",
+      "phonetic": "/ðə laɪts dɪmd./",
+      "zh": "燈暗了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It begins, shh.",
+      "phonetic": "/ɪt bɪˈgɪnz, shh*./",
+      "zh": "開始，噓。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The popcorn is ready.",
+      "phonetic": "/ðə ˈpɑpˌkɔrn ɪz ˈrɛdi./",
+      "zh": "爆米花好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Extra butter, please.",
+      "phonetic": "/ˈɛkstrə ˈbətər, pliz./",
+      "zh": "多奶油。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The line is long.",
+      "phonetic": "/ðə laɪn ɪz lɔŋ./",
+      "zh": "隊伍長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Buy online, next.",
+      "phonetic": "/baɪ ˈɔnˌlaɪn, nɛkst./",
+      "zh": "下次線上買。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The trailer looked great.",
+      "phonetic": "/ðə ˈtreɪlər lʊkt greɪt./",
+      "zh": "預告很棒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "High hopes, then.",
+      "phonetic": "/haɪ hoʊps, ðɛn./",
+      "zh": "期待。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The seats are center.",
+      "phonetic": "/ðə sits ər ˈsɛnər./",
+      "zh": "座位中間。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Best sound, yes.",
+      "phonetic": "/bɛst saʊnd, jɛs./",
+      "zh": "聲音最好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The comedy is good.",
+      "phonetic": "/ðə ˈkɑmədi ɪz gʊd./",
+      "zh": "喜劇不錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Light, after work.",
+      "phonetic": "/laɪt, ˈæftər wərk./",
+      "zh": "下班輕鬆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's watch a movie.",
+      "phonetic": "/lɛts wɔʧ ə ˈmuvi./",
+      "zh": "看電影吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Which one, though?",
+      "phonetic": "/wɪʧ wən, ðoʊ?/",
+      "zh": "哪一部？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's watch a movie.",
+      "phonetic": "/lɛts wɔʧ ə ˈmuvi./",
+      "zh": "看電影吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Which one, though?",
+      "phonetic": "/wɪʧ wən, ðoʊ?/",
+      "zh": "哪一部？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The comedy is good.",
+      "phonetic": "/ðə ˈkɑmədi ɪz gʊd./",
+      "zh": "喜劇不錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Light, after work.",
+      "phonetic": "/laɪt, ˈæftər wərk./",
+      "zh": "下班輕鬆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The seats are center.",
+      "phonetic": "/ðə sits ər ˈsɛnər./",
+      "zh": "座位中間。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Best sound, yes.",
+      "phonetic": "/bɛst saʊnd, jɛs./",
+      "zh": "聲音最好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The trailer looked great.",
+      "phonetic": "/ðə ˈtreɪlər lʊkt greɪt./",
+      "zh": "預告很棒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "High hopes, then.",
+      "phonetic": "/haɪ hoʊps, ðɛn./",
+      "zh": "期待。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The line is long.",
+      "phonetic": "/ðə laɪn ɪz lɔŋ./",
+      "zh": "隊伍長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Buy online, next.",
+      "phonetic": "/baɪ ˈɔnˌlaɪn, nɛkst./",
+      "zh": "下次線上買。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The popcorn is ready.",
+      "phonetic": "/ðə ˈpɑpˌkɔrn ɪz ˈrɛdi./",
+      "zh": "爆米花好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Extra butter, please.",
+      "phonetic": "/ˈɛkstrə ˈbətər, pliz./",
+      "zh": "多奶油。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lights dimmed.",
+      "phonetic": "/ðə laɪts dɪmd./",
+      "zh": "燈暗了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It begins, shh.",
+      "phonetic": "/ɪt bɪˈgɪnz, shh*./",
+      "zh": "開始，噓。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The plot is twisty.",
+      "phonetic": "/ðə plɑt ɪz tˈwɪsti./",
+      "zh": "劇情反轉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Did not see it.",
+      "phonetic": "/dɪd nɑt si ɪt./",
+      "zh": "沒想到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The hero won, finally.",
+      "phonetic": "/ðə ˈhɪroʊ wən, ˈfaɪnəli./",
+      "zh": "主角終於贏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Took a while.",
+      "phonetic": "/tʊk ə waɪl./",
+      "zh": "很久。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The ending was sad.",
+      "phonetic": "/ðə ˈɛndɪŋ wɑz sæd./",
+      "zh": "結局傷感。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Grabbed the tissue.",
+      "phonetic": "/græbd ðə ˈtɪʃu./",
+      "zh": "拿紙巾。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kid laughed.",
+      "phonetic": "/ðə kɪd læft./",
+      "zh": "孩子笑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Funny part, yes.",
+      "phonetic": "/ˈfəni pɑrt, jɛs./",
+      "zh": "好笑段。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The phone, silence.",
+      "phonetic": "/ðə foʊn, ˈsaɪləns./",
+      "zh": "手機靜音。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Respect the room.",
+      "phonetic": "/rɪˈspɛkt ðə rum./",
+      "zh": "尊重戲院。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The subtitle helps.",
+      "phonetic": "/ðə ˈsəbˌtaɪtəl hɛlps./",
+      "zh": "字幕有用。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the accent.",
+      "phonetic": "/fər ðə ˈækˌsɛnt./",
+      "zh": "聽口音。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The scene is tense.",
+      "phonetic": "/ðə sin ɪz tɛns./",
+      "zh": "場景緊張。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Held my breath.",
+      "phonetic": "/hɛld maɪ brɛθ./",
+      "zh": "屏息。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The volume is loud.",
+      "phonetic": "/ðə ˈvɑljum ɪz laʊd./",
+      "zh": "聲音大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lower it, please.",
+      "phonetic": "/loʊər ɪt, pliz./",
+      "zh": "調小。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The actor is known.",
+      "phonetic": "/ðə ˈæktər ɪz noʊn./",
+      "zh": "演員有名。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Won the award.",
+      "phonetic": "/wən ðə əˈwɔrd./",
+      "zh": "得過獎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The movie is long.",
+      "phonetic": "/ðə ˈmuvi ɪz lɔŋ./",
+      "zh": "電影長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Intermission, maybe.",
+      "phonetic": "/ˌɪntərˈmɪʃən, ˈmeɪbi./",
+      "zh": "中場？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The couch is comfy.",
+      "phonetic": "/ðə kaʊʧ ɪz ˈkəmfi./",
+      "zh": "沙發舒服。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Home watch, nice.",
+      "phonetic": "/hoʊm wɔʧ, nis./",
+      "zh": "在家看贊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The disc is scratched.",
+      "phonetic": "/ðə dɪsk ɪz skræʧt./",
+      "zh": "光碟刮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Skips a bit.",
+      "phonetic": "/skɪps ə bɪt./",
+      "zh": "跳一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The review was right.",
+      "phonetic": "/ðə ˌrivˈju wɑz raɪt./",
+      "zh": "評價正確。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Five stars, yes.",
+      "phonetic": "/faɪv stɑrz, jɛs./",
+      "zh": "五星。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The villain fell.",
+      "phonetic": "/ðə ˈvɪlən fɛl./",
+      "zh": "反派倒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Justice, at last.",
+      "phonetic": "/ˈʤəstɪs, æt læst./",
+      "zh": "正義。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song is catchy.",
+      "phonetic": "/ðə sɔŋ ɪz ˈkæˌʧi./",
+      "zh": "歌洗腦。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hummed it, yes.",
+      "phonetic": "/hummed* ɪt, jɛs./",
+      "zh": "哼了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The credit rolled.",
+      "phonetic": "/ðə ˈkrɛdɪt roʊld./",
+      "zh": "放名單。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stay for end?",
+      "phonetic": "/steɪ fər ɛnd?/",
+      "zh": "留到尾？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The twist shocked.",
+      "phonetic": "/ðə twɪst ʃɑkt./",
+      "zh": "反轉嚇。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rewatch, needed.",
+      "phonetic": "/rewatch*, ˈnidɪd./",
+      "zh": "需重看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The snack is gone.",
+      "phonetic": "/ðə snæk ɪz gɔn./",
+      "zh": "零食沒了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Refill the bowl.",
+      "phonetic": "/ˈrifɪl ðə boʊl./",
+      "zh": "補碗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The film is subtitled.",
+      "phonetic": "/ðə fɪlm ɪz ˈsəbˌtaɪtəld./",
+      "zh": "電影有字幕。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Read along, yes.",
+      "phonetic": "/rɛd əˈlɔŋ, jɛs./",
+      "zh": "跟看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The genre is sci-fi.",
+      "phonetic": "/ðə ˈʒɑnrə ɪz ˌsaɪˈfaɪ./",
+      "zh": "科幻類。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Loved it, yes.",
+      "phonetic": "/ləvd ɪt, jɛs./",
+      "zh": "愛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The date night pick.",
+      "phonetic": "/ðə deɪt naɪt pɪk./",
+      "zh": "約會選片。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Romance, then.",
+      "phonetic": "/ˈroʊmæns, ðɛn./",
+      "zh": "愛情。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The laugh was loud.",
+      "phonetic": "/ðə læf wɑz laʊd./",
+      "zh": "笑出聲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quiet, please.",
+      "phonetic": "/kwaɪət, pliz./",
+      "zh": "小聲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The movie ended.",
+      "phonetic": "/ðə ˈmuvi ˈɛndɪd./",
+      "zh": "電影結束。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Talk it over.",
+      "phonetic": "/tɔk ɪt ˈoʊvər./",
+      "zh": "聊聊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rating is high.",
+      "phonetic": "/ðə ˈreɪtɪŋ ɪz haɪ./",
+      "zh": "評分高。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Worth the time.",
+      "phonetic": "/wərθ ðə taɪm./",
+      "zh": "值得。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sequel is set.",
+      "phonetic": "/ðə ˈsikwəl ɪz sɛt./",
+      "zh": "續集定了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mark the day.",
+      "phonetic": "/mɑrk ðə deɪ./",
+      "zh": "記日。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the film.",
+      "phonetic": "/θæŋks fər ðə fɪlm./",
+      "zh": "謝謝電影。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great pick, pal.",
+      "phonetic": "/greɪt pɪk, pæl./",
+      "zh": "選得好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the film.",
+      "phonetic": "/θæŋks fər ðə fɪlm./",
+      "zh": "謝謝電影。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great pick, pal.",
+      "phonetic": "/greɪt pɪk, pæl./",
+      "zh": "選得好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sequel is set.",
+      "phonetic": "/ðə ˈsikwəl ɪz sɛt./",
+      "zh": "續集定了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mark the day.",
+      "phonetic": "/mɑrk ðə deɪ./",
+      "zh": "記日。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rating is high.",
+      "phonetic": "/ðə ˈreɪtɪŋ ɪz haɪ./",
+      "zh": "評分高。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Worth the time.",
+      "phonetic": "/wərθ ðə taɪm./",
+      "zh": "值得。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The movie ended.",
+      "phonetic": "/ðə ˈmuvi ˈɛndɪd./",
+      "zh": "電影結束。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Talk it over.",
+      "phonetic": "/tɔk ɪt ˈoʊvər./",
+      "zh": "聊聊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The laugh was loud.",
+      "phonetic": "/ðə læf wɑz laʊd./",
+      "zh": "笑出聲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quiet, please.",
+      "phonetic": "/kwaɪət, pliz./",
+      "zh": "小聲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The date night pick.",
+      "phonetic": "/ðə deɪt naɪt pɪk./",
+      "zh": "約會選片。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Romance, then.",
+      "phonetic": "/ˈroʊmæns, ðɛn./",
+      "zh": "愛情。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The genre is sci-fi.",
+      "phonetic": "/ðə ˈʒɑnrə ɪz ˌsaɪˈfaɪ./",
+      "zh": "科幻類。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Loved it, yes.",
+      "phonetic": "/ləvd ɪt, jɛs./",
+      "zh": "愛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The film is subtitled.",
+      "phonetic": "/ðə fɪlm ɪz ˈsəbˌtaɪtəld./",
+      "zh": "電影有字幕。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Read along, yes.",
+      "phonetic": "/rɛd əˈlɔŋ, jɛs./",
+      "zh": "跟看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The snack is gone.",
+      "phonetic": "/ðə snæk ɪz gɔn./",
+      "zh": "零食沒了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Refill the bowl.",
+      "phonetic": "/ˈrifɪl ðə boʊl./",
+      "zh": "補碗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The twist shocked.",
+      "phonetic": "/ðə twɪst ʃɑkt./",
+      "zh": "反轉嚇。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rewatch, needed.",
+      "phonetic": "/rewatch*, ˈnidɪd./",
+      "zh": "需重看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The credit rolled.",
+      "phonetic": "/ðə ˈkrɛdɪt roʊld./",
+      "zh": "放名單。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stay for end?",
+      "phonetic": "/steɪ fər ɛnd?/",
+      "zh": "留到尾？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song is catchy.",
+      "phonetic": "/ðə sɔŋ ɪz ˈkæˌʧi./",
+      "zh": "歌洗腦。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hummed it, yes.",
+      "phonetic": "/hummed* ɪt, jɛs./",
+      "zh": "哼了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The villain fell.",
+      "phonetic": "/ðə ˈvɪlən fɛl./",
+      "zh": "反派倒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Justice, at last.",
+      "phonetic": "/ˈʤəstɪs, æt læst./",
+      "zh": "正義。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The review was right.",
+      "phonetic": "/ðə ˌrivˈju wɑz raɪt./",
+      "zh": "評價正確。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Five stars, yes.",
+      "phonetic": "/faɪv stɑrz, jɛs./",
+      "zh": "五星。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The disc is scratched.",
+      "phonetic": "/ðə dɪsk ɪz skræʧt./",
+      "zh": "光碟刮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Skips a bit.",
+      "phonetic": "/skɪps ə bɪt./",
+      "zh": "跳一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The couch is comfy.",
+      "phonetic": "/ðə kaʊʧ ɪz ˈkəmfi./",
+      "zh": "沙發舒服。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Home watch, nice.",
+      "phonetic": "/hoʊm wɔʧ, nis./",
+      "zh": "在家看贊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The movie is long.",
+      "phonetic": "/ðə ˈmuvi ɪz lɔŋ./",
+      "zh": "電影長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Intermission, maybe.",
+      "phonetic": "/ˌɪntərˈmɪʃən, ˈmeɪbi./",
+      "zh": "中場？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The actor is known.",
+      "phonetic": "/ðə ˈæktər ɪz noʊn./",
+      "zh": "演員有名。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Won the award.",
+      "phonetic": "/wən ðə əˈwɔrd./",
+      "zh": "得過獎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The volume is loud.",
+      "phonetic": "/ðə ˈvɑljum ɪz laʊd./",
+      "zh": "聲音大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lower it, please.",
+      "phonetic": "/loʊər ɪt, pliz./",
+      "zh": "調小。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The scene is tense.",
+      "phonetic": "/ðə sin ɪz tɛns./",
+      "zh": "場景緊張。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Held my breath.",
+      "phonetic": "/hɛld maɪ brɛθ./",
+      "zh": "屏息。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The subtitle helps.",
+      "phonetic": "/ðə ˈsəbˌtaɪtəl hɛlps./",
+      "zh": "字幕有用。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the accent.",
+      "phonetic": "/fər ðə ˈækˌsɛnt./",
+      "zh": "聽口音。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The phone, silence.",
+      "phonetic": "/ðə foʊn, ˈsaɪləns./",
+      "zh": "手機靜音。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Respect the room.",
+      "phonetic": "/rɪˈspɛkt ðə rum./",
+      "zh": "尊重戲院。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kid laughed.",
+      "phonetic": "/ðə kɪd læft./",
+      "zh": "孩子笑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Funny part, yes.",
+      "phonetic": "/ˈfəni pɑrt, jɛs./",
+      "zh": "好笑段。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The ending was sad.",
+      "phonetic": "/ðə ˈɛndɪŋ wɑz sæd./",
+      "zh": "結局傷感。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Grabbed the tissue.",
+      "phonetic": "/græbd ðə ˈtɪʃu./",
+      "zh": "拿紙巾。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The hero won, finally.",
+      "phonetic": "/ðə ˈhɪroʊ wən, ˈfaɪnəli./",
+      "zh": "主角終於贏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Took a while.",
+      "phonetic": "/tʊk ə waɪl./",
+      "zh": "很久。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The plot is twisty.",
+      "phonetic": "/ðə plɑt ɪz tˈwɪsti./",
+      "zh": "劇情反轉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Did not see it.",
+      "phonetic": "/dɪd nɑt si ɪt./",
+      "zh": "沒想到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lights dimmed.",
+      "phonetic": "/ðə laɪts dɪmd./",
+      "zh": "燈暗了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It begins, shh.",
+      "phonetic": "/ɪt bɪˈgɪnz, shh*./",
+      "zh": "開始，噓。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The popcorn is ready.",
+      "phonetic": "/ðə ˈpɑpˌkɔrn ɪz ˈrɛdi./",
+      "zh": "爆米花好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Extra butter, please.",
+      "phonetic": "/ˈɛkstrə ˈbətər, pliz./",
+      "zh": "多奶油。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The line is long.",
+      "phonetic": "/ðə laɪn ɪz lɔŋ./",
+      "zh": "隊伍長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Buy online, next.",
+      "phonetic": "/baɪ ˈɔnˌlaɪn, nɛkst./",
+      "zh": "下次線上買。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The trailer looked great.",
+      "phonetic": "/ðə ˈtreɪlər lʊkt greɪt./",
+      "zh": "預告很棒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "High hopes, then.",
+      "phonetic": "/haɪ hoʊps, ðɛn./",
+      "zh": "期待。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The seats are center.",
+      "phonetic": "/ðə sits ər ˈsɛnər./",
+      "zh": "座位中間。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Best sound, yes.",
+      "phonetic": "/bɛst saʊnd, jɛs./",
+      "zh": "聲音最好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The comedy is good.",
+      "phonetic": "/ðə ˈkɑmədi ɪz gʊd./",
+      "zh": "喜劇不錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Light, after work.",
+      "phonetic": "/laɪt, ˈæftər wərk./",
+      "zh": "下班輕鬆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's watch a movie.",
+      "phonetic": "/lɛts wɔʧ ə ˈmuvi./",
+      "zh": "看電影吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Which one, though?",
+      "phonetic": "/wɪʧ wən, ðoʊ?/",
+      "zh": "哪一部？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's watch a movie.",
+      "phonetic": "/lɛts wɔʧ ə ˈmuvi./",
+      "zh": "看電影吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Which one, though?",
+      "phonetic": "/wɪʧ wən, ðoʊ?/",
+      "zh": "哪一部？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The comedy is good.",
+      "phonetic": "/ðə ˈkɑmədi ɪz gʊd./",
+      "zh": "喜劇不錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Light, after work.",
+      "phonetic": "/laɪt, ˈæftər wərk./",
+      "zh": "下班輕鬆。"
+    }
+  ]
+}

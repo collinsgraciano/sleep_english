@@ -1,0 +1,2458 @@
+{
+  "title": "Everyday Phrases — Asking for Help",
+  "title_zh": "求助",
+  "scene_zh": "求助 · 情境對話",
+  "title_quote": "Can you help me?",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】🙋 實用求助必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — Asking for Help",
+  "youtube_description": "睡著學英文！這部影片收錄實用求助情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫），不用背，睡前聽就會。重複播放，讓英文自然進入你的大腦。👍 想學更多生活場景，請留言告訴我！別忘了訂閱+按讚。 #英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical Asking for Help phrase pairs (each pair: male normal speed → female slow speed → combined dialogue). No memorization needed—just listen before bed and absorb naturally. If you want more real-life scenarios, leave a comment! Subscribe and like!",
+  "youtube_tags": [
+    "英文聽力",
+    "睡前英文",
+    "求助英文",
+    "English listening",
+    "Sleep learning",
+    "A2 English",
+    "常用英文短語",
+    "零基礎英文",
+    "慢速英文",
+    "英文口語",
+    "Learn English",
+    "English for daily life",
+    "ESL",
+    "English conversation",
+    "聽英語",
+    "英文學習"
+  ],
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "Asking for Help",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "Asking for Help",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Work",
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "Can you help me?",
+      "phonetic": "/kən ju hɛlp mi?/",
+      "zh": "能幫我嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, what is up?",
+      "phonetic": "/ʃʊr, wət ɪz əp?/",
+      "zh": "好，怎麼了？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am stuck on this.",
+      "phonetic": "/aɪ æm stək ɔn ðɪs./",
+      "zh": "我卡在這。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Show me the part.",
+      "phonetic": "/ʃoʊ mi ðə pɑrt./",
+      "zh": "指給我看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The code will not run.",
+      "phonetic": "/ðə koʊd wɪl nɑt rən./",
+      "zh": "程式跑不起來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let me see the error.",
+      "phonetic": "/lɛt mi si ðə ˈɛrər./",
+      "zh": "我看錯誤。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you hold this?",
+      "phonetic": "/kən ju hoʊld ðɪs?/",
+      "zh": "能幫我拿嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For a second, yes.",
+      "phonetic": "/fər ə ˈsɛkənd, jɛs./",
+      "zh": "拿一下，好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I need a hand.",
+      "phonetic": "/aɪ nid ə hænd./",
+      "zh": "我需要幫忙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I am free now.",
+      "phonetic": "/aɪ æm fri naʊ./",
+      "zh": "我現在有空。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you know the fix?",
+      "phonetic": "/du ju noʊ ðə fɪks?/",
+      "zh": "你知道解法嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try restarting.",
+      "phonetic": "/traɪ riˈstɑrtɪŋ./",
+      "zh": "重開試試。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The box is heavy.",
+      "phonetic": "/ðə bɑks ɪz ˈhɛvi./",
+      "zh": "箱子很重。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We lift together.",
+      "phonetic": "/wi lɪft təˈgɛðər./",
+      "zh": "一起抬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you explain this?",
+      "phonetic": "/kən ju ɪkˈspleɪn ðɪs?/",
+      "zh": "能解釋這個嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Step by step, sure.",
+      "phonetic": "/stɛp baɪ stɛp, ʃʊr./",
+      "zh": "一步步，好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I forgot how to do it.",
+      "phonetic": "/aɪ fərˈgɑt haʊ tɪ du ɪt./",
+      "zh": "我忘怎麼做了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will demo.",
+      "phonetic": "/aɪ wɪl ˈdɛmoʊ./",
+      "zh": "我示範。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The door is stuck.",
+      "phonetic": "/ðə dɔr ɪz stək./",
+      "zh": "門卡住了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Push harder.",
+      "phonetic": "/pʊʃ ˈhɑrdər./",
+      "zh": "用力推。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Call someone, please.",
+      "phonetic": "/kɔl ˈsəmˌwən, pliz./",
+      "zh": "請叫人。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the phone now.",
+      "phonetic": "/ɔn ðə foʊn naʊ./",
+      "zh": "正在打。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am lost here.",
+      "phonetic": "/aɪ æm lɔst hir./",
+      "zh": "我迷路了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Follow me, please.",
+      "phonetic": "/ˈfɑloʊ mi, pliz./",
+      "zh": "跟我。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you translate?",
+      "phonetic": "/kən ju trænzˈleɪt?/",
+      "zh": "能翻譯嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What language?",
+      "phonetic": "/wət ˈlæŋgwɪʤ?/",
+      "zh": "哪種語言？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The light blew out.",
+      "phonetic": "/ðə laɪt blu aʊt./",
+      "zh": "燈燒壞了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will replace it.",
+      "phonetic": "/aɪ wɪl ˌriˈpleɪs ɪt./",
+      "zh": "我換。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Help me carry this.",
+      "phonetic": "/hɛlp mi ˈkɛri ðɪs./",
+      "zh": "幫我搬這個。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "To the car?",
+      "phonetic": "/tɪ ðə kɑr?/",
+      "zh": "搬到車上？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I can't reach it.",
+      "phonetic": "/aɪ kænt riʧ ɪt./",
+      "zh": "我夠不到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I am taller, wait.",
+      "phonetic": "/aɪ æm ˈtɔlər, weɪt./",
+      "zh": "我高，等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have a minute?",
+      "phonetic": "/du ju hæv ə ˈmɪnət?/",
+      "zh": "有空嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For you, always.",
+      "phonetic": "/fər ju, ˈɔlˌweɪz./",
+      "zh": "爲你，隨時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sink is leaking.",
+      "phonetic": "/ðə sɪŋk ɪz ˈlikɪŋ./",
+      "zh": "水槽漏水。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Shut the valve.",
+      "phonetic": "/ʃət ðə vælv./",
+      "zh": "關閥門。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you spell it?",
+      "phonetic": "/kən ju spɛl ɪt?/",
+      "zh": "能拼嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "B as in boy.",
+      "phonetic": "/bi ɛz ɪn bɔɪ./",
+      "zh": "B 像 boy。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I need advice.",
+      "phonetic": "/aɪ nid ədˈvaɪs./",
+      "zh": "我需要建議。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Happy to listen.",
+      "phonetic": "/ˈhæpi tɪ ˈlɪsən./",
+      "zh": "樂意聽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The Wi-Fi is dead.",
+      "phonetic": "/ðə ˈwaɪˌfaɪ ɪz dɛd./",
+      "zh": "無線死了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Reboot the router.",
+      "phonetic": "/riˈbut ðə ˈrutər./",
+      "zh": "重啓分享器。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Lend me a pen?",
+      "phonetic": "/lɛnd mi ə pɛn?/",
+      "zh": "借支筆？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here you are.",
+      "phonetic": "/hir ju ər./",
+      "zh": "給你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you watch this?",
+      "phonetic": "/kən ju wɔʧ ðɪs?/",
+      "zh": "能看一下嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Go ahead, quick.",
+      "phonetic": "/goʊ əˈhɛd, kwɪk./",
+      "zh": "去吧，快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I made a mistake.",
+      "phonetic": "/aɪ meɪd ə mɪˈsteɪk./",
+      "zh": "我犯錯了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can fix it.",
+      "phonetic": "/wi kən fɪks ɪt./",
+      "zh": "能修。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The screen is frozen.",
+      "phonetic": "/ðə skrin ɪz ˈfroʊzən./",
+      "zh": "畫面卡住。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Force quit it.",
+      "phonetic": "/fɔrs kwɪt ɪt./",
+      "zh": "強制結束。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Open this for me.",
+      "phonetic": "/ˈoʊpən ðɪs fər mi./",
+      "zh": "幫我開這個。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stuck lid, yes.",
+      "phonetic": "/stək lɪd, jɛs./",
+      "zh": "蓋卡住。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The stair is slippery.",
+      "phonetic": "/ðə stɛr ɪz sˈlɪpəri./",
+      "zh": "樓梯滑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold the rail.",
+      "phonetic": "/hoʊld ðə reɪl./",
+      "zh": "扶扶手。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you check my work?",
+      "phonetic": "/kən ju ʧɛk maɪ wərk?/",
+      "zh": "能看我的工作嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Glad to.",
+      "phonetic": "/glæd tɪ./",
+      "zh": "樂意。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am running late.",
+      "phonetic": "/aɪ æm ˈrənɪŋ leɪt./",
+      "zh": "我快遲到了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will cover you.",
+      "phonetic": "/aɪ wɪl ˈkəvər ju./",
+      "zh": "我幫你頂。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cart is jammed.",
+      "phonetic": "/ðə kɑrt ɪz ʤæmd./",
+      "zh": "推車卡住。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wiggle it free.",
+      "phonetic": "/ˈwɪgəl ɪt fri./",
+      "zh": "搖松。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the help.",
+      "phonetic": "/θæŋks fər ðə hɛlp./",
+      "zh": "謝謝幫忙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Anytime, friend.",
+      "phonetic": "/ˈɛniˌtaɪm, frɛnd./",
+      "zh": "隨時，朋友。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You saved me.",
+      "phonetic": "/ju seɪvd mi./",
+      "zh": "你救了我。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is what we do.",
+      "phonetic": "/ðət ɪz wət wi du./",
+      "zh": "應該的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Next time, I help you.",
+      "phonetic": "/nɛkst taɪm, aɪ hɛlp ju./",
+      "zh": "下次我幫你。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Deal, partner.",
+      "phonetic": "/dil, ˈpɑrtnər./",
+      "zh": "說定，搭檔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Next time, I help you.",
+      "phonetic": "/nɛkst taɪm, aɪ hɛlp ju./",
+      "zh": "下次我幫你。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Deal, partner.",
+      "phonetic": "/dil, ˈpɑrtnər./",
+      "zh": "說定，搭檔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You saved me.",
+      "phonetic": "/ju seɪvd mi./",
+      "zh": "你救了我。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is what we do.",
+      "phonetic": "/ðət ɪz wət wi du./",
+      "zh": "應該的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the help.",
+      "phonetic": "/θæŋks fər ðə hɛlp./",
+      "zh": "謝謝幫忙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Anytime, friend.",
+      "phonetic": "/ˈɛniˌtaɪm, frɛnd./",
+      "zh": "隨時，朋友。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cart is jammed.",
+      "phonetic": "/ðə kɑrt ɪz ʤæmd./",
+      "zh": "推車卡住。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wiggle it free.",
+      "phonetic": "/ˈwɪgəl ɪt fri./",
+      "zh": "搖松。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am running late.",
+      "phonetic": "/aɪ æm ˈrənɪŋ leɪt./",
+      "zh": "我快遲到了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will cover you.",
+      "phonetic": "/aɪ wɪl ˈkəvər ju./",
+      "zh": "我幫你頂。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you check my work?",
+      "phonetic": "/kən ju ʧɛk maɪ wərk?/",
+      "zh": "能看我的工作嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Glad to.",
+      "phonetic": "/glæd tɪ./",
+      "zh": "樂意。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The stair is slippery.",
+      "phonetic": "/ðə stɛr ɪz sˈlɪpəri./",
+      "zh": "樓梯滑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold the rail.",
+      "phonetic": "/hoʊld ðə reɪl./",
+      "zh": "扶扶手。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Open this for me.",
+      "phonetic": "/ˈoʊpən ðɪs fər mi./",
+      "zh": "幫我開這個。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stuck lid, yes.",
+      "phonetic": "/stək lɪd, jɛs./",
+      "zh": "蓋卡住。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The screen is frozen.",
+      "phonetic": "/ðə skrin ɪz ˈfroʊzən./",
+      "zh": "畫面卡住。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Force quit it.",
+      "phonetic": "/fɔrs kwɪt ɪt./",
+      "zh": "強制結束。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I made a mistake.",
+      "phonetic": "/aɪ meɪd ə mɪˈsteɪk./",
+      "zh": "我犯錯了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can fix it.",
+      "phonetic": "/wi kən fɪks ɪt./",
+      "zh": "能修。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you watch this?",
+      "phonetic": "/kən ju wɔʧ ðɪs?/",
+      "zh": "能看一下嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Go ahead, quick.",
+      "phonetic": "/goʊ əˈhɛd, kwɪk./",
+      "zh": "去吧，快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Lend me a pen?",
+      "phonetic": "/lɛnd mi ə pɛn?/",
+      "zh": "借支筆？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here you are.",
+      "phonetic": "/hir ju ər./",
+      "zh": "給你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The Wi-Fi is dead.",
+      "phonetic": "/ðə ˈwaɪˌfaɪ ɪz dɛd./",
+      "zh": "無線死了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Reboot the router.",
+      "phonetic": "/riˈbut ðə ˈrutər./",
+      "zh": "重啓分享器。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I need advice.",
+      "phonetic": "/aɪ nid ədˈvaɪs./",
+      "zh": "我需要建議。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Happy to listen.",
+      "phonetic": "/ˈhæpi tɪ ˈlɪsən./",
+      "zh": "樂意聽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you spell it?",
+      "phonetic": "/kən ju spɛl ɪt?/",
+      "zh": "能拼嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "B as in boy.",
+      "phonetic": "/bi ɛz ɪn bɔɪ./",
+      "zh": "B 像 boy。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sink is leaking.",
+      "phonetic": "/ðə sɪŋk ɪz ˈlikɪŋ./",
+      "zh": "水槽漏水。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Shut the valve.",
+      "phonetic": "/ʃət ðə vælv./",
+      "zh": "關閥門。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have a minute?",
+      "phonetic": "/du ju hæv ə ˈmɪnət?/",
+      "zh": "有空嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For you, always.",
+      "phonetic": "/fər ju, ˈɔlˌweɪz./",
+      "zh": "爲你，隨時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I can't reach it.",
+      "phonetic": "/aɪ kænt riʧ ɪt./",
+      "zh": "我夠不到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I am taller, wait.",
+      "phonetic": "/aɪ æm ˈtɔlər, weɪt./",
+      "zh": "我高，等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Help me carry this.",
+      "phonetic": "/hɛlp mi ˈkɛri ðɪs./",
+      "zh": "幫我搬這個。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "To the car?",
+      "phonetic": "/tɪ ðə kɑr?/",
+      "zh": "搬到車上？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The light blew out.",
+      "phonetic": "/ðə laɪt blu aʊt./",
+      "zh": "燈燒壞了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will replace it.",
+      "phonetic": "/aɪ wɪl ˌriˈpleɪs ɪt./",
+      "zh": "我換。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you translate?",
+      "phonetic": "/kən ju trænzˈleɪt?/",
+      "zh": "能翻譯嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What language?",
+      "phonetic": "/wət ˈlæŋgwɪʤ?/",
+      "zh": "哪種語言？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am lost here.",
+      "phonetic": "/aɪ æm lɔst hir./",
+      "zh": "我迷路了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Follow me, please.",
+      "phonetic": "/ˈfɑloʊ mi, pliz./",
+      "zh": "跟我。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Call someone, please.",
+      "phonetic": "/kɔl ˈsəmˌwən, pliz./",
+      "zh": "請叫人。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the phone now.",
+      "phonetic": "/ɔn ðə foʊn naʊ./",
+      "zh": "正在打。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The door is stuck.",
+      "phonetic": "/ðə dɔr ɪz stək./",
+      "zh": "門卡住了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Push harder.",
+      "phonetic": "/pʊʃ ˈhɑrdər./",
+      "zh": "用力推。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I forgot how to do it.",
+      "phonetic": "/aɪ fərˈgɑt haʊ tɪ du ɪt./",
+      "zh": "我忘怎麼做了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will demo.",
+      "phonetic": "/aɪ wɪl ˈdɛmoʊ./",
+      "zh": "我示範。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you explain this?",
+      "phonetic": "/kən ju ɪkˈspleɪn ðɪs?/",
+      "zh": "能解釋這個嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Step by step, sure.",
+      "phonetic": "/stɛp baɪ stɛp, ʃʊr./",
+      "zh": "一步步，好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The box is heavy.",
+      "phonetic": "/ðə bɑks ɪz ˈhɛvi./",
+      "zh": "箱子很重。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We lift together.",
+      "phonetic": "/wi lɪft təˈgɛðər./",
+      "zh": "一起抬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you know the fix?",
+      "phonetic": "/du ju noʊ ðə fɪks?/",
+      "zh": "你知道解法嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try restarting.",
+      "phonetic": "/traɪ riˈstɑrtɪŋ./",
+      "zh": "重開試試。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I need a hand.",
+      "phonetic": "/aɪ nid ə hænd./",
+      "zh": "我需要幫忙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I am free now.",
+      "phonetic": "/aɪ æm fri naʊ./",
+      "zh": "我現在有空。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you hold this?",
+      "phonetic": "/kən ju hoʊld ðɪs?/",
+      "zh": "能幫我拿嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For a second, yes.",
+      "phonetic": "/fər ə ˈsɛkənd, jɛs./",
+      "zh": "拿一下，好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The code will not run.",
+      "phonetic": "/ðə koʊd wɪl nɑt rən./",
+      "zh": "程式跑不起來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let me see the error.",
+      "phonetic": "/lɛt mi si ðə ˈɛrər./",
+      "zh": "我看錯誤。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am stuck on this.",
+      "phonetic": "/aɪ æm stək ɔn ðɪs./",
+      "zh": "我卡在這。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Show me the part.",
+      "phonetic": "/ʃoʊ mi ðə pɑrt./",
+      "zh": "指給我看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you help me?",
+      "phonetic": "/kən ju hɛlp mi?/",
+      "zh": "能幫我嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, what is up?",
+      "phonetic": "/ʃʊr, wət ɪz əp?/",
+      "zh": "好，怎麼了？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you help me?",
+      "phonetic": "/kən ju hɛlp mi?/",
+      "zh": "能幫我嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, what is up?",
+      "phonetic": "/ʃʊr, wət ɪz əp?/",
+      "zh": "好，怎麼了？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am stuck on this.",
+      "phonetic": "/aɪ æm stək ɔn ðɪs./",
+      "zh": "我卡在這。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Show me the part.",
+      "phonetic": "/ʃoʊ mi ðə pɑrt./",
+      "zh": "指給我看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The code will not run.",
+      "phonetic": "/ðə koʊd wɪl nɑt rən./",
+      "zh": "程式跑不起來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let me see the error.",
+      "phonetic": "/lɛt mi si ðə ˈɛrər./",
+      "zh": "我看錯誤。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you hold this?",
+      "phonetic": "/kən ju hoʊld ðɪs?/",
+      "zh": "能幫我拿嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For a second, yes.",
+      "phonetic": "/fər ə ˈsɛkənd, jɛs./",
+      "zh": "拿一下，好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I need a hand.",
+      "phonetic": "/aɪ nid ə hænd./",
+      "zh": "我需要幫忙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I am free now.",
+      "phonetic": "/aɪ æm fri naʊ./",
+      "zh": "我現在有空。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you know the fix?",
+      "phonetic": "/du ju noʊ ðə fɪks?/",
+      "zh": "你知道解法嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try restarting.",
+      "phonetic": "/traɪ riˈstɑrtɪŋ./",
+      "zh": "重開試試。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The box is heavy.",
+      "phonetic": "/ðə bɑks ɪz ˈhɛvi./",
+      "zh": "箱子很重。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We lift together.",
+      "phonetic": "/wi lɪft təˈgɛðər./",
+      "zh": "一起抬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you explain this?",
+      "phonetic": "/kən ju ɪkˈspleɪn ðɪs?/",
+      "zh": "能解釋這個嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Step by step, sure.",
+      "phonetic": "/stɛp baɪ stɛp, ʃʊr./",
+      "zh": "一步步，好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I forgot how to do it.",
+      "phonetic": "/aɪ fərˈgɑt haʊ tɪ du ɪt./",
+      "zh": "我忘怎麼做了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will demo.",
+      "phonetic": "/aɪ wɪl ˈdɛmoʊ./",
+      "zh": "我示範。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The door is stuck.",
+      "phonetic": "/ðə dɔr ɪz stək./",
+      "zh": "門卡住了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Push harder.",
+      "phonetic": "/pʊʃ ˈhɑrdər./",
+      "zh": "用力推。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Call someone, please.",
+      "phonetic": "/kɔl ˈsəmˌwən, pliz./",
+      "zh": "請叫人。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the phone now.",
+      "phonetic": "/ɔn ðə foʊn naʊ./",
+      "zh": "正在打。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am lost here.",
+      "phonetic": "/aɪ æm lɔst hir./",
+      "zh": "我迷路了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Follow me, please.",
+      "phonetic": "/ˈfɑloʊ mi, pliz./",
+      "zh": "跟我。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you translate?",
+      "phonetic": "/kən ju trænzˈleɪt?/",
+      "zh": "能翻譯嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What language?",
+      "phonetic": "/wət ˈlæŋgwɪʤ?/",
+      "zh": "哪種語言？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The light blew out.",
+      "phonetic": "/ðə laɪt blu aʊt./",
+      "zh": "燈燒壞了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will replace it.",
+      "phonetic": "/aɪ wɪl ˌriˈpleɪs ɪt./",
+      "zh": "我換。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Help me carry this.",
+      "phonetic": "/hɛlp mi ˈkɛri ðɪs./",
+      "zh": "幫我搬這個。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "To the car?",
+      "phonetic": "/tɪ ðə kɑr?/",
+      "zh": "搬到車上？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I can't reach it.",
+      "phonetic": "/aɪ kænt riʧ ɪt./",
+      "zh": "我夠不到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I am taller, wait.",
+      "phonetic": "/aɪ æm ˈtɔlər, weɪt./",
+      "zh": "我高，等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have a minute?",
+      "phonetic": "/du ju hæv ə ˈmɪnət?/",
+      "zh": "有空嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For you, always.",
+      "phonetic": "/fər ju, ˈɔlˌweɪz./",
+      "zh": "爲你，隨時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sink is leaking.",
+      "phonetic": "/ðə sɪŋk ɪz ˈlikɪŋ./",
+      "zh": "水槽漏水。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Shut the valve.",
+      "phonetic": "/ʃət ðə vælv./",
+      "zh": "關閥門。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you spell it?",
+      "phonetic": "/kən ju spɛl ɪt?/",
+      "zh": "能拼嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "B as in boy.",
+      "phonetic": "/bi ɛz ɪn bɔɪ./",
+      "zh": "B 像 boy。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I need advice.",
+      "phonetic": "/aɪ nid ədˈvaɪs./",
+      "zh": "我需要建議。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Happy to listen.",
+      "phonetic": "/ˈhæpi tɪ ˈlɪsən./",
+      "zh": "樂意聽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The Wi-Fi is dead.",
+      "phonetic": "/ðə ˈwaɪˌfaɪ ɪz dɛd./",
+      "zh": "無線死了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Reboot the router.",
+      "phonetic": "/riˈbut ðə ˈrutər./",
+      "zh": "重啓分享器。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Lend me a pen?",
+      "phonetic": "/lɛnd mi ə pɛn?/",
+      "zh": "借支筆？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here you are.",
+      "phonetic": "/hir ju ər./",
+      "zh": "給你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you watch this?",
+      "phonetic": "/kən ju wɔʧ ðɪs?/",
+      "zh": "能看一下嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Go ahead, quick.",
+      "phonetic": "/goʊ əˈhɛd, kwɪk./",
+      "zh": "去吧，快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I made a mistake.",
+      "phonetic": "/aɪ meɪd ə mɪˈsteɪk./",
+      "zh": "我犯錯了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can fix it.",
+      "phonetic": "/wi kən fɪks ɪt./",
+      "zh": "能修。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The screen is frozen.",
+      "phonetic": "/ðə skrin ɪz ˈfroʊzən./",
+      "zh": "畫面卡住。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Force quit it.",
+      "phonetic": "/fɔrs kwɪt ɪt./",
+      "zh": "強制結束。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Open this for me.",
+      "phonetic": "/ˈoʊpən ðɪs fər mi./",
+      "zh": "幫我開這個。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stuck lid, yes.",
+      "phonetic": "/stək lɪd, jɛs./",
+      "zh": "蓋卡住。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The stair is slippery.",
+      "phonetic": "/ðə stɛr ɪz sˈlɪpəri./",
+      "zh": "樓梯滑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold the rail.",
+      "phonetic": "/hoʊld ðə reɪl./",
+      "zh": "扶扶手。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you check my work?",
+      "phonetic": "/kən ju ʧɛk maɪ wərk?/",
+      "zh": "能看我的工作嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Glad to.",
+      "phonetic": "/glæd tɪ./",
+      "zh": "樂意。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am running late.",
+      "phonetic": "/aɪ æm ˈrənɪŋ leɪt./",
+      "zh": "我快遲到了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will cover you.",
+      "phonetic": "/aɪ wɪl ˈkəvər ju./",
+      "zh": "我幫你頂。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cart is jammed.",
+      "phonetic": "/ðə kɑrt ɪz ʤæmd./",
+      "zh": "推車卡住。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wiggle it free.",
+      "phonetic": "/ˈwɪgəl ɪt fri./",
+      "zh": "搖松。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the help.",
+      "phonetic": "/θæŋks fər ðə hɛlp./",
+      "zh": "謝謝幫忙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Anytime, friend.",
+      "phonetic": "/ˈɛniˌtaɪm, frɛnd./",
+      "zh": "隨時，朋友。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You saved me.",
+      "phonetic": "/ju seɪvd mi./",
+      "zh": "你救了我。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is what we do.",
+      "phonetic": "/ðət ɪz wət wi du./",
+      "zh": "應該的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Next time, I help you.",
+      "phonetic": "/nɛkst taɪm, aɪ hɛlp ju./",
+      "zh": "下次我幫你。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Deal, partner.",
+      "phonetic": "/dil, ˈpɑrtnər./",
+      "zh": "說定，搭檔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Next time, I help you.",
+      "phonetic": "/nɛkst taɪm, aɪ hɛlp ju./",
+      "zh": "下次我幫你。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Deal, partner.",
+      "phonetic": "/dil, ˈpɑrtnər./",
+      "zh": "說定，搭檔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You saved me.",
+      "phonetic": "/ju seɪvd mi./",
+      "zh": "你救了我。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is what we do.",
+      "phonetic": "/ðət ɪz wət wi du./",
+      "zh": "應該的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the help.",
+      "phonetic": "/θæŋks fər ðə hɛlp./",
+      "zh": "謝謝幫忙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Anytime, friend.",
+      "phonetic": "/ˈɛniˌtaɪm, frɛnd./",
+      "zh": "隨時，朋友。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cart is jammed.",
+      "phonetic": "/ðə kɑrt ɪz ʤæmd./",
+      "zh": "推車卡住。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wiggle it free.",
+      "phonetic": "/ˈwɪgəl ɪt fri./",
+      "zh": "搖松。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am running late.",
+      "phonetic": "/aɪ æm ˈrənɪŋ leɪt./",
+      "zh": "我快遲到了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will cover you.",
+      "phonetic": "/aɪ wɪl ˈkəvər ju./",
+      "zh": "我幫你頂。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you check my work?",
+      "phonetic": "/kən ju ʧɛk maɪ wərk?/",
+      "zh": "能看我的工作嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Glad to.",
+      "phonetic": "/glæd tɪ./",
+      "zh": "樂意。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The stair is slippery.",
+      "phonetic": "/ðə stɛr ɪz sˈlɪpəri./",
+      "zh": "樓梯滑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold the rail.",
+      "phonetic": "/hoʊld ðə reɪl./",
+      "zh": "扶扶手。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Open this for me.",
+      "phonetic": "/ˈoʊpən ðɪs fər mi./",
+      "zh": "幫我開這個。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stuck lid, yes.",
+      "phonetic": "/stək lɪd, jɛs./",
+      "zh": "蓋卡住。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The screen is frozen.",
+      "phonetic": "/ðə skrin ɪz ˈfroʊzən./",
+      "zh": "畫面卡住。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Force quit it.",
+      "phonetic": "/fɔrs kwɪt ɪt./",
+      "zh": "強制結束。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I made a mistake.",
+      "phonetic": "/aɪ meɪd ə mɪˈsteɪk./",
+      "zh": "我犯錯了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can fix it.",
+      "phonetic": "/wi kən fɪks ɪt./",
+      "zh": "能修。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you watch this?",
+      "phonetic": "/kən ju wɔʧ ðɪs?/",
+      "zh": "能看一下嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Go ahead, quick.",
+      "phonetic": "/goʊ əˈhɛd, kwɪk./",
+      "zh": "去吧，快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Lend me a pen?",
+      "phonetic": "/lɛnd mi ə pɛn?/",
+      "zh": "借支筆？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here you are.",
+      "phonetic": "/hir ju ər./",
+      "zh": "給你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The Wi-Fi is dead.",
+      "phonetic": "/ðə ˈwaɪˌfaɪ ɪz dɛd./",
+      "zh": "無線死了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Reboot the router.",
+      "phonetic": "/riˈbut ðə ˈrutər./",
+      "zh": "重啓分享器。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I need advice.",
+      "phonetic": "/aɪ nid ədˈvaɪs./",
+      "zh": "我需要建議。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Happy to listen.",
+      "phonetic": "/ˈhæpi tɪ ˈlɪsən./",
+      "zh": "樂意聽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you spell it?",
+      "phonetic": "/kən ju spɛl ɪt?/",
+      "zh": "能拼嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "B as in boy.",
+      "phonetic": "/bi ɛz ɪn bɔɪ./",
+      "zh": "B 像 boy。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sink is leaking.",
+      "phonetic": "/ðə sɪŋk ɪz ˈlikɪŋ./",
+      "zh": "水槽漏水。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Shut the valve.",
+      "phonetic": "/ʃət ðə vælv./",
+      "zh": "關閥門。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have a minute?",
+      "phonetic": "/du ju hæv ə ˈmɪnət?/",
+      "zh": "有空嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For you, always.",
+      "phonetic": "/fər ju, ˈɔlˌweɪz./",
+      "zh": "爲你，隨時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I can't reach it.",
+      "phonetic": "/aɪ kænt riʧ ɪt./",
+      "zh": "我夠不到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I am taller, wait.",
+      "phonetic": "/aɪ æm ˈtɔlər, weɪt./",
+      "zh": "我高，等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Help me carry this.",
+      "phonetic": "/hɛlp mi ˈkɛri ðɪs./",
+      "zh": "幫我搬這個。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "To the car?",
+      "phonetic": "/tɪ ðə kɑr?/",
+      "zh": "搬到車上？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The light blew out.",
+      "phonetic": "/ðə laɪt blu aʊt./",
+      "zh": "燈燒壞了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will replace it.",
+      "phonetic": "/aɪ wɪl ˌriˈpleɪs ɪt./",
+      "zh": "我換。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you translate?",
+      "phonetic": "/kən ju trænzˈleɪt?/",
+      "zh": "能翻譯嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What language?",
+      "phonetic": "/wət ˈlæŋgwɪʤ?/",
+      "zh": "哪種語言？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am lost here.",
+      "phonetic": "/aɪ æm lɔst hir./",
+      "zh": "我迷路了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Follow me, please.",
+      "phonetic": "/ˈfɑloʊ mi, pliz./",
+      "zh": "跟我。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Call someone, please.",
+      "phonetic": "/kɔl ˈsəmˌwən, pliz./",
+      "zh": "請叫人。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the phone now.",
+      "phonetic": "/ɔn ðə foʊn naʊ./",
+      "zh": "正在打。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The door is stuck.",
+      "phonetic": "/ðə dɔr ɪz stək./",
+      "zh": "門卡住了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Push harder.",
+      "phonetic": "/pʊʃ ˈhɑrdər./",
+      "zh": "用力推。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I forgot how to do it.",
+      "phonetic": "/aɪ fərˈgɑt haʊ tɪ du ɪt./",
+      "zh": "我忘怎麼做了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will demo.",
+      "phonetic": "/aɪ wɪl ˈdɛmoʊ./",
+      "zh": "我示範。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you explain this?",
+      "phonetic": "/kən ju ɪkˈspleɪn ðɪs?/",
+      "zh": "能解釋這個嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Step by step, sure.",
+      "phonetic": "/stɛp baɪ stɛp, ʃʊr./",
+      "zh": "一步步，好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The box is heavy.",
+      "phonetic": "/ðə bɑks ɪz ˈhɛvi./",
+      "zh": "箱子很重。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We lift together.",
+      "phonetic": "/wi lɪft təˈgɛðər./",
+      "zh": "一起抬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you know the fix?",
+      "phonetic": "/du ju noʊ ðə fɪks?/",
+      "zh": "你知道解法嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try restarting.",
+      "phonetic": "/traɪ riˈstɑrtɪŋ./",
+      "zh": "重開試試。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I need a hand.",
+      "phonetic": "/aɪ nid ə hænd./",
+      "zh": "我需要幫忙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I am free now.",
+      "phonetic": "/aɪ æm fri naʊ./",
+      "zh": "我現在有空。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you hold this?",
+      "phonetic": "/kən ju hoʊld ðɪs?/",
+      "zh": "能幫我拿嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For a second, yes.",
+      "phonetic": "/fər ə ˈsɛkənd, jɛs./",
+      "zh": "拿一下，好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The code will not run.",
+      "phonetic": "/ðə koʊd wɪl nɑt rən./",
+      "zh": "程式跑不起來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let me see the error.",
+      "phonetic": "/lɛt mi si ðə ˈɛrər./",
+      "zh": "我看錯誤。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am stuck on this.",
+      "phonetic": "/aɪ æm stək ɔn ðɪs./",
+      "zh": "我卡在這。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Show me the part.",
+      "phonetic": "/ʃoʊ mi ðə pɑrt./",
+      "zh": "指給我看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you help me?",
+      "phonetic": "/kən ju hɛlp mi?/",
+      "zh": "能幫我嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, what is up?",
+      "phonetic": "/ʃʊr, wət ɪz əp?/",
+      "zh": "好，怎麼了？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you help me?",
+      "phonetic": "/kən ju hɛlp mi?/",
+      "zh": "能幫我嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, what is up?",
+      "phonetic": "/ʃʊr, wət ɪz əp?/",
+      "zh": "好，怎麼了？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am stuck on this.",
+      "phonetic": "/aɪ æm stək ɔn ðɪs./",
+      "zh": "我卡在這。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Show me the part.",
+      "phonetic": "/ʃoʊ mi ðə pɑrt./",
+      "zh": "指給我看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The code will not run.",
+      "phonetic": "/ðə koʊd wɪl nɑt rən./",
+      "zh": "程式跑不起來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let me see the error.",
+      "phonetic": "/lɛt mi si ðə ˈɛrər./",
+      "zh": "我看錯誤。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you hold this?",
+      "phonetic": "/kən ju hoʊld ðɪs?/",
+      "zh": "能幫我拿嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For a second, yes.",
+      "phonetic": "/fər ə ˈsɛkənd, jɛs./",
+      "zh": "拿一下，好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I need a hand.",
+      "phonetic": "/aɪ nid ə hænd./",
+      "zh": "我需要幫忙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I am free now.",
+      "phonetic": "/aɪ æm fri naʊ./",
+      "zh": "我現在有空。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you know the fix?",
+      "phonetic": "/du ju noʊ ðə fɪks?/",
+      "zh": "你知道解法嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try restarting.",
+      "phonetic": "/traɪ riˈstɑrtɪŋ./",
+      "zh": "重開試試。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The box is heavy.",
+      "phonetic": "/ðə bɑks ɪz ˈhɛvi./",
+      "zh": "箱子很重。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We lift together.",
+      "phonetic": "/wi lɪft təˈgɛðər./",
+      "zh": "一起抬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you explain this?",
+      "phonetic": "/kən ju ɪkˈspleɪn ðɪs?/",
+      "zh": "能解釋這個嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Step by step, sure.",
+      "phonetic": "/stɛp baɪ stɛp, ʃʊr./",
+      "zh": "一步步，好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I forgot how to do it.",
+      "phonetic": "/aɪ fərˈgɑt haʊ tɪ du ɪt./",
+      "zh": "我忘怎麼做了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will demo.",
+      "phonetic": "/aɪ wɪl ˈdɛmoʊ./",
+      "zh": "我示範。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The door is stuck.",
+      "phonetic": "/ðə dɔr ɪz stək./",
+      "zh": "門卡住了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Push harder.",
+      "phonetic": "/pʊʃ ˈhɑrdər./",
+      "zh": "用力推。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Call someone, please.",
+      "phonetic": "/kɔl ˈsəmˌwən, pliz./",
+      "zh": "請叫人。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the phone now.",
+      "phonetic": "/ɔn ðə foʊn naʊ./",
+      "zh": "正在打。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am lost here.",
+      "phonetic": "/aɪ æm lɔst hir./",
+      "zh": "我迷路了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Follow me, please.",
+      "phonetic": "/ˈfɑloʊ mi, pliz./",
+      "zh": "跟我。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you translate?",
+      "phonetic": "/kən ju trænzˈleɪt?/",
+      "zh": "能翻譯嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What language?",
+      "phonetic": "/wət ˈlæŋgwɪʤ?/",
+      "zh": "哪種語言？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The light blew out.",
+      "phonetic": "/ðə laɪt blu aʊt./",
+      "zh": "燈燒壞了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will replace it.",
+      "phonetic": "/aɪ wɪl ˌriˈpleɪs ɪt./",
+      "zh": "我換。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Help me carry this.",
+      "phonetic": "/hɛlp mi ˈkɛri ðɪs./",
+      "zh": "幫我搬這個。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "To the car?",
+      "phonetic": "/tɪ ðə kɑr?/",
+      "zh": "搬到車上？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I can't reach it.",
+      "phonetic": "/aɪ kænt riʧ ɪt./",
+      "zh": "我夠不到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I am taller, wait.",
+      "phonetic": "/aɪ æm ˈtɔlər, weɪt./",
+      "zh": "我高，等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have a minute?",
+      "phonetic": "/du ju hæv ə ˈmɪnət?/",
+      "zh": "有空嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For you, always.",
+      "phonetic": "/fər ju, ˈɔlˌweɪz./",
+      "zh": "爲你，隨時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sink is leaking.",
+      "phonetic": "/ðə sɪŋk ɪz ˈlikɪŋ./",
+      "zh": "水槽漏水。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Shut the valve.",
+      "phonetic": "/ʃət ðə vælv./",
+      "zh": "關閥門。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you spell it?",
+      "phonetic": "/kən ju spɛl ɪt?/",
+      "zh": "能拼嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "B as in boy.",
+      "phonetic": "/bi ɛz ɪn bɔɪ./",
+      "zh": "B 像 boy。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I need advice.",
+      "phonetic": "/aɪ nid ədˈvaɪs./",
+      "zh": "我需要建議。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Happy to listen.",
+      "phonetic": "/ˈhæpi tɪ ˈlɪsən./",
+      "zh": "樂意聽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The Wi-Fi is dead.",
+      "phonetic": "/ðə ˈwaɪˌfaɪ ɪz dɛd./",
+      "zh": "無線死了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Reboot the router.",
+      "phonetic": "/riˈbut ðə ˈrutər./",
+      "zh": "重啓分享器。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Lend me a pen?",
+      "phonetic": "/lɛnd mi ə pɛn?/",
+      "zh": "借支筆？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here you are.",
+      "phonetic": "/hir ju ər./",
+      "zh": "給你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you watch this?",
+      "phonetic": "/kən ju wɔʧ ðɪs?/",
+      "zh": "能看一下嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Go ahead, quick.",
+      "phonetic": "/goʊ əˈhɛd, kwɪk./",
+      "zh": "去吧，快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I made a mistake.",
+      "phonetic": "/aɪ meɪd ə mɪˈsteɪk./",
+      "zh": "我犯錯了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can fix it.",
+      "phonetic": "/wi kən fɪks ɪt./",
+      "zh": "能修。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The screen is frozen.",
+      "phonetic": "/ðə skrin ɪz ˈfroʊzən./",
+      "zh": "畫面卡住。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Force quit it.",
+      "phonetic": "/fɔrs kwɪt ɪt./",
+      "zh": "強制結束。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Open this for me.",
+      "phonetic": "/ˈoʊpən ðɪs fər mi./",
+      "zh": "幫我開這個。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stuck lid, yes.",
+      "phonetic": "/stək lɪd, jɛs./",
+      "zh": "蓋卡住。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The stair is slippery.",
+      "phonetic": "/ðə stɛr ɪz sˈlɪpəri./",
+      "zh": "樓梯滑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold the rail.",
+      "phonetic": "/hoʊld ðə reɪl./",
+      "zh": "扶扶手。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you check my work?",
+      "phonetic": "/kən ju ʧɛk maɪ wərk?/",
+      "zh": "能看我的工作嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Glad to.",
+      "phonetic": "/glæd tɪ./",
+      "zh": "樂意。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am running late.",
+      "phonetic": "/aɪ æm ˈrənɪŋ leɪt./",
+      "zh": "我快遲到了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will cover you.",
+      "phonetic": "/aɪ wɪl ˈkəvər ju./",
+      "zh": "我幫你頂。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cart is jammed.",
+      "phonetic": "/ðə kɑrt ɪz ʤæmd./",
+      "zh": "推車卡住。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wiggle it free.",
+      "phonetic": "/ˈwɪgəl ɪt fri./",
+      "zh": "搖松。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the help.",
+      "phonetic": "/θæŋks fər ðə hɛlp./",
+      "zh": "謝謝幫忙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Anytime, friend.",
+      "phonetic": "/ˈɛniˌtaɪm, frɛnd./",
+      "zh": "隨時，朋友。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You saved me.",
+      "phonetic": "/ju seɪvd mi./",
+      "zh": "你救了我。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is what we do.",
+      "phonetic": "/ðət ɪz wət wi du./",
+      "zh": "應該的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Next time, I help you.",
+      "phonetic": "/nɛkst taɪm, aɪ hɛlp ju./",
+      "zh": "下次我幫你。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Deal, partner.",
+      "phonetic": "/dil, ˈpɑrtnər./",
+      "zh": "說定，搭檔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Next time, I help you.",
+      "phonetic": "/nɛkst taɪm, aɪ hɛlp ju./",
+      "zh": "下次我幫你。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Deal, partner.",
+      "phonetic": "/dil, ˈpɑrtnər./",
+      "zh": "說定，搭檔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You saved me.",
+      "phonetic": "/ju seɪvd mi./",
+      "zh": "你救了我。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is what we do.",
+      "phonetic": "/ðət ɪz wət wi du./",
+      "zh": "應該的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the help.",
+      "phonetic": "/θæŋks fər ðə hɛlp./",
+      "zh": "謝謝幫忙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Anytime, friend.",
+      "phonetic": "/ˈɛniˌtaɪm, frɛnd./",
+      "zh": "隨時，朋友。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cart is jammed.",
+      "phonetic": "/ðə kɑrt ɪz ʤæmd./",
+      "zh": "推車卡住。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wiggle it free.",
+      "phonetic": "/ˈwɪgəl ɪt fri./",
+      "zh": "搖松。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am running late.",
+      "phonetic": "/aɪ æm ˈrənɪŋ leɪt./",
+      "zh": "我快遲到了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will cover you.",
+      "phonetic": "/aɪ wɪl ˈkəvər ju./",
+      "zh": "我幫你頂。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you check my work?",
+      "phonetic": "/kən ju ʧɛk maɪ wərk?/",
+      "zh": "能看我的工作嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Glad to.",
+      "phonetic": "/glæd tɪ./",
+      "zh": "樂意。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The stair is slippery.",
+      "phonetic": "/ðə stɛr ɪz sˈlɪpəri./",
+      "zh": "樓梯滑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold the rail.",
+      "phonetic": "/hoʊld ðə reɪl./",
+      "zh": "扶扶手。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Open this for me.",
+      "phonetic": "/ˈoʊpən ðɪs fər mi./",
+      "zh": "幫我開這個。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stuck lid, yes.",
+      "phonetic": "/stək lɪd, jɛs./",
+      "zh": "蓋卡住。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The screen is frozen.",
+      "phonetic": "/ðə skrin ɪz ˈfroʊzən./",
+      "zh": "畫面卡住。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Force quit it.",
+      "phonetic": "/fɔrs kwɪt ɪt./",
+      "zh": "強制結束。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I made a mistake.",
+      "phonetic": "/aɪ meɪd ə mɪˈsteɪk./",
+      "zh": "我犯錯了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can fix it.",
+      "phonetic": "/wi kən fɪks ɪt./",
+      "zh": "能修。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you watch this?",
+      "phonetic": "/kən ju wɔʧ ðɪs?/",
+      "zh": "能看一下嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Go ahead, quick.",
+      "phonetic": "/goʊ əˈhɛd, kwɪk./",
+      "zh": "去吧，快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Lend me a pen?",
+      "phonetic": "/lɛnd mi ə pɛn?/",
+      "zh": "借支筆？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here you are.",
+      "phonetic": "/hir ju ər./",
+      "zh": "給你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The Wi-Fi is dead.",
+      "phonetic": "/ðə ˈwaɪˌfaɪ ɪz dɛd./",
+      "zh": "無線死了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Reboot the router.",
+      "phonetic": "/riˈbut ðə ˈrutər./",
+      "zh": "重啓分享器。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I need advice.",
+      "phonetic": "/aɪ nid ədˈvaɪs./",
+      "zh": "我需要建議。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Happy to listen.",
+      "phonetic": "/ˈhæpi tɪ ˈlɪsən./",
+      "zh": "樂意聽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you spell it?",
+      "phonetic": "/kən ju spɛl ɪt?/",
+      "zh": "能拼嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "B as in boy.",
+      "phonetic": "/bi ɛz ɪn bɔɪ./",
+      "zh": "B 像 boy。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sink is leaking.",
+      "phonetic": "/ðə sɪŋk ɪz ˈlikɪŋ./",
+      "zh": "水槽漏水。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Shut the valve.",
+      "phonetic": "/ʃət ðə vælv./",
+      "zh": "關閥門。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have a minute?",
+      "phonetic": "/du ju hæv ə ˈmɪnət?/",
+      "zh": "有空嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For you, always.",
+      "phonetic": "/fər ju, ˈɔlˌweɪz./",
+      "zh": "爲你，隨時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I can't reach it.",
+      "phonetic": "/aɪ kænt riʧ ɪt./",
+      "zh": "我夠不到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I am taller, wait.",
+      "phonetic": "/aɪ æm ˈtɔlər, weɪt./",
+      "zh": "我高，等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Help me carry this.",
+      "phonetic": "/hɛlp mi ˈkɛri ðɪs./",
+      "zh": "幫我搬這個。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "To the car?",
+      "phonetic": "/tɪ ðə kɑr?/",
+      "zh": "搬到車上？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The light blew out.",
+      "phonetic": "/ðə laɪt blu aʊt./",
+      "zh": "燈燒壞了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will replace it.",
+      "phonetic": "/aɪ wɪl ˌriˈpleɪs ɪt./",
+      "zh": "我換。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you translate?",
+      "phonetic": "/kən ju trænzˈleɪt?/",
+      "zh": "能翻譯嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What language?",
+      "phonetic": "/wət ˈlæŋgwɪʤ?/",
+      "zh": "哪種語言？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am lost here.",
+      "phonetic": "/aɪ æm lɔst hir./",
+      "zh": "我迷路了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Follow me, please.",
+      "phonetic": "/ˈfɑloʊ mi, pliz./",
+      "zh": "跟我。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Call someone, please.",
+      "phonetic": "/kɔl ˈsəmˌwən, pliz./",
+      "zh": "請叫人。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the phone now.",
+      "phonetic": "/ɔn ðə foʊn naʊ./",
+      "zh": "正在打。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The door is stuck.",
+      "phonetic": "/ðə dɔr ɪz stək./",
+      "zh": "門卡住了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Push harder.",
+      "phonetic": "/pʊʃ ˈhɑrdər./",
+      "zh": "用力推。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I forgot how to do it.",
+      "phonetic": "/aɪ fərˈgɑt haʊ tɪ du ɪt./",
+      "zh": "我忘怎麼做了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will demo.",
+      "phonetic": "/aɪ wɪl ˈdɛmoʊ./",
+      "zh": "我示範。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you explain this?",
+      "phonetic": "/kən ju ɪkˈspleɪn ðɪs?/",
+      "zh": "能解釋這個嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Step by step, sure.",
+      "phonetic": "/stɛp baɪ stɛp, ʃʊr./",
+      "zh": "一步步，好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The box is heavy.",
+      "phonetic": "/ðə bɑks ɪz ˈhɛvi./",
+      "zh": "箱子很重。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We lift together.",
+      "phonetic": "/wi lɪft təˈgɛðər./",
+      "zh": "一起抬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you know the fix?",
+      "phonetic": "/du ju noʊ ðə fɪks?/",
+      "zh": "你知道解法嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try restarting.",
+      "phonetic": "/traɪ riˈstɑrtɪŋ./",
+      "zh": "重開試試。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I need a hand.",
+      "phonetic": "/aɪ nid ə hænd./",
+      "zh": "我需要幫忙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I am free now.",
+      "phonetic": "/aɪ æm fri naʊ./",
+      "zh": "我現在有空。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you hold this?",
+      "phonetic": "/kən ju hoʊld ðɪs?/",
+      "zh": "能幫我拿嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For a second, yes.",
+      "phonetic": "/fər ə ˈsɛkənd, jɛs./",
+      "zh": "拿一下，好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The code will not run.",
+      "phonetic": "/ðə koʊd wɪl nɑt rən./",
+      "zh": "程式跑不起來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let me see the error.",
+      "phonetic": "/lɛt mi si ðə ˈɛrər./",
+      "zh": "我看錯誤。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am stuck on this.",
+      "phonetic": "/aɪ æm stək ɔn ðɪs./",
+      "zh": "我卡在這。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Show me the part.",
+      "phonetic": "/ʃoʊ mi ðə pɑrt./",
+      "zh": "指給我看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you help me?",
+      "phonetic": "/kən ju hɛlp mi?/",
+      "zh": "能幫我嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, what is up?",
+      "phonetic": "/ʃʊr, wət ɪz əp?/",
+      "zh": "好，怎麼了？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you help me?",
+      "phonetic": "/kən ju hɛlp mi?/",
+      "zh": "能幫我嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, what is up?",
+      "phonetic": "/ʃʊr, wət ɪz əp?/",
+      "zh": "好，怎麼了？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am stuck on this.",
+      "phonetic": "/aɪ æm stək ɔn ðɪs./",
+      "zh": "我卡在這。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Show me the part.",
+      "phonetic": "/ʃoʊ mi ðə pɑrt./",
+      "zh": "指給我看。"
+    }
+  ]
+}

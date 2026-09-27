@@ -1,0 +1,2458 @@
+{
+  "title": "Everyday Phrases — Splitting the Bill",
+  "title_zh": "分賬",
+  "scene_zh": "分賬 · 情境對話",
+  "title_quote": "Let's split the bill.",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】🧾 實用分賬必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — Splitting the Bill",
+  "youtube_description": "睡著學英文！這部影片收錄實用分賬情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫），不用背，睡前聽就會。重複播放，讓英文自然進入你的大腦。👍 想學更多生活場景，請留言告訴我！別忘了訂閱+按讚。 #英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical Splitting the Bill phrase pairs (each pair: male normal speed → female slow speed → combined dialogue). No memorization needed—just listen before bed and absorb naturally. If you want more real-life scenarios, leave a comment! Subscribe and like!",
+  "youtube_tags": [
+    "英文聽力",
+    "睡前英文",
+    "分賬英文",
+    "English listening",
+    "Sleep learning",
+    "A2 English",
+    "常用英文短語",
+    "零基礎英文",
+    "慢速英文",
+    "英文口語",
+    "Learn English",
+    "English for daily life",
+    "ESL",
+    "English conversation",
+    "聽英語",
+    "英文學習"
+  ],
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "Splitting the Bill",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "Splitting the Bill",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Finance",
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "Let's split the bill.",
+      "phonetic": "/lɛts splɪt ðə bɪl./",
+      "zh": "我們分賬。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "How many ways?",
+      "phonetic": "/haʊ ˈmɛni weɪz?/",
+      "zh": "分幾份？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Three ways, even.",
+      "phonetic": "/θri weɪz, ˈivɪn./",
+      "zh": "三分均。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Do the math.",
+      "phonetic": "/du ðə mæθ./",
+      "zh": "算。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I paid, reimburse.",
+      "phonetic": "/aɪ peɪd, ˌriɪmˈbərs./",
+      "zh": "我付，還我。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Send your share.",
+      "phonetic": "/sɛnd jʊr ʃɛr./",
+      "zh": "轉你的份。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app divides.",
+      "phonetic": "/ðə æp dɪˈvaɪdz./",
+      "zh": "App 分。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Equal, yes.",
+      "phonetic": "/ˈikwəl, jɛs./",
+      "zh": "均等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tip is shared.",
+      "phonetic": "/ðə tɪp ɪz ʃɛrd./",
+      "zh": "小費分。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Add to each.",
+      "phonetic": "/æd tɪ iʧ./",
+      "zh": "各加。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The round is odd.",
+      "phonetic": "/ðə raʊnd ɪz ɑd./",
+      "zh": "金額奇。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nearest, fine.",
+      "phonetic": "/ˈnɪrəst, faɪn./",
+      "zh": "取整。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The drink was mine.",
+      "phonetic": "/ðə drɪŋk wɑz maɪn./",
+      "zh": "飲料我的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Subtract it, please.",
+      "phonetic": "/səbˈtrækt ɪt, pliz./",
+      "zh": "扣掉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The share is ten.",
+      "phonetic": "/ðə ʃɛr ɪz tɛn./",
+      "zh": "每份十塊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Transfer now.",
+      "phonetic": "/ˈtrænsfər naʊ./",
+      "zh": "現在轉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cash is short.",
+      "phonetic": "/ðə kæʃ ɪz ʃɔrt./",
+      "zh": "現金少。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I cover, you pay back.",
+      "phonetic": "/aɪ ˈkəvər, ju peɪ bæk./",
+      "zh": "我墊你還。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The scan to pay.",
+      "phonetic": "/ðə skæn tɪ peɪ./",
+      "zh": "掃碼付。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Split the code.",
+      "phonetic": "/splɪt ðə koʊd./",
+      "zh": "分碼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The receipt is long.",
+      "phonetic": "/ðə rɪˈsit ɪz lɔŋ./",
+      "zh": "收據長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Itemize, then.",
+      "phonetic": "/ˈaɪtəˌmaɪz, ðɛn./",
+      "zh": "逐項。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The friend forgot.",
+      "phonetic": "/ðə frɛnd fərˈgɑt./",
+      "zh": "朋友忘。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Remind, gentle.",
+      "phonetic": "/riˈmaɪnd, ˈʤɛnəl./",
+      "zh": "輕提醒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bill is fair.",
+      "phonetic": "/ðə bɪl ɪz fɛr./",
+      "zh": "賬單公。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Count again, yes.",
+      "phonetic": "/kaʊnt əˈgɛn, jɛs./",
+      "zh": "再數。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The group is big.",
+      "phonetic": "/ðə grup ɪz bɪg./",
+      "zh": "羣體大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Per head, yes.",
+      "phonetic": "/pər hɛd, jɛs./",
+      "zh": "人頭。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rounding helps.",
+      "phonetic": "/ðə ˈraʊndɪŋ hɛlps./",
+      "zh": "取整有用。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No coins, fine.",
+      "phonetic": "/noʊ kɔɪnz, faɪn./",
+      "zh": "無零錢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The overpaid, refund.",
+      "phonetic": "/ðə ˈoʊvərˈpeɪd, ˈriˌfənd./",
+      "zh": "多付退。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Small, keep.",
+      "phonetic": "/smɔl, kip./",
+      "zh": "少留。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The separate checks.",
+      "phonetic": "/ðə ˈsɛpərˌeɪt ʧɛks./",
+      "zh": "分開結。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ask the server.",
+      "phonetic": "/æsk ðə ˈsərvər./",
+      "zh": "問服務生。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The math is quick.",
+      "phonetic": "/ðə mæθ ɪz kwɪk./",
+      "zh": "算得快。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Done, show.",
+      "phonetic": "/dən, ʃoʊ./",
+      "zh": "好，看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The share is mine.",
+      "phonetic": "/ðə ʃɛr ɪz maɪn./",
+      "zh": "我的份。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sent, thanks.",
+      "phonetic": "/sɛnt, θæŋks./",
+      "zh": "轉了謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The uneven eaten.",
+      "phonetic": "/ðə əˈnivən ˈitən./",
+      "zh": "喫不均。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Split still, yes.",
+      "phonetic": "/splɪt stɪl, jɛs./",
+      "zh": "仍分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The voucher covers.",
+      "phonetic": "/ðə ˈvaʊʧər ˈkəvərz./",
+      "zh": "抵用券包。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Apply to all.",
+      "phonetic": "/əˈplaɪ tɪ ɔl./",
+      "zh": "全員用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pay link sent.",
+      "phonetic": "/ðə peɪ lɪŋk sɛnt./",
+      "zh": "付款連結寄。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tap to settle.",
+      "phonetic": "/tæp tɪ ˈsɛtəl./",
+      "zh": "點結清。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The debt is small.",
+      "phonetic": "/ðə dɛt ɪz smɔl./",
+      "zh": "欠少。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Forget it, pal.",
+      "phonetic": "/fərˈgɛt ɪt, pæl./",
+      "zh": "算了吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The split is clear.",
+      "phonetic": "/ðə splɪt ɪz klɪr./",
+      "zh": "分賬清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No confusion, yes.",
+      "phonetic": "/noʊ kənfˈjuʒən, jɛs./",
+      "zh": "不混。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cash returned.",
+      "phonetic": "/ðə kæʃ rɪˈtərnd./",
+      "zh": "現金還。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Exact, thanks.",
+      "phonetic": "/ɪgˈzækt, θæŋks./",
+      "zh": "剛好謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app shows due.",
+      "phonetic": "/ðə æp ʃoʊz du./",
+      "zh": "App 顯應付。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pay your part.",
+      "phonetic": "/peɪ jʊr pɑrt./",
+      "zh": "付你的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The round two.",
+      "phonetic": "/ðə raʊnd tu./",
+      "zh": "第二輪。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same split, yes.",
+      "phonetic": "/seɪm splɪt, jɛs./",
+      "zh": "同分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The total matched.",
+      "phonetic": "/ðə ˈtoʊtəl mæʧt./",
+      "zh": "總額符。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All paid, good.",
+      "phonetic": "/ɔl peɪd, gʊd./",
+      "zh": "都付好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The reminder pinged.",
+      "phonetic": "/ðə riˈmaɪndər pɪŋd./",
+      "zh": "提醒響。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Paid, sorry late.",
+      "phonetic": "/peɪd, ˈsɑri leɪt./",
+      "zh": "付了遲到歉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The settle is done.",
+      "phonetic": "/ðə ˈsɛtəl ɪz dən./",
+      "zh": "結清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Even, yes.",
+      "phonetic": "/ˈivɪn, jɛs./",
+      "zh": "兩清。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The group is square.",
+      "phonetic": "/ðə grup ɪz skwɛr./",
+      "zh": "羣體清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Next time, same.",
+      "phonetic": "/nɛkst taɪm, seɪm./",
+      "zh": "下次同。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for splitting.",
+      "phonetic": "/θæŋks fər ˈsplɪtɪŋ./",
+      "zh": "謝謝分賬。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fair and square, pal.",
+      "phonetic": "/fɛr ənd skwɛr, pæl./",
+      "zh": "公平。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for splitting.",
+      "phonetic": "/θæŋks fər ˈsplɪtɪŋ./",
+      "zh": "謝謝分賬。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fair and square, pal.",
+      "phonetic": "/fɛr ənd skwɛr, pæl./",
+      "zh": "公平。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The group is square.",
+      "phonetic": "/ðə grup ɪz skwɛr./",
+      "zh": "羣體清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Next time, same.",
+      "phonetic": "/nɛkst taɪm, seɪm./",
+      "zh": "下次同。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The settle is done.",
+      "phonetic": "/ðə ˈsɛtəl ɪz dən./",
+      "zh": "結清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Even, yes.",
+      "phonetic": "/ˈivɪn, jɛs./",
+      "zh": "兩清。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The reminder pinged.",
+      "phonetic": "/ðə riˈmaɪndər pɪŋd./",
+      "zh": "提醒響。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Paid, sorry late.",
+      "phonetic": "/peɪd, ˈsɑri leɪt./",
+      "zh": "付了遲到歉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The total matched.",
+      "phonetic": "/ðə ˈtoʊtəl mæʧt./",
+      "zh": "總額符。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All paid, good.",
+      "phonetic": "/ɔl peɪd, gʊd./",
+      "zh": "都付好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The round two.",
+      "phonetic": "/ðə raʊnd tu./",
+      "zh": "第二輪。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same split, yes.",
+      "phonetic": "/seɪm splɪt, jɛs./",
+      "zh": "同分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app shows due.",
+      "phonetic": "/ðə æp ʃoʊz du./",
+      "zh": "App 顯應付。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pay your part.",
+      "phonetic": "/peɪ jʊr pɑrt./",
+      "zh": "付你的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cash returned.",
+      "phonetic": "/ðə kæʃ rɪˈtərnd./",
+      "zh": "現金還。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Exact, thanks.",
+      "phonetic": "/ɪgˈzækt, θæŋks./",
+      "zh": "剛好謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The split is clear.",
+      "phonetic": "/ðə splɪt ɪz klɪr./",
+      "zh": "分賬清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No confusion, yes.",
+      "phonetic": "/noʊ kənfˈjuʒən, jɛs./",
+      "zh": "不混。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The debt is small.",
+      "phonetic": "/ðə dɛt ɪz smɔl./",
+      "zh": "欠少。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Forget it, pal.",
+      "phonetic": "/fərˈgɛt ɪt, pæl./",
+      "zh": "算了吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pay link sent.",
+      "phonetic": "/ðə peɪ lɪŋk sɛnt./",
+      "zh": "付款連結寄。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tap to settle.",
+      "phonetic": "/tæp tɪ ˈsɛtəl./",
+      "zh": "點結清。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The voucher covers.",
+      "phonetic": "/ðə ˈvaʊʧər ˈkəvərz./",
+      "zh": "抵用券包。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Apply to all.",
+      "phonetic": "/əˈplaɪ tɪ ɔl./",
+      "zh": "全員用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The uneven eaten.",
+      "phonetic": "/ðə əˈnivən ˈitən./",
+      "zh": "喫不均。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Split still, yes.",
+      "phonetic": "/splɪt stɪl, jɛs./",
+      "zh": "仍分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The share is mine.",
+      "phonetic": "/ðə ʃɛr ɪz maɪn./",
+      "zh": "我的份。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sent, thanks.",
+      "phonetic": "/sɛnt, θæŋks./",
+      "zh": "轉了謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The math is quick.",
+      "phonetic": "/ðə mæθ ɪz kwɪk./",
+      "zh": "算得快。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Done, show.",
+      "phonetic": "/dən, ʃoʊ./",
+      "zh": "好，看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The separate checks.",
+      "phonetic": "/ðə ˈsɛpərˌeɪt ʧɛks./",
+      "zh": "分開結。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ask the server.",
+      "phonetic": "/æsk ðə ˈsərvər./",
+      "zh": "問服務生。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The overpaid, refund.",
+      "phonetic": "/ðə ˈoʊvərˈpeɪd, ˈriˌfənd./",
+      "zh": "多付退。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Small, keep.",
+      "phonetic": "/smɔl, kip./",
+      "zh": "少留。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rounding helps.",
+      "phonetic": "/ðə ˈraʊndɪŋ hɛlps./",
+      "zh": "取整有用。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No coins, fine.",
+      "phonetic": "/noʊ kɔɪnz, faɪn./",
+      "zh": "無零錢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The group is big.",
+      "phonetic": "/ðə grup ɪz bɪg./",
+      "zh": "羣體大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Per head, yes.",
+      "phonetic": "/pər hɛd, jɛs./",
+      "zh": "人頭。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bill is fair.",
+      "phonetic": "/ðə bɪl ɪz fɛr./",
+      "zh": "賬單公。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Count again, yes.",
+      "phonetic": "/kaʊnt əˈgɛn, jɛs./",
+      "zh": "再數。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The friend forgot.",
+      "phonetic": "/ðə frɛnd fərˈgɑt./",
+      "zh": "朋友忘。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Remind, gentle.",
+      "phonetic": "/riˈmaɪnd, ˈʤɛnəl./",
+      "zh": "輕提醒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The receipt is long.",
+      "phonetic": "/ðə rɪˈsit ɪz lɔŋ./",
+      "zh": "收據長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Itemize, then.",
+      "phonetic": "/ˈaɪtəˌmaɪz, ðɛn./",
+      "zh": "逐項。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The scan to pay.",
+      "phonetic": "/ðə skæn tɪ peɪ./",
+      "zh": "掃碼付。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Split the code.",
+      "phonetic": "/splɪt ðə koʊd./",
+      "zh": "分碼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cash is short.",
+      "phonetic": "/ðə kæʃ ɪz ʃɔrt./",
+      "zh": "現金少。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I cover, you pay back.",
+      "phonetic": "/aɪ ˈkəvər, ju peɪ bæk./",
+      "zh": "我墊你還。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The share is ten.",
+      "phonetic": "/ðə ʃɛr ɪz tɛn./",
+      "zh": "每份十塊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Transfer now.",
+      "phonetic": "/ˈtrænsfər naʊ./",
+      "zh": "現在轉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The drink was mine.",
+      "phonetic": "/ðə drɪŋk wɑz maɪn./",
+      "zh": "飲料我的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Subtract it, please.",
+      "phonetic": "/səbˈtrækt ɪt, pliz./",
+      "zh": "扣掉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The round is odd.",
+      "phonetic": "/ðə raʊnd ɪz ɑd./",
+      "zh": "金額奇。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nearest, fine.",
+      "phonetic": "/ˈnɪrəst, faɪn./",
+      "zh": "取整。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tip is shared.",
+      "phonetic": "/ðə tɪp ɪz ʃɛrd./",
+      "zh": "小費分。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Add to each.",
+      "phonetic": "/æd tɪ iʧ./",
+      "zh": "各加。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app divides.",
+      "phonetic": "/ðə æp dɪˈvaɪdz./",
+      "zh": "App 分。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Equal, yes.",
+      "phonetic": "/ˈikwəl, jɛs./",
+      "zh": "均等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I paid, reimburse.",
+      "phonetic": "/aɪ peɪd, ˌriɪmˈbərs./",
+      "zh": "我付，還我。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Send your share.",
+      "phonetic": "/sɛnd jʊr ʃɛr./",
+      "zh": "轉你的份。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Three ways, even.",
+      "phonetic": "/θri weɪz, ˈivɪn./",
+      "zh": "三分均。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Do the math.",
+      "phonetic": "/du ðə mæθ./",
+      "zh": "算。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's split the bill.",
+      "phonetic": "/lɛts splɪt ðə bɪl./",
+      "zh": "我們分賬。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "How many ways?",
+      "phonetic": "/haʊ ˈmɛni weɪz?/",
+      "zh": "分幾份？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's split the bill.",
+      "phonetic": "/lɛts splɪt ðə bɪl./",
+      "zh": "我們分賬。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "How many ways?",
+      "phonetic": "/haʊ ˈmɛni weɪz?/",
+      "zh": "分幾份？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Three ways, even.",
+      "phonetic": "/θri weɪz, ˈivɪn./",
+      "zh": "三分均。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Do the math.",
+      "phonetic": "/du ðə mæθ./",
+      "zh": "算。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I paid, reimburse.",
+      "phonetic": "/aɪ peɪd, ˌriɪmˈbərs./",
+      "zh": "我付，還我。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Send your share.",
+      "phonetic": "/sɛnd jʊr ʃɛr./",
+      "zh": "轉你的份。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app divides.",
+      "phonetic": "/ðə æp dɪˈvaɪdz./",
+      "zh": "App 分。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Equal, yes.",
+      "phonetic": "/ˈikwəl, jɛs./",
+      "zh": "均等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tip is shared.",
+      "phonetic": "/ðə tɪp ɪz ʃɛrd./",
+      "zh": "小費分。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Add to each.",
+      "phonetic": "/æd tɪ iʧ./",
+      "zh": "各加。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The round is odd.",
+      "phonetic": "/ðə raʊnd ɪz ɑd./",
+      "zh": "金額奇。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nearest, fine.",
+      "phonetic": "/ˈnɪrəst, faɪn./",
+      "zh": "取整。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The drink was mine.",
+      "phonetic": "/ðə drɪŋk wɑz maɪn./",
+      "zh": "飲料我的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Subtract it, please.",
+      "phonetic": "/səbˈtrækt ɪt, pliz./",
+      "zh": "扣掉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The share is ten.",
+      "phonetic": "/ðə ʃɛr ɪz tɛn./",
+      "zh": "每份十塊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Transfer now.",
+      "phonetic": "/ˈtrænsfər naʊ./",
+      "zh": "現在轉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cash is short.",
+      "phonetic": "/ðə kæʃ ɪz ʃɔrt./",
+      "zh": "現金少。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I cover, you pay back.",
+      "phonetic": "/aɪ ˈkəvər, ju peɪ bæk./",
+      "zh": "我墊你還。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The scan to pay.",
+      "phonetic": "/ðə skæn tɪ peɪ./",
+      "zh": "掃碼付。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Split the code.",
+      "phonetic": "/splɪt ðə koʊd./",
+      "zh": "分碼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The receipt is long.",
+      "phonetic": "/ðə rɪˈsit ɪz lɔŋ./",
+      "zh": "收據長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Itemize, then.",
+      "phonetic": "/ˈaɪtəˌmaɪz, ðɛn./",
+      "zh": "逐項。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The friend forgot.",
+      "phonetic": "/ðə frɛnd fərˈgɑt./",
+      "zh": "朋友忘。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Remind, gentle.",
+      "phonetic": "/riˈmaɪnd, ˈʤɛnəl./",
+      "zh": "輕提醒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bill is fair.",
+      "phonetic": "/ðə bɪl ɪz fɛr./",
+      "zh": "賬單公。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Count again, yes.",
+      "phonetic": "/kaʊnt əˈgɛn, jɛs./",
+      "zh": "再數。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The group is big.",
+      "phonetic": "/ðə grup ɪz bɪg./",
+      "zh": "羣體大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Per head, yes.",
+      "phonetic": "/pər hɛd, jɛs./",
+      "zh": "人頭。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rounding helps.",
+      "phonetic": "/ðə ˈraʊndɪŋ hɛlps./",
+      "zh": "取整有用。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No coins, fine.",
+      "phonetic": "/noʊ kɔɪnz, faɪn./",
+      "zh": "無零錢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The overpaid, refund.",
+      "phonetic": "/ðə ˈoʊvərˈpeɪd, ˈriˌfənd./",
+      "zh": "多付退。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Small, keep.",
+      "phonetic": "/smɔl, kip./",
+      "zh": "少留。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The separate checks.",
+      "phonetic": "/ðə ˈsɛpərˌeɪt ʧɛks./",
+      "zh": "分開結。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ask the server.",
+      "phonetic": "/æsk ðə ˈsərvər./",
+      "zh": "問服務生。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The math is quick.",
+      "phonetic": "/ðə mæθ ɪz kwɪk./",
+      "zh": "算得快。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Done, show.",
+      "phonetic": "/dən, ʃoʊ./",
+      "zh": "好，看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The share is mine.",
+      "phonetic": "/ðə ʃɛr ɪz maɪn./",
+      "zh": "我的份。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sent, thanks.",
+      "phonetic": "/sɛnt, θæŋks./",
+      "zh": "轉了謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The uneven eaten.",
+      "phonetic": "/ðə əˈnivən ˈitən./",
+      "zh": "喫不均。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Split still, yes.",
+      "phonetic": "/splɪt stɪl, jɛs./",
+      "zh": "仍分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The voucher covers.",
+      "phonetic": "/ðə ˈvaʊʧər ˈkəvərz./",
+      "zh": "抵用券包。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Apply to all.",
+      "phonetic": "/əˈplaɪ tɪ ɔl./",
+      "zh": "全員用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pay link sent.",
+      "phonetic": "/ðə peɪ lɪŋk sɛnt./",
+      "zh": "付款連結寄。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tap to settle.",
+      "phonetic": "/tæp tɪ ˈsɛtəl./",
+      "zh": "點結清。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The debt is small.",
+      "phonetic": "/ðə dɛt ɪz smɔl./",
+      "zh": "欠少。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Forget it, pal.",
+      "phonetic": "/fərˈgɛt ɪt, pæl./",
+      "zh": "算了吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The split is clear.",
+      "phonetic": "/ðə splɪt ɪz klɪr./",
+      "zh": "分賬清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No confusion, yes.",
+      "phonetic": "/noʊ kənfˈjuʒən, jɛs./",
+      "zh": "不混。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cash returned.",
+      "phonetic": "/ðə kæʃ rɪˈtərnd./",
+      "zh": "現金還。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Exact, thanks.",
+      "phonetic": "/ɪgˈzækt, θæŋks./",
+      "zh": "剛好謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app shows due.",
+      "phonetic": "/ðə æp ʃoʊz du./",
+      "zh": "App 顯應付。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pay your part.",
+      "phonetic": "/peɪ jʊr pɑrt./",
+      "zh": "付你的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The round two.",
+      "phonetic": "/ðə raʊnd tu./",
+      "zh": "第二輪。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same split, yes.",
+      "phonetic": "/seɪm splɪt, jɛs./",
+      "zh": "同分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The total matched.",
+      "phonetic": "/ðə ˈtoʊtəl mæʧt./",
+      "zh": "總額符。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All paid, good.",
+      "phonetic": "/ɔl peɪd, gʊd./",
+      "zh": "都付好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The reminder pinged.",
+      "phonetic": "/ðə riˈmaɪndər pɪŋd./",
+      "zh": "提醒響。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Paid, sorry late.",
+      "phonetic": "/peɪd, ˈsɑri leɪt./",
+      "zh": "付了遲到歉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The settle is done.",
+      "phonetic": "/ðə ˈsɛtəl ɪz dən./",
+      "zh": "結清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Even, yes.",
+      "phonetic": "/ˈivɪn, jɛs./",
+      "zh": "兩清。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The group is square.",
+      "phonetic": "/ðə grup ɪz skwɛr./",
+      "zh": "羣體清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Next time, same.",
+      "phonetic": "/nɛkst taɪm, seɪm./",
+      "zh": "下次同。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for splitting.",
+      "phonetic": "/θæŋks fər ˈsplɪtɪŋ./",
+      "zh": "謝謝分賬。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fair and square, pal.",
+      "phonetic": "/fɛr ənd skwɛr, pæl./",
+      "zh": "公平。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for splitting.",
+      "phonetic": "/θæŋks fər ˈsplɪtɪŋ./",
+      "zh": "謝謝分賬。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fair and square, pal.",
+      "phonetic": "/fɛr ənd skwɛr, pæl./",
+      "zh": "公平。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The group is square.",
+      "phonetic": "/ðə grup ɪz skwɛr./",
+      "zh": "羣體清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Next time, same.",
+      "phonetic": "/nɛkst taɪm, seɪm./",
+      "zh": "下次同。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The settle is done.",
+      "phonetic": "/ðə ˈsɛtəl ɪz dən./",
+      "zh": "結清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Even, yes.",
+      "phonetic": "/ˈivɪn, jɛs./",
+      "zh": "兩清。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The reminder pinged.",
+      "phonetic": "/ðə riˈmaɪndər pɪŋd./",
+      "zh": "提醒響。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Paid, sorry late.",
+      "phonetic": "/peɪd, ˈsɑri leɪt./",
+      "zh": "付了遲到歉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The total matched.",
+      "phonetic": "/ðə ˈtoʊtəl mæʧt./",
+      "zh": "總額符。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All paid, good.",
+      "phonetic": "/ɔl peɪd, gʊd./",
+      "zh": "都付好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The round two.",
+      "phonetic": "/ðə raʊnd tu./",
+      "zh": "第二輪。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same split, yes.",
+      "phonetic": "/seɪm splɪt, jɛs./",
+      "zh": "同分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app shows due.",
+      "phonetic": "/ðə æp ʃoʊz du./",
+      "zh": "App 顯應付。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pay your part.",
+      "phonetic": "/peɪ jʊr pɑrt./",
+      "zh": "付你的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cash returned.",
+      "phonetic": "/ðə kæʃ rɪˈtərnd./",
+      "zh": "現金還。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Exact, thanks.",
+      "phonetic": "/ɪgˈzækt, θæŋks./",
+      "zh": "剛好謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The split is clear.",
+      "phonetic": "/ðə splɪt ɪz klɪr./",
+      "zh": "分賬清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No confusion, yes.",
+      "phonetic": "/noʊ kənfˈjuʒən, jɛs./",
+      "zh": "不混。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The debt is small.",
+      "phonetic": "/ðə dɛt ɪz smɔl./",
+      "zh": "欠少。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Forget it, pal.",
+      "phonetic": "/fərˈgɛt ɪt, pæl./",
+      "zh": "算了吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pay link sent.",
+      "phonetic": "/ðə peɪ lɪŋk sɛnt./",
+      "zh": "付款連結寄。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tap to settle.",
+      "phonetic": "/tæp tɪ ˈsɛtəl./",
+      "zh": "點結清。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The voucher covers.",
+      "phonetic": "/ðə ˈvaʊʧər ˈkəvərz./",
+      "zh": "抵用券包。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Apply to all.",
+      "phonetic": "/əˈplaɪ tɪ ɔl./",
+      "zh": "全員用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The uneven eaten.",
+      "phonetic": "/ðə əˈnivən ˈitən./",
+      "zh": "喫不均。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Split still, yes.",
+      "phonetic": "/splɪt stɪl, jɛs./",
+      "zh": "仍分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The share is mine.",
+      "phonetic": "/ðə ʃɛr ɪz maɪn./",
+      "zh": "我的份。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sent, thanks.",
+      "phonetic": "/sɛnt, θæŋks./",
+      "zh": "轉了謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The math is quick.",
+      "phonetic": "/ðə mæθ ɪz kwɪk./",
+      "zh": "算得快。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Done, show.",
+      "phonetic": "/dən, ʃoʊ./",
+      "zh": "好，看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The separate checks.",
+      "phonetic": "/ðə ˈsɛpərˌeɪt ʧɛks./",
+      "zh": "分開結。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ask the server.",
+      "phonetic": "/æsk ðə ˈsərvər./",
+      "zh": "問服務生。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The overpaid, refund.",
+      "phonetic": "/ðə ˈoʊvərˈpeɪd, ˈriˌfənd./",
+      "zh": "多付退。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Small, keep.",
+      "phonetic": "/smɔl, kip./",
+      "zh": "少留。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rounding helps.",
+      "phonetic": "/ðə ˈraʊndɪŋ hɛlps./",
+      "zh": "取整有用。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No coins, fine.",
+      "phonetic": "/noʊ kɔɪnz, faɪn./",
+      "zh": "無零錢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The group is big.",
+      "phonetic": "/ðə grup ɪz bɪg./",
+      "zh": "羣體大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Per head, yes.",
+      "phonetic": "/pər hɛd, jɛs./",
+      "zh": "人頭。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bill is fair.",
+      "phonetic": "/ðə bɪl ɪz fɛr./",
+      "zh": "賬單公。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Count again, yes.",
+      "phonetic": "/kaʊnt əˈgɛn, jɛs./",
+      "zh": "再數。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The friend forgot.",
+      "phonetic": "/ðə frɛnd fərˈgɑt./",
+      "zh": "朋友忘。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Remind, gentle.",
+      "phonetic": "/riˈmaɪnd, ˈʤɛnəl./",
+      "zh": "輕提醒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The receipt is long.",
+      "phonetic": "/ðə rɪˈsit ɪz lɔŋ./",
+      "zh": "收據長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Itemize, then.",
+      "phonetic": "/ˈaɪtəˌmaɪz, ðɛn./",
+      "zh": "逐項。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The scan to pay.",
+      "phonetic": "/ðə skæn tɪ peɪ./",
+      "zh": "掃碼付。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Split the code.",
+      "phonetic": "/splɪt ðə koʊd./",
+      "zh": "分碼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cash is short.",
+      "phonetic": "/ðə kæʃ ɪz ʃɔrt./",
+      "zh": "現金少。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I cover, you pay back.",
+      "phonetic": "/aɪ ˈkəvər, ju peɪ bæk./",
+      "zh": "我墊你還。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The share is ten.",
+      "phonetic": "/ðə ʃɛr ɪz tɛn./",
+      "zh": "每份十塊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Transfer now.",
+      "phonetic": "/ˈtrænsfər naʊ./",
+      "zh": "現在轉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The drink was mine.",
+      "phonetic": "/ðə drɪŋk wɑz maɪn./",
+      "zh": "飲料我的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Subtract it, please.",
+      "phonetic": "/səbˈtrækt ɪt, pliz./",
+      "zh": "扣掉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The round is odd.",
+      "phonetic": "/ðə raʊnd ɪz ɑd./",
+      "zh": "金額奇。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nearest, fine.",
+      "phonetic": "/ˈnɪrəst, faɪn./",
+      "zh": "取整。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tip is shared.",
+      "phonetic": "/ðə tɪp ɪz ʃɛrd./",
+      "zh": "小費分。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Add to each.",
+      "phonetic": "/æd tɪ iʧ./",
+      "zh": "各加。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app divides.",
+      "phonetic": "/ðə æp dɪˈvaɪdz./",
+      "zh": "App 分。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Equal, yes.",
+      "phonetic": "/ˈikwəl, jɛs./",
+      "zh": "均等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I paid, reimburse.",
+      "phonetic": "/aɪ peɪd, ˌriɪmˈbərs./",
+      "zh": "我付，還我。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Send your share.",
+      "phonetic": "/sɛnd jʊr ʃɛr./",
+      "zh": "轉你的份。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Three ways, even.",
+      "phonetic": "/θri weɪz, ˈivɪn./",
+      "zh": "三分均。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Do the math.",
+      "phonetic": "/du ðə mæθ./",
+      "zh": "算。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's split the bill.",
+      "phonetic": "/lɛts splɪt ðə bɪl./",
+      "zh": "我們分賬。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "How many ways?",
+      "phonetic": "/haʊ ˈmɛni weɪz?/",
+      "zh": "分幾份？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's split the bill.",
+      "phonetic": "/lɛts splɪt ðə bɪl./",
+      "zh": "我們分賬。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "How many ways?",
+      "phonetic": "/haʊ ˈmɛni weɪz?/",
+      "zh": "分幾份？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Three ways, even.",
+      "phonetic": "/θri weɪz, ˈivɪn./",
+      "zh": "三分均。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Do the math.",
+      "phonetic": "/du ðə mæθ./",
+      "zh": "算。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I paid, reimburse.",
+      "phonetic": "/aɪ peɪd, ˌriɪmˈbərs./",
+      "zh": "我付，還我。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Send your share.",
+      "phonetic": "/sɛnd jʊr ʃɛr./",
+      "zh": "轉你的份。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app divides.",
+      "phonetic": "/ðə æp dɪˈvaɪdz./",
+      "zh": "App 分。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Equal, yes.",
+      "phonetic": "/ˈikwəl, jɛs./",
+      "zh": "均等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tip is shared.",
+      "phonetic": "/ðə tɪp ɪz ʃɛrd./",
+      "zh": "小費分。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Add to each.",
+      "phonetic": "/æd tɪ iʧ./",
+      "zh": "各加。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The round is odd.",
+      "phonetic": "/ðə raʊnd ɪz ɑd./",
+      "zh": "金額奇。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nearest, fine.",
+      "phonetic": "/ˈnɪrəst, faɪn./",
+      "zh": "取整。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The drink was mine.",
+      "phonetic": "/ðə drɪŋk wɑz maɪn./",
+      "zh": "飲料我的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Subtract it, please.",
+      "phonetic": "/səbˈtrækt ɪt, pliz./",
+      "zh": "扣掉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The share is ten.",
+      "phonetic": "/ðə ʃɛr ɪz tɛn./",
+      "zh": "每份十塊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Transfer now.",
+      "phonetic": "/ˈtrænsfər naʊ./",
+      "zh": "現在轉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cash is short.",
+      "phonetic": "/ðə kæʃ ɪz ʃɔrt./",
+      "zh": "現金少。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I cover, you pay back.",
+      "phonetic": "/aɪ ˈkəvər, ju peɪ bæk./",
+      "zh": "我墊你還。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The scan to pay.",
+      "phonetic": "/ðə skæn tɪ peɪ./",
+      "zh": "掃碼付。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Split the code.",
+      "phonetic": "/splɪt ðə koʊd./",
+      "zh": "分碼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The receipt is long.",
+      "phonetic": "/ðə rɪˈsit ɪz lɔŋ./",
+      "zh": "收據長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Itemize, then.",
+      "phonetic": "/ˈaɪtəˌmaɪz, ðɛn./",
+      "zh": "逐項。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The friend forgot.",
+      "phonetic": "/ðə frɛnd fərˈgɑt./",
+      "zh": "朋友忘。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Remind, gentle.",
+      "phonetic": "/riˈmaɪnd, ˈʤɛnəl./",
+      "zh": "輕提醒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bill is fair.",
+      "phonetic": "/ðə bɪl ɪz fɛr./",
+      "zh": "賬單公。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Count again, yes.",
+      "phonetic": "/kaʊnt əˈgɛn, jɛs./",
+      "zh": "再數。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The group is big.",
+      "phonetic": "/ðə grup ɪz bɪg./",
+      "zh": "羣體大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Per head, yes.",
+      "phonetic": "/pər hɛd, jɛs./",
+      "zh": "人頭。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rounding helps.",
+      "phonetic": "/ðə ˈraʊndɪŋ hɛlps./",
+      "zh": "取整有用。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No coins, fine.",
+      "phonetic": "/noʊ kɔɪnz, faɪn./",
+      "zh": "無零錢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The overpaid, refund.",
+      "phonetic": "/ðə ˈoʊvərˈpeɪd, ˈriˌfənd./",
+      "zh": "多付退。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Small, keep.",
+      "phonetic": "/smɔl, kip./",
+      "zh": "少留。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The separate checks.",
+      "phonetic": "/ðə ˈsɛpərˌeɪt ʧɛks./",
+      "zh": "分開結。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ask the server.",
+      "phonetic": "/æsk ðə ˈsərvər./",
+      "zh": "問服務生。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The math is quick.",
+      "phonetic": "/ðə mæθ ɪz kwɪk./",
+      "zh": "算得快。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Done, show.",
+      "phonetic": "/dən, ʃoʊ./",
+      "zh": "好，看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The share is mine.",
+      "phonetic": "/ðə ʃɛr ɪz maɪn./",
+      "zh": "我的份。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sent, thanks.",
+      "phonetic": "/sɛnt, θæŋks./",
+      "zh": "轉了謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The uneven eaten.",
+      "phonetic": "/ðə əˈnivən ˈitən./",
+      "zh": "喫不均。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Split still, yes.",
+      "phonetic": "/splɪt stɪl, jɛs./",
+      "zh": "仍分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The voucher covers.",
+      "phonetic": "/ðə ˈvaʊʧər ˈkəvərz./",
+      "zh": "抵用券包。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Apply to all.",
+      "phonetic": "/əˈplaɪ tɪ ɔl./",
+      "zh": "全員用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pay link sent.",
+      "phonetic": "/ðə peɪ lɪŋk sɛnt./",
+      "zh": "付款連結寄。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tap to settle.",
+      "phonetic": "/tæp tɪ ˈsɛtəl./",
+      "zh": "點結清。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The debt is small.",
+      "phonetic": "/ðə dɛt ɪz smɔl./",
+      "zh": "欠少。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Forget it, pal.",
+      "phonetic": "/fərˈgɛt ɪt, pæl./",
+      "zh": "算了吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The split is clear.",
+      "phonetic": "/ðə splɪt ɪz klɪr./",
+      "zh": "分賬清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No confusion, yes.",
+      "phonetic": "/noʊ kənfˈjuʒən, jɛs./",
+      "zh": "不混。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cash returned.",
+      "phonetic": "/ðə kæʃ rɪˈtərnd./",
+      "zh": "現金還。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Exact, thanks.",
+      "phonetic": "/ɪgˈzækt, θæŋks./",
+      "zh": "剛好謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app shows due.",
+      "phonetic": "/ðə æp ʃoʊz du./",
+      "zh": "App 顯應付。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pay your part.",
+      "phonetic": "/peɪ jʊr pɑrt./",
+      "zh": "付你的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The round two.",
+      "phonetic": "/ðə raʊnd tu./",
+      "zh": "第二輪。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same split, yes.",
+      "phonetic": "/seɪm splɪt, jɛs./",
+      "zh": "同分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The total matched.",
+      "phonetic": "/ðə ˈtoʊtəl mæʧt./",
+      "zh": "總額符。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All paid, good.",
+      "phonetic": "/ɔl peɪd, gʊd./",
+      "zh": "都付好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The reminder pinged.",
+      "phonetic": "/ðə riˈmaɪndər pɪŋd./",
+      "zh": "提醒響。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Paid, sorry late.",
+      "phonetic": "/peɪd, ˈsɑri leɪt./",
+      "zh": "付了遲到歉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The settle is done.",
+      "phonetic": "/ðə ˈsɛtəl ɪz dən./",
+      "zh": "結清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Even, yes.",
+      "phonetic": "/ˈivɪn, jɛs./",
+      "zh": "兩清。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The group is square.",
+      "phonetic": "/ðə grup ɪz skwɛr./",
+      "zh": "羣體清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Next time, same.",
+      "phonetic": "/nɛkst taɪm, seɪm./",
+      "zh": "下次同。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for splitting.",
+      "phonetic": "/θæŋks fər ˈsplɪtɪŋ./",
+      "zh": "謝謝分賬。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fair and square, pal.",
+      "phonetic": "/fɛr ənd skwɛr, pæl./",
+      "zh": "公平。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for splitting.",
+      "phonetic": "/θæŋks fər ˈsplɪtɪŋ./",
+      "zh": "謝謝分賬。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fair and square, pal.",
+      "phonetic": "/fɛr ənd skwɛr, pæl./",
+      "zh": "公平。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The group is square.",
+      "phonetic": "/ðə grup ɪz skwɛr./",
+      "zh": "羣體清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Next time, same.",
+      "phonetic": "/nɛkst taɪm, seɪm./",
+      "zh": "下次同。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The settle is done.",
+      "phonetic": "/ðə ˈsɛtəl ɪz dən./",
+      "zh": "結清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Even, yes.",
+      "phonetic": "/ˈivɪn, jɛs./",
+      "zh": "兩清。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The reminder pinged.",
+      "phonetic": "/ðə riˈmaɪndər pɪŋd./",
+      "zh": "提醒響。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Paid, sorry late.",
+      "phonetic": "/peɪd, ˈsɑri leɪt./",
+      "zh": "付了遲到歉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The total matched.",
+      "phonetic": "/ðə ˈtoʊtəl mæʧt./",
+      "zh": "總額符。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All paid, good.",
+      "phonetic": "/ɔl peɪd, gʊd./",
+      "zh": "都付好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The round two.",
+      "phonetic": "/ðə raʊnd tu./",
+      "zh": "第二輪。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same split, yes.",
+      "phonetic": "/seɪm splɪt, jɛs./",
+      "zh": "同分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app shows due.",
+      "phonetic": "/ðə æp ʃoʊz du./",
+      "zh": "App 顯應付。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pay your part.",
+      "phonetic": "/peɪ jʊr pɑrt./",
+      "zh": "付你的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cash returned.",
+      "phonetic": "/ðə kæʃ rɪˈtərnd./",
+      "zh": "現金還。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Exact, thanks.",
+      "phonetic": "/ɪgˈzækt, θæŋks./",
+      "zh": "剛好謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The split is clear.",
+      "phonetic": "/ðə splɪt ɪz klɪr./",
+      "zh": "分賬清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No confusion, yes.",
+      "phonetic": "/noʊ kənfˈjuʒən, jɛs./",
+      "zh": "不混。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The debt is small.",
+      "phonetic": "/ðə dɛt ɪz smɔl./",
+      "zh": "欠少。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Forget it, pal.",
+      "phonetic": "/fərˈgɛt ɪt, pæl./",
+      "zh": "算了吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pay link sent.",
+      "phonetic": "/ðə peɪ lɪŋk sɛnt./",
+      "zh": "付款連結寄。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tap to settle.",
+      "phonetic": "/tæp tɪ ˈsɛtəl./",
+      "zh": "點結清。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The voucher covers.",
+      "phonetic": "/ðə ˈvaʊʧər ˈkəvərz./",
+      "zh": "抵用券包。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Apply to all.",
+      "phonetic": "/əˈplaɪ tɪ ɔl./",
+      "zh": "全員用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The uneven eaten.",
+      "phonetic": "/ðə əˈnivən ˈitən./",
+      "zh": "喫不均。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Split still, yes.",
+      "phonetic": "/splɪt stɪl, jɛs./",
+      "zh": "仍分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The share is mine.",
+      "phonetic": "/ðə ʃɛr ɪz maɪn./",
+      "zh": "我的份。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sent, thanks.",
+      "phonetic": "/sɛnt, θæŋks./",
+      "zh": "轉了謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The math is quick.",
+      "phonetic": "/ðə mæθ ɪz kwɪk./",
+      "zh": "算得快。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Done, show.",
+      "phonetic": "/dən, ʃoʊ./",
+      "zh": "好，看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The separate checks.",
+      "phonetic": "/ðə ˈsɛpərˌeɪt ʧɛks./",
+      "zh": "分開結。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ask the server.",
+      "phonetic": "/æsk ðə ˈsərvər./",
+      "zh": "問服務生。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The overpaid, refund.",
+      "phonetic": "/ðə ˈoʊvərˈpeɪd, ˈriˌfənd./",
+      "zh": "多付退。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Small, keep.",
+      "phonetic": "/smɔl, kip./",
+      "zh": "少留。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rounding helps.",
+      "phonetic": "/ðə ˈraʊndɪŋ hɛlps./",
+      "zh": "取整有用。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No coins, fine.",
+      "phonetic": "/noʊ kɔɪnz, faɪn./",
+      "zh": "無零錢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The group is big.",
+      "phonetic": "/ðə grup ɪz bɪg./",
+      "zh": "羣體大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Per head, yes.",
+      "phonetic": "/pər hɛd, jɛs./",
+      "zh": "人頭。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bill is fair.",
+      "phonetic": "/ðə bɪl ɪz fɛr./",
+      "zh": "賬單公。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Count again, yes.",
+      "phonetic": "/kaʊnt əˈgɛn, jɛs./",
+      "zh": "再數。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The friend forgot.",
+      "phonetic": "/ðə frɛnd fərˈgɑt./",
+      "zh": "朋友忘。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Remind, gentle.",
+      "phonetic": "/riˈmaɪnd, ˈʤɛnəl./",
+      "zh": "輕提醒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The receipt is long.",
+      "phonetic": "/ðə rɪˈsit ɪz lɔŋ./",
+      "zh": "收據長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Itemize, then.",
+      "phonetic": "/ˈaɪtəˌmaɪz, ðɛn./",
+      "zh": "逐項。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The scan to pay.",
+      "phonetic": "/ðə skæn tɪ peɪ./",
+      "zh": "掃碼付。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Split the code.",
+      "phonetic": "/splɪt ðə koʊd./",
+      "zh": "分碼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cash is short.",
+      "phonetic": "/ðə kæʃ ɪz ʃɔrt./",
+      "zh": "現金少。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I cover, you pay back.",
+      "phonetic": "/aɪ ˈkəvər, ju peɪ bæk./",
+      "zh": "我墊你還。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The share is ten.",
+      "phonetic": "/ðə ʃɛr ɪz tɛn./",
+      "zh": "每份十塊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Transfer now.",
+      "phonetic": "/ˈtrænsfər naʊ./",
+      "zh": "現在轉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The drink was mine.",
+      "phonetic": "/ðə drɪŋk wɑz maɪn./",
+      "zh": "飲料我的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Subtract it, please.",
+      "phonetic": "/səbˈtrækt ɪt, pliz./",
+      "zh": "扣掉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The round is odd.",
+      "phonetic": "/ðə raʊnd ɪz ɑd./",
+      "zh": "金額奇。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nearest, fine.",
+      "phonetic": "/ˈnɪrəst, faɪn./",
+      "zh": "取整。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tip is shared.",
+      "phonetic": "/ðə tɪp ɪz ʃɛrd./",
+      "zh": "小費分。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Add to each.",
+      "phonetic": "/æd tɪ iʧ./",
+      "zh": "各加。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app divides.",
+      "phonetic": "/ðə æp dɪˈvaɪdz./",
+      "zh": "App 分。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Equal, yes.",
+      "phonetic": "/ˈikwəl, jɛs./",
+      "zh": "均等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I paid, reimburse.",
+      "phonetic": "/aɪ peɪd, ˌriɪmˈbərs./",
+      "zh": "我付，還我。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Send your share.",
+      "phonetic": "/sɛnd jʊr ʃɛr./",
+      "zh": "轉你的份。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Three ways, even.",
+      "phonetic": "/θri weɪz, ˈivɪn./",
+      "zh": "三分均。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Do the math.",
+      "phonetic": "/du ðə mæθ./",
+      "zh": "算。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's split the bill.",
+      "phonetic": "/lɛts splɪt ðə bɪl./",
+      "zh": "我們分賬。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "How many ways?",
+      "phonetic": "/haʊ ˈmɛni weɪz?/",
+      "zh": "分幾份？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's split the bill.",
+      "phonetic": "/lɛts splɪt ðə bɪl./",
+      "zh": "我們分賬。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "How many ways?",
+      "phonetic": "/haʊ ˈmɛni weɪz?/",
+      "zh": "分幾份？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Three ways, even.",
+      "phonetic": "/θri weɪz, ˈivɪn./",
+      "zh": "三分均。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Do the math.",
+      "phonetic": "/du ðə mæθ./",
+      "zh": "算。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I paid, reimburse.",
+      "phonetic": "/aɪ peɪd, ˌriɪmˈbərs./",
+      "zh": "我付，還我。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Send your share.",
+      "phonetic": "/sɛnd jʊr ʃɛr./",
+      "zh": "轉你的份。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app divides.",
+      "phonetic": "/ðə æp dɪˈvaɪdz./",
+      "zh": "App 分。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Equal, yes.",
+      "phonetic": "/ˈikwəl, jɛs./",
+      "zh": "均等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tip is shared.",
+      "phonetic": "/ðə tɪp ɪz ʃɛrd./",
+      "zh": "小費分。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Add to each.",
+      "phonetic": "/æd tɪ iʧ./",
+      "zh": "各加。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The round is odd.",
+      "phonetic": "/ðə raʊnd ɪz ɑd./",
+      "zh": "金額奇。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nearest, fine.",
+      "phonetic": "/ˈnɪrəst, faɪn./",
+      "zh": "取整。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The drink was mine.",
+      "phonetic": "/ðə drɪŋk wɑz maɪn./",
+      "zh": "飲料我的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Subtract it, please.",
+      "phonetic": "/səbˈtrækt ɪt, pliz./",
+      "zh": "扣掉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The share is ten.",
+      "phonetic": "/ðə ʃɛr ɪz tɛn./",
+      "zh": "每份十塊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Transfer now.",
+      "phonetic": "/ˈtrænsfər naʊ./",
+      "zh": "現在轉。"
+    }
+  ]
+}

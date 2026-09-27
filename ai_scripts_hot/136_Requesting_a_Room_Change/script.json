@@ -1,0 +1,2458 @@
+{
+  "title": "Everyday Phrases — Requesting a Room Change",
+  "title_zh": "換酒店房間",
+  "scene_zh": "換酒店房間 · 情境對話",
+  "title_quote": "Hi there, do you have a minute?",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】🏨 實用換酒店房間必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — Requesting a Room Change",
+  "youtube_description": "睡著學英文！這部影片收錄實用換酒店房間情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫），不用背，睡前聽就會。重複播放，讓英文自然進入你的大腦。👍 想學更多旅行場景，請留言告訴我！別忘了訂閱+按讚。 #英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical Requesting a Room Change phrase pairs (each pair: male normal speed → female slow speed → combined dialogue). No memorization needed—just listen before bed and absorb naturally. If you want more real-life travel scenarios, leave a comment! Subscribe and like!",
+  "youtube_tags": [
+    "英文聽力",
+    "睡前英文",
+    "換酒店房間英文",
+    "旅行英文",
+    "Hotel English",
+    "Room change English",
+    "English listening",
+    "Sleep learning",
+    "A2 English",
+    "常用英文短語",
+    "慢速英文",
+    "英文口語",
+    "Learn English",
+    "ESL",
+    "English conversation",
+    "住宿英文"
+  ],
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "Requesting a Room Change",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "Requesting a Room Change",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Travel",
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "Hi there, do you have a minute?",
+      "phonetic": "/haɪ ðɛr du ju hæv ə ˈmɪnɪt./",
+      "zh": "嗨，您有一分鐘聽我說嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Always, what can I do for you?",
+      "phonetic": "/ˈɔlˌweɪz wʌt kæn aɪ du fər juː?/",
+      "zh": "當然可以，您需要我做些什麼？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Well, I need a favor this morning.",
+      "phonetic": "/wɛl aɪ nid ə ˈfeɪvər ðɪs ˈmɔːrnɪŋ./",
+      "zh": "嗯，今早想請您幫個忙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, is everything okay?",
+      "phonetic": "/ʃʊr ɪz ˈɛvriˌθɪŋ oʊˈkeɪ?/",
+      "zh": "當然，一切都還好嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Something is wrong with my room.",
+      "phonetic": "/ˈsʌmθɪŋ ɪz rɔŋ wɪð maɪ rum./",
+      "zh": "我的房間有點問題。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Oh no, which room is it?",
+      "phonetic": "/oʊ noʊ wɪtʃ rum ɪz ɪt?/",
+      "zh": "天啊，是哪間房？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It is room 502 on the fifth floor.",
+      "phonetic": "/ɪt ɪz rum faɪv oʊ tuː ɑːn ðə faɪfθ flɔːr./",
+      "zh": "是五樓的 502 房。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thanks, and what is the problem?",
+      "phonetic": "/θæŋks ænd wʌt ɪz ðə ˈprɑːbləm?/",
+      "zh": "好的，問題是什麼？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The air conditioner is very loud.",
+      "phonetic": "/ði ɛr kənˈdɪʃənɚ ɪz ˈvɛri laʊd./",
+      "zh": "房間的冷氣非常吵。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "How loud is it at night?",
+      "phonetic": "/haʊ laʊd ɪz ɪt æt naɪt?/",
+      "zh": "晚上能有多吵？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It makes a big noise all night.",
+      "phonetic": "/ɪt meɪks ə bɪɡ nɔɪz ɔːl naɪt./",
+      "zh": "它整晚吵個不停。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That sounds hard to sleep through.",
+      "phonetic": "/ðæt saʊndz hɑːrd tə slip θruː./",
+      "zh": "那根本很難入睡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Last night I slept almost nothing.",
+      "phonetic": "/læst naɪt aɪ slɛpt ˈɔːlˌmoʊst ˈnʌθɪŋ./",
+      "zh": "昨晚我幾乎沒闔眼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I am sorry to hear that.",
+      "phonetic": "/aɪ æm ˈsɑːri tə hɪr ðæt./",
+      "zh": "聽了真讓人過意不去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My head hurts this morning.",
+      "phonetic": "/maɪ hɛd hɜːrts ðɪs ˈmɔːrnɪŋ./",
+      "zh": "今天早上頭痛欲裂。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Bad nights always bring headaches.",
+      "phonetic": "/bæd naɪts ˈɔlˌweɪz brɪŋ ˈhɛdeɪks./",
+      "zh": "沒睡好的隔天總會頭痛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So now I feel tired all day.",
+      "phonetic": "/soʊ naʊ aɪ fil ˈtaɪərd ɔːl deɪ./",
+      "zh": "所以這一整天我都睏得受不了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is truly our fault.",
+      "phonetic": "/ðæt ɪz ˈtruːli ˈaʊər fɔːlt./",
+      "zh": "那確實是我們的過失。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "There is also a strange smell.",
+      "phonetic": "/ðɛr ɪz ˈɔːlsoʊ ə streɪndʒ smɛl./",
+      "zh": "房間還有股怪味。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A smell, maybe like smoke?",
+      "phonetic": "/ə smɛl ˈmeɪbi laɪk smoʊk?/",
+      "zh": "怪味，像是煙味嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "No, it smells like old water.",
+      "phonetic": "/noʊ ɪt smɛlz laɪk oʊld ˈwɔtər./",
+      "zh": "不，聞起來像放舊的水。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hmm, that is not normal.",
+      "phonetic": "/hʌm ðæt ɪz nɑːt ˈnɔːrməl./",
+      "zh": "嗯，這不太正常。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The smell gets worse at night.",
+      "phonetic": "/ðə smɛl ɡɛts wɜːrs æt naɪt./",
+      "zh": "味道晚上更嚴重。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "When did you first notice it?",
+      "phonetic": "/wɛn dɪd ju fɜːrst ˈnoʊtɪs ɪt?/",
+      "zh": "您什麼時候發現的？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It was there when I walked in.",
+      "phonetic": "/ɪt wɑːz ðɛr wɛn aɪ wɔːkt ɪn./",
+      "zh": "一進門當下就聞到了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So it started on day one.",
+      "phonetic": "/soʊ ɪt ˈstɑːrtɪd ɑːn deɪ wʌn./",
+      "zh": "那就是一開始就有。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "There is a gray stain by the bed.",
+      "phonetic": "/ðɛr ɪz ə ɡreɪ steɪn baɪ ðə bɛd./",
+      "zh": "床邊還有一塊灰灰的水漬。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let me write that down now.",
+      "phonetic": "/lɛt mi raɪt ðæt daʊn naʊ./",
+      "zh": "讓我先把這點記下來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Those pipes behind the bed look wet.",
+      "phonetic": "/ðoʊz paɪps bɪˈhaɪnd ðə bɛd lʊk wɛt./",
+      "zh": "床後面那些管子看起來濕濕的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A leak can cause that smell.",
+      "phonetic": "/ə liːk kæn kɔːz ðæt smɛl./",
+      "zh": "漏水確實會造成這種味道。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "And the window will not close.",
+      "phonetic": "/ænd ðə ˈwɪndoʊ wɪl nɑːt kloʊz./",
+      "zh": "而且窗戶關不上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Is your room cold then?",
+      "phonetic": "/ɪz jɔːr rum koʊld ðɛn?/",
+      "zh": "那房間一定很冷吧？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Cold air comes in all night.",
+      "phonetic": "/koʊld ɛr kʌmz ɪn ɔːl naɪt./",
+      "zh": "冷風整晚灌進來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That explains your sore throat.",
+      "phonetic": "/ðæt ɪkˈspleɪnz jɔːr sɔːr θroʊt./",
+      "zh": "難怪您會喉嚨痛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My throat hurts when I speak.",
+      "phonetic": "/maɪ θroʊt hɜːrts wɛn aɪ spik./",
+      "zh": "我說話時喉嚨都痛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold on, I will send up some water.",
+      "phonetic": "/hoʊld ɑːn aɪ wɪl sɛnd ʌp sʌm ˈwɔtər./",
+      "zh": "稍等，我叫人送些水上來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The TV has no picture either.",
+      "phonetic": "/ði ˌtiːˈvi ˈhæz noʊ ˈpɪktʃər ˈiːðɚ./",
+      "zh": "電視也沒有畫面。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Does the power light come on?",
+      "phonetic": "/dʌz ðə ˈpaʊər laɪt kʌm ɑːn?/",
+      "zh": "電源指示燈會亮嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, but the screen stays black.",
+      "phonetic": "/jɛs bʌt ðə skrin steɪz blæk./",
+      "zh": "亮是亮著，螢幕卻一片黑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Okay, I understand so far.",
+      "phonetic": "/oʊˈkeɪ aɪ ˌʌndərˈstænd soʊ fɑːr./",
+      "zh": "好，目前的情況我了解了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sorry to bring you bad news.",
+      "phonetic": "/ˈsɑːri tə brɪŋ ju bæd nuz./",
+      "zh": "抱歉帶來這麼多壞消息。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Please do not worry about it.",
+      "phonetic": "/pliz du nɑːt ˈwɜːri əˈbaʊt ɪt./",
+      "zh": "請別擔心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bed sheets feel dirty too.",
+      "phonetic": "/ðə bɛd ʃits fil ˈdərti tuː./",
+      "zh": "床單感覺也是髒的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That should never happen, truly.",
+      "phonetic": "/ðæt ʃʊd ˈnɛvər ˈhæpən ˈtruːli./",
+      "zh": "那絕對不該發生。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I checked it when I arrived.",
+      "phonetic": "/aɪ tʃɛkt ɪt wɛn aɪ əˈraɪvd./",
+      "zh": "我入住時檢查過的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Did you see the dirt then?",
+      "phonetic": "/dɪd ju si ðə dərt ðɛn?/",
+      "zh": "那時候有看到污漬嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "No, it looked clean at first.",
+      "phonetic": "/noʊ ɪt lʊkt klin æt fɜːrst./",
+      "zh": "沒有，一開始看著挺乾淨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Strange, maybe it got worse later.",
+      "phonetic": "/streɪndʒ ˈmeɪbi ɪt ɡɑːt wɜːrs ˈleɪtər./",
+      "zh": "奇怪，也許是後來才變糟。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A dark mark appeared on my pillow.",
+      "phonetic": "/ə dɑːrk mɑːrk əˈpɪərd ɑːn maɪ ˈpɪloʊ./",
+      "zh": "枕頭上出現一塊深色的痕跡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A mark on fresh sheets?",
+      "phonetic": "/ə mɑːrk ɑːn frɛʃ ʃits?/",
+      "zh": "剛換的床單上有污漬？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, right where my head rests.",
+      "phonetic": "/jɛs raɪt wɛr maɪ hɛd rɛsts./",
+      "zh": "對，就在我頭靠著的位置。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I am so embarrassed by that.",
+      "phonetic": "/aɪ æm soʊ ɪmˈbɛrəst baɪ ðæt./",
+      "zh": "那真讓我感到慚愧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Honestly, I feel a bit upset.",
+      "phonetic": "/ˈɑːnəstli aɪ fil ə bɪt ʌpˈsɛt./",
+      "zh": "說實話，我有點生氣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I understand, you came here to rest.",
+      "phonetic": "/aɪ ˌʌndərˈstænd ju keɪm hɪr tə rɛst./",
+      "zh": "我懂，您來這裡就是為了休息。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I have a big meeting tomorrow.",
+      "phonetic": "/aɪ hæv ə bɪɡ ˈmitɪŋ təˈmɑːroʊ./",
+      "zh": "我明天有個重要會議。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So sleep really matters tonight.",
+      "phonetic": "/soʊ slip ˈrɪəli ˈmætərz təˈnaɪt./",
+      "zh": "所以今晚睡好非常關鍵。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I just need a quiet place.",
+      "phonetic": "/aɪ dʒʌst nid ə ˈkwaɪət pleɪs./",
+      "zh": "我只需要一個安靜的地方。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can try to fix things.",
+      "phonetic": "/wi kæn traɪ tə fɪks θɪŋz./",
+      "zh": "我們可以設法修理。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can a repair man come tonight?",
+      "phonetic": "/kæn ə rɪˈpɛr mæn kʌm təˈnaɪt?/",
+      "zh": "維修人員今晚能來嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "He works only in daytime.",
+      "phonetic": "/hi wɜːrks ˈoʊnli ɪn ˈdeɪˌtaɪm./",
+      "zh": "他只有白天值班。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then repairs will take too long.",
+      "phonetic": "/ðɛn rɪˈpɛrz wɪl teɪk tuː lɔːŋ./",
+      "zh": "那修理就要拖太久了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, a full fix needs hours.",
+      "phonetic": "/jɛs ə fʊl fɪks nidz ˈaʊərz./",
+      "zh": "是啊，整修要好幾個小時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I cannot wait that long, sorry.",
+      "phonetic": "/aɪ ˈkænɑt weɪt ðæt lɔːŋ ˈsɑːri./",
+      "zh": "我等不了那麼久，抱歉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I agree, waiting is not good.",
+      "phonetic": "/aɪ əˈɡriː ˈweɪtɪŋ ɪz nɑːt ɡʊd./",
+      "zh": "我同意，乾等不是辦法。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is there any way around this?",
+      "phonetic": "/ɪz ðɛr ˈɛni weɪ əˈraʊnd ðɪs?/",
+      "zh": "那還有別的辦法嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "There is one easy option.",
+      "phonetic": "/ðɛr ɪz wʌn ˈizi ˈɑːpʃən./",
+      "zh": "有一個簡單的辦法。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What option? Please tell me.",
+      "phonetic": "/wʌt ˈɑːpʃən pliz tɛl mi./",
+      "zh": "什麼辦法？請告訴我。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You could move to another room.",
+      "phonetic": "/ju kʊd muːv tə əˈnʌðər rum./",
+      "zh": "您可以換一間房間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Really? Can I change rooms tonight?",
+      "phonetic": "/ˈrɪəli kæn aɪ tʃeɪndʒ rumz təˈnaɪt?/",
+      "zh": "真的嗎？今晚就能換房？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, if we have a free one.",
+      "phonetic": "/jɛs ɪf wi hæv ə fri wʌn./",
+      "zh": "可以，只要有空房。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have any quiet rooms?",
+      "phonetic": "/du ju hæv ˈɛni ˈkwaɪət rumz?/",
+      "zh": "你們有安靜的房間嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Some rooms face the back garden.",
+      "phonetic": "/sʌm rumz feɪs ðə bæk ˈɡɑːrdən./",
+      "zh": "有些房間面向後花園。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A garden room sounds really nice.",
+      "phonetic": "/ə ˈɡɑːrdən rum saʊndz ˈrɪəli naɪs./",
+      "zh": "花園房聽起來很棒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Those are our calmest rooms.",
+      "phonetic": "/ðoʊz ɑːr ˈaʊər ˈkɑːlməst rumz./",
+      "zh": "那是我們最安靜的房型。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "No loud machines next to them?",
+      "phonetic": "/noʊ laʊd məˈʃinz nɛkst tə ðɛm?/",
+      "zh": "旁邊沒有吵雜的機器嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Correct, that side is peaceful.",
+      "phonetic": "/kəˈrɛkt ðæt saɪd ɪz ˈpisfəl./",
+      "zh": "沒錯，那一側非常安靜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "And no street noise at all?",
+      "phonetic": "/ænd noʊ strit nɔɪz æt ɔːl?/",
+      "zh": "也完全聽不到街上的聲音？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Not a sound from the street.",
+      "phonetic": "/nɑːt ə saʊnd frʌm ðə strit./",
+      "zh": "街上的聲音一點也沒有。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I would love a room like that.",
+      "phonetic": "/aɪ wʊd lʌv ə rum laɪk ðæt./",
+      "zh": "我好想要那樣的一間房。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let me search our empty rooms.",
+      "phonetic": "/lɛt mi sɜːrtʃ ˈaʊər ˈɛmti rumz./",
+      "zh": "讓我查一下現有空房。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How long will the search take?",
+      "phonetic": "/haʊ lɔːŋ wɪl ðə sɜːrtʃ teɪk?/",
+      "zh": "查一下要多久？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just one minute, I am looking.",
+      "phonetic": "/dʒʌst wʌn ˈmɪnɪt aɪ æm ˈlʊkɪŋ./",
+      "zh": "一分鐘就好，我正在看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "No problem, I am free today.",
+      "phonetic": "/noʊ ˈprɑbləm aɪ æm fri təˈdeɪ./",
+      "zh": "沒問題，我今天沒有行程。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thanks for being so patient.",
+      "phonetic": "/θæŋks fər biɪŋ soʊ ˈpeɪʃənt./",
+      "zh": "謝謝您這麼有耐心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The system loads a bit slowly.",
+      "phonetic": "/ðə ˈsɪstəm loʊdz ə bɪt ˈsloʊli./",
+      "zh": "系統載入得有點慢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No rush at all, take it easy.",
+      "phonetic": "/noʊ rʌʃ æt ɔːl teɪk ɪt ˈizi./",
+      "zh": "完全不趕，您放輕鬆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Found it, two rooms are free.",
+      "phonetic": "/faʊnd ɪt tuː rumz ɑːr friː./",
+      "zh": "找到了，有兩間空房。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great news! Where are they?",
+      "phonetic": "/ɡreɪt nuz wɛr ɑːr ðeɪ?/",
+      "zh": "太好了！它們在哪裡？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Room seven ten and room eight fifteen.",
+      "phonetic": "/rum ˈsɛvən tɛn ænd rum eɪt fɪfˈtin./",
+      "zh": "710 房和 815 房。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Which floor is room 710 on?",
+      "phonetic": "/wɪtʃ flɔːr ɪz rum ˈsɛvən oʊ tuː ɑːn?/",
+      "zh": "710 在哪一樓？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Seventh floor, 815 is on eighth.",
+      "phonetic": "/ˈsɛvənθ flɔːr eɪt wʊn faɪv ɑːn eɪtθ./",
+      "zh": "七樓，815 在八樓。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Is 710 a big room?",
+      "phonetic": "/ɪz ˈsɛvən oʊ tuː ə bɪɡ rum?/",
+      "zh": "710 房間大嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It has a king bed and a desk.",
+      "phonetic": "/ɪt hæz ə kɪŋ bɛd ænd ə dɛsk./",
+      "zh": "裡面有加大床，還有書桌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A desk helps my work tonight.",
+      "phonetic": "/ə dɛsk hɛlps maɪ wɜːrk təˈnaɪt./",
+      "zh": "有書桌正適合我今晚工作。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "815 is smaller but has a sofa.",
+      "phonetic": "/eɪt wʊn faɪv ɪz ˈsmɔːlər bʌt hæz ə ˈsoʊfə./",
+      "zh": "815 小一點，但有沙發。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hmm, I like the sound of 710.",
+      "phonetic": "/hʌm aɪ laɪk ðə saʊnd ʌv ˈsɛvən oʊ tuː./",
+      "zh": "嗯，我還是比較喜歡 710。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good pick, 710 is very popular.",
+      "phonetic": "/ɡʊd pɪk ˈsɛvən oʊ tuː ɪz ˈvɛri ˈpɑːpjəlɚ./",
+      "zh": "選得好，710 很受歡迎。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Is anyone staying there tonight?",
+      "phonetic": "/ɪz ˈɛniwʌn ˈsteɪɪŋ ðɛr təˈnaɪt?/",
+      "zh": "今晚裡面有人住嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "No, it has been empty all week.",
+      "phonetic": "/noʊ ɪt hæz bɪn ˈɛmti ɔl wiːk./",
+      "zh": "沒有，它空了整個星期。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Perfect, can I move tonight?",
+      "phonetic": "/ˈpɜːrfɪkt kæn aɪ muːv təˈnaɪt?/",
+      "zh": "太好了，我今晚能搬嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "First, let me truly apologize.",
+      "phonetic": "/fɜːrst lɛt mi ˈtruːli əˈpɑːləˌdʒaɪz./",
+      "zh": "首先，請接受我真誠的道歉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thank you, I feel better already.",
+      "phonetic": "/θæŋk juː aɪ fil ˈbɛtər ɔːlˈrɛdi./",
+      "zh": "謝謝，我心情已經好多了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This is not the stay we promise.",
+      "phonetic": "/ðɪs ɪz nɑːt ðə steɪ wi ˈprɑmɪs./",
+      "zh": "這不是我們承諾的住宿品質。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mistakes happen, it is okay.",
+      "phonetic": "/mɪˈsteɪks ˈhæpən ɪt ɪz oʊˈkeɪ./",
+      "zh": "難免有失誤，沒關係。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We will make it right tonight.",
+      "phonetic": "/wi wɪl meɪk ɪt raɪt təˈnaɪt./",
+      "zh": "今晚我們會把一切處理好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is good to hear.",
+      "phonetic": "/ðæt ɪz ɡʊd tə hɪr./",
+      "zh": "聽您這麼說我就放心了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now, about the room price.",
+      "phonetic": "/naʊ əˈbaʊt ðə rum praɪs./",
+      "zh": "再來是房間費用的問題。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Is 710 more expensive?",
+      "phonetic": "/ɪz ˈsɛvən oʊ tuː mɔːr ɪkˈspɛnsɪv?/",
+      "zh": "710 會比較貴嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It usually costs twenty dollars more.",
+      "phonetic": "/ɪt ˈjuʒəwəli kɔːsts ˈtwɛnti ˈdɑːlərz mɔːr./",
+      "zh": "它通常要多二十美元。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So it is a paid upgrade?",
+      "phonetic": "/soʊ ɪt ɪz ə peɪd ˈʌpˌɡreɪd?/",
+      "zh": "所以升級要加錢？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "But we will not charge you.",
+      "phonetic": "/bʌt wi wɪl nɑːt tʃɑːrdʒ juː./",
+      "zh": "但我們不會向您收費。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Really? No extra cost at all?",
+      "phonetic": "/ˈrɪəli noʊ ˈɛkstrə kɔːst æt ɔːl?/",
+      "zh": "真的嗎？完全不用加錢？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Our mistake means our bill.",
+      "phonetic": "/ˈaʊər mɪˈsteɪk minz ˈaʊər bɪl./",
+      "zh": "我們的疏失，費用該我們出。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is very fair of you.",
+      "phonetic": "/ðæt ɪz ˈvɛri fɛər ʌv juː./",
+      "zh": "你們這樣很講道理。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your price stays the same tonight.",
+      "phonetic": "/jɔːr praɪs steɪz ðə seɪm təˈnaɪt./",
+      "zh": "今晚您的房價不變。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So I pay nothing new?",
+      "phonetic": "/soʊ aɪ peɪ ˈnʌθɪŋ nu?/",
+      "zh": "所以我不用多付一分錢？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You already paid for room 502.",
+      "phonetic": "/ju ɔːlˈrɛdi peɪd fər rum faɪv oʊ tuː./",
+      "zh": "您已經付過 502 的房錢了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And the new room is free?",
+      "phonetic": "/ænd ðə nu rum ɪz friː?/",
+      "zh": "新房間就免費住？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, and two floors higher too.",
+      "phonetic": "/jɛs ænd tuː flɔːrz ˈhaɪər tuː./",
+      "zh": "對，還整整高了兩層樓。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A free upgrade, what a surprise.",
+      "phonetic": "/ə friː ˈʌpˌɡreɪd wʌt ə səˈpraɪz./",
+      "zh": "免費升等，真沒想到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Some upgrades do cost money.",
+      "phonetic": "/sʌm ˈʌpˌɡreɪdz duː kɔːst ˈmʌni./",
+      "zh": "有些升級確實要錢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "But not this one, luckily.",
+      "phonetic": "/bʌt nɑːt ðɪs wʌn ˈlʌkəli./",
+      "zh": "但這一次不用，真幸運。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let me update your booking record.",
+      "phonetic": "/lɛt mi ˈəpˌdeɪt jɔːr ˈbʊkɪŋ ˈrɛkərd./",
+      "zh": "讓我更新您的訂房紀錄。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Do you need my passport?",
+      "phonetic": "/du ju nid maɪ ˈpæspɔːrt?/",
+      "zh": "需要我的護照嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Just your name and new room.",
+      "phonetic": "/dʒʌst jɔːr neɪm ænd nu rum./",
+      "zh": "只要您的姓名和新房號。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My name is already on it?",
+      "phonetic": "/maɪ neɪm ɪz ɔːlˈrɛdi ɑːn ɪt?/",
+      "zh": "單子上已經有我的名字了？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will print a small slip.",
+      "phonetic": "/aɪ wɪl prɪnt ə smɔːl slɪp./",
+      "zh": "我會印一張小單子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What does the slip show?",
+      "phonetic": "/wʌt dʌz ðə slɪp ʃoʊ?/",
+      "zh": "那張單子會顯示什麼？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your room number and stay dates.",
+      "phonetic": "/jɔːr rum ˈnʌmbər ænd steɪ deɪts./",
+      "zh": "您的房號和住宿日期。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Do I keep the old slip?",
+      "phonetic": "/du aɪ kip ðə oʊld slɪp?/",
+      "zh": "舊的那張我還留著嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "No, we cancel that one today.",
+      "phonetic": "/noʊ wi ˈkænsl ðæt wʌn təˈdeɪ./",
+      "zh": "不用，今天那張就作廢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Okay, that all sounds fine.",
+      "phonetic": "/oʊˈkeɪ ðæt ɔːl saʊndz faɪn./",
+      "zh": "好，這些安排都沒問題。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You need to sign one page.",
+      "phonetic": "/ju nid tə saɪn wʌn peɪdʒ./",
+      "zh": "有一頁需要您簽名。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Where do I sign this form?",
+      "phonetic": "/wɛr du aɪ saɪn ðɪs fɔːrm?/",
+      "zh": "這張表格要簽在哪裡？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Right here on the bottom line.",
+      "phonetic": "/raɪt hɪr ɑːn ðə ˈbɑːtəm laɪn./",
+      "zh": "就在這裡，最下面那條線。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Done, is everything correct?",
+      "phonetic": "/dʌn ɪz ˈɛvriθɪŋ kəˈrɛkt?/",
+      "zh": "簽好了，都正確嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, thanks, it looks perfect.",
+      "phonetic": "/jɛs θæŋks ɪt lʊks ˈpɜːrfɪkt./",
+      "zh": "是的，看起來完全正確。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Is my name spelled right?",
+      "phonetic": "/ɪz maɪ neɪm spɛld raɪt?/",
+      "zh": "我的名字拼對了嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, spelled right. Here is your new key.",
+      "phonetic": "/jɛs spɛld raɪt hɪr ɪz jɔːr nu ki./",
+      "zh": "對，拼對了，這是您的新房卡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Does the old key stop working?",
+      "phonetic": "/dʌz ðə oʊld kiː stɑːp ˈwɜːrkɪŋ?/",
+      "zh": "舊卡會失效嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, 502 will not open anymore.",
+      "phonetic": "/jɛs faɪv oʊ tuː wɪl nɑːt ˈoʊpən ˌɛniˈmɔːr./",
+      "zh": "會，502 的門就打不開了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And this card opens 710?",
+      "phonetic": "/ænd ðɪs kɑːrd ˈoʊpənz ˈsɛvən oʊ tuː?/",
+      "zh": "這張卡就能開 710？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Correct, it works on the elevator.",
+      "phonetic": "/kəˈrɛkt ɪt wɜːrks ɑːn ði ˈɛləˌveɪtər./",
+      "zh": "沒錯，搭電梯也要用它。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Can the elevator reach floor seven?",
+      "phonetic": "/kæn ði ˈɛləˌveɪtər ritʃ flɔːr ˈsɛvən?/",
+      "zh": "電梯可以到七樓嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Of course, just tap your card.",
+      "phonetic": "/ʌv kɔːrs dʒʌst tæp jɔːr kɑːrd./",
+      "zh": "當然，把卡輕拍一下就行。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Do I tap it like this?",
+      "phonetic": "/du aɪ tæp ɪt laɪk ðɪs?/",
+      "zh": "像這樣拍卡嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, one tap starts the elevator.",
+      "phonetic": "/jɛs wʌn tæp stɑːrts ði ˈɛləˌveɪtər./",
+      "zh": "對，拍一下電梯就啟動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Got it, that seems easy.",
+      "phonetic": "/ɡɑːt ɪt ðæt simz ˈizi./",
+      "zh": "會了，看起來不難。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please keep the card on you.",
+      "phonetic": "/pliz kip ðə kɑːrd ɑːn juː./",
+      "zh": "請把卡隨身帶著。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What if I lose it?",
+      "phonetic": "/wʌt ɪf aɪ luːz ɪt?/",
+      "zh": "要是弄丟了怎麼辦？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then come back, we make a new one.",
+      "phonetic": "/ðɛn kʌm bæk wi meɪk ə nu wʌn./",
+      "zh": "那就再下來，我們重做一張。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Okay, I will watch it closely.",
+      "phonetic": "/oʊˈkeɪ aɪ wɪl wɑtʃ ɪt ˈkloʊsli./",
+      "zh": "好，我會小心收好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "When can I move my things?",
+      "phonetic": "/wɛn kæn aɪ muːv maɪ θɪŋz?/",
+      "zh": "我什麼時候可以搬東西？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The new room is ready now.",
+      "phonetic": "/ðə nu rum ɪz ˈrɛdi naʊ./",
+      "zh": "新房間現在就準備好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My bags are really heavy.",
+      "phonetic": "/maɪ bæɡz ɑːr ˈrɪəli ˈhɛvi./",
+      "zh": "我的行李真的很重。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Our staff can carry them up.",
+      "phonetic": "/ˈaʊər stæf kæn ˈkæri ðɛm ʌp./",
+      "zh": "我們的員工可以幫忙搬上去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is someone free to help me?",
+      "phonetic": "/ɪz ˈsʌmwʌn fri tə hɛlp miː?/",
+      "zh": "現在有人有空幫我嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sam is on duty tonight.",
+      "phonetic": "/sæm ɪz ɑːn ˈduti təˈnaɪt./",
+      "zh": "Sam 今晚正好值班。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He knows the seventh floor well.",
+      "phonetic": "/hi noʊz ðə ˈsɛvənθ flɔːr wɛl./",
+      "zh": "他對七樓熟得很。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great, what does Sam look like?",
+      "phonetic": "/ɡreɪt wʌt dʌz sæm lʊk laɪk?/",
+      "zh": "太好了，Sam 長什麼樣？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Tall man, red shirt, big smile.",
+      "phonetic": "/tɔːl mæn rɛd ʃɜːrt bɪɡ smaɪl./",
+      "zh": "高個子，紅襯衫，笑容很親切。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I think I saw him today.",
+      "phonetic": "/aɪ θɪŋk aɪ sɔː hɪm təˈdeɪ./",
+      "zh": "我想我今天見過他。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He waits right by the desk now.",
+      "phonetic": "/hi weɪts raɪt baɪ ðə dɛsk naʊ./",
+      "zh": "他現在就在櫃台旁邊等。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Should I go upstairs first?",
+      "phonetic": "/ʃʊd aɪ ɡoʊ ˌʌpˈstɛrz fɜːrst?/",
+      "zh": "我先上樓看房嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, see the room before moving.",
+      "phonetic": "/jɛs si ðə rum bɪˈfɔːr ˈmuːvɪŋ./",
+      "zh": "對，搬之前先看看房間。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What if something is wrong again?",
+      "phonetic": "/wʌt ɪf ˈsʌmθɪŋ ɪz rɔŋ əˈɡɛn?/",
+      "zh": "要是新房間又有問題呢？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Call us and we come right up.",
+      "phonetic": "/kɔːl ʌs ænd wi kʌm raɪt ʌp./",
+      "zh": "打電話給我們，我們馬上上來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What number do I dial?",
+      "phonetic": "/wʌt ˈnʌmbər du aɪ ˈdaɪəl?/",
+      "zh": "我要撥哪個號碼？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Dial zero for the front desk.",
+      "phonetic": "/daɪəl ˈzɪroʊ fər ðə frʌnt dɛsk./",
+      "zh": "撥零就能找前台。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Zero connects straight to you?",
+      "phonetic": "/ˈzɪroʊ kəˈnɛkts streɪt tə juː?/",
+      "zh": "撥零就直接接你們這裡？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, day or night we answer.",
+      "phonetic": "/jɛs deɪ ɔːr naɪt wi ˈænsər./",
+      "zh": "對，全天候都有人接。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That makes me feel safe.",
+      "phonetic": "/ðæt meɪks mi fil seɪf./",
+      "zh": "這樣我就安心多了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will check everything carefully.",
+      "phonetic": "/aɪ wɪl tʃɛk ˈɛvriθɪŋ ˈkɛrfəli./",
+      "zh": "我會每一樣都仔細檢查。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Smart, check what you need.",
+      "phonetic": "/smɑːrt tʃɛk wʌt ju nid./",
+      "zh": "聰明，需要什麼就查什麼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then Sam brings your bags up.",
+      "phonetic": "/ðɛn sæm brɪŋz jɔːr bæɡz ʌp./",
+      "zh": "接著 Sam 會把行李搬上去。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Perfect, here is my old key.",
+      "phonetic": "/ˈpɜːrfɪkt hɪr ɪz maɪ oʊld kiː./",
+      "zh": "太好了，這是我的舊卡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks, keep your receipt with you.",
+      "phonetic": "/θæŋks kip jɔːr rɪˈsit wið juː./",
+      "zh": "謝謝，收據請自己留好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "When do I get the receipt?",
+      "phonetic": "/wɛn du aɪ ɡɛt ðə rɪˈsit?/",
+      "zh": "收據什麼時候給我？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We will email it tonight.",
+      "phonetic": "/wi wɪl ˈimel ɪt təˈnaɪt./",
+      "zh": "我們今晚用電子郵件寄給您。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My email is on the form.",
+      "phonetic": "/maɪ ˈimel ɪz ɑːn ðə fɔːrm./",
+      "zh": "信箱就在表格上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It shows zero new charge.",
+      "phonetic": "/ɪt ʃoʊz ˈzɪroʊ nu tʃɑːrdʒ./",
+      "zh": "上面會顯示額外費用為零。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A zero charge is nice to see.",
+      "phonetic": "/ə ˈzɪroʊ tʃɑːrdʒ ɪz naɪs tə siː./",
+      "zh": "看到不收費就開心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am glad we solved this.",
+      "phonetic": "/aɪ æm ɡlæd wi sɑːlvd ðɪs./",
+      "zh": "很高興我們解決了這件事。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Me too, you made it easy.",
+      "phonetic": "/mi tuː ju meɪd ɪt ˈizi./",
+      "zh": "我也是，您讓一切變得很順利。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We aim to fix things fast.",
+      "phonetic": "/wi eɪm tə fɪks θɪŋz fæst./",
+      "zh": "我們力求盡快解決問題。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You did all that so quickly.",
+      "phonetic": "/ju dɪd ɔːl ðæt soʊ ˈkwɪkli./",
+      "zh": "這一切你們處理得好快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Enjoy your quiet night in 710.",
+      "phonetic": "/ɛnˈdʒɔɪ jɔːr ˈkwaɪət naɪt ɪn ˈsɛvən oʊ tuː./",
+      "zh": "好好享受 710 安靜的夜晚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fingers crossed for real sleep.",
+      "phonetic": "/ˈfɪŋɡərz krɔːst fər ril slip./",
+      "zh": "希望今晚能真正睡個好覺。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That room is cleaned every day.",
+      "phonetic": "/ðæt rum ɪz klind ˈɛvri deɪ./",
+      "zh": "那間房每天都清潔。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I hope there is no smell there.",
+      "phonetic": "/aɪ hoʊp ðɛr ɪz noʊ smɛl ðɛr./",
+      "zh": "希望裡面沒有任何異味。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Fresh sheets wait on the bed.",
+      "phonetic": "/frɛʃ ʃits weɪt ɑːn ðə bɛd./",
+      "zh": "乾淨的床單已鋪在床上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Now I trust you fully.",
+      "phonetic": "/naʊ aɪ trʌst juː ˈfʊli./",
+      "zh": "現在我完全信任你們了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do not worry about anything else.",
+      "phonetic": "/du nɑːt ˈwɜːri əˈbaʊt ˈɛniθɪŋ ɛls./",
+      "zh": "其他事一律不用操心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Okay, I feel much calmer.",
+      "phonetic": "/oʊˈkeɪ aɪ fil mʌtʃ ˈkɑmər./",
+      "zh": "好，我心情平靜多了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Floor seven, take the left elevator.",
+      "phonetic": "/flɔːr ˈsɛvən teɪk ðə lɛft ˈɛləˌveɪtər./",
+      "zh": "去七樓請搭左邊那部電梯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The left one over there?",
+      "phonetic": "/ðə lɛft wʌn ˈoʊvər ðɛr?/",
+      "zh": "就是那邊左邊那部？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, it is going up right now.",
+      "phonetic": "/jɛs ɪt ɪz ˈɡoʊɪŋ ʌp raɪt naʊ./",
+      "zh": "對，它現在正好要上去。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sam will meet me upstairs?",
+      "phonetic": "/sæm wɪl mit mi ˌʌpˈstɛrz?/",
+      "zh": "Sam 會在樓上等我嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He follows with your two bags.",
+      "phonetic": "/hi ˈfɑːloʊz wɪð jɔːr tuː bæɡz./",
+      "zh": "他隨後帶著您兩件行李上去。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wonderful, time to move.",
+      "phonetic": "/ˈwʌndərfəl taɪm tə muːv./",
+      "zh": "太好了，該搬家了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Excuse me, are you Sam?",
+      "phonetic": "/ɪkˈskjuːz mi ɑːr juː sæm?/",
+      "zh": "請問，您是 Sam 嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, that is me, hello.",
+      "phonetic": "/jɛs ðæt ɪz miː hɛˈloʊ./",
+      "zh": "是的，我就是，您好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You must be our 710 guest.",
+      "phonetic": "/ju mʌst bi ˈaʊər ˈsɛvən oʊ tuː ɡɛst./",
+      "zh": "您一定是 710 房的客人。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, I just moved from 502.",
+      "phonetic": "/jɛs aɪ dʒʌst muːvd frʌm faɪv oʊ tuː./",
+      "zh": "對，我剛從 502 搬過來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let me take those heavy bags.",
+      "phonetic": "/lɛt mi teɪk ðoʊz ˈhɛvi bæɡz./",
+      "zh": "這些重行李給我搬吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thanks, the blue one is fragile.",
+      "phonetic": "/θæŋks ðə bluː wʌn ɪz ˈfrædʒəl./",
+      "zh": "謝謝，藍色那件很容易碎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is inside the blue bag?",
+      "phonetic": "/wʌt ɪz ɪnˈsaɪd ðə bluː bæɡ?/",
+      "zh": "藍色行李箱裡裝了什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My laptop and some papers.",
+      "phonetic": "/maɪ ˈlæpˌtɑp ænd səm ˈpeɪpərz./",
+      "zh": "我的筆電和一些文件。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will carry it very gently.",
+      "phonetic": "/aɪ wɪl ˈkæri ɪt ˈvɛri ˈdʒɛntli./",
+      "zh": "我會很小心地搬它。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I really appreciate that.",
+      "phonetic": "/aɪ ˈrɪəli əˈpriʃiˌeɪt ðæt./",
+      "zh": "真的很感謝您。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Go ahead, I have the bags.",
+      "phonetic": "/ɡoʊ əˈhɛd aɪ hæv ðə bæɡz./",
+      "zh": "您先走，行李我來搬。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Okay, let us go together.",
+      "phonetic": "/oʊˈkeɪ lɛt ʌs ɡoʊ təˈɡɛðər./",
+      "zh": "好，我們一起過去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The elevator looks busy tonight.",
+      "phonetic": "/ði ˈɛləˌveɪtər lʊks ˈbɪzi təˈnaɪt./",
+      "zh": "電梯看起來今晚很忙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Do we wait or use stairs?",
+      "phonetic": "/du wi weɪt ɔːr juːz stɛrz?/",
+      "zh": "我們等電梯還是走樓梯？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Seven floors is a lot of stairs.",
+      "phonetic": "/ˈsɛvən flɔːrz ɪz ə lɑːt ʌv stɛrz./",
+      "zh": "七層樓的樓梯可不少。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let us wait a minute then.",
+      "phonetic": "/lɛt ʌs weɪt ə ˈmɪnɪt ðɛn./",
+      "zh": "那我們就等一分鐘吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Here comes an empty elevator.",
+      "phonetic": "/hɪr kʌmz ə ˈɛmti ˈɛləˌveɪtər./",
+      "zh": "一部空電梯剛好來了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Perfect, it stops right here.",
+      "phonetic": "/ˈpɜːrfɪkt ɪt stɑːps raɪt hɪr./",
+      "zh": "太好了，電梯就在這層停。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "After you, step inside.",
+      "phonetic": "/ˈæftər juː stɛp ɪnˈsaɪd./",
+      "zh": "您先請，進去吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thank you, floor seven please.",
+      "phonetic": "/θæŋk juː flɔːr ˈsɛvən pliːz./",
+      "zh": "謝謝，按七樓。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Pressed it, we are going up.",
+      "phonetic": "/prɛst ɪt wi ɑːr ˈɡoʊɪŋ ʌp./",
+      "zh": "按好了，我們上去了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Elevators feel faster at night.",
+      "phonetic": "/ˈɛlɪˌveɪtɚz fil ˈfæstər æt naɪt./",
+      "zh": "晚上的電梯感覺特別快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Seventh floor, what a quiet hall.",
+      "phonetic": "/ˈsɛvənθ flɔːr wʌt ə ˈkwaɪət hɔːl./",
+      "zh": "七樓，走廊好安靜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The carpet is soft up here.",
+      "phonetic": "/ðə ˈkɑːrpɪt ɪz sɔːft ʌp hɪr./",
+      "zh": "這樓層的地毯特別柔軟。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Room 710 is at the end.",
+      "phonetic": "/rum ˈsɛvən oʊ tuː ɪz æt ði ɛnd./",
+      "zh": "710 房在走廊盡頭。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The last door on the right?",
+      "phonetic": "/ðə læst dɔːr ɑːn ðə raɪt?/",
+      "zh": "是最右邊最後那扇門嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, here we are, room 710.",
+      "phonetic": "/jɛs hɪr wi ɑːr rum ˈsɛvən oʊ tuː./",
+      "zh": "對，到了，就是 710。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let me tap my card in.",
+      "phonetic": "/lɛt mi tæp maɪ kɑːrd ɪn./",
+      "zh": "讓我拍卡開門。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The light turns green, it works.",
+      "phonetic": "/ðə laɪt tɜːrnz ɡrin ɪt wɜːrks./",
+      "zh": "指示燈變綠，門開成功了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The door opens so quietly.",
+      "phonetic": "/ðə dɔːr ˈoʊpənz soʊ ˈkwaɪətli./",
+      "zh": "門開得好輕，幾乎沒聲音。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Welcome to your new room.",
+      "phonetic": "/ˈwɛlkəm tə jɔːr nu rum./",
+      "zh": "歡迎來到您的新房間。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wow, this feels much bigger.",
+      "phonetic": "/waʊ ðɪs filz mʌtʃ ˈbɪɡər./",
+      "zh": "哇，這裡感覺大很多。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The garden view is right there.",
+      "phonetic": "/ðə ˈɡɑːrdən vjuː ɪz raɪt ðɛr./",
+      "zh": "花園景觀就在窗外。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I see trees and little lights.",
+      "phonetic": "/aɪ siː triz ænd ˈlɪtəl laɪts./",
+      "zh": "我看到樹和小燈飾。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Very quiet, no street noise.",
+      "phonetic": "/ˈvɛri ˈkwaɪət noʊ strit nɔɪz./",
+      "zh": "非常安靜，沒有車聲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I cannot hear the highway at all.",
+      "phonetic": "/aɪ ˈkænɑt hɪr ðə ˈhaɪˌweɪ æt ɔːl./",
+      "zh": "完全聽不到公路的聲音。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let me test the air conditioner.",
+      "phonetic": "/lɛt mi tɛst ði ɛr kənˈdɪʃənɚ./",
+      "zh": "我來試試冷氣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The switch sits by the bed.",
+      "phonetic": "/ðə swɪtʃ sɪts baɪ ðə bɛd./",
+      "zh": "開關就在床旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It runs so softly here.",
+      "phonetic": "/ɪt rʌnz soʊ ˈsɔːftli hɪr./",
+      "zh": "它運轉得好輕柔。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "New units are much quieter.",
+      "phonetic": "/nu ˈunɪts ɑːr mʌtʃ ˈkwaɪətər./",
+      "zh": "新機型安靜太多了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "And I smell fresh air.",
+      "phonetic": "/ænd aɪ smɛl frɛʃ ɛr./",
+      "zh": "而且空氣很清新。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The room was cleaned yesterday.",
+      "phonetic": "/ðə rum wɑːz klind ˈjɛstərˌdeɪ./",
+      "zh": "房間昨天才深度清理過。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The carpet feels totally dry.",
+      "phonetic": "/ðə ˈkɑːrpɪt filz ˈtoʊtəli draɪ./",
+      "zh": "地毯摸起來全乾了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No wet spots anywhere here.",
+      "phonetic": "/noʊ wɛt spɑːts ˈɛniˌwɛr hɪr./",
+      "zh": "這裡到處都沒有水漬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The window closes really easily.",
+      "phonetic": "/ðə ˈwɪndoʊ ˈkloʊzɪz ˈrɪəli ˈizəli./",
+      "zh": "窗戶很輕鬆就關上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try the lock, turn it down.",
+      "phonetic": "/traɪ ðə lɑːk tɜːrn ɪt daʊn./",
+      "zh": "再試試鎖，往下扳。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It clicks shut, nice and warm.",
+      "phonetic": "/ɪt klɪks ʃʌt naɪs ænd wɔːrm./",
+      "zh": "喀噠一聲關好，暖呼呼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No more cold nights for you.",
+      "phonetic": "/noʊ mɔːr koʊld naɪts fər juː./",
+      "zh": "您再也不會受冷了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The TV works perfectly now.",
+      "phonetic": "/ði ˌtiːˈvi wɜːrks ˈpɜːrfɪktli naʊ./",
+      "zh": "電視現在完美運作。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let me check one channel.",
+      "phonetic": "/lɛt mi tʃɛk wʌn ˈtʃænəl./",
+      "zh": "讓我試轉一個頻道。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Clear picture, bright colors.",
+      "phonetic": "/klɪr ˈpɪktʃər braɪt ˈkʌlərz./",
+      "zh": "畫面清楚，色彩鮮明。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "See? This room is better.",
+      "phonetic": "/siː ðɪs rum ɪz ˈbɛtər./",
+      "zh": "看到了吧？這房好多了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bed has tight clean sheets.",
+      "phonetic": "/ðə bɛd hæz taɪt klin ʃits./",
+      "zh": "床單平整又乾淨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No marks that I can see.",
+      "phonetic": "/noʊ mɑːrks ðæt aɪ kæn siː./",
+      "zh": "一點污漬也看不到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "There is even a coffee machine.",
+      "phonetic": "/ðɛr ɪz ˈivən ə ˈkɔːfi məˈʃin./",
+      "zh": "這裡甚至有咖啡機。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cups are in that drawer.",
+      "phonetic": "/kʌps ɑːr ɪn ðæt drɔːr./",
+      "zh": "杯子在那個抽屜裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The desk lamp lights up bright.",
+      "phonetic": "/ðə dɛsk læmp laɪts ʌp braɪt./",
+      "zh": "書桌燈非常明亮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good for your work tonight.",
+      "phonetic": "/ɡʊd fər jɔːr wɜːrk təˈnaɪt./",
+      "zh": "剛好適合您今晚趕工。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bathroom looks brand new.",
+      "phonetic": "/ðə ˈbæθˌrum lʊks brænd nu./",
+      "zh": "浴室看起來煥然一新。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fresh towels are on the rail.",
+      "phonetic": "/frɛʃ ˈtaʊəlz ɑːr ɑːn ðə reɪl./",
+      "zh": "乾淨毛巾就掛在架上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where should I put the bags?",
+      "phonetic": "/wɛr ʃʊd aɪ pʊt ðə bæɡz?/",
+      "zh": "行李該放在哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the rack by the window.",
+      "phonetic": "/ɑːn ðə ræk baɪ ðə ˈwɪndoʊ./",
+      "zh": "放窗邊那個行李架上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "All done, that was quick.",
+      "phonetic": "/ɔːl dʌn ðæt wɑːz kwɪk./",
+      "zh": "都定位了，好快。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thank you for carrying everything.",
+      "phonetic": "/θæŋk juː fər ˈkæriɪŋ ˈɛvriθɪŋ./",
+      "zh": "謝謝您幫我把東西全搬上來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Need anything else from downstairs?",
+      "phonetic": "/nid ˈɛniθɪŋ ɛls frʌm ˌdaʊnˈstɛrz?/",
+      "zh": "還需要樓下送什麼來嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Not right now, I think.",
+      "phonetic": "/nɑːt raɪt naʊ aɪ θɪŋk./",
+      "zh": "暫時應該不缺什麼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wifi code is on this card.",
+      "phonetic": "/ðə ˈwaɪfaɪ koʊd ɪz ɑːn ðɪs kɑːrd./",
+      "zh": "網路密碼就在這張卡上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let me connect my phone.",
+      "phonetic": "/lɛt mi kəˈnɛkt maɪ foʊn./",
+      "zh": "讓我把手機連上去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My phone finds the network.",
+      "phonetic": "/maɪ foʊn faɪndz ðə ˈnɛtˌwɜrk./",
+      "zh": "手機馬上找到訊號。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Type the code in capital letters.",
+      "phonetic": "/taɪp ðə koʊd ɪn ˈkæpɪtəl ˈlɛtərz./",
+      "zh": "密碼要輸入大寫字母。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Connected at last, thank goodness.",
+      "phonetic": "/kəˈnɛktɪd æt læst θæŋk ˈɡʊdnəs./",
+      "zh": "終於連上了，謝天謝地。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Our wifi is very fast here.",
+      "phonetic": "/ˈaʊər ˈwaɪfaɪ ɪz ˈvɛri fæst hɪr./",
+      "zh": "我們這裡的網路向來很快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This phone shows my room number.",
+      "phonetic": "/ðɪs foʊn ʃoʊz maɪ rum ˈnʌmbər./",
+      "zh": "這台電話顯示我的房號。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Press zero to call the desk.",
+      "phonetic": "/prɛs ˈzɪroʊ tə kɔːl ðə dɛsk./",
+      "zh": "按零就能呼叫前台。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will test that later.",
+      "phonetic": "/aɪ wɪl tɛst ðæt ˈleɪtər./",
+      "zh": "我待會兒再來試它。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We answer any time of night.",
+      "phonetic": "/wi ˈænsər ˈɛni taɪm ʌv naɪt./",
+      "zh": "半夜什麼時候打都有人接。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is the ice machine?",
+      "phonetic": "/wɛr ɪz ði aɪs məˈʃin?/",
+      "zh": "製冰機在哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "End of the hall, left side.",
+      "phonetic": "/ɛnd ʌv ðə hɔːl lɛft saɪd./",
+      "zh": "走廊盡頭，左手邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are vending machines nearby too?",
+      "phonetic": "/ɑːr ˈvɛndɪŋ məˈʃinz ˈnɪrˌbaɪ tuː?/",
+      "zh": "自動販賣機也在旁邊嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, right next to it.",
+      "phonetic": "/jɛs raɪt nɛkst tə ɪt./",
+      "zh": "對，就在它旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will leave you to relax.",
+      "phonetic": "/aɪ wɪl liv juː tə rɪˈlæks./",
+      "zh": "我就不打擾您休息了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thanks again, you were great.",
+      "phonetic": "/θæŋks əˈɡɛn juː wɜːr ɡreɪt./",
+      "zh": "再次感謝，您人真好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sam, please thank the desk for me.",
+      "phonetic": "/sæm pliz θæŋk ðə dɛsk fər miː./",
+      "zh": "Sam，請幫我謝謝前台。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will tell them myself.",
+      "phonetic": "/aɪ wɪl tɛl ðɛm maɪˈsɛlf./",
+      "zh": "我會親自轉達的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Have a restful night in 710.",
+      "phonetic": "/hæv ə ˈrɛstfəl naɪt ɪn ˈsɛvən oʊ tuː./",
+      "zh": "願您在 710 好好休息。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is my plan exactly.",
+      "phonetic": "/ðæt ɪz maɪ plæn ɪɡˈzæktli./",
+      "zh": "這正是我的打算。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sleep tight, you earned it.",
+      "phonetic": "/slip taɪt ju ərnd ɪt./",
+      "zh": "好好睡一覺，您值得。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good night, see you tomorrow.",
+      "phonetic": "/ɡʊd naɪt siː ju təˈmɑːroʊ./",
+      "zh": "晚安，明天見。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Front desk, good evening.",
+      "phonetic": "/frʌnt dɛsk ɡʊd ˈivnɪŋ./",
+      "zh": "這裡是前台，晚上好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hi, it is 710 here.",
+      "phonetic": "/haɪ ɪt ɪz ˈsɛvən oʊ tuː hɪr./",
+      "zh": "您好，這邊是 710 房。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How is the new room tonight?",
+      "phonetic": "/haʊ ɪz ðə nu rum təˈnaɪt?/",
+      "zh": "新房間今晚感覺如何？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is wonderful, quiet and clean.",
+      "phonetic": "/ɪt ɪz ˈwʌndərfəl ˈkwaɪət ænd klin./",
+      "zh": "太棒了，安靜又乾淨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did everything work fine?",
+      "phonetic": "/dɪd ˈɛvriθɪŋ wɜrk faɪn?/",
+      "zh": "每樣設備都正常嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Even the TV and the air conditioner.",
+      "phonetic": "/ˈivən ði ˌtiːˈvi ænd ði ɛr kənˈdɪʃənɚ./",
+      "zh": "電視和冷氣也都沒問題。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Any smell or wet spots?",
+      "phonetic": "/ˈɛni smɛl ɔːr wɛt spɑːts?/",
+      "zh": "還有異味或濕的地方嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "None at all, everything dry.",
+      "phonetic": "/nʌn æt ɔːl ˈɛvriθɪŋ draɪ./",
+      "zh": "都沒有，全都乾乾爽爽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Glad we fixed it fast.",
+      "phonetic": "/ɡlæd wi fɪkst ɪt fæst./",
+      "zh": "很高興我們盡快處理好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You saved my whole trip.",
+      "phonetic": "/ju seɪvd maɪ hoʊl trɪp./",
+      "zh": "你們救了我這趟旅程。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sleep well, call zero anytime.",
+      "phonetic": "/slip wɛl kɔːl ˈzɪroʊ ˈɛniˌtaɪm./",
+      "zh": "好好睡，隨時撥零找我們。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thanks, good night for real.",
+      "phonetic": "/θæŋks ɡʊd naɪt fər ril./",
+      "zh": "謝謝，這次真的晚安了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good morning, how was your night?",
+      "phonetic": "/ɡʊd ˈmɔːrnɪŋ haʊ wʌz jɔːr naɪt?/",
+      "zh": "早安，昨晚睡得好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I slept nine whole hours.",
+      "phonetic": "/aɪ slɛpt naɪn hoʊl ˈaʊərz./",
+      "zh": "我整整睡了九個小時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "No noise kept you awake?",
+      "phonetic": "/noʊ nɔɪz kɛpt ju əˈweɪk?/",
+      "zh": "沒有任何聲音吵您嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Not a single sound, finally.",
+      "phonetic": "/nɑːt ə ˈsɪŋɡəl saʊnd ˈfaɪnəli./",
+      "zh": "一點聲音都沒有，終於。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The new room really helped.",
+      "phonetic": "/ðə nu rum ˈrɪəli hɛlpt./",
+      "zh": "新房間真的幫了大忙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It changed everything, truly.",
+      "phonetic": "/ɪt tʃeɪndʒd ˈɛvriθɪŋ ˈtruːli./",
+      "zh": "一切都不同了，真的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I even forgot the old room.",
+      "phonetic": "/aɪ ˈivən fərˈgɑt ði oʊld rum./",
+      "zh": "我甚至忘了那間舊房。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fair enough, it was bad.",
+      "phonetic": "/fɛr ɪˈnʌf ɪt wɑːz bæd./",
+      "zh": "也難怪，那間確實糟糕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "May I bring you a small gift?",
+      "phonetic": "/meɪ aɪ brɪŋ juː ə smɔːl ɡɪft?/",
+      "zh": "我能為您送上一份小禮嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A gift? For me today?",
+      "phonetic": "/ə ɡɪft fər miː təˈdeɪ?/",
+      "zh": "禮物？今天是給我的？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Our manager sent this fruit plate.",
+      "phonetic": "/ˈaʊər ˈmænɪdʒər sɛnt ðɪs frut pleɪt./",
+      "zh": "這是我們經理送的鮮果盤。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Oh, apples, grapes and melon.",
+      "phonetic": "/oʊ ˈæpəlz ɡreɪps ænd ˈmɛlən./",
+      "zh": "哇，有蘋果、葡萄和哈密瓜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It is our way of apologizing.",
+      "phonetic": "/ɪt ɪz ˈaʊər weɪ ʌv əˈpɑːləˌdʒaɪzɪŋ./",
+      "zh": "這是我們道歉的心意。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You really did not need to.",
+      "phonetic": "/ju ˈrɪəli dɪd nɑːt nid tə./",
+      "zh": "你們真的太客氣了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Enjoy it with your morning coffee.",
+      "phonetic": "/ɛnˈdʒɔɪ ɪt wɪð jɔːr ˈmɔːrnɪŋ ˈkɔːfi./",
+      "zh": "配早咖啡慢慢享用。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The coffee here is lovely.",
+      "phonetic": "/ðə ˈkɔːfi hɪr ɪz ˈlʌvli./",
+      "zh": "這裡的咖啡很好喝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is your big meeting still today?",
+      "phonetic": "/ɪz jɔːr bɪɡ ˈmitɪŋ stɪl təˈdeɪ?/",
+      "zh": "您那個重要會議還是今天對吧？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is at noon, all set.",
+      "phonetic": "/ɪt ɪz æt nun ɔːl sɛt./",
+      "zh": "約在中午，都準備好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good sleep gives a clear head.",
+      "phonetic": "/ɡʊd slip ɡɪvz ə klɪr hɛd./",
+      "zh": "睡得好，思緒就清楚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is exactly what I need.",
+      "phonetic": "/ðæt ɪz ɪɡˈzæktli wʌt aɪ nid./",
+      "zh": "這正是我需要的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "May I ask two quick questions?",
+      "phonetic": "/meɪ aɪ æsk tuː kwɪk ˈkwɛstʃənz./",
+      "zh": "我可以問兩個小問題嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, I am listening.",
+      "phonetic": "/ʃʊr aɪ æm ˈlɪsənɪŋ./",
+      "zh": "當然，您請說。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is breakfast included today?",
+      "phonetic": "/ɪz ˈbrɛkfəst ˌɪnˈkludɪd təˈdeɪ?/",
+      "zh": "今天含早餐嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, until ten downstairs.",
+      "phonetic": "/jɛs ənˈtɪl tɛn ˌdaʊnˈstɛrz./",
+      "zh": "有，樓下餐廳供餐到十點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The dining room is on floor one?",
+      "phonetic": "/ðə ˈdaɪnɪŋ rum ɪz ɑːn flɔːr wʌn?/",
+      "zh": "用餐區是在一樓嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, by the lobby entrance.",
+      "phonetic": "/jɛs baɪ ðə ˈlɑːbi ˈɛntrəns./",
+      "zh": "對，就在大廳入口旁。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I love their fluffy pancakes.",
+      "phonetic": "/aɪ lʌv ðɛr ˈflʌfi ˈpænˌkeɪks./",
+      "zh": "我超愛那裡的鬆餅。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try the egg bowls too.",
+      "phonetic": "/traɪ ði ɛɡ boʊlz tuː./",
+      "zh": "蛋料理碗也值得一試。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One more thing about checkout.",
+      "phonetic": "/wʌn mɔːr θɪŋ əˈbaʊt ˈtʃɛkˌaʊt./",
+      "zh": "還有一件關於退房的事。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, what is on your mind?",
+      "phonetic": "/ʃʊr wʌt ɪz ɑːn jɔːr maɪnd?/",
+      "zh": "好的，您想問什麼？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Could I leave a bit later?",
+      "phonetic": "/kʊd aɪ liːv ə bɪt ˈleɪtər?/",
+      "zh": "我可以晚一點再離開嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "How late do you need?",
+      "phonetic": "/haʊ leɪt du juː nid?/",
+      "zh": "您需要延到多晚？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My flight leaves late tonight.",
+      "phonetic": "/maɪ flaɪt liːvz leɪt təˈnaɪt./",
+      "zh": "我的航班今晚很晚才飛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So a late checkout is smart.",
+      "phonetic": "/soʊ ə leɪt ˈtʃɛkˌaʊt ɪz smɑːrt./",
+      "zh": "那延後退房很明智。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Two extra hours would be perfect.",
+      "phonetic": "/tuː ˈɛkstrə ˈaʊərz wʊd bi ˈpɜːrfɪkt./",
+      "zh": "多給我兩小時就太好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Those hours are yours.",
+      "phonetic": "/ðoʊz aʊərz ɑːr jʊrz./",
+      "zh": "那兩個小時就送給您。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "No fee for the extra time?",
+      "phonetic": "/noʊ fi fər ði ˈɛkstrə taɪm?/",
+      "zh": "多出來的時間不收費嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "None, consider it our thanks.",
+      "phonetic": "/nʌn kənˈsɪdɚ ɪt ˈaʊər θæŋks./",
+      "zh": "不收，就當我們道謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So twelve thirty it is.",
+      "phonetic": "/soʊ twɛlv ˈθɜrti ɪt ɪz./",
+      "zh": "那就十二點半退房。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Your key works until then.",
+      "phonetic": "/jɔːr ki wɜːrks ənˈtɪl ðɛn./",
+      "zh": "您的門卡那時都有效。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can my bags stay here after that?",
+      "phonetic": "/kæn maɪ bæɡz steɪ hɪr ˈæftər ðæt?/",
+      "zh": "之後我的行李可以留在這裡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We store luggage for free.",
+      "phonetic": "/wi stɔːr ˈlʌɡɪdʒ fər friː./",
+      "zh": "我們免費幫您寄存。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where do I drop my suitcase?",
+      "phonetic": "/wɛr du aɪ drɑːp maɪ ˈsutˌkeɪs?/",
+      "zh": "行李箱要放到哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Right here at this desk.",
+      "phonetic": "/raɪt hɪr æt ðɪs dɛsk./",
+      "zh": "就放在這個櫃台。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will pick it up at four.",
+      "phonetic": "/aɪ wɪl pɪk ɪt ʌp æt fɔːr./",
+      "zh": "我四點鐘來取。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Show the tag on your key.",
+      "phonetic": "/ʃoʊ ðə tæɡ ɑːn jɔːr kiː./",
+      "zh": "領取時請出示這個掛牌。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do I need a new tag?",
+      "phonetic": "/du aɪ nid ə nu tæɡ?/",
+      "zh": "我需要新的掛牌嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No need, this tag is ready.",
+      "phonetic": "/noʊ nid ðɪs tæɡ ɪz ˈrɛdi./",
+      "zh": "不用，這張掛牌已經備好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You have been so helpful.",
+      "phonetic": "/ju hæv bɪn soʊ ˈhɛlpfəl./",
+      "zh": "您今天真是幫了大忙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It was our pleasure, really.",
+      "phonetic": "/ɪt wɑːz ˈaʊər ˈplɛʒər ˈrɪəli./",
+      "zh": "這是我們的榮幸，真的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "May I say something about service?",
+      "phonetic": "/meɪ aɪ seɪ ˈsʌmθɪŋ əˈbaʊt ˈsərvɪs?/",
+      "zh": "我想說說關於服務的事。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Please do, we love feedback.",
+      "phonetic": "/pliz duː wi lʌv ˈfidˌbæk./",
+      "zh": "請說，我們最愛聽回饋。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will write you a good review.",
+      "phonetic": "/aɪ wɪl raɪt juː ə ɡʊd ˌrivˈju./",
+      "zh": "我要給你們寫個好評。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That would mean a lot.",
+      "phonetic": "/ðæt wʊd min ə lɑːt./",
+      "zh": "那對我們意義重大。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where do people leave reviews?",
+      "phonetic": "/wɛr du ˈpipəl liːv rɪˈvjuːz?/",
+      "zh": "大家都在哪裡留評論？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Scan this card, right here.",
+      "phonetic": "/skæn ðɪs kɑːrd raɪt hɪr./",
+      "zh": "掃這張卡上的碼就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Five stars is what you get.",
+      "phonetic": "/faɪv stɑːrz ɪz wʌt ju ɡɛt./",
+      "zh": "五顆星是你們應得的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We will always try to earn them.",
+      "phonetic": "/wi wɪl ˈɔlˌweɪz traɪ tə ərn ðɛm./",
+      "zh": "我們會持續努力不負好評。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I mention Sam as well?",
+      "phonetic": "/ʃʊd aɪ ˈmɛnʃən sæm æz wɛl?/",
+      "zh": "我可以一併提到 Sam 嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, he did a great job.",
+      "phonetic": "/jɛs hi dɪd ə ɡreɪt dʒɑːb./",
+      "zh": "當然，他做得很好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He stayed till my bags were in.",
+      "phonetic": "/hi steɪd tɪl maɪ bæɡz wɜːr ɪn./",
+      "zh": "他陪我到行李全部定位。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sam likes to finish properly.",
+      "phonetic": "/sæm laɪks tə ˈfɪnɪʃ ˈprɑːpərli./",
+      "zh": "Sam 做事總喜歡有始有終。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will praise your quick fix.",
+      "phonetic": "/aɪ wɪl preɪz jɔːr kwɪk fɪks./",
+      "zh": "我要稱讚你們處理得快。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Reviews help travelers choose.",
+      "phonetic": "/rɪˈvjuːz hɛlp ˈtrævələrz tʃuːz./",
+      "zh": "評論能幫旅客做選擇。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My friend asked about this hotel.",
+      "phonetic": "/maɪ frɛnd æskt əˈbaʊt ðɪs hoʊˈtɛl./",
+      "zh": "我朋友問過這間飯店。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What should you tell her?",
+      "phonetic": "/wʌt ʃʊd ju tɛl hɜːr?/",
+      "zh": "那您會怎麼跟她說？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Tell her to ask for a garden room.",
+      "phonetic": "/tɛl hɜːr tə æsk fər ə ˈɡɑːrdən rum./",
+      "zh": "告訴她指名要花園房。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can keep 710 just for you.",
+      "phonetic": "/wi kæn kip ˈsɛvən oʊ tuː dʒʌst fər juː./",
+      "zh": "710 我們可以特別為您留著。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is 710 free next month?",
+      "phonetic": "/ɪz ˈsɛvən oʊ tuː friː nɛkst mʌnθ?/",
+      "zh": "下個月 710 還有空嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I can book it today.",
+      "phonetic": "/aɪ kæn bʊk ɪt təˈdeɪ./",
+      "zh": "我今天就能幫您預訂。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am back here next month.",
+      "phonetic": "/aɪ æm bæk hɪr nɛkst mʌnθ./",
+      "zh": "我下個月還會回來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same room, same floor, for sure.",
+      "phonetic": "/seɪm rum seɪm flɔːr fər ʃʊr./",
+      "zh": "同房同樓層，一定辦到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please email me the booking details.",
+      "phonetic": "/pliz ˈimel mi ðə ˈbʊkɪŋ dɪˈteɪlz./",
+      "zh": "請用郵件把訂單細節寄給我。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You will get an email.",
+      "phonetic": "/ju wɪl ɡɛt ən ˈimel./",
+      "zh": "您會收到一封郵件。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have my email still?",
+      "phonetic": "/du ju hæv maɪ ˈimel stɪl?/",
+      "zh": "你們還有我的信箱嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Saved from last night.",
+      "phonetic": "/seɪvd frʌm læst naɪt./",
+      "zh": "昨晚就已經存好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will a booking link arrive soon?",
+      "phonetic": "/wɪl ə ˈbʊkɪŋ lɪŋk əˈraɪv suːn?/",
+      "zh": "預訂連結會很快寄來嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, one click and it is done.",
+      "phonetic": "/jɛs wʌn klɪk ænd ɪt ɪz dʌn./",
+      "zh": "對，點一下就完成。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for fixing my rough start.",
+      "phonetic": "/θæŋks fər ˈfɪksɪŋ maɪ rʌf stɑːrt./",
+      "zh": "謝謝您補救了我糟糕的開始。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You made it easy for us.",
+      "phonetic": "/ju meɪd ɪt ˈizi fər ʌs./",
+      "zh": "您也讓我們好辦多了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I came in upset, leaving happy.",
+      "phonetic": "/aɪ keɪm ɪn ʌpˈsɛt ˈlivɪŋ ˈhæpi./",
+      "zh": "我生氣地來，開心地走。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is the best outcome.",
+      "phonetic": "/ðæt ɪz ðə bɛst ˈaʊtˌkʌm./",
+      "zh": "這就是最好的結果。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The fruit plate was so sweet.",
+      "phonetic": "/ðə frut pleɪt wɑːz soʊ swiːt./",
+      "zh": "那盤水果真是太貼心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We do that for special guests.",
+      "phonetic": "/wi du ðæt fər ˈspɛʃəl ɡɛsts./",
+      "zh": "我們對特別客人都會這樣做。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We know your name now.",
+      "phonetic": "/wi noʊ jɔːr neɪm naʊ./",
+      "zh": "我們現在記住您名字了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I hope for good reasons.",
+      "phonetic": "/aɪ hoʊp fər ɡʊd ˈrizənz./",
+      "zh": "希望是好理由啦。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Always good reasons, trust me.",
+      "phonetic": "/ˈɔlˌweɪz ɡʊd ˈrizənz trʌst miː./",
+      "zh": "全都是好理由，相信您。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then I will surely come back.",
+      "phonetic": "/ðɛn aɪ wɪl ˈʃʊrli kʌm bæk./",
+      "zh": "那我一定會再來的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Book direct next time, online.",
+      "phonetic": "/bʊk dəˈrɛkt nɛkst taɪm ˈɔnˌlaɪn./",
+      "zh": "下次直接在官網訂房。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Do direct bookings give deals?",
+      "phonetic": "/du dəˈrɛkt ˈbʊkɪŋz ɡɪv dilz?/",
+      "zh": "直接訂比較優惠嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Our site has the best rates.",
+      "phonetic": "/ˈaʊər saɪt hæz ðə bɛst reɪts./",
+      "zh": "我們網站的價格最好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And free upgrades sometimes.",
+      "phonetic": "/ænd friː ˈʌpˌɡreɪdz ˈsʌmˌtaɪmz./",
+      "zh": "有時還免費升等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will book on your site.",
+      "phonetic": "/aɪ wɪl bʊk ɑːn jɔːr saɪt./",
+      "zh": "我會到你們官網訂。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here is the website card.",
+      "phonetic": "/hɪr ɪz ðə ˈwɛbˌsaɪt kɑːrd./",
+      "zh": "這是有網址的卡片。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Tucked in my wallet already.",
+      "phonetic": "/tʌkt ɪn maɪ ˈwɑlət ɔːlˈrɛdi./",
+      "zh": "我已經收進錢包了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You are all set today?",
+      "phonetic": "/ju ɑːr ɔːl sɛt təˈdeɪ?/",
+      "zh": "您今天全都搞定了吧？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, everything is perfect now.",
+      "phonetic": "/jɛs ˈɛvriθɪŋ ɪz ˈpɜːrfɪkt naʊ./",
+      "zh": "是的，現在樣樣完美。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Safe travels and sleep well.",
+      "phonetic": "/seɪf ˈtrævəlz ænd slip wɛl./",
+      "zh": "旅途平安，也睡個好覺。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good night, see you next month!",
+      "phonetic": "/ɡʊd naɪt siː ju nɛkst mʌnθ!/",
+      "zh": "晚安，下個月見！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We will keep 710 warm.",
+      "phonetic": "/wi wɪl kip ˈsɛvən oʊ tuː wɔːrm./",
+      "zh": "我們會把 710 留給您。"
+    }
+  ]
+}

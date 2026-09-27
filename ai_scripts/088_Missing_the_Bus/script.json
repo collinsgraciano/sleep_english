@@ -1,0 +1,2458 @@
+{
+  "title": "Everyday Phrases — Missing the Bus",
+  "title_zh": "錯過公車",
+  "scene_zh": "錯過公車 · 情境對話",
+  "title_quote": "The bus left.",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】🚌 實用錯過公車必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — Missing the Bus",
+  "youtube_description": "睡著學英文！這部影片收錄實用錯過公車情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫），不用背，睡前聽就會。重複播放，讓英文自然進入你的大腦。👍 想學更多生活場景，請留言告訴我！別忘了訂閱+按讚。 #英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical Missing the Bus phrase pairs (each pair: male normal speed → female slow speed → combined dialogue). No memorization needed—just listen before bed and absorb naturally. If you want more real-life scenarios, leave a comment! Subscribe and like!",
+  "youtube_tags": [
+    "英文聽力",
+    "睡前英文",
+    "錯過公車英文",
+    "English listening",
+    "Sleep learning",
+    "A2 English",
+    "常用英文短語",
+    "零基礎英文",
+    "慢速英文",
+    "英文口語",
+    "Learn English",
+    "English for daily life",
+    "ESL",
+    "English conversation",
+    "聽英語",
+    "英文學習"
+  ],
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "Missing the Bus",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "Missing the Bus",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Daily POV",
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "The bus left.",
+      "phonetic": "/ðə bəs lɛft./",
+      "zh": "車走了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just now, no.",
+      "phonetic": "/ʤɪst naʊ, noʊ./",
+      "zh": "剛走。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The stop empty.",
+      "phonetic": "/ðə stɑp ˈɛmti./",
+      "zh": "站空。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tail lights far.",
+      "phonetic": "/teɪl laɪts fɑr./",
+      "zh": "尾燈遠。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The watch, late.",
+      "phonetic": "/ðə wɔʧ, leɪt./",
+      "zh": "錶慢了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Five minutes, ugh.",
+      "phonetic": "/faɪv ˈmɪnəts, əg./",
+      "zh": "五分唉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The next, when?",
+      "phonetic": "/ðə nɛkst, wɪn?/",
+      "zh": "下趟何時？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Twenty more, yes.",
+      "phonetic": "/tˈwɛnti mɔr, jɛs./",
+      "zh": "再二十。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bench, sit.",
+      "phonetic": "/ðə bɛnʧ, sɪt./",
+      "zh": "坐凳。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wait it out.",
+      "phonetic": "/weɪt ɪt aʊt./",
+      "zh": "等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app, check.",
+      "phonetic": "/ðə æp, ʧɛk./",
+      "zh": "查軟體。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Live map, see.",
+      "phonetic": "/lɪv mæp, si./",
+      "zh": "看地圖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rain starts.",
+      "phonetic": "/ðə reɪn stɑrts./",
+      "zh": "雨來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Share the roof.",
+      "phonetic": "/ʃɛr ðə rʊf./",
+      "zh": "共檐。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The coffee, warm.",
+      "phonetic": "/ðə ˈkɔfi, wɔrm./",
+      "zh": "咖啡暖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sip, relax.",
+      "phonetic": "/sɪp, rɪˈlæks./",
+      "zh": "慢飲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The text, send.",
+      "phonetic": "/ðə tɛkst, sɛnd./",
+      "zh": "發訊息。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tell them late.",
+      "phonetic": "/tɛl ðɛm leɪt./",
+      "zh": "說會遲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The boss knows.",
+      "phonetic": "/ðə bɔs noʊz./",
+      "zh": "老闆知。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fine, they say.",
+      "phonetic": "/faɪn, ðeɪ seɪ./",
+      "zh": "說沒事。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The music on.",
+      "phonetic": "/ðə mˈjuzɪk ɔn./",
+      "zh": "放音樂。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Kill the wait.",
+      "phonetic": "/kɪl ðə weɪt./",
+      "zh": "殺時間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The stranger nods.",
+      "phonetic": "/ðə ˈstreɪnʤər nɑdz./",
+      "zh": "陌生人點頭。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same boat, pal.",
+      "phonetic": "/seɪm boʊt, pæl./",
+      "zh": "同命。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The minutes pass.",
+      "phonetic": "/ðə ˈmɪnəts pæs./",
+      "zh": "分鐘過。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Almost here.",
+      "phonetic": "/ˈɔlˌmoʊst hir./",
+      "zh": "快到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The headlights near.",
+      "phonetic": "/ðə ˈhɛˌdlaɪts nɪr./",
+      "zh": "車燈近。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's ours.",
+      "phonetic": "/ðæts ɑrz./",
+      "zh": "是我們的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The door opens.",
+      "phonetic": "/ðə dɔr ˈoʊpənz./",
+      "zh": "門開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Step on in.",
+      "phonetic": "/stɛp ɔn ɪn./",
+      "zh": "上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The seat, grab.",
+      "phonetic": "/ðə sit, græb./",
+      "zh": "搶座。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Window, yes.",
+      "phonetic": "/ˈwɪndoʊ, jɛs./",
+      "zh": "靠窗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The card, tap.",
+      "phonetic": "/ðə kɑrd, tæp./",
+      "zh": "拍卡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Beep, done.",
+      "phonetic": "/bip, dən./",
+      "zh": "滴完成。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The breath out.",
+      "phonetic": "/ðə brɛθ aʊt./",
+      "zh": "吐氣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Made it now.",
+      "phonetic": "/meɪd ɪt naʊ./",
+      "zh": "趕上了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The phone, scroll.",
+      "phonetic": "/ðə foʊn, skroʊl./",
+      "zh": "滑手機。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Easy ride.",
+      "phonetic": "/ˈizi raɪd./",
+      "zh": "安穩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The stop soon.",
+      "phonetic": "/ðə stɑp sun./",
+      "zh": "快到站。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Get ready, yes.",
+      "phonetic": "/gɪt ˈrɛdi, jɛs./",
+      "zh": "準備。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bell, press.",
+      "phonetic": "/ðə bɛl, prɛs./",
+      "zh": "按鈴。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stand up, please.",
+      "phonetic": "/stænd əp, pliz./",
+      "zh": "起身。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The step down.",
+      "phonetic": "/ðə stɛp daʊn./",
+      "zh": "下車。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Careful, wet.",
+      "phonetic": "/ˈkɛrfəl, wɛt./",
+      "zh": "小心滑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The plan, flex.",
+      "phonetic": "/ðə plæn, flɛks./",
+      "zh": "計劃調。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Late but ok.",
+      "phonetic": "/leɪt bət ˈoʊˈkeɪ./",
+      "zh": "遲但好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lesson, early.",
+      "phonetic": "/ðə ˈlɛsən, ˈərli./",
+      "zh": "教訓早。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Set alarm more.",
+      "phonetic": "/sɛt əˈlɑrm mɔr./",
+      "zh": "多設鈴。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The mood, fine.",
+      "phonetic": "/ðə mud, faɪn./",
+      "zh": "情緒好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No big deal.",
+      "phonetic": "/noʊ bɪg dil./",
+      "zh": "小事。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The walk, short.",
+      "phonetic": "/ðə wɔk, ʃɔrt./",
+      "zh": "走短路。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stretch the legs.",
+      "phonetic": "/strɛʧ ðə lɛgz./",
+      "zh": "伸腿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The day, saved.",
+      "phonetic": "/ðə deɪ, seɪvd./",
+      "zh": "天救回。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Coffee helped.",
+      "phonetic": "/ˈkɔfi hɛlpt./",
+      "zh": "咖啡助。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The friend waits.",
+      "phonetic": "/ðə frɛnd weɪts./",
+      "zh": "友在等。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sorry, the bus.",
+      "phonetic": "/ˈsɑri, ðə bəs./",
+      "zh": "抱歉車。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The laugh, shared.",
+      "phonetic": "/ðə læf, ʃɛrd./",
+      "zh": "共笑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Forget it, pal.",
+      "phonetic": "/fərˈgɛt ɪt, pæl./",
+      "zh": "算了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The timer, fix.",
+      "phonetic": "/ðə ˈtaɪmər, fɪks./",
+      "zh": "鬧鐘改。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ten min early.",
+      "phonetic": "/tɛn mɪn ˈərli./",
+      "zh": "早十分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The route, know.",
+      "phonetic": "/ðə rut, noʊ./",
+      "zh": "路線熟。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Always same.",
+      "phonetic": "/ˈɔlˌweɪz seɪm./",
+      "zh": "總一樣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wait, over.",
+      "phonetic": "/ðə weɪt, ˈoʊvər./",
+      "zh": "等結束。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Onward we go.",
+      "phonetic": "/ˈɔnwərd wi goʊ./",
+      "zh": "往前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for waiting.",
+      "phonetic": "/θæŋks fər ˈweɪtɪŋ./",
+      "zh": "謝謝等。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No worry, pal.",
+      "phonetic": "/noʊ ˈwəri, pæl./",
+      "zh": "別愁。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for waiting.",
+      "phonetic": "/θæŋks fər ˈweɪtɪŋ./",
+      "zh": "謝謝等。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No worry, pal.",
+      "phonetic": "/noʊ ˈwəri, pæl./",
+      "zh": "別愁。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wait, over.",
+      "phonetic": "/ðə weɪt, ˈoʊvər./",
+      "zh": "等結束。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Onward we go.",
+      "phonetic": "/ˈɔnwərd wi goʊ./",
+      "zh": "往前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The route, know.",
+      "phonetic": "/ðə rut, noʊ./",
+      "zh": "路線熟。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Always same.",
+      "phonetic": "/ˈɔlˌweɪz seɪm./",
+      "zh": "總一樣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The timer, fix.",
+      "phonetic": "/ðə ˈtaɪmər, fɪks./",
+      "zh": "鬧鐘改。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ten min early.",
+      "phonetic": "/tɛn mɪn ˈərli./",
+      "zh": "早十分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The laugh, shared.",
+      "phonetic": "/ðə læf, ʃɛrd./",
+      "zh": "共笑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Forget it, pal.",
+      "phonetic": "/fərˈgɛt ɪt, pæl./",
+      "zh": "算了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The friend waits.",
+      "phonetic": "/ðə frɛnd weɪts./",
+      "zh": "友在等。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sorry, the bus.",
+      "phonetic": "/ˈsɑri, ðə bəs./",
+      "zh": "抱歉車。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The day, saved.",
+      "phonetic": "/ðə deɪ, seɪvd./",
+      "zh": "天救回。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Coffee helped.",
+      "phonetic": "/ˈkɔfi hɛlpt./",
+      "zh": "咖啡助。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The walk, short.",
+      "phonetic": "/ðə wɔk, ʃɔrt./",
+      "zh": "走短路。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stretch the legs.",
+      "phonetic": "/strɛʧ ðə lɛgz./",
+      "zh": "伸腿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The mood, fine.",
+      "phonetic": "/ðə mud, faɪn./",
+      "zh": "情緒好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No big deal.",
+      "phonetic": "/noʊ bɪg dil./",
+      "zh": "小事。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lesson, early.",
+      "phonetic": "/ðə ˈlɛsən, ˈərli./",
+      "zh": "教訓早。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Set alarm more.",
+      "phonetic": "/sɛt əˈlɑrm mɔr./",
+      "zh": "多設鈴。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The plan, flex.",
+      "phonetic": "/ðə plæn, flɛks./",
+      "zh": "計劃調。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Late but ok.",
+      "phonetic": "/leɪt bət ˈoʊˈkeɪ./",
+      "zh": "遲但好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The step down.",
+      "phonetic": "/ðə stɛp daʊn./",
+      "zh": "下車。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Careful, wet.",
+      "phonetic": "/ˈkɛrfəl, wɛt./",
+      "zh": "小心滑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bell, press.",
+      "phonetic": "/ðə bɛl, prɛs./",
+      "zh": "按鈴。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stand up, please.",
+      "phonetic": "/stænd əp, pliz./",
+      "zh": "起身。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The stop soon.",
+      "phonetic": "/ðə stɑp sun./",
+      "zh": "快到站。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Get ready, yes.",
+      "phonetic": "/gɪt ˈrɛdi, jɛs./",
+      "zh": "準備。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The phone, scroll.",
+      "phonetic": "/ðə foʊn, skroʊl./",
+      "zh": "滑手機。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Easy ride.",
+      "phonetic": "/ˈizi raɪd./",
+      "zh": "安穩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The breath out.",
+      "phonetic": "/ðə brɛθ aʊt./",
+      "zh": "吐氣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Made it now.",
+      "phonetic": "/meɪd ɪt naʊ./",
+      "zh": "趕上了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The card, tap.",
+      "phonetic": "/ðə kɑrd, tæp./",
+      "zh": "拍卡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Beep, done.",
+      "phonetic": "/bip, dən./",
+      "zh": "滴完成。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The seat, grab.",
+      "phonetic": "/ðə sit, græb./",
+      "zh": "搶座。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Window, yes.",
+      "phonetic": "/ˈwɪndoʊ, jɛs./",
+      "zh": "靠窗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The door opens.",
+      "phonetic": "/ðə dɔr ˈoʊpənz./",
+      "zh": "門開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Step on in.",
+      "phonetic": "/stɛp ɔn ɪn./",
+      "zh": "上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The headlights near.",
+      "phonetic": "/ðə ˈhɛˌdlaɪts nɪr./",
+      "zh": "車燈近。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's ours.",
+      "phonetic": "/ðæts ɑrz./",
+      "zh": "是我們的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The minutes pass.",
+      "phonetic": "/ðə ˈmɪnəts pæs./",
+      "zh": "分鐘過。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Almost here.",
+      "phonetic": "/ˈɔlˌmoʊst hir./",
+      "zh": "快到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The stranger nods.",
+      "phonetic": "/ðə ˈstreɪnʤər nɑdz./",
+      "zh": "陌生人點頭。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same boat, pal.",
+      "phonetic": "/seɪm boʊt, pæl./",
+      "zh": "同命。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The music on.",
+      "phonetic": "/ðə mˈjuzɪk ɔn./",
+      "zh": "放音樂。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Kill the wait.",
+      "phonetic": "/kɪl ðə weɪt./",
+      "zh": "殺時間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The boss knows.",
+      "phonetic": "/ðə bɔs noʊz./",
+      "zh": "老闆知。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fine, they say.",
+      "phonetic": "/faɪn, ðeɪ seɪ./",
+      "zh": "說沒事。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The text, send.",
+      "phonetic": "/ðə tɛkst, sɛnd./",
+      "zh": "發訊息。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tell them late.",
+      "phonetic": "/tɛl ðɛm leɪt./",
+      "zh": "說會遲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The coffee, warm.",
+      "phonetic": "/ðə ˈkɔfi, wɔrm./",
+      "zh": "咖啡暖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sip, relax.",
+      "phonetic": "/sɪp, rɪˈlæks./",
+      "zh": "慢飲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rain starts.",
+      "phonetic": "/ðə reɪn stɑrts./",
+      "zh": "雨來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Share the roof.",
+      "phonetic": "/ʃɛr ðə rʊf./",
+      "zh": "共檐。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app, check.",
+      "phonetic": "/ðə æp, ʧɛk./",
+      "zh": "查軟體。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Live map, see.",
+      "phonetic": "/lɪv mæp, si./",
+      "zh": "看地圖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bench, sit.",
+      "phonetic": "/ðə bɛnʧ, sɪt./",
+      "zh": "坐凳。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wait it out.",
+      "phonetic": "/weɪt ɪt aʊt./",
+      "zh": "等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The next, when?",
+      "phonetic": "/ðə nɛkst, wɪn?/",
+      "zh": "下趟何時？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Twenty more, yes.",
+      "phonetic": "/tˈwɛnti mɔr, jɛs./",
+      "zh": "再二十。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The watch, late.",
+      "phonetic": "/ðə wɔʧ, leɪt./",
+      "zh": "錶慢了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Five minutes, ugh.",
+      "phonetic": "/faɪv ˈmɪnəts, əg./",
+      "zh": "五分唉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The stop empty.",
+      "phonetic": "/ðə stɑp ˈɛmti./",
+      "zh": "站空。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tail lights far.",
+      "phonetic": "/teɪl laɪts fɑr./",
+      "zh": "尾燈遠。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bus left.",
+      "phonetic": "/ðə bəs lɛft./",
+      "zh": "車走了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just now, no.",
+      "phonetic": "/ʤɪst naʊ, noʊ./",
+      "zh": "剛走。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bus left.",
+      "phonetic": "/ðə bəs lɛft./",
+      "zh": "車走了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just now, no.",
+      "phonetic": "/ʤɪst naʊ, noʊ./",
+      "zh": "剛走。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The stop empty.",
+      "phonetic": "/ðə stɑp ˈɛmti./",
+      "zh": "站空。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tail lights far.",
+      "phonetic": "/teɪl laɪts fɑr./",
+      "zh": "尾燈遠。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The watch, late.",
+      "phonetic": "/ðə wɔʧ, leɪt./",
+      "zh": "錶慢了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Five minutes, ugh.",
+      "phonetic": "/faɪv ˈmɪnəts, əg./",
+      "zh": "五分唉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The next, when?",
+      "phonetic": "/ðə nɛkst, wɪn?/",
+      "zh": "下趟何時？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Twenty more, yes.",
+      "phonetic": "/tˈwɛnti mɔr, jɛs./",
+      "zh": "再二十。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bench, sit.",
+      "phonetic": "/ðə bɛnʧ, sɪt./",
+      "zh": "坐凳。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wait it out.",
+      "phonetic": "/weɪt ɪt aʊt./",
+      "zh": "等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app, check.",
+      "phonetic": "/ðə æp, ʧɛk./",
+      "zh": "查軟體。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Live map, see.",
+      "phonetic": "/lɪv mæp, si./",
+      "zh": "看地圖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rain starts.",
+      "phonetic": "/ðə reɪn stɑrts./",
+      "zh": "雨來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Share the roof.",
+      "phonetic": "/ʃɛr ðə rʊf./",
+      "zh": "共檐。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The coffee, warm.",
+      "phonetic": "/ðə ˈkɔfi, wɔrm./",
+      "zh": "咖啡暖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sip, relax.",
+      "phonetic": "/sɪp, rɪˈlæks./",
+      "zh": "慢飲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The text, send.",
+      "phonetic": "/ðə tɛkst, sɛnd./",
+      "zh": "發訊息。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tell them late.",
+      "phonetic": "/tɛl ðɛm leɪt./",
+      "zh": "說會遲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The boss knows.",
+      "phonetic": "/ðə bɔs noʊz./",
+      "zh": "老闆知。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fine, they say.",
+      "phonetic": "/faɪn, ðeɪ seɪ./",
+      "zh": "說沒事。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The music on.",
+      "phonetic": "/ðə mˈjuzɪk ɔn./",
+      "zh": "放音樂。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Kill the wait.",
+      "phonetic": "/kɪl ðə weɪt./",
+      "zh": "殺時間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The stranger nods.",
+      "phonetic": "/ðə ˈstreɪnʤər nɑdz./",
+      "zh": "陌生人點頭。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same boat, pal.",
+      "phonetic": "/seɪm boʊt, pæl./",
+      "zh": "同命。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The minutes pass.",
+      "phonetic": "/ðə ˈmɪnəts pæs./",
+      "zh": "分鐘過。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Almost here.",
+      "phonetic": "/ˈɔlˌmoʊst hir./",
+      "zh": "快到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The headlights near.",
+      "phonetic": "/ðə ˈhɛˌdlaɪts nɪr./",
+      "zh": "車燈近。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's ours.",
+      "phonetic": "/ðæts ɑrz./",
+      "zh": "是我們的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The door opens.",
+      "phonetic": "/ðə dɔr ˈoʊpənz./",
+      "zh": "門開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Step on in.",
+      "phonetic": "/stɛp ɔn ɪn./",
+      "zh": "上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The seat, grab.",
+      "phonetic": "/ðə sit, græb./",
+      "zh": "搶座。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Window, yes.",
+      "phonetic": "/ˈwɪndoʊ, jɛs./",
+      "zh": "靠窗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The card, tap.",
+      "phonetic": "/ðə kɑrd, tæp./",
+      "zh": "拍卡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Beep, done.",
+      "phonetic": "/bip, dən./",
+      "zh": "滴完成。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The breath out.",
+      "phonetic": "/ðə brɛθ aʊt./",
+      "zh": "吐氣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Made it now.",
+      "phonetic": "/meɪd ɪt naʊ./",
+      "zh": "趕上了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The phone, scroll.",
+      "phonetic": "/ðə foʊn, skroʊl./",
+      "zh": "滑手機。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Easy ride.",
+      "phonetic": "/ˈizi raɪd./",
+      "zh": "安穩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The stop soon.",
+      "phonetic": "/ðə stɑp sun./",
+      "zh": "快到站。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Get ready, yes.",
+      "phonetic": "/gɪt ˈrɛdi, jɛs./",
+      "zh": "準備。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bell, press.",
+      "phonetic": "/ðə bɛl, prɛs./",
+      "zh": "按鈴。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stand up, please.",
+      "phonetic": "/stænd əp, pliz./",
+      "zh": "起身。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The step down.",
+      "phonetic": "/ðə stɛp daʊn./",
+      "zh": "下車。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Careful, wet.",
+      "phonetic": "/ˈkɛrfəl, wɛt./",
+      "zh": "小心滑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The plan, flex.",
+      "phonetic": "/ðə plæn, flɛks./",
+      "zh": "計劃調。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Late but ok.",
+      "phonetic": "/leɪt bət ˈoʊˈkeɪ./",
+      "zh": "遲但好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lesson, early.",
+      "phonetic": "/ðə ˈlɛsən, ˈərli./",
+      "zh": "教訓早。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Set alarm more.",
+      "phonetic": "/sɛt əˈlɑrm mɔr./",
+      "zh": "多設鈴。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The mood, fine.",
+      "phonetic": "/ðə mud, faɪn./",
+      "zh": "情緒好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No big deal.",
+      "phonetic": "/noʊ bɪg dil./",
+      "zh": "小事。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The walk, short.",
+      "phonetic": "/ðə wɔk, ʃɔrt./",
+      "zh": "走短路。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stretch the legs.",
+      "phonetic": "/strɛʧ ðə lɛgz./",
+      "zh": "伸腿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The day, saved.",
+      "phonetic": "/ðə deɪ, seɪvd./",
+      "zh": "天救回。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Coffee helped.",
+      "phonetic": "/ˈkɔfi hɛlpt./",
+      "zh": "咖啡助。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The friend waits.",
+      "phonetic": "/ðə frɛnd weɪts./",
+      "zh": "友在等。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sorry, the bus.",
+      "phonetic": "/ˈsɑri, ðə bəs./",
+      "zh": "抱歉車。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The laugh, shared.",
+      "phonetic": "/ðə læf, ʃɛrd./",
+      "zh": "共笑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Forget it, pal.",
+      "phonetic": "/fərˈgɛt ɪt, pæl./",
+      "zh": "算了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The timer, fix.",
+      "phonetic": "/ðə ˈtaɪmər, fɪks./",
+      "zh": "鬧鐘改。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ten min early.",
+      "phonetic": "/tɛn mɪn ˈərli./",
+      "zh": "早十分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The route, know.",
+      "phonetic": "/ðə rut, noʊ./",
+      "zh": "路線熟。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Always same.",
+      "phonetic": "/ˈɔlˌweɪz seɪm./",
+      "zh": "總一樣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wait, over.",
+      "phonetic": "/ðə weɪt, ˈoʊvər./",
+      "zh": "等結束。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Onward we go.",
+      "phonetic": "/ˈɔnwərd wi goʊ./",
+      "zh": "往前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for waiting.",
+      "phonetic": "/θæŋks fər ˈweɪtɪŋ./",
+      "zh": "謝謝等。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No worry, pal.",
+      "phonetic": "/noʊ ˈwəri, pæl./",
+      "zh": "別愁。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for waiting.",
+      "phonetic": "/θæŋks fər ˈweɪtɪŋ./",
+      "zh": "謝謝等。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No worry, pal.",
+      "phonetic": "/noʊ ˈwəri, pæl./",
+      "zh": "別愁。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wait, over.",
+      "phonetic": "/ðə weɪt, ˈoʊvər./",
+      "zh": "等結束。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Onward we go.",
+      "phonetic": "/ˈɔnwərd wi goʊ./",
+      "zh": "往前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The route, know.",
+      "phonetic": "/ðə rut, noʊ./",
+      "zh": "路線熟。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Always same.",
+      "phonetic": "/ˈɔlˌweɪz seɪm./",
+      "zh": "總一樣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The timer, fix.",
+      "phonetic": "/ðə ˈtaɪmər, fɪks./",
+      "zh": "鬧鐘改。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ten min early.",
+      "phonetic": "/tɛn mɪn ˈərli./",
+      "zh": "早十分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The laugh, shared.",
+      "phonetic": "/ðə læf, ʃɛrd./",
+      "zh": "共笑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Forget it, pal.",
+      "phonetic": "/fərˈgɛt ɪt, pæl./",
+      "zh": "算了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The friend waits.",
+      "phonetic": "/ðə frɛnd weɪts./",
+      "zh": "友在等。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sorry, the bus.",
+      "phonetic": "/ˈsɑri, ðə bəs./",
+      "zh": "抱歉車。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The day, saved.",
+      "phonetic": "/ðə deɪ, seɪvd./",
+      "zh": "天救回。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Coffee helped.",
+      "phonetic": "/ˈkɔfi hɛlpt./",
+      "zh": "咖啡助。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The walk, short.",
+      "phonetic": "/ðə wɔk, ʃɔrt./",
+      "zh": "走短路。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stretch the legs.",
+      "phonetic": "/strɛʧ ðə lɛgz./",
+      "zh": "伸腿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The mood, fine.",
+      "phonetic": "/ðə mud, faɪn./",
+      "zh": "情緒好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No big deal.",
+      "phonetic": "/noʊ bɪg dil./",
+      "zh": "小事。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lesson, early.",
+      "phonetic": "/ðə ˈlɛsən, ˈərli./",
+      "zh": "教訓早。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Set alarm more.",
+      "phonetic": "/sɛt əˈlɑrm mɔr./",
+      "zh": "多設鈴。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The plan, flex.",
+      "phonetic": "/ðə plæn, flɛks./",
+      "zh": "計劃調。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Late but ok.",
+      "phonetic": "/leɪt bət ˈoʊˈkeɪ./",
+      "zh": "遲但好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The step down.",
+      "phonetic": "/ðə stɛp daʊn./",
+      "zh": "下車。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Careful, wet.",
+      "phonetic": "/ˈkɛrfəl, wɛt./",
+      "zh": "小心滑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bell, press.",
+      "phonetic": "/ðə bɛl, prɛs./",
+      "zh": "按鈴。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stand up, please.",
+      "phonetic": "/stænd əp, pliz./",
+      "zh": "起身。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The stop soon.",
+      "phonetic": "/ðə stɑp sun./",
+      "zh": "快到站。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Get ready, yes.",
+      "phonetic": "/gɪt ˈrɛdi, jɛs./",
+      "zh": "準備。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The phone, scroll.",
+      "phonetic": "/ðə foʊn, skroʊl./",
+      "zh": "滑手機。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Easy ride.",
+      "phonetic": "/ˈizi raɪd./",
+      "zh": "安穩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The breath out.",
+      "phonetic": "/ðə brɛθ aʊt./",
+      "zh": "吐氣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Made it now.",
+      "phonetic": "/meɪd ɪt naʊ./",
+      "zh": "趕上了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The card, tap.",
+      "phonetic": "/ðə kɑrd, tæp./",
+      "zh": "拍卡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Beep, done.",
+      "phonetic": "/bip, dən./",
+      "zh": "滴完成。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The seat, grab.",
+      "phonetic": "/ðə sit, græb./",
+      "zh": "搶座。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Window, yes.",
+      "phonetic": "/ˈwɪndoʊ, jɛs./",
+      "zh": "靠窗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The door opens.",
+      "phonetic": "/ðə dɔr ˈoʊpənz./",
+      "zh": "門開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Step on in.",
+      "phonetic": "/stɛp ɔn ɪn./",
+      "zh": "上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The headlights near.",
+      "phonetic": "/ðə ˈhɛˌdlaɪts nɪr./",
+      "zh": "車燈近。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's ours.",
+      "phonetic": "/ðæts ɑrz./",
+      "zh": "是我們的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The minutes pass.",
+      "phonetic": "/ðə ˈmɪnəts pæs./",
+      "zh": "分鐘過。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Almost here.",
+      "phonetic": "/ˈɔlˌmoʊst hir./",
+      "zh": "快到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The stranger nods.",
+      "phonetic": "/ðə ˈstreɪnʤər nɑdz./",
+      "zh": "陌生人點頭。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same boat, pal.",
+      "phonetic": "/seɪm boʊt, pæl./",
+      "zh": "同命。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The music on.",
+      "phonetic": "/ðə mˈjuzɪk ɔn./",
+      "zh": "放音樂。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Kill the wait.",
+      "phonetic": "/kɪl ðə weɪt./",
+      "zh": "殺時間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The boss knows.",
+      "phonetic": "/ðə bɔs noʊz./",
+      "zh": "老闆知。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fine, they say.",
+      "phonetic": "/faɪn, ðeɪ seɪ./",
+      "zh": "說沒事。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The text, send.",
+      "phonetic": "/ðə tɛkst, sɛnd./",
+      "zh": "發訊息。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tell them late.",
+      "phonetic": "/tɛl ðɛm leɪt./",
+      "zh": "說會遲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The coffee, warm.",
+      "phonetic": "/ðə ˈkɔfi, wɔrm./",
+      "zh": "咖啡暖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sip, relax.",
+      "phonetic": "/sɪp, rɪˈlæks./",
+      "zh": "慢飲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rain starts.",
+      "phonetic": "/ðə reɪn stɑrts./",
+      "zh": "雨來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Share the roof.",
+      "phonetic": "/ʃɛr ðə rʊf./",
+      "zh": "共檐。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app, check.",
+      "phonetic": "/ðə æp, ʧɛk./",
+      "zh": "查軟體。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Live map, see.",
+      "phonetic": "/lɪv mæp, si./",
+      "zh": "看地圖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bench, sit.",
+      "phonetic": "/ðə bɛnʧ, sɪt./",
+      "zh": "坐凳。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wait it out.",
+      "phonetic": "/weɪt ɪt aʊt./",
+      "zh": "等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The next, when?",
+      "phonetic": "/ðə nɛkst, wɪn?/",
+      "zh": "下趟何時？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Twenty more, yes.",
+      "phonetic": "/tˈwɛnti mɔr, jɛs./",
+      "zh": "再二十。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The watch, late.",
+      "phonetic": "/ðə wɔʧ, leɪt./",
+      "zh": "錶慢了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Five minutes, ugh.",
+      "phonetic": "/faɪv ˈmɪnəts, əg./",
+      "zh": "五分唉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The stop empty.",
+      "phonetic": "/ðə stɑp ˈɛmti./",
+      "zh": "站空。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tail lights far.",
+      "phonetic": "/teɪl laɪts fɑr./",
+      "zh": "尾燈遠。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bus left.",
+      "phonetic": "/ðə bəs lɛft./",
+      "zh": "車走了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just now, no.",
+      "phonetic": "/ʤɪst naʊ, noʊ./",
+      "zh": "剛走。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bus left.",
+      "phonetic": "/ðə bəs lɛft./",
+      "zh": "車走了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just now, no.",
+      "phonetic": "/ʤɪst naʊ, noʊ./",
+      "zh": "剛走。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The stop empty.",
+      "phonetic": "/ðə stɑp ˈɛmti./",
+      "zh": "站空。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tail lights far.",
+      "phonetic": "/teɪl laɪts fɑr./",
+      "zh": "尾燈遠。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The watch, late.",
+      "phonetic": "/ðə wɔʧ, leɪt./",
+      "zh": "錶慢了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Five minutes, ugh.",
+      "phonetic": "/faɪv ˈmɪnəts, əg./",
+      "zh": "五分唉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The next, when?",
+      "phonetic": "/ðə nɛkst, wɪn?/",
+      "zh": "下趟何時？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Twenty more, yes.",
+      "phonetic": "/tˈwɛnti mɔr, jɛs./",
+      "zh": "再二十。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bench, sit.",
+      "phonetic": "/ðə bɛnʧ, sɪt./",
+      "zh": "坐凳。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wait it out.",
+      "phonetic": "/weɪt ɪt aʊt./",
+      "zh": "等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app, check.",
+      "phonetic": "/ðə æp, ʧɛk./",
+      "zh": "查軟體。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Live map, see.",
+      "phonetic": "/lɪv mæp, si./",
+      "zh": "看地圖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rain starts.",
+      "phonetic": "/ðə reɪn stɑrts./",
+      "zh": "雨來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Share the roof.",
+      "phonetic": "/ʃɛr ðə rʊf./",
+      "zh": "共檐。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The coffee, warm.",
+      "phonetic": "/ðə ˈkɔfi, wɔrm./",
+      "zh": "咖啡暖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sip, relax.",
+      "phonetic": "/sɪp, rɪˈlæks./",
+      "zh": "慢飲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The text, send.",
+      "phonetic": "/ðə tɛkst, sɛnd./",
+      "zh": "發訊息。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tell them late.",
+      "phonetic": "/tɛl ðɛm leɪt./",
+      "zh": "說會遲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The boss knows.",
+      "phonetic": "/ðə bɔs noʊz./",
+      "zh": "老闆知。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fine, they say.",
+      "phonetic": "/faɪn, ðeɪ seɪ./",
+      "zh": "說沒事。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The music on.",
+      "phonetic": "/ðə mˈjuzɪk ɔn./",
+      "zh": "放音樂。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Kill the wait.",
+      "phonetic": "/kɪl ðə weɪt./",
+      "zh": "殺時間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The stranger nods.",
+      "phonetic": "/ðə ˈstreɪnʤər nɑdz./",
+      "zh": "陌生人點頭。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same boat, pal.",
+      "phonetic": "/seɪm boʊt, pæl./",
+      "zh": "同命。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The minutes pass.",
+      "phonetic": "/ðə ˈmɪnəts pæs./",
+      "zh": "分鐘過。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Almost here.",
+      "phonetic": "/ˈɔlˌmoʊst hir./",
+      "zh": "快到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The headlights near.",
+      "phonetic": "/ðə ˈhɛˌdlaɪts nɪr./",
+      "zh": "車燈近。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's ours.",
+      "phonetic": "/ðæts ɑrz./",
+      "zh": "是我們的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The door opens.",
+      "phonetic": "/ðə dɔr ˈoʊpənz./",
+      "zh": "門開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Step on in.",
+      "phonetic": "/stɛp ɔn ɪn./",
+      "zh": "上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The seat, grab.",
+      "phonetic": "/ðə sit, græb./",
+      "zh": "搶座。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Window, yes.",
+      "phonetic": "/ˈwɪndoʊ, jɛs./",
+      "zh": "靠窗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The card, tap.",
+      "phonetic": "/ðə kɑrd, tæp./",
+      "zh": "拍卡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Beep, done.",
+      "phonetic": "/bip, dən./",
+      "zh": "滴完成。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The breath out.",
+      "phonetic": "/ðə brɛθ aʊt./",
+      "zh": "吐氣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Made it now.",
+      "phonetic": "/meɪd ɪt naʊ./",
+      "zh": "趕上了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The phone, scroll.",
+      "phonetic": "/ðə foʊn, skroʊl./",
+      "zh": "滑手機。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Easy ride.",
+      "phonetic": "/ˈizi raɪd./",
+      "zh": "安穩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The stop soon.",
+      "phonetic": "/ðə stɑp sun./",
+      "zh": "快到站。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Get ready, yes.",
+      "phonetic": "/gɪt ˈrɛdi, jɛs./",
+      "zh": "準備。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bell, press.",
+      "phonetic": "/ðə bɛl, prɛs./",
+      "zh": "按鈴。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stand up, please.",
+      "phonetic": "/stænd əp, pliz./",
+      "zh": "起身。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The step down.",
+      "phonetic": "/ðə stɛp daʊn./",
+      "zh": "下車。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Careful, wet.",
+      "phonetic": "/ˈkɛrfəl, wɛt./",
+      "zh": "小心滑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The plan, flex.",
+      "phonetic": "/ðə plæn, flɛks./",
+      "zh": "計劃調。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Late but ok.",
+      "phonetic": "/leɪt bət ˈoʊˈkeɪ./",
+      "zh": "遲但好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lesson, early.",
+      "phonetic": "/ðə ˈlɛsən, ˈərli./",
+      "zh": "教訓早。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Set alarm more.",
+      "phonetic": "/sɛt əˈlɑrm mɔr./",
+      "zh": "多設鈴。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The mood, fine.",
+      "phonetic": "/ðə mud, faɪn./",
+      "zh": "情緒好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No big deal.",
+      "phonetic": "/noʊ bɪg dil./",
+      "zh": "小事。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The walk, short.",
+      "phonetic": "/ðə wɔk, ʃɔrt./",
+      "zh": "走短路。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stretch the legs.",
+      "phonetic": "/strɛʧ ðə lɛgz./",
+      "zh": "伸腿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The day, saved.",
+      "phonetic": "/ðə deɪ, seɪvd./",
+      "zh": "天救回。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Coffee helped.",
+      "phonetic": "/ˈkɔfi hɛlpt./",
+      "zh": "咖啡助。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The friend waits.",
+      "phonetic": "/ðə frɛnd weɪts./",
+      "zh": "友在等。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sorry, the bus.",
+      "phonetic": "/ˈsɑri, ðə bəs./",
+      "zh": "抱歉車。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The laugh, shared.",
+      "phonetic": "/ðə læf, ʃɛrd./",
+      "zh": "共笑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Forget it, pal.",
+      "phonetic": "/fərˈgɛt ɪt, pæl./",
+      "zh": "算了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The timer, fix.",
+      "phonetic": "/ðə ˈtaɪmər, fɪks./",
+      "zh": "鬧鐘改。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ten min early.",
+      "phonetic": "/tɛn mɪn ˈərli./",
+      "zh": "早十分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The route, know.",
+      "phonetic": "/ðə rut, noʊ./",
+      "zh": "路線熟。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Always same.",
+      "phonetic": "/ˈɔlˌweɪz seɪm./",
+      "zh": "總一樣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wait, over.",
+      "phonetic": "/ðə weɪt, ˈoʊvər./",
+      "zh": "等結束。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Onward we go.",
+      "phonetic": "/ˈɔnwərd wi goʊ./",
+      "zh": "往前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for waiting.",
+      "phonetic": "/θæŋks fər ˈweɪtɪŋ./",
+      "zh": "謝謝等。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No worry, pal.",
+      "phonetic": "/noʊ ˈwəri, pæl./",
+      "zh": "別愁。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for waiting.",
+      "phonetic": "/θæŋks fər ˈweɪtɪŋ./",
+      "zh": "謝謝等。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No worry, pal.",
+      "phonetic": "/noʊ ˈwəri, pæl./",
+      "zh": "別愁。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wait, over.",
+      "phonetic": "/ðə weɪt, ˈoʊvər./",
+      "zh": "等結束。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Onward we go.",
+      "phonetic": "/ˈɔnwərd wi goʊ./",
+      "zh": "往前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The route, know.",
+      "phonetic": "/ðə rut, noʊ./",
+      "zh": "路線熟。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Always same.",
+      "phonetic": "/ˈɔlˌweɪz seɪm./",
+      "zh": "總一樣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The timer, fix.",
+      "phonetic": "/ðə ˈtaɪmər, fɪks./",
+      "zh": "鬧鐘改。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ten min early.",
+      "phonetic": "/tɛn mɪn ˈərli./",
+      "zh": "早十分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The laugh, shared.",
+      "phonetic": "/ðə læf, ʃɛrd./",
+      "zh": "共笑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Forget it, pal.",
+      "phonetic": "/fərˈgɛt ɪt, pæl./",
+      "zh": "算了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The friend waits.",
+      "phonetic": "/ðə frɛnd weɪts./",
+      "zh": "友在等。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sorry, the bus.",
+      "phonetic": "/ˈsɑri, ðə bəs./",
+      "zh": "抱歉車。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The day, saved.",
+      "phonetic": "/ðə deɪ, seɪvd./",
+      "zh": "天救回。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Coffee helped.",
+      "phonetic": "/ˈkɔfi hɛlpt./",
+      "zh": "咖啡助。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The walk, short.",
+      "phonetic": "/ðə wɔk, ʃɔrt./",
+      "zh": "走短路。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stretch the legs.",
+      "phonetic": "/strɛʧ ðə lɛgz./",
+      "zh": "伸腿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The mood, fine.",
+      "phonetic": "/ðə mud, faɪn./",
+      "zh": "情緒好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No big deal.",
+      "phonetic": "/noʊ bɪg dil./",
+      "zh": "小事。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lesson, early.",
+      "phonetic": "/ðə ˈlɛsən, ˈərli./",
+      "zh": "教訓早。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Set alarm more.",
+      "phonetic": "/sɛt əˈlɑrm mɔr./",
+      "zh": "多設鈴。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The plan, flex.",
+      "phonetic": "/ðə plæn, flɛks./",
+      "zh": "計劃調。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Late but ok.",
+      "phonetic": "/leɪt bət ˈoʊˈkeɪ./",
+      "zh": "遲但好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The step down.",
+      "phonetic": "/ðə stɛp daʊn./",
+      "zh": "下車。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Careful, wet.",
+      "phonetic": "/ˈkɛrfəl, wɛt./",
+      "zh": "小心滑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bell, press.",
+      "phonetic": "/ðə bɛl, prɛs./",
+      "zh": "按鈴。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stand up, please.",
+      "phonetic": "/stænd əp, pliz./",
+      "zh": "起身。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The stop soon.",
+      "phonetic": "/ðə stɑp sun./",
+      "zh": "快到站。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Get ready, yes.",
+      "phonetic": "/gɪt ˈrɛdi, jɛs./",
+      "zh": "準備。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The phone, scroll.",
+      "phonetic": "/ðə foʊn, skroʊl./",
+      "zh": "滑手機。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Easy ride.",
+      "phonetic": "/ˈizi raɪd./",
+      "zh": "安穩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The breath out.",
+      "phonetic": "/ðə brɛθ aʊt./",
+      "zh": "吐氣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Made it now.",
+      "phonetic": "/meɪd ɪt naʊ./",
+      "zh": "趕上了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The card, tap.",
+      "phonetic": "/ðə kɑrd, tæp./",
+      "zh": "拍卡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Beep, done.",
+      "phonetic": "/bip, dən./",
+      "zh": "滴完成。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The seat, grab.",
+      "phonetic": "/ðə sit, græb./",
+      "zh": "搶座。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Window, yes.",
+      "phonetic": "/ˈwɪndoʊ, jɛs./",
+      "zh": "靠窗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The door opens.",
+      "phonetic": "/ðə dɔr ˈoʊpənz./",
+      "zh": "門開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Step on in.",
+      "phonetic": "/stɛp ɔn ɪn./",
+      "zh": "上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The headlights near.",
+      "phonetic": "/ðə ˈhɛˌdlaɪts nɪr./",
+      "zh": "車燈近。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's ours.",
+      "phonetic": "/ðæts ɑrz./",
+      "zh": "是我們的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The minutes pass.",
+      "phonetic": "/ðə ˈmɪnəts pæs./",
+      "zh": "分鐘過。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Almost here.",
+      "phonetic": "/ˈɔlˌmoʊst hir./",
+      "zh": "快到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The stranger nods.",
+      "phonetic": "/ðə ˈstreɪnʤər nɑdz./",
+      "zh": "陌生人點頭。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same boat, pal.",
+      "phonetic": "/seɪm boʊt, pæl./",
+      "zh": "同命。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The music on.",
+      "phonetic": "/ðə mˈjuzɪk ɔn./",
+      "zh": "放音樂。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Kill the wait.",
+      "phonetic": "/kɪl ðə weɪt./",
+      "zh": "殺時間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The boss knows.",
+      "phonetic": "/ðə bɔs noʊz./",
+      "zh": "老闆知。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fine, they say.",
+      "phonetic": "/faɪn, ðeɪ seɪ./",
+      "zh": "說沒事。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The text, send.",
+      "phonetic": "/ðə tɛkst, sɛnd./",
+      "zh": "發訊息。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tell them late.",
+      "phonetic": "/tɛl ðɛm leɪt./",
+      "zh": "說會遲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The coffee, warm.",
+      "phonetic": "/ðə ˈkɔfi, wɔrm./",
+      "zh": "咖啡暖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sip, relax.",
+      "phonetic": "/sɪp, rɪˈlæks./",
+      "zh": "慢飲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rain starts.",
+      "phonetic": "/ðə reɪn stɑrts./",
+      "zh": "雨來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Share the roof.",
+      "phonetic": "/ʃɛr ðə rʊf./",
+      "zh": "共檐。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app, check.",
+      "phonetic": "/ðə æp, ʧɛk./",
+      "zh": "查軟體。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Live map, see.",
+      "phonetic": "/lɪv mæp, si./",
+      "zh": "看地圖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bench, sit.",
+      "phonetic": "/ðə bɛnʧ, sɪt./",
+      "zh": "坐凳。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wait it out.",
+      "phonetic": "/weɪt ɪt aʊt./",
+      "zh": "等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The next, when?",
+      "phonetic": "/ðə nɛkst, wɪn?/",
+      "zh": "下趟何時？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Twenty more, yes.",
+      "phonetic": "/tˈwɛnti mɔr, jɛs./",
+      "zh": "再二十。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The watch, late.",
+      "phonetic": "/ðə wɔʧ, leɪt./",
+      "zh": "錶慢了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Five minutes, ugh.",
+      "phonetic": "/faɪv ˈmɪnəts, əg./",
+      "zh": "五分唉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The stop empty.",
+      "phonetic": "/ðə stɑp ˈɛmti./",
+      "zh": "站空。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tail lights far.",
+      "phonetic": "/teɪl laɪts fɑr./",
+      "zh": "尾燈遠。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bus left.",
+      "phonetic": "/ðə bəs lɛft./",
+      "zh": "車走了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just now, no.",
+      "phonetic": "/ʤɪst naʊ, noʊ./",
+      "zh": "剛走。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bus left.",
+      "phonetic": "/ðə bəs lɛft./",
+      "zh": "車走了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just now, no.",
+      "phonetic": "/ʤɪst naʊ, noʊ./",
+      "zh": "剛走。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The stop empty.",
+      "phonetic": "/ðə stɑp ˈɛmti./",
+      "zh": "站空。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tail lights far.",
+      "phonetic": "/teɪl laɪts fɑr./",
+      "zh": "尾燈遠。"
+    }
+  ]
+}

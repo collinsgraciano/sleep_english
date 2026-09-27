@@ -1,0 +1,2458 @@
+{
+  "title": "Everyday Phrases — Answering Questions",
+  "title_zh": "回答問題",
+  "scene_zh": "回答問題 · 情境對話",
+  "title_quote": "The hand, up.",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】❓ 實用回答問題必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — Answering Questions",
+  "youtube_description": "睡著學英文！這部影片收錄實用回答問題情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫），不用背，睡前聽就會。重複播放，讓英文自然進入你的大腦。👍 想學更多生活場景，請留言告訴我！別忘了訂閱+按讚。 #英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical Answering Questions phrase pairs (each pair: male normal speed → female slow speed → combined dialogue). No memorization needed—just listen before bed and absorb naturally. If you want more real-life scenarios, leave a comment! Subscribe and like!",
+  "youtube_tags": [
+    "英文聽力",
+    "睡前英文",
+    "回答問題英文",
+    "English listening",
+    "Sleep learning",
+    "A2 English",
+    "常用英文短語",
+    "零基礎英文",
+    "慢速英文",
+    "英文口語",
+    "Learn English",
+    "English for daily life",
+    "ESL",
+    "English conversation",
+    "聽英語",
+    "英文學習"
+  ],
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "Answering Questions",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "Answering Questions",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "School POV",
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "The hand, up.",
+      "phonetic": "/ðə hænd, əp./",
+      "zh": "舉手。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, you, pal.",
+      "phonetic": "/jɛs, ju, pæl./",
+      "zh": "你答。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The question, clear?",
+      "phonetic": "/ðə kˈwɛʃən, klɪr?/",
+      "zh": "問題清？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Repeat, please.",
+      "phonetic": "/rɪˈpit, pliz./",
+      "zh": "請復。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The think, pause.",
+      "phonetic": "/ðə θɪŋk, pɔz./",
+      "zh": "停頓想。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No rush, yes.",
+      "phonetic": "/noʊ rəʃ, jɛs./",
+      "zh": "不急。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The point, main.",
+      "phonetic": "/ðə pɔɪnt, meɪn./",
+      "zh": "重點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "State it first.",
+      "phonetic": "/steɪt ɪt fərst./",
+      "zh": "先說。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The example, give.",
+      "phonetic": "/ðə ɪgˈzæmpəl, gɪv./",
+      "zh": "給例。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Makes it clear.",
+      "phonetic": "/meɪks ɪt klɪr./",
+      "zh": "更明。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The unsure, say.",
+      "phonetic": "/ðə ənˈʃʊr, seɪ./",
+      "zh": "不確定直說。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Guess, not lie.",
+      "phonetic": "/gɛs, nɑt laɪ./",
+      "zh": "猜非謊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wrong, ok.",
+      "phonetic": "/ðə rɔŋ, ˈoʊˈkeɪ./",
+      "zh": "錯沒事。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Correct me, yes.",
+      "phonetic": "/kərˈɛkt mi, jɛs./",
+      "zh": "指正。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The why, explain.",
+      "phonetic": "/ðə waɪ, ɪkˈspleɪn./",
+      "zh": "解釋因。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Reason behind.",
+      "phonetic": "/ˈrizən bɪˈhaɪnd./",
+      "zh": "背後理。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The term, define.",
+      "phonetic": "/ðə tərm, dɪˈfaɪn./",
+      "zh": "定義詞。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In plain words.",
+      "phonetic": "/ɪn pleɪn wərdz./",
+      "zh": "白話。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The listen, full.",
+      "phonetic": "/ðə ˈlɪsən, fʊl./",
+      "zh": "聽完。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Before I speak.",
+      "phonetic": "/ˌbiˈfɔr aɪ spik./",
+      "zh": "再答。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The nod, teacher.",
+      "phonetic": "/ðə nɑd, ˈtiʧər./",
+      "zh": "師點頭。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the right.",
+      "phonetic": "/ɔn ðə raɪt./",
+      "zh": "對了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The board, point.",
+      "phonetic": "/ðə bɔrd, pɔɪnt./",
+      "zh": "指板。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Show the step.",
+      "phonetic": "/ʃoʊ ðə stɛp./",
+      "zh": "示步。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The voice, clear.",
+      "phonetic": "/ðə vɔɪs, klɪr./",
+      "zh": "聲清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Project, pal.",
+      "phonetic": "/ˈprɑʤɛkt, pæl./",
+      "zh": "放大。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The speed, slow.",
+      "phonetic": "/ðə spid, sloʊ./",
+      "zh": "慢速。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They note down.",
+      "phonetic": "/ðeɪ noʊt daʊn./",
+      "zh": "他們記。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The ask back.",
+      "phonetic": "/ðə æsk bæk./",
+      "zh": "反問。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "To be sure, yes.",
+      "phonetic": "/tɪ bi ʃʊr, jɛs./",
+      "zh": "確認。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The fact, cite.",
+      "phonetic": "/ðə fækt, saɪt./",
+      "zh": "引事實。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "From the book.",
+      "phonetic": "/frəm ðə bʊk./",
+      "zh": "出自書。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The doubt, share.",
+      "phonetic": "/ðə daʊt, ʃɛr./",
+      "zh": "疑分享。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good question, yes.",
+      "phonetic": "/gʊd kˈwɛʃən, jɛs./",
+      "zh": "好問。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The compare, use.",
+      "phonetic": "/ðə kəmˈpɛr, juz./",
+      "zh": "用比較。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A vs B, clear.",
+      "phonetic": "/ə ˈvərsəz bi, klɪr./",
+      "zh": "甲乙清。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sum, short.",
+      "phonetic": "/ðə səm, ʃɔrt./",
+      "zh": "簡短。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then expand, yes.",
+      "phonetic": "/ðɛn ɪkˈspænd, jɛs./",
+      "zh": "再展。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The smile, keep.",
+      "phonetic": "/ðə smaɪl, kip./",
+      "zh": "保持笑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Calm, not fear.",
+      "phonetic": "/kɑm, nɑt fɪr./",
+      "zh": "鎮非懼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The peer, help.",
+      "phonetic": "/ðə pɪr, hɛlp./",
+      "zh": "助同。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Whisper the hint.",
+      "phonetic": "/ˈwɪspər ðə hɪnt./",
+      "zh": "悄提示。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The card, peek?",
+      "phonetic": "/ðə kɑrd, pik?/",
+      "zh": "偷看卡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, from mind.",
+      "phonetic": "/noʊ, frəm maɪnd./",
+      "zh": "不憑記憶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The right, answer.",
+      "phonetic": "/ðə raɪt, ˈænsər./",
+      "zh": "答對。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, exactly!",
+      "phonetic": "/jɛs, ɪgˈzæktli!/",
+      "zh": "對正是！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wrong, laugh.",
+      "phonetic": "/ðə rɔŋ, læf./",
+      "zh": "錯笑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Next time, pal.",
+      "phonetic": "/nɛkst taɪm, pæl./",
+      "zh": "下回。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The grade, fair.",
+      "phonetic": "/ðə greɪd, fɛr./",
+      "zh": "分公。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Effort shows.",
+      "phonetic": "/ˈɛfərt ʃoʊz./",
+      "zh": "見努力。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The review, after.",
+      "phonetic": "/ðə ˌrivˈju, ˈæftər./",
+      "zh": "後覆盤。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What missed, note.",
+      "phonetic": "/wət mɪst, noʊt./",
+      "zh": "缺記。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The skill, grow.",
+      "phonetic": "/ðə skɪl, groʊ./",
+      "zh": "力長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Speak more, yes.",
+      "phonetic": "/spik mɔr, jɛs./",
+      "zh": "多說。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The confidence, up.",
+      "phonetic": "/ðə ˈkɑnfədɛns, əp./",
+      "zh": "信增。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "From practice.",
+      "phonetic": "/frəm ˈpræktɪs./",
+      "zh": "練來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The thank, teacher.",
+      "phonetic": "/ðə θæŋk, ˈtiʧər./",
+      "zh": "謝師。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the chance.",
+      "phonetic": "/fər ðə ʧæns./",
+      "zh": "給機會。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The class, join.",
+      "phonetic": "/ðə klæs, ʤɔɪn./",
+      "zh": "參與。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "More next, yes.",
+      "phonetic": "/mɔr nɛkst, jɛs./",
+      "zh": "下更多。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The learn, deep.",
+      "phonetic": "/ðə lərn, dip./",
+      "zh": "學深。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "By answering, pal.",
+      "phonetic": "/baɪ ˈænsərɪŋ, pæl./",
+      "zh": "借答。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The done, well.",
+      "phonetic": "/ðə dən, wɛl./",
+      "zh": "答得好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Proud a bit.",
+      "phonetic": "/praʊd ə bɪt./",
+      "zh": "微傲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for listening.",
+      "phonetic": "/θæŋks fər ˈlɪsənɪŋ./",
+      "zh": "謝謝聽。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good job, pal.",
+      "phonetic": "/gʊd ʤɑb, pæl./",
+      "zh": "做得好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for listening.",
+      "phonetic": "/θæŋks fər ˈlɪsənɪŋ./",
+      "zh": "謝謝聽。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good job, pal.",
+      "phonetic": "/gʊd ʤɑb, pæl./",
+      "zh": "做得好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The done, well.",
+      "phonetic": "/ðə dən, wɛl./",
+      "zh": "答得好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Proud a bit.",
+      "phonetic": "/praʊd ə bɪt./",
+      "zh": "微傲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The learn, deep.",
+      "phonetic": "/ðə lərn, dip./",
+      "zh": "學深。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "By answering, pal.",
+      "phonetic": "/baɪ ˈænsərɪŋ, pæl./",
+      "zh": "借答。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The class, join.",
+      "phonetic": "/ðə klæs, ʤɔɪn./",
+      "zh": "參與。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "More next, yes.",
+      "phonetic": "/mɔr nɛkst, jɛs./",
+      "zh": "下更多。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The thank, teacher.",
+      "phonetic": "/ðə θæŋk, ˈtiʧər./",
+      "zh": "謝師。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the chance.",
+      "phonetic": "/fər ðə ʧæns./",
+      "zh": "給機會。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The confidence, up.",
+      "phonetic": "/ðə ˈkɑnfədɛns, əp./",
+      "zh": "信增。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "From practice.",
+      "phonetic": "/frəm ˈpræktɪs./",
+      "zh": "練來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The skill, grow.",
+      "phonetic": "/ðə skɪl, groʊ./",
+      "zh": "力長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Speak more, yes.",
+      "phonetic": "/spik mɔr, jɛs./",
+      "zh": "多說。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The review, after.",
+      "phonetic": "/ðə ˌrivˈju, ˈæftər./",
+      "zh": "後覆盤。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What missed, note.",
+      "phonetic": "/wət mɪst, noʊt./",
+      "zh": "缺記。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The grade, fair.",
+      "phonetic": "/ðə greɪd, fɛr./",
+      "zh": "分公。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Effort shows.",
+      "phonetic": "/ˈɛfərt ʃoʊz./",
+      "zh": "見努力。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wrong, laugh.",
+      "phonetic": "/ðə rɔŋ, læf./",
+      "zh": "錯笑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Next time, pal.",
+      "phonetic": "/nɛkst taɪm, pæl./",
+      "zh": "下回。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The right, answer.",
+      "phonetic": "/ðə raɪt, ˈænsər./",
+      "zh": "答對。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, exactly!",
+      "phonetic": "/jɛs, ɪgˈzæktli!/",
+      "zh": "對正是！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The card, peek?",
+      "phonetic": "/ðə kɑrd, pik?/",
+      "zh": "偷看卡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, from mind.",
+      "phonetic": "/noʊ, frəm maɪnd./",
+      "zh": "不憑記憶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The peer, help.",
+      "phonetic": "/ðə pɪr, hɛlp./",
+      "zh": "助同。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Whisper the hint.",
+      "phonetic": "/ˈwɪspər ðə hɪnt./",
+      "zh": "悄提示。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The smile, keep.",
+      "phonetic": "/ðə smaɪl, kip./",
+      "zh": "保持笑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Calm, not fear.",
+      "phonetic": "/kɑm, nɑt fɪr./",
+      "zh": "鎮非懼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sum, short.",
+      "phonetic": "/ðə səm, ʃɔrt./",
+      "zh": "簡短。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then expand, yes.",
+      "phonetic": "/ðɛn ɪkˈspænd, jɛs./",
+      "zh": "再展。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The compare, use.",
+      "phonetic": "/ðə kəmˈpɛr, juz./",
+      "zh": "用比較。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A vs B, clear.",
+      "phonetic": "/ə ˈvərsəz bi, klɪr./",
+      "zh": "甲乙清。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The doubt, share.",
+      "phonetic": "/ðə daʊt, ʃɛr./",
+      "zh": "疑分享。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good question, yes.",
+      "phonetic": "/gʊd kˈwɛʃən, jɛs./",
+      "zh": "好問。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The fact, cite.",
+      "phonetic": "/ðə fækt, saɪt./",
+      "zh": "引事實。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "From the book.",
+      "phonetic": "/frəm ðə bʊk./",
+      "zh": "出自書。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The ask back.",
+      "phonetic": "/ðə æsk bæk./",
+      "zh": "反問。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "To be sure, yes.",
+      "phonetic": "/tɪ bi ʃʊr, jɛs./",
+      "zh": "確認。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The speed, slow.",
+      "phonetic": "/ðə spid, sloʊ./",
+      "zh": "慢速。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They note down.",
+      "phonetic": "/ðeɪ noʊt daʊn./",
+      "zh": "他們記。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The voice, clear.",
+      "phonetic": "/ðə vɔɪs, klɪr./",
+      "zh": "聲清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Project, pal.",
+      "phonetic": "/ˈprɑʤɛkt, pæl./",
+      "zh": "放大。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The board, point.",
+      "phonetic": "/ðə bɔrd, pɔɪnt./",
+      "zh": "指板。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Show the step.",
+      "phonetic": "/ʃoʊ ðə stɛp./",
+      "zh": "示步。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The nod, teacher.",
+      "phonetic": "/ðə nɑd, ˈtiʧər./",
+      "zh": "師點頭。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the right.",
+      "phonetic": "/ɔn ðə raɪt./",
+      "zh": "對了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The listen, full.",
+      "phonetic": "/ðə ˈlɪsən, fʊl./",
+      "zh": "聽完。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Before I speak.",
+      "phonetic": "/ˌbiˈfɔr aɪ spik./",
+      "zh": "再答。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The term, define.",
+      "phonetic": "/ðə tərm, dɪˈfaɪn./",
+      "zh": "定義詞。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In plain words.",
+      "phonetic": "/ɪn pleɪn wərdz./",
+      "zh": "白話。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The why, explain.",
+      "phonetic": "/ðə waɪ, ɪkˈspleɪn./",
+      "zh": "解釋因。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Reason behind.",
+      "phonetic": "/ˈrizən bɪˈhaɪnd./",
+      "zh": "背後理。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wrong, ok.",
+      "phonetic": "/ðə rɔŋ, ˈoʊˈkeɪ./",
+      "zh": "錯沒事。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Correct me, yes.",
+      "phonetic": "/kərˈɛkt mi, jɛs./",
+      "zh": "指正。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The unsure, say.",
+      "phonetic": "/ðə ənˈʃʊr, seɪ./",
+      "zh": "不確定直說。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Guess, not lie.",
+      "phonetic": "/gɛs, nɑt laɪ./",
+      "zh": "猜非謊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The example, give.",
+      "phonetic": "/ðə ɪgˈzæmpəl, gɪv./",
+      "zh": "給例。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Makes it clear.",
+      "phonetic": "/meɪks ɪt klɪr./",
+      "zh": "更明。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The point, main.",
+      "phonetic": "/ðə pɔɪnt, meɪn./",
+      "zh": "重點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "State it first.",
+      "phonetic": "/steɪt ɪt fərst./",
+      "zh": "先說。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The think, pause.",
+      "phonetic": "/ðə θɪŋk, pɔz./",
+      "zh": "停頓想。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No rush, yes.",
+      "phonetic": "/noʊ rəʃ, jɛs./",
+      "zh": "不急。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The question, clear?",
+      "phonetic": "/ðə kˈwɛʃən, klɪr?/",
+      "zh": "問題清？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Repeat, please.",
+      "phonetic": "/rɪˈpit, pliz./",
+      "zh": "請復。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The hand, up.",
+      "phonetic": "/ðə hænd, əp./",
+      "zh": "舉手。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, you, pal.",
+      "phonetic": "/jɛs, ju, pæl./",
+      "zh": "你答。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The hand, up.",
+      "phonetic": "/ðə hænd, əp./",
+      "zh": "舉手。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, you, pal.",
+      "phonetic": "/jɛs, ju, pæl./",
+      "zh": "你答。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The question, clear?",
+      "phonetic": "/ðə kˈwɛʃən, klɪr?/",
+      "zh": "問題清？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Repeat, please.",
+      "phonetic": "/rɪˈpit, pliz./",
+      "zh": "請復。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The think, pause.",
+      "phonetic": "/ðə θɪŋk, pɔz./",
+      "zh": "停頓想。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No rush, yes.",
+      "phonetic": "/noʊ rəʃ, jɛs./",
+      "zh": "不急。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The point, main.",
+      "phonetic": "/ðə pɔɪnt, meɪn./",
+      "zh": "重點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "State it first.",
+      "phonetic": "/steɪt ɪt fərst./",
+      "zh": "先說。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The example, give.",
+      "phonetic": "/ðə ɪgˈzæmpəl, gɪv./",
+      "zh": "給例。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Makes it clear.",
+      "phonetic": "/meɪks ɪt klɪr./",
+      "zh": "更明。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The unsure, say.",
+      "phonetic": "/ðə ənˈʃʊr, seɪ./",
+      "zh": "不確定直說。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Guess, not lie.",
+      "phonetic": "/gɛs, nɑt laɪ./",
+      "zh": "猜非謊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wrong, ok.",
+      "phonetic": "/ðə rɔŋ, ˈoʊˈkeɪ./",
+      "zh": "錯沒事。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Correct me, yes.",
+      "phonetic": "/kərˈɛkt mi, jɛs./",
+      "zh": "指正。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The why, explain.",
+      "phonetic": "/ðə waɪ, ɪkˈspleɪn./",
+      "zh": "解釋因。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Reason behind.",
+      "phonetic": "/ˈrizən bɪˈhaɪnd./",
+      "zh": "背後理。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The term, define.",
+      "phonetic": "/ðə tərm, dɪˈfaɪn./",
+      "zh": "定義詞。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In plain words.",
+      "phonetic": "/ɪn pleɪn wərdz./",
+      "zh": "白話。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The listen, full.",
+      "phonetic": "/ðə ˈlɪsən, fʊl./",
+      "zh": "聽完。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Before I speak.",
+      "phonetic": "/ˌbiˈfɔr aɪ spik./",
+      "zh": "再答。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The nod, teacher.",
+      "phonetic": "/ðə nɑd, ˈtiʧər./",
+      "zh": "師點頭。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the right.",
+      "phonetic": "/ɔn ðə raɪt./",
+      "zh": "對了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The board, point.",
+      "phonetic": "/ðə bɔrd, pɔɪnt./",
+      "zh": "指板。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Show the step.",
+      "phonetic": "/ʃoʊ ðə stɛp./",
+      "zh": "示步。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The voice, clear.",
+      "phonetic": "/ðə vɔɪs, klɪr./",
+      "zh": "聲清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Project, pal.",
+      "phonetic": "/ˈprɑʤɛkt, pæl./",
+      "zh": "放大。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The speed, slow.",
+      "phonetic": "/ðə spid, sloʊ./",
+      "zh": "慢速。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They note down.",
+      "phonetic": "/ðeɪ noʊt daʊn./",
+      "zh": "他們記。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The ask back.",
+      "phonetic": "/ðə æsk bæk./",
+      "zh": "反問。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "To be sure, yes.",
+      "phonetic": "/tɪ bi ʃʊr, jɛs./",
+      "zh": "確認。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The fact, cite.",
+      "phonetic": "/ðə fækt, saɪt./",
+      "zh": "引事實。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "From the book.",
+      "phonetic": "/frəm ðə bʊk./",
+      "zh": "出自書。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The doubt, share.",
+      "phonetic": "/ðə daʊt, ʃɛr./",
+      "zh": "疑分享。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good question, yes.",
+      "phonetic": "/gʊd kˈwɛʃən, jɛs./",
+      "zh": "好問。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The compare, use.",
+      "phonetic": "/ðə kəmˈpɛr, juz./",
+      "zh": "用比較。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A vs B, clear.",
+      "phonetic": "/ə ˈvərsəz bi, klɪr./",
+      "zh": "甲乙清。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sum, short.",
+      "phonetic": "/ðə səm, ʃɔrt./",
+      "zh": "簡短。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then expand, yes.",
+      "phonetic": "/ðɛn ɪkˈspænd, jɛs./",
+      "zh": "再展。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The smile, keep.",
+      "phonetic": "/ðə smaɪl, kip./",
+      "zh": "保持笑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Calm, not fear.",
+      "phonetic": "/kɑm, nɑt fɪr./",
+      "zh": "鎮非懼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The peer, help.",
+      "phonetic": "/ðə pɪr, hɛlp./",
+      "zh": "助同。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Whisper the hint.",
+      "phonetic": "/ˈwɪspər ðə hɪnt./",
+      "zh": "悄提示。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The card, peek?",
+      "phonetic": "/ðə kɑrd, pik?/",
+      "zh": "偷看卡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, from mind.",
+      "phonetic": "/noʊ, frəm maɪnd./",
+      "zh": "不憑記憶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The right, answer.",
+      "phonetic": "/ðə raɪt, ˈænsər./",
+      "zh": "答對。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, exactly!",
+      "phonetic": "/jɛs, ɪgˈzæktli!/",
+      "zh": "對正是！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wrong, laugh.",
+      "phonetic": "/ðə rɔŋ, læf./",
+      "zh": "錯笑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Next time, pal.",
+      "phonetic": "/nɛkst taɪm, pæl./",
+      "zh": "下回。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The grade, fair.",
+      "phonetic": "/ðə greɪd, fɛr./",
+      "zh": "分公。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Effort shows.",
+      "phonetic": "/ˈɛfərt ʃoʊz./",
+      "zh": "見努力。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The review, after.",
+      "phonetic": "/ðə ˌrivˈju, ˈæftər./",
+      "zh": "後覆盤。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What missed, note.",
+      "phonetic": "/wət mɪst, noʊt./",
+      "zh": "缺記。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The skill, grow.",
+      "phonetic": "/ðə skɪl, groʊ./",
+      "zh": "力長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Speak more, yes.",
+      "phonetic": "/spik mɔr, jɛs./",
+      "zh": "多說。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The confidence, up.",
+      "phonetic": "/ðə ˈkɑnfədɛns, əp./",
+      "zh": "信增。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "From practice.",
+      "phonetic": "/frəm ˈpræktɪs./",
+      "zh": "練來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The thank, teacher.",
+      "phonetic": "/ðə θæŋk, ˈtiʧər./",
+      "zh": "謝師。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the chance.",
+      "phonetic": "/fər ðə ʧæns./",
+      "zh": "給機會。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The class, join.",
+      "phonetic": "/ðə klæs, ʤɔɪn./",
+      "zh": "參與。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "More next, yes.",
+      "phonetic": "/mɔr nɛkst, jɛs./",
+      "zh": "下更多。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The learn, deep.",
+      "phonetic": "/ðə lərn, dip./",
+      "zh": "學深。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "By answering, pal.",
+      "phonetic": "/baɪ ˈænsərɪŋ, pæl./",
+      "zh": "借答。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The done, well.",
+      "phonetic": "/ðə dən, wɛl./",
+      "zh": "答得好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Proud a bit.",
+      "phonetic": "/praʊd ə bɪt./",
+      "zh": "微傲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for listening.",
+      "phonetic": "/θæŋks fər ˈlɪsənɪŋ./",
+      "zh": "謝謝聽。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good job, pal.",
+      "phonetic": "/gʊd ʤɑb, pæl./",
+      "zh": "做得好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for listening.",
+      "phonetic": "/θæŋks fər ˈlɪsənɪŋ./",
+      "zh": "謝謝聽。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good job, pal.",
+      "phonetic": "/gʊd ʤɑb, pæl./",
+      "zh": "做得好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The done, well.",
+      "phonetic": "/ðə dən, wɛl./",
+      "zh": "答得好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Proud a bit.",
+      "phonetic": "/praʊd ə bɪt./",
+      "zh": "微傲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The learn, deep.",
+      "phonetic": "/ðə lərn, dip./",
+      "zh": "學深。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "By answering, pal.",
+      "phonetic": "/baɪ ˈænsərɪŋ, pæl./",
+      "zh": "借答。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The class, join.",
+      "phonetic": "/ðə klæs, ʤɔɪn./",
+      "zh": "參與。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "More next, yes.",
+      "phonetic": "/mɔr nɛkst, jɛs./",
+      "zh": "下更多。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The thank, teacher.",
+      "phonetic": "/ðə θæŋk, ˈtiʧər./",
+      "zh": "謝師。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the chance.",
+      "phonetic": "/fər ðə ʧæns./",
+      "zh": "給機會。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The confidence, up.",
+      "phonetic": "/ðə ˈkɑnfədɛns, əp./",
+      "zh": "信增。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "From practice.",
+      "phonetic": "/frəm ˈpræktɪs./",
+      "zh": "練來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The skill, grow.",
+      "phonetic": "/ðə skɪl, groʊ./",
+      "zh": "力長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Speak more, yes.",
+      "phonetic": "/spik mɔr, jɛs./",
+      "zh": "多說。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The review, after.",
+      "phonetic": "/ðə ˌrivˈju, ˈæftər./",
+      "zh": "後覆盤。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What missed, note.",
+      "phonetic": "/wət mɪst, noʊt./",
+      "zh": "缺記。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The grade, fair.",
+      "phonetic": "/ðə greɪd, fɛr./",
+      "zh": "分公。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Effort shows.",
+      "phonetic": "/ˈɛfərt ʃoʊz./",
+      "zh": "見努力。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wrong, laugh.",
+      "phonetic": "/ðə rɔŋ, læf./",
+      "zh": "錯笑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Next time, pal.",
+      "phonetic": "/nɛkst taɪm, pæl./",
+      "zh": "下回。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The right, answer.",
+      "phonetic": "/ðə raɪt, ˈænsər./",
+      "zh": "答對。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, exactly!",
+      "phonetic": "/jɛs, ɪgˈzæktli!/",
+      "zh": "對正是！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The card, peek?",
+      "phonetic": "/ðə kɑrd, pik?/",
+      "zh": "偷看卡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, from mind.",
+      "phonetic": "/noʊ, frəm maɪnd./",
+      "zh": "不憑記憶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The peer, help.",
+      "phonetic": "/ðə pɪr, hɛlp./",
+      "zh": "助同。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Whisper the hint.",
+      "phonetic": "/ˈwɪspər ðə hɪnt./",
+      "zh": "悄提示。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The smile, keep.",
+      "phonetic": "/ðə smaɪl, kip./",
+      "zh": "保持笑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Calm, not fear.",
+      "phonetic": "/kɑm, nɑt fɪr./",
+      "zh": "鎮非懼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sum, short.",
+      "phonetic": "/ðə səm, ʃɔrt./",
+      "zh": "簡短。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then expand, yes.",
+      "phonetic": "/ðɛn ɪkˈspænd, jɛs./",
+      "zh": "再展。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The compare, use.",
+      "phonetic": "/ðə kəmˈpɛr, juz./",
+      "zh": "用比較。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A vs B, clear.",
+      "phonetic": "/ə ˈvərsəz bi, klɪr./",
+      "zh": "甲乙清。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The doubt, share.",
+      "phonetic": "/ðə daʊt, ʃɛr./",
+      "zh": "疑分享。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good question, yes.",
+      "phonetic": "/gʊd kˈwɛʃən, jɛs./",
+      "zh": "好問。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The fact, cite.",
+      "phonetic": "/ðə fækt, saɪt./",
+      "zh": "引事實。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "From the book.",
+      "phonetic": "/frəm ðə bʊk./",
+      "zh": "出自書。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The ask back.",
+      "phonetic": "/ðə æsk bæk./",
+      "zh": "反問。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "To be sure, yes.",
+      "phonetic": "/tɪ bi ʃʊr, jɛs./",
+      "zh": "確認。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The speed, slow.",
+      "phonetic": "/ðə spid, sloʊ./",
+      "zh": "慢速。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They note down.",
+      "phonetic": "/ðeɪ noʊt daʊn./",
+      "zh": "他們記。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The voice, clear.",
+      "phonetic": "/ðə vɔɪs, klɪr./",
+      "zh": "聲清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Project, pal.",
+      "phonetic": "/ˈprɑʤɛkt, pæl./",
+      "zh": "放大。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The board, point.",
+      "phonetic": "/ðə bɔrd, pɔɪnt./",
+      "zh": "指板。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Show the step.",
+      "phonetic": "/ʃoʊ ðə stɛp./",
+      "zh": "示步。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The nod, teacher.",
+      "phonetic": "/ðə nɑd, ˈtiʧər./",
+      "zh": "師點頭。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the right.",
+      "phonetic": "/ɔn ðə raɪt./",
+      "zh": "對了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The listen, full.",
+      "phonetic": "/ðə ˈlɪsən, fʊl./",
+      "zh": "聽完。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Before I speak.",
+      "phonetic": "/ˌbiˈfɔr aɪ spik./",
+      "zh": "再答。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The term, define.",
+      "phonetic": "/ðə tərm, dɪˈfaɪn./",
+      "zh": "定義詞。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In plain words.",
+      "phonetic": "/ɪn pleɪn wərdz./",
+      "zh": "白話。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The why, explain.",
+      "phonetic": "/ðə waɪ, ɪkˈspleɪn./",
+      "zh": "解釋因。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Reason behind.",
+      "phonetic": "/ˈrizən bɪˈhaɪnd./",
+      "zh": "背後理。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wrong, ok.",
+      "phonetic": "/ðə rɔŋ, ˈoʊˈkeɪ./",
+      "zh": "錯沒事。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Correct me, yes.",
+      "phonetic": "/kərˈɛkt mi, jɛs./",
+      "zh": "指正。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The unsure, say.",
+      "phonetic": "/ðə ənˈʃʊr, seɪ./",
+      "zh": "不確定直說。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Guess, not lie.",
+      "phonetic": "/gɛs, nɑt laɪ./",
+      "zh": "猜非謊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The example, give.",
+      "phonetic": "/ðə ɪgˈzæmpəl, gɪv./",
+      "zh": "給例。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Makes it clear.",
+      "phonetic": "/meɪks ɪt klɪr./",
+      "zh": "更明。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The point, main.",
+      "phonetic": "/ðə pɔɪnt, meɪn./",
+      "zh": "重點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "State it first.",
+      "phonetic": "/steɪt ɪt fərst./",
+      "zh": "先說。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The think, pause.",
+      "phonetic": "/ðə θɪŋk, pɔz./",
+      "zh": "停頓想。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No rush, yes.",
+      "phonetic": "/noʊ rəʃ, jɛs./",
+      "zh": "不急。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The question, clear?",
+      "phonetic": "/ðə kˈwɛʃən, klɪr?/",
+      "zh": "問題清？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Repeat, please.",
+      "phonetic": "/rɪˈpit, pliz./",
+      "zh": "請復。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The hand, up.",
+      "phonetic": "/ðə hænd, əp./",
+      "zh": "舉手。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, you, pal.",
+      "phonetic": "/jɛs, ju, pæl./",
+      "zh": "你答。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The hand, up.",
+      "phonetic": "/ðə hænd, əp./",
+      "zh": "舉手。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, you, pal.",
+      "phonetic": "/jɛs, ju, pæl./",
+      "zh": "你答。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The question, clear?",
+      "phonetic": "/ðə kˈwɛʃən, klɪr?/",
+      "zh": "問題清？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Repeat, please.",
+      "phonetic": "/rɪˈpit, pliz./",
+      "zh": "請復。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The think, pause.",
+      "phonetic": "/ðə θɪŋk, pɔz./",
+      "zh": "停頓想。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No rush, yes.",
+      "phonetic": "/noʊ rəʃ, jɛs./",
+      "zh": "不急。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The point, main.",
+      "phonetic": "/ðə pɔɪnt, meɪn./",
+      "zh": "重點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "State it first.",
+      "phonetic": "/steɪt ɪt fərst./",
+      "zh": "先說。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The example, give.",
+      "phonetic": "/ðə ɪgˈzæmpəl, gɪv./",
+      "zh": "給例。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Makes it clear.",
+      "phonetic": "/meɪks ɪt klɪr./",
+      "zh": "更明。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The unsure, say.",
+      "phonetic": "/ðə ənˈʃʊr, seɪ./",
+      "zh": "不確定直說。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Guess, not lie.",
+      "phonetic": "/gɛs, nɑt laɪ./",
+      "zh": "猜非謊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wrong, ok.",
+      "phonetic": "/ðə rɔŋ, ˈoʊˈkeɪ./",
+      "zh": "錯沒事。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Correct me, yes.",
+      "phonetic": "/kərˈɛkt mi, jɛs./",
+      "zh": "指正。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The why, explain.",
+      "phonetic": "/ðə waɪ, ɪkˈspleɪn./",
+      "zh": "解釋因。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Reason behind.",
+      "phonetic": "/ˈrizən bɪˈhaɪnd./",
+      "zh": "背後理。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The term, define.",
+      "phonetic": "/ðə tərm, dɪˈfaɪn./",
+      "zh": "定義詞。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In plain words.",
+      "phonetic": "/ɪn pleɪn wərdz./",
+      "zh": "白話。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The listen, full.",
+      "phonetic": "/ðə ˈlɪsən, fʊl./",
+      "zh": "聽完。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Before I speak.",
+      "phonetic": "/ˌbiˈfɔr aɪ spik./",
+      "zh": "再答。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The nod, teacher.",
+      "phonetic": "/ðə nɑd, ˈtiʧər./",
+      "zh": "師點頭。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the right.",
+      "phonetic": "/ɔn ðə raɪt./",
+      "zh": "對了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The board, point.",
+      "phonetic": "/ðə bɔrd, pɔɪnt./",
+      "zh": "指板。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Show the step.",
+      "phonetic": "/ʃoʊ ðə stɛp./",
+      "zh": "示步。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The voice, clear.",
+      "phonetic": "/ðə vɔɪs, klɪr./",
+      "zh": "聲清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Project, pal.",
+      "phonetic": "/ˈprɑʤɛkt, pæl./",
+      "zh": "放大。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The speed, slow.",
+      "phonetic": "/ðə spid, sloʊ./",
+      "zh": "慢速。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They note down.",
+      "phonetic": "/ðeɪ noʊt daʊn./",
+      "zh": "他們記。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The ask back.",
+      "phonetic": "/ðə æsk bæk./",
+      "zh": "反問。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "To be sure, yes.",
+      "phonetic": "/tɪ bi ʃʊr, jɛs./",
+      "zh": "確認。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The fact, cite.",
+      "phonetic": "/ðə fækt, saɪt./",
+      "zh": "引事實。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "From the book.",
+      "phonetic": "/frəm ðə bʊk./",
+      "zh": "出自書。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The doubt, share.",
+      "phonetic": "/ðə daʊt, ʃɛr./",
+      "zh": "疑分享。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good question, yes.",
+      "phonetic": "/gʊd kˈwɛʃən, jɛs./",
+      "zh": "好問。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The compare, use.",
+      "phonetic": "/ðə kəmˈpɛr, juz./",
+      "zh": "用比較。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A vs B, clear.",
+      "phonetic": "/ə ˈvərsəz bi, klɪr./",
+      "zh": "甲乙清。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sum, short.",
+      "phonetic": "/ðə səm, ʃɔrt./",
+      "zh": "簡短。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then expand, yes.",
+      "phonetic": "/ðɛn ɪkˈspænd, jɛs./",
+      "zh": "再展。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The smile, keep.",
+      "phonetic": "/ðə smaɪl, kip./",
+      "zh": "保持笑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Calm, not fear.",
+      "phonetic": "/kɑm, nɑt fɪr./",
+      "zh": "鎮非懼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The peer, help.",
+      "phonetic": "/ðə pɪr, hɛlp./",
+      "zh": "助同。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Whisper the hint.",
+      "phonetic": "/ˈwɪspər ðə hɪnt./",
+      "zh": "悄提示。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The card, peek?",
+      "phonetic": "/ðə kɑrd, pik?/",
+      "zh": "偷看卡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, from mind.",
+      "phonetic": "/noʊ, frəm maɪnd./",
+      "zh": "不憑記憶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The right, answer.",
+      "phonetic": "/ðə raɪt, ˈænsər./",
+      "zh": "答對。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, exactly!",
+      "phonetic": "/jɛs, ɪgˈzæktli!/",
+      "zh": "對正是！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wrong, laugh.",
+      "phonetic": "/ðə rɔŋ, læf./",
+      "zh": "錯笑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Next time, pal.",
+      "phonetic": "/nɛkst taɪm, pæl./",
+      "zh": "下回。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The grade, fair.",
+      "phonetic": "/ðə greɪd, fɛr./",
+      "zh": "分公。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Effort shows.",
+      "phonetic": "/ˈɛfərt ʃoʊz./",
+      "zh": "見努力。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The review, after.",
+      "phonetic": "/ðə ˌrivˈju, ˈæftər./",
+      "zh": "後覆盤。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What missed, note.",
+      "phonetic": "/wət mɪst, noʊt./",
+      "zh": "缺記。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The skill, grow.",
+      "phonetic": "/ðə skɪl, groʊ./",
+      "zh": "力長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Speak more, yes.",
+      "phonetic": "/spik mɔr, jɛs./",
+      "zh": "多說。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The confidence, up.",
+      "phonetic": "/ðə ˈkɑnfədɛns, əp./",
+      "zh": "信增。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "From practice.",
+      "phonetic": "/frəm ˈpræktɪs./",
+      "zh": "練來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The thank, teacher.",
+      "phonetic": "/ðə θæŋk, ˈtiʧər./",
+      "zh": "謝師。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the chance.",
+      "phonetic": "/fər ðə ʧæns./",
+      "zh": "給機會。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The class, join.",
+      "phonetic": "/ðə klæs, ʤɔɪn./",
+      "zh": "參與。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "More next, yes.",
+      "phonetic": "/mɔr nɛkst, jɛs./",
+      "zh": "下更多。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The learn, deep.",
+      "phonetic": "/ðə lərn, dip./",
+      "zh": "學深。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "By answering, pal.",
+      "phonetic": "/baɪ ˈænsərɪŋ, pæl./",
+      "zh": "借答。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The done, well.",
+      "phonetic": "/ðə dən, wɛl./",
+      "zh": "答得好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Proud a bit.",
+      "phonetic": "/praʊd ə bɪt./",
+      "zh": "微傲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for listening.",
+      "phonetic": "/θæŋks fər ˈlɪsənɪŋ./",
+      "zh": "謝謝聽。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good job, pal.",
+      "phonetic": "/gʊd ʤɑb, pæl./",
+      "zh": "做得好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for listening.",
+      "phonetic": "/θæŋks fər ˈlɪsənɪŋ./",
+      "zh": "謝謝聽。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good job, pal.",
+      "phonetic": "/gʊd ʤɑb, pæl./",
+      "zh": "做得好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The done, well.",
+      "phonetic": "/ðə dən, wɛl./",
+      "zh": "答得好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Proud a bit.",
+      "phonetic": "/praʊd ə bɪt./",
+      "zh": "微傲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The learn, deep.",
+      "phonetic": "/ðə lərn, dip./",
+      "zh": "學深。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "By answering, pal.",
+      "phonetic": "/baɪ ˈænsərɪŋ, pæl./",
+      "zh": "借答。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The class, join.",
+      "phonetic": "/ðə klæs, ʤɔɪn./",
+      "zh": "參與。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "More next, yes.",
+      "phonetic": "/mɔr nɛkst, jɛs./",
+      "zh": "下更多。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The thank, teacher.",
+      "phonetic": "/ðə θæŋk, ˈtiʧər./",
+      "zh": "謝師。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the chance.",
+      "phonetic": "/fər ðə ʧæns./",
+      "zh": "給機會。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The confidence, up.",
+      "phonetic": "/ðə ˈkɑnfədɛns, əp./",
+      "zh": "信增。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "From practice.",
+      "phonetic": "/frəm ˈpræktɪs./",
+      "zh": "練來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The skill, grow.",
+      "phonetic": "/ðə skɪl, groʊ./",
+      "zh": "力長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Speak more, yes.",
+      "phonetic": "/spik mɔr, jɛs./",
+      "zh": "多說。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The review, after.",
+      "phonetic": "/ðə ˌrivˈju, ˈæftər./",
+      "zh": "後覆盤。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What missed, note.",
+      "phonetic": "/wət mɪst, noʊt./",
+      "zh": "缺記。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The grade, fair.",
+      "phonetic": "/ðə greɪd, fɛr./",
+      "zh": "分公。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Effort shows.",
+      "phonetic": "/ˈɛfərt ʃoʊz./",
+      "zh": "見努力。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wrong, laugh.",
+      "phonetic": "/ðə rɔŋ, læf./",
+      "zh": "錯笑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Next time, pal.",
+      "phonetic": "/nɛkst taɪm, pæl./",
+      "zh": "下回。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The right, answer.",
+      "phonetic": "/ðə raɪt, ˈænsər./",
+      "zh": "答對。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, exactly!",
+      "phonetic": "/jɛs, ɪgˈzæktli!/",
+      "zh": "對正是！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The card, peek?",
+      "phonetic": "/ðə kɑrd, pik?/",
+      "zh": "偷看卡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, from mind.",
+      "phonetic": "/noʊ, frəm maɪnd./",
+      "zh": "不憑記憶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The peer, help.",
+      "phonetic": "/ðə pɪr, hɛlp./",
+      "zh": "助同。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Whisper the hint.",
+      "phonetic": "/ˈwɪspər ðə hɪnt./",
+      "zh": "悄提示。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The smile, keep.",
+      "phonetic": "/ðə smaɪl, kip./",
+      "zh": "保持笑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Calm, not fear.",
+      "phonetic": "/kɑm, nɑt fɪr./",
+      "zh": "鎮非懼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sum, short.",
+      "phonetic": "/ðə səm, ʃɔrt./",
+      "zh": "簡短。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then expand, yes.",
+      "phonetic": "/ðɛn ɪkˈspænd, jɛs./",
+      "zh": "再展。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The compare, use.",
+      "phonetic": "/ðə kəmˈpɛr, juz./",
+      "zh": "用比較。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A vs B, clear.",
+      "phonetic": "/ə ˈvərsəz bi, klɪr./",
+      "zh": "甲乙清。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The doubt, share.",
+      "phonetic": "/ðə daʊt, ʃɛr./",
+      "zh": "疑分享。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good question, yes.",
+      "phonetic": "/gʊd kˈwɛʃən, jɛs./",
+      "zh": "好問。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The fact, cite.",
+      "phonetic": "/ðə fækt, saɪt./",
+      "zh": "引事實。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "From the book.",
+      "phonetic": "/frəm ðə bʊk./",
+      "zh": "出自書。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The ask back.",
+      "phonetic": "/ðə æsk bæk./",
+      "zh": "反問。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "To be sure, yes.",
+      "phonetic": "/tɪ bi ʃʊr, jɛs./",
+      "zh": "確認。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The speed, slow.",
+      "phonetic": "/ðə spid, sloʊ./",
+      "zh": "慢速。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They note down.",
+      "phonetic": "/ðeɪ noʊt daʊn./",
+      "zh": "他們記。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The voice, clear.",
+      "phonetic": "/ðə vɔɪs, klɪr./",
+      "zh": "聲清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Project, pal.",
+      "phonetic": "/ˈprɑʤɛkt, pæl./",
+      "zh": "放大。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The board, point.",
+      "phonetic": "/ðə bɔrd, pɔɪnt./",
+      "zh": "指板。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Show the step.",
+      "phonetic": "/ʃoʊ ðə stɛp./",
+      "zh": "示步。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The nod, teacher.",
+      "phonetic": "/ðə nɑd, ˈtiʧər./",
+      "zh": "師點頭。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the right.",
+      "phonetic": "/ɔn ðə raɪt./",
+      "zh": "對了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The listen, full.",
+      "phonetic": "/ðə ˈlɪsən, fʊl./",
+      "zh": "聽完。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Before I speak.",
+      "phonetic": "/ˌbiˈfɔr aɪ spik./",
+      "zh": "再答。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The term, define.",
+      "phonetic": "/ðə tərm, dɪˈfaɪn./",
+      "zh": "定義詞。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In plain words.",
+      "phonetic": "/ɪn pleɪn wərdz./",
+      "zh": "白話。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The why, explain.",
+      "phonetic": "/ðə waɪ, ɪkˈspleɪn./",
+      "zh": "解釋因。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Reason behind.",
+      "phonetic": "/ˈrizən bɪˈhaɪnd./",
+      "zh": "背後理。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wrong, ok.",
+      "phonetic": "/ðə rɔŋ, ˈoʊˈkeɪ./",
+      "zh": "錯沒事。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Correct me, yes.",
+      "phonetic": "/kərˈɛkt mi, jɛs./",
+      "zh": "指正。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The unsure, say.",
+      "phonetic": "/ðə ənˈʃʊr, seɪ./",
+      "zh": "不確定直說。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Guess, not lie.",
+      "phonetic": "/gɛs, nɑt laɪ./",
+      "zh": "猜非謊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The example, give.",
+      "phonetic": "/ðə ɪgˈzæmpəl, gɪv./",
+      "zh": "給例。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Makes it clear.",
+      "phonetic": "/meɪks ɪt klɪr./",
+      "zh": "更明。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The point, main.",
+      "phonetic": "/ðə pɔɪnt, meɪn./",
+      "zh": "重點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "State it first.",
+      "phonetic": "/steɪt ɪt fərst./",
+      "zh": "先說。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The think, pause.",
+      "phonetic": "/ðə θɪŋk, pɔz./",
+      "zh": "停頓想。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No rush, yes.",
+      "phonetic": "/noʊ rəʃ, jɛs./",
+      "zh": "不急。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The question, clear?",
+      "phonetic": "/ðə kˈwɛʃən, klɪr?/",
+      "zh": "問題清？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Repeat, please.",
+      "phonetic": "/rɪˈpit, pliz./",
+      "zh": "請復。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The hand, up.",
+      "phonetic": "/ðə hænd, əp./",
+      "zh": "舉手。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, you, pal.",
+      "phonetic": "/jɛs, ju, pæl./",
+      "zh": "你答。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The hand, up.",
+      "phonetic": "/ðə hænd, əp./",
+      "zh": "舉手。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, you, pal.",
+      "phonetic": "/jɛs, ju, pæl./",
+      "zh": "你答。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The question, clear?",
+      "phonetic": "/ðə kˈwɛʃən, klɪr?/",
+      "zh": "問題清？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Repeat, please.",
+      "phonetic": "/rɪˈpit, pliz./",
+      "zh": "請復。"
+    }
+  ]
+}

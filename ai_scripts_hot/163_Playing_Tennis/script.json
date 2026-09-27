@@ -1,0 +1,2458 @@
+{
+  "title": "Everyday Phrases — Playing Tennis",
+  "title_zh": "打網球",
+  "scene_zh": "打網球 · 情境對話",
+  "title_quote": "Do you want to play tennis?",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】🎾 實用打網球必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — Playing Tennis",
+  "youtube_description": "睡著學英文！這部影片收錄實用打網球情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫），從約時間訂場地、熱身發球對拉，到計分換邊與賽後拉伸，不用背，睡前聽就會。重複播放，讓英文自然進入你的大腦。👍 想學更多生活場景，請留言告訴我！別忘了訂閱+按讚。 #英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical Playing Tennis phrase pairs (each pair: male normal speed → female slow speed → combined dialogue), from booking a court and warming up, to serving, scoring, changeovers and post-match stretching. No memorization needed—just listen before bed and absorb naturally. If you want more real-life scenarios, leave a comment! Subscribe and like!",
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "Playing Tennis",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "Playing Tennis",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Leisure",
+  "youtube_tags": [
+    "英文聽力",
+    "睡前英文",
+    "打網球英文",
+    "playing tennis English",
+    "English listening",
+    "Sleep learning",
+    "A2 English",
+    "運動英文",
+    "常用英文短語",
+    "零基礎英文",
+    "慢速英文",
+    "英文口語",
+    "Learn English",
+    "English for sports",
+    "ESL",
+    "English conversation"
+  ],
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "Do you want to play tennis?",
+      "phonetic": "/du ju wɑnt tu pleɪ ˈtɛnɪs?/",
+      "zh": "你想不想打網球？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes! I miss playing with you.",
+      "phonetic": "/jɛs! aɪ mɪs ˈpleɪɪŋ wɪð ju./",
+      "zh": "想啊！我好懷念跟你一起打球。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are you free on Saturday morning?",
+      "phonetic": "/ɑr ju fri ɑn ˈsætərˌdeɪ ˈmɔrnɪŋ?/",
+      "zh": "你星期六早上有空嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Morning is fine. Let's play early.",
+      "phonetic": "/ˈmɔrnɪŋ ɪs faɪn. lɛts pleɪ ˈɜrli./",
+      "zh": "早上可以，我們早點打。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Nine o'clock sounds good to me.",
+      "phonetic": "/naɪn əˈklɑk saʊndz ɡʊd tu mi./",
+      "zh": "九點我覺得不錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Can we start at eight thirty?",
+      "phonetic": "/kæn wi stɑrt æt eɪt ˈθɜrti?/",
+      "zh": "我們能八點三十分開始嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Eight thirty is a little early.",
+      "phonetic": "/eɪt ˈθɜrti ɪz ə ˈlɪtəl ˈɜrli./",
+      "zh": "八點三十分有點太早。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Okay, nine works for me.",
+      "phonetic": "/oʊˈkeɪ, naɪn wɜrks fər mi./",
+      "zh": "好吧，九點我也沒問題。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where should we meet that day?",
+      "phonetic": "/wɛr ʃʊd wi mit ðæt deɪ?/",
+      "zh": "那天我們在哪裡碰面？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Meet me at the south gate.",
+      "phonetic": "/mit mi æt ðə saʊθ ɡeɪt./",
+      "zh": "我們在南門見面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The courts near the big park?",
+      "phonetic": "/ðə kɔrts nɪr ðə bɪɡ pɑrk?/",
+      "zh": "是大公園旁邊那些球場嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the ones with green fences.",
+      "phonetic": "/jɛs, ði wʌnz wɪð ɡrin ˈfɛnsəz./",
+      "zh": "對，就是綠色圍欄那幾個。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will call and book a court.",
+      "phonetic": "/aɪ wɪl kɔl ənd bʊk ə kɔrt./",
+      "zh": "我打電話去訂場地。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Do it today, weekends fill fast.",
+      "phonetic": "/du ɪt təˈdeɪ, ˈwikˌɛndz fɪl fæst./",
+      "zh": "今天就訂，假日一下子就滿了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do they rent courts by the hour?",
+      "phonetic": "/du ðeɪ rɛnt kɔrts baɪ ði ˈaʊər?/",
+      "zh": "他們按小時租場地嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, one hour costs twenty.",
+      "phonetic": "/jɛs, wʌn ˈaʊər kɔsts ˈtwɛnti./",
+      "zh": "對，一小時二十美元。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's book two hours together.",
+      "phonetic": "/lɛts bʊk tu ˈaʊərz təˈɡɛðər./",
+      "zh": "我們一次訂兩小時吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is forty dollars in total.",
+      "phonetic": "/ðæt ɪz ˈfɔrti ˈdɑlərz ɪn ˈtoʊtəl./",
+      "zh": "總共四十美元。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I pay now by phone?",
+      "phonetic": "/kæn aɪ peɪ naʊ baɪ foʊn?/",
+      "zh": "我現在能用電話付錢嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Or pay when we get there.",
+      "phonetic": "/ɔr peɪ wɛn wi ɡɛt ðɛr./",
+      "zh": "也可以到了現場再付。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which court is free at nine?",
+      "phonetic": "/wɪtʃ kɔrt ɪz fri æt naɪn?/",
+      "zh": "九點哪個場地是空的？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Court three should be open then.",
+      "phonetic": "/kɔrt θri ʃʊd bi ˈoʊpən ðɛn./",
+      "zh": "那三號場應該是空的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is that court outside or inside?",
+      "phonetic": "/ɪz ðæt kɔrt ˈaʊtˌsaɪd ɔr ɪnˈsaɪd?/",
+      "zh": "那個場地在室外還是室內？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is outside, with good lights.",
+      "phonetic": "/ɪt ɪz ˈaʊtˌsaɪd, wɪð ɡʊd laɪts./",
+      "zh": "是室外的，燈很好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The ground there is hard cement.",
+      "phonetic": "/ðə ɡraʊnd ðɛr ɪz hɑrd səˈmɛnt./",
+      "zh": "那邊地面是硬水泥。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I like cement, the ball runs fast.",
+      "phonetic": "/aɪ laɪk səˈmɛnt, ðə bɔl rʌnz fæst./",
+      "zh": "我喜歡水泥地，球跑得很快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I bring my own balls?",
+      "phonetic": "/kæn aɪ brɪŋ maɪ ˈoʊn bɔlz?/",
+      "zh": "我可以帶自己的球嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Bring three, a tube costs money.",
+      "phonetic": "/brɪŋ θri, ə tjub kɔsts ˈmʌni./",
+      "zh": "帶三顆吧，一筒球要錢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My racket strings broke yesterday.",
+      "phonetic": "/maɪ ˈrækət strɪŋz broʊk ˈjɛstərˌdeɪ./",
+      "zh": "我球拍的線昨天斷了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You need new strings right away.",
+      "phonetic": "/ju nid nu strɪŋz raɪt əˈweɪ./",
+      "zh": "你得馬上重新穿線。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where can I get a racket strung?",
+      "phonetic": "/wɛr kæn aɪ ɡɛt ə ˈrækət strʌŋ?/",
+      "zh": "哪裡可以幫球拍穿線？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The shop near the train station.",
+      "phonetic": "/ðə ʃɑp nɪr ðə treɪn ˈsteɪʃən./",
+      "zh": "火車站那家商店可以。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How long does stringing usually take?",
+      "phonetic": "/haʊ lɔŋ dʌz ˈstrɪŋɪŋ ˈjuʒəwəli teɪk?/",
+      "zh": "穿線通常要花多久？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two days, sometimes three in busy weeks.",
+      "phonetic": "/tu deɪz, ˈsʌmˌtaɪmz θri ɪn ˈbɪzi wikz./",
+      "zh": "兩天，旺季有時要三天。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How much for the stringing?",
+      "phonetic": "/haʊ mʌtʃ fər ðə ˈstrɪŋɪŋ?/",
+      "zh": "穿線多少錢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fifteen dollars, plus the string fee.",
+      "phonetic": "/ˈfɪfˈtin ˈdɑlərz, plʌs ðə strɪŋ fi./",
+      "zh": "十五美元，另外加線錢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you lend me a racket?",
+      "phonetic": "/kæn ju lɛnd mi ə ˈrækət?/",
+      "zh": "你能借我一支球拍嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, take the blue one.",
+      "phonetic": "/ʃʊr, teɪk ðə blu wʌn./",
+      "zh": "當然，你拿藍色那支。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is that one heavy or light?",
+      "phonetic": "/ɪz ðæt wʌn ˈhɛvi ɔr laɪt?/",
+      "zh": "那支是重還是輕？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It feels light in your hand.",
+      "phonetic": "/ɪt filz laɪt ɪn jʊr hænd./",
+      "zh": "拿在手上感覺很輕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What grip size should I choose?",
+      "phonetic": "/wʌt ɡrɪp saɪz ʃʊd aɪ tʃuz?/",
+      "zh": "我該選幾號握把？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try the middle size first.",
+      "phonetic": "/traɪ ðə ˈmɪdəl saɪz fɜrst./",
+      "zh": "先試中間那號。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This one feels great, thanks.",
+      "phonetic": "/ðɪs wʌn filz ɡreɪt, θæŋks./",
+      "zh": "這支手感很好，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just bring it back next week.",
+      "phonetic": "/dʒʌst brɪŋ ɪt bæk nɛkst wik./",
+      "zh": "下個星期還我就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have spare tennis socks?",
+      "phonetic": "/du ju hæv spɛr ˈtɛnɪs sɑks?/",
+      "zh": "你有多餘的網球襪嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I have two thick pairs for you.",
+      "phonetic": "/aɪ hæv tu θɪk pɛrz fər ju./",
+      "zh": "我有兩雙厚的可以給你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Tennis socks stop my blisters.",
+      "phonetic": "/ˈtɛnɪs sɑks stɑp maɪ ˈblɪstərz./",
+      "zh": "網球襪能防止起水泡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mine slide down when I run.",
+      "phonetic": "/maɪn slaɪd daʊn wɛn aɪ rʌn./",
+      "zh": "我的襪子跑步時老往下滑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wear tennis shoes, not running shoes.",
+      "phonetic": "/wɛr ˈtɛnɪs ʃuz, nɑt ˈrʌnɪŋ ʃuz./",
+      "zh": "穿網球鞋，別穿慢跑鞋。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Why? Are they different on courts?",
+      "phonetic": "/waɪ? ɑr ðeɪ ˈdɪfərənt ɑn kɔrts?/",
+      "zh": "為什麼？在場地上不一樣嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Tennis shoes grip when you move sideways.",
+      "phonetic": "/ˈtɛnɪs ʃuz ɡrɪp wɛn ju muv ˈsaɪdˌweɪz./",
+      "zh": "網球鞋在你橫向移動時抓得住地。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good point, I will change mine.",
+      "phonetic": "/ɡʊd pɔɪnt, aɪ wɪl tʃeɪndʒ maɪn./",
+      "zh": "說得對，我去換我的鞋。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Bring a big bottle of water.",
+      "phonetic": "/brɪŋ ə bɪɡ ˈbɑtəl əv ˈwɔtər./",
+      "zh": "帶一大瓶水。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will fill my bottle tonight.",
+      "phonetic": "/aɪ wɪl fɪl maɪ ˈbɑtəl təˈnaɪt./",
+      "zh": "我今天晚上先把瓶子裝滿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Two bottles, it gets very hot.",
+      "phonetic": "/tu ˈbɑtəlz, ɪt ɡɛts ˈvɛri hɑt./",
+      "zh": "帶兩瓶，天氣會很熱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And some towels for our faces.",
+      "phonetic": "/ənd sʌm ˈtaʊəlz fər ˈaʊər ˈfeɪsəz./",
+      "zh": "再帶幾條擦臉的毛巾。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do I need a cap or hat?",
+      "phonetic": "/du aɪ nid ə kæp ɔr hæt?/",
+      "zh": "我需要戴帽子嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the sun hurts my eyes.",
+      "phonetic": "/jɛs, ðə sʌn hɜrts maɪ aɪz./",
+      "zh": "要，太陽很刺眼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Put sunscreen on your nose.",
+      "phonetic": "/pʊt ˈsʌnˌskrin ɑn jʊr noʊz./",
+      "zh": "鼻子上擦點防曬霜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I forgot that, I will buy one.",
+      "phonetic": "/aɪ fərˈɡɑt ðæt, aɪ wɪl baɪ wʌn./",
+      "zh": "我忘了，去買一罐好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The weather says thirty-five degrees.",
+      "phonetic": "/ðə ˈwɛðər sɛz ˈθɜrti faɪ dɪˈɡriz./",
+      "zh": "天氣預報說三十五度。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is too hot for morning tennis.",
+      "phonetic": "/ðæt ɪz tu hɑt fər ˈmɔrnɪŋ ˈtɛnɪs./",
+      "zh": "早上打網球太熱了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should we move to a later time?",
+      "phonetic": "/ʃʊd wi muv tu ə ˈleɪtər taɪm?/",
+      "zh": "我們改成晚一點好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, evening courts are cooler.",
+      "phonetic": "/jɛs, ˈivnɪŋ kɔrts ɑr ˈkulər./",
+      "zh": "好，傍晚的球場涼快多了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is six in the evening okay?",
+      "phonetic": "/ɪz sɪks ɪn ði ˈivnɪŋ oʊˈkeɪ?/",
+      "zh": "晚上六點可以嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Six is perfect for me.",
+      "phonetic": "/sɪks ɪz ˈpɜrfɪkt fər mi./",
+      "zh": "六點對我剛剛好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will change our booking now.",
+      "phonetic": "/aɪ wɪl tʃeɪndʒ ˈaʊər ˈbʊkɪŋ naʊ./",
+      "zh": "我現在去改我們的預約。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ask if the lights cost extra.",
+      "phonetic": "/æsk ɪf ðə laɪts kɔst ˈɛkstrə./",
+      "zh": "問一下開燈要不要加錢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Night play needs strong lights.",
+      "phonetic": "/naɪt pleɪ nidz strɔŋ laɪts./",
+      "zh": "晚上打球需要很亮的燈。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Court three has the best ones.",
+      "phonetic": "/kɔrt θri hæz ðə bɛst wʌnz./",
+      "zh": "三號場的燈最亮。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do the courts close at ten?",
+      "phonetic": "/du ðə kɔrts kloʊz æt tɛn?/",
+      "zh": "球場十點會關門嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They close at eleven in summer.",
+      "phonetic": "/ðeɪ kloʊz æt ɪˈlɛvən ɪn ˈsʌmər./",
+      "zh": "夏天十一點才關。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will it rain that evening?",
+      "phonetic": "/wɪl ɪt reɪn ðæt ˈivnɪŋ?/",
+      "zh": "那天傍晚會下雨嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No rain, only a light wind.",
+      "phonetic": "/noʊ reɪn, ˈoʊnli ə laɪt wɪnd./",
+      "zh": "不會下雨，只有微風。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wind can push the ball away.",
+      "phonetic": "/wɪnd kæn pʊʃ ðə bɔl əˈweɪ./",
+      "zh": "風會把球吹偏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then we serve slower and lower.",
+      "phonetic": "/ðɛn wi sɜrv ˈsloʊər ənd ˈloʊər./",
+      "zh": "那我們發球就慢一點低一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I bring my little brother?",
+      "phonetic": "/kæn aɪ brɪŋ maɪ ˈlɪtəl ˈbrʌðər?/",
+      "zh": "我可以帶弟弟來嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "He can watch from the seats.",
+      "phonetic": "/hi kæn wɑtʃ frʌm ðə sits./",
+      "zh": "他可以坐在椅子上看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He wants to learn tennis too.",
+      "phonetic": "/hi wɑnts tu lɜrn ˈtɛnɪs tu./",
+      "zh": "他也想學打網球。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can hit balls after our match.",
+      "phonetic": "/wi kæn hɪt bɔlz ˈæftər ˈaʊər mætʃ./",
+      "zh": "比完賽我們可以陪他練。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I bring snacks as well?",
+      "phonetic": "/ʃʊd aɪ brɪŋ snæks æz wɛl?/",
+      "zh": "我也該帶些點心嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, bananas help with energy.",
+      "phonetic": "/jɛs, bəˈnænz hɛlp wɪð ˈɛnərʤi./",
+      "zh": "要，香蕉可以補充體力。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will pack two bananas and nuts.",
+      "phonetic": "/aɪ wɪl pæk tu bəˈnænz ənd nʌts./",
+      "zh": "我帶兩根香蕉和一些堅果。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And one cold drink for me.",
+      "phonetic": "/ənd wʌn koʊld drɪŋk fər mi./",
+      "zh": "再幫我只帶一瓶冷飲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you stretch before last time?",
+      "phonetic": "/dɪd ju strɛtʃ bɪˈfɔr læst taɪm?/",
+      "zh": "你上次打球前有拉筋嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, and my arm hurt for days.",
+      "phonetic": "/noʊ, ənd maɪ ɑrm hɜrt fər deɪz./",
+      "zh": "沒有，我手臂痛了好幾天。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Warm up your shoulders first.",
+      "phonetic": "/wɔrm ʌp jʊr ˈʃoʊldərz fɜrst./",
+      "zh": "先把肩膀活動開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will do ten arm circles.",
+      "phonetic": "/aɪ wɪl du tɛn ɑrm ˈsɜrkəlz./",
+      "zh": "我要轉十圈手臂。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Call me if plans change again.",
+      "phonetic": "/kɔl mi ɪf plænz tʃeɪndʒ əˈɡɛn./",
+      "zh": "計畫再變，就打電話給我。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will text you before six.",
+      "phonetic": "/aɪ wɪl tɛkst ju bɪˈfɔr sɪks./",
+      "zh": "六點之前我會傳訊息給你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am really excited now.",
+      "phonetic": "/aɪ æm ˈrɪli ɪkˈsaɪtɪd naʊ./",
+      "zh": "我現在真的好興奮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It will be a fun match.",
+      "phonetic": "/ɪt wɪl bi ə fʌn mætʃ./",
+      "zh": "那一定會是有趣的一場。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "See you at the court gate.",
+      "phonetic": "/si ju æt ðə kɔrt ɡeɪt./",
+      "zh": "我們在球場門口見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Bring the racket you borrowed.",
+      "phonetic": "/brɪŋ ðə ˈrækət ju bəˈroʊd./",
+      "zh": "把你借的那支球拍帶來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wait, can I use my own racket?",
+      "phonetic": "/weɪt, kæn aɪ juz maɪ ˈoʊn ˈrækət?/",
+      "zh": "等等，我可以用我自己那支嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, it is still at the stringer.",
+      "phonetic": "/noʊ, ɪt ɪz stɪl æt ðə ˈstrɪŋər./",
+      "zh": "不行，你那支還在穿線店。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then I will bring the blue one.",
+      "phonetic": "/ðɛn aɪ wɪl brɪŋ ðə blu wʌn./",
+      "zh": "那我就帶藍色那支。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then we meet right at six.",
+      "phonetic": "/ðɛn wi mit raɪt æt sɪks./",
+      "zh": "那我們六點整碰面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Perfect, see you on the court.",
+      "phonetic": "/ˈpɜrfɪkt, si ju ɑn ðə kɔrt./",
+      "zh": "太好了，球場上見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Play your best that day.",
+      "phonetic": "/pleɪ jʊr bɛst ðæt deɪ./",
+      "zh": "那天就好好發揮吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hi! You made it right on time.",
+      "phonetic": "/haɪ! ju meɪd ɪt raɪt ɑn taɪm./",
+      "zh": "嗨！你剛好準時到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The court is open, look over there.",
+      "phonetic": "/ðə kɔrt ɪz ˈoʊpən, lʊk ˈoʊvər ðɛr./",
+      "zh": "場地已經開了，看那邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's put our bags by the fence.",
+      "phonetic": "/lɛts pʊt ˈaʊər bæɡz baɪ ðə fɛns./",
+      "zh": "我們把球包放在圍欄邊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Should we change shoes first?",
+      "phonetic": "/ʃʊd wi tʃeɪndʒ ʃuz fɜrst?/",
+      "zh": "我們要先換鞋嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, these shoes feel slippery.",
+      "phonetic": "/jɛs, ðiːz ʃuz fil ˈslɪpəri./",
+      "zh": "好，這雙鞋感覺好滑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The surface looks dry to me.",
+      "phonetic": "/ðə ˈsɜrfəs lʊks draɪ tu mi./",
+      "zh": "我看地面是乾的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's warm up with some light hits.",
+      "phonetic": "/lɛts wɔrm ʌp wɪð sʌm laɪt hɪts./",
+      "zh": "我們先輕輕打幾下熱身。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stand on the baseline, please.",
+      "phonetic": "/stænd ɑn ðə ˈbeɪsˌlaɪn, pliz./",
+      "zh": "請站在底線上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hit soft balls to my side.",
+      "phonetic": "/hɪt sɔft bɔlz tu maɪ saɪd./",
+      "zh": "輕輕把球打到我這邊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will aim for your forehand.",
+      "phonetic": "/aɪ wɪl eɪm fər jʊr ˈfɔrˌhænd./",
+      "zh": "我瞄準你的正手方向。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good, that rally felt nice.",
+      "phonetic": "/ɡʊd, ðæt ˈræli fɛlt naɪs./",
+      "zh": "不錯，那幾拍對拉很舒服。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Do you want to keep rallying?",
+      "phonetic": "/du ju wɑnt tu kip ˈræleɪɪŋ?/",
+      "zh": "你想繼續對拉嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A little more, then we serve.",
+      "phonetic": "/ə ˈlɪtəl mɔr, ðɛn wi sɜrv./",
+      "zh": "再拉幾下，然後發球。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Your arm looks looser now.",
+      "phonetic": "/jʊr ɑrm lʊks ˈlusər naʊ./",
+      "zh": "你的手臂現在看起來放鬆多了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How should I hold this racket?",
+      "phonetic": "/haʊ ʃʊd aɪ hoʊld ðɪs ˈrækət?/",
+      "zh": "這支球拍我該怎麼握？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Shake hands with it, like this.",
+      "phonetic": "/ʃeɪk hændz wɪð ɪt, laɪk ðɪs./",
+      "zh": "像握手那樣握，這樣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Like shaking a friend's hand?",
+      "phonetic": "/laɪk ˈʃeɪkɪŋ ə frɛndz hænd?/",
+      "zh": "像跟朋友握手一樣嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, that is the basic grip.",
+      "phonetic": "/jɛs, ðæt ɪz ðə ˈbeɪsɪk ɡrɪp./",
+      "zh": "對，那就是基本握法。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should my grip be tight or loose?",
+      "phonetic": "/ʃʊd maɪ ɡrɪp bi taɪt ɔr lus?/",
+      "zh": "握拍要緊一點還是松一點？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold it soft, squeeze at contact.",
+      "phonetic": "/hoʊld ɪt sɔft, skwiz æt ˈkɑnˌtækt./",
+      "zh": "平時放鬆，碰到球才收緊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My knuckles hurt when I swing.",
+      "phonetic": "/maɪ ˈnəkəlz hɜrt wɛn aɪ swɪŋ./",
+      "zh": "我揮拍時指關節會痛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You grip too hard, relax them.",
+      "phonetic": "/ju ɡrɪp tu hɑrd, rɪˈlæks ðɛm./",
+      "zh": "你握太用力了，放鬆些。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which way should the face point?",
+      "phonetic": "/wɪtʃ weɪ ʃʊd ðə feɪs pɔɪnt?/",
+      "zh": "拍面該朝著哪個方向？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep it square to the net.",
+      "phonetic": "/kip ɪt skwɛr tu ðə nɛt./",
+      "zh": "讓拍面正對著球網。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do I turn my body first?",
+      "phonetic": "/du aɪ tɜrn maɪ ˈbɑdi fɜrst?/",
+      "zh": "我要先轉過身嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, turn your shoulder sideways.",
+      "phonetic": "/jɛs, tɜrn jʊr ˈʃoʊldər ˈsaɪdˌweɪz./",
+      "zh": "對，肩膀轉向側面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now show me your ready stance.",
+      "phonetic": "/naʊ ʃoʊ mi jʊr ˈrɛdi stæns./",
+      "zh": "現在做個準備姿勢給我看。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Like this, knees bent, light feet.",
+      "phonetic": "/laɪk ðɪs, niz bɛnt, laɪt fit./",
+      "zh": "這樣，膝蓋彎著，腳步放輕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Bounce the ball before you serve.",
+      "phonetic": "/baʊns ðə bɔl bɪˈfɔr ju sɜrv./",
+      "zh": "發球前先拍拍球。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It helps me find my rhythm.",
+      "phonetic": "/ɪt hɛlps mi faɪnd maɪ ˈrɪðəm./",
+      "zh": "那能幫我找到節奏。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Stand behind the line, not on it.",
+      "phonetic": "/stænd bɪˈhaɪnd ðə laɪn, nɑt ɑn ɪt./",
+      "zh": "站在線後面，不要踩線。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Is this far back behind the line?",
+      "phonetic": "/ɪz ðɪs fɑr bæk bɪˈhaɪnd ðə laɪn?/",
+      "zh": "這樣站在線後面夠遠嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Point your racket at the target.",
+      "phonetic": "/pɔɪnt jʊr ˈrækət æt ðə ˈtɑrɡɪt./",
+      "zh": "用球拍指向你的目標。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Which side should I serve to?",
+      "phonetic": "/wɪtʃ saɪd ʃʊd aɪ sɜrv tu?/",
+      "zh": "我應該發到哪一邊？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Serve across the court, diagonally.",
+      "phonetic": "/sɜrv əˈkrɔs ðə kɔrt, ˌdaɪəˈɡænəlɪ./",
+      "zh": "斜線發到對面的場地。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Into the small box, right?",
+      "phonetic": "/ˈɪntu ðə smɔl bɑks, raɪt?/",
+      "zh": "就是那個小方格，對吧？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, that is the service box.",
+      "phonetic": "/jɛs, ðæt ɪz ðə ˈsɜrvəs bɑks./",
+      "zh": "對，那就是發球區。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "If it hits the net, I replay?",
+      "phonetic": "/ɪf ɪt hɪts ðə nɛt, aɪ riˈpleɪ?/",
+      "zh": "如果撞到網，我要重發嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That is a let, try again.",
+      "phonetic": "/ðæt ɪz ə lɛt, traɪ əˈɡɛn./",
+      "zh": "那算重發，再試一次。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, so I lost no point.",
+      "phonetic": "/ɡʊd, soʊ aɪ lɔst noʊ pɔɪnt./",
+      "zh": "好，那我並沒有丟分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How high should I toss the ball?",
+      "phonetic": "/haʊ haɪ ʃʊd aɪ tɔs ðə bɔl?/",
+      "zh": "我應該把球拋多高？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A bit higher than your reach.",
+      "phonetic": "/ə bɪt ˈhaɪər ðæn jʊr riʧ./",
+      "zh": "比你的可及高度再高一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "About one arm above my head?",
+      "phonetic": "/əˈbaʊt wʌn ɑrm əˈbʌv maɪ hɛd?/",
+      "zh": "大約高過我的頭一隻手臂？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, hit it at the top point.",
+      "phonetic": "/jɛs, hɪt ɪt æt ðə tɑp pɔɪnt./",
+      "zh": "對，在最高點把球打到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My toss keeps falling behind me.",
+      "phonetic": "/maɪ tɔs kips ˈfɔlɪŋ bɪˈhaɪnd mi./",
+      "zh": "我拋的球老是落到我身後。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Toss it a little out front.",
+      "phonetic": "/tɔs ɪt ə ˈlɪtəl aʊt frʌnt./",
+      "zh": "稍微往前一點拋。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I bend my knees when tossing?",
+      "phonetic": "/ʃʊd aɪ bɛnd maɪ niz wɛn ˈtɔsɪŋ?/",
+      "zh": "拋球的時候膝蓋要彎嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Bend them and push up strong.",
+      "phonetic": "/bɛnd ðɛm ənd pʊʃ ʌp strɔŋ./",
+      "zh": "彎一下，然後用力蹬上去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Swing up, not across your body.",
+      "phonetic": "/swɪŋ ʌp, nɑt əˈkrɔs jʊr ˈbɑdi./",
+      "zh": "往上揮，不要橫著掃。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Like reaching for a high shelf?",
+      "phonetic": "/laɪk ˈriʧɪŋ fər ə haɪ ʃɛlf?/",
+      "zh": "像伸手拿高處的架子？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Exactly, snap your wrist at contact.",
+      "phonetic": "/ɪɡˈzæktli, snæp jʊr rɪst æt ˈkɑnˌtækt./",
+      "zh": "沒錯，擊球瞬間手腕抖一下。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My serve sounded better just now.",
+      "phonetic": "/maɪ sɜrv ˈsaʊndɪd ˈbɛtər dʒʌst naʊ./",
+      "zh": "我剛剛那球發球聽起來比較好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Serve slow first, aim deep.",
+      "phonetic": "/sɜrv sloʊ fɜrst, eɪm dip./",
+      "zh": "發球先慢一點，打深一點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Deep means near the back line?",
+      "phonetic": "/dip minz nɪr ðə bæk laɪn?/",
+      "zh": "深是指靠近底線嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, deep balls are harder to attack.",
+      "phonetic": "/jɛs, dip bɔlz ɑr ˈhɑrdər tu əˈtæk./",
+      "zh": "對，深球比較難被攻擊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will try a soft deep serve.",
+      "phonetic": "/aɪ wɪl traɪ ə sɔft dip sɜrv./",
+      "zh": "我來試一個輕一點的深發球。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Nice! That one landed safely in.",
+      "phonetic": "/naɪs! ðæt wʌn ˈlændɪd ˈseɪfli ɪn./",
+      "zh": "漂亮！那顆球穩穩進區了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two more serves, then my turn.",
+      "phonetic": "/tu mɔr sɜrvz, ðɛn maɪ tɜrn./",
+      "zh": "再發兩個球，然後換我。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your forehand cross is strong.",
+      "phonetic": "/jʊr ˈfɔrˌhænd krɔs ɪz strɔŋ./",
+      "zh": "你的斜線正手很有力。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I swing it with my whole arm.",
+      "phonetic": "/aɪ swɪŋ ɪt wɪð maɪ hoʊl ɑrm./",
+      "zh": "我都用整條手臂去揮。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Use your shoulder turn, not just your arm.",
+      "phonetic": "/juz jʊr ˈʃoʊldər tɜrn, nɑt dʒʌst jʊr ɑrm./",
+      "zh": "要靠轉肩出力，不只是揮手臂。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So my body does the work?",
+      "phonetic": "/soʊ maɪ ˈbɑdi dʌz ðə wɜrk?/",
+      "zh": "所以是身體在出力？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Follow through over the other shoulder.",
+      "phonetic": "/ˈfɑloʊ θru ˈoʊvər ði ˈʌðər ˈʃoʊldər./",
+      "zh": "收拍揮到另一邊的肩膀上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My balls flew high when I did that.",
+      "phonetic": "/maɪ bɔlz flu haɪ wɛn aɪ dɪd ðæt./",
+      "zh": "我那樣做完球都飛得好高。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Drop the racket head a bit lower.",
+      "phonetic": "/drɑp ðə ˈrækət hɛd ə bɪt ˈloʊər./",
+      "zh": "把拍頭再放低一些。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then brush up to make spin?",
+      "phonetic": "/ðɛn brəʃ ʌp tu meɪk spɪn?/",
+      "zh": "然後往上擦出旋轉嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, spin keeps the ball inside.",
+      "phonetic": "/jɛs, spɪn kips ðə bɔl ɪnˈsaɪd./",
+      "zh": "對，旋轉能讓球留在界內。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Topspin feels odd on my strings.",
+      "phonetic": "/ˈtɑpˌspɪn filz ɑd ɑn maɪ strɪŋz./",
+      "zh": "上旋在我拍線上感覺怪怪的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's practice your backhand now.",
+      "phonetic": "/lɛts ˈpræktɪs jʊr ˈbækˌhænd naʊ./",
+      "zh": "我們來練你的反手。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One hand or two hands?",
+      "phonetic": "/wʌn hænd ɔr tu hændz?/",
+      "zh": "用單手還是雙手？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Two hands give you more control.",
+      "phonetic": "/tu hændz ɡɪv ju mɔr kənˈtroʊl./",
+      "zh": "雙手能給你更多控制。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My left hand feels weak there.",
+      "phonetic": "/maɪ lɛft hænd filz wik ðɛr./",
+      "zh": "我左手在那邊使不上力。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Keep your elbows close to you.",
+      "phonetic": "/kip jʊr ˈɛlˌboʊz kloʊs tu ju./",
+      "zh": "手肘要靠近你自己。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I turn and step into the ball.",
+      "phonetic": "/aɪ tɜrn ənd stɛp ˈɪntu ðə bɔl./",
+      "zh": "我轉身然後踏步進去打。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Great! That backhand went deep.",
+      "phonetic": "/ɡreɪt! ðæt ˈbækˌhænd wɛnt dip./",
+      "zh": "太好了！那記反手打得很深。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I saw it land near the line.",
+      "phonetic": "/aɪ sɔ ɪt lænd nɪr ðə laɪn./",
+      "zh": "我看到它落在界線附近。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Low balls are my biggest problem.",
+      "phonetic": "/loʊ bɔlz ɑr maɪ ˈbɪɡɪst ˈprɑbləm./",
+      "zh": "低球是我最大的弱點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Bend your knees and get under it.",
+      "phonetic": "/bɛnd jʊr niz ənd ɡɛt ˈʌndər ɪt./",
+      "zh": "屈膝，把拍子插到球下面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do I watch the ball or you?",
+      "phonetic": "/du aɪ wɑtʃ ðə bɔl ɔr ju?/",
+      "zh": "我該看球還是看你？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Watch the ball until it hits strings.",
+      "phonetic": "/wɑtʃ ðə bɔl ənˈtɪl ɪt hɪts strɪŋz./",
+      "zh": "盯球一直盯到撞上拍線。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That is hard to do every time.",
+      "phonetic": "/ðæt ɪz hɑrd tu du ˈɛvri taɪm./",
+      "zh": "那真的很難每次都做到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Count the bounce out loud, it helps.",
+      "phonetic": "/kaʊnt ðə baʊns aʊt laʊd, ɪt hɛlps./",
+      "zh": "把彈地的聲音大聲數出來，會更容易專注。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My feet keep stopping too soon.",
+      "phonetic": "/maɪ fit kip ˈstɑpɪŋ tu sun./",
+      "zh": "我的腳老是停得太早。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Small steps keep you balanced.",
+      "phonetic": "/smɔl stɛps kip ju ˈbælənst./",
+      "zh": "小碎步能讓你保持平衡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Who will gather our three balls?",
+      "phonetic": "/hu wɪl ˈɡæðər ˈaʊər θri bɔlz?/",
+      "zh": "誰來撿我們那三顆球？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just put them in your bag first.",
+      "phonetic": "/dʒʌst pʊt ðɛm ɪn jʊr bæɡ fɜrst./",
+      "zh": "先把它們放回你的球包。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I can hold two under my arm.",
+      "phonetic": "/aɪ kæn hoʊld tu ˈʌndər maɪ ɑrm./",
+      "zh": "我手臂下可以夾兩顆球。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Do not drop them near the net.",
+      "phonetic": "/du nɑt drɑp ðɛm nɪr ðə nɛt./",
+      "zh": "別在球網附近讓它們掉了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A yellow ball rolled under the fence.",
+      "phonetic": "/ə ˈjɛloʊ bɔl roʊld ˈʌndər ðə fɛns./",
+      "zh": "有一顆黃球滾到圍欄底下了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Leave it, that one is not ours.",
+      "phonetic": "/liv ɪt, ðæt wʌn ɪz nɑt ˈaʊərz./",
+      "zh": "別管了，那顆不是我們的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A ball on the court is dangerous.",
+      "phonetic": "/ə bɔl ɑn ðə kɔrt ɪz ˈdeɪnʤərəs./",
+      "zh": "場地上有球很危險。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You could step on it and fall.",
+      "phonetic": "/ju kʊd stɛp ɑn ɪt ənd fɔl./",
+      "zh": "你可能踩到它然後摔倒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's gather them after this game.",
+      "phonetic": "/lɛts ˈɡæðər ðɛm ˈæftər ðɪs ɡeɪm./",
+      "zh": "這一局打完我們再收球。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will use my shirt pocket.",
+      "phonetic": "/aɪ wɪl juz maɪ ʃɜrt ˈpɑkət./",
+      "zh": "我用我球衣的口袋裝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My hands are sweaty from the grip.",
+      "phonetic": "/maɪ hænz ɑr ˈswɛti frʌm ðə ɡrɪp./",
+      "zh": "我握拍握得滿手是汗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wipe them on your shorts, then play.",
+      "phonetic": "/waɪp ðɛm ɑn jʊr ʃɔrts, ðɛn pleɪ./",
+      "zh": "在短褲上擦擦，然後繼續打。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are you ready for a real point?",
+      "phonetic": "/ɑr ju ˈrɛdi fər ə ril pɔɪnt?/",
+      "zh": "你準備好認真打一分了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, serve to my backhand please.",
+      "phonetic": "/jɛs, sɜrv tu maɪ ˈbækˌhænd pliz./",
+      "zh": "好了，請發到我反手這邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Here I come, watch this serve.",
+      "phonetic": "/hɪr aɪ kʌm, wɑtʃ ðɪs sɜrv./",
+      "zh": "我來了，看我這球發球。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I am ready, hit it hard.",
+      "phonetic": "/aɪ æm ˈrɛdi, hɪt ɪt hɑrd./",
+      "zh": "我準備好了，儘管用力發。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's keep score this time.",
+      "phonetic": "/lɛts kip skɔr ðɪs taɪm./",
+      "zh": "這一次我們來計分。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tennis numbers sound so strange.",
+      "phonetic": "/ˈtɛnɪs ˈnʌmbərz saʊnd soʊ streɪndʒ./",
+      "zh": "網球的分數聽起來好奇怪。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The first point is called fifteen.",
+      "phonetic": "/ðə fɜrst pɔɪnt ɪz kɔld ˈfɪfˈtin./",
+      "zh": "第一分叫做十五。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So the next point is thirty?",
+      "phonetic": "/soʊ ðə nɛkst pɔɪnt ɪz ˈθɜrti?/",
+      "zh": "那下一分就是三十？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, then forty for the third.",
+      "phonetic": "/jɛs, ðɛn ˈfɔrti fər ðə θɜrd./",
+      "zh": "對，第三分是四十。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Why is there no forty-five?",
+      "phonetic": "/waɪ ɪz ðɛr noʊ ˈfɔrti faɪv?/",
+      "zh": "為什麼沒有四十五分？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Nobody knows, it is tradition.",
+      "phonetic": "/ˈnoʊˌbɑdi noʊz, ɪt ɪz træˈdɪʃən./",
+      "zh": "沒人知道，那是傳統。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So forty means almost one game.",
+      "phonetic": "/soʊ ˈfɔrti minz ˈɔlˌmoʊst wʌn ɡeɪm./",
+      "zh": "所以四十就快贏一局了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One more point wins the game.",
+      "phonetic": "/wʌn mɔr pɔɪnt wɪnz ðə ɡeɪm./",
+      "zh": "再拿一分就贏這一局。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What if we are both at forty?",
+      "phonetic": "/wʌt ɪf wi ɑr boʊθ æt ˈfɔrti?/",
+      "zh": "如果兩邊都是四十分呢？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That is deuce, lead by two.",
+      "phonetic": "/ðæt ɪz dus, lid baɪ tu./",
+      "zh": "那是平分，你要領先兩分。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So one point is not enough?",
+      "phonetic": "/soʊ wʌn pɔɪnt ɪz nɑt ɪˈnʌf?/",
+      "zh": "所以只贏一分還不夠？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You need advantage, then one more.",
+      "phonetic": "/ju nid ædˈvæntɪdʒ, ðɛn wʌn mɔr./",
+      "zh": "你先佔優勢，然後再拿一分。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Advantage means I lead by one.",
+      "phonetic": "/ædˈvæntɪdʒ minz aɪ lid baɪ wʌn./",
+      "zh": "佔先就是說我領先一分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "If you lose it, back to deuce.",
+      "phonetic": "/ɪf ju luz ɪt, bæk tu dus./",
+      "zh": "如果你又輸掉，就回到平分。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Deuce feels endless in long games.",
+      "phonetic": "/dus filz ˈɛndləs ɪn lɔŋ ɡeɪmz./",
+      "zh": "打很久的時候平分好像沒完。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I serve first, you receive next.",
+      "phonetic": "/aɪ sɜrv fɜrst, ju rɪˈsiv nɛkst./",
+      "zh": "我先發球，下一個換你接。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We switch servers every game.",
+      "phonetic": "/wi swɪtʃ ˈsɜrvərz ˈɛvri ɡeɪm./",
+      "zh": "每一局我們都交換髮球。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Call the score before each serve.",
+      "phonetic": "/kɔl ðə skɔr bɪˈfɔr iʧ sɜrv./",
+      "zh": "每次發球前先把分數報出來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My number first or yours?",
+      "phonetic": "/maɪ ˈnʌmbər fɜrst ɔr jʊrz?/",
+      "zh": "先報我的還是先報你的？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The server always speaks first.",
+      "phonetic": "/ðə ˈsɜrvər ˈɔlˌweɪz spiks fɜrst./",
+      "zh": "發球的人一定先說。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fifteen-love, so I am behind.",
+      "phonetic": "/ˈfɪfˈtin lʌv, soʊ aɪ æm bɪˈhaɪnd./",
+      "zh": "十五比零，所以我落後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Love simply means zero here.",
+      "phonetic": "/lʌv ˈsɪmpli minz ˈzɪroʊ hɪr./",
+      "zh": "那個詞在這裡就是零分的意思。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That word is fun to say.",
+      "phonetic": "/ðæt wɜrd ɪz fʌn tu seɪ./",
+      "zh": "那個字講起來挺有趣的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You serve now, say it first.",
+      "phonetic": "/ju sɜrv naʊ, seɪ ɪt fɜrst./",
+      "zh": "換你發球，你先報分數。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Forty-love, so I am ahead.",
+      "phonetic": "/ˈfɔrti lʌv, soʊ aɪ æm əˈhɛd./",
+      "zh": "四十比零，所以我領先。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Six games win the whole set.",
+      "phonetic": "/sɪks ɡeɪmz wɪn ðə hoʊl sɛt./",
+      "zh": "贏六局就拿下這一盤。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And what happens at five all?",
+      "phonetic": "/ənd wʌt ˈhæpənz æt faɪv ɔl?/",
+      "zh": "那五比五的時候怎麼辦？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You must win by two games.",
+      "phonetic": "/ju mʌst wɪn baɪ tu ɡeɪmz./",
+      "zh": "你得領先兩局才算拿下一盤。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And when it gets to six all?",
+      "phonetic": "/ənd wɛn ɪt ɡɛts tu sɪks ɔl?/",
+      "zh": "那打到六比六的時候呢？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then you play a tiebreak game.",
+      "phonetic": "/ðɛn ju pleɪ ə ˈtaɪˌbreɪk ɡeɪm./",
+      "zh": "那就再打一個決勝局。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So no fifteen or forty there?",
+      "phonetic": "/soʊ noʊ ˈfɪfˈtin ɔr ˈfɔrti ðɛr?/",
+      "zh": "那邊就沒有十五或四十嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "No, first to seven wins it.",
+      "phonetic": "/noʊ, fɜrst tu ˈsɛvən wɪnz ɪt./",
+      "zh": "沒有，先到七分就贏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I double faulted twice in a row.",
+      "phonetic": "/aɪ ˈdʌbəl ˈfɔltəd twaɪs ɪn ə roʊ./",
+      "zh": "我連續兩次雙誤。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A double fault gives the point away.",
+      "phonetic": "/ə ˈdʌbəl fɔlt ɡɪvz ðə pɔɪnt əˈweɪ./",
+      "zh": "雙誤的話，這一分就直接白送了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My second serve felt too careful.",
+      "phonetic": "/maɪ ˈsɛkənd sɜrv fɛlt tu ˈkɛrfəl./",
+      "zh": "我的第二發球太小心了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Try it slower with more spin.",
+      "phonetic": "/traɪ ɪt ˈsloʊər wɪð mɔr spɪn./",
+      "zh": "試慢一點，多加一些旋轉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two serves for every point, right?",
+      "phonetic": "/tu sɜrvz fər ˈɛvri pɔɪnt, raɪt?/",
+      "zh": "每一分有兩次發球，對吧？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Miss both and the point is gone.",
+      "phonetic": "/mɪs boʊθ ənd ðə pɔɪnt ɪz ɡɔn./",
+      "zh": "兩次都失誤，這分就沒了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I hit the net on my first.",
+      "phonetic": "/aɪ hɪt ðə nɛt ɑn maɪ fɜrst./",
+      "zh": "我第一發球撞到網了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Was that a fault or a let?",
+      "phonetic": "/wʌz ðæt ə fɔlt ɔr ə lɛt?/",
+      "zh": "那算失誤還是重發？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It landed out, so it was a fault.",
+      "phonetic": "/ɪt ˈlændɪd aʊt, soʊ ɪt wʌz ə fɔlt./",
+      "zh": "球落到界外，所以是失誤。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Take a breath and trust your toss.",
+      "phonetic": "/teɪk ə brɛθ ənd trʌst jʊr tɔs./",
+      "zh": "深呼吸，相信你拋起來的球。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Was that ball in or out?",
+      "phonetic": "/wʌz ðæt bɔl ɪn ɔr aʊt?/",
+      "zh": "剛才那顆球算進還是算出？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I saw it clearly outside the line.",
+      "phonetic": "/aɪ sɔ ɪt ˈklɪrli ˈaʊtˌsaɪd ðə laɪn./",
+      "zh": "我看得很清楚，在界外。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mine touched the line, so it is good.",
+      "phonetic": "/maɪn tʊtʃt ðə laɪn, soʊ ɪt ɪz ɡʊd./",
+      "zh": "我的壓到線了，所以算好球。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "True, any line counts as in.",
+      "phonetic": "/tru, ˈɛni laɪn kaʊnts æz ɪn./",
+      "zh": "沒錯，碰到線都算界內。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I think your ball went wide.",
+      "phonetic": "/aɪ θɪŋk jʊr bɔl wɛnt waɪd./",
+      "zh": "我覺得你的球飛太開了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It looked good from my side.",
+      "phonetic": "/ɪt lʊkt ɡʊd frʌm maɪ saɪd./",
+      "zh": "從我這邊看是進界的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Maybe. Let us replay that point.",
+      "phonetic": "/ˈmeɪbi. lɛt ʌs riˈpleɪ ðæt pɔɪnt./",
+      "zh": "也許吧，那一分我們重打。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You are kind, I agree.",
+      "phonetic": "/ju ɑr kaɪnd, aɪ əˈɡri./",
+      "zh": "你真好，我同意。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In matches we ask for a challenge.",
+      "phonetic": "/ɪn ˈmætʃəz wi æsk fər ə ˈtʃæləndʒ./",
+      "zh": "比賽時可以提出挑戰。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "No camera here, only our eyes.",
+      "phonetic": "/noʊ ˈkæmərə hɪr, ˈoʊnli ˈaʊər aɪz./",
+      "zh": "這裡沒有攝影機，只有我們的眼睛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So we play honest, no arguing.",
+      "phonetic": "/soʊ wi pleɪ ˈɑnəst, noʊ ˈɑrɡjuɪŋ./",
+      "zh": "所以我們要誠實打，不爭吵。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A bad call is no big deal.",
+      "phonetic": "/ə bæd kɔl ɪz noʊ bɪɡ dil./",
+      "zh": "看錯一分不是什麼大事。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is our changeover now.",
+      "phonetic": "/ɪt ɪz ˈaʊər ˈtʃeɪndʒˌoʊvər naʊ./",
+      "zh": "現在輪到我們換邊了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We switch sides after odd games.",
+      "phonetic": "/wi swɪtʃ saɪdz ˈæftər ɑd ɡeɪmz./",
+      "zh": "單數局之後我們交換場地。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sit down and dry your face.",
+      "phonetic": "/sɪt daʊn ənd draɪ jʊr feɪs./",
+      "zh": "坐下來把臉擦一擦。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My towel is inside my bag.",
+      "phonetic": "/maɪ ˈtaʊəl ɪz ɪnˈsaɪd maɪ bæɡ./",
+      "zh": "我的毛巾在球包裡面。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Drink water, not just a little.",
+      "phonetic": "/drɪŋk ˈwɔtər, nɑt dʒʌst ə ˈlɪtəl./",
+      "zh": "喝水，不要只喝一點點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am thirsty, pass the bottle.",
+      "phonetic": "/aɪ æm ˈθɜrsti, pæs ðə ˈbɑtəl./",
+      "zh": "我渴了，把水瓶遞給我。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here, sip it slow, do not gulp.",
+      "phonetic": "/hɪr, sɪp ɪt sloʊ, du nɑt ɡʌlp./",
+      "zh": "給，小口喝，別灌下去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We get ninety seconds for this break.",
+      "phonetic": "/wi ɡɛt ˈnaɪnti ˈsɛkəndz fər ðɪs breɪk./",
+      "zh": "這次休息只有九十秒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rest your legs, feet down.",
+      "phonetic": "/rɛst jʊr lɛɡz, fit daʊn./",
+      "zh": "讓腿休息一下，腳放低。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sweat keeps running into my eyes.",
+      "phonetic": "/swɛt kips ˈrʌnɪŋ ˈɪntu maɪ aɪz./",
+      "zh": "汗一直流進我的眼睛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wear your headband, it helps a lot.",
+      "phonetic": "/wɛr jʊr ˈhɛdˌbænd, ɪt hɛlps ə lɑt./",
+      "zh": "戴上你的頭帶，很有用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My hands shake a bit from the heat.",
+      "phonetic": "/maɪ hænz ʃeɪk ə bɪt frʌm ðə hit./",
+      "zh": "我的手因為太熱有點發抖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stand in the shade one minute.",
+      "phonetic": "/stænd ɪn ðə ʃeɪd wʌn ˈmɪnət./",
+      "zh": "到陰涼處站一分鐘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Look, the coach is walking over.",
+      "phonetic": "/lʊk, ðə koʊtʃ ɪz ˈwɔkɪŋ ˈoʊvər./",
+      "zh": "你看，教練走過來了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hello coach, my footwork feels wrong.",
+      "phonetic": "/hɛˈloʊ koʊtʃ, maɪ ˈfʊtˌwɜrk filz rɔŋ./",
+      "zh": "教練好，我的步伐感覺不對。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Stay on your toes, not flat.",
+      "phonetic": "/steɪ ɑn jʊr toʊz, nɑt flæt./",
+      "zh": "腳掌前緣踩地，別整腳平壓。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Like small hops before I run?",
+      "phonetic": "/laɪk smɔl hɑps bɪˈfɔr aɪ rʌn?/",
+      "zh": "像起跑前先小小跳一下？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Split step when your rival hits.",
+      "phonetic": "/splɪt stɛp wɛn jʊr ˈraɪvəl hɪts./",
+      "zh": "對手擊球當下做分腿墊步。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I always stand still and watch.",
+      "phonetic": "/aɪ ˈɔlˌweɪz stænd stɪl ənd wɑtʃ./",
+      "zh": "我卻總是站著不動看球。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Return to the middle after each shot.",
+      "phonetic": "/rɪˈtɜrn tu ðə ˈmɪdəl ˈæftər iʧ ʃɑt./",
+      "zh": "每一拍之後回到場中央。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is why I am always late.",
+      "phonetic": "/ðæt ɪs waɪ aɪ æm ˈɔlˌweɪz leɪt./",
+      "zh": "所以我總是慢半拍。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Small steps, then one long push.",
+      "phonetic": "/smɔl stɛps, ðɛn wʌn lɔŋ pʊʃ./",
+      "zh": "先小碎步，再跨出一大步。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Should I run from side to side?",
+      "phonetic": "/ʃʊd aɪ rʌn frʌm saɪd tu saɪd?/",
+      "zh": "我應該左右來回跑嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Slide into the ball on hard courts.",
+      "phonetic": "/slaɪd ˈɪntu ðə bɔl ɑn hɑrd kɔrts./",
+      "zh": "在硬地上要滑步進去擊球。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My shoes squeak so loudly there.",
+      "phonetic": "/maɪ ʃuz skwik soʊ ˈlaʊdli ðɛr./",
+      "zh": "我球鞋在那裡吱吱響很大聲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Turn early, take the racket back.",
+      "phonetic": "/tɜrn ˈɜrli, teɪk ðə ˈrækət bæk./",
+      "zh": "早點轉體，把拍子往後帶。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I wait too long every time.",
+      "phonetic": "/aɪ weɪt tu lɔŋ ˈɛvri taɪm./",
+      "zh": "我每一次都等太久。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Watch my feet and copy the pattern.",
+      "phonetic": "/wɑtʃ maɪ fit ənd ˈkɑpi ðə ˈpætərn./",
+      "zh": "看我的腳步，照著這個模式做。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Again, a little slower, please.",
+      "phonetic": "/əˈɡɛn, ə ˈlɪtəl ˈsloʊər, pliz./",
+      "zh": "再一次，稍微慢一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Better! You reached that wide ball.",
+      "phonetic": "/ˈbɛtər! ju riʧt ðæt waɪd bɔl./",
+      "zh": "好多了！那顆外角球你夠到了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The steps really made a difference.",
+      "phonetic": "/ðə stɛps ˈrɪli meɪd ə ˈdɪfərəns./",
+      "zh": "腳步真的差很多。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do not lean back when you hit.",
+      "phonetic": "/du nɑt lin bæk wɛn ju hɪt./",
+      "zh": "擊球的時候身體別往後仰。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My balls fly long when I lean.",
+      "phonetic": "/maɪ bɔlz flai lɔŋ wɛn aɪ lin./",
+      "zh": "我一仰身體球就打超界。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Keep your eyes on the incoming ball.",
+      "phonetic": "/kip jʊr aɪz ɑn ðə ɪnˈkʌmɪŋ bɔl./",
+      "zh": "眼睛要盯著飛過來的球。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thanks, coach! I will count the bounce.",
+      "phonetic": "/θæŋks, koʊtʃ! aɪ wɪl kaʊnt ðə baʊns./",
+      "zh": "謝謝教練！我會大聲數彈地。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How much time is left?",
+      "phonetic": "/haʊ mʌtʃ taɪm ɪz lɛft?/",
+      "zh": "還剩下多少時間？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One more game, then we stop.",
+      "phonetic": "/wʌn mɔr ɡeɪm, ðɛn wi stɑp./",
+      "zh": "再一局，然後我們就停。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Score is five games to three.",
+      "phonetic": "/skɔr ɪz faɪv ɡeɪmz tu θri./",
+      "zh": "局數現在是五比三。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You are serving for the set.",
+      "phonetic": "/ju ɑr ˈsɜrvɪŋ fər ðə sɛt./",
+      "zh": "你在發可以拿下這盤的一局。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Stay calm, one point at a time.",
+      "phonetic": "/steɪ kɑm, wʌn pɔɪnt æt ə taɪm./",
+      "zh": "保持冷靜，一分一分打。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Clapping helps me stay awake.",
+      "phonetic": "/ˈklæpɪŋ hɛlps mi steɪ əˈweɪk./",
+      "zh": "拍手能讓我保持清醒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The crowd here is just birds.",
+      "phonetic": "/ðə kraʊd hɪr ɪz dʒʌst bɜrdz./",
+      "zh": "這裡的觀眾只有幾隻鳥。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then clap louder for yourself.",
+      "phonetic": "/ðɛn klæp ˈlaʊdər fər jʊrˈsɛlf./",
+      "zh": "那就替自己更大聲拍手。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Ready? I will serve to the corner.",
+      "phonetic": "/ˈrɛdi? aɪ wɪl sɜrv tu ðə ˈkɔrnər./",
+      "zh": "準備好了嗎？我要發到角落。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Serve it, I will be waiting.",
+      "phonetic": "/sɜrv ɪt, aɪ wɪl bi ˈweɪtɪŋ./",
+      "zh": "儘管發，我會在這裡等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This is the last game now.",
+      "phonetic": "/ðɪs ɪz ðə læst ɡeɪm naʊ./",
+      "zh": "現在是最後一局了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The winner takes the whole match?",
+      "phonetic": "/ðə ˈwɪnər teɪks ðə hoʊl mætʃ?/",
+      "zh": "贏的人拿下整場嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, one point decides the set.",
+      "phonetic": "/jɛs, wʌn pɔɪnt dɪˈsaɪdz ðə sɛt./",
+      "zh": "對，一分就能決定這盤。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My hands are sweating again.",
+      "phonetic": "/maɪ hænz ɑr ˈswɛtɪŋ əˈɡɛn./",
+      "zh": "我的手又開始出汗了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I have two set points now.",
+      "phonetic": "/aɪ hæv tu sɛt pɔɪnts naʊ./",
+      "zh": "我現在有兩個賽點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will save both of them, watch me.",
+      "phonetic": "/aɪ wɪl seɪv boʊθ əv ðɛm, wɑtʃ mi./",
+      "zh": "這兩分我都會救回來，看著。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will serve wide, be ready.",
+      "phonetic": "/aɪ wɪl sɜrv waɪd, bi ˈrɛdi./",
+      "zh": "我要發外角，準備好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I am watching your racket face.",
+      "phonetic": "/aɪ æm ˈwɑtʃɪŋ jʊr ˈrækət feɪs./",
+      "zh": "我在盯著你的拍面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Great return! That was fast.",
+      "phonetic": "/ɡreɪt rɪˈtɜrn! ðæt wʌz fæst./",
+      "zh": "回得漂亮！那一球好快。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lucky, I only moved one foot.",
+      "phonetic": "/ˈlʌki, aɪ ˈoʊnli muvd wʌn fʊt./",
+      "zh": "運氣啦，我只是動了一隻腳。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Deuce again, this feels tense.",
+      "phonetic": "/dus əˈɡɛn, ðɪs filz tɛns./",
+      "zh": "又平分了，感覺好緊張。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Breathe out before you serve.",
+      "phonetic": "/brið aʊt bɪˈfɔr ju sɜrv./",
+      "zh": "發球之前先吐一口氣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Game and set, that is it!",
+      "phonetic": "/ɡeɪm ənd sɛt, ðæt ɪz ɪt!/",
+      "zh": "局和盤都拿下，結束了！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, you earned it point by point.",
+      "phonetic": "/jɛs, ju ɜrnd ɪt pɔɪnt baɪ pɔɪnt./",
+      "zh": "是啊，那盤是你一分一分拚下來的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good game, you played well.",
+      "phonetic": "/ɡʊd ɡeɪm, ju pleɪd wɛl./",
+      "zh": "打得好，你表現不錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You are too kind, you were better.",
+      "phonetic": "/ju ɑr tu kaɪnd, ju wɜr ˈbɛtər./",
+      "zh": "你太客氣了，你打得更好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let us shake hands at the net.",
+      "phonetic": "/lɛt ʌs ʃeɪk hændz æt ðə nɛt./",
+      "zh": "我們到網前握個手吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here, a firm handshake for you.",
+      "phonetic": "/hɪr, ə fɜrm ˈhændˌʃeɪk fər ju./",
+      "zh": "來，跟你有力地握一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That long rally was the best.",
+      "phonetic": "/ðæt lɔŋ ˈræli wʌz ðə bɛst./",
+      "zh": "那一串多拍對拉最精彩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I ran for eleven shots there.",
+      "phonetic": "/aɪ ræn fər ɪˈlɛvən ʃɑts ðɛr./",
+      "zh": "那一球我來回跑了十一拍。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I won, though my serve kept failing.",
+      "phonetic": "/aɪ wʌn, ðoʊ maɪ sɜrv kɛpt ˈfeɪlɪŋ./",
+      "zh": "我贏是贏了，不過發球一直出問題。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My footwork is the real problem.",
+      "phonetic": "/maɪ ˈfʊtˌwɜrk ɪz ðə ril ˈprɑbləm./",
+      "zh": "我的步伐才是真正的問題。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You gave the match a real try.",
+      "phonetic": "/ju ɡeɪv ðə mætʃ ə ril traɪ./",
+      "zh": "你這一場真的很拚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thanks, I enjoyed every point.",
+      "phonetic": "/θæŋks, aɪ ˌɛnˈdʒɔɪd ˈɛvri pɔɪnt./",
+      "zh": "謝謝，我很享受每一分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's pack the balls away.",
+      "phonetic": "/lɛts pæk ðə bɔlz əˈweɪ./",
+      "zh": "我們把球都收起來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Count them, we started with three.",
+      "phonetic": "/kaʊnt ðɛm, wi ˈstɑrtəd wɪθ θri./",
+      "zh": "數一下，我們一開始是三顆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Two are here, one is missing.",
+      "phonetic": "/tu ɑr hɪr, wʌn ɪz ˈmɪsɪŋ./",
+      "zh": "兩顆在這裡，還少一顆。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Check under the bench, I see it.",
+      "phonetic": "/tʃɛk ˈʌndər ðə bɛntʃ, aɪ si ɪt./",
+      "zh": "看看板凳底下，我看到了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now let me return your racket.",
+      "phonetic": "/naʊ lɛt mi rɪˈtɜrn jʊr ˈrækət./",
+      "zh": "現在把你的球拍還給你。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Did it feel good to play?",
+      "phonetic": "/dɪd ɪt fil ɡʊd tu pleɪ?/",
+      "zh": "用它打起來順手嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The handle fit my hand perfectly.",
+      "phonetic": "/ðə ˈhændəl fɪt maɪ hænd ˈpɜrfɪktli./",
+      "zh": "握把完全合我的手。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep it tonight, practice at home.",
+      "phonetic": "/kip ɪt təˈnaɪt, ˈpræktɪs æt hoʊm./",
+      "zh": "今晚先留著，在家裡空揮練習。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are the strings still okay?",
+      "phonetic": "/ɑr ðə strɪŋz stɪl oʊˈkeɪ?/",
+      "zh": "拍線還沒有問題吧？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A little loose, but they are fine.",
+      "phonetic": "/ə ˈlɪtəl lus, bʌt ðeɪ ɑr faɪn./",
+      "zh": "有點鬆，不過還能用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will wipe it before I return it.",
+      "phonetic": "/aɪ wɪl waɪp ɪt bɪˈfɔr aɪ rɪˈtɜrn ɪt./",
+      "zh": "我歸還之前會先擦乾淨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No rush, bring it next Sunday.",
+      "phonetic": "/noʊ rʌʃ, brɪŋ ɪt nɛkst ˈsʌnˌdeɪ./",
+      "zh": "不著急，下週天帶來就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Was my headband useful today?",
+      "phonetic": "/wʌz maɪ ˈhɛdˌbænd ˈjusfəl təˈdeɪ?/",
+      "zh": "我今天的頭帶有用嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Very, my eyes thank you too.",
+      "phonetic": "/ˈvɛri, maɪ aɪz θæŋk ju tu./",
+      "zh": "很有用，我的眼睛也謝謝你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My leg feels tight after running.",
+      "phonetic": "/maɪ lɛɡ filz taɪt ˈæftər ˈrʌnɪŋ./",
+      "zh": "跑了一場我的腿好緊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stretch it now, do not sit down.",
+      "phonetic": "/strɛtʃ ɪt naʊ, du nɑt sɪt daʊn./",
+      "zh": "現在拉一下，別坐著不動。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which muscle hurts the most?",
+      "phonetic": "/wɪtʃ ˈmʌsəl hɜrts ðə moʊst?/",
+      "zh": "哪一塊肌肉最痛？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The back of my thigh, right here.",
+      "phonetic": "/ðə bæk əv maɪ θaɪ, raɪt hɪr./",
+      "zh": "大腿後面，就在這裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hold that stretch for thirty seconds.",
+      "phonetic": "/hoʊld ðæt strɛtʃ fər ˈθɜrti ˈsɛkəndz./",
+      "zh": "那個拉筋動作停三十秒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Should I feel pain while holding?",
+      "phonetic": "/ʃʊd aɪ fil peɪn waɪl ˈhoʊldɪŋ?/",
+      "zh": "停留的時候應該會痛嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Only a gentle pull, never sharp pain.",
+      "phonetic": "/ˈoʊnli ə ˈdʒɛntəl pʊl, ˈnɛvər ʃɑrp peɪn./",
+      "zh": "只有輕輕的拉扯感，不可以刺痛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Okay, I will breathe while stretching.",
+      "phonetic": "/oʊˈkeɪ, aɪ wɪl brið waɪl ˈstrɛtʃɪŋ./",
+      "zh": "好，拉筋的時候我會呼吸。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My shoulders are stiff from serving.",
+      "phonetic": "/maɪ ˈʃoʊldərz ɑr stɪf frʌm ˈsɜrvɪŋ./",
+      "zh": "我肩膀因為發球好僵硬。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cross your arm and press it in.",
+      "phonetic": "/krɔs jʊr ɑrm ənd prɛs ɪt ɪn./",
+      "zh": "把手臂橫過來往裡壓。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That helps, do the other side.",
+      "phonetic": "/ðæt hɛlps, du ði ˈʌðər saɪd./",
+      "zh": "有用，再做另外邊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Your turn now, lean toward me.",
+      "phonetic": "/jʊr tɜrn naʊ, lin təˈwɔrd mi./",
+      "zh": "現在換你，往我這靠。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My calf is cramping a little.",
+      "phonetic": "/maɪ kæf ɪz ˈkræmpɪŋ ə ˈlɪtəl./",
+      "zh": "我小腿有點抽筋。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Flex your toes up toward your knee.",
+      "phonetic": "/flɛks jʊr toʊz ʌp təˈwɔrd jʊr ni./",
+      "zh": "把腳趾往膝蓋方向勾。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Much better, thank you for that.",
+      "phonetic": "/mʌtʃ ˈbɛtər, θæŋk ju fər ðæt./",
+      "zh": "好多了，謝謝你這招。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ice your calf when you get home.",
+      "phonetic": "/aɪs jʊr kæf wɛn ju ɡɛt hoʊm./",
+      "zh": "到家記得冰一下小腿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are you hungry after all that?",
+      "phonetic": "/ɑr ju ˈhʌŋɡri ˈæftər ɔl ðæt?/",
+      "zh": "打完這些你餓了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Starving. Let's get some food.",
+      "phonetic": "/ˈstɑrvɪŋ. lɛts ɡɛt sʌm fud./",
+      "zh": "超餓，我們去吃點東西。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The café beside the court is open.",
+      "phonetic": "/ðə kæˈfeɪ bɪˈsaɪd ðə kɔrt ɪz ˈoʊpən./",
+      "zh": "球場旁邊那家咖啡廳還開著。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I want a sandwich and juice.",
+      "phonetic": "/aɪ wɑnt ə ˈsænwɪtʃ ənd dʒus./",
+      "zh": "我要一份三明治和果汁。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Bananas were a smart idea today.",
+      "phonetic": "/bəˈnænz wɜrn ə smɑrt aɪˈdiə təˈdeɪ./",
+      "zh": "今天帶香蕉真是好主意。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It really helped me in game six.",
+      "phonetic": "/ɪt ˈrɪli hɛlpt mi ɪn ɡeɪm sɪks./",
+      "zh": "第六局的時候真的幫到我。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you want the salty snacks?",
+      "phonetic": "/du ju wɑnt ðə ˈsɔlti snæks?/",
+      "zh": "你想吃鹹的那種點心嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, nuts and some dried fruit.",
+      "phonetic": "/jɛs, nʌts ənd sʌm draɪd frut./",
+      "zh": "想，堅果還有果乾。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This cookie is still warm.",
+      "phonetic": "/ðɪs ˈkʊki ɪz stɪl wɔrm./",
+      "zh": "這塊餅乾還是溫的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Save me half of that, please.",
+      "phonetic": "/seɪv mi hæf əv ðæt, pliz./",
+      "zh": "幫我留一半好嗎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Tea or water after exercise?",
+      "phonetic": "/ti ɔr ˈwɔtər ˈæftər ˈɛksərˌsaɪz?/",
+      "zh": "運動完要喝茶還是喝水？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Water first, then a cold tea.",
+      "phonetic": "/ˈwɔtər fɜrst, ðɛn ə koʊld ti./",
+      "zh": "先喝水，再來一杯涼茶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I need to wash my hands.",
+      "phonetic": "/aɪ nid tu wɑʃ maɪ hænz./",
+      "zh": "我得先去洗手。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The sink is by the entrance door.",
+      "phonetic": "/ðə sɪŋk ɪz baɪ ði ˈɛntrəns dɔr./",
+      "zh": "洗手台就在入口旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My shirt is wet through completely.",
+      "phonetic": "/maɪ ʃɜrt ɪz wɛt θru kəmˈplitli./",
+      "zh": "我的球衣整個都濕透了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Take the spare one in my bag.",
+      "phonetic": "/teɪk ðə spɛr wʌn ɪn maɪ bæɡ./",
+      "zh": "拿我包裡那件備用的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You planned all this so well.",
+      "phonetic": "/ju plænd ɔl ðɪs soʊ wɛl./",
+      "zh": "你把這一切都安排得很好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I only brought socks and towels.",
+      "phonetic": "/aɪ ˈoʊnli brɔt sɑks ənd ˈtaʊəlz./",
+      "zh": "我只帶了襪子和毛巾。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How will you feel tomorrow?",
+      "phonetic": "/haʊ wɪl ju fil təˈmɑroʊ?/",
+      "zh": "你明天會是什麼感覺？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sore everywhere, but a good sore.",
+      "phonetic": "/sɔr ˈɛvriˌwɛr, bʌt ə ɡʊd sɔr./",
+      "zh": "全身痠痛，不過是好的痠痛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Walk slowly, skip the stairs.",
+      "phonetic": "/wɔk ˈsloʊli, skɪp ðə stɛrz./",
+      "zh": "走慢一點，別爬樓梯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My knees will decide that for me.",
+      "phonetic": "/maɪ niz wɪl dɪˈsaɪd ðæt fər mi./",
+      "zh": "我的膝蓋會替我做決定。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Shall we play again next week?",
+      "phonetic": "/ʃæl wi pleɪ əˈɡɛn nɛkst wik?/",
+      "zh": "我們下週再打一場好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, same court, same evening time.",
+      "phonetic": "/jɛs, seɪm kɔrt, seɪm ˈivnɪŋ taɪm./",
+      "zh": "好，同樣的場地同樣的時間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Book two hours, not just one.",
+      "phonetic": "/bʊk tu ˈaʊərz, nɑt dʒʌst wʌn./",
+      "zh": "訂兩小時，不要只訂一小時。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I am on it right away.",
+      "phonetic": "/aɪ æm ɑn ɪt raɪt əˈweɪ./",
+      "zh": "我馬上就去訂。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Next time let's invite two more.",
+      "phonetic": "/nɛkst taɪm lɛts ɪnˈvaɪt tu mɔr./",
+      "zh": "下次我們再多邀兩個人。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then we can play doubles there.",
+      "phonetic": "/ðɛn wi kæn pleɪ ˈdʌbəlz ðɛr./",
+      "zh": "那樣我們就能在那裡打雙打。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I should take a real lesson soon.",
+      "phonetic": "/aɪ ʃʊd teɪk ə ril ˈlɛsən sun./",
+      "zh": "我該快點去上一堂正課。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Please do, the coach today was great.",
+      "phonetic": "/pliz du, ðə koʊtʃ təˈdeɪ wʌz ɡreɪt./",
+      "zh": "去吧，今天那位教練真的很會教。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you take any photos today?",
+      "phonetic": "/dɪd ju teɪk ˈɛnɪ ˈfoʊtoʊz təˈdeɪ?/",
+      "zh": "你今天有拍照嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two, you look serious in one.",
+      "phonetic": "/tu, ju lʊk ˈsɪriəs ɪn wʌn./",
+      "zh": "兩張，其中一張你看起來很認真。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Send them to me tonight, please.",
+      "phonetic": "/sɛnd ðɛm tu mi təˈnaɪt, pliz./",
+      "zh": "今晚麻煩傳給我。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will add them to our group.",
+      "phonetic": "/aɪ wɪl æd ðɛm tu ˈaʊər ɡrup./",
+      "zh": "我會把它們放到我們群組。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you want to buy new balls?",
+      "phonetic": "/du ju wɑnt tu baɪ nu bɔlz?/",
+      "zh": "你想買新球嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ours still bounce well enough.",
+      "phonetic": "/aʊrz stɪl baʊns wɛl ɪˈnʌf./",
+      "zh": "我們這些球彈得還夠好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then next time bring your own.",
+      "phonetic": "/ðɛn nɛkst taɪm brɪŋ jʊr ˈoʊn./",
+      "zh": "那下次就自己帶球來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Deal, I will leave them in my car.",
+      "phonetic": "/dil, aɪ wɪl liv ðɛm ɪn maɪ kɑr./",
+      "zh": "好，我把它們放在我車上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are you driving home right now?",
+      "phonetic": "/ɑr ju ˈdraɪvɪŋ hoʊm raɪt naʊ?/",
+      "zh": "你現在要開車回家嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, do you want a ride?",
+      "phonetic": "/jɛs, du ju wɑnt ə raɪd?/",
+      "zh": "對，你要不要順路搭車？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Only if the road is not long.",
+      "phonetic": "/ˈoʊnli ɪf ðə roʊd ɪz nɑt lɔŋ./",
+      "zh": "只要路不遠我就搭。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Twenty minutes, then I drop you off.",
+      "phonetic": "/ˈtwɛnti ˈmɪnəts, ðɛn aɪ drɑp ju ɔf./",
+      "zh": "二十分鐘，然後我送你到家。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Today was worth the whole week.",
+      "phonetic": "/təˈdeɪ wʌz wɜrθ ðə hoʊl wik./",
+      "zh": "今天值得我等了一整個禮拜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let's never miss another Saturday.",
+      "phonetic": "/lɛts ˈnɛvər mɪs əˈnʌðər ˈsætərˌdeɪ./",
+      "zh": "我們別再錯過任何一個星期六。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good night, rest those tired legs.",
+      "phonetic": "/ɡʊd naɪt, rɛst ðoʊz ˈtaɪərd lɛɡz./",
+      "zh": "晚安，讓疲倦的腿休息。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "See you next week on court.",
+      "phonetic": "/si ju nɛkst wik ɑn kɔrt./",
+      "zh": "下週在球場見你。"
+    }
+  ]
+}

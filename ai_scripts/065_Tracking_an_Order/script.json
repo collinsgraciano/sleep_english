@@ -1,0 +1,2458 @@
+{
+  "title": "Everyday Phrases — Tracking an Order",
+  "title_zh": "查訂單",
+  "scene_zh": "查訂單 · 情境對話",
+  "title_quote": "Where is my order?",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】📦 實用查訂單必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — Tracking an Order",
+  "youtube_description": "睡著學英文！這部影片收錄實用查訂單情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫），不用背，睡前聽就會。重複播放，讓英文自然進入你的大腦。👍 想學更多生活場景，請留言告訴我！別忘了訂閱+按讚。 #英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical Tracking an Order phrase pairs (each pair: male normal speed → female slow speed → combined dialogue). No memorization needed—just listen before bed and absorb naturally. If you want more real-life scenarios, leave a comment! Subscribe and like!",
+  "youtube_tags": [
+    "英文聽力",
+    "睡前英文",
+    "查訂單英文",
+    "English listening",
+    "Sleep learning",
+    "A2 English",
+    "常用英文短語",
+    "零基礎英文",
+    "慢速英文",
+    "英文口語",
+    "Learn English",
+    "English for daily life",
+    "ESL",
+    "English conversation",
+    "聽英語",
+    "英文學習"
+  ],
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "Tracking an Order",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "Tracking an Order",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Customer Service",
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "Where is my order?",
+      "phonetic": "/wɛr ɪz maɪ ˈɔrdər?/",
+      "zh": "我的訂單呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What is the number?",
+      "phonetic": "/wət ɪz ðə ˈnəmbər?/",
+      "zh": "號碼？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The code is emailed.",
+      "phonetic": "/ðə koʊd ɪz iˈmeɪld./",
+      "zh": "編碼寄郵箱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Check the inbox.",
+      "phonetic": "/ʧɛk ðə inbox*./",
+      "zh": "查收件。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The status is shipped.",
+      "phonetic": "/ðə ˈstætəs ɪz ʃɪpt./",
+      "zh": "狀態已寄。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the way, yes.",
+      "phonetic": "/ɔn ðə weɪ, jɛs./",
+      "zh": "在途。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The map shows move.",
+      "phonetic": "/ðə mæp ʃoʊz muv./",
+      "zh": "地圖顯示移動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Near the hub.",
+      "phonetic": "/nɪr ðə həb./",
+      "zh": "近轉運站。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The delay is long.",
+      "phonetic": "/ðə dɪˈleɪ ɪz lɔŋ./",
+      "zh": "延誤久。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Weather, maybe.",
+      "phonetic": "/ˈwɛðər, ˈmeɪbi./",
+      "zh": "天氣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The eta is Friday.",
+      "phonetic": "/ðə eta* ɪz ˈfraɪˌdeɪ./",
+      "zh": "預計到週五。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Before noon, yes.",
+      "phonetic": "/ˌbiˈfɔr nun, jɛs./",
+      "zh": "中午前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The courier is late.",
+      "phonetic": "/ðə ˈkəriər ɪz leɪt./",
+      "zh": "快遞晚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Traffic, sorry.",
+      "phonetic": "/ˈtræfɪk, ˈsɑri./",
+      "zh": "塞車歉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app is live.",
+      "phonetic": "/ðə æp ɪz lɪv./",
+      "zh": "App 即時。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Refresh, please.",
+      "phonetic": "/rɪˈfrɛʃ, pliz./",
+      "zh": "刷新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The package paused.",
+      "phonetic": "/ðə ˈpækɪʤ pɔzd./",
+      "zh": "包裹停。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hub closed, night.",
+      "phonetic": "/həb kloʊzd, naɪt./",
+      "zh": "轉運站夜關。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The door, sign.",
+      "phonetic": "/ðə dɔr, saɪn./",
+      "zh": "門口留言。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Leave at step.",
+      "phonetic": "/liv æt stɛp./",
+      "zh": "放臺階。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The order split.",
+      "phonetic": "/ðə ˈɔrdər splɪt./",
+      "zh": "訂單拆。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two boxes, yes.",
+      "phonetic": "/tu ˈbɑksɪz, jɛs./",
+      "zh": "兩箱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The item is out.",
+      "phonetic": "/ðə ˈaɪtəm ɪz aʊt./",
+      "zh": "物品缺。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Backorder, wait.",
+      "phonetic": "/backorder*, weɪt./",
+      "zh": "缺貨等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tracking failed.",
+      "phonetic": "/ðə ˈtrækɪŋ feɪld./",
+      "zh": "追蹤失敗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Resend the link.",
+      "phonetic": "/resend* ðə lɪŋk./",
+      "zh": "重寄連結。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The number is wrong.",
+      "phonetic": "/ðə ˈnəmbər ɪz rɔŋ./",
+      "zh": "號碼錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Verify the mail.",
+      "phonetic": "/ˈvɛrəˌfaɪ ðə meɪl./",
+      "zh": "覈對郵件。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The delivery today?",
+      "phonetic": "/ðə dɪˈlɪvəri təˈdeɪ?/",
+      "zh": "今天到？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Before eight, yes.",
+      "phonetic": "/ˌbiˈfɔr eɪt, jɛs./",
+      "zh": "八點前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The proof is photo.",
+      "phonetic": "/ðə pruf ɪz ˈfoʊˌtoʊ./",
+      "zh": "證明是照片。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Dropped, signed.",
+      "phonetic": "/drɑpt, saɪnd./",
+      "zh": "送達簽收。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The customs held.",
+      "phonetic": "/ðə ˈkəstəmz hɛld./",
+      "zh": "海關扣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Docs needed, yes.",
+      "phonetic": "/dɑks ˈnidɪd, jɛs./",
+      "zh": "需文件。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The gift, hide.",
+      "phonetic": "/ðə gɪft, haɪd./",
+      "zh": "禮物隱藏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No receipt, please.",
+      "phonetic": "/noʊ rɪˈsit, pliz./",
+      "zh": "別放收據。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The order is big.",
+      "phonetic": "/ðə ˈɔrdər ɪz bɪg./",
+      "zh": "訂單大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two trips, maybe.",
+      "phonetic": "/tu trɪps, ˈmeɪbi./",
+      "zh": "可能兩趟。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The status stuck.",
+      "phonetic": "/ðə ˈstætəs stək./",
+      "zh": "狀態卡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Call the line.",
+      "phonetic": "/kɔl ðə laɪn./",
+      "zh": "打電話。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The refund if late.",
+      "phonetic": "/ðə ˈriˌfənd ɪf leɪt./",
+      "zh": "遲到退。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Policy allows, yes.",
+      "phonetic": "/ˈpɑləsi əˈlaʊz, jɛs./",
+      "zh": "政策許。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The box is light.",
+      "phonetic": "/ðə bɑks ɪz laɪt./",
+      "zh": "箱子輕。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One item, yes.",
+      "phonetic": "/wən ˈaɪtəm, jɛs./",
+      "zh": "一件。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The route is odd.",
+      "phonetic": "/ðə rut ɪz ɑd./",
+      "zh": "路線怪。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Reroute, normal.",
+      "phonetic": "/riˈrut, ˈnɔrməl./",
+      "zh": "改道正常。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The notify on.",
+      "phonetic": "/ðə ˈnoʊtəˌfaɪ ɔn./",
+      "zh": "通知開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ping at door.",
+      "phonetic": "/pɪŋ æt dɔr./",
+      "zh": "到門響。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The order found.",
+      "phonetic": "/ðə ˈɔrdər faʊnd./",
+      "zh": "訂單找到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Out for delivery.",
+      "phonetic": "/aʊt fər dɪˈlɪvəri./",
+      "zh": "配送中。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The eta slipped.",
+      "phonetic": "/ðə eta* slɪpt./",
+      "zh": "預計到延。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tomorrow, then.",
+      "phonetic": "/təˈmɑˌroʊ, ðɛn./",
+      "zh": "那明天。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The courier called.",
+      "phonetic": "/ðə ˈkəriər kɔld./",
+      "zh": "快遞打電話。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Meet at door.",
+      "phonetic": "/mit æt dɔr./",
+      "zh": "門口接。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The package scanned.",
+      "phonetic": "/ðə ˈpækɪʤ skænd./",
+      "zh": "包裹掃。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Final mile, yes.",
+      "phonetic": "/ˈfaɪnəl maɪl, jɛs./",
+      "zh": "最後一哩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The order arrived.",
+      "phonetic": "/ðə ˈɔrdər əraɪvd./",
+      "zh": "訂單到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sign, received.",
+      "phonetic": "/saɪn, rɪˈsivd./",
+      "zh": "簽收。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The track was clear.",
+      "phonetic": "/ðə træk wɑz klɪr./",
+      "zh": "追蹤清楚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All good, yes.",
+      "phonetic": "/ɔl gʊd, jɛs./",
+      "zh": "都好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wait is over.",
+      "phonetic": "/ðə weɪt ɪz ˈoʊvər./",
+      "zh": "等待結束。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Open it, enjoy.",
+      "phonetic": "/ˈoʊpən ɪt, ˌɛnˈʤɔɪ./",
+      "zh": "拆享受。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for tracking.",
+      "phonetic": "/θæŋks fər ˈtrækɪŋ./",
+      "zh": "謝謝查詢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Delivered, pal.",
+      "phonetic": "/dɪˈlɪvərd, pæl./",
+      "zh": "已送達。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for tracking.",
+      "phonetic": "/θæŋks fər ˈtrækɪŋ./",
+      "zh": "謝謝查詢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Delivered, pal.",
+      "phonetic": "/dɪˈlɪvərd, pæl./",
+      "zh": "已送達。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wait is over.",
+      "phonetic": "/ðə weɪt ɪz ˈoʊvər./",
+      "zh": "等待結束。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Open it, enjoy.",
+      "phonetic": "/ˈoʊpən ɪt, ˌɛnˈʤɔɪ./",
+      "zh": "拆享受。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The track was clear.",
+      "phonetic": "/ðə træk wɑz klɪr./",
+      "zh": "追蹤清楚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All good, yes.",
+      "phonetic": "/ɔl gʊd, jɛs./",
+      "zh": "都好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The order arrived.",
+      "phonetic": "/ðə ˈɔrdər əraɪvd./",
+      "zh": "訂單到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sign, received.",
+      "phonetic": "/saɪn, rɪˈsivd./",
+      "zh": "簽收。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The package scanned.",
+      "phonetic": "/ðə ˈpækɪʤ skænd./",
+      "zh": "包裹掃。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Final mile, yes.",
+      "phonetic": "/ˈfaɪnəl maɪl, jɛs./",
+      "zh": "最後一哩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The courier called.",
+      "phonetic": "/ðə ˈkəriər kɔld./",
+      "zh": "快遞打電話。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Meet at door.",
+      "phonetic": "/mit æt dɔr./",
+      "zh": "門口接。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The eta slipped.",
+      "phonetic": "/ðə eta* slɪpt./",
+      "zh": "預計到延。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tomorrow, then.",
+      "phonetic": "/təˈmɑˌroʊ, ðɛn./",
+      "zh": "那明天。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The order found.",
+      "phonetic": "/ðə ˈɔrdər faʊnd./",
+      "zh": "訂單找到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Out for delivery.",
+      "phonetic": "/aʊt fər dɪˈlɪvəri./",
+      "zh": "配送中。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The notify on.",
+      "phonetic": "/ðə ˈnoʊtəˌfaɪ ɔn./",
+      "zh": "通知開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ping at door.",
+      "phonetic": "/pɪŋ æt dɔr./",
+      "zh": "到門響。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The route is odd.",
+      "phonetic": "/ðə rut ɪz ɑd./",
+      "zh": "路線怪。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Reroute, normal.",
+      "phonetic": "/riˈrut, ˈnɔrməl./",
+      "zh": "改道正常。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The box is light.",
+      "phonetic": "/ðə bɑks ɪz laɪt./",
+      "zh": "箱子輕。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One item, yes.",
+      "phonetic": "/wən ˈaɪtəm, jɛs./",
+      "zh": "一件。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The refund if late.",
+      "phonetic": "/ðə ˈriˌfənd ɪf leɪt./",
+      "zh": "遲到退。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Policy allows, yes.",
+      "phonetic": "/ˈpɑləsi əˈlaʊz, jɛs./",
+      "zh": "政策許。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The status stuck.",
+      "phonetic": "/ðə ˈstætəs stək./",
+      "zh": "狀態卡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Call the line.",
+      "phonetic": "/kɔl ðə laɪn./",
+      "zh": "打電話。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The order is big.",
+      "phonetic": "/ðə ˈɔrdər ɪz bɪg./",
+      "zh": "訂單大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two trips, maybe.",
+      "phonetic": "/tu trɪps, ˈmeɪbi./",
+      "zh": "可能兩趟。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The gift, hide.",
+      "phonetic": "/ðə gɪft, haɪd./",
+      "zh": "禮物隱藏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No receipt, please.",
+      "phonetic": "/noʊ rɪˈsit, pliz./",
+      "zh": "別放收據。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The customs held.",
+      "phonetic": "/ðə ˈkəstəmz hɛld./",
+      "zh": "海關扣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Docs needed, yes.",
+      "phonetic": "/dɑks ˈnidɪd, jɛs./",
+      "zh": "需文件。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The proof is photo.",
+      "phonetic": "/ðə pruf ɪz ˈfoʊˌtoʊ./",
+      "zh": "證明是照片。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Dropped, signed.",
+      "phonetic": "/drɑpt, saɪnd./",
+      "zh": "送達簽收。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The delivery today?",
+      "phonetic": "/ðə dɪˈlɪvəri təˈdeɪ?/",
+      "zh": "今天到？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Before eight, yes.",
+      "phonetic": "/ˌbiˈfɔr eɪt, jɛs./",
+      "zh": "八點前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The number is wrong.",
+      "phonetic": "/ðə ˈnəmbər ɪz rɔŋ./",
+      "zh": "號碼錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Verify the mail.",
+      "phonetic": "/ˈvɛrəˌfaɪ ðə meɪl./",
+      "zh": "覈對郵件。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tracking failed.",
+      "phonetic": "/ðə ˈtrækɪŋ feɪld./",
+      "zh": "追蹤失敗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Resend the link.",
+      "phonetic": "/resend* ðə lɪŋk./",
+      "zh": "重寄連結。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The item is out.",
+      "phonetic": "/ðə ˈaɪtəm ɪz aʊt./",
+      "zh": "物品缺。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Backorder, wait.",
+      "phonetic": "/backorder*, weɪt./",
+      "zh": "缺貨等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The order split.",
+      "phonetic": "/ðə ˈɔrdər splɪt./",
+      "zh": "訂單拆。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two boxes, yes.",
+      "phonetic": "/tu ˈbɑksɪz, jɛs./",
+      "zh": "兩箱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The door, sign.",
+      "phonetic": "/ðə dɔr, saɪn./",
+      "zh": "門口留言。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Leave at step.",
+      "phonetic": "/liv æt stɛp./",
+      "zh": "放臺階。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The package paused.",
+      "phonetic": "/ðə ˈpækɪʤ pɔzd./",
+      "zh": "包裹停。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hub closed, night.",
+      "phonetic": "/həb kloʊzd, naɪt./",
+      "zh": "轉運站夜關。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app is live.",
+      "phonetic": "/ðə æp ɪz lɪv./",
+      "zh": "App 即時。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Refresh, please.",
+      "phonetic": "/rɪˈfrɛʃ, pliz./",
+      "zh": "刷新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The courier is late.",
+      "phonetic": "/ðə ˈkəriər ɪz leɪt./",
+      "zh": "快遞晚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Traffic, sorry.",
+      "phonetic": "/ˈtræfɪk, ˈsɑri./",
+      "zh": "塞車歉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The eta is Friday.",
+      "phonetic": "/ðə eta* ɪz ˈfraɪˌdeɪ./",
+      "zh": "預計到週五。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Before noon, yes.",
+      "phonetic": "/ˌbiˈfɔr nun, jɛs./",
+      "zh": "中午前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The delay is long.",
+      "phonetic": "/ðə dɪˈleɪ ɪz lɔŋ./",
+      "zh": "延誤久。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Weather, maybe.",
+      "phonetic": "/ˈwɛðər, ˈmeɪbi./",
+      "zh": "天氣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The map shows move.",
+      "phonetic": "/ðə mæp ʃoʊz muv./",
+      "zh": "地圖顯示移動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Near the hub.",
+      "phonetic": "/nɪr ðə həb./",
+      "zh": "近轉運站。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The status is shipped.",
+      "phonetic": "/ðə ˈstætəs ɪz ʃɪpt./",
+      "zh": "狀態已寄。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the way, yes.",
+      "phonetic": "/ɔn ðə weɪ, jɛs./",
+      "zh": "在途。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The code is emailed.",
+      "phonetic": "/ðə koʊd ɪz iˈmeɪld./",
+      "zh": "編碼寄郵箱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Check the inbox.",
+      "phonetic": "/ʧɛk ðə inbox*./",
+      "zh": "查收件。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is my order?",
+      "phonetic": "/wɛr ɪz maɪ ˈɔrdər?/",
+      "zh": "我的訂單呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What is the number?",
+      "phonetic": "/wət ɪz ðə ˈnəmbər?/",
+      "zh": "號碼？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is my order?",
+      "phonetic": "/wɛr ɪz maɪ ˈɔrdər?/",
+      "zh": "我的訂單呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What is the number?",
+      "phonetic": "/wət ɪz ðə ˈnəmbər?/",
+      "zh": "號碼？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The code is emailed.",
+      "phonetic": "/ðə koʊd ɪz iˈmeɪld./",
+      "zh": "編碼寄郵箱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Check the inbox.",
+      "phonetic": "/ʧɛk ðə inbox*./",
+      "zh": "查收件。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The status is shipped.",
+      "phonetic": "/ðə ˈstætəs ɪz ʃɪpt./",
+      "zh": "狀態已寄。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the way, yes.",
+      "phonetic": "/ɔn ðə weɪ, jɛs./",
+      "zh": "在途。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The map shows move.",
+      "phonetic": "/ðə mæp ʃoʊz muv./",
+      "zh": "地圖顯示移動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Near the hub.",
+      "phonetic": "/nɪr ðə həb./",
+      "zh": "近轉運站。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The delay is long.",
+      "phonetic": "/ðə dɪˈleɪ ɪz lɔŋ./",
+      "zh": "延誤久。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Weather, maybe.",
+      "phonetic": "/ˈwɛðər, ˈmeɪbi./",
+      "zh": "天氣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The eta is Friday.",
+      "phonetic": "/ðə eta* ɪz ˈfraɪˌdeɪ./",
+      "zh": "預計到週五。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Before noon, yes.",
+      "phonetic": "/ˌbiˈfɔr nun, jɛs./",
+      "zh": "中午前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The courier is late.",
+      "phonetic": "/ðə ˈkəriər ɪz leɪt./",
+      "zh": "快遞晚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Traffic, sorry.",
+      "phonetic": "/ˈtræfɪk, ˈsɑri./",
+      "zh": "塞車歉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app is live.",
+      "phonetic": "/ðə æp ɪz lɪv./",
+      "zh": "App 即時。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Refresh, please.",
+      "phonetic": "/rɪˈfrɛʃ, pliz./",
+      "zh": "刷新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The package paused.",
+      "phonetic": "/ðə ˈpækɪʤ pɔzd./",
+      "zh": "包裹停。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hub closed, night.",
+      "phonetic": "/həb kloʊzd, naɪt./",
+      "zh": "轉運站夜關。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The door, sign.",
+      "phonetic": "/ðə dɔr, saɪn./",
+      "zh": "門口留言。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Leave at step.",
+      "phonetic": "/liv æt stɛp./",
+      "zh": "放臺階。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The order split.",
+      "phonetic": "/ðə ˈɔrdər splɪt./",
+      "zh": "訂單拆。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two boxes, yes.",
+      "phonetic": "/tu ˈbɑksɪz, jɛs./",
+      "zh": "兩箱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The item is out.",
+      "phonetic": "/ðə ˈaɪtəm ɪz aʊt./",
+      "zh": "物品缺。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Backorder, wait.",
+      "phonetic": "/backorder*, weɪt./",
+      "zh": "缺貨等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tracking failed.",
+      "phonetic": "/ðə ˈtrækɪŋ feɪld./",
+      "zh": "追蹤失敗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Resend the link.",
+      "phonetic": "/resend* ðə lɪŋk./",
+      "zh": "重寄連結。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The number is wrong.",
+      "phonetic": "/ðə ˈnəmbər ɪz rɔŋ./",
+      "zh": "號碼錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Verify the mail.",
+      "phonetic": "/ˈvɛrəˌfaɪ ðə meɪl./",
+      "zh": "覈對郵件。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The delivery today?",
+      "phonetic": "/ðə dɪˈlɪvəri təˈdeɪ?/",
+      "zh": "今天到？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Before eight, yes.",
+      "phonetic": "/ˌbiˈfɔr eɪt, jɛs./",
+      "zh": "八點前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The proof is photo.",
+      "phonetic": "/ðə pruf ɪz ˈfoʊˌtoʊ./",
+      "zh": "證明是照片。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Dropped, signed.",
+      "phonetic": "/drɑpt, saɪnd./",
+      "zh": "送達簽收。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The customs held.",
+      "phonetic": "/ðə ˈkəstəmz hɛld./",
+      "zh": "海關扣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Docs needed, yes.",
+      "phonetic": "/dɑks ˈnidɪd, jɛs./",
+      "zh": "需文件。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The gift, hide.",
+      "phonetic": "/ðə gɪft, haɪd./",
+      "zh": "禮物隱藏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No receipt, please.",
+      "phonetic": "/noʊ rɪˈsit, pliz./",
+      "zh": "別放收據。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The order is big.",
+      "phonetic": "/ðə ˈɔrdər ɪz bɪg./",
+      "zh": "訂單大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two trips, maybe.",
+      "phonetic": "/tu trɪps, ˈmeɪbi./",
+      "zh": "可能兩趟。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The status stuck.",
+      "phonetic": "/ðə ˈstætəs stək./",
+      "zh": "狀態卡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Call the line.",
+      "phonetic": "/kɔl ðə laɪn./",
+      "zh": "打電話。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The refund if late.",
+      "phonetic": "/ðə ˈriˌfənd ɪf leɪt./",
+      "zh": "遲到退。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Policy allows, yes.",
+      "phonetic": "/ˈpɑləsi əˈlaʊz, jɛs./",
+      "zh": "政策許。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The box is light.",
+      "phonetic": "/ðə bɑks ɪz laɪt./",
+      "zh": "箱子輕。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One item, yes.",
+      "phonetic": "/wən ˈaɪtəm, jɛs./",
+      "zh": "一件。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The route is odd.",
+      "phonetic": "/ðə rut ɪz ɑd./",
+      "zh": "路線怪。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Reroute, normal.",
+      "phonetic": "/riˈrut, ˈnɔrməl./",
+      "zh": "改道正常。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The notify on.",
+      "phonetic": "/ðə ˈnoʊtəˌfaɪ ɔn./",
+      "zh": "通知開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ping at door.",
+      "phonetic": "/pɪŋ æt dɔr./",
+      "zh": "到門響。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The order found.",
+      "phonetic": "/ðə ˈɔrdər faʊnd./",
+      "zh": "訂單找到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Out for delivery.",
+      "phonetic": "/aʊt fər dɪˈlɪvəri./",
+      "zh": "配送中。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The eta slipped.",
+      "phonetic": "/ðə eta* slɪpt./",
+      "zh": "預計到延。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tomorrow, then.",
+      "phonetic": "/təˈmɑˌroʊ, ðɛn./",
+      "zh": "那明天。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The courier called.",
+      "phonetic": "/ðə ˈkəriər kɔld./",
+      "zh": "快遞打電話。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Meet at door.",
+      "phonetic": "/mit æt dɔr./",
+      "zh": "門口接。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The package scanned.",
+      "phonetic": "/ðə ˈpækɪʤ skænd./",
+      "zh": "包裹掃。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Final mile, yes.",
+      "phonetic": "/ˈfaɪnəl maɪl, jɛs./",
+      "zh": "最後一哩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The order arrived.",
+      "phonetic": "/ðə ˈɔrdər əraɪvd./",
+      "zh": "訂單到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sign, received.",
+      "phonetic": "/saɪn, rɪˈsivd./",
+      "zh": "簽收。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The track was clear.",
+      "phonetic": "/ðə træk wɑz klɪr./",
+      "zh": "追蹤清楚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All good, yes.",
+      "phonetic": "/ɔl gʊd, jɛs./",
+      "zh": "都好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wait is over.",
+      "phonetic": "/ðə weɪt ɪz ˈoʊvər./",
+      "zh": "等待結束。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Open it, enjoy.",
+      "phonetic": "/ˈoʊpən ɪt, ˌɛnˈʤɔɪ./",
+      "zh": "拆享受。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for tracking.",
+      "phonetic": "/θæŋks fər ˈtrækɪŋ./",
+      "zh": "謝謝查詢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Delivered, pal.",
+      "phonetic": "/dɪˈlɪvərd, pæl./",
+      "zh": "已送達。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for tracking.",
+      "phonetic": "/θæŋks fər ˈtrækɪŋ./",
+      "zh": "謝謝查詢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Delivered, pal.",
+      "phonetic": "/dɪˈlɪvərd, pæl./",
+      "zh": "已送達。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wait is over.",
+      "phonetic": "/ðə weɪt ɪz ˈoʊvər./",
+      "zh": "等待結束。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Open it, enjoy.",
+      "phonetic": "/ˈoʊpən ɪt, ˌɛnˈʤɔɪ./",
+      "zh": "拆享受。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The track was clear.",
+      "phonetic": "/ðə træk wɑz klɪr./",
+      "zh": "追蹤清楚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All good, yes.",
+      "phonetic": "/ɔl gʊd, jɛs./",
+      "zh": "都好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The order arrived.",
+      "phonetic": "/ðə ˈɔrdər əraɪvd./",
+      "zh": "訂單到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sign, received.",
+      "phonetic": "/saɪn, rɪˈsivd./",
+      "zh": "簽收。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The package scanned.",
+      "phonetic": "/ðə ˈpækɪʤ skænd./",
+      "zh": "包裹掃。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Final mile, yes.",
+      "phonetic": "/ˈfaɪnəl maɪl, jɛs./",
+      "zh": "最後一哩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The courier called.",
+      "phonetic": "/ðə ˈkəriər kɔld./",
+      "zh": "快遞打電話。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Meet at door.",
+      "phonetic": "/mit æt dɔr./",
+      "zh": "門口接。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The eta slipped.",
+      "phonetic": "/ðə eta* slɪpt./",
+      "zh": "預計到延。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tomorrow, then.",
+      "phonetic": "/təˈmɑˌroʊ, ðɛn./",
+      "zh": "那明天。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The order found.",
+      "phonetic": "/ðə ˈɔrdər faʊnd./",
+      "zh": "訂單找到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Out for delivery.",
+      "phonetic": "/aʊt fər dɪˈlɪvəri./",
+      "zh": "配送中。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The notify on.",
+      "phonetic": "/ðə ˈnoʊtəˌfaɪ ɔn./",
+      "zh": "通知開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ping at door.",
+      "phonetic": "/pɪŋ æt dɔr./",
+      "zh": "到門響。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The route is odd.",
+      "phonetic": "/ðə rut ɪz ɑd./",
+      "zh": "路線怪。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Reroute, normal.",
+      "phonetic": "/riˈrut, ˈnɔrməl./",
+      "zh": "改道正常。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The box is light.",
+      "phonetic": "/ðə bɑks ɪz laɪt./",
+      "zh": "箱子輕。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One item, yes.",
+      "phonetic": "/wən ˈaɪtəm, jɛs./",
+      "zh": "一件。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The refund if late.",
+      "phonetic": "/ðə ˈriˌfənd ɪf leɪt./",
+      "zh": "遲到退。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Policy allows, yes.",
+      "phonetic": "/ˈpɑləsi əˈlaʊz, jɛs./",
+      "zh": "政策許。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The status stuck.",
+      "phonetic": "/ðə ˈstætəs stək./",
+      "zh": "狀態卡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Call the line.",
+      "phonetic": "/kɔl ðə laɪn./",
+      "zh": "打電話。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The order is big.",
+      "phonetic": "/ðə ˈɔrdər ɪz bɪg./",
+      "zh": "訂單大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two trips, maybe.",
+      "phonetic": "/tu trɪps, ˈmeɪbi./",
+      "zh": "可能兩趟。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The gift, hide.",
+      "phonetic": "/ðə gɪft, haɪd./",
+      "zh": "禮物隱藏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No receipt, please.",
+      "phonetic": "/noʊ rɪˈsit, pliz./",
+      "zh": "別放收據。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The customs held.",
+      "phonetic": "/ðə ˈkəstəmz hɛld./",
+      "zh": "海關扣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Docs needed, yes.",
+      "phonetic": "/dɑks ˈnidɪd, jɛs./",
+      "zh": "需文件。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The proof is photo.",
+      "phonetic": "/ðə pruf ɪz ˈfoʊˌtoʊ./",
+      "zh": "證明是照片。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Dropped, signed.",
+      "phonetic": "/drɑpt, saɪnd./",
+      "zh": "送達簽收。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The delivery today?",
+      "phonetic": "/ðə dɪˈlɪvəri təˈdeɪ?/",
+      "zh": "今天到？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Before eight, yes.",
+      "phonetic": "/ˌbiˈfɔr eɪt, jɛs./",
+      "zh": "八點前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The number is wrong.",
+      "phonetic": "/ðə ˈnəmbər ɪz rɔŋ./",
+      "zh": "號碼錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Verify the mail.",
+      "phonetic": "/ˈvɛrəˌfaɪ ðə meɪl./",
+      "zh": "覈對郵件。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tracking failed.",
+      "phonetic": "/ðə ˈtrækɪŋ feɪld./",
+      "zh": "追蹤失敗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Resend the link.",
+      "phonetic": "/resend* ðə lɪŋk./",
+      "zh": "重寄連結。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The item is out.",
+      "phonetic": "/ðə ˈaɪtəm ɪz aʊt./",
+      "zh": "物品缺。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Backorder, wait.",
+      "phonetic": "/backorder*, weɪt./",
+      "zh": "缺貨等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The order split.",
+      "phonetic": "/ðə ˈɔrdər splɪt./",
+      "zh": "訂單拆。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two boxes, yes.",
+      "phonetic": "/tu ˈbɑksɪz, jɛs./",
+      "zh": "兩箱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The door, sign.",
+      "phonetic": "/ðə dɔr, saɪn./",
+      "zh": "門口留言。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Leave at step.",
+      "phonetic": "/liv æt stɛp./",
+      "zh": "放臺階。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The package paused.",
+      "phonetic": "/ðə ˈpækɪʤ pɔzd./",
+      "zh": "包裹停。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hub closed, night.",
+      "phonetic": "/həb kloʊzd, naɪt./",
+      "zh": "轉運站夜關。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app is live.",
+      "phonetic": "/ðə æp ɪz lɪv./",
+      "zh": "App 即時。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Refresh, please.",
+      "phonetic": "/rɪˈfrɛʃ, pliz./",
+      "zh": "刷新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The courier is late.",
+      "phonetic": "/ðə ˈkəriər ɪz leɪt./",
+      "zh": "快遞晚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Traffic, sorry.",
+      "phonetic": "/ˈtræfɪk, ˈsɑri./",
+      "zh": "塞車歉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The eta is Friday.",
+      "phonetic": "/ðə eta* ɪz ˈfraɪˌdeɪ./",
+      "zh": "預計到週五。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Before noon, yes.",
+      "phonetic": "/ˌbiˈfɔr nun, jɛs./",
+      "zh": "中午前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The delay is long.",
+      "phonetic": "/ðə dɪˈleɪ ɪz lɔŋ./",
+      "zh": "延誤久。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Weather, maybe.",
+      "phonetic": "/ˈwɛðər, ˈmeɪbi./",
+      "zh": "天氣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The map shows move.",
+      "phonetic": "/ðə mæp ʃoʊz muv./",
+      "zh": "地圖顯示移動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Near the hub.",
+      "phonetic": "/nɪr ðə həb./",
+      "zh": "近轉運站。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The status is shipped.",
+      "phonetic": "/ðə ˈstætəs ɪz ʃɪpt./",
+      "zh": "狀態已寄。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the way, yes.",
+      "phonetic": "/ɔn ðə weɪ, jɛs./",
+      "zh": "在途。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The code is emailed.",
+      "phonetic": "/ðə koʊd ɪz iˈmeɪld./",
+      "zh": "編碼寄郵箱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Check the inbox.",
+      "phonetic": "/ʧɛk ðə inbox*./",
+      "zh": "查收件。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is my order?",
+      "phonetic": "/wɛr ɪz maɪ ˈɔrdər?/",
+      "zh": "我的訂單呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What is the number?",
+      "phonetic": "/wət ɪz ðə ˈnəmbər?/",
+      "zh": "號碼？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is my order?",
+      "phonetic": "/wɛr ɪz maɪ ˈɔrdər?/",
+      "zh": "我的訂單呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What is the number?",
+      "phonetic": "/wət ɪz ðə ˈnəmbər?/",
+      "zh": "號碼？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The code is emailed.",
+      "phonetic": "/ðə koʊd ɪz iˈmeɪld./",
+      "zh": "編碼寄郵箱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Check the inbox.",
+      "phonetic": "/ʧɛk ðə inbox*./",
+      "zh": "查收件。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The status is shipped.",
+      "phonetic": "/ðə ˈstætəs ɪz ʃɪpt./",
+      "zh": "狀態已寄。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the way, yes.",
+      "phonetic": "/ɔn ðə weɪ, jɛs./",
+      "zh": "在途。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The map shows move.",
+      "phonetic": "/ðə mæp ʃoʊz muv./",
+      "zh": "地圖顯示移動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Near the hub.",
+      "phonetic": "/nɪr ðə həb./",
+      "zh": "近轉運站。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The delay is long.",
+      "phonetic": "/ðə dɪˈleɪ ɪz lɔŋ./",
+      "zh": "延誤久。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Weather, maybe.",
+      "phonetic": "/ˈwɛðər, ˈmeɪbi./",
+      "zh": "天氣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The eta is Friday.",
+      "phonetic": "/ðə eta* ɪz ˈfraɪˌdeɪ./",
+      "zh": "預計到週五。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Before noon, yes.",
+      "phonetic": "/ˌbiˈfɔr nun, jɛs./",
+      "zh": "中午前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The courier is late.",
+      "phonetic": "/ðə ˈkəriər ɪz leɪt./",
+      "zh": "快遞晚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Traffic, sorry.",
+      "phonetic": "/ˈtræfɪk, ˈsɑri./",
+      "zh": "塞車歉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app is live.",
+      "phonetic": "/ðə æp ɪz lɪv./",
+      "zh": "App 即時。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Refresh, please.",
+      "phonetic": "/rɪˈfrɛʃ, pliz./",
+      "zh": "刷新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The package paused.",
+      "phonetic": "/ðə ˈpækɪʤ pɔzd./",
+      "zh": "包裹停。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hub closed, night.",
+      "phonetic": "/həb kloʊzd, naɪt./",
+      "zh": "轉運站夜關。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The door, sign.",
+      "phonetic": "/ðə dɔr, saɪn./",
+      "zh": "門口留言。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Leave at step.",
+      "phonetic": "/liv æt stɛp./",
+      "zh": "放臺階。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The order split.",
+      "phonetic": "/ðə ˈɔrdər splɪt./",
+      "zh": "訂單拆。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two boxes, yes.",
+      "phonetic": "/tu ˈbɑksɪz, jɛs./",
+      "zh": "兩箱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The item is out.",
+      "phonetic": "/ðə ˈaɪtəm ɪz aʊt./",
+      "zh": "物品缺。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Backorder, wait.",
+      "phonetic": "/backorder*, weɪt./",
+      "zh": "缺貨等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tracking failed.",
+      "phonetic": "/ðə ˈtrækɪŋ feɪld./",
+      "zh": "追蹤失敗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Resend the link.",
+      "phonetic": "/resend* ðə lɪŋk./",
+      "zh": "重寄連結。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The number is wrong.",
+      "phonetic": "/ðə ˈnəmbər ɪz rɔŋ./",
+      "zh": "號碼錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Verify the mail.",
+      "phonetic": "/ˈvɛrəˌfaɪ ðə meɪl./",
+      "zh": "覈對郵件。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The delivery today?",
+      "phonetic": "/ðə dɪˈlɪvəri təˈdeɪ?/",
+      "zh": "今天到？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Before eight, yes.",
+      "phonetic": "/ˌbiˈfɔr eɪt, jɛs./",
+      "zh": "八點前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The proof is photo.",
+      "phonetic": "/ðə pruf ɪz ˈfoʊˌtoʊ./",
+      "zh": "證明是照片。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Dropped, signed.",
+      "phonetic": "/drɑpt, saɪnd./",
+      "zh": "送達簽收。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The customs held.",
+      "phonetic": "/ðə ˈkəstəmz hɛld./",
+      "zh": "海關扣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Docs needed, yes.",
+      "phonetic": "/dɑks ˈnidɪd, jɛs./",
+      "zh": "需文件。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The gift, hide.",
+      "phonetic": "/ðə gɪft, haɪd./",
+      "zh": "禮物隱藏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No receipt, please.",
+      "phonetic": "/noʊ rɪˈsit, pliz./",
+      "zh": "別放收據。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The order is big.",
+      "phonetic": "/ðə ˈɔrdər ɪz bɪg./",
+      "zh": "訂單大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two trips, maybe.",
+      "phonetic": "/tu trɪps, ˈmeɪbi./",
+      "zh": "可能兩趟。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The status stuck.",
+      "phonetic": "/ðə ˈstætəs stək./",
+      "zh": "狀態卡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Call the line.",
+      "phonetic": "/kɔl ðə laɪn./",
+      "zh": "打電話。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The refund if late.",
+      "phonetic": "/ðə ˈriˌfənd ɪf leɪt./",
+      "zh": "遲到退。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Policy allows, yes.",
+      "phonetic": "/ˈpɑləsi əˈlaʊz, jɛs./",
+      "zh": "政策許。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The box is light.",
+      "phonetic": "/ðə bɑks ɪz laɪt./",
+      "zh": "箱子輕。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One item, yes.",
+      "phonetic": "/wən ˈaɪtəm, jɛs./",
+      "zh": "一件。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The route is odd.",
+      "phonetic": "/ðə rut ɪz ɑd./",
+      "zh": "路線怪。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Reroute, normal.",
+      "phonetic": "/riˈrut, ˈnɔrməl./",
+      "zh": "改道正常。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The notify on.",
+      "phonetic": "/ðə ˈnoʊtəˌfaɪ ɔn./",
+      "zh": "通知開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ping at door.",
+      "phonetic": "/pɪŋ æt dɔr./",
+      "zh": "到門響。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The order found.",
+      "phonetic": "/ðə ˈɔrdər faʊnd./",
+      "zh": "訂單找到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Out for delivery.",
+      "phonetic": "/aʊt fər dɪˈlɪvəri./",
+      "zh": "配送中。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The eta slipped.",
+      "phonetic": "/ðə eta* slɪpt./",
+      "zh": "預計到延。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tomorrow, then.",
+      "phonetic": "/təˈmɑˌroʊ, ðɛn./",
+      "zh": "那明天。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The courier called.",
+      "phonetic": "/ðə ˈkəriər kɔld./",
+      "zh": "快遞打電話。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Meet at door.",
+      "phonetic": "/mit æt dɔr./",
+      "zh": "門口接。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The package scanned.",
+      "phonetic": "/ðə ˈpækɪʤ skænd./",
+      "zh": "包裹掃。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Final mile, yes.",
+      "phonetic": "/ˈfaɪnəl maɪl, jɛs./",
+      "zh": "最後一哩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The order arrived.",
+      "phonetic": "/ðə ˈɔrdər əraɪvd./",
+      "zh": "訂單到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sign, received.",
+      "phonetic": "/saɪn, rɪˈsivd./",
+      "zh": "簽收。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The track was clear.",
+      "phonetic": "/ðə træk wɑz klɪr./",
+      "zh": "追蹤清楚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All good, yes.",
+      "phonetic": "/ɔl gʊd, jɛs./",
+      "zh": "都好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wait is over.",
+      "phonetic": "/ðə weɪt ɪz ˈoʊvər./",
+      "zh": "等待結束。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Open it, enjoy.",
+      "phonetic": "/ˈoʊpən ɪt, ˌɛnˈʤɔɪ./",
+      "zh": "拆享受。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for tracking.",
+      "phonetic": "/θæŋks fər ˈtrækɪŋ./",
+      "zh": "謝謝查詢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Delivered, pal.",
+      "phonetic": "/dɪˈlɪvərd, pæl./",
+      "zh": "已送達。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for tracking.",
+      "phonetic": "/θæŋks fər ˈtrækɪŋ./",
+      "zh": "謝謝查詢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Delivered, pal.",
+      "phonetic": "/dɪˈlɪvərd, pæl./",
+      "zh": "已送達。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wait is over.",
+      "phonetic": "/ðə weɪt ɪz ˈoʊvər./",
+      "zh": "等待結束。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Open it, enjoy.",
+      "phonetic": "/ˈoʊpən ɪt, ˌɛnˈʤɔɪ./",
+      "zh": "拆享受。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The track was clear.",
+      "phonetic": "/ðə træk wɑz klɪr./",
+      "zh": "追蹤清楚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All good, yes.",
+      "phonetic": "/ɔl gʊd, jɛs./",
+      "zh": "都好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The order arrived.",
+      "phonetic": "/ðə ˈɔrdər əraɪvd./",
+      "zh": "訂單到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sign, received.",
+      "phonetic": "/saɪn, rɪˈsivd./",
+      "zh": "簽收。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The package scanned.",
+      "phonetic": "/ðə ˈpækɪʤ skænd./",
+      "zh": "包裹掃。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Final mile, yes.",
+      "phonetic": "/ˈfaɪnəl maɪl, jɛs./",
+      "zh": "最後一哩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The courier called.",
+      "phonetic": "/ðə ˈkəriər kɔld./",
+      "zh": "快遞打電話。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Meet at door.",
+      "phonetic": "/mit æt dɔr./",
+      "zh": "門口接。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The eta slipped.",
+      "phonetic": "/ðə eta* slɪpt./",
+      "zh": "預計到延。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tomorrow, then.",
+      "phonetic": "/təˈmɑˌroʊ, ðɛn./",
+      "zh": "那明天。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The order found.",
+      "phonetic": "/ðə ˈɔrdər faʊnd./",
+      "zh": "訂單找到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Out for delivery.",
+      "phonetic": "/aʊt fər dɪˈlɪvəri./",
+      "zh": "配送中。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The notify on.",
+      "phonetic": "/ðə ˈnoʊtəˌfaɪ ɔn./",
+      "zh": "通知開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ping at door.",
+      "phonetic": "/pɪŋ æt dɔr./",
+      "zh": "到門響。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The route is odd.",
+      "phonetic": "/ðə rut ɪz ɑd./",
+      "zh": "路線怪。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Reroute, normal.",
+      "phonetic": "/riˈrut, ˈnɔrməl./",
+      "zh": "改道正常。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The box is light.",
+      "phonetic": "/ðə bɑks ɪz laɪt./",
+      "zh": "箱子輕。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One item, yes.",
+      "phonetic": "/wən ˈaɪtəm, jɛs./",
+      "zh": "一件。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The refund if late.",
+      "phonetic": "/ðə ˈriˌfənd ɪf leɪt./",
+      "zh": "遲到退。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Policy allows, yes.",
+      "phonetic": "/ˈpɑləsi əˈlaʊz, jɛs./",
+      "zh": "政策許。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The status stuck.",
+      "phonetic": "/ðə ˈstætəs stək./",
+      "zh": "狀態卡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Call the line.",
+      "phonetic": "/kɔl ðə laɪn./",
+      "zh": "打電話。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The order is big.",
+      "phonetic": "/ðə ˈɔrdər ɪz bɪg./",
+      "zh": "訂單大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two trips, maybe.",
+      "phonetic": "/tu trɪps, ˈmeɪbi./",
+      "zh": "可能兩趟。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The gift, hide.",
+      "phonetic": "/ðə gɪft, haɪd./",
+      "zh": "禮物隱藏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No receipt, please.",
+      "phonetic": "/noʊ rɪˈsit, pliz./",
+      "zh": "別放收據。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The customs held.",
+      "phonetic": "/ðə ˈkəstəmz hɛld./",
+      "zh": "海關扣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Docs needed, yes.",
+      "phonetic": "/dɑks ˈnidɪd, jɛs./",
+      "zh": "需文件。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The proof is photo.",
+      "phonetic": "/ðə pruf ɪz ˈfoʊˌtoʊ./",
+      "zh": "證明是照片。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Dropped, signed.",
+      "phonetic": "/drɑpt, saɪnd./",
+      "zh": "送達簽收。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The delivery today?",
+      "phonetic": "/ðə dɪˈlɪvəri təˈdeɪ?/",
+      "zh": "今天到？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Before eight, yes.",
+      "phonetic": "/ˌbiˈfɔr eɪt, jɛs./",
+      "zh": "八點前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The number is wrong.",
+      "phonetic": "/ðə ˈnəmbər ɪz rɔŋ./",
+      "zh": "號碼錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Verify the mail.",
+      "phonetic": "/ˈvɛrəˌfaɪ ðə meɪl./",
+      "zh": "覈對郵件。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tracking failed.",
+      "phonetic": "/ðə ˈtrækɪŋ feɪld./",
+      "zh": "追蹤失敗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Resend the link.",
+      "phonetic": "/resend* ðə lɪŋk./",
+      "zh": "重寄連結。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The item is out.",
+      "phonetic": "/ðə ˈaɪtəm ɪz aʊt./",
+      "zh": "物品缺。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Backorder, wait.",
+      "phonetic": "/backorder*, weɪt./",
+      "zh": "缺貨等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The order split.",
+      "phonetic": "/ðə ˈɔrdər splɪt./",
+      "zh": "訂單拆。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two boxes, yes.",
+      "phonetic": "/tu ˈbɑksɪz, jɛs./",
+      "zh": "兩箱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The door, sign.",
+      "phonetic": "/ðə dɔr, saɪn./",
+      "zh": "門口留言。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Leave at step.",
+      "phonetic": "/liv æt stɛp./",
+      "zh": "放臺階。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The package paused.",
+      "phonetic": "/ðə ˈpækɪʤ pɔzd./",
+      "zh": "包裹停。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hub closed, night.",
+      "phonetic": "/həb kloʊzd, naɪt./",
+      "zh": "轉運站夜關。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app is live.",
+      "phonetic": "/ðə æp ɪz lɪv./",
+      "zh": "App 即時。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Refresh, please.",
+      "phonetic": "/rɪˈfrɛʃ, pliz./",
+      "zh": "刷新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The courier is late.",
+      "phonetic": "/ðə ˈkəriər ɪz leɪt./",
+      "zh": "快遞晚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Traffic, sorry.",
+      "phonetic": "/ˈtræfɪk, ˈsɑri./",
+      "zh": "塞車歉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The eta is Friday.",
+      "phonetic": "/ðə eta* ɪz ˈfraɪˌdeɪ./",
+      "zh": "預計到週五。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Before noon, yes.",
+      "phonetic": "/ˌbiˈfɔr nun, jɛs./",
+      "zh": "中午前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The delay is long.",
+      "phonetic": "/ðə dɪˈleɪ ɪz lɔŋ./",
+      "zh": "延誤久。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Weather, maybe.",
+      "phonetic": "/ˈwɛðər, ˈmeɪbi./",
+      "zh": "天氣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The map shows move.",
+      "phonetic": "/ðə mæp ʃoʊz muv./",
+      "zh": "地圖顯示移動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Near the hub.",
+      "phonetic": "/nɪr ðə həb./",
+      "zh": "近轉運站。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The status is shipped.",
+      "phonetic": "/ðə ˈstætəs ɪz ʃɪpt./",
+      "zh": "狀態已寄。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the way, yes.",
+      "phonetic": "/ɔn ðə weɪ, jɛs./",
+      "zh": "在途。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The code is emailed.",
+      "phonetic": "/ðə koʊd ɪz iˈmeɪld./",
+      "zh": "編碼寄郵箱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Check the inbox.",
+      "phonetic": "/ʧɛk ðə inbox*./",
+      "zh": "查收件。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is my order?",
+      "phonetic": "/wɛr ɪz maɪ ˈɔrdər?/",
+      "zh": "我的訂單呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What is the number?",
+      "phonetic": "/wət ɪz ðə ˈnəmbər?/",
+      "zh": "號碼？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is my order?",
+      "phonetic": "/wɛr ɪz maɪ ˈɔrdər?/",
+      "zh": "我的訂單呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What is the number?",
+      "phonetic": "/wət ɪz ðə ˈnəmbər?/",
+      "zh": "號碼？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The code is emailed.",
+      "phonetic": "/ðə koʊd ɪz iˈmeɪld./",
+      "zh": "編碼寄郵箱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Check the inbox.",
+      "phonetic": "/ʧɛk ðə inbox*./",
+      "zh": "查收件。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The status is shipped.",
+      "phonetic": "/ðə ˈstætəs ɪz ʃɪpt./",
+      "zh": "狀態已寄。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the way, yes.",
+      "phonetic": "/ɔn ðə weɪ, jɛs./",
+      "zh": "在途。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The map shows move.",
+      "phonetic": "/ðə mæp ʃoʊz muv./",
+      "zh": "地圖顯示移動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Near the hub.",
+      "phonetic": "/nɪr ðə həb./",
+      "zh": "近轉運站。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The delay is long.",
+      "phonetic": "/ðə dɪˈleɪ ɪz lɔŋ./",
+      "zh": "延誤久。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Weather, maybe.",
+      "phonetic": "/ˈwɛðər, ˈmeɪbi./",
+      "zh": "天氣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The eta is Friday.",
+      "phonetic": "/ðə eta* ɪz ˈfraɪˌdeɪ./",
+      "zh": "預計到週五。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Before noon, yes.",
+      "phonetic": "/ˌbiˈfɔr nun, jɛs./",
+      "zh": "中午前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The courier is late.",
+      "phonetic": "/ðə ˈkəriər ɪz leɪt./",
+      "zh": "快遞晚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Traffic, sorry.",
+      "phonetic": "/ˈtræfɪk, ˈsɑri./",
+      "zh": "塞車歉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app is live.",
+      "phonetic": "/ðə æp ɪz lɪv./",
+      "zh": "App 即時。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Refresh, please.",
+      "phonetic": "/rɪˈfrɛʃ, pliz./",
+      "zh": "刷新。"
+    }
+  ]
+}

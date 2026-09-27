@@ -1,0 +1,2458 @@
+{
+  "title": "Everyday Phrases — At the Aquarium",
+  "title_zh": "水族館",
+  "scene_zh": "水族館 · 情境對話",
+  "title_quote": "Are we going to the aquarium today?",
+  "cefr": "A1",
+  "youtube_title": "【睡前英文聽力】🐠 實用水族館必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A1 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — At the Aquarium",
+  "youtube_description": "睡著學英文！這部影片收錄實用水族館情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫），從查票價、停車、排門票，到海底隧道看鯊魚水母、觸摸池問海星、看餵食秀、紀念品店和午餐，不用背，睡前聽就會。重複播放，讓英文自然進入你的大腦。👍 想學更多生活場景，請留言告訴我！別忘了訂閱+按讚。 #英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical At the Aquarium phrase pairs (each pair: male normal speed → female slow speed → combined dialogue), from ticket prices, parking and the entry line, to the underwater tunnel, the touch pool, the dolphin feeding show, the gift shop and lunch. No memorization needed—just listen before bed and absorb naturally. If you want more real-life scenarios, leave a comment! Subscribe and like!",
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "At the Aquarium",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "At the Aquarium",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Leisure",
+  "youtube_tags": [
+    "英文聽力",
+    "睡前英文",
+    "水族館英文",
+    "aquarium English",
+    "English listening",
+    "Sleep learning",
+    "A1 English",
+    "常用英文短語",
+    "零基礎英文",
+    "慢速英文",
+    "英文口語",
+    "Learn English",
+    "English for daily life",
+    "ESL",
+    "English conversation",
+    "聽英語"
+  ],
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "Are we going to the aquarium today?",
+      "phonetic": "/ər wi ˈɡoʊɪŋ tə ði æˈkwɛriəm təˈdeɪ?/",
+      "zh": "我們今天要去水族館嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the kids are so excited.",
+      "phonetic": "/jɛs, ðə kɪdz ər soʊ ɪkˈsaɪtɪd./",
+      "zh": "對，孩子們興奮極了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let me check the ticket prices online.",
+      "phonetic": "/lɛt mi tʃɛk ðə ˈtɪkɪt ˈpraɪsɪz ˈɑnˌlaɪn./",
+      "zh": "我來線上查一下票價。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "How much is one adult ticket?",
+      "phonetic": "/haʊ mʌtʃ ɪz wʌn əˈdʌlt ˈtɪkɪt?/",
+      "zh": "一張成人票多少錢？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Adults pay twenty dollars each.",
+      "phonetic": "/əˈdʌlts peɪ ˈtwɛnti ˈdɑlərz iʧ./",
+      "zh": "成人一張二十塊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And child tickets are cheaper.",
+      "phonetic": "/ænd tʃaɪld ˈtɪkɪts ər ˈtʃipər./",
+      "zh": "兒童票比較便宜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Kids under three go in free.",
+      "phonetic": "/kɪdz ˈʌndər θri goʊ ɪn fri./",
+      "zh": "三歲以下免費入場。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great, our little one is two.",
+      "phonetic": "/ɡreɪt, ˈɑʊər ˈlɪtəl wʌn ɪz tu./",
+      "zh": "太好了，我們家小的才兩歲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should we buy tickets right now?",
+      "phonetic": "/ʃʊd wi baɪ ˈtɪkɪts raɪt naʊ?/",
+      "zh": "要現在就買票嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the line gets long later.",
+      "phonetic": "/jɛs, ðə laɪn ɡɛts lɔŋ ˈleɪtər./",
+      "zh": "好，待一會兒隊伍會很長。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I can just pay from my phone.",
+      "phonetic": "/aɪ kæn dʒʌst peɪ frʌm maɪ foʊn./",
+      "zh": "我直接用手機付就好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, that saves us time.",
+      "phonetic": "/ɡʊd, ðæt seɪvz ʌs taɪm./",
+      "zh": "很好，那樣省時間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "There is an annual pass option.",
+      "phonetic": "/ðɛr ɪz ən ˈænjuəl pæs ˈɑpʃən./",
+      "zh": "還有年卡這個選項。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Is the yearly card worth it?",
+      "phonetic": "/ɪz ðə ˈjɪrli kɑrd wɜrθ ɪt?/",
+      "zh": "辦年卡划算嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Two trips make it cheaper.",
+      "phonetic": "/tu trɪps meɪk ɪt ˈtʃipər./",
+      "zh": "去兩次就比較划算。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can come back in summer.",
+      "phonetic": "/wi kæn kʌm bæk ɪn ˈsʌmər./",
+      "zh": "我們夏天還可以再來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then let us get three passes.",
+      "phonetic": "/ðɛn lɛt ʌs ɡɛt θri ˈpæsɪz./",
+      "zh": "那就買三張年卡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Do passes include the parking lot?",
+      "phonetic": "/du ˈpæsɪz ɪnˈklud ðə ˈpɑrkɪŋ lɑt?/",
+      "zh": "年卡包含停車場嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "No, parking costs five more.",
+      "phonetic": "/noʊ, ˈpɑrkɪŋ kɔsts faɪv mɔr./",
+      "zh": "不含，停車要再加五塊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can park on the side street.",
+      "phonetic": "/wi kæn pɑrk ɑn ðə saɪd strit./",
+      "zh": "我們可以停在旁邊的街邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the main lot fill by ten?",
+      "phonetic": "/dʌz ðə meɪn lɑt fɪl baɪ tɛn?/",
+      "zh": "停車場十點就會滿嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Usually it fills up fast.",
+      "phonetic": "/ˈjuʒuəli ɪt fɪlz ʌp fæst./",
+      "zh": "通常很快就沒位子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So we leave home at nine.",
+      "phonetic": "/soʊ wi liv hoʊm æt naɪn./",
+      "zh": "所以我們九點出門。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will set my phone for eight.",
+      "phonetic": "/aɪ wɪl sɛt maɪ foʊn fər eɪt./",
+      "zh": "我把手機鬧鐘設在八點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What time does the place open?",
+      "phonetic": "/wɑt taɪm dʌz ðə pleɪs ˈoʊpən?/",
+      "zh": "那個地方幾點開門？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nine thirty on weekends.",
+      "phonetic": "/naɪn ˈθɜrti ɑn ˈwikˌɛndz./",
+      "zh": "週末九點半。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Any shows in the morning?",
+      "phonetic": "/ˈɛni ʃoʊz ɪn ðə ˈmɔrnɪŋ?/",
+      "zh": "上午有表演嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The feeding show starts at eleven.",
+      "phonetic": "/ðə ˈfidɪŋ ʃoʊ stɑrts æt ɪˈlɛvən./",
+      "zh": "餵食秀十一點開始。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which animals eat then?",
+      "phonetic": "/wɪtʃ ˈænɪməlz it ðɛn?/",
+      "zh": "那個時段餵哪些動物？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The seals eat first.",
+      "phonetic": "/ðə silz it fɜrst./",
+      "zh": "海豹會先開飯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we watch that one?",
+      "phonetic": "/kæn wi wɑtʃ ðæt wʌn?/",
+      "zh": "那場我們可以看嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, we must be early.",
+      "phonetic": "/jɛs, wi mʌst bi ˈɜrli./",
+      "zh": "可以，不過要早點到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where do I find the schedule?",
+      "phonetic": "/wɛr du aɪ faɪnd ðə ˈskɛdʒul?/",
+      "zh": "我在哪裡找時間表？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is posted by the big doors.",
+      "phonetic": "/ɪt ɪz ˈpoʊstɪd baɪ ðə bɪɡ dɔrz./",
+      "zh": "就貼在大門旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let me snap that sign.",
+      "phonetic": "/lɛt mi snæp ðæt saɪn./",
+      "zh": "我來把牌子拍下來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Smart, then we miss nothing.",
+      "phonetic": "/smɑrt, ðɛn wi mɪs ˈnʌθɪŋ./",
+      "zh": "聰明，這樣就不會錯過。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do we need a stroller today?",
+      "phonetic": "/du wi nid ə ˈstroʊlər təˈdeɪ?/",
+      "zh": "今天要帶嬰兒車嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, our girl walks slowly.",
+      "phonetic": "/jɛs, ɑʊər ɡɜrl wɔks ˈsloʊli./",
+      "zh": "要，我們女兒走得很慢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will fold it into the car.",
+      "phonetic": "/aɪ wɪl foʊld ɪt ˈɪntu ðə kɑr./",
+      "zh": "我把它摺好放進車裡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And bring the small backpack.",
+      "phonetic": "/ænd brɪŋ ðə smɔl ˈbækˌpæk./",
+      "zh": "也記得帶那個小背包。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What should we pack inside?",
+      "phonetic": "/wɑt ʃʊd wi pæk ɪnˈsaɪd?/",
+      "zh": "背包裡要裝什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two water bottles and some crackers.",
+      "phonetic": "/tu ˈwɔtər ˈbɑtəlz ənd sʌm ˈkrækərz./",
+      "zh": "兩瓶水和幾片梳打餅。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Snacks are fine in the lobby.",
+      "phonetic": "/snæks ər faɪn ɪn ðə ˈlɑbi./",
+      "zh": "大廳裡可以吃點心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "But no food near the tanks.",
+      "phonetic": "/bʌt noʊ fud nɪr ðə tæŋks./",
+      "zh": "但水箱旁邊不能吃。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Okay, snacks only in the lobby.",
+      "phonetic": "/oʊˈkeɪ, snæks ˈoʊnli ɪn ðə ˈlɑbi./",
+      "zh": "好，點心只在大廳吃。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And one juice box for each.",
+      "phonetic": "/ænd wʌn dʒus bɑks fər iʧ./",
+      "zh": "還有每人一盒果汁。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the aquarium cold inside?",
+      "phonetic": "/ɪz ði æˈkwɛriəm koʊld ɪnˈsaɪd?/",
+      "zh": "水族館裡面會冷嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It feels cool, bring a sweater.",
+      "phonetic": "/ɪt filz kul, brɪŋ ə ˈswɛtər./",
+      "zh": "有點涼，帶件外套。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should the kids wear warm shoes?",
+      "phonetic": "/ʃʊd ðə kɪdz wɛr wɔrm ʃuz?/",
+      "zh": "孩子們要穿保暖的鞋嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just comfy walking shoes.",
+      "phonetic": "/dʒʌst ˈkʌmfi ˈwɔkɪŋ ʃuz./",
+      "zh": "穿好走的鞋就行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do we need to print tickets?",
+      "phonetic": "/du wi nid tə prɪnt ˈtɪkɪts?/",
+      "zh": "票要印出來嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, we show them on screen.",
+      "phonetic": "/noʊ, wi ʃoʊ ðɛm ɑn skrin./",
+      "zh": "不用，用螢幕給他們看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is the family entrance?",
+      "phonetic": "/wɛr ɪz ðə ˈfæməli ˈɛntrəns?/",
+      "zh": "家庭入口在哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "By the big blue sign.",
+      "phonetic": "/baɪ ðə bɪɡ blu saɪn./",
+      "zh": "在那個藍色大牌子旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The line is already long.",
+      "phonetic": "/ðə laɪn ɪz ɔlˈrɛdi lɔŋ./",
+      "zh": "隊伍已經排好長了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just a few more people.",
+      "phonetic": "/dʒʌst ə fju mɔr ˈpipəl./",
+      "zh": "就只剩幾個人了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hold my hand in the crowd.",
+      "phonetic": "/hoʊld maɪ hænd ɪn ðə kraʊd./",
+      "zh": "人多的時候牽好我的手。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I told them to stay close.",
+      "phonetic": "/aɪ toʊld ðəm tə steɪ kloʊs./",
+      "zh": "我跟他們說過要待在旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Excuse me, where does the line start?",
+      "phonetic": "/ɪkˈskjuz mi, wɛr dʌz ðə laɪn stɑrt?/",
+      "zh": "請問隊伍從哪裡排起？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It starts right at that pole.",
+      "phonetic": "/ɪt stɑrts raɪt æt ðæt poʊl./",
+      "zh": "從那根柱子那裡排起。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How long is the wait here?",
+      "phonetic": "/haʊ lɔŋ ɪz ðə weɪt hɪr?/",
+      "zh": "在這裡要等多久？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "About fifteen minutes, maybe.",
+      "phonetic": "/əˈbaʊt fɪfˈtin ˈmɪnəts, ˈmeɪbi./",
+      "zh": "大概十五分鐘吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That is not too bad.",
+      "phonetic": "/ðæt ɪz nɑt tu bæd./",
+      "zh": "那還不算太糟。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The kids can look outside.",
+      "phonetic": "/ðə kɪdz kæn lʊk ˌaʊtˈsaɪd./",
+      "zh": "孩子們可以先看看外面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "There is a model ship there.",
+      "phonetic": "/ðɛr ɪz ə ˈmɑdəl ʃɪp ðɛr./",
+      "zh": "那裡有一艘模型船。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The boy loves those big sails.",
+      "phonetic": "/ðə bɔɪ lʌvz ðoz bɪɡ seɪlz./",
+      "zh": "兒子最喜歡那些大帆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "They are ready for our tickets.",
+      "phonetic": "/ðeɪ ər ˈrɛdi fər ˈɑʊər ˈtɪkɪts./",
+      "zh": "工作人員準備查票了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here is my phone with the code.",
+      "phonetic": "/hɪr ɪz maɪ foʊn wɪð ðə koʊd./",
+      "zh": "這是我的手機，上面有驗證碼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We are inside at last.",
+      "phonetic": "/wi ər ɪnˈsaɪd æt læst./",
+      "zh": "我們終於進來了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Look, the hall is so blue.",
+      "phonetic": "/lʊk, ðə hɔl ɪz soʊ blu./",
+      "zh": "看，整個大廳藍藍的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where should we go first?",
+      "phonetic": "/wɛr ʃʊd wi goʊ fɜrst?/",
+      "zh": "我們先去哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The map says left is best.",
+      "phonetic": "/ðə mæp sɛz lɛft ɪz bɛst./",
+      "zh": "地圖上說左邊最值得看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is there a bathroom nearby?",
+      "phonetic": "/ɪz ðɛr ə ˈbæθˌrum ˈnɪrˌbaɪ?/",
+      "zh": "附近有洗手間嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, past the little shop.",
+      "phonetic": "/jɛs, pæst ðə ˈlɪtəl ʃɑp./",
+      "zh": "有，經過那間小店就是。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let us go after this one.",
+      "phonetic": "/lɛt ʌs goʊ ˈæftər ðɪs wʌn./",
+      "zh": "這區看完我們再去。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Okay, but tell me early.",
+      "phonetic": "/oʊˈkeɪ, bʌt tɛl mi ˈɜrli./",
+      "zh": "好，要早一點跟我說。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My phone battery is low.",
+      "phonetic": "/maɪ foʊn ˈbætəri ɪz loʊ./",
+      "zh": "我手機快沒電了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I have a small power bank.",
+      "phonetic": "/aɪ hæv ə smɔl ˈpaʊər bæŋk./",
+      "zh": "我帶了行動電源。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we rent an audio guide?",
+      "phonetic": "/kæn wi rɛnt ə ˈɔˌdioʊ ɡaɪd?/",
+      "zh": "可以租語音導覽嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The desk lends them for free.",
+      "phonetic": "/ðə dɛsk lɛndz ðəm fər fri./",
+      "zh": "服務台免費出借。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It is bright in here.",
+      "phonetic": "/ɪt ɪz braɪt ɪn hɪr./",
+      "zh": "這裡好亮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The lights shine on the water.",
+      "phonetic": "/ðə laɪts ʃaɪn ɑn ðə ˈwɔtər./",
+      "zh": "燈光都打在水面上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the sea turtle hall open?",
+      "phonetic": "/ɪz ðə si ˈtɜrtəl hɔl ˈoʊpən?/",
+      "zh": "海龜館已經開放了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it opens at ten.",
+      "phonetic": "/jɛs, ɪt ˈoʊpənz æt tɛn./",
+      "zh": "有，十點開放。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We still have time to spare.",
+      "phonetic": "/wi stɪl hæv taɪm tə spɛr./",
+      "zh": "我們還有充裕的時間。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let us watch the sea lions.",
+      "phonetic": "/lɛt ʌs wɑtʃ ðə si ˈlaɪənz./",
+      "zh": "先去看看海獅吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are those seats free here?",
+      "phonetic": "/ɑr ðoz sits fri hɪr?/",
+      "zh": "這些座位是空的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Take them, no one is here.",
+      "phonetic": "/teɪk ðɛm, noʊ wʌn ɪz hɪr./",
+      "zh": "坐吧，都沒有人在。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The baby needs a nap soon.",
+      "phonetic": "/ðə ˈbeɪbi nidz ə næp sun./",
+      "zh": "寶寶一下子就要睡午覺。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can rest in the café.",
+      "phonetic": "/wi kæn rɛst ɪn ðə kæˈfeɪ./",
+      "zh": "我們可以去咖啡座休息。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do they have a room for nursing?",
+      "phonetic": "/du ðeɪ hæv ə rum fər ˈnɜrsɪŋ?/",
+      "zh": "他們有哺乳室嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Look for the family sign.",
+      "phonetic": "/lʊk fər ðə ˈfæməli saɪn./",
+      "zh": "跟著家庭標示找就行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I lost my hat somewhere.",
+      "phonetic": "/aɪ lɔst maɪ hæt ˈsʌmˌwɛr./",
+      "zh": "我的帽子不知放哪了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is on the stroller, look.",
+      "phonetic": "/ɪt ɪz ɑn ðə ˈstroʊlər, lʊk./",
+      "zh": "在嬰兒車上呢，你看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you bring the wet wipes?",
+      "phonetic": "/dɪd ju brɪŋ ðə wɛt waɪps?/",
+      "zh": "你有帶濕紙巾嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two packs, right in the bag.",
+      "phonetic": "/tu pæks, raɪt ɪn ðə bæɡ./",
+      "zh": "兩包，就在袋子裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We are ready for a fun day.",
+      "phonetic": "/wi ər ˈrɛdi fər ə fʌn deɪ./",
+      "zh": "我們準備好開心玩一天了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The kids are running ahead.",
+      "phonetic": "/ðə kɪdz ər ˈrʌnɪŋ əˈhɛd./",
+      "zh": "孩子們已經往前跑走了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wait for me at that door.",
+      "phonetic": "/weɪt fər mi æt ðæt dɔr./",
+      "zh": "在那個門口等我一下。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "See you there in a minute.",
+      "phonetic": "/si ju ðɛr ɪn ə ˈmɪnɪt./",
+      "zh": "一分鐘後那裡見。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Step in, the tunnel starts here.",
+      "phonetic": "/stɛp ɪn, ðə ˈtʌnəl stɑrts hɪr./",
+      "zh": "進來，海底隧道從這裡開始。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wow, fish are all around us.",
+      "phonetic": "/waʊ, fɪʃ ər ɔl əˈraʊnd ʌs./",
+      "zh": "哇，魚在我們四周遊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Look up at the big blue roof.",
+      "phonetic": "/lʊk ʌp æt ðə bɪɡ blu ruf./",
+      "zh": "抬頭看那片藍色的屋頂。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That water is over our heads.",
+      "phonetic": "/ðæt ˈwɔtər ɪz ˈoʊvər ˈɑʊər hɛdz./",
+      "zh": "那層水就在我們頭上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A school of fish went by.",
+      "phonetic": "/ə skul əv fɪʃ wɛnt baɪ./",
+      "zh": "有一群魚剛剛遊過去。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They move like one long ribbon.",
+      "phonetic": "/ðeɪ muv laɪk wʌn lɔŋ ˈrɪbən./",
+      "zh": "像一條長緞帶在動。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How many fish are in there?",
+      "phonetic": "/haʊ ˈmɛni fɪʃ ər ɪn ðɛr?/",
+      "zh": "那裡面有多少條魚？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Maybe a hundred, hard to count.",
+      "phonetic": "/ˈmeɪbi ə ˈhʌndrəd, hɑrd tə kaʊnt./",
+      "zh": "大概一百條，數不清。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "These little ones shine silver.",
+      "phonetic": "/ðiz ˈlɪtəl wʌnz ʃaɪn ˈsɪlvər./",
+      "zh": "這些小魚閃著銀光。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The big dark ones scare me.",
+      "phonetic": "/ðə bɪɡ dɑrk wʌnz skɛr mi./",
+      "zh": "那些黑黑的大魚好可怕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do those fish bite people?",
+      "phonetic": "/du ðoz fɪʃ baɪt ˈpipəl?/",
+      "zh": "那些魚會咬人嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, they only eat small shrimp.",
+      "phonetic": "/noʊ, ðeɪ ˈoʊnli it smɔl ʃrɪmp./",
+      "zh": "不會，牠們只吃小蝦。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Why is the glass so thick?",
+      "phonetic": "/waɪ ɪz ðə ɡlæs soʊ θɪk?/",
+      "zh": "玻璃為什麼這麼厚？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The water pushes very hard.",
+      "phonetic": "/ðə ˈwɔtər ˈpʊʃɪz ˈvɛri hɑrd./",
+      "zh": "水的壓力非常大。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we touch the glass here?",
+      "phonetic": "/kæn wi təʧ ðə ɡlæs hɪr?/",
+      "zh": "我們在這裡可以摸玻璃嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Please do not tap it.",
+      "phonetic": "/pliz du nɑt tæp ɪt./",
+      "zh": "請不要敲它。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Tapping hurts the animals.",
+      "phonetic": "/ˈtæpɪŋ hərts ði ˈænɪməlz./",
+      "zh": "敲玻璃會傷害動物。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will tell the kids twice.",
+      "phonetic": "/aɪ wɪl tɛl ðə kɪdz twaɪs./",
+      "zh": "我會好好提醒孩子們兩遍。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Look, something big is coming.",
+      "phonetic": "/lʊk, ˈsʌmθɪŋ bɪɡ ɪz ˈkʌmɪŋ./",
+      "zh": "看，有個大東西遊過來了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is a big shark.",
+      "phonetic": "/ðæt ɪz ə bɪɡ ʃɑrk./",
+      "zh": "那是一條大鯊魚。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How long is that shark?",
+      "phonetic": "/haʊ lɔŋ ɪz ðæt ʃɑrk?/",
+      "zh": "那條鯊魚有多長？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "About three meters, the sign says.",
+      "phonetic": "/əˈbaʊt θri ˈmitərz, ðə saɪn sɛz./",
+      "zh": "牌子上寫大約三公尺。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is it heavy too?",
+      "phonetic": "/ɪz ɪt ˈhɛvi tu?/",
+      "zh": "牠也很重嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nearly four hundred kilos.",
+      "phonetic": "/ˈnɪrli fɔr ˈhʌndrəd ˈkiloz./",
+      "zh": "將近四百公斤。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He is heavier than a piano.",
+      "phonetic": "/hi ɪz ˈhɛviər ðæn ə piˈænoʊ./",
+      "zh": "牠比一架鋼琴還重。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And it swims so quietly.",
+      "phonetic": "/ænd ɪt swɪmz soʊ ˈkwaɪətli./",
+      "zh": "而且遊得好安靜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are sharks mean or shy?",
+      "phonetic": "/ɑr ʃɑrks min ɔr ʃaɪ?/",
+      "zh": "鯊魚凶不凶？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Most are shy, not mean.",
+      "phonetic": "/moʊst ər ʃaɪ, nɑt min./",
+      "zh": "大多很害羞，並不凶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How old is this shark?",
+      "phonetic": "/haʊ oʊld ɪz ðɪs ʃɑrk?/",
+      "zh": "這隻鯊魚幾歲了？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The keeper says ten years.",
+      "phonetic": "/ðə ˈkipər sɛz tɛn jɪrz./",
+      "zh": "管理員說十歲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "See the flat fish near the sand?",
+      "phonetic": "/si ðə flæt fɪʃ nɪr ðə sænd?/",
+      "zh": "看到沙邊那條扁扁的魚嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is a ray with wings.",
+      "phonetic": "/ðæt ɪz ə reɪ wɪð wɪŋz./",
+      "zh": "那是一條長翅膀的魟魚。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does a ray really fly?",
+      "phonetic": "/dʌz ə reɪ ˈrɪli flaɪ?/",
+      "zh": "魟魚真的會飛嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In water, it looks like flying.",
+      "phonetic": "/ɪn ˈwɔtər, ɪt lʊks laɪk ˈflaɪɪŋ./",
+      "zh": "在水裡看起來像在飛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is there a sting on its tail?",
+      "phonetic": "/ɪz ðɛr ə stɪŋ ɑn ɪts teɪl?/",
+      "zh": "牠尾巴上有毒刺嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Some do, so never touch one.",
+      "phonetic": "/sʌm du, soʊ ˈnɛvər təʧ wʌn./",
+      "zh": "有的有，所以千萬別碰。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Look, a turtle sleeps here.",
+      "phonetic": "/lʊk, ə ˈtɜrtəl slips hɪr./",
+      "zh": "看，有隻海龜在這裡睡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It floats with its eyes closed.",
+      "phonetic": "/ɪt floʊts wɪð ɪts aɪz kloʊzd./",
+      "zh": "閉著眼睛慢慢漂。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How big is an adult turtle?",
+      "phonetic": "/haʊ bɪɡ ɪz æn əˈdʌlt ˈtɜrtəl?/",
+      "zh": "成年的海龜有多大？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "As big as a table.",
+      "phonetic": "/ɑz bɪɡ ɑz ə ˈteɪbəl./",
+      "zh": "有桌子那麼大。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does that turtle eat plants?",
+      "phonetic": "/dʌz ðæt ˈtɜrtəl it plænts?/",
+      "zh": "那隻海龜吃植物嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it loves sea grass.",
+      "phonetic": "/jɛs, ɪt lʌvz si ɡræs./",
+      "zh": "對，牠最愛吃海草。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How long does a turtle live?",
+      "phonetic": "/haʊ lɔŋ dʌz ə ˈtɜrtəl lɪv?/",
+      "zh": "海龜可以活多久？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Eighty years or more.",
+      "phonetic": "/ˈeɪti jɪrz ɔr mɔr./",
+      "zh": "八十歲，甚至更久。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This fish has funny stripes.",
+      "phonetic": "/ðɪs fɪʃ hæz ˈfʌni straɪps./",
+      "zh": "這隻魚的條紋好有趣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Orange and white, like a clown.",
+      "phonetic": "/ˈɔrɪndʒ ənd waɪt, laɪk ə klaʊn./",
+      "zh": "橘白相間，像小丑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Why do fish swim in pairs?",
+      "phonetic": "/waɪ du fɪʃ swɪm ɪn pɛrz?/",
+      "zh": "魚為什麼喜歡成雙遊？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They stay safe together.",
+      "phonetic": "/ðeɪ steɪ seɪf təˈɡɛðər./",
+      "zh": "結伴比較安全。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now walk to the jellyfish room.",
+      "phonetic": "/naʊ wɔk tə ðə ˈdʒɛliˌfɪʃ rum./",
+      "zh": "現在走去水母廳。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The lights there change color.",
+      "phonetic": "/ðə laɪts ðɛr tʃeɪndʒ ˈkʌlər./",
+      "zh": "那邊的燈會變顏色。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Blue now, then pink, then green.",
+      "phonetic": "/blu naʊ, ðɛn pɪŋk, ðɛn ɡrin./",
+      "zh": "一下藍、一下粉、一下綠。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is so calm to watch.",
+      "phonetic": "/ɪt ɪz soʊ kɑm tə wɑtʃ./",
+      "zh": "看著覺得好平靜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do jellyfish have bones?",
+      "phonetic": "/du ˈdʒɛliˌfɪʃ hæv boʊnz?/",
+      "zh": "水母有骨頭嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, they are mostly water.",
+      "phonetic": "/noʊ, ðeɪ ər ˈmoʊstli ˈwɔtər./",
+      "zh": "沒有，牠們幾乎全是水。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are they dangerous to us?",
+      "phonetic": "/ɑr ðeɪ ˈdeɪndʒərəs tə ʌs?/",
+      "zh": "牠們對我們危險嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Some sting, so do not touch.",
+      "phonetic": "/sʌm stɪŋ, soʊ du nɑt təʧ./",
+      "zh": "有的會蟄人，所以別碰。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "And some glow in the dark.",
+      "phonetic": "/ənd sʌm gloʊ ɪn ðə dɑrk./",
+      "zh": "而且有些會在暗處發光。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Like little moon lanterns.",
+      "phonetic": "/laɪk ˈlɪtəl mun ˈlæntərnz./",
+      "zh": "像一個個小月亮燈籠。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The purple tank is my favorite.",
+      "phonetic": "/ðə ˈpɜrpəl tæŋk ɪz maɪ ˈfeɪvərɪt./",
+      "zh": "紫色那個水箱是我最愛的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I like the tall round one.",
+      "phonetic": "/aɪ laɪk ðə tɔl raʊnd wʌn./",
+      "zh": "我喜歡那個高高的圓形箱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Why is the light so dim here?",
+      "phonetic": "/waɪ ɪz ðə laɪt soʊ dɪm hɪr?/",
+      "zh": "這裡的燈光為什麼這麼暗？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Deep sea fish hate bright light.",
+      "phonetic": "/diːp si fɪʃ heɪt braɪt laɪt./",
+      "zh": "深海魚討厭強光。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My eyes need a minute.",
+      "phonetic": "/maɪ aɪz nid ə ˈmɪnɪt./",
+      "zh": "我的眼睛要適應一下。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold the rail and wait.",
+      "phonetic": "/hoʊld ðə reɪl ənd weɪt./",
+      "zh": "扶著欄杆等一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is there an octopus here?",
+      "phonetic": "/ɪz ðɛr ən ˈɑktəpəs hɪr?/",
+      "zh": "這裡有章魚嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, hiding in the cave.",
+      "phonetic": "/jɛs, ˈhaɪdɪŋ ɪn ðə keɪv./",
+      "zh": "有，躲在洞裡面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I see only one long arm.",
+      "phonetic": "/aɪ si ˈoʊnli wʌn lɔŋ ɑrm./",
+      "zh": "我只看到一根長手臂。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "He peeks out, then hides.",
+      "phonetic": "/hi piks aʊt, ðɛn haɪdz./",
+      "zh": "牠偷看一下，又躲起來了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A crab walked on the rock.",
+      "phonetic": "/ə kræb wɔkt ɑn ðə rɑk./",
+      "zh": "有隻螃蟹爬過了石頭。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It raised both little claws.",
+      "phonetic": "/ɪt reɪzd boʊθ ˈlɪtəl krɔz./",
+      "zh": "牠舉起了兩隻小螯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How deep is this big tank?",
+      "phonetic": "/haʊ dip ɪz ðɪs bɪɡ tæŋk?/",
+      "zh": "這個大水箱有多深？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nine meters of salt water.",
+      "phonetic": "/naɪn ˈmitərz əv sɔlt ˈwɔtər./",
+      "zh": "九公尺深的海水。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How much water fits in there?",
+      "phonetic": "/haʊ mʌtʃ ˈwɔtər fɪts ɪn ðɛr?/",
+      "zh": "裡面裝了多少水？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A million liters, I think.",
+      "phonetic": "/ə ˈmɪljən ˈlitərz, aɪ θɪŋk./",
+      "zh": "我想有一百萬公升。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Who cleans all that glass?",
+      "phonetic": "/hu kilnz ɔl ðæt ɡlæs?/",
+      "zh": "誰來擦這麼多玻璃？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A diver does it weekly.",
+      "phonetic": "/ə ˈdaɪvər dʌz ɪt ˈwikli./",
+      "zh": "有潛水員每週來擦。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That job looks fun.",
+      "phonetic": "/ðæt dʒɑb lʊks fʌn./",
+      "zh": "那個工作看起來好好玩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Maybe next time on a tour.",
+      "phonetic": "/ˈmeɪbi nɛkst taɪm ɑn ə tʊr./",
+      "zh": "也許下次參加導覽時能看到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Look at my shadow on the glass.",
+      "phonetic": "/lʊk æt maɪ ˈʃædoʊ ɑn ðə ɡlæs./",
+      "zh": "看我映在玻璃上的影子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The fish swam right through it.",
+      "phonetic": "/ðə fɪʃ swæm raɪt θru ɪt./",
+      "zh": "魚剛好從影子裡遊過去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is that long eel going?",
+      "phonetic": "/wɛr ɪz ðæt lɔŋ il ˈɡoʊɪŋ?/",
+      "zh": "那條長鰻魚要去哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Under the rock for a nap.",
+      "phonetic": "/ˈʌndər ðə rɑk fər ə næp./",
+      "zh": "到石頭下面睡一覺。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This part smells like the beach.",
+      "phonetic": "/ðɪs pɑrt smɛlz laɪk ðə biʧ./",
+      "zh": "這一區有海邊的氣味。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I love that salty air.",
+      "phonetic": "/aɪ lʌv ðæt ˈsɔlti ɛr./",
+      "zh": "我喜歡那鹹鹹的空氣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the little boy scared?",
+      "phonetic": "/ɪz ðə ˈlɪtəl bɔɪ skɛrd?/",
+      "zh": "那個小男孩是不是害怕了？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the shark made him cry.",
+      "phonetic": "/jɛs, ðə ʃɑrk meɪd hɪm kraɪ./",
+      "zh": "嗯，那條鯊魚把他嚇哭了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sharks here cannot reach us.",
+      "phonetic": "/ʃɑrks hɪr ˈkænɑt riʧ ʌs./",
+      "zh": "這裡的鯊魚過不來的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tell him the glass is strong.",
+      "phonetic": "/tɛl hɪm ðə ɡlæs ɪz strɔŋ./",
+      "zh": "跟他說玻璃很堅固。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How much does a baby shark weigh?",
+      "phonetic": "/haʊ mʌtʃ dʌz ə ˈbeɪbi ʃɑrk weɪ?/",
+      "zh": "小鯊魚有多重？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "About as much as a dog.",
+      "phonetic": "/əˈbaʊt æz mʌtʃ æz ə dɔɡ./",
+      "zh": "大概和一隻狗一樣重。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we sit on this bench?",
+      "phonetic": "/kæn wi sɪt ɑn ðɪs bɛnʧ?/",
+      "zh": "我們可以坐這張長椅嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, watch the tunnel from here.",
+      "phonetic": "/jɛs, wɑtʃ ðə ˈtʌnəl frʌm hɪr./",
+      "zh": "可以，就在這兒看隧道。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I want to stay all day.",
+      "phonetic": "/aɪ wɑnt tə steɪ ɔl deɪ./",
+      "zh": "我想在這裡待一整天。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Maybe the fish do too.",
+      "phonetic": "/ˈmeɪbi ðə fɪʃ du tu./",
+      "zh": "說不定魚也一樣吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do these animals sleep at night?",
+      "phonetic": "/du ðiz ˈænɪməlz slip æt naɪt?/",
+      "zh": "這些動物晚上會睡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, but very lightly.",
+      "phonetic": "/jɛs, bʌt ˈvɛri ˈlaɪtli./",
+      "zh": "會，不過睡得很淺。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We saw the seal show at eleven.",
+      "phonetic": "/wi sɔ ðə sil ʃoʊ æt ɪˈlɛvən./",
+      "zh": "我們十一點看到了海豹餵食秀。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It balanced a ball on its nose.",
+      "phonetic": "/ɪt ˈbælənst ə bɔl ɑn ɪts noʊz./",
+      "zh": "那隻海豹把球頂在鼻子上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let us check the next sign.",
+      "phonetic": "/lɛt ʌs tʃɛk ðə nɛkst saɪn./",
+      "zh": "我們去看下一個指示牌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then we walk to the touch pool.",
+      "phonetic": "/ðɛn wi wɔk tə ðə təʧ pul./",
+      "zh": "然後就走去觸摸池。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Here is the touch pool sign.",
+      "phonetic": "/hɪr ɪz ðə təʧ pul saɪn./",
+      "zh": "這裡就是觸摸池的牌子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The water looks warm and clear.",
+      "phonetic": "/ðə ˈwɔtər lʊks wɔrm ənd klɪr./",
+      "zh": "水看起來暖暖的、很清澈。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "May we put our hands in?",
+      "phonetic": "/meɪ wi pʊt ˈɑʊər hænz ɪn?/",
+      "zh": "我們把手伸進去可以嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, but be very gentle.",
+      "phonetic": "/jɛs, bʌt bi ˈvɛri ˈdʒɛntəl./",
+      "zh": "可以，不過要很輕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "First wash your hands here.",
+      "phonetic": "/fɜrst wɑʃ jʊər hænz hɪr./",
+      "zh": "先在這裡洗手。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "There is soap right by the tap.",
+      "phonetic": "/ðɛr ɪz soʊp raɪt baɪ ðə tæp./",
+      "zh": "肥皂就在水龍頭旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Look, a starfish on my hand.",
+      "phonetic": "/lʊk, ə ˈstɑrˌfɪʃ ɑn maɪ hænd./",
+      "zh": "看，海星停在我手上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It feels rough, like sand.",
+      "phonetic": "/ɪt filz rʌf, laɪk sænd./",
+      "zh": "摸起來粗粗的，像沙子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How many arms does one have?",
+      "phonetic": "/haʊ ˈmɛni ɑrmz dʌz wʌn hæv?/",
+      "zh": "一隻海星有幾條腕？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Usually five, sometimes six.",
+      "phonetic": "/ˈjuʒuəli faɪv, ˈsʌmˌtaɪmz sɪks./",
+      "zh": "通常五條，有時候六條。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is it alive or dead?",
+      "phonetic": "/ɪz ɪt əˈlaɪv ɔr dɛd?/",
+      "zh": "牠是活的還是死的？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is alive, hold it flat.",
+      "phonetic": "/ɪt ɪz əˈlaɪv, hoʊld ɪt flæt./",
+      "zh": "活的，平平地托著。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please do not lift it out.",
+      "phonetic": "/pliz du nɑt lɪft ɪt aʊt./",
+      "zh": "請不要把它拿出水。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It needs water to breathe.",
+      "phonetic": "/ɪt nidz ˈwɔtər tə brið./",
+      "zh": "牠需要水才能呼吸。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A sea urchin moved there.",
+      "phonetic": "/ə si ˈɜrtʃɪn muvd ðɛr./",
+      "zh": "那邊有隻海膽動了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Do not touch that one.",
+      "phonetic": "/du nɑt təʧ ðæt wʌn./",
+      "zh": "那一個不要碰。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Why are its spikes dangerous?",
+      "phonetic": "/waɪ ər ɪts spaɪks ˈdeɪndʒərəs?/",
+      "zh": "牠的刺為什麼危險？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They poke your skin hard.",
+      "phonetic": "/ðeɪ poʊk jʊər skɪn hɑrd./",
+      "zh": "會深深刺進你的皮膚。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Here, a sea snail for you.",
+      "phonetic": "/hɪr, ə si sneɪl fər ju./",
+      "zh": "來，這隻海螺給你看。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is cold and so smooth.",
+      "phonetic": "/ɪt ɪz koʊld ənd soʊ smuð./",
+      "zh": "涼涼的，又很光滑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The baby crab is tiny.",
+      "phonetic": "/ðə ˈbeɪbi kræb ɪz ˈtaɪni./",
+      "zh": "小螃蟹真的好小。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Put it back with care.",
+      "phonetic": "/pʊt ɪt bæk wɪð kɛr./",
+      "zh": "輕輕地把它放回去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Who knows about these animals?",
+      "phonetic": "/hu noʊz əˈbaʊt ðiz ˈænɪməlz?/",
+      "zh": "誰最懂這些動物？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The keeper in blue does.",
+      "phonetic": "/ðə ˈkipər ɪn blu dʌz./",
+      "zh": "穿藍衣服的那位管理員。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Excuse me, can you help us?",
+      "phonetic": "/ɪkˈskjuz mi, kæn ju hɛlp ʌs?/",
+      "zh": "打擾一下，可以幫我們嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, ask me anything.",
+      "phonetic": "/ʃʊr, æsk mi ˈɛniˌθɪŋ./",
+      "zh": "當然，什麼都可以問。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What do starfish eat?",
+      "phonetic": "/wɑt du ˈstɑrˌfɪʃ it?/",
+      "zh": "海星吃什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tiny snails and small shells.",
+      "phonetic": "/ˈtaɪni sneɪlz ənd smɔl ʃɛlz./",
+      "zh": "小海螺和小貝殼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do they have eyes?",
+      "phonetic": "/du ðeɪ hæv aɪz?/",
+      "zh": "牠們有眼睛嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tiny ones on each arm tip.",
+      "phonetic": "/ˈtaɪni wʌnz ɑn iʧ ɑrm tɪp./",
+      "zh": "每條腕的尖端有一點小眼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How old is this starfish?",
+      "phonetic": "/haʊ oʊld ɪz ðɪs ˈstɑrˌfɪʃ?/",
+      "zh": "這隻海星幾歲？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "About three years old.",
+      "phonetic": "/əˈbaʊt θri jɪrz oʊld./",
+      "zh": "大約三歲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can it grow a new arm?",
+      "phonetic": "/kæn ɪt groʊ ə nu ɑrm?/",
+      "zh": "牠能再長出一條腕嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, slowly, in months.",
+      "phonetic": "/jɛs, ˈsloʊli, ɪn mʌnθs./",
+      "zh": "可以，幾個月慢慢長回來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please show us the horseshoe crab.",
+      "phonetic": "/pliz ʃoʊ ʌs ðə ˈhɔrsˌʃu kræb./",
+      "zh": "請給我們看鱟。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is older than dinosaurs.",
+      "phonetic": "/ɪt ɪz ˈoʊldər ðæn ˈdaɪnəˌsɔrz./",
+      "zh": "牠比恐龍還要古老。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is it safe for kids?",
+      "phonetic": "/ɪz ɪt seɪf fər kɪdz?/",
+      "zh": "對小孩子安全嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it stays very calm.",
+      "phonetic": "/jɛs, ɪt steɪz ˈvɛri kɑm./",
+      "zh": "安全，牠一直很安靜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we hear a short talk?",
+      "phonetic": "/kæn wi hɪr ə ʃɔrt tɔk?/",
+      "zh": "我們可以聽一段簡短的介紹嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The keepers talk here each hour.",
+      "phonetic": "/ðə ˈkipərz tɔk hɪr iʧ ˈaʊər./",
+      "zh": "管理員每整點都在這裡講解。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where do we stand for it?",
+      "phonetic": "/wɛr du wi stænd fər ɪt?/",
+      "zh": "我們要站在哪裡聽？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Near the round pool steps.",
+      "phonetic": "/nɪr ðə raʊnd pul stɛps./",
+      "zh": "在圓池邊的台階附近。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What time is the dolphin show?",
+      "phonetic": "/wɑt taɪm ɪz ðə ˈdɑlfɪn ʃoʊ?/",
+      "zh": "海豚表演幾點？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Twelve thirty and four again.",
+      "phonetic": "/twɛlv ˈθɜrti ənd fɔr əˈɡɛn./",
+      "zh": "十二點半，四點還有一場。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which show should we pick?",
+      "phonetic": "/wɪtʃ ʃoʊ ʃʊd wi pɪk?/",
+      "zh": "我們選哪一場？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The first show is less crowded.",
+      "phonetic": "/ðə fɜrst ʃoʊ ɪz lɛs ˈkraʊdɪd./",
+      "zh": "第一場人少一些。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How long does it last?",
+      "phonetic": "/haʊ lɔŋ dʌz ɪt læst?/",
+      "zh": "一場要演多久？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "About half an hour.",
+      "phonetic": "/əˈbaʊt hæf æn ˈaʊər./",
+      "zh": "大約半小時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is there a spot for the stroller?",
+      "phonetic": "/ɪz ðɛr ə spɑt fər ðə ˈstroʊlər?/",
+      "zh": "有放嬰兒車的地方嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, at the back row.",
+      "phonetic": "/jɛs, æt ðə bæk roʊ./",
+      "zh": "有，在最後一排那邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do dolphins jump high there?",
+      "phonetic": "/du ˈdɑlfɪnz dʒʌmp haɪ ðɛr?/",
+      "zh": "海豚在那裡跳得高嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Very high, over the rope.",
+      "phonetic": "/ˈvɛri haɪ, ˈoʊvər ðə rop./",
+      "zh": "非常高，跳過繩子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we get a closer seat?",
+      "phonetic": "/kæn wi ɡɛt ə ˈkloʊsər sit?/",
+      "zh": "能坐到近一點的位置嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "But you will get wet.",
+      "phonetic": "/bʌt ju wɪl ɡɛt wɛt./",
+      "zh": "不過你會被噴濕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Bring a bag for our phones.",
+      "phonetic": "/brɪŋ ə bæɡ fər ˈɑʊər foʊnz./",
+      "zh": "帶個袋子裝手機。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good idea, water flies far.",
+      "phonetic": "/ɡʊd aɪˈdiə, ˈwɔtər flaɪz fɑr./",
+      "zh": "好主意，水花飛很遠。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is it okay to take pictures?",
+      "phonetic": "/ɪz ɪt oʊˈkeɪ tə teɪk ˈpɪktʃərz?/",
+      "zh": "這裡可以拍照嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, but no flash.",
+      "phonetic": "/jɛs, bʌt noʊ flæʃ./",
+      "zh": "可以，但不能開閃光燈。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Flash hurts the animals' eyes.",
+      "phonetic": "/flæʃ hərts ði ˈænɪməlz aɪz./",
+      "zh": "閃光會傷動物的眼睛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will turn it off now.",
+      "phonetic": "/aɪ wɪl tɜrn ɪt ɔf naʊ./",
+      "zh": "我現在就把它關掉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Stand by the rail with me.",
+      "phonetic": "/stænd baɪ ðə reɪl wɪð mi./",
+      "zh": "來，站在欄杆這邊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Smile, I am counting three.",
+      "phonetic": "/smaɪl, aɪ æm ˈkaʊntɪŋ θri./",
+      "zh": "笑一個，我數三下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One more with the whole family.",
+      "phonetic": "/wʌn mɔr wɪð ðə hoʊl ˈfæməli./",
+      "zh": "再拍一張全家合照。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Send it to grandma tonight.",
+      "phonetic": "/sɛnd ɪt tə ˈɡrændmɑ təˈnaɪt./",
+      "zh": "今晚傳給奶奶看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Why is the little girl crying?",
+      "phonetic": "/waɪ ɪz ðə ˈlɪtəl ɡɜrl ˈkraɪɪŋ?/",
+      "zh": "那個小女生為什麼在哭？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The loud music scared her.",
+      "phonetic": "/ðə laʊd ˈmjuːzɪk skɛrd hɜr./",
+      "zh": "音樂太大聲把她嚇到了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the noise too big here?",
+      "phonetic": "/ɪz ðə nɔɪz tu bɪɡ hɪr?/",
+      "zh": "這裡是不是太吵了？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, let us step outside.",
+      "phonetic": "/jɛs, lɛt ʌs stɛp ˌaʊtˈsaɪd./",
+      "zh": "是，我們先到外面一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Here are soft ear covers.",
+      "phonetic": "/hɪr ər sɔft ɪr ˈkʌvərz./",
+      "zh": "這裡有軟軟的護耳罩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Put them on, they help.",
+      "phonetic": "/pʊt ðɛm ɑn, ðeɪ hɛlp./",
+      "zh": "給她戴上，會有用的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sound comes from those speakers.",
+      "phonetic": "/ðə saʊnd kʌmz frʌm ðoʊz ˈspikərz./",
+      "zh": "聲音是從那些喇叭傳出來的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is only noise, no danger.",
+      "phonetic": "/ɪt ɪz ˈoʊnli nɔɪz, noʊ ˈdeɪndʒər./",
+      "zh": "只是吵，沒有危險。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hold her during the loud part.",
+      "phonetic": "/hoʊld hɜr ˈdʊrɪŋ ðə laʊd pɑrt./",
+      "zh": "很吵的那一段抱著她。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She is calm again now.",
+      "phonetic": "/ʃi ɪz kɑm əˈɡɛn naʊ./",
+      "zh": "她現在又不怕了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Look, the dolphin waves its tail.",
+      "phonetic": "/lʊk, ðə ˈdɑlfɪn weɪvz ɪts teɪl./",
+      "zh": "看，海豚在擺尾巴。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It says hello to us.",
+      "phonetic": "/ɪt sɛz hɛˈloʊ tə ʌs./",
+      "zh": "牠在跟我們打招呼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you see that big jump?",
+      "phonetic": "/dɪd ju si ðæt bɪɡ dʒʌmp?/",
+      "zh": "你看到那個大跳躍了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I missed it, take a video.",
+      "phonetic": "/aɪ mɪst ɪt, teɪk ə ˈvɪdioʊ./",
+      "zh": "我錯過了，快錄影。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My phone is almost dead.",
+      "phonetic": "/maɪ foʊn ɪz ˈɔlˌmoʊst dɛd./",
+      "zh": "我手機幾乎沒電了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Save it for the penguins.",
+      "phonetic": "/seɪv ɪt fər ðə ˈpɛŋɡwɪnz./",
+      "zh": "留著電力拍企鵝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is this seat taken, excuse me?",
+      "phonetic": "/ɪz ðɪs sit ˈteɪkən, ɪkˈskjuz mi?/",
+      "zh": "請問這個位子有人坐嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nope, go ahead and sit.",
+      "phonetic": "/noʊp ɡoʊ əˈhɛd ænd sɪt./",
+      "zh": "沒有，你請坐。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The keeper brings fish in a bucket.",
+      "phonetic": "/ðə ˈkipər brɪŋz fɪʃ ɪn ə ˈbʌkɪt./",
+      "zh": "管理員提了一桶魚過來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "He feeds them one by one.",
+      "phonetic": "/hi fids ðɛm wʌn baɪ wʌn./",
+      "zh": "他一條一條餵。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do the dolphins know him?",
+      "phonetic": "/du ðə ˈdɑlfɪnz noʊ hɪm?/",
+      "zh": "海豚認識他嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, they hear his call.",
+      "phonetic": "/jɛs, ðeɪ hɪr hɪz kɔl./",
+      "zh": "認識，牠們聽得懂他的呼喚。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How many dolphins live here?",
+      "phonetic": "/haʊ ˈmɛni ˈdɑlfɪnz lɪv hɪr?/",
+      "zh": "這裡住著幾隻海豚？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Five, all born here.",
+      "phonetic": "/faɪv, ɔl bɔrn hɪr./",
+      "zh": "五隻，全都在這裡出生。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What do they eat every day?",
+      "phonetic": "/wɑt du ðeɪ it ˈɛvri deɪ?/",
+      "zh": "牠們每天吃些什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lots of small fish.",
+      "phonetic": "/lɑts əv smɔl fɪʃ./",
+      "zh": "好多好多小魚。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can my son feed one?",
+      "phonetic": "/kæn maɪ sʌn fid wʌn?/",
+      "zh": "我兒子可以餵一隻嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only at the special tour.",
+      "phonetic": "/ˈoʊnli æt ðə ˈspɛʃəl tʊr./",
+      "zh": "只有在專屬導覽時才行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let us ask about that tour.",
+      "phonetic": "/lɛt ʌs æsk əˈbaʊt ðæt tʊr./",
+      "zh": "我們去問問那個導覽。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It costs ten more dollars.",
+      "phonetic": "/ɪt kɔsts tɛn mɔr ˈdɑlərz./",
+      "zh": "要再多付十塊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We will do it next visit.",
+      "phonetic": "/wi wɪl du ɪt nɛkst ˈvɪzɪt./",
+      "zh": "下次來再參加好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Go wash your hands before lunch.",
+      "phonetic": "/ɡoʊ wɑʃ jʊər hænz bɪˈfɔr lʌnʧ./",
+      "zh": "午餐前先去把手洗一洗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The touch pool was their favorite.",
+      "phonetic": "/ðə təʧ pul wʌz ðɛr ˈfeɪvərɪt./",
+      "zh": "觸摸池是孩子們最喜歡的一站。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Me too, I loved the starfish.",
+      "phonetic": "/mi tu, aɪ lʌvd ðə ˈstɑrˌfɪʃ./",
+      "zh": "我也是，我好愛那些海星。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where to next on the map?",
+      "phonetic": "/wɛr tə nɛkst ɑn ðə mæp?/",
+      "zh": "依地圖下一站要去哪？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The penguin yard for lunch.",
+      "phonetic": "/ðə ˈpɛŋɡwɪn jɑrd fər lʌnʧ./",
+      "zh": "去企鵝區看牠們吃午餐。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Here are the penguins walking.",
+      "phonetic": "/hɪr ər ðə ˈpɛŋɡwɪnz ˈwɔkɪŋ./",
+      "zh": "企鵝就在這裡走路。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They waddle in a small line.",
+      "phonetic": "/ðeɪ ˈwɑdəl ɪn ə smɔl laɪn./",
+      "zh": "牠們排成小隊搖搖擺擺。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do penguins live in cold places?",
+      "phonetic": "/du ˈpɛŋɡwɪnz lɪv ɪn koʊld ˈpleɪsɪz?/",
+      "zh": "企鵝住在很冷的地方嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, mostly in the south.",
+      "phonetic": "/jɛs, ˈmoʊstli ɪn ðə saʊθ./",
+      "zh": "對，大部分在南方。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Why do they stand on one foot?",
+      "phonetic": "/waɪ du ðeɪ stænd ɑn wʌn fʊt?/",
+      "zh": "牠們為什麼都單腳站著？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It keeps them warm.",
+      "phonetic": "/ɪt kips ðɛm wɔrm./",
+      "zh": "那樣可以保暖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One jumped into the water!",
+      "phonetic": "/wʌn dʒʌmpt ˈɪntu ðə ˈwɔtər!/",
+      "zh": "有一隻跳水跳下去了！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It swam fast, just like a bird.",
+      "phonetic": "/ɪt swæm fæst, dʒʌst laɪk ə bɜrd./",
+      "zh": "遊起來快得像小鳥。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How fast can a penguin swim?",
+      "phonetic": "/haʊ fæst kæn ə ˈpɛŋɡwɪn swɪm?/",
+      "zh": "企鵝可以遊多快？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Faster than I can run.",
+      "phonetic": "/ˈfæstər ðæn aɪ kæn rʌn./",
+      "zh": "比我用跑的還快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How big is a grown penguin?",
+      "phonetic": "/haʊ bɪɡ ɪz ə ɡroʊn ˈpɛŋɡwɪn?/",
+      "zh": "長大的企鵝有多大？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Close to eighty centimeters tall.",
+      "phonetic": "/kloʊs tə ˈeɪti ˈsɛntəˌmitərz tɔl./",
+      "zh": "接近八十公分高。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "When do they get lunch?",
+      "phonetic": "/wɛn du ðeɪ ɡɛt lʌnʧ?/",
+      "zh": "牠們幾點吃午餐？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "At one, with the keeper.",
+      "phonetic": "/æt wʌn, wɪð ðə ˈkipər./",
+      "zh": "一點，由管理員餵。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "They eat frozen fish.",
+      "phonetic": "/ðeɪ it ˈfroʊzən fɪʃ./",
+      "zh": "牠們吃冷凍過的魚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Look, that one took two.",
+      "phonetic": "/lʊk, ðæt wʌn tʊk tu./",
+      "zh": "看，那隻一口叼走兩條。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The otters are next door.",
+      "phonetic": "/ðə ˈɑtərz ər nɛkst dɔr./",
+      "zh": "海獺就在隔壁區。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They float on their backs.",
+      "phonetic": "/ðeɪ floʊt ɑn ðɛr bæks./",
+      "zh": "牠們仰躺著漂在水上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One is eating on its chest.",
+      "phonetic": "/wʌn ɪz ˈitɪŋ ɑn ɪts tʃɛst./",
+      "zh": "有一隻在胸口上吃東西。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It uses a small stone.",
+      "phonetic": "/ɪt ˈjuzɪz ə smɔl stoʊn./",
+      "zh": "牠還會用小石塊敲開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do otters hold hands?",
+      "phonetic": "/du ˈɑtərz hoʊld hænz?/",
+      "zh": "海獺真的會手牽手嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, so they stay together.",
+      "phonetic": "/jɛs, soʊ ðeɪ steɪ təˈɡɛðər./",
+      "zh": "會，這樣就不會漂散。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Their fur stays dry here.",
+      "phonetic": "/ðɛr fɜr steɪz draɪ hɪr./",
+      "zh": "牠們的毛在這裡保持乾燥。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It traps warm air inside.",
+      "phonetic": "/ɪt træps wɔrm ɛr ɪnˈsaɪd./",
+      "zh": "毛裡會留住暖空氣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now we need our own lunch.",
+      "phonetic": "/naʊ wi nid ˈɑʊər oʊn lʌnʧ./",
+      "zh": "現在我們自己也要吃午餐了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The café is by the big tank.",
+      "phonetic": "/ðə kæˈfeɪ ɪz baɪ ðə bɪɡ tæŋk./",
+      "zh": "咖啡座就在那個大水箱旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is there a table for four?",
+      "phonetic": "/ɪz ðɛr ə ˈteɪbəl fər fɔr?/",
+      "zh": "有一張四人桌嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, by the open window.",
+      "phonetic": "/jɛs, baɪ ði ˈoʊpən ˈwɪnˌdoʊ./",
+      "zh": "有，在開著的窗邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What do they serve here?",
+      "phonetic": "/wɑt du ðeɪ sɜrv hɪr?/",
+      "zh": "這裡賣些什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Soup, sandwiches, and fruit.",
+      "phonetic": "/sup, ˈsændˌwɪtʃɪz, ənd frut./",
+      "zh": "湯、三明治和水果。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will take a chicken soup.",
+      "phonetic": "/aɪ wɪl teɪk ə ˈtʃɪkən sup./",
+      "zh": "我要一碗雞肉湯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Get me a cheese sandwich.",
+      "phonetic": "/ɡɛt mi ə tʃiz ˈsændwɪtʃ./",
+      "zh": "幫我點一份起司三明治。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Two fries for the kids?",
+      "phonetic": "/tu fraɪz fər ðə kɪdz?/",
+      "zh": "給孩子要兩份薯條嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One order to share, plus two apples.",
+      "phonetic": "/wʌn ˈɔrdər tə ʃɛr, plʌs tu ˈæpəlz./",
+      "zh": "點一份大家分，再加兩顆蘋果。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the milk cold?",
+      "phonetic": "/ɪz ðə mɪlk koʊld?/",
+      "zh": "牛奶是涼的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it comes from the fridge.",
+      "phonetic": "/jɛs, ɪt kʌmz frʌm ðə frɪdʒ./",
+      "zh": "是，是從冰箱拿的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How much for the fruit cup?",
+      "phonetic": "/haʊ mʌtʃ fər ðə frut kʌp?/",
+      "zh": "那杯水果多少錢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Four, with a little yogurt.",
+      "phonetic": "/fɔr, wɪð ə ˈlɪtəl ˈjoʊɡərt./",
+      "zh": "四塊，附一點優格。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wipe the table first.",
+      "phonetic": "/waɪp ðə ˈteɪbəl fɜrst./",
+      "zh": "先把桌子擦一下。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here, I have the wipes.",
+      "phonetic": "/hɪr, aɪ hæv ðə waɪps./",
+      "zh": "給，我帶著濕紙巾。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Watch your hot drink.",
+      "phonetic": "/wɑtʃ jʊər hɑt drɪŋk./",
+      "zh": "小心你的熱飲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will use both hands.",
+      "phonetic": "/aɪ wɪl juz boʊθ hænz./",
+      "zh": "我會用兩手端著。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A bird landed on the rail.",
+      "phonetic": "/ə bɜrd ˈlændɪd ɑn ðə reɪl./",
+      "zh": "有隻鳥停在欄杆上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Do not give it bread.",
+      "phonetic": "/du nɑt ɡɪv ɪt brɛd./",
+      "zh": "不要餵牠吃麵包。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where do we throw the trash?",
+      "phonetic": "/wɛr du wi θroʊ ðə træʃ?/",
+      "zh": "垃圾要丟在哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The blue box near the door.",
+      "phonetic": "/ðə blu bɑks nɪr ðə dɔr./",
+      "zh": "門口那個藍色桶子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now let us visit the shop.",
+      "phonetic": "/naʊ lɛt ʌs ˈvɪzɪt ðə ʃɑp./",
+      "zh": "現在去紀念品店看看。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is right by the exit.",
+      "phonetic": "/ɪt ɪz raɪt baɪ ðə ˈɛɡzɪt./",
+      "zh": "它就在出口旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Look at all those soft toys!",
+      "phonetic": "/lʊk æt ɔl ðoz sɔft tɔɪz!/",
+      "zh": "看那些毛絨玩偶！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The blue whale is so big.",
+      "phonetic": "/ðə blu weɪl ɪz soʊ bɪɡ./",
+      "zh": "那隻藍鯨大得誇張。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which one do you want?",
+      "phonetic": "/wɪtʃ wʌn du ju wɑnt?/",
+      "zh": "你想要哪一隻？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The small orange fish.",
+      "phonetic": "/ðə smɔl ˈɔrɪndʒ fɪʃ./",
+      "zh": "那條橘色的小魚。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How much is that penguin?",
+      "phonetic": "/haʊ mʌtʃ ɪz ðæt ˈpɛŋɡwɪn?/",
+      "zh": "那隻企鵝多少錢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is twelve, on the tag.",
+      "phonetic": "/ɪt ɪz twɛlv, ɑn ðə tæɡ./",
+      "zh": "吊牌上寫十二塊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I want a shell necklace too.",
+      "phonetic": "/aɪ wɑnt ə ʃɛl ˈnɛkˌlɪs tu./",
+      "zh": "我也想要一條貝殼項鍊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The rack is on the left.",
+      "phonetic": "/ðə ræk ɪz ɑn ðə lɛft./",
+      "zh": "架子在左手邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we buy two for the price of one?",
+      "phonetic": "/kæn wi baɪ tu fər ðə praɪs əv wʌn?/",
+      "zh": "可以買一送一嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only today, the sign says.",
+      "phonetic": "/ˈoʊnli təˈdeɪ, ðə saɪn sɛz./",
+      "zh": "牌子說只有今天。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have this in green?",
+      "phonetic": "/du ju hæv ðɪs ɪn ɡrin?/",
+      "zh": "這隻有綠色的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, look up, top shelf.",
+      "phonetic": "/jɛs, lʊk ʌp, tɑp ʃɛlf./",
+      "zh": "有，往上看，最上面那層。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "May I open this box?",
+      "phonetic": "/meɪ aɪ ˈoʊpən ðɪs bɑks?/",
+      "zh": "我可以打開這個盒子嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, but keep the tag.",
+      "phonetic": "/jɛs, bʌt kip ðə tæɡ./",
+      "zh": "可以，不過標籤要留著。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do cards get a discount here?",
+      "phonetic": "/du kɑrdz ɡɛt ə ˈdɪskaʊnt hɪr?/",
+      "zh": "這裡會員卡有折扣嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, members save ten percent.",
+      "phonetic": "/jɛs, ˈmɛmbərz seɪv tɛn pərˈsɛnt./",
+      "zh": "有，會員打九折。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will use the card machine.",
+      "phonetic": "/aɪ wɪl juz ðə kɑrd məˈʃin./",
+      "zh": "我用刷卡機付款。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The machine needs your code.",
+      "phonetic": "/ðə məˈʃin nidz ˈjʊər koʊd./",
+      "zh": "機器要輸入密碼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Put them in one bag.",
+      "phonetic": "/pʊt ðɛm ɪn wʌn bæɡ./",
+      "zh": "全部裝在一個袋子裡就好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The big turtle is for dad.",
+      "phonetic": "/ðə bɪɡ ˈtɜrtəl ɪz fər dæd./",
+      "zh": "那隻大海龜是送爸爸的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He will love this gift.",
+      "phonetic": "/hi wɪl lʌv ðɪs ɡɪft./",
+      "zh": "他一定會喜歡這個禮物。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A little gift to take home.",
+      "phonetic": "/ə ˈlɪtəl ɡɪft tə teɪk hoʊm./",
+      "zh": "帶一份小紀念回家。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The baby is asleep already.",
+      "phonetic": "/ðə ˈbeɪbi ɪz əˈslip ɔlˈrɛdi./",
+      "zh": "寶寶已經睡著了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You carry her, my arms hurt.",
+      "phonetic": "/ju ˈkæri hɜr, maɪ ɑrmz hɜrt./",
+      "zh": "你抱她吧，我手臂好痠。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let us leave the crowd now.",
+      "phonetic": "/lɛt ʌs liv ðə kraʊd naʊ./",
+      "zh": "我們先離開這群人。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The stroller is full of bags.",
+      "phonetic": "/ðə ˈstroʊlər ɪz fʊl əv bæɡz./",
+      "zh": "嬰兒車裡全是購物袋。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The boy wants a carry too.",
+      "phonetic": "/ðə bɔɪ wɑnts ə ˈkæri tu./",
+      "zh": "兒子也想被抱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Give him the orange fish.",
+      "phonetic": "/ɡɪv hɪm ði ˈɔrɪndʒ fɪʃ./",
+      "zh": "把那條橘色小魚玩偶給他。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One last stop on the way.",
+      "phonetic": "/wʌn læst stɑp ɑn ðə weɪ./",
+      "zh": "回程還有最後一站。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The exit desk is close.",
+      "phonetic": "/ði ˈɛɡzɪt dɛsk ɪz kloʊs./",
+      "zh": "出口服務台就在附近。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we get a stamp here?",
+      "phonetic": "/kæn wi ɡɛt ə stæmp hɪr?/",
+      "zh": "這裡可以蓋章嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, at the exit desk.",
+      "phonetic": "/jɛs, æt ðə ˈɛɡzɪt dɛsk./",
+      "zh": "可以，在出口服務台。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is my visitor card?",
+      "phonetic": "/wɛr ɪz maɪ ˈvɪzɪtər kɑrd?/",
+      "zh": "我的參觀卡在哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here, I kept it for you.",
+      "phonetic": "/hɪr, aɪ kɛpt ɪt fər ju./",
+      "zh": "給，我幫你收著呢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Press it down slowly now.",
+      "phonetic": "/prɛs ɪt daʊn ˈsloʊli naʊ./",
+      "zh": "現在慢慢往下按。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Look, a clean blue star.",
+      "phonetic": "/lʊk, ə klin blu stɑr./",
+      "zh": "看，蓋出一顆藍色星星。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I want five more stamps.",
+      "phonetic": "/aɪ wɑnt faɪv mɔr stæmps./",
+      "zh": "我還想再蓋五個。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Save some for next time.",
+      "phonetic": "/seɪv sʌm fər nɛkst taɪm./",
+      "zh": "幾個留給下次吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How was the day for you?",
+      "phonetic": "/haʊ wʌz ðə deɪ fər ju?/",
+      "zh": "你今天覺得怎麼樣？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The shark was my favorite.",
+      "phonetic": "/ðə ʃɑrk wʌz maɪ ˈfeɪvərɪt./",
+      "zh": "那條鯊魚是我最愛的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I liked the starfish most.",
+      "phonetic": "/aɪ laɪkt ðə ˈstɑrˌfɪʃ moʊst./",
+      "zh": "我最喜歡海星。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And the otters made me laugh.",
+      "phonetic": "/ænd ðə ˈɑtərz meɪd mi læf./",
+      "zh": "海獺讓我笑個不停。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we come back soon?",
+      "phonetic": "/kæn wi kʌm bæk sun?/",
+      "zh": "我們很快還能來嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, our pass lasts a year.",
+      "phonetic": "/jɛs, ɑʊr pæs læsts ə jɪr./",
+      "zh": "可以，我們的年卡有效一年。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let us plan it for Sunday.",
+      "phonetic": "/lɛt ʌs plæn ɪt fər ˈsʌnˌdeɪ./",
+      "zh": "那就排在下週日。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Write it on the fridge.",
+      "phonetic": "/raɪt ɪt ɑn ðə frɪdʒ./",
+      "zh": "寫下來貼在冰箱上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you bring the car keys?",
+      "phonetic": "/dɪd ju brɪŋ ðə kɑr kiz?/",
+      "zh": "你有帶車鑰匙嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, plus the extra water.",
+      "phonetic": "/jɛs, plʌs ði ˈɛkstrə ˈwɔtər./",
+      "zh": "有，還多帶了一瓶水。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Say bye to the fish.",
+      "phonetic": "/seɪ baɪ tə ðə fɪʃ./",
+      "zh": "跟魚兒說再見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The kids waved at the glass.",
+      "phonetic": "/ðə kɪdz weɪvd æt ðə ɡlæs./",
+      "zh": "孩子們對著玻璃揮手。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We got home late but happy.",
+      "phonetic": "/wi ɡɑt hoʊm leɪt bʌt ˈhæpi./",
+      "zh": "我們到家時很晚，但很快樂。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The kids slept in the car.",
+      "phonetic": "/ðə kɪdz slɛpt ɪn ðə kɑr./",
+      "zh": "孩子們在車上就睡著了。"
+    }
+  ]
+}

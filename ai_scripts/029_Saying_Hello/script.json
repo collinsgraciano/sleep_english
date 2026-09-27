@@ -1,0 +1,2458 @@
+{
+  "title": "Everyday Phrases — Saying Hello",
+  "title_zh": "打招呼",
+  "scene_zh": "打招呼 · 情境對話",
+  "title_quote": "Good morning, everyone.",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】👋 實用打招呼必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — Saying Hello",
+  "youtube_description": "睡著學英文！這部影片收錄實用打招呼情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫），不用背，睡前聽就會。重複播放，讓英文自然進入你的大腦。👍 想學更多生活場景，請留言告訴我！別忘了訂閱+按讚。 #英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical Saying Hello phrase pairs (each pair: male normal speed → female slow speed → combined dialogue). No memorization needed—just listen before bed and absorb naturally. If you want more real-life scenarios, leave a comment! Subscribe and like!",
+  "youtube_tags": [
+    "英文聽力",
+    "睡前英文",
+    "打招呼英文",
+    "English listening",
+    "Sleep learning",
+    "A2 English",
+    "常用英文短語",
+    "零基礎英文",
+    "慢速英文",
+    "英文口語",
+    "Learn English",
+    "English for daily life",
+    "ESL",
+    "English conversation",
+    "聽英語",
+    "英文學習"
+  ],
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "Saying Hello",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "Saying Hello",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Social",
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "Good morning, everyone.",
+      "phonetic": "/gʊd ˈmɔrnɪŋ, ˈɛvriˌwən./",
+      "zh": "大家早。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Morning, sleepy head.",
+      "phonetic": "/ˈmɔrnɪŋ, sˈlipi hɛd./",
+      "zh": "早，瞌睡蟲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hi, how are you?",
+      "phonetic": "/haɪ, haʊ ər ju?/",
+      "zh": "嗨，你好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Doing well, thanks.",
+      "phonetic": "/duɪŋ wɛl, θæŋks./",
+      "zh": "很好，謝謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Long time no see.",
+      "phonetic": "/lɔŋ taɪm noʊ si./",
+      "zh": "好久不見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Way too long!",
+      "phonetic": "/weɪ tu lɔŋ!/",
+      "zh": "真的太久！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hey, nice to meet you.",
+      "phonetic": "/heɪ, nis tɪ mit ju./",
+      "zh": "嘿，很高興認識你。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Likewise, I am sure.",
+      "phonetic": "/ˈlaɪkˌwaɪz, aɪ æm ʃʊr./",
+      "zh": "我也是。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How was your weekend?",
+      "phonetic": "/haʊ wɑz jʊr ˈwiˌkɪnd?/",
+      "zh": "週末如何？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quiet and calm.",
+      "phonetic": "/kwaɪət ənd kɑm./",
+      "zh": "安靜平和。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Greet the new guy.",
+      "phonetic": "/grit ðə nu gaɪ./",
+      "zh": "跟新來的打招呼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Welcome aboard.",
+      "phonetic": "/ˈwɛlkəm əˈbɔrd./",
+      "zh": "歡迎加入。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wave hello, kids.",
+      "phonetic": "/weɪv hɛˈloʊ, kɪdz./",
+      "zh": "揮手說嗨，孩子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They giggle.",
+      "phonetic": "/ðeɪ ˈgɪgəl./",
+      "zh": "他們笑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Say hi to mom.",
+      "phonetic": "/seɪ haɪ tɪ mɑm./",
+      "zh": "跟媽說嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hi, mom, love you.",
+      "phonetic": "/haɪ, mɑm, ləv ju./",
+      "zh": "媽，嗨，愛你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A friendly nod, please.",
+      "phonetic": "/ə ˈfrɛndli nɑd, pliz./",
+      "zh": "友好點頭。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Simple and warm.",
+      "phonetic": "/ˈsɪmpəl ənd wɔrm./",
+      "zh": "簡單又暖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The neighbor said hi.",
+      "phonetic": "/ðə ˈneɪbər sɛd haɪ./",
+      "zh": "鄰居說嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wave back, sure.",
+      "phonetic": "/weɪv bæk, ʃʊr./",
+      "zh": "揮手回。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good afternoon, sir.",
+      "phonetic": "/gʊd ˌæftərˈnun, sər./",
+      "zh": "午安，先生。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Afternoon to you.",
+      "phonetic": "/ˌæftərˈnun tɪ ju./",
+      "zh": "午安。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hello on the phone.",
+      "phonetic": "/hɛˈloʊ ɔn ðə foʊn./",
+      "zh": "電話裏說哈囉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Is this Sam?",
+      "phonetic": "/ɪz ðɪs sæm?/",
+      "zh": "是 Sam 嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Bow slightly, polite.",
+      "phonetic": "/boʊ sˈlaɪtli, pəˈlaɪt./",
+      "zh": "微微鞠躬，有禮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Respect shown.",
+      "phonetic": "/rɪˈspɛkt ʃoʊn./",
+      "zh": "表敬意。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The dog wags hi.",
+      "phonetic": "/ðə dɔg wægz haɪ./",
+      "zh": "狗搖尾打招呼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Such a sweetie.",
+      "phonetic": "/səʧ ə sˈwiti./",
+      "zh": "小可愛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Shout a hello.",
+      "phonetic": "/ʃaʊt ə hɛˈloʊ./",
+      "zh": "喊一聲嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Across the yard.",
+      "phonetic": "/əˈkrɔs ðə jɑrd./",
+      "zh": "隔着院子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Smile when you greet.",
+      "phonetic": "/smaɪl wɪn ju grit./",
+      "zh": "微笑問候。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It warms up.",
+      "phonetic": "/ɪt wɔrmz əp./",
+      "zh": "氣氛暖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The class says hello.",
+      "phonetic": "/ðə klæs sɪz hɛˈloʊ./",
+      "zh": "全班說哈囉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In unison, cute.",
+      "phonetic": "/ɪn ˈjunɪsən, kjut./",
+      "zh": "齊聲，可愛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hi from the door.",
+      "phonetic": "/haɪ frəm ðə dɔr./",
+      "zh": "門口說嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Come on in.",
+      "phonetic": "/kəm ɔn ɪn./",
+      "zh": "進來吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A text says hi.",
+      "phonetic": "/ə tɛkst sɪz haɪ./",
+      "zh": "簡訊說嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Reply with a heart.",
+      "phonetic": "/rɪˈplaɪ wɪθ ə hɑrt./",
+      "zh": "回愛心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good evening, friends.",
+      "phonetic": "/gʊd ˈivnɪŋ, frɛndz./",
+      "zh": "晚安，朋友。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Evening, gather round.",
+      "phonetic": "/ˈivnɪŋ, ˈgæðər raʊnd./",
+      "zh": "晚上好，圍過來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Greet the guest.",
+      "phonetic": "/grit ðə gɛst./",
+      "zh": "迎接客人。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So glad you came.",
+      "phonetic": "/soʊ glæd ju keɪm./",
+      "zh": "真高興你來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hey, over here!",
+      "phonetic": "/heɪ, ˈoʊvər hir!/",
+      "zh": "嘿，這邊！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spotted you.",
+      "phonetic": "/ˈspɑtɪd ju./",
+      "zh": "看到你了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A quiet hello works.",
+      "phonetic": "/ə kwaɪət hɛˈloʊ wərks./",
+      "zh": "輕聲哈囉也好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In the library.",
+      "phonetic": "/ɪn ðə ˈlaɪbrɛˌri./",
+      "zh": "在圖書館。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The baby says hi.",
+      "phonetic": "/ðə ˈbeɪbi sɪz haɪ./",
+      "zh": "寶寶說嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cooing, adorable.",
+      "phonetic": "/kuɪŋ, əˈdɔrəbəl./",
+      "zh": "咿呀，可愛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The colleague nodded.",
+      "phonetic": "/ðə ˈkɑlig ˈnɑdɪd./",
+      "zh": "同事點頭。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Busy, but kind.",
+      "phonetic": "/ˈbɪzi, bət kaɪnd./",
+      "zh": "忙，但親切。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hello in French?",
+      "phonetic": "/hɛˈloʊ ɪn frɛnʧ?/",
+      "zh": "法語哈囉？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Bonjour, oui.",
+      "phonetic": "/bənˈʒʊr, wi./",
+      "zh": "Bonjour，對。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The mailman waves.",
+      "phonetic": "/ðə ˈmeɪlˌmæn weɪvz./",
+      "zh": "郵差揮手。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Daily hello.",
+      "phonetic": "/ˈdeɪli hɛˈloʊ./",
+      "zh": "每天哈囉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Say it with cheer.",
+      "phonetic": "/seɪ ɪt wɪθ ʧɪr./",
+      "zh": "開心地說。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Energy helps.",
+      "phonetic": "/ˈɛnərʤi hɛlps./",
+      "zh": "有活力好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A handshake, formal.",
+      "phonetic": "/ə ˈhændˌʃeɪk, ˈfɔrməl./",
+      "zh": "握手，正式。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Firm, not hard.",
+      "phonetic": "/fərm, nɑt hɑrd./",
+      "zh": "穩，不緊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat meows hi.",
+      "phonetic": "/ðə kæt meows* haɪ./",
+      "zh": "貓喵一聲嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Demands attention.",
+      "phonetic": "/dɪˈmændz əˈtɛnʃən./",
+      "zh": "求關注。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hi to the team.",
+      "phonetic": "/haɪ tɪ ðə tim./",
+      "zh": "跟團隊說嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ready for work.",
+      "phonetic": "/ˈrɛdi fər wərk./",
+      "zh": "準備工作。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A warm hello, please.",
+      "phonetic": "/ə wɔrm hɛˈloʊ, pliz./",
+      "zh": "溫暖的哈囉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sets the tone.",
+      "phonetic": "/sɛts ðə toʊn./",
+      "zh": "定調。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hello, good to see.",
+      "phonetic": "/hɛˈloʊ, gʊd tɪ si./",
+      "zh": "哈囉，真高興見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You too, pal.",
+      "phonetic": "/ju tu, pæl./",
+      "zh": "我也是，夥伴。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hello, good to see.",
+      "phonetic": "/hɛˈloʊ, gʊd tɪ si./",
+      "zh": "哈囉，真高興見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You too, pal.",
+      "phonetic": "/ju tu, pæl./",
+      "zh": "我也是，夥伴。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A warm hello, please.",
+      "phonetic": "/ə wɔrm hɛˈloʊ, pliz./",
+      "zh": "溫暖的哈囉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sets the tone.",
+      "phonetic": "/sɛts ðə toʊn./",
+      "zh": "定調。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hi to the team.",
+      "phonetic": "/haɪ tɪ ðə tim./",
+      "zh": "跟團隊說嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ready for work.",
+      "phonetic": "/ˈrɛdi fər wərk./",
+      "zh": "準備工作。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat meows hi.",
+      "phonetic": "/ðə kæt meows* haɪ./",
+      "zh": "貓喵一聲嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Demands attention.",
+      "phonetic": "/dɪˈmændz əˈtɛnʃən./",
+      "zh": "求關注。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A handshake, formal.",
+      "phonetic": "/ə ˈhændˌʃeɪk, ˈfɔrməl./",
+      "zh": "握手，正式。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Firm, not hard.",
+      "phonetic": "/fərm, nɑt hɑrd./",
+      "zh": "穩，不緊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Say it with cheer.",
+      "phonetic": "/seɪ ɪt wɪθ ʧɪr./",
+      "zh": "開心地說。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Energy helps.",
+      "phonetic": "/ˈɛnərʤi hɛlps./",
+      "zh": "有活力好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The mailman waves.",
+      "phonetic": "/ðə ˈmeɪlˌmæn weɪvz./",
+      "zh": "郵差揮手。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Daily hello.",
+      "phonetic": "/ˈdeɪli hɛˈloʊ./",
+      "zh": "每天哈囉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hello in French?",
+      "phonetic": "/hɛˈloʊ ɪn frɛnʧ?/",
+      "zh": "法語哈囉？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Bonjour, oui.",
+      "phonetic": "/bənˈʒʊr, wi./",
+      "zh": "Bonjour，對。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The colleague nodded.",
+      "phonetic": "/ðə ˈkɑlig ˈnɑdɪd./",
+      "zh": "同事點頭。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Busy, but kind.",
+      "phonetic": "/ˈbɪzi, bət kaɪnd./",
+      "zh": "忙，但親切。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The baby says hi.",
+      "phonetic": "/ðə ˈbeɪbi sɪz haɪ./",
+      "zh": "寶寶說嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cooing, adorable.",
+      "phonetic": "/kuɪŋ, əˈdɔrəbəl./",
+      "zh": "咿呀，可愛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A quiet hello works.",
+      "phonetic": "/ə kwaɪət hɛˈloʊ wərks./",
+      "zh": "輕聲哈囉也好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In the library.",
+      "phonetic": "/ɪn ðə ˈlaɪbrɛˌri./",
+      "zh": "在圖書館。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hey, over here!",
+      "phonetic": "/heɪ, ˈoʊvər hir!/",
+      "zh": "嘿，這邊！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spotted you.",
+      "phonetic": "/ˈspɑtɪd ju./",
+      "zh": "看到你了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Greet the guest.",
+      "phonetic": "/grit ðə gɛst./",
+      "zh": "迎接客人。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So glad you came.",
+      "phonetic": "/soʊ glæd ju keɪm./",
+      "zh": "真高興你來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good evening, friends.",
+      "phonetic": "/gʊd ˈivnɪŋ, frɛndz./",
+      "zh": "晚安，朋友。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Evening, gather round.",
+      "phonetic": "/ˈivnɪŋ, ˈgæðər raʊnd./",
+      "zh": "晚上好，圍過來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A text says hi.",
+      "phonetic": "/ə tɛkst sɪz haɪ./",
+      "zh": "簡訊說嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Reply with a heart.",
+      "phonetic": "/rɪˈplaɪ wɪθ ə hɑrt./",
+      "zh": "回愛心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hi from the door.",
+      "phonetic": "/haɪ frəm ðə dɔr./",
+      "zh": "門口說嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Come on in.",
+      "phonetic": "/kəm ɔn ɪn./",
+      "zh": "進來吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The class says hello.",
+      "phonetic": "/ðə klæs sɪz hɛˈloʊ./",
+      "zh": "全班說哈囉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In unison, cute.",
+      "phonetic": "/ɪn ˈjunɪsən, kjut./",
+      "zh": "齊聲，可愛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Smile when you greet.",
+      "phonetic": "/smaɪl wɪn ju grit./",
+      "zh": "微笑問候。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It warms up.",
+      "phonetic": "/ɪt wɔrmz əp./",
+      "zh": "氣氛暖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Shout a hello.",
+      "phonetic": "/ʃaʊt ə hɛˈloʊ./",
+      "zh": "喊一聲嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Across the yard.",
+      "phonetic": "/əˈkrɔs ðə jɑrd./",
+      "zh": "隔着院子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The dog wags hi.",
+      "phonetic": "/ðə dɔg wægz haɪ./",
+      "zh": "狗搖尾打招呼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Such a sweetie.",
+      "phonetic": "/səʧ ə sˈwiti./",
+      "zh": "小可愛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Bow slightly, polite.",
+      "phonetic": "/boʊ sˈlaɪtli, pəˈlaɪt./",
+      "zh": "微微鞠躬，有禮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Respect shown.",
+      "phonetic": "/rɪˈspɛkt ʃoʊn./",
+      "zh": "表敬意。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hello on the phone.",
+      "phonetic": "/hɛˈloʊ ɔn ðə foʊn./",
+      "zh": "電話裏說哈囉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Is this Sam?",
+      "phonetic": "/ɪz ðɪs sæm?/",
+      "zh": "是 Sam 嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good afternoon, sir.",
+      "phonetic": "/gʊd ˌæftərˈnun, sər./",
+      "zh": "午安，先生。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Afternoon to you.",
+      "phonetic": "/ˌæftərˈnun tɪ ju./",
+      "zh": "午安。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The neighbor said hi.",
+      "phonetic": "/ðə ˈneɪbər sɛd haɪ./",
+      "zh": "鄰居說嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wave back, sure.",
+      "phonetic": "/weɪv bæk, ʃʊr./",
+      "zh": "揮手回。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A friendly nod, please.",
+      "phonetic": "/ə ˈfrɛndli nɑd, pliz./",
+      "zh": "友好點頭。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Simple and warm.",
+      "phonetic": "/ˈsɪmpəl ənd wɔrm./",
+      "zh": "簡單又暖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Say hi to mom.",
+      "phonetic": "/seɪ haɪ tɪ mɑm./",
+      "zh": "跟媽說嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hi, mom, love you.",
+      "phonetic": "/haɪ, mɑm, ləv ju./",
+      "zh": "媽，嗨，愛你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wave hello, kids.",
+      "phonetic": "/weɪv hɛˈloʊ, kɪdz./",
+      "zh": "揮手說嗨，孩子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They giggle.",
+      "phonetic": "/ðeɪ ˈgɪgəl./",
+      "zh": "他們笑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Greet the new guy.",
+      "phonetic": "/grit ðə nu gaɪ./",
+      "zh": "跟新來的打招呼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Welcome aboard.",
+      "phonetic": "/ˈwɛlkəm əˈbɔrd./",
+      "zh": "歡迎加入。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How was your weekend?",
+      "phonetic": "/haʊ wɑz jʊr ˈwiˌkɪnd?/",
+      "zh": "週末如何？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quiet and calm.",
+      "phonetic": "/kwaɪət ənd kɑm./",
+      "zh": "安靜平和。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hey, nice to meet you.",
+      "phonetic": "/heɪ, nis tɪ mit ju./",
+      "zh": "嘿，很高興認識你。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Likewise, I am sure.",
+      "phonetic": "/ˈlaɪkˌwaɪz, aɪ æm ʃʊr./",
+      "zh": "我也是。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Long time no see.",
+      "phonetic": "/lɔŋ taɪm noʊ si./",
+      "zh": "好久不見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Way too long!",
+      "phonetic": "/weɪ tu lɔŋ!/",
+      "zh": "真的太久！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hi, how are you?",
+      "phonetic": "/haɪ, haʊ ər ju?/",
+      "zh": "嗨，你好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Doing well, thanks.",
+      "phonetic": "/duɪŋ wɛl, θæŋks./",
+      "zh": "很好，謝謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good morning, everyone.",
+      "phonetic": "/gʊd ˈmɔrnɪŋ, ˈɛvriˌwən./",
+      "zh": "大家早。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Morning, sleepy head.",
+      "phonetic": "/ˈmɔrnɪŋ, sˈlipi hɛd./",
+      "zh": "早，瞌睡蟲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good morning, everyone.",
+      "phonetic": "/gʊd ˈmɔrnɪŋ, ˈɛvriˌwən./",
+      "zh": "大家早。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Morning, sleepy head.",
+      "phonetic": "/ˈmɔrnɪŋ, sˈlipi hɛd./",
+      "zh": "早，瞌睡蟲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hi, how are you?",
+      "phonetic": "/haɪ, haʊ ər ju?/",
+      "zh": "嗨，你好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Doing well, thanks.",
+      "phonetic": "/duɪŋ wɛl, θæŋks./",
+      "zh": "很好，謝謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Long time no see.",
+      "phonetic": "/lɔŋ taɪm noʊ si./",
+      "zh": "好久不見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Way too long!",
+      "phonetic": "/weɪ tu lɔŋ!/",
+      "zh": "真的太久！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hey, nice to meet you.",
+      "phonetic": "/heɪ, nis tɪ mit ju./",
+      "zh": "嘿，很高興認識你。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Likewise, I am sure.",
+      "phonetic": "/ˈlaɪkˌwaɪz, aɪ æm ʃʊr./",
+      "zh": "我也是。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How was your weekend?",
+      "phonetic": "/haʊ wɑz jʊr ˈwiˌkɪnd?/",
+      "zh": "週末如何？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quiet and calm.",
+      "phonetic": "/kwaɪət ənd kɑm./",
+      "zh": "安靜平和。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Greet the new guy.",
+      "phonetic": "/grit ðə nu gaɪ./",
+      "zh": "跟新來的打招呼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Welcome aboard.",
+      "phonetic": "/ˈwɛlkəm əˈbɔrd./",
+      "zh": "歡迎加入。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wave hello, kids.",
+      "phonetic": "/weɪv hɛˈloʊ, kɪdz./",
+      "zh": "揮手說嗨，孩子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They giggle.",
+      "phonetic": "/ðeɪ ˈgɪgəl./",
+      "zh": "他們笑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Say hi to mom.",
+      "phonetic": "/seɪ haɪ tɪ mɑm./",
+      "zh": "跟媽說嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hi, mom, love you.",
+      "phonetic": "/haɪ, mɑm, ləv ju./",
+      "zh": "媽，嗨，愛你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A friendly nod, please.",
+      "phonetic": "/ə ˈfrɛndli nɑd, pliz./",
+      "zh": "友好點頭。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Simple and warm.",
+      "phonetic": "/ˈsɪmpəl ənd wɔrm./",
+      "zh": "簡單又暖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The neighbor said hi.",
+      "phonetic": "/ðə ˈneɪbər sɛd haɪ./",
+      "zh": "鄰居說嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wave back, sure.",
+      "phonetic": "/weɪv bæk, ʃʊr./",
+      "zh": "揮手回。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good afternoon, sir.",
+      "phonetic": "/gʊd ˌæftərˈnun, sər./",
+      "zh": "午安，先生。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Afternoon to you.",
+      "phonetic": "/ˌæftərˈnun tɪ ju./",
+      "zh": "午安。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hello on the phone.",
+      "phonetic": "/hɛˈloʊ ɔn ðə foʊn./",
+      "zh": "電話裏說哈囉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Is this Sam?",
+      "phonetic": "/ɪz ðɪs sæm?/",
+      "zh": "是 Sam 嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Bow slightly, polite.",
+      "phonetic": "/boʊ sˈlaɪtli, pəˈlaɪt./",
+      "zh": "微微鞠躬，有禮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Respect shown.",
+      "phonetic": "/rɪˈspɛkt ʃoʊn./",
+      "zh": "表敬意。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The dog wags hi.",
+      "phonetic": "/ðə dɔg wægz haɪ./",
+      "zh": "狗搖尾打招呼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Such a sweetie.",
+      "phonetic": "/səʧ ə sˈwiti./",
+      "zh": "小可愛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Shout a hello.",
+      "phonetic": "/ʃaʊt ə hɛˈloʊ./",
+      "zh": "喊一聲嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Across the yard.",
+      "phonetic": "/əˈkrɔs ðə jɑrd./",
+      "zh": "隔着院子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Smile when you greet.",
+      "phonetic": "/smaɪl wɪn ju grit./",
+      "zh": "微笑問候。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It warms up.",
+      "phonetic": "/ɪt wɔrmz əp./",
+      "zh": "氣氛暖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The class says hello.",
+      "phonetic": "/ðə klæs sɪz hɛˈloʊ./",
+      "zh": "全班說哈囉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In unison, cute.",
+      "phonetic": "/ɪn ˈjunɪsən, kjut./",
+      "zh": "齊聲，可愛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hi from the door.",
+      "phonetic": "/haɪ frəm ðə dɔr./",
+      "zh": "門口說嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Come on in.",
+      "phonetic": "/kəm ɔn ɪn./",
+      "zh": "進來吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A text says hi.",
+      "phonetic": "/ə tɛkst sɪz haɪ./",
+      "zh": "簡訊說嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Reply with a heart.",
+      "phonetic": "/rɪˈplaɪ wɪθ ə hɑrt./",
+      "zh": "回愛心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good evening, friends.",
+      "phonetic": "/gʊd ˈivnɪŋ, frɛndz./",
+      "zh": "晚安，朋友。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Evening, gather round.",
+      "phonetic": "/ˈivnɪŋ, ˈgæðər raʊnd./",
+      "zh": "晚上好，圍過來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Greet the guest.",
+      "phonetic": "/grit ðə gɛst./",
+      "zh": "迎接客人。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So glad you came.",
+      "phonetic": "/soʊ glæd ju keɪm./",
+      "zh": "真高興你來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hey, over here!",
+      "phonetic": "/heɪ, ˈoʊvər hir!/",
+      "zh": "嘿，這邊！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spotted you.",
+      "phonetic": "/ˈspɑtɪd ju./",
+      "zh": "看到你了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A quiet hello works.",
+      "phonetic": "/ə kwaɪət hɛˈloʊ wərks./",
+      "zh": "輕聲哈囉也好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In the library.",
+      "phonetic": "/ɪn ðə ˈlaɪbrɛˌri./",
+      "zh": "在圖書館。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The baby says hi.",
+      "phonetic": "/ðə ˈbeɪbi sɪz haɪ./",
+      "zh": "寶寶說嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cooing, adorable.",
+      "phonetic": "/kuɪŋ, əˈdɔrəbəl./",
+      "zh": "咿呀，可愛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The colleague nodded.",
+      "phonetic": "/ðə ˈkɑlig ˈnɑdɪd./",
+      "zh": "同事點頭。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Busy, but kind.",
+      "phonetic": "/ˈbɪzi, bət kaɪnd./",
+      "zh": "忙，但親切。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hello in French?",
+      "phonetic": "/hɛˈloʊ ɪn frɛnʧ?/",
+      "zh": "法語哈囉？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Bonjour, oui.",
+      "phonetic": "/bənˈʒʊr, wi./",
+      "zh": "Bonjour，對。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The mailman waves.",
+      "phonetic": "/ðə ˈmeɪlˌmæn weɪvz./",
+      "zh": "郵差揮手。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Daily hello.",
+      "phonetic": "/ˈdeɪli hɛˈloʊ./",
+      "zh": "每天哈囉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Say it with cheer.",
+      "phonetic": "/seɪ ɪt wɪθ ʧɪr./",
+      "zh": "開心地說。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Energy helps.",
+      "phonetic": "/ˈɛnərʤi hɛlps./",
+      "zh": "有活力好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A handshake, formal.",
+      "phonetic": "/ə ˈhændˌʃeɪk, ˈfɔrməl./",
+      "zh": "握手，正式。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Firm, not hard.",
+      "phonetic": "/fərm, nɑt hɑrd./",
+      "zh": "穩，不緊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat meows hi.",
+      "phonetic": "/ðə kæt meows* haɪ./",
+      "zh": "貓喵一聲嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Demands attention.",
+      "phonetic": "/dɪˈmændz əˈtɛnʃən./",
+      "zh": "求關注。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hi to the team.",
+      "phonetic": "/haɪ tɪ ðə tim./",
+      "zh": "跟團隊說嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ready for work.",
+      "phonetic": "/ˈrɛdi fər wərk./",
+      "zh": "準備工作。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A warm hello, please.",
+      "phonetic": "/ə wɔrm hɛˈloʊ, pliz./",
+      "zh": "溫暖的哈囉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sets the tone.",
+      "phonetic": "/sɛts ðə toʊn./",
+      "zh": "定調。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hello, good to see.",
+      "phonetic": "/hɛˈloʊ, gʊd tɪ si./",
+      "zh": "哈囉，真高興見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You too, pal.",
+      "phonetic": "/ju tu, pæl./",
+      "zh": "我也是，夥伴。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hello, good to see.",
+      "phonetic": "/hɛˈloʊ, gʊd tɪ si./",
+      "zh": "哈囉，真高興見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You too, pal.",
+      "phonetic": "/ju tu, pæl./",
+      "zh": "我也是，夥伴。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A warm hello, please.",
+      "phonetic": "/ə wɔrm hɛˈloʊ, pliz./",
+      "zh": "溫暖的哈囉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sets the tone.",
+      "phonetic": "/sɛts ðə toʊn./",
+      "zh": "定調。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hi to the team.",
+      "phonetic": "/haɪ tɪ ðə tim./",
+      "zh": "跟團隊說嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ready for work.",
+      "phonetic": "/ˈrɛdi fər wərk./",
+      "zh": "準備工作。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat meows hi.",
+      "phonetic": "/ðə kæt meows* haɪ./",
+      "zh": "貓喵一聲嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Demands attention.",
+      "phonetic": "/dɪˈmændz əˈtɛnʃən./",
+      "zh": "求關注。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A handshake, formal.",
+      "phonetic": "/ə ˈhændˌʃeɪk, ˈfɔrməl./",
+      "zh": "握手，正式。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Firm, not hard.",
+      "phonetic": "/fərm, nɑt hɑrd./",
+      "zh": "穩，不緊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Say it with cheer.",
+      "phonetic": "/seɪ ɪt wɪθ ʧɪr./",
+      "zh": "開心地說。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Energy helps.",
+      "phonetic": "/ˈɛnərʤi hɛlps./",
+      "zh": "有活力好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The mailman waves.",
+      "phonetic": "/ðə ˈmeɪlˌmæn weɪvz./",
+      "zh": "郵差揮手。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Daily hello.",
+      "phonetic": "/ˈdeɪli hɛˈloʊ./",
+      "zh": "每天哈囉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hello in French?",
+      "phonetic": "/hɛˈloʊ ɪn frɛnʧ?/",
+      "zh": "法語哈囉？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Bonjour, oui.",
+      "phonetic": "/bənˈʒʊr, wi./",
+      "zh": "Bonjour，對。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The colleague nodded.",
+      "phonetic": "/ðə ˈkɑlig ˈnɑdɪd./",
+      "zh": "同事點頭。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Busy, but kind.",
+      "phonetic": "/ˈbɪzi, bət kaɪnd./",
+      "zh": "忙，但親切。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The baby says hi.",
+      "phonetic": "/ðə ˈbeɪbi sɪz haɪ./",
+      "zh": "寶寶說嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cooing, adorable.",
+      "phonetic": "/kuɪŋ, əˈdɔrəbəl./",
+      "zh": "咿呀，可愛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A quiet hello works.",
+      "phonetic": "/ə kwaɪət hɛˈloʊ wərks./",
+      "zh": "輕聲哈囉也好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In the library.",
+      "phonetic": "/ɪn ðə ˈlaɪbrɛˌri./",
+      "zh": "在圖書館。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hey, over here!",
+      "phonetic": "/heɪ, ˈoʊvər hir!/",
+      "zh": "嘿，這邊！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spotted you.",
+      "phonetic": "/ˈspɑtɪd ju./",
+      "zh": "看到你了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Greet the guest.",
+      "phonetic": "/grit ðə gɛst./",
+      "zh": "迎接客人。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So glad you came.",
+      "phonetic": "/soʊ glæd ju keɪm./",
+      "zh": "真高興你來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good evening, friends.",
+      "phonetic": "/gʊd ˈivnɪŋ, frɛndz./",
+      "zh": "晚安，朋友。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Evening, gather round.",
+      "phonetic": "/ˈivnɪŋ, ˈgæðər raʊnd./",
+      "zh": "晚上好，圍過來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A text says hi.",
+      "phonetic": "/ə tɛkst sɪz haɪ./",
+      "zh": "簡訊說嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Reply with a heart.",
+      "phonetic": "/rɪˈplaɪ wɪθ ə hɑrt./",
+      "zh": "回愛心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hi from the door.",
+      "phonetic": "/haɪ frəm ðə dɔr./",
+      "zh": "門口說嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Come on in.",
+      "phonetic": "/kəm ɔn ɪn./",
+      "zh": "進來吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The class says hello.",
+      "phonetic": "/ðə klæs sɪz hɛˈloʊ./",
+      "zh": "全班說哈囉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In unison, cute.",
+      "phonetic": "/ɪn ˈjunɪsən, kjut./",
+      "zh": "齊聲，可愛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Smile when you greet.",
+      "phonetic": "/smaɪl wɪn ju grit./",
+      "zh": "微笑問候。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It warms up.",
+      "phonetic": "/ɪt wɔrmz əp./",
+      "zh": "氣氛暖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Shout a hello.",
+      "phonetic": "/ʃaʊt ə hɛˈloʊ./",
+      "zh": "喊一聲嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Across the yard.",
+      "phonetic": "/əˈkrɔs ðə jɑrd./",
+      "zh": "隔着院子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The dog wags hi.",
+      "phonetic": "/ðə dɔg wægz haɪ./",
+      "zh": "狗搖尾打招呼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Such a sweetie.",
+      "phonetic": "/səʧ ə sˈwiti./",
+      "zh": "小可愛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Bow slightly, polite.",
+      "phonetic": "/boʊ sˈlaɪtli, pəˈlaɪt./",
+      "zh": "微微鞠躬，有禮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Respect shown.",
+      "phonetic": "/rɪˈspɛkt ʃoʊn./",
+      "zh": "表敬意。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hello on the phone.",
+      "phonetic": "/hɛˈloʊ ɔn ðə foʊn./",
+      "zh": "電話裏說哈囉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Is this Sam?",
+      "phonetic": "/ɪz ðɪs sæm?/",
+      "zh": "是 Sam 嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good afternoon, sir.",
+      "phonetic": "/gʊd ˌæftərˈnun, sər./",
+      "zh": "午安，先生。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Afternoon to you.",
+      "phonetic": "/ˌæftərˈnun tɪ ju./",
+      "zh": "午安。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The neighbor said hi.",
+      "phonetic": "/ðə ˈneɪbər sɛd haɪ./",
+      "zh": "鄰居說嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wave back, sure.",
+      "phonetic": "/weɪv bæk, ʃʊr./",
+      "zh": "揮手回。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A friendly nod, please.",
+      "phonetic": "/ə ˈfrɛndli nɑd, pliz./",
+      "zh": "友好點頭。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Simple and warm.",
+      "phonetic": "/ˈsɪmpəl ənd wɔrm./",
+      "zh": "簡單又暖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Say hi to mom.",
+      "phonetic": "/seɪ haɪ tɪ mɑm./",
+      "zh": "跟媽說嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hi, mom, love you.",
+      "phonetic": "/haɪ, mɑm, ləv ju./",
+      "zh": "媽，嗨，愛你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wave hello, kids.",
+      "phonetic": "/weɪv hɛˈloʊ, kɪdz./",
+      "zh": "揮手說嗨，孩子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They giggle.",
+      "phonetic": "/ðeɪ ˈgɪgəl./",
+      "zh": "他們笑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Greet the new guy.",
+      "phonetic": "/grit ðə nu gaɪ./",
+      "zh": "跟新來的打招呼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Welcome aboard.",
+      "phonetic": "/ˈwɛlkəm əˈbɔrd./",
+      "zh": "歡迎加入。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How was your weekend?",
+      "phonetic": "/haʊ wɑz jʊr ˈwiˌkɪnd?/",
+      "zh": "週末如何？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quiet and calm.",
+      "phonetic": "/kwaɪət ənd kɑm./",
+      "zh": "安靜平和。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hey, nice to meet you.",
+      "phonetic": "/heɪ, nis tɪ mit ju./",
+      "zh": "嘿，很高興認識你。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Likewise, I am sure.",
+      "phonetic": "/ˈlaɪkˌwaɪz, aɪ æm ʃʊr./",
+      "zh": "我也是。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Long time no see.",
+      "phonetic": "/lɔŋ taɪm noʊ si./",
+      "zh": "好久不見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Way too long!",
+      "phonetic": "/weɪ tu lɔŋ!/",
+      "zh": "真的太久！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hi, how are you?",
+      "phonetic": "/haɪ, haʊ ər ju?/",
+      "zh": "嗨，你好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Doing well, thanks.",
+      "phonetic": "/duɪŋ wɛl, θæŋks./",
+      "zh": "很好，謝謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good morning, everyone.",
+      "phonetic": "/gʊd ˈmɔrnɪŋ, ˈɛvriˌwən./",
+      "zh": "大家早。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Morning, sleepy head.",
+      "phonetic": "/ˈmɔrnɪŋ, sˈlipi hɛd./",
+      "zh": "早，瞌睡蟲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good morning, everyone.",
+      "phonetic": "/gʊd ˈmɔrnɪŋ, ˈɛvriˌwən./",
+      "zh": "大家早。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Morning, sleepy head.",
+      "phonetic": "/ˈmɔrnɪŋ, sˈlipi hɛd./",
+      "zh": "早，瞌睡蟲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hi, how are you?",
+      "phonetic": "/haɪ, haʊ ər ju?/",
+      "zh": "嗨，你好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Doing well, thanks.",
+      "phonetic": "/duɪŋ wɛl, θæŋks./",
+      "zh": "很好，謝謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Long time no see.",
+      "phonetic": "/lɔŋ taɪm noʊ si./",
+      "zh": "好久不見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Way too long!",
+      "phonetic": "/weɪ tu lɔŋ!/",
+      "zh": "真的太久！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hey, nice to meet you.",
+      "phonetic": "/heɪ, nis tɪ mit ju./",
+      "zh": "嘿，很高興認識你。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Likewise, I am sure.",
+      "phonetic": "/ˈlaɪkˌwaɪz, aɪ æm ʃʊr./",
+      "zh": "我也是。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How was your weekend?",
+      "phonetic": "/haʊ wɑz jʊr ˈwiˌkɪnd?/",
+      "zh": "週末如何？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quiet and calm.",
+      "phonetic": "/kwaɪət ənd kɑm./",
+      "zh": "安靜平和。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Greet the new guy.",
+      "phonetic": "/grit ðə nu gaɪ./",
+      "zh": "跟新來的打招呼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Welcome aboard.",
+      "phonetic": "/ˈwɛlkəm əˈbɔrd./",
+      "zh": "歡迎加入。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wave hello, kids.",
+      "phonetic": "/weɪv hɛˈloʊ, kɪdz./",
+      "zh": "揮手說嗨，孩子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They giggle.",
+      "phonetic": "/ðeɪ ˈgɪgəl./",
+      "zh": "他們笑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Say hi to mom.",
+      "phonetic": "/seɪ haɪ tɪ mɑm./",
+      "zh": "跟媽說嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hi, mom, love you.",
+      "phonetic": "/haɪ, mɑm, ləv ju./",
+      "zh": "媽，嗨，愛你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A friendly nod, please.",
+      "phonetic": "/ə ˈfrɛndli nɑd, pliz./",
+      "zh": "友好點頭。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Simple and warm.",
+      "phonetic": "/ˈsɪmpəl ənd wɔrm./",
+      "zh": "簡單又暖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The neighbor said hi.",
+      "phonetic": "/ðə ˈneɪbər sɛd haɪ./",
+      "zh": "鄰居說嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wave back, sure.",
+      "phonetic": "/weɪv bæk, ʃʊr./",
+      "zh": "揮手回。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good afternoon, sir.",
+      "phonetic": "/gʊd ˌæftərˈnun, sər./",
+      "zh": "午安，先生。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Afternoon to you.",
+      "phonetic": "/ˌæftərˈnun tɪ ju./",
+      "zh": "午安。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hello on the phone.",
+      "phonetic": "/hɛˈloʊ ɔn ðə foʊn./",
+      "zh": "電話裏說哈囉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Is this Sam?",
+      "phonetic": "/ɪz ðɪs sæm?/",
+      "zh": "是 Sam 嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Bow slightly, polite.",
+      "phonetic": "/boʊ sˈlaɪtli, pəˈlaɪt./",
+      "zh": "微微鞠躬，有禮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Respect shown.",
+      "phonetic": "/rɪˈspɛkt ʃoʊn./",
+      "zh": "表敬意。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The dog wags hi.",
+      "phonetic": "/ðə dɔg wægz haɪ./",
+      "zh": "狗搖尾打招呼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Such a sweetie.",
+      "phonetic": "/səʧ ə sˈwiti./",
+      "zh": "小可愛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Shout a hello.",
+      "phonetic": "/ʃaʊt ə hɛˈloʊ./",
+      "zh": "喊一聲嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Across the yard.",
+      "phonetic": "/əˈkrɔs ðə jɑrd./",
+      "zh": "隔着院子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Smile when you greet.",
+      "phonetic": "/smaɪl wɪn ju grit./",
+      "zh": "微笑問候。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It warms up.",
+      "phonetic": "/ɪt wɔrmz əp./",
+      "zh": "氣氛暖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The class says hello.",
+      "phonetic": "/ðə klæs sɪz hɛˈloʊ./",
+      "zh": "全班說哈囉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In unison, cute.",
+      "phonetic": "/ɪn ˈjunɪsən, kjut./",
+      "zh": "齊聲，可愛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hi from the door.",
+      "phonetic": "/haɪ frəm ðə dɔr./",
+      "zh": "門口說嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Come on in.",
+      "phonetic": "/kəm ɔn ɪn./",
+      "zh": "進來吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A text says hi.",
+      "phonetic": "/ə tɛkst sɪz haɪ./",
+      "zh": "簡訊說嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Reply with a heart.",
+      "phonetic": "/rɪˈplaɪ wɪθ ə hɑrt./",
+      "zh": "回愛心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good evening, friends.",
+      "phonetic": "/gʊd ˈivnɪŋ, frɛndz./",
+      "zh": "晚安，朋友。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Evening, gather round.",
+      "phonetic": "/ˈivnɪŋ, ˈgæðər raʊnd./",
+      "zh": "晚上好，圍過來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Greet the guest.",
+      "phonetic": "/grit ðə gɛst./",
+      "zh": "迎接客人。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So glad you came.",
+      "phonetic": "/soʊ glæd ju keɪm./",
+      "zh": "真高興你來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hey, over here!",
+      "phonetic": "/heɪ, ˈoʊvər hir!/",
+      "zh": "嘿，這邊！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spotted you.",
+      "phonetic": "/ˈspɑtɪd ju./",
+      "zh": "看到你了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A quiet hello works.",
+      "phonetic": "/ə kwaɪət hɛˈloʊ wərks./",
+      "zh": "輕聲哈囉也好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In the library.",
+      "phonetic": "/ɪn ðə ˈlaɪbrɛˌri./",
+      "zh": "在圖書館。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The baby says hi.",
+      "phonetic": "/ðə ˈbeɪbi sɪz haɪ./",
+      "zh": "寶寶說嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cooing, adorable.",
+      "phonetic": "/kuɪŋ, əˈdɔrəbəl./",
+      "zh": "咿呀，可愛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The colleague nodded.",
+      "phonetic": "/ðə ˈkɑlig ˈnɑdɪd./",
+      "zh": "同事點頭。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Busy, but kind.",
+      "phonetic": "/ˈbɪzi, bət kaɪnd./",
+      "zh": "忙，但親切。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hello in French?",
+      "phonetic": "/hɛˈloʊ ɪn frɛnʧ?/",
+      "zh": "法語哈囉？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Bonjour, oui.",
+      "phonetic": "/bənˈʒʊr, wi./",
+      "zh": "Bonjour，對。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The mailman waves.",
+      "phonetic": "/ðə ˈmeɪlˌmæn weɪvz./",
+      "zh": "郵差揮手。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Daily hello.",
+      "phonetic": "/ˈdeɪli hɛˈloʊ./",
+      "zh": "每天哈囉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Say it with cheer.",
+      "phonetic": "/seɪ ɪt wɪθ ʧɪr./",
+      "zh": "開心地說。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Energy helps.",
+      "phonetic": "/ˈɛnərʤi hɛlps./",
+      "zh": "有活力好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A handshake, formal.",
+      "phonetic": "/ə ˈhændˌʃeɪk, ˈfɔrməl./",
+      "zh": "握手，正式。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Firm, not hard.",
+      "phonetic": "/fərm, nɑt hɑrd./",
+      "zh": "穩，不緊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat meows hi.",
+      "phonetic": "/ðə kæt meows* haɪ./",
+      "zh": "貓喵一聲嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Demands attention.",
+      "phonetic": "/dɪˈmændz əˈtɛnʃən./",
+      "zh": "求關注。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hi to the team.",
+      "phonetic": "/haɪ tɪ ðə tim./",
+      "zh": "跟團隊說嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ready for work.",
+      "phonetic": "/ˈrɛdi fər wərk./",
+      "zh": "準備工作。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A warm hello, please.",
+      "phonetic": "/ə wɔrm hɛˈloʊ, pliz./",
+      "zh": "溫暖的哈囉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sets the tone.",
+      "phonetic": "/sɛts ðə toʊn./",
+      "zh": "定調。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hello, good to see.",
+      "phonetic": "/hɛˈloʊ, gʊd tɪ si./",
+      "zh": "哈囉，真高興見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You too, pal.",
+      "phonetic": "/ju tu, pæl./",
+      "zh": "我也是，夥伴。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hello, good to see.",
+      "phonetic": "/hɛˈloʊ, gʊd tɪ si./",
+      "zh": "哈囉，真高興見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You too, pal.",
+      "phonetic": "/ju tu, pæl./",
+      "zh": "我也是，夥伴。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A warm hello, please.",
+      "phonetic": "/ə wɔrm hɛˈloʊ, pliz./",
+      "zh": "溫暖的哈囉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sets the tone.",
+      "phonetic": "/sɛts ðə toʊn./",
+      "zh": "定調。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hi to the team.",
+      "phonetic": "/haɪ tɪ ðə tim./",
+      "zh": "跟團隊說嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ready for work.",
+      "phonetic": "/ˈrɛdi fər wərk./",
+      "zh": "準備工作。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat meows hi.",
+      "phonetic": "/ðə kæt meows* haɪ./",
+      "zh": "貓喵一聲嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Demands attention.",
+      "phonetic": "/dɪˈmændz əˈtɛnʃən./",
+      "zh": "求關注。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A handshake, formal.",
+      "phonetic": "/ə ˈhændˌʃeɪk, ˈfɔrməl./",
+      "zh": "握手，正式。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Firm, not hard.",
+      "phonetic": "/fərm, nɑt hɑrd./",
+      "zh": "穩，不緊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Say it with cheer.",
+      "phonetic": "/seɪ ɪt wɪθ ʧɪr./",
+      "zh": "開心地說。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Energy helps.",
+      "phonetic": "/ˈɛnərʤi hɛlps./",
+      "zh": "有活力好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The mailman waves.",
+      "phonetic": "/ðə ˈmeɪlˌmæn weɪvz./",
+      "zh": "郵差揮手。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Daily hello.",
+      "phonetic": "/ˈdeɪli hɛˈloʊ./",
+      "zh": "每天哈囉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hello in French?",
+      "phonetic": "/hɛˈloʊ ɪn frɛnʧ?/",
+      "zh": "法語哈囉？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Bonjour, oui.",
+      "phonetic": "/bənˈʒʊr, wi./",
+      "zh": "Bonjour，對。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The colleague nodded.",
+      "phonetic": "/ðə ˈkɑlig ˈnɑdɪd./",
+      "zh": "同事點頭。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Busy, but kind.",
+      "phonetic": "/ˈbɪzi, bət kaɪnd./",
+      "zh": "忙，但親切。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The baby says hi.",
+      "phonetic": "/ðə ˈbeɪbi sɪz haɪ./",
+      "zh": "寶寶說嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cooing, adorable.",
+      "phonetic": "/kuɪŋ, əˈdɔrəbəl./",
+      "zh": "咿呀，可愛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A quiet hello works.",
+      "phonetic": "/ə kwaɪət hɛˈloʊ wərks./",
+      "zh": "輕聲哈囉也好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In the library.",
+      "phonetic": "/ɪn ðə ˈlaɪbrɛˌri./",
+      "zh": "在圖書館。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hey, over here!",
+      "phonetic": "/heɪ, ˈoʊvər hir!/",
+      "zh": "嘿，這邊！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spotted you.",
+      "phonetic": "/ˈspɑtɪd ju./",
+      "zh": "看到你了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Greet the guest.",
+      "phonetic": "/grit ðə gɛst./",
+      "zh": "迎接客人。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So glad you came.",
+      "phonetic": "/soʊ glæd ju keɪm./",
+      "zh": "真高興你來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good evening, friends.",
+      "phonetic": "/gʊd ˈivnɪŋ, frɛndz./",
+      "zh": "晚安，朋友。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Evening, gather round.",
+      "phonetic": "/ˈivnɪŋ, ˈgæðər raʊnd./",
+      "zh": "晚上好，圍過來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A text says hi.",
+      "phonetic": "/ə tɛkst sɪz haɪ./",
+      "zh": "簡訊說嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Reply with a heart.",
+      "phonetic": "/rɪˈplaɪ wɪθ ə hɑrt./",
+      "zh": "回愛心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hi from the door.",
+      "phonetic": "/haɪ frəm ðə dɔr./",
+      "zh": "門口說嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Come on in.",
+      "phonetic": "/kəm ɔn ɪn./",
+      "zh": "進來吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The class says hello.",
+      "phonetic": "/ðə klæs sɪz hɛˈloʊ./",
+      "zh": "全班說哈囉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In unison, cute.",
+      "phonetic": "/ɪn ˈjunɪsən, kjut./",
+      "zh": "齊聲，可愛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Smile when you greet.",
+      "phonetic": "/smaɪl wɪn ju grit./",
+      "zh": "微笑問候。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It warms up.",
+      "phonetic": "/ɪt wɔrmz əp./",
+      "zh": "氣氛暖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Shout a hello.",
+      "phonetic": "/ʃaʊt ə hɛˈloʊ./",
+      "zh": "喊一聲嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Across the yard.",
+      "phonetic": "/əˈkrɔs ðə jɑrd./",
+      "zh": "隔着院子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The dog wags hi.",
+      "phonetic": "/ðə dɔg wægz haɪ./",
+      "zh": "狗搖尾打招呼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Such a sweetie.",
+      "phonetic": "/səʧ ə sˈwiti./",
+      "zh": "小可愛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Bow slightly, polite.",
+      "phonetic": "/boʊ sˈlaɪtli, pəˈlaɪt./",
+      "zh": "微微鞠躬，有禮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Respect shown.",
+      "phonetic": "/rɪˈspɛkt ʃoʊn./",
+      "zh": "表敬意。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hello on the phone.",
+      "phonetic": "/hɛˈloʊ ɔn ðə foʊn./",
+      "zh": "電話裏說哈囉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Is this Sam?",
+      "phonetic": "/ɪz ðɪs sæm?/",
+      "zh": "是 Sam 嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good afternoon, sir.",
+      "phonetic": "/gʊd ˌæftərˈnun, sər./",
+      "zh": "午安，先生。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Afternoon to you.",
+      "phonetic": "/ˌæftərˈnun tɪ ju./",
+      "zh": "午安。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The neighbor said hi.",
+      "phonetic": "/ðə ˈneɪbər sɛd haɪ./",
+      "zh": "鄰居說嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wave back, sure.",
+      "phonetic": "/weɪv bæk, ʃʊr./",
+      "zh": "揮手回。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A friendly nod, please.",
+      "phonetic": "/ə ˈfrɛndli nɑd, pliz./",
+      "zh": "友好點頭。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Simple and warm.",
+      "phonetic": "/ˈsɪmpəl ənd wɔrm./",
+      "zh": "簡單又暖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Say hi to mom.",
+      "phonetic": "/seɪ haɪ tɪ mɑm./",
+      "zh": "跟媽說嗨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hi, mom, love you.",
+      "phonetic": "/haɪ, mɑm, ləv ju./",
+      "zh": "媽，嗨，愛你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wave hello, kids.",
+      "phonetic": "/weɪv hɛˈloʊ, kɪdz./",
+      "zh": "揮手說嗨，孩子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They giggle.",
+      "phonetic": "/ðeɪ ˈgɪgəl./",
+      "zh": "他們笑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Greet the new guy.",
+      "phonetic": "/grit ðə nu gaɪ./",
+      "zh": "跟新來的打招呼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Welcome aboard.",
+      "phonetic": "/ˈwɛlkəm əˈbɔrd./",
+      "zh": "歡迎加入。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How was your weekend?",
+      "phonetic": "/haʊ wɑz jʊr ˈwiˌkɪnd?/",
+      "zh": "週末如何？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quiet and calm.",
+      "phonetic": "/kwaɪət ənd kɑm./",
+      "zh": "安靜平和。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hey, nice to meet you.",
+      "phonetic": "/heɪ, nis tɪ mit ju./",
+      "zh": "嘿，很高興認識你。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Likewise, I am sure.",
+      "phonetic": "/ˈlaɪkˌwaɪz, aɪ æm ʃʊr./",
+      "zh": "我也是。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Long time no see.",
+      "phonetic": "/lɔŋ taɪm noʊ si./",
+      "zh": "好久不見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Way too long!",
+      "phonetic": "/weɪ tu lɔŋ!/",
+      "zh": "真的太久！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hi, how are you?",
+      "phonetic": "/haɪ, haʊ ər ju?/",
+      "zh": "嗨，你好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Doing well, thanks.",
+      "phonetic": "/duɪŋ wɛl, θæŋks./",
+      "zh": "很好，謝謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good morning, everyone.",
+      "phonetic": "/gʊd ˈmɔrnɪŋ, ˈɛvriˌwən./",
+      "zh": "大家早。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Morning, sleepy head.",
+      "phonetic": "/ˈmɔrnɪŋ, sˈlipi hɛd./",
+      "zh": "早，瞌睡蟲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good morning, everyone.",
+      "phonetic": "/gʊd ˈmɔrnɪŋ, ˈɛvriˌwən./",
+      "zh": "大家早。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Morning, sleepy head.",
+      "phonetic": "/ˈmɔrnɪŋ, sˈlipi hɛd./",
+      "zh": "早，瞌睡蟲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hi, how are you?",
+      "phonetic": "/haɪ, haʊ ər ju?/",
+      "zh": "嗨，你好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Doing well, thanks.",
+      "phonetic": "/duɪŋ wɛl, θæŋks./",
+      "zh": "很好，謝謝。"
+    }
+  ]
+}

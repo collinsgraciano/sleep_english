@@ -1,0 +1,2458 @@
+{
+  "title": "Everyday Phrases — Updating the App",
+  "title_zh": "更新應用",
+  "scene_zh": "更新應用 · 情境對話",
+  "title_quote": "The app needs update.",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】⬆️ 實用更新應用必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — Updating the App",
+  "youtube_description": "睡著學英文！這部影片收錄實用更新應用情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫），不用背，睡前聽就會。重複播放，讓英文自然進入你的大腦。👍 想學更多生活場景，請留言告訴我！別忘了訂閱+按讚。 #英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical Updating the App phrase pairs (each pair: male normal speed → female slow speed → combined dialogue). No memorization needed—just listen before bed and absorb naturally. If you want more real-life scenarios, leave a comment! Subscribe and like!",
+  "youtube_tags": [
+    "英文聽力",
+    "睡前英文",
+    "更新應用英文",
+    "English listening",
+    "Sleep learning",
+    "A2 English",
+    "常用英文短語",
+    "零基礎英文",
+    "慢速英文",
+    "英文口語",
+    "Learn English",
+    "English for daily life",
+    "ESL",
+    "English conversation",
+    "聽英語",
+    "英文學習"
+  ],
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "Updating the App",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "Updating the App",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Technology",
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "The app needs update.",
+      "phonetic": "/ðə æp nidz ˈəpˌdeɪt./",
+      "zh": "應用要更新。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On wifi, please.",
+      "phonetic": "/ɔn ˈwiˌfi, pliz./",
+      "zh": "用無線。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The store shows red.",
+      "phonetic": "/ðə stɔr ʃoʊz rɛd./",
+      "zh": "商店顯示紅點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tap to update.",
+      "phonetic": "/tæp tɪ ˈəpˌdeɪt./",
+      "zh": "點更新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The download is slow.",
+      "phonetic": "/ðə ˈdaʊnˌloʊd ɪz sloʊ./",
+      "zh": "下載慢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Weak signal, yes.",
+      "phonetic": "/wik ˈsɪgnəl, jɛs./",
+      "zh": "訊號弱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The update is big.",
+      "phonetic": "/ðə ˈəpˌdeɪt ɪz bɪg./",
+      "zh": "更新很大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Use the wifi.",
+      "phonetic": "/juz ðə ˈwiˌfi./",
+      "zh": "用無線。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The phone is full.",
+      "phonetic": "/ðə foʊn ɪz fʊl./",
+      "zh": "手機滿。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Delete old files.",
+      "phonetic": "/dɪˈlit oʊld faɪlz./",
+      "zh": "刪舊檔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The install stalled.",
+      "phonetic": "/ðə ˌɪnˈstɔl stɔld./",
+      "zh": "安裝卡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Restart the phone.",
+      "phonetic": "/riˈstɑrt ðə foʊn./",
+      "zh": "重開機。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The version is old.",
+      "phonetic": "/ðə ˈvərʒən ɪz oʊld./",
+      "zh": "版本舊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two behind, yes.",
+      "phonetic": "/tu bɪˈhaɪnd, jɛs./",
+      "zh": "差兩版。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The new UI?",
+      "phonetic": "/ðə nu ui*?/",
+      "zh": "新介面？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cleaner, I like.",
+      "phonetic": "/ˈklinər, aɪ laɪk./",
+      "zh": "更乾淨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The patch fixed bugs.",
+      "phonetic": "/ðə pæʧ fɪkst bəgz./",
+      "zh": "修補修好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ran smoother.",
+      "phonetic": "/ræn sˈmuðər./",
+      "zh": "更順。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Auto update on?",
+      "phonetic": "/ˈɔtoʊ ˈəpˌdeɪt ɔn?/",
+      "zh": "自動更新開？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Set it, yes.",
+      "phonetic": "/sɛt ɪt, jɛs./",
+      "zh": "設爲開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The battery drains.",
+      "phonetic": "/ðə ˈbætəri dreɪnz./",
+      "zh": "耗電。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Background update.",
+      "phonetic": "/ˈbækˌgraʊnd ˈəpˌdeɪt./",
+      "zh": "背景更新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app relaunched.",
+      "phonetic": "/ðə æp riˈlɔnʧt./",
+      "zh": "應用重啓。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "After the patch.",
+      "phonetic": "/ˈæftər ðə pæʧ./",
+      "zh": "修補後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The size is small.",
+      "phonetic": "/ðə saɪz ɪz smɔl./",
+      "zh": "體積小。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quick, then.",
+      "phonetic": "/kwɪk, ðɛn./",
+      "zh": "快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The store is busy.",
+      "phonetic": "/ðə stɔr ɪz ˈbɪzi./",
+      "zh": "商店忙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Retry in a bit.",
+      "phonetic": "/riˈtraɪ ɪn ə bɪt./",
+      "zh": "等下重試。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The feature is new.",
+      "phonetic": "/ðə ˈfiʧər ɪz nu./",
+      "zh": "功能新。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try it out.",
+      "phonetic": "/traɪ ɪt aʊt./",
+      "zh": "試試。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The permission popped.",
+      "phonetic": "/ðə pərˈmɪʃən pɑpt./",
+      "zh": "權限跳出。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Allow the camera.",
+      "phonetic": "/əˈlaʊ ðə ˈkæmərə./",
+      "zh": "允相機。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The update failed.",
+      "phonetic": "/ðə ˈəpˌdeɪt feɪld./",
+      "zh": "更新失敗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Free some space.",
+      "phonetic": "/fri səm speɪs./",
+      "zh": "清空間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The icon changed.",
+      "phonetic": "/ðə ˈaɪkɑn ʧeɪnʤd./",
+      "zh": "圖示變。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same app, yes.",
+      "phonetic": "/seɪm æp, jɛs./",
+      "zh": "同應用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The login dropped.",
+      "phonetic": "/ðə login* drɑpt./",
+      "zh": "登入掉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sign in again.",
+      "phonetic": "/saɪn ɪn əˈgɛn./",
+      "zh": "重登。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The changelog is short.",
+      "phonetic": "/ðə changelog* ɪz ʃɔrt./",
+      "zh": "更新紀錄短。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Minor tweak.",
+      "phonetic": "/ˈmaɪnər twik./",
+      "zh": "小調。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app is current.",
+      "phonetic": "/ðə æp ɪz ˈkɑrənt./",
+      "zh": "應用最新。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No updates left.",
+      "phonetic": "/noʊ ˈəpˌdeɪts lɛft./",
+      "zh": "無更新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The download resumed.",
+      "phonetic": "/ðə ˈdaʊnˌloʊd rɪˈzumd./",
+      "zh": "下載續。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Paused, then on.",
+      "phonetic": "/pɔzd, ðɛn ɔn./",
+      "zh": "暫停再開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The data is safe.",
+      "phonetic": "/ðə ˈdætə ɪz seɪf./",
+      "zh": "資料安全。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cloud backup.",
+      "phonetic": "/klaʊd ˈbæˌkəp./",
+      "zh": "雲端備。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The screen dimmed.",
+      "phonetic": "/ðə skrin dɪmd./",
+      "zh": "屏幕暗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Update at night.",
+      "phonetic": "/ˈəpˌdeɪt æt naɪt./",
+      "zh": "夜間更。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The review is good.",
+      "phonetic": "/ðə ˌrivˈju ɪz gʊd./",
+      "zh": "評價好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Worth the update.",
+      "phonetic": "/wərθ ðə ˈəpˌdeɪt./",
+      "zh": "值得更。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bug is gone.",
+      "phonetic": "/ðə bəg ɪz gɔn./",
+      "zh": "bug 沒了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Finally fixed.",
+      "phonetic": "/ˈfaɪnəli fɪkst./",
+      "zh": "終於修。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app asks rating.",
+      "phonetic": "/ðə æp æsks ˈreɪtɪŋ./",
+      "zh": "應用求評。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Give it five.",
+      "phonetic": "/gɪv ɪt faɪv./",
+      "zh": "給五星。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The storage cleared.",
+      "phonetic": "/ðə ˈstɔrɪʤ klɪrd./",
+      "zh": "空間清出。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Update now, go.",
+      "phonetic": "/ˈəpˌdeɪt naʊ, goʊ./",
+      "zh": "現在更。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The progress is half.",
+      "phonetic": "/ðə ˈprɑˌgrɛs ɪz hæf./",
+      "zh": "進度一半。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wait a moment.",
+      "phonetic": "/weɪt ə ˈmoʊmənt./",
+      "zh": "等一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The install finished.",
+      "phonetic": "/ðə ˌɪnˈstɔl ˈfɪnɪʃt./",
+      "zh": "安裝完。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Open it, test.",
+      "phonetic": "/ˈoʊpən ɪt, tɛst./",
+      "zh": "開，測。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app runs fast.",
+      "phonetic": "/ðə æp rənz fæst./",
+      "zh": "應用快。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "New engine, yes.",
+      "phonetic": "/nu ˈɪnʤən, jɛs./",
+      "zh": "新引擎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The update is set.",
+      "phonetic": "/ðə ˈəpˌdeɪt ɪz sɛt./",
+      "zh": "更新好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All good, pal.",
+      "phonetic": "/ɔl gʊd, pæl./",
+      "zh": "都好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the tip.",
+      "phonetic": "/θæŋks fər ðə tɪp./",
+      "zh": "謝謝提醒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep it fresh.",
+      "phonetic": "/kip ɪt frɛʃ./",
+      "zh": "保持新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the tip.",
+      "phonetic": "/θæŋks fər ðə tɪp./",
+      "zh": "謝謝提醒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep it fresh.",
+      "phonetic": "/kip ɪt frɛʃ./",
+      "zh": "保持新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The update is set.",
+      "phonetic": "/ðə ˈəpˌdeɪt ɪz sɛt./",
+      "zh": "更新好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All good, pal.",
+      "phonetic": "/ɔl gʊd, pæl./",
+      "zh": "都好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app runs fast.",
+      "phonetic": "/ðə æp rənz fæst./",
+      "zh": "應用快。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "New engine, yes.",
+      "phonetic": "/nu ˈɪnʤən, jɛs./",
+      "zh": "新引擎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The install finished.",
+      "phonetic": "/ðə ˌɪnˈstɔl ˈfɪnɪʃt./",
+      "zh": "安裝完。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Open it, test.",
+      "phonetic": "/ˈoʊpən ɪt, tɛst./",
+      "zh": "開，測。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The progress is half.",
+      "phonetic": "/ðə ˈprɑˌgrɛs ɪz hæf./",
+      "zh": "進度一半。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wait a moment.",
+      "phonetic": "/weɪt ə ˈmoʊmənt./",
+      "zh": "等一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The storage cleared.",
+      "phonetic": "/ðə ˈstɔrɪʤ klɪrd./",
+      "zh": "空間清出。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Update now, go.",
+      "phonetic": "/ˈəpˌdeɪt naʊ, goʊ./",
+      "zh": "現在更。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app asks rating.",
+      "phonetic": "/ðə æp æsks ˈreɪtɪŋ./",
+      "zh": "應用求評。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Give it five.",
+      "phonetic": "/gɪv ɪt faɪv./",
+      "zh": "給五星。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bug is gone.",
+      "phonetic": "/ðə bəg ɪz gɔn./",
+      "zh": "bug 沒了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Finally fixed.",
+      "phonetic": "/ˈfaɪnəli fɪkst./",
+      "zh": "終於修。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The review is good.",
+      "phonetic": "/ðə ˌrivˈju ɪz gʊd./",
+      "zh": "評價好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Worth the update.",
+      "phonetic": "/wərθ ðə ˈəpˌdeɪt./",
+      "zh": "值得更。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The screen dimmed.",
+      "phonetic": "/ðə skrin dɪmd./",
+      "zh": "屏幕暗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Update at night.",
+      "phonetic": "/ˈəpˌdeɪt æt naɪt./",
+      "zh": "夜間更。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The data is safe.",
+      "phonetic": "/ðə ˈdætə ɪz seɪf./",
+      "zh": "資料安全。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cloud backup.",
+      "phonetic": "/klaʊd ˈbæˌkəp./",
+      "zh": "雲端備。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The download resumed.",
+      "phonetic": "/ðə ˈdaʊnˌloʊd rɪˈzumd./",
+      "zh": "下載續。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Paused, then on.",
+      "phonetic": "/pɔzd, ðɛn ɔn./",
+      "zh": "暫停再開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app is current.",
+      "phonetic": "/ðə æp ɪz ˈkɑrənt./",
+      "zh": "應用最新。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No updates left.",
+      "phonetic": "/noʊ ˈəpˌdeɪts lɛft./",
+      "zh": "無更新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The changelog is short.",
+      "phonetic": "/ðə changelog* ɪz ʃɔrt./",
+      "zh": "更新紀錄短。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Minor tweak.",
+      "phonetic": "/ˈmaɪnər twik./",
+      "zh": "小調。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The login dropped.",
+      "phonetic": "/ðə login* drɑpt./",
+      "zh": "登入掉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sign in again.",
+      "phonetic": "/saɪn ɪn əˈgɛn./",
+      "zh": "重登。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The icon changed.",
+      "phonetic": "/ðə ˈaɪkɑn ʧeɪnʤd./",
+      "zh": "圖示變。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same app, yes.",
+      "phonetic": "/seɪm æp, jɛs./",
+      "zh": "同應用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The update failed.",
+      "phonetic": "/ðə ˈəpˌdeɪt feɪld./",
+      "zh": "更新失敗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Free some space.",
+      "phonetic": "/fri səm speɪs./",
+      "zh": "清空間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The permission popped.",
+      "phonetic": "/ðə pərˈmɪʃən pɑpt./",
+      "zh": "權限跳出。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Allow the camera.",
+      "phonetic": "/əˈlaʊ ðə ˈkæmərə./",
+      "zh": "允相機。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The feature is new.",
+      "phonetic": "/ðə ˈfiʧər ɪz nu./",
+      "zh": "功能新。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try it out.",
+      "phonetic": "/traɪ ɪt aʊt./",
+      "zh": "試試。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The store is busy.",
+      "phonetic": "/ðə stɔr ɪz ˈbɪzi./",
+      "zh": "商店忙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Retry in a bit.",
+      "phonetic": "/riˈtraɪ ɪn ə bɪt./",
+      "zh": "等下重試。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The size is small.",
+      "phonetic": "/ðə saɪz ɪz smɔl./",
+      "zh": "體積小。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quick, then.",
+      "phonetic": "/kwɪk, ðɛn./",
+      "zh": "快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app relaunched.",
+      "phonetic": "/ðə æp riˈlɔnʧt./",
+      "zh": "應用重啓。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "After the patch.",
+      "phonetic": "/ˈæftər ðə pæʧ./",
+      "zh": "修補後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The battery drains.",
+      "phonetic": "/ðə ˈbætəri dreɪnz./",
+      "zh": "耗電。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Background update.",
+      "phonetic": "/ˈbækˌgraʊnd ˈəpˌdeɪt./",
+      "zh": "背景更新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Auto update on?",
+      "phonetic": "/ˈɔtoʊ ˈəpˌdeɪt ɔn?/",
+      "zh": "自動更新開？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Set it, yes.",
+      "phonetic": "/sɛt ɪt, jɛs./",
+      "zh": "設爲開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The patch fixed bugs.",
+      "phonetic": "/ðə pæʧ fɪkst bəgz./",
+      "zh": "修補修好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ran smoother.",
+      "phonetic": "/ræn sˈmuðər./",
+      "zh": "更順。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The new UI?",
+      "phonetic": "/ðə nu ui*?/",
+      "zh": "新介面？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cleaner, I like.",
+      "phonetic": "/ˈklinər, aɪ laɪk./",
+      "zh": "更乾淨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The version is old.",
+      "phonetic": "/ðə ˈvərʒən ɪz oʊld./",
+      "zh": "版本舊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two behind, yes.",
+      "phonetic": "/tu bɪˈhaɪnd, jɛs./",
+      "zh": "差兩版。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The install stalled.",
+      "phonetic": "/ðə ˌɪnˈstɔl stɔld./",
+      "zh": "安裝卡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Restart the phone.",
+      "phonetic": "/riˈstɑrt ðə foʊn./",
+      "zh": "重開機。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The phone is full.",
+      "phonetic": "/ðə foʊn ɪz fʊl./",
+      "zh": "手機滿。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Delete old files.",
+      "phonetic": "/dɪˈlit oʊld faɪlz./",
+      "zh": "刪舊檔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The update is big.",
+      "phonetic": "/ðə ˈəpˌdeɪt ɪz bɪg./",
+      "zh": "更新很大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Use the wifi.",
+      "phonetic": "/juz ðə ˈwiˌfi./",
+      "zh": "用無線。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The download is slow.",
+      "phonetic": "/ðə ˈdaʊnˌloʊd ɪz sloʊ./",
+      "zh": "下載慢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Weak signal, yes.",
+      "phonetic": "/wik ˈsɪgnəl, jɛs./",
+      "zh": "訊號弱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The store shows red.",
+      "phonetic": "/ðə stɔr ʃoʊz rɛd./",
+      "zh": "商店顯示紅點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tap to update.",
+      "phonetic": "/tæp tɪ ˈəpˌdeɪt./",
+      "zh": "點更新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app needs update.",
+      "phonetic": "/ðə æp nidz ˈəpˌdeɪt./",
+      "zh": "應用要更新。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On wifi, please.",
+      "phonetic": "/ɔn ˈwiˌfi, pliz./",
+      "zh": "用無線。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app needs update.",
+      "phonetic": "/ðə æp nidz ˈəpˌdeɪt./",
+      "zh": "應用要更新。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On wifi, please.",
+      "phonetic": "/ɔn ˈwiˌfi, pliz./",
+      "zh": "用無線。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The store shows red.",
+      "phonetic": "/ðə stɔr ʃoʊz rɛd./",
+      "zh": "商店顯示紅點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tap to update.",
+      "phonetic": "/tæp tɪ ˈəpˌdeɪt./",
+      "zh": "點更新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The download is slow.",
+      "phonetic": "/ðə ˈdaʊnˌloʊd ɪz sloʊ./",
+      "zh": "下載慢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Weak signal, yes.",
+      "phonetic": "/wik ˈsɪgnəl, jɛs./",
+      "zh": "訊號弱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The update is big.",
+      "phonetic": "/ðə ˈəpˌdeɪt ɪz bɪg./",
+      "zh": "更新很大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Use the wifi.",
+      "phonetic": "/juz ðə ˈwiˌfi./",
+      "zh": "用無線。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The phone is full.",
+      "phonetic": "/ðə foʊn ɪz fʊl./",
+      "zh": "手機滿。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Delete old files.",
+      "phonetic": "/dɪˈlit oʊld faɪlz./",
+      "zh": "刪舊檔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The install stalled.",
+      "phonetic": "/ðə ˌɪnˈstɔl stɔld./",
+      "zh": "安裝卡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Restart the phone.",
+      "phonetic": "/riˈstɑrt ðə foʊn./",
+      "zh": "重開機。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The version is old.",
+      "phonetic": "/ðə ˈvərʒən ɪz oʊld./",
+      "zh": "版本舊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two behind, yes.",
+      "phonetic": "/tu bɪˈhaɪnd, jɛs./",
+      "zh": "差兩版。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The new UI?",
+      "phonetic": "/ðə nu ui*?/",
+      "zh": "新介面？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cleaner, I like.",
+      "phonetic": "/ˈklinər, aɪ laɪk./",
+      "zh": "更乾淨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The patch fixed bugs.",
+      "phonetic": "/ðə pæʧ fɪkst bəgz./",
+      "zh": "修補修好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ran smoother.",
+      "phonetic": "/ræn sˈmuðər./",
+      "zh": "更順。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Auto update on?",
+      "phonetic": "/ˈɔtoʊ ˈəpˌdeɪt ɔn?/",
+      "zh": "自動更新開？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Set it, yes.",
+      "phonetic": "/sɛt ɪt, jɛs./",
+      "zh": "設爲開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The battery drains.",
+      "phonetic": "/ðə ˈbætəri dreɪnz./",
+      "zh": "耗電。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Background update.",
+      "phonetic": "/ˈbækˌgraʊnd ˈəpˌdeɪt./",
+      "zh": "背景更新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app relaunched.",
+      "phonetic": "/ðə æp riˈlɔnʧt./",
+      "zh": "應用重啓。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "After the patch.",
+      "phonetic": "/ˈæftər ðə pæʧ./",
+      "zh": "修補後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The size is small.",
+      "phonetic": "/ðə saɪz ɪz smɔl./",
+      "zh": "體積小。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quick, then.",
+      "phonetic": "/kwɪk, ðɛn./",
+      "zh": "快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The store is busy.",
+      "phonetic": "/ðə stɔr ɪz ˈbɪzi./",
+      "zh": "商店忙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Retry in a bit.",
+      "phonetic": "/riˈtraɪ ɪn ə bɪt./",
+      "zh": "等下重試。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The feature is new.",
+      "phonetic": "/ðə ˈfiʧər ɪz nu./",
+      "zh": "功能新。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try it out.",
+      "phonetic": "/traɪ ɪt aʊt./",
+      "zh": "試試。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The permission popped.",
+      "phonetic": "/ðə pərˈmɪʃən pɑpt./",
+      "zh": "權限跳出。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Allow the camera.",
+      "phonetic": "/əˈlaʊ ðə ˈkæmərə./",
+      "zh": "允相機。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The update failed.",
+      "phonetic": "/ðə ˈəpˌdeɪt feɪld./",
+      "zh": "更新失敗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Free some space.",
+      "phonetic": "/fri səm speɪs./",
+      "zh": "清空間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The icon changed.",
+      "phonetic": "/ðə ˈaɪkɑn ʧeɪnʤd./",
+      "zh": "圖示變。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same app, yes.",
+      "phonetic": "/seɪm æp, jɛs./",
+      "zh": "同應用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The login dropped.",
+      "phonetic": "/ðə login* drɑpt./",
+      "zh": "登入掉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sign in again.",
+      "phonetic": "/saɪn ɪn əˈgɛn./",
+      "zh": "重登。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The changelog is short.",
+      "phonetic": "/ðə changelog* ɪz ʃɔrt./",
+      "zh": "更新紀錄短。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Minor tweak.",
+      "phonetic": "/ˈmaɪnər twik./",
+      "zh": "小調。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app is current.",
+      "phonetic": "/ðə æp ɪz ˈkɑrənt./",
+      "zh": "應用最新。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No updates left.",
+      "phonetic": "/noʊ ˈəpˌdeɪts lɛft./",
+      "zh": "無更新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The download resumed.",
+      "phonetic": "/ðə ˈdaʊnˌloʊd rɪˈzumd./",
+      "zh": "下載續。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Paused, then on.",
+      "phonetic": "/pɔzd, ðɛn ɔn./",
+      "zh": "暫停再開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The data is safe.",
+      "phonetic": "/ðə ˈdætə ɪz seɪf./",
+      "zh": "資料安全。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cloud backup.",
+      "phonetic": "/klaʊd ˈbæˌkəp./",
+      "zh": "雲端備。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The screen dimmed.",
+      "phonetic": "/ðə skrin dɪmd./",
+      "zh": "屏幕暗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Update at night.",
+      "phonetic": "/ˈəpˌdeɪt æt naɪt./",
+      "zh": "夜間更。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The review is good.",
+      "phonetic": "/ðə ˌrivˈju ɪz gʊd./",
+      "zh": "評價好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Worth the update.",
+      "phonetic": "/wərθ ðə ˈəpˌdeɪt./",
+      "zh": "值得更。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bug is gone.",
+      "phonetic": "/ðə bəg ɪz gɔn./",
+      "zh": "bug 沒了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Finally fixed.",
+      "phonetic": "/ˈfaɪnəli fɪkst./",
+      "zh": "終於修。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app asks rating.",
+      "phonetic": "/ðə æp æsks ˈreɪtɪŋ./",
+      "zh": "應用求評。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Give it five.",
+      "phonetic": "/gɪv ɪt faɪv./",
+      "zh": "給五星。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The storage cleared.",
+      "phonetic": "/ðə ˈstɔrɪʤ klɪrd./",
+      "zh": "空間清出。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Update now, go.",
+      "phonetic": "/ˈəpˌdeɪt naʊ, goʊ./",
+      "zh": "現在更。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The progress is half.",
+      "phonetic": "/ðə ˈprɑˌgrɛs ɪz hæf./",
+      "zh": "進度一半。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wait a moment.",
+      "phonetic": "/weɪt ə ˈmoʊmənt./",
+      "zh": "等一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The install finished.",
+      "phonetic": "/ðə ˌɪnˈstɔl ˈfɪnɪʃt./",
+      "zh": "安裝完。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Open it, test.",
+      "phonetic": "/ˈoʊpən ɪt, tɛst./",
+      "zh": "開，測。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app runs fast.",
+      "phonetic": "/ðə æp rənz fæst./",
+      "zh": "應用快。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "New engine, yes.",
+      "phonetic": "/nu ˈɪnʤən, jɛs./",
+      "zh": "新引擎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The update is set.",
+      "phonetic": "/ðə ˈəpˌdeɪt ɪz sɛt./",
+      "zh": "更新好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All good, pal.",
+      "phonetic": "/ɔl gʊd, pæl./",
+      "zh": "都好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the tip.",
+      "phonetic": "/θæŋks fər ðə tɪp./",
+      "zh": "謝謝提醒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep it fresh.",
+      "phonetic": "/kip ɪt frɛʃ./",
+      "zh": "保持新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the tip.",
+      "phonetic": "/θæŋks fər ðə tɪp./",
+      "zh": "謝謝提醒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep it fresh.",
+      "phonetic": "/kip ɪt frɛʃ./",
+      "zh": "保持新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The update is set.",
+      "phonetic": "/ðə ˈəpˌdeɪt ɪz sɛt./",
+      "zh": "更新好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All good, pal.",
+      "phonetic": "/ɔl gʊd, pæl./",
+      "zh": "都好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app runs fast.",
+      "phonetic": "/ðə æp rənz fæst./",
+      "zh": "應用快。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "New engine, yes.",
+      "phonetic": "/nu ˈɪnʤən, jɛs./",
+      "zh": "新引擎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The install finished.",
+      "phonetic": "/ðə ˌɪnˈstɔl ˈfɪnɪʃt./",
+      "zh": "安裝完。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Open it, test.",
+      "phonetic": "/ˈoʊpən ɪt, tɛst./",
+      "zh": "開，測。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The progress is half.",
+      "phonetic": "/ðə ˈprɑˌgrɛs ɪz hæf./",
+      "zh": "進度一半。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wait a moment.",
+      "phonetic": "/weɪt ə ˈmoʊmənt./",
+      "zh": "等一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The storage cleared.",
+      "phonetic": "/ðə ˈstɔrɪʤ klɪrd./",
+      "zh": "空間清出。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Update now, go.",
+      "phonetic": "/ˈəpˌdeɪt naʊ, goʊ./",
+      "zh": "現在更。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app asks rating.",
+      "phonetic": "/ðə æp æsks ˈreɪtɪŋ./",
+      "zh": "應用求評。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Give it five.",
+      "phonetic": "/gɪv ɪt faɪv./",
+      "zh": "給五星。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bug is gone.",
+      "phonetic": "/ðə bəg ɪz gɔn./",
+      "zh": "bug 沒了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Finally fixed.",
+      "phonetic": "/ˈfaɪnəli fɪkst./",
+      "zh": "終於修。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The review is good.",
+      "phonetic": "/ðə ˌrivˈju ɪz gʊd./",
+      "zh": "評價好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Worth the update.",
+      "phonetic": "/wərθ ðə ˈəpˌdeɪt./",
+      "zh": "值得更。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The screen dimmed.",
+      "phonetic": "/ðə skrin dɪmd./",
+      "zh": "屏幕暗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Update at night.",
+      "phonetic": "/ˈəpˌdeɪt æt naɪt./",
+      "zh": "夜間更。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The data is safe.",
+      "phonetic": "/ðə ˈdætə ɪz seɪf./",
+      "zh": "資料安全。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cloud backup.",
+      "phonetic": "/klaʊd ˈbæˌkəp./",
+      "zh": "雲端備。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The download resumed.",
+      "phonetic": "/ðə ˈdaʊnˌloʊd rɪˈzumd./",
+      "zh": "下載續。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Paused, then on.",
+      "phonetic": "/pɔzd, ðɛn ɔn./",
+      "zh": "暫停再開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app is current.",
+      "phonetic": "/ðə æp ɪz ˈkɑrənt./",
+      "zh": "應用最新。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No updates left.",
+      "phonetic": "/noʊ ˈəpˌdeɪts lɛft./",
+      "zh": "無更新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The changelog is short.",
+      "phonetic": "/ðə changelog* ɪz ʃɔrt./",
+      "zh": "更新紀錄短。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Minor tweak.",
+      "phonetic": "/ˈmaɪnər twik./",
+      "zh": "小調。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The login dropped.",
+      "phonetic": "/ðə login* drɑpt./",
+      "zh": "登入掉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sign in again.",
+      "phonetic": "/saɪn ɪn əˈgɛn./",
+      "zh": "重登。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The icon changed.",
+      "phonetic": "/ðə ˈaɪkɑn ʧeɪnʤd./",
+      "zh": "圖示變。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same app, yes.",
+      "phonetic": "/seɪm æp, jɛs./",
+      "zh": "同應用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The update failed.",
+      "phonetic": "/ðə ˈəpˌdeɪt feɪld./",
+      "zh": "更新失敗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Free some space.",
+      "phonetic": "/fri səm speɪs./",
+      "zh": "清空間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The permission popped.",
+      "phonetic": "/ðə pərˈmɪʃən pɑpt./",
+      "zh": "權限跳出。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Allow the camera.",
+      "phonetic": "/əˈlaʊ ðə ˈkæmərə./",
+      "zh": "允相機。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The feature is new.",
+      "phonetic": "/ðə ˈfiʧər ɪz nu./",
+      "zh": "功能新。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try it out.",
+      "phonetic": "/traɪ ɪt aʊt./",
+      "zh": "試試。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The store is busy.",
+      "phonetic": "/ðə stɔr ɪz ˈbɪzi./",
+      "zh": "商店忙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Retry in a bit.",
+      "phonetic": "/riˈtraɪ ɪn ə bɪt./",
+      "zh": "等下重試。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The size is small.",
+      "phonetic": "/ðə saɪz ɪz smɔl./",
+      "zh": "體積小。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quick, then.",
+      "phonetic": "/kwɪk, ðɛn./",
+      "zh": "快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app relaunched.",
+      "phonetic": "/ðə æp riˈlɔnʧt./",
+      "zh": "應用重啓。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "After the patch.",
+      "phonetic": "/ˈæftər ðə pæʧ./",
+      "zh": "修補後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The battery drains.",
+      "phonetic": "/ðə ˈbætəri dreɪnz./",
+      "zh": "耗電。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Background update.",
+      "phonetic": "/ˈbækˌgraʊnd ˈəpˌdeɪt./",
+      "zh": "背景更新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Auto update on?",
+      "phonetic": "/ˈɔtoʊ ˈəpˌdeɪt ɔn?/",
+      "zh": "自動更新開？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Set it, yes.",
+      "phonetic": "/sɛt ɪt, jɛs./",
+      "zh": "設爲開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The patch fixed bugs.",
+      "phonetic": "/ðə pæʧ fɪkst bəgz./",
+      "zh": "修補修好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ran smoother.",
+      "phonetic": "/ræn sˈmuðər./",
+      "zh": "更順。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The new UI?",
+      "phonetic": "/ðə nu ui*?/",
+      "zh": "新介面？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cleaner, I like.",
+      "phonetic": "/ˈklinər, aɪ laɪk./",
+      "zh": "更乾淨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The version is old.",
+      "phonetic": "/ðə ˈvərʒən ɪz oʊld./",
+      "zh": "版本舊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two behind, yes.",
+      "phonetic": "/tu bɪˈhaɪnd, jɛs./",
+      "zh": "差兩版。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The install stalled.",
+      "phonetic": "/ðə ˌɪnˈstɔl stɔld./",
+      "zh": "安裝卡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Restart the phone.",
+      "phonetic": "/riˈstɑrt ðə foʊn./",
+      "zh": "重開機。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The phone is full.",
+      "phonetic": "/ðə foʊn ɪz fʊl./",
+      "zh": "手機滿。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Delete old files.",
+      "phonetic": "/dɪˈlit oʊld faɪlz./",
+      "zh": "刪舊檔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The update is big.",
+      "phonetic": "/ðə ˈəpˌdeɪt ɪz bɪg./",
+      "zh": "更新很大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Use the wifi.",
+      "phonetic": "/juz ðə ˈwiˌfi./",
+      "zh": "用無線。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The download is slow.",
+      "phonetic": "/ðə ˈdaʊnˌloʊd ɪz sloʊ./",
+      "zh": "下載慢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Weak signal, yes.",
+      "phonetic": "/wik ˈsɪgnəl, jɛs./",
+      "zh": "訊號弱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The store shows red.",
+      "phonetic": "/ðə stɔr ʃoʊz rɛd./",
+      "zh": "商店顯示紅點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tap to update.",
+      "phonetic": "/tæp tɪ ˈəpˌdeɪt./",
+      "zh": "點更新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app needs update.",
+      "phonetic": "/ðə æp nidz ˈəpˌdeɪt./",
+      "zh": "應用要更新。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On wifi, please.",
+      "phonetic": "/ɔn ˈwiˌfi, pliz./",
+      "zh": "用無線。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app needs update.",
+      "phonetic": "/ðə æp nidz ˈəpˌdeɪt./",
+      "zh": "應用要更新。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On wifi, please.",
+      "phonetic": "/ɔn ˈwiˌfi, pliz./",
+      "zh": "用無線。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The store shows red.",
+      "phonetic": "/ðə stɔr ʃoʊz rɛd./",
+      "zh": "商店顯示紅點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tap to update.",
+      "phonetic": "/tæp tɪ ˈəpˌdeɪt./",
+      "zh": "點更新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The download is slow.",
+      "phonetic": "/ðə ˈdaʊnˌloʊd ɪz sloʊ./",
+      "zh": "下載慢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Weak signal, yes.",
+      "phonetic": "/wik ˈsɪgnəl, jɛs./",
+      "zh": "訊號弱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The update is big.",
+      "phonetic": "/ðə ˈəpˌdeɪt ɪz bɪg./",
+      "zh": "更新很大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Use the wifi.",
+      "phonetic": "/juz ðə ˈwiˌfi./",
+      "zh": "用無線。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The phone is full.",
+      "phonetic": "/ðə foʊn ɪz fʊl./",
+      "zh": "手機滿。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Delete old files.",
+      "phonetic": "/dɪˈlit oʊld faɪlz./",
+      "zh": "刪舊檔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The install stalled.",
+      "phonetic": "/ðə ˌɪnˈstɔl stɔld./",
+      "zh": "安裝卡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Restart the phone.",
+      "phonetic": "/riˈstɑrt ðə foʊn./",
+      "zh": "重開機。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The version is old.",
+      "phonetic": "/ðə ˈvərʒən ɪz oʊld./",
+      "zh": "版本舊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two behind, yes.",
+      "phonetic": "/tu bɪˈhaɪnd, jɛs./",
+      "zh": "差兩版。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The new UI?",
+      "phonetic": "/ðə nu ui*?/",
+      "zh": "新介面？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cleaner, I like.",
+      "phonetic": "/ˈklinər, aɪ laɪk./",
+      "zh": "更乾淨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The patch fixed bugs.",
+      "phonetic": "/ðə pæʧ fɪkst bəgz./",
+      "zh": "修補修好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ran smoother.",
+      "phonetic": "/ræn sˈmuðər./",
+      "zh": "更順。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Auto update on?",
+      "phonetic": "/ˈɔtoʊ ˈəpˌdeɪt ɔn?/",
+      "zh": "自動更新開？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Set it, yes.",
+      "phonetic": "/sɛt ɪt, jɛs./",
+      "zh": "設爲開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The battery drains.",
+      "phonetic": "/ðə ˈbætəri dreɪnz./",
+      "zh": "耗電。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Background update.",
+      "phonetic": "/ˈbækˌgraʊnd ˈəpˌdeɪt./",
+      "zh": "背景更新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app relaunched.",
+      "phonetic": "/ðə æp riˈlɔnʧt./",
+      "zh": "應用重啓。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "After the patch.",
+      "phonetic": "/ˈæftər ðə pæʧ./",
+      "zh": "修補後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The size is small.",
+      "phonetic": "/ðə saɪz ɪz smɔl./",
+      "zh": "體積小。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quick, then.",
+      "phonetic": "/kwɪk, ðɛn./",
+      "zh": "快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The store is busy.",
+      "phonetic": "/ðə stɔr ɪz ˈbɪzi./",
+      "zh": "商店忙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Retry in a bit.",
+      "phonetic": "/riˈtraɪ ɪn ə bɪt./",
+      "zh": "等下重試。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The feature is new.",
+      "phonetic": "/ðə ˈfiʧər ɪz nu./",
+      "zh": "功能新。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try it out.",
+      "phonetic": "/traɪ ɪt aʊt./",
+      "zh": "試試。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The permission popped.",
+      "phonetic": "/ðə pərˈmɪʃən pɑpt./",
+      "zh": "權限跳出。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Allow the camera.",
+      "phonetic": "/əˈlaʊ ðə ˈkæmərə./",
+      "zh": "允相機。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The update failed.",
+      "phonetic": "/ðə ˈəpˌdeɪt feɪld./",
+      "zh": "更新失敗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Free some space.",
+      "phonetic": "/fri səm speɪs./",
+      "zh": "清空間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The icon changed.",
+      "phonetic": "/ðə ˈaɪkɑn ʧeɪnʤd./",
+      "zh": "圖示變。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same app, yes.",
+      "phonetic": "/seɪm æp, jɛs./",
+      "zh": "同應用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The login dropped.",
+      "phonetic": "/ðə login* drɑpt./",
+      "zh": "登入掉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sign in again.",
+      "phonetic": "/saɪn ɪn əˈgɛn./",
+      "zh": "重登。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The changelog is short.",
+      "phonetic": "/ðə changelog* ɪz ʃɔrt./",
+      "zh": "更新紀錄短。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Minor tweak.",
+      "phonetic": "/ˈmaɪnər twik./",
+      "zh": "小調。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app is current.",
+      "phonetic": "/ðə æp ɪz ˈkɑrənt./",
+      "zh": "應用最新。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No updates left.",
+      "phonetic": "/noʊ ˈəpˌdeɪts lɛft./",
+      "zh": "無更新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The download resumed.",
+      "phonetic": "/ðə ˈdaʊnˌloʊd rɪˈzumd./",
+      "zh": "下載續。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Paused, then on.",
+      "phonetic": "/pɔzd, ðɛn ɔn./",
+      "zh": "暫停再開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The data is safe.",
+      "phonetic": "/ðə ˈdætə ɪz seɪf./",
+      "zh": "資料安全。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cloud backup.",
+      "phonetic": "/klaʊd ˈbæˌkəp./",
+      "zh": "雲端備。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The screen dimmed.",
+      "phonetic": "/ðə skrin dɪmd./",
+      "zh": "屏幕暗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Update at night.",
+      "phonetic": "/ˈəpˌdeɪt æt naɪt./",
+      "zh": "夜間更。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The review is good.",
+      "phonetic": "/ðə ˌrivˈju ɪz gʊd./",
+      "zh": "評價好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Worth the update.",
+      "phonetic": "/wərθ ðə ˈəpˌdeɪt./",
+      "zh": "值得更。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bug is gone.",
+      "phonetic": "/ðə bəg ɪz gɔn./",
+      "zh": "bug 沒了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Finally fixed.",
+      "phonetic": "/ˈfaɪnəli fɪkst./",
+      "zh": "終於修。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app asks rating.",
+      "phonetic": "/ðə æp æsks ˈreɪtɪŋ./",
+      "zh": "應用求評。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Give it five.",
+      "phonetic": "/gɪv ɪt faɪv./",
+      "zh": "給五星。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The storage cleared.",
+      "phonetic": "/ðə ˈstɔrɪʤ klɪrd./",
+      "zh": "空間清出。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Update now, go.",
+      "phonetic": "/ˈəpˌdeɪt naʊ, goʊ./",
+      "zh": "現在更。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The progress is half.",
+      "phonetic": "/ðə ˈprɑˌgrɛs ɪz hæf./",
+      "zh": "進度一半。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wait a moment.",
+      "phonetic": "/weɪt ə ˈmoʊmənt./",
+      "zh": "等一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The install finished.",
+      "phonetic": "/ðə ˌɪnˈstɔl ˈfɪnɪʃt./",
+      "zh": "安裝完。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Open it, test.",
+      "phonetic": "/ˈoʊpən ɪt, tɛst./",
+      "zh": "開，測。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app runs fast.",
+      "phonetic": "/ðə æp rənz fæst./",
+      "zh": "應用快。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "New engine, yes.",
+      "phonetic": "/nu ˈɪnʤən, jɛs./",
+      "zh": "新引擎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The update is set.",
+      "phonetic": "/ðə ˈəpˌdeɪt ɪz sɛt./",
+      "zh": "更新好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All good, pal.",
+      "phonetic": "/ɔl gʊd, pæl./",
+      "zh": "都好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the tip.",
+      "phonetic": "/θæŋks fər ðə tɪp./",
+      "zh": "謝謝提醒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep it fresh.",
+      "phonetic": "/kip ɪt frɛʃ./",
+      "zh": "保持新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the tip.",
+      "phonetic": "/θæŋks fər ðə tɪp./",
+      "zh": "謝謝提醒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep it fresh.",
+      "phonetic": "/kip ɪt frɛʃ./",
+      "zh": "保持新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The update is set.",
+      "phonetic": "/ðə ˈəpˌdeɪt ɪz sɛt./",
+      "zh": "更新好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All good, pal.",
+      "phonetic": "/ɔl gʊd, pæl./",
+      "zh": "都好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app runs fast.",
+      "phonetic": "/ðə æp rənz fæst./",
+      "zh": "應用快。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "New engine, yes.",
+      "phonetic": "/nu ˈɪnʤən, jɛs./",
+      "zh": "新引擎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The install finished.",
+      "phonetic": "/ðə ˌɪnˈstɔl ˈfɪnɪʃt./",
+      "zh": "安裝完。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Open it, test.",
+      "phonetic": "/ˈoʊpən ɪt, tɛst./",
+      "zh": "開，測。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The progress is half.",
+      "phonetic": "/ðə ˈprɑˌgrɛs ɪz hæf./",
+      "zh": "進度一半。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wait a moment.",
+      "phonetic": "/weɪt ə ˈmoʊmənt./",
+      "zh": "等一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The storage cleared.",
+      "phonetic": "/ðə ˈstɔrɪʤ klɪrd./",
+      "zh": "空間清出。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Update now, go.",
+      "phonetic": "/ˈəpˌdeɪt naʊ, goʊ./",
+      "zh": "現在更。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app asks rating.",
+      "phonetic": "/ðə æp æsks ˈreɪtɪŋ./",
+      "zh": "應用求評。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Give it five.",
+      "phonetic": "/gɪv ɪt faɪv./",
+      "zh": "給五星。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bug is gone.",
+      "phonetic": "/ðə bəg ɪz gɔn./",
+      "zh": "bug 沒了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Finally fixed.",
+      "phonetic": "/ˈfaɪnəli fɪkst./",
+      "zh": "終於修。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The review is good.",
+      "phonetic": "/ðə ˌrivˈju ɪz gʊd./",
+      "zh": "評價好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Worth the update.",
+      "phonetic": "/wərθ ðə ˈəpˌdeɪt./",
+      "zh": "值得更。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The screen dimmed.",
+      "phonetic": "/ðə skrin dɪmd./",
+      "zh": "屏幕暗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Update at night.",
+      "phonetic": "/ˈəpˌdeɪt æt naɪt./",
+      "zh": "夜間更。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The data is safe.",
+      "phonetic": "/ðə ˈdætə ɪz seɪf./",
+      "zh": "資料安全。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cloud backup.",
+      "phonetic": "/klaʊd ˈbæˌkəp./",
+      "zh": "雲端備。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The download resumed.",
+      "phonetic": "/ðə ˈdaʊnˌloʊd rɪˈzumd./",
+      "zh": "下載續。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Paused, then on.",
+      "phonetic": "/pɔzd, ðɛn ɔn./",
+      "zh": "暫停再開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app is current.",
+      "phonetic": "/ðə æp ɪz ˈkɑrənt./",
+      "zh": "應用最新。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No updates left.",
+      "phonetic": "/noʊ ˈəpˌdeɪts lɛft./",
+      "zh": "無更新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The changelog is short.",
+      "phonetic": "/ðə changelog* ɪz ʃɔrt./",
+      "zh": "更新紀錄短。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Minor tweak.",
+      "phonetic": "/ˈmaɪnər twik./",
+      "zh": "小調。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The login dropped.",
+      "phonetic": "/ðə login* drɑpt./",
+      "zh": "登入掉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sign in again.",
+      "phonetic": "/saɪn ɪn əˈgɛn./",
+      "zh": "重登。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The icon changed.",
+      "phonetic": "/ðə ˈaɪkɑn ʧeɪnʤd./",
+      "zh": "圖示變。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same app, yes.",
+      "phonetic": "/seɪm æp, jɛs./",
+      "zh": "同應用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The update failed.",
+      "phonetic": "/ðə ˈəpˌdeɪt feɪld./",
+      "zh": "更新失敗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Free some space.",
+      "phonetic": "/fri səm speɪs./",
+      "zh": "清空間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The permission popped.",
+      "phonetic": "/ðə pərˈmɪʃən pɑpt./",
+      "zh": "權限跳出。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Allow the camera.",
+      "phonetic": "/əˈlaʊ ðə ˈkæmərə./",
+      "zh": "允相機。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The feature is new.",
+      "phonetic": "/ðə ˈfiʧər ɪz nu./",
+      "zh": "功能新。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try it out.",
+      "phonetic": "/traɪ ɪt aʊt./",
+      "zh": "試試。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The store is busy.",
+      "phonetic": "/ðə stɔr ɪz ˈbɪzi./",
+      "zh": "商店忙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Retry in a bit.",
+      "phonetic": "/riˈtraɪ ɪn ə bɪt./",
+      "zh": "等下重試。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The size is small.",
+      "phonetic": "/ðə saɪz ɪz smɔl./",
+      "zh": "體積小。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quick, then.",
+      "phonetic": "/kwɪk, ðɛn./",
+      "zh": "快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app relaunched.",
+      "phonetic": "/ðə æp riˈlɔnʧt./",
+      "zh": "應用重啓。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "After the patch.",
+      "phonetic": "/ˈæftər ðə pæʧ./",
+      "zh": "修補後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The battery drains.",
+      "phonetic": "/ðə ˈbætəri dreɪnz./",
+      "zh": "耗電。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Background update.",
+      "phonetic": "/ˈbækˌgraʊnd ˈəpˌdeɪt./",
+      "zh": "背景更新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Auto update on?",
+      "phonetic": "/ˈɔtoʊ ˈəpˌdeɪt ɔn?/",
+      "zh": "自動更新開？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Set it, yes.",
+      "phonetic": "/sɛt ɪt, jɛs./",
+      "zh": "設爲開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The patch fixed bugs.",
+      "phonetic": "/ðə pæʧ fɪkst bəgz./",
+      "zh": "修補修好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ran smoother.",
+      "phonetic": "/ræn sˈmuðər./",
+      "zh": "更順。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The new UI?",
+      "phonetic": "/ðə nu ui*?/",
+      "zh": "新介面？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cleaner, I like.",
+      "phonetic": "/ˈklinər, aɪ laɪk./",
+      "zh": "更乾淨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The version is old.",
+      "phonetic": "/ðə ˈvərʒən ɪz oʊld./",
+      "zh": "版本舊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two behind, yes.",
+      "phonetic": "/tu bɪˈhaɪnd, jɛs./",
+      "zh": "差兩版。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The install stalled.",
+      "phonetic": "/ðə ˌɪnˈstɔl stɔld./",
+      "zh": "安裝卡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Restart the phone.",
+      "phonetic": "/riˈstɑrt ðə foʊn./",
+      "zh": "重開機。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The phone is full.",
+      "phonetic": "/ðə foʊn ɪz fʊl./",
+      "zh": "手機滿。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Delete old files.",
+      "phonetic": "/dɪˈlit oʊld faɪlz./",
+      "zh": "刪舊檔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The update is big.",
+      "phonetic": "/ðə ˈəpˌdeɪt ɪz bɪg./",
+      "zh": "更新很大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Use the wifi.",
+      "phonetic": "/juz ðə ˈwiˌfi./",
+      "zh": "用無線。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The download is slow.",
+      "phonetic": "/ðə ˈdaʊnˌloʊd ɪz sloʊ./",
+      "zh": "下載慢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Weak signal, yes.",
+      "phonetic": "/wik ˈsɪgnəl, jɛs./",
+      "zh": "訊號弱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The store shows red.",
+      "phonetic": "/ðə stɔr ʃoʊz rɛd./",
+      "zh": "商店顯示紅點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tap to update.",
+      "phonetic": "/tæp tɪ ˈəpˌdeɪt./",
+      "zh": "點更新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app needs update.",
+      "phonetic": "/ðə æp nidz ˈəpˌdeɪt./",
+      "zh": "應用要更新。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On wifi, please.",
+      "phonetic": "/ɔn ˈwiˌfi, pliz./",
+      "zh": "用無線。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app needs update.",
+      "phonetic": "/ðə æp nidz ˈəpˌdeɪt./",
+      "zh": "應用要更新。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On wifi, please.",
+      "phonetic": "/ɔn ˈwiˌfi, pliz./",
+      "zh": "用無線。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The store shows red.",
+      "phonetic": "/ðə stɔr ʃoʊz rɛd./",
+      "zh": "商店顯示紅點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tap to update.",
+      "phonetic": "/tæp tɪ ˈəpˌdeɪt./",
+      "zh": "點更新。"
+    }
+  ]
+}

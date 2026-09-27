@@ -1,0 +1,2458 @@
+{
+  "title": "Everyday Phrases — Singing a Song",
+  "title_zh": "唱歌",
+  "scene_zh": "唱歌 · 情境對話",
+  "title_quote": "Sing a song, please.",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】🎤 實用唱歌必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — Singing a Song",
+  "youtube_description": "睡著學英文！這部影片收錄實用唱歌情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫），不用背，睡前聽就會。重複播放，讓英文自然進入你的大腦。👍 想學更多生活場景，請留言告訴我！別忘了訂閱+按讚。 #英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical Singing a Song phrase pairs (each pair: male normal speed → female slow speed → combined dialogue). No memorization needed—just listen before bed and absorb naturally. If you want more real-life scenarios, leave a comment! Subscribe and like!",
+  "youtube_tags": [
+    "英文聽力",
+    "睡前英文",
+    "唱歌英文",
+    "English listening",
+    "Sleep learning",
+    "A2 English",
+    "常用英文短語",
+    "零基礎英文",
+    "慢速英文",
+    "英文口語",
+    "Learn English",
+    "English for daily life",
+    "ESL",
+    "English conversation",
+    "聽英語",
+    "英文學習"
+  ],
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "Singing a Song",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "Singing a Song",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Entertainment",
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "Sing a song, please.",
+      "phonetic": "/sɪŋ ə sɔŋ, pliz./",
+      "zh": "唱首歌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Which one, though?",
+      "phonetic": "/wɪʧ wən, ðoʊ?/",
+      "zh": "哪一首？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tune is happy.",
+      "phonetic": "/ðə tun ɪz ˈhæpi./",
+      "zh": "旋律開心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lift the room.",
+      "phonetic": "/lɪft ðə rum./",
+      "zh": "提振氣氛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your voice is nice.",
+      "phonetic": "/jʊr vɔɪs ɪz nis./",
+      "zh": "你好聽。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Flattered, thanks.",
+      "phonetic": "/ˈflætərd, θæŋks./",
+      "zh": "榮幸。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lyric is wrong.",
+      "phonetic": "/ðə ˈlɪrɪk ɪz rɔŋ./",
+      "zh": "歌詞錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hum the tune.",
+      "phonetic": "/həm ðə tun./",
+      "zh": "哼旋律。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The key is high.",
+      "phonetic": "/ðə ki ɪz haɪ./",
+      "zh": "調高。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Drop it down.",
+      "phonetic": "/drɔp ɪt daʊn./",
+      "zh": "降調。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The mic is on.",
+      "phonetic": "/ðə mɪk ɪz ɔn./",
+      "zh": "麥開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Test, one two.",
+      "phonetic": "/tɛst, wən tu./",
+      "zh": "試音，一二。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The chorus is big.",
+      "phonetic": "/ðə ˈkɔrəs ɪz bɪg./",
+      "zh": "副歌大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Join in, all.",
+      "phonetic": "/ʤɔɪn ɪn, ɔl./",
+      "zh": "大家一起。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song is old.",
+      "phonetic": "/ðə sɔŋ ɪz oʊld./",
+      "zh": "歌舊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Classic, yes.",
+      "phonetic": "/ˈklæsɪk, jɛs./",
+      "zh": "經典。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pitch is off.",
+      "phonetic": "/ðə pɪʧ ɪz ɔf./",
+      "zh": "音不準。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ease, slow.",
+      "phonetic": "/iz, sloʊ./",
+      "zh": "放鬆慢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kid sang loud.",
+      "phonetic": "/ðə kɪd sæŋ laʊd./",
+      "zh": "孩子大聲唱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cute, indeed.",
+      "phonetic": "/kjut, ˌɪnˈdid./",
+      "zh": "可愛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The guitar strums.",
+      "phonetic": "/ðə gɪˈtɑr strəmz./",
+      "zh": "吉他刷。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep the beat.",
+      "phonetic": "/kip ðə bit./",
+      "zh": "跟拍。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The note held long.",
+      "phonetic": "/ðə noʊt hɛld lɔŋ./",
+      "zh": "長音。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Breath, then.",
+      "phonetic": "/brɛθ, ðɛn./",
+      "zh": "換氣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The room joined.",
+      "phonetic": "/ðə rum ʤɔɪnd./",
+      "zh": "全室跟唱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Unity, nice.",
+      "phonetic": "/ˈjunɪti, nis./",
+      "zh": "整齊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song is short.",
+      "phonetic": "/ðə sɔŋ ɪz ʃɔrt./",
+      "zh": "歌短。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Encore, please.",
+      "phonetic": "/ˈɑnˌkɔr, pliz./",
+      "zh": "安可。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The melody stuck.",
+      "phonetic": "/ðə ˈmɛlədi stək./",
+      "zh": "旋律卡腦。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Can't stop, ha.",
+      "phonetic": "/kænt stɑp, hɑ./",
+      "zh": "停不下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The style is folk.",
+      "phonetic": "/ðə staɪl ɪz foʊk./",
+      "zh": "民謠風。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Calm, yes.",
+      "phonetic": "/kɑm, jɛs./",
+      "zh": "平靜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The record played.",
+      "phonetic": "/ðə ˈrɛkərd pleɪd./",
+      "zh": "播放唱片。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sing along, then.",
+      "phonetic": "/sɪŋ əˈlɔŋ, ðɛn./",
+      "zh": "跟唱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The high note hit.",
+      "phonetic": "/ðə haɪ noʊt hɪt./",
+      "zh": "高音上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nailed it, yes.",
+      "phonetic": "/neɪld ɪt, jɛs./",
+      "zh": "抓到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song is ours.",
+      "phonetic": "/ðə sɔŋ ɪz ɑrz./",
+      "zh": "我們的歌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Slow dance, then.",
+      "phonetic": "/sloʊ dæns, ðɛn./",
+      "zh": "慢舞。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The crowd clapped.",
+      "phonetic": "/ðə kraʊd klæpt./",
+      "zh": "觀衆鼓掌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Bow, smile.",
+      "phonetic": "/boʊ, smaɪl./",
+      "zh": "鞠躬笑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The warm-up done.",
+      "phonetic": "/ðə warm-up* dən./",
+      "zh": "暖嗓完。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ready to sing.",
+      "phonetic": "/ˈrɛdi tɪ sɪŋ./",
+      "zh": "準備唱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lyric is deep.",
+      "phonetic": "/ðə ˈlɪrɪk ɪz dip./",
+      "zh": "歌詞深。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Means a lot.",
+      "phonetic": "/minz ə lɔt./",
+      "zh": "很有意。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The beat is steady.",
+      "phonetic": "/ðə bit ɪz ˈstɛdi./",
+      "zh": "節拍穩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Metronome, yes.",
+      "phonetic": "/metronome*, jɛs./",
+      "zh": "節拍器。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song ended.",
+      "phonetic": "/ðə sɔŋ ˈɛndɪd./",
+      "zh": "歌結束。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold the note.",
+      "phonetic": "/hoʊld ðə noʊt./",
+      "zh": "拉長音。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The echo is fun.",
+      "phonetic": "/ðə ˈɛkoʊ ɪz fən./",
+      "zh": "回聲好玩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Shout, laugh.",
+      "phonetic": "/ʃaʊt, læf./",
+      "zh": "喊，笑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The part is solo.",
+      "phonetic": "/ðə pɑrt ɪz ˈsoʊˌloʊ./",
+      "zh": "獨唱段。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Step up, please.",
+      "phonetic": "/stɛp əp, pliz./",
+      "zh": "上前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tune is soft.",
+      "phonetic": "/ðə tun ɪz sɔft./",
+      "zh": "旋律輕。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hush, listen.",
+      "phonetic": "/həʃ, ˈlɪsən./",
+      "zh": "噓，聽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song is new.",
+      "phonetic": "/ðə sɔŋ ɪz nu./",
+      "zh": "歌新。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Teach us, then.",
+      "phonetic": "/tiʧ ˈjuˈɛs, ðɛn./",
+      "zh": "教我們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The harmony fits.",
+      "phonetic": "/ðə ˈhɑrməni fɪts./",
+      "zh": "和聲合。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Blend, yes.",
+      "phonetic": "/blɛnd, jɛs./",
+      "zh": "融合。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sing was joy.",
+      "phonetic": "/ðə sɪŋ wɑz ʤɔɪ./",
+      "zh": "唱得開心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Do it again.",
+      "phonetic": "/du ɪt əˈgɛn./",
+      "zh": "再來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The note rang clear.",
+      "phonetic": "/ðə noʊt ræŋ klɪr./",
+      "zh": "音清亮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Beautiful, truly.",
+      "phonetic": "/ˈbjutəfəl, ˈtruli./",
+      "zh": "真美。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song brought smiles.",
+      "phonetic": "/ðə sɔŋ brɔt smaɪlz./",
+      "zh": "歌帶來笑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Worth the breath.",
+      "phonetic": "/wərθ ðə brɛθ./",
+      "zh": "值得。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the song.",
+      "phonetic": "/θæŋks fər ðə sɔŋ./",
+      "zh": "謝謝唱歌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sing on, pal.",
+      "phonetic": "/sɪŋ ɔn, pæl./",
+      "zh": "繼續唱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the song.",
+      "phonetic": "/θæŋks fər ðə sɔŋ./",
+      "zh": "謝謝唱歌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sing on, pal.",
+      "phonetic": "/sɪŋ ɔn, pæl./",
+      "zh": "繼續唱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song brought smiles.",
+      "phonetic": "/ðə sɔŋ brɔt smaɪlz./",
+      "zh": "歌帶來笑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Worth the breath.",
+      "phonetic": "/wərθ ðə brɛθ./",
+      "zh": "值得。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The note rang clear.",
+      "phonetic": "/ðə noʊt ræŋ klɪr./",
+      "zh": "音清亮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Beautiful, truly.",
+      "phonetic": "/ˈbjutəfəl, ˈtruli./",
+      "zh": "真美。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sing was joy.",
+      "phonetic": "/ðə sɪŋ wɑz ʤɔɪ./",
+      "zh": "唱得開心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Do it again.",
+      "phonetic": "/du ɪt əˈgɛn./",
+      "zh": "再來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The harmony fits.",
+      "phonetic": "/ðə ˈhɑrməni fɪts./",
+      "zh": "和聲合。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Blend, yes.",
+      "phonetic": "/blɛnd, jɛs./",
+      "zh": "融合。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song is new.",
+      "phonetic": "/ðə sɔŋ ɪz nu./",
+      "zh": "歌新。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Teach us, then.",
+      "phonetic": "/tiʧ ˈjuˈɛs, ðɛn./",
+      "zh": "教我們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tune is soft.",
+      "phonetic": "/ðə tun ɪz sɔft./",
+      "zh": "旋律輕。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hush, listen.",
+      "phonetic": "/həʃ, ˈlɪsən./",
+      "zh": "噓，聽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The part is solo.",
+      "phonetic": "/ðə pɑrt ɪz ˈsoʊˌloʊ./",
+      "zh": "獨唱段。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Step up, please.",
+      "phonetic": "/stɛp əp, pliz./",
+      "zh": "上前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The echo is fun.",
+      "phonetic": "/ðə ˈɛkoʊ ɪz fən./",
+      "zh": "回聲好玩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Shout, laugh.",
+      "phonetic": "/ʃaʊt, læf./",
+      "zh": "喊，笑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song ended.",
+      "phonetic": "/ðə sɔŋ ˈɛndɪd./",
+      "zh": "歌結束。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold the note.",
+      "phonetic": "/hoʊld ðə noʊt./",
+      "zh": "拉長音。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The beat is steady.",
+      "phonetic": "/ðə bit ɪz ˈstɛdi./",
+      "zh": "節拍穩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Metronome, yes.",
+      "phonetic": "/metronome*, jɛs./",
+      "zh": "節拍器。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lyric is deep.",
+      "phonetic": "/ðə ˈlɪrɪk ɪz dip./",
+      "zh": "歌詞深。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Means a lot.",
+      "phonetic": "/minz ə lɔt./",
+      "zh": "很有意。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The warm-up done.",
+      "phonetic": "/ðə warm-up* dən./",
+      "zh": "暖嗓完。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ready to sing.",
+      "phonetic": "/ˈrɛdi tɪ sɪŋ./",
+      "zh": "準備唱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The crowd clapped.",
+      "phonetic": "/ðə kraʊd klæpt./",
+      "zh": "觀衆鼓掌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Bow, smile.",
+      "phonetic": "/boʊ, smaɪl./",
+      "zh": "鞠躬笑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song is ours.",
+      "phonetic": "/ðə sɔŋ ɪz ɑrz./",
+      "zh": "我們的歌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Slow dance, then.",
+      "phonetic": "/sloʊ dæns, ðɛn./",
+      "zh": "慢舞。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The high note hit.",
+      "phonetic": "/ðə haɪ noʊt hɪt./",
+      "zh": "高音上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nailed it, yes.",
+      "phonetic": "/neɪld ɪt, jɛs./",
+      "zh": "抓到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The record played.",
+      "phonetic": "/ðə ˈrɛkərd pleɪd./",
+      "zh": "播放唱片。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sing along, then.",
+      "phonetic": "/sɪŋ əˈlɔŋ, ðɛn./",
+      "zh": "跟唱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The style is folk.",
+      "phonetic": "/ðə staɪl ɪz foʊk./",
+      "zh": "民謠風。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Calm, yes.",
+      "phonetic": "/kɑm, jɛs./",
+      "zh": "平靜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The melody stuck.",
+      "phonetic": "/ðə ˈmɛlədi stək./",
+      "zh": "旋律卡腦。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Can't stop, ha.",
+      "phonetic": "/kænt stɑp, hɑ./",
+      "zh": "停不下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song is short.",
+      "phonetic": "/ðə sɔŋ ɪz ʃɔrt./",
+      "zh": "歌短。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Encore, please.",
+      "phonetic": "/ˈɑnˌkɔr, pliz./",
+      "zh": "安可。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The room joined.",
+      "phonetic": "/ðə rum ʤɔɪnd./",
+      "zh": "全室跟唱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Unity, nice.",
+      "phonetic": "/ˈjunɪti, nis./",
+      "zh": "整齊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The note held long.",
+      "phonetic": "/ðə noʊt hɛld lɔŋ./",
+      "zh": "長音。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Breath, then.",
+      "phonetic": "/brɛθ, ðɛn./",
+      "zh": "換氣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The guitar strums.",
+      "phonetic": "/ðə gɪˈtɑr strəmz./",
+      "zh": "吉他刷。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep the beat.",
+      "phonetic": "/kip ðə bit./",
+      "zh": "跟拍。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kid sang loud.",
+      "phonetic": "/ðə kɪd sæŋ laʊd./",
+      "zh": "孩子大聲唱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cute, indeed.",
+      "phonetic": "/kjut, ˌɪnˈdid./",
+      "zh": "可愛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pitch is off.",
+      "phonetic": "/ðə pɪʧ ɪz ɔf./",
+      "zh": "音不準。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ease, slow.",
+      "phonetic": "/iz, sloʊ./",
+      "zh": "放鬆慢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song is old.",
+      "phonetic": "/ðə sɔŋ ɪz oʊld./",
+      "zh": "歌舊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Classic, yes.",
+      "phonetic": "/ˈklæsɪk, jɛs./",
+      "zh": "經典。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The chorus is big.",
+      "phonetic": "/ðə ˈkɔrəs ɪz bɪg./",
+      "zh": "副歌大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Join in, all.",
+      "phonetic": "/ʤɔɪn ɪn, ɔl./",
+      "zh": "大家一起。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The mic is on.",
+      "phonetic": "/ðə mɪk ɪz ɔn./",
+      "zh": "麥開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Test, one two.",
+      "phonetic": "/tɛst, wən tu./",
+      "zh": "試音，一二。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The key is high.",
+      "phonetic": "/ðə ki ɪz haɪ./",
+      "zh": "調高。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Drop it down.",
+      "phonetic": "/drɔp ɪt daʊn./",
+      "zh": "降調。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lyric is wrong.",
+      "phonetic": "/ðə ˈlɪrɪk ɪz rɔŋ./",
+      "zh": "歌詞錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hum the tune.",
+      "phonetic": "/həm ðə tun./",
+      "zh": "哼旋律。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your voice is nice.",
+      "phonetic": "/jʊr vɔɪs ɪz nis./",
+      "zh": "你好聽。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Flattered, thanks.",
+      "phonetic": "/ˈflætərd, θæŋks./",
+      "zh": "榮幸。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tune is happy.",
+      "phonetic": "/ðə tun ɪz ˈhæpi./",
+      "zh": "旋律開心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lift the room.",
+      "phonetic": "/lɪft ðə rum./",
+      "zh": "提振氣氛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sing a song, please.",
+      "phonetic": "/sɪŋ ə sɔŋ, pliz./",
+      "zh": "唱首歌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Which one, though?",
+      "phonetic": "/wɪʧ wən, ðoʊ?/",
+      "zh": "哪一首？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sing a song, please.",
+      "phonetic": "/sɪŋ ə sɔŋ, pliz./",
+      "zh": "唱首歌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Which one, though?",
+      "phonetic": "/wɪʧ wən, ðoʊ?/",
+      "zh": "哪一首？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tune is happy.",
+      "phonetic": "/ðə tun ɪz ˈhæpi./",
+      "zh": "旋律開心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lift the room.",
+      "phonetic": "/lɪft ðə rum./",
+      "zh": "提振氣氛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your voice is nice.",
+      "phonetic": "/jʊr vɔɪs ɪz nis./",
+      "zh": "你好聽。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Flattered, thanks.",
+      "phonetic": "/ˈflætərd, θæŋks./",
+      "zh": "榮幸。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lyric is wrong.",
+      "phonetic": "/ðə ˈlɪrɪk ɪz rɔŋ./",
+      "zh": "歌詞錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hum the tune.",
+      "phonetic": "/həm ðə tun./",
+      "zh": "哼旋律。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The key is high.",
+      "phonetic": "/ðə ki ɪz haɪ./",
+      "zh": "調高。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Drop it down.",
+      "phonetic": "/drɔp ɪt daʊn./",
+      "zh": "降調。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The mic is on.",
+      "phonetic": "/ðə mɪk ɪz ɔn./",
+      "zh": "麥開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Test, one two.",
+      "phonetic": "/tɛst, wən tu./",
+      "zh": "試音，一二。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The chorus is big.",
+      "phonetic": "/ðə ˈkɔrəs ɪz bɪg./",
+      "zh": "副歌大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Join in, all.",
+      "phonetic": "/ʤɔɪn ɪn, ɔl./",
+      "zh": "大家一起。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song is old.",
+      "phonetic": "/ðə sɔŋ ɪz oʊld./",
+      "zh": "歌舊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Classic, yes.",
+      "phonetic": "/ˈklæsɪk, jɛs./",
+      "zh": "經典。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pitch is off.",
+      "phonetic": "/ðə pɪʧ ɪz ɔf./",
+      "zh": "音不準。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ease, slow.",
+      "phonetic": "/iz, sloʊ./",
+      "zh": "放鬆慢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kid sang loud.",
+      "phonetic": "/ðə kɪd sæŋ laʊd./",
+      "zh": "孩子大聲唱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cute, indeed.",
+      "phonetic": "/kjut, ˌɪnˈdid./",
+      "zh": "可愛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The guitar strums.",
+      "phonetic": "/ðə gɪˈtɑr strəmz./",
+      "zh": "吉他刷。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep the beat.",
+      "phonetic": "/kip ðə bit./",
+      "zh": "跟拍。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The note held long.",
+      "phonetic": "/ðə noʊt hɛld lɔŋ./",
+      "zh": "長音。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Breath, then.",
+      "phonetic": "/brɛθ, ðɛn./",
+      "zh": "換氣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The room joined.",
+      "phonetic": "/ðə rum ʤɔɪnd./",
+      "zh": "全室跟唱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Unity, nice.",
+      "phonetic": "/ˈjunɪti, nis./",
+      "zh": "整齊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song is short.",
+      "phonetic": "/ðə sɔŋ ɪz ʃɔrt./",
+      "zh": "歌短。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Encore, please.",
+      "phonetic": "/ˈɑnˌkɔr, pliz./",
+      "zh": "安可。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The melody stuck.",
+      "phonetic": "/ðə ˈmɛlədi stək./",
+      "zh": "旋律卡腦。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Can't stop, ha.",
+      "phonetic": "/kænt stɑp, hɑ./",
+      "zh": "停不下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The style is folk.",
+      "phonetic": "/ðə staɪl ɪz foʊk./",
+      "zh": "民謠風。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Calm, yes.",
+      "phonetic": "/kɑm, jɛs./",
+      "zh": "平靜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The record played.",
+      "phonetic": "/ðə ˈrɛkərd pleɪd./",
+      "zh": "播放唱片。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sing along, then.",
+      "phonetic": "/sɪŋ əˈlɔŋ, ðɛn./",
+      "zh": "跟唱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The high note hit.",
+      "phonetic": "/ðə haɪ noʊt hɪt./",
+      "zh": "高音上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nailed it, yes.",
+      "phonetic": "/neɪld ɪt, jɛs./",
+      "zh": "抓到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song is ours.",
+      "phonetic": "/ðə sɔŋ ɪz ɑrz./",
+      "zh": "我們的歌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Slow dance, then.",
+      "phonetic": "/sloʊ dæns, ðɛn./",
+      "zh": "慢舞。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The crowd clapped.",
+      "phonetic": "/ðə kraʊd klæpt./",
+      "zh": "觀衆鼓掌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Bow, smile.",
+      "phonetic": "/boʊ, smaɪl./",
+      "zh": "鞠躬笑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The warm-up done.",
+      "phonetic": "/ðə warm-up* dən./",
+      "zh": "暖嗓完。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ready to sing.",
+      "phonetic": "/ˈrɛdi tɪ sɪŋ./",
+      "zh": "準備唱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lyric is deep.",
+      "phonetic": "/ðə ˈlɪrɪk ɪz dip./",
+      "zh": "歌詞深。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Means a lot.",
+      "phonetic": "/minz ə lɔt./",
+      "zh": "很有意。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The beat is steady.",
+      "phonetic": "/ðə bit ɪz ˈstɛdi./",
+      "zh": "節拍穩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Metronome, yes.",
+      "phonetic": "/metronome*, jɛs./",
+      "zh": "節拍器。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song ended.",
+      "phonetic": "/ðə sɔŋ ˈɛndɪd./",
+      "zh": "歌結束。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold the note.",
+      "phonetic": "/hoʊld ðə noʊt./",
+      "zh": "拉長音。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The echo is fun.",
+      "phonetic": "/ðə ˈɛkoʊ ɪz fən./",
+      "zh": "回聲好玩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Shout, laugh.",
+      "phonetic": "/ʃaʊt, læf./",
+      "zh": "喊，笑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The part is solo.",
+      "phonetic": "/ðə pɑrt ɪz ˈsoʊˌloʊ./",
+      "zh": "獨唱段。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Step up, please.",
+      "phonetic": "/stɛp əp, pliz./",
+      "zh": "上前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tune is soft.",
+      "phonetic": "/ðə tun ɪz sɔft./",
+      "zh": "旋律輕。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hush, listen.",
+      "phonetic": "/həʃ, ˈlɪsən./",
+      "zh": "噓，聽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song is new.",
+      "phonetic": "/ðə sɔŋ ɪz nu./",
+      "zh": "歌新。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Teach us, then.",
+      "phonetic": "/tiʧ ˈjuˈɛs, ðɛn./",
+      "zh": "教我們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The harmony fits.",
+      "phonetic": "/ðə ˈhɑrməni fɪts./",
+      "zh": "和聲合。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Blend, yes.",
+      "phonetic": "/blɛnd, jɛs./",
+      "zh": "融合。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sing was joy.",
+      "phonetic": "/ðə sɪŋ wɑz ʤɔɪ./",
+      "zh": "唱得開心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Do it again.",
+      "phonetic": "/du ɪt əˈgɛn./",
+      "zh": "再來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The note rang clear.",
+      "phonetic": "/ðə noʊt ræŋ klɪr./",
+      "zh": "音清亮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Beautiful, truly.",
+      "phonetic": "/ˈbjutəfəl, ˈtruli./",
+      "zh": "真美。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song brought smiles.",
+      "phonetic": "/ðə sɔŋ brɔt smaɪlz./",
+      "zh": "歌帶來笑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Worth the breath.",
+      "phonetic": "/wərθ ðə brɛθ./",
+      "zh": "值得。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the song.",
+      "phonetic": "/θæŋks fər ðə sɔŋ./",
+      "zh": "謝謝唱歌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sing on, pal.",
+      "phonetic": "/sɪŋ ɔn, pæl./",
+      "zh": "繼續唱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the song.",
+      "phonetic": "/θæŋks fər ðə sɔŋ./",
+      "zh": "謝謝唱歌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sing on, pal.",
+      "phonetic": "/sɪŋ ɔn, pæl./",
+      "zh": "繼續唱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song brought smiles.",
+      "phonetic": "/ðə sɔŋ brɔt smaɪlz./",
+      "zh": "歌帶來笑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Worth the breath.",
+      "phonetic": "/wərθ ðə brɛθ./",
+      "zh": "值得。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The note rang clear.",
+      "phonetic": "/ðə noʊt ræŋ klɪr./",
+      "zh": "音清亮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Beautiful, truly.",
+      "phonetic": "/ˈbjutəfəl, ˈtruli./",
+      "zh": "真美。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sing was joy.",
+      "phonetic": "/ðə sɪŋ wɑz ʤɔɪ./",
+      "zh": "唱得開心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Do it again.",
+      "phonetic": "/du ɪt əˈgɛn./",
+      "zh": "再來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The harmony fits.",
+      "phonetic": "/ðə ˈhɑrməni fɪts./",
+      "zh": "和聲合。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Blend, yes.",
+      "phonetic": "/blɛnd, jɛs./",
+      "zh": "融合。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song is new.",
+      "phonetic": "/ðə sɔŋ ɪz nu./",
+      "zh": "歌新。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Teach us, then.",
+      "phonetic": "/tiʧ ˈjuˈɛs, ðɛn./",
+      "zh": "教我們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tune is soft.",
+      "phonetic": "/ðə tun ɪz sɔft./",
+      "zh": "旋律輕。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hush, listen.",
+      "phonetic": "/həʃ, ˈlɪsən./",
+      "zh": "噓，聽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The part is solo.",
+      "phonetic": "/ðə pɑrt ɪz ˈsoʊˌloʊ./",
+      "zh": "獨唱段。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Step up, please.",
+      "phonetic": "/stɛp əp, pliz./",
+      "zh": "上前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The echo is fun.",
+      "phonetic": "/ðə ˈɛkoʊ ɪz fən./",
+      "zh": "回聲好玩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Shout, laugh.",
+      "phonetic": "/ʃaʊt, læf./",
+      "zh": "喊，笑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song ended.",
+      "phonetic": "/ðə sɔŋ ˈɛndɪd./",
+      "zh": "歌結束。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold the note.",
+      "phonetic": "/hoʊld ðə noʊt./",
+      "zh": "拉長音。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The beat is steady.",
+      "phonetic": "/ðə bit ɪz ˈstɛdi./",
+      "zh": "節拍穩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Metronome, yes.",
+      "phonetic": "/metronome*, jɛs./",
+      "zh": "節拍器。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lyric is deep.",
+      "phonetic": "/ðə ˈlɪrɪk ɪz dip./",
+      "zh": "歌詞深。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Means a lot.",
+      "phonetic": "/minz ə lɔt./",
+      "zh": "很有意。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The warm-up done.",
+      "phonetic": "/ðə warm-up* dən./",
+      "zh": "暖嗓完。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ready to sing.",
+      "phonetic": "/ˈrɛdi tɪ sɪŋ./",
+      "zh": "準備唱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The crowd clapped.",
+      "phonetic": "/ðə kraʊd klæpt./",
+      "zh": "觀衆鼓掌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Bow, smile.",
+      "phonetic": "/boʊ, smaɪl./",
+      "zh": "鞠躬笑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song is ours.",
+      "phonetic": "/ðə sɔŋ ɪz ɑrz./",
+      "zh": "我們的歌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Slow dance, then.",
+      "phonetic": "/sloʊ dæns, ðɛn./",
+      "zh": "慢舞。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The high note hit.",
+      "phonetic": "/ðə haɪ noʊt hɪt./",
+      "zh": "高音上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nailed it, yes.",
+      "phonetic": "/neɪld ɪt, jɛs./",
+      "zh": "抓到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The record played.",
+      "phonetic": "/ðə ˈrɛkərd pleɪd./",
+      "zh": "播放唱片。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sing along, then.",
+      "phonetic": "/sɪŋ əˈlɔŋ, ðɛn./",
+      "zh": "跟唱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The style is folk.",
+      "phonetic": "/ðə staɪl ɪz foʊk./",
+      "zh": "民謠風。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Calm, yes.",
+      "phonetic": "/kɑm, jɛs./",
+      "zh": "平靜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The melody stuck.",
+      "phonetic": "/ðə ˈmɛlədi stək./",
+      "zh": "旋律卡腦。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Can't stop, ha.",
+      "phonetic": "/kænt stɑp, hɑ./",
+      "zh": "停不下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song is short.",
+      "phonetic": "/ðə sɔŋ ɪz ʃɔrt./",
+      "zh": "歌短。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Encore, please.",
+      "phonetic": "/ˈɑnˌkɔr, pliz./",
+      "zh": "安可。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The room joined.",
+      "phonetic": "/ðə rum ʤɔɪnd./",
+      "zh": "全室跟唱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Unity, nice.",
+      "phonetic": "/ˈjunɪti, nis./",
+      "zh": "整齊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The note held long.",
+      "phonetic": "/ðə noʊt hɛld lɔŋ./",
+      "zh": "長音。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Breath, then.",
+      "phonetic": "/brɛθ, ðɛn./",
+      "zh": "換氣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The guitar strums.",
+      "phonetic": "/ðə gɪˈtɑr strəmz./",
+      "zh": "吉他刷。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep the beat.",
+      "phonetic": "/kip ðə bit./",
+      "zh": "跟拍。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kid sang loud.",
+      "phonetic": "/ðə kɪd sæŋ laʊd./",
+      "zh": "孩子大聲唱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cute, indeed.",
+      "phonetic": "/kjut, ˌɪnˈdid./",
+      "zh": "可愛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pitch is off.",
+      "phonetic": "/ðə pɪʧ ɪz ɔf./",
+      "zh": "音不準。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ease, slow.",
+      "phonetic": "/iz, sloʊ./",
+      "zh": "放鬆慢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song is old.",
+      "phonetic": "/ðə sɔŋ ɪz oʊld./",
+      "zh": "歌舊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Classic, yes.",
+      "phonetic": "/ˈklæsɪk, jɛs./",
+      "zh": "經典。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The chorus is big.",
+      "phonetic": "/ðə ˈkɔrəs ɪz bɪg./",
+      "zh": "副歌大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Join in, all.",
+      "phonetic": "/ʤɔɪn ɪn, ɔl./",
+      "zh": "大家一起。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The mic is on.",
+      "phonetic": "/ðə mɪk ɪz ɔn./",
+      "zh": "麥開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Test, one two.",
+      "phonetic": "/tɛst, wən tu./",
+      "zh": "試音，一二。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The key is high.",
+      "phonetic": "/ðə ki ɪz haɪ./",
+      "zh": "調高。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Drop it down.",
+      "phonetic": "/drɔp ɪt daʊn./",
+      "zh": "降調。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lyric is wrong.",
+      "phonetic": "/ðə ˈlɪrɪk ɪz rɔŋ./",
+      "zh": "歌詞錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hum the tune.",
+      "phonetic": "/həm ðə tun./",
+      "zh": "哼旋律。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your voice is nice.",
+      "phonetic": "/jʊr vɔɪs ɪz nis./",
+      "zh": "你好聽。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Flattered, thanks.",
+      "phonetic": "/ˈflætərd, θæŋks./",
+      "zh": "榮幸。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tune is happy.",
+      "phonetic": "/ðə tun ɪz ˈhæpi./",
+      "zh": "旋律開心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lift the room.",
+      "phonetic": "/lɪft ðə rum./",
+      "zh": "提振氣氛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sing a song, please.",
+      "phonetic": "/sɪŋ ə sɔŋ, pliz./",
+      "zh": "唱首歌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Which one, though?",
+      "phonetic": "/wɪʧ wən, ðoʊ?/",
+      "zh": "哪一首？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sing a song, please.",
+      "phonetic": "/sɪŋ ə sɔŋ, pliz./",
+      "zh": "唱首歌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Which one, though?",
+      "phonetic": "/wɪʧ wən, ðoʊ?/",
+      "zh": "哪一首？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tune is happy.",
+      "phonetic": "/ðə tun ɪz ˈhæpi./",
+      "zh": "旋律開心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lift the room.",
+      "phonetic": "/lɪft ðə rum./",
+      "zh": "提振氣氛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your voice is nice.",
+      "phonetic": "/jʊr vɔɪs ɪz nis./",
+      "zh": "你好聽。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Flattered, thanks.",
+      "phonetic": "/ˈflætərd, θæŋks./",
+      "zh": "榮幸。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lyric is wrong.",
+      "phonetic": "/ðə ˈlɪrɪk ɪz rɔŋ./",
+      "zh": "歌詞錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hum the tune.",
+      "phonetic": "/həm ðə tun./",
+      "zh": "哼旋律。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The key is high.",
+      "phonetic": "/ðə ki ɪz haɪ./",
+      "zh": "調高。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Drop it down.",
+      "phonetic": "/drɔp ɪt daʊn./",
+      "zh": "降調。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The mic is on.",
+      "phonetic": "/ðə mɪk ɪz ɔn./",
+      "zh": "麥開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Test, one two.",
+      "phonetic": "/tɛst, wən tu./",
+      "zh": "試音，一二。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The chorus is big.",
+      "phonetic": "/ðə ˈkɔrəs ɪz bɪg./",
+      "zh": "副歌大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Join in, all.",
+      "phonetic": "/ʤɔɪn ɪn, ɔl./",
+      "zh": "大家一起。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song is old.",
+      "phonetic": "/ðə sɔŋ ɪz oʊld./",
+      "zh": "歌舊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Classic, yes.",
+      "phonetic": "/ˈklæsɪk, jɛs./",
+      "zh": "經典。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pitch is off.",
+      "phonetic": "/ðə pɪʧ ɪz ɔf./",
+      "zh": "音不準。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ease, slow.",
+      "phonetic": "/iz, sloʊ./",
+      "zh": "放鬆慢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kid sang loud.",
+      "phonetic": "/ðə kɪd sæŋ laʊd./",
+      "zh": "孩子大聲唱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cute, indeed.",
+      "phonetic": "/kjut, ˌɪnˈdid./",
+      "zh": "可愛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The guitar strums.",
+      "phonetic": "/ðə gɪˈtɑr strəmz./",
+      "zh": "吉他刷。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep the beat.",
+      "phonetic": "/kip ðə bit./",
+      "zh": "跟拍。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The note held long.",
+      "phonetic": "/ðə noʊt hɛld lɔŋ./",
+      "zh": "長音。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Breath, then.",
+      "phonetic": "/brɛθ, ðɛn./",
+      "zh": "換氣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The room joined.",
+      "phonetic": "/ðə rum ʤɔɪnd./",
+      "zh": "全室跟唱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Unity, nice.",
+      "phonetic": "/ˈjunɪti, nis./",
+      "zh": "整齊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song is short.",
+      "phonetic": "/ðə sɔŋ ɪz ʃɔrt./",
+      "zh": "歌短。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Encore, please.",
+      "phonetic": "/ˈɑnˌkɔr, pliz./",
+      "zh": "安可。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The melody stuck.",
+      "phonetic": "/ðə ˈmɛlədi stək./",
+      "zh": "旋律卡腦。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Can't stop, ha.",
+      "phonetic": "/kænt stɑp, hɑ./",
+      "zh": "停不下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The style is folk.",
+      "phonetic": "/ðə staɪl ɪz foʊk./",
+      "zh": "民謠風。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Calm, yes.",
+      "phonetic": "/kɑm, jɛs./",
+      "zh": "平靜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The record played.",
+      "phonetic": "/ðə ˈrɛkərd pleɪd./",
+      "zh": "播放唱片。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sing along, then.",
+      "phonetic": "/sɪŋ əˈlɔŋ, ðɛn./",
+      "zh": "跟唱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The high note hit.",
+      "phonetic": "/ðə haɪ noʊt hɪt./",
+      "zh": "高音上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nailed it, yes.",
+      "phonetic": "/neɪld ɪt, jɛs./",
+      "zh": "抓到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song is ours.",
+      "phonetic": "/ðə sɔŋ ɪz ɑrz./",
+      "zh": "我們的歌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Slow dance, then.",
+      "phonetic": "/sloʊ dæns, ðɛn./",
+      "zh": "慢舞。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The crowd clapped.",
+      "phonetic": "/ðə kraʊd klæpt./",
+      "zh": "觀衆鼓掌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Bow, smile.",
+      "phonetic": "/boʊ, smaɪl./",
+      "zh": "鞠躬笑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The warm-up done.",
+      "phonetic": "/ðə warm-up* dən./",
+      "zh": "暖嗓完。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ready to sing.",
+      "phonetic": "/ˈrɛdi tɪ sɪŋ./",
+      "zh": "準備唱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lyric is deep.",
+      "phonetic": "/ðə ˈlɪrɪk ɪz dip./",
+      "zh": "歌詞深。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Means a lot.",
+      "phonetic": "/minz ə lɔt./",
+      "zh": "很有意。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The beat is steady.",
+      "phonetic": "/ðə bit ɪz ˈstɛdi./",
+      "zh": "節拍穩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Metronome, yes.",
+      "phonetic": "/metronome*, jɛs./",
+      "zh": "節拍器。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song ended.",
+      "phonetic": "/ðə sɔŋ ˈɛndɪd./",
+      "zh": "歌結束。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold the note.",
+      "phonetic": "/hoʊld ðə noʊt./",
+      "zh": "拉長音。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The echo is fun.",
+      "phonetic": "/ðə ˈɛkoʊ ɪz fən./",
+      "zh": "回聲好玩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Shout, laugh.",
+      "phonetic": "/ʃaʊt, læf./",
+      "zh": "喊，笑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The part is solo.",
+      "phonetic": "/ðə pɑrt ɪz ˈsoʊˌloʊ./",
+      "zh": "獨唱段。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Step up, please.",
+      "phonetic": "/stɛp əp, pliz./",
+      "zh": "上前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tune is soft.",
+      "phonetic": "/ðə tun ɪz sɔft./",
+      "zh": "旋律輕。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hush, listen.",
+      "phonetic": "/həʃ, ˈlɪsən./",
+      "zh": "噓，聽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song is new.",
+      "phonetic": "/ðə sɔŋ ɪz nu./",
+      "zh": "歌新。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Teach us, then.",
+      "phonetic": "/tiʧ ˈjuˈɛs, ðɛn./",
+      "zh": "教我們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The harmony fits.",
+      "phonetic": "/ðə ˈhɑrməni fɪts./",
+      "zh": "和聲合。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Blend, yes.",
+      "phonetic": "/blɛnd, jɛs./",
+      "zh": "融合。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sing was joy.",
+      "phonetic": "/ðə sɪŋ wɑz ʤɔɪ./",
+      "zh": "唱得開心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Do it again.",
+      "phonetic": "/du ɪt əˈgɛn./",
+      "zh": "再來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The note rang clear.",
+      "phonetic": "/ðə noʊt ræŋ klɪr./",
+      "zh": "音清亮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Beautiful, truly.",
+      "phonetic": "/ˈbjutəfəl, ˈtruli./",
+      "zh": "真美。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song brought smiles.",
+      "phonetic": "/ðə sɔŋ brɔt smaɪlz./",
+      "zh": "歌帶來笑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Worth the breath.",
+      "phonetic": "/wərθ ðə brɛθ./",
+      "zh": "值得。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the song.",
+      "phonetic": "/θæŋks fər ðə sɔŋ./",
+      "zh": "謝謝唱歌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sing on, pal.",
+      "phonetic": "/sɪŋ ɔn, pæl./",
+      "zh": "繼續唱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the song.",
+      "phonetic": "/θæŋks fər ðə sɔŋ./",
+      "zh": "謝謝唱歌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sing on, pal.",
+      "phonetic": "/sɪŋ ɔn, pæl./",
+      "zh": "繼續唱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song brought smiles.",
+      "phonetic": "/ðə sɔŋ brɔt smaɪlz./",
+      "zh": "歌帶來笑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Worth the breath.",
+      "phonetic": "/wərθ ðə brɛθ./",
+      "zh": "值得。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The note rang clear.",
+      "phonetic": "/ðə noʊt ræŋ klɪr./",
+      "zh": "音清亮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Beautiful, truly.",
+      "phonetic": "/ˈbjutəfəl, ˈtruli./",
+      "zh": "真美。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sing was joy.",
+      "phonetic": "/ðə sɪŋ wɑz ʤɔɪ./",
+      "zh": "唱得開心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Do it again.",
+      "phonetic": "/du ɪt əˈgɛn./",
+      "zh": "再來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The harmony fits.",
+      "phonetic": "/ðə ˈhɑrməni fɪts./",
+      "zh": "和聲合。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Blend, yes.",
+      "phonetic": "/blɛnd, jɛs./",
+      "zh": "融合。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song is new.",
+      "phonetic": "/ðə sɔŋ ɪz nu./",
+      "zh": "歌新。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Teach us, then.",
+      "phonetic": "/tiʧ ˈjuˈɛs, ðɛn./",
+      "zh": "教我們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tune is soft.",
+      "phonetic": "/ðə tun ɪz sɔft./",
+      "zh": "旋律輕。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hush, listen.",
+      "phonetic": "/həʃ, ˈlɪsən./",
+      "zh": "噓，聽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The part is solo.",
+      "phonetic": "/ðə pɑrt ɪz ˈsoʊˌloʊ./",
+      "zh": "獨唱段。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Step up, please.",
+      "phonetic": "/stɛp əp, pliz./",
+      "zh": "上前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The echo is fun.",
+      "phonetic": "/ðə ˈɛkoʊ ɪz fən./",
+      "zh": "回聲好玩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Shout, laugh.",
+      "phonetic": "/ʃaʊt, læf./",
+      "zh": "喊，笑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song ended.",
+      "phonetic": "/ðə sɔŋ ˈɛndɪd./",
+      "zh": "歌結束。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold the note.",
+      "phonetic": "/hoʊld ðə noʊt./",
+      "zh": "拉長音。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The beat is steady.",
+      "phonetic": "/ðə bit ɪz ˈstɛdi./",
+      "zh": "節拍穩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Metronome, yes.",
+      "phonetic": "/metronome*, jɛs./",
+      "zh": "節拍器。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lyric is deep.",
+      "phonetic": "/ðə ˈlɪrɪk ɪz dip./",
+      "zh": "歌詞深。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Means a lot.",
+      "phonetic": "/minz ə lɔt./",
+      "zh": "很有意。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The warm-up done.",
+      "phonetic": "/ðə warm-up* dən./",
+      "zh": "暖嗓完。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ready to sing.",
+      "phonetic": "/ˈrɛdi tɪ sɪŋ./",
+      "zh": "準備唱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The crowd clapped.",
+      "phonetic": "/ðə kraʊd klæpt./",
+      "zh": "觀衆鼓掌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Bow, smile.",
+      "phonetic": "/boʊ, smaɪl./",
+      "zh": "鞠躬笑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song is ours.",
+      "phonetic": "/ðə sɔŋ ɪz ɑrz./",
+      "zh": "我們的歌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Slow dance, then.",
+      "phonetic": "/sloʊ dæns, ðɛn./",
+      "zh": "慢舞。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The high note hit.",
+      "phonetic": "/ðə haɪ noʊt hɪt./",
+      "zh": "高音上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nailed it, yes.",
+      "phonetic": "/neɪld ɪt, jɛs./",
+      "zh": "抓到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The record played.",
+      "phonetic": "/ðə ˈrɛkərd pleɪd./",
+      "zh": "播放唱片。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sing along, then.",
+      "phonetic": "/sɪŋ əˈlɔŋ, ðɛn./",
+      "zh": "跟唱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The style is folk.",
+      "phonetic": "/ðə staɪl ɪz foʊk./",
+      "zh": "民謠風。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Calm, yes.",
+      "phonetic": "/kɑm, jɛs./",
+      "zh": "平靜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The melody stuck.",
+      "phonetic": "/ðə ˈmɛlədi stək./",
+      "zh": "旋律卡腦。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Can't stop, ha.",
+      "phonetic": "/kænt stɑp, hɑ./",
+      "zh": "停不下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song is short.",
+      "phonetic": "/ðə sɔŋ ɪz ʃɔrt./",
+      "zh": "歌短。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Encore, please.",
+      "phonetic": "/ˈɑnˌkɔr, pliz./",
+      "zh": "安可。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The room joined.",
+      "phonetic": "/ðə rum ʤɔɪnd./",
+      "zh": "全室跟唱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Unity, nice.",
+      "phonetic": "/ˈjunɪti, nis./",
+      "zh": "整齊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The note held long.",
+      "phonetic": "/ðə noʊt hɛld lɔŋ./",
+      "zh": "長音。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Breath, then.",
+      "phonetic": "/brɛθ, ðɛn./",
+      "zh": "換氣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The guitar strums.",
+      "phonetic": "/ðə gɪˈtɑr strəmz./",
+      "zh": "吉他刷。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep the beat.",
+      "phonetic": "/kip ðə bit./",
+      "zh": "跟拍。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kid sang loud.",
+      "phonetic": "/ðə kɪd sæŋ laʊd./",
+      "zh": "孩子大聲唱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cute, indeed.",
+      "phonetic": "/kjut, ˌɪnˈdid./",
+      "zh": "可愛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pitch is off.",
+      "phonetic": "/ðə pɪʧ ɪz ɔf./",
+      "zh": "音不準。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ease, slow.",
+      "phonetic": "/iz, sloʊ./",
+      "zh": "放鬆慢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The song is old.",
+      "phonetic": "/ðə sɔŋ ɪz oʊld./",
+      "zh": "歌舊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Classic, yes.",
+      "phonetic": "/ˈklæsɪk, jɛs./",
+      "zh": "經典。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The chorus is big.",
+      "phonetic": "/ðə ˈkɔrəs ɪz bɪg./",
+      "zh": "副歌大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Join in, all.",
+      "phonetic": "/ʤɔɪn ɪn, ɔl./",
+      "zh": "大家一起。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The mic is on.",
+      "phonetic": "/ðə mɪk ɪz ɔn./",
+      "zh": "麥開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Test, one two.",
+      "phonetic": "/tɛst, wən tu./",
+      "zh": "試音，一二。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The key is high.",
+      "phonetic": "/ðə ki ɪz haɪ./",
+      "zh": "調高。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Drop it down.",
+      "phonetic": "/drɔp ɪt daʊn./",
+      "zh": "降調。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lyric is wrong.",
+      "phonetic": "/ðə ˈlɪrɪk ɪz rɔŋ./",
+      "zh": "歌詞錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hum the tune.",
+      "phonetic": "/həm ðə tun./",
+      "zh": "哼旋律。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your voice is nice.",
+      "phonetic": "/jʊr vɔɪs ɪz nis./",
+      "zh": "你好聽。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Flattered, thanks.",
+      "phonetic": "/ˈflætərd, θæŋks./",
+      "zh": "榮幸。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tune is happy.",
+      "phonetic": "/ðə tun ɪz ˈhæpi./",
+      "zh": "旋律開心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lift the room.",
+      "phonetic": "/lɪft ðə rum./",
+      "zh": "提振氣氛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sing a song, please.",
+      "phonetic": "/sɪŋ ə sɔŋ, pliz./",
+      "zh": "唱首歌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Which one, though?",
+      "phonetic": "/wɪʧ wən, ðoʊ?/",
+      "zh": "哪一首？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sing a song, please.",
+      "phonetic": "/sɪŋ ə sɔŋ, pliz./",
+      "zh": "唱首歌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Which one, though?",
+      "phonetic": "/wɪʧ wən, ðoʊ?/",
+      "zh": "哪一首？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tune is happy.",
+      "phonetic": "/ðə tun ɪz ˈhæpi./",
+      "zh": "旋律開心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lift the room.",
+      "phonetic": "/lɪft ðə rum./",
+      "zh": "提振氣氛。"
+    }
+  ]
+}

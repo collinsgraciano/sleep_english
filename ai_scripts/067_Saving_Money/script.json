@@ -1,0 +1,2458 @@
+{
+  "title": "Everyday Phrases — Saving Money",
+  "title_zh": "存錢",
+  "scene_zh": "存錢 · 情境對話",
+  "title_quote": "Let's save some.",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】🐖 實用存錢必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — Saving Money",
+  "youtube_description": "睡著學英文！這部影片收錄實用存錢情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫），不用背，睡前聽就會。重複播放，讓英文自然進入你的大腦。👍 想學更多生活場景，請留言告訴我！別忘了訂閱+按讚。 #英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical Saving Money phrase pairs (each pair: male normal speed → female slow speed → combined dialogue). No memorization needed—just listen before bed and absorb naturally. If you want more real-life scenarios, leave a comment! Subscribe and like!",
+  "youtube_tags": [
+    "英文聽力",
+    "睡前英文",
+    "存錢英文",
+    "English listening",
+    "Sleep learning",
+    "A2 English",
+    "常用英文短語",
+    "零基礎英文",
+    "慢速英文",
+    "英文口語",
+    "Learn English",
+    "English for daily life",
+    "ESL",
+    "English conversation",
+    "聽英語",
+    "英文學習"
+  ],
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "Saving Money",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "Saving Money",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Finance",
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "Let's save some.",
+      "phonetic": "/lɛts seɪv səm./",
+      "zh": "存點錢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "How much a month?",
+      "phonetic": "/haʊ məʧ ə mənθ?/",
+      "zh": "月存多少？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The jar is full.",
+      "phonetic": "/ðə ʤɑr ɪz fʊl./",
+      "zh": "撲滿滿。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Count it, please.",
+      "phonetic": "/kaʊnt ɪt, pliz./",
+      "zh": "數數。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bank is near.",
+      "phonetic": "/ðə bæŋk ɪz nɪr./",
+      "zh": "銀行近。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Deposit today, yes.",
+      "phonetic": "/dɪˈpɑzət təˈdeɪ, jɛs./",
+      "zh": "今天存。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The goal is clear.",
+      "phonetic": "/ðə goʊl ɪz klɪr./",
+      "zh": "目標清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Trip, by summer.",
+      "phonetic": "/trɪp, baɪ ˈsəmər./",
+      "zh": "夏天去旅行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app rounds up.",
+      "phonetic": "/ðə æp raʊnz əp./",
+      "zh": "App 湊整。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spare to save.",
+      "phonetic": "/spɛr tɪ seɪv./",
+      "zh": "零錢存。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The budget is tight.",
+      "phonetic": "/ðə ˈbəʤɪt ɪz taɪt./",
+      "zh": "預算緊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cut the extras.",
+      "phonetic": "/kət ðə ˈɛkstrəz./",
+      "zh": "砍額外。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The coffee adds up.",
+      "phonetic": "/ðə ˈkɔfi ædz əp./",
+      "zh": "咖啡累積。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Brew at home.",
+      "phonetic": "/bru æt hoʊm./",
+      "zh": "在家煮。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sale is tempting.",
+      "phonetic": "/ðə seɪl ɪz ˈtɛmptɪŋ./",
+      "zh": "特價誘人。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Skip, not need.",
+      "phonetic": "/skɪp, nɑt nid./",
+      "zh": "跳過不需要。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The interest grows.",
+      "phonetic": "/ðə ˈɪntəˌrɛst groʊz./",
+      "zh": "利息增。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Slow but sure.",
+      "phonetic": "/sloʊ bət ʃʊr./",
+      "zh": "慢但穩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The habit sticks.",
+      "phonetic": "/ðə ˈhæbət stɪks./",
+      "zh": "習慣成。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Auto transfer, yes.",
+      "phonetic": "/ˈɔtoʊ ˈtrænsfər, jɛs./",
+      "zh": "自動轉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The urge is strong.",
+      "phonetic": "/ðə ərʤ ɪz strɔŋ./",
+      "zh": "衝動強。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wait a day, please.",
+      "phonetic": "/weɪt ə deɪ, pliz./",
+      "zh": "等一天。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cash is safe.",
+      "phonetic": "/ðə kæʃ ɪz seɪf./",
+      "zh": "現金安全。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In the tin, yes.",
+      "phonetic": "/ɪn ðə tɪn, jɛs./",
+      "zh": "放鐵盒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The plan is set.",
+      "phonetic": "/ðə plæn ɪz sɛt./",
+      "zh": "計畫定。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ten percent, yes.",
+      "phonetic": "/tɛn pərˈsɛnt, jɛs./",
+      "zh": "百分之十。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bonus, save.",
+      "phonetic": "/ðə ˈboʊnəs, seɪv./",
+      "zh": "獎金存。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Not spend, please.",
+      "phonetic": "/nɑt spɛnd, pliz./",
+      "zh": "別花。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The debt is down.",
+      "phonetic": "/ðə dɛt ɪz daʊn./",
+      "zh": "債務減。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Free cash, then.",
+      "phonetic": "/fri kæʃ, ðɛn./",
+      "zh": "有閒錢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The coin jar helps.",
+      "phonetic": "/ðə kɔɪn ʤɑr hɛlps./",
+      "zh": "零錢罐有用。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the trip.",
+      "phonetic": "/fər ðə trɪp./",
+      "zh": "旅行用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The track the graph.",
+      "phonetic": "/ðə træk ðə græf./",
+      "zh": "追蹤圖表。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "See it grow.",
+      "phonetic": "/si ɪt groʊ./",
+      "zh": "看成長。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The no-spend day.",
+      "phonetic": "/ðə no-spend* deɪ./",
+      "zh": "不花錢日。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Challenge, fun.",
+      "phonetic": "/ˈʧælənʤ, fən./",
+      "zh": "挑戰好玩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The goal reached.",
+      "phonetic": "/ðə goʊl riʧt./",
+      "zh": "達標。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Treat small, yes.",
+      "phonetic": "/trit smɔl, jɛs./",
+      "zh": "小獎勵。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The fee is small.",
+      "phonetic": "/ðə fi ɪz smɔl./",
+      "zh": "手續費少。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Worth the save.",
+      "phonetic": "/wərθ ðə seɪv./",
+      "zh": "值得存。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The impulse bought.",
+      "phonetic": "/ðə ˌɪmˈpəls bɔt./",
+      "zh": "衝動買。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Return it, maybe.",
+      "phonetic": "/rɪˈtərn ɪt, ˈmeɪbi./",
+      "zh": "或許退。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The month end, check.",
+      "phonetic": "/ðə mənθ ɛnd, ʧɛk./",
+      "zh": "月底查。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On track, yes.",
+      "phonetic": "/ɔn træk, jɛs./",
+      "zh": "達標。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The future is calm.",
+      "phonetic": "/ðə fˈjuʧər ɪz kɑm./",
+      "zh": "未來穩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "From the save.",
+      "phonetic": "/frəm ðə seɪv./",
+      "zh": "因存款。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The split is fair.",
+      "phonetic": "/ðə splɪt ɪz fɛr./",
+      "zh": "分配公。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Need and want.",
+      "phonetic": "/nid ənd wɔnt./",
+      "zh": "需要與想。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The stash is secret.",
+      "phonetic": "/ðə stæʃ ɪz ˈsikrɪt./",
+      "zh": "私房錢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the rain.",
+      "phonetic": "/fər ðə reɪn./",
+      "zh": "備急需。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rate is low.",
+      "phonetic": "/ðə reɪt ɪz loʊ./",
+      "zh": "利率低。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Still, save, yes.",
+      "phonetic": "/stɪl, seɪv, jɛs./",
+      "zh": "仍存。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The dream needs cash.",
+      "phonetic": "/ðə drim nidz kæʃ./",
+      "zh": "夢想要錢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Save for it.",
+      "phonetic": "/seɪv fər ɪt./",
+      "zh": "存它。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The spare is found.",
+      "phonetic": "/ðə spɛr ɪz faʊnd./",
+      "zh": "閒錢找到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Add to pot.",
+      "phonetic": "/æd tɪ pɑt./",
+      "zh": "加進。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The year end, sum.",
+      "phonetic": "/ðə jɪr ɛnd, səm./",
+      "zh": "年底算。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Grew a lot.",
+      "phonetic": "/gru ə lɔt./",
+      "zh": "增很多。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The discipline pays.",
+      "phonetic": "/ðə ˈdɪsəplən peɪz./",
+      "zh": "紀律有報。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Freedom, yes.",
+      "phonetic": "/ˈfridəm, jɛs./",
+      "zh": "自由。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The save is smooth.",
+      "phonetic": "/ðə seɪv ɪz smuð./",
+      "zh": "存得順。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep it, pal.",
+      "phonetic": "/kip ɪt, pæl./",
+      "zh": "保持。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for saving.",
+      "phonetic": "/θæŋks fər ˈseɪvɪŋ./",
+      "zh": "謝謝存錢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Secure nest, yes.",
+      "phonetic": "/sɪˈkjʊr nɛst, jɛs./",
+      "zh": "安穩窩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for saving.",
+      "phonetic": "/θæŋks fər ˈseɪvɪŋ./",
+      "zh": "謝謝存錢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Secure nest, yes.",
+      "phonetic": "/sɪˈkjʊr nɛst, jɛs./",
+      "zh": "安穩窩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The save is smooth.",
+      "phonetic": "/ðə seɪv ɪz smuð./",
+      "zh": "存得順。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep it, pal.",
+      "phonetic": "/kip ɪt, pæl./",
+      "zh": "保持。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The discipline pays.",
+      "phonetic": "/ðə ˈdɪsəplən peɪz./",
+      "zh": "紀律有報。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Freedom, yes.",
+      "phonetic": "/ˈfridəm, jɛs./",
+      "zh": "自由。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The year end, sum.",
+      "phonetic": "/ðə jɪr ɛnd, səm./",
+      "zh": "年底算。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Grew a lot.",
+      "phonetic": "/gru ə lɔt./",
+      "zh": "增很多。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The spare is found.",
+      "phonetic": "/ðə spɛr ɪz faʊnd./",
+      "zh": "閒錢找到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Add to pot.",
+      "phonetic": "/æd tɪ pɑt./",
+      "zh": "加進。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The dream needs cash.",
+      "phonetic": "/ðə drim nidz kæʃ./",
+      "zh": "夢想要錢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Save for it.",
+      "phonetic": "/seɪv fər ɪt./",
+      "zh": "存它。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rate is low.",
+      "phonetic": "/ðə reɪt ɪz loʊ./",
+      "zh": "利率低。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Still, save, yes.",
+      "phonetic": "/stɪl, seɪv, jɛs./",
+      "zh": "仍存。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The stash is secret.",
+      "phonetic": "/ðə stæʃ ɪz ˈsikrɪt./",
+      "zh": "私房錢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the rain.",
+      "phonetic": "/fər ðə reɪn./",
+      "zh": "備急需。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The split is fair.",
+      "phonetic": "/ðə splɪt ɪz fɛr./",
+      "zh": "分配公。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Need and want.",
+      "phonetic": "/nid ənd wɔnt./",
+      "zh": "需要與想。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The future is calm.",
+      "phonetic": "/ðə fˈjuʧər ɪz kɑm./",
+      "zh": "未來穩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "From the save.",
+      "phonetic": "/frəm ðə seɪv./",
+      "zh": "因存款。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The month end, check.",
+      "phonetic": "/ðə mənθ ɛnd, ʧɛk./",
+      "zh": "月底查。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On track, yes.",
+      "phonetic": "/ɔn træk, jɛs./",
+      "zh": "達標。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The impulse bought.",
+      "phonetic": "/ðə ˌɪmˈpəls bɔt./",
+      "zh": "衝動買。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Return it, maybe.",
+      "phonetic": "/rɪˈtərn ɪt, ˈmeɪbi./",
+      "zh": "或許退。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The fee is small.",
+      "phonetic": "/ðə fi ɪz smɔl./",
+      "zh": "手續費少。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Worth the save.",
+      "phonetic": "/wərθ ðə seɪv./",
+      "zh": "值得存。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The goal reached.",
+      "phonetic": "/ðə goʊl riʧt./",
+      "zh": "達標。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Treat small, yes.",
+      "phonetic": "/trit smɔl, jɛs./",
+      "zh": "小獎勵。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The no-spend day.",
+      "phonetic": "/ðə no-spend* deɪ./",
+      "zh": "不花錢日。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Challenge, fun.",
+      "phonetic": "/ˈʧælənʤ, fən./",
+      "zh": "挑戰好玩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The track the graph.",
+      "phonetic": "/ðə træk ðə græf./",
+      "zh": "追蹤圖表。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "See it grow.",
+      "phonetic": "/si ɪt groʊ./",
+      "zh": "看成長。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The coin jar helps.",
+      "phonetic": "/ðə kɔɪn ʤɑr hɛlps./",
+      "zh": "零錢罐有用。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the trip.",
+      "phonetic": "/fər ðə trɪp./",
+      "zh": "旅行用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The debt is down.",
+      "phonetic": "/ðə dɛt ɪz daʊn./",
+      "zh": "債務減。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Free cash, then.",
+      "phonetic": "/fri kæʃ, ðɛn./",
+      "zh": "有閒錢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bonus, save.",
+      "phonetic": "/ðə ˈboʊnəs, seɪv./",
+      "zh": "獎金存。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Not spend, please.",
+      "phonetic": "/nɑt spɛnd, pliz./",
+      "zh": "別花。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The plan is set.",
+      "phonetic": "/ðə plæn ɪz sɛt./",
+      "zh": "計畫定。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ten percent, yes.",
+      "phonetic": "/tɛn pərˈsɛnt, jɛs./",
+      "zh": "百分之十。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cash is safe.",
+      "phonetic": "/ðə kæʃ ɪz seɪf./",
+      "zh": "現金安全。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In the tin, yes.",
+      "phonetic": "/ɪn ðə tɪn, jɛs./",
+      "zh": "放鐵盒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The urge is strong.",
+      "phonetic": "/ðə ərʤ ɪz strɔŋ./",
+      "zh": "衝動強。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wait a day, please.",
+      "phonetic": "/weɪt ə deɪ, pliz./",
+      "zh": "等一天。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The habit sticks.",
+      "phonetic": "/ðə ˈhæbət stɪks./",
+      "zh": "習慣成。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Auto transfer, yes.",
+      "phonetic": "/ˈɔtoʊ ˈtrænsfər, jɛs./",
+      "zh": "自動轉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The interest grows.",
+      "phonetic": "/ðə ˈɪntəˌrɛst groʊz./",
+      "zh": "利息增。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Slow but sure.",
+      "phonetic": "/sloʊ bət ʃʊr./",
+      "zh": "慢但穩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sale is tempting.",
+      "phonetic": "/ðə seɪl ɪz ˈtɛmptɪŋ./",
+      "zh": "特價誘人。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Skip, not need.",
+      "phonetic": "/skɪp, nɑt nid./",
+      "zh": "跳過不需要。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The coffee adds up.",
+      "phonetic": "/ðə ˈkɔfi ædz əp./",
+      "zh": "咖啡累積。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Brew at home.",
+      "phonetic": "/bru æt hoʊm./",
+      "zh": "在家煮。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The budget is tight.",
+      "phonetic": "/ðə ˈbəʤɪt ɪz taɪt./",
+      "zh": "預算緊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cut the extras.",
+      "phonetic": "/kət ðə ˈɛkstrəz./",
+      "zh": "砍額外。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app rounds up.",
+      "phonetic": "/ðə æp raʊnz əp./",
+      "zh": "App 湊整。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spare to save.",
+      "phonetic": "/spɛr tɪ seɪv./",
+      "zh": "零錢存。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The goal is clear.",
+      "phonetic": "/ðə goʊl ɪz klɪr./",
+      "zh": "目標清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Trip, by summer.",
+      "phonetic": "/trɪp, baɪ ˈsəmər./",
+      "zh": "夏天去旅行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bank is near.",
+      "phonetic": "/ðə bæŋk ɪz nɪr./",
+      "zh": "銀行近。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Deposit today, yes.",
+      "phonetic": "/dɪˈpɑzət təˈdeɪ, jɛs./",
+      "zh": "今天存。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The jar is full.",
+      "phonetic": "/ðə ʤɑr ɪz fʊl./",
+      "zh": "撲滿滿。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Count it, please.",
+      "phonetic": "/kaʊnt ɪt, pliz./",
+      "zh": "數數。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's save some.",
+      "phonetic": "/lɛts seɪv səm./",
+      "zh": "存點錢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "How much a month?",
+      "phonetic": "/haʊ məʧ ə mənθ?/",
+      "zh": "月存多少？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's save some.",
+      "phonetic": "/lɛts seɪv səm./",
+      "zh": "存點錢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "How much a month?",
+      "phonetic": "/haʊ məʧ ə mənθ?/",
+      "zh": "月存多少？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The jar is full.",
+      "phonetic": "/ðə ʤɑr ɪz fʊl./",
+      "zh": "撲滿滿。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Count it, please.",
+      "phonetic": "/kaʊnt ɪt, pliz./",
+      "zh": "數數。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bank is near.",
+      "phonetic": "/ðə bæŋk ɪz nɪr./",
+      "zh": "銀行近。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Deposit today, yes.",
+      "phonetic": "/dɪˈpɑzət təˈdeɪ, jɛs./",
+      "zh": "今天存。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The goal is clear.",
+      "phonetic": "/ðə goʊl ɪz klɪr./",
+      "zh": "目標清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Trip, by summer.",
+      "phonetic": "/trɪp, baɪ ˈsəmər./",
+      "zh": "夏天去旅行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app rounds up.",
+      "phonetic": "/ðə æp raʊnz əp./",
+      "zh": "App 湊整。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spare to save.",
+      "phonetic": "/spɛr tɪ seɪv./",
+      "zh": "零錢存。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The budget is tight.",
+      "phonetic": "/ðə ˈbəʤɪt ɪz taɪt./",
+      "zh": "預算緊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cut the extras.",
+      "phonetic": "/kət ðə ˈɛkstrəz./",
+      "zh": "砍額外。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The coffee adds up.",
+      "phonetic": "/ðə ˈkɔfi ædz əp./",
+      "zh": "咖啡累積。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Brew at home.",
+      "phonetic": "/bru æt hoʊm./",
+      "zh": "在家煮。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sale is tempting.",
+      "phonetic": "/ðə seɪl ɪz ˈtɛmptɪŋ./",
+      "zh": "特價誘人。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Skip, not need.",
+      "phonetic": "/skɪp, nɑt nid./",
+      "zh": "跳過不需要。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The interest grows.",
+      "phonetic": "/ðə ˈɪntəˌrɛst groʊz./",
+      "zh": "利息增。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Slow but sure.",
+      "phonetic": "/sloʊ bət ʃʊr./",
+      "zh": "慢但穩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The habit sticks.",
+      "phonetic": "/ðə ˈhæbət stɪks./",
+      "zh": "習慣成。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Auto transfer, yes.",
+      "phonetic": "/ˈɔtoʊ ˈtrænsfər, jɛs./",
+      "zh": "自動轉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The urge is strong.",
+      "phonetic": "/ðə ərʤ ɪz strɔŋ./",
+      "zh": "衝動強。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wait a day, please.",
+      "phonetic": "/weɪt ə deɪ, pliz./",
+      "zh": "等一天。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cash is safe.",
+      "phonetic": "/ðə kæʃ ɪz seɪf./",
+      "zh": "現金安全。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In the tin, yes.",
+      "phonetic": "/ɪn ðə tɪn, jɛs./",
+      "zh": "放鐵盒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The plan is set.",
+      "phonetic": "/ðə plæn ɪz sɛt./",
+      "zh": "計畫定。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ten percent, yes.",
+      "phonetic": "/tɛn pərˈsɛnt, jɛs./",
+      "zh": "百分之十。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bonus, save.",
+      "phonetic": "/ðə ˈboʊnəs, seɪv./",
+      "zh": "獎金存。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Not spend, please.",
+      "phonetic": "/nɑt spɛnd, pliz./",
+      "zh": "別花。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The debt is down.",
+      "phonetic": "/ðə dɛt ɪz daʊn./",
+      "zh": "債務減。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Free cash, then.",
+      "phonetic": "/fri kæʃ, ðɛn./",
+      "zh": "有閒錢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The coin jar helps.",
+      "phonetic": "/ðə kɔɪn ʤɑr hɛlps./",
+      "zh": "零錢罐有用。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the trip.",
+      "phonetic": "/fər ðə trɪp./",
+      "zh": "旅行用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The track the graph.",
+      "phonetic": "/ðə træk ðə græf./",
+      "zh": "追蹤圖表。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "See it grow.",
+      "phonetic": "/si ɪt groʊ./",
+      "zh": "看成長。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The no-spend day.",
+      "phonetic": "/ðə no-spend* deɪ./",
+      "zh": "不花錢日。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Challenge, fun.",
+      "phonetic": "/ˈʧælənʤ, fən./",
+      "zh": "挑戰好玩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The goal reached.",
+      "phonetic": "/ðə goʊl riʧt./",
+      "zh": "達標。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Treat small, yes.",
+      "phonetic": "/trit smɔl, jɛs./",
+      "zh": "小獎勵。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The fee is small.",
+      "phonetic": "/ðə fi ɪz smɔl./",
+      "zh": "手續費少。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Worth the save.",
+      "phonetic": "/wərθ ðə seɪv./",
+      "zh": "值得存。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The impulse bought.",
+      "phonetic": "/ðə ˌɪmˈpəls bɔt./",
+      "zh": "衝動買。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Return it, maybe.",
+      "phonetic": "/rɪˈtərn ɪt, ˈmeɪbi./",
+      "zh": "或許退。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The month end, check.",
+      "phonetic": "/ðə mənθ ɛnd, ʧɛk./",
+      "zh": "月底查。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On track, yes.",
+      "phonetic": "/ɔn træk, jɛs./",
+      "zh": "達標。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The future is calm.",
+      "phonetic": "/ðə fˈjuʧər ɪz kɑm./",
+      "zh": "未來穩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "From the save.",
+      "phonetic": "/frəm ðə seɪv./",
+      "zh": "因存款。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The split is fair.",
+      "phonetic": "/ðə splɪt ɪz fɛr./",
+      "zh": "分配公。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Need and want.",
+      "phonetic": "/nid ənd wɔnt./",
+      "zh": "需要與想。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The stash is secret.",
+      "phonetic": "/ðə stæʃ ɪz ˈsikrɪt./",
+      "zh": "私房錢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the rain.",
+      "phonetic": "/fər ðə reɪn./",
+      "zh": "備急需。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rate is low.",
+      "phonetic": "/ðə reɪt ɪz loʊ./",
+      "zh": "利率低。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Still, save, yes.",
+      "phonetic": "/stɪl, seɪv, jɛs./",
+      "zh": "仍存。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The dream needs cash.",
+      "phonetic": "/ðə drim nidz kæʃ./",
+      "zh": "夢想要錢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Save for it.",
+      "phonetic": "/seɪv fər ɪt./",
+      "zh": "存它。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The spare is found.",
+      "phonetic": "/ðə spɛr ɪz faʊnd./",
+      "zh": "閒錢找到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Add to pot.",
+      "phonetic": "/æd tɪ pɑt./",
+      "zh": "加進。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The year end, sum.",
+      "phonetic": "/ðə jɪr ɛnd, səm./",
+      "zh": "年底算。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Grew a lot.",
+      "phonetic": "/gru ə lɔt./",
+      "zh": "增很多。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The discipline pays.",
+      "phonetic": "/ðə ˈdɪsəplən peɪz./",
+      "zh": "紀律有報。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Freedom, yes.",
+      "phonetic": "/ˈfridəm, jɛs./",
+      "zh": "自由。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The save is smooth.",
+      "phonetic": "/ðə seɪv ɪz smuð./",
+      "zh": "存得順。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep it, pal.",
+      "phonetic": "/kip ɪt, pæl./",
+      "zh": "保持。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for saving.",
+      "phonetic": "/θæŋks fər ˈseɪvɪŋ./",
+      "zh": "謝謝存錢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Secure nest, yes.",
+      "phonetic": "/sɪˈkjʊr nɛst, jɛs./",
+      "zh": "安穩窩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for saving.",
+      "phonetic": "/θæŋks fər ˈseɪvɪŋ./",
+      "zh": "謝謝存錢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Secure nest, yes.",
+      "phonetic": "/sɪˈkjʊr nɛst, jɛs./",
+      "zh": "安穩窩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The save is smooth.",
+      "phonetic": "/ðə seɪv ɪz smuð./",
+      "zh": "存得順。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep it, pal.",
+      "phonetic": "/kip ɪt, pæl./",
+      "zh": "保持。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The discipline pays.",
+      "phonetic": "/ðə ˈdɪsəplən peɪz./",
+      "zh": "紀律有報。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Freedom, yes.",
+      "phonetic": "/ˈfridəm, jɛs./",
+      "zh": "自由。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The year end, sum.",
+      "phonetic": "/ðə jɪr ɛnd, səm./",
+      "zh": "年底算。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Grew a lot.",
+      "phonetic": "/gru ə lɔt./",
+      "zh": "增很多。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The spare is found.",
+      "phonetic": "/ðə spɛr ɪz faʊnd./",
+      "zh": "閒錢找到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Add to pot.",
+      "phonetic": "/æd tɪ pɑt./",
+      "zh": "加進。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The dream needs cash.",
+      "phonetic": "/ðə drim nidz kæʃ./",
+      "zh": "夢想要錢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Save for it.",
+      "phonetic": "/seɪv fər ɪt./",
+      "zh": "存它。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rate is low.",
+      "phonetic": "/ðə reɪt ɪz loʊ./",
+      "zh": "利率低。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Still, save, yes.",
+      "phonetic": "/stɪl, seɪv, jɛs./",
+      "zh": "仍存。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The stash is secret.",
+      "phonetic": "/ðə stæʃ ɪz ˈsikrɪt./",
+      "zh": "私房錢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the rain.",
+      "phonetic": "/fər ðə reɪn./",
+      "zh": "備急需。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The split is fair.",
+      "phonetic": "/ðə splɪt ɪz fɛr./",
+      "zh": "分配公。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Need and want.",
+      "phonetic": "/nid ənd wɔnt./",
+      "zh": "需要與想。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The future is calm.",
+      "phonetic": "/ðə fˈjuʧər ɪz kɑm./",
+      "zh": "未來穩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "From the save.",
+      "phonetic": "/frəm ðə seɪv./",
+      "zh": "因存款。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The month end, check.",
+      "phonetic": "/ðə mənθ ɛnd, ʧɛk./",
+      "zh": "月底查。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On track, yes.",
+      "phonetic": "/ɔn træk, jɛs./",
+      "zh": "達標。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The impulse bought.",
+      "phonetic": "/ðə ˌɪmˈpəls bɔt./",
+      "zh": "衝動買。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Return it, maybe.",
+      "phonetic": "/rɪˈtərn ɪt, ˈmeɪbi./",
+      "zh": "或許退。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The fee is small.",
+      "phonetic": "/ðə fi ɪz smɔl./",
+      "zh": "手續費少。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Worth the save.",
+      "phonetic": "/wərθ ðə seɪv./",
+      "zh": "值得存。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The goal reached.",
+      "phonetic": "/ðə goʊl riʧt./",
+      "zh": "達標。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Treat small, yes.",
+      "phonetic": "/trit smɔl, jɛs./",
+      "zh": "小獎勵。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The no-spend day.",
+      "phonetic": "/ðə no-spend* deɪ./",
+      "zh": "不花錢日。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Challenge, fun.",
+      "phonetic": "/ˈʧælənʤ, fən./",
+      "zh": "挑戰好玩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The track the graph.",
+      "phonetic": "/ðə træk ðə græf./",
+      "zh": "追蹤圖表。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "See it grow.",
+      "phonetic": "/si ɪt groʊ./",
+      "zh": "看成長。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The coin jar helps.",
+      "phonetic": "/ðə kɔɪn ʤɑr hɛlps./",
+      "zh": "零錢罐有用。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the trip.",
+      "phonetic": "/fər ðə trɪp./",
+      "zh": "旅行用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The debt is down.",
+      "phonetic": "/ðə dɛt ɪz daʊn./",
+      "zh": "債務減。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Free cash, then.",
+      "phonetic": "/fri kæʃ, ðɛn./",
+      "zh": "有閒錢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bonus, save.",
+      "phonetic": "/ðə ˈboʊnəs, seɪv./",
+      "zh": "獎金存。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Not spend, please.",
+      "phonetic": "/nɑt spɛnd, pliz./",
+      "zh": "別花。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The plan is set.",
+      "phonetic": "/ðə plæn ɪz sɛt./",
+      "zh": "計畫定。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ten percent, yes.",
+      "phonetic": "/tɛn pərˈsɛnt, jɛs./",
+      "zh": "百分之十。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cash is safe.",
+      "phonetic": "/ðə kæʃ ɪz seɪf./",
+      "zh": "現金安全。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In the tin, yes.",
+      "phonetic": "/ɪn ðə tɪn, jɛs./",
+      "zh": "放鐵盒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The urge is strong.",
+      "phonetic": "/ðə ərʤ ɪz strɔŋ./",
+      "zh": "衝動強。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wait a day, please.",
+      "phonetic": "/weɪt ə deɪ, pliz./",
+      "zh": "等一天。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The habit sticks.",
+      "phonetic": "/ðə ˈhæbət stɪks./",
+      "zh": "習慣成。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Auto transfer, yes.",
+      "phonetic": "/ˈɔtoʊ ˈtrænsfər, jɛs./",
+      "zh": "自動轉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The interest grows.",
+      "phonetic": "/ðə ˈɪntəˌrɛst groʊz./",
+      "zh": "利息增。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Slow but sure.",
+      "phonetic": "/sloʊ bət ʃʊr./",
+      "zh": "慢但穩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sale is tempting.",
+      "phonetic": "/ðə seɪl ɪz ˈtɛmptɪŋ./",
+      "zh": "特價誘人。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Skip, not need.",
+      "phonetic": "/skɪp, nɑt nid./",
+      "zh": "跳過不需要。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The coffee adds up.",
+      "phonetic": "/ðə ˈkɔfi ædz əp./",
+      "zh": "咖啡累積。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Brew at home.",
+      "phonetic": "/bru æt hoʊm./",
+      "zh": "在家煮。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The budget is tight.",
+      "phonetic": "/ðə ˈbəʤɪt ɪz taɪt./",
+      "zh": "預算緊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cut the extras.",
+      "phonetic": "/kət ðə ˈɛkstrəz./",
+      "zh": "砍額外。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app rounds up.",
+      "phonetic": "/ðə æp raʊnz əp./",
+      "zh": "App 湊整。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spare to save.",
+      "phonetic": "/spɛr tɪ seɪv./",
+      "zh": "零錢存。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The goal is clear.",
+      "phonetic": "/ðə goʊl ɪz klɪr./",
+      "zh": "目標清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Trip, by summer.",
+      "phonetic": "/trɪp, baɪ ˈsəmər./",
+      "zh": "夏天去旅行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bank is near.",
+      "phonetic": "/ðə bæŋk ɪz nɪr./",
+      "zh": "銀行近。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Deposit today, yes.",
+      "phonetic": "/dɪˈpɑzət təˈdeɪ, jɛs./",
+      "zh": "今天存。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The jar is full.",
+      "phonetic": "/ðə ʤɑr ɪz fʊl./",
+      "zh": "撲滿滿。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Count it, please.",
+      "phonetic": "/kaʊnt ɪt, pliz./",
+      "zh": "數數。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's save some.",
+      "phonetic": "/lɛts seɪv səm./",
+      "zh": "存點錢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "How much a month?",
+      "phonetic": "/haʊ məʧ ə mənθ?/",
+      "zh": "月存多少？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's save some.",
+      "phonetic": "/lɛts seɪv səm./",
+      "zh": "存點錢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "How much a month?",
+      "phonetic": "/haʊ məʧ ə mənθ?/",
+      "zh": "月存多少？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The jar is full.",
+      "phonetic": "/ðə ʤɑr ɪz fʊl./",
+      "zh": "撲滿滿。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Count it, please.",
+      "phonetic": "/kaʊnt ɪt, pliz./",
+      "zh": "數數。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bank is near.",
+      "phonetic": "/ðə bæŋk ɪz nɪr./",
+      "zh": "銀行近。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Deposit today, yes.",
+      "phonetic": "/dɪˈpɑzət təˈdeɪ, jɛs./",
+      "zh": "今天存。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The goal is clear.",
+      "phonetic": "/ðə goʊl ɪz klɪr./",
+      "zh": "目標清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Trip, by summer.",
+      "phonetic": "/trɪp, baɪ ˈsəmər./",
+      "zh": "夏天去旅行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app rounds up.",
+      "phonetic": "/ðə æp raʊnz əp./",
+      "zh": "App 湊整。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spare to save.",
+      "phonetic": "/spɛr tɪ seɪv./",
+      "zh": "零錢存。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The budget is tight.",
+      "phonetic": "/ðə ˈbəʤɪt ɪz taɪt./",
+      "zh": "預算緊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cut the extras.",
+      "phonetic": "/kət ðə ˈɛkstrəz./",
+      "zh": "砍額外。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The coffee adds up.",
+      "phonetic": "/ðə ˈkɔfi ædz əp./",
+      "zh": "咖啡累積。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Brew at home.",
+      "phonetic": "/bru æt hoʊm./",
+      "zh": "在家煮。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sale is tempting.",
+      "phonetic": "/ðə seɪl ɪz ˈtɛmptɪŋ./",
+      "zh": "特價誘人。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Skip, not need.",
+      "phonetic": "/skɪp, nɑt nid./",
+      "zh": "跳過不需要。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The interest grows.",
+      "phonetic": "/ðə ˈɪntəˌrɛst groʊz./",
+      "zh": "利息增。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Slow but sure.",
+      "phonetic": "/sloʊ bət ʃʊr./",
+      "zh": "慢但穩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The habit sticks.",
+      "phonetic": "/ðə ˈhæbət stɪks./",
+      "zh": "習慣成。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Auto transfer, yes.",
+      "phonetic": "/ˈɔtoʊ ˈtrænsfər, jɛs./",
+      "zh": "自動轉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The urge is strong.",
+      "phonetic": "/ðə ərʤ ɪz strɔŋ./",
+      "zh": "衝動強。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wait a day, please.",
+      "phonetic": "/weɪt ə deɪ, pliz./",
+      "zh": "等一天。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cash is safe.",
+      "phonetic": "/ðə kæʃ ɪz seɪf./",
+      "zh": "現金安全。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In the tin, yes.",
+      "phonetic": "/ɪn ðə tɪn, jɛs./",
+      "zh": "放鐵盒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The plan is set.",
+      "phonetic": "/ðə plæn ɪz sɛt./",
+      "zh": "計畫定。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ten percent, yes.",
+      "phonetic": "/tɛn pərˈsɛnt, jɛs./",
+      "zh": "百分之十。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bonus, save.",
+      "phonetic": "/ðə ˈboʊnəs, seɪv./",
+      "zh": "獎金存。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Not spend, please.",
+      "phonetic": "/nɑt spɛnd, pliz./",
+      "zh": "別花。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The debt is down.",
+      "phonetic": "/ðə dɛt ɪz daʊn./",
+      "zh": "債務減。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Free cash, then.",
+      "phonetic": "/fri kæʃ, ðɛn./",
+      "zh": "有閒錢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The coin jar helps.",
+      "phonetic": "/ðə kɔɪn ʤɑr hɛlps./",
+      "zh": "零錢罐有用。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the trip.",
+      "phonetic": "/fər ðə trɪp./",
+      "zh": "旅行用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The track the graph.",
+      "phonetic": "/ðə træk ðə græf./",
+      "zh": "追蹤圖表。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "See it grow.",
+      "phonetic": "/si ɪt groʊ./",
+      "zh": "看成長。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The no-spend day.",
+      "phonetic": "/ðə no-spend* deɪ./",
+      "zh": "不花錢日。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Challenge, fun.",
+      "phonetic": "/ˈʧælənʤ, fən./",
+      "zh": "挑戰好玩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The goal reached.",
+      "phonetic": "/ðə goʊl riʧt./",
+      "zh": "達標。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Treat small, yes.",
+      "phonetic": "/trit smɔl, jɛs./",
+      "zh": "小獎勵。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The fee is small.",
+      "phonetic": "/ðə fi ɪz smɔl./",
+      "zh": "手續費少。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Worth the save.",
+      "phonetic": "/wərθ ðə seɪv./",
+      "zh": "值得存。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The impulse bought.",
+      "phonetic": "/ðə ˌɪmˈpəls bɔt./",
+      "zh": "衝動買。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Return it, maybe.",
+      "phonetic": "/rɪˈtərn ɪt, ˈmeɪbi./",
+      "zh": "或許退。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The month end, check.",
+      "phonetic": "/ðə mənθ ɛnd, ʧɛk./",
+      "zh": "月底查。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On track, yes.",
+      "phonetic": "/ɔn træk, jɛs./",
+      "zh": "達標。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The future is calm.",
+      "phonetic": "/ðə fˈjuʧər ɪz kɑm./",
+      "zh": "未來穩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "From the save.",
+      "phonetic": "/frəm ðə seɪv./",
+      "zh": "因存款。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The split is fair.",
+      "phonetic": "/ðə splɪt ɪz fɛr./",
+      "zh": "分配公。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Need and want.",
+      "phonetic": "/nid ənd wɔnt./",
+      "zh": "需要與想。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The stash is secret.",
+      "phonetic": "/ðə stæʃ ɪz ˈsikrɪt./",
+      "zh": "私房錢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the rain.",
+      "phonetic": "/fər ðə reɪn./",
+      "zh": "備急需。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rate is low.",
+      "phonetic": "/ðə reɪt ɪz loʊ./",
+      "zh": "利率低。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Still, save, yes.",
+      "phonetic": "/stɪl, seɪv, jɛs./",
+      "zh": "仍存。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The dream needs cash.",
+      "phonetic": "/ðə drim nidz kæʃ./",
+      "zh": "夢想要錢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Save for it.",
+      "phonetic": "/seɪv fər ɪt./",
+      "zh": "存它。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The spare is found.",
+      "phonetic": "/ðə spɛr ɪz faʊnd./",
+      "zh": "閒錢找到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Add to pot.",
+      "phonetic": "/æd tɪ pɑt./",
+      "zh": "加進。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The year end, sum.",
+      "phonetic": "/ðə jɪr ɛnd, səm./",
+      "zh": "年底算。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Grew a lot.",
+      "phonetic": "/gru ə lɔt./",
+      "zh": "增很多。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The discipline pays.",
+      "phonetic": "/ðə ˈdɪsəplən peɪz./",
+      "zh": "紀律有報。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Freedom, yes.",
+      "phonetic": "/ˈfridəm, jɛs./",
+      "zh": "自由。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The save is smooth.",
+      "phonetic": "/ðə seɪv ɪz smuð./",
+      "zh": "存得順。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep it, pal.",
+      "phonetic": "/kip ɪt, pæl./",
+      "zh": "保持。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for saving.",
+      "phonetic": "/θæŋks fər ˈseɪvɪŋ./",
+      "zh": "謝謝存錢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Secure nest, yes.",
+      "phonetic": "/sɪˈkjʊr nɛst, jɛs./",
+      "zh": "安穩窩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for saving.",
+      "phonetic": "/θæŋks fər ˈseɪvɪŋ./",
+      "zh": "謝謝存錢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Secure nest, yes.",
+      "phonetic": "/sɪˈkjʊr nɛst, jɛs./",
+      "zh": "安穩窩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The save is smooth.",
+      "phonetic": "/ðə seɪv ɪz smuð./",
+      "zh": "存得順。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep it, pal.",
+      "phonetic": "/kip ɪt, pæl./",
+      "zh": "保持。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The discipline pays.",
+      "phonetic": "/ðə ˈdɪsəplən peɪz./",
+      "zh": "紀律有報。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Freedom, yes.",
+      "phonetic": "/ˈfridəm, jɛs./",
+      "zh": "自由。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The year end, sum.",
+      "phonetic": "/ðə jɪr ɛnd, səm./",
+      "zh": "年底算。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Grew a lot.",
+      "phonetic": "/gru ə lɔt./",
+      "zh": "增很多。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The spare is found.",
+      "phonetic": "/ðə spɛr ɪz faʊnd./",
+      "zh": "閒錢找到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Add to pot.",
+      "phonetic": "/æd tɪ pɑt./",
+      "zh": "加進。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The dream needs cash.",
+      "phonetic": "/ðə drim nidz kæʃ./",
+      "zh": "夢想要錢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Save for it.",
+      "phonetic": "/seɪv fər ɪt./",
+      "zh": "存它。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rate is low.",
+      "phonetic": "/ðə reɪt ɪz loʊ./",
+      "zh": "利率低。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Still, save, yes.",
+      "phonetic": "/stɪl, seɪv, jɛs./",
+      "zh": "仍存。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The stash is secret.",
+      "phonetic": "/ðə stæʃ ɪz ˈsikrɪt./",
+      "zh": "私房錢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the rain.",
+      "phonetic": "/fər ðə reɪn./",
+      "zh": "備急需。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The split is fair.",
+      "phonetic": "/ðə splɪt ɪz fɛr./",
+      "zh": "分配公。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Need and want.",
+      "phonetic": "/nid ənd wɔnt./",
+      "zh": "需要與想。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The future is calm.",
+      "phonetic": "/ðə fˈjuʧər ɪz kɑm./",
+      "zh": "未來穩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "From the save.",
+      "phonetic": "/frəm ðə seɪv./",
+      "zh": "因存款。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The month end, check.",
+      "phonetic": "/ðə mənθ ɛnd, ʧɛk./",
+      "zh": "月底查。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On track, yes.",
+      "phonetic": "/ɔn træk, jɛs./",
+      "zh": "達標。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The impulse bought.",
+      "phonetic": "/ðə ˌɪmˈpəls bɔt./",
+      "zh": "衝動買。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Return it, maybe.",
+      "phonetic": "/rɪˈtərn ɪt, ˈmeɪbi./",
+      "zh": "或許退。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The fee is small.",
+      "phonetic": "/ðə fi ɪz smɔl./",
+      "zh": "手續費少。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Worth the save.",
+      "phonetic": "/wərθ ðə seɪv./",
+      "zh": "值得存。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The goal reached.",
+      "phonetic": "/ðə goʊl riʧt./",
+      "zh": "達標。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Treat small, yes.",
+      "phonetic": "/trit smɔl, jɛs./",
+      "zh": "小獎勵。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The no-spend day.",
+      "phonetic": "/ðə no-spend* deɪ./",
+      "zh": "不花錢日。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Challenge, fun.",
+      "phonetic": "/ˈʧælənʤ, fən./",
+      "zh": "挑戰好玩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The track the graph.",
+      "phonetic": "/ðə træk ðə græf./",
+      "zh": "追蹤圖表。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "See it grow.",
+      "phonetic": "/si ɪt groʊ./",
+      "zh": "看成長。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The coin jar helps.",
+      "phonetic": "/ðə kɔɪn ʤɑr hɛlps./",
+      "zh": "零錢罐有用。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the trip.",
+      "phonetic": "/fər ðə trɪp./",
+      "zh": "旅行用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The debt is down.",
+      "phonetic": "/ðə dɛt ɪz daʊn./",
+      "zh": "債務減。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Free cash, then.",
+      "phonetic": "/fri kæʃ, ðɛn./",
+      "zh": "有閒錢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bonus, save.",
+      "phonetic": "/ðə ˈboʊnəs, seɪv./",
+      "zh": "獎金存。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Not spend, please.",
+      "phonetic": "/nɑt spɛnd, pliz./",
+      "zh": "別花。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The plan is set.",
+      "phonetic": "/ðə plæn ɪz sɛt./",
+      "zh": "計畫定。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ten percent, yes.",
+      "phonetic": "/tɛn pərˈsɛnt, jɛs./",
+      "zh": "百分之十。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cash is safe.",
+      "phonetic": "/ðə kæʃ ɪz seɪf./",
+      "zh": "現金安全。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In the tin, yes.",
+      "phonetic": "/ɪn ðə tɪn, jɛs./",
+      "zh": "放鐵盒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The urge is strong.",
+      "phonetic": "/ðə ərʤ ɪz strɔŋ./",
+      "zh": "衝動強。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wait a day, please.",
+      "phonetic": "/weɪt ə deɪ, pliz./",
+      "zh": "等一天。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The habit sticks.",
+      "phonetic": "/ðə ˈhæbət stɪks./",
+      "zh": "習慣成。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Auto transfer, yes.",
+      "phonetic": "/ˈɔtoʊ ˈtrænsfər, jɛs./",
+      "zh": "自動轉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The interest grows.",
+      "phonetic": "/ðə ˈɪntəˌrɛst groʊz./",
+      "zh": "利息增。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Slow but sure.",
+      "phonetic": "/sloʊ bət ʃʊr./",
+      "zh": "慢但穩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sale is tempting.",
+      "phonetic": "/ðə seɪl ɪz ˈtɛmptɪŋ./",
+      "zh": "特價誘人。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Skip, not need.",
+      "phonetic": "/skɪp, nɑt nid./",
+      "zh": "跳過不需要。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The coffee adds up.",
+      "phonetic": "/ðə ˈkɔfi ædz əp./",
+      "zh": "咖啡累積。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Brew at home.",
+      "phonetic": "/bru æt hoʊm./",
+      "zh": "在家煮。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The budget is tight.",
+      "phonetic": "/ðə ˈbəʤɪt ɪz taɪt./",
+      "zh": "預算緊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cut the extras.",
+      "phonetic": "/kət ðə ˈɛkstrəz./",
+      "zh": "砍額外。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app rounds up.",
+      "phonetic": "/ðə æp raʊnz əp./",
+      "zh": "App 湊整。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spare to save.",
+      "phonetic": "/spɛr tɪ seɪv./",
+      "zh": "零錢存。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The goal is clear.",
+      "phonetic": "/ðə goʊl ɪz klɪr./",
+      "zh": "目標清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Trip, by summer.",
+      "phonetic": "/trɪp, baɪ ˈsəmər./",
+      "zh": "夏天去旅行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bank is near.",
+      "phonetic": "/ðə bæŋk ɪz nɪr./",
+      "zh": "銀行近。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Deposit today, yes.",
+      "phonetic": "/dɪˈpɑzət təˈdeɪ, jɛs./",
+      "zh": "今天存。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The jar is full.",
+      "phonetic": "/ðə ʤɑr ɪz fʊl./",
+      "zh": "撲滿滿。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Count it, please.",
+      "phonetic": "/kaʊnt ɪt, pliz./",
+      "zh": "數數。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's save some.",
+      "phonetic": "/lɛts seɪv səm./",
+      "zh": "存點錢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "How much a month?",
+      "phonetic": "/haʊ məʧ ə mənθ?/",
+      "zh": "月存多少？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's save some.",
+      "phonetic": "/lɛts seɪv səm./",
+      "zh": "存點錢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "How much a month?",
+      "phonetic": "/haʊ məʧ ə mənθ?/",
+      "zh": "月存多少？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The jar is full.",
+      "phonetic": "/ðə ʤɑr ɪz fʊl./",
+      "zh": "撲滿滿。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Count it, please.",
+      "phonetic": "/kaʊnt ɪt, pliz./",
+      "zh": "數數。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bank is near.",
+      "phonetic": "/ðə bæŋk ɪz nɪr./",
+      "zh": "銀行近。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Deposit today, yes.",
+      "phonetic": "/dɪˈpɑzət təˈdeɪ, jɛs./",
+      "zh": "今天存。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The goal is clear.",
+      "phonetic": "/ðə goʊl ɪz klɪr./",
+      "zh": "目標清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Trip, by summer.",
+      "phonetic": "/trɪp, baɪ ˈsəmər./",
+      "zh": "夏天去旅行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The app rounds up.",
+      "phonetic": "/ðə æp raʊnz əp./",
+      "zh": "App 湊整。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spare to save.",
+      "phonetic": "/spɛr tɪ seɪv./",
+      "zh": "零錢存。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The budget is tight.",
+      "phonetic": "/ðə ˈbəʤɪt ɪz taɪt./",
+      "zh": "預算緊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cut the extras.",
+      "phonetic": "/kət ðə ˈɛkstrəz./",
+      "zh": "砍額外。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The coffee adds up.",
+      "phonetic": "/ðə ˈkɔfi ædz əp./",
+      "zh": "咖啡累積。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Brew at home.",
+      "phonetic": "/bru æt hoʊm./",
+      "zh": "在家煮。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sale is tempting.",
+      "phonetic": "/ðə seɪl ɪz ˈtɛmptɪŋ./",
+      "zh": "特價誘人。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Skip, not need.",
+      "phonetic": "/skɪp, nɑt nid./",
+      "zh": "跳過不需要。"
+    }
+  ]
+}

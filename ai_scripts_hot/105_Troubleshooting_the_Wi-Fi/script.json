@@ -1,0 +1,2458 @@
+{
+  "title": "Everyday Phrases — Troubleshooting the Wi-Fi",
+  "title_zh": "修理Wi-Fi網路",
+  "scene_zh": "修理Wi-Fi網路 · 情境對話",
+  "title_quote": "The Wi-Fi stopped working again.",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】📶 實用修理Wi-Fi網路必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — Troubleshooting the Wi-Fi",
+  "youtube_description": "睡著學英文！這部影片收錄實用修理Wi-Fi網路情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫），從發現斷線、重啟路由器、排除訊號死角，到致電客服升級修復。不用背，睡前聽就會。重複播放，讓英文自然進入你的大腦。👍 想學更多生活場景，請留言告訴我！別忘了訂閱+按讚。 #英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical Troubleshooting the Wi-Fi phrase pairs (each pair: male normal speed → female slow speed → combined dialogue), covering spotting an outage, restarting the router, fixing dead zones, and calling customer service. No memorization needed—just listen before bed and absorb naturally. If you want more real-life scenarios, leave a comment! Subscribe and like!",
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "Troubleshooting the Wi-Fi",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "Troubleshooting the Wi-Fi",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Tech",
+  "youtube_tags": [
+    "英文聽力",
+    "睡前英文",
+    "修理Wi-Fi英文",
+    "修網路英文",
+    "Wi-Fi English",
+    "English listening",
+    "Sleep learning",
+    "A2 English",
+    "常用英文短語",
+    "零基礎英文",
+    "慢速英文",
+    "Learn English",
+    "Tech English",
+    "ESL",
+    "English conversation",
+    "英文學習"
+  ],
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "The Wi-Fi stopped working again.",
+      "phonetic": "/ðə ˈwaɪˌfaɪ ˈstɑpɪd ˈwɜrkɪŋ əˈɡɛn./",
+      "zh": "Wi-Fi 又不會動了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Did the whole internet just drop?",
+      "phonetic": "/dɪd ðə hoʊl ˈɪntərˌnɛt dʒʌst drɑp?/",
+      "zh": "整個網路剛剛斷線了嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, my video froze mid-scene.",
+      "phonetic": "/jɛs, maɪ ˈvɪdioʊ froʊz mɪd sin./",
+      "zh": "對，我的影片卡在劇情中間。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mine can't load anything either.",
+      "phonetic": "/maɪn kænt loʊd ˈɛniˌθɪŋ ˈiːðər./",
+      "zh": "我的也什麼都載不出來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is your phone on the same network?",
+      "phonetic": "/ɪz jʊr foʊn ɑn ðə seɪm ˈnɛtˌwɜrk?/",
+      "zh": "你的手機連的是同一個網路嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, I switched to mobile data.",
+      "phonetic": "/noʊ, aɪ swɪtʃt tə ˈmoʊbəl ˈdeɪtə./",
+      "zh": "沒有，我改用行動數據了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So only our home Wi-Fi is down.",
+      "phonetic": "/soʊ ˈoʊnli aʊr hoʊm ˈwaɪˌfaɪ ɪs daʊn./",
+      "zh": "所以只有家裡的 Wi-Fi 斷了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It happened right after dinner too.",
+      "phonetic": "/ɪt ˈhæpənd raɪt ˈæftər ˈdɪnər tu./",
+      "zh": "而且剛好是吃完飯之後發生的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The router lights are all red.",
+      "phonetic": "/ðə ˈraʊtər laɪts ɑr ɔl rɛd./",
+      "zh": "路由器的燈全變成紅色了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Usually they glow a steady green.",
+      "phonetic": "/ˈjuʒəwəli ðeɪ gloʊ ə ˈstɛdi ɡrin./",
+      "zh": "平常它們應該是穩定的綠色。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One light keeps blinking fast now.",
+      "phonetic": "/wʌn laɪt kips ˈblɪŋkɪŋ fæst naʊ./",
+      "zh": "有一盞燈現在一直快速閃爍。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That blinking means no connection.",
+      "phonetic": "/ðæt ˈblɪŋkɪŋ minz noʊ kəˈnɛkʃən./",
+      "zh": "那種閃爍代表沒有連線。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did a storm pass by earlier?",
+      "phonetic": "/dɪd ə stɔrm pæs baɪ ˈɜrliər?/",
+      "zh": "剛剛有雷雨經過嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yeah, thunder woke up the cat.",
+      "phonetic": "/jæ, ˈθʌndər woʊk ʌp ðə kæt./",
+      "zh": "有啊，打雷把貓吵醒了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Maybe lightning hit the power line.",
+      "phonetic": "/ˈmeɪbi ˈlaɪtnɪŋ hɪt ðə ˈpaʊər laɪn./",
+      "zh": "也許閃電打到了電線。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That could knock out the signal.",
+      "phonetic": "/ðæt kʊd nɑk aʊt ðə ˈsɪɡnəl./",
+      "zh": "那可能會讓訊號中斷。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The TV says no connection found.",
+      "phonetic": "/ðə ˌtiˈvi sɛz noʊ kəˈnɛkʃən faʊnd./",
+      "zh": "電視顯示找不到網路連線。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It even tried to reconnect twice.",
+      "phonetic": "/ɪt ˈiːvən traɪd tə ˌrikəˈnɛkt kwaɪs./",
+      "zh": "它甚至嘗試重新連線兩次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My laptop shows the small warning icon.",
+      "phonetic": "/maɪ ˈlæptɑp foʊz ðə smɔl ˈwɔrnɪŋ ˈaɪˌkɑn./",
+      "zh": "我的筆電顯示那個小警告圖示。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The globe with a little cross, right?",
+      "phonetic": "/ðə gloʊb wɪð ə ˈlɪtəl krɔs, raɪt?/",
+      "zh": "就是那個帶小叉號的地球圖，對吧？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Exactly. I hate that symbol.",
+      "phonetic": "/ɪɡˈzæktli. aɪ heɪt ðæt ˈsɪmbəl./",
+      "zh": "沒錯，我討厭那個符號。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It means no Wi-Fi at all.",
+      "phonetic": "/ɪt minz noʊ ˈwaɪˌfaɪ æt ɔl./",
+      "zh": "它代表完全沒有 Wi-Fi。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "But the internet was fine this morning.",
+      "phonetic": "/bʌt ðə ˈɪntərˌnɛt wʌz faɪn ðɪs ˈmɔrnɪŋ./",
+      "zh": "可是今天早上網路還好好的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Something changed while we were out.",
+      "phonetic": "/ˈsʌmˌθɪŋ ʧeɪnd waɪl wi wɜr aʊt./",
+      "zh": "我們出門的時候出了狀況。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you stream music right now?",
+      "phonetic": "/kæn ju strim ˈmjuzɪk raɪt naʊ?/",
+      "zh": "你現在能串流音樂嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, it buffers and then stalls.",
+      "phonetic": "/noʊ, ɪt ˈbʌfərz ænd ðɛn stɔlz./",
+      "zh": "不能，它一直緩衝然後卡住。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The smart speaker won't answer me.",
+      "phonetic": "/ðə smɑrt ˈspikər woʊnt ˈænsər mi./",
+      "zh": "智慧音箱都不理我了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It just blinks that orange light.",
+      "phonetic": "/ɪt dʒʌst blɪŋks ðæt ˈɔrɪndʒ laɪt./",
+      "zh": "它只是閃著橘色的燈。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Orange means offline, I think.",
+      "phonetic": "/ˈɔrɪndʒ minz ˈɔfˌlaɪn, aɪ θɪŋk./",
+      "zh": "橘色應該是離線的意思。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yeah, it can't reach the server.",
+      "phonetic": "/jæ, ɪt kænt riʧ ðə ˈsɜrvər./",
+      "zh": "對，它連不上伺服器。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I did lose power for a second.",
+      "phonetic": "/aɪ dɪd luz ˈpaʊər fər ə ˈsɛkənd./",
+      "zh": "我這邊確實停電了一瞬間。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The fridge clock is flashing twelve.",
+      "phonetic": "/ðə frɪdʒ klɑk ɪz ˈflæʃɪŋ twɛlv./",
+      "zh": "冰箱的時鐘一直在閃十二。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "See? The outage reset everything.",
+      "phonetic": "/si? ði ˈaʊtˌɪdʒ rɪˈsɛt ˈɛvriˌθɪŋ./",
+      "zh": "看吧？停電把所有東西重置了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "But the modem still looks powered on.",
+      "phonetic": "/bʌt ðə ˈmodɛm stɪl lʊks ˈpaʊərd ɑn./",
+      "zh": "不過數據機看起來還是有電。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Its lights are on, but useless.",
+      "phonetic": "/ɪts laɪts ɑr ɑn, bʌt ˈjusləs./",
+      "zh": "它的燈亮著，但沒用。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Maybe it lost the provider feed.",
+      "phonetic": "/ˈmeɪbi ɪt lɔst ðə prəˈvaɪdər fid./",
+      "zh": "也許它斷掉了業者的訊號。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What's a provider feed exactly?",
+      "phonetic": "/wʌts ə prəˈvaɪdər fid ɪɡˈzæktli?/",
+      "zh": "業者的訊號到底是什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The line that brings internet here.",
+      "phonetic": "/ðə laɪn ðæt brɪŋz ˈɪntərˌnɛt hɪr./",
+      "zh": "就是把網路送到家裡的那條線。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Oh, the thick black cord then.",
+      "phonetic": "/oʊ, ðə θɪk blæk kɔrd ðɛn./",
+      "zh": "噢，那就是那條黑色粗線吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, follow it to the wall.",
+      "phonetic": "/jɛs, ˈfɑloʊ ɪt tə ðə wɔl./",
+      "zh": "對，沿著它找到牆邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It feels warm to the touch.",
+      "phonetic": "/ɪt filz wɑrm tə ðə tʊʧ./",
+      "zh": "它摸起來溫溫的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Warm is normal, hot is not.",
+      "phonetic": "/wɑrm ɪz ˈnɔrməl, hɑt ɪz nɑt./",
+      "zh": "溫的很正常，燙就不對了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It's just warm, thankfully.",
+      "phonetic": "/ɪts dʒʌst wɑrm, ˈθæŋkfəli./",
+      "zh": "還好只是溫的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Okay, no burning smell either?",
+      "phonetic": "/oʊˈkeɪ, noʊ ˈbɜrnɪŋ smɛl ˈiːðər?/",
+      "zh": "好，那也沒有燒焦味吧？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "None that I can notice.",
+      "phonetic": "/nʌn ðæt aɪ kæn ˈnoʊtɪs./",
+      "zh": "我沒聞到任何燒焦味。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, that rules out a fire risk.",
+      "phonetic": "/ɡʊd, ðæt rulz aʊt ə ˈfaɪər rɪsk./",
+      "zh": "好，那就排除了火災風險。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's check the other rooms first.",
+      "phonetic": "/lɛts tʃɛk ði ˈʌðər rums fɜrst./",
+      "zh": "我們先檢查其他房間。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, I'll check the bedroom first.",
+      "phonetic": "/ʃʊr, aɪl tʃɛk ðə ˈbɛdˌrum fɜrst./",
+      "zh": "好啊，我先去臥室查查看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So, how's the bedroom looking?",
+      "phonetic": "/soʊ, haʊz ðə ˈbɛdˌrum ˈlʊkɪŋ?/",
+      "zh": "那麼，臥室那邊狀況如何？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Zero bars, a totally empty circle.",
+      "phonetic": "/ˈzɪroʊ bɑrz, ə ˈtoʊtəli ˈɛmti ˈsɜrkəl./",
+      "zh": "完全沒格，圈圈是空的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Same here in the kitchen.",
+      "phonetic": "/seɪm hɪr ɪn ðə ˈkɪʧən./",
+      "zh": "廚房這邊也一樣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The bathroom isn't any better.",
+      "phonetic": "/ðə ˈbæθˌrum ˈɪzənt ˈɛni ˈbɛtər./",
+      "zh": "浴室也沒有比較好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So the whole house has no net.",
+      "phonetic": "/soʊ ðə hoʊl haʊz hæz noʊ nɛt./",
+      "zh": "所以整間房子都沒網路。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Every room shows the same blank screen.",
+      "phonetic": "/ˈɛvri rum foʊz ðə seɪm blæŋk skrɪn./",
+      "zh": "每個房間都是同樣的空白畫面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tablets are all frozen too.",
+      "phonetic": "/ðə ˈtæbləts ɑr ɔl ˈfroʊzən tu./",
+      "zh": "平板也全都卡住了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Even the baby monitor went quiet.",
+      "phonetic": "/ˈiːvən ðə ˈbeɪbi ˈmɑnɪtər wɛnt ˈkwaɪət./",
+      "zh": "連嬰兒監視器都安靜了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That one is on Wi-Fi too?",
+      "phonetic": "/ðæt wʌn ɪz ɑn ˈwaɪˌfaɪ tu?/",
+      "zh": "那個也是靠 Wi-Fi 嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, so it dropped with the rest.",
+      "phonetic": "/jɛs, soʊ ɪt drɑpt wɪð ðə rɛst./",
+      "zh": "對，所以它跟其他的一起斷了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Nothing works without this internet.",
+      "phonetic": "/ˈnʌθɪŋ wɜrks wɪˈðaʊt ðɪs ˈɪntərˌnɛt./",
+      "zh": "沒了網路什麼都動不了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I know, I still need my report.",
+      "phonetic": "/aɪ noʊ, aɪ stɪl nid maɪ rɪˈpɔrt./",
+      "zh": "我懂，我報告還沒交呢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we use phones as a hotspot?",
+      "phonetic": "/kæn wi juz foʊnz æz ə ˈhɑtˌspɑt?/",
+      "zh": "我們能用手機開熱點嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My data plan is almost gone.",
+      "phonetic": "/maɪ ˈdeɪtə plæn ɪz ˈɔlmoʊst ɡɑn./",
+      "zh": "我的數據流量快用完了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Mine only has a little left.",
+      "phonetic": "/maɪn ˈoʊnli hæz ə ˈlɪtəl lɛft./",
+      "zh": "我的也只剩一點點了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Better save it for real emergencies.",
+      "phonetic": "/ˈbɛtər seɪv ɪt fər rɪl ɪˈmɜrˌdʌnziz./",
+      "zh": "最好留給真正的急用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Agreed. Let's fix the Wi-Fi itself.",
+      "phonetic": "/əˈɡrid. lɛts fɪks ðə ˈwaɪˌfaɪ ɪtˈsɛlf./",
+      "zh": "同意，我們來修 Wi-Fi 本身。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sounds good, count me in.",
+      "phonetic": "/saʊndz ɡʊd, kaʊnt mi ɪn./",
+      "zh": "好啊，算我一個。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "First, is anyone downloading right now?",
+      "phonetic": "/fɜrst, ɪz ˈɛniˌwʌn ˌdaʊnˈloʊdɪŋ raɪt naʊ?/",
+      "zh": "首先，現在有人在下載嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, they all stopped dead in place.",
+      "phonetic": "/noʊ, ðeɪ ɔl stɑpt dɛd ɪn pleɪs./",
+      "zh": "沒有，全都原地停住了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did the network name disappear?",
+      "phonetic": "/dɪd ðə ˈnɛtˌwɜrk neɪm ˌdɪsəˈpɪr?/",
+      "zh": "網路名稱消失了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, our name still shows up fine.",
+      "phonetic": "/noʊ, aʊr neɪm stɪl foʊz ʌp faɪn./",
+      "zh": "沒有，我們的名稱還在。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So it's broadcasting but not connected.",
+      "phonetic": "/soʊ ɪts ˈbrɔdˌkæstɪŋ bʌt nɑt kəˈnɛktɪd./",
+      "zh": "所以它在廣播但沒連線。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Right, the router is up, the line is out.",
+      "phonetic": "/raɪt, ðə ˈraʊtər ɪz ʌp, ðə laɪn ɪz aʊt./",
+      "zh": "對，路由器運作著，但線路斷了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That's confusing but useful to know.",
+      "phonetic": "/ðæts kənˈfjuːzɪŋ bʌt ˈjuzfəl tə noʊ./",
+      "zh": "有點繞但很有用的線索。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It means the router isn't fully dead.",
+      "phonetic": "/ɪt minz ðə ˈraʊtər ˈɪzənt ˈfʊli dɛd./",
+      "zh": "代表路由器沒有完全壞掉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good, that's one less worry.",
+      "phonetic": "/ɡʊd, ðæts wʌn lɛs ˈwɜri./",
+      "zh": "好，少一個煩惱了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "But the password screen keeps failing us.",
+      "phonetic": "/bʌt ðə ˈpæswɜrd skrɪn kips ˈfeɪlɪŋ ʌs./",
+      "zh": "但密碼畫面一直讓我們失敗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It says incorrect password every time.",
+      "phonetic": "/ɪt sɛz ˌɪnkərˈɛkt ˈpæswɜrd ˈɛvri taɪm./",
+      "zh": "每次都顯示密碼錯誤。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Even though we never changed it.",
+      "phonetic": "/ˈiːvən ðu ˈwi ˈnɛvər ʧeɪnd ɪt./",
+      "zh": "我們明明從來沒改過。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Maybe the reboot messed up the login.",
+      "phonetic": "/ˈmeɪbi ðə riˈbut mɛst ʌp ðə ˈlɑˌɡɪn./",
+      "zh": "也許重開機把登入搞亂了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Login here means the admin page.",
+      "phonetic": "/ˈlɑˌɡɪn hɪr minz ði ædˈmɪn peɪdʒ./",
+      "zh": "這裡的登入指的是管理頁面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I've never opened that page before.",
+      "phonetic": "/aɪv ˈnɛvər ˈoʊpənd ðæt peɪdʒ bɪˈfɔr./",
+      "zh": "我以前從沒打開過那個頁面。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Neither have I, honestly.",
+      "phonetic": "/ˈnaɪðər hæv aɪ, ˈɑnəstli./",
+      "zh": "老實說我也沒有。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's not get lost in settings yet.",
+      "phonetic": "/lɛts nɑt ɡɛt lɔst ɪn ˈsɛtɪŋz jɛt./",
+      "zh": "先別在設定裡迷路。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Agreed, simple steps first.",
+      "phonetic": "/əˈɡrid, ˈsɪmpəl stɛps fɜrst./",
+      "zh": "同意，先從簡單的步驟開始。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How long since the last reboot?",
+      "phonetic": "/haʊ lɔŋ sɪns ðə læst riˈbut?/",
+      "zh": "上次重開機是多久以前？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Honestly, I don't remember at all.",
+      "phonetic": "/ˈɑnəstli, aɪ doʊnt rɪˈmɛmbər æt ɔl./",
+      "zh": "老實說，我完全不記得了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Me neither, maybe months ago.",
+      "phonetic": "/mi ˈnaɪðər, ˈmeɪbi mʌnθs əˈɡoʊ./",
+      "zh": "我也是，也許幾個月前吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That alone can cause weird glitches.",
+      "phonetic": "/ðæt əˈloʊn kæn kɔz wɪrd ˈɡlɪʧəz./",
+      "zh": "光是這樣就能造成怪異的毛病。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Glitches like freezing and random drops?",
+      "phonetic": "/ˈɡlɪʧəz laɪk ˈfrizɪŋ ænd ˈrændəm drɑps?/",
+      "zh": "像是卡住和隨機斷線那種？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Exactly those annoying little problems.",
+      "phonetic": "/ɪɡˈzækt ðoʊz əˈnɔɪɪŋ ˈlɪtəl ˈprɑbləmz./",
+      "zh": "正是那些煩人的小毛病。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Well, at least we know the symptom.",
+      "phonetic": "/wɛl, æt list wi noʊ ðə ˈsɪmptəm./",
+      "zh": "好吧，起碼我們知道症狀了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No internet, red lights, stubborn login.",
+      "phonetic": "/noʊ ˈɪntərˌnɛt, rɛd laɪts, ˈstʌmbɜrn ˈlɑˌɡɪn./",
+      "zh": "沒網路、紅燈、卡住的登入。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "And every device acts the same.",
+      "phonetic": "/ænd ˈɛvri dɪˈvaɪs ækts ðə seɪm./",
+      "zh": "而且每台裝置表現都一樣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So the fault sits at the source.",
+      "phonetic": "/soʊ ðə fɔlt sɪts æt ðə sɔrs./",
+      "zh": "所以問題出在源頭。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Source means the modem and wall line.",
+      "phonetic": "/sɔrs minz ðə ˈmodɛm ænd wɔl laɪn./",
+      "zh": "源頭是指數據機和牆上的線。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Got it. Now we know where to look.",
+      "phonetic": "/ɡɑt ɪt. naʊ wi noʊ wɛr tə lʊk./",
+      "zh": "懂了，現在知道該看哪裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should we start with a restart?",
+      "phonetic": "/ʃʊd wi stɑrt wɪð ə riˈstɑrt?/",
+      "zh": "我們該先重啟嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, that's our first real move.",
+      "phonetic": "/jɛs, ðæts aʊr fɜrst ril muv./",
+      "zh": "對，那是我們的第一步。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Okay, let's do this together.",
+      "phonetic": "/oʊˈkeɪ, lɛts du ðɪs təˈɡɛðər./",
+      "zh": "好，我們一起來弄。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One hand on the power plug.",
+      "phonetic": "/wʌn hænd ɑn ðə ˈpaʊər plʌɡ./",
+      "zh": "手放到電源插頭上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Unplug it from the wall outlet.",
+      "phonetic": "/ʌnˈplʌɡ ɪt frʌm ðə wɔl ˈaʊtˌlɛt./",
+      "zh": "把它從牆上的插座拔掉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Done. The lights are dying already.",
+      "phonetic": "/dʌn. ðə laɪts ɑr ˈdaɪɪŋ ɔlˈrɛdi./",
+      "zh": "好了，燈已經在熄了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I unplug the modem too?",
+      "phonetic": "/ʃʊd aɪ ʌnˈplʌɡ ðə ˈmodɛm tu?/",
+      "zh": "數據機也要一起拔嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, pull the modem as well.",
+      "phonetic": "/jɛs, pʊl ðə ˈmodɛm æz wɛl./",
+      "zh": "要，數據機也一併拔掉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Both are off now. So quiet.",
+      "phonetic": "/boʊʃ ɑr ɔf naʊ. soʊ ˈkwaɪət./",
+      "zh": "兩台都關了，好安靜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Now we wait a full minute.",
+      "phonetic": "/naʊ wi weɪt ə fʊl ˈmɪnɪt./",
+      "zh": "現在我們要等滿一分鐘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Why wait? Can't I just plug back?",
+      "phonetic": "/waɪ weɪt? kænt aɪ dʒʌst plʌɡ bæk?/",
+      "zh": "為什麼要等？不能馬上插回去嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It clears leftover memory that way.",
+      "phonetic": "/ɪt klɪrz ˈlɛfˌtoʊvər ˈmɛməri ðæt weɪ./",
+      "zh": "那樣才能清掉機裡殘留的資料。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Leftover junk, got it.",
+      "phonetic": "/ˈlɛfˌtoʊvər dʒʌŋk, ɡɑt ɪt./",
+      "zh": "殘留的垃圾，懂了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Give it sixty seconds, no cheating.",
+      "phonetic": "/ɡɪv ɪt ˈsɪksti ˈsɛkəndz, noʊ ˈʧitɪŋ./",
+      "zh": "給它六十秒，別偷跑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I'll start counting on my phone.",
+      "phonetic": "/aɪl stɑrt ˈkaʊntɪŋ ɑn maɪ foʊn./",
+      "zh": "我用手機開始數。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Perfect, I'll watch the little lights.",
+      "phonetic": "/ˈpɜrfɪkt, aɪl wɑʧ ðə ˈlɪtəl laɪts./",
+      "zh": "好，我盯著那些小燈。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Fifteen seconds gone already.",
+      "phonetic": "/ˈfɪfˈtin ˈsɛkəndz ɡɑn ɔlˈrɛdi./",
+      "zh": "十五秒已經過去了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep going, don't rush it yet.",
+      "phonetic": "/kip ˈɡoʊɪŋ, doʊnt rʌʃ ɪt jɛt./",
+      "zh": "繼續，先別急。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thirty now. Halfway point.",
+      "phonetic": "/ˈθɜrti naʊ. ˈhæfˌweɪ pɔɪnt./",
+      "zh": "三十秒了，過一半。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nice, you're doing great so far.",
+      "phonetic": "/naɪs, jʊr ˈduɪŋ ɡreɪt soʊ fɑr./",
+      "zh": "不錯，目前進展很好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Forty-five. Almost there.",
+      "phonetic": "/ˈfɔrti faɪv. ˈɔlmoʊst ðɛr./",
+      "zh": "四十五，快到了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold on ten more to be safe.",
+      "phonetic": "/hoʊld ɑn tɛn mɔr tə bi seɪf./",
+      "zh": "再多數十秒比較保險。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sixty! Time to plug back in.",
+      "phonetic": "/ˈsɪksti! taɪm tə plʌɡ bæk ɪn./",
+      "zh": "六十秒！該插回去了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Plug the modem in first, please.",
+      "phonetic": "/plʌɡ ðə ˈmodɛm ɪn fɜrst, pliz./",
+      "zh": "請先插數據機。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Modem is plugged. What's next?",
+      "phonetic": "/ˈmodɛm ɪz plʌɡd. wʌts nɛkst?/",
+      "zh": "數據機插好了，接著呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wait till its lights settle down.",
+      "phonetic": "/weɪt tɪl ɪts laɪts ˈsɛtəl daʊn./",
+      "zh": "等它的燈穩定下來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A few lights blinked awake.",
+      "phonetic": "/ə fju laɪts ˈblɪŋkt əˈweɪk./",
+      "zh": "有幾盞燈眨眼醒了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's the boot-up starting now.",
+      "phonetic": "/ðæts ðə butˈʌp ˈstɑrtɪŋ naʊ./",
+      "zh": "那是開機程序剛開始。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How long does boot-up take?",
+      "phonetic": "/haʊ lɔŋ dʌz butˈʌp teɪk?/",
+      "zh": "開機要花多久？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "About two minutes for a modem.",
+      "phonetic": "/əˈbaʊt tu ˈmɪnɪts fər ə ˈmodɛm./",
+      "zh": "數據機大概兩分鐘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Okay, I'll wait patiently.",
+      "phonetic": "/oʊˈkeɪ, aɪl weɪt ˈpeɪʃəntli./",
+      "zh": "好，我會耐心地等。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Don't touch it while it wakes.",
+      "phonetic": "/dɑnt tʌʧ ɪt waɪl ɪt weɪks./",
+      "zh": "它開機時別去碰。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Some lights turned green already.",
+      "phonetic": "/sʌm laɪts tɜrnd ɡrin ɔlˈrɛdi./",
+      "zh": "有些燈已經變綠了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good sign. It's getting online.",
+      "phonetic": "/ɡʊd saɪn. ɪts ˈɡɛtɪŋ ˈɑnˌlaɪn./",
+      "zh": "好兆頭，它正連上線。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One is still orange, though.",
+      "phonetic": "/wʌn ɪz stɪl ˈɔrɪndʒ, ðoʊ./",
+      "zh": "不過還有一盞是橘色。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's the internet light. Give it time.",
+      "phonetic": "/ðæts ði ˈɪntərˌnɛt laɪt. ɡɪv ɪt taɪm./",
+      "zh": "那是網路燈，再給它點時間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Still blinking orange. Hmm.",
+      "phonetic": "/stɪl ˈblɪŋkɪŋ ˈɔrɪndʒ. hʌm./",
+      "zh": "還在閃橘色，嗯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It can't reach outside yet.",
+      "phonetic": "/ɪt kænt riʧ aʊtˈsaɪd jɛt./",
+      "zh": "它還連不到外面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now I'll plug the router in.",
+      "phonetic": "/naʊ aɪl plʌɡ ðə ˈraʊtər ɪn./",
+      "zh": "現在我來插路由器。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the modem looks ready now.",
+      "phonetic": "/jɛs, ðə ˈmodɛm lʊks ˈrɛdi naʊ./",
+      "zh": "好，數據機現在準備好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Router's plugged in. Lights are coming on.",
+      "phonetic": "/ˈraʊtərz plʌɡd ɪn. laɪts ɑr ˈkʌmɪŋ ɑn./",
+      "zh": "路由器插好了，燈一盞盞亮起來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One by one, like a Christmas tree.",
+      "phonetic": "/wʌn baɪ wʌn, laɪk ə ˈkrɪsməs tri./",
+      "zh": "一盞接一盞，像棵聖誕樹。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Haha, it does look festive.",
+      "phonetic": "/hɑˈhɑ, ɪt dʌz lʊk ˈfɛstɪv./",
+      "zh": "哈哈，看起來真有節日氣氛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Now the top light just went green.",
+      "phonetic": "/naʊ ðə tɑp laɪt dʒʌst wɛnt ɡrin./",
+      "zh": "現在最上面那盞變綠了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is green the online signal?",
+      "phonetic": "/ɪz ɡrin ði ˈɑnˌlaɪn ˈsɪɡnəl?/",
+      "zh": "綠色就是上線的訊號嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, that's the internet connection light.",
+      "phonetic": "/jɛs, ðæts ði ˈɪntərˌnɛt kəˈnɛkʃən laɪt./",
+      "zh": "對，那是網路連線燈。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It's solid green. No blinking!",
+      "phonetic": "/ɪts ˈsɑlɪd ɡrin. noʊ ˈblɪŋkɪŋ!/",
+      "zh": "穩定綠色，不閃了！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's exactly what we wanted.",
+      "phonetic": "/ðæts ɪɡˈzæktli wɑt wi ˈwɑntɪd./",
+      "zh": "這正是我們想要的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I reconnect my phone now?",
+      "phonetic": "/ʃʊd aɪ riˈkɛnˌɛkt maɪ foʊn naʊ?/",
+      "zh": "我現在重連手機嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Go ahead, open the Wi-Fi list.",
+      "phonetic": "/ɡoʊ əˈhɛd, ˈoʊpən ðə ˈwaɪˌfaɪ lɪst./",
+      "zh": "好，打開 Wi-Fi 清單。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Our network name popped right up.",
+      "phonetic": "/aʊr ˈnɛtˌwɜrk neɪm pɑpt raɪt ʌp./",
+      "zh": "我們的網路名稱跳出來了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tap it and enter the password.",
+      "phonetic": "/tæp ɪt ænd ˈɛntər ðə ˈpæswɜrd./",
+      "zh": "點它並輸入密碼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Here's the tricky part again.",
+      "phonetic": "/hɪrz ðə ˈtrɪki pɑrt əˈɡɛn./",
+      "zh": "麻煩的部分又來了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Did you forget the password?",
+      "phonetic": "/dɪd ju fərˈɡɛt ðə ˈpæswɜrd?/",
+      "zh": "你忘記密碼了嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I type it but it keeps failing.",
+      "phonetic": "/aɪ taɪp ɪt bʌt ɪt kips ˈfeɪlɪŋ./",
+      "zh": "我打了卻一直失敗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let's check the sticker under the router.",
+      "phonetic": "/lɛts tʃɛk ðə ˈstɪkər ˈʌndər ðə ˈraʊtər./",
+      "zh": "我們看看路由器底下的貼紙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Oh right, the default info card!",
+      "phonetic": "/oʊ raɪt, ðə dɪˈfɔlt ˈɪnfoʊ kɑrd!/",
+      "zh": "對哦，預設資訊卡！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Flip it over slowly, be careful.",
+      "phonetic": "/flɪp ɪt ˈoʊvər ˈsloʊli, bi ˈkɛrfəl./",
+      "zh": "慢慢把它翻過來，小心點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I see a network name here.",
+      "phonetic": "/aɪ si ə ˈnɛtˌwɜrk neɪm hɪr./",
+      "zh": "這裡有個網路名稱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And a password line below it.",
+      "phonetic": "/ænd ə ˈpæswɜrd laɪn bɪˈloʊ ɪt./",
+      "zh": "下面還有密碼那一行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "But we changed the name years ago.",
+      "phonetic": "/bʌt wi ʧeɪnd ðə neɪm jɪrz əˈɡoʊ./",
+      "zh": "可是我們幾年前改過名稱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The password might be the old default.",
+      "phonetic": "/ðə ˈpæswɜrd maɪt bi ði oʊld dɪˈfɔlt./",
+      "zh": "密碼說不定還是舊的預設值。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let me try this long code.",
+      "phonetic": "/lɛt mi traɪ ðɪs lɔŋ koʊd./",
+      "zh": "讓我試試這串長碼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Type it with the capital letters.",
+      "phonetic": "/taɪp ɪt wɪð ðə ˈkæpɪtəl ˈlɛtərz./",
+      "zh": "大寫字母也要照著打。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Caps make it so easy to mess up.",
+      "phonetic": "/kæps meɪk ɪt soʊ ˈizi tə mɛs ʌp./",
+      "zh": "大小寫很容易讓人打錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Show me your screen; let's compare.",
+      "phonetic": "/ʃoʊ mi jʊr skrɪn; lɛts kəmˈpɛr./",
+      "zh": "給我看你的螢幕，我們比對一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "See? I typed it so carefully.",
+      "phonetic": "/si? aɪ taɪpt ɪt soʊ ˈkɛrfəli./",
+      "zh": "看？我很仔細地打了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Looks right; try to connect anyway.",
+      "phonetic": "/lʊks raɪt; traɪ tə kəˈnɛkt ˈɛnɪˌweɪ./",
+      "zh": "看起來對，總之再連看看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Connecting now, and it's spinning.",
+      "phonetic": "/kəˈnɛktɪŋ naʊ, ænd ɪts ˈspɪnɪŋ./",
+      "zh": "正在連接，一直轉圈。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spinning means it's still trying.",
+      "phonetic": "/ˈspɪnɪŋ minz ɪts stɪl ˈtraɪɪŋ./",
+      "zh": "轉圈代表它還在嘗試。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It says connected, but no internet.",
+      "phonetic": "/ɪt sɛz kəˈnɛktɪd, bʌt noʊ ˈɪntərˌnɛt./",
+      "zh": "顯示已連接，但沒網路。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ugh, that's the classic near-miss.",
+      "phonetic": "/ʌɡ, ðæts ðə ˈklæsɪk nɪr mɪs./",
+      "zh": "唉，真的是就差那麼一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So close, yet still so far.",
+      "phonetic": "/soʊ kloʊs, jɛt stɪl soʊ fɑr./",
+      "zh": "這麼近，卻又那麼遠。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let's set the password aside a second.",
+      "phonetic": "/lɛts sɛt ðə ˈpæswɜrd əˈsaɪd ə ˈsɛkənd./",
+      "zh": "我們先把密碼放一邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What should we look at instead?",
+      "phonetic": "/wɑt ʃʊd wi lʊk æt ɪnˈstɛd?/",
+      "zh": "那我們該看些別的什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Check the modem's main light once more.",
+      "phonetic": "/tʃɛk ðə ˈmodɛmz meɪn laɪt wʌns mɔr./",
+      "zh": "再看一次數據機的主燈。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It went green, then flashed red.",
+      "phonetic": "/ɪt wɛnt ɡrin, ðɛn flæʃt rɛd./",
+      "zh": "它變綠，然後閃紅。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Flashing red means a line problem.",
+      "phonetic": "/ˈflæʃɪŋ rɛd minz ə laɪn ˈprɑbləm./",
+      "zh": "閃紅代表線路有問題。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Line problem? Like the cable itself?",
+      "phonetic": "/laɪn ˈprɑbləm? laɪk ðə ˈkeɪbəl ɪtˈsɛlf?/",
+      "zh": "線路問題？像是線本身？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Maybe it's loose in the port.",
+      "phonetic": "/ˈmeɪbi ɪts lus ɪn ðə pɔrt./",
+      "zh": "說不定是接口鬆了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The port is where the cord clicks in.",
+      "phonetic": "/ðə pɔrt ɪz wɛr ðə kɔrd klɪks ɪn./",
+      "zh": "接口就是線卡進去的地方。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes. Push it snug, but gently.",
+      "phonetic": "/jɛs. pʊʃ ɪt snʌɡ, bʌt ˈdʒɛntli./",
+      "zh": "對，把它推緊，但要輕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I wiggled it. It felt a little loose.",
+      "phonetic": "/aɪ ˈwɪɡəld ɪt. ɪt fɛlt ə ˈlɪtəl lus./",
+      "zh": "我晃了晃，感覺有點鬆。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try the other matching port beside it.",
+      "phonetic": "/traɪ ði ˈʌðər ˈmætʃɪŋ pɔrt bɪˈsaɪd ɪt./",
+      "zh": "試試旁邊另一個相同的接口。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Swapped it in with a firm click.",
+      "phonetic": "/swɑpt ɪt ɪn wɪð ə fɜrm klɪk./",
+      "zh": "我把它換邊插進去，卡嗒一聲扣得很實。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Now let's see if it holds green.",
+      "phonetic": "/naʊ lɛts si ɪf ɪt hoʊldz ɡrin./",
+      "zh": "現在看綠燈能不能穩住。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It's steady! No more red flash.",
+      "phonetic": "/ɪts ˈstɛdi! noʊ mɔr rɛd flæʃ./",
+      "zh": "穩住了！不再閃紅。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Progress! Let the modem settle a bit.",
+      "phonetic": "/ˈprɑɡrɛs! lɛt ðə ˈmodɛm ˈsɛtəl ə bɪt./",
+      "zh": "有進展！讓數據機穩定一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Okay, one more minute of patience.",
+      "phonetic": "/oʊˈkeɪ, wʌn mɔr ˈmɪnɪt əv ˈpeɪʃəns./",
+      "zh": "好，再耐心等一分鐘。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then we retest the phone connection.",
+      "phonetic": "/ðɛn wi riˈtɛst ðə foʊn kəˈnɛkʃən./",
+      "zh": "然後我們再測手機連線。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My phone says connected with internet!",
+      "phonetic": "/maɪ foʊn sɛz kəˈnɛktɪd wɪð ˈɪntərˌnɛt!/",
+      "zh": "我手機顯示已連接且有網路！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes! Open a page to double-check.",
+      "phonetic": "/jɛs! ˈoʊpən ə peɪdʒ tə ˈdəbəl tʃɛk./",
+      "zh": "太好了！開個網頁再確認。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It loaded a photo super fast.",
+      "phonetic": "/ɪt ˈloʊdəd ə ˈfoʊtoʊ ˈsupər fæst./",
+      "zh": "它超快就載入了一張照片。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That means the hard part worked.",
+      "phonetic": "/ðæt minz ðə hɑrd pɑrt wɜrkt./",
+      "zh": "代表最難的部分成功了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So was it the loose port all along?",
+      "phonetic": "/soʊ wʌz ɪt ðə lus pɔrt ɔl əˈlɔŋ?/",
+      "zh": "所以從頭到尾是接口鬆了？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A loose line can wreck everything.",
+      "phonetic": "/ə lus laɪn kæn rɛk ˈɛvriˌθɪŋ./",
+      "zh": "一條鬆脫的線能搞砸一切。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wow, an actual easy fix for once.",
+      "phonetic": "/waʊ, æn ˈæktʃuəl ˈizi fɪks fər wʌns./",
+      "zh": "哇，難得一次好修的問題。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Don't celebrate too early, though.",
+      "phonetic": "/dɑnt ˈsɛləˌbreɪt tu ˈɜrli, ðoʊ./",
+      "zh": "不過別太早慶祝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Why? Isn't the light green now?",
+      "phonetic": "/waɪ? ˈɪzənt ðə laɪt ɡrin naʊ?/",
+      "zh": "為什麼？燈現在不是綠的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Check your laptop across the house.",
+      "phonetic": "/tʃɛk jʊr ˈlæptɑp əˈkrɔs ðə haʊs./",
+      "zh": "去檢查屋子另一頭的筆電。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Right, the far bedroom might struggle.",
+      "phonetic": "/raɪt, ðə fɑr ˈbɛdˌrum maɪt ˈstrʌɡəl./",
+      "zh": "對，那間遠的臥室可能較吃力。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let's go test the signal up there.",
+      "phonetic": "/lɛts ɡoʊ tɛst ðə ˈsɪɡnəl ʌp ðɛr./",
+      "zh": "我們去那邊測試訊號。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Lead the way, network doctor.",
+      "phonetic": "/lid ðə weɪ, ˈnɛtˌwɜrk ˈdɑktər./",
+      "zh": "帶路吧，網路醫生。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Next stop is the dead-zone hunt.",
+      "phonetic": "/nɛkst stɑp ɪz ðə dɛd zoʊn hʌnt./",
+      "zh": "下一站就是搜尋訊號死角。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I'm standing in the far bedroom.",
+      "phonetic": "/aɪm ˈstændɪŋ ɪn ðə fɑr ˈbɛdˌrum./",
+      "zh": "我現在站在最遠的臥室。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And how many bars do you see?",
+      "phonetic": "/ænd haʊ ˈmɛni bɑrz du ju si?/",
+      "zh": "你看到幾格訊號？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Barely two, and they keep flickering.",
+      "phonetic": "/ˈbɛrli tu, ænd ðeɪ kip ˈflɪkərɪŋ./",
+      "zh": "勉強兩格，還一直在跳。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That room is our dead zone.",
+      "phonetic": "/ðæt rum ɪz aʊr dɛd zoʊn./",
+      "zh": "那間就是我們的死角。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Videos won't even start playing.",
+      "phonetic": "/ˈvɪdioʊz woʊnt ˈiːvən stɑrt ˈpleɪɪŋ./",
+      "zh": "影片根本沒辦法開始播。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two bars can't carry much load.",
+      "phonetic": "/tu bɑrz kænt ˈkæri mʌʧ loʊd./",
+      "zh": "兩格撐不起多少流量。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The hallway is a little better.",
+      "phonetic": "/ðə ˈhɔlˌweɪ ɪz ə ˈlɪtəl ˈbɛtər./",
+      "zh": "走廊那邊好一點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Three bars there, buffering sometimes.",
+      "phonetic": "/θri bɑrz ðɛr, ˈbʌfərɪŋ ˈsʌmˌtaɪmz./",
+      "zh": "那裡三格，有時會緩衝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So distance is really the culprit.",
+      "phonetic": "/soʊ ˈdɪstəns ɪz ˈrɪəli ðə ˈkʌlˌprɪt./",
+      "zh": "所以距離其實是元凶。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Distance and these thick old walls.",
+      "phonetic": "/ˈdɪstəns ænd ðiz θɪk oʊld wɔlz./",
+      "zh": "距離加上這些厚實的老牆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Walls eat the signal, huh?",
+      "phonetic": "/wɔlz it ðə ˈsɪɡnəl, hʌ?/",
+      "zh": "牆會吃掉訊號，是吧？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Brick and metal hurt it most.",
+      "phonetic": "/brɪk ænd ˈmɛtəl hɜrt ɪt moʊst./",
+      "zh": "磚塊和金屬對它傷得最重。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Our bathroom wall is tiled solid.",
+      "phonetic": "/aʊr ˈbæθˌrum wɔl ɪz ˈtaɪəld ˈsɑlɪd./",
+      "zh": "我們浴室的牆面貼滿了磁磚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's why it dies in there.",
+      "phonetic": "/ðæts waɪ ɪt daɪz ɪn ðɛr./",
+      "zh": "難怪訊號在裡面總是斷。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The big fridge blocks it too.",
+      "phonetic": "/ðə bɪɡ frɪdʒ blɑks ɪt tu./",
+      "zh": "大冰箱也會擋住訊號。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Metal appliances are Wi-Fi enemies.",
+      "phonetic": "/ˈmɛtəl əˈplaɪənz ɑr ˈwaɪˌfaɪ ˈɛnəmiz./",
+      "zh": "金屬家電是 Wi-Fi 的敵人。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wow, I never thought about that.",
+      "phonetic": "/waʊ, aɪ ˈnɛvər θɔt əˈbaʊt ðæt./",
+      "zh": "哇，我從沒想過這點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Where we place things really matters.",
+      "phonetic": "/wɛr wi pleɪs θɪŋz ˈrɪəli ˈmætərz./",
+      "zh": "東西擺在哪裡真的很關鍵。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The router sits inside a closet.",
+      "phonetic": "/ðə ˈraʊtər sɪts ɪnˈsaɪd ə ˈklɑzɪt./",
+      "zh": "路由器擺在收納櫃裡面。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That could be our whole problem.",
+      "phonetic": "/ðæt kʊd bi aʊr hoʊl ˈprɑbləm./",
+      "zh": "那說不定就是問題的主因。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hidden behind a closed door.",
+      "phonetic": "/ˈhɪdən bɪˈhaɪnd ə kloʊzd dɔr./",
+      "zh": "藏在一扇關著的門後面。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Closed spaces trap the signal badly.",
+      "phonetic": "/kloʊzd ˈspeɪsəz træp ðə ˈsɪɡnəl ˈbædli./",
+      "zh": "封閉空間會把訊號悶住。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's move the router out right now.",
+      "phonetic": "/lɛts muv ðə ˈraʊtər aʊt raɪt naʊ./",
+      "zh": "我們馬上把路由器搬出來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Put it somewhere high and open.",
+      "phonetic": "/pʊt ɪt ˈsʌmˌwɛr haɪ ænd ˈoʊpən./",
+      "zh": "擺到又高又開闊的地方。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "High means the top of a shelf?",
+      "phonetic": "/haɪ minz ðə tɑp əv ə ʃɛlf?/",
+      "zh": "高是指架子的最上層嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, signals spread down and out.",
+      "phonetic": "/jɛs, ˈsɪɡnəlz sprɛd daʊn ænd aʊt./",
+      "zh": "對，訊號會往下和往外散。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So up high covers more rooms.",
+      "phonetic": "/soʊ ʌp haɪ ˈkʌvərz mɔr rumz./",
+      "zh": "所以擺高能覆蓋更多房間。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Exactly, height helps it travel.",
+      "phonetic": "/ɪɡˈzæktli, haɪt hɛlz ɪt ˈtrævəl./",
+      "zh": "沒錯，擺高能幫訊號傳更遠。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I'll clear the middle of the table.",
+      "phonetic": "/aɪl klɪr ðə ˈmɪdəl əv ðə ˈteɪbəl./",
+      "zh": "我把桌子的中間清出來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That works better than a high shelf.",
+      "phonetic": "/ðæt wɜrks ˈbɛtər ðæn ə haɪ ʃɛlf./",
+      "zh": "擺在桌子中間比高架子更好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cords are short though. A problem?",
+      "phonetic": "/ðə kɔrdz ɑr ʃɔrt ðoʊ. ə ˈprɑbləm?/",
+      "zh": "不過線很短，會有問題嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can buy a longer power cord.",
+      "phonetic": "/wi kæn baɪ ə ˈlɔŋər ˈpaʊər kɔrd./",
+      "zh": "我們可以買更長的電源線。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Or just move the table closer here.",
+      "phonetic": "/ɔr dʒʌst muv ðə ˈteɪbəl ˈkloʊsər hɪr./",
+      "zh": "或乾脆把桌子搬近一點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Also fine, as long as it's central.",
+      "phonetic": "/ˈɔlsoʊ faɪn, æz lɔŋ æz ɪts ˈsɛntrəl./",
+      "zh": "也行，只要位置靠中間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Central means the house's middle point.",
+      "phonetic": "/ˈsɛntrəl minz ðə haʊsɪz ˈmɪdəl pɔɪnt./",
+      "zh": "中間就是房子的正中心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, so no room is too far.",
+      "phonetic": "/jɛs, soʊ noʊ rum ɪz tu fɑr./",
+      "zh": "對，這樣就沒有房間太遠。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Okay, it's on the table now.",
+      "phonetic": "/oʊˈkeɪ, ɪts ɑn ðə ˈteɪbəl naʊ./",
+      "zh": "好，它現在擺在桌子上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Give it a minute to settle.",
+      "phonetic": "/ɡɪv ɪt ə ˈmɪnɪt tə ˈsɛtəl./",
+      "zh": "給它一分鐘穩定下來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Settle? The router needs air?",
+      "phonetic": "/ˈsɛtəl? ðə ˈraʊtər nidz ɛr?/",
+      "zh": "穩定？路由器也需要空氣？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It shouldn't be smothered or covered.",
+      "phonetic": "/ɪt ˈʃʊdənt bi ˈsmʌðərd ɔr ˈkʌvərd./",
+      "zh": "它不該被悶住或蓋住。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The old spot was totally shut in.",
+      "phonetic": "/ði oʊld spɑt wʌz ˈtoʊtəli ʃʌt ɪn./",
+      "zh": "舊位置那個空間整個悶死。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Heat also weakens a struggling router.",
+      "phonetic": "/hit ˈɔlsoʊ ˈwikənz ə ˈstrʌɡəlɪŋ ˈraʊtər./",
+      "zh": "太熱也會拖垮本來就吃力的路由器。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now let's retest that far bedroom.",
+      "phonetic": "/naʊ lɛts riˈtɛst ðæt fɑr ˈbɛdˌrum./",
+      "zh": "現在再測一次那間臥室。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'll go stand right by the bed.",
+      "phonetic": "/aɪl ɡoʊ stænd raɪt baɪ ðə bɛd./",
+      "zh": "我去站到床旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Tell me your bars this time.",
+      "phonetic": "/tɛl mi jʊr bɑrz ðɪs taɪm./",
+      "zh": "告訴我這一次的格數。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Three now, up from just two!",
+      "phonetic": "/θri naʊ, ʌp frʌm dʒʌst tu!/",
+      "zh": "現在三格，從兩格升上來了！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Better, but still not great.",
+      "phonetic": "/ˈbɛtər, bʌt stɪl nɑt ɡreɪt./",
+      "zh": "好一些了，但仍不夠好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The far wall still blocks a lot.",
+      "phonetic": "/ðə fɑr wɔl stɪl blɑks ə lɑt./",
+      "zh": "那面遠牆還是擋掉很多。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Videos load, just very slowly.",
+      "phonetic": "/ˈvɪdioʊz loʊd, dʒʌst ˈvɛri ˈsloʊli./",
+      "zh": "影片能載入，只是很慢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Slow beats broken, honestly.",
+      "phonetic": "/sloʊ bits ˈbroʊkən, ˈɑnəstli./",
+      "zh": "老實說，慢總比壞了好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "True. But can we do better?",
+      "phonetic": "/tru. bʌt kæn wi du ˈbɛtər?/",
+      "zh": "沒錯，但我們能做得更好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We could add a signal extender.",
+      "phonetic": "/wi kʊd æd ə ˈsɪɡnəl ɪkˈstɛndər./",
+      "zh": "我們可以加一個訊號延伸器。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "An extender? What does that do?",
+      "phonetic": "/æn ɪkˈstɛndər? wʌt dʌz ðæt du?/",
+      "zh": "延伸器？那是做什麼的？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It catches the signal and repeats it.",
+      "phonetic": "/ɪt ˈkætʃɪz ðə ˈsɪɡnəl ænd rɪˈpits ɪt./",
+      "zh": "它接住訊號再中繼出去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So it boosts the weak rooms?",
+      "phonetic": "/soʊ ɪt buʊsts ðə wik rumz?/",
+      "zh": "所以它能增強訊號弱的房間？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it fills in the dead zones.",
+      "phonetic": "/jɛs, ɪt fɪlz ɪn ðə dɛd zoʊnz./",
+      "zh": "對，它會把死角補起來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do we already own one?",
+      "phonetic": "/du wi ˌɔlˈrɛdi ˈoʊn wʌn?/",
+      "zh": "我們家裡已經有一個了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I think there's one in the drawer.",
+      "phonetic": "/aɪ θɪŋk ðɛrz wʌn ɪn ðə drɔr./",
+      "zh": "我想抽屜裡有一個。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's grab it and try it out.",
+      "phonetic": "/lɛts ɡræb ɪt ænd traɪ ɪt aʊt./",
+      "zh": "我們拿出來試試看。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great, no need to buy more.",
+      "phonetic": "/ɡreɪt, noʊ nid tə baɪ mɔr./",
+      "zh": "太好了，不用另外買。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It's this tiny white plug thing.",
+      "phonetic": "/ɪts ðɪs ˈtaɪni waɪt plʌɡ θɪŋ./",
+      "zh": "就是這個白色的小插頭。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yeah, it plugs right into a wall.",
+      "phonetic": "/jæ, ɪt plʌɡz raɪt ˈɪntə ə wɔl./",
+      "zh": "對，它直接插進牆壁。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where should I place the extender?",
+      "phonetic": "/wɛr ʃʊd aɪ pleɪs ði ɪkˈstɛndər?/",
+      "zh": "延伸器該擺在哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Halfway between the router and the room.",
+      "phonetic": "/ˈhæfˌweɪ bɪˈtin ðə ˈraʊtər ænd ðə rum./",
+      "zh": "放在路由器和房間的正中間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So not right beside the router?",
+      "phonetic": "/soʊ nɑt raɪt bɪˈsaɪd ðə ˈraʊtər?/",
+      "zh": "所以不是緊挨著路由器？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, it won't spread any further.",
+      "phonetic": "/noʊ, ɪt woʊnt sprɛd ˈɛni ˈfɜrðər./",
+      "zh": "不，那樣訊號傳不了更遠。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "And not all the way at the end?",
+      "phonetic": "/ænd nɑt ɔl ðə weɪ æt ði ɛnd?/",
+      "zh": "那也不是放到最尾端？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Right, midway reaches the farthest.",
+      "phonetic": "/raɪt, ˈmɪdˌweɪ riʧɪz ðə ˈfɑrðəst./",
+      "zh": "對，中間能蓋得最遠。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The hallway outlet is perfect then.",
+      "phonetic": "/ðə ˈhɔlˌweɪ ˈaʊtˌlɛt ɪz ˈpɜrfɪkt ðɛn./",
+      "zh": "那走廊的插座剛剛好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, that's a solid halfway spot.",
+      "phonetic": "/jɛs, ðæts ə ˈsɑlɪd ˈhæfˌweɪ spɑt./",
+      "zh": "對，那是穩妥的中間點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Plugging it in now. Lights on.",
+      "phonetic": "/ˈplʌɡɪŋ ɪt ɪn naʊ. laɪts ɑn./",
+      "zh": "現在插上，燈亮了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Give it a minute to pair up.",
+      "phonetic": "/ɡɪv ɪt ə ˈmɪnɪt tə pɛr ʌp./",
+      "zh": "給它一分鐘來配對。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Pair up? Like with the router?",
+      "phonetic": "/pɛr ʌp? laɪk wɪð ðə ˈraʊtər?/",
+      "zh": "配對？是跟路由器嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, they link up on their own.",
+      "phonetic": "/jɛs, ðeɪ lɪŋk ʌp ɑn ðɛr ˈoʊn./",
+      "zh": "對，它們會自己連起來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now it's blinking blue slowly.",
+      "phonetic": "/naʊ ɪts ˈblɪŋkɪŋ bluː ˈsloʊli./",
+      "zh": "現在它緩慢地閃藍燈。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Blue means it's searching for ours.",
+      "phonetic": "/bluː minz ɪts ˈsɜrʧɪŋ fɔr aʊrz./",
+      "zh": "藍色代表它在找我們的網路。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do I need a code for it?",
+      "phonetic": "/du aɪ nid ə koʊd fər ɪt?/",
+      "zh": "我需要輸入什麼密碼嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just press the button on both.",
+      "phonetic": "/dʒʌst prɛs ðə ˈbʌtən ɑn boʊθ./",
+      "zh": "只要兩台各按一次按鈕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Pressed the router one. Now this?",
+      "phonetic": "/prɛst ðə ˈraʊtər wʌn. naʊ ðɪs?/",
+      "zh": "按了路由器那個，現在這個？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, press the extender now too.",
+      "phonetic": "/jɛs, prɛs ði ɪkˈstɛndər naʊ tu./",
+      "zh": "對，現在也按下延伸器。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Done. Both lights are flashing.",
+      "phonetic": "/dʌn. boʊθ laɪts ɑr ˈflæʃɪŋ./",
+      "zh": "好了，兩盞燈都在閃。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's them talking to each other.",
+      "phonetic": "/ðæts ðəm ˈtɔkɪŋ tə iʧ ˈʌðər./",
+      "zh": "那是它們在互相溝通。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How will I find the new network?",
+      "phonetic": "/haʊ wɪl aɪ faɪnd ðə nju ˈnɛtˌwɜrk?/",
+      "zh": "我要怎麼找到新網路？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It adds EXT to our old name.",
+      "phonetic": "/ɪt ædz ɛksˈtiː tə aʊr oʊld neɪm./",
+      "zh": "它在舊名稱後面加了 EXT。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Same password, or a new one?",
+      "phonetic": "/seɪm ˈpæswɜrd, ɔr ə nju wʌn?/",
+      "zh": "密碼一樣還是新的？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Usually the same as before.",
+      "phonetic": "/ˈjuʒəwəli ðə seɪm æz bɪˈfɔr./",
+      "zh": "通常和之前那個一樣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I see it. Connecting to EXT.",
+      "phonetic": "/aɪ si ɪt. kəˈnɛktɪŋ tə ɛksˈtiː./",
+      "zh": "我看到了，正連到 EXT。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Go back to the far bedroom now.",
+      "phonetic": "/ɡoʊ bæk tə ðə fɑr ˈbɛdˌrum naʊ./",
+      "zh": "現在回那間遠的臥室。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Walking there with my phone open.",
+      "phonetic": "/ˈwɔkɪŋ ðɛr wɪð maɪ foʊn ˈoʊpən./",
+      "zh": "我開著手機走過去。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And tell me the bar count again.",
+      "phonetic": "/ænd tɛl mi ðə bɑr kaʊnt əˈɡɛn./",
+      "zh": "然後再告訴我格數。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wow, four full bars right here!",
+      "phonetic": "/waʊ, fɔr fʊl bɑrz raɪt hɪr!/",
+      "zh": "哇，這裡四格訊號全滿！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The extender did its job then.",
+      "phonetic": "/ði ɪkˈstɛndər dɪd ɪts dʒɑb ðɛn./",
+      "zh": "那延伸器果真派上用場。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Video started with no buffering!",
+      "phonetic": "/ˈvɪdioʊ ˈstɑrtəd wɪð noʊ ˈbʌfərɪŋ!/",
+      "zh": "影片沒緩衝就開始了！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Music streams fine in here too.",
+      "phonetic": "/ˈmjuzɪk strimz faɪn ɪn hɪr tu./",
+      "zh": "音樂在這裡也能順利播放。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This tiny plug changed everything.",
+      "phonetic": "/ðɪs ˈtaɪni plʌɡ ʧeɪnd ˈɛvriˌθɪŋ./",
+      "zh": "這個小插頭改變了一切。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cheap fix, huge difference at home.",
+      "phonetic": "/ʧip fɪks, hjuːdʒ ˈdɪfərəns æt hoʊm./",
+      "zh": "花錢少，家裡差別卻超大。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "But it drops sometimes anyway.",
+      "phonetic": "/bʌt ɪt drɑps ˈsʌmˌtaɪmz ˈɛnɪˌweɪ./",
+      "zh": "不過它偶爾還是會斷。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Occasionally for just a few seconds.",
+      "phonetic": "/əˈkeɪʒənəli fər dʒʌst ə fju ˈsɛkəndz./",
+      "zh": "偶爾斷個幾秒鐘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Maybe the outside line is weak.",
+      "phonetic": "/ˈmeɪbi ði aʊtˈsaɪd laɪn ɪz wik./",
+      "zh": "也許是外面的線路太弱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Time to call the internet provider.",
+      "phonetic": "/taɪm tə kɔl ði ˈɪntərˌnɛt prəˈvaɪdər./",
+      "zh": "該打電話給網路供應商了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where do we find their phone number?",
+      "phonetic": "/wɛr du wi faɪnd ðɛr foʊn ˈnʌmbər?/",
+      "zh": "我們去哪裡找他們的電話？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It's on the bill, or the app.",
+      "phonetic": "/ɪts ɑn ðə bɪl, ɔr ði æp./",
+      "zh": "帳單上或 App 裡有。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Found it on last month's bill.",
+      "phonetic": "/faʊnd ɪt ɑn læst mʌnθs bɪl./",
+      "zh": "在上個月的帳單上找到了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great, go ahead and dial it.",
+      "phonetic": "/ɡreɪt, ɡoʊ əˈhɛd ænd ˈdaɪəl ɪt./",
+      "zh": "太好了，直接撥號吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It rang twice, then hold music.",
+      "phonetic": "/ɪt ræŋk twaɪs, ðɛn hoʊld ˈmjuzɪk./",
+      "zh": "響了兩聲，然後是等待音樂。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Classic. They always put us on hold.",
+      "phonetic": "/ˈklæsɪk. ðeɪ ˈɔlweɪz pʊt ʌs ɑn hoʊld./",
+      "zh": "老套路，每次都讓我們等候。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This saxophone loop is awful.",
+      "phonetic": "/ðɪs ˈsæksəˌfoʊn lup ɪz ˈɔfəl./",
+      "zh": "這段薩克斯循環超難聽。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "At least it beats silence.",
+      "phonetic": "/æt list ɪt bits ˈsaɪələns./",
+      "zh": "至少有音樂聽，比無聲好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A robot just asked for my account.",
+      "phonetic": "/ə ˈroʊˌbɑt dʒʌst æskt fər maɪ əˈkaʊnt./",
+      "zh": "機器人語音剛在問我的帳號。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Type it in with the keypad.",
+      "phonetic": "/taɪp ɪt ɪn wɪð ði ˈkiˌpæd./",
+      "zh": "用撥號鍵盤輸入進去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Done. Now it lists more options.",
+      "phonetic": "/dʌn. naʊ ɪt lɪsts mɔr ɑpˈʃənz./",
+      "zh": "好了，現在列出更多選項。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Press zero to reach a person.",
+      "phonetic": "/prɛs ˈzɪroʊ tə riʧ ə ˈpɜrsən./",
+      "zh": "按零就能找真人接聽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I pressed zero. Back to music.",
+      "phonetic": "/aɪ prɛst ˈzɪroʊ. bæk tə ˈmjuzɪk./",
+      "zh": "我按了零，又是音樂。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ugh, hold on a little longer.",
+      "phonetic": "/ʌɡ, hoʊld ɑn ə ˈlɪtəl ˈlɔŋɡər./",
+      "zh": "唉，再堅持一下下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Finally, a real human voice!",
+      "phonetic": "/ˈfaɪnəli, ə rɪl ˈhjumən vɔɪs!/",
+      "zh": "終於，是真人的聲音！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Say hi and explain the problem.",
+      "phonetic": "/seɪ haɪ ænd ɪkˈspleɪn ðə ˈprɑbləm./",
+      "zh": "打個招呼，說明一下問題。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hi, our internet keeps dropping out.",
+      "phonetic": "/haɪ, aʊr ˈɪntərˌnɛt kips ˈdrɑpɪŋ aʊt./",
+      "zh": "你好，我們的網路一直斷線。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ask them to check the line.",
+      "phonetic": "/æsk ðɛm tə tʃɛk ðə laɪn./",
+      "zh": "請他們檢查線路。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She asked for my street address.",
+      "phonetic": "/ʃi æskt fər maɪ strit əˈdrɛs./",
+      "zh": "她要我的街道地址。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Give it clearly, word by word.",
+      "phonetic": "/ɡɪv ɪt ˈklɪrli, wɜrd baɪ wɜrd./",
+      "zh": "唸清楚，一個字一個字報。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She's typing something on her end.",
+      "phonetic": "/ʃɪz ˈtaɪpɪŋ ˈsʌmθɪŋ ɑn hɜr ɛnd./",
+      "zh": "她在那頭打字記錄。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She's checking your signal remotely.",
+      "phonetic": "/ʃiz ˈtʃɛkɪŋ jʊr ˈsɪɡnəl rɪˈmoʊtli./",
+      "zh": "她在遠端幫你檢查訊號。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She says my line looks weak.",
+      "phonetic": "/ʃi sɛz maɪ laɪn lʊks wik./",
+      "zh": "她說我的線路看起來偏弱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ask what's causing the weakness.",
+      "phonetic": "/æsk wʌts ˈkɔzɪŋ ðə ˈwiknəs./",
+      "zh": "問問是什麼原因造成的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "There's an outage near us today.",
+      "phonetic": "/ðɛrz ən ˈaʊtˌɪdʒ nɪr ʌs təˈdeɪ./",
+      "zh": "她說今天我們這附近有線路中斷。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Oh! So it's not our fault at all.",
+      "phonetic": "/oʊ! soʊ ɪts nɑt aʊr fɔlt æt ɔl./",
+      "zh": "噢！那根本不是我們的錯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Correct. She's fixing it from there.",
+      "phonetic": "/kəˈrɛkt. ʃɪz ˈfɪksɪŋ ɪt frʌm ðɛr./",
+      "zh": "沒錯，她正在那邊修復。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ask how long the repair takes.",
+      "phonetic": "/æsk haʊ lɔŋ ðə rɪˈpɛr teɪks./",
+      "zh": "問問修理要花多久。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "About an hour, she said.",
+      "phonetic": "/əˈbaʊt ən aʊər, ʃi sɛd./",
+      "zh": "她說大約一個小時。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's not too bad at all.",
+      "phonetic": "/ðæts nɑt tu bæd æt ɔl./",
+      "zh": "那完全不算太糟。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She also offered an upgrade.",
+      "phonetic": "/ʃi ˈɔlsoʊ ˈɔfərd ən ˈʌpˌɡreɪd./",
+      "zh": "她還提供了一個升級。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "An upgrade? Like a faster plan?",
+      "phonetic": "/æn ˈʌpˌɡreɪd? laɪk ə ˈfæstər plæn?/",
+      "zh": "升級？像是更快的方案？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, more speed for a small fee.",
+      "phonetic": "/jɛs, mɔr spid fər ə smɔl fi./",
+      "zh": "對，加一點錢換更快的速度。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ask how much extra each month.",
+      "phonetic": "/æsk haʊ mʌʧ ˈɛkstrə iʧ mʌnθ./",
+      "zh": "問問每個月要多付多少。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Just five more dollars a month.",
+      "phonetic": "/dʒʌst faɪv mɔr ˈdɑlərz ə mʌnθ./",
+      "zh": "每個月只要多付五塊錢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That seems fair for faster net.",
+      "phonetic": "/ðæt simz fɛr fər ˈfæstər nɛt./",
+      "zh": "為了更快的網路，這很公道。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "But our router is quite old too.",
+      "phonetic": "/bʌt aʊr ˈraʊtər ɪz kwaɪt oʊld tu./",
+      "zh": "不過我們的路由器也太舊了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ask if the upgrade includes one.",
+      "phonetic": "/æsk ɪf ði ˈʌpˌɡreɪd ɪnˈkludz wʌn./",
+      "zh": "問問升級會不會附新的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She says a new router is free.",
+      "phonetic": "/ʃi sɛz ə nju ˈraʊtər ɪz fri./",
+      "zh": "她說新路由器是免費的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Perfect. Then we should take it.",
+      "phonetic": "/ˈpɜrfɪkt. ðɛn wi ʃʊd teɪk ɪt./",
+      "zh": "完美，那我們應該接受。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She'll mail it within a few days.",
+      "phonetic": "/ʃil meɪl ɪt wɪˈðɪn ə fju deɪz./",
+      "zh": "她會在幾天內寄來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ask about the technician option too.",
+      "phonetic": "/æsk əˈbaʊt ðə ˌtɛkˈnɪʃən ɑpˈʃən tu./",
+      "zh": "也問問技師上門的選項。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A tech can come set it up.",
+      "phonetic": "/ə tɛk kæn kʌm sɛt ɪt ʌp./",
+      "zh": "技師可以上門來安裝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Would that cost extra money?",
+      "phonetic": "/wʊd ðæt kɔst ˈɛkstrə ˈmʌni?/",
+      "zh": "那要另外加錢嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "No, it's included with the upgrade.",
+      "phonetic": "/noʊ, ɪts ɪnˈkludɪd wɪð ði ˈʌpˌɡreɪd./",
+      "zh": "不用，升級方案已包含。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then let's book a home visit.",
+      "phonetic": "/ðɛn lɛts bʊk ə hoʊm ˈvɪzɪt./",
+      "zh": "那我們就預約上門。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She asked which day works best.",
+      "phonetic": "/ʃi æskt wɪʧ deɪ wɜrks bɛst./",
+      "zh": "她問哪一天最方便。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tell her any weekend afternoon.",
+      "phonetic": "/tɛl hɜr ˈɛni ˈwikˌɛnd ˈæftərˌnun./",
+      "zh": "告訴她任何週末下午都行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Saturday two to four, she wrote.",
+      "phonetic": "/ˈsætərˌdeɪ tu tə fɔr, ʃi roʊt./",
+      "zh": "她寫下週六兩點到四點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Perfect, I'll be home for that.",
+      "phonetic": "/ˈpɜrfɪkt, aɪl bi hoʊm fər ðæt./",
+      "zh": "完美，那段時間我在家。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She gave me a reference number.",
+      "phonetic": "/ʃi ɡeɪv mi ə ˈrɛfərəns ˈnʌmbər./",
+      "zh": "她給了我一個參考號碼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Write it down and keep it safe.",
+      "phonetic": "/raɪt ɪt daʊn ænd kip ɪt seɪf./",
+      "zh": "把它抄下來收好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Saved it in my phone notes.",
+      "phonetic": "/seɪvd ɪt ɪn maɪ foʊn noʊts./",
+      "zh": "存進手機的備忘錄了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, you'll need it that day.",
+      "phonetic": "/ɡʊd, jul nid ɪt ðæt deɪ./",
+      "zh": "好，當天你會用得到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She'll text a reminder first.",
+      "phonetic": "/ʃil tɛkst ə rɪˈmaɪndər fɜrst./",
+      "zh": "她會先傳簡訊提醒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nice, so we won't forget.",
+      "phonetic": "/naɪs, soʊ wi woʊnt fərˈɡɛt./",
+      "zh": "不錯，這樣就不會忘記。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Before we hang up, one question.",
+      "phonetic": "/bɪˈfɔr wi hæŋ ʌp, wʌn ˈkwɛstʃən./",
+      "zh": "掛電話前，還有一個問題。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ask her about the fix status.",
+      "phonetic": "/æsk hɜr əˈbaʊt ðə fɪks ˈstætəs./",
+      "zh": "問問她修復的進度。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the outage already cleared?",
+      "phonetic": "/ɪz ði ˈaʊtˌɪdʒ ɔlˈrɛdi klɪrd?/",
+      "zh": "中斷已經排除了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She says it's done right now.",
+      "phonetic": "/ʃi sɛz ɪts dʌn raɪt naʊ./",
+      "zh": "她說現在剛剛修好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let me test my phone again.",
+      "phonetic": "/lɛt mi tɛst maɪ foʊn əˈɡɛn./",
+      "zh": "讓我再測一次手機。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Go on, try loading a page.",
+      "phonetic": "/ɡoʊ ɑn, traɪ ˈloʊdɪŋ ə peɪdʒ./",
+      "zh": "快，試著載入一個網頁。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It loaded instantly. No spin!",
+      "phonetic": "/ɪt ˈloʊdəd ˈɪnstəntli. noʊ spɪn!/",
+      "zh": "馬上就載入了，沒有轉圈！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So the line is truly back.",
+      "phonetic": "/soʊ ðə laɪn ɪz ˈtruːli bæk./",
+      "zh": "所以線路真的恢復了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I'll thank her for all her help.",
+      "phonetic": "/aɪl θæŋ hɜr fər ɔl hɜr hɛlp./",
+      "zh": "我要謝謝她所有的幫忙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, she was really kind.",
+      "phonetic": "/jɛs, ʃi wʌz ˈrɪəli kaɪnd./",
+      "zh": "對，她真的很好心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She's closing the ticket now.",
+      "phonetic": "/ʃɪz ˈkloʊzɪŋ ðə ˈtɪkɪt naʊ./",
+      "zh": "她現在正在結這個工單。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great, we can hang up soon.",
+      "phonetic": "/ɡreɪt, wi kæn hæŋ ʌp sun./",
+      "zh": "好，我們馬上就可以掛電話了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Okay, the call has ended.",
+      "phonetic": "/oʊˈkeɪ, ðə kɔl hæz ˈɛndɪd./",
+      "zh": "好，通話結束了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So, are we fixed for good?",
+      "phonetic": "/soʊ, ɑr wi fɪkst fər ɡʊd?/",
+      "zh": "所以，我們徹底修好了嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "For now, yes. The net is stable.",
+      "phonetic": "/fər nɑʊ, jɛs. ðə nɛt ɪz ˈsteɪbəl./",
+      "zh": "目前是，網路很穩定。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And the new router comes Saturday.",
+      "phonetic": "/ænd ðə nju ˈraʊtər kʌmz ˈsætərˌdeɪ./",
+      "zh": "新路由器週六就到了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then we won't need the extender.",
+      "phonetic": "/ðɛn wi woʊnt nid ði ɪkˈstɛndər./",
+      "zh": "那我們就不需要延伸器了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep it anyway for the back yard.",
+      "phonetic": "/kip ɪt ˈɛniˌweɪ fər ðə bæk jɑrd./",
+      "zh": "還是留著給後院用吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good idea. The yard is always weak.",
+      "phonetic": "/ɡʊd aɪˈdiə. ðə jɑrd ɪz ˈɔlˌweɪz wik./",
+      "zh": "好主意，後院一直很弱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The extender helps out there too.",
+      "phonetic": "/ði ɪkˈstɛndər hɛlpz aʊt ðɛr tu./",
+      "zh": "延伸器在外面也幫得上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I can't believe we fixed so much.",
+      "phonetic": "/aɪ kænt bɪˈliv wi fɪkst soʊ mʌʧ./",
+      "zh": "我不敢相信我們修好這麼多。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We really learned a lot tonight.",
+      "phonetic": "/wi ˈrɪəli lɜrnd ə lɑt təˈnaɪt./",
+      "zh": "我們今晚真的學到很多。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "First we checked the symptoms.",
+      "phonetic": "/fɜrst wi tʃɛkt ðə ˈsɪmptəmz./",
+      "zh": "我們先檢查了症狀。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then we restarted and fixed the cord.",
+      "phonetic": "/ðɛn wi rɪˈstɑrtəd ænd fɪkst ðə kɔrd./",
+      "zh": "然後重啟並修好了線。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then we moved and extended it.",
+      "phonetic": "/ðɛn wi muvd ænd ɪkˈstɛndɪd ɪt./",
+      "zh": "再來移動位置又加了延伸器。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And called the provider last.",
+      "phonetic": "/ænd kɔld ðə prəˈvaɪdər læst./",
+      "zh": "最後才打給供應商。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Simple steps, big result.",
+      "phonetic": "/ˈsɪmpəl stɛps, bɪɡ rɪˈzʌlt./",
+      "zh": "步驟很簡單，成效很大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I feel smarter about Wi-Fi now.",
+      "phonetic": "/aɪ fil ˈsmɑrtər əˈbaʊt ˈwaɪˌfaɪ naʊ./",
+      "zh": "我現在對 Wi-Fi 更內行了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Same here, less afraid of it.",
+      "phonetic": "/seɪm hɪr, lɛs əˈfreɪd əv ɪt./",
+      "zh": "我也是，不再怕它了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Next time we'll fix it faster.",
+      "phonetic": "/nɛkst taɪm wil fɪks ɪt ˈfæstər./",
+      "zh": "下次我們能修得更快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Or maybe just call them first.",
+      "phonetic": "/ɔr ˈmeɪbi dʒʌst kɔl ðɛm fɜrst./",
+      "zh": "或乾脆一開始就先打電話。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ha, that's honest at least.",
+      "phonetic": "/hɑ, ðæts ˈɑnəst æt list./",
+      "zh": "哈，那至少很誠實。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's enjoy the working internet.",
+      "phonetic": "/lɛts ɛnˈdʒɔɪ ðə ˈwɜrkɪŋ ˈɪntərˌnɛt./",
+      "zh": "我們來享受正常上線的網路吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, put on that show you like.",
+      "phonetic": "/jɛs, pʊt ɑn ðæt ʃoʊ ju laɪk./",
+      "zh": "對，播你愛看的那個節目。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The one that froze earlier tonight.",
+      "phonetic": "/ði wʌn ðæt froʊz ˈɜrliər təˈnaɪt./",
+      "zh": "就是今晚早先卡住的那個。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Now it won't stop or buffer.",
+      "phonetic": "/naʊ ɪt woʊnt stɑp ɔr ˈbʌfər./",
+      "zh": "現在它不會停也不會緩衝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Music, video, all flowing smooth.",
+      "phonetic": "/ˈmjuzɪk, ˈvɪdioʊ, ɔl ˈfloʊɪŋ smuθ./",
+      "zh": "音樂、影片，全都跑得順順的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "This is the best feeling tonight.",
+      "phonetic": "/ðɪs ɪz ðə bɛst ˈfilɪŋ təˈnaɪt./",
+      "zh": "這是今晚最棒的感覺。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I'm glad we didn't panic early.",
+      "phonetic": "/aɪm ɡlæd wi ˈdɪdənt ˈpænɪk ˈɜrli./",
+      "zh": "還好我們剛開始沒有慌張。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One calm step at a time, right?",
+      "phonetic": "/wʌn kɑm stɛp æt ə taɪm, raɪt?/",
+      "zh": "一次只穩穩地走一步，對吧？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Right. Patience plus a good call.",
+      "phonetic": "/raɪt. ˈpeɪʃəns plʌs ə ɡʊd kɔl./",
+      "zh": "對，耐心加上一通好電話。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That solved our Wi-Fi trouble.",
+      "phonetic": "/ðæt sɑlvd aʊr ˈwaɪˌfaɪ ˈtrʌbəl./",
+      "zh": "就解決了我們的 Wi-Fi 麻煩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So let's rest now, all online.",
+      "phonetic": "/soʊ lɛts rɛst naʊ, ɔl ˈɑnˌlaɪn./",
+      "zh": "那我們現在休息吧，全都在線。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good night, with fast Wi-Fi too.",
+      "phonetic": "/ɡʊd naɪt, wɪð fæst ˈwaɪˌfaɪ tu./",
+      "zh": "晚安，也祝網速飛快。"
+    }
+  ]
+}

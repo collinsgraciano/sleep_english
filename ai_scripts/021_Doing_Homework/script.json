@@ -1,0 +1,2458 @@
+{
+  "title": "Everyday Phrases — Doing Homework",
+  "title_zh": "寫作業",
+  "scene_zh": "寫作業 · 情境對話",
+  "title_quote": "Let's do homework.",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】✏️ 實用寫作業必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — Doing Homework",
+  "youtube_description": "睡著學英文！這部影片收錄實用寫作業情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫），不用背，睡前聽就會。重複播放，讓英文自然進入你的大腦。👍 想學更多生活場景，請留言告訴我！別忘了訂閱+按讚。 #英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical Doing Homework phrase pairs (each pair: male normal speed → female slow speed → combined dialogue). No memorization needed—just listen before bed and absorb naturally. If you want more real-life scenarios, leave a comment! Subscribe and like!",
+  "youtube_tags": [
+    "英文聽力",
+    "睡前英文",
+    "寫作業英文",
+    "English listening",
+    "Sleep learning",
+    "A2 English",
+    "常用英文短語",
+    "零基礎英文",
+    "慢速英文",
+    "英文口語",
+    "Learn English",
+    "English for daily life",
+    "ESL",
+    "English conversation",
+    "聽英語",
+    "英文學習"
+  ],
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "Doing Homework",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "Doing Homework",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "School",
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "Let's do homework.",
+      "phonetic": "/lɛts du ˈhoʊmˌwərk./",
+      "zh": "寫作業吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Where do I start?",
+      "phonetic": "/wɛr du aɪ stɑrt?/",
+      "zh": "從哪開始？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Math first, okay?",
+      "phonetic": "/mæθ fərst, ˌoʊˈkeɪ?/",
+      "zh": "先寫數學，好？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is the hardest.",
+      "phonetic": "/ɪt ɪz ðə ˈhɑrdəst./",
+      "zh": "最難。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I do not get this.",
+      "phonetic": "/aɪ du nɑt gɪt ðɪs./",
+      "zh": "這題不懂。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Read it again.",
+      "phonetic": "/rɛd ɪt əˈgɛn./",
+      "zh": "再讀一次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the answer?",
+      "phonetic": "/wət ɪz ðə ˈænsər?/",
+      "zh": "答案是什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Show your work.",
+      "phonetic": "/ʃoʊ jʊr wərk./",
+      "zh": "寫過程。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pencil is dull.",
+      "phonetic": "/ðə ˈpɛnsəl ɪz dəl./",
+      "zh": "鉛筆鈍了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sharpen it.",
+      "phonetic": "/ˈʃɑrpən ɪt./",
+      "zh": "削一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you check mine?",
+      "phonetic": "/kən ju ʧɛk maɪn?/",
+      "zh": "能看我的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Looks correct.",
+      "phonetic": "/lʊks kərˈɛkt./",
+      "zh": "看起來對。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The question is tricky.",
+      "phonetic": "/ðə kˈwɛʃən ɪz ˈtrɪki./",
+      "zh": "這題刁鑽。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Break it down.",
+      "phonetic": "/breɪk ɪt daʊn./",
+      "zh": "拆開看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I finished the essay.",
+      "phonetic": "/aɪ ˈfɪnɪʃt ðə ˈɛˌseɪ./",
+      "zh": "我寫完作文了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Read it aloud.",
+      "phonetic": "/rɛd ɪt əˈlaʊd./",
+      "zh": "念出來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Spell 'because' right.",
+      "phonetic": "/spɛl 'bɪˈkəz' raɪt./",
+      "zh": "because 拼對。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "C before e, yes.",
+      "phonetic": "/si ˌbiˈfɔr i, jɛs./",
+      "zh": "c 在 e 前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The book is due.",
+      "phonetic": "/ðə bʊk ɪz du./",
+      "zh": "書要還了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Return it tomorrow.",
+      "phonetic": "/rɪˈtərn ɪt təˈmɑˌroʊ./",
+      "zh": "明天還。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Timer for focus?",
+      "phonetic": "/ˈtaɪmər fər ˈfoʊkɪs?/",
+      "zh": "計時專注？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Twenty-five minutes.",
+      "phonetic": "/tˈwɛntiˌfaɪv ˈmɪnəts./",
+      "zh": "二十五分鐘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wifi is slow.",
+      "phonetic": "/ðə ˈwiˌfi ɪz sloʊ./",
+      "zh": "無線很慢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Use the book.",
+      "phonetic": "/juz ðə bʊk./",
+      "zh": "看書。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I need the dictionary.",
+      "phonetic": "/aɪ nid ðə ˈdɪkʃəˌnɛri./",
+      "zh": "我需要字典。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the shelf.",
+      "phonetic": "/ɔn ðə ʃɛlf./",
+      "zh": "在架上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sum is wrong.",
+      "phonetic": "/ðə səm ɪz rɔŋ./",
+      "zh": "總和錯了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Add again, slow.",
+      "phonetic": "/æd əˈgɛn, sloʊ./",
+      "zh": "再算，慢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we take a break?",
+      "phonetic": "/kən wi teɪk ə breɪk?/",
+      "zh": "能休息嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Five minutes, then.",
+      "phonetic": "/faɪv ˈmɪnəts, ðɛn./",
+      "zh": "五分鐘，然後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The teacher wants neat.",
+      "phonetic": "/ðə ˈtiʧər wɔnts nit./",
+      "zh": "老師要整齊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rewrite the page.",
+      "phonetic": "/ˈriˌraɪt ðə peɪʤ./",
+      "zh": "重寫這頁。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I lost the worksheet.",
+      "phonetic": "/aɪ lɔst ðə ˈwərkˌʃit./",
+      "zh": "講義掉了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Print a new.",
+      "phonetic": "/prɪnt ə nu./",
+      "zh": "重印。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The project is big.",
+      "phonetic": "/ðə ˈprɑʤɛkt ɪz bɪg./",
+      "zh": "專題很大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Split the parts.",
+      "phonetic": "/splɪt ðə pɑrts./",
+      "zh": "分部分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Define this word.",
+      "phonetic": "/dɪˈfaɪn ðɪs wərd./",
+      "zh": "解釋這個字。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In your own words.",
+      "phonetic": "/ɪn jʊr oʊn wərdz./",
+      "zh": "用自己的話。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The diagram is missing.",
+      "phonetic": "/ðə ˈdaɪəˌgræm ɪz ˈmɪsɪŋ./",
+      "zh": "圖少了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Draw a new one.",
+      "phonetic": "/drɔ ə nu wən./",
+      "zh": "重畫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am almost done.",
+      "phonetic": "/aɪ æm ˈɔlˌmoʊst dən./",
+      "zh": "快寫好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Last problem, go.",
+      "phonetic": "/læst ˈprɑbləm, goʊ./",
+      "zh": "最後一題，衝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pen ran out.",
+      "phonetic": "/ðə pɛn ræn aʊt./",
+      "zh": "筆沒水了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Use the blue.",
+      "phonetic": "/juz ðə blu./",
+      "zh": "用藍的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Check the rubric.",
+      "phonetic": "/ʧɛk ðə ˈrubrɪk./",
+      "zh": "看評分標準。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We hit all points.",
+      "phonetic": "/wi hɪt ɔl pɔɪnts./",
+      "zh": "都符合。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The fact is wrong.",
+      "phonetic": "/ðə fækt ɪz rɔŋ./",
+      "zh": "事實錯了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Look it up.",
+      "phonetic": "/lʊk ɪt əp./",
+      "zh": "查一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you quiz me?",
+      "phonetic": "/kən ju kwɪz mi?/",
+      "zh": "能考我嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What topic?",
+      "phonetic": "/wət ˈtɑpɪk?/",
+      "zh": "哪個主題？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The date is wrong.",
+      "phonetic": "/ðə deɪt ɪz rɔŋ./",
+      "zh": "日期錯了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fix the header.",
+      "phonetic": "/fɪks ðə ˈhɛdər./",
+      "zh": "改頁首。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will type it.",
+      "phonetic": "/aɪ wɪl taɪp ɪt./",
+      "zh": "我打出來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Faster that way.",
+      "phonetic": "/ˈfæstər ðət weɪ./",
+      "zh": "比較快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The glue is sticky.",
+      "phonetic": "/ðə glu ɪz ˈstɪki./",
+      "zh": "膠很黏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wash your hands.",
+      "phonetic": "/wɑʃ jʊr hænz./",
+      "zh": "洗手。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We finished early.",
+      "phonetic": "/wi ˈfɪnɪʃt ˈərli./",
+      "zh": "我們提早寫完。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Review together.",
+      "phonetic": "/ˌrivˈju təˈgɛðər./",
+      "zh": "一起復習。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Pack the bag, please.",
+      "phonetic": "/pæk ðə bæg, pliz./",
+      "zh": "收拾書包。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For tomorrow.",
+      "phonetic": "/fər təˈmɑˌroʊ./",
+      "zh": "明天用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The homework is hard.",
+      "phonetic": "/ðə ˈhoʊmˌwərk ɪz hɑrd./",
+      "zh": "作業很難。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You got this.",
+      "phonetic": "/ju gɑt ðɪs./",
+      "zh": "你可以的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sign the sheet, mom.",
+      "phonetic": "/saɪn ðə ʃit, mɑm./",
+      "zh": "媽媽簽名。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good job, dear.",
+      "phonetic": "/gʊd ʤɑb, dɪr./",
+      "zh": "做得好，乖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "All done, finally.",
+      "phonetic": "/ɔl dən, ˈfaɪnəli./",
+      "zh": "終於寫完了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Free time now.",
+      "phonetic": "/fri taɪm naʊ./",
+      "zh": "自由時間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for helping.",
+      "phonetic": "/θæŋks fər ˈhɛlpɪŋ./",
+      "zh": "謝謝幫忙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Proud of you.",
+      "phonetic": "/praʊd əv ju./",
+      "zh": "以你爲榮。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for helping.",
+      "phonetic": "/θæŋks fər ˈhɛlpɪŋ./",
+      "zh": "謝謝幫忙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Proud of you.",
+      "phonetic": "/praʊd əv ju./",
+      "zh": "以你爲榮。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "All done, finally.",
+      "phonetic": "/ɔl dən, ˈfaɪnəli./",
+      "zh": "終於寫完了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Free time now.",
+      "phonetic": "/fri taɪm naʊ./",
+      "zh": "自由時間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sign the sheet, mom.",
+      "phonetic": "/saɪn ðə ʃit, mɑm./",
+      "zh": "媽媽簽名。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good job, dear.",
+      "phonetic": "/gʊd ʤɑb, dɪr./",
+      "zh": "做得好，乖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The homework is hard.",
+      "phonetic": "/ðə ˈhoʊmˌwərk ɪz hɑrd./",
+      "zh": "作業很難。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You got this.",
+      "phonetic": "/ju gɑt ðɪs./",
+      "zh": "你可以的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Pack the bag, please.",
+      "phonetic": "/pæk ðə bæg, pliz./",
+      "zh": "收拾書包。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For tomorrow.",
+      "phonetic": "/fər təˈmɑˌroʊ./",
+      "zh": "明天用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We finished early.",
+      "phonetic": "/wi ˈfɪnɪʃt ˈərli./",
+      "zh": "我們提早寫完。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Review together.",
+      "phonetic": "/ˌrivˈju təˈgɛðər./",
+      "zh": "一起復習。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The glue is sticky.",
+      "phonetic": "/ðə glu ɪz ˈstɪki./",
+      "zh": "膠很黏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wash your hands.",
+      "phonetic": "/wɑʃ jʊr hænz./",
+      "zh": "洗手。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will type it.",
+      "phonetic": "/aɪ wɪl taɪp ɪt./",
+      "zh": "我打出來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Faster that way.",
+      "phonetic": "/ˈfæstər ðət weɪ./",
+      "zh": "比較快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The date is wrong.",
+      "phonetic": "/ðə deɪt ɪz rɔŋ./",
+      "zh": "日期錯了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fix the header.",
+      "phonetic": "/fɪks ðə ˈhɛdər./",
+      "zh": "改頁首。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you quiz me?",
+      "phonetic": "/kən ju kwɪz mi?/",
+      "zh": "能考我嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What topic?",
+      "phonetic": "/wət ˈtɑpɪk?/",
+      "zh": "哪個主題？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The fact is wrong.",
+      "phonetic": "/ðə fækt ɪz rɔŋ./",
+      "zh": "事實錯了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Look it up.",
+      "phonetic": "/lʊk ɪt əp./",
+      "zh": "查一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Check the rubric.",
+      "phonetic": "/ʧɛk ðə ˈrubrɪk./",
+      "zh": "看評分標準。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We hit all points.",
+      "phonetic": "/wi hɪt ɔl pɔɪnts./",
+      "zh": "都符合。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pen ran out.",
+      "phonetic": "/ðə pɛn ræn aʊt./",
+      "zh": "筆沒水了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Use the blue.",
+      "phonetic": "/juz ðə blu./",
+      "zh": "用藍的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am almost done.",
+      "phonetic": "/aɪ æm ˈɔlˌmoʊst dən./",
+      "zh": "快寫好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Last problem, go.",
+      "phonetic": "/læst ˈprɑbləm, goʊ./",
+      "zh": "最後一題，衝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The diagram is missing.",
+      "phonetic": "/ðə ˈdaɪəˌgræm ɪz ˈmɪsɪŋ./",
+      "zh": "圖少了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Draw a new one.",
+      "phonetic": "/drɔ ə nu wən./",
+      "zh": "重畫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Define this word.",
+      "phonetic": "/dɪˈfaɪn ðɪs wərd./",
+      "zh": "解釋這個字。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In your own words.",
+      "phonetic": "/ɪn jʊr oʊn wərdz./",
+      "zh": "用自己的話。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The project is big.",
+      "phonetic": "/ðə ˈprɑʤɛkt ɪz bɪg./",
+      "zh": "專題很大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Split the parts.",
+      "phonetic": "/splɪt ðə pɑrts./",
+      "zh": "分部分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I lost the worksheet.",
+      "phonetic": "/aɪ lɔst ðə ˈwərkˌʃit./",
+      "zh": "講義掉了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Print a new.",
+      "phonetic": "/prɪnt ə nu./",
+      "zh": "重印。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The teacher wants neat.",
+      "phonetic": "/ðə ˈtiʧər wɔnts nit./",
+      "zh": "老師要整齊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rewrite the page.",
+      "phonetic": "/ˈriˌraɪt ðə peɪʤ./",
+      "zh": "重寫這頁。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we take a break?",
+      "phonetic": "/kən wi teɪk ə breɪk?/",
+      "zh": "能休息嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Five minutes, then.",
+      "phonetic": "/faɪv ˈmɪnəts, ðɛn./",
+      "zh": "五分鐘，然後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sum is wrong.",
+      "phonetic": "/ðə səm ɪz rɔŋ./",
+      "zh": "總和錯了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Add again, slow.",
+      "phonetic": "/æd əˈgɛn, sloʊ./",
+      "zh": "再算，慢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I need the dictionary.",
+      "phonetic": "/aɪ nid ðə ˈdɪkʃəˌnɛri./",
+      "zh": "我需要字典。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the shelf.",
+      "phonetic": "/ɔn ðə ʃɛlf./",
+      "zh": "在架上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wifi is slow.",
+      "phonetic": "/ðə ˈwiˌfi ɪz sloʊ./",
+      "zh": "無線很慢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Use the book.",
+      "phonetic": "/juz ðə bʊk./",
+      "zh": "看書。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Timer for focus?",
+      "phonetic": "/ˈtaɪmər fər ˈfoʊkɪs?/",
+      "zh": "計時專注？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Twenty-five minutes.",
+      "phonetic": "/tˈwɛntiˌfaɪv ˈmɪnəts./",
+      "zh": "二十五分鐘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The book is due.",
+      "phonetic": "/ðə bʊk ɪz du./",
+      "zh": "書要還了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Return it tomorrow.",
+      "phonetic": "/rɪˈtərn ɪt təˈmɑˌroʊ./",
+      "zh": "明天還。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Spell 'because' right.",
+      "phonetic": "/spɛl 'bɪˈkəz' raɪt./",
+      "zh": "because 拼對。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "C before e, yes.",
+      "phonetic": "/si ˌbiˈfɔr i, jɛs./",
+      "zh": "c 在 e 前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I finished the essay.",
+      "phonetic": "/aɪ ˈfɪnɪʃt ðə ˈɛˌseɪ./",
+      "zh": "我寫完作文了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Read it aloud.",
+      "phonetic": "/rɛd ɪt əˈlaʊd./",
+      "zh": "念出來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The question is tricky.",
+      "phonetic": "/ðə kˈwɛʃən ɪz ˈtrɪki./",
+      "zh": "這題刁鑽。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Break it down.",
+      "phonetic": "/breɪk ɪt daʊn./",
+      "zh": "拆開看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you check mine?",
+      "phonetic": "/kən ju ʧɛk maɪn?/",
+      "zh": "能看我的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Looks correct.",
+      "phonetic": "/lʊks kərˈɛkt./",
+      "zh": "看起來對。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pencil is dull.",
+      "phonetic": "/ðə ˈpɛnsəl ɪz dəl./",
+      "zh": "鉛筆鈍了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sharpen it.",
+      "phonetic": "/ˈʃɑrpən ɪt./",
+      "zh": "削一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the answer?",
+      "phonetic": "/wət ɪz ðə ˈænsər?/",
+      "zh": "答案是什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Show your work.",
+      "phonetic": "/ʃoʊ jʊr wərk./",
+      "zh": "寫過程。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I do not get this.",
+      "phonetic": "/aɪ du nɑt gɪt ðɪs./",
+      "zh": "這題不懂。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Read it again.",
+      "phonetic": "/rɛd ɪt əˈgɛn./",
+      "zh": "再讀一次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Math first, okay?",
+      "phonetic": "/mæθ fərst, ˌoʊˈkeɪ?/",
+      "zh": "先寫數學，好？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is the hardest.",
+      "phonetic": "/ɪt ɪz ðə ˈhɑrdəst./",
+      "zh": "最難。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's do homework.",
+      "phonetic": "/lɛts du ˈhoʊmˌwərk./",
+      "zh": "寫作業吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Where do I start?",
+      "phonetic": "/wɛr du aɪ stɑrt?/",
+      "zh": "從哪開始？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's do homework.",
+      "phonetic": "/lɛts du ˈhoʊmˌwərk./",
+      "zh": "寫作業吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Where do I start?",
+      "phonetic": "/wɛr du aɪ stɑrt?/",
+      "zh": "從哪開始？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Math first, okay?",
+      "phonetic": "/mæθ fərst, ˌoʊˈkeɪ?/",
+      "zh": "先寫數學，好？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is the hardest.",
+      "phonetic": "/ɪt ɪz ðə ˈhɑrdəst./",
+      "zh": "最難。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I do not get this.",
+      "phonetic": "/aɪ du nɑt gɪt ðɪs./",
+      "zh": "這題不懂。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Read it again.",
+      "phonetic": "/rɛd ɪt əˈgɛn./",
+      "zh": "再讀一次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the answer?",
+      "phonetic": "/wət ɪz ðə ˈænsər?/",
+      "zh": "答案是什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Show your work.",
+      "phonetic": "/ʃoʊ jʊr wərk./",
+      "zh": "寫過程。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pencil is dull.",
+      "phonetic": "/ðə ˈpɛnsəl ɪz dəl./",
+      "zh": "鉛筆鈍了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sharpen it.",
+      "phonetic": "/ˈʃɑrpən ɪt./",
+      "zh": "削一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you check mine?",
+      "phonetic": "/kən ju ʧɛk maɪn?/",
+      "zh": "能看我的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Looks correct.",
+      "phonetic": "/lʊks kərˈɛkt./",
+      "zh": "看起來對。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The question is tricky.",
+      "phonetic": "/ðə kˈwɛʃən ɪz ˈtrɪki./",
+      "zh": "這題刁鑽。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Break it down.",
+      "phonetic": "/breɪk ɪt daʊn./",
+      "zh": "拆開看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I finished the essay.",
+      "phonetic": "/aɪ ˈfɪnɪʃt ðə ˈɛˌseɪ./",
+      "zh": "我寫完作文了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Read it aloud.",
+      "phonetic": "/rɛd ɪt əˈlaʊd./",
+      "zh": "念出來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Spell 'because' right.",
+      "phonetic": "/spɛl 'bɪˈkəz' raɪt./",
+      "zh": "because 拼對。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "C before e, yes.",
+      "phonetic": "/si ˌbiˈfɔr i, jɛs./",
+      "zh": "c 在 e 前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The book is due.",
+      "phonetic": "/ðə bʊk ɪz du./",
+      "zh": "書要還了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Return it tomorrow.",
+      "phonetic": "/rɪˈtərn ɪt təˈmɑˌroʊ./",
+      "zh": "明天還。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Timer for focus?",
+      "phonetic": "/ˈtaɪmər fər ˈfoʊkɪs?/",
+      "zh": "計時專注？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Twenty-five minutes.",
+      "phonetic": "/tˈwɛntiˌfaɪv ˈmɪnəts./",
+      "zh": "二十五分鐘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wifi is slow.",
+      "phonetic": "/ðə ˈwiˌfi ɪz sloʊ./",
+      "zh": "無線很慢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Use the book.",
+      "phonetic": "/juz ðə bʊk./",
+      "zh": "看書。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I need the dictionary.",
+      "phonetic": "/aɪ nid ðə ˈdɪkʃəˌnɛri./",
+      "zh": "我需要字典。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the shelf.",
+      "phonetic": "/ɔn ðə ʃɛlf./",
+      "zh": "在架上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sum is wrong.",
+      "phonetic": "/ðə səm ɪz rɔŋ./",
+      "zh": "總和錯了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Add again, slow.",
+      "phonetic": "/æd əˈgɛn, sloʊ./",
+      "zh": "再算，慢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we take a break?",
+      "phonetic": "/kən wi teɪk ə breɪk?/",
+      "zh": "能休息嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Five minutes, then.",
+      "phonetic": "/faɪv ˈmɪnəts, ðɛn./",
+      "zh": "五分鐘，然後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The teacher wants neat.",
+      "phonetic": "/ðə ˈtiʧər wɔnts nit./",
+      "zh": "老師要整齊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rewrite the page.",
+      "phonetic": "/ˈriˌraɪt ðə peɪʤ./",
+      "zh": "重寫這頁。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I lost the worksheet.",
+      "phonetic": "/aɪ lɔst ðə ˈwərkˌʃit./",
+      "zh": "講義掉了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Print a new.",
+      "phonetic": "/prɪnt ə nu./",
+      "zh": "重印。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The project is big.",
+      "phonetic": "/ðə ˈprɑʤɛkt ɪz bɪg./",
+      "zh": "專題很大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Split the parts.",
+      "phonetic": "/splɪt ðə pɑrts./",
+      "zh": "分部分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Define this word.",
+      "phonetic": "/dɪˈfaɪn ðɪs wərd./",
+      "zh": "解釋這個字。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In your own words.",
+      "phonetic": "/ɪn jʊr oʊn wərdz./",
+      "zh": "用自己的話。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The diagram is missing.",
+      "phonetic": "/ðə ˈdaɪəˌgræm ɪz ˈmɪsɪŋ./",
+      "zh": "圖少了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Draw a new one.",
+      "phonetic": "/drɔ ə nu wən./",
+      "zh": "重畫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am almost done.",
+      "phonetic": "/aɪ æm ˈɔlˌmoʊst dən./",
+      "zh": "快寫好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Last problem, go.",
+      "phonetic": "/læst ˈprɑbləm, goʊ./",
+      "zh": "最後一題，衝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pen ran out.",
+      "phonetic": "/ðə pɛn ræn aʊt./",
+      "zh": "筆沒水了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Use the blue.",
+      "phonetic": "/juz ðə blu./",
+      "zh": "用藍的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Check the rubric.",
+      "phonetic": "/ʧɛk ðə ˈrubrɪk./",
+      "zh": "看評分標準。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We hit all points.",
+      "phonetic": "/wi hɪt ɔl pɔɪnts./",
+      "zh": "都符合。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The fact is wrong.",
+      "phonetic": "/ðə fækt ɪz rɔŋ./",
+      "zh": "事實錯了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Look it up.",
+      "phonetic": "/lʊk ɪt əp./",
+      "zh": "查一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you quiz me?",
+      "phonetic": "/kən ju kwɪz mi?/",
+      "zh": "能考我嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What topic?",
+      "phonetic": "/wət ˈtɑpɪk?/",
+      "zh": "哪個主題？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The date is wrong.",
+      "phonetic": "/ðə deɪt ɪz rɔŋ./",
+      "zh": "日期錯了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fix the header.",
+      "phonetic": "/fɪks ðə ˈhɛdər./",
+      "zh": "改頁首。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will type it.",
+      "phonetic": "/aɪ wɪl taɪp ɪt./",
+      "zh": "我打出來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Faster that way.",
+      "phonetic": "/ˈfæstər ðət weɪ./",
+      "zh": "比較快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The glue is sticky.",
+      "phonetic": "/ðə glu ɪz ˈstɪki./",
+      "zh": "膠很黏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wash your hands.",
+      "phonetic": "/wɑʃ jʊr hænz./",
+      "zh": "洗手。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We finished early.",
+      "phonetic": "/wi ˈfɪnɪʃt ˈərli./",
+      "zh": "我們提早寫完。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Review together.",
+      "phonetic": "/ˌrivˈju təˈgɛðər./",
+      "zh": "一起復習。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Pack the bag, please.",
+      "phonetic": "/pæk ðə bæg, pliz./",
+      "zh": "收拾書包。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For tomorrow.",
+      "phonetic": "/fər təˈmɑˌroʊ./",
+      "zh": "明天用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The homework is hard.",
+      "phonetic": "/ðə ˈhoʊmˌwərk ɪz hɑrd./",
+      "zh": "作業很難。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You got this.",
+      "phonetic": "/ju gɑt ðɪs./",
+      "zh": "你可以的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sign the sheet, mom.",
+      "phonetic": "/saɪn ðə ʃit, mɑm./",
+      "zh": "媽媽簽名。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good job, dear.",
+      "phonetic": "/gʊd ʤɑb, dɪr./",
+      "zh": "做得好，乖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "All done, finally.",
+      "phonetic": "/ɔl dən, ˈfaɪnəli./",
+      "zh": "終於寫完了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Free time now.",
+      "phonetic": "/fri taɪm naʊ./",
+      "zh": "自由時間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for helping.",
+      "phonetic": "/θæŋks fər ˈhɛlpɪŋ./",
+      "zh": "謝謝幫忙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Proud of you.",
+      "phonetic": "/praʊd əv ju./",
+      "zh": "以你爲榮。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for helping.",
+      "phonetic": "/θæŋks fər ˈhɛlpɪŋ./",
+      "zh": "謝謝幫忙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Proud of you.",
+      "phonetic": "/praʊd əv ju./",
+      "zh": "以你爲榮。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "All done, finally.",
+      "phonetic": "/ɔl dən, ˈfaɪnəli./",
+      "zh": "終於寫完了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Free time now.",
+      "phonetic": "/fri taɪm naʊ./",
+      "zh": "自由時間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sign the sheet, mom.",
+      "phonetic": "/saɪn ðə ʃit, mɑm./",
+      "zh": "媽媽簽名。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good job, dear.",
+      "phonetic": "/gʊd ʤɑb, dɪr./",
+      "zh": "做得好，乖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The homework is hard.",
+      "phonetic": "/ðə ˈhoʊmˌwərk ɪz hɑrd./",
+      "zh": "作業很難。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You got this.",
+      "phonetic": "/ju gɑt ðɪs./",
+      "zh": "你可以的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Pack the bag, please.",
+      "phonetic": "/pæk ðə bæg, pliz./",
+      "zh": "收拾書包。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For tomorrow.",
+      "phonetic": "/fər təˈmɑˌroʊ./",
+      "zh": "明天用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We finished early.",
+      "phonetic": "/wi ˈfɪnɪʃt ˈərli./",
+      "zh": "我們提早寫完。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Review together.",
+      "phonetic": "/ˌrivˈju təˈgɛðər./",
+      "zh": "一起復習。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The glue is sticky.",
+      "phonetic": "/ðə glu ɪz ˈstɪki./",
+      "zh": "膠很黏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wash your hands.",
+      "phonetic": "/wɑʃ jʊr hænz./",
+      "zh": "洗手。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will type it.",
+      "phonetic": "/aɪ wɪl taɪp ɪt./",
+      "zh": "我打出來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Faster that way.",
+      "phonetic": "/ˈfæstər ðət weɪ./",
+      "zh": "比較快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The date is wrong.",
+      "phonetic": "/ðə deɪt ɪz rɔŋ./",
+      "zh": "日期錯了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fix the header.",
+      "phonetic": "/fɪks ðə ˈhɛdər./",
+      "zh": "改頁首。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you quiz me?",
+      "phonetic": "/kən ju kwɪz mi?/",
+      "zh": "能考我嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What topic?",
+      "phonetic": "/wət ˈtɑpɪk?/",
+      "zh": "哪個主題？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The fact is wrong.",
+      "phonetic": "/ðə fækt ɪz rɔŋ./",
+      "zh": "事實錯了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Look it up.",
+      "phonetic": "/lʊk ɪt əp./",
+      "zh": "查一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Check the rubric.",
+      "phonetic": "/ʧɛk ðə ˈrubrɪk./",
+      "zh": "看評分標準。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We hit all points.",
+      "phonetic": "/wi hɪt ɔl pɔɪnts./",
+      "zh": "都符合。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pen ran out.",
+      "phonetic": "/ðə pɛn ræn aʊt./",
+      "zh": "筆沒水了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Use the blue.",
+      "phonetic": "/juz ðə blu./",
+      "zh": "用藍的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am almost done.",
+      "phonetic": "/aɪ æm ˈɔlˌmoʊst dən./",
+      "zh": "快寫好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Last problem, go.",
+      "phonetic": "/læst ˈprɑbləm, goʊ./",
+      "zh": "最後一題，衝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The diagram is missing.",
+      "phonetic": "/ðə ˈdaɪəˌgræm ɪz ˈmɪsɪŋ./",
+      "zh": "圖少了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Draw a new one.",
+      "phonetic": "/drɔ ə nu wən./",
+      "zh": "重畫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Define this word.",
+      "phonetic": "/dɪˈfaɪn ðɪs wərd./",
+      "zh": "解釋這個字。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In your own words.",
+      "phonetic": "/ɪn jʊr oʊn wərdz./",
+      "zh": "用自己的話。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The project is big.",
+      "phonetic": "/ðə ˈprɑʤɛkt ɪz bɪg./",
+      "zh": "專題很大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Split the parts.",
+      "phonetic": "/splɪt ðə pɑrts./",
+      "zh": "分部分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I lost the worksheet.",
+      "phonetic": "/aɪ lɔst ðə ˈwərkˌʃit./",
+      "zh": "講義掉了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Print a new.",
+      "phonetic": "/prɪnt ə nu./",
+      "zh": "重印。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The teacher wants neat.",
+      "phonetic": "/ðə ˈtiʧər wɔnts nit./",
+      "zh": "老師要整齊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rewrite the page.",
+      "phonetic": "/ˈriˌraɪt ðə peɪʤ./",
+      "zh": "重寫這頁。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we take a break?",
+      "phonetic": "/kən wi teɪk ə breɪk?/",
+      "zh": "能休息嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Five minutes, then.",
+      "phonetic": "/faɪv ˈmɪnəts, ðɛn./",
+      "zh": "五分鐘，然後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sum is wrong.",
+      "phonetic": "/ðə səm ɪz rɔŋ./",
+      "zh": "總和錯了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Add again, slow.",
+      "phonetic": "/æd əˈgɛn, sloʊ./",
+      "zh": "再算，慢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I need the dictionary.",
+      "phonetic": "/aɪ nid ðə ˈdɪkʃəˌnɛri./",
+      "zh": "我需要字典。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the shelf.",
+      "phonetic": "/ɔn ðə ʃɛlf./",
+      "zh": "在架上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wifi is slow.",
+      "phonetic": "/ðə ˈwiˌfi ɪz sloʊ./",
+      "zh": "無線很慢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Use the book.",
+      "phonetic": "/juz ðə bʊk./",
+      "zh": "看書。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Timer for focus?",
+      "phonetic": "/ˈtaɪmər fər ˈfoʊkɪs?/",
+      "zh": "計時專注？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Twenty-five minutes.",
+      "phonetic": "/tˈwɛntiˌfaɪv ˈmɪnəts./",
+      "zh": "二十五分鐘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The book is due.",
+      "phonetic": "/ðə bʊk ɪz du./",
+      "zh": "書要還了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Return it tomorrow.",
+      "phonetic": "/rɪˈtərn ɪt təˈmɑˌroʊ./",
+      "zh": "明天還。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Spell 'because' right.",
+      "phonetic": "/spɛl 'bɪˈkəz' raɪt./",
+      "zh": "because 拼對。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "C before e, yes.",
+      "phonetic": "/si ˌbiˈfɔr i, jɛs./",
+      "zh": "c 在 e 前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I finished the essay.",
+      "phonetic": "/aɪ ˈfɪnɪʃt ðə ˈɛˌseɪ./",
+      "zh": "我寫完作文了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Read it aloud.",
+      "phonetic": "/rɛd ɪt əˈlaʊd./",
+      "zh": "念出來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The question is tricky.",
+      "phonetic": "/ðə kˈwɛʃən ɪz ˈtrɪki./",
+      "zh": "這題刁鑽。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Break it down.",
+      "phonetic": "/breɪk ɪt daʊn./",
+      "zh": "拆開看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you check mine?",
+      "phonetic": "/kən ju ʧɛk maɪn?/",
+      "zh": "能看我的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Looks correct.",
+      "phonetic": "/lʊks kərˈɛkt./",
+      "zh": "看起來對。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pencil is dull.",
+      "phonetic": "/ðə ˈpɛnsəl ɪz dəl./",
+      "zh": "鉛筆鈍了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sharpen it.",
+      "phonetic": "/ˈʃɑrpən ɪt./",
+      "zh": "削一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the answer?",
+      "phonetic": "/wət ɪz ðə ˈænsər?/",
+      "zh": "答案是什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Show your work.",
+      "phonetic": "/ʃoʊ jʊr wərk./",
+      "zh": "寫過程。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I do not get this.",
+      "phonetic": "/aɪ du nɑt gɪt ðɪs./",
+      "zh": "這題不懂。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Read it again.",
+      "phonetic": "/rɛd ɪt əˈgɛn./",
+      "zh": "再讀一次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Math first, okay?",
+      "phonetic": "/mæθ fərst, ˌoʊˈkeɪ?/",
+      "zh": "先寫數學，好？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is the hardest.",
+      "phonetic": "/ɪt ɪz ðə ˈhɑrdəst./",
+      "zh": "最難。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's do homework.",
+      "phonetic": "/lɛts du ˈhoʊmˌwərk./",
+      "zh": "寫作業吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Where do I start?",
+      "phonetic": "/wɛr du aɪ stɑrt?/",
+      "zh": "從哪開始？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's do homework.",
+      "phonetic": "/lɛts du ˈhoʊmˌwərk./",
+      "zh": "寫作業吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Where do I start?",
+      "phonetic": "/wɛr du aɪ stɑrt?/",
+      "zh": "從哪開始？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Math first, okay?",
+      "phonetic": "/mæθ fərst, ˌoʊˈkeɪ?/",
+      "zh": "先寫數學，好？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is the hardest.",
+      "phonetic": "/ɪt ɪz ðə ˈhɑrdəst./",
+      "zh": "最難。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I do not get this.",
+      "phonetic": "/aɪ du nɑt gɪt ðɪs./",
+      "zh": "這題不懂。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Read it again.",
+      "phonetic": "/rɛd ɪt əˈgɛn./",
+      "zh": "再讀一次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the answer?",
+      "phonetic": "/wət ɪz ðə ˈænsər?/",
+      "zh": "答案是什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Show your work.",
+      "phonetic": "/ʃoʊ jʊr wərk./",
+      "zh": "寫過程。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pencil is dull.",
+      "phonetic": "/ðə ˈpɛnsəl ɪz dəl./",
+      "zh": "鉛筆鈍了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sharpen it.",
+      "phonetic": "/ˈʃɑrpən ɪt./",
+      "zh": "削一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you check mine?",
+      "phonetic": "/kən ju ʧɛk maɪn?/",
+      "zh": "能看我的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Looks correct.",
+      "phonetic": "/lʊks kərˈɛkt./",
+      "zh": "看起來對。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The question is tricky.",
+      "phonetic": "/ðə kˈwɛʃən ɪz ˈtrɪki./",
+      "zh": "這題刁鑽。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Break it down.",
+      "phonetic": "/breɪk ɪt daʊn./",
+      "zh": "拆開看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I finished the essay.",
+      "phonetic": "/aɪ ˈfɪnɪʃt ðə ˈɛˌseɪ./",
+      "zh": "我寫完作文了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Read it aloud.",
+      "phonetic": "/rɛd ɪt əˈlaʊd./",
+      "zh": "念出來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Spell 'because' right.",
+      "phonetic": "/spɛl 'bɪˈkəz' raɪt./",
+      "zh": "because 拼對。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "C before e, yes.",
+      "phonetic": "/si ˌbiˈfɔr i, jɛs./",
+      "zh": "c 在 e 前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The book is due.",
+      "phonetic": "/ðə bʊk ɪz du./",
+      "zh": "書要還了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Return it tomorrow.",
+      "phonetic": "/rɪˈtərn ɪt təˈmɑˌroʊ./",
+      "zh": "明天還。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Timer for focus?",
+      "phonetic": "/ˈtaɪmər fər ˈfoʊkɪs?/",
+      "zh": "計時專注？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Twenty-five minutes.",
+      "phonetic": "/tˈwɛntiˌfaɪv ˈmɪnəts./",
+      "zh": "二十五分鐘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wifi is slow.",
+      "phonetic": "/ðə ˈwiˌfi ɪz sloʊ./",
+      "zh": "無線很慢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Use the book.",
+      "phonetic": "/juz ðə bʊk./",
+      "zh": "看書。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I need the dictionary.",
+      "phonetic": "/aɪ nid ðə ˈdɪkʃəˌnɛri./",
+      "zh": "我需要字典。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the shelf.",
+      "phonetic": "/ɔn ðə ʃɛlf./",
+      "zh": "在架上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sum is wrong.",
+      "phonetic": "/ðə səm ɪz rɔŋ./",
+      "zh": "總和錯了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Add again, slow.",
+      "phonetic": "/æd əˈgɛn, sloʊ./",
+      "zh": "再算，慢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we take a break?",
+      "phonetic": "/kən wi teɪk ə breɪk?/",
+      "zh": "能休息嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Five minutes, then.",
+      "phonetic": "/faɪv ˈmɪnəts, ðɛn./",
+      "zh": "五分鐘，然後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The teacher wants neat.",
+      "phonetic": "/ðə ˈtiʧər wɔnts nit./",
+      "zh": "老師要整齊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rewrite the page.",
+      "phonetic": "/ˈriˌraɪt ðə peɪʤ./",
+      "zh": "重寫這頁。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I lost the worksheet.",
+      "phonetic": "/aɪ lɔst ðə ˈwərkˌʃit./",
+      "zh": "講義掉了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Print a new.",
+      "phonetic": "/prɪnt ə nu./",
+      "zh": "重印。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The project is big.",
+      "phonetic": "/ðə ˈprɑʤɛkt ɪz bɪg./",
+      "zh": "專題很大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Split the parts.",
+      "phonetic": "/splɪt ðə pɑrts./",
+      "zh": "分部分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Define this word.",
+      "phonetic": "/dɪˈfaɪn ðɪs wərd./",
+      "zh": "解釋這個字。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In your own words.",
+      "phonetic": "/ɪn jʊr oʊn wərdz./",
+      "zh": "用自己的話。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The diagram is missing.",
+      "phonetic": "/ðə ˈdaɪəˌgræm ɪz ˈmɪsɪŋ./",
+      "zh": "圖少了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Draw a new one.",
+      "phonetic": "/drɔ ə nu wən./",
+      "zh": "重畫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am almost done.",
+      "phonetic": "/aɪ æm ˈɔlˌmoʊst dən./",
+      "zh": "快寫好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Last problem, go.",
+      "phonetic": "/læst ˈprɑbləm, goʊ./",
+      "zh": "最後一題，衝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pen ran out.",
+      "phonetic": "/ðə pɛn ræn aʊt./",
+      "zh": "筆沒水了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Use the blue.",
+      "phonetic": "/juz ðə blu./",
+      "zh": "用藍的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Check the rubric.",
+      "phonetic": "/ʧɛk ðə ˈrubrɪk./",
+      "zh": "看評分標準。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We hit all points.",
+      "phonetic": "/wi hɪt ɔl pɔɪnts./",
+      "zh": "都符合。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The fact is wrong.",
+      "phonetic": "/ðə fækt ɪz rɔŋ./",
+      "zh": "事實錯了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Look it up.",
+      "phonetic": "/lʊk ɪt əp./",
+      "zh": "查一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you quiz me?",
+      "phonetic": "/kən ju kwɪz mi?/",
+      "zh": "能考我嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What topic?",
+      "phonetic": "/wət ˈtɑpɪk?/",
+      "zh": "哪個主題？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The date is wrong.",
+      "phonetic": "/ðə deɪt ɪz rɔŋ./",
+      "zh": "日期錯了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fix the header.",
+      "phonetic": "/fɪks ðə ˈhɛdər./",
+      "zh": "改頁首。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will type it.",
+      "phonetic": "/aɪ wɪl taɪp ɪt./",
+      "zh": "我打出來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Faster that way.",
+      "phonetic": "/ˈfæstər ðət weɪ./",
+      "zh": "比較快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The glue is sticky.",
+      "phonetic": "/ðə glu ɪz ˈstɪki./",
+      "zh": "膠很黏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wash your hands.",
+      "phonetic": "/wɑʃ jʊr hænz./",
+      "zh": "洗手。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We finished early.",
+      "phonetic": "/wi ˈfɪnɪʃt ˈərli./",
+      "zh": "我們提早寫完。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Review together.",
+      "phonetic": "/ˌrivˈju təˈgɛðər./",
+      "zh": "一起復習。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Pack the bag, please.",
+      "phonetic": "/pæk ðə bæg, pliz./",
+      "zh": "收拾書包。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For tomorrow.",
+      "phonetic": "/fər təˈmɑˌroʊ./",
+      "zh": "明天用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The homework is hard.",
+      "phonetic": "/ðə ˈhoʊmˌwərk ɪz hɑrd./",
+      "zh": "作業很難。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You got this.",
+      "phonetic": "/ju gɑt ðɪs./",
+      "zh": "你可以的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sign the sheet, mom.",
+      "phonetic": "/saɪn ðə ʃit, mɑm./",
+      "zh": "媽媽簽名。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good job, dear.",
+      "phonetic": "/gʊd ʤɑb, dɪr./",
+      "zh": "做得好，乖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "All done, finally.",
+      "phonetic": "/ɔl dən, ˈfaɪnəli./",
+      "zh": "終於寫完了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Free time now.",
+      "phonetic": "/fri taɪm naʊ./",
+      "zh": "自由時間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for helping.",
+      "phonetic": "/θæŋks fər ˈhɛlpɪŋ./",
+      "zh": "謝謝幫忙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Proud of you.",
+      "phonetic": "/praʊd əv ju./",
+      "zh": "以你爲榮。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for helping.",
+      "phonetic": "/θæŋks fər ˈhɛlpɪŋ./",
+      "zh": "謝謝幫忙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Proud of you.",
+      "phonetic": "/praʊd əv ju./",
+      "zh": "以你爲榮。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "All done, finally.",
+      "phonetic": "/ɔl dən, ˈfaɪnəli./",
+      "zh": "終於寫完了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Free time now.",
+      "phonetic": "/fri taɪm naʊ./",
+      "zh": "自由時間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sign the sheet, mom.",
+      "phonetic": "/saɪn ðə ʃit, mɑm./",
+      "zh": "媽媽簽名。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good job, dear.",
+      "phonetic": "/gʊd ʤɑb, dɪr./",
+      "zh": "做得好，乖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The homework is hard.",
+      "phonetic": "/ðə ˈhoʊmˌwərk ɪz hɑrd./",
+      "zh": "作業很難。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You got this.",
+      "phonetic": "/ju gɑt ðɪs./",
+      "zh": "你可以的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Pack the bag, please.",
+      "phonetic": "/pæk ðə bæg, pliz./",
+      "zh": "收拾書包。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For tomorrow.",
+      "phonetic": "/fər təˈmɑˌroʊ./",
+      "zh": "明天用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We finished early.",
+      "phonetic": "/wi ˈfɪnɪʃt ˈərli./",
+      "zh": "我們提早寫完。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Review together.",
+      "phonetic": "/ˌrivˈju təˈgɛðər./",
+      "zh": "一起復習。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The glue is sticky.",
+      "phonetic": "/ðə glu ɪz ˈstɪki./",
+      "zh": "膠很黏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wash your hands.",
+      "phonetic": "/wɑʃ jʊr hænz./",
+      "zh": "洗手。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will type it.",
+      "phonetic": "/aɪ wɪl taɪp ɪt./",
+      "zh": "我打出來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Faster that way.",
+      "phonetic": "/ˈfæstər ðət weɪ./",
+      "zh": "比較快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The date is wrong.",
+      "phonetic": "/ðə deɪt ɪz rɔŋ./",
+      "zh": "日期錯了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fix the header.",
+      "phonetic": "/fɪks ðə ˈhɛdər./",
+      "zh": "改頁首。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you quiz me?",
+      "phonetic": "/kən ju kwɪz mi?/",
+      "zh": "能考我嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What topic?",
+      "phonetic": "/wət ˈtɑpɪk?/",
+      "zh": "哪個主題？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The fact is wrong.",
+      "phonetic": "/ðə fækt ɪz rɔŋ./",
+      "zh": "事實錯了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Look it up.",
+      "phonetic": "/lʊk ɪt əp./",
+      "zh": "查一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Check the rubric.",
+      "phonetic": "/ʧɛk ðə ˈrubrɪk./",
+      "zh": "看評分標準。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We hit all points.",
+      "phonetic": "/wi hɪt ɔl pɔɪnts./",
+      "zh": "都符合。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pen ran out.",
+      "phonetic": "/ðə pɛn ræn aʊt./",
+      "zh": "筆沒水了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Use the blue.",
+      "phonetic": "/juz ðə blu./",
+      "zh": "用藍的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am almost done.",
+      "phonetic": "/aɪ æm ˈɔlˌmoʊst dən./",
+      "zh": "快寫好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Last problem, go.",
+      "phonetic": "/læst ˈprɑbləm, goʊ./",
+      "zh": "最後一題，衝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The diagram is missing.",
+      "phonetic": "/ðə ˈdaɪəˌgræm ɪz ˈmɪsɪŋ./",
+      "zh": "圖少了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Draw a new one.",
+      "phonetic": "/drɔ ə nu wən./",
+      "zh": "重畫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Define this word.",
+      "phonetic": "/dɪˈfaɪn ðɪs wərd./",
+      "zh": "解釋這個字。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In your own words.",
+      "phonetic": "/ɪn jʊr oʊn wərdz./",
+      "zh": "用自己的話。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The project is big.",
+      "phonetic": "/ðə ˈprɑʤɛkt ɪz bɪg./",
+      "zh": "專題很大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Split the parts.",
+      "phonetic": "/splɪt ðə pɑrts./",
+      "zh": "分部分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I lost the worksheet.",
+      "phonetic": "/aɪ lɔst ðə ˈwərkˌʃit./",
+      "zh": "講義掉了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Print a new.",
+      "phonetic": "/prɪnt ə nu./",
+      "zh": "重印。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The teacher wants neat.",
+      "phonetic": "/ðə ˈtiʧər wɔnts nit./",
+      "zh": "老師要整齊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rewrite the page.",
+      "phonetic": "/ˈriˌraɪt ðə peɪʤ./",
+      "zh": "重寫這頁。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we take a break?",
+      "phonetic": "/kən wi teɪk ə breɪk?/",
+      "zh": "能休息嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Five minutes, then.",
+      "phonetic": "/faɪv ˈmɪnəts, ðɛn./",
+      "zh": "五分鐘，然後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sum is wrong.",
+      "phonetic": "/ðə səm ɪz rɔŋ./",
+      "zh": "總和錯了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Add again, slow.",
+      "phonetic": "/æd əˈgɛn, sloʊ./",
+      "zh": "再算，慢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I need the dictionary.",
+      "phonetic": "/aɪ nid ðə ˈdɪkʃəˌnɛri./",
+      "zh": "我需要字典。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the shelf.",
+      "phonetic": "/ɔn ðə ʃɛlf./",
+      "zh": "在架上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The wifi is slow.",
+      "phonetic": "/ðə ˈwiˌfi ɪz sloʊ./",
+      "zh": "無線很慢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Use the book.",
+      "phonetic": "/juz ðə bʊk./",
+      "zh": "看書。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Timer for focus?",
+      "phonetic": "/ˈtaɪmər fər ˈfoʊkɪs?/",
+      "zh": "計時專注？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Twenty-five minutes.",
+      "phonetic": "/tˈwɛntiˌfaɪv ˈmɪnəts./",
+      "zh": "二十五分鐘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The book is due.",
+      "phonetic": "/ðə bʊk ɪz du./",
+      "zh": "書要還了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Return it tomorrow.",
+      "phonetic": "/rɪˈtərn ɪt təˈmɑˌroʊ./",
+      "zh": "明天還。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Spell 'because' right.",
+      "phonetic": "/spɛl 'bɪˈkəz' raɪt./",
+      "zh": "because 拼對。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "C before e, yes.",
+      "phonetic": "/si ˌbiˈfɔr i, jɛs./",
+      "zh": "c 在 e 前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I finished the essay.",
+      "phonetic": "/aɪ ˈfɪnɪʃt ðə ˈɛˌseɪ./",
+      "zh": "我寫完作文了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Read it aloud.",
+      "phonetic": "/rɛd ɪt əˈlaʊd./",
+      "zh": "念出來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The question is tricky.",
+      "phonetic": "/ðə kˈwɛʃən ɪz ˈtrɪki./",
+      "zh": "這題刁鑽。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Break it down.",
+      "phonetic": "/breɪk ɪt daʊn./",
+      "zh": "拆開看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you check mine?",
+      "phonetic": "/kən ju ʧɛk maɪn?/",
+      "zh": "能看我的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Looks correct.",
+      "phonetic": "/lʊks kərˈɛkt./",
+      "zh": "看起來對。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pencil is dull.",
+      "phonetic": "/ðə ˈpɛnsəl ɪz dəl./",
+      "zh": "鉛筆鈍了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sharpen it.",
+      "phonetic": "/ˈʃɑrpən ɪt./",
+      "zh": "削一下。"
+    }
+  ]
+}

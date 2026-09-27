@@ -1,0 +1,2458 @@
+{
+  "title": "Everyday Phrases — Making Breakfast",
+  "title_zh": "做早餐",
+  "scene_zh": "做早餐 · 情境對話",
+  "title_quote": "What do you want for breakfast?",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】🍳 實用做早餐必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — Making Breakfast",
+  "youtube_description": "睡著學英文！這部影片收錄實用做早餐情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫），不用背，睡前聽就會。重複播放，讓英文自然進入你的大腦。👍 想學更多生活場景，請留言告訴我！別忘了訂閱+按讚。 #英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical Making Breakfast phrase pairs (each pair: male normal speed → female slow speed → combined dialogue). No memorization needed—just listen before bed and absorb naturally. If you want more real-life scenarios, leave a comment! Subscribe and like!",
+  "youtube_tags": [
+    "英文聽力",
+    "睡前英文",
+    "做早餐英文",
+    "English listening",
+    "Sleep learning",
+    "A2 English",
+    "常用英文短語",
+    "零基礎英文",
+    "慢速英文",
+    "英文口語",
+    "Learn English",
+    "English for daily life",
+    "ESL",
+    "English conversation",
+    "聽英語",
+    "英文學習"
+  ],
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "Making Breakfast",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "Making Breakfast",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Daily Life",
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "What do you want for breakfast?",
+      "phonetic": "/wət du ju wɔnt fər ˈbrɛkfəst?/",
+      "zh": "你早餐想喫什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I want eggs and toast.",
+      "phonetic": "/aɪ wɔnt ɛgz ənd toʊst./",
+      "zh": "我想喫蛋和吐司。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I fry the eggs?",
+      "phonetic": "/ʃʊd aɪ fraɪ ðə ɛgz?/",
+      "zh": "要把蛋煎一下嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, please fry two.",
+      "phonetic": "/jɛs, pliz fraɪ tu./",
+      "zh": "好，幫我煎兩顆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How do you like your eggs?",
+      "phonetic": "/haʊ du ju laɪk jʊr ɛgz?/",
+      "zh": "你的蛋要怎麼煮？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I like them sunny side up.",
+      "phonetic": "/aɪ laɪk ðɛm ˈsəni saɪd əp./",
+      "zh": "我喜歡半熟煎蛋。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The coffee is ready.",
+      "phonetic": "/ðə ˈkɔfi ɪz ˈrɛdi./",
+      "zh": "咖啡煮好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great, I will pour a cup.",
+      "phonetic": "/greɪt, aɪ wɪl pɔr ə kəp./",
+      "zh": "太好了，我來倒一杯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you butter the toast?",
+      "phonetic": "/kən ju ˈbətər ðə toʊst?/",
+      "zh": "你能幫吐司抹奶油嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, right away.",
+      "phonetic": "/ʃʊr, raɪt əˈweɪ./",
+      "zh": "可以，馬上來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We are out of milk.",
+      "phonetic": "/wi ər aʊt əv mɪlk./",
+      "zh": "我們沒有牛奶了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will buy some later.",
+      "phonetic": "/aɪ wɪl baɪ səm ˈleɪtər./",
+      "zh": "我等一下去買。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you want juice or tea?",
+      "phonetic": "/du ju wɔnt ʤus ər ti?/",
+      "zh": "你要果汁還是茶？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will have orange juice.",
+      "phonetic": "/aɪ wɪl hæv ˈɔrɪnʤ ʤus./",
+      "zh": "我要柳橙汁。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bacon is almost done.",
+      "phonetic": "/ðə ˈbeɪkən ɪz ˈɔlˌmoʊst dən./",
+      "zh": "培根快好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Perfect, I am hungry.",
+      "phonetic": "/ˈpərˌfɪkt, aɪ æm ˈhəŋgri./",
+      "zh": "剛好，我餓了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's set the table.",
+      "phonetic": "/lɛts sɛt ðə ˈteɪbəl./",
+      "zh": "我們來擺餐具吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Okay, I will get the plates.",
+      "phonetic": "/ˌoʊˈkeɪ, aɪ wɪl gɪt ðə pleɪts./",
+      "zh": "好，我去拿盤子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you wash the fruit?",
+      "phonetic": "/dɪd ju wɑʃ ðə frut?/",
+      "zh": "水果洗過了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the apples are clean.",
+      "phonetic": "/jɛs, ðə ˈæpəlz ər klin./",
+      "zh": "洗了，蘋果很乾淨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This omelet looks good.",
+      "phonetic": "/ðɪs ˈɑmlət lʊks gʊd./",
+      "zh": "這個歐姆蛋看起來不錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I added some cheese.",
+      "phonetic": "/aɪ ˈædɪd səm ʧiz./",
+      "zh": "我加了一點起司。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you want it crispy?",
+      "phonetic": "/du ju wɔnt ɪt ˈkrɪspi?/",
+      "zh": "你要脆一點嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, a little crispy.",
+      "phonetic": "/jɛs, ə ˈlɪtəl ˈkrɪspi./",
+      "zh": "對，稍微脆一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kettle is boiling.",
+      "phonetic": "/ðə ˈkɛtəl ɪz ˈbɔɪlɪŋ./",
+      "zh": "水壺開了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will make some tea.",
+      "phonetic": "/aɪ wɪl meɪk səm ti./",
+      "zh": "我來泡個茶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you pass the jam?",
+      "phonetic": "/kən ju pæs ðə ʤæm?/",
+      "zh": "可以遞一下果醬嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here you go.",
+      "phonetic": "/hir ju goʊ./",
+      "zh": "給你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I prefer whole wheat bread.",
+      "phonetic": "/aɪ prɪˈfər hoʊl wit brɛd./",
+      "zh": "我比較喜歡全麥麪包。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We have some in the pantry.",
+      "phonetic": "/wi hæv səm ɪn ðə ˈpæntri./",
+      "zh": "儲藏室裏有。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pancakes are ready.",
+      "phonetic": "/ðə ˈpænˌkeɪks ər ˈrɛdi./",
+      "zh": "鬆餅好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will drizzle maple syrup.",
+      "phonetic": "/aɪ wɪl ˈdrɪzəl ˈmeɪpəl ˈsɪrəp./",
+      "zh": "我來淋楓糖漿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do we have honey?",
+      "phonetic": "/du wi hæv ˈhəni?/",
+      "zh": "我們有蜂蜜嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, in the top shelf.",
+      "phonetic": "/jɛs, ɪn ðə tɔp ʃɛlf./",
+      "zh": "有，在最上層。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Breakfast is served.",
+      "phonetic": "/ˈbrɛkfəst ɪz sərvd./",
+      "zh": "早餐好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Smells delicious!",
+      "phonetic": "/smɛlz dɪˈlɪʃəs!/",
+      "zh": "聞起來好香！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Want me to cook porridge?",
+      "phonetic": "/wɔnt mi tɪ kʊk ˈpɔrəʤ?/",
+      "zh": "要我煮燕麥粥嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That would be nice.",
+      "phonetic": "/ðət wʊd bi nis./",
+      "zh": "那很好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The toast is burning!",
+      "phonetic": "/ðə toʊst ɪz ˈbərnɪŋ!/",
+      "zh": "吐司焦了！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quick, turn off the heat.",
+      "phonetic": "/kwɪk, tərn ɔf ðə hit./",
+      "zh": "快關火。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I like a soft boiled egg.",
+      "phonetic": "/aɪ laɪk ə sɔft bɔɪld ɛg./",
+      "zh": "我喜歡水煮嫩蛋。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Six minutes is perfect.",
+      "phonetic": "/sɪks ˈmɪnəts ɪz ˈpərˌfɪkt./",
+      "zh": "六分鐘最剛好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Shall we eat outside?",
+      "phonetic": "/ʃæl wi it ˈaʊtˈsaɪd?/",
+      "zh": "我們外面喫好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, the garden is nice.",
+      "phonetic": "/ʃʊr, ðə ˈgɑrdən ɪz nis./",
+      "zh": "好啊，花園很舒服。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you slice the banana?",
+      "phonetic": "/kən ju slaɪs ðə bəˈnænə?/",
+      "zh": "你能把香蕉切片嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On it right now.",
+      "phonetic": "/ɔn ɪt raɪt naʊ./",
+      "zh": "正在切。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The yogurt is in the fridge.",
+      "phonetic": "/ðə ˈjoʊgərt ɪz ɪn ðə frɪʤ./",
+      "zh": "酸奶在冰箱裏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will grab it.",
+      "phonetic": "/aɪ wɪl græb ɪt./",
+      "zh": "我去拿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you want sugar in your tea?",
+      "phonetic": "/du ju wɔnt ˈʃʊgər ɪn jʊr ti?/",
+      "zh": "你的茶要加糖嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, I drink it plain.",
+      "phonetic": "/noʊ, aɪ drɪŋk ɪt pleɪn./",
+      "zh": "不用，我喝原味。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's make smoothies today.",
+      "phonetic": "/lɛts meɪk smoothies* təˈdeɪ./",
+      "zh": "今天來打果昔吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I love mango smoothies.",
+      "phonetic": "/aɪ ləv ˈmæŋgoʊ smoothies*./",
+      "zh": "我喜歡芒果果昔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The eggs are fresh from the farm.",
+      "phonetic": "/ðə ɛgz ər frɛʃ frəm ðə fɑrm./",
+      "zh": "蛋是農場新鮮的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They will taste great.",
+      "phonetic": "/ðeɪ wɪl teɪst greɪt./",
+      "zh": "一定很好喫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I burned my tongue!",
+      "phonetic": "/aɪ bərnd maɪ təŋ!/",
+      "zh": "我燙到舌頭了！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Be careful, it is hot.",
+      "phonetic": "/bi ˈkɛrfəl, ɪt ɪz hɑt./",
+      "zh": "小心，很燙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you refill my coffee?",
+      "phonetic": "/kən ju ˈrifɪl maɪ ˈkɔfi?/",
+      "zh": "可以幫我續杯咖啡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Of course, here you are.",
+      "phonetic": "/əv kɔrs, hir ju ər./",
+      "zh": "當然，給你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We should eat before it gets cold.",
+      "phonetic": "/wi ʃʊd it ˌbiˈfɔr ɪt gɪts koʊld./",
+      "zh": "趁熱喫比較好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You are right, let's eat.",
+      "phonetic": "/ju ər raɪt, lɛts it./",
+      "zh": "你說得對，開動吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will clean the pan later.",
+      "phonetic": "/aɪ wɪl klin ðə pæn ˈleɪtər./",
+      "zh": "鍋我等一下洗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Leave it, I will do it.",
+      "phonetic": "/liv ɪt, aɪ wɪl du ɪt./",
+      "zh": "放着，我來洗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you enjoy your breakfast?",
+      "phonetic": "/dɪd ju ˌɛnˈʤɔɪ jʊr ˈbrɛkfəst?/",
+      "zh": "早餐好喫嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Very much, thank you.",
+      "phonetic": "/ˈvɛri məʧ, θæŋk ju./",
+      "zh": "很好喫，謝謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Tomorrow let's try cereal.",
+      "phonetic": "/təˈmɑˌroʊ lɛts traɪ ˈsɪriəl./",
+      "zh": "明天我們喫麥片吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good idea, it is quick.",
+      "phonetic": "/gʊd aɪˈdiə, ɪt ɪz kwɪk./",
+      "zh": "好主意，很快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The table looks lovely.",
+      "phonetic": "/ðə ˈteɪbəl lʊks ˈləvli./",
+      "zh": "餐桌好漂亮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Glad you like it.",
+      "phonetic": "/glæd ju laɪk ɪt./",
+      "zh": "很高興你喜歡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The table looks lovely.",
+      "phonetic": "/ðə ˈteɪbəl lʊks ˈləvli./",
+      "zh": "餐桌好漂亮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Glad you like it.",
+      "phonetic": "/glæd ju laɪk ɪt./",
+      "zh": "很高興你喜歡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Tomorrow let's try cereal.",
+      "phonetic": "/təˈmɑˌroʊ lɛts traɪ ˈsɪriəl./",
+      "zh": "明天我們喫麥片吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good idea, it is quick.",
+      "phonetic": "/gʊd aɪˈdiə, ɪt ɪz kwɪk./",
+      "zh": "好主意，很快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you enjoy your breakfast?",
+      "phonetic": "/dɪd ju ˌɛnˈʤɔɪ jʊr ˈbrɛkfəst?/",
+      "zh": "早餐好喫嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Very much, thank you.",
+      "phonetic": "/ˈvɛri məʧ, θæŋk ju./",
+      "zh": "很好喫，謝謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will clean the pan later.",
+      "phonetic": "/aɪ wɪl klin ðə pæn ˈleɪtər./",
+      "zh": "鍋我等一下洗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Leave it, I will do it.",
+      "phonetic": "/liv ɪt, aɪ wɪl du ɪt./",
+      "zh": "放着，我來洗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We should eat before it gets cold.",
+      "phonetic": "/wi ʃʊd it ˌbiˈfɔr ɪt gɪts koʊld./",
+      "zh": "趁熱喫比較好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You are right, let's eat.",
+      "phonetic": "/ju ər raɪt, lɛts it./",
+      "zh": "你說得對，開動吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you refill my coffee?",
+      "phonetic": "/kən ju ˈrifɪl maɪ ˈkɔfi?/",
+      "zh": "可以幫我續杯咖啡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Of course, here you are.",
+      "phonetic": "/əv kɔrs, hir ju ər./",
+      "zh": "當然，給你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I burned my tongue!",
+      "phonetic": "/aɪ bərnd maɪ təŋ!/",
+      "zh": "我燙到舌頭了！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Be careful, it is hot.",
+      "phonetic": "/bi ˈkɛrfəl, ɪt ɪz hɑt./",
+      "zh": "小心，很燙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The eggs are fresh from the farm.",
+      "phonetic": "/ðə ɛgz ər frɛʃ frəm ðə fɑrm./",
+      "zh": "蛋是農場新鮮的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They will taste great.",
+      "phonetic": "/ðeɪ wɪl teɪst greɪt./",
+      "zh": "一定很好喫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's make smoothies today.",
+      "phonetic": "/lɛts meɪk smoothies* təˈdeɪ./",
+      "zh": "今天來打果昔吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I love mango smoothies.",
+      "phonetic": "/aɪ ləv ˈmæŋgoʊ smoothies*./",
+      "zh": "我喜歡芒果果昔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you want sugar in your tea?",
+      "phonetic": "/du ju wɔnt ˈʃʊgər ɪn jʊr ti?/",
+      "zh": "你的茶要加糖嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, I drink it plain.",
+      "phonetic": "/noʊ, aɪ drɪŋk ɪt pleɪn./",
+      "zh": "不用，我喝原味。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The yogurt is in the fridge.",
+      "phonetic": "/ðə ˈjoʊgərt ɪz ɪn ðə frɪʤ./",
+      "zh": "酸奶在冰箱裏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will grab it.",
+      "phonetic": "/aɪ wɪl græb ɪt./",
+      "zh": "我去拿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you slice the banana?",
+      "phonetic": "/kən ju slaɪs ðə bəˈnænə?/",
+      "zh": "你能把香蕉切片嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On it right now.",
+      "phonetic": "/ɔn ɪt raɪt naʊ./",
+      "zh": "正在切。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Shall we eat outside?",
+      "phonetic": "/ʃæl wi it ˈaʊtˈsaɪd?/",
+      "zh": "我們外面喫好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, the garden is nice.",
+      "phonetic": "/ʃʊr, ðə ˈgɑrdən ɪz nis./",
+      "zh": "好啊，花園很舒服。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I like a soft boiled egg.",
+      "phonetic": "/aɪ laɪk ə sɔft bɔɪld ɛg./",
+      "zh": "我喜歡水煮嫩蛋。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Six minutes is perfect.",
+      "phonetic": "/sɪks ˈmɪnəts ɪz ˈpərˌfɪkt./",
+      "zh": "六分鐘最剛好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The toast is burning!",
+      "phonetic": "/ðə toʊst ɪz ˈbərnɪŋ!/",
+      "zh": "吐司焦了！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quick, turn off the heat.",
+      "phonetic": "/kwɪk, tərn ɔf ðə hit./",
+      "zh": "快關火。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Want me to cook porridge?",
+      "phonetic": "/wɔnt mi tɪ kʊk ˈpɔrəʤ?/",
+      "zh": "要我煮燕麥粥嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That would be nice.",
+      "phonetic": "/ðət wʊd bi nis./",
+      "zh": "那很好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Breakfast is served.",
+      "phonetic": "/ˈbrɛkfəst ɪz sərvd./",
+      "zh": "早餐好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Smells delicious!",
+      "phonetic": "/smɛlz dɪˈlɪʃəs!/",
+      "zh": "聞起來好香！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do we have honey?",
+      "phonetic": "/du wi hæv ˈhəni?/",
+      "zh": "我們有蜂蜜嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, in the top shelf.",
+      "phonetic": "/jɛs, ɪn ðə tɔp ʃɛlf./",
+      "zh": "有，在最上層。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pancakes are ready.",
+      "phonetic": "/ðə ˈpænˌkeɪks ər ˈrɛdi./",
+      "zh": "鬆餅好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will drizzle maple syrup.",
+      "phonetic": "/aɪ wɪl ˈdrɪzəl ˈmeɪpəl ˈsɪrəp./",
+      "zh": "我來淋楓糖漿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I prefer whole wheat bread.",
+      "phonetic": "/aɪ prɪˈfər hoʊl wit brɛd./",
+      "zh": "我比較喜歡全麥麪包。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We have some in the pantry.",
+      "phonetic": "/wi hæv səm ɪn ðə ˈpæntri./",
+      "zh": "儲藏室裏有。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you pass the jam?",
+      "phonetic": "/kən ju pæs ðə ʤæm?/",
+      "zh": "可以遞一下果醬嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here you go.",
+      "phonetic": "/hir ju goʊ./",
+      "zh": "給你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kettle is boiling.",
+      "phonetic": "/ðə ˈkɛtəl ɪz ˈbɔɪlɪŋ./",
+      "zh": "水壺開了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will make some tea.",
+      "phonetic": "/aɪ wɪl meɪk səm ti./",
+      "zh": "我來泡個茶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you want it crispy?",
+      "phonetic": "/du ju wɔnt ɪt ˈkrɪspi?/",
+      "zh": "你要脆一點嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, a little crispy.",
+      "phonetic": "/jɛs, ə ˈlɪtəl ˈkrɪspi./",
+      "zh": "對，稍微脆一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This omelet looks good.",
+      "phonetic": "/ðɪs ˈɑmlət lʊks gʊd./",
+      "zh": "這個歐姆蛋看起來不錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I added some cheese.",
+      "phonetic": "/aɪ ˈædɪd səm ʧiz./",
+      "zh": "我加了一點起司。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you wash the fruit?",
+      "phonetic": "/dɪd ju wɑʃ ðə frut?/",
+      "zh": "水果洗過了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the apples are clean.",
+      "phonetic": "/jɛs, ðə ˈæpəlz ər klin./",
+      "zh": "洗了，蘋果很乾淨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's set the table.",
+      "phonetic": "/lɛts sɛt ðə ˈteɪbəl./",
+      "zh": "我們來擺餐具吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Okay, I will get the plates.",
+      "phonetic": "/ˌoʊˈkeɪ, aɪ wɪl gɪt ðə pleɪts./",
+      "zh": "好，我去拿盤子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bacon is almost done.",
+      "phonetic": "/ðə ˈbeɪkən ɪz ˈɔlˌmoʊst dən./",
+      "zh": "培根快好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Perfect, I am hungry.",
+      "phonetic": "/ˈpərˌfɪkt, aɪ æm ˈhəŋgri./",
+      "zh": "剛好，我餓了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you want juice or tea?",
+      "phonetic": "/du ju wɔnt ʤus ər ti?/",
+      "zh": "你要果汁還是茶？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will have orange juice.",
+      "phonetic": "/aɪ wɪl hæv ˈɔrɪnʤ ʤus./",
+      "zh": "我要柳橙汁。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We are out of milk.",
+      "phonetic": "/wi ər aʊt əv mɪlk./",
+      "zh": "我們沒有牛奶了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will buy some later.",
+      "phonetic": "/aɪ wɪl baɪ səm ˈleɪtər./",
+      "zh": "我等一下去買。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you butter the toast?",
+      "phonetic": "/kən ju ˈbətər ðə toʊst?/",
+      "zh": "你能幫吐司抹奶油嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, right away.",
+      "phonetic": "/ʃʊr, raɪt əˈweɪ./",
+      "zh": "可以，馬上來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The coffee is ready.",
+      "phonetic": "/ðə ˈkɔfi ɪz ˈrɛdi./",
+      "zh": "咖啡煮好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great, I will pour a cup.",
+      "phonetic": "/greɪt, aɪ wɪl pɔr ə kəp./",
+      "zh": "太好了，我來倒一杯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How do you like your eggs?",
+      "phonetic": "/haʊ du ju laɪk jʊr ɛgz?/",
+      "zh": "你的蛋要怎麼煮？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I like them sunny side up.",
+      "phonetic": "/aɪ laɪk ðɛm ˈsəni saɪd əp./",
+      "zh": "我喜歡半熟煎蛋。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I fry the eggs?",
+      "phonetic": "/ʃʊd aɪ fraɪ ðə ɛgz?/",
+      "zh": "要把蛋煎一下嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, please fry two.",
+      "phonetic": "/jɛs, pliz fraɪ tu./",
+      "zh": "好，幫我煎兩顆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What do you want for breakfast?",
+      "phonetic": "/wət du ju wɔnt fər ˈbrɛkfəst?/",
+      "zh": "你早餐想喫什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I want eggs and toast.",
+      "phonetic": "/aɪ wɔnt ɛgz ənd toʊst./",
+      "zh": "我想喫蛋和吐司。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What do you want for breakfast?",
+      "phonetic": "/wət du ju wɔnt fər ˈbrɛkfəst?/",
+      "zh": "你早餐想喫什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I want eggs and toast.",
+      "phonetic": "/aɪ wɔnt ɛgz ənd toʊst./",
+      "zh": "我想喫蛋和吐司。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I fry the eggs?",
+      "phonetic": "/ʃʊd aɪ fraɪ ðə ɛgz?/",
+      "zh": "要把蛋煎一下嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, please fry two.",
+      "phonetic": "/jɛs, pliz fraɪ tu./",
+      "zh": "好，幫我煎兩顆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How do you like your eggs?",
+      "phonetic": "/haʊ du ju laɪk jʊr ɛgz?/",
+      "zh": "你的蛋要怎麼煮？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I like them sunny side up.",
+      "phonetic": "/aɪ laɪk ðɛm ˈsəni saɪd əp./",
+      "zh": "我喜歡半熟煎蛋。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The coffee is ready.",
+      "phonetic": "/ðə ˈkɔfi ɪz ˈrɛdi./",
+      "zh": "咖啡煮好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great, I will pour a cup.",
+      "phonetic": "/greɪt, aɪ wɪl pɔr ə kəp./",
+      "zh": "太好了，我來倒一杯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you butter the toast?",
+      "phonetic": "/kən ju ˈbətər ðə toʊst?/",
+      "zh": "你能幫吐司抹奶油嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, right away.",
+      "phonetic": "/ʃʊr, raɪt əˈweɪ./",
+      "zh": "可以，馬上來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We are out of milk.",
+      "phonetic": "/wi ər aʊt əv mɪlk./",
+      "zh": "我們沒有牛奶了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will buy some later.",
+      "phonetic": "/aɪ wɪl baɪ səm ˈleɪtər./",
+      "zh": "我等一下去買。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you want juice or tea?",
+      "phonetic": "/du ju wɔnt ʤus ər ti?/",
+      "zh": "你要果汁還是茶？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will have orange juice.",
+      "phonetic": "/aɪ wɪl hæv ˈɔrɪnʤ ʤus./",
+      "zh": "我要柳橙汁。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bacon is almost done.",
+      "phonetic": "/ðə ˈbeɪkən ɪz ˈɔlˌmoʊst dən./",
+      "zh": "培根快好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Perfect, I am hungry.",
+      "phonetic": "/ˈpərˌfɪkt, aɪ æm ˈhəŋgri./",
+      "zh": "剛好，我餓了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's set the table.",
+      "phonetic": "/lɛts sɛt ðə ˈteɪbəl./",
+      "zh": "我們來擺餐具吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Okay, I will get the plates.",
+      "phonetic": "/ˌoʊˈkeɪ, aɪ wɪl gɪt ðə pleɪts./",
+      "zh": "好，我去拿盤子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you wash the fruit?",
+      "phonetic": "/dɪd ju wɑʃ ðə frut?/",
+      "zh": "水果洗過了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the apples are clean.",
+      "phonetic": "/jɛs, ðə ˈæpəlz ər klin./",
+      "zh": "洗了，蘋果很乾淨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This omelet looks good.",
+      "phonetic": "/ðɪs ˈɑmlət lʊks gʊd./",
+      "zh": "這個歐姆蛋看起來不錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I added some cheese.",
+      "phonetic": "/aɪ ˈædɪd səm ʧiz./",
+      "zh": "我加了一點起司。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you want it crispy?",
+      "phonetic": "/du ju wɔnt ɪt ˈkrɪspi?/",
+      "zh": "你要脆一點嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, a little crispy.",
+      "phonetic": "/jɛs, ə ˈlɪtəl ˈkrɪspi./",
+      "zh": "對，稍微脆一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kettle is boiling.",
+      "phonetic": "/ðə ˈkɛtəl ɪz ˈbɔɪlɪŋ./",
+      "zh": "水壺開了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will make some tea.",
+      "phonetic": "/aɪ wɪl meɪk səm ti./",
+      "zh": "我來泡個茶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you pass the jam?",
+      "phonetic": "/kən ju pæs ðə ʤæm?/",
+      "zh": "可以遞一下果醬嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here you go.",
+      "phonetic": "/hir ju goʊ./",
+      "zh": "給你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I prefer whole wheat bread.",
+      "phonetic": "/aɪ prɪˈfər hoʊl wit brɛd./",
+      "zh": "我比較喜歡全麥麪包。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We have some in the pantry.",
+      "phonetic": "/wi hæv səm ɪn ðə ˈpæntri./",
+      "zh": "儲藏室裏有。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pancakes are ready.",
+      "phonetic": "/ðə ˈpænˌkeɪks ər ˈrɛdi./",
+      "zh": "鬆餅好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will drizzle maple syrup.",
+      "phonetic": "/aɪ wɪl ˈdrɪzəl ˈmeɪpəl ˈsɪrəp./",
+      "zh": "我來淋楓糖漿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do we have honey?",
+      "phonetic": "/du wi hæv ˈhəni?/",
+      "zh": "我們有蜂蜜嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, in the top shelf.",
+      "phonetic": "/jɛs, ɪn ðə tɔp ʃɛlf./",
+      "zh": "有，在最上層。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Breakfast is served.",
+      "phonetic": "/ˈbrɛkfəst ɪz sərvd./",
+      "zh": "早餐好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Smells delicious!",
+      "phonetic": "/smɛlz dɪˈlɪʃəs!/",
+      "zh": "聞起來好香！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Want me to cook porridge?",
+      "phonetic": "/wɔnt mi tɪ kʊk ˈpɔrəʤ?/",
+      "zh": "要我煮燕麥粥嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That would be nice.",
+      "phonetic": "/ðət wʊd bi nis./",
+      "zh": "那很好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The toast is burning!",
+      "phonetic": "/ðə toʊst ɪz ˈbərnɪŋ!/",
+      "zh": "吐司焦了！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quick, turn off the heat.",
+      "phonetic": "/kwɪk, tərn ɔf ðə hit./",
+      "zh": "快關火。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I like a soft boiled egg.",
+      "phonetic": "/aɪ laɪk ə sɔft bɔɪld ɛg./",
+      "zh": "我喜歡水煮嫩蛋。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Six minutes is perfect.",
+      "phonetic": "/sɪks ˈmɪnəts ɪz ˈpərˌfɪkt./",
+      "zh": "六分鐘最剛好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Shall we eat outside?",
+      "phonetic": "/ʃæl wi it ˈaʊtˈsaɪd?/",
+      "zh": "我們外面喫好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, the garden is nice.",
+      "phonetic": "/ʃʊr, ðə ˈgɑrdən ɪz nis./",
+      "zh": "好啊，花園很舒服。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you slice the banana?",
+      "phonetic": "/kən ju slaɪs ðə bəˈnænə?/",
+      "zh": "你能把香蕉切片嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On it right now.",
+      "phonetic": "/ɔn ɪt raɪt naʊ./",
+      "zh": "正在切。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The yogurt is in the fridge.",
+      "phonetic": "/ðə ˈjoʊgərt ɪz ɪn ðə frɪʤ./",
+      "zh": "酸奶在冰箱裏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will grab it.",
+      "phonetic": "/aɪ wɪl græb ɪt./",
+      "zh": "我去拿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you want sugar in your tea?",
+      "phonetic": "/du ju wɔnt ˈʃʊgər ɪn jʊr ti?/",
+      "zh": "你的茶要加糖嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, I drink it plain.",
+      "phonetic": "/noʊ, aɪ drɪŋk ɪt pleɪn./",
+      "zh": "不用，我喝原味。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's make smoothies today.",
+      "phonetic": "/lɛts meɪk smoothies* təˈdeɪ./",
+      "zh": "今天來打果昔吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I love mango smoothies.",
+      "phonetic": "/aɪ ləv ˈmæŋgoʊ smoothies*./",
+      "zh": "我喜歡芒果果昔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The eggs are fresh from the farm.",
+      "phonetic": "/ðə ɛgz ər frɛʃ frəm ðə fɑrm./",
+      "zh": "蛋是農場新鮮的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They will taste great.",
+      "phonetic": "/ðeɪ wɪl teɪst greɪt./",
+      "zh": "一定很好喫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I burned my tongue!",
+      "phonetic": "/aɪ bərnd maɪ təŋ!/",
+      "zh": "我燙到舌頭了！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Be careful, it is hot.",
+      "phonetic": "/bi ˈkɛrfəl, ɪt ɪz hɑt./",
+      "zh": "小心，很燙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you refill my coffee?",
+      "phonetic": "/kən ju ˈrifɪl maɪ ˈkɔfi?/",
+      "zh": "可以幫我續杯咖啡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Of course, here you are.",
+      "phonetic": "/əv kɔrs, hir ju ər./",
+      "zh": "當然，給你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We should eat before it gets cold.",
+      "phonetic": "/wi ʃʊd it ˌbiˈfɔr ɪt gɪts koʊld./",
+      "zh": "趁熱喫比較好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You are right, let's eat.",
+      "phonetic": "/ju ər raɪt, lɛts it./",
+      "zh": "你說得對，開動吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will clean the pan later.",
+      "phonetic": "/aɪ wɪl klin ðə pæn ˈleɪtər./",
+      "zh": "鍋我等一下洗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Leave it, I will do it.",
+      "phonetic": "/liv ɪt, aɪ wɪl du ɪt./",
+      "zh": "放着，我來洗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you enjoy your breakfast?",
+      "phonetic": "/dɪd ju ˌɛnˈʤɔɪ jʊr ˈbrɛkfəst?/",
+      "zh": "早餐好喫嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Very much, thank you.",
+      "phonetic": "/ˈvɛri məʧ, θæŋk ju./",
+      "zh": "很好喫，謝謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Tomorrow let's try cereal.",
+      "phonetic": "/təˈmɑˌroʊ lɛts traɪ ˈsɪriəl./",
+      "zh": "明天我們喫麥片吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good idea, it is quick.",
+      "phonetic": "/gʊd aɪˈdiə, ɪt ɪz kwɪk./",
+      "zh": "好主意，很快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The table looks lovely.",
+      "phonetic": "/ðə ˈteɪbəl lʊks ˈləvli./",
+      "zh": "餐桌好漂亮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Glad you like it.",
+      "phonetic": "/glæd ju laɪk ɪt./",
+      "zh": "很高興你喜歡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The table looks lovely.",
+      "phonetic": "/ðə ˈteɪbəl lʊks ˈləvli./",
+      "zh": "餐桌好漂亮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Glad you like it.",
+      "phonetic": "/glæd ju laɪk ɪt./",
+      "zh": "很高興你喜歡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Tomorrow let's try cereal.",
+      "phonetic": "/təˈmɑˌroʊ lɛts traɪ ˈsɪriəl./",
+      "zh": "明天我們喫麥片吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good idea, it is quick.",
+      "phonetic": "/gʊd aɪˈdiə, ɪt ɪz kwɪk./",
+      "zh": "好主意，很快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you enjoy your breakfast?",
+      "phonetic": "/dɪd ju ˌɛnˈʤɔɪ jʊr ˈbrɛkfəst?/",
+      "zh": "早餐好喫嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Very much, thank you.",
+      "phonetic": "/ˈvɛri məʧ, θæŋk ju./",
+      "zh": "很好喫，謝謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will clean the pan later.",
+      "phonetic": "/aɪ wɪl klin ðə pæn ˈleɪtər./",
+      "zh": "鍋我等一下洗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Leave it, I will do it.",
+      "phonetic": "/liv ɪt, aɪ wɪl du ɪt./",
+      "zh": "放着，我來洗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We should eat before it gets cold.",
+      "phonetic": "/wi ʃʊd it ˌbiˈfɔr ɪt gɪts koʊld./",
+      "zh": "趁熱喫比較好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You are right, let's eat.",
+      "phonetic": "/ju ər raɪt, lɛts it./",
+      "zh": "你說得對，開動吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you refill my coffee?",
+      "phonetic": "/kən ju ˈrifɪl maɪ ˈkɔfi?/",
+      "zh": "可以幫我續杯咖啡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Of course, here you are.",
+      "phonetic": "/əv kɔrs, hir ju ər./",
+      "zh": "當然，給你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I burned my tongue!",
+      "phonetic": "/aɪ bərnd maɪ təŋ!/",
+      "zh": "我燙到舌頭了！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Be careful, it is hot.",
+      "phonetic": "/bi ˈkɛrfəl, ɪt ɪz hɑt./",
+      "zh": "小心，很燙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The eggs are fresh from the farm.",
+      "phonetic": "/ðə ɛgz ər frɛʃ frəm ðə fɑrm./",
+      "zh": "蛋是農場新鮮的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They will taste great.",
+      "phonetic": "/ðeɪ wɪl teɪst greɪt./",
+      "zh": "一定很好喫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's make smoothies today.",
+      "phonetic": "/lɛts meɪk smoothies* təˈdeɪ./",
+      "zh": "今天來打果昔吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I love mango smoothies.",
+      "phonetic": "/aɪ ləv ˈmæŋgoʊ smoothies*./",
+      "zh": "我喜歡芒果果昔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you want sugar in your tea?",
+      "phonetic": "/du ju wɔnt ˈʃʊgər ɪn jʊr ti?/",
+      "zh": "你的茶要加糖嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, I drink it plain.",
+      "phonetic": "/noʊ, aɪ drɪŋk ɪt pleɪn./",
+      "zh": "不用，我喝原味。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The yogurt is in the fridge.",
+      "phonetic": "/ðə ˈjoʊgərt ɪz ɪn ðə frɪʤ./",
+      "zh": "酸奶在冰箱裏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will grab it.",
+      "phonetic": "/aɪ wɪl græb ɪt./",
+      "zh": "我去拿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you slice the banana?",
+      "phonetic": "/kən ju slaɪs ðə bəˈnænə?/",
+      "zh": "你能把香蕉切片嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On it right now.",
+      "phonetic": "/ɔn ɪt raɪt naʊ./",
+      "zh": "正在切。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Shall we eat outside?",
+      "phonetic": "/ʃæl wi it ˈaʊtˈsaɪd?/",
+      "zh": "我們外面喫好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, the garden is nice.",
+      "phonetic": "/ʃʊr, ðə ˈgɑrdən ɪz nis./",
+      "zh": "好啊，花園很舒服。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I like a soft boiled egg.",
+      "phonetic": "/aɪ laɪk ə sɔft bɔɪld ɛg./",
+      "zh": "我喜歡水煮嫩蛋。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Six minutes is perfect.",
+      "phonetic": "/sɪks ˈmɪnəts ɪz ˈpərˌfɪkt./",
+      "zh": "六分鐘最剛好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The toast is burning!",
+      "phonetic": "/ðə toʊst ɪz ˈbərnɪŋ!/",
+      "zh": "吐司焦了！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quick, turn off the heat.",
+      "phonetic": "/kwɪk, tərn ɔf ðə hit./",
+      "zh": "快關火。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Want me to cook porridge?",
+      "phonetic": "/wɔnt mi tɪ kʊk ˈpɔrəʤ?/",
+      "zh": "要我煮燕麥粥嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That would be nice.",
+      "phonetic": "/ðət wʊd bi nis./",
+      "zh": "那很好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Breakfast is served.",
+      "phonetic": "/ˈbrɛkfəst ɪz sərvd./",
+      "zh": "早餐好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Smells delicious!",
+      "phonetic": "/smɛlz dɪˈlɪʃəs!/",
+      "zh": "聞起來好香！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do we have honey?",
+      "phonetic": "/du wi hæv ˈhəni?/",
+      "zh": "我們有蜂蜜嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, in the top shelf.",
+      "phonetic": "/jɛs, ɪn ðə tɔp ʃɛlf./",
+      "zh": "有，在最上層。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pancakes are ready.",
+      "phonetic": "/ðə ˈpænˌkeɪks ər ˈrɛdi./",
+      "zh": "鬆餅好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will drizzle maple syrup.",
+      "phonetic": "/aɪ wɪl ˈdrɪzəl ˈmeɪpəl ˈsɪrəp./",
+      "zh": "我來淋楓糖漿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I prefer whole wheat bread.",
+      "phonetic": "/aɪ prɪˈfər hoʊl wit brɛd./",
+      "zh": "我比較喜歡全麥麪包。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We have some in the pantry.",
+      "phonetic": "/wi hæv səm ɪn ðə ˈpæntri./",
+      "zh": "儲藏室裏有。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you pass the jam?",
+      "phonetic": "/kən ju pæs ðə ʤæm?/",
+      "zh": "可以遞一下果醬嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here you go.",
+      "phonetic": "/hir ju goʊ./",
+      "zh": "給你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kettle is boiling.",
+      "phonetic": "/ðə ˈkɛtəl ɪz ˈbɔɪlɪŋ./",
+      "zh": "水壺開了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will make some tea.",
+      "phonetic": "/aɪ wɪl meɪk səm ti./",
+      "zh": "我來泡個茶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you want it crispy?",
+      "phonetic": "/du ju wɔnt ɪt ˈkrɪspi?/",
+      "zh": "你要脆一點嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, a little crispy.",
+      "phonetic": "/jɛs, ə ˈlɪtəl ˈkrɪspi./",
+      "zh": "對，稍微脆一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This omelet looks good.",
+      "phonetic": "/ðɪs ˈɑmlət lʊks gʊd./",
+      "zh": "這個歐姆蛋看起來不錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I added some cheese.",
+      "phonetic": "/aɪ ˈædɪd səm ʧiz./",
+      "zh": "我加了一點起司。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you wash the fruit?",
+      "phonetic": "/dɪd ju wɑʃ ðə frut?/",
+      "zh": "水果洗過了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the apples are clean.",
+      "phonetic": "/jɛs, ðə ˈæpəlz ər klin./",
+      "zh": "洗了，蘋果很乾淨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's set the table.",
+      "phonetic": "/lɛts sɛt ðə ˈteɪbəl./",
+      "zh": "我們來擺餐具吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Okay, I will get the plates.",
+      "phonetic": "/ˌoʊˈkeɪ, aɪ wɪl gɪt ðə pleɪts./",
+      "zh": "好，我去拿盤子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bacon is almost done.",
+      "phonetic": "/ðə ˈbeɪkən ɪz ˈɔlˌmoʊst dən./",
+      "zh": "培根快好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Perfect, I am hungry.",
+      "phonetic": "/ˈpərˌfɪkt, aɪ æm ˈhəŋgri./",
+      "zh": "剛好，我餓了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you want juice or tea?",
+      "phonetic": "/du ju wɔnt ʤus ər ti?/",
+      "zh": "你要果汁還是茶？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will have orange juice.",
+      "phonetic": "/aɪ wɪl hæv ˈɔrɪnʤ ʤus./",
+      "zh": "我要柳橙汁。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We are out of milk.",
+      "phonetic": "/wi ər aʊt əv mɪlk./",
+      "zh": "我們沒有牛奶了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will buy some later.",
+      "phonetic": "/aɪ wɪl baɪ səm ˈleɪtər./",
+      "zh": "我等一下去買。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you butter the toast?",
+      "phonetic": "/kən ju ˈbətər ðə toʊst?/",
+      "zh": "你能幫吐司抹奶油嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, right away.",
+      "phonetic": "/ʃʊr, raɪt əˈweɪ./",
+      "zh": "可以，馬上來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The coffee is ready.",
+      "phonetic": "/ðə ˈkɔfi ɪz ˈrɛdi./",
+      "zh": "咖啡煮好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great, I will pour a cup.",
+      "phonetic": "/greɪt, aɪ wɪl pɔr ə kəp./",
+      "zh": "太好了，我來倒一杯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How do you like your eggs?",
+      "phonetic": "/haʊ du ju laɪk jʊr ɛgz?/",
+      "zh": "你的蛋要怎麼煮？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I like them sunny side up.",
+      "phonetic": "/aɪ laɪk ðɛm ˈsəni saɪd əp./",
+      "zh": "我喜歡半熟煎蛋。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I fry the eggs?",
+      "phonetic": "/ʃʊd aɪ fraɪ ðə ɛgz?/",
+      "zh": "要把蛋煎一下嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, please fry two.",
+      "phonetic": "/jɛs, pliz fraɪ tu./",
+      "zh": "好，幫我煎兩顆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What do you want for breakfast?",
+      "phonetic": "/wət du ju wɔnt fər ˈbrɛkfəst?/",
+      "zh": "你早餐想喫什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I want eggs and toast.",
+      "phonetic": "/aɪ wɔnt ɛgz ənd toʊst./",
+      "zh": "我想喫蛋和吐司。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What do you want for breakfast?",
+      "phonetic": "/wət du ju wɔnt fər ˈbrɛkfəst?/",
+      "zh": "你早餐想喫什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I want eggs and toast.",
+      "phonetic": "/aɪ wɔnt ɛgz ənd toʊst./",
+      "zh": "我想喫蛋和吐司。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I fry the eggs?",
+      "phonetic": "/ʃʊd aɪ fraɪ ðə ɛgz?/",
+      "zh": "要把蛋煎一下嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, please fry two.",
+      "phonetic": "/jɛs, pliz fraɪ tu./",
+      "zh": "好，幫我煎兩顆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How do you like your eggs?",
+      "phonetic": "/haʊ du ju laɪk jʊr ɛgz?/",
+      "zh": "你的蛋要怎麼煮？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I like them sunny side up.",
+      "phonetic": "/aɪ laɪk ðɛm ˈsəni saɪd əp./",
+      "zh": "我喜歡半熟煎蛋。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The coffee is ready.",
+      "phonetic": "/ðə ˈkɔfi ɪz ˈrɛdi./",
+      "zh": "咖啡煮好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great, I will pour a cup.",
+      "phonetic": "/greɪt, aɪ wɪl pɔr ə kəp./",
+      "zh": "太好了，我來倒一杯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you butter the toast?",
+      "phonetic": "/kən ju ˈbətər ðə toʊst?/",
+      "zh": "你能幫吐司抹奶油嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, right away.",
+      "phonetic": "/ʃʊr, raɪt əˈweɪ./",
+      "zh": "可以，馬上來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We are out of milk.",
+      "phonetic": "/wi ər aʊt əv mɪlk./",
+      "zh": "我們沒有牛奶了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will buy some later.",
+      "phonetic": "/aɪ wɪl baɪ səm ˈleɪtər./",
+      "zh": "我等一下去買。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you want juice or tea?",
+      "phonetic": "/du ju wɔnt ʤus ər ti?/",
+      "zh": "你要果汁還是茶？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will have orange juice.",
+      "phonetic": "/aɪ wɪl hæv ˈɔrɪnʤ ʤus./",
+      "zh": "我要柳橙汁。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bacon is almost done.",
+      "phonetic": "/ðə ˈbeɪkən ɪz ˈɔlˌmoʊst dən./",
+      "zh": "培根快好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Perfect, I am hungry.",
+      "phonetic": "/ˈpərˌfɪkt, aɪ æm ˈhəŋgri./",
+      "zh": "剛好，我餓了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's set the table.",
+      "phonetic": "/lɛts sɛt ðə ˈteɪbəl./",
+      "zh": "我們來擺餐具吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Okay, I will get the plates.",
+      "phonetic": "/ˌoʊˈkeɪ, aɪ wɪl gɪt ðə pleɪts./",
+      "zh": "好，我去拿盤子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you wash the fruit?",
+      "phonetic": "/dɪd ju wɑʃ ðə frut?/",
+      "zh": "水果洗過了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the apples are clean.",
+      "phonetic": "/jɛs, ðə ˈæpəlz ər klin./",
+      "zh": "洗了，蘋果很乾淨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This omelet looks good.",
+      "phonetic": "/ðɪs ˈɑmlət lʊks gʊd./",
+      "zh": "這個歐姆蛋看起來不錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I added some cheese.",
+      "phonetic": "/aɪ ˈædɪd səm ʧiz./",
+      "zh": "我加了一點起司。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you want it crispy?",
+      "phonetic": "/du ju wɔnt ɪt ˈkrɪspi?/",
+      "zh": "你要脆一點嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, a little crispy.",
+      "phonetic": "/jɛs, ə ˈlɪtəl ˈkrɪspi./",
+      "zh": "對，稍微脆一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kettle is boiling.",
+      "phonetic": "/ðə ˈkɛtəl ɪz ˈbɔɪlɪŋ./",
+      "zh": "水壺開了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will make some tea.",
+      "phonetic": "/aɪ wɪl meɪk səm ti./",
+      "zh": "我來泡個茶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you pass the jam?",
+      "phonetic": "/kən ju pæs ðə ʤæm?/",
+      "zh": "可以遞一下果醬嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here you go.",
+      "phonetic": "/hir ju goʊ./",
+      "zh": "給你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I prefer whole wheat bread.",
+      "phonetic": "/aɪ prɪˈfər hoʊl wit brɛd./",
+      "zh": "我比較喜歡全麥麪包。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We have some in the pantry.",
+      "phonetic": "/wi hæv səm ɪn ðə ˈpæntri./",
+      "zh": "儲藏室裏有。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pancakes are ready.",
+      "phonetic": "/ðə ˈpænˌkeɪks ər ˈrɛdi./",
+      "zh": "鬆餅好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will drizzle maple syrup.",
+      "phonetic": "/aɪ wɪl ˈdrɪzəl ˈmeɪpəl ˈsɪrəp./",
+      "zh": "我來淋楓糖漿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do we have honey?",
+      "phonetic": "/du wi hæv ˈhəni?/",
+      "zh": "我們有蜂蜜嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, in the top shelf.",
+      "phonetic": "/jɛs, ɪn ðə tɔp ʃɛlf./",
+      "zh": "有，在最上層。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Breakfast is served.",
+      "phonetic": "/ˈbrɛkfəst ɪz sərvd./",
+      "zh": "早餐好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Smells delicious!",
+      "phonetic": "/smɛlz dɪˈlɪʃəs!/",
+      "zh": "聞起來好香！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Want me to cook porridge?",
+      "phonetic": "/wɔnt mi tɪ kʊk ˈpɔrəʤ?/",
+      "zh": "要我煮燕麥粥嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That would be nice.",
+      "phonetic": "/ðət wʊd bi nis./",
+      "zh": "那很好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The toast is burning!",
+      "phonetic": "/ðə toʊst ɪz ˈbərnɪŋ!/",
+      "zh": "吐司焦了！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quick, turn off the heat.",
+      "phonetic": "/kwɪk, tərn ɔf ðə hit./",
+      "zh": "快關火。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I like a soft boiled egg.",
+      "phonetic": "/aɪ laɪk ə sɔft bɔɪld ɛg./",
+      "zh": "我喜歡水煮嫩蛋。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Six minutes is perfect.",
+      "phonetic": "/sɪks ˈmɪnəts ɪz ˈpərˌfɪkt./",
+      "zh": "六分鐘最剛好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Shall we eat outside?",
+      "phonetic": "/ʃæl wi it ˈaʊtˈsaɪd?/",
+      "zh": "我們外面喫好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, the garden is nice.",
+      "phonetic": "/ʃʊr, ðə ˈgɑrdən ɪz nis./",
+      "zh": "好啊，花園很舒服。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you slice the banana?",
+      "phonetic": "/kən ju slaɪs ðə bəˈnænə?/",
+      "zh": "你能把香蕉切片嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On it right now.",
+      "phonetic": "/ɔn ɪt raɪt naʊ./",
+      "zh": "正在切。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The yogurt is in the fridge.",
+      "phonetic": "/ðə ˈjoʊgərt ɪz ɪn ðə frɪʤ./",
+      "zh": "酸奶在冰箱裏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will grab it.",
+      "phonetic": "/aɪ wɪl græb ɪt./",
+      "zh": "我去拿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you want sugar in your tea?",
+      "phonetic": "/du ju wɔnt ˈʃʊgər ɪn jʊr ti?/",
+      "zh": "你的茶要加糖嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, I drink it plain.",
+      "phonetic": "/noʊ, aɪ drɪŋk ɪt pleɪn./",
+      "zh": "不用，我喝原味。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's make smoothies today.",
+      "phonetic": "/lɛts meɪk smoothies* təˈdeɪ./",
+      "zh": "今天來打果昔吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I love mango smoothies.",
+      "phonetic": "/aɪ ləv ˈmæŋgoʊ smoothies*./",
+      "zh": "我喜歡芒果果昔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The eggs are fresh from the farm.",
+      "phonetic": "/ðə ɛgz ər frɛʃ frəm ðə fɑrm./",
+      "zh": "蛋是農場新鮮的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They will taste great.",
+      "phonetic": "/ðeɪ wɪl teɪst greɪt./",
+      "zh": "一定很好喫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I burned my tongue!",
+      "phonetic": "/aɪ bərnd maɪ təŋ!/",
+      "zh": "我燙到舌頭了！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Be careful, it is hot.",
+      "phonetic": "/bi ˈkɛrfəl, ɪt ɪz hɑt./",
+      "zh": "小心，很燙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you refill my coffee?",
+      "phonetic": "/kən ju ˈrifɪl maɪ ˈkɔfi?/",
+      "zh": "可以幫我續杯咖啡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Of course, here you are.",
+      "phonetic": "/əv kɔrs, hir ju ər./",
+      "zh": "當然，給你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We should eat before it gets cold.",
+      "phonetic": "/wi ʃʊd it ˌbiˈfɔr ɪt gɪts koʊld./",
+      "zh": "趁熱喫比較好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You are right, let's eat.",
+      "phonetic": "/ju ər raɪt, lɛts it./",
+      "zh": "你說得對，開動吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will clean the pan later.",
+      "phonetic": "/aɪ wɪl klin ðə pæn ˈleɪtər./",
+      "zh": "鍋我等一下洗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Leave it, I will do it.",
+      "phonetic": "/liv ɪt, aɪ wɪl du ɪt./",
+      "zh": "放着，我來洗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you enjoy your breakfast?",
+      "phonetic": "/dɪd ju ˌɛnˈʤɔɪ jʊr ˈbrɛkfəst?/",
+      "zh": "早餐好喫嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Very much, thank you.",
+      "phonetic": "/ˈvɛri məʧ, θæŋk ju./",
+      "zh": "很好喫，謝謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Tomorrow let's try cereal.",
+      "phonetic": "/təˈmɑˌroʊ lɛts traɪ ˈsɪriəl./",
+      "zh": "明天我們喫麥片吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good idea, it is quick.",
+      "phonetic": "/gʊd aɪˈdiə, ɪt ɪz kwɪk./",
+      "zh": "好主意，很快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The table looks lovely.",
+      "phonetic": "/ðə ˈteɪbəl lʊks ˈləvli./",
+      "zh": "餐桌好漂亮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Glad you like it.",
+      "phonetic": "/glæd ju laɪk ɪt./",
+      "zh": "很高興你喜歡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The table looks lovely.",
+      "phonetic": "/ðə ˈteɪbəl lʊks ˈləvli./",
+      "zh": "餐桌好漂亮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Glad you like it.",
+      "phonetic": "/glæd ju laɪk ɪt./",
+      "zh": "很高興你喜歡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Tomorrow let's try cereal.",
+      "phonetic": "/təˈmɑˌroʊ lɛts traɪ ˈsɪriəl./",
+      "zh": "明天我們喫麥片吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good idea, it is quick.",
+      "phonetic": "/gʊd aɪˈdiə, ɪt ɪz kwɪk./",
+      "zh": "好主意，很快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you enjoy your breakfast?",
+      "phonetic": "/dɪd ju ˌɛnˈʤɔɪ jʊr ˈbrɛkfəst?/",
+      "zh": "早餐好喫嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Very much, thank you.",
+      "phonetic": "/ˈvɛri məʧ, θæŋk ju./",
+      "zh": "很好喫，謝謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will clean the pan later.",
+      "phonetic": "/aɪ wɪl klin ðə pæn ˈleɪtər./",
+      "zh": "鍋我等一下洗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Leave it, I will do it.",
+      "phonetic": "/liv ɪt, aɪ wɪl du ɪt./",
+      "zh": "放着，我來洗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We should eat before it gets cold.",
+      "phonetic": "/wi ʃʊd it ˌbiˈfɔr ɪt gɪts koʊld./",
+      "zh": "趁熱喫比較好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You are right, let's eat.",
+      "phonetic": "/ju ər raɪt, lɛts it./",
+      "zh": "你說得對，開動吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you refill my coffee?",
+      "phonetic": "/kən ju ˈrifɪl maɪ ˈkɔfi?/",
+      "zh": "可以幫我續杯咖啡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Of course, here you are.",
+      "phonetic": "/əv kɔrs, hir ju ər./",
+      "zh": "當然，給你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I burned my tongue!",
+      "phonetic": "/aɪ bərnd maɪ təŋ!/",
+      "zh": "我燙到舌頭了！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Be careful, it is hot.",
+      "phonetic": "/bi ˈkɛrfəl, ɪt ɪz hɑt./",
+      "zh": "小心，很燙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The eggs are fresh from the farm.",
+      "phonetic": "/ðə ɛgz ər frɛʃ frəm ðə fɑrm./",
+      "zh": "蛋是農場新鮮的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They will taste great.",
+      "phonetic": "/ðeɪ wɪl teɪst greɪt./",
+      "zh": "一定很好喫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's make smoothies today.",
+      "phonetic": "/lɛts meɪk smoothies* təˈdeɪ./",
+      "zh": "今天來打果昔吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I love mango smoothies.",
+      "phonetic": "/aɪ ləv ˈmæŋgoʊ smoothies*./",
+      "zh": "我喜歡芒果果昔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you want sugar in your tea?",
+      "phonetic": "/du ju wɔnt ˈʃʊgər ɪn jʊr ti?/",
+      "zh": "你的茶要加糖嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, I drink it plain.",
+      "phonetic": "/noʊ, aɪ drɪŋk ɪt pleɪn./",
+      "zh": "不用，我喝原味。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The yogurt is in the fridge.",
+      "phonetic": "/ðə ˈjoʊgərt ɪz ɪn ðə frɪʤ./",
+      "zh": "酸奶在冰箱裏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will grab it.",
+      "phonetic": "/aɪ wɪl græb ɪt./",
+      "zh": "我去拿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you slice the banana?",
+      "phonetic": "/kən ju slaɪs ðə bəˈnænə?/",
+      "zh": "你能把香蕉切片嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On it right now.",
+      "phonetic": "/ɔn ɪt raɪt naʊ./",
+      "zh": "正在切。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Shall we eat outside?",
+      "phonetic": "/ʃæl wi it ˈaʊtˈsaɪd?/",
+      "zh": "我們外面喫好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, the garden is nice.",
+      "phonetic": "/ʃʊr, ðə ˈgɑrdən ɪz nis./",
+      "zh": "好啊，花園很舒服。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I like a soft boiled egg.",
+      "phonetic": "/aɪ laɪk ə sɔft bɔɪld ɛg./",
+      "zh": "我喜歡水煮嫩蛋。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Six minutes is perfect.",
+      "phonetic": "/sɪks ˈmɪnəts ɪz ˈpərˌfɪkt./",
+      "zh": "六分鐘最剛好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The toast is burning!",
+      "phonetic": "/ðə toʊst ɪz ˈbərnɪŋ!/",
+      "zh": "吐司焦了！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quick, turn off the heat.",
+      "phonetic": "/kwɪk, tərn ɔf ðə hit./",
+      "zh": "快關火。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Want me to cook porridge?",
+      "phonetic": "/wɔnt mi tɪ kʊk ˈpɔrəʤ?/",
+      "zh": "要我煮燕麥粥嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That would be nice.",
+      "phonetic": "/ðət wʊd bi nis./",
+      "zh": "那很好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Breakfast is served.",
+      "phonetic": "/ˈbrɛkfəst ɪz sərvd./",
+      "zh": "早餐好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Smells delicious!",
+      "phonetic": "/smɛlz dɪˈlɪʃəs!/",
+      "zh": "聞起來好香！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do we have honey?",
+      "phonetic": "/du wi hæv ˈhəni?/",
+      "zh": "我們有蜂蜜嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, in the top shelf.",
+      "phonetic": "/jɛs, ɪn ðə tɔp ʃɛlf./",
+      "zh": "有，在最上層。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pancakes are ready.",
+      "phonetic": "/ðə ˈpænˌkeɪks ər ˈrɛdi./",
+      "zh": "鬆餅好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will drizzle maple syrup.",
+      "phonetic": "/aɪ wɪl ˈdrɪzəl ˈmeɪpəl ˈsɪrəp./",
+      "zh": "我來淋楓糖漿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I prefer whole wheat bread.",
+      "phonetic": "/aɪ prɪˈfər hoʊl wit brɛd./",
+      "zh": "我比較喜歡全麥麪包。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We have some in the pantry.",
+      "phonetic": "/wi hæv səm ɪn ðə ˈpæntri./",
+      "zh": "儲藏室裏有。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you pass the jam?",
+      "phonetic": "/kən ju pæs ðə ʤæm?/",
+      "zh": "可以遞一下果醬嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here you go.",
+      "phonetic": "/hir ju goʊ./",
+      "zh": "給你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kettle is boiling.",
+      "phonetic": "/ðə ˈkɛtəl ɪz ˈbɔɪlɪŋ./",
+      "zh": "水壺開了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will make some tea.",
+      "phonetic": "/aɪ wɪl meɪk səm ti./",
+      "zh": "我來泡個茶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you want it crispy?",
+      "phonetic": "/du ju wɔnt ɪt ˈkrɪspi?/",
+      "zh": "你要脆一點嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, a little crispy.",
+      "phonetic": "/jɛs, ə ˈlɪtəl ˈkrɪspi./",
+      "zh": "對，稍微脆一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This omelet looks good.",
+      "phonetic": "/ðɪs ˈɑmlət lʊks gʊd./",
+      "zh": "這個歐姆蛋看起來不錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I added some cheese.",
+      "phonetic": "/aɪ ˈædɪd səm ʧiz./",
+      "zh": "我加了一點起司。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you wash the fruit?",
+      "phonetic": "/dɪd ju wɑʃ ðə frut?/",
+      "zh": "水果洗過了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the apples are clean.",
+      "phonetic": "/jɛs, ðə ˈæpəlz ər klin./",
+      "zh": "洗了，蘋果很乾淨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's set the table.",
+      "phonetic": "/lɛts sɛt ðə ˈteɪbəl./",
+      "zh": "我們來擺餐具吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Okay, I will get the plates.",
+      "phonetic": "/ˌoʊˈkeɪ, aɪ wɪl gɪt ðə pleɪts./",
+      "zh": "好，我去拿盤子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bacon is almost done.",
+      "phonetic": "/ðə ˈbeɪkən ɪz ˈɔlˌmoʊst dən./",
+      "zh": "培根快好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Perfect, I am hungry.",
+      "phonetic": "/ˈpərˌfɪkt, aɪ æm ˈhəŋgri./",
+      "zh": "剛好，我餓了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you want juice or tea?",
+      "phonetic": "/du ju wɔnt ʤus ər ti?/",
+      "zh": "你要果汁還是茶？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will have orange juice.",
+      "phonetic": "/aɪ wɪl hæv ˈɔrɪnʤ ʤus./",
+      "zh": "我要柳橙汁。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We are out of milk.",
+      "phonetic": "/wi ər aʊt əv mɪlk./",
+      "zh": "我們沒有牛奶了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will buy some later.",
+      "phonetic": "/aɪ wɪl baɪ səm ˈleɪtər./",
+      "zh": "我等一下去買。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you butter the toast?",
+      "phonetic": "/kən ju ˈbətər ðə toʊst?/",
+      "zh": "你能幫吐司抹奶油嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, right away.",
+      "phonetic": "/ʃʊr, raɪt əˈweɪ./",
+      "zh": "可以，馬上來。"
+    }
+  ]
+}

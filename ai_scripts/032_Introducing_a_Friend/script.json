@@ -1,0 +1,2458 @@
+{
+  "title": "Everyday Phrases — Introducing a Friend",
+  "title_zh": "介紹朋友",
+  "scene_zh": "介紹朋友 · 情境對話",
+  "title_quote": "This is my friend, Lee.",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】🤝 實用介紹朋友必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — Introducing a Friend",
+  "youtube_description": "睡著學英文！這部影片收錄實用介紹朋友情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫），不用背，睡前聽就會。重複播放，讓英文自然進入你的大腦。👍 想學更多生活場景，請留言告訴我！別忘了訂閱+按讚。 #英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical Introducing a Friend phrase pairs (each pair: male normal speed → female slow speed → combined dialogue). No memorization needed—just listen before bed and absorb naturally. If you want more real-life scenarios, leave a comment! Subscribe and like!",
+  "youtube_tags": [
+    "英文聽力",
+    "睡前英文",
+    "介紹朋友英文",
+    "English listening",
+    "Sleep learning",
+    "A2 English",
+    "常用英文短語",
+    "零基礎英文",
+    "慢速英文",
+    "英文口語",
+    "Learn English",
+    "English for daily life",
+    "ESL",
+    "English conversation",
+    "聽英語",
+    "英文學習"
+  ],
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "Introducing a Friend",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "Introducing a Friend",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Social",
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "This is my friend, Lee.",
+      "phonetic": "/ðɪs ɪz maɪ frɛnd, li./",
+      "zh": "這是我朋友 Lee。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hi Lee, nice meet.",
+      "phonetic": "/haɪ li, nis mit./",
+      "zh": "嗨 Lee，幸會。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Lee, meet Sara.",
+      "phonetic": "/li, mit ˈsɛrə./",
+      "zh": "Lee，這是 Sara。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hello, Sara, welcome.",
+      "phonetic": "/hɛˈloʊ, ˈsɛrə, ˈwɛlkəm./",
+      "zh": "你好 Sara，歡迎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We work together.",
+      "phonetic": "/wi wərk təˈgɛðər./",
+      "zh": "我們同事。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Small world, yes.",
+      "phonetic": "/smɔl wərld, jɛs./",
+      "zh": "世界小。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He is from Tokyo.",
+      "phonetic": "/hi ɪz frəm ˈtoʊkiˌoʊ./",
+      "zh": "他來自東京。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lovely city, I bet.",
+      "phonetic": "/ˈləvli ˈsɪti, aɪ bɛt./",
+      "zh": "好城市。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She loves hiking.",
+      "phonetic": "/ʃi ləvz ˈhaɪkɪŋ./",
+      "zh": "她愛爬山。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We should go.",
+      "phonetic": "/wi ʃʊd goʊ./",
+      "zh": "該去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Have you two met?",
+      "phonetic": "/hæv ju tu mɛt?/",
+      "zh": "你們見過？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, first time.",
+      "phonetic": "/noʊ, fərst taɪm./",
+      "zh": "沒，第一次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let me introduce him.",
+      "phonetic": "/lɛt mi ˌɪntrəˈdus ɪm./",
+      "zh": "我介紹他。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Go ahead, please.",
+      "phonetic": "/goʊ əˈhɛd, pliz./",
+      "zh": "請。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My classmate, Joy.",
+      "phonetic": "/maɪ ˈklæsˌmeɪt, ʤɔɪ./",
+      "zh": "我同學 Joy。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hi Joy, heard of you.",
+      "phonetic": "/haɪ ʤɔɪ, hərd əv ju./",
+      "zh": "嗨 Joy，聽過你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "They get along.",
+      "phonetic": "/ðeɪ gɪt əˈlɔŋ./",
+      "zh": "他們合得來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Like old pals.",
+      "phonetic": "/laɪk oʊld pælz./",
+      "zh": "像老友。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Shake hands, guys.",
+      "phonetic": "/ʃeɪk hænz, gaɪz./",
+      "zh": "握手，兩位。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Firm and warm.",
+      "phonetic": "/fərm ənd wɔrm./",
+      "zh": "穩而暖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This is our neighbor.",
+      "phonetic": "/ðɪs ɪz ɑr ˈneɪbər./",
+      "zh": "這是我們鄰居。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hello, at last.",
+      "phonetic": "/hɛˈloʊ, æt læst./",
+      "zh": "嗨，終於。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She is a great cook.",
+      "phonetic": "/ʃi ɪz ə greɪt kʊk./",
+      "zh": "她很會煮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Invite her, then.",
+      "phonetic": "/ˌɪnˈvaɪt hər, ðɛn./",
+      "zh": "請她。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He plays guitar.",
+      "phonetic": "/hi pleɪz gɪˈtɑr./",
+      "zh": "他彈吉他。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Show us, mate.",
+      "phonetic": "/ʃoʊ ˈjuˈɛs, meɪt./",
+      "zh": "彈給我們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My brother, Tom.",
+      "phonetic": "/maɪ ˈbrəðər, tɑm./",
+      "zh": "我弟 Tom。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hi Tom, welcome.",
+      "phonetic": "/haɪ tɑm, ˈwɛlkəm./",
+      "zh": "嗨 Tom，歡迎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We met at school.",
+      "phonetic": "/wi mɛt æt skul./",
+      "zh": "我們在學校認識。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Years ago, yes.",
+      "phonetic": "/jɪrz əˈgoʊ, jɛs./",
+      "zh": "多年前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Introduce the team.",
+      "phonetic": "/ˌɪntrəˈdus ðə tim./",
+      "zh": "介紹團隊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One by one.",
+      "phonetic": "/wən baɪ wən./",
+      "zh": "一個個。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She is new here.",
+      "phonetic": "/ʃi ɪz nu hir./",
+      "zh": "她剛來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Show her around.",
+      "phonetic": "/ʃoʊ hər əraʊnd./",
+      "zh": "帶她逛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He speaks French.",
+      "phonetic": "/hi spiks frɛnʧ./",
+      "zh": "他說法文。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Impressive, truly.",
+      "phonetic": "/ˌɪmˈprɛsɪv, ˈtruli./",
+      "zh": "真厲害。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My old friend, Mai.",
+      "phonetic": "/maɪ oʊld frɛnd, maɪ./",
+      "zh": "老友 Mai。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Long time, Mai.",
+      "phonetic": "/lɔŋ taɪm, maɪ./",
+      "zh": "好久，Mai。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "They share a hobby.",
+      "phonetic": "/ðeɪ ʃɛr ə ˈhɑbi./",
+      "zh": "他們同好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stamp collecting.",
+      "phonetic": "/stæmp kəˈlɛktɪŋ./",
+      "zh": "集郵。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This is the host.",
+      "phonetic": "/ðɪs ɪz ðə hoʊst./",
+      "zh": "這是主人。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pleased to meet.",
+      "phonetic": "/plizd tɪ mit./",
+      "zh": "幸會。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My study buddy.",
+      "phonetic": "/maɪ ˈstədi ˈbədi./",
+      "zh": "我讀書搭檔。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We cram together.",
+      "phonetic": "/wi kræm təˈgɛðər./",
+      "zh": "一起衝刺。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She is in my class.",
+      "phonetic": "/ʃi ɪz ɪn maɪ klæs./",
+      "zh": "她同班。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Say hi, then.",
+      "phonetic": "/seɪ haɪ, ðɛn./",
+      "zh": "那說嗨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He moved last month.",
+      "phonetic": "/hi muvd læst mənθ./",
+      "zh": "他上月搬家。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "From the city.",
+      "phonetic": "/frəm ðə ˈsɪti./",
+      "zh": "從城裏。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My gym partner.",
+      "phonetic": "/maɪ ʤɪm ˈpɑrtnər./",
+      "zh": "我健身搭子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spot me, bro.",
+      "phonetic": "/spɑt mi, broʊ./",
+      "zh": "幫我看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "They hit it off.",
+      "phonetic": "/ðeɪ hɪt ɪt ɔf./",
+      "zh": "他們很投緣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good to see.",
+      "phonetic": "/gʊd tɪ si./",
+      "zh": "真高興。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My cousin, Lin.",
+      "phonetic": "/maɪ ˈkəzən, lɪn./",
+      "zh": "我表妹 Lin。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hi Lin, welcome.",
+      "phonetic": "/haɪ lɪn, ˈwɛlkəm./",
+      "zh": "嗨 Lin，歡迎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He is visiting.",
+      "phonetic": "/hi ɪz ˈvɪzɪtɪŋ./",
+      "zh": "他在拜訪。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Enjoy the stay.",
+      "phonetic": "/ˌɛnˈʤɔɪ ðə steɪ./",
+      "zh": "玩得開心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's all sit.",
+      "phonetic": "/lɛts ɔl sɪt./",
+      "zh": "大家坐。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Make room, please.",
+      "phonetic": "/meɪk rum, pliz./",
+      "zh": "挪個位。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The intro went well.",
+      "phonetic": "/ðə ˈɪntroʊ wɛnt wɛl./",
+      "zh": "介紹順利。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Easy, they are.",
+      "phonetic": "/ˈizi, ðeɪ ər./",
+      "zh": "他們隨和。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Glad you met.",
+      "phonetic": "/glæd ju mɛt./",
+      "zh": "高興你們認識。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Me too, thanks.",
+      "phonetic": "/mi tu, θæŋks./",
+      "zh": "我也是，謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Keep in touch, all.",
+      "phonetic": "/kip ɪn təʧ, ɔl./",
+      "zh": "保持聯繫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Exchange contacts.",
+      "phonetic": "/ɪksˈʧeɪnʤ ˈkɑnˌtækts./",
+      "zh": "交換聯絡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Nice meeting you.",
+      "phonetic": "/nis ˈmitɪŋ ju./",
+      "zh": "很高興認識你。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same here, truly.",
+      "phonetic": "/seɪm hir, ˈtruli./",
+      "zh": "我也是。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Nice meeting you.",
+      "phonetic": "/nis ˈmitɪŋ ju./",
+      "zh": "很高興認識你。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same here, truly.",
+      "phonetic": "/seɪm hir, ˈtruli./",
+      "zh": "我也是。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Keep in touch, all.",
+      "phonetic": "/kip ɪn təʧ, ɔl./",
+      "zh": "保持聯繫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Exchange contacts.",
+      "phonetic": "/ɪksˈʧeɪnʤ ˈkɑnˌtækts./",
+      "zh": "交換聯絡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Glad you met.",
+      "phonetic": "/glæd ju mɛt./",
+      "zh": "高興你們認識。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Me too, thanks.",
+      "phonetic": "/mi tu, θæŋks./",
+      "zh": "我也是，謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The intro went well.",
+      "phonetic": "/ðə ˈɪntroʊ wɛnt wɛl./",
+      "zh": "介紹順利。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Easy, they are.",
+      "phonetic": "/ˈizi, ðeɪ ər./",
+      "zh": "他們隨和。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's all sit.",
+      "phonetic": "/lɛts ɔl sɪt./",
+      "zh": "大家坐。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Make room, please.",
+      "phonetic": "/meɪk rum, pliz./",
+      "zh": "挪個位。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He is visiting.",
+      "phonetic": "/hi ɪz ˈvɪzɪtɪŋ./",
+      "zh": "他在拜訪。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Enjoy the stay.",
+      "phonetic": "/ˌɛnˈʤɔɪ ðə steɪ./",
+      "zh": "玩得開心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My cousin, Lin.",
+      "phonetic": "/maɪ ˈkəzən, lɪn./",
+      "zh": "我表妹 Lin。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hi Lin, welcome.",
+      "phonetic": "/haɪ lɪn, ˈwɛlkəm./",
+      "zh": "嗨 Lin，歡迎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "They hit it off.",
+      "phonetic": "/ðeɪ hɪt ɪt ɔf./",
+      "zh": "他們很投緣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good to see.",
+      "phonetic": "/gʊd tɪ si./",
+      "zh": "真高興。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My gym partner.",
+      "phonetic": "/maɪ ʤɪm ˈpɑrtnər./",
+      "zh": "我健身搭子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spot me, bro.",
+      "phonetic": "/spɑt mi, broʊ./",
+      "zh": "幫我看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He moved last month.",
+      "phonetic": "/hi muvd læst mənθ./",
+      "zh": "他上月搬家。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "From the city.",
+      "phonetic": "/frəm ðə ˈsɪti./",
+      "zh": "從城裏。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She is in my class.",
+      "phonetic": "/ʃi ɪz ɪn maɪ klæs./",
+      "zh": "她同班。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Say hi, then.",
+      "phonetic": "/seɪ haɪ, ðɛn./",
+      "zh": "那說嗨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My study buddy.",
+      "phonetic": "/maɪ ˈstədi ˈbədi./",
+      "zh": "我讀書搭檔。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We cram together.",
+      "phonetic": "/wi kræm təˈgɛðər./",
+      "zh": "一起衝刺。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This is the host.",
+      "phonetic": "/ðɪs ɪz ðə hoʊst./",
+      "zh": "這是主人。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pleased to meet.",
+      "phonetic": "/plizd tɪ mit./",
+      "zh": "幸會。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "They share a hobby.",
+      "phonetic": "/ðeɪ ʃɛr ə ˈhɑbi./",
+      "zh": "他們同好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stamp collecting.",
+      "phonetic": "/stæmp kəˈlɛktɪŋ./",
+      "zh": "集郵。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My old friend, Mai.",
+      "phonetic": "/maɪ oʊld frɛnd, maɪ./",
+      "zh": "老友 Mai。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Long time, Mai.",
+      "phonetic": "/lɔŋ taɪm, maɪ./",
+      "zh": "好久，Mai。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He speaks French.",
+      "phonetic": "/hi spiks frɛnʧ./",
+      "zh": "他說法文。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Impressive, truly.",
+      "phonetic": "/ˌɪmˈprɛsɪv, ˈtruli./",
+      "zh": "真厲害。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She is new here.",
+      "phonetic": "/ʃi ɪz nu hir./",
+      "zh": "她剛來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Show her around.",
+      "phonetic": "/ʃoʊ hər əraʊnd./",
+      "zh": "帶她逛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Introduce the team.",
+      "phonetic": "/ˌɪntrəˈdus ðə tim./",
+      "zh": "介紹團隊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One by one.",
+      "phonetic": "/wən baɪ wən./",
+      "zh": "一個個。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We met at school.",
+      "phonetic": "/wi mɛt æt skul./",
+      "zh": "我們在學校認識。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Years ago, yes.",
+      "phonetic": "/jɪrz əˈgoʊ, jɛs./",
+      "zh": "多年前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My brother, Tom.",
+      "phonetic": "/maɪ ˈbrəðər, tɑm./",
+      "zh": "我弟 Tom。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hi Tom, welcome.",
+      "phonetic": "/haɪ tɑm, ˈwɛlkəm./",
+      "zh": "嗨 Tom，歡迎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He plays guitar.",
+      "phonetic": "/hi pleɪz gɪˈtɑr./",
+      "zh": "他彈吉他。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Show us, mate.",
+      "phonetic": "/ʃoʊ ˈjuˈɛs, meɪt./",
+      "zh": "彈給我們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She is a great cook.",
+      "phonetic": "/ʃi ɪz ə greɪt kʊk./",
+      "zh": "她很會煮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Invite her, then.",
+      "phonetic": "/ˌɪnˈvaɪt hər, ðɛn./",
+      "zh": "請她。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This is our neighbor.",
+      "phonetic": "/ðɪs ɪz ɑr ˈneɪbər./",
+      "zh": "這是我們鄰居。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hello, at last.",
+      "phonetic": "/hɛˈloʊ, æt læst./",
+      "zh": "嗨，終於。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Shake hands, guys.",
+      "phonetic": "/ʃeɪk hænz, gaɪz./",
+      "zh": "握手，兩位。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Firm and warm.",
+      "phonetic": "/fərm ənd wɔrm./",
+      "zh": "穩而暖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "They get along.",
+      "phonetic": "/ðeɪ gɪt əˈlɔŋ./",
+      "zh": "他們合得來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Like old pals.",
+      "phonetic": "/laɪk oʊld pælz./",
+      "zh": "像老友。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My classmate, Joy.",
+      "phonetic": "/maɪ ˈklæsˌmeɪt, ʤɔɪ./",
+      "zh": "我同學 Joy。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hi Joy, heard of you.",
+      "phonetic": "/haɪ ʤɔɪ, hərd əv ju./",
+      "zh": "嗨 Joy，聽過你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let me introduce him.",
+      "phonetic": "/lɛt mi ˌɪntrəˈdus ɪm./",
+      "zh": "我介紹他。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Go ahead, please.",
+      "phonetic": "/goʊ əˈhɛd, pliz./",
+      "zh": "請。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Have you two met?",
+      "phonetic": "/hæv ju tu mɛt?/",
+      "zh": "你們見過？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, first time.",
+      "phonetic": "/noʊ, fərst taɪm./",
+      "zh": "沒，第一次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She loves hiking.",
+      "phonetic": "/ʃi ləvz ˈhaɪkɪŋ./",
+      "zh": "她愛爬山。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We should go.",
+      "phonetic": "/wi ʃʊd goʊ./",
+      "zh": "該去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He is from Tokyo.",
+      "phonetic": "/hi ɪz frəm ˈtoʊkiˌoʊ./",
+      "zh": "他來自東京。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lovely city, I bet.",
+      "phonetic": "/ˈləvli ˈsɪti, aɪ bɛt./",
+      "zh": "好城市。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We work together.",
+      "phonetic": "/wi wərk təˈgɛðər./",
+      "zh": "我們同事。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Small world, yes.",
+      "phonetic": "/smɔl wərld, jɛs./",
+      "zh": "世界小。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Lee, meet Sara.",
+      "phonetic": "/li, mit ˈsɛrə./",
+      "zh": "Lee，這是 Sara。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hello, Sara, welcome.",
+      "phonetic": "/hɛˈloʊ, ˈsɛrə, ˈwɛlkəm./",
+      "zh": "你好 Sara，歡迎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This is my friend, Lee.",
+      "phonetic": "/ðɪs ɪz maɪ frɛnd, li./",
+      "zh": "這是我朋友 Lee。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hi Lee, nice meet.",
+      "phonetic": "/haɪ li, nis mit./",
+      "zh": "嗨 Lee，幸會。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This is my friend, Lee.",
+      "phonetic": "/ðɪs ɪz maɪ frɛnd, li./",
+      "zh": "這是我朋友 Lee。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hi Lee, nice meet.",
+      "phonetic": "/haɪ li, nis mit./",
+      "zh": "嗨 Lee，幸會。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Lee, meet Sara.",
+      "phonetic": "/li, mit ˈsɛrə./",
+      "zh": "Lee，這是 Sara。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hello, Sara, welcome.",
+      "phonetic": "/hɛˈloʊ, ˈsɛrə, ˈwɛlkəm./",
+      "zh": "你好 Sara，歡迎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We work together.",
+      "phonetic": "/wi wərk təˈgɛðər./",
+      "zh": "我們同事。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Small world, yes.",
+      "phonetic": "/smɔl wərld, jɛs./",
+      "zh": "世界小。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He is from Tokyo.",
+      "phonetic": "/hi ɪz frəm ˈtoʊkiˌoʊ./",
+      "zh": "他來自東京。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lovely city, I bet.",
+      "phonetic": "/ˈləvli ˈsɪti, aɪ bɛt./",
+      "zh": "好城市。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She loves hiking.",
+      "phonetic": "/ʃi ləvz ˈhaɪkɪŋ./",
+      "zh": "她愛爬山。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We should go.",
+      "phonetic": "/wi ʃʊd goʊ./",
+      "zh": "該去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Have you two met?",
+      "phonetic": "/hæv ju tu mɛt?/",
+      "zh": "你們見過？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, first time.",
+      "phonetic": "/noʊ, fərst taɪm./",
+      "zh": "沒，第一次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let me introduce him.",
+      "phonetic": "/lɛt mi ˌɪntrəˈdus ɪm./",
+      "zh": "我介紹他。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Go ahead, please.",
+      "phonetic": "/goʊ əˈhɛd, pliz./",
+      "zh": "請。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My classmate, Joy.",
+      "phonetic": "/maɪ ˈklæsˌmeɪt, ʤɔɪ./",
+      "zh": "我同學 Joy。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hi Joy, heard of you.",
+      "phonetic": "/haɪ ʤɔɪ, hərd əv ju./",
+      "zh": "嗨 Joy，聽過你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "They get along.",
+      "phonetic": "/ðeɪ gɪt əˈlɔŋ./",
+      "zh": "他們合得來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Like old pals.",
+      "phonetic": "/laɪk oʊld pælz./",
+      "zh": "像老友。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Shake hands, guys.",
+      "phonetic": "/ʃeɪk hænz, gaɪz./",
+      "zh": "握手，兩位。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Firm and warm.",
+      "phonetic": "/fərm ənd wɔrm./",
+      "zh": "穩而暖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This is our neighbor.",
+      "phonetic": "/ðɪs ɪz ɑr ˈneɪbər./",
+      "zh": "這是我們鄰居。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hello, at last.",
+      "phonetic": "/hɛˈloʊ, æt læst./",
+      "zh": "嗨，終於。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She is a great cook.",
+      "phonetic": "/ʃi ɪz ə greɪt kʊk./",
+      "zh": "她很會煮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Invite her, then.",
+      "phonetic": "/ˌɪnˈvaɪt hər, ðɛn./",
+      "zh": "請她。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He plays guitar.",
+      "phonetic": "/hi pleɪz gɪˈtɑr./",
+      "zh": "他彈吉他。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Show us, mate.",
+      "phonetic": "/ʃoʊ ˈjuˈɛs, meɪt./",
+      "zh": "彈給我們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My brother, Tom.",
+      "phonetic": "/maɪ ˈbrəðər, tɑm./",
+      "zh": "我弟 Tom。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hi Tom, welcome.",
+      "phonetic": "/haɪ tɑm, ˈwɛlkəm./",
+      "zh": "嗨 Tom，歡迎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We met at school.",
+      "phonetic": "/wi mɛt æt skul./",
+      "zh": "我們在學校認識。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Years ago, yes.",
+      "phonetic": "/jɪrz əˈgoʊ, jɛs./",
+      "zh": "多年前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Introduce the team.",
+      "phonetic": "/ˌɪntrəˈdus ðə tim./",
+      "zh": "介紹團隊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One by one.",
+      "phonetic": "/wən baɪ wən./",
+      "zh": "一個個。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She is new here.",
+      "phonetic": "/ʃi ɪz nu hir./",
+      "zh": "她剛來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Show her around.",
+      "phonetic": "/ʃoʊ hər əraʊnd./",
+      "zh": "帶她逛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He speaks French.",
+      "phonetic": "/hi spiks frɛnʧ./",
+      "zh": "他說法文。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Impressive, truly.",
+      "phonetic": "/ˌɪmˈprɛsɪv, ˈtruli./",
+      "zh": "真厲害。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My old friend, Mai.",
+      "phonetic": "/maɪ oʊld frɛnd, maɪ./",
+      "zh": "老友 Mai。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Long time, Mai.",
+      "phonetic": "/lɔŋ taɪm, maɪ./",
+      "zh": "好久，Mai。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "They share a hobby.",
+      "phonetic": "/ðeɪ ʃɛr ə ˈhɑbi./",
+      "zh": "他們同好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stamp collecting.",
+      "phonetic": "/stæmp kəˈlɛktɪŋ./",
+      "zh": "集郵。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This is the host.",
+      "phonetic": "/ðɪs ɪz ðə hoʊst./",
+      "zh": "這是主人。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pleased to meet.",
+      "phonetic": "/plizd tɪ mit./",
+      "zh": "幸會。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My study buddy.",
+      "phonetic": "/maɪ ˈstədi ˈbədi./",
+      "zh": "我讀書搭檔。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We cram together.",
+      "phonetic": "/wi kræm təˈgɛðər./",
+      "zh": "一起衝刺。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She is in my class.",
+      "phonetic": "/ʃi ɪz ɪn maɪ klæs./",
+      "zh": "她同班。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Say hi, then.",
+      "phonetic": "/seɪ haɪ, ðɛn./",
+      "zh": "那說嗨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He moved last month.",
+      "phonetic": "/hi muvd læst mənθ./",
+      "zh": "他上月搬家。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "From the city.",
+      "phonetic": "/frəm ðə ˈsɪti./",
+      "zh": "從城裏。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My gym partner.",
+      "phonetic": "/maɪ ʤɪm ˈpɑrtnər./",
+      "zh": "我健身搭子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spot me, bro.",
+      "phonetic": "/spɑt mi, broʊ./",
+      "zh": "幫我看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "They hit it off.",
+      "phonetic": "/ðeɪ hɪt ɪt ɔf./",
+      "zh": "他們很投緣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good to see.",
+      "phonetic": "/gʊd tɪ si./",
+      "zh": "真高興。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My cousin, Lin.",
+      "phonetic": "/maɪ ˈkəzən, lɪn./",
+      "zh": "我表妹 Lin。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hi Lin, welcome.",
+      "phonetic": "/haɪ lɪn, ˈwɛlkəm./",
+      "zh": "嗨 Lin，歡迎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He is visiting.",
+      "phonetic": "/hi ɪz ˈvɪzɪtɪŋ./",
+      "zh": "他在拜訪。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Enjoy the stay.",
+      "phonetic": "/ˌɛnˈʤɔɪ ðə steɪ./",
+      "zh": "玩得開心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's all sit.",
+      "phonetic": "/lɛts ɔl sɪt./",
+      "zh": "大家坐。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Make room, please.",
+      "phonetic": "/meɪk rum, pliz./",
+      "zh": "挪個位。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The intro went well.",
+      "phonetic": "/ðə ˈɪntroʊ wɛnt wɛl./",
+      "zh": "介紹順利。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Easy, they are.",
+      "phonetic": "/ˈizi, ðeɪ ər./",
+      "zh": "他們隨和。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Glad you met.",
+      "phonetic": "/glæd ju mɛt./",
+      "zh": "高興你們認識。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Me too, thanks.",
+      "phonetic": "/mi tu, θæŋks./",
+      "zh": "我也是，謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Keep in touch, all.",
+      "phonetic": "/kip ɪn təʧ, ɔl./",
+      "zh": "保持聯繫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Exchange contacts.",
+      "phonetic": "/ɪksˈʧeɪnʤ ˈkɑnˌtækts./",
+      "zh": "交換聯絡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Nice meeting you.",
+      "phonetic": "/nis ˈmitɪŋ ju./",
+      "zh": "很高興認識你。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same here, truly.",
+      "phonetic": "/seɪm hir, ˈtruli./",
+      "zh": "我也是。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Nice meeting you.",
+      "phonetic": "/nis ˈmitɪŋ ju./",
+      "zh": "很高興認識你。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same here, truly.",
+      "phonetic": "/seɪm hir, ˈtruli./",
+      "zh": "我也是。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Keep in touch, all.",
+      "phonetic": "/kip ɪn təʧ, ɔl./",
+      "zh": "保持聯繫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Exchange contacts.",
+      "phonetic": "/ɪksˈʧeɪnʤ ˈkɑnˌtækts./",
+      "zh": "交換聯絡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Glad you met.",
+      "phonetic": "/glæd ju mɛt./",
+      "zh": "高興你們認識。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Me too, thanks.",
+      "phonetic": "/mi tu, θæŋks./",
+      "zh": "我也是，謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The intro went well.",
+      "phonetic": "/ðə ˈɪntroʊ wɛnt wɛl./",
+      "zh": "介紹順利。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Easy, they are.",
+      "phonetic": "/ˈizi, ðeɪ ər./",
+      "zh": "他們隨和。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's all sit.",
+      "phonetic": "/lɛts ɔl sɪt./",
+      "zh": "大家坐。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Make room, please.",
+      "phonetic": "/meɪk rum, pliz./",
+      "zh": "挪個位。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He is visiting.",
+      "phonetic": "/hi ɪz ˈvɪzɪtɪŋ./",
+      "zh": "他在拜訪。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Enjoy the stay.",
+      "phonetic": "/ˌɛnˈʤɔɪ ðə steɪ./",
+      "zh": "玩得開心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My cousin, Lin.",
+      "phonetic": "/maɪ ˈkəzən, lɪn./",
+      "zh": "我表妹 Lin。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hi Lin, welcome.",
+      "phonetic": "/haɪ lɪn, ˈwɛlkəm./",
+      "zh": "嗨 Lin，歡迎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "They hit it off.",
+      "phonetic": "/ðeɪ hɪt ɪt ɔf./",
+      "zh": "他們很投緣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good to see.",
+      "phonetic": "/gʊd tɪ si./",
+      "zh": "真高興。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My gym partner.",
+      "phonetic": "/maɪ ʤɪm ˈpɑrtnər./",
+      "zh": "我健身搭子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spot me, bro.",
+      "phonetic": "/spɑt mi, broʊ./",
+      "zh": "幫我看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He moved last month.",
+      "phonetic": "/hi muvd læst mənθ./",
+      "zh": "他上月搬家。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "From the city.",
+      "phonetic": "/frəm ðə ˈsɪti./",
+      "zh": "從城裏。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She is in my class.",
+      "phonetic": "/ʃi ɪz ɪn maɪ klæs./",
+      "zh": "她同班。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Say hi, then.",
+      "phonetic": "/seɪ haɪ, ðɛn./",
+      "zh": "那說嗨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My study buddy.",
+      "phonetic": "/maɪ ˈstədi ˈbədi./",
+      "zh": "我讀書搭檔。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We cram together.",
+      "phonetic": "/wi kræm təˈgɛðər./",
+      "zh": "一起衝刺。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This is the host.",
+      "phonetic": "/ðɪs ɪz ðə hoʊst./",
+      "zh": "這是主人。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pleased to meet.",
+      "phonetic": "/plizd tɪ mit./",
+      "zh": "幸會。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "They share a hobby.",
+      "phonetic": "/ðeɪ ʃɛr ə ˈhɑbi./",
+      "zh": "他們同好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stamp collecting.",
+      "phonetic": "/stæmp kəˈlɛktɪŋ./",
+      "zh": "集郵。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My old friend, Mai.",
+      "phonetic": "/maɪ oʊld frɛnd, maɪ./",
+      "zh": "老友 Mai。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Long time, Mai.",
+      "phonetic": "/lɔŋ taɪm, maɪ./",
+      "zh": "好久，Mai。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He speaks French.",
+      "phonetic": "/hi spiks frɛnʧ./",
+      "zh": "他說法文。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Impressive, truly.",
+      "phonetic": "/ˌɪmˈprɛsɪv, ˈtruli./",
+      "zh": "真厲害。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She is new here.",
+      "phonetic": "/ʃi ɪz nu hir./",
+      "zh": "她剛來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Show her around.",
+      "phonetic": "/ʃoʊ hər əraʊnd./",
+      "zh": "帶她逛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Introduce the team.",
+      "phonetic": "/ˌɪntrəˈdus ðə tim./",
+      "zh": "介紹團隊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One by one.",
+      "phonetic": "/wən baɪ wən./",
+      "zh": "一個個。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We met at school.",
+      "phonetic": "/wi mɛt æt skul./",
+      "zh": "我們在學校認識。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Years ago, yes.",
+      "phonetic": "/jɪrz əˈgoʊ, jɛs./",
+      "zh": "多年前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My brother, Tom.",
+      "phonetic": "/maɪ ˈbrəðər, tɑm./",
+      "zh": "我弟 Tom。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hi Tom, welcome.",
+      "phonetic": "/haɪ tɑm, ˈwɛlkəm./",
+      "zh": "嗨 Tom，歡迎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He plays guitar.",
+      "phonetic": "/hi pleɪz gɪˈtɑr./",
+      "zh": "他彈吉他。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Show us, mate.",
+      "phonetic": "/ʃoʊ ˈjuˈɛs, meɪt./",
+      "zh": "彈給我們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She is a great cook.",
+      "phonetic": "/ʃi ɪz ə greɪt kʊk./",
+      "zh": "她很會煮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Invite her, then.",
+      "phonetic": "/ˌɪnˈvaɪt hər, ðɛn./",
+      "zh": "請她。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This is our neighbor.",
+      "phonetic": "/ðɪs ɪz ɑr ˈneɪbər./",
+      "zh": "這是我們鄰居。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hello, at last.",
+      "phonetic": "/hɛˈloʊ, æt læst./",
+      "zh": "嗨，終於。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Shake hands, guys.",
+      "phonetic": "/ʃeɪk hænz, gaɪz./",
+      "zh": "握手，兩位。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Firm and warm.",
+      "phonetic": "/fərm ənd wɔrm./",
+      "zh": "穩而暖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "They get along.",
+      "phonetic": "/ðeɪ gɪt əˈlɔŋ./",
+      "zh": "他們合得來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Like old pals.",
+      "phonetic": "/laɪk oʊld pælz./",
+      "zh": "像老友。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My classmate, Joy.",
+      "phonetic": "/maɪ ˈklæsˌmeɪt, ʤɔɪ./",
+      "zh": "我同學 Joy。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hi Joy, heard of you.",
+      "phonetic": "/haɪ ʤɔɪ, hərd əv ju./",
+      "zh": "嗨 Joy，聽過你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let me introduce him.",
+      "phonetic": "/lɛt mi ˌɪntrəˈdus ɪm./",
+      "zh": "我介紹他。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Go ahead, please.",
+      "phonetic": "/goʊ əˈhɛd, pliz./",
+      "zh": "請。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Have you two met?",
+      "phonetic": "/hæv ju tu mɛt?/",
+      "zh": "你們見過？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, first time.",
+      "phonetic": "/noʊ, fərst taɪm./",
+      "zh": "沒，第一次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She loves hiking.",
+      "phonetic": "/ʃi ləvz ˈhaɪkɪŋ./",
+      "zh": "她愛爬山。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We should go.",
+      "phonetic": "/wi ʃʊd goʊ./",
+      "zh": "該去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He is from Tokyo.",
+      "phonetic": "/hi ɪz frəm ˈtoʊkiˌoʊ./",
+      "zh": "他來自東京。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lovely city, I bet.",
+      "phonetic": "/ˈləvli ˈsɪti, aɪ bɛt./",
+      "zh": "好城市。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We work together.",
+      "phonetic": "/wi wərk təˈgɛðər./",
+      "zh": "我們同事。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Small world, yes.",
+      "phonetic": "/smɔl wərld, jɛs./",
+      "zh": "世界小。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Lee, meet Sara.",
+      "phonetic": "/li, mit ˈsɛrə./",
+      "zh": "Lee，這是 Sara。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hello, Sara, welcome.",
+      "phonetic": "/hɛˈloʊ, ˈsɛrə, ˈwɛlkəm./",
+      "zh": "你好 Sara，歡迎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This is my friend, Lee.",
+      "phonetic": "/ðɪs ɪz maɪ frɛnd, li./",
+      "zh": "這是我朋友 Lee。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hi Lee, nice meet.",
+      "phonetic": "/haɪ li, nis mit./",
+      "zh": "嗨 Lee，幸會。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This is my friend, Lee.",
+      "phonetic": "/ðɪs ɪz maɪ frɛnd, li./",
+      "zh": "這是我朋友 Lee。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hi Lee, nice meet.",
+      "phonetic": "/haɪ li, nis mit./",
+      "zh": "嗨 Lee，幸會。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Lee, meet Sara.",
+      "phonetic": "/li, mit ˈsɛrə./",
+      "zh": "Lee，這是 Sara。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hello, Sara, welcome.",
+      "phonetic": "/hɛˈloʊ, ˈsɛrə, ˈwɛlkəm./",
+      "zh": "你好 Sara，歡迎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We work together.",
+      "phonetic": "/wi wərk təˈgɛðər./",
+      "zh": "我們同事。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Small world, yes.",
+      "phonetic": "/smɔl wərld, jɛs./",
+      "zh": "世界小。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He is from Tokyo.",
+      "phonetic": "/hi ɪz frəm ˈtoʊkiˌoʊ./",
+      "zh": "他來自東京。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lovely city, I bet.",
+      "phonetic": "/ˈləvli ˈsɪti, aɪ bɛt./",
+      "zh": "好城市。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She loves hiking.",
+      "phonetic": "/ʃi ləvz ˈhaɪkɪŋ./",
+      "zh": "她愛爬山。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We should go.",
+      "phonetic": "/wi ʃʊd goʊ./",
+      "zh": "該去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Have you two met?",
+      "phonetic": "/hæv ju tu mɛt?/",
+      "zh": "你們見過？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, first time.",
+      "phonetic": "/noʊ, fərst taɪm./",
+      "zh": "沒，第一次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let me introduce him.",
+      "phonetic": "/lɛt mi ˌɪntrəˈdus ɪm./",
+      "zh": "我介紹他。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Go ahead, please.",
+      "phonetic": "/goʊ əˈhɛd, pliz./",
+      "zh": "請。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My classmate, Joy.",
+      "phonetic": "/maɪ ˈklæsˌmeɪt, ʤɔɪ./",
+      "zh": "我同學 Joy。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hi Joy, heard of you.",
+      "phonetic": "/haɪ ʤɔɪ, hərd əv ju./",
+      "zh": "嗨 Joy，聽過你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "They get along.",
+      "phonetic": "/ðeɪ gɪt əˈlɔŋ./",
+      "zh": "他們合得來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Like old pals.",
+      "phonetic": "/laɪk oʊld pælz./",
+      "zh": "像老友。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Shake hands, guys.",
+      "phonetic": "/ʃeɪk hænz, gaɪz./",
+      "zh": "握手，兩位。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Firm and warm.",
+      "phonetic": "/fərm ənd wɔrm./",
+      "zh": "穩而暖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This is our neighbor.",
+      "phonetic": "/ðɪs ɪz ɑr ˈneɪbər./",
+      "zh": "這是我們鄰居。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hello, at last.",
+      "phonetic": "/hɛˈloʊ, æt læst./",
+      "zh": "嗨，終於。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She is a great cook.",
+      "phonetic": "/ʃi ɪz ə greɪt kʊk./",
+      "zh": "她很會煮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Invite her, then.",
+      "phonetic": "/ˌɪnˈvaɪt hər, ðɛn./",
+      "zh": "請她。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He plays guitar.",
+      "phonetic": "/hi pleɪz gɪˈtɑr./",
+      "zh": "他彈吉他。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Show us, mate.",
+      "phonetic": "/ʃoʊ ˈjuˈɛs, meɪt./",
+      "zh": "彈給我們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My brother, Tom.",
+      "phonetic": "/maɪ ˈbrəðər, tɑm./",
+      "zh": "我弟 Tom。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hi Tom, welcome.",
+      "phonetic": "/haɪ tɑm, ˈwɛlkəm./",
+      "zh": "嗨 Tom，歡迎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We met at school.",
+      "phonetic": "/wi mɛt æt skul./",
+      "zh": "我們在學校認識。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Years ago, yes.",
+      "phonetic": "/jɪrz əˈgoʊ, jɛs./",
+      "zh": "多年前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Introduce the team.",
+      "phonetic": "/ˌɪntrəˈdus ðə tim./",
+      "zh": "介紹團隊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One by one.",
+      "phonetic": "/wən baɪ wən./",
+      "zh": "一個個。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She is new here.",
+      "phonetic": "/ʃi ɪz nu hir./",
+      "zh": "她剛來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Show her around.",
+      "phonetic": "/ʃoʊ hər əraʊnd./",
+      "zh": "帶她逛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He speaks French.",
+      "phonetic": "/hi spiks frɛnʧ./",
+      "zh": "他說法文。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Impressive, truly.",
+      "phonetic": "/ˌɪmˈprɛsɪv, ˈtruli./",
+      "zh": "真厲害。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My old friend, Mai.",
+      "phonetic": "/maɪ oʊld frɛnd, maɪ./",
+      "zh": "老友 Mai。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Long time, Mai.",
+      "phonetic": "/lɔŋ taɪm, maɪ./",
+      "zh": "好久，Mai。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "They share a hobby.",
+      "phonetic": "/ðeɪ ʃɛr ə ˈhɑbi./",
+      "zh": "他們同好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stamp collecting.",
+      "phonetic": "/stæmp kəˈlɛktɪŋ./",
+      "zh": "集郵。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This is the host.",
+      "phonetic": "/ðɪs ɪz ðə hoʊst./",
+      "zh": "這是主人。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pleased to meet.",
+      "phonetic": "/plizd tɪ mit./",
+      "zh": "幸會。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My study buddy.",
+      "phonetic": "/maɪ ˈstədi ˈbədi./",
+      "zh": "我讀書搭檔。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We cram together.",
+      "phonetic": "/wi kræm təˈgɛðər./",
+      "zh": "一起衝刺。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She is in my class.",
+      "phonetic": "/ʃi ɪz ɪn maɪ klæs./",
+      "zh": "她同班。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Say hi, then.",
+      "phonetic": "/seɪ haɪ, ðɛn./",
+      "zh": "那說嗨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He moved last month.",
+      "phonetic": "/hi muvd læst mənθ./",
+      "zh": "他上月搬家。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "From the city.",
+      "phonetic": "/frəm ðə ˈsɪti./",
+      "zh": "從城裏。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My gym partner.",
+      "phonetic": "/maɪ ʤɪm ˈpɑrtnər./",
+      "zh": "我健身搭子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spot me, bro.",
+      "phonetic": "/spɑt mi, broʊ./",
+      "zh": "幫我看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "They hit it off.",
+      "phonetic": "/ðeɪ hɪt ɪt ɔf./",
+      "zh": "他們很投緣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good to see.",
+      "phonetic": "/gʊd tɪ si./",
+      "zh": "真高興。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My cousin, Lin.",
+      "phonetic": "/maɪ ˈkəzən, lɪn./",
+      "zh": "我表妹 Lin。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hi Lin, welcome.",
+      "phonetic": "/haɪ lɪn, ˈwɛlkəm./",
+      "zh": "嗨 Lin，歡迎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He is visiting.",
+      "phonetic": "/hi ɪz ˈvɪzɪtɪŋ./",
+      "zh": "他在拜訪。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Enjoy the stay.",
+      "phonetic": "/ˌɛnˈʤɔɪ ðə steɪ./",
+      "zh": "玩得開心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's all sit.",
+      "phonetic": "/lɛts ɔl sɪt./",
+      "zh": "大家坐。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Make room, please.",
+      "phonetic": "/meɪk rum, pliz./",
+      "zh": "挪個位。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The intro went well.",
+      "phonetic": "/ðə ˈɪntroʊ wɛnt wɛl./",
+      "zh": "介紹順利。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Easy, they are.",
+      "phonetic": "/ˈizi, ðeɪ ər./",
+      "zh": "他們隨和。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Glad you met.",
+      "phonetic": "/glæd ju mɛt./",
+      "zh": "高興你們認識。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Me too, thanks.",
+      "phonetic": "/mi tu, θæŋks./",
+      "zh": "我也是，謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Keep in touch, all.",
+      "phonetic": "/kip ɪn təʧ, ɔl./",
+      "zh": "保持聯繫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Exchange contacts.",
+      "phonetic": "/ɪksˈʧeɪnʤ ˈkɑnˌtækts./",
+      "zh": "交換聯絡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Nice meeting you.",
+      "phonetic": "/nis ˈmitɪŋ ju./",
+      "zh": "很高興認識你。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same here, truly.",
+      "phonetic": "/seɪm hir, ˈtruli./",
+      "zh": "我也是。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Nice meeting you.",
+      "phonetic": "/nis ˈmitɪŋ ju./",
+      "zh": "很高興認識你。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same here, truly.",
+      "phonetic": "/seɪm hir, ˈtruli./",
+      "zh": "我也是。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Keep in touch, all.",
+      "phonetic": "/kip ɪn təʧ, ɔl./",
+      "zh": "保持聯繫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Exchange contacts.",
+      "phonetic": "/ɪksˈʧeɪnʤ ˈkɑnˌtækts./",
+      "zh": "交換聯絡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Glad you met.",
+      "phonetic": "/glæd ju mɛt./",
+      "zh": "高興你們認識。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Me too, thanks.",
+      "phonetic": "/mi tu, θæŋks./",
+      "zh": "我也是，謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The intro went well.",
+      "phonetic": "/ðə ˈɪntroʊ wɛnt wɛl./",
+      "zh": "介紹順利。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Easy, they are.",
+      "phonetic": "/ˈizi, ðeɪ ər./",
+      "zh": "他們隨和。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's all sit.",
+      "phonetic": "/lɛts ɔl sɪt./",
+      "zh": "大家坐。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Make room, please.",
+      "phonetic": "/meɪk rum, pliz./",
+      "zh": "挪個位。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He is visiting.",
+      "phonetic": "/hi ɪz ˈvɪzɪtɪŋ./",
+      "zh": "他在拜訪。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Enjoy the stay.",
+      "phonetic": "/ˌɛnˈʤɔɪ ðə steɪ./",
+      "zh": "玩得開心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My cousin, Lin.",
+      "phonetic": "/maɪ ˈkəzən, lɪn./",
+      "zh": "我表妹 Lin。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hi Lin, welcome.",
+      "phonetic": "/haɪ lɪn, ˈwɛlkəm./",
+      "zh": "嗨 Lin，歡迎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "They hit it off.",
+      "phonetic": "/ðeɪ hɪt ɪt ɔf./",
+      "zh": "他們很投緣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good to see.",
+      "phonetic": "/gʊd tɪ si./",
+      "zh": "真高興。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My gym partner.",
+      "phonetic": "/maɪ ʤɪm ˈpɑrtnər./",
+      "zh": "我健身搭子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spot me, bro.",
+      "phonetic": "/spɑt mi, broʊ./",
+      "zh": "幫我看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He moved last month.",
+      "phonetic": "/hi muvd læst mənθ./",
+      "zh": "他上月搬家。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "From the city.",
+      "phonetic": "/frəm ðə ˈsɪti./",
+      "zh": "從城裏。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She is in my class.",
+      "phonetic": "/ʃi ɪz ɪn maɪ klæs./",
+      "zh": "她同班。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Say hi, then.",
+      "phonetic": "/seɪ haɪ, ðɛn./",
+      "zh": "那說嗨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My study buddy.",
+      "phonetic": "/maɪ ˈstədi ˈbədi./",
+      "zh": "我讀書搭檔。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We cram together.",
+      "phonetic": "/wi kræm təˈgɛðər./",
+      "zh": "一起衝刺。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This is the host.",
+      "phonetic": "/ðɪs ɪz ðə hoʊst./",
+      "zh": "這是主人。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pleased to meet.",
+      "phonetic": "/plizd tɪ mit./",
+      "zh": "幸會。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "They share a hobby.",
+      "phonetic": "/ðeɪ ʃɛr ə ˈhɑbi./",
+      "zh": "他們同好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stamp collecting.",
+      "phonetic": "/stæmp kəˈlɛktɪŋ./",
+      "zh": "集郵。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My old friend, Mai.",
+      "phonetic": "/maɪ oʊld frɛnd, maɪ./",
+      "zh": "老友 Mai。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Long time, Mai.",
+      "phonetic": "/lɔŋ taɪm, maɪ./",
+      "zh": "好久，Mai。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He speaks French.",
+      "phonetic": "/hi spiks frɛnʧ./",
+      "zh": "他說法文。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Impressive, truly.",
+      "phonetic": "/ˌɪmˈprɛsɪv, ˈtruli./",
+      "zh": "真厲害。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She is new here.",
+      "phonetic": "/ʃi ɪz nu hir./",
+      "zh": "她剛來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Show her around.",
+      "phonetic": "/ʃoʊ hər əraʊnd./",
+      "zh": "帶她逛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Introduce the team.",
+      "phonetic": "/ˌɪntrəˈdus ðə tim./",
+      "zh": "介紹團隊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One by one.",
+      "phonetic": "/wən baɪ wən./",
+      "zh": "一個個。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We met at school.",
+      "phonetic": "/wi mɛt æt skul./",
+      "zh": "我們在學校認識。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Years ago, yes.",
+      "phonetic": "/jɪrz əˈgoʊ, jɛs./",
+      "zh": "多年前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My brother, Tom.",
+      "phonetic": "/maɪ ˈbrəðər, tɑm./",
+      "zh": "我弟 Tom。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hi Tom, welcome.",
+      "phonetic": "/haɪ tɑm, ˈwɛlkəm./",
+      "zh": "嗨 Tom，歡迎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He plays guitar.",
+      "phonetic": "/hi pleɪz gɪˈtɑr./",
+      "zh": "他彈吉他。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Show us, mate.",
+      "phonetic": "/ʃoʊ ˈjuˈɛs, meɪt./",
+      "zh": "彈給我們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She is a great cook.",
+      "phonetic": "/ʃi ɪz ə greɪt kʊk./",
+      "zh": "她很會煮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Invite her, then.",
+      "phonetic": "/ˌɪnˈvaɪt hər, ðɛn./",
+      "zh": "請她。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This is our neighbor.",
+      "phonetic": "/ðɪs ɪz ɑr ˈneɪbər./",
+      "zh": "這是我們鄰居。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hello, at last.",
+      "phonetic": "/hɛˈloʊ, æt læst./",
+      "zh": "嗨，終於。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Shake hands, guys.",
+      "phonetic": "/ʃeɪk hænz, gaɪz./",
+      "zh": "握手，兩位。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Firm and warm.",
+      "phonetic": "/fərm ənd wɔrm./",
+      "zh": "穩而暖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "They get along.",
+      "phonetic": "/ðeɪ gɪt əˈlɔŋ./",
+      "zh": "他們合得來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Like old pals.",
+      "phonetic": "/laɪk oʊld pælz./",
+      "zh": "像老友。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My classmate, Joy.",
+      "phonetic": "/maɪ ˈklæsˌmeɪt, ʤɔɪ./",
+      "zh": "我同學 Joy。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hi Joy, heard of you.",
+      "phonetic": "/haɪ ʤɔɪ, hərd əv ju./",
+      "zh": "嗨 Joy，聽過你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let me introduce him.",
+      "phonetic": "/lɛt mi ˌɪntrəˈdus ɪm./",
+      "zh": "我介紹他。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Go ahead, please.",
+      "phonetic": "/goʊ əˈhɛd, pliz./",
+      "zh": "請。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Have you two met?",
+      "phonetic": "/hæv ju tu mɛt?/",
+      "zh": "你們見過？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, first time.",
+      "phonetic": "/noʊ, fərst taɪm./",
+      "zh": "沒，第一次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She loves hiking.",
+      "phonetic": "/ʃi ləvz ˈhaɪkɪŋ./",
+      "zh": "她愛爬山。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We should go.",
+      "phonetic": "/wi ʃʊd goʊ./",
+      "zh": "該去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He is from Tokyo.",
+      "phonetic": "/hi ɪz frəm ˈtoʊkiˌoʊ./",
+      "zh": "他來自東京。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lovely city, I bet.",
+      "phonetic": "/ˈləvli ˈsɪti, aɪ bɛt./",
+      "zh": "好城市。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We work together.",
+      "phonetic": "/wi wərk təˈgɛðər./",
+      "zh": "我們同事。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Small world, yes.",
+      "phonetic": "/smɔl wərld, jɛs./",
+      "zh": "世界小。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Lee, meet Sara.",
+      "phonetic": "/li, mit ˈsɛrə./",
+      "zh": "Lee，這是 Sara。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hello, Sara, welcome.",
+      "phonetic": "/hɛˈloʊ, ˈsɛrə, ˈwɛlkəm./",
+      "zh": "你好 Sara，歡迎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This is my friend, Lee.",
+      "phonetic": "/ðɪs ɪz maɪ frɛnd, li./",
+      "zh": "這是我朋友 Lee。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hi Lee, nice meet.",
+      "phonetic": "/haɪ li, nis mit./",
+      "zh": "嗨 Lee，幸會。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This is my friend, Lee.",
+      "phonetic": "/ðɪs ɪz maɪ frɛnd, li./",
+      "zh": "這是我朋友 Lee。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hi Lee, nice meet.",
+      "phonetic": "/haɪ li, nis mit./",
+      "zh": "嗨 Lee，幸會。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Lee, meet Sara.",
+      "phonetic": "/li, mit ˈsɛrə./",
+      "zh": "Lee，這是 Sara。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hello, Sara, welcome.",
+      "phonetic": "/hɛˈloʊ, ˈsɛrə, ˈwɛlkəm./",
+      "zh": "你好 Sara，歡迎。"
+    }
+  ]
+}

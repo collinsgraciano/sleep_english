@@ -1,0 +1,2460 @@
+{
+  "title": "Everyday Phrases — First Day of School",
+  "title_zh": "開學第一天",
+  "scene_zh": "開學第一天 · 情境對話",
+  "title_quote": "Tomorrow is your first day.",
+  "cefr": "A1",
+  "youtube_title": "【睡前英文聽力】🎒 實用開學第一天必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A1 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — First Day of School",
+  "youtube_description": "睡著學英文！這部影片收錄實用開學第一天情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫），從前一晚收書包、列文具清單、等校車，到找教室、認課表、自我介紹、發新書、舉手發言、食堂排隊，最後放學回家講今天、排好明天的東西安心入睡。不用背，睡前聽就會。重複播放，讓英文自然進入你的大腦。👍 想學更多生活場景，請留言告訴我！別忘了訂閱+按讚。 #英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical First Day of School phrase pairs (each pair: male normal speed → female slow speed → combined dialogue), from packing the bag the night before, finding your classroom and reading the timetable, to new books, class rules, the canteen line and telling family all about it at home. No memorization needed—just listen before bed and absorb naturally. If you want more real-life scenarios, leave a comment! Subscribe and like!",
+  "youtube_tags": [
+    "英文聽力",
+    "睡前英文",
+    "開學第一天英文",
+    "校園英文",
+    "開學英文",
+    "English listening",
+    "Sleep learning",
+    "A1 English",
+    "常用英文短語",
+    "零基礎英文",
+    "慢速英文",
+    "英文口語",
+    "Learn English",
+    "English for school",
+    "school English",
+    "ESL",
+    "English conversation",
+    "英文學習"
+  ],
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "First Day of School",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "First Day of School",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Study",
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "Tomorrow is your first day.",
+      "phonetic": "/təˈmɛroʊ ɪz jʊr fɜrst deɪ./",
+      "zh": "明天就是你開學的第一天。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I can't believe it's already here.",
+      "phonetic": "/aɪ kænt bɪˈliv ɪts ɔlˈrɛdi hɪr./",
+      "zh": "真不敢相信已經到這天了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's pack your bag tonight.",
+      "phonetic": "/lɛts pæk jʊr bæɡ təˈnaɪt./",
+      "zh": "我們今晚先把書包收拾好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Okay, I'll get my backpack.",
+      "phonetic": "/oʊˈkeɪ, aɪl ɡɛt maɪ ˈbækˌpæk./",
+      "zh": "好，我去拿我的背包。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is your backpack clean and dry?",
+      "phonetic": "/ɪz jʊr ˈbækˌpæk klin ənd draɪ?/",
+      "zh": "你的背包乾淨又乾爽嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, I wiped it last night.",
+      "phonetic": "/jɛs, aɪ waɪpt ɪt læst naɪt./",
+      "zh": "有，我昨晚擦過了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Put your pencils in the case.",
+      "phonetic": "/pʊt jʊr ˈpɛnsəlz ɪn ðə keɪs./",
+      "zh": "把鉛筆放進筆袋裡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I have three sharp ones here.",
+      "phonetic": "/aɪ hæv θri ʃɑrp wʌnz hɪr./",
+      "zh": "我這裡有三支削好的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you need a new ruler?",
+      "phonetic": "/du ju nid ə nu ˈrulər?/",
+      "zh": "你需要一把新尺嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, my old one still works.",
+      "phonetic": "/noʊ, maɪ oʊld wʌn stɪl wɜrks./",
+      "zh": "不用，我舊的那支還能用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Count the notebooks for me.",
+      "phonetic": "/kaʊnt ðə ˈnoʊtˌbʊks fər mi./",
+      "zh": "幫我數數筆記本有幾本。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Four, I just counted them.",
+      "phonetic": "/fɔr, aɪ dʒʌst ˈkaʊntɪd ðɛm./",
+      "zh": "四本，我剛剛才數過。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Four will be enough.",
+      "phonetic": "/fɔr wɪl bi ɪˈnʌf./",
+      "zh": "四本就夠用啦。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I can add more later.",
+      "phonetic": "/aɪ kæn æd mɔr ˈleɪtər./",
+      "zh": "之後需要我再買。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is your eraser?",
+      "phonetic": "/wɛr ɪz jʊr ɪˈreɪsər?/",
+      "zh": "你的橡皮擦在哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It's under my bed.",
+      "phonetic": "/ɪts ˈʌndər maɪ bɛd./",
+      "zh": "在我床底下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Find it before we finish.",
+      "phonetic": "/faɪnd ɪt bɪˈfɔr wi ˈfɪnɪʃ./",
+      "zh": "收完之前先把它找到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Got it, it was by my shoe.",
+      "phonetic": "/ɡɑt ɪt, ɪt wʌz baɪ maɪ ʃu./",
+      "zh": "找到了，原本在我的鞋子旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How about glue and scissors?",
+      "phonetic": "/haʊ əˈbaʊt ɡlu ənd ˈsɪzərz?/",
+      "zh": "那膠水和剪刀呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the list has both.",
+      "phonetic": "/jɛs, ðə lɪst hæz boʊθ./",
+      "zh": "要，清單上兩個都有。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Here's the school supply list.",
+      "phonetic": "/hɪrz ðə skul səˈplaɪ lɪst./",
+      "zh": "這是學校的用品清單。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let me read it with you.",
+      "phonetic": "/lɛt mi rid ɪt wɪθ ju./",
+      "zh": "我要跟你一起讀一遍。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Crayons are on the list.",
+      "phonetic": "/ˈkreɪɑnz ɑr ɑn ðə lɪst./",
+      "zh": "清單上有蠟筆這一項。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I still have a full box.",
+      "phonetic": "/aɪ stɪl hæv ə fʊl bɑks./",
+      "zh": "我還有整整一盒沒用完。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You need a folder for papers.",
+      "phonetic": "/ju nid ə ˈfoʊldər fər ˈpeɪpərz./",
+      "zh": "你還需要一個資料夾放紙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The blue one is fine.",
+      "phonetic": "/ðə blu wʌn ɪz faɪn./",
+      "zh": "藍色那個就可以了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Write your name inside it.",
+      "phonetic": "/raɪt jʊr neɪm ɪnˈsaɪd ɪt./",
+      "zh": "在夾子裡面寫上你的名字。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'll use my good pen.",
+      "phonetic": "/aɪl juz maɪ ɡʊd pɛn./",
+      "zh": "我用我那枝好寫的筆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is your uniform ready?",
+      "phonetic": "/ɪz jʊr ˈjunəˌfɔrm ˈrɛdi?/",
+      "zh": "你的校服準備好了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It's laid out, all set.",
+      "phonetic": "/ɪts ˈleɪd aʊt, ɔl sɛt./",
+      "zh": "已經攤開備好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Try the shirt on once more.",
+      "phonetic": "/traɪ ðə ʃɜrt ɑn wʌns mɔr./",
+      "zh": "把上衣再試穿一次。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It fits, and it's not tight.",
+      "phonetic": "/ɪt fɪts, ənd ɪts nɑt taɪt./",
+      "zh": "很合，一點也不緊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your shoes must be black.",
+      "phonetic": "/jʊr ʃuz mʌst bi blæk./",
+      "zh": "你的鞋子必須是黑色的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I polished them after dinner.",
+      "phonetic": "/aɪ ˈpɑləʃt ðɛm ˈæftər ˈdɪnər./",
+      "zh": "我飯後已經擦亮了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Fill your water bottle tonight.",
+      "phonetic": "/fɪl jʊr ˈwɔtər ˈbɑtəl təˈnaɪt./",
+      "zh": "今晚先把水壺裝滿。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The cold one is in the fridge.",
+      "phonetic": "/ðə koʊld wʌn ɪz ɪn ðə frɪdʒ./",
+      "zh": "涼的那壺還在冰箱裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Pack a snack for tomorrow.",
+      "phonetic": "/pæk ə snæk fər təˈmɛroʊ./",
+      "zh": "幫明天準備一份點心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "An apple and some crackers.",
+      "phonetic": "/ən ˈæpəl ənd sʌm ˈkrækərz./",
+      "zh": "一顆蘋果加幾片餅乾。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What time does school start?",
+      "phonetic": "/wʌt taɪm dʌz skul stɑrt?/",
+      "zh": "學校幾點開始上課？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The paper says eight forty.",
+      "phonetic": "/ðə ˈpeɪpər sɛz eɪt ˈfɔrti./",
+      "zh": "通知單上寫八點四十。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bus comes before that.",
+      "phonetic": "/ðə bʌs kʌmz bɪˈfɔr ðæt./",
+      "zh": "校車在那之前就會來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Eight fifteen, at our corner.",
+      "phonetic": "/eɪt fɪfˈtin, ət aʊər ˈkɔrnər./",
+      "zh": "八點十五，就在我們路口。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So we must be up at seven.",
+      "phonetic": "/soʊ wi mʌst bi ʌp ət ˈsɛvən./",
+      "zh": "所以我們七點就得起床。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is way too early.",
+      "phonetic": "/ðæt ɪz weɪ tu ˈɜrli./",
+      "zh": "那實在是太早了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I'll set two alarms.",
+      "phonetic": "/aɪl sɛt tu əˈlɑrmz./",
+      "zh": "我會設兩個鬧鐘。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Put mine by the lamp.",
+      "phonetic": "/pʊt maɪn baɪ ðə læmp./",
+      "zh": "把我的那個放在台燈旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Lay out your socks tonight.",
+      "phonetic": "/leɪ aʊt jʊr sɑks təˈnaɪt./",
+      "zh": "今晚先把襪子攤好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The thick ones keep me warm.",
+      "phonetic": "/ðə θɪk wʌnz kip mi wɔrm./",
+      "zh": "厚的那雙最保暖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It might rain tomorrow.",
+      "phonetic": "/ɪt maɪt reɪn təˈmɛroʊ./",
+      "zh": "明天可能會下雨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Should I bring my raincoat?",
+      "phonetic": "/ʃʊd aɪ brɪŋ maɪ ˈreɪnˌkoʊt?/",
+      "zh": "我要帶雨衣嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, fold it into your bag.",
+      "phonetic": "/jɛs, foʊld ɪt ˈɪntu jʊr bæɡ./",
+      "zh": "要，把它摺進書包裡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'll take an umbrella too.",
+      "phonetic": "/aɪl teɪk ən ʌmˈbrɛlə tu./",
+      "zh": "我也會帶一把傘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your snack box goes in first.",
+      "phonetic": "/jʊr snæk bɑks ɡoʊz ɪn fɜrst./",
+      "zh": "你的零食盒要最先放進去。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The apple can stay on top.",
+      "phonetic": "/ðə ˈæpəl kæn steɪ ɑn tɑp./",
+      "zh": "蘋果就可以擺在最上面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does everything fit in the end?",
+      "phonetic": "/dʌz ˈɛvriˌθɪŋ fɪt ɪn ði ɛnd?/",
+      "zh": "最後全部東西都裝得下嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the zipper still closes.",
+      "phonetic": "/jɛs, ðə ˈzɪpər stɪl ˈkloʊzɪz./",
+      "zh": "可以，拉鍊還拉得起來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "There, your bag is done.",
+      "phonetic": "/ðɛr, jʊr bæɡ ɪz dʌn./",
+      "zh": "好了，你的書包收完了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wait, I need one more thing.",
+      "phonetic": "/weɪt, aɪ nid wʌn mɔr θɪŋ./",
+      "zh": "等等，我還差一樣東西。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is still missing?",
+      "phonetic": "/wʌt ɪz stɪl ˈmɪsɪŋ?/",
+      "zh": "還少了什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My lucky green pencil.",
+      "phonetic": "/maɪ ˈlʌki ɡrin ˈpɛnsəl./",
+      "zh": "我的幸運綠鉛筆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Find it, then zip up.",
+      "phonetic": "/faɪnd ɪt, ðɛn zɪp ʌp./",
+      "zh": "找到以後把拉鍊拉起來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Got it, can I read a book?",
+      "phonetic": "/ɡɑt ɪt, kæn aɪ rid ə bʊk?/",
+      "zh": "找到了！我可以看本書嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Bedtime is nine thirty.",
+      "phonetic": "/ˈbɛdˌtaɪm ɪz naɪn ˈθɜrti./",
+      "zh": "睡覺時間是九點半。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I won't read too late.",
+      "phonetic": "/aɪ woʊnt rid tu leɪt./",
+      "zh": "我不會讀到太晚。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Lie down and rest your legs.",
+      "phonetic": "/laɪ daʊn ənd rɛst jʊr lɛɡz./",
+      "zh": "躺下來讓腿休息。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My tummy feels funny.",
+      "phonetic": "/maɪ ˈtʌmi filz ˈfʌni./",
+      "zh": "我的肚子有點怪怪的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That's just first-day nerves.",
+      "phonetic": "/ðæts dʒʌst ˈfɜrstˌdeɪ nɜrvz./",
+      "zh": "那只是第一天的緊張感。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Does everyone feel that way?",
+      "phonetic": "/dʌz ˈɛvriˌwʌn fil ðæt weɪ?/",
+      "zh": "大家都會這樣嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Even big kids feel it.",
+      "phonetic": "/ˈivən bɪɡ kɪdz fil ɪt./",
+      "zh": "連大孩子也會緊張。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Will the other kids notice?",
+      "phonetic": "/wɪl ði ˈʌðər kɪdz ˈnoʊtɪs?/",
+      "zh": "別的同學會看出來嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Nobody will look that close.",
+      "phonetic": "/ˈnoʊˌbɑdi wɪl lʊk ðæt kloʊs./",
+      "zh": "沒有人會盯得那麼近。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Okay, that helps a little.",
+      "phonetic": "/oʊˈkeɪ, ðæt hɛlps ə ˈlɪtəl./",
+      "zh": "好，這樣我有輕鬆一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Close your eyes real slow.",
+      "phonetic": "/kloʊz jʊr aɪz ril sloʊ./",
+      "zh": "慢慢把眼睛閉起來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I kept thinking about tomorrow.",
+      "phonetic": "/aɪ kɛpt ˈθɪŋkɪŋ əˈbaʊt təˈmɛroʊ./",
+      "zh": "我一直想著明天。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thinking about what, tell me.",
+      "phonetic": "/ˈθɪŋkɪŋ əˈbaʊt wʌt, tɛl mi./",
+      "zh": "想什麼呢，跟我說說。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "If anyone will talk to me.",
+      "phonetic": "/ɪf ˈɛniˌwʌn wɪl tɔk tu mi./",
+      "zh": "會不會有人跟我說話。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Smile first, they usually do.",
+      "phonetic": "/smaɪl fɜrst, ðeɪ ˈjuʒəwəli du./",
+      "zh": "你先微笑，他們通常就會回應。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That sounds like a good plan.",
+      "phonetic": "/ðæt saʊndz laɪk ə ɡʊd plæn./",
+      "zh": "這聽起來是個好辦法。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Breathe in, then breathe out.",
+      "phonetic": "/brið ɪn, ðɛn brið aʊt./",
+      "zh": "吸氣，然後慢慢吐氣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Like this, nice and slow.",
+      "phonetic": "/laɪk ðɪs, naɪs ənd sloʊ./",
+      "zh": "像這樣，好好的慢慢的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your hands can rest now.",
+      "phonetic": "/jʊr hænz kæn rɛst naʊ./",
+      "zh": "你的雙手現在可以放鬆。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They were cold a minute ago.",
+      "phonetic": "/ðeɪ wɜr koʊld ə ˈmɪnɪt əˈɡoʊ./",
+      "zh": "一分鐘前它們還冷冷的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I pulled the blanket up.",
+      "phonetic": "/aɪ pʊld ðə ˈblæŋkɪt ʌp./",
+      "zh": "我把毯子往上拉了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thank you, that is warm.",
+      "phonetic": "/θæŋk ju, ðæt ɪz wɔrm./",
+      "zh": "謝謝，這樣好溫暖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sleep now, tomorrow is yours.",
+      "phonetic": "/slip naʊ, təˈmɛroʊ ɪz jʊrz./",
+      "zh": "睡吧，明天是你的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "But I don't feel sleepy.",
+      "phonetic": "/bʌt aɪ doʊnt fil ˈslipi./",
+      "zh": "可是我一點也不睏。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Try counting to ten.",
+      "phonetic": "/traɪ ˈkaʊntɪŋ tu tɛn./",
+      "zh": "試試數到十。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I counted to twelve instead.",
+      "phonetic": "/aɪ ˈkaʊntɪd tu twɛlv ɪnˈstɛd./",
+      "zh": "我反而一路數到十二去了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Count sheep crossing the fence.",
+      "phonetic": "/kaʊnt ʃip ˈkrɔsɪŋ ðə fɛns./",
+      "zh": "數一數過柵欄的綿羊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ten sheep, maybe fifteen.",
+      "phonetic": "/tɛn ʃip, ˈmeɪbi fɪfˈtin./",
+      "zh": "十隻羊，也許十五隻。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "See, your voice got soft.",
+      "phonetic": "/si, jʊr vɔɪs ɡɑt sɔft./",
+      "zh": "你看，你的聲音變輕了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Am I still talking?",
+      "phonetic": "/æm aɪ stɪl ˈtɔkɪŋ?/",
+      "zh": "我還在講話嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A little, and that's fine.",
+      "phonetic": "/ə ˈlɪtəl, ənd ðæts faɪn./",
+      "zh": "還有一點點，這樣沒關係。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'm used to the dark now.",
+      "phonetic": "/aɪm juzd tu ðə dɑrk naʊ./",
+      "zh": "我已經習慣黑暗了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The whole house is quiet.",
+      "phonetic": "/ðə hoʊl haʊs ɪz ˈkwaɪət./",
+      "zh": "整棟房子都很安靜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The bus will be loud.",
+      "phonetic": "/ðə bʌs wɪl bi laʊd./",
+      "zh": "校車應該會很吵。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Loud is fun on day one.",
+      "phonetic": "/laʊd ɪz fʌn ɑn deɪ wʌn./",
+      "zh": "第一天吵一點反而有趣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I hope it comes on time.",
+      "phonetic": "/aɪ hoʊp ɪt kʌmz ɑn taɪm./",
+      "zh": "希望它會準時來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I'll wake you up first.",
+      "phonetic": "/aɪl weɪk ju ʌp fɜrst./",
+      "zh": "我會第一個叫你起床。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Okay, now I can rest.",
+      "phonetic": "/oʊˈkeɪ, naʊ aɪ kæn rɛst./",
+      "zh": "好，那我可以安心睡了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wake up, the sun is out.",
+      "phonetic": "/weɪk ʌp, ðə sʌn ɪz aʊt./",
+      "zh": "起床了，太陽出來了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Five more minutes, please.",
+      "phonetic": "/faɪv mɔr ˈmɪnɪts, pliz./",
+      "zh": "再給我五分鐘好不好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "No time, the bus is close.",
+      "phonetic": "/noʊ taɪm, ðə bʌs ɪz kloʊs./",
+      "zh": "來不及了，校車快到了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Okay, my feet are down.",
+      "phonetic": "/oʊˈkeɪ, maɪ fit ɑr daʊn./",
+      "zh": "好，我已經雙腳落地了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wash your face and brush fast.",
+      "phonetic": "/wɑʃ jʊr feɪs ənd brʌʃ fæst./",
+      "zh": "洗把臉，快一點刷牙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cold water woke me up.",
+      "phonetic": "/koʊld ˈwɔtər woʊk mi ʌp./",
+      "zh": "冷水把我徹底喚醒了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your uniform is on the chair.",
+      "phonetic": "/jʊr ˈjunəˌfɔrm ɪz ɑn ðə tʃɛr./",
+      "zh": "你的校服放在椅子上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It's right where you left it.",
+      "phonetic": "/ɪts raɪt wɛr ju lɛft ɪt./",
+      "zh": "就在你放好的地方。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Breakfast is toast and eggs.",
+      "phonetic": "/ˈbrɛkfəst ɪz toʊst ənd ɛɡz./",
+      "zh": "早餐是吐司和雞蛋。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I can eat half of mine.",
+      "phonetic": "/aɪ kæn it hæf əv maɪn./",
+      "zh": "我吃一半就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Take the rest in your bag.",
+      "phonetic": "/teɪk ðə rɛst ɪn jʊr bæɡ./",
+      "zh": "把剩下的放進書包。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good idea, I'll be hungry.",
+      "phonetic": "/ɡʊd aɪˈdiə, aɪl bi ˈhʌŋɡri./",
+      "zh": "好主意，我會餓的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Here's a juice for the road.",
+      "phonetic": "/hɪrz ə dʒus fər ðə roʊd./",
+      "zh": "這瓶果汁給你路上喝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thanks, I'll save it for later.",
+      "phonetic": "/θæŋks, aɪl seɪv ɪt fər ˈleɪtər./",
+      "zh": "謝謝，我留著待會喝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have your supply list?",
+      "phonetic": "/du ju hæv jʊr səˈplaɪ lɪst?/",
+      "zh": "你的用品清單帶了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It folds into my pocket.",
+      "phonetic": "/ɪt foʊldz ˈɪntu maɪ ˈpɑkɪt./",
+      "zh": "摺起來剛好放進口袋。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's walk to the corner.",
+      "phonetic": "/lɛts wɔk tu ðə ˈkɔrnər./",
+      "zh": "我們走到路口那吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My bag feels heavy already.",
+      "phonetic": "/maɪ bæɡ filz ˈhɛvi ɔlˈrɛdi./",
+      "zh": "我已經覺得書包好重。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "There's the bus, yellow and big.",
+      "phonetic": "/ðɛrz ðə bʌs, ˈjɛloʊ ənd bɪɡ./",
+      "zh": "校車來了，又黃又大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It stopped right in front of us.",
+      "phonetic": "/ɪt stɑpt raɪt ɪn frʌnt əv ʌs./",
+      "zh": "它剛好停在我們面前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Show the driver your pass.",
+      "phonetic": "/ʃoʊ ðə ˈdraɪvər jʊr pæs./",
+      "zh": "把你的乘車證給司機看。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "He smiled and said hi.",
+      "phonetic": "/hi smaɪld ənd sɛd haɪ./",
+      "zh": "他微笑著跟我打招呼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sit where you can see out.",
+      "phonetic": "/sɪt wɛr ju kæn si aʊt./",
+      "zh": "坐在可以看到外面的位置。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "This window seat is perfect.",
+      "phonetic": "/ðɪs ˈwɪnˌdoʊ sit ɪz ˈpɜrfɪkt./",
+      "zh": "這個靠窗的位置太棒了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The school looks so big.",
+      "phonetic": "/ðə skul lʊks soʊ bɪɡ./",
+      "zh": "這學校看起來好大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I see ten doors, maybe more.",
+      "phonetic": "/aɪ si tɛn dɔrz, ˈmeɪbi mɔr./",
+      "zh": "我看到十扇門，也許更多。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Follow the line of kids.",
+      "phonetic": "/ˈfɑloʊ ðə laɪn əv kɪdz./",
+      "zh": "跟著小朋友的隊伍走。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The bell already rang once.",
+      "phonetic": "/ðə bɛl ɔlˈrɛdi ræŋ wʌns./",
+      "zh": "鐘聲已經響過一次了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We're at the front gate now.",
+      "phonetic": "/wɪr ət ðə frʌnt ɡeɪt naʊ./",
+      "zh": "我們現在到了大門口。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It says room one two three.",
+      "phonetic": "/ɪt sɛz rum wʌn tu θri./",
+      "zh": "上面寫著一二三教室。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which way is the first floor?",
+      "phonetic": "/wɪtʃ weɪ ɪz ðə fɜrst flɔr?/",
+      "zh": "一樓要往哪邊走？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let me ask that helper.",
+      "phonetic": "/lɛt mi æsk ðæt ˈhɛlpər./",
+      "zh": "我來問那位志工。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lady in the green vest.",
+      "phonetic": "/ðə ˈleɪdi ɪn ðə ɡrin vɛst./",
+      "zh": "就是穿綠色背心的那位女士。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Excuse me, where is my room?",
+      "phonetic": "/ɪkˈskjuz mi, wɛr ɪz maɪ rum?/",
+      "zh": "打擾一下，我的教室在哪裡？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She said walk on, then turn left.",
+      "phonetic": "/ʃi sɛd wɔk ɑn, ðɛn tɜrn lɛft./",
+      "zh": "她說先直走，再左轉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "At the library or the gym?",
+      "phonetic": "/æt ðə ˈlaɪˌbɛrˌɛri ɔr ðə dʒɪm?/",
+      "zh": "是在圖書館那邊還是體育館？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Before the library, by the gym.",
+      "phonetic": "/bɪˈfɔr ðə ˈlaɪˌbɛrˌɛri, baɪ ðə dʒɪm./",
+      "zh": "在圖書館前面，體育館旁邊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Now I know the way.",
+      "phonetic": "/naʊ aɪ noʊ ðə weɪ./",
+      "zh": "我知道該怎麼走了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Look for the red sign.",
+      "phonetic": "/lʊk fər ðə rɛd saɪn./",
+      "zh": "找找看那個紅色的牌子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I found it, here we are!",
+      "phonetic": "/aɪ faʊnd ɪt, hɪr wi ɑr!/",
+      "zh": "我找到了，就在這裡！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Read the name on the door.",
+      "phonetic": "/rid ðə neɪm ɑn ðə dɔr./",
+      "zh": "念念門上的名字。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's my name up there!",
+      "phonetic": "/ðæts maɪ neɪm ʌp ðɛr!/",
+      "zh": "上面寫的是我的名字！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The timetable is on the wall.",
+      "phonetic": "/ðə ˈtaɪmˌteɪbəl ɪz ɑn ðə wɔl./",
+      "zh": "課表就貼在牆上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'll look for math class.",
+      "phonetic": "/aɪl lʊk fər mæθ klæs./",
+      "zh": "我來找找數學課。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Math is first today.",
+      "phonetic": "/mæθ ɪz fɜrst təˈdeɪ./",
+      "zh": "今天第一節就是數學。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Reading is right after math.",
+      "phonetic": "/ˈridɪŋ ɪz raɪt ˈæftər mæθ./",
+      "zh": "閱讀課就接在數學後面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Art is last today.",
+      "phonetic": "/ɑrt ɪz læst təˈdeɪ./",
+      "zh": "美術是今天最後一節。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I like drawing, so it's great.",
+      "phonetic": "/aɪ laɪk ˈdrɔɪŋ, soʊ ɪts ɡreɪt./",
+      "zh": "我喜歡畫圖，那太好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your desk has a small tag.",
+      "phonetic": "/jʊr dɛsk hæz ə smɔl tæɡ./",
+      "zh": "你的桌上有一個小標籤。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Row three, seat two is mine.",
+      "phonetic": "/roʊ θri, sit tu ɪz maɪn./",
+      "zh": "第三排第二個座位是我的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Lift the lid and look in.",
+      "phonetic": "/lɪft ðə lɪd ənd lʊk ɪn./",
+      "zh": "把桌蓋掀開看看裡面。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It's clean and empty inside.",
+      "phonetic": "/ɪts klin ənd ˈɛmpti ɪnˈsaɪd./",
+      "zh": "裡面很乾淨，什麼都沒有。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hang your bag on the hook.",
+      "phonetic": "/hæŋ jʊr bæɡ ɑn ðə hʊk./",
+      "zh": "把書包掛在鉤子上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It's up nice and high.",
+      "phonetic": "/ɪts ʌp naɪs ənd haɪ./",
+      "zh": "掛得又高又好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sit down and wait a bit.",
+      "phonetic": "/sɪt daʊn ənd weɪt ə bɪt./",
+      "zh": "先坐下等一會兒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The chair next to me is free.",
+      "phonetic": "/ðə tʃɛr nɛkst tu mi ɪz fri./",
+      "zh": "我旁邊的椅子是空的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A girl just looked at you.",
+      "phonetic": "/ə ɡɜrl dʒʌst lʊkt ət ju./",
+      "zh": "有個女生剛剛看你了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'll wave, is that okay?",
+      "phonetic": "/aɪl weɪv, ɪz ðæt oʊˈkeɪ?/",
+      "zh": "我跟她揮手，可以嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wave and say your name.",
+      "phonetic": "/weɪv ənd seɪ jʊr neɪm./",
+      "zh": "揮手之後說出你的名字。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I did, and she waved back.",
+      "phonetic": "/aɪ dɪd, ənd ʃi weɪvd bæk./",
+      "zh": "我做了，她也跟我揮手。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What's her name?",
+      "phonetic": "/wʌts hɜr neɪm?/",
+      "zh": "她叫什麼名字？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Her name is Lily, she's new.",
+      "phonetic": "/hɜr neɪm ɪz ˈlɪli, ʃiz nu./",
+      "zh": "她叫莉莉，也是新生。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Were you both new today?",
+      "phonetic": "/wɜr ju boʊθ nu təˈdeɪ?/",
+      "zh": "你們倆今天都是新生嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, we sat in the same row.",
+      "phonetic": "/jɛs, wi sæt ɪn ðə seɪm roʊ./",
+      "zh": "對，我們坐在同一排。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How many kids in your class?",
+      "phonetic": "/haʊ ˈmɛni kɪdz ɪn jʊr klæs?/",
+      "zh": "你們班有多少人？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I counted nineteen at my seat.",
+      "phonetic": "/aɪ ˈkaʊntɪd ˌnaɪnˈtin ət maɪ sit./",
+      "zh": "我坐在位子上數到十九。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Nineteen is a good size.",
+      "phonetic": "/ˌnaɪnˈtin ɪz ə ɡʊd saɪz./",
+      "zh": "十九人的班級剛剛好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Everyone has room to sit.",
+      "phonetic": "/ˈɛvriˌwʌn hæz rum tu sɪt./",
+      "zh": "每個人都坐得下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The door opened, is that her?",
+      "phonetic": "/ðə dɔr ˈoʊpənd, ɪz ðæt hɜr?/",
+      "zh": "門開了，是她來了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, just a teacher passing by.",
+      "phonetic": "/noʊ, dʒʌst ə ˈtitʃər ˈpæsɪŋ baɪ./",
+      "zh": "不，只是一位老師經過。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Keep your hands on the desk.",
+      "phonetic": "/kip jʊr hænz ɑn ðə dɛsk./",
+      "zh": "手放在桌子上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I was tapping, sorry about that.",
+      "phonetic": "/aɪ wʌz ˈtæpɪŋ, ˈsɑri əˈbaʊt ðæt./",
+      "zh": "我剛剛在敲桌子，不好意思。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Tapping is fine, keep quiet though.",
+      "phonetic": "/ˈtæpɪŋ ɪz faɪn, kip ˈkwaɪət ðoʊ./",
+      "zh": "輕輕敲沒關係，但要安靜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'll wiggle my toes instead.",
+      "phonetic": "/aɪl ˈwɪɡəl maɪ toʊz ɪnˈstɛd./",
+      "zh": "那我改成動動腳趾。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Here comes your teacher now.",
+      "phonetic": "/hɪr kʌmz jʊr ˈtitʃər naʊ./",
+      "zh": "你的老師現在走進來了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She smiles, that's a good sign.",
+      "phonetic": "/ʃi smaɪlz, ðæts ə ɡʊd saɪn./",
+      "zh": "她在笑，這是好兆頭。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Stand when she says hello.",
+      "phonetic": "/stænd wɛn ʃi sɛz hɛˈloʊ./",
+      "zh": "她說早安時要站起來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We all stood and said it back.",
+      "phonetic": "/wi ɔl stʊd ənd sɛd ɪt bæk./",
+      "zh": "我們全部站起來回問早安。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She wrote her name up big.",
+      "phonetic": "/ʃi roʊt hɜr neɪm ʌp bɪɡ./",
+      "zh": "她在黑板上寫了大大的名字。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Miss Parker, I like that.",
+      "phonetic": "/mɪs ˈpɑrkər, aɪ laɪk ðæt./",
+      "zh": "帕克老師，我喜歡這個名字。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She asked each kid one thing.",
+      "phonetic": "/ʃi æskt iʧ kɪd wʌn θɪŋ./",
+      "zh": "她要每個小朋友說一件事。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My turn came so fast.",
+      "phonetic": "/maɪ tɜrn keɪm soʊ fæst./",
+      "zh": "一下就輪到我了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What did you tell them?",
+      "phonetic": "/wʌt dɪd ju tɛl ðɛm?/",
+      "zh": "你跟大家說了什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I said I like bikes and art.",
+      "phonetic": "/aɪ sɛd aɪ laɪk baɪks ənd ɑrt./",
+      "zh": "我說我喜歡騎車和畫圖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did the class laugh at you?",
+      "phonetic": "/dɪd ðə klæs læf ət ju?/",
+      "zh": "全班有笑你嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They laughed in a nice way.",
+      "phonetic": "/ðeɪ læft ɪn ə naɪs weɪ./",
+      "zh": "他們笑得很友善。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That kind of laugh is warm.",
+      "phonetic": "/ðæt kaɪnd əv læf ɪz wɔrm./",
+      "zh": "那種笑聲其實是溫暖的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Now I don't feel so small.",
+      "phonetic": "/naʊ aɪ doʊnt fil soʊ smɔl./",
+      "zh": "我不會覺得自己很渺小了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You did great, come sit down.",
+      "phonetic": "/ju dɪd ɡreɪt, kʌm sɪt daʊn./",
+      "zh": "你做得很好，回來坐。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My voice was very tiny.",
+      "phonetic": "/maɪ vɔɪs wʌz ˈvɛri ˈtaɪni./",
+      "zh": "我的聲音非常小。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Tiny is fine, they heard you.",
+      "phonetic": "/ˈtaɪni ɪz faɪn, ðeɪ hɜrd ju./",
+      "zh": "小聲沒關係，他們聽見了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'll be louder tomorrow.",
+      "phonetic": "/aɪl bi ˈlaʊdər təˈmɛroʊ./",
+      "zh": "明天我會更大聲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This map shows the whole school.",
+      "phonetic": "/ðɪs mæp ʃoʊz ðə hoʊl skul./",
+      "zh": "這張圖畫出整間學校。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Where's the office on it?",
+      "phonetic": "/wɛrz ði ˈɔfɪs ɑn ɪt?/",
+      "zh": "上面哪裡是教務處？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Next to the big blue doors.",
+      "phonetic": "/nɛkst tu ðə bɪɡ blu dɔrz./",
+      "zh": "在藍色大門旁邊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And the nurse, which floor?",
+      "phonetic": "/ænd ðə nɜrs, wɪtʃ flɔr?/",
+      "zh": "那保健室在幾樓？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "First floor, right at the end.",
+      "phonetic": "/fɜrst flɔr, raɪt ət ði ɛnd./",
+      "zh": "一樓，就在走廊盡頭。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, I'll remember that.",
+      "phonetic": "/ɡʊd, aɪl rɪˈmɛmbər ðæt./",
+      "zh": "好，我會記住。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bell says class is done.",
+      "phonetic": "/ðə bɛl sɛz klæs ɪz dʌn./",
+      "zh": "鐘聲表示這節課結束了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Line up now for the next one.",
+      "phonetic": "/laɪn ʌp naʊ fər ðə nɛkst wʌn./",
+      "zh": "現在排隊去下一堂。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now your reading class starts.",
+      "phonetic": "/naʊ jʊr ˈridɪŋ klæs stɑrts./",
+      "zh": "現在閱讀課開始了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "This one has books and songs.",
+      "phonetic": "/ðɪs wʌn hæz bʊks ənd sɔŋz./",
+      "zh": "這一堂有書也有歌。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sit on the round gray mat.",
+      "phonetic": "/sɪt ɑn ðə raʊnd ɡreɪ mæt./",
+      "zh": "坐在圓圓的灰色墊子上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The books are in a pile.",
+      "phonetic": "/ðə bʊks ɑr ɪn ə paɪl./",
+      "zh": "書全部疊成一堆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She is handing out new ones.",
+      "phonetic": "/ʃi ɪz ˈhændɪŋ aʊt nu wʌnz./",
+      "zh": "老師正在發新書。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mine smells like fresh paper.",
+      "phonetic": "/maɪn smɛlz laɪk frɛʃ ˈpeɪpər./",
+      "zh": "我這本聞起來有紙的清香。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Write your name on the front.",
+      "phonetic": "/raɪt jʊr neɪm ɑn ðə frʌnt./",
+      "zh": "在封面寫上你的名字。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I used the sticker she gave.",
+      "phonetic": "/aɪ juzd ðə ˈstɪkər ʃi ɡeɪv./",
+      "zh": "我用她給的姓名貼紙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do not bend the cover.",
+      "phonetic": "/du nɑt bɛnd ðə ˈkʌvər./",
+      "zh": "不要把封面折到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will keep it flat.",
+      "phonetic": "/aɪ wɪl kip ɪt flæt./",
+      "zh": "我會讓它平平的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Turn the page very slowly.",
+      "phonetic": "/tɜrn ðə peɪdʒ ˈvɛri ˈsloʊli./",
+      "zh": "翻頁要非常慢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The first story has many pictures.",
+      "phonetic": "/ðə fɜrst ˈstɔri hæz ˈmɛni ˈpɪktʃərz./",
+      "zh": "第一篇故事有很多插圖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Read one line out loud.",
+      "phonetic": "/rid wʌn laɪn aʊt laʊd./",
+      "zh": "大聲讀出一行。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I read three lines, not one.",
+      "phonetic": "/aɪ rɛd θri laɪnz, nɑt wʌn./",
+      "zh": "我讀了三行，不止一行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Was the hard word long?",
+      "phonetic": "/wʌz ðə hɑrd wɜrd lɔŋ?/",
+      "zh": "那個難字很長嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, she helped me say it.",
+      "phonetic": "/jɛs, ʃi hɛlpt mi seɪ ɪt./",
+      "zh": "嗯，她幫我把音讀出來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then the class rules came out.",
+      "phonetic": "/ðɛn ðə klæs rulz keɪm aʊt./",
+      "zh": "接著老師拿出班級規則。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "There are five on the poster.",
+      "phonetic": "/ðɛr ɑr faɪv ɑn ðə ˈpoʊstər./",
+      "zh": "海報上一共有五條。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the very first one?",
+      "phonetic": "/wʌt ɪz ðə ˈvɛri fɜrst wʌn?/",
+      "zh": "第一條寫什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Listen when someone is talking.",
+      "phonetic": "/ˈlɪsən wɛn ˈsʌmwʌn ɪz ˈtɔkɪŋ./",
+      "zh": "別人說話時要專心聽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The second rule is easy.",
+      "phonetic": "/ðə ˈsɛkənd rul ɪz ˈizi./",
+      "zh": "第二條很容易。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep your hands to yourself.",
+      "phonetic": "/kip jʊr hænz tu jʊrˈsɛlf./",
+      "zh": "手只放自己身上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "And what about walking inside?",
+      "phonetic": "/ænd wʌt əˈbaʊt ˈwɔkɪŋ ɪnˈsaɪd?/",
+      "zh": "在室內走路是怎麼說的？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We walk, we never run here.",
+      "phonetic": "/wi wɔk, wi ˈnɛvər rʌn hɪr./",
+      "zh": "在裡面只用走的，不可以跑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What else does the poster say?",
+      "phonetic": "/wʌt ɛls dʌz ðə ˈpoʊstər seɪ?/",
+      "zh": "海報上還說了什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can always ask for help.",
+      "phonetic": "/wi kæn ˈɔlˌweɪz æsk fər hɛlp./",
+      "zh": "我們可以隨時請求幫忙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The last one is about kindness.",
+      "phonetic": "/ðə læst wʌn ɪz əˈbaʊt ˈkaɪndnəs./",
+      "zh": "最後一條跟善良有關。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Be kind to everyone, every day.",
+      "phonetic": "/bi kaɪnd tu ˈɛvriˌwʌn, ˈɛvri deɪ./",
+      "zh": "每天對每個人都和氣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How do we ask a question?",
+      "phonetic": "/haʊ du wi æsk ə ˈkwɛstʃən?/",
+      "zh": "我們想問問題的話該怎麼辦？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Raise your hand and wait.",
+      "phonetic": "/reɪz jʊr hænd ənd weɪt./",
+      "zh": "舉手，然後等老師點名。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you raise yours today?",
+      "phonetic": "/dɪd ju reɪz jʊrz təˈdeɪ?/",
+      "zh": "你今天舉手了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Twice, and she picked me once.",
+      "phonetic": "/twaɪs, ənd ʃi pɪkt mi wʌns./",
+      "zh": "舉了兩次，她點了我一次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What did you ask her?",
+      "phonetic": "/wʌt dɪd ju æsk hɜr?/",
+      "zh": "你問了她什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I asked where the coats go.",
+      "phonetic": "/aɪ æskt wɛr ðə koʊts ɡoʊ./",
+      "zh": "我問外套要掛在哪裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you find your hook?",
+      "phonetic": "/dɪd ju faɪnd jʊr hʊk?/",
+      "zh": "你找到你的掛勾了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The one with my name on it.",
+      "phonetic": "/ðə wʌn wɪθ maɪ neɪm ɑn ɪt./",
+      "zh": "就是貼了我名字的那個。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Any other hands went up?",
+      "phonetic": "/ˈɛni ˈʌðər hænz wɛnt ʌp?/",
+      "zh": "還有別人舉手嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A boy asked for a pencil.",
+      "phonetic": "/ə bɔɪ æskt fər ə ˈpɛnsəl./",
+      "zh": "有個男生要一枝鉛筆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did she let him borrow one?",
+      "phonetic": "/dɪd ʃi lɛt hɪm ˈbɑˌroʊ wʌn?/",
+      "zh": "她讓他借用了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, from the shared box.",
+      "phonetic": "/jɛs, frʌm ðə ʃɛrd bɑks./",
+      "zh": "有，從公用盒裡拿的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you know the shared box?",
+      "phonetic": "/du ju noʊ ðə ʃɛrd bɑks?/",
+      "zh": "你知道那個公用盒嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Glue, tape and spare pens live there.",
+      "phonetic": "/ɡlu, teɪp ənd spɛr pɛnz lɪv ðɛr./",
+      "zh": "膠水、膠帶和備用筆都在那裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Put the lid back on.",
+      "phonetic": "/pʊt ðə lɪd bæk ɑn./",
+      "zh": "用完之後要蓋回去。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I always do that, don't worry.",
+      "phonetic": "/aɪ ˈɔlˌweɪz du ðæt, doʊnt ˈwɜri./",
+      "zh": "我都這麼做，別擔心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then the long bell rang.",
+      "phonetic": "/ðɛn ðə lɔŋ bɛl ræŋ./",
+      "zh": "接著長長的鐘聲響了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Is that the break or lunch?",
+      "phonetic": "/ɪz ðæt ðə breɪk ɔr lʌntʃ?/",
+      "zh": "那是下課還是午餐？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That one is break time.",
+      "phonetic": "/ðæt wʌn ɪz breɪk taɪm./",
+      "zh": "那一聲是下課時間。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I need the bathroom first.",
+      "phonetic": "/aɪ nid ðə ˈbæθˌrum fɜrst./",
+      "zh": "我要先去廁所。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you know where it is?",
+      "phonetic": "/du ju noʊ wɛr ɪt ɪz?/",
+      "zh": "你知道廁所在哪嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Down the hall, by the water cooler.",
+      "phonetic": "/daʊn ðə hɔl, baɪ ðə ˈwɔtər ˈkulər./",
+      "zh": "走廊過去，飲水機旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Push the door and go in.",
+      "phonetic": "/pʊʃ ðə dɔr ənd ɡoʊ ɪn./",
+      "zh": "推門進去就好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "There was a line of kids.",
+      "phonetic": "/ðɛr wʌz ə laɪn əv kɪdz./",
+      "zh": "前面已經排了一串小朋友。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wait your turn, no noise.",
+      "phonetic": "/weɪt jʊr tɜrn, noʊ nɔɪz./",
+      "zh": "輪到之前安靜等待。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I stood behind the tall boy.",
+      "phonetic": "/aɪ stʊd bɪˈhaɪnd ðə tɔl bɔɪ./",
+      "zh": "我站在那個高個男生後面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wash your hands after.",
+      "phonetic": "/wɑʃ jʊr hænz ˈæftər./",
+      "zh": "之後要洗手。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The soap smelled like apples.",
+      "phonetic": "/ðə soʊp smɛld laɪk ˈæpəlz./",
+      "zh": "肥皂聞起來像蘋果。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you dry them on your shirt?",
+      "phonetic": "/dɪd ju draɪ ðɛm ɑn jʊr ʃɜrt?/",
+      "zh": "你有把手擦在衣服上嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, I used a paper towel.",
+      "phonetic": "/noʊ, aɪ juzd ə ˈpeɪpər ˈtaʊəl./",
+      "zh": "沒有，我用紙巾擦的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Go outside before the bell.",
+      "phonetic": "/ɡoʊ ˌaʊtˈsaɪd bɪˈfɔr ðə bɛl./",
+      "zh": "鐘響前要到操場。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I jumped rope with Lily.",
+      "phonetic": "/aɪ dʒʌmpt roʊp wɪθ ˈlɪli./",
+      "zh": "我和莉莉一起跳繩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you win the jumping game?",
+      "phonetic": "/dɪd ju wɪn ðə ˈdʒʌmpɪŋ ɡeɪm?/",
+      "zh": "跳繩比賽你贏了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We took turns, nobody won.",
+      "phonetic": "/wi tʊk tɜrnz, ˈnoʊˌbɑdi wʌn./",
+      "zh": "我們輪流玩，沒有人贏。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lunch bell came next.",
+      "phonetic": "/ðə lʌntʃ bɛl keɪm nɛkst./",
+      "zh": "接著是午餐鐘聲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My tummy growled right then.",
+      "phonetic": "/maɪ ˈtʌmi ɡraʊld raɪt ðɛn./",
+      "zh": "我的肚子剛好在那時叫了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Get in the lunch line.",
+      "phonetic": "/ɡɛt ɪn ðə lʌntʃ laɪn./",
+      "zh": "到打午餐的隊伍裡排好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The line went around the corner.",
+      "phonetic": "/ðə laɪn wɛnt əˈraʊnd ðə ˈkɔrnər./",
+      "zh": "隊伍排到轉角去了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hold your tray with both hands.",
+      "phonetic": "/hoʊld jʊr treɪ wɪθ boʊθ hænz./",
+      "zh": "端餐盤時要用兩手。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I got milk and a warm roll.",
+      "phonetic": "/aɪ ɡɑt mɪlk ənd ə wɔrm roʊl./",
+      "zh": "我拿了牛奶和一個熱麵包。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the food good here?",
+      "phonetic": "/ɪz ðə fud ɡʊd hɪr?/",
+      "zh": "這裡的伙食好不好？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the soup is not too salty.",
+      "phonetic": "/jɛs, ðə sup ɪz nɑt tu ˈsɔlti./",
+      "zh": "不錯，湯不會太鹹。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do not run with the tray.",
+      "phonetic": "/du nɑt rʌn wɪθ ðə treɪ./",
+      "zh": "端著餐盤不要跑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I walked slow, like the rule.",
+      "phonetic": "/aɪ wɔkt sloʊ, laɪk ðə rul./",
+      "zh": "我都慢慢走，照規則來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Find a table with room.",
+      "phonetic": "/faɪnd ə ˈteɪbəl wɪθ rum./",
+      "zh": "找一張還有空位的桌子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lily saved us the round one.",
+      "phonetic": "/ˈlɪli seɪvd ʌs ðə raʊnd wʌn./",
+      "zh": "莉莉幫我們留了圓桌。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Chew first, then talk.",
+      "phonetic": "/tʃu fɜrst, ðɛn tɔk./",
+      "zh": "先咀嚼，再說話。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I waited, then I told her more.",
+      "phonetic": "/aɪ ˈweɪtɪd, ðɛn aɪ toʊld hɜr mɔr./",
+      "zh": "我嚼完了才繼續跟她聊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you finish your whole tray?",
+      "phonetic": "/dɪd ju ˈfɪnɪʃ jʊr hoʊl treɪ?/",
+      "zh": "你把餐盤吃乾淨了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Almost, I left the green beans.",
+      "phonetic": "/ˈɔlˌmoʊst, aɪ lɛft ðə ɡrin binz./",
+      "zh": "差不多，我留下了四季豆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Next time just take a few.",
+      "phonetic": "/nɛkst taɪm dʒʌst teɪk ə fju./",
+      "zh": "下次只要拿少少的就好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will ask for less food.",
+      "phonetic": "/aɪ wɪl æsk fər lɛs fud./",
+      "zh": "我會請阿姨少盛一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where do the plates go?",
+      "phonetic": "/wɛr du ðə pleɪts ɡoʊ?/",
+      "zh": "餐盤要放到哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In the bin by the door.",
+      "phonetic": "/ɪn ðə bɪn baɪ ðə dɔr./",
+      "zh": "門邊那個回收桶裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did the table get clean?",
+      "phonetic": "/dɪd ðə ˈteɪbəl ɡɛt klin?/",
+      "zh": "桌子後來乾淨了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We wiped the crumbs off together.",
+      "phonetic": "/wi waɪpt ðə krʌmz ɔf təˈɡɛðər./",
+      "zh": "我們一起把麵包屑擦掉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then we read in the corner.",
+      "phonetic": "/ðɛn wi rɛd ɪn ðə ˈkɔrnər./",
+      "zh": "之後我們到角落看書。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I picked a book about whales.",
+      "phonetic": "/aɪ pɪkt ə bʊk əˈbaʊt weɪlz./",
+      "zh": "我選了一本關於鯨魚的書。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Quiet reading after food is best.",
+      "phonetic": "/ˈkwaɪət ˈridɪŋ ˈæftər fud ɪz bɛst./",
+      "zh": "吃飽後安靜閱讀最舒服。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My eyes got heavy a bit.",
+      "phonetic": "/maɪ aɪz ɡɑt ˈhɛvi ə bɪt./",
+      "zh": "我的眼睛有點睏了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The teacher gave you a stamp?",
+      "phonetic": "/ðə ˈtitʃər ɡeɪv ju ə stæmp?/",
+      "zh": "老師蓋了印章給你嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A star for waiting in line.",
+      "phonetic": "/ə stɑr fər ˈweɪtɪŋ ɪn laɪn./",
+      "zh": "一顆星星，因為我排隊排得好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you keep your stamps?",
+      "phonetic": "/du ju kip jʊr stæmps?/",
+      "zh": "你會把印章收起來嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I put it on my page.",
+      "phonetic": "/aɪ pʊt ɪt ɑn maɪ peɪdʒ./",
+      "zh": "我把它貼在我的那頁。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "After that you made art.",
+      "phonetic": "/ˈæftər ðæt ju meɪd ɑrt./",
+      "zh": "接著你們上了美術課。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We painted a long green boat.",
+      "phonetic": "/wi ˈpeɪntɪd ə lɔŋ ɡrin boʊt./",
+      "zh": "我們畫了一艘長長的綠船。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Was the paint water cold?",
+      "phonetic": "/wʌz ðə peɪnt ˈwɔtər koʊld?/",
+      "zh": "洗筆的水很涼嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, but my brush felt fine.",
+      "phonetic": "/jɛs, bʌt maɪ brʌʃ fɛlt faɪn./",
+      "zh": "涼，但我的畫筆還挺好用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did it dry by the end?",
+      "phonetic": "/dɪd ɪt draɪ baɪ ði ɛnd?/",
+      "zh": "下課前它乾了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mostly, we left it on the rack.",
+      "phonetic": "/ˈmoʊstli, wi lɛft ɪt ɑn ðə ræk./",
+      "zh": "快乾了，我們把它放在晾架。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now one last bell today.",
+      "phonetic": "/naʊ wʌn læst bɛl təˈdeɪ./",
+      "zh": "現在是今天最後一聲鈴。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That means my bag and the door.",
+      "phonetic": "/ðæt minz maɪ bæɡ ənd ðə dɔr./",
+      "zh": "那代表拿書包、出門。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am waiting at the gate.",
+      "phonetic": "/aɪ æm ˈweɪtɪŋ ət ðə ɡeɪt./",
+      "zh": "我已在校門口等你了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I saw you and ran out.",
+      "phonetic": "/aɪ sɔ ju ənd ræn aʊt./",
+      "zh": "我看到你就跑了出來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How was your very first day?",
+      "phonetic": "/haʊ wʌz jʊr ˈvɛri fɜrst deɪ?/",
+      "zh": "你第一天怎麼樣？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Better than I thought it would be.",
+      "phonetic": "/ˈbɛtər ðæn aɪ θɔt ɪt wʊd bi./",
+      "zh": "比我原本想的要好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you get lost in there?",
+      "phonetic": "/dɪd ju ɡɛt lɔst ɪn ðɛr?/",
+      "zh": "你在裡面有迷路過嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just once, and I asked.",
+      "phonetic": "/dʒʌst wʌns, ənd aɪ æskt./",
+      "zh": "就迷過一次，然後我問了路。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Tell me one good thing.",
+      "phonetic": "/tɛl mi wʌn ɡʊd θɪŋ./",
+      "zh": "跟我說一件開心的事。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I shared my crackers with Lily.",
+      "phonetic": "/aɪ ʃɛrd maɪ ˈkrækərz wɪθ ˈlɪli./",
+      "zh": "我把我的餅乾分給莉莉了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you tell her about bikes?",
+      "phonetic": "/dɪd ju tɛl hɜr əˈbaʊt baɪks?/",
+      "zh": "你有跟她聊自行車嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Her bike has a loud bell.",
+      "phonetic": "/hɜr baɪk hæz ə laʊd bɛl./",
+      "zh": "她的車鈴聲很響。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What did you do at break?",
+      "phonetic": "/wʌt dɪd ju du ət breɪk?/",
+      "zh": "下課時間你做了什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We jumped rope, ten each.",
+      "phonetic": "/wi dʒʌmpt roʊp, tɛn itʃ./",
+      "zh": "我們輪流跳繩，一人十下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Was any part hard today?",
+      "phonetic": "/wʌz ˈɛni pɑrt hɑrd təˈdeɪ?/",
+      "zh": "今天有沒有哪裡很困難？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Finding my desk at first.",
+      "phonetic": "/ˈfaɪndɪŋ maɪ dɛsk ət fɜrst./",
+      "zh": "剛開始找不到我的座位。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How did you fix that?",
+      "phonetic": "/haʊ dɪd ju fɪks ðæt?/",
+      "zh": "你後來怎麼解決？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The tag on it told me.",
+      "phonetic": "/ðə tæɡ ɑn ɪt toʊld mi./",
+      "zh": "桌上的標籤告訴我的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You solved it by yourself.",
+      "phonetic": "/ju sɑlvd ɪt baɪ jʊrˈsɛlf./",
+      "zh": "這是你自己想辦法的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Well, with a little help.",
+      "phonetic": "/wɛl, wɪθ ə ˈlɪtəl hɛlp./",
+      "zh": "嗯，也有別人小小的幫忙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That is still a win.",
+      "phonetic": "/ðæt ɪz stɪl ə wɪn./",
+      "zh": "那仍然算贏了一次。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Can I show you my stamp?",
+      "phonetic": "/kæn aɪ ʃoʊ ju maɪ stæmp?/",
+      "zh": "我可以給你看我的印章嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A star stamp, nice work.",
+      "phonetic": "/ə stɑr stæmp, naɪs wɜrk./",
+      "zh": "星星印章，做得好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She gave me one for waiting.",
+      "phonetic": "/ʃi ɡeɪv mi wʌn fər ˈweɪtɪŋ./",
+      "zh": "她說那是因為我會耐心等待。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Home first, shoes come off.",
+      "phonetic": "/hoʊm fɜrst, ʃuz kʌm ɔf./",
+      "zh": "先回家，鞋子脫掉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My bag goes on my chair.",
+      "phonetic": "/maɪ bæɡ ɡoʊz ɑn maɪ tʃɛr./",
+      "zh": "書包放在我的椅子上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wash up and take a rest.",
+      "phonetic": "/wɑʃ ʌp ənd teɪk ə rɛst./",
+      "zh": "去洗手休息一下。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Half an hour, then my book.",
+      "phonetic": "/hæf ən aʊər, ðɛn maɪ bʊk./",
+      "zh": "先休息半小時，再看書。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have homework day one?",
+      "phonetic": "/du ju hæv ˈhoʊmˌwɜrk deɪ wʌn?/",
+      "zh": "第一天就有作業嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, read ten minutes tonight.",
+      "phonetic": "/jɛs, rid tɛn ˈmɪnɪts təˈnaɪt./",
+      "zh": "有，今晚讀十分鐘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Reading counts as work?",
+      "phonetic": "/ˈridɪŋ kaʊnts æz wɜrk?/",
+      "zh": "算閱讀功課嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She said the eyes do the work.",
+      "phonetic": "/ʃi sɛd ði aɪz du ðə wɜrk./",
+      "zh": "她說眼睛也能做功課。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which book did you pick?",
+      "phonetic": "/wɪtʃ bʊk dɪd ju pɪk?/",
+      "zh": "你選了哪本書？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The new one from reading class.",
+      "phonetic": "/ðə nu wʌn frʌm ˈridɪŋ klæs./",
+      "zh": "就是閱讀課發的那本新書。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sit by the lamp and read.",
+      "phonetic": "/sɪt baɪ ðə læmp ənd rid./",
+      "zh": "坐到台燈旁邊讀。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I read it twice already.",
+      "phonetic": "/aɪ rɛd ɪt twaɪs ɔlˈrɛdi./",
+      "zh": "我已經讀兩遍了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is on your chart tomorrow?",
+      "phonetic": "/wʌt ɪz ɑn jʊr tʃɑrt təˈmɛroʊ?/",
+      "zh": "你明天課表上有什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I have math and music.",
+      "phonetic": "/aɪ hæv mæθ ənd ˈmjuzɪk./",
+      "zh": "我有數學，也有音樂。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Music means the small drums.",
+      "phonetic": "/ˈmjuzɪk minz ðə smɔl drʌmz./",
+      "zh": "音樂課就是打小鼓。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, we share them in class.",
+      "phonetic": "/jɛs, wi ʃɛr ðɛm ɪn klæs./",
+      "zh": "對，上課時我們要輪流用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Write them both down now.",
+      "phonetic": "/raɪt ðɛm boʊθ daʊn naʊ./",
+      "zh": "現在把兩節都寫下來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will draw a star for it.",
+      "phonetic": "/aɪ wɪl drɔ ə stɑr fər ɪt./",
+      "zh": "我要幫它畫一顆星星。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hang the chart by your bed.",
+      "phonetic": "/hæŋ ðə tʃɑrt baɪ jʊr bɛd./",
+      "zh": "把課表掛在床邊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So I can see it at night.",
+      "phonetic": "/soʊ aɪ kæn si ɪt ət naɪt./",
+      "zh": "這樣我晚上也看得到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's check what came home.",
+      "phonetic": "/lɛts tʃɛk wʌt keɪm hoʊm./",
+      "zh": "我們看看書包帶了什麼回來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'll empty it on the table.",
+      "phonetic": "/aɪl ˈɛmpti ɪt ɑn ðə ˈteɪbəl./",
+      "zh": "我把它們全倒在桌上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Two papers and your snack box.",
+      "phonetic": "/tu ˈpeɪpərz ənd jʊr snæk bɑks./",
+      "zh": "兩張紙，還有你的零食盒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The paper says sign it, please.",
+      "phonetic": "/ðə ˈpeɪpər sɛz saɪn ɪt, pliz./",
+      "zh": "那張紙寫著請家長簽名。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will sign it tonight.",
+      "phonetic": "/aɪ wɪl saɪn ɪt təˈnaɪt./",
+      "zh": "我今晚就簽好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here is the pen.",
+      "phonetic": "/hɪr ɪz ðə pɛn./",
+      "zh": "筆給你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The new book goes back in.",
+      "phonetic": "/ðə nu bʊk ɡoʊz bæk ɪn./",
+      "zh": "新書要放回書包。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It fits under the folder.",
+      "phonetic": "/ɪt fɪts ˈʌndər ðə ˈfoʊldər./",
+      "zh": "它剛好塞在資料夾下面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your bottle is still full.",
+      "phonetic": "/jʊr ˈbɑtəl ɪz stɪl fʊl./",
+      "zh": "你的水壺還滿滿的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I forgot to drink all day.",
+      "phonetic": "/aɪ fərˈɡɑt tu drɪŋk ɔl deɪ./",
+      "zh": "我整天都忘了喝水。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Fill it up for tomorrow.",
+      "phonetic": "/fɪl ɪt ʌp fər təˈmɛroʊ./",
+      "zh": "把水裝滿留給明天。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cold water from the fridge.",
+      "phonetic": "/koʊld ˈwɔtər frʌm ðə frɪdʒ./",
+      "zh": "裝冰箱裡的涼水。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Set out clothes for tomorrow.",
+      "phonetic": "/sɛt aʊt kloʊz fər təˈmɛroʊ./",
+      "zh": "把明天的衣服拿出來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The gray shirt and the warm one.",
+      "phonetic": "/ðə ɡreɪ ʃɜrt ənd ðə wɔrm wʌn./",
+      "zh": "灰色上衣和那件保暖的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Put your shoes by the door.",
+      "phonetic": "/pʊt jʊr ʃuz baɪ ðə dɔr./",
+      "zh": "鞋子放到門邊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They're still clean enough.",
+      "phonetic": "/ðɛr stɪl klin ɪˈnʌf./",
+      "zh": "它們還算挺乾淨的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What snack will you take?",
+      "phonetic": "/wʌt snæk wɪl ju teɪk?/",
+      "zh": "明天要帶什麼點心？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Another apple, if that is fine.",
+      "phonetic": "/əˈnʌðər ˈæpəl, ɪf ðæt ɪz faɪn./",
+      "zh": "再帶一顆蘋果，可以嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your face looks very tired.",
+      "phonetic": "/jʊr feɪs lʊks ˈvɛri ˈtaɪərd./",
+      "zh": "你的臉色看起來好疲倦。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "School is louder than at home.",
+      "phonetic": "/skul ɪz ˈlaʊdər ðæn ət hoʊm./",
+      "zh": "學校比家裡吵多了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Loud days make quiet nights.",
+      "phonetic": "/laʊd deɪz meɪk ˈkwaɪət naɪts./",
+      "zh": "吵的日子會讓夜晚安靜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My legs feel like water.",
+      "phonetic": "/maɪ lɛɡz fil laɪk ˈwɔtər./",
+      "zh": "我的腿像水一樣軟。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then into the bath right now.",
+      "phonetic": "/ðɛn ˈɪntu ðə bæθ raɪt naʊ./",
+      "zh": "那現在就去泡澡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Warm water, no soap in my eyes.",
+      "phonetic": "/wɔrm ˈwɔtər, noʊ soʊp ɪn maɪ aɪz./",
+      "zh": "水要溫的，肥皂水不要跑進眼睛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Towel, pajamas, brush your hair.",
+      "phonetic": "/ˈtaʊəl, pəˈdʒæməz, brʌʃ jʊr hɛr./",
+      "zh": "毛巾、睡衣，再梳頭髮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I combed it, it feels soft.",
+      "phonetic": "/aɪ komd ɪt, ɪt filz sɔft./",
+      "zh": "我梳過了，摸起來柔柔的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you brush top and bottom?",
+      "phonetic": "/dɪd ju brʌʃ tɑp ənd ˈbɑtəm?/",
+      "zh": "上面的牙和下面的都刷了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All of them, I counted twice.",
+      "phonetic": "/ɔl əv ðɛm, aɪ ˈkaʊntɪd twaɪs./",
+      "zh": "全都刷了，我數了兩遍。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One story, then lights out.",
+      "phonetic": "/wʌn ˈstɔri, ðɛn laɪts aʊt./",
+      "zh": "一篇故事，然後關燈。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The short one, please.",
+      "phonetic": "/ðə ʃɔrt wʌn, pliz./",
+      "zh": "請講短的那一篇。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Once upon a time, a bus.",
+      "phonetic": "/wʌns əˈpɑn ə taɪm, ə bʌs./",
+      "zh": "從前有一台校車。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And it was yellow and slow.",
+      "phonetic": "/ænd ɪt wʌz ˈjɛloʊ ənd sloʊ./",
+      "zh": "它是黃色的，開得很慢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It carried a new kid to school.",
+      "phonetic": "/ɪt ˈkærid ə nu kɪd tu skul./",
+      "zh": "它載了一個新生去學校。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That kid was a lot like me.",
+      "phonetic": "/ðæt kɪd wʌz ə lɑt laɪk mi./",
+      "zh": "那個小孩跟我很像。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Tomorrow the walk will feel small.",
+      "phonetic": "/təˈmɛroʊ ðə wɔk wɪl fil smɔl./",
+      "zh": "明天這段路就會變很小。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I already know where to go.",
+      "phonetic": "/aɪ ɔlˈrɛdi noʊ wɛr tu ɡoʊ./",
+      "zh": "我已經知道要往哪裡走了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Lily takes the bus too.",
+      "phonetic": "/ˈlɪli teɪks ðə bʌs tu./",
+      "zh": "莉莉也搭校車。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'll keep one seat for her.",
+      "phonetic": "/aɪl kip wʌn sit fər hɜr./",
+      "zh": "我會幫她留一個位子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your day is done, and good.",
+      "phonetic": "/jʊr deɪ ɪz dʌn, ənd ɡʊd./",
+      "zh": "你的一天結束了，過得很好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I did not cry at all.",
+      "phonetic": "/aɪ dɪd nɑt kraɪ ət ɔl./",
+      "zh": "我完全沒有哭。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Not even at the door?",
+      "phonetic": "/nɑt ˈivən ət ðə dɔr?/",
+      "zh": "連在門口都沒有嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only a tiny bit, inside.",
+      "phonetic": "/ˈoʊnli ə ˈtaɪni bɪt, ɪnˈsaɪd./",
+      "zh": "只在教室裡面掉了一點點眼淚。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That still counts as brave.",
+      "phonetic": "/ðæt stɪl kaʊnts æz breɪv./",
+      "zh": "那樣也算是勇敢了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Brave is a hard word to say.",
+      "phonetic": "/breɪv ɪz ə hɑrd wɜrd tu seɪ./",
+      "zh": "勇敢這個字講起來好難。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Say it soft and close your eyes.",
+      "phonetic": "/seɪ ɪt sɔft ənd kloʊz jʊr aɪz./",
+      "zh": "小聲地說，把眼睛閉上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I was brave today, I was brave.",
+      "phonetic": "/aɪ wʌz breɪv təˈdeɪ, aɪ wʌz breɪv./",
+      "zh": "我今天很勇敢，我今天很勇敢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good, your breathing slowed down.",
+      "phonetic": "/ɡʊd, jʊr ˈbriðɪŋ sloʊd daʊn./",
+      "zh": "很好，你的呼吸變慢了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The blanket is warm again.",
+      "phonetic": "/ðə ˈblæŋkɪt ɪz wɔrm əˈɡɛn./",
+      "zh": "毯子又變暖了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The alarm is set for seven.",
+      "phonetic": "/ðə əˈlɑrm ɪz sɛt fər ˈsɛvən./",
+      "zh": "鬧鐘已經設在七點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And you will wake me first.",
+      "phonetic": "/ænd ju wɪl weɪk mi fɜrst./",
+      "zh": "而且你會第一個叫我起床。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your bag stands by the door.",
+      "phonetic": "/jʊr bæɡ stændz baɪ ðə dɔr./",
+      "zh": "你的書包放在門邊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Uniform on the chair, all ready.",
+      "phonetic": "/ˈjunəˌfɔrm ɑn ðə tʃɛr, ɔl ˈrɛdi./",
+      "zh": "校服在椅子上，全準備好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Nothing left to think about.",
+      "phonetic": "/ˈnʌθɪŋ lɛft tu θɪŋk əˈbaʊt./",
+      "zh": "已經沒有要想的事了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only tomorrow, and it is fine.",
+      "phonetic": "/ˈoʊnli təˈmɛroʊ, ənd ɪt ɪz faɪn./",
+      "zh": "只剩明天，而明天沒問題。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sleep now, my school kid.",
+      "phonetic": "/slip naʊ, maɪ skul kɪd./",
+      "zh": "睡吧，我的開學小孩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good night, thanks for today.",
+      "phonetic": "/ɡʊd naɪt, θæŋks fər təˈdeɪ./",
+      "zh": "晚安，謝謝你今天陪我。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sweet dreams, day two will come.",
+      "phonetic": "/swit drimz, deɪ tu wɪl kʌm./",
+      "zh": "好夢，第二天總會來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And I will be ready for it.",
+      "phonetic": "/ænd aɪ wɪl bi ˈrɛdi fər ɪt./",
+      "zh": "而我已經準備好面對它。"
+    }
+  ]
+}

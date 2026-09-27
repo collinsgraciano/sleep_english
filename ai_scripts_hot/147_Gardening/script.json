@@ -1,0 +1,2458 @@
+{
+  "title": "Everyday Phrases — Gardening",
+  "title_zh": "園藝",
+  "scene_zh": "園藝 · 情境對話",
+  "title_quote": "Let's visit the garden center today.",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】🌻 實用園藝必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — Gardening",
+  "youtube_description": "睡著學英文！這部影片收錄實用園藝情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫），從園藝中心選購種子花盆，到翻土播種、日照施肥除蟲、收穫堆肥與鄰居分享，全程常用英文一次學會。不用背，睡前聽就會。重複播放，讓英文自然進入你的大腦。👍 想學更多生活場景，請留言告訴我！別忘了訂閱+按讚。 #英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features 400 practical Gardening phrase pairs (each pair: male normal speed → female slow speed → combined dialogue), from picking seeds and pots at the garden center to digging, sowing, feeding, pest care, harvest and sharing with neighbors. No memorization needed—just listen before bed and absorb naturally. If you want more real-life scenarios, leave a comment! Subscribe and like!",
+  "youtube_tags": [
+    "英文聽力",
+    "睡前英文",
+    "園藝英文",
+    "種花英文",
+    "Gardening English",
+    "English listening",
+    "Sleep learning",
+    "A2 English",
+    "常用英文短語",
+    "零基礎英文",
+    "慢速英文",
+    "英文口語",
+    "Learn English",
+    "English for daily life",
+    "ESL",
+    "English conversation"
+  ],
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "Gardening",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "Gardening",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Outdoors",
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "Let's visit the garden center today.",
+      "phonetic": "/lɛts ˈvɪzɪt ðə ˈɡɑrdən ˈsɛntər təˈdeɪ./",
+      "zh": "我們今天去園藝中心逛逛吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes! I want to plant something new.",
+      "phonetic": "/jɛs! aɪ wɑnt tə plænt ˈsʌmθɪŋ nu./",
+      "zh": "好啊！我想種點新東西。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We'll need seeds, pots, and good soil.",
+      "phonetic": "/wil nid sidz, pɑts, ənd ɡʊd sɔɪl./",
+      "zh": "我們需要種子、花盆和好土。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And don't forget your old gloves.",
+      "phonetic": "/ənd doʊnt fərˈɡɛt jɔr oʊld ɡlʌvz./",
+      "zh": "還有，別忘了你那副舊手套。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My gloves have holes in both hands.",
+      "phonetic": "/maɪ ɡlʌvz hæv hoʊlz ɪn boʊθ hændz./",
+      "zh": "我的手套兩隻都破洞了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Time for a fresh pair, then.",
+      "phonetic": "/taɪm fər ə frɛʃ pɛr, ðɛn./",
+      "zh": "那該換一雙新的了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Here's the seed aisle. Take your time.",
+      "phonetic": "/hɪrz ðə sid aɪəl. teɪk jɔr taɪm./",
+      "zh": "種子走道在這裡，慢慢挑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wow, so many colors on these packets.",
+      "phonetic": "/waʊ, soʊ ˈmɛni ˈkʌlərz ɑn ðiz ˈpækɪts./",
+      "zh": "哇，這些包裝上好多顏色。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you like these tomato seeds?",
+      "phonetic": "/du ju laɪk ðiz təˈmeɪtoʊ sidz?/",
+      "zh": "你喜歡這包番茄種子嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, but which kind is easiest to grow?",
+      "phonetic": "/jɛs, bʌt wɪʧ kaɪnd ɪz ˈiːziəst tə groʊ?/",
+      "zh": "喜歡，但哪一種最好種？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cherry tomato is best for beginners.",
+      "phonetic": "/ðə ˈtʃɛri təˈmeɪtoʊ ɪz bɛst fər bɪˈɡɪnərz./",
+      "zh": "小番茄最適合新手。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'll take two packets of those.",
+      "phonetic": "/aɪl teɪk tu ˈpækɪts ʌv ðoz./",
+      "zh": "那我買兩包這種。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's get some basil seeds too.",
+      "phonetic": "/lɛts ɡɛt sʌm ˈbæsəl sidz tu./",
+      "zh": "也買點羅勒種子吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Basil smells wonderful next to tomatoes.",
+      "phonetic": "/ˈbæsəl smɛlz ˈwʌndərfəl nɛkst tə təˈmeɪtoʊz./",
+      "zh": "羅勒種在番茄旁邊香氣超棒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "These sunflowers grow really tall.",
+      "phonetic": "/ðiz ˈsʌnˌflaʊərz groʊ ˈrɪəli tɔl./",
+      "zh": "這些向日葵會長得好高。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Plant them behind the fence in spring.",
+      "phonetic": "/plænt ðɛm bɪˈhaɪnd ðə fɛns ɪn sprɪŋ./",
+      "zh": "春天把它們種在圍籬後面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What does 'after the frost' mean here?",
+      "phonetic": "/wɑt dʌz ˈæftər ðə frɔst min hɪr?/",
+      "zh": "這裡寫的「霜期之後」是什麼意思？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wait until nights stay warm outside.",
+      "phonetic": "/weɪt ʌnˈtɪl naɪts steɪ wɔrm ˌaʊtˈsaɪd./",
+      "zh": "就是等到夜裡變暖了再種。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should we sow these now or later?",
+      "phonetic": "/ʃʊd wi soʊ ðiz naʊ ɔr ˈleɪtər?/",
+      "zh": "我們現在播還是晚一點再播？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nights are warm now. Let's sow!",
+      "phonetic": "/naɪts ɑr wɔrm naʊ. lɛts soʊ!/",
+      "zh": "夜裡已經轉暖，我們就播種吧！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This packet says six seeds inside.",
+      "phonetic": "/ðɪs ˈpækɪt sɛz sɪks sidz ɪnˈsaɪd./",
+      "zh": "這包裡面只有六顆種子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only six? I hoped for more.",
+      "phonetic": "/ˈoʊnli sɪks? aɪ hoʊpt fər mɔr./",
+      "zh": "只有六顆？我還以為會多一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Pumpkin seeds are bigger and cheaper.",
+      "phonetic": "/ˈpʌmpkɪn sidz ɑr ˈbɪɡər ənd ˈtʃipər./",
+      "zh": "南瓜種子比較大，也比較便宜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "But one plant feeds our whole street.",
+      "phonetic": "/bʌt wʌn plænt fidz ˈaʊər hoʊl strit./",
+      "zh": "但一棵就夠整條街的人吃了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are these marigolds for the flower bed?",
+      "phonetic": "/ɑr ðiz ˈmærɪɡoʊldz fər ðə ˈflaʊər bɛd?/",
+      "zh": "這些萬壽菊是種在花圃裡的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, their orange color keeps bugs away.",
+      "phonetic": "/jɛs, ðɛr ˈɔrɪndʒ ˈkʌlər kiːps bʌɡz əˈweɪ./",
+      "zh": "是啊，橘色的花能趕走蟲子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Flowers can help the vegetable garden?",
+      "phonetic": "/ˈflaʊərz kæn hɛlp ðə ˈvɛdʒtəbəl ˈɡɑrdən?/",
+      "zh": "花也能幫到菜園嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Of course! Bees love them too.",
+      "phonetic": "/ʌv kɔrs! biz lʌv ðɛm tu./",
+      "zh": "當然！蜜蜂也很喜歡它們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now, where are the planting supplies?",
+      "phonetic": "/naʊ, wɛr ɑr ðə ˈplæntɪŋ səˈplaɪz?/",
+      "zh": "那麼，種植用品放在哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just past the wheelbarrows, on the left.",
+      "phonetic": "/dʒʌst pæst ðə ˈwilˌbæroʊz, ɑn ðə lɛft./",
+      "zh": "經過手推車，在左手邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How deep should a pot be for peppers?",
+      "phonetic": "/haʊ diːp ʃʊd ə pɑt bi fər ˈpɛpərz?/",
+      "zh": "種甜椒的花盆要多深？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "About twelve inches is deep enough.",
+      "phonetic": "/əˈbaʊt twɛlv ˈɪntʃəz ɪz diːp ɪˈnʌf./",
+      "zh": "大約十二英寸深就夠了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do clay pots dry out faster?",
+      "phonetic": "/du kleɪ pɑts draɪ aʊt ˈfæstər?/",
+      "zh": "陶盆是不是乾得比較快？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, plastic ones hold water longer.",
+      "phonetic": "/jɛs, ˈplæstɪk wʌnz hoʊld ˈwɔtər ˈlɔŋɡər./",
+      "zh": "對，塑膠盆保水久一些。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I love these blue painted pots.",
+      "phonetic": "/aɪ lʌv ðiz blu ˈpeɪntɪd pɑts./",
+      "zh": "我好喜歡這些上藍漆的花盆。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They'd look nice on the front porch.",
+      "phonetic": "/ðed lʊk naɪs ɑn ðə frʌnt pɔrtʃ./",
+      "zh": "擺在門廊上一定很好看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Pick one, but check the bottom first.",
+      "phonetic": "/pɪk wʌn, bʌt tʃɛk ðə ˈbɑtəm fɜrst./",
+      "zh": "挑一個吧，但先看盆底。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good point! This one has no hole.",
+      "phonetic": "/ɡʊd pɔɪnt! ðɪs wʌn hæz noʊ hoʊl./",
+      "zh": "說得對！這一個沒有洞。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Every pot needs holes for drainage.",
+      "phonetic": "/ˈɛvri pɑt niːdz hoʊlz fər ˈdreɪnɪdʒ./",
+      "zh": "每個花盆都要有排水孔。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Else the roots will just rot.",
+      "phonetic": "/ɛls ðə ruts wɪl dʒʌst rɑt./",
+      "zh": "不然根會泡到腐爛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's grab a bag of potting soil.",
+      "phonetic": "/lɛts ɡræb ə bæɡ ɑv ˈpɑtɪŋ sɔɪl./",
+      "zh": "拿一袋盆栽用土吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The big one or the small one?",
+      "phonetic": "/ðə bɪɡ wʌn ɔr ðə smɔl wʌn?/",
+      "zh": "買大袋還是小袋？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How many pots can one bag fill?",
+      "phonetic": "/haʊ ˈmɛni pɑts kæn wʌn bæɡ fɪl?/",
+      "zh": "一大袋土能裝滿幾個花盆？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It fills about three medium pots.",
+      "phonetic": "/ɪt fɪlz əˈbaʊt θri ˈmidiəm pɑts./",
+      "zh": "裝滿三個中號花盆剛好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This mix holds water and air well.",
+      "phonetic": "/ðɪs mɪks hoʊldz ˈwɔtər ənd ɛr wɛl./",
+      "zh": "這種土保水又透氣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Perfect for starting seeds indoors.",
+      "phonetic": "/ˈpɜrfɪkt fər ˈstɑrtɪŋ sidz ɪnˈdɔrz./",
+      "zh": "拿來在室內育苗正合適。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Never use garden soil in pots.",
+      "phonetic": "/ˈnɛvər juːz ˈɡɑrdən sɔɪl ɪn pɑts./",
+      "zh": "花盆裡千萬別直接裝院裡的土。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Why not? What's bad about it?",
+      "phonetic": "/waɪ nɑt? wɑts bæd əˈbaʊt ɪt?/",
+      "zh": "為什麼？那樣有什麼不好？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It turns hard inside a container.",
+      "phonetic": "/ɪt tərnz hɑrd ɪnˈsaɪd ə kənˈteɪnər./",
+      "zh": "裝進容器後它會結得很硬。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good to know. Thanks for the tip!",
+      "phonetic": "/ɡʊd tə noʊ. θæŋks fər ðə tɪp!/",
+      "zh": "長知識了，謝謝提醒！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We need a trowel for small holes.",
+      "phonetic": "/wi nid ə ˈtraʊəl fər smɔl hoʊlz./",
+      "zh": "挖小洞需要一把園土鏟。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The short one fits my hand best.",
+      "phonetic": "/ðə ʃɔrt wʌn fɪts maɪ hænd bɛst./",
+      "zh": "短柄那把最合我的手。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "These pruning shears feel light and sharp.",
+      "phonetic": "/ðiz ˈpruːnɪŋ ʃɪrz fil laɪt ənd ʃɑrp./",
+      "zh": "這把修枝剪又輕又利。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Test them before you buy anything.",
+      "phonetic": "/tɛst ðɛm bɪˈfɔr ju baɪ ˈɛniˌθɪŋ./",
+      "zh": "買之前先試剪一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A new hose can wait until next week.",
+      "phonetic": "/ə nu hoʊz kæn weɪt ʌnˈtɪl nɛkst wiːk./",
+      "zh": "新水管可以下週再買。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Agreed. We have one at home.",
+      "phonetic": "/əˈɡrid. wi hæv wʌn æt hoʊm./",
+      "zh": "同意，家裡還有一條。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do we need a watering can?",
+      "phonetic": "/du wi nid ə ˈwɔtərɪŋ kæn?/",
+      "zh": "我們需要澆水壺嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the kind with a gentle spout.",
+      "phonetic": "/jɛs, ðə kaɪnd wɪð ə ˈdʒɛntəl spaʊt./",
+      "zh": "要，買壺嘴出水柔和的那種。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "These foam pads save your knees.",
+      "phonetic": "/ðiz foʊm pædz seɪv jɔr niːz./",
+      "zh": "這種泡綿墊能保護膝蓋。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mine are worn thin already.",
+      "phonetic": "/maɪn ɑr wɔrn θɪn ɔlˈrɛdi./",
+      "zh": "我那兩塊早就磨薄了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Look at these cute plant stakes.",
+      "phonetic": "/lʊk æt ðiz kjut plænt steɪks./",
+      "zh": "看這些可愛植物支架。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Shapes of birds, moons, and suns.",
+      "phonetic": "/ʃeɪps ʌv bɜrdz, munz, ənd sʌnz./",
+      "zh": "有小鳥、月亮和太陽造型。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are those labels or just decorations?",
+      "phonetic": "/ɑr ðoʊz ˈleɪbəlz ɔr dʒʌst ˌdɛkəˈreɪʃənz?/",
+      "zh": "那些是標籤還是裝飾品？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Both! You can write names on them.",
+      "phonetic": "/boʊθ! ju kæn raɪt neɪmz ɑn ðɛm./",
+      "zh": "兩用！可以在上面寫名字。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Seeds need water, warmth, and patience.",
+      "phonetic": "/sidz niːd ˈwɔtər, wɔrmθ, ənd ˈpeɪʃəns./",
+      "zh": "種子需要水分、溫度和耐心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And maybe a little music.",
+      "phonetic": "/ənd ˈmeɪbi ə ˈlɪtəl ˈmjuːzɪk./",
+      "zh": "說不定還需要一點音樂。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does music really help plants grow?",
+      "phonetic": "/dʌz ˈmjuːzɪk ˈrɪəli hɛlp plænts groʊ?/",
+      "zh": "音樂真的能幫植物長得好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I play jazz, and they love it.",
+      "phonetic": "/aɪ pleɪ dʒæz, ənd ðeɪ lʌv ɪt./",
+      "zh": "我常放爵士樂，它們很買單。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The fertilizer is by the checkout.",
+      "phonetic": "/ðə ˈfɜrtəˌlaɪzər ɪz baɪ ðə ˈtʃɛkˌaʊt./",
+      "zh": "肥料在結帳區旁邊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Get the slow-release kind for pots.",
+      "phonetic": "/ɡɛt ðə sloʊ rɪˈlis kaɪnd fər pɑts./",
+      "zh": "拿盆栽用的緩釋型那種。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is organic better for vegetables?",
+      "phonetic": "/ɪz ɔrˈɡænɪk ˈbɛtər fər ˈvɛdʒtəbəlz?/",
+      "zh": "用有機肥料對蔬菜比較好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Many gardeners think so, for sure.",
+      "phonetic": "/ˈmɛni ˈɡɑrdənərz θɪŋk soʊ, fər ʃʊr./",
+      "zh": "很多種菜的人都堅定這麼想。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What's the brown stuff in that bag?",
+      "phonetic": "/wɑts ðə braʊn stʌf ɪn ðæt bæɡ?/",
+      "zh": "那袋棕色的東西是什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Compost. It makes soil really rich.",
+      "phonetic": "/ˈkɑmpoʊst. ɪt meɪks sɔɪl ˈrɪəli rɪtʃ./",
+      "zh": "堆肥，能讓土變得很肥沃。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do we need a wheelbarrow today?",
+      "phonetic": "/du wi nid ə ˈwilˌbæroʊ təˈdeɪ?/",
+      "zh": "今天需要手推車嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, this shopping cart is enough.",
+      "phonetic": "/noʊ, ðɪs ˈʃɑpɪŋ kɑrt ɪz ɪˈnʌf./",
+      "zh": "不用，這台購物車就夠了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Saturday mornings get busy here fast.",
+      "phonetic": "/ˈsætərˌdeɪ ˈmɔrnɪŋz ɡɛt ˈbɪzi hɪr fæst./",
+      "zh": "這裡週六上午很快就擠滿人。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's why we came at nine.",
+      "phonetic": "/ðæts waɪ wi keɪm æt naɪn./",
+      "zh": "所以我們九點就趕來了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you see the seed sale sign?",
+      "phonetic": "/dɪd ju si ðə sid seɪl saɪn?/",
+      "zh": "你看到種子特價的海報了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Buy three packets, get one free!",
+      "phonetic": "/baɪ θri ˈpækɪts, ɡɛt wʌn fri!/",
+      "zh": "買三包送一包！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That's a great deal on marigolds.",
+      "phonetic": "/ðæts ə ɡreɪt dil ɑn ˈmærɪɡoʊldz./",
+      "zh": "萬壽菊這個價錢真划算。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let's add more flowers to the list.",
+      "phonetic": "/lɛts æd mɔr ˈflaʊərz tə ðə lɪst./",
+      "zh": "購物清單上多加幾種花。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did we forget the tomato cages?",
+      "phonetic": "/dɪd wi fərˈɡɛt ðə təˈmeɪtoʊ ˈkeɪdʒəz?/",
+      "zh": "我們忘了番茄籠架了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Oh no, we need three of those.",
+      "phonetic": "/oʊ noʊ, wi nid θri ʌv ðoz./",
+      "zh": "噢糟了，那個要買三個。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Metal cages last for many years.",
+      "phonetic": "/ˈmɛtəl ˈkeɪdʒəz læst fər ˈmɛni jɪrz./",
+      "zh": "金屬的可以用好多年。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Plastic ones break after one season.",
+      "phonetic": "/ˈplæstɪk wʌnz breɪk ˈæftər wʌn ˈsizən./",
+      "zh": "塑膠的一季就斷掉了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Those apple trees outside are flowering.",
+      "phonetic": "/ðoʊz ˈæpəl triz ˌaʊtˈsaɪd ɑr ˈflaʊərɪŋ./",
+      "zh": "外面那些蘋果樹都開花了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spring really is the gardening season.",
+      "phonetic": "/sprɪŋ ˈrɪəli ɪz ðə ˈɡɑrdənɪŋ ˈsizən./",
+      "zh": "春天果然是園藝的季節。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I pay with card here?",
+      "phonetic": "/kæn aɪ peɪ wɪð kɑrd hɪr?/",
+      "zh": "這裡可以刷卡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, cash works too, of course.",
+      "phonetic": "/jɛs, kæʃ wɜrks tu, ʌv kɔrs./",
+      "zh": "當然，現金也可以。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Okay, that's everything on our list.",
+      "phonetic": "/oʊˈkeɪ, ðæts ˈɛvriˌθɪŋ ɑn ˈaʊər lɪst./",
+      "zh": "好，清單上的都買齊了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Well, almost. I grabbed a succulent.",
+      "phonetic": "/wɛl, ˈɔlˌmoʊst. aɪ ɡræbd ə ˈsʌkjələnt./",
+      "zh": "差不多啦，我又順手拿了一株多肉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A succulent? For the kitchen window?",
+      "phonetic": "/ə ˈsʌkjələnt? fər ðə ˈkɪtʃɪn ˈwɪndoʊ?/",
+      "zh": "多肉植物？放廚房窗台嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It needs almost no care at all.",
+      "phonetic": "/ɪt niːdz ˈɔlˌmoʊst noʊ kɛr æt ɔl./",
+      "zh": "它幾乎完全不用照顧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You take the soil, I'll hold pots.",
+      "phonetic": "/ju teɪk ðə sɔɪl, aɪl hoʊld pɑts./",
+      "zh": "你提土，我抱著花盆。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Careful, that bag feels heavy.",
+      "phonetic": "/ˈkɛrfəl, ðæt bæɡ filz ˈhɛvi./",
+      "zh": "小心點，那袋好重。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you see the notice on the door?",
+      "phonetic": "/dɪd ju si ðə ˈnoʊtɪs ɑn ðə dɔr?/",
+      "zh": "你有看到門上的通知嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Free plant swaps every first Saturday.",
+      "phonetic": "/fri plænt swæps ˈɛvri fɜrst ˈsætərˌdeɪ./",
+      "zh": "每月第一個週六免費交換植株。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We have to come back next month.",
+      "phonetic": "/wi hæv tə kʌm bæk nɛkst mʌnθ./",
+      "zh": "下個月我們一定要再來一趟。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "But today we go plant our seeds!",
+      "phonetic": "/bʌt təˈdeɪ wi ɡoʊ plænt ˈaʊər sidz!/",
+      "zh": "但今天先回家種我們的種子！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Here's our sunny spot by the wall.",
+      "phonetic": "/hɪrz ˈaʊər ˈsʌni spɑt baɪ ðə wɔl./",
+      "zh": "我們向陽的角落就在牆邊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good. Nothing blocks the sun here.",
+      "phonetic": "/ɡʊd. ˈnʌθɪŋ blɑks ðə sʌn hɪr./",
+      "zh": "很好，這裡沒有東西擋陽光。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "First, we clear away all the old weeds.",
+      "phonetic": "/fɜrst, wi klɪr əˈweɪ ɔl ðə oʊld widz./",
+      "zh": "先把舊雜草全部清掉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'll pull them out by their roots.",
+      "phonetic": "/aɪl pʊl ðɛm aʊt baɪ ðɛr ruts./",
+      "zh": "我連根把草拔出來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Don't drop the ones with seeds.",
+      "phonetic": "/doʊnt drɑp ðə wʌnz wɪð sidz./",
+      "zh": "結了籽的那幾株別亂抖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'll toss them in the trash bag.",
+      "phonetic": "/aɪl tɔs ðɛm ɪn ðə træʃ bæɡ./",
+      "zh": "我直接把它們丟進垃圾袋。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Rocks and sticks go in this bucket.",
+      "phonetic": "/rɑks ənd stɪks ɡoʊ ɪn ðɪs ˈbʌkɪt./",
+      "zh": "石頭和枯枝撿進桶子裡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "This ground is pretty rocky.",
+      "phonetic": "/ðɪs ɡraʊnd ɪz ˈprɪti ˈrɑki./",
+      "zh": "這片地還蠻多石塊的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now loosen the soil with the fork.",
+      "phonetic": "/naʊ ˈluːsən ðə sɔɪl wɪð ðə fɔrk./",
+      "zh": "現在用叉子把土鬆一鬆。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Like this? Push and wiggle?",
+      "phonetic": "/laɪk ðɪs? pʊʃ ənd ˈwɪɡəl?/",
+      "zh": "像這樣嗎？邊推邊搖？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Exactly. Go down about six inches.",
+      "phonetic": "/ɪɡˈzæktli. ɡoʊ daʊn əˈbaʊt sɪks ˈɪntʃəz./",
+      "zh": "對，往下大約六英寸。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My back already says hello.",
+      "phonetic": "/maɪ bæk ɔlˈrɛdi sɛz hɛˈloʊ./",
+      "zh": "我的腰已經在抗議了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Well, the soil is dry and dusty.",
+      "phonetic": "/wɛl, ðə sɔɪl ɪz draɪ ənd ˈdʌsti./",
+      "zh": "嗯，這土又乾又灰的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let's water it before digging more.",
+      "phonetic": "/lɛts ˈwɔtər ɪt bɪˈfɔr ˈdɪɡɪŋ mɔr./",
+      "zh": "再挖之前先澆點水吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Fine by me. My arms need rest.",
+      "phonetic": "/faɪn baɪ mi. maɪ ɑrmz nid rɛst./",
+      "zh": "我沒意見，手臂需要休息。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The hose is right over there.",
+      "phonetic": "/ðə hoʊz ɪz raɪt ˈoʊvər ðɛr./",
+      "zh": "水管就擱在那邊呀。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Spread the compost over the whole bed.",
+      "phonetic": "/sprɛd ðə ˈkɑmpoʊst ˈoʊvər ðə hoʊl bɛd./",
+      "zh": "把堆肥均勻撒滿整片花床。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "How thick should the layer be?",
+      "phonetic": "/haʊ θɪk ʃʊd ðə ˈleɪər bi?/",
+      "zh": "這一層要鋪多厚？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "About one inch is plenty here.",
+      "phonetic": "/əˈbaʊt wʌn ɪntʃ ɪz ˈplɛnti hɪr./",
+      "zh": "一英寸左右就很夠了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'll work it in with the rake.",
+      "phonetic": "/aɪl wɜrk ɪt ɪn wɪð ðə reɪk./",
+      "zh": "我用耙子把它攪進土裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Rakes are just for leveling here.",
+      "phonetic": "/reɪks ɑr dʒʌst fər ˈlɛvəlɪŋ hɪr./",
+      "zh": "耙子在這裡只用來弄平表面。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Use your hands for the rest.",
+      "phonetic": "/juz jɔr hændz fər ðə rɛst./",
+      "zh": "剩下的部分用手就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My hands? In the cold dirt?",
+      "phonetic": "/maɪ hændz? ɪn ðə koʊld dɜrt?/",
+      "zh": "我的手？要插進冷泥巴裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Real gardeners love dirty hands.",
+      "phonetic": "/riəl ˈɡɑrdənərz lʌv ˈdɜrti hændz./",
+      "zh": "真正的園藝人都愛髒手。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Okay, you've convinced me.",
+      "phonetic": "/oʊˈkeɪ, juv kənˈvɪnst mi./",
+      "zh": "好吧，你說服我了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Look, it feels like fresh bread.",
+      "phonetic": "/lʊk, ɪt filz laɪk frɛʃ brɛd./",
+      "zh": "你摸，土像新鮮麵包一樣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Nice and soft, full of air.",
+      "phonetic": "/naɪs ənd sɔft, fʊl əv ɛr./",
+      "zh": "又鬆又軟，充滿空氣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Time to mark our rows with sticks.",
+      "phonetic": "/taɪm tə mɑrk ˈaʊər roʊz wɪð stɪks./",
+      "zh": "該用樹枝把一行行標出來了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should the tall plants sit in front?",
+      "phonetic": "/ʃʊd ðə tɔl plænts sɪt ɪn frʌnt?/",
+      "zh": "高的植物要種在前面嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, put them in the back.",
+      "phonetic": "/noʊ, pʊt ðɛm ɪn ðə bæk./",
+      "zh": "不，把它們放最後面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That way sun reaches every leaf.",
+      "phonetic": "/ðæt weɪ sʌn ˈriːtʃəz ˈɛvri lif./",
+      "zh": "這樣陽光才照得到每片葉子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Smart. The tomatoes take the back row.",
+      "phonetic": "/smɑrt. ðə təˈmeɪtoʊz teɪk ðə bæk roʊ./",
+      "zh": "聰明，那番茄種最後一排。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sow the seed row a finger deep.",
+      "phonetic": "/soʊ ðə sid roʊ ə ˈfɪŋɡər dip./",
+      "zh": "播種溝挖一指深就好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A finger? Not with a ruler?",
+      "phonetic": "/ə ˈfɪŋɡər? nɑt wɪð ə ˈrulər?/",
+      "zh": "用手指？不用尺量嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your finger knows better than a ruler.",
+      "phonetic": "/jɔr ˈfɪŋɡər noʊz ˈbɛtər ðæn ə ˈrulər./",
+      "zh": "你的手指比尺子更準。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You always say that about gardening.",
+      "phonetic": "/ju ˈɔlˌweɪz seɪ ðæt əˈbaʊt ˈɡɑrdənɪŋ./",
+      "zh": "一談到種花你就有一套。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Make a shallow line, drop seeds in.",
+      "phonetic": "/meɪk ə ˈʃæloʊ laɪn, drɑp sidz ɪn./",
+      "zh": "劃一道淺溝，把種子撒進去。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One seed every two inches?",
+      "phonetic": "/wʌn sid ˈɛvri tu ˈɪntʃəz?/",
+      "zh": "每兩英寸放一顆嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, then cover them lightly with soil.",
+      "phonetic": "/jɛs, ðɛn ˈkʌvər ðɛm ˈlaɪtli wɪð sɔɪl./",
+      "zh": "對，然後輕輕蓋上一層土。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Like tucking them into bed.",
+      "phonetic": "/laɪk ˈtʌkɪŋ ðɛm ˈɪntu bɛd./",
+      "zh": "像在幫它們蓋好被子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now press the ground nice and flat.",
+      "phonetic": "/naʊ prɛs ðə ɡraʊnd naɪs ənd flæt./",
+      "zh": "現在把地面輕輕壓平。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "With my hands or my feet?",
+      "phonetic": "/wɪð maɪ hændz ɔr maɪ fit?/",
+      "zh": "用手壓還是用腳壓？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Feet work fine, but be gentle.",
+      "phonetic": "/fit wɜrk faɪn, bʌt bi ˈdʒɛntəl./",
+      "zh": "用腳也可以，但要溫柔。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Okay, the tiniest footsteps ever.",
+      "phonetic": "/oʊˈkeɪ, ðə taɪˈniəst ˈfʊtˌstɛps ˈɛvər./",
+      "zh": "好，那我踮著腳尖走。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Water the new rows with a fine spray.",
+      "phonetic": "/ˈwɔtər ðə nu roʊz wɪð ə faɪn spreɪ./",
+      "zh": "用細水花澆剛播好的溝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The watering can is perfect for this.",
+      "phonetic": "/ðə ˈwɔtərɪŋ kæn ɪz ˈpɜrfɪkt fər ðɪs./",
+      "zh": "用澆水壺澆最合適了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Don't wash the seeds out!",
+      "phonetic": "/doʊnt wɑʃ ðə sidz aʊt!/",
+      "zh": "別把種子沖出來！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Too late, I moved one already.",
+      "phonetic": "/tu leɪt, aɪ muːvd wʌn ɔlˈrɛdi./",
+      "zh": "來不及了，已經有一顆被水沖歪了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Push it back and bury it.",
+      "phonetic": "/pʊʃ ɪt bæk ənd ˈbɛri ɪt./",
+      "zh": "把它推回去再蓋好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Done. It should be okay.",
+      "phonetic": "/dʌn. ɪt ʃʊd bi oʊˈkeɪ./",
+      "zh": "搞定，應該沒問題的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Mark this row with a label now.",
+      "phonetic": "/mɑrk ðɪs roʊ wɪð ə ˈleɪbəl naʊ./",
+      "zh": "快用標籤把這一排做上記號。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Row one says cherry tomato.",
+      "phonetic": "/roʊ wʌn sɛz ˈtʃɛri təˈmeɪtoʊ./",
+      "zh": "第一排寫小番茄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Label every row now, trust me.",
+      "phonetic": "/ˈleɪbəl ˈɛvri roʊ naʊ, trʌst mi./",
+      "zh": "每排都標好，信我沒錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Right, later they all look alike.",
+      "phonetic": "/raɪt, ˈleɪtər ðeɪ ɔl lʊk əˈlaɪk./",
+      "zh": "也是，到時候幼苗全都長得一樣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Our seedlings arrived from the store!",
+      "phonetic": "/ˈaʊər ˈsidlɪŋz əˈraɪvd frəm ðə stɔr!/",
+      "zh": "店裡訂的幼苗送到了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The little trays with the greens?",
+      "phonetic": "/ðə ˈlɪtəl treɪz wɪð ðə ɡrinz?/",
+      "zh": "是那盤綠油油的小苗嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, lettuce and basil starts.",
+      "phonetic": "/jɛs, ˈlɛtɪs ənd ˈbæsəl stɑrts./",
+      "zh": "對，有生菜和羅勒苗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They look strong and healthy.",
+      "phonetic": "/ðeɪ lʊk strɔŋ ənd ˈhɛlθi./",
+      "zh": "它們看起來又壯又健康。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We'll transplant them this afternoon.",
+      "phonetic": "/wil trænsˈplænt ðɛm ðɪs ˌæftərˈnun./",
+      "zh": "今天下午就把它們移栽下地。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Should we water the trays first?",
+      "phonetic": "/ʃʊd wi ˈwɔtər ðə treɪz fɜrst?/",
+      "zh": "先給苗盤澆點水嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, an hour before moving them.",
+      "phonetic": "/jɛs, ən ˈaʊər bɪˈfɔr ˈmuːvɪŋ ðɛm./",
+      "zh": "要，移栽前一小時澆。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'll dig the holes meanwhile.",
+      "phonetic": "/aɪl dɪɡ ðə hoʊlz ˈmiːnˌwaɪl./",
+      "zh": "那我先去挖好坑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Space the lettuce a foot apart.",
+      "phonetic": "/speɪs ðə ˈlɛtɪs ə fʊt əˈpɑrt./",
+      "zh": "生菜一棵隔一英尺種。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A whole foot? They're so small.",
+      "phonetic": "/ə hoʊl fʊt? ðɛr soʊ smɔl./",
+      "zh": "整整一英尺？它們還這麼小。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "They grow bigger than you think.",
+      "phonetic": "/ðeɪ groʊ ˈbɪɡər ðæn ju θɪŋk./",
+      "zh": "它們會長得比你想的更大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Okay, I'll measure with my feet.",
+      "phonetic": "/oʊˈkeɪ, aɪl ˈmɛʒər wɪð maɪ fit./",
+      "zh": "好吧，我用腳步來量。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Loosen the roots before planting.",
+      "phonetic": "/ˈluːsən ðə ruts bɪˈfɔr ˈplæntɪŋ./",
+      "zh": "種之前先把根搓鬆。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "How hard should I squeeze?",
+      "phonetic": "/haʊ hɑrd ʃʊd aɪ skwiz?/",
+      "zh": "我該用多大勁捏？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Gentle! The roots break easily.",
+      "phonetic": "/ˈdʒɛntəl! ðə ruts breɪk ˈiːzəli./",
+      "zh": "輕點！根很容易斷。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Oops, this one dropped some soil.",
+      "phonetic": "/ups, ðɪs wʌn drɑpt sʌm sɔɪl./",
+      "zh": "哎呀，這株掉了點土。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That's normal, keep going.",
+      "phonetic": "/ðæts ˈnɔrməl, kip ˈɡoʊɪŋ./",
+      "zh": "很正常，繼續種。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It's in its new hole now.",
+      "phonetic": "/ɪts ɪn ɪts nu hoʊl naʊ./",
+      "zh": "它現在住進新坑了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Plant it at the same depth.",
+      "phonetic": "/plænt ɪt æt ðə seɪm dɛpθ./",
+      "zh": "種到原來一樣的深度。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Right where it sat in the tray?",
+      "phonetic": "/raɪt wɛr ɪt sæt ɪn ðə treɪ?/",
+      "zh": "就是它在盤裡坐的位置嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Exactly there, then firm the soil.",
+      "phonetic": "/ɪɡˈzæktli ðɛr, ðɛn fɜrm ðə sɔɪl./",
+      "zh": "對，然後把土按實。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "There. Like a firm handshake.",
+      "phonetic": "/ðɛr. laɪk ə fɜrm ˈhændˌʃeɪk./",
+      "zh": "好了，像握手那樣實。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Water every transplant right away.",
+      "phonetic": "/ˈwɔtər ˈɛvri trænsˈplænt raɪt əˈweɪ./",
+      "zh": "每棵移栽的都馬上澆水。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A slow drink at the base?",
+      "phonetic": "/ə sloʊ drɪŋk æt ðə beɪs?/",
+      "zh": "在根部慢慢澆嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, right at the base.",
+      "phonetic": "/jɛs, raɪt æt ðə beɪs./",
+      "zh": "對，就澆在根部。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They look happy already.",
+      "phonetic": "/ðeɪ lʊk ˈhæpi ɔlˈrɛdi./",
+      "zh": "它們看起來已經很開心了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The beans will climb our new pole.",
+      "phonetic": "/ðə binz wɪl klaɪm ˈaʊər nu poʊl./",
+      "zh": "豆角會沿著新杆往上爬。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'll sow the seeds beside it.",
+      "phonetic": "/aɪl soʊ ðə sidz bɪˈsaɪd ɪt./",
+      "zh": "我把種子種在杆子旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Two seeds per hole should do it.",
+      "phonetic": "/tu sidz pɜr hoʊl ʃʊd du ɪt./",
+      "zh": "每個坑放兩顆種子就好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Done! I hope the birds agree.",
+      "phonetic": "/dʌn! aɪ hoʊp ðə bɜrdz əˈɡri./",
+      "zh": "種好了！希望小鳥別有意見。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Cover the row with some netting.",
+      "phonetic": "/ˈkʌvər ðə roʊ wɪð sʌm ˈnɛtɪŋ./",
+      "zh": "在這排上蓋張網。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "To keep the birds away?",
+      "phonetic": "/tu kip ðə bɜrdz əˈweɪ?/",
+      "zh": "是為了防小鳥嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "And the neighbor's cat, too.",
+      "phonetic": "/ænd ðə ˈneɪˌbɔrz kæt, tu./",
+      "zh": "還有鄰居家的貓。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "He loves digging in fresh soil.",
+      "phonetic": "/hi lʌvz ˈdɪɡɪŋ ɪn frɛʃ sɔɪl./",
+      "zh": "他最愛在鬆土裡挖坑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The radish rows need some thinning.",
+      "phonetic": "/ðə ˈrædɪʃ raʊz nid sʌm ˈθɪnɪŋ./",
+      "zh": "蘿蔔那排種太密，該疏苗了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Snip them out, don't pull.",
+      "phonetic": "/snɪp ðɛm aʊt, doʊnt pʊl./",
+      "zh": "把它們剪掉就好，彆硬拔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Radishes love cool corners.",
+      "phonetic": "/ˈrædɪʃəz lʌv kul ˈkɔrnərz./",
+      "zh": "蘿蔔最愛涼快的角落。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, the hot spot's already taken.",
+      "phonetic": "/ɡʊd, ðə hɑt spɑts ɔlˈrɛdi ˈteɪkən./",
+      "zh": "正好，曬的地方已經種滿了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What do you think, are we done?",
+      "phonetic": "/wɑt du ju θɪŋk, ɑr wi dʌn?/",
+      "zh": "你覺得，我們種完了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One more thing. A bird bath!",
+      "phonetic": "/wʌn mɔr θɪŋ. ə bɜrd bæθ!/",
+      "zh": "還差一樣——鳥澡盆！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Not another statue in the yard.",
+      "phonetic": "/nɑt əˈnʌðər ˈstætʃu ɪn ðə jɑrd./",
+      "zh": "院子裡可不要再擺雕像了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Not a statue, a water bowl.",
+      "phonetic": "/nɑt ə ˈstætʃu, ə ˈwɔtər boʊl./",
+      "zh": "不是雕像，是一個水盆啦。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Our little garden rows look neat.",
+      "phonetic": "/ˈaʊər ˈlɪtəl ˈɡɑrdən roʊz lʊk nit./",
+      "zh": "我們的小菜園一行行真整齊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Now we wait and hope.",
+      "phonetic": "/naʊ wi weɪt ənd hoʊp./",
+      "zh": "接下來就等待和期盼吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I'll check for sprouts every morning.",
+      "phonetic": "/aɪl tʃɛk fər spraʊts ˈɛvri ˈmɔrnɪŋ./",
+      "zh": "我每天早上都來看發芽沒有。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Bring your coffee out here.",
+      "phonetic": "/brɪŋ jɔr ˈkɔfi aʊt hɪr./",
+      "zh": "那把你的咖啡也端過來吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is morning sun enough for herbs?",
+      "phonetic": "/ɪz ˈmɔrnɪŋ sʌn ɪˈnʌf fər ərbz?/",
+      "zh": "香草只照到早晨的陽光夠嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Herbs love morning sun best.",
+      "phonetic": "/ərbz lʌv ˈmɔrnɪŋ sʌn bɛst./",
+      "zh": "香草最喜歡早晨的陽光。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Ugh, the tomato leaves are curling.",
+      "phonetic": "/ʌɡ, ðə təˈmeɪtoʊ livz ɑr ˈkɜrlɪŋ./",
+      "zh": "噢，番茄的葉子都捲起來了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Was there too much sun yesterday?",
+      "phonetic": "/wʌz ðɛr tu mʌtʃ sʌn ˈjɛstərˌdeɪ?/",
+      "zh": "昨天是不是曬得太多了？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Or maybe not enough water.",
+      "phonetic": "/ɔr ˈmeɪbi nɑt ɪˈnʌf ˈwɔtər./",
+      "zh": "也可能是水喝得不夠。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let's soak them deep tonight.",
+      "phonetic": "/lɛts soʊk ðɛm dip təˈnaɪt./",
+      "zh": "今晚我們把水澆透一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Water the soil, never the leaves.",
+      "phonetic": "/ˈwɔtər ðə sɔɪl, ˈnɛvər ðə livz./",
+      "zh": "澆土就好，別澆葉子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Why not the leaves? They're dirty.",
+      "phonetic": "/waɪ nɑt ðə livz? ðɛr ˈdɜrti./",
+      "zh": "為什麼不能澆葉？它們好髒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wet leaves get sick easily.",
+      "phonetic": "/wɛt livz ɡɛt sɪk ˈiːzəli./",
+      "zh": "葉子濕濕的很容易生病。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Got it. Water at the base.",
+      "phonetic": "/ɡɑt ɪt. ˈwɔtər æt ðə beɪs./",
+      "zh": "懂了，水要澆在根部。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Morning is the best time to water.",
+      "phonetic": "/ˈmɔrnɪŋ ɪz ðə bɛst taɪm tə ˈwɔtər./",
+      "zh": "早上是最適合澆水的時間。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Before the sun gets strong?",
+      "phonetic": "/bɪˈfɔr ðə sʌn ɡɛts strɔŋ?/",
+      "zh": "在太陽變毒之前嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Right. Evening works too.",
+      "phonetic": "/raɪt. ˈivnɪŋ wɜrks tu./",
+      "zh": "對，傍晚其實也可以。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "But slugs love a wet night.",
+      "phonetic": "/bʌt slʌɡz lʌv ə wɛt naɪt./",
+      "zh": "但蛞蝓最愛濕潤的夜晚。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wow, the basil is flowering already.",
+      "phonetic": "/waʊ, ðə ˈbæsəl ɪz ˈflaʊərɪŋ ɔlˈrɛdi./",
+      "zh": "哇，羅勒竟然已經開花了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Should we pinch the flowers off?",
+      "phonetic": "/ʃʊd wi pɪntʃ ðə ˈflaʊərz ɔf?/",
+      "zh": "要把花掐掉嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, or the leaves turn bitter.",
+      "phonetic": "/jɛs, ɔr ðə livz tərn ˈbɪtər./",
+      "zh": "要，不然葉子會變苦。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'll pinch a few today.",
+      "phonetic": "/aɪl pɪntʃ ə fju təˈdeɪ./",
+      "zh": "我今天來掐掉一些花。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This month the beds need plant food.",
+      "phonetic": "/ðɪs mʌnθ ðə bɛdz nid plænt fud./",
+      "zh": "這個月花床該施肥了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Liquid fertilizer or the granules?",
+      "phonetic": "/ˈlɪkwɪd ˈfɜrtəˌlaɪzər ɔr ðə ˈɡrænjəls?/",
+      "zh": "用液體肥還是顆粒肥？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Granules last longer in beds.",
+      "phonetic": "/ˈɡrænjəls læst ˈlɔŋɡər ɪn bɛdz./",
+      "zh": "顆粒的在土裡效力更久。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "How often should we feed them?",
+      "phonetic": "/haʊ ˈɔfən ʃʊd wi fid ðɛm?/",
+      "zh": "那多久餵一次比較好？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Once a month is plenty.",
+      "phonetic": "/wʌns ə mʌnθ ɪz ˈplɛnti./",
+      "zh": "一個月一次就很夠了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'll mark it on my calendar.",
+      "phonetic": "/aɪl mɑrk ɪt ɑn maɪ ˈkæləndər./",
+      "zh": "我來在日曆上記一筆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sprinkle it along the bed edges.",
+      "phonetic": "/ˈsprɪŋkəl ɪt əˈlɔŋ ðə bɛd ˈɛdʒəz./",
+      "zh": "沿著花床邊緣撒一圈。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then water it in, right?",
+      "phonetic": "/ðɛn ˈwɔtər ɪt ɪn, raɪt?/",
+      "zh": "然後澆水讓它滲下去，對吧？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Why are these leaves so sticky?",
+      "phonetic": "/waɪ ɑr ðiz livz soʊ ˈstɪki?/",
+      "zh": "這些葉子怎麼黏黏的？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Some bug has been snacking here.",
+      "phonetic": "/sʌm bʌɡ hæz bɪn ˈsnækɪŋ hɪr./",
+      "zh": "肯定有蟲子在這裡偷吃。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Check under the leaves for bugs.",
+      "phonetic": "/tʃɛk ˈʌndər ðə livz fər bʌɡz./",
+      "zh": "檢查葉子背面有沒有蟲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes! Tiny green ones everywhere.",
+      "phonetic": "/jɛs! ˈtaɪni ɡrin wʌnz ˈɛvriˌwɛr./",
+      "zh": "真的有！四處都是綠色小蟲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Those are aphids. Don't panic.",
+      "phonetic": "/ðoʊz ɑr ˈeɪfɪdz. doʊnt ˈpænɪk./",
+      "zh": "那是蚜蟲，別慌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Can I just squash them?",
+      "phonetic": "/kæn aɪ dʒʌst skwɑʃ ðɛm?/",
+      "zh": "我直接把牠們捏死行嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Spray them off with the hose.",
+      "phonetic": "/spreɪ ðɛm ɔf wɪð ðə hoʊz./",
+      "zh": "先用水管把牠們沖掉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Will that really work?",
+      "phonetic": "/wɪl ðæt ˈrɪəli wɜrk?/",
+      "zh": "那樣真的有用嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, plus soapy water helps.",
+      "phonetic": "/jɛs, plʌs ˈsoʊˌpi ˈwɔtər hɛlps./",
+      "zh": "有用，再加點肥皂水更好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just one drop of soap, right?",
+      "phonetic": "/dʒʌst wʌn drɑp ʌv soʊp, raɪt?/",
+      "zh": "肥皂水只滴一滴，對嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A few drops in a full sprayer.",
+      "phonetic": "/ə fju drɑps ɪn ə fʊl ˈspreɪər./",
+      "zh": "一整噴壺水加幾滴就好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'll mix it this afternoon.",
+      "phonetic": "/aɪl mɪks ɪt ðɪs ˌæftərˈnun./",
+      "zh": "我下午就來調一瓶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Some yellow leaves are normal.",
+      "phonetic": "/sʌm ˈjɛloʊ livz ɑr ˈnɔrməl./",
+      "zh": "掉幾片黃葉是正常的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "How many before I worry?",
+      "phonetic": "/haʊ ˈmɛni bɪˈfɔr aɪ ˈwɜri?/",
+      "zh": "那黃到幾片該擔心？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Trim them off with clean shears.",
+      "phonetic": "/trɪm ðɛm ɔf wɪð klin ʃɪrz./",
+      "zh": "用乾淨的剪刀修剪掉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Should I disinfect them first?",
+      "phonetic": "/ʃʊd aɪ ˌdɪsɪnˈfɛkt ðɛm fɜrst?/",
+      "zh": "剪刀要先消毒嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wipe the blades with alcohol.",
+      "phonetic": "/waɪp ðə bleɪdz wɪð ˈælkəˌhɔl./",
+      "zh": "用酒精擦一下刀刃。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, they're sparkly now.",
+      "phonetic": "/ɡʊd, ðɛr ˈspɑrkli naʊ./",
+      "zh": "好了，剪刀現在亮晶晶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Oh no, that tomato plant fell again.",
+      "phonetic": "/oʊ noʊ, ðæt təˈmeɪtoʊ plænt fɛl əˈɡɛn./",
+      "zh": "噢不，那株番茄又倒下去了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let's tie it to a stake.",
+      "phonetic": "/lɛts taɪ ɪt tə ə steɪk./",
+      "zh": "我們把它綁在支架上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Tie it loosely, not tight.",
+      "phonetic": "/taɪ ɪt ˈlusli, nɑt taɪt./",
+      "zh": "綁鬆一點，不要勒緊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Like a soft figure eight?",
+      "phonetic": "/laɪk ə sɔft ˈfɪɡjər eɪt?/",
+      "zh": "像鬆鬆的八字結那樣嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That's a trick from my video.",
+      "phonetic": "/ðæts ə trɪk frəm maɪ ˈvɪdioʊ./",
+      "zh": "那是我影片裡教的一招。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wait, you make garden videos?",
+      "phonetic": "/weɪt, ju meɪk ˈɡɑrdən ˈvɪdioʊz?/",
+      "zh": "等等，你會拍園藝影片？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Every week, little updates.",
+      "phonetic": "/ˈɛvri wiːk, ˈlɪtəl ˈʌpˌdeɪts./",
+      "zh": "每週都發一點小更新。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'll subscribe, my little gardener.",
+      "phonetic": "/aɪl səbˈskraɪb, maɪ ˈlɪtəl ˈɡɑrdənər./",
+      "zh": "我一定要訂閱，小園丁。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So, the beans need the tall pole.",
+      "phonetic": "/soʊ, ðə binz nid ðə tɔl poʊl./",
+      "zh": "說起來，豆角還缺那根長杆呢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It looks sturdy already.",
+      "phonetic": "/ɪt lʊks ˈstɜrdi ɔlˈrɛdi./",
+      "zh": "那根杆子看起來很穩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Cucumbers climb too, see their tendrils?",
+      "phonetic": "/ˈkjumˌbɜrz klaɪm tu, si ðɛr ˈtɛndərlz?/",
+      "zh": "黃瓜也爬藤，看到捲鬚了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They're grabbing the strings already!",
+      "phonetic": "/ðɛr ˈɡræbɪŋ ðə strɪŋz ɔlˈrɛdi!/",
+      "zh": "它們已經抓住繩子了！"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Weeds stole water from the flowers.",
+      "phonetic": "/widz stoʊl ˈwɔtər frəm ðə ˈflaʊərz./",
+      "zh": "雜草把花的水都搶走了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'll pull them before noon.",
+      "phonetic": "/aɪl pʊl ðɛm bɪˈfɔr nun./",
+      "zh": "我中午前把草拔光。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Pull the young weeds after rain.",
+      "phonetic": "/pʊl ðə jʌŋ widz ˈæftər reɪn./",
+      "zh": "下過雨後拔小草最容易。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They come up so easily then.",
+      "phonetic": "/ðeɪ kʌm ʌp soʊ ˈizəli ðɛn./",
+      "zh": "那時候拔起來最省力了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Never let weeds go to seed.",
+      "phonetic": "/ˈnɛvər lɛt widz ɡoʊ tu sid./",
+      "zh": "千萬別讓雜草結籽。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Too late, that one has flowers.",
+      "phonetic": "/tu leɪt, ðæt wʌn hæz ˈflaʊərz./",
+      "zh": "來不及了，那株都開花了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Bag it. Don't put it in compost.",
+      "phonetic": "/bæɡ ɪt. doʊnt pʊt ɪt ɪn ˈkɑmpoʊst./",
+      "zh": "裝袋丟掉，別進堆肥。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Why? Isn't compost good?",
+      "phonetic": "/waɪ? ˈɪzənt ˈkɑmpoʊst ɡʊd?/",
+      "zh": "為什麼？堆肥不好嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Weed seeds survive the pile.",
+      "phonetic": "/widz sidz sərˈvaɪv ðə paɪl./",
+      "zh": "雜草籽在堆肥裡死不掉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Okay, straight to the trash.",
+      "phonetic": "/oʊˈkeɪ, streɪt tu ðə træʃ./",
+      "zh": "好，直接丟垃圾桶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A heat wave is coming this week.",
+      "phonetic": "/ə hit weɪv ɪz ˈkʌmɪŋ ðɪs wiːk./",
+      "zh": "這週有高溫來襲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nine days above ninety?",
+      "phonetic": "/naɪn deɪz əˈbʌv ˈnɪnti?/",
+      "zh": "連續九天超過九十度？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Our pots will dry out fast.",
+      "phonetic": "/ˈaʊər pɑts wɪl draɪ aʊt fæst./",
+      "zh": "我們的花盆一下子就乾透了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let's group them together.",
+      "phonetic": "/lɛts ɡrup ðɛm təˈɡɛðər./",
+      "zh": "把盆全部挪近一點吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "They share humidity that way.",
+      "phonetic": "/ðeɪ ʃɛr hjuˈmɪdəti ðæt weɪ./",
+      "zh": "這樣它們能共用濕氣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'll shade the tomatoes too.",
+      "phonetic": "/aɪl ʃeɪd ðə təˈmeɪtoʊz tu./",
+      "zh": "我也去幫番茄遮陰。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should we shade the peppers today?",
+      "phonetic": "/ʃʊd wi ʃeɪd ðə ˈpɛpərz təˈdeɪ?/",
+      "zh": "今天要不要幫甜椒遮陽？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, cover them at noon.",
+      "phonetic": "/jɛs, ˈkʌvər ðɛm æt nun./",
+      "zh": "要，中午給它們蓋一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Look, the roses have black spots.",
+      "phonetic": "/lʊk, ðə ˈroʊzɪz hæv blæk spɑts./",
+      "zh": "你看，玫瑰葉上長了黑點點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Is that some kind of disease?",
+      "phonetic": "/ɪz ðæt sʌm kaɪnd əv dɪˈziz?/",
+      "zh": "那是什麼病害嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, clean up the fallen leaves.",
+      "phonetic": "/jɛs, klin ʌp ðə ˈfɔlən livz./",
+      "zh": "對，要把落葉清乾淨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Burn them or trash them?",
+      "phonetic": "/bɜrn ðɛm ɔr træʃ ðɛm?/",
+      "zh": "是燒掉還是丟進垃圾桶？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Well, the bin is safer here.",
+      "phonetic": "/wɛl, ðə bɪn ɪz ˈseɪfər hɪr./",
+      "zh": "呃，病葉丟進垃圾桶比較保險。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'll cut the worst branches.",
+      "phonetic": "/aɪl kʌt ðə wɜrst ˈbræntʃəz./",
+      "zh": "我來修剪最糟的枝子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Cut above an outward bud.",
+      "phonetic": "/kʌt əˈbʌv ən ˈaʊtˌwərd bʌd./",
+      "zh": "在朝外的芽上方下剪。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Which way is outward?",
+      "phonetic": "/wɪʧ weɪ ɪz ˈaʊtˌwərd?/",
+      "zh": "哪個方向算朝外？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Away from the center of the plant.",
+      "phonetic": "/əˈweɪ frəm ðə ˈsɛntər ʌv ðə plænt./",
+      "zh": "就是背離植株中心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Open to the sun and breeze.",
+      "phonetic": "/ˈoʊpən tə ðə sʌn ənd briz./",
+      "zh": "讓陽光微風都進得來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Exactly. Air keeps plants healthy.",
+      "phonetic": "/ɪɡˈzæktli. ɛr kiːps plænts ˈhɛlθi./",
+      "zh": "沒錯，通風讓植物健康。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Done. Look how open it is.",
+      "phonetic": "/dʌn. lʊk haʊ ˈoʊpən ɪt ɪz./",
+      "zh": "剪好了，看多開闊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Rain all week. Stop watering.",
+      "phonetic": "/reɪn ɔl wiːk. stɑp ˈwɔtərɪŋ./",
+      "zh": "要下整週的雨，暫停澆水。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Finally, a gift from the sky.",
+      "phonetic": "/ˈfaɪnəli, ə ɡɪft frəm ðə skaɪ./",
+      "zh": "終於有天上來的水了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Check the pots under the eaves, though.",
+      "phonetic": "/tʃɛk ðə pɑts ˈʌndər ðə ivz, ðoʊ./",
+      "zh": "不過屋簷下的花盆要留意。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Right, the roof blocks all that rain.",
+      "phonetic": "/raɪt, ðə ruf blɑks ɔl ðæt reɪn./",
+      "zh": "對呀，屋頂把那個角落的雨都擋了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yesterday's wind broke the lavender stem.",
+      "phonetic": "/ˈjɛstərˌdeɪz wɪnd broʊk ðə ˈlævəndər stɛm./",
+      "zh": "昨天的強風把薰衣草的莖吹折了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Can we still save it?",
+      "phonetic": "/kæn wi stɪl seɪv ɪt?/",
+      "zh": "還能救得回來嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Cut it short and root it in water.",
+      "phonetic": "/kʌt ɪt ʃɔrt ənd ruːt ɪt ɪn ˈwɔtər./",
+      "zh": "剪短插進水裡就能生根。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Free new plants again.",
+      "phonetic": "/fri nu plænts əˈɡɛn./",
+      "zh": "我們又有免費新植株了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Look how huge the squash leaves got!",
+      "phonetic": "/lʊk haʊ hjuːdʒ ðə skwɑʃ livz ɡɑt!/",
+      "zh": "看那南瓜葉，長得多麼大！"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They shade the whole ground.",
+      "phonetic": "/ðeɪ ʃeɪd ðə hoʊl ɡraʊnd./",
+      "zh": "把整片地面都遮蔭了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Nice job keeping everything alive.",
+      "phonetic": "/naɪs dʒɑb ˈkipɪŋ ˈɛvriˌθɪŋ əˈlaɪv./",
+      "zh": "你把每樣植物都照顧得很好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The garden keeps me alive.",
+      "phonetic": "/ðə ˈɡɑrdən kiːps mi əˈlaɪv./",
+      "zh": "是花園讓我精神飽滿呀。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Next week the flowers should bloom.",
+      "phonetic": "/nɛkst wiːk ðə ˈflaʊərz ʃʊd blum./",
+      "zh": "下週花應該就要開了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'll bring the camera then.",
+      "phonetic": "/aɪl brɪŋ ðə ˈkæmərə ðɛn./",
+      "zh": "到時候我一定帶相機。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Look! The first tomato turned red.",
+      "phonetic": "/lʊk! ðə fɜrst təˈmeɪtoʊ tɜrnd rɛd./",
+      "zh": "看！第一顆番茄變紅了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pick it and taste it right now.",
+      "phonetic": "/pɪk ɪt ənd teɪst ɪt raɪt naʊ./",
+      "zh": "快摘下來當場嚐一口。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Warm from the sun, so sweet.",
+      "phonetic": "/wɔrm frəm ðə sʌn, soʊ swit./",
+      "zh": "帶著太陽的溫度，超甜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Better than any store tomato.",
+      "phonetic": "/ˈbɛtər ðæn ˈɛni stɔr təˈmeɪtoʊ./",
+      "zh": "比店裡賣的番茄好吃太多了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I'm saving seeds from this one.",
+      "phonetic": "/aɪm ˈseɪvɪŋ sidz frʌm ðɪs wʌn./",
+      "zh": "我要從這一顆留種子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Dry them on paper first.",
+      "phonetic": "/draɪ ðɛm ɑn ˈpeɪpər fɜrst./",
+      "zh": "先把種子攤在紙上晾乾。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The lettuce is ready to cut.",
+      "phonetic": "/ðə ˈlɛtɪs ɪz ˈrɛdi tə kʌt./",
+      "zh": "生菜已經可以採收了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The outer leaves or the head?",
+      "phonetic": "/ði ˈaʊtər livz ɔr ðə hɛd?/",
+      "zh": "摘外層葉還是割整棵？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Cut outer leaves, keep it growing.",
+      "phonetic": "/kʌt ˈaʊtər livz, kip ɪt ˈɡroʊɪŋ./",
+      "zh": "割外葉，讓它繼續長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So it gives us more salad.",
+      "phonetic": "/soʊ ɪt ɡivz ʌs mɔr ˈsæləd./",
+      "zh": "這樣就有吃不完的沙拉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "These beans are thick on the vine.",
+      "phonetic": "/ðiz binz ɑr θɪk ɑn ðə vaɪn./",
+      "zh": "這些豆角結滿了一整架。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We should pick them today.",
+      "phonetic": "/wi ʃʊd pɪk ðɛm təˈdeɪ./",
+      "zh": "我們今天就要把它採完。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Pick the young, tender pods.",
+      "phonetic": "/pɪk ðə jʌŋ, ˈtɛndər pɑdz./",
+      "zh": "專採那些嫩的豆莢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Leave the fat ones for seeds.",
+      "phonetic": "/liːv ðə fæt wʌnz fər sidz./",
+      "zh": "留肥大的幾根來收種。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The basil grew huge again.",
+      "phonetic": "/ðə ˈbæsəl ɡru hjuːdʒ əˈɡɛn./",
+      "zh": "羅勒又長得超大了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cut some for the kitchen.",
+      "phonetic": "/kʌt sʌm fər ðə ˈkɪtʃən./",
+      "zh": "剪一叢拿進廚房用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Snip flowers for the table.",
+      "phonetic": "/snɪp ˈflaʊərz fər ðə ˈteɪbəl./",
+      "zh": "剪幾朵花擺上桌吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Marigolds last for weeks.",
+      "phonetic": "/ˈmærɪɡoʊldz læst fər wiːks./",
+      "zh": "萬壽菊能擺好幾個週。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Cut them early in the morning.",
+      "phonetic": "/kʌt ðɛm ˈɜrli ɪn ðə ˈmɔrnɪŋ./",
+      "zh": "一早去剪花最好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Flowers hold more water then.",
+      "phonetic": "/ˈflaʊərz hoʊld mɔr ˈwɔtər ðɛn./",
+      "zh": "那個時候花吸的水最多。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Look at this giant pumpkin.",
+      "phonetic": "/lʊk æt ðɪs ˈdʒaɪənt ˈpʌmpkɪn./",
+      "zh": "快看看這個超大南瓜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "From that one cheap seed?",
+      "phonetic": "/frʌm ðæt wʌn tʃip sid?/",
+      "zh": "就是那顆便宜種子長的？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It grew bigger than my helmet.",
+      "phonetic": "/ɪt ɡru ˈbɪɡər ðæn maɪ ˈhɛlmət./",
+      "zh": "它長得比安全帽還大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can't get that inside.",
+      "phonetic": "/wi kænt ɡɛt ðæt ɪnˈsaɪd./",
+      "zh": "這個根本搬不進屋裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Load it on the old wagon.",
+      "phonetic": "/loʊd ɪt ɑn ði oʊld ˈwæɡən./",
+      "zh": "把它放到那輛舊推車上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Our whole garden looks so full.",
+      "phonetic": "/ˈaʊər hoʊl ˈɡɑrdən lʊks soʊ fʊl./",
+      "zh": "我們整個花園一派豐收景象。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Too much zucchini again.",
+      "phonetic": "/tu mʌtʃ zuˈkini əˈɡɛn./",
+      "zh": "胡瓜又結得過多了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same problem as last year.",
+      "phonetic": "/seɪm ˈprɑbləm æz læst jɪr./",
+      "zh": "跟去年的煩惱一模一樣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Grate it into bread.",
+      "phonetic": "/ɡreɪt ɪt ˈɪntu brɛd./",
+      "zh": "磨碎了烤成麵包來吃吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Or share it with the neighbors.",
+      "phonetic": "/ɔr ʃɛr ɪt wɪð ðə ˈneɪbərz./",
+      "zh": "不然就分給鄰居們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I'll pick a basket for Ms. Lee.",
+      "phonetic": "/aɪl pɪk ə ˈbæskɪt fər məˈli./",
+      "zh": "我裝一籃送給李太太。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She'll love these fresh veggies!",
+      "phonetic": "/ʃil lʌv ðiz frɛʃ ˈvɛɡiz!/",
+      "zh": "她一定很愛這些新鮮蔬菜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Ripe peppers for her porch.",
+      "phonetic": "/raɪp ˈpɛpərz fər hɜr pɔrtʃ./",
+      "zh": "挑幾根漂亮的熟椒掛上她門廊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She'll be so happy.",
+      "phonetic": "/ʃi ləl bi soʊ ˈhæpi./",
+      "zh": "她一定會非常開心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Mr. Kim grows prize tomatoes.",
+      "phonetic": "/ˈmɪstər kɪm ɡroʊz praɪz təˈmeɪtoʊz./",
+      "zh": "金先生的番茄得過獎。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ask him for his advice.",
+      "phonetic": "/æsk hɪm fər hɪz ədˈvaɪs./",
+      "zh": "去跟他請教一下祕訣吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Our tomatoes look amazing this year.",
+      "phonetic": "/ˈaʊər təˈmeɪtoʊz lʊk əˈmeɪzɪŋ ðɪs jɪr./",
+      "zh": "咱們今年的番茄長得真棒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "He'll love that compliment.",
+      "phonetic": "/hil lʌv ðæt ˈkɑmpləˌmɛnt./",
+      "zh": "他一定愛聽這種誇獎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Don't dump scraps on the ground.",
+      "phonetic": "/doʊnt dʌmp skræps ɑn ðə ɡraʊnd./",
+      "zh": "廚餘不要亂倒在地面。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Into the compost they go.",
+      "phonetic": "/ˈɪntu ðə ˈkɑmpoʊst ðeɪ ɡoʊ./",
+      "zh": "全部倒進堆肥桶裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Coffee grounds help worms work.",
+      "phonetic": "/ˈkɔfi ɡraʊndz hɛlp wɜrmz wɜrk./",
+      "zh": "咖啡渣讓蚯蚓更勤快。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Are those worms in the pile?",
+      "phonetic": "/ɑr ðoʊz wɜrmz ɪn ðə paɪl?/",
+      "zh": "堆肥裡那些是蚯蚓嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Millions of them, busy workers.",
+      "phonetic": "/ˈmɪljənz ʌv ðɛm, ˈbɪzi ˈwɜrkərz./",
+      "zh": "數不清的勤勞小工人。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I used to hate worms.",
+      "phonetic": "/aɪ just tə heɪt wɜrmz./",
+      "zh": "我其實以前很討厭蚯蚓。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Turn the pile once a week.",
+      "phonetic": "/tɜrn ðə paɪl wʌns ə wiːk./",
+      "zh": "每週要把堆肥翻動一次。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It heats up from inside.",
+      "phonetic": "/ɪt hits ʌp frəm ɪnˈsaɪd./",
+      "zh": "它從裡面熱了起來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That means it's working well.",
+      "phonetic": "/ðæt minz ɪts ˈwɜrkɪŋ wɛl./",
+      "zh": "那表示分解進行得很順利。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Like a small volcano.",
+      "phonetic": "/laɪk ə smɔl vɑlˈkeɪnoʊ./",
+      "zh": "像一座小火山。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Finished compost smells like a forest.",
+      "phonetic": "/ˈfɪnɪʃt ˈkɑmpoʊst smɛlz laɪk ə ˈfɔrəst./",
+      "zh": "完成的堆肥聞起來像森林。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Dark, rich, and soft.",
+      "phonetic": "/dɑrk, rɪtʃ, ənd sɔft./",
+      "zh": "黑黑的、肥沃又鬆軟。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Next spring it feeds the beds.",
+      "phonetic": "/nɛkst sprɪŋ ɪt fidz ðə bɛdz./",
+      "zh": "明年春天就輪到它養花床。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "From scraps back to soil.",
+      "phonetic": "/frʌm skræps bæk tə sɔɪl./",
+      "zh": "從廚餘又變回了好土。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Shake the dirt off your tools.",
+      "phonetic": "/ʃeɪk ðə dɜrt ɔf jɔr tulz./",
+      "zh": "先把工具上的泥巴拍乾淨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then wipe the metal blades.",
+      "phonetic": "/ðɛn waɪp ðə ˈmɛtəl bleɪdz./",
+      "zh": "再把金屬刀刃擦一擦。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Oil keeps them from rusting.",
+      "phonetic": "/ɔɪl kiːps ðɛm frəm ˈrʌstɪŋ./",
+      "zh": "上點油就不會生鏽。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A quick rub with an oily rag.",
+      "phonetic": "/ə kwɪk rʌb wɪð ən ˈɔɪli ræɡ./",
+      "zh": "用油布快速擦一遍。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hang the empty watering cans.",
+      "phonetic": "/hæŋ ði ˈɛmpti ˈwɔtərɪŋ kænz./",
+      "zh": "把空澆水壺倒掛起來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So nothing sits inside?",
+      "phonetic": "/soʊ ˈnʌθɪŋ sɪts ɪnˈsaɪd?/",
+      "zh": "這樣就不會積水了吧？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Standing water breeds mosquitoes.",
+      "phonetic": "/ˈstændɪŋ ˈwɔtər bridz ˌmosəˈtoʊz./",
+      "zh": "死水會養出一堆蚊子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'll tip them out now.",
+      "phonetic": "/aɪl tɪp ðɛm aʊt naʊ./",
+      "zh": "我趕快把它們倒乾淨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Drain the hose before frost.",
+      "phonetic": "/dreɪn ðə hoʊz bɪˈfɔr frɔst./",
+      "zh": "霜凍前先把水管排空。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It split last winter.",
+      "phonetic": "/ɪt splɪt læst ˈwɪntər./",
+      "zh": "它去年冬天就凍裂過了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Coil it loosely on the hook.",
+      "phonetic": "/kɔɪl ɪt ˈlusli ɑn ðə hʊk./",
+      "zh": "鬆鬆地圈掛在鉤子上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Not too tight, got it.",
+      "phonetic": "/nɑt tu taɪt, ɡɑt ɪt./",
+      "zh": "不要纏太緊，了解。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where do we store the pots?",
+      "phonetic": "/wɛr du wi stɔr ðə pɑts?/",
+      "zh": "花盆要收哪裡呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Under the porch bench.",
+      "phonetic": "/ˈʌndər ðə pɔrtʃ bɛntʃ./",
+      "zh": "藏在門廊的長凳下面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Stack small pots inside big ones.",
+      "phonetic": "/stæk smɔl pɑts ɪnˈsaɪd bɪɡ wʌnz./",
+      "zh": "小花盆套進大花盆裡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A whole pot family.",
+      "phonetic": "/ə hoʊl pɑt ˈfæməli./",
+      "zh": "變成一盆大家庭了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Seeds go in jars, keep them dry.",
+      "phonetic": "/sidz ɡoʊ ɪn dʒɑrz, kip ðɛm draɪ./",
+      "zh": "種子裝進罐子保持乾燥。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'll date every single jar.",
+      "phonetic": "/aɪl deɪt ˈɛvri ˈsɪŋɡəl dʒɑr./",
+      "zh": "我要在每一罐標上日期。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A cool shelf, not the garage.",
+      "phonetic": "/ə kul ʃɛlf, nɑt ðə ɡəˈrɑʒ./",
+      "zh": "放涼爽的架子，別放車庫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The mice found my beans once.",
+      "phonetic": "/ðə maɪs faʊnd maɪ binz wʌns./",
+      "zh": "車庫那裡的老鼠之前就翻到過我的豆子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did they eat all of them?",
+      "phonetic": "/dɪd ðeɪ it ɔl ʌv ðɛm?/",
+      "zh": "牠們把豆子全都吃光了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only the biggest ones.",
+      "phonetic": "/ˈoʊnli ðə ˈbɪɡɪst wʌnz./",
+      "zh": "只吃最大顆的那些。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Clean your boots before storage.",
+      "phonetic": "/klin jɔr buts bɪˈfɔr ˈstɔrɪdʒ./",
+      "zh": "收起來之前先把雨靴清乾淨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The mud's like cement now.",
+      "phonetic": "/ðə mʌdz laɪk səˈmɛnt naʊ./",
+      "zh": "上面的泥巴硬得像水泥了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Scrape it with an old spoon.",
+      "phonetic": "/skreɪp ɪt wɪð ən oʊld spun./",
+      "zh": "用舊湯匙把泥刮掉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good idea, spoons are the best.",
+      "phonetic": "/ɡʊd aɪˈdiə, spunz ɑr ðə bɛst./",
+      "zh": "好主意，湯匙最好用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The gloves need a wash.",
+      "phonetic": "/ðə ɡlʌvz nid ə wɑʃ./",
+      "zh": "手套也該好好洗一洗了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "By hand, or they shrink in the wash.",
+      "phonetic": "/baɪ hænd, ɔr ðeɪ ʃrɪŋk ɪn ðə wɑʃ./",
+      "zh": "用手洗，不然會縮水。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A quiet garden all winter.",
+      "phonetic": "/ə ˈkwaɪət ˈɡɑrdən ɔl ˈwɪntər./",
+      "zh": "整個冬天花園都會很安靜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The beds will rest, too.",
+      "phonetic": "/ðə bɛdz wɪl rɛst, tu./",
+      "zh": "土地也要跟著休息。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Cover the soil with fallen leaves.",
+      "phonetic": "/ˈkʌvər ðə sɔɪl wɪð ˈfɔlən livz./",
+      "zh": "用落葉把泥土蓋起來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Winter blankets for the worms.",
+      "phonetic": "/ˈwɪntər ˈblæŋkɪts fər ðə wɜrmz./",
+      "zh": "給蚯蚓的冬季小毯子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Count the jars of saved seeds.",
+      "phonetic": "/kaʊnt ðə dʒɑrz ʌv seɪvd sidz./",
+      "zh": "數數看留種的罐有幾個。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Enough to fill half the yard.",
+      "phonetic": "/ɪˈnʌf tə fɪl hæf ðə jɑrd./",
+      "zh": "足夠把半個院子種滿滿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Plan next year's garden tonight.",
+      "phonetic": "/plæn nɛkst jɪrz ˈɡɑrdən təˈnaɪt./",
+      "zh": "今晚就來規畫明年的花園。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "More squash and fewer weeds?",
+      "phonetic": "/mɔr skwɑʃ ənd ˈfinər widz?/",
+      "zh": "多種南瓜、少點雜草怎麼樣？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Weeds always come uninvited.",
+      "phonetic": "/widz ˈɔlˌweɪz kʌm ˌʌnɪnˈvaɪtɪd./",
+      "zh": "雜草從來不請自來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ha! That's so true.",
+      "phonetic": "/hɑ! ðæts soʊ tru./",
+      "zh": "哈！說得太對了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The neighbors want a garden tour.",
+      "phonetic": "/ðə ˈneɪˌbərz wɑnt ə ˈɡɑrdən tʊr./",
+      "zh": "鄰居們想來參觀花園。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Saturday morning at ten?",
+      "phonetic": "/ˈsætərˌdeɪ ˈmɔrnɪŋ æt tɛn?/",
+      "zh": "週六上午十點好嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Bring them by the tomato rows.",
+      "phonetic": "/brɪŋ ðɛm baɪ ðə təˈmeɪtoʊ roʊz./",
+      "zh": "帶他們去看看番茄那一排。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They'll ask for seeds again.",
+      "phonetic": "/ðeɪ ləl æsk fər sidz əˈɡɛn./",
+      "zh": "他們肯定又要討種子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That's the best part of gardening.",
+      "phonetic": "/ðæts ðə bɛst pɑrt ʌv ˈɡɑrdənɪŋ./",
+      "zh": "這就是園藝最美好的部分。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sharing the harvest with friends.",
+      "phonetic": "/ˈʃɛərɪŋ ðə ˈhɑrvəst wɪð frɛndz./",
+      "zh": "把豐收跟朋友們分享。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "From one packet to a full table.",
+      "phonetic": "/frʌm wʌn ˈpækɪt tə ə fʊl ˈteɪbəl./",
+      "zh": "從一包種子到滿桌蔬果。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "From soil to supper.",
+      "phonetic": "/frʌm sɔɪl tə ˈsʌpər./",
+      "zh": "從泥土一路吃到晚餐。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "And next spring, we start again.",
+      "phonetic": "/ænd nɛkst sprɪŋ, wi stɑrt əˈɡɛn./",
+      "zh": "明年春天，我們再來一遍。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'll have my gloves ready.",
+      "phonetic": "/aɪl hæv maɪ ɡlʌvz ˈrɛdi./",
+      "zh": "我會先把手套準備好。"
+    }
+  ]
+}

@@ -1,0 +1,2458 @@
+{
+  "title": "Everyday Phrases — Taking to Vet",
+  "title_zh": "帶去看獸醫",
+  "scene_zh": "帶去看獸醫 · 情境對話",
+  "title_quote": "The cat is sick.",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】🏥 實用帶去看獸醫必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — Taking to Vet",
+  "youtube_description": "睡著學英文！這部影片收錄實用帶去看獸醫情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫），不用背，睡前聽就會。重複播放，讓英文自然進入你的大腦。👍 想學更多生活場景，請留言告訴我！別忘了訂閱+按讚。 #英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical Taking to Vet phrase pairs (each pair: male normal speed → female slow speed → combined dialogue). No memorization needed—just listen before bed and absorb naturally. If you want more real-life scenarios, leave a comment! Subscribe and like!",
+  "youtube_tags": [
+    "英文聽力",
+    "睡前英文",
+    "帶去看獸醫英文",
+    "English listening",
+    "Sleep learning",
+    "A2 English",
+    "常用英文短語",
+    "零基礎英文",
+    "慢速英文",
+    "英文口語",
+    "Learn English",
+    "English for daily life",
+    "ESL",
+    "English conversation",
+    "聽英語",
+    "英文學習"
+  ],
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "Taking to Vet",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "Taking to Vet",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Pet",
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "The cat is sick.",
+      "phonetic": "/ðə kæt ɪz sɪk./",
+      "zh": "貓病了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Call the vet.",
+      "phonetic": "/kɔl ðə vɛt./",
+      "zh": "打電話獸醫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The carrier is out.",
+      "phonetic": "/ðə ˈkɛriər ɪz aʊt./",
+      "zh": "籠拿出。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Line it soft, yes.",
+      "phonetic": "/laɪn ɪt sɔft, jɛs./",
+      "zh": "鋪軟。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat hides.",
+      "phonetic": "/ðə kæt haɪdz./",
+      "zh": "貓躲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Coax with treat.",
+      "phonetic": "/koʊks wɪθ trit./",
+      "zh": "零食誘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The ride is short.",
+      "phonetic": "/ðə raɪd ɪz ʃɔrt./",
+      "zh": "車程短。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ten minutes, yes.",
+      "phonetic": "/tɛn ˈmɪnəts, jɛs./",
+      "zh": "十分鐘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat meows loud.",
+      "phonetic": "/ðə kæt meows* laʊd./",
+      "zh": "貓大叫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Scared, yes.",
+      "phonetic": "/skɛrd, jɛs./",
+      "zh": "怕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The waiting room.",
+      "phonetic": "/ðə ˈweɪtɪŋ rum./",
+      "zh": "等候室。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quiet, please.",
+      "phonetic": "/kwaɪət, pliz./",
+      "zh": "安靜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The vet is kind.",
+      "phonetic": "/ðə vɛt ɪz kaɪnd./",
+      "zh": "獸醫親切。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Calm the pet.",
+      "phonetic": "/kɑm ðə pɛt./",
+      "zh": "安撫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The weight is taken.",
+      "phonetic": "/ðə weɪt ɪz ˈteɪkən./",
+      "zh": "量體重。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the scale.",
+      "phonetic": "/ɔn ðə skeɪl./",
+      "zh": "上秤。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The temp is checked.",
+      "phonetic": "/ðə tɛmp ɪz ʧɛkt./",
+      "zh": "量體溫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quick, yes.",
+      "phonetic": "/kwɪk, jɛs./",
+      "zh": "快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The shot is due.",
+      "phonetic": "/ðə ʃɑt ɪz du./",
+      "zh": "該打針。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Annual, yes.",
+      "phonetic": "/ˈænjuəl, jɛs./",
+      "zh": "年度。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat flinches.",
+      "phonetic": "/ðə kæt flinches*./",
+      "zh": "貓縮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold gentle, please.",
+      "phonetic": "/hoʊld ˈʤɛnəl, pliz./",
+      "zh": "輕扶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The exam is done.",
+      "phonetic": "/ðə ɪgˈzæm ɪz dən./",
+      "zh": "檢查完。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All clear, good.",
+      "phonetic": "/ɔl klɪr, gʊd./",
+      "zh": "都好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The meds, given.",
+      "phonetic": "/ðə meds*, ˈgɪvɪn./",
+      "zh": "給藥。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hide in food.",
+      "phonetic": "/haɪd ɪn fud./",
+      "zh": "藏食。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bill is small.",
+      "phonetic": "/ðə bɪl ɪz smɔl./",
+      "zh": "賬單少。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Worth it, yes.",
+      "phonetic": "/wərθ ɪt, jɛs./",
+      "zh": "值得。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The follow-up set.",
+      "phonetic": "/ðə ˈfɑloʊˌəp sɛt./",
+      "zh": "回診定。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two weeks, yes.",
+      "phonetic": "/tu wiks, jɛs./",
+      "zh": "兩週。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The carrier cleaned.",
+      "phonetic": "/ðə ˈkɛriər klind./",
+      "zh": "籠清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "After the trip.",
+      "phonetic": "/ˈæftər ðə trɪp./",
+      "zh": "回程後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat is home.",
+      "phonetic": "/ðə kæt ɪz hoʊm./",
+      "zh": "貓回家。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rest, quiet.",
+      "phonetic": "/rɛst, kwaɪət./",
+      "zh": "休息靜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The water near.",
+      "phonetic": "/ðə ˈwɔtər nɪr./",
+      "zh": "水近。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Easy to reach.",
+      "phonetic": "/ˈizi tɪ riʧ./",
+      "zh": "易取。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The appetite low.",
+      "phonetic": "/ðə ˈæpəˌtaɪt loʊ./",
+      "zh": "食慾低。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Watch it, please.",
+      "phonetic": "/wɔʧ ɪt, pliz./",
+      "zh": "觀察。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The concern eased.",
+      "phonetic": "/ðə kənˈsərn izd./",
+      "zh": "擔心緩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Vet said fine.",
+      "phonetic": "/vɛt sɛd faɪn./",
+      "zh": "獸醫說好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The vaccine logged.",
+      "phonetic": "/ðə ˌvækˈsin lɔgd./",
+      "zh": "疫苗記。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Card updated, yes.",
+      "phonetic": "/kɑrd ˈəpˌdeɪtɪd, jɛs./",
+      "zh": "卡更新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kitten's first.",
+      "phonetic": "/ðə kitten's* fərst./",
+      "zh": "小貓首次。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Scared but ok.",
+      "phonetic": "/skɛrd bət ˈoʊˈkeɪ./",
+      "zh": "怕但好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The leash for dog.",
+      "phonetic": "/ðə liʃ fər dɔg./",
+      "zh": "狗用繩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Calm, walk in.",
+      "phonetic": "/kɑm, wɔk ɪn./",
+      "zh": "冷靜進。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The nail trim.",
+      "phonetic": "/ðə neɪl trɪm./",
+      "zh": "剪指甲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quick, yes.",
+      "phonetic": "/kwɪk, jɛs./",
+      "zh": "快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat purrs.",
+      "phonetic": "/ðə kæt pərz./",
+      "zh": "貓呼嚕。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Home safe, yes.",
+      "phonetic": "/hoʊm seɪf, jɛs./",
+      "zh": "平安。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The carrier folded.",
+      "phonetic": "/ðə ˈkɛriər ˈfoʊldɪd./",
+      "zh": "籠折。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Store it, please.",
+      "phonetic": "/stɔr ɪt, pliz./",
+      "zh": "收。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cost is fair.",
+      "phonetic": "/ðə kɔst ɪz fɛr./",
+      "zh": "費用公。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the health.",
+      "phonetic": "/fər ðə hɛlθ./",
+      "zh": "爲健康。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The checkup passed.",
+      "phonetic": "/ðə ˈʧɛˌkəp pæst./",
+      "zh": "檢查過。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Relief, big.",
+      "phonetic": "/rɪˈlif, bɪg./",
+      "zh": "大松。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pet is calm.",
+      "phonetic": "/ðə pɛt ɪz kɑm./",
+      "zh": "寵物靜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sleep, now.",
+      "phonetic": "/slip, naʊ./",
+      "zh": "睡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The record filed.",
+      "phonetic": "/ðə ˈrɛkərd faɪld./",
+      "zh": "記錄歸檔。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Next year, yes.",
+      "phonetic": "/nɛkst jɪr, jɛs./",
+      "zh": "明年。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The trip was smooth.",
+      "phonetic": "/ðə trɪp wɑz smuð./",
+      "zh": "行程順。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No drama, good.",
+      "phonetic": "/noʊ ˈdrɑmə, gʊd./",
+      "zh": "無波。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat recovers.",
+      "phonetic": "/ðə kæt rɪˈkəvərz./",
+      "zh": "貓恢復。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Slowly, yes.",
+      "phonetic": "/sˈloʊli, jɛs./",
+      "zh": "慢慢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the vet.",
+      "phonetic": "/θæŋks fər ðə vɛt./",
+      "zh": "謝謝看獸醫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Healthy pet, pal.",
+      "phonetic": "/ˈhɛlθi pɛt, pæl./",
+      "zh": "健康寵物。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the vet.",
+      "phonetic": "/θæŋks fər ðə vɛt./",
+      "zh": "謝謝看獸醫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Healthy pet, pal.",
+      "phonetic": "/ˈhɛlθi pɛt, pæl./",
+      "zh": "健康寵物。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat recovers.",
+      "phonetic": "/ðə kæt rɪˈkəvərz./",
+      "zh": "貓恢復。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Slowly, yes.",
+      "phonetic": "/sˈloʊli, jɛs./",
+      "zh": "慢慢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The trip was smooth.",
+      "phonetic": "/ðə trɪp wɑz smuð./",
+      "zh": "行程順。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No drama, good.",
+      "phonetic": "/noʊ ˈdrɑmə, gʊd./",
+      "zh": "無波。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The record filed.",
+      "phonetic": "/ðə ˈrɛkərd faɪld./",
+      "zh": "記錄歸檔。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Next year, yes.",
+      "phonetic": "/nɛkst jɪr, jɛs./",
+      "zh": "明年。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pet is calm.",
+      "phonetic": "/ðə pɛt ɪz kɑm./",
+      "zh": "寵物靜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sleep, now.",
+      "phonetic": "/slip, naʊ./",
+      "zh": "睡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The checkup passed.",
+      "phonetic": "/ðə ˈʧɛˌkəp pæst./",
+      "zh": "檢查過。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Relief, big.",
+      "phonetic": "/rɪˈlif, bɪg./",
+      "zh": "大松。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cost is fair.",
+      "phonetic": "/ðə kɔst ɪz fɛr./",
+      "zh": "費用公。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the health.",
+      "phonetic": "/fər ðə hɛlθ./",
+      "zh": "爲健康。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The carrier folded.",
+      "phonetic": "/ðə ˈkɛriər ˈfoʊldɪd./",
+      "zh": "籠折。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Store it, please.",
+      "phonetic": "/stɔr ɪt, pliz./",
+      "zh": "收。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat purrs.",
+      "phonetic": "/ðə kæt pərz./",
+      "zh": "貓呼嚕。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Home safe, yes.",
+      "phonetic": "/hoʊm seɪf, jɛs./",
+      "zh": "平安。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The nail trim.",
+      "phonetic": "/ðə neɪl trɪm./",
+      "zh": "剪指甲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quick, yes.",
+      "phonetic": "/kwɪk, jɛs./",
+      "zh": "快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The leash for dog.",
+      "phonetic": "/ðə liʃ fər dɔg./",
+      "zh": "狗用繩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Calm, walk in.",
+      "phonetic": "/kɑm, wɔk ɪn./",
+      "zh": "冷靜進。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kitten's first.",
+      "phonetic": "/ðə kitten's* fərst./",
+      "zh": "小貓首次。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Scared but ok.",
+      "phonetic": "/skɛrd bət ˈoʊˈkeɪ./",
+      "zh": "怕但好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The vaccine logged.",
+      "phonetic": "/ðə ˌvækˈsin lɔgd./",
+      "zh": "疫苗記。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Card updated, yes.",
+      "phonetic": "/kɑrd ˈəpˌdeɪtɪd, jɛs./",
+      "zh": "卡更新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The concern eased.",
+      "phonetic": "/ðə kənˈsərn izd./",
+      "zh": "擔心緩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Vet said fine.",
+      "phonetic": "/vɛt sɛd faɪn./",
+      "zh": "獸醫說好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The appetite low.",
+      "phonetic": "/ðə ˈæpəˌtaɪt loʊ./",
+      "zh": "食慾低。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Watch it, please.",
+      "phonetic": "/wɔʧ ɪt, pliz./",
+      "zh": "觀察。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The water near.",
+      "phonetic": "/ðə ˈwɔtər nɪr./",
+      "zh": "水近。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Easy to reach.",
+      "phonetic": "/ˈizi tɪ riʧ./",
+      "zh": "易取。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat is home.",
+      "phonetic": "/ðə kæt ɪz hoʊm./",
+      "zh": "貓回家。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rest, quiet.",
+      "phonetic": "/rɛst, kwaɪət./",
+      "zh": "休息靜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The carrier cleaned.",
+      "phonetic": "/ðə ˈkɛriər klind./",
+      "zh": "籠清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "After the trip.",
+      "phonetic": "/ˈæftər ðə trɪp./",
+      "zh": "回程後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The follow-up set.",
+      "phonetic": "/ðə ˈfɑloʊˌəp sɛt./",
+      "zh": "回診定。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two weeks, yes.",
+      "phonetic": "/tu wiks, jɛs./",
+      "zh": "兩週。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bill is small.",
+      "phonetic": "/ðə bɪl ɪz smɔl./",
+      "zh": "賬單少。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Worth it, yes.",
+      "phonetic": "/wərθ ɪt, jɛs./",
+      "zh": "值得。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The meds, given.",
+      "phonetic": "/ðə meds*, ˈgɪvɪn./",
+      "zh": "給藥。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hide in food.",
+      "phonetic": "/haɪd ɪn fud./",
+      "zh": "藏食。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The exam is done.",
+      "phonetic": "/ðə ɪgˈzæm ɪz dən./",
+      "zh": "檢查完。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All clear, good.",
+      "phonetic": "/ɔl klɪr, gʊd./",
+      "zh": "都好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat flinches.",
+      "phonetic": "/ðə kæt flinches*./",
+      "zh": "貓縮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold gentle, please.",
+      "phonetic": "/hoʊld ˈʤɛnəl, pliz./",
+      "zh": "輕扶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The shot is due.",
+      "phonetic": "/ðə ʃɑt ɪz du./",
+      "zh": "該打針。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Annual, yes.",
+      "phonetic": "/ˈænjuəl, jɛs./",
+      "zh": "年度。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The temp is checked.",
+      "phonetic": "/ðə tɛmp ɪz ʧɛkt./",
+      "zh": "量體溫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quick, yes.",
+      "phonetic": "/kwɪk, jɛs./",
+      "zh": "快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The weight is taken.",
+      "phonetic": "/ðə weɪt ɪz ˈteɪkən./",
+      "zh": "量體重。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the scale.",
+      "phonetic": "/ɔn ðə skeɪl./",
+      "zh": "上秤。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The vet is kind.",
+      "phonetic": "/ðə vɛt ɪz kaɪnd./",
+      "zh": "獸醫親切。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Calm the pet.",
+      "phonetic": "/kɑm ðə pɛt./",
+      "zh": "安撫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The waiting room.",
+      "phonetic": "/ðə ˈweɪtɪŋ rum./",
+      "zh": "等候室。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quiet, please.",
+      "phonetic": "/kwaɪət, pliz./",
+      "zh": "安靜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat meows loud.",
+      "phonetic": "/ðə kæt meows* laʊd./",
+      "zh": "貓大叫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Scared, yes.",
+      "phonetic": "/skɛrd, jɛs./",
+      "zh": "怕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The ride is short.",
+      "phonetic": "/ðə raɪd ɪz ʃɔrt./",
+      "zh": "車程短。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ten minutes, yes.",
+      "phonetic": "/tɛn ˈmɪnəts, jɛs./",
+      "zh": "十分鐘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat hides.",
+      "phonetic": "/ðə kæt haɪdz./",
+      "zh": "貓躲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Coax with treat.",
+      "phonetic": "/koʊks wɪθ trit./",
+      "zh": "零食誘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The carrier is out.",
+      "phonetic": "/ðə ˈkɛriər ɪz aʊt./",
+      "zh": "籠拿出。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Line it soft, yes.",
+      "phonetic": "/laɪn ɪt sɔft, jɛs./",
+      "zh": "鋪軟。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat is sick.",
+      "phonetic": "/ðə kæt ɪz sɪk./",
+      "zh": "貓病了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Call the vet.",
+      "phonetic": "/kɔl ðə vɛt./",
+      "zh": "打電話獸醫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat is sick.",
+      "phonetic": "/ðə kæt ɪz sɪk./",
+      "zh": "貓病了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Call the vet.",
+      "phonetic": "/kɔl ðə vɛt./",
+      "zh": "打電話獸醫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The carrier is out.",
+      "phonetic": "/ðə ˈkɛriər ɪz aʊt./",
+      "zh": "籠拿出。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Line it soft, yes.",
+      "phonetic": "/laɪn ɪt sɔft, jɛs./",
+      "zh": "鋪軟。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat hides.",
+      "phonetic": "/ðə kæt haɪdz./",
+      "zh": "貓躲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Coax with treat.",
+      "phonetic": "/koʊks wɪθ trit./",
+      "zh": "零食誘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The ride is short.",
+      "phonetic": "/ðə raɪd ɪz ʃɔrt./",
+      "zh": "車程短。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ten minutes, yes.",
+      "phonetic": "/tɛn ˈmɪnəts, jɛs./",
+      "zh": "十分鐘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat meows loud.",
+      "phonetic": "/ðə kæt meows* laʊd./",
+      "zh": "貓大叫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Scared, yes.",
+      "phonetic": "/skɛrd, jɛs./",
+      "zh": "怕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The waiting room.",
+      "phonetic": "/ðə ˈweɪtɪŋ rum./",
+      "zh": "等候室。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quiet, please.",
+      "phonetic": "/kwaɪət, pliz./",
+      "zh": "安靜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The vet is kind.",
+      "phonetic": "/ðə vɛt ɪz kaɪnd./",
+      "zh": "獸醫親切。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Calm the pet.",
+      "phonetic": "/kɑm ðə pɛt./",
+      "zh": "安撫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The weight is taken.",
+      "phonetic": "/ðə weɪt ɪz ˈteɪkən./",
+      "zh": "量體重。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the scale.",
+      "phonetic": "/ɔn ðə skeɪl./",
+      "zh": "上秤。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The temp is checked.",
+      "phonetic": "/ðə tɛmp ɪz ʧɛkt./",
+      "zh": "量體溫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quick, yes.",
+      "phonetic": "/kwɪk, jɛs./",
+      "zh": "快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The shot is due.",
+      "phonetic": "/ðə ʃɑt ɪz du./",
+      "zh": "該打針。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Annual, yes.",
+      "phonetic": "/ˈænjuəl, jɛs./",
+      "zh": "年度。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat flinches.",
+      "phonetic": "/ðə kæt flinches*./",
+      "zh": "貓縮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold gentle, please.",
+      "phonetic": "/hoʊld ˈʤɛnəl, pliz./",
+      "zh": "輕扶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The exam is done.",
+      "phonetic": "/ðə ɪgˈzæm ɪz dən./",
+      "zh": "檢查完。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All clear, good.",
+      "phonetic": "/ɔl klɪr, gʊd./",
+      "zh": "都好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The meds, given.",
+      "phonetic": "/ðə meds*, ˈgɪvɪn./",
+      "zh": "給藥。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hide in food.",
+      "phonetic": "/haɪd ɪn fud./",
+      "zh": "藏食。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bill is small.",
+      "phonetic": "/ðə bɪl ɪz smɔl./",
+      "zh": "賬單少。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Worth it, yes.",
+      "phonetic": "/wərθ ɪt, jɛs./",
+      "zh": "值得。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The follow-up set.",
+      "phonetic": "/ðə ˈfɑloʊˌəp sɛt./",
+      "zh": "回診定。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two weeks, yes.",
+      "phonetic": "/tu wiks, jɛs./",
+      "zh": "兩週。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The carrier cleaned.",
+      "phonetic": "/ðə ˈkɛriər klind./",
+      "zh": "籠清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "After the trip.",
+      "phonetic": "/ˈæftər ðə trɪp./",
+      "zh": "回程後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat is home.",
+      "phonetic": "/ðə kæt ɪz hoʊm./",
+      "zh": "貓回家。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rest, quiet.",
+      "phonetic": "/rɛst, kwaɪət./",
+      "zh": "休息靜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The water near.",
+      "phonetic": "/ðə ˈwɔtər nɪr./",
+      "zh": "水近。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Easy to reach.",
+      "phonetic": "/ˈizi tɪ riʧ./",
+      "zh": "易取。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The appetite low.",
+      "phonetic": "/ðə ˈæpəˌtaɪt loʊ./",
+      "zh": "食慾低。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Watch it, please.",
+      "phonetic": "/wɔʧ ɪt, pliz./",
+      "zh": "觀察。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The concern eased.",
+      "phonetic": "/ðə kənˈsərn izd./",
+      "zh": "擔心緩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Vet said fine.",
+      "phonetic": "/vɛt sɛd faɪn./",
+      "zh": "獸醫說好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The vaccine logged.",
+      "phonetic": "/ðə ˌvækˈsin lɔgd./",
+      "zh": "疫苗記。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Card updated, yes.",
+      "phonetic": "/kɑrd ˈəpˌdeɪtɪd, jɛs./",
+      "zh": "卡更新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kitten's first.",
+      "phonetic": "/ðə kitten's* fərst./",
+      "zh": "小貓首次。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Scared but ok.",
+      "phonetic": "/skɛrd bət ˈoʊˈkeɪ./",
+      "zh": "怕但好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The leash for dog.",
+      "phonetic": "/ðə liʃ fər dɔg./",
+      "zh": "狗用繩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Calm, walk in.",
+      "phonetic": "/kɑm, wɔk ɪn./",
+      "zh": "冷靜進。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The nail trim.",
+      "phonetic": "/ðə neɪl trɪm./",
+      "zh": "剪指甲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quick, yes.",
+      "phonetic": "/kwɪk, jɛs./",
+      "zh": "快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat purrs.",
+      "phonetic": "/ðə kæt pərz./",
+      "zh": "貓呼嚕。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Home safe, yes.",
+      "phonetic": "/hoʊm seɪf, jɛs./",
+      "zh": "平安。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The carrier folded.",
+      "phonetic": "/ðə ˈkɛriər ˈfoʊldɪd./",
+      "zh": "籠折。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Store it, please.",
+      "phonetic": "/stɔr ɪt, pliz./",
+      "zh": "收。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cost is fair.",
+      "phonetic": "/ðə kɔst ɪz fɛr./",
+      "zh": "費用公。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the health.",
+      "phonetic": "/fər ðə hɛlθ./",
+      "zh": "爲健康。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The checkup passed.",
+      "phonetic": "/ðə ˈʧɛˌkəp pæst./",
+      "zh": "檢查過。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Relief, big.",
+      "phonetic": "/rɪˈlif, bɪg./",
+      "zh": "大松。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pet is calm.",
+      "phonetic": "/ðə pɛt ɪz kɑm./",
+      "zh": "寵物靜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sleep, now.",
+      "phonetic": "/slip, naʊ./",
+      "zh": "睡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The record filed.",
+      "phonetic": "/ðə ˈrɛkərd faɪld./",
+      "zh": "記錄歸檔。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Next year, yes.",
+      "phonetic": "/nɛkst jɪr, jɛs./",
+      "zh": "明年。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The trip was smooth.",
+      "phonetic": "/ðə trɪp wɑz smuð./",
+      "zh": "行程順。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No drama, good.",
+      "phonetic": "/noʊ ˈdrɑmə, gʊd./",
+      "zh": "無波。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat recovers.",
+      "phonetic": "/ðə kæt rɪˈkəvərz./",
+      "zh": "貓恢復。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Slowly, yes.",
+      "phonetic": "/sˈloʊli, jɛs./",
+      "zh": "慢慢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the vet.",
+      "phonetic": "/θæŋks fər ðə vɛt./",
+      "zh": "謝謝看獸醫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Healthy pet, pal.",
+      "phonetic": "/ˈhɛlθi pɛt, pæl./",
+      "zh": "健康寵物。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the vet.",
+      "phonetic": "/θæŋks fər ðə vɛt./",
+      "zh": "謝謝看獸醫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Healthy pet, pal.",
+      "phonetic": "/ˈhɛlθi pɛt, pæl./",
+      "zh": "健康寵物。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat recovers.",
+      "phonetic": "/ðə kæt rɪˈkəvərz./",
+      "zh": "貓恢復。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Slowly, yes.",
+      "phonetic": "/sˈloʊli, jɛs./",
+      "zh": "慢慢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The trip was smooth.",
+      "phonetic": "/ðə trɪp wɑz smuð./",
+      "zh": "行程順。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No drama, good.",
+      "phonetic": "/noʊ ˈdrɑmə, gʊd./",
+      "zh": "無波。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The record filed.",
+      "phonetic": "/ðə ˈrɛkərd faɪld./",
+      "zh": "記錄歸檔。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Next year, yes.",
+      "phonetic": "/nɛkst jɪr, jɛs./",
+      "zh": "明年。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pet is calm.",
+      "phonetic": "/ðə pɛt ɪz kɑm./",
+      "zh": "寵物靜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sleep, now.",
+      "phonetic": "/slip, naʊ./",
+      "zh": "睡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The checkup passed.",
+      "phonetic": "/ðə ˈʧɛˌkəp pæst./",
+      "zh": "檢查過。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Relief, big.",
+      "phonetic": "/rɪˈlif, bɪg./",
+      "zh": "大松。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cost is fair.",
+      "phonetic": "/ðə kɔst ɪz fɛr./",
+      "zh": "費用公。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the health.",
+      "phonetic": "/fər ðə hɛlθ./",
+      "zh": "爲健康。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The carrier folded.",
+      "phonetic": "/ðə ˈkɛriər ˈfoʊldɪd./",
+      "zh": "籠折。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Store it, please.",
+      "phonetic": "/stɔr ɪt, pliz./",
+      "zh": "收。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat purrs.",
+      "phonetic": "/ðə kæt pərz./",
+      "zh": "貓呼嚕。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Home safe, yes.",
+      "phonetic": "/hoʊm seɪf, jɛs./",
+      "zh": "平安。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The nail trim.",
+      "phonetic": "/ðə neɪl trɪm./",
+      "zh": "剪指甲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quick, yes.",
+      "phonetic": "/kwɪk, jɛs./",
+      "zh": "快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The leash for dog.",
+      "phonetic": "/ðə liʃ fər dɔg./",
+      "zh": "狗用繩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Calm, walk in.",
+      "phonetic": "/kɑm, wɔk ɪn./",
+      "zh": "冷靜進。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kitten's first.",
+      "phonetic": "/ðə kitten's* fərst./",
+      "zh": "小貓首次。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Scared but ok.",
+      "phonetic": "/skɛrd bət ˈoʊˈkeɪ./",
+      "zh": "怕但好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The vaccine logged.",
+      "phonetic": "/ðə ˌvækˈsin lɔgd./",
+      "zh": "疫苗記。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Card updated, yes.",
+      "phonetic": "/kɑrd ˈəpˌdeɪtɪd, jɛs./",
+      "zh": "卡更新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The concern eased.",
+      "phonetic": "/ðə kənˈsərn izd./",
+      "zh": "擔心緩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Vet said fine.",
+      "phonetic": "/vɛt sɛd faɪn./",
+      "zh": "獸醫說好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The appetite low.",
+      "phonetic": "/ðə ˈæpəˌtaɪt loʊ./",
+      "zh": "食慾低。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Watch it, please.",
+      "phonetic": "/wɔʧ ɪt, pliz./",
+      "zh": "觀察。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The water near.",
+      "phonetic": "/ðə ˈwɔtər nɪr./",
+      "zh": "水近。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Easy to reach.",
+      "phonetic": "/ˈizi tɪ riʧ./",
+      "zh": "易取。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat is home.",
+      "phonetic": "/ðə kæt ɪz hoʊm./",
+      "zh": "貓回家。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rest, quiet.",
+      "phonetic": "/rɛst, kwaɪət./",
+      "zh": "休息靜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The carrier cleaned.",
+      "phonetic": "/ðə ˈkɛriər klind./",
+      "zh": "籠清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "After the trip.",
+      "phonetic": "/ˈæftər ðə trɪp./",
+      "zh": "回程後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The follow-up set.",
+      "phonetic": "/ðə ˈfɑloʊˌəp sɛt./",
+      "zh": "回診定。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two weeks, yes.",
+      "phonetic": "/tu wiks, jɛs./",
+      "zh": "兩週。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bill is small.",
+      "phonetic": "/ðə bɪl ɪz smɔl./",
+      "zh": "賬單少。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Worth it, yes.",
+      "phonetic": "/wərθ ɪt, jɛs./",
+      "zh": "值得。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The meds, given.",
+      "phonetic": "/ðə meds*, ˈgɪvɪn./",
+      "zh": "給藥。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hide in food.",
+      "phonetic": "/haɪd ɪn fud./",
+      "zh": "藏食。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The exam is done.",
+      "phonetic": "/ðə ɪgˈzæm ɪz dən./",
+      "zh": "檢查完。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All clear, good.",
+      "phonetic": "/ɔl klɪr, gʊd./",
+      "zh": "都好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat flinches.",
+      "phonetic": "/ðə kæt flinches*./",
+      "zh": "貓縮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold gentle, please.",
+      "phonetic": "/hoʊld ˈʤɛnəl, pliz./",
+      "zh": "輕扶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The shot is due.",
+      "phonetic": "/ðə ʃɑt ɪz du./",
+      "zh": "該打針。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Annual, yes.",
+      "phonetic": "/ˈænjuəl, jɛs./",
+      "zh": "年度。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The temp is checked.",
+      "phonetic": "/ðə tɛmp ɪz ʧɛkt./",
+      "zh": "量體溫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quick, yes.",
+      "phonetic": "/kwɪk, jɛs./",
+      "zh": "快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The weight is taken.",
+      "phonetic": "/ðə weɪt ɪz ˈteɪkən./",
+      "zh": "量體重。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the scale.",
+      "phonetic": "/ɔn ðə skeɪl./",
+      "zh": "上秤。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The vet is kind.",
+      "phonetic": "/ðə vɛt ɪz kaɪnd./",
+      "zh": "獸醫親切。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Calm the pet.",
+      "phonetic": "/kɑm ðə pɛt./",
+      "zh": "安撫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The waiting room.",
+      "phonetic": "/ðə ˈweɪtɪŋ rum./",
+      "zh": "等候室。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quiet, please.",
+      "phonetic": "/kwaɪət, pliz./",
+      "zh": "安靜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat meows loud.",
+      "phonetic": "/ðə kæt meows* laʊd./",
+      "zh": "貓大叫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Scared, yes.",
+      "phonetic": "/skɛrd, jɛs./",
+      "zh": "怕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The ride is short.",
+      "phonetic": "/ðə raɪd ɪz ʃɔrt./",
+      "zh": "車程短。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ten minutes, yes.",
+      "phonetic": "/tɛn ˈmɪnəts, jɛs./",
+      "zh": "十分鐘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat hides.",
+      "phonetic": "/ðə kæt haɪdz./",
+      "zh": "貓躲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Coax with treat.",
+      "phonetic": "/koʊks wɪθ trit./",
+      "zh": "零食誘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The carrier is out.",
+      "phonetic": "/ðə ˈkɛriər ɪz aʊt./",
+      "zh": "籠拿出。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Line it soft, yes.",
+      "phonetic": "/laɪn ɪt sɔft, jɛs./",
+      "zh": "鋪軟。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat is sick.",
+      "phonetic": "/ðə kæt ɪz sɪk./",
+      "zh": "貓病了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Call the vet.",
+      "phonetic": "/kɔl ðə vɛt./",
+      "zh": "打電話獸醫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat is sick.",
+      "phonetic": "/ðə kæt ɪz sɪk./",
+      "zh": "貓病了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Call the vet.",
+      "phonetic": "/kɔl ðə vɛt./",
+      "zh": "打電話獸醫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The carrier is out.",
+      "phonetic": "/ðə ˈkɛriər ɪz aʊt./",
+      "zh": "籠拿出。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Line it soft, yes.",
+      "phonetic": "/laɪn ɪt sɔft, jɛs./",
+      "zh": "鋪軟。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat hides.",
+      "phonetic": "/ðə kæt haɪdz./",
+      "zh": "貓躲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Coax with treat.",
+      "phonetic": "/koʊks wɪθ trit./",
+      "zh": "零食誘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The ride is short.",
+      "phonetic": "/ðə raɪd ɪz ʃɔrt./",
+      "zh": "車程短。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ten minutes, yes.",
+      "phonetic": "/tɛn ˈmɪnəts, jɛs./",
+      "zh": "十分鐘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat meows loud.",
+      "phonetic": "/ðə kæt meows* laʊd./",
+      "zh": "貓大叫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Scared, yes.",
+      "phonetic": "/skɛrd, jɛs./",
+      "zh": "怕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The waiting room.",
+      "phonetic": "/ðə ˈweɪtɪŋ rum./",
+      "zh": "等候室。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quiet, please.",
+      "phonetic": "/kwaɪət, pliz./",
+      "zh": "安靜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The vet is kind.",
+      "phonetic": "/ðə vɛt ɪz kaɪnd./",
+      "zh": "獸醫親切。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Calm the pet.",
+      "phonetic": "/kɑm ðə pɛt./",
+      "zh": "安撫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The weight is taken.",
+      "phonetic": "/ðə weɪt ɪz ˈteɪkən./",
+      "zh": "量體重。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the scale.",
+      "phonetic": "/ɔn ðə skeɪl./",
+      "zh": "上秤。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The temp is checked.",
+      "phonetic": "/ðə tɛmp ɪz ʧɛkt./",
+      "zh": "量體溫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quick, yes.",
+      "phonetic": "/kwɪk, jɛs./",
+      "zh": "快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The shot is due.",
+      "phonetic": "/ðə ʃɑt ɪz du./",
+      "zh": "該打針。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Annual, yes.",
+      "phonetic": "/ˈænjuəl, jɛs./",
+      "zh": "年度。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat flinches.",
+      "phonetic": "/ðə kæt flinches*./",
+      "zh": "貓縮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold gentle, please.",
+      "phonetic": "/hoʊld ˈʤɛnəl, pliz./",
+      "zh": "輕扶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The exam is done.",
+      "phonetic": "/ðə ɪgˈzæm ɪz dən./",
+      "zh": "檢查完。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All clear, good.",
+      "phonetic": "/ɔl klɪr, gʊd./",
+      "zh": "都好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The meds, given.",
+      "phonetic": "/ðə meds*, ˈgɪvɪn./",
+      "zh": "給藥。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hide in food.",
+      "phonetic": "/haɪd ɪn fud./",
+      "zh": "藏食。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bill is small.",
+      "phonetic": "/ðə bɪl ɪz smɔl./",
+      "zh": "賬單少。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Worth it, yes.",
+      "phonetic": "/wərθ ɪt, jɛs./",
+      "zh": "值得。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The follow-up set.",
+      "phonetic": "/ðə ˈfɑloʊˌəp sɛt./",
+      "zh": "回診定。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two weeks, yes.",
+      "phonetic": "/tu wiks, jɛs./",
+      "zh": "兩週。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The carrier cleaned.",
+      "phonetic": "/ðə ˈkɛriər klind./",
+      "zh": "籠清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "After the trip.",
+      "phonetic": "/ˈæftər ðə trɪp./",
+      "zh": "回程後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat is home.",
+      "phonetic": "/ðə kæt ɪz hoʊm./",
+      "zh": "貓回家。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rest, quiet.",
+      "phonetic": "/rɛst, kwaɪət./",
+      "zh": "休息靜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The water near.",
+      "phonetic": "/ðə ˈwɔtər nɪr./",
+      "zh": "水近。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Easy to reach.",
+      "phonetic": "/ˈizi tɪ riʧ./",
+      "zh": "易取。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The appetite low.",
+      "phonetic": "/ðə ˈæpəˌtaɪt loʊ./",
+      "zh": "食慾低。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Watch it, please.",
+      "phonetic": "/wɔʧ ɪt, pliz./",
+      "zh": "觀察。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The concern eased.",
+      "phonetic": "/ðə kənˈsərn izd./",
+      "zh": "擔心緩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Vet said fine.",
+      "phonetic": "/vɛt sɛd faɪn./",
+      "zh": "獸醫說好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The vaccine logged.",
+      "phonetic": "/ðə ˌvækˈsin lɔgd./",
+      "zh": "疫苗記。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Card updated, yes.",
+      "phonetic": "/kɑrd ˈəpˌdeɪtɪd, jɛs./",
+      "zh": "卡更新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kitten's first.",
+      "phonetic": "/ðə kitten's* fərst./",
+      "zh": "小貓首次。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Scared but ok.",
+      "phonetic": "/skɛrd bət ˈoʊˈkeɪ./",
+      "zh": "怕但好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The leash for dog.",
+      "phonetic": "/ðə liʃ fər dɔg./",
+      "zh": "狗用繩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Calm, walk in.",
+      "phonetic": "/kɑm, wɔk ɪn./",
+      "zh": "冷靜進。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The nail trim.",
+      "phonetic": "/ðə neɪl trɪm./",
+      "zh": "剪指甲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quick, yes.",
+      "phonetic": "/kwɪk, jɛs./",
+      "zh": "快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat purrs.",
+      "phonetic": "/ðə kæt pərz./",
+      "zh": "貓呼嚕。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Home safe, yes.",
+      "phonetic": "/hoʊm seɪf, jɛs./",
+      "zh": "平安。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The carrier folded.",
+      "phonetic": "/ðə ˈkɛriər ˈfoʊldɪd./",
+      "zh": "籠折。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Store it, please.",
+      "phonetic": "/stɔr ɪt, pliz./",
+      "zh": "收。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cost is fair.",
+      "phonetic": "/ðə kɔst ɪz fɛr./",
+      "zh": "費用公。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the health.",
+      "phonetic": "/fər ðə hɛlθ./",
+      "zh": "爲健康。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The checkup passed.",
+      "phonetic": "/ðə ˈʧɛˌkəp pæst./",
+      "zh": "檢查過。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Relief, big.",
+      "phonetic": "/rɪˈlif, bɪg./",
+      "zh": "大松。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pet is calm.",
+      "phonetic": "/ðə pɛt ɪz kɑm./",
+      "zh": "寵物靜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sleep, now.",
+      "phonetic": "/slip, naʊ./",
+      "zh": "睡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The record filed.",
+      "phonetic": "/ðə ˈrɛkərd faɪld./",
+      "zh": "記錄歸檔。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Next year, yes.",
+      "phonetic": "/nɛkst jɪr, jɛs./",
+      "zh": "明年。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The trip was smooth.",
+      "phonetic": "/ðə trɪp wɑz smuð./",
+      "zh": "行程順。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No drama, good.",
+      "phonetic": "/noʊ ˈdrɑmə, gʊd./",
+      "zh": "無波。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat recovers.",
+      "phonetic": "/ðə kæt rɪˈkəvərz./",
+      "zh": "貓恢復。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Slowly, yes.",
+      "phonetic": "/sˈloʊli, jɛs./",
+      "zh": "慢慢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the vet.",
+      "phonetic": "/θæŋks fər ðə vɛt./",
+      "zh": "謝謝看獸醫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Healthy pet, pal.",
+      "phonetic": "/ˈhɛlθi pɛt, pæl./",
+      "zh": "健康寵物。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the vet.",
+      "phonetic": "/θæŋks fər ðə vɛt./",
+      "zh": "謝謝看獸醫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Healthy pet, pal.",
+      "phonetic": "/ˈhɛlθi pɛt, pæl./",
+      "zh": "健康寵物。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat recovers.",
+      "phonetic": "/ðə kæt rɪˈkəvərz./",
+      "zh": "貓恢復。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Slowly, yes.",
+      "phonetic": "/sˈloʊli, jɛs./",
+      "zh": "慢慢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The trip was smooth.",
+      "phonetic": "/ðə trɪp wɑz smuð./",
+      "zh": "行程順。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No drama, good.",
+      "phonetic": "/noʊ ˈdrɑmə, gʊd./",
+      "zh": "無波。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The record filed.",
+      "phonetic": "/ðə ˈrɛkərd faɪld./",
+      "zh": "記錄歸檔。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Next year, yes.",
+      "phonetic": "/nɛkst jɪr, jɛs./",
+      "zh": "明年。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pet is calm.",
+      "phonetic": "/ðə pɛt ɪz kɑm./",
+      "zh": "寵物靜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sleep, now.",
+      "phonetic": "/slip, naʊ./",
+      "zh": "睡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The checkup passed.",
+      "phonetic": "/ðə ˈʧɛˌkəp pæst./",
+      "zh": "檢查過。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Relief, big.",
+      "phonetic": "/rɪˈlif, bɪg./",
+      "zh": "大松。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cost is fair.",
+      "phonetic": "/ðə kɔst ɪz fɛr./",
+      "zh": "費用公。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the health.",
+      "phonetic": "/fər ðə hɛlθ./",
+      "zh": "爲健康。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The carrier folded.",
+      "phonetic": "/ðə ˈkɛriər ˈfoʊldɪd./",
+      "zh": "籠折。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Store it, please.",
+      "phonetic": "/stɔr ɪt, pliz./",
+      "zh": "收。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat purrs.",
+      "phonetic": "/ðə kæt pərz./",
+      "zh": "貓呼嚕。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Home safe, yes.",
+      "phonetic": "/hoʊm seɪf, jɛs./",
+      "zh": "平安。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The nail trim.",
+      "phonetic": "/ðə neɪl trɪm./",
+      "zh": "剪指甲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quick, yes.",
+      "phonetic": "/kwɪk, jɛs./",
+      "zh": "快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The leash for dog.",
+      "phonetic": "/ðə liʃ fər dɔg./",
+      "zh": "狗用繩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Calm, walk in.",
+      "phonetic": "/kɑm, wɔk ɪn./",
+      "zh": "冷靜進。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The kitten's first.",
+      "phonetic": "/ðə kitten's* fərst./",
+      "zh": "小貓首次。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Scared but ok.",
+      "phonetic": "/skɛrd bət ˈoʊˈkeɪ./",
+      "zh": "怕但好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The vaccine logged.",
+      "phonetic": "/ðə ˌvækˈsin lɔgd./",
+      "zh": "疫苗記。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Card updated, yes.",
+      "phonetic": "/kɑrd ˈəpˌdeɪtɪd, jɛs./",
+      "zh": "卡更新。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The concern eased.",
+      "phonetic": "/ðə kənˈsərn izd./",
+      "zh": "擔心緩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Vet said fine.",
+      "phonetic": "/vɛt sɛd faɪn./",
+      "zh": "獸醫說好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The appetite low.",
+      "phonetic": "/ðə ˈæpəˌtaɪt loʊ./",
+      "zh": "食慾低。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Watch it, please.",
+      "phonetic": "/wɔʧ ɪt, pliz./",
+      "zh": "觀察。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The water near.",
+      "phonetic": "/ðə ˈwɔtər nɪr./",
+      "zh": "水近。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Easy to reach.",
+      "phonetic": "/ˈizi tɪ riʧ./",
+      "zh": "易取。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat is home.",
+      "phonetic": "/ðə kæt ɪz hoʊm./",
+      "zh": "貓回家。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rest, quiet.",
+      "phonetic": "/rɛst, kwaɪət./",
+      "zh": "休息靜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The carrier cleaned.",
+      "phonetic": "/ðə ˈkɛriər klind./",
+      "zh": "籠清。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "After the trip.",
+      "phonetic": "/ˈæftər ðə trɪp./",
+      "zh": "回程後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The follow-up set.",
+      "phonetic": "/ðə ˈfɑloʊˌəp sɛt./",
+      "zh": "回診定。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two weeks, yes.",
+      "phonetic": "/tu wiks, jɛs./",
+      "zh": "兩週。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bill is small.",
+      "phonetic": "/ðə bɪl ɪz smɔl./",
+      "zh": "賬單少。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Worth it, yes.",
+      "phonetic": "/wərθ ɪt, jɛs./",
+      "zh": "值得。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The meds, given.",
+      "phonetic": "/ðə meds*, ˈgɪvɪn./",
+      "zh": "給藥。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hide in food.",
+      "phonetic": "/haɪd ɪn fud./",
+      "zh": "藏食。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The exam is done.",
+      "phonetic": "/ðə ɪgˈzæm ɪz dən./",
+      "zh": "檢查完。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All clear, good.",
+      "phonetic": "/ɔl klɪr, gʊd./",
+      "zh": "都好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat flinches.",
+      "phonetic": "/ðə kæt flinches*./",
+      "zh": "貓縮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold gentle, please.",
+      "phonetic": "/hoʊld ˈʤɛnəl, pliz./",
+      "zh": "輕扶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The shot is due.",
+      "phonetic": "/ðə ʃɑt ɪz du./",
+      "zh": "該打針。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Annual, yes.",
+      "phonetic": "/ˈænjuəl, jɛs./",
+      "zh": "年度。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The temp is checked.",
+      "phonetic": "/ðə tɛmp ɪz ʧɛkt./",
+      "zh": "量體溫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quick, yes.",
+      "phonetic": "/kwɪk, jɛs./",
+      "zh": "快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The weight is taken.",
+      "phonetic": "/ðə weɪt ɪz ˈteɪkən./",
+      "zh": "量體重。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the scale.",
+      "phonetic": "/ɔn ðə skeɪl./",
+      "zh": "上秤。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The vet is kind.",
+      "phonetic": "/ðə vɛt ɪz kaɪnd./",
+      "zh": "獸醫親切。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Calm the pet.",
+      "phonetic": "/kɑm ðə pɛt./",
+      "zh": "安撫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The waiting room.",
+      "phonetic": "/ðə ˈweɪtɪŋ rum./",
+      "zh": "等候室。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quiet, please.",
+      "phonetic": "/kwaɪət, pliz./",
+      "zh": "安靜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat meows loud.",
+      "phonetic": "/ðə kæt meows* laʊd./",
+      "zh": "貓大叫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Scared, yes.",
+      "phonetic": "/skɛrd, jɛs./",
+      "zh": "怕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The ride is short.",
+      "phonetic": "/ðə raɪd ɪz ʃɔrt./",
+      "zh": "車程短。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ten minutes, yes.",
+      "phonetic": "/tɛn ˈmɪnəts, jɛs./",
+      "zh": "十分鐘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat hides.",
+      "phonetic": "/ðə kæt haɪdz./",
+      "zh": "貓躲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Coax with treat.",
+      "phonetic": "/koʊks wɪθ trit./",
+      "zh": "零食誘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The carrier is out.",
+      "phonetic": "/ðə ˈkɛriər ɪz aʊt./",
+      "zh": "籠拿出。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Line it soft, yes.",
+      "phonetic": "/laɪn ɪt sɔft, jɛs./",
+      "zh": "鋪軟。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat is sick.",
+      "phonetic": "/ðə kæt ɪz sɪk./",
+      "zh": "貓病了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Call the vet.",
+      "phonetic": "/kɔl ðə vɛt./",
+      "zh": "打電話獸醫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cat is sick.",
+      "phonetic": "/ðə kæt ɪz sɪk./",
+      "zh": "貓病了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Call the vet.",
+      "phonetic": "/kɔl ðə vɛt./",
+      "zh": "打電話獸醫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The carrier is out.",
+      "phonetic": "/ðə ˈkɛriər ɪz aʊt./",
+      "zh": "籠拿出。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Line it soft, yes.",
+      "phonetic": "/laɪn ɪt sɔft, jɛs./",
+      "zh": "鋪軟。"
+    }
+  ]
+}

@@ -1,0 +1,2458 @@
+{
+  "title": "Everyday Phrases — Ordering Food",
+  "title_zh": "點餐",
+  "scene_zh": "點餐 · 情境對話",
+  "title_quote": "Are you ready to order?",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】🍽️ 實用點餐必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — Ordering Food",
+  "youtube_description": "睡著學英文！這部影片收錄實用點餐情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫），不用背，睡前聽就會。重複播放，讓英文自然進入你的大腦。👍 想學更多生活場景，請留言告訴我！別忘了訂閱+按讚。 #英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical Ordering Food phrase pairs (each pair: male normal speed → female slow speed → combined dialogue). No memorization needed—just listen before bed and absorb naturally. If you want more real-life scenarios, leave a comment! Subscribe and like!",
+  "youtube_tags": [
+    "英文聽力",
+    "睡前英文",
+    "點餐英文",
+    "English listening",
+    "Sleep learning",
+    "A2 English",
+    "常用英文短語",
+    "零基礎英文",
+    "慢速英文",
+    "英文口語",
+    "Learn English",
+    "English for daily life",
+    "ESL",
+    "English conversation",
+    "聽英語",
+    "英文學習"
+  ],
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "Ordering Food",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "Ordering Food",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Restaurant",
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "Are you ready to order?",
+      "phonetic": "/ər ju ˈrɛdi tɪ ˈɔrdər?/",
+      "zh": "可以點餐了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, I will have the soup.",
+      "phonetic": "/jɛs, aɪ wɪl hæv ðə sup./",
+      "zh": "可以，我要湯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I would like the chicken salad.",
+      "phonetic": "/aɪ wʊd laɪk ðə ˈʧɪkən ˈsæləd./",
+      "zh": "我要雞肉沙拉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Any dressing?",
+      "phonetic": "/ˈɛni ˈdrɛsɪŋ?/",
+      "zh": "要什麼醬？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Ranch, on the side.",
+      "phonetic": "/rænʧ, ɔn ðə saɪd./",
+      "zh": " ranch 醬，分開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, coming up.",
+      "phonetic": "/ʃʊr, ˈkəmɪŋ əp./",
+      "zh": "好，馬上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Make it to go, please.",
+      "phonetic": "/meɪk ɪt tɪ goʊ, pliz./",
+      "zh": "外帶，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We will box it.",
+      "phonetic": "/wi wɪl bɑks ɪt./",
+      "zh": "我們裝盒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "No onions for me.",
+      "phonetic": "/noʊ ˈənjənz fər mi./",
+      "zh": "我不要洋蔥。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Noted, no onions.",
+      "phonetic": "/ˈnoʊtɪd, noʊ ˈənjənz./",
+      "zh": "記下了，無洋蔥。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I get a refill?",
+      "phonetic": "/kən aɪ gɪt ə ˈrifɪl?/",
+      "zh": "能續杯嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Free refills, yes.",
+      "phonetic": "/fri ˈrifɪlz, jɛs./",
+      "zh": "免費續杯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One medium pizza.",
+      "phonetic": "/wən ˈmidiəm ˈpitsə./",
+      "zh": "一箇中披薩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What toppings?",
+      "phonetic": "/wət ˈtɑpɪŋz?/",
+      "zh": "加什麼料？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Just cheese, thanks.",
+      "phonetic": "/ʤɪst ʧiz, θæŋks./",
+      "zh": "只要起司，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Classic choice.",
+      "phonetic": "/ˈklæsɪk ʧɔɪs./",
+      "zh": "經典。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the burger beef?",
+      "phonetic": "/ɪz ðə ˈbərgər bif?/",
+      "zh": "漢堡是牛肉嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, hundred percent.",
+      "phonetic": "/jɛs, ˈhənərd pərˈsɛnt./",
+      "zh": "純牛肉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Add fries, please.",
+      "phonetic": "/æd fraɪz, pliz./",
+      "zh": "加薯條，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Large or small?",
+      "phonetic": "/lɑrʤ ər smɔl?/",
+      "zh": "大還是小？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A small, thanks.",
+      "phonetic": "/ə smɔl, θæŋks./",
+      "zh": "小份，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Coming with it.",
+      "phonetic": "/ˈkəmɪŋ wɪθ ɪt./",
+      "zh": "一起送。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am allergic to shrimp.",
+      "phonetic": "/aɪ æm əˈlərʤɪk tɪ ʃrɪmp./",
+      "zh": "我對蝦過敏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We will avoid it.",
+      "phonetic": "/wi wɪl əˈvɔɪd ɪt./",
+      "zh": "會避開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The set comes with rice.",
+      "phonetic": "/ðə sɛt kəmz wɪθ raɪs./",
+      "zh": "套餐附飯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "White or brown?",
+      "phonetic": "/waɪt ər braʊn?/",
+      "zh": "白米還是糙米？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Brown rice, please.",
+      "phonetic": "/braʊn raɪs, pliz./",
+      "zh": "糙米，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Healthier, good.",
+      "phonetic": "/ˈhɛlθiər, gʊd./",
+      "zh": "健康，好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I order one more?",
+      "phonetic": "/kən aɪ ˈɔrdər wən mɔr?/",
+      "zh": "能再加點嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, what else?",
+      "phonetic": "/ʃʊr, wət ɛls?/",
+      "zh": "好，還要什麼？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Two coffees, black.",
+      "phonetic": "/tu ˈkɔfiz, blæk./",
+      "zh": "兩杯黑咖啡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hot or iced?",
+      "phonetic": "/hɑt ər aɪst?/",
+      "zh": "熱還是冰？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hot, please.",
+      "phonetic": "/hɑt, pliz./",
+      "zh": "熱的，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Right away.",
+      "phonetic": "/raɪt əˈweɪ./",
+      "zh": "馬上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We want to share.",
+      "phonetic": "/wi wɔnt tɪ ʃɛr./",
+      "zh": "我們想分食。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Extra plate, then.",
+      "phonetic": "/ˈɛkstrə pleɪt, ðɛn./",
+      "zh": "加個盤。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the soup vegetarian?",
+      "phonetic": "/ɪz ðə sup ˌvɛʤəˈtɛˌriən?/",
+      "zh": "湯是素食嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It has cream.",
+      "phonetic": "/ɪt həz krim./",
+      "zh": "有奶油。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Swap the soda for water.",
+      "phonetic": "/swɑp ðə ˈsoʊdə fər ˈwɔtər./",
+      "zh": "汽水換水。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sparkling or still?",
+      "phonetic": "/ˈspɑrkəlɪŋ ər stɪl?/",
+      "zh": "氣泡還是一般？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Still, thanks.",
+      "phonetic": "/stɪl, θæŋks./",
+      "zh": "一般的，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Very well.",
+      "phonetic": "/ˈvɛri wɛl./",
+      "zh": "好的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The special, please.",
+      "phonetic": "/ðə ˈspɛʃəl, pliz./",
+      "zh": "請給我招牌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good pick.",
+      "phonetic": "/gʊd pɪk./",
+      "zh": "選得好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you split the bill?",
+      "phonetic": "/kən ju splɪt ðə bɪl?/",
+      "zh": "能分開付嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "After the meal.",
+      "phonetic": "/ˈæftər ðə mil./",
+      "zh": "餐後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will skip dessert.",
+      "phonetic": "/aɪ wɪl skɪp dɪˈzərt./",
+      "zh": "我跳過點心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just coffee, then.",
+      "phonetic": "/ʤɪst ˈkɔfi, ðɛn./",
+      "zh": "那就咖啡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Extra napkins, please.",
+      "phonetic": "/ˈɛkstrə ˈnæpkɪnz, pliz./",
+      "zh": "多給紙巾，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here you go.",
+      "phonetic": "/hir ju goʊ./",
+      "zh": "給你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The order is wrong.",
+      "phonetic": "/ðə ˈɔrdər ɪz rɔŋ./",
+      "zh": "點錯餐了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will fix it.",
+      "phonetic": "/aɪ wɪl fɪks ɪt./",
+      "zh": "我改。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This is for here.",
+      "phonetic": "/ðɪs ɪz fər hir./",
+      "zh": "這裏喫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sit anywhere.",
+      "phonetic": "/sɪt ˈɛniˌwɛr./",
+      "zh": "隨便坐。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I see the bill?",
+      "phonetic": "/kən aɪ si ðə bɪl?/",
+      "zh": "能看賬單嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will print it.",
+      "phonetic": "/aɪ wɪl prɪnt ɪt./",
+      "zh": "我印。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We are in a hurry.",
+      "phonetic": "/wi ər ɪn ə ˈhəri./",
+      "zh": "我們趕時間。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will rush it.",
+      "phonetic": "/aɪ wɪl rəʃ ɪt./",
+      "zh": "我加快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The food smells great.",
+      "phonetic": "/ðə fud smɛlz greɪt./",
+      "zh": "食物好香。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hope you enjoy.",
+      "phonetic": "/hoʊp ju ˌɛnˈʤɔɪ./",
+      "zh": "請慢用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One more minute, please.",
+      "phonetic": "/wən mɔr ˈmɪnət, pliz./",
+      "zh": "再等一下。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Take your time.",
+      "phonetic": "/teɪk jʊr taɪm./",
+      "zh": "慢慢來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I changed my mind.",
+      "phonetic": "/aɪ ʧeɪnʤd maɪ maɪnd./",
+      "zh": "我改主意了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No problem, new order.",
+      "phonetic": "/noʊ ˈprɑbləm, nu ˈɔrdər./",
+      "zh": "沒關係，重點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That is all, thanks.",
+      "phonetic": "/ðət ɪz ɔl, θæŋks./",
+      "zh": "就這些，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great, I will send it.",
+      "phonetic": "/greɪt, aɪ wɪl sɛnd ɪt./",
+      "zh": "好，送單。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Looks delicious, thank you.",
+      "phonetic": "/lʊks dɪˈlɪʃəs, θæŋk ju./",
+      "zh": "看起來好喫，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Enjoy your meal.",
+      "phonetic": "/ˌɛnˈʤɔɪ jʊr mil./",
+      "zh": "用餐愉快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Looks delicious, thank you.",
+      "phonetic": "/lʊks dɪˈlɪʃəs, θæŋk ju./",
+      "zh": "看起來好喫，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Enjoy your meal.",
+      "phonetic": "/ˌɛnˈʤɔɪ jʊr mil./",
+      "zh": "用餐愉快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That is all, thanks.",
+      "phonetic": "/ðət ɪz ɔl, θæŋks./",
+      "zh": "就這些，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great, I will send it.",
+      "phonetic": "/greɪt, aɪ wɪl sɛnd ɪt./",
+      "zh": "好，送單。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I changed my mind.",
+      "phonetic": "/aɪ ʧeɪnʤd maɪ maɪnd./",
+      "zh": "我改主意了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No problem, new order.",
+      "phonetic": "/noʊ ˈprɑbləm, nu ˈɔrdər./",
+      "zh": "沒關係，重點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One more minute, please.",
+      "phonetic": "/wən mɔr ˈmɪnət, pliz./",
+      "zh": "再等一下。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Take your time.",
+      "phonetic": "/teɪk jʊr taɪm./",
+      "zh": "慢慢來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The food smells great.",
+      "phonetic": "/ðə fud smɛlz greɪt./",
+      "zh": "食物好香。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hope you enjoy.",
+      "phonetic": "/hoʊp ju ˌɛnˈʤɔɪ./",
+      "zh": "請慢用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We are in a hurry.",
+      "phonetic": "/wi ər ɪn ə ˈhəri./",
+      "zh": "我們趕時間。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will rush it.",
+      "phonetic": "/aɪ wɪl rəʃ ɪt./",
+      "zh": "我加快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I see the bill?",
+      "phonetic": "/kən aɪ si ðə bɪl?/",
+      "zh": "能看賬單嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will print it.",
+      "phonetic": "/aɪ wɪl prɪnt ɪt./",
+      "zh": "我印。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This is for here.",
+      "phonetic": "/ðɪs ɪz fər hir./",
+      "zh": "這裏喫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sit anywhere.",
+      "phonetic": "/sɪt ˈɛniˌwɛr./",
+      "zh": "隨便坐。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The order is wrong.",
+      "phonetic": "/ðə ˈɔrdər ɪz rɔŋ./",
+      "zh": "點錯餐了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will fix it.",
+      "phonetic": "/aɪ wɪl fɪks ɪt./",
+      "zh": "我改。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Extra napkins, please.",
+      "phonetic": "/ˈɛkstrə ˈnæpkɪnz, pliz./",
+      "zh": "多給紙巾，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here you go.",
+      "phonetic": "/hir ju goʊ./",
+      "zh": "給你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will skip dessert.",
+      "phonetic": "/aɪ wɪl skɪp dɪˈzərt./",
+      "zh": "我跳過點心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just coffee, then.",
+      "phonetic": "/ʤɪst ˈkɔfi, ðɛn./",
+      "zh": "那就咖啡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you split the bill?",
+      "phonetic": "/kən ju splɪt ðə bɪl?/",
+      "zh": "能分開付嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "After the meal.",
+      "phonetic": "/ˈæftər ðə mil./",
+      "zh": "餐後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The special, please.",
+      "phonetic": "/ðə ˈspɛʃəl, pliz./",
+      "zh": "請給我招牌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good pick.",
+      "phonetic": "/gʊd pɪk./",
+      "zh": "選得好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Still, thanks.",
+      "phonetic": "/stɪl, θæŋks./",
+      "zh": "一般的，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Very well.",
+      "phonetic": "/ˈvɛri wɛl./",
+      "zh": "好的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Swap the soda for water.",
+      "phonetic": "/swɑp ðə ˈsoʊdə fər ˈwɔtər./",
+      "zh": "汽水換水。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sparkling or still?",
+      "phonetic": "/ˈspɑrkəlɪŋ ər stɪl?/",
+      "zh": "氣泡還是一般？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the soup vegetarian?",
+      "phonetic": "/ɪz ðə sup ˌvɛʤəˈtɛˌriən?/",
+      "zh": "湯是素食嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It has cream.",
+      "phonetic": "/ɪt həz krim./",
+      "zh": "有奶油。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We want to share.",
+      "phonetic": "/wi wɔnt tɪ ʃɛr./",
+      "zh": "我們想分食。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Extra plate, then.",
+      "phonetic": "/ˈɛkstrə pleɪt, ðɛn./",
+      "zh": "加個盤。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hot, please.",
+      "phonetic": "/hɑt, pliz./",
+      "zh": "熱的，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Right away.",
+      "phonetic": "/raɪt əˈweɪ./",
+      "zh": "馬上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Two coffees, black.",
+      "phonetic": "/tu ˈkɔfiz, blæk./",
+      "zh": "兩杯黑咖啡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hot or iced?",
+      "phonetic": "/hɑt ər aɪst?/",
+      "zh": "熱還是冰？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I order one more?",
+      "phonetic": "/kən aɪ ˈɔrdər wən mɔr?/",
+      "zh": "能再加點嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, what else?",
+      "phonetic": "/ʃʊr, wət ɛls?/",
+      "zh": "好，還要什麼？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Brown rice, please.",
+      "phonetic": "/braʊn raɪs, pliz./",
+      "zh": "糙米，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Healthier, good.",
+      "phonetic": "/ˈhɛlθiər, gʊd./",
+      "zh": "健康，好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The set comes with rice.",
+      "phonetic": "/ðə sɛt kəmz wɪθ raɪs./",
+      "zh": "套餐附飯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "White or brown?",
+      "phonetic": "/waɪt ər braʊn?/",
+      "zh": "白米還是糙米？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am allergic to shrimp.",
+      "phonetic": "/aɪ æm əˈlərʤɪk tɪ ʃrɪmp./",
+      "zh": "我對蝦過敏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We will avoid it.",
+      "phonetic": "/wi wɪl əˈvɔɪd ɪt./",
+      "zh": "會避開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A small, thanks.",
+      "phonetic": "/ə smɔl, θæŋks./",
+      "zh": "小份，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Coming with it.",
+      "phonetic": "/ˈkəmɪŋ wɪθ ɪt./",
+      "zh": "一起送。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Add fries, please.",
+      "phonetic": "/æd fraɪz, pliz./",
+      "zh": "加薯條，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Large or small?",
+      "phonetic": "/lɑrʤ ər smɔl?/",
+      "zh": "大還是小？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the burger beef?",
+      "phonetic": "/ɪz ðə ˈbərgər bif?/",
+      "zh": "漢堡是牛肉嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, hundred percent.",
+      "phonetic": "/jɛs, ˈhənərd pərˈsɛnt./",
+      "zh": "純牛肉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Just cheese, thanks.",
+      "phonetic": "/ʤɪst ʧiz, θæŋks./",
+      "zh": "只要起司，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Classic choice.",
+      "phonetic": "/ˈklæsɪk ʧɔɪs./",
+      "zh": "經典。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One medium pizza.",
+      "phonetic": "/wən ˈmidiəm ˈpitsə./",
+      "zh": "一箇中披薩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What toppings?",
+      "phonetic": "/wət ˈtɑpɪŋz?/",
+      "zh": "加什麼料？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I get a refill?",
+      "phonetic": "/kən aɪ gɪt ə ˈrifɪl?/",
+      "zh": "能續杯嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Free refills, yes.",
+      "phonetic": "/fri ˈrifɪlz, jɛs./",
+      "zh": "免費續杯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "No onions for me.",
+      "phonetic": "/noʊ ˈənjənz fər mi./",
+      "zh": "我不要洋蔥。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Noted, no onions.",
+      "phonetic": "/ˈnoʊtɪd, noʊ ˈənjənz./",
+      "zh": "記下了，無洋蔥。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Make it to go, please.",
+      "phonetic": "/meɪk ɪt tɪ goʊ, pliz./",
+      "zh": "外帶，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We will box it.",
+      "phonetic": "/wi wɪl bɑks ɪt./",
+      "zh": "我們裝盒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Ranch, on the side.",
+      "phonetic": "/rænʧ, ɔn ðə saɪd./",
+      "zh": " ranch 醬，分開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, coming up.",
+      "phonetic": "/ʃʊr, ˈkəmɪŋ əp./",
+      "zh": "好，馬上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I would like the chicken salad.",
+      "phonetic": "/aɪ wʊd laɪk ðə ˈʧɪkən ˈsæləd./",
+      "zh": "我要雞肉沙拉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Any dressing?",
+      "phonetic": "/ˈɛni ˈdrɛsɪŋ?/",
+      "zh": "要什麼醬？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are you ready to order?",
+      "phonetic": "/ər ju ˈrɛdi tɪ ˈɔrdər?/",
+      "zh": "可以點餐了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, I will have the soup.",
+      "phonetic": "/jɛs, aɪ wɪl hæv ðə sup./",
+      "zh": "可以，我要湯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are you ready to order?",
+      "phonetic": "/ər ju ˈrɛdi tɪ ˈɔrdər?/",
+      "zh": "可以點餐了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, I will have the soup.",
+      "phonetic": "/jɛs, aɪ wɪl hæv ðə sup./",
+      "zh": "可以，我要湯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I would like the chicken salad.",
+      "phonetic": "/aɪ wʊd laɪk ðə ˈʧɪkən ˈsæləd./",
+      "zh": "我要雞肉沙拉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Any dressing?",
+      "phonetic": "/ˈɛni ˈdrɛsɪŋ?/",
+      "zh": "要什麼醬？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Ranch, on the side.",
+      "phonetic": "/rænʧ, ɔn ðə saɪd./",
+      "zh": " ranch 醬，分開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, coming up.",
+      "phonetic": "/ʃʊr, ˈkəmɪŋ əp./",
+      "zh": "好，馬上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Make it to go, please.",
+      "phonetic": "/meɪk ɪt tɪ goʊ, pliz./",
+      "zh": "外帶，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We will box it.",
+      "phonetic": "/wi wɪl bɑks ɪt./",
+      "zh": "我們裝盒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "No onions for me.",
+      "phonetic": "/noʊ ˈənjənz fər mi./",
+      "zh": "我不要洋蔥。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Noted, no onions.",
+      "phonetic": "/ˈnoʊtɪd, noʊ ˈənjənz./",
+      "zh": "記下了，無洋蔥。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I get a refill?",
+      "phonetic": "/kən aɪ gɪt ə ˈrifɪl?/",
+      "zh": "能續杯嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Free refills, yes.",
+      "phonetic": "/fri ˈrifɪlz, jɛs./",
+      "zh": "免費續杯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One medium pizza.",
+      "phonetic": "/wən ˈmidiəm ˈpitsə./",
+      "zh": "一箇中披薩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What toppings?",
+      "phonetic": "/wət ˈtɑpɪŋz?/",
+      "zh": "加什麼料？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Just cheese, thanks.",
+      "phonetic": "/ʤɪst ʧiz, θæŋks./",
+      "zh": "只要起司，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Classic choice.",
+      "phonetic": "/ˈklæsɪk ʧɔɪs./",
+      "zh": "經典。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the burger beef?",
+      "phonetic": "/ɪz ðə ˈbərgər bif?/",
+      "zh": "漢堡是牛肉嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, hundred percent.",
+      "phonetic": "/jɛs, ˈhənərd pərˈsɛnt./",
+      "zh": "純牛肉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Add fries, please.",
+      "phonetic": "/æd fraɪz, pliz./",
+      "zh": "加薯條，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Large or small?",
+      "phonetic": "/lɑrʤ ər smɔl?/",
+      "zh": "大還是小？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A small, thanks.",
+      "phonetic": "/ə smɔl, θæŋks./",
+      "zh": "小份，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Coming with it.",
+      "phonetic": "/ˈkəmɪŋ wɪθ ɪt./",
+      "zh": "一起送。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am allergic to shrimp.",
+      "phonetic": "/aɪ æm əˈlərʤɪk tɪ ʃrɪmp./",
+      "zh": "我對蝦過敏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We will avoid it.",
+      "phonetic": "/wi wɪl əˈvɔɪd ɪt./",
+      "zh": "會避開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The set comes with rice.",
+      "phonetic": "/ðə sɛt kəmz wɪθ raɪs./",
+      "zh": "套餐附飯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "White or brown?",
+      "phonetic": "/waɪt ər braʊn?/",
+      "zh": "白米還是糙米？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Brown rice, please.",
+      "phonetic": "/braʊn raɪs, pliz./",
+      "zh": "糙米，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Healthier, good.",
+      "phonetic": "/ˈhɛlθiər, gʊd./",
+      "zh": "健康，好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I order one more?",
+      "phonetic": "/kən aɪ ˈɔrdər wən mɔr?/",
+      "zh": "能再加點嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, what else?",
+      "phonetic": "/ʃʊr, wət ɛls?/",
+      "zh": "好，還要什麼？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Two coffees, black.",
+      "phonetic": "/tu ˈkɔfiz, blæk./",
+      "zh": "兩杯黑咖啡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hot or iced?",
+      "phonetic": "/hɑt ər aɪst?/",
+      "zh": "熱還是冰？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hot, please.",
+      "phonetic": "/hɑt, pliz./",
+      "zh": "熱的，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Right away.",
+      "phonetic": "/raɪt əˈweɪ./",
+      "zh": "馬上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We want to share.",
+      "phonetic": "/wi wɔnt tɪ ʃɛr./",
+      "zh": "我們想分食。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Extra plate, then.",
+      "phonetic": "/ˈɛkstrə pleɪt, ðɛn./",
+      "zh": "加個盤。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the soup vegetarian?",
+      "phonetic": "/ɪz ðə sup ˌvɛʤəˈtɛˌriən?/",
+      "zh": "湯是素食嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It has cream.",
+      "phonetic": "/ɪt həz krim./",
+      "zh": "有奶油。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Swap the soda for water.",
+      "phonetic": "/swɑp ðə ˈsoʊdə fər ˈwɔtər./",
+      "zh": "汽水換水。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sparkling or still?",
+      "phonetic": "/ˈspɑrkəlɪŋ ər stɪl?/",
+      "zh": "氣泡還是一般？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Still, thanks.",
+      "phonetic": "/stɪl, θæŋks./",
+      "zh": "一般的，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Very well.",
+      "phonetic": "/ˈvɛri wɛl./",
+      "zh": "好的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The special, please.",
+      "phonetic": "/ðə ˈspɛʃəl, pliz./",
+      "zh": "請給我招牌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good pick.",
+      "phonetic": "/gʊd pɪk./",
+      "zh": "選得好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you split the bill?",
+      "phonetic": "/kən ju splɪt ðə bɪl?/",
+      "zh": "能分開付嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "After the meal.",
+      "phonetic": "/ˈæftər ðə mil./",
+      "zh": "餐後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will skip dessert.",
+      "phonetic": "/aɪ wɪl skɪp dɪˈzərt./",
+      "zh": "我跳過點心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just coffee, then.",
+      "phonetic": "/ʤɪst ˈkɔfi, ðɛn./",
+      "zh": "那就咖啡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Extra napkins, please.",
+      "phonetic": "/ˈɛkstrə ˈnæpkɪnz, pliz./",
+      "zh": "多給紙巾，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here you go.",
+      "phonetic": "/hir ju goʊ./",
+      "zh": "給你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The order is wrong.",
+      "phonetic": "/ðə ˈɔrdər ɪz rɔŋ./",
+      "zh": "點錯餐了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will fix it.",
+      "phonetic": "/aɪ wɪl fɪks ɪt./",
+      "zh": "我改。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This is for here.",
+      "phonetic": "/ðɪs ɪz fər hir./",
+      "zh": "這裏喫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sit anywhere.",
+      "phonetic": "/sɪt ˈɛniˌwɛr./",
+      "zh": "隨便坐。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I see the bill?",
+      "phonetic": "/kən aɪ si ðə bɪl?/",
+      "zh": "能看賬單嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will print it.",
+      "phonetic": "/aɪ wɪl prɪnt ɪt./",
+      "zh": "我印。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We are in a hurry.",
+      "phonetic": "/wi ər ɪn ə ˈhəri./",
+      "zh": "我們趕時間。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will rush it.",
+      "phonetic": "/aɪ wɪl rəʃ ɪt./",
+      "zh": "我加快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The food smells great.",
+      "phonetic": "/ðə fud smɛlz greɪt./",
+      "zh": "食物好香。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hope you enjoy.",
+      "phonetic": "/hoʊp ju ˌɛnˈʤɔɪ./",
+      "zh": "請慢用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One more minute, please.",
+      "phonetic": "/wən mɔr ˈmɪnət, pliz./",
+      "zh": "再等一下。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Take your time.",
+      "phonetic": "/teɪk jʊr taɪm./",
+      "zh": "慢慢來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I changed my mind.",
+      "phonetic": "/aɪ ʧeɪnʤd maɪ maɪnd./",
+      "zh": "我改主意了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No problem, new order.",
+      "phonetic": "/noʊ ˈprɑbləm, nu ˈɔrdər./",
+      "zh": "沒關係，重點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That is all, thanks.",
+      "phonetic": "/ðət ɪz ɔl, θæŋks./",
+      "zh": "就這些，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great, I will send it.",
+      "phonetic": "/greɪt, aɪ wɪl sɛnd ɪt./",
+      "zh": "好，送單。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Looks delicious, thank you.",
+      "phonetic": "/lʊks dɪˈlɪʃəs, θæŋk ju./",
+      "zh": "看起來好喫，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Enjoy your meal.",
+      "phonetic": "/ˌɛnˈʤɔɪ jʊr mil./",
+      "zh": "用餐愉快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Looks delicious, thank you.",
+      "phonetic": "/lʊks dɪˈlɪʃəs, θæŋk ju./",
+      "zh": "看起來好喫，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Enjoy your meal.",
+      "phonetic": "/ˌɛnˈʤɔɪ jʊr mil./",
+      "zh": "用餐愉快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That is all, thanks.",
+      "phonetic": "/ðət ɪz ɔl, θæŋks./",
+      "zh": "就這些，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great, I will send it.",
+      "phonetic": "/greɪt, aɪ wɪl sɛnd ɪt./",
+      "zh": "好，送單。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I changed my mind.",
+      "phonetic": "/aɪ ʧeɪnʤd maɪ maɪnd./",
+      "zh": "我改主意了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No problem, new order.",
+      "phonetic": "/noʊ ˈprɑbləm, nu ˈɔrdər./",
+      "zh": "沒關係，重點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One more minute, please.",
+      "phonetic": "/wən mɔr ˈmɪnət, pliz./",
+      "zh": "再等一下。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Take your time.",
+      "phonetic": "/teɪk jʊr taɪm./",
+      "zh": "慢慢來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The food smells great.",
+      "phonetic": "/ðə fud smɛlz greɪt./",
+      "zh": "食物好香。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hope you enjoy.",
+      "phonetic": "/hoʊp ju ˌɛnˈʤɔɪ./",
+      "zh": "請慢用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We are in a hurry.",
+      "phonetic": "/wi ər ɪn ə ˈhəri./",
+      "zh": "我們趕時間。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will rush it.",
+      "phonetic": "/aɪ wɪl rəʃ ɪt./",
+      "zh": "我加快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I see the bill?",
+      "phonetic": "/kən aɪ si ðə bɪl?/",
+      "zh": "能看賬單嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will print it.",
+      "phonetic": "/aɪ wɪl prɪnt ɪt./",
+      "zh": "我印。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This is for here.",
+      "phonetic": "/ðɪs ɪz fər hir./",
+      "zh": "這裏喫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sit anywhere.",
+      "phonetic": "/sɪt ˈɛniˌwɛr./",
+      "zh": "隨便坐。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The order is wrong.",
+      "phonetic": "/ðə ˈɔrdər ɪz rɔŋ./",
+      "zh": "點錯餐了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will fix it.",
+      "phonetic": "/aɪ wɪl fɪks ɪt./",
+      "zh": "我改。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Extra napkins, please.",
+      "phonetic": "/ˈɛkstrə ˈnæpkɪnz, pliz./",
+      "zh": "多給紙巾，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here you go.",
+      "phonetic": "/hir ju goʊ./",
+      "zh": "給你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will skip dessert.",
+      "phonetic": "/aɪ wɪl skɪp dɪˈzərt./",
+      "zh": "我跳過點心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just coffee, then.",
+      "phonetic": "/ʤɪst ˈkɔfi, ðɛn./",
+      "zh": "那就咖啡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you split the bill?",
+      "phonetic": "/kən ju splɪt ðə bɪl?/",
+      "zh": "能分開付嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "After the meal.",
+      "phonetic": "/ˈæftər ðə mil./",
+      "zh": "餐後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The special, please.",
+      "phonetic": "/ðə ˈspɛʃəl, pliz./",
+      "zh": "請給我招牌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good pick.",
+      "phonetic": "/gʊd pɪk./",
+      "zh": "選得好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Still, thanks.",
+      "phonetic": "/stɪl, θæŋks./",
+      "zh": "一般的，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Very well.",
+      "phonetic": "/ˈvɛri wɛl./",
+      "zh": "好的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Swap the soda for water.",
+      "phonetic": "/swɑp ðə ˈsoʊdə fər ˈwɔtər./",
+      "zh": "汽水換水。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sparkling or still?",
+      "phonetic": "/ˈspɑrkəlɪŋ ər stɪl?/",
+      "zh": "氣泡還是一般？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the soup vegetarian?",
+      "phonetic": "/ɪz ðə sup ˌvɛʤəˈtɛˌriən?/",
+      "zh": "湯是素食嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It has cream.",
+      "phonetic": "/ɪt həz krim./",
+      "zh": "有奶油。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We want to share.",
+      "phonetic": "/wi wɔnt tɪ ʃɛr./",
+      "zh": "我們想分食。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Extra plate, then.",
+      "phonetic": "/ˈɛkstrə pleɪt, ðɛn./",
+      "zh": "加個盤。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hot, please.",
+      "phonetic": "/hɑt, pliz./",
+      "zh": "熱的，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Right away.",
+      "phonetic": "/raɪt əˈweɪ./",
+      "zh": "馬上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Two coffees, black.",
+      "phonetic": "/tu ˈkɔfiz, blæk./",
+      "zh": "兩杯黑咖啡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hot or iced?",
+      "phonetic": "/hɑt ər aɪst?/",
+      "zh": "熱還是冰？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I order one more?",
+      "phonetic": "/kən aɪ ˈɔrdər wən mɔr?/",
+      "zh": "能再加點嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, what else?",
+      "phonetic": "/ʃʊr, wət ɛls?/",
+      "zh": "好，還要什麼？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Brown rice, please.",
+      "phonetic": "/braʊn raɪs, pliz./",
+      "zh": "糙米，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Healthier, good.",
+      "phonetic": "/ˈhɛlθiər, gʊd./",
+      "zh": "健康，好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The set comes with rice.",
+      "phonetic": "/ðə sɛt kəmz wɪθ raɪs./",
+      "zh": "套餐附飯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "White or brown?",
+      "phonetic": "/waɪt ər braʊn?/",
+      "zh": "白米還是糙米？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am allergic to shrimp.",
+      "phonetic": "/aɪ æm əˈlərʤɪk tɪ ʃrɪmp./",
+      "zh": "我對蝦過敏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We will avoid it.",
+      "phonetic": "/wi wɪl əˈvɔɪd ɪt./",
+      "zh": "會避開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A small, thanks.",
+      "phonetic": "/ə smɔl, θæŋks./",
+      "zh": "小份，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Coming with it.",
+      "phonetic": "/ˈkəmɪŋ wɪθ ɪt./",
+      "zh": "一起送。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Add fries, please.",
+      "phonetic": "/æd fraɪz, pliz./",
+      "zh": "加薯條，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Large or small?",
+      "phonetic": "/lɑrʤ ər smɔl?/",
+      "zh": "大還是小？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the burger beef?",
+      "phonetic": "/ɪz ðə ˈbərgər bif?/",
+      "zh": "漢堡是牛肉嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, hundred percent.",
+      "phonetic": "/jɛs, ˈhənərd pərˈsɛnt./",
+      "zh": "純牛肉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Just cheese, thanks.",
+      "phonetic": "/ʤɪst ʧiz, θæŋks./",
+      "zh": "只要起司，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Classic choice.",
+      "phonetic": "/ˈklæsɪk ʧɔɪs./",
+      "zh": "經典。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One medium pizza.",
+      "phonetic": "/wən ˈmidiəm ˈpitsə./",
+      "zh": "一箇中披薩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What toppings?",
+      "phonetic": "/wət ˈtɑpɪŋz?/",
+      "zh": "加什麼料？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I get a refill?",
+      "phonetic": "/kən aɪ gɪt ə ˈrifɪl?/",
+      "zh": "能續杯嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Free refills, yes.",
+      "phonetic": "/fri ˈrifɪlz, jɛs./",
+      "zh": "免費續杯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "No onions for me.",
+      "phonetic": "/noʊ ˈənjənz fər mi./",
+      "zh": "我不要洋蔥。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Noted, no onions.",
+      "phonetic": "/ˈnoʊtɪd, noʊ ˈənjənz./",
+      "zh": "記下了，無洋蔥。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Make it to go, please.",
+      "phonetic": "/meɪk ɪt tɪ goʊ, pliz./",
+      "zh": "外帶，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We will box it.",
+      "phonetic": "/wi wɪl bɑks ɪt./",
+      "zh": "我們裝盒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Ranch, on the side.",
+      "phonetic": "/rænʧ, ɔn ðə saɪd./",
+      "zh": " ranch 醬，分開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, coming up.",
+      "phonetic": "/ʃʊr, ˈkəmɪŋ əp./",
+      "zh": "好，馬上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I would like the chicken salad.",
+      "phonetic": "/aɪ wʊd laɪk ðə ˈʧɪkən ˈsæləd./",
+      "zh": "我要雞肉沙拉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Any dressing?",
+      "phonetic": "/ˈɛni ˈdrɛsɪŋ?/",
+      "zh": "要什麼醬？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are you ready to order?",
+      "phonetic": "/ər ju ˈrɛdi tɪ ˈɔrdər?/",
+      "zh": "可以點餐了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, I will have the soup.",
+      "phonetic": "/jɛs, aɪ wɪl hæv ðə sup./",
+      "zh": "可以，我要湯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are you ready to order?",
+      "phonetic": "/ər ju ˈrɛdi tɪ ˈɔrdər?/",
+      "zh": "可以點餐了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, I will have the soup.",
+      "phonetic": "/jɛs, aɪ wɪl hæv ðə sup./",
+      "zh": "可以，我要湯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I would like the chicken salad.",
+      "phonetic": "/aɪ wʊd laɪk ðə ˈʧɪkən ˈsæləd./",
+      "zh": "我要雞肉沙拉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Any dressing?",
+      "phonetic": "/ˈɛni ˈdrɛsɪŋ?/",
+      "zh": "要什麼醬？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Ranch, on the side.",
+      "phonetic": "/rænʧ, ɔn ðə saɪd./",
+      "zh": " ranch 醬，分開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, coming up.",
+      "phonetic": "/ʃʊr, ˈkəmɪŋ əp./",
+      "zh": "好，馬上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Make it to go, please.",
+      "phonetic": "/meɪk ɪt tɪ goʊ, pliz./",
+      "zh": "外帶，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We will box it.",
+      "phonetic": "/wi wɪl bɑks ɪt./",
+      "zh": "我們裝盒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "No onions for me.",
+      "phonetic": "/noʊ ˈənjənz fər mi./",
+      "zh": "我不要洋蔥。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Noted, no onions.",
+      "phonetic": "/ˈnoʊtɪd, noʊ ˈənjənz./",
+      "zh": "記下了，無洋蔥。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I get a refill?",
+      "phonetic": "/kən aɪ gɪt ə ˈrifɪl?/",
+      "zh": "能續杯嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Free refills, yes.",
+      "phonetic": "/fri ˈrifɪlz, jɛs./",
+      "zh": "免費續杯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One medium pizza.",
+      "phonetic": "/wən ˈmidiəm ˈpitsə./",
+      "zh": "一箇中披薩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What toppings?",
+      "phonetic": "/wət ˈtɑpɪŋz?/",
+      "zh": "加什麼料？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Just cheese, thanks.",
+      "phonetic": "/ʤɪst ʧiz, θæŋks./",
+      "zh": "只要起司，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Classic choice.",
+      "phonetic": "/ˈklæsɪk ʧɔɪs./",
+      "zh": "經典。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the burger beef?",
+      "phonetic": "/ɪz ðə ˈbərgər bif?/",
+      "zh": "漢堡是牛肉嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, hundred percent.",
+      "phonetic": "/jɛs, ˈhənərd pərˈsɛnt./",
+      "zh": "純牛肉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Add fries, please.",
+      "phonetic": "/æd fraɪz, pliz./",
+      "zh": "加薯條，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Large or small?",
+      "phonetic": "/lɑrʤ ər smɔl?/",
+      "zh": "大還是小？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A small, thanks.",
+      "phonetic": "/ə smɔl, θæŋks./",
+      "zh": "小份，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Coming with it.",
+      "phonetic": "/ˈkəmɪŋ wɪθ ɪt./",
+      "zh": "一起送。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am allergic to shrimp.",
+      "phonetic": "/aɪ æm əˈlərʤɪk tɪ ʃrɪmp./",
+      "zh": "我對蝦過敏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We will avoid it.",
+      "phonetic": "/wi wɪl əˈvɔɪd ɪt./",
+      "zh": "會避開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The set comes with rice.",
+      "phonetic": "/ðə sɛt kəmz wɪθ raɪs./",
+      "zh": "套餐附飯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "White or brown?",
+      "phonetic": "/waɪt ər braʊn?/",
+      "zh": "白米還是糙米？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Brown rice, please.",
+      "phonetic": "/braʊn raɪs, pliz./",
+      "zh": "糙米，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Healthier, good.",
+      "phonetic": "/ˈhɛlθiər, gʊd./",
+      "zh": "健康，好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I order one more?",
+      "phonetic": "/kən aɪ ˈɔrdər wən mɔr?/",
+      "zh": "能再加點嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, what else?",
+      "phonetic": "/ʃʊr, wət ɛls?/",
+      "zh": "好，還要什麼？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Two coffees, black.",
+      "phonetic": "/tu ˈkɔfiz, blæk./",
+      "zh": "兩杯黑咖啡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hot or iced?",
+      "phonetic": "/hɑt ər aɪst?/",
+      "zh": "熱還是冰？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hot, please.",
+      "phonetic": "/hɑt, pliz./",
+      "zh": "熱的，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Right away.",
+      "phonetic": "/raɪt əˈweɪ./",
+      "zh": "馬上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We want to share.",
+      "phonetic": "/wi wɔnt tɪ ʃɛr./",
+      "zh": "我們想分食。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Extra plate, then.",
+      "phonetic": "/ˈɛkstrə pleɪt, ðɛn./",
+      "zh": "加個盤。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the soup vegetarian?",
+      "phonetic": "/ɪz ðə sup ˌvɛʤəˈtɛˌriən?/",
+      "zh": "湯是素食嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It has cream.",
+      "phonetic": "/ɪt həz krim./",
+      "zh": "有奶油。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Swap the soda for water.",
+      "phonetic": "/swɑp ðə ˈsoʊdə fər ˈwɔtər./",
+      "zh": "汽水換水。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sparkling or still?",
+      "phonetic": "/ˈspɑrkəlɪŋ ər stɪl?/",
+      "zh": "氣泡還是一般？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Still, thanks.",
+      "phonetic": "/stɪl, θæŋks./",
+      "zh": "一般的，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Very well.",
+      "phonetic": "/ˈvɛri wɛl./",
+      "zh": "好的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The special, please.",
+      "phonetic": "/ðə ˈspɛʃəl, pliz./",
+      "zh": "請給我招牌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good pick.",
+      "phonetic": "/gʊd pɪk./",
+      "zh": "選得好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you split the bill?",
+      "phonetic": "/kən ju splɪt ðə bɪl?/",
+      "zh": "能分開付嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "After the meal.",
+      "phonetic": "/ˈæftər ðə mil./",
+      "zh": "餐後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will skip dessert.",
+      "phonetic": "/aɪ wɪl skɪp dɪˈzərt./",
+      "zh": "我跳過點心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just coffee, then.",
+      "phonetic": "/ʤɪst ˈkɔfi, ðɛn./",
+      "zh": "那就咖啡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Extra napkins, please.",
+      "phonetic": "/ˈɛkstrə ˈnæpkɪnz, pliz./",
+      "zh": "多給紙巾，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here you go.",
+      "phonetic": "/hir ju goʊ./",
+      "zh": "給你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The order is wrong.",
+      "phonetic": "/ðə ˈɔrdər ɪz rɔŋ./",
+      "zh": "點錯餐了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will fix it.",
+      "phonetic": "/aɪ wɪl fɪks ɪt./",
+      "zh": "我改。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This is for here.",
+      "phonetic": "/ðɪs ɪz fər hir./",
+      "zh": "這裏喫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sit anywhere.",
+      "phonetic": "/sɪt ˈɛniˌwɛr./",
+      "zh": "隨便坐。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I see the bill?",
+      "phonetic": "/kən aɪ si ðə bɪl?/",
+      "zh": "能看賬單嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will print it.",
+      "phonetic": "/aɪ wɪl prɪnt ɪt./",
+      "zh": "我印。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We are in a hurry.",
+      "phonetic": "/wi ər ɪn ə ˈhəri./",
+      "zh": "我們趕時間。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will rush it.",
+      "phonetic": "/aɪ wɪl rəʃ ɪt./",
+      "zh": "我加快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The food smells great.",
+      "phonetic": "/ðə fud smɛlz greɪt./",
+      "zh": "食物好香。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hope you enjoy.",
+      "phonetic": "/hoʊp ju ˌɛnˈʤɔɪ./",
+      "zh": "請慢用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One more minute, please.",
+      "phonetic": "/wən mɔr ˈmɪnət, pliz./",
+      "zh": "再等一下。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Take your time.",
+      "phonetic": "/teɪk jʊr taɪm./",
+      "zh": "慢慢來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I changed my mind.",
+      "phonetic": "/aɪ ʧeɪnʤd maɪ maɪnd./",
+      "zh": "我改主意了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No problem, new order.",
+      "phonetic": "/noʊ ˈprɑbləm, nu ˈɔrdər./",
+      "zh": "沒關係，重點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That is all, thanks.",
+      "phonetic": "/ðət ɪz ɔl, θæŋks./",
+      "zh": "就這些，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great, I will send it.",
+      "phonetic": "/greɪt, aɪ wɪl sɛnd ɪt./",
+      "zh": "好，送單。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Looks delicious, thank you.",
+      "phonetic": "/lʊks dɪˈlɪʃəs, θæŋk ju./",
+      "zh": "看起來好喫，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Enjoy your meal.",
+      "phonetic": "/ˌɛnˈʤɔɪ jʊr mil./",
+      "zh": "用餐愉快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Looks delicious, thank you.",
+      "phonetic": "/lʊks dɪˈlɪʃəs, θæŋk ju./",
+      "zh": "看起來好喫，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Enjoy your meal.",
+      "phonetic": "/ˌɛnˈʤɔɪ jʊr mil./",
+      "zh": "用餐愉快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That is all, thanks.",
+      "phonetic": "/ðət ɪz ɔl, θæŋks./",
+      "zh": "就這些，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great, I will send it.",
+      "phonetic": "/greɪt, aɪ wɪl sɛnd ɪt./",
+      "zh": "好，送單。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I changed my mind.",
+      "phonetic": "/aɪ ʧeɪnʤd maɪ maɪnd./",
+      "zh": "我改主意了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No problem, new order.",
+      "phonetic": "/noʊ ˈprɑbləm, nu ˈɔrdər./",
+      "zh": "沒關係，重點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One more minute, please.",
+      "phonetic": "/wən mɔr ˈmɪnət, pliz./",
+      "zh": "再等一下。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Take your time.",
+      "phonetic": "/teɪk jʊr taɪm./",
+      "zh": "慢慢來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The food smells great.",
+      "phonetic": "/ðə fud smɛlz greɪt./",
+      "zh": "食物好香。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hope you enjoy.",
+      "phonetic": "/hoʊp ju ˌɛnˈʤɔɪ./",
+      "zh": "請慢用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We are in a hurry.",
+      "phonetic": "/wi ər ɪn ə ˈhəri./",
+      "zh": "我們趕時間。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will rush it.",
+      "phonetic": "/aɪ wɪl rəʃ ɪt./",
+      "zh": "我加快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I see the bill?",
+      "phonetic": "/kən aɪ si ðə bɪl?/",
+      "zh": "能看賬單嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will print it.",
+      "phonetic": "/aɪ wɪl prɪnt ɪt./",
+      "zh": "我印。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This is for here.",
+      "phonetic": "/ðɪs ɪz fər hir./",
+      "zh": "這裏喫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sit anywhere.",
+      "phonetic": "/sɪt ˈɛniˌwɛr./",
+      "zh": "隨便坐。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The order is wrong.",
+      "phonetic": "/ðə ˈɔrdər ɪz rɔŋ./",
+      "zh": "點錯餐了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will fix it.",
+      "phonetic": "/aɪ wɪl fɪks ɪt./",
+      "zh": "我改。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Extra napkins, please.",
+      "phonetic": "/ˈɛkstrə ˈnæpkɪnz, pliz./",
+      "zh": "多給紙巾，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here you go.",
+      "phonetic": "/hir ju goʊ./",
+      "zh": "給你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will skip dessert.",
+      "phonetic": "/aɪ wɪl skɪp dɪˈzərt./",
+      "zh": "我跳過點心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just coffee, then.",
+      "phonetic": "/ʤɪst ˈkɔfi, ðɛn./",
+      "zh": "那就咖啡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you split the bill?",
+      "phonetic": "/kən ju splɪt ðə bɪl?/",
+      "zh": "能分開付嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "After the meal.",
+      "phonetic": "/ˈæftər ðə mil./",
+      "zh": "餐後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The special, please.",
+      "phonetic": "/ðə ˈspɛʃəl, pliz./",
+      "zh": "請給我招牌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good pick.",
+      "phonetic": "/gʊd pɪk./",
+      "zh": "選得好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Still, thanks.",
+      "phonetic": "/stɪl, θæŋks./",
+      "zh": "一般的，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Very well.",
+      "phonetic": "/ˈvɛri wɛl./",
+      "zh": "好的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Swap the soda for water.",
+      "phonetic": "/swɑp ðə ˈsoʊdə fər ˈwɔtər./",
+      "zh": "汽水換水。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sparkling or still?",
+      "phonetic": "/ˈspɑrkəlɪŋ ər stɪl?/",
+      "zh": "氣泡還是一般？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the soup vegetarian?",
+      "phonetic": "/ɪz ðə sup ˌvɛʤəˈtɛˌriən?/",
+      "zh": "湯是素食嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It has cream.",
+      "phonetic": "/ɪt həz krim./",
+      "zh": "有奶油。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We want to share.",
+      "phonetic": "/wi wɔnt tɪ ʃɛr./",
+      "zh": "我們想分食。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Extra plate, then.",
+      "phonetic": "/ˈɛkstrə pleɪt, ðɛn./",
+      "zh": "加個盤。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hot, please.",
+      "phonetic": "/hɑt, pliz./",
+      "zh": "熱的，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Right away.",
+      "phonetic": "/raɪt əˈweɪ./",
+      "zh": "馬上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Two coffees, black.",
+      "phonetic": "/tu ˈkɔfiz, blæk./",
+      "zh": "兩杯黑咖啡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hot or iced?",
+      "phonetic": "/hɑt ər aɪst?/",
+      "zh": "熱還是冰？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I order one more?",
+      "phonetic": "/kən aɪ ˈɔrdər wən mɔr?/",
+      "zh": "能再加點嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, what else?",
+      "phonetic": "/ʃʊr, wət ɛls?/",
+      "zh": "好，還要什麼？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Brown rice, please.",
+      "phonetic": "/braʊn raɪs, pliz./",
+      "zh": "糙米，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Healthier, good.",
+      "phonetic": "/ˈhɛlθiər, gʊd./",
+      "zh": "健康，好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The set comes with rice.",
+      "phonetic": "/ðə sɛt kəmz wɪθ raɪs./",
+      "zh": "套餐附飯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "White or brown?",
+      "phonetic": "/waɪt ər braʊn?/",
+      "zh": "白米還是糙米？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am allergic to shrimp.",
+      "phonetic": "/aɪ æm əˈlərʤɪk tɪ ʃrɪmp./",
+      "zh": "我對蝦過敏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We will avoid it.",
+      "phonetic": "/wi wɪl əˈvɔɪd ɪt./",
+      "zh": "會避開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A small, thanks.",
+      "phonetic": "/ə smɔl, θæŋks./",
+      "zh": "小份，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Coming with it.",
+      "phonetic": "/ˈkəmɪŋ wɪθ ɪt./",
+      "zh": "一起送。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Add fries, please.",
+      "phonetic": "/æd fraɪz, pliz./",
+      "zh": "加薯條，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Large or small?",
+      "phonetic": "/lɑrʤ ər smɔl?/",
+      "zh": "大還是小？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the burger beef?",
+      "phonetic": "/ɪz ðə ˈbərgər bif?/",
+      "zh": "漢堡是牛肉嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, hundred percent.",
+      "phonetic": "/jɛs, ˈhənərd pərˈsɛnt./",
+      "zh": "純牛肉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Just cheese, thanks.",
+      "phonetic": "/ʤɪst ʧiz, θæŋks./",
+      "zh": "只要起司，謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Classic choice.",
+      "phonetic": "/ˈklæsɪk ʧɔɪs./",
+      "zh": "經典。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One medium pizza.",
+      "phonetic": "/wən ˈmidiəm ˈpitsə./",
+      "zh": "一箇中披薩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "What toppings?",
+      "phonetic": "/wət ˈtɑpɪŋz?/",
+      "zh": "加什麼料？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I get a refill?",
+      "phonetic": "/kən aɪ gɪt ə ˈrifɪl?/",
+      "zh": "能續杯嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Free refills, yes.",
+      "phonetic": "/fri ˈrifɪlz, jɛs./",
+      "zh": "免費續杯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "No onions for me.",
+      "phonetic": "/noʊ ˈənjənz fər mi./",
+      "zh": "我不要洋蔥。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Noted, no onions.",
+      "phonetic": "/ˈnoʊtɪd, noʊ ˈənjənz./",
+      "zh": "記下了，無洋蔥。"
+    }
+  ]
+}
