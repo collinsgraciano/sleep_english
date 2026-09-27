@@ -457,8 +457,10 @@ async def ai_presets_page(request: Request):
     """预生成脚本管理台：ai_scripts / ai_scripts_hot 的浏览、编辑、校验、回收站。
 
     预生成脚本是全局素材（不分频道），故无 ?channel= 上下文。"""
+    from ..ai_scripts import STANDARD_LINES
     return templates.TemplateResponse(request, "ai_presets.html", {
         "active_page": "ai_presets",
+        "standard_lines": list(STANDARD_LINES),
     })
 
 

@@ -17,13 +17,14 @@ from pathlib import Path
 
 from .paths import WEB_ROOT
 
+# 多预生成目录（文件夹编号全局唯一）：ai_scripts=001-100, ai_scripts_hot=101 起
 AI_SCRIPTS_DIR = WEB_ROOT / "ai_scripts"
-# 多预生成目录（文件夹编号全局唯一）：ai_scripts=001-100, ai_scripts_hot=101-200
 AI_SCRIPTS_DIRS = [AI_SCRIPTS_DIR, WEB_ROOT / "ai_scripts_hot"]
 MANIFEST_PATH = AI_SCRIPTS_DIR / "manifest.json"
 SLEEP_MODE = "sleep"
-# 标准行数，与 skill(hot-sleep-dialogues)/script_library.DEFAULT_LINES 一致
-EXPECTED_LINES = 400
+# 新建脚本的默认行数（201+ 批次＝400 组）；体检同时接受历史批次的 400 行
+EXPECTED_LINES = 800
+STANDARD_LINES = (400, 800)
 # 管理页删除＝移入预生成目录下的 _recycle_bin（与运行历史回收站同一套约定；
 # manifest 与 skill 脚本都跳过 _ 前缀目录，回收站里的不会被当成脚本）
 RECYCLE_DIRNAME = "_recycle_bin"

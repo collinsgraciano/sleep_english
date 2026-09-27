@@ -22,8 +22,9 @@ from io import BytesIO
 from pathlib import Path
 
 from .ai_scripts import (
-    AI_SCRIPTS_DIRS, EXPECTED_LINES, RECYCLE_DIRNAME, SLEEP_MODE, TRASH_META_NAME,
-    _load_state, _save_state, list_ai_scripts, load_ai_script, source_dir,
+    AI_SCRIPTS_DIRS, EXPECTED_LINES, RECYCLE_DIRNAME, SLEEP_MODE, STANDARD_LINES,
+    TRASH_META_NAME, _load_state, _save_state, list_ai_scripts, load_ai_script,
+    source_dir,
 )
 
 # 与 skill 的 validate_all.py 同一套必填字段（缺了会跑不出完整卡片/YouTube 元数据）
@@ -568,8 +569,9 @@ def _check_meta(script: dict) -> tuple[list[str], list[str]]:
     n = len(script.get("dialogue") or [])
     if n == 0:
         errors.append("dialogue 为空（还没有内容）")
-    elif n != EXPECTED_LINES:
-        warnings.append(f"对话 {n} 行，标准是 {EXPECTED_LINES} 行（200 对）")
+    elif n not in STANDARD_LINES:
+        std = " 或 ".join(f"{x} 行（{x // 2} 对）" for x in STANDARD_LINES)
+        warnings.append(f"对话 {n} 行，标准是 {std}")
     return errors, warnings
 
 

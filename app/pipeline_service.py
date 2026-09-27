@@ -687,6 +687,14 @@ class PipelineService:
         args.topic = topic
         if script.get("cefr"):
             args.cefr = script["cefr"]
+        # 组数以脚本实际行数为准：timeline 用 min(sleep_pairs, 脚本行数) 截，
+        # 沿用配置值会把 800 行脚本静默播成前 400 行
+        pairs = max(10, min(400, len(script["dialogue"]) // 2))
+        if int(getattr(args, "sleep_pairs", 0) or 0) != pairs:
+            self._on_log_line(f"  [AiScripts] 对话组数按脚本同步："
+                              f"{getattr(args, 'sleep_pairs', 0)} → {pairs}")
+            args.sleep_pairs = pairs
+            args.num_lines = pairs * 2
 
         self._on_log_line("\n" + "=" * 60)
         self._on_log_line("Step 0: 使用 ai_scripts 预生成脚本（跳过 LLM 生成）...")

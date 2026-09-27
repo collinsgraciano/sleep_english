@@ -279,6 +279,8 @@ let ED = null;             // 编辑器状态 {folder, script, preset, library, 
 let _filterTimer = null;
 
 const SRC_LABEL = {main: 'ai_scripts', hot: 'ai_scripts_hot'};
+// 标准行数集合来自 app/ai_scripts.py 的 STANDARD_LINES（400=旧批次，800=新批次）
+const STANDARD_LINES = {{ standard_lines | tojson }};
 
 // 频道上下文＝本页 URL ?channel=（侧边栏/工作台带入）。base.html 只会改写渲染时
 // 已存在的 <a>，列表/编辑器里的链接是之后拼出来的，所以跳转 URL 自己带上 channel，
@@ -411,7 +413,7 @@ function renderList() {
                     <span class="text-slate-600">· ${esc(SRC_LABEL[p.source] || p.source)}</span></div>
             </td>
             <td class="px-2 py-2 text-xs text-slate-400">${esc(p.category)}</td>
-            <td class="px-2 py-2 text-right ${p.lines === 400 ? 'text-slate-300' : 'text-amber-300'}">${p.lines}</td>
+            <td class="px-2 py-2 text-right ${STANDARD_LINES.includes(p.lines) ? 'text-slate-300' : 'text-amber-300'}">${p.lines}</td>
             <td class="px-2 py-2 text-xs text-slate-500">${fmtDate(p.mtime)}</td>
             <td class="px-2 py-2 space-x-1">
                 ${p.in_library ? '<span class="px-1.5 py-0.5 rounded bg-indigo-900/70 text-indigo-200 text-[10px]">已入库</span>'
