@@ -1,0 +1,966 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="p-6 max-w-[1600px] mx-auto">
+
+    <div class="flex items-start justify-between mb-4">
+        <div>
+            <h2 class="text-2xl font-bold text-white">📦 预生成脚本</h2>
+            <p class="text-sm text-slate-400 mt-1">
+                <code class="text-slate-300">ai_scripts/</code> 与
+                <code class="text-slate-300">ai_scripts_hot/</code> 里已生成好的 sleep 脚本：浏览、编辑、体检、导入脚本库、回收站。
+                改完保存会自动刷新脚本库里对应文档（已产出视频的按约定不覆盖）。
+            </p>
+        </div>
+        <div class="flex flex-wrap gap-2 justify-end">
+            <button onclick="openCreate()" class="px-3 py-2 bg-emerald-600 hover:bg-emerald-500 rounded-lg text-sm text-white font-medium">＋ 新增</button>
+            <button onclick="openFromLibrary()" class="px-3 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg text-sm text-white">📚 从脚本库另存</button>
+            <button onclick="rebuildManifest()" class="px-3 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg text-sm text-white" title="扫描磁盘目录重建 manifest.json（手工加目录/改名后补登记）">🔄 重建清单</button>
+            <button onclick="openRecycle()" class="px-3 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg text-sm text-white">🗑 回收站</button>
+        </div>
+    </div>
+
+    <!-- 统计条 -->
+    <div id="stats-bar" class="flex flex-wrap items-center gap-2 text-xs mb-4"></div>
+
+    <!-- 筛选工具条 -->
+    <div class="bg-slate-800 border border-slate-700 rounded-xl p-3 mb-3 flex flex-wrap items-center gap-2">
+        <input id="f-q" type="text" placeholder="🔍 搜主题 / 中文 / 分类 / 文件夹"
+               class="bg-slate-900 border border-slate-600 rounded-lg px-3 py-1.5 text-sm text-white w-64"
+               oninput="debounceFilter()">
+        <select id="f-source" class="bg-slate-900 border border-slate-600 rounded-lg px-2 py-1.5 text-sm text-white" onchange="loadList()">
+            <option value="all">全部来源</option>
+            <option value="main">ai_scripts（001–100）</option>
+            <option value="hot">ai_scripts_hot（热门 101–200）</option>
+        </select>
+        <select id="f-category" class="bg-slate-900 border border-slate-600 rounded-lg px-2 py-1.5 text-sm text-white" onchange="loadList()">
+            <option value="">全部分类</option>
+        </select>
+        <select id="f-status" class="bg-slate-900 border border-slate-600 rounded-lg px-2 py-1.5 text-sm text-white" onchange="loadList()">
+            <option value="">全部状态</option>
+            <option value="unused">未产出视频</option>
+            <option value="used">已产出视频</option>
+            <option value="in_lib">已入库</option>
+            <option value="not_in_lib">未入库</option>
+        </select>
+        <select id="f-sort" class="bg-slate-900 border border-slate-600 rounded-lg px-2 py-1.5 text-sm text-white" onchange="loadList()">
+            <option value="mtime">按更新时间（新在前）</option>
+            <option value="index">按编号</option>
+            <option value="topic">按主题名</option>
+            <option value="category">按分类</option>
+            <option value="lines">按行数</option>
+        </select>
+        <label class="flex items-center gap-1.5 text-xs text-slate-400 ml-1" title="关闭后不再顺带把新脚本并入脚本库，列表打开更快">
+            <input type="checkbox" id="f-sync" checked onchange="loadList()" class="accent-indigo-500">自动入库
+        </label>
+        <span id="list-loading" class="text-xs text-slate-500 ml-auto">加载中…</span>
+    </div>
+
+    <!-- 批量操作条 -->
+    <div id="batch-bar" class="hidden bg-indigo-900/40 border border-indigo-700/60 rounded-xl px-4 py-2.5 mb-3 flex flex-wrap items-center gap-2 text-sm">
+        <span class="text-indigo-200 font-medium">已选 <b id="batch-count">0</b> 条</span>
+        <button onclick="batchImport()" class="px-3 py-1.5 bg-emerald-700 hover:bg-emerald-600 rounded-lg text-white text-xs">📥 导入脚本库</button>
+        <button onclick="batchValidate()" class="px-3 py-1.5 bg-slate-700 hover:bg-slate-600 rounded-lg text-white text-xs">🔬 机器体检</button>
+        <button onclick="batchExport()" class="px-3 py-1.5 bg-slate-700 hover:bg-slate-600 rounded-lg text-white text-xs">🗜 导出 zip</button>
+        <label class="flex items-center gap-1 text-xs text-slate-300" title="删除预生成脚本时，连脚本库里那份文档一起删（主题随之可再次使用）">
+            <input type="checkbox" id="b-drop-lib" class="accent-rose-500">连库文档一起删
+        </label>
+        <button onclick="batchDelete()" class="px-3 py-1.5 bg-rose-800 hover:bg-rose-700 rounded-lg text-white text-xs">🗑 删除进回收站</button>
+        <button onclick="clearSelection()" class="px-3 py-1.5 text-slate-400 hover:text-white text-xs">取消选择</button>
+    </div>
+
+    <!-- 列表 -->
+    <div class="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden">
+        <table class="w-full text-sm">
+            <thead class="bg-slate-900/60 text-slate-400 text-xs">
+                <tr>
+                    <th class="px-3 py-2.5 text-left w-9"><input type="checkbox" id="chk-all" onchange="toggleAll(this.checked)" class="accent-indigo-500"></th>
+                    <th class="px-2 py-2.5 text-left w-16">编号</th>
+                    <th class="px-2 py-2.5 text-left">主题</th>
+                    <th class="px-2 py-2.5 text-left w-28">分类</th>
+                    <th class="px-2 py-2.5 text-right w-16">行数</th>
+                    <th class="px-2 py-2.5 text-left w-24">更新</th>
+                    <th class="px-2 py-2.5 text-left w-44">状态</th>
+                    <th class="px-3 py-2.5 text-right w-56">操作</th>
+                </tr>
+            </thead>
+            <tbody id="preset-rows"></tbody>
+        </table>
+        <div id="empty-hint" class="hidden text-center text-slate-500 text-sm py-12">没有符合条件的预生成脚本。</div>
+    </div>
+</div>
+
+<!-- ============ 详情 / 编辑弹窗 ============ -->
+<div id="ed-modal" class="fixed inset-0 bg-black/70 z-50 hidden items-center justify-center p-4" onclick="closeEditor(event)">
+    <div class="bg-slate-800 border border-slate-600 rounded-xl w-full max-w-6xl max-h-[92vh] flex flex-col" onclick="event.stopPropagation()">
+        <div class="flex items-center justify-between px-5 py-3 border-b border-slate-700">
+            <div>
+                <h3 class="text-lg font-bold text-white" id="ed-title">编辑脚本</h3>
+                <p class="text-[11px] text-slate-500" id="ed-sub"></p>
+            </div>
+            <div class="flex items-center gap-2">
+                <span id="ed-dirty" class="hidden text-xs text-amber-300">● 有未保存修改</span>
+                <button onclick="saveEditor()" id="ed-save" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-lg text-sm text-white font-medium">💾 保存</button>
+                <button onclick="closeEditor()" class="text-slate-400 hover:text-white text-xl px-2">✕</button>
+            </div>
+        </div>
+        <div class="px-5 pt-3 border-b border-slate-700 flex gap-1 text-sm">
+            <button class="ed-tab px-4 py-2 rounded-t-lg" data-tab="meta" onclick="switchTab('meta')">元信息</button>
+            <button class="ed-tab px-4 py-2 rounded-t-lg" data-tab="dialogue" onclick="switchTab('dialogue')">对话内容</button>
+            <button class="ed-tab px-4 py-2 rounded-t-lg" data-tab="audit" onclick="switchTab('audit')">机器体检</button>
+            <button class="ed-tab px-4 py-2 rounded-t-lg" data-tab="files" onclick="switchTab('files')">文件与脚本库</button>
+        </div>
+        <div id="ed-meta" class="overflow-y-auto p-5 space-y-3"></div>
+        <div id="ed-dialogue" class="overflow-y-auto p-5 hidden">
+            <div class="flex flex-wrap items-center gap-2 mb-3 text-sm">
+                <span class="text-slate-400 text-xs" id="ed-dlg-count"></span>
+                <button onclick="addPair()" class="px-2.5 py-1.5 bg-slate-700 hover:bg-slate-600 rounded-lg text-xs text-white">＋ 追加一对</button>
+                <button onclick="togglePaste()" class="px-2.5 py-1.5 bg-slate-700 hover:bg-slate-600 rounded-lg text-xs text-white">📋 粘贴文本批量填</button>
+                <select id="ed-page-size" class="bg-slate-900 border border-slate-600 rounded-lg px-2 py-1 text-xs text-white" onchange="ED.page=1;renderDialogue()">
+                    <option value="10">10 对/页</option>
+                    <option value="20" selected>20 对/页</option>
+                    <option value="50">50 对/页</option>
+                </select>
+                <span class="ml-auto flex items-center gap-1 text-xs text-slate-400">
+                    页 <b id="ed-page-no">1</b> / <span id="ed-page-max">1</span>
+                    <button onclick="gotoPage(1)" class="px-2 py-1 bg-slate-700 rounded hover:bg-slate-600 text-white">«</button>
+                    <button onclick="gotoPage(ED.page-1)" class="px-2 py-1 bg-slate-700 rounded hover:bg-slate-600 text-white">‹</button>
+                    <button onclick="gotoPage(ED.page+1)" class="px-2 py-1 bg-slate-700 rounded hover:bg-slate-600 text-white">›</button>
+                    <button onclick="gotoPage(_pageMax())" class="px-2 py-1 bg-slate-700 rounded hover:bg-slate-600 text-white">»</button>
+                </span>
+            </div>
+            <div id="ed-paste" class="hidden mb-3">
+                <textarea id="ed-paste-text" rows="6" placeholder="一行一句，用 | 分隔：What do you want for breakfast? | 你早餐想喫什麼？ | /wət du ju wɔnt fər ˈbrɛkfəst?/"
+                          class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-xs text-white font-mono"></textarea>
+                <div class="flex gap-2 mt-1">
+                    <button onclick="pasteAppend()" class="px-2.5 py-1 bg-slate-700 hover:bg-slate-600 rounded text-xs text-white">追加到末尾</button>
+                    <button onclick="pasteReplace()" class="px-2.5 py-1 bg-amber-800 hover:bg-amber-700 rounded text-xs text-white">替换全部对话</button>
+                </div>
+            </div>
+            <table class="w-full text-xs">
+                <thead class="text-slate-500">
+                    <tr>
+                        <th class="text-left w-12 py-1">#</th>
+                        <th class="text-left w-16">角色</th>
+                        <th class="text-left">英文 text</th>
+                        <th class="text-left w-[28%]">音标 phonetic</th>
+                        <th class="text-left w-[22%]">中文 zh</th>
+                        <th class="w-16"></th>
+                    </tr>
+                </thead>
+                <tbody id="ed-dlg-rows"></tbody>
+            </table>
+            <div class="flex justify-center gap-2 mt-3">
+                <button onclick="gotoPage(ED.page-1)" class="px-3 py-1.5 bg-slate-700 rounded-lg text-xs text-white hover:bg-slate-600">上一页</button>
+                <button onclick="gotoPage(ED.page+1)" class="px-3 py-1.5 bg-slate-700 rounded-lg text-xs text-white hover:bg-slate-600">下一页</button>
+            </div>
+        </div>
+        <div id="ed-audit" class="overflow-y-auto p-5 hidden">
+            <button onclick="runAudit()" class="px-3 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg text-sm text-white">🔬 重新体检（零积分）</button>
+            <label class="flex items-center gap-1.5 text-xs text-slate-400 mt-3">
+                <input type="checkbox" id="ed-audit-cross" class="accent-indigo-500">跨主题整句查重（要扫全库，稍慢）
+            </label>
+            <div id="ed-audit-body" class="mt-3 space-y-2 text-sm"></div>
+        </div>
+        <div id="ed-files" class="overflow-y-auto p-5 hidden space-y-4 text-sm"></div>
+    </div>
+</div>
+
+<!-- ============ 新增弹窗 ============ -->
+<div id="cr-modal" class="fixed inset-0 bg-black/70 z-50 hidden items-center justify-center p-4" onclick="if(event.target===this)this.classList.add('hidden'),this.classList.remove('flex')">
+    <div class="bg-slate-800 border border-slate-600 rounded-xl w-full max-w-2xl max-h-[90vh] overflow-y-auto p-5">
+        <h3 class="text-lg font-bold text-white mb-1">＋ 新增预生成脚本</h3>
+        <p class="text-xs text-slate-400 mb-4">三种用法：① 只填主题建骨架（元数据齐全，之后再填对话）；② 填主题 + 粘贴对话文本；③ 直接粘贴整份 script.json。</p>
+        <div class="space-y-3">
+            <div class="grid grid-cols-2 gap-3">
+                <div>
+                    <label class="block text-xs text-slate-400 mb-1">主题（英文）*</label>
+                    <input id="cr-topic" class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white" placeholder="Ordering Coffee">
+                </div>
+                <div>
+                    <label class="block text-xs text-slate-400 mb-1">主题（中文）</label>
+                    <input id="cr-zh" class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white" placeholder="點咖啡">
+                </div>
+                <div>
+                    <label class="block text-xs text-slate-400 mb-1">分类</label>
+                    <input id="cr-category" class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white" placeholder="Food &amp; Drink" list="category-list">
+                </div>
+                <div>
+                    <label class="block text-xs text-slate-400 mb-1">CEFR</label>
+                    <select id="cr-cefr" class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white">
+                        <option>A1</option><option selected>A2</option><option>B1</option><option>B2</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs text-slate-400 mb-1">写入目录</label>
+                    <select id="cr-source" class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white">
+                        <option value="main">ai_scripts/</option>
+                        <option value="hot">ai_scripts_hot/</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs text-slate-400 mb-1">编号（留空自动取下一个）</label>
+                    <input id="cr-index" type="number" min="1" class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white" placeholder="自动">
+                </div>
+            </div>
+            <div>
+                <label class="block text-xs text-slate-400 mb-1">对话文本（可选，一行一句：<code>英文 | 中文 | /音标/</code>）</label>
+                <textarea id="cr-pairs" rows="6" class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-xs text-white font-mono"
+                          placeholder="Excuse me, where do I order coffee? | 打擾一下，請問在哪裡點咖啡？ | /ɪkˈskjuːz miː wɛr du aɪ ˈɔːrdər ˈkɔːfi/&#10;Right here, only two people ahead. | 就在這裡，前面只有兩個人。"></textarea>
+            </div>
+            <div>
+                <label class="block text-xs text-slate-400 mb-1">或直接粘贴整份 script.json（填了它就忽略上面几项）</label>
+                <textarea id="cr-json" rows="5" class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-xs text-white font-mono" placeholder='{"topic": "...", "dialogue": [ ... ]}'></textarea>
+            </div>
+            <div id="cr-error" class="hidden text-xs text-rose-300"></div>
+            <div class="flex justify-end gap-2">
+                <button onclick="document.getElementById('cr-modal').classList.add('hidden')" class="px-4 py-2 text-sm text-slate-400 hover:text-white">取消</button>
+                <button onclick="submitCreate()" class="px-4 py-2 bg-emerald-600 hover:bg-emerald-500 rounded-lg text-sm text-white font-medium">创建</button>
+            </div>
+        </div>
+    </div>
+</div>
+<datalist id="category-list"></datalist>
+
+<!-- ============ 从脚本库另存 ============ -->
+<div id="lb-modal" class="fixed inset-0 bg-black/70 z-50 hidden items-center justify-center p-4" onclick="if(event.target===this)this.classList.add('hidden'),this.classList.remove('flex')">
+    <div class="bg-slate-800 border border-slate-600 rounded-xl w-full max-w-lg p-5">
+        <h3 class="text-lg font-bold text-white mb-1">📚 从脚本库另存为预生成脚本</h3>
+        <p class="text-xs text-slate-400 mb-3">把脚本库里的一份 sleep 脚本落到预生成目录，之后就能在控制台「预生成脚本」下拉里直接选用。</p>
+        <select id="lb-sid" class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white mb-3"></select>
+        <select id="lb-source" class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white mb-3">
+            <option value="main">写入 ai_scripts/</option>
+            <option value="hot">写入 ai_scripts_hot/</option>
+        </select>
+        <div id="lb-error" class="hidden text-xs text-rose-300 mb-2"></div>
+        <div class="flex justify-end gap-2">
+            <button onclick="document.getElementById('lb-modal').classList.add('hidden')" class="px-4 py-2 text-sm text-slate-400 hover:text-white">取消</button>
+            <button onclick="submitFromLibrary()" class="px-4 py-2 bg-emerald-600 hover:bg-emerald-500 rounded-lg text-sm text-white font-medium">另存</button>
+        </div>
+    </div>
+</div>
+
+<!-- ============ 回收站 ============ -->
+<div id="tr-modal" class="fixed inset-0 bg-black/70 z-50 hidden items-center justify-center p-4" onclick="if(event.target===this)this.classList.add('hidden'),this.classList.remove('flex')">
+    <div class="bg-slate-800 border border-slate-600 rounded-xl w-full max-w-3xl max-h-[85vh] flex flex-col">
+        <div class="flex items-center justify-between px-5 py-3 border-b border-slate-700">
+            <h3 class="text-lg font-bold text-white">🗑 回收站</h3>
+            <div class="flex items-center gap-2">
+                <button onclick="purgeRecycle('', true)" class="px-3 py-1.5 bg-rose-800 hover:bg-rose-700 rounded-lg text-xs text-white">清空（不可恢复）</button>
+                <button onclick="closeModal('tr-modal')" class="text-slate-400 hover:text-white text-xl px-2">✕</button>
+            </div>
+        </div>
+        <div id="tr-body" class="overflow-y-auto p-5 space-y-2 text-sm"></div>
+    </div>
+</div>
+
+<!-- ============ 体检结果 ============ -->
+<div id="vs-modal" class="fixed inset-0 bg-black/70 z-50 hidden items-center justify-center p-4" onclick="if(event.target===this)this.classList.add('hidden'),this.classList.remove('flex')">
+    <div class="bg-slate-800 border border-slate-600 rounded-xl w-full max-w-4xl max-h-[85vh] flex flex-col">
+        <div class="flex items-center justify-between px-5 py-3 border-b border-slate-700">
+            <h3 class="text-lg font-bold text-white">🔬 批量体检结果</h3>
+            <button onclick="closeModal('vs-modal')" class="text-slate-400 hover:text-white text-xl px-2">✕</button>
+        </div>
+        <div id="vs-body" class="overflow-y-auto p-5 space-y-2 text-sm"></div>
+    </div>
+</div>
+
+<div id="toast" class="fixed bottom-6 right-6 z-[60] space-y-2"></div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+// =========================================================================
+// 状态
+// =========================================================================
+let ROWS = [];
+let SELECTED = new Set();
+const AUDIT = {};          // folder -> 最近一次体检结果（页面生命周期内有效）
+let ED = null;             // 编辑器状态 {folder, script, preset, library, page, dirty}
+let _filterTimer = null;
+
+const SRC_LABEL = {main: 'ai_scripts', hot: 'ai_scripts_hot'};
+
+function esc(s) {
+    if (s === null || s === undefined) return '';
+    const d = document.createElement('div');
+    d.textContent = String(s);
+    return d.innerHTML;
+}
+
+function fmtDate(ts) {
+    if (!ts) return '';
+    const diff = (Date.now() - ts * 1000) / 1000;
+    if (diff < 3600) return Math.max(1, Math.floor(diff / 60)) + '分钟前';
+    if (diff < 86400) return Math.floor(diff / 3600) + '小时前';
+    if (diff < 604800) return Math.floor(diff / 86400) + '天前';
+    const d = new Date(ts * 1000);
+    return `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
+}
+
+function toast(msg, kind) {
+    const box = document.getElementById('toast');
+    const el = document.createElement('div');
+    el.className = 'px-4 py-2.5 rounded-lg text-sm shadow-lg border ' +
+        (kind === 'err' ? 'bg-rose-900/90 border-rose-700 text-rose-100'
+                        : 'bg-slate-700 border-slate-600 text-white');
+    el.textContent = msg;
+    box.appendChild(el);
+    setTimeout(() => el.remove(), kind === 'err' ? 6000 : 3200);
+}
+
+function openModal(id) {
+    const m = document.getElementById(id);
+    m.classList.remove('hidden');
+    m.classList.add('flex');
+}
+
+function closeModal(id) { document.getElementById(id).classList.add('hidden'); }
+
+async function postJSON(url, body) {
+    const r = await fetch(url, {method: 'POST',
+        headers: {'Content-Type': 'application/json'}, body: JSON.stringify(body || {})});
+    let data = {};
+    try { data = await r.json(); } catch (e) { /* 非 JSON 响应（下载失败等） */ }
+    if (!r.ok || data.ok === false) throw new Error(data.error || data.detail || `HTTP ${r.status}`);
+    return data;
+}
+
+// =========================================================================
+// 列表
+// =========================================================================
+function debounceFilter() {
+    clearTimeout(_filterTimer);
+    _filterTimer = setTimeout(loadList, 300);
+}
+
+async function loadList(sync) {
+    const loading = document.getElementById('list-loading');
+    loading.textContent = '加载中…';
+    const p = new URLSearchParams({
+        source: document.getElementById('f-source').value,
+        category: document.getElementById('f-category').value,
+        status: document.getElementById('f-status').value,
+        sort: document.getElementById('f-sort').value,
+        q: document.getElementById('f-q').value,
+        sync: (sync === undefined ? document.getElementById('f-sync').checked : sync) ? '1' : '0',
+    });
+    try {
+        const data = await (await fetch('/api/ai_presets?' + p)).json();
+        ROWS = data.presets || [];
+        fillCategories(data.categories || []);
+        renderStats(data.counts, data.counts_all);
+        renderList();
+        loading.textContent = data.sync && (data.sync.imported || data.sync.refreshed)
+            ? `已自动入库：新增 ${data.sync.imported} · 刷新 ${data.sync.refreshed}` : '';
+    } catch (e) {
+        loading.textContent = '';
+        toast('列表加载失败：' + e.message, 'err');
+    }
+}
+
+function fillCategories(list) {
+    const sel = document.getElementById('f-category');
+    const cur = sel.value;
+    sel.innerHTML = '<option value="">全部分类</option>' +
+        list.map(c => `<option value="${esc(c)}">${esc(c)}</option>`).join('');
+    sel.value = cur && list.includes(cur) ? cur : '';
+    document.getElementById('category-list').innerHTML = list.map(c => `<option value="${esc(c)}">`).join('');
+}
+
+function renderStats(c, all) {
+    const bar = document.getElementById('stats-bar');
+    const chips = [
+        [`共 ${all.total} 条`, 'bg-slate-700 text-slate-200'],
+        [`已入库 ${all.in_library}`, 'bg-indigo-800 text-indigo-100'],
+        [`已产出视频 ${all.used}`, 'bg-emerald-800 text-emerald-100'],
+        [`未产出 ${all.unused}`, 'bg-slate-700 text-slate-300'],
+        [`对话行数合计 ${all.lines}`, 'bg-slate-700 text-slate-300'],
+    ];
+    if (c.total !== all.total) chips.unshift([`筛选后 ${c.total}`, 'bg-amber-800 text-amber-100']);
+    bar.innerHTML = chips.map(([t, cls]) => `<span class="px-2.5 py-1 rounded-full ${cls}">${esc(t)}</span>`).join('');
+}
+
+function auditBadge(folder) {
+    const a = AUDIT[folder];
+    if (!a) return '';
+    return a.ok
+        ? '<span class="px-1.5 py-0.5 rounded bg-emerald-900/70 text-emerald-200 text-[10px]">体检通过</span>'
+        : `<span class="px-1.5 py-0.5 rounded bg-rose-900/70 text-rose-200 text-[10px]" title="${esc((a.errors || []).join('\n'))}">缺陷 ${a.errors.length}</span>`;
+}
+
+function renderList() {
+    const tbody = document.getElementById('preset-rows');
+    tbody.innerHTML = ROWS.map(p => {
+        const checked = SELECTED.has(p.folder) ? 'checked' : '';
+        return `<tr class="border-t border-slate-700 hover:bg-slate-700/30 ${SELECTED.has(p.folder) ? 'bg-indigo-900/20' : ''}">
+            <td class="px-3 py-2"><input type="checkbox" ${checked} data-folder="${esc(p.folder)}" onchange="toggleOne('${esc(p.folder)}', this.checked)" class="accent-indigo-500"></td>
+            <td class="px-2 py-2 text-slate-500 font-mono text-xs">${esc(String(p.index).padStart(3, '0'))}</td>
+            <td class="px-2 py-2">
+                <div class="text-white">${esc(p.en)}</div>
+                <div class="text-xs text-slate-400">${esc(p.zh)} · <span class="text-slate-600">${esc(p.folder)}</span>
+                    <span class="text-slate-600">· ${esc(SRC_LABEL[p.source] || p.source)}</span></div>
+            </td>
+            <td class="px-2 py-2 text-xs text-slate-400">${esc(p.category)}</td>
+            <td class="px-2 py-2 text-right ${p.lines === 400 ? 'text-slate-300' : 'text-amber-300'}">${p.lines}</td>
+            <td class="px-2 py-2 text-xs text-slate-500">${fmtDate(p.mtime)}</td>
+            <td class="px-2 py-2 space-x-1">
+                ${p.in_library ? '<span class="px-1.5 py-0.5 rounded bg-indigo-900/70 text-indigo-200 text-[10px]">已入库</span>'
+                               : '<span class="px-1.5 py-0.5 rounded bg-slate-700 text-slate-400 text-[10px]">未入库</span>'}
+                ${p.used ? '<span class="px-1.5 py-0.5 rounded bg-emerald-900/70 text-emerald-200 text-[10px]">已出片</span>' : ''}
+                ${auditBadge(p.folder)}
+            </td>
+            <td class="px-3 py-2 text-right whitespace-nowrap">
+                <button onclick="openEditor('${esc(p.folder)}')" class="text-xs text-indigo-300 hover:text-indigo-200 px-1.5">编辑</button>
+                <button onclick="runAuditFor('${esc(p.folder)}')" class="text-xs text-slate-400 hover:text-white px-1.5" title="机器体检：字段/行数/speaker/音标/繁简/重复句">体检</button>
+                <button onclick="importFolders(['${esc(p.folder)}'])" class="text-xs text-slate-400 hover:text-white px-1.5" title="导入脚本库，供脚本库/批量队列使用">入库</button>
+                <a href="/api/ai_presets/download?folder=${encodeURIComponent(p.folder)}" class="text-xs text-slate-400 hover:text-white px-1.5" title="下载 script.json">下载</a>
+                <button onclick="duplicateFolder('${esc(p.folder)}')" class="text-xs text-slate-400 hover:text-white px-1.5" title="改名另存一份副本">复制</button>
+                <button onclick="askDelete('${esc(p.folder)}')" class="text-xs text-rose-400 hover:text-rose-300 px-1.5">删除</button>
+            </td>
+        </tr>`;
+    }).join('');
+    document.getElementById('empty-hint').classList.toggle('hidden', ROWS.length > 0);
+    document.getElementById('chk-all').checked = ROWS.length > 0 && ROWS.every(p => SELECTED.has(p.folder));
+    renderBatchBar();
+}
+
+function renderBatchBar() {
+    document.getElementById('batch-count').textContent = SELECTED.size;
+    document.getElementById('batch-bar').classList.toggle('hidden', SELECTED.size === 0);
+    document.getElementById('batch-bar').classList.toggle('flex', SELECTED.size > 0);
+}
+
+function toggleOne(folder, on) {
+    on ? SELECTED.add(folder) : SELECTED.delete(folder);
+    renderList();
+}
+
+function toggleAll(on) {
+    ROWS.forEach(p => on ? SELECTED.add(p.folder) : SELECTED.delete(p.folder));
+    renderList();
+}
+
+function clearSelection() { SELECTED.clear(); renderList(); }
+function selectedFolders() { return [...SELECTED]; }
+
+// =========================================================================
+// 批量动作
+// =========================================================================
+async function importFolders(folders) {
+    try {
+        const r = await postJSON('/api/ai_presets/import', {folders});
+        toast(`入库完成：新增 ${r.imported} · 刷新 ${r.refreshed} · 认领 ${r.skipped}` +
+              (r.used_marked ? ` · 补已用 ${r.used_marked}` : '') +
+              (r.errors && r.errors.length ? ` · ${r.errors.length} 个错误` : ''));
+        loadList(false);
+    } catch (e) { toast('入库失败：' + e.message, 'err'); }
+}
+
+function batchImport() { importFolders(selectedFolders()); }
+
+async function batchValidate() { await validateFolders(selectedFolders(), true); }
+
+async function validateFolders(folders, showResult) {
+    toast(`体检 ${folders.length} 条中…`);
+    try {
+        const r = await postJSON('/api/ai_presets/validate', {folders, cross: true});
+        (r.results || []).forEach(x => { AUDIT[x.folder] = x; });
+        renderList();
+        if (showResult) showValidateResult(r);
+        else if (folders.length === 1) {
+            const x = r.results[0];
+            toast(x.ok ? `${x.folder}：体检通过（${x.warnings.length} 条提示）`
+                       : `${x.folder}：${x.errors.length} 个缺陷`, x.ok ? '' : 'err');
+        }
+    } catch (e) { toast('体检失败：' + e.message, 'err'); }
+}
+
+function runAuditFor(folder) { validateFolders([folder], false); }
+
+function showValidateResult(r) {
+    const rows = (r.results || []).map(x => {
+        const badge = x.ok
+            ? '<span class="text-emerald-300">✓</span>'
+            : `<span class="text-rose-300">✗ ${x.errors.length}</span>`;
+        const li = arr => (arr || []).slice(0, 6).map(t => `<li class="text-xs text-slate-400">${esc(t)}</li>`).join('');
+        return `<details class="border border-slate-700 rounded-lg px-3 py-2">
+            <summary class="cursor-pointer text-sm">${badge} <b class="text-white">${esc(x.folder)}</b>
+                <span class="text-xs text-slate-500">${x.stats.lines || 0} 行 · 提示 ${(x.warnings || []).length}</span></summary>
+            <ul class="mt-2 space-y-0.5">${li(x.errors)}${li(x.warnings)}</ul>
+        </details>`;
+    }).join('');
+    document.getElementById('vs-body').innerHTML =
+        `<div class="text-sm text-slate-300 mb-2">共 ${r.total} 条，其中 <b class="${r.bad.length ? 'text-rose-300' : 'text-emerald-300'}">${r.bad.length}</b> 条有硬缺陷` +
+        (r.bad.length ? `：<span class="text-xs text-slate-400">${esc(r.bad.join('、'))}</span>` : '') + '</div>' + rows;
+    openModal('vs-modal');
+}
+
+async function batchExport() {
+    try {
+        const r = await fetch('/api/ai_presets/export', {method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({folders: selectedFolders()})});
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        saveBlob(await r.blob(), (r.headers.get('Content-Disposition') || '')
+            .replace(/^.*filename="?/, '').replace(/"?;?.*$/, '') || 'ai_scripts_export.zip');
+        toast('已开始下载 zip');
+    } catch (e) { toast('导出失败：' + e.message, 'err'); }
+}
+
+function saveBlob(blob, name) {
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = name;
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+}
+
+function askDelete(folder) {
+    SELECTED.clear(); SELECTED.add(folder); renderList();
+    batchDelete();
+}
+
+async function batchDelete() {
+  await (async () => {
+    const folders = selectedFolders();
+    const dropLib = document.getElementById('b-drop-lib').checked;
+    const msg = `确认删除 ${folders.length} 条预生成脚本？\n会移入 _recycle_bin（回收站可恢复）` +
+        (dropLib ? '\n同时删除脚本库里对应文档（不可恢复）' : '');
+    if (!confirm(msg)) return;
+    try {
+        const r = await postJSON('/api/ai_presets/delete', {folders, drop_library: dropLib});
+        toast(`已删除 ${r.deleted} 条（回收站可恢复）`);
+        SELECTED.clear();
+        loadList(false);
+    } catch (e) { toast('删除失败：' + e.message, 'err'); }
+  })();
+}
+
+async function rebuildManifest() {
+    const source = document.getElementById('f-source').value === 'all' ? 'main'
+        : document.getElementById('f-source').value;
+    if (!confirm(`扫描 ai_scripts${source === 'hot' ? '_hot' : ''}/ 磁盘目录并重建 manifest.json？`)) return;
+    try {
+        const r = await postJSON('/api/ai_presets/manifest/rebuild', {source});
+        toast(`manifest 重建完成：${r.count} 条` + (r.failed.length ? `，${r.failed.length} 个读取失败` : ''));
+        loadList(false);
+    } catch (e) { toast('重建失败：' + e.message, 'err'); }
+}
+
+async function duplicateFolder(folder) {
+    const row = ROWS.find(p => p.folder === folder) || {};
+    const topic = prompt('新副本的主题名（英文）：', (row.en || folder) + ' Copy');
+    if (!topic) return;
+    try {
+        const r = await postJSON('/api/ai_presets/duplicate', {folder, topic});
+        toast(`已复制为 ${r.folder}（${r.lines} 行）`);
+        loadList(false);
+    } catch (e) { toast('复制失败：' + e.message, 'err'); }
+}
+
+// =========================================================================
+// 新增 / 从脚本库另存
+// =========================================================================
+function openCreate() {
+    document.getElementById('cr-error').classList.add('hidden');
+    openModal('cr-modal');
+    document.getElementById('cr-topic').focus();
+}
+
+async function submitCreate() {
+    const body = {
+        topic: document.getElementById('cr-topic').value.trim(),
+        zh: document.getElementById('cr-zh').value.trim(),
+        category: document.getElementById('cr-category').value.trim(),
+        cefr: document.getElementById('cr-cefr').value,
+        source: document.getElementById('cr-source').value,
+        index: document.getElementById('cr-index').value,
+        pairs_text: document.getElementById('cr-pairs').value,
+        json_text: document.getElementById('cr-json').value.trim(),
+    };
+    const errBox = document.getElementById('cr-error');
+    errBox.classList.add('hidden');
+    try {
+        const r = await postJSON('/api/ai_presets/create', body);
+        closeModal('cr-modal');
+        toast(`已创建 ${r.folder}（${r.lines} 行）`);
+        loadList(false);
+    } catch (e) {
+        errBox.textContent = e.message;
+        errBox.classList.remove('hidden');
+    }
+}
+
+async function openFromLibrary() {
+    try {
+        const d = await (await fetch('/api/ai_presets/library')).json();
+        const list = d.scripts || [];
+        if (!list.length) return toast('脚本库里还没有 sleep 脚本', 'err');
+        document.getElementById('lb-sid').innerHTML = list.map(s =>
+            `<option value="${esc(s.id)}">${esc(s.topic)} · ${s.lines} 行 · ${esc(s.status)}</option>`).join('');
+        document.getElementById('lb-error').classList.add('hidden');
+        openModal('lb-modal');
+    } catch (e) { toast('读取脚本库失败：' + e.message, 'err'); }
+}
+
+async function submitFromLibrary() {
+    const body = {sid: document.getElementById('lb-sid').value,
+                  source: document.getElementById('lb-source').value};
+    try {
+        const r = await postJSON('/api/ai_presets/from_library', body);
+        closeModal('lb-modal');
+        toast(`已另存为 ${r.folder}（${r.lines} 行）`);
+        loadList(false);
+    } catch (e) {
+        const box = document.getElementById('lb-error');
+        box.textContent = e.message;
+        box.classList.remove('hidden');
+    }
+}
+
+// =========================================================================
+// 详情 / 编辑
+// =========================================================================
+const META_GROUPS = [
+    [['topic', '主题（英文）— 与脚本库/已用主题对应的键'],
+     ['title_zh', '主题（中文）']],
+    [['category', '分类'], ['cefr', 'CEFR']],
+    [['title', 'title'], ['scene', 'scene'], ['scene_zh', 'scene_zh'],
+     ['title_quote', 'title_quote（首句引语）']],
+    [['thumb_badge', '缩略角标'], ['thumb_main', '缩略主标'], ['thumb_hook', '缩略副标'],
+     ['thumbnail_subtitle', 'thumbnail_subtitle']],
+    [['char_a_gender', 'A 声线性别'], ['char_b_gender', 'B 声线性别'],
+     ['lesson_type', 'lesson_type'], ['structure', 'structure（固定 sleep）']],
+];
+const META_TEXTARES = [
+    ['youtube_title', 'youtube_title（中文标题）'],
+    ['youtube_title_en', 'youtube_title_en'],
+    ['youtube_description', 'youtube_description（中文简介）'],
+    ['youtube_description_en', 'youtube_description_en'],
+];
+
+async function openEditor(folder) {
+    let d;
+    try {
+        d = await (await fetch('/api/ai_presets/detail?folder=' + encodeURIComponent(folder))).json();
+        if (d.error) throw new Error(d.error);
+    } catch (e) { return toast('读取失败：' + e.message, 'err'); }
+    ED = {folder: d.folder, script: d.script, preset: d.preset || {}, library: d.library || {},
+          path: d.path, page: 1, dirty: false, audit: d.issues};
+    AUDIT[d.folder] = d.issues;
+    document.getElementById('ed-title').textContent = d.script.topic || d.folder;
+    document.getElementById('ed-sub').textContent = d.folder + '　·　' + d.path;
+    document.getElementById('ed-dirty').classList.add('hidden');
+    renderMeta();
+    renderDialogue();
+    renderAudit();
+    renderFiles();
+    switchTab('meta');
+    openModal('ed-modal');
+}
+
+function markDirty() {
+    if (ED && !ED.dirty) {
+        ED.dirty = true;
+        document.getElementById('ed-dirty').classList.remove('hidden');
+    }
+}
+
+// 编辑弹窗四个 tab：面板 id 恒为 ed-<tab名>，靠 hidden 类互斥显隐
+const TAB_ON = ['bg-slate-700', 'text-white'];
+const TAB_OFF = ['text-slate-400'];
+
+function switchTab(name) {
+    document.querySelectorAll('.ed-tab').forEach(b => {
+        const on = b.dataset.tab === name;
+        TAB_ON.concat(TAB_OFF).forEach(c => b.classList.remove(c));
+        (on ? TAB_ON : TAB_OFF).forEach(c => b.classList.add(c));
+    });
+    ['meta', 'dialogue', 'audit', 'files'].forEach(t =>
+        document.getElementById('ed-' + t).classList.toggle('hidden', t !== name));
+}
+
+function renderMeta() {
+    const s = ED.script;
+    const html = META_GROUPS.map(row => `<div class="grid grid-cols-2 gap-3">` + row.map(([k, label]) => {
+        if (k === 'cefr' || k.endsWith('_gender') || k === 'lesson_type') {
+            const opts = k === 'cefr' ? ['A1', 'A2', 'B1', 'B2']
+                : k.endsWith('_gender') ? ['male', 'female'] : ['listening'];
+            return `<div><label class="block text-xs text-slate-400 mb-1">${esc(label)}</label>
+                <select data-meta="${k}" class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white" onchange="metaChanged(this)">
+                    ${opts.map(o => `<option${s[k] === o ? ' selected' : ''}>${o}</option>`).join('')}
+                </select></div>`;
+        }
+        const ro = k === 'structure' ? ' readonly' : '';
+        return `<div><label class="block text-xs text-slate-400 mb-1">${esc(label)}</label>
+            <input data-meta="${k}" value="${esc(s[k] === undefined ? '' : s[k])}"${ro}
+                class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-sm text-white${ro ? ' text-slate-500' : ''}" oninput="markDirty()"></div>`;
+    }).join('') + '</div>').join('');
+    const areas = META_TEXTARES.map(([k, label]) =>
+        `<div><label class="block text-xs text-slate-400 mb-1">${esc(label)}</label>
+            <textarea data-meta="${k}" rows="2" class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-xs text-white" oninput="markDirty()">${esc(s[k] || '')}</textarea></div>`).join('');
+    const tags = `<div><label class="block text-xs text-slate-400 mb-1">youtube_tags（逗号分隔，现 ${(s.youtube_tags || []).length} 个）</label>
+        <textarea data-meta="youtube_tags" rows="2" class="w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-xs text-white" oninput="markDirty()">${esc((s.youtube_tags || []).join(', '))}</textarea></div>`;
+    document.getElementById('ed-meta').innerHTML = html +
+        `<div class="text-[11px] text-slate-500 pt-1">改主题名会把脚本库里那份草稿文档一起改名；已产出视频的（${esc(s.topic)}）保持原名以免与运行记录错位。</div>` +
+        areas + tags +
+        `<div class="text-[11px] text-slate-500">其余字段（welcome/outro/story_hook 等 sleep 不用的空字段）保存时原样保留。</div>`;
+}
+
+function metaChanged(sel) { markDirty(); }
+
+function collectMeta() {
+    document.querySelectorAll('[data-meta]').forEach(el => {
+        const k = el.getAttribute('data-meta');
+        if (k === 'structure') return;
+        if (k === 'youtube_tags') {
+            ED.script[k] = String(el.value).split(',').map(t => t.trim()).filter(Boolean);
+        } else ED.script[k] = el.value;
+    });
+}
+
+function _pageMax() {
+    return Math.max(1, Math.ceil((ED.script.dialogue || []).length / 2 / pageSize()));
+}
+
+function pageSize() { return parseInt(document.getElementById('ed-page-size').value || '20', 10); }
+
+function gotoPage(n) {
+    ED.page = Math.min(Math.max(1, n), _pageMax());
+    renderDialogue();
+}
+
+function renderDialogue() {
+    const dlg = ED.script.dialogue || [];
+    const size = pageSize() * 2;
+    const start = (ED.page - 1) * size;
+    const tbody = document.getElementById('ed-dlg-rows');
+    tbody.innerHTML = '';
+    for (let i = start; i < Math.min(start + size, dlg.length); i++) {
+        tbody.appendChild(dlgRow(dlg, i));
+    }
+    document.getElementById('ed-dlg-count').textContent =
+        `共 ${dlg.length} 行（${dlg.length / 2} 对）· 标准 ${400} 行`;
+    document.getElementById('ed-page-no').textContent = ED.page;
+    document.getElementById('ed-page-max').textContent = _pageMax();
+}
+
+function dlgRow(dlg, i) {
+    const tr = document.createElement('tr');
+    tr.className = 'border-t border-slate-700/60 align-top';
+    const line = dlg[i];
+    // speaker 由位置唯一决定（与后端 _normalize_dialogue 同一条规则）：渲染即对齐，
+    // 删行/粘贴之后标签不会和真正落盘的内容说两套话
+    line.speaker = i % 2 ? 'char_b' : 'char_a';
+    const isB = i % 2 === 1;
+    const num = document.createElement('td');
+    num.className = 'px-2 py-1.5 text-slate-600 text-[11px] w-12';
+    num.textContent = i + 1;
+    tr.appendChild(num);
+    const who = document.createElement('td');
+    const g = isB ? ED.script.char_b_gender : ED.script.char_a_gender;
+    who.className = 'px-2 py-1.5 text-[11px] w-16 ' +
+        (isB ? 'text-fuchsia-300' : 'text-sky-300');
+    who.textContent = (isB ? 'B ' : 'A ') +
+        (g === 'female' ? '女声' : g === 'male' ? '男声' : '人声');
+    tr.appendChild(who);
+    [['text', 'w-[34%]'], ['phonetic', 'w-[28%]'], ['zh', 'w-[24%]']].forEach(([k, w]) => {
+        const td = document.createElement('td');
+        td.className = 'px-1 py-1 ' + w;
+        const inp = document.createElement('input');
+        inp.className = 'w-full bg-slate-900/60 border border-slate-700 rounded px-2 py-1 text-white focus:border-indigo-500' +
+            (k === 'phonetic' ? ' font-mono text-[11px]' : '');
+        inp.value = line[k] == null ? '' : String(line[k]);
+        inp.oninput = () => { line[k] = inp.value; markDirty(); };
+        td.appendChild(inp);
+        tr.appendChild(td);
+    });
+    const op = document.createElement('td');
+    op.className = 'px-2 py-1 text-right';
+    const del = document.createElement('button');
+    del.textContent = '✕';
+    del.title = '删除这一行（speaker 由后端按 a/b 重排）';
+    del.className = 'text-xs text-rose-400 hover:text-rose-300';
+    del.onclick = () => { dlg.splice(i, 1); markDirty(); ED.page = Math.min(ED.page, _pageMax()); renderDialogue(); };
+    op.appendChild(del);
+    tr.appendChild(op);
+    return tr;
+}
+
+function addPair() {
+    const dlg = ED.script.dialogue = ED.script.dialogue || [];
+    // speaker 交给 renderDialogue/dlgRow 按位置定，这里只加空槽
+    dlg.push({speaker: '', text: '', phonetic: '', zh: ''});
+    dlg.push({speaker: '', text: '', phonetic: '', zh: ''});
+    markDirty();
+    ED.page = _pageMax();
+    renderDialogue();
+}
+
+function togglePaste() {
+    document.getElementById('ed-paste').classList.toggle('hidden');
+}
+
+async function parsePasted() {
+    const text = document.getElementById('ed-paste-text').value;
+    if (!text.trim()) throw new Error('粘贴框是空的');
+    const d = await postJSON('/api/ai_presets/parse_pairs', {text});
+    if (!(d.rows || []).length) throw new Error('没解析出任何一行（每行至少要有英文句）');
+    return d.rows;
+}
+
+async function pasteAppend() {
+    try {
+        const rows = await parsePasted();
+        ED.script.dialogue = (ED.script.dialogue || []).concat(rows);
+        document.getElementById('ed-paste-text').value = '';
+        markDirty();
+        ED.page = _pageMax();
+        renderDialogue();
+        toast(`已追加 ${rows.length} 行（空 text 的行保存时会被丢弃）`);
+    } catch (e) { toast(e.message, 'err'); }
+}
+
+async function pasteReplace() {
+    try {
+        const rows = await parsePasted();
+        if (!confirm(`用粘贴的 ${rows.length} 行替换全部 ${ED.script.dialogue.length} 行对话？`)) return;
+        ED.script.dialogue = rows;
+        markDirty();
+        ED.page = 1;
+        renderDialogue();
+    } catch (e) { toast(e.message, 'err'); }
+}
+
+async function saveEditor() {
+    collectMeta();
+    const btn = document.getElementById('ed-save');
+    btn.disabled = true;
+    try {
+        const r = await postJSON('/api/ai_presets/save',
+                                 {folder: ED.folder, script: ED.script});
+        ED.dirty = false;
+        document.getElementById('ed-dirty').classList.add('hidden');
+        document.getElementById('ed-title').textContent = ED.script.topic || r.folder;
+        if (r.lines !== (ED.script.dialogue || []).length) {
+            // 后端会丢掉空句并按位置重排 speaker：行数对不上就按磁盘内容重载，表格里看到的就是落盘的
+            toast(`已保存 ${r.folder}（${r.lines} 行）· 有空句被丢弃，已重新载入磁盘版本`);
+            await openEditor(ED.folder);
+            switchTab('dialogue');
+        } else {
+            toast(`已保存 ${r.folder}（${r.lines} 行）· ${r.notice}`);
+        }
+        loadList(false);
+    } catch (e) {
+        toast('保存失败：' + e.message, 'err');
+    } finally {
+        btn.disabled = false;
+    }
+}
+
+function closeEditor(event) {
+    if (event && event.target !== event.currentTarget) return;
+    if (ED && ED.dirty && !confirm('有未保存的修改，确定关闭？')) return;
+    closeModal('ed-modal');
+    ED = null;
+}
+
+// --- 体检 tab ---
+function renderAudit() {
+    const box = document.getElementById('ed-audit-body');
+    const a = ED.audit;
+    if (!a) { box.innerHTML = '<div class="text-xs text-slate-500">还没有体检结果。</div>'; return; }
+    const li = (arr, cls) => (arr || []).map(t => `<li class="${cls}">${esc(t)}</li>`).join('');
+    box.innerHTML =
+        `<div class="${a.ok ? 'text-emerald-300' : 'text-rose-300'}">${a.ok ? '✓ 无硬缺陷' : `✗ ${a.errors.length} 个硬缺陷（必须修）`}</div>` +
+        `<div class="text-xs text-slate-400">行数 ${a.stats.lines} · 对数 ${a.stats.pairs} · 缺音标 ${a.stats.no_phonetic} · 缺译文 ${a.stats.no_zh} · 词数越界 ${a.stats.short_words}</div>` +
+        (a.errors.length ? `<ul class="space-y-0.5 text-xs text-rose-200">${li(a.errors)}</ul>` : '') +
+        (a.warnings.length ? `<div class="text-xs text-slate-400 pt-1">提示 ${a.warnings.length} 条：</div><ul class="space-y-0.5 text-xs text-amber-200/80">${li(a.warnings)}</ul>` : '');
+}
+
+async function runAudit() {
+    const cross = document.getElementById('ed-audit-cross').checked;
+    try {
+        const r = await postJSON('/api/ai_presets/validate', {folders: [ED.folder], cross});
+        ED.audit = r.results[0];
+        AUDIT[ED.folder] = ED.audit;
+        renderAudit();
+        renderList();
+    } catch (e) { toast('体检失败：' + e.message, 'err'); }
+}
+
+// --- 文件与脚本库 tab ---
+function renderFiles() {
+    const p = ED.preset, lib = ED.library, s = ED.script;
+    const row = (k, v) => `<div class="flex gap-2"><span class="w-32 text-slate-500 shrink-0">${esc(k)}</span><span class="text-slate-200 break-all">${esc(v || '—')}</span></div>`;
+    const badge = lib.status ? `<span class="px-1.5 py-0.5 rounded text-[10px] ${lib.status === 'used' ? 'bg-emerald-900/70 text-emerald-200' : 'bg-slate-700 text-slate-300'}">${esc(lib.status)}</span>` : '';
+    document.getElementById('ed-files').innerHTML = `
+        <div class="space-y-1">
+            ${row('磁盘路径', ED.path)}
+            ${row('来源目录', SRC_LABEL[p.source] || p.folder)}
+            ${row('编号 / 行数', `${p.index} · ${s.dialogue.length} 行`)}
+            ${row('最后更新', fmtDate(p.mtime))}
+        </div>
+        <div class="border-t border-slate-700 pt-3 space-y-1">
+            ${row('脚本库文档', p.sid || '未入库（点「导入脚本库」建档后可被批量队列使用）')}
+            ${lib.id ? row('库状态', '') + `<div class="pl-32 -mt-6">${badge} <span class="text-xs text-slate-400">${lib.used_by ? esc(lib.used_by) : ''}</span></div>` : ''}
+            ${lib.id ? row('库内主题名', lib.topic) : ''}
+            ${lib.id ? row('AI 审查', lib.score == null ? '未审查' : `${lib.score} 分 ${lib.verdict || ''}`) : ''}
+        </div>
+        <div class="border-t border-slate-700 pt-3 flex flex-wrap gap-2">
+            <button onclick="importFolders(['${esc(ED.folder)}'])" class="px-3 py-2 bg-emerald-700 hover:bg-emerald-600 rounded-lg text-xs text-white">📥 导入/刷新脚本库</button>
+            <a href="/?ai_script=${encodeURIComponent(ED.folder)}" class="px-3 py-2 bg-indigo-700 hover:bg-indigo-600 rounded-lg text-xs text-white" target="_blank">🎬 去控制台直接跑</a>
+            <a href="/api/ai_presets/download?folder=${encodeURIComponent(ED.folder)}" class="px-3 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg text-xs text-white">⬇ 下载 script.json</a>
+            <button onclick="duplicateFolder('${esc(ED.folder)}')" class="px-3 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg text-xs text-white">⧉ 复制副本</button>
+            <button onclick="askDelete('${esc(ED.folder)}')" class="px-3 py-2 bg-rose-800 hover:bg-rose-700 rounded-lg text-xs text-white">🗑 删除进回收站</button>
+        </div>
+        <div class="text-[11px] text-slate-500">「去控制台直接跑」= 用这份预生成脚本跳过 Step 0 LLM 生成，不需要先入库。</div>`;
+}
+
+// =========================================================================
+// 回收站
+// =========================================================================
+async function openRecycle() {
+    openModal('tr-modal');
+    await loadRecycle();
+}
+
+async function loadRecycle() {
+    const box = document.getElementById('tr-body');
+    try {
+        const d = await (await fetch('/api/ai_presets/recycle')).json();
+        const items = d.items || [];
+        if (!items.length) { box.innerHTML = '<div class="text-slate-500 text-sm">回收站是空的。</div>'; return; }
+        box.innerHTML = items.map(x => `<div class="flex items-center gap-3 border border-slate-700 rounded-lg px-3 py-2">
+            <div class="flex-1">
+                <div class="text-white">${esc(x.folder)}</div>
+                <div class="text-[11px] text-slate-500">${esc(SRC_LABEL[x.source])} · ${x.lines} 行 · 删除于 ${fmtDate(Math.floor(x.deleted_at))}</div>
+            </div>
+            <button onclick="restoreRecycle('${esc(x.key)}')" class="px-3 py-1.5 bg-slate-700 hover:bg-slate-600 rounded text-xs text-white">↩ 恢复</button>
+            <button onclick="purgeRecycle('${esc(x.key)}')" class="px-3 py-1.5 bg-rose-800 hover:bg-rose-700 rounded text-xs text-white">彻底删除</button>
+        </div>`).join('');
+    } catch (e) { box.innerHTML = `<div class="text-rose-300 text-sm">${esc(e.message)}</div>`; }
+}
+
+async function restoreRecycle(key) {
+    try {
+        const r = await postJSON('/api/ai_presets/recycle/restore', {key});
+        toast(`已恢复 ${r.folder}`);
+        loadRecycle();
+        loadList(false);
+    } catch (e) { toast('恢复失败：' + e.message, 'err'); }
+}
+
+async function purgeRecycle(key, all) {
+    if (!confirm(all ? '清空回收站？这些脚本将彻底从磁盘删除，无法恢复。'
+                     : '彻底删除这一条？无法恢复。')) return;
+    try {
+        const r = await postJSON('/api/ai_presets/recycle/purge', all ? {all: true} : {key});
+        toast(`已彻底删除 ${r.removed} 条`);
+        loadRecycle();
+    } catch (e) { toast('删除失败：' + e.message, 'err'); }
+}
+
+loadList();
+</script>
+{% endblock %}

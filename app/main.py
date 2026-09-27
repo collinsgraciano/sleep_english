@@ -6,6 +6,7 @@ mcp_tokens / intro_videos / health / voices_qwen / voices_kokoro /
 voices_moss / ai_test）。
 """
 import logging
+import threading
 
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
@@ -16,6 +17,7 @@ logging.getLogger("asyncio").setLevel(logging.CRITICAL)
 from .config_manager import load_all_mode_configs
 from .paths import STATIC_DIR, WEB_ROOT
 from .routers import (
+    ai_presets as ai_presets_routes,
     ai_test as ai_test_routes,
     batch_queue as batch_queue_routes,
     channel_factory as channel_factory_routes,
@@ -40,6 +42,15 @@ from .routers.voices_qwen import auto_freeze_pending_designed_voices
 app = FastAPI(title="Sleep English Video Generator")
 
 
+def _warm_ai_scripts_sync() -> None:
+    """启动预热：把预生成脚本增量并入脚本库（首次全量约几秒，之后近零成本）。"""
+    try:
+        from . import ai_scripts
+        ai_scripts.sync_library("all")
+    except Exception as e:  # noqa: BLE001 — 入库失败不阻塞启动，页面加载会再试
+        print(f"[startup] 预生成脚本自动入库失败: {e}")
+
+
 class _NoCacheStaticFiles(StaticFiles):
     """静态文件禁用浏览器缓存（本地开发工具，CSS/JS 迭代频繁，防止改版后浏览器继续用旧缓存）。"""
 
@@ -58,6 +69,8 @@ app.include_router(run_routes.router)
 app.include_router(batch_queue_routes.router)
 app.include_router(topics_routes.router)
 app.include_router(scripts_routes.router)
+# 预生成脚本管理台（ai_scripts / ai_scripts_hot 的增删改查 + 校验 + 回收站）
+app.include_router(ai_presets_routes.router)
 app.include_router(runs_routes.router)
 app.include_router(mcp_tokens_routes.router)
 # 频道工坊（LLM 频道信息生成 + 收藏 + Logo/Banner 素材）
@@ -81,6 +94,8 @@ async def startup():
     (WEB_ROOT / "configs").mkdir(parents=True, exist_ok=True)
     # 首次运行：从 legacy default.json 迁移生成模式配置文件
     load_all_mode_configs()
+    # 预生成脚本自动入库：全量扫一遍放后台线程，别拖慢启动（页面加载时也会增量补一次）
+    threading.Thread(target=_warm_ai_scripts_sync, name="ai-scripts-sync", daemon=True).start()
     # 设计音色自动冻结：内置英文女声 + 残留未冻结的设计音色 → 后台转为克隆音色（一次性）
     try:
         auto_freeze_pending_designed_voices()

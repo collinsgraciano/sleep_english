@@ -507,6 +507,8 @@ async function importAiScripts() {
         const data = await resp.json();
         if (data.ok) {
             const parts = [`新增 ${data.imported} 个`];
+            if (data.refreshed) parts.push(`刷新变更 ${data.refreshed} 个`);
+            if (data.used_marked) parts.push(`补已用标记 ${data.used_marked} 个`);
             if (data.skipped) parts.push(`跳过已存在 ${data.skipped} 个`);
             if (data.errors && data.errors.length) parts.push(`失败 ${data.errors.length} 个`);
             alert('导入完成：' + parts.join('，'));

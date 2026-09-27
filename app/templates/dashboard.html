@@ -143,6 +143,7 @@
                 <button type="button" onclick="loadAiScripts()" title="刷新预生成脚本"
                     class="px-3 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg text-sm text-slate-300">🔄</button>
             </div>
+            <p id="ai-script-counts" class="text-xs text-slate-400 mt-1 hidden"></p>
             <p id="ai-script-info" class="text-xs text-emerald-300 mt-1 hidden"></p>
         </div>
 
@@ -161,6 +162,7 @@
                 <button type="button" onclick="loadAiScriptsHot()" title="刷新热门预生成脚本"
                     class="px-3 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg text-sm text-slate-300">🔄</button>
             </div>
+            <p id="ai-script-hot-counts" class="text-xs text-slate-400 mt-1 hidden"></p>
             <p id="ai-script-hot-info" class="text-xs text-emerald-300 mt-1 hidden"></p>
         </div>
 
@@ -749,8 +751,9 @@ function fillAiSelect(selId, list, selected) {
     list.forEach(p => {
         const opt = document.createElement('option');
         opt.value = p.folder;
+        // 列表顺序由后端决定＝script.json 修改时间倒序（新内容在前）
         opt.textContent = `${p.en}（${p.zh}）· ${p.lines}行 · ${p.category}` +
-            (p.in_library ? ' · 已入库' : '');
+            (p.used ? ' · 已用' : '');
         sel.appendChild(opt);
     });
     if (prev && list.some(p => p.folder === prev)) {
@@ -760,12 +763,22 @@ function fillAiSelect(selId, list, selected) {
     return null;
 }
 
+// 「未用 N · 已用 M」统计行（已用＝该主题已在 sleep 模式产出过视频）
+function renderAiCounts(elId, counts) {
+    const el = document.getElementById(elId);
+    if (!el || !counts || !counts.total) return;
+    el.textContent = `未用 ${counts.unused} · 已用 ${counts.used} · 共 ${counts.total}`
+        + '　·　按最后更新时间排序，新脚本已自动入库';
+    el.classList.remove('hidden');
+}
+
 function loadAiScripts() {
     return fetch('/api/scripts/ai_presets?source=main')
         .then(r => r.json())
         .then(data => {
             _aiScripts = data.presets || [];
             _selectedAiScript = fillAiSelect('ai-script-select', _aiScripts, _selectedAiScript);
+            renderAiCounts('ai-script-counts', data.counts);
             onAiScriptChange();
         });
 }
@@ -776,6 +789,7 @@ function loadAiScriptsHot() {
         .then(data => {
             _aiScriptsHot = data.presets || [];
             _selectedAiScriptHot = fillAiSelect('ai-script-hot-select', _aiScriptsHot, _selectedAiScriptHot);
+            renderAiCounts('ai-script-hot-counts', data.counts);
             onAiScriptHotChange();
         });
 }
@@ -792,7 +806,8 @@ function onAiScriptChange() {
         topicInput.value = _selectedAiScript.en;
         topicInput.readOnly = true;
         cefrSel.disabled = true;
-        info.textContent = `将使用预生成脚本「${_selectedAiScript.en}」· ${_selectedAiScript.lines} 行 · ${_selectedAiScript.category}`;
+        info.textContent = `将使用预生成脚本「${_selectedAiScript.en}」· ${_selectedAiScript.lines} 行 · ${_selectedAiScript.category}`
+            + ` · ${_selectedAiScript.used ? '已用（再跑会重复出片）' : '未用'}`;
         info.classList.remove('hidden');
     } else {
         topicInput.readOnly = false;
@@ -815,7 +830,8 @@ function onAiScriptHotChange() {
         topicInput.value = _selectedAiScriptHot.en;
         topicInput.readOnly = true;
         cefrSel.disabled = true;
-        info.textContent = `将使用热门预生成脚本「${_selectedAiScriptHot.en}」· ${_selectedAiScriptHot.lines} 行 · ${_selectedAiScriptHot.category}`;
+        info.textContent = `将使用热门预生成脚本「${_selectedAiScriptHot.en}」· ${_selectedAiScriptHot.lines} 行 · ${_selectedAiScriptHot.category}`
+            + ` · ${_selectedAiScriptHot.used ? '已用（再跑会重复出片）' : '未用'}`;
         info.classList.remove('hidden');
     } else {
         topicInput.readOnly = false;
@@ -831,11 +847,29 @@ window.addEventListener('load', function() {
     applyQuickFields();
     try { toggleQuickConfig(localStorage.getItem('quickConfigExpanded') === '1'); } catch (e) {}
     loadScriptLibrary();
-    loadAiScripts();
-    loadAiScriptsHot();
+    const aiListsLoaded = [loadAiScripts(), loadAiScriptsHot()];
     // 批量队列：立即拉取一次并常驻轮询（队列运行中自动接上日志流）
     bqFetchStatus();
     setInterval(bqFetchStatus, 2000);
+    // ?ai_script=<folder> 预选（预生成脚本管理页「去控制台直接跑」带入）：
+    // folder 落在哪个来源的清单里就选哪个下拉，命中即跳过 Step 0 LLM 生成
+    const prePreset = new URLSearchParams(location.search).get('ai_script');
+    if (prePreset) {
+        const cleanUrl = new URL(location.href);
+        cleanUrl.searchParams.delete('ai_script');
+        history.replaceState(null, '', cleanUrl.pathname + (cleanUrl.search ? cleanUrl.search : ''));
+        Promise.all(aiListsLoaded).then(() => {
+            const inHot = _aiScriptsHot.some(p => p.folder === prePreset);
+            const selId = inHot ? 'ai-script-hot-select' : 'ai-script-select';
+            const sel = document.getElementById(selId);
+            if (![...sel.options].some(o => o.value === prePreset)) {
+                alert(`未找到预生成脚本「${prePreset}」，可能已被删除`);
+                return;
+            }
+            sel.value = prePreset;
+            if (inHot) onAiScriptHotChange(); else onAiScriptChange();
+        });
+    }
     // ?script_id= 预选（脚本页「到控制台」带入）：自动切模式并选中该脚本
     const preselectId = new URLSearchParams(location.search).get('script_id');
     if (preselectId) {

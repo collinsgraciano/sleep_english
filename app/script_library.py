@@ -317,6 +317,11 @@ def used_topics_for_mode(mode: str) -> list[str]:
     return list(_load_used_by_mode().get(mode, {}).keys())
 
 
+def used_detail_for_mode(mode: str) -> dict[str, dict]:
+    """{topic: {script_id, run, used_at}} — 预生成脚本自动入库时补 used 标记用。"""
+    return dict(_load_used_by_mode().get(mode, {}))
+
+
 def used_by_mode_all() -> dict[str, list[str]]:
     return {m: list(v.keys()) for m, v in _load_used_by_mode().items()}
 
@@ -334,6 +339,27 @@ def library_topics_by_mode() -> dict[str, list[str]]:
         if mode and topic:
             out.setdefault(mode, set()).add(topic)
     return {m: sorted(v) for m, v in out.items()}
+
+
+def index_docs_by_topic(structure: str = "") -> dict[str, dict]:
+    """{topic: {sid, status}} — 自动入库时按主题认领已存在的库文档，避免重复建档。"""
+    out: dict[str, dict] = {}
+    for f in SCRIPTS_DIR.glob("script_*.json"):
+        try:
+            doc = json.loads(f.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            continue
+        topic = str(doc.get("topic", "")).strip()
+        if not topic or (structure and doc.get("structure", "") != structure):
+            continue
+        sid = str(doc.get("id") or f.stem)
+        prev = out.get(topic)
+        # 同主题多份时认较新的一份（先建档的 used 状态优先保留）
+        if prev and (prev.get("status") == "used" or doc.get("created", 0) <= prev.get("created", 0)):
+            continue
+        out[topic] = {"sid": sid, "status": doc.get("status", "draft"),
+                      "created": doc.get("created", 0)}
+    return out
 
 
 # ===========================================================================

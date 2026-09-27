@@ -290,15 +290,15 @@ async def gallery_page(request: Request, name: str, mode: str = ""):
     # Final videos are in work_dir root (not videos/ subdir which has intermediates)
     videos = []
     for v in sorted(run_dir.glob("*.mp4")):
-        # Skip intermediate files
-        if v.name.startswith("final_no_sub") or v.name.startswith("final_video_norm"):
+        # Skip intermediate files + intro/outro 素材副本
+        if v.name.startswith(("final_no_sub", "final_video_norm", "intro_video", "outro_video")):
             continue
         videos.append(v.name)
     # Also check videos/ dir for any extras
     videos_subdir = run_dir / "videos"
     if videos_subdir.exists():
         for v in sorted(videos_subdir.glob("*.mp4")):
-            if v.name not in videos and not v.name.startswith("final_no_sub") and not v.name.startswith("final_video_norm"):
+            if v.name not in videos and not v.name.startswith(("final_no_sub", "final_video_norm", "intro_video", "outro_video")):
                 videos.append(v.name)
 
     # 画廊页操作按钮所需状态：已上传标记 + 主缩略图绝对路径（无缩略图传空串）
@@ -358,10 +358,14 @@ async def runs_page(request: Request):
             "copy_4k_bgm": copy_paths["4k_bgm"],
             "structure": "",
         }
-        # Find video files — final videos are in work_dir root, not videos/
+        # Find video files — final videos are in work_dir root, not videos/；
+        # intro/outro_video.mp4 是片头/片尾素材副本，不是成片，排除
+        #（否则 NTFS 目录序下片头先创建，会被排在列表最前）
         video_files = []
-        for v in d.glob("*.mp4"):
+        for v in sorted(d.glob("*.mp4")):
             if v.name.startswith("final_no_sub") or v.name.startswith("final_video_norm"):
+                continue
+            if v.name.startswith("intro_video") or v.name.startswith("outro_video"):
                 continue
             video_files.append({
                 "name": v.name,
@@ -445,6 +449,16 @@ async def scripts_page(request: Request):
     return templates.TemplateResponse(request, "scripts.html", {
         "config": config,
         "active_page": "scripts",
+    })
+
+
+@router.get("/ai_presets", response_class=HTMLResponse)
+async def ai_presets_page(request: Request):
+    """预生成脚本管理台：ai_scripts / ai_scripts_hot 的浏览、编辑、校验、回收站。
+
+    预生成脚本是全局素材（不分频道），故无 ?channel= 上下文。"""
+    return templates.TemplateResponse(request, "ai_presets.html", {
+        "active_page": "ai_presets",
     })
 
 

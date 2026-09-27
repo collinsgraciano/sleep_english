@@ -90,17 +90,28 @@ async def api_scripts_batch_status():
 
 @router.get("/api/scripts/ai_presets")
 async def api_scripts_ai_presets(source: str = "all"):
-    """列出预生成目录里预生成好的脚本（主题/中文/分类/行数）。
+    """列出预生成脚本（按 script.json 修改时间倒序）并顺带自动入库。
 
     source: all（默认，全部目录）/ main（ai_scripts/）/ hot（ai_scripts_hot/）。
+    返回 presets（每条带 in_library/used）+ counts（total/used/unused）+ sync 摘要。
     """
     from .. import ai_scripts
-    presets = ai_scripts.list_ai_scripts(source if source in ("main", "hot") else "all")
-    # 已导入脚本库的主题（按主题名去重，供前端提示「已入库」）
-    lib_topics = set(script_library.library_topics_by_mode().get("sleep", []))
+    src = source if source in ("main", "hot") else "all"
+    # 磁盘扫描 + 建档/刷新是同步 IO，丢给线程池，别卡住事件循环
+    sync = await asyncio.to_thread(ai_scripts.sync_library, src)
+    presets = ai_scripts.list_ai_scripts(src)
+    status = ai_scripts.status_map()
+    used = 0
     for p in presets:
-        p["in_library"] = bool((p.get("en") or p.get("folder")) in lib_topics)
-    return {"presets": presets}
+        info = status.get(p["folder"]) or {}
+        p["in_library"] = bool(info.get("sid"))
+        p["used"] = bool(info.get("used"))
+        used += 1 if p["used"] else 0
+    return {
+        "presets": presets,
+        "counts": {"total": len(presets), "used": used, "unused": len(presets) - used},
+        "sync": sync,
+    }
 
 
 @router.post("/api/scripts/ai_presets/import")
