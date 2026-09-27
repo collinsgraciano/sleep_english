@@ -280,6 +280,16 @@ let _filterTimer = null;
 
 const SRC_LABEL = {main: 'ai_scripts', hot: 'ai_scripts_hot'};
 
+// 频道上下文＝本页 URL ?channel=（侧边栏/工作台带入）。base.html 只会改写渲染时
+// 已存在的 <a>，列表/编辑器里的链接是之后拼出来的，所以跳转 URL 自己带上 channel，
+// 免得跳控制台时回落成全局配置。
+const PAGE_CHANNEL = new URLSearchParams(location.search).get('channel') || '';
+
+function consoleUrl(folder) {
+    return '/?ai_script=' + encodeURIComponent(folder)
+        + (PAGE_CHANNEL ? '&channel=' + encodeURIComponent(PAGE_CHANNEL) : '');
+}
+
 function esc(s) {
     if (s === null || s === undefined) return '';
     const d = document.createElement('div');
@@ -413,7 +423,7 @@ function renderList() {
                 <button onclick="openEditor('${esc(p.folder)}')" class="text-xs text-indigo-300 hover:text-indigo-200 px-1.5">编辑</button>
                 <button onclick="runAuditFor('${esc(p.folder)}')" class="text-xs text-slate-400 hover:text-white px-1.5" title="机器体检：字段/行数/speaker/音标/繁简/重复句">体检</button>
                 <button onclick="importFolders(['${esc(p.folder)}'])" class="text-xs text-slate-400 hover:text-white px-1.5" title="导入脚本库，供脚本库/批量队列使用">入库</button>
-                <a href="/?ai_script=${encodeURIComponent(p.folder)}" target="_blank" class="text-xs text-emerald-300 hover:text-emerald-200 px-1.5" title="新标签页打开控制台并选中这份脚本，跳过 Step 0 LLM 生成直接跑">去跑</a>
+                <a href="${consoleUrl(p.folder)}" target="_blank" class="text-xs text-emerald-300 hover:text-emerald-200 px-1.5" title="新标签页打开控制台并选中这份脚本，跳过 Step 0 LLM 生成直接跑（沿用本页频道上下文）">去跑</a>
                 <a href="/api/ai_presets/download?folder=${encodeURIComponent(p.folder)}" class="text-xs text-slate-400 hover:text-white px-1.5" title="下载 script.json">下载</a>
                 <button onclick="duplicateFolder('${esc(p.folder)}')" class="text-xs text-slate-400 hover:text-white px-1.5" title="改名另存一份副本">复制</button>
                 <button onclick="askDelete('${esc(p.folder)}')" class="text-xs text-rose-400 hover:text-rose-300 px-1.5">删除</button>
@@ -910,7 +920,7 @@ function renderFiles() {
         </div>
         <div class="border-t border-slate-700 pt-3 flex flex-wrap gap-2">
             <button onclick="importFolders(['${esc(ED.folder)}'])" class="px-3 py-2 bg-emerald-700 hover:bg-emerald-600 rounded-lg text-xs text-white">📥 导入/刷新脚本库</button>
-            <a href="/?ai_script=${encodeURIComponent(ED.folder)}" class="px-3 py-2 bg-indigo-700 hover:bg-indigo-600 rounded-lg text-xs text-white" target="_blank">🎬 去控制台直接跑</a>
+            <a href="${consoleUrl(ED.folder)}" class="px-3 py-2 bg-indigo-700 hover:bg-indigo-600 rounded-lg text-xs text-white" target="_blank">🎬 去控制台直接跑</a>
             <a href="/api/ai_presets/download?folder=${encodeURIComponent(ED.folder)}" class="px-3 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg text-xs text-white">⬇ 下载 script.json</a>
             <button onclick="duplicateFolder('${esc(ED.folder)}')" class="px-3 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg text-xs text-white">⧉ 复制副本</button>
             <button onclick="askDelete('${esc(ED.folder)}')" class="px-3 py-2 bg-rose-800 hover:bg-rose-700 rounded-lg text-xs text-white">🗑 删除进回收站</button>
