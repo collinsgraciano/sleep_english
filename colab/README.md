@@ -6,19 +6,23 @@ notebook 只是薄引导层 —— 安装/配置/启动逻辑全在本目录的�
 
 ## 打开方式
 
-推到 GitHub 后，任选一种：
+本仓库是**私有**的，所以先在 Colab 里授权 GitHub（菜单 `File → Open notebook → GitHub` 标签页，
+首次会跳 GitHub 登录并请求授权；只授权给你自己的账号即可），然后任选一种：
 
-- 直接开：`https://colab.research.google.com/github/collinsgraciano/sleep_english/blob/master/colab/sleep_english_colab.ipynb`
-- 或 Colab 首页 → GitHub 标签页 → 粘贴仓库地址 → 选 `colab/sleep_english_colab.ipynb`
-- 或把本文件上传到 Colab（`File → Open notebook → Upload`）
+- Colab 首页 → GitHub 标签页 → 粘贴 `collinsgraciano/sleep_english` → 选 `colab/sleep_english_colab.ipynb`
+- 直接开：`https://colab.research.google.com/github/collinsgraciano/sleep_english/blob/master/colab/sleep_english_colab.ipynb`（未授权会 404）
+- 或本地把 `colab/sleep_english_colab.ipynb` 上传到 Colab（`File → Open notebook → Upload`）—— 不依赖 GitHub 授权，但 notebook 第 1 格仍要令牌才能 clone
 
 ## 准备工作
 
 1. `Runtime → Change runtime type` 选 **T4 GPU**（Kokoro TTS 快很多；CPU 也能跑）
-2. 左侧 🔑 **Secrets** 建一个键放 LLM 密钥，二选一：
+2. 左侧 🔑 **Secrets** 建键 `GITHUB_TOKEN` = GitHub Personal Access Token（GitHub → Settings →
+   Developer settings → Personal access tokens，给 `repo` 读权限）。私有仓库缺了它，第 1 格 clone 会 404/401。
+   notebook 参数区的 `SECRET_GITHUB_TOKEN` 填的就是这个**键名**；仓库转公开后把它改成 `""` 即可
+3. 同一个 Secrets 面板再建一个键放 LLM 密钥，二选一：
    - `GEMINI_API_KEY` = 你的 Gemini key（最简单）
    - `OPENAI_API_KEY` = 中转/自建 OpenAI 兼容端点的 key，并在 notebook 参数区填 `OPENAI_BASE_URL` / `OPENAI_MODEL`
-3. （可选）想直接用预生成脚本、跳过 Step 0 的 LLM 生成：把本机 `ai_scripts/`、`ai_scripts_hot/` 上传到 `MyDrive/sleep_english_colab/`，再跑 notebook 第 8 节那格
+4. （可选）本机写了新批次脚本还没 push：把 `ai_scripts/`、`ai_scripts_hot/` 上传到 `MyDrive/sleep_english_colab/`，再跑 notebook 第 8 节那格补同步
 
 ## 本目录文件
 
@@ -38,7 +42,7 @@ notebook 只是薄引导层 —— 安装/配置/启动逻辑全在本目录的�
 | Step 0 LLM 脚本生成 | ✅ | 需自备 Gemini / OpenAI 兼容端点密钥 |
 | Kokoro TTS | ✅ | 首次下载模型 ≈300MB；GPU 上明显更快 |
 | Qwen3-TTS / MOSS-TTS | ❌ | 依赖本机 `H:\models\` 下的大模型，Colab 没有；配置里已清掉这些路径 |
-| 预生成脚本库 | ⚠️ | `ai_scripts/`、`ai_scripts_hot/` 未进 Git → 克隆后为空，按上面第 3 步从 Drive 同步 |
+| 预生成脚本库 | ✅ | 成品已入库（`ai_scripts/` 100 个 + `ai_scripts_hot/` 117 个），克隆即用；`.llm_cache`/`_parts`/`_review` 等生成中间件被 `.gitignore` 排除，Colab 上不需要 |
 | 片头库 / 片尾库 | ⚠️ | `configs/intro_videos/` 未进 Git → 库为空，自动回落默认 Pillow 片头；也可在「片头库」页现场生成 |
 | AI 缩略图 / AI 背景图 | ⚠️ | 默认走 MCP（本机 Codely 登录态），Colab 没有 → 自动回落 Pillow 卡片；想用 AI 就在「参数配置」页填 aixoras / sensenova 密钥 |
 | BGM 混音 | ❌ | `bgm_music_60s/` 未进 Git，且 `colab_config.py` 强制关闭（自备音乐后可在页面里打开） |
@@ -69,8 +73,10 @@ notebook 只是薄引导层 —— 安装/配置/启动逻辑全在本目录的�
 ## 不开 notebook 也能跑（纯命令行）
 
 ```bash
-git clone --depth 1 https://github.com/collinsgraciano/sleep_english.git /content/sleep_english
+# 私有仓库：URL 里带上 PAT（只在当前 shell 用，别写进任何提交的文件）
+git clone --depth 1 https://<GITHUB_TOKEN>@github.com/collinsgraciano/sleep_english.git /content/sleep_english
 cd /content/sleep_english
+git remote set-url origin https://github.com/collinsgraciano/sleep_english.git   # 令牌别留在 .git/config
 REPO_DIR=/content/sleep_english bash colab/setup.sh
 
 LLM_PROVIDER_TYPE=gemini GEMINI_API_KEY=xxx \
@@ -90,6 +96,7 @@ python3 pipeline.py --topic "Ordering Coffee" --cefr A2 --sleep-pairs 10 --no-4k
 
 | 现象 | 处理 |
 |------|------|
+| 第 1 格 clone 报 404/401 | 仓库是私有的：Secrets 里建 `GITHUB_TOKEN`（GitHub PAT，`repo` 读权限），重跑第 1 格。回显里的令牌已打码 |
 | serve 格没打印公网 URL | 看 `/content/colab_logs/cloudflared.log`；重跑 serve 格即可（Web 服务本身在跑，命令行出片不受影响） |
 | 链接打不开 / 401 | 必须用带 `?ct=令牌` 的完整链接；或令牌已换、cookie 过期，重新用新链接打开 |
 | 跑一半断线 | Colab 空闲约 90 分钟回收 VM。重开 notebook 依次跑第 1-3 格，再跑命令行出片格 —— 音频/卡片按文件续传，也可加 `--resume` |

@@ -102,7 +102,7 @@ print(f"  {'ok  ' if os.path.exists(nunito) else 'FAIL'} 卡片英文字体 {nun
 
 for d in ("ai_scripts", "ai_scripts_hot"):
     n = len([x for x in os.listdir(d) if not x.startswith("_")]) if os.path.isdir(d) else 0
-    hint = "" if n else "  ← 不在 Git 里，需要从 Drive 同步（见 notebook 对应单元格）"
+    hint = "" if n else "  ← 成品脚本已入库，克隆不完整就重跑 notebook 第 1 格（私有仓库要 GITHUB_TOKEN）"
     print(f"  预生成脚本 {d}: {n} 个{hint}")
 PYCHECK
 
