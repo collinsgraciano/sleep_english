@@ -1,808 +1,192 @@
 {
-  "count": 100,
+  "count": 23,
   "failed": 0,
-  "lines_per_script": 400,
-  "generated_at": "2026-09-27T12:13:27",
-  "note": "热门主题 101-200 · AI 逐主题生成（skill: hot-sleep-dialogues）",
+  "lines_per_script": 800,
+  "generated_at": "2026-10-01T17:20:12",
+  "note": "热门主题 101-218 · AI 逐主题生成（skill: hot-sleep-dialogues）",
   "themes": [
     {
-      "index": 101,
-      "en": "Ordering Coffee",
-      "zh": "點咖啡",
+      "index": 1,
+      "en": "Lying Awake at Night",
+      "zh": "深夜睡不著",
+      "category": "Health",
+      "folder": "001_Lying_Awake_at_Night",
+      "lines": 800
+    },
+    {
+      "index": 2,
+      "en": "A Day at the Spa",
+      "zh": "水療一日",
+      "category": "Health",
+      "folder": "002_A_Day_at_the_Spa",
+      "lines": 800
+    },
+    {
+      "index": 3,
+      "en": "A Counselling Session",
+      "zh": "心理諮商",
+      "category": "Health",
+      "folder": "003_A_Counselling_Session",
+      "lines": 800
+    },
+    {
+      "index": 4,
+      "en": "At the Airport Lounge",
+      "zh": "機場貴賓室",
+      "category": "Travel",
+      "folder": "004_At_the_Airport_Lounge",
+      "lines": 800
+    },
+    {
+      "index": 5,
+      "en": "Taking the Overnight Train",
+      "zh": "夜間火車",
+      "category": "Travel",
+      "folder": "005_Taking_the_Overnight_Train",
+      "lines": 800
+    },
+    {
+      "index": 6,
+      "en": "Staying with a Host Family",
+      "zh": "寄宿家庭",
+      "category": "Travel",
+      "folder": "006_Staying_with_a_Host_Family",
+      "lines": 800
+    },
+    {
+      "index": 7,
+      "en": "Sharing a Hot Pot Meal",
+      "zh": "圍爐吃火鍋",
       "category": "Food & Drink",
-      "folder": "101_Ordering_Coffee",
-      "lines": 400
+      "folder": "007_Sharing_a_Hot_Pot",
+      "lines": 800
     },
     {
-      "index": 102,
-      "en": "Brewing Tea at Home",
-      "zh": "在家泡茶",
+      "index": 8,
+      "en": "Cooking with an Air Fryer",
+      "zh": "第一次用氣炸鍋",
       "category": "Food & Drink",
-      "folder": "102_Brewing_Tea_at_Home",
-      "lines": 400
+      "folder": "008_Cooking_with_an_Air_Fryer",
+      "lines": 800
     },
     {
-      "index": 103,
-      "en": "Making a Video Call",
-      "zh": "視訊通話",
+      "index": 9,
+      "en": "Eating at a Sushi Bar",
+      "zh": "迴轉壽司吃一頓",
+      "category": "Food & Drink",
+      "folder": "009_At_the_Sushi_Bar",
+      "lines": 800
+    },
+    {
+      "index": 10,
+      "en": "Riding a Driverless Taxi",
+      "zh": "搭乘無人計程車",
       "category": "Tech",
-      "folder": "103_Making_a_Video_Call",
-      "lines": 400
+      "folder": "010_Riding_a_Driverless_Taxi",
+      "lines": 800
     },
     {
-      "index": 104,
-      "en": "Setting Up a New Phone",
-      "zh": "設置新手機",
+      "index": 11,
+      "en": "Fixing the Home Printer",
+      "zh": "修印表機",
       "category": "Tech",
-      "folder": "104_Setting_Up_a_New_Phone",
-      "lines": 400
+      "folder": "011_Fixing_the_Home_Printer",
+      "lines": 800
     },
     {
-      "index": 105,
-      "en": "Troubleshooting the Wi-Fi",
-      "zh": "修理Wi-Fi網路",
-      "category": "Tech",
-      "folder": "105_Troubleshooting_the_Wi-Fi",
-      "lines": 400
-    },
-    {
-      "index": 106,
-      "en": "Using a Navigation App",
-      "zh": "使用導航App",
-      "category": "Tech",
-      "folder": "106_Using_a_Navigation_App",
-      "lines": 400
-    },
-    {
-      "index": 107,
-      "en": "QR Code Payments",
-      "zh": "掃碼支付",
-      "category": "Tech",
-      "folder": "107_QR_Code_Payments",
-      "lines": 400
-    },
-    {
-      "index": 108,
-      "en": "Asking an AI Assistant",
-      "zh": "詢問AI助手",
-      "category": "Tech",
-      "folder": "108_Asking_an_AI_Assistant",
-      "lines": 400
-    },
-    {
-      "index": 109,
-      "en": "Smart Home Devices",
-      "zh": "智能家居",
-      "category": "Tech",
-      "folder": "109_Smart_Home_Devices",
-      "lines": 400
-    },
-    {
-      "index": 110,
-      "en": "At the Phone Repair Shop",
-      "zh": "手機維修店",
-      "category": "Tech",
-      "folder": "110_At_the_Phone_Repair_Shop",
-      "lines": 400
-    },
-    {
-      "index": 111,
-      "en": "Online Shopping",
-      "zh": "網上購物",
-      "category": "Shopping",
-      "folder": "111_Online_Shopping",
-      "lines": 400
-    },
-    {
-      "index": 112,
-      "en": "Self-Checkout at the Store",
-      "zh": "超市自助結帳",
-      "category": "Shopping",
-      "folder": "112_Self-Checkout_at_the_Store",
-      "lines": 400
-    },
-    {
-      "index": 113,
-      "en": "Farmers Market",
-      "zh": "農夫市集",
-      "category": "Shopping",
-      "folder": "113_Farmers_Market",
-      "lines": 400
-    },
-    {
-      "index": 114,
-      "en": "Flea Market",
-      "zh": "逛舊貨市場",
-      "category": "Shopping",
-      "folder": "114_Flea_Market",
-      "lines": 400
-    },
-    {
-      "index": 115,
-      "en": "Visiting a Bookstore",
-      "zh": "逛書店",
-      "category": "Shopping",
-      "folder": "115_Visiting_a_Bookstore",
-      "lines": 400
-    },
-    {
-      "index": 116,
-      "en": "Buying Skincare Products",
-      "zh": "買護膚品",
-      "category": "Shopping",
-      "folder": "116_Buying_Skincare_Products",
-      "lines": 400
-    },
-    {
-      "index": 117,
-      "en": "Garage Sale",
-      "zh": "庭院甩賣",
-      "category": "Shopping",
-      "folder": "117_Garage_Sale",
-      "lines": 400
-    },
-    {
-      "index": 118,
-      "en": "At the Bakery",
-      "zh": "麵包店",
-      "category": "Shopping",
-      "folder": "118_At_the_Bakery",
-      "lines": 400
-    },
-    {
-      "index": 119,
-      "en": "At the Barber Shop",
-      "zh": "在理髮店",
+      "index": 12,
+      "en": "Flat-Pack Furniture",
+      "zh": "組裝傢俱",
       "category": "Daily Life",
-      "folder": "119_At_the_Barber_Shop",
-      "lines": 400
+      "folder": "012_Flat-Pack_Furniture",
+      "lines": 800
     },
     {
-      "index": 120,
-      "en": "At the Dry Cleaner's",
-      "zh": "上乾洗店",
+      "index": 13,
+      "en": "Running the Air Conditioner",
+      "zh": "在家調冷氣",
       "category": "Daily Life",
-      "folder": "120_At_the_Dry_Cleaner's",
-      "lines": 400
+      "folder": "013_Running_the_Air_Conditioner",
+      "lines": 800
     },
     {
-      "index": 121,
-      "en": "Taking Out the Trash",
-      "zh": "倒垃圾",
+      "index": 14,
+      "en": "Viewing a Rental Flat",
+      "zh": "租屋看房",
       "category": "Daily Life",
-      "folder": "121_Taking_Out_the_Trash",
-      "lines": 400
+      "folder": "014_Viewing_a_Rental_Flat",
+      "lines": 800
     },
     {
-      "index": 122,
-      "en": "Moving to a New Apartment",
-      "zh": "搬新家",
-      "category": "Daily Life",
-      "folder": "122_Moving_to_a_New_Apartment",
-      "lines": 400
+      "index": 15,
+      "en": "Buying Fresh Flowers",
+      "zh": "花店買花",
+      "category": "Shopping",
+      "folder": "015_Buying_Fresh_Flowers",
+      "lines": 800
     },
     {
-      "index": 123,
-      "en": "Getting Internet Installed",
-      "zh": "安裝寬頻",
-      "category": "Daily Life",
-      "folder": "123_Getting_Internet_Installed",
-      "lines": 400
-    },
-    {
-      "index": 124,
-      "en": "At the ATM",
-      "zh": "ATM取款",
-      "category": "Daily Life",
-      "folder": "124_At_the_ATM",
-      "lines": 400
-    },
-    {
-      "index": 125,
-      "en": "Filling Up Gas",
-      "zh": "加油站加油",
-      "category": "Driving",
-      "folder": "125_Filling_Up_Gas",
-      "lines": 400
-    },
-    {
-      "index": 126,
-      "en": "Car Wash Day",
-      "zh": "洗車日",
-      "category": "Driving",
-      "folder": "126_Car_Wash_Day",
-      "lines": 400
-    },
-    {
-      "index": 127,
-      "en": "Changing a Flat Tire",
-      "zh": "換備胎",
-      "category": "Driving",
-      "folder": "127_Changing_a_Flat_Tire",
-      "lines": 400
-    },
-    {
-      "index": 128,
-      "en": "Charging an Electric Car",
-      "zh": "給電動車充電",
-      "category": "Driving",
-      "folder": "128_Charging_an_Electric_Car",
-      "lines": 400
-    },
-    {
-      "index": 129,
-      "en": "The Rush-Hour Commute",
-      "zh": "高峰通勤",
-      "category": "City Life",
-      "folder": "129_The_Rush-Hour_Commute",
-      "lines": 400
-    },
-    {
-      "index": 130,
-      "en": "Taking the Subway",
-      "zh": "坐地鐵",
-      "category": "City Life",
-      "folder": "130_Taking_the_Subway",
-      "lines": 400
-    },
-    {
-      "index": 131,
-      "en": "A Bike-Share Ride",
-      "zh": "共享單車",
-      "category": "Travel",
-      "folder": "131_A_Bike-Share_Ride",
-      "lines": 400
-    },
-    {
-      "index": 132,
-      "en": "Using a Rideshare App",
-      "zh": "打網約車",
-      "category": "Travel",
-      "folder": "132_Using_a_Rideshare_App",
-      "lines": 400
-    },
-    {
-      "index": 133,
-      "en": "Taking the High-Speed Train",
-      "zh": "坐高鐵",
-      "category": "Travel",
-      "folder": "133_Taking_the_High-Speed_Train",
-      "lines": 400
-    },
-    {
-      "index": 134,
-      "en": "Buying a Plane Ticket Online",
-      "zh": "網上買機票",
-      "category": "Travel",
-      "folder": "134_Buying_a_Plane_Ticket_Online",
-      "lines": 400
-    },
-    {
-      "index": 135,
-      "en": "Hotel Check-In",
-      "zh": "飯店入住",
-      "category": "Travel",
-      "folder": "135_Hotel_Check-In",
-      "lines": 400
-    },
-    {
-      "index": 136,
-      "en": "Requesting a Room Change",
-      "zh": "換酒店房間",
-      "category": "Travel",
-      "folder": "136_Requesting_a_Room_Change",
-      "lines": 400
-    },
-    {
-      "index": 137,
-      "en": "Lost Luggage",
-      "zh": "行李丟失",
-      "category": "Travel",
-      "folder": "137_Lost_Luggage",
-      "lines": 400
-    },
-    {
-      "index": 138,
-      "en": "Passing Through Customs",
-      "zh": "過海關",
-      "category": "Travel",
-      "folder": "138_Passing_Through_Customs",
-      "lines": 400
-    },
-    {
-      "index": 139,
-      "en": "Riding a Ferry",
-      "zh": "坐渡輪",
-      "category": "Travel",
-      "folder": "139_Riding_a_Ferry",
-      "lines": 400
-    },
-    {
-      "index": 140,
-      "en": "Souvenir Shopping",
-      "zh": "買紀念品",
-      "category": "Travel",
-      "folder": "140_Souvenir_Shopping",
-      "lines": 400
-    },
-    {
-      "index": 141,
-      "en": "Sightseeing Bus Tour",
-      "zh": "觀光巴士",
-      "category": "Travel",
-      "folder": "141_Sightseeing_Bus_Tour",
-      "lines": 400
-    },
-    {
-      "index": 142,
-      "en": "A Camping Trip",
-      "zh": "露營之旅",
-      "category": "Outdoors",
-      "folder": "142_A_Camping_Trip",
-      "lines": 400
-    },
-    {
-      "index": 143,
-      "en": "Hiking a Trail",
-      "zh": "徒步",
-      "category": "Outdoors",
-      "folder": "143_Hiking_a_Trail",
-      "lines": 400
-    },
-    {
-      "index": 144,
-      "en": "At the Beach",
-      "zh": "海灘一日",
-      "category": "Outdoors",
-      "folder": "144_At_the_Beach",
-      "lines": 400
-    },
-    {
-      "index": 145,
-      "en": "Going Fishing",
-      "zh": "釣魚",
-      "category": "Outdoors",
-      "folder": "145_Going_Fishing",
-      "lines": 400
-    },
-    {
-      "index": 146,
-      "en": "Stargazing",
-      "zh": "觀星",
-      "category": "Outdoors",
-      "folder": "146_Stargazing",
-      "lines": 400
-    },
-    {
-      "index": 147,
-      "en": "Gardening",
-      "zh": "園藝",
-      "category": "Outdoors",
-      "folder": "147_Gardening",
-      "lines": 400
-    },
-    {
-      "index": 148,
-      "en": "A Day on the Slopes",
-      "zh": "滑雪的一天",
-      "category": "Outdoors",
-      "folder": "148_A_Day_on_the_Slopes",
-      "lines": 400
-    },
-    {
-      "index": 149,
-      "en": "A Surfing Lesson",
-      "zh": "衝浪課",
-      "category": "Outdoors",
-      "folder": "149_A_Surfing_Lesson",
-      "lines": 400
-    },
-    {
-      "index": 150,
-      "en": "Ordering Delivery",
-      "zh": "點外送",
-      "category": "Food & Drink",
-      "folder": "150_Ordering_Delivery",
-      "lines": 400
-    },
-    {
-      "index": 151,
-      "en": "Picking Up Takeout",
-      "zh": "取外帶",
-      "category": "Food & Drink",
-      "folder": "151_Picking_Up_Takeout",
-      "lines": 400
-    },
-    {
-      "index": 152,
-      "en": "Cooking Pasta Dinner",
-      "zh": "做義大利麵",
-      "category": "Food & Drink",
-      "folder": "152_Cooking_Pasta_Dinner",
-      "lines": 400
-    },
-    {
-      "index": 153,
-      "en": "Making Pizza at Home",
-      "zh": "自製披薩",
-      "category": "Food & Drink",
-      "folder": "153_Making_Pizza_at_Home",
-      "lines": 400
-    },
-    {
-      "index": 154,
-      "en": "At the Juice Bar",
-      "zh": "果汁店",
-      "category": "Food & Drink",
-      "folder": "154_At_the_Juice_Bar",
-      "lines": 400
-    },
-    {
-      "index": 155,
-      "en": "Brunch with Friends",
-      "zh": "早午餐",
-      "category": "Food & Drink",
-      "folder": "155_Brunch_with_Friends",
-      "lines": 400
-    },
-    {
-      "index": 156,
-      "en": "Picnic in the Park",
-      "zh": "公園野餐",
-      "category": "Food & Drink",
-      "folder": "156_Picnic_in_the_Park",
-      "lines": 400
-    },
-    {
-      "index": 157,
-      "en": "Backyard BBQ",
-      "zh": "後院燒烤",
-      "category": "Food & Drink",
-      "folder": "157_Backyard_BBQ",
-      "lines": 400
-    },
-    {
-      "index": 158,
-      "en": "At a Concert",
-      "zh": "看演唱會",
+      "index": 16,
+      "en": "A Pottery Class",
+      "zh": "陶藝課",
       "category": "Leisure",
-      "folder": "158_At_a_Concert",
-      "lines": 400
+      "folder": "016_A_Pottery_Class",
+      "lines": 800
     },
     {
-      "index": 159,
-      "en": "Karaoke Night",
-      "zh": "K歌之夜",
-      "category": "Leisure",
-      "folder": "159_Karaoke_Night",
-      "lines": 400
+      "index": 17,
+      "en": "At the Nail Salon",
+      "zh": "做美甲",
+      "category": "Grooming",
+      "folder": "017_At_the_Nail_Salon",
+      "lines": 800
     },
     {
-      "index": 160,
-      "en": "Board Game Night",
-      "zh": "桌遊之夜",
-      "category": "Leisure",
-      "folder": "160_Board_Game_Night",
-      "lines": 400
+      "index": 18,
+      "en": "Packing a School Lunchbox",
+      "zh": "帶便當",
+      "category": "Family",
+      "folder": "018_Packing_a_School_Lunchbox",
+      "lines": 800
     },
     {
-      "index": 161,
-      "en": "An Escape Room",
-      "zh": "密室逃脫",
-      "category": "Leisure",
-      "folder": "161_An_Escape_Room",
-      "lines": 400
+      "index": 19,
+      "en": "Joining a Language Exchange",
+      "zh": "參加英語角",
+      "category": "Social",
+      "folder": "019_Joining_a_Language_Exchange",
+      "lines": 800
     },
     {
-      "index": 162,
-      "en": "Watching a Sports Game",
-      "zh": "現場看球賽",
-      "category": "Leisure",
-      "folder": "162_Watching_a_Sports_Game",
-      "lines": 400
-    },
-    {
-      "index": 163,
-      "en": "Playing Tennis",
-      "zh": "打網球",
-      "category": "Leisure",
-      "folder": "163_Playing_Tennis",
-      "lines": 400
-    },
-    {
-      "index": 164,
-      "en": "A Dance Class",
-      "zh": "舞蹈課",
-      "category": "Leisure",
-      "folder": "164_A_Dance_Class",
-      "lines": 400
-    },
-    {
-      "index": 165,
-      "en": "Learning Photography",
-      "zh": "學攝影",
-      "category": "Leisure",
-      "folder": "165_Learning_Photography",
-      "lines": 400
-    },
-    {
-      "index": 166,
-      "en": "Recording a Podcast",
-      "zh": "錄播客",
-      "category": "Leisure",
-      "folder": "166_Recording_a_Podcast",
-      "lines": 400
-    },
-    {
-      "index": 167,
-      "en": "Going Live Online",
-      "zh": "開直播",
-      "category": "Leisure",
-      "folder": "167_Going_Live_Online",
-      "lines": 400
-    },
-    {
-      "index": 168,
-      "en": "Visiting a Museum",
-      "zh": "參觀博物館",
-      "category": "Leisure",
-      "folder": "168_Visiting_a_Museum",
-      "lines": 400
-    },
-    {
-      "index": 169,
-      "en": "At the Aquarium",
-      "zh": "水族館",
-      "category": "Leisure",
-      "folder": "169_At_the_Aquarium",
-      "lines": 400
-    },
-    {
-      "index": 170,
-      "en": "Amusement Park Rides",
-      "zh": "遊樂園",
-      "category": "Leisure",
-      "folder": "170_Amusement_Park_Rides",
-      "lines": 400
-    },
-    {
-      "index": 171,
-      "en": "At the Zoo",
-      "zh": "逛動物園",
+      "index": 20,
+      "en": "At a Night Market",
+      "zh": "逛夜市",
       "category": "Sightseeing",
-      "folder": "171_At_the_Zoo",
+      "folder": "020_At_a_Night_Market",
+      "lines": 800
+    },
+    {
+      "index": 21,
+      "en": "Berry Picking at a Farm",
+      "zh": "果園採摘",
+      "category": "Outdoors",
+      "folder": "021_Berry_Picking_at_a_Farm",
       "lines": 400
     },
     {
-      "index": 172,
-      "en": "At the Pharmacy",
-      "zh": "去藥局買藥",
-      "category": "Health",
-      "folder": "172_At_the_Pharmacy",
+      "index": 22,
+      "en": "At the Convenience Store",
+      "zh": "便利店",
+      "category": "Shopping",
+      "folder": "022_At_the_Convenience_Store",
       "lines": 400
     },
     {
-      "index": 173,
-      "en": "The Dentist Visit",
-      "zh": "看牙醫",
-      "category": "Health",
-      "folder": "173_The_Dentist_Visit",
-      "lines": 400
-    },
-    {
-      "index": 174,
-      "en": "An Eye Exam",
-      "zh": "眼科檢查",
-      "category": "Health",
-      "folder": "174_An_Eye_Exam",
-      "lines": 400
-    },
-    {
-      "index": 175,
-      "en": "Gym Workout",
-      "zh": "健身房鍛煉",
-      "category": "Health",
-      "folder": "175_Gym_Workout",
-      "lines": 400
-    },
-    {
-      "index": 176,
-      "en": "A Yoga Class",
-      "zh": "瑜伽課",
-      "category": "Health",
-      "folder": "176_A_Yoga_Class",
-      "lines": 400
-    },
-    {
-      "index": 177,
-      "en": "A Morning Run",
-      "zh": "晨跑",
-      "category": "Health",
-      "folder": "177_A_Morning_Run",
-      "lines": 400
-    },
-    {
-      "index": 178,
-      "en": "Swimming Lessons",
-      "zh": "游泳課",
-      "category": "Health",
-      "folder": "178_Swimming_Lessons",
-      "lines": 400
-    },
-    {
-      "index": 179,
-      "en": "Getting a Vaccine",
-      "zh": "打疫苗",
-      "category": "Health",
-      "folder": "179_Getting_a_Vaccine",
-      "lines": 400
-    },
-    {
-      "index": 180,
-      "en": "Meditation Practice",
-      "zh": "冥想練習",
-      "category": "Health",
-      "folder": "180_Meditation_Practice",
-      "lines": 400
-    },
-    {
-      "index": 181,
-      "en": "A Job Interview",
-      "zh": "求職面試",
-      "category": "Work",
-      "folder": "181_A_Job_Interview",
-      "lines": 400
-    },
-    {
-      "index": 182,
-      "en": "First Day at Work",
-      "zh": "上班第一天",
-      "category": "Work",
-      "folder": "182_First_Day_at_Work",
-      "lines": 400
-    },
-    {
-      "index": 183,
-      "en": "Requesting Time Off",
-      "zh": "請假",
-      "category": "Work",
-      "folder": "183_Requesting_Time_Off",
-      "lines": 400
-    },
-    {
-      "index": 184,
-      "en": "The Performance Review",
-      "zh": "績效評估",
-      "category": "Work",
-      "folder": "184_The_Performance_Review",
-      "lines": 400
-    },
-    {
-      "index": 185,
-      "en": "A Business Lunch",
-      "zh": "商務午餐",
-      "category": "Work",
-      "folder": "185_A_Business_Lunch",
-      "lines": 400
-    },
-    {
-      "index": 186,
-      "en": "A Conference Call",
-      "zh": "電話會議",
-      "category": "Work",
-      "folder": "186_A_Conference_Call",
-      "lines": 400
-    },
-    {
-      "index": 187,
-      "en": "A Networking Event",
-      "zh": "行業交流會",
-      "category": "Work",
-      "folder": "187_A_Networking_Event",
-      "lines": 400
-    },
-    {
-      "index": 188,
-      "en": "Working from Home",
-      "zh": "居家辦公",
-      "category": "Work",
-      "folder": "188_Working_from_Home",
-      "lines": 400
-    },
-    {
-      "index": 189,
-      "en": "First Day of School",
-      "zh": "開學第一天",
-      "category": "Study",
-      "folder": "189_First_Day_of_School",
-      "lines": 400
-    },
-    {
-      "index": 190,
-      "en": "At the Library",
-      "zh": "圖書館",
-      "category": "Study",
-      "folder": "190_At_the_Library",
-      "lines": 400
-    },
-    {
-      "index": 191,
-      "en": "Joining a School Club",
-      "zh": "加入社團",
-      "category": "Study",
-      "folder": "191_Joining_a_School_Club",
-      "lines": 400
-    },
-    {
-      "index": 192,
-      "en": "An Online Course",
-      "zh": "在線課程",
-      "category": "Study",
-      "folder": "192_An_Online_Course",
-      "lines": 400
-    },
-    {
-      "index": 193,
-      "en": "Graduation Day",
-      "zh": "畢業典禮",
-      "category": "Study",
-      "folder": "193_Graduation_Day",
-      "lines": 400
-    },
-    {
-      "index": 194,
-      "en": "Giving Compliments",
-      "zh": "真誠讚美",
-      "category": "Social",
-      "folder": "194_Giving_Compliments",
-      "lines": 400
-    },
-    {
-      "index": 195,
-      "en": "Consoling a Friend",
-      "zh": "安慰朋友",
-      "category": "Social",
-      "folder": "195_Consoling_a_Friend",
-      "lines": 400
-    },
-    {
-      "index": 196,
-      "en": "Congratulating a Friend",
-      "zh": "祝賀朋友",
-      "category": "Social",
-      "folder": "196_Congratulating_a_Friend",
-      "lines": 400
-    },
-    {
-      "index": 197,
-      "en": "A First Date",
-      "zh": "初次約會",
-      "category": "Social",
-      "folder": "197_A_First_Date",
-      "lines": 400
-    },
-    {
-      "index": 198,
-      "en": "Attending a Wedding",
-      "zh": "參加婚禮",
-      "category": "Social",
-      "folder": "198_Attending_a_Wedding",
-      "lines": 400
-    },
-    {
-      "index": 199,
-      "en": "Packing for a Trip",
-      "zh": "打包行李",
+      "index": 23,
+      "en": "Adopting a Shelter Dog",
+      "zh": "領養狗",
       "category": "Family",
-      "folder": "199_Packing_for_a_Trip",
-      "lines": 400
-    },
-    {
-      "index": 200,
-      "en": "Teaching Parents Technology",
-      "zh": "教父母用科技",
-      "category": "Family",
-      "folder": "200_Teaching_Parents_Technology",
+      "folder": "023_Adopting_a_Shelter_Dog",
       "lines": 400
     }
   ]

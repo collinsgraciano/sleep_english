@@ -1,0 +1,2457 @@
+{
+  "title": "Everyday Phrases — Berry Picking at a Farm",
+  "title_zh": "果園採摘",
+  "scene_zh": "果園採摘 · 情境對話",
+  "title_quote": "Is this the berry farm?",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】🍓 實用果園採摘必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — Berry Picking at a Farm",
+  "youtube_description": "睡著學英文！這部影片收錄實用「果園採摘」情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫）。場景是週末的採果農場：領籃子走進果園、挑熟透的莓果先嚐一顆、邊摘邊聊天氣與蟲子、小心別踩到秧苗，最後排隊稱重結帳、再順手帶一罐果醬回家。400 句循環聽，A2 程度，零基礎也能跟著開口說。常用句型包含問能不能採、說甜不甜、請人遞籃子、稱重與付錢。#英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical 'Berry Picking at a Farm' phrase pairs (each pair: male normal speed → female slow speed → combined dialogue). The scene is a pick-your-own berry farm on a weekend: grabbing a basket, walking into the rows, tasting one berry to see if it is ripe, chatting about the weather and bugs while picking, watching out for the young plants, then weighing the basket at the counter and taking a jar of jam home. 400 lines on repeat, A2 level, easy to repeat out loud even from zero.",
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "Berry Picking at a Farm",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "Berry Picking at a Farm",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Outdoors",
+  "youtube_tags": [
+    "果園採摘",
+    "Berry Picking at a Farm",
+    "睡前英文聽力",
+    "英文聽力",
+    "睡前英文",
+    "400句循環聽",
+    "Sleep learning English",
+    "English listening practice",
+    "A2 English",
+    "ESL listening",
+    "English conversation",
+    "everyday English phrases",
+    "採水果 英文",
+    "farm English",
+    "學英文 睡覺"
+  ],
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "Is this the berry farm?",
+      "phonetic": "/ɪz ðɪs ðə ˈbɛri fɑrm?/",
+      "zh": "這是那間莓果農場嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the sign says so.",
+      "phonetic": "/jɛs ðə saɪn sɛz soʊ/",
+      "zh": "對，招牌上是這麼寫的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where should we park the car?",
+      "phonetic": "/wɛr ʃʊd wi pɑrk ðə kɑr?/",
+      "zh": "我們該把車停在哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "There's a lot near the gate.",
+      "phonetic": "/ðɛrz ə lɑt nɪr ðə ɡeɪt/",
+      "zh": "大門附近有一片空地。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do we pay before we pick?",
+      "phonetic": "/du wi peɪ bɪˈfɔr wi pɪk?/",
+      "zh": "我們採之前要先付錢嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You pay when you leave.",
+      "phonetic": "/ju peɪ wɛn ju liv/",
+      "zh": "離開的時候再付。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's grab two baskets over there.",
+      "phonetic": "/lɛts ɡræb tu ˈbæskɪts ˈoʊvər ðɛr/",
+      "zh": "我們去那邊拿兩個籃子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "These plastic ones look strong.",
+      "phonetic": "/ðiz ˈplæstɪk wʌnz lʊk strɔŋ/",
+      "zh": "這些塑膠的看起來很耐用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How much do the baskets cost?",
+      "phonetic": "/haʊ mʌtʃ du ðə ˈbæskɪts kɔst?/",
+      "zh": "這些籃子多少錢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The baskets come with the ticket.",
+      "phonetic": "/ðə ˈbæskɪts kʌm wɪð ðə ˈtɪkɪt/",
+      "zh": "籃子隨票附贈。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sun hats are sold at the counter.",
+      "phonetic": "/sʌn hæts ər soʊld æt ðə ˈkaʊntər/",
+      "zh": "遮陽帽在櫃檯有賣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'm fine with just sunscreen.",
+      "phonetic": "/aɪm faɪn wɪð dʒʌst ˈsʌnskrin/",
+      "zh": "我擦防曬就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The gate opens at eight sharp.",
+      "phonetic": "/ðə ɡeɪt ˈoʊpənz æt eɪt ʃɑrp/",
+      "zh": "大門八點整開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then we're right on time.",
+      "phonetic": "/ðɛn wɪr raɪt ɑn taɪm/",
+      "zh": "那我們來得剛好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which way leads to the berries?",
+      "phonetic": "/wɪtʃ weɪ lidz tə ðə ˈbɛriz?/",
+      "zh": "哪條路通往莓果區？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Follow the dirt path downhill.",
+      "phonetic": "/ˈfɑloʊ ðə dɜrt pæθ ˈdaʊnhɪl/",
+      "zh": "沿著泥土小徑往下走。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are the rows far from here?",
+      "phonetic": "/ər ðə roʊz fɑr frəm hɪr?/",
+      "zh": "那些行列離這裡遠嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It's about five minutes away.",
+      "phonetic": "/ɪts əˈbaʊt faɪv ˈmɪnɪts əˈweɪ/",
+      "zh": "大約五分鐘路程。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should we bring water with us?",
+      "phonetic": "/ʃʊd wi brɪŋ ˈwɔtər wɪð ʌs?/",
+      "zh": "我們要帶水嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "There's a fountain by the shed.",
+      "phonetic": "/ðɛrz ə ˈfaʊntɪn baɪ ðə ʃɛd/",
+      "zh": "棚子旁邊有飲水台。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This field smells like fresh grass.",
+      "phonetic": "/ðɪs fild smɛlz laɪk frɛʃ ɡræs/",
+      "zh": "這片田聞起來像新草。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Bees love the clover here.",
+      "phonetic": "/biz lʌv ðə ˈkloʊvər hɪr/",
+      "zh": "蜜蜂很愛這裡的三葉草。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Someone is waving us over.",
+      "phonetic": "/ˈsʌmwʌn ɪz ˈweɪvɪŋ ʌs ˈoʊvər/",
+      "zh": "有人在招手叫我們過去。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's the farm guide, I think.",
+      "phonetic": "/ðæts ðə fɑrm ɡaɪd aɪ θɪŋk/",
+      "zh": "我想那是農場導覽員。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good morning, are you the guide?",
+      "phonetic": "/ɡʊd ˈmɔrnɪŋ ər ju ðə ɡaɪd?/",
+      "zh": "早安，你是導覽員嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's me, welcome to the farm.",
+      "phonetic": "/ðæts mi ˈwɛlkəm tə ðə fɑrm/",
+      "zh": "就是我，歡迎來到農場。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Tell us how picking works here.",
+      "phonetic": "/tɛl ʌs haʊ ˈpɪkɪŋ wɜrks hɪr/",
+      "zh": "跟我們說這裡怎麼採。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Twist the berry gently, then pull.",
+      "phonetic": "/twɪst ðə ˈbɛri ˈdʒɛntli ðɛn pʊl/",
+      "zh": "輕輕轉一下莓果再拉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do I twist it like this?",
+      "phonetic": "/du aɪ twɪst ɪt laɪk ðɪs?/",
+      "zh": "是像這樣轉嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Almost, use your fingertips only.",
+      "phonetic": "/ˈɔlmoʊst juz jʊr ˈfɪŋɡərˌtɪps ˈoʊnli/",
+      "zh": "差不多，只用指尖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which rows have the most fruit?",
+      "phonetic": "/wɪtʃ roʊz hæv ðə moʊst frut?/",
+      "zh": "哪幾排果實最多？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Try the second row today.",
+      "phonetic": "/traɪ ðə ˈsɛkənd roʊ təˈdeɪ/",
+      "zh": "今天試試第二排。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are those rows already picked clean?",
+      "phonetic": "/ər ðoʊz roʊz ɔlˈrɛdi pɪkt klin?/",
+      "zh": "那幾排已經被採光了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mostly, but some branches hide more.",
+      "phonetic": "/ˈmoʊstli bʌt sʌm ˈbræntʃɪz haɪd mɔr/",
+      "zh": "大致上是，但有些枝條還藏著。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's start at the far end.",
+      "phonetic": "/lɛts stɑrt æt ðə fɑr ɛnd/",
+      "zh": "我們從最遠那頭開始吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Smart, fewer people walk there.",
+      "phonetic": "/smɑrt ˈfjuər ˈpipəl wɔk ðɛr/",
+      "zh": "聰明，那裡走的人比較少。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How big should our basket be?",
+      "phonetic": "/haʊ bɪɡ ʃʊd aʊər ˈbæskɪt bi?/",
+      "zh": "我們的籃子該多大？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A medium one holds enough.",
+      "phonetic": "/ə ˈmidiəm wʌn hoʊldz ɪˈnʌf/",
+      "zh": "中型就裝得夠了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This handle feels a bit loose.",
+      "phonetic": "/ðɪs ˈhændəl filz ə bɪt lus/",
+      "zh": "這個提把有點鬆。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Swap it for a sturdier one.",
+      "phonetic": "/swɑp ɪt fɔr ə ˈstɜrdiər wʌn/",
+      "zh": "換一個更牢固的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we leave our bags here?",
+      "phonetic": "/kæn wi liv aʊər bæɡz hɪr?/",
+      "zh": "我們可以把包包放在這裡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Leave them behind the counter.",
+      "phonetic": "/liv ðɛm bɪˈhaɪnd ðə ˈkaʊntər/",
+      "zh": "放在櫃檯後面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The ground is soft from rain.",
+      "phonetic": "/ðə ɡraʊnd ɪz sɔft frəm reɪn/",
+      "zh": "地面因為下雨很軟。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wear boots if you have them.",
+      "phonetic": "/wɛr buts ɪf ju hæv ðɛm/",
+      "zh": "有靴子的話就穿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Mud is stuck on my shoes.",
+      "phonetic": "/mʌd ɪz stʌk ɑn maɪ ʃuz/",
+      "zh": "泥巴黏在我鞋上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Scrape them on the wooden board.",
+      "phonetic": "/skreɪp ðɛm ɑn ðə ˈwʊdən bɔrd/",
+      "zh": "在木板上刮一刮。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's walk slowly between the rows.",
+      "phonetic": "/lɛts wɔk ˈsloʊli bɪˈtwin ðə roʊz/",
+      "zh": "我們在行列間慢慢走。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Watch out for the little plants.",
+      "phonetic": "/wɑtʃ aʊt fɔr ðə ˈlɪtəl plænts/",
+      "zh": "小心那些小苗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "These leaves are wet and cool.",
+      "phonetic": "/ðiz livz ər wɛt æn kul/",
+      "zh": "這些葉子又濕又涼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Morning dew always feels nice.",
+      "phonetic": "/ˈmɔrnɪŋ du ˈɔlweɪz filz naɪs/",
+      "zh": "晨露感覺總是很舒服。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which row should we try first?",
+      "phonetic": "/wɪtʃ roʊ ʃʊd wi traɪ fɜrst?/",
+      "zh": "我們該先試哪一排？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Start where the sign points left.",
+      "phonetic": "/stɑrt wɛr ðə saɪn pɔɪnts lɛft/",
+      "zh": "從牌子指左邊那裡開始。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Tall bushes block the whole view.",
+      "phonetic": "/tɔl ˈbʊʃɪz blɑk ðə hoʊl vju/",
+      "zh": "高叢擋住了整個視線。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Duck under this low branch.",
+      "phonetic": "/dʌk ˈʌndər ðɪs loʊ bræntʃ/",
+      "zh": "從這根低枝下鑽過去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is that row reserved for groups?",
+      "phonetic": "/ɪz ðæt roʊ rɪˈzɜrvd fɔr ɡrups?/",
+      "zh": "那排是保留給團體的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only on busy weekend mornings.",
+      "phonetic": "/ˈoʊnli ɑn ˈbɪzi ˈwikˌend ˈmɔrnɪŋz/",
+      "zh": "只有在繁忙的週末早上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Our basket is still empty though.",
+      "phonetic": "/aʊər ˈbæskɪt ɪz stɪl ˈɛmpti ðoʊ/",
+      "zh": "我們的籃子還是空的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Give it ten minutes, honestly.",
+      "phonetic": "/ɡɪv ɪt tɛn ˈmɪnɪts ˈɑnəstli/",
+      "zh": "老實說，給它十分鐘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Nobody told us about the rules.",
+      "phonetic": "/ˈnoʊbədi toʊld ʌs əˈbaʊt ðə rulz/",
+      "zh": "沒人跟我們說過規則。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just don't step on the roots.",
+      "phonetic": "/dʒʌst doʊnt stɛp ɑn ðə ruts/",
+      "zh": "只要別踩到根部就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Rows are labeled with little flags.",
+      "phonetic": "/roʊz ər ˈleɪbəld wɪð ˈlɪtəl flæɡz/",
+      "zh": "行列上插著小旗子標示。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Blue flags mean sweet and ripe.",
+      "phonetic": "/blu flæɡz min swit æn raɪp/",
+      "zh": "藍旗代表又甜又熟。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's begin with the blue flags.",
+      "phonetic": "/lɛts bɪˈɡɪn wɪð ðə blu flæɡz/",
+      "zh": "我們從藍旗那幾排開始。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good plan, they're closest anyway.",
+      "phonetic": "/ɡʊd plæn ðɛr ˈkloʊsəst ˈɛniˌweɪ/",
+      "zh": "好主意，反正它們最近。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Rows of bushes stretch forever.",
+      "phonetic": "/roʊz əv ˈbʊʃɪz strɛtʃ fərˈɛvər/",
+      "zh": "一排排的樹叢延伸無盡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stay near me, don't wander off.",
+      "phonetic": "/steɪ nɪr mi doʊnt ˈwɑndər ɔf/",
+      "zh": "待在我旁邊，別走遠。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Smell that sweet air right here.",
+      "phonetic": "/smɛl ðæt swit ɛr raɪt hɪr/",
+      "zh": "聞聞這裡甜甜的空氣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It's like jam already, almost.",
+      "phonetic": "/ɪts laɪk dʒæm ɔlˈrɛdi ˈɔlmoʊst/",
+      "zh": "幾乎就像果醬了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Grandpa used to pick at farms.",
+      "phonetic": "/ˈɡrænpɑ juzd tə pɪk æt fɑrmz/",
+      "zh": "爺爺以前在農場採過。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "He told you the best tricks?",
+      "phonetic": "/hi toʊld ju ðə bɛst trɪks?/",
+      "zh": "他跟你說過最好的訣竅嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Small berries taste sweeter than big ones.",
+      "phonetic": "/smɔl ˈbɛriz teɪst ˈswitər ðæn bɪɡ wʌnz/",
+      "zh": "小顆的莓果比大顆的甜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Really, I always pick the biggest.",
+      "phonetic": "/ˈrɪli aɪ ˈɔlweɪz pɪk ðə ˈbɪɡəst/",
+      "zh": "真的嗎，我總是挑最大的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Birds eat the top ones first.",
+      "phonetic": "/bɜrdz it ðə tɑp wʌnz fɜrst/",
+      "zh": "鳥先吃最上面的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then we should reach lower down.",
+      "phonetic": "/ðɛn wi ʃʊd ritʃ ˈloʊər daʊn/",
+      "zh": "那我們該往低處找。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My fingers are turning purple.",
+      "phonetic": "/maɪ ˈfɪŋɡərz ər ˈtɜrnɪŋ ˈpɜrpəl/",
+      "zh": "我的手指變紫了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That means you're doing it right.",
+      "phonetic": "/ðæt minz jʊr ˈduɪŋ ɪt raɪt/",
+      "zh": "那表示你做對了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do berries stain our clothes badly?",
+      "phonetic": "/du ˈbɛriz steɪn aʊər kloʊðz ˈbædli?/",
+      "zh": "莓果會把衣服染得很糟嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wash them with cold water soon.",
+      "phonetic": "/wɑʃ ðɛm wɪð koʊld ˈwɔtər sun/",
+      "zh": "趕快用冷水洗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This basket fills faster than expected.",
+      "phonetic": "/ðɪs ˈbæskɪt fɪlz ˈfæstər ðæn ɪkˈspɛktɪd/",
+      "zh": "這個籃子比預期裝得快。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We'll need another one soon.",
+      "phonetic": "/wɪl nid əˈnʌðər wʌn sun/",
+      "zh": "我們很快會需要另一個。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Someone left a hat on the fence.",
+      "phonetic": "/ˈsʌmwʌn lɛft ə hæt ɑn ðə fɛns/",
+      "zh": "有人把帽子留在圍籬上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Maybe the owner will come back.",
+      "phonetic": "/ˈmeɪbi ði ˈoʊnər wɪl kʌm bæk/",
+      "zh": "也許主人會回來拿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are we allowed to eat while picking?",
+      "phonetic": "/ər wi əˈlaʊd tə it waɪl ˈpɪkɪŋ?/",
+      "zh": "我們可以邊採邊吃嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One or two is fine, not more.",
+      "phonetic": "/wʌn ɔr tu ɪz faɪn nɑt mɔr/",
+      "zh": "一兩顆可以，不能更多。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then I'll taste just this one.",
+      "phonetic": "/ðɛn aɪl teɪst dʒʌst ðɪs wʌn/",
+      "zh": "那我只嚐這一顆。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold it up to the light first.",
+      "phonetic": "/hoʊld ɪt ʌp tə ðə laɪt fɜrst/",
+      "zh": "先把它舉到光下看看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This whole row looks promising.",
+      "phonetic": "/ðɪs hoʊl roʊ lʊks ˈprɑmɪsɪŋ/",
+      "zh": "整排看起來都很有希望。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let us keep looking anyway.",
+      "phonetic": "/lɛt ʌs kip ˈlʊkɪŋ ˈɛniˌweɪ/",
+      "zh": "我們還是繼續找吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which bucket belongs to us now?",
+      "phonetic": "/wɪtʃ ˈbʌkɪt bɪˈlɔŋz tə ʌs naʊ?/",
+      "zh": "現在哪個桶子是我們的？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The red handle marks ours.",
+      "phonetic": "/ðə rɛd ˈhændəl mɑrks ˈaʊərz/",
+      "zh": "紅色提把的是我們的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's split up for ten minutes.",
+      "phonetic": "/lɛts splɪt ʌp fɔr tɛn ˈmɪnɪts/",
+      "zh": "我們分開十分鐘。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Meet me by the tall post.",
+      "phonetic": "/mit mi baɪ ðə tɔl poʊst/",
+      "zh": "在高柱子那邊跟我碰面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Careful, the fence has sharp wire.",
+      "phonetic": "/ˈkɛrfəl ðə fɛns hæz ʃɑrp ˈwaɪər/",
+      "zh": "小心，圍籬有尖鐵絲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thanks, I'll keep my distance.",
+      "phonetic": "/θæŋks aɪl kip maɪ ˈdɪstəns/",
+      "zh": "謝謝，我會保持距離。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sunlight is getting warmer now.",
+      "phonetic": "/ˈsʌnlaɪt ɪz ˈɡɛtɪŋ ˈwɔrmər naʊ/",
+      "zh": "陽光現在越來越暖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let's finish before noon hits.",
+      "phonetic": "/lɛts ˈfɪnɪʃ bɪˈfɔr nun hɪts/",
+      "zh": "我們在中午前採完吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Two hours feels like enough time.",
+      "phonetic": "/tu ˈaʊərz filz laɪk ɪˈnʌf taɪm/",
+      "zh": "兩小時感覺夠了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Plenty, if we keep moving.",
+      "phonetic": "/ˈplɛnti ɪf wi kip ˈmuvɪŋ/",
+      "zh": "如果一直採，很夠。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This farm is bigger than I thought.",
+      "phonetic": "/ðɪs fɑrm ɪz ˈbɪɡər ðæn aɪ θɔt/",
+      "zh": "這農場比我想的大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They grow six kinds of berries.",
+      "phonetic": "/ðeɪ ɡroʊ sɪks kaɪndz əv ˈbɛriz/",
+      "zh": "他們種六種莓果。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "These berries look dark and shiny.",
+      "phonetic": "/ðiz ˈbɛriz lʊk dɑrk æn ˈʃaɪni/",
+      "zh": "這些莓果又深又亮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Dark ones usually taste the best.",
+      "phonetic": "/dɑrk wʌnz ˈjuʒuəli teɪst ðə bɛst/",
+      "zh": "深色的通常最好吃。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I try one before we start?",
+      "phonetic": "/ʃʊd aɪ traɪ wʌn bɪˈfɔr wi stɑrt?/",
+      "zh": "開始前我可以先試一顆嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Go ahead, that's the farm rule.",
+      "phonetic": "/ɡoʊ əˈhɛd ðæts ðə fɑrm rul/",
+      "zh": "去吧，這是農場的規矩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wow, this one is really sweet.",
+      "phonetic": "/waʊ ðɪs wʌn ɪz ˈrɪli swit/",
+      "zh": "哇，這顆真的很甜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Told you the dark ones win.",
+      "phonetic": "/toʊld ju ðə dɑrk wʌnz wɪn/",
+      "zh": "就說深色的贏吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which row tastes the sweetest here?",
+      "phonetic": "/wɪtʃ roʊ teɪsts ðə ˈswitəst hɪr?/",
+      "zh": "這裡哪一排最甜？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The one beside the water tank.",
+      "phonetic": "/ðə wʌn bɪˈsaɪd ðə ˈwɔtər tæŋk/",
+      "zh": "水塔旁邊那一排。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That one is crowded with people.",
+      "phonetic": "/ðæt wʌn ɪz ˈkraʊdɪd wɪð ˈpipəl/",
+      "zh": "那排擠滿了人。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wait a while, they'll move.",
+      "phonetic": "/weɪt ə waɪl ðeɪl muv/",
+      "zh": "等一下，他們會走的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Ugh, this berry tastes too sour.",
+      "phonetic": "/ʌɡ ðɪs ˈbɛri teɪsts tu ˈsaʊər/",
+      "zh": "呃，這顆莓果太酸了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Spit it out behind the bush.",
+      "phonetic": "/spɪt ɪt aʊt bɪˈhaɪnd ðə bʊʃ/",
+      "zh": "吐到樹叢後面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This one feels soft and mushy.",
+      "phonetic": "/ðɪs wʌn filz sɔft æn ˈmʌʃi/",
+      "zh": "這顆摸起來又軟又爛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Leave those for the birds.",
+      "phonetic": "/liv ðoʊz fɔr ðə bɜrdz/",
+      "zh": "那些留給鳥吃。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My hands are sticky already.",
+      "phonetic": "/maɪ hændz ər ˈstɪki ɔlˈrɛdi/",
+      "zh": "我的手已經黏黏的了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wipe them on the grass.",
+      "phonetic": "/waɪp ðɛm ɑn ðə ɡræs/",
+      "zh": "在草地上擦一擦。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Watch your feet near the seedlings.",
+      "phonetic": "/wɑtʃ jʊr fit nɪr ðə ˈsidlɪŋz/",
+      "zh": "靠近苗的地方小心腳。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sorry, I nearly crushed one.",
+      "phonetic": "/ˈsɑri aɪ ˈnɪrli krʌʃt wʌn/",
+      "zh": "抱歉，我差點踩爛一株。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Those thin plants are next year's crop.",
+      "phonetic": "/ðoʊz θɪn plænts ər nɛkst jɪrz krɑp/",
+      "zh": "那些細苗是明年的收成。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then we really must be careful.",
+      "phonetic": "/ðɛn wi ˈrɪli mʌst bi ˈkɛrfəl/",
+      "zh": "那我們真的得小心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Bees are buzzing around my head.",
+      "phonetic": "/biz ər ˈbʌzɪŋ əˈraʊnd maɪ hɛd/",
+      "zh": "蜜蜂在我頭邊嗡嗡叫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stay still and they'll pass.",
+      "phonetic": "/steɪ stɪl æn ðeɪl pæs/",
+      "zh": "別動，牠們會飛走的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One just landed on my sleeve.",
+      "phonetic": "/wʌn dʒʌst ˈlændɪd ɑn maɪ sliv/",
+      "zh": "一隻剛停在我袖子上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Don't swat it, walk away slowly.",
+      "phonetic": "/doʊnt swɑt ɪt wɔk əˈweɪ ˈsloʊli/",
+      "zh": "別打牠，慢慢走開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That scared me more than expected.",
+      "phonetic": "/ðæt skɛrd mi mɔr ðæn ɪkˈspɛktɪd/",
+      "zh": "那比我想的還嚇人。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sit down and breathe a moment.",
+      "phonetic": "/sɪt daʊn æn brið ə ˈmoʊmənt/",
+      "zh": "坐下喘口氣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Maybe we should move somewhere quieter.",
+      "phonetic": "/ˈmeɪbi wi ʃʊd muv ˈsʌmwɛr ˈkwaɪətər/",
+      "zh": "也許我們該換到安靜點的地方。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The far rows have fewer bees.",
+      "phonetic": "/ðə fɑr roʊz hæv ˈfjuər biz/",
+      "zh": "遠一點的行列蜜蜂較少。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Somebody already stripped that row.",
+      "phonetic": "/ˈsʌmbɑdi ɔlˈrɛdi strɪpt ðæt roʊ/",
+      "zh": "有人已經把那排採光了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Look, only leaves are left there.",
+      "phonetic": "/lʊk ˈoʊnli livz ər lɛft ðɛr/",
+      "zh": "你看，那裡只剩葉子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Our whole plan just fell apart.",
+      "phonetic": "/aʊər hoʊl plæn dʒʌst fɛl əˈpɑrt/",
+      "zh": "我們的計畫整個泡湯了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Relax, we still have six rows.",
+      "phonetic": "/rɪˈlæks wi stɪl hæv sɪks roʊz/",
+      "zh": "放輕鬆，我們還有六排。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Careful, the basket is tipping over.",
+      "phonetic": "/ˈkɛrfəl ðə ˈbæskɪt ɪz ˈtɪpɪŋ ˈoʊvər/",
+      "zh": "小心，籃子快翻了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Oh no, everything spilled out.",
+      "phonetic": "/oʊ noʊ ˈɛvriˌθɪŋ spɪld aʊt/",
+      "zh": "糟糕，全部灑出來了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Berries are rolling down the hill.",
+      "phonetic": "/ˈbɛriz ər ˈroʊlɪŋ daʊn ðə hɪl/",
+      "zh": "莓果滾下山坡了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Grab the ones near the path.",
+      "phonetic": "/ɡræb ðə wʌnz nɪr ðə pæθ/",
+      "zh": "把靠近小徑的撿起來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Half of our morning is gone.",
+      "phonetic": "/hæf əv aʊər ˈmɔrnɪŋ ɪz ɡɔn/",
+      "zh": "我們早上一半都沒了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let's pick again, but smarter.",
+      "phonetic": "/lɛts pɪk əˈɡɛn bʌt ˈsmɑrtər/",
+      "zh": "我們重採，但更聰明點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Dirty berries can't be sold anyway.",
+      "phonetic": "/ˈdɜrti ˈbɛriz kænt bi soʊld ˈɛniˌweɪ/",
+      "zh": "髒掉的莓果反正也賣不了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We'll rinse the good ones later.",
+      "phonetic": "/wɪl rɪns ðə ɡʊd wʌnz ˈleɪtər/",
+      "zh": "好的那些我們晚點沖洗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Next time I'll hold it tighter.",
+      "phonetic": "/nɛkst taɪm aɪl hoʊld ɪt ˈtaɪtər/",
+      "zh": "下次我會拿緊一點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Set it on flat ground instead.",
+      "phonetic": "/sɛt ɪt ɑn flæt ɡraʊnd ɪnˈstɛd/",
+      "zh": "改成放在平地上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That lesson cost us ten minutes.",
+      "phonetic": "/ðæt ˈlɛsən kɔst ʌs tɛn ˈmɪnɪts/",
+      "zh": "那堂課花了我們十分鐘。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "At least nobody got hurt.",
+      "phonetic": "/æt list ˈnoʊbədi ɡɑt hɜrt/",
+      "zh": "至少沒人受傷。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's work in pairs from now on.",
+      "phonetic": "/lɛts wɜrk ɪn pɛrz frəm naʊ ɑn/",
+      "zh": "我們從現在開始兩人一組。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good idea, one holds, one picks.",
+      "phonetic": "/ɡʊd aɪˈdiə wʌn hoʊldz wʌn pɪks/",
+      "zh": "好主意，一個拿一個採。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That row near the shed is open.",
+      "phonetic": "/ðæt roʊ nɪr ðə ʃɛd ɪz ˈoʊpən/",
+      "zh": "棚子旁那排是空著的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Perfect, let's head over there.",
+      "phonetic": "/ˈpɜrfɪkt lɛts hɛd ˈoʊvər ðɛr/",
+      "zh": "太好了，我們過去那邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now we're back on track again.",
+      "phonetic": "/naʊ wɪr bæk ɑn træk əˈɡɛn/",
+      "zh": "我們又回到正軌了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And this time the basket stays.",
+      "phonetic": "/æn ðɪs taɪm ðə ˈbæskɪt steɪz/",
+      "zh": "這次籃子會好好待著。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This spot is quieter and shadier.",
+      "phonetic": "/ðɪs spɑt ɪz ˈkwaɪətər æn ˈʃeɪdiər/",
+      "zh": "這裡比較安靜也比較陰涼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Plenty of berries hang here too.",
+      "phonetic": "/ˈplɛnti əv ˈbɛriz hæŋ hɪr tu/",
+      "zh": "這裡也掛了很多莓果。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Reach for the ones underneath leaves.",
+      "phonetic": "/ritʃ fɔr ðə wʌnz ˌʌndərˈniθ livz/",
+      "zh": "搆葉子下面的那些。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Found three hiding right there.",
+      "phonetic": "/faʊnd θri ˈhaɪdɪŋ raɪt ðɛr/",
+      "zh": "就在那裡找到三顆藏的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Those look even better than before.",
+      "phonetic": "/ðoʊz lʊk ˈivən ˈbɛtər ðæn bɪˈfɔr/",
+      "zh": "那些看起來比之前的更好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Losing that row helped us somehow.",
+      "phonetic": "/ˈluzɪŋ ðæt roʊ hɛlpt ʌs ˈsʌmhaʊ/",
+      "zh": "丟了那排反而幫了我們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Funny how things work out.",
+      "phonetic": "/ˈfʌni haʊ θɪŋz wɜrk aʊt/",
+      "zh": "事情就是這麼奇妙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let's not plan so tightly again.",
+      "phonetic": "/lɛts nɑt plæn soʊ ˈtaɪtli əˈɡɛn/",
+      "zh": "我們別再計畫得那麼緊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Try this one, it's perfect.",
+      "phonetic": "/traɪ ðɪs wʌn ɪts ˈpɜrfɪkt/",
+      "zh": "試試這顆，很完美。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sweet with a tiny bit of tart.",
+      "phonetic": "/swit wɪð ə ˈtaɪni bɪt əv tɑrt/",
+      "zh": "甜中帶一點酸。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which of these should we keep?",
+      "phonetic": "/wɪtʃ əv ðiz ʃʊd wi kip?/",
+      "zh": "這些裡面哪些要留？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep the firm ones, drop the rest.",
+      "phonetic": "/kip ðə fɜrm wʌnz drɑp ðə rɛst/",
+      "zh": "留下硬的，其他丟掉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sorting takes longer than picking.",
+      "phonetic": "/ˈsɔrtɪŋ teɪks ˈlɔŋɡər ðæn ˈpɪkɪŋ/",
+      "zh": "分類比採還久。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just do it while we walk.",
+      "phonetic": "/dʒʌst du ɪt waɪl wi wɔk/",
+      "zh": "邊走邊做就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Careful with the ones we dropped.",
+      "phonetic": "/ˈkɛrfəl wɪð ðə wʌnz wi drɑpt/",
+      "zh": "小心我們掉的那些。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I washed them with my bottle.",
+      "phonetic": "/aɪ wɑʃt ðɛm wɪð maɪ ˈbɑtəl/",
+      "zh": "我用我的水瓶沖過了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Honestly, this is more fun now.",
+      "phonetic": "/ˈɑnəstli ðɪs ɪz mɔr fʌn naʊ/",
+      "zh": "老實說，現在這樣更好玩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Small disasters make good stories.",
+      "phonetic": "/smɔl dɪˈzæstərz meɪk ɡʊd ˈstɔriz/",
+      "zh": "小災難會變成好故事。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Look at that old wooden ladder.",
+      "phonetic": "/lʊk æt ðæt oʊld ˈwʊdən ˈlædər/",
+      "zh": "你看那個舊木梯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Workers use it for the high branches.",
+      "phonetic": "/ˈwɜrkərz juz ɪt fɔr ðə haɪ ˈbræntʃɪz/",
+      "zh": "工人用它搆高處的枝條。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should we ask to borrow it?",
+      "phonetic": "/ʃʊd wi æsk tə ˈbɑroʊ ɪt?/",
+      "zh": "我們要問看看能不能借嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Better not, it looks unsafe.",
+      "phonetic": "/ˈbɛtər nɑt ɪt lʊks ʌnˈseɪf/",
+      "zh": "還是不要，看起來不安全。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Fair enough, we'll stay on the ground.",
+      "phonetic": "/fɛr ɪˈnʌf wɪl steɪ ɑn ðə ɡraʊnd/",
+      "zh": "也對，我們待在地面就好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Low branches have plenty anyway.",
+      "phonetic": "/loʊ ˈbræntʃɪz hæv ˈplɛnti ˈɛniˌweɪ/",
+      "zh": "低枝上反正也很多。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This basket is half full now.",
+      "phonetic": "/ðɪs ˈbæskɪt ɪz hæf fʊl naʊ/",
+      "zh": "這籃現在半滿了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Another hour and we're done.",
+      "phonetic": "/əˈnʌðər ˈaʊər æn wɪr dʌn/",
+      "zh": "再一小時我們就採完。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My back is starting to ache.",
+      "phonetic": "/maɪ bæk ɪz ˈstɑrtɪŋ tə eɪk/",
+      "zh": "我的背開始痠了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stand up and stretch your arms.",
+      "phonetic": "/stænd ʌp æn strɛtʃ jʊr ɑrmz/",
+      "zh": "站起來伸展一下手臂。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Those kids over there are laughing.",
+      "phonetic": "/ðoʊz kɪdz ˈoʊvər ðɛr ər ˈlæfɪŋ/",
+      "zh": "那邊那些小孩在笑。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One just fell into the bushes.",
+      "phonetic": "/wʌn dʒʌst fɛl ˈɪntu ðə ˈbʊʃɪz/",
+      "zh": "一個剛跌進樹叢裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Kids always find the funniest spots.",
+      "phonetic": "/kɪdz ˈɔlweɪz faɪnd ðə ˈfʌniəst spɑts/",
+      "zh": "小孩總能找到最好玩的地方。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Remember when you were that small?",
+      "phonetic": "/rɪˈmɛmbər wɛn ju wɜr ðæt smɔl?/",
+      "zh": "還記得你那麼小的時候嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Barely, but I remember the taste.",
+      "phonetic": "/ˈbɛrli bʌt aɪ rɪˈmɛmbər ðə teɪst/",
+      "zh": "不太記得，但記得味道。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Some things never really leave us.",
+      "phonetic": "/sʌm θɪŋz ˈnɛvər ˈrɪli liv ʌs/",
+      "zh": "有些事永遠不會真的離開我們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's fill this basket properly.",
+      "phonetic": "/lɛts fɪl ðɪs ˈbæskɪt ˈprɑpərli/",
+      "zh": "我們把這籃好好裝滿。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No rush, we have all morning.",
+      "phonetic": "/noʊ rʌʃ wi hæv ɔl ˈmɔrnɪŋ/",
+      "zh": "不急，我們有一整個早上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Actually, it's almost eleven already.",
+      "phonetic": "/ˈæktʃuəli ɪts ˈɔlmoʊst ɪˈlɛvən ɔlˈrɛdi/",
+      "zh": "其實已經快十一點了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then we should speed up a bit.",
+      "phonetic": "/ðɛn wi ʃʊd spid ʌp ə bɪt/",
+      "zh": "那我們該加快一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Steady beats fast when picking berries.",
+      "phonetic": "/ˈstɛdi bits fæst wɛn ˈpɪkɪŋ ˈbɛriz/",
+      "zh": "採莓果時穩比快好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You sound like grandpa right now.",
+      "phonetic": "/ju saʊnd laɪk ˈɡrænpɑ raɪt naʊ/",
+      "zh": "你現在講話像爺爺。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That's the nicest thing you've said.",
+      "phonetic": "/ðæts ðə ˈnaɪsəst θɪŋ juv sɛd/",
+      "zh": "那是你說過最好的話。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Do not get used to it.",
+      "phonetic": "/du nɑt ɡɛt juzd tu ɪt/",
+      "zh": "別習慣就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Almost done with this whole row.",
+      "phonetic": "/ˈɔlmoʊst dʌn wɪð ðɪs hoʊl roʊ/",
+      "zh": "這整排快採完了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, my knees need a rest.",
+      "phonetic": "/ɡʊd maɪ niz nid ə rɛst/",
+      "zh": "好，我的膝蓋需要休息。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Rest under that big oak tree.",
+      "phonetic": "/rɛst ˈʌndər ðæt bɪɡ oʊk tri/",
+      "zh": "在那棵大橡樹下休息。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sounds perfect after all this bending.",
+      "phonetic": "/saʊndz ˈpɜrfɪkt ˈæftər ɔl ðɪs ˈbɛndɪŋ/",
+      "zh": "彎腰這麼久之後聽起來很完美。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Bring the basket along with us.",
+      "phonetic": "/brɪŋ ðə ˈbæskɪt əˈlɔŋ wɪð ʌs/",
+      "zh": "把籃子一起帶過去。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I've got it, you go ahead.",
+      "phonetic": "/aɪv ɡɑt ɪt ju ɡoʊ əˈhɛd/",
+      "zh": "我拿就好，你先走。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This shade feels like a reward.",
+      "phonetic": "/ðɪs ʃeɪd filz laɪk ə rɪˈwɔrd/",
+      "zh": "這片陰涼像是一種獎賞。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And the berries survived the morning.",
+      "phonetic": "/æn ðə ˈbɛriz sərˈvaɪvd ðə ˈmɔrnɪŋ/",
+      "zh": "而且莓果撐過了這個早上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Weather turned out nicer than forecast.",
+      "phonetic": "/ˈwɛðɚ tɜrnd aʊt ˈnaɪsər ðæn ˈfɔrkæst/",
+      "zh": "天氣比預報的還好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No clouds at all this morning.",
+      "phonetic": "/noʊ klaʊdz æt ɔl ðɪs ˈmɔrnɪŋ/",
+      "zh": "今天早上完全沒雲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sunblock is dripping into my eyes.",
+      "phonetic": "/ˈsʌnblɑk ɪz ˈdrɪpɪŋ ˈɪntu maɪ aɪz/",
+      "zh": "防曬乳流進我眼睛了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here, take this clean cloth.",
+      "phonetic": "/hɪr teɪk ðɪs klin klɔθ/",
+      "zh": "來，用這塊乾淨的布。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Bugs keep landing on my neck.",
+      "phonetic": "/bʌɡz kip ˈlændɪŋ ɑn maɪ nɛk/",
+      "zh": "蟲子一直停在我脖子上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They like the sweet juice smell.",
+      "phonetic": "/ðeɪ laɪk ðə swit dʒus smɛl/",
+      "zh": "牠們喜歡甜果汁的味道。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Any plans for the weekend?",
+      "phonetic": "/ˈɛni plænz fɔr ðə ˈwikˌend?/",
+      "zh": "週末有什麼計畫嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nothing big, maybe a movie.",
+      "phonetic": "/ˈnʌθɪŋ bɪɡ ˈmeɪbi ə ˈmuvi/",
+      "zh": "沒什麼大事，也許看場電影。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wasn't your cousin visiting soon?",
+      "phonetic": "/ˈwʌzənt jʊr ˈkʌzən ˈvɪzɪtɪŋ sun?/",
+      "zh": "你表弟不是快來了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Saturday, and she loves berries.",
+      "phonetic": "/ˈsætərˌdeɪ æn ʃi lʌvz ˈbɛriz/",
+      "zh": "週六，她很愛莓果。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then bring her here next time.",
+      "phonetic": "/ðɛn brɪŋ hɜr hɪr nɛkst taɪm/",
+      "zh": "那下次帶她來這裡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She'd fill ten baskets alone.",
+      "phonetic": "/ʃid fɪl tɛn ˈbæskɪts əˈloʊn/",
+      "zh": "她一個人會裝滿十籃。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Over there, that family is loud.",
+      "phonetic": "/ˈoʊvər ðɛr ðæt ˈfæməli ɪz laʊd/",
+      "zh": "那邊那家人好吵。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They're arguing about the bucket.",
+      "phonetic": "/ðɛr ˈɑrɡjuɪŋ əˈbaʊt ðə ˈbʌkɪt/",
+      "zh": "他們在為桶子吵架。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Parents always fight over small things.",
+      "phonetic": "/ˈpɛrənts ˈɔlweɪz faɪt ˈoʊvər smɔl θɪŋz/",
+      "zh": "父母總是為小事吵。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then they share the pie later.",
+      "phonetic": "/ðɛn ðeɪ ʃɛr ðə paɪ ˈleɪtər/",
+      "zh": "然後他們晚點又一起分吃那個派。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Their little girl waves at us.",
+      "phonetic": "/ðɛr ˈlɪtəl ɡɜrl weɪvz æt ʌs/",
+      "zh": "他們的小女兒向我們揮手。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wave back, she looks so happy.",
+      "phonetic": "/weɪv bæk ʃi lʊks soʊ ˈhæpi/",
+      "zh": "揮回去，她看起來好開心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Want to swap baskets for a while?",
+      "phonetic": "/wɑnt tə swɑp ˈbæskɪts fɔr ə waɪl?/",
+      "zh": "要不要交換一下籃子？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, mine is getting heavy.",
+      "phonetic": "/ʃʊr maɪn ɪz ˈɡɛtɪŋ ˈhɛvi/",
+      "zh": "好啊，我的越來越重了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yours has a broken side handle.",
+      "phonetic": "/jʊrz hæz ə ˈbroʊkən saɪd ˈhændəl/",
+      "zh": "你那個側邊提把斷了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That explains the strange wobble.",
+      "phonetic": "/ðæt ɪkˈspleɪnz ðə streɪndʒ ˈwɑbəl/",
+      "zh": "難怪它怪怪地晃。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hold this one close to your chest.",
+      "phonetic": "/hoʊld ðɪs wʌn kloʊs tə jʊr tʃɛst/",
+      "zh": "這個抱在胸前拿。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Much easier on my arms.",
+      "phonetic": "/mʌtʃ ˈiziər ɑn maɪ ɑrmz/",
+      "zh": "手臂輕鬆多了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's take a photo together.",
+      "phonetic": "/lɛts teɪk ə ˈfoʊtoʊ təˈɡɛðər/",
+      "zh": "我們合照一張吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stand by the fullest bush.",
+      "phonetic": "/stænd baɪ ðə ˈfʊləst bʊʃ/",
+      "zh": "站在最滿的樹叢旁。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Smile, the sun is behind us.",
+      "phonetic": "/smaɪl ðə sʌn ɪz bɪˈhaɪnd ʌs/",
+      "zh": "笑一個，太陽在我們後面。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wait, my hair is a mess.",
+      "phonetic": "/weɪt maɪ hɛr ɪz ə mɛs/",
+      "zh": "等等，我的頭髮很亂。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Nobody cares about your hair.",
+      "phonetic": "/ˈnoʊbədi kɛrz əˈbaʊt jʊr hɛr/",
+      "zh": "沒人在乎你的頭髮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fine, take it really quick.",
+      "phonetic": "/faɪn teɪk ɪt ˈrɪli kwɪk/",
+      "zh": "好啦，快點拍。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That photo caught your silly face.",
+      "phonetic": "/ðæt ˈfoʊtoʊ kɔt jʊr ˈsɪli feɪs/",
+      "zh": "那張照片拍到你的傻臉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Delete it, I'm serious.",
+      "phonetic": "/dɪˈlit ɪt aɪm ˈsɪriəs/",
+      "zh": "刪掉，我是認真的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Fine, but I'm keeping this one.",
+      "phonetic": "/faɪn bʌt aɪm ˈkipɪŋ ðɪs wʌn/",
+      "zh": "好啦，但這張我要留。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You always keep the worst ones.",
+      "phonetic": "/ju ˈɔlweɪz kip ðə wɜrst wʌnz/",
+      "zh": "你總留最糟的那些。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Clouds are rolling in from the west.",
+      "phonetic": "/klaʊdz ər ˈroʊlɪŋ ɪn frəm ðə wɛst/",
+      "zh": "雲從西邊湧上來了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Maybe rain by the late afternoon.",
+      "phonetic": "/ˈmeɪbi reɪn baɪ ðə leɪt ˌæftərˈnun/",
+      "zh": "也許傍晚會下雨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then we should leave before that.",
+      "phonetic": "/ðɛn wi ʃʊd liv bɪˈfɔr ðæt/",
+      "zh": "那我們該在那之前離開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Agreed, one more row only.",
+      "phonetic": "/əˈɡrid wʌn mɔr roʊ ˈoʊnli/",
+      "zh": "同意，只再採一排。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wind feels lovely on hot skin.",
+      "phonetic": "/wɪnd filz ˈlʌvli ɑn hɑt skɪn/",
+      "zh": "風吹在熱熱的皮膚上很舒服。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nature's own little air conditioner.",
+      "phonetic": "/ˈneɪtʃərz oʊn ˈlɪtəl ɛr kənˈdɪʃənər/",
+      "zh": "大自然自己的小空調。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Listen, someone is playing music.",
+      "phonetic": "/ˈlɪsən ˈsʌmwʌn ɪz ˈpleɪɪŋ ˈmjuzɪk/",
+      "zh": "聽，有人在放音樂。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's coming from the picnic area.",
+      "phonetic": "/ðæts ˈkʌmɪŋ frəm ðə ˈpɪknɪk ˈɛriə/",
+      "zh": "那是從野餐區傳來的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We should eat there afterwards.",
+      "phonetic": "/wi ʃʊd it ðɛr ˈæftərwərdz/",
+      "zh": "我們之後應該去那裡吃。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only if my back recovers.",
+      "phonetic": "/ˈoʊnli ɪf maɪ bæk rɪˈkʌvərz/",
+      "zh": "只要我的背恢復就行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Two more baskets and we're finished.",
+      "phonetic": "/tu mɔr ˈbæskɪts æn wɪr ˈfɪnɪʃt/",
+      "zh": "再兩籃我們就完成了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's a lot of berries honestly.",
+      "phonetic": "/ðæts ə lɑt əv ˈbɛriz ˈɑnəstli/",
+      "zh": "老實說那莓果量很多。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Neighbors will love a few jars.",
+      "phonetic": "/ˈneɪbərz wɪl lʌv ə fju dʒɑrz/",
+      "zh": "鄰居會喜歡幾罐的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And grandma makes great pie.",
+      "phonetic": "/æn ˈɡrænmɑ meɪks ɡreɪt paɪ/",
+      "zh": "而且奶奶很會做派。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now my mouth is watering already.",
+      "phonetic": "/naʊ maɪ maʊθ ɪz ˈwɔtərɪŋ ɔlˈrɛdi/",
+      "zh": "我現在已經在流口水了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Focus, we still have work.",
+      "phonetic": "/ˈfoʊkəs wi stɪl hæv wɜrk/",
+      "zh": "專心，我們還有活要幹。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That woman said the jam sells out.",
+      "phonetic": "/ðæt ˈwʊmən sɛd ðə dʒæm sɛlz aʊt/",
+      "zh": "那位女士說果醬會賣完。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then we should buy ours early.",
+      "phonetic": "/ðɛn wi ʃʊd baɪ ˈaʊərz ˈɜrli/",
+      "zh": "那我們該早點買。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Their kids are counting their berries.",
+      "phonetic": "/ðɛr kɪdz ər ˈkaʊntɪŋ ðɛr ˈbɛriz/",
+      "zh": "他們的小孩在數莓果。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cute, I would eat mine first.",
+      "phonetic": "/kjut aɪ wʊd it maɪn fɜrst/",
+      "zh": "真可愛，我會先吃掉我的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One boy dropped his whole box.",
+      "phonetic": "/wʌn bɔɪ drɑpt hɪz hoʊl bɑks/",
+      "zh": "一個男孩把整盒掉了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Poor kid, he looks heartbroken.",
+      "phonetic": "/pʊr kɪd hi lʊks ˈhɑrtˌbroʊkən/",
+      "zh": "可憐的孩子，他看起來心碎了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should we give him some of ours?",
+      "phonetic": "/ʃʊd wi ɡɪv hɪm sʌm əv ˈaʊərz?/",
+      "zh": "我們要分一些給他嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, we have more than enough.",
+      "phonetic": "/ʃʊr wi hæv mɔr ðæn ɪˈnʌf/",
+      "zh": "好啊，我們多得是。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "His mother just thanked us twice.",
+      "phonetic": "/hɪz ˈmʌðər dʒʌst θæŋkt ʌs twaɪs/",
+      "zh": "他媽媽跟我們道謝了兩次。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Kindness travels fast around here.",
+      "phonetic": "/ˈkaɪndnəs ˈtrævəlz fæst əˈraʊnd hɪr/",
+      "zh": "善意在這裡傳得很快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Feels good to share something small.",
+      "phonetic": "/filz ɡʊd tə ʃɛr ˈsʌmθɪŋ smɔl/",
+      "zh": "分享一點小東西感覺很好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's what makes a good day.",
+      "phonetic": "/ðæts wʌt meɪks ə ɡʊd deɪ/",
+      "zh": "這就是美好一天的原因。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's finish this last stretch now.",
+      "phonetic": "/lɛts ˈfɪnɪʃ ðɪs læst strɛtʃ naʊ/",
+      "zh": "我們把最後這段採完吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My basket is nearly overflowing.",
+      "phonetic": "/maɪ ˈbæskɪt ɪz ˈnɪrli ˌoʊvərˈfloʊɪŋ/",
+      "zh": "我的籃子快滿出來了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Stack them gently in the cart.",
+      "phonetic": "/stæk ðɛm ˈdʒɛntli ɪn ðə kɑrt/",
+      "zh": "輕輕疊放在推車上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Careful, that pile looks shaky.",
+      "phonetic": "/ˈkɛrfəl ðæt paɪl lʊks ˈʃeɪki/",
+      "zh": "小心，那堆看起來不穩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Nothing is falling this time.",
+      "phonetic": "/ˈnʌθɪŋ ɪz ˈfɔlɪŋ ðɪs taɪm/",
+      "zh": "這次什麼都不會掉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Don't say that out loud.",
+      "phonetic": "/doʊnt seɪ ðæt aʊt laʊd/",
+      "zh": "別說出口。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Everyone is heading to the shed.",
+      "phonetic": "/ˈɛvriˌwʌn ɪz ˈhɛdɪŋ tə ðə ʃɛd/",
+      "zh": "大家都往棚子去了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That must be the weighing station.",
+      "phonetic": "/ðæt mʌst bi ðə ˈweɪɪŋ ˈsteɪʃən/",
+      "zh": "那一定是稱重站。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is there a line already?",
+      "phonetic": "/ɪz ðɛr ə laɪn ɔlˈrɛdi?/",
+      "zh": "已經有人在排隊了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Short one, maybe four people.",
+      "phonetic": "/ʃɔrt wʌn ˈmeɪbi fɔr ˈpipəl/",
+      "zh": "短短的，大概四個人。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good, we can rest our legs.",
+      "phonetic": "/ɡʊd wi kæn rɛst aʊər lɛɡz/",
+      "zh": "好，可以讓腿休息一下。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mine are completely numb now.",
+      "phonetic": "/maɪn ər kəmˈplitli nʌm naʊ/",
+      "zh": "我的腿現在完全麻了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Dust is all over our shoes.",
+      "phonetic": "/dʌst ɪz ɔl ˈoʊvər aʊər ʃuz/",
+      "zh": "我們的鞋子都是灰塵。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Brush them off before the car.",
+      "phonetic": "/brʌʃ ðɛm ɔf bɪˈfɔr ðə kɑr/",
+      "zh": "上車前拍掉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My shirt has purple fingerprints.",
+      "phonetic": "/maɪ ʃɜrt hæz ˈpɜrpəl ˈfɪŋɡərˌprɪnts/",
+      "zh": "我的襯衫有紫色指印。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep it, it tells a story.",
+      "phonetic": "/kip ɪt ɪt tɛlz ə ˈstɔri/",
+      "zh": "留著吧，它有個故事。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Nobody will believe this stain.",
+      "phonetic": "/ˈnoʊbədi wɪl bɪˈliv ðɪs steɪn/",
+      "zh": "沒人會相信這個汙漬。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Show them the photo as proof.",
+      "phonetic": "/ʃoʊ ðɛm ðə ˈfoʊtoʊ æz pruf/",
+      "zh": "給他們看照片當證據。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Almost our turn at the scale.",
+      "phonetic": "/ˈɔlmoʊst aʊər tɜrn æt ðə skeɪl/",
+      "zh": "快輪到我們秤重了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hand me both baskets please.",
+      "phonetic": "/hænd mi boʊθ ˈbæskɪts pliz/",
+      "zh": "請把兩個籃子都給我。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One basket is heavier than the other.",
+      "phonetic": "/wʌn ˈbæskɪt ɪz ˈhɛviər ðæn ði ˈʌðər/",
+      "zh": "一個籃子比另一個重。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That one has the big berries.",
+      "phonetic": "/ðæt wʌn hæz ðə bɪɡ ˈbɛriz/",
+      "zh": "那個裝的是大顆的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We should weigh them separately.",
+      "phonetic": "/wi ʃʊd weɪ ðɛm ˈsɛpərətli/",
+      "zh": "我們該分開秤。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Doesn't matter, the price is the same.",
+      "phonetic": "/ˈdʌzənt ˈmætər ðə praɪs ɪz ðə seɪm/",
+      "zh": "沒差，價格都一樣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is the price per pound?",
+      "phonetic": "/wʌt ɪz ðə praɪs pɜr paʊnd?/",
+      "zh": "每磅多少錢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Three dollars, cash or card.",
+      "phonetic": "/θri ˈdɑlərz kæʃ ɔr kɑrd/",
+      "zh": "三塊錢，現金或刷卡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We have about six pounds here.",
+      "phonetic": "/wi hæv əˈbaʊt sɪks paʊndz hɪr/",
+      "zh": "我們這裡大概六磅。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's eighteen dollars altogether.",
+      "phonetic": "/ðæts ˌeɪˈtin ˈdɑlərz ˌɔltəˈɡɛðər/",
+      "zh": "總共十八塊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sounds fair for a morning's work.",
+      "phonetic": "/saʊndz fɛr fɔr ə ˈmɔrnɪŋz wɜrk/",
+      "zh": "以一個早上的成果來說很合理。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cheaper than the grocery store.",
+      "phonetic": "/ˈtʃipər ðæn ðə ˈɡroʊsəri stɔr/",
+      "zh": "比超市便宜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "And these taste much fresher.",
+      "phonetic": "/æn ðiz teɪst mʌtʃ ˈfrɛʃər/",
+      "zh": "而且這些嚐起來新鮮多了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Freshness is worth the dirt.",
+      "phonetic": "/ˈfrɛʃnəs ɪz wɜrθ ðə dɜrt/",
+      "zh": "新鮮值得這些泥土。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's pay and get the jam.",
+      "phonetic": "/lɛts peɪ æn ɡɛt ðə dʒæm/",
+      "zh": "我們付錢然後去買果醬。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Jam would make a lovely gift.",
+      "phonetic": "/dʒæm wʊd meɪk ə ˈlʌvli ɡɪft/",
+      "zh": "果醬會是很好的禮物。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She'll be thrilled with that gift.",
+      "phonetic": "/ʃil bi θrɪld wɪð ðæt ɡɪft/",
+      "zh": "她會很喜歡那份禮物。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Add a small bag of berries too.",
+      "phonetic": "/æd ə smɔl bæɡ əv ˈbɛriz tu/",
+      "zh": "再加一小袋莓果。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Checkout line is moving quickly.",
+      "phonetic": "/ˈtʃɛkaʊt laɪn ɪz ˈmuvɪŋ ˈkwɪkli/",
+      "zh": "結帳隊伍動得很快。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Perfect timing before the rain.",
+      "phonetic": "/ˈpɜrfɪkt ˈtaɪmɪŋ bɪˈfɔr ðə reɪn/",
+      "zh": "正好趕在下雨前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please put the baskets on the scale.",
+      "phonetic": "/pliz pʊt ðə ˈbæskɪts ɑn ðə skeɪl/",
+      "zh": "請把籃子放到秤上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One at a time, gently.",
+      "phonetic": "/wʌn æt ə taɪm ˈdʒɛntli/",
+      "zh": "一次一個，輕輕放。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The needle stops at seven pounds.",
+      "phonetic": "/ðə ˈnidəl stɑps æt ˈsɛvən paʊndz/",
+      "zh": "指針停在七磅。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "More than we guessed earlier.",
+      "phonetic": "/mɔr ðæn wi ɡɛst ˈɜrliər/",
+      "zh": "比我們先前猜的多。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does that include the basket weight?",
+      "phonetic": "/dʌz ðæt ɪnˈklud ðə ˈbæskɪt weɪt?/",
+      "zh": "那包含籃子的重量嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, we subtract the empty ones.",
+      "phonetic": "/noʊ wi səbˈtrækt ði ˈɛmpti wʌnz/",
+      "zh": "沒有，我們會扣掉空籃重。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then it's really about six pounds.",
+      "phonetic": "/ðɛn ɪts ˈrɪli əˈbaʊt sɪks paʊndz/",
+      "zh": "那其實大約六磅。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Right, eighteen dollars in total.",
+      "phonetic": "/raɪt ˌeɪˈtin ˈdɑlərz ɪn ˈtoʊtəl/",
+      "zh": "對，總共十八塊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Here's a twenty dollar bill.",
+      "phonetic": "/hɪrz ə ˈtwɛnti ˈdɑlər bɪl/",
+      "zh": "這裡是二十塊鈔票。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two dollars back, here you go.",
+      "phonetic": "/tu ˈdɑlərz bæk hɪr ju ɡoʊ/",
+      "zh": "找您兩塊，拿好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we buy a jar of jam?",
+      "phonetic": "/kæn wi baɪ ə dʒɑr əv dʒæm?/",
+      "zh": "我們也可以買一罐果醬嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, strawberry or mixed berry?",
+      "phonetic": "/ʃʊr ˈstrɔˌbɛri ɔr mɪkst ˈbɛri?/",
+      "zh": "當然，草莓還是綜合莓？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Mixed berry sounds more interesting.",
+      "phonetic": "/mɪkst ˈbɛri saʊndz mɔr ˈɪntrəstɪŋ/",
+      "zh": "綜合莓聽起來有意思些。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It's made from this very farm.",
+      "phonetic": "/ɪts meɪd frəm ðɪs ˈvɛri fɑrm/",
+      "zh": "就是用這個農場的果子做的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How long does the jam last?",
+      "phonetic": "/haʊ lɔŋ dʌz ðə dʒæm læst?/",
+      "zh": "這果醬能放多久？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Six months if kept cool.",
+      "phonetic": "/sɪks mʌnθs ɪf kɛpt kul/",
+      "zh": "冷藏的話六個月。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That's plenty of time for us.",
+      "phonetic": "/ðæts ˈplɛnti əv taɪm fɔr ʌs/",
+      "zh": "對我們來說時間很充裕。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Everyone says it disappears faster.",
+      "phonetic": "/ˈɛvriˌwʌn sɛz ɪt ˌdɪsəˈpɪrz ˈfæstər/",
+      "zh": "大家都說它消失得更快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Two jars might be safer.",
+      "phonetic": "/tu dʒɑrz maɪt bi ˈseɪfər/",
+      "zh": "買兩罐也許比較保險。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Smart, the shelf is almost empty.",
+      "phonetic": "/smɑrt ðə ʃɛlf ɪz ˈɔlmoʊst ˈɛmpti/",
+      "zh": "聰明，架上快空了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please bag the jam separately.",
+      "phonetic": "/pliz bæɡ ðə dʒæm ˈsɛpərətli/",
+      "zh": "請把果醬另外裝袋。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Anything else before I ring it up?",
+      "phonetic": "/ˈɛniˌθɪŋ ɛls bɪˈfɔr aɪ rɪŋ ɪt ʌp?/",
+      "zh": "結帳前還要別的嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That's everything, thanks very much.",
+      "phonetic": "/ðæts ˈɛvriˌθɪŋ θæŋks ˈvɛri mʌtʃ/",
+      "zh": "就這樣，非常謝謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The two jars come to four dollars.",
+      "phonetic": "/ðə tu dʒɑrz kʌm tu fɔr ˈdɑlərz/",
+      "zh": "兩罐果醬一共四塊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you take a credit card?",
+      "phonetic": "/du ju teɪk ə ˈkrɛdɪt kɑrd?/",
+      "zh": "你們收信用卡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, tap it right here.",
+      "phonetic": "/jɛs tæp ɪt raɪt hɪr/",
+      "zh": "收，在這裡感應一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The machine beeps and approves it.",
+      "phonetic": "/ðə məˈʃin bips æn əˈpruvz ɪt/",
+      "zh": "機器嗶一聲核准了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here's your receipt and a bag.",
+      "phonetic": "/hɪrz jʊr rɪˈsit æn ə bæɡ/",
+      "zh": "這是您的收據和袋子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Could we wash our hands somewhere?",
+      "phonetic": "/kʊd wi wɑʃ aʊər hændz ˈsʌmwɛr?/",
+      "zh": "我們可以去哪裡洗手嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The sink is around that corner.",
+      "phonetic": "/ðə sɪŋk ɪz əˈraʊnd ðæt ˈkɔrnər/",
+      "zh": "水槽在那個轉角。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Cold water feels amazing right now.",
+      "phonetic": "/koʊld ˈwɔtər filz əˈmeɪzɪŋ raɪt naʊ/",
+      "zh": "冷水現在感覺超棒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wash your face too, you're red.",
+      "phonetic": "/wɑʃ jʊr feɪs tu jʊr rɛd/",
+      "zh": "臉也洗洗，你紅了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's sit on the bench outside.",
+      "phonetic": "/lɛts sɪt ɑn ðə bɛntʃ ˌaʊtˈsaɪd/",
+      "zh": "我們坐外面的長椅。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just ten minutes, then we drive.",
+      "phonetic": "/dʒʌst tɛn ˈmɪnɪts ðɛn wi draɪv/",
+      "zh": "就十分鐘，然後開車。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "These clouds still look harmless.",
+      "phonetic": "/ðiz klaʊdz stɪl lʊk ˈhɑrmləs/",
+      "zh": "這些雲看起來還是無害。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wind changed, rain is unlikely.",
+      "phonetic": "/wɪnd tʃeɪndʒd reɪn ɪz ʌnˈlaɪkli/",
+      "zh": "風向變了，不太會下雨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then we can drive home slowly.",
+      "phonetic": "/ðɛn wi kæn draɪv hoʊm ˈsloʊli/",
+      "zh": "那我們可以慢慢開回家。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No hurry on a Sunday afternoon.",
+      "phonetic": "/noʊ ˈhɜri ɑn ə ˈsʌndeɪ ˌæftərˈnun/",
+      "zh": "週日下午不用趕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Put the jam carefully in the trunk.",
+      "phonetic": "/pʊt ðə dʒæm ˈkɛrfəli ɪn ðə trʌŋk/",
+      "zh": "把果醬小心放進後車廂。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wrap it in this old towel.",
+      "phonetic": "/ræp ɪt ɪn ðɪs oʊld ˈtaʊəl/",
+      "zh": "用這條舊毛巾包起來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Buckets in the back seat, please.",
+      "phonetic": "/ˈbʌkɪts ɪn ðə bæk sit pliz/",
+      "zh": "桶子請放後座。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They'll smell wonderful the whole way.",
+      "phonetic": "/ðeɪl smɛl ˈwʌndərfəl ðə hoʊl weɪ/",
+      "zh": "整路上都會聞到香味。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should we come back next month?",
+      "phonetic": "/ʃʊd wi kʌm bæk nɛkst mʌnθ?/",
+      "zh": "我們下個月再來嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Blackberries ripen by then.",
+      "phonetic": "/ˈblækˌbɛriz ˈraɪpən baɪ ðɛn/",
+      "zh": "那時候黑莓就熟了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Mark the calendar right now.",
+      "phonetic": "/mɑrk ðə ˈkæləndər raɪt naʊ/",
+      "zh": "現在就在日曆上記下來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Already saved it in my phone.",
+      "phonetic": "/ɔlˈrɛdi seɪvd ɪt ɪn maɪ foʊn/",
+      "zh": "已經存進我手機了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Same time, same parking spot.",
+      "phonetic": "/seɪm taɪm seɪm ˈpɑrkɪŋ spɑt/",
+      "zh": "同樣時間，同樣車位。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And this time two sturdy baskets.",
+      "phonetic": "/æn ðɪs taɪm tu ˈstɜrdi ˈbæskɪts/",
+      "zh": "這次帶兩個牢固的籃子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Today turned out better than planned.",
+      "phonetic": "/təˈdeɪ tɜrnd aʊt ˈbɛtər ðæn plænd/",
+      "zh": "今天比計畫的還要好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Even the spilled basket helped.",
+      "phonetic": "/ˈivən ðə spɪld ˈbæskɪt hɛlpt/",
+      "zh": "連打翻的籃子都有幫助。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Engine starts on the first try.",
+      "phonetic": "/ˈɛndʒɪn stɑrts ɑn ðə fɜrst traɪ/",
+      "zh": "引擎一次就發動了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good sign for the drive home.",
+      "phonetic": "/ɡʊd saɪn fɔr ðə draɪv hoʊm/",
+      "zh": "回家路上好預兆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Dusty fields slide past the window.",
+      "phonetic": "/ˈdʌsti fildz slaɪd pæst ðə ˈwɪndoʊ/",
+      "zh": "滿是灰塵的田野從窗外滑過。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Roll it down, smell the air.",
+      "phonetic": "/roʊl ɪt daʊn smɛl ði ɛr/",
+      "zh": "搖下車窗，聞聞空氣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Warm wind smells like cut hay.",
+      "phonetic": "/wɔrm wɪnd smɛlz laɪk kʌt heɪ/",
+      "zh": "暖風聞起來像割下的乾草。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Country roads always calm me.",
+      "phonetic": "/ˈkʌntri roʊdz ˈɔlweɪz kɑm mi/",
+      "zh": "鄉間小路總讓我平靜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My arms ache in a good way.",
+      "phonetic": "/maɪ ɑrmz eɪk ɪn ə ɡʊd weɪ/",
+      "zh": "我的手臂痠得很舒服。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's honest work paying off.",
+      "phonetic": "/ðæts ˈɑnəst wɜrk ˈpeɪɪŋ ɔf/",
+      "zh": "那是踏實工作的回報。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Nobody checked their phones once.",
+      "phonetic": "/ˈnoʊbədi tʃɛkt ðɛr foʊnz wʌns/",
+      "zh": "沒有人看過一次手機。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Funny how that happens outside.",
+      "phonetic": "/ˈfʌni haʊ ðæt ˈhæpənz ˌaʊtˈsaɪd/",
+      "zh": "在戶外就是會這樣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's cook something with these tonight.",
+      "phonetic": "/lɛts kʊk ˈsʌmθɪŋ wɪð ðiz təˈnaɪt/",
+      "zh": "今晚用這些做點東西吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pancakes with berries and cream.",
+      "phonetic": "/ˈpænkeɪks wɪð ˈbɛriz æn krim/",
+      "zh": "莓果鮮奶油鬆餅。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Save some for your mother too.",
+      "phonetic": "/seɪv sʌm fɔr jʊr ˈmʌðər tu/",
+      "zh": "也留一些給你媽媽。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She gets the first full bowl.",
+      "phonetic": "/ʃi ɡɛts ðə fɜrst fʊl boʊl/",
+      "zh": "第一碗滿的給她。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That jam will last through winter.",
+      "phonetic": "/ðæt dʒæm wɪl læst θru ˈwɪntər/",
+      "zh": "那果醬能撐過冬天。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Maybe until the next berry season.",
+      "phonetic": "/ˈmeɪbi ʌnˈtɪl ðə nɛkst ˈbɛri ˈsizən/",
+      "zh": "也許能撐到下個莓果季。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Seasons pass faster every single year.",
+      "phonetic": "/ˈsizənz pæs ˈfæstər ˈɛvri ˈsɪŋɡəl jɪr/",
+      "zh": "每一年季節都過得更快。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's why we should keep coming.",
+      "phonetic": "/ðæts waɪ wi ʃʊd kip ˈkʌmɪŋ/",
+      "zh": "所以我們該一直來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Next time bring the whole family.",
+      "phonetic": "/nɛkst taɪm brɪŋ ðə hoʊl ˈfæməli/",
+      "zh": "下次帶全家人來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Even grandpa, he'd love it.",
+      "phonetic": "/ˈivən ˈɡrænpɑ hid lʌv ɪt/",
+      "zh": "連爺爺也帶，他會很愛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He'd tell us every trick again.",
+      "phonetic": "/hid tɛl ʌs ˈɛvri trɪk əˈɡɛn/",
+      "zh": "他又會把所有訣竅講一遍。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'd listen properly this time.",
+      "phonetic": "/aɪd ˈlɪsən ˈprɑpərli ðɪs taɪm/",
+      "zh": "這次我會好好聽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Turning onto our street now.",
+      "phonetic": "/ˈtɜrnɪŋ ˈɑntu aʊər strit naʊ/",
+      "zh": "現在轉進我們那條街了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Home feels different after today.",
+      "phonetic": "/hoʊm filz ˈdɪfərənt ˈæftər təˈdeɪ/",
+      "zh": "經過今天，家感覺不一樣了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Unload the car before we rest.",
+      "phonetic": "/ʌnˈloʊd ðə kɑr bɪˈfɔr wi rɛst/",
+      "zh": "休息前先把車卸一卸。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Berries first, then the baskets.",
+      "phonetic": "/ˈbɛriz fɜrst ðɛn ðə ˈbæskɪts/",
+      "zh": "先莓果，再籃子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Rinse them under cool running water.",
+      "phonetic": "/rɪns ðɛm ˈʌndər kul ˈrʌnɪŋ ˈwɔtər/",
+      "zh": "用涼涼的流水沖洗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pat them dry on a towel.",
+      "phonetic": "/pæt ðɛm draɪ ɑn ə ˈtaʊəl/",
+      "zh": "用毛巾輕拍乾。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One bowl for tonight's dessert.",
+      "phonetic": "/wʌn boʊl fɔr təˈnaɪts dɪˈzɜrt/",
+      "zh": "一碗留給今晚的甜點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And the rest into the fridge.",
+      "phonetic": "/æn ðə rɛst ˈɪntu ðə frɪdʒ/",
+      "zh": "其餘的放進冰箱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That purple stain won't come out.",
+      "phonetic": "/ðæt ˈpɜrpəl steɪn woʊnt kʌm aʊt/",
+      "zh": "那個紫色汙漬洗不掉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wear it again next berry trip.",
+      "phonetic": "/wɛr ɪt əˈɡɛn nɛkst ˈbɛri trɪp/",
+      "zh": "下次採莓再穿它。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Photos are already in the group chat.",
+      "phonetic": "/ˈfoʊtoʊz ər ɔlˈrɛdi ɪn ðə ɡrup tʃæt/",
+      "zh": "照片已經在群組裡了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Everyone wants the jam recipe now.",
+      "phonetic": "/ˈɛvriˌwʌn wɑnts ðə dʒæm ˈrɛsəpi naʊ/",
+      "zh": "現在大家都想要果醬食譜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sleep will come easily tonight.",
+      "phonetic": "/slip wɪl kʌm ˈizəli təˈnaɪt/",
+      "zh": "今晚會很容易入睡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fresh air does that to people.",
+      "phonetic": "/frɛʃ ɛr dʌz ðæt tə ˈpipəl/",
+      "zh": "新鮮空氣對人就是這樣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Same farm, same row next time?",
+      "phonetic": "/seɪm fɑrm seɪm roʊ nɛkst taɪm?/",
+      "zh": "下次同樣的農場、同樣那排？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only if nobody picks it first.",
+      "phonetic": "/ˈoʊnli ɪf ˈnoʊbədi pɪks ɪt fɜrst/",
+      "zh": "只要沒人先採光就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We'll hide a few under the leaves.",
+      "phonetic": "/wɪl haɪd ə fju ˈʌndər ðə livz/",
+      "zh": "我們會藏幾顆在葉子下。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Clever, that's what birds do.",
+      "phonetic": "/ˈklɛvər ðæts wʌt bɜrdz du/",
+      "zh": "真聰明，鳥就是這樣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Time to close the curtains now.",
+      "phonetic": "/taɪm tə kloʊz ðə ˈkɜrtənz naʊ/",
+      "zh": "該拉上窗簾了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lights off, one last berry each.",
+      "phonetic": "/laɪts ɔf wʌn læst ˈbɛri itʃ/",
+      "zh": "關燈，最後各吃一顆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sweet dreams about the farm.",
+      "phonetic": "/swit drimz əˈbaʊt ðə fɑrm/",
+      "zh": "夢見農場。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "See you at the farm again.",
+      "phonetic": "/si ju æt ðə fɑrm əˈɡɛn/",
+      "zh": "農場再見。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Goodnight, and thanks for today.",
+      "phonetic": "/ɡʊdˈnaɪt æn θæŋks fɔr təˈdeɪ/",
+      "zh": "晚安，謝謝今天的陪伴。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Best morning we've had in months.",
+      "phonetic": "/bɛst ˈmɔrnɪŋ wiv hæd ɪn mʌnθs/",
+      "zh": "這是我們幾個月來最棒的早晨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let us do this again soon.",
+      "phonetic": "/lɛt ʌs du ðɪs əˈɡɛn sun/",
+      "zh": "我們很快再來一次。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I can still smell the berries.",
+      "phonetic": "/aɪ kæn stɪl smɛl ðə ˈbɛriz/",
+      "zh": "我還聞得到莓果的香味。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Tomorrow we'll taste the jam.",
+      "phonetic": "/təˈmɑroʊ wɪl teɪst ðə dʒæm/",
+      "zh": "明天我們來嚐果醬。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And remember this warm day.",
+      "phonetic": "/æn rɪˈmɛmbər ðɪs wɔrm deɪ/",
+      "zh": "並記得這溫暖的一天。"
+    }
+  ]
+}

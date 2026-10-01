@@ -1,0 +1,4857 @@
+{
+  "title": "Everyday Phrases — Sharing a Hot Pot Meal",
+  "title_zh": "圍爐吃火鍋",
+  "scene_zh": "吃火鍋 · 情境對話",
+  "title_quote": "The hot pot place looks packed tonight.",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】😋 實用「吃火鍋」必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡800句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "800 Everyday English Phrases While You Sleep — Sharing a Hot Pot Meal",
+  "youtube_description": "睡著學英文！這部影片收錄實用「吃火鍋」情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫）。場景是冬夜的火鍋店：門口取四十二號號碼牌、坐進角落的軟椅、選一半麻辣一半菌菇清湯的鴛鴦鍋、在點菜單上勾牛肉片與丸子、自己調兩碗不一樣的蘸料、問清楚十二秒與八分鐘的火候、請店家沿鍋邊加湯、手指燙到用冰塊和紗布處理、最後按鍋結帳、帶兩包冬粉回家。800 句循環聽，A2 程度，零基礎也能跟著開口說。常用句型包含排隊等位、點食物、請人幫忙、結帳離開。#英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical 'Sharing a Hot Pot Meal' phrase pairs (each pair: male normal speed → female slow speed → combined dialogue). The scene is a hot pot restaurant on a cold night: taking ticket number forty-two at the door, settling into the corner seat, choosing a split pot with mala on one side and mushroom broth on the other, ticking beef slices and fish balls on the order sheet, mixing two different dipping bowls, checking the twelve-second and eight-minute cooking card, asking the staff to pour more broth along the rim, cooling a scalded finger with ice and a gauze pad, then paying per pot and taking two packs of vermicelli home. 800 lines on repeat, A2 level, easy to repeat out loud even from zero.",
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "Sharing a Hot Pot Meal",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "Sharing a Hot Pot Meal",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "800句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Food & Drink",
+  "youtube_tags": [
+    "吃火鍋",
+    "Sharing a Hot Pot Meal",
+    "火鍋 英文",
+    "睡前英文聽力",
+    "英文聽力",
+    "睡前英文",
+    "800句循環聽",
+    "Food and Drink English",
+    "English listening practice",
+    "A2 English",
+    "ESL listening",
+    "hot pot restaurant dialogue",
+    "鴛鴦鍋 麻辣",
+    "點餐 英文",
+    "bedtime English"
+  ],
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "The hot pot place looks packed tonight.",
+      "phonetic": "/ðə hɑt pɑt pleɪs lʊks pækt təˈnaɪt/",
+      "zh": "火鍋店今晚看起來客滿了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let's grab a number at the front desk.",
+      "phonetic": "/lɛts ɡræb ə ˈnʌmbər æt ðə frʌnt dɛsk/",
+      "zh": "我們先去櫃台拿個號碼牌。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Excuse me, a table for two at eight?",
+      "phonetic": "/ɪkˈskjuz mi ə ˈteɪbəl fɔr tu æt eɪt/",
+      "zh": "不好意思，八點兩位還有位子嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Your ticket is forty-two, right over here.",
+      "phonetic": "/jɔr ˈtɪkɪt ɪz ˈfɔrti tu raɪt ˈoʊvər hɪr/",
+      "zh": "您的號碼牌是四十二號，就在這邊等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should we wait on this bench by the door?",
+      "phonetic": "/ʃʊd wi weɪt ɑn ðɪs bɛntʃ baɪ ðə dɔr/",
+      "zh": "我們就在門邊這張長椅上等嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the tea is free while you wait.",
+      "phonetic": "/jɛs ðə ti ɪz fri waɪl ju weɪt/",
+      "zh": "對，等位的時候茶水是免費的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do we really have forty tables ahead?",
+      "phonetic": "/du wi ˈrɪli hæv ˈfɔrti ˈteɪbəlz əˈhɛd/",
+      "zh": "我們前面真的有四十桌嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Not really, we are next after the big group.",
+      "phonetic": "/nɑt ˈrɪli wi ɑr nɛkst ˈæftər ðə bɪɡ ɡrup/",
+      "zh": "沒那麼多，那一大家子之後就輪到我們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your phone number for a text, please.",
+      "phonetic": "/jɔr foʊn ˈnʌmbər fɔr ə tɛkst pliːz/",
+      "zh": "請留一組手機號碼，好傳訊息通知。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here it is, and thank you kindly.",
+      "phonetic": "/hɪr ɪt ɪz ænd θæŋk ju ˈkaɪndli/",
+      "zh": "給你，真是麻煩你了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "These benches are cold, take my jacket.",
+      "phonetic": "/ðiz ˈbɛntʃəz ɑr koʊld teɪk maɪ ˈdʒækɪt/",
+      "zh": "長椅好冰，你先披我的外套。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thank you, but the steam will ruin it.",
+      "phonetic": "/θæŋk ju bʌt ðə stim wɪl ˈruɪn ɪt/",
+      "zh": "謝謝，可是火鍋的蒸汽會把它弄壞。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How long do we wait, about twenty minutes?",
+      "phonetic": "/haʊ lɔŋ du wi weɪt əˈbaʊt ˈtwɛnti ˈmɪnɪts/",
+      "zh": "還要等多久，大約二十分鐘嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Roughly, enough time to read the menu.",
+      "phonetic": "/ˈrʌfli ɪˈnʌf taɪm tu rid ðə ˈmɛnju/",
+      "zh": "差不多，剛好夠我們把菜單看一遍。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Look, the broth photos make me hungry.",
+      "phonetic": "/lʊk ðə brɔθ ˈfoʊtoʊz meɪk mi ˈhʌŋɡri/",
+      "zh": "你看，這些鍋底的照片看得我好餓。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The mushroom broth here is very gentle.",
+      "phonetic": "/ðə ˈmʌʃrʊm brɔθ hɪr ɪz ˈvɛri ˈdʒɛntəl/",
+      "zh": "這個店的菌菇鍋底特別溫和。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is this place famous for the mala pot?",
+      "phonetic": "/ɪz ðɪs pleɪs ˈfeɪməs fɔr ðə ˈmɑlə pɑt/",
+      "zh": "這家店是以麻辣鍋出名嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, but they make a mild version too.",
+      "phonetic": "/jɛs bʌt ðeɪ meɪk ə maɪld ˈvɜrʒən tu/",
+      "zh": "是啊，不過他們也有不辣的版本。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I hope our table has a window seat.",
+      "phonetic": "/aɪ hoʊp ˈaʊər ˈteɪbəl hæz ə ˈwɪndoʊ sit/",
+      "zh": "我希望我們的位子可以靠窗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The corner table by the plants is nice.",
+      "phonetic": "/ðə ˈkɔrnər ˈteɪbəl baɪ ðə plænts ɪz naɪs/",
+      "zh": "植物旁邊那張角落桌很舒服。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Ticket forty-two just blinked on the wall.",
+      "phonetic": "/ˈtɪkɪt ˈfɔrti tu dʒʌst blɪŋkt ɑn ðə wɔl/",
+      "zh": "四十二號剛剛在牆上亮了一下。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is us, let's carry our water over.",
+      "phonetic": "/ðæt ɪz ʌs lɛts ˈkæri ˈaʊər ˈwɔtər ˈoʊvər/",
+      "zh": "是我們了，端著水杯過去吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This table seats four, just right for us.",
+      "phonetic": "/ðɪs ˈteɪbəl sits fɔr dʒʌst raɪt fɔr ʌs/",
+      "zh": "這張四人桌剛好給我們兩個人。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sit by the window, the air is fresh.",
+      "phonetic": "/sɪt baɪ ðə ˈwɪndoʊ ði ɛr ɪz frɛʃ/",
+      "zh": "坐窗邊吧，那裡的空氣比較清爽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "See, the pot sits right in the middle.",
+      "phonetic": "/si ðə pɑt sɪts raɪt ɪn ðə ˈmɪdəl/",
+      "zh": "你看，鍋子就嵌在桌子正中間。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, and the knob turns the flame down.",
+      "phonetic": "/jɛs ænd ðə nɑb tɜrnz ðə fleɪm daʊn/",
+      "zh": "對啊，旋鈕可以把火轉小。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Here are the wet wipes for your hands.",
+      "phonetic": "/hɪr ɑr ðə wɛt waɪps fɔr jɔr hændz/",
+      "zh": "這是給你們擦手的濕巾。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Perfect, before we touch any raw beef.",
+      "phonetic": "/ˈpɜrfɪkt bɪˈfɔr wi tʌtʃ ˈɛni rɔ bif/",
+      "zh": "正好，在碰到生牛肉片之前先擦手。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "May I bring you the pot menu now?",
+      "phonetic": "/meɪ aɪ brɪŋ ju ðə pɑt ˈmɛnju naʊ/",
+      "zh": "我現在可以給你們鍋底菜單嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes please, we are ready to choose.",
+      "phonetic": "/jɛs pliːz wi ɑr ˈrɛdi tu tʃuz/",
+      "zh": "好，我們準備好要選鍋底了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Broth smells drift all the way down here.",
+      "phonetic": "/brɔθ smɛlz drɪft ɔl ðə weɪ daʊn hɪr/",
+      "zh": "湯頭的香氣一路飄到我們這一桌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That smell is the best part of hot pot.",
+      "phonetic": "/ðæt smɛl ɪz ðə bɛst pɑrt əv hɑt pɑt/",
+      "zh": "那種味道才是吃火鍋最好的部分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Two barley teas, and one is for you.",
+      "phonetic": "/tu ˈbɑrli tiz ænd wʌn ɪz fɔr ju/",
+      "zh": "兩杯麥茶，這一杯是你的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thank you, I always order the barley tea.",
+      "phonetic": "/θæŋk ju aɪ ˈɔlweɪz ˈɔrdər ðə ˈbɑrli ti/",
+      "zh": "謝謝，我每次來都點麥茶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I put my coat under the chair?",
+      "phonetic": "/ʃʊd aɪ pʊt maɪ koʊt ˈʌndər ðə tʃɛr/",
+      "zh": "我的外套可以放在椅子下面嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The rack by the door has more room.",
+      "phonetic": "/ðə ræk baɪ ðə dɔr hæz mɔr rum/",
+      "zh": "門邊的衣架還有空間，掛那裡吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Here is a hair tie, if you need one.",
+      "phonetic": "/hɪr ɪz ə hɛr taɪ ɪf ju nid wʌn/",
+      "zh": "這有一根髮圈，需要的話就拿去。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "How sweet, steam gets in my hair.",
+      "phonetic": "/haʊ swit stim ɡɛts ɪn maɪ hɛr/",
+      "zh": "你好貼心，蒸汽都會捲到我的頭髮。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Our pot comes in five minutes, she said.",
+      "phonetic": "/ˈaʊər pɑt kʌmz ɪn faɪv ˈmɪnɪts ʃi sɛd/",
+      "zh": "她說我們的鍋五分鐘就上來了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let us sip tea and lean back a bit.",
+      "phonetic": "/lɛt ʌs sɪp ti ænd lin bæk ə bɪt/",
+      "zh": "那我們先喝口茶，往後靠一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you remember the first hot pot here?",
+      "phonetic": "/du ju rɪˈmɛmbər ðə fɜrst hɑt pɑt hɪr/",
+      "zh": "你還記得第一次來這裡吃火鍋嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You spilled sesame sauce on your sleeve.",
+      "phonetic": "/ju spɪld ˈsɛsəmi sɔs ɑn jɔr sliv/",
+      "zh": "你把芝麻醬全部噴在袖子上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We laughed for ten minutes that night.",
+      "phonetic": "/wi læft fɔr tɛn ˈmɪnɪts ðæt naɪt/",
+      "zh": "那晚我們笑了整整十分鐘。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is why I carry an old shirt.",
+      "phonetic": "/ðæt ɪz waɪ aɪ ˈkæri ən oʊld ʃɜrt/",
+      "zh": "所以我都會帶一件舊襯衫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This cloth here is already a little damp.",
+      "phonetic": "/ðɪs klɔθ hɪr ɪz ɔlˈrɛdi ə ˈlɪtəl dæmp/",
+      "zh": "我們桌上的布已經有點潮了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A fresh one is on the way, look.",
+      "phonetic": "/ə frɛʃ wʌn ɪz ɑn ðə weɪ lʊk/",
+      "zh": "新的一塊馬上就送來了，你看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Chopsticks arrived wrapped in clear paper.",
+      "phonetic": "/ˈtʃɑpstɪks əˈraɪvd ræpt ɪn klɪr ˈpeɪpər/",
+      "zh": "筷子是用透明紙包著送來的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Peel the wrapper and keep it on the rim.",
+      "phonetic": "/pil ðə ˈræpər ænd kip ɪt ɑn ðə rɪm/",
+      "zh": "把包裝紙剝開，墊在碗邊就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Long spoons are here, good for the pot.",
+      "phonetic": "/lɔŋ spunz ɑr hɪr ɡʊd fɔr ðə pɑt/",
+      "zh": "長湯匙也擺好了，很好撈鍋底的料。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And a paper apron waits on your chair.",
+      "phonetic": "/ænd ə ˈpeɪpər ˈeɪprən weɪts ɑn jɔr tʃɛr/",
+      "zh": "一條紙圍裙正掛在你的椅背上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Listen, the music in here is soft.",
+      "phonetic": "/ˈlɪsən ðə ˈmjuzɪk ɪn hɪr ɪz sɔft/",
+      "zh": "你聽，這裡的音樂好輕。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is my favorite kind of dinner noise.",
+      "phonetic": "/ðæt ɪz maɪ ˈfeɪvərɪt kaɪnd əv ˈdɪnər nɔɪz/",
+      "zh": "我最喜歡這種輕輕的晚餐聲音。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This cushion is thick and warm, sit down.",
+      "phonetic": "/ðɪs ˈkʊʃən ɪz θɪk ænd wɔrm sɪt daʊn/",
+      "zh": "這個坐墊又厚又暖，坐下來吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Perfect for a slow night of hot pot.",
+      "phonetic": "/ˈpɜrfɪkt fɔr ə sloʊ naɪt əv hɑt pɑt/",
+      "zh": "正適合慢慢吃一鍋火鍋的夜晚。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "They leave the timer on the table for us.",
+      "phonetic": "/ðeɪ liv ðə ˈtaɪmər ɑn ðə ˈteɪbəl fɔr ʌs/",
+      "zh": "他們會在桌上留一個小計時器給我們。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, beef slices need only twelve seconds.",
+      "phonetic": "/ɡʊd bif ˈslaɪsəz nid ˈoʊnli twɛlv ˈsɛkəndz/",
+      "zh": "正好，牛肉片只要燙十二秒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Twelve seconds, I will count in my head.",
+      "phonetic": "/twɛlv ˈsɛkəndz aɪ wɪl kaʊnt ɪn maɪ hɛd/",
+      "zh": "十二秒，我在心裡慢慢數。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Count softly, I will watch the steam too.",
+      "phonetic": "/kaʊnt ˈsɔftli aɪ wɪl wɑtʃ ðə stim tu/",
+      "zh": "你小聲數，我也一起看著蒸汽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Metal rim already warm under my fingers.",
+      "phonetic": "/ˈmɛtəl rɪm ɔlˈrɛdi wɔrm ˈʌndər maɪ ˈfɪŋɡərz/",
+      "zh": "鍋緣的金屬邊摸起來已經溫溫的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Soon it fills, then we can start.",
+      "phonetic": "/sun ɪt fɪlz ðɛn wi kæn stɑrt/",
+      "zh": "一下就會倒滿湯，然後我們開始。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Our teapot is still half full, see?",
+      "phonetic": "/ˈaʊər ˈtiˌpɑt ɪz stɪl hæf fʊl si/",
+      "zh": "我們的茶壺還剩半壺呢，看到嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will ask them for another small cup.",
+      "phonetic": "/aɪ wɪl æsk ðɛm fɔr əˈnʌðər smɔl kʌp/",
+      "zh": "我去請他們再拿一個小茶杯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Our next table is peeling shrimp already.",
+      "phonetic": "/ˈaʊər nɛkst ˈteɪbəl ɪz ˈpilɪŋ ʃrɪmp ɔlˈrɛdi/",
+      "zh": "隔壁桌已經在剝蝦子了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can peel ours together, it is fun.",
+      "phonetic": "/wi kæn pil ˈaʊərz təˈɡɛðər ɪt ɪz fʌn/",
+      "zh": "我們的可以一起剝，那樣很好玩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A little music, a little steam, perfect.",
+      "phonetic": "/ə ˈlɪtəl ˈmjuzɪk ə ˈlɪtəl stim ˈpɜrfɪkt/",
+      "zh": "一點音樂、一點蒸汽，剛剛好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The lamp above us is warm and low.",
+      "phonetic": "/ðə læmp əˈbʌv ʌs ɪz wɔrm ænd loʊ/",
+      "zh": "我們頭上那盞燈黃黃暗暗的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I feel calmer already, and you?",
+      "phonetic": "/aɪ fil ˈkɑmər ɔlˈrɛdi ænd ju/",
+      "zh": "我已經覺得比較放鬆了，你呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sleepy in a nice way, from the smell.",
+      "phonetic": "/ˈslipi ɪn ə naɪs weɪ frʌm ðə smɛl/",
+      "zh": "聞著那個味道就有點睏了，剛剛好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you book this for a quiet Friday?",
+      "phonetic": "/dɪd ju bʊk ðɪs fɔr ə ˈkwaɪət ˈfraɪdeɪ/",
+      "zh": "你是為了安靜的星期五才訂位嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I asked for two seats, nothing fancy.",
+      "phonetic": "/aɪ æskt fɔr tu sits ˈnʌθɪŋ ˈfænsi/",
+      "zh": "我只訂了兩個位子，很簡單的那種。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She remembered your name, that felt nice.",
+      "phonetic": "/ʃi rɪˈmɛmbərd jɔr neɪm ðæt fɛlt naɪs/",
+      "zh": "外場還記得你的名字，感覺真好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She calls me Old Friend every time.",
+      "phonetic": "/ʃi kɔlz mi oʊld frɛnd ˈɛvri taɪm/",
+      "zh": "她每次都笑著叫我老朋友。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Menu says the split pot comes in minutes.",
+      "phonetic": "/ˈmɛnju sɛz ðə splɪt pɑt kʌmz ɪn ˈmɪnɪts/",
+      "zh": "菜單上寫鴛鴦鍋幾分鐘就上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nothing comes until we choose the base.",
+      "phonetic": "/ˈnʌθɪŋ kʌmz ʌnˈtɪl wi tʃuz ðə beɪs/",
+      "zh": "還沒選好鍋底，東西不會送上來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your sleeves rolled up, you look ready.",
+      "phonetic": "/jɔr slivz roʊld ʌp ju lʊk ˈrɛdi/",
+      "zh": "你袖子都捲起來了，看起來準備很足。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ready for a long, slow, happy meal.",
+      "phonetic": "/ˈrɛdi fɔr ə lɔŋ sloʊ ˈhæpi mil/",
+      "zh": "準備好慢慢吃一頓開心的火鍋。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you want the burner on low first?",
+      "phonetic": "/du ju wɑnt ðə ˈbɜrnər ɑn loʊ fɜrst/",
+      "zh": "爐子先開小火比較好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, low heat keeps the broth gentle.",
+      "phonetic": "/jɛs loʊ hit kips ðə brɔθ ˈdʒɛntəl/",
+      "zh": "嗯，小火可以讓湯頭溫柔一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Small flame, like a candle in the dark.",
+      "phonetic": "/smɔl fleɪm laɪk ə ˈkændəl ɪn ðə dɑrk/",
+      "zh": "火苗很小，像暗處的一根蠟燭。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A candle that will feed us all night.",
+      "phonetic": "/ə ˈkændəl ðæt wɪl fid ʌs ɔl naɪt/",
+      "zh": "一根可以陪我們吃一整晚的蠟燭。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Someone dropped a spoon in the hall.",
+      "phonetic": "/ˈsʌmwʌn drɑpt ə spun ɪn ðə hɔl/",
+      "zh": "走廊那裡有人掉了一支湯匙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quiet place, we can hear other pots hum.",
+      "phonetic": "/ˈkwaɪət pleɪs wi kæn hɪr ˈʌðər pɑts hʌm/",
+      "zh": "店裡好安靜，連別桌的鍋都在低鳴。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That hum is the best white noise ever.",
+      "phonetic": "/ðæt hʌm ɪz ðə bɛst waɪt nɔɪz ˈɛvər/",
+      "zh": "那種低鳴就是最好的白噪音。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So let us listen while the pot is new.",
+      "phonetic": "/soʊ lɛt ʌs ˈlɪsən waɪl ðə pɑt ɪz nu/",
+      "zh": "所以趁鍋子還清，我們好好聽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My hands feel warm now, no more cold.",
+      "phonetic": "/maɪ hændz fil wɔrm naʊ noʊ mɔr koʊld/",
+      "zh": "我的手現在是暖的，不冷了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mine too, the tea helped a little.",
+      "phonetic": "/maɪn tu ðə ti hɛlpt ə ˈlɪtəl/",
+      "zh": "我也是，喝了熱茶就有幫助。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Look, the sauce bar glows across the room.",
+      "phonetic": "/lʊk ðə sɔs bɑr ɡloʊz əˈkrɔs ðə rum/",
+      "zh": "你看，調料台在那一頭亮著燈。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We will go there after the broth boils.",
+      "phonetic": "/wi wɪl ɡoʊ ðɛr ˈæftər ðə brɔθ bɔɪlz/",
+      "zh": "等湯滾了我們再去調蘸料。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the sauce bar far from our table?",
+      "phonetic": "/ɪz ðə sɔs bɑr fɑr frʌm ˈaʊər ˈteɪbəl/",
+      "zh": "調料台離我們這張桌遠嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Eight steps, past the big fish tank.",
+      "phonetic": "/eɪt stɛps pæst ðə bɪɡ fɪʃ tæŋk/",
+      "zh": "八步而已，經過那個大魚缸。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Our number light is off, so we stay.",
+      "phonetic": "/ˈaʊər ˈnʌmbər laɪt ɪz ɔf soʊ wi steɪ/",
+      "zh": "我們的號碼燈熄了，所以坐穩就好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We have the whole corner now, hooray.",
+      "phonetic": "/wi hæv ðə hoʊl ˈkɔrnər naʊ huˈreɪ/",
+      "zh": "現在整個角落都是我們的了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Shall we share one pot or two small?",
+      "phonetic": "/ʃæl wi ʃɛr wʌn pɑt ɔr tu smɔl/",
+      "zh": "我們共吃一鍋，還是點兩鍋小的？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One big split pot, like every time.",
+      "phonetic": "/wʌn bɪɡ splɪt pɑt laɪk ˈɛvri taɪm/",
+      "zh": "一鍋大的鴛鴦鍋，像我們每次那樣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Split pots are our little tradition.",
+      "phonetic": "/splɪt pɑts ɑr ˈaʊər ˈlɪtəl trəˈdɪʃən/",
+      "zh": "鴛鴦鍋是我們兩個的小傳統。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tradition, ritual, and a very good dinner.",
+      "phonetic": "/trəˈdɪʃən ˈrɪtʃuəl ænd ə ˈvɛri ɡʊd ˈdɪnər/",
+      "zh": "是傳統、是儀式，也是很棒的一餐。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am glad we waited for this table.",
+      "phonetic": "/aɪ æm ɡlæd wi ˈweɪtəd fɔr ðɪs ˈteɪbəl/",
+      "zh": "很高興我們願意等這張桌子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Me too, the wait made it taste better.",
+      "phonetic": "/mi tu ðə weɪt meɪd ɪt teɪst ˈbɛtər/",
+      "zh": "我也是，等過之後吃起來更好吃。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "To a quiet hot pot night together.",
+      "phonetic": "/tu ə ˈkwaɪət hɑt pɑt naɪt təˈɡɛðər/",
+      "zh": "敬我們安靜的一鍋夜晚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cheers, and we stay till the last ladle.",
+      "phonetic": "/tʃɪrz ænd wi steɪ tɪl ðə læst ˈlædəl/",
+      "zh": "乾杯，我們喝到最後一杓湯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which pot bases do you have tonight?",
+      "phonetic": "/wɪtʃ pɑt ˈbeɪsəz du ju hæv təˈnaɪt/",
+      "zh": "你們今晚一共有哪幾種鍋底？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mala, tomato, mushroom, and a milk base.",
+      "phonetic": "/ˈmɑlə təˈmeɪtoʊ ˈmʌʃrʊm ænd ə mɪlk beɪs/",
+      "zh": "麻辣、番茄、菌菇，還有牛奶鍋底。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We will take the split pot again.",
+      "phonetic": "/wi wɪl teɪk ðə splɪt pɑt əˈɡɛn/",
+      "zh": "我們還要點鴛鴦鍋。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One side mala, one side clear?",
+      "phonetic": "/wʌn saɪd ˈmɑlə wʌn saɪd klɪr/",
+      "zh": "一邊麻辣，一邊清淡是嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tomato base smells a little sharp.",
+      "phonetic": "/ðə təˈmeɪtoʊ beɪs smɛlz ə ˈlɪtəl ʃɑrp/",
+      "zh": "番茄鍋底聞起來有一點嗆鼻。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So let's take mushroom, it stays so mild.",
+      "phonetic": "/soʊ lɛts teɪk ˈmʌʃrʊm ɪt steɪz soʊ maɪld/",
+      "zh": "所以我們選菌菇，它一點都不辣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How spicy is the mala side, honestly?",
+      "phonetic": "/haʊ ˈspaɪsi ɪz ðə ˈmɑlə saɪd ˈɑnəstli/",
+      "zh": "老實說，麻辣那邊到底有多辣？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Medium heat, we can stay at level three.",
+      "phonetic": "/ˈmidiəm hit wi kæn steɪ æt ˈlɛvəl θri/",
+      "zh": "中辣就好，我們可以停在三級。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Level three sounds brave for a Friday.",
+      "phonetic": "/ˈlɛvəl θri saʊndz breɪv fɔr ə ˈfraɪdeɪ/",
+      "zh": "星期五就吃三級辣，真夠大膽。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can slow down after each plate.",
+      "phonetic": "/wi kæn sloʊ daʊn ˈæftər itʃ pleɪt/",
+      "zh": "吃完一盤，我們就可以慢下來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please add ginger and scallion to the clear side.",
+      "phonetic": "/pliːz æd ˈdʒɪndʒər ænd ˈskæliən tu ðə klɪr saɪd/",
+      "zh": "請在清湯那邊加薑片和蔥段。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ginger, scallion, and one piece of corn.",
+      "phonetic": "/ˈdʒɪndʒər ˈskæliən ænd wʌn pis əv kɔrn/",
+      "zh": "薑、蔥，再來一塊玉米。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the mushroom broth made fresh here?",
+      "phonetic": "/ɪz ðə ˈmʌʃrʊm brɔθ meɪd frɛʃ hɪr/",
+      "zh": "菌菇湯頭是在店內現熬的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fresh mushrooms, cooked here since noon.",
+      "phonetic": "/frɛʃ ˈmʌʃrʊmz kʊkt hɪr sɪns nun/",
+      "zh": "新鮮菇類，從中午就在店裡熬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Mushroom broth smells like a quiet forest.",
+      "phonetic": "/ˈmʌʃrʊm brɔθ smɛlz laɪk ə ˈkwaɪət ˈfɔrəst/",
+      "zh": "菌菇湯聞起來像一座安靜的森林。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is why I always pick this one.",
+      "phonetic": "/ðæt ɪz waɪ aɪ ˈɔlweɪz pɪk ðɪs wʌn/",
+      "zh": "所以我每次來都選這個鍋底。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "No oil on the clear side, right?",
+      "phonetic": "/noʊ ɔɪl ɑn ðə klɪr saɪd raɪt/",
+      "zh": "清湯那邊幾乎沒有油，對吧？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just a thin film, we can lift that off.",
+      "phonetic": "/dʒʌst ə θɪn fɪlm wi kæn lɪft ðæt ɔf/",
+      "zh": "只有一點油膜，我們可以把它撇掉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This divider keeps both soups apart.",
+      "phonetic": "/ðɪs dɪˈvaɪdər kips boʊθ sups əˈpɑrt/",
+      "zh": "中間這片隔板把兩種湯分開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, so the noodles stay on one side.",
+      "phonetic": "/ɡʊd soʊ ðə ˈnudəlz steɪ ɑn wʌn saɪd/",
+      "zh": "正好，冬粉就不會跑到另一邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will the mala side come with chilies?",
+      "phonetic": "/wɪl ðə ˈmɑlə saɪd kʌm wɪð ˈtʃɪliz/",
+      "zh": "麻辣鍋底會放辣椒嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, plus a spoon of broad bean paste.",
+      "phonetic": "/jɛs plʌs ə spun əv brɔd bin peɪst/",
+      "zh": "會，另外還加一匙豆瓣醬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Numbing taste is what I came for.",
+      "phonetic": "/ˈnʌmbɪŋ teɪst ɪz wʌt aɪ keɪm fɔr/",
+      "zh": "我就是為了那種麻的感覺而來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mine too, though my tongue feels funny.",
+      "phonetic": "/maɪn tu ðoʊ maɪ tʌŋ filz ˈfʌni/",
+      "zh": "我也是，不過舌頭會麻麻怪怪的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is this pot too numbing for you?",
+      "phonetic": "/ɪz ðɪs pɑt tu ˈnʌmbɪŋ fɔr ju/",
+      "zh": "這鍋麻辣的程度對你會不會太凶？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, one sip of mushroom broth settles it.",
+      "phonetic": "/noʊ wʌn sɪp əv ˈmʌʃrʊm brɔθ ˈsɛtəlz ɪt/",
+      "zh": "不會，喝一口菌菇湯就穩下來了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Pepper oil floats in small circles here.",
+      "phonetic": "/ˈpɛpər ɔɪl floʊts ɪn smɔl ˈsɜrkəlz hɪr/",
+      "zh": "花椒油在湯面浮成一個個小圈。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It looks like a tiny night sky.",
+      "phonetic": "/ɪt lʊks laɪk ə ˈtaɪni naɪt skaɪ/",
+      "zh": "看起來就像一小片夜空。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Turn the heat up, the clear side barely moves.",
+      "phonetic": "/tɜrn ði hit ʌp ðə klɪr saɪd ˈbɛrli muvz/",
+      "zh": "把火轉大一點，清湯那邊幾乎都沒動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One more minute, then it starts to bubble.",
+      "phonetic": "/wʌn mɔr ˈmɪnɪt ðɛn ɪt stɑrts tu ˈbʌbəl/",
+      "zh": "再過一分鐘，它就會開始冒泡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do we cover the pot while it heats?",
+      "phonetic": "/du wi ˈkʌvər ðə pɑt waɪl ɪt hits/",
+      "zh": "湯熱的時候我們要蓋鍋蓋嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Half cover, so the steam stays inside.",
+      "phonetic": "/hæf ˈkʌvər soʊ ðə stim steɪz ɪnˈsaɪd/",
+      "zh": "蓋一半就好，讓蒸汽留在裡面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Lid handle feels warm, use the cloth.",
+      "phonetic": "/lɪd ˈhændəl filz wɔrm juz ðə klɔθ/",
+      "zh": "鍋蓋把手有點燙，用布墊著拿。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The cloth is clean, I took a fresh one.",
+      "phonetic": "/ðə klɔθ ɪz klin aɪ tʊk ə frɛʃ wʌn/",
+      "zh": "這塊是乾淨的，我拿了一條新的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Mushroom for the first bowl, yes?",
+      "phonetic": "/ˈmʌʃrʊm fɔr ðə fɜrst boʊl jɛs/",
+      "zh": "第一碗先喝菌菇湯，好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Half a bowl, slow and very warm.",
+      "phonetic": "/hæf ə boʊl sloʊ ænd ˈvɛri wɔrm/",
+      "zh": "喝半碗就好，慢慢的、熱熱的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Careful, the ladle is heavier than it looks.",
+      "phonetic": "/ˈkɛrfəl ðə ˈlædəl ɪz ˈhɛviər ðæn ɪt lʊks/",
+      "zh": "小心，那支湯杓比看起來還重。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will pour twice, a little each time.",
+      "phonetic": "/aɪ wɪl pɔr twaɪs ə ˈlɪtəl itʃ taɪm/",
+      "zh": "我分兩次倒，每次只倒一點點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "First sip is sweet, like a fall day.",
+      "phonetic": "/fɜrst sɪp ɪz swit laɪk ə fɔl deɪ/",
+      "zh": "第一口甜甜的，像秋天的日子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Autumn in a bowl, with a little salt.",
+      "phonetic": "/ˈɔtəm ɪn ə boʊl wɪð ə ˈlɪtəl sɔlt/",
+      "zh": "碗裡的秋天，還帶一點鹹。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Salt level feels right on the tongue.",
+      "phonetic": "/sɔlt ˈlɛvəl filz raɪt ɑn ðə tʌŋ/",
+      "zh": "鹹度在舌頭上剛剛好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The kitchen was gentle with salt today.",
+      "phonetic": "/ðə ˈkɪtʃən wʌz ˈdʒɛntəl wɪð sɔlt təˈdeɪ/",
+      "zh": "廚房今天下鹽下手很輕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Would you like the milk base next time?",
+      "phonetic": "/wʊd ju laɪk ðə mɪlk beɪs nɛkst taɪm/",
+      "zh": "下次你想試試牛奶鍋底嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, with corn and a little carrot.",
+      "phonetic": "/jɛs wɪð kɔrn ænd ə ˈlɪtəl ˈkærət/",
+      "zh": "好，加玉米和一點紅蘿蔔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Mushroom side gets deeper as it boils.",
+      "phonetic": "/ˈmʌʃrʊm saɪd ɡɛts ˈdipər æz ɪt bɔɪlz/",
+      "zh": "菌菇那邊越煮味道越濃厚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then we keep the heat low there.",
+      "phonetic": "/ðɛn wi kip ði hit loʊ ðɛr/",
+      "zh": "那邊的火我們就留小一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Spicy side needs a stronger boil.",
+      "phonetic": "/ˈspaɪsi saɪd nidz ə ˈstrɔŋɡər bɔɪl/",
+      "zh": "麻辣那邊要煮得比較滾才行。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then we raise that knob, not this one.",
+      "phonetic": "/ðɛn wi reɪz ðæt nɑb nɑt ðɪs wʌn/",
+      "zh": "那我們轉那邊的旋鈕，不轉這邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Look, the mala is dancing now.",
+      "phonetic": "/lʊk ðə ˈmɑlə ɪz ˈdænsɪŋ naʊ/",
+      "zh": "你看，麻辣那邊翻滾起來了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Little bubbles, and the room smells warm.",
+      "phonetic": "/ˈlɪtəl ˈbʌbəlz ænd ðə rum smɛlz wɔrm/",
+      "zh": "小泡泡輕輕滾，整個房間聞起來暖暖的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the oil layer too thick for you?",
+      "phonetic": "/ɪz ðə ɔɪl ˈleɪər tu θɪk fɔr ju/",
+      "zh": "那層浮油對你來說會不會太厚？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A little, we can ask for less oil.",
+      "phonetic": "/ə ˈlɪtəl wi kæn æsk fɔr lɛs ɔɪl/",
+      "zh": "有一點，我們可以請他們少放油。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She said one spoon less, no problem.",
+      "phonetic": "/ʃi sɛd wʌn spun lɛs noʊ ˈprɑbləm/",
+      "zh": "她說少一匙沒問題。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Perfect, and keep the scallion pieces long.",
+      "phonetic": "/ˈpɜrfɪkt ænd kip ðə ˈskæliən ˈpisəz lɔŋ/",
+      "zh": "正好，蔥段記得留長一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Our broth came with two dried chilies.",
+      "phonetic": "/ˈaʊər brɔθ keɪm wɪð tu draɪd ˈtʃɪliz/",
+      "zh": "我們的湯裡放了兩段乾辣椒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will lift them out, one at a time.",
+      "phonetic": "/aɪ wɪl lɪft ðɛm aʊt wʌn æt ə taɪm/",
+      "zh": "我一支一支把它們撈出來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you fish the chilies or do I?",
+      "phonetic": "/du ju fɪʃ ðə ˈtʃɪliz ɔr du aɪ/",
+      "zh": "辣椒換你撈，還是我撈？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You fish them, my hands are full.",
+      "phonetic": "/ju fɪʃ ðɛm maɪ hændz ɑr fʊl/",
+      "zh": "換你撈辣椒，我兩手都滿了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Corn on the clear side, it sweetens.",
+      "phonetic": "/kɔrn ɑn ðə klɪr saɪd ɪt ˈswitənz/",
+      "zh": "玉米放清湯那邊，會越煮越甜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then the broth tastes like a summer field.",
+      "phonetic": "/ðɛn ðə brɔθ teɪsts laɪk ə ˈsʌmər fild/",
+      "zh": "那湯喝起來就會像夏天的田。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Summer fields in a pot, that is nice.",
+      "phonetic": "/ˈsʌmər fildz ɪn ə pɑt ðæt ɪz naɪs/",
+      "zh": "鍋子裡裝著夏天的田野，真好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nice and quiet, the steam does the talking.",
+      "phonetic": "/naɪs ænd ˈkwaɪət ðə stim dʌz ðə ˈtɔkɪŋ/",
+      "zh": "美好又安靜，蒸汽負責說話。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Nobody needs to fill this silence.",
+      "phonetic": "/ˈnoʊbədi nidz tu fɪl ðɪs ˈsaɪləns/",
+      "zh": "沒有人需要打破這份安靜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just the pot, talking in small bubbles.",
+      "phonetic": "/dʒʌst ðə pɑt ˈtɔkɪŋ ɪn smɔl ˈbʌbəlz/",
+      "zh": "只有鍋子用小泡泡在說話。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Two bases in one pot, is that allowed?",
+      "phonetic": "/tu ˈbeɪsəz ɪn wʌn pɑt ɪz ðæt əˈlaʊd/",
+      "zh": "一鍋放兩種鍋底，這樣可以嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the split pot costs a little more.",
+      "phonetic": "/jɛs ðə splɪt pɑt kɔsts ə ˈlɪtəl mɔr/",
+      "zh": "可以，鴛鴦鍋會多一點錢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That is fair, two soups take more work.",
+      "phonetic": "/ðæt ɪz fɛr tu sups teɪk mɔr wɜrk/",
+      "zh": "很合理，兩種湯要多費功夫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two soups, and we just sit and wait.",
+      "phonetic": "/tu sups ænd wi dʒʌst sɪt ænd weɪt/",
+      "zh": "兩種湯，而我們只要坐著等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The broth is rising, look at it.",
+      "phonetic": "/ðə brɔθ ɪz ˈraɪzɪŋ lʊk æt ɪt/",
+      "zh": "湯越升越高了，你看。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Almost full, the divider holds both sides.",
+      "phonetic": "/ˈɔlmoʊst fʊl ðə dɪˈvaɪdər hoʊldz boʊθ saɪdz/",
+      "zh": "快滿了，隔板撐住兩邊的湯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the clear side really only mushrooms?",
+      "phonetic": "/ɪz ðə klɪr saɪd ˈrɪli ˈoʊnli ˈmʌʃrʊmz/",
+      "zh": "清淡那邊真的只有菇類嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Three kinds, plus a piece of winter melon.",
+      "phonetic": "/θri kaɪndz plʌs ə pis əv ˈwɪntər ˈmɛlən/",
+      "zh": "有三種菇，外加一塊冬瓜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Winter melon in soup is a small gift.",
+      "phonetic": "/ˈwɪntər ˈmɛlən ɪn sup ɪz ə smɔl ɡɪft/",
+      "zh": "湯裡的冬瓜像一份小小的禮物。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A quiet gift, sweet at the edges.",
+      "phonetic": "/ə ˈkwaɪət ɡɪft swit æt ði ˈɛdʒɪz/",
+      "zh": "安靜的禮物，邊邊帶著甜味。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My spoon is full again, you take it.",
+      "phonetic": "/maɪ spun ɪz fʊl əˈɡɛn ju teɪk ɪt/",
+      "zh": "我的湯匙又裝滿了，你先喝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only half, you worked longer at the pot.",
+      "phonetic": "/ˈoʊnli hæf ju wɜrkt ˈlɔŋɡər æt ðə pɑt/",
+      "zh": "只喝一半就好，你在鍋邊忙比較久。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Mala side needs a small taste check.",
+      "phonetic": "/ˈmɑlə saɪd nidz ə smɔl teɪst tʃɛk/",
+      "zh": "麻辣那邊要試一下味道。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One tiny ladle, not the whole spoon.",
+      "phonetic": "/wʌn ˈtaɪni ˈlædəl nɑt ðə hoʊl spun/",
+      "zh": "一小杓就好，不用整匙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Still level three, still brave, still soft.",
+      "phonetic": "/stɪl ˈlɛvəl θri stɪl breɪv stɪl sɔft/",
+      "zh": "還是三級，還是大膽，還是溫柔。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Soft spice, like a low song.",
+      "phonetic": "/sɔft spaɪs laɪk ə loʊ sɔŋ/",
+      "zh": "溫柔的辣，像一首低低的歌。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Steam fogged my glasses, now everything glows.",
+      "phonetic": "/stim fɔɡd maɪ ˈɡlæsɪz naʊ ˈɛvriθɪŋ ɡloʊz/",
+      "zh": "蒸汽把我的眼鏡弄霧了，什麼都在發光。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The glowing pot, the glowing room, us too.",
+      "phonetic": "/ðə ˈɡloʊɪŋ pɑt ðə ˈɡloʊɪŋ rum ʌs tu/",
+      "zh": "發光的鍋、發光的房間，我們也是。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Turn the lamp down, the glow is enough.",
+      "phonetic": "/tɜrn ðə læmp daʊn ðə ɡloʊ ɪz ɪˈnʌf/",
+      "zh": "把燈調暗一點，鍋光就已經夠亮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Enough, and the broth keeps us warm.",
+      "phonetic": "/ɪˈnʌf ænd ðə brɔθ kips ʌs wɔrm/",
+      "zh": "夠了，而且湯會讓我們一直暖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Our pot smells like a long Sunday.",
+      "phonetic": "/ˈaʊər pɑt smɛlz laɪk ə lɔŋ ˈsʌndeɪ/",
+      "zh": "我們的鍋聞起來像一個悠長的星期日。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A slow Sunday with nothing to finish.",
+      "phonetic": "/ə sloʊ ˈsʌndeɪ wɪð ˈnʌθɪŋ tu ˈfɪnɪʃ/",
+      "zh": "慢慢的星期日，什麼都不用趕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That is the kindest sentence I have heard.",
+      "phonetic": "/ðæt ɪz ðə ˈkaɪndst ˈsɛntəns aɪ hæv hɜrd/",
+      "zh": "這是我聽過最溫柔的一句話。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can rest now, the fire is low.",
+      "phonetic": "/wi kæn rɛst naʊ ðə ˈfaɪər ɪz loʊ/",
+      "zh": "我們可以先歇一下，火轉小了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the mala base lose taste when it rests?",
+      "phonetic": "/dʌz ðə ˈmɑlə beɪs luz teɪst wɛn ɪt rɛsts/",
+      "zh": "麻辣鍋底小火靜置會沒味道嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, resting makes the numbing taste rounder.",
+      "phonetic": "/noʊ ˈrɛstɪŋ meɪks ðə ˈnʌmbɪŋ teɪst ˈraʊndər/",
+      "zh": "不會，靜置反而讓麻味更圓。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Rounder, softer, like a pillow of soup.",
+      "phonetic": "/ˈraʊndər ˈsɔftər laɪk ə ˈpɪloʊ əv sup/",
+      "zh": "更圓、更軟，像一枕頭的湯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Now you are writing soup poems at nine.",
+      "phonetic": "/naʊ ju ɑr ˈraɪtɪŋ sup ˈpoʊəmz æt naɪn/",
+      "zh": "九點了，你還在寫關於湯的詩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Soup poems, then a little nap after.",
+      "phonetic": "/sup ˈpoʊəmz ðɛn ə ˈlɪtəl næp ˈæftər/",
+      "zh": "寫兩行湯的詩，然後回家小睡一下。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Do not say it loud, that is our plan.",
+      "phonetic": "/du nɑt seɪ ɪt laʊd ðæt ɪz ˈaʊər plæn/",
+      "zh": "別說太大聲，那正是我們的計畫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Next Friday, the tomato side, yes?",
+      "phonetic": "/nɛkst ˈfraɪdeɪ ðə təˈmeɪtoʊ saɪd jɛs/",
+      "zh": "下個星期五來吃番茄鍋，好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, I will come for the tomato broth.",
+      "phonetic": "/jɛs aɪ wɪl kʌm fɔr ðə təˈmeɪtoʊ brɔθ/",
+      "zh": "好，我會為了那鍋番茄湯來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Our broth is ready, the meat list is next.",
+      "phonetic": "/ˈaʊər brɔθ ɪz ˈrɛdi ðə mit lɪst ɪz nɛkst/",
+      "zh": "鍋底準備好了，接下來要點肉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will hold the pen, you read the page.",
+      "phonetic": "/aɪ wɪl hoʊld ðə pɛn ju rid ðə peɪdʒ/",
+      "zh": "我來拿筆，你唸那一頁。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One check mark per plate, no rushing.",
+      "phonetic": "/wʌn tʃɛk mɑrk pɜr pleɪt noʊ ˈrʌʃɪŋ/",
+      "zh": "一盤打一個勾，不用趕。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No rushing, the pot will wait all night.",
+      "phonetic": "/noʊ ˈrʌʃɪŋ ðə pɑt wɪl weɪt ɔl naɪt/",
+      "zh": "不用趕，這鍋可以等我們一整夜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let us start the meat list, shall we?",
+      "phonetic": "/lɛt ʌs stɑrt ðə mit lɪst ʃæl wi/",
+      "zh": "我們開始點肉的那一欄，好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Write two plates of thin beef first.",
+      "phonetic": "/raɪt tu pleɪts əv θɪn bif fɜrst/",
+      "zh": "先寫兩盤薄牛肉片。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are the beef slices still on ice?",
+      "phonetic": "/ɑr ðə bif ˈslaɪsəz stɪl ɑn aɪs/",
+      "zh": "牛肉片還是冰鎮著的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, cut thin, laid on a bed of ice.",
+      "phonetic": "/jɛs kʌt θɪn leɪd ɑn ə bɛd əv aɪs/",
+      "zh": "對，切得很薄，鋪在冰上保鮮。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How thin are the thin beef slices?",
+      "phonetic": "/haʊ θɪn ɑr ðə θɪn bif ˈslaɪsəz/",
+      "zh": "那種薄牛肉片到底有多薄？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thin as paper, they curl in the broth.",
+      "phonetic": "/θɪn æz ˈpeɪpər ðeɪ kɜrl ɪn ðə brɔθ/",
+      "zh": "薄得像紙，一下鍋就捲起來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Twelve seconds in the mala, then eat.",
+      "phonetic": "/twɛlv ˈsɛkəndz ɪn ðə ˈmɑlə ðɛn it/",
+      "zh": "在麻辣湯裡燙十二秒就能吃。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And dip it once, before it cools.",
+      "phonetic": "/ænd dɪp ɪt wʌns bɪˈfɔr ɪt kuls/",
+      "zh": "趁涼之前先蘸一次醬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you want lamb with your beef?",
+      "phonetic": "/du ju wɑnt læm wɪð jɔr bif/",
+      "zh": "你在牛肉之外還要加羊肉嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One plate of lamb, rolled like little roses.",
+      "phonetic": "/wʌn pleɪt əv læm roʊld laɪk ˈlɪtəl ˈroʊzɪz/",
+      "zh": "一盤羊肉，捲成小玫瑰那樣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "They roll lamb so it looks pretty.",
+      "phonetic": "/ðeɪ roʊl læm soʊ ɪt lʊks ˈprɪti/",
+      "zh": "他們把羊肉捲起來，看起來很漂亮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pretty and soft, it cooks in one breath.",
+      "phonetic": "/ˈprɪti ænd sɔft ɪt kʊks ɪn wʌn brɛθ/",
+      "zh": "漂亮又軟嫩，心裡默數一下就熟了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What about pork belly, just one plate?",
+      "phonetic": "/wʌt əˈbaʊt pɔrk ˈbɛli dʒʌst wʌn pleɪt/",
+      "zh": "那豬五花呢，就一盤好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pork belly needs longer in the pot.",
+      "phonetic": "/pɔrk ˈbɛli nidz ˈlɔŋɡər ɪn ðə pɑt/",
+      "zh": "豬五花要在鍋裡煮久一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then we put it in first, no rush.",
+      "phonetic": "/ðɛn wi pʊt ɪt ɪn fɜrst noʊ rʌʃ/",
+      "zh": "那我們先把它下鍋，不著急。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good plan, the belly loves a slow boil.",
+      "phonetic": "/ɡʊd plæn ðə ˈbɛli lʌvz ə sloʊ bɔɪl/",
+      "zh": "好計畫，五花最愛慢慢滾的湯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How many plates of balls should we get?",
+      "phonetic": "/haʊ ˈmɛni pleɪts əv bɔlz ʃʊd wi ɡɛt/",
+      "zh": "丸子我們該點幾盤？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Three kinds, fish, beef, and the shrimp ones.",
+      "phonetic": "/θri kaɪndz fɪʃ bif ænd ðə ʃrɪmp wʌnz/",
+      "zh": "三種，魚丸、牛肉丸，還有蝦丸。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The fish balls float when they are done.",
+      "phonetic": "/ðə fɪʃ bɔlz floʊt wɛn ðeɪ ɑr dʌn/",
+      "zh": "魚丸浮起來就代表煮熟了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will watch the float, you watch the beef.",
+      "phonetic": "/aɪ wɪl wɑtʃ ðə floʊt ju wɑtʃ ðə bif/",
+      "zh": "我看丸子浮不浮，你顧牛肉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do the beef balls need more time?",
+      "phonetic": "/du ðə bif bɔlz nid mɔr taɪm/",
+      "zh": "牛肉丸要煮比較久嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Longer than fish balls, they grow bigger.",
+      "phonetic": "/ˈlɔŋɡər ðæn fɪʃ bɔlz ðeɪ ɡroʊ ˈbɪɡər/",
+      "zh": "比魚丸久，它們還會膨大一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Bigger balls, smaller bites, that is fair.",
+      "phonetic": "/ˈbɪɡər bɔlz ˈsmɔlər baɪts ðæt ɪz fɛr/",
+      "zh": "丸子變大，咬塊變小，很公平。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fair enough, add one spoon of soup to mine.",
+      "phonetic": "/fɛr ɪˈnʌf æd wʌn spun əv sup tu maɪn/",
+      "zh": "也行，幫我的碗加一匙湯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Shrimp paste comes in a small tube, right?",
+      "phonetic": "/ʃrɪmp peɪst kʌmz ɪn ə smɔl tub raɪt/",
+      "zh": "蝦漿是用一個小筒裝著的，對嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, we squeeze it into leaf shapes.",
+      "phonetic": "/jɛs wi skwiz ɪt ˈɪntu lif ʃeɪps/",
+      "zh": "對，我們把它擠成葉子的形狀。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you shape a leaf with paste?",
+      "phonetic": "/kæn ju ʃeɪp ə lif wɪð peɪst/",
+      "zh": "你能用蝦漿捏出一片葉子嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I can try, my leaves may look like clouds.",
+      "phonetic": "/aɪ kæn traɪ maɪ livz meɪ lʊk laɪk klaʊdz/",
+      "zh": "我試試看，我的葉子可能像雲朵。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Cloud shaped shrimp is still good shrimp.",
+      "phonetic": "/klaʊd ʃeɪpt ʃrɪmp ɪz stɪl ɡʊd ʃrɪmp/",
+      "zh": "雲朵形狀的蝦漿還是好蝦漿。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then I will make a whole sky of them.",
+      "phonetic": "/ðɛn aɪ wɪl meɪk ə hoʊl skaɪ əv ðɛm/",
+      "zh": "那我就來捏出一片天空。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Tofu puffs drink the broth, you know.",
+      "phonetic": "/ˈtoʊfu pʌfs drɪŋk ðə brɔθ ju noʊ/",
+      "zh": "油豆腐會把湯全部吸進去，你知道的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two puffs, then, they fill me fast.",
+      "phonetic": "/tu pʌfs ðɛn ðeɪ fɪl mi fæst/",
+      "zh": "那就兩塊，它們很容易讓我飽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Frozen tofu or the soft white one?",
+      "phonetic": "/ˈfroʊzən ˈtoʊfu ɔr ðə sɔft waɪt wʌn/",
+      "zh": "要凍豆腐，還是那種軟的白豆腐？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The soft one, it shakes on the spoon.",
+      "phonetic": "/ðə sɔft wʌn ɪt ʃeɪks ɑn ðə spun/",
+      "zh": "軟的那種，放在湯匙上會晃。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Mushroom bundle, the thin white kind, yes?",
+      "phonetic": "/ˈmʌʃrʊm ˈbʌndəl ðə θɪn waɪt kaɪnd jɛs/",
+      "zh": "來一束菇，那種細細白白的，好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the long thin ones, tied with green string.",
+      "phonetic": "/jɛs ðə lɔŋ θɪn wʌnz taɪd wɪð ɡrin strɪŋ/",
+      "zh": "對，那種細長的，還綁著綠色的線。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Take the string off before they go in.",
+      "phonetic": "/teɪk ðə strɪŋ ɔf bɪˈfɔr ðeɪ ɡoʊ ɪn/",
+      "zh": "下鍋之前先把那條線拿掉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Of course, I am not cooking the string.",
+      "phonetic": "/ʌv kɔrs aɪ æm nɑt ˈkʊkɪŋ ðə strɪŋ/",
+      "zh": "當然，我又不是在煮那條線。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Napa cabbage, half a plate is plenty.",
+      "phonetic": "/ˈnæpə ˈkæbɪdʒ hæf ə pleɪt ɪz ˈplɛnti/",
+      "zh": "大白菜半盤就綽綽有餘了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Half plate, and it needs only a minute.",
+      "phonetic": "/hæf pleɪt ænd ɪt nidz ˈoʊnli ə ˈmɪnɪt/",
+      "zh": "半盤就好，它只要燙一分鐘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Lettuce goes in last, it wilts fast.",
+      "phonetic": "/ˈlɛtɪs ɡoʊz ɪn læst ɪt wɪlts fæst/",
+      "zh": "萵苣最後再下，它一下就軟了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wilted lettuce with sesame sauce, heaven.",
+      "phonetic": "/ˈwɪltɪd ˈlɛtɪs wɪð ˈsɛsəmi sɔs ˈhɛvən/",
+      "zh": "沾了芝麻醬的軟萵苣，太幸福了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How many glass noodles did we write?",
+      "phonetic": "/haʊ ˈmɛni ɡlæs ˈnudəlz dɪd wi raɪt/",
+      "zh": "冬粉我們寫了幾份？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two bundles, one for each of us.",
+      "phonetic": "/tu ˈbʌndəlz wʌn fɔr itʃ əv ʌs/",
+      "zh": "兩束，我們一人一束。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Glass noodles turn soft in four minutes.",
+      "phonetic": "/ɡlæs ˈnudəlz tɜrn sɔft ɪn fɔr ˈmɪnɪts/",
+      "zh": "冬粉四分鐘就會變軟。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So we time them, not guess them.",
+      "phonetic": "/soʊ wi taɪm ðɛm nɑt ɡɛs ðɛm/",
+      "zh": "所以我們要計時，不要亂猜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Rice cakes too, the short white ones.",
+      "phonetic": "/raɪs keɪks tu ðə ʃɔrt waɪt wʌnz/",
+      "zh": "也要年糕，那種短短白白的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They get chewy, so we cut them in half.",
+      "phonetic": "/ðeɪ ɡɛt ˈtʃui soʊ wi kʌt ðɛm ɪn hæf/",
+      "zh": "它們會變黏，所以我們切成兩半。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the kitchen cut the cakes for us?",
+      "phonetic": "/dʌz ðə ˈkɪtʃən kʌt ðə keɪks fɔr ʌs/",
+      "zh": "廚房會幫我們把年糕切開嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, but she can halve them at the counter.",
+      "phonetic": "/noʊ bʌt ʃi kæn hælv ðɛm æt ðə ˈkaʊntər/",
+      "zh": "不會，不過她可以在台邊幫我們切半。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Potato slices, thin, so they do not break.",
+      "phonetic": "/pəˈteɪtoʊ ˈslaɪsəz θɪn soʊ ðeɪ du nɑt breɪk/",
+      "zh": "馬鈴薯片切薄一點就不會碎。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thin ones turn soft, thick ones stay hard.",
+      "phonetic": "/θɪn wʌnz tɜrn sɔft θɪk wʌnz steɪ hɑrd/",
+      "zh": "薄的會變軟，厚的還是硬的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Lotus root, too, with all those holes.",
+      "phonetic": "/ˈloʊtəs rut tu wɪð ɔl ðoʊz hoʊlz/",
+      "zh": "也要蓮藕，就是有洞洞的那個。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The holes hold soup, my favorite part.",
+      "phonetic": "/ðə hoʊlz hoʊld sup maɪ ˈfeɪvərɪt pɑrt/",
+      "zh": "洞裡會裝滿湯，那是我最愛的部分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Taro, or is it too starchy?",
+      "phonetic": "/tɑˈroʊ ɔr ɪz ɪt tu ˈstɑrki/",
+      "zh": "要芋頭嗎，會不會煮得太粉？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Taro makes the clear broth cloudy and rich.",
+      "phonetic": "/tɑˈroʊ meɪks ðə klɪr brɔθ ˈklaʊdi ænd rɪtʃ/",
+      "zh": "芋頭會讓清湯變濁又變濃。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then let it cloud, we have all night.",
+      "phonetic": "/ðɛn lɛt ɪt klaʊd wi hæv ɔl naɪt/",
+      "zh": "那就讓它渾濁吧，我們有一整夜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All night, and one more plate of beef.",
+      "phonetic": "/ɔl naɪt ænd wʌn mɔr pleɪt əv bif/",
+      "zh": "一整夜，再加一盤牛肉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One more beef plate, that is your rule.",
+      "phonetic": "/wʌn mɔr bif pleɪt ðæt ɪz jɔr rul/",
+      "zh": "再多一盤牛肉，這是你的規矩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My rule, yes, and the note is written.",
+      "phonetic": "/maɪ rul jɛs ænd ðə noʊt ɪz ˈrɪtn/",
+      "zh": "對，我的規矩，單子也寫好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Read the slip back, do not skip a line.",
+      "phonetic": "/rid ðə slɪp bæk du nɑt skɪp ə laɪn/",
+      "zh": "把點單唸一遍，不要跳行。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Beef twice, lamb once, pork, balls, greens.",
+      "phonetic": "/bif twaɪs læm wʌns pɔrk bɔlz ɡrinz/",
+      "zh": "牛肉兩盤、羊肉一盤、豬肉、丸子、青菜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Greens is a kind word for cabbage.",
+      "phonetic": "/ɡrinz ɪz ə kaɪnd wɜrd fɔr ˈkæbɪdʒ/",
+      "zh": "用青菜來稱大白菜真有禮貌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cabbage does not mind, it gets soft anyway.",
+      "phonetic": "/ˈkæbɪdʒ dʌz nɑt maɪnd ɪt ɡɛts sɔft ˈɛniˌweɪ/",
+      "zh": "白菜不會在意，反正它一定會軟。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are the plates priced by their color?",
+      "phonetic": "/ɑr ðə pleɪts praɪst baɪ ðɛr ˈkʌlər/",
+      "zh": "盤子是照顏色來計價嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Blue is cheap, red costs a little more.",
+      "phonetic": "/blu ɪz tʃip rɛd kɔsts ə ˈlɪtəl mɔr/",
+      "zh": "藍盤便宜，紅盤貴一點點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then let us start with blue plates tonight.",
+      "phonetic": "/ðɛn lɛt ʌs stɑrt wɪð blu pleɪts təˈnaɪt/",
+      "zh": "那我們今晚先拿藍盤。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Blue for beef, blue for the fish balls.",
+      "phonetic": "/blu fɔr bif blu fɔr ðə fɪʃ bɔlz/",
+      "zh": "牛肉用藍盤，魚丸也用藍盤。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the seafood platter for two people?",
+      "phonetic": "/ɪz ðə ˈsiˌfud ˈplætər fɔr tu ˈpipəl/",
+      "zh": "那個海鮮盤是給兩個人吃的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For two, it has shrimp, clams, and squid.",
+      "phonetic": "/fɔr tu ɪt hæz ʃrɪmp klæmz ænd skwɪd/",
+      "zh": "兩個人剛好，有蝦子、蛤蜊和魷魚。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Squid curls tight in the spicy side.",
+      "phonetic": "/skwɪd kɜrlz taɪt ɪn ðə ˈspaɪsi saɪd/",
+      "zh": "魷魚在辣湯那邊會捲得很緊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then two pieces, and we share them warm.",
+      "phonetic": "/ðɛn tu ˈpisəz ænd wi ʃɛr ðɛm wɔrm/",
+      "zh": "那來兩塊，我們趁熱分著吃。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the clam open when it is ready?",
+      "phonetic": "/ɪz ðə klæm ˈoʊpən wɛn ɪt ɪz ˈrɛdi/",
+      "zh": "蛤蜊打開的時候就是熟了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Open shell, and it is done, do not wait.",
+      "phonetic": "/ˈoʊpən ʃɛl ænd ɪt ɪz dʌn du nɑt weɪt/",
+      "zh": "殼一開就熟了，別再等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One raw egg, for the sauce, maybe.",
+      "phonetic": "/wʌn rɔ ɛɡ fɔr ðə sɔs ˈmeɪbi/",
+      "zh": "再來一顆生雞蛋，也許可以拌醬。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The sauce bar has it in a cold cup.",
+      "phonetic": "/ðə sɔs bɑr hæz ɪt ɪn ə koʊld kʌp/",
+      "zh": "調料台有，裝在冰冰的小杯裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Egg in the sauce makes every bite smooth.",
+      "phonetic": "/ɛɡ ɪn ðə sɔs meɪks ˈɛvri baɪt smuð/",
+      "zh": "醬裡加蛋，每一口都變得滑順。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And it cools the beef a little too.",
+      "phonetic": "/ænd ɪt kuls ðə bif ə ˈlɪtəl tu/",
+      "zh": "它也能讓牛肉稍微涼一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should we add a vegetarian plate?",
+      "phonetic": "/ʃʊd wi æd ə ˌvɛdʒəˈtɛriən pleɪt/",
+      "zh": "我們要再加一份素食盤嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, tofu skin, corn, and lots of greens.",
+      "phonetic": "/jɛs ˈtoʊfu skɪn kɔrn ænd lɑts əv ɡrinz/",
+      "zh": "好，豆皮、玉米，還有很多青菜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Tofu skin folds like a little cloth.",
+      "phonetic": "/ˈtoʊfu skɪn foʊldz laɪk ə ˈlɪtəl klɔθ/",
+      "zh": "豆皮摺起來像一塊小布。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fill it with broth, then bite once.",
+      "phonetic": "/fɪl ɪt wɪð brɔθ ðɛn baɪt wʌns/",
+      "zh": "讓它包滿湯，然後一口咬下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did we write the mushroom on the slip?",
+      "phonetic": "/dɪd wi raɪt ðə ˈmʌʃrʊm ɑn ðə slɪp/",
+      "zh": "我們有把香菇寫在單子上嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the brown caps, four of them.",
+      "phonetic": "/jɛs ðə braʊn kæps fɔr əv ðɛm/",
+      "zh": "有，那種茶色菇傘，要四朵。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Four caps, two per person, that is fair.",
+      "phonetic": "/fɔr kæps tu pɜr ˈpɜrsən ðæt ɪz fɛr/",
+      "zh": "四朵，一人兩朵，很公平。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fair, and please keep the stems, they chew well.",
+      "phonetic": "/fɛr ænd pliːz kip ðə stɛmz ðeɪ tʃu wɛl/",
+      "zh": "對，菇軸也留著，很好嚼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are the meatballs made in house?",
+      "phonetic": "/ɑr ðə ˈmitbɔlz meɪd ɪn haʊs/",
+      "zh": "牛肉丸是店裡自己做的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Made by hand each morning, look there.",
+      "phonetic": "/meɪd baɪ hænd itʃ ˈmɔrnɪŋ lʊk ðɛr/",
+      "zh": "每天早上手工做的，你看那邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Their tray of balls looks like marbles.",
+      "phonetic": "/ðɛr treɪ əv bɔlz lʊks laɪk ˈmɑrbəlz/",
+      "zh": "他們那盤丸子看起來像彈珠。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Marbles we can eat, what a good game.",
+      "phonetic": "/ˈmɑrbəlz wi kæn it wʌt ə ɡʊd ɡeɪm/",
+      "zh": "可以吃的彈珠，多好的遊戲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Ask if the shrimp were cleaned already.",
+      "phonetic": "/æsk ɪf ðə ʃrɪmp wɜr klind ɔlˈrɛdi/",
+      "zh": "問一下蝦子是不是已經處理乾淨。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She says yes, split down the back already.",
+      "phonetic": "/ʃi sɛz jɛs splɪt daʊn ðə bæk ɔlˈrɛdi/",
+      "zh": "她說已經沿著背開好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then they need three minutes, no more.",
+      "phonetic": "/ðɛn ðeɪ nid θri ˈmɪnɪts noʊ mɔr/",
+      "zh": "那它們只要煮三分鐘，別多煮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Three, and I will set the little timer.",
+      "phonetic": "/θri ænd aɪ wɪl sɛt ðə ˈlɪtəl ˈtaɪmər/",
+      "zh": "三分鐘，我來設那個小計時器。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The order slip is full of small marks.",
+      "phonetic": "/ði ˈɔrdər slɪp ɪz fʊl əv smɔl mɑrks/",
+      "zh": "點單上已經寫得密密麻麻。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Full plate, full slip, still room for corn.",
+      "phonetic": "/fʊl pleɪt fʊl slɪp stɪl rum fɔr kɔrn/",
+      "zh": "盤子滿、單子滿，還裝得下玉米。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That is everything, unless you want more.",
+      "phonetic": "/ðæt ɪz ˈɛvriθɪŋ ʌnˈlɛs ju wɑnt mɔr/",
+      "zh": "這樣就齊了，除非你還想要。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is enough, the pot is already singing.",
+      "phonetic": "/ɪt ɪz ɪˈnʌf ðə pɑt ɪz ɔlˈrɛdi ˈsɪŋɪŋ/",
+      "zh": "夠了，鍋子已經在唱歌了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Singing pot, full table, happy hands.",
+      "phonetic": "/ˈsɪŋɪŋ pɑt fʊl ˈteɪbəl ˈhæpi hændz/",
+      "zh": "唱歌的鍋、滿滿的桌子、開心的手。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Happy hands, and a first round soon.",
+      "phonetic": "/ˈhæpi hændz ænd ə fɜrst raʊnd sun/",
+      "zh": "開心的手，馬上就能煮第一輪。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let us walk to the sauce bar now.",
+      "phonetic": "/lɛt ʌs wɔk tu ðə sɔs bɑr naʊ/",
+      "zh": "我們現在走到調料台那邊吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, with two empty bowls in my hands.",
+      "phonetic": "/jɛs wɪð tu ˈɛmpi boʊlz ɪn maɪ hændz/",
+      "zh": "好，我手上已經拿著兩個空碗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How many jars are on this bar?",
+      "phonetic": "/haʊ ˈmɛni dʒɑrz ɑr ɑn ðɪs bɑr/",
+      "zh": "這個調料台上有多少個罐子？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Twelve jars, and six little ladles.",
+      "phonetic": "/twɛlv dʒɑrz ænd sɪks ˈlɪtəl ˈlædəlz/",
+      "zh": "十二個醬罐，還有六支小杓。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sesame jar is the heavy one.",
+      "phonetic": "/ðə ˈsɛsəmi dʒɑr ɪz ðə ˈhɛvi wʌn/",
+      "zh": "芝麻醬那一罐是特別重的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stir it first, the oil sits on top.",
+      "phonetic": "/stɜr ɪt fɜrst ði ɔɪl sɪts ɑn tɑp/",
+      "zh": "先攪一下，油都浮在最上面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One spoon of sesame, is that enough?",
+      "phonetic": "/wʌn spun əv ˈsɛsəmi ɪz ðæt ɪˈnʌf/",
+      "zh": "一匙芝麻醬夠不夠？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two spoons, the paste is very thick.",
+      "phonetic": "/tu spunz ðə peɪst ɪz ˈvɛri θɪk/",
+      "zh": "我要兩匙，這個醬很濃稠。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Half a spoon of chili oil, only.",
+      "phonetic": "/hæf ə spun əv ˈtʃɪli ɔɪl ˈoʊnli/",
+      "zh": "辣油只要半匙就好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And one full spoon for my own bowl.",
+      "phonetic": "/ænd wʌn fʊl spun fɔr maɪ oʊn boʊl/",
+      "zh": "我自己的那碗要整整一匙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you press the garlic or scoop it?",
+      "phonetic": "/du ju prɛs ðə ˈɡɑrlɪk ɔr skup ɪt/",
+      "zh": "蒜泥是用壓的還是用舀的？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "There is a press, silver, on the left.",
+      "phonetic": "/ðɛr ɪz ə prɛs ˈsɪlvər ɑn ðə lɛft/",
+      "zh": "左手邊有一個銀色的壓蒜器。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Two cloves for me, three if you dare.",
+      "phonetic": "/tu kloʊvz fɔr mi θri ɪf ju dɛr/",
+      "zh": "我加兩瓣蒜，你敢的話三瓣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I dare, garlic is the soul of sauce.",
+      "phonetic": "/aɪ dɛr ˈɡɑrlɪk ɪz ðə soʊl əv sɔs/",
+      "zh": "我敢，蒜就是蘸醬的靈魂。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Soul, yes, but also a kind of fire.",
+      "phonetic": "/soʊl jɛs bʌt ˈɔlsoʊ ə kaɪnd əv ˈfaɪər/",
+      "zh": "是靈魂，但同時也是一種火。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Soft fire, mine goes under the sesame.",
+      "phonetic": "/sɔft ˈfaɪər maɪn ɡoʊz ˈʌndər ðə ˈsɛsəmi/",
+      "zh": "溫柔的火，我的蒜要埋在芝麻醬下面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Cilantro, a small handful, torn by hand.",
+      "phonetic": "/sɪˈlæntroʊ ə smɔl ˈhændfʊl tɔrn baɪ hænd/",
+      "zh": "香菜一小把，用手撕開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Torn, not cut, it smells brighter that way.",
+      "phonetic": "/tɔrn nɑt kʌt ɪt smɛlz ˈbraɪtər ðæt weɪ/",
+      "zh": "用手撕不用切的，聞起來比較清香。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Cut cilantro is in the second jar.",
+      "phonetic": "/kʌt sɪˈlæntroʊ ɪz ɪn ðə ˈsɛkənd dʒɑr/",
+      "zh": "切好的香菜在第二個罐子裡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will take the cut kind, thanks.",
+      "phonetic": "/aɪ wɪl teɪk ðə kʌt kaɪnd θæŋks/",
+      "zh": "我拿切好的那種，省事。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Scallion rings, green and white, both please.",
+      "phonetic": "/ˈskæliən rɪŋz ɡrin ænd waɪt boʊθ pliːz/",
+      "zh": "蔥花，蔥綠蔥白都要。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Both, and peanuts crushed in the brass bowl.",
+      "phonetic": "/boʊθ ænd ˈpinʌts krʌʃt ɪn ðə bræs boʊl/",
+      "zh": "都要，還有銅碗裡壓碎的花生。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are those peanuts already crushed for us?",
+      "phonetic": "/ɑr ðoʊz ˈpinʌts ɔlˈrɛdi krʌʃt fɔr ʌs/",
+      "zh": "那些花生是已經幫我們壓碎的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Half crushed, some pieces stay nice and big.",
+      "phonetic": "/hæf krʌʃt sʌm ˈpisəz steɪ naɪs ænd bɪɡ/",
+      "zh": "只壓一半，有些塊狀還大大留著。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One spoon of oyster sauce, maybe less.",
+      "phonetic": "/wʌn spun əv ˈɔɪstər sɔs ˈmeɪbi lɛs/",
+      "zh": "蠔油一匙，也許再少一點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Less, the broth is already very salty.",
+      "phonetic": "/lɛs ðə brɔθ ɪz ɔlˈrɛdi ˈvɛri ˈsɔlti/",
+      "zh": "少一點，鍋裡的湯已經很鹹了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Black vinegar, three drops, not a pour.",
+      "phonetic": "/blæk ˈvɪnɪɡər θri drɑps nɑt ə pɔr/",
+      "zh": "黑醋三滴就好，不能倒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Drops wake the sauce, a pour buries it.",
+      "phonetic": "/drɑps weɪk ðə sɔs ə pɔr ˈbɛriz ɪt/",
+      "zh": "幾滴會叫醒醬，倒太多會把它埋起來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You talk about sauce like a doctor.",
+      "phonetic": "/ju tɔk əˈbaʊt sɔs laɪk ə ˈdɑktər/",
+      "zh": "你講蘸醬的樣子像個醫師。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A sauce doctor, with a small glass spoon.",
+      "phonetic": "/ə sɔs ˈdɑktər wɪð ə smɔl ɡlæs spun/",
+      "zh": "一位醬料醫師，手裡拿著小玻璃匙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is that sugar in the tiny dish?",
+      "phonetic": "/ɪz ðæt ˈʃʊɡər ɪn ðə ˈtaɪni dɪʃ/",
+      "zh": "那個小碟裡裝的是糖嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A little, just to round the sharp taste.",
+      "phonetic": "/ə ˈlɪtəl dʒʌst tu raʊnd ðə ʃɑrp teɪst/",
+      "zh": "一點點，用來把嗆味修圓。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "And the raw egg in that cold cup?",
+      "phonetic": "/ænd ðə rɔ ɛɡ ɪn ðæt koʊld kʌp/",
+      "zh": "那冰杯裡的生雞蛋呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only stirred in sauce, never eaten alone.",
+      "phonetic": "/ˈoʊnli ˈstɜrd ɪn sɔs ˈnɛvər ˈitən əˈloʊn/",
+      "zh": "只拌進蘸醬裡，絕不會單獨生吃。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What about the jar of chopped chilies?",
+      "phonetic": "/wʌt əˈbaʊt ðə dʒɑr əv tʃɑpt ˈtʃɪliz/",
+      "zh": "那切碎辣椒的那一罐呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Skip it, our mala side has plenty.",
+      "phonetic": "/skɪp ɪt ˈaʊər ˈmɑlə saɪd hæz ˈplɛnti/",
+      "zh": "跳過吧，麻辣那邊已經夠多了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is our sauce the same, or different?",
+      "phonetic": "/ɪz ˈaʊər sɔs ðə seɪm ɔr ˈdɪfərənt/",
+      "zh": "我們的蘸料一樣嗎，還是不同？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Different, yours runs hot, mine runs creamy.",
+      "phonetic": "/ˈdɪfərənt jɔrz rʌnz hɑt maɪn rʌnz ˈkrimi/",
+      "zh": "不一樣，你的偏辣，我的偏奶香。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Creamy needs the sesame, hot needs oil.",
+      "phonetic": "/ˈkrimi nidz ðə ˈsɛsəmi hɑt nidz ɔɪl/",
+      "zh": "要濃潤就加芝麻醬，要辣就加辣油。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And I need a wipe, my hand is oily.",
+      "phonetic": "/ænd aɪ nid ə waɪp maɪ hænd ɪz ˈɔɪli/",
+      "zh": "我還需要一張濕紙，我手上有油。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Napkins are stacked under the sauce spoons.",
+      "phonetic": "/ˈnæpkɪnz ɑr stækt ˈʌndər ðə sɔs spunz/",
+      "zh": "餐巾紙疊在醬料杓的下面。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two is plenty, one for each hand.",
+      "phonetic": "/tu ɪz ˈplɛnti wʌn fɔr itʃ hænd/",
+      "zh": "兩張就夠了，每隻手各一張。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did a drop fall on the counter?",
+      "phonetic": "/dɪd ə drɑp fɔl ɑn ðə ˈkaʊntər/",
+      "zh": "有一滴滴到台面上了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, we wipe it, the bar stays clean.",
+      "phonetic": "/jɛs wi waɪp ɪt ðə bɑr steɪz klin/",
+      "zh": "對，我們擦掉，調料台要保持乾淨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The next guest will thank us quietly.",
+      "phonetic": "/ðə nɛkst ɡɛst wɪl θæŋk ʌs ˈkwaɪətli/",
+      "zh": "下一位客人會在心裡謝謝我們。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Quiet thanks, that is our special sauce.",
+      "phonetic": "/ˈkwaɪət θæŋks ðæt ɪz ˈaʊər ˈspɛʃəl sɔs/",
+      "zh": "無聲的謝意，就是我們最特別的蘸料。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let us carry the bowls back to the pot.",
+      "phonetic": "/lɛt ʌs ˈkæri ðə boʊlz bæk tu ðə pɑt/",
+      "zh": "我們把兩碗醬端到鍋邊吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Slow steps, the floor is a little wet.",
+      "phonetic": "/sloʊ stɛps ðə flɔr ɪz ə ˈlɪtəl wɛt/",
+      "zh": "慢慢走，地板有一點濕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Set your bowl on the small paper mat.",
+      "phonetic": "/sɛt jɔr boʊl ɑn ðə smɔl ˈpeɪpər mæt/",
+      "zh": "把你的碗放在小紙墊上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mat is under, now the first test dip.",
+      "phonetic": "/mæt ɪz ˈʌndər naʊ ðə fɜrst tɛst dɪp/",
+      "zh": "墊好了，現在來做第一次試蘸。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Dip one spoon, hold it up high.",
+      "phonetic": "/dɪp wʌn spun hoʊld ɪt ʌp haɪ/",
+      "zh": "用匙蘸一下，把匙舉高。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "High enough, the sauce runs in a thread.",
+      "phonetic": "/haɪ ɪˈnʌf ðə sɔs rʌnz ɪn ə θrɛd/",
+      "zh": "夠高了，醬沿著匙流成一條線。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A thread of sauce, that is the goal.",
+      "phonetic": "/ə θrɛd əv sɔs ðæt ɪz ðə ɡoʊl/",
+      "zh": "醬流成一條細線，那就是目標。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The goal was dinner, and a little fun.",
+      "phonetic": "/ðə ɡoʊl wʌz ˈdɪnər ænd ə ˈlɪtəl fʌn/",
+      "zh": "目標就是這頓飯，再加一點好玩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your sesame looks too thick to dip.",
+      "phonetic": "/jɔr ˈsɛsəmi lʊks tu θɪk tu dɪp/",
+      "zh": "你的芝麻醬看起來太稠，蘸不起來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A splash of hot broth will fix it.",
+      "phonetic": "/ə splæʃ əv hɑt brɔθ wɪl fɪks ɪt/",
+      "zh": "加一點滾湯就能調開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Broth in sauce, who started that habit?",
+      "phonetic": "/brɔθ ɪn sɔs hu ˈstɑrtɪd ðæt ˈhæbɪt/",
+      "zh": "醬裡加湯，這個習慣是誰開始的？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "This table, last winter, with one tired spoon.",
+      "phonetic": "/ðɪs ˈteɪbəl læst ˈwɪntər wɪð wʌn ˈtaɪərd spun/",
+      "zh": "就是這張桌子，去年冬天，一支累壞的匙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One tired spoon, and a rule was born.",
+      "phonetic": "/wʌn ˈtaɪərd spun ænd ə rul wʌz bɔrn/",
+      "zh": "一支累壞的匙，就定下一條規矩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sauce rules, born at this very table.",
+      "phonetic": "/sɔs rulz bɔrn æt ðɪs ˈvɛri ˈteɪbəl/",
+      "zh": "蘸醬的規矩，就在這張桌上誕生。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One bowl stays plain sesame only.",
+      "phonetic": "/wʌn boʊl steɪz pleɪn ˈsɛsəmi ˈoʊnli/",
+      "zh": "其中一碗只放純芝麻醬。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Plain is a safe place to rest.",
+      "phonetic": "/pleɪn ɪz ə seɪf pleɪs tu rɛst/",
+      "zh": "原味是一個讓舌頭休息的地方。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Rest the tongue, yes, after level three.",
+      "phonetic": "/rɛst ðə tʌŋ jɛs ˈæftər ˈlɛvəl θri/",
+      "zh": "讓舌頭歇一下，畢竟是三級辣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And sesame cools like a soft blanket.",
+      "phonetic": "/ænd ˈsɛsəmi kuls laɪk ə sɔft ˈblæŋkɪt/",
+      "zh": "芝麻醬蓋下來像一條軟毯子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did we bring enough bowls from the bar?",
+      "phonetic": "/dɪd wi brɪŋ ɪˈnʌf boʊlz frʌm ðə bɑr/",
+      "zh": "我們從調料台拿夠碗了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two for sauce, two empty for the shells.",
+      "phonetic": "/tu fɔr sɔs tu ˈɛmpi fɔr ðə ʃɛlz/",
+      "zh": "醬料用兩個，另外兩個空碗放蝦殼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good thinking, shells need their own house.",
+      "phonetic": "/ɡʊd ˈθɪŋkɪŋ ʃɛlz nid ðɛr oʊn haʊs/",
+      "zh": "想得真好，蝦殼也要有自己的家。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Their own house, plus one for shrimp heads.",
+      "phonetic": "/ðɛr oʊn haʊs plʌs wʌn fɔr ʃrɪmp hɛdz/",
+      "zh": "它們自己的碗，另外一個放蝦頭。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The server sees us, she brings more napkins.",
+      "phonetic": "/ðə ˈsɜrvər siz ʌs ʃi brɪŋz mɔr ˈnæpkɪnz/",
+      "zh": "服務生看見我們，多拿了紙巾過來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "How kind of her, sauce lives on our hands.",
+      "phonetic": "/haʊ kaɪnd əv hɜr sɔs lɪvz ɑn ˈaʊər hændz/",
+      "zh": "她真好，我們的醬都長在手上了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sauce on the sleeve, that is my record.",
+      "phonetic": "/sɔs ɑn ðə sliv ðæt ɪz maɪ ˈrɛkərd/",
+      "zh": "醬又沾到袖子，這是我的新紀錄。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Your apron saves the shirt, wear it now.",
+      "phonetic": "/jɔr ˈeɪprən seɪvz ðə ʃɜrt wɛr ɪt naʊ/",
+      "zh": "圍裙會救你的襯衫，現在就套上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Apron on, I am ready to dip badly.",
+      "phonetic": "/ˈeɪprən ɑn aɪ æm ˈrɛdi tu dɪp ˈbædli/",
+      "zh": "圍裙穿好了，我準備亂蘸一通。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Bad dips are brave dips, that is science.",
+      "phonetic": "/bæd dɪps ɑr breɪv dɪps ðæt ɪz ˈsaɪəns/",
+      "zh": "亂蘸就是勇敢的蘸，這是科學。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Science says try the garlic with lamb.",
+      "phonetic": "/ˈsaɪəns sɛz traɪ ðə ˈɡɑrlɪk wɪð læm/",
+      "zh": "科學說蒜泥要配羊肉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Science also says sesame loves the fish ball.",
+      "phonetic": "/ˈsaɪəns ˈɔlsoʊ sɛz ˈsɛsəmi lʌvz ðə fɪʃ bɔl/",
+      "zh": "科學也說芝麻醬最愛魚丸。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Match each meat with the right small bowl.",
+      "phonetic": "/mætʃ itʃ mit wɪð ðə raɪt smɔl boʊl/",
+      "zh": "每種肉都配對的那一小碗醬。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mine matches beef, yours matches greens.",
+      "phonetic": "/maɪn ˈmætʃɪz bif jɔrz ˈmætʃɪz ɡrinz/",
+      "zh": "我的配牛肉，你的配青菜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Too much garlic for one bowl, do you think?",
+      "phonetic": "/tu mʌtʃ ˈɡɑrlɪk fɔr wʌn boʊl du ju θɪŋk/",
+      "zh": "你會不會覺得一碗放不下這麼多蒜？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Half my garlic goes in your bowl.",
+      "phonetic": "/hæf maɪ ˈɡɑrlɪk ɡoʊz ɪn jɔr boʊl/",
+      "zh": "我把一半的蒜，拌進你的碗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You always share the loudest flavor.",
+      "phonetic": "/ju ˈɔlweɪz ʃɛr ðə ˈlaʊdəst ˈfleɪvər/",
+      "zh": "你總是分最嗆的那種味道。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Loud flavor, quiet table, that is us.",
+      "phonetic": "/laʊd ˈfleɪvər ˈkwaɪət ˈteɪbəl ðæt ɪz ʌs/",
+      "zh": "味道大聲、桌子安靜，這就是我們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let us return the spoons to the bar.",
+      "phonetic": "/lɛt ʌs rɪˈtɜrn ðə spunz tu ðə bɑr/",
+      "zh": "我們把杓子放回調料台。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They keep four clean ones, always enough.",
+      "phonetic": "/ðeɪ kip fɔr klin wʌnz ˈɔlweɪz ɪˈnʌf/",
+      "zh": "他們一直保持四支乾淨的，都夠用。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I used the last clean spoon, sorry.",
+      "phonetic": "/aɪ juzd ðə læst klin spun ˈsɑri/",
+      "zh": "我把最後一支乾淨的匙用掉了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is fine, the jar lid is next.",
+      "phonetic": "/ɪt ɪz faɪn ðə dʒɑr lɪd ɪz nɛkst/",
+      "zh": "沒關係，下一步是蓋好罐子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Lids on, jars closed, bar wiped clean.",
+      "phonetic": "/lɪdz ɑn dʒɑrz kloʊzd bɑr waɪpt klin/",
+      "zh": "蓋子蓋上、罐子收好、台面擦乾。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We are finished, and our bowls are art.",
+      "phonetic": "/wi ɑr ˈfɪnɪʃt ænd ˈaʊər boʊlz ɑr ɑrt/",
+      "zh": "我們完成了，兩碗醬像作品。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Art we can eat, that is my museum.",
+      "phonetic": "/ɑrt wi kæn it ðæt ɪz maɪ mjuˈziəm/",
+      "zh": "可以吃的藝術，這就是我的美術館。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Open till late, and free for two.",
+      "phonetic": "/ˈoʊpən tɪl leɪt ænd fri fɔr tu/",
+      "zh": "開到很晚，兩個人還免費。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Back at the pot, the broth is calm.",
+      "phonetic": "/bæk æt ðə pɑt ðə brɔθ ɪz kɑm/",
+      "zh": "回到座位，湯正平靜地滾著。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Calm and ready, the first beef is in.",
+      "phonetic": "/kɑm ænd ˈrɛdi ðə fɜrst bif ɪz ɪn/",
+      "zh": "平靜又準備好，第一盤牛肉下鍋了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Twelve seconds, I am counting very softly.",
+      "phonetic": "/twɛlv ˈsɛkəndz aɪ æm ˈkaʊntɪŋ ˈvɛri ˈsɔftli/",
+      "zh": "十二秒，我正在很小聲地數。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Time is up, lift it, my bowl waits.",
+      "phonetic": "/taɪm ɪz ʌp lɪft ɪt maɪ boʊl weɪts/",
+      "zh": "時間到，撈起來吧，我的碗在等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The beef is up, pale pink turning brown.",
+      "phonetic": "/ðə bif ɪz ʌp peɪl pɪŋk ˈtɜrnɪŋ braʊn/",
+      "zh": "牛肉撈起來了，粉紅正在變褐色。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Brown means ready, dip it while it steams.",
+      "phonetic": "/braʊn minz ˈrɛdi dɪp ɪt waɪl ɪt stimz/",
+      "zh": "變褐就是熟了，趁冒煙時蘸醬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One perfect bite, sesame, garlic, a little heat.",
+      "phonetic": "/wʌn ˈpɜrfɪkt baɪt ˈsɛsəmi ˈɡɑrlɪk ə ˈlɪtəl hit/",
+      "zh": "完美的一口，芝麻、蒜、一點辣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That was the best plan of the night.",
+      "phonetic": "/ðæt wʌz ðə bɛst plæn əv ðə naɪt/",
+      "zh": "那是今晚最好的計畫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Next time, we practice at our own table.",
+      "phonetic": "/nɛkst taɪm wi ˈpræktɪs æt ˈaʊər oʊn ˈteɪbəl/",
+      "zh": "下次我們在自家的桌上練習調醬。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Practice, taste, write it down, keep the recipe.",
+      "phonetic": "/ˈpræktɪs teɪst raɪt ɪt daʊn kip ðə ˈrɛsəpi/",
+      "zh": "練習、試味道、寫下來，留下配方。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is there a cooking card on the table?",
+      "phonetic": "/ɪz ðɛr ə ˈkʊkɪŋ kɑrd ɑn ðə ˈteɪbəl/",
+      "zh": "桌上有指示煮多久的小卡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it lists times for every plate.",
+      "phonetic": "/jɛs ɪt lɪsts taɪmz fɔr ˈɛvri pleɪt/",
+      "zh": "有，它列著每一盤要煮多久。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How long for the frozen fish balls?",
+      "phonetic": "/haʊ lɔŋ fɔr ðə ˈfroʊzən fɪʃ bɔlz/",
+      "zh": "冷凍魚丸要煮多久？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Five minutes, or when they float high.",
+      "phonetic": "/faɪv ˈmɪnɪts ɔr wɛn ðeɪ floʊt haɪ/",
+      "zh": "五分鐘，或是看它們浮得高高的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do the beef balls need the same time?",
+      "phonetic": "/du ðə bif bɔlz nid ðə seɪm taɪm/",
+      "zh": "牛肉丸也要煮一樣久嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A little more, they hold more meat inside.",
+      "phonetic": "/ə ˈlɪtəl mɔr ðeɪ hoʊld mɔr mit ɪnˈsaɪd/",
+      "zh": "要再久一點，它裡面肉比較多。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "And the shrimp paste leaves, how long?",
+      "phonetic": "/ænd ðə ʃrɪmp peɪst livz haʊ lɔŋ/",
+      "zh": "那蝦漿葉子要煮多久？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two minutes, they rise with small bubbles.",
+      "phonetic": "/tu ˈmɪnɪts ðeɪ raɪz wɪð smɔl ˈbʌbəlz/",
+      "zh": "兩分鐘，它們會跟著小泡浮起來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are the leaves ready when they turn pink?",
+      "phonetic": "/ɑr ðə livz ˈrɛdi wɛn ðeɪ tɜrn pɪŋk/",
+      "zh": "蝦漿變粉紅就是熟了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pink through, no gray in the middle.",
+      "phonetic": "/pɪŋk θru noʊ ɡreɪ ɪn ðə ˈmɪdəl/",
+      "zh": "要全粉紅，中間不能有灰色。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How do I check without breaking one?",
+      "phonetic": "/haʊ du aɪ tʃɛk wɪˈðaʊt ˈbreɪkɪŋ wʌn/",
+      "zh": "我怎麼檢查才不會把它弄破？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Press it gently, it should feel firm.",
+      "phonetic": "/prɛs ɪt ˈdʒɛntli ɪt ʃʊd fil fɜrm/",
+      "zh": "輕輕壓一下，它應該要有彈性。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Firm like a small pillow, yes?",
+      "phonetic": "/fɜrm laɪk ə smɔl ˈpɪloʊ jɛs/",
+      "zh": "像小枕頭那樣有彈性，對吧？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Exactly that, my pillow test passed twice.",
+      "phonetic": "/ɪɡˈzæktli ðæt maɪ ˈpɪloʊ tɛst pæst twaɪs/",
+      "zh": "就是那樣，我的枕頭測試過了兩次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What about the glass noodles, now or later?",
+      "phonetic": "/wʌt əˈbaʊt ðə ɡlæs ˈnudəlz naʊ ɔr ˈleɪtər/",
+      "zh": "那冬粉呢，現在煮還是等一下？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Later, or they thicken the whole broth.",
+      "phonetic": "/ˈleɪtər ɔr ðeɪ ˈθɪkən ðə hoʊl brɔθ/",
+      "zh": "等一下再下，不然整鍋湯會變稠。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Four minutes for them, from the card?",
+      "phonetic": "/fɔr ˈmɪnɪts fɔr ðɛm frʌm ðə kɑrd/",
+      "zh": "卡片上寫它們四分鐘嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Four, and stir once so they open.",
+      "phonetic": "/fɔr ænd stɜr wʌns soʊ ðeɪ ˈoʊpən/",
+      "zh": "四分鐘，攪一下讓它們散開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do the napa leaves need a long time?",
+      "phonetic": "/du ðə ˈnæpə livz nid ə lɔŋ taɪm/",
+      "zh": "白菜葉要煮很久嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Forty seconds, then they lie down soft.",
+      "phonetic": "/ˈfɔrti ˈsɛkəndz ðɛn ðeɪ laɪ daʊn sɔft/",
+      "zh": "四十秒，它們就軟軟地躺下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Lying down is their way of saying done.",
+      "phonetic": "/ˈlaɪɪŋ daʊn ɪz ðɛr weɪ əv ˈseɪɪŋ dʌn/",
+      "zh": "躺平就是它們在說熟了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Say it again when I lift them.",
+      "phonetic": "/seɪ ɪt əˈɡɛn wɛn aɪ lɪft ðɛm/",
+      "zh": "等我把它們撈起來時再說一次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the corn done when the kernels glow?",
+      "phonetic": "/ɪz ðə kɔrn dʌn wɛn ðə ˈkɜrnəlz ɡloʊ/",
+      "zh": "玉米粒發亮就是熟了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Corn is sweet at eight good minutes.",
+      "phonetic": "/kɔrn ɪz swit æt eɪt ɡʊd ˈmɪnɪts/",
+      "zh": "煮滿八分鐘的玉米最甜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Eight minutes, I wrote it on my hand.",
+      "phonetic": "/eɪt ˈmɪnɪts aɪ roʊt ɪt ɑn maɪ hænd/",
+      "zh": "八分鐘，我寫在手心了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Please do not read the times from your palm.",
+      "phonetic": "/pliːz du nɑt rid ðə taɪmz frʌm jɔr pɑm/",
+      "zh": "拜託，別照著手心讀時間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The timer beeps, or do we just count?",
+      "phonetic": "/ðə ˈtaɪmər bips ɔr du wi dʒʌst kaʊnt/",
+      "zh": "計時器會嗶，還是我們自己數？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It beeps, but softly, it is a kind beep.",
+      "phonetic": "/ɪt bips bʌt ˈsɔftli ɪt ɪz ə kaɪnd bip/",
+      "zh": "會嗶，但很輕，是一種溫柔的嗶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the pot stop boiling with cold plates?",
+      "phonetic": "/dʌz ðə pɑt stɑp ˈbɔɪlɪŋ wɪð koʊld pleɪts/",
+      "zh": "加入冰的盤子時，湯會暫停滾嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It rests a moment, then returns to work.",
+      "phonetic": "/ɪt rɛsts ə ˈmoʊmənt ðɛn rɪˈtɜrnz tu wɜrk/",
+      "zh": "它休息一小下，然後回去工作。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So wait for the roll before we time.",
+      "phonetic": "/soʊ weɪt fɔr ðə roʊl bɪˈfɔr wi taɪm/",
+      "zh": "所以要等湯回滾再開始計時。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wait for the roll, then start the count.",
+      "phonetic": "/weɪt fɔr ðə roʊl ðɛn stɑrt ðə kaʊnt/",
+      "zh": "等它回滾，然後開始數。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which chopsticks are for the raw beef?",
+      "phonetic": "/wɪtʃ ˈtʃɑpstɪks ɑr fɔr ðə rɔ bif/",
+      "zh": "哪一雙筷子是用來夾生牛肉的？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The long dark pair, the public chopsticks.",
+      "phonetic": "/ðə lɔŋ dɑrk pɛr ðə ˈpʌblɪk ˈtʃɑpstɪks/",
+      "zh": "那雙長長的深色筷，就是公筷。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Public ones in, private ones to the mouth.",
+      "phonetic": "/ˈpʌblɪk wʌnz ɪn ˈpraɪvət wʌnz tu ðə maʊθ/",
+      "zh": "公筷下鍋，私筷才進嘴巴。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Right, and we rest them on the spoon.",
+      "phonetic": "/raɪt ænd wi rɛst ðɛm ɑn ðə spun/",
+      "zh": "對，然後讓筷子擱在湯匙上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Strainer spoons are best for the balls.",
+      "phonetic": "/ˈstreɪnər spunz ɑr bɛst fɔr ðə bɔlz/",
+      "zh": "撈丸子用濾網杓最方便。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lift, pause, let the soup run back.",
+      "phonetic": "/lɪft pɔz lɛt ðə sup rʌn bæk/",
+      "zh": "撈起、停一下，讓湯流回去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you want me to cook, or you?",
+      "phonetic": "/du ju wɑnt mi tu kʊk ɔr ju/",
+      "zh": "你想讓我煮，還是由你來煮？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You cook, I will sit and receive.",
+      "phonetic": "/ju kʊk aɪ wɪl sɪt ænd rɪˈsiv/",
+      "zh": "你煮，我坐著接就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Receive like a king, with both hands open.",
+      "phonetic": "/rɪˈsiv laɪk ə kɪŋ wɪð boʊθ hændz ˈoʊpən/",
+      "zh": "像國王那樣張開兩手接住。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Both hands, yes, and this bowl is yours.",
+      "phonetic": "/boʊθ hændz jɛs ænd ðɪs boʊl ɪz jɔrz/",
+      "zh": "兩手都接，這一碗先給你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is this beef still too pink to eat?",
+      "phonetic": "/ɪz ðɪs bif stɪl tu pɪŋk tu it/",
+      "zh": "這牛肉還粉紅得不能吃嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wait five more seconds, then it is safe.",
+      "phonetic": "/weɪt faɪv mɔr ˈsɛkəndz ðɛn ɪt ɪz seɪf/",
+      "zh": "再等五秒，那樣就安心了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Safe, warm, and soft, the three rules.",
+      "phonetic": "/seɪf wɔrm ænd sɔft ðə θri rulz/",
+      "zh": "安全、熱、軟，三條原則。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Three rules, one spoon, and a patient heart.",
+      "phonetic": "/θri rulz wʌn spun ænd ə ˈpeɪʃənt hɑrt/",
+      "zh": "三條原則、一支匙，還有一顆耐心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How long for the thin white mushrooms?",
+      "phonetic": "/haʊ lɔŋ fɔr ðə θɪn waɪt ˈmʌʃrʊmz/",
+      "zh": "那種細細白白的菇要煮多久？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ninety seconds, they shrink into soft threads.",
+      "phonetic": "/ˈnaɪnti ˈsɛkəndz ðeɪ ʃrɪŋk ˈɪntu sɔft θrɛdz/",
+      "zh": "九十秒，它們會縮成軟軟的絲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the brown cap take longer still?",
+      "phonetic": "/dʌz ðə braʊn kæp teɪk ˈlɔŋɡər stɪl/",
+      "zh": "茶色那朵菇傘要更久嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Three minutes, the thick ones love time.",
+      "phonetic": "/θri ˈmɪnɪts ðə θɪk wʌnz lʌv taɪm/",
+      "zh": "三分鐘，厚的就是喜歡時間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Time is the last secret ingredient here.",
+      "phonetic": "/taɪm ɪz ðə læst ˈsikrɪt ɪnˈɡridiənt hɪr/",
+      "zh": "時間是這裡最後一樣祕密材料。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Secret, simple, and free, like all good times.",
+      "phonetic": "/ˈsikrɪt ˈsɪmpəl ænd fri laɪk ɔl ɡʊd taɪmz/",
+      "zh": "祕密、簡單、免費，像所有好時光。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the tofu puff floating yet?",
+      "phonetic": "/ɪz ðə ˈtoʊfu pʌf ˈfloʊtɪŋ jɛt/",
+      "zh": "油豆腐飄起來了沒？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Not yet, push it under twice.",
+      "phonetic": "/nɑt jɛt pʊʃ ɪt ˈʌndər twaɪs/",
+      "zh": "還沒，把它壓進湯裡兩次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Pressed, it drinks, then it floats full.",
+      "phonetic": "/prɛst ɪt drɪŋks ðɛn ɪt floʊts fʊl/",
+      "zh": "壓下去它吸湯，然後飽飽地浮起。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Full of soup, be careful when you bite.",
+      "phonetic": "/fʊl əv sup bi ˈkɛrfəl wɛn ju baɪt/",
+      "zh": "裡面全都是湯，咬的時候要小心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hot soup inside, that is the trap.",
+      "phonetic": "/hɑt sup ɪnˈsaɪd ðæt ɪz ðə træp/",
+      "zh": "裡面藏著燙湯，這就是陷阱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A kind trap, bite small and slow.",
+      "phonetic": "/ə kaɪnd træp baɪt smɔl ænd sloʊ/",
+      "zh": "溫柔的陷阱，小口慢慢咬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How long for the rice cakes, again?",
+      "phonetic": "/haʊ lɔŋ fɔr ðə raɪs keɪks əˈɡɛn/",
+      "zh": "年糕要煮多久，再說一次？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Six minutes, or they hug the divider.",
+      "phonetic": "/sɪks ˈmɪnɪts ɔr ðeɪ hʌɡ ðə dɪˈvaɪdər/",
+      "zh": "六分鐘，不然它們會抱著隔板。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hugging cakes, what a sweet little problem.",
+      "phonetic": "/ˈhʌɡɪŋ keɪks wʌt ə swit ˈlɪtəl ˈprɑbləm/",
+      "zh": "抱在一起的年糕，多可愛的小問題。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Loosen them with the back of a spoon.",
+      "phonetic": "/ˈlusən ðɛm wɪð ðə bæk əv ə spun/",
+      "zh": "用湯匙背面把它們推開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the lotus root need much time?",
+      "phonetic": "/dʌz ðə ˈloʊtəs rut nid mʌtʃ taɪm/",
+      "zh": "蓮藕需要煮很久嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Four minutes keeps it crisp, six makes soft.",
+      "phonetic": "/fɔr ˈmɪnɪts kips ɪt krɪsp sɪks meɪks sɔft/",
+      "zh": "四分鐘是脆的，六分鐘就綿了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Crisp for you, soft for me, perfect.",
+      "phonetic": "/krɪsp fɔr ju sɔft fɔr mi ˈpɜrfɪkt/",
+      "zh": "你吃脆的、我吃軟的，剛剛好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two textures from one pot, clever trick.",
+      "phonetic": "/tu ˈtɛkstʃərz frʌm wʌn pɑt ˈklɛvər trɪk/",
+      "zh": "一鍋兩種口感，聰明的小手法。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the pot lid off while we cook?",
+      "phonetic": "/ɪz ðə pɑt lɪd ɔf waɪl wi kʊk/",
+      "zh": "我們煮的時候鍋蓋要拿掉嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Off for the mala, on for the corn.",
+      "phonetic": "/ɔf fɔr ðə ˈmɑlə ɑn fɔr ðə kɔrn/",
+      "zh": "麻辣那邊掀開，玉米那邊蓋著。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Covering the corn steams it to gold.",
+      "phonetic": "/ˈkʌvərɪŋ ðə kɔrn stimz ɪt tu ɡoʊld/",
+      "zh": "蓋著悶玉米，會悶出金色。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Gold, sweet, and ready when you blink.",
+      "phonetic": "/ɡoʊld swit ænd ˈrɛdi wɛn ju blɪŋk/",
+      "zh": "金色、甜甜的一眨眼就熟了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did the timer just sound for the beef?",
+      "phonetic": "/dɪd ðə ˈtaɪmər dʒʌst saʊnd fɔr ðə bif/",
+      "zh": "計時器剛才是為牛肉響的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, that was the mushrooms, not the beef.",
+      "phonetic": "/noʊ ðæt wʌz ðə ˈmʌʃrʊmz nɑt ðə bif/",
+      "zh": "不，剛那聲是菇的，不是牛肉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One more minute, the beef is patient.",
+      "phonetic": "/wʌn mɔr ˈmɪnɪt ðə bif ɪz ˈpeɪʃənt/",
+      "zh": "再一分鐘，牛肉很有耐心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Patient beef, impatient chopsticks, oh dear.",
+      "phonetic": "/ˈpeɪʃənt bif ɪmˈpeɪʃənt ˈtʃɑpstɪks oʊ dɪr/",
+      "zh": "耐心的牛肉，著急的筷子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do not rush, we have the whole evening.",
+      "phonetic": "/du nɑt rʌʃ wi hæv ðə hoʊl ˈivnɪŋ/",
+      "zh": "別急，我們有一整個晚上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The evening is ours, the pot sets the pace.",
+      "phonetic": "/ði ˈivnɪŋ ɪz ˈaʊərz ðə pɑt sɛts ðə peɪs/",
+      "zh": "晚上是我們的，節奏交給鍋子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A pot is a good clock, softly loud.",
+      "phonetic": "/ə pɑt ɪz ə ɡʊd klɑk ˈsɔftli laʊd/",
+      "zh": "鍋子就是好時鐘，輕輕地響。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It ticks in bubbles, and we read it.",
+      "phonetic": "/ɪt tɪks ɪn ˈbʌbəlz ænd wi rid ɪt/",
+      "zh": "它用小泡泡滴答，我們讀得懂。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Blow once on that spoon, it is hot.",
+      "phonetic": "/bloʊ wʌns ɑn ðæt spun ɪt ɪz hɑt/",
+      "zh": "那匙湯吹一下，它很燙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Blowing, yes, and sipping from the edge.",
+      "phonetic": "/ˈbloʊɪŋ jɛs ænd ˈsɪpɪŋ frʌm ði ɛdʒ/",
+      "zh": "在吹了，還從匙邊小口喝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Cooler at the edge, smart spoon use.",
+      "phonetic": "/ˈkulər æt ði ɛdʒ smɑrt spun jus/",
+      "zh": "匙邊比較涼，很聰明的用法。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Smart is my middle name tonight.",
+      "phonetic": "/smɑrt ɪz maɪ ˈmɪdəl neɪm təˈnaɪt/",
+      "zh": "今晚聰明就是我的中間名。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How long does the pork belly still need?",
+      "phonetic": "/haʊ lɔŋ dʌz ðə pɔrk ˈbɛli stɪl nid/",
+      "zh": "豬五花還要煮多久？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Six more, the edges are turning clear.",
+      "phonetic": "/sɪks mɔr ði ˈɛdʒɪz ɑr ˈtɜrnɪŋ klɪr/",
+      "zh": "再六分鐘，肥邊已經轉成半透明。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Clear edges mean the fat has left.",
+      "phonetic": "/klɪr ˈɛdʒɪz min ðə fæt hæz lɛft/",
+      "zh": "邊緣變清，就是油脂跑出來了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The broth gets richer, so we win.",
+      "phonetic": "/ðə brɔθ ɡɛts ˈrɪtʃər soʊ wi wɪn/",
+      "zh": "湯也變得更濃，是我們賺到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do not skim all the fat, leave some.",
+      "phonetic": "/du nɑt skɪm ɔl ðə fæt liv sʌm/",
+      "zh": "別把油全撇掉，留一點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Some fat is flavor, the card says so.",
+      "phonetic": "/sʌm fæt ɪz ˈfleɪvər ðə kɑrd sɛz soʊ/",
+      "zh": "一點油就是味道，卡上也這樣寫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Card says the greens go in last.",
+      "phonetic": "/kɑrd sɛz ðə ɡrinz ɡoʊ ɪn læst/",
+      "zh": "卡片說青菜要最後再下鍋。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Greens at the end, they soak up broth.",
+      "phonetic": "/ɡrinz æt ði ɛnd ðeɪ soʊk ʌp brɔθ/",
+      "zh": "青菜最後下，它們會吸滿湯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Have we asked how long the clams take?",
+      "phonetic": "/hæv wi æskt haʊ lɔŋ ðə klæmz teɪk/",
+      "zh": "我們問過蛤蜊要煮多久了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Three minutes, discard any that stay shut.",
+      "phonetic": "/θri ˈmɪnɪts dɪˈskɑrd ˈɛni ðæt steɪ ʃʌt/",
+      "zh": "三分鐘，一直沒開的就丟掉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Shrimp are pink, but the timer says wait.",
+      "phonetic": "/ʃrɪmp ɑr pɪŋk bʌt ðə ˈtaɪmər sɛz weɪt/",
+      "zh": "蝦子變粉紅了，但計時器說還得等。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pink and timed, that is the real sign.",
+      "phonetic": "/pɪŋk ænd taɪmd ðæt ɪz ðə ril saɪn/",
+      "zh": "既變了粉紅又煮夠時間，那才是真的熟了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Round two is ready, the broth rolled back.",
+      "phonetic": "/raʊnd tu ɪz ˈrɛdi ðə brɔθ roʊld bæk/",
+      "zh": "第二輪可以了，湯又滾回來了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Round two, same plan, we go slowly.",
+      "phonetic": "/raʊnd tu seɪm plæn wi ɡoʊ ˈsloʊli/",
+      "zh": "第二輪，一樣慢慢來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Slow is the secret rule of hot pot.",
+      "phonetic": "/sloʊ ɪz ðə ˈsikrɪt rul əv hɑt pɑt/",
+      "zh": "慢就是吃火鍋的祕密規矩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And we are very good at slow.",
+      "phonetic": "/ænd wi ɑr ˈvɛri ɡʊd æt sloʊ/",
+      "zh": "而我們最拿手的就是慢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Full bowls, quiet pot, what a night.",
+      "phonetic": "/fʊl boʊlz ˈkwaɪət pɑt wʌt ə naɪt/",
+      "zh": "碗滿滿、鍋安靜，多好的一晚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A good night needs one more thing.",
+      "phonetic": "/ə ɡʊd naɪt nidz wʌn mɔr θɪŋ/",
+      "zh": "好夜晚還需要多一樣東西。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Our broth line has dropped a little.",
+      "phonetic": "/ˈaʊər brɔθ laɪn hæz drɑpt ə ˈlɪtəl/",
+      "zh": "我們的湯位下降了一點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Raise your hand, the server sees the pot.",
+      "phonetic": "/reɪz jɔr hænd ðə ˈsɜrvər siz ðə pɑt/",
+      "zh": "舉手示意一下，外場會看到鍋子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Excuse us, could the pot have more broth?",
+      "phonetic": "/ɪkˈskjuz ʌs kʊd ðə pɑt hæv mɔr brɔθ/",
+      "zh": "不好意思，這鍋可以再加點湯嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Of course, mushroom or plain hot broth?",
+      "phonetic": "/ʌv kɔrs ˈmʌʃrʊm ɔr pleɪn hɑt brɔθ/",
+      "zh": "當然可以，要菌菇湯還是一般高湯？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Mushroom on the clear side, please.",
+      "phonetic": "/ˈmʌʃrʊm ɑn ðə klɪr saɪd pliːz/",
+      "zh": "菌菇湯請加在清湯那邊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And the mala side gets plain broth.",
+      "phonetic": "/ænd ðə ˈmɑlə saɪd ɡɛts pleɪn brɔθ/",
+      "zh": "麻辣那邊就加一般的高湯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the extra broth free at this shop?",
+      "phonetic": "/ɪz ði ˈɛkstrə brɔθ fri æt ðɪs ʃɑp/",
+      "zh": "這家店加湯是免費的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Free, all night, as many times as you like.",
+      "phonetic": "/fri ɔl naɪt æz ˈmɛni taɪmz æz ju laɪk/",
+      "zh": "免費，整個晚上想加幾次都行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then we may need it twice tonight.",
+      "phonetic": "/ðɛn wi meɪ nid ɪt twaɪs təˈnaɪt/",
+      "zh": "那我們今晚可能要加兩次。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will come back in ten minutes.",
+      "phonetic": "/aɪ wɪl kʌm bæk ɪn tɛn ˈmɪnɪts/",
+      "zh": "我大約十分鐘後再過來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thank you, and take your time, no rush.",
+      "phonetic": "/θæŋk ju ænd teɪk jɔr taɪm noʊ rʌʃ/",
+      "zh": "謝謝，你慢慢來，不用趕。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nice guests, the pot is easy to read.",
+      "phonetic": "/naɪs ɡɛsts ðə pɑt ɪz ˈizi tu rid/",
+      "zh": "你們真好，鍋子一眼就看得出來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She went to the big black kettle.",
+      "phonetic": "/ʃi wɛnt tu ðə bɪɡ blæk ˈkɛtəl/",
+      "zh": "她走向那支黑色的大湯壺。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The kettle rides on a small cart.",
+      "phonetic": "/ðə ˈkɛtəl raɪdz ɑn ə smɔl kɑrt/",
+      "zh": "湯壺放在一輛小推車上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A cart just for the broth, how kind.",
+      "phonetic": "/ə kɑrt dʒʌst fɔr ðə brɔθ haʊ kaɪnd/",
+      "zh": "專門為湯準備一輛小車，真周到。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Kind and safe, the kettle is very heavy.",
+      "phonetic": "/kaɪnd ænd seɪf ðə ˈkɛtəl ɪz ˈvɛri ˈhɛvi/",
+      "zh": "貼心又安全，因為那支壺很重。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do we lift the lid while she pours?",
+      "phonetic": "/du wi lɪft ðə lɪd waɪl ʃi pɔrz/",
+      "zh": "她倒湯的時候我們要掀蓋嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will hold it, steam makes it hot.",
+      "phonetic": "/aɪ wɪl hoʊld ɪt stim meɪks ɪt hɑt/",
+      "zh": "我來扶蓋子，蒸汽把它燙熱了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Use the cloth, do not touch the handle.",
+      "phonetic": "/juz ðə klɔθ du nɑt tʌtʃ ðə ˈhændəl/",
+      "zh": "用布墊著，不要直接碰把手。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cloth on, now she can come over.",
+      "phonetic": "/klɔθ ɑn naʊ ʃi kæn kʌm ˈoʊvər/",
+      "zh": "墊好了，她現在可以過來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She pours low, near the soup surface.",
+      "phonetic": "/ʃi pɔrz loʊ nɪr ðə sup ˈsɜrfəs/",
+      "zh": "她倒得很低，幾乎貼著湯面。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Low pouring stops the splash on us.",
+      "phonetic": "/loʊ ˈpɔrɪŋ stɑps ðə splæʃ ɑn ʌs/",
+      "zh": "倒得低就不會噴到我們身上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the new broth as strong as before?",
+      "phonetic": "/ɪz ðə nu brɔθ æz strɔŋ əz bɪˈfɔr/",
+      "zh": "新加的湯跟原來一樣濃嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same pot, same kettle, same deep taste.",
+      "phonetic": "/seɪm pɑt seɪm ˈkɛtəl seɪm dip teɪst/",
+      "zh": "同一鍋、同一壺，味道一樣濃。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good, a thin broth would make us sad.",
+      "phonetic": "/ɡʊd ə θɪn brɔθ wʊd meɪk ʌs sæd/",
+      "zh": "好，湯要變淡我們會覺得可惜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She never adds plain water, only broth.",
+      "phonetic": "/ʃi ˈnɛvər ædz pleɪn ˈwɔtər ˈoʊnli brɔθ/",
+      "zh": "她從不加白水，只加高湯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Only broth, that is a house rule.",
+      "phonetic": "/ˈoʊnli brɔθ ðæt ɪz ə haʊs rul/",
+      "zh": "只加高湯，這是店裡的原則。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "House rules, the reason we keep coming.",
+      "phonetic": "/haʊs rulz ði ˈrizən wi kip ˈkʌmɪŋ/",
+      "zh": "店家的原則，是我們一直回來的理由。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How much did the level come up?",
+      "phonetic": "/haʊ mʌtʃ dɪd ðə ˈlɛvəl kʌm ʌp/",
+      "zh": "湯位上升了多少？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Almost to the line, the mark is there.",
+      "phonetic": "/ˈɔlmoʊst tu ðə laɪn ðə mɑrk ɪz ðɛr/",
+      "zh": "幾乎到那條線，記號就在那裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "There is a line inside the pot?",
+      "phonetic": "/ðɛr ɪz ə laɪn ɪnˈsaɪd ðə pɑt/",
+      "zh": "鍋子內側有一條線嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A thin ring, it shows the safe fill.",
+      "phonetic": "/ə θɪn rɪŋ ɪt ʃoʊz ðə seɪf fɪl/",
+      "zh": "一圈細線，標示安全的水位。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Safe fill, so nothing jumps out.",
+      "phonetic": "/seɪf fɪl soʊ ˈnʌθɪŋ dʒʌmps aʊt/",
+      "zh": "裝到安全線，湯就不會跳出來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And the lid sits flat again, see.",
+      "phonetic": "/ænd ðə lɪd sɪts flæt əˈɡɛn si/",
+      "zh": "蓋子又能平平地蓋回去了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Back to a rolling boil, one minute.",
+      "phonetic": "/bæk tu ə ˈroʊlɪŋ bɔɪl wʌn ˈmɪnɪt/",
+      "zh": "再一分鐘就又滾起來了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rolling means we can drop the noodles.",
+      "phonetic": "/ˈroʊlɪŋ minz wi kæn drɑp ðə ˈnudəlz/",
+      "zh": "一滾我們就可以放冬粉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now for the noodles, the pot has room.",
+      "phonetic": "/naʊ fɔr ðə ˈnudəlz ðə pɑt hæz rum/",
+      "zh": "現在下冬粉，鍋裡空間夠大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Plenty of broth lets them swim and soften.",
+      "phonetic": "/ˈplɛnti əv brɔθ lɛts ðɛm swɪm ænd ˈsɔfən/",
+      "zh": "湯夠多，冬粉才能游動變軟。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should we stir once when they go in?",
+      "phonetic": "/ʃʊd wi stɜr wʌns wɛn ðeɪ ɡoʊ ɪn/",
+      "zh": "下鍋的時候要不要攪一次？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One stir, and the noodles do not stick.",
+      "phonetic": "/wʌn stɜr ænd ðə ˈnudəlz du nɑt stɪk/",
+      "zh": "攪一下，麵就不會黏在一起。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The clear side looks hungrier for broth.",
+      "phonetic": "/ðə klɪr saɪd lʊks ˈhʌŋɡriər fɔr brɔθ/",
+      "zh": "清湯那邊看起來更需要湯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It boils harder, so it drinks more.",
+      "phonetic": "/ɪt bɔɪlz ˈhɑrdər soʊ ɪt drɪŋks mɔr/",
+      "zh": "它滾得比較凶，所以喝得多。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Next refill on that side, then.",
+      "phonetic": "/nɛkst riˈfɪl ɑn ðæt saɪd ðɛn/",
+      "zh": "那下一次就補那一邊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will ask her when the line drops.",
+      "phonetic": "/aɪ wɪl æsk hɜr wɛn ðə laɪn drɑps/",
+      "zh": "等水位下降我就請她加。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do we need to call her or wave?",
+      "phonetic": "/du wi nid tu kɔl hɜr ɔr weɪv/",
+      "zh": "我們要開口叫她，還是揮揮手？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A small wave, she is watching this corner.",
+      "phonetic": "/ə smɔl weɪv ʃi ɪz ˈwɑtʃɪŋ ðɪs ˈkɔrnər/",
+      "zh": "揮一下手就好，她一直在看這角落。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She waves back with the big ladle.",
+      "phonetic": "/ʃi weɪvz bæk wɪð ðə bɪɡ ˈlædəl/",
+      "zh": "她揮著那支大湯杓回應我們。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The ladle is her friendly flag.",
+      "phonetic": "/ðə ˈlædəl ɪz hɜr ˈfrɛndli flæɡ/",
+      "zh": "那支湯杓就是她的友誼旗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A flag of broth, my favorite signal.",
+      "phonetic": "/ə flæɡ əv brɔθ maɪ ˈfeɪvərɪt ˈsɪɡnəl/",
+      "zh": "一面湯做的旗，是我最愛的訊號。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Signal received, the pot is full again.",
+      "phonetic": "/ˈsɪɡnəl rɪˈsivd ðə pɑt ɪz fʊl əˈɡɛn/",
+      "zh": "訊號收到，鍋子又滿了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Taste the clear side, has it changed?",
+      "phonetic": "/teɪst ðə klɪr saɪd hæz ɪt tʃeɪndʒd/",
+      "zh": "試一下清湯，味道有變嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A little softer, one more pinch of mushroom.",
+      "phonetic": "/ə ˈlɪtəl ˈsɔftər wʌn mɔr pɪntʃ əv ˈmʌʃrʊm/",
+      "zh": "稍微淡了一點，再放一小撮菇。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The jar of dried mushrooms is on the bar.",
+      "phonetic": "/ðə dʒɑr əv draɪd ˈmʌʃrʊmz ɪz ɑn ðə bɑr/",
+      "zh": "乾菇那一罐就在調料台上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will go get a pinch, hold the spoon.",
+      "phonetic": "/aɪ wɪl ɡoʊ ɡɛt ə pɪntʃ hoʊld ðə spun/",
+      "zh": "我去拿一小撮，你先拿著匙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A pinch more, and the soup is balanced.",
+      "phonetic": "/ə pɪntʃ mɔr ænd ðə sup ɪz ˈbælənst/",
+      "zh": "再多一小撮，湯就平衡了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Balanced, warm, and deep, just like before.",
+      "phonetic": "/ˈbælənst wɔrm ænd dip dʒʌst laɪk bɪˈfɔr/",
+      "zh": "平衡、溫熱、濃厚，跟原本一樣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Before the refill it was a bit thin.",
+      "phonetic": "/bɪˈfɔr ðə riˈfɪl ɪt wʌz ə bɪt θɪn/",
+      "zh": "補湯之前有一點淡淡的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Now the mala sings at full voice.",
+      "phonetic": "/naʊ ðə ˈmɑlə sɪŋz æt fʊl vɔɪs/",
+      "zh": "現在麻辣那邊唱得很大聲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Full voice, and we are still calm here.",
+      "phonetic": "/fʊl vɔɪs ænd wi ɑr stɪl kɑm hɪr/",
+      "zh": "鍋裡聲音很滿，我們這裡依舊安靜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Calm is the rule, the pot does the noise.",
+      "phonetic": "/kɑm ɪz ðə rul ðə pɑt dʌz ðə nɔɪz/",
+      "zh": "安靜是原則，聲音交給鍋子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the bone broth cooked here all day?",
+      "phonetic": "/ɪz ðə boʊn brɔθ kʊkt hɪr ɔl deɪ/",
+      "zh": "大骨湯是在店裡熬了一整天嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Six hours, the kitchen says on the card.",
+      "phonetic": "/sɪks ˈaʊərz ðə ˈkɪtʃən sɛz ɑn ðə kɑrd/",
+      "zh": "六個小時，菜單卡上這樣寫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Six hours in a pot, that is patient.",
+      "phonetic": "/sɪks ˈaʊərz ɪn ə pɑt ðæt ɪz ˈpeɪʃənt/",
+      "zh": "一鍋煮六小時，真有耐心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Patience we can taste, spoon by spoon.",
+      "phonetic": "/ˈpeɪʃəns wi kæn teɪst spun baɪ spun/",
+      "zh": "耐心是喝得出來的，一匙一匙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "May we have a cup of the clear broth?",
+      "phonetic": "/meɪ wi hæv ə kʌp əv ðə klɪr brɔθ/",
+      "zh": "我們可以要一碗清湯喝嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, in the small bowl with scallion.",
+      "phonetic": "/jɛs ɪn ðə smɔl boʊl wɪð ˈskæliən/",
+      "zh": "可以，用小碗裝，撒上蔥花。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Scallion on top makes the bowl perfect.",
+      "phonetic": "/ˈskæliən ɑn tɑp meɪks ðə boʊl ˈpɜrfɪkt/",
+      "zh": "蔥花飄在湯面上，這碗就完美了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The bowl came warm, the steam is soft.",
+      "phonetic": "/ðə boʊl keɪm wɔrm ðə stim ɪz sɔft/",
+      "zh": "碗是溫的，蒸汽也很輕柔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sip first, this bowl is like a bath.",
+      "phonetic": "/sɪp fɜrst ðɪs boʊl ɪz laɪk ə bæθ/",
+      "zh": "先小口喝，這碗湯像泡澡一樣暖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A bath for the tongue, then back to meat.",
+      "phonetic": "/ə bæθ fɔr ðə tʌŋ ðɛn bæk tu mit/",
+      "zh": "讓舌頭泡個澡，再回來吃肉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The server tops us up without a word.",
+      "phonetic": "/ðə ˈsɜrvər tɑps ʌs ʌp wɪˈðaʊt ə wɜrd/",
+      "zh": "外場一句話就幫我們補滿。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She reads the pot, not the people.",
+      "phonetic": "/ʃi ridz ðə pɑt nɑt ðə ˈpipəl/",
+      "zh": "她讀的是鍋子，不是客人。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Not the people, and yet she is kind.",
+      "phonetic": "/nɑt ðə ˈpipəl ænd jɛt ʃi ɪz kaɪnd/",
+      "zh": "雖然讀的是鍋，她依然溫柔。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Kindness in broth, served twice already.",
+      "phonetic": "/ˈkaɪndnəs ɪn brɔθ sɜrvd twaɪs ɔlˈrɛdi/",
+      "zh": "溫柔在湯裡，已經加了兩次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Twice is plenty, we are nearly full.",
+      "phonetic": "/twaɪs ɪz ˈplɛnti wi ɑr ˈnɪrli fʊl/",
+      "zh": "兩次就很夠，我們快飽了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nearly full, yet the corn still calls.",
+      "phonetic": "/ˈnɪrli fʊl jɛt ðə kɔrn stɪl kɔlz/",
+      "zh": "快飽了，但玉米還在叫我。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The corn calls, the rice cakes whisper.",
+      "phonetic": "/ðə kɔrn kɔlz ðə raɪs keɪks ˈwɪspər/",
+      "zh": "玉米在喊，年糕在小聲說話。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Whispering cakes, we will save one piece.",
+      "phonetic": "/ˈwɪspərɪŋ keɪks wi wɪl seɪv wʌn pis/",
+      "zh": "小聲的年糕，我們留一塊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Save it for the very last round.",
+      "phonetic": "/seɪv ɪt fɔr ðə ˈvɛri læst raʊnd/",
+      "zh": "留到最後一輪再吃。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Last round, fresh broth, and nothing more.",
+      "phonetic": "/læst raʊnd frɛʃ brɔθ ænd ˈnʌθɪŋ mɔr/",
+      "zh": "最後一輪只加新湯，別的都不加。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is that soup at the end like dessert?",
+      "phonetic": "/ɪz ðæt sup æt ði ɛnd laɪk dɪˈzɜrt/",
+      "zh": "最後那碗湯喝起來像甜點嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sweet corn, soft cake, yes, almost dessert.",
+      "phonetic": "/swit kɔrn sɔft keɪk jɛs ˈɔlmoʊst dɪˈzɜrt/",
+      "zh": "甜玉米、軟年糕，幾乎是甜點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Our broth level is perfect right now.",
+      "phonetic": "/ˈaʊər brɔθ ˈlɛvəl ɪz ˈpɜrfɪkt raɪt naʊ/",
+      "zh": "我們的湯位現在剛剛好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Perfect for ten more minutes, then we ask.",
+      "phonetic": "/ˈpɜrfɪkt fɔr tɛn mɔr ˈmɪnɪts ðɛn wi æsk/",
+      "zh": "還能撐十分鐘，到時再請她加。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do we owe anything for all this broth?",
+      "phonetic": "/du wi oʊ ˈɛniθɪŋ fɔr ɔl ðɪs brɔθ/",
+      "zh": "這些加湯要另外算錢嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nothing, it is written on the menu page.",
+      "phonetic": "/ˈnʌθɪŋ ɪt ɪz ˈrɪtn ɑn ðə ˈmɛnju peɪdʒ/",
+      "zh": "不用錢，菜單那一頁有寫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good, I will remember this kindness.",
+      "phonetic": "/ɡʊd aɪ wɪl rɪˈmɛmbər ðɪs ˈkaɪndnəs/",
+      "zh": "好，我會記得這份體貼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Remember the name of the place too.",
+      "phonetic": "/rɪˈmɛmbər ðə neɪm əv ðə pleɪs tu/",
+      "zh": "也把這家店的名字一起記住。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pot steams, the night grows long.",
+      "phonetic": "/ðə pɑt stimz ðə naɪt ɡroʊz lɔŋ/",
+      "zh": "鍋子冒著煙，夜變長了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Long and easy, nobody hurries us.",
+      "phonetic": "/lɔŋ ænd ˈizi ˈnoʊbədi ˈhɜriz ʌs/",
+      "zh": "又長又輕鬆，沒有人催我們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Nobody hurries, that is the real luxury.",
+      "phonetic": "/ˈnoʊbədi ˈhɜriz ðæt ɪz ðə ril ˈlʌkʃəri/",
+      "zh": "沒有人催，才是真正的享受。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Luxury in a paper apron and a ladle.",
+      "phonetic": "/ˈlʌkʃəri ɪn ə ˈpeɪpər ˈeɪprən ænd ə ˈlædəl/",
+      "zh": "享受就在紙圍裙與湯杓之間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Ask her for one more bowl of broth.",
+      "phonetic": "/æsk hɜr fɔr wʌn mɔr boʊl əv brɔθ/",
+      "zh": "跟她再要一碗湯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One more, plus a spoon of corn.",
+      "phonetic": "/wʌn mɔr plʌs ə spun əv kɔrn/",
+      "zh": "再一碗，她還順手加了一匙玉米。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Corn in my bowl, what a small gift.",
+      "phonetic": "/kɔrn ɪn maɪ boʊl wʌt ə smɔl ɡɪft/",
+      "zh": "碗裡有玉米，多小的一份禮物。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Small gifts, warm bowls, a quiet room.",
+      "phonetic": "/smɔl ɡɪfts wɔrm boʊlz ə ˈkwaɪət rum/",
+      "zh": "小禮物、溫的碗、安靜的空間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Our pot is full, our hands are busy.",
+      "phonetic": "/ˈaʊər pɑt ɪz fʊl ˈaʊər hændz ɑr ˈbɪzi/",
+      "zh": "鍋子滿了，我們的雙手也忙著。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Busy and glad, careful with that hot rim.",
+      "phonetic": "/ˈbɪzi ænd ɡlæd ˈkɛrfəl wɪð ðæt hɑt rɪm/",
+      "zh": "忙又快樂，不過滾燙的鍋緣要小心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The rim is the one thing to watch.",
+      "phonetic": "/ðə rɪm ɪz ðə wʌn θɪŋ tu wɑtʃ/",
+      "zh": "鍋緣是唯一要當心的地方。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Watched, mostly, but fingers forget sometimes.",
+      "phonetic": "/wɑtʃt ˈmoʊstli bʌt ˈfɪŋɡərz fərˈɡɛt ˈsʌmˌtaɪmz/",
+      "zh": "大部分都有注意，但手指偶爾會忘記。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Oh, my finger touched the hot rim.",
+      "phonetic": "/oʊ maɪ ˈfɪŋɡər tʌtʃt ðə hɑt rɪm/",
+      "zh": "啊，我的手指碰到燙燙的鍋緣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Put it under the cold water now.",
+      "phonetic": "/pʊt ɪt ˈʌndər ðə koʊld ˈwɔtər naʊ/",
+      "zh": "快放到冷水下面沖一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The water here is warm, not cold.",
+      "phonetic": "/ðə ˈwɔtər hɪr ɪz wɔrm nɑt koʊld/",
+      "zh": "這裡的水是溫的，不涼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Get a cup of ice from the bar.",
+      "phonetic": "/ɡɛt ə kʌp əv aɪs frʌm ðə bɑr/",
+      "zh": "去調料台拿一杯冰塊來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Excuse me, a small cup of ice, please.",
+      "phonetic": "/ɪkˈskjuz mi ə smɔl kʌp əv aɪs pliːz/",
+      "zh": "不好意思，請給我一小杯冰塊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the drink or for your finger?",
+      "phonetic": "/fɔr ðə drɪŋk ɔr fɔr jɔr ˈfɪŋɡər/",
+      "zh": "是要喝的，還是燙到手指了？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "For my finger, the pot rim bit me.",
+      "phonetic": "/fɔr maɪ ˈfɪŋɡər ðə pɑt rɪm bɪt mi/",
+      "zh": "給手指的，鍋緣咬了我一下。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will bring ice and a cold wet cloth.",
+      "phonetic": "/aɪ wɪl brɪŋ aɪs ænd ə koʊld wɛt klɔθ/",
+      "zh": "我拿冰塊和一條冰的濕布來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A wet cloth, yes, that helps a lot.",
+      "phonetic": "/ə wɛt klɔθ jɛs ðæt hɛlps ə lɑt/",
+      "zh": "濕布太好了，那樣很有幫助。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ten minutes on it, no more than that.",
+      "phonetic": "/tɛn ˈmɪnɪts ɑn ɪt noʊ mɔr ðæn ðæt/",
+      "zh": "敷十分鐘就好，不要超過。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The ice bowl came, in a clean small dish.",
+      "phonetic": "/ði aɪs boʊl keɪm ɪn ə klin smɔl dɪʃ/",
+      "zh": "冰碗端來了，裝在乾淨的小碟裡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Dip the finger, count to twenty slowly.",
+      "phonetic": "/dɪp ðə ˈfɪŋɡər kaʊnt tu ˈtwɛnti ˈsloʊli/",
+      "zh": "把手指浸進去，慢慢數到二十。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Twenty, thirty, forty, it stops stinging.",
+      "phonetic": "/ˈtwɛnti ˈθɜrti ˈfɔrti ɪt stɑps ˈstɪŋɪŋ/",
+      "zh": "二十、三十、四十，不再刺痛了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, keep it there, the heat is gone.",
+      "phonetic": "/ɡʊd kip ɪt ðɛr ði hit ɪz ɡɔn/",
+      "zh": "很好，再泡一下，熱氣退了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It was only a small burn, really.",
+      "phonetic": "/ɪt wʌz ˈoʊnli ə smɔl bɜrn ˈrɪli/",
+      "zh": "其實只是很小的一下燙傷。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Small burns still need cold and calm.",
+      "phonetic": "/smɔl bɜrnz stɪl nid koʊld ænd kɑm/",
+      "zh": "小燙傷也需要冰鎮和安靜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, calm now, nothing here is late.",
+      "phonetic": "/jɛs kɑm naʊ ˈnʌθɪŋ hɪr ɪz leɪt/",
+      "zh": "對，現在很從容，這裡沒有要趕的事。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The pot will wait, the pot always waits.",
+      "phonetic": "/ðə pɑt wɪl weɪt ðə pɑt ˈɔlweɪz weɪts/",
+      "zh": "鍋子會等，鍋子總是在等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Also a drop of chili oil jumped.",
+      "phonetic": "/ˈɔlsoʊ ə drɑp əv ˈtʃɪli ɔɪl dʒʌmpt/",
+      "zh": "還有一滴辣油跳了出來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On your wrist? Look, a tiny red dot.",
+      "phonetic": "/ɑn jɔr rɪst lʊk ə ˈtaɪni rɛd dɑt/",
+      "zh": "在你手腕上？你看，一個紅色小點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A dot, it tickles more than it hurts.",
+      "phonetic": "/ə dɑt ɪt ˈtɪkəlz mɔr ðæn ɪt hɜrts/",
+      "zh": "一個小點，癢多於痛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cold cloth there too, and one deep breath.",
+      "phonetic": "/koʊld klɔθ ðɛr tu ænd wʌn dip brɛθ/",
+      "zh": "那裡也蓋冷布，再深深吸一口氣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Breathed, and now my arm feels cool.",
+      "phonetic": "/brɛθd ænd naʊ maɪ ɑrm filz kul/",
+      "zh": "吸完氣了，手臂現在涼涼的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cool is the target, we reached it fast.",
+      "phonetic": "/kul ɪz ðə ˈtɑrɡɪt wi ritʃt ɪt fæst/",
+      "zh": "目標就是涼，我們很快就達到了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do not squeeze the little red dot.",
+      "phonetic": "/du nɑt skwiz ðə ˈlɪtəl rɛd dɑt/",
+      "zh": "不要擠那個紅色的小點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will not, I only lift the cloth.",
+      "phonetic": "/aɪ wɪl nɑt aɪ ˈoʊnli lɪft ðə klɔθ/",
+      "zh": "我不會碰的，我只把布拿起來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She brought the ice so quickly.",
+      "phonetic": "/ʃi brɔt ði aɪs soʊ ˈkwɪkli/",
+      "zh": "她很快就把冰塊拿來了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She carries a small tin by the door.",
+      "phonetic": "/ʃi ˈkæriz ə smɔl tɪn baɪ ðə dɔr/",
+      "zh": "她門邊放著一個小鐵盒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A tin? For the burns, she said.",
+      "phonetic": "/ə tɪn fɔr ðə bɜrnz ʃi sɛd/",
+      "zh": "鐵盒？她說那是燙傷用的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, a clean pad and a little gel.",
+      "phonetic": "/jɛs ə klin pæd ænd ə ˈlɪtəl dʒɛl/",
+      "zh": "對，一塊乾淨紗布和一點凝膠。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Gel on the fingertip, cool again.",
+      "phonetic": "/dʒɛl ɑn ðə ˈfɪŋɡərˌtɪp kul əˈɡɛn/",
+      "zh": "指尖上了凝膠，又涼了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And a pad, loose, so it can breathe.",
+      "phonetic": "/ænd ə pæd lus soʊ ɪt kæn brið/",
+      "zh": "再蓋上紗布，鬆一點，讓它透氣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Loose is good, tight hurts all night.",
+      "phonetic": "/lus ɪz ɡʊd taɪt hɜrts ɔl naɪt/",
+      "zh": "鬆的好，太緊會痛一整晚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Now your hand rests, I will do the pot.",
+      "phonetic": "/naʊ jɔr hænd rɛsts aɪ wɪl du ðə pɑt/",
+      "zh": "現在你的手休息，鍋子交給我。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You do the pot, I do the watching.",
+      "phonetic": "/ju du ðə pɑt aɪ du ðə ˈwɑtʃɪŋ/",
+      "zh": "你負責鍋，我負責看。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Watching is work, the timer is mine.",
+      "phonetic": "/ˈwɑtʃɪŋ ɪz wɜrk ðə ˈtaɪmər ɪz maɪn/",
+      "zh": "看著也是工作，計時器我來管。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yours the timer, mine the cold bowl.",
+      "phonetic": "/jɔrz ðə ˈtaɪmər maɪn ðə koʊld boʊl/",
+      "zh": "計時器是你的，冷碗是我的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Deal, and keep that finger out of steam.",
+      "phonetic": "/dil ænd kip ðæt ˈfɪŋɡər aʊt əv stim/",
+      "zh": "成交，那根手指別伸進蒸汽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Out of steam, out of the rim's reach.",
+      "phonetic": "/aʊt əv stim aʊt əv ðə rɪmz ritʃ/",
+      "zh": "離蒸汽遠一點，離鍋緣也遠一點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Reach with the long chopsticks instead.",
+      "phonetic": "/ritʃ wɪð ðə lɔŋ ˈtʃɑpstɪks ɪnˈstɛd/",
+      "zh": "改用那雙長筷子去夠。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Long chopsticks are heroes at this table.",
+      "phonetic": "/lɔŋ ˈtʃɑpstɪks ɑr ˈhɪroʊz æt ðɪs ˈteɪbəl/",
+      "zh": "長筷子是這張桌上的英雄。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Heroes with handles, staying cool in hand.",
+      "phonetic": "/ˈhɪroʊz wɪð ˈhændəlz ˈsteɪɪŋ kul ɪn hænd/",
+      "zh": "有長柄的英雄，握在手上不燙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My hand is dry now, the pad holds.",
+      "phonetic": "/maɪ hænd ɪz draɪ naʊ ðə pæd hoʊldz/",
+      "zh": "我的手乾了，紗布也固定著。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, then only the clear side for you.",
+      "phonetic": "/ɡʊd ðɛn ˈoʊnli ðə klɪr saɪd fɔr ju/",
+      "zh": "好，那你就只碰清湯那一邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The clear side, cooler edge, clever plan.",
+      "phonetic": "/ðə klɪr saɪd ˈkulər ɛdʒ ˈklɛvər plæn/",
+      "zh": "清湯那邊鍋緣比較涼，聰明計畫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Clever and slow, two things we do well.",
+      "phonetic": "/ˈklɛvər ænd sloʊ tu θɪŋz wi du wɛl/",
+      "zh": "聰明又慢，兩件我們擅長的事。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you need a band on the other hand?",
+      "phonetic": "/du ju nid ə bænd ɑn ði ˈʌðər hænd/",
+      "zh": "你另一隻手也要包一下嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, just a spot from the splashing broth.",
+      "phonetic": "/noʊ dʒʌst ə spɑt frʌm ðə ˈsplæʃɪŋ brɔθ/",
+      "zh": "不用，只是被噴出來的湯點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Splashing happens when the pot laughs.",
+      "phonetic": "/ˈsplæʃɪŋ ˈhæpənz wɛn ðə pɑt læfs/",
+      "zh": "鍋子笑的時候就會噴湯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then we laugh softly and keep our distance.",
+      "phonetic": "/ðɛn wi læf ˈsɔftli ænd kip ˈaʊər ˈdɪstəns/",
+      "zh": "那我們小聲笑，保持距離。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Distance is a kind of care, you know.",
+      "phonetic": "/ˈdɪstəns ɪz ə kaɪnd əv kɛr ju noʊ/",
+      "zh": "距離也是一種照顧，你知道嗎。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Care, distance, ice, and a little time.",
+      "phonetic": "/kɛr ˈdɪstəns aɪs ænd ə ˈlɪtəl taɪm/",
+      "zh": "照顧、距離、冰塊，還有一點時間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How does the fingertip feel right now?",
+      "phonetic": "/haʊ dʌz ðə ˈfɪŋɡərˌtɪp fil raɪt naʊ/",
+      "zh": "指尖現在感覺怎麼樣？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Warm again, not hot, that is progress.",
+      "phonetic": "/wɔrm əˈɡɛn nɑt hɑt ðæt ɪz ˈprɑɡrɛs/",
+      "zh": "又變溫了，不燙，這就是進步。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Progress deserves one small sipping cup.",
+      "phonetic": "/ˈprɑɡrɛs dɪˈzɜrvz wʌn smɔl ˈsɪpɪŋ kʌp/",
+      "zh": "有一點進步，就值得一小杯飲料。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Plum juice, cold, with no ice inside.",
+      "phonetic": "/plʌm dʒus koʊld wɪð noʊ aɪs ɪnˈsaɪd/",
+      "zh": "酸梅湯，冰的，裡面不必再放冰。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Cold plum juice for the tongue today.",
+      "phonetic": "/koʊld plʌm dʒus fɔr ðə tʌŋ təˈdeɪ/",
+      "zh": "今天換冰酸梅湯照顧舌頭。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That soup bit my tongue, too.",
+      "phonetic": "/ðæt sup bɪt maɪ tʌŋ tu/",
+      "zh": "那碗湯也咬了我的舌頭一口。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A burnt tongue needs three cold sips.",
+      "phonetic": "/ə bɜrnt tʌŋ nidz θri koʊld sɪps/",
+      "zh": "燙到的舌頭要喝三口涼的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Three sips, and the taste is back.",
+      "phonetic": "/θri sɪps ænd ðə teɪst ɪz bæk/",
+      "zh": "三口喝完，味道回來了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Welcome back, taste, we missed you.",
+      "phonetic": "/ˈwɛlkəm bæk teɪst wi mɪst ju/",
+      "zh": "歡迎回來，味道，我們好想你。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It came with the barley tea, gently.",
+      "phonetic": "/ɪt keɪm wɪð ðə ˈbɑrli ti ˈdʒɛntli/",
+      "zh": "它跟著麥茶一起輕輕回來了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The cloth on my hand is warm now.",
+      "phonetic": "/ðə klɔθ ɑn maɪ hænd ɪz wɔrm naʊ/",
+      "zh": "我手上的布已經變溫了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then dip again, the bowl still has ice.",
+      "phonetic": "/ðɛn dɪp əˈɡɛn ðə boʊl stɪl hæz aɪs/",
+      "zh": "那再浸一次，碗裡還有冰。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Ice keeps working while we eat.",
+      "phonetic": "/aɪs kips ˈwɜrkɪŋ waɪl wi it/",
+      "zh": "冰繼續工作，我們繼續吃。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Working ice, resting hand, slow night.",
+      "phonetic": "/ˈwɜrkɪŋ aɪs ˈrɛstɪŋ hænd sloʊ naɪt/",
+      "zh": "冰在忙、手在歇，夜很慢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do we need to stop cooking for now?",
+      "phonetic": "/du wi nid tu stɑp ˈkʊkɪŋ fɔr naʊ/",
+      "zh": "我們現在需要先暫停煮嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, the burner stays low and calm.",
+      "phonetic": "/noʊ ðə ˈbɜrnər steɪz loʊ ænd kɑm/",
+      "zh": "不用，爐子留著小火，很安靜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Low flame, low hands, low voice.",
+      "phonetic": "/loʊ fleɪm loʊ hændz loʊ vɔɪs/",
+      "zh": "火小、手放低、聲音也低。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Three lows and one warm pot.",
+      "phonetic": "/θri loʊz ænd wʌn wɔrm pɑt/",
+      "zh": "三個低，再加一鍋暖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pad wants one more cold rinse.",
+      "phonetic": "/ðə pæd wɑnts wʌn mɔr koʊld rɪns/",
+      "zh": "紗布想再被涼水沖一次。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rinse it here, over the little bowl.",
+      "phonetic": "/rɪns ɪt hɪr ˈoʊvər ðə ˈlɪtəl boʊl/",
+      "zh": "就在小碗上方沖一下吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did the burn leave a mark yet?",
+      "phonetic": "/dɪd ðə bɜrn liv ə mɑrk jɛt/",
+      "zh": "燙到的地方留下痕跡了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only pink, and pink fades by morning.",
+      "phonetic": "/ˈoʊnli pɪŋk ænd pɪŋk feɪdz baɪ ˈmɔrnɪŋ/",
+      "zh": "只是粉紅，到早上就會退。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Fades by morning, like a bad dream.",
+      "phonetic": "/feɪdz baɪ ˈmɔrnɪŋ laɪk ə bæd drim/",
+      "zh": "像壞夢一樣，早上就退了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We keep only the good memories here.",
+      "phonetic": "/wi kip ˈoʊnli ðə ɡʊd ˈmɛməˌriz hɪr/",
+      "zh": "在這裡我們只留下好的記憶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Memories of sesame, corn, and steam.",
+      "phonetic": "/ˈmɛməˌriz əv ˈsɛsəmi kɔrn ænd stim/",
+      "zh": "關於芝麻、玉米和蒸汽的回憶。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And one careful finger, telling all.",
+      "phonetic": "/ænd wʌn ˈkɛrfəl ˈfɪŋɡər ˈtɛlɪŋ ɔl/",
+      "zh": "還有一根學會小心的手指。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Telling us to use the strainer spoon.",
+      "phonetic": "/ˈtɛlɪŋ ʌs tu juz ðə ˈstreɪnər spun/",
+      "zh": "它在提醒我們用濾網杓。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Strainer in the right hand, always now.",
+      "phonetic": "/ˈstreɪnər ɪn ðə raɪt hænd ˈɔlweɪz naʊ/",
+      "zh": "從現在起，濾網都在右手。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the ice water still cold enough?",
+      "phonetic": "/ɪz ði aɪs ˈwɔtər stɪl koʊld ɪˈnʌf/",
+      "zh": "那碗冰水還夠涼嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Cold as a winter window, yes.",
+      "phonetic": "/koʊld əz ə ˈwɪntər ˈwɪndoʊ jɛs/",
+      "zh": "像冬天的窗戶一樣涼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Winter windows are my favorite cold.",
+      "phonetic": "/ˈwɪntər ˈwɪndoʊz ɑr maɪ ˈfeɪvərɪt koʊld/",
+      "zh": "冬天的窗戶是我最喜歡的涼意。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Favorite cold, in a small white bowl.",
+      "phonetic": "/ˈfeɪvərɪt koʊld ɪn ə smɔl waɪt boʊl/",
+      "zh": "最喜歡的涼意，裝在小白碗裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The server checks on us once more.",
+      "phonetic": "/ðə ˈsɜrvər tʃɛks ɑn ʌs wʌns mɔr/",
+      "zh": "外場又過來看了我們一次。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She asks with her eyes, no words.",
+      "phonetic": "/ʃi æskz wɪð hɜr aɪz noʊ wɜrdz/",
+      "zh": "她用眼睛問，一句話也沒有。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We answer with a smile and a wave.",
+      "phonetic": "/wi ˈænsər wɪð ə smaɪl ænd ə weɪv/",
+      "zh": "我們用微笑和揮手回答。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "All fine, the pot says it for us.",
+      "phonetic": "/ɔl faɪn ðə pɑt sɛz ɪt fɔr ʌs/",
+      "zh": "一切都好，鍋子幫我們說。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Say thank you later, now the food.",
+      "phonetic": "/seɪ θæŋk ju ˈleɪtər naʊ ðə fud/",
+      "zh": "謝謝一下再說，先顧餐點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The food waits, the thanks can wait too.",
+      "phonetic": "/ðə fud weɪts ðə θæŋks kæn weɪt tu/",
+      "zh": "餐點在等，謝意也可以等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "No, say it now, she is still here.",
+      "phonetic": "/noʊ seɪ ɪt naʊ ʃi ɪz stɪl hɪr/",
+      "zh": "不，現在就說，她還在旁邊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thank you for the ice and the care.",
+      "phonetic": "/θæŋk ju fɔr ði aɪs ænd ðə kɛr/",
+      "zh": "謝謝你的冰塊，還有你的細心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She nods and wipes the table edge.",
+      "phonetic": "/ʃi nɑdz ænd waɪps ðə ˈteɪbəl ɛdʒ/",
+      "zh": "她點點頭，擦了一下桌緣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A drop of broth fell from my bowl.",
+      "phonetic": "/ə drɑp əv brɔθ fɛl frʌm maɪ boʊl/",
+      "zh": "有一滴湯從我的碗裡掉下來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It is nothing, the cloth takes it.",
+      "phonetic": "/ɪt ɪz ˈnʌθɪŋ ðə klɔθ teɪks ɪt/",
+      "zh": "沒關係，布一擦就乾了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nothing at all, and our hands are clean.",
+      "phonetic": "/ˈnʌθɪŋ æt ɔl ænd ˈaʊər hændz ɑr klin/",
+      "zh": "什麼都沒有留下，手也乾淨了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Clean hands, padded finger, back to soup.",
+      "phonetic": "/klin hændz ˈpædɪd ˈfɪŋɡər bæk tu sup/",
+      "zh": "手乾淨了、手指包好了，回到湯邊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Back to soup, slowly, with both eyes open.",
+      "phonetic": "/bæk tu sup ˈsloʊli wɪð boʊθ aɪz ˈoʊpən/",
+      "zh": "回到鍋邊，慢慢來，眼睛張大。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Eyes open, pot calm, night still young.",
+      "phonetic": "/aɪz ˈoʊpən pɑt kɑm naɪt stɪl jʌŋ/",
+      "zh": "眼睛張著、鍋子安靜、夜還早。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Young enough for dessert and a bill.",
+      "phonetic": "/jʌŋ ɪˈnʌf fɔr dɪˈzɜrt ænd ə bɪl/",
+      "zh": "還早得可以吃甜點、看帳單。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The pot is almost a quiet soup now.",
+      "phonetic": "/ðə pɑt ɪz ˈɔlmoʊst ə ˈkwaɪət sup naʊ/",
+      "zh": "鍋子現在幾乎只剩清淡的湯了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A quiet soup, and a full plate of shells.",
+      "phonetic": "/ə ˈkwaɪət sup ænd ə fʊl pleɪt əv ʃɛlz/",
+      "zh": "安靜的湯，旁邊還有一盤蝦殼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should we order dessert at this hour?",
+      "phonetic": "/ʃʊd wi ˈɔrdər dɪˈzɜrt æt ðɪs ˈaʊər/",
+      "zh": "這個時間還想點甜點嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One shaved ice, split into two bowls.",
+      "phonetic": "/wʌn ʃeɪvd aɪs splɪt ˈɪntu tu boʊlz/",
+      "zh": "一份剉冰，分成兩碗吃。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Shaved ice with peanuts on top?",
+      "phonetic": "/ʃeɪvd aɪs wɪð ˈpinʌts ɑn tɑp/",
+      "zh": "剉冰上面要放花生嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, and a spoon of plum syrup.",
+      "phonetic": "/jɛs ænd ə spun əv plʌm ˈsɪrəp/",
+      "zh": "要，再來一匙酸梅糖漿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The dessert card shows mango too.",
+      "phonetic": "/ði dɪˈzɜrt kɑrd ʃoʊz ˈmæŋoʊ tu/",
+      "zh": "甜點卡上還有芒果口味。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mango next time, tonight is plum night.",
+      "phonetic": "/ˈmæŋoʊ nɛkst taɪm təˈnaɪt ɪz plʌm naɪt/",
+      "zh": "芒果留給下次，今晚是梅子的夜晚。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Two spoons came with the shaved ice.",
+      "phonetic": "/tu spunz keɪm wɪð ðə ʃeɪvd aɪs/",
+      "zh": "剉冰附了兩支小匙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One spoon each, no fighting tonight.",
+      "phonetic": "/wʌn spun itʃ noʊ ˈfɪtɪŋ təˈnaɪt/",
+      "zh": "一人一支，今晚不用搶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sweet, cold, quiet, that is the end.",
+      "phonetic": "/swit koʊld ˈkwaɪət ðæt ɪz ði ɛnd/",
+      "zh": "甜甜、冷冷、安靜，就是結尾了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The end of the pot, not of the tea.",
+      "phonetic": "/ði ɛnd əv ðə pɑt nɑt əv ðə ti/",
+      "zh": "這是鍋子的結尾，不是茶的結尾。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "More tea, and then we ask for the bill.",
+      "phonetic": "/mɔr ti ænd ðɛn wi æsk fɔr ðə bɪl/",
+      "zh": "再添點茶，然後我們請他們結帳。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The teapot waits beside your elbow.",
+      "phonetic": "/ði ˈtiˌpɑt weɪts bɪˈsaɪd jɔr ˈɛlboʊ/",
+      "zh": "茶壺就在你手肘旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The hot pot bill, please, no hurry.",
+      "phonetic": "/ðə hɑt pɑt bɪl pliːz noʊ ˈhɜri/",
+      "zh": "火鍋的帳請拿過來，不用急。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here it is, one pot and two drinks.",
+      "phonetic": "/hɪr ɪt ɪz wʌn pɑt ænd tu drɪŋks/",
+      "zh": "在這裡，一鍋加兩杯飲料。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One pot base, and that is the split one?",
+      "phonetic": "/wʌn pɑt beɪs ænd ðæt ɪz ðə splɪt wʌn/",
+      "zh": "一份鍋底，就是那個鴛鴦鍋嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, one split pot for two people.",
+      "phonetic": "/jɛs wʌn splɪt pɑt fɔr tu ˈpipəl/",
+      "zh": "對，一鍋鴛鴦鍋給兩個人。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the pot price per person, or per table?",
+      "phonetic": "/ɪz ðə pɑt praɪs pɜr ˈpɜrsən ɔr pɜr ˈteɪbəl/",
+      "zh": "鍋底是按人算，還是按桌算？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Per pot, so the bill stays very simple.",
+      "phonetic": "/pɜr pɑt soʊ ðə bɪl steɪz ˈvɛri ˈsɪmpəl/",
+      "zh": "按鍋算，所以帳單很簡單。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Two drinks, one barley and one plum.",
+      "phonetic": "/tu drɪŋks wʌn ˈbɑrli ænd wʌn plʌm/",
+      "zh": "兩杯飲料，一杯麥茶、一杯酸梅湯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The barley tea is free with the pot.",
+      "phonetic": "/ðə ˈbɑrli ti ɪz fri wɪð ðə pɑt/",
+      "zh": "麥茶是跟著鍋底送的，免費。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Free tea, that is honest pricing.",
+      "phonetic": "/fri ti ðæt ɪz ˈɑnəst ˈpraɪsɪŋ/",
+      "zh": "茶免費，這是很老實的定價。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Honest, and it is written on the card.",
+      "phonetic": "/ˈɑnəst ænd ɪt ɪz ˈrɪtn ɑn ðə kɑrd/",
+      "zh": "老實，而且桌上卡片也有寫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How much for the extra blue plates?",
+      "phonetic": "/haʊ mʌtʃ fɔr ði ˈɛkstrə blu pleɪts/",
+      "zh": "多點的那些藍盤多少錢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Blue plates are counted by their color.",
+      "phonetic": "/blu pleɪts ɑr ˈkaʊntɪd baɪ ðɛr ˈkʌlər/",
+      "zh": "藍盤就是照顏色來計算。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Ten blue, six red, and two green.",
+      "phonetic": "/tɛn blu sɪks rɛd ænd tu ɡrin/",
+      "zh": "藍色十盤、紅色六盤、綠色兩盤。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She counted them twice, at the table.",
+      "phonetic": "/ʃi ˈkaʊntɪd ðɛm twaɪs æt ðə ˈteɪbəl/",
+      "zh": "她在桌邊數了兩遍。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Counted plates, no guessing on the bill.",
+      "phonetic": "/ˈkaʊntɪd pleɪts noʊ ˈɡɛsɪŋ ɑn ðə bɪl/",
+      "zh": "盤子數過了，帳單不用猜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And the dessert is one line on top.",
+      "phonetic": "/ænd ðə dɪˈzɜrt ɪz wʌn laɪn ɑn tɑp/",
+      "zh": "甜點就是最上面那一行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is this total for two people only?",
+      "phonetic": "/ɪz ðɪs ˈtoʊtəl fɔr tu ˈpipəl ˈoʊnli/",
+      "zh": "這個總額只是兩個人的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two people, one pot, all the broth.",
+      "phonetic": "/tu ˈpipəl wʌn pɑt ɔl ðə brɔθ/",
+      "zh": "兩個人、一鍋，還有那些湯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "All the broth included, what a deal.",
+      "phonetic": "/ɔl ðə brɔθ ɪnˈkludɪd wʌt ə dil/",
+      "zh": "加湯全部免費，真划算。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A deal, and no service charge here.",
+      "phonetic": "/ə dil ænd noʊ ˈsɜrvɪs tʃɑrdʒ hɪr/",
+      "zh": "划算，而且這裡不收服務費。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the tip jar by the cash register?",
+      "phonetic": "/ɪz ðə tɪp dʒɑr baɪ ðə kæʃ ˈrɛdʒɪstər/",
+      "zh": "小費罐在收銀台旁邊嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, a small glass one, right there.",
+      "phonetic": "/jɛs ə smɔl ɡlæs wʌn raɪt ðɛr/",
+      "zh": "在，一個小玻璃罐，就擺在那裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We will leave something in the jar.",
+      "phonetic": "/wi wɪl liv ˈsʌmθɪŋ ɪn ðə dʒɑr/",
+      "zh": "我們要放一點錢進罐子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For the ice, the broth, the kind eyes.",
+      "phonetic": "/fɔr ði aɪs ðə brɔθ ðə kaɪnd aɪz/",
+      "zh": "為了冰塊、加湯，還有那份細心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Card or cash, what do you prefer?",
+      "phonetic": "/kɑrd ɔr kæʃ wʌt du ju priˈfɜr/",
+      "zh": "刷卡或用現金，你喜歡哪一種？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Card is easier, the machine is right here.",
+      "phonetic": "/kɑrd ɪz ˈiziər ðə məˈʃin ɪz raɪt hɪr/",
+      "zh": "刷卡比較方便，機器就在這裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Tap, beep, done, the easiest dance.",
+      "phonetic": "/tæp bip dʌn ði ˈiziəst dæns/",
+      "zh": "碰一下、嗶一聲、好了，最簡單的舞。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A quiet little payment dance, yes.",
+      "phonetic": "/ə ˈkwaɪət ˈlɪtəl ˈpeɪmənt dæns jɛs/",
+      "zh": "一支安靜又小小的付錢舞。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you want a paper receipt too?",
+      "phonetic": "/du ju wɑnt ə ˈpeɪpər rɪˈsit tu/",
+      "zh": "你也要一張紙本收據嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, I will keep it in my book.",
+      "phonetic": "/jɛs aɪ wɪl kip ɪt ɪn maɪ bʊk/",
+      "zh": "要，我把它夾在我的本子裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A receipt book, like a tiny library.",
+      "phonetic": "/ə rɪˈsit bʊk laɪk ə ˈtaɪni ˈlaɪˌbɛri/",
+      "zh": "收據本，像一個小小的圖書館。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A library of warm Friday nights.",
+      "phonetic": "/ə ˈlaɪˌbɛri əv wɔrm ˈfraɪdeɪ naɪts/",
+      "zh": "一座溫暖星期五夜晚的圖書館。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we buy one noodle pack to go?",
+      "phonetic": "/kæn wi baɪ wʌn ˈnudəl pæk tu ɡoʊ/",
+      "zh": "我們可以買一包乾冬粉帶走嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two packs, and one jar of sesame paste.",
+      "phonetic": "/tu pæks ænd wʌn dʒɑr əv ˈsɛsəmi peɪst/",
+      "zh": "兩包冬粉，再加一罐芝麻醬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sesame at home, that is a project.",
+      "phonetic": "/ˈsɛsəmi æt hoʊm ðæt ɪz ə ˈprɑdʒɛkt/",
+      "zh": "在家調芝麻醬，那是一項計畫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A small project for a rainy Sunday.",
+      "phonetic": "/ə smɔl ˈprɑdʒɛkt fɔr ə ˈreɪni ˈsʌndeɪ/",
+      "zh": "一個下雨星期天的小小計畫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The apron goes back, thank you very much.",
+      "phonetic": "/ði ˈeɪprən ɡoʊz bæk θæŋk ju ˈvɛri mʌtʃ/",
+      "zh": "圍裙還你們，非常感謝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No need, the paper ones are ours.",
+      "phonetic": "/noʊ nid ðə ˈpeɪpər wʌnz ɑr ˈaʊərz/",
+      "zh": "不用還，紙圍裙本來就是我們的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Free aprons, free tea, free broth.",
+      "phonetic": "/fri ˈeɪprənz fri ti fri brɔθ/",
+      "zh": "免費圍裙、免費茶、免費湯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Three frees, and one happy bill.",
+      "phonetic": "/θri friz ænd wʌn ˈhæpi bɪl/",
+      "zh": "三個免費，加一張開心的帳單。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Our things, our coats, and we go.",
+      "phonetic": "/ˈaʊər θɪŋz ˈaʊər koʊts ænd wi ɡoʊ/",
+      "zh": "我們的東西、外套，然後出發。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Coat first, then the door, then home.",
+      "phonetic": "/koʊt fɜrst ðɛn ðə dɔr ðɛn hoʊm/",
+      "zh": "先穿外套，再到門邊，然後回家。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The hostess says good night by name.",
+      "phonetic": "/ðə ˈhoʊstɪs sɛz ɡʊd naɪt baɪ neɪm/",
+      "zh": "外場姑娘喊著名字說晚安。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She always remembers the Friday couple.",
+      "phonetic": "/ʃi ˈɔlweɪz rɪˈmɛmbərz ðə ˈfraɪdeɪ ˈkʌpəl/",
+      "zh": "她總是記得這對星期五的客人。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The Friday couple, that is our title.",
+      "phonetic": "/ðə ˈfraɪdeɪ ˈkʌpəl ðæt ɪz ˈaʊər ˈtaɪtəl/",
+      "zh": "星期五的一對，這是我們的頭銜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A title, a number, and a next time.",
+      "phonetic": "/ə ˈtaɪtəl ə ˈnʌmbər ænd ə nɛkst taɪm/",
+      "zh": "一個頭銜、一個號碼，還有下一次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Our ticket tonight was forty-two.",
+      "phonetic": "/ˈaʊər ˈtɪkɪt təˈnaɪt wʌz ˈfɔrti tu/",
+      "zh": "我們今晚的號碼牌是四十二。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep it, it is a lucky number now.",
+      "phonetic": "/kip ɪt ɪt ɪz ə ˈlʌki ˈnʌmbər naʊ/",
+      "zh": "留著吧，它現在是我們的幸運號。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Cold air outside, warm hands inside.",
+      "phonetic": "/koʊld ɛr ˌaʊtˈsaɪd wɔrm hændz ɪnˈsaɪd/",
+      "zh": "外面是冷空氣，雙手還是暖的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Warm from the broth, staying warm now.",
+      "phonetic": "/wɔrm frʌm ðə brɔθ ˈsteɪɪŋ wɔrm naʊ/",
+      "zh": "被湯暖過，現在還是一直暖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My sleeve still smells like sesame.",
+      "phonetic": "/maɪ sliv stɪl smɛlz laɪk ˈsɛsəmi/",
+      "zh": "我袖子上還有芝麻醬的味道。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mine too, and the hair tie stayed.",
+      "phonetic": "/maɪn tu ænd ðə hɛr taɪ steɪd/",
+      "zh": "我也是，髮圈也還留在手上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Steam taught my hair a new curl.",
+      "phonetic": "/stim tɔt maɪ hɛr ə nu kɜrl/",
+      "zh": "蒸汽把我的頭髮燙出新捲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A hot pot curl, very fashionable.",
+      "phonetic": "/ə hɑt pɑt kɜrl ˈvɛri ˈfæʃənəbəl/",
+      "zh": "火鍋捲，還挺時髦的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Fashionable and hungry again by ten.",
+      "phonetic": "/ˈfæʃənəbəl ænd ˈhʌŋɡri əˈɡɛn baɪ tɛn/",
+      "zh": "很時髦，而且十點又餓了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Not by ten, we are too full.",
+      "phonetic": "/nɑt baɪ tɛn wi ɑr tu fʊl/",
+      "zh": "十點不會餓，我們吃得太飽了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Full, sleepy, and walking slow.",
+      "phonetic": "/fʊl ˈslipi ænd ˈwɔkɪŋ sloʊ/",
+      "zh": "飽、睏，走路也慢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Slow steps home, the pot still humming.",
+      "phonetic": "/sloʊ stɛps hoʊm ðə pɑt stɪl ˈhʌmɪŋ/",
+      "zh": "慢慢走回家，鍋子還在心裡哼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Humming in my ears, like a song.",
+      "phonetic": "/ˈhʌmɪŋ ɪn maɪ ɪrz laɪk ə sɔŋ/",
+      "zh": "在我耳朵裡哼著，像一首歌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A broth song, short and warm.",
+      "phonetic": "/ə brɔθ sɔŋ ʃɔrt ænd wɔrm/",
+      "zh": "一首鍋湯的歌，短短的、暖暖的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Next Friday, tomato and mushroom?",
+      "phonetic": "/nɛkst ˈfraɪdeɪ təˈmeɪtoʊ ænd ˈmʌʃrʊm/",
+      "zh": "下個星期五吃番茄和菌菇？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tomato, mushroom, and no mala.",
+      "phonetic": "/təˈmeɪtoʊ ˈmʌʃrʊm ænd noʊ ˈmɑlə/",
+      "zh": "番茄、菌菇，這次不麻辣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "No mala, our tongues deserve a rest.",
+      "phonetic": "/noʊ ˈmɑlə ˈaʊər tʌŋɡz dɪˈzɜrv ə rɛst/",
+      "zh": "不吃麻辣，我們的舌頭該休息。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We deserve a quiet table too.",
+      "phonetic": "/wi dɪˈzɜrv ə ˈkwaɪət ˈteɪbəl tu/",
+      "zh": "我們也該再要一張安靜的桌子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We will ask for the corner again.",
+      "phonetic": "/wi wɪl æsk fɔr ðə ˈkɔrnər əˈɡɛn/",
+      "zh": "我們還會要那個角落位。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And the same server, if she is free.",
+      "phonetic": "/ænd ðə seɪm ˈsɜrvər ɪf ʃi ɪz fri/",
+      "zh": "還有同一位外場，如果她有空。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Book it now, the page is open.",
+      "phonetic": "/bʊk ɪt naʊ ðə peɪdʒ ɪz ˈoʊpən/",
+      "zh": "現在就訂，預約頁面還開著。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Booked for eight, two seats, corner note.",
+      "phonetic": "/bʊkt fɔr eɪt tu sits ˈkɔrnər noʊt/",
+      "zh": "訂八點、兩個位子，註明角落。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "A corner note, that is very clever.",
+      "phonetic": "/ə ˈkɔrnər noʊt ðæt ɪz ˈvɛri ˈklɛvər/",
+      "zh": "註明角落，這招很聰明。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We thought of it together, you and me.",
+      "phonetic": "/wi θɔt əv ɪt təˈɡɛðər ju ænd mi/",
+      "zh": "這是我們一起想到的，你和我。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The street lamp looks soft tonight.",
+      "phonetic": "/ðə strit læmp lʊks sɔft təˈnaɪt/",
+      "zh": "街上的路燈今晚看起來很柔和。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Soft light, warm windows, closed shops.",
+      "phonetic": "/sɔft laɪt wɔrm ˈwɪndoʊz kloʊzd ʃɑps/",
+      "zh": "軟軟的燈、溫暖的窗、關門的店。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Our hot pot shop is still bright.",
+      "phonetic": "/ˈaʊər hɑt pɑt ʃɑp ɪz stɪl braɪt/",
+      "zh": "我們那家火鍋店還亮著燈。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Bright until the last table leaves.",
+      "phonetic": "/braɪt ʌnˈtɪl ðə læst ˈteɪbəl livz/",
+      "zh": "亮到最後一桌離開為止。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We were the last table, almost.",
+      "phonetic": "/wi wɜr ðə læst ˈteɪbəl ˈɔlmoʊst/",
+      "zh": "我們幾乎就是最後一桌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Almost last, and never in a rush.",
+      "phonetic": "/ˈɔlmoʊst læst ænd ˈnɛvər ɪn ə rʌʃ/",
+      "zh": "幾乎最後，卻從容不迫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Home soon, kettle off, lights low.",
+      "phonetic": "/hoʊm sun ˈkɛtəl ɔf laɪts loʊ/",
+      "zh": "一下就到家，關火、燈轉暗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lights low, and the day is done.",
+      "phonetic": "/laɪts loʊ ænd ðə deɪ ɪz dʌn/",
+      "zh": "燈轉暗，今天就這樣結束。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Done with plates, done with counting.",
+      "phonetic": "/dʌn wɪð pleɪts dʌn wɪð ˈkaʊntɪŋ/",
+      "zh": "盤子收了，數也數完了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only the warmth is left with us.",
+      "phonetic": "/ˈoʊnli ðə wɔrmθ ɪz lɛft wɪð ʌs/",
+      "zh": "只有暖意留在我們身上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Warmth, sleep, and a quiet bed now.",
+      "phonetic": "/wɔrmθ slip ænd ə ˈkwaɪət bɛd naʊ/",
+      "zh": "暖意、睡意，還有安靜的床。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sleep well, my hot pot company.",
+      "phonetic": "/slip wɛl maɪ hɑt pɑt ˈkʌmpəni/",
+      "zh": "睡吧，我一起吃鍋的夥伴。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good night, and save me a seat.",
+      "phonetic": "/ɡʊd naɪt ænd seɪv mi ə sit/",
+      "zh": "晚安，幫我先留一個位子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The corner one, with the warm lamp.",
+      "phonetic": "/ðə ˈkɔrnər wʌn wɪð ðə wɔrm læmp/",
+      "zh": "留那個角落的，有燈的那個。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The corner, the pot, and tomorrow's plan.",
+      "phonetic": "/ðə ˈkɔrnər ðə pɑt ænd təˈmɑroʊz plæn/",
+      "zh": "角落、火鍋，還有明天的規畫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tomorrow sleeps, tonight we are done.",
+      "phonetic": "/təˈmɑroʊ slips təˈnaɪt wi ɑr dʌn/",
+      "zh": "明天先睡，今晚已經圓滿。"
+    }
+  ]
+}
