@@ -262,9 +262,3 @@ def scan_fonts() -> dict:
             pass  # 缓存写盘失败不影响结果
     _SCAN_CACHE = data
     return data
-
-
-def all_font_paths() -> set[str]:
-    """下拉全量字体路径集（当前值是否「列表外自定义」的判定用）。"""
-    data = scan_fonts()
-    return {it["path"] for group in data.values() for it in group}

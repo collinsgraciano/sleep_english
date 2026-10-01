@@ -432,10 +432,9 @@ def _step2_images_tts(args, checkpoint: dict, script: dict, work_dir: Path, dirs
                                       announce=bool(getattr(args, "sleep_intro_announce", True)),
                                       outro_announce=bool(getattr(args, "sleep_outro_announce", True)))
     if loaded is not None:
-        tts_results, image_urls = loaded, {}
+        tts_results = loaded
         print("  [Resume] sleep 音频已完整，跳过 TTS。")
     else:
-        image_urls = {}
         try:
             tts_results.update(prepare_sleep_audio(
                 script, audio_dir, int(getattr(args, "sleep_pairs", 200)),
@@ -540,16 +539,7 @@ def _step2_images_tts(args, checkpoint: dict, script: dict, work_dir: Path, dirs
     print("  [Sleep] Skipping clip generation (no video clips)")
 
     if stop_check and stop_check():
-        return {
-            "scene": scene,
-            "image_urls": image_urls,
-            "scene_url": "",
-            "char_scene_url": "",
-            "tts_results": tts_results,
-            "scene_clip_task": None,
-            "scene_clip_thread": None,
-            "clip_paths": [],
-        }
+        return {"tts_results": tts_results}
     _tts_err = tts_results.get("fatal_error")
     if _tts_err:
         if _tts_err == "stopped":
@@ -568,16 +558,7 @@ def _step2_images_tts(args, checkpoint: dict, script: dict, work_dir: Path, dirs
 
     _save_checkpoint(work_dir, "step2_images_tts")
 
-    return {
-        "scene": scene,
-        "image_urls": image_urls,
-        "scene_url": "",
-        "char_scene_url": "",
-        "tts_results": tts_results,
-        "scene_clip_task": None,
-        "scene_clip_thread": None,
-        "clip_paths": [],
-    }
+    return {"tts_results": tts_results}
 
 def _step3_clips(args, checkpoint: dict, work_dir: Path, dirs: dict, script: dict,
                  ctx: dict, stop_check=None) -> tuple[list, list, dict]:
@@ -599,21 +580,6 @@ def _step4_timeline(args, checkpoint: dict, script: dict, work_dir: Path,
     # 片头/片尾开关（段结构）当前值 —— resume 时与 meta.json 记录比对决定重建
     want_bounds = (bool(getattr(args, "sleep_intro", True)),
                    bool(getattr(args, "sleep_outro", True)))
-
-    if _step_done(checkpoint, "step4_timeline") and srt_path.exists() and meta_path.exists():
-        meta = json.loads(meta_path.read_text(encoding="utf-8"))
-        if meta.get("sleep_pairs") != int(getattr(args, "sleep_pairs", 200)):
-            # 改组数后 resume：旧时间轴与当前音频/配置不再对齐 → 重建而非静默沿用
-            print(f"  [Resume] sleep_pairs 变化（meta {meta.get('sleep_pairs')} → "
-                  f"{getattr(args, 'sleep_pairs', 200)}）— 重建时间轴")
-        elif (meta.get("sleep_intro", True), meta.get("sleep_outro", True)) != want_bounds:
-            print(f"  [Resume] sleep_intro/sleep_outro 开关变化（meta "
-                  f"{meta.get('sleep_intro', True)}/{meta.get('sleep_outro', True)} → "
-                  f"{want_bounds[0]}/{want_bounds[1]}）— 重建时间轴")
-        else:
-            print("  [Resume] Loading existing timeline + SRT...")
-            return (meta["timeline"], meta.get("narration", {}),
-                    meta.get("normal_paths", []), meta.get("zh_paths", []))
 
     from sleep.timeline_sleep import (build_sleep_srt, build_sleep_timeline,
                                       parse_sleep_sequence, sequence_signature)
@@ -722,13 +688,11 @@ def _step45_thumbnail(args, checkpoint: dict, script: dict, work_dir: Path,
                       "（配置页填 mcp_tokens 后可用 AI 生成）")
         generate_thumbnail(
             script=script,
-            scene_img="",
             output_path=thumb_path,
             mcp_call_tool=call_tool,
             mcp_parse_task_id=parse_task_id,
             mcp_poll_task=poll_task,
             mcp_download_file=download_file,
-            structure="sleep",
             sleep_theme=build_theme(vars(args)),
             sleep_channel=str(getattr(args, "sleep_channel_name", "")
                               or "English with me"),

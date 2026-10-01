@@ -10,7 +10,6 @@ Chinese TTS is overridden to use Qwen natively (replaces edge-tts).
 """
 import json
 import os
-import re
 import subprocess
 import sys
 from pathlib import Path
@@ -80,9 +79,6 @@ DESIGNED_VOICES_BUILTIN = [
 _DEFAULT_MALE = "Ryan"
 _DEFAULT_FEMALE = "Vivian"
 _DEFAULT_HOST_FEMALE = "Serena"
-
-# 预设名 → 语言（中文台词回退校正用：英文/日/韩预设说中文带外语口音）
-_PRESET_LANG = {s["name"]: s["lang"] for s in QWEN_SPEAKERS}
 
 # 中文台词的默认性别预设（与 MOSS 的 Junhao/Xiaoyu 策略对齐）
 _ZH_DEFAULT_MALE = "Dylan"
@@ -207,23 +203,6 @@ def get_custom_voice_meta(name: str) -> dict | None:
     return None
 
 
-def pick_zh_preset_fallback(name: str, gender: str = "", rank: int = 0,
-                            structure: str | None = None) -> str:
-    """中文合成音色回退校正 + 同性别错开。
-
-    绑定的预设为外语（en/ja/ko）时换成中文性别预设；rank 为同性别分组序号
-    （0=第一默认, 1=第二默认），避免同性别两角色中文台词撞音色。
-    克隆/设计音色不受影响（非 _PRESET_LANG 成员，原样返回）。
-    """
-    if _PRESET_LANG.get(name, "zh") == "zh":
-        return name
-    defaults = _resolve_mode_defaults(_load_voice_config(), structure,
-                                      QWEN_VOICE_DEFAULTS)
-    if (gender or "").lower() == "male":
-        return _gender_default(defaults, "default_male_zh", rank)
-    return _gender_default(defaults, "default_female_zh", rank)
-
-
 def gender_default_ranks(script: dict) -> dict[str, int]:
     """char_a/b/c 未绑定 qwen 音色者的同性别分组序号（0=第一默认,1=第二,2=第三）."""
     return _same_gender_ranks([
@@ -249,7 +228,7 @@ def build_qwen_voice_map(script: dict, structure: str | None = None) -> dict:
     ranks = gender_default_ranks(script)
 
     voice_map = {}
-    for key in ["char_a", "char_b", "char_c", "char_d", "char_e", "host"]:
+    for key in ["char_a", "char_b", "char_c"]:
         # Priority 1: qwen_speaker from script (set by library binding)
         speaker = script.get(f"{key}_qwen_speaker", "")
         if speaker:
@@ -259,12 +238,8 @@ def build_qwen_voice_map(script: dict, structure: str | None = None) -> dict:
         gender = script.get(f"{key}_gender", "").lower()
         if not gender:
             continue
-        if key == "host":
-            voice_map[key] = (defaults["default_host_female"] if gender == "female"
-                              else _gender_default(defaults, "default_host_male", 0))
-        else:
-            base = "default_female" if gender == "female" else "default_male"
-            voice_map[key] = _gender_default(defaults, base, ranks.get(key, 0))
+        base = "default_female" if gender == "female" else "default_male"
+        voice_map[key] = _gender_default(defaults, base, ranks.get(key, 0))
     return voice_map
 
 

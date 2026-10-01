@@ -27,7 +27,6 @@ from .channel_profiles import get_channel
 WEB_ROOT = Path(__file__).parent.parent.resolve()
 QUEUE_PATH = WEB_ROOT / "configs" / "batch_queue.json"
 
-ITEM_STATUSES = ("pending", "running", "done", "error", "stopped", "interrupted")
 FINISHED_STATUSES = ("done", "error", "stopped", "interrupted")
 
 MAX_QUEUE_ITEMS = 500

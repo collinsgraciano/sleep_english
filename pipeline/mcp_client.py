@@ -32,10 +32,10 @@ _token_idx = 0
 TOKEN = ""
 _session_id = None
 _msg_id = 0
-# 并发保护：_INIT_LOCK 只保护 ensure_initialized。轮换与会话切换必须走
-# _ROTATE_LOCK（RLock——轮换内部的 initialize 若再触发积分轮换需可重入），
-# 否则多线程同时收到"积分不足"会把 _token_idx 连加多次，越过可用 token
-# 误抛 ALL_MCP_TOKENS_EXHAUSTED（运行中断的主因）。
+# 并发保护：轮换与会话切换必须走 _ROTATE_LOCK（RLock——轮换内部的
+# initialize 若再触发积分轮换需可重入），否则多线程同时收到"积分不足"
+# 会把 _token_idx 连加多次，越过可用 token 误抛
+# ALL_MCP_TOKENS_EXHAUSTED（运行中断的主因）。
 _ROTATE_LOCK = threading.RLock()
 _MSG_ID_LOCK = threading.Lock()
 
@@ -204,40 +204,6 @@ def initialize(token=None, tokens=None):
     mcp_notify("notifications/initialized")
     print(f"  [MCP] Initialized with {len(_TOKENS)} token(s).")
     return result
-
-
-def reinitialize(tokens=None):
-    """Reset MCP global state and re-init with new tokens.
-
-    Used by web app to ensure clean state before each pipeline run.
-    Without this, stale _session_id from a previous run causes errors.
-    """
-    global _TOKENS, _token_idx, TOKEN, _session_id, _msg_id
-    _TOKENS = []
-    _token_idx = 0
-    TOKEN = ""
-    _session_id = None
-    _msg_id = 0
-    return initialize(tokens=tokens) if tokens else initialize()
-
-
-_INIT_LOCK = threading.Lock()
-
-
-def ensure_initialized(tokens=None):
-    """幂等初始化：已用相同 token 集初始化过则直接复用现有会话。
-
-    与 reinitialize 的区别：绝不重置其他线程（如运行中 pipeline 步骤 2/3
-    的图片/视频生成轮询）正在使用的全局会话状态。Web 后台线程
-    （角色库图片生成、风格预览等）应优先用它。
-    """
-    with _INIT_LOCK:
-        want = [t.strip() for t in (tokens or []) if t.strip()]
-        if TOKEN and _TOKENS:
-            # 已初始化且 token 集一致（或调用方未指定）→ 复用现有会话
-            if not want or set(want) == set(_TOKENS):
-                return
-        return initialize(tokens=want or None)
 
 
 def call_tool(name, arguments):

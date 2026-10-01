@@ -17,7 +17,6 @@ from media_utils import build_srt
 PAIR_STEPS = ("a_m", "a_slow", "b_m", "b_slow", "combo")
 # 序列编排可选步骤（b_f=B句女声常速，默认结构不用，供 sleep_sequence 独立成步）
 SEQUENCE_STEPS = ("a_m", "a_slow", "b_m", "b_slow", "b_f", "combo")
-SLEEP_SEG_TYPES = ("intro", "pair", "gap", "outro")
 
 # 序列步骤 gap 留空（null）时沿用全局停顿参数的映射
 # （a_m/b_m/b_f=常速→gap_short；a_slow/b_slow=慢速→gap_long；combo→pair_gap）
@@ -135,10 +134,6 @@ def build_sleep_timeline(script: dict, audio: dict, num_pairs: int,
         timeline.append({"type": "outro", "duration": round(outro_dur, 3),
                          "subtitle_en": "", "subtitle_zh": "", "pair": 0, "step": ""})
     return timeline
-
-
-def timeline_total(timeline: list[dict]) -> float:
-    return round(sum(seg.get("duration", 0.0) for seg in timeline), 3)
 
 
 def build_sleep_srt(timeline: list[dict]) -> str:

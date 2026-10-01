@@ -17,12 +17,12 @@ from pathlib import Path
 
 from .paths import WEB_ROOT
 
-# 多预生成目录（文件夹编号全局唯一）：ai_scripts=001-100, ai_scripts_hot=101 起
+# 多预生成目录：两个目录都从 001 起各自独立编号（2026-09-28 重编），
+# 编号仍全局唯一（app/ai_scripts_admin.next_index 跨两目录取 max+1）
 AI_SCRIPTS_DIR = WEB_ROOT / "ai_scripts"
 AI_SCRIPTS_DIRS = [AI_SCRIPTS_DIR, WEB_ROOT / "ai_scripts_hot"]
-MANIFEST_PATH = AI_SCRIPTS_DIR / "manifest.json"
 SLEEP_MODE = "sleep"
-# 新建脚本的默认行数（201+ 批次＝400 组）；体检同时接受历史批次的 400 行
+# 新建脚本的默认行数（400 组）；体检同时接受历史批次的 400 行
 EXPECTED_LINES = 800
 STANDARD_LINES = (400, 800)
 # 管理页删除＝移入预生成目录下的 _recycle_bin（与运行历史回收站同一套约定；
@@ -55,8 +55,7 @@ def list_ai_scripts(source: str = "all") -> list[dict]:
     以各目录 manifest.json 为索引，仅返回 script.json 实际存在的主题。
     顺序＝script.json 最后修改时间倒序（新内容、刚重审过的排最前）。
 
-    source: "all"（默认，两个目录全部）/ "main"（ai_scripts/ 001-100）
-            / "hot"（ai_scripts_hot/ 101-200）。
+    source: "all"（默认，两个目录全部）/ "main"（ai_scripts/）/ "hot"（ai_scripts_hot/）。
     """
     if source in ("main", "hot"):
         bases = [source_dir(source)]
@@ -110,11 +109,12 @@ def _sync_state_path() -> Path:
 
 
 def _src_of(folder: str) -> str:
-    """编号 101+ 属 ai_scripts_hot，001–100 属 ai_scripts（文件夹编号全局唯一）。"""
-    try:
-        return "hot" if int(str(folder)[:3]) >= 101 else "main"
-    except ValueError:
-        return "main"
+    """来源＝这个文件夹实际躺在哪个目录里（两个库都从 001 起编号，号段区分不了来源）。
+    只给「同步状态里没有 src 字段的历史条目」补数据用。"""
+    folder = Path(folder).name
+    if (AI_SCRIPTS_DIRS[1] / folder).exists():
+        return "hot"
+    return "main"
 
 
 def _load_state() -> dict:
@@ -149,7 +149,9 @@ def _new_doc(script: dict, topic: str) -> dict:
         "llm_provider": "ai_scripts",
         "llm_model": "",
         "num_lines": len(script.get("dialogue") or []),
-        "review": None,
+        # 预生成脚本的 script.json 里可能带 skill 写回的 review（round1/round2 结论），
+        # 带进来脚本库才会显示分数/verdict 而不是「未审查」。
+        "review": script.get("review") or None,
     })
 
 
@@ -163,6 +165,9 @@ def _apply_content(script_library, sid: str, script: dict, out: dict) -> None:
         out["skipped"] += 1
         return
     script_library.update_script(sid, {"script": script})
+    # review 不在正文里，update_script 的正文分支不会带上它 —— 单独透传一次
+    if isinstance(script.get("review"), dict) and script["review"]:
+        script_library.update_script(sid, {"ai_review": script["review"]})
     out["refreshed"] += 1
 
 

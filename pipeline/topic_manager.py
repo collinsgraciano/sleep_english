@@ -12,7 +12,6 @@ used_topics.json format:
 import json
 import os
 import random
-import sys
 import tempfile
 from datetime import datetime
 from pathlib import Path

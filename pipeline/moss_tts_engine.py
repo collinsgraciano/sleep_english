@@ -347,22 +347,6 @@ def get_moss_voice_meta(name: str) -> dict | None:
     return None
 
 
-def get_moss_zh_default(gender: str, rank: int = 0,
-                        structure: str | None = None) -> str:
-    """Default Chinese preset voice for Chinese lines, by gender (+ 同性别错开).
-
-    Chinese lines spoken with an English reference voice sound accented —
-    default to native Chinese presets (Junhao male / Xiaoyu female).
-    rank 为同性别分组序号（0=第一默认, 1=第二默认），避免同性别两角色
-    中文台词撞音色。
-    """
-    defaults = _resolve_mode_defaults(_load_voice_config(), structure,
-                                      MOSS_VOICE_DEFAULTS)
-    if str(gender).lower() == "female":
-        return _gender_default(defaults, "default_female_zh", rank)
-    return _gender_default(defaults, "default_male_zh", rank)
-
-
 def gender_default_ranks(script: dict) -> dict[str, int]:
     """char_a/b/c 未绑定 moss 音色者的同性别分组序号（0=第一默认,1=第二,2=第三）."""
     return _same_gender_ranks([
@@ -387,7 +371,7 @@ def build_moss_voice_map(script: dict, structure: str | None = None) -> dict:
                                       MOSS_VOICE_DEFAULTS)
     ranks = gender_default_ranks(script)
     voice_map = {}
-    for key in ["char_a", "char_b", "char_c", "char_d", "char_e", "host"]:
+    for key in ["char_a", "char_b", "char_c"]:
         # Priority 1: moss_voice from script (set by library binding)
         voice = script.get(f"{key}_moss_voice", "")
         if voice:
@@ -397,12 +381,8 @@ def build_moss_voice_map(script: dict, structure: str | None = None) -> dict:
         gender = script.get(f"{key}_gender", "").lower()
         if not gender:
             continue
-        if key == "host":
-            voice_map[key] = (defaults["default_host_female"] if gender == "female"
-                              else _gender_default(defaults, "default_host_male", 0))
-        else:
-            base = "default_female" if gender == "female" else "default_male"
-            voice_map[key] = _gender_default(defaults, base, ranks.get(key, 0))
+        base = "default_female" if gender == "female" else "default_male"
+        voice_map[key] = _gender_default(defaults, base, ranks.get(key, 0))
     return voice_map
 
 

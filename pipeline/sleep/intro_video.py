@@ -22,10 +22,9 @@ import shutil
 import subprocess
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFilter, ImageFont
+from PIL import Image, ImageDraw, ImageFilter
 
-from media_utils import (FONT_ZH, TARGET_H, TARGET_W, VF_NORM, get_duration,
-                         has_audio)
+from media_utils import FONT_ZH, TARGET_H, TARGET_W, get_duration, has_audio
 from sleep.sleep_cards import (_draw_badge, _fit_font, _handwrite_path,
                                _hex_rgb, _theme_font)
 

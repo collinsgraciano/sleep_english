@@ -528,17 +528,6 @@ PARAM_SPEC = {
 }
 
 
-def param_effective_in_mode(key: str, mode: str) -> bool:
-    """参数在某模式下是否被管线实际消费（缺省全模式生效）。"""
-    if mode not in MODES:
-        return True
-    spec = PARAM_SPEC.get(key)
-    if spec is None:
-        return False
-    modes = spec.get("modes")
-    return not modes or mode in modes
-
-
 def effective_param_spec(mode: str) -> dict[str, dict]:
     """返回指定模式的生效参数子集（条目浅拷贝，不改动 PARAM_SPEC 原始对象）。
 
@@ -916,13 +905,6 @@ def save_sleep_color_preset(name: str, colors: dict[str, str]) -> str:
     (SLEEP_COLORS_DIR / f"{safe}.json").write_text(
         json.dumps(colors, ensure_ascii=False, indent=2), encoding="utf-8")
     return safe
-
-
-def load_sleep_color_preset(name: str) -> dict[str, str]:
-    path = SLEEP_COLORS_DIR / f"{_sanitize_combo_name(name)}.json"
-    if not path.exists():
-        raise FileNotFoundError(f"Sleep color preset '{name}' not found")
-    return json.loads(path.read_text(encoding="utf-8"))
 
 
 def delete_sleep_color_preset(name: str) -> bool:

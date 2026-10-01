@@ -147,7 +147,7 @@
             <p id="ai-script-info" class="text-xs text-emerald-300 mt-1 hidden"></p>
         </div>
 
-        <!-- ai_scripts_hot 预生成脚本 source（热门 101-200） -->
+        <!-- ai_scripts_hot 预生成脚本 source（热门主题库，见 app/ai_scripts.AI_SCRIPTS_DIRS） -->
         <div class="mb-4">
             <div class="flex items-center justify-between mb-1">
                 <label class="block text-xs text-slate-400">预生成脚本 (ai_scripts_hot · 热门)
@@ -309,15 +309,17 @@
             <span id="step-label" class="text-xs text-slate-400"></span>
             <span id="progress-pct" class="text-xs text-slate-400 font-mono">0%</span>
         </div>
-        <!-- Step indicators -->
+        <!-- Step indicators：占位，实际由 /api/run/status.steps 渲染
+             （服务端 STEP_DEFS 单一事实来源，避免前端硬编码步骤清单漂移） -->
         <div class="flex gap-1 mt-3" id="step-indicators">
             <div class="step-dot" data-step="step0_script">脚本</div>
             <div class="step-dot" data-step="step1_mcp">MCP</div>
-            <div class="step-dot" data-step="step2_images_tts">图片TTS</div>
+            <div class="step-dot" data-step="step2_images_tts">音频</div>
             <div class="step-dot" data-step="step3_video">片段</div>
             <div class="step-dot" data-step="step4_timeline">时间轴</div>
             <div class="step-dot" data-step="step45_thumbnail">缩略图</div>
             <div class="step-dot" data-step="step5_compose">合成</div>
+            <div class="step-dot" data-step="step55_bgm">BGM</div>
             <div class="step-dot" data-step="step6_4k">4K</div>
         </div>
     </div>
@@ -1019,22 +1021,7 @@ function connectSSE() {
 
         if (data.type === 'log') {
             const line = document.createElement('div');
-            // Color code based on content
-            if (data.line.includes('FATAL') || data.line.includes('ERROR') || data.line.includes('❌')) {
-                line.className = 'text-red-400';
-            } else if (data.line.includes('WARNING') || data.line.includes('⚠')) {
-                line.className = 'text-amber-400';
-            } else if (data.line.includes('DONE') || data.line.includes('✅')) {
-                line.className = 'text-green-400';
-            } else if (data.line.startsWith('Step') || data.line.startsWith('  [Resume]')) {
-                line.className = 'text-indigo-400';
-            } else if (data.line.startsWith('  [Topic]')) {
-                line.className = 'text-cyan-400';
-            } else if (data.line.startsWith('$')) {
-                line.className = 'text-slate-500';
-            } else {
-                line.className = 'text-slate-300';
-            }
+            line.className = classifyLogLine(data.line);
             line.textContent = data.line;
             logEl.appendChild(line);
 
@@ -1149,23 +1136,62 @@ function gotoRunGallery() {
     else location.href = '/runs' + (query ? '?' + query : '');
 }
 
+// 日志行着色：步骤横幅（▶▶/✔✔/⏭/✖/⏹/⋯）优先于通用关键字，
+// 让「每一步」在实时日志里一眼可辨。
+function classifyLogLine(line) {
+    if (line.startsWith('▶▶')) return 'text-emerald-300 font-semibold';
+    if (line.startsWith('✔✔')) return 'text-green-400 font-semibold';
+    if (line.startsWith('⏭')) return 'text-slate-500';
+    if (line.startsWith('✖')) return 'text-red-400 font-semibold';
+    if (line.startsWith('⏹')) return 'text-amber-400 font-semibold';
+    if (line.startsWith('⋯')) return 'text-slate-500';
+    if (line.includes('FATAL') || line.includes('ERROR') || line.includes('❌')) return 'text-red-400';
+    if (line.includes('WARNING') || line.includes('⚠')) return 'text-amber-400';
+    if (line.includes('DONE') || line.includes('✅')) return 'text-green-400';
+    if (line.startsWith('Step') || line.startsWith('  [Resume]')) return 'text-indigo-400';
+    if (line.startsWith('  [Topic]')) return 'text-cyan-400';
+    if (line.startsWith('$')) return 'text-slate-500';
+    return 'text-slate-300';
+}
+
+// 步骤条渲染：数据源 = /api/run/status.steps（服务端 STEP_DEFS）。
+// 步骤数变化时才重建 DOM，之后只切换 class，避免 0.5s 轮询抖动。
+function renderStepDots(steps) {
+    const host = document.getElementById('step-indicators');
+    if (!host || !Array.isArray(steps) || !steps.length) return;
+    if (host.dataset.count !== String(steps.length) || !host.firstElementChild) {
+        host.innerHTML = '';
+        steps.forEach(s => {
+            const d = document.createElement('div');
+            d.className = 'step-dot';
+            d.dataset.step = s.id;
+            d.textContent = s.short || s.num || s.id;
+            d.title = `${s.num} ${s.label}`;
+            host.appendChild(d);
+        });
+        host.dataset.count = String(steps.length);
+    }
+    steps.forEach((s, i) => {
+        const el = host.children[i];
+        if (!el) return;
+        el.classList.remove('active', 'done', 'skipped', 'failed');
+        if (s.status === 'done') el.classList.add('done');
+        else if (s.status === 'running') el.classList.add('active');
+        else if (s.status === 'skipped') el.classList.add('skipped');
+        else if (s.status === 'failed' || s.status === 'stopped') el.classList.add('failed');
+        el.title = `${s.num} ${s.label}`
+            + (s.duration ? ` · ${s.duration}s` : '')
+            + (s.note ? ` · ${s.note}` : '');
+    });
+}
+
 function updateProgress(data) {
     const pct = data.progress || 0;
     document.getElementById('progress-bar').style.width = pct + '%';
     document.getElementById('progress-pct').textContent = pct + '%';
     document.getElementById('step-label').textContent = data.current_step_label || (data.status === 'done' ? '完成' : '等待...');
 
-    // Update step indicators
-    document.querySelectorAll('.step-dot').forEach(el => {
-        el.classList.remove('active', 'done');
-    });
-    if (data.current_step) {
-        const currentIdx = ['step0_script','step1_mcp','step2_images_tts','step3_video','step4_timeline','step45_thumbnail','step5_compose','step6_4k'].indexOf(data.current_step);
-        document.querySelectorAll('.step-dot').forEach((el, i) => {
-            if (i < currentIdx) el.classList.add('done');
-            if (i === currentIdx) el.classList.add('active');
-        });
-    }
+    renderStepDots(data.steps);
     if (data.status === 'done') {
         document.querySelectorAll('.step-dot').forEach(el => el.classList.add('done'));
     }

@@ -35,7 +35,7 @@ from fastapi.responses import FileResponse, JSONResponse
 from ..config_manager import (load_mode_config, resolve_provider,
                               resolve_mcp_tokens, save_mode_config)
 from ..outro_library import (OUTRO_ID_RE, load_library, outro_file,
-                             resolve_video_path, save_library, videos_dir)
+                             save_library, videos_dir)
 from ..page_mcp import PageMcpSession
 from ..paths import WEB_ROOT
 from ..tts_state import TTS_SYNTH_LOCK
@@ -680,13 +680,5 @@ async def api_video(outro_id: str, channel: str = ""):
         return JSONResponse({"ok": False, "error": "Not found"}, status_code=404)
     return FileResponse(str(f), media_type="video/mp4",
                         headers={"Cache-Control": "no-cache"})
-
-
-def resolve_bound_outro(outro_sel: str, channel_id: str = "") -> str:
-    """sleep_outro_video 配置值 → mp4 路径（无效回退空）。频道库优先、全局库回退。"""
-    p = resolve_video_path(outro_sel, channel_id)
-    if not p:
-        print(f"  [OutroLibrary] 片尾绑定无效（库中不存在）: {outro_sel} —— 回退默认片尾")
-    return p
 
 

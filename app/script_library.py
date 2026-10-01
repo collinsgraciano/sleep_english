@@ -193,10 +193,25 @@ def save_new_script(script: dict, meta: dict) -> dict:
     return doc
 
 
+def _dialogue_hash(script: dict) -> str:
+    """对话内容指纹 —— 必须与 skill 的 scripts/skill_common.content_hash() 同构。
+
+    两处都用 `sha1(json.dumps(dialogue, ensure_ascii=False, sort_keys=True))`，
+    所以 skill 写回 review.content_hash 后，这里能判断「结论是否还对应这一版内容」。
+    """
+    import hashlib
+    dialogue = (script or {}).get("dialogue") or []
+    raw = json.dumps(dialogue, ensure_ascii=False, sort_keys=True)
+    return "sha1:" + hashlib.sha1(raw.encode("utf-8")).hexdigest()
+
+
 def update_script(sid: str, patch: dict) -> dict | None:
     """Merge-edit a script doc (script payload and/or topic/cefr).
 
     内容变更时重算 local_checks；已有 AI 审查结论则标记 stale（已编辑，过期）。
+    patch["ai_review"]（预生成脚本 skill 的 round1/round2 结论）：合并进 doc["review"]，
+    并按 review["content_hash"] 与当前对话内容重算 stale —— 这样「审查过期」才是
+    真的过期，而不是任何一次刷新都被判过期。
     """
     with _doc_lock:
         doc = get_script_doc(sid)
@@ -216,6 +231,13 @@ def update_script(sid: str, patch: dict) -> dict | None:
                 len(doc["script"].get("dialogue") or []))
             if review.get("score") is not None:
                 review["stale"] = True
+            doc["review"] = review
+        if isinstance(patch.get("ai_review"), dict) and patch["ai_review"]:
+            review = doc.get("review") or {}
+            review.update(patch["ai_review"])
+            if review.get("content_hash"):
+                review["stale"] = (review["content_hash"]
+                                   != _dialogue_hash(doc.get("script")))
             doc["review"] = review
         _write_doc(doc)
     return doc
@@ -365,10 +387,6 @@ def index_docs_by_topic(structure: str = "") -> dict[str, dict]:
 # ===========================================================================
 # Batch generation (runs in a background thread; events via queue)
 # ===========================================================================
-
-def is_batch_running() -> bool:
-    return bool(_batch_state["running"])
-
 
 def request_stop_batch() -> None:
     _batch_state["stop"].set()

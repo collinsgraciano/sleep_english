@@ -11,8 +11,7 @@ import json
 import hashlib
 from pathlib import Path
 
-from llm_client import (_chat, _extract_json, resolve_max_line_words,
-                        _env_int_clamped)
+from llm_client import _chat, _extract_json, _env_int_clamped
 
 
 def _sleep_max_line_words() -> int:
@@ -65,26 +64,6 @@ def _channel_brand_block(channel_ctx) -> str:
         "- Keep the sleep-listening phrase-drill format unchanged; tilt pair "
         "angles, titles and descriptions toward THIS channel's positioning.")
     return "\n".join(lines) + "\n"
-
-
-def _validate_pairs(pairs: list[dict], expected: int, max_words: int) -> tuple[bool, str, int]:
-    """批级校验。返回 (ok, message, soft_violations)。"""
-    if len(pairs) != expected:
-        return False, f"expected {expected} pairs, got {len(pairs)}", 0
-    soft = 0
-    for i, p in enumerate(pairs):
-        for side in ("a", "b"):
-            obj = p.get(side)
-            if not isinstance(obj, dict):
-                return False, f"pair {i+1} '{side}' missing", 0
-            text = (obj.get("text") or "").strip()
-            phon = (obj.get("phonetic") or "").strip()
-            zh = (obj.get("zh") or "").strip()
-            if not text or not phon or not zh:
-                return False, f"pair {i+1} '{side}' has empty text/phonetic/zh", 0
-            if len(text.split()) > max_words:
-                soft += 1
-    return True, "", soft
 
 
 def _batch_prompt(topic: str, cefr: str, count: int, start_idx: int,

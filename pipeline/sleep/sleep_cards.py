@@ -277,7 +277,8 @@ def _wrap_words(draw: ImageDraw.ImageDraw, text: str, font, max_w: int,
                 spacing: float = 0.0, stroke: int = 0) -> list[str]:
     words = text.split()
     if not words:
-        [""]
+        # 空文本（LLM 个别行 text 为空）返回单个空行，而不是继续索引 words[0]
+        return [""]
     lines, cur = [], words[0]
     for wd in words[1:]:
         trial = f"{cur} {wd}"

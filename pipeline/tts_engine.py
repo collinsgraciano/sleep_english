@@ -12,7 +12,6 @@ import re
 import subprocess
 import json
 from pathlib import Path
-from dataclasses import dataclass
 
 if sys.platform == "win32":
     try:
@@ -34,12 +33,6 @@ _kokoro_cache = Path(os.path.expanduser(
     "~/.cache/huggingface/hub/models--hexgrad--Kokoro-82M/snapshots"))
 if _kokoro_cache.exists() and any(_kokoro_cache.rglob("kokoro-v1_0.pth")):
     os.environ["HF_HUB_OFFLINE"] = "1"
-
-
-@dataclass
-class TTSResult:
-    audio_path: str
-    duration_sec: float
 
 
 # Known words that cause Kokoro to silently produce no audio.
@@ -557,7 +550,6 @@ class TTSEngine:
         """
         import asyncio
         import edge_tts
-        from edge_tts.exceptions import NoAudioReceived
 
         Path(out_path).parent.mkdir(parents=True, exist_ok=True)
         edge_voice = voice if voice else "zh-CN-XiaoxiaoNeural"
@@ -772,17 +764,11 @@ def gender_default_ranks(script: dict) -> dict[str, int]:
         gender = (script.get(f"{key}_gender") or fallback).lower()
         bound = bool((script.get(f"{key}_kokoro_voice") or "").strip())
         entries.append((key, gender, bound))
-    # story 扩展角色：仅当脚本声明其性别时参与同性别分组（不影响旧模式 ranks）
-    for key in ("char_d", "char_e"):
-        gender = (script.get(f"{key}_gender") or "").lower()
-        if gender in ("male", "female"):
-            bound = bool((script.get(f"{key}_kokoro_voice") or "").strip())
-            entries.append((key, gender, bound))
     return _same_gender_ranks(entries)
 
 
 def build_voice_map(script: dict, structure: str | None = None) -> dict:
-    """Build voice_map from char_a/char_b/char_c/host genders.
+    """Build voice_map from char_a/char_b/char_c genders.
 
     Priority 1: script['{key}_kokoro_voice'] (素材库 / Kokoro 音色绑定).
     Priority 2: by gender — configs/kokoro_voice_config.json 按模式分套的默认音色；
@@ -809,30 +795,4 @@ def build_voice_map(script: dict, structure: str | None = None) -> dict:
             continue
         base = "default_male" if gender == "male" else "default_female"
         voice_map[key] = _gender_default(defaults, base, ranks.get(key, 0))
-    # Quest mode host (节目主) — appears in welcome/hook/outro segments
-    if "host" not in voice_map:
-        host_gender = script.get("host_gender", "").lower()
-        if host_gender:
-            voice_map["host"] = (_gender_default(defaults, "default_host_male", 0)
-                                 if host_gender == "male"
-                                 else defaults["default_host_female"])
-        else:
-            print(f"  [TTS] WARNING: host_gender not set, defaulting to {defaults['default_host_female']} (female). "
-                  "Check script.json host_gender.")
-            voice_map["host"] = defaults["default_host_female"]
     return voice_map
-
-
-def get_zh_voice(speaker: str, script: dict) -> str:
-    """Get Chinese edge-tts voice based on speaker gender.
-
-    male   -> zh-CN-YunxiNeural
-    female -> zh-CN-XiaoxiaoNeural
-    """
-    if speaker == "char_a":
-        gender = script.get("char_a_gender", "male").lower()
-    else:
-        gender = script.get("char_b_gender", "female").lower()
-    if gender == "male":
-        return "zh-CN-YunxiNeural"
-    return "zh-CN-XiaoxiaoNeural"

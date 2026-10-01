@@ -8,7 +8,6 @@ import contextlib
 import json
 import re
 import os
-import sys
 import threading
 import urllib.parse
 import urllib.request

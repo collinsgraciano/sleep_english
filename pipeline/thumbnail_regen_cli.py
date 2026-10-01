@@ -30,7 +30,6 @@ if _PARENT not in sys.path:
 def main() -> int:
     params = json.loads(sys.stdin.readline() or "{}")
     run_dir = Path(params["run_dir"])
-    structure = params.get("structure", "sleep")
     out_name = params["out_name"]
     style_id = params.get("style_id", "pixar3d")
     style_prompt = params.get("style_prompt", "")
@@ -89,31 +88,21 @@ def main() -> int:
         mcp_parse_task_id = parse_task_id
         mcp_poll_task = poll_task
         mcp_download_file = download_file
-    char_scene_url = ""
 
     # sleep 缩略图：AI 分支纯 prompt 生成；Pillow 兜底卡需要 sleep 主题配色
-    sleep_theme = None
-    sleep_channel = ""
-    if structure == "sleep":
-        from sleep.sleep_cards import build_theme
-        sleep_cfg = params.get("sleep_cfg", {}) or {}
-        sleep_theme = build_theme(sleep_cfg)
-        sleep_channel = str(sleep_cfg.get("sleep_channel_name", "")
-                            or "English with me")
-
-    # 场景图：仅 Pillow 兜底分支需要；sleep AI 分支纯 prompt 生成不受影响
-    scene_img = run_dir / "images" / "scene.png"
+    from sleep.sleep_cards import build_theme
+    sleep_cfg = params.get("sleep_cfg", {}) or {}
+    sleep_theme = build_theme(sleep_cfg)
+    sleep_channel = str(sleep_cfg.get("sleep_channel_name", "")
+                        or "English with me")
 
     out_path = generate_thumbnail(
         script=script,
-        scene_img=str(scene_img),
         output_path=str(run_dir / out_name),
         mcp_call_tool=mcp_call_tool,
         mcp_parse_task_id=mcp_parse_task_id,
         mcp_poll_task=mcp_poll_task,
         mcp_download_file=mcp_download_file,
-        structure=structure,
-        char_scene_url=char_scene_url,
         sleep_theme=sleep_theme,
         sleep_channel=sleep_channel,
         image_gen_fn=image_gen_fn,
@@ -123,7 +112,7 @@ def main() -> int:
         print(f"ThumbnailRegen DONE! {out_name}")
         return 0
     print("ThumbnailRegen FAILED: AI 生成与 Pillow 兜底均未产出文件"
-          "（检查生图 Provider 配置 / MCP token / images 场景图）")
+          "（检查生图 Provider 配置 / MCP token）")
     return 1
 
 

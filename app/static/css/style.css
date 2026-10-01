@@ -20,6 +20,18 @@
     background: #059669;
     color: #fff;
 }
+/* 跳过步骤（Step 1 MCP / Step 3 片段）：与「已执行」区分，灰底斜体 */
+.step-dot.skipped {
+    background: #1e293b;
+    color: #94a3b8;
+    font-style: italic;
+    border: 1px dashed #475569;
+}
+/* 失败/中止步骤 */
+.step-dot.failed {
+    background: #b91c1c;
+    color: #fff;
+}
 
 @keyframes pulse {
     0%, 100% { opacity: 1; }

@@ -20,7 +20,7 @@ import time
 from pathlib import Path
 from typing import Any
 
-from .paths import CHANNELS_DIR, CHANNEL_FAVORITES_PATH, WEB_ROOT
+from .paths import CHANNELS_DIR, CHANNEL_FAVORITES_PATH
 from .config_manager import SLEEP_GROUPS
 
 # 合法频道 id（与频道工坊 profile id 同前缀，手动/转正共用）

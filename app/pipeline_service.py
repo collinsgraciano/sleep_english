@@ -31,27 +31,46 @@ from llm_client import LLMStoppedError, set_llm_stop_hook
 from checkpoint import (
     save_checkpoint as _save_checkpoint,
     load_checkpoint as _load_checkpoint,
-    step_done as _step_done,
 )
 
-# Step detection patterns
-STEP_PATTERNS = [
-    (r"Step 0[:\s]", "step0_script", "LLM 脚本生成"),
-    (r"Step 1[:\s]", "step1_mcp", "MCP 初始化"),
-    (r"Step 2[:\s]", "step2_images_tts", "图片 + TTS 生成"),
-    (r"Step 3[:\s]", "step3_video", "视频片段生成"),
-    (r"Step 4\.5[:\s]", "step45_thumbnail", "缩略图 + 元数据"),
-    (r"Step 4[:\s]", "step4_timeline", "时间轴 + SRT"),
-    (r"Step 5\.5[:\s]", "step55_bgm", "BGM 音乐混合"),
-    (r"Step 5[:\s]", "step5_compose", "视频合成"),
-    (r"Step 6[:\s]", "step6_4k", "4K 超分辨率"),
+# 步骤注册表 —— 单一事实来源：(step_id, 编号, 步骤名, 步骤条短标签)。
+# 执行顺序 = 列表顺序；日志横幅、进度百分比、/api/run/status.steps 与
+# 前端步骤条全部由本表派生（改造前 step55_bgm 在四处里漏了三处，进度
+# 百分比与步骤条长期对不上）。
+STEP_DEFS: list[tuple[str, str, str, str]] = [
+    ("step0_script",     "Step 0",   "LLM 脚本生成",           "脚本"),
+    ("step1_mcp",        "Step 1",   "MCP 初始化",             "MCP"),
+    ("step2_images_tts", "Step 2",   "本地 TTS + 可选背景图",   "音频"),
+    ("step3_video",      "Step 3",   "视频片段生成",           "片段"),
+    ("step4_timeline",   "Step 4",   "时间轴 + SRT",           "时间轴"),
+    ("step45_thumbnail", "Step 4.5", "YouTube 元数据 + 缩略图", "缩略图"),
+    ("step5_compose",    "Step 5",   "卡片块合成 + concat",     "合成"),
+    ("step55_bgm",       "Step 5.5", "BGM 版权音乐混合",        "BGM"),
+    ("step6_4k",         "Step 6",   "4K 超分",                "4K"),
 ]
 
-STEP_ORDER = [
-    "step0_script", "step1_mcp", "step2_images_tts",
-    "step3_video", "step4_timeline", "step45_thumbnail",
-    "step5_compose", "step55_bgm", "step6_4k",
+STEP_ORDER = [sid for sid, _, _, _ in STEP_DEFS]
+STEP_INDEX = {sid: i for i, sid in enumerate(STEP_ORDER)}
+# 日志横幅用全名（"Step 5 · 卡片块合成 + concat"）
+STEP_LABELS = {sid: f"{num} · {name}" for sid, num, name, _ in STEP_DEFS}
+
+# stdout 行 → 步骤 id 的兜底识别（pipeline 各 step 自带 "Step N: ..." 横幅）。
+# 显式 _step_begin 已覆盖全部步骤，这里只防第三方模块自己打印步骤号。
+STEP_PATTERNS = [
+    (rf"\b{re.escape(num)}[:\s]", sid) for sid, num, _, _ in STEP_DEFS
 ]
+
+
+def _fmt_dur(seconds: float) -> str:
+    """秒 → 人类可读耗时（45s / 3m20s / 1h02m）。"""
+    s = int(max(0.0, seconds))
+    if s < 60:
+        return f"{s}s"
+    m, s = divmod(s, 60)
+    if m < 60:
+        return f"{m}m{s:02d}s"
+    h, m = divmod(m, 60)
+    return f"{h}h{m:02d}m"
 
 
 class _LineBuffer(io.StringIO):
@@ -199,6 +218,133 @@ class PipelineService:
         self.final_path: str = ""
         self._step_mode: bool = False
         self._paused_after_step: str = ""
+        # 步骤级状态：{step_id: {…}} —— 顺序同 STEP_ORDER，前端步骤条直读
+        self.steps: dict[str, dict] = {}
+        self._reset_steps()
+        # 长步骤心跳：静默步骤（4K/整片重编码）也保证实时日志有推进
+        self._active_step: str = ""
+        self._active_step_started: float = 0.0
+        self._hb_stop = threading.Event()
+        self._hb_thread: threading.Thread | None = None
+
+    # ------------------------------------------------------------------
+    # 步骤级实时日志
+    # ------------------------------------------------------------------
+
+    def _reset_steps(self) -> None:
+        """重建步骤表（每次 run/4K/BGM 启动前调用）。"""
+        self.steps = {
+            sid: {"id": sid, "num": num, "label": name, "short": short,
+                  "status": "pending", "started_at": 0.0, "finished_at": 0.0,
+                  "duration": 0.0, "note": ""}
+            for sid, num, name, short in STEP_DEFS
+        }
+        self._active_step = ""
+        self._active_step_started = 0.0
+
+    def _step_log(self, marker: str, step_id: str, text: str) -> None:
+        """写一行步骤横幅：`▶▶ [3/9] Step 2 · 本地 TTS — 开始`。"""
+        rec = self.steps.get(step_id)
+        if rec is None:
+            self._on_log_line(f"{marker} {text}")
+            return
+        idx = STEP_INDEX[step_id] + 1
+        self._on_log_line(
+            f"{marker} [{idx}/{len(STEP_ORDER)}] "
+            f"{rec['num']} · {rec['label']} — {text}")
+
+    def _step_begin(self, step_id: str, note: str = "") -> float:
+        """标记步骤开始：写实时日志 + 更新步骤表，返回开始时间戳。"""
+        now = time.time()
+        with self._lock:
+            rec = self.steps.get(step_id)
+            if rec is not None:
+                rec.update(status="running", started_at=now, finished_at=0.0,
+                           duration=0.0, note=note)
+            self.current_step = step_id
+            self.current_step_label = STEP_LABELS.get(step_id, step_id)
+            self._active_step = step_id
+            self._active_step_started = now
+        self._step_log("▶▶", step_id, f"开始（{note}）" if note else "开始")
+        return now
+
+    def _step_end(self, step_id: str, status: str = "done",
+                  note: str = "") -> float:
+        """标记步骤结束。status: done / skipped / stopped / failed。
+
+        done 写实际耗时；skipped 必带原因（如「sleep 零 MCP」）。
+        """
+        now = time.time()
+        with self._lock:
+            rec = self.steps.get(step_id)
+            started = float(rec.get("started_at") or 0.0) if rec else 0.0
+            dur = (now - started) if (status == "done" and started) else 0.0
+            if rec is not None:
+                rec.update(status=status, finished_at=now,
+                           duration=round(dur, 1), note=note)
+            if self._active_step == step_id:
+                self._active_step = ""
+                self._active_step_started = 0.0
+        if status == "skipped":
+            self._step_log("⏭", step_id, f"跳过（{note}）" if note else "跳过")
+        elif status == "stopped":
+            self._step_log("⏹", step_id, "已中止（用户停止）")
+        elif status == "failed":
+            self._step_log("✖", step_id, f"失败（{note}）" if note else "失败")
+        else:
+            self._step_log("✔✔", step_id,
+                           f"完成（耗时 {_fmt_dur(dur)}）"
+                           + (f" — {note}" if note else ""))
+        return dur
+
+    def _close_active_step(self) -> None:
+        """收尾：把仍停在 running 的步骤按 run 最终状态落定。
+
+        正常路径每步都显式 _step_end；走到这里说明该步被异常或提前
+        return 打断 —— 不留「开始」而无结论的悬挂步骤。
+        """
+        with self._lock:
+            step_id = self._active_step
+            status = self.status
+            err = self.error
+        if not step_id:
+            return
+        if status == "done":
+            self._step_end(step_id, "done")
+        elif status == "stopped":
+            self._step_end(step_id, "stopped")
+        else:
+            self._step_end(step_id, "failed", err or "步骤异常中断")
+
+    # 静默步骤（整片重编码 / 4K 放大）心跳间隔（秒）
+    HEARTBEAT_SEC = 30.0
+
+    def _start_heartbeat(self) -> None:
+        if self._hb_thread is not None and self._hb_thread.is_alive():
+            return
+        self._hb_stop.clear()
+        self._hb_thread = threading.Thread(
+            target=self._heartbeat_loop, name="pipeline-heartbeat", daemon=True)
+        self._hb_thread.start()
+
+    def _stop_heartbeat(self) -> None:
+        self._hb_stop.set()
+        self._hb_thread = None
+
+    def _heartbeat_loop(self) -> None:
+        """每 HEARTBEAT_SEC 秒为当前步骤补一行「进行中（已耗时 …）」。
+
+        FFmpeg/超分等步骤单条命令可能跑几十分钟且无任何输出，
+        没有心跳时实时日志会长时间静止，看起来像卡死。
+        """
+        while not self._hb_stop.wait(self.HEARTBEAT_SEC):
+            with self._lock:
+                step_id, started, status = (
+                    self._active_step, self._active_step_started, self.status)
+            if not step_id or not started or status != "running":
+                continue
+            self._step_log("⋯", step_id,
+                           f"进行中（已耗时 {_fmt_dur(time.time() - started)}）")
 
     @property
     def is_running(self) -> bool:
@@ -232,7 +378,9 @@ class PipelineService:
             self.error = ""
             self.work_dir = ""
             self.final_path = ""
+            self._reset_steps()
 
+        self._start_heartbeat()
         self._thread = threading.Thread(
             target=self._run, args=(config, resume), daemon=True)
         self._thread.start()
@@ -242,10 +390,13 @@ class PipelineService:
         """In step mode, pause after each step and wait for user to continue."""
         if not self._step_mode:
             return
+        label = STEP_LABELS.get(step_name, step_name)
         self._paused_after_step = step_name
         with self._lock:
             self.status = "paused"
-        self._on_log_line(f"\n⏸ [Step Mode] Paused after {step_name}. Review the output, then click 'Continue' to proceed.")
+        self._on_log_line(
+            f"⏸ [分步模式] {label} 已结束 —— 审查产物后点「继续下一步」"
+            f"（step_id={step_name}）")
 
         # Wait until continue or stop
         while self._paused_after_step and not self._stop_flag.is_set():
@@ -255,7 +406,7 @@ class PipelineService:
             return
         with self._lock:
             self.status = "running"
-        self._on_log_line(f"▶ [Step Mode] Continuing after {step_name}...")
+        self._on_log_line(f"▶ [分步模式] 继续执行下一步（已完成 {step_name}）")
 
     def continue_step(self):
         """Resume from a step-mode pause."""
@@ -263,12 +414,9 @@ class PipelineService:
 
     def get_progress(self) -> dict:
         with self._lock:
-            if self.current_step:
-                try:
-                    idx = STEP_ORDER.index(self.current_step)
-                    progress = int((idx + 1) / len(STEP_ORDER) * 100)
-                except ValueError:
-                    progress = 0
+            if self.current_step in STEP_INDEX:
+                progress = int((STEP_INDEX[self.current_step] + 1)
+                               / len(STEP_ORDER) * 100)
             else:
                 progress = 0
 
@@ -295,6 +443,8 @@ class PipelineService:
                 "final_path": self.final_path,
                 "step_mode": self._step_mode,
                 "paused_after_step": self._paused_after_step,
+                # 步骤条数据源（顺序 = STEP_ORDER），前端不再硬编码步骤清单
+                "steps": [dict(rec) for rec in self.steps.values()],
             }
 
     def _set_env(self, config: dict) -> None:
@@ -379,11 +529,6 @@ class PipelineService:
             os.environ["QWEN_VOICEDSIGN_MODEL_PATH"] = str(config["qwen_voicedesign_model_path"])
         if config.get("qwen_device"):
             os.environ["QWEN_DEVICE"] = str(config["qwen_device"])
-
-    # Character image file patterns per structure
-    # （仅 char_scene.png 为 original/original_static 的角色合图；
-    #   旧清单中的 char_a_ref/char_b_ref 从未由 image_gen 生成，已移除）
-    _CHAR_FILES_ORIGINAL = ["char_scene.png"]
 
     def _build_args(self, config: dict) -> SimpleNamespace:
         """Convert config dict → SimpleNamespace matching pipeline.py args."""
@@ -687,14 +832,21 @@ class PipelineService:
         args.topic = topic
         if script.get("cefr"):
             args.cefr = script["cefr"]
-        # 组数以脚本实际行数为准：timeline 用 min(sleep_pairs, 脚本行数) 截，
-        # 沿用配置值会把 800 行脚本静默播成前 400 行
-        pairs = max(10, min(400, len(script["dialogue"]) // 2))
-        if int(getattr(args, "sleep_pairs", 0) or 0) != pairs:
-            self._on_log_line(f"  [AiScripts] 对话组数按脚本同步："
-                              f"{getattr(args, 'sleep_pairs', 0)} → {pairs}")
+        # 组数：用户填的组数优先（timeline 用 min(sleep_pairs, 脚本行数) 截，
+        # 「只取前 N 组」是有效需求——填 10 就出前 10 组，与脚本库分支一致）；
+        # 只有请求组数超过脚本实际组数时才下调，避免 Step 2 凑不齐 pair 直接报错
+        script_pairs = max(10, min(400, len(script["dialogue"]) // 2))
+        cur = int(getattr(args, "sleep_pairs", 0) or 0)
+        want = script_pairs if cur <= 0 else max(10, min(400, cur))
+        pairs = min(want, script_pairs)
+        if cur != pairs:
+            self._on_log_line(f"  [AiScripts] 对话组数校齐：{cur} → {pairs}"
+                              f"（脚本共 {script_pairs} 组 / {len(script['dialogue'])} 行）")
             args.sleep_pairs = pairs
             args.num_lines = pairs * 2
+        elif pairs < script_pairs:
+            self._on_log_line(f"  [AiScripts] 按配置只取前 {pairs} 组"
+                              f"（脚本共 {script_pairs} 组 / {len(script['dialogue'])} 行）")
 
         self._on_log_line("\n" + "=" * 60)
         self._on_log_line("Step 0: 使用 ai_scripts 预生成脚本（跳过 LLM 生成）...")
@@ -728,10 +880,12 @@ class PipelineService:
             self.log_lines.append(line)
             if len(self.log_lines) > 5000:
                 self.log_lines = self.log_lines[-3000:]
-            for pattern, step_id, step_label in STEP_PATTERNS:
+            # 兜底：第三方模块自带的 "Step N:" 横幅（显式 _step_begin 已覆盖
+            # 全部步骤，这里只同步 current_step，不改步骤表状态）
+            for pattern, step_id in STEP_PATTERNS:
                 if re.search(pattern, line):
                     self.current_step = step_id
-                    self.current_step_label = step_label
+                    self.current_step_label = STEP_LABELS.get(step_id, step_id)
                     break
 
     def _run(self, config: dict, resume: bool):
@@ -744,6 +898,10 @@ class PipelineService:
         try:
             self._run_inner(config, resume)
         finally:
+            # 悬挂步骤落定 + 心跳停止必须在释放互斥锁之前完成，
+            # 否则下一次运行会与上一次的心跳线程同时写日志
+            self._close_active_step()
+            self._stop_heartbeat()
             set_llm_stop_hook(None)
             run_mutex.release("pipeline")
 
@@ -754,7 +912,7 @@ class PipelineService:
             _step0_script, _step1_mcp, _step2_images_tts,
             _step3_clips, _step4_timeline, _step45_thumbnail,
             _step5_compose, _step55_bgm, _step6_4k,
-            _generate_script_with_retry, _resolve_topic, _resolve_run_dir,
+            _resolve_topic,
         )
 
         # Set env vars
@@ -801,6 +959,13 @@ class PipelineService:
             script_id = str(config.get("script_id") or "").strip()
             ai_script = str(config.get("ai_script") or "").strip()
             if ai_script and not resume:
+                _s0_note = f"预生成脚本 {ai_script}"
+            elif script_id and not resume:
+                _s0_note = f"脚本库脚本 {script_id}"
+            else:
+                _s0_note = f"LLM 生成（CEFR {args.cefr}）"
+            self._step_begin("step0_script", _s0_note)
+            if ai_script and not resume:
                 script, work_dir, dirs = self._seed_from_ai_scripts(
                     ai_script, args, topic, parent_dir, used_topics_file)
                 if script is None:
@@ -821,6 +986,7 @@ class PipelineService:
                 except Exception:
                     pass
             self.work_dir = str(work_dir)
+            self._step_end("step0_script", note=f"主题「{topic}」")
 
             if self._stop_flag.is_set():
                 self._set_stopped()
@@ -834,21 +1000,29 @@ class PipelineService:
             _script_path = work_dir / "script.json"
             if _script_path.exists():
                 script = json.loads(_script_path.read_text(encoding="utf-8"))
-                self._on_log_line("  [Step Mode] Reloaded script.json (edits applied).")
+                self._on_log_line("  [Script] 已重新载入 script.json（分步审查中的编辑生效）")
 
             # Step 1: MCP init —— sleep 恒跳过（主流程零 MCP；缩略图 AI 生成在
             # Step 4.5 按需初始化，空 token 不在此崩与 MCP 无关的运行）
             if self._stop_flag.is_set():
                 self._set_stopped()
                 return
+            self._step_begin("step1_mcp", "sleep 恒跳过初始化")
+            # 调用 pipeline 自身实现（打印 "Step 1: …"），保证 CLI 与 Web 日志一致
+            _step1_mcp(args)
+            self._step_end("step1_mcp", "skipped", "sleep 主流程零 MCP（按需在 Step 2/4.5 初始化）")
             self._wait_for_step_approval("step1_mcp")
             if self._stop_flag.is_set():
                 self._set_stopped()
                 return
 
             # Step 2: Images + TTS
+            self._step_begin("step2_images_tts",
+                             f"TTS {getattr(args, 'tts_engine', 'kokoro')} · "
+                             f"{int(getattr(args, 'sleep_pairs', 0) or 0)} 组")
             ctx = _step2_images_tts(args, checkpoint, script, work_dir, dirs,
                                     stop_check=self._stop_flag.is_set)
+            self._step_end("step2_images_tts")
 
             if self._stop_flag.is_set():
                 self._set_stopped()
@@ -859,9 +1033,11 @@ class PipelineService:
                 return
 
             # Step 3: Video clips
+            self._step_begin("step3_video")
             clip_paths, group_info, line_to_group = _step3_clips(
                 args, checkpoint, work_dir, dirs, script, ctx,
                 stop_check=self._stop_flag.is_set)
+            self._step_end("step3_video", "skipped", f"{args.structure} 模式无视频片段")
 
             if self._stop_flag.is_set():
                 self._set_stopped()
@@ -872,8 +1048,10 @@ class PipelineService:
                 return
 
             # Step 4: Timeline
+            self._step_begin("step4_timeline")
             timeline, narration, normal_paths, zh_paths = _step4_timeline(
                 args, checkpoint, script, work_dir, dirs, ctx["tts_results"])
+            self._step_end("step4_timeline", note=f"{len(timeline)} 个时间轴段")
 
             if self._stop_flag.is_set():
                 self._set_stopped()
@@ -884,7 +1062,9 @@ class PipelineService:
                 return
 
             # Step 4.5: Thumbnail
+            self._step_begin("step45_thumbnail")
             _step45_thumbnail(args, checkpoint, script, work_dir, dirs, timeline, ctx)
+            self._step_end("step45_thumbnail")
 
             if self._stop_flag.is_set():
                 self._set_stopped()
@@ -895,11 +1075,15 @@ class PipelineService:
                 return
 
             # Step 5: Compose
+            self._step_begin("step5_compose",
+                             "4K 原生" if getattr(args, "sleep_4k_native", False)
+                             else "720p + Step 6 放大")
             final_path, safe_vid_name = _step5_compose(
                 args, checkpoint, script, work_dir, dirs, clip_paths, timeline,
                 narration, normal_paths, zh_paths, ctx["tts_results"],
                 group_info, line_to_group, stop_check=self._stop_flag.is_set)
             self.final_path = final_path
+            self._step_end("step5_compose", note=Path(final_path).name)
 
             if self._stop_flag.is_set():
                 self._set_stopped()
@@ -910,8 +1094,13 @@ class PipelineService:
                 return
 
             # Step 5.5: BGM 版权音乐混合（启用时输出 {stem}_bgm.mp4，4K 以其为源）
-            final_path = _step55_bgm(args, checkpoint, work_dir, final_path)
-            self.final_path = final_path
+            if getattr(args, "bgm_mix", False):
+                self._step_begin("step55_bgm")
+                final_path = _step55_bgm(args, checkpoint, work_dir, final_path)
+                self.final_path = final_path
+                self._step_end("step55_bgm", note=Path(final_path).name)
+            else:
+                self._step_end("step55_bgm", "skipped", "未启用 BGM 混音（bgm_mix=false）")
 
             if self._stop_flag.is_set():
                 self._set_stopped()
@@ -922,7 +1111,20 @@ class PipelineService:
                 return
 
             # Step 6: 4K
-            final_4k_path = _step6_4k(args, checkpoint, work_dir, final_path, safe_vid_name)
+            if getattr(args, "no_4k", False):
+                self._step_begin("step6_4k")
+            elif getattr(args, "sleep_4k_native", False):
+                self._step_begin("step6_4k", "成片已是原生 4K，仅链接产出")
+            else:
+                self._step_begin("step6_4k", "ffmpeg lanczos 放大 3840x2160")
+            final_4k_path = _step6_4k(args, checkpoint, work_dir,
+                                      final_path, safe_vid_name)
+            if final_4k_path:
+                self._step_end("step6_4k", note=Path(str(final_4k_path)).name)
+            elif getattr(args, "no_4k", False):
+                self._step_end("step6_4k", "skipped", "已关闭 4K（no_4k）")
+            else:
+                self._step_end("step6_4k", "skipped", "本步未产出 4K（源已是 4K 或引擎不可用）")
 
             # Clear checkpoint on completion
             cp_path = work_dir / "checkpoint.json"
@@ -939,6 +1141,7 @@ class PipelineService:
             self._on_log_line(f"Size: {fsize:.1f}MB")
             if final_4k_path and Path(final_4k_path).exists():
                 self._on_log_line(f"4K video: {final_4k_path}")
+            self._log_step_summary()
 
         except LLMStoppedError:
             # 用户点击「停止运行」→ LLM 等待/重试循环即时中止（BaseException
@@ -974,6 +1177,26 @@ class PipelineService:
             self.error = msg
             self.finished_at = time.time()
         self._on_log_line(f"\nFATAL: {msg}")
+
+    def _log_step_summary(self) -> None:
+        """运行结束时的步骤耗时汇总（实时日志末尾 + 事后排查共用）。"""
+        icon_of = {"done": "✔", "skipped": "⏭", "failed": "✖",
+                   "stopped": "⏹", "running": "▶"}
+        with self._lock:
+            rows = [(r["num"], r["label"], r["status"], r["duration"], r["note"])
+                    for r in self.steps.values()]
+        self._on_log_line("-" * 60)
+        self._on_log_line("步骤耗时汇总:")
+        total = 0.0
+        for num, label, status, dur, note in rows:
+            if status == "done":
+                total += dur
+            dur_text = f"{_fmt_dur(dur):>8}" if status == "done" else " " * 8
+            extra = f" — {note}" if note else ""
+            self._on_log_line(
+                f"  {icon_of.get(status, '·')} {num:<8} {label:<22}"
+                f"{dur_text}{extra}")
+        self._on_log_line(f"  合计（已完成步骤）: {_fmt_dur(total)}")
 
     # ------------------------------------------------------------------
     # Recompose: re-burn subtitles with a new style on a finished run
@@ -1093,7 +1316,9 @@ class PipelineService:
             self.error = ""
             self.work_dir = str(run_dir)
             self.final_path = ""
+            self._reset_steps()
 
+        self._start_heartbeat()
         self._thread = threading.Thread(
             target=self._generate_4k_run,
             args=(run_dir, str(final_path), safe_vid_name,
@@ -1111,6 +1336,7 @@ class PipelineService:
         sys.stdout = buf
         four_k_path = run_dir / f"{safe_vid_name}_4K.mp4"
         tmp_path = run_dir / f"{safe_vid_name}_4K_tmp.mp4"
+        self._step_begin("step6_4k", f"单独生成 4K · {run_dir.name}")
         try:
             print("=" * 60)
             print(f"Generate4K: {run_dir.name}")
@@ -1130,6 +1356,7 @@ class PipelineService:
                         self.status = "done"
                         self.finished_at = time.time()
                     print(f"Generate4K DONE! {four_k_path.name} (linked, 0s)")
+                    self._step_end("step6_4k", note="源视频已是 4K（链接产出）")
                     return
             except Exception:
                 pass  # 探测失败 → 落回常规放大
@@ -1161,6 +1388,7 @@ class PipelineService:
                     self.finished_at = time.time()
                 print("=" * 60)
                 print(f"Generate4K DONE! {four_k_path.name} ({size_mb:.1f}MB)")
+                self._step_end("step6_4k", note=f"{four_k_path.name} ({size_mb:.1f}MB)")
             else:
                 tmp_path.unlink(missing_ok=True)
                 stderr = (r.stderr.decode("utf-8", errors="replace")[-500:]
@@ -1183,6 +1411,8 @@ class PipelineService:
                 if self.status == "running":
                     self.status = "done"
                 self.finished_at = time.time()
+            self._close_active_step()
+            self._stop_heartbeat()
             run_mutex.release("4k_gen")
 
     # ------------------------------------------------------------------
@@ -1264,6 +1494,7 @@ class PipelineService:
             self.error = ""
             self.work_dir = str(run_dir)
             self.final_path = ""
+            self._reset_steps()
 
         params = dict(
             ducking_mode=str(config.get("bgm_ducking_mode", "sidechain") or "sidechain"),
@@ -1286,6 +1517,7 @@ class PipelineService:
         )
         start_chapter = int(config.get("bgm_start_chapter", 1) or 1)
         out_path = run_dir / f"{final_path.stem}_bgm.mp4"
+        self._start_heartbeat()
         self._thread = threading.Thread(
             target=self._bgm_mix_run,
             args=(run_dir, final_path, out_path, music_dir, params, start_chapter),
@@ -1301,6 +1533,7 @@ class PipelineService:
         buf = _LineBuffer(self._on_log_line)
         sys.stdout = buf
         tmp_path = out_path.with_name(out_path.stem + "_tmp.mp4")
+        self._step_begin("step55_bgm", f"单独混音 · {run_dir.name}")
         try:
             print("=" * 60)
             print(f"BGM Mix: {run_dir.name}")
@@ -1320,6 +1553,7 @@ class PipelineService:
                     self.final_path = str(out_path)
                 print("=" * 60)
                 print(f"BGM Mix DONE! {out_path.name} ({size_mb:.1f}MB)")
+                self._step_end("step55_bgm", note=f"{out_path.name} ({size_mb:.1f}MB)")
             else:
                 tmp_path.unlink(missing_ok=True)
                 self._fail("BGM 混音失败（原片未改动）")
@@ -1336,6 +1570,8 @@ class PipelineService:
                 if self.status == "running":
                     self.status = "done"
                 self.finished_at = time.time()
+            self._close_active_step()
+            self._stop_heartbeat()
             run_mutex.release("bgm_mix")
 
     def _set_stopped(self):

@@ -10,7 +10,6 @@ import os
 import re
 import sys
 import json
-import subprocess
 from pathlib import Path
 
 _PARENT = str(Path(__file__).parent.resolve())
@@ -22,70 +21,6 @@ from media_utils import FONT_EN, FONT_ZH
 # YouTube thumbnail specs
 THUMB_W = 1280
 THUMB_H = 720
-
-
-def _build_thumbnail_prompt(script: dict, structure: str) -> str:
-    """Build a prompt that generates a YouTube thumbnail in the reference style.
-
-    Reference style elements:
-    - Top-left orange banner: "A1-A2 LEVEL"
-    - Top-right green icon: "中英對照"
-    - Top center: "沉浸式聽力動畫" (listening) or "沉浸式英文動畫" (original)
-    - Main scene: characters in the active visual style + background + props
-    - Large text below characters: Traditional Chinese title (e.g. "在藥房買藥英文")
-    - Smaller text below: English title (e.g. "AT THE PHARMACY") + subtitle
-    - Bottom row of circular icons with bilingual text (scene keywords)
-
-    Key design: the LARGE title is in Traditional Chinese (the audience's native
-    language) for maximum CTR, with the English title as a smaller subtitle below.
-    """
-    from style_manager import get_active_style_prompt, get_active_thumbnail_hint
-    style_prompt = get_active_style_prompt()
-    thumb_hint = get_active_thumbnail_hint()
-    title_en = script.get("title", "ENGLISH LISTENING")
-    title_zh = script.get("title_zh", script.get("intro_zh", ""))
-    # Build a descriptive Chinese title: topic + "英文" suffix (e.g. "在藥房買藥英文")
-    if title_zh and not title_zh.endswith("英文"):
-        title_zh_large = f"{title_zh}英文"
-    else:
-        title_zh_large = title_zh or "日常英語"
-
-    cefr = script.get("cefr", "A2")
-    char_a_desc = script.get("char_a_description", "friendly young person")
-    char_b_desc = script.get("char_b_description", "friendly young person")
-    scene_zh = script.get("scene_zh", script.get("title", "everyday life"))
-    scene_en = script.get("scene", script.get("title", "everyday life"))
-
-    expression = script.get("thumbnail_expression", "surprised and excited")
-    action = script.get("thumbnail_action", "looking toward the camera and gesturing naturally")
-    subtitle = script.get("thumbnail_subtitle", "18句聽力練習")
-
-    icons = script.get("thumbnail_icons", [
-        {"en": "Dialogue", "zh": "會話"},
-        {"en": "Listening", "zh": "聽力"},
-        {"en": "Shadowing", "zh": "跟讀"},
-        {"en": "Practice", "zh": "練習"},
-    ])
-    icon_lines = "  ".join(f"{i['zh']} {i['en']}" for i in icons[:5])
-
-    if structure == "story":
-        top_center = "英文聽力故事"
-    elif structure == "quest":
-        top_center = "慢速英文聽力"
-    else:
-        top_center = "沉浸式英文動畫"
-
-    return f"""A highly complex {thumb_hint} YouTube thumbnail for {scene_en} English listening practice, complete with an orange banner at the top left reading "{cefr} LEVEL" and a green icon at the top right with the text "中英對照". At the top center, the text "{top_center}" is integrated.
-
-The main scene features a detailed view of {scene_en} with {char_a_desc} and {char_b_desc}, both with a {expression} expression, {action}. The background shows a detailed {scene_en} setting with relevant props and environment.
-
-The LARGE bold text below the characters reads "{title_zh_large}" in bright yellow font with thick black outline — this is the main title and must be the most prominent text on the thumbnail. Below this large Chinese title, smaller text reads "{title_en}" in white. Below that, even smaller text reads "{subtitle}".
-
-At the very bottom, a precise row of circular icons is rendered with legible text associated: {icon_lines}.
-
-Clean legible text, bright studio lighting, vibrant colors, highly detailed, professional composition, {style_prompt}, soft shadows, cinematic lighting.
-
-CRITICAL: The largest and most prominent text on the thumbnail must be the Traditional Chinese title "{title_zh_large}". The English title "{title_en}" must be noticeably smaller, serving as a subtitle below the Chinese title. The Chinese audience sees the Chinese title first — it must grab attention."""
 
 
 def assign_sleep_episode(script: dict, sleep_dir: str,
@@ -361,191 +296,25 @@ def _generate_sleep_thumbnail(script: dict, output_path: str,
     return output_path
 
 
-def generate_thumbnail(script: dict, scene_img: str, output_path: str,
+def generate_thumbnail(script: dict, output_path: str,
                         mcp_call_tool=None, mcp_parse_task_id=None,
                         mcp_poll_task=None, mcp_download_file=None,
-                        structure: str = "original",
-                        char_scene_url: str = None,
                         sleep_theme: dict | None = None,
                         sleep_channel: str = "",
                         image_gen_fn=None) -> str:
-    """Generate a YouTube thumbnail with text baked into the AI prompt (one step).
+    """生成 sleep 缩略图（AI 直出带字图，失败回退 Pillow 卡片）。
 
-    If char_scene_url is provided, uses it as a reference image so the thumbnail
-    characters match the video's character designs.
-
-    Falls back to Pillow text overlay on scene image if AI generation fails.
+    本项目仅 sleep 结构，非 sleep 的通用缩略图路径已随上游模式一并移除。
     """
-    if structure == "sleep":
-        return _generate_sleep_thumbnail(
-            script, output_path,
-            mcp_call_tool=mcp_call_tool,
-            mcp_parse_task_id=mcp_parse_task_id,
-            mcp_poll_task=mcp_poll_task,
-            mcp_download_file=mcp_download_file,
-            theme=sleep_theme, channel_name=sleep_channel,
-            image_gen_fn=image_gen_fn)
+    return _generate_sleep_thumbnail(
+        script, output_path,
+        mcp_call_tool=mcp_call_tool,
+        mcp_parse_task_id=mcp_parse_task_id,
+        mcp_poll_task=mcp_poll_task,
+        mcp_download_file=mcp_download_file,
+        theme=sleep_theme, channel_name=sleep_channel,
+        image_gen_fn=image_gen_fn)
 
-    prompt = _build_thumbnail_prompt(script, structure)
-
-    # If we have a char_scene reference, add instruction to match it
-    if char_scene_url:
-        prompt += "\n\nIMPORTANT: The characters' appearance, clothing, and hair MUST closely match the uploaded reference image. Use the reference image as the character design guide."
-
-    # Try AI generation with text baked in
-    if mcp_call_tool and mcp_parse_task_id and mcp_poll_task and mcp_download_file:
-        print("  [Thumbnail] Generating thumbnail with baked-in text via MCP...")
-        try:
-            gen_args = {
-                "prompt": prompt,
-                # frontier 高质量通道（~50 积分/张），须 confirm_cost=true 才真正建任务
-                "provider": "frontier",
-                "quality": "high",
-                "image_size": '{"width": 1280, "height": 720}',
-                "output_format": "jpeg",
-                "confirm_cost": True,
-            }
-            if char_scene_url:
-                gen_args["image_urls"] = char_scene_url
-                print(f"  [Thumbnail] Using char_scene reference: {char_scene_url[:60]}...")
-            result = mcp_call_tool("generate_image", gen_args)
-            task_id = mcp_parse_task_id(result)
-            if task_id:
-                data = mcp_poll_task(task_id, interval=10, max_wait=300)
-                url = data.get("url", "")
-                if url and mcp_download_file(url, output_path):
-                    size_kb = os.path.getsize(output_path) // 1024
-                    if size_kb > 10:
-                        print(f"  [Thumbnail] Saved (AI baked-in): {output_path} ({size_kb}KB)")
-                        return output_path
-                    else:
-                        print(f"  [Thumbnail] AI image too small ({size_kb}KB), falling back")
-                else:
-                    print("  [Thumbnail] AI generation returned no URL, falling back to Pillow")
-            else:
-                # 不再静默：打印原始响应文本便于定位（高成本确认提示/参数错误等）
-                raw = ""
-                for item in result.get("result", {}).get("content", []):
-                    if item.get("type") == "text":
-                        raw = str(item.get("text", ""))[:300].replace("\n", " ")
-                        break
-                print(f"  [Thumbnail] MCP 未返回任务 ID（响应: {raw}），falling back to Pillow")
-        except Exception as e:
-            print(f"  [Thumbnail] AI generation failed: {e}, falling back to Pillow")
-
-    # Fallback: Pillow text overlay on scene image
-    print("  [Thumbnail] Using Pillow fallback (text overlay on scene image)...")
-    return _pillow_fallback(script, scene_img, output_path, structure)
-
-
-def _pillow_fallback(script: dict, scene_img: str, output_path: str,
-                      structure: str) -> str:
-    """Pillow fallback: overlay text on scene image."""
-    from PIL import Image, ImageDraw, ImageFont
-
-    if not os.path.exists(scene_img):
-        print(f"  [Thumbnail] ERROR: No scene image at {scene_img}")
-        return None
-
-    bg = Image.open(scene_img).convert("RGBA").resize((THUMB_W, THUMB_H))
-
-    # Dark gradient on right side
-    overlay = Image.new("RGBA", (THUMB_W, THUMB_H), (0, 0, 0, 0))
-    ov_draw = ImageDraw.Draw(overlay)
-    for x in range(THUMB_W // 2, THUMB_W):
-        alpha = int((x - THUMB_W // 2) / (THUMB_W // 2) * 160)
-        ov_draw.line([(x, 0), (x, THUMB_H)], fill=(0, 0, 0, alpha))
-    ov_draw.rectangle([0, THUMB_H - 80, THUMB_W, THUMB_H], fill=(0, 0, 0, 200))
-    bg = Image.alpha_composite(bg, overlay)
-    draw = ImageDraw.Draw(bg)
-
-    title_en = script.get("title", "").upper() or "ENGLISH LISTENING"
-    title_zh = script.get("title_zh", script.get("intro_zh", ""))
-    # Large Chinese title: topic + "英文"
-    if title_zh and not title_zh.endswith("英文"):
-        title_zh_large = f"{title_zh}英文"
-    else:
-        title_zh_large = title_zh or "日常英語"
-    cefr = script.get("cefr", "A2")
-    subtitle = script.get("thumbnail_subtitle", "18句聽力練習")
-
-    STROKE = 8
-    MARGIN = 40
-
-    # English title (smaller, white, below Chinese title)
-    en_size = 56
-    en_font = ImageFont.truetype(FONT_EN, en_size)
-    while en_size > 24:
-        bbox = draw.textbbox((0, 0), title_en, font=en_font)
-        if (bbox[2] - bbox[0]) + STROKE * 2 <= THUMB_W // 2 - MARGIN:
-            break
-        en_size -= 2
-        en_font = ImageFont.truetype(FONT_EN, en_size)
-    bbox = draw.textbbox((0, 0), title_en, font=en_font)
-    en_w, en_h = bbox[2] - bbox[0], bbox[3] - bbox[1]
-    en_y = int(THUMB_H * 0.22)
-    draw.text((THUMB_W // 2 + (THUMB_W // 2 - en_w) // 2, en_y), title_en,
-              font=en_font, fill=(255, 255, 255, 255),
-              stroke_width=3, stroke_fill=(0, 0, 0, 255))
-
-    # Large Chinese title (biggest text on thumbnail, yellow + black stroke)
-    zh_stroke = 6
-    zh_size = 80
-    zh_font = ImageFont.truetype(FONT_ZH, zh_size)
-    while zh_size > 30:
-        bbox = draw.textbbox((0, 0), title_zh_large, font=zh_font)
-        if (bbox[2] - bbox[0]) + zh_stroke * 2 <= THUMB_W // 2 - MARGIN:
-            break
-        zh_size -= 2
-        zh_font = ImageFont.truetype(FONT_ZH, zh_size)
-    bbox = draw.textbbox((0, 0), title_zh_large, font=zh_font)
-    zh_w, zh_h = bbox[2] - bbox[0], bbox[3] - bbox[1]
-    zh_y = en_y + en_h + 10
-    draw.text((THUMB_W // 2 + (THUMB_W // 2 - zh_w) // 2, zh_y), title_zh_large,
-              font=zh_font, fill=(255, 220, 0, 255),
-              stroke_width=zh_stroke, stroke_fill=(0, 0, 0, 255))
-
-    # Subtitle (smallest, gold)
-    if subtitle:
-        sub_size = 36
-        sub_font = ImageFont.truetype(FONT_ZH, sub_size)
-        while sub_size > 18:
-            bbox = draw.textbbox((0, 0), subtitle, font=sub_font)
-            if (bbox[2] - bbox[0]) + 3 * 2 <= THUMB_W // 2 - MARGIN:
-                break
-            sub_size -= 2
-            sub_font = ImageFont.truetype(FONT_ZH, sub_size)
-        bbox = draw.textbbox((0, 0), subtitle, font=sub_font)
-        sub_w = bbox[2] - bbox[0]
-        draw.text((THUMB_W // 2 + (THUMB_W // 2 - sub_w) // 2, zh_y + zh_h + 10),
-                  subtitle, font=sub_font, fill=(255, 200, 80, 255),
-                  stroke_width=2, stroke_fill=(0, 0, 0, 255))
-
-    # CEFR badge
-    badge_r = 50
-    cx, cy = THUMB_W - badge_r - 30, badge_r + 30
-    draw.ellipse([cx - badge_r, cy - badge_r, cx + badge_r, cy + badge_r],
-                 fill=(220, 50, 50, 255), outline=(255, 255, 255, 255), width=3)
-    bfont = ImageFont.truetype(FONT_EN, 42)
-    bb = draw.textbbox((0, 0), cefr, font=bfont)
-    draw.text((cx - (bb[2] - bb[0]) // 2, cy - (bb[3] - bb[1]) // 2 - 2),
-              cefr, font=bfont, fill=(255, 255, 255, 255))
-
-    # Bottom bar
-    if structure == "story":
-        label = "English Listening Story"
-    elif structure == "quest":
-        label = "Slow Listening + Answer Task"
-    else:
-        label = "Listen + Repeat + Shadowing"
-    lfont = ImageFont.truetype(FONT_EN, 28)
-    lb = draw.textbbox((0, 0), label, font=lfont)
-    draw.text(((THUMB_W - (lb[2] - lb[0])) // 2, THUMB_H - 55),
-              label, font=lfont, fill=(255, 255, 255, 255))
-
-    bg.convert("RGB").save(output_path, "JPEG", quality=90)
-    print(f"  [Thumbnail] Saved (Pillow fallback): {output_path}")
-    return output_path
 
 
 # "⏱️ Chapters:" marker line + consecutive chapter timestamp lines (00:00 / 00:xx style)
@@ -581,55 +350,20 @@ def save_youtube_metadata(script: dict, timeline: list[dict],
     # Collect ordered chapter candidates (seconds, label) from the timeline.
     # YouTube chapter rules: the first chapter MUST start at 00:00 and every
     # chapter must span >= 10 seconds — candidates starting less than 10s
-    # after the previously kept one are dropped (e.g. quest's short hook_intro).
-    # story 章节：按对话 phase 首次出现切章（时间轴纯对话，seg.type 无区分度）
-    STORY_CHAPTER_LABELS = {
-        "plot": {"opening": "Opening", "setup": "Daily Life",
-                 "conflict": "Trouble", "twist": "Twist",
-                 "resolution": "Resolution", "finale": "Your Question"},
-        "chat": {"opening": "Opening", "activity": "Main Activity",
-                 "finale": "Your Question"},
-        "solo": {"opening": "Introduction", "body": "Main Content",
-                 "finale": "Your Question"},
+    # after the previously kept one are dropped.
+    # sleep 时间轴段类型 intro/pair/gap/outro：按类型取首现做三章
+    seg_labels = {
+        "intro": "Intro",
+        "pair": "Phrase Drills",
+        "outro": "Outro",
     }
-    if structure == "quest":
-        seg_labels = {
-            "welcome": "Welcome",
-            "hook_intro": "Intro · Listening Task",
-            "dialogue": "Slow Dialogue",
-            "outro": "Outro · Answer & CTA",
-        }
-    elif structure == "story":
-        seg_labels = {}
-    elif structure == "sleep":
-        # sleep 时间轴段类型 intro/pair/gap/outro：按类型取首现做三章
-        seg_labels = {
-            "intro": "Intro",
-            "pair": "Phrase Drills",
-            "outro": "Outro",
-        }
-    else:
-        seg_labels = {
-            "welcome": "Welcome & Hook",
-            "dialogue": "Immersive Dialogue",
-            "practice_intro": "Shadowing Practice",
-            "outro": "Outro",
-        }
 
     marks: list[tuple[float, str]] = []
     seen_types: set[str] = set()
     t_cursor = 0.0
-    story_phase_labels = STORY_CHAPTER_LABELS.get(
-        str(script.get("story_kind", "plot")), STORY_CHAPTER_LABELS["plot"])
     for seg in timeline:
         seg_type = seg.get("type", "")
-        if structure == "story":
-            # phase 首次出现即章节（opening 位于 00:00，天然满足首章规则）
-            ph = seg.get("phase", "")
-            if ph in story_phase_labels and ph not in seen_types:
-                seen_types.add(ph)
-                marks.append((t_cursor, story_phase_labels[ph]))
-        elif seg_type in seg_labels and seg_type not in seen_types:
+        if seg_type in seg_labels and seg_type not in seen_types:
             seen_types.add(seg_type)
             marks.append((t_cursor, seg_labels[seg_type]))
         t_cursor += seg.get("duration", 0)

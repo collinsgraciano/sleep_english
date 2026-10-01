@@ -123,12 +123,32 @@ def _entry_of(folder: str, script: dict, zh: str = "") -> dict:
             "lines": len(script.get("dialogue") or [])}
 
 
-def next_index(source: str) -> int:
-    """下一个可用编号：跨两个目录取最大值，守住「编号全局唯一」的约定。"""
-    lo = 101 if source == "hot" else 1
+def _planned_indexes() -> list[int]:
+    """本批已定稿、还没生成文件夹的编号（skill Step 1 的 _topics_batch.json，不入 git）。"""
+    path = AI_SCRIPTS_DIRS[1] / "_topics_batch.json"
+    if not path.exists():
+        return []
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return []
+    rows = data if isinstance(data, list) else (data.get("themes") or [])
+    out = []
+    for r in rows:
+        if isinstance(r, dict):
+            n = int(r.get("index") or 0) or _index_of(str(r.get("folder", "")))
+            if n > 0:
+                out.append(n)
+    return out
+
+
+def next_index() -> int:
+    """下一个可用编号：两个目录 + 本批清单一起取最大值，守住「编号全局唯一」。
+    不看本批清单的话，管理页「新增脚本」会抢走正在生成的那批号段
+    （skill 侧 list_used_topics.next_free_index 用同一套口径）。"""
     nums = [_index_of(p.name) for base in AI_SCRIPTS_DIRS if base.is_dir()
             for p in base.iterdir() if p.is_dir() and _INDEX_RE.match(p.name)]
-    return max([lo - 1] + nums) + 1
+    return max(nums + _planned_indexes() or [0]) + 1
 
 
 
@@ -284,7 +304,7 @@ def create_script(source: str, script: dict, index: int = 0) -> dict:
     if not topic:
         return {"ok": False, "error": "缺少主题名（topic）"}
     with _WRITE_LOCK:
-        idx = int(index) if index and int(index) > 0 else next_index(source)
+        idx = int(index) if index and int(index) > 0 else next_index()
         stem = slugify(topic)
         folder = f"{idx:03d}_{stem}"
         n = 2

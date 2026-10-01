@@ -1,19 +1,16 @@
-"""画面风格库：内置风格 + 自定义风格 CRUD + prompt 解析.
+"""画面风格库：内置风格 + prompt 解析。
 
-style_prompt 片段会被注入到图片/视频/姿势/缩略图的所有提示词中，
-保证整条管线（LLM → 图片 → 视频片段 → 缩略图）画面风格统一。
-自定义风格持久化在 web 项目的 configs/styles_custom.json。
+style_prompt 片段会被注入到图片/缩略图的所有提示词中，保证画面风格统一。
+若 web 项目存在 configs/styles_custom.json，其中的追加风格会被一并列出
+（只读；本项目已无自定义风格编辑入口）。
 """
 import json
-import os
-import re
 from pathlib import Path
 from typing import Any
 
 # web 项目 configs/ 目录（style_manager.py 位于 pipeline/，web 根在上一级）
 _WEB_ROOT = Path(__file__).parent.parent
 CUSTOM_STYLES_PATH = _WEB_ROOT / "configs" / "styles_custom.json"
-PREVIEW_DIR = _WEB_ROOT / "configs" / "style_previews"
 
 # 现有硬编码默认风格（pipeline.py 原文，保证 100% 等价）
 DEFAULT_STYLE_PROMPT = (
@@ -21,7 +18,6 @@ DEFAULT_STYLE_PROMPT = (
     "cel-shaded with thin clean black outline, "
     "vibrant saturated colors, smooth surfaces"
 )
-DEFAULT_STYLE_ID = "pixar3d"
 
 # 内置风格（builtin=true，不可编辑/删除）
 BUILTIN_STYLES: list[dict[str, Any]] = [
@@ -137,9 +133,6 @@ BUILTIN_STYLES: list[dict[str, Any]] = [
     },
 ]
 
-_BUILTIN_IDS = {s["id"] for s in BUILTIN_STYLES}
-_ID_RE = re.compile(r"^[a-z0-9_]{1,40}$")
-
 
 def _read_custom() -> list[dict[str, Any]]:
     if not CUSTOM_STYLES_PATH.exists():
@@ -149,13 +142,6 @@ def _read_custom() -> list[dict[str, Any]]:
         return data.get("styles", [])
     except (json.JSONDecodeError, OSError):
         return []
-
-
-def _write_custom(styles: list[dict[str, Any]]) -> None:
-    CUSTOM_STYLES_PATH.parent.mkdir(parents=True, exist_ok=True)
-    CUSTOM_STYLES_PATH.write_text(
-        json.dumps({"styles": styles}, ensure_ascii=False, indent=2),
-        encoding="utf-8")
 
 
 def list_styles() -> list[dict[str, Any]]:
@@ -174,50 +160,6 @@ def get_style(style_id: str) -> dict[str, Any] | None:
         if s["id"] == style_id:
             return s
     return None
-
-
-def save_custom_style(data: dict[str, Any]) -> dict[str, Any]:
-    """新建或更新自定义风格（按 id 匹配）。返回保存后的风格。"""
-    style_id = str(data.get("id", "")).strip()
-    if not _ID_RE.match(style_id):
-        raise ValueError("风格 ID 只能包含小写字母/数字/下划线，长度 1-40")
-    if style_id in _BUILTIN_IDS:
-        raise ValueError(f"ID '{style_id}' 与内置风格冲突")
-    style_prompt = str(data.get("style_prompt", "")).strip()
-    if not style_prompt:
-        raise ValueError("风格 prompt 不能为空")
-
-    style = {
-        "id": style_id,
-        "name": str(data.get("name", "")).strip() or style_id,
-        "name_en": str(data.get("name_en", "")).strip(),
-        "description": str(data.get("description", "")).strip(),
-        "style_prompt": style_prompt,
-        "thumbnail_hint": str(data.get("thumbnail_hint", "")).strip() or "custom-style",
-        "builtin": False,
-    }
-
-    styles = _read_custom()
-    for i, s in enumerate(styles):
-        if s["id"] == style_id:
-            # 更新：保留已有预览图字段
-            if s.get("preview"):
-                style["preview"] = s["preview"]
-            styles[i] = style
-            _write_custom(styles)
-            return style
-    styles.append(style)
-    _write_custom(styles)
-    return style
-
-
-def delete_custom_style(style_id: str) -> bool:
-    styles = _read_custom()
-    remaining = [s for s in styles if s["id"] != style_id]
-    if len(remaining) == len(styles):
-        return False
-    _write_custom(remaining)
-    return True
 
 
 def resolve_style_prompt(style_id: str | None) -> str:
@@ -250,7 +192,3 @@ def get_active_thumbnail_hint() -> str:
 def get_style_options() -> dict[str, str]:
     """id → 中文名（配置页下拉选项）。"""
     return {s["id"]: s.get("name", s["id"]) for s in list_styles()}
-
-
-def preview_path(style_id: str) -> Path:
-    return PREVIEW_DIR / f"{style_id}.png"

@@ -31,7 +31,6 @@ from ..channel_profiles import (
 )
 from ..config_manager import load_config
 from ..paths import CHANNEL_ASSETS_DIR
-from ..paths import CHANNEL_ASSETS_DIR
 from ..sse import sse_line as _sse, SSE_HEADERS as _SSE_HEADERS
 from .. import topics_ai
 from .channel_factory import _ID_RE as _FAV_ID_RE, _load_favorites
