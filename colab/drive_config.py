@@ -186,8 +186,9 @@ def main() -> int:
     if not mounted:
         log("!! 没挂载 Drive：本次会话的配置改动**不会**保留到下回开机。")
         log("!! 想让配置持久化，先跑 notebook 的 Drive 挂载格（drive.mount），再重跑本格。")
-        # 令牌仍然生成，保证 Web 控制台可用（只是每次换域名也换令牌）
-        token, _ = load_or_create_token(Path("/content/colab_access_token.txt"))
+        # 令牌仍然生成，保证 Web 控制台可用（只是每次换域名也换令牌）；
+        # 落点与 ENV_FILE 同目录（Colab 上就是 /content/colab_access_token.txt）
+        token, _ = load_or_create_token(ENV_FILE.parent / "colab_access_token.txt")
         set_env_var(ENV_FILE, "COLAB_ACCESS_TOKEN", token)
         set_env_var(ENV_FILE, "COLAB_CONFIG_PERSISTED", "0")
         log(f"访问令牌（临时）…{token[-4:]}")
