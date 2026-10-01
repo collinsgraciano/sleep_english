@@ -1,0 +1,10 @@
+# colab/ 的脚本直接跑在 Linux（Colab）上：强制 LF，别让 Windows 的
+# core.autocrlf 把 \r 带进仓库 —— 带 \r 的 shell 脚本在 Linux 上会报
+# "bad interpreter" / 命令末尾多一个字符而失败。
+*.sh      text eol=lf
+*.py      text eol=lf
+*.ipynb   text eol=lf
+*.md      text eol=lf
+*.json    text eol=lf
+*.txt     text eol=lf
+.gitattributes text eol=lf

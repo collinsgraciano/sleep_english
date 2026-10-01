@@ -50,7 +50,7 @@ if ! "$PY" -c "import en_core_web_sm" >/dev/null 2>&1; then
     pip_install "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl"
 fi
 
-echo "==> [4/4] cloudflared（把本地 8766 变成公网 URL）"
+echo "==> [4/4] cloudflared（把本地 8766 变成公网 URL —— Cloudflare 免费域名）"
 if ! command -v cloudflared >/dev/null 2>&1; then
   case "$(uname -m)" in
     aarch64 | arm64) CF_ARCH=arm64 ;;
@@ -102,8 +102,14 @@ print(f"  {'ok  ' if os.path.exists(nunito) else 'FAIL'} 卡片英文字体 {nun
 
 for d in ("ai_scripts", "ai_scripts_hot"):
     n = len([x for x in os.listdir(d) if not x.startswith("_")]) if os.path.isdir(d) else 0
-    hint = "" if n else "  ← 成品脚本已入库，克隆不完整就重跑 notebook 第 1 格（私有仓库要 GITHUB_TOKEN）"
+    hint = "" if n else "  ← 不在 Git 里，需要从 Drive 同步（见 notebook 对应单元格）"
     print(f"  预生成脚本 {d}: {n} 个{hint}")
+
+cfg = os.path.join("configs", "mode_sleep.json")
+if os.path.islink("configs"):
+    print(f"  ok   configs/ -> {os.readlink('configs')}（配置持久化在 Drive）")
+elif os.path.exists(cfg):
+    print("  warn configs/ 不是 symlink —— 本会话的配置改动不会保留到下回开机")
 PYCHECK
 
 echo "==> setup.sh 完成"

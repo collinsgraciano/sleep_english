@@ -4,8 +4,9 @@
 返回整份配置（含 gemini_api_key / wbk_api_key / mcp_tokens），任何拿到 URL 的人都能
 读走密钥、并用你的额度跑视频。
 
-用法：uvicorn secure_gate:app（serve.sh 已封装）。令牌取自环境变量 COLAB_ACCESS_TOKEN，
-为空则闸门放行（等于本地直连，不挂隧道时用）。
+用法：uvicorn secure_gate:app（colab/serve.sh 已封装）。令牌取自环境变量
+COLAB_ACCESS_TOKEN（由 colab/drive_config.py 生成并持久化在 Drive 的 state/ 下，
+所以域名每次换、令牌不变）。令牌为空则闸门放行（等于本地直连，不挂隧道时用）。
 浏览器首次访问 serve.sh 打印的 `<url>/?ct=<token>`，闸门种下 cookie，之后页面里的
 /api 请求自动带 cookie，前端无需任何改动。
 """
