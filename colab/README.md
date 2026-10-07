@@ -91,7 +91,7 @@ MyDrive/<DRIVE_DIR>/                 # DRIVE_DIR 默认 sleep_english_colab
 | `drive` | notebook | 挂 Drive，写 `/content/colab_env.sh` |
 | `config` | `colab/drive_config.py` + `colab/colab_config.py` | 配置播种/链接到 Drive、恢复运行状态、访问令牌、建 `kokoro/`+`scripts/`、从 Drive 拉预生成脚本；平台归一化（输出目录/主题库/Kokoro/关 4K/关 BGM/清 `H:\` 路径）+ 从 Secrets 刷新 LLM 密钥 |
 | `voices` | `colab/kokoro_voices.py` | 预热模型 + Drive→本地补缺音色 + 补齐缺失音色 + 生成全部试听 mp3 + 本地→Drive 回写（幂等） |
-| `console` | `colab/serve.sh` | uvicorn（`secure_gate:app` 令牌闸门）+ cloudflared 隧道 → 打印带令牌链接 |
+| `console` | `colab/serve.sh` | uvicorn（`secure_gate:app` 令牌闸门）+ cloudflared 隧道 → 渲染**可点击**的带令牌链接（并落 `public_url.txt` / Drive `state/last_public_url.txt`） |
 | `smoke` / `full` | notebook | 可选的命令行出片（10 组冒烟 / 参数区组数），中断重跑走文件级续传 |
 | `archive` | `colab/archive_to_drive.py` | 成品归档到 Drive + 状态回写（`COLAB_AUTO_ARCHIVE=1` 时控制台跑完也会自动归档） |
 | `ops` | notebook | 日志尾巴、成品清单、可选停服务 |
@@ -165,6 +165,11 @@ python3 colab/scripts_sync.py --pull
 - 免费、不需要 Cloudflare 账号，每次开机拿到一个**全新的** `https://xxxx.trycloudflare.com`
 - 域名每次都换，但**访问令牌不变**（存在 Drive 的 `state/access_token.txt`），
   所以只需要把新域名接到 `?ct=令牌` 上重新打开/收藏
+- **notebook 会把链接渲染成可点击入口**（蓝色「▶ 点击打开 Web 控制台」，下面同时给一条
+  可复制的纯文本链接）；`serve.sh` 也会把完整链接落到
+  `/content/colab_logs/public_url.txt` 与 Drive 的 `<Drive>/state/last_public_url.txt`，
+  所以出片跑完的收尾（`ops` 步）会**再显示一次**入口，不用担心往上翻找；
+  分格版在启动格后面有一格专门用来渲染这个链接
 
 **可选：named tunnel（固定域名）**
 

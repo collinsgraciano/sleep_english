@@ -92,9 +92,19 @@ fi
 echo
 echo "=============================================================="
 if [ -n "$PUBLIC_URL" ]; then
+  # 把「带令牌的完整链接」落两个文件，并单独打一行 PUBLIC_URL_LINK=…：
+  #   - notebook 用它渲染成**可点击**的入口（不用手动拼 ?ct=）
+  #   - Drive 上留一份，重连后能找回上次的域名（域名每次换、令牌不变）
+  PUBLIC_LINK="${PUBLIC_URL}/?ct=${COLAB_ACCESS_TOKEN}"
+  printf '%s\n' "$PUBLIC_LINK" > "$LOG_DIR/public_url.txt" 2>/dev/null || true
+  if [ -n "${COLAB_STATE_DIR:-}" ] && [ -d "${COLAB_STATE_DIR}" ]; then
+    printf '%s\n' "$PUBLIC_LINK" > "${COLAB_STATE_DIR}/last_public_url.txt" 2>/dev/null || true
+  fi
+  echo "PUBLIC_URL_LINK=${PUBLIC_LINK}"
+  echo
   echo " Web 控制台已就绪，浏览器打开："
   echo
-  echo "   ${PUBLIC_URL}/?ct=${COLAB_ACCESS_TOKEN}"
+  echo "   ${PUBLIC_LINK}"
   echo
 else
   echo " 没拿到公网 URL（cloudflared 日志见 $LOG_DIR/cloudflared.log）"
