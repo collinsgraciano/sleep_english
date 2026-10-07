@@ -285,6 +285,16 @@ def compose_sleep(work_dir: str, timeline: list[dict], script: dict,
     work = Path(work_dir)
     vid_dir = work / "videos"
     vid_dir.mkdir(parents=True, exist_ok=True)
+    # 音量偏移落日志：便于在运行日志里确认「片头/片尾音量偏移(dB)」确实
+    # 送到了合成阶段（末级两遍线性归一按整片恒定增益，偏移不会被抹平）
+    if intro_volume_db:
+        print(f"  [Sleep] 片头音量偏移: {intro_volume_db:+.2f} dB"
+              + ("（作用对象：绑定片头库视频自带音轨）" if intro_video
+                 else "（作用对象：默认片头卡片 TTS 播报）"))
+    if outro_volume_db:
+        print(f"  [Sleep] 片尾音量偏移: {outro_volume_db:+.2f} dB"
+              + ("（作用对象：绑定片尾库视频自带音轨）" if outro_video
+                 else "（作用对象：默认片尾卡片 TTS 播报）"))
     tmp_dir = work / "tmp_sleep_blocks"
     shutil.rmtree(tmp_dir, ignore_errors=True)
     (tmp_dir / "blocks").mkdir(parents=True, exist_ok=True)

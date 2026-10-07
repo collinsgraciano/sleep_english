@@ -1,0 +1,2505 @@
+{
+  "title": "Everyday Phrases — Asking About Allergies",
+  "title_zh": "問過敏原",
+  "scene_zh": "點餐 · 情境對話",
+  "title_quote": "Hi, do you have a table?",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】🥜 實用「問過敏原」必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — Asking About Allergies",
+  "youtube_description": "睡著學英文！這部影片收錄實用「問過敏原」情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫）。場景是點餐：帶著過敏去吃飯：先問服務生哪幾道有花生與奶製品，發現招牌醬含堅果就換菜，請廚房換鍋與換醬，上菜時再確認一次才動筷。400 句循環聽，A2 程度，零基礎也能跟著開口說。#英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical 'Asking About Allergies' phrase pairs (each pair: male normal speed → female slow speed → combined dialogue). Eating out with an allergy: asking which dishes contain nuts or dairy, swapping the signature dish, asking for a clean pan and a different sauce, and double-checking before the first bite. 400 lines on repeat, A2 level, easy to repeat out loud even from zero.",
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "Asking About Allergies",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "食物過敏",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Food & Drink",
+  "youtube_tags": [
+    "問過敏原",
+    "Asking About Allergies",
+    "睡前英文聽力",
+    "英文聽力",
+    "睡前英文",
+    "400句循環聽",
+    "Sleep learning English",
+    "English listening practice",
+    "A2 English",
+    "ESL listening",
+    "English conversation",
+    "everyday English phrases",
+    "學英文 睡覺",
+    "過敏 英文",
+    "food allergy English"
+  ],
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "Hi, do you have a table?",
+      "phonetic": "/haɪ, du ju hæv ə ˈteɪbəl?/",
+      "zh": "你好，請問有位子嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, this way please.",
+      "phonetic": "/jɛs, ðɪs weɪ pliz./",
+      "zh": "有，這邊請。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks, we are two people.",
+      "phonetic": "/θæŋks, wi ɑr tu ˈpipəl./",
+      "zh": "謝謝，我們兩個人。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here is a small table.",
+      "phonetic": "/hɪr ɪz ə smɔl ˈteɪbəl./",
+      "zh": "這裡有一張小桌子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Kevin, can I ask something first?",
+      "phonetic": "/ˈkɛvɪn, kæn aɪ æsk ˈsʌmθɪŋ fɜrst?/",
+      "zh": "凱文，我可以先問一件事嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Of course, go ahead Amy.",
+      "phonetic": "/əv kɔrs, ɡoʊ əˈhɛd ˈeɪmi./",
+      "zh": "當然，艾美請說。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I have a food allergy.",
+      "phonetic": "/aɪ hæv ə fud ˈælɚdʒi./",
+      "zh": "我有食物過敏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thanks for telling me that.",
+      "phonetic": "/θæŋks fɚ ˈtɛlɪŋ mi ðæt./",
+      "zh": "謝謝你告訴我。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Peanuts are really bad for me.",
+      "phonetic": "/ˈpiˌnʌts ɑr ˈrɪli bæd fɚ mi./",
+      "zh": "花生對我真的很危險。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I understand, peanuts are serious.",
+      "phonetic": "/aɪ ˌʌndərˈstænd ˈpiˌnʌts ər ˈsɪriəs/",
+      "zh": "我了解，花生很嚴重。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Milk is a problem too.",
+      "phonetic": "/mɪlk ɪz ə ˈprɑbləm tu./",
+      "zh": "牛奶也是個問題。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So no milk and no cheese.",
+      "phonetic": "/soʊ noʊ mɪlk ænd noʊ tʃiz./",
+      "zh": "所以不能有牛奶和起司。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Right, and no butter either.",
+      "phonetic": "/raɪt, ænd noʊ ˈbʌtɚ ˈiðɚ./",
+      "zh": "對，也不能有奶油。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Okay, I will write that down.",
+      "phonetic": "/oʊˈkeɪ, aɪ wɪl raɪt ðæt daʊn./",
+      "zh": "好，我會記下來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Could there be peanut in your soup?",
+      "phonetic": "/kʊd ðɛr bi ˈpiˌnʌt ɪn jʊr suːp?/",
+      "zh": "你們的湯裡可能有花生嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, the soup is very safe.",
+      "phonetic": "/noʊ, ðə sup ɪz ˈvɛri seɪf./",
+      "zh": "沒有，這湯很安全。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the soup have any milk?",
+      "phonetic": "/dʌz ðə sup hæv ˈɛni mɪlk?/",
+      "zh": "這湯有加牛奶嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, it is just clear broth.",
+      "phonetic": "/noʊ, ɪt ɪz dʒʌst klɪr brɔθ./",
+      "zh": "沒有，它只是清湯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Great, that sounds safe for me.",
+      "phonetic": "/greɪt, ðæt saʊndz seɪf fɚ mi./",
+      "zh": "太好了，那聽起來我可以喝。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, many guests order that soup.",
+      "phonetic": "/jɛs, ˈmɛni gɛsts ˈɔrdɚ ðæt sup./",
+      "zh": "是啊，很多客人點那個湯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "May I see the menu please?",
+      "phonetic": "/meɪ aɪ si ðə ˈmɛnju pliz?/",
+      "zh": "可以給我菜單嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, here is our menu.",
+      "phonetic": "/ʃʊr, hɪr ɪz aʊr ˈmɛnju./",
+      "zh": "當然，這是我們的菜單。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which dishes have no peanuts?",
+      "phonetic": "/wɪtʃ ˈdɪʃɪz hæv noʊ ˈpiˌnʌts?/",
+      "zh": "哪些菜沒有花生？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The fish and the chicken are fine.",
+      "phonetic": "/ðə fɪʃ ænd ðə ˈtʃɪkɪn ɑr faɪn./",
+      "zh": "魚和雞肉都沒問題。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What about the noodles with sauce?",
+      "phonetic": "/wʌt əˈbaʊt ðə ˈnudəlz wɪð sɔs?/",
+      "zh": "那醬拌麵呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I need to check that sauce.",
+      "phonetic": "/aɪ nid tu tʃɛk ðæt sɔs./",
+      "zh": "我需要確認那個醬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please check, it is important.",
+      "phonetic": "/pliz tʃɛk, ɪt ɪz ɪmˈpɔrtənt./",
+      "zh": "請確認一下，這很重要。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I know, I will ask the kitchen.",
+      "phonetic": "/aɪ noʊ, aɪ wɪl æsk ðə ˈkɪtʃɪn./",
+      "zh": "我知道，我會問廚房。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Also, is the bread made here?",
+      "phonetic": "/ˈɔlsoʊ, ɪz ðə brɛd meɪd hɪr?/",
+      "zh": "另外，麵包是這裡做的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, we bake it every morning.",
+      "phonetic": "/jɛs, wi beɪk ɪt ˈɛvri ˈmɔrnɪŋ./",
+      "zh": "是，我們每天早上烤。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the bread have any butter?",
+      "phonetic": "/dʌz ðə brɛd hæv ˈɛni ˈbʌtɚ?/",
+      "zh": "麵包裡有奶油嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, but the butter is separate.",
+      "phonetic": "/noʊ bʌt ðə ˈbʌtər ɪz ˈsɛpərət/",
+      "zh": "沒有，但奶油是另外給的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then please leave the butter out.",
+      "phonetic": "/ðɛn pliz liv ðə ˈbʌtɚ aʊt./",
+      "zh": "那請不要附奶油。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Fine, I will tell the kitchen.",
+      "phonetic": "/faɪn, aɪ wɪl tɛl ðə ˈkɪtʃɪn./",
+      "zh": "好，我會告訴廚房。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "And what drinks do you have?",
+      "phonetic": "/ænd wʌt drɪŋks du ju hæv?/",
+      "zh": "那你們有什麼飲料？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We have water, tea and juice.",
+      "phonetic": "/wi hæv ˈwɔtɚ, ti ænd dʒus./",
+      "zh": "我們有水、茶和果汁。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Maybe the juice has milk in it?",
+      "phonetic": "/ˈmeɪbi ðə dʒuːs hæz mɪlk ɪn ɪt?/",
+      "zh": "果汁裡也許加了牛奶？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, our juice is only fruit.",
+      "phonetic": "/noʊ, aʊr dʒus ɪz ˈoʊnli frut./",
+      "zh": "沒有，我們的果汁只有水果。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Perfect, I will take the juice.",
+      "phonetic": "/ˈpɜrfɪkt, aɪ wɪl teɪk ðə dʒus./",
+      "zh": "太好了，我要果汁。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, and for your friend?",
+      "phonetic": "/gʊd, ænd fɚ jʊr frɛnd?/",
+      "zh": "好，那你的朋友呢？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "He will have the green tea.",
+      "phonetic": "/hi wɪl hæv ðə grin ti./",
+      "zh": "他要綠茶。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One juice and one green tea.",
+      "phonetic": "/wʌn dʒus ænd wʌn grin ti./",
+      "zh": "一杯果汁和一杯綠茶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you cook with peanut oil?",
+      "phonetic": "/du ju kʊk wɪð ˈpiˌnʌt ɔɪl?/",
+      "zh": "你們用花生油煮菜嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, we use vegetable oil here.",
+      "phonetic": "/noʊ, wi juz ˈvɛdʒtəbəl ɔɪl hɪr./",
+      "zh": "沒有，我們這裡用植物油。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That is good to know.",
+      "phonetic": "/ðæt ɪz gʊd tu noʊ./",
+      "zh": "知道這個很好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Many guests ask me that too.",
+      "phonetic": "/ˈmɛni gɛsts æsk mi ðæt tu./",
+      "zh": "很多客人也問我這個。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which dish is special tonight?",
+      "phonetic": "/wɪtʃ dɪʃ ɪz ˈspɛʃəl təˈnaɪt?/",
+      "zh": "今晚哪一道菜是特別的？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The chef made a chicken dish.",
+      "phonetic": "/ðə ʃɛf meɪd ə ˈtʃɪkɪn dɪʃ/",
+      "zh": "主廚做了一道雞肉料理。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does that chicken dish have nuts?",
+      "phonetic": "/dʌz ðæt ˈtʃɪkɪn dɪʃ hæv nʌts?/",
+      "zh": "那道雞肉料理有堅果嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let me look at the recipe.",
+      "phonetic": "/lɛt mi lʊk æt ðə ˈrɛsəpi./",
+      "zh": "讓我看看食譜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So, what does the recipe say?",
+      "phonetic": "/soʊ, wʌt dʌz ðə ˈrɛsəpi seɪ?/",
+      "zh": "所以食譜上寫什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It has nuts in the sauce.",
+      "phonetic": "/ɪt hæv nʌts ɪn ðə sɔs./",
+      "zh": "它的醬裡面有堅果。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Oh no, that is a problem.",
+      "phonetic": "/oʊ noʊ, ðæt ɪz ə ˈprɑbləm./",
+      "zh": "喔不，那就有問題了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I am sorry, I just found out.",
+      "phonetic": "/aɪ æm ˈsɑri, aɪ dʒʌst faʊnd aʊt./",
+      "zh": "抱歉，我也是剛發現。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can the chef leave the sauce out?",
+      "phonetic": "/kæn ðə ʃɛf liv ðə sɔs aʊt?/",
+      "zh": "主廚可以不要加那個醬嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, he can cook it plain.",
+      "phonetic": "/jɛs, hi kæn kʊk ɪt pleɪn./",
+      "zh": "可以，他可以做成原味的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does plain mean no milk either?",
+      "phonetic": "/dʌz pleɪn min noʊ mɪlk ˈiðɚ?/",
+      "zh": "原味也表示沒有牛奶嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, only salt and pepper.",
+      "phonetic": "/jɛs, ˈoʊnli sɔlt ænd ˈpɛpɚ./",
+      "zh": "是，只有鹽和胡椒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then I would like that.",
+      "phonetic": "/ðɛn aɪ wʊd laɪk ðæt./",
+      "zh": "那我要那個。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good choice, it is very light.",
+      "phonetic": "/gʊd tʃɔɪs, ɪt ɪz ˈvɛri laɪt./",
+      "zh": "好選擇，它很清淡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What comes with the chicken?",
+      "phonetic": "/wʌt kʌmz wɪð ðə ˈtʃɪkɪn?/",
+      "zh": "雞肉附什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rice and some fresh vegetables.",
+      "phonetic": "/raɪs ænd sʌm frɛʃ ˈvɛdʒtəbəlz./",
+      "zh": "白飯和一些新鮮蔬菜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Could the vegetables have butter on them?",
+      "phonetic": "/kʊd ðə ˈvɛdʒtəbəlz hæv ˈbʌtər ɑn ðɛm?/",
+      "zh": "蔬菜上可能淋了奶油嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Usually yes, but we can skip it.",
+      "phonetic": "/ˈjuʒuəli jɛs, bʌt wi kæn skɪp ɪt./",
+      "zh": "通常有，但我們可以不加。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please skip the butter tonight.",
+      "phonetic": "/pliz skɪp ðə ˈbʌtɚ təˈnaɪt./",
+      "zh": "今晚請不要加奶油。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No problem, I noted that.",
+      "phonetic": "/noʊ ˈprɑbləm, aɪ ˈnoʊtɪd ðæt./",
+      "zh": "沒問題，我記下了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have any dairy free dessert?",
+      "phonetic": "/du ju hæv ˈɛni ˈdɛri fri dɪˈzɜrt?/",
+      "zh": "你們有無乳製品的甜點嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We have fruit and rice pudding.",
+      "phonetic": "/wi hæv frut ænd raɪs ˈpʊdɪŋ./",
+      "zh": "我們有水果和米布丁。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the rice pudding use milk?",
+      "phonetic": "/dʌz ðə raɪs ˈpʊdɪŋ juz mɪlk?/",
+      "zh": "米布丁有沒有加牛奶？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, so the fruit is safer.",
+      "phonetic": "/jɛs, soʊ ðə frut ɪz ˈseɪfɚ./",
+      "zh": "是，所以水果比較安全。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Okay, I will take the fruit.",
+      "phonetic": "/oʊˈkeɪ, aɪ wɪl teɪk ðə frut./",
+      "zh": "好，那我要水果。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, it comes with honey.",
+      "phonetic": "/gʊd, ɪt kʌmz wɪð ˈhʌni./",
+      "zh": "好，它會附蜂蜜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Honey is fine for me.",
+      "phonetic": "/ˈhʌni ɪz faɪn fɚ mi./",
+      "zh": "蜂蜜我可以。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great, I will note that too.",
+      "phonetic": "/ɡreɪt aɪ wɪl noʊt ðæt tu/",
+      "zh": "太好了，我也會記下來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you fry food in the kitchen?",
+      "phonetic": "/du ju fraɪ fud ɪn ðə ˈkɪtʃɪn?/",
+      "zh": "你們廚房會油炸食物嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, we fry the fish sometimes.",
+      "phonetic": "/jɛs, wi fraɪ ðə fɪʃ ˈsʌmˌtaɪmz./",
+      "zh": "會，我們有時炸魚。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Could the oil be shared with peanuts?",
+      "phonetic": "/kʊd ði ɔɪl bi ʃɛrd wɪð ˈpiˌnʌts?/",
+      "zh": "那個油會不會跟花生共用？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, we have two fryers.",
+      "phonetic": "/noʊ, wi hæv tu ˈfraɪɚz./",
+      "zh": "沒有，我們有兩個油炸鍋。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That makes me feel better.",
+      "phonetic": "/ðæt meɪks mi fil ˈbɛtɚ./",
+      "zh": "這讓我放心一點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We are careful with allergies here.",
+      "phonetic": "/wi ɑr ˈkɛrfəl wɪð ˈælɚdʒiz hɪr./",
+      "zh": "我們這裡對過敏很小心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks, that is really nice.",
+      "phonetic": "/θæŋks, ðæt ɪz ˈrɪli naɪs./",
+      "zh": "謝謝，那真的很好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Your health comes before the food.",
+      "phonetic": "/jʊr hɛlθ kʌmz bɪˈfɔr ðə fud./",
+      "zh": "你的健康比食物重要。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "May I also get some rice?",
+      "phonetic": "/meɪ aɪ ˈɔlsoʊ gɛt sʌm raɪs?/",
+      "zh": "我也可以要一些白飯嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, one bowl of rice.",
+      "phonetic": "/jɛs, wʌn boʊl əv raɪs./",
+      "zh": "好，一碗白飯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "And my friend wants the fish.",
+      "phonetic": "/ænd maɪ frɛnd wɑnts ðə fɪʃ./",
+      "zh": "我朋友要魚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, the fish has no nuts.",
+      "phonetic": "/gʊd, ðə fɪʃ hæv noʊ nʌts./",
+      "zh": "好，魚沒有堅果。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the fish come with cream sauce?",
+      "phonetic": "/dʌz ðə fɪʃ kʌm wɪð krim sɔs?/",
+      "zh": "魚會附奶油醬嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, it comes with lemon.",
+      "phonetic": "/noʊ, ɪt kʌmz wɪð ˈlɛmən./",
+      "zh": "不會，它附檸檬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Lemon is great for him.",
+      "phonetic": "/ˈlɛmən ɪz greɪt fɚ hɪm./",
+      "zh": "檸檬對他很好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then I will send your order.",
+      "phonetic": "/ðɛn aɪ wɪl sɛnd jʊr ˈɔrdɚ./",
+      "zh": "那我送出你們的點單。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wait, one more question please.",
+      "phonetic": "/weɪt, wʌn mɔr ˈkwɛstʃən pliz./",
+      "zh": "等一下，請再讓我問一個問題。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, ask me anything.",
+      "phonetic": "/ʃʊr, æsk mi ˈɛniˌθɪŋ./",
+      "zh": "當然，什麼都可以問。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the salad dressing safe for me?",
+      "phonetic": "/ɪz ðə ˈsæləd ˈdrɛsɪŋ seɪf fɔr mi/",
+      "zh": "沙拉醬我能吃嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It has yogurt, so maybe not.",
+      "phonetic": "/ɪt hæv ˈjoʊgɚt, soʊ ˈmeɪbi nɑt./",
+      "zh": "它有優格，所以可能不行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then no salad for me.",
+      "phonetic": "/ðɛn noʊ ˈsæləd fɚ mi./",
+      "zh": "那我不要沙拉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can use oil and vinegar.",
+      "phonetic": "/wi kæn juz ɔɪl ænd ˈvɪnəgɚ./",
+      "zh": "我們可以用油和醋。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That sounds perfect, thank you.",
+      "phonetic": "/ðæt saʊndz ˈpɜrfɪkt, θæŋk ju./",
+      "zh": "那聽起來很完美，謝謝你。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will bring your drinks now.",
+      "phonetic": "/aɪ wɪl brɪŋ jʊr drɪŋks naʊ./",
+      "zh": "我現在去拿你們的飲料。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Could your green tea have milk?",
+      "phonetic": "/kʊd jʊr ɡrin ti hæv mɪlk?/",
+      "zh": "你們的綠茶會不會加牛奶？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, it is only green tea.",
+      "phonetic": "/noʊ ɪt ɪz ˈoʊnli ɡrin ti/",
+      "zh": "沒有，它只是綠茶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Kevin, are the drinks coming soon?",
+      "phonetic": "/ˈkɛvɪn, ɑr ðə drɪŋks ˈkʌmɪŋ sun?/",
+      "zh": "凱文，飲料快來了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, but I have bad news.",
+      "phonetic": "/jɛs, bʌt aɪ hæv bæd nuz./",
+      "zh": "快了，但我有個壞消息。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Bad news about the chicken?",
+      "phonetic": "/bæd nuz əˈbaʊt ðə ˈtʃɪkɪn?/",
+      "zh": "關於雞肉的壞消息嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I asked the kitchen about it.",
+      "phonetic": "/aɪ æskt ðə ˈkɪtʃɪn əˈbaʊt ɪt./",
+      "zh": "我問過廚房了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "And what did the chef say?",
+      "phonetic": "/ænd wʌt dɪd ðə ʃɛf seɪ?/",
+      "zh": "主廚怎麼說？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The chicken sits in our sauce.",
+      "phonetic": "/ðə ˈtʃɪkɪn sɪts ɪn aʊr sɔs./",
+      "zh": "雞肉會泡在我們的醬裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which sauce do you mean?",
+      "phonetic": "/wɪtʃ sɔs du ju min?/",
+      "zh": "你說的是哪一種醬？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Our house sauce, the signature one.",
+      "phonetic": "/aʊr haʊs sɔs, ðə ˈsɪɡnətʃər wʌn./",
+      "zh": "我們的招牌醬，就是招牌菜那個。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the house sauce have peanut?",
+      "phonetic": "/dʌz ðə haʊs sɔs hæv ˈpiˌnʌt?/",
+      "zh": "招牌醬裡有花生嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, and it is made every morning.",
+      "phonetic": "/jɛs, ænd ɪt ɪz meɪd ˈɛvri ˈmɔrnɪŋ./",
+      "zh": "有，而且每天早上都會做。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So the chicken is not safe.",
+      "phonetic": "/soʊ ðə ˈtʃɪkɪn ɪz nɑt seɪf./",
+      "zh": "所以雞肉不安全。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Right, the marinade has peanuts inside.",
+      "phonetic": "/raɪt, ðə ˈmɛrəˌneɪd hæv ˈpiˌnʌts ɪnˈsaɪd./",
+      "zh": "對，醃料裡面有花生。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then why did you say plain?",
+      "phonetic": "/ðɛn waɪ dɪd ju seɪ pleɪn?/",
+      "zh": "那你為什麼說原味？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I only read the recipe first.",
+      "phonetic": "/aɪ ˈoʊnli rid ðə ˈrɛsəpi fɜrst./",
+      "zh": "我剛才只看了食譜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I see, so the recipe was wrong?",
+      "phonetic": "/aɪ si, soʊ ðə ˈrɛsəpi wʌz rɔŋ?/",
+      "zh": "了解，所以食譜寫錯了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The recipe forgot the marinade step.",
+      "phonetic": "/ðə ˈrɛsəpi fərˈɡɑt ðə ˈmɛrəˌneɪd stɛp./",
+      "zh": "食譜漏掉了醃製那一步。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That is a real problem for me.",
+      "phonetic": "/ðæt ɪz ə ril ˈprɑbləm fɚ mi./",
+      "zh": "那對我真是個問題。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I am very sorry about that.",
+      "phonetic": "/aɪ æm ˈvɛri ˈsɑri əˈbaʊt ðæt./",
+      "zh": "我真的很抱歉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we cancel the chicken dish?",
+      "phonetic": "/kæn wi ˈkænsəl ðə ˈtʃɪkɪn dɪʃ?/",
+      "zh": "我們可以取消雞肉那道菜嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, I stopped it already.",
+      "phonetic": "/jɛs, aɪ stɑpt ɪt ɔlˈrɛdi./",
+      "zh": "可以，我已經停掉了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks, that is a relief.",
+      "phonetic": "/θæŋks ðæt ɪz ə rɪˈlif/",
+      "zh": "謝謝，這樣我就放心了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is what we are here for.",
+      "phonetic": "/ðæt ɪz wʌt wi ər hɪr fɔr/",
+      "zh": "這是我們應該做的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So which dishes use that sauce?",
+      "phonetic": "/soʊ wɪtʃ ˈdɪʃɪz juz ðæt sɔs?/",
+      "zh": "那哪些菜會用那個醬？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The noodles and the beef use it.",
+      "phonetic": "/ðə ˈnudəlz ænd ðə bif juz ɪt./",
+      "zh": "麵和牛肉都會用到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "And the fish does not use it?",
+      "phonetic": "/ænd ðə fɪʃ dʌz nɑt juz ɪt?/",
+      "zh": "那魚不會用到嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Correct, the fish has lemon only.",
+      "phonetic": "/kəˈrɛkt, ðə fɪʃ hæv ˈlɛmən ˈoʊnli./",
+      "zh": "對，魚只有檸檬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good, my friend chose well.",
+      "phonetic": "/gʊd, maɪ frɛnd tʃoʊz wɛl./",
+      "zh": "很好，我朋友選對了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "He did, the fish is simple.",
+      "phonetic": "/hi dɪd, ðə fɪʃ ɪz ˈsɪmpəl./",
+      "zh": "是啊，魚很簡單。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So what can I eat tonight?",
+      "phonetic": "/soʊ wʌt kæn aɪ it təˈnaɪt?/",
+      "zh": "那我今晚能吃什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The fish, the rice and vegetables.",
+      "phonetic": "/ðə fɪʃ, ðə raɪs ænd ˈvɛdʒtəbəlz./",
+      "zh": "魚、白飯和蔬菜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Maybe the vegetable sauce is special too?",
+      "phonetic": "/ˈmeɪbi ðə ˈvɛdʒtəbəl sɔs ɪz ˈspɛʃəl tu?/",
+      "zh": "蔬菜的醬說不定也是特製的？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, the vegetables are steamed plain.",
+      "phonetic": "/noʊ, ðə ˈvɛdʒtəbəlz ɑr stimd pleɪn./",
+      "zh": "不是，蔬菜是清蒸的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then maybe I will take the fish.",
+      "phonetic": "/ðɛn ˈmeɪbi aɪ wɪl teɪk ðə fɪʃ./",
+      "zh": "那我可能要點魚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is a safe and easy choice.",
+      "phonetic": "/ðæt ɪz ə seɪf ænd ˈizi tʃɔɪs./",
+      "zh": "那是個安全又簡單的選擇。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the fish touch the same pan?",
+      "phonetic": "/dʌz ðə fɪʃ tʌtʃ ðə seɪm pæn?/",
+      "zh": "魚會用到同一個鍋子嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let me ask the chef again.",
+      "phonetic": "/lɛt mi æsk ðə ʃɛf əˈgɛn./",
+      "zh": "讓我再問一下主廚。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please do, it matters to me.",
+      "phonetic": "/pliz du, ɪt ˈmætɚz tu mi./",
+      "zh": "麻煩你，這對我很重要。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will check the whole kitchen.",
+      "phonetic": "/aɪ wɪl tʃɛk ðə hoʊl ˈkɪtʃɪn./",
+      "zh": "我會檢查整個廚房。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Also, is the rice cooked with milk?",
+      "phonetic": "/ˈɔlsoʊ, ɪz ðə raɪs kʊkt wɪð mɪlk?/",
+      "zh": "另外，白飯有用牛奶煮嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, we cook rice in water.",
+      "phonetic": "/noʊ, wi kʊk raɪs ɪn ˈwɔtɚ./",
+      "zh": "沒有，我們用清水煮飯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Great, then the rice is fine.",
+      "phonetic": "/greɪt, ðɛn ðə raɪs ɪz faɪn./",
+      "zh": "太好了，那白飯沒問題。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, rice is always safe here.",
+      "phonetic": "/jɛs, raɪs ɪz ˈɔlweɪz seɪf hɪr./",
+      "zh": "是，這裡的白飯一向安全。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now I feel a little hungry.",
+      "phonetic": "/naʊ aɪ fil ə ˈlɪtəl ˈhʌŋgri./",
+      "zh": "現在我覺得有點餓了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The kitchen is working fast now.",
+      "phonetic": "/ðə ˈkɪtʃɪn ɪz ˈwɜrkɪŋ fæst naʊ./",
+      "zh": "廚房現在動作很快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Would you bring the drinks first?",
+      "phonetic": "/wʊd ju brɪŋ ðə drɪŋks fɜrst?/",
+      "zh": "可以先送飲料來嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Of course, they are ready.",
+      "phonetic": "/əv kɔrs, ðeɪ ɑr ˈrɛdi./",
+      "zh": "當然，已經好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks, Kevin, you are kind.",
+      "phonetic": "/θæŋks, ˈkɛvɪn, ju ɑr kaɪnd./",
+      "zh": "謝謝你，凱文，你人真好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I hate seeing guests worried.",
+      "phonetic": "/aɪ heɪt ˈsiɪŋ gɛsts ˈwɜrid./",
+      "zh": "我最不喜歡看到客人擔心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You are very patient with me.",
+      "phonetic": "/ju ɑr ˈvɛri ˈpeɪʃənt wɪð mi./",
+      "zh": "你對我很有耐心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Allergies are not a small thing.",
+      "phonetic": "/ˈælɚdʒiz ɑr nɑt ə smɔl θɪŋ./",
+      "zh": "過敏不是小事。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So, what did the chef tell you?",
+      "phonetic": "/soʊ, wʌt dɪd ðə ʃɛf tɛl ju?/",
+      "zh": "那主廚跟你說了什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The fish pan is used often.",
+      "phonetic": "/ðə fɪʃ pæn ɪz juzd ˈɔfən./",
+      "zh": "那個煎魚的鍋很常被用到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Used for peanut dishes too?",
+      "phonetic": "/juzd fɚ ˈpiˌnʌt ˈdɪʃɪz tu?/",
+      "zh": "也會用來做花生的菜嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sometimes, so he will wash it.",
+      "phonetic": "/ˈsʌmˌtaɪmz, soʊ hi wɪl wɑʃ ɪt./",
+      "zh": "有時候會，所以他會把它洗乾淨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Washing is not always enough.",
+      "phonetic": "/ˈwɑʃɪŋ ɪz nɑt ˈɔlweɪz ɪˈnʌf./",
+      "zh": "只洗一洗不一定夠。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "True, he also has a clean one.",
+      "phonetic": "/tru, hi ˈɔlsoʊ hæv ə klin wʌn./",
+      "zh": "沒錯，他也有一個乾淨的鍋。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Really, a pan just for fish?",
+      "phonetic": "/ˈrɪli, ə pæn dʒʌst fɚ fɪʃ?/",
+      "zh": "真的嗎，一個只煎魚的鍋？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, we keep it on top.",
+      "phonetic": "/jɛs, wi kip ɪt ɑn tɑp./",
+      "zh": "是，我們把它放在最上面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good, that makes me calmer.",
+      "phonetic": "/gʊd, ðæt meɪks mi ˈkɑmər./",
+      "zh": "很好，這讓我比較安心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "He will use that pan tonight.",
+      "phonetic": "/hi wɪl juz ðæt pæn təˈnaɪt./",
+      "zh": "他今晚會用那個鍋。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What about the soy sauce?",
+      "phonetic": "/wʌt əˈbaʊt ðə sɔɪ sɔs?/",
+      "zh": "那醬油呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Soy sauce is fine, no peanuts.",
+      "phonetic": "/sɔɪ sɔs ɪz faɪn, noʊ ˈpiˌnʌts./",
+      "zh": "醬油沒問題，沒有花生。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is there any milk product?",
+      "phonetic": "/ɪz ðɛr ˈɛni mɪlk ˈprɑdʌkt?/",
+      "zh": "它含任何奶製品嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, only soy beans and salt.",
+      "phonetic": "/noʊ, ˈoʊnli sɔɪ binz ænd sɔlt./",
+      "zh": "沒有，只有黃豆和鹽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "And the red chili sauce?",
+      "phonetic": "/ænd ðə rɛd ˈtʃɪli sɔs?/",
+      "zh": "那紅辣椒醬呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That one has sugar and vinegar.",
+      "phonetic": "/ðæt wʌn hæv ˈʃʊɡər ænd ˈvɪnəgɚ./",
+      "zh": "那個有糖和醋。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sugar is okay for me.",
+      "phonetic": "/ˈʃʊɡər ɪz oʊˈkeɪ fɚ mi./",
+      "zh": "糖我可以。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then you can try a little.",
+      "phonetic": "/ðɛn ju kæn traɪ ə ˈlɪtəl./",
+      "zh": "那你可以試一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is in the white dressing?",
+      "phonetic": "/wʌt ɪz ɪn ðə waɪt ˈdrɛsɪŋ?/",
+      "zh": "那個白色沙拉醬裡有什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yogurt, so please stay away from it.",
+      "phonetic": "/ˈjoʊgɚt, soʊ pliz steɪ əˈweɪ frʌm ɪt./",
+      "zh": "優格，所以請離它遠一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Right, we already said no.",
+      "phonetic": "/raɪt, wi ɔlˈrɛdi sɛd noʊ./",
+      "zh": "對，我們已經說不要了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Your salad will have oil instead.",
+      "phonetic": "/jʊr ˈsæləd wɪl hæv ɔɪl ɪnˈstɛd./",
+      "zh": "你的沙拉會改用油。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now, let us fix my dinner.",
+      "phonetic": "/naʊ, lɛt ʌs fɪks maɪ ˈdɪnər./",
+      "zh": "現在來解決我的晚餐吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You want the fish like your friend?",
+      "phonetic": "/ju wɑnt ðə fɪʃ laɪk jʊr frɛnd?/",
+      "zh": "你想跟朋友一樣點魚嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, but please without the butter.",
+      "phonetic": "/jɛs, bʌt pliz wɪˈðaʊt ðə ˈbʌtɚ./",
+      "zh": "是，但請不要加奶油。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The fish has lemon, not butter.",
+      "phonetic": "/ðə fɪʃ hæv ˈlɛmən, nɑt ˈbʌtɚ./",
+      "zh": "魚是配檸檬，不是奶油。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Perfect, and extra vegetables please.",
+      "phonetic": "/ˈpɜrfɪkt, ænd ˈɛkstrə ˈvɛdʒtəbəlz pliz./",
+      "zh": "太好了，請多給我一些蔬菜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Extra vegetables, I got it.",
+      "phonetic": "/ˈɛkstrə ˈvɛdʒtəbəlz, aɪ gɑt ɪt./",
+      "zh": "多一份蔬菜，我記下了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I still pay for the chicken?",
+      "phonetic": "/ʃʊd aɪ stɪl peɪ fɚ ðə ˈtʃɪkɪn?/",
+      "zh": "我還需要付雞肉的錢嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, we took it off already.",
+      "phonetic": "/noʊ, wi tʊk ɪt ɔf ɔlˈrɛdi./",
+      "zh": "不用，我們已經把它刪掉了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That is very fair of you.",
+      "phonetic": "/ðæt ɪz ˈvɛri fɛr əv ju./",
+      "zh": "你們這樣很公道。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It was our menu mistake.",
+      "phonetic": "/ɪt wʌz aʊr ˈmɛnju mɪˈsteɪk./",
+      "zh": "這是我們菜單的錯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Any other dish with hidden nuts?",
+      "phonetic": "/ˈɛni ˈʌðɚ dɪʃ wɪð ˈhɪdən nʌts?/",
+      "zh": "還有其他藏著堅果的菜嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The beef stew has peanut paste.",
+      "phonetic": "/ðə bif stu hæv ˈpiˌnʌt peɪst./",
+      "zh": "燉牛肉裡有花生醬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then we will skip the beef too.",
+      "phonetic": "/ðɛn wi wɪl skɪp ðə bif tu./",
+      "zh": "那我們也不要牛肉了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, and the pork is safe.",
+      "phonetic": "/gʊd, ænd ðə pɔrk ɪz seɪf./",
+      "zh": "好，那豬肉是安全的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One fish and no beef then.",
+      "phonetic": "/wʌn fɪʃ ænd noʊ bif ðɛn./",
+      "zh": "那就一份魚、不要牛肉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One fish, and I will note that.",
+      "phonetic": "/wʌn fɪʃ ænd aɪ wɪl noʊt ðæt/",
+      "zh": "一份魚，我會記下來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wait, he also wants rice.",
+      "phonetic": "/weɪt, hi ˈɔlsoʊ wɑnts raɪs./",
+      "zh": "等等，他也想要白飯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two bowls of rice, no problem.",
+      "phonetic": "/tu boʊlz əv raɪs, noʊ ˈprɑbləm./",
+      "zh": "兩碗白飯，沒問題。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Maybe the kitchen is busy right now?",
+      "phonetic": "/ˈmeɪbi ðə ˈkɪtʃɪn ɪz ˈbɪzi raɪt naʊ?/",
+      "zh": "廚房現在可能很忙？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A little, but your plate is first.",
+      "phonetic": "/ə ˈlɪtəl, bʌt jʊr pleɪt ɪz fɜrst./",
+      "zh": "有一點，但你的餐會先做。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please tell the chef thank you.",
+      "phonetic": "/pliz tɛl ðə ʃɛf θæŋk ju./",
+      "zh": "請幫我謝謝主廚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will tell him right now.",
+      "phonetic": "/aɪ wɪl tɛl hɪm raɪt naʊ./",
+      "zh": "我現在就告訴他。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "And no shared pan, right?",
+      "phonetic": "/ænd noʊ ʃɛrd pæn, raɪt?/",
+      "zh": "而且不要共用鍋子，對吧？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Right, I will watch him cook.",
+      "phonetic": "/raɪt, aɪ wɪl wɑtʃ hɪm kʊk./",
+      "zh": "對，我會看著他煮。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then I can relax and wait.",
+      "phonetic": "/ðɛn aɪ kæn rɪˈlæks ænd weɪt./",
+      "zh": "那我可以放鬆等餐了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, your drinks are on the way.",
+      "phonetic": "/jɛs, jʊr drɪŋks ɑr ɑn ðə weɪ./",
+      "zh": "是，你們的飲料正在送來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will you tell me when it's done?",
+      "phonetic": "/wɪl ju tɛl mi wɛn ɪts dʌn?/",
+      "zh": "做好時你會告訴我嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will call you right away.",
+      "phonetic": "/aɪ wɪl kɔl ju raɪt əˈweɪ/",
+      "zh": "我會馬上打給你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did the chef wash his hands?",
+      "phonetic": "/ˈdɪd ðə ʃɛf wɑʃ hɪz hændz?/",
+      "zh": "主廚洗過手了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "He washed them twice already.",
+      "phonetic": "/hi wɑʃt ðɛm twaɪs ɔlˈrɛdi./",
+      "zh": "他已經洗過兩次了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can the sauce stay in one bowl?",
+      "phonetic": "/kæn ðə sɔs steɪ ɪn wʌn boʊl?/",
+      "zh": "醬汁可以單獨裝一碗嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it is kept apart.",
+      "phonetic": "/jɛs ɪt ɪz kɛpt əˈpɑrt./",
+      "zh": "可以，醬汁會分開放置。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did someone wipe my plate?",
+      "phonetic": "/ˈdɪd ˈsʌmˌwʌn waɪp maɪ pleɪt?/",
+      "zh": "有人擦過我的餐盤嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I wiped it with a cloth.",
+      "phonetic": "/aɪ waɪpt ɪt wɪð ə klɔθ./",
+      "zh": "我用布擦過了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are the drinking glasses very clean?",
+      "phonetic": "/ɑr ðə ˈdrɪŋkɪŋ ˈɡlæsɪz ˈvɛri klin?/",
+      "zh": "飲料杯很乾淨嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They are new glasses tonight.",
+      "phonetic": "/ðeɪ ɑr nu ˈɡlæsɪz təˈnaɪt./",
+      "zh": "今晚用的是新的杯子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does dessert use its own tools?",
+      "phonetic": "/dʌz dɪˈzɜrt juz ɪts oʊn tulz?/",
+      "zh": "甜點用自己的工具嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the dessert tools are separate.",
+      "phonetic": "/jɛs ðə dɪˈzɜrt tulz ɑr ˈsɛpərɪt./",
+      "zh": "是的，甜點的工具是分開的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the takeaway box clean?",
+      "phonetic": "/ɪz ðə ˈteɪkəˌweɪ bɑks klin?/",
+      "zh": "打包盒乾淨嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is straight from the pack.",
+      "phonetic": "/ɪt ɪz streɪt frʌm ðə pæk./",
+      "zh": "是剛從包裝裡拿出來的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is my allergy card in the kitchen?",
+      "phonetic": "/ɪz maɪ ˈælərˌdʒi kɑrd ɪn ðə ˈkɪtʃən?/",
+      "zh": "我的過敏卡貼在廚房嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is on the kitchen wall.",
+      "phonetic": "/ɪt ɪz ɑn ðə ˈkɪtʃən wɔl./",
+      "zh": "就貼在廚房牆上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will my dish come out first?",
+      "phonetic": "/wɪl maɪ dɪʃ kʌm aʊt fɜrst?/",
+      "zh": "我的菜會先上嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, we serve you first.",
+      "phonetic": "/jɛs wi sɜrv ju fɜrst./",
+      "zh": "是的，我們先為你上菜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you put the fork far away?",
+      "phonetic": "/kæn ju pʊt ðə fɔrk fɑr əˈweɪ?/",
+      "zh": "叉子可以放遠一點嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will move it to the side.",
+      "phonetic": "/aɪ wɪl muv ɪt tu ðə saɪd./",
+      "zh": "我會把它移到旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should we check again before paying?",
+      "phonetic": "/ʃʊd wi tʃɛk əˈɡɛn bɪˈfɔr ˈpeɪɪŋ?/",
+      "zh": "結帳前要再確認一次嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, we check every bill twice.",
+      "phonetic": "/jɛs wi tʃɛk ˈɛvri bɪl twaɪs./",
+      "zh": "是的，每張帳單我們都檢查兩次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How is my friend's dish handled?",
+      "phonetic": "/haʊ ɪz maɪ frɛndz dɪʃ ˈhændəld?/",
+      "zh": "我朋友那一份怎麼處理？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We cook it in a separate section.",
+      "phonetic": "/wi kʊk ɪt ɪn ə ˈsɛpərɪt ˈsɛkʃən./",
+      "zh": "我們在另一區單獨煮。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Would you make the noodles without egg?",
+      "phonetic": "/wʊd ju meɪk ðə ˈnudəlz wɪˈðaʊt ɛɡ?/",
+      "zh": "麵可以不加蛋嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We have rice noodles for that.",
+      "phonetic": "/wi hæv raɪs ˈnudəlz fər ðæt./",
+      "zh": "我們有米做的麵可以換。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Could they clean the grill before cooking?",
+      "phonetic": "/kʊd ðeɪ klin ðə ɡrɪl bɪˈfɔr ˈkʊkɪŋ?/",
+      "zh": "他們煮之前會先清烤台嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Right, they scrub it every time.",
+      "phonetic": "/raɪt ðeɪ skrʌb ɪt ˈɛvri taɪm./",
+      "zh": "會，每次都刷乾淨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will the peanut sauce touch his fish?",
+      "phonetic": "/wɪl ðə ˈpiˌnʌt sɔs tʌtʃ hɪz fɪʃ/",
+      "zh": "花生醬會碰到他的魚嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Never, the chef is very careful.",
+      "phonetic": "/ˈnɛvər ðə ʃɛf ɪz ˈvɛri ˈkɛrfəl./",
+      "zh": "絕對不會，主廚很小心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the soup served fresh tonight?",
+      "phonetic": "/ɪz ðə sup sɜrvd frɛʃ təˈnaɪt?/",
+      "zh": "湯是今晚新鮮煮的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The chef made it this morning.",
+      "phonetic": "/ðə ʃɛf meɪd ɪt ðɪs ˈmɔrnɪŋ./",
+      "zh": "主廚今天早上煮的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are the knives washed by hand?",
+      "phonetic": "/ɑr ðə naɪvz wɑʃt baɪ hænd?/",
+      "zh": "刀子是手洗的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, and then they are dried.",
+      "phonetic": "/jɛs ænd ðɛn ðeɪ ɑr draɪd./",
+      "zh": "是的，然後會擦乾。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Would yogurt be a problem too?",
+      "phonetic": "/wʊd ˈjoʊɡərt bi ə ˈprɑbləm tu/",
+      "zh": "優格也是個問題嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Right, please leave yogurt out too.",
+      "phonetic": "/raɪt pliz liv ˈjoʊɡərt aʊt tu/",
+      "zh": "是，那也請不要加優格。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Could the kitchen use a separate board?",
+      "phonetic": "/kʊd ðə ˈkɪtʃən juz ə ˈsɛpərɪt bɔrd?/",
+      "zh": "廚房可以用另一塊砧板嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They keep a board for allergies.",
+      "phonetic": "/ðeɪ kip ə bɔrd fər ˈælərʤiz./",
+      "zh": "他們有一塊專門處理過敏的砧板。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Could the bread have peanut flour?",
+      "phonetic": "/kʊd ðə brɛd hæv ˈpiˌnʌt ˈflaʊər/",
+      "zh": "麵包會不會有花生粉？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, it is baked with wheat.",
+      "phonetic": "/noʊ ɪt ɪz beɪkt wɪð wit./",
+      "zh": "不是，它是用小麥烤的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we get lemon on the side?",
+      "phonetic": "/kæn wi ɡɛt ˈlɛmən ɑn ðə saɪd?/",
+      "zh": "檸檬可以另外給嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will bring two lemon slices.",
+      "phonetic": "/aɪ wɪl brɪŋ tu ˈlɛmən ˈslaɪsɪz./",
+      "zh": "我會拿兩片檸檬來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the chef use one spoon?",
+      "phonetic": "/dʌz ðə ʃɛf juz wʌn spun?/",
+      "zh": "主廚試味道都用同一支湯匙嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, he uses a clean one.",
+      "phonetic": "/noʊ hi ˈjuzɪz ə klin wʌn./",
+      "zh": "不會，他用乾淨的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Would the soup pot touch other dishes?",
+      "phonetic": "/wʊd ðə suːp pɑt tʌtʃ ˈʌðər ˈdɪʃɪz?/",
+      "zh": "湯鍋會不會跟其他菜接觸？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, the soup has its own pot.",
+      "phonetic": "/noʊ ðə sup hæz ɪts oʊn pɑt./",
+      "zh": "不會，湯有專用的鍋子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the chef wear a face mask?",
+      "phonetic": "/dʌz ðə ʃɛf wɛr ə feɪs mæsk?/",
+      "zh": "主廚有戴口罩嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "He wears one every shift.",
+      "phonetic": "/hi wɛrz wʌn ˈɛvri ʃɪft./",
+      "zh": "他每一班都戴。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Could the manager check the kitchen?",
+      "phonetic": "/kʊd ðə ˈmænɪdʒər tʃɛk ðə ˈkɪtʃən?/",
+      "zh": "可以請經理檢查廚房嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will call her right now.",
+      "phonetic": "/aɪ wɪl kɔl hɜr raɪt naʊ./",
+      "zh": "我馬上請她過來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the new sauce made fresh?",
+      "phonetic": "/ɪz ðə nu sɔs meɪd frɛʃ/",
+      "zh": "新的醬是現做的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The chef will make it right now.",
+      "phonetic": "/ðə ʃɛf wɪl meɪk ɪt raɪt naʊ./",
+      "zh": "主廚現在就做。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Would fried rice be safe for Amy?",
+      "phonetic": "/wʊd fraɪd raɪs bi seɪf fɔr ˈeɪmi?/",
+      "zh": "炒飯艾美可以吃嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is, they use fresh oil.",
+      "phonetic": "/ɪt ɪz ðeɪ juz frɛʃ ɔɪl/",
+      "zh": "安全，他們用新鮮的油。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the chopping board scrubbed daily?",
+      "phonetic": "/ɪz ðə ˈtʃɑpɪŋ bɔrd skrʌbd ˈdeɪli?/",
+      "zh": "砧板每天刷洗嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Every board is scrubbed daily.",
+      "phonetic": "/ˈɛvri bɔrd ɪz skrʌbd ˈdeɪli./",
+      "zh": "每塊砧板都每天刷洗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can they use the back stove?",
+      "phonetic": "/kæn ðeɪ juz ðə bæk stoʊv?/",
+      "zh": "能用後面那個爐子煮嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That stove has no nuts at all.",
+      "phonetic": "/ðæt stoʊv hæz noʊ nʌts æt ɔl./",
+      "zh": "那個爐子完全沒有堅果。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Has this ladle touched peanut soup?",
+      "phonetic": "/hæz ðɪs ˈlædəl tʌtʃt ˈpiˌnʌt sup?/",
+      "zh": "這支湯勺舀過花生湯嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, they washed every ladle.",
+      "phonetic": "/noʊ ðeɪ wɑʃt ˈɛvri ˈlædəl./",
+      "zh": "沒有，每支湯勺都洗過了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Could you write the order clearly?",
+      "phonetic": "/kʊd ju raɪt ði ˈɔrdər ˈklɪrli?/",
+      "zh": "可以請你把點單寫清楚嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will write it in capitals.",
+      "phonetic": "/aɪ wɪl raɪt ɪt ɪn ˈkæpɪtəlz./",
+      "zh": "我會用大寫寫。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Would you show the chef my note?",
+      "phonetic": "/wʊd ju ʃoʊ ðə ʃɛf maɪ noʊt?/",
+      "zh": "可以把我的單子拿給主廚看嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will hand it to him.",
+      "phonetic": "/aɪ wɪl hænd ɪt tə hɪm./",
+      "zh": "我會親手交給他。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the soy sauce in a bottle?",
+      "phonetic": "/ɪz ðə sɔɪ sɔs ɪn ə ˈbɑtəl?/",
+      "zh": "醬油是裝在瓶子裡的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is poured from a bottle.",
+      "phonetic": "/ɪt ɪz pɔrd frʌm ə ˈbɑtəl./",
+      "zh": "是從瓶子裡倒出來的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Could the salt be kept separate?",
+      "phonetic": "/kʊd ðə sɔlt bi kɛpt ˈsɛpərɪt?/",
+      "zh": "鹽可以單獨放嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It has its own small dish.",
+      "phonetic": "/ɪt hæz ɪts oʊn smɔl dɪʃ./",
+      "zh": "它有自己的小碟子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is there pepper on the table?",
+      "phonetic": "/ɪz ðɛr ˈpɛpər ɑn ðə ˈteɪbəl?/",
+      "zh": "桌上有胡椒嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, a small pepper shaker.",
+      "phonetic": "/jɛs ə smɔl ˈpɛpər ˈʃeɪkər./",
+      "zh": "有，一個小胡椒罐。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Could the steamer be clean and empty?",
+      "phonetic": "/kʊd ðə ˈstimər bi klin ænd ˈɛmpti?/",
+      "zh": "蒸籠會不會是乾淨又空的？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is clean and empty now.",
+      "phonetic": "/ɪt ɪz klin ænd ˈɛmpti naʊ./",
+      "zh": "現在是乾淨空的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will the dish take a long time?",
+      "phonetic": "/wɪl ðə dɪʃ teɪk ə lɔŋ taɪm?/",
+      "zh": "這道菜要很久嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It takes about fifteen minutes.",
+      "phonetic": "/ɪt teɪks əˈbaʊt ˌfɪfˈtin ˈmɪnɪts./",
+      "zh": "大概要十五分鐘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you bring bread while we wait?",
+      "phonetic": "/kæn ju brɪŋ brɛd waɪl wi weɪt?/",
+      "zh": "等的時候可以先上麵包嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will bring it in a minute.",
+      "phonetic": "/aɪ wɪl brɪŋ ɪt ɪn ə ˈmɪnɪt./",
+      "zh": "我馬上就拿來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the bread contain milk?",
+      "phonetic": "/dʌz ðə brɛd kənˈteɪn mɪlk?/",
+      "zh": "麵包裡面有沒有牛奶？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It has flour, water, and salt.",
+      "phonetic": "/ɪt hæz ˈflaʊər ˈwɔtər ænd sɔlt./",
+      "zh": "只有麵粉、水和鹽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Could the butter be on the side?",
+      "phonetic": "/kʊd ðə ˈbʌtər bi ɑn ðə saɪd?/",
+      "zh": "奶油可以放在旁邊嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Right, the butter is in a cup.",
+      "phonetic": "/raɪt ðə ˈbʌtər ɪz ɪn ə kʌp./",
+      "zh": "是，奶油裝在小杯子裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can Amy have the fruit plate?",
+      "phonetic": "/kæn ˈeɪmi hæv ðə frut pleɪt?/",
+      "zh": "艾美可以吃水果盤嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The fruit is cut fresh today.",
+      "phonetic": "/ðə frut ɪz kʌt frɛʃ təˈdeɪ./",
+      "zh": "水果是今天現切的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the fruit on a clean board?",
+      "phonetic": "/ɪz ðə frut ɑn ə klin bɔrd/",
+      "zh": "水果是在乾淨的砧板上嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is cut on the fruit board.",
+      "phonetic": "/ɪt ɪz kʌt ɑn ðə frut bɔrd./",
+      "zh": "是在水果專用的砧板上切的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do they use one knife for nuts?",
+      "phonetic": "/du ðeɪ juz wʌn naɪf fɔr nʌts/",
+      "zh": "切堅果是用同一把刀嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, the nut knife is separate.",
+      "phonetic": "/noʊ ðə nʌt naɪf ɪz ˈsɛpərɪt./",
+      "zh": "不是，切堅果的刀是分開的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you smell any peanuts here?",
+      "phonetic": "/kæn ju smɛl ˈɛni ˈpiˌnʌts hɪr?/",
+      "zh": "你在這裡聞得到花生味嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, it smells like lemon here.",
+      "phonetic": "/noʊ ɪt smɛlz laɪk ˈlɛmən hɪr./",
+      "zh": "沒有，這裡聞起來像檸檬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do the cooks taste with spoons?",
+      "phonetic": "/du ðə kʊks teɪst wɪð spunz?/",
+      "zh": "廚師用湯匙試味道嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, and each spoon is new.",
+      "phonetic": "/jɛs ænd itʃ spun ɪz nu./",
+      "zh": "是的，每支湯匙都是新的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So, is everything ready for the chef?",
+      "phonetic": "/soʊ ɪz ˈɛvriˌθɪŋ ˈrɛdi fər ðə ʃɛf?/",
+      "zh": "主廚那邊都準備好了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The chef has the order now.",
+      "phonetic": "/ðə ʃɛf hæz ði ˈɔrdər naʊ./",
+      "zh": "主廚現在拿到單子了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will the chef wash the salad leaves?",
+      "phonetic": "/wɪl ðə ʃɛf wɑʃ ðə ˈsæləd livz?/",
+      "zh": "主廚會洗沙拉葉嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "He washes them three times.",
+      "phonetic": "/hi wɑʃɪz ðɛm θri taɪmz./",
+      "zh": "他洗三次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Has the price stayed the same?",
+      "phonetic": "/hæz ðə praɪs steɪd ðə seɪm?/",
+      "zh": "價格還保持一樣嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The price does not change at all.",
+      "phonetic": "/ðə praɪs dʌz nɑt tʃeɪndʒ æt ɔl./",
+      "zh": "價格完全不會變。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are the napkins from a new pack?",
+      "phonetic": "/ɑr ðə ˈnæpkɪnz frʌm ə nu pæk?/",
+      "zh": "紙巾是從新包裝拿的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, this pack is brand new.",
+      "phonetic": "/jɛs ðɪs pæk ɪz brænd nu./",
+      "zh": "是的，這包是全新的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the chef add cream to soup?",
+      "phonetic": "/dʌz ðə ʃɛf æd krim tu sup/",
+      "zh": "主廚的湯會加鮮奶油嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We add no milk and no cream.",
+      "phonetic": "/wi æd noʊ mɪlk ænd noʊ krim/",
+      "zh": "我們不加牛奶也不加鮮奶油。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How long until the food comes?",
+      "phonetic": "/haʊ lɔŋ ʌnˈtɪl ðə fud kʌmz?/",
+      "zh": "餐點還要多久才會來？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "About fifteen minutes, maybe less.",
+      "phonetic": "/əˈbaʊt ˌfɪfˈtin ˈmɪnɪts ˈmeɪbi lɛs./",
+      "zh": "大約十五分鐘，也許更快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which one is the chicken without peanuts?",
+      "phonetic": "/wɪtʃ wʌn ɪz ðə ˈtʃɪkɪn wɪˈðaʊt ˈpiˌnʌts?/",
+      "zh": "哪一份是沒有花生的雞肉？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The one on the left plate.",
+      "phonetic": "/ðə wʌn ɑn ðə lɛft pleɪt/",
+      "zh": "左邊那盤。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the sauce look like lemon sauce?",
+      "phonetic": "/dʌz ðə sɔs lʊk laɪk ˈlɛmən sɔs?/",
+      "zh": "這個醬看起來像檸檬醬嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is lemon, with no peanuts.",
+      "phonetic": "/ɪt ɪz ˈlɛmən wɪð noʊ ˈpiˌnʌts./",
+      "zh": "是檸檬的，沒有花生。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did the chef use the clean wok?",
+      "phonetic": "/dɪd ðə ʃɛf juz ðə klin wɑk?/",
+      "zh": "主廚用的是乾淨的鍋子嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "He used the new wok tonight.",
+      "phonetic": "/hi juzd ðə nu wɑk təˈnaɪt./",
+      "zh": "他今晚用的是新鍋子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are the noodles made from rice?",
+      "phonetic": "/ɑr ðə ˈnudəlz meɪd frəm raɪs?/",
+      "zh": "這個麵是米做的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They are rice noodles, not wheat.",
+      "phonetic": "/ðeɪ ɑr raɪs ˈnudəlz nɑt wit./",
+      "zh": "是米麵，不是小麥麵。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is there peanut oil on the plate?",
+      "phonetic": "/ɪz ðɛr ˈpiˌnʌt ɔɪl ɑn ðə pleɪt/",
+      "zh": "盤子上有花生油嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, I wiped the plate myself.",
+      "phonetic": "/noʊ aɪ waɪpt ðə pleɪt maɪˈsɛlf./",
+      "zh": "沒有，盤子是我自己擦過的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the soup smell like peanuts?",
+      "phonetic": "/dʌz ðə sup smɛl laɪk ˈpiˌnʌts?/",
+      "zh": "這湯聞起來像花生嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It smells like chicken and lemon.",
+      "phonetic": "/ɪt smɛlz laɪk ˈtʃɪkɪn ænd ˈlɛmən./",
+      "zh": "聞起來是雞肉和檸檬的味道。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "May I take a small taste first?",
+      "phonetic": "/meɪ aɪ teɪk ə smɔl teɪst fɜrst?/",
+      "zh": "我可以先小嚐一口嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Of course, the chef checked it.",
+      "phonetic": "/əv kɔrs ðə ʃɛf tʃɛkt ɪt./",
+      "zh": "當然可以，主廚已經確認過了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How does it taste, Amy?",
+      "phonetic": "/haʊ dʌz ɪt teɪst ˈeɪmi?/",
+      "zh": "艾美，吃起來怎麼樣？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It tastes good, and I feel fine.",
+      "phonetic": "/ɪt teɪsts ɡʊd ænd aɪ fil faɪn./",
+      "zh": "很好吃，而且我感覺很好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "And, is your mouth itchy at all?",
+      "phonetic": "/ænd ɪz jʊr maʊθ ˈɪtʃi æt ɔl?/",
+      "zh": "你的嘴巴會癢嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, my mouth feels completely normal.",
+      "phonetic": "/noʊ maɪ maʊθ filz kəmˈplitli ˈnɔrməl./",
+      "zh": "不會，我的嘴巴完全正常。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you want to eat more slowly?",
+      "phonetic": "/du ju wɑnt tə it mɔr ˈsloʊli?/",
+      "zh": "你要不要吃慢一點？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will take small bites tonight.",
+      "phonetic": "/aɪ wɪl teɪk smɔl baɪts təˈnaɪt./",
+      "zh": "我今晚會小口小口吃。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I get you some water, Amy?",
+      "phonetic": "/kæn aɪ ɡɛt ju sʌm ˈwɔtər ˈeɪmi?/",
+      "zh": "艾美，要不要我幫你倒點水？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, water would help me relax.",
+      "phonetic": "/jɛs ˈwɔtər wʊd hɛlp mi rɪˈlæks./",
+      "zh": "好，喝水能讓我放鬆一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Here is your water with no ice.",
+      "phonetic": "/hɪr ɪz jʊr ˈwɔtər wɪð noʊ aɪs./",
+      "zh": "你的水來了，沒有加冰塊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Perfect, cold water always helps me.",
+      "phonetic": "/ˈpɜrfɪkt koʊld ˈwɔtər ˈɔlˌweɪz hɛlps mi./",
+      "zh": "太好了，冰水總能讓我舒服些。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the fish taste all right too?",
+      "phonetic": "/dʌz ðə fɪʃ teɪst ɔl raɪt tu?/",
+      "zh": "魚吃起來也還可以嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is soft, and it tastes fresh.",
+      "phonetic": "/ɪt ɪz sɔft ænd ɪt teɪsts frɛʃ./",
+      "zh": "很軟，而且吃起來很新鮮。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are the fries safe for me?",
+      "phonetic": "/ɑr ðə fraɪz seɪf fər mi?/",
+      "zh": "薯條我可以吃嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, I checked them twice.",
+      "phonetic": "/jɛs aɪ tʃɛkt ðɛm twaɪs./",
+      "zh": "可以，我確認過兩次了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did the chef come out to check?",
+      "phonetic": "/dɪd ðə ʃɛf kʌm aʊt tə tʃɛk?/",
+      "zh": "主廚有出來確認嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "He did, and he asked about Amy.",
+      "phonetic": "/hi dɪd ænd hi æskt əˈbaʊt ˈeɪmi./",
+      "zh": "有，他還問了艾美的狀況。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What did the chef say to you?",
+      "phonetic": "/wʌt dɪd ðə ʃɛf seɪ tə ju?/",
+      "zh": "主廚跟你說了什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "He said your dish is nut free.",
+      "phonetic": "/hi sɛd jʊr dɪʃ ɪz nʌt fri/",
+      "zh": "他說你那份不含堅果。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the dessert safe for me too?",
+      "phonetic": "/ɪz ðə dɪˈzɜrt seɪf fɔr mi tu/",
+      "zh": "甜點我也可以吃嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The fruit plate is safe for you.",
+      "phonetic": "/ðə frut pleɪt ɪz seɪf fɔr ju/",
+      "zh": "水果盤你可以吃。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the fruit plate have any nuts?",
+      "phonetic": "/dʌz ðə frut pleɪt hæv ˈɛni nʌts?/",
+      "zh": "水果盤裡面有堅果嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, it is only fresh fruit.",
+      "phonetic": "/noʊ ɪt ɪz ˈoʊnli frɛʃ frut./",
+      "zh": "沒有，只有新鮮水果。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we order one fruit plate?",
+      "phonetic": "/kæn wi ˈɔrdər wʌn frut pleɪt?/",
+      "zh": "我們可以點一份水果盤嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will add it to the order.",
+      "phonetic": "/aɪ wɪl æd ɪt tə ði ˈɔrdər./",
+      "zh": "我幫你加進單子裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You made this dinner easy for us.",
+      "phonetic": "/ju meɪd ðɪs ˈdɪnər ˈizi fər ʌs./",
+      "zh": "你讓我們這頓飯吃得很輕鬆。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I am glad Amy can eat well.",
+      "phonetic": "/aɪ æm ɡlæd ˈeɪmi kæn it wɛl./",
+      "zh": "我很高興艾美能好好吃一頓。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will you thank the chef for us?",
+      "phonetic": "/wɪl ju θæŋk ðə ʃɛf fər ʌs?/",
+      "zh": "可以幫我們謝謝主廚嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will tell him right away.",
+      "phonetic": "/aɪ wɪl tɛl hɪm raɪt əˈweɪ./",
+      "zh": "我馬上就告訴他。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Okay, is the kitchen always this careful?",
+      "phonetic": "/oʊˈkeɪ ɪz ðə ˈkɪtʃən ˈɔlˌweɪz ðɪs ˈkɛrfəl?/",
+      "zh": "你們廚房一直都這麼小心嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We treat every allergy the same.",
+      "phonetic": "/wi trit ˈɛvri ˈælərʤi ðə seɪm./",
+      "zh": "我們對每一種過敏都一樣慎重。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I was worried about tonight.",
+      "phonetic": "/aɪ wʌz ˈwɜrid əˈbaʊt təˈnaɪt./",
+      "zh": "我本來很擔心今晚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You can relax and enjoy dinner.",
+      "phonetic": "/ju kæn rɪˈlæks ænd ɛnˈdʒɔɪ ˈdɪnər./",
+      "zh": "你可以放鬆好好吃這頓飯了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we come back next week?",
+      "phonetic": "/kæn wi kʌm bæk nɛkst wik?/",
+      "zh": "我們下週可以再來嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Please do, and ask for me.",
+      "phonetic": "/pliz du ænd æsk fər mi./",
+      "zh": "當然，來的時候找我。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This is the best dinner in months.",
+      "phonetic": "/ðɪs ɪz ðə bɛst ˈdɪnər ɪn mʌnθs./",
+      "zh": "這是這幾個月來最好吃的一頓飯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That makes my whole night better.",
+      "phonetic": "/ðæt meɪks maɪ hoʊl naɪt ˈbɛtər./",
+      "zh": "這句話讓我整晚心情都變好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are you finished with the chicken?",
+      "phonetic": "/ɑr ju ˈfɪnɪʃt wɪð ðə ˈtʃɪkɪn?/",
+      "zh": "你的雞肉吃完了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I ate almost all of it.",
+      "phonetic": "/aɪ et ˈɔlmoʊst ɔl əv ɪt./",
+      "zh": "我幾乎全部吃完了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you want the rest boxed?",
+      "phonetic": "/du ju wɑnt ðə rɛst bɑkst/",
+      "zh": "剩下的要打包嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, I can eat it tomorrow.",
+      "phonetic": "/jɛs aɪ kæn it ɪt təˈmɑroʊ./",
+      "zh": "好，我明天可以吃。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Could you use a clean box?",
+      "phonetic": "/kʊd ju juz ə klin bɑks/",
+      "zh": "可以用乾淨的盒子嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will use a new box.",
+      "phonetic": "/aɪ wɪl juz ə nu bɑks./",
+      "zh": "我會用新的盒子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did I eat enough tonight?",
+      "phonetic": "/dɪd aɪ it ɪˈnʌf təˈnaɪt/",
+      "zh": "我今晚吃得夠嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You ate more than usual.",
+      "phonetic": "/ju et mɔr ðæn ˈjuʒuəl/",
+      "zh": "你吃得比平常多。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we have the bill, please?",
+      "phonetic": "/kæn wi hæv ðə bɪl pliz?/",
+      "zh": "可以給我們帳單嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will bring it in a moment.",
+      "phonetic": "/aɪ wɪl brɪŋ ɪt ɪn ə ˈmoʊmənt./",
+      "zh": "我馬上送過來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do we pay for the fruit plate?",
+      "phonetic": "/du wi peɪ fər ðə frut pleɪt?/",
+      "zh": "水果盤要另外付錢嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, the fruit plate is free.",
+      "phonetic": "/noʊ ðə frut pleɪt ɪz fri./",
+      "zh": "沒有，水果盤算我們請的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That is very kind of him.",
+      "phonetic": "/ðæt ɪz ˈvɛri kaɪnd əv hɪm./",
+      "zh": "他真是太好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "He wanted Amy to smile.",
+      "phonetic": "/hi ˈwɑntɪd ˈeɪmi tə smaɪl./",
+      "zh": "他希望艾美能笑一笑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Could we write the chef a note?",
+      "phonetic": "/kʊd wi raɪt ðə ʃɛf ə noʊt/",
+      "zh": "我們可以寫張紙條給主廚嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, I will give it to him.",
+      "phonetic": "/jɛs aɪ wɪl ɡɪv ɪt tə hɪm./",
+      "zh": "可以，我會轉交給他。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What should we write on the note?",
+      "phonetic": "/wʌt ʃʊd wi raɪt ɑn ðə noʊt?/",
+      "zh": "紙條上要寫什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Write that the dinner was safe.",
+      "phonetic": "/raɪt ðæt ðə ˈdɪnər wʌz seɪf./",
+      "zh": "寫這頓飯吃得很安心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My stomach still feels fine tonight.",
+      "phonetic": "/maɪ ˈstʌmək stɪl filz faɪn təˈnaɪt/",
+      "zh": "我的胃今晚還是很舒服。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, that is what we hoped.",
+      "phonetic": "/ɡʊd ðæt ɪz wʌt wi hoʊpt/",
+      "zh": "很好，這正是我們希望的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you need your medicine tonight?",
+      "phonetic": "/du ju nid jʊr ˈmɛdəsɪn təˈnaɪt?/",
+      "zh": "你今晚需要吃藥嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I do not need it tonight.",
+      "phonetic": "/aɪ du nɑt nid ɪt təˈnaɪt./",
+      "zh": "我今晚不需要。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should we call your sister later?",
+      "phonetic": "/ʃʊd wi kɔl jʊr ˈsɪstər ˈleɪtər?/",
+      "zh": "晚點要不要打給你姊姊？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, she worries about my allergy.",
+      "phonetic": "/jɛs ʃi ˈwɜriz əˈbaʊt maɪ ˈælərʤi./",
+      "zh": "好，她一直很擔心我過敏。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will you tell her about this place?",
+      "phonetic": "/wɪl ju tɛl hər əˈbaʊt ðɪs pleɪs?/",
+      "zh": "你要跟她說這家店嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will send her the address.",
+      "phonetic": "/aɪ wɪl sɛnd hər ði əˈdrɛs./",
+      "zh": "我會把地址傳給她。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we walk home after dinner?",
+      "phonetic": "/kæn wi wɔk hoʊm ˈæftər ˈdɪnər?/",
+      "zh": "吃完飯可以走路回家嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the night is warm.",
+      "phonetic": "/jɛs ðə naɪt ɪz wɔrm./",
+      "zh": "可以，今晚很暖和。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you feel like dessert at home?",
+      "phonetic": "/du ju fil laɪk dɪˈzɜrt æt hoʊm?/",
+      "zh": "回家還想吃甜點嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I am too full for dessert.",
+      "phonetic": "/aɪ æm tu fʊl fər dɪˈzɜrt./",
+      "zh": "我太飽了，吃不下甜點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are you taking the water bottle?",
+      "phonetic": "/ɑr ju ˈteɪkɪŋ ðə ˈwɔtər ˈbɑtəl?/",
+      "zh": "水壺要帶走嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, I finished the whole glass.",
+      "phonetic": "/jɛs aɪ ˈfɪnɪʃt ðə hoʊl ɡlæs./",
+      "zh": "要，我整杯都喝完了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are you ready to go home?",
+      "phonetic": "/ɑr ju ˈrɛdi tə ɡoʊ hoʊm?/",
+      "zh": "你準備好回家了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, I am very sleepy now.",
+      "phonetic": "/jɛs aɪ æm ˈvɛri ˈslipi naʊ./",
+      "zh": "好了，我現在很想睡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we thank the chef in person?",
+      "phonetic": "/kæn wi θæŋk ðə ʃɛf ɪn ˈpɜrsən?/",
+      "zh": "我們可以當面謝謝主廚嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "He is cooking, but he waved.",
+      "phonetic": "/hi ɪz ˈkʊkɪŋ bʌt hi weɪvd./",
+      "zh": "他正在忙，不過他揮了手。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then we will wave back at him.",
+      "phonetic": "/ðɛn wi wɪl weɪv bæk æt hɪm./",
+      "zh": "那我們也跟他揮手。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "He is smiling at your table.",
+      "phonetic": "/hi ɪz ˈsmaɪlɪŋ æt jʊr ˈteɪbəl./",
+      "zh": "他正對著你們這桌笑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did the bill come out right?",
+      "phonetic": "/dɪd ðə bɪl kʌm aʊt raɪt?/",
+      "zh": "帳單金額正確嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, everything looks correct.",
+      "phonetic": "/jɛs ˈɛvriˌθɪŋ lʊks kəˈrɛkt./",
+      "zh": "正確，全都沒問題。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I pay with a card?",
+      "phonetic": "/kæn aɪ peɪ wɪð ə kɑrd?/",
+      "zh": "可以刷卡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, we take cards here.",
+      "phonetic": "/jɛs wi teɪk kɑrdz hɪr./",
+      "zh": "可以，我們這裡收卡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should we leave a big tip?",
+      "phonetic": "/ʃʊd wi liv ə bɪɡ tɪp?/",
+      "zh": "我們要不要多給點小費？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, he took good care.",
+      "phonetic": "/jɛs hi tʊk ɡʊd kɛr./",
+      "zh": "要，他把我們照顧得很好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I did not worry once tonight.",
+      "phonetic": "/aɪ dɪd nɑt ˈwɜri wʌns təˈnaɪt./",
+      "zh": "我今晚一次都沒有擔心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is what we hope for.",
+      "phonetic": "/ðæt ɪz wʌt wi hoʊp fɔr./",
+      "zh": "這就是我們最希望的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's come back for Amy's birthday.",
+      "phonetic": "/lɛts kʌm bæk fər ˈeɪmiz ˈbɜrθˌdeɪ./",
+      "zh": "艾美生日的時候我們再來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We will make a safe cake.",
+      "phonetic": "/wi wɪl meɪk ə seɪf keɪk./",
+      "zh": "我們會做一個安全的蛋糕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This place feels safe for Amy now.",
+      "phonetic": "/ðɪs pleɪs filz seɪf fər ˈeɪmi naʊ./",
+      "zh": "這個地方現在讓艾美覺得很安心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then we did our job well.",
+      "phonetic": "/ðɛn wi dɪd aʊr dʒɑb wɛl./",
+      "zh": "那我們的努力就值得了。"
+    }
+  ],
+  "review": {
+    "round": 7,
+    "score": 92,
+    "score_source": "report",
+    "verdict": "APPROVED",
+    "dimensions": {
+      "pair_logic": 24,
+      "idiomatic_a2": 22,
+      "ipa_accuracy": 25,
+      "variety_no_dup": 21
+    },
+    "issues": [
+      {
+        "dim": "pair_logic",
+        "line": 226,
+        "note": "已確認上輪唯一指出的點修好：226 現為「Will the peanut sauce touch his fish?」，與 040「He will have the green tea.」、088「Lemon is great for him.」、128「He did, the fish is simple.」、188「he also wants rice.」的 he/him 完全一致，也對上 084/124-127/173 朋友點魚。全篇性別（朋友 he、經理 her@247、姊姊 she@373）與魚的歸屬皆無矛盾。"
+      },
+      {
+        "dim": "pair_logic",
+        "line": 250,
+        "note": "非 error、具名保留：輕微人稱摩擦 —— 226 用「his fish」表示說話者不是朋友本人（該段 char_a 讀作 Amy），但 250「Would fried rice be safe for Amy?」與 278「Can Amy have the fruit plate?」char_a 又以第三人稱提 Amy。依 brief 口徑（聲部可切換、不算缺陷）且未觸犯「同一聲音先扮店員、下一句又把店員當第三人稱」的紅線，僅屬情感一致性的小摩擦，統一成 me 即解。"
+      },
+      {
+        "dim": "pair_logic",
+        "line": 222,
+        "note": "非 error、具名保留：222「Would you make the noodles without egg?」把蛋列為迴避項，但全篇過敏設定只有花生＋奶製品（011-013 no milk/no cheese/no butter、233 leave yogurt out、297 no milk and no cream），未交代蛋；236/237 又說麵包用小麥可吃，故蛋句宜寫成明確口味要求（no egg, just for taste），非安全項。"
+      },
+      {
+        "dim": "pair_logic",
+        "line": 300,
+        "note": "非 error、具名保留：輕微情節漂移 —— 118-120 已因醃料含花生取消雞肉，後段 300-301「the chicken without peanuts／the one on the left plate」與 350-352「Are you finished with the chicken?／I ate almost all of it.」又出現可食雞肉；300 的 without peanuts 讓它勉強自洽（改單後重做），不判 error。"
+      },
+      {
+        "dim": "idiomatic_a2",
+        "line": 259,
+        "note": "非 error、具名保留：259「I will write it in capitals.」略不口語，母語者多說 in capital letters／in caps；111/115 marinade 稍高於 A2（可作 the sauce）；066 dairy free、018 broth、256 ladle、268 steamer 為零散 B1 級詞；211「takeaway box」為英式，美式宜作 takeout box。皆單點名詞、不成句法問題。"
+      },
+      {
+        "dim": "variety_no_dup",
+        "line": 200,
+        "note": "非 error、具名保留（殘留 flat_b）：200-296 的 24 對內容確實各自獨立、無一對可前後對調（洗手兩次、醬汁單碗、新杯、甜點專用工具、過敏卡貼牆、帳單複核、口罩每班、砧板每日刷洗、鹽自用碟…），但整段功能同為「安全確認 Q&A」，b 句多為 Yes/No 短肯定式安撫，且等菜狀態自 198「I will call you right away.」一路延續到 298「How long until the food comes?」才推進，故節奏偏平而非重複；另 271「about fifteen minutes.」與 299「About fifteen minutes, maybe less.」相隔 28 行幾近回聲，皆屬風格級。此為本輪主要扣分點。"
+      }
+    ],
+    "summary_zh": "第七輪獨立終審：上輪唯一指出的 226 已確實改成「Will the peanut sauce touch his fish?」，與全篇朋友 he/him 及「朋友吃魚」的設定一致，性別、名字（Amy、Kevin、主廚、經理）、數量（兩碗飯、兩片檸檬、一份魚）、金額（雞肉退單不收費、水果盤免費、價格不變、刷卡、小費）與時間（十五分鐘、今早現做）前後自洽；過敏原仍只有花生＋奶製品，結尾以「Then we did our job well.」收束，非 Thank you./Goodbye. 三連。C 維依機器證據給分（hard=0、SUSPECT 0、逐詞對齊通過）。四維皆無 error 級問題，僅餘 250/278 人稱、222 蛋的定位、300/350 雞肉回歸、259/111 用詞與 200-296 節奏偏平（殘留 flat_b）等已逐條具名的風格級遺留，故予 APPROVED（92）。",
+    "model": "skill:hot-sleep-dialogues",
+    "reviewed_at": 1791048263,
+    "content_hash": "sha1:a358f6beb4658d3e8cf2bd50cc80b96565d96185"
+  }
+}

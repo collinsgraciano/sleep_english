@@ -8,6 +8,8 @@ Consolidates previously duplicated code from:
   - video_compose + quest: concat, loudnorm
   - pipeline._safe_dirname + video_compose inline _re.sub
 """
+import json
+import math
 import os
 import re
 import sys
@@ -418,11 +420,64 @@ def concat_segments(segment_paths: list[str], output_path: str,
 # Final loudnorm pass
 # ---------------------------------------------------------------------------
 
+# 成片统一响度目标（-14 LUFS / -1.5 dBTP，与 YouTube 归一目标一致）
+LOUDNORM_TARGET_OPTS = "I=-14:TP=-1.5:LRA=11"
+
+
+def measure_program_loudness(video_path: str) -> dict | None:
+    """loudnorm 第一遍测量：只解码音频、不产出文件（视频流不解码）。
+
+    返回 ``{"measured_I","measured_TP","measured_LRA","measured_thresh","offset"}``
+    （直接对应第二遍 loudnorm 的 ``measured_*`` / ``offset`` 参数）；
+    探测失败、输出不可解析、或纯静音（input_i/offset = -inf 等非有限值）
+    返回 None，调用方回退单遍。
+    """
+    try:
+        proc = subprocess.run(
+            ["ffmpeg", "-hide_banner", "-nostats", "-i", video_path,
+             "-vn",
+             "-af", f"loudnorm={LOUDNORM_TARGET_OPTS}:print_format=json",
+             "-f", "null", "-"],
+            capture_output=True, text=True, encoding="utf-8",
+            errors="replace", timeout=1800,
+        )
+    except (OSError, subprocess.SubprocessError):
+        return None
+    # loudnorm 把测量 JSON 写在 stderr（对象为单层、无嵌套花括号）
+    blocks = re.findall(r'\{[^{}]*"input_i"[^{}]*\}', proc.stderr or "", re.S)
+    if not blocks:
+        return None
+    try:
+        data = json.loads(blocks[-1])
+        vals = {
+            "measured_I": float(data["input_i"]),
+            "measured_TP": float(data["input_tp"]),
+            "measured_LRA": float(data["input_lra"]),
+            "measured_thresh": float(data["input_thresh"]),
+            "offset": float(data["target_offset"]),
+        }
+    except (KeyError, TypeError, ValueError):
+        return None
+    # 纯静音时 ffmpeg 报 -inf（float("-inf") 不抛错，须显式判非有限值），
+    # 交给调用方按老路径回退，别拿 -inf 去跑 linear
+    return vals if all(math.isfinite(v) for v in vals.values()) else None
+
+
 def apply_final_loudnorm(video_path: str, vid_dir: str,
                         progress_cb=None) -> str:
-    """Apply final loudnorm normalization to the composed video.
+    """整片响度归一（两遍线性），保留片头/片尾音量偏移等段间相对差异。
 
-    Tries loudnorm first; if it fails, falls back to volume boost.
+    历史缺陷：旧实现用 loudnorm **单遍 dynamic 模式**。该模式按 ~3 秒滑窗
+    逐段自适应增益（等价逐段 AGC）——片头/片尾音轨被调低后，归一阶段又被
+    当成"欠响段"抬回正片同等电平（实测：片头偏移 -20dB，归一后与正片差值
+    仅 0.0dB；-10dB 只剩 -3.8dB），表现为「片头音量偏移(dB)设置多少都不
+    生效」。
+
+    现改为两遍线性：第一遍只测量整片响度（``measure_program_loudness``），
+    第二遍带上 measured_* + ``linear=true`` 施加**整片恒定**增益 —— 目标
+    响度照旧 -14 LUFS（真峰值仍受 TP=-1.5 限制），但段间相对差（片头/片尾
+    音量偏移、气口、BGM 侧链压出来的起伏）原样保留。
+    测量失败 → 回退旧单遍 dynamic；loudnorm 整体失败 → volume=6dB（同旧行为）。
     Returns the path to the normalized video (may be the same as input).
     """
     def _cb(pct, msg):
@@ -430,16 +485,45 @@ def apply_final_loudnorm(video_path: str, vid_dir: str,
             progress_cb(pct, msg)
 
     norm_path = str(Path(vid_dir) / "final_video_norm.mp4")
-    norm_result = subprocess.run(
-        ["ffmpeg", "-y", "-i", video_path,
-         "-c:v", "copy",  # video passthrough — fast, no re-encode
-         "-c:a", "aac", "-b:a", "128k", "-ar", "44100",
-         "-af", "loudnorm=I=-14:TP=-1.5:LRA=11",
-         norm_path],
-        capture_output=True, timeout=600,
-    )
-    if (norm_result.returncode == 0 and os.path.exists(norm_path)
-            and os.path.getsize(norm_path) > 1000):
+
+    def _run_loudnorm(opts: str) -> bool:
+        try:
+            proc = subprocess.run(
+                ["ffmpeg", "-y", "-i", video_path,
+                 "-c:v", "copy",  # video passthrough — fast, no re-encode
+                 "-c:a", "aac", "-b:a", "128k", "-ar", "44100",
+                 "-af", f"loudnorm={opts}",
+                 norm_path],
+                capture_output=True, timeout=1800,
+            )
+        except (OSError, subprocess.SubprocessError):
+            return False
+        return (proc.returncode == 0 and os.path.exists(norm_path)
+                and os.path.getsize(norm_path) > 1000)
+
+    measured = measure_program_loudness(video_path)
+    if measured:
+        opts = (f"{LOUDNORM_TARGET_OPTS}"
+                f":measured_I={measured['measured_I']}"
+                f":measured_TP={measured['measured_TP']}"
+                f":measured_LRA={measured['measured_LRA']}"
+                f":measured_thresh={measured['measured_thresh']}"
+                f":offset={measured['offset']}:linear=true")
+        _cb(93, f"Loudnorm two-pass linear (measured {measured['measured_I']} LUFS)...")
+        print(f"  [Norm] 两遍线性归一：测得整片 {measured['measured_I']} LUFS → "
+              f"目标 -14 LUFS（整片恒定增益，片头/片尾音量偏移保留）", flush=True)
+        if _run_loudnorm(opts):
+            os.replace(norm_path, video_path)
+            return video_path
+        print("  [Norm] 两遍线性归一失败 —— 回退单遍 dynamic"
+              "（注意：该模式会按段自适应增益，段间音量差异可能被抹平）", flush=True)
+        if os.path.exists(norm_path):
+            try:
+                os.remove(norm_path)
+            except OSError:
+                pass
+
+    if _run_loudnorm(LOUDNORM_TARGET_OPTS):
         os.replace(norm_path, video_path)
         return video_path
 

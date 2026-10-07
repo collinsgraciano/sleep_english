@@ -1,0 +1,2500 @@
+{
+  "title": "Everyday Phrases — A First Driving Lesson",
+  "title_zh": "駕校初課",
+  "scene_zh": "教練 · 情境對話",
+  "title_quote": "Do you have a spare key?",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】🚗 實用「駕校初課」必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — A First Driving Lesson",
+  "youtube_description": "睡著學英文！這部影片收錄實用「駕校初課」情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫）。場景是教練：第一次上路：上車先調座椅和後照鏡、繫安全帶，教練示範三個踏板，起步、直線、打燈轉彎，路口熄火一次，練路邊停車與倒車，回場後教練總結、交代作業並約下次上課。400 句循環聽，A2 程度，零基礎也能跟著開口說。#英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical 'A First Driving Lesson' phrase pairs (each pair: male normal speed → female slow speed → combined dialogue). A first driving lesson: adjusting the seat and mirrors, learning the three pedals, stalling once at a junction, practising parallel parking, and booking the next lesson. 400 lines on repeat, A2 level.",
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "A First Driving Lesson",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "駕訓班",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Driving",
+  "youtube_tags": [
+    "駕校初課",
+    "A First Driving Lesson",
+    "睡前英文聽力",
+    "英文聽力",
+    "睡前英文",
+    "400句循環聽",
+    "Sleep learning English",
+    "English listening practice",
+    "A2 English",
+    "ESL listening",
+    "English conversation",
+    "everyday English phrases",
+    "學英文 睡覺",
+    "駕校初課 英文",
+    "a-first-driving-lesson-english"
+  ],
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "Do you have a spare key?",
+      "phonetic": "/du ju hæv ə spɛr ki?/",
+      "zh": "你有備用鑰匙嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it is in the drawer.",
+      "phonetic": "/jɛs ɪt ɪz ɪn ðə drɔr/",
+      "zh": "有，在抽屜裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I get in the car now?",
+      "phonetic": "/kæn aɪ ɡɛt ɪn ðə kɑr naʊ?/",
+      "zh": "我現在可以上車了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, open the door gently.",
+      "phonetic": "/jɛs ˈoʊpən ðə dɔr ˈʤɛntli/",
+      "zh": "可以，輕輕開車門。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is this the driver seat?",
+      "phonetic": "/ɪz ðɪs ðə ˈdraɪvər sit?/",
+      "zh": "這是駕駛座嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, sit down and relax.",
+      "phonetic": "/jɛs sɪt daʊn ænd rɪˈlæks/",
+      "zh": "是，坐下來放輕鬆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What should I do first?",
+      "phonetic": "/wʌt ʃʊd aɪ du fɜrst?/",
+      "zh": "我第一步該做什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Move the seat back first.",
+      "phonetic": "/muv ðə sit bæk fɜrst/",
+      "zh": "先把座椅往後移。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is the seat lever?",
+      "phonetic": "/wɛr ɪz ðə sit ˈlɛvər?/",
+      "zh": "座椅拉桿在哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is under your left leg.",
+      "phonetic": "/ɪt ɪz ˈʌndər jʊr lɛft lɛɡ/",
+      "zh": "在你左腿下面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How do I move the seat?",
+      "phonetic": "/haʊ du aɪ muv ðə sit?/",
+      "zh": "我怎麼移動座椅？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pull the lever and slide.",
+      "phonetic": "/pʊl ðə ˈlɛvər ænd slaɪd/",
+      "zh": "拉一下拉桿再滑動。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which way should the seat move?",
+      "phonetic": "/wɪʧ weɪ ʃʊd ðə sit muv?/",
+      "zh": "座椅該往哪個方向移？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Forward, so your knees bend.",
+      "phonetic": "/ˈfɔrwərd soʊ jʊr niz bɛnd/",
+      "zh": "往前，讓你的膝蓋微彎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the seat too far back?",
+      "phonetic": "/ɪz ðə sit tu fɑr bæk?/",
+      "zh": "座椅太後面了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, move it a little closer.",
+      "phonetic": "/jɛs muv ɪt ə ˈlɪtəl ˈkloʊsər/",
+      "zh": "對，稍微往前一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is the seat belt?",
+      "phonetic": "/wɛr ɪz ðə sit bɛlt?/",
+      "zh": "安全帶在哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is beside your right shoulder.",
+      "phonetic": "/ɪt ɪz bɪˈsaɪd jʊr raɪt ˈʃoʊldər/",
+      "zh": "在你右肩旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I fasten the seat belt?",
+      "phonetic": "/ʃʊd aɪ ˈfæsən ðə sit bɛlt?/",
+      "zh": "我該繫安全帶嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, fasten it before driving.",
+      "phonetic": "/jɛs ˈfæsən ɪt bɪˈfɔr ˈdraɪvɪŋ/",
+      "zh": "要，開車前先繫上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does this belt feel too tight?",
+      "phonetic": "/dʌz ðɪs bɛlt fil tu taɪt?/",
+      "zh": "這條安全帶會不會太緊？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, it looks fine to me.",
+      "phonetic": "/noʊ ɪt lʊks faɪn tu mi/",
+      "zh": "不會，我看這樣剛好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Why is the belt across my chest?",
+      "phonetic": "/waɪ ɪz ðə bɛlt əˈkrɔs maɪ ʧɛst?/",
+      "zh": "安全帶為什麼斜過我的胸口？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That keeps you safe in crashes.",
+      "phonetic": "/ðæt kips ju seɪf ɪn ˈkræʃɪz/",
+      "zh": "那樣能在撞擊時保護你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are the mirrors easy to reach?",
+      "phonetic": "/ɑr ðə ˈmɪrərz ˈizi tu riʧ?/",
+      "zh": "後照鏡好調整嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, they turn quite easily.",
+      "phonetic": "/jɛs ðeɪ tɜrn kwaɪt ˈizəli/",
+      "zh": "好調，轉起來很輕鬆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This mirror looks a bit low.",
+      "phonetic": "/ðɪs ˈmɪrər lʊks ə bɪt loʊ/",
+      "zh": "這面後照鏡看起來有點低。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then turn the small knob up.",
+      "phonetic": "/ðɛn tɜrn ðə smɔl nɑb ʌp/",
+      "zh": "那就把那個小旋鈕往上轉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What can you see in it?",
+      "phonetic": "/wʌt kæn ju si ɪn ɪt?/",
+      "zh": "你在裡面看到什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I can see the road behind.",
+      "phonetic": "/aɪ kæn si ðə roʊd bɪˈhaɪnd/",
+      "zh": "我看到後面的路。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How much of the road shows?",
+      "phonetic": "/haʊ mʌʧ əv ðə roʊd ʃoʊz?/",
+      "zh": "能看到多少路面？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nearly all of the back window.",
+      "phonetic": "/ˈnɪrli ɔl əv ðə bæk ˈwɪndoʊ/",
+      "zh": "幾乎整個後車窗都看得到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I adjust the side mirror?",
+      "phonetic": "/kæn aɪ əˈʤʌst ðə saɪd ˈmɪrər?/",
+      "zh": "我可以調整側邊後照鏡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Of course, use the small button.",
+      "phonetic": "/əv kɔrs juz ðə smɔl ˈbʌtən/",
+      "zh": "當然，用那個小按鈕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you always check both mirrors?",
+      "phonetic": "/du ju ˈɔlweɪz ʧɛk boʊθ ˈmɪrərz?/",
+      "zh": "你每次都看兩邊後照鏡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, before I start the engine.",
+      "phonetic": "/jɛs bɪˈfɔr aɪ stɑrt ði ˈɛnʤən/",
+      "zh": "對，發動引擎之前都看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the wheel too high for me?",
+      "phonetic": "/ɪz ðə wil tu haɪ fər mi?/",
+      "zh": "方向盤對我會不會太高？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, lower the wheel a little.",
+      "phonetic": "/jɛs ˈloʊər ðə wil ə ˈlɪtəl/",
+      "zh": "會，把方向盤稍微調低。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What are these three pedals for?",
+      "phonetic": "/wʌt ɑr ðiz θri ˈpɛdəlz fɔr?/",
+      "zh": "這三個踏板是做什麼的？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They control the clutch, brake, gas.",
+      "phonetic": "/ðeɪ kənˈtroʊl ðə klʌʧ breɪk ɡæs/",
+      "zh": "它們控制離合器、煞車和油門。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which pedal is the brake?",
+      "phonetic": "/wɪʧ ˈpɛdəl ɪz ðə breɪk?/",
+      "zh": "哪個踏板是煞車？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The middle one is the brake.",
+      "phonetic": "/ðə ˈmɪdəl wʌn ɪz ðə breɪk/",
+      "zh": "中間那個就是煞車。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Press the brake with which foot?",
+      "phonetic": "/prɛs ðə breɪk wɪð wɪʧ fʊt?/",
+      "zh": "踩煞車要用哪隻腳？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Always use your right foot.",
+      "phonetic": "/ˈɔlweɪz juz jʊr raɪt fʊt/",
+      "zh": "一律用右腳。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "When do I press the clutch?",
+      "phonetic": "/wɛn du aɪ prɛs ðə klʌʧ?/",
+      "zh": "什麼時候踩離合器？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Before you change any gear.",
+      "phonetic": "/bɪˈfɔr ju ʧeɪnʤ ˈɛni ɡɪr/",
+      "zh": "換檔之前都要踩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Why does the clutch feel so soft?",
+      "phonetic": "/waɪ dʌz ðə klʌʧ fil soʊ sɔft?/",
+      "zh": "離合器為什麼踩起來這麼軟？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Getting used to it takes time.",
+      "phonetic": "/ˈɡɛtɪŋ juzd tu ɪt teɪks taɪm/",
+      "zh": "熟悉它需要一點時間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Set the seat and mirrors first?",
+      "phonetic": "/sɛt ðə sit ænd ˈmɪrərz fɜrst?/",
+      "zh": "要先調座椅和後照鏡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then pull the belt across.",
+      "phonetic": "/ðɛn pʊl ðə bɛlt əˈkrɔs/",
+      "zh": "然後把安全帶拉過來扣上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The clutch is the left pedal.",
+      "phonetic": "/ðə klʌʧ ɪz ðə lɛft ˈpɛdəl/",
+      "zh": "離合器是最左邊的踏板。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Right, and the middle is brake.",
+      "phonetic": "/raɪt ænd ðə ˈmɪdəl ɪz breɪk/",
+      "zh": "對，中間那個是煞車。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It feels strange with three pedals.",
+      "phonetic": "/ɪt filz streɪnʤ wɪð θri ˈpɛdəlz/",
+      "zh": "三個踏板感覺很陌生。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You will learn them quickly.",
+      "phonetic": "/ju wɪl lɜrn ðɛm ˈkwɪkli/",
+      "zh": "你很快就會熟悉它們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the gas pedal go down far?",
+      "phonetic": "/dʌz ðə ɡæs ˈpɛdəl ɡoʊ daʊn fɑr?/",
+      "zh": "油門踏板要踩很深嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only a little at first.",
+      "phonetic": "/ˈoʊnli ə ˈlɪtəl æt fɜrst/",
+      "zh": "剛開始只要輕輕踩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good, this feels more natural now.",
+      "phonetic": "/ɡʊd ðɪs filz mɔr ˈnæʧərəl naʊ/",
+      "zh": "很好，現在感覺自然多了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep both hands on the wheel.",
+      "phonetic": "/kip boʊθ hændz ɑn ðə wil/",
+      "zh": "兩隻手都放在方向盤上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Move the seat a bit forward.",
+      "phonetic": "/muv ðə sit ə bɪt ˈfɔrwərd/",
+      "zh": "把座椅再往前一點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, that feels better.",
+      "phonetic": "/jɛs ðæt filz ˈbɛtər/",
+      "zh": "好，這樣感覺好些。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Have you set the mirrors?",
+      "phonetic": "/hæv ju sɛt ðə ˈmɪrərz?/",
+      "zh": "後照鏡調好了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, both are set.",
+      "phonetic": "/jɛs boʊθ ər sɛt/",
+      "zh": "調好了，兩邊都設定好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Check the mirrors for me.",
+      "phonetic": "/ʧɛk ðə ˈmɪrərz fər mi/",
+      "zh": "幫我確認一下後照鏡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They look clear from here.",
+      "phonetic": "/ðeɪ lʊk klɪr frʌm hɪr/",
+      "zh": "從這裡看很清楚。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Lean the seat back slowly.",
+      "phonetic": "/lin ðə sit bæk ˈsloʊli/",
+      "zh": "把椅背慢慢往後放。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Like this, or even lower?",
+      "phonetic": "/laɪk ðɪs ɔr ˈivən ˈloʊər?/",
+      "zh": "這樣，還是再低一點？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Always wear your belt, okay?",
+      "phonetic": "/ˈɔlweɪz wɛr jʊr bɛlt oʊˈkeɪ?/",
+      "zh": "一定要繫安全帶，好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will not forget it.",
+      "phonetic": "/aɪ wɪl nɑt fərˈɡɛt ɪt/",
+      "zh": "我不會忘記的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Try the pedals with your feet.",
+      "phonetic": "/traɪ ðə ˈpɛdəlz wɪð jʊr fit/",
+      "zh": "用腳試試這幾個踏板。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The brake feels quite hard.",
+      "phonetic": "/ðə breɪk filz kwaɪt hɑrd/",
+      "zh": "煞車踩起來滿硬的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Keep your heel on the floor.",
+      "phonetic": "/kip jʊr hil ɑn ðə flɔr/",
+      "zh": "腳跟要貼著地板。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That makes the pedals steadier.",
+      "phonetic": "/ðæt meɪks ðə ˈpɛdəlz ˈstɛdiər/",
+      "zh": "這樣踏板會比較穩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now hold the wheel gently.",
+      "phonetic": "/naʊ hoʊld ðə wil ˈʤɛntli/",
+      "zh": "現在輕輕握住方向盤。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My hands feel a bit stiff.",
+      "phonetic": "/maɪ hændz fil ə bɪt stɪf/",
+      "zh": "我的手有點僵硬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are you comfortable in that seat?",
+      "phonetic": "/ɑr ju ˈkʌmfərtəbəl ɪn ðæt sit?/",
+      "zh": "你坐那個位子舒服嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, but my legs ache.",
+      "phonetic": "/jɛs bʌt maɪ lɛɡz eɪk/",
+      "zh": "舒服，不過我的腿有點痠。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Raise the wheel a little higher.",
+      "phonetic": "/reɪz ðə wil ə ˈlɪtəl ˈhaɪər/",
+      "zh": "把方向盤再調高一點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Better, I can see clearly.",
+      "phonetic": "/ˈbɛtər aɪ kæn si ˈklɪrli/",
+      "zh": "好多了，我看得很清楚。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Push the clutch with your left foot.",
+      "phonetic": "/pʊʃ ðə klʌʧ wɪð jʊr lɛft fʊt/",
+      "zh": "用左腳踩離合器。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It goes down very easily.",
+      "phonetic": "/ɪt ɡoʊz daʊn ˈvɛri ˈizəli/",
+      "zh": "它踩下去很輕鬆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Rest your right foot on nothing.",
+      "phonetic": "/rɛst jʊr raɪt fʊt ɑn ˈnʌθɪŋ/",
+      "zh": "右腳先完全放空。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So only one foot works?",
+      "phonetic": "/soʊ ˈoʊnli wʌn fʊt wɜrks?/",
+      "zh": "所以只用一隻腳嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Kick the clutch in slowly.",
+      "phonetic": "/kɪk ðə klʌʧ ɪn ˈsloʊli/",
+      "zh": "慢慢把離合器踩到底。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Slowly, like this, right?",
+      "phonetic": "/ˈsloʊli laɪk ðɪs raɪt?/",
+      "zh": "慢慢地，像這樣，對嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Never press the gas and brake.",
+      "phonetic": "/ˈnɛvər prɛs ðə ɡæs ænd breɪk/",
+      "zh": "絕對不要同時踩油門和煞車。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will remember that rule.",
+      "phonetic": "/aɪ wɪl rɪˈmɛmbər ðæt rul/",
+      "zh": "我會記住這條規則。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Why must I sit up straight?",
+      "phonetic": "/waɪ mʌst aɪ sɪt ʌp streɪt?/",
+      "zh": "我為什麼要坐直？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You see the road much better.",
+      "phonetic": "/ju si ðə roʊd mʌʧ ˈbɛtər/",
+      "zh": "這樣看路面清楚多了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does my seat belt sit right?",
+      "phonetic": "/dʌz maɪ sit bɛlt sɪt raɪt?/",
+      "zh": "我的安全帶位置對嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it sits across your chest.",
+      "phonetic": "/jɛs ɪt sɪts əˈkrɔs jʊr ʧɛst/",
+      "zh": "對，它斜過你的胸口。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where do I put both hands?",
+      "phonetic": "/wɛr du aɪ pʊt boʊθ hændz?/",
+      "zh": "兩隻手要放哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold the wheel at nine and three.",
+      "phonetic": "/hoʊld ðə wil æt naɪn ænd θri/",
+      "zh": "握在九點和三點鐘的位置。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Show me the gas pedal again.",
+      "phonetic": "/ʃoʊ mi ðə ɡæs ˈpɛdəl əˈɡɛn/",
+      "zh": "再指一次油門踏板給我看。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is the right one there.",
+      "phonetic": "/ɪt ɪz ðə raɪt wʌn ðɛr/",
+      "zh": "就是右邊那一個。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do people press it with both feet?",
+      "phonetic": "/du ˈpipəl prɛs ɪt wɪð boʊθ fit?/",
+      "zh": "有人會用兩隻腳踩嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, that is quite dangerous.",
+      "phonetic": "/noʊ ðæt ɪz kwaɪt ˈdeɪnʤərəs/",
+      "zh": "不行，那樣很危險。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Okay, I think I understand now.",
+      "phonetic": "/oʊˈkeɪ aɪ θɪŋk aɪ ˌʌndərˈstænd naʊ/",
+      "zh": "好，我想我現在懂了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, then start the engine soon.",
+      "phonetic": "/ɡʊd ðɛn stɑrt ði ˈɛnʤən sun/",
+      "zh": "很好，那等一下發動引擎。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which of these three pedals first?",
+      "phonetic": "/wɪʧ əv ðiz θri ˈpɛdəlz fɜrst?/",
+      "zh": "這三個踏板要先踩哪一個？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The left one is the clutch.",
+      "phonetic": "/ðə lɛft wʌn ɪz ðə klʌʧ/",
+      "zh": "左邊那個是離合器。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How do I start the car now?",
+      "phonetic": "/haʊ du aɪ stɑrt ðə kɑr naʊ?/",
+      "zh": "我現在要怎麼發動車子？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Press the clutch pedal first.",
+      "phonetic": "/prɛs ðə klʌtʃ ˈpɛdəl fɜrst/",
+      "zh": "先踩下離合器踏板。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is first gear located?",
+      "phonetic": "/wɛr ɪz fɜrst ɡɪr ˈloʊkeɪtɪd?/",
+      "zh": "一檔在哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "First gear is on the left.",
+      "phonetic": "/fɜrst ɡɪr ɪz ɑn ðə lɛft/",
+      "zh": "一檔在左邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do I hold the clutch down?",
+      "phonetic": "/du aɪ hoʊld ðə klʌtʃ daʊn?/",
+      "zh": "我要一直踩著離合器嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep your foot pressed down.",
+      "phonetic": "/kip jʊr fʊt prɛst daʊn/",
+      "zh": "腳要一直踩著。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What about my right foot?",
+      "phonetic": "/wʌt əˈbaʊt maɪ raɪt fʊt?/",
+      "zh": "那我的右腳呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rest it on the gas pedal.",
+      "phonetic": "/rɛst ɪt ɑn ðə ɡæs ˈpɛdəl/",
+      "zh": "放在油門踏板上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the engine running smoothly?",
+      "phonetic": "/ɪz ði ˈɛndʒən ˈrʌnɪŋ ˈsmuðli?/",
+      "zh": "引擎運轉得順嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It sounds very smooth now.",
+      "phonetic": "/ɪt saʊndz ˈvɛri smuð naʊ/",
+      "zh": "現在聽起來很順。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I release the clutch slowly?",
+      "phonetic": "/ʃʊd aɪ rɪˈlis ðə klʌtʃ ˈsloʊli?/",
+      "zh": "我該慢慢放離合器嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, very slowly at first.",
+      "phonetic": "/jɛs ˈvɛri ˈsloʊli æt fɜrst/",
+      "zh": "是，一開始要很慢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The car is starting to move.",
+      "phonetic": "/ðə kɑr ɪz ˈstɑrtɪŋ tu muv/",
+      "zh": "車子開始動了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep your eyes on the road.",
+      "phonetic": "/kip jʊr aɪz ɑn ðə roʊd/",
+      "zh": "眼睛看著前方路面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How fast should I drive here?",
+      "phonetic": "/haʊ fæst ʃʊd aɪ draɪv hɪr?/",
+      "zh": "我在這裡要開多快？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just drive slowly for now.",
+      "phonetic": "/dʒʌst draɪv ˈsloʊli fɔr naʊ/",
+      "zh": "現在慢慢開就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Am I going straight enough?",
+      "phonetic": "/æm aɪ ˈɡoʊɪŋ streɪt ɪˈnʌf?/",
+      "zh": "我開得夠直嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You are driving straight and steady.",
+      "phonetic": "/ju ɑr ˈdraɪvɪŋ streɪt ænd ˈstɛdi/",
+      "zh": "你開得又直又穩。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do I need to check the mirrors?",
+      "phonetic": "/du aɪ nid tu tʃɛk ðə ˈmɪrərz?/",
+      "zh": "我需要看後照鏡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Check them every few seconds.",
+      "phonetic": "/tʃɛk ðɛm ˈɛvri fju ˈsɛkəndz/",
+      "zh": "每隔幾秒就要看一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The road looks clear ahead.",
+      "phonetic": "/ðə roʊd lʊks klɪr əˈhɛd/",
+      "zh": "前面的路看起來很空。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then keep going at this speed.",
+      "phonetic": "/ðɛn kip ˈɡoʊɪŋ æt ðɪs spid/",
+      "zh": "那就保持這個速度前進。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My hands feel a little tight.",
+      "phonetic": "/maɪ hændz fil ə ˈlɪtəl taɪt/",
+      "zh": "我的手有點太緊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Relax your grip on the wheel.",
+      "phonetic": "/rɪˈlæks jʊr ɡrɪp ɑn ðə wil/",
+      "zh": "方向盤握鬆一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which lane should I stay in?",
+      "phonetic": "/wɪtʃ leɪn ʃʊd aɪ steɪ ɪn?/",
+      "zh": "我該走哪一個車道？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stay in the right lane.",
+      "phonetic": "/steɪ ɪn ðə raɪt leɪn/",
+      "zh": "走在右邊車道。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "There is a car behind us.",
+      "phonetic": "/ðɛr ɪz ə kɑr bɪˈhaɪnd ʌs/",
+      "zh": "我們後面有車。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just keep a steady speed.",
+      "phonetic": "/dʒʌst kip ə ˈstɛdi spid/",
+      "zh": "保持穩定速度就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I speed up a little?",
+      "phonetic": "/ʃʊd aɪ spid ʌp ə ˈlɪtəl?/",
+      "zh": "我可以稍微加速嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, press the gas gently.",
+      "phonetic": "/jɛs prɛs ðə ɡæs ˈdʒɛntli/",
+      "zh": "好，輕輕踩油門。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now the car is going faster.",
+      "phonetic": "/naʊ ðə kɑr ɪz ˈɡoʊɪŋ ˈfæstər/",
+      "zh": "現在車子變快了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stay calm and hold it steady.",
+      "phonetic": "/steɪ kɑm ænd hoʊld ɪt ˈstɛdi/",
+      "zh": "保持冷靜，穩住就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is that noise outside?",
+      "phonetic": "/wʌt ɪz ðæt nɔɪz ˌaʊtˈsaɪd?/",
+      "zh": "外面那是什麼聲音？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is just the road surface.",
+      "phonetic": "/ɪt ɪz dʒʌst ðə roʊd ˈsɜrfɪs/",
+      "zh": "那只是路面的聲音。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I look at the speedometer?",
+      "phonetic": "/kæn aɪ lʊk æt ðə spiˈdɑmɪtər?/",
+      "zh": "我可以看一下時速表嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Glance at it very quickly.",
+      "phonetic": "/ɡlæns æt ɪt ˈvɛri ˈkwɪkli/",
+      "zh": "很快瞄一眼就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We are driving quite well today.",
+      "phonetic": "/wi ɑr ˈdraɪvɪŋ kwaɪt wɛl təˈdeɪ/",
+      "zh": "我們今天開得還不錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You are doing a good job.",
+      "phonetic": "/ju ɑr ˈduɪŋ ə ɡʊd dʒɑb/",
+      "zh": "你做得很好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you want me to slow down?",
+      "phonetic": "/du ju wɑnt mi tu sloʊ daʊn?/",
+      "zh": "你要我慢下來嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ease off the gas a little.",
+      "phonetic": "/iz ɔf ðə ɡæs ə ˈlɪtəl/",
+      "zh": "油門稍微放開一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How do I slow the car down?",
+      "phonetic": "/haʊ du aɪ sloʊ ðə kɑr daʊn?/",
+      "zh": "我要怎麼讓車子慢下來？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Press the brake pedal gently.",
+      "phonetic": "/prɛs ðə breɪk ˈpɛdəl ˈdʒɛntli/",
+      "zh": "輕輕踩煞車踏板。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The car slows down smoothly.",
+      "phonetic": "/ðə kɑr sloʊz daʊn ˈsmuðli/",
+      "zh": "車子平順地慢下來了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep this slow speed now.",
+      "phonetic": "/kip ðɪs sloʊ spid naʊ/",
+      "zh": "保持這個慢速度。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is this the main road now?",
+      "phonetic": "/ɪz ðɪs ðə meɪn roʊd naʊ?/",
+      "zh": "現在這是主要道路嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We are on the main road.",
+      "phonetic": "/wi ɑr ɑn ðə meɪn roʊd/",
+      "zh": "我們在主要道路上了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "There are many cars around us.",
+      "phonetic": "/ðɛr ɑr ˈmɛni kɑrz əˈraʊnd ʌs/",
+      "zh": "我們周圍有很多車。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Watch the car in front.",
+      "phonetic": "/wɑtʃ ðə kɑr ɪn frʌnt/",
+      "zh": "注意前面的那輛車。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am getting used to this.",
+      "phonetic": "/aɪ æm ˈɡɛtɪŋ juzd tu ðɪs/",
+      "zh": "我開始習慣了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is the right feeling.",
+      "phonetic": "/ðæt ɪz ðə raɪt ˈfilɪŋ/",
+      "zh": "就是這個感覺。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I turn left at the corner?",
+      "phonetic": "/ʃʊd aɪ tɜrn lɛft æt ðə ˈkɔrnər?/",
+      "zh": "我該在轉角左轉嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, signal before you turn.",
+      "phonetic": "/jɛs ˈsɪɡnəl bɪˈfɔr ju tɜrn/",
+      "zh": "是，轉彎前先打方向燈。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is the turn signal lever?",
+      "phonetic": "/wɛr ɪz ðə tɜrn ˈsɪɡnəl ˈlɛvər?/",
+      "zh": "方向燈撥桿在哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is behind the steering wheel.",
+      "phonetic": "/ɪt ɪz bɪˈhaɪnd ðə ˈstɪrɪŋ wil/",
+      "zh": "在方向盤後面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do I push the lever up?",
+      "phonetic": "/du aɪ pʊʃ ðə ˈlɛvər ʌp?/",
+      "zh": "我要把撥桿往上推嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Push it up for a right turn.",
+      "phonetic": "/pʊʃ ɪt ʌp fɔr ə raɪt tɜrn/",
+      "zh": "往上是打右轉方向燈。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My blinker is making a ticking sound.",
+      "phonetic": "/maɪ ˈblɪŋkər ɪz ˈmeɪkɪŋ ə ˈtɪkɪŋ saʊnd/",
+      "zh": "我的方向燈一直發出滴答聲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That means the signal works.",
+      "phonetic": "/ðæt minz ðə ˈsɪɡnəl wɜrks/",
+      "zh": "那表示方向燈在運作。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "When should I start the signal?",
+      "phonetic": "/wɛn ʃʊd aɪ stɑrt ðə ˈsɪɡnəl?/",
+      "zh": "我該什麼時候打方向燈？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Turn it on before the corner.",
+      "phonetic": "/tɜrn ɪt ɑn bɪˈfɔr ðə ˈkɔrnər/",
+      "zh": "轉彎前就要打開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "There is a car coming from behind.",
+      "phonetic": "/ðɛr ɪz ə kɑr ˈkʌmɪŋ frʌm bɪˈhaɪnd/",
+      "zh": "後面有一輛車過來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wait for it to pass first.",
+      "phonetic": "/weɪt fɔr ɪt tu pæs fɜrst/",
+      "zh": "先等它過去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I turn now?",
+      "phonetic": "/kæn aɪ tɜrn naʊ?/",
+      "zh": "我現在可以轉了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the road is clear.",
+      "phonetic": "/jɛs ðə roʊd ɪz klɪr/",
+      "zh": "可以，路上沒車了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My turn was a bit wide.",
+      "phonetic": "/maɪ tɜrn wʌz ə bɪt waɪd/",
+      "zh": "我這次轉得有點寬。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Next time turn a little earlier.",
+      "phonetic": "/nɛkst taɪm tɜrn ə ˈlɪtəl ˈɜrliər/",
+      "zh": "下次早一點轉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The light ahead is turning red.",
+      "phonetic": "/ðə laɪt əˈhɛd ɪz ˈtɜrnɪŋ rɛd/",
+      "zh": "前面的燈變成紅燈了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stop before the white line.",
+      "phonetic": "/stɑp bɪˈfɔr ðə waɪt laɪn/",
+      "zh": "在白線前停下來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where exactly should I stop?",
+      "phonetic": "/wɛr ɪɡˈzæktli ʃʊd aɪ stɑp?/",
+      "zh": "我到底該停在哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Right at the stop line.",
+      "phonetic": "/raɪt æt ðə stɑp laɪn/",
+      "zh": "就停在停止線前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My engine just stopped suddenly.",
+      "phonetic": "/maɪ ˈɛndʒən dʒʌst stɑpt ˈsʌdənli/",
+      "zh": "我的引擎剛剛突然熄火了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You released the clutch too fast.",
+      "phonetic": "/ju rɪˈlist ðə klʌtʃ tu fæst/",
+      "zh": "你離合器放太快了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What did I do wrong?",
+      "phonetic": "/wʌt dɪd aɪ du rɔŋ?/",
+      "zh": "我做錯了什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Your left foot came up quickly.",
+      "phonetic": "/jʊr lɛft fʊt keɪm ʌp ˈkwɪkli/",
+      "zh": "你的左腳抬得太快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is it bad to stall the engine?",
+      "phonetic": "/ɪz ɪt bæd tu stɔl ði ˈɛndʒən?/",
+      "zh": "熄火是不好的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, it happens to everyone.",
+      "phonetic": "/noʊ ɪt ˈhæpənz tu ˈɛvriwʌn/",
+      "zh": "不會，每個人都會這樣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I start the car again?",
+      "phonetic": "/ʃʊd aɪ stɑrt ðə kɑr əˈɡɛn?/",
+      "zh": "我該重新發動車子嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Press the clutch and restart.",
+      "phonetic": "/prɛs ðə klʌtʃ ænd riˈstɑrt/",
+      "zh": "踩離合器重新發動。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Cars behind us are waiting.",
+      "phonetic": "/kɑrz bɪˈhaɪnd ʌs ɑr ˈweɪtɪŋ/",
+      "zh": "後面的車子在等。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stay calm and take your time.",
+      "phonetic": "/steɪ kɑm ænd teɪk jʊr taɪm/",
+      "zh": "保持冷靜，慢慢來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I am a little nervous now.",
+      "phonetic": "/aɪ æm ə ˈlɪtəl ˈnɜrvəs naʊ/",
+      "zh": "我現在有點緊張。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Breathe slowly and try again.",
+      "phonetic": "/brið ˈsloʊli ænd traɪ əˈɡɛn/",
+      "zh": "慢慢呼吸，再試一次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How do I release the clutch better?",
+      "phonetic": "/haʊ du aɪ rɪˈlis ðə klʌtʃ ˈbɛtər?/",
+      "zh": "我要怎麼把離合器放得更好？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lift your foot very slowly.",
+      "phonetic": "/lɪft jʊr fʊt ˈvɛri ˈsloʊli/",
+      "zh": "腳抬得非常慢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now the car is moving again.",
+      "phonetic": "/naʊ ðə kɑr ɪz ˈmuvɪŋ əˈɡɛn/",
+      "zh": "現在車子又動了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Change to second gear now.",
+      "phonetic": "/tʃeɪndʒ tu ˈsɛkənd ɡɪr naʊ/",
+      "zh": "現在換到二檔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Tell me how to change gear.",
+      "phonetic": "/tɛl mi haʊ tu tʃeɪndʒ ɡɪr/",
+      "zh": "告訴我怎麼換檔。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Press the clutch and move it.",
+      "phonetic": "/prɛs ðə klʌtʃ ænd muv ɪt/",
+      "zh": "踩離合器然後撥排檔桿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Second gear feels much smoother.",
+      "phonetic": "/ˈsɛkənd ɡɪr filz mʌtʃ ˈsmuðər/",
+      "zh": "二檔感覺順多了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You are learning very quickly.",
+      "phonetic": "/ju ɑr ˈlɜrnɪŋ ˈvɛri ˈkwɪkli/",
+      "zh": "你學得很快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Another corner is coming up.",
+      "phonetic": "/əˈnʌðər ˈkɔrnər ɪz ˈkʌmɪŋ ʌp/",
+      "zh": "又要到一個轉角了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Signal early and check mirrors.",
+      "phonetic": "/ˈsɪɡnəl ˈɜrli ænd tʃɛk ˈmɪrərz/",
+      "zh": "早點打方向燈，看一下後照鏡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which way does this road turn?",
+      "phonetic": "/wɪtʃ weɪ dʌz ðɪs roʊd tɜrn?/",
+      "zh": "這條路往哪邊轉？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It turns left after the bridge.",
+      "phonetic": "/ɪt tɜrnz lɛft ˈæftər ðə brɪdʒ/",
+      "zh": "過橋之後左轉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "There is a bicycle on the left.",
+      "phonetic": "/ðɛr ɪz ə ˈbaɪsɪkəl ɑn ðə lɛft/",
+      "zh": "左邊有一輛腳踏車。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Slow down and give it room.",
+      "phonetic": "/sloʊ daʊn ænd ɡɪv ɪt rum/",
+      "zh": "慢下來，給它一點空間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I finish the turn slowly?",
+      "phonetic": "/kæn aɪ ˈfɪnɪʃ ðə tɜrn ˈsloʊli?/",
+      "zh": "我可以慢慢把彎轉完嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Take your time with it.",
+      "phonetic": "/teɪk jʊr taɪm wɪð ɪt/",
+      "zh": "慢慢來就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thank you for being patient.",
+      "phonetic": "/θæŋk ju fɔr ˈbiɪŋ ˈpeɪʃənt/",
+      "zh": "謝謝你這麼有耐心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You did well at the intersection.",
+      "phonetic": "/ju dɪd wɛl æt ði ˌɪntərˈsɛkʃən/",
+      "zh": "你在路口表現得很好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "First, park along the curb here.",
+      "phonetic": "/fɜrst pɑrk əˈlɔŋ ðə kɜrb hɪr/",
+      "zh": "先靠路邊停車。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will turn the signal on.",
+      "phonetic": "/aɪ wɪl tɜrn ðə ˈsɪgnəl ɑn/",
+      "zh": "我把方向燈打開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which car should I park behind?",
+      "phonetic": "/wɪtʃ kɑr ʃʊd aɪ pɑrk bɪˈhaɪnd?/",
+      "zh": "我該停在哪一輛車後面？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Behind the white car, not closer.",
+      "phonetic": "/bɪˈhaɪnd ðə waɪt kɑr nɑt ˈkloʊsər/",
+      "zh": "停在白色那輛後面，別再靠近。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the mirror showing the back tire?",
+      "phonetic": "/ɪz ðə ˈmɪrər ˈʃoʊɪŋ ðə bæk ˈtaɪər?/",
+      "zh": "後照鏡看得到後輪嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is, but you must adjust it.",
+      "phonetic": "/ɪt ɪz bʌt ju mʌst əˈdʒʌst ɪt/",
+      "zh": "看得到，但你得調一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How far are we from the curb?",
+      "phonetic": "/haʊ fɑr ɑr wi frʌm ðə kɜrb?/",
+      "zh": "我們離路邊多遠？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "About one hand from the curb.",
+      "phonetic": "/əˈbaʊt wʌn hænd frʌm ðə kɜrb/",
+      "zh": "離路邊大約一個手掌。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I use the reverse gear now?",
+      "phonetic": "/ʃʊd aɪ juz ðə rɪˈvɜrs gɪr naʊ?/",
+      "zh": "現在該用倒車檔了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, press the clutch fully first.",
+      "phonetic": "/jɛs prɛs ðə klʌtʃ ˈfʊli fɜrst/",
+      "zh": "對，先離合器踩到底。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do I look over my shoulder?",
+      "phonetic": "/du aɪ lʊk ˈoʊvər maɪ ˈʃoʊldər?/",
+      "zh": "我要轉頭看後面嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, always check the blind spot.",
+      "phonetic": "/jɛs ˈɔlweɪz tʃɛk ðə blaɪnd spɑt/",
+      "zh": "要，一定要看死角。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you see the car behind us?",
+      "phonetic": "/kæn ju si ðə kɑr bɪˈhaɪnd ʌs?/",
+      "zh": "你看得到後面的車嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The truck is waiting for us.",
+      "phonetic": "/ðə trʌk ɪz ˈweɪtɪŋ fɔr ʌs/",
+      "zh": "那輛卡車在等我們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Back the car slowly and gently.",
+      "phonetic": "/bæk ðə kɑr ˈsloʊli ænd ˈdʒɛntli/",
+      "zh": "慢慢輕輕地倒車。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I am backing very slowly now.",
+      "phonetic": "/aɪ æm ˈbækɪŋ ˈvɛri ˈsloʊli naʊ/",
+      "zh": "我現在倒得很慢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Watch your left mirror while reversing.",
+      "phonetic": "/wɑtʃ jɔr lɛft ˈmɪrər waɪl rɪˈvɜrsɪŋ/",
+      "zh": "倒車時看著左後照鏡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I am watching it all the time.",
+      "phonetic": "/aɪ æm ˈwɑtʃɪŋ ɪt ɔl ðə taɪm/",
+      "zh": "我一直都看著。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Stop the car right here please.",
+      "phonetic": "/stɑp ðə kɑr raɪt hɪr pliz/",
+      "zh": "請停在這裡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I stopped the car already.",
+      "phonetic": "/aɪ stɑpt ðə kɑr ɔlˈrɛdi/",
+      "zh": "我已經把車停下了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where should the car end up?",
+      "phonetic": "/wɛr ʃʊd ðə kɑr ɛnd ʌp?/",
+      "zh": "車最後該停在哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Beside the tree, next to it.",
+      "phonetic": "/bɪˈsaɪd ðə tri nɛkst tu ɪt/",
+      "zh": "在那棵樹旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Take your time, we are fine.",
+      "phonetic": "/teɪk jʊr taɪm wi ər faɪn/",
+      "zh": "慢慢來，我們不急。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thank you, I feel less nervous.",
+      "phonetic": "/θæŋk ju aɪ fil lɛs ˈnɜrvəs/",
+      "zh": "謝謝，我沒那麼緊張了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What did I do wrong just now?",
+      "phonetic": "/wʌt dɪd aɪ du rɔŋ dʒʌst naʊ?/",
+      "zh": "我剛剛做錯了什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You are still far from the curb.",
+      "phonetic": "/ju ɑr stɪl fɑr frʌm ðə kɜrb/",
+      "zh": "你離路邊還是有點遠。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I fix it and start again?",
+      "phonetic": "/ʃʊd aɪ fɪks ɪt ænd stɑrt əˈgɛn?/",
+      "zh": "我該修正再來一次嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, pull forward and try again.",
+      "phonetic": "/jɛs pʊl ˈfɔrwərd ænd traɪ əˈgɛn/",
+      "zh": "對，往前開再試一次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is somebody behind me right now?",
+      "phonetic": "/ɪz ˈsʌmˌbɑdi bɪˈhaɪnd mi raɪt naʊ?/",
+      "zh": "現在有人在我後面嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, the road behind is clear.",
+      "phonetic": "/noʊ ðə roʊd bɪˈhaɪnd ɪz klɪr/",
+      "zh": "沒有，後面路上沒車。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are we allowed to park here?",
+      "phonetic": "/ɑr wi əˈlaʊd tu pɑrk hɪr?/",
+      "zh": "這裡可以停車嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "There is a sign saying no.",
+      "phonetic": "/ðɛr ɪz ə saɪn ˈseɪɪŋ noʊ/",
+      "zh": "有個牌子寫著不行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Why do you check the mirrors?",
+      "phonetic": "/waɪ du ju tʃɛk ðə ˈmɪrərz/",
+      "zh": "你為什麼一直看後照鏡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They tell me where the car is.",
+      "phonetic": "/ðeɪ tɛl mi wɛr ðə kɑr ɪz/",
+      "zh": "它們告訴我車的位置。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How do I keep the car straight?",
+      "phonetic": "/haʊ du aɪ kip ðə kɑr streɪt?/",
+      "zh": "我要怎麼讓車保持直線？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold the wheel lightly and look back.",
+      "phonetic": "/hoʊld ðə wil ˈlaɪtli ænd lʊk bæk/",
+      "zh": "方向盤輕握，眼睛往後看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I open the door and look?",
+      "phonetic": "/kæn aɪ ˈoʊpən ðə dɔr ænd lʊk?/",
+      "zh": "我可以開門看一下嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, just use the side mirror.",
+      "phonetic": "/noʊ dʒʌst juz ðə saɪd ˈmɪrər/",
+      "zh": "不行，用後照鏡就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Okay, I am going to try again.",
+      "phonetic": "/oʊˈkeɪ aɪ æm ˈgoʊɪŋ tu traɪ əˈgɛn/",
+      "zh": "好，我再試一次。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, take it nice and slow.",
+      "phonetic": "/gʊd teɪk ɪt naɪs ænd sloʊ/",
+      "zh": "很好，慢慢來就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "When should I turn the wheel?",
+      "phonetic": "/wɛn ʃʊd aɪ tɜrn ðə wil?/",
+      "zh": "我什麼時候該轉方向盤？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Turn it when the mirror shows curb.",
+      "phonetic": "/tɜrn ɪt wɛn ðə ˈmɪrər ʃoʊz kɜrb/",
+      "zh": "後照鏡看到路邊時就轉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is this close enough to the curb?",
+      "phonetic": "/ɪz ðɪs kloʊs ɪˈnʌf tu ðə kɜrb?/",
+      "zh": "這樣離路邊夠近了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Almost, move a little closer please.",
+      "phonetic": "/ˈɔlmoʊst muv ə ˈlɪtəl ˈkloʊsər pliz/",
+      "zh": "差不多，請再靠近一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How many turns should I make?",
+      "phonetic": "/haʊ ˈmɛni tɜrnz ʃʊd aɪ meɪk?/",
+      "zh": "我該轉幾圈方向盤？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One full turn to the right.",
+      "phonetic": "/wʌn fʊl tɜrn tu ðə raɪt/",
+      "zh": "向右打一圈。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do I need to check mirror again?",
+      "phonetic": "/du aɪ nid tu tʃɛk ˈmɪrər əˈgɛn?/",
+      "zh": "我需要再看一次後照鏡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, and before you move forward.",
+      "phonetic": "/jɛs ænd bɪˈfɔr ju muv ˈfɔrwərd/",
+      "zh": "要，往前開之前也要看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Well, the car sits by the curb.",
+      "phonetic": "/wɛl ðə kɑr sɪts baɪ ðə kɜrb/",
+      "zh": "好的，車子靠著路邊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great, you did that one well.",
+      "phonetic": "/greɪt ju dɪd ðæt wʌn wɛl/",
+      "zh": "太好了，這次做得很好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now listen to me very carefully.",
+      "phonetic": "/naʊ ˈlɪsən tu mi ˈvɛri ˈkɛrfəli/",
+      "zh": "現在仔細聽我說。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I am listening to you, teacher.",
+      "phonetic": "/aɪ æm ˈlɪsənɪŋ tu ju ˈtitʃər/",
+      "zh": "教練，我在聽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Watch the cars in the other mirror.",
+      "phonetic": "/wɑtʃ ðə kɑrz ɪn ði ˈʌðər ˈmɪrər/",
+      "zh": "看另一邊後照鏡裡的車。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A small car is passing us.",
+      "phonetic": "/ə smɔl kɑr ɪz ˈpæsɪŋ ʌs/",
+      "zh": "有一輛小車正經過我們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Take your foot off the clutch slowly.",
+      "phonetic": "/teɪk jɔr fʊt ɔf ðə klʌtʃ ˈsloʊli/",
+      "zh": "腳慢慢從離合器上移開。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My foot is off the pedal now.",
+      "phonetic": "/maɪ fʊt ɪz ɔf ðə ˈpɛdəl naʊ/",
+      "zh": "我的腳已經離開踏板了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good, the car is moving backwards now.",
+      "phonetic": "/gʊd ðə kɑr ɪz ˈmuvɪŋ ˈbækwərdz naʊ/",
+      "zh": "很好，車子正在往後動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It feels slower than I thought.",
+      "phonetic": "/ɪt filz ˈsloʊər ðæn aɪ θɔt/",
+      "zh": "感覺比我以為的還慢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I stop and look again?",
+      "phonetic": "/kæn aɪ stɑp ænd lʊk əˈgɛn?/",
+      "zh": "我可以停下來再看一次嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stop and look, that is fine.",
+      "phonetic": "/stɑp ænd lʊk ðæt ɪz faɪn/",
+      "zh": "停下來看，可以。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The back of the car is close.",
+      "phonetic": "/ðə bæk əv ðə kɑr ɪz kloʊs/",
+      "zh": "現在車尾很靠近了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "How much space is left behind?",
+      "phonetic": "/haʊ mʌtʃ speɪs ɪz lɛft bɪˈhaɪnd?/",
+      "zh": "後面還剩多少空間？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "There is still a lot of space.",
+      "phonetic": "/ðɛr ɪz stɪl ə lɑt əv speɪs/",
+      "zh": "後面還有很多空間。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then I will keep reversing slowly.",
+      "phonetic": "/ðɛn aɪ wɪl kip rɪˈvɜrsɪŋ ˈsloʊli/",
+      "zh": "那我繼續慢慢倒車。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Wait, a bicycle is coming behind us.",
+      "phonetic": "/weɪt ə ˈbaɪsɪkəl ɪz ˈkʌmɪŋ bɪˈhaɪnd ʌs/",
+      "zh": "等一下，後面有腳踏車過來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I stopped the car right away.",
+      "phonetic": "/aɪ stɑpt ðə kɑr raɪt əˈweɪ/",
+      "zh": "我馬上把車停住了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Turn your head and look back.",
+      "phonetic": "/tɜrn jɔr hɛd ænd lʊk bæk/",
+      "zh": "轉頭往後看。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The bicycle has already passed us.",
+      "phonetic": "/ðə ˈbaɪsɪkəl hæz ɔlˈrɛdi pæst ʌs/",
+      "zh": "那輛腳踏車已經過去了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Alright, keep going back a little.",
+      "phonetic": "/ɔlˈraɪt kip ˈgoʊɪŋ bæk ə ˈlɪtəl/",
+      "zh": "好，繼續再倒一點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I am going back very slowly.",
+      "phonetic": "/aɪ æm ˈgoʊɪŋ bæk ˈvɛri ˈsloʊli/",
+      "zh": "我倒得很慢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is my hand position on wheel okay?",
+      "phonetic": "/ɪz maɪ hænd pəˈzɪʃən ɑn wil oʊˈkeɪ?/",
+      "zh": "我握方向盤的手勢對嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Move your left hand down a bit.",
+      "phonetic": "/muv jɔr lɛft hænd daʊn ə bɪt/",
+      "zh": "左手再往下放一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you always look at the mirror?",
+      "phonetic": "/du ju ˈɔlweɪz lʊk æt ðə ˈmɪrər?/",
+      "zh": "你都一直看著後照鏡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I look at it every few seconds.",
+      "phonetic": "/aɪ lʊk æt ɪt ˈɛvri fju ˈsɛkəndz/",
+      "zh": "我每隔幾秒就看一次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Turn the wheel a little left.",
+      "phonetic": "/tɜrn ðə wil ə ˈlɪtəl lɛft/",
+      "zh": "方向盤往左打一點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Like this, or even more?",
+      "phonetic": "/laɪk ðɪs ɔr ˈivən mɔr?/",
+      "zh": "這樣，還是再多一點？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are the wheels straight right now?",
+      "phonetic": "/ɑr ðə wilz streɪt raɪt naʊ?/",
+      "zh": "現在輪子正了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They look a little to the left.",
+      "phonetic": "/ðeɪ lʊk ə ˈlɪtəl tu ðə lɛft/",
+      "zh": "看起來有點偏左。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is the back wheel now?",
+      "phonetic": "/wɛr ɪz ðə bæk wil naʊ?/",
+      "zh": "後輪現在在哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is near the curb already.",
+      "phonetic": "/ɪt ɪz nɪr ðə kɜrb ɔlˈrɛdi/",
+      "zh": "已經靠近路邊了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Keep your eyes on that mirror.",
+      "phonetic": "/kip jɔr aɪz ɑn ðæt ˈmɪrər/",
+      "zh": "眼睛盯著那面後照鏡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My eyes are on it, teacher.",
+      "phonetic": "/maɪ aɪz ɑr ɑn ɪt ˈtitʃər/",
+      "zh": "教練，我盯著呢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now the car is almost straight.",
+      "phonetic": "/naʊ ðə kɑr ɪz ˈɔlmoʊst streɪt/",
+      "zh": "現在車子幾乎正了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Should I stop the car here?",
+      "phonetic": "/ʃʊd aɪ stɑp ðə kɑr hɪr?/",
+      "zh": "我該在這裡停車嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, stop the car and rest.",
+      "phonetic": "/jɛs stɑp ðə kɑr ænd rɛst/",
+      "zh": "對，停車休息一下。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My legs feel a little tired.",
+      "phonetic": "/maɪ lɛgz fil ə ˈlɪtəl ˈtaɪərd/",
+      "zh": "我的腿有點痠。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where did you press the brake?",
+      "phonetic": "/wɛr dɪd ju prɛs ðə breɪk?/",
+      "zh": "你剛剛在哪裡踩了煞車？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I pressed it when the bicycle came.",
+      "phonetic": "/aɪ prɛst ɪt wɛn ðə ˈbaɪsɪkəl keɪm/",
+      "zh": "腳踏車過來的時候我踩了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That was my passenger brake, right?",
+      "phonetic": "/ðæt wʌz maɪ ˈpæsɪndʒər breɪk raɪt?/",
+      "zh": "那是我踩的副煞車，對吧？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You can feel it under your foot.",
+      "phonetic": "/ju kæn fil ɪt ˈʌndər jɔr fʊt/",
+      "zh": "你的腳下可以感覺得到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That is my job on this side.",
+      "phonetic": "/ðæt ɪz maɪ dʒɑb ɑn ðɪs saɪd/",
+      "zh": "在這邊這是我的工作。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So the car can stop safely.",
+      "phonetic": "/soʊ ðə kɑr kæn stɑp ˈseɪfli/",
+      "zh": "這樣車子才能安全停下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Alright, let us drive back.",
+      "phonetic": "/ɔlˈraɪt lɛt ʌs draɪv bæk/",
+      "zh": "好，我們開回去。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will signal and move out.",
+      "phonetic": "/aɪ wɪl ˈsɪgnəl ænd muv aʊt/",
+      "zh": "我打方向燈然後開出去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Nice work today with the parking.",
+      "phonetic": "/naɪs wɜrk təˈdeɪ wɪð ðə ˈpɑrkɪŋ/",
+      "zh": "你今天停車練得不錯。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thank you, I want more practice.",
+      "phonetic": "/θæŋk ju aɪ wɑnt mɔr ˈpræktɪs/",
+      "zh": "謝謝，我想多練一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Stop beside the curb and reverse slowly.",
+      "phonetic": "/stɑp bɪˈsaɪd ðə kɜrb ænd rɪˈvɜrs ˈsloʊli/",
+      "zh": "停在路邊，然後慢慢倒車。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will check the mirror first.",
+      "phonetic": "/aɪ wɪl ʧɛk ðə ˈmɪrər fɜrst/",
+      "zh": "我先看一下後照鏡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which mirror shows the curb?",
+      "phonetic": "/wɪʧ ˈmɪrər ʃoʊz ðə kɜrb?/",
+      "zh": "哪一面後照鏡看得到路邊？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The left one shows it clearly.",
+      "phonetic": "/ðə lɛft wʌn ʃoʊz ɪt ˈklɪrli/",
+      "zh": "左邊那面看得很清楚。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let me park near the gate.",
+      "phonetic": "/lɛt mi pɑrk nɪr ðə ɡeɪt/",
+      "zh": "讓我在門口附近停車。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Slow down and check the mirror.",
+      "phonetic": "/sloʊ daʊn ænd tʃɛk ðə ˈmɪrər/",
+      "zh": "慢下來，看一下後照鏡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which spot is ours today?",
+      "phonetic": "/wɪtʃ spɑt ɪz ˈaʊərz təˈdeɪ?/",
+      "zh": "今天哪個車位是我們的？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The one beside the blue car.",
+      "phonetic": "/ðə wʌn bɪˈsaɪd ðə blu kɑr/",
+      "zh": "藍色車子旁邊那個。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Turn the wheel a little more.",
+      "phonetic": "/tɜrn ðə wil ə ˈlɪtəl mɔr/",
+      "zh": "方向盤再轉一點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I am turning it very slowly.",
+      "phonetic": "/aɪ æm ˈtɜrnɪŋ ɪt ˈvɛri ˈsloʊli/",
+      "zh": "我轉得很慢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Stop right here and hold still.",
+      "phonetic": "/stɑp raɪt hɪr ænd hoʊld stɪl/",
+      "zh": "就在這裡停，保持不動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The car is almost in line.",
+      "phonetic": "/ðə kɑr ɪz ˈɔlmoʊst ɪn laɪn/",
+      "zh": "車子差不多對齊了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now put the gear in park.",
+      "phonetic": "/naʊ pʊt ðə ɡɪr ɪn pɑrk/",
+      "zh": "現在把排檔打到停車檔。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is already in park now.",
+      "phonetic": "/ɪt ɪz ɔlˈrɛdi ɪn pɑrk naʊ/",
+      "zh": "已經在停車檔了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Pull the hand brake up please.",
+      "phonetic": "/pʊl ðə hænd breɪk ʌp pliz/",
+      "zh": "請把手煞車拉起來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Done, the car will not move.",
+      "phonetic": "/dʌn ðə kɑr wɪl nɑt muv/",
+      "zh": "好了，車子不會動了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Switch off the engine and lights.",
+      "phonetic": "/swɪtʃ ɔf ði ˈɛndʒən ænd laɪts/",
+      "zh": "把引擎和車燈關掉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I turned off the engine first.",
+      "phonetic": "/aɪ tɜrnd ɔf ði ˈɛndʒən fɜrst/",
+      "zh": "我先關引擎了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is this how we end the lesson?",
+      "phonetic": "/ɪz ðɪs haʊ wi ɛnd ðə ˈlɛsən?/",
+      "zh": "我們下課都這樣結束嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, we always park here first.",
+      "phonetic": "/jɛs wi ˈɔlweɪz pɑrk hɪr fɜrst/",
+      "zh": "對，我們每次都先停在這裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Take your bag from the back seat.",
+      "phonetic": "/teɪk jʊr bæɡ frʌm ðə bæk sit/",
+      "zh": "從後座拿你的包包。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let me check under the seat too.",
+      "phonetic": "/lɛt mi tʃɛk ˈʌndər ðə sit tu/",
+      "zh": "讓我也檢查一下座位底下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How many minutes did we drive?",
+      "phonetic": "/haʊ ˈmɛni ˈmɪnɪts dɪd wi draɪv?/",
+      "zh": "我們開了多少分鐘？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "About half an hour on the road.",
+      "phonetic": "/əˈbaʊt hæf ən ˈaʊər ɑn ðə roʊd/",
+      "zh": "在路上大約半小時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did I do anything really wrong?",
+      "phonetic": "/dɪd aɪ du ˈɛniˌθɪŋ ˈrɪli rɔŋ?/",
+      "zh": "我有做什麼真的很糟的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, your steering is much better.",
+      "phonetic": "/noʊ jʊr ˈstɪrɪŋ ɪz mʌtʃ ˈbɛtər/",
+      "zh": "沒有，你的轉向好多了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What should I practice this week?",
+      "phonetic": "/wɑt ʃʊd aɪ ˈpræktɪs ðɪs wik?/",
+      "zh": "這週我該練什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Practice the clutch and the brake.",
+      "phonetic": "/ˈpræktɪs ðə klʌtʃ ænd ðə breɪk/",
+      "zh": "練離合器和煞車。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I write the homework down?",
+      "phonetic": "/ʃʊd aɪ raɪt ðə ˈhoʊmˌwɜrk daʊn?/",
+      "zh": "我該把作業寫下來嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, keep it in your notebook.",
+      "phonetic": "/jɛs kip ɪt ɪn jʊr ˈnoʊtˌbʊk/",
+      "zh": "對，記在你的筆記本裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "When is my next lesson, Coach?",
+      "phonetic": "/wɛn ɪz maɪ nɛkst ˈlɛsən koʊtʃ?/",
+      "zh": "教練，我下次上課是什麼時候？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let me look at the schedule.",
+      "phonetic": "/lɛt mi lʊk æt ðə ˈskɛdʒul/",
+      "zh": "我看一下課表。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Could we meet on Saturday morning?",
+      "phonetic": "/kʊd wi mit ɑn ˈsætərˌdeɪ ˈmɔrnɪŋ?/",
+      "zh": "我們可以星期六早上見嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Saturday morning is fine with me.",
+      "phonetic": "/ˈsætərˌdeɪ ˈmɔrnɪŋ ɪz faɪn wɪð mi/",
+      "zh": "星期六早上我可以。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What time should I come here?",
+      "phonetic": "/wɑt taɪm ʃʊd aɪ kʌm hɪr?/",
+      "zh": "我該幾點來這裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Come at nine and bring your card.",
+      "phonetic": "/kʌm æt naɪn ænd brɪŋ jʊr kɑrd/",
+      "zh": "九點來，帶你的證件。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do I need my learner permit?",
+      "phonetic": "/du aɪ nid maɪ ˈlɜrnər pərˈmɪt?/",
+      "zh": "我需要帶學習駕照嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, always carry it with you.",
+      "phonetic": "/jɛs ˈɔlweɪz ˈkæri ɪt wɪð ju/",
+      "zh": "要，永遠帶在身上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where do I pay for today?",
+      "phonetic": "/wɛr du aɪ peɪ fɔr təˈdeɪ/",
+      "zh": "今天的費用在哪裡付？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Please pay at the front desk.",
+      "phonetic": "/pliz peɪ æt ðə frʌnt dɛsk/",
+      "zh": "請到櫃台付款。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where do I return this clipboard?",
+      "phonetic": "/wɛr du aɪ rɪˈtɜrn ðɪs ˈklɪpˌbɔrd?/",
+      "zh": "這塊板子要還到哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Give it to the man inside.",
+      "phonetic": "/ɡɪv ɪt tu ðə mæn ɪnˈsaɪd/",
+      "zh": "交給裡面的先生。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is a photo allowed here?",
+      "phonetic": "/ɪz ə ˈfoʊtoʊ əˈlaʊd hɪr/",
+      "zh": "這裡可以拍照嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, but do not post it.",
+      "phonetic": "/ʃʊr bʌt du nɑt poʊst ɪt/",
+      "zh": "可以，但不要發出去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My legs feel a bit tired.",
+      "phonetic": "/maɪ lɛɡz fil ə bɪt ˈtaɪərd/",
+      "zh": "我的腿有點累。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is normal for the first day.",
+      "phonetic": "/ðæt ɪz ˈnɔrməl fɔr ðə fɜrst deɪ/",
+      "zh": "第一天這樣很正常。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Was the parking part okay today?",
+      "phonetic": "/wʌz ðə ˈpɑrkɪŋ pɑrt oʊˈkeɪ təˈdeɪ?/",
+      "zh": "今天的停車部分還可以嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You parked straight on the first try.",
+      "phonetic": "/ju pɑrkt streɪt ɑn ðə fɜrst traɪ/",
+      "zh": "你第一次就停得很直。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for being patient with me.",
+      "phonetic": "/θæŋks fɔr ˈbiɪŋ ˈpeɪʃənt wɪð mi/",
+      "zh": "謝謝你對我這麼有耐心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You listened well the whole time.",
+      "phonetic": "/ju ˈlɪsənd wɛl ðə hoʊl taɪm/",
+      "zh": "你整堂課都很用心聽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "See you on Saturday at nine.",
+      "phonetic": "/si ju ɑn ˈsætərˌdeɪ æt naɪn/",
+      "zh": "星期六九點見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Drive safe and study the notes.",
+      "phonetic": "/draɪv seɪf ænd ˈstʌdi ðə noʊts/",
+      "zh": "開車小心，把筆記讀一讀。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will practice before the next class.",
+      "phonetic": "/aɪ wɪl ˈpræktɪs bɪˈfɔr ðə nɛkst klæs/",
+      "zh": "我下次上課前會練習。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, that will help you a lot.",
+      "phonetic": "/ɡʊd ðæt wɪl hɛlp ju ə lɑt/",
+      "zh": "很好，那會幫你很多。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Review the three pedals before Saturday.",
+      "phonetic": "/rɪˈvju ðə θri ˈpɛdəlz bɪˈfɔr ˈsætərˌdeɪ/",
+      "zh": "星期六前複習三個踏板。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will read my notes tonight.",
+      "phonetic": "/aɪ wɪl rid maɪ noʊts təˈnaɪt/",
+      "zh": "我今晚會讀筆記。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hold the wheel with both hands.",
+      "phonetic": "/hoʊld ðə wil wɪð boʊθ hændz./",
+      "zh": "兩手握住方向盤。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Both hands, I will remember that.",
+      "phonetic": "/boʊθ hændz aɪ wɪl rɪˈmɛmbər ðæt/",
+      "zh": "兩手，我會記住。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do not rush when the light turns.",
+      "phonetic": "/du nɑt rʌʃ wɛn ðə laɪt tɜrnz/",
+      "zh": "燈變的時候不要急。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will wait for green.",
+      "phonetic": "/aɪ wɪl weɪt fɔr ɡrin/",
+      "zh": "我會等綠燈。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your mirror check was very good.",
+      "phonetic": "/jʊr ˈmɪrər tʃɛk wʌz ˈvɛri ɡʊd/",
+      "zh": "你的後照鏡檢查做得很好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thank you, I practiced it a lot.",
+      "phonetic": "/θæŋk ju aɪ ˈpræktɪst ɪt ə lɑt/",
+      "zh": "謝謝，我練了很多次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Try to brake a bit earlier.",
+      "phonetic": "/traɪ tu breɪk ə bɪt ˈɜrliər/",
+      "zh": "試著早一點煞車。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will brake earlier next time.",
+      "phonetic": "/aɪ wɪl breɪk ˈɜrliər nɛkst taɪm/",
+      "zh": "我下次會早點煞車。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Why did the engine stop there?",
+      "phonetic": "/waɪ dɪd ði ˈɛndʒən stɑp ðɛr?/",
+      "zh": "引擎為什麼在那裡停了？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The clutch came up too fast.",
+      "phonetic": "/ðə klʌtʃ keɪm ʌp tu fæst/",
+      "zh": "離合器放太快了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where should I look when turning?",
+      "phonetic": "/wɛr ʃʊd aɪ lʊk wɛn ˈtɜrnɪŋ?/",
+      "zh": "轉彎的時候我該看哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Look where you want to go.",
+      "phonetic": "/lʊk wɛr ju wɑnt tu ɡoʊ/",
+      "zh": "看你想去的地方。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Who taught you to drive, Coach?",
+      "phonetic": "/hu tɔt ju tu draɪv koʊtʃ?/",
+      "zh": "教練，誰教你開車的？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My father taught me many years ago.",
+      "phonetic": "/maɪ ˈfɑðər tɔt mi ˈmɛni jɪrz əˈɡoʊ/",
+      "zh": "我爸爸很多年前教我的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How long have you been teaching?",
+      "phonetic": "/haʊ lɔŋ hæv ju bɪn ˈtitʃɪŋ?/",
+      "zh": "你教多久了？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I have taught for ten years.",
+      "phonetic": "/aɪ hæv tɔt fɔr tɛn jɪrz/",
+      "zh": "我教了十年。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which pedal do I press first?",
+      "phonetic": "/wɪtʃ ˈpɛdəl du aɪ prɛs fɜrst?/",
+      "zh": "我先踩哪個踏板？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The clutch comes before the gas.",
+      "phonetic": "/ðə klʌtʃ kʌmz bɪˈfɔr ðə ɡæs/",
+      "zh": "離合器在油門之前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we practice parking again?",
+      "phonetic": "/kæn wi ˈpræktɪs ˈpɑrkɪŋ əˈɡɛn?/",
+      "zh": "我們可以再練一次停車嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We will do it next lesson.",
+      "phonetic": "/wi wɪl du ɪt nɛkst ˈlɛsən/",
+      "zh": "我們下次上課會練。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is my speed too slow on hills?",
+      "phonetic": "/ɪz maɪ spid tu sloʊ ɑn hɪlz?/",
+      "zh": "我在上坡時車速太慢嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, slow is safe for a beginner.",
+      "phonetic": "/noʊ sloʊ ɪz seɪf fɔr ə bɪˈɡɪnər/",
+      "zh": "不會，對新手來說慢才安全。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is my biggest problem now?",
+      "phonetic": "/wɑt ɪz maɪ ˈbɪɡɪst ˈprɑbləm naʊ?/",
+      "zh": "我現在最大的問題是什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You look down at the gear stick.",
+      "phonetic": "/ju lʊk daʊn æt ðə ɡɪr stɪk/",
+      "zh": "你會低頭看排檔桿。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I book the car for Saturday?",
+      "phonetic": "/ʃʊd aɪ bʊk ðə kɑr fɔr ˈsætərˌdeɪ?/",
+      "zh": "我該預約星期六的車嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the desk will book it.",
+      "phonetic": "/jɛs ðə dɛsk wɪl bʊk ɪt/",
+      "zh": "對，櫃台會幫你預約。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have my phone number?",
+      "phonetic": "/du ju hæv maɪ foʊn ˈnʌmbər?/",
+      "zh": "你有我的電話號碼嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it is written there.",
+      "phonetic": "/jɛs ɪt ɪz ˈrɪtən ðɛr/",
+      "zh": "有，上面寫著。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will you call me if it changes?",
+      "phonetic": "/wɪl ju kɔl mi ɪf ɪt ˈtʃeɪndʒɪz?/",
+      "zh": "如果有變動你會打給我嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will call you on Friday.",
+      "phonetic": "/aɪ wɪl kɔl ju ɑn ˈfraɪdeɪ/",
+      "zh": "我星期五會打給你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Maybe we can try the main road.",
+      "phonetic": "/ˈmeɪbi wi kæn traɪ ðə meɪn roʊd/",
+      "zh": "也許我們可以試試主要道路。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can try when you are ready.",
+      "phonetic": "/wi kæn traɪ wɛn ju ɑr ˈrɛdi/",
+      "zh": "等你準備好我們就試。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are the lessons always this long?",
+      "phonetic": "/ɑr ðə ˈlɛsənz ˈɔlweɪz ðɪs lɔŋ?/",
+      "zh": "每堂課都這麼長嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Most lessons last about an hour.",
+      "phonetic": "/moʊst ˈlɛsənz læst əˈbaʊt ən ˈaʊər/",
+      "zh": "大部分課大約一小時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I felt nervous at the first corner.",
+      "phonetic": "/aɪ fɛlt ˈnɜrvəs æt ðə fɜrst ˈkɔrnər/",
+      "zh": "我在第一個轉角很緊張。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Everyone feels nervous the first time.",
+      "phonetic": "/ˈɛvriˌwʌn filz ˈnɜrvəs ðə fɜrst taɪm/",
+      "zh": "第一次大家都會緊張。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Take the notes home and read them.",
+      "phonetic": "/teɪk ðə noʊts hoʊm ænd rid ðɛm/",
+      "zh": "把筆記帶回家讀一讀。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will read them after dinner.",
+      "phonetic": "/aɪ wɪl rid ðɛm ˈæftər ˈdɪnər/",
+      "zh": "我晚飯後會讀。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Remember to bring your permit again.",
+      "phonetic": "/rɪˈmɛmbər tu brɪŋ jʊr pərˈmɪt əˈɡɛn/",
+      "zh": "記得再帶你的駕照。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is always in my wallet.",
+      "phonetic": "/ɪt ɪz ˈɔlweɪz ɪn maɪ ˈwɑlɪt/",
+      "zh": "它一直都在我錢包裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My hands were shaking a little.",
+      "phonetic": "/maɪ hændz wɜr ˈʃeɪkɪŋ ə ˈlɪtəl/",
+      "zh": "我的手有點抖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That will stop after some practice.",
+      "phonetic": "/ðæt wɪl stɑp ˈæftər sʌm ˈpræktɪs/",
+      "zh": "多練幾次就不會了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thank you for the clear lesson.",
+      "phonetic": "/θæŋk ju fɔr ðə klɪr ˈlɛsən/",
+      "zh": "謝謝你這麼清楚的教學。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You did well for a first try.",
+      "phonetic": "/ju dɪd wɛl fɔr ə fɜrst traɪ/",
+      "zh": "第一次這樣算不錯了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's meet at the same spot.",
+      "phonetic": "/lɛts mit æt ðə seɪm spɑt/",
+      "zh": "我們在同一個地方見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same spot, same time on Saturday.",
+      "phonetic": "/seɪm spɑt seɪm taɪm ɑn ˈsætərˌdeɪ/",
+      "zh": "同一個地方，星期六同樣時間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Go home and rest your legs.",
+      "phonetic": "/ɡoʊ hoʊm ænd rɛst jʊr lɛɡz/",
+      "zh": "回家讓腿休息一下。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will sleep early tonight.",
+      "phonetic": "/aɪ wɪl slip ˈɜrli təˈnaɪt/",
+      "zh": "我今晚會早點睡。"
+    }
+  ],
+  "review": {
+    "round": 2,
+    "score": 88,
+    "score_source": "report",
+    "verdict": "APPROVED",
+    "dimensions": {
+      "pair_logic": 22,
+      "idiomatic_a2": 21,
+      "ipa_accuracy": 24,
+      "variety_no_dup": 21
+    },
+    "issues": [
+      {
+        "dim": "pair_logic",
+        "line": 213,
+        "note": "A 問『Can you see the car behind us?』、B 答『The truck is waiting for us.』——car 突兀變 truck，指稱不一致（非致命，可讀成後方另有一輛卡車）。"
+      },
+      {
+        "dim": "idiomatic_a2",
+        "line": 241,
+        "note": "『Turn it when the mirror shows curb.』（視圖行 242）缺冠詞，宜作 the curb；同類小疵另有行 81『Rest your right foot on nothing.』略生硬、行 289『passenger brake』美式口語多說 instructor brake。"
+      },
+      {
+        "dim": "idiomatic_a2",
+        "line": 47,
+        "note": "『Getting used to it takes time.』（視圖行 48）結構已補全，但對 why 未正面作答，屬安撫式回應，可接受。"
+      },
+      {
+        "dim": "variety_no_dup",
+        "line": 273,
+        "note": "118-119『Do I need to check the mirrors? / Check them every few seconds.』與 272-273『Do you always look at the mirror? / I look at it every few seconds.』高度近似；Should I／Do I／Where is 開頭偏多，屬循環練習體裁所致。"
+      },
+      {
+        "dim": "pair_logic",
+        "line": 315,
+        "note": "『Is this how we end the lesson? / Yes, we always park here first.』此處已是收尾停車，first 一詞略鬆，語意稍浮。"
+      }
+    ],
+    "summary_zh": "本輪七處修正（47、133、211、232、260、222、334）在最新視圖中均已落實：47 結構補全、133 補主語、211 副詞前置、232 指代明確、260 語序改為 The back of the car is close.，與外題共用的 222／334 亦已改寫。全篇 200 對依「調座椅與後照鏡、安全帶 → 三踏板 → 起步直行、打燈轉彎、路口熄火 → 路邊停車倒車與副煞車 → 回場停車、作業、約週六早上九點」單向推進，時間、地點、稱謂一致，無 error 級問題；僅零星指稱與冠詞小疵。IPA 依機器證據（SUSPECT 0、逐詞對齊與 IPA 形狀檢查全通過）給分，不因該項扣分。",
+    "model": "skill:hot-sleep-dialogues",
+    "reviewed_at": 1791048263,
+    "content_hash": "sha1:f14ddcc3c75ea31b4f148abcf48ce8d1b45c2ebe"
+  }
+}

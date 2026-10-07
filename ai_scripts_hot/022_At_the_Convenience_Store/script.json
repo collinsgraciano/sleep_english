@@ -243,7 +243,7 @@
       "speaker": "char_b",
       "text": "Just leave it by the counter.",
       "phonetic": "/dʒʌst liv ɪt baɪ ðə ˈkaʊntər/",
-      "zh": "就放在櫃檯旁邊就好。"
+      "zh": "就放在櫃台旁邊就好。"
     },
     {
       "speaker": "char_a",
@@ -339,7 +339,7 @@
       "speaker": "char_b",
       "text": "Great, I'll open a lane.",
       "phonetic": "/ɡreɪt aɪl ˈoʊpən ə leɪn/",
-      "zh": "好，我開一個櫃檯。"
+      "zh": "好，我開一個櫃台。"
     },
     {
       "speaker": "char_a",
@@ -1269,7 +1269,7 @@
       "speaker": "char_a",
       "text": "Please put everything on the counter.",
       "phonetic": "/pliz pʊt ˈɛvriˌθɪŋ ɑn ðə ˈkaʊntər/",
-      "zh": "請把所有東西放在櫃檯上。"
+      "zh": "請把所有東西放在櫃台上。"
     },
     {
       "speaker": "char_b",
@@ -1309,9 +1309,9 @@
     },
     {
       "speaker": "char_b",
-      "text": "Great, you got the points.",
-      "phonetic": "/ɡreɪt ju ɡɑt ðə pɔɪnts/",
-      "zh": "太好了，你拿到點數了。"
+      "text": "Great, the points went through.",
+      "phonetic": "/ɡreɪt ðə pɔɪnts wɛnt θru/",
+      "zh": "太好了，點數進去了。"
     },
     {
       "speaker": "char_a",
@@ -1651,9 +1651,9 @@
     },
     {
       "speaker": "char_a",
-      "text": "Keep it for the box.",
-      "phonetic": "/kip ɪt fɔr ðə bɑks/",
-      "zh": "留著買盒子吧。"
+      "text": "Keep the change for yourself.",
+      "phonetic": "/kip ðə tʃeɪndʒ fɔr jʊrˈsɛlf/",
+      "zh": "零錢你自己留著。"
     },
     {
       "speaker": "char_b",
@@ -1851,7 +1851,7 @@
       "speaker": "char_b",
       "text": "Let us ask at the counter.",
       "phonetic": "/lɛt ʌs æsk æt ðə ˈkaʊntər/",
-      "zh": "我們去櫃檯問吧。"
+      "zh": "我們去櫃台問吧。"
     },
     {
       "speaker": "char_a",
@@ -2453,5 +2453,58 @@
       "phonetic": "/ɡɛt hoʊm ˈseɪfli ju tu/",
       "zh": "你們兩個路上小心。"
     }
-  ]
+  ],
+  "review": {
+    "round": 4,
+    "score": 93,
+    "score_source": "report",
+    "verdict": "APPROVED",
+    "dimensions": {
+      "pair_logic": 23,
+      "idiomatic_a2": 22,
+      "ipa_accuracy": 25,
+      "variety_no_dup": 23
+    },
+    "issues": [
+      {
+        "dim": "pair_logic",
+        "line": 209,
+        "note": "204-211 會員卡段落有輕微「持卡人指向」鬆動：204/206 a 像在櫃檯輸入號碼，205 b 說『here's my phone number』，但 209 b 又說『Great, you got the points.』、210 a 問『How many points do I have?』（持卡人變成 a）。每一對內部都讀得通、不影響聽感，但四句連讀時『誰的號碼／誰的點數』會閃一下。建議 209 改為中性：『Great, the points went through.』"
+      },
+      {
+        "dim": "pair_logic",
+        "line": 234,
+        "note": "234 a『Sorry, I'm short ten dollars.』口語上暗示手上只有 290，240 a 卻遞出『three hundred』。金額結果仍閉合（見 amount_chain），只是這一步敘事略鬆；若要更乾淨可改『I'm ten dollars over my budget tonight.』"
+      },
+      {
+        "dim": "pair_logic",
+        "line": 269,
+        "note": "269 a『I will bring my friend next time.』與 276-283 朋友同場另開一單（277 start a new order、281 八十元）在時間上略鬆；可讀成朋友中途進來（368 說她在外面等）或指另一位朋友，不構成硬矛盾，僅記錄。"
+      },
+      {
+        "dim": "idiomatic_a2",
+        "line": 261,
+        "note": "『No problem at all tonight.』副詞收尾不地道，建議作『No problem at all.』"
+      },
+      {
+        "dim": "idiomatic_a2",
+        "line": 267,
+        "note": "『Keep it for the box.』的 the box 指涉不明（愛心箱／零錢箱？），母語者會改用『Keep the change.』或『Keep it for the tip jar.』"
+      },
+      {
+        "dim": "idiomatic_a2",
+        "line": 224,
+        "note": "全形動詞偏書面，與全篇大量縮寫不一致：224『It is better for the planet.』、232『I am in no hurry tonight.』、240『Then here is three hundred.』、265『Here is ten dollars back.』、268『I will bring my friend next time.』；建議 It's / I'm / here's / I'll。"
+      },
+      {
+        "dim": "variety_no_dup",
+        "line": 85,
+        "note": "085『That's why I shop here.』與 379『That's why I like it here.』結構近重複（相距 294 行），另有『let's go pay / head to the line』排隊動機出現於 097、149、182、197；密度可接受，無完全重複句。"
+      }
+    ],
+    "summary_zh": "逐對複核 200 對後，成對邏輯成立（b 皆有實詞回應、無可互換對、場景持續推進），金額鏈數值完全閉合，機器訊號僅 loaves 一筆合法拼字；殘留者為 209 持卡人指向、234 少十元與遞 300 的敘事鬆動，以及 224/232/240/265/268 全形動詞等書面腔微瑕，均屬具名可合理化的小問題，非 error 級，故通過。",
+    "model": "skill:hot-sleep-dialogues",
+    "reviewed_at": 1790849552,
+    "content_hash": "sha1:dba48f050b5faa0ea3898af6a0c740dcfc20c8f1"
+  }
 }

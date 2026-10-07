@@ -81,12 +81,19 @@
     </div>
 
     <!-- Audio tab -->
+    <!-- ⚠ preload 必须保持 "none"：一个运行的 TTS 音频可达数千个（400 组 × 5 文件 ≈ 2000+）。
+         Chromium 每个页面最多只能同时创建 1000 个 WebMediaPlayer，preload="metadata"
+         会在页面加载时立刻为每个 <audio> 建播放器，把配额吃光 →
+         同页「📹 最终视频」的 <video> 随后报 MEDIA_ELEMENT_ERROR:
+         Player load failure: error creating media player，表现为画廊里视频无法播放。
+         实测：999 个 preload="metadata" 时视频仍可加载，1000 个即失败；
+         preload="none"（惰性，点击才加载）时 2002 个音频也不影响视频播放。 -->
     <div id="content-audio" class="tab-content hidden">
         {% if audio %}
         <div class="space-y-2">
             {% for a in audio %}
             <div class="bg-slate-800 rounded-lg border border-slate-700 p-3 flex items-center gap-4">
-                <audio controls preload="metadata" class="flex-1">
+                <audio controls preload="none" class="flex-1">
                     <source src="/api/runs/{{ run_name }}/audio/{{ a }}" type="audio/mpeg">
                 </audio>
                 <span class="text-xs text-slate-400 w-48 truncate">{{ a }}</span>
@@ -99,18 +106,33 @@
     </div>
 
     <!-- Videos tab -->
+    <!-- 成片清单由 app/run_videos.py 统一生成（根部 + videos/，含类型标签）：
+         sleep 的 1080p 原始成片落在 videos/，BGM/4K 版本落在运行目录根部，
+         两者都是真实存在的不同文件 —— 列表必须都显示，并标明类型与所在位置，
+         否则会与「运行目录里只看到 1 个成片」互相矛盾 -->
     <div id="content-videos" class="tab-content hidden">
         {% if videos %}
+        {% set kind_badge = {
+            'final': 'bg-indigo-600/30 text-indigo-300',
+            'bgm': 'bg-rose-600/30 text-rose-300',
+            '4k': 'bg-teal-600/30 text-teal-300',
+            '4k_bgm': 'bg-amber-600/30 text-amber-300'} %}
         <div class="space-y-4">
             {% for v in videos %}
             <div class="bg-slate-800 rounded-lg border border-slate-700 overflow-hidden">
                 <video controls class="w-full" preload="metadata">
-                    <source src="/api/runs/{{ run_name }}/video/{{ v }}" type="video/mp4">
+                    <source src="{{ v.url }}" type="video/mp4">
                 </video>
-                <div class="px-3 py-2 flex items-center justify-between">
-                    <p class="text-xs text-slate-400">{{ v }}</p>
-                    <a href="/api/runs/{{ run_name }}/video/{{ v }}" download
-                       class="text-xs text-indigo-400 hover:text-indigo-300">下载</a>
+                <div class="px-3 py-2 flex items-center justify-between gap-3">
+                    <div class="min-w-0 flex items-center gap-2">
+                        <span class="text-xs px-2 py-0.5 rounded shrink-0 {{ kind_badge.get(v.kind, 'bg-slate-600/30 text-slate-300') }}">{{ v.label }}</span>
+                        <span class="text-xs text-slate-400 break-all" title="相对运行目录：{{ v.rel }}">{{ v.rel }}</span>
+                    </div>
+                    <div class="flex items-center gap-3 shrink-0">
+                        <span class="text-xs text-slate-500">{{ v.size_mb }} MB</span>
+                        <a href="{{ v.url }}" download
+                           class="text-xs text-indigo-400 hover:text-indigo-300">下载</a>
+                    </div>
                 </div>
             </div>
             {% endfor %}

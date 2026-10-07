@@ -1,0 +1,2520 @@
+{
+  "title": "Everyday Phrases — At the Dog Groomer",
+  "title_zh": "寵物美容",
+  "scene_zh": "狗狗洗澡 · 情境對話",
+  "title_quote": "Hi, I'd like to book a bath.",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】🐩 實用「寵物美容」必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — At the Dog Groomer",
+  "youtube_description": "睡著學英文！這部影片收錄實用「寵物美容」情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫）。場景是狗狗洗澡：帶狗去美容：預約洗澡剪毛、交代毛打結與皮膚狀況，到店稱重、說不要剪太短，等候時問流程，接狗時檢查成品、付錢並問下次間隔。400 句循環聽，A2 程度，零基礎也能跟著開口說。#英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical 'At the Dog Groomer' phrase pairs (each pair: male normal speed → female slow speed → combined dialogue). Taking the dog to the groomer: booking a bath and a trim, explaining the matted coat and sensitive skin, asking them not to cut too short, then checking the result and paying. 400 lines on repeat, A2 level, easy to repeat out loud even from zero.",
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "At the Dog Groomer",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "寵物美容",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Family",
+  "youtube_tags": [
+    "寵物美容",
+    "At the Dog Groomer",
+    "睡前英文聽力",
+    "英文聽力",
+    "睡前英文",
+    "400句循環聽",
+    "Sleep learning English",
+    "English listening practice",
+    "A2 English",
+    "ESL listening",
+    "English conversation",
+    "everyday English phrases",
+    "學英文 睡覺",
+    "寵物 英文",
+    "dog groomer English"
+  ],
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "Hi, I'd like to book a bath.",
+      "phonetic": "/haɪ aɪd laɪk tə bʊk ə bæθ./",
+      "zh": "你好，我想預約洗澡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, what day works for you?",
+      "phonetic": "/ʃʊr wʌt deɪ wɜrks fər ju?/",
+      "zh": "好的，你哪天方便？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Would Saturday morning be okay?",
+      "phonetic": "/wʊd ˈsætərˌdeɪ ˈmɔrnɪŋ bi oʊˈkeɪ?/",
+      "zh": "星期六早上可以嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, Saturday at eleven works.",
+      "phonetic": "/jɛs ˈsætərˌdeɪ æt ɪˈlɛvən wɜrks./",
+      "zh": "可以，星期六十一點沒問題。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How long does a full groom take?",
+      "phonetic": "/haʊ lɔŋ dʌz ə fʊl ɡrum teɪk?/",
+      "zh": "全套美容要多久？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It takes an hour and a half.",
+      "phonetic": "/ɪt teɪks ən ˈaʊər ənd ə hæf./",
+      "zh": "要一個半小時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That's fine with me.",
+      "phonetic": "/ðæts faɪn wɪð mi./",
+      "zh": "那我可以。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great, we'll write your name down.",
+      "phonetic": "/ɡreɪt wɪl raɪt jʊr neɪm daʊn./",
+      "zh": "太好了，我們會記下你的名字。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How much is a full groom?",
+      "phonetic": "/haʊ mʌtʃ ɪz ə fʊl ɡrum?/",
+      "zh": "全套美容多少錢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The full groom is forty dollars.",
+      "phonetic": "/ðə fʊl ɡrum ɪz ˈfɔrti ˈdɑlərz/",
+      "zh": "全套美容是四十美元。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does that price include a nail trim?",
+      "phonetic": "/dʌz ðæt praɪs ɪnˈklud ə neɪl trɪm?/",
+      "zh": "這個價格含剪指甲嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, and it includes ear cleaning too.",
+      "phonetic": "/jɛs ænd ɪt ɪnˈkludz ɪr ˈklinɪŋ tu./",
+      "zh": "含，也包含清耳朵。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Great, I'll bring my dog Saturday.",
+      "phonetic": "/ɡreɪt aɪl brɪŋ maɪ dɔɡ ˈsætərˌdeɪ./",
+      "zh": "太好了，我星期六帶狗去。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "See you then, have a good week.",
+      "phonetic": "/si ju ðɛn hæv ə ɡʊd wik./",
+      "zh": "到時候見，祝你這週愉快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She's a golden retriever named Momo.",
+      "phonetic": "/ʃiz ə ˈɡoʊldən rɪˈtrivər neɪmd ˈmoʊmoʊ./",
+      "zh": "她是一隻叫 Momo 的黃金獵犬。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Golden retrievers have such lovely coats.",
+      "phonetic": "/ˈɡoʊldən rɪˈtrivərz hæv sʌtʃ ˈlʌvli koʊts./",
+      "zh": "黃金獵犬的毛真的很漂亮。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Her fur is really long right now.",
+      "phonetic": "/hɜr fɜr ɪz ˈrɪli lɔŋ raɪt naʊ./",
+      "zh": "她的毛現在真的很長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Long fur gets matted pretty fast.",
+      "phonetic": "/lɔŋ fɜr ɡɛts ˈmætɪd ˈprɪti fæst./",
+      "zh": "長毛很容易打結。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She has some mats behind her ears.",
+      "phonetic": "/ʃi hæz sʌm mæts bɪˈhaɪnd hɜr ɪrz./",
+      "zh": "她耳朵後面有些毛結。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We'll clip those gently and carefully.",
+      "phonetic": "/wɪl klɪp ðoʊz ˈdʒɛntli ænd ˈkɛrfəli./",
+      "zh": "我們會輕輕小心地剪掉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Could you shave the mats off?",
+      "phonetic": "/kʊd ju ʃeɪv ðə mæts ɔf?/",
+      "zh": "可以把毛結剃掉嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can, but that leaves short patches.",
+      "phonetic": "/wi kæn bʌt ðæt livz ʃɔrt ˈpætʃɪz./",
+      "zh": "可以，但會留下短短的禿塊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So what do you suggest instead?",
+      "phonetic": "/soʊ wʌt du ju səɡˈdʒɛst ɪnˈstɛd?/",
+      "zh": "那你建議怎麼做？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We'll comb them out with oil.",
+      "phonetic": "/wɪl koʊm ðɛm aʊt wɪð ɔɪl./",
+      "zh": "我們會用護毛油把結梳開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That sounds much better for her.",
+      "phonetic": "/ðæt saʊndz mʌtʃ ˈbɛtər fər hɜr./",
+      "zh": "那樣對她好多了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It hurts less than shaving close.",
+      "phonetic": "/ɪt hɜrts lɛs ðæn ˈʃeɪvɪŋ kloʊs./",
+      "zh": "這比剃得很短更不痛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does she also have a skin problem?",
+      "phonetic": "/dʌz ʃi ˈɔlsoʊ hæv ə skɪn ˈprɑbləm?/",
+      "zh": "她也有皮膚問題嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She's been scratching near her tail lately.",
+      "phonetic": "/ʃiz bɪn ˈskrætʃɪŋ nɪr hɜr teɪl ˈleɪtli./",
+      "zh": "她最近一直在抓尾巴附近。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That spot looks a little red.",
+      "phonetic": "/ðæt spɑt lʊks ə ˈlɪtəl rɛd./",
+      "zh": "那個地方看起來有點紅。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We'll use medicated shampoo for that.",
+      "phonetic": "/wɪl juz ˈmɛdɪkeɪtɪd ʃæmˈpu fər ðæt./",
+      "zh": "那裡我們會用藥用洗毛精。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please be careful around that spot.",
+      "phonetic": "/pliz bi ˈkɛrfəl əˈraʊnd ðæt spɑt./",
+      "zh": "那個地方請小心一點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Of course, we'll take it slow.",
+      "phonetic": "/əv kɔrs wɪl teɪk ɪt sloʊ./",
+      "zh": "當然，我們會慢慢來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the medicated shampoo extra?",
+      "phonetic": "/ɪz ðə ˈmɛdɪkeɪtɪd ʃæmˈpu ˈɛkstrə?/",
+      "zh": "藥用洗毛精要另外加錢嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, it's included in the forty dollars.",
+      "phonetic": "/noʊ ɪts ɪnˈkludɪd ɪn ðə ˈfɔrti ˈdɑlərz./",
+      "zh": "不用，包含在四十美元裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good, then let's keep Saturday at eleven.",
+      "phonetic": "/ɡʊd ðɛn lɛts kip ˈsætərˌdeɪ æt ɪˈlɛvən./",
+      "zh": "好，那就維持星期六十一點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We have you down for Saturday morning.",
+      "phonetic": "/wi hæv ju daʊn fər ˈsætərˌdeɪ ˈmɔrnɪŋ./",
+      "zh": "我們已登記你星期六早上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Her name is Momo, she's four.",
+      "phonetic": "/hɜr neɪm ɪz ˈmoʊmoʊ ʃiz fɔr./",
+      "zh": "她叫 Momo，四歲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Momo, four years old, got it.",
+      "phonetic": "/ˈmoʊmoʊ fɔr jɪrz oʊld ɡɑt ɪt./",
+      "zh": "Momo，四歲，記下了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She's very sweet but quite shy.",
+      "phonetic": "/ʃiz ˈvɛri swit bʌt kwaɪt ʃaɪ./",
+      "zh": "她很乖，但滿害羞的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Shy dogs often do better alone.",
+      "phonetic": "/ʃaɪ dɔɡz ˈɔfən du ˈbɛtər əˈloʊn./",
+      "zh": "害羞的狗通常獨處時比較好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have her vaccination record?",
+      "phonetic": "/du ju hæv hɜr ˌvæksɪˈneɪʃən ˈrɛkərd?/",
+      "zh": "你有她的疫苗紀錄嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It's in my bag, one moment.",
+      "phonetic": "/ɪts ɪn maɪ bæɡ wʌn ˈmoʊmənt./",
+      "zh": "在我袋子裡，稍等一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks, everything looks up to date.",
+      "phonetic": "/θæŋks ˈɛvriˌθɪŋ lʊks ʌp tə deɪt./",
+      "zh": "謝謝，看起來都還在有效期。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Great, we're all set for Saturday.",
+      "phonetic": "/ɡreɪt wɪr ɔl sɛt fər ˈsætərˌdeɪ./",
+      "zh": "太好了，星期六都安排好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One more thing about her food.",
+      "phonetic": "/wʌn mɔr θɪŋ əˈbaʊt hɜr fud./",
+      "zh": "還有一件關於她食物的事。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Should we give her a small treat?",
+      "phonetic": "/ʃʊd wi ɡɪv hɜr ə smɔl trit?/",
+      "zh": "我們要給她一點小零食嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She loves chicken, but no dairy.",
+      "phonetic": "/ʃi lʌvz ˈtʃɪkɪn bʌt noʊ ˈdɛri./",
+      "zh": "她愛雞肉，但不能吃乳製品。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No dairy, we'll note that down.",
+      "phonetic": "/noʊ ˈdɛri wɪl noʊt ðæt daʊn./",
+      "zh": "不吃乳製品，我們會記下來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Perfect, I'll see you Saturday.",
+      "phonetic": "/ˈpɜrfɪkt aɪl si ju ˈsætərˌdeɪ./",
+      "zh": "太好了，星期六見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We'll take good care of Momo.",
+      "phonetic": "/wɪl teɪk ɡʊd kɛr əv ˈmoʊmoʊ./",
+      "zh": "我們會好好照顧 Momo。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hi, we're here for the bath.",
+      "phonetic": "/haɪ wɪr hɪr fər ðə bæθ./",
+      "zh": "你好，我們來洗澡的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Welcome in, is this Momo?",
+      "phonetic": "/ˈwɛlkəm ɪn ɪz ðɪs ˈmoʊmoʊ?/",
+      "zh": "歡迎，這位是 Momo 嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, she's a bit nervous today.",
+      "phonetic": "/jɛs ʃiz ə bɪt ˈnɜrvəs təˈdeɪ./",
+      "zh": "對，她今天有點緊張。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's okay, we'll go slowly.",
+      "phonetic": "/ðæts oʊˈkeɪ wɪl ɡoʊ ˈsloʊli./",
+      "zh": "沒關係，我們會慢慢來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She kept scratching all night.",
+      "phonetic": "/ʃi kɛpt ˈskrætʃɪŋ ɔl naɪt./",
+      "zh": "她整晚一直抓。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then the hot spot needs care.",
+      "phonetic": "/ðɛn ðə hɑt spɑt nidz kɛr./",
+      "zh": "那這個熱點需要處理。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we avoid shaving her back?",
+      "phonetic": "/kæn wi əˈvɔɪd ˈʃeɪvɪŋ hɜr bæk?/",
+      "zh": "可以不要剃她的背嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, we'll comb the mats out.",
+      "phonetic": "/ʃʊr wɪl koʊm ðə mæts aʊt./",
+      "zh": "當然，我們把毛結梳開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What about the mats behind her ears?",
+      "phonetic": "/wʌt əˈbaʊt ðə mæts bɪˈhaɪnd hɜr ɪrz?/",
+      "zh": "她耳朵後面的毛結呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Those we can trim with scissors.",
+      "phonetic": "/ðoʊz wi kæn trɪm wɪð ˈsɪzərz./",
+      "zh": "那些我們可以用剪刀修。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you wash her in the bathtub?",
+      "phonetic": "/kæn ju wɑʃ hɜr ɪn ðə ˈbæθtʌb?/",
+      "zh": "你們可以在浴缸裡洗她嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, we have a deep tub.",
+      "phonetic": "/jɛs wi hæv ə dip tʌb./",
+      "zh": "可以，我們有個深浴缸。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "And please use the medicated shampoo.",
+      "phonetic": "/ænd pliz juz ðə ˈmɛdɪkeɪtɪd ʃæmˈpu./",
+      "zh": "還有請用藥用洗毛精。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We'll use it on her back.",
+      "phonetic": "/wɪl juz ɪt ɑn hɜr bæk./",
+      "zh": "我們會用在她背上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the shampoo extra on the bill?",
+      "phonetic": "/ɪz ðə ʃæmˈpu ˈɛkstrə ɑn ðə bɪl?/",
+      "zh": "洗毛精會另外加在帳單上嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, the price stays at forty dollars.",
+      "phonetic": "/noʊ ðə praɪs steɪz æt ˈfɔrti ˈdɑlərz./",
+      "zh": "不會，價格維持四十美元。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Okay, so forty dollars in total.",
+      "phonetic": "/oʊˈkeɪ soʊ ˈfɔrti ˈdɑlərz ɪn ˈtoʊtəl./",
+      "zh": "好，所以總共四十美元。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, with everything included in it.",
+      "phonetic": "/jɛs wɪð ˈɛvriˌθɪŋ ɪnˈkludɪd ɪn ɪt./",
+      "zh": "對，全部都包含在內。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That's a very fair price.",
+      "phonetic": "/ðæts ə ˈvɛri fɛr praɪs./",
+      "zh": "這價格很合理。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We try to keep prices friendly.",
+      "phonetic": "/wi traɪ tə kip ˈpraɪsɪz ˈfrɛndli./",
+      "zh": "我們盡量讓價格親切一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What time can I pick her up?",
+      "phonetic": "/wʌt taɪm kæn aɪ pɪk hɜr ʌp?/",
+      "zh": "我幾點可以來接她？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Around twelve thirty, if all goes well.",
+      "phonetic": "/əˈraʊnd twɛlv ˈθɜrti ɪf ɔl ɡoʊz wɛl./",
+      "zh": "如果一切順利，大約十二點半。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I call before I come?",
+      "phonetic": "/ʃʊd aɪ kɔl bɪˈfɔr aɪ kʌm?/",
+      "zh": "我來之前要先打電話嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We'll text you when we're done.",
+      "phonetic": "/wɪl tɛkst ju wɛn wɪr dʌn./",
+      "zh": "結束時我們會傳訊息給你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please text me at this number.",
+      "phonetic": "/pliz tɛkst mi æt ðɪs ˈnʌmbər./",
+      "zh": "請傳到這個號碼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Got it, we saved your number.",
+      "phonetic": "/ɡɑt ɪt wi seɪvd jʊr ˈnʌmbər./",
+      "zh": "好，我們存了你的號碼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you weigh her on the scale?",
+      "phonetic": "/dɪd ju weɪ hɜr ɑn ðə skeɪl?/",
+      "zh": "你在磅秤上幫她量體重了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Not yet, let's do it now.",
+      "phonetic": "/nɑt jɛt lɛts du ɪt naʊ./",
+      "zh": "還沒，我們現在量。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How much does Momo weigh?",
+      "phonetic": "/haʊ mʌtʃ dʌz ˈmoʊmoʊ weɪ?/",
+      "zh": "Momo 有多重？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She's about sixty pounds today.",
+      "phonetic": "/ʃiz əˈbaʊt ˈsɪksti paʊndz təˈdeɪ./",
+      "zh": "她今天大約六十磅。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Sixty pounds, that's about right.",
+      "phonetic": "/ˈsɪksti paʊndz ðæts əˈbaʊt raɪt./",
+      "zh": "六十磅，差不多。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's a healthy weight for her.",
+      "phonetic": "/ðæts ə ˈhɛlθi weɪt fər hɜr./",
+      "zh": "對她來說是健康的體重。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did she gain any weight this year?",
+      "phonetic": "/dɪd ʃi ɡeɪn ˈɛni weɪt ðɪs jɪr?/",
+      "zh": "她今年有變重嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only a pound or two, maybe.",
+      "phonetic": "/ˈoʊnli ə paʊnd ɔr tu ˈmeɪbi./",
+      "zh": "可能只多了一兩磅。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the scale hurt her paws?",
+      "phonetic": "/dʌz ðə skeɪl hɜrt hɜr pɔz?/",
+      "zh": "磅秤會弄痛她的腳掌嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, she stood there quite calmly.",
+      "phonetic": "/noʊ ʃi stʊd ðɛr kwaɪt ˈkɑmli./",
+      "zh": "不會，她站得滿冷靜的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She's usually scared of loud noises.",
+      "phonetic": "/ʃiz ˈjuʒuəli skɛrd əv laʊd ˈnɔɪzɪz./",
+      "zh": "她通常怕大聲的噪音。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Our dryers are pretty quiet, luckily.",
+      "phonetic": "/ˈaʊər ˈdraɪərz ɑr ˈprɪti ˈkwaɪət ˈlʌkəli./",
+      "zh": "幸好我們的吹風機滿安靜的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How long will she be in there?",
+      "phonetic": "/haʊ lɔŋ wɪl ʃi bi ɪn ðɛr?/",
+      "zh": "她會在裡面待多久？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "About an hour and a half.",
+      "phonetic": "/əˈbaʊt ən ˈaʊər ənd ə hæf./",
+      "zh": "大約一個半小時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I stay here and wait?",
+      "phonetic": "/kæn aɪ steɪ hɪr ænd weɪt?/",
+      "zh": "我可以留在這裡等嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, we have coffee over there.",
+      "phonetic": "/ʃʊr wi hæv ˈkɔfi ˈoʊvər ðɛr./",
+      "zh": "可以，那邊有咖啡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It's warmer inside than outside.",
+      "phonetic": "/ɪts ˈwɔrmər ɪnˈsaɪd ðæn ˌaʊtˈsaɪd./",
+      "zh": "裡面比外面暖和。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We keep it warm for wet dogs.",
+      "phonetic": "/wi kip ɪt wɔrm fər wɛt dɔɡz./",
+      "zh": "我們為濕狗保持溫暖。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She's shaking a little bit now.",
+      "phonetic": "/ʃiz ˈʃeɪkɪŋ ə ˈlɪtəl bɪt naʊ./",
+      "zh": "她現在有點發抖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's normal, she'll settle down.",
+      "phonetic": "/ðæts ˈnɔrməl ʃil ˈsɛtəl daʊn./",
+      "zh": "那很正常，她會安靜下來的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I pet her before I go?",
+      "phonetic": "/kæn aɪ pɛt hɜr bɪˈfɔr aɪ ɡoʊ?/",
+      "zh": "我走之前可以摸摸她嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Of course, a quick goodbye helps.",
+      "phonetic": "/əv kɔrs ə kwɪk ɡʊdˈbaɪ hɛlps./",
+      "zh": "當然，快速道別有幫助。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Bye, Momo, I'll be back soon.",
+      "phonetic": "/baɪ ˈmoʊmoʊ aɪl bi bæk sun./",
+      "zh": "再見 Momo，我很快就回來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Don't worry, she's in good hands.",
+      "phonetic": "/doʊnt ˈwɜri ʃiz ɪn ɡʊd hændz./",
+      "zh": "別擔心，她會受到很好的照顧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It's eleven, so we should start.",
+      "phonetic": "/ɪts ɪˈlɛvən soʊ wi ʃʊd stɑrt./",
+      "zh": "十一點了，我們該開始了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let's weigh her by the door.",
+      "phonetic": "/lɛts weɪ hɜr baɪ ðə dɔr./",
+      "zh": "我們在門邊幫她量體重。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She hates the noise of scales.",
+      "phonetic": "/ʃi heɪts ðə nɔɪz əv skeɪlz./",
+      "zh": "她討厭磅秤的聲音。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "This one's quiet, don't worry.",
+      "phonetic": "/ðɪs wʌnz ˈkwaɪət doʊnt ˈwɜri./",
+      "zh": "這台很安靜，別擔心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please don't cut her fur too short.",
+      "phonetic": "/pliz doʊnt kʌt hɜr fɜr tu ʃɔrt./",
+      "zh": "請不要把她的毛剪太短。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "How short do you want it?",
+      "phonetic": "/haʊ ʃɔrt du ju wɑnt ɪt?/",
+      "zh": "你想剪多短？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Just a little off the ends.",
+      "phonetic": "/dʒʌst ə ˈlɪtəl ɔf ði ɛndz./",
+      "zh": "只修掉一點點尾端。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Okay, we'll only trim the tips.",
+      "phonetic": "/oʊˈkeɪ wɪl ˈoʊnli trɪm ðə tɪps./",
+      "zh": "好，我們只修剪尾端。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Keep her face round, please.",
+      "phonetic": "/kip hɜr feɪs raʊnd pliz./",
+      "zh": "請把她的臉修圓。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Round face, we can do that.",
+      "phonetic": "/raʊnd feɪs wi kæn du ðæt./",
+      "zh": "圓臉，我們可以做到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Her tail has a red spot.",
+      "phonetic": "/hɜr teɪl hæz ə rɛd spɑt/",
+      "zh": "她的尾巴有個紅點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We'll go around it carefully.",
+      "phonetic": "/wɪl ɡoʊ əˈraʊnd ɪt ˈkɛrfəli./",
+      "zh": "我們會小心地避開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Her ears are the worst part.",
+      "phonetic": "/hɜr ɪrz ɑr ðə wɜrst pɑrt./",
+      "zh": "她的耳朵是最麻煩的部分。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We'll trim them with small scissors.",
+      "phonetic": "/wɪl trɪm ðɛm wɪð smɔl ˈsɪzərz./",
+      "zh": "我們會用小剪刀修剪。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Could you also check her nails?",
+      "phonetic": "/kʊd ju ˈɔlsoʊ tʃɛk hɜr neɪlz?/",
+      "zh": "也可以幫她檢查指甲嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Her nails are a bit long.",
+      "phonetic": "/hɜr neɪlz ɑr ə bɪt lɔŋ./",
+      "zh": "她的指甲有點長。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you clip them very carefully?",
+      "phonetic": "/kæn ju klɪp ðɛm ˈvɛri ˈkɛrfəli?/",
+      "zh": "可以非常小心地剪嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We always clip them quite carefully.",
+      "phonetic": "/wi ˈɔlweɪz klɪp ðɛm kwaɪt ˈkɛrfəli./",
+      "zh": "我們一向剪得很小心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does she need her teeth brushed?",
+      "phonetic": "/dʌz ʃi nid hɜr tiθ brʌʃt?/",
+      "zh": "她需要刷牙嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That costs ten dollars extra.",
+      "phonetic": "/ðæt kɔsts tɛn ˈdɑlərz ˈɛkstrə./",
+      "zh": "那要另外加十美元。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "No, just the bath and trim.",
+      "phonetic": "/noʊ dʒʌst ðə bæθ ænd trɪm./",
+      "zh": "不用，只要洗澡和修剪。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then forty dollars is the total.",
+      "phonetic": "/ðɛn ˈfɔrti ˈdɑlərz ɪz ðə ˈtoʊtəl./",
+      "zh": "那就是總共四十美元。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is a nice smell included too?",
+      "phonetic": "/ɪz ə naɪs smɛl ɪnˈkludɪd tu?/",
+      "zh": "也包含香味嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We'll use a gentle lavender spray.",
+      "phonetic": "/wɪl juz ə ˈdʒɛntəl ˈlævəndər spreɪ./",
+      "zh": "我們會用溫和的薰衣草噴霧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please use only a little spray.",
+      "phonetic": "/pliz juz ˈoʊnli ə ˈlɪtəl spreɪ./",
+      "zh": "請只噴一點點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A light spray, we understand.",
+      "phonetic": "/ə laɪt spreɪ wi ˌʌndərˈstænd./",
+      "zh": "淡淡地噴，我們了解。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She's really tense on the table.",
+      "phonetic": "/ʃiz ˈrɪli tɛns ɑn ðə ˈteɪbəl./",
+      "zh": "她在台上真的很緊繃。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then we'll work in small steps.",
+      "phonetic": "/ðɛn wɪl wɜrk ɪn smɔl stɛps./",
+      "zh": "那我們就一步步慢慢來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you dry her by hand?",
+      "phonetic": "/kæn ju draɪ hɜr baɪ hænd?/",
+      "zh": "可以手工幫她吹乾嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We will use the hand dryer.",
+      "phonetic": "/wi wɪl juz ðə hænd ˈdraɪər/",
+      "zh": "我們會用手持吹風機。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That would be easier for her.",
+      "phonetic": "/ðæt wʊd bi ˈiziər fɔr hɜr/",
+      "zh": "這樣對她會比較輕鬆。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We will take it slowly then.",
+      "phonetic": "/wi wɪl teɪk ɪt ˈsloʊli ðɛn/",
+      "zh": "那我們就慢慢來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have her shampoo here?",
+      "phonetic": "/du ju hæv hɜr ʃæmˈpu hɪr/",
+      "zh": "你們這裡有她的洗毛精嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We use the medicated one.",
+      "phonetic": "/wi juz ðə ˈmɛdɪkeɪtɪd wʌn/",
+      "zh": "我們用藥用那一款。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Strong scents make her itch.",
+      "phonetic": "/strɔŋ sɛnts meɪk hɜr ɪtʃ/",
+      "zh": "太濃的味道會讓她癢。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then we will keep it light.",
+      "phonetic": "/ðɛn wi wɪl kip ɪt laɪt/",
+      "zh": "那我們就噴得很淡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This is her first real grooming.",
+      "phonetic": "/ðɪs ɪz hɜr fɜrst ril ˈɡrumɪŋ./",
+      "zh": "這是她第一次正式美容。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "First time, so we'll be gentle.",
+      "phonetic": "/fɜrst taɪm soʊ wɪl bi ˈdʒɛntəl./",
+      "zh": "第一次，我們會很溫柔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Maybe take a photo when done.",
+      "phonetic": "/ˈmeɪbi teɪk ə ˈfoʊtoʊ wɛn dʌn./",
+      "zh": "結束時也許拍張照。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We always take a photo after.",
+      "phonetic": "/wi ˈɔlweɪz teɪk ə ˈfoʊtoʊ ˈæftər./",
+      "zh": "我們之後都會拍一張。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She's shy when people point cameras.",
+      "phonetic": "/ʃiz ʃaɪ wɛn ˈpipəl pɔɪnt ˈkæmərəz./",
+      "zh": "有人拿相機對著她時她很害羞。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We'll take it from far away.",
+      "phonetic": "/wɪl teɪk ɪt frəm fɑr əˈweɪ./",
+      "zh": "我們會從遠處拍。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will it be too hot in there?",
+      "phonetic": "/wɪl ɪt bi tu hɑt ɪn ðɛr?/",
+      "zh": "裡面會不會太熱？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The water is warm, not hot.",
+      "phonetic": "/ðə ˈwɔtər ɪz wɔrm nɑt hɑt./",
+      "zh": "水是溫的，不燙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How do you keep nervous dogs calm?",
+      "phonetic": "/haʊ du ju kip ˈnɜrvəs dɔɡz kɑm?/",
+      "zh": "你們怎麼讓緊張的狗冷靜？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We talk softly and move slowly.",
+      "phonetic": "/wi tɔk ˈsɔftli ænd muv ˈsloʊli./",
+      "zh": "我們輕聲說話，慢慢動作。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That's exactly what she needs.",
+      "phonetic": "/ðæts ɪɡˈzæktli wʌt ʃi nidz./",
+      "zh": "那正是她需要的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We'll start with her back legs.",
+      "phonetic": "/wɪl stɑrt wɪð hɜr bæk lɛɡz./",
+      "zh": "我們會從她的後腿開始。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Okay, please call if anything happens.",
+      "phonetic": "/oʊˈkeɪ pliz kɔl ɪf ˈɛniˌθɪŋ ˈhæpənz./",
+      "zh": "好，如果有任何狀況請打電話。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We'll call you right away, promise.",
+      "phonetic": "/wɪl kɔl ju raɪt əˈweɪ ˈprɑmɪs./",
+      "zh": "我們會馬上打給你，保證。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's get her on the scale again.",
+      "phonetic": "/lɛts ɡɛt hɜr ɑn ðə skeɪl əˈɡɛn./",
+      "zh": "我們再讓她站上磅秤。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sixty pounds, same as this morning.",
+      "phonetic": "/ˈsɪksti paʊndz seɪm æz ðɪs ˈmɔrnɪŋ./",
+      "zh": "六十磅，跟早上一樣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good, and please not too short.",
+      "phonetic": "/ɡʊd ænd pliz nɑt tu ʃɔrt./",
+      "zh": "好，還有請不要剪太短。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We'll only trim a little today.",
+      "phonetic": "/wɪl ˈoʊnli trɪm ə ˈlɪtəl təˈdeɪ./",
+      "zh": "今天我們只修一點點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "And keep her face nice and round.",
+      "phonetic": "/ænd kip hɜr feɪs naɪs ænd raʊnd./",
+      "zh": "臉幫她修得圓圓的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Round face, we remember that.",
+      "phonetic": "/raʊnd feɪs wi rɪˈmɛmbər ðæt./",
+      "zh": "圓臉，我們記得。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She's getting nervous on the table.",
+      "phonetic": "/ʃiz ˈɡɛtɪŋ ˈnɜrvəs ɑn ðə ˈteɪbəl./",
+      "zh": "她在台上開始緊張了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let's switch off the loud dryer.",
+      "phonetic": "/lɛts swɪtʃ ɔf ðə laʊd ˈdraɪər./",
+      "zh": "我們把大聲的吹風機關掉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did she nip at the dryer?",
+      "phonetic": "/dɪd ʃi nɪp æt ðə ˈdraɪər/",
+      "zh": "她對吹風機咬了咬嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She is fine, but she nipped.",
+      "phonetic": "/ʃi ɪz faɪn bʌt ʃi nɪpt/",
+      "zh": "她沒事，但咬了一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Oh no, did she hurt anyone?",
+      "phonetic": "/oʊ noʊ dɪd ʃi hɜrt ˈɛniˌwʌn?/",
+      "zh": "喔不，她有傷到人嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, but she's really scared now.",
+      "phonetic": "/noʊ bʌt ʃiz ˈrɪli skɛrd naʊ./",
+      "zh": "沒有，但她現在真的很害怕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should we stop the grooming today?",
+      "phonetic": "/ʃʊd wi stɑp ðə ˈɡrumɪŋ təˈdeɪ?/",
+      "zh": "我們今天要停止美容嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let's pause and try again later.",
+      "phonetic": "/lɛts pɔz ænd traɪ əˈɡɛn ˈleɪtər./",
+      "zh": "我們先暫停，晚點再試。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I don't want her to bite.",
+      "phonetic": "/aɪ doʊnt wɑnt hɜr tə baɪt./",
+      "zh": "我不想讓她咬人。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Neither do we, so we'll wait.",
+      "phonetic": "/ˈniðər du wi soʊ wɪl weɪt./",
+      "zh": "我們也不想，所以我們等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Maybe I can hold her paw.",
+      "phonetic": "/ˈmeɪbi aɪ kæn hoʊld hɜr pɔ./",
+      "zh": "也許我可以握著她的腳掌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That might calm her down a lot.",
+      "phonetic": "/ðæt maɪt kɑm hɜr daʊn ə lɑt./",
+      "zh": "那可能讓她冷靜很多。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let me stand next to the table.",
+      "phonetic": "/lɛt mi stænd nɛkst tə ðə ˈteɪbəl./",
+      "zh": "讓我站在台子旁邊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Perfect, just keep your voice quiet.",
+      "phonetic": "/ˈpɜrfɪkt dʒʌst kip jʊr vɔɪs ˈkwaɪət./",
+      "zh": "很好，只要保持聲音輕柔。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She's calmer when I'm here.",
+      "phonetic": "/ʃiz ˈkɑmər wɛn aɪm hɪr./",
+      "zh": "我在的時候她比較冷靜。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can see her breathing slow down.",
+      "phonetic": "/wi kæn si hɜr ˈbriðɪŋ sloʊ daʊn./",
+      "zh": "我們可以看到她呼吸慢下來了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you trim while I hold her?",
+      "phonetic": "/kæn ju trɪm waɪl aɪ hoʊld hɜr?/",
+      "zh": "我抱著的時候你可以修剪嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, but let's start with scissors.",
+      "phonetic": "/jɛs bʌt lɛts stɑrt wɪð ˈsɪzərz./",
+      "zh": "可以，但我們先用剪刀開始。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Okay, whatever keeps her calm.",
+      "phonetic": "/oʊˈkeɪ wʌtˈɛvər kips hɜr kɑm./",
+      "zh": "好，只要能讓她冷靜就好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We'll leave the clippers for now.",
+      "phonetic": "/wɪl liv ðə ˈklɪpərz fər naʊ./",
+      "zh": "我們暫時不用電剪。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does she look shorter than before?",
+      "phonetic": "/dʌz ʃi lʊk ˈʃɔrtər ðæn bɪˈfɔr?/",
+      "zh": "她看起來比以前短嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wet fur always looks a bit shorter.",
+      "phonetic": "/wɛt fɜr ˈɔlweɪz lʊks ə bɪt ˈʃɔrtər./",
+      "zh": "濕的毛看起來都會短一些。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will it look different when dry?",
+      "phonetic": "/wɪl ɪt lʊk ˈdɪfərənt wɛn draɪ?/",
+      "zh": "乾了以後看起來會不一樣嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it fluffs up when dry.",
+      "phonetic": "/jɛs ɪt flʌfs ʌp wɛn draɪ./",
+      "zh": "會，乾了以後會蓬起來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That makes me feel much better.",
+      "phonetic": "/ðæt meɪks mi fil mʌtʃ ˈbɛtər./",
+      "zh": "這讓我放心多了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So let's finish the sides today.",
+      "phonetic": "/soʊ lɛts ˈfɪnɪʃ ðə saɪdz təˈdeɪ./",
+      "zh": "那我們今天把兩側修完。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you still comb out her ears?",
+      "phonetic": "/kæn ju stɪl koʊm aʊt hɜr ɪrz?/",
+      "zh": "她的耳朵還梳得開嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We combed most of them out.",
+      "phonetic": "/wi koʊmd moʊst əv ðɛm aʊt./",
+      "zh": "我們把大部分的結梳開了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She didn't like that at all.",
+      "phonetic": "/ʃi ˈdɪdənt laɪk ðæt æt ɔl./",
+      "zh": "她一點都不喜歡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Small mats are always a bit painful.",
+      "phonetic": "/smɔl mæts ɑr ˈɔlweɪz ə bɪt ˈpeɪnfəl./",
+      "zh": "小毛結總是會有點痛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the hot spot any better?",
+      "phonetic": "/ɪz ðə hɑt spɑt ˈɛni ˈbɛtər?/",
+      "zh": "那個熱點有好一點嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It's red, but the shampoo helped.",
+      "phonetic": "/ɪts rɛd bʌt ðə ʃæmˈpu hɛlpt./",
+      "zh": "還是紅的，但洗毛精有幫助。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should we see the vet about it?",
+      "phonetic": "/ʃʊd wi si ðə vɛt əˈbaʊt ɪt?/",
+      "zh": "我們該為這個去看獸醫嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "If it stays red tomorrow, yes.",
+      "phonetic": "/ɪf ɪt steɪz rɛd təˈmɑroʊ jɛs./",
+      "zh": "如果明天還是紅的，要。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Noted, I'll watch it closely.",
+      "phonetic": "/ˈnoʊtɪd aɪl wɑtʃ ɪt ˈkloʊsli./",
+      "zh": "記下了，我會密切注意。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, and keep it dry tonight.",
+      "phonetic": "/ɡʊd ænd kip ɪt draɪ təˈnaɪt./",
+      "zh": "好，今晚讓它保持乾燥。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we finish her feet now?",
+      "phonetic": "/kæn wi ˈfɪnɪʃ hɜr fit naʊ?/",
+      "zh": "我們現在可以修她的腳嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Her feet are still a bit wet.",
+      "phonetic": "/hɜr fit ɑr stɪl ə bɪt wɛt./",
+      "zh": "她的腳還有點濕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Only a tiny bit of hair, right?",
+      "phonetic": "/ˈoʊnli ə ˈtaɪni bɪt əv hɛr raɪt?/",
+      "zh": "只修一點點毛，對吧？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Right, just around the paw pads.",
+      "phonetic": "/raɪt dʒʌst əˈraʊnd ðə pɔ pædz./",
+      "zh": "對，只修腳掌周圍。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the price change at all?",
+      "phonetic": "/dʌz ðə praɪs tʃeɪndʒ æt ɔl?/",
+      "zh": "價格會變嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, it stays forty dollars today.",
+      "phonetic": "/noʊ ɪt steɪz ˈfɔrti ˈdɑlərz təˈdeɪ./",
+      "zh": "不會，今天維持四十美元。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for working so slowly with her.",
+      "phonetic": "/θæŋks fər ˈwɜrkɪŋ soʊ ˈsloʊli wɪð hɜr./",
+      "zh": "謝謝你們這麼慢地陪她做。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She did better once you stayed.",
+      "phonetic": "/ʃi dɪd ˈbɛtər wʌns ju steɪd./",
+      "zh": "你一留下來她就表現得好多了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "About how long will this take?",
+      "phonetic": "/əˈbaʊt haʊ lɔŋ wɪl ðɪs teɪk?/",
+      "zh": "這大概要花多久時間？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A bit more than an hour.",
+      "phonetic": "/ə bɪt mɔr ðæn ən ˈaʊər/",
+      "zh": "一個多小時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What happens during the full groom?",
+      "phonetic": "/wʌt ˈhæpənz ˈdʊrɪŋ ðə fʊl ɡrum?/",
+      "zh": "全套美容的流程是什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A bath, then drying, then trimming.",
+      "phonetic": "/ə bæθ ðɛn ˈdraɪɪŋ ðɛn ˈtrɪmɪŋ/",
+      "zh": "先洗澡，再吹乾，然後修剪。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are her nails part of that price?",
+      "phonetic": "/ɑr hər neɪlz pɑrt əv ðæt praɪs?/",
+      "zh": "她的指甲含在這個價格裡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, nails and ears come included.",
+      "phonetic": "/jɛs neɪlz ænd ɪrz kʌm ɪnˈkludɪd/",
+      "zh": "有，指甲和耳朵都包含在內。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which shampoo do you use on her?",
+      "phonetic": "/wɪtʃ ʃæmˈpu du ju juz ɑn hər?/",
+      "zh": "你們用哪一種洗毛精幫她洗？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We use the medicated one today.",
+      "phonetic": "/wi juz ðə ˈmɛdɪkeɪtɪd wʌn təˈdeɪ/",
+      "zh": "我們今天用藥用那一款。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I wait here the whole time?",
+      "phonetic": "/ʃʊd aɪ weɪt hɪr ðə hoʊl taɪm?/",
+      "zh": "我需要在這裡等全程嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Most owners leave and come back.",
+      "phonetic": "/moʊst ˈoʊnərz liv ænd kʌm bæk/",
+      "zh": "大部分主人都先離開再回來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "There is a coffee shop nearby, right?",
+      "phonetic": "/ðɛr ɪz ə ˈkɔfi ʃɑp ˈnɪrˈbaɪ raɪt?/",
+      "zh": "附近有咖啡店，對吧？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Two doors down, on the corner.",
+      "phonetic": "/tu dɔrz daʊn ɑn ðə ˈkɔrnər/",
+      "zh": "往下走兩間，就在轉角。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I watch through that window there?",
+      "phonetic": "/kæn aɪ wɑtʃ θru ðæt ˈwɪndoʊ ðɛr?/",
+      "zh": "我可以從那扇窗戶看嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, the window looks into the room.",
+      "phonetic": "/ʃʊr ðə ˈwɪndoʊ lʊks ˈɪntu ðə rum/",
+      "zh": "可以，那扇窗戶看得到美容室裡面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Who is the big poodle over there?",
+      "phonetic": "/hu ɪz ðə bɪɡ ˈpudəl ˈoʊvər ðɛr?/",
+      "zh": "那邊那隻大貴賓是誰家的？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is Rufus, he comes every month.",
+      "phonetic": "/ðæt ɪz ˈrufəs hi kʌmz ˈɛvri mʌnθ/",
+      "zh": "那是魯弗斯，他每個月都來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is he friendly with other dogs?",
+      "phonetic": "/ɪz hi ˈfrɛndli wɪð ˈʌðər dɔɡz?/",
+      "zh": "他對其他狗友善嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Very friendly, he mostly ignores everyone.",
+      "phonetic": "/ˈvɛri ˈfrɛndli hi ˈmoʊstli ɪɡˈnɔrz ˈɛvriˌwʌn/",
+      "zh": "很友善，他大多不理別的狗。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The little white dog looks nervous.",
+      "phonetic": "/ðə ˈlɪtəl waɪt dɔɡ lʊks ˈnɜrvəs/",
+      "zh": "那隻小白狗看起來很緊張。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is Biscuit, he hates the dryer.",
+      "phonetic": "/ðæt ɪz ˈbɪskɪt hi heɪts ðə ˈdraɪər/",
+      "zh": "那是比斯吉，他最討厭吹風機。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Poor thing, he is shaking a little.",
+      "phonetic": "/pʊr θɪŋ hi ɪz ˈʃeɪkɪŋ ə ˈlɪtəl/",
+      "zh": "可憐，他在微微發抖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "His owner always waits right here.",
+      "phonetic": "/hɪz ˈoʊnər ˈɔlweɪz weɪts raɪt hɪr/",
+      "zh": "他的主人總是在這裡等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Why is that cage under a towel?",
+      "phonetic": "/waɪ ɪz ðæt keɪdʒ ˈʌndər ə ˈtaʊəl?/",
+      "zh": "那個籠子為什麼蓋著毛巾？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "So the barking dogs stay calm.",
+      "phonetic": "/soʊ ðə ˈbɑrkɪŋ dɔɡz steɪ kɑm/",
+      "zh": "這樣愛叫的狗才會冷靜下來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Momo barks at big dogs sometimes.",
+      "phonetic": "/ˈmoʊmoʊ bɑrks æt bɪɡ dɔɡz ˈsʌmˌtaɪmz/",
+      "zh": "Momo 有時候會對大狗叫。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We keep her away from them anyway.",
+      "phonetic": "/wi kip hər əˈweɪ frʌm ðɛm ˈɛniˌweɪ/",
+      "zh": "我們還是會把她跟大狗隔開。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That golden in the back is huge.",
+      "phonetic": "/ðæt ˈɡoʊldən ɪn ðə bæk ɪz hjudʒ/",
+      "zh": "後面那隻黃金獵犬好大一隻。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "He is ninety pounds, all fur.",
+      "phonetic": "/hi ɪz ˈnaɪnti paʊndz ɔl fɜr/",
+      "zh": "他九十磅，全是毛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Momo is only sixty pounds herself.",
+      "phonetic": "/ˈmoʊmoʊ ɪz ˈoʊnli ˈsɪksti paʊndz hərˈsɛlf/",
+      "zh": "Momo 自己才六十磅而已。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She looks smaller next to him.",
+      "phonetic": "/ʃi lʊks ˈsmɔlər nɛkst tu hɪm/",
+      "zh": "跟他比起來她看起來小多了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How many dogs do you groom daily?",
+      "phonetic": "/haʊ ˈmɛni dɔɡz du ju ɡrum ˈdeɪli?/",
+      "zh": "你們每天美容幾隻狗？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Maybe eight or nine on Saturdays.",
+      "phonetic": "/ˈmeɪbi eɪt ɔr naɪn ɑn ˈsætərˌdeɪz/",
+      "zh": "星期六大概八到九隻。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Saturday must be your busiest day.",
+      "phonetic": "/ˈsætərˌdeɪ mʌst bi jʊr ˈbɪziəst deɪ/",
+      "zh": "星期六一定是你們最忙的一天。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is, we book out early.",
+      "phonetic": "/ɪt ɪz wi bʊk aʊt ˈɜrli/",
+      "zh": "沒錯，我們很早就預約滿了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Something is moving in that dog's coat.",
+      "phonetic": "/ˈsʌmθɪŋ ɪz ˈmuvɪŋ ɪn ðæt dɔɡz koʊt/",
+      "zh": "那隻狗的毛裡有東西在動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is the black lab, poor guy.",
+      "phonetic": "/ðæt ɪz ðə blæk læb pʊr ɡaɪ/",
+      "zh": "那是那隻黑拉布拉多，可憐的傢伙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Those look like fleas on his back.",
+      "phonetic": "/ðoʊz lʊk laɪk fliz ɑn hɪz bæk/",
+      "zh": "他背上那些看起來像跳蚤。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, he came in with fleas today.",
+      "phonetic": "/jɛs hi keɪm ɪn wɪð fliz təˈdeɪ/",
+      "zh": "對，他今天來的時候就有跳蚤。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can fleas jump onto Momo from him?",
+      "phonetic": "/kæn fliz dʒʌmp ˈɑntu ˈmoʊmoʊ frʌm hɪm?/",
+      "zh": "跳蚤會從他身上跳到 Momo 身上嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Not if we keep them apart.",
+      "phonetic": "/nɑt ɪf wi kip ðɛm əˈpɑrt/",
+      "zh": "只要把他們分開就不會。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please keep her far from that lab.",
+      "phonetic": "/pliz kip hər fɑr frʌm ðæt læb/",
+      "zh": "請讓她離那隻拉布拉多遠一點。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She is already on the other table.",
+      "phonetic": "/ʃi ɪz ɔlˈrɛdi ɑn ði ˈʌðər ˈteɪbəl/",
+      "zh": "她已經在另一張台子上了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you treat the room for fleas?",
+      "phonetic": "/du ju trit ðə rum fɔr fliz?/",
+      "zh": "你們會對美容室做跳蚤處理嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We spray and wash every table.",
+      "phonetic": "/wi spreɪ ænd wɑʃ ˈɛvri ˈteɪbəl/",
+      "zh": "我們會噴藥並清洗每一張台子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That is a real relief to hear.",
+      "phonetic": "/ðæt ɪz ə ril rɪˈlif tu hɪr/",
+      "zh": "聽你這麼說我放心多了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We never mix a flea dog in.",
+      "phonetic": "/wi ˈnɛvər mɪks ə fli dɔɡ ɪn/",
+      "zh": "我們從不讓有跳蚤的狗混進來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did his owner know about the fleas?",
+      "phonetic": "/dɪd hɪz ˈoʊnər noʊ əˈbaʊt ðə fliz?/",
+      "zh": "他的主人知道有跳蚤嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She did not, we just told her.",
+      "phonetic": "/ʃi dɪd nɑt wi dʒʌst toʊld hər/",
+      "zh": "她不知道，我們才剛告訴她。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I hope Momo never brings those home.",
+      "phonetic": "/aɪ hoʊp ˈmoʊmoʊ ˈnɛvər brɪŋz ðoʊz hoʊm/",
+      "zh": "我希望 Momo 永遠不要把跳蚤帶回家。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Check her weekly and you are fine.",
+      "phonetic": "/tʃɛk hər ˈwikli ænd ju ɑr faɪn/",
+      "zh": "每週檢查她一次就沒問題。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Come look, she is almost finished now.",
+      "phonetic": "/kʌm lʊk ʃi ɪz ˈɔlmoʊst ˈfɪnɪʃt naʊ/",
+      "zh": "來看看，她差不多快完成了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Oh no, her coat looks really short.",
+      "phonetic": "/oʊ noʊ hər koʊt lʊks ˈrɪli ʃɔrt/",
+      "zh": "喔不，她的毛看起來好短。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The mats made us cut closer.",
+      "phonetic": "/ðə mæts meɪd ʌs kʌt ˈkloʊsər/",
+      "zh": "因為打結，我們只能剪得更貼近皮膚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I did not expect her this short.",
+      "phonetic": "/aɪ dɪd nɑt ɪkˈspɛkt hər ðɪs ʃɔrt/",
+      "zh": "我沒想到她會這麼短。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will her fur grow back soon?",
+      "phonetic": "/wɪl hər fɜr ɡroʊ bæk sun?/",
+      "zh": "她的毛很快就會長回來嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In six to eight weeks, yes.",
+      "phonetic": "/ɪn sɪks tu eɪt wiks jɛs/",
+      "zh": "六到八週就會，會的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That is a long time to wait.",
+      "phonetic": "/ðæt ɪz ə lɔŋ taɪm tu weɪt/",
+      "zh": "那要等很久。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It grows faster in warm weather.",
+      "phonetic": "/ɪt ɡroʊz ˈfæstər ɪn wɔrm ˈwɛðɚ/",
+      "zh": "天氣暖的時候長得比較快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Her tail still has that sore spot.",
+      "phonetic": "/hər teɪl stɪl hæz ðæt sɔr spɑt/",
+      "zh": "她的尾巴還是有那個破皮的地方。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We cleaned it and left the hair.",
+      "phonetic": "/wi klind ɪt ænd lɛft ðə hɛr/",
+      "zh": "我們清潔過了，那裡的毛留著沒剪。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thank you for not shaving that area.",
+      "phonetic": "/θæŋk ju fɔr nɑt ˈʃeɪvɪŋ ðæt ˈɛriə/",
+      "zh": "謝謝你們沒有把那塊剃掉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The skin there needs some cover.",
+      "phonetic": "/ðə skɪn ðɛr nidz sʌm ˈkʌvər/",
+      "zh": "那裡的皮膚需要一點覆蓋。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the hot spot look any better?",
+      "phonetic": "/dʌz ðə hɑt spɑt lʊk ˈɛni ˈbɛtər?/",
+      "zh": "那個濕疹看起來有好一點嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is dry now, not red.",
+      "phonetic": "/ɪt ɪz draɪ naʊ nɑt rɛd/",
+      "zh": "現在乾了，不紅了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How do I care for it?",
+      "phonetic": "/haʊ du aɪ kɛr fɔr ɪt/",
+      "zh": "我該怎麼照顧它？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just keep it dry, nothing needed.",
+      "phonetic": "/dʒʌst kip ɪt draɪ ˈnʌθɪŋ ˈnidɪd/",
+      "zh": "保持乾燥就好，不需要擦什麼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "When do you rinse the medicated shampoo?",
+      "phonetic": "/wɛn du ju rɪns ðə ˈmɛdɪkeɪtɪd ʃæmˈpu?/",
+      "zh": "藥用洗毛精什麼時候沖掉？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We rinse it after ten minutes.",
+      "phonetic": "/wi rɪns ɪt ˈæftər tɛn ˈmɪnɪts/",
+      "zh": "我們讓它停留十分鐘後沖掉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did she bite anyone with the dryer?",
+      "phonetic": "/dɪd ʃi baɪt ˈɛniˌwʌn wɪð ðə ˈdraɪər?/",
+      "zh": "她因為吹風機咬了人嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A quick nip, nobody was hurt.",
+      "phonetic": "/ə kwɪk nɪp ˈnoʊˌbɑdi wʌz hɜrt/",
+      "zh": "輕咬了一下，沒有人受傷。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So you stopped using the clippers?",
+      "phonetic": "/soʊ ju stɑpt ˈjuzɪŋ ðə ˈklɪpərz?/",
+      "zh": "所以你們就停用電剪了？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, we finished with scissors only.",
+      "phonetic": "/jɛs wi ˈfɪnɪʃt wɪð ˈsɪzərz ˈoʊnli/",
+      "zh": "對，我們後來只用剪刀完成。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Scissors take much longer, right?",
+      "phonetic": "/ˈsɪzərz teɪk mʌtʃ ˈlɔŋɡər raɪt?/",
+      "zh": "用剪刀要花久得多，對吧？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Longer, but she stayed quite calm.",
+      "phonetic": "/ˈlɔŋɡər bʌt ʃi steɪd kwaɪt kɑm/",
+      "zh": "是久一點，但她一直很平靜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Her whole body is still shaking.",
+      "phonetic": "/hər hoʊl ˈbɑdi ɪz stɪl ˈʃeɪkɪŋ/",
+      "zh": "她全身還在發抖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She is just cold without her coat.",
+      "phonetic": "/ʃi ɪz dʒʌst koʊld wɪˈðaʊt hər koʊt/",
+      "zh": "她只是少了毛有點冷。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Could you hand me that towel?",
+      "phonetic": "/kʊd ju hænd mi ðæt ˈtaʊəl?/",
+      "zh": "可以遞那條毛巾給我嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here, wrap her up in this.",
+      "phonetic": "/hɪr ræp hər ʌp ɪn ðɪs/",
+      "zh": "來，用這條把她包起來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That is much better, she stopped shaking.",
+      "phonetic": "/ðæt ɪz mʌtʃ ˈbɛtər ʃi stɑpt ˈʃeɪkɪŋ/",
+      "zh": "這樣好多了，她不再抖了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Warmth helps them settle down fast.",
+      "phonetic": "/wɔrmθ hɛlps ðɛm ˈsɛtəl daʊn fæst/",
+      "zh": "保暖能幫他們很快安定下來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now she looks like a different dog.",
+      "phonetic": "/naʊ ʃi lʊks laɪk ə ˈdɪfərənt dɔɡ/",
+      "zh": "現在她看起來像換了一隻狗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A short coat shows her shape well.",
+      "phonetic": "/ə ʃɔrt koʊt ʃoʊz hər ʃeɪp wɛl/",
+      "zh": "短毛把她的體型襯得很清楚。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is her face trimmed like I asked?",
+      "phonetic": "/ɪz hər feɪs trɪmd laɪk aɪ æskt?/",
+      "zh": "她的臉有照我要求的方式修嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Round face, short ears, clean feet.",
+      "phonetic": "/raʊnd feɪs ʃɔrt ɪrz klin fit/",
+      "zh": "圓臉、短耳、腳底乾淨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The ears look a bit too short.",
+      "phonetic": "/ði ɪrz lʊk ə bɪt tu ʃɔrt/",
+      "zh": "耳朵看起來有點太短。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can leave them longer next time.",
+      "phonetic": "/wi kæn liv ðɛm ˈlɔŋɡər nɛkst taɪm/",
+      "zh": "下次我們可以把它們留長一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please write that on her card.",
+      "phonetic": "/pliz raɪt ðæt ɑn hər kɑrd/",
+      "zh": "請把這點寫在她的卡片上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Done, longer ears and a fuller body.",
+      "phonetic": "/dʌn ˈlɔŋɡər ɪrz ænd ə ˈfʊlər ˈbɑdi/",
+      "zh": "寫好了，耳朵留長、身體留蓬鬆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you find anything else on her?",
+      "phonetic": "/dɪd ju faɪnd ˈɛniˌθɪŋ ɛls ɑn hər?/",
+      "zh": "你們在她身上還有發現別的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only one hot spot on her tail.",
+      "phonetic": "/ˈoʊnli wʌn hɑt spɑt ɑn hər teɪl/",
+      "zh": "只有尾巴上一個濕疹。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Her nails seem shorter than usual.",
+      "phonetic": "/hər neɪlz sim ˈʃɔrtər ðæn ˈjuʒuəl/",
+      "zh": "她的指甲好像比平常短。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We trimmed them right to the quick.",
+      "phonetic": "/wi trɪmd ðɛm raɪt tu ðə kwɪk/",
+      "zh": "我們修到很貼近血線。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Careful, that can hurt her.",
+      "phonetic": "/ˈkɛrfəl ðæt kæn hɜrt hər/",
+      "zh": "小心，那樣會弄痛她。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She was fine, no bleeding at all.",
+      "phonetic": "/ʃi wʌz faɪn noʊ ˈblidɪŋ æt ɔl/",
+      "zh": "她沒事，完全沒有流血。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Guess the short cut is not terrible.",
+      "phonetic": "/ɡɛs ðə ʃɔrt kʌt ɪz nɑt ˈtɛrəbəl/",
+      "zh": "看來剪得短也不算太糟。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In two weeks you will love it.",
+      "phonetic": "/ɪn tu wiks ju wɪl lʌv ɪt/",
+      "zh": "再過兩週你就會喜歡了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Alright, let me see the whole dog.",
+      "phonetic": "/ɔlˈraɪt lɛt mi si ðə hoʊl dɔɡ/",
+      "zh": "好吧，讓我看看整隻狗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She is ready at the front counter.",
+      "phonetic": "/ʃi ɪz ˈrɛdi æt ðə frʌnt ˈkaʊntər/",
+      "zh": "她已經在前台準備好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where do I pay the forty dollars?",
+      "phonetic": "/wɛr du aɪ peɪ ðə ˈfɔrti ˈdɑlərz?/",
+      "zh": "四十美元要在哪裡付？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Right here, card or cash both work.",
+      "phonetic": "/raɪt hɪr kɑrd ɔr kæʃ boʊθ wɜrk/",
+      "zh": "就在這裡，刷卡或現金都可以。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Here she comes, all clean and fluffy.",
+      "phonetic": "/hɪr ʃi kʌmz ɔl klin ænd ˈflʌfi/",
+      "zh": "她來了，又乾淨又蓬鬆。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Momo, you look like a puppy again.",
+      "phonetic": "/ˈmoʊmoʊ ju lʊk laɪk ə ˈpʌpi əˈɡɛn/",
+      "zh": "Momo，你看起來又像小狗了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Was she good for the whole groom?",
+      "phonetic": "/wʌz ʃi ɡʊd fɔr ðə hoʊl ɡrum?/",
+      "zh": "整個美容過程她乖嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She was brave after the dryer part.",
+      "phonetic": "/ʃi wʌz breɪv ˈæftər ðə ˈdraɪər pɑrt/",
+      "zh": "吹風機那段之後她都很勇敢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The medicated bath really helped her skin.",
+      "phonetic": "/ðə ˈmɛdɪkeɪtɪd bæθ ˈrɪli hɛlpt hər skɪn/",
+      "zh": "藥浴真的改善了她的皮膚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, her back is much less red.",
+      "phonetic": "/jɛs hər bæk ɪz mʌtʃ lɛs rɛd/",
+      "zh": "對，她的背不那麼紅了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you hold her while I check?",
+      "phonetic": "/kæn ju hoʊld hər waɪl aɪ tʃɛk?/",
+      "zh": "你可以抱著她讓我檢查一下嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, look at her ears and paws.",
+      "phonetic": "/ʃʊr lʊk æt hər ɪrz ænd pɔz/",
+      "zh": "當然，看看她的耳朵和腳掌。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Her ears smell clean and sweet now.",
+      "phonetic": "/hər ɪrz smɛl klin ænd swit naʊ/",
+      "zh": "她的耳朵現在聞起來乾淨又清爽。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We cleaned them with a soft wipe.",
+      "phonetic": "/wi klind ðɛm wɪð ə sɔft waɪp/",
+      "zh": "我們用柔軟的濕巾清過了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "There is still fur on her belly.",
+      "phonetic": "/ðɛr ɪz stɪl fɜr ɑn hər ˈbɛli/",
+      "zh": "她的肚子上還是有一些毛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We left that thin for the summer.",
+      "phonetic": "/wi lɛft ðæt θɪn fɔr ðə ˈsʌmər/",
+      "zh": "那裡我們留得薄一點，好過夏天。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Honestly, the cut looks pretty even.",
+      "phonetic": "/ˈɑnəstli ðə kʌt lʊks ˈprɪti ˈivən/",
+      "zh": "老實說，這次剪得還滿均勻的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Scissors give a softer, rounder finish.",
+      "phonetic": "/ˈsɪzərz ɡɪv ə ˈsɔftər ˈraʊndər ˈfɪnɪʃ/",
+      "zh": "剪刀修出來的線條比較柔和圓潤。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Her tail looks less angry today.",
+      "phonetic": "/hər teɪl lʊks lɛs ˈæŋɡri təˈdeɪ/",
+      "zh": "她的尾巴今天看起來沒那麼嚴重。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep it dry and it will heal.",
+      "phonetic": "/kip ɪt draɪ ænd ɪt wɪl hil/",
+      "zh": "保持乾燥就會癒合。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How much do I owe you total?",
+      "phonetic": "/haʊ mʌtʃ du aɪ oʊ ju ˈtoʊtəl?/",
+      "zh": "我總共要付你多少？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Forty dollars even, the usual price.",
+      "phonetic": "/ˈfɔrti ˈdɑlərz ˈivən ðə ˈjuʒuəl praɪs/",
+      "zh": "剛好四十美元，和平常一樣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the lavender spray okay?",
+      "phonetic": "/ɪz ðə ˈlævəndər spreɪ oʊˈkeɪ/",
+      "zh": "薰衣草噴霧可以嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is, shampoo and spray both.",
+      "phonetic": "/ɪt ɪz ʃæmˈpu ænd spreɪ boʊθ/",
+      "zh": "有，洗毛精和噴霧都含在內。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Some shops charge extra for the teeth.",
+      "phonetic": "/sʌm ʃɑps tʃɑrdʒ ˈɛkstrə fɔr ðə tiθ/",
+      "zh": "有些店刷牙會另外收費。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We would, but you said skip it.",
+      "phonetic": "/wi wʊd bʌt ju sɛd skɪp ɪt/",
+      "zh": "我們會收，但你說不用刷。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Right, ten dollars felt too much.",
+      "phonetic": "/raɪt tɛn ˈdɑlərz fɛlt tu mʌtʃ/",
+      "zh": "對，十美元我覺得太貴了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No problem, we skipped the brushing.",
+      "phonetic": "/noʊ ˈprɑbləm wi skɪpt ðə ˈbrʌʃɪŋ/",
+      "zh": "沒問題，我們就沒有刷牙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you take a card here?",
+      "phonetic": "/du ju teɪk ə kɑrd hɪr?/",
+      "zh": "你們這裡可以刷卡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We do, tap it right there.",
+      "phonetic": "/wi du tæp ɪt raɪt ðɛr/",
+      "zh": "可以，在那裡感應一下就行。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I add a tip here?",
+      "phonetic": "/ʃʊd aɪ æd ə tɪp hɪr?/",
+      "zh": "我需要在這裡加小費嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only if you feel like it.",
+      "phonetic": "/ˈoʊnli ɪf ju fil laɪk ɪt/",
+      "zh": "你想給再給就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This is five dollars for you both.",
+      "phonetic": "/ðɪs ɪz faɪv ˈdɑlərz fɔr ju boʊθ/",
+      "zh": "這是給你們兩位的五美元。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is very kind, thank you.",
+      "phonetic": "/ðæt ɪz ˈvɛri kaɪnd θæŋk ju/",
+      "zh": "你真好，謝謝你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "When should I book her next visit?",
+      "phonetic": "/wɛn ʃʊd aɪ bʊk hər nɛkst ˈvɪzɪt?/",
+      "zh": "我該什麼時候預約她下一次？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Six weeks is good for her coat.",
+      "phonetic": "/sɪks wiks ɪz ɡʊd fɔr hər koʊt/",
+      "zh": "六週對她的毛剛剛好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Six weeks would be early September.",
+      "phonetic": "/sɪks wiks wʊd bi ˈɜrli sɛpˈtɛmbər/",
+      "zh": "六週後就是九月初。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will put you down for then.",
+      "phonetic": "/aɪ wɪl pʊt ju daʊn fɔr ðɛn/",
+      "zh": "我就幫你排在那個時候。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Could we do another Saturday morning?",
+      "phonetic": "/kʊd wi du əˈnʌðər ˈsætərˌdeɪ ˈmɔrnɪŋ?/",
+      "zh": "可以再排一個星期六早上嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Saturday at eleven is still open.",
+      "phonetic": "/ˈsætərˌdeɪ æt ɪˈlɛvən ɪz stɪl ˈoʊpən/",
+      "zh": "星期六十一點還有空。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Great, that time works for me.",
+      "phonetic": "/ɡreɪt ðæt taɪm wɜrks fɔr mi/",
+      "zh": "太好了，那個時間我可以。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You are booked, and I wrote it.",
+      "phonetic": "/ju ɑr bʊkt ænd aɪ roʊt ɪt/",
+      "zh": "幫你預約好了，我也記下來了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What brush should I use at home?",
+      "phonetic": "/wʌt brʌʃ ʃʊd aɪ juz æt hoʊm?/",
+      "zh": "我在家該用哪種梳子？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A slicker brush works on her coat.",
+      "phonetic": "/ə ˈslɪkər brʌʃ wɜrks ɑn hər koʊt/",
+      "zh": "針梳對她的毛很有效。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How often should I brush her?",
+      "phonetic": "/haʊ ˈɔfən ʃʊd aɪ brʌʃ hər?/",
+      "zh": "我該多久幫她梳一次？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Three times a week, five minutes each.",
+      "phonetic": "/θri taɪmz ə wik faɪv ˈmɪnɪts itʃ/",
+      "zh": "一週三次，每次五分鐘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Behind her ears gets tangled fast.",
+      "phonetic": "/bɪˈhaɪnd hər ɪrz ɡɛts ˈtæŋɡəld fæst/",
+      "zh": "她耳朵後面很容易打結。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Start there, then move down slowly.",
+      "phonetic": "/stɑrt ðɛr ðɛn muv daʊn ˈsloʊli/",
+      "zh": "從那裡開始，再慢慢往下梳。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I bathe her between visits?",
+      "phonetic": "/ʃʊd aɪ beɪð hər bɪˈtwin ˈvɪzɪts?/",
+      "zh": "兩次美容之間我該幫她洗澡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Once a month is plenty for her.",
+      "phonetic": "/wʌns ə mʌnθ ɪz ˈplɛnti fɔr hər/",
+      "zh": "她一個月洗一次就夠了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One last thing, her nails at home?",
+      "phonetic": "/wʌn læst θɪŋ hər neɪlz æt hoʊm?/",
+      "zh": "最後一件事，家裡的指甲怎麼辦？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let us handle nails, you just brush.",
+      "phonetic": "/lɛt ʌs ˈhændəl neɪlz ju dʒʌst brʌʃ/",
+      "zh": "指甲交給我們，你只要梳毛就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Perfect, we will see you in September.",
+      "phonetic": "/ˈpɜrfɪkt wi wɪl si ju ɪn sɛpˈtɛmbər/",
+      "zh": "太好了，九月見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She looks happy, and so do you.",
+      "phonetic": "/ʃi lʊks ˈhæpi ænd soʊ du ju/",
+      "zh": "她看起來很開心，你也是。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Before we go, one more question.",
+      "phonetic": "/bɪˈfɔr wi ɡoʊ wʌn mɔr ˈkwɛstʃən/",
+      "zh": "在我們走之前，還有一個問題。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Go ahead, I am still here.",
+      "phonetic": "/ɡoʊ əˈhɛd aɪ æm stɪl hɪr/",
+      "zh": "請說，我還在這裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will the short cut grow out evenly?",
+      "phonetic": "/wɪl ðə ʃɔrt kʌt ɡroʊ aʊt ˈivənli?/",
+      "zh": "剪短的毛會長得均勻嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, if you brush it often.",
+      "phonetic": "/jɛs ɪf ju brʌʃ ɪt ˈɔfən/",
+      "zh": "會，只要你常常幫她梳。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What if her skin gets red again?",
+      "phonetic": "/wʌt ɪf hər skɪn ɡɛts rɛd əˈɡɛn?/",
+      "zh": "如果她的皮膚又變紅怎麼辦？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Call us and we will check it.",
+      "phonetic": "/kɔl ʌs ænd wi wɪl tʃɛk ɪt/",
+      "zh": "打電話給我們，我們會檢查。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your number is on the receipt, right?",
+      "phonetic": "/jʊr ˈnʌmbər ɪz ɑn ðə rɪˈsit raɪt?/",
+      "zh": "你們的電話在收據上，對吧？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Top corner, next to the date.",
+      "phonetic": "/tɑp ˈkɔrnər nɛkst tu ðə deɪt/",
+      "zh": "在最上面角落，日期旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The receipt also shows forty dollars total.",
+      "phonetic": "/ðə rɪˈsit ˈɔlsoʊ ʃoʊz ˈfɔrti ˈdɑlərz ˈtoʊtəl/",
+      "zh": "收據上顯示總共四十美元。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same price every time, no surprises.",
+      "phonetic": "/seɪm praɪs ˈɛvri taɪm noʊ sərˈpraɪzɪz/",
+      "zh": "每次都是同樣價格，不會有意外。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Guess I worried for nothing today.",
+      "phonetic": "/ɡɛs aɪ ˈwɜrid fɔr ˈnʌθɪŋ təˈdeɪ/",
+      "zh": "看來我今天白擔心了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Owners usually worry, it is normal.",
+      "phonetic": "/ˈoʊnərz ˈjuʒuəli ˈwɜri ɪt ɪz ˈnɔrməl/",
+      "zh": "主人通常都會擔心，這很正常。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She really does look pretty now.",
+      "phonetic": "/ʃi ˈrɪli dʌz lʊk ˈprɪti naʊ/",
+      "zh": "她現在真的看起來很漂亮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Give her a week for the fluff.",
+      "phonetic": "/ɡɪv hər ə wik fɔr ðə flʌf/",
+      "zh": "給她一週的時間長回蓬鬆感。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you think she enjoyed the bath?",
+      "phonetic": "/du ju θɪŋk ʃi ɪnˈdʒɔɪd ðə bæθ?/",
+      "zh": "你覺得她享受洗澡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She liked the warm water part.",
+      "phonetic": "/ʃi laɪkt ðə wɔrm ˈwɔtər pɑrt/",
+      "zh": "她喜歡溫水那一段。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Next time I will stay and watch.",
+      "phonetic": "/nɛkst taɪm aɪ wɪl steɪ ænd wɑtʃ/",
+      "zh": "下次我會留下來看。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You are welcome to wait inside.",
+      "phonetic": "/ju ɑr ˈwɛlkəm tu weɪt ɪnˈsaɪd/",
+      "zh": "歡迎你在裡面等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I bring her own towel?",
+      "phonetic": "/ʃʊd aɪ brɪŋ hər oʊn ˈtaʊəl?/",
+      "zh": "我該帶她自己的毛巾來嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Not needed, we have plenty here.",
+      "phonetic": "/nɑt ˈnidɪd wi hæv ˈplɛnti hɪr/",
+      "zh": "不用，我們這裡很多。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Anything I should avoid before her visit?",
+      "phonetic": "/ˈɛniˌθɪŋ aɪ ʃʊd əˈvɔɪd bɪˈfɔr hər ˈvɪzɪt?/",
+      "zh": "美容前有什麼我該避免的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Skip breakfast if she gets carsick.",
+      "phonetic": "/skɪp ˈbrɛkfəst ɪf ʃi ɡɛts ˈkɑrsɪk/",
+      "zh": "如果她會暈車就別讓她吃早餐。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She sits well in the car.",
+      "phonetic": "/ʃi sɪts wɛl ɪn ðə kɑr/",
+      "zh": "她坐車很乖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then just bring her on a leash.",
+      "phonetic": "/ðɛn dʒʌst brɪŋ hər ɑn ə liʃ/",
+      "zh": "那就只要用牽繩帶她來就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The leash is in my bag.",
+      "phonetic": "/ðə liʃ ɪz ɪn maɪ bæɡ/",
+      "zh": "牽繩在我袋子裡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, you are all set then.",
+      "phonetic": "/ɡʊd ju ɑr ɔl sɛt ðɛn/",
+      "zh": "很好，那你就都準備好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One thing about the flea dog today.",
+      "phonetic": "/wʌn θɪŋ əˈbaʊt ðə fli dɔɡ təˈdeɪ/",
+      "zh": "關於今天那隻有跳蚤的狗。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "He went home before she came out.",
+      "phonetic": "/hi wɛnt hoʊm bɪˈfɔr ʃi keɪm aʊt/",
+      "zh": "在她出來之前他就回家了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So Momo never really met him?",
+      "phonetic": "/soʊ ˈmoʊmoʊ ˈnɛvər ˈrɪli mɛt hɪm?/",
+      "zh": "所以 Momo 其實沒遇到他？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Never, they stayed in separate rooms.",
+      "phonetic": "/ˈnɛvər ðeɪ steɪd ɪn ˈsɛpərɪt rumz/",
+      "zh": "完全沒有，他們待在不同房間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That puts my mind at ease.",
+      "phonetic": "/ðæt pʊts maɪ maɪnd æt iz/",
+      "zh": "那我就放心了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We are careful about that here.",
+      "phonetic": "/wi ɑr ˈkɛrfəl əˈbaʊt ðæt hɪr/",
+      "zh": "我們這裡對這點很小心。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is her next visit on the calendar?",
+      "phonetic": "/ɪz hər nɛkst ˈvɪzɪt ɑn ðə ˈkæləndər?/",
+      "zh": "她下次的預約記在行事曆上了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is, that Saturday at eleven.",
+      "phonetic": "/ɪt ɪz ðæt ˈsætərˌdeɪ æt ɪˈlɛvən/",
+      "zh": "記好了，就是那個星期六十一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does she need a jacket this week?",
+      "phonetic": "/dʌz ʃi nid ə ˈdʒækɪt ðɪs wik?/",
+      "zh": "這週她需要穿外套嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mornings yes, her coat is thin.",
+      "phonetic": "/ˈmɔrnɪŋz jɛs hər koʊt ɪz θɪn/",
+      "zh": "早上要，她的毛很薄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I have one from last winter.",
+      "phonetic": "/aɪ hæv wʌn frʌm læst ˈwɪntər/",
+      "zh": "我有一件去年冬天的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That should fit her just fine.",
+      "phonetic": "/ðæt ʃʊd fɪt hər dʒʌst faɪn/",
+      "zh": "那件應該很合她。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Feels strange leaving with a new dog.",
+      "phonetic": "/filz streɪndʒ ˈlivɪŋ wɪð ə nu dɔɡ/",
+      "zh": "帶著一隻新狗離開的感覺很奇妙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Same dog, just a fresh haircut.",
+      "phonetic": "/seɪm dɔɡ dʒʌst ə frɛʃ ˈhɛrˌkʌt/",
+      "zh": "同一隻狗，只是換了新髮型。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "See you in six weeks, Brody.",
+      "phonetic": "/si ju ɪn sɪks wiks ˈbroʊdi/",
+      "zh": "六週後見，Brody。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Take care, and brush behind those ears.",
+      "phonetic": "/teɪk kɛr ænd brʌʃ bɪˈhaɪnd ðoʊz ɪrz/",
+      "zh": "保重，記得梳耳朵後面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will call if anything comes up.",
+      "phonetic": "/aɪ wɪl kɔl ɪf ˈɛniˌθɪŋ kʌmz ʌp/",
+      "zh": "有狀況我會打電話。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Perfect, have a calm evening together.",
+      "phonetic": "/ˈpɜrfɪkt hæv ə kɑm ˈivnɪŋ təˈɡɛðər/",
+      "zh": "太好了，祝你們有個平靜的夜晚。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "She will sleep the whole way home.",
+      "phonetic": "/ʃi wɪl slip ðə hoʊl weɪ hoʊm/",
+      "zh": "她會一路睡回家。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Grooming days always wear them out.",
+      "phonetic": "/ˈɡrumɪŋ deɪz ˈɔlweɪz wɛr ðɛm aʊt/",
+      "zh": "美容日總是把他們累壞。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good, then we both get some rest.",
+      "phonetic": "/ɡʊd ðɛn wi boʊθ ɡɛt sʌm rɛst/",
+      "zh": "很好，那我們都能好好休息。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Enjoy it, she earned a long nap.",
+      "phonetic": "/ɛnˈdʒɔɪ ɪt ʃi ɜrnd ə lɔŋ næp/",
+      "zh": "好好享受，她值得睡一長覺。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thank you for taking such good care.",
+      "phonetic": "/θæŋk ju fɔr ˈteɪkɪŋ sʌtʃ ɡʊd kɛr/",
+      "zh": "謝謝你們這麼用心照顧她。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She was a pleasure, truly.",
+      "phonetic": "/ʃi wʌz ə ˈplɛʒər ˈtruli/",
+      "zh": "她真的很討人喜歡。"
+    }
+  ],
+  "review": {
+    "round": 2,
+    "score": 91,
+    "score_source": "report",
+    "verdict": "APPROVED",
+    "dimensions": {
+      "pair_logic": 23,
+      "idiomatic_a2": 22,
+      "ipa_accuracy": 25,
+      "variety_no_dup": 21
+    },
+    "issues": [
+      {
+        "dim": "variety_no_dup",
+        "line": 64,
+        "note": "洗毛精／噴霧加價問句仍近乎同義重複（idx 32「Is the medicated shampoo extra?」vs idx 64「Is the shampoo extra on the bill?」），加上 idx 196、204、358 的價格確認，同型問句密度仍偏高；本次已刪 idx 318 一處，framing 各異、非整句重複，屬風格項。"
+      },
+      {
+        "dim": "pair_logic",
+        "line": 393,
+        "note": "idx 393「Perfect, have a calm evening together.」與 idx 396「we both get some rest」把週六 11:00 送、12:30 取的早場講成傍晚，時間點略漂移（前一輪已指出、未修改）；語意仍可聽，非事實矛盾。"
+      },
+      {
+        "dim": "idiomatic_a2",
+        "line": 343,
+        "note": "「Behind her ears gets tangled fast.」缺主語，母語者多說 The fur behind her ears gets tangled fast."
+      },
+      {
+        "dim": "idiomatic_a2",
+        "line": 140,
+        "note": "「She's shy when people point cameras.」缺受詞，宜作 when people point cameras at her／take photos。"
+      },
+      {
+        "dim": "idiomatic_a2",
+        "line": 102,
+        "note": "「She hates the noise of scales.」複數 scales 略生硬，宜作 the sound of the scale。"
+      },
+      {
+        "dim": "pair_logic",
+        "line": 318,
+        "note": "改後「Is the lavender spray okay?」語意偏模糊（是否含在價格內未明說），靠 idx 319「It is, shampoo and spray both.」補足；可懂，非 error。"
+      },
+      {
+        "dim": "pair_logic",
+        "line": 249,
+        "note": "idx 249 先給居家照護建議、idx 250 又「Come look, she is almost finished now.」，且 idx 266 的沖洗時點落在美容結束後，局部時序為拼貼式前後跳接；全篇為聲部循環腳本，屬輕微。"
+      },
+      {
+        "dim": "variety_no_dup",
+        "line": 150,
+        "note": "磅秤情境出現三次（idx 76、100、150），措辭有區隔但略顯原地打轉。"
+      },
+      {
+        "dim": "idiomatic_a2",
+        "line": 20,
+        "note": "機器信號指 'shave' 全庫僅 1 次、形近 'shape'：經核為正確用詞（shave the mats off，另 idx 25/56 有 shaving 呼應），判為誤報，不扣分。"
+      }
+    ],
+    "summary_zh": "獨立複核 200 對：四項修改全部成立且無回歸——全篇最長行已降為 7 詞（idx 264 為 6 詞「How do I care for it?」，與 idx 263「not red」、265「keep it dry」接續自然）、idx 110「Her tail has a red spot.」指代明確並與全篇唯一 hot spot（idx 27/55/258/289/315 皆在尾部）一致、idx 318 與 idx 374 去掉重複問法與共用 4-gram；人物（Momo 母 she/her、黃金獵犬、4 歲、60 磅；Jesse、Brody）、金額（40 美元、刷牙 +10 已拒）、時間（週六 11:00 送、12:30 取、六週後約九月初回診）與吹風機事件後停用電剪改純剪刀慢修皆前後一致。四維無 error 級問題，僅餘口語順暢度、價格問句密度與早晨／傍晚時間點等輕微風格項，均逐條具名合理化，予以通過。IPA 依機器證據給分（hard=0、ipa_vote 0 條 SUSPECT、逐詞對齊通過），視圖無音標列故未逐詞複核。",
+    "model": "skill:hot-sleep-dialogues",
+    "reviewed_at": 1791048263,
+    "content_hash": "sha1:89e535c886fec3c207d769ee9eef936b59d8721e"
+  }
+}

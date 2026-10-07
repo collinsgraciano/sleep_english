@@ -16,6 +16,7 @@ from ..config_manager import (
 )
 from ..paths import TRASH_META_FILENAME
 from ..pipeline_service import get_service
+from ..run_videos import list_run_videos, run_mode_hint
 from ..templating import templates
 import style_manager as style_lib
 from .ai_test import _load_ai_test_config
@@ -287,19 +288,10 @@ async def gallery_page(request: Request, name: str, mode: str = ""):
     audio_dir = run_dir / "audio"
     audio = sorted([f.name for f in audio_dir.glob("*.mp3")]) if audio_dir.exists() else []
 
-    # Final videos are in work_dir root (not videos/ subdir which has intermediates)
-    videos = []
-    for v in sorted(run_dir.glob("*.mp4")):
-        # Skip intermediate files + intro/outro 素材副本
-        if v.name.startswith(("final_no_sub", "final_video_norm", "intro_video", "outro_video")):
-            continue
-        videos.append(v.name)
-    # Also check videos/ dir for any extras
-    videos_subdir = run_dir / "videos"
-    if videos_subdir.exists():
-        for v in sorted(videos_subdir.glob("*.mp4")):
-            if v.name not in videos and not v.name.startswith(("final_no_sub", "final_video_norm", "intro_video", "outro_video")):
-                videos.append(v.name)
+    # 成片清单：唯一事实源 app/run_videos.py（根部 + videos/，含类型标签与
+    # 所在子目录）—— 与运行列表/`/api/runs` 同口径：sleep 的 1080p 成片落在
+    # videos/，BGM/4K 版本落在根部，两处都必须列且必须能分清谁是谁
+    videos = list_run_videos(run_dir, name, mode or run_mode_hint(run_dir))
 
     # 画廊页操作按钮所需状态：已上传标记 + 主缩略图绝对路径（无缩略图传空串）
     thumb = _resolve_main_thumbnail(run_dir)
@@ -358,22 +350,11 @@ async def runs_page(request: Request):
             "copy_4k_bgm": copy_paths["4k_bgm"],
             "structure": "",
         }
-        # Find video files — final videos are in work_dir root, not videos/；
-        # intro/outro_video.mp4 是片头/片尾素材副本，不是成片，排除
-        #（否则 NTFS 目录序下片头先创建，会被排在列表最前）
-        video_files = []
-        for v in sorted(d.glob("*.mp4")):
-            if v.name.startswith("final_no_sub") or v.name.startswith("final_video_norm"):
-                continue
-            if v.name.startswith("intro_video") or v.name.startswith("outro_video"):
-                continue
-            video_files.append({
-                "name": v.name,
-                "size_mb": round(v.stat().st_size / (1024*1024), 1),
-                "url": f"/api/runs/{d.name}/video/{v.name}",
-            })
-        # Also check videos/ subdir for intermediates (but don't show them as main)
-        run_info["videos"] = video_files
+        # 成片文件 —— 唯一事实源 app/run_videos.py：根部 + videos/ 一并列出
+        #（sleep 的 1080p 成片在 videos/，BGM/4K 版本在根部；旧注释"成片都在
+        #  根部"对 sleep 是错的，也是「画廊 2 个 / 卡片 1 个」口径不一致的根源）
+        # 片头/片尾素材副本（intro_video/outro_video）与中间产物一律排除
+        run_info["videos"] = list_run_videos(d, d.name, run_mode_hint(d))
         # Load script metadata
         if script_path.exists():
             try:

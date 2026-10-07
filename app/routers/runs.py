@@ -17,6 +17,7 @@ from ..config_manager import (
 )
 from ..paths import TRASH_META_FILENAME
 from ..pipeline_service import get_service
+from ..run_videos import list_run_videos, run_mode_hint
 from ..thumbnail_regen_service import get_thumb_regen_service
 from ..local_batch_service import get_local_batch
 
@@ -40,14 +41,7 @@ async def api_list_runs():
                 run_info["title"] = d.name
         else:
             run_info["title"] = d.name
-        run_info["videos"] = []
-        for v in sorted(d.glob("*.mp4")):
-            if v.name.startswith(("final_no_sub", "final_video_norm", "intro_video", "outro_video")):
-                continue
-            run_info["videos"].append({
-                "name": v.name,
-                "size_mb": round(v.stat().st_size / (1024*1024), 1),
-            })
+        run_info["videos"] = list_run_videos(d, d.name, run_mode_hint(d))
         runs.append(run_info)
     return {"runs": runs}
 
@@ -468,7 +462,9 @@ async def api_get_video(name: str, video_name: str, mode: str = ""):
     run_dir = find_run_dir(output_dir, name, mode)
     if not run_dir:
         return JSONResponse({"error": "Not found"}, status_code=404)
-    # Final videos are in work_dir root; clips are in clips/ subdir
+    # 解析顺序：根部（BGM/4K 版本 + 旧版成片）→ clips/（视频片段）→ videos/
+    # （sleep 的 1080p 原始成片与片头/片尾素材副本）；与 app/run_videos.py
+    # 的"同名优先根部"去重口径一致
     video_path = run_dir / video_name
     if not video_path.exists():
         video_path = run_dir / "clips" / video_name
@@ -884,23 +880,20 @@ async def api_gallery(name: str, mode: str = ""):
     audio_dir = run_dir / "audio"
     audio = sorted([f.name for f in audio_dir.glob("*.mp3")]) if audio_dir.exists() else []
 
-    # Final videos in work_dir root (excluding intermediates + intro/outro 素材副本)
-    final_videos = []
-    if run_dir.exists():
-        for v in sorted(run_dir.glob("*.mp4")):
-            if v.name.startswith(("final_no_sub", "final_video_norm", "intro_video", "outro_video")):
-                continue
-            final_videos.append(v.name)
+    # 成片清单：与 /api/runs、画廊页同源（根部 + videos/，带类型标签与所在子目录）
+    video_items = list_run_videos(run_dir, name, mode or run_mode_hint(run_dir))
+    final_videos = [it["name"] for it in video_items]
 
     return {
         "images": images,
         "clips": clips,
         "audio": audio,
         "final_videos": final_videos,
+        "video_items": video_items,
         "image_urls": {f: f"/api/runs/{name}/images/{f}" for f in images},
         "clip_urls": {f: f"/api/runs/{name}/video/{f}" for f in clips},
         "audio_urls": {f: f"/api/runs/{name}/audio/{f}" for f in audio},
-        "final_video_urls": {f: f"/api/runs/{name}/video/{f}" for f in final_videos},
+        "final_video_urls": {it["name"]: it["url"] for it in video_items},
     }
 
 

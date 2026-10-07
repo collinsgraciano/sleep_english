@@ -1,0 +1,2515 @@
+{
+  "title": "Everyday Phrases — Rehearsing in a Community Choir",
+  "title_zh": "業餘合唱團",
+  "scene_zh": "指揮 · 情境對話",
+  "title_quote": "Good evening, is this the choir room?",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】🎵 實用「業餘合唱團」必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — Rehearsing in a Community Choir",
+  "youtube_description": "睡著學英文！這部影片收錄實用「業餘合唱團」情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫）。場景是指揮：社區合唱團練唱：到活動中心報到拿譜、一起暖嗓，分部練聲時女高音與男低音對拍，合起來唱整首、指揮修細節與結尾，最後排下週曲目、收譜、喝熱茶道別。400 句循環聽，A2 程度，零基礎也能跟著開口說。#英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical 'Rehearsing in a Community Choir' phrase pairs (each pair: male normal speed → female slow speed → combined dialogue). A community choir rehearsal: warming up, practising the parts, putting the whole piece together, taking the conductor's notes, and ending with tea and goodbyes. 400 lines on repeat, A2 level.",
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "Rehearsing in a Community Choir",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "合唱團",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Leisure",
+  "youtube_tags": [
+    "業餘合唱團",
+    "Rehearsing in a Community Choir",
+    "睡前英文聽力",
+    "英文聽力",
+    "睡前英文",
+    "400句循環聽",
+    "Sleep learning English",
+    "English listening practice",
+    "A2 English",
+    "ESL listening",
+    "English conversation",
+    "everyday English phrases",
+    "學英文 睡覺",
+    "業餘合唱團 英文",
+    "rehearsing-in-a-community-choir-english"
+  ],
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "Good evening, is this the choir room?",
+      "phonetic": "/ɡʊd ˈivnɪŋ ɪz ðɪs ðə ˈkwaɪr rum?/",
+      "zh": "晚上好，這裡是合唱室嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, please come in and sign here.",
+      "phonetic": "/jɛs pliz kʌm ɪn ænd saɪn hɪr./",
+      "zh": "是的，請進，在這裡簽名。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hi, I am here for rehearsal.",
+      "phonetic": "/haɪ aɪ æm hɪr fɔr rɪˈhɜrsəl./",
+      "zh": "嗨，我是來參加排練的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Welcome, I have your name.",
+      "phonetic": "/ˈwɛlkəm aɪ hæv jʊr neɪm/",
+      "zh": "歡迎，我有你的名字。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where can I leave my coat?",
+      "phonetic": "/wɛr kæn aɪ liv maɪ koʊt/",
+      "zh": "我的外套可以放哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "There are hooks behind the door.",
+      "phonetic": "/ðɛr ɑr hʊks bɪˈhaɪnd ðə dɔr./",
+      "zh": "門後有掛鉤。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I get my music sheet now?",
+      "phonetic": "/kæn aɪ ɡɛt maɪ ˈmjuzɪk ʃit naʊ?/",
+      "zh": "我現在可以拿譜嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, they are in this box.",
+      "phonetic": "/ʃʊr ðeɪ ɑr ɪn ðɪs bɑks./",
+      "zh": "當然，它們在這個箱子裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which folder has my part?",
+      "phonetic": "/wɪtʃ ˈfoʊldər hæz maɪ pɑrt?/",
+      "zh": "哪個資料夾是我的聲部？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The green one says alto.",
+      "phonetic": "/ðə ɡrin wʌn sɛz ˈæltoʊ./",
+      "zh": "綠色那本寫著女低音。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I sing alto, is that right?",
+      "phonetic": "/aɪ sɪŋ ˈæltoʊ ɪz ðæt raɪt?/",
+      "zh": "我唱女低音，對嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, you sat with altos last time.",
+      "phonetic": "/jɛs ju sæt wɪð ˈæltoʊz læst taɪm./",
+      "zh": "對，你上次坐在女低音那邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How many songs are we singing?",
+      "phonetic": "/haʊ ˈmɛni sɔŋz ɑr wi ˈsɪŋɪŋ?/",
+      "zh": "我們要唱幾首歌？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We have a few songs tonight.",
+      "phonetic": "/wi hæv ə fju sɔŋz təˈnaɪt./",
+      "zh": "今晚只有幾首歌。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Who is our conductor this year?",
+      "phonetic": "/hu ɪz aʊr kənˈdʌktər ðɪs jɪr?/",
+      "zh": "今年的指揮是誰？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Miss Lin teaches the Tuesday group.",
+      "phonetic": "/mɪs lɪn ˈtitʃɪz ðə ˈtuzdeɪ ɡrup./",
+      "zh": "林老師帶星期二這一組。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is Miss Lin already in the hall?",
+      "phonetic": "/ɪz mɪs lɪn ɔlˈrɛdi ɪn ðə hɔl?/",
+      "zh": "林老師已經在廳裡了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She is warming up the piano.",
+      "phonetic": "/ʃi ɪz ˈwɔrmɪŋ ʌp ðə piˈænoʊ./",
+      "zh": "她正在暖琴。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do we start with a warm up?",
+      "phonetic": "/du wi stɑrt wɪð ə wɔrm ʌp?/",
+      "zh": "我們要先做暖嗓嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, breathing first, then singing.",
+      "phonetic": "/jɛs ˈbriðɪŋ fɜrst ðɛn ˈsɪŋɪŋ./",
+      "zh": "對，先練呼吸，再唱歌。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Why do we hum before singing?",
+      "phonetic": "/waɪ du wi hʌm bɪˈfɔr ˈsɪŋɪŋ?/",
+      "zh": "為什麼唱歌前要先哼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Humming wakes up your sleepy voice.",
+      "phonetic": "/ˈhʌmɪŋ weɪks ʌp jʊr ˈslipi vɔɪs./",
+      "zh": "哼唱能喚醒還沒醒的聲音。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "May I borrow a pencil for notes?",
+      "phonetic": "/meɪ aɪ ˈbɑroʊ ə ˈpɛnsəl fɔr noʊts?/",
+      "zh": "我可以借一支筆記重點嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Take one from the front table.",
+      "phonetic": "/teɪk wʌn frʌm ðə frʌnt ˈteɪbəl./",
+      "zh": "從前面桌上拿一支。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Excuse me, is this seat taken?",
+      "phonetic": "/ɪkˈskjuz mi ɪz ðɪs sit ˈteɪkən?/",
+      "zh": "不好意思，這個位子有人嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, you can sit beside me.",
+      "phonetic": "/noʊ ju kæn sɪt bɪˈsaɪd mi./",
+      "zh": "沒有，你可以坐我旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good to meet you, I am Wei.",
+      "phonetic": "/ɡʊd tu mit ju aɪ æm weɪ/",
+      "zh": "很高興認識你，我是偉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I am Anna, my first rehearsal.",
+      "phonetic": "/aɪ æm ˈænə maɪ fɜrst rɪˈhɜrsəl./",
+      "zh": "我是安娜，第一次來排練。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should we sit near the piano?",
+      "phonetic": "/ʃʊd wi sɪt nɪr ðə piˈænoʊ/",
+      "zh": "我們坐靠近鋼琴好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good idea, the sound is clearer.",
+      "phonetic": "/ɡʊd aɪˈdiə ðə saʊnd ɪz ˈklɪrər./",
+      "zh": "好主意，那裡聲音比較清楚。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please put your phone on silent.",
+      "phonetic": "/pliz pʊt jʊr foʊn ɑn ˈsaɪlənt./",
+      "zh": "請把手機轉成靜音。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Already done, it is in my bag.",
+      "phonetic": "/ɔlˈrɛdi dʌn ɪt ɪz ɪn maɪ bæɡ./",
+      "zh": "已經關了，在我包包裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Here is your music folder, Anna.",
+      "phonetic": "/hɪr ɪz jʊr ˈmjuzɪk ˈfoʊldər ˈænə./",
+      "zh": "安娜，這是你的譜夾。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thanks, it looks brand new.",
+      "phonetic": "/θæŋks ɪt lʊks brænd nu./",
+      "zh": "謝謝，看起來是全新的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are these notes for the high part?",
+      "phonetic": "/ɑr ðiz noʊts fɔr ðə haɪ pɑrt?/",
+      "zh": "這些音符是高音部的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Those lines are for the sopranos.",
+      "phonetic": "/ðoʊz laɪnz ɑr fɔr ðə səˈprænoʊz./",
+      "zh": "那些線是女高音唱的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "When does the rehearsal finish tonight?",
+      "phonetic": "/wɛn dʌz ðə rɪˈhɜrsəl ˈfɪnɪʃ təˈnaɪt?/",
+      "zh": "今晚排練幾點結束？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Around nine, if we stay focused.",
+      "phonetic": "/əˈraʊnd naɪn ɪf wi steɪ ˈfoʊkəst./",
+      "zh": "大概九點，如果我們專心的話。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I bring water for my throat?",
+      "phonetic": "/ʃʊd aɪ brɪŋ ˈwɔtər fɔr maɪ θroʊt?/",
+      "zh": "我該帶水潤喉嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, warm water helps a lot.",
+      "phonetic": "/jɛs wɔrm ˈwɔtər hɛlps ə lɑt./",
+      "zh": "對，溫水很有幫助。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let us stand and stretch our shoulders.",
+      "phonetic": "/lɛt ʌs stænd ænd strɛtʃ aʊr ˈʃoʊldərz./",
+      "zh": "我們站起來伸展肩膀。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My shoulders are always so tight.",
+      "phonetic": "/maɪ ˈʃoʊldərz ɑr ˈɔlweɪz soʊ taɪt./",
+      "zh": "我的肩膀總是好緊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Could you show me the breathing exercise?",
+      "phonetic": "/kʊd ju ʃoʊ mi ðə ˈbriðɪŋ ˈɛksərsaɪz?/",
+      "zh": "你可以示範呼吸練習嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Breathe in slowly, then let it out.",
+      "phonetic": "/brið ɪn ˈsloʊli ðɛn lɛt ɪt aʊt./",
+      "zh": "慢慢吸氣，然後吐出來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is my posture good like this?",
+      "phonetic": "/ɪz maɪ ˈpɑstʃər ɡʊd laɪk ðɪs?/",
+      "zh": "我這樣站姿對嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Straighten your back and relax your knees.",
+      "phonetic": "/ˈstreɪtən jʊr bæk ænd rɪˈlæks jʊr niz./",
+      "zh": "背挺直，膝蓋放鬆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where should I put my hands?",
+      "phonetic": "/wɛr ʃʊd aɪ pʊt maɪ hændz/",
+      "zh": "我的手要放哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold the folder, not your sleeves.",
+      "phonetic": "/hoʊld ðə ˈfoʊldər nɑt jʊr slivz./",
+      "zh": "拿好譜夾，不要抓袖子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That warm up felt strange at first.",
+      "phonetic": "/ðæt wɔrm ʌp fɛlt streɪndʒ æt fɜrst./",
+      "zh": "這個暖嗓一開始好奇怪。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It gets easier after a few rounds.",
+      "phonetic": "/ɪt ɡɛts ˈiziər ˈæftər ə fju raʊndz./",
+      "zh": "幾輪之後就會順了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the choir meet every Tuesday?",
+      "phonetic": "/dʌz ðə ˈkwaɪr mit ˈɛvri ˈtuzdeɪ?/",
+      "zh": "合唱團每個星期二都練嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We meet every Tuesday evening.",
+      "phonetic": "/wi mit ˈɛvri ˈtuzdeɪ ˈivnɪŋ./",
+      "zh": "我們每個星期二晚上都練。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My throat feels a little dry.",
+      "phonetic": "/maɪ θroʊt filz ə ˈlɪtəl draɪ./",
+      "zh": "我的喉嚨有點乾。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sip some water before we begin.",
+      "phonetic": "/sɪp sʌm ˈwɔtər bɪˈfɔr wi bɪˈɡɪn./",
+      "zh": "開始前先喝點水。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "These harmonies look quite hard.",
+      "phonetic": "/ðiz ˈhɑrməniz lʊk kwaɪt hɑrd./",
+      "zh": "這些合音看起來好難。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Start slowly, the notes will come.",
+      "phonetic": "/stɑrt ˈsloʊli ðə noʊts wɪl kʌm./",
+      "zh": "慢慢來，音符自然會到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which part do you usually sing?",
+      "phonetic": "/wɪtʃ pɑrt du ju ˈjuʒuəli sɪŋ?/",
+      "zh": "你通常唱哪個聲部？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I sing the low bass line.",
+      "phonetic": "/aɪ sɪŋ ðə loʊ beɪs laɪn./",
+      "zh": "我唱低音部。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You have a very deep voice.",
+      "phonetic": "/ju hæv ə ˈvɛri dip vɔɪs./",
+      "zh": "你的聲音好低沉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thank you, I practice every day.",
+      "phonetic": "/θæŋk ju aɪ ˈpræktɪs ˈɛvri deɪ/",
+      "zh": "謝謝，我每天都練。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you sing in a choir before?",
+      "phonetic": "/dɪd ju sɪŋ ɪn ə ˈkwaɪr bɪˈfɔr?/",
+      "zh": "你以前唱過合唱團嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only in school, many years ago.",
+      "phonetic": "/ˈoʊnli ɪn skul ˈmɛni jɪrz əˈɡoʊ./",
+      "zh": "只有學校唱過，好多年前了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How long has Miss Lin taught here?",
+      "phonetic": "/haʊ lɔŋ hæz mɪs lɪn tɔt hɪr?/",
+      "zh": "林老師在這裡教多久了？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Maybe ten years, she never says.",
+      "phonetic": "/ˈmeɪbi tɛn jɪrz ʃi ˈnɛvər sɛz./",
+      "zh": "大概十年吧，她從不說。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Who keeps the piano in tune?",
+      "phonetic": "/hu kips ðə piˈænoʊ ɪn tun?/",
+      "zh": "誰負責鋼琴調音？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A man comes every second month.",
+      "phonetic": "/ə mæn kʌmz ˈɛvri ˈsɛkənd mʌnθ./",
+      "zh": "每隔一個月會有人來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is it warm enough in here?",
+      "phonetic": "/ɪz ɪt wɔrm ɪˈnʌf ɪn hɪr?/",
+      "zh": "這裡夠暖嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Almost, my fingers are still cold.",
+      "phonetic": "/ˈɔlmoʊst maɪ ˈfɪŋɡərz ɑr stɪl koʊld./",
+      "zh": "快了，我的手指還有點冰。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I open the small window?",
+      "phonetic": "/kæn aɪ ˈoʊpən ðə smɔl ˈwɪndoʊ?/",
+      "zh": "我可以開一下小窗嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Better ask Miss Lin first.",
+      "phonetic": "/ˈbɛtər æsk mɪs lɪn fɜrst./",
+      "zh": "最好先問林老師。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where should I stand for alto?",
+      "phonetic": "/wɛr ʃʊd aɪ stænd fɔr ˈæltoʊ?/",
+      "zh": "女低音要站哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "On the left side, near me.",
+      "phonetic": "/ɑn ðə lɛft saɪd nɪr mi/",
+      "zh": "左邊，靠近我這邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should we start with humming?",
+      "phonetic": "/ʃʊd wi stɑrt wɪð ˈhʌmɪŋ/",
+      "zh": "我們要先哼唱嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wait for the pianist, she is coming.",
+      "phonetic": "/weɪt fɔr ðə ˈpiənɪst ʃi ɪz ˈkʌmɪŋ./",
+      "zh": "等一下鋼琴手，她快到了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please hum gently, not too loud.",
+      "phonetic": "/pliz hʌm ˈdʒɛntli nɑt tu laʊd./",
+      "zh": "請輕輕哼，不要太大聲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My lips are buzzing a little.",
+      "phonetic": "/maɪ lɪps ɑr ˈbʌzɪŋ ə ˈlɪtəl./",
+      "zh": "我的嘴唇有點麻麻的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does this note sound too high?",
+      "phonetic": "/dʌz ðɪs noʊt saʊnd tu haɪ?/",
+      "zh": "這個音聽起來太高嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A little, try singing it softer.",
+      "phonetic": "/ə ˈlɪtəl traɪ ˈsɪŋɪŋ ɪt ˈsɔftər./",
+      "zh": "有一點，試著唱輕一些。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let us breathe together one more time.",
+      "phonetic": "/lɛt ʌs brið təˈɡɛðər wʌn mɔr taɪm./",
+      "zh": "我們再一起呼吸一次。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "In through the nose, out slowly.",
+      "phonetic": "/ɪn θru ðə noʊz aʊt ˈsloʊli./",
+      "zh": "用鼻子吸，慢慢吐。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That felt better than the first try.",
+      "phonetic": "/ðæt fɛlt ˈbɛtər ðæn ðə fɜrst traɪ./",
+      "zh": "這次比第一次好多了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Your voice is opening up nicely.",
+      "phonetic": "/jʊr vɔɪs ɪz ˈoʊpənɪŋ ʌp ˈnaɪsli./",
+      "zh": "你的聲音慢慢打開了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I still forget to breathe deeply.",
+      "phonetic": "/aɪ stɪl fərˈɡɛt tu brið ˈdipli./",
+      "zh": "我還是會忘記深呼吸。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep one hand on your stomach.",
+      "phonetic": "/kip wʌn hænd ɑn jʊr ˈstʌmək./",
+      "zh": "手放在肚子上感覺。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What time is the break tonight?",
+      "phonetic": "/wʌt taɪm ɪz ðə breɪk təˈnaɪt?/",
+      "zh": "今晚幾點休息？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Half past eight, after the second song.",
+      "phonetic": "/hæf pæst eɪt ˈæftər ðə ˈsɛkənd sɔŋ./",
+      "zh": "八點半，第二首之後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will there be tea in the hallway?",
+      "phonetic": "/wɪl ðɛr bi ti ɪn ðə ˈhɔlweɪ?/",
+      "zh": "走廊會有茶嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Someone always brings a big pot.",
+      "phonetic": "/ˈsʌmwʌn ˈɔlweɪz brɪŋz ə bɪɡ pɑt./",
+      "zh": "總有人會帶一大壺來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are we singing the folk song first?",
+      "phonetic": "/ɑr wi ˈsɪŋɪŋ ðə foʊk sɔŋ fɜrst?/",
+      "zh": "我們先唱民謠那首嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is the easiest one to begin.",
+      "phonetic": "/ɪt ɪz ði ˈiziəst wʌn tu bɪˈɡɪn./",
+      "zh": "那首最容易開始。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Could you pass me the folder, Ben?",
+      "phonetic": "/kʊd ju pæs mi ðə ˈfoʊldər bɛn?/",
+      "zh": "班，可以把譜夾遞給我嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here it is, careful with the pages.",
+      "phonetic": "/hɪr ɪt ɪz ˈkɛrfəl wɪð ðə ˈpeɪdʒɪz./",
+      "zh": "在這裡，小心頁面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This room has lovely high ceilings.",
+      "phonetic": "/ðɪs rum hæz ˈlʌvli haɪ ˈsilɪŋz./",
+      "zh": "這個房間天花板好高。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The sound travels well in here.",
+      "phonetic": "/ðə saʊnd ˈtrævəlz wɛl ɪn hɪr./",
+      "zh": "這裡聲音傳得很好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Nice, everyone is finally sitting down.",
+      "phonetic": "/naɪs ˈɛvriwʌn ɪz ˈfaɪnəli ˈsɪtɪŋ daʊn./",
+      "zh": "太好了，大家終於坐好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Our conductor is raising her hands.",
+      "phonetic": "/aʊr kənˈdʌktər ɪz ˈreɪzɪŋ hɜr hændz./",
+      "zh": "指揮要抬手了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now we hum the same note together.",
+      "phonetic": "/naʊ wi hʌm ðə seɪm noʊt təˈɡɛðər./",
+      "zh": "現在我們一起哼同一個音。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Listen to the piano and follow.",
+      "phonetic": "/ˈlɪsən tu ðə piˈænoʊ ænd ˈfɑloʊ./",
+      "zh": "聽著鋼琴跟著唱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good, my voice feels warm now.",
+      "phonetic": "/ɡʊd maɪ vɔɪs filz wɔrm naʊ./",
+      "zh": "很好，我的聲音現在暖了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mine too, let us start the song.",
+      "phonetic": "/maɪn tu lɛt ʌs stɑrt ðə sɔŋ./",
+      "zh": "我也是，我們開始唱吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's start with the sopranos today.",
+      "phonetic": "/lɛts stɑrt wɪð ðə səˈprænoʊz təˈdeɪ/",
+      "zh": "今天先從女高音開始。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, we are all ready.",
+      "phonetic": "/ɡʊd wi ɑr ɔl ˈrɛdi/",
+      "zh": "好，我們都準備好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How high can you sing today?",
+      "phonetic": "/haʊ haɪ kæn ju sɪŋ təˈdeɪ?/",
+      "zh": "你今天能唱多高？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Not very high, my throat hurts.",
+      "phonetic": "/nɑt ˈvɛri haɪ maɪ θroʊt hɜrts/",
+      "zh": "不太高，我喉嚨痛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We should warm up the lower voices.",
+      "phonetic": "/wi ʃʊd wɔrm ʌp ðə ˈloʊər ˈvɔɪsɪz/",
+      "zh": "我們該讓低音部暖嗓。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The basses are already humming softly.",
+      "phonetic": "/ðə ˈbeɪsɪz ɑr ɔlˈrɛdi ˈhʌmɪŋ ˈsɔftli/",
+      "zh": "男低音已經在輕輕哼了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you hear the piano clearly?",
+      "phonetic": "/kæn ju hɪr ðə piˈænoʊ ˈklɪrli?/",
+      "zh": "你聽得清楚鋼琴嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, but the room is loud.",
+      "phonetic": "/jɛs bʌt ðə rum ɪz laʊd/",
+      "zh": "聽得到，但房間有點吵。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the alto part sound right?",
+      "phonetic": "/dʌz ði ˈæltoʊ pɑrt saʊnd raɪt?/",
+      "zh": "女低音這段聽起來對嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It sounds a little too low.",
+      "phonetic": "/ɪt saʊndz ə ˈlɪtəl tu loʊ/",
+      "zh": "聽起來有點太低。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That note was a bit sharp.",
+      "phonetic": "/ðæt noʊt wʌz ə bɪt ʃɑrp/",
+      "zh": "那個音有點偏高。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sorry, I will sing it softer.",
+      "phonetic": "/ˈsɑri aɪ wɪl sɪŋ ɪt ˈsɔftər/",
+      "zh": "抱歉，我會唱小聲一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which part do you sing here?",
+      "phonetic": "/wɪtʃ pɑrt du ju sɪŋ hɪr?/",
+      "zh": "你在這裡唱哪一部？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I sing the second soprano line.",
+      "phonetic": "/aɪ sɪŋ ðə ˈsɛkənd səˈprænoʊ laɪn/",
+      "zh": "我唱第二女高音。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's try the whole phrase again.",
+      "phonetic": "/lɛts traɪ ðə hoʊl freɪz əˈɡɛn/",
+      "zh": "我們把整句再試一次。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Not so fast, please.",
+      "phonetic": "/nɑt soʊ fæst pliz/",
+      "zh": "請不要那麼快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are the tenors behind the beat?",
+      "phonetic": "/ɑr ðə ˈtɛnərz bɪˈhaɪnd ðə bit?/",
+      "zh": "男高音是不是慢拍了？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, they come in too late.",
+      "phonetic": "/jɛs ðeɪ kʌm ɪn tu leɪt/",
+      "zh": "對，他們進得太晚。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we hear the two parts together?",
+      "phonetic": "/kæn wi hɪr ðə tu pɑrts təˈɡɛðər?/",
+      "zh": "可以聽兩個聲部一起唱嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the piano will play both.",
+      "phonetic": "/jɛs ðə piˈænoʊ wɪl pleɪ boʊθ/",
+      "zh": "可以，鋼琴會彈兩部。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You are singing a little too fast.",
+      "phonetic": "/ju ɑr ˈsɪŋɪŋ ə ˈlɪtəl tu fæst/",
+      "zh": "你唱得有點太快。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sorry, the piano moves me along.",
+      "phonetic": "/ˈsɑri ðə piˈænoʊ muvz mi əˈlɔŋ/",
+      "zh": "抱歉，鋼琴讓我跟著往前跑。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please watch the conductor more closely.",
+      "phonetic": "/pliz wɑtʃ ðə kənˈdʌktər mɔr ˈkloʊsli/",
+      "zh": "請更仔細看指揮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will keep my eyes on her.",
+      "phonetic": "/aɪ wɪl kip maɪ aɪz ɑn hɜr/",
+      "zh": "我會一直看著她。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Was that the right starting note?",
+      "phonetic": "/wʌz ðæt ðə raɪt ˈstɑrtɪŋ noʊt?/",
+      "zh": "那是正確的起音嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, it was a step lower.",
+      "phonetic": "/noʊ ɪt wʌz ə stɛp ˈloʊər/",
+      "zh": "不是，低了一個音。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The sopranos come in on this beat.",
+      "phonetic": "/ðə səˈprænoʊz kʌm ɪn ɑn ðɪs bit/",
+      "zh": "女高音在這一拍進來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "And the basses answer after that.",
+      "phonetic": "/ænd ðə ˈbeɪsɪz ˈænsər ˈæftər ðæt/",
+      "zh": "男低音在那之後回應。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Why is that chord so strange?",
+      "phonetic": "/waɪ ɪz ðæt kɔrd soʊ streɪndʒ?/",
+      "zh": "那個和絃為什麼這麼怪？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Because one voice is off pitch.",
+      "phonetic": "/bɪˈkɔz wʌn vɔɪs ɪz ɔf pɪtʃ/",
+      "zh": "因為有一個聲部走音了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you hold that note longer?",
+      "phonetic": "/kæn ju hoʊld ðæt noʊt ˈlɔŋɡər?/",
+      "zh": "那個音可以拉長一點嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, if I take a breath.",
+      "phonetic": "/jɛs ɪf aɪ teɪk ə brɛθ/",
+      "zh": "可以，只要我先吸口氣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where do we breathe in this line?",
+      "phonetic": "/wɛr du wi brið ɪn ðɪs laɪn?/",
+      "zh": "這一句我們在哪裡換氣？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "After the word morning, I think.",
+      "phonetic": "/ˈæftər ðə wɜrd ˈmɔrnɪŋ aɪ θɪŋk/",
+      "zh": "我想是在 morning 這個字之後。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That harmony sounded very warm.",
+      "phonetic": "/ðæt ˈhɑrməni saʊndɪd ˈvɛri wɔrm/",
+      "zh": "那個和聲聽起來很溫暖。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The lower voices helped a lot.",
+      "phonetic": "/ðə ˈloʊər ˈvɔɪsɪz hɛlpt ə lɑt/",
+      "zh": "低音部幫了很大的忙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's go back to the beginning.",
+      "phonetic": "/lɛts ɡoʊ bæk tu ðə bɪˈɡɪnɪŋ/",
+      "zh": "我們回到最前面。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is a good idea now.",
+      "phonetic": "/ðæt ɪz ə ɡʊd aɪˈdiə naʊ/",
+      "zh": "現在這樣做很好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you sing this part alone?",
+      "phonetic": "/du ju sɪŋ ðɪs pɑrt əˈloʊn?/",
+      "zh": "這一段你獨唱嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, two of us sing together.",
+      "phonetic": "/noʊ tu ʌv ʌs sɪŋ təˈɡɛðər/",
+      "zh": "不是，我們兩個人一起唱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we slow the tempo down?",
+      "phonetic": "/kæn wi sloʊ ðə ˈtɛmpoʊ daʊn?/",
+      "zh": "我們可以把速度放慢嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, I will play it slower.",
+      "phonetic": "/jɛs aɪ wɪl pleɪ ɪt ˈsloʊər/",
+      "zh": "可以，我會彈慢一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Who is singing that high note?",
+      "phonetic": "/hu ɪz ˈsɪŋɪŋ ðæt haɪ noʊt?/",
+      "zh": "那個高音是誰在唱？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The first soprano on the left.",
+      "phonetic": "/ðə fɜrst səˈprænoʊ ɑn ðə lɛft/",
+      "zh": "左邊的第一女高音。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your part is easy to follow.",
+      "phonetic": "/jʊr pɑrt ɪz ˈizi tu ˈfɑloʊ/",
+      "zh": "你的聲部很容易跟。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thanks, I marked every entrance clearly.",
+      "phonetic": "/θæŋks aɪ mɑrkt ˈɛvri ˈɛntrəns ˈklɪrli/",
+      "zh": "謝謝，我把每個進點都標清楚了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are you standing too close to me?",
+      "phonetic": "/ɑr ju ˈstændɪŋ tu kloʊs tu mi?/",
+      "zh": "你站得離我太近了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sorry, I will step back now.",
+      "phonetic": "/ˈsɑri aɪ wɪl stɛp bæk naʊ/",
+      "zh": "抱歉，我現在往後退一步。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That run of notes needs practice.",
+      "phonetic": "/ðæt rʌn ʌv noʊts nidz ˈpræktɪs/",
+      "zh": "那串音需要多練。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let's repeat it five more times.",
+      "phonetic": "/lɛts rɪˈpit ɪt faɪv mɔr taɪmz/",
+      "zh": "我們再重複五次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The second verse is still too fast.",
+      "phonetic": "/ðə ˈsɛkənd vɜrs ɪz stɪl tu fæst/",
+      "zh": "第二段還是太快。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will count the beats out loud.",
+      "phonetic": "/aɪ wɪl kaʊnt ðə bits aʊt laʊd/",
+      "zh": "我會把拍子數出來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Somebody in the back is flat.",
+      "phonetic": "/ˈsʌmˌbɑdi ɪn ðə bæk ɪz flæt/",
+      "zh": "後面有人音偏低。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It may be the second bass line.",
+      "phonetic": "/ɪt meɪ bi ðə ˈsɛkənd beɪs laɪn/",
+      "zh": "可能是第二男低音。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you sing this line alone?",
+      "phonetic": "/kæn ju sɪŋ ðɪs laɪn əˈloʊn?/",
+      "zh": "你可以單獨唱這一句嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, but my voice is tired.",
+      "phonetic": "/jɛs bʌt maɪ vɔɪs ɪz ˈtaɪərd/",
+      "zh": "可以，但我聲音累了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's clap the rhythm before singing.",
+      "phonetic": "/lɛts klæp ðə ˈrɪðəm bɪˈfɔr ˈsɪŋɪŋ/",
+      "zh": "唱之前我們先拍節奏。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good idea, my timing is weak.",
+      "phonetic": "/ɡʊd aɪˈdiə maɪ ˈtaɪmɪŋ ɪz wik/",
+      "zh": "好主意，我的拍子不好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That ending was not together.",
+      "phonetic": "/ðæt ˈɛndɪŋ wʌz nɑt təˈɡɛðər/",
+      "zh": "那個結尾不整齊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We stopped at different times.",
+      "phonetic": "/wi stɑpt æt ˈdɪfərənt taɪmz/",
+      "zh": "我們停在不同時間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which note should I hold longest?",
+      "phonetic": "/wɪtʃ noʊt ʃʊd aɪ hoʊld ˈlɔŋɪst?/",
+      "zh": "我應該把哪個音拉最長？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The last one in the phrase.",
+      "phonetic": "/ðə læst wʌn ɪn ðə freɪz/",
+      "zh": "這一句的最後一個音。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How do you keep the pitch steady?",
+      "phonetic": "/haʊ du ju kip ðə pɪtʃ ˈstɛdi?/",
+      "zh": "你怎麼讓音準保持穩定？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I listen to the piano underneath.",
+      "phonetic": "/aɪ ˈlɪsən tu ðə piˈænoʊ ˌʌndərˈniθ/",
+      "zh": "我聽下面的鋼琴。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do the women start this section?",
+      "phonetic": "/du ðə ˈwɪmɪn stɑrt ðɪs ˈsɛkʃən?/",
+      "zh": "這一段是女生先開始嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, then the men answer softly.",
+      "phonetic": "/jɛs ðɛn ðə mɛn ˈænsər ˈsɔftli/",
+      "zh": "對，然後男生輕聲回應。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your breathing is very noisy today.",
+      "phonetic": "/jʊr ˈbriðɪŋ ɪz ˈvɛri ˈnɔɪzi təˈdeɪ/",
+      "zh": "你今天呼吸聲很大。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I know, I am a little nervous.",
+      "phonetic": "/aɪ noʊ aɪ æm ə ˈlɪtəl ˈnɜrvəs/",
+      "zh": "我知道，我有點緊張。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we hear the basses once more?",
+      "phonetic": "/kæn wi hɪr ðə ˈbeɪsɪz wʌns mɔr?/",
+      "zh": "男低音可以再唱一次嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, we will sing it louder.",
+      "phonetic": "/jɛs wi wɪl sɪŋ ɪt ˈlaʊdər/",
+      "zh": "可以，我們會唱大聲一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That phrase sounds better now.",
+      "phonetic": "/ðæt freɪz saʊndz ˈbɛtər naʊ/",
+      "zh": "這一句現在好多了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The slower tempo really helps us.",
+      "phonetic": "/ðə ˈsloʊər ˈtɛmpoʊ ˈrɪli hɛlps ʌs/",
+      "zh": "慢一點的速度真的幫了我們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are you ready for the next part?",
+      "phonetic": "/ɑr ju ˈrɛdi fɔr ðə nɛkst pɑrt?/",
+      "zh": "你準備好下一段了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One moment, I need water.",
+      "phonetic": "/wʌn ˈmoʊmənt aɪ nid ˈwɔtər/",
+      "zh": "等一下，我需要喝水。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Who sings the low notes here?",
+      "phonetic": "/hu sɪŋz ðə loʊ noʊts hɪr?/",
+      "zh": "這裡的低音是誰唱？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The basses on the right side.",
+      "phonetic": "/ðə ˈbeɪsɪz ɑn ðə raɪt saɪd/",
+      "zh": "右邊的男低音。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's sing the two parts together.",
+      "phonetic": "/lɛts sɪŋ ðə tu pɑrts təˈɡɛðər/",
+      "zh": "我們把兩個聲部一起唱。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ready when you are, conductor.",
+      "phonetic": "/ˈrɛdi wɛn ju ɑr kənˈdʌktər/",
+      "zh": "指揮，你隨時可以開始。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That note is still a bit high.",
+      "phonetic": "/ðæt noʊt ɪz stɪl ə bɪt haɪ/",
+      "zh": "那個音還是偏高。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will try to relax my jaw.",
+      "phonetic": "/aɪ wɪl traɪ tu rɪˈlæks maɪ dʒɔ/",
+      "zh": "我會試著放鬆下巴。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the harmony feel right now?",
+      "phonetic": "/dʌz ðə ˈhɑrməni fil raɪt naʊ?/",
+      "zh": "現在和聲聽起來對嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Almost, one voice is too loud.",
+      "phonetic": "/ˈɔlmoʊst wʌn vɔɪs ɪz tu laʊd/",
+      "zh": "差不多了，有一個聲部太大聲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please mark where you breathe.",
+      "phonetic": "/pliz mɑrk wɛr ju brið/",
+      "zh": "請標出你換氣的地方。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I marked two places with pencil.",
+      "phonetic": "/aɪ mɑrkt tu ˈpleɪsɪz wɪð ˈpɛnsəl/",
+      "zh": "我用鉛筆標了兩個地方。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That was much better this time.",
+      "phonetic": "/ðæt wʌz mʌtʃ ˈbɛtər ðɪs taɪm/",
+      "zh": "這次好多了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We kept the beat together well.",
+      "phonetic": "/wi kɛpt ðə bit təˈɡɛðər wɛl/",
+      "zh": "我們把拍子保持得很整齊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you hear the other voices?",
+      "phonetic": "/kæn ju hɪr ði ˈʌðər ˈvɔɪsɪz?/",
+      "zh": "你聽得到其他聲部嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, but they sing quite fast.",
+      "phonetic": "/jɛs bʌt ðeɪ sɪŋ kwaɪt fæst/",
+      "zh": "聽得到，但他們唱得相當快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The conductor wants a softer sound.",
+      "phonetic": "/ðə kənˈdʌktər wɑnts ə ˈsɔftər saʊnd/",
+      "zh": "指揮想要更柔的聲音。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We will sing this part quietly.",
+      "phonetic": "/wi wɪl sɪŋ ðɪs pɑrt ˈkwaɪətli/",
+      "zh": "我們會把這段唱小聲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Why does this section feel slow?",
+      "phonetic": "/waɪ dʌz ðɪs ˈsɛkʃən fil sloʊ?/",
+      "zh": "這一段為什麼感覺很慢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Because the basses drag the beat.",
+      "phonetic": "/bɪˈkɔz ðə ˈbeɪsɪz dræɡ ðə bit/",
+      "zh": "因為男低音把拍子拖慢了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are we singing the right words?",
+      "phonetic": "/ɑr wi ˈsɪŋɪŋ ðə raɪt wɜrdz?/",
+      "zh": "我們唱的字對嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, the second line is different.",
+      "phonetic": "/noʊ ðə ˈsɛkənd laɪn ɪz ˈdɪfərənt/",
+      "zh": "不對，第二行不一樣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That run needs more practice.",
+      "phonetic": "/ðæt rʌn nidz mɔr ˈpræktɪs/",
+      "zh": "那串音需要多練。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let's sing it slowly one time.",
+      "phonetic": "/lɛts sɪŋ ɪt ˈsloʊli wʌn taɪm/",
+      "zh": "我們慢慢地唱一次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Your high note sounded very clear.",
+      "phonetic": "/jʊr haɪ noʊt saʊndɪd ˈvɛri klɪr/",
+      "zh": "你的高音聽起來很清楚。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thank you, the warm up helped me.",
+      "phonetic": "/θæŋk ju ðə wɔrm ʌp hɛlpt mi/",
+      "zh": "謝謝，暖嗓對我有幫助。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should we start from the top?",
+      "phonetic": "/ʃʊd wi stɑrt frʌm ðə tɑp?/",
+      "zh": "要從頭開始嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, from the very first bar.",
+      "phonetic": "/jɛs frʌm ðə ˈvɛri fɜrst bɑr/",
+      "zh": "好，從第一小節開始。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Could we sing the whole song now?",
+      "phonetic": "/kʊd wi sɪŋ ðə hoʊl sɔŋ naʊ?/",
+      "zh": "我們現在可以唱整首了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, please start from the beginning.",
+      "phonetic": "/jɛs pliz stɑrt frʌm ðə bɪˈɡɪnɪŋ./",
+      "zh": "可以，請從頭開始。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where should we stand for the opening?",
+      "phonetic": "/wɛr ʃʊd wi stænd fɔr ði ˈoʊpənɪŋ?/",
+      "zh": "開頭我們該站在哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stand in two rows near the piano.",
+      "phonetic": "/stænd ɪn tu roʊz nɪr ðə piˈæno./",
+      "zh": "站成兩排，靠近鋼琴。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Who gives the first note tonight?",
+      "phonetic": "/hu ɡɪvz ðə fɜrst noʊt təˈnaɪt?/",
+      "zh": "今晚誰給第一個音？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The pianist gives it on the piano.",
+      "phonetic": "/ðə ˈpiənɪst ɡɪvz ɪt ɑn ðə piˈæno./",
+      "zh": "鋼琴手用鋼琴給音。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Why is the tempo slower tonight?",
+      "phonetic": "/waɪ ɪz ðə ˈtɛmpoʊ ˈsloʊər təˈnaɪt?/",
+      "zh": "今晚的速度為什麼慢一點？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The conductor wants a calmer opening.",
+      "phonetic": "/ðə kənˈdʌktər wɑnts ə ˈkɑmər ˈoʊpənɪŋ./",
+      "zh": "指揮想要更平靜的開頭。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How loud should the first line be?",
+      "phonetic": "/haʊ laʊd ʃʊd ðə fɜrst laɪn bi?/",
+      "zh": "第一句該唱多大聲？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Softly at first, then a little louder.",
+      "phonetic": "/ˈsɔftli æt fɜrst ðɛn ə ˈlɪtəl ˈlaʊdər./",
+      "zh": "先小聲，然後再大一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should we watch the conductor's right hand?",
+      "phonetic": "/ʃʊd wi wɑtʃ ðə kənˈdʌktərz raɪt hænd?/",
+      "zh": "我們該看指揮的右手嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Watch both hands and keep breathing.",
+      "phonetic": "/wɑtʃ boʊθ hændz ænd kip ˈbriðɪŋ./",
+      "zh": "兩隻手都看，並持續呼吸。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we try the whole song once?",
+      "phonetic": "/kæn wi traɪ ðə hoʊl sɔŋ wʌns?/",
+      "zh": "我們可以整首試一次嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, and please do not stop.",
+      "phonetic": "/jɛs ænd pliz du nɑt stɑp./",
+      "zh": "可以，而且請不要停下來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do we sing the second verse too?",
+      "phonetic": "/du wi sɪŋ ðə ˈsɛkənd vɜrs tu?/",
+      "zh": "第二段我們也唱嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, every verse is in the song.",
+      "phonetic": "/jɛs ˈɛvri vɜrs ɪz ɪn ðə sɔŋ./",
+      "zh": "唱，每一段都在歌裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What happens at the middle section?",
+      "phonetic": "/wʌt ˈhæpənz æt ðə ˈmɪdəl ˈsɛkʃən?/",
+      "zh": "中段會怎麼樣？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The tenors take the melody there.",
+      "phonetic": "/ðə ˈtɛnərz teɪk ðə ˈmɛlədi ðɛr./",
+      "zh": "男高音在那裡唱主旋律。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which part needs the most practice?",
+      "phonetic": "/wɪtʃ pɑrt nidz ðə moʊst ˈpræktɪs?/",
+      "zh": "哪一段最需要練？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The ending needs a lot of practice.",
+      "phonetic": "/ði ˈɛndɪŋ nidz ə lɑt əv ˈpræktɪs./",
+      "zh": "結尾需要多練。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Could we sing it a little slower?",
+      "phonetic": "/kʊd wi sɪŋ ɪt ə ˈlɪtəl ˈsloʊər?/",
+      "zh": "我們可以唱慢一點嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, slower helps us hear each other.",
+      "phonetic": "/jɛs ˈsloʊər hɛlps ʌs hɪr itʃ ˈʌðər./",
+      "zh": "可以，慢一點能聽見彼此。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the high note still too hard?",
+      "phonetic": "/ɪz ðə haɪ noʊt stɪl tu hɑrd?/",
+      "zh": "那個高音還是太難嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is easier when we breathe first.",
+      "phonetic": "/ɪt ɪz ˈiziər wɛn wi brið fɜrst./",
+      "zh": "先呼吸就比較容易。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "When does the conductor want the ending?",
+      "phonetic": "/wɛn dʌz ðə kənˈdʌktər wɑnt ði ˈɛndɪŋ?/",
+      "zh": "指揮希望結尾怎麼唱？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She wants a long soft ending.",
+      "phonetic": "/ʃi wɑnts ə lɔŋ sɔft ˈɛndɪŋ./",
+      "zh": "她想要長而柔的結尾。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are we holding the last note?",
+      "phonetic": "/ɑr wi ˈhoʊldɪŋ ðə læst noʊt?/",
+      "zh": "最後一個音要延長嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, hold it for four beats.",
+      "phonetic": "/jɛs hoʊld ɪt fɔr fɔr bits./",
+      "zh": "要，延長四個拍子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How do we count the four beats?",
+      "phonetic": "/haʊ du wi kaʊnt ðə fɔr bits?/",
+      "zh": "這四個拍子怎麼數？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Count with the conductor's left hand.",
+      "phonetic": "/kaʊnt wɪð ðə kənˈdʌktərz lɛft hænd./",
+      "zh": "跟著指揮的左手數。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will the piano play our notes first?",
+      "phonetic": "/wɪl ðə piˈæno pleɪ aʊər noʊts fɜrst?/",
+      "zh": "鋼琴可以先彈我們的音嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, listen once and then sing.",
+      "phonetic": "/jɛs ˈlɪsən wʌns ænd ðɛn sɪŋ./",
+      "zh": "可以，聽一次再唱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What if we lose the beat again?",
+      "phonetic": "/wʌt ɪf wi luz ðə bit əˈɡɛn?/",
+      "zh": "如果我們又跟不上拍子呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep going and trust the conductor.",
+      "phonetic": "/kip ˈɡoʊɪŋ ænd trʌst ðə kənˈdʌktər./",
+      "zh": "繼續唱，相信指揮。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Why do the altos sing under us?",
+      "phonetic": "/waɪ du ði ˈæltoʊz sɪŋ ˈʌndər ʌs?/",
+      "zh": "為什麼女低音在我們下面唱？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Their line fills the space between.",
+      "phonetic": "/ðɛr laɪn fɪlz ðə speɪs bɪˈtwin./",
+      "zh": "他們的聲部填滿中間的空隙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should we look at the conductor?",
+      "phonetic": "/ʃʊd wi lʊk æt ðə kənˈdʌktər?/",
+      "zh": "我們該看指揮嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Look up at the hard parts.",
+      "phonetic": "/lʊk ʌp æt ðə hɑrd pɑrts./",
+      "zh": "難的地方要抬頭看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Could we mark the breathing spots?",
+      "phonetic": "/kʊd wi mɑrk ðə ˈbriðɪŋ spɑts?/",
+      "zh": "我們可以標呼吸點嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, mark them before the long phrases.",
+      "phonetic": "/jɛs mɑrk ðɛm bɪˈfɔr ðə lɔŋ ˈfreɪzɪz./",
+      "zh": "可以，標在長樂句之前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do we breathe together at the comma?",
+      "phonetic": "/du wi brið təˈɡɛðər æt ðə ˈkɑmə?/",
+      "zh": "我們在逗號處一起呼吸嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, one quiet breath together.",
+      "phonetic": "/jɛs wʌn ˈkwaɪət brɛθ təˈɡɛðər./",
+      "zh": "對，一起安靜地吸一口氣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which words should sound the clearest?",
+      "phonetic": "/wɪtʃ wɜrdz ʃʊd saʊnd ðə ˈklɪrəst?/",
+      "zh": "哪些字要唱得最清楚？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The words at the end of phrases.",
+      "phonetic": "/ðə wɜrdz æt ði ɛnd əv ˈfreɪzɪz./",
+      "zh": "樂句結尾的那些字。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can the tenors sing that line softer?",
+      "phonetic": "/kæn ðə ˈtɛnərz sɪŋ ðæt laɪn ˈsɔftər?/",
+      "zh": "男高音那句可以唱柔一點嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, but please keep the rhythm.",
+      "phonetic": "/jɛs bʌt pliz kip ðə ˈrɪðəm./",
+      "zh": "可以，但請保持節奏。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the last chord in tune now?",
+      "phonetic": "/ɪz ðə læst kɔrd ɪn tun naʊ?/",
+      "zh": "最後一個和絃現在準了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Almost, the basses are still flat.",
+      "phonetic": "/ˈɔlmoʊst ðə ˈbeɪsɪz ɑr stɪl flæt./",
+      "zh": "差不多了，男低音還偏低。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How many times do we repeat it?",
+      "phonetic": "/haʊ ˈmɛni taɪmz du wi rɪˈpit ɪt?/",
+      "zh": "我們要重複幾次？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Three times, then we finish softly.",
+      "phonetic": "/θri taɪmz ðɛn wi ˈfɪnɪʃ ˈsɔftli./",
+      "zh": "三次，然後柔柔地結束。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should we run it once more?",
+      "phonetic": "/ʃʊd wi rʌn ɪt wʌns mɔr/",
+      "zh": "我們要再跑一次嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, and keep the tempo steady.",
+      "phonetic": "/jɛs ænd kip ðə ˈtɛmpoʊ ˈstɛdi./",
+      "zh": "好，並且保持速度穩定。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How is the balance between parts?",
+      "phonetic": "/haʊ ɪz ðə ˈbæləns bɪˈtwin pɑrts?/",
+      "zh": "各聲部之間的平衡如何？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The sopranos are still too loud.",
+      "phonetic": "/ðə səˈprænoʊz ɑr stɪl tu laʊd./",
+      "zh": "女高音還是太大聲。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Watch my hand for the final cut.",
+      "phonetic": "/wɑtʃ maɪ hænd fɔr ðə ˈfaɪnəl kʌt./",
+      "zh": "最後收尾看我的手。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We will watch and stop together.",
+      "phonetic": "/wi wɪl wɑtʃ ænd stɑp təˈɡɛðər./",
+      "zh": "我們會看著一起停。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the tempo too fast for you?",
+      "phonetic": "/ɪz ðə ˈtɛmpoʊ tu fæst fɔr ju?/",
+      "zh": "這個速度對你來說太快嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, it feels comfortable for me.",
+      "phonetic": "/noʊ ɪt filz ˈkʌmfərtəbəl fɔr mi./",
+      "zh": "不會，我覺得還舒服。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where do we slow down?",
+      "phonetic": "/wɛr du wi sloʊ daʊn?/",
+      "zh": "我們在哪裡慢下來？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "At the last two bars only.",
+      "phonetic": "/æt ðə læst tu bɑrz ˈoʊnli./",
+      "zh": "只在最後兩小節。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do the basses need a breath there?",
+      "phonetic": "/du ðə ˈbeɪsɪz nid ə brɛθ ðɛr?/",
+      "zh": "男低音那裡需要換氣嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, a quick breath before that note.",
+      "phonetic": "/jɛs ə kwɪk brɛθ bɪˈfɔr ðæt noʊt./",
+      "zh": "要，那個音之前快速吸一口。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Why did the final chord go flat?",
+      "phonetic": "/waɪ dɪd ðə ˈfaɪnəl kɔrd ɡoʊ flæt?/",
+      "zh": "最後一個和絃為什麼偏低？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Because we were running out of air.",
+      "phonetic": "/bɪˈkɔz wi wɜr ˈrʌnɪŋ aʊt əv ɛr./",
+      "zh": "因為我們的氣不夠了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should we hold the last note longer?",
+      "phonetic": "/ʃʊd wi hoʊld ðə læst noʊt ˈlɔŋɡər?/",
+      "zh": "最後一個音要拉更長嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, longer and much softer.",
+      "phonetic": "/jɛs ˈlɔŋɡər ænd mʌtʃ ˈsɔftər./",
+      "zh": "要，更長而且輕很多。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let us fix that rhythm again.",
+      "phonetic": "/lɛt ʌs fɪks ðæt ˈrɪðəm əˈɡɛn./",
+      "zh": "我們再把那個節奏修一下。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good idea, we rushed that part.",
+      "phonetic": "/ɡʊd aɪˈdiə wi rʌʃt ðæt pɑrt./",
+      "zh": "好主意，那部分我們趕了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which line needs a softer ending?",
+      "phonetic": "/wɪtʃ laɪn nidz ə ˈsɔftər ˈɛndɪŋ?/",
+      "zh": "哪一句需要更柔的結尾？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The last line of the chorus.",
+      "phonetic": "/ðə læst laɪn əv ðə ˈkɔrəs./",
+      "zh": "副歌的最後一句。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are the altos comfortable with that note?",
+      "phonetic": "/ɑr ði ˈæltoʊz ˈkʌmfərtəbəl wɪð ðæt noʊt?/",
+      "zh": "女低音唱那個音舒服嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it sits well for us.",
+      "phonetic": "/jɛs ɪt sɪts wɛl fɔr ʌs./",
+      "zh": "舒服，很適合我們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Show us the beat before we start.",
+      "phonetic": "/ʃoʊ ʌs ðə bit bɪˈfɔr wi stɑrt./",
+      "zh": "開始前給我們看一下拍子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One, two, three, and then breathe.",
+      "phonetic": "/wʌn tu θri ænd ðɛn brið./",
+      "zh": "一、二、三，然後吸氣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can the tenors sing their line softer?",
+      "phonetic": "/kæn ðə ˈtɛnərz sɪŋ ðɛr laɪn ˈsɔftər?/",
+      "zh": "男高音那句可以唱柔一點嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can, but we need air.",
+      "phonetic": "/wi kæn bʌt wi nid ɛr./",
+      "zh": "可以，但我們需要氣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the piano cover our voices?",
+      "phonetic": "/dʌz ðə piˈænoʊ ˈkʌvər aʊr ˈvɔɪsɪz?/",
+      "zh": "鋼琴蓋過我們的聲音嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A little, please sing a bit louder.",
+      "phonetic": "/ə ˈlɪtəl pliz sɪŋ ə bɪt ˈlaʊdər./",
+      "zh": "有一點，請唱大聲一些。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Who is conducting the last page?",
+      "phonetic": "/hu ɪz kənˈdʌktɪŋ ðə læst peɪdʒ?/",
+      "zh": "最後一頁誰指揮？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Our conductor, she leads the ending.",
+      "phonetic": "/aʊr kənˈdʌktər ʃi lidz ði ˈɛndɪŋ./",
+      "zh": "我們的指揮，她帶結尾。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should we breathe together at the bar?",
+      "phonetic": "/ʃʊd wi brið təˈɡɛðər æt ðə bɑr?/",
+      "zh": "我們要在小節線一起吸氣嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, together, so the ending stays clean.",
+      "phonetic": "/jɛs təˈɡɛðər soʊ ði ˈɛndɪŋ steɪz klin./",
+      "zh": "對，一起，這樣結尾才乾淨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Try the ending with the full choir.",
+      "phonetic": "/traɪ ði ˈɛndɪŋ wɪð ðə fʊl ˈkwaɪər./",
+      "zh": "用全團試一次結尾。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We are ready for the final run.",
+      "phonetic": "/wi ɑr ˈrɛdi fɔr ðə ˈfaɪnəl rʌn./",
+      "zh": "我們準備好最後一次了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That was much better, everyone.",
+      "phonetic": "/ðæt wʌz mʌtʃ ˈbɛtər ˈɛvriwʌn./",
+      "zh": "這次好多了，各位。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thank you, it felt much calmer.",
+      "phonetic": "/θæŋk ju ɪt fɛlt mʌtʃ ˈkɑmər./",
+      "zh": "謝謝，感覺平靜多了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Once more, from the quiet part.",
+      "phonetic": "/wʌns mɔr frʌm ðə ˈkwaɪət pɑrt./",
+      "zh": "再來一次，從小聲的部分。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "From the quiet part, slowly please.",
+      "phonetic": "/frʌm ðə ˈkwaɪət pɑrt ˈsloʊli pliz./",
+      "zh": "從小聲的部分，請慢一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Mark your breath before the long phrase.",
+      "phonetic": "/mɑrk jʊr brɛθ bɪˈfɔr ðə lɔŋ freɪz./",
+      "zh": "在長句前標好呼吸。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I marked mine with a pencil.",
+      "phonetic": "/aɪ mɑrkt maɪn wɪð ə ˈpɛnsəl./",
+      "zh": "我用鉛筆標好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do we need more air here?",
+      "phonetic": "/du wi nid mɔr ɛr hɪr?/",
+      "zh": "這裡我們需要更多氣嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, more air for the last note.",
+      "phonetic": "/jɛs mɔr ɛr fɔr ðə læst noʊt./",
+      "zh": "要，最後一個音需要更多氣。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we hear the whole choir again?",
+      "phonetic": "/kæn wi hɪr ðə hoʊl ˈkwaɪər əˈɡɛn?/",
+      "zh": "可以再聽一次全團嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, one more time from the top.",
+      "phonetic": "/jɛs wʌn mɔr taɪm frʌm ðə tɑp./",
+      "zh": "可以，再從頭一次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How was the blend in that chord?",
+      "phonetic": "/haʊ wʌz ðə blɛnd ɪn ðæt kɔrd?/",
+      "zh": "那個和絃的融合如何？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Better, but the ending felt short.",
+      "phonetic": "/ˈbɛtər bʌt ði ˈɛndɪŋ fɛlt ʃɔrt./",
+      "zh": "好多了，但結尾感覺太短。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Keep the last note soft and long.",
+      "phonetic": "/kip ðə læst noʊt sɔft ænd lɔŋ./",
+      "zh": "最後一個音保持輕而長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Soft and long, we understand.",
+      "phonetic": "/sɔft ænd lɔŋ wi ˌʌndərˈstænd./",
+      "zh": "輕而長，我們了解。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good work, we are almost ready.",
+      "phonetic": "/ɡʊd wɜrk wi ɑr ˈɔlmoʊst ˈrɛdi./",
+      "zh": "做得好，我們差不多準備好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Almost ready for the concert night.",
+      "phonetic": "/ˈɔlmoʊst ˈrɛdi fɔr ðə ˈkɑnsərt naɪt./",
+      "zh": "差不多可以上演唱會了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What are we singing next week?",
+      "phonetic": "/wʌt ɑr wi ˈsɪŋɪŋ nɛkst wik?/",
+      "zh": "我們下週要唱什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We are singing the spring song.",
+      "phonetic": "/wi ɑr ˈsɪŋɪŋ ðə sprɪŋ sɔŋ./",
+      "zh": "我們要唱那首春天的歌。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which song should we practice next?",
+      "phonetic": "/wɪtʃ sɔŋ ʃʊd wi ˈpræktɪs nɛkst?/",
+      "zh": "我們接下來該練哪一首？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let us start with the slow one.",
+      "phonetic": "/lɛt ʌs stɑrt wɪð ðə sloʊ wʌn./",
+      "zh": "我們先從慢的那首開始。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we sing the new piece again?",
+      "phonetic": "/kæn wi sɪŋ ðə nu pis əˈɡɛn?/",
+      "zh": "我們可以再唱一次新曲子嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, we can try it now.",
+      "phonetic": "/jɛs wi kæn traɪ ɪt naʊ./",
+      "zh": "可以，我們現在就試試。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Who chose the song for Sunday?",
+      "phonetic": "/hu tʃoʊz ðə sɔŋ fɔr ˈsʌndeɪ?/",
+      "zh": "星期天那首曲子是誰選的？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The conductor chose it last month.",
+      "phonetic": "/ðə kənˈdʌktər tʃoʊz ɪt læst mʌnθ./",
+      "zh": "是指揮上個月選的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Have we got the music yet?",
+      "phonetic": "/hæv wi ɡɑt ðə ˈmjuzɪk jɛt?/",
+      "zh": "我們拿到譜了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I put the copies in your folder.",
+      "phonetic": "/aɪ pʊt ðə ˈkɑpiz ɪn jʊr ˈfoʊldər./",
+      "zh": "我把影本放進你的資料夾了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How many songs do we need?",
+      "phonetic": "/haʊ ˈmɛni sɔŋz du wi nid?/",
+      "zh": "我們需要幾首歌？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We need three songs for the show.",
+      "phonetic": "/wi nid θri sɔŋz fɔr ðə ʃoʊ./",
+      "zh": "演出需要三首歌。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "When is our next rehearsal night?",
+      "phonetic": "/wɛn ɪz aʊr nɛkst rɪˈhɜrsəl naɪt?/",
+      "zh": "我們下次練唱是哪天晚上？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is on Thursday at seven.",
+      "phonetic": "/ɪt ɪz ɑn ˈθɜrzdeɪ æt ˈsɛvən./",
+      "zh": "是星期四晚上七點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where did you put my sheet music?",
+      "phonetic": "/wɛr dɪd ju pʊt maɪ ʃit ˈmjuzɪk?/",
+      "zh": "你把我的譜放到哪裡了？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Your sheets are on the piano.",
+      "phonetic": "/jʊr ʃits ɑr ɑn ðə piˈænoʊ./",
+      "zh": "你的譜在鋼琴上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are these the parts for next week?",
+      "phonetic": "/ɑr ðiz ðə pɑrts fɔr nɛkst wik?/",
+      "zh": "這些是下週要用的聲部譜嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, those are the alto parts.",
+      "phonetic": "/jɛs ðoʊz ɑr ði ˈæltoʊ pɑrts./",
+      "zh": "對，那些是女低音的譜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please give me the second page.",
+      "phonetic": "/pliz ɡɪv mi ðə ˈsɛkənd peɪdʒ./",
+      "zh": "請把第二頁給我。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here it is, right on top.",
+      "phonetic": "/hɪr ɪt ɪz raɪt ɑn tɑp./",
+      "zh": "在這裡，就在最上面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is this copy yours or mine?",
+      "phonetic": "/ɪz ðɪs ˈkɑpi jʊrz ɔr maɪn?/",
+      "zh": "這份譜是你的還是我的？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, mine has a blue cover.",
+      "phonetic": "/noʊ maɪn hæz ə blu ˈkʌvər./",
+      "zh": "不是，我的封面是藍色的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Why do we change the song list?",
+      "phonetic": "/waɪ du wi tʃeɪndʒ ðə sɔŋ lɪst?/",
+      "zh": "我們為什麼要換曲目？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Because the tenor is not ready.",
+      "phonetic": "/bɪˈkɔz ðə ˈtɛnər ɪz nɑt ˈrɛdi./",
+      "zh": "因為男高音還沒練好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you bring the extra copies?",
+      "phonetic": "/kæn ju brɪŋ ði ˈɛkstrə ˈkɑpiz?/",
+      "zh": "你可以帶多印的譜來嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, I will bring them all.",
+      "phonetic": "/ʃʊr aɪ wɪl brɪŋ ðɛm ɔl./",
+      "zh": "當然，我會全部帶來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let us keep the old song too.",
+      "phonetic": "/lɛt ʌs kip ði oʊld sɔŋ tu./",
+      "zh": "我們也把那首舊歌留著吧。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is fine with the group.",
+      "phonetic": "/ðæt ɪz faɪn wɪð ðə ɡrup./",
+      "zh": "大家都可以接受。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which part is the hardest one?",
+      "phonetic": "/wɪtʃ pɑrt ɪz ðə ˈhɑrdəst wʌn?/",
+      "zh": "哪一段最難？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The ending is the hardest part.",
+      "phonetic": "/ði ˈɛndɪŋ ɪz ðə ˈhɑrdəst pɑrt./",
+      "zh": "結尾是最難的部分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you want the green folder?",
+      "phonetic": "/du ju wɑnt ðə ɡrin ˈfoʊldər?/",
+      "zh": "你要那個綠色的資料夾嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the green one is mine.",
+      "phonetic": "/jɛs ðə ɡrin wʌn ɪz maɪn./",
+      "zh": "要，綠色那個是我的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where should I leave the music?",
+      "phonetic": "/wɛr ʃʊd aɪ liv ðə ˈmjuzɪk?/",
+      "zh": "我該把譜放在哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Leave it in the front box.",
+      "phonetic": "/liv ɪt ɪn ðə frʌnt bɑks./",
+      "zh": "放在前面的箱子裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should we sing the fast one first?",
+      "phonetic": "/ʃʊd wi sɪŋ ðə fæst wʌn fɜrst?/",
+      "zh": "我們要先唱快的那首嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, let us warm up first.",
+      "phonetic": "/noʊ lɛt ʌs wɔrm ʌp fɜrst./",
+      "zh": "不用，我們先暖嗓。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Who has the list of songs?",
+      "phonetic": "/hu hæz ðə lɪst əv sɔŋz?/",
+      "zh": "誰有曲目表？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mia has it in her bag.",
+      "phonetic": "/ˈmiə hæz ɪt ɪn hɜr bæɡ./",
+      "zh": "米亞的袋子裡有。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the new song easy to learn?",
+      "phonetic": "/ɪz ðə nu sɔŋ ˈizi tu lɜrn?/",
+      "zh": "這首新歌好學嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is easy after a while.",
+      "phonetic": "/ɪt ɪz ˈizi ˈæftər ə waɪl./",
+      "zh": "練一下之後就簡單了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I take my copy home?",
+      "phonetic": "/kæn aɪ teɪk maɪ ˈkɑpi hoʊm?/",
+      "zh": "我可以把我的譜帶回家嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, but bring it back Friday.",
+      "phonetic": "/jɛs bʌt brɪŋ ɪt bæk ˈfraɪdeɪ./",
+      "zh": "可以，但星期五要帶回來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What time do we finish tonight?",
+      "phonetic": "/wʌt taɪm du wi ˈfɪnɪʃ təˈnaɪt?/",
+      "zh": "我們今晚幾點結束？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We finish around nine tonight.",
+      "phonetic": "/wi ˈfɪnɪʃ əˈraʊnd naɪn təˈnaɪt./",
+      "zh": "今晚大概九點結束。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do we sing the same song Sunday?",
+      "phonetic": "/du wi sɪŋ ðə seɪm sɔŋ ˈsʌndeɪ?/",
+      "zh": "星期天我們唱同一首歌嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, we sing a different one.",
+      "phonetic": "/noʊ wi sɪŋ ə ˈdɪfərənt wʌn./",
+      "zh": "不，我們唱另一首。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are you free to practice Saturday?",
+      "phonetic": "/ɑr ju fri tu ˈpræktɪs ˈsætərˌdeɪ?/",
+      "zh": "你星期六有空練習嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I am free in the morning.",
+      "phonetic": "/aɪ æm fri ɪn ðə ˈmɔrnɪŋ./",
+      "zh": "我早上有空。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How long is the new piece?",
+      "phonetic": "/haʊ lɔŋ ɪz ðə nu pis?/",
+      "zh": "這首新曲子有多長？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is about four minutes long.",
+      "phonetic": "/ɪt ɪz əˈbaʊt fɔr ˈmɪnɪts lɔŋ./",
+      "zh": "大約四分鐘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Would you like some hot tea?",
+      "phonetic": "/wʊd ju laɪk sʌm hɑt ti?/",
+      "zh": "你想喝點熱茶嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, tea sounds good tonight.",
+      "phonetic": "/jɛs ti saʊndz ɡʊd təˈnaɪt./",
+      "zh": "好啊，今晚喝茶正好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the tea still warm?",
+      "phonetic": "/ɪz ðə ti stɪl wɔrm?/",
+      "zh": "茶還熱嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, I just poured it.",
+      "phonetic": "/jɛs aɪ dʒʌst pɔrd ɪt./",
+      "zh": "還熱，我剛倒的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you take milk in tea?",
+      "phonetic": "/du ju teɪk mɪlk ɪn ti?/",
+      "zh": "你喝茶加牛奶嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, I like it plain.",
+      "phonetic": "/noʊ aɪ laɪk ɪt pleɪn./",
+      "zh": "不加，我喜歡喝純的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Whose cup is on the table?",
+      "phonetic": "/huz kʌp ɪz ɑn ðə ˈteɪbəl?/",
+      "zh": "桌上那個杯子是誰的？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That cup belongs to Sam.",
+      "phonetic": "/ðæt kʌp bɪˈlɔŋz tu sæm./",
+      "zh": "那個杯子是山姆的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I have a small biscuit?",
+      "phonetic": "/kæn aɪ hæv ə smɔl ˈbɪskɪt?/",
+      "zh": "我可以吃一塊小餅乾嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, the box is over there.",
+      "phonetic": "/ʃʊr ðə bɑks ɪz ˈoʊvər ðɛr./",
+      "zh": "當然，盒子就在那邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where did you buy this tea?",
+      "phonetic": "/wɛr dɪd ju baɪ ðɪs ti?/",
+      "zh": "你這茶在哪裡買的？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I bought it near the market.",
+      "phonetic": "/aɪ bɔt ɪt nɪr ðə ˈmɑrkɪt./",
+      "zh": "我在市場附近買的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks for the lovely evening tonight.",
+      "phonetic": "/θæŋks fɔr ðə ˈlʌvli ˈivnɪŋ təˈnaɪt./",
+      "zh": "謝謝你今晚這麼美好的時光。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thank you for singing so well.",
+      "phonetic": "/θæŋk ju fɔr ˈsɪŋɪŋ soʊ wɛl./",
+      "zh": "謝謝你唱得這麼好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will you come again next week?",
+      "phonetic": "/wɪl ju kʌm əˈɡɛn nɛkst wik?/",
+      "zh": "你下週還會來嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, I will be there early.",
+      "phonetic": "/jɛs aɪ wɪl bi ðɛr ˈɜrli./",
+      "zh": "會，我會早點到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are you leaving so soon?",
+      "phonetic": "/ɑr ju ˈlivɪŋ soʊ sun?/",
+      "zh": "你這麼快就要走了？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, my sister waits outside.",
+      "phonetic": "/jɛs maɪ ˈsɪstər weɪts ˌaʊtˈsaɪd/",
+      "zh": "是啊，我妹妹在外面等。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should we clean the room now?",
+      "phonetic": "/ʃʊd wi klin ðə rum naʊ?/",
+      "zh": "我們現在要收拾房間嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, let us stack the chairs.",
+      "phonetic": "/jɛs lɛt ʌs stæk ðə tʃɛrz./",
+      "zh": "好，我們把椅子疊起來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "May I help you wash the cups?",
+      "phonetic": "/meɪ aɪ hɛlp ju wɑʃ ðə kʌps?/",
+      "zh": "我幫你洗杯子好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That would really help.",
+      "phonetic": "/ðæt wʊd ˈrɪli hɛlp/",
+      "zh": "那真的幫了大忙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How do you get home tonight?",
+      "phonetic": "/haʊ du ju ɡɛt hoʊm təˈnaɪt?/",
+      "zh": "你今晚怎麼回家？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I walk home with my sister.",
+      "phonetic": "/aɪ wɔk hoʊm wɪð maɪ ˈsɪstər./",
+      "zh": "我和我妹妹一起走回家。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I will grab my coat now.",
+      "phonetic": "/aɪ wɪl ɡræb maɪ koʊt naʊ/",
+      "zh": "我現在去拿外套。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mine is on the chair.",
+      "phonetic": "/maɪn ɪz ɑn ðə tʃɛr/",
+      "zh": "我的在椅子上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should we share a taxi home?",
+      "phonetic": "/ʃʊd wi ʃɛr ə ˈtæksi hoʊm/",
+      "zh": "我們要一起搭計程車回家嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, my sister walks with me.",
+      "phonetic": "/noʊ maɪ ˈsɪstər wɔks wɪð mi/",
+      "zh": "不了，我妹妹陪我走回家。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is your coat and bag?",
+      "phonetic": "/wɛr ɪz jʊr koʊt ænd bæɡ?/",
+      "zh": "你的外套和袋子在哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My coat is behind the door.",
+      "phonetic": "/maɪ koʊt ɪz bɪˈhaɪnd ðə dɔr./",
+      "zh": "我的外套在門後面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is it cold outside right now?",
+      "phonetic": "/ɪz ɪt koʊld ˌaʊtˈsaɪd raɪt naʊ?/",
+      "zh": "現在外面冷嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, wear your warm scarf.",
+      "phonetic": "/jɛs wɛr jʊr wɔrm skɑrf./",
+      "zh": "冷，圍上你的保暖圍巾。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please say hello to your family.",
+      "phonetic": "/pliz seɪ həˈloʊ tu jʊr ˈfæməli./",
+      "zh": "請代我向你家人問好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will, and thanks again.",
+      "phonetic": "/aɪ wɪl ænd θæŋks əˈɡɛn./",
+      "zh": "我會的，再次謝謝你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What did you think of tonight?",
+      "phonetic": "/wʌt dɪd ju θɪŋk əv təˈnaɪt?/",
+      "zh": "你覺得今晚怎麼樣？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I think we sang quite well.",
+      "phonetic": "/aɪ θɪŋk wi sæŋ kwaɪt wɛl./",
+      "zh": "我覺得我們唱得相當好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Could we meet a little earlier?",
+      "phonetic": "/kʊd wi mit ə ˈlɪtəl ˈɜrliər?/",
+      "zh": "我們可以早一點碰面嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, let us meet at six.",
+      "phonetic": "/jɛs lɛt ʌs mit æt sɪks./",
+      "zh": "可以，我們六點見。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Have you still got my umbrella?",
+      "phonetic": "/hæv ju stɪl ɡɑt maɪ ʌmˈbrɛlə?/",
+      "zh": "我的傘還在你那裡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it is by the stairs.",
+      "phonetic": "/jɛs ɪt ɪz baɪ ðə stɛrz./",
+      "zh": "在，就在樓梯旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Take care on your way home.",
+      "phonetic": "/teɪk kɛr ɑn jʊr weɪ hoʊm./",
+      "zh": "回家路上小心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thanks, you too, good night.",
+      "phonetic": "/θæŋks ju tu ɡʊd naɪt./",
+      "zh": "謝謝，你也是，晚安。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is your sister outside now?",
+      "phonetic": "/ɪz jʊr ˈsɪstər ˌaʊtˈsaɪd naʊ/",
+      "zh": "你妹妹現在在外面嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, she is by the door.",
+      "phonetic": "/jɛs ʃi ɪz baɪ ðə dɔr/",
+      "zh": "是，她在門邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are we all ready to go home?",
+      "phonetic": "/ɑr wi ɔl ˈrɛdi tu ɡoʊ hoʊm?/",
+      "zh": "我們都準備好回家了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, we are all very tired.",
+      "phonetic": "/jɛs wi ɑr ɔl ˈvɛri ˈtaɪərd./",
+      "zh": "好了，我們都累了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Who is locking the front door?",
+      "phonetic": "/hu ɪz ˈlɑkɪŋ ðə frʌnt dɔr?/",
+      "zh": "誰負責鎖大門？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The conductor locks it every night.",
+      "phonetic": "/ðə kənˈdʌktər lɑks ɪt ˈɛvri naɪt./",
+      "zh": "指揮每天晚上都鎖門。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Goodbye, and thank you very much.",
+      "phonetic": "/ɡʊdˈbaɪ ænd θæŋk ju ˈvɛri mʌtʃ./",
+      "zh": "再見，非常謝謝你。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Goodbye, take care and rest well.",
+      "phonetic": "/ɡʊdˈbaɪ teɪk kɛr ænd rɛst wɛl./",
+      "zh": "再見，保重，好好休息。"
+    }
+  ],
+  "review": {
+    "round": 2,
+    "score": 85,
+    "score_source": "report",
+    "verdict": "APPROVED",
+    "dimensions": {
+      "pair_logic": 21,
+      "idiomatic_a2": 20,
+      "ipa_accuracy": 25,
+      "variety_no_dup": 19
+    },
+    "issues": [
+      {
+        "dim": "pair_logic",
+        "line": 177,
+        "note": "警告級（非 error）：177 由 char_b 說「Ready when you are, conductor.」，254 由 char_a 說「Watch my hand for the final cut.」，兩把聲音在團員／指揮之間擺動；本格式以朗讀聲部計，且未出現「同一把聲音扮指揮、緊接著又把指揮當第三人稱談論」的禁用型態。"
+      },
+      {
+        "dim": "pair_logic",
+        "line": 279,
+        "note": "警告級（非 error）：278 問「Who is conducting the last page?」，279 答「Our conductor, she leads the ending.」屬同義重述、無新資訊；全篇僅此一處問答空轉。"
+      },
+      {
+        "dim": "pair_logic",
+        "line": 390,
+        "note": "警告級（非 error）：391 已道「good night」，392–397 又續談（妹妹在不在、誰鎖門），到 398–399 才正式告別；屬自然離場拖延，無狀態矛盾，非 error 級。"
+      },
+      {
+        "dim": "pair_logic",
+        "line": 27,
+        "note": "警告級（非 error）：027 自報「I am Anna, my first rehearsal.」，032 被稱 Anna，090 又稱 Ben，337／357 出現 Mia／Sam；皆屬聲位切換下的裝飾性人名，非同一人前後硬矛盾。"
+      },
+      {
+        "dim": "idiomatic_a2",
+        "line": 3,
+        "note": "警告級（非 error）：「Welcome, I have your name.」語意偏模糊，母語者多說 I have your name on the list.，仍可理解。"
+      },
+      {
+        "dim": "idiomatic_a2",
+        "line": 6,
+        "note": "警告級（非 error）：「my music sheet」為單數卻接 they are in this box，數不一致；慣用語為 sheet music（314 已用對）。另 308「Have we got the music yet?」偏英式，美式多作 Do we have…。"
+      },
+      {
+        "dim": "idiomatic_a2",
+        "line": 133,
+        "note": "警告級（非 error）：機器信號的譯文夾英文 'morning'（「我想是在 morning 這個字之後」）；原句本就在引述英文歌詞用字，可接受。"
+      },
+      {
+        "dim": "variety_no_dup",
+        "line": 244,
+        "note": "警告級（非 error）：244/245 與 274/275 都是「請 tenors 唱輕一點」，近乎同一對；且 100–299 多組走音／太快／太大聲修正高度相似，b 句約 30 條以 Yes 開頭、a 句大量 Can/Could/Should we 起句。"
+      }
+    ],
+    "summary_zh": "第 2 輪修正已逐處核實：003、026、046 換句避開撞句，071 不再把 Anna 當第三人稱，028／072／250／376 已改 Should we，374／375 改為拿外套、不再於道晚安後續談。全篇報到拿譜→暖嗓→分部對拍修細節→合練整首→排下週曲目收譜→喝茶道別推進完整，b 皆有實詞回應，未見 error 級問題；C 項依機器證據（SUSPECT 0、token 對齊通過）給滿分，僅餘 8 條已具名的警告級殘留，故予 APPROVED。",
+    "model": "skill:hot-sleep-dialogues",
+    "reviewed_at": 1791048263,
+    "content_hash": "sha1:81f47d362fd2c76418d8a6a21b29c1016de9e787"
+  }
+}

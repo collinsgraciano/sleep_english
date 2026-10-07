@@ -351,7 +351,7 @@
       "speaker": "char_b",
       "text": "Great, ask for me at the desk.",
       "phonetic": "/ɡreɪt æsk fər mi æt ðə dɛsk./",
-      "zh": "太好了，到櫃檯找我。"
+      "zh": "太好了，到櫃台找我。"
     },
     {
       "speaker": "char_a",
@@ -381,7 +381,7 @@
       "speaker": "char_a",
       "text": "Does he chew on furniture at home?",
       "phonetic": "/dʌz hi tʃu ɑn ˈfərnɪtʃər æt hoʊm?/",
-      "zh": "他在家會咬家具嗎？"
+      "zh": "他在家會咬傢俱嗎？"
     },
     {
       "speaker": "char_b",
@@ -1591,9 +1591,9 @@
     },
     {
       "speaker": "char_a",
-      "text": "Could you hold her until Monday?",
-      "phonetic": "/kʊd ju hoʊld hər ʌnˈtɪl ˈmʌndeɪ?/",
-      "zh": "你們可以幫我保留她到週一嗎？"
+      "text": "Could you hold her until Saturday?",
+      "phonetic": "/kʊd ju hoʊld hɜr ʌnˈtɪl ˈsætərˌdeɪ/",
+      "zh": "你們可以幫我留到週六嗎？"
     },
     {
       "speaker": "char_b",
@@ -2453,5 +2453,58 @@
       "phonetic": "/slip wɛl ˈlɪtəl ɡɜrl/",
       "zh": "好好睡，小女生。"
     }
-  ]
+  ],
+  "review": {
+    "round": 3,
+    "score": 90,
+    "score_source": "report",
+    "verdict": "APPROVED",
+    "dimensions": {
+      "pair_logic": 22,
+      "idiomatic_a2": 23,
+      "ipa_accuracy": 24,
+      "variety_no_dup": 21
+    },
+    "issues": [
+      {
+        "dim": "pair_logic",
+        "line": 216,
+        "note": "212-221 的「家訪/資格訪談」段：提問落在 a 軌、申請人個人作答落在 b 軌，與前後段落（200-211、222-229：a=領養人、b=收容所）相比聲位互換；216『I work from home most days.』是全篇少見落在提問軌的陳述句，217『That's great for a dog.』才是收容所回應。每一組本身仍貼合（212/213、214/215、216/217、218/219 都是問-答或陳述-回應），事實面也沒有衝突，故判 warning 而非 error：若成品是固定兩把聲音，此 10 行會短暫換角。"
+      },
+      {
+        "dim": "pair_logic",
+        "line": 256,
+        "note": "256『Could you hold her until Monday?』/257『Yes, we hold for three days.』與 231『Saturday morning, after her shot.』、234『What should I bring Saturday?』、258-259『What time should I come Saturday?』/『Ten in the morning works.』並置，讀起來像殘留的第二個取狗方案。非直接事實矛盾（週六到週一為 2 天，仍在 3 天保留期內），但同一段先問保留到週一、緊接又問週六幾點到，聽感略跳。"
+      },
+      {
+        "dim": "variety_no_dup",
+        "line": 212,
+        "note": "212『Is anyone at home against it?』與 214『Is anyone home during the day?』相鄰兩句同以 Is anyone 開頭，是全篇唯一一次相鄰開頭詞完全重複（內容不同，僅屬變化度小瑕）。"
+      },
+      {
+        "dim": "variety_no_dup",
+        "line": 223,
+        "note": "222/223 重新問答費用（174/175 已答過），200-205 的填表節奏也與 184-187 重疊。屬後半自成一景的重述，資訊一致（皆 two hundred dollars），非矛盾。"
+      },
+      {
+        "dim": "idiomatic_a2",
+        "line": 285,
+        "note": "285『Between her shoulder blades.』與 251『the adoption contract』是全篇詞彙上最偏 B1 的兩處，但仍具體可理解、非超綱硬詞；其餘全篇為自然口語。"
+      },
+      {
+        "dim": "pair_logic",
+        "line": 313,
+        "note": "313『Give her half a cup.』與 275『One cup, morning and night.』表面份量不一致，但 315『Too much makes her sick.』就在下一句解釋為第一晚少量，屬可接受的刻意設計。"
+      },
+      {
+        "dim": "ipa_accuracy",
+        "line": 0,
+        "note": "純文字視圖沒有 phonetic 欄位，本輪無法用肉眼複核『9 處陳舊音標已逐詞對齊』這項；僅能依機器證據（ipa_vote 0 條 SUSPECT、ipa_shape/ipa_tokens 全 0）判為已清，此為本報告唯一未能獨立目視驗證的項目。"
+      }
+    ],
+    "summary_zh": "round2 所列 9 類問題在文字視圖上逐條核對皆已落實修正，全篇名字、性別、毛色、年齡、體重、籠號、費用與取狗時間無事實衝突，A2 口語與結尾收束良好，據此通過。僅餘三處非 error 級小瑕：212-221 訪談段兩把聲音的聲位互換（216 陳述句落在提問軌）、256-257 的「保留到週一」與週六取狗並置、313 半杯與 275 一杯兩餐的份量落差（已由 315 就地解釋）。",
+    "model": "skill:hot-sleep-dialogues",
+    "reviewed_at": 1790849552,
+    "content_hash": "sha1:00e9f29b5d017d00081add91a76d95b502ad0691"
+  }
 }

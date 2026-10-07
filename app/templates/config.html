@@ -5,7 +5,7 @@
     <div class="flex items-center justify-between mb-4">
         <div>
             <h2 class="text-2xl font-bold text-white">参数配置</h2>
-            <p class="text-sm text-slate-400 mt-1">当前编辑：<span class="text-indigo-400 font-medium">{{ mode_labels[mode] }}</span> · 保存到 configs/mode_{{ mode }}.json（各模式独立）· 拖动分组标题栏 <span class="text-slate-300">⠿</span> 可调整分组顺序（本浏览器记忆）</p>
+            <p class="text-sm text-slate-400 mt-1">当前编辑：<span class="text-indigo-400 font-medium">{{ mode_labels[mode] }}</span> · {% if page_channel %}保存到频道配置快照 <span class="text-slate-300">configs/channels/{{ page_channel }}.json</span>（只影响该频道；未在此改动的 BGM 等参数仍用全局值）{% else %}保存到 <span class="text-slate-300">configs/mode_{{ mode }}.json</span>（各模式独立；频道专属值请带 ?channel= 打开本页编辑）{% endif %} · 拖动分组标题栏 <span class="text-slate-300">⠿</span> 可调整分组顺序（本浏览器记忆）</p>
         </div>
         <div class="flex items-center gap-3">
             <!-- Preset selector -->

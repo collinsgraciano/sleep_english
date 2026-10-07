@@ -1,8 +1,8 @@
 {
-  "count": 23,
+  "count": 43,
   "failed": 0,
   "lines_per_script": 800,
-  "generated_at": "2026-10-01T17:20:12",
+  "generated_at": "2026-10-03T19:09:21",
   "note": "热门主题 101-218 · AI 逐主题生成（skill: hot-sleep-dialogues）",
   "themes": [
     {
@@ -187,6 +187,166 @@
       "zh": "領養狗",
       "category": "Family",
       "folder": "023_Adopting_a_Shelter_Dog",
+      "lines": 400
+    },
+    {
+      "index": 24,
+      "en": "Asking the Landlord for Repairs",
+      "zh": "請房東修理",
+      "category": "Daily Life",
+      "folder": "024_Asking_the_Landlord_for_Repairs",
+      "lines": 400
+    },
+    {
+      "index": 25,
+      "en": "A Piano Lesson",
+      "zh": "鋼琴課",
+      "category": "Leisure",
+      "folder": "025_A_Piano_Lesson",
+      "lines": 400
+    },
+    {
+      "index": 26,
+      "en": "Visiting a Sick Friend",
+      "zh": "醫院探望",
+      "category": "Health",
+      "folder": "026_Visiting_a_Sick_Friend",
+      "lines": 400
+    },
+    {
+      "index": 27,
+      "en": "Asking About Allergies",
+      "zh": "問過敏原",
+      "category": "Food & Drink",
+      "folder": "027_Asking_About_Allergies",
+      "lines": 400
+    },
+    {
+      "index": 28,
+      "en": "Using a Fitness Tracker",
+      "zh": "戴運動手環",
+      "category": "Tech",
+      "folder": "028_Using_a_Fitness_Tracker",
+      "lines": 400
+    },
+    {
+      "index": 29,
+      "en": "Moving into a Dorm Room",
+      "zh": "入住大學宿舍",
+      "category": "Study",
+      "folder": "029_Moving_into_a_Dorm_Room",
+      "lines": 400
+    },
+    {
+      "index": 30,
+      "en": "Taking the Car to the Mechanic",
+      "zh": "車子保養",
+      "category": "Driving",
+      "folder": "030_Taking_the_Car_to_the_Mechanic",
+      "lines": 400
+    },
+    {
+      "index": 31,
+      "en": "Booking a Sleep-Friendly Room",
+      "zh": "好眠房間",
+      "category": "Travel",
+      "folder": "031_Booking_a_Sleep-Friendly_Room",
+      "lines": 400
+    },
+    {
+      "index": 32,
+      "en": "Collecting a Missed Parcel",
+      "zh": "收快遞",
+      "category": "City Life",
+      "folder": "032_Collecting_a_Missed_Parcel",
+      "lines": 400
+    },
+    {
+      "index": 33,
+      "en": "At the Dog Groomer",
+      "zh": "寵物美容",
+      "category": "Family",
+      "folder": "033_At_the_Dog_Groomer",
+      "lines": 400
+    },
+    {
+      "index": 34,
+      "en": "Asking the Cabin Crew",
+      "zh": "機艙求助",
+      "category": "Travel",
+      "folder": "034_Asking_the_Cabin_Crew",
+      "lines": 400
+    },
+    {
+      "index": 35,
+      "en": "A First Driving Lesson",
+      "zh": "駕校初課",
+      "category": "Driving",
+      "folder": "035_A_First_Driving_Lesson",
+      "lines": 400
+    },
+    {
+      "index": 36,
+      "en": "Asking for a Pay Rise",
+      "zh": "談加薪",
+      "category": "Work",
+      "folder": "036_Asking_for_a_Pay_Rise",
+      "lines": 400
+    },
+    {
+      "index": 37,
+      "en": "When the Power Goes Out",
+      "zh": "停電之夜",
+      "category": "Daily Life",
+      "folder": "037_When_the_Power_Goes_Out",
+      "lines": 400
+    },
+    {
+      "index": 38,
+      "en": "At the Vending Machine",
+      "zh": "販賣機",
+      "category": "City Life",
+      "folder": "038_At_the_Vending_Machine",
+      "lines": 400
+    },
+    {
+      "index": 39,
+      "en": "Rehearsing in a Community Choir",
+      "zh": "業餘合唱團",
+      "category": "Leisure",
+      "folder": "039_Rehearsing_in_a_Community_Choir",
+      "lines": 400
+    },
+    {
+      "index": 40,
+      "en": "A Physiotherapy Session",
+      "zh": "物理治療",
+      "category": "Health",
+      "folder": "040_A_Physiotherapy_Session",
+      "lines": 400
+    },
+    {
+      "index": 41,
+      "en": "Planning Weekly Meals",
+      "zh": "規畫一週餐食",
+      "category": "Food & Drink",
+      "folder": "041_Planning_Weekly_Meals",
+      "lines": 400
+    },
+    {
+      "index": 42,
+      "en": "A Parent-and-Baby Group",
+      "zh": "親子遊戲班",
+      "category": "Family",
+      "folder": "042_A_Parent-and-Baby_Group",
+      "lines": 400
+    },
+    {
+      "index": 43,
+      "en": "Choosing a Streaming Plan",
+      "zh": "選串流方案",
+      "category": "Tech",
+      "folder": "043_Choosing_a_Streaming_Plan",
       "lines": 400
     }
   ]

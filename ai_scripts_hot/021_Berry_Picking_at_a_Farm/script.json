@@ -117,7 +117,7 @@
       "speaker": "char_a",
       "text": "Sun hats are sold at the counter.",
       "phonetic": "/sʌn hæts ər soʊld æt ðə ˈkaʊntər/",
-      "zh": "遮陽帽在櫃檯有賣。"
+      "zh": "遮陽帽在櫃台有賣。"
     },
     {
       "speaker": "char_b",
@@ -303,7 +303,7 @@
       "speaker": "char_b",
       "text": "Leave them behind the counter.",
       "phonetic": "/liv ðɛm bɪˈhaɪnd ðə ˈkaʊntər/",
-      "zh": "放在櫃檯後面。"
+      "zh": "放在櫃台後面。"
     },
     {
       "speaker": "char_a",
@@ -577,8 +577,8 @@
     },
     {
       "speaker": "char_b",
-      "text": "Let us keep looking anyway.",
-      "phonetic": "/lɛt ʌs kip ˈlʊkɪŋ ˈɛniˌweɪ/",
+      "text": "Let's keep looking anyway.",
+      "phonetic": "/lɛts kip ˈlʊkɪŋ ˈɛniˌweɪ/",
       "zh": "我們還是繼續找吧。"
     },
     {
@@ -1201,8 +1201,8 @@
     },
     {
       "speaker": "char_b",
-      "text": "Do not get used to it.",
-      "phonetic": "/du nɑt ɡɛt juzd tu ɪt/",
+      "text": "Don't get used to it.",
+      "phonetic": "/doʊnt ɡɛt juzd tu ɪt/",
       "zh": "別習慣就好。"
     },
     {
@@ -1831,9 +1831,9 @@
     },
     {
       "speaker": "char_a",
-      "text": "She'll be thrilled with that gift.",
-      "phonetic": "/ʃil bi θrɪld wɪð ðæt ɡɪft/",
-      "zh": "她會很喜歡那份禮物。"
+      "text": "Your mother will love that gift.",
+      "phonetic": "/jʊr ˈmʌðər wɪl lʌv ðæt ɡɪft/",
+      "zh": "你媽媽會很喜歡那份禮物。"
     },
     {
       "speaker": "char_b",
@@ -2013,7 +2013,7 @@
       "speaker": "char_a",
       "text": "The machine beeps and approves it.",
       "phonetic": "/ðə məˈʃin bips æn əˈpruvz ɪt/",
-      "zh": "機器嗶一聲核准了。"
+      "zh": "機器嗶一聲核準了。"
     },
     {
       "speaker": "char_b",
@@ -2431,8 +2431,8 @@
     },
     {
       "speaker": "char_a",
-      "text": "Let us do this again soon.",
-      "phonetic": "/lɛt ʌs du ðɪs əˈɡɛn sun/",
+      "text": "Let's do this again soon.",
+      "phonetic": "/lɛts du ðɪs əˈɡɛn sun/",
       "zh": "我們很快再來一次。"
     },
     {
@@ -2453,5 +2453,48 @@
       "phonetic": "/æn rɪˈmɛmbər ðɪs wɔrm deɪ/",
       "zh": "並記得這溫暖的一天。"
     }
-  ]
+  ],
+  "review": {
+    "round": 3,
+    "score": 95,
+    "score_source": "report",
+    "verdict": "APPROVED",
+    "dimensions": {
+      "pair_logic": 23,
+      "idiomatic_a2": 23,
+      "ipa_accuracy": 25,
+      "variety_no_dup": 24
+    },
+    "issues": [
+      {
+        "dim": "pair_logic",
+        "line": 296,
+        "note": "round2 修 295 時把「one for your mother」拿掉，導致 296 a「She'll be thrilled with that gift.」的 She 失去先行詞（前面最近用 she 的是 209/211 的表妹，母親要到 362-363 才出現）。禮物框架可讓聽者補出「收禮的家人」，屬輕度指代鬆散，非 error 級，建議 296 改為「Your mother will love that gift.」即可完全收束。"
+      },
+      {
+        "dim": "idiomatic_a2",
+        "line": 191,
+        "note": "B1 慣用語已去除，但「Do not get used to it.」用了全文唯一的完整式否定（其餘 059/066/123/267 都是 don't），且 get used to 屬 B1 結構；口語宜作「Don't get used to it.」。僅為語感瑕疵，不影響理解。"
+      },
+      {
+        "dim": "pair_logic",
+        "line": 87,
+        "note": "087 b「Let us keep looking anyway.」對 086 a「This whole row looks promising.」的樂觀未作承接，anyway 有輕微跳接；另「Let us」全拼在口語偏書面（088、397 各一次），全文其餘 12 處皆為「Let's」。屬輕微語氣不順，非 error。"
+      },
+      {
+        "dim": "variety_no_dup",
+        "line": 128,
+        "note": "「整排被採光」母題出現兩次（032-033 與 128-130），第 128 對與前段動機重疊；a 句開頭「We should…」出現 236/242/284 三次、「Nobody…」058/228/358 三次，密度可接受但未達 machine dup 門檻。"
+      },
+      {
+        "dim": "idiomatic_a2",
+        "line": 116,
+        "note": "116「seedlings」、159「tart」、305「subtract」屬 A2 邊界以上詞彙；116 由 118「Those thin plants are next year's crop.」自然釋義，故可接受，僅記錄。"
+      }
+    ],
+    "summary_zh": "round2 的五項問題都已實質修好：結帳鏈不再重複收款（莓果 $18 現金 20-2、果醬兩罐 $4 刷卡，合計 $22 自洽），295 改為提議式、392/396/397 已有主語且結尾收束。僅餘 296 因改寫而失去先行詞的 She，以及 191「Do not」、「Let us」等輕微口語語感問題，皆非 error 級，四維無 error，判 APPROVED（95）。",
+    "model": "skill:hot-sleep-dialogues",
+    "reviewed_at": 1790849552,
+    "content_hash": "sha1:56c8b179174352ca26b4a9f1aab755138c6135dc"
+  }
 }

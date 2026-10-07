@@ -1,0 +1,2515 @@
+{
+  "title": "Everyday Phrases — Taking the Car to the Mechanic",
+  "title_zh": "車子保養",
+  "scene_zh": "修車廠 · 情境對話",
+  "title_quote": "Kevin, your car makes a strange noise.",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】🚗 實用「車子保養」必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — Taking the Car to the Mechanic",
+  "youtube_description": "睡著學英文！這部影片收錄實用「車子保養」情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫）。場景是修車廠：把車開去保養：描述煞車異音、預約時間，師傅頂起車子檢查底盤並報價，決定先修哪幾項、在等候區等零件，取車前試開一圈，最後拿單據問下次保養里程。400 句循環聽，A2 程度，零基礎也能跟著開口說。#英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical 'Taking the Car to the Mechanic' phrase pairs (each pair: male normal speed → female slow speed → combined dialogue). Taking the car in for service: describing a knocking sound, hearing what the mechanic found under the car, agreeing on the work, test-driving it, and asking when to come back. 400 lines on repeat, A2 level, easy to repeat out loud even from zero.",
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "Taking the Car to the Mechanic",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "車子保養",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Driving",
+  "youtube_tags": [
+    "車子保養",
+    "Taking the Car to the Mechanic",
+    "睡前英文聽力",
+    "英文聽力",
+    "睡前英文",
+    "400句循環聽",
+    "Sleep learning English",
+    "English listening practice",
+    "A2 English",
+    "ESL listening",
+    "English conversation",
+    "everyday English phrases",
+    "學英文 睡覺",
+    "保養 英文",
+    "car service English"
+  ],
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "Kevin, your car makes a strange noise.",
+      "phonetic": "/ˈkɛvɪn jʊr kɑr meɪks ə streɪndʒ nɔɪz/",
+      "zh": "凱文，你的車會發出奇怪的聲音。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I know, it started this morning.",
+      "phonetic": "/aɪ noʊ ɪt ˈstɑrtɪd ðɪs ˈmɔrnɪŋ./",
+      "zh": "我知道，今天早上開始的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You should call the shop today.",
+      "phonetic": "/ju ʃʊd kɔl ðə ʃɑp təˈdeɪ./",
+      "zh": "你今天應該打給修車廠。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'll call them after breakfast.",
+      "phonetic": "/aɪl kɔl ðɛm ˈæftər ˈbrɛkfəst./",
+      "zh": "我早餐後就打給他們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you hear that loud grinding sound?",
+      "phonetic": "/dɪd ju hɪr ðæt laʊd ˈɡraɪndɪŋ saʊnd?/",
+      "zh": "你有聽到那個很大的摩擦聲嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it came from the front.",
+      "phonetic": "/jɛs ɪt keɪm frʌm ðə frʌnt./",
+      "zh": "有，聲音從前面傳來的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Something is wrong with my car.",
+      "phonetic": "/ˈsʌmθɪŋ ɪz rɔŋ wɪð maɪ kɑr./",
+      "zh": "我的車子有問題。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Tell me what it sounds like.",
+      "phonetic": "/tɛl mi wʌt ɪt saʊndz laɪk./",
+      "zh": "告訴我聽起來像什麼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I make an appointment for Saturday?",
+      "phonetic": "/kæn aɪ meɪk ən əˈpɔɪntmənt fɔr ˈsætərˌdeɪ?/",
+      "zh": "我可以預約星期六嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Saturday morning at nine thirty works.",
+      "phonetic": "/ˈsætərˌdeɪ ˈmɔrnɪŋ æt naɪn ˈθɜrti wɜrks./",
+      "zh": "星期六早上九點半可以。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My car needs an oil change soon.",
+      "phonetic": "/maɪ kɑr nidz ən ɔɪl tʃeɪndʒ sun./",
+      "zh": "我的車子很快需要換機油。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can do that on Saturday.",
+      "phonetic": "/wi kæn du ðæt ɑn ˈsætərˌdeɪ./",
+      "zh": "我們星期六可以做。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "When I brake, I hear that noise.",
+      "phonetic": "/wɛn aɪ breɪk aɪ hɪr ðæt nɔɪz/",
+      "zh": "我煞車時就會聽到那個聲音。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then the brake pads are worn.",
+      "phonetic": "/ðɛn ðə breɪk pædz ər wɔrn./",
+      "zh": "那就是煞車皮磨損了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It also shakes when I stop.",
+      "phonetic": "/ɪt ˈɔlsoʊ ʃeɪks wɛn aɪ stɑp./",
+      "zh": "我停車時它也會震動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That sounds like warped brake rotors.",
+      "phonetic": "/ðæt saʊndz laɪk wɔrpt breɪk ˈroʊtərz./",
+      "zh": "聽起來像煞車碟盤變形了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How long can I still drive it?",
+      "phonetic": "/haʊ lɔŋ kæn aɪ stɪl draɪv ɪt?/",
+      "zh": "我還可以開多久？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You should bring it in early.",
+      "phonetic": "/ju ʃʊd brɪŋ ɪt ɪn ˈɜrli./",
+      "zh": "你應該早點開來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is it safe to drive until Saturday?",
+      "phonetic": "/ɪz ɪt seɪf tu draɪv ʌnˈtɪl ˈsætərˌdeɪ?/",
+      "zh": "開到星期六安全嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It's safe if you drive slowly.",
+      "phonetic": "/ɪts seɪf ɪf ju draɪv ˈsloʊli./",
+      "zh": "慢慢開就安全。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The steering wheel pulls to the right.",
+      "phonetic": "/ðə ˈstɪrɪŋ wil pʊlz tu ðə raɪt./",
+      "zh": "方向盤會偏向右邊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We can check the alignment too.",
+      "phonetic": "/wi kæn tʃɛk ði əˈlaɪnmənt tu./",
+      "zh": "我們也可以檢查定位。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "There's a strange smell in my car.",
+      "phonetic": "/ðɛrz ə streɪndʒ smɛl ɪn maɪ kɑr/",
+      "zh": "我的車子裡有奇怪的味道。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Maybe the cabin filter is dirty.",
+      "phonetic": "/ˈmeɪbi ðə ˈkæbɪn ˈfɪltər ɪz ˈdɜrti./",
+      "zh": "也許是車內濾網髒了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yesterday the engine light came on.",
+      "phonetic": "/ˈjɛstərdeɪ ði ˈɛndʒən laɪt keɪm ɑn/",
+      "zh": "昨天引擎燈亮了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We will read the error code.",
+      "phonetic": "/wi wɪl rid ði ˈɛrər koʊd./",
+      "zh": "我們會讀取故障碼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "On the highway it feels slow.",
+      "phonetic": "/ɑn ðə ˈhaɪweɪ ɪt filz sloʊ/",
+      "zh": "在高速公路上感覺很沒力。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That might be a clogged air filter.",
+      "phonetic": "/ðæt maɪt bi ə klɔɡd ɛr ˈfɪltər./",
+      "zh": "那可能是空氣濾網堵塞。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you check the tires as well?",
+      "phonetic": "/kæn ju tʃɛk ðə ˈtaɪərz æz wɛl?/",
+      "zh": "你也可以順便檢查輪胎嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, we check it for free.",
+      "phonetic": "/ʃʊr wi tʃɛk ɪt fɔr fri/",
+      "zh": "當然，我們免費檢查。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The car makes a noise when turning.",
+      "phonetic": "/ðə kɑr meɪks ə nɔɪz wɛn ˈtɜrnɪŋ./",
+      "zh": "車子轉彎時會發出聲音。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That could be a worn bearing.",
+      "phonetic": "/ðæt kʊd bi ə wɔrn ˈbɛrɪŋ./",
+      "zh": "那可能是軸承磨損了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I smell something burning under the hood.",
+      "phonetic": "/aɪ smɛl ˈsʌmθɪŋ ˈbɜrnɪŋ ˈʌndər ðə hʊd./",
+      "zh": "我聞到引擎蓋下有東西燒焦的味道。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It might be a small oil leak.",
+      "phonetic": "/ɪt maɪt bi ə smɔl ɔɪl lik./",
+      "zh": "可能是小漏油。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Today the brakes feel soft and weak.",
+      "phonetic": "/təˈdeɪ ðə breɪks fil sɔft ænd wik/",
+      "zh": "今天煞車感覺軟軟的、沒力。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then we must check the brake fluid.",
+      "phonetic": "/ðɛn wi mʌst tʃɛk ðə breɪk ˈfluɪd./",
+      "zh": "那我們必須檢查煞車油。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My car is due for regular maintenance.",
+      "phonetic": "/maɪ kɑr ɪz du fɔr ˈrɛɡjəlɚ ˈmeɪntənəns./",
+      "zh": "我的車子該做定期保養了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "How many miles does it have?",
+      "phonetic": "/haʊ ˈmɛni maɪlz dʌz ɪt hæv?/",
+      "zh": "它跑了多少英里？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It has about eighty thousand miles now.",
+      "phonetic": "/ɪt hæz əˈbaʊt ˈeɪti ˈθaʊzənd maɪlz naʊ./",
+      "zh": "現在大約跑了八萬英里。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's a good time for service.",
+      "phonetic": "/ðæts ə ɡʊd taɪm fɔr ˈsɜrvɪs./",
+      "zh": "那正是保養的好時機。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What time should I drop it off?",
+      "phonetic": "/wʌt taɪm ʃʊd aɪ drɑp ɪt ɔf?/",
+      "zh": "我應該幾點把車開去？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Please arrive before nine thirty.",
+      "phonetic": "/pliz əˈraɪv bɪˈfɔr naɪn ˈθɜrti./",
+      "zh": "請在九點半以前到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "By the way, I'm Kevin Lin.",
+      "phonetic": "/baɪ ðə weɪ aɪm ˈkɛvɪn lɪn/",
+      "zh": "對了，我叫林凱文。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thanks, Kevin, I wrote it down.",
+      "phonetic": "/θæŋks ˈkɛvɪn aɪ roʊt ɪt daʊn./",
+      "zh": "謝謝你，凱文，我記下來了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How much is a basic checkup?",
+      "phonetic": "/haʊ mʌtʃ ɪz ə ˈbeɪsɪk ˈtʃɛkʌp?/",
+      "zh": "基本檢查多少錢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The checkup itself is free.",
+      "phonetic": "/ðə ˈtʃɛkʌp ɪtˈsɛlf ɪz fri./",
+      "zh": "檢查本身是免費的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please write down my phone number.",
+      "phonetic": "/pliz raɪt daʊn maɪ foʊn ˈnʌmbər./",
+      "zh": "請記下我的電話號碼。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I have it in the system now.",
+      "phonetic": "/aɪ hæv ɪt ɪn ðə ˈsɪstəm naʊ./",
+      "zh": "我現在已經存進系統了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The noise is getting louder every day.",
+      "phonetic": "/ðə nɔɪz ɪz ˈɡɛtɪŋ ˈlaʊdər ˈɛvri deɪ./",
+      "zh": "那個聲音每天都變得更大聲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then don't wait until next week.",
+      "phonetic": "/ðɛn doʊnt weɪt ʌnˈtɪl nɛkst wik./",
+      "zh": "那就不要等到下星期。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It stops when I press hard.",
+      "phonetic": "/ɪt stɑps wɛn aɪ prɛs hɑrd/",
+      "zh": "我用力踩的時候聲音就停了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That means the brake pads are gone.",
+      "phonetic": "/ðæt minz ðə breɪk pædz ər ɡɔn./",
+      "zh": "那表示煞車皮已經沒了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you hear a clicking sound too?",
+      "phonetic": "/du ju hɪr ə ˈklɪkɪŋ saʊnd tu?/",
+      "zh": "你也聽到一個咔嗒聲嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it clicks when I turn left.",
+      "phonetic": "/jɛs ɪt klɪks wɛn aɪ tɜrn lɛft./",
+      "zh": "有，我左轉時它會咔嗒響。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My car won't start on cold mornings.",
+      "phonetic": "/maɪ kɑr woʊnt stɑrt ɑn koʊld ˈmɔrnɪŋz./",
+      "zh": "我的車在冷天早上發不動。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Maybe your battery is getting old.",
+      "phonetic": "/ˈmeɪbi jʊr ˈbætəri ɪz ˈɡɛtɪŋ oʊld./",
+      "zh": "也許你的電瓶老化了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you check the battery this Saturday?",
+      "phonetic": "/kæn ju tʃɛk ðə ˈbætəri ðɪs ˈsætərˌdeɪ?/",
+      "zh": "你星期六可以檢查電瓶嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, we test it in one minute.",
+      "phonetic": "/jɛs wi tɛst ɪt ɪn wʌn ˈmɪnɪt./",
+      "zh": "可以，我們一分鐘就能測完。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My friend Anna heard the noise too.",
+      "phonetic": "/maɪ frɛnd ˈænə hɜrd ðə nɔɪz tu./",
+      "zh": "我朋友安娜也聽到那個聲音。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Did she say where it came from?",
+      "phonetic": "/dɪd ʃi seɪ wɛr ɪt keɪm frʌm?/",
+      "zh": "她有說聲音從哪裡來嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Anna said it sounds like metal rubbing.",
+      "phonetic": "/ˈænə sɛd ɪt saʊndz laɪk ˈmɛtəl ˈrʌbɪŋ./",
+      "zh": "安娜說聽起來像金屬摩擦。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "She has a good ear for cars.",
+      "phonetic": "/ʃi hæz ə ɡʊd ɪr fɔr kɑrz./",
+      "zh": "她對車子的聲音很敏銳。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the repair expensive for old cars?",
+      "phonetic": "/ɪz ðə rɪˈpɛr ɪkˈspɛnsɪv fɔr oʊld kɑrz?/",
+      "zh": "老車的維修會很貴嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It depends on the parts needed.",
+      "phonetic": "/ɪt dɪˈpɛndz ɑn ðə pɑrts ˈnidɪd./",
+      "zh": "要看需要換哪些零件。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I need my car back by Monday.",
+      "phonetic": "/aɪ nid maɪ kɑr bæk baɪ ˈmʌndeɪ./",
+      "zh": "我星期一以前要用車。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We'll try to finish it Saturday.",
+      "phonetic": "/wil traɪ tu ˈfɪnɪʃ ɪt ˈsætərˌdeɪ./",
+      "zh": "我們會盡量星期六就完成。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What if you need much more time?",
+      "phonetic": "/wʌt ɪf ju nid mʌtʃ mɔr taɪm?/",
+      "zh": "如果你需要更多時間怎麼辦？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We'll call you right away then.",
+      "phonetic": "/wil kɔl ju raɪt əˈweɪ ðɛn./",
+      "zh": "那我們會馬上打電話給你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I leave my key inside?",
+      "phonetic": "/ʃʊd aɪ liv maɪ ki ɪnˈsaɪd/",
+      "zh": "我該把鑰匙留在車內嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Please hand the key to Ming.",
+      "phonetic": "/pliz hænd ðə ki tu mɪŋ./",
+      "zh": "請把鑰匙交給阿明。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Who is Ming at your shop?",
+      "phonetic": "/hu ɪz mɪŋ æt jʊr ʃɑp?/",
+      "zh": "你們廠裡的阿明是誰？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "He's the head mechanic here.",
+      "phonetic": "/hiz ðə hɛd məˈkænɪk hɪr./",
+      "zh": "他是這裡的資深師傅。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I'll drive the car there myself.",
+      "phonetic": "/aɪl draɪv ðə kɑr ðɛr maɪˈsɛlf./",
+      "zh": "我會自己把車開過去。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Drive slowly and avoid hard braking.",
+      "phonetic": "/draɪv ˈsloʊli ænd əˈvɔɪd hɑrd ˈbreɪkɪŋ./",
+      "zh": "慢慢開，不要急煞。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the shop on Main Street?",
+      "phonetic": "/ɪz ðə ʃɑp ɑn meɪn strit?/",
+      "zh": "修車廠在緬街上嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it's next to the bank.",
+      "phonetic": "/jɛs ɪts nɛkst tu ðə bæŋk./",
+      "zh": "對，就在銀行隔壁。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How do I get there from here?",
+      "phonetic": "/haʊ du aɪ ɡɛt ðɛr frʌm hɪr?/",
+      "zh": "我從這裡要怎麼到那裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Turn left after the traffic light.",
+      "phonetic": "/tɜrn lɛft ˈæftər ðə ˈtræfɪk laɪt./",
+      "zh": "過了紅綠燈後左轉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I'm leaving my house right now.",
+      "phonetic": "/aɪm ˈlivɪŋ maɪ haʊs raɪt naʊ./",
+      "zh": "我現在就出門了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Take your time, we're not busy.",
+      "phonetic": "/teɪk jʊr taɪm wɪr nɑt ˈbɪzi./",
+      "zh": "慢慢來，我們現在不忙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I just parked outside your shop.",
+      "phonetic": "/aɪ dʒʌst pɑrkt ˌaʊtˈsaɪd jʊr ʃɑp./",
+      "zh": "我剛把車停在你們店外。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Come inside, I'll be right there.",
+      "phonetic": "/kʌm ɪnˈsaɪd aɪl bi raɪt ðɛr./",
+      "zh": "進來吧，我馬上過去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good morning, I have an appointment.",
+      "phonetic": "/ɡʊd ˈmɔrnɪŋ aɪ hæv ən əˈpɔɪntmənt./",
+      "zh": "早安，我有預約。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good morning, you must be Kevin.",
+      "phonetic": "/ɡʊd ˈmɔrnɪŋ ju mʌst bi ˈkɛvɪn./",
+      "zh": "早安，你一定是凱文。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Yes, and my car is outside.",
+      "phonetic": "/jɛs ænd maɪ kɑr ɪz ˌaʊtˈsaɪd./",
+      "zh": "對，我的車就在外面。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let me get the keys from you.",
+      "phonetic": "/lɛt mi ɡɛt ðə kiz frʌm ju./",
+      "zh": "讓我跟您拿鑰匙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Here are the keys and the paperwork.",
+      "phonetic": "/hɪr ɑr ðə kiz ænd ðə ˈpeɪpərwɜrk./",
+      "zh": "鑰匙和文件都在這裡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thanks, I'll park it inside now.",
+      "phonetic": "/θæŋks aɪl pɑrk ɪt ɪnˈsaɪd naʊ./",
+      "zh": "謝謝，我現在把它開進去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please listen to that grinding noise.",
+      "phonetic": "/pliz ˈlɪsən tu ðæt ˈɡraɪndɪŋ nɔɪz./",
+      "zh": "請聽一下那個摩擦聲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'll test drive it in a moment.",
+      "phonetic": "/aɪl tɛst draɪv ɪt ɪn ə ˈmoʊmənt./",
+      "zh": "我等一下會試開看看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That noise is worse on the highway.",
+      "phonetic": "/ðæt nɔɪz ɪz wɜrs ɑn ðə ˈhaɪweɪ./",
+      "zh": "那個聲音在高速公路上更嚴重。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then I'll take it on the road.",
+      "phonetic": "/ðɛn aɪl teɪk ɪt ɑn ðə roʊd./",
+      "zh": "那我會開上路試一試。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you show me the worn parts?",
+      "phonetic": "/kæn ju ʃoʊ mi ðə wɔrn pɑrts?/",
+      "zh": "你可以給我看磨損的零件嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Of course, I'll keep the old ones.",
+      "phonetic": "/əv kɔrs aɪl kip ði oʊld wʌnz./",
+      "zh": "當然，我會把舊的留下來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How long will the checkup take today?",
+      "phonetic": "/haʊ lɔŋ wɪl ðə ˈtʃɛkʌp teɪk təˈdeɪ?/",
+      "zh": "今天的檢查要多久？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "About an hour, maybe a bit more.",
+      "phonetic": "/əˈbaʊt ən ˈaʊər ˈmeɪbi ə bɪt mɔr./",
+      "zh": "大約一小時，也許再多一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where should I wait for the news?",
+      "phonetic": "/wɛr ʃʊd aɪ weɪt fɔr ðə nuz?/",
+      "zh": "我該在哪裡等消息？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The waiting room is over there.",
+      "phonetic": "/ðə ˈweɪtɪŋ rum ɪz ˈoʊvər ðɛr./",
+      "zh": "等候室就在那邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I'll wait and read a magazine.",
+      "phonetic": "/aɪl weɪt ænd rid ə ˈmæɡəzin./",
+      "zh": "我在這裡等，順便看雜誌。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'll come get you when it's done.",
+      "phonetic": "/aɪl kʌm ɡɛt ju wɛn ɪts dʌn./",
+      "zh": "修好之後我會來叫你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now the car is on the lift.",
+      "phonetic": "/naʊ ðə kɑr ɪz ɑn ðə lɪft/",
+      "zh": "車子現在在頂高機上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I can see the tires hanging.",
+      "phonetic": "/aɪ kæn si ðə ˈtaɪərz ˈhæŋɪŋ./",
+      "zh": "我看到輪胎懸在空中。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please look at the front wheels first.",
+      "phonetic": "/pliz lʊk æt ðə frʌnt wilz fɜrst./",
+      "zh": "請先看前輪。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The front brake pads are very thin.",
+      "phonetic": "/ðə frʌnt breɪk pædz ər ˈvɛri θɪn./",
+      "zh": "前輪煞車皮非常薄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How thin are the brake pads?",
+      "phonetic": "/haʊ θɪn ər ðə breɪk pædz?/",
+      "zh": "煞車皮有多薄？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only two millimeters, almost gone.",
+      "phonetic": "/ˈoʊnli tu ˈmɪləˌmitərz ˈɔlmoʊst ɡɔn./",
+      "zh": "只剩兩公釐，幾乎磨光了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That explains the grinding noise.",
+      "phonetic": "/ðæt ɪkˈspleɪnz ðə ˈɡraɪndɪŋ nɔɪz./",
+      "zh": "這就說明了那個摩擦聲。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, metal is touching metal now.",
+      "phonetic": "/jɛs ˈmɛtəl ɪz ˈtʌtʃɪŋ ˈmɛtəl naʊ./",
+      "zh": "對，現在是金屬直接磨金屬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are the brake rotors damaged as well?",
+      "phonetic": "/ɑr ðə breɪk ˈroʊtərz ˈdæmɪdʒd æz wɛl?/",
+      "zh": "煞車碟盤也壞了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The rotors have deep grooves in them.",
+      "phonetic": "/ðə ˈroʊtərz hæv dip ɡruvz ɪn ðɛm./",
+      "zh": "碟盤上有很深的溝痕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you just replace the brake pads?",
+      "phonetic": "/kæn ju dʒʌst rɪˈpleɪs ðə breɪk pædz?/",
+      "zh": "可以只換煞車皮嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, the rotors must be replaced too.",
+      "phonetic": "/noʊ ðə ˈroʊtərz mʌst bi rɪˈpleɪst tu./",
+      "zh": "不行，碟盤也必須一起換。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What about the rear brakes?",
+      "phonetic": "/wʌt əˈbaʊt ðə rɪr breɪks?/",
+      "zh": "那後輪的煞車呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They still have some life left.",
+      "phonetic": "/ðeɪ stɪl hæv sʌm laɪf lɛft./",
+      "zh": "它們還可以用一陣子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please check the brake fluid too.",
+      "phonetic": "/pliz tʃɛk ðə breɪk ˈfluɪd tu./",
+      "zh": "也請檢查一下煞車油。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The brake fluid is dark and old.",
+      "phonetic": "/ðə breɪk ˈfluɪd ɪz dɑrk ænd oʊld./",
+      "zh": "煞車油又黑又舊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is dark brake fluid a problem?",
+      "phonetic": "/ɪz dɑrk breɪk ˈfluɪd ə ˈprɑbləm?/",
+      "zh": "煞車油變黑是問題嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it can damage the system.",
+      "phonetic": "/jɛs ɪt kæn ˈdæmɪdʒ ðə ˈsɪstəm./",
+      "zh": "是，它會損壞整個系統。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let me show you the worn pads.",
+      "phonetic": "/lɛt mi ʃoʊ ju ðə wɔrn pædz./",
+      "zh": "我給你看磨損的煞車皮。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wow, they look really thin.",
+      "phonetic": "/waʊ ðeɪ lʊk ˈrɪli θɪn./",
+      "zh": "哇，它們看起來真的很薄。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I take a photo of that?",
+      "phonetic": "/kæn aɪ teɪk ə ˈfoʊtoʊ əv ðæt?/",
+      "zh": "我可以拍張照嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, take as many as you want.",
+      "phonetic": "/ʃʊr teɪk æz ˈmɛni æz ju wɑnt./",
+      "zh": "當然，你想拍幾張就拍幾張。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is that wet spot down there?",
+      "phonetic": "/wʌt ɪz ðæt wɛt spɑt daʊn ðɛr?/",
+      "zh": "下面那個濕濕的痕跡是什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That might be a small leak.",
+      "phonetic": "/ðæt maɪt bi ə smɔl lik./",
+      "zh": "那可能是個小漏。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please check where the leak comes from.",
+      "phonetic": "/pliz tʃɛk wɛr ðə lik kʌmz frʌm./",
+      "zh": "請查一下漏的地方在哪裡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Give me a minute with the flashlight.",
+      "phonetic": "/ɡɪv mi ə ˈmɪnɪt wɪð ðə ˈflæʃlaɪt./",
+      "zh": "給我一點時間用手電筒照。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the leak from the engine oil?",
+      "phonetic": "/ɪz ðə lik frʌm ði ˈɛndʒɪn ɔɪl?/",
+      "zh": "是引擎機油漏的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, the oil pan looks dry.",
+      "phonetic": "/noʊ ði ɔɪl pæn lʊks draɪ./",
+      "zh": "不是，油底殼看起來是乾的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you see anything near the front?",
+      "phonetic": "/du ju si ˈɛniˌθɪŋ nɪr ðə frʌnt?/",
+      "zh": "前面附近你有看到什麼嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The radiator hose looks a little wet.",
+      "phonetic": "/ðə ˈreɪdiˌeɪtər hoʊz lʊks ə ˈlɪtəl wɛt./",
+      "zh": "水箱水管看起來有點濕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How much for the brake job?",
+      "phonetic": "/haʊ mʌtʃ fɔr ðə breɪk dʒɑb?/",
+      "zh": "換煞車要多少錢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Brake pads and rotors cost twelve thousand.",
+      "phonetic": "/breɪk pædz ænd ˈroʊtərz kɔst twɛlv ˈθaʊzənd./",
+      "zh": "煞車皮加碟盤要一萬二。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Twelve thousand is a lot for me.",
+      "phonetic": "/twɛlv ˈθaʊzənd ɪz ə lɑt fɔr mi./",
+      "zh": "一萬二對我來說很多。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It includes parts and labor, Kevin.",
+      "phonetic": "/ɪt ɪnˈkludz pɑrts ænd ˈleɪbər ˈkɛvɪn./",
+      "zh": "凱文，這包含零件和工資。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does that price include the labor?",
+      "phonetic": "/dʌz ðæt praɪs ɪnˈklud ðə ˈleɪbər?/",
+      "zh": "這個價格包含工資嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, parts and labor are both included.",
+      "phonetic": "/jɛs pɑrts ænd ˈleɪbər ɑr boʊθ ɪnˈkludɪd./",
+      "zh": "有，零件和工資都包含在內。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How long does the brake job take?",
+      "phonetic": "/haʊ lɔŋ dʌz ðə breɪk dʒɑb teɪk?/",
+      "zh": "換煞車要花多久？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "About three hours, if parts are here.",
+      "phonetic": "/əˈbaʊt θri ˈaʊərz ɪf pɑrts ɑr hɪr./",
+      "zh": "如果零件在，大約三小時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have the brake pads here?",
+      "phonetic": "/du ju hæv ðə breɪk pædz hɪr?/",
+      "zh": "煞車皮這裡有嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, I have them in the back.",
+      "phonetic": "/jɛs aɪ hæv ðɛm ɪn ðə bæk./",
+      "zh": "有，我放在後面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you finish it before noon?",
+      "phonetic": "/kæn ju ˈfɪnɪʃ ɪt bɪˈfɔr nun?/",
+      "zh": "中午前能完成嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Probably yes, if nothing else comes up.",
+      "phonetic": "/ˈprɑbəbli jɛs ɪf ˈnʌθɪŋ ɛls kʌmz ʌp./",
+      "zh": "應該可以，如果沒別的問題。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What else could come up today?",
+      "phonetic": "/wʌt ɛls kʊd kʌm ʌp təˈdeɪ?/",
+      "zh": "今天還可能出現什麼問題？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Old cars often hide small problems.",
+      "phonetic": "/oʊld kɑrz ˈɔfən haɪd smɔl ˈprɑbləmz./",
+      "zh": "老車常常藏著小毛病。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please check everything under the car.",
+      "phonetic": "/pliz tʃɛk ˈɛvriˌθɪŋ ˈʌndər ðə kɑr./",
+      "zh": "請檢查車底所有的地方。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'm looking at the water pump now.",
+      "phonetic": "/aɪm ˈlʊkɪŋ æt ðə ˈwɔtər pʌmp naʊ./",
+      "zh": "我現在正在看水泵浦。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the water pump in good shape?",
+      "phonetic": "/ɪz ðə ˈwɔtər pʌmp ɪn ɡʊd ʃeɪp?/",
+      "zh": "水泵浦的狀況好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Well, I see red fluid dripping.",
+      "phonetic": "/wɛl aɪ si rɛd ˈfluɪd ˈdrɪpɪŋ./",
+      "zh": "嗯，我看到紅色液體在滴。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What does red fluid mean?",
+      "phonetic": "/wʌt dʌz rɛd ˈfluɪd min/",
+      "zh": "紅色液體代表什麼意思？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's coolant, and it shouldn't leak.",
+      "phonetic": "/ðæts ˈkulənt ænd ɪt ˈʃʊdənt lik./",
+      "zh": "那是冷卻液，它不該漏的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So the water pump is leaking coolant.",
+      "phonetic": "/soʊ ðə ˈwɔtər pʌmp ɪz ˈlikɪŋ ˈkulənt./",
+      "zh": "所以水泵浦在漏冷卻液。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, that's the second problem.",
+      "phonetic": "/jɛs ðæts ðə ˈsɛkənd ˈprɑbləm./",
+      "zh": "對，這是第二個問題。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is a water pump leak serious?",
+      "phonetic": "/ɪz ə ˈwɔtər pʌmp lik ˈsɪriəs?/",
+      "zh": "水泵浦漏水嚴重嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It can overheat your engine fast.",
+      "phonetic": "/ɪt kæn ˌoʊvərˈhit jʊr ˈɛndʒɪn fæst./",
+      "zh": "它會讓引擎很快就過熱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How much is a new water pump?",
+      "phonetic": "/haʊ mʌtʃ ɪz ə nu ˈwɔtər pʌmp?/",
+      "zh": "新的水泵浦多少錢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The pump costs three thousand five hundred.",
+      "phonetic": "/ðə pʌmp kɔsts θri ˈθaʊzənd faɪv ˈhʌndrəd./",
+      "zh": "水泵浦要三千五百元。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "With the brakes, that's the total.",
+      "phonetic": "/wɪð ðə breɪks ðæts ðə ˈtoʊtəl/",
+      "zh": "加上煞車，這就是總金額。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is more than I expected today.",
+      "phonetic": "/ðæt ɪz mɔr ðæn aɪ ɪkˈspɛktɪd təˈdeɪ./",
+      "zh": "這比我今天預期的多。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we replace the water pump later?",
+      "phonetic": "/kæn wi rɪˈpleɪs ðə ˈwɔtər pʌmp ˈleɪtər?/",
+      "zh": "我們可以晚點再換水泵浦嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You can, but watch the temperature gauge.",
+      "phonetic": "/ju kæn bʌt wɑtʃ ðə ˈtɛmpərətʃər ɡeɪdʒ./",
+      "zh": "可以，但要注意水溫表。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How long can the water pump wait?",
+      "phonetic": "/haʊ lɔŋ kæn ðə ˈwɔtər pʌmp weɪt?/",
+      "zh": "水泵浦可以再撐多久？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Not more than two or three weeks.",
+      "phonetic": "/nɑt mɔr ðæn tu ɔr θri wikz./",
+      "zh": "不要超過兩三個星期。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will the engine be safe until then?",
+      "phonetic": "/wɪl ði ˈɛndʒɪn bi seɪf ʌnˈtɪl ðɛn?/",
+      "zh": "在那之前引擎安全嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It should be, if you add coolant.",
+      "phonetic": "/ɪt ʃʊd bi ɪf ju æd ˈkulənt./",
+      "zh": "只要補冷卻液，應該沒問題。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you fix everything in one visit?",
+      "phonetic": "/kæn ju fɪks ˈɛvriˌθɪŋ ɪn wʌn ˈvɪzɪt?/",
+      "zh": "可以一次全部修好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, but I must order the pump.",
+      "phonetic": "/jɛs bʌt aɪ mʌst ˈɔrdər ðə pʌmp./",
+      "zh": "可以，但我必須訂水泵浦。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the water pump in stock?",
+      "phonetic": "/ɪz ðə ˈwɔtər pʌmp ɪn stɑk/",
+      "zh": "水泵浦有現貨嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, it comes Monday morning.",
+      "phonetic": "/noʊ ɪt kʌmz ˈmʌndeɪ ˈmɔrnɪŋ./",
+      "zh": "沒有，星期一早上才會到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So the car must stay here overnight?",
+      "phonetic": "/soʊ ðə kɑr mʌst steɪ hɪr ˌoʊvərˈnaɪt?/",
+      "zh": "所以車子必須留在這裡過夜？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, until Monday afternoon, sorry.",
+      "phonetic": "/jɛs ʌnˈtɪl ˈmʌndeɪ ˌæftərˈnun ˈsɑri./",
+      "zh": "是的，要留到星期一下午，抱歉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What time on Monday can I come?",
+      "phonetic": "/wʌt taɪm ɑn ˈmʌndeɪ kæn aɪ kʌm/",
+      "zh": "星期一我幾點能過來取車？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Around three, if the pump arrives.",
+      "phonetic": "/əˈraʊnd θri ɪf ðə pʌmp əˈraɪvz./",
+      "zh": "如果水泵浦到了，大約三點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I still drive it home today?",
+      "phonetic": "/kæn aɪ stɪl draɪv ɪt hoʊm təˈdeɪ?/",
+      "zh": "我今天還能開回家嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Not far, and only with enough coolant.",
+      "phonetic": "/nɑt fɑr ænd ˈoʊnli wɪð ɪˈnʌf ˈkulənt./",
+      "zh": "不能開遠，而且冷卻液要夠。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is it risky to drive it now?",
+      "phonetic": "/ɪz ɪt ˈrɪski tu draɪv ɪt naʊ?/",
+      "zh": "現在開它有風險嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the engine could get very hot.",
+      "phonetic": "/jɛs ði ˈɛndʒɪn kʊd ɡɛt ˈvɛri hɑt./",
+      "zh": "有，引擎可能會變得很燙。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then I'll leave the car with you.",
+      "phonetic": "/ðɛn aɪl liv ðə kɑr wɪð ju./",
+      "zh": "那我就把車留在你這裡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good choice, we'll start on the brakes.",
+      "phonetic": "/ɡʊd tʃɔɪs wil stɑrt ɑn ðə breɪks./",
+      "zh": "好選擇，我們先從煞車開始。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please do the brakes first today.",
+      "phonetic": "/pliz du ðə breɪks fɜrst təˈdeɪ./",
+      "zh": "今天請先處理煞車。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That's what I planned to do.",
+      "phonetic": "/ðæts wʌt aɪ plænd tu du./",
+      "zh": "我本來就是這樣打算的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I also change the coolant now?",
+      "phonetic": "/ʃʊd aɪ ˈɔlsoʊ tʃeɪndʒ ðə ˈkulənt naʊ?/",
+      "zh": "我現在也該換冷卻液嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, new coolant comes with the pump.",
+      "phonetic": "/jɛs nu ˈkulənt kʌmz wɪð ðə pʌmp./",
+      "zh": "要，新的冷卻液會隨水泵浦一起換。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the coolant cost extra money?",
+      "phonetic": "/dʌz ðə ˈkulənt kɔst ˈɛkstrə ˈmʌni?/",
+      "zh": "冷卻液要另外加錢嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, it's included in that price.",
+      "phonetic": "/noʊ ɪts ɪnˈkludɪd ɪn ðæt praɪs./",
+      "zh": "不用，已經包含在那個價格裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What about the old parts you remove?",
+      "phonetic": "/wʌt əˈbaʊt ði oʊld pɑrts ju rɪˈmuv?/",
+      "zh": "你拆下來的舊零件呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'll put them in a box.",
+      "phonetic": "/aɪl pʊt ðɛm ɪn ə bɑks/",
+      "zh": "我會幫你裝箱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I pay with a credit card?",
+      "phonetic": "/kæn aɪ peɪ wɪð ə ˈkrɛdɪt kɑrd?/",
+      "zh": "我可以刷信用卡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, we take cards and cash here.",
+      "phonetic": "/jɛs wi teɪk kɑrdz ænd kæʃ hɪr./",
+      "zh": "可以，我們收信用卡也收現金。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is there a discount for paying cash?",
+      "phonetic": "/ɪz ðɛr ə ˈdɪskaʊnt fɔr ˈpeɪɪŋ kæʃ?/",
+      "zh": "付現有折扣嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sorry, our prices are already fixed.",
+      "phonetic": "/ˈsɑri aʊr ˈpraɪsɪz ɑr ɔlˈrɛdi fɪkst./",
+      "zh": "抱歉，我們的價格都是固定的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will you call me before you start?",
+      "phonetic": "/wɪl ju kɔl mi bɪˈfɔr ju stɑrt?/",
+      "zh": "你開始之前會打給我嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I'll call you this afternoon, Kevin.",
+      "phonetic": "/aɪl kɔl ju ðɪs ˌæftərˈnun ˈkɛvɪn./",
+      "zh": "凱文，我今天下午會打給你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My number is on the paperwork, right?",
+      "phonetic": "/maɪ ˈnʌmbər ɪz ɑn ðə ˈpeɪpərwɜrk raɪt?/",
+      "zh": "我的電話在文件上，對吧？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, I see it right here.",
+      "phonetic": "/jɛs aɪ si ɪt raɪt hɪr./",
+      "zh": "對，我就在這裡看到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please keep the car inside tonight.",
+      "phonetic": "/pliz kip ðə kɑr ɪnˈsaɪd təˈnaɪt./",
+      "zh": "今晚請把車停在室內。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Don't worry, it sleeps in the garage.",
+      "phonetic": "/doʊnt ˈwɜri ɪt slips ɪn ðə ɡəˈrɑʒ./",
+      "zh": "別擔心，它會睡在車庫裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I feel better leaving it with you.",
+      "phonetic": "/aɪ fil ˈbɛtər ˈlivɪŋ ɪt wɪð ju./",
+      "zh": "把車交給你，我比較放心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We'll take good care of it.",
+      "phonetic": "/wil teɪk ɡʊd kɛr əv ɪt./",
+      "zh": "我們會好好照顧它。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "See you Monday, then, Ming.",
+      "phonetic": "/si ju ˈmʌndeɪ ðɛn mɪŋ./",
+      "zh": "阿明，那就星期一見。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "See you Monday, three in the afternoon.",
+      "phonetic": "/si ju ˈmʌndeɪ θri ɪn ði ˌæftərˈnun./",
+      "zh": "星期一見，下午三點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hello, this is Kevin calling.",
+      "phonetic": "/həˈloʊ ðɪs ɪz ˈkɛvɪn ˈkɔlɪŋ/",
+      "zh": "你好，我是凱文。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good to hear from you.",
+      "phonetic": "/ɡʊd tu hɪr frʌm ju/",
+      "zh": "很高興接到你的電話。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How is the car doing today?",
+      "phonetic": "/haʊ ɪz ðə kɑr ˈduɪŋ təˈdeɪ/",
+      "zh": "車子今天怎麼樣？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The part arrives Monday morning.",
+      "phonetic": "/ðə pɑrt əˈraɪvz ˈmʌndeɪ ˈmɔrnɪŋ/",
+      "zh": "零件星期一早上到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then Monday at three works.",
+      "phonetic": "/ðɛn ˈmʌndeɪ æt θri wɜrks/",
+      "zh": "那星期一下午三點可以。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, we will have it ready.",
+      "phonetic": "/jɛs wi wɪl hæv ɪt ˈrɛdi/",
+      "zh": "好，我們會準備好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you find anything else?",
+      "phonetic": "/dɪd ju faɪnd ˈɛniˌθɪŋ ɛls/",
+      "zh": "還有發現別的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only the small hose leak.",
+      "phonetic": "/ˈoʊnli ðə smɔl hoʊz lik/",
+      "zh": "只有那條小水管漏水。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you also check the front tires?",
+      "phonetic": "/kæn ju ˈɔlsoʊ tʃɛk ðə frʌnt ˈtaɪərz?/",
+      "zh": "你也可以檢查前輪嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, I will look at them.",
+      "phonetic": "/ʃʊr aɪ wɪl lʊk æt ðɛm/",
+      "zh": "當然，我會看看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The tires are only two years old.",
+      "phonetic": "/ðə ˈtaɪərz ɑr ˈoʊnli tu jɪrz oʊld/",
+      "zh": "輪胎才用了兩年。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then they should still be fine.",
+      "phonetic": "/ðɛn ðeɪ ʃʊd stɪl bi faɪn/",
+      "zh": "那它們應該還很好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the new hose hard to find?",
+      "phonetic": "/ɪz ðə nu hoʊz hɑrd tə faɪnd?/",
+      "zh": "新的管子很難找嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, the shop keeps them in stock.",
+      "phonetic": "/noʊ ðə ʃɑp kips ðɛm ɪn stɑk/",
+      "zh": "不會，店裡有現貨。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That makes everything much easier.",
+      "phonetic": "/ðæt meɪks ˈɛvriˌθɪŋ mʌtʃ ˈiziər/",
+      "zh": "那就簡單多了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, we can finish it fast.",
+      "phonetic": "/jɛs wi kæn ˈfɪnɪʃ ɪt fæst/",
+      "zh": "對，我們可以很快弄好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I leave the car keys here?",
+      "phonetic": "/ʃʊd aɪ liv ðə kɑr kiz hɪr?/",
+      "zh": "我該把車鑰匙留在這裡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Please leave them at the desk.",
+      "phonetic": "/pliz liv ðɛm æt ðə dɛsk/",
+      "zh": "請把它們放在櫃台。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you need my phone number again?",
+      "phonetic": "/du ju nid maɪ foʊn ˈnʌmbər əˈɡɛn?/",
+      "zh": "你需要我的電話號碼再確認一次嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, we have it on file.",
+      "phonetic": "/jɛs wi hæv ɪt ɑn faɪl/",
+      "zh": "要，我們檔案裡有。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We can call you when it's done.",
+      "phonetic": "/wi kæn kɔl ju wɛn ɪts dʌn/",
+      "zh": "好了我們可以打電話給你。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Please call before the shop closes.",
+      "phonetic": "/pliz kɔl bɪˈfɔr ðə ʃɑp ˈkloʊzɪz/",
+      "zh": "請在店關門前打給我。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One more thing about the small leak.",
+      "phonetic": "/wʌn mɔr θɪŋ əˈbaʊt ðə smɔl lik/",
+      "zh": "關於那個小漏，還有一件事。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Go on, I am listening carefully.",
+      "phonetic": "/ɡoʊ ɑn aɪ æm ˈlɪsənɪŋ ˈkɛrfəli/",
+      "zh": "你說，我在仔細聽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Could the leak have damaged something else?",
+      "phonetic": "/kʊd ðə lik hæv ˈdæmɪdʒd ˈsʌmθɪŋ ɛls?/",
+      "zh": "這個漏會不會弄壞別的東西？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Not yet, but it needs attention.",
+      "phonetic": "/nɑt jɛt bʌt ɪt nidz əˈtɛnʃən/",
+      "zh": "還沒有，但它需要處理。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then please fix it right away.",
+      "phonetic": "/ðɛn pliz fɪks ɪt raɪt əˈweɪ/",
+      "zh": "那就請馬上修好它。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it is first on my list.",
+      "phonetic": "/jɛs ɪt ɪz fɜrst ɑn maɪ lɪst/",
+      "zh": "好，它是我清單上的第一項。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the hose cost a lot?",
+      "phonetic": "/dʌz ðə hoʊz kɔst ə lɑt?/",
+      "zh": "這條管子很貴嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is small and rather cheap.",
+      "phonetic": "/ɪt ɪz smɔl ənd ˈræðər tʃip/",
+      "zh": "它很小，還算便宜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The trouble is finding the right one.",
+      "phonetic": "/ðə ˈtrʌbəl ɪz ˈfaɪndɪŋ ðə raɪt wʌn/",
+      "zh": "麻煩的是要找到對的那條。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Right, and it must fit exactly.",
+      "phonetic": "/raɪt ənd ɪt mʌst fɪt ɪɡˈzæktli/",
+      "zh": "對，而且必須剛好合。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I trust you to pick good parts.",
+      "phonetic": "/aɪ trʌst ju tə pɪk ɡʊd pɑrts/",
+      "zh": "我相信你會挑好的零件。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We only use parts that last.",
+      "phonetic": "/wi ˈoʊnli juz pɑrts ðæt læst/",
+      "zh": "我們只用耐用的零件。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What else needs work on the car?",
+      "phonetic": "/wʌt ɛls nidz wɜrk ɑn ðə kɑr?/",
+      "zh": "車子還有什麼地方要處理？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The rear brakes are still fine.",
+      "phonetic": "/ðə rɪr breɪks ər stɪl faɪn/",
+      "zh": "後煞車還很好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I don't have much money this month.",
+      "phonetic": "/aɪ doʊnt hæv mʌtʃ ˈmʌni ðɪs mʌnθ/",
+      "zh": "我這個月錢不多。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then we will only do the front.",
+      "phonetic": "/ðɛn wi wɪl ˈoʊnli du ðə frʌnt/",
+      "zh": "那我們只做前面的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Good, the front brakes are done.",
+      "phonetic": "/ɡʊd ðə frʌnt breɪks ər dʌn/",
+      "zh": "好，前煞車已經處理好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then the car is nearly ready.",
+      "phonetic": "/ðɛn ðə kɑr ɪz ˈnɪrli ˈrɛdi/",
+      "zh": "那車子就快好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What will the final bill look like?",
+      "phonetic": "/wʌt wɪl ðə ˈfaɪnəl bɪl lʊk laɪk?/",
+      "zh": "那最後的帳單大概會是多少？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will write everything down clearly.",
+      "phonetic": "/aɪ wɪl raɪt ˈɛvriˌθɪŋ daʊn ˈklɪrli/",
+      "zh": "我會把每一項都寫清楚。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Don't forget the small parts, please.",
+      "phonetic": "/doʊnt fərˈɡɛt ðə smɔl pɑrts pliz/",
+      "zh": "請別忘了那些小零件。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Don't worry, nothing is extra.",
+      "phonetic": "/doʊnt ˈwɜri ˈnʌθɪŋ ɪz ˈɛkstrə/",
+      "zh": "別擔心，不會多收。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are the new parts under some warranty?",
+      "phonetic": "/ɑr ðə nu pɑrts ˈʌndər sʌm ˈwɔrənti?/",
+      "zh": "新零件有保固嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, for a whole year.",
+      "phonetic": "/jɛs fɔr ə hoʊl jɪr/",
+      "zh": "有，保固整整一年。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will you take it for a drive?",
+      "phonetic": "/wɪl ju teɪk ɪt fɔr ə draɪv?/",
+      "zh": "你們會把它開出去試嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Of course, we test every repair.",
+      "phonetic": "/əv kɔrs wi tɛst ˈɛvri rɪˈpɛr/",
+      "zh": "當然，每次修理我們都會試。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Then I will wait for your call.",
+      "phonetic": "/ðɛn aɪ wɪl weɪt fɔr jʊr kɔl/",
+      "zh": "那我就等你的電話。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We will call you on Monday.",
+      "phonetic": "/wi wɪl kɔl ju ɑn ˈmʌndeɪ/",
+      "zh": "我們星期一會打給你。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How long do we wait now?",
+      "phonetic": "/haʊ lɔŋ du wi weɪt naʊ?/",
+      "zh": "我們現在要等多久？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The shop ordered it on Saturday.",
+      "phonetic": "/ðə ʃɑp ˈɔrdərd ɪt ɑn ˈsætərˌdeɪ/",
+      "zh": "店裡星期六就訂了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where does the part come from?",
+      "phonetic": "/wɛr dʌz ðə pɑrt kʌm frʌm?/",
+      "zh": "這個零件從哪裡來？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It comes from a shop downtown.",
+      "phonetic": "/ɪt kʌmz frʌm ə ʃɑp ˈdaʊnˈtaʊn/",
+      "zh": "從市中心的一家店送來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have a place to sit?",
+      "phonetic": "/du ju hæv ə pleɪs tə sɪt?/",
+      "zh": "你們有地方可以坐嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, the waiting room is right there.",
+      "phonetic": "/ʃʊr ðə ˈweɪtɪŋ rum ɪz raɪt ðɛr/",
+      "zh": "當然，等候區就在那邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is there coffee in the waiting room?",
+      "phonetic": "/ɪz ðɛr ˈkɔfi ɪn ðə ˈweɪtɪŋ rum?/",
+      "zh": "等候區有咖啡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, and some tea as well.",
+      "phonetic": "/jɛs ənd sʌm ti æz wɛl/",
+      "zh": "有，也有一些茶。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I have a cup of coffee?",
+      "phonetic": "/kæn aɪ hæv ə kʌp əv ˈkɔfi?/",
+      "zh": "我可以喝一杯咖啡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Help yourself, the pot is full.",
+      "phonetic": "/hɛlp jʊrˈsɛlf ðə pɑt ɪz fʊl/",
+      "zh": "自己來，壺是滿的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where are the cups and the sugar?",
+      "phonetic": "/wɛr ɑr ðə kʌps ənd ðə ˈʃʊɡər?/",
+      "zh": "杯子和糖在哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They are on the small table.",
+      "phonetic": "/ðeɪ ɑr ɑn ðə smɔl ˈteɪbəl/",
+      "zh": "在那張小桌子上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "We might be here a long while.",
+      "phonetic": "/wi maɪt bi hɪr ə lɔŋ waɪl/",
+      "zh": "我們可能要在這裡待上一段時間。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it arrives Monday morning.",
+      "phonetic": "/jɛs ɪt əˈraɪvz ˈmʌndeɪ ˈmɔrnɪŋ/",
+      "zh": "對，星期一早上到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What can we do until then?",
+      "phonetic": "/wʌt kæn wi du ʌnˈtɪl ðɛn?/",
+      "zh": "在那之前我們能做什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "There are magazines on the shelf.",
+      "phonetic": "/ðɛr ɑr ˈmæɡəˌzinz ɑn ðə ʃɛlf/",
+      "zh": "架上有雜誌。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Reading sounds better than watching the clock.",
+      "phonetic": "/ˈridɪŋ saʊndz ˈbɛtər ðæn ˈwɑtʃɪŋ ðə klɑk/",
+      "zh": "看書比盯著時鐘好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is true for most people.",
+      "phonetic": "/ðæt ɪz tru fɔr moʊst ˈpipəl/",
+      "zh": "對大多數人來說確實如此。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is there anything to eat here?",
+      "phonetic": "/ɪz ðɛr ˈɛniˌθɪŋ tə it hɪr?/",
+      "zh": "這裡有東西吃嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just some donuts in that box.",
+      "phonetic": "/dʒʌst sʌm ˈdoʊnʌts ɪn ðæt bɑks/",
+      "zh": "只有那個盒子裡的甜甜圈。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Who brought the donuts this time?",
+      "phonetic": "/hu brɔt ðə ˈdoʊnʌts ðɪs taɪm?/",
+      "zh": "這次的甜甜圈是誰帶來的？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The mechanic bought them for everyone.",
+      "phonetic": "/ðə məˈkænɪk bɔt ðɛm fɔr ˈɛvriˌwʌn/",
+      "zh": "是師傅買給大家的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That was kind of him.",
+      "phonetic": "/ðæt wʌz kaɪnd əv hɪm/",
+      "zh": "他人真好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "He does that almost every week.",
+      "phonetic": "/hi dʌz ðæt ˈɔlmoʊst ˈɛvri wik/",
+      "zh": "他幾乎每個星期都這樣做。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you work here or just wait?",
+      "phonetic": "/du ju wɜrk hɪr ɔr dʒʌst weɪt?/",
+      "zh": "你是在這裡工作還是只是在等？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I am waiting for my car too.",
+      "phonetic": "/aɪ æm ˈweɪtɪŋ fɔr maɪ kɑr tu/",
+      "zh": "我也是在等我的車。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What is wrong with your car?",
+      "phonetic": "/wʌt ɪz rɔŋ wɪð jʊr kɑr?/",
+      "zh": "你的車怎麼了？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The engine makes a strange noise.",
+      "phonetic": "/ðə ˈɛndʒən meɪks ə streɪndʒ nɔɪz/",
+      "zh": "引擎發出奇怪的聲音。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Our cars both make odd noises.",
+      "phonetic": "/aʊər kɑrz boʊθ meɪk ɑd ˈnɔɪzɪz/",
+      "zh": "我們的車都發出奇怪的聲音。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Maybe this shop is very busy.",
+      "phonetic": "/ˈmeɪbi ðɪs ʃɑp ɪz ˈvɛri ˈbɪzi/",
+      "zh": "也許這家店生意很好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This place is busier than I thought.",
+      "phonetic": "/ðɪs pleɪs ɪz ˈbɪziər ðæn aɪ θɔt/",
+      "zh": "這地方比我想的還忙。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only when something sounds wrong.",
+      "phonetic": "/ˈoʊnli wɛn ˈsʌmθɪŋ saʊndz rɔŋ/",
+      "zh": "只在有東西聽起來不對的時候。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "This coffee here is quite good.",
+      "phonetic": "/ðɪs ˈkɔfi hɪr ɪz kwaɪt ɡʊd/",
+      "zh": "這裡的咖啡滿不錯的。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is better than the garage smell.",
+      "phonetic": "/ɪt ɪz ˈbɛtər ðæn ðə ɡəˈrɑʒ smɛl/",
+      "zh": "總比車庫的味道好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can you hear the tools from here?",
+      "phonetic": "/kæn ju hɪr ðə tulz frʌm hɪr?/",
+      "zh": "你從這裡聽得到工具的聲音嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, someone is working nearby.",
+      "phonetic": "/jɛs ˈsʌmˌwʌn ɪz ˈwɜrkɪŋ ˈnɪrˈbaɪ/",
+      "zh": "聽得到，有人在附近工作。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That noise means my car is open.",
+      "phonetic": "/ðæt nɔɪz minz maɪ kɑr ɪz ˈoʊpən/",
+      "zh": "那個聲音表示我的車正在被拆。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "They work fast on every car.",
+      "phonetic": "/ðeɪ wɜrk fæst ɑn ˈɛvri kɑr/",
+      "zh": "他們每台車都處理得很快。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should we ask for an update?",
+      "phonetic": "/ʃʊd wi æsk fɔr ən ˈʌpˌdeɪt?/",
+      "zh": "我們該去問一下進度嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let's wait a little longer first.",
+      "phonetic": "/lɛts weɪt ə ˈlɪtəl ˈlɔŋɡər fɜrst/",
+      "zh": "我們先再等一會兒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My coffee is getting cold already.",
+      "phonetic": "/maɪ ˈkɔfi ɪz ˈɡɛtɪŋ koʊld ɔlˈrɛdi/",
+      "zh": "我的咖啡已經快涼了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Then pour yourself a fresh cup.",
+      "phonetic": "/ðɛn pɔr jʊrˈsɛlf ə frɛʃ kʌp/",
+      "zh": "那就再倒一杯新的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you want another cup too?",
+      "phonetic": "/du ju wɑnt əˈnʌðər kʌp tu?/",
+      "zh": "你也要再一杯嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, one cup is enough for me.",
+      "phonetic": "/noʊ wʌn kʌp ɪz ɪˈnʌf fɔr mi/",
+      "zh": "不用，我一杯就夠了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That was a long wait today.",
+      "phonetic": "/ðæt wʌz ə lɔŋ weɪt təˈdeɪ/",
+      "zh": "今天等了好久。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good thing we brought a book.",
+      "phonetic": "/ɡʊd θɪŋ wi brɔt ə bʊk/",
+      "zh": "還好我們帶了本書。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "At last, the mechanic is calling us.",
+      "phonetic": "/æt læst ðə məˈkænɪk ɪz ˈkɔlɪŋ ʌs/",
+      "zh": "師傅終於在叫我們了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Let's go and hear the news.",
+      "phonetic": "/lɛts ɡoʊ ənd hɪr ðə nuz/",
+      "zh": "我們去聽聽消息吧。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did the new part finally arrive?",
+      "phonetic": "/dɪd ðə nu pɑrt ˈfaɪnəli əˈraɪv?/",
+      "zh": "新零件終於到了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, and the car is almost done.",
+      "phonetic": "/jɛs ənd ðə kɑr ɪz ˈɔlmoʊst dʌn/",
+      "zh": "到了，車子也快好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is my car ready to pick up?",
+      "phonetic": "/ɪz maɪ kɑr ˈrɛdi tə pɪk ʌp?/",
+      "zh": "我的車可以來領了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it is parked out front.",
+      "phonetic": "/jɛs ɪt ɪz pɑrkt aʊt frʌnt/",
+      "zh": "可以，它就停在外面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you try driving it after?",
+      "phonetic": "/dɪd ju traɪ ˈdraɪvɪŋ ɪt ˈæftər?/",
+      "zh": "修好之後你試開過了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We drove it around the block.",
+      "phonetic": "/wi droʊv ɪt əˈraʊnd ðə blɑk/",
+      "zh": "我們在附近繞了一圈。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Would you take me for a drive?",
+      "phonetic": "/wʊd ju teɪk mi fɔr ə draɪv?/",
+      "zh": "你可以帶我試開一下嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, let's go right now.",
+      "phonetic": "/ʃʊr lɛts ɡoʊ raɪt naʊ/",
+      "zh": "當然，我們現在就去。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The engine sounds much quieter now.",
+      "phonetic": "/ðə ˈɛndʒən saʊndz mʌtʃ ˈkwaɪətər naʊ/",
+      "zh": "引擎現在聽起來安靜多了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The new hose fixed that noise.",
+      "phonetic": "/ðə nu hoʊz fɪkst ðæt nɔɪz/",
+      "zh": "新管子解決了那個聲音。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I don't hear the rattle anymore.",
+      "phonetic": "/aɪ doʊnt hɪr ðə ˈrætəl ˌɛniˈmɔr/",
+      "zh": "我再也聽不到那個喀噠聲了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That means the work was good.",
+      "phonetic": "/ðæt minz ðə wɜrk wʌz ɡʊd/",
+      "zh": "那表示這次修得不錯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How does the brake pedal feel?",
+      "phonetic": "/haʊ dʌz ðə breɪk ˈpɛdəl fil?/",
+      "zh": "煞車踏板踩起來如何？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It feels firm and safe.",
+      "phonetic": "/ɪt filz fɜrm ənd seɪf/",
+      "zh": "感覺很緊實、很安全。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let's drive slowly down this street.",
+      "phonetic": "/lɛts draɪv ˈsloʊli daʊn ðɪs strit/",
+      "zh": "我們慢慢開過這條街。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Take your time, there is no rush.",
+      "phonetic": "/teɪk jʊr taɪm ðɛr ɪz noʊ rʌʃ/",
+      "zh": "慢慢來，不急。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The steering wheel turns very smoothly.",
+      "phonetic": "/ðə ˈstɪrɪŋ wil tɜrnz ˈvɛri ˈsmuðli/",
+      "zh": "方向盤轉起來很順。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Everything under the car is tight.",
+      "phonetic": "/ˈɛvriˌθɪŋ ˈʌndər ðə kɑr ɪz taɪt/",
+      "zh": "車底下的每個地方都鎖緊了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you hear anything strange still?",
+      "phonetic": "/du ju hɪr ˈɛniˌθɪŋ streɪndʒ stɪl?/",
+      "zh": "你還聽到任何奇怪的聲音嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, the car runs very well.",
+      "phonetic": "/noʊ ðə kɑr rʌnz ˈvɛri wɛl/",
+      "zh": "沒有，車子跑得很好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That is a real relief for me.",
+      "phonetic": "/ðæt ɪz ə ril rɪˈlif fɔr mi/",
+      "zh": "這真的讓我鬆了一口氣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You worried about it all week.",
+      "phonetic": "/ju ˈwɜrid əˈbaʊt ɪt ɔl wik/",
+      "zh": "你為這件事擔心了一整個星期。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we drive back to the shop?",
+      "phonetic": "/kæn wi draɪv bæk tə ðə ʃɑp?/",
+      "zh": "我們可以開回店裡了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the test drive is finished.",
+      "phonetic": "/jɛs ðə tɛst draɪv ɪz ˈfɪnɪʃt/",
+      "zh": "可以，試開結束了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The car feels solid on the road.",
+      "phonetic": "/ðə kɑr filz ˈsɑlɪd ɑn ðə roʊd/",
+      "zh": "車子在路上感覺很穩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is how it should feel.",
+      "phonetic": "/ðæt ɪz haʊ ɪt ʃʊd fil/",
+      "zh": "本來就該是這種感覺。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What do I owe for all this?",
+      "phonetic": "/wʌt du aɪ oʊ fɔr ɔl ðɪs?/",
+      "zh": "這樣總共我要付多少？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The total is on this paper.",
+      "phonetic": "/ðə ˈtoʊtəl ɪz ɑn ðɪs ˈpeɪpər/",
+      "zh": "總金額在這張紙上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is a card okay here?",
+      "phonetic": "/ɪz ə kɑrd oʊˈkeɪ hɪr/",
+      "zh": "這裡可以用卡片嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, we take cards at the desk.",
+      "phonetic": "/jɛs wi teɪk kɑrdz æt ðə dɛsk/",
+      "zh": "可以，我們櫃台收卡片。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Here is my card, please be careful.",
+      "phonetic": "/hɪr ɪz maɪ kɑrd pliz bi ˈkɛrfəl/",
+      "zh": "這是我的卡，請小心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thank you, this will take a second.",
+      "phonetic": "/θæŋk ju ðɪs wɪl teɪk ə ˈsɛkənd/",
+      "zh": "謝謝，一下子就好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Could I get a copy?",
+      "phonetic": "/kʊd aɪ ɡɛt ə ˈkɑpi?/",
+      "zh": "我可以拿一份影本嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Of course, I will print one now.",
+      "phonetic": "/əv kɔrs aɪ wɪl prɪnt wʌn naʊ/",
+      "zh": "當然，我現在印一份。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does this paper show the warranty?",
+      "phonetic": "/dʌz ðɪs ˈpeɪpər ʃoʊ ðə ˈwɔrənti?/",
+      "zh": "這張紙上有保固資訊嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the bottom line explains everything.",
+      "phonetic": "/jɛs ðə ˈbɑtəm laɪn ɪkˈspleɪnz ˈɛvriˌθɪŋ/",
+      "zh": "有，最下面那行都寫清楚了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please keep this receipt in your car.",
+      "phonetic": "/pliz kip ðɪs rɪˈsit ɪn jʊr kɑr/",
+      "zh": "請把這張收據放在車上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will put it in the glovebox.",
+      "phonetic": "/aɪ wɪl pʊt ɪt ɪn ðə ˈɡlʌvˌbɑks/",
+      "zh": "我會把它放進手套箱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did the shop use the right oil?",
+      "phonetic": "/dɪd ðə ʃɑp juz ðə raɪt ɔɪl?/",
+      "zh": "店裡用的是對的機油嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the same kind as before.",
+      "phonetic": "/jɛs ðə seɪm kaɪnd æz bɪˈfɔr/",
+      "zh": "是，和之前同一種。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The bill is lower than I feared.",
+      "phonetic": "/ðə bɪl ɪz ˈloʊər ðæn aɪ fɪrd/",
+      "zh": "帳單比我擔心的低。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We only charged for real work.",
+      "phonetic": "/wi ˈoʊnli tʃɑrdʒd fɔr ril wɜrk/",
+      "zh": "我們只收真正做過的工作。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You fixed the leak very quickly.",
+      "phonetic": "/ju fɪkst ðə lik ˈvɛri ˈkwɪkli/",
+      "zh": "你很快就把漏修好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We had the part in stock.",
+      "phonetic": "/wi hæd ðə pɑrt ɪn stɑk/",
+      "zh": "我們剛好有零件庫存。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can we drive it home now?",
+      "phonetic": "/kæn wi draɪv ɪt hoʊm naʊ?/",
+      "zh": "我們現在可以開回家了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the car is all yours.",
+      "phonetic": "/jɛs ðə kɑr ɪz ɔl jʊrz/",
+      "zh": "可以，車子完全是你的了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It feels good to drive it again.",
+      "phonetic": "/ɪt filz ɡʊd tə draɪv ɪt əˈɡɛn/",
+      "zh": "能再開它感覺真好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Drive safely and enjoy the quiet.",
+      "phonetic": "/draɪv ˈseɪfli ənd ɛnˈdʒɔɪ ðə ˈkwaɪət/",
+      "zh": "小心開，享受這份安靜。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Before we go, one last question.",
+      "phonetic": "/bɪˈfɔr wi ɡoʊ wʌn læst ˈkwɛstʃən/",
+      "zh": "走之前，最後一個問題。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ask me anything about the car.",
+      "phonetic": "/æsk mi ˈɛniˌθɪŋ əˈbaʊt ðə kɑr/",
+      "zh": "關於車子的事都可以問我。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "When should I bring it back again?",
+      "phonetic": "/wɛn ʃʊd aɪ brɪŋ ɪt bæk əˈɡɛn?/",
+      "zh": "我什麼時候該再把它開來？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Come back after five thousand miles.",
+      "phonetic": "/kʌm bæk ˈæftər faɪv ˈθaʊzənd maɪlz/",
+      "zh": "五千英里之後再來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do I need to come back soon?",
+      "phonetic": "/du aɪ nid tə kʌm bæk sun?/",
+      "zh": "我需要很快再來嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only when the oil needs changing.",
+      "phonetic": "/ˈoʊnli wɛn ðə ɔɪl nidz ˈtʃeɪndʒɪŋ/",
+      "zh": "只有機油需要換的時候。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How many miles until the next service?",
+      "phonetic": "/haʊ ˈmɛni maɪlz ʌnˈtɪl ðə nɛkst ˈsɜrvəs?/",
+      "zh": "距離下次保養還有多少英里？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "About five thousand miles from today.",
+      "phonetic": "/əˈbaʊt faɪv ˈθaʊzənd maɪlz frʌm təˈdeɪ/",
+      "zh": "從今天算大約五千英里。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That sounds like a long time.",
+      "phonetic": "/ðæt saʊndz laɪk ə lɔŋ taɪm/",
+      "zh": "聽起來是一段很長的時間。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "For you, that is maybe six months.",
+      "phonetic": "/fɔr ju ðæt ɪz ˈmeɪbi sɪks mʌnθs/",
+      "zh": "對你來說，大概六個月。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I check the oil myself sometimes?",
+      "phonetic": "/ʃʊd aɪ tʃɛk ðə ɔɪl maɪˈsɛlf ˈsʌmˌtaɪmz?/",
+      "zh": "我該偶爾自己檢查機油嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, once a month is plenty.",
+      "phonetic": "/jɛs wʌns ə mʌnθ ɪz ˈplɛnti/",
+      "zh": "要，一個月一次就很夠了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What if a warning light comes on?",
+      "phonetic": "/wʌt ɪf ə ˈwɔrnɪŋ laɪt kʌmz ɑn?/",
+      "zh": "如果警示燈亮起來怎麼辦？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stop the car and call us.",
+      "phonetic": "/stɑp ðə kɑr ənd kɔl ʌs/",
+      "zh": "把車停下來，打電話給我們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will you remember my car next time?",
+      "phonetic": "/wɪl ju rɪˈmɛmbər maɪ kɑr nɛkst taɪm?/",
+      "zh": "下次你還記得我的車嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, your name is in our book.",
+      "phonetic": "/jɛs jʊr neɪm ɪz ɪn aʊər bʊk/",
+      "zh": "記得，你的名字在我們的紀錄裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Finally it feels like my car again.",
+      "phonetic": "/ˈfaɪnəli ɪt filz laɪk maɪ kɑr əˈɡɛn/",
+      "zh": "車子終於又像是我的車了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A good repair does feel that way.",
+      "phonetic": "/ə ɡʊd rɪˈpɛr dʌz fil ðæt weɪ/",
+      "zh": "修得好確實會有這種感覺。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "I was nervous about the whole thing.",
+      "phonetic": "/aɪ wʌz ˈnɜrvəs əˈbaʊt ðə hoʊl θɪŋ/",
+      "zh": "整件事讓我很緊張。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Most drivers feel the same way.",
+      "phonetic": "/moʊst ˈdraɪvərz fil ðə seɪm weɪ/",
+      "zh": "大多數駕駛都有同感。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "At least it wasn't the engine.",
+      "phonetic": "/æt list ɪt ˈwʌzənt ði ˈɛndʒən/",
+      "zh": "至少不是引擎壞了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Right, the engine is still strong.",
+      "phonetic": "/raɪt ði ˈɛndʒən ɪz stɪl strɔŋ/",
+      "zh": "對，引擎還很強壯。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So the car is safe for winter.",
+      "phonetic": "/soʊ ðə kɑr ɪz seɪf fɔr ˈwɪntər/",
+      "zh": "所以車子過冬沒問題了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, and the heater works fine.",
+      "phonetic": "/jɛs ənd ðə ˈhitər wɜrks faɪn/",
+      "zh": "對，暖氣也正常。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You saved me a lot of trouble.",
+      "phonetic": "/ju seɪvd mi ə lɑt əv ˈtrʌbəl/",
+      "zh": "你幫我省了很多麻煩。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is our job every day.",
+      "phonetic": "/ðæt ɪz aʊər dʒɑb ˈɛvri deɪ/",
+      "zh": "這是我們每天的工作。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "My friends will hear about this shop.",
+      "phonetic": "/maɪ frɛndz wɪl hɪr əˈbaʊt ðɪs ʃɑp/",
+      "zh": "我會跟朋友推薦這家店。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We always welcome new customers.",
+      "phonetic": "/wi ˈɔlˌweɪz ˈwɛlkəm nu ˈkʌstəmərz/",
+      "zh": "我們一向歡迎新客人。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "One more look at the new hose?",
+      "phonetic": "/wʌn mɔr lʊk æt ðə nu hoʊz?/",
+      "zh": "再看一眼那條新管子好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, it is right under here.",
+      "phonetic": "/ʃʊr ɪt ɪz raɪt ˈʌndər hɪr/",
+      "zh": "當然，就在這下面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "It looks clean and very new.",
+      "phonetic": "/ɪt lʊks klin ənd ˈvɛri nu/",
+      "zh": "看起來很乾淨、很新。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Give it a light touch.",
+      "phonetic": "/ɡɪv ɪt ə laɪt tʌtʃ/",
+      "zh": "輕輕摸一下看看。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "That small part caused all this worry.",
+      "phonetic": "/ðæt smɔl pɑrt kɔzd ɔl ðɪs ˈwɜri/",
+      "zh": "那個小零件引起了這一切擔心。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Small parts often cause big problems.",
+      "phonetic": "/smɔl pɑrts ˈɔfən kɔz bɪɡ ˈprɑbləmz/",
+      "zh": "小零件常常造成大問題。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Next time I will come earlier.",
+      "phonetic": "/nɛkst taɪm aɪ wɪl kʌm ˈɜrliər/",
+      "zh": "下次我會早點來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Come before the morning rush starts.",
+      "phonetic": "/kʌm bɪˈfɔr ðə ˈmɔrnɪŋ rʌʃ stɑrts/",
+      "zh": "在早上高峰開始前來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I park here for a minute?",
+      "phonetic": "/kæn aɪ pɑrk hɪr fɔr ə ˈmɪnɪt/",
+      "zh": "我可以在這裡停一下車嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sure, the front row is free.",
+      "phonetic": "/ʃʊr ðə frʌnt roʊ ɪz fri/",
+      "zh": "當然，前排是空的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please write the mileage on the sticker.",
+      "phonetic": "/pliz raɪt ðə ˈmaɪlɪdʒ ɑn ðə ˈstɪkər/",
+      "zh": "請把里程數寫在貼紙上。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Done, it is on the windshield.",
+      "phonetic": "/dʌn ɪt ɪz ɑn ðə ˈwɪndˌʃild/",
+      "zh": "好了，貼在擋風玻璃上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The mechanic also gave some good news.",
+      "phonetic": "/ðə məˈkænɪk ˈɔlsoʊ ɡeɪv sʌm ɡʊd nuz/",
+      "zh": "師傅還帶來了個好消息。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "He said the car is safe now.",
+      "phonetic": "/hi sɛd ðə kɑr ɪz seɪf naʊ/",
+      "zh": "他說車子現在很安全。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So the brakes and pump are done.",
+      "phonetic": "/soʊ ðə breɪks ænd pʌmp ər dʌn/",
+      "zh": "所以煞車和水泵都處理好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, and the total was fair.",
+      "phonetic": "/jɛs ænd ðə ˈtoʊtəl wʌz fɛr/",
+      "zh": "對，而且總價很合理。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The car is finally quiet and safe.",
+      "phonetic": "/ðə kɑr ɪz ˈfaɪnəli ˈkwaɪət ənd seɪf/",
+      "zh": "車子終於又安靜又安全。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is the best feeling today.",
+      "phonetic": "/ðæt ɪz ðə bɛst ˈfilɪŋ təˈdeɪ/",
+      "zh": "這是今天最棒的感覺。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Want to sit in the car first?",
+      "phonetic": "/wɑnt tu sɪt ɪn ðə kɑr fɜrst/",
+      "zh": "要先坐進車裡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Not now, we will walk home.",
+      "phonetic": "/nɑt naʊ wi wɪl wɔk hoʊm/",
+      "zh": "現在不用，我們要走回家。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Can I call if it rattles again?",
+      "phonetic": "/kæn aɪ kɔl ɪf ɪt ˈrætəlz əˈɡɛn?/",
+      "zh": "如果它又發出喀噠聲，我可以打來嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Please call, the warranty covers it.",
+      "phonetic": "/pliz kɔl ðə ˈwɔrənti ˈkʌvərz ɪt/",
+      "zh": "請打來，保固會涵蓋。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So we are all set then.",
+      "phonetic": "/soʊ wi ɑr ɔl sɛt ðɛn/",
+      "zh": "那我們就都處理好了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, your car is in good shape.",
+      "phonetic": "/jɛs jʊr kɑr ɪz ɪn ɡʊd ʃeɪp/",
+      "zh": "對，你的車況很好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What a long week with this car.",
+      "phonetic": "/wʌt ə lɔŋ wik wɪð ðɪs kɑr/",
+      "zh": "這台車讓這一週過得很漫長。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Now you can just enjoy driving.",
+      "phonetic": "/naʊ ju kæn dʒʌst ɛnˈdʒɔɪ ˈdraɪvɪŋ/",
+      "zh": "現在你只要好好享受開車就好。"
+    }
+  ],
+  "review": {
+    "round": 4,
+    "score": 94,
+    "score_source": "report",
+    "verdict": "APPROVED",
+    "dimensions": {
+      "pair_logic": 23,
+      "idiomatic_a2": 24,
+      "ipa_accuracy": 25,
+      "variety_no_dup": 22
+    },
+    "issues": [
+      {
+        "dim": "ipa_accuracy",
+        "line": 0,
+        "note": "本輪視圖無音標列，此維完全依機器證據給分：audit_script.py hard=0（IPA 形狀與逐詞對齊通過）、ipa_vote.py 全庫 SUSPECT 0，故給滿分 25。"
+      },
+      {
+        "dim": "pair_logic",
+        "line": 393,
+        "note": "具名保留（非 error，全篇最易絆到聽眾的一處）：342-345「Can we drive it home now?／Yes, the car is all yours.／Drive safely…」與 399「Now you can just enjoy driving.」都是開車回家，而 392-393「Want to sit in the car first?／Not now, we will walk home.」若把 char_b 固定當 Kevin 才互斥；依 vbrief 第 12 行聲位豁免，讀成同行友人不搭車、自己步行回家即通順，內容亦非答非所問，故不判 error，但建議下次順修一句。"
+      },
+      {
+        "dim": "pair_logic",
+        "line": 386,
+        "note": "具名保留（非 error）：385 仍是店員聲位（Done, it is on the windshield.），386-387 立刻以第三人稱談 the mechanic／He said the car is safe now.；靠 274-295 已建立的同行顧客聲位切換可解，vbrief 明示聲位切換不算缺陷，且無「同一聲位扮店員又第三人稱談店員」的情形。"
+      },
+      {
+        "dim": "pair_logic",
+        "line": 216,
+        "note": "具名保留（非 error）：86-88 已交鑰匙與文件、代客停車進廠，216-217 又問「要不要把鑰匙留在這裡」；可讀成留備用鑰匙或電話中的交代，屬重述而非硬矛盾。"
+      },
+      {
+        "dim": "pair_logic",
+        "line": 255,
+        "note": "具名保留（非 error）：97-99 已在等候室看雜誌，254-255 又問「有沒有地方坐」，同一場地資訊重述一次；不影響成對邏輯。"
+      },
+      {
+        "dim": "pair_logic",
+        "line": 207,
+        "note": "具名保留（非 error）：24-25 車內異味（cabin filter）、54-57 冷天難發動（battery）未被 207「Only the small hose leak.」回報結果；兩者是未收費的附加檢查，主線（前來令片＋碟盤、水泵＋冷卻液、散熱水管）與 388「brakes and pump are done」一致，故不扣為 error。"
+      },
+      {
+        "dim": "idiomatic_a2",
+        "line": 57,
+        "note": "輕微語感（29 已修好，「we check it for free」通順可過）：57「Yes, we test it in one minute.」用現在簡單式表本次服務，母語者多說 we can test it in a minute；244「Are the new parts under some warranty?」用 under 稍硬，口語多說 Is there a warranty on the new parts?。其餘口語自然，無超綱詞（warped rotors／alignment／coolant／temperature gauge 屬主題必要名詞）。"
+      },
+      {
+        "dim": "variety_no_dup",
+        "line": 327,
+        "note": "近似重複：255「Sure, the waiting room is right there.」對 96「The waiting room is over there.」；327「Yes, we take cards at the desk.」對 187「Yes, we take cards and cash here.」；機器已驗無整句重複，且 176-178 僅一對重申「先做剎車」，故只小扣。"
+      }
+    ],
+    "summary_zh": "本輪獨立複核最終文本：上一輪點名的 29 措辭已修（現為「Sure, we check it for free.」，通順可過），剎車（來令片 2 公釐／碟盤深溝／煞車油變黑）、水泵紅液與散熱水管、12,000＋3,500 報價、八萬英里與五千英里保養間隔、週六送修到週一下午三點取車的時間線，全篇前後一致，未發現任何 error 級問題；C 項音標依機器證據（hard=0、SUSPECT 0、逐詞對齊通過）給滿分。僅存 392-393「walk home」、386-387 第三人稱轉述、216-217 鑰匙重述、255／327 近似重複等小瑕，已逐條具名並合理化，故判 APPROVED（94）。",
+    "model": "skill:hot-sleep-dialogues",
+    "reviewed_at": 1791048263,
+    "content_hash": "sha1:58f6e14f1b3c7ac06d9723128f9afff129f9858f"
+  }
+}

@@ -191,11 +191,11 @@ PARAM_SPEC = {
     "sleep_intro_volume_db": {"default": 0, "type": "number", "group": "sleep_intro",
                               "modes": ["sleep"],
                               "label": "片头音量偏移(dB)",
-                              "help": "片头音轨音量偏移（-100~15，默认 0=原样；-100≈完全静音）：片头库视频自带音轨与默认 TTS 播报频道名均生效（成片末级响度归一保留相对差异）"},
+                              "help": "片头音轨音量偏移（-100~15，默认 0=原样；-100≈完全静音）：片头库视频自带音轨与默认 TTS 播报频道名均生效；成片末级走两遍线性响度归一（整片恒定增益），偏移原样保留不被归一补回"},
     "sleep_outro_volume_db": {"default": 0, "type": "number", "group": "sleep_intro",
                               "modes": ["sleep"],
                               "label": "片尾音量偏移(dB)",
-                              "help": "片尾音轨音量偏移（-100~15，默认 0=原样；-100≈完全静音）：片尾库视频自带音轨与默认 TTS 播报结束语均生效（成片末级响度归一保留相对差异）"},
+                              "help": "片尾音轨音量偏移（-100~15，默认 0=原样；-100≈完全静音）：片尾库视频自带音轨与默认 TTS 播报结束语均生效；成片末级走两遍线性响度归一（整片恒定增益），偏移原样保留不被归一补回"},
     "sleep_outro": {"default": True, "type": "checkbox", "group": "sleep_intro",
                     "modes": ["sleep"],
                     "label": "片尾",
@@ -463,7 +463,10 @@ PARAM_SPEC = {
     "bgm_music_dir": {"default": str(WEB_ROOT / "bgm_music"), "type": "text", "group": "bgm",
                       "label": "音乐库路径",
                       "help": "版权 BGM 音乐文件夹（支持 mp3/wav/flac/ogg/m4a/aac/wma），"
-                              "混音时随机打乱循环拼接至全片时长"},
+                              "混音时随机打乱循环拼接至全片时长。"
+                              "频道上下文保存的值只对该频道生效，优先级高于全局值"
+                              "（「运行历史」页的混BGM / 混BGM 4K 按钮读运行所属频道的值，"
+                              "频道未单独设置时用全局值；混音日志会打印实际来源）"},
     "bgm_ducking_mode": {"default": "sidechain", "type": "select", "group": "bgm",
                          "label": "混音模式",
                          "options": {"amix": "简单叠加 (amix)",
@@ -486,7 +489,7 @@ PARAM_SPEC = {
                              "help": "amix 模式下 BGM 相对旁白 RMS 的音量偏移（仅 amix 生效）"},
     "bgm_fade_ms": {"default": 3000, "type": "number", "group": "bgm",
                     "label": "交叉淡入淡出 ms",
-                    "help": "音乐片段间交叉淡化时长（毫秒）"},
+                    "help": "音乐片段间交叉淡化时长（毫秒）；0 = 不做淡化（片段硬切，保留完整指纹）"},
     "bgm_intro_outro_seconds": {"default": 5, "type": "number", "group": "bgm_sidechain",
                                 "label": "首尾独立段秒数",
                                 "help": "旁白前后加静音段，给 Content ID 干净指纹参考"

@@ -278,6 +278,13 @@ scripts（全部支持从任意 CWD 运行；退出码统一 `0 干净 / 1 有 b
 - `scripts/preflight.py [dir] [--expect-lines 800] [--json]` — **出片就绪预检**（read-only）：
   复用管理页体检 + 机器审计，再加 sleep 特有的渲染就绪检查与成本提示，输出
   🔴 会崩 / 🟡 会降级 / · 提示 + 步骤就绪表。
+- `scripts/motif_scan.py [NNN...] [--all] [--rank] [--json]` — **段落级「母题重复」扫描**：
+  按 4 段 × 50 对统计实词母题 top-8、相邻段实词 Jaccard、b 句 Yes/No 起句占比、char_a 开头词分布。
+  `audit_script.py` 只查*整句*重复与 4-gram 近重复，**查不出「同一件事换个说法讲 11 遍」**，这一支专治它。
+  阈值经库内基线校准：**主题名词在一个 50 对段里 ≥25 次**才算「极端集中」（`⛔`），12–24 次只记 `·` 提示
+  —— 因为主题式循环练习本来就高频复现主题词（实测 001–020 老批次里 007 pot×26 / 008 oil×25 /
+  017 gel×29 / 013 warm×30 都是常态）；b 句 Yes/No 起句 ≥50% 才算节拍单一（全库中位数 24%）。
+  `--rank` 按「最热母题词频」排序，用来判断某篇相对库内基线是否真的异常。
 - `scripts/validate_all.py [dir] [--lines 800] [--expect N] [--console] [--json]` — 全量结构校验
   + 重复句检测 + manifest 对账；`--console` 按管理页体检复核；必填字段与标准行数 import 自
   `app.ai_scripts_admin`。
@@ -379,20 +386,85 @@ scripts（全部支持从任意 CWD 运行；退出码统一 `0 干净 / 1 有 b
    `sync_library()` → 库文档 `review.score` → 页面显示分数；改完 `dialogue` 后应显示
    「审查过期」（`content_hash` 变了）。
 
-### 基线（2026-10-02 实测，`ai_scripts_hot/` 20 篇全部 800 行/400 对）
+### 基线（2026-10-03 实测）
+
+库现状：`ai_scripts_hot/` **43 篇** —— 001–020 是 800 行/400 对老批次（无 `review` 块，按祖父条款），
+**021–043 是 400 行/200 对小批三批，全部 APPROVED**（`list_used_topics.py` 末行 `# next index` = 44）；
+`ai_scripts/` 仍为空（manifest count=0）。混合行数是允许的（`STANDARD_LINES=(400,800)`），
+但门禁的 `--lines` 一次只能对准一个批次目标，所以跑门禁时要指明本批规模。
 
 | 项 | 实测值 | 说明 |
 |---|---|---|
-| `validate_all.py --lines 800` | 20 folders，**0 error / 0 warning**，manifest drift=no | — |
-| `build_manifest.py --check`（hot / main） | 两边都 **CLEAN**（漏登记 0 / 幽灵 0 / 行数过期 0） | `ai_scripts/` manifest count=0（库已空，属现状） |
-| `audit_script.py --fast` | **hard=0**；review 信号 5110（`word_cap`=5073 / `spelling`=37）；19/20 篇有信号，011 全清 | `word_cap` 是**存量现状**（老稿按 3–9 词写），不是门禁误报；新稿按 3–7 写就不会新增 |
-| `normalize_zh.py`（dry） | 0 行待繁化 | 繁化已闭合 |
-| `ipa_vote.py --all` | 146 行 SUSPECT | 语料只剩 `ai_scripts_hot`（另一库已空），表决样本变少，命中数比双库时期低 |
-| `preflight.py` | **0 blocker / 57 条降级提示** | 提示 = `word_cap` 聚合 + 1 条 `near_dup`；无空行/无 null/无奇数行 |
-| `check_gates.py` | **exit 2**（3/6 门全清，3 门仅提示） | 结构组 2 门 + 繁化门全清 |
-| `safe_filename` 输出目录 | 20 篇 → 20 个唯一名，**0 冲突** | 写 `youtube_title` 时主题关键词放前半段 |
-| `_review/` 存量报告 | 20×round1 + 20×round2，**verdict 全 APPROVED，但没有 `score`/`dimensions`** | 旧流程产物：`write_review.py` 写不进去 → 控制台对它们仍显示「未审查」。**属已知现状，默认不追改**；要显示分数就补一轮带分数的评审，或 `write_review.py <NNN> --score N`（留下 `score_source: "cli"`） |
+| `validate_all.py --lines 400 --console` | 43 folders，**0 error**，20 warning，manifest drift=no | warning 全部是 001–020「不是本批目标的 400 行」 |
+| `build_manifest.py --check`（hot / main） | 两边都 **CLEAN** | `ai_scripts/` manifest count=0（库已空，属现状） |
+| `audit_script.py --fast` | **hard=0**；review 信号 5127 | 021–043 全部 ≤7 词、无长行；`word_cap` 只剩 001–020 存量 |
+| `normalize_zh.py`（dry） | 0 行待繁化 | 每批收尾都要 `--apply <本批编号>`（034–043 共 16 行） |
+| `ipa_vote.py --all` | 634 行 SUSPECT，**其中 0 行属 021–043** | 语料每加一批都会让多数票漂移；新稿一律 0，旧篇历史偏差不追改 |
+| `preflight.py` | 43/43 篇 **0 blocker**，121 条降级提示 | 提示集中在 001–020 存量 |
+| `check_gates.py --lines 400` | exit 2，gates `{1:2, 2:0, 3:2, 4:0, 5:2, 6:2}` | 2 号（manifest）与 4 号（繁化）全 0；其余是既有 warning，非 blocker |
 
-**这些是现状基线，不是缺陷清单**：判断「新稿是否退步」看的是有没有**新增** hard 或新增
-review 类别，而不是存量数字本身。旧批次 400 行只记 warn（`STANDARD_LINES`），不要为了让
-新稿变绿去改门槛。
+**021–043 的审查结果（`review` 已写回 script.json，全部 APPROVED 且 `content_hash` 与最终文本一致）**
+
+| 编号 | 主题 | score | 编号 | 主题 | score |
+|---|---|---|---|---|---|
+| 021 | Berry Picking at a Farm | 95 | 033 | At the Dog Groomer | 91 |
+| 022 | At the Convenience Store | 93 | 034 | Asking the Cabin Crew | 88 |
+| 023 | Adopting a Shelter Dog | 90 | 035 | A First Driving Lesson | 88 |
+| 024 | Asking the Landlord for Repairs | 94 | 036 | Asking for a Pay Rise | 92 |
+| 025 | A Piano Lesson | 92 | 037 | When the Power Goes Out | 92 |
+| 026 | Visiting a Sick Friend | 91 | 038 | At the Vending Machine | 84 |
+| 027 | Asking About Allergies | 92 | 039 | Rehearsing in a Community Choir | 85 |
+| 028 | Using a Fitness Tracker | 92 | 040 | A Physiotherapy Session | 90 |
+| 029 | Moving into a Dorm Room | 95 | 041 | Planning Weekly Meals | 92 |
+| 030 | Taking the Car to the Mechanic | 94 | 042 | A Parent-and-Baby Group | 91 |
+| 031 | Booking a Sleep-Friendly Room | 90 | 043 | Choosing a Streaming Plan | 90 |
+| 032 | Collecting a Missed Parcel | 91 | | （021–043 平均 91.0） | |
+
+**段落级「母题重复」这一轮（新增 `motif_scan.py` 之后）**：审计只能抓*整句*重复与 4-gram 近重复，
+抓不到「同一件事换个说法讲 11 遍」。新增 `scripts/motif_scan.py` 后实测：
+
+| 项 | 数值 | 说明 |
+|---|---|---|
+| 库内基线 | 001–020 老批次 **10 段被标记** | 007 pot×26 / 008 oil×25 / 017 gel×29 / 013 warm×30 属常态 → **主题名词高频是格式固有**，阈值定在「一个 50 对段里 ≥25 次」才算极端 |
+| 修前（021–043） | 043 plan×45（全库第一）· 031 room×21 + 段2 Yes 84% · 025 段3/4 Yes 68%/60% · 034 seat×18 · 036 quarter×14 · 038 machine×18 | 这些都是「换个说法也还是同一个词」的段 |
+| 修后（021–043） | **0 段被标记**（只剩 83 条 `·` 提示） | 做法：同义替换 + 换提问角度；Yes/No 起句改直述（全库中位数 24%，超 50% 才算节拍单一） |
+
+**教训**：`motif_scan` 报「⚠ 与上段重叠/Jaccard 高」时先看是不是**两段确实在讲同一件事**；
+`hot` 词频高但主题就是那个词（vending machine / streaming plan）时，**只有到 25+ 才值得改**，
+否则改完只是把同一个词换成它的同义词，听感并没有变。
+
+**「已知遗留再优化一轮」的可复用做法（034–043 实测）**：先用工具量出**可验证项**，再动 agent；
+只有量不到的（内容单调、设定矛盾）才交窄任务 agent。这一轮的结果：
+
+| 指标 | 优化前 | 优化后 | 做法 |
+|---|---|---|---|
+| 超 7 词的行（`word_cap`） | 1 行（040 idx 81） | **0 行** | 逐行改短，改完用 `audit_script.py` 复核 |
+| 机器可见的 `near_dup` | 17 处 | **0 处** | 逐条改写共用 3/4–4/4 个 4-gram 的套语；中途一度变成 3（改写把撞点搬到别的行），**再跑一轮才清零** |
+| 开头词峰值 | 038 can=19、043 which=19 | 全部 **≤19** | 已达标就不用动（阈值 20） |
+| 验收员具名的小瑕 | 每篇 3–8 条 | 逐条改掉（约 60 行） | 按 `_review/*.verdict.json` 的 `issues` 行号直接改；改完**重新出视图再验** |
+| 分数 | 85–94 | **85–92，平均 89.2** | 每篇重新独立验收并 `write_review` 重写回 |
+
+这一轮固化下来的两条纪律：
+1. **改稿与出视图必须成对做**（重跑 `make_vbrief.py`），否则验收员照着旧视图判「修改未生效」。
+2. **改写会搬运撞点**：`near_dup` 清零后必再跑一次 `measure.py`；补丁的 `index`/`side` 要逐条核对
+   （`apply_patch.py` 的「1 基自动校正」曾把 `index=159 side=a` 移到 158，连带产生答非所问；补一个冠词后行也可能涨到 8 词，要再压回）。
+
+**034–043 这批的实测经验（与上一批的差别）**
+
+| 项 | 数值 | 说明 |
+|---|---|---|
+| 生成成功率 | 约 50%（2 分块/agent） | 50 对/agent 仍有约一半零产出；**1 个 slot = 2 个分块 = 恰好一整段**（第 i 段 → `pairs_(2i-1)`/`pairs_(2i)`），别把 slot 和「段的一半」搞混 |
+| 装配失败原因 | 11 次 | 全是 `cross_dup`（跨块重复句）与分块少 1–2 对；前者改「序号靠后」的那一句，后者让 agent **读出来再整份写回**补足 25 |
+| 机器可验证的三项遗留 | 长行 47 → **0**、near_dup 8 → **0**、首词峰值 → **≤19** | 用 `word_cap` / `near_dup` / 首词直方图量出来，再定点改；改完必须重跑 `audit_script.py` |
+| 内容层 error（验收员点名的） | 每篇 0–3 处 | 典型：同一篇两个半段设定不同（040 前半天「右肩」后半天「下背」）、宝宝性别/归属混用（042）、同一箱内容前后不一（032 上一批）、`Yes/No` 应答错配（038/043） |
+
+**本轮踩到的新坑（已固化）**
+
+1. **派单前必须重新生成文本视图**：我先改了 `script.json`、却忘了跑 `make_vbrief.py`，
+   结果验收员照着旧视图判「修改未生效」，白白来回两轮。**改稿与出视图要成对做**。
+2. **`apply_patch.py` 的「1 基自动校正」会误伤**：我写 `index=60, side=b` 而该行其实是 char_a，
+   它按 side 反推成 59 并把**上一行**改掉（连带产生答非所问）。**补丁的 index/side 必须逐条核对**。
+3. **并发写同一个分块文件会互相覆盖**：补块 agent 与生成 agent 同时写 `pairs_06.json` 时，
+   两者都在改同一文件（一个追加、一个整份重写）。**同一篇的分块同一时刻只允许一个写入者**。
+4. **`score` 口径要写在派单里**：有验收员自创「扣分制（0 = 满分）」，把 87 分写成 0 分。
+   派单必须写明「score 是 0–100、越高越好，四维各 0–25 且合计 = score」。

@@ -1,0 +1,2500 @@
+{
+  "title": "Everyday Phrases — A Physiotherapy Session",
+  "title_zh": "物理治療",
+  "scene_zh": "治療師 · 情境對話",
+  "title_quote": "Good morning. Do you have an appointment?",
+  "cefr": "A2",
+  "youtube_title": "【睡前英文聽力】🧑‍⚕️ 實用「物理治療」必備常用英文短句 ｜ 不用背！睡覺聽就會 ｜ 🌱A2 ｜ 💡400句循環聽 ｜ 零基礎也能開口說",
+  "youtube_title_en": "400 Everyday English Phrases While You Sleep — A Physiotherapy Session",
+  "youtube_description": "睡著學英文！這部影片收錄實用「物理治療」情境對話（每兩句成一組：男聲常速 ➡ 女聲慢速 ➡ 男女連貫）。場景是治療師：做物理治療：先跟治療師說哪裡痛、受傷的經過，做幾個評估動作找出痛點，熱敷與電療之後學幾個居家伸展，約好下次時間、拿了衛教單，叮嚀不要久坐。400 句循環聽，A2 程度，零基礎也能跟著開口說。#英文聽力 #睡前英文 #LearnEnglish",
+  "youtube_description_en": "Learn English while you sleep! This video features practical 'A Physiotherapy Session' phrase pairs (each pair: male normal speed → female slow speed → combined dialogue). A physiotherapy session: describing the pain, going through the assessment, heat and electrical therapy, learning home stretches, and booking the next appointment. 400 lines on repeat, A2 level.",
+  "thumb_badge": "不用背！",
+  "thumb_main": "睡覺聽",
+  "thumb_hook": "聽久自然開口說",
+  "lesson_type": "listening",
+  "structure": "sleep",
+  "topic": "A Physiotherapy Session",
+  "char_a_description": "male narrator voice",
+  "char_b_description": "female narrator voice",
+  "char_a_gender": "male",
+  "char_b_gender": "female",
+  "char_a_role": "narrator (male voice)",
+  "char_b_role": "narrator (female voice)",
+  "welcome_en": "",
+  "welcome_zh": "",
+  "story_hook": "",
+  "intro_zh": "",
+  "outro": "",
+  "outro_zh": "",
+  "practice_intro_en": "",
+  "practice_intro_zh": "",
+  "scene": "物理治療",
+  "thumbnail_expression": "",
+  "thumbnail_action": "",
+  "thumbnail_subtitle": "400句睡前英文",
+  "thumbnail_icons": [],
+  "channel_id": "",
+  "category": "Health",
+  "youtube_tags": [
+    "物理治療",
+    "A Physiotherapy Session",
+    "睡前英文聽力",
+    "英文聽力",
+    "睡前英文",
+    "400句循環聽",
+    "Sleep learning English",
+    "English listening practice",
+    "A2 English",
+    "ESL listening",
+    "English conversation",
+    "everyday English phrases",
+    "學英文 睡覺",
+    "物理治療 英文",
+    "a-physiotherapy-session-english"
+  ],
+  "dialogue": [
+    {
+      "speaker": "char_a",
+      "text": "Good morning. Do you have an appointment?",
+      "phonetic": "/gʊd ˈmɔrnɪŋ. du ju hæv ən əˈpɔɪntmənt?/",
+      "zh": "早安。你有預約嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, at three o'clock.",
+      "phonetic": "/jɛs, æt θri əˈklɑk./",
+      "zh": "有，約三點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please take a seat over there.",
+      "phonetic": "/pliz teɪk ə sit ˈoʊvɚ ðɛr./",
+      "zh": "請坐那邊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thank you. It is busy today.",
+      "phonetic": "/θæŋk ju. ɪt ɪz ˈbɪzi təˈdeɪ./",
+      "zh": "謝謝。今天人很多。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What brings you here today?",
+      "phonetic": "/wʌt brɪŋz ju hir təˈdeɪ?/",
+      "zh": "你今天為什麼來？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My right shoulder really hurts.",
+      "phonetic": "/maɪ raɪt ˈʃoʊldər ˈrɪəli hɜrts./",
+      "zh": "我的右肩很痛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which shoulder is the problem?",
+      "phonetic": "/wɪtʃ ˈʃoʊldər ɪz ðə ˈprɑbləm?/",
+      "zh": "是哪一邊肩膀有問題？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The right one, near my neck.",
+      "phonetic": "/ðə raɪt wʌn, nɪr maɪ nɛk./",
+      "zh": "右邊，靠近脖子的地方。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Would you lift your arm for me?",
+      "phonetic": "/wʊd juː lɪft jɔːr ɑːrm fɔːr miː?/",
+      "zh": "你可以為我把手臂抬起來嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I can lift it a little.",
+      "phonetic": "/aɪ kæn lɪft ɪt ə ˈlɪtəl./",
+      "zh": "我只能抬一點點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How did you hurt your shoulder?",
+      "phonetic": "/haʊ dɪd ju hɜrt jʊr ˈʃoʊldər?/",
+      "zh": "你的肩膀是怎麼受傷的？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I fell off my bike.",
+      "phonetic": "/aɪ fɛl ɔf maɪ baɪk./",
+      "zh": "我從腳踏車上摔下來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "When did the pain start?",
+      "phonetic": "/wɛn dɪd ðə pen stɑrt?/",
+      "zh": "疼痛是什麼時候開始的？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It started last Friday morning.",
+      "phonetic": "/ɪt ˈstɑrtɪd læst ˈfraɪdeɪ ˈmɔrnɪŋ./",
+      "zh": "上週五早上開始的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you go to a doctor?",
+      "phonetic": "/dɪd ju goʊ tu ə ˈdɑktər?/",
+      "zh": "你有去看醫生嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I saw one at the clinic.",
+      "phonetic": "/aɪ sɔ wʌn æt ðə ˈklɪnɪk./",
+      "zh": "我在診所看過一位。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What did the doctor tell you?",
+      "phonetic": "/wʌt dɪd ðə ˈdɑktər tɛl ju?/",
+      "zh": "醫生跟你說了什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Nothing is broken, she said.",
+      "phonetic": "/ˈnʌθɪŋ ɪz ˈbroʊkən, ʃi sɛd./",
+      "zh": "她說骨頭沒有斷。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "So she sent you to therapy?",
+      "phonetic": "/soʊ ʃi sɛnt ju tu ˈθɛrəpi?/",
+      "zh": "所以她要你來做治療？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, she gave me a note.",
+      "phonetic": "/jɛs, ʃi ɡeɪv mi ə noʊt./",
+      "zh": "對，她給了我一張單子。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now show me where it hurts.",
+      "phonetic": "/naʊ ʃoʊ mi wɛr ɪt hɜrts./",
+      "zh": "現在指出哪裡痛。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It hurts right here.",
+      "phonetic": "/ɪt hɜrts raɪt hir./",
+      "zh": "就是這裡痛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does it hurt when you move?",
+      "phonetic": "/dʌz ɪt hɜrt wɛn ju muv?/",
+      "zh": "你動的時候會痛嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it hurts a lot.",
+      "phonetic": "/jɛs, ɪt hɜrts ə lɑt./",
+      "zh": "會，痛得厲害。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How long has it been sore?",
+      "phonetic": "/haʊ lɔŋ hæz ɪt bɪn sɔr?/",
+      "zh": "痛多久了？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It has been sore three days.",
+      "phonetic": "/ɪt hæz bɪn sɔr θri deɪz./",
+      "zh": "已經痛三天了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Were you lifting anything heavy?",
+      "phonetic": "/wɝ ju ˈlɪftɪŋ ˈɛniˌθɪŋ ˈhɛvi?/",
+      "zh": "你當時在搬重物嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I was moving some furniture.",
+      "phonetic": "/aɪ wʌz ˈmuvɪŋ sʌm ˈfɝnɪtʃɚ./",
+      "zh": "我那時在搬傢俱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you feel tingling in your fingers?",
+      "phonetic": "/du ju fil ˈtɪŋɡəlɪŋ ɪn jʊr ˈfɪŋɡɚz?/",
+      "zh": "你的手指會發麻嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, just a dull ache.",
+      "phonetic": "/noʊ, dʒʌst ə dʌl eɪk./",
+      "zh": "不會，只有鈍鈍的痠痛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is your neck also stiff?",
+      "phonetic": "/ɪz jʊr nɛk ˈɔlsoʊ stɪf?/",
+      "zh": "你的脖子也僵硬嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, I cannot turn it left.",
+      "phonetic": "/jɛs, aɪ ˈkɑnɑt tɜrn ɪt lɛft./",
+      "zh": "會，我沒辦法往左轉。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you fall on your arm?",
+      "phonetic": "/dɪd ju fɔl ɔn jʊr ɑrm?/",
+      "zh": "你是摔到手臂嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That time I landed on my elbow.",
+      "phonetic": "/ðæt taɪm aɪ ˈlændɪd ɔn maɪ ˈɛlboʊ./",
+      "zh": "那次我是手肘著地。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Have you had this pain before?",
+      "phonetic": "/hæv ju hæd ðɪs pen bɪˈfɔr?/",
+      "zh": "你以前有過這種痛嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, this is my first time.",
+      "phonetic": "/noʊ, ðɪs ɪz maɪ fɜrst taɪm./",
+      "zh": "沒有，這是第一次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are you taking any medications now?",
+      "phonetic": "/ɑr ju ˈteɪkɪŋ ˈɛni ˌmɛdɪˈkeʃənz naʊ?/",
+      "zh": "你現在有吃藥嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only vitamins for my health.",
+      "phonetic": "/ˈoʊnli ˈvaɪtəmɪnz fɚ maɪ hɛlθ./",
+      "zh": "只有吃保健的維他命。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How well do you sleep these days?",
+      "phonetic": "/haʊ wɛl du ju slip ðiz deɪz?/",
+      "zh": "你最近睡得好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The pain wakes me up.",
+      "phonetic": "/ðə pen weɪks mi ʌp./",
+      "zh": "疼痛會把我痛醒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you sit at a desk?",
+      "phonetic": "/du ju sɪt æt ə dɛsk?/",
+      "zh": "你坐辦公桌工作嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mostly I sit at a computer.",
+      "phonetic": "/ˈmoʊstli aɪ sɪt æt ə kəmˈpjutɚ./",
+      "zh": "我大多坐在電腦前。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Any other injuries in the past?",
+      "phonetic": "/ˈɛni ˈʌðɚ ˈɪndʒɚiz ɪn ðə pæst?/",
+      "zh": "以前還有別的傷嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Years ago I broke my wrist.",
+      "phonetic": "/jɪrz əˈgoʊ aɪ broʊk maɪ rɪst./",
+      "zh": "幾年前我手腕骨折過。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the shoulder worse in the morning?",
+      "phonetic": "/ɪz ðə ˈʃoʊldər wɜrs ɪn ðə ˈmɔrnɪŋ?/",
+      "zh": "肩膀早上會更痛嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Right, it is very stiff then.",
+      "phonetic": "/raɪt, ɪt ɪz ˈvɛri stɪf ðɛn./",
+      "zh": "對，那時非常僵硬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the pain travel down your arm?",
+      "phonetic": "/dʌz ðə pen ˈtrævəl daʊn jʊr ɑrm?/",
+      "zh": "疼痛會往手臂下方延伸嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sometimes it reaches my elbow.",
+      "phonetic": "/ˈsʌmˌtaɪmz ɪt ˈritʃɪz maɪ ˈɛlboʊ./",
+      "zh": "有時候會到我的手肘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thank you. I know enough for now.",
+      "phonetic": "/θæŋk ju. aɪ noʊ ɪˈnʌf fɚ naʊ./",
+      "zh": "謝謝你。我現在了解得夠多了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Okay, we can start the assessment.",
+      "phonetic": "/oʊˈkeɪ, wi kæn stɑrt ði əˈsɛsmənt./",
+      "zh": "好，我們可以開始評估了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "May I see your referral note?",
+      "phonetic": "/meɪ aɪ si jʊr rɪˈfɝəl noʊt?/",
+      "zh": "我可以看一下你的轉診單嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here it is, all signed.",
+      "phonetic": "/hir ɪt ɪz, ɔl saɪnd./",
+      "zh": "在這裡，都簽好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you have your insurance card?",
+      "phonetic": "/du ju hæv jʊr ɪnˈʃʊrəns kɑrd?/",
+      "zh": "你有帶健保卡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is inside my wallet.",
+      "phonetic": "/ɪt ɪz ɪnˈsaɪd maɪ ˈwɑlɪt./",
+      "zh": "在我的皮夾裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Could you point to the exact spot?",
+      "phonetic": "/kʊd juː pɔɪnt tuː ði ɪɡˈzækt spɑːt?/",
+      "zh": "你可以指出確切的位置嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just under this bone here.",
+      "phonetic": "/dʒʌst ˈʌndɚ ðɪs boʊn hir./",
+      "zh": "就在這塊骨頭下面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How would you describe the pain?",
+      "phonetic": "/haʊ wʊd ju dɪˈskraɪb ðə pen?/",
+      "zh": "你會怎麼形容這種痛？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sharp and hot, like fire.",
+      "phonetic": "/ʃɑrp ænd hɑt, laɪk ˈfaɪɚ./",
+      "zh": "又刺又熱，像火燒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does it hurt when you press it?",
+      "phonetic": "/dʌz ɪt hɜrt wɛn ju prɛs ɪt?/",
+      "zh": "按下去會痛嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That hurts, so press gently.",
+      "phonetic": "/ðæt hɜrts, soʊ prɛs ˈdʒɛntli./",
+      "zh": "會痛，請輕一點壓。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the pain constant or not?",
+      "phonetic": "/ɪz ðə pen ˈkɑnstənt ɔr nɑt?/",
+      "zh": "這個痛是持續的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Comes and goes all day long.",
+      "phonetic": "/kʌmz ænd goʊz ɔl deɪ lɔŋ./",
+      "zh": "整天時好時壞。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What makes the pain feel better?",
+      "phonetic": "/wʌt meɪks ðə pen fil ˈbɛtər?/",
+      "zh": "怎樣會讓疼痛好一點？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Rest and a warm shower help.",
+      "phonetic": "/rɛst ænd ə wɔrm ˈʃaʊər hɛlp./",
+      "zh": "休息和沖熱水有幫助。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What makes it worse?",
+      "phonetic": "/wʌt meɪks ɪt wɜrs?/",
+      "zh": "什麼情況會更痛？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Reaching up makes it much worse.",
+      "phonetic": "/ˈritʃɪŋ ʌp meɪks ɪt mʌtʃ wɜrs./",
+      "zh": "手往上伸會痛很多。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Were you alone when you fell?",
+      "phonetic": "/wɝ ju əˈloʊn wɛn ju fɛl?/",
+      "zh": "你跌倒時一個人在嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, my friend was with me.",
+      "phonetic": "/noʊ, maɪ frɛnd wʌz wɪð mi./",
+      "zh": "不是，我朋友在旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you hit your head?",
+      "phonetic": "/dɪd ju hɪt jʊr hɛd?/",
+      "zh": "你有撞到頭嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, nothing hit my head.",
+      "phonetic": "/noʊ, ˈnʌθɪŋ hɪt maɪ hɛd./",
+      "zh": "沒有，頭沒撞到。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did you lose consciousness then?",
+      "phonetic": "/dɪd ju luz kənˈʃəsnəs ðɛn?/",
+      "zh": "你當時有失去意識嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Never, I stayed awake the whole time.",
+      "phonetic": "/ˈnɛvɚ, aɪ steɪd əˈweɪk ðə hoʊl taɪm./",
+      "zh": "沒有，我全程都醒著。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which hand do you write with?",
+      "phonetic": "/wɪtʃ hænd du ju raɪt wɪð?/",
+      "zh": "你用哪隻手寫字？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mostly my right hand these days.",
+      "phonetic": "/ˈmoʊstli maɪ raɪt hænd ðiz deɪz./",
+      "zh": "現在大多用右手。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are you playing any sports now?",
+      "phonetic": "/ɑr ju ˈpleɪɪŋ ˈɛni spɔrts naʊ?/",
+      "zh": "你現在有在做運動嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Swimming twice a week, usually.",
+      "phonetic": "/ˈswɪmɪŋ twaɪs ə wik, ˈjuʒuəli./",
+      "zh": "通常一週游泳兩次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Has your sleep changed since the fall?",
+      "phonetic": "/hæz jʊr slip tʃeɪndʒd sɪns ðə fɔl?/",
+      "zh": "跌倒之後睡眠有改變嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sleep is broken most nights.",
+      "phonetic": "/slip ɪz ˈbroʊkən moʊst naɪts./",
+      "zh": "大部分晚上都睡不好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Any numbness in your fingers now?",
+      "phonetic": "/ˈɛni ˈnʌmnəs ɪn jʊr ˈfɪŋɡɚz naʊ?/",
+      "zh": "現在手指有麻的感覺嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only sore muscles, no numbness.",
+      "phonetic": "/ˈoʊnli sɔr ˈmʌsəlz, noʊ ˈnʌmnəs./",
+      "zh": "只有肌肉痠，沒有麻。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Would you tell me about the accident?",
+      "phonetic": "/wʊd juː tɛl miː əˈbaʊt ði ˈæksɪdənt?/",
+      "zh": "可以跟我說說發生的經過嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I fell off my bike at noon.",
+      "phonetic": "/aɪ fɛl ɔf maɪ baɪk æt nun/",
+      "zh": "我中午從腳踏車摔下來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "When did the pain start hurting?",
+      "phonetic": "/wɛn dɪd ðə pen stɑrt ˈhɝtɪŋ?/",
+      "zh": "疼痛是什麼時候開始痛的？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The next morning it started.",
+      "phonetic": "/ðə nɛkst ˈmɔrnɪŋ ɪt ˈstɑrtɪd./",
+      "zh": "隔天早上才開始。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the pain bad today?",
+      "phonetic": "/ɪz ðə pen bæd təˈdeɪ?/",
+      "zh": "今天痛得厲害嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Today it is a little better.",
+      "phonetic": "/təˈdeɪ ɪt ɪz ə ˈlɪtəl ˈbɛtər./",
+      "zh": "今天稍微好一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How bad is it on a scale?",
+      "phonetic": "/haʊ bæd ɪz ɪt ɑːn ə skeɪl?/",
+      "zh": "如果用分數算，痛的程度是多少？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Maybe six out of ten.",
+      "phonetic": "/ˈmeɪbi sɪks aʊt əv tɛn./",
+      "zh": "大概十分裡的六分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Was the fall long ago?",
+      "phonetic": "/wʌz ðə fɔl lɔŋ əˈgoʊ?/",
+      "zh": "跌倒已經很久了嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It started last Friday, I think.",
+      "phonetic": "/ɪt ˈstɑrtɪd læst ˈfraɪdeɪ aɪ θɪŋk/",
+      "zh": "我想是上週五開始的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Have you put ice on it?",
+      "phonetic": "/hæv ju pʊt aɪs ɔn ɪt?/",
+      "zh": "你有冰敷過嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ice helped for a short while.",
+      "phonetic": "/aɪs hɛlpt fɚ ə ʃɔrt waɪl./",
+      "zh": "冰敷有短暫舒服一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you dress yourself easily?",
+      "phonetic": "/duː juː drɛs jʊrˈsɛlf ˈiːzəli?/",
+      "zh": "你自己穿衣服方便嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Shirts are difficult now, yes.",
+      "phonetic": "/ʃɝts ɑr ˈdɪfɪkəlt naʊ, jɛs./",
+      "zh": "現在穿襯衫很困難。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are you sleeping on that side?",
+      "phonetic": "/ɑr ju ˈslipɪŋ ɔn ðæt saɪd?/",
+      "zh": "你睡在那側嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, I sleep on my back.",
+      "phonetic": "/noʊ aɪ slip ɑn maɪ bæk/",
+      "zh": "不會，我仰睡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does a heavy bag bother you?",
+      "phonetic": "/dʌz ə ˈhɛvi bæg ˈbɑðɚ ju?/",
+      "zh": "背重袋子會不舒服嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My laptop bag is heavy, yes.",
+      "phonetic": "/maɪ ˈlæpˌtɑp bæg ɪz ˈhɛvi, jɛs./",
+      "zh": "我的電腦包很重，會。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Alright. Let me note all this down.",
+      "phonetic": "/ɔlˈraɪt. lɛt mi noʊt ɔl ðɪs daʊn./",
+      "zh": "好，我把這些都記下來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Okay, take your time, please.",
+      "phonetic": "/oʊˈkeɪ, teɪk jʊr taɪm, pliz./",
+      "zh": "好，請慢慢來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Could you raise your right arm?",
+      "phonetic": "/kʊd juː reɪz jɔːr raɪt ɑːrm?/",
+      "zh": "你可以抬起右手嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, but it feels stiff.",
+      "phonetic": "/jɛs bʌt ɪt filz stɪf/",
+      "zh": "可以，但覺得很僵硬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now move your arm to the side.",
+      "phonetic": "/naʊ muv jʊr ɑrm tu ðə saɪd./",
+      "zh": "現在把手臂移到側邊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It hurts when I go sideways.",
+      "phonetic": "/ɪt hɜrts wɛn aɪ ɡoʊ ˈsaɪdweɪz./",
+      "zh": "往側邊就痛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does it hurt near the shoulder?",
+      "phonetic": "/dʌz ɪt hɜrt nɪr ðə ˈʃoʊldər?/",
+      "zh": "靠近肩膀的地方痛嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, the pain is right there.",
+      "phonetic": "/jɛs ðə peɪn ɪz raɪt ðɛr./",
+      "zh": "對，痛點就在那裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please turn your arm slowly.",
+      "phonetic": "/pliz tɜrn jʊr ɑrm ˈsloʊli./",
+      "zh": "請慢慢轉動手臂。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Turning is harder than lifting.",
+      "phonetic": "/ˈtɜrnɪŋ ɪz ˈhɑrdər ðæn ˈlɪftɪŋ./",
+      "zh": "轉動比抬起來更難。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Would you touch your other shoulder?",
+      "phonetic": "/wʊd juː tʌtʃ jɔːr ˈʌðər ˈʃoʊldər?/",
+      "zh": "你可以摸到另一邊肩膀嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I can only reach halfway.",
+      "phonetic": "/aɪ kæn ˈoʊnli ritʃ ˈhæfˌweɪ./",
+      "zh": "我只能伸到一半。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which movement hurts the most?",
+      "phonetic": "/wɪtʃ ˈmuvmənt hɜrts ðə moʊst?/",
+      "zh": "哪個動作最痛？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lifting my arm above my head.",
+      "phonetic": "/ˈlɪftɪŋ maɪ ɑrm əˈbʌv maɪ hɛd./",
+      "zh": "把手抬到頭上。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let me press here gently.",
+      "phonetic": "/lɛt mi prɛs hɪr ˈdʒɛntli./",
+      "zh": "我輕輕按這裡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That spot is very tender.",
+      "phonetic": "/ðæt spɑt ɪz ˈvɛri ˈtɛndər./",
+      "zh": "那個點很壓痛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How strong is the pain now?",
+      "phonetic": "/haʊ strɔŋ ɪz ðə peɪn naʊ?/",
+      "zh": "現在痛得多厲害？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is about a five today.",
+      "phonetic": "/ɪt ɪz əˈbaʊt ə faɪv təˈdeɪ./",
+      "zh": "今天大概五分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does this press feel sharp?",
+      "phonetic": "/dʌz ðɪs prɛs fil ʃɑrp?/",
+      "zh": "這樣按感覺刺痛嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, it feels more like pressure.",
+      "phonetic": "/noʊ ɪt filz mɔr laɪk ˈprɛʃər./",
+      "zh": "不會，比較像壓迫感。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will you lift your arm forward?",
+      "phonetic": "/wɪl juː lɪft jɔːr ɑːrm ˈfɔːrwərd?/",
+      "zh": "你可以往前抬起手臂嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, just a little.",
+      "phonetic": "/jɛs dʒʌst ə ˈlɪtəl/",
+      "zh": "可以，只有一點點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Tell me when it starts hurting.",
+      "phonetic": "/tɛl mi wɛn ɪt stɑrts ˈhɜrtɪŋ./",
+      "zh": "開始痛的時候告訴我。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It hurts right about there.",
+      "phonetic": "/ɪt hɜrts raɪt əˈbaʊt ðɛr./",
+      "zh": "差不多就在那裡痛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is the pain exactly?",
+      "phonetic": "/wɛr ɪz ðə peɪn ɪɡˈzæktli?/",
+      "zh": "痛的位置到底在哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Just under the bony part.",
+      "phonetic": "/dʒʌst ˈʌndər ðə ˈboʊni pɑrt./",
+      "zh": "就在骨頭突起下面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the pain deep or shallow?",
+      "phonetic": "/ɪz ðə peɪn dip ɔr ˈʃæloʊ?/",
+      "zh": "痛是深的還是淺的？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It feels quite deep inside.",
+      "phonetic": "/ɪt filz kwaɪt dip ɪnˈsaɪd./",
+      "zh": "感覺在裡面滿深的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Try to relax your shoulder.",
+      "phonetic": "/traɪ tu rɪˈlæks jʊr ˈʃoʊldər./",
+      "zh": "試著放鬆你的肩膀。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I am trying to relax it.",
+      "phonetic": "/aɪ æm ˈtraɪɪŋ tu rɪˈlæks ɪt./",
+      "zh": "我正在試著放鬆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you feel this small tap?",
+      "phonetic": "/duː juː fiːl ðɪs smɔːl tæp?/",
+      "zh": "你感覺得到這輕敲嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, I feel it clearly.",
+      "phonetic": "/jɛs aɪ fil ɪt ˈklɪrli./",
+      "zh": "有，我感覺很清楚。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please push your arm against me.",
+      "phonetic": "/pliz pʊʃ jʊr ɑrm əˈɡɛnst mi./",
+      "zh": "請把手臂往我這邊推。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pushing does not hurt at all.",
+      "phonetic": "/ˈpʊʃɪŋ dʌz nɑt hɜrt æt ɔl./",
+      "zh": "推的時候完全不痛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now pull your arm back gently.",
+      "phonetic": "/naʊ pʊl jʊr ɑrm bæk ˈdʒɛntli./",
+      "zh": "現在輕輕把手臂拉回來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pulling is a little uncomfortable.",
+      "phonetic": "/ˈpʊlɪŋ ɪz ə ˈlɪtəl ʌnˈkʌmfərtəbəl./",
+      "zh": "拉的時候有點不舒服。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which angle is the worst?",
+      "phonetic": "/wɪtʃ ˈæŋɡəl ɪz ðə wɜrst?/",
+      "zh": "哪個角度最難受？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "When my arm goes straight up.",
+      "phonetic": "/wɛn maɪ ɑrm ɡoʊz streɪt ʌp./",
+      "zh": "手臂直直往上的時候。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does that angle always hurt?",
+      "phonetic": "/dʌz ðæt ˈæŋɡəl ˈɔlweɪz hɜrt?/",
+      "zh": "那個角度每次都痛嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only when I lift it high.",
+      "phonetic": "/ˈoʊnli wɛn aɪ lɪft ɪt haɪ./",
+      "zh": "只有抬很高的時候。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How far can you lift it?",
+      "phonetic": "/haʊ fɑr kæn ju lɪft ɪt?/",
+      "zh": "你可以抬多高？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Only up to my shoulder.",
+      "phonetic": "/ˈoʊnli ʌp tu maɪ ˈʃoʊldər./",
+      "zh": "只到肩膀的高度。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let me check the other side.",
+      "phonetic": "/lɛt mi tʃɛk ði ˈʌðər saɪd./",
+      "zh": "我檢查另一邊。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The left side feels fine.",
+      "phonetic": "/ðə lɛft saɪd filz faɪn./",
+      "zh": "左邊感覺沒問題。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Could you shrug your shoulders?",
+      "phonetic": "/kʊd juː ʃrʌɡ jɔːr ˈʃoʊldərz?/",
+      "zh": "你可以聳肩嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Shrugging hurts a little bit.",
+      "phonetic": "/ˈʃrʌɡɪŋ hɜrts ə ˈlɪtəl bɪt./",
+      "zh": "聳肩會有一點痛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does it hurt when you breathe?",
+      "phonetic": "/dʌz ɪt hɜrt wɛn ju brið?/",
+      "zh": "呼吸的時候會痛嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, breathing is completely fine.",
+      "phonetic": "/noʊ ˈbriðɪŋ ɪz kəmˈplitli faɪn./",
+      "zh": "不會，呼吸完全沒問題。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now relax and let me press.",
+      "phonetic": "/naʊ rɪˈlæks ænd lɛt mi prɛs./",
+      "zh": "現在放鬆，讓我按一下。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Okay, I am ready now.",
+      "phonetic": "/oʊˈkeɪ aɪ æm ˈrɛdi naʊ./",
+      "zh": "好，我準備好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Did that press hurt you?",
+      "phonetic": "/dɪd ðæt prɛs hɜrt ju?/",
+      "zh": "這樣按會痛嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, that one was sharp.",
+      "phonetic": "/jɛs ðæt wʌn wʌz ʃɑrp./",
+      "zh": "會，那一下很刺痛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will you show me that angle again?",
+      "phonetic": "/wɪl juː ʃoʊ miː ðæt ˈæŋɡəl əˈɡɛn?/",
+      "zh": "可以再做一次那個角度嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it hurts right here.",
+      "phonetic": "/jɛs ɪt hɜrts raɪt hɪr./",
+      "zh": "可以，就是這裡痛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which direction is the hardest?",
+      "phonetic": "/wɪtʃ dəˈrɛkʃən ɪz ðə ˈhɑrdəst?/",
+      "zh": "哪個方向最困難？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Lifting my arm straight up.",
+      "phonetic": "/ˈlɪftɪŋ maɪ ɑrm streɪt ʌp./",
+      "zh": "把手臂直直往上抬。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How high can you go today?",
+      "phonetic": "/haʊ haɪ kæn ju ɡoʊ təˈdeɪ?/",
+      "zh": "今天你可以抬多高？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A little past my shoulder.",
+      "phonetic": "/ə ˈlɪtəl pæst maɪ ˈʃoʊldər/",
+      "zh": "可以超過肩膀一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does it stop you at one point?",
+      "phonetic": "/dʌz ɪt stɑp ju æt wʌn pɔɪnt?/",
+      "zh": "會在某個點卡住嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, something blocks the way.",
+      "phonetic": "/jɛs ˈsʌmθɪŋ blɑks ðə weɪ./",
+      "zh": "會，好像有東西擋住。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please hold your arm right there.",
+      "phonetic": "/pliz hoʊld jʊr ɑrm raɪt ðɛr./",
+      "zh": "請把手固定在這裡。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Holding it here is painful.",
+      "phonetic": "/ˈhoʊldɪŋ ɪt hɪr ɪz ˈpeɪnfəl./",
+      "zh": "固定在這裡很痛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the pain sharp or dull?",
+      "phonetic": "/ɪz ðə peɪn ʃɑrp ɔr dʌl?/",
+      "zh": "痛是刺痛還是鈍痛？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is sharp at that angle.",
+      "phonetic": "/ɪt ɪz ʃɑrp æt ðæt ˈæŋɡəl./",
+      "zh": "那個角度是刺痛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does rest make it better?",
+      "phonetic": "/dʌz rɛst meɪk ɪt ˈbɛtər?/",
+      "zh": "休息會好一點嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, resting helps a little.",
+      "phonetic": "/jɛs ˈrɛstɪŋ hɛlps ə ˈlɪtəl./",
+      "zh": "會，休息有幫助一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will you rotate your arm inward?",
+      "phonetic": "/wɪl juː ˈroʊteɪt jɔːr ɑːrm ˈɪnwərd?/",
+      "zh": "你可以把手往內轉嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Inward is easier than outward.",
+      "phonetic": "/ˈɪnwərd ɪz ˈiziər ðæn ˈaʊtwərd./",
+      "zh": "往內比往外容易。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now rotate it outward slowly.",
+      "phonetic": "/naʊ ˈroʊteɪt ɪt ˈaʊtwərd ˈsloʊli./",
+      "zh": "現在慢慢往外轉。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Outward brings a sharp pain.",
+      "phonetic": "/ˈaʊtwərd brɪŋz ə ʃɑrp peɪn./",
+      "zh": "往外轉會刺痛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which motion should we avoid?",
+      "phonetic": "/wɪtʃ ˈmoʊʃən ʃʊd wi əˈvɔɪd?/",
+      "zh": "哪個動作要避免？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Avoid lifting your arm overhead.",
+      "phonetic": "/əˈvɔɪd ˈlɪftɪŋ jʊr ɑrm ˌoʊvərˈhɛd./",
+      "zh": "避免把手舉過頭。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let me test your strength now.",
+      "phonetic": "/lɛt mi tɛst jʊr strɛŋθ naʊ./",
+      "zh": "我現在測一下你的力氣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My arm feels weak today.",
+      "phonetic": "/maɪ ɑrm filz wik təˈdeɪ./",
+      "zh": "我的手臂今天沒力。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Push against my hand here.",
+      "phonetic": "/pʊʃ əˈɡɛnst maɪ hænd hɪr./",
+      "zh": "往我手上推。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That push feels a bit weak.",
+      "phonetic": "/ðæt pʊʃ filz ə bɪt wik./",
+      "zh": "推的力量有點弱。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the weakness new for you?",
+      "phonetic": "/ɪz ðə ˈwiknəs nu fɔr ju?/",
+      "zh": "無力是最近才有的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It started a few days ago.",
+      "phonetic": "/ɪt ˈstɑrtɪd ə fju deɪz əˈɡoʊ/",
+      "zh": "幾前天開始的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the pain wake you at night?",
+      "phonetic": "/dʌz ðə peɪn weɪk ju æt naɪt?/",
+      "zh": "痛會讓你在夜裡醒來嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sometimes it wakes me up.",
+      "phonetic": "/ˈsʌmˌtaɪmz ɪt weɪks mi ʌp./",
+      "zh": "有時候會把我痛醒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Just lie down on the table.",
+      "phonetic": "/dʒʌst laɪ daʊn ɑːn ðə ˈteɪbəl./",
+      "zh": "直接躺在治療床上就好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, I can lie down.",
+      "phonetic": "/jɛs aɪ kæn laɪ daʊn./",
+      "zh": "可以，我能躺下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now lift your arm off the table.",
+      "phonetic": "/naʊ lɪft jʊr ɑrm ɔf ðə ˈteɪbəl./",
+      "zh": "現在把手抬離床面。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That angle hurts very much.",
+      "phonetic": "/ðæt ˈæŋɡəl hɜrts ˈvɛri mʌtʃ./",
+      "zh": "那個角度非常痛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where does it hurt the most?",
+      "phonetic": "/wɛr dʌz ɪt hɜrt ðə moʊst?/",
+      "zh": "哪裡最痛？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Right at the top of my shoulder.",
+      "phonetic": "/raɪt æt ðə tɑp əv maɪ ˈʃoʊldər./",
+      "zh": "就在肩膀最上面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the pain go down your arm?",
+      "phonetic": "/dʌz ðə peɪn ɡoʊ daʊn jʊr ɑrm?/",
+      "zh": "疼痛會往下延伸到手臂嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, sometimes it does.",
+      "phonetic": "/jɛs ˈsʌmˌtaɪmz ɪt dʌz/",
+      "zh": "會，有時候會。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you feel my fingers here?",
+      "phonetic": "/duː juː fiːl maɪ ˈfɪŋɡərz hɪr?/",
+      "zh": "你感覺得到我的手指在這裡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, your touch is very light.",
+      "phonetic": "/jɛs jʊr tʌtʃ ɪz ˈvɛri laɪt./",
+      "zh": "有，你的觸碰很輕。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Tell me if this is too much.",
+      "phonetic": "/tɛl mi ɪf ðɪs ɪz tu mʌtʃ./",
+      "zh": "如果太痛就告訴我。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is fine, please continue.",
+      "phonetic": "/ɪt ɪz faɪn pliz kənˈtɪnju./",
+      "zh": "還好，請繼續。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now press your arm down slowly.",
+      "phonetic": "/naʊ prɛs jʊr ɑrm daʊn ˈsloʊli./",
+      "zh": "現在慢慢把手壓下。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pressing down is not painful.",
+      "phonetic": "/ˈprɛsɪŋ daʊn ɪz nɑt ˈpeɪnfəl./",
+      "zh": "往下壓不會痛。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which angle should I write down?",
+      "phonetic": "/wɪtʃ ˈæŋɡəl ʃʊd aɪ raɪt daʊn?/",
+      "zh": "我該記下哪個角度？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Write down the straight upward one.",
+      "phonetic": "/raɪt daʊn ðə streɪt ˈʌpwərd wʌn./",
+      "zh": "記下直直往上那個。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does it hurt more in the morning?",
+      "phonetic": "/dʌz ɪt hɜrt mɔr ɪn ðə ˈmɔrnɪŋ?/",
+      "zh": "早上會更痛嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, mornings are the worst.",
+      "phonetic": "/jɛs ˈmɔrnɪŋz ɑr ðə wɜrst./",
+      "zh": "會，早上最嚴重。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the pain better after moving?",
+      "phonetic": "/ɪz ðə peɪn ˈbɛtər ˈæftər ˈmuvɪŋ?/",
+      "zh": "活動之後會好一點嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "A little, after moving around.",
+      "phonetic": "/ə ˈlɪtəl ˈæftər ˈmuvɪŋ əˈraʊnd./",
+      "zh": "動一動之後會好一點。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you want to stop here?",
+      "phonetic": "/du ju wɑnt tu stɑp hɪr?/",
+      "zh": "你想在這裡停一下嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, that angle is enough.",
+      "phonetic": "/jɛs ðæt ˈæŋɡəl ɪz ɪˈnʌf./",
+      "zh": "好，那個角度測夠了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the heat pack warm enough?",
+      "phonetic": "/ɪz ðə hit pæk wɔrm ɪˈnʌf?/",
+      "zh": "熱敷包夠暖嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it feels nice and warm.",
+      "phonetic": "/jɛs ɪt filz naɪs ænd wɔrm./",
+      "zh": "夠，感覺很溫暖舒服。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Are you comfortable with the heat pack?",
+      "phonetic": "/ɑr ju ˈkʌmfərtəbəl wɪð ðə hit pæk?/",
+      "zh": "熱敷包這樣舒服嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, it feels very relaxing.",
+      "phonetic": "/jɛs ɪt filz ˈvɛri rɪˈlæksɪŋ./",
+      "zh": "舒服，感覺很放鬆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How long should the heat stay on?",
+      "phonetic": "/haʊ lɔŋ ʃʊd ðə hit steɪ ɔn?/",
+      "zh": "熱敷要敷多久？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep it on for twenty minutes.",
+      "phonetic": "/kip ɪt ɔn fɔr ˈtwɛnti ˈmɪnɪts./",
+      "zh": "敷二十分鐘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where do you feel the heat most?",
+      "phonetic": "/wɛr du ju fil ðə hit moʊst?/",
+      "zh": "你哪裡感覺最熱？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Mostly around my shoulder.",
+      "phonetic": "/ˈmoʊstli əˈraʊnd maɪ ˈʃoʊldər/",
+      "zh": "主要是肩膀周圍。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Why is the towel under the pack?",
+      "phonetic": "/waɪ ɪz ðə ˈtaʊəl ˈʌndər ðə pæk?/",
+      "zh": "為什麼熱敷包下面要墊毛巾？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The towel protects your bare skin.",
+      "phonetic": "/ðə ˈtaʊəl prəˈtɛkts jʊr bɛr skɪn./",
+      "zh": "毛巾是保護你的皮膚。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Take a deep breath and relax.",
+      "phonetic": "/teɪk ə dip brɛθ ænd rɪˈlæks./",
+      "zh": "深呼吸，放鬆。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That feels better already, thank you.",
+      "phonetic": "/ðæt filz ˈbɛtər ɔlˈrɛdi, θæŋk ju./",
+      "zh": "已經感覺好多了，謝謝。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "May I move my arm a little?",
+      "phonetic": "/meɪ aɪ muv maɪ ɑrm ə ˈlɪtəl/",
+      "zh": "我可以稍微動一下手臂嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, but keep it very still.",
+      "phonetic": "/jɛs bʌt kip ɪt ˈvɛri stɪl/",
+      "zh": "可以，但盡量保持不動。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the heat too strong for you?",
+      "phonetic": "/ɪz ðə hit tu strɔŋ fɔr ju?/",
+      "zh": "熱度對你來說太強嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, the warmth feels just right.",
+      "phonetic": "/noʊ ðə wɔrmθ filz dʒʌst raɪt./",
+      "zh": "不會，這溫度剛剛好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The timer will ring very soon.",
+      "phonetic": "/ðə ˈtaɪmər wɪl rɪŋ ˈvɛri sun./",
+      "zh": "計時器快要響了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will wait for the timer.",
+      "phonetic": "/aɪ wɪl weɪt fɔr ðə ˈtaɪmər./",
+      "zh": "我會等計時器響。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now let us begin the electrical treatment.",
+      "phonetic": "/naʊ lɛt ʌs bɪˈɡɪn ði ɪˈlɛktrɪkəl ˈtritmənt./",
+      "zh": "現在開始電療。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Okay, I am ready for that.",
+      "phonetic": "/oʊˈkeɪ aɪ æm ˈrɛdi fɔr ðæt./",
+      "zh": "好，我準備好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Have you had a TENS unit before?",
+      "phonetic": "/hæv ju hæd ə tɛnz ˈjunɪt bɪˈfɔr?/",
+      "zh": "你以前用過電療機嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, I have never had this.",
+      "phonetic": "/noʊ aɪ hæv ˈnɛvər hæd ðɪs/",
+      "zh": "沒有，我從沒這樣過。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the pulsing feel strange to you?",
+      "phonetic": "/dʌz ðə ˈpʌlsɪŋ fil streɪndʒ tu ju?/",
+      "zh": "這種跳動感覺得奇怪嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It feels like tiny gentle taps.",
+      "phonetic": "/ɪt filz laɪk ˈtaɪni ˈdʒɛntəl tæps./",
+      "zh": "感覺像輕輕的小拍打。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where should I place these sticky pads?",
+      "phonetic": "/wɛr ʃʊd aɪ pleɪs ðiz ˈstɪki pædz?/",
+      "zh": "這些貼片要貼在哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Right here, beside your sore muscle.",
+      "phonetic": "/raɪt hɪr bɪˈsaɪd jʊr sɔr ˈmʌsəl./",
+      "zh": "就貼在這裡，痠痛肌肉旁邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How strong should the current be?",
+      "phonetic": "/haʊ strɔŋ ʃʊd ðə ˈkɜrənt bi?/",
+      "zh": "電流要開多強？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Strong enough to feel a tingle.",
+      "phonetic": "/strɔŋ ɪˈnʌf tu fil ə ˈtɪŋɡəl./",
+      "zh": "強到有一點刺刺的感覺。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now I will slowly increase the level.",
+      "phonetic": "/naʊ aɪ wɪl ˈsloʊli ɪnˈkris ðə ˈlɛvəl./",
+      "zh": "現在我慢慢調高強度。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That is fine with me.",
+      "phonetic": "/ðæt ɪz faɪn wɪð mi./",
+      "zh": "這樣我可以。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Am I allowed to move my arm?",
+      "phonetic": "/æm aɪ əˈlaʊd tu muv maɪ ɑrm/",
+      "zh": "我可以動我的手臂嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, but try to stay relaxed.",
+      "phonetic": "/jɛs bʌt traɪ tu steɪ rɪˈlækst./",
+      "zh": "可以，但盡量放鬆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Tell me if anything feels uncomfortable.",
+      "phonetic": "/tɛl mi ɪf ˈɛniθɪŋ filz ʌnˈkʌmfərtəbəl./",
+      "zh": "如果有任何不舒服就告訴我。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It is comfortable, so no problem.",
+      "phonetic": "/ɪt ɪz ˈkʌmfərtəbəl soʊ noʊ ˈprɑbləm./",
+      "zh": "很舒服，沒問題。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "When will the pads be removed?",
+      "phonetic": "/wɛn wɪl ðə pædz bi rɪˈmuvd?/",
+      "zh": "貼片什麼時候拿掉？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "After the machine finishes its cycle.",
+      "phonetic": "/ˈæftər ðə məˈʃin ˈfɪnɪʃɪz ɪts ˈsaɪkəl./",
+      "zh": "等機器跑完一個循環。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does your shoulder feel looser?",
+      "phonetic": "/dʌz jʊr ˈʃoʊldər fil ˈlusər/",
+      "zh": "你的肩膀有比較鬆嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, that stiffness is slowly fading.",
+      "phonetic": "/jɛs ðæt ˈstɪfnəs ɪz ˈsloʊli ˈfedɪŋ./",
+      "zh": "有，那種僵硬慢慢消退了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "After this, I will teach you stretches.",
+      "phonetic": "/ˈæftər ðɪs aɪ wɪl titʃ ju ˈstrɛtʃɪz./",
+      "zh": "接下來我教你幾個伸展。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Good, I want to learn them.",
+      "phonetic": "/ɡʊd aɪ wɑnt tu lɜrn ðɛm./",
+      "zh": "好，我想學。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "The heat pad is coming off now.",
+      "phonetic": "/ðə hit pæd ɪz ˈkʌmɪŋ ɔf naʊ./",
+      "zh": "熱敷墊現在要拿下來了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Okay, my shoulder feels better.",
+      "phonetic": "/oʊˈkeɪ maɪ ˈʃoʊldər filz ˈbɛtər/",
+      "zh": "好，我的肩膀好多了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now let us start your home stretches.",
+      "phonetic": "/naʊ lɛt ʌs stɑrt jʊr hoʊm ˈstrɛtʃɪz./",
+      "zh": "現在開始你的居家伸展。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I am ready to begin.",
+      "phonetic": "/aɪ æm ˈrɛdi tu bɪˈɡɪn./",
+      "zh": "我準備好開始了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Lift your arm up to the front.",
+      "phonetic": "/lɪft jʊr ɑrm ʌp tu ðə frʌnt/",
+      "zh": "把手臂往前抬起來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Like this, is that correct?",
+      "phonetic": "/laɪk ðɪs ɪz ðæt kəˈrɛkt?/",
+      "zh": "像這樣，對嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Hold your arm there five seconds.",
+      "phonetic": "/hoʊld jʊr ɑrm ðɛr faɪv ˈsɛkəndz/",
+      "zh": "手臂在那裡停五秒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One, two, three, four, five.",
+      "phonetic": "/wʌn tu θri fɔr faɪv./",
+      "zh": "一、二、三、四、五。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Lower it slowly and then repeat.",
+      "phonetic": "/ˈloʊər ɪt ˈsloʊli ænd ðɛn rɪˈpit./",
+      "zh": "慢慢放下，然後再重複。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Alright, I will do it again.",
+      "phonetic": "/ɔlˈraɪt aɪ wɪl du ɪt əˈɡɛn./",
+      "zh": "好，我再做一次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now bend your elbow and hold.",
+      "phonetic": "/naʊ bɛnd jʊr ˈɛlboʊ ænd hoʊld/",
+      "zh": "現在彎手肘並停住。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My arm already feels a stretch.",
+      "phonetic": "/maɪ ɑrm ɔlˈrɛdi filz ə strɛtʃ/",
+      "zh": "我的手臂已經有拉伸感。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Keep your elbow close to you.",
+      "phonetic": "/kip jʊr ˈɛlboʊ kloʊs tu ju/",
+      "zh": "手肘靠近身體。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Okay, my elbow is close.",
+      "phonetic": "/oʊˈkeɪ maɪ ˈɛlboʊ ɪz kloʊs/",
+      "zh": "好，手肘靠著了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do you feel any sharp pain?",
+      "phonetic": "/du ju fil ˈɛni ʃɑrp pen?/",
+      "zh": "你有感覺刺痛嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, only a gentle pulling feeling.",
+      "phonetic": "/noʊ ˈoʊnli ə ˈdʒɛntəl ˈpʊlɪŋ ˈfilɪŋ./",
+      "zh": "沒有，只有輕輕拉扯的感覺。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Keep breathing while you stretch.",
+      "phonetic": "/kip ˈbriðɪŋ waɪl ju strɛtʃ/",
+      "zh": "伸展的時候要持續呼吸。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I am trying to breathe slowly.",
+      "phonetic": "/aɪ æm ˈtraɪɪŋ tu brið ˈsloʊli./",
+      "zh": "我有試著慢慢呼吸。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let your arm relax down now.",
+      "phonetic": "/lɛt jʊr ɑrm rɪˈlæks daʊn naʊ/",
+      "zh": "讓手臂放鬆下來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That feels much easier.",
+      "phonetic": "/ðæt filz mʌtʃ ˈiziər./",
+      "zh": "這樣感覺輕鬆多了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Try that stretch on the other side.",
+      "phonetic": "/traɪ ðæt strɛtʃ ɑːn ði ˈʌðər saɪd./",
+      "zh": "換另一邊做同樣的伸展。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Alright, I will switch sides.",
+      "phonetic": "/ɔlˈraɪt aɪ wɪl swɪtʃ saɪdz./",
+      "zh": "好，我換邊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now roll your shoulder gently.",
+      "phonetic": "/naʊ roʊl jʊr ˈʃoʊldər ˈdʒɛntli/",
+      "zh": "現在輕輕轉動肩膀。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "This stretch reaches my shoulder.",
+      "phonetic": "/ðɪs strɛtʃ ˈritʃɪz maɪ ˈʃoʊldər/",
+      "zh": "這個伸展拉到我的肩膀。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Pull your arm across your chest.",
+      "phonetic": "/pʊl jʊr ɑrm əˈkrɔs jʊr tʃɛst/",
+      "zh": "把手臂拉過胸前。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Okay, the shoulder feels tight.",
+      "phonetic": "/oʊˈkeɪ ðə ˈʃoʊldər filz taɪt/",
+      "zh": "好，肩膀覺得緊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Breathe out as you pull back.",
+      "phonetic": "/brið aʊt æz ju pʊl bæk./",
+      "zh": "往後拉的時候吐氣。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That helps me relax more.",
+      "phonetic": "/ðæt hɛlps mi rɪˈlæks mɔr./",
+      "zh": "這樣讓我更放鬆。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Let the muscle stretch, not bounce.",
+      "phonetic": "/lɛt ðə ˈmʌsəl strɛtʃ nɑt baʊns./",
+      "zh": "讓肌肉伸展，不要彈震。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will keep the movement slow.",
+      "phonetic": "/aɪ wɪl kip ðə ˈmuvmənt sloʊ./",
+      "zh": "我會保持動作緩慢。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now hold that position for thirty seconds.",
+      "phonetic": "/naʊ hoʊld ðæt pəˈzɪʃən fɔr ˈθɜrti ˈsɛkəndz./",
+      "zh": "現在維持這個姿勢三十秒。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thirty seconds seems quite long.",
+      "phonetic": "/ˈθɜrti ˈsɛkəndz simz kwaɪt lɔŋ./",
+      "zh": "三十秒感覺滿久的。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Keep holding, you are almost done.",
+      "phonetic": "/kip ˈhoʊldɪŋ ju ɑr ˈɔlmoʊst dʌn./",
+      "zh": "繼續撐著，你快完成了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Okay, I can hold it longer.",
+      "phonetic": "/oʊˈkeɪ aɪ kæn hoʊld ɪt ˈlɔŋɡər./",
+      "zh": "好，我可以再撐一下。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do the same on your left side.",
+      "phonetic": "/duː ðə seɪm ɑːn jɔːr lɛft saɪd./",
+      "zh": "左邊也做一樣的動作。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Alright, my left side feels tighter.",
+      "phonetic": "/ɔlˈraɪt maɪ lɛft saɪd filz ˈtaɪtər./",
+      "zh": "好，我的左邊感覺比較緊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the stretch too painful for you?",
+      "phonetic": "/ɪz ðə strɛtʃ tu ˈpenfəl fɔr ju?/",
+      "zh": "這個伸展對你來說太痛嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, it is only slightly sore.",
+      "phonetic": "/noʊ ɪt ɪz ˈoʊnli ˈslaɪtli sɔr./",
+      "zh": "不會，只是有點痠。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Repeat this stretch three times daily.",
+      "phonetic": "/rɪˈpit ðɪs strɛtʃ θri taɪmz ˈdeɪli./",
+      "zh": "這個伸展每天重複三次。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Three times every day, understood.",
+      "phonetic": "/θri taɪmz ˈɛvri deɪ ˌʌndərˈstʊd./",
+      "zh": "每天三次，了解。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Keep your movements slow and smooth.",
+      "phonetic": "/kip jʊr ˈmuvmənts sloʊ ænd smuð./",
+      "zh": "動作要慢而平順。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will not rush the stretch.",
+      "phonetic": "/aɪ wɪl nɑt rʌʃ ðə strɛtʃ./",
+      "zh": "我不會急著做。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the stretch hurt your shoulder?",
+      "phonetic": "/dʌz ðə strɛtʃ hɜrt jʊr ˈʃoʊldər/",
+      "zh": "這個伸展會讓肩膀痛嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, my shoulder feels fine.",
+      "phonetic": "/noʊ maɪ ˈʃoʊldər filz faɪn/",
+      "zh": "不會，我的肩膀沒事。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now show me your seated stretch.",
+      "phonetic": "/naʊ ʃoʊ mi jʊr ˈsitɪd strɛtʃ/",
+      "zh": "現在做你坐著的伸展給我看。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Like this, with my arm up?",
+      "phonetic": "/laɪk ðɪs wɪð maɪ ɑrm ʌp/",
+      "zh": "像這樣，手臂抬起嗎？"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Reach up the wall, but slowly.",
+      "phonetic": "/ritʃ ʌp ðə wɔl bʌt ˈsloʊli/",
+      "zh": "慢慢沿著牆往上伸。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "My shoulder is opening up.",
+      "phonetic": "/maɪ ˈʃoʊldər ɪz ˈoʊpənɪŋ ʌp/",
+      "zh": "我的肩膀慢慢打開了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Stop when you feel strong tension.",
+      "phonetic": "/stɑp wɛn ju fil strɔŋ ˈtɛnʃən./",
+      "zh": "感覺很緊繃時就停下來。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Understood, I will stop there.",
+      "phonetic": "/ˌʌndərˈstʊd aɪ wɪl stɑp ðɛr./",
+      "zh": "了解，我就停在那裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How many seconds should I hold it?",
+      "phonetic": "/haʊ ˈmɛni ˈsɛkəndz ʃʊd aɪ hoʊld ɪt?/",
+      "zh": "我應該撐幾秒？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Hold it for about twenty seconds.",
+      "phonetic": "/hoʊld ɪt fɔr əˈbaʊt ˈtwɛnti ˈsɛkəndz./",
+      "zh": "大概撐二十秒。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do these stretches hurt your arm?",
+      "phonetic": "/du ðiz ˈstrɛtʃɪz hɜrt jʊr ɑrm/",
+      "zh": "這些伸展會讓手臂痛嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "No, my arm feels fine.",
+      "phonetic": "/noʊ maɪ ɑrm filz faɪn/",
+      "zh": "不會，我的手臂沒事。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Now stretch your neck to the side.",
+      "phonetic": "/naʊ strɛtʃ jʊr nɛk tu ðə saɪd./",
+      "zh": "現在把脖子往側邊伸展。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "That one feels really good.",
+      "phonetic": "/ðæt wʌn filz ˈrɪli ɡʊd./",
+      "zh": "這個感覺真的很舒服。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Keep your shoulder down while turning.",
+      "phonetic": "/kip jʊr ˈʃoʊldər daʊn waɪl ˈtɜrnɪŋ./",
+      "zh": "轉頭時肩膀要放低。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Okay, my shoulder is down.",
+      "phonetic": "/oʊˈkeɪ maɪ ˈʃoʊldər ɪz daʊn./",
+      "zh": "好，我的肩膀放下了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "You did those stretches very well.",
+      "phonetic": "/ju dɪd ðoʊz ˈstrɛtʃɪz ˈvɛri wɛl./",
+      "zh": "你這些伸展做得很好。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Thank you, they feel helpful.",
+      "phonetic": "/θæŋk ju ðe fil ˈhɛlpfəl./",
+      "zh": "謝謝，它們感覺很有幫助。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "When should I come back next?",
+      "phonetic": "/wɛn ʃʊd aɪ kʌm bæk nɛkst?/",
+      "zh": "我下次什麼時候回來？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Come back next Tuesday morning.",
+      "phonetic": "/kʌm bæk nɛkst ˈtuzdeɪ ˈmɔrnɪŋ?/",
+      "zh": "下星期二早上再來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What time works for you?",
+      "phonetic": "/wʌt taɪm wɜrks fɔr ju?/",
+      "zh": "你什麼時間方便？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ten works for me.",
+      "phonetic": "/tɛn wɜrks fɔr mi/",
+      "zh": "十點我可以。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is Tuesday morning still open?",
+      "phonetic": "/ɪz ˈtuzdeɪ ˈmɔrnɪŋ stɪl ˈoʊpən?/",
+      "zh": "星期二早上還有空嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, Tuesday morning is open.",
+      "phonetic": "/jɛs ˈtuzdeɪ ˈmɔrnɪŋ ɪz ˈoʊpən./",
+      "zh": "有，星期二早上有空。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Shall we book the same room?",
+      "phonetic": "/ʃæl wiː bʊk ðə seɪm ruːm?/",
+      "zh": "我們可以訂同一間房間嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "We will use the same room.",
+      "phonetic": "/wi wɪl juz ðə seɪm rum./",
+      "zh": "我們會用同一間房間。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How long will each visit take?",
+      "phonetic": "/haʊ lɔŋ wɪl itʃ ˈvɪzɪt teɪk?/",
+      "zh": "每次來要多久？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Each visit takes about one hour.",
+      "phonetic": "/itʃ ˈvɪzɪt teɪks əˈbaʊt wʌn ˈaʊər./",
+      "zh": "每次大約一小時。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I bring anything along?",
+      "phonetic": "/ʃʊd aɪ brɪŋ ˈɛniˌθɪŋ əˈlɔŋ/",
+      "zh": "我需要帶什麼嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Please bring your insurance card again.",
+      "phonetic": "/pliz brɪŋ jʊr ɪnʃʊrəns kɑrd əɡɛn./",
+      "zh": "請再帶你的保險卡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Which number should I call?",
+      "phonetic": "/wɪtʃ ˈnʌmbər ʃʊd aɪ kɔl?/",
+      "zh": "我該打哪個號碼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Call the number on the slip.",
+      "phonetic": "/kɔl ðə ˈnʌmbər ɑn ðə slɪp./",
+      "zh": "打單子上的號碼。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where do I write my name?",
+      "phonetic": "/wɛr du aɪ raɪt maɪ neɪm?/",
+      "zh": "我的名字寫在哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Write your name at the top.",
+      "phonetic": "/raɪt jʊr neɪm æt ðə tɑp./",
+      "zh": "把名字寫在最上面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I confirm the Tuesday visit?",
+      "phonetic": "/ʃʊd aɪ kənˈfɜrm ðə ˈtuzdeɪ ˈvɪzɪt/",
+      "zh": "我要確認星期二的療程嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, we have you down.",
+      "phonetic": "/jɛs wi hæv ju daʊn/",
+      "zh": "好，已經幫你登記了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the morning better than afternoon?",
+      "phonetic": "/ɪz ðə ˈmɔrnɪŋ ˈbɛtər ðæn ˌæftərˈnun?/",
+      "zh": "早上比下午好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Morning is better for your shoulder.",
+      "phonetic": "/ˈmɔrnɪŋ ɪz ˈbɛtər fɔr jʊr ˈʃoʊldər/",
+      "zh": "早上對你的肩膀比較好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Who will I see next time?",
+      "phonetic": "/hu wɪl aɪ si nɛkst taɪm?/",
+      "zh": "我下次會見到誰？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You will see the same therapist.",
+      "phonetic": "/ju wɪl si ðə seɪm θɛrəpɪst./",
+      "zh": "你會見到同一位治療師。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I come early next time?",
+      "phonetic": "/ʃʊd aɪ kʌm ˈɜrli nɛkst taɪm?/",
+      "zh": "下次我要早點來嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Come ten minutes early, please.",
+      "phonetic": "/kʌm tɛn ˈmɪnɪts ˈɜrli pliz./",
+      "zh": "請提早十分鐘來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Why do we meet twice a week?",
+      "phonetic": "/waɪ du wi mit twaɪs ə wik?/",
+      "zh": "為什麼我們一週見兩次？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Twice a week helps your shoulder.",
+      "phonetic": "/twaɪs ə wik hɛlps jʊr ˈʃoʊldər/",
+      "zh": "一週兩次對你的肩膀有幫助。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where is the education sheet?",
+      "phonetic": "/wɛr ɪz ðə ɛdʒəkeɪʃən ʃit?/",
+      "zh": "衛教單在哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The education sheet is right here.",
+      "phonetic": "/ðə ɛdʒəkeɪʃən ʃit ɪz raɪt hir./",
+      "zh": "衛教單就在這裡。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please explain the sheet to me.",
+      "phonetic": "/pliːz ɪkˈspleɪn ðə ʃiːt tuː miː./",
+      "zh": "請跟我說明這張單子。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I will explain the whole sheet.",
+      "phonetic": "/aɪ wɪl ɪkˈspleɪn ðə hoʊl ʃit./",
+      "zh": "我會整張說明給你聽。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What should I do every morning?",
+      "phonetic": "/wʌt ʃʊd aɪ du ˈɛvri ˈmɔrnɪŋ?/",
+      "zh": "我每天早上該做什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Do the stretches every morning.",
+      "phonetic": "/du ðə strɛtʃɪz ˈɛvri ˈmɔrnɪŋ./",
+      "zh": "每天早上做伸展。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How many times should I repeat this?",
+      "phonetic": "/haʊ ˈmɛni taɪmz ʃʊd aɪ rɪˈpit ðɪs?/",
+      "zh": "這個我要重複幾次？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Repeat each stretch ten times.",
+      "phonetic": "/rɪˈpit itʃ strɛtʃ tɛn taɪmz./",
+      "zh": "每個伸展重複十次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is the sheet in Chinese too?",
+      "phonetic": "/ɪz ðə ʃit ɪn ˌtʃaɪˈniz tu?/",
+      "zh": "這張單子也有中文嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, both sides are in Chinese.",
+      "phonetic": "/jɛs boʊθ saɪdz ɑr ɪn ˌtʃaɪˈniz./",
+      "zh": "有，兩面都是中文。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is taking a photo allowed?",
+      "phonetic": "/ɪz ˈteɪkɪŋ ə ˈfoʊtoʊ əˈlaʊd/",
+      "zh": "可以拍照嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Take a photo, that is fine.",
+      "phonetic": "/teɪk ə ˈfoʊtoʊ ðæt ɪz faɪn./",
+      "zh": "拍照可以，沒問題。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Does the sheet list the exercises?",
+      "phonetic": "/dʌz ðə ʃit lɪst ðə ɛksərsaɪzɪz?/",
+      "zh": "單子上有列出運動嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "It lists all the home exercises.",
+      "phonetic": "/ɪt lɪsts ɔl ðə hoʊm ɛksərsaɪzɪz./",
+      "zh": "上面列出所有居家運動。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I stop if it hurts?",
+      "phonetic": "/ʃʊd aɪ stɑp ɪf ɪt hɜrts?/",
+      "zh": "如果會痛我該停下來嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stop right away if it hurts.",
+      "phonetic": "/stɑp raɪt əˈweɪ ɪf ɪt hɜrts./",
+      "zh": "如果痛就馬上停。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Why is sitting so bad for me?",
+      "phonetic": "/waɪ ɪz ˈsɪtɪŋ soʊ bæd fɔr mi?/",
+      "zh": "為什麼久坐對我這麼不好？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sitting still tightens your shoulder.",
+      "phonetic": "/ˈsɪtɪŋ stɪl ˈtaɪtənz jʊr ˈʃoʊldər/",
+      "zh": "久坐會讓肩膀變緊。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How often should I stand up?",
+      "phonetic": "/haʊ ɔfən ʃʊd aɪ stænd ʌp?/",
+      "zh": "我該多久站起來一次？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stand up every thirty minutes.",
+      "phonetic": "/stænd ʌp ˈɛvri ˈθɜrti ˈmɪnɪts./",
+      "zh": "每三十分鐘站起來一次。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "May I still work at my desk?",
+      "phonetic": "/meɪ aɪ stɪl wɜːrk æt maɪ dɛsk?/",
+      "zh": "我還能在書桌前工作嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You can work at your desk.",
+      "phonetic": "/ju kæn wɜrk æt jʊr dɛsk./",
+      "zh": "你可以在書桌前工作。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is a soft chair bad for me?",
+      "phonetic": "/ɪz ə sɔft tʃɛr bæd fɔr mi?/",
+      "zh": "軟椅子對我不好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, a soft chair is bad.",
+      "phonetic": "/jɛs ə sɔft tʃɛr ɪz bæd./",
+      "zh": "對，軟椅子不好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Shall I put a pillow here?",
+      "phonetic": "/ʃæl aɪ pʊt ə ˈpɪloʊ hɪr?/",
+      "zh": "我在這裡放個枕頭好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Put a small pillow behind you.",
+      "phonetic": "/pʊt ə smɔl ˈpɪloʊ bɪˈhaɪnd ju./",
+      "zh": "在背後放個小枕頭。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What about long car rides?",
+      "phonetic": "/wʌt əˈbaʊt lɔŋ kɑr raɪdz?/",
+      "zh": "那長途開車呢？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Stop and walk during car rides.",
+      "phonetic": "/stɑp ænd wɔk ˈdʊrɪŋ kɑr raɪdz./",
+      "zh": "開車途中要停下來走走。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I set a timer?",
+      "phonetic": "/ʃʊd aɪ sɛt ə ˈtaɪmər?/",
+      "zh": "我該設個計時器嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Set a timer on your phone.",
+      "phonetic": "/sɛt ə ˈtaɪmər ɑn jʊr foʊn./",
+      "zh": "在手機上設個計時器。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is walking good for my shoulder?",
+      "phonetic": "/ɪz ˈwɔkɪŋ ɡʊd fɔr maɪ ˈʃoʊldər/",
+      "zh": "走路對我的肩膀好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Walking is very good for you.",
+      "phonetic": "/ˈwɔkɪŋ ɪz ˈvɛri ɡʊd fɔr ju./",
+      "zh": "走路對你很好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How far should I walk each day?",
+      "phonetic": "/haʊ fɑr ʃʊd aɪ wɔk itʃ deɪ?/",
+      "zh": "我每天該走多遠？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Walk a short distance each day.",
+      "phonetic": "/wɔk ə ʃɔrt ˈdɪstəns itʃ deɪ./",
+      "zh": "每天走一小段路。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Where can I park my car?",
+      "phonetic": "/wɛr kæn aɪ pɑrk maɪ kɑr?/",
+      "zh": "我的車可以停哪裡？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Park behind the building, it is free.",
+      "phonetic": "/pɑrk bɪˈhaɪnd ðə ˈbɪldɪŋ ɪt ɪz fri./",
+      "zh": "停在樓後，那裡免費。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do I pay at the front desk?",
+      "phonetic": "/du aɪ peɪ æt ðə frʌnt dɛsk?/",
+      "zh": "我在櫃台付錢嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Pay the total at the front desk.",
+      "phonetic": "/peɪ ðə ˈtoʊtəl æt ðə frʌnt dɛsk./",
+      "zh": "在櫃台付總金額。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Will my insurance cover this visit?",
+      "phonetic": "/wɪl maɪ ɪnʃʊrəns ˈkʌvər ðɪs ˈvɪzɪt?/",
+      "zh": "我的保險會給付這次嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Your insurance covers most of it.",
+      "phonetic": "/jʊr ɪnʃʊrəns ˈkʌvərz moʊst əv ɪt./",
+      "zh": "你的保險給付大部分。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Shall I get a receipt today?",
+      "phonetic": "/ʃæl aɪ ɡɛt ə rɪˈsiːt təˈdeɪ?/",
+      "zh": "我今天去拿收據好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Here is your receipt for today.",
+      "phonetic": "/hir ɪz jʊr rɪˈsit fɔr təˈdeɪ./",
+      "zh": "這是您今天的收據。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What if the pain comes back?",
+      "phonetic": "/wʌt ɪf ðə peɪn kʌmz bæk?/",
+      "zh": "如果疼痛又回來怎麼辦？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Call us if the pain returns.",
+      "phonetic": "/kɔl ʌs ɪf ðə peɪn rɪˈtɜrnz./",
+      "zh": "如果疼痛回來就打給我們。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I use heat at home?",
+      "phonetic": "/ʃʊd aɪ juz hit æt hoʊm?/",
+      "zh": "我在家要用熱敷嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Use heat for ten minutes only.",
+      "phonetic": "/juz hit fɔr tɛn ˈmɪnɪts ˈoʊnli./",
+      "zh": "熱敷只要十分鐘。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is ice better after exercise?",
+      "phonetic": "/ɪz aɪs ˈbɛtər ˈæftər ɛksərsaɪz?/",
+      "zh": "運動後冰敷比較好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Ice is better after hard exercise.",
+      "phonetic": "/aɪs ɪz ˈbɛtər ˈæftər hɑrd ɛksərsaɪz./",
+      "zh": "激烈運動後冰敷比較好。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Who do I call about the bill?",
+      "phonetic": "/hu du aɪ kɔl əˈbaʊt ðə bɪl?/",
+      "zh": "帳單的事我該打給誰？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Call the office about the bill.",
+      "phonetic": "/kɔl ðə ˈɔfɪs əˈbaʊt ðə bɪl./",
+      "zh": "帳單的事打給辦公室。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "When will the sheet be ready?",
+      "phonetic": "/wɛn wɪl ðə ʃit bi ˈrɛdi?/",
+      "zh": "衛教單什麼時候好？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The sheet is ready right now.",
+      "phonetic": "/ðə ʃit ɪz ˈrɛdi raɪt naʊ./",
+      "zh": "衛教單現在就好了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Please write the date on it.",
+      "phonetic": "/pliːz raɪt ðə deɪt ɑːn ɪt./",
+      "zh": "請把日期寫在上面。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "I wrote the date at the bottom.",
+      "phonetic": "/aɪ roʊt ðə deɪt æt ðə ˈbɑtəm./",
+      "zh": "我把日期寫在最下面。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Do I keep this sheet forever?",
+      "phonetic": "/du aɪ kip ðɪs ʃit fɔrɛvər?/",
+      "zh": "這張單子我要一直留著嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Keep the sheet in a safe place.",
+      "phonetic": "/kip ðə ʃit ɪn ə seɪf pleɪs./",
+      "zh": "把單子收在安全的地方。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What else should I know?",
+      "phonetic": "/wʌt ɛls ʃʊd aɪ noʊ/",
+      "zh": "還有什麼我該知道的嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Drink more water every single day.",
+      "phonetic": "/drɪŋk mɔr ˈwɔtər ˈɛvri ˈsɪŋɡəl deɪ./",
+      "zh": "每天都要多喝水。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I sleep on my side?",
+      "phonetic": "/ʃʊd aɪ slip ɑn maɪ saɪd?/",
+      "zh": "我該側睡嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Sleep on your side with pillows.",
+      "phonetic": "/slip ɑn jʊr saɪd wɪð ˈpɪloʊz./",
+      "zh": "側睡，並用枕頭輔助。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "How many pillows do you suggest?",
+      "phonetic": "/haʊ ˈmɛni ˈpɪloʊz du ju səɡdʒɛst?/",
+      "zh": "你建議用幾個枕頭？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "One pillow under your arm helps.",
+      "phonetic": "/wʌn ˈpɪloʊ ˈʌndər jʊr ɑrm hɛlps/",
+      "zh": "手臂下墊一個枕頭有幫助。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I go back to the gym?",
+      "phonetic": "/ʃʊd aɪ ɡoʊ bæk tuː ðə dʒɪm?/",
+      "zh": "我該回去健身房嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Wait two weeks before the gym.",
+      "phonetic": "/weɪt tu wiks bɪˈfɔr ðə dʒɪm./",
+      "zh": "等兩週再去健身房。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "What can I do at the gym?",
+      "phonetic": "/wʌt kæn aɪ du æt ðə dʒɪm?/",
+      "zh": "在健身房我可以做什麼？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Start with light weights and walking.",
+      "phonetic": "/stɑrt wɪð laɪt weɪts ænd ˈwɔkɪŋ./",
+      "zh": "先從輕重量和走路開始。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Is my shoulder getting better?",
+      "phonetic": "/ɪz maɪ ˈʃoʊldər ˈɡɛtɪŋ ˈbɛtər/",
+      "zh": "我的肩膀有比較好嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, your shoulder is better.",
+      "phonetic": "/jɛs jʊr ˈʃoʊldər ɪz ˈbɛtər/",
+      "zh": "對，你的肩膀好多了。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I walk home today?",
+      "phonetic": "/ʃʊd aɪ wɔːk hoʊm təˈdeɪ?/",
+      "zh": "我今天該走路回家嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "Yes, walk home slowly today.",
+      "phonetic": "/jɛs wɔk hoʊm ˈsloʊli təˈdeɪ./",
+      "zh": "可以，今天慢慢走回家。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Should I take the bus instead?",
+      "phonetic": "/ʃʊd aɪ teɪk ðə bʌs ɪnˈstɛd?/",
+      "zh": "我該改搭公車嗎？"
+    },
+    {
+      "speaker": "char_b",
+      "text": "The bus is fine, but stand often.",
+      "phonetic": "/ðə bʌs ɪz faɪn bʌt stænd ɔfən./",
+      "zh": "搭公車可以，但要常站起來。"
+    },
+    {
+      "speaker": "char_a",
+      "text": "Thanks, it feels better.",
+      "phonetic": "/θæŋks ɪt filz ˈbɛtər/",
+      "zh": "謝謝，感覺好多了。"
+    },
+    {
+      "speaker": "char_b",
+      "text": "You are welcome, take care.",
+      "phonetic": "/ju ɑr ˈwɛlkəm teɪk kɛr./",
+      "zh": "不客氣，多保重。"
+    }
+  ],
+  "review": {
+    "round": 2,
+    "score": 90,
+    "score_source": "report",
+    "verdict": "APPROVED",
+    "dimensions": {
+      "pair_logic": 22,
+      "idiomatic_a2": 23,
+      "ipa_accuracy": 24,
+      "variety_no_dup": 21
+    },
+    "issues": [
+      {
+        "dim": "pair_logic",
+        "line": 88,
+        "note": "問答輕微錯位（minor）：idx 88-89「Was the fall long ago?」/「It started last Friday, I think.」答的是疼痛起始日、不是摔傷遠近。合理化為非 error：b 沿用本段 it（疼痛）的指涉可通，且患者加 I think 屬口語模糊，不致誤解。"
+      },
+      {
+        "dim": "pair_logic",
+        "line": 83,
+        "note": "時間線軟性張力（minor，非 error）：idx 13「It started last Friday morning.」、idx 81「I fell off my bike at noon.」、idx 83「The next morning it started.」、idx 89「It started last Friday, I think.」——全篇未明說摔傷日期，讀成週四中午摔、週五清晨開始痛（= the next morning）即自洽，與固定事實「上週五起、約三天」一致；只有硬讀成「週五中午摔」才會與 13 相抵。建議日後把摔傷日講死，但目前不需再開一輪。"
+      },
+      {
+        "dim": "pair_logic",
+        "line": 224,
+        "note": "人稱指涉模糊（minor）：idx 224-225「Where should I place these sticky pads?」/「Right here, beside your sore muscle.」靠聲位彈性可讀成病人問、治療師答（與 idx 168-169「Which motion should we avoid?」/「Avoid lifting your arm overhead.」同型，後者問句自然、無問題）；只是「病人自己放貼片」語意偏弱，b 的 your 指涉的是 a 的身體。屬可理解範圍。"
+      },
+      {
+        "dim": "variety_no_dup",
+        "line": 82,
+        "note": "重複度略高（非 error）：起始時間被追問四次（idx 12/24/82/88）、idx 46 與 184 同問手臂放射痛、idx 21/121/151「hurts right here/there」近似、idx 44-45 與 194-195 同問早上更痛、Do you…／Is the… 開頭各十餘次。機器已驗無整句重複；200 對問診循環本就反覆，屬格式固有。"
+      },
+      {
+        "dim": "idiomatic_a2",
+        "line": 60,
+        "note": "口語省略（非 error）：idx 61「Comes and goes all day long.」省主詞、idx 25「It has been sore three days.」省 for、idx 361「Park behind the building, it is free.」逗號黏接、idx 334-335「Is the sheet in Chinese too?」/「Yes, both sides are in Chinese.」語意略繞；audit 語法／冠詞／標點項已全過，皆屬會話可接受寫法。"
+      }
+    ],
+    "summary_zh": "本輪七處修正全部落實：95 改「No, I sleep on my back.」、155「A little past my shoulder.」與 139 同高（熱敷後略進步亦合理）、184/185 改問手臂放射並答 Yes（與 46/47 一致）、284 用 seated stretch、316/317 只確認週二不再提改週五、81 壓到 7 詞、336 已無與外題共用的 4-gram；全篇無腿部／下背處方殘留，固定事實（右肩右臂、騎車摔、上週五起約三天、評估按痛、熱敷＋電療、肩部居家伸展、約下次、衛教單、勿久坐）逐項到位，未見 error 級問題，故予 APPROVED。美式 IPA 依機器證據給分（ipa_vote 0 條 SUSPECT、逐詞對齊通過、audit hard=0；視圖無音標列故未自行判讀）。",
+    "model": "skill:hot-sleep-dialogues",
+    "reviewed_at": 1791048263,
+    "content_hash": "sha1:d854544640830004daf0e5f85d9cbda19a86018e"
+  }
+}

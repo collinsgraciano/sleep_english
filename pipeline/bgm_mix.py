@@ -317,6 +317,16 @@ def prepare_copyright_music(
 ) -> AudioSegment:
     print("  [BGM] 开启随机连串版权音乐模式")
 
+    # 交叉淡化时长归一：0/负数/None 一律当「不做交叉淡化」。
+    # 必须显式判 >0 再调用 pydub 的 fade_in/fade_out：pydub 的 fade() 走
+    # `if duration:` 分支，duration=0 时落到 else 去算 `end - start`，而
+    # fade_out 只传了 duration+end（start=None）→
+    # TypeError: unsupported operand type(s) for -: 'int' and 'NoneType'，
+    # 整次混音直接失败。真实触发场景：配置「交叉淡入淡出 ms」= 0。
+    fade_ms = max(0, int(fade_ms or 0))
+    if fade_ms <= 0:
+        print("  [BGM] 交叉淡入淡出已关闭（0ms）")
+
     # 全局分析原声频谱间隙
     global_bg, global_be = None, None
     if spec_shape:
@@ -371,11 +381,15 @@ def prepare_copyright_music(
 
         remaining = target_duration_ms - accumulated_ms
 
+        # 先算淡出时长、判 >0 再调用（pydub fade_out(0) 会抛 TypeError，
+        # 见本函数开头注释：fade_ms=0 或 remaining/片段极短时都会算出 0）
         if remaining < segment_duration:
             segment = segment[:remaining]
-            segment = segment.fade_out(min(fade_ms, remaining // 4))
+            fade_len = min(fade_ms, remaining // 4)
         else:
-            segment = segment.fade_out(min(fade_ms, segment_duration // 4))
+            fade_len = min(fade_ms, segment_duration // 4)
+        if fade_len > 0:
+            segment = segment.fade_out(fade_len)
 
         # 交叉淡入淡出：只对列表末段做 fade_out（等效于对已积累音频尾部 fade_out），
         # 避免每轮复制全量 O(N) 数据
@@ -501,6 +515,9 @@ def mix_bgm_into_video(
     narr_temp_path: str | None = None
     bgm_temp_path: str | None = None
     try:
+        # 入口参数归一（0/负数/None = 不做交叉淡化）：下游 min(fade_duration_ms, …)
+        # 与 pydub fade_* 都要求正整数，None 会在 min() 就炸、0 会在 pydub 内部炸
+        fade_duration_ms = max(0, int(fade_duration_ms or 0))
         music_files = get_all_music_files(music_dir)
         print(f"  [BGM] 加载视频音轨: {os.path.basename(video_path)}")
         orig_audio = AudioSegment.from_file(video_path)

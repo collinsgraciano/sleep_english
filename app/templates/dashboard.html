@@ -1606,19 +1606,43 @@ function loadVideoPreview(runName) {
         .then(r => r.json())
         .then(data => {
             const content = document.getElementById('review-content');
-            const videos = data.final_videos || [];
-            if (!videos.length) {
+            // 成片清单与画廊页/运行列表同源（app/run_videos.py）：video_items 带
+            // 类型标签 + 所在子目录；旧字段 final_videos 作回退（纯名字数组）
+            const items = (data.video_items && data.video_items.length)
+                ? data.video_items
+                : (data.final_videos || []).map(f => ({
+                    name: f, kind: '', label: '', rel: f, size_mb: null,
+                    url: `/api/runs/${runName}/video/${f}`}));
+            if (!items.length) {
                 content.innerHTML = '<p class="text-slate-400 text-sm">最终视频未找到。</p>';
                 return;
             }
+            const KIND_BADGE = {
+                'final': 'bg-indigo-600/30 text-indigo-300',
+                'bgm': 'bg-rose-600/30 text-rose-300',
+                '4k': 'bg-teal-600/30 text-teal-300',
+                '4k_bgm': 'bg-amber-600/30 text-amber-300'
+            };
             let html = '<div class="space-y-3">';
-            videos.forEach(v => {
+            items.forEach(v => {
+                const url = escapeHtml(v.url || `/api/runs/${runName}/video/${v.name}`);
+                const badge = v.label
+                    ? `<span class="text-xs px-2 py-0.5 rounded shrink-0 ${KIND_BADGE[v.kind] || 'bg-slate-600/30 text-slate-300'}">${escapeHtml(v.label)}</span>`
+                    : '';
+                const size = (v.size_mb === null || v.size_mb === undefined)
+                    ? '' : `<span class="text-xs text-slate-500">${v.size_mb} MB</span>`;
                 html += `<div class="bg-slate-900/50 rounded-lg overflow-hidden">
-                    <video controls class="w-full max-h-[480px]" src="/api/runs/${escapeHtml(runName)}/video/${escapeHtml(v)}"></video>
-                    <div class="flex items-center justify-between px-3 py-2">
-                        <p class="text-xs text-slate-400 truncate">${escapeHtml(v)}</p>
-                        <a href="/api/runs/${escapeHtml(runName)}/video/${escapeHtml(v)}" download
-                            class="text-xs text-indigo-400 hover:text-indigo-300">⬇ 下载</a>
+                    <video controls class="w-full max-h-[480px]" src="${url}"></video>
+                    <div class="flex items-center justify-between gap-3 px-3 py-2">
+                        <div class="min-w-0 flex items-center gap-2">
+                            ${badge}
+                            <p class="text-xs text-slate-400 truncate" title="${escapeHtml(v.rel || v.name)}">${escapeHtml(v.rel || v.name)}</p>
+                        </div>
+                        <div class="flex items-center gap-3 shrink-0">
+                            ${size}
+                            <a href="${url}" download
+                                class="text-xs text-indigo-400 hover:text-indigo-300">⬇ 下载</a>
+                        </div>
                     </div>
                 </div>`;
             });

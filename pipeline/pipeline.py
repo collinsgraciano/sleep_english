@@ -282,6 +282,37 @@ def _quick_test_copy_materials(src: Path, work_dir: Path, args) -> list:
         copied.append(f"{name}×{sum(1 for _ in dst_dir.iterdir())}")
     return copied
 
+
+def _bind_library_video(src: str, dst: Path, legacy: Path) -> None:
+    """片头/片尾库视频 → 运行目录 videos/ 副本（每次刷新 + 清旧根部残留）。
+
+    历史行为：副本写在运行目录**根部** `{work_dir}/intro_video.mp4`，且带
+    「目标已存在就跳过」守卫 —— 既污染成片清单（曾被「混BGM」的源视频
+    兜底扫描误当成成片混音、也让用户看到根目录里凭空多出片头文件），
+    又会在重跑/续传时静默沿用换了绑定之前的旧副本；copy2 保留源文件
+    mtime 更让它看起来像远古残留。
+
+    现固定落 `videos/`（已在所有成片清单与扫描里被过滤），逐次覆盖刷新，
+    并顺手删除旧版根部同名残留（仅这两个固定文件名，仅限本运行目录）。
+    """
+    import shutil
+    src_p = Path(src)
+    try:
+        if src_p.resolve() == dst.resolve():
+            return
+    except OSError:
+        pass
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copyfile(str(src_p), str(dst))  # 覆盖刷新；不继承源 mtime，避免"远古文件"错觉
+    if legacy != dst:
+        try:
+            if legacy.exists():
+                legacy.unlink()
+                print(f"  [Sleep] 清理旧版根部素材副本: {legacy.name}")
+        except OSError:
+            pass
+
+
 # ---------------------------------------------------------------------------
 # Step functions
 # ---------------------------------------------------------------------------
@@ -456,7 +487,8 @@ def _step2_images_tts(args, checkpoint: dict, script: dict, work_dir: Path, dirs
             else:
                 raise
 
-    # 片头库绑定：intro 视频拷入运行目录，timeline intro 段时长随视频
+    # 片头库绑定：intro 视频拷入运行目录 videos/（不进根部成片清单，避免
+    # 被「混BGM / 生成4K」误当成成片源），timeline intro 段时长随视频
     # （intro TTS 照旧生成，音频完整性校验不变；绑定后 compose 不再消费它）
     intro_src = str(getattr(args, "sleep_intro_video", "") or "").strip()
     if intro_src and not getattr(args, "sleep_intro", True):
@@ -465,18 +497,16 @@ def _step2_images_tts(args, checkpoint: dict, script: dict, work_dir: Path, dirs
         print("  [Sleep] 片头库绑定已关闭（sleep_intro_use_library=False）—— 使用默认片头")
     elif intro_src and not tts_results.get("fatal_error"):
         if os.path.exists(intro_src):
-            import shutil
-            intro_dst = work_dir / "intro_video.mp4"
-            if not intro_dst.exists():
-                shutil.copy2(intro_src, intro_dst)
+            intro_dst = work_dir / "videos" / "intro_video.mp4"
+            _bind_library_video(intro_src, intro_dst, work_dir / "intro_video.mp4")
             tts_results["intro_video"] = str(intro_dst)
             tts_results["intro_dur"] = _get_audio_duration(str(intro_dst))
-            print(f"  [Sleep] Intro video bound: {intro_dst.name} "
+            print(f"  [Sleep] Intro video bound: videos/{intro_dst.name} "
                   f"({tts_results['intro_dur']:.1f}s)")
         else:
             print(f"  [Sleep] WARNING: 片头视频不存在: {intro_src} —— 回退默认片头")
 
-    # 片尾库绑定：outro 视频拷入运行目录，timeline outro 段时长随视频
+    # 片尾库绑定：outro 视频拷入运行目录 videos/，timeline outro 段时长随视频
     # （outro TTS 照旧生成，音频完整性校验不变；绑定后 compose 不再消费它）
     outro_src = str(getattr(args, "sleep_outro_video", "") or "").strip()
     if outro_src and not getattr(args, "sleep_outro", True):
@@ -485,13 +515,11 @@ def _step2_images_tts(args, checkpoint: dict, script: dict, work_dir: Path, dirs
         print("  [Sleep] 片尾库绑定已关闭（sleep_outro_use_library=False）—— 使用默认片尾")
     elif outro_src and not tts_results.get("fatal_error"):
         if os.path.exists(outro_src):
-            import shutil
-            outro_dst = work_dir / "outro_video.mp4"
-            if not outro_dst.exists():
-                shutil.copy2(outro_src, outro_dst)
+            outro_dst = work_dir / "videos" / "outro_video.mp4"
+            _bind_library_video(outro_src, outro_dst, work_dir / "outro_video.mp4")
             tts_results["outro_video"] = str(outro_dst)
             tts_results["outro_dur"] = _get_audio_duration(str(outro_dst))
-            print(f"  [Sleep] Outro video bound: {outro_dst.name} "
+            print(f"  [Sleep] Outro video bound: videos/{outro_dst.name} "
                   f"({tts_results['outro_dur']:.1f}s)")
         else:
             print(f"  [Sleep] WARNING: 片尾视频不存在: {outro_src} —— 回退默认片尾")
@@ -721,10 +749,14 @@ def _step5_compose(args, checkpoint: dict, script: dict, work_dir: Path, dirs: d
 
     yt_title = script.get("youtube_title", script.get("title", "final"))
     safe_vid_name = _safe_dirname(yt_title, "final_video")
+    # compose_sleep 实际把成片写到 videos/{safe}.mp4（旧版/其他结构在根部），
+    # 续传守卫必须按同一顺序找，否则守卫永不成立、每次续传都白重合成一遍
     final_video_path = work_dir / f"{safe_vid_name}.mp4"
-    if _step_done(checkpoint, "step5_compose") and final_video_path.exists():
-        print("  [Resume] Final video already exists, skipping compose...")
-        return str(final_video_path), safe_vid_name
+    if _step_done(checkpoint, "step5_compose"):
+        for _cand in (work_dir / "videos" / f"{safe_vid_name}.mp4", final_video_path):
+            if _cand.exists():
+                print("  [Resume] Final video already exists, skipping compose...")
+                return str(_cand), safe_vid_name
 
     from sleep.sleep_cards import build_theme
     from sleep.video_compose_sleep import compose_sleep
