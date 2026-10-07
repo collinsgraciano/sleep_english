@@ -55,17 +55,28 @@ Kokoro 全部音色与试听落 Drive → 起完整 Web 控制台（Cloudflare �
 > 但一出片就会报 `ModuleNotFoundError: No module named 'kokoro'` —— 现在 `setup` 步会实检
 > `import kokoro` 并在缺失时**直接失败**（不会假装装好），单格版的 TTS 相关步骤也会先自动补装。
 
-> **手动装 Kokoro（救急用，Python 3.13 上不要带依赖装）**：
+> **手动装 Kokoro（救急用，Python 3.13 上不要带依赖装，且必须先装依赖再装本体）**：
 > ```bash
-> python3 -m pip install -q --no-deps "kokoro==0.7.16" "misaki==0.7.4"
+> # 1) 依赖先就位（kokoro 自己 import 也要它们：loguru / transformers / huggingface_hub / spacy…）
 > python3 -m pip install -q --prefer-binary torch transformers huggingface-hub numpy scipy \
 >   loguru soundfile regex num2words spacy phonemizer-fork espeakng-loader
-> python3 -c "import kokoro, misaki; from misaki import en; print(en.G2P(british=False)('Good night.')[0])"
+> # 2) 再装本体（3.13 上必须 --no-deps；--force-reinstall 顺手清掉失败链留下的强制版本）
+> python3 -m pip install -q --no-deps --force-reinstall "kokoro==0.7.16" "misaki==0.7.4"
+> # 3) 验证
+> python3 -c "import kokoro, misaki; print('kokoro', kokoro.__version__, '| misaki', misaki.__version__, 'OK')"
 > rm -f /content/.colab_setup_done   # 清掉旧的「已就绪」标记，好让 setup 步重新校验
 > ```
 > 为什么必须 `--no-deps`：`kokoro==0.7.16` 依赖 `misaki>=0.7.16`，而 misaki 0.7.5+ 的元数据
 > 是 `Requires-Python <3.13` —— 3.13 上带依赖解析必然失败；两个包本身都是纯 Python 轮子，
 > 分开装没有任何问题（本机 3.13.11 就是这么跑的）。
+
+> **环境诊断（不安装任何东西，几秒出结果）**：
+> ```bash
+> bash /content/sleep_english/colab/setup.sh --doctor
+> ```
+> 会打印 Python 版本、ffmpeg/cloudflared、`configs/` 是否是 symlink、**每个关键模块的版本或
+> 缺失原因**，以及 pip 日志尾部。单格版 notebook 在 `setup` 失败时会**自动**跑它并把报告打在
+> 单元格里 —— 以后不用再靠猜。
 
 ## Drive 目录布局
 
@@ -261,7 +272,7 @@ cd .. && python3 colab/archive_to_drive.py
 | 现象 | 大概率原因 / 处理 |
 |---|---|
 | **出片报 `ModuleNotFoundError: No module named 'kokoro'`** | 本会话没装依赖：Colab 回收/重连后 VM 本地盘的 pip 包会丢 → 重跑 `setup` 步（要强制重装：`FORCE_INSTALL=True`）。自检/依赖实检会先报出来；单格版的 TTS 步骤也会自动补装 |
-| `setup` 步失败并打印 pip 日志 | 看 `/content/colab_logs/pip.log.kokoro` 尾部；网络抖动直接重跑本步。**Python 3.13 上 kokoro/misaki 的 PyPI 元数据写着 `Requires-Python <3.13`**，普通安装会报「Ignored … requires a different python version / No matching distribution」，而 `--no-deps` **不能**绕过这个限制 —— 脚本现在首选 3.13 上能直接装的 `kokoro==0.7.16 + misaki==0.7.4`（配 `--no-deps`、依赖单独补），兜底才用 `--ignore-requires-python` 强装 0.9.4。手动装法见「会话生命周期」下面那段 |
+| `setup` 步失败 | **notebook 会自动跑 `setup.sh --doctor` 并把报告打出来**（也可手动跑）。装不上的顺序就是：「依赖 → 本体 → 验证」，报告里的「缺失模块」一行直接点名。看 `/content/colab_logs/pip.log.kokoro` 尾部；网络抖动直接重跑本步。**Python 3.13 上 kokoro/misaki 的 PyPI 元数据写着 `Requires-Python <3.13`**，普通安装会报「Ignored … requires a different python version / No matching distribution」，而 `--no-deps` **不能**绕过这个限制 —— 脚本现在先把依赖装好、再用 `--no-deps` 装 `kokoro==0.7.16 + misaki==0.7.4`（3.13 上可直接安装），兜底才用 `--ignore-requires-python` 强装 0.9.4 |
 | `code` 步 404/401 | 私有 fork 没填 `SECRET_GITHUB_TOKEN`；公开仓库则检查参数区 `REPO_URL` / `BRANCH` |
 | `drive` 步警告「没挂载 Drive」 | Drive 授权被跳过 → 重跑该步允许挂载；否则配置/音色/成品只在本次会话有效 |
 | 配置改了但下回开机没保留 | `config` 步没跑成功（configs 没 symlink）→ 看它打印的警告，重跑该步 |

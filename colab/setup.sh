@@ -19,7 +19,8 @@ SETUP_FLAG="${COLAB_SETUP_FLAG:-/content/.colab_setup_done}"
 FORCE_INSTALL="${COLAB_FORCE_INSTALL:-0}"
 PIP_LOG="${COLAB_PIP_LOG:-/content/colab_logs/pip.log}"
 mkdir -p "$(dirname "$PIP_LOG")" 2>/dev/null || true
-cd "$REPO_DIR" || { echo "找不到仓库目录 $REPO_DIR（先跑 notebook 的克隆步）"; exit 1; }
+REPO_MISSING=0
+[ -d "$REPO_DIR" ] || REPO_MISSING=1
 
 echo "==> Python：$("$PY" -V 2>&1) · $PY"
 "$PY" -c 'import sys; print("    解释器：", sys.executable)'
@@ -54,6 +55,57 @@ PYCHECK
 }
 
 _tts_ok() { "$PY" -c "import kokoro, misaki" >/dev/null 2>&1; }
+
+# 诊断模式：不装任何东西，只把「为什么失败」一次性打全（notebook 里 setup 失败会自动调用）
+_doctor() {
+  echo "===== doctor：环境诊断（不安装任何东西）====="
+  echo "Python     : $("$PY" -V 2>&1) @ $PY"
+  if command -v ffmpeg >/dev/null 2>&1; then ffmpeg -version | head -1; else echo "ffmpeg     : 缺失（TTS/合成会失败）"; fi
+  if command -v cloudflared >/dev/null 2>&1; then cloudflared --version 2>/dev/null | head -1; else echo "cloudflared: 缺失（只影响公网访问）"; fi
+  echo "setup 标记 : $([ -f "$SETUP_FLAG" ] && echo "存在 $SETUP_FLAG" || echo "无（下次会重新安装）")"
+  echo "REPO_DIR   : $REPO_DIR"
+  if [ -L "$REPO_DIR/configs" ]; then
+    echo "configs    : symlink -> $(readlink "$REPO_DIR/configs")"
+  else
+    echo "configs    : 非 symlink（配置不会持久化）"
+  fi
+  [ -n "${COLAB_KOKORO_DIR:-}" ] && echo "音色目录   : ${COLAB_KOKORO_DIR}/voices（Drive）"
+  "$PY" - <<'PYCHECK'
+import importlib
+mods = ("fastapi", "uvicorn", "jinja2", "multipart", "fontTools", "opencc", "pydub",
+        "scipy", "numpy", "PIL", "soundfile", "kokoro", "misaki", "torch", "transformers",
+        "huggingface_hub", "loguru", "spacy", "regex", "num2words")
+missing = []
+for m in mods:
+    try:
+        mod = importlib.import_module(m)
+        ver = getattr(mod, "__version__", "")
+        print(f"  ok   {m} {ver}".rstrip())
+    except Exception as e:
+        missing.append(m)
+        print(f"  FAIL {m}: {type(e).__name__}: {e}")
+print("缺失模块   :", ", ".join(missing) if missing else "无")
+PYCHECK
+  for log in "$PIP_LOG" "$PIP_LOG.kokoro"; do
+    if [ -s "$log" ]; then
+      echo "--- $log（最后 12 行）---"
+      tail -n 12 "$log"
+    fi
+  done
+  echo "===== doctor 结束：把以上整段发出来即可定位 ====="
+}
+
+if [ "${1:-}" = "--doctor" ] || [ "${COLAB_DOCTOR:-0}" = "1" ]; then
+  _doctor
+  exit 0
+fi
+
+# 仓库目录是后面所有步骤的前提（doctor 模式除外，故意放在它后面）
+if [ "$REPO_MISSING" = "1" ]; then
+  echo "找不到仓库目录 $REPO_DIR（先跑 notebook 的克隆步）"
+  exit 1
+fi
+cd "$REPO_DIR" || { echo "进不去仓库目录 $REPO_DIR"; exit 1; }
 
 SKIP_INSTALL=0
 if [ "$FORCE_INSTALL" = "1" ]; then
@@ -135,6 +187,16 @@ num2words spacy phonemizer-fork espeakng-loader"
   if _tts_ok; then
     echo "    ok   kokoro/misaki 已可用，跳过"
   else
+    # 顺序很重要：先装依赖，再装 kokoro/misaki 本体，最后才判断 import。
+    # 反过来的话，第一次尝试会因为缺 loguru/transformers/huggingface_hub 等依赖而
+    # import 失败 → 被误判成"这个版本装不上" → 链式升级到 3.13 上不保证可用的 0.9.4。
+    echo "    先装英语必需依赖（kokoro 自身 import 也依赖它们）"
+    pip_try "$PIP_LOG.kokoro" --prefer-binary $KOKORO_DEPS ||
+      echo "    warn 英语必需依赖有失败项（详见 $PIP_LOG.kokoro）"
+    pip_try "$PIP_LOG.kokoro" --prefer-binary $KOKORO_EXTRA ||
+      echo "    warn 可选依赖（中文兜底 / 精细 G2P）有失败项 —— 不影响英语出片"
+
+    echo "    再装 kokoro/misaki 本体（依赖已就位，import 判断才可信）"
     # 首选：3.13 上可直接安装、且本机验证过的组合（--no-deps 绕开 kokoro 的 misaki>=0.7.16）
     _try_kokoro "--no-deps kokoro==0.7.16 misaki==0.7.4" \
       --no-deps "kokoro==0.7.16" "misaki==0.7.4" || true
@@ -148,10 +210,6 @@ num2words spacy phonemizer-fork espeakng-loader"
       _try_kokoro "--ignore-requires-python --no-deps kokoro misaki[en]（最新）" \
         --ignore-requires-python --no-deps kokoro "misaki[en]" || true
     fi
-    pip_try "$PIP_LOG.kokoro" --prefer-binary $KOKORO_DEPS ||
-      echo "    warn 英语必需依赖有失败项（详见 $PIP_LOG.kokoro）"
-    pip_try "$PIP_LOG.kokoro" --prefer-binary $KOKORO_EXTRA ||
-      echo "    warn 可选依赖（中文兜底 / 精细 G2P）有失败项 —— 不影响英语出片"
   fi
 
   if ! _tts_ok; then
