@@ -32,12 +32,23 @@ pip_try() {
   return 1
 }
 
-# 关键模块是否真的可用（标记文件可能来自"上次装了一半"的会话，所以必须实检）
+# 应用侧关键模块（Web 控制台 + 管线骨架）：缺一个就跑不起来
+_app_ok() {
+  "$PY" - <<'PYCHECK' >/dev/null 2>&1
+import importlib
+for m in ("fastapi", "uvicorn", "jinja2", "multipart", "fontTools", "opencc", "pydub",
+          "scipy", "numpy", "PIL", "soundfile"):
+    importlib.import_module(m)
+PYCHECK
+}
+
+# 全部关键模块（应用侧 + TTS）：标记文件唯一依据
 _ready_check() {
   command -v ffmpeg >/dev/null 2>&1 || return 1
   "$PY" - <<'PYCHECK' >/dev/null 2>&1
 import importlib
-for m in ("fastapi", "uvicorn", "PIL", "numpy", "soundfile", "kokoro", "misaki"):
+for m in ("fastapi", "uvicorn", "jinja2", "multipart", "fontTools", "opencc", "pydub",
+          "scipy", "numpy", "PIL", "soundfile", "kokoro", "misaki"):
     importlib.import_module(m)
 PYCHECK
 }
@@ -77,7 +88,14 @@ if [ "$SKIP_INSTALL" != "1" ]; then
   done
 
   echo "==> [2/4] Python 依赖：requirements.txt"
-  pip_try "$PIP_LOG" -r requirements.txt || echo "    warn requirements.txt 有失败项（详见 $PIP_LOG）"
+  # pip 对 `-r` 是「整份解析」：只要有一条无解（历史上 socksio>=2.0.0 就是），
+  # 整份一个包都不装。所以失败时逐条重试：单条坏 pin 只影响它自己。
+  if ! pip_try "$PIP_LOG" -r requirements.txt; then
+    echo "    warn requirements.txt 整份安装失败 —— 逐条安装（坏掉的那条只影响自己）"
+    grep -vE '^[[:space:]]*(#|$)' requirements.txt | while IFS= read -r req; do
+      pip_try "$PIP_LOG" "$req" || echo "      warn 单条安装失败：$req"
+    done
+  fi
 
   echo "==> [3/4] Kokoro TTS 栈（本地合成，主流程零积分）"
   # 关于 Python 版本（本机 3.13.11 实测 + PyPI 元数据，别改错）：
@@ -196,7 +214,8 @@ from pathlib import Path
 
 sys.path.insert(0, "pipeline")
 
-for mod in ("fastapi", "uvicorn", "PIL", "numpy", "soundfile", "kokoro", "misaki"):
+for mod in ("fastapi", "uvicorn", "jinja2", "multipart", "fontTools", "opencc", "pydub",
+            "scipy", "numpy", "PIL", "soundfile", "kokoro", "misaki"):
     try:
         importlib.import_module(mod)
         print(f"  ok   {mod}")
@@ -272,7 +291,17 @@ elif os.path.exists(cfg):
     print("  warn configs/ 不是 symlink —— 本会话的配置改动不会保留到下回开机")
 PYCHECK
 
-# 收尾闸门：kokoro 不可用 = 本步失败（否则 Step 2 出片时才报 ModuleNotFoundError）
+# 收尾闸门 1：应用依赖（Web 控制台与管线骨架）—— 历史坑：requirements.txt 里一条无解的
+# pin（曾出现 socksio>=2.0.0）会让整份安装失败，而旧脚本只打一行 warn 就继续，最后在起
+# 控制台或出片时才炸。现在直接失败并指路。
+if ! _app_ok; then
+  echo "==> FAIL 应用依赖缺失（Web 控制台/管线跑不起来）：看上面自检的 FAIL 行与 $PIP_LOG"
+  echo "    requirements.txt 是「整份解析」：单条坏 pin 会让整份一个包都不装；"
+  echo "    本步已自动逐条重试，重跑一次通常就补齐了。"
+  exit 1
+fi
+
+# 收尾闸门 2：kokoro 不可用 = 本步失败（否则 Step 2 出片时才报 ModuleNotFoundError）
 if ! _tts_ok; then
   echo "==> FAIL 本会话缺少 kokoro/misaki：Step 2 TTS 会报 No module named 'kokoro'。"
   echo "    常见原因：Colab 空闲回收/重连后 VM 本地盘的 pip 包会丢 —— 重跑本步即可恢复。"

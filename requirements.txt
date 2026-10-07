@@ -10,4 +10,8 @@ pydub>=0.25.1
 espeakng-loader>=0.2.0
 google-genai>=1.0.0
 PySocks>=1.7.1
-socksio>=2.0.0
+# socksio 在 PyPI 上最新就是 1.0.0（0.1.0/0.1.1/0.2.0/1.0.0 四个版本），
+# 写 >=2.0.0 会让 `pip install -r requirements.txt` 整份解析失败 → 一个包都装不上。
+# 本项目走 urllib + PySocks（pipeline/llm_client.py 的 SOCKS 代理窗口），
+# 代码里没有 import socksio，这里保留只是为了 httpx[socks] 之类的可选场景。
+socksio>=1.0.0
