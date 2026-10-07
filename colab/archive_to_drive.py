@@ -9,6 +9,10 @@ Colab 的本地盘随 VM 回收清空，所以「跑完的期」必须自己搬�
      （映射表来自 drive_config.py，开机由它恢复，保证主题防重与集数徽章跨会话连续）
 
 Web 控制台里跑完的期次同样用本脚本归档；命令行格跑完也调它。可重复执行（幂等）。
+另外 archive_all() 是给 app/pipeline_service.py 的收尾钩子直接调用的入口：Colab 上
+（COLAB_AUTO_ARCHIVE=1）控制台跑完一期会自动归档，不用记着再点一格 —— 「忘了归档 →
+VM 回收 → 成品没了」是这套流程最常踩的坑。
+
 用法：
     python3 colab/archive_to_drive.py                # 成品 + 状态
     python3 colab/archive_to_drive.py --state-only   # 只备份状态（很快）
@@ -22,7 +26,9 @@ import time
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-REPO_DIR = Path(os.environ.get("REPO_DIR", "/content/sleep_english")).resolve()
+# REPO_DIR 默认＝本脚本的上一级（Colab 由 env 传 /content/sleep_english）；
+# 本机 Windows 上直接跑（例如手工补归档）也能 import 到 app/。
+REPO_DIR = Path(os.environ.get("REPO_DIR") or HERE.parent).resolve()
 if str(HERE) not in sys.path:
     sys.path.insert(0, str(HERE))
 if str(REPO_DIR) not in sys.path:
@@ -114,6 +120,27 @@ def _backup_state(drive_state: Path, output_dir: Path) -> int:
     return n
 
 
+def archive_all(force: bool = False, products: bool = True, state: bool = True) -> dict:
+    """成品 + 运行状态一起归档，返回统计（供 CLI 与 Web 控制台收尾钩子共用）。
+
+    与 main() 判据完全一致，只是入口不同：驱动它的可能是 notebook 的一个单元格，
+    也可能是 app/pipeline_service.py 的出片收尾钩子（COLAB_AUTO_ARCHIVE=1 时）——
+    后者解决的是「跑完忘了点归档，VM 一回收成品就没了」这条最常见的数据丢失路径。
+    """
+    drive_root, _drive_cfg, drive_state = drive_paths()
+    output_dir = Path(os.environ.get("COLAB_OUTPUT_DIR", "/content/sleep_english_output"))
+
+    if not drive_root.parent.is_dir():
+        log(f"!! Drive 没挂载（{drive_root.parent} 不存在）—— 归档跳过，成品只在容器本地")
+        return {"ok": False, "reason": "drive_not_mounted", "runs": 0, "state_files": 0}
+
+    log(f"输出目录 {output_dir}")
+    runs = _archive_products(drive_root / "output", force=force) if products else 0
+    files = _backup_state(drive_state, output_dir) if state else 0
+    log("归档完成。下次开机：成品在 Drive，配置与状态自动恢复。")
+    return {"ok": True, "runs": runs, "state_files": files}
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description="成品与运行状态归档到 Google Drive")
     ap.add_argument("--products-only", action="store_true", help="只归档成品")
@@ -121,20 +148,10 @@ def main() -> int:
     ap.add_argument("--force", action="store_true", help="成品已在 Drive 也重拷一遍")
     args = ap.parse_args()
 
-    drive_root, _drive_cfg, drive_state = drive_paths()
-    output_dir = Path(os.environ.get("COLAB_OUTPUT_DIR", "/content/sleep_english_output"))
-
-    if not drive_root.parent.is_dir():
-        log(f"!! Drive 没挂载（{drive_root.parent} 不存在）—— 归档跳过，成品只在容器本地")
-        return 1
-
-    log(f"输出目录 {output_dir}")
-    if not args.state_only:
-        _archive_products(drive_root / "output", force=args.force)
-    if not args.products_only:
-        _backup_state(drive_state, output_dir)
-    log("归档完成。下次开机：成品在 Drive，配置与状态自动恢复。")
-    return 0
+    r = archive_all(force=args.force,
+                    products=not args.state_only,
+                    state=not args.products_only)
+    return 0 if r["ok"] else 1
 
 
 if __name__ == "__main__":

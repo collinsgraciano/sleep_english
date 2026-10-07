@@ -15,8 +15,9 @@ from types import SimpleNamespace
 from typing import Any
 
 from .config_manager import (
-    MODES, resolve_provider, load_config, load_mode_config, find_run_dir,
+    MODES, PARAM_SPEC, resolve_provider, load_config, load_mode_config, find_run_dir,
 )
+from .run_videos import resolve_run_source_video
 from . import run_mutex
 
 # Add pipeline source to path (local copy — fully independent)
@@ -137,6 +138,92 @@ def _cfg_line_words(config: dict) -> int:
     if v <= 0:
         return 10
     return max(4, min(20, v))
+
+
+# ---------------------------------------------------------------------------
+# BGM 参数来源解析（频道快照优先，缺键回落全局）
+# ---------------------------------------------------------------------------
+
+# BGM 组参数键（由 PARAM_SPEC 分组派生，新增 BGM 参数自动纳入）
+_BGM_CHANNEL_KEYS: tuple[str, ...] = tuple(
+    k for k, spec in PARAM_SPEC.items()
+    if str(spec.get("group", "")).startswith("bgm"))
+
+
+def _run_script_json(run_dir: Path) -> dict:
+    """运行目录 script.json（缺失/损坏返回空 dict）。"""
+    try:
+        data = json.loads((run_dir / "script.json").read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError, ValueError):
+        return {}
+    return data if isinstance(data, dict) else {}
+
+
+def _bgm_config_for_run(run_dir: Path, mode: str) -> tuple[dict, str, frozenset[str]]:
+    """「混BGM」参数来源：运行所属频道快照优先，缺键回落全局模式配置。
+
+    历史缺陷：`bgm_mix` 只读 load_mode_config(mode)（全局），配置页在频道
+    上下文写入的频道快照（bgm_music_dir / 侧链参数…）对它永不生效 ——
+    只有全局值生效。这里按运行 script.json.channel_id 覆盖回频道值（与
+    片头库 intro_library、缩略图 thumbnail_regen_service 同法）。
+
+    只覆盖**频道快照里显式存在**的键：频道快照缺键时若用
+    `load_channel_config`（= 出厂默认值 + 快照）会拿 PARAM_SPEC 出厂默认
+    （如 bgm_music_dir 默认 <repo>/bgm_music，可能并不存在）冒充"频道设置"，
+    反而把全局有效值顶掉。
+
+    返回 (config, 来源标签, 实际被频道覆盖的键集合)。
+    """
+    base = load_mode_config(mode) if mode in MODES else load_config()
+    cid = str(_run_script_json(run_dir).get("channel_id", "") or "").strip()
+    if not cid:
+        return dict(base), "全局模式配置", frozenset()
+    try:
+        from .channel_profiles import get_channel
+        channel = get_channel(cid)
+    except Exception:
+        channel = None
+    if channel is None:
+        return dict(base), f"全局模式配置（频道 {cid} 不存在）", frozenset()
+    explicit = channel.get("config") or {}
+    cfg = dict(base)
+    overridden: set[str] = set()
+    for key in _BGM_CHANNEL_KEYS:
+        val = explicit.get(key)
+        if val is None or (isinstance(val, str) and not val.strip()):
+            continue
+        cfg[key] = val
+        overridden.add(key)
+    label = f"频道 {cid}" if overridden else f"频道 {cid}（未单独设置 BGM 参数，用全局值）"
+    return cfg, label, frozenset(overridden)
+
+
+def _usable_music_dir(path: str) -> bool:
+    """音乐库目录可用 = 存在、是目录、且至少有一个文件。"""
+    p = str(path or "").strip()
+    if not p:
+        return False
+    try:
+        d = Path(p)
+        return d.is_dir() and any(d.iterdir())
+    except OSError:
+        return False
+
+
+def _resolve_music_dir(primary: str, primary_src: str,
+                       globals_: list[tuple[str, str]]) -> tuple[str, str]:
+    """音乐库路径解析：primary（频道/全局）→ 逐个回落候选 → 都不可用返回 ("", "")。
+
+    globals_ = [(路径, 来源说明), ...] 供回落；命中回落时在说明里标注原因，
+    调用方把它打进运行日志，方便一眼确认「到底用了哪个来源」。
+    """
+    if _usable_music_dir(primary):
+        return str(primary).strip(), primary_src
+    for cand, src in globals_:
+        if str(cand or "").strip() and str(cand).strip() != str(primary or "").strip() \
+                and _usable_music_dir(cand):
+            return str(cand).strip(), f"{src}（{primary_src} 的音乐库无效，已回落）"
+    return "", ""
 
 
 def _resolve_sleep_intro_video(config: dict) -> str:
@@ -1142,6 +1229,7 @@ class PipelineService:
             if final_4k_path and Path(final_4k_path).exists():
                 self._on_log_line(f"4K video: {final_4k_path}")
             self._log_step_summary()
+            self._maybe_auto_archive()
 
         except LLMStoppedError:
             # 用户点击「停止运行」→ LLM 等待/重试循环即时中止（BaseException
@@ -1177,6 +1265,41 @@ class PipelineService:
             self.error = msg
             self.finished_at = time.time()
         self._on_log_line(f"\nFATAL: {msg}")
+
+    def _maybe_auto_archive(self) -> None:
+        """Colab：出片完成后自动把成品与状态归档回 Drive（COLAB_AUTO_ARCHIVE=1 才启用）。
+
+        Colab 的本地盘随 VM 回收清空，「跑完忘了点归档」= 整期成品消失，是这套流程
+        最常见的翻车点；把归档挂到收尾钩子上就不需要人记着。只在 env 显式开启时动作，
+        因此本机 Windows（不设该变量）行为完全不变；归档失败只写一行日志、不影响
+        运行状态与成品本身。
+        """
+        if (os.environ.get("COLAB_AUTO_ARCHIVE", "") or "").strip().lower() not in (
+                "1", "true", "yes", "on"):
+            return
+        script = Path(__file__).resolve().parent.parent / "colab" / "archive_to_drive.py"
+        if not script.is_file():
+            return  # 非 Colab 布局（例如只拷了 app/ 的部署），静默跳过
+
+        def _work() -> None:
+            try:
+                import importlib.util
+
+                spec = importlib.util.spec_from_file_location(
+                    "_colab_archive_to_drive", script)
+                mod = importlib.util.module_from_spec(spec)
+                sys.modules["_colab_archive_to_drive"] = mod  # 兼容 dataclass/相对导入
+                spec.loader.exec_module(mod)
+                r = mod.archive_all()
+                note = (f"[Colab] 自动归档完成：成品 {r.get('runs', 0)} 期 · "
+                        f"状态 {r.get('state_files', 0)} 个文件"
+                        if r.get("ok") else
+                        f"[Colab] 自动归档跳过（{r.get('reason', 'unknown')}）：成品仍在容器本地")
+                self._on_log_line(note)
+            except Exception as e:
+                self._on_log_line(f"[Colab] 自动归档失败（不影响出片）：{type(e).__name__}: {e}")
+
+        threading.Thread(target=_work, name="colab-auto-archive", daemon=True).start()
 
     def _log_step_summary(self) -> None:
         """运行结束时的步骤耗时汇总（实时日志末尾 + 事后排查共用）。"""
@@ -1261,8 +1384,9 @@ class PipelineService:
     def generate_4k(self, run_name: str, mode: str = "") -> tuple[bool, str]:
         """为已完成运行生成（或重新生成）4K 版本（复用 Step 6 超分逻辑，本地渲染零积分）。
 
-        源视频 = 运行目录根部成片；固定 ffmpeg lanczos 引擎（4K 恒定生成，
-        超分配置组已移除）。后台线程执行；
+        源视频 = 原始成片（videos/{标题}.mp4 优先，根部回落；绝不用
+        intro_video/outro_video 素材副本）；固定 ffmpeg lanczos 引擎
+        （4K 恒定生成，超分配置组已移除）。后台线程执行；
         期间与主 pipeline / 模式测试互斥。
         返回 (ok, message)。
         """
@@ -1282,19 +1406,16 @@ class PipelineService:
         except (json.JSONDecodeError, OSError) as e:
             return False, f"script.json 读取失败: {e}"
 
-        # 成片定位：优先按脚本标题还原文件名，
-        # 否则取根部排除中间产物/旧 4K 后最新的 mp4
+        # 成片定位：videos/{标题}.mp4（compose 权威输出）→ 根部 {标题}.mp4
+        # → 全量成片候选中最新（含 BGM 版兜底，保持历史行为：成片只剩 _bgm
+        #   时仍可产出 4K；素材副本 intro_video/outro_video 永不入选）
         safe_vid_name = _safe_dirname(
             script.get("youtube_title", script.get("title", run_name)), run_name)
-        final_path = run_dir / f"{safe_vid_name}.mp4"
-        if not final_path.exists():
-            candidates = [v for v in run_dir.glob("*.mp4")
-                          if not v.name.startswith(("final_no_sub", "final_video_norm"))
-                          and not v.name.endswith("_4K.mp4")]
-            if not candidates:
-                return False, "未找到成片视频（运行目录根部无 final mp4）"
-            final_path = max(candidates, key=lambda v: v.stat().st_mtime)
-            safe_vid_name = final_path.stem
+        final_path = resolve_run_source_video(
+            run_dir, safe_vid_name, target="final", include_derived=True)
+        if final_path is None:
+            return False, "未找到成片视频（运行目录根部与 videos/ 均无 final mp4）"
+        safe_vid_name = final_path.stem
 
         # 超分配置组已移除：4K 恒定生成，固定 ffmpeg lanczos 引擎与默认超时
         upscale_engine, upscale_timeout = "ffmpeg", 3600
@@ -1340,7 +1461,10 @@ class PipelineService:
         try:
             print("=" * 60)
             print(f"Generate4K: {run_dir.name}")
-            print(f"  源视频: {Path(final_path).name}")
+            try:
+                print(f"  源视频: {Path(final_path).relative_to(run_dir).as_posix()}")
+            except ValueError:
+                print(f"  源视频: {Path(final_path).name}")
             # 已 4K 守卫（sleep 原生 4K 成片即 4K）：直接链接产出，零重编码
             try:
                 from media_utils import probe_resolution
@@ -1423,58 +1547,64 @@ class PipelineService:
         """为已完成运行混入版权 BGM（输出 {标题}_bgm.mp4 新文件，原片保留）。
 
         target="final" 混 1080p 成片；target="4k" 混 4K 版本
-        （输出 {标题}_4K_bgm.mp4）。参数读取运行所在模式的当前配置
-        （配置页改完即可对旧运行重混）。
+        （输出 {标题}_4K_bgm.mp4）。
+        **BGM 参数来源**：运行所属频道快照优先（配置页频道上下文写入的值），
+        缺键回落全局模式配置 —— 频道页设置的「音乐库路径」等参数对旧运行
+        重混同样生效（此前只读全局，频道路径永不生效）。
         照 generate_4k 模式在后台线程执行；期间与主 pipeline / 模式测试互斥。
         返回 (ok, message)。
         """
         if self.is_running:
             return False, "Pipeline 正在运行中，请等待完成后再混音"
 
-        config = load_mode_config(mode) if mode in MODES else load_config()
-        output_dir = Path(config.get("output_dir", "./output"))
+        base_config = load_mode_config(mode) if mode in MODES else load_config()
+        output_dir = Path(base_config.get("output_dir", "./output"))
         run_dir = find_run_dir(output_dir, run_name, mode)
         if not run_dir:
             return False, f"运行不存在: {run_name}"
         if not (run_dir / "script.json").exists():
             return False, "缺少 script.json"
 
-        # 成片定位：优先按脚本标题还原文件名，否则取根部最新的非中间产物 mp4
-        # （排除 _4K/_bgm 自身，避免拿 BGM 版再叠一层 BGM）
-        try:
-            script = json.loads((run_dir / "script.json").read_text(encoding="utf-8"))
-        except (json.JSONDecodeError, OSError) as e:
-            return False, f"script.json 读取失败: {e}"
+        # 参数来源：频道快照（显式键）优先，缺键=全局（见 _bgm_config_for_run）
+        config, config_src, channel_keys = _bgm_config_for_run(run_dir, mode)
+
+        # 成片定位：videos/{标题}.mp4（compose 权威输出）→ 根部 {标题}.mp4
+        # → 全量成片候选中最新。绝不回退到 intro_video/outro_video 素材副本
+        # 或 _bgm/_4K 派生文件（后者会"拿 BGM 版再叠一层 BGM"）
+        script = _run_script_json(run_dir)
+        if not script:
+            return False, "script.json 读取失败"
         safe_vid_name = _safe_dirname(
             script.get("youtube_title", script.get("title", run_name)), run_name)
-        if target == "4k":
-            # 4K 源定位：优先按脚本标题还原，否则取根部最新的 *_4K.mp4
-            # （{标题}_4K_bgm.mp4 以 _bgm.mp4 结尾，不匹配 *_4K.mp4，不会拿混音版再叠一层）
-            final_path = run_dir / f"{safe_vid_name}_4K.mp4"
-            if not final_path.exists():
-                candidates = list(run_dir.glob("*_4K.mp4"))
-                if not candidates:
-                    return False, "未找到 4K 视频（请先「生成4K」）"
-                final_path = max(candidates, key=lambda v: v.stat().st_mtime)
-        else:
-            # 成片定位：优先按脚本标题还原文件名，否则取根部最新的非中间产物 mp4
-            # （排除 _4K/_bgm 自身，避免拿 BGM 版再叠一层 BGM）
-            final_path = run_dir / f"{safe_vid_name}.mp4"
-            if not final_path.exists():
-                candidates = [
-                    v for v in run_dir.glob("*.mp4")
-                    if not v.name.startswith(("final_no_sub", "final_video_norm"))
-                    and not v.name.endswith(("_4K.mp4", "_bgm.mp4"))
-                ]
-                if not candidates:
-                    return False, "未找到成片视频（运行目录根部无 final mp4）"
-                final_path = max(candidates, key=lambda v: v.stat().st_mtime)
+        want_4k = target == "4k"
+        final_path = resolve_run_source_video(
+            run_dir, safe_vid_name, target="4k" if want_4k else "final")
+        if final_path is None:
+            return False, ("未找到 4K 视频（请先「生成4K」）" if want_4k else
+                           "未找到成片视频（运行目录根部与 videos/ 均无 final mp4）")
 
-        music_dir = str(config.get("bgm_music_dir", "") or "").strip() \
-            or str(Path(__file__).parent.parent / "bgm_music")
-        if not Path(music_dir).is_dir() or not any(Path(music_dir).iterdir()):
-            return False, (f"音乐库为空或不存在: {music_dir}\n"
-                           f"请放入音乐文件（mp3/wav/flac 等）或在配置页修改「音乐库路径」")
+        # 音乐库：频道/全局 → 最后出厂默认目录，逐级回落并在日志标注来源
+        default_music_dir = str(Path(__file__).parent.parent / "bgm_music")
+        global_music_dir = str(base_config.get("bgm_music_dir", "") or "").strip()
+        music_primary = str(config.get("bgm_music_dir", "") or "").strip()
+        if not music_primary:
+            music_primary = default_music_dir
+            music_src = f"出厂默认目录 {default_music_dir}"
+        elif "bgm_music_dir" in channel_keys:
+            music_src = config_src
+        else:
+            music_src = "全局模式配置"
+        music_dir, music_src = _resolve_music_dir(
+            music_primary, music_src,
+            [(global_music_dir, "全局模式配置"),
+             (default_music_dir, f"出厂默认目录 {default_music_dir}")])
+        if not music_dir:
+            return False, (
+                f"音乐库为空或不存在。\n"
+                f"  当前来源（{music_src or config_src}）: {music_primary or '(空)'}\n"
+                f"  全局模式配置: {global_music_dir or '(空)'}\n"
+                f"  出厂默认目录: {default_music_dir}\n"
+                f"请放入音乐文件（mp3/wav/flac 等）或在配置页/频道页修改「音乐库路径」")
 
         if not run_mutex.try_acquire("bgm_mix"):
             return False, (f"资源被占用：{run_mutex.current_owner()}"
@@ -1521,12 +1651,14 @@ class PipelineService:
         self._thread = threading.Thread(
             target=self._bgm_mix_run,
             args=(run_dir, final_path, out_path, music_dir, params, start_chapter),
+            kwargs={"config_src": config_src, "music_src": music_src},
             daemon=True)
         self._thread.start()
         return True, "BGM 混音已启动"
 
     def _bgm_mix_run(self, run_dir: Path, src_video: Path, out_path: Path,
-                     music_dir: str, params: dict, start_chapter: int = 1):
+                     music_dir: str, params: dict, start_chapter: int = 1,
+                     config_src: str = "", music_src: str = ""):
         """后台线程：mix_bgm_into_video 混音，成功原子替换旧 _bgm 产物。"""
         from bgm_mix import mix_bgm_into_video, chapter_start_seconds
         old_stdout = sys.stdout
@@ -1535,10 +1667,15 @@ class PipelineService:
         tmp_path = out_path.with_name(out_path.stem + "_tmp.mp4")
         self._step_begin("step55_bgm", f"单独混音 · {run_dir.name}")
         try:
+            try:
+                src_disp = src_video.relative_to(run_dir).as_posix()
+            except ValueError:
+                src_disp = src_video.name
             print("=" * 60)
             print(f"BGM Mix: {run_dir.name}")
-            print(f"  源视频: {src_video.name}")
-            print(f"  音乐库: {music_dir}")
+            print(f"  源视频: {src_disp}")
+            print(f"  音乐库: {music_dir}（来源: {music_src or config_src or '全局模式配置'}）")
+            print(f"  参数来源: {config_src or '全局模式配置'}")
             print(f"  混音模式: {params['ducking_mode']}")
             params = dict(params)
             params["bgm_start_seconds"] = chapter_start_seconds(run_dir, start_chapter)

@@ -16,6 +16,19 @@ pip install -r requirements.txt
 run.bat            # http://localhost:8766
 ```
 
+## 在 Google Colab 上跑（默认 CPU · 一键）
+
+仓库公开，直接打开就是完整环境（拉最新代码 → 装依赖 → 配置/音色/成品全落 Google Drive →
+起同一个 Web 控制台 + Cloudflare 免费域名）：
+
+- 单格一键版：`https://colab.research.google.com/github/collinsgraciano/sleep_english/blob/master/colab/sleep_english_colab.ipynb`
+- 分格逐步版：同目录 `colab/sleep_english_colab_steps.ipynb`
+- 细节、参数、故障对照见 [colab/README.md](colab/README.md)
+
+要点：默认 `KOKORO_DEVICE=cpu`（结果与机器无关，不必抢 GPU）；Drive 上持久化配置
+（`configs/`）、28 个 Kokoro 音色权重与全部试听（`kokoro/voices/`）、预生成脚本镜像
+（`scripts/`）、成品归档（`output/`）与运行状态（`state/`）；控制台出片跑完自动归档。
+
 ## Web 功能
 
 | 页面 | 说明 |

@@ -35,6 +35,18 @@ if _kokoro_cache.exists() and any(_kokoro_cache.rglob("kokoro-v1_0.pth")):
     os.environ["HF_HUB_OFFLINE"] = "1"
 
 
+# Kokoro 计算设备：KOKORO_DEVICE=cpu / cuda 显式指定，留空 = 交给 kokoro 自动探测
+# （有 CUDA 就用 CUDA）。Colab CPU 版把 cpu 写进 colab_env.sh，于是即使分配到 GPU
+# 运行时也走 CPU —— 结果与机器无关，便于复现；想用 GPU 就把该变量改成 cuda 或删掉。
+_KOKORO_DEVICE_CHOICES = ("cpu", "cuda")
+
+
+def _kokoro_device() -> str | None:
+    """KOKORO_DEVICE 环境变量 → KPipeline(device=...) 的取值；空/非法 = None（自动）。"""
+    raw = (os.environ.get("KOKORO_DEVICE", "") or "").strip().lower()
+    return raw if raw in _KOKORO_DEVICE_CHOICES else None
+
+
 # Known words that cause Kokoro to silently produce no audio.
 # Map each to a phonetically similar spelling that Kokoro can handle.
 _PHONETIC_FIXES = {
@@ -284,10 +296,12 @@ class TTSEngine:
         """
         if cls._kokoro_pipeline is None:
             from kokoro import KPipeline
+            device = _kokoro_device()
             try:
-                cls._kokoro_pipeline = KPipeline(lang_code='a')
+                cls._kokoro_pipeline = KPipeline(lang_code='a', device=device)
             except Exception as e:
                 raise RuntimeError(f"Kokoro English model failed to load: {e}") from e
+            print(f"[Kokoro] English pipeline ready (device={device or 'auto'})")
             _ensure_espeak_fallback(cls._kokoro_pipeline)
         return cls._kokoro_pipeline
 
@@ -299,7 +313,7 @@ class TTSEngine:
         if cls._kokoro_zh_pipeline is None:
             from kokoro import KPipeline
             try:
-                cls._kokoro_zh_pipeline = KPipeline(lang_code='z')
+                cls._kokoro_zh_pipeline = KPipeline(lang_code='z', device=_kokoro_device())
             except Exception as e:
                 raise RuntimeError(f"Kokoro Chinese model failed to load: {e}") from e
         return cls._kokoro_zh_pipeline

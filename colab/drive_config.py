@@ -7,12 +7,14 @@
     读写都经过 `app/config_manager.py` 的 `CONFIGS_DIR = WEB_ROOT/"configs"`，落到
     symlink 上就等于直接写 Drive —— 零代码改动拿到全量持久化。
 
-四件事：
+六件事：
     1. 播种：仓库 `configs/` 里「Drive 上还没有」的文件逐项拷过去（绝不覆盖用户改过的）
     2. 链接：`rm -rf <repo>/configs && ln -s <Drive>/configs <repo>/configs`
     3. 恢复：Drive `state/` 里的 used_topics.json / .thumb_episode.json / .sleep_cache
              拷回本地输出目录（本地盘每次开机都是空的，集数编号与主题防重要接着数）
     4. 令牌：读或生成访问令牌写进 env 文件 —— 隧道域名每次开机都会换，令牌保持不变
+    5. 目录：建好 `<Drive>/kokoro/voices/`（Kokoro 音色权重持久化）与 `<Drive>/scripts/`
+    6. 脚本：`COLAB_SCRIPTS_SYNC=1`（默认）时把 Drive 上更新的预生成脚本补进仓库
 
 Drive 没挂 / 没授权时**不阻塞**：打一条醒目警告，降级为「配置只在本次会话有效」，
 出片链路照常。
@@ -23,6 +25,14 @@ Drive 没挂 / 没授权时**不阻塞**：打一条醒目警告，降级为「�
     COLAB_OUTPUT_DIR=/content/sleep_english_output \
     ENV_FILE=/content/colab_env.sh \
         python3 colab/drive_config.py
+
+顺带（同一次调用里做完，避免 notebook 再多一步）：
+    * 建好 `<Drive>/kokoro/voices/`（Kokoro 全音色权重的持久化目录，
+      由 colab/kokoro_voices.py 负责同步与试听生成）；
+    * `COLAB_SCRIPTS_SYNC=1`（默认）时把 `<Drive>/scripts/{ai_scripts,ai_scripts_hot}/`
+      里更新的预生成脚本补进仓库（colab/scripts_sync.py）；
+    * 把 COLAB_KOKORO_DIR / COLAB_AUTO_ARCHIVE / COLAB_SCRIPTS_SYNC 写进 env 文件，
+      供 serve.sh 起来的 Web 控制台与命令行出片共用。
 """
 import os
 import secrets
@@ -32,6 +42,7 @@ import sys
 from pathlib import Path
 
 REPO_DIR = Path(os.environ.get("REPO_DIR", "/content/sleep_english")).resolve()
+HERE = Path(__file__).resolve().parent
 OUTPUT_DIR = Path(os.environ.get("COLAB_OUTPUT_DIR", "/content/sleep_english_output")).resolve()
 DRIVE_ROOT = Path(os.environ.get(
     "DRIVE_ROOT", "/content/drive/MyDrive/sleep_english_colab")).resolve()
@@ -70,6 +81,16 @@ def _flag(name: str, default: bool = True) -> bool:
 def drive_paths() -> tuple[Path, Path, Path]:
     """返回 (drive_root, drive_configs, drive_state)。"""
     return DRIVE_ROOT, DRIVE_ROOT / "configs", DRIVE_ROOT / "state"
+
+
+def kokoro_dir() -> Path:
+    """Drive 上的 Kokoro 音色权重目录（colab/kokoro_voices.py 的事实源）。"""
+    return Path(_env("COLAB_KOKORO_DIR") or (DRIVE_ROOT / "kokoro"))
+
+
+def scripts_root() -> Path:
+    """Drive 上的预生成脚本镜像根（colab/scripts_sync.py 的事实源）。"""
+    return Path(_env("COLAB_SCRIPTS_ROOT") or (DRIVE_ROOT / "scripts"))
 
 
 def _skippable(p: Path) -> bool:
@@ -191,22 +212,27 @@ def main() -> int:
         token, _ = load_or_create_token(ENV_FILE.parent / "colab_access_token.txt")
         set_env_var(ENV_FILE, "COLAB_ACCESS_TOKEN", token)
         set_env_var(ENV_FILE, "COLAB_CONFIG_PERSISTED", "0")
+        # 音色/脚本目录仍然指过去：Drive 真在的话 kokoro_voices.py 会自己写进去，
+        # 只是本步没法确认挂载，所以标 0 让上层自己判断。
+        set_env_var(ENV_FILE, "COLAB_KOKORO_DIR", str(kokoro_dir()))
+        set_env_var(ENV_FILE, "COLAB_AUTO_ARCHIVE", "0")
+        set_env_var(ENV_FILE, "COLAB_SCRIPTS_SYNC", "0")
         log(f"访问令牌（临时）…{token[-4:]}")
         return 0
 
     drive_cfg.mkdir(parents=True, exist_ok=True)
     drive_state.mkdir(parents=True, exist_ok=True)
 
-    # ---------------------------------------------------------------- 1/4 播种
+    # ---------------------------------------------------------------- 1/6 播种
     link_configs = _flag("DRIVE_LINK_CONFIGS", True) and os.name != "nt"
     if repo_cfg.is_symlink():
-        log("==> [1/4] configs 已指向 Drive，跳过播种")
+        log("==> [1/6] configs 已指向 Drive，跳过播种")
     else:
         repo_cfg.mkdir(parents=True, exist_ok=True)
         n = seed_missing(repo_cfg, drive_cfg)
-        log(f"==> [1/4] 播种 {n} 个文件到 Drive 配置目录（已存在的一律不动）")
+        log(f"==> [1/6] 播种 {n} 个文件到 Drive 配置目录（已存在的一律不动）")
 
-        # ------------------------------------------------------------ 2/4 链接
+        # ------------------------------------------------------------ 2/6 链接
         if link_configs:
             backup = None
             if repo_cfg.exists():
@@ -218,12 +244,12 @@ def main() -> int:
                         shutil.rmtree(backup, ignore_errors=True)
                 shutil.move(str(repo_cfg), str(backup))
             os.symlink(str(drive_cfg), str(repo_cfg))
-            log(f"==> [2/4] configs → {drive_cfg}（仓库原文件留在 {backup}）")
+            log(f"==> [2/6] configs → {drive_cfg}（仓库原文件留在 {backup}）")
         else:
-            log("==> [2/4] 跳过 symlink（DRIVE_LINK_CONFIGS=0 或非 Linux 环境）")
+            log("==> [2/6] 跳过 symlink（DRIVE_LINK_CONFIGS=0 或非 Linux 环境）")
             log("    注意：此时代码读写的仍是仓库内 configs/，本步只做 Drive 备份播种")
 
-    # ---------------------------------------------------------------- 3/4 恢复
+    # ---------------------------------------------------------------- 3/6 恢复
     restored = 0
     for drive_name, local_rel in STATE_FILES:
         restored += restore_missing(drive_state / drive_name,
@@ -231,22 +257,55 @@ def main() -> int:
     for drive_name, local_rel in STATE_DIRS:
         restored += restore_missing(drive_state / drive_name,
                                     OUTPUT_DIR / local_rel, f"state/{drive_name}/")
-    log(f"==> [3/4] 运行状态恢复 {restored} 个文件"
+    log(f"==> [3/6] 运行状态恢复 {restored} 个文件"
         f"（主题防重 / 集数徽章 / LLM 批次缓存）")
 
-    # ---------------------------------------------------------------- 4/4 令牌
+    # ---------------------------------------------------------------- 4/6 令牌
     token, fresh = load_or_create_token(drive_state / "access_token.txt")
     set_env_var(ENV_FILE, "COLAB_ACCESS_TOKEN", token)
     set_env_var(ENV_FILE, "COLAB_DRIVE_ROOT", str(drive_root))
     set_env_var(ENV_FILE, "COLAB_STATE_DIR", str(drive_state))
     set_env_var(ENV_FILE, "COLAB_CONFIG_PERSISTED", "1")
-    log(f"==> [4/4] 访问令牌{'已生成' if fresh else '已恢复'}（存 {drive_state / 'access_token.txt'}）…{token[-4:]}")
+    log(f"==> [4/6] 访问令牌{'已生成' if fresh else '已恢复'}（存 {drive_state / 'access_token.txt'}）…{token[-4:]}")
+
+    # ---------------------------------------------------------------- 5/6 目录
+    kokoro = kokoro_dir()
+    scripts = scripts_root()
+    for d in (kokoro / "voices", scripts):
+        try:
+            d.mkdir(parents=True, exist_ok=True)
+        except OSError as e:
+            log(f"  !! 建目录失败 {d}：{e}")
+    set_env_var(ENV_FILE, "COLAB_KOKORO_DIR", str(kokoro))
+    auto_archive = _flag("COLAB_AUTO_ARCHIVE", True)
+    scripts_sync_on = _flag("COLAB_SCRIPTS_SYNC", True)
+    set_env_var(ENV_FILE, "COLAB_AUTO_ARCHIVE", "1" if auto_archive else "0")
+    set_env_var(ENV_FILE, "COLAB_SCRIPTS_SYNC", "1" if scripts_sync_on else "0")
+    log(f"==> [5/6] 目录就绪：Kokoro 音色 → {kokoro / 'voices'}"
+        f" · 预生成脚本 → {scripts}")
+
+    # ---------------------------------------------------------------- 6/6 脚本
+    if scripts_sync_on:
+        try:
+            if str(HERE) not in sys.path:
+                sys.path.insert(0, str(HERE))
+            from scripts_sync import drive_scripts_root, pull_all
+            n = pull_all(drive_root, REPO_DIR)
+            log(f"==> [6/6] 预生成脚本 Drive → 仓库补缺 {n} 个文件"
+                f"（{drive_scripts_root(drive_root)}）")
+        except Exception as e:  # 同步失败绝不能拖垮配置持久化
+            log(f"!! [6/6] 预生成脚本同步失败（不影响出片）：{type(e).__name__}: {e}")
+    else:
+        log("==> [6/6] 跳过预生成脚本同步（COLAB_SCRIPTS_SYNC=0）")
 
     print()
     log("配置持久化就绪：")
     log(f"  配置（含 LLM 密钥）→ {drive_cfg}")
     log(f"  运行状态           → {drive_state}")
+    log(f"  Kokoro 音色        → {kokoro / 'voices'}"
+        f"（由 colab/kokoro_voices.py 同步 / 生成试听）")
     log(f"  令牌               → {ENV_FILE} 里的 COLAB_ACCESS_TOKEN")
+    log(f"  出片后自动归档     → {'开' if auto_archive else '关'}（COLAB_AUTO_ARCHIVE）")
     log("  改配置去 Web 控制台改，改完直接落 Drive，下回开机自动恢复。")
     return 0
 
