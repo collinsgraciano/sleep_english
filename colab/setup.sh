@@ -80,17 +80,24 @@ if [ "$SKIP_INSTALL" != "1" ]; then
   pip_try "$PIP_LOG" -r requirements.txt || echo "    warn requirements.txt 有失败项（详见 $PIP_LOG）"
 
   echo "==> [3/4] Kokoro TTS 栈（本地合成，主流程零积分）"
-  # 为什么这里这么啰嗦：kokoro / misaki 在 PyPI 上的元数据写的是 Requires-Python <3.13，
-  # 而 Colab 新运行时是 3.13 —— 直接 `pip install kokoro` 会「无版本可装」。
-  # 它们是纯 Python 包，所以用 --no-deps 装轮子再把依赖单独补上；仍然失败就退到不带
-  # 版本约束的尝试。每轮都实检 import，装不上就**不写标记**（绝不假装成功）。
+  # 关于 Python 版本（本机 3.13.11 实测 + PyPI 元数据，别改错）：
+  #   * kokoro / misaki 的较新版本元数据写的是 Requires-Python <3.13，Colab（3.13）上
+  #     普通安装就是「Ignored ... requires a different python version / 无版本可装」；
+  #   * **--no-deps 不能绕过 Requires-Python**（要 --ignore-requires-python）—— 旧写法
+  #     就是这样踩的坑；
+  #   * 能直接在 3.13 上装的组合：kokoro==0.7.16 + misaki==0.7.4（都声明 >=3.7、纯 Python
+  #     轮子），但 kokoro 0.7.16 的依赖写着 misaki>=0.7.16，所以这两个必须配 --no-deps 装，
+  #     再由我们把依赖单独补齐（本机就是这套组合在跑）；
+  #   * 0.9.4 那套（老 notebook 用过）只能 --ignore-requires-python 强装，作为兜底。
   PY_VER="$("$PY" -c 'import sys; print("%d.%d" % sys.version_info[:2])' 2>/dev/null || echo "0.0")"
-  echo "    Python $PY_VER（kokoro/misaki 的 PyPI 元数据是 <3.13，3.13 上必须 --no-deps）"
+  echo "    Python $PY_VER"
   : >"$PIP_LOG.kokoro"
 
-  KOKORO_DEPS="torch cn2an pypinyin pypinyin-dict ordered_set jieba num2words addict regex \
-espeakng-loader phonemizer-fork spacy spacy-curated-transformers transformers \
-huggingface-hub loguru soundfile numpy"
+  # 英语出片必需（都能在 3.13 上装）
+  KOKORO_DEPS="torch transformers huggingface-hub numpy scipy loguru soundfile regex \
+num2words spacy phonemizer-fork espeakng-loader"
+  # 可选：中文兜底音色 + 更精细的英文 G2P；装不上不影响英语出片
+  KOKORO_EXTRA="spacy-curated-transformers cn2an pypinyin pypinyin-dict ordered-set jieba addict"
 
   _try_kokoro() {
     local label="$1"; shift
@@ -109,30 +116,24 @@ huggingface-hub loguru soundfile numpy"
 
   if _tts_ok; then
     echo "    ok   kokoro/misaki 已可用，跳过"
-  elif [ "$(printf '%s\n3.13\n' "$PY_VER" | sort -V | head -n1)" = "3.13" ]; then
-    # 3.13：元数据 <3.13 导致普通安装「无版本可装」，故 --no-deps 装轮子 + 单独补依赖
-    if ! _try_kokoro "--no-deps misaki[en]==0.9.4 kokoro==0.9.4" \
-        --no-deps "misaki[en]==0.9.4" "kokoro==0.9.4"; then
-      _try_kokoro "--no-deps misaki[en] kokoro（最新）" --no-deps "misaki[en]" kokoro || true
-    fi
-    pip_try "$PIP_LOG.kokoro" --prefer-binary $KOKORO_DEPS ||
-      echo "    warn kokoro 依赖有失败项（详见 $PIP_LOG.kokoro）"
   else
-    # 3.10-3.12：本机验证过的固定组合；失败再退到 --no-deps
-    if ! _try_kokoro "kokoro==0.7.16 misaki==0.7.4 phonemizer-fork==3.3.2" \
-        "kokoro==0.7.16" "misaki==0.7.4" "phonemizer-fork==3.3.2" \
-        espeakng-loader soundfile jieba einops regex loguru spacy transformers huggingface-hub; then
-      _try_kokoro "--no-deps kokoro==0.7.16 misaki==0.7.4" \
-        --no-deps "kokoro==0.7.16" "misaki==0.7.4" || true
+    # 首选：3.13 上可直接安装、且本机验证过的组合（--no-deps 绕开 kokoro 的 misaki>=0.7.16）
+    _try_kokoro "--no-deps kokoro==0.7.16 misaki==0.7.4" \
+      --no-deps "kokoro==0.7.16" "misaki==0.7.4" || true
+    if ! _tts_ok; then
+      # 兜底 1：0.9.4（元数据 <3.13，必须 --ignore-requires-python 才装得上）
+      _try_kokoro "--ignore-requires-python --no-deps kokoro==0.9.4 misaki[en]==0.9.4" \
+        --ignore-requires-python --no-deps "kokoro==0.9.4" "misaki[en]==0.9.4" || true
+    fi
+    if ! _tts_ok; then
+      # 兜底 2：不带版本约束的最新版（同样强制忽略 Requires-Python）
+      _try_kokoro "--ignore-requires-python --no-deps kokoro misaki[en]（最新）" \
+        --ignore-requires-python --no-deps kokoro "misaki[en]" || true
     fi
     pip_try "$PIP_LOG.kokoro" --prefer-binary $KOKORO_DEPS ||
-      echo "    warn kokoro 依赖有失败项（详见 $PIP_LOG.kokoro）"
-  fi
-
-  if ! _tts_ok; then
-    echo "    kokoro/misaki 仍未就绪，最后一轮：不带版本约束直接装"
-    pip_try "$PIP_LOG.kokoro" kokoro "misaki[en]" || true
-    pip_try "$PIP_LOG.kokoro" --prefer-binary $KOKORO_DEPS || true
+      echo "    warn 英语必需依赖有失败项（详见 $PIP_LOG.kokoro）"
+    pip_try "$PIP_LOG.kokoro" --prefer-binary $KOKORO_EXTRA ||
+      echo "    warn 可选依赖（中文兜底 / 精细 G2P）有失败项 —— 不影响英语出片"
   fi
 
   if ! _tts_ok; then
@@ -201,6 +202,24 @@ for mod in ("fastapi", "uvicorn", "PIL", "numpy", "soundfile", "kokoro", "misaki
         print(f"  ok   {mod}")
     except Exception as e:
         print(f"  FAIL {mod}: {e}")
+
+try:  # 版本号很关键：3.13 上能装的组合与 3.12 不同，排障时先看这一行
+    import kokoro
+    import misaki
+    print(f"  ok   kokoro {getattr(kokoro, '__version__', '?')}"
+          f" · misaki {getattr(misaki, '__version__', '?')}")
+except Exception:
+    pass
+
+# 英文 G2P 冒烟（不需要下载 330MB 模型就能验证音素化链路）
+try:
+    from misaki import en as _misaki_en
+    _g2p = _misaki_en.G2P(british=False)
+    _ps, _ = _g2p("Good night. Sweet dreams.")
+    # 只报长度：IPA 字符在某些终端编码下会直接抛 UnicodeEncodeError（假报警）
+    print(f"  ok   misaki en G2P（音素 {len(_ps)} 字符）")
+except Exception as e:
+    print(f"  WARN misaki en G2P 不可用（英语合成会失败）：{str(e)[:120]}")
 
 cuda = False
 try:
