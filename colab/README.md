@@ -48,6 +48,13 @@ Kokoro 全部音色与试听落 Drive → 起完整 Web 控制台（Cloudflare �
 
 > 只用预生成脚本出片（控制台「预生成脚本」页）时**不需要任何 LLM 密钥**，零 API 调用。
 
+> **会话生命周期（最容易踩的坑）**：Colab 空闲约 90 分钟会回收 VM，**`/content` 下的东西
+> 全都没了 —— 包括 pip 装好的依赖**（Drive 上的配置/音色/成品不受影响）。
+> 重连后从 `code` 步重跑一遍（`setup` → `drive` → `config` → `voices` → `console`）即可；
+> 单格版默认就是这个顺序。如果只重跑了「配置/启动」而没跑 `setup`，控制台能起来，
+> 但一出片就会报 `ModuleNotFoundError: No module named 'kokoro'` —— 现在 `setup` 步会实检
+> `import kokoro` 并在缺失时**直接失败**（不会假装装好），单格版的 TTS 相关步骤也会先自动补装。
+
 ## Drive 目录布局
 
 ```
@@ -80,7 +87,7 @@ MyDrive/<DRIVE_DIR>/                 # DRIVE_DIR 默认 sleep_english_colab
 | 步骤 | 脚本 | 做了什么 |
 |---|---|---|
 | `code` | notebook | `git pull --ff-only`，失败（工作树被改过）就整目录浅克隆最新代码 |
-| `setup` | `colab/setup.sh` | apt（ffmpeg / espeak-ng / Noto CJK 字体软链）+ pip（requirements + Kokoro 栈 + spacy 模型）+ cloudflared + 自检。**装过一次就秒过**（标记文件 + 实检；`FORCE_INSTALL=True` 强制重装） |
+| `setup` | `colab/setup.sh` | apt（ffmpeg / espeak-ng / Noto CJK 字体软链）+ pip（requirements + Kokoro 栈 + spacy 模型）+ cloudflared + 自检。**装过一次就秒过**（标记文件 + 实检；`FORCE_INSTALL=True` 强制重装）；`import kokoro` 实检不过就**不写标记并 exit 1**（pip 细节见 `/content/colab_logs/pip.log*`） |
 | `drive` | notebook | 挂 Drive，写 `/content/colab_env.sh` |
 | `config` | `colab/drive_config.py` + `colab/colab_config.py` | 配置播种/链接到 Drive、恢复运行状态、访问令牌、建 `kokoro/`+`scripts/`、从 Drive 拉预生成脚本；平台归一化（输出目录/主题库/Kokoro/关 4K/关 BGM/清 `H:\` 路径）+ 从 Secrets 刷新 LLM 密钥 |
 | `voices` | `colab/kokoro_voices.py` | 预热模型 + Drive→本地补缺音色 + 补齐缺失音色 + 生成全部试听 mp3 + 本地→Drive 回写（幂等） |
@@ -211,6 +218,7 @@ cd .. && python3 colab/archive_to_drive.py
 | `COLAB_AUTO_ARCHIVE` | Colab 上 `1` | 控制台出片完成后自动归档（本机不设=不变） |
 | `COLAB_SETUP_FLAG` | `/content/.colab_setup_done` | 安装标记（幂等跳过用） |
 | `COLAB_FORCE_INSTALL` | `0` | `1` = 忽略标记强制重装依赖 |
+| `COLAB_PIP_LOG` | `/content/colab_logs/pip.log` | pip 安装日志（失败时脚本会把尾部打出来） |
 | `COLAB_HF_ENDPOINT` | 空 | 设了就先按它作为 `HF_ENDPOINT`（例：`https://hf-mirror.com`） |
 | `COLAB_LOG_DIR` | `/content/colab_logs` | uvicorn / cloudflared 日志目录 |
 
@@ -235,6 +243,8 @@ cd .. && python3 colab/archive_to_drive.py
 
 | 现象 | 大概率原因 / 处理 |
 |---|---|
+| **出片报 `ModuleNotFoundError: No module named 'kokoro'`** | 本会话没装依赖：Colab 回收/重连后 VM 本地盘的 pip 包会丢 → 重跑 `setup` 步（要强制重装：`FORCE_INSTALL=True`）。自检/依赖实检会先报出来；单格版的 TTS 步骤也会自动补装 |
+| `setup` 步失败并打印 pip 日志 | 看 `/content/colab_logs/pip.log.kokoro` 尾部；网络抖动直接重跑本步。Python 3.13 上 kokoro/misaki 的 PyPI 元数据是 `<3.13`，脚本已自动改用 `--no-deps` 安装 |
 | `code` 步 404/401 | 私有 fork 没填 `SECRET_GITHUB_TOKEN`；公开仓库则检查参数区 `REPO_URL` / `BRANCH` |
 | `drive` 步警告「没挂载 Drive」 | Drive 授权被跳过 → 重跑该步允许挂载；否则配置/音色/成品只在本次会话有效 |
 | 配置改了但下回开机没保留 | `config` 步没跑成功（configs 没 symlink）→ 看它打印的警告，重跑该步 |
