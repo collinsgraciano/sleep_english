@@ -5,23 +5,39 @@
 
 ---
 
-## 1. 访问
+## 1. 访问（带密码闸门）
 
 | 项 | 值 |
 |---|---|
 | Web 控制台 | **http://45.13.214.22:8766** |
-| 监听 | `0.0.0.0:8766`（systemd 服务 `sleep-english`） |
-| 认证 | **无**（按部署要求直连）。⚠️ 控制台无鉴权：任何扫到该端口的人都能读取 `configs/` 里的 API Key 并用你的额度跑视频 |
+| 监听 | `0.0.0.0:8766`（systemd 服务 `sleep-english`，入口 `serve_auth:application`） |
+| **认证** | **密码闸门已启用**：密码 `inriynisse`（`.vps_env` 的 `SLEEP_AUTH_PASSWORD`） |
+| cookie | `sleep_auth`，**365 天**（`Max-Age=31536000`，HttpOnly + SameSite=Lax），首次输密码后免输 |
 
-**想加一层令牌闸门（60 秒，仓库自带中间件）**：
+三种登录方式（都种同一个 365 天 cookie）：
+1. 浏览器打开 `http://45.13.214.22:8766/` → 输入密码的登录页；
+2. 直接访问 `http://45.13.214.22:8766/?ct=inriynisse` → 免输密码，种 cookie 后自动跳回（密码不会留在地址栏）；
+3. 脚本/curl：请求头 `X-Sleep-Auth: <密码>`（也兼容 `X-Colab-Token`）。
+
+细节：cookie 值是 `HMAC-SHA256(随机盐, 密码)`，**不含明文密码**；盐值在 `configs/.auth_salt`（0600），
+所以换密码会让所有旧 cookie 立即失效。失败限流：同 IP 5 分钟 10 次 → 429。免鉴权：`/login`、`/api/health`、`/favicon.ico`。
+
 ```bash
-# /etc/systemd/system/sleep-english.service 里把 ExecStart 改成：
-#   /opt/sleep_english/.venv/bin/python -m uvicorn secure_gate:app --host 0.0.0.0 --port 8766
-# 并在 .vps_env 增加 COLAB_ACCESS_TOKEN=<随机串>；PYTHONPATH 需包含 repo 根与 colab/
-#   Environment=PYTHONPATH=/opt/sleep_english:/opt/sleep_english/colab
-systemctl daemon-reload && systemctl restart sleep-english
-# 之后用 http://45.13.214.22:8766/?ct=<令牌> 打开（首次种 cookie，24h 内免带）
+# 改密码（改完重启生效）
+sed -i 's/^SLEEP_AUTH_PASSWORD=.*/SLEEP_AUTH_PASSWORD=你的新密码/' /opt/sleep_english/.vps_env
+systemctl restart sleep-english
+
+# 临时关闭闸门（置空 = 直通，任何扫到端口的人都能用，慎用）
+sed -i 's/^SLEEP_AUTH_PASSWORD=.*/SLEEP_AUTH_PASSWORD=/' /opt/sleep_english/.vps_env && systemctl restart sleep-english
+
+# 忘密码：直接看配置文件
+grep SLEEP_AUTH_PASSWORD /opt/sleep_english/.vps_env
 ```
+
+> ⚠️ 安全边界：① 默认密码是弱口令且写在仓库/文档里，**建议改成自己的**；
+> ② 目前是明文 HTTP，cookie 与密码在链路上可被嗅探，要真正安全需上 TLS
+> （可后续加 Caddy 或 Cloudflare 隧道，仓库自带 `colab/secure_gate.py` 那套也可复用）；
+> ③ 登录后仍能看到配置里的 API Key —— 闸门挡的是"扫到端口就能用"，不是内网级隔离。
 
 ---
 
@@ -57,13 +73,55 @@ systemctl restart sleep-english       # 重启（改配置后必须重启才生�
 journalctl -u sleep-english -f         # 跟随日志
 tail -f /opt/sleep_english/logs/mem_run_*.log   # 内存采样
 
-# 命令行出片（等价 Web 一键生成；参数与 CLI 一致）
+# ★ 更新代码（本机 push 之后，VPS 上一条命令；约 10-20 秒）
+cd /opt/sleep_english && git pull --ff-only origin master && systemctl restart sleep-english
+bash /opt/sleep_english/vps_update.sh              # 等价但更稳：安全检查+备份+依赖+重启+自检
+bash /opt/sleep_english/vps_update.sh --dry-run    # 只看会拉什么（不改工作区）
+bash /opt/sleep_english/vps_update.sh --force      # 出片正在跑时强制更新（会中断它）
+
+# 命令行出片（读同一份配置：模型/4K 开关与网页一致；参数与 CLI 相同）
 bash /opt/sleep_english/run_cli.sh --resume --sleep-pairs 50
 bash /opt/sleep_english/run_cli.sh --resume --upscale-timeout 43200   # 只补 4K
+bash /opt/sleep_english/run_cli.sh --resume --no-4k                   # 显式覆盖配置里的开关
 
-# 部署自查
+# 部署自查 / 内存实测 / 4K 参数 A/B
 cd /opt/sleep_english && .venv/bin/python verify_deploy.py
+.venv/bin/python measure_kokoro.py
+bash ab_4k.sh
 ```
+
+### 3.1 代码更新流程（git push + VPS 一键 pull）
+
+```powershell
+# ① 本机：改完代码
+git add <改动的文件>; git commit -m "说明"; git push origin master
+```
+```bash
+# ② VPS：一条命令
+bash /opt/sleep_english/vps_update.sh
+```
+
+`vps_update.sh` 内部顺序（每一步都有兜底，失败会明确报错并给回滚命令）：
+
+1. **安全检查**：Web 出片 / `pipeline.py` / `ffmpeg` 正在跑 → 拒绝重启（`--force` 才继续，并提示 `run_cli.sh --resume` 续跑）；
+2. `git fetch`（只取不合）；
+3. **未跟踪文件冲突预检**：即将拉入的新文件若本地已有同名未跟踪文件 → 自动挪成 `*.pre-pull.bak`（避免 `git pull` 因 "untracked working tree files would be overwritten" 直接失败）；
+4. 备份本地已跟踪改动到 `logs/pre_pull_<时间戳>.patch` 并 `git stash`；
+5. `git pull --ff-only`（只快进，分叉就停下报错，不自动合并）；
+6. `requirements.txt` 变了才 `pip install -r`；
+7. **精确恢复本地改动**：上游本次改过的路径直接丢弃（视为已被上游包含），其余路径从 stash 恢复，然后清理 stash；
+8. 清理 `.venv_broken` → `systemctl restart sleep-english` → 轮询 `/api/health`；
+9. 打印旧/新 commit、回滚命令、备份 patch 路径。
+
+| 改动类型 | 需要重启？ | 备注 |
+|---|---|---|
+| `app/**` `pipeline/**` 的 .py | **要** | 脚本已含；web 进程启动时导入 |
+| `app/templates/*.html`、`app/static/*` | 要 | 重启只花 ~3 秒 |
+| `requirements.txt` | 要 + 重装依赖 | 脚本按 diff 自动判断 |
+| 系统包/字体 | 要 | 脚本只提示，不自动 apt |
+| `configs/*.json`、音乐库、出片产物 | 不用 | pull 不碰它们（音乐库在 .gitignore 里） |
+
+回滚：`git log --oneline` 找旧 commit → `git checkout <旧commit> -- . && systemctl restart sleep-english`；或用步骤 4 的 `logs/pre_pull_*.patch`。
 
 ---
 
@@ -77,6 +135,7 @@ cd /opt/sleep_english && .venv/bin/python verify_deploy.py
 | **`upscale_timeout`** | 3600 | **43200** | 1 核 4K 重编码远超 1 小时；不放大必超时失败 |
 | **`sleep_batch_pairs`** | 50 | **25** | 模型一次要恰好 50 组太容易翻车（实测连出 55/53/51 组 + JSON 截断）；25 组/批更稳，配合下面的超量容忍 |
 | `sleep_pairs` | 200 | **50** | 首期规模；跑通后再调大 |
+| **`sleep_4k_native`** | false | **true** | 原生 4K 渲染（卡片直接 3840×2160、块直接编 4K、Step6 只硬链）：文字更锐，详见 §5.4 |
 | `no_4k` | false | false | 保留 4K 产出 |
 | `wbk_api_key` | 空 | **已填**（取自本机 `%USERPROFILE%\.dsh\.credentials.yaml` 的 WBK_API_KEY） | Step 0 需要；见 §10 |
 | **`wbk_model` / `wbk_thinking`** | `cn:auto` / default | **`cn:glm-5.3-flash` / `low`** | `cn:auto` 实际路由到 glm-5.3 且开思考，长输出会撞 7864 upstream 330s 上限被掐断；实测换模型后 25 组脚本 8–15s 完成 |
@@ -123,6 +182,44 @@ cd /opt/sleep_english && .venv/bin/python verify_deploy.py
 - 当前根分区 45 GB、已用 39%（约 26 GB 可用）→ 约可存 15–20 期，注意清理 `output/sleep/` 旧运行
 
 ---
+
+### 5.4 原生 4K vs 超分（同脚本同音频实测，271 s 成片）
+
+| 指标 | **原生 4K**（当前默认） | 超分（旧路径） |
+|---|---|---|
+| 卡片渲染 | 3840×2160 **原生** | 1280×720 → lanczos 插值放大 |
+| 块编码 | 直接编 4K | 先编 720p，Step6 再整片编 4K |
+| Step6 | **硬链产出，0 秒**（`links=2`、同 inode 已校验） | 真重编码 22.6 min |
+| 4K 成片体积 / 码率 | 10.1 MB / 298 kbps | 13.3 MB / 393 kbps |
+| **文字锐度**（1:1 裁切区边缘能量） | **6.20** | 4.52（原生 **+37% 更锐**） |
+| **合成+4K 墙钟**（1 核） | **49.7 min**（Step5 44.5 + 拼接归一 5） | **30.6 min**（Step5 ~8 + Step6 22.6） |
+| 峰值内存 | 897 MB（python 218 + ffmpeg 678） | 354 MB（Step5）/ 647 MB（Step6 调优后） |
+| 折算 50 组（25 min 片，仅合成+4K） | ≈ 4.7 h | ≈ 2.9 h |
+| 折算 200 组（100 min 片，仅合成+4K） | ≈ 18.5 h | ≈ 11.5 h |
+
+**结论**：原生 4K 的**文字明显更锐**（原生渲染，不是插值），且 Step6 归零；代价是这块 1 核机器上
+**合成+4K 慢约 60%**（每个块各起一个 x264 进程，块级预热摊不掉），内存峰值 +250 MB（897 MB，仍安全）。
+
+选择建议：
+- **看重文字清晰度、能接受慢** → 保持 `sleep_4k_native=true`（现状）；
+- **批量赶量（如 200 组）** → 切回超分更省时间：
+
+```bash
+# 切回超分（Step6 lanczos）
+cd /opt/sleep_english && .venv/bin/python - <<'PY'
+import json, pathlib
+for p in [pathlib.Path("configs/mode_sleep.json")] + sorted(pathlib.Path("configs/channels").glob("*.json")):
+    d = json.loads(p.read_text(encoding="utf-8"))
+    for c in ([d] + ([d["config"]] if isinstance(d.get("config"), dict) else [])):
+        if "sleep_4k_native" in c:
+            c["sleep_4k_native"] = False
+    p.write_text(json.dumps(d, ensure_ascii=False, indent=2), encoding="utf-8")
+PY
+# 命令行出片记得加/去对应开关（run_cli.sh 会读配置自动补：原生=true 时自动加 --sleep-4k-native）
+```
+
+对照图（第 60 秒同位置 1:1 裁切）：本机 `_vps_evidence/crop_native.png`（原生）与 `crop_upscale.png`（超分）；
+整帧缩略图 `full_native.png` / `full_upscale.png`。VPS 上原图在 `/opt/sleep_english/_compare/`。
 
 ## 6. 混 BGM（版权音乐）
 
@@ -175,18 +272,22 @@ cd /opt/sleep_english && .venv/bin/python verify_deploy.py
 
 ---
 
-## 9. 本次为跑通/省内存改的项目代码（9 个文件，均向后兼容）
+## 9. 本次为跑通/省内存改的项目代码（13 个文件，均向后兼容）
 
 | 文件 | 改动 | 默认行为 |
 |---|---|---|
 | `pipeline/tts_engine.py` | 新增 `TTSEngine.unload()`（清管线 + `gc.collect` + `torch.cuda.empty_cache` + glibc `malloc_trim(0)`） | 无调用则不生效，本机不变 |
-| `pipeline/pipeline.py` | Step2 末按 `SLEEP_UNLOAD_TTS=1` 调 `unload()`；Step6 4K 命令支持 `SLEEP_4K_X264_PARAMS` | 两个 env 都不设 = 原行为 |
+| `pipeline/pipeline.py` | Step2 末按 `SLEEP_UNLOAD_TTS=1` 调 `unload()`；Step6 4K 命令支持 `SLEEP_4K_X264_PARAMS`；**4K 失败（含被 kill）时删除截断的半成品** | 两个 env 都不设 = 原行为 |
 | `pipeline/media_utils.py` | 新增 `extra_4k_x264_params()` | 无 env = 返回空 |
 | `app/pipeline_service.py` | args 补 `upscale_timeout`/`upscale_engine` 接线（主流程与「生成 4K」按钮都读配置）；4K 命令支持同一 env | 配置缺省=3600/ffmpeg，同旧默认 |
 | `app/config_manager.py` | `PARAM_SPEC` 增加 `upscale_timeout`（配置页可见可保存，不再被表单覆盖丢掉） | 默认 3600 |
 | `pipeline/llm_client.py` | `WBK_BASE_URL` 支持环境变量覆盖 | 不设=原硬编码地址 |
 | `pipeline/font_scanner.py` + `pipeline/sleep/sleep_cards.py` | **修复 Linux 崩溃**：字体候选链只保留真实存在的文件；`font_covers` 对不存在的文件恒 False | Windows 上链不变（候选都存在） |
 | `pipeline/sleep/llm_client_sleep.py` | **LLM 超量容忍**：`SLEEP_ALLOW_PAIR_OVERSHOOT=1` 时，批次"多给几组"截断到需要数量（少给仍失败并重试） | 不设 env = 与原「必须恰好 N 组」一致 |
+| `pipeline/sleep/video_compose_sleep.py` | **原生 4K**：`_build_block`/`_build_video_block` 接受 `x264_params`，`compose_sleep` 在 `native_4k` 时下发 `extra_4k_x264_params()`（4K 的 rc-lookahead 是最大单块内存） | 非原生传空 → 命令与历史逐字节一致 |
+| `app/auth_gate.py` + `serve_auth.py`（新） | **密码闸门**（默认密码 `inriynisse`、cookie 365 天、`?ct=`/header/登录页三种入口、失败限流）+ 受保护入口 | 只有把 systemd 指向 `serve_auth:application` 才生效；`run.bat` 与 Colab 仍走 `app.main:app` |
+| `run_cli.sh`（新） | 命令行出片读**同一份配置**（`sleep_4k_native`/`no_4k`/`wbk_model`/`wbk_thinking`/key），与网页行为对齐 | 命令行显式传参优先；此前 CLI 会静默用默认值 |
+| `vps_update.sh`（新） | **一键更新**：安全检查 → fetch → 未跟踪冲突预检 → stash → `pull --ff-only` → 依赖 → 精确恢复本地改动 → 重启 → 自检 | 纯手动执行，不参与运行 |
 
 > 本机仓库同样打了这些补丁（未提交）。建议在本机 `git add -A && git commit` 后推送，VPS 侧再 `git pull` 才不会冲突；VPS 上的补丁文件已是最终版本，**不要**在该目录直接 `git checkout` 覆盖。
 
@@ -219,6 +320,7 @@ cd /opt/sleep_english && .venv/bin/python verify_deploy.py
 | Step 0 报 `WBK_API_KEY not set` | CLI 用 `run_cli.sh`（会自动注入）；Web 路径在配置页确认 `wbk_api_key` 非空 |
 | Step 2 报 `No module named 'kokoro'` | `.venv` 被破坏 → 重装（注意 spacy/thinc 版本互斥，见安装日志 `logs/rebuild_venv.sh` 思路） |
 | 4K 报「4K 生成超时」 | 确认配置页 `4K 放大超时(秒)` ≥ 43200（或 `run_cli.sh --upscale-timeout 43200`） |
+| 运行页 4K 时长比成片短 | 旧版本残留：ffmpeg 被中断时会先写完 moov，留下「能播放但截断」的 `_4K.mp4`。已在 `_step6_4k` 修掉（非零退出即删）；历史残留可手动删掉该 `_4K.mp4` 再重跑 4K |
 | 出片中途被 OOM kill | `dmesg -T \| grep -i oom`；`run_cli.sh --resume` 续跑（音频/卡片按文件续传）；或降 `sleep-pairs` |
 | 字体相关报错 | `verify_deploy.py` 的字体段；Noto CJK 软链由 `colab/setup.sh` 建立 |
 | 点「混BGM」报 `未找到可选的音乐文件` | `ls /opt/sleep_english/bgm_music_60s/*.mp3 \| wc -l` 应为 35；`ls -l /opt/sleep_english/bgm_music` 应是指向它的软链（本库在 .gitignore 里，重新 clone 后需要再上传一次） |
