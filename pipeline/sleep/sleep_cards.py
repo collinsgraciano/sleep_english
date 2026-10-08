@@ -139,8 +139,10 @@ def build_theme(cfg: dict) -> dict:
 def _channel_font_chain(theme: dict) -> list[str]:
     """频道名字体候选链：自定义 → 手写体 → 符号/emoji → 中文可用字体。
 
-    fontTools 缺失时 font_covers 恒 True（链退化为首候选=旧行为）；
-    文件缺失/损坏恒 False（链上自动跳过，不会把坏路径交给 Pillow）。
+    **只保留真实存在的文件**：Windows 手写体候选在 Linux 上全是坏路径，
+    必须在这里过滤掉，否则纯空白片段（空格走"空文本=覆盖"分支）会把链首
+    坏路径当成覆盖者返回，最终 Pillow 报 OSError: cannot open resource。
+    fontTools 缺失时 font_covers 恒 True（链退化为首候选=旧行为）。
     """
     custom = str(theme.get("handwrite_font", "") or "").strip()
     chain: list[str] = []
@@ -148,7 +150,7 @@ def _channel_font_chain(theme: dict) -> list[str]:
         chain.append(custom)
     chain.extend(_FONT_HANDWRITE_FALLBACKS)
     seen: set[str] = set()
-    return [p for p in chain if not (p in seen or seen.add(p))]
+    return [p for p in chain if os.path.exists(p) and not (p in seen or seen.add(p))]
 
 
 def _channel_font_runs(theme: dict, text: str) -> list[list]:
@@ -174,13 +176,16 @@ def _pick_font(custom: str, fallbacks: list[str], text: str = "") -> str:
 
     text 为空=链首（等价旧行为）。句子区三字体（EN/IPA/中文）与频道名
     单字体场景共用；频道名逐段混排走 _channel_font_runs。
+    只保留存在的文件（Linux 上 Windows 手写体候选全为坏路径，交给 Pillow 会崩）。
     """
     chain: list[str] = []
     if custom and os.path.exists(custom):
         chain.append(custom)
     for p in fallbacks:
-        if p not in chain:
+        if p not in chain and os.path.exists(p):
             chain.append(p)
+    if not chain:  # 兜底：链全坏时至少给一个确定存在的内置字体
+        chain = [p for p in (FONT_EN, FONT_ZH, FONT_PH) if os.path.exists(p)] or [custom or FONT_EN]
     if not text or not text.strip():
         return chain[0]
     for p in chain:

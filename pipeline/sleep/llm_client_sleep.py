@@ -9,9 +9,22 @@
 """
 import json
 import hashlib
+import os
 from pathlib import Path
 
 from llm_client import _chat, _extract_json, _env_int_clamped
+
+
+def _allow_overshoot() -> bool:
+    """是否容忍 LLM「多给几组」（SLEEP_ALLOW_PAIR_OVERSHOOT=1，默认关）。
+
+    背景：批级校验原为「必须恰好 count 组」，但模型经常多给 1-5 组
+    （实测 cn:auto/glm-5.3 连续给出 55/53/51 组），旧行为会整批重试并最终
+    让整次运行失败。多给的组截断即可，下游本来就是按 num_pairs 取前 N 组
+    （_step2 用 min(num_pairs, …)；数量判定是 >= 而非 ==）。少给仍算失败，
+    交由外层重试。默认关 = 与历史行为逐字一致。
+    """
+    return os.environ.get("SLEEP_ALLOW_PAIR_OVERSHOOT", "").strip() == "1"
 
 
 def _sleep_max_line_words() -> int:
@@ -195,7 +208,12 @@ def _generate_batch(topic, cefr, count, start_idx, total_pairs, max_words,
                 raise ValueError("JSON has no 'pairs' array")
             if not allow_short and len(pairs) != count:
                 # 允许短输出的单次出稿通道除外：数量校验交由调用方补齐循环
-                raise ValueError(f"expected {count} pairs, got {len(pairs)}")
+                if _allow_overshoot() and len(pairs) > count:
+                    print(f"  [Sleep] 批次多给 {len(pairs)} 组（需要 {count}）"
+                          f" → 按 SLEEP_ALLOW_PAIR_OVERSHOOT 截断到 {count}")
+                    pairs = pairs[:count]
+                else:
+                    raise ValueError(f"expected {count} pairs, got {len(pairs)}")
             if not allow_short and not pairs:
                 raise ValueError("empty pairs array")
             for i, p in enumerate(pairs):
@@ -253,9 +271,14 @@ def _generate_single_shot(topic, cefr, num_pairs, max_words, cdir, ck,
             max_tokens=65536, timeout=600, allow_short=True)
         pairs.extend(more)
     if len(pairs) != num_pairs:
-        raise RuntimeError(
-            f"Single-shot generation incomplete: {len(pairs)}/{num_pairs} "
-            f"pairs after top-ups")
+        if _allow_overshoot() and len(pairs) > num_pairs:
+            print(f"  [Sleep] 单次出稿多给 {len(pairs)} 组（需要 {num_pairs}）"
+                  f" → 按 SLEEP_ALLOW_PAIR_OVERSHOOT 截断")
+            pairs = pairs[:num_pairs]
+        else:
+            raise RuntimeError(
+                f"Single-shot generation incomplete: {len(pairs)}/{num_pairs} "
+                f"pairs after top-ups")
     if not (use_cache and batch_file.exists()):
         batch_file.write_text(json.dumps({"batch": batch, "pairs": pairs},
                                          ensure_ascii=False, indent=1),

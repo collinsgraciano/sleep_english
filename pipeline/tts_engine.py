@@ -318,6 +318,39 @@ class TTSEngine:
                 raise RuntimeError(f"Kokoro Chinese model failed to load: {e}") from e
         return cls._kokoro_zh_pipeline
 
+    @classmethod
+    def unload(cls) -> None:
+        """释放缓存的 Kokoro 管线（2GB 小内存机器：TTS 结束后把 torch+权重还给系统）。
+
+        只由调用方按需触发（pipeline._step2_images_tts 在 SLEEP_UNLOAD_TTS=1 时调用），
+        默认不调用 —— 本机/Colab 行为与历史完全一致。下次合成会自动懒加载重建。
+        权重与音色已在磁盘缓存，重建不产生任何下载。
+        """
+        import gc
+        freed = []
+        for name in ("_kokoro_pipeline", "_kokoro_zh_pipeline"):
+            if getattr(cls, name, None) is not None:
+                setattr(cls, name, None)
+                freed.append(name)
+        if not freed:
+            return
+        gc.collect()
+        try:
+            import torch
+            if torch.cuda.is_available():
+                torch.cuda.empty_cache()
+        except Exception:
+            pass  # 无 torch / 无 CUDA 时无需释放显存
+        # glibc 会把刚 free 的 arena 攥在手里不还给内核（VPS 实测：gc 只降 350MB，
+        # malloc_trim 再降 630MB，1490MB → 507MB）。非 glibc 平台没有该符号，忽略即可。
+        try:
+            import ctypes
+            ctypes.CDLL("libc.so.6").malloc_trim(0)
+        except Exception:
+            pass
+        print(f"[Kokoro] TTS pipeline unloaded ({', '.join(freed)}) — memory returned",
+              flush=True)
+
     @staticmethod
     def get_duration(audio_path: str) -> float:
         """Get audio duration in seconds via ffprobe."""

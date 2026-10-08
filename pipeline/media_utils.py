@@ -415,8 +415,19 @@ def concat_segments(segment_paths: list[str], output_path: str,
     return output_path
 
 
+def extra_4k_x264_params() -> list[str]:
+    """4K 放大编码的附加 x264 参数（环境变量 ``SLEEP_4K_X264_PARAMS``，默认空=原行为）。
+
+    小内存机器（2GB VPS）实测：4K x264 的 rc-lookahead 缓冲是最大单块内存
+    —— 3840x2160 yuv420p 单帧约 12.4MB，默认 lookahead 40 帧 ≈ 500MB，
+    整个 ffmpeg 进程 RSS 实测 1.4GB。设 ``rc-lookahead=10`` 可省 300-400MB；
+    分辨率/帧率/编码器不变，仅压缩效率略降（静态卡片内容几乎无感）。
+    """
+    raw = os.environ.get("SLEEP_4K_X264_PARAMS", "").strip()
+    return ["-x264-params", raw] if raw else []
+
+
 # ---------------------------------------------------------------------------
-# Subtitle rendering + overlay burn
 # Final loudnorm pass
 # ---------------------------------------------------------------------------
 

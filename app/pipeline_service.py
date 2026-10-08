@@ -790,6 +790,11 @@ class PipelineService:
             subtitle_style=str(config.get("subtitle_style", "") or ""),
             no_zh_subtitle=bool(config.get("no_zh_subtitle", False)),
             no_4k=bool(config.get("no_4k", False)),  # Web 开关：跳过 Step6 4K 产出（等价 CLI --no-4k）
+            # Step6 4K 的两个引擎参数：历史缺口 —— args 里没有它们，_step6_4k 只能吃到
+            # getattr 默认值（3600s / ffmpeg），单核机器上 4K 重编码必然 1 小时超时。
+            # 默认值不变（配置缺省 = 3600/ffmpeg），仅让配置文件能真正生效。
+            upscale_engine=str(config.get("upscale_engine", "ffmpeg") or "ffmpeg"),
+            upscale_timeout=int(config.get("upscale_timeout", 3600) or 3600),
             no_thumbnail=bool(config.get("no_thumbnail", False)),
             quick_test=bool(config.get("quick_test", False)),
             output_dir=config.get("output_dir", "./output"),
@@ -1417,8 +1422,9 @@ class PipelineService:
             return False, "未找到成片视频（运行目录根部与 videos/ 均无 final mp4）"
         safe_vid_name = final_path.stem
 
-        # 超分配置组已移除：4K 恒定生成，固定 ffmpeg lanczos 引擎与默认超时
-        upscale_engine, upscale_timeout = "ffmpeg", 3600
+        # 4K 固定 ffmpeg lanczos 引擎；超时改为读配置（单核机器上默认 3600s 会超时）
+        upscale_engine = str(config.get("upscale_engine", "ffmpeg") or "ffmpeg")
+        upscale_timeout = int(config.get("upscale_timeout", 3600) or 3600)
 
         if not run_mutex.try_acquire("4k_gen"):
             return False, (f"资源被占用：{run_mutex.current_owner()}"
@@ -1497,10 +1503,13 @@ class PipelineService:
                     ai_done = True
             if not ai_done:
                 print("  [4K] ffmpeg lanczos 放大中（scale=3840:2160）...")
+                from media_utils import extra_4k_x264_params
                 r = _sp.run(
                     ["ffmpeg", "-i", final_path,
                      "-vf", "scale=3840:2160:flags=lanczos",
                      "-c:v", "libx264", "-crf", "18", "-preset", "medium", "-threads", "0",
+                     # 小内存机器用 SLEEP_4K_X264_PARAMS 收 lookahead（默认空=原行为）
+                     *extra_4k_x264_params(),
                      "-c:a", "copy",
                      str(tmp_path), "-y"],
                     capture_output=True, timeout=upscale_timeout)

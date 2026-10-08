@@ -78,14 +78,22 @@ def _visible_chars(text: str) -> list[str]:
 
 
 def font_covers(path: str, text: str) -> bool:
-    """字体是否含 text 全部非空白字符的字形（空文本=覆盖）。"""
+    """字体是否含 text 全部非空白字符的字形（空文本=覆盖）。
+
+    注意：**文件不存在恒 False**，且必须在「空文本=覆盖」之前判定 ——
+    否则纯空白片段（如频道名里的空格）会把链首字体当"覆盖者"返回，
+    在非 Windows 机器上链首是 `C:\\Windows\\Fonts\\Inkfree.ttf` 这种坏路径，
+    最终交给 Pillow 就报 OSError: cannot open resource（Linux 部署实测踩到）。
+    """
+    if not os.path.exists(str(path)):
+        return False
     chars = _visible_chars(text)
     if not chars:
         return True
     codes = _cmap_codes(path)
     if codes is None:  # fontTools 缺失 → 不拦链（降级=旧行为）
         return True
-    if not codes:      # 文件缺失/损坏 → 不可用（链上跳过）
+    if not codes:      # 文件存在但不可解析 → 不可用（链上跳过）
         return False
     return all(ord(c) in codes for c in chars)
 

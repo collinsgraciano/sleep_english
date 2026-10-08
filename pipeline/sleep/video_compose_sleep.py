@@ -16,8 +16,8 @@ import subprocess
 from pathlib import Path
 
 from media_utils import (TARGET_H, TARGET_W, apply_final_loudnorm,
-                         concat_segments, get_duration, merge_blocks_xfade,
-                         safe_filename)
+                         concat_segments, extra_4k_x264_params, get_duration,
+                         merge_blocks_xfade, safe_filename)
 from sleep.audio_sleep import COMBO_GAP
 from sleep.sleep_cards import (render_intro_card, render_outro_card,
                                render_pair_card)
@@ -147,14 +147,18 @@ def _build_audio_chain(block_segs: list[dict], audio_paths: dict,
 
 def _build_video_block(intro_video: str, block_segs: list[dict], out_path: str,
                        vf: str, volume_db: float = 0.0,
-                       logo: tuple[list[str], str] | None = None) -> None:
+                       logo: tuple[list[str], str] | None = None,
+                       x264_params: list[str] | None = None) -> None:
     """绑定片头/片尾视频时的 intro/outro 块：整段转码统一规格（音画随视频自带）。
 
     volume_db≠0 时对视频自带音轨做音量偏移。logo=(输入段, 视频滤镜段) 时
     滤镜全部并入 filter_complex（-af 不能与 -filter_complex 共存，
-    volume 一并写入 graph），不再走 -vf。"""
+    volume 一并写入 graph），不再走 -vf。
+    x264_params：原生 4K 时由调用方传入（如 rc-lookahead=10），非 4K 传 None
+    = 与历史命令逐字节一致。"""
     block_dur = round(sum(float(seg.get("duration", 0.0)) for seg in block_segs), 3)
     lg_inputs, lg_chain = logo or ([], "")
+    extra_v = list(x264_params or [])
     if lg_inputs:
         parts = [f"[0:v]{vf}[bg]", lg_chain]
         audio_map = "0:a:0"
@@ -165,7 +169,7 @@ def _build_video_block(intro_video: str, block_segs: list[dict], out_path: str,
                "-filter_complex", ";".join(parts),
                "-map", "[vout]", "-map", audio_map,
                "-t", f"{block_dur:.3f}",
-               "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", "25",
+               "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", "25", *extra_v,
                "-c:a", "aac", "-b:a", "128k", "-ar", "44100", "-ac", "2",
                out_path]
     else:
@@ -174,7 +178,7 @@ def _build_video_block(intro_video: str, block_segs: list[dict], out_path: str,
         if volume_db:
             cmd += ["-af", f"volume={volume_db:.2f}dB"]
         cmd += ["-t", f"{block_dur:.3f}",
-                "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", "25",
+                "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", "25", *extra_v,
                 "-c:a", "aac", "-b:a", "128k", "-ar", "44100", "-ac", "2",
                 out_path]
     r = _run_ffmpeg(cmd)
@@ -185,11 +189,14 @@ def _build_video_block(intro_video: str, block_segs: list[dict], out_path: str,
 def _build_block(card_path: str, block_segs: list[dict], audio_paths: dict,
                  out_path: str, vf: str, lead: float = 0.0,
                  intro_db: float = 0.0, outro_db: float = 0.0,
-                 logo: tuple[list[str], str] | None = None) -> None:
+                 logo: tuple[list[str], str] | None = None,
+                 x264_params: list[str] | None = None) -> None:
     """构建一个块 mp4（静态卡 + 音频链）。
 
     logo=(输入段, 视频滤镜段) 时视频流并入 filter_complex：
-    [0:v]→vf→[bg] 叠 logo→[vout]，不再走 -vf；音频输入索引顺延 1。"""
+    [0:v]→vf→[bg] 叠 logo→[vout]，不再走 -vf；音频输入索引顺延 1。
+    x264_params：原生 4K 时由调用方传入（4K 的 rc-lookahead 缓冲是最大单块
+    内存），非 4K 传 None = 与历史命令逐字节一致。"""
     block_dur = round(sum(float(seg.get("duration", 0.0)) for seg in block_segs), 3)
     lg_inputs, lg_chain = logo or ([], "")
     fg, inputs = _build_audio_chain(block_segs, audio_paths, lead=lead,
@@ -208,6 +215,7 @@ def _build_block(card_path: str, block_segs: list[dict], audio_paths: dict,
     cmd += ["-map", "[aout]",
             "-t", f"{block_dur:.3f}",
             "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", "25",
+            *list(x264_params or []),
             "-c:a", "aac", "-b:a", "128k", "-ar", "44100", "-ac", "2",
             out_path]
     r = _run_ffmpeg(cmd)
@@ -271,6 +279,12 @@ def compose_sleep(work_dir: str, timeline: list[dict], script: dict,
     """
     out_w, out_h = (3840, 2160) if native_4k else (TARGET_W, TARGET_H)
     vf = _output_vf(out_w, out_h)
+    # 原生 4K 时「块编码器」本身就是 4K 编码器：把 4K 编码参数（SLEEP_4K_X264_PARAMS，
+    # 主要是收 rc-lookahead）交给它 —— 否则每个块都要吃满默认 lookahead 的 ~1.4GB。
+    # 非原生（720p）传空列表，命令与历史逐字节一致。
+    _x264 = extra_4k_x264_params() if native_4k else []
+    if _x264:
+        print(f"  [Sleep] 块编码参数(原生4K): {' '.join(_x264)}")
     # 频道 Logo 水印（全片叠加；文件缺失只跳过不报错）
     logo: tuple[list[str], str] | None = None
     if logo_path:
@@ -353,28 +367,34 @@ def compose_sleep(work_dir: str, timeline: list[dict], script: dict,
             try:
                 if is_intro_video:
                     _build_video_block(intro_video, block_segs, out_path, vf,
-                                       volume_db=intro_volume_db, logo=logo)
+                                       volume_db=intro_volume_db, logo=logo,
+                                       x264_params=_x264)
                 elif is_outro_video:
                     _build_video_block(outro_video, block_segs, out_path, vf,
-                                       volume_db=outro_volume_db, logo=logo)
+                                       volume_db=outro_volume_db, logo=logo,
+                                       x264_params=_x264)
                 else:
                     _build_block(card, block_segs, audio_results, out_path, vf,
                                  lead=card_lead, intro_db=intro_volume_db,
-                                 outro_db=outro_volume_db, logo=logo)
+                                 outro_db=outro_volume_db, logo=logo,
+                                 x264_params=_x264)
             except RuntimeError as e:
                 if str(e) == "stopped":
                     raise
                 print(f"  [Sleep] Block {bi} failed ({e}), retry once...")
                 if is_intro_video:
                     _build_video_block(intro_video, block_segs, out_path, vf,
-                                       volume_db=intro_volume_db, logo=logo)
+                                       volume_db=intro_volume_db, logo=logo,
+                                       x264_params=_x264)
                 elif is_outro_video:
                     _build_video_block(outro_video, block_segs, out_path, vf,
-                                       volume_db=outro_volume_db, logo=logo)
+                                       volume_db=outro_volume_db, logo=logo,
+                                       x264_params=_x264)
                 else:
                     _build_block(card, block_segs, audio_results, out_path, vf,
                                  lead=card_lead, intro_db=intro_volume_db,
-                                 outro_db=outro_volume_db, logo=logo)
+                                 outro_db=outro_volume_db, logo=logo,
+                                 x264_params=_x264)
         block_paths.append(out_path)
         if bi % 10 == 0 or bi == total - 1:
             _cb(int(2 + bi / total * 78),

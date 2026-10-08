@@ -44,6 +44,7 @@ sys.path.insert(0, str(SCRIPTS_DIR))
 from mcp_client import initialize, call_tool, parse_task_id, poll_task, download_file
 from topic_manager import pick_random_topic, mark_topic_used
 from media_utils import get_duration as _get_audio_duration, safe_filename as _safe_dirname
+from media_utils import extra_4k_x264_params as _extra_4k_x264
 from logo_cutout import ensure_logo_cutout as _ensure_logo_cutout
 from checkpoint import save_checkpoint as _save_checkpoint, load_checkpoint as _load_checkpoint, step_done as _step_done
 from style_manager import resolve_style_prompt as _resolve_style_prompt
@@ -586,6 +587,16 @@ def _step2_images_tts(args, checkpoint: dict, script: dict, work_dir: Path, dirs
 
     _save_checkpoint(work_dir, "step2_images_tts")
 
+    # 小内存机器（如 2GB VPS）：TTS 是整个流程的常驻内存大户（torch + Kokoro-82M
+    # 约 0.9-1.1GB），而后续 Step5/Step6 只用 ffmpeg。默认不卸载（本机/Colab 行为
+    # 不变）；SLEEP_UNLOAD_TTS=1 时在这里把管线还掉，出片阶段峰值只由 ffmpeg 决定。
+    if os.environ.get("SLEEP_UNLOAD_TTS", "").strip() == "1":
+        try:
+            from tts_engine import TTSEngine
+            TTSEngine.unload()
+        except Exception as e:  # noqa: BLE001 — 卸载失败不影响出片
+            print(f"  [Sleep] TTS unload skipped: {type(e).__name__}: {e}")
+
     return {"tts_results": tts_results}
 
 def _step3_clips(args, checkpoint: dict, work_dir: Path, dirs: dict, script: dict,
@@ -930,6 +941,8 @@ def _step6_4k(args, checkpoint: dict, work_dir: Path, final_path: str,
                 ["ffmpeg", "-i", final_path,
                  "-vf", "scale=3840:2160:flags=lanczos",
                  "-c:v", "libx264", "-crf", "18", "-preset", "medium", "-threads", "0",
+                 # 小内存机器用 SLEEP_4K_X264_PARAMS 收 lookahead（默认空=原行为）
+                 *_extra_4k_x264(),
                  "-c:a", "copy",
                  str(final_4k_path), "-y"],
                 capture_output=True,

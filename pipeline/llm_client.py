@@ -539,7 +539,7 @@ def gemini_chat(api_key: str, model: str, messages: list[dict], *,
 # 模型 ID 发送端点 /v1/models 返回的原值（cn: 前缀），裸名/前缀名实测均接受。
 # ---------------------------------------------------------------------------
 
-WBK_BASE_URL = "http://45.13.214.22:7864/v1"
+WBK_BASE_URL = os.environ.get("WBK_BASE_URL", "http://45.13.214.22:7864/v1")
 
 # 规格表：端点实测（GET /v1/models）。条目 = (显示名, 最大输出 tokens,
 # 支持的思考档位, 端点默认档位)。思考档位 None = 该模型不开放档位选择
