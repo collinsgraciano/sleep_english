@@ -94,13 +94,27 @@ fi
 # --- 4) 备份 + 暂存本地改动 -------------------------------------------------
 DIRTY=$(git status --porcelain --untracked-files=no | wc -l)
 BACKUP=""
+STASH_COUNT_BEFORE=$(git stash list | wc -l)
 if [ "$DIRTY" -gt 0 ]; then
   mkdir -p logs
   BACKUP="logs/pre_pull_$(date +%Y%m%d_%H%M%S).patch"
   git diff >"$BACKUP"
   echo "本地有 $DIRTY 个已跟踪文件改动 → 备份到 $BACKUP 并 stash"
-  git stash push -m "vps-update-$(date +%s)" >/dev/null || echo "  (stash 失败，继续)"
+  if git stash push -m "vps-update-$(date +%s)" >/dev/null; then
+    STASH_COUNT_AFTER=$(git stash list | wc -l)
+    if [ "$STASH_COUNT_AFTER" -gt "$STASH_COUNT_BEFORE" ]; then
+      MY_STASH=$(git stash list --format='%gd %s' | awk '/vps-update-/{print $1; exit}')
+      echo "  本次 stash = ${MY_STASH:-未识别}"
+    else
+      MY_STASH=""
+      echo "  (stash 未产生新条目)"
+    fi
+  else
+    MY_STASH=""
+    echo "  (stash 失败，继续)"
+  fi
 else
+  MY_STASH=""
   echo "本地无已跟踪改动"
 fi
 
@@ -128,29 +142,33 @@ else
 fi
 
 # --- 7) 精确恢复本地改动 ---------------------------------------------------
-if git stash list | grep -q 'vps-update-'; then
-  STASH=$(git stash list | grep 'vps-update-' | head -1 | cut -d: -f1)
+if [ -n "${MY_STASH:-}" ]; then
   KEEP=""
   if [ -n "$CHANGED" ]; then
     # 本地改动里「上游本次没碰的路径」才需要保留；同路径上游已包含 → 丢弃
-    KEEP=$(git stash show --name-only "$STASH" | grep -vxF -f <(printf '%s\n' "$CHANGED") || true)
+    KEEP=$(git stash show --name-only "$MY_STASH" | grep -vxF -f <(printf '%s\n' "$CHANGED") || true)
   else
-    KEEP=$(git stash show --name-only "$STASH" || true)
+    KEEP=$(git stash show --name-only "$MY_STASH" || true)
   fi
+  echo "本次 stash $MY_STASH 内容处理："
   if [ -n "$KEEP" ]; then
-    echo "恢复上游未包含的本地改动："
+    echo "$KEEP" | sed 's/^/  待恢复: /'
     while IFS= read -r f; do
       [ -n "$f" ] || continue
-      if git checkout "$STASH" -- "$f" 2>/dev/null; then
-        echo "  + $f"
+      if git checkout "$MY_STASH" -- "$f" 2>/dev/null; then
+        echo "  + 已恢复 $f"
       else
-        echo "  ! $f（无法从 stash 恢复，见 ${BACKUP:-logs/pre_pull_*.patch}）"
+        echo "  ! 无法从 stash 恢复 $f（备份 patch: ${BACKUP:-logs/pre_pull_*.patch}）"
       fi
     done <<<"$KEEP"
   else
-    echo "本地改动已全部包含在上游提交里 → 无需保留"
+    echo "  本地改动已全部包含在上游提交里 → 无需保留"
   fi
-  git stash drop "$STASH" >/dev/null && echo "已清理 stash $STASH"
+  if git stash drop "$MY_STASH"; then
+    echo "  已清理 stash $MY_STASH"
+  else
+    echo "  !! stash 清理失败（可手动 git stash drop $MY_STASH，备份 patch: ${BACKUP:-无}）"
+  fi
 fi
 
 # --- 8) 清理 + 重启 --------------------------------------------------------
@@ -189,4 +207,6 @@ echo " 完成：$OLD → $NEW   $(date -Is)"
 echo " 服务：$(systemctl is-active sleep-english)  端口监听数：$(ss -ltn | grep -c 8766)"
 echo " 回滚：cd $REPO && git checkout $OLD -- . && systemctl restart sleep-english"
 [ -n "${BACKUP:-}" ] && echo " 本地改动备份：$REPO/$BACKUP"
+LEFT=$(git stash list | grep -c 'vps-update-' || true)
+[ "${LEFT:-0}" -gt 0 ] && echo " 提示：仍有 $LEFT 个历史 vps-update- stash（git stash list 查看，git stash clear 清理）"
 echo "=============================================================="
