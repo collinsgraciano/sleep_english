@@ -967,6 +967,12 @@ def _step6_4k(args, checkpoint: dict, work_dir: Path, final_path: str,
         stderr = r.stderr.decode("utf-8", errors="replace")[-500:] if r.stderr else ""
         if stderr:
             print(f"  [4K] FFmpeg stderr: {stderr}")
+        # 半成品必须删掉：ffmpeg 收到 SIGTERM 时会先把 moov 写完再退出，于是
+        # 中途被 kill 的产物是一个「能播放但时长被截断」的合法 mp4 —— 留着会被
+        # 运行页当成正常 4K（实测：源 1262s 的成片留下过 748s 的 _4K.mp4）
+        if final_4k_path.exists():
+            final_4k_path.unlink(missing_ok=True)
+            print(f"  [4K] 已删除半成品：{final_4k_path.name}")
         # 失败必须抛出：否则调用方会误以为全部完成而清除 checkpoint，
         # 导致无法用 --resume 直接重试 4K 步骤
         raise RuntimeError("STEP6_4K_FAILED")
