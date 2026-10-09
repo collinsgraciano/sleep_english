@@ -126,12 +126,13 @@ bash /opt/sleep_english/vps_update.sh
 ### 3.2 画廊页：下载视频 / 缩略图
 
 - 入口：运行历史 → 某期的「画廊」按钮（`/runs/{name}/gallery`）
-- 头部按钮「**⬇️ 下载视频**」（主成片）与「**⬇️ 下载缩略图**」（主缩略图）；「📹 最终视频」列表里每一行还有「下载」，可分别下 720p / 4K / 4K BGM / BGM 版
+- 头部按钮「**⬇️ 下载视频**」（主成片）、「**⬇️ 下载 4K BGM**」（4K+BGM 成片 `{标题}_4K_bgm.mp4`，与相邻「📋 4K BGM」复制的是**同一个文件**；该文件不存在时按钮灰显禁用并提示先点「🎵 混BGM 4K」）与「**⬇️ 下载缩略图**」（主缩略图）；「📹 最终视频」列表里每一行还有「下载」，可分别下 720p / 4K / 4K BGM / BGM 版
 - 后端两个只读端点，响应都是 `Content-Disposition: attachment`（中文名走 RFC 5987 `filename*`，支持 Range 续传）：
   - `GET /api/runs/{name}/download/video[?file=文件名]` —— 缺省=主成片（与列表/播放器同口径）；`file` 只接受**纯文件名**（禁 `..`/分隔符），按 运行目录根 → `clips/` → `videos/` 依次查找
   - `GET /api/runs/{name}/download/thumbnail[?file=thumbnail_N.jpg]` —— 缺省=主缩略图；指定名走 `thumbnail(_N)?.jpg` 白名单
 - 鉴权：`/api/*` 在密码闸门后面 —— 浏览器点按钮自动带 cookie；`curl` 要加 `-H 'X-Sleep-Auth: <密码>'`
 - 实测：`download/video` 200 + `attachment; filename*=utf-8''…`（20.3 MB）；`download/thumbnail` 200 + `attachment; filename="thumbnail.jpg"`（290 KB）；路径穿越 → 400、不存在 → 404、非白名单缩略图名 → 400
+- 后续补丁：画廊头部新增「**⬇️ 下载 4K BGM**」——`file=` 取页面上下文的 `video_4k_bgm_name`（= `_resolve_video_copy_paths()["4k_bgm"]` 的文件名，运行目录根部最新 `*_4K_bgm.mp4`），因此与「📋 4K BGM」复制的路径恒为同一文件；无该文件时渲染禁用态。实测（隔离夹具 + 本机 8766 实机）：启用态 href 解码后 = `…?file={标题}_4K_bgm.mp4`、下载 200 + `attachment; filename*=utf-8''…` 且字节一致；删掉该文件后按钮转禁用、端点 404；`../x.mp4` 仍 400、主成片默认下载仍 200
 
 ---
 
@@ -322,7 +323,7 @@ PY
 | `pipeline/pipeline.py` + `app/pipeline_service.py` | **原生 4K + BGM 命名**：4K 源混出 `{标题}_4K_bgm.mp4`；Step6 用**干净的 4K** 硬链出 `{标题}_4K.mp4`；运行页「混BGM」按钮按源分辨率命名 | 非原生路径不变 |
 | `app/config_manager.py` | 删除 `bgm_intro_outro_seconds`（参数页不再出现）；`sleep_sequence` help 文案改指向参数配置页 | 其余 BGM 参数不变 |
 | `app/routers/runs.py` | 新增 `GET /api/runs/{name}/download/video`、`/download/thumbnail`（attachment + 纯文件名校验 + 缩略图白名单） | 新增只读端点 |
-| `app/routers/pages.py` + `app/templates/gallery.html` | 画廊头部「⬇️ 下载视频 / ⬇️ 下载缩略图」按钮 + 成片行「下载」改走附件端点；上下文补 `main_video_rel` | 只在画廊页可见 |
+| `app/routers/pages.py` + `app/templates/gallery.html` | 画廊头部「⬇️ 下载视频 / ⬇️ 下载缩略图」按钮 + 成片行「下载」改走附件端点；上下文补 `main_video_rel`；**后补**：头部「⬇️ 下载 4K BGM」按钮 + 上下文 `video_4k_bgm_name`（与「📋 4K BGM」同源，缺失即禁用） | 只在画廊页可见 |
 | `app/templates/base.html` + `workspace.html` + `app/routers/pages.py` + `app/config_manager.py`（删 `SLEEP_ORCHESTRATION_KEYS`）+ 删 `templates/arrangement.html` | **删除「📋 内容编排」页**（导航/路由/模板/专用参数字典/工作台页签映射） | `sleep_sequence` 键与 timeline 消费逻辑保留，仍在「参数配置」页可编辑 |
 
 > 这些改动**已 commit 并 push 到 GitHub master**（`7773666 → 646886f → 99a75b1 → 8309290 → 7f1c8b5 → fdd7f66`），VPS 上 `bash vps_update.sh` 即可同步；不再有"本机未提交补丁"的问题。
