@@ -25,6 +25,27 @@ from sleep.sleep_cards import (render_intro_card, render_outro_card,
 BLOCK_TIMEOUT = 600
 
 
+def _existing_block_ok(path: str, want_fps: int) -> bool:
+    """已存在的块能否复用（resume）。
+
+    除文件有效性外**必须校验帧率一致**：`sleep_card_fps` 改动后（25→1 或 1→25）
+    复用旧块会让同一 run 内块间帧率不一致 → concat_segments 的 `-c:v copy`
+    拼接时长漂移（实测 11.0s→11.6s，帧时间戳负跳变），故帧率不符即重建。
+    """
+    if not (os.path.exists(path) and os.path.getsize(path) > 1000):
+        return False
+    try:
+        out = subprocess.run(
+            ["ffprobe", "-v", "error", "-select_streams", "v:0",
+             "-show_entries", "stream=avg_frame_rate", "-of", "csv=p=0", path],
+            capture_output=True, text=True, timeout=30).stdout.strip()
+        num, _, den = out.partition("/")
+        got = float(num) / float(den) if num and den and float(den) else float(num or 0)
+        return abs(got - want_fps) < 0.01
+    except Exception:  # noqa: BLE001 —— 探测失败一律重建（宁慢不坏）
+        return False
+
+
 def _output_vf(out_w: int, out_h: int) -> str:
     """按输出分辨率构造 scale/pad（720p 时与 media_utils.VF_NORM 一致）。"""
     return (f"scale={out_w}:{out_h}:force_original_aspect_ratio=decrease,"
@@ -190,13 +211,18 @@ def _build_block(card_path: str, block_segs: list[dict], audio_paths: dict,
                  out_path: str, vf: str, lead: float = 0.0,
                  intro_db: float = 0.0, outro_db: float = 0.0,
                  logo: tuple[list[str], str] | None = None,
-                 x264_params: list[str] | None = None) -> None:
+                 x264_params: list[str] | None = None,
+                 fps: int = 25) -> None:
     """构建一个块 mp4（静态卡 + 音频链）。
 
     logo=(输入段, 视频滤镜段) 时视频流并入 filter_complex：
     [0:v]→vf→[bg] 叠 logo→[vout]，不再走 -vf；音频输入索引顺延 1。
     x264_params：原生 4K 时由调用方传入（4K 的 rc-lookahead 缓冲是最大单块
-    内存），非 4K 传 None = 与历史命令逐字节一致。"""
+    内存），非 4K 传 None = 与历史命令逐字节一致。
+    fps：静态卡无运动，降帧只减少「同一张图被编码的次数」（1fps 约 5× 提速）；
+    25 = 与历史命令逐字节一致。**同一 run 内所有块必须同帧率**——块间帧率不一致
+    会让 media_utils.concat_segments 的 `-c:v copy` 拼接时长漂移（实测 11.0s→11.6s
+    且帧时间戳负跳变，ffmpeg 各修参数均无效）。"""
     block_dur = round(sum(float(seg.get("duration", 0.0)) for seg in block_segs), 3)
     lg_inputs, lg_chain = logo or ([], "")
     fg, inputs = _build_audio_chain(block_segs, audio_paths, lead=lead,
@@ -214,7 +240,7 @@ def _build_block(card_path: str, block_segs: list[dict], audio_paths: dict,
                 "-map", "0:v:0", "-vf", vf]
     cmd += ["-map", "[aout]",
             "-t", f"{block_dur:.3f}",
-            "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", "25",
+            "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", str(fps),
             *list(x264_params or []),
             "-c:a", "aac", "-b:a", "128k", "-ar", "44100", "-ac", "2",
             out_path]
@@ -269,6 +295,7 @@ def compose_sleep(work_dir: str, timeline: list[dict], script: dict,
                   logo_path: str = "", logo_position: str = "top_right",
                   logo_size: int = 96, logo_opacity: int = 90,
                   logo_pos_x: float = 92.0, logo_pos_y: float = 6.0,
+                  card_fps: int = 25,
                   progress_cb=None, stop_check=None) -> str:
     """合成 sleep 成片。返回最终 mp4 路径（videos/{safe}.mp4）。
 
@@ -276,9 +303,17 @@ def compose_sleep(work_dir: str, timeline: list[dict], script: dict,
     下游 Step 6 检测已 4K 自动硬链接跳过放大）。
     xfade_sec>0：相邻块边界（组间 + 片头/片尾衔接）画面交叉溶解过渡
     （0.2-2.0s；仅画面，音频不动；整片多 1-2 次视频重编码）。0=硬切。
+    card_fps：**卡片块**编码帧率（1/2/5/25）。静态卡降帧=少编码重复帧，本机
+    12s/4K 实测 25fps→1fps 快约 5×；绑定片头/片尾**视频**的块仍固定 25fps，
+    因此调用方（pipeline._step5_compose）会在「绑定了库视频或开启交叉溶解」时
+    把 card_fps 回退为 25 —— 块间帧率不一致会让 concat_segments 的 `-c:v copy`
+    拼接时长漂移（实测 11.0s→11.6s，8 种 ffmpeg 修参数均无效）。
     """
     out_w, out_h = (3840, 2160) if native_4k else (TARGET_W, TARGET_H)
     vf = _output_vf(out_w, out_h)
+    card_fps = int(card_fps or 25)
+    if card_fps != 25:
+        print(f"  [Sleep] 卡片块帧率: {card_fps}fps（静态卡降帧；绑定视频块仍 25fps）")
     # 原生 4K 时「块编码器」本身就是 4K 编码器：把 4K 编码参数（SLEEP_4K_X264_PARAMS，
     # 主要是收 rc-lookahead）交给它 —— 否则每个块都要吃满默认 lookahead 的 ~1.4GB。
     # 非原生（720p）传空列表，命令与历史逐字节一致。
@@ -363,7 +398,9 @@ def compose_sleep(work_dir: str, timeline: list[dict], script: dict,
                 card = cards["outro"]
             else:
                 card = cards[str(head.get("pair", 0)).zfill(4)]
-        if not (os.path.exists(out_path) and os.path.getsize(out_path) > 1000):
+        # 期望帧率：绑定片头/片尾视频的块固定 25fps；卡片块用 card_fps
+        want_fps = 25 if (is_intro_video or is_outro_video) else card_fps
+        if not _existing_block_ok(out_path, want_fps):
             try:
                 if is_intro_video:
                     _build_video_block(intro_video, block_segs, out_path, vf,
@@ -377,7 +414,7 @@ def compose_sleep(work_dir: str, timeline: list[dict], script: dict,
                     _build_block(card, block_segs, audio_results, out_path, vf,
                                  lead=card_lead, intro_db=intro_volume_db,
                                  outro_db=outro_volume_db, logo=logo,
-                                 x264_params=_x264)
+                                 x264_params=_x264, fps=card_fps)
             except RuntimeError as e:
                 if str(e) == "stopped":
                     raise
@@ -394,7 +431,7 @@ def compose_sleep(work_dir: str, timeline: list[dict], script: dict,
                     _build_block(card, block_segs, audio_results, out_path, vf,
                                  lead=card_lead, intro_db=intro_volume_db,
                                  outro_db=outro_volume_db, logo=logo,
-                                 x264_params=_x264)
+                                 x264_params=_x264, fps=card_fps)
         block_paths.append(out_path)
         if bi % 10 == 0 or bi == total - 1:
             _cb(int(2 + bi / total * 78),

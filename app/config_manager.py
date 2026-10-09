@@ -190,6 +190,16 @@ PARAM_SPEC = {
                         "modes": ["sleep"],
                         "label": "4K 放大超时(秒)",
                         "help": "Step6 4K 重编码的 ffmpeg 超时上限，默认 3600。慢机器（如 1 核 VPS）上 4K 可能超过 1 小时：超时会判定 4K 失败并保留 720p 成片（可 --resume 只重试 4K），长片建议调到 43200"},
+    "sleep_card_fps": {"default": 25, "type": "select", "group": "sleep_render",
+                       "modes": ["sleep"],
+                       "options": {"25": "25fps（默认：与历史一致）",
+                                   "5": "5fps（约 2.8× 提速）",
+                                   "2": "2fps（约 4.2× 提速）",
+                                   "1": "1fps（最快，约 5×；体积略增）"},
+                       "label": "卡片块帧率",
+                       "help": "卡片是静态图（-loop 1），降帧只减少「同一张图被编码的次数」：12s/4K 卡 25fps→1fps 实测约 5× 提速；"
+                               "仅在未绑定片头/片尾库视频且关闭交叉溶解时生效，否则自动回退 25fps"
+                               "（块间帧率不一致会让 -c:v copy 拼接时长漂移）。音频与字幕时间轴不受影响"},
     "sleep_intro": {"default": True, "type": "checkbox", "group": "sleep_intro",
                     "modes": ["sleep"],
                     "label": "片头",

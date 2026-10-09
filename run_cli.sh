@@ -59,6 +59,9 @@ fi
 if [ "$(cfg no_4k)" = "1" ] && [[ "$JOINED" != *" --no-4k "* ]]; then
   ARGS+=(--no-4k)
 fi
+# 卡片块帧率（1/2/5/25）：静态卡降帧提速；未绑定片头/片尾视频时才真正生效
+_fps="$(cfg sleep_card_fps)"
+[ -n "$_fps" ] && ARGS+=(--sleep-card-fps "$_fps")
 
 # BGM：配置开着就加 --bgm-mix，并把音乐库/侧链参数按配置传下去（与网页一键生成一致）
 if [ "$(cfg bgm_mix)" = "1" ] && [[ "$JOINED" != *" --bgm-mix "* ]]; then

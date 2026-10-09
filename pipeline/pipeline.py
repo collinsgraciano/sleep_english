@@ -630,6 +630,14 @@ def _step4_timeline(args, checkpoint: dict, script: dict, work_dir: Path,
     # 片头/片尾开关（段结构）当前值 —— resume 时与 meta.json 记录比对决定重建
     want_bounds = (bool(getattr(args, "sleep_intro", True)),
                    bool(getattr(args, "sleep_outro", True)))
+    # 卡片块帧率 < 25 时，块时长必须是「帧长的整数倍」（否则 CFR 编码会把块向上
+    # 取整，视频比音频网格长、画面与旁白逐步错位）→ 在时间轴层按 1/fps 对齐各块。
+    # 步长取 1/fps 而不是固定 1s：5fps 只补 ≤0.2s/块、2fps ≤0.5s/块、1fps ≤1s/块。
+    _fps4, _fps4_why = _resolve_card_fps(args, tts_results)
+    _quant = round(1.0 / _fps4, 6) if _fps4 < 25 else 0.0
+    if _quant:
+        print(f"  [Sleep] 卡片块帧率 {_fps4}fps → 时间轴按 {_quant:g}s 对齐各块"
+              f"（补齐静音；{_fps4_why}）")
 
     from sleep.timeline_sleep import (build_sleep_srt, build_sleep_timeline,
                                       parse_sleep_sequence, sequence_signature)
@@ -644,6 +652,9 @@ def _step4_timeline(args, checkpoint: dict, script: dict, work_dir: Path,
                   f"{getattr(args, 'sleep_pairs', 200)}）— 重建时间轴")
         elif meta.get("sleep_sequence_sig", "") != seq_sig:
             print("  [Resume] sleep_sequence 变化 — 重建时间轴")
+        elif int(meta.get("sleep_card_fps", 25) or 25) != _fps4:
+            print(f"  [Resume] 卡片块帧率变化（meta {meta.get('sleep_card_fps')} → "
+                  f"{_fps4}）— 重建时间轴（整秒对齐规则不同）")
         elif (meta.get("sleep_intro", True), meta.get("sleep_outro", True)) != want_bounds:
             print(f"  [Resume] sleep_intro/sleep_outro 开关变化（meta "
                   f"{meta.get('sleep_intro', True)}/{meta.get('sleep_outro', True)} → "
@@ -661,7 +672,8 @@ def _step4_timeline(args, checkpoint: dict, script: dict, work_dir: Path,
         include_intro=bool(getattr(args, "sleep_intro", True)),
         include_outro=bool(getattr(args, "sleep_outro", True)),
         card_lead=float(getattr(args, "sleep_card_lead", 0.3) or 0.0),
-        sequence=sequence)
+        sequence=sequence,
+        quantize_sec=_quant)
     # 字幕不上屏（文字预渲染进卡片）；SRT 仅作 sidecar 闭源字幕文件
     srt = build_sleep_srt(timeline)
 
@@ -674,6 +686,7 @@ def _step4_timeline(args, checkpoint: dict, script: dict, work_dir: Path,
         "script": script,
         "pad": getattr(args, "pad", 0.4),
         "sleep_pairs": int(getattr(args, "sleep_pairs", 200)),
+        "sleep_card_fps": _fps4,
         "sleep_sequence_sig": seq_sig,
         "sleep_intro": want_bounds[0],
         "sleep_outro": want_bounds[1],
@@ -757,6 +770,35 @@ def _step45_thumbnail(args, checkpoint: dict, script: dict, work_dir: Path,
     )
     _save_checkpoint(work_dir, "step4.5_thumbnail")
 
+def _resolve_card_fps(args, tts_results: dict) -> tuple[int, str]:
+    """决定卡片块实际帧率，返回 (fps, 原因说明)。
+
+    静态卡片块（`-loop 1 卡片PNG`）没有运动，降帧只减少「同一张图被编码的次数」
+    （本机 12s/4K 实测 25fps→1fps 约 5×；VPS 上按 98s/块 与 ~4s 固定开销推算约
+    8–12×）。但**同一 run 内所有块必须同帧率**：
+
+    - 绑定片头/片尾**库视频**的块是 25fps 运动画面 → 回退 25；
+    - 开启交叉溶解（xfade）时 0.5s 过渡在低帧率下不足 1 帧 → 回退 25；
+    - 其余情况用配置值（只接受 1/2/5/25，非法值回退 25）。
+
+    原因字符串会打进运行日志，便于事后确认到底用了哪个帧率。
+    """
+    want = int(getattr(args, "sleep_card_fps", 25) or 25)
+    if want not in (1, 2, 5, 25):
+        return 25, f"配置值 {want} 非法（仅 1/2/5/25）→ 回退默认"
+    if want == 25:
+        return 25, "默认/配置指定 25fps"
+    bound = [str(tts_results.get(k, "") or "")
+             for k in ("intro_video", "outro_video")]
+    bound = [p for p in bound if p and os.path.exists(p)]
+    if bound:
+        return 25, (f"配置 {want}fps → 回退：绑定了片头/片尾库视频（{len(bound)} 个）"
+                    f"，块间帧率不一致会让 -c:v copy 拼接时长漂移")
+    if getattr(args, "sleep_xfade", False):
+        return 25, f"配置 {want}fps → 回退：交叉溶解开启（低帧率下过渡不足 1 帧）"
+    return want, "静态卡片降帧：未绑定片头/片尾视频、无交叉溶解"
+
+
 def _step5_compose(args, checkpoint: dict, script: dict, work_dir: Path, dirs: dict,
                    clip_paths: list, timeline: list, narration: dict,
                    normal_paths: list, zh_paths: list, tts_results: dict,
@@ -804,6 +846,9 @@ def _step5_compose(args, checkpoint: dict, script: dict, work_dir: Path, dirs: d
         # 上画面前先抠图（纯色底→透明底；不适合抠/失败时原样返回，行为同现状）
         if _logo_path:
             _logo_path = _ensure_logo_cutout(_logo_path)
+    # --- 卡片块帧率（sleep_card_fps）安全闸门：块间帧率必须一致 ---
+    _card_fps, _fps_reason = _resolve_card_fps(args, tts_results)
+    print(f"  [Sleep] 卡片块帧率 = {_card_fps}fps（{_fps_reason}）")
     final_path = compose_sleep(
         work_dir=str(work_dir),
         timeline=timeline,
@@ -831,6 +876,7 @@ def _step5_compose(args, checkpoint: dict, script: dict, work_dir: Path, dirs: d
         logo_opacity=int(getattr(args, "sleep_logo_opacity", 90) or 90),
         logo_pos_x=float(getattr(args, "sleep_logo_pos_x", 92.0) or 92.0),
         logo_pos_y=float(getattr(args, "sleep_logo_pos_y", 6.0) or 6.0),
+        card_fps=_card_fps,
         progress_cb=progress_cb,
         stop_check=stop_check,
     )
@@ -1090,6 +1136,11 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument("--sleep-bg-image", action="store_true", help="开启背景图片（低透明度叠加在渐变背景上）")
     parser.add_argument("--sleep-bg-image-path", default="", help="背景图固定本地路径（填了共用；空=按本期主题 AI 生成）")
     parser.add_argument("--sleep-bg-opacity", type=int, default=35, help="背景图不透明度百分比（0-100，默认 35）")
+    parser.add_argument("--sleep-card-fps", type=int, default=25,
+                        choices=[1, 2, 5, 25],
+                        help="卡片块帧率（1/2/5/25）：静态卡片降帧只减少重复帧编码，"
+                             "本机 12s/4K 实测 1fps 约 5× 提速；绑定片头/片尾视频或"
+                             "开启交叉溶解时自动回退 25（混合帧率会让复制拼接时长漂移）")
     parser.add_argument("--sleep-bg-style-mode", default="topic_first",
                         choices=["topic_first", "mood_first"],
                         help="背景图 prompt 取向：topic_first=主体跟随主题（默认）/ mood_first=旧版睡前氛围")

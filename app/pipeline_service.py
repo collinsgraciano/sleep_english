@@ -113,6 +113,20 @@ def _cfg_int(config: dict, key: str, default: int, lo: int = 0, hi: int = 10) ->
         return default
 
 
+def _cfg_choice(config: dict, key: str, default, choices: tuple):
+    """枚举型配置：值必须落在 choices 内，否则回退 default。
+
+    用于 select 型参数（如 sleep_card_fps 的 1/2/5/25）——避免非法值被当成
+    合法帧率传下去（会与 pipeline 侧闸门判断不一致）。
+    """
+    v = config.get(key, default)
+    try:
+        v = int(v)
+    except (TypeError, ValueError):
+        return default
+    return v if v in choices else default
+
+
 def _cfg_float(config: dict, key: str, default: float,
                lo: float = -30.0, hi: float = 15.0) -> float:
     """配置值安全转 float（空串/非法值回退默认），并 clamp 到 [lo, hi]。
@@ -759,6 +773,8 @@ class PipelineService:
                                     or "topic_first"),
             sleep_bg_allow_people=bool(config.get("sleep_bg_allow_people", True)),
             sleep_4k_native=bool(config.get("sleep_4k_native", False)),
+            # 卡片块帧率：只接受 {1,2,5,25}，其他值回退 25（与 pipeline 闸门口径一致）
+            sleep_card_fps=_cfg_choice(config, "sleep_card_fps", 25, (1, 2, 5, 25)),
             sleep_intro=bool(config.get("sleep_intro", True)),
             sleep_intro_use_library=bool(config.get("sleep_intro_use_library", True)),
             sleep_intro_announce=bool(config.get("sleep_intro_announce", True)),

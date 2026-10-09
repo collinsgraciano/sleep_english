@@ -126,13 +126,12 @@ bash /opt/sleep_english/vps_update.sh
 ### 3.2 画廊页：下载视频 / 缩略图
 
 - 入口：运行历史 → 某期的「画廊」按钮（`/runs/{name}/gallery`）
-- 头部按钮「**⬇️ 下载视频**」（主成片）、「**⬇️ 下载 4K BGM**」（4K+BGM 成片 `{标题}_4K_bgm.mp4`，与相邻「📋 4K BGM」复制的是**同一个文件**；该文件不存在时按钮灰显禁用并提示先点「🎵 混BGM 4K」）与「**⬇️ 下载缩略图**」（主缩略图）；「📹 最终视频」列表里每一行还有「下载」，可分别下 720p / 4K / 4K BGM / BGM 版
+- 头部按钮「**⬇️ 下载视频**」（主成片）与「**⬇️ 下载缩略图**」（主缩略图）；「📹 最终视频」列表里每一行还有「下载」，可分别下 720p / 4K / 4K BGM / BGM 版
 - 后端两个只读端点，响应都是 `Content-Disposition: attachment`（中文名走 RFC 5987 `filename*`，支持 Range 续传）：
   - `GET /api/runs/{name}/download/video[?file=文件名]` —— 缺省=主成片（与列表/播放器同口径）；`file` 只接受**纯文件名**（禁 `..`/分隔符），按 运行目录根 → `clips/` → `videos/` 依次查找
   - `GET /api/runs/{name}/download/thumbnail[?file=thumbnail_N.jpg]` —— 缺省=主缩略图；指定名走 `thumbnail(_N)?.jpg` 白名单
 - 鉴权：`/api/*` 在密码闸门后面 —— 浏览器点按钮自动带 cookie；`curl` 要加 `-H 'X-Sleep-Auth: <密码>'`
 - 实测：`download/video` 200 + `attachment; filename*=utf-8''…`（20.3 MB）；`download/thumbnail` 200 + `attachment; filename="thumbnail.jpg"`（290 KB）；路径穿越 → 400、不存在 → 404、非白名单缩略图名 → 400
-- 后续补丁：画廊头部新增「**⬇️ 下载 4K BGM**」——`file=` 取页面上下文的 `video_4k_bgm_name`（= `_resolve_video_copy_paths()["4k_bgm"]` 的文件名，运行目录根部最新 `*_4K_bgm.mp4`），因此与「📋 4K BGM」复制的路径恒为同一文件；无该文件时渲染禁用态。实测（隔离夹具 + 本机 8766 实机）：启用态 href 解码后 = `…?file={标题}_4K_bgm.mp4`、下载 200 + `attachment; filename*=utf-8''…` 且字节一致；删掉该文件后按钮转禁用、端点 404；`../x.mp4` 仍 400、主成片默认下载仍 200
 
 ---
 
@@ -323,7 +322,7 @@ PY
 | `pipeline/pipeline.py` + `app/pipeline_service.py` | **原生 4K + BGM 命名**：4K 源混出 `{标题}_4K_bgm.mp4`；Step6 用**干净的 4K** 硬链出 `{标题}_4K.mp4`；运行页「混BGM」按钮按源分辨率命名 | 非原生路径不变 |
 | `app/config_manager.py` | 删除 `bgm_intro_outro_seconds`（参数页不再出现）；`sleep_sequence` help 文案改指向参数配置页 | 其余 BGM 参数不变 |
 | `app/routers/runs.py` | 新增 `GET /api/runs/{name}/download/video`、`/download/thumbnail`（attachment + 纯文件名校验 + 缩略图白名单） | 新增只读端点 |
-| `app/routers/pages.py` + `app/templates/gallery.html` | 画廊头部「⬇️ 下载视频 / ⬇️ 下载缩略图」按钮 + 成片行「下载」改走附件端点；上下文补 `main_video_rel`；**后补**：头部「⬇️ 下载 4K BGM」按钮 + 上下文 `video_4k_bgm_name`（与「📋 4K BGM」同源，缺失即禁用） | 只在画廊页可见 |
+| `app/routers/pages.py` + `app/templates/gallery.html` | 画廊头部「⬇️ 下载视频 / ⬇️ 下载缩略图」按钮 + 成片行「下载」改走附件端点；上下文补 `main_video_rel` | 只在画廊页可见 |
 | `app/templates/base.html` + `workspace.html` + `app/routers/pages.py` + `app/config_manager.py`（删 `SLEEP_ORCHESTRATION_KEYS`）+ 删 `templates/arrangement.html` | **删除「📋 内容编排」页**（导航/路由/模板/专用参数字典/工作台页签映射） | `sleep_sequence` 键与 timeline 消费逻辑保留，仍在「参数配置」页可编辑 |
 
 > 这些改动**已 commit 并 push 到 GitHub master**（`7773666 → 646886f → 99a75b1 → 8309290 → 7f1c8b5 → fdd7f66`），VPS 上 `bash vps_update.sh` 即可同步；不再有"本机未提交补丁"的问题。
@@ -446,4 +445,58 @@ Follow the art style below strictly: {style_prompt}
 参考：明亮白天室内照片通常 平均亮度 >140、暗像素 <15%。多数旧图偏暗/偏灰（`night lighting` + `muted` 的直接结果），符合"不管主题都像睡觉"的观感。
 
 > ⚠️ 视觉终检需人工确认：本机无法读图。开启背景图后生成一张，直接看 `images/sleep_bg.png` 以及 `sleep_bg.prompt.txt` 里的主体是否就是本期话题。
+
+---
+
+## 13. 卡片块帧率（`sleep_card_fps`）—— 静态卡降帧提速
+
+### 13.1 原理与实测收益
+
+sleep 的块 =「一张静态卡片（`-loop 1`）+ 该组音频链」，`-r 25` 会把**同一张图编码 25 次/秒**。降帧只减少「重复帧的编码次数」，画面零损失（已确认卡片块没有任何动画滤镜）。
+
+本机真实命令形状实测（12s 静态卡 → 4K 输出，含 aac 音频）：
+
+| fps | 耗时 | 加速 | 体积 |
+|---|---|---|---|
+| 25 | 10.4 s | 1.00× | 0.69 MB |
+| 5 | 3.7 s | 2.83× | 0.47 MB |
+| 2 | 2.5 s | 4.15× | 0.66 MB |
+| 1 | 2.1 s | **5.02×** | 0.87 MB |
+
+不是 25×：每块有固定开销（ffmpeg 启动 + 4K PNG 解码 + aac + 封装 ≈ 1.5–2 s），随帧数线性增长的部分约占 8 s/12s 卡。
+
+### 13.2 生效条件（安全闸门，自动判定并打印原因）
+
+| 情况 | 结果 |
+|---|---|
+| 未绑定片头/片尾**库视频** 且 `sleep_xfade=false` | ✅ 用配置值（1/2/5/25） |
+| 绑定片头/片尾**库视频** | ⛔ 回退 25fps（该块是 25fps 运动画面） |
+| 开启交叉溶解 | ⛔ 回退 25fps（0.5s 过渡在低帧率下不足 1 帧） |
+| 非法取值 | ⛔ 回退 25fps |
+
+**为什么必须同帧率**：块拼接走 `media_utils.concat_segments` 的 `-c:v copy`（concat demuxer）。实测混合 25fps + 1fps：时长 11.0s → **11.600s**、帧时间戳 **39 处负跳变**；试了 8 种修参数（`+genpts`/`igndts`/`-vsync vfr`/`-fps_mode vfr`/`-copyts`/`avoid_negative_ts`/`video_track_timescale`/重编码）**全部无效**。
+
+### 13.3 帧长对齐（否则视频会比音频长）
+
+`-r 1` 会把每个块向上取整到整秒：52 块累计 **+26.8s**，视频比音频网格长 → 画面与旁白逐步错位。
+现在在**时间轴层**（`timeline_sleep._quantize_block_durations`）把每块补齐到 `1/fps` 的整数倍（延长块内 gap 静音），因此音频网格、SRT、YouTube 章节与视频完全一致。
+
+本地 A/B（10 组、720p、复用缓存音频）：
+
+| | 25fps | 1fps |
+|---|---|---|
+| 容器时长 vs 时间轴 | 267.174s vs 266.956s（+0.218s，历史 CFR 取整） | 290.000s vs 290.000s（**0.000s**） |
+| 每块时长 | — | 全部为 1s 整数倍（0/52 不合规） |
+| `avg_frame_rate` | 28467200/1139943 | **1/1** |
+| Step 5 窗口 | 82.3 s | 59.8 s（1.38×，含固定开销） |
+| 体积 | 6.61 MB | 8.49 MB（+28%） |
+| 时间轴总长 | 267.0 s | 290.0 s（对齐净增 +23.0s 静音，+8.6%） |
+
+### 13.4 代价与建议
+
+- **时长净增** = 每块 ≤ `1/fps` 的静音补齐：1fps ≈ **+8.6%**，2fps ≈ +4%，5fps ≈ **+1.7%**（都是加在组间停顿里，听感无影响）
+- **体积 +25~30%**（低帧率下每帧都是关键帧；25fps 时后续帧几乎是空 P 帧）
+- **拖动精度** = `1/fps` 秒（睡前内容无影响）
+- 建议：**5fps 是性价比点**（+1.7% 时长换 ~2.8×）；追极限用 1fps（+8.6% 时长换 ~5×）
+- VPS 换算（原生 4K、块 ≈24s、25fps 基线 98 s/块）：1fps 预计 ~8–12 s/块 → Step 5 由 ~85 min 降到 ~10–15 min
 
