@@ -744,6 +744,15 @@ def _ffmpeg_overlay_video(
             #   threshold: 线性振幅 (0.000976563 ~ 1)，需从 dB 转换
             #   attack/release: 毫秒 (0.01 ~ 2000/9000)
             sc_threshold_linear = 10 ** (sc_threshold_db / 20.0)
+            # ffmpeg sidechaincompress 的 threshold 是线性振幅，必须在 (0, 1]；
+            # 越界（例如误传 +1dB → 1.122）会让 ffmpeg 直接报
+            # "Numerical result out of range" → 混音静默退到 pydub（慢、吃内存，
+            # 长片有 OOM 风险），所以这里夹紧并告警，保证快的 ffmpeg 路径可用。
+            if not (0.0 < sc_threshold_linear <= 1.0):
+                clamped = min(1.0, max(0.000976563, sc_threshold_linear))
+                print(f"  [BGM] threshold {sc_threshold_db:+.1f}dB → {sc_threshold_linear:.4f} "
+                      f"越界，夹紧为 {clamped:.4f}（ffmpeg 要求线性 0~1）")
+                sc_threshold_linear = clamped
             narr_src = "[0:a]"
             filter_complex = (
                 f"{narr_src}asplit=2[narr][sc_key];"

@@ -24,7 +24,7 @@ if [ -f "$REPO/.vps_env" ]; then
   set +a
 fi
 
-cfg() {  # cfg <key>：读配置；bool true→1 / false→""；字符串原样；缺失→""
+cfg() {  # cfg <key>：读配置；bool true→1 / false→""；数字/字符串原样；缺失→""
   "$REPO/.venv/bin/python" -c "
 import json
 try:
@@ -32,7 +32,12 @@ try:
 except Exception:
     d = {}
 v = d.get('$1', '')
-print(v if isinstance(v, str) else ('1' if v else ''))
+if isinstance(v, bool):
+    print('1' if v else '')
+elif v is None:
+    print('')
+else:
+    print(v)
 " 2>/dev/null
 }
 
