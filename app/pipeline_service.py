@@ -754,7 +754,10 @@ class PipelineService:
             sleep_color_leaf=str(config.get("sleep_color_leaf", "") or ""),
             sleep_bg_image=bool(config.get("sleep_bg_image", False)),
             sleep_bg_image_path=str(config.get("sleep_bg_image_path", "") or ""),
-            sleep_bg_opacity=_cfg_int(config, "sleep_bg_opacity", 20, 0, 100),
+            sleep_bg_opacity=_cfg_int(config, "sleep_bg_opacity", 35, 0, 100),
+            sleep_bg_style_mode=str(config.get("sleep_bg_style_mode", "topic_first")
+                                    or "topic_first"),
+            sleep_bg_allow_people=bool(config.get("sleep_bg_allow_people", True)),
             sleep_4k_native=bool(config.get("sleep_4k_native", False)),
             sleep_intro=bool(config.get("sleep_intro", True)),
             sleep_intro_use_library=bool(config.get("sleep_intro_use_library", True)),

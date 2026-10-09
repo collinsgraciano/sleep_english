@@ -366,3 +366,83 @@ PY
 | 访问 /arrangement 返回 404 | 该页（📋 内容编排）已按需求删除，不是故障；`sleep_sequence` 改在「参数配置」页用 JSON 编辑 |
 | 4K 文件里其实有 BGM / 点「混BGM 4K」像混了两次 | 旧产物命名缺陷（已修，见 §6.1）：重跑该期 4K 或手动删掉旧的 `_4K.mp4` 再生成 |
 | 混 BGM 想更慢/更"干净指纹" | 首尾独立段已删除（那是整片重编码的根因）；如需恢复可从 git 历史取回 `intro_outro_seconds` 实现 |
+| 背景图看着都像"睡觉场景"、认不出主题 | 旧 prompt 写死了 `night lighting` + `sleep atmosphere` + `no people`，且主体取自常为泛化标签的 `scene`。已重构（见 §12）：`sleep_bg_style_mode=topic_first`（默认）让主体跟随主题；必要时用配置页调整 |
+
+---
+
+## 12. sleep 背景图（`images/sleep_bg.png`）—— prompt 与主题贴合
+
+### 12.1 旧实现的问题（已修）
+
+旧 prompt 由 `pipeline/sleep/bg_image.py::build_bg_prompt()` 拼成：
+
+```
+Calm dreamy pastel scene related to: {scene}.
+Soft muted colors, gentle diffused night lighting, peaceful relaxing sleep atmosphere, ...
+no text, ..., no people, {style_prompt}
+```
+
+三个致命点：
+1. **主体取自 `script["scene"]`**（`pipeline.py` 旧代码 `scene = script.get("scene") or args.topic`），而 LLM schema 只定义 `scene_zh`，`scene` 是额外字段 → 实测出现 `客服 · 情境對話`、`情境對話` 这类**零信息泛化标签**，甚至空串；
+2. 氛围段**写死夜晚与睡前**（`night lighting` / `sleep atmosphere`）→ 不管主题是钢琴课还是领养狗，模型都往昏暗柔和靠；
+3. **`no people`** → 你的主题几乎都是人的活动，去掉人物后只剩"昏暗空景"。
+
+辅因：混入不透明度偏低（默认 20；你的频道设 30）、风格片段里的 `vibrant saturated colors` 与我们的 `Soft muted colors` 打架。
+
+### 12.2 现在的 prompt 组成（`topic_first`，默认）
+
+```
+Wide establishing shot of: {subject}.
+The main subject must be clearly recognizable: {subject}.
+Soft diffused ambient lighting, low contrast, calm pastel palette suitable for a bedtime video,
+clean simple composition, wide shot,
+no text, no words, no letters, no watermark            ← 允许人物（可关）
+Follow the art style below strictly: {style_prompt}
+```
+
+**主体 `{subject}` 解析优先级**（`pick_bg_subject()`）：
+1. **本期主题 `topic`**（英文，最贴内容；非泛化时直接用）
+2. 非泛化的 `scene`
+3. 标题（自动去掉频道固定前缀 `Everyday Phrases — `）
+4. `everyday life`
+
+**泛化标签过滤**：空串、`情境對話/日常/對話/短句…` 词表命中、以及「X · Y」形式的 **scene 标签**（末段是泛化词，如 `客服 · 情境對話`、`居家打掃 · 短句`）都会被跳过；`情境 · 取快遞` 这种末段具体的仍会用（主体=取快遞）。
+
+### 12.3 新增/调整的配置（`sleep_visual` 组）
+
+| 键 | 默认 | 说明 |
+|---|---|---|
+| `sleep_bg_style_mode` | `topic_first` | 新增。`mood_first` = **回到旧版睡前氛围**（与重构前 prompt 逐字符一致） |
+| `sleep_bg_allow_people` | `true` | 新增。关掉则 prompt 加 `no people`（旧取向） |
+| `sleep_bg_opacity` | 20 → **35** | 只改默认值；**已保存的配置值不会被覆盖**（你的频道是 30，可自行调高） |
+
+> 注意：`sleep_bg_image` 全局默认 false，但你的频道 `ch_..._0` / `ch_..._3` 都覆盖为 **true**（不透明度 30）——所以频道运行的背景图是开着的。
+
+### 12.4 可观测性
+
+- 生成前打印：`[SleepBG] 主体='...'（来源=topic/scene/title/fallback，style_mode=...，allow_people=...）` 与 `[SleepBG] prompt: ...`（截断 300 字）
+- 生成后落盘 `images/sleep_bg.prompt.txt`（含主体来源 + 完整 prompt + 时间戳）→ 复盘/重生成时能知道当时到底问了什么
+
+### 12.5 回归保护
+
+`pipeline/sleep/test_bg_image.py`（纯 stdlib，`python pipeline/sleep/test_bg_image.py`）：28 项断言，含
+- 泛化标签判定（`客服 · 情境對話`→泛化、`大學宿舍`/`Berry Picking at a Farm`→不泛化）
+- 主体优先级（topic > scene > title > fallback）
+- `topic_first` 不再出现 `night lighting`/`sleep atmosphere`/`Soft muted colors`/`no people`
+- **`mood_first` 与重构前输出逐字符一致**（另用 `git show HEAD:pipeline/sleep/bg_image.py` 做过 6 组输入的实测对比，全部一致）
+
+### 12.6 实测背景图统计（判断"是否像睡觉场景"的量化参考）
+
+| 来源 | 尺寸 | 平均亮度 | 平均饱和(HSV) | 暗像素(<80) |
+|---|---|---|---|---|
+| 收快遞（旧 prompt） | 2720×1536 | 99.6 | 126.6 | **41.6%** |
+| 睡不著 | 1536×1024 | 102.9 | 106.5 | 31.4% |
+| 鋼琴課 | 2720×1536 | 144.2 | 88.3 | 14.7% |
+| 領養毛小孩 | 2720×1536 | 153.6 | 88.4 | 11.5% |
+| 戴運動手環 | 2720×1536 | 126.3 | 105.0 | 26.3% |
+| **本期「選串流方案」**（旧 prompt，`scene=串流方案`） | 2720×1536 | 124.2 | 112.2 | 22.3% |
+
+参考：明亮白天室内照片通常 平均亮度 >140、暗像素 <15%。多数旧图偏暗/偏灰（`night lighting` + `muted` 的直接结果），符合"不管主题都像睡觉"的观感。
+
+> ⚠️ 视觉终检需人工确认：本机无法读图。开启背景图后生成一张，直接看 `images/sleep_bg.png` 以及 `sleep_bg.prompt.txt` 里的主体是否就是本期话题。
+

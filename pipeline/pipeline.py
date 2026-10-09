@@ -530,6 +530,16 @@ def _step2_images_tts(args, checkpoint: dict, script: dict, work_dir: Path, dirs
     if getattr(args, "sleep_bg_image", False) and not quick_test \
             and not tts_results.get("fatal_error"):
         _fixed_bg = str(getattr(args, "sleep_bg_image_path", "") or "").strip()
+        # 背景图 prompt 的主体来源（topic 优先；scene/title 兜底），
+        # 以及「旧观感」回退开关与是否允许人物 —— 见 sleep/bg_image.py 模块注释
+        _bg_kw = {
+            "topic_en": str(script.get("topic") or getattr(args, "topic", "") or "").strip(),
+            "scene": str(script.get("scene") or "").strip(),
+            "title": str(script.get("title") or "").strip(),
+            "style_mode": str(getattr(args, "sleep_bg_style_mode", "topic_first")
+                              or "topic_first"),
+            "allow_people": bool(getattr(args, "sleep_bg_allow_people", True)),
+        }
         if _fixed_bg and os.path.exists(_fixed_bg):
             print(f"  [SleepBG] 使用固定背景图: {_fixed_bg}")
         else:
@@ -545,7 +555,7 @@ def _step2_images_tts(args, checkpoint: dict, script: dict, work_dir: Path, dirs
                 else:
                     print(f"  [SleepBG] 使用 HTTP 生图通道（{_provider}）生成背景图 ...")
                     ensure_sleep_bg_image(str(img_dir), scene, style_prompt,
-                                          image_gen_fn=_gen)
+                                          image_gen_fn=_gen, **_bg_kw)
             else:
                 from mcp_client import initialize
                 # Step 1 对 sleep 跳过了 MCP 初始化 —— 按需初始化（照缩略图先例）；
@@ -563,7 +573,8 @@ def _step2_images_tts(args, checkpoint: dict, script: dict, work_dir: Path, dirs
                 ensure_sleep_bg_image(
                     str(img_dir), scene, style_prompt,
                     mcp_call_tool=call_tool, mcp_parse_task_id=parse_task_id,
-                    mcp_poll_task=poll_task, mcp_download_file=download_file)
+                    mcp_poll_task=poll_task, mcp_download_file=download_file,
+                    **_bg_kw)
 
     print("  [Sleep] Skipping clip generation (no video clips)")
 
@@ -1078,7 +1089,13 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument("--sleep-color-leaf", default="", help="叶片颜色 hex")
     parser.add_argument("--sleep-bg-image", action="store_true", help="开启背景图片（低透明度叠加在渐变背景上）")
     parser.add_argument("--sleep-bg-image-path", default="", help="背景图固定本地路径（填了共用；空=按本期主题 AI 生成）")
-    parser.add_argument("--sleep-bg-opacity", type=int, default=20, help="背景图不透明度百分比（0-100，默认 20）")
+    parser.add_argument("--sleep-bg-opacity", type=int, default=35, help="背景图不透明度百分比（0-100，默认 35）")
+    parser.add_argument("--sleep-bg-style-mode", default="topic_first",
+                        choices=["topic_first", "mood_first"],
+                        help="背景图 prompt 取向：topic_first=主体跟随主题（默认）/ mood_first=旧版睡前氛围")
+    parser.add_argument("--no-sleep-bg-people", dest="sleep_bg_allow_people",
+                        action="store_false", default=True,
+                        help="背景图里不允许出现人物/角色（默认允许，多数主题是人的活动）")
     parser.add_argument("--sleep-4k-native", action="store_true", help="卡片原生 3840x2160 渲染（成片即 4K；默认关=720p 合成后 Step6 放大）")
     # --- 频道 Logo 水印 ---
     parser.add_argument("--sleep-logo", action=argparse.BooleanOptionalAction, default=True,

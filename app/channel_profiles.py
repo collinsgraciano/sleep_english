@@ -39,6 +39,7 @@ OVERRIDABLE_KEYS: tuple[str, ...] = (
     "sleep_color_badge_bg", "sleep_color_badge_text", "sleep_color_channel",
     "sleep_color_leaf",
     "sleep_bg_image", "sleep_bg_image_path", "sleep_bg_opacity",
+    "sleep_bg_style_mode", "sleep_bg_allow_people",
     "sleep_intro", "sleep_intro_video", "sleep_outro_video",
     # 内容
     "cefr", "sleep_pairs",
