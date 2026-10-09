@@ -114,7 +114,7 @@ def _cfg_int(config: dict, key: str, default: int, lo: int = 0, hi: int = 10) ->
 
 
 def _cfg_choice(config: dict, key: str, default, choices: tuple):
-    """枚举型配置：值必须落在 choices 内，否则回退 default。
+    """枚举型配置（int）：值必须落在 choices 内，否则回退 default。
 
     用于 select 型参数（如 sleep_card_fps 的 1/2/5/25）——避免非法值被当成
     合法帧率传下去（会与 pipeline 侧闸门判断不一致）。
@@ -124,6 +124,15 @@ def _cfg_choice(config: dict, key: str, default, choices: tuple):
         v = int(v)
     except (TypeError, ValueError):
         return default
+    return v if v in choices else default
+
+
+def _cfg_str_choice(config: dict, key: str, default: str, choices: tuple) -> str:
+    """枚举型配置（str）：值必须落在 choices 内，否则回退 default。
+
+    用于 sleep_block_grouping 等字符串枚举（per_step/per_pair）。
+    """
+    v = str(config.get(key, default) or default).strip().lower()
     return v if v in choices else default
 
 
@@ -775,6 +784,9 @@ class PipelineService:
             sleep_4k_native=bool(config.get("sleep_4k_native", False)),
             # 卡片块帧率：只接受 {1,2,5,25}，其他值回退 25（与 pipeline 闸门口径一致）
             sleep_card_fps=_cfg_choice(config, "sleep_card_fps", 25, (1, 2, 5, 25)),
+            # 块划分方式：per_step（默认，历史行为）/ per_pair（同组合并，省固定开销）
+            sleep_block_grouping=_cfg_str_choice(config, "sleep_block_grouping",
+                                                 "per_step", ("per_step", "per_pair")),
             sleep_intro=bool(config.get("sleep_intro", True)),
             sleep_intro_use_library=bool(config.get("sleep_intro_use_library", True)),
             sleep_intro_announce=bool(config.get("sleep_intro_announce", True)),

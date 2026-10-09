@@ -634,10 +634,11 @@ def _step4_timeline(args, checkpoint: dict, script: dict, work_dir: Path,
     # 取整，视频比音频网格长、画面与旁白逐步错位）→ 在时间轴层按 1/fps 对齐各块。
     # 步长取 1/fps 而不是固定 1s：5fps 只补 ≤0.2s/块、2fps ≤0.5s/块、1fps ≤1s/块。
     _fps4, _fps4_why = _resolve_card_fps(args, tts_results)
+    _group4 = _resolve_block_grouping(args)
     _quant = round(1.0 / _fps4, 6) if _fps4 < 25 else 0.0
     if _quant:
         print(f"  [Sleep] 卡片块帧率 {_fps4}fps → 时间轴按 {_quant:g}s 对齐各块"
-              f"（补齐静音；{_fps4_why}）")
+              f"（分块={_group4}；{_fps4_why}）")
 
     from sleep.timeline_sleep import (build_sleep_srt, build_sleep_timeline,
                                       parse_sleep_sequence, sequence_signature)
@@ -655,6 +656,9 @@ def _step4_timeline(args, checkpoint: dict, script: dict, work_dir: Path,
         elif int(meta.get("sleep_card_fps", 25) or 25) != _fps4:
             print(f"  [Resume] 卡片块帧率变化（meta {meta.get('sleep_card_fps')} → "
                   f"{_fps4}）— 重建时间轴（整秒对齐规则不同）")
+        elif str(meta.get("sleep_block_grouping", "per_step")) != _group4:
+            print(f"  [Resume] 分块方式变化（meta {meta.get('sleep_block_grouping')} → "
+                  f"{_group4}）— 重建时间轴（对齐单位不同）")
         elif (meta.get("sleep_intro", True), meta.get("sleep_outro", True)) != want_bounds:
             print(f"  [Resume] sleep_intro/sleep_outro 开关变化（meta "
                   f"{meta.get('sleep_intro', True)}/{meta.get('sleep_outro', True)} → "
@@ -673,7 +677,8 @@ def _step4_timeline(args, checkpoint: dict, script: dict, work_dir: Path,
         include_outro=bool(getattr(args, "sleep_outro", True)),
         card_lead=float(getattr(args, "sleep_card_lead", 0.3) or 0.0),
         sequence=sequence,
-        quantize_sec=_quant)
+        quantize_sec=_quant,
+        grouping=_group4)
     # 字幕不上屏（文字预渲染进卡片）；SRT 仅作 sidecar 闭源字幕文件
     srt = build_sleep_srt(timeline)
 
@@ -687,6 +692,7 @@ def _step4_timeline(args, checkpoint: dict, script: dict, work_dir: Path,
         "pad": getattr(args, "pad", 0.4),
         "sleep_pairs": int(getattr(args, "sleep_pairs", 200)),
         "sleep_card_fps": _fps4,
+        "sleep_block_grouping": _group4,
         "sleep_sequence_sig": seq_sig,
         "sleep_intro": want_bounds[0],
         "sleep_outro": want_bounds[1],
@@ -770,6 +776,20 @@ def _step45_thumbnail(args, checkpoint: dict, script: dict, work_dir: Path,
     )
     _save_checkpoint(work_dir, "step4.5_thumbnail")
 
+def _resolve_block_grouping(args) -> str:
+    """块划分方式，返回 "per_step" / "per_pair"（非法值回退 per_step）。
+
+    - per_step（默认，与历史一致）：一个步骤 + 其停顿自成一块（10 组 = 52 块）；
+    - per_pair：同一组的全部步骤合并成一块（10 组 = 12 块）。同组共用一张卡片，
+      音频链本就支持多段内联拼接 ⇒ 画面/音频完全一致，只是把「每块一次」的
+      ffmpeg 固定开销（4K PNG 解码 + 滤波图 + x264 4K 上下文初始化 + aac +
+      mp4 finalize，1 vCPU 实测 ≈24s/块）从 52 次降到 12 次。
+    """
+    g = str(getattr(args, "sleep_block_grouping", "per_step")
+            or "per_step").strip().lower()
+    return g if g in ("per_step", "per_pair") else "per_step"
+
+
 def _resolve_card_fps(args, tts_results: dict) -> tuple[int, str]:
     """决定卡片块实际帧率，返回 (fps, 原因说明)。
 
@@ -848,7 +868,9 @@ def _step5_compose(args, checkpoint: dict, script: dict, work_dir: Path, dirs: d
             _logo_path = _ensure_logo_cutout(_logo_path)
     # --- 卡片块帧率（sleep_card_fps）安全闸门：块间帧率必须一致 ---
     _card_fps, _fps_reason = _resolve_card_fps(args, tts_results)
-    print(f"  [Sleep] 卡片块帧率 = {_card_fps}fps（{_fps_reason}）")
+    _grouping = _resolve_block_grouping(args)
+    print(f"  [Sleep] 卡片块帧率 = {_card_fps}fps（{_fps_reason}）；"
+          f"分块方式 = {_grouping}")
     final_path = compose_sleep(
         work_dir=str(work_dir),
         timeline=timeline,
@@ -877,6 +899,7 @@ def _step5_compose(args, checkpoint: dict, script: dict, work_dir: Path, dirs: d
         logo_pos_x=float(getattr(args, "sleep_logo_pos_x", 92.0) or 92.0),
         logo_pos_y=float(getattr(args, "sleep_logo_pos_y", 6.0) or 6.0),
         card_fps=_card_fps,
+        grouping=_grouping,
         progress_cb=progress_cb,
         stop_check=stop_check,
     )
@@ -1136,6 +1159,11 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument("--sleep-bg-image", action="store_true", help="开启背景图片（低透明度叠加在渐变背景上）")
     parser.add_argument("--sleep-bg-image-path", default="", help="背景图固定本地路径（填了共用；空=按本期主题 AI 生成）")
     parser.add_argument("--sleep-bg-opacity", type=int, default=35, help="背景图不透明度百分比（0-100，默认 35）")
+    parser.add_argument("--sleep-block-grouping", default="per_step",
+                        choices=["per_step", "per_pair"],
+                        help="块划分方式：per_step=一个步骤一块（默认，与历史一致，"
+                             "10 组 52 块）；per_pair=同一组多步合并成一块（10 组 12 块，"
+                             "画面/音频一致，省下每块一次的 ffmpeg 固定开销 ≈24s/块）")
     parser.add_argument("--sleep-card-fps", type=int, default=25,
                         choices=[1, 2, 5, 25],
                         help="卡片块帧率（1/2/5/25）：静态卡片降帧只减少重复帧编码，"

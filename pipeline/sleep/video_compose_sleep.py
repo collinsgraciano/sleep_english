@@ -10,6 +10,7 @@ xfade_sec>0 时相邻块先交叉溶解合并为纯视频流（仅画面、音�
 native_4k=True 时卡片按 3840x2160 原生渲染、块直接编码 4K（文字像素级
 清晰，跳过 Step 6 lanczos 放大）；False 输出与历史版本逐字节一致（720p）。
 """
+import json
 import os
 import shutil
 import subprocess
@@ -25,23 +26,35 @@ from sleep.sleep_cards import (render_intro_card, render_outro_card,
 BLOCK_TIMEOUT = 600
 
 
-def _existing_block_ok(path: str, want_fps: int) -> bool:
+def _existing_block_ok(path: str, want_fps: int, want_dur: float | None = None) -> bool:
     """已存在的块能否复用（resume）。
 
-    除文件有效性外**必须校验帧率一致**：`sleep_card_fps` 改动后（25→1 或 1→25）
-    复用旧块会让同一 run 内块间帧率不一致 → concat_segments 的 `-c:v copy`
-    拼接时长漂移（实测 11.0s→11.6s，帧时间戳负跳变），故帧率不符即重建。
+    除文件有效性外**必须校验帧率与时长**：
+    - `sleep_card_fps` 改动后（25→1 或 1→25）复用旧块会让同一 run 内块间帧率
+      不一致 → concat_segments 的 `-c:v copy` 拼接时长漂移（实测 11.0s→11.6s，
+      帧时间戳负跳变），故帧率不符即重建；
+    - `sleep_block_grouping` 改动后（per_step↔per_pair）同序号块的含义完全不同
+      （5s 的块 vs 26s 的块），时长不符即重建。
     """
     if not (os.path.exists(path) and os.path.getsize(path) > 1000):
         return False
     try:
         out = subprocess.run(
             ["ffprobe", "-v", "error", "-select_streams", "v:0",
-             "-show_entries", "stream=avg_frame_rate", "-of", "csv=p=0", path],
-            capture_output=True, text=True, timeout=30).stdout.strip()
-        num, _, den = out.partition("/")
-        got = float(num) / float(den) if num and den and float(den) else float(num or 0)
-        return abs(got - want_fps) < 0.01
+             "-show_entries", "stream=avg_frame_rate",
+             "-show_entries", "format=duration", "-of", "json", path],
+            capture_output=True, text=True, timeout=30).stdout
+        d = json.loads(out) if out.strip() else {}
+        st = (d.get("streams") or [{}])[0]
+        num, _, den = str(st.get("avg_frame_rate", "0/1")).partition("/")
+        got_fps = float(num) / float(den) if num and den and float(den) else float(num or 0)
+        if abs(got_fps - want_fps) >= 0.01:
+            return False
+        if want_dur is not None:
+            got_dur = float((d.get("format") or {}).get("duration") or 0)
+            if abs(got_dur - float(want_dur)) > 0.05:
+                return False
+        return True
     except Exception:  # noqa: BLE001 —— 探测失败一律重建（宁慢不坏）
         return False
 
@@ -284,6 +297,58 @@ def _ensure_cards(timeline: list[dict], script: dict, cards_dir: Path,
     return cards
 
 
+def group_timeline_blocks(timeline: list[dict],
+                          grouping: str = "per_step") -> list[list[dict]]:
+    """时间轴 → 块序列（纯函数，便于单测）。
+
+    grouping="per_step"（默认，与历史逐字符等价）：intro | (pair+gap) × N | outro
+      ——「一个步骤 + 其停顿」自成一块（10 组 × 5 步 + 片头/片尾 = 52 块）。
+    grouping="per_pair"：同一组的全部步骤 + 停顿合并成一块（10 组 → 12 块）。
+      同组 5 个步骤共用同一张卡片，`_build_audio_chain` 本就支持多段内联拼接，
+      因此画面/音频与 per_step 完全一致；收益是把「每块一次」的固定开销
+      （4K PNG 解码 + 滤波图 + x264 4K 上下文初始化 + aac + mp4 finalize，
+      1 vCPU 实测 ≈24s/块）从 52 次降到 12 次。
+
+    块内第一段决定块类型（intro/outro/pair），与绑定片头/片尾视频的判定一致。
+    """
+    g = str(grouping or "per_step").strip().lower()
+    blocks: list[list[dict]] = []
+    cur: list[dict] = []
+    if g == "per_pair":
+        for seg in timeline:
+            t = seg.get("type", "")
+            if t in ("intro", "outro"):
+                if cur:
+                    blocks.append(cur)
+                    cur = []
+                blocks.append([seg])
+                continue
+            pid = seg.get("pair", 0)
+            if cur and cur[0].get("pair", 0) != pid:
+                blocks.append(cur)
+                cur = []
+            cur.append(seg)
+        if cur:
+            blocks.append(cur)
+        return blocks
+    for seg in timeline:
+        t = seg.get("type", "")
+        if t in ("intro", "outro"):
+            if cur:
+                blocks.append(cur)
+                cur = []
+            blocks.append([seg])
+        elif t == "pair":
+            cur.append(seg)
+        elif t == "gap":
+            cur.append(seg)
+            blocks.append(cur)
+            cur = []
+    if cur:
+        blocks.append(cur)
+    return blocks
+
+
 def compose_sleep(work_dir: str, timeline: list[dict], script: dict,
                   audio_results: dict, cards_dir: str, theme: dict,
                   channel_name: str = "English with me", badge_text: str = "EN",
@@ -296,6 +361,7 @@ def compose_sleep(work_dir: str, timeline: list[dict], script: dict,
                   logo_size: int = 96, logo_opacity: int = 90,
                   logo_pos_x: float = 92.0, logo_pos_y: float = 6.0,
                   card_fps: int = 25,
+                  grouping: str = "per_step",
                   progress_cb=None, stop_check=None) -> str:
     """合成 sleep 成片。返回最终 mp4 路径（videos/{safe}.mp4）。
 
@@ -308,6 +374,7 @@ def compose_sleep(work_dir: str, timeline: list[dict], script: dict,
     因此调用方（pipeline._step5_compose）会在「绑定了库视频或开启交叉溶解」时
     把 card_fps 回退为 25 —— 块间帧率不一致会让 concat_segments 的 `-c:v copy`
     拼接时长漂移（实测 11.0s→11.6s，8 种 ffmpeg 修参数均无效）。
+    grouping：块划分方式（"per_step"=历史行为，"per_pair"=同组多步合并）。
     """
     out_w, out_h = (3840, 2160) if native_4k else (TARGET_W, TARGET_H)
     vf = _output_vf(out_w, out_h)
@@ -360,23 +427,14 @@ def compose_sleep(work_dir: str, timeline: list[dict], script: dict,
                           w=out_w, h=out_h)
 
     # --- 时间轴 → 块序列：intro | [5 pair + 5 gap]* | outro ---
-    blocks: list[list[dict]] = []
-    cur: list[dict] = []
-    for seg in timeline:
-        t = seg.get("type", "")
-        if t in ("intro", "outro"):
-            if cur:
-                blocks.append(cur)
-                cur = []
-            blocks.append([seg])
-        elif t == "pair":
-            cur.append(seg)
-        elif t == "gap":
-            cur.append(seg)
-            blocks.append(cur)
-            cur = []
-    if cur:
-        blocks.append(cur)
+    # grouping="per_pair" 时同组多步合并成一块（见 group_timeline_blocks）
+    blocks = group_timeline_blocks(timeline, grouping)
+    if grouping == "per_pair":
+        _per_step_n = len(group_timeline_blocks(timeline, "per_step"))
+        print(f"  [Sleep] 分块方式: per_pair → {len(blocks)} 块"
+              f"（per_step 为 {_per_step_n} 块，省下每块一次的固定开销）")
+    elif str(grouping or "").strip().lower() not in ("", "per_step"):
+        print(f"  [Sleep] 分块方式: {grouping} 未知 → 按 per_step 处理")
 
     block_paths: list[str] = []
     total = len(blocks)
@@ -400,7 +458,10 @@ def compose_sleep(work_dir: str, timeline: list[dict], script: dict,
                 card = cards[str(head.get("pair", 0)).zfill(4)]
         # 期望帧率：绑定片头/片尾视频的块固定 25fps；卡片块用 card_fps
         want_fps = 25 if (is_intro_video or is_outro_video) else card_fps
-        if not _existing_block_ok(out_path, want_fps):
+        # 期望时长：块内各段之和（换分块方式后同序号块时长不同 → 必须重建）
+        want_dur = round(sum(float(s.get("duration", 0.0) or 0.0)
+                             for s in block_segs), 3)
+        if not _existing_block_ok(out_path, want_fps, want_dur):
             try:
                 if is_intro_video:
                     _build_video_block(intro_video, block_segs, out_path, vf,

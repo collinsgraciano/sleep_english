@@ -70,11 +70,13 @@ def build_sleep_timeline(script: dict, audio: dict, num_pairs: int,
                          include_outro: bool = True,
                          card_lead: float = 0.0,
                          sequence: list[dict] | None = None,
-                         quantize_sec: float = 0.0) -> list[dict]:
+                         quantize_sec: float = 0.0,
+                         grouping: str = "per_step") -> list[dict]:
     """由 prepare_sleep_audio 结果构建线性时间轴。
 
     quantize_sec>0：把每个块的总时长向上取整到该步长的整数倍（仅低帧率卡片
     编码时需要，见 _quantize_block_durations）；0=保持各段精确时长（历史行为）。
+    grouping：块划分方式（"per_step"/"per_pair"），仅影响 quantize_sec 的对齐单位。
 
     sequence=None：默认步序 a_m → g_short → a_slow → g_long → b_m → g_short
     → b_slow → g_long → combo → pair_gap（与历史行为一致）。
@@ -138,11 +140,12 @@ def build_sleep_timeline(script: dict, audio: dict, num_pairs: int,
         timeline.append({"type": "outro", "duration": round(outro_dur, 3),
                          "subtitle_en": "", "subtitle_zh": "", "pair": 0, "step": ""})
     if quantize_sec and quantize_sec > 0:
-        _quantize_block_durations(timeline, float(quantize_sec))
+        _quantize_block_durations(timeline, float(quantize_sec), grouping)
     return timeline
 
 
-def _quantize_block_durations(timeline: list[dict], step: float) -> None:
+def _quantize_block_durations(timeline: list[dict], step: float,
+                              grouping: str = "per_step") -> None:
     """把**每个块**的总时长向上取整到 step 的整数倍（就地修改）。
 
     仅当卡片块帧率 < 25 时调用（`sleep_card_fps`）：此时一帧 = 1/fps 秒，块时长
@@ -152,9 +155,11 @@ def _quantize_block_durations(timeline: list[dict], step: float) -> None:
 
     取整方式：延长块内**最后一段**——pair 块的末段是 gap（纯静音，听感无影响），
     intro/outro 块延长自身。块边界识别与 compose_sleep 的分块规则一致：
-    intro/outro 各自成块，[pair + gap] 成块。
+    intro/outro 各自成块；`grouping="per_step"` 时 [pair + gap] 成块，
+    `"per_pair"` 时同组全部步骤成块（此时需对齐的块数只有 1/5，补齐总量也随之减少）。
     """
     n = len(timeline)
+    per_pair = str(grouping or "").strip().lower() == "per_pair"
     i = 0
     while i < n:
         seg = timeline[i]
@@ -163,13 +168,22 @@ def _quantize_block_durations(timeline: list[dict], step: float) -> None:
             _pad_last([seg], step)
             i += 1
         elif t == "pair":
-            block = [seg]
-            if i + 1 < n and timeline[i + 1].get("type") == "gap":
-                block.append(timeline[i + 1])
-                i += 2
+            if per_pair:
+                pid = seg.get("pair", 0)
+                block = []
+                while (i < n and timeline[i].get("type") not in ("intro", "outro")
+                       and timeline[i].get("pair", 0) == pid):
+                    block.append(timeline[i])
+                    i += 1
+                _pad_last(block, step)
             else:
-                i += 1
-            _pad_last(block, step)
+                block = [seg]
+                if i + 1 < n and timeline[i + 1].get("type") == "gap":
+                    block.append(timeline[i + 1])
+                    i += 2
+                else:
+                    i += 1
+                _pad_last(block, step)
         else:
             i += 1
 

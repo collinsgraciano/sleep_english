@@ -200,6 +200,14 @@ PARAM_SPEC = {
                        "help": "卡片是静态图（-loop 1），降帧只减少「同一张图被编码的次数」：12s/4K 卡 25fps→1fps 实测约 5× 提速；"
                                "仅在未绑定片头/片尾库视频且关闭交叉溶解时生效，否则自动回退 25fps"
                                "（块间帧率不一致会让 -c:v copy 拼接时长漂移）。音频与字幕时间轴不受影响"},
+    "sleep_block_grouping": {"default": "per_step", "type": "select", "group": "sleep_render",
+                             "modes": ["sleep"],
+                             "options": {"per_step": "每步一块（默认：与历史一致，10 组 52 块）",
+                                         "per_pair": "每组一块（10 组 12 块；省每块一次的固定开销）"},
+                             "label": "块划分方式",
+                             "help": "同一组的 5 个步骤共用同一张卡片，合并成一块后画面/音频完全一致；"
+                                     "收益是把每块一次的 ffmpeg 固定开销（4K PNG 解码 + 滤波图 + x264 4K 上下文 + aac + mp4 finalize，"
+                                     "1 核 VPS 实测 ≈24s/块）从 52 次降到 12 次（实测 Step5 42.6min → 26min@25fps；叠加低帧率可到 ~6min）"},
     "sleep_intro": {"default": True, "type": "checkbox", "group": "sleep_intro",
                     "modes": ["sleep"],
                     "label": "片头",

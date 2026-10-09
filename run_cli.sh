@@ -66,6 +66,9 @@ if [ "$(cfg no_4k)" = "1" ]; then add_flag --no-4k; fi
 # 卡片块帧率（1/2/5/25）：静态卡降帧提速；未绑定片头/片尾视频时才真正生效
 _fps="$(cfg sleep_card_fps)"
 [ -n "$_fps" ] && add_flag --sleep-card-fps "$_fps"
+# 块划分方式：per_step（默认）/ per_pair（同组合并，省每块固定开销）
+_grp="$(cfg sleep_block_grouping)"
+[ -n "$_grp" ] && add_flag --sleep-block-grouping "$_grp"
 
 # BGM：配置开着就加 --bgm-mix，并把音乐库/侧链参数按配置传下去（与网页一键生成一致）
 if [ "$(cfg bgm_mix)" = "1" ]; then add_flag --bgm-mix; fi
