@@ -29,6 +29,18 @@
             <a href="/api/runs/{{ run_name }}/download/video{% if main_video_rel %}?file={{ main_video_rel | urlencode }}{% endif %}"
                {% if main_video_rel %}title="下载主成片（{{ main_video_label }}）"{% else %}aria-disabled="true" onclick="return false" title="该运行还没有成片"{% endif %}
                class="px-4 py-2 rounded-lg text-sm {% if main_video_rel %}bg-indigo-600 hover:bg-indigo-500 text-white{% else %}bg-slate-800 text-slate-500 cursor-not-allowed{% endif %}">⬇️ 下载视频</a>
+            <!-- 4K BGM 成片下载：与「📋 4K BGM」同源（pages.py 的 copy_paths["4k_bgm"]），
+                 复制到的路径与这里下载的永远是同一个文件；缺失时禁用（同侧按钮风格）。
+                 用 if/else 而非三元：上下文变量缺失时禁用分支不会对 Undefined 求 urlencode -->
+            {% if video_4k_bgm_name %}
+            <a href="/api/runs/{{ run_name }}/download/video?file={{ video_4k_bgm_name | urlencode }}"
+               title="下载 4K BGM 版（{{ video_4k_bgm_name }}）"
+               class="px-4 py-2 rounded-lg text-sm bg-amber-600 hover:bg-amber-500 text-white">⬇️ 下载 4K BGM</a>
+            {% else %}
+            <a href="#" aria-disabled="true" onclick="return false"
+               title="该运行还没有 4K BGM 版（先在运行历史点「🎵 混BGM 4K」）"
+               class="px-4 py-2 rounded-lg text-sm bg-slate-800 text-slate-500 cursor-not-allowed">⬇️ 下载 4K BGM</a>
+            {% endif %}
             <a href="/api/runs/{{ run_name }}/download/thumbnail"
                {% if thumb_path %}title="下载主缩略图"{% else %}aria-disabled="true" onclick="return false" title="该运行没有缩略图"{% endif %}
                class="px-4 py-2 rounded-lg text-sm {% if thumb_path %}bg-indigo-600 hover:bg-indigo-500 text-white{% else %}bg-slate-800 text-slate-500 cursor-not-allowed{% endif %}">⬇️ 下载缩略图</a>

@@ -240,6 +240,10 @@ async def gallery_page(request: Request, name: str, mode: str = ""):
     # 「下载视频」按钮的目标：主成片（kind=final，与列表/播放器同口径），无成片则空
     main_video = next((v for v in videos if v.get("kind") == "final"),
                       videos[0] if videos else None)
+    # 「⬇️ 下载 4K BGM」按钮的目标：与「📋 4K BGM」同源（运行目录根部最新的
+    # *_4K_bgm.mp4）——复制路径与下载永远指向同一个文件；缺失传空串 → 按钮禁用。
+    # 只取文件名：/download/video 的 file= 只接受纯文件名（禁 .. 与分隔符）
+    bgm4k = Path(copy_paths["4k_bgm"]) if copy_paths["4k_bgm"] else None
 
     return templates.TemplateResponse(request, "gallery.html", {
         "run_name": name,
@@ -249,6 +253,7 @@ async def gallery_page(request: Request, name: str, mode: str = ""):
         "path_4k_bgm": copy_paths["4k_bgm"],
         "main_video_rel": (main_video or {}).get("rel", ""),
         "main_video_label": (main_video or {}).get("label", ""),
+        "video_4k_bgm_name": bgm4k.name if bgm4k else "",
         "script": script,
         "images": images,
         "clips": clips,
