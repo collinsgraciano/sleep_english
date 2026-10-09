@@ -53,20 +53,22 @@ export LLM_PROVIDER="${LLM_PROVIDER:-wbk}"
 # 4K 开关：命令行显式传了就不重复追加
 ARGS=("$@")
 JOINED=" $* "
-if [ "$(cfg sleep_4k_native)" = "1" ] && [[ "$JOINED" != *" --sleep-4k-native "* ]]; then
-  ARGS+=(--sleep-4k-native)
-fi
-if [ "$(cfg no_4k)" = "1" ] && [[ "$JOINED" != *" --no-4k "* ]]; then
-  ARGS+=(--no-4k)
-fi
+# 统一规则：命令行**显式给过**同名 flag 时不再追加配置值（否则 argparse 取最后一个，
+# 配置会静默覆盖用户显式传参 —— 曾致 `--sleep-card-fps 1` 被配置默认 25 覆盖）
+has_flag() { case "$JOINED" in *" $1 "*) return 0 ;; *) return 1 ;; esac; }
+add_flag() {  # add_flag <flag> [value]
+  has_flag "$1" && return 0
+  if [ "$#" -ge 2 ]; then ARGS+=("$1" "$2"); else ARGS+=("$1"); fi
+}
+
+if [ "$(cfg sleep_4k_native)" = "1" ]; then add_flag --sleep-4k-native; fi
+if [ "$(cfg no_4k)" = "1" ]; then add_flag --no-4k; fi
 # 卡片块帧率（1/2/5/25）：静态卡降帧提速；未绑定片头/片尾视频时才真正生效
 _fps="$(cfg sleep_card_fps)"
-[ -n "$_fps" ] && ARGS+=(--sleep-card-fps "$_fps")
+[ -n "$_fps" ] && add_flag --sleep-card-fps "$_fps"
 
 # BGM：配置开着就加 --bgm-mix，并把音乐库/侧链参数按配置传下去（与网页一键生成一致）
-if [ "$(cfg bgm_mix)" = "1" ] && [[ "$JOINED" != *" --bgm-mix "* ]]; then
-  ARGS+=(--bgm-mix)
-fi
+if [ "$(cfg bgm_mix)" = "1" ]; then add_flag --bgm-mix; fi
 for pair in \
   "bgm_music_dir:--bgm-music-dir" \
   "bgm_ducking_mode:--bgm-ducking-mode" \
@@ -84,11 +86,11 @@ for pair in \
   _key="${pair%%:*}"
   _flag="${pair##*:}"
   _val="$(cfg "$_key")"
-  [ -n "$_val" ] && ARGS+=("$_flag" "$_val")
+  [ -n "$_val" ] && add_flag "$_flag" "$_val"
 done
 if [ "$(cfg bgm_mix)" = "1" ]; then
-  if [ "$(cfg bgm_dynamic_volume)" = "1" ]; then ARGS+=(--bgm-dynamic-volume); else ARGS+=(--no-bgm-dynamic-volume); fi
-  if [ "$(cfg bgm_spectral_shaping)" = "1" ]; then ARGS+=(--bgm-spectral-shaping); else ARGS+=(--no-bgm-spectral-shaping); fi
+  if [ "$(cfg bgm_dynamic_volume)" = "1" ]; then add_flag --bgm-dynamic-volume; else add_flag --no-bgm-dynamic-volume; fi
+  if [ "$(cfg bgm_spectral_shaping)" = "1" ]; then add_flag --bgm-spectral-shaping; else add_flag --no-bgm-spectral-shaping; fi
 fi
 
 echo "[run_cli] model=${WBK_MODEL} thinking=${WBK_THINKING} key=$([ -n "$WBK_API_KEY" ] && echo SET || echo EMPTY)"
