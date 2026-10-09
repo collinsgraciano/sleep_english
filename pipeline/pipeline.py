@@ -858,7 +858,23 @@ def _step55_bgm(args, checkpoint: dict, work_dir: Path, final_path: str) -> str:
         return cached
 
     final_p = Path(final_path)
-    bgm_output = str(work_dir / f"{final_p.stem}_bgm.mp4")
+    # 命名：源已是 4K（原生 4K 渲染）→ {stem}_4K_bgm.mp4，与 run_videos.py 的
+    # kind=4k_bgm 约定一致，也让「4K / 4K BGM」两个按钮各自指向正确文件；
+    # 源是 720p（旧路径）→ {stem}_bgm.mp4（Step6 再放大成 _4K.mp4）。
+    _is_4k = bool(getattr(args, "sleep_4k_native", False))
+    if not _is_4k:
+        try:
+            from media_utils import probe_resolution
+            _is_4k = probe_resolution(final_path)[0] >= 3800
+        except Exception:
+            _is_4k = False
+    _stem = final_p.stem
+    if _is_4k and not _stem.endswith("_4K"):
+        _stem = f"{_stem}_4K"
+    bgm_output = str(work_dir / f"{_stem}_bgm.mp4")
+    if _is_4k:
+        print(f"  [BGM] 源已是 4K → 输出 {Path(bgm_output).name}"
+              f"（视频流 copy，秒级完成）")
 
     from bgm_mix import mix_bgm_into_video, chapter_start_seconds
     bgm_start_seconds = chapter_start_seconds(
@@ -882,7 +898,6 @@ def _step55_bgm(args, checkpoint: dict, work_dir: Path, final_path: str) -> str:
         sc_ratio=int(getattr(args, "bgm_sc_ratio", 8)),
         sc_attack_ms=int(getattr(args, "bgm_sc_attack_ms", 5)),
         sc_release_ms=int(getattr(args, "bgm_sc_release_ms", 400)),
-        intro_outro_seconds=int(getattr(args, "bgm_intro_outro_seconds", 5)),
     )
     if ok and os.path.exists(bgm_output) and os.path.getsize(bgm_output) > 0:
         size_mb = os.path.getsize(bgm_output) / (1024 * 1024)
@@ -1005,7 +1020,7 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument("--sleep-gap-short", type=float, default=1.0, help="常速朗读后停顿秒数（默认 1.0）")
     parser.add_argument("--sleep-gap-long", type=float, default=2.0, help="慢速跟读后停顿秒数（默认 2.0）")
     parser.add_argument("--sleep-pair-gap", type=float, default=3.0, help="AB 连贯后切组停顿秒数（默认 3.0）")
-    parser.add_argument("--sleep-sequence", default="", help="组内步骤序列 JSON（留空=默认结构 a_m→a_slow→b_m→b_slow→combo；建议用 Web「📋 内容编排」页的可视化编辑器修改）")
+    parser.add_argument("--sleep-sequence", default="", help="组内步骤序列 JSON（留空=默认结构 a_m→a_slow→b_m→b_slow→combo；在 Web「参数配置」页以 JSON 编辑）")
     parser.add_argument("--sleep-channel-name", default="English with me", help="卡片/片头频道名（同步作 TTS 播报）")
     parser.add_argument("--sleep-intro-video", default="", help="片头视频 mp4 路径（片头库生成后绑定；空=默认静态卡片+频道名播报）")
     parser.add_argument("--sleep-outro-video", default="", help="片尾视频 mp4 路径（片尾库生成后绑定；空=默认静态卡片+结束语播报）")
@@ -1136,7 +1151,7 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument("--bgm-base-gain-db", type=int, default=-15, help="BGM base gain dB in sidechain mode (default -15)")
     parser.add_argument("--bgm-volume-offset-db", type=int, default=-25, help="BGM volume offset dB in amix mode (default -25)")
     parser.add_argument("--bgm-fade-ms", type=int, default=3000, help="Crossfade duration ms between music segments (default 3000)")
-    parser.add_argument("--bgm-intro-outro-seconds", type=int, default=5, help="Silence padding seconds before/after narration (sidechain only, default 5)")
+    # 已删除 --bgm-intro-outro-seconds（首尾独立段会让整片视频重编码，故移除）
     parser.add_argument("--bgm-highpass-freq", type=int, default=150, help="Highpass filter Hz applied to BGM in amix mode (default 150)")
     parser.add_argument("--bgm-min-volume-db", type=int, default=-40, help="Minimum BGM volume dB (default -40)")
     parser.add_argument("--bgm-dynamic-volume", action=argparse.BooleanOptionalAction, default=True, help="Dynamic volume envelope tracking in amix mode (default on)")
@@ -1318,9 +1333,13 @@ def main():
     final_path, safe_vid_name = _step5_compose(
         args, checkpoint, script, work_dir, dirs, clip_paths, timeline,
         narration, normal_paths, zh_paths, ctx["tts_results"], group_info, line_to_group)
-    # Step 5.5: BGM 版权音乐混合（启用时输出 {stem}_bgm.mp4，4K 以其为源）
+    # Step 5.5: BGM 版权音乐混合（720p 源输出 {stem}_bgm.mp4；原生 4K 源输出 {stem}_4K_bgm.mp4）
+    pre_bgm_path = final_path
     final_path = _step55_bgm(args, checkpoint, work_dir, final_path)
-    final_4k_path = _step6_4k(args, checkpoint, work_dir, final_path, safe_vid_name)
+    # 原生 4K：BGM 版本身已是 4K（_4K_bgm.mp4），Step6 应把**干净的 4K** 链接成
+    # _4K.mp4 —— 否则「4K」文件其实是 BGM 版（「复制 4K / 混BGM 4K」都会拿错源）
+    _4k_src = (pre_bgm_path if getattr(args, "sleep_4k_native", False) else final_path)
+    final_4k_path = _step6_4k(args, checkpoint, work_dir, _4k_src, safe_vid_name)
 
     cp_path = work_dir / "checkpoint.json"
     if cp_path.exists():

@@ -828,7 +828,6 @@ class PipelineService:
             bgm_base_gain_db=float(config.get("bgm_base_gain_db", -15)),
             bgm_volume_offset_db=float(config.get("bgm_volume_offset_db", -25)),
             bgm_fade_ms=int(config.get("bgm_fade_ms", 3000)),
-            bgm_intro_outro_seconds=int(config.get("bgm_intro_outro_seconds", 5)),
             bgm_highpass_freq=int(config.get("bgm_highpass_freq", 150)),
             bgm_min_volume_db=float(config.get("bgm_min_volume_db", -40)),
             bgm_dynamic_volume=bool(config.get("bgm_dynamic_volume", True)),
@@ -1185,7 +1184,9 @@ class PipelineService:
                 self._set_stopped()
                 return
 
-            # Step 5.5: BGM 版权音乐混合（启用时输出 {stem}_bgm.mp4，4K 以其为源）
+            # Step 5.5: BGM 版权音乐混合（720p 源输出 {stem}_bgm.mp4；
+            # 原生 4K 源输出 {stem}_4K_bgm.mp4）
+            pre_bgm_path = final_path
             if getattr(args, "bgm_mix", False):
                 self._step_begin("step55_bgm")
                 final_path = _step55_bgm(args, checkpoint, work_dir, final_path)
@@ -1209,8 +1210,12 @@ class PipelineService:
                 self._step_begin("step6_4k", "成片已是原生 4K，仅链接产出")
             else:
                 self._step_begin("step6_4k", "ffmpeg lanczos 放大 3840x2160")
+            # 原生 4K：BGM 版已是 4K（_4K_bgm.mp4），Step6 链接**干净的 4K** 成
+            # _4K.mp4（否则「4K」文件其实是 BGM 版）
+            _4k_src = (pre_bgm_path if getattr(args, "sleep_4k_native", False)
+                       else final_path)
             final_4k_path = _step6_4k(args, checkpoint, work_dir,
-                                      final_path, safe_vid_name)
+                                      _4k_src, safe_vid_name)
             if final_4k_path:
                 self._step_end("step6_4k", note=Path(str(final_4k_path)).name)
             elif getattr(args, "no_4k", False):
@@ -1650,12 +1655,23 @@ class PipelineService:
             sc_ratio=int(config.get("bgm_sc_ratio", 8)),
             sc_attack_ms=int(config.get("bgm_sc_attack_ms", 5)),
             sc_release_ms=int(config.get("bgm_sc_release_ms", 400)),
-            intro_outro_seconds=int(config.get("bgm_intro_outro_seconds", 5)),
-            # 4K 带 padding 时整片重编码，600s 默认值会超时
-            ffmpeg_timeout=3600 if target == "4k" else 600,
+            # 首尾独立段（tpad 重编码）已删除 → 现在恒为「视频 copy + 音频重编码」，
+            # 1800s 对 100 分钟成片也足够宽裕
+            ffmpeg_timeout=1800,
         )
         start_chapter = int(config.get("bgm_start_chapter", 1) or 1)
-        out_path = run_dir / f"{final_path.stem}_bgm.mp4"
+        # 命名：源已是 4K（原生 4K 运行点「混BGM」，或 target=4k 的 _4K.mp4）时
+        # 输出 {标题}_4K_bgm.mp4 —— 与 run_videos.py 的 kind=4k_bgm 约定一致；
+        # 源是 720p 时维持 {标题}_bgm.mp4（随后 Step6 放大成 _4K.mp4）。
+        out_stem = final_path.stem
+        try:
+            from media_utils import probe_resolution as _probe_res
+            _w, _h = _probe_res(str(final_path))
+        except Exception:
+            _w = 0
+        if _w >= 3800 and not out_stem.endswith("_4K"):
+            out_stem = f"{out_stem}_4K"
+        out_path = run_dir / f"{out_stem}_bgm.mp4"
         self._start_heartbeat()
         self._thread = threading.Thread(
             target=self._bgm_mix_run,

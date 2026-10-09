@@ -159,6 +159,37 @@ async def api_get_thumbnail_file(name: str, filename: str, mode: str = ""):
                         headers={"Cache-Control": "no-cache"})
 
 
+def _is_plain_filename(value: str) -> bool:
+    """下载参数校验：只接受纯文件名（禁 ``..``、路径分隔符），防目录穿越。"""
+    return bool(value) and value not in (".", "..") and Path(value).name == value
+
+
+@router.get("/api/runs/{name}/download/thumbnail")
+async def api_download_thumbnail(name: str, mode: str = "", file: str = ""):
+    """下载缩略图（`Content-Disposition: attachment`，画廊「下载缩略图」按钮用）。
+
+    file 为空 = 主缩略图（thumb_main.txt → thumbnail.jpg → 编号最小那张）；
+    file 非空 = 指定文件，须匹配 thumbnail(_N)?.jpg 白名单。
+    """
+    config = load_config()
+    output_dir = Path(config.get("output_dir", "./output"))
+    run_dir = find_run_dir(output_dir, name, mode)
+    if not run_dir:
+        return JSONResponse({"error": "Not found"}, status_code=404)
+    if file:
+        if not _THUMB_NAME_RE.fullmatch(file):
+            return JSONResponse({"error": "Invalid file"}, status_code=400)
+        thumb = run_dir / file
+    else:
+        thumb = _resolve_main_thumbnail(run_dir)
+    if not thumb or not thumb.exists():
+        return JSONResponse({"error": "Not found"}, status_code=404)
+    # filename= 会输出 attachment + 文件名（中文标题走 RFC 5987 filename*）
+    return FileResponse(str(thumb), media_type="image/jpeg", filename=thumb.name,
+                        content_disposition_type="attachment",
+                        headers={"Cache-Control": "no-store"})
+
+
 def _thumb_llm_override(cfg: dict) -> dict:
     """构建缩略图文案候选生成的线程局部 LLM 配置（不改 os.environ）。
 
@@ -473,6 +504,41 @@ async def api_get_video(name: str, video_name: str, mode: str = ""):
     if not video_path.exists():
         return JSONResponse({"error": "Not found"}, status_code=404)
     return FileResponse(str(video_path), media_type="video/mp4")
+
+
+@router.get("/api/runs/{name}/download/video")
+async def api_download_video(name: str, mode: str = "", file: str = ""):
+    """下载成片（`Content-Disposition: attachment`，画廊「下载视频」按钮与每个成片行用）。
+
+    file 为空 = 该运行的主成片（与画廊/运行列表同口径：`list_run_videos` 里的
+    kind=final 那条，`videos/{标题}.mp4` 优先）；
+    file 非空 = 指定文件名，依次在 运行目录根 → clips/ → videos/ 查找
+    （如 `{标题}.mp4` / `{标题}_4K.mp4` / `{标题}_4K_bgm.mp4`）。
+    """
+    config = load_config()
+    output_dir = Path(config.get("output_dir", "./output"))
+    run_dir = find_run_dir(output_dir, name, mode)
+    if not run_dir:
+        return JSONResponse({"error": "Not found"}, status_code=404)
+    candidates: list[Path] = []
+    if file:
+        if not _is_plain_filename(file):
+            return JSONResponse({"error": "Invalid file"}, status_code=400)
+        candidates = [run_dir / file, run_dir / "clips" / file,
+                      run_dir / "videos" / file]
+    else:
+        items = list_run_videos(run_dir, name, mode or run_mode_hint(run_dir))
+        main = next((it for it in items if it.get("kind") == "final"),
+                    items[0] if items else None)
+        if main:
+            candidates = [run_dir / str(main.get("rel") or main.get("name") or "")]
+    for cand in candidates:
+        if cand.is_file():
+            return FileResponse(str(cand), media_type="video/mp4",
+                                filename=cand.name,
+                                content_disposition_type="attachment",
+                                headers={"Cache-Control": "no-store"})
+    return JSONResponse({"error": "Not found"}, status_code=404)
 
 
 @router.get("/api/runs/{name}/images/{image_name}")

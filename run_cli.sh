@@ -55,6 +55,34 @@ if [ "$(cfg no_4k)" = "1" ] && [[ "$JOINED" != *" --no-4k "* ]]; then
   ARGS+=(--no-4k)
 fi
 
+# BGM：配置开着就加 --bgm-mix，并把音乐库/侧链参数按配置传下去（与网页一键生成一致）
+if [ "$(cfg bgm_mix)" = "1" ] && [[ "$JOINED" != *" --bgm-mix "* ]]; then
+  ARGS+=(--bgm-mix)
+fi
+for pair in \
+  "bgm_music_dir:--bgm-music-dir" \
+  "bgm_ducking_mode:--bgm-ducking-mode" \
+  "bgm_start_chapter:--bgm-start-chapter" \
+  "bgm_base_gain_db:--bgm-base-gain-db" \
+  "bgm_volume_offset_db:--bgm-volume-offset-db" \
+  "bgm_fade_ms:--bgm-fade-ms" \
+  "bgm_highpass_freq:--bgm-highpass-freq" \
+  "bgm_min_volume_db:--bgm-min-volume-db" \
+  "bgm_sc_threshold_db:--bgm-sc-threshold-db" \
+  "bgm_sc_threshold_offset_db:--bgm-sc-threshold-offset-db" \
+  "bgm_sc_ratio:--bgm-sc-ratio" \
+  "bgm_sc_attack_ms:--bgm-sc-attack-ms" \
+  "bgm_sc_release_ms:--bgm-sc-release-ms" ; do
+  _key="${pair%%:*}"
+  _flag="${pair##*:}"
+  _val="$(cfg "$_key")"
+  [ -n "$_val" ] && ARGS+=("$_flag" "$_val")
+done
+if [ "$(cfg bgm_mix)" = "1" ]; then
+  if [ "$(cfg bgm_dynamic_volume)" = "1" ]; then ARGS+=(--bgm-dynamic-volume); else ARGS+=(--no-bgm-dynamic-volume); fi
+  if [ "$(cfg bgm_spectral_shaping)" = "1" ]; then ARGS+=(--bgm-spectral-shaping); else ARGS+=(--no-bgm-spectral-shaping); fi
+fi
+
 echo "[run_cli] model=${WBK_MODEL} thinking=${WBK_THINKING} key=$([ -n "$WBK_API_KEY" ] && echo SET || echo EMPTY)"
 echo "[run_cli] 4K: native=$(cfg sleep_4k_native) no_4k=$(cfg no_4k) | x264=${SLEEP_4K_X264_PARAMS:-'(默认)'} | unload=${SLEEP_UNLOAD_TTS:-0}"
 echo "[run_cli] 参数: ${ARGS[*]}"

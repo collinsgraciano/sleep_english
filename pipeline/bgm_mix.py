@@ -501,18 +501,19 @@ def mix_bgm_into_video(
     sc_ratio: int = 8,
     sc_attack_ms: int = 5,
     sc_release_ms: int = 400,
-    intro_outro_seconds: int = 5,
     ffmpeg_timeout: int = 600,
     bgm_start_seconds: float = 0.0,
 ) -> bool:
     """把版权 BGM 混入视频音轨（视频流 copy，仅音频重编码）。失败返回 False 不抛异常。
 
-    ffmpeg_timeout: 内部 ffmpeg 进程超时上限（秒）。4K 等高分辨率带 padding 时
-    需整片重编码，调用方应传入更大的值（如 3600）。
+    ffmpeg_timeout: 内部 ffmpeg 进程超时上限（秒）。
     bgm_start_seconds: BGM 起始秒数（通常来自运行目录章节时间戳），
-    该点之前 BGM 静音；此时不再加首部独立参考段（起点前天然干净）。
+    该点之前 BGM 静音。
+
+    历史：曾有 intro_outro_seconds（默认 5）在旁白首/尾加静音并让视频 tpad 冻结帧
+    延展同秒数 —— 那会让整片视频重编码（4K 上要多花 1.5-2 小时），已按需求删除：
+    现在输出时长与原片严格一致，视频流恒为 copy（秒级完成）。
     """
-    narr_temp_path: str | None = None
     bgm_temp_path: str | None = None
     try:
         # 入口参数归一（0/负数/None = 不做交叉淡化）：下游 min(fade_duration_ms, …)
@@ -552,35 +553,8 @@ def mix_bgm_into_video(
             print(f"  [BGM] 起始点 {bgm_start_seconds:.0f}s 贴近/超出片长，回退从头混音")
             bgm_start_seconds = 0.0
 
-        # BGM 首尾独立段（仅 sidechain 模式）：旁白前后加静音，给 Content ID 干净指纹参考。
-        # 视频版配套：音频加静音的同时视频用 tpad 冻结延展同秒数（否则音画错位）。
-        # BGM 不覆盖片头时（bgm_start_seconds>0）不加首部参考段——起点前天然干净，
-        # 且视频头部不延展可保持章节时间戳对齐。
-        pad_start = pad_end = 0
-        if intro_outro_seconds > 0 and is_sidechain:
-            pad_end = int(intro_outro_seconds)
-            pad_start = pad_end if bgm_start_seconds <= 0 else 0
-            if pad_start > 0:
-                orig_audio = AudioSegment.silent(
-                    duration=pad_start * 1000, frame_rate=orig_audio.frame_rate,
-                ) + orig_audio
-            if pad_end > 0:
-                orig_audio = orig_audio + AudioSegment.silent(
-                    duration=pad_end * 1000, frame_rate=orig_audio.frame_rate,
-                )
-            print(
-                f"  [BGM] 首尾独立段: +{pad_start}s/+{pad_end}s (Content ID 参考，"
-                f"视频对应端冻结帧延展)"
-            )
-            # 将 padded 旁白写入临时 WAV，供 ffmpeg 作为输入
-            narr_temp = tempfile.NamedTemporaryFile(
-                suffix=".wav",
-                delete=False,
-                dir=os.path.dirname(output_path) or ".",
-            )
-            narr_temp_path = narr_temp.name
-            narr_temp.close()
-            orig_audio.export(narr_temp_path, format="wav")
+        # 已删除「首尾独立段」（原 intro_outro_seconds=5）：旁白不再加静音、视频不再
+        # tpad 延展，因此视频流恒为 copy、输出时长与原片一致（见函数 docstring）。
 
         bgm_music = prepare_copyright_music(
             music_files,
@@ -601,9 +575,8 @@ def mix_bgm_into_video(
             bgm_music = bgm_music.set_frame_rate(orig_audio.frame_rate)
         if orig_audio.channels != bgm_music.channels:
             bgm_music = bgm_music.set_channels(orig_audio.channels)
-        # BGM 起始点：前置静音把音乐右移（下方截齐块自然裁掉尾部超长部分）。
-        # 注意只按 bgm_start_seconds 偏移：bgm_start>0 时 pad_start 恒为 0
-        # （无首部 pad），bgm_start=0 时 lead 必须为 0——首部参考段需 BGM 盖住
+        # BGM 起始点：前置静音把音乐右移（下方截齐块自然裁掉尾部超长部分），
+        # 起点之前即天然无 BGM（章节时间戳与原片严格对齐）。
         lead_ms = int(bgm_start_seconds * 1000)
         if lead_ms > 0:
             fd_in = min(fade_duration_ms, len(bgm_music) // 4)
@@ -627,8 +600,7 @@ def mix_bgm_into_video(
 
         os.makedirs(os.path.dirname(output_path) or ".", exist_ok=True)
 
-        # 内存优化：优先 ffmpeg 流式叠加（视频流 copy + 音频 filter_complex 一条命令；
-        # 带 padding 时视频 tpad 冻结延展需重编码）
+        # 内存优化：优先 ffmpeg 流式叠加（视频流 copy + 音频 filter_complex 一条命令）
         ok_mix = False
         if shutil.which("ffmpeg"):
             print("  [BGM] 混音叠加（ffmpeg 流式）...")
@@ -641,16 +613,12 @@ def mix_bgm_into_video(
                 sc_ratio=sc_ratio,
                 sc_attack_ms=sc_attack_ms,
                 sc_release_ms=sc_release_ms,
-                narr_path=narr_temp_path,
-                pad_start=pad_start,
-                pad_end=pad_end,
                 timeout=ffmpeg_timeout,
             )
             if ok_mix:
                 del orig_audio, bgm_music
                 gc.collect()
                 load_music_segment_cached.cache_clear()
-                _cleanup(narr_temp_path)
                 size_mb = os.path.getsize(output_path) / (1024 * 1024)
                 print(f"  [BGM] 混音已保存: {os.path.basename(output_path)} ({size_mb:.1f}MB)")
                 return True
@@ -671,18 +639,15 @@ def mix_bgm_into_video(
         load_music_segment_cached.cache_clear()
 
         ok_mix = _remux_video_audio(video_path, mixed, output_path,
-                                    pad_start=pad_start, pad_end=pad_end,
                                     timeout=ffmpeg_timeout)
         del mixed
         gc.collect()
-        _cleanup(narr_temp_path)
         if ok_mix:
             size_mb = os.path.getsize(output_path) / (1024 * 1024)
             print(f"  [BGM] 混音已保存: {os.path.basename(output_path)} ({size_mb:.1f}MB)")
         return ok_mix
     except Exception as e:
         print(f"  [BGM] 音频混入失败: {e}")
-        _cleanup(narr_temp_path)
         return False
 
 
@@ -695,12 +660,10 @@ def _cleanup(path: str | None) -> None:
 
 
 def _remux_video_audio(video_path: str, mixed_audio: AudioSegment, output_path: str,
-                       pad_start: int = 0, pad_end: int = 0,
                        timeout: int = 600) -> bool:
     """pydub 回退路径：把混音后的音频与原视频合成为新 mp4。
 
-    pad_start/pad_end > 0 时音频已加首/尾静音，视频对应端 tpad 冻结延展（需重编码）。
-    start_mode 必须显式 clone：默认 add 会补黑色帧（前 N 秒黑屏 bug）。
+    视频流恒为 copy（音频长度 = 原音频长度，无需 tpad 延展/重编码）。
     """
     mixed_temp_path: str | None = None
     try:
@@ -712,28 +675,12 @@ def _remux_video_audio(video_path: str, mixed_audio: AudioSegment, output_path: 
         mixed_temp_path = mixed_temp.name
         mixed_temp.close()
         mixed_audio.export(mixed_temp_path, format="wav")
-        if pad_start > 0 or pad_end > 0:
-            pad_parts = []
-            if pad_start > 0:
-                pad_parts.append(f"start_duration={pad_start}:start_mode=clone")
-            if pad_end > 0:
-                pad_parts.append(f"stop_mode=clone:stop_duration={pad_end}")
-            cmd = [
-                "ffmpeg", "-y", "-i", video_path, "-i", mixed_temp_path,
-                "-filter_complex",
-                f"[0:v]tpad={':'.join(pad_parts)}[v]",
-                "-map", "[v]", "-map", "1:a:0",
-                "-c:v", "libx264", "-crf", "18", "-preset", "medium",
-                "-c:a", "aac", "-b:a", "192k",
-                output_path,
-            ]
-        else:
-            cmd = [
-                "ffmpeg", "-y", "-i", video_path, "-i", mixed_temp_path,
-                "-map", "0:v:0", "-map", "1:a:0",
-                "-c:v", "copy", "-c:a", "aac", "-b:a", "192k",
-                output_path,
-            ]
+        cmd = [
+            "ffmpeg", "-y", "-i", video_path, "-i", mixed_temp_path,
+            "-map", "0:v:0", "-map", "1:a:0",
+            "-c:v", "copy", "-c:a", "aac", "-b:a", "192k",
+            output_path,
+        ]
         r = subprocess.run(cmd, capture_output=True, timeout=timeout)
         if r.returncode != 0:
             stderr = r.stderr or b""
@@ -753,7 +700,7 @@ def _remux_video_audio(video_path: str, mixed_audio: AudioSegment, output_path: 
 
 
 # ============================================================================
-# ffmpeg 流式叠加（视频版：视频流 copy；带首尾 padding 时 tpad 冻结延展）
+# ffmpeg 流式叠加（视频版：视频流恒为 copy，零重编码）
 # ============================================================================
 def _ffmpeg_overlay_video(
     video_path: str,
@@ -765,9 +712,6 @@ def _ffmpeg_overlay_video(
     sc_ratio: int = 8,
     sc_attack_ms: int = 5,
     sc_release_ms: int = 400,
-    narr_path: str | None = None,
-    pad_start: int = 0,
-    pad_end: int = 0,
     timeout: int = 600,
 ) -> bool:
     """使用 ffmpeg 从磁盘叠加 BGM 到视频音轨。
@@ -776,9 +720,8 @@ def _ffmpeg_overlay_video(
       - "amix": 简单叠加（amix + volume=2.0）
       - "sidechain" / "sidechain_adaptive": 侧链压缩（旁白说话时BGM自动压低，静默时BGM升高）
 
-    narr_path 为 padded 旁白 WAV（sidechain + intro_outro 时非 None）：
-      此时音频长度 = 视频 + pad_start + pad_end，视频流用 tpad 冻结延展后重编码，
-      保证音画同步；否则视频流 -c:v copy 零重编码。
+    视频流始终 `-c:v copy`（历史上的首尾 padding/tpad 延展已删除，见 mix_bgm_into_video）。
+    侧链 key 固定取视频自带音轨 `[0:a]`。
     """
     bgm_temp_path: str | None = None
     try:
@@ -792,7 +735,6 @@ def _ffmpeg_overlay_video(
         bgm_temp.close()
         bgm_audio.export(bgm_temp_path, format="wav")
 
-        has_pad = narr_path is not None and (pad_start > 0 or pad_end > 0)
         if ducking_mode in ("sidechain", "sidechain_adaptive"):
             # 侧链压缩：旁白作为 sidechain key，BGM 被压缩
             # 旁白 RMS 超过 threshold 时 → BGM 被压低 ratio:1
@@ -802,7 +744,7 @@ def _ffmpeg_overlay_video(
             #   threshold: 线性振幅 (0.000976563 ~ 1)，需从 dB 转换
             #   attack/release: 毫秒 (0.01 ~ 2000/9000)
             sc_threshold_linear = 10 ** (sc_threshold_db / 20.0)
-            narr_src = "[2:a]" if has_pad else "[0:a]"
+            narr_src = "[0:a]"
             filter_complex = (
                 f"{narr_src}asplit=2[narr][sc_key];"
                 f"[1:a][sc_key]sidechaincompress="
@@ -818,38 +760,19 @@ def _ffmpeg_overlay_video(
             # amix=inputs=2:duration=first → 输出长度匹配第一路输入
             # dropout_transition=0 → 无过渡淡出
             # volume=2.0 → 抵消 amix 默认的除以2归一化，等效于直接相加+裁剪
-            # （amix 模式无 padding，旁白始终来自视频自身音轨）
             filter_complex = (
                 "[0:a][1:a]amix=inputs=2:duration=first:dropout_transition=0,volume=2.0[a]"
             )
 
         cmd = ["ffmpeg", "-y", "-i", video_path, "-i", bgm_temp_path]
-        if has_pad:
-            cmd += ["-i", narr_path]
-            # 视频对应端冻结帧延展，与加静音的旁白对齐（需重编码）
-            # start_mode 必须显式 clone：默认 add 会补黑色帧（前 N 秒黑屏 bug）
-            # narr WAV 仅在 pads 存在时由调用方写入，故 has_pad 蕴含 pad_start/pad_end>0
-            pad_parts = []
-            if pad_start > 0:
-                pad_parts.append(f"start_duration={pad_start}:start_mode=clone")
-            if pad_end > 0:
-                pad_parts.append(f"stop_mode=clone:stop_duration={pad_end}")
-            filter_complex = f"[0:v]tpad={':'.join(pad_parts)}[v];" + filter_complex
-            cmd += [
-                "-filter_complex", filter_complex,
-                "-map", "[v]", "-map", "[a]",
-                "-c:v", "libx264", "-crf", "18", "-preset", "medium",
-                "-c:a", "aac", "-b:a", "192k",
-            ]
-        else:
-            cmd += [
-                "-filter_complex", filter_complex,
-                "-map", "0:v:0",
-                "-map", "[a]",
-                "-c:v", "copy",
-                "-c:a", "aac",
-                "-b:a", "192k",
-            ]
+        cmd += [
+            "-filter_complex", filter_complex,
+            "-map", "0:v:0",
+            "-map", "[a]",
+            "-c:v", "copy",
+            "-c:a", "aac",
+            "-b:a", "192k",
+        ]
         cmd += [output_path]
         result = subprocess.run(
             cmd,

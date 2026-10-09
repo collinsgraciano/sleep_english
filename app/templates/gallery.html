@@ -25,6 +25,13 @@
                 class="px-4 py-2 rounded-lg text-sm {% if path_4k %}bg-slate-700 hover:bg-slate-600 text-slate-300{% else %}bg-slate-800 text-slate-500 cursor-not-allowed{% endif %}">📋 4K</button>
             <button onclick="copyVideoPath(this, '4k_bgm')" {% if not path_4k_bgm %}disabled title="尚未生成 4K BGM 版本"{% endif %}
                 class="px-4 py-2 rounded-lg text-sm {% if path_4k_bgm %}bg-slate-700 hover:bg-slate-600 text-slate-300{% else %}bg-slate-800 text-slate-500 cursor-not-allowed{% endif %}">📋 4K BGM</button>
+            <!-- 下载（Content-Disposition: attachment，服务端 /download/* 端点） -->
+            <a href="/api/runs/{{ run_name }}/download/video{% if main_video_rel %}?file={{ main_video_rel | urlencode }}{% endif %}"
+               {% if main_video_rel %}title="下载主成片（{{ main_video_label }}）"{% else %}aria-disabled="true" onclick="return false" title="该运行还没有成片"{% endif %}
+               class="px-4 py-2 rounded-lg text-sm {% if main_video_rel %}bg-indigo-600 hover:bg-indigo-500 text-white{% else %}bg-slate-800 text-slate-500 cursor-not-allowed{% endif %}">⬇️ 下载视频</a>
+            <a href="/api/runs/{{ run_name }}/download/thumbnail"
+               {% if thumb_path %}title="下载主缩略图"{% else %}aria-disabled="true" onclick="return false" title="该运行没有缩略图"{% endif %}
+               class="px-4 py-2 rounded-lg text-sm {% if thumb_path %}bg-indigo-600 hover:bg-indigo-500 text-white{% else %}bg-slate-800 text-slate-500 cursor-not-allowed{% endif %}">⬇️ 下载缩略图</a>
         </div>
     </div>
 
@@ -130,7 +137,8 @@
                     </div>
                     <div class="flex items-center gap-3 shrink-0">
                         <span class="text-xs text-slate-500">{{ v.size_mb }} MB</span>
-                        <a href="{{ v.url }}" download
+                        <!-- file= 只传文件名：服务端在 运行目录根 → clips/ → videos/ 依次查找 -->
+                        <a href="/api/runs/{{ run_name }}/download/video?file={{ v.name | urlencode }}"
                            class="text-xs text-indigo-400 hover:text-indigo-300">下载</a>
                     </div>
                 </div>

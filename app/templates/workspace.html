@@ -41,11 +41,11 @@
 // 用上下文条换频道或点侧边栏换页，页签条自动跟随。
 (function () {
     const LS_KEY = 'se_ws_tabs';
-    // 页面键 ↔ 路径 / 徽标（'' = 控制台 dashboard；与四个频道感知页一一对应）
-    const PAGE_ROUTES = { '': '/', 'arrangement': '/arrangement',
-                          'config': '/config', 'topics': '/topics' };
-    const PAGE_LABELS = { '': '控制台', 'arrangement': '编排',
-                          'config': '配置', 'topics': '主题' };
+    // 页面键 ↔ 路径 / 徽标（'' = 控制台 dashboard；与频道感知页一一对应）
+    // 原 'arrangement'（📋 内容编排）页已删除 —— 存量页签按 PATH_TO_PAGE
+    // 查不到即自动回退控制台（见下方回退逻辑）
+    const PAGE_ROUTES = { '': '/', 'config': '/config', 'topics': '/topics' };
+    const PAGE_LABELS = { '': '控制台', 'config': '配置', 'topics': '主题' };
     const PATH_TO_PAGE = {};
     Object.entries(PAGE_ROUTES).forEach(([k, p]) => { PATH_TO_PAGE[p] = k; });
 

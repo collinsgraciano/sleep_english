@@ -274,9 +274,9 @@ function fillForm(config) {
     if (typeof onSequenceConfigRefresh === 'function') onSequenceConfigRefresh();
 }
 
-// 全量参数页（参数配置）走 save_all 整文件覆盖；部分参数页（内容编排页）
-// 传 config_save_all=false → 走 /api/config/save 合并保存，防止收集到的
-// 部分字段集覆盖掉未在页面上渲染的参数。
+// 全量参数页（参数配置）走 save_all 整文件覆盖；config_save_all=false 的
+// 部分参数页（历史上是「内容编排」页，现已删除）走 /api/config/save 合并保存，
+// 防止收集到的部分字段集覆盖掉未在页面上渲染的参数。
 // channel = 本标签页频道上下文（URL ?channel=，空=全局）
 const CONFIG_SAVE_ALL = {{ ((config_save_all is not defined) or config_save_all) | tojson }};
 const PAGE_CHANNEL = new URLSearchParams(location.search).get('channel') || '';

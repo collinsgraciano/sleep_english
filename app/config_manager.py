@@ -278,7 +278,7 @@ PARAM_SPEC = {
     "sleep_sequence": {"default": "", "type": "textarea", "group": "sleep_content",
                        "modes": ["sleep"],
                        "label": "组内步骤序列 (JSON)",
-                       "help": "朗读步骤编排 JSON（[{step, gap}]，step ∈ a_m/a_slow/b_m/b_slow/b_f/combo，gap=该步后停顿秒数或 null=沿用全局停顿参数）；留空=默认结构 a_m→a_slow→b_m→b_slow→combo；建议用「📋 内容编排」页的可视化编辑器修改"},
+                       "help": "朗读步骤编排 JSON（[{step, gap}]，step ∈ a_m/a_slow/b_m/b_slow/b_f/combo，gap=该步后停顿秒数或 null=沿用全局停顿参数）；留空=默认结构 a_m→a_slow→b_m→b_slow→combo；在「参数配置」页以 JSON 编辑"},
 
     # --- LLM ---
     "llm_provider": {"default": "wbk", "type": "select", "group": "llm",
@@ -494,11 +494,6 @@ PARAM_SPEC = {
     "bgm_fade_ms": {"default": 3000, "type": "number", "group": "bgm",
                     "label": "交叉淡入淡出 ms",
                     "help": "音乐片段间交叉淡化时长（毫秒）；0 = 不做淡化（片段硬切，保留完整指纹）"},
-    "bgm_intro_outro_seconds": {"default": 5, "type": "number", "group": "bgm_sidechain",
-                                "label": "首尾独立段秒数",
-                                "help": "旁白前后加静音段，给 Content ID 干净指纹参考"
-                                        "（仅 sidechain 模式生效；BGM 起始章节 >1 时"
-                                        "不加首部参考段，起点前天然干净）"},
     "bgm_highpass_freq": {"default": 150, "type": "number", "group": "bgm_amix",
                           "label": "高通滤波 Hz (amix)",
                           "help": "BGM 高通滤波截止频率，切掉低频鼓点干扰旁白（仅 amix 生效）"},
@@ -547,22 +542,9 @@ def effective_param_spec(mode: str) -> dict[str, dict]:
             if not v.get("modes") or mode in v["modes"]}
 
 
-# --- 「📋 内容编排」页参数子集（完整清单仍在「参数配置」页渲染）---
-# 内容编排页：组内步骤序列（可视化编辑器）+ 组数/语速/停顿/片头/提前量/播报文案。
-SLEEP_ORCHESTRATION_KEYS = frozenset({
-    "sleep_sequence",
-    "sleep_pairs", "sleep_slow_rate", "sleep_male_rate",
-    "sleep_gap_short", "sleep_gap_long", "sleep_pair_gap",
-    "sleep_batch_pairs", "sleep_use_cache",
-    "sleep_intro", "sleep_intro_use_library", "sleep_intro_announce",
-    "sleep_intro_volume_db", "sleep_outro_volume_db",
-    "sleep_card_lead",
-    "sleep_channel_name", "sleep_outro_text",
-    "sleep_outro", "sleep_outro_use_library", "sleep_outro_announce",
-})
-
 # Sleep 参数六个分类分组（配置页各成独立卡片、可拖拽排序）；
-# SYNC_SCOPES["visual"] / 内容编排页过滤等按组消费方均以本集合为准
+# SYNC_SCOPES["visual"] 等按组消费方均以本集合为准
+# （原「📋 内容编排」页的 SLEEP_ORCHESTRATION_KEYS 子集已随该页删除）
 SLEEP_GROUPS: frozenset[str] = frozenset({
     "sleep_content", "sleep_intro", "sleep_font",
     "sleep_visual", "sleep_logo", "sleep_render",

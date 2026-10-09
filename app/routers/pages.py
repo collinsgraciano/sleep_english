@@ -12,7 +12,6 @@ from ..config_manager import (
     effective_param_spec, find_run_dir, get_active_mode, get_provider_options,
     iter_run_dirs, list_presets, load_all_mode_configs, load_config,
     load_config, load_llm_providers, load_mode_config, set_active_mode,
-    SLEEP_ORCHESTRATION_KEYS, SLEEP_GROUPS,
 )
 from ..paths import TRASH_META_FILENAME
 from ..pipeline_service import get_service
@@ -25,23 +24,13 @@ from .runs import _THUMB_NAME_RE, _resolve_main_thumbnail, _resolve_video_copy_p
 
 router = APIRouter()
 
-# 组内步骤序列编辑器（/arrangement 页）的步骤中文标签
-SLEEP_STEP_LABELS = {
-    "a_m": "A句 · 男声常速",
-    "a_slow": "A句 · 女声慢速",
-    "b_m": "B句 · 男声常速",
-    "b_slow": "B句 · 女声慢速",
-    "b_f": "B句 · 女声常速",
-    "combo": "AB 连贯",
-}
-
 
 # ===========================================================================
 # Page routes
 # ===========================================================================
 
 def _config_page_context(mode: str, channel: str = "") -> dict:
-    """参数配置页 / 内容编排页 共用的渲染上下文组装。
+    """参数配置页的渲染上下文组装。
 
     channel 非空 → 该频道完整配置快照（多标签页并行：URL ?channel= 为
     事实源）；空 → 全局 mode_sleep.json。"""
@@ -109,55 +98,6 @@ def _config_page_context(mode: str, channel: str = "") -> dict:
             for p in load_llm_providers()
         ],
     }
-
-
-def _sleep_page_grouped(mode: str, keys: frozenset, channel: str = "") -> tuple[dict, list]:
-    """内容编排页上下文：全量配置上下文中仅保留 sleep 分组内属于 keys 的参数。
-
-    返回 (ctx, grouped)；非 sleep 分组（sleep_content/sleep_intro 等六分类
-    之外的组）不带入编排页（完整清单见「参数配置」页）。
-    """
-    ctx = _config_page_context(mode, channel)
-    grouped = []
-    for g, params in ctx["grouped"]:
-        if g in SLEEP_GROUPS:
-            kept = [(k, s, v) for k, s, v in params if k in keys]
-            if kept:
-                grouped.append((g, kept))
-    return ctx, grouped
-
-
-@router.get("/arrangement", response_class=HTMLResponse)
-async def arrangement_page(request: Request, mode: str = "", channel: str = ""):
-    """📋 内容编排：组内步骤序列可视化编辑器 + 节奏/结构/播报文案参数。"""
-    ctx, grouped = _sleep_page_grouped(mode, SLEEP_ORCHESTRATION_KEYS, channel)
-    config = ctx["config"]
-    # sleep_sequence 由上方可视化编辑器承载，分组网格不重复渲染原始 JSON 框
-    grouped = [(g, [(k, s, v) for k, s, v in ps if k != "sleep_sequence"])
-               for g, ps in grouped]
-    # 服务端解析当前序列（损坏/留空 → None，前端回落默认结构展示）
-    try:
-        from sleep.timeline_sleep import parse_sleep_sequence
-        sequence = parse_sleep_sequence(str(config.get("sleep_sequence", "") or ""))
-    except Exception:
-        sequence = None
-    ctx.update({
-        "active_page": "arrangement",
-        "page_channel": channel,
-        "grouped": grouped,
-        # 组卡标签沿用 GROUP_META（Sleep · 朗读内容/片头片尾，不与页面标题重复）
-        "group_meta": GROUP_META,
-        "sleep_inline_preview": False,
-        "config_save_all": False,
-        "sleep_sequence_effective": sequence,
-        "sleep_step_labels": SLEEP_STEP_LABELS,
-        "sleep_gap_params": {
-            "short": config.get("sleep_gap_short", 1.0),
-            "long": config.get("sleep_gap_long", 2.0),
-            "pair": config.get("sleep_pair_gap", 3.0),
-        },
-    })
-    return templates.TemplateResponse(request, "arrangement.html", ctx)
 
 
 @router.get("/config", response_class=HTMLResponse)
@@ -297,6 +237,9 @@ async def gallery_page(request: Request, name: str, mode: str = ""):
     thumb = _resolve_main_thumbnail(run_dir)
     # 「一键复制 4K / 4K BGM 路径」按钮所需成片绝对路径（缺失为空串 → 按钮禁用）
     copy_paths = _resolve_video_copy_paths(run_dir)
+    # 「下载视频」按钮的目标：主成片（kind=final，与列表/播放器同口径），无成片则空
+    main_video = next((v for v in videos if v.get("kind") == "final"),
+                      videos[0] if videos else None)
 
     return templates.TemplateResponse(request, "gallery.html", {
         "run_name": name,
@@ -304,6 +247,8 @@ async def gallery_page(request: Request, name: str, mode: str = ""):
         "thumb_path": str(thumb) if thumb.exists() else "",
         "path_4k": copy_paths["4k"],
         "path_4k_bgm": copy_paths["4k_bgm"],
+        "main_video_rel": (main_video or {}).get("rel", ""),
+        "main_video_label": (main_video or {}).get("label", ""),
         "script": script,
         "images": images,
         "clips": clips,
