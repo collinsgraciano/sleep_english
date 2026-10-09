@@ -123,6 +123,16 @@ bash /opt/sleep_english/vps_update.sh
 
 回滚：`git log --oneline` 找旧 commit → `git checkout <旧commit> -- . && systemctl restart sleep-english`；或用步骤 4 的 `logs/pre_pull_*.patch`。
 
+### 3.2 画廊页：下载视频 / 缩略图
+
+- 入口：运行历史 → 某期的「画廊」按钮（`/runs/{name}/gallery`）
+- 头部按钮「**⬇️ 下载视频**」（主成片）与「**⬇️ 下载缩略图**」（主缩略图）；「📹 最终视频」列表里每一行还有「下载」，可分别下 720p / 4K / 4K BGM / BGM 版
+- 后端两个只读端点，响应都是 `Content-Disposition: attachment`（中文名走 RFC 5987 `filename*`，支持 Range 续传）：
+  - `GET /api/runs/{name}/download/video[?file=文件名]` —— 缺省=主成片（与列表/播放器同口径）；`file` 只接受**纯文件名**（禁 `..`/分隔符），按 运行目录根 → `clips/` → `videos/` 依次查找
+  - `GET /api/runs/{name}/download/thumbnail[?file=thumbnail_N.jpg]` —— 缺省=主缩略图；指定名走 `thumbnail(_N)?.jpg` 白名单
+- 鉴权：`/api/*` 在密码闸门后面 —— 浏览器点按钮自动带 cookie；`curl` 要加 `-H 'X-Sleep-Auth: <密码>'`
+- 实测：`download/video` 200 + `attachment; filename*=utf-8''…`（20.3 MB）；`download/thumbnail` 200 + `attachment; filename="thumbnail.jpg"`（290 KB）；路径穿越 → 400、不存在 → 404、非白名单缩略图名 → 400
+
 ---
 
 ## 4. 迁移时改过的配置（`configs/`）
@@ -132,6 +142,7 @@ bash /opt/sleep_english/vps_update.sh
 | `output_dir` | `H:/2026_main_project/sleep_english/output` | `/opt/sleep_english/output` | Linux 路径 |
 | `topics_file` | `H:/.../colab_listening_b/topics.json` | `/opt/sleep_english/pipeline/topics.json` | 仓库自带主题池 |
 | `bgm_music_dir` | `H:\...\bgm_music_60s` | `/opt/sleep_english/bgm_music_60s` | 目录不存在亦可（默认不混 BGM） |
+| `bgm_intro_outro_seconds` | 5 | **已删除** | 首尾独立段会让整片视频重编码，按需求删除；BGM 混合现在恒为纯音频 remux（§6.2） |
 | **`upscale_timeout`** | 3600 | **43200** | 1 核 4K 重编码远超 1 小时；不放大必超时失败 |
 | **`sleep_batch_pairs`** | 50 | **25** | 模型一次要恰好 50 组太容易翻车（实测连出 55/53/51 组 + JSON 截断）；25 组/批更稳，配合下面的超量容忍 |
 | `sleep_pairs` | 200 | **50** | 首期规模；跑通后再调大 |
@@ -227,12 +238,31 @@ PY
 - 该目录在 `.gitignore` 里（音乐是用户资产、不入库）→ `git pull` / `git reset --hard` / `vps_update.sh` **都不会删**它。
 - 配置：`bgm_music_dir` 已指向 `/opt/sleep_english/bgm_music_60s`；`bgm_mix` 默认 **false**（不混）。`bgm_music` 是指向它的软链兜底。
 - **两个使用入口**：
-  1. 参数配置页勾「混 BGM」→ 该次运行 Step 5.5 预混，输出 `{标题}_bgm.mp4`（4K 以它为源）；
-  2. 运行历史页对**已完成**成片点「混BGM」/「混BGM 4K」→ 只重编码音频、视频流 `-c:v copy`，最省内存（推荐对 4K 成片用这个）。
+  1. 参数配置页勾「混 BGM」→ 该次运行 Step 5.5 预混；
+  2. 运行历史页对**已完成**成片点「混BGM」/「混BGM 4K」→ 只重编码音频、视频流 `-c:v copy`。
 
-> 报错对照：音乐库为空时，运行中的 Step 5.5 只会打印「音乐库不存在 … 跳过混音」，而运行历史页的按钮会抛 `FileNotFoundError: 未找到可选的音乐文件`。现在库已就位，两者都能正常工作。
+### 6.1 产物命名（原生 4K + BGM 全开时）
 
-### 混 BGM 的内存代价（选看）
+| 文件 | 内容 | 运行页/画廊 kind | 说明 |
+|---|---|---|---|
+| `videos/{标题}.mp4` | **4K，无 BGM** | final | 主成片（原生 4K 渲染下它本身就是 4K） |
+| `{标题}_4K.mp4` | 4K，无 BGM（硬链，同 inode） | 4k | 「复制 4K 路径」「混BGM 4K」的干净源 |
+| `{标题}_4K_bgm.mp4` | 4K + BGM | 4k_bgm | 混好 BGM 的 4K 版（**不会再被二次混音**） |
+| `{标题}_bgm.mp4` | 720p + BGM | bgm | 仅**非**原生 4K 运行才有（Step6 会放大成 `_4K.mp4`） |
+
+> 历史缺陷已修：此前原生 4K 运行里 `_bgm.mp4` 会被 Step6 硬链成 `_4K.mp4`，于是「4K」文件其实带 BGM、而 `_4K_bgm.mp4` 不存在，「混BGM 4K」还会对已带 BGM 的文件再混一次。
+
+### 6.2 性能：BGM 混合已是秒级（原先可能整片重编码）
+
+- 原实现有个 `bgm_intro_outro_seconds`（默认 5）配置：在旁白首/尾加静音段，并让**视频用 tpad 冻结帧延展**同秒数 —— 代价是**整片视频重编码**（4K 21 分钟片要多花 1.5–2 小时）。
+- 该配置与行为**已按需求删除**。现在 BGM 混合恒为「**视频流 copy + 音频重编码**」，输出时长与原片严格一致（章节时间戳也对得更齐）。
+- 实测（本 VPS，271 s 的 4K 成片，运行页「混BGM」按钮）：**27–29 秒完成**（其中音乐库准备 ~6 s），日志确认走的是 `ffmpeg 流式` 侧链路径：
+  `[BGM] 侧链压缩模式: base_gain=-15.0dB threshold=-30.0dB ratio=8:1` → `[BGM] 混音叠加（ffmpeg 流式）` → 产物 **3840×2160、时长 271.3 s（与原片一致）、视频流 md5 与原片完全相同**（证明零重编码）。
+- CLI 走同一条路径：`run_cli.sh` 会把配置里的 BGM 参数按**原值**下发（此前 `cfg()` 把数字读成 `1` 的 bug 已修，表现为 ffmpeg 报 `Numerical result out of range` 后静默退回 pydub）。
+- 防御：`sidechaincompress` 的 threshold 要求线性 (0,1]；越界时自动夹紧并告警，避免异常配置把混音打回 pydub（长片下 pydub 回退有 OOM 风险，见 §6.3）。
+- 保留参数：`bgm_fade_ms`（曲目间交叉淡化）、`bgm_ducking_mode`、`bgm_start_chapter`、`bgm_base_gain_db`/`bgm_volume_offset_db`、`bgm_sc_*` 侧链参数。
+
+### 6.3 内存代价（选看）
 
 `mix_bgm_into_video` 用 pydub 把**整条音轨读进内存**，再生成等长 BGM，再 `overlay` → 峰值约 3 份 PCM ≈ **每视频分钟 30–40 MB**：
 
@@ -272,7 +302,7 @@ PY
 
 ---
 
-## 9. 本次为跑通/省内存改的项目代码（13 个文件，均向后兼容）
+## 9. 本次为跑通/省内存改的项目代码（均向后兼容）
 
 | 文件 | 改动 | 默认行为 |
 |---|---|---|
@@ -286,10 +316,16 @@ PY
 | `pipeline/sleep/llm_client_sleep.py` | **LLM 超量容忍**：`SLEEP_ALLOW_PAIR_OVERSHOOT=1` 时，批次"多给几组"截断到需要数量（少给仍失败并重试） | 不设 env = 与原「必须恰好 N 组」一致 |
 | `pipeline/sleep/video_compose_sleep.py` | **原生 4K**：`_build_block`/`_build_video_block` 接受 `x264_params`，`compose_sleep` 在 `native_4k` 时下发 `extra_4k_x264_params()`（4K 的 rc-lookahead 是最大单块内存） | 非原生传空 → 命令与历史逐字节一致 |
 | `app/auth_gate.py` + `serve_auth.py`（新） | **密码闸门**（默认密码 `inriynisse`、cookie 365 天、`?ct=`/header/登录页三种入口、失败限流）+ 受保护入口 | 只有把 systemd 指向 `serve_auth:application` 才生效；`run.bat` 与 Colab 仍走 `app.main:app` |
-| `run_cli.sh`（新） | 命令行出片读**同一份配置**（`sleep_4k_native`/`no_4k`/`wbk_model`/`wbk_thinking`/key），与网页行为对齐 | 命令行显式传参优先；此前 CLI 会静默用默认值 |
+| `run_cli.sh`（新） | 命令行出片读**同一份配置**（4K/BGM 开关、模型、key 及全部 BGM 参数），与网页行为对齐 | 命令行显式传参优先；此前 CLI 会静默用默认值 |
 | `vps_update.sh`（新） | **一键更新**：安全检查 → fetch → 未跟踪冲突预检 → stash → `pull --ff-only` → 依赖 → 精确恢复本地改动 → 重启 → 自检 | 纯手动执行，不参与运行 |
+| `pipeline/bgm_mix.py` | **删除首尾独立段**（`intro_outro_seconds`）：删参数/pad 逻辑/临时 WAV/`tpad`+libx264 分支，只留 `-c:v copy` 音频重编码；`_remux_video_audio` 同步简化 | 未传参数时输出时长与原片一致、秒级完成（原先默认 5 s 延展 + 整片重编码） |
+| `pipeline/pipeline.py` + `app/pipeline_service.py` | **原生 4K + BGM 命名**：4K 源混出 `{标题}_4K_bgm.mp4`；Step6 用**干净的 4K** 硬链出 `{标题}_4K.mp4`；运行页「混BGM」按钮按源分辨率命名 | 非原生路径不变 |
+| `app/config_manager.py` | 删除 `bgm_intro_outro_seconds`（参数页不再出现）；`sleep_sequence` help 文案改指向参数配置页 | 其余 BGM 参数不变 |
+| `app/routers/runs.py` | 新增 `GET /api/runs/{name}/download/video`、`/download/thumbnail`（attachment + 纯文件名校验 + 缩略图白名单） | 新增只读端点 |
+| `app/routers/pages.py` + `app/templates/gallery.html` | 画廊头部「⬇️ 下载视频 / ⬇️ 下载缩略图」按钮 + 成片行「下载」改走附件端点；上下文补 `main_video_rel` | 只在画廊页可见 |
+| `app/templates/base.html` + `workspace.html` + `app/routers/pages.py` + `app/config_manager.py`（删 `SLEEP_ORCHESTRATION_KEYS`）+ 删 `templates/arrangement.html` | **删除「📋 内容编排」页**（导航/路由/模板/专用参数字典/工作台页签映射） | `sleep_sequence` 键与 timeline 消费逻辑保留，仍在「参数配置」页可编辑 |
 
-> 本机仓库同样打了这些补丁（未提交）。建议在本机 `git add -A && git commit` 后推送，VPS 侧再 `git pull` 才不会冲突；VPS 上的补丁文件已是最终版本，**不要**在该目录直接 `git checkout` 覆盖。
+> 这些改动**已 commit 并 push 到 GitHub master**（`7773666 → 646886f → 99a75b1 → 8309290 → 7f1c8b5 → fdd7f66`），VPS 上 `bash vps_update.sh` 即可同步；不再有"本机未提交补丁"的问题。
 
 ---
 
@@ -324,4 +360,9 @@ PY
 | 出片中途被 OOM kill | `dmesg -T \| grep -i oom`；`run_cli.sh --resume` 续跑（音频/卡片按文件续传）；或降 `sleep-pairs` |
 | 字体相关报错 | `verify_deploy.py` 的字体段；Noto CJK 软链由 `colab/setup.sh` 建立 |
 | 点「混BGM」报 `未找到可选的音乐文件` | `ls /opt/sleep_english/bgm_music_60s/*.mp3 \| wc -l` 应为 35；`ls -l /opt/sleep_english/bgm_music` 应是指向它的软链（本库在 .gitignore 里，重新 clone 后需要再上传一次） |
-| 混 BGM 时进程被杀 | 片长过长（见 §6 的内存表）：50 组以内混、200 组分批或用按钮对已完成成片混 |
+| 混 BGM 时进程被杀 | 片长过长（见 §6.3 的内存表）：50 组以内混、200 组分批或用按钮对已完成成片混 |
+| 画廊点「下载视频/缩略图」返回 401 | 未登录：浏览器先登录（cookie 365 天）；`curl` 加 `-H 'X-Sleep-Auth: <密码>'` |
+| 下载报 400 `Invalid file` | `file=` 只接受**纯文件名**（不能带 `videos/`、`..`）；缩略图须匹配 `thumbnail(_N)?.jpg` |
+| 访问 /arrangement 返回 404 | 该页（📋 内容编排）已按需求删除，不是故障；`sleep_sequence` 改在「参数配置」页用 JSON 编辑 |
+| 4K 文件里其实有 BGM / 点「混BGM 4K」像混了两次 | 旧产物命名缺陷（已修，见 §6.1）：重跑该期 4K 或手动删掉旧的 `_4K.mp4` 再生成 |
+| 混 BGM 想更慢/更"干净指纹" | 首尾独立段已删除（那是整片重编码的根因）；如需恢复可从 git 历史取回 `intro_outro_seconds` 实现 |
