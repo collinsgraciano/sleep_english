@@ -241,7 +241,15 @@ def _build_block(card_path: str, block_segs: list[dict], audio_paths: dict,
     fg, inputs = _build_audio_chain(block_segs, audio_paths, lead=lead,
                                     intro_db=intro_db, outro_db=outro_db,
                                     audio_start=2 if lg_inputs else 1)
-    cmd = ["ffmpeg", "-y", "-loop", "1", "-i", card_path]
+    cmd = ["ffmpeg", "-y"]
+    if int(fps) != 25:
+        # 关键：让 **图片输入本身** 就以目标帧率产帧。
+        # 否则 image2 demuxer 仍按默认 25fps 生成帧、`-r N` 只在滤镜链**末尾**丢弃 →
+        # 4K 帧的分配/拷贝成本照旧（实测 26s 块 @1fps：11.5s → 2.1s，5.5×；
+        # 12s 块 5.5s → 1.4s；相对 25fps 基线 13.2s 达 9.4×）。
+        # fps=25 时**不加**该参数，保证历史命令逐字符一致（golden 测试守护）。
+        cmd += ["-framerate", str(int(fps))]
+    cmd += ["-loop", "1", "-i", card_path]
     cmd += lg_inputs  # logo 输入占用索引 1（无音频流）
     cmd += inputs  # 已含 "-i <file>" 与 "-f lavfi -i anullsrc=..." 完整参数片段
     if lg_inputs:

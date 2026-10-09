@@ -88,14 +88,22 @@ def main() -> int:
     check(got25 == expected, "fps=25 命令逐字符一致",
           "" if got25 == expected else f"got={got25}")
 
-    print("=== 2) fps=1 仅 -r 不同 ===")
+    print("=== 2) fps=1 命令 = golden + (-framerate 1) + (-r 1) ===")
     out1 = str(TMP / "block_1.mp4")
     got1 = capture_block_cmd(1)
-    diff = [i for i, (a, b) in enumerate(zip(got25, got1)) if a != b]
-    check(len(got25) == len(got1), "参数个数相同", f"{len(got25)} vs {len(got1)}")
-    r_at = got25.index("-r")
-    check(diff == [r_at + 1, len(got25) - 1], "只有 -r 值与输出路径不同", f"diff={diff}")
-    check(got1[r_at + 1] == "1" and got25[r_at + 1] == "25", "-r 值分别为 1 / 25")
+    # fps<25 时在图片输入前插入 -framerate N（否则 image2 demuxer 仍按默认 25fps
+    # 产帧、-r 只在滤镜链末尾丢弃 → 4K 帧的内存搬运成本照旧：实测 26s 块
+    # @1fps 11.5s → 2.1s（5.5×），相对 25fps 基线 13.2s 达 9.4×）
+    expected_1 = expected[:2] + ["-framerate", "1"] + expected[2:]
+    i_r = expected_1.index("-r")
+    expected_1[i_r + 1] = "1"
+    expected_1[-1] = out1
+    check(got1 == expected_1, "fps=1 命令逐字符符合预期",
+          "" if got1 == expected_1 else f"got={got1}")
+    check(got1[got1.index("-r") + 1] == "1" and got25[got25.index("-r") + 1] == "25",
+          "-r 值分别为 1 / 25")
+    check(len(got1) == len(got25) + 2, "参数个数 = 25fps + 2",
+          f"{len(got1)} vs {len(got25)}")
 
     print("=== 3) _resolve_card_fps 安全闸门 ===")
     fps, why = _resolve_card_fps(_Args(), {})
