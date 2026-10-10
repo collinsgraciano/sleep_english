@@ -175,26 +175,43 @@ def main() -> int:
     segs = speech_segments(video)
     print(f"换卡次数 : {len(changes)}   语音段: {len(segs)}")
 
-    print("\n  {:<8} {:>9} {:>10} {:>10} {:>11} {:>11}".format(
-        "块", "计划起点", "换卡时刻", "语音起点", "换卡-计划", "换卡-语音"))
+    print("\n  {:<8} {:>9} {:>10} {:>10} {:>11} {:>11} {:>13}".format(
+        "块", "计划起点", "换卡时刻", "语音起点", "换卡-计划", "换卡-语音", "换卡-本组语音结束"))
     worst = 0.0
-    for b in blocks:
+    min_after = 1e9
+    for bi, b in enumerate(blocks):
         if b["label"] == "intro":
             continue
         # 该块起点之后最近的换卡 / 语音起点
         ch = next((t for t, _ in changes if t >= b["start"] - 0.6), None)
         sp = next((s for s, _ in segs if s >= b["start"] - 0.6), None)
+        # 本块区间内最后一段语音的结束（用户要求的关键指标：换卡要在此之后）
+        nxt = blocks[bi + 1]["start"] if bi + 1 < len(blocks) else b["start"] + b["dur"]
+        last_end = None
+        for s0, s1 in segs:
+            if b["start"] - 0.6 <= s0 < nxt:
+                last_end = s1 if last_end is None else max(last_end, s1)
+        # 离开本块的换卡时刻（= 下一块的起点）
+        ch_out = next((t for t, _ in changes if t >= nxt - 0.6), None) \
+            if bi + 1 < len(blocks) else None
         d1 = (ch - b["start"]) if ch is not None else float("nan")
         d2 = (ch - sp) if (ch is not None and sp is not None) else float("nan")
+        d3 = (ch_out - last_end) if (ch_out is not None and last_end is not None) else float("nan")
         if ch is not None:
             worst = max(worst, abs(d2) if d2 == d2 else 0.0)
-        print("  {:<8} {:>9.3f} {:>10} {:>10} {:>11} {:>11}".format(
+            if d3 == d3:
+                min_after = min(min_after, d3)
+        print("  {:<8} {:>9.3f} {:>10} {:>10} {:>11} {:>11} {:>13}".format(
             b["label"], b["start"],
             f"{ch:.3f}" if ch is not None else "-",
             f"{sp:.3f}" if sp is not None else "-",
             f"{d1:+.3f}" if d1 == d1 else "-",
-            f"{d2:+.3f}" if d2 == d2 else "-"))
+            f"{d2:+.3f}" if d2 == d2 else "-",
+            f"{d3:+.3f}" if d3 == d3 else "-"))
     print(f"\n最大 |换卡 − 语音起点| = {worst:.3f}s（1/fps = {1.0/(meta.get('sleep_card_fps') or 25):.3f}s）")
+    if min_after < 1e8:
+        print(f"最小（离开本块的换卡 − 本组语音结束）= {min_after:+.3f}s "
+              f"⇒ {'✓ 每组都是语音读完之后才换画面' if min_after > 0 else '✗ 有组在语音结束前就换画面'}")
     return 0
 
 

@@ -208,6 +208,13 @@ PARAM_SPEC = {
                              "help": "同一组的 5 个步骤共用同一张卡片，合并成一块后画面/音频完全一致；"
                                      "收益是把每块一次的 ffmpeg 固定开销（4K PNG 解码 + 滤波图 + x264 4K 上下文 + aac + mp4 finalize，"
                                      "1 核 VPS 实测 ≈24s/块）从 52 次降到 12 次（实测 Step5 42.6min → 26min@25fps；叠加低帧率可到 ~6min）"},
+    "sleep_block_tail_margin": {"default": 0.0, "type": "number", "group": "sleep_render",
+                                "modes": ["sleep"],
+                                "label": "换卡尾巴余量(秒)",
+                                "help": "每组音频读完（含停顿）后，画面再多停留这么多秒才切换到下一组——即「本组读完才换画面」的严格保证："
+                                        "每块画面 = ceil((本组音频+余量)/帧长)×帧长 ⇒ 画面恒 ≥ 音频+余量。"
+                                        "0=紧贴换卡（默认，与历史一致）；建议 25fps 用 0.3-0.5、1fps 用 1.0（帧长 1s）。"
+                                        "代价：片长净增 = 余量×块数（都是组间静音）"},
     "sleep_intro": {"default": True, "type": "checkbox", "group": "sleep_intro",
                     "modes": ["sleep"],
                     "label": "片头",

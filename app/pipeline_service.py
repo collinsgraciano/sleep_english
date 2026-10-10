@@ -787,6 +787,9 @@ class PipelineService:
             # 块划分方式：per_step（默认，历史行为）/ per_pair（同组合并，省固定开销）
             sleep_block_grouping=_cfg_str_choice(config, "sleep_block_grouping",
                                                  "per_step", ("per_step", "per_pair")),
+            # 换卡尾巴余量（秒）：每组音频读完后再留这么多静音才换画面
+            sleep_block_tail_margin=_cfg_float(config, "sleep_block_tail_margin",
+                                               0.0, 0.0, 5.0),
             sleep_intro=bool(config.get("sleep_intro", True)),
             sleep_intro_use_library=bool(config.get("sleep_intro_use_library", True)),
             sleep_intro_announce=bool(config.get("sleep_intro_announce", True)),

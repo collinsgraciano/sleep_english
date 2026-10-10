@@ -20,8 +20,8 @@ sys.path.insert(0, str(PIPE))
 sys.path.insert(0, str(PIPE.parent))
 
 import sleep.video_compose_sleep as vc  # noqa: E402
-from pipeline import _resolve_block_grouping  # noqa: E402
-from sleep.timeline_sleep import _quantize_block_durations  # noqa: E402
+from pipeline import _resolve_block_grouping, _resolve_tail_margin  # noqa: E402
+from sleep.timeline_sleep import _align_block_durations  # noqa: E402
 
 FAILS: list[str] = []
 TMP = Path(tempfile.gettempdir()) / "sleep_block_grouping"
@@ -91,8 +91,8 @@ def main() -> int:
     print("=== 4) 时间轴 1/fps 对齐（step=1.0s）===")
     tl_a = json.loads(json.dumps(tl))
     tl_b = json.loads(json.dumps(tl))
-    _quantize_block_durations(tl_a, 1.0, "per_step")
-    _quantize_block_durations(tl_b, 1.0, "per_pair")
+    _align_block_durations(tl_a, 1.0, grouping="per_step")
+    _align_block_durations(tl_b, 1.0, grouping="per_pair")
     for name, tl_x, group in (("per_step", tl_a, "per_step"), ("per_pair", tl_b, "per_pair")):
         blocks = vc.group_timeline_blocks(tl_x, group)
         totals = [round(sum(float(s.get("duration", 0) or 0) for s in b), 3) for b in blocks]
@@ -104,6 +104,43 @@ def main() -> int:
           f"per_step +{add_a}s vs per_pair +{add_b}s")
     check(len(vc.group_timeline_blocks(tl_b, "per_pair")) == 1 + n_pairs + 1,
           "对齐不改变块数")
+
+    print("=== 4b) 换卡尾巴余量（margin）===")
+    # margin=0 与旧行为一致：与仅对齐的结果相同
+    tl_m0 = json.loads(json.dumps(tl))
+    _align_block_durations(tl_m0, 1.0, margin=0.0, grouping="per_pair")
+    check(tl_m0 == tl_b, "margin=0 等价于仅对齐（逐字节一致）")
+
+    for margin in (0.5, 1.0, 2.0):
+        tl_m = json.loads(json.dumps(tl))
+        _align_block_durations(tl_m, 1.0, margin=margin, grouping="per_pair")
+        raw_blocks = vc.group_timeline_blocks(tl, "per_pair")
+        new_blocks = vc.group_timeline_blocks(tl_m, "per_pair")
+        d = [
+            (round(sum(float(x.get("duration", 0) or 0) for x in nb), 3),
+             round(sum(float(x.get("duration", 0) or 0) for x in rb), 3))
+            for rb, nb in zip(raw_blocks, new_blocks)
+        ]
+        bad_step = [new for new, _ in d if abs(new - round(new)) > 1e-3]
+        bad_margin = [(new, raw) for new, raw in d if new + 1e-6 < raw + margin]
+        check(not bad_step, f"margin={margin}: 每块是 1s 整数倍", f"{bad_step[:3]}")
+        check(not bad_margin, f"margin={margin}: 每块 ≥ 原长 + margin",
+              f"违反 {bad_margin[:2]}")
+        add_total = round(sum(n for n, _ in d) - sum(r for _, r in d), 3)
+        check(add_total >= margin * len(d) - 1e-6,
+              f"margin={margin}: 总补齐 ≥ margin×块数（{add_total}s ≥ {margin}×{len(d)}）",
+              f"{add_total}s")
+        check(vc.group_timeline_blocks(tl_m, "per_pair") == new_blocks
+              or [s for b in new_blocks for s in b] == tl_m,
+              f"margin={margin}: 段不丢/不重/顺序不变")
+
+    print("=== 4c) _resolve_tail_margin 边界 ===")
+    check(_resolve_tail_margin(_Args()) == 0.0, "无配置 → 0")
+    check(_resolve_tail_margin(_Args(sleep_block_tail_margin=1.0)) == 1.0, "1.0 生效")
+    check(_resolve_tail_margin(_Args(sleep_block_tail_margin=-3)) == 0.0, "负值 → 0")
+    check(_resolve_tail_margin(_Args(sleep_block_tail_margin=99)) == 5.0, "上限 5s")
+    check(_resolve_tail_margin(_Args(sleep_block_tail_margin="0.5")) == 0.5,
+          "字符串 \"0.5\" 也可用")
 
     print("=== 5) resume 守卫：帧率 + 时长 ===")
     if subprocess.run(["ffmpeg", "-version"], capture_output=True).returncode != 0:

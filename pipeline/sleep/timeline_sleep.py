@@ -71,12 +71,15 @@ def build_sleep_timeline(script: dict, audio: dict, num_pairs: int,
                          card_lead: float = 0.0,
                          sequence: list[dict] | None = None,
                          quantize_sec: float = 0.0,
-                         grouping: str = "per_step") -> list[dict]:
+                         grouping: str = "per_step",
+                         tail_margin: float = 0.0) -> list[dict]:
     """由 prepare_sleep_audio 结果构建线性时间轴。
 
-    quantize_sec>0：把每个块的总时长向上取整到该步长的整数倍（仅低帧率卡片
-    编码时需要，见 _quantize_block_durations）；0=保持各段精确时长（历史行为）。
-    grouping：块划分方式（"per_step"/"per_pair"），仅影响 quantize_sec 的对齐单位。
+    quantize_sec>0：把每个块的总时长向上取整到该步长（帧长 `1/fps`）的整数倍
+    （仅低帧率卡片编码需要，见 _align_block_durations）；0=保持各段精确时长。
+    tail_margin>0：每组音频读完后再多留这么多秒静音才换画面（"严格换卡"保证）；
+    可与 quantize_sec 同时使用 ⇒ 目标 `ceil((A+margin)/step)*step`。
+    grouping：块划分方式（"per_step"/"per_pair"），影响对齐/补齐的单位与块数。
 
     sequence=None：默认步序 a_m → g_short → a_slow → g_long → b_m → g_short
     → b_slow → g_long → combo → pair_gap（与历史行为一致）。
@@ -139,24 +142,31 @@ def build_sleep_timeline(script: dict, audio: dict, num_pairs: int,
         outro_dur = float(audio.get("outro_dur", 0.0))
         timeline.append({"type": "outro", "duration": round(outro_dur, 3),
                          "subtitle_en": "", "subtitle_zh": "", "pair": 0, "step": ""})
-    if quantize_sec and quantize_sec > 0:
-        _quantize_block_durations(timeline, float(quantize_sec), grouping)
+    if (quantize_sec and quantize_sec > 0) or tail_margin > 0:
+        _align_block_durations(timeline, float(quantize_sec or 0.0),
+                               margin=float(tail_margin or 0.0), grouping=grouping)
     return timeline
 
 
-def _quantize_block_durations(timeline: list[dict], step: float,
-                              grouping: str = "per_step") -> None:
-    """把**每个块**的总时长向上取整到 step 的整数倍（就地修改）。
+def _align_block_durations(timeline: list[dict], step: float, margin: float = 0.0,
+                           grouping: str = "per_step") -> None:
+    """把**每个块**的总时长对齐到 step 的整数倍，并保证 ≥ 本组音频 + margin。
 
-    仅当卡片块帧率 < 25 时调用（`sleep_card_fps`）：此时一帧 = 1/fps 秒，块时长
-    不是整秒的话编码器会把块向上取整 → 视频比音频网格长（实测 52 块累计 +26.8s，
-    画面与旁白逐步错位）。在**时间轴层**取整可让音频网格、SRT、YouTube 章节与
-    视频三者严格一致（compose 的块时长 = 各段时间之和）。
+    就地修改。两个用途：
+
+    1. **帧长对齐**（step = `1/fps`，仅低帧率需要）：此时一帧 = 1/fps 秒，块时长
+       不是帧长整数倍的话编码器会向上取整 → 视频比音频网格长（实测 52 块累计
+       +26.8s，画面与旁白逐步错位）。取整后音频网格、SRT、YouTube 章节与视频
+       四者严格同源。
+    2. **换卡尾巴余量**（margin > 0，任意帧率都可用）：每组音频读完后画面再多停留
+       margin 秒才切换到下一组 —— 即「本组音频读完（含停顿）才换画面」的显式保证。
+       目标时长 `V_k = ceil((A_k + margin) / step) * step ≥ A_k + margin`。
 
     取整方式：延长块内**最后一段**——pair 块的末段是 gap（纯静音，听感无影响），
     intro/outro 块延长自身。块边界识别与 compose_sleep 的分块规则一致：
     intro/outro 各自成块；`grouping="per_step"` 时 [pair + gap] 成块，
-    `"per_pair"` 时同组全部步骤成块（此时需对齐的块数只有 1/5，补齐总量也随之减少）。
+    `"per_pair"` 时同组全部步骤成块（此时需对齐的块数只有 1/5）。
+    `step<=0` 时只按 margin 补（不量化到帧长）。
     """
     n = len(timeline)
     per_pair = str(grouping or "").strip().lower() == "per_pair"
@@ -165,7 +175,7 @@ def _quantize_block_durations(timeline: list[dict], step: float,
         seg = timeline[i]
         t = seg.get("type", "")
         if t in ("intro", "outro"):
-            _pad_last([seg], step)
+            _pad_last([seg], step, margin)
             i += 1
         elif t == "pair":
             if per_pair:
@@ -175,7 +185,7 @@ def _quantize_block_durations(timeline: list[dict], step: float,
                        and timeline[i].get("pair", 0) == pid):
                     block.append(timeline[i])
                     i += 1
-                _pad_last(block, step)
+                _pad_last(block, step, margin)
             else:
                 block = [seg]
                 if i + 1 < n and timeline[i + 1].get("type") == "gap":
@@ -183,18 +193,28 @@ def _quantize_block_durations(timeline: list[dict], step: float,
                     i += 2
                 else:
                     i += 1
-                _pad_last(block, step)
+                _pad_last(block, step, margin)
         else:
             i += 1
 
 
-def _pad_last(block: list[dict], step: float) -> None:
+def _pad_last(block: list[dict], step: float, margin: float = 0.0) -> None:
+    """把块补齐到 `ceil((总时长 + margin)/step)*step`（step<=0 时只补 margin）。
+
+    注意必须保证**结果本身**是 step 的整数倍（`V = ceil((A+margin)/step)*step`，
+    补 `V - A`），而不是把 (A+margin) 对齐后再加到 A 上（那样结果会带零头）。
+    """
     total = sum(float(s.get("duration", 0.0) or 0.0) for s in block)
-    rem = total % step
-    if rem <= 1e-6:
-        return
-    add = round(step - rem, 3)
-    block[-1]["duration"] = round(float(block[-1].get("duration", 0.0) or 0.0) + add, 3)
+    target = total + max(0.0, float(margin or 0.0))
+    if step and step > 0:
+        # 避免浮点误差导致 3.0000000001 被 ceil 成 4
+        n = int((target - 1e-9) // step) + 1
+        add = n * step - total
+    else:
+        add = target - total
+    if add > 1e-9:
+        block[-1]["duration"] = round(
+            float(block[-1].get("duration", 0.0) or 0.0) + add, 3)
 
 
 def build_sleep_srt(timeline: list[dict]) -> str:

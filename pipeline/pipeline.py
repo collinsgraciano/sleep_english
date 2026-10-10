@@ -635,9 +635,11 @@ def _step4_timeline(args, checkpoint: dict, script: dict, work_dir: Path,
     # 步长取 1/fps 而不是固定 1s：5fps 只补 ≤0.2s/块、2fps ≤0.5s/块、1fps ≤1s/块。
     _fps4, _fps4_why = _resolve_card_fps(args, tts_results)
     _group4 = _resolve_block_grouping(args)
-    _quant = round(1.0 / _fps4, 6) if _fps4 < 25 else 0.0
-    if _quant:
-        print(f"  [Sleep] 卡片块帧率 {_fps4}fps → 时间轴按 {_quant:g}s 对齐各块"
+    _margin4 = _resolve_tail_margin(args)
+    # 需要按帧长对齐的两种情况：低帧率（帧长>0.04s）或 开了换卡余量（25fps 也要对齐到 0.04s）
+    _quant = round(1.0 / _fps4, 6) if (_fps4 < 25 or _margin4 > 0) else 0.0
+    if _quant or _margin4:
+        print(f"  [Sleep] 时间轴对齐: 帧长={_quant or 0:g}s 换卡余量={_margin4:g}s "
               f"（分块={_group4}；{_fps4_why}）")
 
     from sleep.timeline_sleep import (build_sleep_srt, build_sleep_timeline,
@@ -659,6 +661,11 @@ def _step4_timeline(args, checkpoint: dict, script: dict, work_dir: Path,
         elif str(meta.get("sleep_block_grouping", "per_step")) != _group4:
             print(f"  [Resume] 分块方式变化（meta {meta.get('sleep_block_grouping')} → "
                   f"{_group4}）— 重建时间轴（对齐单位不同）")
+        elif abs(float(meta.get("sleep_block_tail_margin", 0.0) or 0.0)
+                 - _margin4) > 1e-6:
+            print(f"  [Resume] 换卡余量变化（meta "
+                  f"{meta.get('sleep_block_tail_margin', 0.0)} → {_margin4}）"
+                  f"— 重建时间轴（块时长不同）")
         elif (meta.get("sleep_intro", True), meta.get("sleep_outro", True)) != want_bounds:
             print(f"  [Resume] sleep_intro/sleep_outro 开关变化（meta "
                   f"{meta.get('sleep_intro', True)}/{meta.get('sleep_outro', True)} → "
@@ -678,7 +685,8 @@ def _step4_timeline(args, checkpoint: dict, script: dict, work_dir: Path,
         card_lead=float(getattr(args, "sleep_card_lead", 0.3) or 0.0),
         sequence=sequence,
         quantize_sec=_quant,
-        grouping=_group4)
+        grouping=_group4,
+        tail_margin=_margin4)
     # 字幕不上屏（文字预渲染进卡片）；SRT 仅作 sidecar 闭源字幕文件
     srt = build_sleep_srt(timeline)
 
@@ -693,6 +701,7 @@ def _step4_timeline(args, checkpoint: dict, script: dict, work_dir: Path,
         "sleep_pairs": int(getattr(args, "sleep_pairs", 200)),
         "sleep_card_fps": _fps4,
         "sleep_block_grouping": _group4,
+        "sleep_block_tail_margin": _margin4,
         "sleep_sequence_sig": seq_sig,
         "sleep_intro": want_bounds[0],
         "sleep_outro": want_bounds[1],
@@ -775,6 +784,22 @@ def _step45_thumbnail(args, checkpoint: dict, script: dict, work_dir: Path,
         structure=args.structure,
     )
     _save_checkpoint(work_dir, "step4.5_thumbnail")
+
+def _resolve_tail_margin(args) -> float:
+    """换卡尾巴余量（秒）：每组音频读完后再多留这么多静音才换画面。
+
+    0 = 紧贴换卡（历史行为）；>0 时由时间轴把每个块补到
+    `ceil((本组音频 + margin)/帧长)*帧长`，从而**显式保证**
+    「本组音频读完（含停顿）之后画面才切换」。上限 5s，非法值回退 0。
+    """
+    try:
+        v = float(getattr(args, "sleep_block_tail_margin", 0.0) or 0.0)
+    except (TypeError, ValueError):
+        return 0.0
+    if v <= 0:
+        return 0.0
+    return min(5.0, round(v, 3))
+
 
 def _resolve_block_grouping(args) -> str:
     """块划分方式，返回 "per_step" / "per_pair"（非法值回退 per_step）。
@@ -869,8 +894,9 @@ def _step5_compose(args, checkpoint: dict, script: dict, work_dir: Path, dirs: d
     # --- 卡片块帧率（sleep_card_fps）安全闸门：块间帧率必须一致 ---
     _card_fps, _fps_reason = _resolve_card_fps(args, tts_results)
     _grouping = _resolve_block_grouping(args)
+    _tail_margin = _resolve_tail_margin(args)
     print(f"  [Sleep] 卡片块帧率 = {_card_fps}fps（{_fps_reason}）；"
-          f"分块方式 = {_grouping}")
+          f"分块方式 = {_grouping}；换卡余量 = {_tail_margin:g}s")
     final_path = compose_sleep(
         work_dir=str(work_dir),
         timeline=timeline,
@@ -900,6 +926,7 @@ def _step5_compose(args, checkpoint: dict, script: dict, work_dir: Path, dirs: d
         logo_pos_y=float(getattr(args, "sleep_logo_pos_y", 6.0) or 6.0),
         card_fps=_card_fps,
         grouping=_grouping,
+        tail_margin=_tail_margin,
         progress_cb=progress_cb,
         stop_check=stop_check,
     )
@@ -1164,6 +1191,10 @@ def _parse_args() -> argparse.Namespace:
                         help="块划分方式：per_step=一个步骤一块（默认，与历史一致，"
                              "10 组 52 块）；per_pair=同一组多步合并成一块（10 组 12 块，"
                              "画面/音频一致，省下每块一次的 ffmpeg 固定开销 ≈24s/块）")
+    parser.add_argument("--sleep-block-tail-margin", type=float, default=0.0,
+                        help="换卡尾巴余量(秒)：每组音频读完后再留这么多静音才换画面，"
+                             "用于「本组读完（含停顿）才换画面」的严格保证（0=紧贴，默认；"
+                             "建议 25fps 用 0.3-0.5、1fps 用 1.0）")
     parser.add_argument("--sleep-card-fps", type=int, default=25,
                         choices=[1, 2, 5, 25],
                         help="卡片块帧率（1/2/5/25）：静态卡片降帧只减少重复帧编码，"

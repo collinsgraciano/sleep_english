@@ -69,6 +69,10 @@ _fps="$(cfg sleep_card_fps)"
 # 块划分方式：per_step（默认）/ per_pair（同组合并，省每块固定开销）
 _grp="$(cfg sleep_block_grouping)"
 [ -n "$_grp" ] && add_flag --sleep-block-grouping "$_grp"
+# 换卡尾巴余量（秒）：每组音频读完后再留这么多静音才换画面
+_mgn="$(cfg sleep_block_tail_margin)"
+[ -n "$_mgn" ] && [ "$_mgn" != "0" ] && [ "$_mgn" != "0.0" ] && \
+  add_flag --sleep-block-tail-margin "$_mgn"
 
 # BGM：配置开着就加 --bgm-mix，并把音乐库/侧链参数按配置传下去（与网页一键生成一致）
 if [ "$(cfg bgm_mix)" = "1" ]; then add_flag --bgm-mix; fi

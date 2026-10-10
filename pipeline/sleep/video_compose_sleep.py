@@ -305,6 +305,36 @@ def _ensure_cards(timeline: list[dict], script: dict, cards_dir: Path,
     return cards
 
 
+def _probe_block_len(path: str, fps: int) -> tuple[float, float]:
+    """返回块的 (画面时长, 音频时长)。画面优先用 `帧数/fps`——低帧率下容器的
+    stream duration 声明可能比实际帧数短（实测 278 帧声明 276s）。探测失败返回 (0,0)。"""
+    try:
+        out = subprocess.run(
+            ["ffprobe", "-v", "error", "-select_streams", "v:0", "-count_frames",
+             "-show_entries", "stream=duration,nb_read_frames",
+             "-show_entries", "format=duration", "-of", "json", str(path)],
+            capture_output=True, text=True, timeout=30).stdout
+        d = json.loads(out) if out.strip() else {}
+        st = (d.get("streams") or [{}])[0]
+        frames = int(st.get("nb_read_frames") or 0)
+        vdecl = float(st.get("duration") or 0)
+        vid = (frames / fps) if (frames and fps) else vdecl
+        aud = float((d.get("format") or {}).get("duration") or 0)
+        # 音频时长从容器/音频流转推（块内音频≈容器时长减去画面多出的部分时不准，
+        # 故再探一次音频流）
+        o2 = subprocess.run(
+            ["ffprobe", "-v", "error", "-select_streams", "a:0",
+             "-show_entries", "stream=duration", "-of", "csv=p=0", str(path)],
+            capture_output=True, text=True, timeout=30).stdout.strip()
+        try:
+            aud = float(o2.splitlines()[0])
+        except (ValueError, IndexError):
+            pass
+        return vid, aud
+    except Exception:  # noqa: BLE001
+        return 0.0, 0.0
+
+
 def group_timeline_blocks(timeline: list[dict],
                           grouping: str = "per_step") -> list[list[dict]]:
     """时间轴 → 块序列（纯函数，便于单测）。
@@ -370,6 +400,7 @@ def compose_sleep(work_dir: str, timeline: list[dict], script: dict,
                   logo_pos_x: float = 92.0, logo_pos_y: float = 6.0,
                   card_fps: int = 25,
                   grouping: str = "per_step",
+                  tail_margin: float = 0.0,
                   progress_cb=None, stop_check=None) -> str:
     """合成 sleep 成片。返回最终 mp4 路径（videos/{safe}.mp4）。
 
@@ -383,6 +414,9 @@ def compose_sleep(work_dir: str, timeline: list[dict], script: dict,
     把 card_fps 回退为 25 —— 块间帧率不一致会让 concat_segments 的 `-c:v copy`
     拼接时长漂移（实测 11.0s→11.6s，8 种 ffmpeg 修参数均无效）。
     grouping：块划分方式（"per_step"=历史行为，"per_pair"=同组多步合并）。
+    tail_margin：换卡尾巴余量（秒）——仅用于**自检**：每块应满足
+    `画面时长 ≥ 音频时长 + tail_margin`（时间轴已按此补齐；绑定片头/片尾视频的块
+    画面==音频，余量必为 0，会在日志说明）。
     """
     out_w, out_h = (3840, 2160) if native_4k else (TARGET_W, TARGET_H)
     vf = _output_vf(out_w, out_h)
@@ -445,6 +479,8 @@ def compose_sleep(work_dir: str, timeline: list[dict], script: dict,
         print(f"  [Sleep] 分块方式: {grouping} 未知 → 按 per_step 处理")
 
     block_paths: list[str] = []
+    _margins: list[tuple[int, float]] = []      # (块序号, 画面−音频)
+    _bound_video_blocks = 0
     total = len(blocks)
     for bi, block_segs in enumerate(blocks):
         if stop_check and stop_check():
@@ -502,9 +538,34 @@ def compose_sleep(work_dir: str, timeline: list[dict], script: dict,
                                  outro_db=outro_volume_db, logo=logo,
                                  x264_params=_x264, fps=card_fps)
         block_paths.append(out_path)
+        # 换卡自检：① 画面实际时长应 ≥ 请求的块时长 − 1 帧（防编码器向下取整 ⇒ 换卡提前）；
+        #           ② 记录「画面 − 音频流」供汇总（音频流比时间轴短 AAC priming 属正常）
+        _v_len, _a_len = _probe_block_len(out_path, want_fps)
+        if is_intro_video or is_outro_video:
+            _bound_video_blocks += 1
+        elif _v_len > 0:
+            _margins.append((bi + 1, round(_v_len - _a_len, 3)))
+            _frame = 1.0 / max(int(card_fps), 1)
+            _short = want_dur - _v_len
+            if _short > _frame + 1e-6:
+                print(f"  [Sleep] WARNING: block {bi + 1}/{total} 画面 {_v_len:.3f}s 比请求的 "
+                      f"{want_dur:.3f}s 短 {_short:.3f}s（> 1 帧）→ 换卡可能提前")
         if bi % 10 == 0 or bi == total - 1:
             _cb(int(2 + bi / total * 78),
                 f"Block {bi + 1}/{total} ({t}, {head.get('pair', '')})".strip())
+
+    # ---- 换卡余量自检汇总 ----
+    if _margins:
+        _min_bi, _min_av = min(_margins, key=lambda x: x[1])
+        print(f"  [Sleep] 换卡余量自检: 画面−音频 最小 {_min_av:+.3f}s（block {_min_bi}）"
+              f"；目标余量 {tail_margin:g}s（音频流比时间轴短 AAC priming 属正常，"
+              f"换卡边界以时间轴为准）")
+    if _bound_video_blocks:
+        print(f"  [Sleep] 提示: {_bound_video_blocks} 个绑定片头/片尾视频的块画面==音频，"
+              f"无法加换卡余量（要余量请改用卡片片头/片尾）")
+    if tail_margin > 0 and xfade_sec > 0:
+        print("  [Sleep] 提示: 交叉溶解会让画面在音频结束前开始过渡，"
+              "与「严格换卡余量」语义冲突（建议关闭 sleep_xfade）")
 
     merged_video = None
     if xfade_sec > 0 and len(block_paths) >= 2:
