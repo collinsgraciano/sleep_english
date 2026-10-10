@@ -143,6 +143,27 @@ def _probe_video_duration(path: str) -> float | None:
     except (ValueError, IndexError):
         return None
 
+
+def _probe_audio_duration(path: str) -> float | None:
+    """探测**音频流**时长（秒），供段网格时长计算。
+
+    历史缺陷：本函数在「分离 sleep 为独立项目」时丢失（`_segment_grid_duration`
+    仍引用它）→ 每次调用抛 NameError，被 `concat_segments` 的
+    `except Exception: audio_ok = False` **静默吞掉** → 音频「按网格裁尾/补齐」
+    通道从未真正生效，一直走整轨拼接兜底 ⇒ 累积 AAC priming（每段 ~11–46ms）：
+    per_step 每块 2 段 ≈0.05s/块（52 块 ≈2.6s）、per_pair 每块 11 段 ≈0.4s/块
+    （12 块 ≈4.5s）。表现为**音频逐渐早于画面**（实测计划 269s vs 成片音频
+    264.5s、滞后随片长从 −1.7s 累积到 −4.0s）。失败返回 None。
+    """
+    r = subprocess.run(
+        ["ffprobe", "-v", "error", "-select_streams", "a:0",
+         "-show_entries", "stream=duration", "-of", "csv=p=0", str(path)],
+        capture_output=True, text=True)
+    try:
+        return float(r.stdout.strip().splitlines()[0])
+    except (ValueError, IndexError):
+        return None
+
 def _segment_grid_duration(path: str) -> float | None:
     """段网格时长 = max(视频流时长, 音频流时长)——concat demuxer 的推进依据。
 
@@ -389,8 +410,12 @@ def concat_segments(segment_paths: list[str], output_path: str,
                   "-i", str(pcm_path),
                   "-c:a", "aac", "-b:a", "192k", "-ar", "44100", "-ac", "2",
                   a_only], "audio pass")
-    except Exception:
+    except Exception as e:  # noqa: BLE001 —— 兜底可用，但**必须可见**
         audio_ok = False
+        # 历史上这里静默吞掉了 NameError（_probe_audio_duration 缺失）→ 音频网格
+        # 通道从未生效，成片音频比画面早若干秒且随片长累积。务必打印原因。
+        print(f"  [Concat] WARNING: 音频网格通道失败 → 回退整轨拼接（会有 AAC priming "
+              f"累积漂移，音画可能逐渐错位）: {type(e).__name__}: {e}")
     finally:
         try:
             os.remove(pcm_path)
@@ -398,6 +423,7 @@ def concat_segments(segment_paths: list[str], output_path: str,
             pass
     if not audio_ok:
         # 兜底：整轨解码重编码（保留每段 ~11ms 补齐误差，但保证产出）
+        print("  [Concat] WARNING: 使用兜底整轨拼接（不按块网格补齐）")
         _run(["-f", "concat", "-safe", "0", "-i", str(concat_list),
               "-vn", "-af", "asetpts=N/SR/TB",
               "-c:a", "aac", "-b:a", "192k", "-ar", "44100", "-ac", "2",
@@ -406,6 +432,11 @@ def concat_segments(segment_paths: list[str], output_path: str,
     _run(["-i", v_only, "-i", a_only,
           "-c", "copy", "-map", "0:v:0", "-map", "1:a:0",
           output_path], "mux pass")
+    # 自检：网格通道的目标就是音视频严格同格；不一致必须报警（否则静默错位）
+    _vd, _ad = _probe_video_duration(output_path), _probe_audio_duration(output_path)
+    if _vd and _ad and abs(_vd - _ad) > 0.05:
+        print(f"  [Concat] WARNING: 音视频总长不一致（视频 {_vd:.3f}s / 音频 {_ad:.3f}s，"
+              f"差 {_vd - _ad:+.3f}s）—— 请检查音频网格通道是否回退")
     for t in ((v_only,) if own_video else ()) + (a_only,):
         try:
             os.remove(t)
