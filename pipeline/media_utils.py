@@ -435,8 +435,14 @@ def concat_segments(segment_paths: list[str], output_path: str,
     # 自检：网格通道的目标就是音视频严格同格；不一致必须报警（否则静默错位）
     _vd, _ad = _probe_video_duration(output_path), _probe_audio_duration(output_path)
     if _vd and _ad and abs(_vd - _ad) > 0.05:
+        _fr = subprocess.run(
+            ["ffprobe", "-v", "error", "-select_streams", "v:0", "-count_frames",
+             "-show_entries", "stream=nb_read_frames", "-of", "csv=p=0",
+             str(output_path)], capture_output=True, text=True).stdout.strip()
         print(f"  [Concat] WARNING: 音视频总长不一致（视频 {_vd:.3f}s / 音频 {_ad:.3f}s，"
-              f"差 {_vd - _ad:+.3f}s）—— 请检查音频网格通道是否回退")
+              f"差 {_vd - _ad:+.3f}s，视频帧数={_fr or '?'}）—— "
+              f"若差距随块数累积说明音频网格通道回退了；"
+              f"低帧率下「帧数/fps」与 track duration 的少量差异属容器元数据现象")
     for t in ((v_only,) if own_video else ()) + (a_only,):
         try:
             os.remove(t)
